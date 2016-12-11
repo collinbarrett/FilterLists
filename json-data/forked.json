@@ -1,0 +1,212 @@
+[
+  {
+    "list": "abuse.ch Feodo BadIP Blocklist",
+    "descr": "The Feodo Tracker Feodo BadIP Blocklist only contains IP addresses (IPv4) used as C&C communication channel by the Feodo Trojan version B. These IP addresses are usually servers rented by cybercriminals directly and used for the exclusive purpose of hosting a Feodo C&C server. Hence you should expect no legit traffic to those IP addresses. I highly recommend you to block/drop any traffic towards any Feodo C&C using the Feodo BadIP Blocklist. Please consider that this blocklist only contains IP addresses used by version B of the Feodo Trojan. C&C communication channels used by version A, version C and version D are not covered by this blocklist.",
+    "descriptionSourceUrl": "https://feodotracker.abuse.ch/blocklist/",
+    "viewUrl": "https://feodotracker.abuse.ch/blocklist/?download=badips",
+    "homeUrl": "https://feodotracker.abuse.ch/blocklist/",
+    "email": "contactme@abuse.ch",
+    "master": "abuse.ch Feodo IP Blocklist"
+  },
+  {
+    "list": "abuse.ch ZeuS Domain Blocklist \"BadDomains\"",
+    "descr": "The ZeuS domain blocklist (BadDomains) is the recommended blocklist if you want to block only ZeuS domain names. It excludes domain names that ZeuS Tracker believes to be hijacked (level 2).",
+    "descriptionSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
+    "homeUrl": "https://zeustracker.abuse.ch/blocklist.php",
+    "email": "contactme@abuse.ch",
+    "donateUrl": "https://zeustracker.abuse.ch/faq.php",
+    "master": "abuse.ch ZeuS Domain Blocklist"
+  },
+  {
+    "list": "abuse.ch ZeuS IP Blocklist \"BadIPs\"",
+    "descr": "This blocklists only includes IPv4 addresses that are used by the ZeuS trojan. It is the recommened blocklist if you want to block only ZeuS IPs. It excludes IP addresses that ZeuS Tracker believes to be hijacked (level 2) or belong to a free web hosting provider (level 3).",
+    "descriptionSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
+    "homeUrl": "https://zeustracker.abuse.ch/blocklist.php",
+    "email": "contactme@abuse.ch",
+    "donateUrl": "https://zeustracker.abuse.ch/faq.php",
+    "master": "abuse.ch ZeuS IP Blocklist"
+  },
+  {
+    "list": "Adguard Dutch Filter",
+    "lang": "nl",
+    "descr": "Filter that enables removing of the ads from websites with Dutch content.",
+    "descriptionSourceUrl": "https://adguard.com/en/filters.html",
+    "viewUrl": "https://adguard.com/en/filter-rules.html?id=8",
+    "homeUrl": "https://adguard.com/en/filters.html",
+    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master",
+    "master": "EasyList Dutch"
+  },
+  {
+    "list": "Adguard English Filter",
+    "lang": "en",
+    "descr": "Filter that enables removing of the ads from websites with English content.",
+    "descriptionSourceUrl": "https://adguard.com/en/filters.html",
+    "viewUrl": "https://adguard.com/en/filter-rules.html?id=2",
+    "homeUrl": "https://adguard.com/en/filters.html",
+    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master",
+    "master": "EasyList"
+  },
+  {
+    "list": "Adguard German Filter",
+    "lang": "de",
+    "descr": "Filter that enables removing of the ads from websites with German content.",
+    "descriptionSourceUrl": "https://adguard.com/en/filters.html",
+    "viewUrl": "https://adguard.com/en/filter-rules.html?id=6",
+    "homeUrl": "https://adguard.com/en/filters.html",
+    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master",
+    "master": "EasyList Germany"
+  },
+  {
+    "list": "Adguard Japanese Filter",
+    "lang": "ja",
+    "descr": "Filter that enables removing of the ads from websites in Japanese.",
+    "descriptionSourceUrl": "https://adguard.com/en/filters.html",
+    "viewUrl": "https://adguard.com/en/filter-rules.html?id=7",
+    "homeUrl": "https://adguard.com/en/filters.html",
+    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master",
+    "master": "Fanboy's Japanese"
+  },
+  {
+    "list": "Adguard Spanish/Portuguese Filter",
+    "lang": "es,pt",
+    "descr": "Filter that enables removing of the ads from websites in Spanish.",
+    "descriptionSourceUrl": "https://adguard.com/en/filters.html",
+    "viewUrl": "https://adguard.com/en/filter-rules.html?id=9",
+    "homeUrl": "https://adguard.com/en/filters.html",
+    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master",
+    "master": "Fanboy's Spanish/Portuguese"
+  },
+  {
+    "list": "DNS-BH Adblock Plus Malware Domains Full",
+    "descr": "This is a list of malware domains generated from malwaredomains.com data.",
+    "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt",
+    "homeUrl": "http://www.malwaredomains.com/",
+    "email": "malwaredomains@gmail.com",
+    "donateUrl": "http://www.malwaredomains.com/?page_id=675",
+    "master": "DNS-BH Malware Domains"
+  },
+  {
+    "list": "EasyList Lite China",
+    "lang": "zh",
+    "descr": "This is a lite version of EasyList. Only for Simplified Chinese language websites.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt",
+    "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt",
+    "homeUrl": "http://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
+    "forumUrl": "http://abpchina.org/forum/forum.php",
+    "issuesUrl": "https://github.com/cjx82630/cjxlist/issues",
+    "email": "cjxlist@gmail.com",
+    "changelogUrl": "https://github.com/cjx82630/cjxlist/commits/master",
+    "master": "EasyList"
+  },
+  {
+    "list": "EasyList Without Element Hiding Rules",
+    "descr": "This EasyList variant only contains blocking filters to remove adverts, with no element rules whatsoever; it, therefore, has more limited coverage than the full version of the list, although still commands a niche market.",
+    "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noelemhide.txt",
+    "homeUrl": "https://easylist.to/",
+    "forumUrl": "https://forums.lanik.us/viewforum.php?f=23",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "email": "easylist.subscription@gmail.com",
+    "changelogUrl": "https://github.com/easylist/easylist/commits/master",
+    "master": "EasyList"
+  },
+  {
+    "list": "EasyList Without Rules for Adult Sites",
+    "descr": "This EasyList variant does not contain filters for adult domains.",
+    "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noadult.txt",
+    "homeUrl": "https://easylist.to/",
+    "forumUrl": "https://forums.lanik.us/viewforum.php?f=23",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "email": "easylist.subscription@gmail.com",
+    "changelogUrl": "https://github.com/easylist/easylist/commits/master",
+    "master": "EasyList"
+  },
+  {
+    "list": "EasyPrivacy Without International Filters",
+    "descr": "This EasyPrivacy variant does not contain rules for international domains.",
+    "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy_nointernational.txt",
+    "homeUrl": "https://easylist.to/",
+    "forumUrl": "https://forums.lanik.us/",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "email": "easylist.subscription@gmail.com",
+    "changelogUrl": "https://github.com/easylist/easylist/commits/master",
+    "master": "EasyPrivacy"
+  },
+  {
+    "list": "Facebook News Feed Annoyances Blocker",
+    "descr": "Block only news feed annoyances.",
+    "descriptionSourceUrl": "https://facebook.adblockplus.me/",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt",
+    "homeUrl": "https://facebook.adblockplus.me/",
+    "email": "subscriptionlist@adblockplus.org",
+    "changelogUrl": "https://hg.adblockplus.org/facebookfilters/",
+    "donateUrl": "https://adblockplus.org/en/donate",
+    "master": "Facebook Annoyances Blocker"
+  },
+  {
+    "list": "Facebook Sidebar Blocker",
+    "descr": "Block only sidebar annoyances.",
+    "descriptionSourceUrl": "https://facebook.adblockplus.me/",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt",
+    "homeUrl": "https://facebook.adblockplus.me/",
+    "email": "subscriptionlist@adblockplus.org",
+    "changelogUrl": "https://hg.adblockplus.org/facebookfilters/",
+    "donateUrl": "https://adblockplus.org/en/donate",
+    "master": "Facebook Annoyances Blocker"
+  },
+  {
+    "list": "RU AdList: BitBlock",
+    "lang": "ru",
+    "descr": "Russian-only fork of Fanboy's Annoyance List.",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/bitblock.txt",
+    "homeUrl": "https://code.google.com/archive/p/ruadlist/",
+    "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
+    "master": "Fanboy's Annoyance List"
+  },
+  {
+    "list": "YouTube: Other Annoyances",
+    "descr": "Block only other annoyances.",
+    "descriptionSourceUrl": "https://youtube.adblockplus.me/",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt",
+    "homeUrl": "https://youtube.adblockplus.me/",
+    "email": "subscriptionlist@adblockplus.org",
+    "changelogUrl": "https://hg.adblockplus.org/youtubefilters/",
+    "donateUrl": "https://adblockplus.org/en/donate",
+    "master": "YouTube: Pure Video Experience"
+  },
+  {
+    "list": "YouTube: Remove Comments",
+    "descr": "Block only comments.",
+    "descriptionSourceUrl": "https://youtube.adblockplus.me/",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt",
+    "homeUrl": "https://youtube.adblockplus.me/",
+    "email": "subscriptionlist@adblockplus.org",
+    "changelogUrl": "https://hg.adblockplus.org/youtubefilters/",
+    "donateUrl": "https://adblockplus.org/en/donate",
+    "master": "YouTube: Pure Video Experience"
+  },
+  {
+    "list": "YouTube: Remove Youtube Suggestions",
+    "descr": "Block only suggestions.",
+    "descriptionSourceUrl": "https://youtube.adblockplus.me/",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt",
+    "homeUrl": "https://youtube.adblockplus.me/",
+    "email": "subscriptionlist@adblockplus.org",
+    "changelogUrl": "https://hg.adblockplus.org/youtubefilters/",
+    "donateUrl": "https://adblockplus.org/en/donate",
+    "master": "YouTube: Pure Video Experience"
+  }
+]
