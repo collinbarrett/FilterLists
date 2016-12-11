@@ -14,4 +14,4 @@ Lists that are actively maintained and combinations of two or more other lists.
 #### stale.json
 Lists that are no longer actively maintained. Archived for posterity.
 ### json-schema
-The json-schema.org specification for each of the five list types contained in json-data. When contributing, please consult the schema files.
+The [JSON Schema](http://json-schema.org/) specification for each of the five list types contained in json-data. When contributing, please consult the schema files.
