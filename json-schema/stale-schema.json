@@ -1,5 +1,5 @@
 {
-  "description": "Schema for a stale list (Lists that are no longer actively maintained. Archived for posterity.) object. Sorted alphabetically by \"list\" property by convention.",
+  "description": "Schema for a stale list (Lists that are no longer actively maintained. Archived for posterity.) object. Sorted alphabetically by the \"list\" property by convention.",
   "type": "object",
   "required": [
     "list",
