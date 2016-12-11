@@ -1,9 +1,9 @@
 {
-  "description": "Schema for a stale list (Lists that are no longer actively maintained. Archived for posterity.) object.",
+  "description": "Schema for a stale list (Lists that are no longer actively maintained. Archived for posterity.) object. Sorted alphabetically by \"list\" property by convention.",
   "type": "object",
   "required": [
     "list",
-    "description",
+    "descr",
     "viewUrl"
   ],
   "properties": {
@@ -16,7 +16,7 @@
       "type": "string"
     },
     "descr": {
-      "description": "A brief description of the list's functionality. Preferably, this is quoted from the list's documentation or composed by a maintainer of the list. If neither are available, a generic description should be composed by the FilterLists contributer.",
+      "description": "A brief description of the list's functionality. Preferably, this is quoted (includes translation to English via translator or Google Translate) from the list's documentation or composed by a maintainer of the list. If neither are available, a generic description should be composed by the FilterLists contributer.",
       "type": "string"
     },
     "descrSourceUrl": {
@@ -64,45 +64,14 @@
       "type": "string",
       "format": "uri"
     },
-    "forksCombos1": {
-      "description": "The title of a list that is a fork or combo of the current list object.",
-      "type": "string"
-    },
-    "forksCombos2": {
-      "description": "The title of a list that is a fork or combo of the current list object.",
-      "type": "string"
-    },
-    "forksCombos3": {
-      "description": "The title of a list that is a fork or combo of the current list object.",
-      "type": "string"
-    },
-    "forksCombos4": {
-      "description": "The title of a list that is a fork or combo of the current list object.",
-      "type": "string"
-    },
-    "forksCombos5": {
-      "description": "The title of a list that is a fork or combo of the current list object.",
-      "type": "string"
-    },
-    "forksCombos6": {
-      "description": "The title of a list that is a fork or combo of the current list object.",
-      "type": "string"
-    },
-    "forksCombos7": {
-      "description": "The title of a list that is a fork or combo of the current list object.",
-      "type": "string"
-    },
-    "forksCombos8": {
-      "description": "The title of a list that is a fork or combo of the current list object.",
-      "type": "string"
-    },
-    "forksCombos9": {
-      "description": "The title of a list that is a fork or combo of the current list object.",
-      "type": "string"
-    },
-    "forksCombos10": {
-      "description": "The title of a list that is a fork or combo of the current list object.",
-      "type": "string"
+    "forksCombos": {
+      "description": "The titles of lists that are either a fork or a combo of the current list object. Sorted alphabetically by convention.",
+      "type": "array",
+      "maxItems": 10,
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
     }
   }
 }

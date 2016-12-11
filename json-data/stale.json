@@ -58,7 +58,9 @@
     "viewUrl": "https://web.archive.org/web/20110212174029/http://abp-corset.googlecode.com/hg/corset.txt",
     "homeUrl": "http://corset.tistory.com/",
     "email": "corset@tistory.com",
-    "forksCombos1": "List-KR"
+    "forksCombos": [
+      "List-KR"
+    ]
   },
   {
     "list": "Czech Filters for AdBlock",
@@ -75,7 +77,9 @@
     "viewUrl": "https://fanboy.co.nz/israelilist/IsraelList.txt",
     "homeUrl": "https://fanboy.co.nz/",
     "email": "fanboyadblock@googlegroups.com",
-    "forksCombos1": "EasyList Hebrew"
+    "forksCombos": [
+      "EasyList Hebrew"
+    ]
   },
   {
     "list": "Filtros Nauscopicos",
@@ -172,7 +176,9 @@
     "viewUrl": "http://www.niecko.pl/adblock/adblock.txt",
     "homeUrl": "http://niecko.pl/adblock/",
     "changelogUrl": "http://niecko.pl/adblock/zmiany.txt",
-    "forksCombos1": "Adblock & uBlock Polish Filters"
+    "forksCombos": [
+      "Adblock & uBlock Polish Filters"
+    ]
   },
   {
     "list": "SA-Blacklist",
