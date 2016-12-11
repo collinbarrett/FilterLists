@@ -1,0 +1,108 @@
+{
+  "description": "Schema for a stale list (Lists that are no longer actively maintained. Archived for posterity.) object.",
+  "type": "object",
+  "required": [
+    "list",
+    "description",
+    "viewUrl"
+  ],
+  "properties": {
+    "list": {
+      "description": "Name of the list as defined by the list maintainer(s) in title case.",
+      "type": "string"
+    },
+    "lang": {
+      "description": "Comma-separated list of ISO 639-1 codes targeted by the list.",
+      "type": "string"
+    },
+    "descr": {
+      "description": "A brief description of the list's functionality. Preferably, this is quoted from the list's documentation or composed by a maintainer of the list. If neither are available, a generic description should be composed by the FilterLists contributer.",
+      "type": "string"
+    },
+    "descrSourceUrl": {
+      "description": "The URL to the list's documentation page from which the description was quoted if applicable.",
+      "type": "string",
+      "format": "uri"
+    },
+    "viewUrl": {
+      "description": "The URL to the list in raw text format.",
+      "type": "string",
+      "format": "uri"
+    },
+    "homeUrl": {
+      "description": "The URL to the list's home page. Preferably, this is stated in the header of the list. Alternatively, it could be a custom domain, GitHub page, blog post, forum post, etc. that serves as a primary source of information for the list.",
+      "type": "string",
+      "format": "uri"
+    },
+    "guideUrl": {
+      "description": "The URL to the list's instruction guide if it is significantly different than the home page.",
+      "type": "string",
+      "format": "uri"
+    },
+    "forumUrl": {
+      "description": "The URL to the list's forum where issues, change requests, etc. are discussed.",
+      "type": "string",
+      "format": "uri"
+    },
+    "issuesUrl": {
+      "description": "The URL to the list's GitHub Issues.",
+      "type": "string",
+      "format": "uri"
+    },
+    "email": {
+      "description": "The email address of the list's maintainer(s).",
+      "type": "string",
+      "format": "email"
+    },
+    "changelogUrl": {
+      "description": "The URL to the list's changelog such as an RSS feed, GitHub commits log, Mercurial log, etc.",
+      "type": "string",
+      "format": "uri"
+    },
+    "donateUrl": {
+      "description": "The URL to the list's donation page. This could be a custom PayPal or similar link, or a link to a web page discussing various donation options. Pull requests that include changes to this link will require verification to prevent fraud.",
+      "type": "string",
+      "format": "uri"
+    },
+    "forksCombos1": {
+      "description": "The title of a list that is a fork or combo of the current list object.",
+      "type": "string"
+    },
+    "forksCombos2": {
+      "description": "The title of a list that is a fork or combo of the current list object.",
+      "type": "string"
+    },
+    "forksCombos3": {
+      "description": "The title of a list that is a fork or combo of the current list object.",
+      "type": "string"
+    },
+    "forksCombos4": {
+      "description": "The title of a list that is a fork or combo of the current list object.",
+      "type": "string"
+    },
+    "forksCombos5": {
+      "description": "The title of a list that is a fork or combo of the current list object.",
+      "type": "string"
+    },
+    "forksCombos6": {
+      "description": "The title of a list that is a fork or combo of the current list object.",
+      "type": "string"
+    },
+    "forksCombos7": {
+      "description": "The title of a list that is a fork or combo of the current list object.",
+      "type": "string"
+    },
+    "forksCombos8": {
+      "description": "The title of a list that is a fork or combo of the current list object.",
+      "type": "string"
+    },
+    "forksCombos9": {
+      "description": "The title of a list that is a fork or combo of the current list object.",
+      "type": "string"
+    },
+    "forksCombos10": {
+      "description": "The title of a list that is a fork or combo of the current list object.",
+      "type": "string"
+    }
+  }
+}
