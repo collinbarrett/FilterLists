@@ -253,6 +253,14 @@
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW"
   },
   {
+    "list": "Anti-PopAds",
+    "descr": "Blocks shady, annoying pop-under ads from the infamous PopAds ad network.",
+    "viewUrl": "https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt",
+    "homeUrl": "https://github.com/Yhonay/antipopads",
+    "issuesUrl": "https://github.com/Yhonay/antipopads/issues",
+    "changelogUrl": "https://github.com/Yhonay/antipopads/commits/master"
+  },
+  {
     "list": "BadHosts",
     "descr": "A non-comprehensive malware hosts list meant to be used in conjunction with the <a href=\"http://www.hostsfile.org/pac.html\">King of the PAC</a> file.",
     "viewUrl": "http://www.hostsfile.org/Downloads/hosts.txt",
