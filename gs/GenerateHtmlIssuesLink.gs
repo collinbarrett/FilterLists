@@ -5,7 +5,7 @@ function GenerateHtmlIssuesLink(url, listName) {
         }
         return url;
     } else {
-        if (url) {
+        if (url && url != "#N/A") {
             var html = "<a href=\"" + url + "\" title=\"" + listName + " GitHub Issues\" class=\"button\">Issues</a>";
             return html;
         } else {

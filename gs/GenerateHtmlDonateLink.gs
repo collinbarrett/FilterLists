@@ -5,7 +5,7 @@ function GenerateHtmlDonateLink(url, listName) {
         }
         return url;
     } else {
-        if (url) {
+        if (url && url != "#N/A") {
             var html = "<a href=\"" + url + "\" title=\"Donate to support the maintainers of " + listName + ".\" class=\"button\">Donate</a>";
             return html;
         } else {

@@ -5,7 +5,7 @@ function GenerateHtmlEmailLink(url, listName) {
         }
         return url;
     } else {
-        if (url) {
+        if (url && url != "#N/A") {
             var html = "<a href=\"mailto:" + url + "\" title=\"Contribute to " + listName + " via email.\" class=\"button\">Email</a>";
             return html;
         } else {

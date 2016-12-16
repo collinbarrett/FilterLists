@@ -5,7 +5,7 @@ function GenerateHtmlHomeLink(url, listName) {
         }
         return url;
     } else {
-        if (url) {
+        if (url && url != "#N/A") {
             var html = "<a href=\"" + url + "\" title=\"" + listName + " Home Page\" class=\"button\">Home</a>";
             return html;
         } else {

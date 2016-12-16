@@ -5,7 +5,7 @@ function GenerateHtmlForumLink(url, listName) {
         }
         return url;
     } else {
-        if (url) {
+        if (url && url != "#N/A") {
             var html = "<a href=\"" + url + "\" title=\"" + listName + " Forum\" class=\"button\">Forum</a>";
             return html;
         } else {

@@ -5,7 +5,7 @@ function GenerateHtmlViewLink(url, listName) {
         }
         return url;
     } else {
-        if (url) {
+        if (url && url != "#N/A") {
             var html = "<a href=\"" + url + "\" title=\"Preview " + listName + " in your browser.\" class=\"button\">View</a>";
             return html;
         } else {

@@ -5,7 +5,7 @@ function GenerateHtmlGuideLink(url, listName) {
         }
         return url;
     } else {
-        if (url) {
+        if (url && url != "#N/A") {
             var html = "<a href=\"" + url + "\" title=\"" + listName + " Guide\" class=\"button\">Guide</a>";
             return html;
         } else {
