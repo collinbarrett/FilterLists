@@ -1,24 +1,5 @@
 [
   {
-    "list": "SAMPLE Name of the list as defined by the list maintainer(s) in title case.",
-    "lang": [
-      "SAMPLE ISO 639-1 codes targeted by the list."
-    ],
-    "descr": "SAMPLE Brief description of the list's functionality. Preferably, this is quoted (includes translation to English via translator or Google Translate) from the list's documentation or composed by a maintainer of the list. If neither are available, a generic description should be composed by the FilterLists contributer.",
-    "descrSourceUrl": "SAMPLE URL to the list's documentation page from which the description was quoted if applicable.",
-    "viewUrl": "SAMPLE URL to the list in raw text format.",
-    "homeUrl": "SAMPLE URL to the list's home page. Preferably, this is stated in the header of the list. Alternatively, it could be a custom domain, GitHub page, blog post, forum post, etc. that serves as a primary source of information for the list.",
-    "guideUrl": "SAMPLE URL to the list's instruction guide if it is significantly different than the home page.",
-    "forumUrl": "SAMPLE URL to the list's forum where issues, change requests, etc. are discussed.",
-    "issuesUrl": "SAMPLE URL to the list's GitHub Issues.",
-    "email": "SAMPLE Email address of the list's maintainer(s).",
-    "changelogUrl": "SAMPLE URL to the list's changelog such as an RSS feed, GitHub commits log, Mercurial log, etc.",
-    "donateUrl": "SAMPLE URL to the list's donation page. This could be a custom PayPal or similar link, or a link to a web page discussing various donation options. Pull requests that include changes to this link will require verification to prevent fraud.",
-    "forksCombos": [
-      "SAMPLE Titles of lists that are either a fork or a combo of the current list object. Sorted alphabetically by convention."
-    ]
-  },
-  {
     "list": "Adblock Polska",
     "lang": "pl",
     "descr": "Adblock PL is official Poland filter list for AdBlock and Adblock Plus.",
