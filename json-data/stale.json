@@ -6,9 +6,15 @@
     "descrSourceUrl": "https://github.com/adblockpolska/Adblock_PL_List",
     "viewUrl": "https://raw.githubusercontent.com/adblockpolska/Adblock_PL_List/master/adblock_polska.txt",
     "homeUrl": "https://www.facebook.com/adblockpl",
+    "guideUrl": "null",
+    "forumUrl": "null",
     "issuesUrl": "https://github.com/adblockpolska/Adblock_PL_List/issues",
     "email": "adblockpolska@gmail.com",
-    "changelogUrl": "https://github.com/adblockpolska/Adblock_PL_List/commits/master"
+    "changelogUrl": "https://github.com/adblockpolska/Adblock_PL_List/commits/master",
+    "donateUrl": "null",
+    "forksCombos": [
+      "null"
+    ]
   },
   {
     "list": "Ayucat Powerful List",
