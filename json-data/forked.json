@@ -28,7 +28,9 @@
   },
   {
     "list": "Adguard Dutch Filter",
-    "lang": "nl",
+    "lang": [
+      "nl"
+    ],
     "descr": "Filter that enables removing of the ads from websites with Dutch content.",
     "descrSourceUrl": "https://adguard.com/en/filters.html",
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=8",
@@ -40,7 +42,9 @@
   },
   {
     "list": "Adguard English Filter",
-    "lang": "en",
+    "lang": [
+      "en"
+    ],
     "descr": "Filter that enables removing of the ads from websites with English content.",
     "descrSourceUrl": "https://adguard.com/en/filters.html",
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=2",
@@ -52,7 +56,9 @@
   },
   {
     "list": "Adguard German Filter",
-    "lang": "de",
+    "lang": [
+      "de"
+    ],
     "descr": "Filter that enables removing of the ads from websites with German content.",
     "descrSourceUrl": "https://adguard.com/en/filters.html",
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=6",
@@ -64,7 +70,9 @@
   },
   {
     "list": "Adguard Japanese Filter",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "Filter that enables removing of the ads from websites in Japanese.",
     "descrSourceUrl": "https://adguard.com/en/filters.html",
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=7",
@@ -76,7 +84,10 @@
   },
   {
     "list": "Adguard Spanish/Portuguese Filter",
-    "lang": "es,pt",
+    "lang": [
+      "es",
+      "pt"
+    ],
     "descr": "Filter that enables removing of the ads from websites in Spanish.",
     "descrSourceUrl": "https://adguard.com/en/filters.html",
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=9",
@@ -98,7 +109,9 @@
   },
   {
     "list": "EasyList Lite China",
-    "lang": "zh",
+    "lang": [
+      "zh"
+    ],
     "descr": "This is a lite version of EasyList. Only for Simplified Chinese language websites.",
     "descrSourceUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt",
     "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt",
@@ -169,7 +182,9 @@
   },
   {
     "list": "RU AdList: BitBlock",
-    "lang": "ru",
+    "lang": [
+      "ru"
+    ],
     "descr": "Russian-only fork of Fanboy's Annoyance List.",
     "viewUrl": "https://easylist-downloads.adblockplus.org/bitblock.txt",
     "homeUrl": "https://code.google.com/archive/p/ruadlist/",

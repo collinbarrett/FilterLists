@@ -1,7 +1,9 @@
 [
   {
     "list": "Liste AR",
-    "lang": "ar",
+    "lang": [
+      "ar"
+    ],
     "descr": "Liste AR is an [EasyList] affiliated filter list written by smed79 and Crits that specifically removes adverts on Arabic language websites.",
     "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "viewUrl": "https://easylist-downloads.adblockplus.org/Liste_AR.txt",
@@ -15,7 +17,9 @@
   },
   {
     "list": "Bulgarian List",
-    "lang": "bg",
+    "lang": [
+      "bg"
+    ],
     "descr": "On this page you can find updated lists to block unwanted content in your favorite browser. With their help, the pesky ads that some sites terrorizing customers will be hidden.",
     "descrSourceUrl": "https://stanev.org/abp/",
     "viewUrl": "https://stanev.org/abp/adblock_bg.txt",
@@ -27,7 +31,10 @@
   },
   {
     "list": "EasyList Czech and Slovak",
-    "lang": "ce,sl",
+    "lang": [
+      "cs",
+      "sl"
+    ],
     "descr": "Official filter list file used for blocking ads on Czech and Slovak websites.",
     "descrSourceUrl": "https://github.com/tomasko126/easylistczechandslovak",
     "viewUrl": "https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters.txt",
@@ -42,7 +49,9 @@
   },
   {
     "list": "Schack's Adblock Plus List",
-    "lang": "da",
+    "lang": [
+      "da"
+    ],
     "descr": "My list removes advertisements from all the leading Danish Websites: Ekstra Bladet, Jyllands Posten, Berlingske, TV / 2, Computerworld, Version2, etc.",
     "descrSourceUrl": "https://henrik.schack.dk/adblock/",
     "viewUrl": "https://adblock.dk/block.csv",
@@ -52,7 +61,9 @@
   },
   {
     "list": "EasyList Germany",
-    "lang": "de",
+    "lang": [
+      "de"
+    ],
     "descr": "EasyList Germany is a filter list written by the EasyList authors MonztA, Famlam, and Khrin that specifically removes adverts on German language websites.",
     "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany.txt",
@@ -67,7 +78,9 @@
   },
   {
     "list": "Greek AdBlock Filter",
-    "lang": "el",
+    "lang": [
+      "el"
+    ],
     "descr": "Filter for advertisements on Greek sites.",
     "descrSourceUrl": "https://www.void.gr/kargig/blog/greek-adblock-plus-filter/",
     "viewUrl": "https://raw.githubusercontent.com/kargig/greek-adblockplus-filter/master/void-gr-filters.txt",
@@ -77,7 +90,9 @@
   },
   {
     "list": "EasyList Spanish",
-    "lang": "es",
+    "lang": [
+      "es"
+    ],
     "descr": "Spanish supplement for EasyList.",
     "descrSourceUrl": "https://adblockplus.org/subscriptions",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistspanish.txt",
@@ -87,7 +102,10 @@
   },
   {
     "list": "Fanboy's Spanish/Portuguese",
-    "lang": "es,pt",
+    "lang": [
+      "es",
+      "pt"
+    ],
     "descr": "Blocks Spanish and Portuguese regional advertisements and trackers.",
     "viewUrl": "https://fanboy.co.nz/fanboy-espanol.txt",
     "homeUrl": "https://fanboy.co.nz/",
@@ -96,14 +114,19 @@
   },
   {
     "list": "Eesti Custom Sites Filter",
-    "lang": "et",
+    "lang": [
+      "et"
+    ],
     "descr": "Blocks Estonian regional advertisements and trackers.",
     "viewUrl": "http://adblock.ee/list.php",
     "homeUrl": "http://adblock.ee/"
   },
   {
     "list": "Adblock Iran",
-    "lang": "fa,ir",
+    "lang": [
+      "fa",
+      "ir"
+    ],
     "descr": "Ad blocking rules for Iranian/Persian websites.",
     "descrSourceUrl": "https://github.com/farrokhi/adblock-iran",
     "viewUrl": "https://raw.githubusercontent.com/farrokhi/adblock-iran/master/filter.txt",
@@ -113,7 +136,9 @@
   },
   {
     "list": "Adblock List for Finland",
-    "lang": "fi",
+    "lang": [
+      "fi"
+    ],
     "descr": "Blocks Finnish regional advertisements and trackers.",
     "viewUrl": "http://adb.juvander.net/Finland_adb.txt",
     "homeUrl": "https://www.juvander.fi/site/ilpo/Home/tabid/127/EntryId/825/New-Adblock-filter-list.aspx",
@@ -121,14 +146,18 @@
   },
   {
     "list": "Finnish AntiSocial",
-    "lang": "fi",
+    "lang": [
+      "fi"
+    ],
     "descr": "Finnish blocklist for AdBlock to block social media stuff.",
     "descrSourceUrl": "http://adb.juvander.net/Finland_adb_antisocial.txt",
     "viewUrl": "http://adb.juvander.net/Finland_adb_antisocial.txt"
   },
   {
     "list": "AntiPubWeb",
-    "lang": "fr",
+    "lang": [
+      "fr"
+    ],
     "descr": "Complementary subscription to Liste FR + EasyList.",
     "descrSourceUrl": "http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
     "viewUrl": "http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
@@ -136,7 +165,9 @@
   },
   {
     "list": "Liste FR",
-    "lang": "fr",
+    "lang": [
+      "fr"
+    ],
     "descr": "Liste FR is an [EasyList] affiliated filter list written by Lian, Crits and smed79 that specifically removes adverts on French language websites.",
     "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "viewUrl": "https://easylist-downloads.adblockplus.org/liste_fr.txt",
@@ -150,7 +181,9 @@
   },
   {
     "list": "EasyList Hebrew",
-    "lang": "he",
+    "lang": [
+      "he"
+    ],
     "descr": "EasyList Hebrew is an [EasyList] affiliated filter list written by BsT that specifically removes adverts on Hebrew language websites.",
     "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "viewUrl": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt",
@@ -164,7 +197,9 @@
   },
   {
     "list": "Fanboy's Indian",
-    "lang": "hi",
+    "lang": [
+      "hi"
+    ],
     "descr": "Blocks Indian regional advertisements and trackers.",
     "viewUrl": "https://fanboy.co.nz/fanboy-indian.txt",
     "homeUrl": "https://fanboy.co.nz/",
@@ -173,7 +208,9 @@
   },
   {
     "list": "hufilter",
-    "lang": "hu",
+    "lang": [
+      "hu"
+    ],
     "descr": "Blocks Hungarian regional advertisements and trackers.",
     "viewUrl": "https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt",
     "homeUrl": "https://github.com/szpeter80/hufilter/wiki",
@@ -183,7 +220,9 @@
   },
   {
     "list": "ABPindo",
-    "lang": "id",
+    "lang": [
+      "id"
+    ],
     "descr": "ABPindo is an affiliated filter list written by hermawan that specifically removes adverts on Indonesian language websites.",
     "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "viewUrl": "https://raw.githubusercontent.com/heradhis/indonesianadblockrules/master/subscriptions/abpindo.txt",
@@ -197,7 +236,9 @@
   },
   {
     "list": "Icelandic ABP List",
-    "lang": "is",
+    "lang": [
+      "is"
+    ],
     "descr": "Adblock Plus list for Icelandic websites.",
     "descrSourceUrl": "http://adblock.gardar.net/",
     "viewUrl": "http://adblock.gardar.net/is.abp.txt",
@@ -206,7 +247,9 @@
   },
   {
     "list": "ABP X Files",
-    "lang": "it",
+    "lang": [
+      "it"
+    ],
     "descr": "Blocks Italian regional advertisements and trackers.",
     "viewUrl": "http://noads.it/filtri.txt",
     "homeUrl": "http://noads.it/",
@@ -215,7 +258,9 @@
   },
   {
     "list": "EasyList Italy",
-    "lang": "it",
+    "lang": [
+      "it"
+    ],
     "descr": "EasyList Italy is a filter list written by the EasyList author Khrin that specifically removes adverts on Italian language websites.",
     "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly.txt",
@@ -228,7 +273,9 @@
   },
   {
     "list": "ABP Japanese 3rd Party SNS Filters",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "Blocks Japanese regional social network advertisements and trackers.",
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_3rd_party_sns.txt",
     "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
@@ -237,7 +284,9 @@
   },
   {
     "list": "ABP Japanese Element-hiding Filters",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "Blocks irritating elements on Japanese regional webpages.",
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_element_hiding.txt",
     "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
@@ -246,7 +295,9 @@
   },
   {
     "list": "ABP Japanese Filters",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "Blocks Japanese regional advertisements and trackers.",
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf.txt",
     "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
@@ -255,7 +306,9 @@
   },
   {
     "list": "ABP Japanese Paranoid Filters",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "Blocks Japanese regional advertisements and trackers.",
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_paranoid.txt",
     "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
@@ -264,14 +317,18 @@
   },
   {
     "list": "AdAway Blocking Hosts File for Japan",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "Blocks Japanese regional advertisements and trackers.",
     "viewUrl": "https://sites.google.com/site/logroid/files/hosts.txt",
     "homeUrl": "https://logroid.blogspot.com/"
   },
   {
     "list": "Bad JAV Sites",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "The sites listed there a fake/malicious sites that lure people with fake direct-download-links to JAV videos.",
     "viewUrl": "https://pastebin.com/raw/kDqbYwWr",
     "homeUrl": "https://www.akiba-online.com/threads/fake-jav-ddl-sites-list.1560416/",
@@ -279,7 +336,9 @@
   },
   {
     "list": "Fanboy's Japanese",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "Blocks Japanese regional advertisements and trackers.",
     "viewUrl": "https://fanboy.co.nz/fanboy-japanese.txt",
     "homeUrl": "https://fanboy.co.nz/",
@@ -288,14 +347,18 @@
   },
   {
     "list": "Tofu Filter",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "Blocks Japanese regional advertisements and trackers.",
     "viewUrl": "http://tofukko.r.ribbon.to/Adblock_Plus_list.txt",
     "homeUrl": "http://tofukko.r.ribbon.to/abp.html"
   },
   {
     "list": "Fanboy's Korean",
-    "lang": "ko",
+    "lang": [
+      "ko"
+    ],
     "descr": "Blocks Korean regional advertisements and trackers.",
     "viewUrl": "https://fanboy.co.nz/fanboy-korean.txt",
     "homeUrl": "https://fanboy.co.nz/",
@@ -304,7 +367,9 @@
   },
   {
     "list": "Korean Adblock List",
-    "lang": "ko",
+    "lang": [
+      "ko"
+    ],
     "descr": "A filter list for Adblock which covers filters for Korean websites.",
     "descrSourceUrl": "https://github.com/gfmaster/adblock-korea-contrib",
     "viewUrl": "https://raw.githubusercontent.com/gfmaster/adblock-korea-contrib/master/filter.txt",
@@ -317,7 +382,9 @@
   },
   {
     "list": "List-KR",
-    "lang": "ko",
+    "lang": [
+      "ko"
+    ],
     "descr": "Filter that enables removing of ads, trackers, and various scripts from websites with Korean content. Based on <a href=\"https://filterlists.com/stale/#Corset\">Corset</a>, <a href=\"https://filterlists.com/regional/#KoreanAdblockList\">Korean Adblock List</a>, <a href=\"https://filterlists.com/regional/#YousList\">YousList</a>.",
     "descrSourceUrl": "https://github.com/SlowMemory/List-KR",
     "viewUrl": "https://github.com/SlowMemory/List-KR/blob/master/filter.txt",
@@ -327,7 +394,9 @@
   },
   {
     "list": "List-KR Unbreak",
-    "lang": "ko",
+    "lang": [
+      "ko"
+    ],
     "descr": "Filter that fixes filtration errors in an alternative way due to limitations of adblockers other than Adguard or those using Webkit content blocker API.",
     "descrSourceUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/unbreak.txt",
     "viewUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/unbreak.txt",
@@ -337,7 +406,9 @@
   },
   {
     "list": "YousList",
-    "lang": "ko",
+    "lang": [
+      "ko"
+    ],
     "descr": "Blocks Korean regional advertisements and trackers.",
     "viewUrl": "https://raw.githubusercontent.com/yous/YousList/master/youslist.txt",
     "homeUrl": "https://github.com/yous/YousList",
@@ -349,7 +420,9 @@
   },
   {
     "list": "EasyList Lithuania",
-    "lang": "lt",
+    "lang": [
+      "lt"
+    ],
     "descr": "EasyList Lithuania is an affiliated filter list written by gymka that specifically removes adverts on Lithuanian language websites.",
     "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "viewUrl": "http://margevicius.lt/easylistlithuania.txt",
@@ -362,7 +435,9 @@
   },
   {
     "list": "Latvian List",
-    "lang": "lv",
+    "lang": [
+      "lv"
+    ],
     "descr": "Latvian List is an affiliated filter list written by anonymous74100 that specifically removes adverts on Latvian language websites.",
     "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "viewUrl": "https://notabug.org/latvian-list/adblock-latvian/raw/master/lists/latvian-list.txt",
@@ -375,7 +450,9 @@
   },
   {
     "list": "EasyList Dutch",
-    "lang": "nl",
+    "lang": [
+      "nl"
+    ],
     "descr": "EasyList Dutch is an [EasyList] affiliated filter list written by the EasyList author Famlam that specifically removes adverts on Dutch language websites.",
     "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch.txt",
@@ -389,7 +466,9 @@
   },
   {
     "list": "Adblock & uBlock Polish Cookies Filters",
-    "lang": "pl",
+    "lang": [
+      "pl"
+    ],
     "descr": "Filters Polish cookie messages in Adblock and uBlock.",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/cookies_filters/adblock_cookies.txt",
     "homeUrl": "http://www.certyficate.it/",
@@ -399,7 +478,9 @@
   },
   {
     "list": "Adblock & uBlock Polish Filters",
-    "lang": "pl",
+    "lang": [
+      "pl"
+    ],
     "descr": "Presented here filter set was created for Polish internet users. Contains a list of elements of advertising, such as banners or flash animations, the most commonly used on Polish websites.",
     "descrSourceUrl": "http://www.certyficate.it/polski-filtr-adblock/",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt",
@@ -410,7 +491,9 @@
   },
   {
     "list": "Adblock Polish Social Rules",
-    "lang": "pl",
+    "lang": [
+      "pl"
+    ],
     "descr": "Blocks Polish regional social network advertisements and trackers.",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/adblock_social_filters/adblock_social_list.txt",
     "homeUrl": "http://www.certyficate.it/",
@@ -420,7 +503,9 @@
   },
   {
     "list": "Fanboy's Polish",
-    "lang": "pl",
+    "lang": [
+      "pl"
+    ],
     "descr": "Blocks Polish regional advertisements and trackers.",
     "viewUrl": "https://fanboy.co.nz/fanboy-polish.txt",
     "homeUrl": "https://fanboy.co.nz/",
@@ -429,7 +514,9 @@
   },
   {
     "list": "KAD - Scams",
-    "lang": "pl",
+    "lang": [
+      "pl"
+    ],
     "descr": "Polish filter Adblock and uBlock locking side-type scam (eg. Subscriptions SMS).",
     "descrSourceUrl": "https://github.com/azet12/KAD",
     "viewUrl": "https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt",
@@ -440,7 +527,9 @@
   },
   {
     "list": "KAD Hosts File",
-    "lang": "pl",
+    "lang": [
+      "pl"
+    ],
     "descr": "Polish hosts file for blocking scams. (Experimental)",
     "viewUrl": "https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt",
     "homeUrl": "https://azet12.github.io/KAD/",
@@ -450,7 +539,9 @@
   },
   {
     "list": "Popup Blocker",
-    "lang": "pl",
+    "lang": [
+      "pl"
+    ],
     "descr": "Polish filter the type of annoyances blocking windows to encourage registration or news, promotions and discounts. It blocks the widgets that misinformation and distract, trying to force push your product.",
     "descrSourceUrl": "https://github.com/azet12/PopupBlocker",
     "viewUrl": "https://raw.githubusercontent.com/azet12/PopupBlocker/master/PPB.txt",
@@ -461,7 +552,9 @@
   },
   {
     "list": "uBlock Polish Filters - Supplement",
-    "lang": "pl",
+    "lang": [
+      "pl"
+    ],
     "descr": "uBlock supplement to Adblock & uBlock Polish Filters.",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt",
     "homeUrl": "http://www.certyficate.it/",
@@ -471,7 +564,9 @@
   },
   {
     "list": "ROad-Block",
-    "lang": "ro",
+    "lang": [
+      "ro"
+    ],
     "descr": "Romanian ad block filtering list.",
     "descrSourceUrl": "https://github.com/tcptomato/ROad-Block",
     "viewUrl": "https://raw.githubusercontent.com/tcptomato/ROad-Block/master/road-block-filters.txt",
@@ -483,7 +578,9 @@
   },
   {
     "list": "ROList",
-    "lang": "ro",
+    "lang": [
+      "ro"
+    ],
     "descr": "Romanian supplement for EasyList.",
     "descrSourceUrl": "https://adblockplus.org/subscriptions",
     "viewUrl": "https://www.zoso.ro/pages/rolist.txt",
@@ -495,7 +592,9 @@
   },
   {
     "list": "ROList2",
-    "lang": "ro",
+    "lang": [
+      "ro"
+    ],
     "descr": "This is a complementary list for RoList with annoyances that are not necessarly banners.",
     "descrSourceUrl": "https://www.zoso.ro/pages/rolist2.txt",
     "viewUrl": "https://www.zoso.ro/pages/rolist2.txt",
@@ -504,7 +603,9 @@
   },
   {
     "list": "Adguard Russian Filter",
-    "lang": "ru",
+    "lang": [
+      "ru"
+    ],
     "descr": "Filter that enables removing of the ads from websites in Russian.",
     "descrSourceUrl": "https://adguard.com/en/filters.html",
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=1",
@@ -515,7 +616,9 @@
   },
   {
     "list": "Filters by hant0508",
-    "lang": "ru",
+    "lang": [
+      "ru"
+    ],
     "descr": "This filter list for uBlock Origin/Adblock Plus is designed to be used with such lists as EasyList, RU AdList etc., so it's substantially free of intersections with them. The list is made for blocking ad (mostly on Russian websites) missed by other filter lists maintainers. It is regularly updated and actively developed for now.",
     "descrSourceUrl": "https://github.com/hant0508/uBlock-fillters",
     "viewUrl": "https://raw.githubusercontent.com/hant0508/uBlock-fillters/master/filters.txt",
@@ -526,7 +629,9 @@
   },
   {
     "list": "RU AdList",
-    "lang": "ru",
+    "lang": [
+      "ru"
+    ],
     "descr": "Russian supplement for EasyList.",
     "descrSourceUrl": "https://adblockplus.org/subscriptions",
     "viewUrl": "https://easylist-downloads.adblockplus.org/advblock.txt",
@@ -539,7 +644,9 @@
   },
   {
     "list": "RU AdList: Counters",
-    "lang": "ru",
+    "lang": [
+      "ru"
+    ],
     "descr": "Blocks most popular internet statistics counters on sites serving Russia.",
     "viewUrl": "https://easylist-downloads.adblockplus.org/cntblock.txt",
     "homeUrl": "https://code.google.com/archive/p/ruadlist/",
@@ -547,7 +654,9 @@
   },
   {
     "list": "SVN: Slovenian List",
-    "lang": "sl",
+    "lang": [
+      "sl"
+    ],
     "descr": "SVN: Slovenian List is regional list primarily for uBlock Origin or uBlock, which consists mostly of static cosmetic filters and a few tracking filters. Among others, there are 100 most popular Slovenian websites included in this list.",
     "descrSourceUrl": "https://github.com/betterwebleon/slovenian-list",
     "viewUrl": "https://raw.githubusercontent.com/betterwebleon/slovenian-list/master/filters.txt",
@@ -558,7 +667,9 @@
   },
   {
     "list": "Fanboy's Swedish",
-    "lang": "sv",
+    "lang": [
+      "sv"
+    ],
     "descr": "Blocks Swedish regional advertisements and trackers.",
     "viewUrl": "https://fanboy.co.nz/fanboy-swedish.txt",
     "homeUrl": "https://fanboy.co.nz/",
@@ -567,7 +678,9 @@
   },
   {
     "list": "Adguard Turkish Filter",
-    "lang": "tr",
+    "lang": [
+      "tr"
+    ],
     "descr": "Filter that enables removing of the ads from websites with Turkish content.",
     "descrSourceUrl": "https://adguard.com/en/filters.html",
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=13",
@@ -578,7 +691,9 @@
   },
   {
     "list": "Fanboy's Turkish",
-    "lang": "tr",
+    "lang": [
+      "tr"
+    ],
     "descr": "Blocks Turkish regional advertisements and trackers.",
     "viewUrl": "https://fanboy.co.nz/fanboy-turkish.txt",
     "homeUrl": "https://fanboy.co.nz/",
@@ -587,7 +702,9 @@
   },
   {
     "list": "Turk-adlist",
-    "lang": "tr",
+    "lang": [
+      "tr"
+    ],
     "descr": "The ad server for a list of sites to block ads in Turkish.",
     "descrSourceUrl": "https://github.com/bkrcrc/turk-adlist",
     "viewUrl": "https://raw.githubusercontent.com/bkrcrc/turk-adlist/master/hosts",
@@ -597,7 +714,9 @@
   },
   {
     "list": "Fanboy's Vietnamese",
-    "lang": "vi",
+    "lang": [
+      "vi"
+    ],
     "descr": "Blocks Vietnamese regional advertisements and trackers.",
     "viewUrl": "https://fanboy.co.nz/fanboy-vietnam.txt",
     "homeUrl": "https://fanboy.co.nz/",
@@ -606,7 +725,9 @@
   },
   {
     "list": "CJX's Annoyance List",
-    "lang": "zh",
+    "lang": [
+      "zh"
+    ],
     "descr": "Removes annoyances, self-promotion and privacy protection on Chinese websites.",
     "descrSourceUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt",
     "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt",
@@ -618,7 +739,9 @@
   },
   {
     "list": "EasyList China",
-    "lang": "zh",
+    "lang": [
+      "zh"
+    ],
     "descr": "Chinese supplement for the EasyList filters.",
     "descrSourceUrl": "https://easylist-downloads.adblockplus.org/easylistchina.txt",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina.txt",
