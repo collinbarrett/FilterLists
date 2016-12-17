@@ -1,7 +1,9 @@
 [
   {
     "list": "Adblock Polska",
-    "lang": "pl",
+    "lang": [
+      "pl"
+    ],
     "descr": "Adblock PL is official Poland filter list for AdBlock and Adblock Plus.",
     "descrSourceUrl": "https://github.com/adblockpolska/Adblock_PL_List",
     "viewUrl": "https://raw.githubusercontent.com/adblockpolska/Adblock_PL_List/master/adblock_polska.txt",
@@ -12,7 +14,9 @@
   },
   {
     "list": "Ayucat Powerful List",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "A list for Adblock Plus, which is one of the most famous ad blocking softwares.",
     "descrSourceUrl": "https://osdn.net/projects/ayucat-list/",
     "viewUrl": "http://git.sourceforge.jp/view?p=ayucat-list/ayucat-list.git;a=blob_plain;f=ayucat-list.txt;hb=b254c74c132832a3ade7b9d42c2ef8d3dd59fdb9",
@@ -20,7 +24,9 @@
   },
   {
     "list": "BLOGRAM Analysis Block Filter List for Japan",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "Prevention behavior tracking by the site administrator.",
     "descrSourceUrl": "http://blogram.net/2010/04/23/adblock/",
     "viewUrl": "http://blogram.net/wp-content/uploads/easylist3.txt",
@@ -28,7 +34,9 @@
   },
   {
     "list": "BLOGRAM Basic Filter List for Japan",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "Block the DL itself of advertising.",
     "descrSourceUrl": "http://blogram.net/2010/04/23/adblock/",
     "viewUrl": "http://blogram.net/wp-content/uploads/easylist2.txt",
@@ -36,7 +44,9 @@
   },
   {
     "list": "BLOGRAM Blog Parts Filter List for Japan",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "Low spec for equipment extremists blocked.",
     "descrSourceUrl": "http://blogram.net/2010/04/23/adblock/",
     "viewUrl": "http://blogram.net/wp-content/uploads/easylist4.txt",
@@ -44,7 +54,9 @@
   },
   {
     "list": "BLOGRAM Element Hiding Filter List for Japan",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "Hide text ads by CSS.",
     "descrSourceUrl": "http://blogram.net/2010/04/23/adblock/",
     "viewUrl": "http://blogram.net/wp-content/uploads/easylist1.txt",
@@ -52,7 +64,9 @@
   },
   {
     "list": "Corset",
-    "lang": "ko",
+    "lang": [
+      "ko"
+    ],
     "descr": "Corset is a subscription filter to block intruding ads on sites using Korean.",
     "descrSourceUrl": "https://code.google.com/archive/p/abp-corset/",
     "viewUrl": "https://web.archive.org/web/20110212174029/http://abp-corset.googlecode.com/hg/corset.txt",
@@ -64,7 +78,9 @@
   },
   {
     "list": "Czech Filters for AdBlock",
-    "lang": "cs",
+    "lang": [
+      "cs"
+    ],
     "descr": "Czech filters for Adblock Plus.",
     "descrSourceUrl": "http://adblock.dajbych.net/adblock.txt",
     "viewUrl": "http://adblock.dajbych.net/adblock.txt",
@@ -72,7 +88,9 @@
   },
   {
     "list": "Fanboy's IsraelList",
-    "lang": "he",
+    "lang": [
+      "he"
+    ],
     "descr": "Blocks Hebrew regional advertisements and trackers.",
     "viewUrl": "https://fanboy.co.nz/israelilist/IsraelList.txt",
     "homeUrl": "https://fanboy.co.nz/",
@@ -83,7 +101,10 @@
   },
   {
     "list": "Filtros Nauscopicos",
-    "lang": "en,es",
+    "lang": [
+      "en",
+      "es"
+    ],
     "descr": "Blocks English and Spanish regional advertisements and trackers.",
     "viewUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/filtros.txt",
     "homeUrl": "https://nauscopio.wordpress.com/2010/07/05/filtrado-bloqueo-y-ocultacion-de-la-publicidad-en-google-chrome/",
@@ -92,7 +113,10 @@
   },
   {
     "list": "Filtros Nauscopicos Hosts",
-    "lang": "en,es",
+    "lang": [
+      "en",
+      "es"
+    ],
     "descr": "Use this file to prevent your computer from connecting to selected internet hosts. This is an easy and effective way to protect you from many types of spyware, reduces bandwidth use, blocks certain pop-up  traps, prevents user tracking by way of \"web bugs\" embedded in spam, provides partial protection to IE from certain web-based exploits and blocks most advertising you would otherwise be subjected to on the internet.",
     "descrSourceUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/hosts",
     "viewUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/hosts",
@@ -116,7 +140,9 @@
   },
   {
     "list": "gmbk0's AdAway Hosts for Android",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "Blocks Japanese regional mobile advertisements and trackers.",
     "viewUrl": "https://web.archive.org/web/20140719043102/https://gmbksfilters.googlecode.com/hg/hosts_adonly.txt",
     "homeUrl": "http://gmbk0.tumblr.com/"
@@ -130,7 +156,9 @@
   },
   {
     "list": "Japanese Site Adblock Filter",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "This filter will mainly block affiliate advertising, behavioral advertising, tend embedded script will overload, blog parts.",
     "descrSourceUrl": "http://qme.mydns.jp/adblock.html",
     "viewUrl": "http://qme.mydns.jp/data/Adblock.txt",
@@ -138,7 +166,9 @@
   },
   {
     "list": "Japanese Site Adblock Filter ver 2",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "This filter will mainly block affiliate advertising, behavioral advertising, tend embedded script will overload, blog parts.",
     "descrSourceUrl": "http://qme.mydns.jp/adblock.html",
     "viewUrl": "http://qme.mydns.jp/data/AdblockV2.txt",
@@ -170,7 +200,9 @@
   },
   {
     "list": "PLgeneral",
-    "lang": "pl",
+    "lang": [
+      "pl"
+    ],
     "descr": "Contains a list of elements of advertising, such as banners or flash animations, the most commonly used on Polish websites.",
     "descrSourceUrl": "http://niecko.pl/adblock/",
     "viewUrl": "http://www.niecko.pl/adblock/adblock.txt",
@@ -189,7 +221,9 @@
   },
   {
     "list": "Schuzak's Universal Filter",
-    "lang": "ja",
+    "lang": [
+      "ja"
+    ],
     "descr": "Adblock Plus for Japan domestic and Japanese correspondence Universal Filter.",
     "descrSourceUrl": "http://www.schuzak.jp/other/abp.html",
     "viewUrl": "http://www.schuzak.jp/other/abp.conf",
@@ -197,7 +231,9 @@
   },
   {
     "list": "Wiltteri",
-    "lang": "fi",
+    "lang": [
+      "fi"
+    ],
     "descr": "Finnish supplement list for EasyList.",
     "descrSourceUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt",
     "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt",
@@ -206,7 +242,9 @@
   },
   {
     "list": "Wiltteri Reborn",
-    "lang": "fi",
+    "lang": [
+      "fi"
+    ],
     "descr": "Finnish supplement list for EasyList.",
     "descrSourceUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt",
     "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt",
