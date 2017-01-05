@@ -5,7 +5,7 @@ FilterLists is the community-driven, independent, and comprehensive directory of
 Version 2 of FilterLists is under live construction over at https://beta.filterlists.com. It is built on WordPress, so the entire project will not be open-sourced in this repo. But, the data and custom parsing logic are here to facilitate community support.
 
 ## Contributions
-Pull requests and issues are welcome! Please search current issues/pull requests and peruse CONTRIBUTING.md before submitting.
+Pull requests and issues are welcome! Please search current issues/pull requests and peruse [CONTRIBUTING.md](https://github.com/collinbarrett/FilterLists/blob/master/CONTRIBUTING.md) before submitting.
 
 ## Directory Structure
 ### gs
