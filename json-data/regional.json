@@ -272,6 +272,16 @@
     ]
   },
   {
+    "list": "280 Blocker",
+    "lang": [
+      "ja"
+    ],
+    "descr": "Blocks Japanese regional mobile advertisements and trackers.",
+    "viewUrl": "https://70i.net/files/70i_net_adblock.txt",
+    "homeUrl": "https://70i.net/",
+    "changelogUrl": "https://70i.net/blog/"
+  },
+  {
     "list": "ABP Japanese 3rd Party SNS Filters",
     "lang": [
       "ja"
