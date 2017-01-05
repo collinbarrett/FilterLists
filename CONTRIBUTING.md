@@ -7,4 +7,4 @@ FilterLists aims to be a comprehensive and accurate directory of all active and 
 The data that we index for each list is specified in the [json-schema](https://github.com/collinbarrett/FilterLists/tree/master/json-schema) directory. When submitting a new list or updates to a current list, please provide values for all fields for which information is available.
 
 # How to Contribute
-If you are GitHub savvy, feel free to skip right ahead to a pull request. If not, please open a new issue with all of your proposed additions/revisions.
+If you are GitHub savvy, feel free to skip right ahead to a [pull request](https://github.com/collinbarrett/FilterLists/compare). If not, please [open a new issue](https://github.com/collinbarrett/FilterLists/issues/new) with all of your proposed additions/revisions.
