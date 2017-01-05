@@ -356,6 +356,16 @@
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW"
   },
   {
+    "list": "Hosts2ch",
+    "lang": [
+      "ja"
+    ],
+    "descr": "Japanese ad servers hosts file.",
+    "viewUrl": "https://www.cubby.com/pl/ja.txt/_447d3ae976114d51b01bc83b7a1a77eb",
+    "homeUrl": "https://sites.google.com/site/hosts2ch/",
+    "forumUrl": "http://potato.2ch.net/test/read.cgi/android/1450730522/"
+  },
+  {
     "list": "Tofu Filter",
     "lang": [
       "ja"
