@@ -13,6 +13,16 @@
     "changelogUrl": "https://github.com/adblockpolska/Adblock_PL_List/commits/master"
   },
   {
+    "list": "AntiPubWeb",
+    "lang": [
+      "fr"
+    ],
+    "descr": "Complementary subscription to Liste FR + EasyList.",
+    "descrSourceUrl": "https://web.archive.org/web/20160221135532/http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
+    "viewUrl": "https://web.archive.org/web/20160221135532/http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
+    "homeUrl": "https://www.antipubweb.org/"
+  },
+  {
     "list": "Ayucat Powerful List",
     "lang": [
       "ja"

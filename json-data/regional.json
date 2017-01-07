@@ -154,16 +154,6 @@
     "viewUrl": "http://adb.juvander.net/Finland_adb_antisocial.txt"
   },
   {
-    "list": "AntiPubWeb",
-    "lang": [
-      "fr"
-    ],
-    "descr": "Complementary subscription to Liste FR + EasyList.",
-    "descrSourceUrl": "http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
-    "viewUrl": "http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
-    "homeUrl": "https://www.antipubweb.org/"
-  },
-  {
     "list": "Liste FR",
     "lang": [
       "fr"
