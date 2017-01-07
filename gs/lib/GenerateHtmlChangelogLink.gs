@@ -6,7 +6,7 @@ function GenerateHtmlChangelogLink(url, listName) {
         return url;
     } else {
         if (url && url != "#N/A") {
-            var html = "<a href=\"" + url + "\" title=\"" + listName + " Changelog\" class=\"button\">Changelog</a>";
+            var html = "<a href=\"" + url + "\" title=\"" + listName + " Changelog\" class=\"button\">Log</a>";
             return html;
         } else {
             return "";
