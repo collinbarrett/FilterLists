@@ -30,7 +30,7 @@ function onOpen() {
 function refreshJson() {
     var ss = SpreadsheetApp.getActiveSpreadsheet();
     var sheet = ss.getSheetByName(typeSheet[ss.getName()]);
-    var data = ImportJSON(typeGitHubUrl[ss.getName()], "", "noTruncate,rawHeaders");
+    var data = ImportJSON(typeGitHubUrl[ss.getName()], "", "noTruncate,rawHeaders,noInherit");
     for (i = 0; i < data.length; i++) {
         for (j = 0; j < data[0].length; j++) {
             if (data[i][j] == null) {
