@@ -89,7 +89,7 @@ function refreshHomeUrl(sheet, viewColHeader) {
         var rangeFull = sheet.getRange(colHeader + "2:" + colHeader);
         rangeFull.clearContent();
         var rangeTop = sheet.getRange(colHeader + "2");
-        rangeTop.setValue("=GenerateHtmlViewLink(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colHeader + "1," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colHeader + "1," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\"))," + typeSheetPrefix[ss.getName()] + "Data!" + viewColHeader + "2:" + viewColHeader + ")");
+        rangeTop.setValue("=GenerateHtmlHomeLink(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colHeader + "1," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colHeader + "1," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\"))," + typeSheetPrefix[ss.getName()] + "Data!" + viewColHeader + "2:" + viewColHeader + ")");
         var data = rangeFull.getDisplayValues();
         rangeFull.clearContent();
         rangeFull.setValues(data);
