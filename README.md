@@ -9,7 +9,7 @@ Pull requests and issues are welcome! Please search current issues/pull requests
 
 ## Directory Structure
 ### gs
-Google Script custom functions, triggers, etc. Google sheets is used as a lightweight database for this project, so the .gs files contain the custom JSON parsing logic.
+Google Script custom functions, triggers, etc. Google sheets is used as a lightweight database for this project, so the .gs files contain the custom JSON parsing logic. The lib directory is a single [GAS library](https://developers.google.com/apps-script/guide_libraries) used by all five type spreadsheets and accessed by [type/Interface.gs](https://github.com/collinbarrett/FilterLists/blob/master/gs/type/Interface.gs). The type directory is copy/pasted into each of the five spreadsheets to workaround the Google Sheets/GAS permissions structure.
 ### json-data
 The data in JSON form for each of the five list types on FilterLists.
 ### json-schema
