@@ -53,3 +53,7 @@ function GetLastUpdated(urlToCheck) {
 function GenerateHtmlListName(listName) {
     return FilterLists.GenerateHtmlListName(listName);
 }
+
+function ImportJson(url, query, parseOptions) {
+    return FilterLists.ImportJSON(url, query, parseOptions);
+}
