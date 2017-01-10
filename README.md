@@ -1,5 +1,5 @@
 # FilterLists
-FilterLists is the community-driven, independent, and comprehensive directory of all public filter lists for advertisements, trackers, and annoyances. For more information on its purpose and function, check out the [Start](https://beta.filterlists.com/start/) page.
+FilterLists is the community-driven, independent, and comprehensive directory of all public filter lists for advertisements, trackers, and annoyances. For more information on its purpose and function, check out the [Start](https://filterlists.com/start/) page.
 
 ## Intro to FilterLists v2
 Version 2 of FilterLists is under live construction over at https://beta.filterlists.com. It is built on WordPress, so the entire project will not be open-sourced in this repo. But, the data and custom parsing logic are here to facilitate community support.
@@ -15,5 +15,14 @@ Google Script custom functions, triggers, etc. Google sheets is used as a lightw
 
 ### json-data
 The data in JSON form for each of the five list types on FilterLists.
+
 ### json-schema
 The [JSON Schema](http://json-schema.org/) specification for each of the five list types contained in json-data.
+
+## Google Sheets
+The Google Sheets that serve as a lightweight database for the site are at the links below. Data is pulled once daily from GitHub to the Google Sheets, and then once daily from the Google Sheets to https://filterlists.com.
+ - [Global](https://docs.google.com/spreadsheets/d/1RB5zne9-tIoT5mIbAq1c6-5447UI0emWngOaTgjiCAE/edit?usp=sharing)
+ - [Regional](https://docs.google.com/spreadsheets/d/1Xb1y9OZ71zjkq5MiBmyCHsvFYdUfVRx6PAnlS93lqd4/edit?usp=sharing)
+ - [Forked](https://docs.google.com/spreadsheets/d/1TX29KMGNVxgj7f6TD0RiuMCLfKhM5qVIG1dkNTesV5Y/edit?usp=sharing)
+ - [Combo](https://docs.google.com/spreadsheets/d/15OULPbqny8Lc7qtoftDvgIerUt8id6MdlSnIcwpsdJs/edit?usp=sharing)
+ - [Stale](https://docs.google.com/spreadsheets/d/17SZKzZSMHfP0rz2xxAb0bGnfxTSkqpYCAyhjHO0cmAM/edit?usp=sharing)
