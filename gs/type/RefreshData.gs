@@ -56,6 +56,27 @@ function refreshParsed() {
     refreshForksCombos(sheet, viewColHeader);
 }
 
+function refreshPublic() {
+    var sheetName = typeSheetPrefix[ss.getName()] + "Public";
+    var sheet = ss.getSheetByName(sheetName);
+    var viewColHeader = refreshViewUrl(sheet);
+    refreshListPublic(sheet);
+    refreshDescriptionPublic(sheet);
+    refreshLinksPublic(sheet);
+    refreshForksCombosPublic(sheet);
+}
+
+function findColumnHeader(sheet, header) {
+    var headerRange = sheet.getRange("A1:1");
+    var headerData = headerRange.getValues();
+    for (i = 0; i < headerData[0].length; i++) {
+        if (headerData[0][i] == header) {
+            return String.fromCharCode(65 + i);
+        }
+    }
+    return null;
+}
+
 function refreshViewUrl(sheet) {
     var colHeader = findColumnHeader(sheet, "viewUrl");
     if (colHeader) {
@@ -187,18 +208,55 @@ function refreshForksCombos(sheet) {
     }
 }
 
-function findColumnHeader(sheet, header) {
-    var headerRange = sheet.getRange("A1:1");
-    var headerData = headerRange.getValues();
-    for (i = 0; i < headerData[0].length; i++) {
-        if (headerData[0][i] == header) {
-            return String.fromCharCode(65 + i);
-        }
+function refreshListPublic(sheet) {
+    var colHeader = findColumnHeader(sheet, "List");
+    if (colHeader) {
+        var rangeFull = sheet.getRange(colHeader + "2:" + colHeader);
+        rangeFull.clearContent();
+        var rangeTop = sheet.getRange(colHeader + "2");
+        rangeTop.setValue("=GenerateHtmlListName(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"list\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"list\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\")))");
+        var data = rangeFull.getDisplayValues();
+        rangeFull.clearContent();
+        rangeFull.setValues(data);
     }
-    return null;
 }
 
-function refreshPublic() {
-    var sheetName = typeSheetPrefix[ss.getName()] + "Public";
-    var sheet = ss.getSheetByName(sheetName);
+// TODO: add blockquote and source
+function refreshDescriptionPublic(sheet) {
+    var colHeader = findColumnHeader(sheet, "Description");
+    if (colHeader) {
+        var rangeFull = sheet.getRange(colHeader + "2:" + colHeader);
+        rangeFull.clearContent();
+        var rangeTop = sheet.getRange(colHeader + "2");
+        rangeTop.setValue("=ARRAYFORMULA(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descr\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descr\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\")))");
+        var data = rangeFull.getDisplayValues();
+        rangeFull.clearContent();
+        rangeFull.setValues(data);
+    }
+}
+
+function refreshLinksPublic(sheet) {
+    var colHeader = findColumnHeader(sheet, "Links");
+    if (colHeader) {
+        var rangeFull = sheet.getRange(colHeader + "2:" + colHeader);
+        rangeFull.clearContent();
+        var rangeTop = sheet.getRange(colHeader + "2");
+        rangeTop.setValue("=ARRAYFORMULA(IF(" + typeSheetPrefix[ss.getName()] + "Parsed!A2:A=\"\",\"\",\"<p>\"&" + typeSheetPrefix[ss.getName()] + "Parsed!A2:A&" + typeSheetPrefix[ss.getName()] + "Parsed!B2:B&" + typeSheetPrefix[ss.getName()] + "Parsed!C2:C&" + typeSheetPrefix[ss.getName()] + "Parsed!D2:D&" + typeSheetPrefix[ss.getName()] + "Parsed!E2:E&" + typeSheetPrefix[ss.getName()] + "Parsed!F2:F&" + typeSheetPrefix[ss.getName()] + "Parsed!G2:G&" + typeSheetPrefix[ss.getName()] + "Parsed!H2:H&" + typeSheetPrefix[ss.getName()] + "Parsed!I2:I&\"</p>\"))");
+        var data = rangeFull.getDisplayValues();
+        rangeFull.clearContent();
+        rangeFull.setValues(data);
+    }
+}
+
+function refreshForksCombosPublic(sheet) {
+    var colHeader = findColumnHeader(sheet, "Forks & Combos");
+    if (colHeader) {
+        var rangeFull = sheet.getRange(colHeader + "2:" + colHeader);
+        rangeFull.clearContent();
+        var rangeTop = sheet.getRange(colHeader + "2");
+        rangeTop.setValue("=ARRAYFORMULA(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Parsed!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"forksCombos\"," + typeSheetPrefix[ss.getName()] + "Parsed!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"forksCombos\"," + typeSheetPrefix[ss.getName()] + "Parsed!A1:1,0),4),\"1\",\"\")))");
+        var data = rangeFull.getDisplayValues();
+        rangeFull.clearContent();
+        rangeFull.setValues(data);
+    }
 }
