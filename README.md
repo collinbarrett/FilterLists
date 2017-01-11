@@ -10,9 +10,9 @@ Pull requests and issues are welcome! Please search current issues/pull requests
 ## Directory Structure
 ### [/gs](https://github.com/collinbarrett/FilterLists/tree/master/gs)
 Contains Google Script custom functions, triggers, etc. Google sheets is used as a lightweight database for this project, so the .gs files contain the custom JSON parsing logic.
-#### [/lib](https://github.com/collinbarrett/FilterLists/tree/master/gs/lib)
+#### [/gs/lib](https://github.com/collinbarrett/FilterLists/tree/master/gs/lib)
 A single [GAS library](https://developers.google.com/apps-script/guide_libraries) used by all five list type spreadsheets and accessed via [type/Interface.gs](https://github.com/collinbarrett/FilterLists/blob/master/gs/type/Interface.gs)
-#### [/type](https://github.com/collinbarrett/FilterLists/tree/master/gs/type)
+#### [/gs/type](https://github.com/collinbarrett/FilterLists/tree/master/gs/type)
 Files copy/pasted into each of the five spreadsheets to workaround the Google Sheets/GAS permissions structure
 
 ### [/json-data](https://github.com/collinbarrett/FilterLists/tree/master/json-data)
