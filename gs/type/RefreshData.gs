@@ -221,14 +221,20 @@ function refreshListPublic(sheet) {
     }
 }
 
-// TODO: add blockquote and source
 function refreshDescriptionPublic(sheet) {
+    var dataSheetName = typeSheetPrefix[ss.getName()] + "Data";
+    var dataSheet = ss.getSheetByName(dataSheetName);
+    var sourceUrlColHeader = findColumnHeader(dataSheet, "descrSourceUrl");
     var colHeader = findColumnHeader(sheet, "Description");
     if (colHeader) {
         var rangeFull = sheet.getRange(colHeader + "2:" + colHeader);
         rangeFull.clearContent();
         var rangeTop = sheet.getRange(colHeader + "2");
-        rangeTop.setValue("=ARRAYFORMULA(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descr\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descr\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\")))");
+        if (sourceUrlColHeader) {
+            rangeTop.setValue("=ARRAYFORMULA(IF(ISBLANK(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\"))),,\"<blockquote cite=\"\"\")&INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\"))&IF(ISBLANK(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\"))),,\"\"\">\")&INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descr\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descr\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\"))&IF(ISBLANK(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\"))),,\"</blockquote>\"))");
+        } else {
+            rangeTop.setValue("=ARRAYFORMULA(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descr\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descr\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\")))");
+        }
         var data = rangeFull.getDisplayValues();
         rangeFull.clearContent();
         rangeFull.setValues(data);
