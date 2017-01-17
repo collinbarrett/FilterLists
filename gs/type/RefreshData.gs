@@ -60,6 +60,7 @@ function refreshPublic() {
     var sheetName = typeSheetPrefix[ss.getName()] + "Public";
     var sheet = ss.getSheetByName(sheetName);
     var viewColHeader = refreshViewUrl(sheet);
+    refreshRegionPublic(sheet);
     refreshListPublic(sheet);
     refreshDescriptionPublic(sheet);
     refreshLinksPublic(sheet);
@@ -202,6 +203,19 @@ function refreshForksCombos(sheet) {
         rangeFull.clearContent();
         var rangeTop = sheet.getRange(colHeader + "2");
         rangeTop.setValue("=ARRAYFORMULA(SUBSTITUTE(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"forksCombos\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"forksCombos\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\")),\",\",\"<br>\"))");
+        var data = rangeFull.getDisplayValues();
+        rangeFull.clearContent();
+        rangeFull.setValues(data);
+    }
+}
+
+function refreshRegionPublic(sheet) {
+    var colHeader = findColumnHeader(sheet, "Region");
+    if (colHeader) {
+        var rangeFull = sheet.getRange(colHeader + "2:" + colHeader);
+        rangeFull.clearContent();
+        var rangeTop = sheet.getRange(colHeader + "2");
+        rangeTop.setValue("=ARRAYFORMULA(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"lang\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"lang\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\")))");
         var data = rangeFull.getDisplayValues();
         rangeFull.clearContent();
         rangeFull.setValues(data);
