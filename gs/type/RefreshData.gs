@@ -53,7 +53,8 @@ function refreshParsed() {
     refreshEmailUrl(sheet, viewColHeader);
     refreshChangelogUrl(sheet, viewColHeader);
     refreshDonateUrl(sheet, viewColHeader);
-    refreshForksCombos(sheet, viewColHeader);
+    refreshForksCombos(sheet);
+    refreshMaster(sheet);
 }
 
 function refreshPublic() {
@@ -65,6 +66,7 @@ function refreshPublic() {
     refreshDescriptionPublic(sheet);
     refreshLinksPublic(sheet);
     refreshForksCombosPublic(sheet);
+    refreshMasterPublic(sheet);
 }
 
 function findColumnHeader(sheet, header) {
@@ -209,6 +211,19 @@ function refreshForksCombos(sheet) {
     }
 }
 
+function refreshMaster(sheet) {
+    var colHeader = findColumnHeader(sheet, "master");
+    if (colHeader) {
+        var rangeFull = sheet.getRange(colHeader + "2:" + colHeader);
+        rangeFull.clearContent();
+        var rangeTop = sheet.getRange(colHeader + "2");
+        rangeTop.setValue("=ARRAYFORMULA(SUBSTITUTE(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"master\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"master\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\")),\",\",\"<br>\"))");
+        var data = rangeFull.getDisplayValues();
+        rangeFull.clearContent();
+        rangeFull.setValues(data);
+    }
+}
+
 function refreshRegionPublic(sheet) {
     var colHeader = findColumnHeader(sheet, "Region");
     if (colHeader) {
@@ -275,6 +290,19 @@ function refreshForksCombosPublic(sheet) {
         rangeFull.clearContent();
         var rangeTop = sheet.getRange(colHeader + "2");
         rangeTop.setValue("=ARRAYFORMULA(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Parsed!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"forksCombos\"," + typeSheetPrefix[ss.getName()] + "Parsed!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"forksCombos\"," + typeSheetPrefix[ss.getName()] + "Parsed!A1:1,0),4),\"1\",\"\")))");
+        var data = rangeFull.getDisplayValues();
+        rangeFull.clearContent();
+        rangeFull.setValues(data);
+    }
+}
+
+function refreshMasterPublic(sheet) {
+    var colHeader = findColumnHeader(sheet, "Master");
+    if (colHeader) {
+        var rangeFull = sheet.getRange(colHeader + "2:" + colHeader);
+        rangeFull.clearContent();
+        var rangeTop = sheet.getRange(colHeader + "2");
+        rangeTop.setValue("=ARRAYFORMULA(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Parsed!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"master\"," + typeSheetPrefix[ss.getName()] + "Parsed!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"master\"," + typeSheetPrefix[ss.getName()] + "Parsed!A1:1,0),4),\"1\",\"\")))");
         var data = rangeFull.getDisplayValues();
         rangeFull.clearContent();
         rangeFull.setValues(data);
