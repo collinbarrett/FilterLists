@@ -1,302 +1,301 @@
-[
-  {
-    "list": "Adguard DNS Filter",
-    "viewUrl": "https://adguard.com/en/filter-rules.html?id=15",
-    "master": [
-      "Adguard English Filter",
-      "Adguard Social Media Filter",
-      "Adguard Spyware Filter",
-      "Adguard Mobile Ads Filter",
-      "EasyList",
-      "EasyPrivacy"
-    ]
-  },
-  {
-    "list": "Fanboy's Complete List",
-    "viewUrl": "https://fanboy.co.nz/r/fanboy-complete.txt",
-    "master": [
-      "EasyList",
-      "EasyPrivacy",
-      "Fanboy's Enhanced Tracking List"
-    ]
-  },
-  {
-    "list": "Fanboy's Ultimate List",
-    "viewUrl": "https://fanboy.co.nz/r/fanboy-ultimate.txt",
-    "master": [
-      "EasyList",
-      "EasyPrivacy",
-      "Fanboy's Enhanced Tracking List",
-      "Fanboy's Annoyance List"
-    ]
-  },
-  {
-    "list": "hpHosts",
-    "viewUrl": "https://www.hosts-file.net/download/hosts.txt",
-    "master": [
-      "hpHosts ATS",
-      "hpHosts EMD",
-      "hpHosts EXP",
-      "hpHosts FSA",
-      "hpHosts GRM",
-      "hpHosts HFS",
-      "hpHosts HJK",
-      "hpHosts MMT",
-      "hpHosts PHA",
-      "hpHosts PSH",
-      "hpHosts WRZ"
-    ]
-  },
-  {
-    "list": "Jansal's Hosts",
-    "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hosts",
-    "master": [
-      "Malware Domain List",
-      "Peter Lowe's List",
-      "Spybot",
-      "Spyware Blaster"
-    ]
-  },
-  {
-    "list": "Jansal's Hosts Light",
-    "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hostslt",
-    "master": [
-      "Malware Domain List",
-      "Spybot"
-    ]
-  },
-  {
-    "list": "Ransomware Tracker Domain Blocklist",
-    "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt",
-    "master": [
-      "Ransomware Tracker CryptoWall Ransomware Payment Sites Domain Blocklist",
-      "Ransomware Tracker Locky Ransomware C2 Domain Blocklist",
-      "Ransomware Tracker Locky Ransomware Payment Sites Domain Blocklist",
-      "Ransomware Tracker TeslaCrypt Ransomware Payment Sites Domain Blocklist",
-      "Ransomware Tracker TorrentLocker Ransomware C2 Domain Blocklist",
-      "Ransomware Tracker TorrentLocker Ransomware Payment Sites Domain Blocklist"
-    ]
-  },
-  {
-    "list": "Ransomware Tracker IP Blocklist",
-    "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_IPBL.txt",
-    "master": [
-      "Ransomware Tracker Locky Ransomware C2 IP Blocklist",
-      "Ransomware Tracker TeslaCrypt Ransomware Payment Sites IP Blocklist",
-      "Ransomware Tracker TorrentLocker Ransomware C2 IP Blocklist",
-      "Ransomware Tracker TorrentLocker Ransomware Payment Sites IP Blocklist"
-    ]
-  },
-  {
-    "list": "Ransomware Tracker URL Blocklist",
-    "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_URLBL.txt",
-    "master": [
-      "Ransomware Tracker CryptoWall Ransomware C2 URL Blocklist",
-      "Ransomware Tracker Locky Ransomware Distribution Site URL Blocklist",
-      "Ransomware Tracker TeslaCrypt Ransomware C2 URL Blocklist",
-      "Ransomware Tracker TeslaCrypt Ransomware Distribution Site URL Blocklist"
-    ]
-  },
-  {
-    "list": "Unified Hosts",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
-    "master": [
-      "AdAway",
-      "Dan Pollock's Hosts",
-      "Malware Domain List",
-      "MVPS HOSTS",
-      "Peter Lowe's List",
-      "Steven Black's Hosts"
-    ]
-  },
-  {
-    "list": "Unified Hosts + Gambling",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts",
-    "master": [
-      "AdAway",
-      "Dan Pollock's Hosts",
-      "Malware Domain List",
-      "MVPS HOSTS",
-      "Peter Lowe's List",
-      "Steven Black's Hosts"
-    ]
-  },
-  {
-    "list": "Unified Hosts + Gambling + Porn",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts",
-    "master": [
-      "AdAway",
-      "Dan Pollock's Hosts",
-      "Malware Domain List",
-      "MVPS HOSTS",
-      "Peter Lowe's List",
-      "Steven Black's Hosts"
-    ]
-  },
-  {
-    "list": "Unified Hosts + Gambling + Porn + Social",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts",
-    "master": [
-      "AdAway",
-      "Dan Pollock's Hosts",
-      "Malware Domain List",
-      "MVPS HOSTS",
-      "Peter Lowe's List",
-      "Steven Black's Hosts"
-    ]
-  },
-  {
-    "list": "Unified Hosts + Gambling + Social",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts",
-    "master": [
-      "AdAway",
-      "Dan Pollock's Hosts",
-      "Malware Domain List",
-      "MVPS HOSTS",
-      "Peter Lowe's List",
-      "Steven Black's Hosts"
-    ]
-  },
-  {
-    "list": "Unified Hosts + Porn",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts",
-    "master": [
-      "AdAway",
-      "Dan Pollock's Hosts",
-      "Malware Domain List",
-      "MVPS HOSTS",
-      "Peter Lowe's List",
-      "Steven Black's Hosts"
-    ]
-  },
-  {
-    "list": "Unified Hosts + Porn + Social",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-social/hosts",
-    "master": [
-      "AdAway",
-      "Dan Pollock's Hosts",
-      "Malware Domain List",
-      "MVPS HOSTS",
-      "Peter Lowe's List",
-      "Steven Black's Hosts"
-    ]
-  },
-  {
-    "list": "Unified Hosts + Social",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts",
-    "master": [
-      "AdAway",
-      "Dan Pollock's Hosts",
-      "Malware Domain List",
-      "MVPS HOSTS",
-      "Peter Lowe's List",
-      "Steven Black's Hosts"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/abpindo+easylist.txt",
-    "master": [
-      "ABPindo",
-      "EasyList"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/bulgarian_list+easylist.txt",
-    "master": [
-      "Bulgarian List",
-      "EasyList"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt",
-    "master": [
-      "EasyList China",
-      "EasyList"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistczechslovak+easylist.txt",
-    "master": [
-      "EasyList Czech and Slovak",
-      "EasyList"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch+easylist.txt",
-    "master": [
-      "EasyList Dutch",
-      "EasyList"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany+easylist.txt",
-    "master": [
-      "EasyList Germany",
-      "EasyList"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/israellist+easylist.txt",
-    "master": [
-      "EasyList Hebrew",
-      "EasyList"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly+easylist.txt",
-    "master": [
-      "EasyList Italy",
-      "EasyList"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistlithuania+easylist.txt",
-    "master": [
-      "EasyList Lithuania",
-      "EasyList"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy+easylist.txt",
-    "master": [
-      "EasyPrivacy",
-      "EasyList"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/latvianlist+easylist.txt",
-    "master": [
-      "Latvian List",
-      "EasyList"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/liste_ar+liste_fr+easylist.txt",
-    "master": [
-      "Liste AR",
-      "Liste FR",
-      "EasyList"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/liste_fr+easylist.txt",
-    "master": [
-      "Liste FR",
-      "EasyList"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/rolist+easylist.txt",
-    "master": [
-      "ROList",
-      "EasyList"
-    ]
-  },
-  {
-    "viewUrl": "https://easylist-downloads.adblockplus.org/ruadlist+easylist.txt",
-    "master": [
-      "RU AdList",
-      "EasyList"
-    ]
-  }
+[{
+        "list": "Adguard DNS Filter",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=15",
+        "master": [
+            "Adguard English Filter",
+            "Adguard Social Media Filter",
+            "Adguard Spyware Filter",
+            "Adguard Mobile Ads Filter",
+            "EasyList",
+            "EasyPrivacy"
+        ]
+    },
+    {
+        "list": "Fanboy's Complete List",
+        "viewUrl": "https://fanboy.co.nz/r/fanboy-complete.txt",
+        "master": [
+            "EasyList",
+            "EasyPrivacy",
+            "Fanboy's Enhanced Tracking List"
+        ]
+    },
+    {
+        "list": "Fanboy's Ultimate List",
+        "viewUrl": "https://fanboy.co.nz/r/fanboy-ultimate.txt",
+        "master": [
+            "EasyList",
+            "EasyPrivacy",
+            "Fanboy's Enhanced Tracking List",
+            "Fanboy's Annoyance List"
+        ]
+    },
+    {
+        "list": "hpHosts",
+        "viewUrl": "https://www.hosts-file.net/download/hosts.txt",
+        "master": [
+            "hpHosts ATS",
+            "hpHosts EMD",
+            "hpHosts EXP",
+            "hpHosts FSA",
+            "hpHosts GRM",
+            "hpHosts HFS",
+            "hpHosts HJK",
+            "hpHosts MMT",
+            "hpHosts PHA",
+            "hpHosts PSH",
+            "hpHosts WRZ"
+        ]
+    },
+    {
+        "list": "Jansal's Hosts",
+        "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hosts",
+        "master": [
+            "Malware Domain List",
+            "Peter Lowe's List",
+            "Spybot",
+            "Spyware Blaster"
+        ]
+    },
+    {
+        "list": "Jansal's Hosts Light",
+        "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hostslt",
+        "master": [
+            "Malware Domain List",
+            "Spybot"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker Domain Blocklist",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt",
+        "master": [
+            "Ransomware Tracker CryptoWall Ransomware Payment Sites Domain Blocklist",
+            "Ransomware Tracker Locky Ransomware C2 Domain Blocklist",
+            "Ransomware Tracker Locky Ransomware Payment Sites Domain Blocklist",
+            "Ransomware Tracker TeslaCrypt Ransomware Payment Sites Domain Blocklist",
+            "Ransomware Tracker TorrentLocker Ransomware C2 Domain Blocklist",
+            "Ransomware Tracker TorrentLocker Ransomware Payment Sites Domain Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker IP Blocklist",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_IPBL.txt",
+        "master": [
+            "Ransomware Tracker Locky Ransomware C2 IP Blocklist",
+            "Ransomware Tracker TeslaCrypt Ransomware Payment Sites IP Blocklist",
+            "Ransomware Tracker TorrentLocker Ransomware C2 IP Blocklist",
+            "Ransomware Tracker TorrentLocker Ransomware Payment Sites IP Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker URL Blocklist",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_URLBL.txt",
+        "master": [
+            "Ransomware Tracker CryptoWall Ransomware C2 URL Blocklist",
+            "Ransomware Tracker Locky Ransomware Distribution Site URL Blocklist",
+            "Ransomware Tracker TeslaCrypt Ransomware C2 URL Blocklist",
+            "Ransomware Tracker TeslaCrypt Ransomware Distribution Site URL Blocklist"
+        ]
+    },
+    {
+        "list": "Unified Hosts",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "list": "Unified Hosts + Gambling",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "list": "Unified Hosts + Gambling + Porn",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "list": "Unified Hosts + Gambling + Porn + Social",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "list": "Unified Hosts + Gambling + Social",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "list": "Unified Hosts + Porn",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "list": "Unified Hosts + Porn + Social",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-social/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "list": "Unified Hosts + Social",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/abpindo+easylist.txt",
+        "master": [
+            "ABPindo",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/bulgarian_list+easylist.txt",
+        "master": [
+            "Bulgarian List",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt",
+        "master": [
+            "EasyList China",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistczechslovak+easylist.txt",
+        "master": [
+            "EasyList Czech and Slovak",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch+easylist.txt",
+        "master": [
+            "EasyList Dutch",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany+easylist.txt",
+        "master": [
+            "EasyList Germany",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/israellist+easylist.txt",
+        "master": [
+            "EasyList Hebrew",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly+easylist.txt",
+        "master": [
+            "EasyList Italy",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistlithuania+easylist.txt",
+        "master": [
+            "EasyList Lithuania",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy+easylist.txt",
+        "master": [
+            "EasyPrivacy",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/latvianlist+easylist.txt",
+        "master": [
+            "Latvian List",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/liste_ar+liste_fr+easylist.txt",
+        "master": [
+            "Liste AR",
+            "Liste FR",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/liste_fr+easylist.txt",
+        "master": [
+            "Liste FR",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/rolist+easylist.txt",
+        "master": [
+            "ROList",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/ruadlist+easylist.txt",
+        "master": [
+            "RU AdList",
+            "EasyList"
+        ]
+    }
 ]

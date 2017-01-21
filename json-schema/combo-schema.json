@@ -1,28 +1,28 @@
 {
-  "description": "Schema for a combo list (Lists that are actively maintained and combinations of two or more other lists.) object. Sorted alphabetically by the \"list\" property then by the first, second, and third master list by convention.",
-  "type": "object",
-  "required": [
-    "viewUrl",
-    "master"
-  ],
-  "properties": {
-    "list": {
-      "description": "Name of the list as defined by the list maintainer(s) in title case.",
-      "type": "string"
-    },
-    "viewUrl": {
-      "description": "The URL to the list in raw text format.",
-      "type": "string",
-      "format": "uri"
-    },
-    "master": {
-      "description": "The titles of the master lists which are combined to create the current list object. Sorted alphabetically by convention.",
-      "type": "array",
-      "maxItems": 11,
-      "items": {
-        "type": "string"
-      },
-      "uniqueItems": true
+    "description": "Schema for a combo list (Lists that are actively maintained and combinations of two or more other lists.) object. Sorted alphabetically by the \"list\" property then by the first, second, and third master list by convention.",
+    "type": "object",
+    "required": [
+        "viewUrl",
+        "master"
+    ],
+    "properties": {
+        "list": {
+            "description": "Name of the list as defined by the list maintainer(s) in title case.",
+            "type": "string"
+        },
+        "viewUrl": {
+            "description": "The URL to the list in raw text format.",
+            "type": "string",
+            "format": "uri"
+        },
+        "master": {
+            "description": "The titles of the master lists which are combined to create the current list object. Sorted alphabetically by convention.",
+            "type": "array",
+            "maxItems": 11,
+            "items": {
+                "type": "string"
+            },
+            "uniqueItems": true
+        }
     }
-  }
 }
