@@ -2,7 +2,7 @@
 FilterLists is the independent and comprehensive directory of all public filter lists for advertisements, trackers, malware, and annoyances. For more information on its purpose and function, check out [Start](https://filterlists.com/start/).
 
 ## Contributions
-See [CONTRIBUTING.md](https://github.com/collinbarrett/FilterLists/blob/master/CONTRIBUTING.md).
+See [CONTRIBUTING](https://github.com/collinbarrett/FilterLists/blob/master/CONTRIBUTING.md).
 
 ## Directory Structure
 
