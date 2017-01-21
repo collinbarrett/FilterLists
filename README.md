@@ -7,7 +7,7 @@ See [CONTRIBUTING.md](https://github.com/collinbarrett/FilterLists/blob/master/C
 ## Directory Structure
 
 ### [/gs/lib](https://github.com/collinbarrett/FilterLists/tree/master/gs/lib)
-A single [GAS library](https://developers.google.com/apps-script/guide_libraries) used by all five list type spreadsheets and accessed via [type/Interface.gs](https://github.com/collinbarrett/FilterLists/blob/master/gs/type/Interface.gs)
+A single [GAS library](https://developers.google.com/apps-script/guide_libraries) used by all five list type spreadsheets and accessed via [/gs/type/Interface.gs](https://github.com/collinbarrett/FilterLists/blob/master/gs/type/Interface.gs)
 
 ### [/gs/type](https://github.com/collinbarrett/FilterLists/tree/master/gs/type)
 Files copy/pasted into each of the five list type spreadsheets to workaround the Google Sheets/GAS permissions structure
