@@ -45,7 +45,12 @@ function refreshParsed() {
     var sheetName = typeSheetPrefix[ss.getName()] + "Parsed";
     var sheet = ss.getSheetByName(sheetName);
     var viewColHeader = refreshViewUrl(sheet);
-    refreshAddUrl(sheet, viewColHeader);
+    if (typeSheetPrefix[ss.getName()] != "Combo") {
+        refreshAddUrl(sheet, viewColHeader);
+    } else {
+        viewColHeader = refreshViewUrlCombo(sheet);
+        refreshAddUrlCombo(sheet, viewColHeader);
+    }
     refreshHomeUrl(sheet, viewColHeader);
     refreshGuideUrl(sheet, viewColHeader);
     refreshForumUrl(sheet, viewColHeader);
@@ -61,12 +66,17 @@ function refreshPublic() {
     var sheetName = typeSheetPrefix[ss.getName()] + "Public";
     var sheet = ss.getSheetByName(sheetName);
     var viewColHeader = refreshViewUrl(sheet);
-    refreshRegionPublic(sheet);
-    refreshListPublic(sheet);
-    refreshDescriptionPublic(sheet);
-    refreshLinksPublic(sheet);
-    refreshForksCombosPublic(sheet);
-    refreshMasterPublic(sheet);
+    if (typeSheetPrefix[ss.getName()] != "Combo") {
+        refreshRegionPublic(sheet);
+        refreshListPublic(sheet);
+        refreshDescriptionPublic(sheet);
+        refreshLinksPublic(sheet);
+        refreshForksCombosPublic(sheet);
+        refreshMasterPublic(sheet);
+    } else {
+        refreshListPublicCombo(sheet);
+        refreshLinksPublicCombo(sheet);
+    }
 }
 
 function findColumnHeader(sheet, header) {
@@ -94,6 +104,20 @@ function refreshViewUrl(sheet) {
     return colHeader;
 }
 
+function refreshViewUrlCombo(sheet) {
+    var colHeader = findColumnHeader(sheet, "viewUrl");
+    if (colHeader) {
+        var rangeFull = sheet.getRange(colHeader + "2:" + colHeader);
+        rangeFull.clearContent();
+        var rangeTop = sheet.getRange(colHeader + "2");
+        rangeTop.setValue("=GenerateHtmlViewLinkCombo(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colHeader + "1," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colHeader + "1," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\"))," + typeSheetPrefix[ss.getName()] + "Data!" + colHeader + "2:" + colHeader + ",INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"master\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"master\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\")))");
+        var data = rangeFull.getDisplayValues();
+        rangeFull.clearContent();
+        rangeFull.setValues(data);
+    }
+    return colHeader;
+}
+
 function refreshAddUrl(sheet, viewColHeader) {
     var colHeader = findColumnHeader(sheet, "addUrl");
     if (colHeader) {
@@ -101,6 +125,19 @@ function refreshAddUrl(sheet, viewColHeader) {
         rangeFull.clearContent();
         var rangeTop = sheet.getRange(colHeader + "2");
         rangeTop.setValue("=GenerateHtmlAddLink(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + viewColHeader + "1," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + viewColHeader + "1," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\"))," + typeSheetPrefix[ss.getName()] + "Data!" + viewColHeader + "2:" + viewColHeader + ")");
+        var data = rangeFull.getDisplayValues();
+        rangeFull.clearContent();
+        rangeFull.setValues(data);
+    }
+}
+
+function refreshAddUrlCombo(sheet, viewColHeader) {
+    var colHeader = findColumnHeader(sheet, "addUrl");
+    if (colHeader) {
+        var rangeFull = sheet.getRange(colHeader + "2:" + colHeader);
+        rangeFull.clearContent();
+        var rangeTop = sheet.getRange(colHeader + "2");
+        rangeTop.setValue("=GenerateHtmlAddLinkCombo(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + viewColHeader + "1," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + viewColHeader + "1," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\"))," + typeSheetPrefix[ss.getName()] + "Data!" + viewColHeader + "2:" + viewColHeader + ",INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"master\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"master\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\")))");
         var data = rangeFull.getDisplayValues();
         rangeFull.clearContent();
         rangeFull.setValues(data);
@@ -250,6 +287,19 @@ function refreshListPublic(sheet) {
     }
 }
 
+function refreshListPublicCombo(sheet) {
+    var colHeader = findColumnHeader(sheet, "List");
+    if (colHeader) {
+        var rangeFull = sheet.getRange(colHeader + "2:" + colHeader);
+        rangeFull.clearContent();
+        var rangeTop = sheet.getRange(colHeader + "2");
+        rangeTop.setValue("=GenerateHtmlListNameCombo(INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"list\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"list\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\")),INDIRECT(\"" + typeSheetPrefix[ss.getName()] + "Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"master\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"master\"," + typeSheetPrefix[ss.getName()] + "Data!A1:1,0),4),\"1\",\"\")))");
+        var data = rangeFull.getDisplayValues();
+        rangeFull.clearContent();
+        rangeFull.setValues(data);
+    }
+}
+
 function refreshDescriptionPublic(sheet) {
     var dataSheetName = typeSheetPrefix[ss.getName()] + "Data";
     var dataSheet = ss.getSheetByName(dataSheetName);
@@ -277,6 +327,19 @@ function refreshLinksPublic(sheet) {
         rangeFull.clearContent();
         var rangeTop = sheet.getRange(colHeader + "2");
         rangeTop.setValue("=ARRAYFORMULA(IF(" + typeSheetPrefix[ss.getName()] + "Parsed!A2:A=\"\",\"\",\"<p>\"&" + typeSheetPrefix[ss.getName()] + "Parsed!A2:A&" + typeSheetPrefix[ss.getName()] + "Parsed!B2:B&" + typeSheetPrefix[ss.getName()] + "Parsed!C2:C&" + typeSheetPrefix[ss.getName()] + "Parsed!D2:D&" + typeSheetPrefix[ss.getName()] + "Parsed!E2:E&" + typeSheetPrefix[ss.getName()] + "Parsed!F2:F&" + typeSheetPrefix[ss.getName()] + "Parsed!G2:G&" + typeSheetPrefix[ss.getName()] + "Parsed!H2:H&" + typeSheetPrefix[ss.getName()] + "Parsed!I2:I&\"</p>\"))");
+        var data = rangeFull.getDisplayValues();
+        rangeFull.clearContent();
+        rangeFull.setValues(data);
+    }
+}
+
+function refreshLinksPublicCombo(sheet) {
+    var colHeader = findColumnHeader(sheet, "Links");
+    if (colHeader) {
+        var rangeFull = sheet.getRange(colHeader + "2:" + colHeader);
+        rangeFull.clearContent();
+        var rangeTop = sheet.getRange(colHeader + "2");
+        rangeTop.setValue("=ARRAYFORMULA(IF(" + typeSheetPrefix[ss.getName()] + "Parsed!A2:A=\"\",\"\",\"<p>\"&" + typeSheetPrefix[ss.getName()] + "Parsed!A2:A&" + typeSheetPrefix[ss.getName()] + "Parsed!B2:B&\"</p>\"))");
         var data = rangeFull.getDisplayValues();
         rangeFull.clearContent();
         rangeFull.setValues(data);

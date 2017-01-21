@@ -10,8 +10,16 @@ function GenerateHtmlViewLink(url, listName) {
     return FilterLists.GenerateHtmlViewLink(url, listName);
 }
 
+function GenerateHtmlViewLinkCombo(url, listName, masterLists) {
+    return FilterLists.GenerateHtmlViewLinkCombo(url, listName, masterLists);
+}
+
 function GenerateHtmlAddLink(url, listName) {
     return FilterLists.GenerateHtmlAddLink(url, listName);
+}
+
+function GenerateHtmlAddLinkCombo(url, listName, masterLists) {
+    return FilterLists.GenerateHtmlAddLinkCombo(url, listName, masterLists);
 }
 
 function GenerateHtmlHomeLink(url, listName) {
@@ -52,6 +60,10 @@ function GetLastUpdated(urlToCheck) {
 
 function GenerateHtmlListName(listName) {
     return FilterLists.GenerateHtmlListName(listName);
+}
+
+function GenerateHtmlListNameCombo(listName, masterLists) {
+    return FilterLists.GenerateHtmlListNameCombo(listName, masterLists);
 }
 
 function ImportJson(url, query, parseOptions) {
