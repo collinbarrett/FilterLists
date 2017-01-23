@@ -20,6 +20,9 @@ The data in JSON format for each of the five list types on FilterLists
 ### [/json-schema](https://github.com/collinbarrett/FilterLists/tree/master/json-schema)
 The [JSON Schema](http://json-schema.org/) specification for each of the five list types contained in [/json-data](https://github.com/collinbarrett/FilterLists/tree/master/json-data)
 
+## Building
+Essentially, for now, you "can't". As it stands, FilterLists is built on WordPress and Google Sheets. The data is all contained in this repository in .json form. The Google Apps Script used to parse the data is also maintained here. To build the production setup, though, requires creating custom Google Sheets, installing the apps script, and installing WordPress. In the future, it would be great to have the entire site open-sourced.
+
 ## Google Sheets
 Google Sheets is used as a lightweight database for this site. Data is pulled once daily from GitHub to Google Sheets, and then once daily from Google Sheets to FilterLists.
  - [Global](https://docs.google.com/spreadsheets/d/1RB5zne9-tIoT5mIbAq1c6-5447UI0emWngOaTgjiCAE/edit?usp=sharing)
