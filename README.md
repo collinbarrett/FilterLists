@@ -15,7 +15,7 @@ A single [GAS library](https://developers.google.com/apps-script/guide_libraries
 Scripts copied into each of the five list type spreadsheets to workaround the Google Sheets/GAS permissions structure
 
 ### [/json-data](https://github.com/collinbarrett/FilterLists/tree/master/json-data)
-The data in JSON format for each of the five list types on FilterLists
+The data in JSON format for each of the five list types on FilterLists. If you are looking for the core data of FilterLists (information on all of the lists), this is it.
 
 ### [/json-schema](https://github.com/collinbarrett/FilterLists/tree/master/json-schema)
 The [JSON Schema](http://json-schema.org/) specification for each of the five list types contained in [/json-data](https://github.com/collinbarrett/FilterLists/tree/master/json-data)
