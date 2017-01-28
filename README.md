@@ -1,7 +1,11 @@
-# FilterLists
+# The NEW FilterLists
 [filterlists.com](https://filterlists.com)
 
 FilterLists is the independent and comprehensive directory of all public filter lists for advertisements, trackers, malware, and annoyances. For more information on its purpose and function, check out [Start](https://filterlists.com/start/).
+
+## Legacy Site
+
+The legacy site is still live over at [v1.filterlists.com](https://v1.filterlists.com). Note that the site is for archival purposes only and will no longer be updated.
 
 ## Contributions
 See [CONTRIBUTING](https://github.com/collinbarrett/FilterLists/blob/master/CONTRIBUTING.md).
