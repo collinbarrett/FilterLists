@@ -1,3 +1,4 @@
+![FilterLists](https://github.com/collinbarrett/FilterLists/blob/master/imgs/logo_filterlists.png)
 # The NEW FilterLists
 [filterlists.com](https://filterlists.com)
 
