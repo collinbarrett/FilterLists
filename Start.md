@@ -25,7 +25,7 @@ Typical adblockers run as an extension in popular web browsers. As we browse the
 
 ### Features / Bugs
 
-Feature ideas and bug reports are collected on [GitHub](https://github.com/collinbarrett/FilterLists/issues?q=is:open+is:issue+label:enhancement).
+Feature ideas and bug reports are collected on [GitHub](https://github.com/collinbarrett/FilterLists/issues).
 
 ### F.A.Q.
 
