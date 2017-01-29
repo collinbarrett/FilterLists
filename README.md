@@ -13,17 +13,17 @@ See [CONTRIBUTING](https://github.com/collinbarrett/FilterLists/blob/master/CONT
 
 ## Directory Structure
 
-### [/gs/lib](https://github.com/collinbarrett/FilterLists/tree/master/gs/lib)
-A single [GAS library](https://developers.google.com/apps-script/guide_libraries) used by all five list type spreadsheets and accessed via [/gs/type/Interface.gs](https://github.com/collinbarrett/FilterLists/blob/master/gs/type/Interface.gs)
-
-### [/gs/type](https://github.com/collinbarrett/FilterLists/tree/master/gs/type)
-Scripts copied into each of the five list type spreadsheets to workaround the Google Sheets/GAS permissions structure
-
 ### [/json-data](https://github.com/collinbarrett/FilterLists/tree/master/json-data)
 The data in JSON format for each of the five list types on FilterLists. If you are looking for the core data of FilterLists (information on all of the lists), this is it.
 
 ### [/json-schema](https://github.com/collinbarrett/FilterLists/tree/master/json-schema)
 The [JSON Schema](http://json-schema.org/) specification for each of the five list types contained in [/json-data](https://github.com/collinbarrett/FilterLists/tree/master/json-data). Since all lists do not have values for all supported data properties, these explain all of the possible properties that FilterLists currently supports rather than including a bunch of null values in the .json data files.
+
+### [/gs/lib](https://github.com/collinbarrett/FilterLists/tree/master/gs/lib)
+A single [GAS library](https://developers.google.com/apps-script/guide_libraries) used by all five list type spreadsheets and accessed via [/gs/type/Interface.gs](https://github.com/collinbarrett/FilterLists/blob/master/gs/type/Interface.gs)
+
+### [/gs/type](https://github.com/collinbarrett/FilterLists/tree/master/gs/type)
+Scripts copied into each of the five list type spreadsheets to workaround the Google Sheets/GAS permissions structure
 
 ## Building
 Essentially, for now, you "can't". As it stands, FilterLists is only pseudo-open-sourced, built on WordPress and Google Sheets. The data is all contained in this repository in .json form. The Google Apps Scripts used to parse the data are also maintained here. To build the production setup, though, requires creating custom Google Sheets, installing the apps scripts, and installing WordPress. In the future, it would be great to have the entire site open-sourced; but, it is what it is for now.
