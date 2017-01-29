@@ -6,7 +6,7 @@ function GenerateHtmlListName(listName) {
         return listName;
     } else {
         if (listName) {
-            var html = "<h3 id=\"" + listName + "\">" + listName + "</h3>";
+            var html = "<h3 id=\"" + TrimUrlSlug(listName) + "\">" + listName + "</h3>";
             return html;
         } else {
             return "";
