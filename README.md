@@ -1,4 +1,4 @@
-![FilterLists](https://github.com/collinbarrett/FilterLists/blob/master/imgs/logo_filterlists.png)
+<div style="text-align:center"><img src ="https://github.com/collinbarrett/FilterLists/blob/master/imgs/logo_filterlists.png" /></div>
 # The NEW FilterLists
 [filterlists.com](https://filterlists.com)
 
