@@ -27,11 +27,6 @@ Typical adblockers run as an extension in popular web browsers. As we browse the
 
 Feature ideas and bug reports are collected on [GitHub](https://github.com/collinbarrett/FilterLists/issues).
 
-### F.A.Q.
-
-- _Is FilterLists essentially a fancy mirror of the Adblock Plus [Known Adblock Plus Subscriptions](https://adblockplus.org/en/subscriptions "Known Adblock Plus Subscriptions") page?_<br>Yes and no. The information provided by FilterLists is very similar to the directory provided by Adblock Plus but aims to be more exhaustive, feature-rich, and up-to-date. The work that Eyeo (the company behind Adblock Plus) has and continues to do for the community is appreciated, but many disagree with Eyeo's decision to allow for paid whitelisting by major advertising and analytics platforms in their product. It could be a conflict of interest for Adblock Plus to be the primary host of an "all known" directory of filter lists, some of which may block advertisements from networks who have paid for whitelisting. To that end, there is a need for an independent directory to promote free choice by consumers. Adequate credit is given to Adblock Plus list maintainers via FilterLists, however; and no intentional intrusion or devaluation of their brand, products, or services has been performed.
-- _Why did you build this site?_<br>The initial development of this site was a quick weekend project out of the core developer's personal desire for such a directory as he seeks to optimize his Internet privacy and safety. If it brings value to even one other Internet citizen, it was worth doing. Currently, no direct monetary gain is sought from the project.
-
 ### Disclaimer
 
 FilterLists does not condone or endorse implementing any particular filter list or blocking any particular advertisement network. Make sure to financially support your favorite sites in some way if you choose to block their advertisements. FilterLists is also in no way officially affiliated with uBlock Origin, Adblock Plus, EasyList, Fanboy, etc.
