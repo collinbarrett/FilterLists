@@ -39,6 +39,7 @@ function refreshJson() {
     range.setValues(data);
     refreshParsed();
     refreshPublic();
+    refreshHttpResponses();
 }
 
 function refreshParsed() {
@@ -65,7 +66,6 @@ function refreshParsed() {
 function refreshPublic() {
     var sheetName = typeSheetPrefix[ss.getName()] + "Public";
     var sheet = ss.getSheetByName(sheetName);
-    var viewColHeader = refreshViewUrl(sheet);
     if (typeSheetPrefix[ss.getName()] != "Combo") {
         refreshRegionPublic(sheet);
         refreshListPublic(sheet);
@@ -79,6 +79,52 @@ function refreshPublic() {
     }
 }
 
+function refreshHttpResponses() {
+    var sheetNameData = typeSheetPrefix[ss.getName()] + "Data";
+    var sheetData = ss.getSheetByName(sheetNameData);
+    var sheetNameStatuses = typeSheetPrefix[ss.getName()] + "UrlStatuses";
+    var sheetStatuses = ss.getSheetByName(sheetNameStatuses);
+    copyListNames(sheetData, sheetStatuses);
+    var listDataMax = getNumLists(sheetData)
+    var urlHeaders = findUrlColumnHeaders(sheetData);
+    for (i = 0; i < urlHeaders.length; i++) {
+        var currentUrlType = urlHeaders[i];
+        var colHeaderData = findColumnHeader(sheetData, currentUrlType);
+        var colHeaderStatuses = findColumnHeader(sheetStatuses, currentUrlType);
+        var rangeData = sheetData.getRange(colHeaderData + "2:" + colHeaderData + (1 + listDataMax));
+        var rangeStatuses = sheetStatuses.getRange(colHeaderStatuses + "2:" + colHeaderStatuses);
+        rangeStatuses.clearContent();
+        for (j = 2; j <= rangeData.getNumRows(); j++) {
+            var rangeStatus = sheetStatuses.getRange(colHeaderStatuses + j);
+            var url = rangeData.getCell(j - 1, 1).getValue();
+            if (url) {
+                try {
+                    rangeStatus.setValue(UrlFetchApp.fetch(url).getResponseCode());
+                } catch (err) {
+                    rangeStatus.setValue(err.message);
+                }
+            }
+        }
+    }
+}
+
+function copyListNames(sheetData, sheetStatuses) {
+    var sourceRange = sheetData.getRange("A1:A");
+    var targetRange = sheetStatuses.getRange("A1:A");
+    targetRange.clearContent();
+    sourceRange.copyTo(targetRange);
+}
+
+function getNumLists(sheetData) {
+    var listHeaderData = findColumnHeader(sheetData, "list");
+    var listData = sheetData.getRange(listHeaderData + "2:" + listHeaderData);
+    for (i = 1; i <= listData.getNumRows(); i++) {
+        if (!(listData.getCell(i, 1).getValue())) {
+            return i - 1;
+        }
+    }
+}
+
 function findColumnHeader(sheet, header) {
     var headerRange = sheet.getRange("A1:1");
     var headerData = headerRange.getValues();
@@ -88,6 +134,18 @@ function findColumnHeader(sheet, header) {
         }
     }
     return null;
+}
+
+function findUrlColumnHeaders(sheet) {
+    var headerRange = sheet.getRange("A1:1");
+    var headerData = headerRange.getValues();
+    var urlHeaders = new Array();
+    for (i = 0; i < headerData[0].length; i++) {
+        if (headerData[0][i].indexOf("Url") != -1) {
+            urlHeaders.push(headerData[0][i]);
+        }
+    }
+    return urlHeaders;
 }
 
 function refreshViewUrl(sheet) {
