@@ -383,7 +383,7 @@ function refreshMasterPublic(sheet) {
     }
 }
 
-// refresh each type of url with a separate trigger due to Apps Script runtime limitations
+// refresh each type of url with a separate trigger due to Apps Script execution time limitations
 function triggerRefreshHttpResponses1() {
     refreshHttpResponses(1);
 }
@@ -431,7 +431,7 @@ function refreshHttpResponses(triggerNum) {
         var rangeData = sheetData.getRange(colHeaderData + "2:" + colHeaderData + (1 + listDataMax));
         var rangeStatuses = sheetStatuses.getRange(colHeaderStatuses + "2:" + colHeaderStatuses);
         rangeStatuses.clearContent();
-        for (i = 2; i <= rangeData.getNumRows(); i++) {
+        for (i = 2; i <= rangeData.getNumRows() + 1; i++) {
             var rangeStatus = sheetStatuses.getRange(colHeaderStatuses + i);
             var url = rangeData.getCell(i - 1, 1).getValue();
             if (url) {
