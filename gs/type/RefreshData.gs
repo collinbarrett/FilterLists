@@ -436,9 +436,14 @@ function refreshHttpResponses(triggerNum) {
             var url = rangeData.getCell(i - 1, 1).getValue();
             if (url) {
                 try {
-                    rangeStatus.setValue(UrlFetchApp.fetch(url).getResponseCode());
+                    var urlStatus = UrlFetchApp.fetch(url).getResponseCode();
+                    rangeStatus.setValue(urlStatus);
+                    if (urlStatus != 200) {
+                        MailApp.sendEmail("cb+flnotice" + "@collinmbarrett.com", urlStatus + ": " + url, urlStatus + ": " + url);
+                    }
                 } catch (err) {
                     rangeStatus.setValue(err.message);
+                    MailApp.sendEmail("cb+flnotice" + "@collinmbarrett.com", "Error: " + url, "Error: " + url + "<br>" + err.message);
                 }
             }
         }
