@@ -1,4 +1,5 @@
 ![FilterLists](https://github.com/collinbarrett/FilterLists/blob/master/imgs/logo_filterlists.png)
+[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/collinbarrett/FilterLists/blob/master/LICENSE)
 # The NEW FilterLists
 [filterlists.com](https://filterlists.com)
 
