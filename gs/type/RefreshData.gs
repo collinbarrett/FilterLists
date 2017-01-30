@@ -39,7 +39,6 @@ function refreshJson() {
     range.setValues(data);
     refreshParsed();
     refreshPublic();
-    refreshHttpResponses();
 }
 
 function refreshParsed() {
@@ -76,52 +75,6 @@ function refreshPublic() {
     } else {
         refreshListPublicCombo(sheet);
         refreshLinksPublicCombo(sheet);
-    }
-}
-
-function refreshHttpResponses() {
-    var sheetNameData = typeSheetPrefix[ss.getName()] + "Data";
-    var sheetData = ss.getSheetByName(sheetNameData);
-    var sheetNameStatuses = typeSheetPrefix[ss.getName()] + "UrlStatuses";
-    var sheetStatuses = ss.getSheetByName(sheetNameStatuses);
-    copyListNames(sheetData, sheetStatuses);
-    var listDataMax = getNumLists(sheetData)
-    var urlHeaders = findUrlColumnHeaders(sheetData);
-    for (i = 0; i < urlHeaders.length; i++) {
-        var currentUrlType = urlHeaders[i];
-        var colHeaderData = findColumnHeader(sheetData, currentUrlType);
-        var colHeaderStatuses = findColumnHeader(sheetStatuses, currentUrlType);
-        var rangeData = sheetData.getRange(colHeaderData + "2:" + colHeaderData + (1 + listDataMax));
-        var rangeStatuses = sheetStatuses.getRange(colHeaderStatuses + "2:" + colHeaderStatuses);
-        rangeStatuses.clearContent();
-        for (j = 2; j <= rangeData.getNumRows(); j++) {
-            var rangeStatus = sheetStatuses.getRange(colHeaderStatuses + j);
-            var url = rangeData.getCell(j - 1, 1).getValue();
-            if (url) {
-                try {
-                    rangeStatus.setValue(UrlFetchApp.fetch(url).getResponseCode());
-                } catch (err) {
-                    rangeStatus.setValue(err.message);
-                }
-            }
-        }
-    }
-}
-
-function copyListNames(sheetData, sheetStatuses) {
-    var sourceRange = sheetData.getRange("A1:A");
-    var targetRange = sheetStatuses.getRange("A1:A");
-    targetRange.clearContent();
-    sourceRange.copyTo(targetRange);
-}
-
-function getNumLists(sheetData) {
-    var listHeaderData = findColumnHeader(sheetData, "list");
-    var listData = sheetData.getRange(listHeaderData + "2:" + listHeaderData);
-    for (i = 1; i <= listData.getNumRows(); i++) {
-        if (!(listData.getCell(i, 1).getValue())) {
-            return i - 1;
-        }
     }
 }
 
@@ -427,5 +380,84 @@ function refreshMasterPublic(sheet) {
         var data = rangeFull.getDisplayValues();
         rangeFull.clearContent();
         rangeFull.setValues(data);
+    }
+}
+
+// refresh each type of url with a separate trigger due to Apps Script runtime limitations
+function triggerRefreshHttpResponses1() {
+    refreshHttpResponses(1);
+}
+
+function triggerRefreshHttpResponses2() {
+    refreshHttpResponses(2);
+}
+
+function triggerRefreshHttpResponses3() {
+    refreshHttpResponses(3);
+}
+
+function triggerRefreshHttpResponses4() {
+    refreshHttpResponses(4);
+}
+
+function triggerRefreshHttpResponses5() {
+    refreshHttpResponses(5);
+}
+
+function triggerRefreshHttpResponses6() {
+    refreshHttpResponses(6);
+}
+
+function triggerRefreshHttpResponses7() {
+    refreshHttpResponses(7);
+}
+
+function triggerRefreshHttpResponses8() {
+    refreshHttpResponses(8);
+}
+
+function refreshHttpResponses(triggerNum) {
+    var sheetNameData = typeSheetPrefix[ss.getName()] + "Data";
+    var sheetData = ss.getSheetByName(sheetNameData);
+    var sheetNameStatuses = typeSheetPrefix[ss.getName()] + "UrlStatuses";
+    var sheetStatuses = ss.getSheetByName(sheetNameStatuses);
+    copyListNames(sheetData, sheetStatuses);
+    var listDataMax = getNumLists(sheetData)
+    var urlHeaders = findUrlColumnHeaders(sheetData);
+    if (urlHeaders.length >= triggerNum) {
+        var currentUrlType = urlHeaders[triggerNum - 1];
+        var colHeaderData = findColumnHeader(sheetData, currentUrlType);
+        var colHeaderStatuses = findColumnHeader(sheetStatuses, currentUrlType);
+        var rangeData = sheetData.getRange(colHeaderData + "2:" + colHeaderData + (1 + listDataMax));
+        var rangeStatuses = sheetStatuses.getRange(colHeaderStatuses + "2:" + colHeaderStatuses);
+        rangeStatuses.clearContent();
+        for (i = 2; i <= rangeData.getNumRows(); i++) {
+            var rangeStatus = sheetStatuses.getRange(colHeaderStatuses + i);
+            var url = rangeData.getCell(i - 1, 1).getValue();
+            if (url) {
+                try {
+                    rangeStatus.setValue(UrlFetchApp.fetch(url).getResponseCode());
+                } catch (err) {
+                    rangeStatus.setValue(err.message);
+                }
+            }
+        }
+    }
+}
+
+function copyListNames(sheetData, sheetStatuses) {
+    var sourceRange = sheetData.getRange("A1:A");
+    var targetRange = sheetStatuses.getRange("A1:A");
+    targetRange.clearContent();
+    sourceRange.copyTo(targetRange);
+}
+
+function getNumLists(sheetData) {
+    var listHeaderData = findColumnHeader(sheetData, "list");
+    var listData = sheetData.getRange(listHeaderData + "2:" + listHeaderData);
+    for (i = 1; i <= listData.getNumRows(); i++) {
+        if (!(listData.getCell(i, 1).getValue())) {
+            return i - 1;
+        }
     }
 }
