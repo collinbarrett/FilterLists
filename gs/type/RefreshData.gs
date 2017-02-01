@@ -491,6 +491,16 @@ function refreshScores() {
             var sumUniqueDailyVisitorsLast30 = sheetScores.getRange(colHeader + i).getValue();
             if (sumUniqueDailyVisitorsLast30 == "#REF!") {
                 var cellCur = sheetScores.getRange(colHeader + i);
+                cellCur.setValue("=ImportJson(CONCATENATE(\"" + piwikUrl + "?module=API&method=Actions.getOutlink&outlinkUrl=\",EncodeUrl(B" + i + "),\"&idSite=3&date=last30&period=range&format=json&token_auth=" + piwikApiToken + "\"), \"/sum_daily_nb_uniq_visitors\", \"noHeaders\")");
+            }
+        }
+        var data = rangeFull.getDisplayValues();
+        rangeFull.clearContent();
+        rangeFull.setValues(data);
+        for (i = 2; i <= numLists + 1; i++) {
+            var sumUniqueDailyVisitorsLast30 = sheetScores.getRange(colHeader + i).getValue();
+            if (sumUniqueDailyVisitorsLast30 == "#REF!") {
+                var cellCur = sheetScores.getRange(colHeader + i);
                 cellCur.setValue(0);
             }
         }
