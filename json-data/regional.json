@@ -76,6 +76,18 @@
         ]
     },
     {
+        "list": "EasyList Thailand",
+        "lang": [
+            "th"
+        ],
+        "descr": "Help you to block ads in Thailand websites.",
+        "descrSourceUrl": "https://github.com/easylist-thailand/easylist-thailand",
+        "viewUrl": "https://raw.githubusercontent.com/easylist-thailand/easylist-thailand/master/subscriptions/easylist-thailand.txt",
+        "homeUrl": "https://easylist-thailand.github.io/",
+        "issuesUrl": "https://github.com/easylist-thailand/easylist-thailand/issues",
+        "changelogUrl": "https://github.com/easylist-thailand/easylist-thailand/commits/master"
+    },
+    {
         "list": "Greek AdBlock Filter",
         "lang": [
             "el"
