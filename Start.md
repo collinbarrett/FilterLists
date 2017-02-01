@@ -4,7 +4,7 @@ FilterLists is a directory of lists to which you can subscribe to block advertis
 
 ### Legacy Site
 
-This new version (2.0) of this site was launched on Jan. 28, 2017. While we continue to iron out the kinks, the legacy site is still live over at [v1.filterlists.com](https://v1.filterlists.com). Note that the legacy site is for archival purposes only and will no longer be updated.
+This new version (2.0) of this site was launched on Jan. 28, 2017\. While we continue to iron out the kinks, the legacy site is still live over at [v1.filterlists.com](https://v1.filterlists.com). Note that the legacy site is for archival purposes only and will no longer be updated.
 
 ### Background
 
@@ -16,16 +16,20 @@ Typical adblockers run as an extension in popular web browsers. As we browse the
 
 [Some](https://github.com/collinbarrett/FilterLists/issues/11) of the lists on FilterLists can be used in the following software tools.
 
-- [AdAway](https://adaway.org/)
-- [AdBlock](https://getadblock.com/)
-- [Adblock Plus](https://adblockplus.org/)
-- [uBlock](https://github.com/chrisaljoudi/uBlock)
-- [uBlock Origin](https://github.com/gorhill/uBlock)
-- ...[Submit an Issue](https://github.com/collinbarrett/FilterLists/issues) if we forgot one.
+*   [AdAway](https://adaway.org/)
+*   [AdBlock](https://getadblock.com/)
+*   [Adblock Plus](https://adblockplus.org/)
+*   [uBlock](https://github.com/chrisaljoudi/uBlock)
+*   [uBlock Origin](https://github.com/gorhill/uBlock)
+*   ...[Submit an Issue](https://github.com/collinbarrett/FilterLists/issues) if we forgot one.
 
 ### Features / Bugs
 
 Feature ideas and bug reports are collected on [GitHub](https://github.com/collinbarrett/FilterLists/issues).
+
+### FilScore (Beta)
+
+FilScore is a working title for an evolving score for lists on FilterLists. The current FilScore is a 0-100 (100 being the most popular list of the list type) value based only on the number of unique visitors who have expressed interest in the list in the last 30 days. This score will evolve over time to include additional factors to make it more useful. Please [provide feedback](https://github.com/collinbarrett/FilterLists/issues/10) if you have ideas or questions.
 
 ### Disclaimer
 
