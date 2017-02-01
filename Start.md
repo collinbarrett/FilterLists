@@ -10,6 +10,7 @@ Typical adblockers run as an extension in popular web browsers. As we browse the
 
 [Some](https://github.com/collinbarrett/FilterLists/issues/11) of the lists on FilterLists can be used in the following software tools.
 
+*   [1Blocker](https://1blocker.com/)
 *   [AdAway](https://adaway.org/)
 *   [AdBlock](https://getadblock.com/)
 *   [Adblock Plus](https://adblockplus.org/)
