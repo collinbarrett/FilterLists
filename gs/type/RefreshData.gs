@@ -458,7 +458,7 @@ function copyListNamesToStatuses(sheetData, sheetStatuses) {
 }
 
 function getNumLists(sheetData) {
-    var listHeaderData = findColumnHeader(sheetData, "list");
+    var listHeaderData = findColumnHeader(sheetData, "viewUrl");
     var listData = sheetData.getRange(listHeaderData + "2:" + listHeaderData);
     for (i = 1; i <= listData.getNumRows(); i++) {
         if (!(listData.getCell(i, 1).getValue())) {
