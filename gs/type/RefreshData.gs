@@ -527,7 +527,7 @@ function copyListNamesAndViewUrlsToScore(sheetData, sheetScores) {
 
 function copyScoresToPublic(sheetScores, sheetPublic) {
     var colHeaderSource = findColumnHeader(sheetScores, "score");
-    var colHeaderTarget = findColumnHeader(sheetPublic, "Score");
+    var colHeaderTarget = findColumnHeader(sheetPublic, "FilScore");
     var sourceRangeListNames = sheetScores.getRange(colHeaderSource + "2:" + colHeaderSource);
     var targetRangeListNames = sheetPublic.getRange(colHeaderTarget + "2:" + colHeaderTarget);
     targetRangeListNames.clearContent();
