@@ -1,5 +1,5 @@
-function EncodeUrlSlug(slug) {
-    return FilterLists.EncodeUrlSlug(slug);
+function EncodeUrl(url) {
+    return FilterLists.EncodeUrl(url);
 }
 
 function TrimUrlSlug(slug) {
