@@ -998,6 +998,13 @@
         ]
     },
     {
+        "list": "Satterly's Adblock Plus Filters",
+        "descr": "I make supplemental filters in Adblock Plus to block garbage on webpages not blocked by other lists. I use many regular expressions, a few domain filters, but no CSS filters.",
+        "descrSourceUrl": "https://satterly.neocities.org/abp_filters.html",
+        "viewUrl": "https://satterly.neocities.org/abp_filters.txt",
+        "homeUrl": "https://satterly.neocities.org/abp_filters.html"
+    },
+    {
         "list": "Shopping Whitelist Alaska Airlines",
         "descr": "Whitelists the trackers on the Alaska Airlines shopping portal so that rewards can be credited.",
         "viewUrl": "https://www.mileageplanshopping.com/adBlockWhitelist.php"
