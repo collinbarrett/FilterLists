@@ -208,6 +208,15 @@
         "email": "info@joxeankoret.com"
     },
     {
+        "list": "Mute",
+        "descr": "Mute is an AdBlock filter for hiding user comments. Surf without the noise.",
+        "descrSourceUrl": "http://mute.bradconte.com/",
+        "viewUrl": "http://mute.bradconte.com/mute.txt",
+        "homeUrl": "http://mute.bradconte.com/",
+        "issuesUrl": "https://github.com/B-Con/mute/issues",
+        "changelogUrl": "https://github.com/B-Con/mute/commits/master"
+    },
+    {
         "list": "PLgeneral",
         "lang": [
             "pl"
