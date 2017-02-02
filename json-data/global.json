@@ -1133,6 +1133,14 @@
         "changelogUrl": "https://github.com/IDKwhattoputhere/uBlock-Filters-Plus/commits/master"
     },
     {
+        "list": "uBO-Personal-Filters",
+        "descr": "A filterlist with additional filters for uBlock Origin to block third-party, tracking, annoyances and all other unwarranted resources from loading. Contains filters specific to uBlock Origin and some filters that have not yet been added to other filterlists.",
+        "descrSourceUrl": "https://github.com/uBlock-user/uBO-Personal-Filters",
+        "viewUrl": "https://raw.githubusercontent.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt",
+        "homeUrl": "https://github.com/uBlock-user/uBO-Personal-Filters",
+        "changelogUrl": "https://github.com/uBlock-user/uBO-Personal-Filters/commits/master"
+    },
+    {
         "list": "YouTube: Pure Video Experience",
         "descr": "Block all YouTube annoyances.",
         "descrSourceUrl": "https://youtube.adblockplus.me/",
