@@ -1085,6 +1085,13 @@
         "email": "wduk10@hotmail.com"
     },
     {
+        "list": "Top Cash Back Adblock Whitelist",
+        "descr": "You can leave AdBlock functioning as normal, but the proper tracking of cashback cookies will be allowed on TopCashback and our affiliate network sites only.",
+        "descrSourceUrl": "https://www.topcashback.com/Help/164",
+        "viewUrl": "https://www.topcashback.com/Misc/AdBlockWhiteList.aspx",
+        "homeUrl": "https://www.topcashback.com/Help/164"
+    },
+    {
         "list": "uAssets Badware",
         "descr": "To block sites known for delivering adware/crapware. For sites documented to put users at risk of installing adware/crapware etc. The purpose is to at least ensure a user is warned of the risks ahead.",
         "descrSourceUrl": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/badware.txt",
