@@ -146,6 +146,16 @@
         "changelogUrl": "https://github.com/farrokhi/adblock-iran/commits/master"
     },
     {
+        "list": "Adblock Persian List",
+        "lang": [
+            "fa"
+        ],
+        "descr": "Blocks Persian regional advertisements and trackers.",
+        "viewUrl": "https://ideone.com/plain/K452p",
+        "homeUrl": "https://ideone.com/K452p",
+        "forumUrl": "https://adblockplus.org/forum/viewtopic.php?f=2&t=7658"
+    },
+    {
         "list": "Adblock List for Finland",
         "lang": [
             "fi"
