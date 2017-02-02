@@ -775,6 +775,15 @@
         ]
     },
     {
+        "list": "Nopelist",
+        "descr": "A personal filter list. Each host is either an ad, phishing, malicious, analytics, or clickbait.",
+        "descrSourceUrl": "https://github.com/genediazjr/nopelist",
+        "viewUrl": "https://raw.githubusercontent.com/genediazjr/nopelist/master/nopelist.txt",
+        "homeUrl": "https://github.com/genediazjr/nopelist",
+        "issuesUrl": "https://github.com/genediazjr/nopelist/issues",
+        "changelogUrl": "https://github.com/genediazjr/nopelist/commits/master"
+    },
+    {
         "list": "NoTrack Blocklist",
         "descr": "Blocks trackers.",
         "viewUrl": "https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt",
