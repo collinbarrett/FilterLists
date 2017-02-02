@@ -101,6 +101,13 @@
         "email": "easylist.subscription+anti@gmail.com"
     },
     {
+        "list": "Adblock YouTube Ads",
+        "descr": "Blocks ads on YouTube.",
+        "viewUrl": "https://raw.githubusercontent.com/kbinani/adblock-youtube-ads/master/signed.txt",
+        "homeUrl": "https://github.com/kbinani/adblock-youtube-ads",
+        "changelogUrl": "https://github.com/kbinani/adblock-youtube-ads/commits/master"
+    },
+    {
         "list": "Adguard Annoyances Filter",
         "descr": "Blocks irritating elements on webpages, including cookie notices, third-party widgets and in-page popups (Doesn’t include social media widgets and buttons, to block them you can still use Social media filter separately). It was inspired by Fanboy Annoyances List, but doesn’t duplicate it, so you can use them both together.",
         "descrSourceUrl": "https://adguard.com/en/filters.html",
