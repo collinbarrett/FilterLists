@@ -38,9 +38,6 @@ Matrix Key:
 | forksCombos | ? | ? | | | ? | List names that are either a fork or a combo of list. Sorted alphabetically by convention. |
 | master | | | X | X | | List names which are combined to create the list (if a combo) or list name from which the list is forked (if a fork). Sorted alphabetically by convention. |
 
-## Contributions
-See [CONTRIBUTING](https://github.com/collinbarrett/FilterLists/blob/master/CONTRIBUTING.md).
-
 ## Directory Structure
 
 ### [/json-data](https://github.com/collinbarrett/FilterLists/tree/master/json-data)
