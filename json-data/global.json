@@ -546,6 +546,13 @@
         ]
     },
     {
+        "list": "Firime (FED) EasyDownload List",
+        "descr": "Removes unnecessary elements from specific file sharing sites.",
+        "descrSourceUrl": "https://firime.wordpress.com/projects/others/fedlist/",
+        "viewUrl": "http://pastebin.com/raw/r9a5WrZa",
+        "homeUrl": "https://firime.wordpress.com/projects/others/fedlist/"
+    },
+    {
         "list": "HOSTS AdBlock",
         "descr": "A modern HOSTS list providing most cutting-edge of anti-[tracking, malware, advertisements and popups, clickjacking, statistics, analytics, bad redirections, bad/shock web-sites, filmsy webapps, shady android connections, junk, ..and foo].",
         "descrSourceUrl": "https://github.com/eladkarako/hosts.eladkarako.com",
