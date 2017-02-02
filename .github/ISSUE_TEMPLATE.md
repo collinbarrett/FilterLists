@@ -8,4 +8,4 @@ If your issue is a general comment, question, or bug regarding FilterLists, feel
 
 If your issue is related to adding a new list or updating an existing list, please create only one issue per list. Use this Wiki page for assistance in determining what data we collect.
 
-https://github.com/collinbarrett/FilterLists/wiki/FilterLists-Types
+https://github.com/collinbarrett/FilterLists/wiki/FilterLists-Types-&-Properties
