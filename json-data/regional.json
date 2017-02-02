@@ -649,6 +649,18 @@
         "changelogUrl": "https://github.com/hant0508/uBlock-fillters/commits/master"
     },
     {
+        "list": "Lead Generator",
+        "lang": [
+            "ru"
+        ],
+        "descr": "AdBlock list for blocking 'how i can help you?' widgets.",
+        "descrSourceUrl": "https://github.com/Rpsl/adblock-leadgenerator-list",
+        "viewUrl": "https://raw.githubusercontent.com/Rpsl/adblock-leadgenerator-list/master/list/list.txt",
+        "homeUrl": "https://github.com/Rpsl/adblock-leadgenerator-list",
+        "issuesUrl": "https://github.com/Rpsl/adblock-leadgenerator-list/issues",
+        "changelogUrl": "https://github.com/Rpsl/adblock-leadgenerator-list/commits/master"
+    },
+    {
         "list": "RU AdList",
         "lang": [
             "ru"
