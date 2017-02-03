@@ -748,6 +748,14 @@
         "viewUrl": "https://easylist-downloads.adblockplus.org/message_seen_remover_for_facebook.txt"
     },
     {
+        "list": "Michael Trimm's Hosts",
+        "descr": "Blocks viruses.",
+        "viewUrl": "https://raw.githubusercontent.com/michaeltrimm/hosts-blocking/master/_hosts.txt",
+        "homeUrl": "https://github.com/michaeltrimm/hosts-blocking",
+        "issuesUrl": "https://github.com/michaeltrimm/hosts-blocking/issues",
+        "changelogUrl": "https://github.com/michaeltrimm/hosts-blocking/commits/master"
+    },
+    {
         "list": "MoaAB: Mother of All AD-BLOCKING",
         "descr": "Blocks In-App/Web ADs, In-App/Web Trackers, Malware/Spyware Domains, Tracker Cookies, Malicious Call-Back Home App Functions, Malicious 3rd Party Redirection Functions and Possibly Some Level of Virus/Trojan Protection and More...",
         "descrSourceUrl": "http://forum.xda-developers.com/showthread.php?t=1916098",
