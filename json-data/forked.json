@@ -28,6 +28,46 @@
         "master": "abuse.ch ZeuS IP Blocklist"
     },
     {
+        "list": "add.2o7Net",
+        "descr": "2o7Net tracking sites based on <a href=\"https://filterlists.com/#BadHosts\">BadHosts</a> content.",
+        "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+        "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts",
+        "homeUrl": "https://github.com/FadeMind/hosts.extras",
+        "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
+        "changelogUrl": "https://github.com/FadeMind/hosts.extras/commits/master",
+        "master": "BadHosts"
+    },
+    {
+        "list": "add.Dead",
+        "descr": "Dead sites based on <a href=\"https://filterlists.com/#BadHosts\">BadHosts</a> content.",
+        "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+        "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Dead/hosts",
+        "homeUrl": "https://github.com/FadeMind/hosts.extras",
+        "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
+        "changelogUrl": "https://github.com/FadeMind/hosts.extras/commits/master",
+        "master": "BadHosts"
+    },
+    {
+        "list": "add.Risk",
+        "descr": "Risk content sites based on <a href=\"https://filterlists.com/#BadHosts\">BadHosts</a> content.",
+        "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+        "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
+        "homeUrl": "https://github.com/FadeMind/hosts.extras",
+        "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
+        "changelogUrl": "https://github.com/FadeMind/hosts.extras/commits/master",
+        "master": "BadHosts"
+    },
+    {
+        "list": "add.Spam",
+        "descr": "Spam sites based on <a href=\"https://filterlists.com/#BadHosts\">BadHosts</a> content.",
+        "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+        "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts",
+        "homeUrl": "https://github.com/FadeMind/hosts.extras",
+        "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
+        "changelogUrl": "https://github.com/FadeMind/hosts.extras/commits/master",
+        "master": "BadHosts"
+    },
+    {
         "list": "Adguard Dutch Filter",
         "lang": [
             "nl"
