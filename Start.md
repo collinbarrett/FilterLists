@@ -20,7 +20,7 @@ Typical adblockers run as an extension in popular web browsers. As we browse the
 
 ## FilScore<sup>beta</sup>
 
-FilScore will continue to evolve into a general score for lists on FilterLists based on factors such as popularity, quality, update frequency, update recency, support, coverage, etc. Visit this [GitHub Project](https://github.com/collinbarrett/FilterLists/projects/1) to learn more and contribute to this feature.
+FilScore will continue to evolve into a general score for lists on FilterLists based on factors such as popularity, quality, update frequency, update recency, support, coverage, etc. It is **not** meant to be a definitive quality score for each list, but rather to give visitors a loose idea as to what lists are of higher subjective quality than others. It provides a more meaningful way to sort the lists than merely alphabetical. Visit this [GitHub Project](https://github.com/collinbarrett/FilterLists/projects/1) to learn more and contribute to this feature.
 
 ## Add List / Report Bug
 
