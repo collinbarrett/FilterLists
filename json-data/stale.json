@@ -1,4 +1,16 @@
 [{
+        "list": "Adblock Korea",
+        "lang": [
+            "ko"
+        ],
+        "descr": "Blocks Korean regional advertisements and trackers.",
+        "viewUrl": "https://web.archive.org/web/20130615155938/http://adblock-korea.googlecode.com/git/adblock-korea.txt",
+        "homeUrl": "https://code.google.com/archive/p/adblock-korea/",
+        "forksCombos": [
+            "Korean Adblock List"
+        ]
+    },
+    {
         "list": "Adblock Polska",
         "lang": [
             "pl"
