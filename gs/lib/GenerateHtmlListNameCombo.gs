@@ -11,7 +11,7 @@ function GenerateHtmlListNameCombo(listName, masterLists) {
         });
         masterListNames = masterListNames.slice(0, -3)
         if (listName) {
-            var html = "<h3 id=\"" + listName + "\">" + listName + "</h3><br>";
+            var html = "<h3 id=\"" + TrimUrlSlug(listName) + "\">" + listName + "</h3><br>";
             html += masterListNames;
             return html;
         } else if (masterLists) {

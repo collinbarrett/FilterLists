@@ -18,10 +18,14 @@ var ss = SpreadsheetApp.getActiveSpreadsheet(),
     options = [{
         name: "Refresh Data",
         functionName: "refreshJson"
+    }, {
+        name: "Refresh Scores",
+        functionName: "refreshScores"
     }];
 
 function onOpen() {
     ss.addMenu("Refresh Data", options);
+    ss.addMenu("Refresh Scores", options);
 }
 
 function refreshJson() {
