@@ -108,6 +108,14 @@
         "homeUrl": "http://adblock.dajbych.net/"
     },
     {
+        "list": "Facebook Privacy List",
+        "descr": "Block Facebook objects on non-Facebook websites",
+        "descrSourceUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt",
+        "viewUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt",
+        "homeUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.html",
+        "email": "fbprivacylist@squirrelconspiracy.net"
+    },
+    {
         "list": "Fanboy's IsraelList",
         "lang": [
             "he"
