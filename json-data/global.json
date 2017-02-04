@@ -488,6 +488,17 @@
         ]
     },
     {
+        "list": "Fake-News List",
+        "descr": "Targeting sites with Hoax, propanganda and clickbait (fake sites). Note: List doesn't include harmless spoof/satire sites like theonion.com.",
+        "descrSourceUrl": "https://raw.githubusercontent.com/ryanbr/fanboy-adblock/master/fake-news.txt",
+        "viewUrl": "https://raw.githubusercontent.com/ryanbr/fanboy-adblock/master/fake-news.txt",
+        "homeUrl": "https://github.com/ryanbr/fanboy-adblock",
+        "forumUrl": "https://forums.lanik.us/viewtopic.php?f=88&t=34971",
+        "issuesUrl": "https://github.com/ryanbr/fanboy-adblock/issues",
+        "changelogUrl": "https://github.com/ryanbr/fanboy-adblock/commits/master",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW"
+    },
+    {
         "list": "Fanboy's Annoyance List",
         "descr": "In page Pop-Ups and other annoyances; thereby substantially decreasing web page loading times and uncluttering them (includes <a href=\"https://filterlists.com/#FanboysSocialBlockingList\">Fanboy's Social Blocking List</a> and <a href=\"https://filterlists.com/#FanboysCookiemonsterList\">Fanboy's Cookiemonster List</a>.)",
         "descrSourceUrl": "https://fanboy.co.nz/",
