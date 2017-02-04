@@ -466,6 +466,14 @@
         ]
     },
     {
+        "list": "EasyTest",
+        "descr": "Testing unsafe rules for EasyList that will break certain websites.",
+        "descrSourceUrl": "https://easylist-downloads.adblockplus.org/easytest.txt",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easytest.txt",
+        "homeUrl": "https://forums.lanik.us/viewtopic.php?t=8505",
+        "forumUrl": "https://forums.lanik.us/viewtopic.php?t=8505"
+    },
+    {
         "list": "Facebook Annoyances Blocker",
         "descr": "Block all Facebook annoyances.",
         "descrSourceUrl": "https://facebook.adblockplus.me/",
