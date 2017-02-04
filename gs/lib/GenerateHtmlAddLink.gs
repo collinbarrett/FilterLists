@@ -6,7 +6,7 @@ function GenerateHtmlAddLink(url, listName) {
         return url;
     } else {
         if (url && url != "#N/A") {
-            var html = "<a href=\"abp:subscribe?location=" + url + "&title=" + listName + "\" title=\"Subscribe to " + listName + " in your content blocker.\" class=\"button\">Add</a>";
+            var html = "<a href=\"abp:subscribe?location=" + url + "&title=" + listName + "\" title=\"Subscribe to " + listName + " in your content blocker.\" class=\"button piwik_download\">Add</a>";
             return html;
         } else {
             return "";

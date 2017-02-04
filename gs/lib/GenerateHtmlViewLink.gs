@@ -6,7 +6,7 @@ function GenerateHtmlViewLink(url, listName) {
         return url;
     } else {
         if (url && url != "#N/A") {
-            var html = "<a href=\"" + url + "\" title=\"Preview " + listName + " in your browser.\" class=\"button\">View</a>";
+            var html = "<a href=\"" + url + "\" title=\"Preview " + listName + " in your browser.\" class=\"button piwik_download\">View</a>";
             return html;
         } else {
             return "";

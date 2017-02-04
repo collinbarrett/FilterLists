@@ -12,7 +12,7 @@ function GenerateHtmlViewLinkCombo(url, listName, masterLists) {
             listName = listName.slice(0, -3)
         }
         if (url && url != "#N/A") {
-            var html = "<a href=\"" + url + "\" title=\"Preview " + listName + " in your browser.\" class=\"button\">View</a>";
+            var html = "<a href=\"" + url + "\" title=\"Preview " + listName + " in your browser.\" class=\"button piwik_download\">View</a>";
             return html;
         } else {
             return "";
