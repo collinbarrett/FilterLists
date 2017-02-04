@@ -1,0 +1,2895 @@
+[{
+        "list": "AakList (Anti-Adblock Killer)",
+        "descr": "Helps you keep your Ad-Blocker active, when you visit a website and it asks you to disable. Composed of a user script «AakScript» written in javascript and a filter list «AakList» using the same syntax as lists AdBlock and AdBlock Plus, the two are complementary and unlock different website.",
+        "descrSourceUrl": "https://github.com/reek/anti-adblock-killer/",
+        "viewUrl": "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt",
+        "homeUrl": "https://github.com/reek/anti-adblock-killer/",
+        "guideUrl": "https://github.com/reek/anti-adblock-killer#instruction",
+        "issuesUrl": "https://github.com/reek/anti-adblock-killer/issues",
+        "changelogUrl": "https://github.com/reek/anti-adblock-killer/commits/master",
+        "donateUrl": "https://github.com/reek/anti-adblock-killer/#donate"
+    },
+    {
+        "list": "abuse.ch Feodo Domain Blocklist",
+        "descr": "The Feodo Tracker Feodo Domain Blocklist contains domain names (FQDN) used as C&C communication channel by the Feodo Trojan. These domains names are usually registered and operated by cybercriminals for the exclusive purpose of hosting a Feodo botnet controller. Hence you should expect no legit traffic to those domains. I highly recommend you to block/drop any traffic towards any Feodo C&C domain by using the Feodo Domain Blocklist. Please consider that domain names are usually only used by version B of the Feodo Trojan. C&C communication channels used by version A, version C and version D are not covered by this blocklist.",
+        "descrSourceUrl": "https://feodotracker.abuse.ch/blocklist/",
+        "viewUrl": "https://feodotracker.abuse.ch/blocklist/?download=domainblocklist",
+        "homeUrl": "https://feodotracker.abuse.ch/blocklist/",
+        "email": "contactme@abuse.ch"
+    },
+    {
+        "list": "abuse.ch Feodo IP Blocklist",
+        "descr": "The Feodo Tracker Feodo IP Blocklist contains IP addresses (IPv4) used as C&C communication channel by the Feodo Trojan. This lists contains two types of IP address: Feodo C&C servers used by version A, version C and version D of the Feodo Trojan (these IP addresses are usually compromised servers running an nginx daemon on port 8080 TCP or 7779 TCP that is acting as proxy, forwarding all traffic to a tier 2 proxy node) and Feodo C&C servers used by version B which are usually used for the exclusive purpose of hosting a Feodo C&C server. Attention: Since Feodo C&C servers associated with version A, version C and version D are usually hosted on compromised servers, its likely that you also block/drop legit traffic e.g. towards websites hosted on a certain IP address acting as Feodo C&C for version A, version C and version D. If you only want to block/drop traffic to Feodo C&C servers hosted on bad IPs (version B), please use the blocklist BadIPs documented below.",
+        "descrSourceUrl": "https://feodotracker.abuse.ch/blocklist/",
+        "viewUrl": "https://feodotracker.abuse.ch/blocklist/?download=ipblocklist",
+        "homeUrl": "https://feodotracker.abuse.ch/blocklist/",
+        "email": "contactme@abuse.ch",
+        "forksCombos": [
+            "abuse.ch Feodo BadIP Blocklist"
+        ]
+    },
+    {
+        "list": "abuse.ch ZeuS Compromised URL Blocklist",
+        "descr": "This blocklist only contains compromised / hijacked websites (level 2) which are being abused by cybercriminals to host a ZeuS botnet controller.",
+        "descrSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
+        "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=compromised",
+        "homeUrl": "https://zeustracker.abuse.ch/blocklist.php",
+        "email": "contactme@abuse.ch",
+        "donateUrl": "https://zeustracker.abuse.ch/faq.php"
+    },
+    {
+        "list": "abuse.ch ZeuS Domain Blocklist",
+        "descr": "This blocklist contains all domain names associated with ZeuS C&Cs which are currently being tracked by ZeuS Tracker.",
+        "descrSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
+        "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist",
+        "homeUrl": "https://zeustracker.abuse.ch/blocklist.php",
+        "email": "contactme@abuse.ch",
+        "donateUrl": "https://zeustracker.abuse.ch/faq.php",
+        "forksCombos": [
+            "abuse.ch ZeuS Domain Blocklist \"BadDomains\""
+        ]
+    },
+    {
+        "list": "abuse.ch ZeuS IP Blocklist",
+        "descr": "This blocklist contains all IPv4 addresses associated with ZeuS C&Cswhich are currently being tracked by ZeuS Tracker.",
+        "descrSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
+        "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=ipblocklist",
+        "homeUrl": "https://zeustracker.abuse.ch/blocklist.php",
+        "email": "contactme@abuse.ch",
+        "donateUrl": "https://zeustracker.abuse.ch/faq.php",
+        "forksCombos": [
+            "abuse.ch ZeuS IP Blocklist \"BadIPs\""
+        ]
+    },
+    {
+        "list": "Acceptable Ads",
+        "descr": "Allow non-intrusive advertising.",
+        "descrSourceUrl": "https://easylist-downloads.adblockplus.org/exceptionrules.txt",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/exceptionrules.txt",
+        "homeUrl": "https://acceptableads.com/",
+        "email": "info@eyeo.com"
+    },
+    {
+        "list": "AdAway",
+        "descr": "Blocking mobile ad providers and some analytics providers.",
+        "descrSourceUrl": "https://adaway.org/hosts.txt",
+        "viewUrl": "https://adaway.org/hosts.txt",
+        "homeUrl": "https://adaway.org/",
+        "forumUrl": "http://forum.xda-developers.com/showthread.php?t=2190753",
+        "issuesUrl": "https://github.com/AdAway/AdAway/issues",
+        "changelogUrl": "https://github.com/AdAway/AdAway/commits/master",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=dominik%40sufficientlysecure.org&lc=US&item_name=AdAway%20Donation&no_note=0&no_shipping=1&currency_code=EUR",
+        "forksCombos": [
+            "Unified Hosts",
+            "Unified Hosts + Gambling",
+            "Unified Hosts + Porn",
+            "Unified Hosts + Social",
+            "Unified Hosts + Gambling + Porn",
+            "Unified Hosts + Gambling + Social",
+            "Unified Hosts + Porn + Social",
+            "Unified Hosts + Gambling + Porn + Social"
+        ]
+    },
+    {
+        "list": "Adblock Warning Removal List",
+        "descr": "The Adblock Warning Removal List specifically removes obtrusive messages and warnings targeted to users who use an adblocker.",
+        "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
+        "homeUrl": "https://easylist.to/",
+        "guideUrl": "https://easylist.to/2013/05/10/anti-adblock-guide-for-site-admins",
+        "forumUrl": "https://forums.lanik.us/",
+        "email": "easylist.subscription+anti@gmail.com"
+    },
+    {
+        "list": "Adblock YouTube Ads",
+        "descr": "Blocks ads on YouTube.",
+        "viewUrl": "https://raw.githubusercontent.com/kbinani/adblock-youtube-ads/master/signed.txt",
+        "homeUrl": "https://github.com/kbinani/adblock-youtube-ads",
+        "changelogUrl": "https://github.com/kbinani/adblock-youtube-ads/commits/master"
+    },
+    {
+        "list": "Adguard Annoyances Filter",
+        "descr": "Blocks irritating elements on webpages, including cookie notices, third-party widgets and in-page popups (Doesn’t include social media widgets and buttons, to block them you can still use Social media filter separately). It was inspired by Fanboy Annoyances List, but doesn’t duplicate it, so you can use them both together.",
+        "descrSourceUrl": "https://adguard.com/en/filters.html",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=14",
+        "homeUrl": "https://adguard.com/en/filters.html",
+        "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+        "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+        "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master"
+    },
+    {
+        "list": "Adguard Experimental Filter",
+        "descr": "Filter designed to test certain hazardous filtering rules before they are added to the basic filters.",
+        "descrSourceUrl": "https://adguard.com/en/filters.html",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=5",
+        "homeUrl": "https://adguard.com/en/filters.html",
+        "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+        "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+        "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master"
+    },
+    {
+        "list": "Adguard Mobile Ads Filter",
+        "descr": "Filter that blocks ads on mobile devices. Contains all known mobile ad networks.",
+        "descrSourceUrl": "https://adguard.com/en/filters.html",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=11",
+        "homeUrl": "https://adguard.com/en/filters.html",
+        "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+        "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+        "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master"
+    },
+    {
+        "list": "Adguard Safari Filter",
+        "descr": "Filter that blocks ads on iOS mobile devices in Safari browser. Contains all known mobile ad networks.",
+        "descrSourceUrl": "https://adguard.com/en/filters.html",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=12",
+        "homeUrl": "https://adguard.com/en/filters.html",
+        "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+        "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+        "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master"
+    },
+    {
+        "list": "Adguard Social Media Filter",
+        "descr": "If you do not like numerous «Like» and «Tweet» buttons on all the popular websites on the Internet, subscribe to this filter, and you will not see them anymore.",
+        "descrSourceUrl": "https://adguard.com/en/filters.html",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=4",
+        "homeUrl": "https://adguard.com/en/filters.html",
+        "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+        "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+        "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master"
+    },
+    {
+        "list": "Adguard Spyware Filter",
+        "descr": "The most comprehensive list of various online counters and web analytics tools. If you do not want your actions on the Internet be tracked, use this filter.",
+        "descrSourceUrl": "https://adguard.com/en/filters.html",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=3",
+        "homeUrl": "https://adguard.com/en/filters.html",
+        "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+        "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+        "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master"
+    },
+    {
+        "list": "Adguard Useful Ads Filter",
+        "descr": "Filter that unblocks ads that may be useful to users. Advertising that falls under this filter shall comply with a set of rules.",
+        "descrSourceUrl": "https://adguard.com/en/filters.html",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=10",
+        "homeUrl": "https://adguard.com/en/filters.html",
+        "guideUrl": "https://adguard.com/en/whitelist.html",
+        "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+        "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+        "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master"
+    },
+    {
+        "list": "Adware Filters",
+        "descr": "Blocks ads injected by adware.",
+        "descrSourceUrl": "https://adblockplus.org/subscriptions",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/adwarefilters.txt",
+        "homeUrl": "https://easylist.to/",
+        "forumUrl": "https://forums.lanik.us/",
+        "email": "easylist.subscription@gmail.com",
+        "changelogUrl": "https://hg.adblockplus.org/adwarefilters/"
+    },
+    {
+        "list": "AdZHosts",
+        "descr": "Its purpose is to prevent access to websites that broadcast the ad and block access to websites intrusive on your PC and your smartphone.",
+        "descrSourceUrl": "https://sourceforge.net/projects/adzhosts/",
+        "viewUrl": "https://sourceforge.net/projects/adzhosts/files/HOSTS.txt/download",
+        "homeUrl": "https://sourceforge.net/projects/adzhosts/",
+        "forumUrl": "https://sourceforge.net/p/adzhosts/discussion/general/",
+        "email": "adzhosts@gmail.com"
+    },
+    {
+        "list": "Airelle's Anti-Advertisements Hosts",
+        "descr": "A hosts list blocking advertising sites. (Compressed, currently cannot be subscribed to/added.)",
+        "viewUrl": "http://rlwpx.free.fr/WPFF/hpub.7z",
+        "homeUrl": "http://rlwpx.free.fr/WPFF/hosts.htm",
+        "forumUrl": "http://rlwpx.free.fr/Webforum/",
+        "email": "contact.wiki.airelle@spamgourmet.com",
+        "donateUrl": "http://rlwpx.free.fr/WPFF/don.htm"
+    },
+    {
+        "list": "Airelle's Anti-Miscellaneous Hosts",
+        "descr": "A hosts list blocking miscellaneous annoyances. (Compressed, currently cannot be subscribed to/added.)",
+        "viewUrl": "http://rlwpx.free.fr/WPFF/hmis.7z",
+        "homeUrl": "http://rlwpx.free.fr/WPFF/hosts.htm",
+        "forumUrl": "http://rlwpx.free.fr/Webforum/",
+        "email": "contact.wiki.airelle@spamgourmet.com",
+        "donateUrl": "http://rlwpx.free.fr/WPFF/don.htm"
+    },
+    {
+        "list": "Airelle's Anti-Sex Hosts",
+        "descr": "A hosts list blocking adult/pornographic sites. (Compressed, currently cannot be subscribed to/added.)",
+        "viewUrl": "http://rlwpx.free.fr/WPFF/hsex.7z",
+        "homeUrl": "http://rlwpx.free.fr/WPFF/hosts.htm",
+        "forumUrl": "http://rlwpx.free.fr/Webforum/",
+        "email": "contact.wiki.airelle@spamgourmet.com",
+        "donateUrl": "http://rlwpx.free.fr/WPFF/don.htm"
+    },
+    {
+        "list": "Airelle's Anti-Trackers Hosts",
+        "descr": "A hosts list blocking tracking sites. (Compressed, currently cannot be subscribed to/added.)",
+        "viewUrl": "http://rlwpx.free.fr/WPFF/htrc.7z",
+        "homeUrl": "http://rlwpx.free.fr/WPFF/hosts.htm",
+        "forumUrl": "http://rlwpx.free.fr/Webforum/",
+        "email": "contact.wiki.airelle@spamgourmet.com",
+        "donateUrl": "http://rlwpx.free.fr/WPFF/don.htm"
+    },
+    {
+        "list": "Airelle's Malware Hosts",
+        "descr": "A hosts list blocking malware sites. (Compressed, currently cannot be subscribed to/added.)",
+        "viewUrl": "http://rlwpx.free.fr/WPFF/hrsk.7z",
+        "homeUrl": "http://rlwpx.free.fr/WPFF/hosts.htm",
+        "forumUrl": "http://rlwpx.free.fr/Webforum/",
+        "email": "contact.wiki.airelle@spamgourmet.com",
+        "donateUrl": "http://rlwpx.free.fr/WPFF/don.htm"
+    },
+    {
+        "list": "Airelle's Phishing Hosts",
+        "descr": "A hosts list blocking phishing sites. (Compressed, currently cannot be subscribed to/added.)",
+        "viewUrl": "http://rlwpx.free.fr/WPFF/hblc.7z",
+        "homeUrl": "http://rlwpx.free.fr/WPFF/hosts.htm",
+        "forumUrl": "http://rlwpx.free.fr/Webforum/",
+        "email": "contact.wiki.airelle@spamgourmet.com",
+        "donateUrl": "http://rlwpx.free.fr/WPFF/don.htm"
+    },
+    {
+        "list": "Anti-Facebook List",
+        "descr": "Blocks Facebook trackers.",
+        "viewUrl": "https://fanboy.co.nz/fanboy-antifacebook.txt",
+        "homeUrl": "https://fanboy.co.nz/",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW"
+    },
+    {
+        "list": "Anti-PopAds",
+        "descr": "Blocks shady, annoying pop-under ads from the infamous PopAds ad network.",
+        "viewUrl": "https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt",
+        "homeUrl": "https://github.com/Yhonay/antipopads",
+        "issuesUrl": "https://github.com/Yhonay/antipopads/issues",
+        "changelogUrl": "https://github.com/Yhonay/antipopads/commits/master"
+    },
+    {
+        "list": "BadHosts",
+        "descr": "A non-comprehensive malware hosts list meant to be used in conjunction with the <a href=\"http://www.hostsfile.org/pac.html\">King of the PAC</a> file.",
+        "viewUrl": "http://www.hostsfile.org/Downloads/hosts.txt",
+        "homeUrl": "http://www.hostsfile.org/hosts.html"
+    },
+    {
+        "list": "Block the EU Cookie Shit List",
+        "descr": "Adblock / Adblock plus filter list for blocking cookie notifications.",
+        "descrSourceUrl": "https://github.com/r4vi/block-the-eu-cookie-shit-list",
+        "viewUrl": "https://raw.githubusercontent.com/r4vi/block-the-eu-cookie-shit-list/master/filterlist.txt",
+        "homeUrl": "https://github.com/r4vi/block-the-eu-cookie-shit-list",
+        "issuesUrl": "https://github.com/r4vi/block-the-eu-cookie-shit-list/issues",
+        "changelogUrl": "https://github.com/r4vi/block-the-eu-cookie-shit-list/commits/master"
+    },
+    {
+        "list": "Blockzilla",
+        "descr": "Blockzilla is designed to be powerful and effective against ads and trackers while still maintaining to be an unbloated and slim list. This is achieved in part by avoiding many site specific rules and focusing more on generic rules for a wider range of effectiveness while still keeping the balance of having a low risk for false positives.",
+        "descrSourceUrl": "https://github.com/zpacman/Blockzilla",
+        "viewUrl": "https://raw.githubusercontent.com/zpacman/Blockzilla/master/Blockzilla.txt",
+        "homeUrl": "https://zpacman.github.io/Blockzilla/",
+        "issuesUrl": "https://github.com/zpacman/Blockzilla/issues",
+        "email": "zpacman@protonmail.com",
+        "changelogUrl": "https://github.com/zpacman/Blockzilla/commits/master"
+    },
+    {
+        "list": "CAMELEON Hosts",
+        "descr": "CAMELEON is a free system that helps Internet users or administrators to blocks web-adverts.",
+        "descrSourceUrl": "http://sysctl.org/cameleon/",
+        "viewUrl": "http://sysctl.org/cameleon/hosts",
+        "homeUrl": "http://sysctl.org/cameleon/",
+        "email": "philippe@sysctl.org"
+    },
+    {
+        "list": "Cookie Blocklist",
+        "descr": "EFF maintains a Privacy Badger \"yellowlist\" of domains for which requests are allowed but Privacy Badger restricts access or availability of objectionable cookies and potentially other objectionable identifiers.",
+        "descrSourceUrl": "https://github.com/EFForg/privacybadgerchrome/blob/master/doc/yellowlist-criteria.md",
+        "viewUrl": "https://www.eff.org/files/cookieblocklist.txt",
+        "homeUrl": "https://www.eff.org/privacybadger",
+        "issuesUrl": "https://github.com/EFForg/privacybadgerfirefox/issues",
+        "changelogUrl": "https://github.com/EFForg/privacybadgerfirefox/commits/master",
+        "donateUrl": "https://supporters.eff.org/donate/support-privacy-badger"
+    },
+    {
+        "list": "Dan Pollock's Hosts",
+        "descr": "Use this file to prevent your computer from connecting to selected internet hosts. This is an easy and effective way to protect you from many types of spyware, reduces bandwidth use, blocks certain pop-up traps, prevents user tracking by way of \"web bugs\" embedded in spam, provides partial protection to IE from certain web-based exploits and blocks most advertising you would otherwise be subjected to on the internet.",
+        "descrSourceUrl": "http://someonewhocares.org/hosts/",
+        "viewUrl": "http://someonewhocares.org/hosts/zero/hosts",
+        "homeUrl": "http://someonewhocares.org/hosts/",
+        "email": "hosts@someonewhocares.org",
+        "forksCombos": [
+            "Unified Hosts",
+            "Unified Hosts + Gambling",
+            "Unified Hosts + Porn",
+            "Unified Hosts + Social",
+            "Unified Hosts + Gambling + Porn",
+            "Unified Hosts + Gambling + Social",
+            "Unified Hosts + Porn + Social",
+            "Unified Hosts + Gambling + Porn + Social",
+            "Filtros Nauscopicos Hosts"
+        ]
+    },
+    {
+        "list": "Disconnect Advertising Filter List",
+        "descr": "Blocks advertisements.",
+        "viewUrl": "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
+        "homeUrl": "https://disconnect.me/trackerprotection",
+        "email": "support@disconnect.me"
+    },
+    {
+        "list": "Disconnect Malvertising Filter List",
+        "descr": "Blocks malvertising.",
+        "viewUrl": "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt",
+        "homeUrl": "https://disconnect.me/trackerprotection",
+        "email": "support@disconnect.me"
+    },
+    {
+        "list": "Disconnect Malware Filter List",
+        "descr": "Blocks malware.",
+        "viewUrl": "https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt",
+        "homeUrl": "https://disconnect.me/trackerprotection",
+        "email": "support@disconnect.me"
+    },
+    {
+        "list": "Disconnect Tracking Filter List",
+        "descr": "Blocks trackers.",
+        "viewUrl": "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt",
+        "homeUrl": "https://disconnect.me/trackerprotection",
+        "email": "support@disconnect.me"
+    },
+    {
+        "list": "DNS-BH Bulk Registrars",
+        "descr": "This is a list of free/bulk domain registration services, who register 2nd level domains for free or almost free.",
+        "descrSourceUrl": "http://mirror1.malwaredomains.com/files/bulk_registrars.txt",
+        "viewUrl": "http://mirror1.malwaredomains.com/files/bulk_registrars.txt",
+        "homeUrl": "http://www.malwaredomains.com/",
+        "email": "malwaredomains@gmail.com",
+        "donateUrl": "http://www.malwaredomains.com/?page_id=675"
+    },
+    {
+        "list": "DNS-BH Dynamic DNS",
+        "descr": "This is a list of dynamic DNS providers.",
+        "descrSourceUrl": "http://mirror1.malwaredomains.com/files/dynamic_dns.txt",
+        "viewUrl": "http://mirror1.malwaredomains.com/files/dynamic_dns.txt",
+        "homeUrl": "http://www.malwaredomains.com/",
+        "email": "malwaredomains@gmail.com",
+        "donateUrl": "http://www.malwaredomains.com/?page_id=675"
+    },
+    {
+        "list": "DNS-BH Free Web Hosts",
+        "descr": "This is a list of free web hosting services.",
+        "descrSourceUrl": "http://mirror1.malwaredomains.com/files/freewebhosts.txt",
+        "viewUrl": "http://mirror1.malwaredomains.com/files/freewebhosts.txt",
+        "homeUrl": "http://www.malwaredomains.com/",
+        "email": "malwaredomains@gmail.com",
+        "donateUrl": "http://www.malwaredomains.com/?page_id=675"
+    },
+    {
+        "list": "DNS-BH Malware Domains",
+        "descr": "This is a list of malware domains.",
+        "viewUrl": "http://mirror1.malwaredomains.com/files/justdomains",
+        "homeUrl": "http://www.malwaredomains.com/",
+        "email": "malwaredomains@gmail.com",
+        "donateUrl": "http://www.malwaredomains.com/?page_id=675",
+        "forksCombos": [
+            "DNS-BH Adblock Plus Malware Domains Full"
+        ]
+    },
+    {
+        "list": "DNS-BH Malware Domains Immortal",
+        "descr": "This is a list of long-lived, \"immortal,\" malware domains.",
+        "descrSourceUrl": "http://mirror1.malwaredomains.com/files/immortal_domains.txt",
+        "viewUrl": "http://mirror1.malwaredomains.com/files/immortal_domains.txt",
+        "homeUrl": "http://www.malwaredomains.com/",
+        "email": "malwaredomains@gmail.com",
+        "donateUrl": "http://www.malwaredomains.com/?page_id=675"
+    },
+    {
+        "list": "DNS-BH Skype Resolvers",
+        "descr": "A list of Skype resolvers.",
+        "viewUrl": "http://mirror1.malwaredomains.com/files/Skype-resolvers.txt",
+        "homeUrl": "http://www.malwaredomains.com/",
+        "email": "malwaredomains@gmail.com",
+        "donateUrl": "http://www.malwaredomains.com/?page_id=675"
+    },
+    {
+        "list": "DNS-BH URL Shorteners",
+        "descr": "This is a list of URL shorteners.",
+        "descrSourceUrl": "http://mirror1.malwaredomains.com/files/url_shorteners.txt",
+        "viewUrl": "http://mirror1.malwaredomains.com/files/url_shorteners.txt",
+        "homeUrl": "http://www.malwaredomains.com/",
+        "email": "malwaredomains@gmail.com",
+        "donateUrl": "http://www.malwaredomains.com/?page_id=675"
+    },
+    {
+        "list": "DShield.org Recommended Block List",
+        "descr": "This list summarizes the top 20 attacking class C (/24) subnets over the last three days. The number of 'attacks' indicates the number of targets reporting scans from this subnet.",
+        "descrSourceUrl": "http://feeds.dshield.org/block.txt",
+        "viewUrl": "http://feeds.dshield.org/block.txt",
+        "homeUrl": "https://www.dshield.org/xml.html",
+        "email": "info@dshield.org"
+    },
+    {
+        "list": "EasyList",
+        "descr": "EasyList is the primary filter list that removes most adverts from international web pages, including unwanted frames, images, and objects. It is the most popular list used by many ad blockers and forms the basis of over a dozen combination and supplementary filter lists.",
+        "descrSourceUrl": "https://easylist.to/",
+        "viewUrl": "https://easylist.to/easylist/easylist.txt",
+        "homeUrl": "https://easylist.to/",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=23",
+        "issuesUrl": "https://github.com/easylist/easylist/issues",
+        "email": "easylist.subscription@gmail.com",
+        "changelogUrl": "https://github.com/easylist/easylist/commits/master",
+        "forksCombos": [
+            "EasyList Without Element Hiding Rules",
+            "EasyList Without Rules for Adult Sites",
+            "EasyPrivacy + EasyList",
+            "Fanboy's Complete List",
+            "Fanboy's Ultimate List",
+            "GNU Blacklist"
+        ]
+    },
+    {
+        "list": "EasyPrivacy",
+        "descr": "EasyPrivacy is an optional supplementary filter list that completely removes all forms of tracking from the internet, including web bugs, tracking scripts and information collectors, thereby protecting your personal data.",
+        "descrSourceUrl": "https://easylist.to/",
+        "viewUrl": "https://easylist.to/easylist/easyprivacy.txt",
+        "homeUrl": "https://easylist.to/",
+        "forumUrl": "https://forums.lanik.us/",
+        "issuesUrl": "https://github.com/easylist/easylist/issues",
+        "email": "easylist.subscription@gmail.com",
+        "changelogUrl": "https://github.com/easylist/easylist/commits/master",
+        "forksCombos": [
+            "EasyPrivacy Without International Filters",
+            "EasyPrivacy + EasyList",
+            "Fanboy's Complete List",
+            "Fanboy's Ultimate List",
+            "GNU Blacklist"
+        ]
+    },
+    {
+        "list": "EasyTest",
+        "descr": "Testing unsafe rules for EasyList that will break certain websites.",
+        "descrSourceUrl": "https://easylist-downloads.adblockplus.org/easytest.txt",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easytest.txt",
+        "homeUrl": "https://forums.lanik.us/viewtopic.php?t=8505",
+        "forumUrl": "https://forums.lanik.us/viewtopic.php?t=8505"
+    },
+    {
+        "list": "Facebook Annoyances Blocker",
+        "descr": "Block all Facebook annoyances.",
+        "descrSourceUrl": "https://facebook.adblockplus.me/",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt",
+        "homeUrl": "https://facebook.adblockplus.me/",
+        "email": "subscriptionlist@adblockplus.org",
+        "changelogUrl": "https://hg.adblockplus.org/facebookfilters/",
+        "donateUrl": "https://adblockplus.org/en/donate",
+        "forksCombos": [
+            "Facebook Sidebar Blocker",
+            "Facebook News Feed Annoyances Blocker"
+        ]
+    },
+    {
+        "list": "Fake-News List",
+        "descr": "Targeting sites with Hoax, propanganda and clickbait (fake sites). Note: List doesn't include harmless spoof/satire sites like theonion.com.",
+        "descrSourceUrl": "https://raw.githubusercontent.com/ryanbr/fanboy-adblock/master/fake-news.txt",
+        "viewUrl": "https://raw.githubusercontent.com/ryanbr/fanboy-adblock/master/fake-news.txt",
+        "homeUrl": "https://github.com/ryanbr/fanboy-adblock",
+        "forumUrl": "https://forums.lanik.us/viewtopic.php?f=88&t=34971",
+        "issuesUrl": "https://github.com/ryanbr/fanboy-adblock/issues",
+        "changelogUrl": "https://github.com/ryanbr/fanboy-adblock/commits/master",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW"
+    },
+    {
+        "list": "Fanboy's Annoyance List",
+        "descr": "In page Pop-Ups and other annoyances; thereby substantially decreasing web page loading times and uncluttering them (includes <a href=\"https://filterlists.com/#FanboysSocialBlockingList\">Fanboy's Social Blocking List</a> and <a href=\"https://filterlists.com/#FanboysCookiemonsterList\">Fanboy's Cookiemonster List</a>.)",
+        "descrSourceUrl": "https://fanboy.co.nz/",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt",
+        "homeUrl": "https://easylist.to/",
+        "forumUrl": "https://forums.lanik.us/",
+        "issuesUrl": "https://github.com/easylist/easylist/issues",
+        "email": "easylist.subscription@gmail.com",
+        "changelogUrl": "https://github.com/easylist/easylist/commits/master",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
+        "forksCombos": [
+            "Fanboy's Ultimate List"
+        ]
+    },
+    {
+        "list": "Fanboy's Anti-thirdparty Fonts",
+        "descr": "Blocks fonts loaded from third parties.",
+        "viewUrl": "https://fanboy.co.nz/fanboy-antifonts.txt",
+        "homeUrl": "http://fanboy.co.nz/"
+    },
+    {
+        "list": "Fanboy's Cookiemonster List",
+        "descr": "This will remove cookie and privacy warnings.",
+        "descrSourceUrl": "https://fanboy.co.nz/",
+        "viewUrl": "https://fanboy.co.nz/fanboy-cookiemonster.txt",
+        "homeUrl": "https://easylist.to/",
+        "forumUrl": "https://forums.lanik.us/",
+        "issuesUrl": "https://github.com/easylist/easylist/issues",
+        "email": "easylist.subscription@gmail.com",
+        "changelogUrl": "https://github.com/easylist/easylist/commits/master",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
+        "forksCombos": [
+            "Fanboy's Annoyance List"
+        ]
+    },
+    {
+        "list": "Fanboy's Enhanced Tracking List",
+        "descr": "Blocks common tracking scripts such as Omniture, Webtrends, Foresee, Coremetrics, Google-Analytics, Touchclarity, ChannelIntelligence.",
+        "descrSourceUrl": "https://fanboy.co.nz/filters.html",
+        "viewUrl": "https://fanboy.co.nz/enhancedstats.txt",
+        "homeUrl": "http://fanboy.co.nz/",
+        "issuesUrl": "https://github.com/easylist/easylist/issues",
+        "changelogUrl": "https://github.com/easylist/easylist/commits/master",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
+        "forksCombos": [
+            "Fanboy's Ultimate List",
+            "Fanboy's Complete List"
+        ]
+    },
+    {
+        "list": "Fanboy's Social Blocking List",
+        "descr": "Hide and block social content, social widgets, social scripts and social icons.",
+        "descrSourceUrl": "https://fanboy.co.nz/",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-social.txt",
+        "homeUrl": "https://easylist.to/",
+        "forumUrl": "https://forums.lanik.us/",
+        "issuesUrl": "https://github.com/easylist/easylist/issues",
+        "email": "easylist.subscription@gmail.com",
+        "changelogUrl": "https://github.com/easylist/easylist/commits/master",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
+        "forksCombos": [
+            "Fanboy's Annoyance List",
+            "GNU Blacklist"
+        ]
+    },
+    {
+        "list": "Firime (FED) EasyDownload List",
+        "descr": "Removes unnecessary elements from specific file sharing sites.",
+        "descrSourceUrl": "https://firime.wordpress.com/projects/others/fedlist/",
+        "viewUrl": "http://pastebin.com/raw/r9a5WrZa",
+        "homeUrl": "https://firime.wordpress.com/projects/others/fedlist/"
+    },
+    {
+        "list": "HOSTS AdBlock",
+        "descr": "A modern HOSTS list providing most cutting-edge of anti-[tracking, malware, advertisements and popups, clickjacking, statistics, analytics, bad redirections, bad/shock web-sites, filmsy webapps, shady android connections, junk, ..and foo].",
+        "descrSourceUrl": "https://github.com/eladkarako/hosts.eladkarako.com",
+        "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts.eladkarako.com/master/build/hosts_adblock.txt",
+        "homeUrl": "http://hosts.eladkarako.com/",
+        "issuesUrl": "https://github.com/eladkarako/hosts.eladkarako.com/issues",
+        "changelogUrl": "https://github.com/eladkarako/hosts.eladkarako.com/commits/master",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=7994YX29444PA&lc=IL&item_name=Elad%20Karako%27s%20HOSTS&item_number=for_hosts_eladkarako_com&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted"
+    },
+    {
+        "list": "HOSTS AdBlock Anti-Annoyance Bonus",
+        "descr": "Blocks annoyances.",
+        "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts.eladkarako.com/master/build/hosts_adblock_anti_annoyances.txt",
+        "homeUrl": "http://hosts.eladkarako.com/",
+        "issuesUrl": "https://github.com/eladkarako/hosts.eladkarako.com/issues",
+        "changelogUrl": "https://github.com/eladkarako/hosts.eladkarako.com/commits/master",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=7994YX29444PA&lc=IL&item_name=Elad%20Karako%27s%20HOSTS&item_number=for_hosts_eladkarako_com&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted"
+    },
+    {
+        "list": "hpHosts ATS",
+        "descr": "This classification is assigned for domains being used for advert or tracking purposes.",
+        "descrSourceUrl": "https://hosts-file.net/?s=classifications",
+        "viewUrl": "https://hosts-file.net/ad_servers.txt",
+        "homeUrl": "https://hosts-file.net/",
+        "forumUrl": "https://forum.hosts-file.net/",
+        "forksCombos": [
+            "hpHosts"
+        ]
+    },
+    {
+        "list": "hpHosts EMD",
+        "descr": "Sites engaged in malware distribution.",
+        "descrSourceUrl": "https://hosts-file.net/?s=classifications",
+        "viewUrl": "https://hosts-file.net/emd.txt",
+        "homeUrl": "https://hosts-file.net/",
+        "forumUrl": "https://forum.hosts-file.net/",
+        "forksCombos": [
+            "hpHosts"
+        ]
+    },
+    {
+        "list": "hpHosts EXP",
+        "descr": "Sites engaged in the housing, development or distribution of exploits, including but not limited to exploitation of browser, software (inclusive of website software such as CMS), operating system exploits aswell as those engaged in exploits via social engineering.",
+        "descrSourceUrl": "https://hosts-file.net/?s=classifications",
+        "viewUrl": "https://hosts-file.net/exp.txt",
+        "homeUrl": "https://hosts-file.net/",
+        "forumUrl": "https://forum.hosts-file.net/",
+        "forksCombos": [
+            "hpHosts"
+        ]
+    },
+    {
+        "list": "hpHosts FSA",
+        "descr": "Sites engaged in the selling or distribution of bogus or fraudulent applications and/or provision of fraudulent services.",
+        "descrSourceUrl": "https://hosts-file.net/?s=classifications",
+        "viewUrl": "https://hosts-file.net/fsa.txt",
+        "homeUrl": "https://hosts-file.net/",
+        "forumUrl": "https://forum.hosts-file.net/",
+        "forksCombos": [
+            "hpHosts"
+        ]
+    },
+    {
+        "list": "hpHosts GRM",
+        "descr": "Sites engaged in astroturfing (otherwise known as grass roots marketing) or spamming.",
+        "descrSourceUrl": "https://hosts-file.net/?s=classifications",
+        "viewUrl": "https://hosts-file.net/grm.txt",
+        "homeUrl": "https://hosts-file.net/",
+        "forumUrl": "https://forum.hosts-file.net/",
+        "forksCombos": [
+            "hpHosts"
+        ]
+    },
+    {
+        "list": "hpHosts HFS",
+        "descr": "Special classification for persons caught spamming the hpHosts forums.",
+        "descrSourceUrl": "https://hosts-file.net/?s=classifications",
+        "viewUrl": "https://hosts-file.net/hfs.txt",
+        "homeUrl": "https://hosts-file.net/",
+        "forumUrl": "https://forum.hosts-file.net/",
+        "forksCombos": [
+            "hpHosts"
+        ]
+    },
+    {
+        "list": "hpHosts HJK",
+        "descr": "Sites engaged in browser hijacking or other forms of hijacking (OS services, bandwidth, DNS, etc.).",
+        "descrSourceUrl": "https://hosts-file.net/?s=classifications",
+        "viewUrl": "https://hosts-file.net/hjk.txt",
+        "homeUrl": "https://hosts-file.net/",
+        "forumUrl": "https://forum.hosts-file.net/",
+        "forksCombos": [
+            "hpHosts"
+        ]
+    },
+    {
+        "list": "hpHosts MMT",
+        "descr": "Sites engaged in the use of misleading marketing tactics.",
+        "descrSourceUrl": "https://hosts-file.net/?s=classifications",
+        "viewUrl": "https://hosts-file.net/mmt.txt",
+        "homeUrl": "https://hosts-file.net/",
+        "forumUrl": "https://forum.hosts-file.net/",
+        "forksCombos": [
+            "hpHosts"
+        ]
+    },
+    {
+        "list": "hpHosts Partial",
+        "descr": "The following hosts were added to hpHosts AFTER the last full release.",
+        "descrSourceUrl": "https://hosts-file.net/hphosts-partial.txt",
+        "viewUrl": "https://hosts-file.net/hphosts-partial.txt",
+        "homeUrl": "https://hosts-file.net/",
+        "forumUrl": "https://forum.hosts-file.net/"
+    },
+    {
+        "list": "hpHosts PHA",
+        "descr": "Sites engaged in illegal pharmacy activities.",
+        "descrSourceUrl": "https://hosts-file.net/?s=classifications",
+        "viewUrl": "https://hosts-file.net/pha.txt",
+        "homeUrl": "https://hosts-file.net/",
+        "forumUrl": "https://forum.hosts-file.net/",
+        "forksCombos": [
+            "hpHosts"
+        ]
+    },
+    {
+        "list": "hpHosts PSH",
+        "descr": "Sites engaged in Phishing.",
+        "descrSourceUrl": "https://hosts-file.net/?s=classifications",
+        "viewUrl": "https://hosts-file.net/psh.txt",
+        "homeUrl": "https://hosts-file.net/",
+        "forumUrl": "https://forum.hosts-file.net/",
+        "forksCombos": [
+            "hpHosts"
+        ]
+    },
+    {
+        "list": "hpHosts WRZ",
+        "descr": "Sites engaged in the selling, distribution or provision of warez (including but not limited to keygens, serials etc), where such provisions do not contain malware.",
+        "descrSourceUrl": "https://hosts-file.net/?s=classifications",
+        "viewUrl": "https://hosts-file.net/wrz.txt",
+        "homeUrl": "https://hosts-file.net/",
+        "forumUrl": "https://forum.hosts-file.net/",
+        "forksCombos": [
+            "hpHosts"
+        ]
+    },
+    {
+        "list": "I Don't Care about Cookies",
+        "descr": "Get rid of annoying cookie warnings from almost all 'infected' websites!",
+        "descrSourceUrl": "https://www.kiboke-studio.hr/i-dont-care-about-cookies/",
+        "viewUrl": "https://www.kiboke-studio.hr/i-dont-care-about-cookies/abp/",
+        "homeUrl": "https://www.kiboke-studio.hr/i-dont-care-about-cookies/",
+        "email": "info@kiboke-studio.hr",
+        "donateUrl": "https://flattr.com/submit/auto?user_id=kiboke&url=https%3A%2F%2Fwww.kiboke-studio.hr%2Fi-dont-care-about-cookies%2F"
+    },
+    {
+        "list": "iploggerfilter",
+        "descr": "Filter any site/subsite who's only purpose is to log your IP.",
+        "descrSourceUrl": "https://github.com/piperun/iploggerfilter",
+        "viewUrl": "https://raw.githubusercontent.com/piperun/iploggerfilter/master/filterlist",
+        "homeUrl": "https://github.com/piperun/iploggerfilter",
+        "issuesUrl": "https://github.com/piperun/iploggerfilter/issues",
+        "changelogUrl": "https://github.com/piperun/iploggerfilter/commits/master"
+    },
+    {
+        "list": "JAB Creations' Adblock Plus Filter Subscription",
+        "descr": "My Adblock Plus filter subscription will block banner ads, flash ads, text-ads, and even completely block some rogue anti-virus and anti-spyware websites preventing infection.",
+        "descrSourceUrl": "https://www.jabcreations.com/web/adblock-subscription",
+        "viewUrl": "http://www.jabcreations.com/downloads/adblock-filters.php",
+        "homeUrl": "https://www.jabcreations.com/web/adblock-subscription"
+    },
+    {
+        "list": "Malware Domain List",
+        "descr": "Blocks malware.",
+        "viewUrl": "https://www.malwaredomainlist.com/hostslist/hosts.txt",
+        "homeUrl": "https://www.malwaredomainlist.com/",
+        "forumUrl": "https://www.malwaredomainlist.com/forums/",
+        "forksCombos": [
+            "Unified Hosts",
+            "Unified Hosts + Gambling",
+            "Unified Hosts + Porn",
+            "Unified Hosts + Social",
+            "Unified Hosts + Gambling + Porn",
+            "Unified Hosts + Gambling + Social",
+            "Unified Hosts + Porn + Social",
+            "Unified Hosts + Gambling + Porn + Social"
+        ]
+    },
+    {
+        "list": "Message \"Seen\" Remover for Facebook",
+        "descr": "Prevents Facebook and other users of Facebook chat from seeing that you have read a message.",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/message_seen_remover_for_facebook.txt"
+    },
+    {
+        "list": "Michael Trimm's Hosts",
+        "descr": "Blocks viruses.",
+        "viewUrl": "https://raw.githubusercontent.com/michaeltrimm/hosts-blocking/master/_hosts.txt",
+        "homeUrl": "https://github.com/michaeltrimm/hosts-blocking",
+        "issuesUrl": "https://github.com/michaeltrimm/hosts-blocking/issues",
+        "changelogUrl": "https://github.com/michaeltrimm/hosts-blocking/commits/master"
+    },
+    {
+        "list": "MoaAB: Mother of All AD-BLOCKING",
+        "descr": "Blocks In-App/Web ADs, In-App/Web Trackers, Malware/Spyware Domains, Tracker Cookies, Malicious Call-Back Home App Functions, Malicious 3rd Party Redirection Functions and Possibly Some Level of Virus/Trojan Protection and More...",
+        "descrSourceUrl": "http://forum.xda-developers.com/showthread.php?t=1916098",
+        "viewUrl": "https://adblock.mahakala.is/",
+        "homeUrl": "http://forum.xda-developers.com/showthread.php?t=1916098",
+        "forumUrl": "http://forum.xda-developers.com/showthread.php?t=1916098"
+    },
+    {
+        "list": "MVPS HOSTS",
+        "descr": "Block ads, banners, 3rd party Cookies, 3rd party page counters, web bugs, and even most hijackers.",
+        "descrSourceUrl": "http://winhelp2002.mvps.org/hosts.htm",
+        "viewUrl": "http://winhelp2002.mvps.org/hosts.txt",
+        "homeUrl": "http://winhelp2002.mvps.org/hosts.htm",
+        "email": "winhelp2002@gmail.com",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UNHL2VY85PB8N",
+        "forksCombos": [
+            "Unified Hosts",
+            "Unified Hosts + Gambling",
+            "Unified Hosts + Porn",
+            "Unified Hosts + Social",
+            "Unified Hosts + Gambling + Porn",
+            "Unified Hosts + Gambling + Social",
+            "Unified Hosts + Porn + Social",
+            "Unified Hosts + Gambling + Porn + Social"
+        ]
+    },
+    {
+        "list": "Nopelist",
+        "descr": "A personal filter list. Each host is either an ad, phishing, malicious, analytics, or clickbait.",
+        "descrSourceUrl": "https://github.com/genediazjr/nopelist",
+        "viewUrl": "https://raw.githubusercontent.com/genediazjr/nopelist/master/nopelist.txt",
+        "homeUrl": "https://github.com/genediazjr/nopelist",
+        "issuesUrl": "https://github.com/genediazjr/nopelist/issues",
+        "changelogUrl": "https://github.com/genediazjr/nopelist/commits/master"
+    },
+    {
+        "list": "NoTrack Blocklist",
+        "descr": "Blocks trackers.",
+        "viewUrl": "https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt",
+        "homeUrl": "https://github.com/quidsup/notrack",
+        "issuesUrl": "https://github.com/quidsup/notrack/issues",
+        "changelogUrl": "https://github.com/quidsup/notrack/commits/master"
+    },
+    {
+        "list": "OpenPhish Phishing Intelligence Community Feed",
+        "descr": "OpenPhish uses proprietary Artificial Intelligence algorithms to automatically identify zero-day phishing sites and provide comprehensive, actionable, real-time threat intelligence.",
+        "descrSourceUrl": "https://openphish.com/",
+        "viewUrl": "https://openphish.com/feed.txt",
+        "homeUrl": "https://openphish.com/",
+        "email": "contact@openphish.com"
+    },
+    {
+        "list": "Peter Lowe's List",
+        "descr": "Block advertisements.",
+        "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
+        "homeUrl": "https://pgl.yoyo.org/adservers/",
+        "email": "pgl@yoyo.org",
+        "forksCombos": [
+            "Unified Hosts",
+            "Unified Hosts + Gambling",
+            "Unified Hosts + Porn",
+            "Unified Hosts + Social",
+            "Unified Hosts + Gambling + Porn",
+            "Unified Hosts + Gambling + Social",
+            "Unified Hosts + Porn + Social",
+            "Unified Hosts + Gambling + Porn + Social"
+        ]
+    },
+    {
+        "list": "Prebake Obtrusive",
+        "descr": "Prebake is an Adblock filter subscription that blocks large, obtrusive cookie notices. These notices either consume a considerable amount of screen real estate or popup and distract the viewers attention, which can be just as annoying as ads.",
+        "descrSourceUrl": "http://prebake.eu/",
+        "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/obtrusive.txt",
+        "homeUrl": "http://prebake.eu/",
+        "issuesUrl": "https://github.com/liamja/Prebake/issues",
+        "email": "cookies@prebake.eu",
+        "changelogUrl": "https://github.com/liamja/Prebake/commits/master"
+    },
+    {
+        "list": "Prebake Quiet",
+        "descr": "The Quiet list blocks all other notices regardless of their size or obnoxiousness. Simple two- or three-word links to privacy pages aren't blocked (such as links in a page footer), but a lengthy paragraph mid-page will be.",
+        "descrSourceUrl": "https://github.com/liamja/Prebake",
+        "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/quiet.txt",
+        "homeUrl": "http://prebake.eu/",
+        "issuesUrl": "https://github.com/liamja/Prebake/issues",
+        "email": "cookies@prebake.eu",
+        "changelogUrl": "https://github.com/liamja/Prebake/commits/master"
+    },
+    {
+        "list": "Privacy Filters",
+        "descr": "A text file with filters to aid in blocking online trackers, for use in a blocker such as uBlock Origin.",
+        "descrSourceUrl": "https://github.com/metaphoricgiraffe/tracking-filters",
+        "viewUrl": "https://raw.githubusercontent.com/metaphoricgiraffe/tracking-filters/master/trackingfilters.txt",
+        "homeUrl": "https://github.com/metaphoricgiraffe/tracking-filters",
+        "issuesUrl": "https://github.com/metaphoricgiraffe/tracking-filters/issues",
+        "changelogUrl": "https://github.com/metaphoricgiraffe/tracking-filters/commits/master"
+    },
+    {
+        "list": "Ransomware Tracker CryptoWall Ransomware C2 Domain Blocklist",
+        "descr": "Blocks CryptoWall from botnet command and control servers by domain.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_C2_DOMBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch"
+    },
+    {
+        "list": "Ransomware Tracker CryptoWall Ransomware C2 URL Blocklist",
+        "descr": "Blocks CryptoWall from botnet command and control servers by URL.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_C2_URLBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch",
+        "forksCombos": [
+            "Ransomware Tracker Ransomware URL Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker CryptoWall Ransomware Payment Sites Domain Blocklist",
+        "descr": "Blocks CryptoWall from payment site servers by domain.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_PS_DOMBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch",
+        "forksCombos": [
+            "Ransomware Tracker Ransomware Domain Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker CryptoWall Ransomware Payment Sites IP Blocklist",
+        "descr": "Blocks CryptoWall from payment site servers by IP address.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_PS_IPBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch"
+    },
+    {
+        "list": "Ransomware Tracker Locky Ransomware C2 Domain Blocklist",
+        "descr": "Blocks Locky from botnet command and control servers by domain.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_C2_DOMBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch",
+        "forksCombos": [
+            "Ransomware Tracker Ransomware Domain Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker Locky Ransomware C2 IP Blocklist",
+        "descr": "Blocks Locky from botnet command and control servers by IP.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_C2_IPBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch",
+        "forksCombos": [
+            "Ransomware Tracker Ransomware IP Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker Locky Ransomware Distribution Site URL Blocklist",
+        "descr": "Blocks Locky from distribution site servers by URL.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_DS_URLBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch",
+        "forksCombos": [
+            "Ransomware Tracker Ransomware URL Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker Locky Ransomware Payment Sites Domain Blocklist",
+        "descr": "Blocks Locky from payment site servers by domain.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_PS_DOMBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch",
+        "forksCombos": [
+            "Ransomware Tracker Ransomware Domain Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker Locky Ransomware Payment Sites IP Blocklist",
+        "descr": "Blocks Locky from payment site servers by IP address.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_PS_IPBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch"
+    },
+    {
+        "list": "Ransomware Tracker TeslaCrypt Ransomware C2 Domain Blocklist",
+        "descr": "Blocks TeslaCrypt from botnet command and control servers by domain.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TC_C2_DOMBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch"
+    },
+    {
+        "list": "Ransomware Tracker TeslaCrypt Ransomware C2 URL Blocklist",
+        "descr": "Blocks TeslaCrypt from botnet command and control servers by URL.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TC_C2_URLBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch",
+        "forksCombos": [
+            "Ransomware Tracker Ransomware URL Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker TeslaCrypt Ransomware Distribution Site URL Blocklist",
+        "descr": "Blocks TeslaCrypt from distribution site servers by URL.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TC_DS_URLBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch",
+        "forksCombos": [
+            "Ransomware Tracker Ransomware URL Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker TeslaCrypt Ransomware Payment Sites Domain Blocklist",
+        "descr": "Blocks TeslaCrypt from payment site servers by domain.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TC_PS_DOMBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch",
+        "forksCombos": [
+            "Ransomware Tracker Ransomware Domain Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker TeslaCrypt Ransomware Payment Sites IP Blocklist",
+        "descr": "Blocks TeslaCrypt from payment site servers by IP address.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TC_PS_IPBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch",
+        "forksCombos": [
+            "Ransomware Tracker Ransomware IP Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker TorrentLocker Ransomware C2 Domain Blocklist",
+        "descr": "Blocks TorrentLocker from botnet command and control servers by domain.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TL_C2_DOMBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch",
+        "forksCombos": [
+            "Ransomware Tracker Ransomware Domain Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker TorrentLocker Ransomware C2 IP Blocklist",
+        "descr": "Blocks TorrentLocker from botnet command and control servers by IP address.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TL_C2_IPBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch",
+        "forksCombos": [
+            "Ransomware Tracker Ransomware IP Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker TorrentLocker Ransomware Payment Sites Domain Blocklist",
+        "descr": "Blocks TorrentLocker from payment site servers by domain.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TL_PS_DOMBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch",
+        "forksCombos": [
+            "Ransomware Tracker Ransomware Domain Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker TorrentLocker Ransomware Payment Sites IP Blocklist",
+        "descr": "Blocks TorrentLocker from payment site servers by IP address.",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TL_PS_IPBL.txt",
+        "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
+        "email": "rt-intel@abuse.ch",
+        "forksCombos": [
+            "Ransomware Tracker Ransomware IP Blocklist"
+        ]
+    },
+    {
+        "list": "Satterly's Adblock Plus Filters",
+        "descr": "I make supplemental filters in Adblock Plus to block garbage on webpages not blocked by other lists. I use many regular expressions, a few domain filters, but no CSS filters.",
+        "descrSourceUrl": "https://satterly.neocities.org/abp_filters.html",
+        "viewUrl": "https://satterly.neocities.org/abp_filters.txt",
+        "homeUrl": "https://satterly.neocities.org/abp_filters.html"
+    },
+    {
+        "list": "Shopping Whitelist Alaska Airlines",
+        "descr": "Whitelists the trackers on the Alaska Airlines shopping portal so that rewards can be credited.",
+        "viewUrl": "https://www.mileageplanshopping.com/adBlockWhitelist.php"
+    },
+    {
+        "list": "Shopping Whitelist American Airlines",
+        "descr": "Whitelists the trackers on the American Airlines shopping portal so that rewards can be credited.",
+        "viewUrl": "https://www.aadvantageeshopping.com/adBlockWhitelist.php"
+    },
+    {
+        "list": "Shopping Whitelist BarclayCard",
+        "descr": "Whitelists the trackers on the BarclayCard shopping portal so that rewards can be credited.",
+        "viewUrl": "https://www.barclaycardrewardsboost.com/adBlockWhitelist.php"
+    },
+    {
+        "list": "Shopping Whitelist Southwest Airlines",
+        "descr": "Whitelists the trackers on the Southwest Airlines shopping portal so that rewards can be credited.",
+        "viewUrl": "https://rapidrewardsshopping.southwest.com/adBlockWhitelist.php"
+    },
+    {
+        "list": "Shopping Whitelist United Airlines",
+        "descr": "Whitelists the trackers on the United Airlines shopping portal so that rewards can be credited.",
+        "viewUrl": "https://shopping.mileageplus.com/adBlockWhitelist.php"
+    },
+    {
+        "list": "Spam404",
+        "descr": "This filter protects you from online scams. This filter is regularly updated with data collected by Spam404.com.",
+        "descrSourceUrl": "https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt",
+        "viewUrl": "https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt",
+        "homeUrl": "http://www.spam404.com/blog/block-online-scams-with-spam404-and-adblock",
+        "issuesUrl": "https://github.com/Dawsey21/Lists/issues",
+        "email": "admin@spam404.com",
+        "changelogUrl": "https://github.com/Dawsey21/Lists/commits/master"
+    },
+    {
+        "list": "Spam404 Domain Blacklist",
+        "descr": "The Spam404 domain blacklist is a regularly updated list of abusive domain names.",
+        "descrSourceUrl": "http://www.spam404.com/domain-blacklist.html",
+        "viewUrl": "https://raw.githubusercontent.com/Dawsey21/Lists/master/main-blacklist.txt",
+        "homeUrl": "http://www.spam404.com/domain-blacklist.html",
+        "issuesUrl": "https://github.com/Dawsey21/Lists/issues",
+        "email": "admin@spam404.com",
+        "changelogUrl": "https://github.com/Dawsey21/Lists/commits/master"
+    },
+    {
+        "list": "SpotifyAds",
+        "descr": "Spotify ads sources sites based on <a href=\"https://github.com/Xeroday/Spotify-Ad-Blocker\">EZBlocker</a> content.",
+        "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+        "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/SpotifyAds/hosts",
+        "homeUrl": "https://github.com/FadeMind/hosts.extras",
+        "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
+        "changelogUrl": "https://github.com/FadeMind/hosts.extras/commits/master"
+    },
+    {
+        "list": "Steven Black's Hosts",
+        "descr": "Hosts contributed by Steven Black.",
+        "descrSourceUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts",
+        "homeUrl": "https://github.com/StevenBlack/hosts",
+        "issuesUrl": "https://github.com/StevenBlack/hosts/issues",
+        "email": "steveb@stevenblack.com",
+        "changelogUrl": "https://github.com/StevenBlack/hosts/commits/master",
+        "forksCombos": [
+            "Unified Hosts",
+            "Unified Hosts + Gambling",
+            "Unified Hosts + Porn",
+            "Unified Hosts + Social",
+            "Unified Hosts + Gambling + Porn",
+            "Unified Hosts + Gambling + Social",
+            "Unified Hosts + Porn + Social",
+            "Unified Hosts + Gambling + Porn + Social"
+        ]
+    },
+    {
+        "list": "The Hosts File Project Adblock Filters",
+        "descr": "Blocks advertisements and trackers.",
+        "viewUrl": "http://hostsfile.mine.nu/downloads/adblock.txt",
+        "homeUrl": "http://hostsfile.mine.nu/",
+        "email": "wduk10@hotmail.com"
+    },
+    {
+        "list": "The Hosts File Project Hosts",
+        "descr": "Web adverts can be simply blocked by using a specially formatted text file called a “Hosts” file which is a list myself and numerous others have painstakingly compiled to now over 60000 (verified) known banner advertising companies and providers along with hostile websites that have been discovered (popup providers, spyware, dialers ,scams etc). This file tells your computer to try to and access itself whenever a banner advert is requested from a server that is in its \"black\" list, but instead of contacting the advert server your computer tries to request itself, and as your machine doesn't contain any adverts (if you are not running a web server) nothing will be shown.",
+        "descrSourceUrl": "http://hostsfile.mine.nu/",
+        "viewUrl": "http://hostsfile.mine.nu/hosts0.txt",
+        "homeUrl": "http://hostsfile.mine.nu/",
+        "email": "wduk10@hotmail.com"
+    },
+    {
+        "list": "Top Cash Back Adblock Whitelist",
+        "descr": "You can leave AdBlock functioning as normal, but the proper tracking of cashback cookies will be allowed on TopCashback and our affiliate network sites only.",
+        "descrSourceUrl": "https://www.topcashback.com/Help/164",
+        "viewUrl": "https://www.topcashback.com/Misc/AdBlockWhiteList.aspx",
+        "homeUrl": "https://www.topcashback.com/Help/164"
+    },
+    {
+        "list": "uAssets Badware",
+        "descr": "To block sites known for delivering adware/crapware. For sites documented to put users at risk of installing adware/crapware etc. The purpose is to at least ensure a user is warned of the risks ahead.",
+        "descrSourceUrl": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/badware.txt",
+        "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
+        "homeUrl": "https://github.com/uBlockOrigin/uAssets",
+        "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
+        "changelogUrl": "https://github.com/uBlockOrigin/uAssets/commits/master"
+    },
+    {
+        "list": "uAssets Experimental",
+        "descr": "These filters are experimental and may cause breakage. They are being evaluated/fine-tuned for inclusion in the default set of filters.",
+        "descrSourceUrl": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/experimental.txt",
+        "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt",
+        "homeUrl": "https://github.com/uBlockOrigin/uAssets",
+        "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
+        "changelogUrl": "https://github.com/uBlockOrigin/uAssets/commits/master"
+    },
+    {
+        "list": "uAssets Filters",
+        "descr": "Filters optimized for uBlock.",
+        "descrSourceUrl": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters.txt",
+        "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
+        "homeUrl": "https://github.com/uBlockOrigin/uAssets",
+        "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
+        "changelogUrl": "https://github.com/uBlockOrigin/uAssets/commits/master"
+    },
+    {
+        "list": "uAssets Privacy",
+        "descr": "Privacy filters for uBlock Origin.",
+        "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt",
+        "homeUrl": "https://github.com/uBlockOrigin/uAssets",
+        "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
+        "changelogUrl": "https://github.com/uBlockOrigin/uAssets/commits/master"
+    },
+    {
+        "list": "uAssets Unbreak",
+        "descr": "Needed to unbreak web sites, mostly because of hosts file-based filters.",
+        "descrSourceUrl": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/unbreak.txt",
+        "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
+        "homeUrl": "https://github.com/uBlockOrigin/uAssets",
+        "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
+        "changelogUrl": "https://github.com/uBlockOrigin/uAssets/commits/master"
+    },
+    {
+        "list": "uBlock Antiskimming List",
+        "descr": "Block sites with skimming scripts.",
+        "descrSourceUrl": "https://raw.githubusercontent.com/byaka/ublock-antiskimming-list/master/build/data.txt",
+        "viewUrl": "https://raw.githubusercontent.com/byaka/ublock-antiskimming-list/master/build/data.txt",
+        "homeUrl": "https://github.com/byaka/ublock-antiskimming-list",
+        "issuesUrl": "https://github.com/byaka/ublock-antiskimming-list/issues",
+        "changelogUrl": "https://github.com/byaka/ublock-antiskimming-list/commits/master"
+    },
+    {
+        "list": "uBlock Filters Plus",
+        "descr": "A filterlist with additional filters for uBlock Origin. Contains filters specific to uBlock Origin (like popunder filters) and some filters that have not yet been added to other filterlists.",
+        "descrSourceUrl": "https://github.com/IDKwhattoputhere/uBlock-Filters-Plus",
+        "viewUrl": "https://raw.githubusercontent.com/IDKwhattoputhere/uBlock-Filters-Plus/master/uBlock-Filters-Plus.txt",
+        "homeUrl": "https://github.com/IDKwhattoputhere/uBlock-Filters-Plus",
+        "issuesUrl": "https://github.com/IDKwhattoputhere/uBlock-Filters-Plus/issues",
+        "changelogUrl": "https://github.com/IDKwhattoputhere/uBlock-Filters-Plus/commits/master"
+    },
+    {
+        "list": "uBO-Personal-Filters",
+        "descr": "A filterlist with additional filters for uBlock Origin to block third-party, tracking, annoyances and all other unwarranted resources from loading. Contains filters specific to uBlock Origin and some filters that have not yet been added to other filterlists.",
+        "descrSourceUrl": "https://github.com/uBlock-user/uBO-Personal-Filters",
+        "viewUrl": "https://raw.githubusercontent.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt",
+        "homeUrl": "https://github.com/uBlock-user/uBO-Personal-Filters",
+        "changelogUrl": "https://github.com/uBlock-user/uBO-Personal-Filters/commits/master"
+    },
+    {
+        "list": "UncheckyAds",
+        "descr": "Windows installers ads sources sites based on <a href=\"https://unchecky.com/\">Unchecky</a> content.",
+        "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+        "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts",
+        "homeUrl": "https://github.com/FadeMind/hosts.extras",
+        "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
+        "changelogUrl": "https://github.com/FadeMind/hosts.extras/commits/master"
+    },
+    {
+        "list": "YouTube: Pure Video Experience",
+        "descr": "Block all YouTube annoyances.",
+        "descrSourceUrl": "https://youtube.adblockplus.me/",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt",
+        "homeUrl": "https://youtube.adblockplus.me/",
+        "email": "        subscriptionlist@adblockplus.org",
+        "changelogUrl": "https://hg.adblockplus.org/youtubefilters/",
+        "donateUrl": "https://adblockplus.org/en/donate",
+        "forksCombos": [
+            "YouTube: Remove Comments",
+            "YouTube: Remove Youtube Suggestions",
+            "YouTube: Other Annoyances"
+        ]
+    },
+    {
+        "list": "Liste AR",
+        "lang": [
+            "ar"
+        ],
+        "descr": "Liste AR is an [EasyList] affiliated filter list written by smed79 and Crits that specifically removes adverts on Arabic language websites.",
+        "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/Liste_AR.txt",
+        "homeUrl": "https://code.google.com/archive/p/liste-ar-adblock/",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=98",
+        "email": "liste.ar.adblock@gmail.com",
+        "changelogUrl": "https://hg.adblockplus.org/listear/",
+        "forksCombos": [
+            "Liste AR + Liste FR + EasyList"
+        ]
+    },
+    {
+        "list": "Bulgarian List",
+        "lang": [
+            "bg"
+        ],
+        "descr": "On this page you can find updated lists to block unwanted content in your favorite browser. With their help, the pesky ads that some sites terrorizing customers will be hidden.",
+        "descrSourceUrl": "https://stanev.org/abp/",
+        "viewUrl": "https://stanev.org/abp/adblock_bg.txt",
+        "homeUrl": "https://stanev.org/abp/",
+        "email": "alex@stanev.org",
+        "forksCombos": [
+            "Bulgarian List + EasyList"
+        ]
+    },
+    {
+        "list": "EasyList Czech and Slovak",
+        "lang": [
+            "cs",
+            "sl"
+        ],
+        "descr": "Official filter list file used for blocking ads on Czech and Slovak websites.",
+        "descrSourceUrl": "https://github.com/tomasko126/easylistczechandslovak",
+        "viewUrl": "https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters.txt",
+        "homeUrl": "https://adblock.sk/",
+        "forumUrl": "https://easylist-czech-and-slovak.tenderapp.com/",
+        "issuesUrl": "https://github.com/tomasko126/easylistczechandslovak/issues",
+        "email": "tomastaro@adblock.sk",
+        "changelogUrl": "https://github.com/tomasko126/easylistczechandslovak/commits/master",
+        "forksCombos": [
+            "EasyList Czech and Slovak + EasyList"
+        ]
+    },
+    {
+        "list": "Schack's Adblock Plus List",
+        "lang": [
+            "da"
+        ],
+        "descr": "My list removes advertisements from all the leading Danish Websites: Ekstra Bladet, Jyllands Posten, Berlingske, TV / 2, Computerworld, Version2, etc.",
+        "descrSourceUrl": "https://henrik.schack.dk/adblock/",
+        "viewUrl": "https://adblock.dk/block.csv",
+        "homeUrl": "https://henrik.schack.dk/adblock/",
+        "email": "henrik@schackinger.com",
+        "donateUrl": "https://www.paypal.me/schack"
+    },
+    {
+        "list": "EasyList Germany",
+        "lang": [
+            "de"
+        ],
+        "descr": "EasyList Germany is a filter list written by the EasyList authors MonztA, Famlam, and Khrin that specifically removes adverts on German language websites.",
+        "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany.txt",
+        "homeUrl": "https://easylist.to/",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=90",
+        "issuesUrl": "https://github.com/easylist/easylistgermany/issues",
+        "email": "easylist.germany@gmail.com",
+        "changelogUrl": "https://github.com/easylist/easylistgermany/commits/master",
+        "forksCombos": [
+            "EasyList Germany + EasyList"
+        ]
+    },
+    {
+        "list": "EasyList Thailand",
+        "lang": [
+            "th"
+        ],
+        "descr": "Help you to block ads in Thailand websites.",
+        "descrSourceUrl": "https://github.com/easylist-thailand/easylist-thailand",
+        "viewUrl": "https://raw.githubusercontent.com/easylist-thailand/easylist-thailand/master/subscriptions/easylist-thailand.txt",
+        "homeUrl": "https://easylist-thailand.github.io/",
+        "issuesUrl": "https://github.com/easylist-thailand/easylist-thailand/issues",
+        "changelogUrl": "https://github.com/easylist-thailand/easylist-thailand/commits/master"
+    },
+    {
+        "list": "Greek AdBlock Filter",
+        "lang": [
+            "el"
+        ],
+        "descr": "Filter for advertisements on Greek sites.",
+        "descrSourceUrl": "https://www.void.gr/kargig/blog/greek-adblock-plus-filter/",
+        "viewUrl": "https://raw.githubusercontent.com/kargig/greek-adblockplus-filter/master/void-gr-filters.txt",
+        "homeUrl": "https://www.void.gr/kargig/blog/greek-adblock-plus-filter/",
+        "issuesUrl": "https://github.com/kargig/greek-adblockplus-filter/issues",
+        "changelogUrl": "https://github.com/kargig/greek-adblockplus-filter/commits/master"
+    },
+    {
+        "list": "EasyList Spanish",
+        "lang": [
+            "es"
+        ],
+        "descr": "Spanish supplement for EasyList.",
+        "descrSourceUrl": "https://adblockplus.org/subscriptions",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistspanish.txt",
+        "homeUrl": "https://easylist.to/",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=103",
+        "email": "easylist.spanish@gmail.com"
+    },
+    {
+        "list": "Fanboy's Spanish/Portuguese",
+        "lang": [
+            "es",
+            "pt"
+        ],
+        "descr": "Blocks Spanish and Portuguese regional advertisements and trackers.",
+        "viewUrl": "https://fanboy.co.nz/fanboy-espanol.txt",
+        "homeUrl": "https://fanboy.co.nz/",
+        "email": "fanboyadblock@googlegroups.com",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW"
+    },
+    {
+        "list": "Eesti Custom Sites Filter",
+        "lang": [
+            "et"
+        ],
+        "descr": "Blocks Estonian regional advertisements and trackers.",
+        "viewUrl": "http://adblock.ee/list.php",
+        "homeUrl": "http://adblock.ee/"
+    },
+    {
+        "list": "Adblock Iran",
+        "lang": [
+            "fa",
+            "ir"
+        ],
+        "descr": "Ad blocking rules for Iranian/Persian websites.",
+        "descrSourceUrl": "https://github.com/farrokhi/adblock-iran",
+        "viewUrl": "https://raw.githubusercontent.com/farrokhi/adblock-iran/master/filter.txt",
+        "homeUrl": "https://github.com/farrokhi/adblock-iran",
+        "issuesUrl": "https://github.com/farrokhi/adblock-iran/issues",
+        "changelogUrl": "https://github.com/farrokhi/adblock-iran/commits/master"
+    },
+    {
+        "list": "Adblock Persian List",
+        "lang": [
+            "fa"
+        ],
+        "descr": "Blocks Persian regional advertisements and trackers.",
+        "viewUrl": "https://ideone.com/plain/K452p",
+        "homeUrl": "https://ideone.com/K452p",
+        "forumUrl": "https://adblockplus.org/forum/viewtopic.php?f=2&t=7658"
+    },
+    {
+        "list": "Adblock List for Finland",
+        "lang": [
+            "fi"
+        ],
+        "descr": "Blocks Finnish regional advertisements and trackers.",
+        "viewUrl": "http://adb.juvander.net/Finland_adb.txt",
+        "homeUrl": "https://www.juvander.fi/site/ilpo/Home/tabid/127/EntryId/825/New-Adblock-filter-list.aspx",
+        "forumUrl": "https://www.juvander.fi/site/ilpo/Forums/tabid/139/forumid/23/scope/threads/Default.aspx"
+    },
+    {
+        "list": "Finnish AntiSocial",
+        "lang": [
+            "fi"
+        ],
+        "descr": "Finnish blocklist for AdBlock to block social media stuff.",
+        "descrSourceUrl": "http://adb.juvander.net/Finland_adb_antisocial.txt",
+        "viewUrl": "http://adb.juvander.net/Finland_adb_antisocial.txt"
+    },
+    {
+        "list": "Liste FR",
+        "lang": [
+            "fr"
+        ],
+        "descr": "Liste FR is an [EasyList] affiliated filter list written by Lian, Crits and smed79 that specifically removes adverts on French language websites.",
+        "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/liste_fr.txt",
+        "homeUrl": "https://easylist.to/",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=91",
+        "email": "listefr.adblock@gmail.com",
+        "changelogUrl": "https://hg.adblockplus.org/listefr/",
+        "forksCombos": [
+            "Liste FR + EasyList"
+        ]
+    },
+    {
+        "list": "EasyList Hebrew",
+        "lang": [
+            "he"
+        ],
+        "descr": "EasyList Hebrew is an [EasyList] affiliated filter list written by BsT that specifically removes adverts on Hebrew language websites.",
+        "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+        "viewUrl": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt",
+        "homeUrl": "https://github.com/easylist/EasyListHebrew",
+        "issuesUrl": "https://github.com/easylist/EasyListHebrew/issues",
+        "email": "easylisthebrew@gmail.com",
+        "changelogUrl": "https://github.com/easylist/EasyListHebrew/commits/master",
+        "forksCombos": [
+            "EasyList Hebrew + EasyList"
+        ]
+    },
+    {
+        "list": "Fanboy's Indian",
+        "lang": [
+            "hi"
+        ],
+        "descr": "Blocks Indian regional advertisements and trackers.",
+        "viewUrl": "https://fanboy.co.nz/fanboy-indian.txt",
+        "homeUrl": "https://fanboy.co.nz/",
+        "email": "fanboyadblock@googlegroups.com",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW"
+    },
+    {
+        "list": "hufilter",
+        "lang": [
+            "hu"
+        ],
+        "descr": "Blocks Hungarian regional advertisements and trackers.",
+        "viewUrl": "https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt",
+        "homeUrl": "https://github.com/szpeter80/hufilter/wiki",
+        "issuesUrl": "https://github.com/szpeter80/hufilter/issues",
+        "email": "hufilter.adblock@gmail.com",
+        "changelogUrl": "https://github.com/szpeter80/hufilter/commits/master"
+    },
+    {
+        "list": "ABPindo",
+        "lang": [
+            "id"
+        ],
+        "descr": "ABPindo is an affiliated filter list written by hermawan that specifically removes adverts on Indonesian language websites.",
+        "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+        "viewUrl": "https://raw.githubusercontent.com/heradhis/indonesianadblockrules/master/subscriptions/abpindo.txt",
+        "homeUrl": "http://abpindo.blogspot.com/",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=94",
+        "issuesUrl": "https://github.com/ABPindo/indonesianadblockrules/issues",
+        "changelogUrl": "https://github.com/ABPindo/indonesianadblockrules/commits/master",
+        "forksCombos": [
+            "ABPindo + EasyList"
+        ]
+    },
+    {
+        "list": "Icelandic ABP List",
+        "lang": [
+            "is"
+        ],
+        "descr": "Adblock Plus list for Icelandic websites.",
+        "descrSourceUrl": "http://adblock.gardar.net/",
+        "viewUrl": "http://adblock.gardar.net/is.abp.txt",
+        "homeUrl": "http://adblock.gardar.net/",
+        "email": "adblock@gardar.net"
+    },
+    {
+        "list": "ABP X Files",
+        "lang": [
+            "it"
+        ],
+        "descr": "Blocks Italian regional advertisements and trackers.",
+        "viewUrl": "http://noads.it/filtri.txt",
+        "homeUrl": "http://noads.it/",
+        "forumUrl": "https://abpxfiles.uservoice.com/",
+        "donateUrl": "https://paypal.me/gioxx/5"
+    },
+    {
+        "list": "EasyList Italy",
+        "lang": [
+            "it"
+        ],
+        "descr": "EasyList Italy is a filter list written by the EasyList author Khrin that specifically removes adverts on Italian language websites.",
+        "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly.txt",
+        "homeUrl": "https://easylist.to/",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=96",
+        "email": "easylistitaly@gmail.com",
+        "forksCombos": [
+            "EasyList Italy + EasyList"
+        ]
+    },
+    {
+        "list": "280 Blocker",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Blocks Japanese regional mobile advertisements and trackers.",
+        "viewUrl": "https://70i.net/files/70i_net_adblock.txt",
+        "homeUrl": "https://70i.net/",
+        "changelogUrl": "https://70i.net/blog/"
+    },
+    {
+        "list": "ABP Japanese 3rd Party SNS Filters",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Blocks Japanese regional social network advertisements and trackers.",
+        "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_3rd_party_sns.txt",
+        "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
+        "issuesUrl": "https://github.com/k2jp/abp-japanese-filters/issues",
+        "changelogUrl": "https://github.com/k2jp/abp-japanese-filters/commits/master"
+    },
+    {
+        "list": "ABP Japanese Element-hiding Filters",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Blocks irritating elements on Japanese regional webpages.",
+        "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_element_hiding.txt",
+        "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
+        "issuesUrl": "https://github.com/k2jp/abp-japanese-filters/issues",
+        "changelogUrl": "https://github.com/k2jp/abp-japanese-filters/commits/master"
+    },
+    {
+        "list": "ABP Japanese Filters",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Blocks Japanese regional advertisements and trackers.",
+        "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf.txt",
+        "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
+        "issuesUrl": "https://github.com/k2jp/abp-japanese-filters/issues",
+        "changelogUrl": "https://github.com/k2jp/abp-japanese-filters/commits/master"
+    },
+    {
+        "list": "ABP Japanese Paranoid Filters",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Blocks Japanese regional advertisements and trackers.",
+        "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_paranoid.txt",
+        "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
+        "issuesUrl": "https://github.com/k2jp/abp-japanese-filters/issues",
+        "changelogUrl": "https://github.com/k2jp/abp-japanese-filters/commits/master"
+    },
+    {
+        "list": "AdAway Blocking Hosts File for Japan",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Blocks Japanese regional advertisements and trackers.",
+        "viewUrl": "https://sites.google.com/site/logroid/files/hosts.txt",
+        "homeUrl": "https://logroid.blogspot.com/"
+    },
+    {
+        "list": "Bad JAV Sites",
+        "lang": [
+            "ja"
+        ],
+        "descr": "The sites listed there a fake/malicious sites that lure people with fake direct-download-links to JAV videos.",
+        "viewUrl": "https://pastebin.com/raw/kDqbYwWr",
+        "homeUrl": "https://www.akiba-online.com/threads/fake-jav-ddl-sites-list.1560416/",
+        "forumUrl": "https://www.akiba-online.com/threads/fake-jav-ddl-sites-list.1560416/"
+    },
+    {
+        "list": "Fanboy's Japanese",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Blocks Japanese regional advertisements and trackers.",
+        "viewUrl": "https://fanboy.co.nz/fanboy-japanese.txt",
+        "homeUrl": "https://fanboy.co.nz/",
+        "email": "fanboyadblock@googlegroups.com",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW"
+    },
+    {
+        "list": "Hosts2ch",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Japanese ad servers hosts file.",
+        "viewUrl": "https://www.cubby.com/pl/ja.txt/_447d3ae976114d51b01bc83b7a1a77eb",
+        "homeUrl": "https://sites.google.com/site/hosts2ch/",
+        "forumUrl": "http://potato.2ch.net/test/read.cgi/android/1450730522/"
+    },
+    {
+        "list": "Tofu Filter",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Blocks Japanese regional advertisements and trackers.",
+        "viewUrl": "http://tofukko.r.ribbon.to/Adblock_Plus_list.txt",
+        "homeUrl": "http://tofukko.r.ribbon.to/abp.html"
+    },
+    {
+        "list": "Fanboy's Korean",
+        "lang": [
+            "ko"
+        ],
+        "descr": "Blocks Korean regional advertisements and trackers.",
+        "viewUrl": "https://fanboy.co.nz/fanboy-korean.txt",
+        "homeUrl": "https://fanboy.co.nz/",
+        "email": "fanboyadblock@googlegroups.com",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW"
+    },
+    {
+        "list": "Korean Adblock List",
+        "lang": [
+            "ko"
+        ],
+        "descr": "A filter list for Adblock which covers filters for Korean websites.",
+        "descrSourceUrl": "https://github.com/gfmaster/adblock-korea-contrib",
+        "viewUrl": "https://raw.githubusercontent.com/gfmaster/adblock-korea-contrib/master/filter.txt",
+        "homeUrl": "https://github.com/gfmaster/adblock-korea-contrib",
+        "issuesUrl": "https://github.com/gfmaster/adblock-korea-contrib/issues",
+        "changelogUrl": "https://github.com/gfmaster/adblock-korea-contrib/commits/master",
+        "forksCombos": [
+            "List-KR"
+        ]
+    },
+    {
+        "list": "List-KR",
+        "lang": [
+            "ko"
+        ],
+        "descr": "Filter that enables removing of ads, trackers, and various scripts from websites with Korean content. Based on <a href=\"https://filterlists.com/stale/#Corset\">Corset</a>, <a href=\"https://filterlists.com/regional/#KoreanAdblockList\">Korean Adblock List</a>, <a href=\"https://filterlists.com/regional/#YousList\">YousList</a>.",
+        "descrSourceUrl": "https://github.com/SlowMemory/List-KR",
+        "viewUrl": "https://github.com/SlowMemory/List-KR/blob/master/filter.txt",
+        "homeUrl": "https://list-kr.github.io/",
+        "issuesUrl": "https://github.com/SlowMemory/List-KR/issues",
+        "changelogUrl": "https://github.com/SlowMemory/List-KR/commits/master"
+    },
+    {
+        "list": "List-KR Unbreak",
+        "lang": [
+            "ko"
+        ],
+        "descr": "Filter that fixes filtration errors in an alternative way due to limitations of adblockers other than Adguard or those using Webkit content blocker API.",
+        "descrSourceUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/unbreak.txt",
+        "viewUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/unbreak.txt",
+        "homeUrl": "https://list-kr.github.io/",
+        "issuesUrl": "https://github.com/SlowMemory/List-KR/issues",
+        "changelogUrl": "https://github.com/SlowMemory/List-KR/commits/master"
+    },
+    {
+        "list": "YousList",
+        "lang": [
+            "ko"
+        ],
+        "descr": "Blocks Korean regional advertisements and trackers.",
+        "viewUrl": "https://raw.githubusercontent.com/yous/YousList/master/youslist.txt",
+        "homeUrl": "https://github.com/yous/YousList",
+        "issuesUrl": "https://github.com/yous/YousList/issues",
+        "changelogUrl": "https://github.com/yous/YousList/commits/master",
+        "forksCombos": [
+            "List-KR"
+        ]
+    },
+    {
+        "list": "EasyList Lithuania",
+        "lang": [
+            "lt"
+        ],
+        "descr": "EasyList Lithuania is an affiliated filter list written by gymka that specifically removes adverts on Lithuanian language websites.",
+        "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+        "viewUrl": "http://margevicius.lt/easylistlithuania.txt",
+        "homeUrl": "http://margevicius.lt/easylist_lithuania/",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=101",
+        "email": "algimantas@margevicius.lt",
+        "forksCombos": [
+            "EasyList Lithuania + EasyList"
+        ]
+    },
+    {
+        "list": "Latvian List",
+        "lang": [
+            "lv"
+        ],
+        "descr": "Latvian List is an affiliated filter list written by anonymous74100 that specifically removes adverts on Latvian language websites.",
+        "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+        "viewUrl": "https://notabug.org/latvian-list/adblock-latvian/raw/master/lists/latvian-list.txt",
+        "homeUrl": "https://notabug.org/latvian-list/adblock-latvian",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=99",
+        "email": "latvian-list@googlegroups.com",
+        "forksCombos": [
+            "Latvian List + EasyList"
+        ]
+    },
+    {
+        "list": "EasyList Dutch",
+        "lang": [
+            "nl"
+        ],
+        "descr": "EasyList Dutch is an [EasyList] affiliated filter list written by the EasyList author Famlam that specifically removes adverts on Dutch language websites.",
+        "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch.txt",
+        "homeUrl": "https://easylist.to/",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=100",
+        "email": "fam.lam@live.nl",
+        "changelogUrl": "https://hg.adblockplus.org/easylistdutch/",
+        "forksCombos": [
+            "EasyList Dutch + EasyList"
+        ]
+    },
+    {
+        "list": "Adblock & uBlock Polish Cookies Filters",
+        "lang": [
+            "pl"
+        ],
+        "descr": "Filters Polish cookie messages in Adblock and uBlock.",
+        "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/cookies_filters/adblock_cookies.txt",
+        "homeUrl": "http://www.certyficate.it/",
+        "issuesUrl": "https://github.com/MajkiIT/polish-ads-filter/issues",
+        "email": "errors@certyficate.it",
+        "changelogUrl": "https://github.com/MajkiIT/polish-ads-filter/commits/master"
+    },
+    {
+        "list": "Adblock & uBlock Polish Filters",
+        "lang": [
+            "pl"
+        ],
+        "descr": "Presented here filter set was created for Polish internet users. Contains a list of elements of advertising, such as banners or flash animations, the most commonly used on Polish websites.",
+        "descrSourceUrl": "http://www.certyficate.it/polski-filtr-adblock/",
+        "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt",
+        "homeUrl": "http://www.certyficate.it/",
+        "issuesUrl": "https://github.com/MajkiIT/polish-ads-filter/issues",
+        "email": "errors@certyficate.it",
+        "changelogUrl": "https://github.com/MajkiIT/polish-ads-filter/commits/master"
+    },
+    {
+        "list": "Adblock Polish Social Rules",
+        "lang": [
+            "pl"
+        ],
+        "descr": "Blocks Polish regional social network advertisements and trackers.",
+        "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/adblock_social_filters/adblock_social_list.txt",
+        "homeUrl": "http://www.certyficate.it/",
+        "issuesUrl": "https://github.com/MajkiIT/polish-ads-filter/issues",
+        "email": "errors@certyficate.it",
+        "changelogUrl": "https://github.com/MajkiIT/polish-ads-filter/commits/master"
+    },
+    {
+        "list": "Fanboy's Polish",
+        "lang": [
+            "pl"
+        ],
+        "descr": "Blocks Polish regional advertisements and trackers.",
+        "viewUrl": "https://fanboy.co.nz/fanboy-polish.txt",
+        "homeUrl": "https://fanboy.co.nz/",
+        "email": "fanboyadblock@googlegroups.com",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW"
+    },
+    {
+        "list": "KAD - Scams",
+        "lang": [
+            "pl"
+        ],
+        "descr": "Polish filter Adblock and uBlock locking side-type scam (eg. Subscriptions SMS).",
+        "descrSourceUrl": "https://github.com/azet12/KAD",
+        "viewUrl": "https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt",
+        "homeUrl": "https://azet12.github.io/KAD/",
+        "issuesUrl": "https://github.com/azet12/KAD/issues",
+        "email": "kadrep@outlook.com",
+        "changelogUrl": "https://github.com/azet12/KAD/commits/master"
+    },
+    {
+        "list": "KAD Hosts File",
+        "lang": [
+            "pl"
+        ],
+        "descr": "Polish hosts file for blocking scams. (Experimental)",
+        "viewUrl": "https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt",
+        "homeUrl": "https://azet12.github.io/KAD/",
+        "issuesUrl": "https://github.com/azet12/KAD/issues",
+        "email": "kadrep@outlook.com",
+        "changelogUrl": "https://github.com/azet12/KAD/commits/master"
+    },
+    {
+        "list": "Popup Blocker",
+        "lang": [
+            "pl"
+        ],
+        "descr": "Polish filter the type of annoyances blocking windows to encourage registration or news, promotions and discounts. It blocks the widgets that misinformation and distract, trying to force push your product.",
+        "descrSourceUrl": "https://github.com/azet12/PopupBlocker",
+        "viewUrl": "https://raw.githubusercontent.com/azet12/PopupBlocker/master/PPB.txt",
+        "homeUrl": "https://azet12.github.io/KAD/",
+        "issuesUrl": "https://github.com/azet12/PopupBlocker/issues",
+        "email": "kadrep@outlook.com",
+        "changelogUrl": "https://github.com/azet12/PopupBlocker/commits/master"
+    },
+    {
+        "list": "uBlock Polish Filters - Supplement",
+        "lang": [
+            "pl"
+        ],
+        "descr": "uBlock supplement to Adblock & uBlock Polish Filters.",
+        "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt",
+        "homeUrl": "http://www.certyficate.it/",
+        "issuesUrl": "https://github.com/MajkiIT/polish-ads-filter/issues",
+        "email": "errors@certyficate.it",
+        "changelogUrl": "https://github.com/MajkiIT/polish-ads-filter/commits/master"
+    },
+    {
+        "list": "ROad-Block",
+        "lang": [
+            "ro"
+        ],
+        "descr": "Romanian ad block filtering list.",
+        "descrSourceUrl": "https://github.com/tcptomato/ROad-Block",
+        "viewUrl": "https://raw.githubusercontent.com/tcptomato/ROad-Block/master/road-block-filters.txt",
+        "homeUrl": "https://www.adblock.ro/",
+        "forumUrl": "https://muut.com/i/adblockro/comments",
+        "issuesUrl": "https://github.com/tcptomato/ROad-Block/issues",
+        "email": "contact@adblock.ro",
+        "changelogUrl": "https://github.com/tcptomato/ROad-Block/commits/master"
+    },
+    {
+        "list": "ROList",
+        "lang": [
+            "ro"
+        ],
+        "descr": "Romanian supplement for EasyList.",
+        "descrSourceUrl": "https://adblockplus.org/subscriptions",
+        "viewUrl": "https://www.zoso.ro/pages/rolist.txt",
+        "homeUrl": "https://www.zoso.ro/rolist/",
+        "email": "mail@zoso.ro",
+        "forksCombos": [
+            "ROList + EasyList"
+        ]
+    },
+    {
+        "list": "ROList2",
+        "lang": [
+            "ro"
+        ],
+        "descr": "This is a complementary list for RoList with annoyances that are not necessarly banners.",
+        "descrSourceUrl": "https://www.zoso.ro/pages/rolist2.txt",
+        "viewUrl": "https://www.zoso.ro/pages/rolist2.txt",
+        "homeUrl": "https://www.zoso.ro/rolist/",
+        "email": "mail@zoso.ro"
+    },
+    {
+        "list": "Adguard Russian Filter",
+        "lang": [
+            "ru"
+        ],
+        "descr": "Filter that enables removing of the ads from websites in Russian.",
+        "descrSourceUrl": "https://adguard.com/en/filters.html",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=1",
+        "homeUrl": "https://adguard.com/en/filters.html",
+        "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+        "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+        "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master"
+    },
+    {
+        "list": "Filters by hant0508",
+        "lang": [
+            "ru"
+        ],
+        "descr": "This filter list for uBlock Origin/Adblock Plus is designed to be used with such lists as EasyList, RU AdList etc., so it's substantially free of intersections with them. The list is made for blocking ad (mostly on Russian websites) missed by other filter lists maintainers. It is regularly updated and actively developed for now.",
+        "descrSourceUrl": "https://github.com/hant0508/uBlock-fillters",
+        "viewUrl": "https://raw.githubusercontent.com/hant0508/uBlock-fillters/master/filters.txt",
+        "homeUrl": "https://github.com/hant0508/uBlock-fillters",
+        "issuesUrl": "https://github.com/hant0508/uBlock-fillters/issues",
+        "email": "hant0508@gmail.com",
+        "changelogUrl": "https://github.com/hant0508/uBlock-fillters/commits/master"
+    },
+    {
+        "list": "Lead Generator",
+        "lang": [
+            "ru"
+        ],
+        "descr": "AdBlock list for blocking 'how i can help you?' widgets.",
+        "descrSourceUrl": "https://github.com/Rpsl/adblock-leadgenerator-list",
+        "viewUrl": "https://raw.githubusercontent.com/Rpsl/adblock-leadgenerator-list/master/list/list.txt",
+        "homeUrl": "https://github.com/Rpsl/adblock-leadgenerator-list",
+        "issuesUrl": "https://github.com/Rpsl/adblock-leadgenerator-list/issues",
+        "changelogUrl": "https://github.com/Rpsl/adblock-leadgenerator-list/commits/master"
+    },
+    {
+        "list": "RU AdList",
+        "lang": [
+            "ru"
+        ],
+        "descr": "Russian supplement for EasyList.",
+        "descrSourceUrl": "https://adblockplus.org/subscriptions",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/advblock.txt",
+        "homeUrl": "https://code.google.com/archive/p/ruadlist/",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
+        "changelogUrl": "https://hg.adblockplus.org/ruadlist/",
+        "forksCombos": [
+            "RU AdList + EasyList"
+        ]
+    },
+    {
+        "list": "RU AdList: Counters",
+        "lang": [
+            "ru"
+        ],
+        "descr": "Blocks most popular internet statistics counters on sites serving Russia.",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/cntblock.txt",
+        "homeUrl": "https://code.google.com/archive/p/ruadlist/",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=102"
+    },
+    {
+        "list": "SVN: Slovenian List",
+        "lang": [
+            "sl"
+        ],
+        "descr": "SVN: Slovenian List is regional list primarily for uBlock Origin or uBlock, which consists mostly of static cosmetic filters and a few tracking filters. Among others, there are 100 most popular Slovenian websites included in this list.",
+        "descrSourceUrl": "https://github.com/betterwebleon/slovenian-list",
+        "viewUrl": "https://raw.githubusercontent.com/betterwebleon/slovenian-list/master/filters.txt",
+        "homeUrl": "https://github.com/betterwebleon/slovenian-list",
+        "issuesUrl": "https://github.com/betterwebleon/slovenian-list/issues",
+        "email": "betterweb.leon@outlook.com",
+        "changelogUrl": "https://github.com/betterwebleon/slovenian-list/commits/master"
+    },
+    {
+        "list": "Fanboy's Swedish",
+        "lang": [
+            "sv"
+        ],
+        "descr": "Blocks Swedish regional advertisements and trackers.",
+        "viewUrl": "https://fanboy.co.nz/fanboy-swedish.txt",
+        "homeUrl": "https://fanboy.co.nz/",
+        "email": "fanboyadblock@googlegroups.com",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW"
+    },
+    {
+        "list": "Adguard Turkish Filter",
+        "lang": [
+            "tr"
+        ],
+        "descr": "Filter that enables removing of the ads from websites with Turkish content.",
+        "descrSourceUrl": "https://adguard.com/en/filters.html",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=13",
+        "homeUrl": "https://adguard.com/en/filters.html",
+        "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+        "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+        "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master"
+    },
+    {
+        "list": "Fanboy's Turkish",
+        "lang": [
+            "tr"
+        ],
+        "descr": "Blocks Turkish regional advertisements and trackers.",
+        "viewUrl": "https://fanboy.co.nz/fanboy-turkish.txt",
+        "homeUrl": "https://fanboy.co.nz/",
+        "email": "fanboyadblock@googlegroups.com",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW"
+    },
+    {
+        "list": "Turk-adlist",
+        "lang": [
+            "tr"
+        ],
+        "descr": "The ad server for a list of sites to block ads in Turkish.",
+        "descrSourceUrl": "https://github.com/bkrcrc/turk-adlist",
+        "viewUrl": "https://raw.githubusercontent.com/bkrcrc/turk-adlist/master/hosts",
+        "homeUrl": "https://github.com/bkrcrc/turk-adlist",
+        "issuesUrl": "https://github.com/bkrcrc/turk-adlist/issues",
+        "changelogUrl": "https://github.com/bkrcrc/turk-adlist/commits/master"
+    },
+    {
+        "list": "Fanboy's Vietnamese",
+        "lang": [
+            "vi"
+        ],
+        "descr": "Blocks Vietnamese regional advertisements and trackers.",
+        "viewUrl": "https://fanboy.co.nz/fanboy-vietnam.txt",
+        "homeUrl": "https://fanboy.co.nz/",
+        "email": "fanboyadblock@googlegroups.com",
+        "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW"
+    },
+    {
+        "list": "CJX's Annoyance List",
+        "lang": [
+            "zh"
+        ],
+        "descr": "Removes annoyances, self-promotion and privacy protection on Chinese websites.",
+        "descrSourceUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt",
+        "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt",
+        "homeUrl": "http://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
+        "forumUrl": "http://abpchina.org/forum/forum.php",
+        "issuesUrl": "https://github.com/cjx82630/cjxlist/issues",
+        "email": "cjxlist@gmail.com",
+        "changelogUrl": "https://github.com/cjx82630/cjxlist/commits/master"
+    },
+    {
+        "list": "EasyList China",
+        "lang": [
+            "zh"
+        ],
+        "descr": "Chinese supplement for the EasyList filters.",
+        "descrSourceUrl": "https://easylist-downloads.adblockplus.org/easylistchina.txt",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina.txt",
+        "homeUrl": "http://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
+        "forumUrl": "http://abpchina.org/forum/forum.php",
+        "email": "easylist.china@gmail.com",
+        "forksCombos": [
+            "EasyList China + EasyList"
+        ]
+    },
+    {
+        "list": "abuse.ch Feodo BadIP Blocklist",
+        "descr": "The Feodo Tracker Feodo BadIP Blocklist only contains IP addresses (IPv4) used as C&C communication channel by the Feodo Trojan version B. These IP addresses are usually servers rented by cybercriminals directly and used for the exclusive purpose of hosting a Feodo C&C server. Hence you should expect no legit traffic to those IP addresses. I highly recommend you to block/drop any traffic towards any Feodo C&C using the Feodo BadIP Blocklist. Please consider that this blocklist only contains IP addresses used by version B of the Feodo Trojan. C&C communication channels used by version A, version C and version D are not covered by this blocklist.",
+        "descrSourceUrl": "https://feodotracker.abuse.ch/blocklist/",
+        "viewUrl": "https://feodotracker.abuse.ch/blocklist/?download=badips",
+        "homeUrl": "https://feodotracker.abuse.ch/blocklist/",
+        "email": "contactme@abuse.ch",
+        "master": "abuse.ch Feodo IP Blocklist"
+    },
+    {
+        "list": "abuse.ch ZeuS Domain Blocklist \"BadDomains\"",
+        "descr": "The ZeuS domain blocklist (BadDomains) is the recommended blocklist if you want to block only ZeuS domain names. It excludes domain names that ZeuS Tracker believes to be hijacked (level 2).",
+        "descrSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
+        "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=baddomains",
+        "homeUrl": "https://zeustracker.abuse.ch/blocklist.php",
+        "email": "contactme@abuse.ch",
+        "donateUrl": "https://zeustracker.abuse.ch/faq.php",
+        "master": "abuse.ch ZeuS Domain Blocklist"
+    },
+    {
+        "list": "abuse.ch ZeuS IP Blocklist \"BadIPs\"",
+        "descr": "This blocklists only includes IPv4 addresses that are used by the ZeuS trojan. It is the recommened blocklist if you want to block only ZeuS IPs. It excludes IP addresses that ZeuS Tracker believes to be hijacked (level 2) or belong to a free web hosting provider (level 3).",
+        "descrSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
+        "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=badips",
+        "homeUrl": "https://zeustracker.abuse.ch/blocklist.php",
+        "email": "contactme@abuse.ch",
+        "donateUrl": "https://zeustracker.abuse.ch/faq.php",
+        "master": "abuse.ch ZeuS IP Blocklist"
+    },
+    {
+        "list": "add.2o7Net",
+        "descr": "2o7Net tracking sites based on <a href=\"https://filterlists.com/#BadHosts\">BadHosts</a> content.",
+        "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+        "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts",
+        "homeUrl": "https://github.com/FadeMind/hosts.extras",
+        "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
+        "changelogUrl": "https://github.com/FadeMind/hosts.extras/commits/master",
+        "master": "BadHosts"
+    },
+    {
+        "list": "add.Dead",
+        "descr": "Dead sites based on <a href=\"https://filterlists.com/#BadHosts\">BadHosts</a> content.",
+        "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+        "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Dead/hosts",
+        "homeUrl": "https://github.com/FadeMind/hosts.extras",
+        "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
+        "changelogUrl": "https://github.com/FadeMind/hosts.extras/commits/master",
+        "master": "BadHosts"
+    },
+    {
+        "list": "add.Risk",
+        "descr": "Risk content sites based on <a href=\"https://filterlists.com/#BadHosts\">BadHosts</a> content.",
+        "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+        "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
+        "homeUrl": "https://github.com/FadeMind/hosts.extras",
+        "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
+        "changelogUrl": "https://github.com/FadeMind/hosts.extras/commits/master",
+        "master": "BadHosts"
+    },
+    {
+        "list": "add.Spam",
+        "descr": "Spam sites based on <a href=\"https://filterlists.com/#BadHosts\">BadHosts</a> content.",
+        "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+        "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts",
+        "homeUrl": "https://github.com/FadeMind/hosts.extras",
+        "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
+        "changelogUrl": "https://github.com/FadeMind/hosts.extras/commits/master",
+        "master": "BadHosts"
+    },
+    {
+        "list": "Adguard Dutch Filter",
+        "lang": [
+            "nl"
+        ],
+        "descr": "Filter that enables removing of the ads from websites with Dutch content.",
+        "descrSourceUrl": "https://adguard.com/en/filters.html",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=8",
+        "homeUrl": "https://adguard.com/en/filters.html",
+        "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+        "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+        "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master",
+        "master": "EasyList Dutch"
+    },
+    {
+        "list": "Adguard English Filter",
+        "lang": [
+            "en"
+        ],
+        "descr": "Filter that enables removing of the ads from websites with English content.",
+        "descrSourceUrl": "https://adguard.com/en/filters.html",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=2",
+        "homeUrl": "https://adguard.com/en/filters.html",
+        "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+        "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+        "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master",
+        "master": "EasyList"
+    },
+    {
+        "list": "Adguard German Filter",
+        "lang": [
+            "de"
+        ],
+        "descr": "Filter that enables removing of the ads from websites with German content.",
+        "descrSourceUrl": "https://adguard.com/en/filters.html",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=6",
+        "homeUrl": "https://adguard.com/en/filters.html",
+        "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+        "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+        "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master",
+        "master": "EasyList Germany"
+    },
+    {
+        "list": "Adguard Japanese Filter",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Filter that enables removing of the ads from websites in Japanese.",
+        "descrSourceUrl": "https://adguard.com/en/filters.html",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=7",
+        "homeUrl": "https://adguard.com/en/filters.html",
+        "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+        "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+        "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master",
+        "master": "Fanboy's Japanese"
+    },
+    {
+        "list": "Adguard Spanish/Portuguese Filter",
+        "lang": [
+            "es",
+            "pt"
+        ],
+        "descr": "Filter that enables removing of the ads from websites in Spanish.",
+        "descrSourceUrl": "https://adguard.com/en/filters.html",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=9",
+        "homeUrl": "https://adguard.com/en/filters.html",
+        "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+        "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+        "changelogUrl": "https://github.com/AdguardTeam/AdguardFilters/commits/master",
+        "master": "Fanboy's Spanish/Portuguese"
+    },
+    {
+        "list": "DNS-BH Adblock Plus Malware Domains Full",
+        "descr": "This is a list of malware domains generated from malwaredomains.com data.",
+        "descrSourceUrl": "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt",
+        "homeUrl": "http://www.malwaredomains.com/",
+        "email": "malwaredomains@gmail.com",
+        "donateUrl": "http://www.malwaredomains.com/?page_id=675",
+        "master": "DNS-BH Malware Domains"
+    },
+    {
+        "list": "EasyList Lite China",
+        "lang": [
+            "zh"
+        ],
+        "descr": "This is a lite version of EasyList. Only for Simplified Chinese language websites.",
+        "descrSourceUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt",
+        "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt",
+        "homeUrl": "http://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
+        "forumUrl": "http://abpchina.org/forum/forum.php",
+        "issuesUrl": "https://github.com/cjx82630/cjxlist/issues",
+        "email": "cjxlist@gmail.com",
+        "changelogUrl": "https://github.com/cjx82630/cjxlist/commits/master",
+        "master": "EasyList"
+    },
+    {
+        "list": "EasyList Without Element Hiding Rules",
+        "descr": "This EasyList variant only contains blocking filters to remove adverts, with no element rules whatsoever; it, therefore, has more limited coverage than the full version of the list, although still commands a niche market.",
+        "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noelemhide.txt",
+        "homeUrl": "https://easylist.to/",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=23",
+        "issuesUrl": "https://github.com/easylist/easylist/issues",
+        "email": "easylist.subscription@gmail.com",
+        "changelogUrl": "https://github.com/easylist/easylist/commits/master",
+        "master": "EasyList"
+    },
+    {
+        "list": "EasyList Without Rules for Adult Sites",
+        "descr": "This EasyList variant does not contain filters for adult domains.",
+        "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noadult.txt",
+        "homeUrl": "https://easylist.to/",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=23",
+        "issuesUrl": "https://github.com/easylist/easylist/issues",
+        "email": "easylist.subscription@gmail.com",
+        "changelogUrl": "https://github.com/easylist/easylist/commits/master",
+        "master": "EasyList"
+    },
+    {
+        "list": "EasyPrivacy Without International Filters",
+        "descr": "This EasyPrivacy variant does not contain rules for international domains.",
+        "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy_nointernational.txt",
+        "homeUrl": "https://easylist.to/",
+        "forumUrl": "https://forums.lanik.us/",
+        "issuesUrl": "https://github.com/easylist/easylist/issues",
+        "email": "easylist.subscription@gmail.com",
+        "changelogUrl": "https://github.com/easylist/easylist/commits/master",
+        "master": "EasyPrivacy"
+    },
+    {
+        "list": "Facebook News Feed Annoyances Blocker",
+        "descr": "Block only news feed annoyances.",
+        "descrSourceUrl": "https://facebook.adblockplus.me/",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt",
+        "homeUrl": "https://facebook.adblockplus.me/",
+        "email": "subscriptionlist@adblockplus.org",
+        "changelogUrl": "https://hg.adblockplus.org/facebookfilters/",
+        "donateUrl": "https://adblockplus.org/en/donate",
+        "master": "Facebook Annoyances Blocker"
+    },
+    {
+        "list": "Facebook Sidebar Blocker",
+        "descr": "Block only sidebar annoyances.",
+        "descrSourceUrl": "https://facebook.adblockplus.me/",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt",
+        "homeUrl": "https://facebook.adblockplus.me/",
+        "email": "subscriptionlist@adblockplus.org",
+        "changelogUrl": "https://hg.adblockplus.org/facebookfilters/",
+        "donateUrl": "https://adblockplus.org/en/donate",
+        "master": "Facebook Annoyances Blocker"
+    },
+    {
+        "list": "RU AdList: BitBlock",
+        "lang": [
+            "ru"
+        ],
+        "descr": "Russian-only fork of Fanboy's Annoyance List.",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/bitblock.txt",
+        "homeUrl": "https://code.google.com/archive/p/ruadlist/",
+        "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
+        "master": "Fanboy's Annoyance List"
+    },
+    {
+        "list": "YouTube: Other Annoyances",
+        "descr": "Block only other annoyances.",
+        "descrSourceUrl": "https://youtube.adblockplus.me/",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt",
+        "homeUrl": "https://youtube.adblockplus.me/",
+        "email": "subscriptionlist@adblockplus.org",
+        "changelogUrl": "https://hg.adblockplus.org/youtubefilters/",
+        "donateUrl": "https://adblockplus.org/en/donate",
+        "master": "YouTube: Pure Video Experience"
+    },
+    {
+        "list": "YouTube: Remove Comments",
+        "descr": "Block only comments.",
+        "descrSourceUrl": "https://youtube.adblockplus.me/",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt",
+        "homeUrl": "https://youtube.adblockplus.me/",
+        "email": "subscriptionlist@adblockplus.org",
+        "changelogUrl": "https://hg.adblockplus.org/youtubefilters/",
+        "donateUrl": "https://adblockplus.org/en/donate",
+        "master": "YouTube: Pure Video Experience"
+    },
+    {
+        "list": "YouTube: Remove Youtube Suggestions",
+        "descr": "Block only suggestions.",
+        "descrSourceUrl": "https://youtube.adblockplus.me/",
+        "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt",
+        "homeUrl": "https://youtube.adblockplus.me/",
+        "email": "subscriptionlist@adblockplus.org",
+        "changelogUrl": "https://hg.adblockplus.org/youtubefilters/",
+        "donateUrl": "https://adblockplus.org/en/donate",
+        "master": "YouTube: Pure Video Experience"
+    },
+    {
+        "list": "Adguard DNS Filter",
+        "viewUrl": "https://adguard.com/en/filter-rules.html?id=15",
+        "master": [
+            "Adguard English Filter",
+            "Adguard Social Media Filter",
+            "Adguard Spyware Filter",
+            "Adguard Mobile Ads Filter",
+            "EasyList",
+            "EasyPrivacy"
+        ]
+    },
+    {
+        "list": "Fanboy's Complete List",
+        "viewUrl": "https://fanboy.co.nz/r/fanboy-complete.txt",
+        "master": [
+            "EasyList",
+            "EasyPrivacy",
+            "Fanboy's Enhanced Tracking List"
+        ]
+    },
+    {
+        "list": "Fanboy's Ultimate List",
+        "viewUrl": "https://fanboy.co.nz/r/fanboy-ultimate.txt",
+        "master": [
+            "EasyList",
+            "EasyPrivacy",
+            "Fanboy's Enhanced Tracking List",
+            "Fanboy's Annoyance List"
+        ]
+    },
+    {
+        "list": "hpHosts",
+        "viewUrl": "https://www.hosts-file.net/download/hosts.txt",
+        "master": [
+            "hpHosts ATS",
+            "hpHosts EMD",
+            "hpHosts EXP",
+            "hpHosts FSA",
+            "hpHosts GRM",
+            "hpHosts HFS",
+            "hpHosts HJK",
+            "hpHosts MMT",
+            "hpHosts PHA",
+            "hpHosts PSH",
+            "hpHosts WRZ"
+        ]
+    },
+    {
+        "list": "Jansal's Hosts",
+        "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hosts",
+        "master": [
+            "Malware Domain List",
+            "Peter Lowe's List",
+            "Spybot",
+            "Spyware Blaster"
+        ]
+    },
+    {
+        "list": "Jansal's Hosts Light",
+        "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hostslt",
+        "master": [
+            "Malware Domain List",
+            "Spybot"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker Domain Blocklist",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt",
+        "master": [
+            "Ransomware Tracker CryptoWall Ransomware Payment Sites Domain Blocklist",
+            "Ransomware Tracker Locky Ransomware C2 Domain Blocklist",
+            "Ransomware Tracker Locky Ransomware Payment Sites Domain Blocklist",
+            "Ransomware Tracker TeslaCrypt Ransomware Payment Sites Domain Blocklist",
+            "Ransomware Tracker TorrentLocker Ransomware C2 Domain Blocklist",
+            "Ransomware Tracker TorrentLocker Ransomware Payment Sites Domain Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker IP Blocklist",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_IPBL.txt",
+        "master": [
+            "Ransomware Tracker Locky Ransomware C2 IP Blocklist",
+            "Ransomware Tracker TeslaCrypt Ransomware Payment Sites IP Blocklist",
+            "Ransomware Tracker TorrentLocker Ransomware C2 IP Blocklist",
+            "Ransomware Tracker TorrentLocker Ransomware Payment Sites IP Blocklist"
+        ]
+    },
+    {
+        "list": "Ransomware Tracker URL Blocklist",
+        "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_URLBL.txt",
+        "master": [
+            "Ransomware Tracker CryptoWall Ransomware C2 URL Blocklist",
+            "Ransomware Tracker Locky Ransomware Distribution Site URL Blocklist",
+            "Ransomware Tracker TeslaCrypt Ransomware C2 URL Blocklist",
+            "Ransomware Tracker TeslaCrypt Ransomware Distribution Site URL Blocklist"
+        ]
+    },
+    {
+        "list": "Unified Hosts",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "list": "Unified Hosts + Gambling",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "list": "Unified Hosts + Gambling + Porn",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "list": "Unified Hosts + Gambling + Porn + Social",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "list": "Unified Hosts + Gambling + Social",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "list": "Unified Hosts + Porn",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "list": "Unified Hosts + Porn + Social",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-social/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "list": "Unified Hosts + Social",
+        "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts",
+        "master": [
+            "AdAway",
+            "Dan Pollock's Hosts",
+            "Malware Domain List",
+            "MVPS HOSTS",
+            "Peter Lowe's List",
+            "Steven Black's Hosts"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/abpindo+easylist.txt",
+        "master": [
+            "ABPindo",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/bulgarian_list+easylist.txt",
+        "master": [
+            "Bulgarian List",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt",
+        "master": [
+            "EasyList China",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistczechslovak+easylist.txt",
+        "master": [
+            "EasyList Czech and Slovak",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch+easylist.txt",
+        "master": [
+            "EasyList Dutch",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany+easylist.txt",
+        "master": [
+            "EasyList Germany",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/israellist+easylist.txt",
+        "master": [
+            "EasyList Hebrew",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly+easylist.txt",
+        "master": [
+            "EasyList Italy",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easylistlithuania+easylist.txt",
+        "master": [
+            "EasyList Lithuania",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy+easylist.txt",
+        "master": [
+            "EasyPrivacy",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/latvianlist+easylist.txt",
+        "master": [
+            "Latvian List",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/liste_ar+liste_fr+easylist.txt",
+        "master": [
+            "Liste AR",
+            "Liste FR",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/liste_fr+easylist.txt",
+        "master": [
+            "Liste FR",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/rolist+easylist.txt",
+        "master": [
+            "ROList",
+            "EasyList"
+        ]
+    },
+    {
+        "viewUrl": "https://easylist-downloads.adblockplus.org/ruadlist+easylist.txt",
+        "master": [
+            "RU AdList",
+            "EasyList"
+        ]
+    },
+    {
+        "list": "Adblock Korea",
+        "lang": [
+            "ko"
+        ],
+        "descr": "Blocks Korean regional advertisements and trackers.",
+        "viewUrl": "https://web.archive.org/web/20130615155938/http://adblock-korea.googlecode.com/git/adblock-korea.txt",
+        "homeUrl": "https://code.google.com/archive/p/adblock-korea/",
+        "forksCombos": [
+            "Korean Adblock List"
+        ]
+    },
+    {
+        "list": "Adblock Polska",
+        "lang": [
+            "pl"
+        ],
+        "descr": "Adblock PL is official Poland filter list for AdBlock and Adblock Plus.",
+        "descrSourceUrl": "https://github.com/adblockpolska/Adblock_PL_List",
+        "viewUrl": "https://raw.githubusercontent.com/adblockpolska/Adblock_PL_List/master/adblock_polska.txt",
+        "homeUrl": "https://www.facebook.com/adblockpl",
+        "issuesUrl": "https://github.com/adblockpolska/Adblock_PL_List/issues",
+        "email": "adblockpolska@gmail.com",
+        "changelogUrl": "https://github.com/adblockpolska/Adblock_PL_List/commits/master"
+    },
+    {
+        "list": "AntiPubWeb",
+        "lang": [
+            "fr"
+        ],
+        "descr": "Complementary subscription to Liste FR + EasyList.",
+        "descrSourceUrl": "https://web.archive.org/web/20160221135532/http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
+        "viewUrl": "https://web.archive.org/web/20160221135532/http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
+        "homeUrl": "https://www.antipubweb.org/"
+    },
+    {
+        "list": "Ayucat Powerful List",
+        "lang": [
+            "ja"
+        ],
+        "descr": "A list for Adblock Plus, which is one of the most famous ad blocking softwares.",
+        "descrSourceUrl": "https://osdn.net/projects/ayucat-list/",
+        "viewUrl": "http://git.sourceforge.jp/view?p=ayucat-list/ayucat-list.git;a=blob_plain;f=ayucat-list.txt;hb=b254c74c132832a3ade7b9d42c2ef8d3dd59fdb9",
+        "homeUrl": "https://osdn.net/projects/ayucat-list/"
+    },
+    {
+        "list": "BLOGRAM Analysis Block Filter List for Japan",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Prevention behavior tracking by the site administrator.",
+        "descrSourceUrl": "http://blogram.net/2010/04/23/adblock/",
+        "viewUrl": "http://blogram.net/wp-content/uploads/easylist3.txt",
+        "homeUrl": "http://blogram.net/2010/04/23/adblock/"
+    },
+    {
+        "list": "BLOGRAM Basic Filter List for Japan",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Block the DL itself of advertising.",
+        "descrSourceUrl": "http://blogram.net/2010/04/23/adblock/",
+        "viewUrl": "http://blogram.net/wp-content/uploads/easylist2.txt",
+        "homeUrl": "http://blogram.net/2010/04/23/adblock/"
+    },
+    {
+        "list": "BLOGRAM Blog Parts Filter List for Japan",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Low spec for equipment extremists blocked.",
+        "descrSourceUrl": "http://blogram.net/2010/04/23/adblock/",
+        "viewUrl": "http://blogram.net/wp-content/uploads/easylist4.txt",
+        "homeUrl": "http://blogram.net/2010/04/23/adblock/"
+    },
+    {
+        "list": "BLOGRAM Element Hiding Filter List for Japan",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Hide text ads by CSS.",
+        "descrSourceUrl": "http://blogram.net/2010/04/23/adblock/",
+        "viewUrl": "http://blogram.net/wp-content/uploads/easylist1.txt",
+        "homeUrl": "http://blogram.net/2010/04/23/adblock/"
+    },
+    {
+        "list": "Corset",
+        "lang": [
+            "ko"
+        ],
+        "descr": "Corset is a subscription filter to block intruding ads on sites using Korean.",
+        "descrSourceUrl": "https://code.google.com/archive/p/abp-corset/",
+        "viewUrl": "https://web.archive.org/web/20110212174029/http://abp-corset.googlecode.com/hg/corset.txt",
+        "homeUrl": "http://corset.tistory.com/",
+        "email": "corset@tistory.com",
+        "forksCombos": [
+            "List-KR"
+        ]
+    },
+    {
+        "list": "Czech Filters for AdBlock",
+        "lang": [
+            "cs"
+        ],
+        "descr": "Czech filters for Adblock Plus.",
+        "descrSourceUrl": "http://adblock.dajbych.net/adblock.txt",
+        "viewUrl": "http://adblock.dajbych.net/adblock.txt",
+        "homeUrl": "http://adblock.dajbych.net/"
+    },
+    {
+        "list": "Facebook Privacy List",
+        "descr": "Block Facebook objects on non-Facebook websites",
+        "descrSourceUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt",
+        "viewUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt",
+        "homeUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.html",
+        "email": "fbprivacylist@squirrelconspiracy.net"
+    },
+    {
+        "list": "Fanboy's IsraelList",
+        "lang": [
+            "he"
+        ],
+        "descr": "Blocks Hebrew regional advertisements and trackers.",
+        "viewUrl": "https://fanboy.co.nz/israelilist/IsraelList.txt",
+        "homeUrl": "https://fanboy.co.nz/",
+        "email": "fanboyadblock@googlegroups.com",
+        "forksCombos": [
+            "EasyList Hebrew"
+        ]
+    },
+    {
+        "list": "Filtros Nauscopicos",
+        "lang": [
+            "en",
+            "es"
+        ],
+        "descr": "Blocks English and Spanish regional advertisements and trackers.",
+        "viewUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/filtros.txt",
+        "homeUrl": "https://nauscopio.wordpress.com/2010/07/05/filtrado-bloqueo-y-ocultacion-de-la-publicidad-en-google-chrome/",
+        "issuesUrl": "https://github.com/mozillahispano/nauscopio-filtros/issues",
+        "changelogUrl": "https://github.com/mozillahispano/nauscopio-filtros/commits/master"
+    },
+    {
+        "list": "Filtros Nauscopicos Hosts",
+        "lang": [
+            "en",
+            "es"
+        ],
+        "descr": "Use this file to prevent your computer from connecting to selected internet hosts. This is an easy and effective way to protect you from many types of spyware, reduces bandwidth use, blocks certain pop-up  traps, prevents user tracking by way of \"web bugs\" embedded in spam, provides partial protection to IE from certain web-based exploits and blocks most advertising you would otherwise be subjected to on the internet.",
+        "descrSourceUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/hosts",
+        "viewUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/hosts",
+        "homeUrl": "https://nauscopio.wordpress.com/2011/09/05/archivo-hosts-nauscopico-para-combatir-publicidad-paginas-peligrosas-contadores-de-visitas-spam-en-combinacion-con-los-filtros-nauscopicos/",
+        "issuesUrl": "https://github.com/mozillahispano/nauscopio-filtros/issues",
+        "changelogUrl": "https://github.com/mozillahispano/nauscopio-filtros/commits/master"
+    },
+    {
+        "list": "G&J AdBlock",
+        "descr": "Block ads with AdBlock filter.",
+        "descrSourceUrl": "https://web.archive.org/web/20160221135711/http://adblock.gjtech.net/?format=unix-hosts",
+        "viewUrl": "https://web.archive.org/web/20160221135808/http://adblock.gjtech.net/?format=adblock-plus",
+        "homeUrl": "https://www.gjtech.net/"
+    },
+    {
+        "list": "G&J Hosts",
+        "descr": "Block ads with /etc/hosts.",
+        "descrSourceUrl": "https://web.archive.org/web/20160221135808/http://adblock.gjtech.net/?format=adblock-plus",
+        "viewUrl": "https://web.archive.org/web/20160221135711/http://adblock.gjtech.net/?format=unix-hosts",
+        "homeUrl": "https://www.gjtech.net/"
+    },
+    {
+        "list": "gmbk0's AdAway Hosts for Android",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Blocks Japanese regional mobile advertisements and trackers.",
+        "viewUrl": "https://web.archive.org/web/20140719043102/https://gmbksfilters.googlecode.com/hg/hosts_adonly.txt",
+        "homeUrl": "http://gmbk0.tumblr.com/"
+    },
+    {
+        "list": "GNU Blacklist",
+        "descr": "Block all well known privacy trackers. (<a href=\"https://filterlists.com/#EasyList\">EasyList</a> + <a href=\"https://filterlists.com/#EasyPrivacy\">EasyPrivacy</a> + <a href=\"https://filterlists.com/#FanboysSocialBlockingList\">Fanboy's Social Blocking List</a>)",
+        "descrSourceUrl": "https://web.archive.org/web/20160425221243/http://gnuzilla.gnu.org/filters/blacklist.txt",
+        "viewUrl": "https://web.archive.org/web/20160425221243/http://gnuzilla.gnu.org/filters/blacklist.txt",
+        "email": "bug-gnuzilla@gnu.org"
+    },
+    {
+        "list": "Japanese Site Adblock Filter",
+        "lang": [
+            "ja"
+        ],
+        "descr": "This filter will mainly block affiliate advertising, behavioral advertising, tend embedded script will overload, blog parts.",
+        "descrSourceUrl": "http://qme.mydns.jp/adblock.html",
+        "viewUrl": "http://qme.mydns.jp/data/Adblock.txt",
+        "homeUrl": "http://qme.mydns.jp/adblock.html"
+    },
+    {
+        "list": "Japanese Site Adblock Filter ver 2",
+        "lang": [
+            "ja"
+        ],
+        "descr": "This filter will mainly block affiliate advertising, behavioral advertising, tend embedded script will overload, blog parts.",
+        "descrSourceUrl": "http://qme.mydns.jp/adblock.html",
+        "viewUrl": "http://qme.mydns.jp/data/AdblockV2.txt",
+        "homeUrl": "http://qme.mydns.jp/adblock.html"
+    },
+    {
+        "list": "Malware URLs",
+        "descr": "Malware URLs is a daily updated and free for research purposes feed offered by Joxean Koret to be used by security researchers, anti-malware researchers, etc... It can also be used by individuals to protect themselves, as the format of the feed (plain text) can be used with tools like Adblock Plus or integrated easily with other tools.",
+        "descrSourceUrl": "http://malwareurls.joxeankoret.com/",
+        "viewUrl": "http://malwareurls.joxeankoret.com/normal.txt",
+        "homeUrl": "http://malwareurls.joxeankoret.com/",
+        "email": "info@joxeankoret.com"
+    },
+    {
+        "list": "Malware URLs Domains",
+        "descr": "Malware URLs is a daily updated and free for research purposes feed offered by Joxean Koret to be used by security researchers, anti-malware researchers, etc... It can also be used by individuals to protect themselves, as the format of the feed (plain text) can be used with tools like Adblock Plus or integrated easily with other tools.",
+        "descrSourceUrl": "http://malwareurls.joxeankoret.com/",
+        "viewUrl": "http://malwareurls.joxeankoret.com/domains.txt",
+        "homeUrl": "http://malwareurls.joxeankoret.com/",
+        "email": "info@joxeankoret.com"
+    },
+    {
+        "list": "Malware URLs Gray Area",
+        "descr": "Malware URLs is a daily updated and free for research purposes feed offered by Joxean Koret to be used by security researchers, anti-malware researchers, etc... It can also be used by individuals to protect themselves, as the format of the feed (plain text) can be used with tools like Adblock Plus or integrated easily with other tools.",
+        "descrSourceUrl": "http://malwareurls.joxeankoret.com/",
+        "viewUrl": "http://malwareurls.joxeankoret.com/grayarea.txt",
+        "homeUrl": "http://malwareurls.joxeankoret.com/",
+        "email": "info@joxeankoret.com"
+    },
+    {
+        "list": "Mute",
+        "descr": "Mute is an AdBlock filter for hiding user comments. Surf without the noise.",
+        "descrSourceUrl": "http://mute.bradconte.com/",
+        "viewUrl": "http://mute.bradconte.com/mute.txt",
+        "homeUrl": "http://mute.bradconte.com/",
+        "issuesUrl": "https://github.com/B-Con/mute/issues",
+        "changelogUrl": "https://github.com/B-Con/mute/commits/master"
+    },
+    {
+        "list": "PLgeneral",
+        "lang": [
+            "pl"
+        ],
+        "descr": "Contains a list of elements of advertising, such as banners or flash animations, the most commonly used on Polish websites.",
+        "descrSourceUrl": "http://niecko.pl/adblock/",
+        "viewUrl": "http://www.niecko.pl/adblock/adblock.txt",
+        "homeUrl": "http://niecko.pl/adblock/",
+        "changelogUrl": "http://niecko.pl/adblock/zmiany.txt",
+        "forksCombos": [
+            "Adblock & uBlock Polish Filters"
+        ]
+    },
+    {
+        "list": "SA-Blacklist",
+        "descr": "Blocks spammers.",
+        "viewUrl": "http://www.sa-blacklist.stearns.org/sa-blacklist/sa-blacklist.current.domains",
+        "homeUrl": "http://www.sa-blacklist.stearns.org/sa-blacklist/",
+        "email": "wstearns@pobox.com"
+    },
+    {
+        "list": "Schuzak's Universal Filter",
+        "lang": [
+            "ja"
+        ],
+        "descr": "Adblock Plus for Japan domestic and Japanese correspondence Universal Filter.",
+        "descrSourceUrl": "http://www.schuzak.jp/other/abp.html",
+        "viewUrl": "http://www.schuzak.jp/other/abp.conf",
+        "homeUrl": "http://www.schuzak.jp/other/abp.html"
+    },
+    {
+        "list": "Wiltteri",
+        "lang": [
+            "fi"
+        ],
+        "descr": "Finnish supplement list for EasyList.",
+        "descrSourceUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt",
+        "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt",
+        "homeUrl": "https://github.com/wiltteri/subscriptions",
+        "changelogUrl": "https://github.com/wiltteri/subscriptions/commits/master"
+    },
+    {
+        "list": "Wiltteri Reborn",
+        "lang": [
+            "fi"
+        ],
+        "descr": "Finnish supplement list for EasyList.",
+        "descrSourceUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt",
+        "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt",
+        "homeUrl": "https://github.com/wiltteri/subscriptions",
+        "changelogUrl": "https://github.com/wiltteri/subscriptions/commits/master"
+    }
+]
