@@ -14,6 +14,8 @@ var typeGitHubUrl = {
     "FilterLists Stale": "https://raw.githubusercontent.com/collinbarrett/FilterLists/master/json-data/stale.json"
 };
 
+var urlResponseWhitelist = ["https://www.jabcreations.com/web/adblock-subscription"]
+
 var ss = SpreadsheetApp.getActiveSpreadsheet(),
     options = [{
         name: "Refresh Data",
@@ -443,11 +445,15 @@ function refreshHttpResponses(triggerNum) {
                     var urlStatus = UrlFetchApp.fetch(url).getResponseCode();
                     rangeStatus.setValue(urlStatus);
                     if (urlStatus != 200) {
-                        MailApp.sendEmail(noticeEmailAddress, urlStatus + ": " + url, urlStatus + ": " + url);
+                        if (!(urlResponseWhitelist.indexOf(url) > -1)) {
+                            MailApp.sendEmail(noticeEmailAddress, urlStatus + ": " + url, urlStatus + ": " + url);
+                        }
                     }
                 } catch (err) {
                     rangeStatus.setValue(err.message);
-                    MailApp.sendEmail(noticeEmailAddress, "Error: " + url, "Error: " + url + "<br>" + err.message);
+                    if (!(urlResponseWhitelist.indexOf(url) > -1)) {
+                        MailApp.sendEmail(noticeEmailAddress, "Error: " + url, "Error: " + url + "<br>" + err.message);
+                    }
                 }
             }
         }
