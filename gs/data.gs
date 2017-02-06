@@ -89,7 +89,8 @@ function refreshPublic() {
                 columnDataTopCell.setValue("=ARRAYFORMULA(IF(Parsed!A2:A=\"\",\"\",\"<p>\"&Parsed!A2:A&Parsed!B2:B&Parsed!C2:C&Parsed!D2:D&Parsed!E2:E&Parsed!F2:F&Parsed!G2:G&\"</p>\"))");
                 break;
             case "related":
-                columnDataTopCell.setValue("=ARRAYFORMULA(INDIRECT(\"Parsed!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"related\",Parsed!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"related\",Parsed!A1:1,0),4),\"1\",\"\")))");
+                columnDataTopCell.setValue("=createHtmlRelatedLinkArray(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"related\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"related\",Data!A1:1,0),4),\"1\",\"\")))");
+                //columnDataTopCell.setValue("=ARRAYFORMULA(INDIRECT(\"Parsed!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"related\",Parsed!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"related\",Parsed!A1:1,0),4),\"1\",\"\")))");
                 break;
             default:
         }

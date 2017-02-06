@@ -103,17 +103,23 @@ function createHtmlDonateLinkArray(url, listName) {
     }
 }
 
-function createHtmlRelatedLinkArray(forkComboListName, filterListsPageSlug) {
-    if (forkComboListName instanceof Array) {
-        for (i in forkComboListName) {
-            forkComboListName[i] = createHtmlRelatedLinkArray(forkComboListName[i], filterListsPageSlug[i]);
+function createHtmlRelatedLinkArray(related) {
+    if (related instanceof Array) {
+        for (i in related) {
+            related[i] = createHtmlRelatedLinkArray(related[i]);
         }
-        return forkComboListName;
+        return related;
     } else {
-        if (forkComboListName == null) {
-            return null;
+        if (!related) {
+            return "";
         } else {
-            return "<a href=\"https://filterlists.com" + filterListsPageSlug + "#" + trimUrlSlugArray(forkComboListName) + "\"";
+            var relatedArray = related.split(',');
+            var relatedHtml = "<ul>";
+            for (var i = 0, relatedArrayLength = relatedArray.length; i < relatedArrayLength; i++) {
+                relatedHtml += "<li><a href=\"#" + trimUrlSlugArray(relatedArray[i]) + "\">" + relatedArray[i] + "</a></li>";
+            }
+            relatedHtml += "</ul>";
+            return relatedHtml;
         }
     }
 }
