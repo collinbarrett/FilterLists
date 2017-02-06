@@ -3,9 +3,24 @@ function refreshData() {
     data = fill2dJsonArrayWithNulls(data);
     sData.clearContents();
     sData.getRange(1, 1, data.length, data[0].length).setValues(data);
+    concatenateNamelessComboLists();
     sData.getRange(2, 1, data.length, data[0].length).sort(1);
     refreshParsed();
     refreshPublic();
+}
+
+function concatenateNamelessComboLists() {
+    var numLists = getNumLists(sData);
+    var listColumnIndex = getColumnIndexNumber(sData, "list");
+    var listData = sData.getRange(2, listColumnIndex, numLists, 1).getValues();
+    var relatedColumnIndex = getColumnIndexNumber(sData, "related");
+    var relatedData = sData.getRange(2, relatedColumnIndex, numLists, 1).getValues();
+    for (var i = 0; i < numLists; i++) {
+        if (!listData[i][0]) {
+            listData[i][0] = relatedData[i][0].replace(/,/g, " + ");
+        }
+    }
+    sData.getRange(2, listColumnIndex, numLists, 1).setValues(listData);
 }
 
 function refreshParsed() {

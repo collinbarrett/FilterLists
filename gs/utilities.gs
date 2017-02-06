@@ -20,6 +20,17 @@ function getColumnIndex(sheet, columnHeader) {
     return null;
 }
 
+function getColumnIndexNumber(sheet, columnHeader) {
+    var headerRange = sheet.getRange("A1:1");
+    var headerData = headerRange.getValues();
+    for (i = 0; i < headerData[0].length; i++) {
+        if (headerData[0][i] == columnHeader) {
+            return i + 1;
+        }
+    }
+    return null;
+}
+
 function getColumnIndicesWithHeaderSubstring(sheet, columnHeaderSubstring) {
     var headerRange = sheet.getRange("A1:1");
     var headerData = headerRange.getValues();
