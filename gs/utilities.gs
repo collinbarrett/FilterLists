@@ -86,3 +86,26 @@ function getNumLists(sheetData) {
         }
     }
 }
+
+function copyRange(sheetSource, rangeSource, sheetTarget, rangeTarget) {
+    var sourceRangeListNames = sheetSource.getRange(rangeSource);
+    var targetRangeListNames = sheetTarget.getRange(rangeTarget);
+    targetRangeListNames.clearContent();
+    sourceRangeListNames.copyTo(targetRangeListNames);
+}
+// https://stackoverflow.com/questions/21145080/moving-a-column-in-google-spreadsheet/21152273#21152273
+function moveColumn(sheet, iniCol, finCol) {
+    var dataRange = sheet.getDataRange();
+    var data = arrayMoveColumn(dataRange.getValues(), iniCol - 1, finCol - 1);
+    dataRange.setValues(data);
+}
+
+function arrayMoveColumn(data, from, to) {
+    if (!(data instanceof Array && data[0] instanceof Array)) throw new TypeError('need 2d array');
+    if (from >= data[0].length || to >= data[0].length) throw new Error('index out of bounds');
+    for (var row = 0; row < data.length; row++) {
+        var temp = data[row].splice(from, 1);
+        data[row].splice(to, 0, temp[0]);
+    }
+    return data;
+}

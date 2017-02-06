@@ -36,7 +36,7 @@ function refreshHttpResponses(triggerNum) {
     var sheetData = ss.getSheetByName(sheetNameData);
     var sheetNameStatuses = typeSheetPrefix[ss.getName()] + "UrlStatuses";
     var sheetStatuses = ss.getSheetByName(sheetNameStatuses);
-    copyListNamesToStatuses(sheetData, sheetStatuses);
+    copyRange(sData, "A2:A", sHttpResponse, "A2:A");
     var listDataMax = getNumLists(sheetData)
     var urlHeaders = findUrlColumnHeaders(sheetData);
     if (urlHeaders.length >= triggerNum) {
