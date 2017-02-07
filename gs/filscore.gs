@@ -3,46 +3,46 @@ var filScoreWeight = [
 ];
 
 function refreshFilScores() {
-    var columnIndexListData = getColumnIndex(sData, "list");
-    var columnIndexListFilScore = getColumnIndex(sFilScore, "list");
-    copyRange(sData, columnIndexListData + "2:" + columnIndexListData, sFilScore, columnIndexListFilScore + "2:" + columnIndexListFilScore);
-    var columnIndexViewUrlData = getColumnIndex(sData, "viewUrl");
-    var columnIndexViewUrlFilScore = getColumnIndex(sFilScore, "viewUrl");
-    copyRange(sData, columnIndexViewUrlData + "2:" + columnIndexViewUrlData, sFilScore, columnIndexViewUrlFilScore + "2:" + columnIndexViewUrlFilScore);
+    var colIndexDataList = getColumnIndex(sData, "list");
+    var colIndexFilScoreList = getColumnIndex(sFilScore, "list");
+    copyRange(sData, colIndexDataList + "2:" + colIndexDataList, sFilScore, colIndexFilScoreList + "2:" + colIndexFilScoreList);
+    var colIndexDataViewUrl = getColumnIndex(sData, "viewUrl");
+    var colIndexFilScoreViewUrl = getColumnIndex(sFilScore, "viewUrl");
+    copyRange(sData, colIndexDataViewUrl + "2:" + colIndexDataViewUrl, sFilScore, colIndexFilScoreViewUrl + "2:" + colIndexFilScoreViewUrl);
     getSumUniqueDailyVisitorsLast30();
-    /*calculateFilScore();
-    var columnIndexFilScoreFilScore = getColumnIndex(sFilScore, "filScore");
-    var columnIndexFilScorePublic = getColumnIndex(sPublic, "filScore");
-    copyRange(sFilScore, columnIndexFilScoreFilScore + "2:" + columnIndexFilScoreFilScore, sPublic, columnIndexFilScorePublic + "2:" + columnIndexFilScorePublic);*/
+    calculateFilScore();
+    var colIndexFilScoreFilScore = getColumnIndex(sFilScore, "filScore");
+    var colIndexFilScorePublic = getColumnIndex(sPublic, "filScore");
+    copyRange(sFilScore, colIndexFilScoreFilScore + "2:" + colIndexFilScoreFilScore, sPublic, colIndexFilScorePublic + "2:" + colIndexFilScorePublic);
 }
 
 function getSumUniqueDailyVisitorsLast30() {
-    var columnDataSudvPiwikApiTempRange = sPiwikApiTemp.getRange("A2:A");
-    var columnDataSudvPiwikApiTempTopCell = sPiwikApiTemp.getRange("A2");
-    columnDataSudvPiwikApiTempRange.clearContent();
-    columnDataSudvPiwikApiTempTopCell.setValue("=ImportJson(CONCATENATE(\"" + piwikUrl + "?module=API&method=Actions.getDownloads&idSite=3&period=range&date=last30&flat=1&format=json&token_auth=" + piwikApiToken + "\"), \"/url,/sum_daily_nb_uniq_visitors\", \"noHeaders\")");
-    var columnData = columnDataSudvPiwikApiTempRange.getDisplayValues();
-    columnDataSudvPiwikApiTempRange.clearContent();
-    columnDataSudvPiwikApiTempRange.setValues(columnData);
+    var colRangePiwikApiTemp = sPiwikApiTemp.getRange("A2:B");
+    colRangePiwikApiTemp.clearContent();
+    var colTopPiwikApiTempSudv = sPiwikApiTemp.getRange("A2");
+    colTopPiwikApiTempSudv.setValue("=ImportJson(CONCATENATE(\"" + piwikUrl + "?module=API&method=Actions.getDownloads&idSite=3&period=range&date=last30&flat=1&format=json&token_auth=" + piwikApiToken + "\"), \"/url,/sum_daily_nb_uniq_visitors\", \"noHeaders\")");
+    var colDataPiwikApiTemp = colRangePiwikApiTemp.getDisplayValues();
+    colRangePiwikApiTemp.clearContent();
+    colRangePiwikApiTemp.setValues(colDataPiwikApiTemp);
     moveColumn(sPiwikApiTemp, 1, 2);
-    //var columnIndexSudvFilScore = getColumnIndex(sFilScore, "sumUniqueDailyVisitorsLast30");
-    //var columnDataSudvFilScoreTopCell = sFilScore.getRange(columnIndexSudvFilScore + "2");
-    //columnDataSudvFilScoreTopCell.setValue();
+    var colIndexFilScoreSudv = getColumnIndex(sFilScore, "sumUniqueDailyVisitorsLast30");
+    var colTopFilScoreSudv = sFilScore.getRange(colIndexFilScoreSudv + "2");
+    var colRangeFilScoreSudv = sFilScore.getRange(colIndexFilScoreSudv + "2:" + colIndexFilScoreSudv);
+    colRangeFilScoreSudv.clearContent();
+    colTopFilScoreSudv.setValue("=ARRAYFORMULA(IF(ISBLANK($B2:B),\"\",IFERROR(VLOOKUP($B2:B,PiwikApiTemp!$A$2:$B,2,FALSE),0)))");
+    var colDataFilScoreSudv = colRangeFilScoreSudv.getDisplayValues();
+    colRangeFilScoreSudv.clearContent();
+    colRangeFilScoreSudv.setValues(colDataFilScoreSudv);
 }
 
 function calculateFilScore() {
-    var colHeader = findColumnHeader(sheetScores, "score");
-    var colHeaderVisitors = findColumnHeader(sheetScores, "sumUniqueDailyVisitorsLast30");
-    if (colHeader) {
-        var rangeFull = sheetScores.getRange(colHeader + "2:" + colHeader);
-        rangeFull.clearContent();
-        var numLists = getNumLists(sheetScores);
-        for (i = 2; i <= numLists + 1; i++) {
-            var cellCur = sheetScores.getRange(colHeader + i);
-            cellCur.setValue("=ROUND((100-0)/(MAX($" + colHeaderVisitors + "$2:$" + colHeaderVisitors + ")-MIN($" + colHeaderVisitors + "$2:$" + colHeaderVisitors + "))*($" + colHeaderVisitors + i + "-MAX($" + colHeaderVisitors + "$2:$" + colHeaderVisitors + "))+100)");
-        }
-        var data = rangeFull.getDisplayValues();
-        rangeFull.clearContent();
-        rangeFull.setValues(data);
-    }
+    var colIndexFilScoreFilScore = getColumnIndex(sFilScore, "filScore");
+    var colRangeFilScoreFilScore = sFilScore.getRange(colIndexFilScoreFilScore + "2:" + colIndexFilScoreFilScore);
+    colRangeFilScoreFilScore.clearContent();
+    var colTopFilScoreFilScore = sFilScore.getRange(colIndexFilScoreFilScore + "2");
+    var colIndexFilScoreSudv = getColumnIndex(sFilScore, "sumUniqueDailyVisitorsLast30");
+    colTopFilScoreFilScore.setValue("=ARRAYFORMULA(IF(ISBLANK($" + colIndexFilScoreSudv + "2:" + colIndexFilScoreSudv + "),\"\",ROUND((100-0)/(MAX($" + colIndexFilScoreSudv + "$2:$" + colIndexFilScoreSudv + ")-MIN($" + colIndexFilScoreSudv + "$2:$" + colIndexFilScoreSudv + "))*($" + colIndexFilScoreSudv + "2:" + colIndexFilScoreSudv + "-MAX($" + colIndexFilScoreSudv + "$2:$" + colIndexFilScoreSudv + "))+100)))");
+    var colDataFilScoreFilScore = colRangeFilScoreFilScore.getDisplayValues();
+    colRangeFilScoreFilScore.clearContent();
+    colRangeFilScoreFilScore.setValues(colDataFilScoreFilScore);
 }
