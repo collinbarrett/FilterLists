@@ -24,7 +24,7 @@ function concatenateNamelessComboLists() {
 }
 
 function refreshParsed() {
-    var urlTypes = ["viewUrl", "addUrl", "homeUrl", "forumUrl", "issuesUrl", "email", "donateUrl", "related"];
+    var urlTypes = ["viewUrl", "addUrl", "homeUrl", "forumUrl", "issuesUrl", "email", "donateUrl"];
     for (var i = 0, urlTypesLength = urlTypes.length; i < urlTypesLength; i++) {
         var columnIndex = getColumnIndex(sParsed, urlTypes[i]);
         var columnDataRange = sParsed.getRange(columnIndex + "2:" + columnIndex);
@@ -53,9 +53,6 @@ function refreshParsed() {
             case "donateUrl":
                 columnDataTopCell.setValue("=createHtmlDonateLinkArray(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + columnIndex + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + columnIndex + "1,Data!A1:1,0),4),\"1\",\"\")),Data!A2:A)");
                 break;
-            case "related":
-                columnDataTopCell.setValue("=ARRAYFORMULA(SUBSTITUTE(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"related\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"related\",Data!A1:1,0),4),\"1\",\"\")),\",\",\"<br>\"))");
-                break;
             default:
         }
         var columnData = columnDataRange.getDisplayValues();
@@ -76,7 +73,7 @@ function refreshPublic() {
                 columnDataTopCell.setValue("=createHtmlListNameArray(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"list\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"list\",Data!A1:1,0),4),\"1\",\"\")))");
                 break;
             case "tags":
-                columnDataTopCell.setValue("=ARRAYFORMULA(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"\")))");
+                columnDataTopCell.setValue("=ARRAYFORMULA(\"<span class=\"\"fl-tag lang\"\">\"&INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"\"))&\"</span>\")");
                 break;
             case "description":
                 if (getColumnIndex(sData, "descrSourceUrl")) {
@@ -90,7 +87,6 @@ function refreshPublic() {
                 break;
             case "related":
                 columnDataTopCell.setValue("=createHtmlRelatedLinkArray(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"related\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"related\",Data!A1:1,0),4),\"1\",\"\")))");
-                //columnDataTopCell.setValue("=ARRAYFORMULA(INDIRECT(\"Parsed!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"related\",Parsed!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"related\",Parsed!A1:1,0),4),\"1\",\"\")))");
                 break;
             default:
         }
