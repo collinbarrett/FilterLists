@@ -41,7 +41,8 @@ function calculateFilScore() {
     colRangeFilScoreFilScore.clearContent();
     var colTopFilScoreFilScore = sFilScore.getRange(colIndexFilScoreFilScore + "2");
     var colIndexFilScoreSudv = getColumnIndex(sFilScore, "sumUniqueDailyVisitorsLast30");
-    colTopFilScoreFilScore.setValue("=ARRAYFORMULA(IF(ISBLANK($" + colIndexFilScoreSudv + "2:" + colIndexFilScoreSudv + "),\"\",ROUND((100-0)/(MAX($" + colIndexFilScoreSudv + "$2:$" + colIndexFilScoreSudv + ")-MIN($" + colIndexFilScoreSudv + "$2:$" + colIndexFilScoreSudv + "))*($" + colIndexFilScoreSudv + "2:" + colIndexFilScoreSudv + "-MAX($" + colIndexFilScoreSudv + "$2:$" + colIndexFilScoreSudv + "))+100)))");
+    //colTopFilScoreFilScore.setValue("=ARRAYFORMULA(IF(ISBLANK($" + colIndexFilScoreSudv + "2:" + colIndexFilScoreSudv + "),\"\",ROUND((100-0)/(MAX($" + colIndexFilScoreSudv + "$2:$" + colIndexFilScoreSudv + ")-MIN($" + colIndexFilScoreSudv + "$2:$" + colIndexFilScoreSudv + "))*($" + colIndexFilScoreSudv + "2:" + colIndexFilScoreSudv + "-MAX($" + colIndexFilScoreSudv + "$2:$" + colIndexFilScoreSudv + "))+100)))");
+    colTopFilScoreFilScore.setValue("=ARRAYFORMULA(IF(ISBLANK($" + colIndexFilScoreSudv + "2:" + colIndexFilScoreSudv + "),\"\",PERCENTRANK($" + colIndexFilScoreSudv + "$2:$" + colIndexFilScoreSudv + ",$" + colIndexFilScoreSudv + "2:$" + colIndexFilScoreSudv + ")))");
     var colDataFilScoreFilScore = colRangeFilScoreFilScore.getDisplayValues();
     colRangeFilScoreFilScore.clearContent();
     colRangeFilScoreFilScore.setValues(colDataFilScoreFilScore);
