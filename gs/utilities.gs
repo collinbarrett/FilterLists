@@ -88,7 +88,7 @@ function moveColumn(sheet, iniCol, finCol) {
 function arrayMoveColumn(data, from, to) {
     if (!(data instanceof Array && data[0] instanceof Array)) throw new TypeError('need 2d array');
     if (from >= data[0].length || to >= data[0].length) throw new Error('index out of bounds');
-    for (var row = 0; row < data.length; row++) {
+    for (var row = 0, dataLength = data.length; row < dataLength; row++) {
         var temp = data[row].splice(from, 1);
         data[row].splice(to, 0, temp[0]);
     }

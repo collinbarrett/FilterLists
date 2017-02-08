@@ -7,8 +7,7 @@ var sParsed = ss.getSheetByName("Parsed");
 var sPublic = ss.getSheetByName("Public");
 
 function onOpen() {
-    var ui = SpreadsheetApp.getUi();
-    ui.createMenu('Refresh').addItem('Refresh All', 'refreshAll').addSeparator().addItem('Refresh Data', 'refreshData').addItem('Refresh FilScore', 'refreshFilScores').addToUi();
+    SpreadsheetApp.getUi().createMenu('Refresh').addItem('Refresh All', 'refreshAll').addSeparator().addItem('Refresh Data', 'refreshData').addItem('Refresh FilScore', 'refreshFilScores').addToUi();
 }
 
 function refreshAll() {
