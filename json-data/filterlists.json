@@ -1319,7 +1319,7 @@
     "tagLang": ["ro"],
     "descr": "Romanian ad block filtering list.",
     "descrSourceUrl": "https://github.com/tcptomato/ROad-Block",
-    "viewUrl": "https://raw.githubusercontent.com/tcptomato/ROad-Block/master/road-block-filters.txt",
+    "viewUrl": "https://road.adblock.ro/lista.txt",
     "homeUrl": "https://www.adblock.ro/",
     "forumUrl": "https://muut.com/i/adblockro/comments",
     "issuesUrl": "https://github.com/tcptomato/ROad-Block/issues",
