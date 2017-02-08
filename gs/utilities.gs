@@ -1,8 +1,6 @@
 function fill2dJsonArrayWithNulls(array2d) {
-    for (var i = 0,
-            var array2dLength = array2d.length; i < array2dLength; i++) {
-        for (var j = 0,
-                var array2dLength2 = array2d[0].length; j < array2dLength2; j++) {
+    for (var i = 0, array2dLength = array2d.length; i < array2dLength; i++) {
+        for (var j = 0, array2dLength2 = array2d[0].length; j < array2dLength2; j++) {
             if (array2d[i][j] == null) {
                 array2d[i][j] = "";
             }
@@ -13,8 +11,7 @@ function fill2dJsonArrayWithNulls(array2d) {
 
 function getColIndex(sheet, colHeader) {
     var headerData = sheet.getRange("A1:1").getValues();
-    for (var i = 0,
-            var headerDataLength = headerData[0].length; i < headerDataLength; i++) {
+    for (var i = 0, headerDataLength = headerData[0].length; i < headerDataLength; i++) {
         if (headerData[0][i] == colHeader) {
             return String.fromCharCode(65 + i);
         }
@@ -24,8 +21,7 @@ function getColIndex(sheet, colHeader) {
 
 function getColIndexNum(sheet, colHeader) {
     var headerData = sheet.getRange("A1:1").getValues();
-    for (var i = 0,
-            var headerDataLength = headerData[0].length; i < headerDataLength; i++) {
+    for (var i = 0, headerDataLength = headerData[0].length; i < headerDataLength; i++) {
         if (headerData[0][i] == colHeader) {
             return i + 1;
         }
@@ -57,8 +53,7 @@ function trimUrlSlugArray(slugArray) {
     } else {
         if (slugArray) {
             var trimCharacters = [" ", "\"", ":", "'", "+", "(", ")", "."];
-            for (var i = 0,
-                    var trimCharactersLength = trimCharacters.length; i < trimCharactersLength; i++) {
+            for (var i = 0, trimCharactersLength = trimCharacters.length; i < trimCharactersLength; i++) {
                 slugArray = slugArray.split(trimCharacters[i]).join("");
             }
             return slugArray;
@@ -71,8 +66,7 @@ function trimUrlSlugArray(slugArray) {
 function getNumLists(sheetData) {
     var colIndexDataViewUrl = getColIndex(sData, "viewUrl");
     var colRangeDataViewUrl = sheetData.getRange(colIndexDataViewUrl + "2:" + colIndexDataViewUrl);
-    for (var i = 1,
-            var colRangeDataViewUrlLength = colRangeDataViewUrl.getNumRows(); i <= colRangeDataViewUrlLength; i++) {
+    for (var i = 1, colRangeDataViewUrlLength = colRangeDataViewUrl.getNumRows(); i <= colRangeDataViewUrlLength; i++) {
         if (!colRangeDataViewUrl.getCell(i, 1).getValue()) {
             return i - 1;
         }
@@ -94,8 +88,7 @@ function moveColumn(sheet, iniCol, finCol) {
 function arrayMoveColumn(data, from, to) {
     if (!(data instanceof Array && data[0] instanceof Array)) throw new TypeError('need 2d array');
     if (from >= data[0].length || to >= data[0].length) throw new Error('index out of bounds');
-    for (var row = 0,
-            var dataLength = data.length; row < dataLength; row++) {
+    for (var row = 0, dataLength = data.length; row < dataLength; row++) {
         var temp = data[row].splice(from, 1);
         data[row].splice(to, 0, temp[0]);
     }

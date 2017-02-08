@@ -24,8 +24,7 @@ function concatNamelessComboLists() {
 
 function refreshParsed() {
     var urlTypes = ["viewUrl", "addUrl", "homeUrl", "forumUrl", "issuesUrl", "email", "donateUrl"];
-    for (var i = 0,
-            var urlTypesLength = urlTypes.length; i < urlTypesLength; i++) {
+    for (var i = 0, urlTypesLength = urlTypes.length; i < urlTypesLength; i++) {
         var colIndexParsedUrlType = getColIndex(sParsed, urlTypes[i]);
         var colRangeParsedUrlType = sParsed.getRange(colIndexParsedUrlType + "2:" + colIndexParsedUrlType);
         colRangeParsedUrlType.clearContent();
@@ -55,15 +54,15 @@ function refreshParsed() {
                 break;
             default:
         }
+        var colDataParsedUrlType = colRangeParsedUrlType.getDisplayValues();
         colRangeParsedUrlType.clearContent();
-        colRangeParsedUrlType.setValues(colRangeParsedUrlType.getDisplayValues());
+        colRangeParsedUrlType.setValues(colDataParsedUrlType);
     }
 }
 
 function refreshPublic() {
     var publicFields = ["list", "tags", "description", "links", "related"];
-    for (var i = 0,
-            var publicFieldsLength = publicFields.length; i < publicFieldsLength; i++) {
+    for (var i = 0, publicFieldsLength = publicFields.length; i < publicFieldsLength; i++) {
         var colIndexPublicPublicField = getColIndex(sPublic, publicFields[i]);
         var colRangePublicPublicField = sPublic.getRange(colIndexPublicPublicField + "2:" + colIndexPublicPublicField);
         colRangePublicPublicField.clearContent();
@@ -90,7 +89,8 @@ function refreshPublic() {
                 break;
             default:
         }
+        var colDataPublicPublicField = colRangePublicPublicField.getDisplayValues();
         colRangePublicPublicField.clearContent();
-        colRangePublicPublicField.setValues(colRangePublicPublicField.getDisplayValues());
+        colRangePublicPublicField.setValues(colDataPublicPublicField);
     }
 }

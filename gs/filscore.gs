@@ -25,16 +25,17 @@ function copyViewUrlToFilScore() {
 
 function getSumUniqueDailyVisitorsLast30() {
     getDownloadsFromPiwikApi();
-    moveColumn(sPiwikApiTemp, 1, 2);
+    moveColumn(sPiwikApiTemp, 10, 11);
     copyPiwikDownloadsToFilScore();
 }
 
 function getDownloadsFromPiwikApi() {
-    var colRangePiwikApiTemp = sPiwikApiTemp.getRange("A2:B");
+    var colRangePiwikApiTemp = sPiwikApiTemp.getRange("A1:K");
     colRangePiwikApiTemp.clearContent();
-    sPiwikApiTemp.getRange("A2").setValue("=ImportJson(CONCATENATE(\"" + piwikUrl + "?module=API&method=Actions.getDownloads&idSite=3&period=range&date=last30&flat=1&format=json&token_auth=" + piwikApiToken + "\"), \"/url,/sum_daily_nb_uniq_visitors\", \"noHeaders\")");
+    sPiwikApiTemp.getRange("A1").setValue("=ImportJson(CONCATENATE(\"" + piwikUrl + "?module=API&method=Actions.getDownloads&idSite=3&period=range&date=last30&expanded=1&format=json&token_auth=" + piwikApiToken + "\"), \"\", \"\")");
+    var colDataPiwikApiTemp = colRangePiwikApiTemp.getDisplayValues()
     colRangePiwikApiTemp.clearContent();
-    colRangePiwikApiTemp.setValues(colRangePiwikApiTemp.getDisplayValues());
+    colRangePiwikApiTemp.setValues(colDataPiwikApiTemp);
 }
 
 function copyPiwikDownloadsToFilScore() {
@@ -42,9 +43,12 @@ function copyPiwikDownloadsToFilScore() {
     var colTopFilScoreSudv = sFilScore.getRange(colIndexFilScoreSudv + "2");
     var colRangeFilScoreSudv = sFilScore.getRange(colIndexFilScoreSudv + "2:" + colIndexFilScoreSudv);
     colRangeFilScoreSudv.clearContent();
-    colTopFilScoreSudv.setValue("=ARRAYFORMULA(IF(ISBLANK($B2:B),\"\",IFERROR(VLOOKUP($B2:B,PiwikApiTemp!$A$2:$B,2,FALSE),0)))");
+    var colIndexPiwikApiTempSudv = getColIndex(sPiwikApiTemp, "Subtablesumdailynbuniqvisitors");
+    var colIndexPiwikApiTempViewUrl = getColIndex(sPiwikApiTemp, "Subtableurl");
+    colTopFilScoreSudv.setValue("=ARRAYFORMULA(IF(ISBLANK($B2:B),\"\",IFERROR(VLOOKUP($B2:B,PiwikApiTemp!$" + colIndexPiwikApiTempSudv + "$2:$" + colIndexPiwikApiTempViewUrl + ",2,FALSE),0)))");
+    var colDataFilScoreSudv = colRangeFilScoreSudv.getDisplayValues();
     colRangeFilScoreSudv.clearContent();
-    colRangeFilScoreSudv.setValues(colRangeFilScoreSudv.getDisplayValues());
+    colRangeFilScoreSudv.setValues(colDataFilScoreSudv);
 }
 
 function calculateSumUniqueDailyVisitorsLast30Score() {
@@ -53,14 +57,14 @@ function calculateSumUniqueDailyVisitorsLast30Score() {
     colRangeFilScoreSudvScore.clearContent();
     var colIndexFilScoreSudv = getColIndex(sFilScore, "sumUniqueDailyVisitorsLast30");
     sFilScore.getRange(colIndexFilScoreSudvScore + "2").setValue("=ARRAYFORMULA(IF(ISBLANK($" + colIndexFilScoreSudv + "2:" + colIndexFilScoreSudv + "),\"\",PERCENTRANK($" + colIndexFilScoreSudv + "$2:$" + colIndexFilScoreSudv + ",$" + colIndexFilScoreSudv + "2:$" + colIndexFilScoreSudv + ")))");
+    var colDataFilScoreSudvScore = colRangeFilScoreSudvScore.getDisplayValues();
     colRangeFilScoreSudvScore.clearContent();
-    colRangeFilScoreSudvScore.setValues(colRangeFilScoreSudvScore.getDisplayValues());
+    colRangeFilScoreSudvScore.setValues(colDataFilScoreSudvScore);
 }
 
 function calculateFilScore() {
     var filScoreArrayFormula = "=ARRAYFORMULA(";
-    for (var i = 0,
-            var filScoreWeightLength = filScoreWeight.length; i < filScoreWeightLength; i++) {
+    for (var i = 0, filScoreWeightLength = filScoreWeight.length; i < filScoreWeightLength; i++) {
         var colIndex = getColIndex(sFilScore, filScoreWeight[i][0] + "Score");
         if (i > 0) {
             filScoreArrayFormula += "*";
@@ -76,8 +80,9 @@ function updateFilScoreArrayFormula(filScoreArrayFormula) {
     var colRangeFilScoreFilScore = sFilScore.getRange(colIndexFilScoreFilScore + "2:" + colIndexFilScoreFilScore);
     colRangeFilScoreFilScore.clearContent();
     sFilScore.getRange(colIndexFilScoreFilScore + "2").setValue(filScoreArrayFormula);
+    var colDataFilScoreFilScore = colRangeFilScoreFilScore.getDisplayValues();
     colRangeFilScoreFilScore.clearContent();
-    colRangeFilScoreFilScore.setValues(colRangeFilScoreFilScore.getDisplayValues());
+    colRangeFilScoreFilScore.setValues(colDataFilScoreFilScore);
 }
 
 function copyFilScoreToPublic() {

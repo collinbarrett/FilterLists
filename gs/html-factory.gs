@@ -64,8 +64,7 @@ function createHtmlArrayRelatedLists(related) {
         } else {
             var relatedArray = related.split(',');
             var relatedHtml = "<ul>";
-            for (var i = 0,
-                    var relatedArrayLength = relatedArray.length; i < relatedArrayLength; i++) {
+            for (var i = 0, relatedArrayLength = relatedArray.length; i < relatedArrayLength; i++) {
                 relatedHtml += "<li><a href=\"#" + trimUrlSlugArray(relatedArray[i]) + "\">" + relatedArray[i] + "</a></li>";
             }
             relatedHtml += "</ul>";
