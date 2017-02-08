@@ -1,7 +1,7 @@
-function createHtmlArrayUrl(htmlType, url, listName) {
+function createHtmlArrayLinkButton(htmlType, url, listName) {
     if (url instanceof Array) {
         for (var i in url) {
-            url[i] = createHtmlArrayUrl(htmlType, url[i], listName[i]);
+            url[i] = createHtmlArrayLinkButton(htmlType, url[i], listName[i]);
         }
         return url;
     } else {
@@ -37,10 +37,10 @@ function createHtmlArrayUrl(htmlType, url, listName) {
     }
 }
 
-function createHtmlArrayList(list) {
+function createHtmlArrayListName(list) {
     if (list instanceof Array) {
         for (var i in list) {
-            list[i] = createHtmlArrayList(list[i]);
+            list[i] = createHtmlArrayListName(list[i]);
         }
         return list;
     } else {
@@ -52,10 +52,10 @@ function createHtmlArrayList(list) {
     }
 }
 
-function createHtmlArrayRelated(related) {
+function createHtmlArrayRelatedLists(related) {
     if (related instanceof Array) {
         for (var i in related) {
-            related[i] = createHtmlArrayRelated(related[i]);
+            related[i] = createHtmlArrayRelatedLists(related[i]);
         }
         return related;
     } else {
@@ -64,7 +64,8 @@ function createHtmlArrayRelated(related) {
         } else {
             var relatedArray = related.split(',');
             var relatedHtml = "<ul>";
-            for (var i = 0, relatedArrayLength = relatedArray.length; i < relatedArrayLength; i++) {
+            for (var i = 0,
+                    var relatedArrayLength = relatedArray.length; i < relatedArrayLength; i++) {
                 relatedHtml += "<li><a href=\"#" + trimUrlSlugArray(relatedArray[i]) + "\">" + relatedArray[i] + "</a></li>";
             }
             relatedHtml += "</ul>";
