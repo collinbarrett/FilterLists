@@ -1,6 +1,6 @@
 function fill2dJsonArrayWithNulls(array2d) {
-    for (i = 0; i < array2d.length; i++) {
-        for (j = 0; j < array2d[0].length; j++) {
+    for (var i = 0, array2dLength = array2d.length; i < array2dLength; i++) {
+        for (var j = 0, array2dLength2 = array2d[0].length; j < array2dLength2; j++) {
             if (array2d[i][j] == null) {
                 array2d[i][j] = "";
             }
@@ -10,9 +10,8 @@ function fill2dJsonArrayWithNulls(array2d) {
 }
 
 function getColIndex(sheet, columnHeader) {
-    var headerRange = sheet.getRange("A1:1");
-    var headerData = headerRange.getValues();
-    for (i = 0; i < headerData[0].length; i++) {
+    var headerData = sheet.getRange("A1:1").getValues();
+    for (var i = 0, headerDataLength = headerData[0].length; i < headerDataLength; i++) {
         if (headerData[0][i] == columnHeader) {
             return String.fromCharCode(65 + i);
         }
@@ -21,9 +20,8 @@ function getColIndex(sheet, columnHeader) {
 }
 
 function getColIndexNum(sheet, columnHeader) {
-    var headerRange = sheet.getRange("A1:1");
-    var headerData = headerRange.getValues();
-    for (i = 0; i < headerData[0].length; i++) {
+    var headerData = sheet.getRange("A1:1").getValues();
+    for (var i = 0, headerDataLength = headerData[0].length; i < headerDataLength; i++) {
         if (headerData[0][i] == columnHeader) {
             return i + 1;
         }
@@ -31,21 +29,9 @@ function getColIndexNum(sheet, columnHeader) {
     return null;
 }
 
-function getColIndicesWithHeaderSubstring(sheet, columnHeaderSubstring) {
-    var headerRange = sheet.getRange("A1:1");
-    var headerData = headerRange.getValues();
-    var columnIndices = new Array();
-    for (i = 0; i < headerData[0].length; i++) {
-        if (headerData[0][i].indexOf(columnHeaderSubstring) != -1) {
-            columnIndices.push(headerData[0][i]);
-        }
-    }
-    return columnIndices;
-}
-
 function encodeUrlArray(urlArray) {
     if (urlArray instanceof Array) {
-        for (i in urlArray) {
+        for (var i in urlArray) {
             urlArray[i] = encodeUrlArray(urlArray[i]);
         }
         return urlArray;
@@ -60,14 +46,14 @@ function encodeUrlArray(urlArray) {
 
 function trimUrlSlugArray(slugArray) {
     if (slugArray instanceof Array) {
-        for (i in slugArray) {
+        for (var i in slugArray) {
             slugArray[i] = trimUrlSlugArray(slugArray[i]);
         }
         return slugArray;
     } else {
         if (slugArray) {
             var trimCharacters = [" ", "\"", ":", "'", "+", "(", ")", "."];
-            for (i = 0; i < trimCharacters.length; i++) {
+            for (var i = 0, trimCharactersLength = trimCharacters.length; i < trimCharactersLength; i++) {
                 slugArray = slugArray.split(trimCharacters[i]).join("");
             }
             return slugArray;
@@ -78,20 +64,19 @@ function trimUrlSlugArray(slugArray) {
 }
 
 function getNumLists(sheetData) {
-    var listHeaderData = getColIndex(sData, "viewUrl");
-    var listData = sheetData.getRange(listHeaderData + "2:" + listHeaderData);
-    for (i = 1; i <= listData.getNumRows(); i++) {
-        if (!(listData.getCell(i, 1).getValue())) {
+    var colIndexDataViewUrl = getColIndex(sData, "viewUrl");
+    var colRangeDataViewUrl = sheetData.getRange(colIndexDataViewUrl + "2:" + colIndexDataViewUrl);
+    for (var i = 1, colRangeDataViewUrlLength = colRangeDataViewUrl.getNumRows(); i <= colRangeDataViewUrlLength; i++) {
+        if (!(colRangeDataViewUrl.getCell(i, 1).getValue())) {
             return i - 1;
         }
     }
 }
 
 function copyRange(sheetSource, rangeSource, sheetTarget, rangeTarget) {
-    var sourceRangeListNames = sheetSource.getRange(rangeSource);
     var targetRangeListNames = sheetTarget.getRange(rangeTarget);
     targetRangeListNames.clearContent();
-    sourceRangeListNames.copyTo(targetRangeListNames);
+    sheetSource.getRange(rangeSource).copyTo(targetRangeListNames);
 }
 // https://stackoverflow.com/questions/21145080/moving-a-column-in-google-spreadsheet/21152273#21152273
 function moveColumn(sheet, iniCol, finCol) {

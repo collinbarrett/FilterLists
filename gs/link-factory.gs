@@ -1,6 +1,6 @@
 function createHtmlViewLinkArray(url, listName) {
     if (url instanceof Array) {
-        for (i in url) {
+        for (var i in url) {
             url[i] = createHtmlViewLinkArray(url[i], listName[i]);
         }
         return url;
@@ -15,7 +15,7 @@ function createHtmlViewLinkArray(url, listName) {
 
 function createHtmlAddLinkArray(url, listName) {
     if (url instanceof Array) {
-        for (i in url) {
+        for (var i in url) {
             url[i] = createHtmlAddLinkArray(url[i], listName[i]);
         }
         return url;
@@ -30,7 +30,7 @@ function createHtmlAddLinkArray(url, listName) {
 
 function createHtmlHomeLinkArray(url, listName) {
     if (url instanceof Array) {
-        for (i in url) {
+        for (var i in url) {
             url[i] = createHtmlHomeLinkArray(url[i], listName[i]);
         }
         return url;
@@ -45,7 +45,7 @@ function createHtmlHomeLinkArray(url, listName) {
 
 function createHtmlForumLinkArray(url, listName) {
     if (url instanceof Array) {
-        for (i in url) {
+        for (var i in url) {
             url[i] = createHtmlForumLinkArray(url[i], listName[i]);
         }
         return url;
@@ -60,7 +60,7 @@ function createHtmlForumLinkArray(url, listName) {
 
 function createHtmlIssuesLinkArray(url, listName) {
     if (url instanceof Array) {
-        for (i in url) {
+        for (var i in url) {
             url[i] = createHtmlIssuesLinkArray(url[i], listName[i]);
         }
         return url;
@@ -75,7 +75,7 @@ function createHtmlIssuesLinkArray(url, listName) {
 
 function createHtmlEmailLinkArray(url, listName) {
     if (url instanceof Array) {
-        for (i in url) {
+        for (var i in url) {
             url[i] = createHtmlEmailLinkArray(url[i], listName[i]);
         }
         return url;
@@ -90,7 +90,7 @@ function createHtmlEmailLinkArray(url, listName) {
 
 function createHtmlDonateLinkArray(url, listName) {
     if (url instanceof Array) {
-        for (i in url) {
+        for (var i in url) {
             url[i] = createHtmlDonateLinkArray(url[i], listName[i]);
         }
         return url;
@@ -105,7 +105,7 @@ function createHtmlDonateLinkArray(url, listName) {
 
 function createHtmlRelatedLinkArray(related) {
     if (related instanceof Array) {
-        for (i in related) {
+        for (var i in related) {
             related[i] = createHtmlRelatedLinkArray(related[i]);
         }
         return related;
@@ -126,7 +126,7 @@ function createHtmlRelatedLinkArray(related) {
 
 function createHtmlListNameArray(listName) {
     if (listName instanceof Array) {
-        for (i in listName) {
+        for (var i in listName) {
             listName[i] = createHtmlListNameArray(listName[i]);
         }
         return listName;
