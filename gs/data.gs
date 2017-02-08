@@ -11,9 +11,9 @@ function refreshData() {
 
 function concatenateNamelessComboLists() {
     var numLists = getNumLists(sData);
-    var listColumnIndex = getColumnIndexNumber(sData, "list");
+    var listColumnIndex = getColIndexNum(sData, "list");
     var listData = sData.getRange(2, listColumnIndex, numLists, 1).getValues();
-    var relatedColumnIndex = getColumnIndexNumber(sData, "related");
+    var relatedColumnIndex = getColIndexNum(sData, "related");
     var relatedData = sData.getRange(2, relatedColumnIndex, numLists, 1).getValues();
     for (var i = 0; i < numLists; i++) {
         if (!listData[i][0]) {
@@ -26,7 +26,7 @@ function concatenateNamelessComboLists() {
 function refreshParsed() {
     var urlTypes = ["viewUrl", "addUrl", "homeUrl", "forumUrl", "issuesUrl", "email", "donateUrl"];
     for (var i = 0, urlTypesLength = urlTypes.length; i < urlTypesLength; i++) {
-        var columnIndex = getColumnIndex(sParsed, urlTypes[i]);
+        var columnIndex = getColIndex(sParsed, urlTypes[i]);
         var columnDataRange = sParsed.getRange(columnIndex + "2:" + columnIndex);
         columnDataRange.clearContent();
         var columnDataTopCell = sParsed.getRange(columnIndex + "2");
@@ -35,7 +35,7 @@ function refreshParsed() {
                 columnDataTopCell.setValue("=createHtmlViewLinkArray(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + columnIndex + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + columnIndex + "1,Data!A1:1,0),4),\"1\",\"\")),Data!A2:A)");
                 break;
             case "addUrl":
-                var viewUrlColumnIndex = getColumnIndex(sData, "viewUrl");
+                var viewUrlColumnIndex = getColIndex(sData, "viewUrl");
                 columnDataTopCell.setValue("=createHtmlAddLinkArray(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(Data!" + viewUrlColumnIndex + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(Data!" + viewUrlColumnIndex + "1,Data!A1:1,0),4),\"1\",\"\")),Data!A2:A)");
                 break;
             case "homeUrl":
@@ -64,7 +64,7 @@ function refreshParsed() {
 function refreshPublic() {
     var publicFields = ["list", "tags", "description", "links", "related"];
     for (var i = 0, publicFieldsLength = publicFields.length; i < publicFieldsLength; i++) {
-        var columnIndex = getColumnIndex(sPublic, publicFields[i]);
+        var columnIndex = getColIndex(sPublic, publicFields[i]);
         var columnDataRange = sPublic.getRange(columnIndex + "2:" + columnIndex);
         columnDataRange.clearContent();
         var columnDataTopCell = sPublic.getRange(columnIndex + "2");
@@ -76,7 +76,7 @@ function refreshPublic() {
                 columnDataTopCell.setValue("=ARRAYFORMULA(\"<span class=\"\"fl-tag lang\"\">\"&INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"\"))&\"</span>\")");
                 break;
             case "description":
-                if (getColumnIndex(sData, "descrSourceUrl")) {
+                if (getColIndex(sData, "descrSourceUrl")) {
                     columnDataTopCell.setValue("=ARRAYFORMULA(IF(ISBLANK(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\",Data!A1:1,0),4),\"1\",\"\"))),,\"<blockquote cite=\"\"\")&INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\",Data!A1:1,0),4),\"1\",\"\"))&IF(ISBLANK(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\",Data!A1:1,0),4),\"1\",\"\"))),,\"\"\">\")&INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descr\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descr\",Data!A1:1,0),4),\"1\",\"\"))&IF(ISBLANK(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descrSourceUrl\",Data!A1:1,0),4),\"1\",\"\"))),,\"</blockquote>\"))");
                 } else {
                     columnDataTopCell.setValue("=ARRAYFORMULA(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descr\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"descr\",Data!A1:1,0),4),\"1\",\"\")))");

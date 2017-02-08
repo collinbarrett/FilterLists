@@ -9,7 +9,7 @@ function fill2dJsonArrayWithNulls(array2d) {
     return array2d;
 }
 
-function getColumnIndex(sheet, columnHeader) {
+function getColIndex(sheet, columnHeader) {
     var headerRange = sheet.getRange("A1:1");
     var headerData = headerRange.getValues();
     for (i = 0; i < headerData[0].length; i++) {
@@ -20,7 +20,7 @@ function getColumnIndex(sheet, columnHeader) {
     return null;
 }
 
-function getColumnIndexNumber(sheet, columnHeader) {
+function getColIndexNum(sheet, columnHeader) {
     var headerRange = sheet.getRange("A1:1");
     var headerData = headerRange.getValues();
     for (i = 0; i < headerData[0].length; i++) {
@@ -31,7 +31,7 @@ function getColumnIndexNumber(sheet, columnHeader) {
     return null;
 }
 
-function getColumnIndicesWithHeaderSubstring(sheet, columnHeaderSubstring) {
+function getColIndicesWithHeaderSubstring(sheet, columnHeaderSubstring) {
     var headerRange = sheet.getRange("A1:1");
     var headerData = headerRange.getValues();
     var columnIndices = new Array();
@@ -78,7 +78,7 @@ function trimUrlSlugArray(slugArray) {
 }
 
 function getNumLists(sheetData) {
-    var listHeaderData = getColumnIndex(sData, "viewUrl");
+    var listHeaderData = getColIndex(sData, "viewUrl");
     var listData = sheetData.getRange(listHeaderData + "2:" + listHeaderData);
     for (i = 1; i <= listData.getNumRows(); i++) {
         if (!(listData.getCell(i, 1).getValue())) {
