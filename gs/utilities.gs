@@ -29,6 +29,17 @@ function getColIndexNum(sheet, colHeader) {
     return null;
 }
 
+function getColIndicesWithHeaderSubstring(sheet, colHeaderSubstring) {
+    var headerData = sheet.getRange("A1:1").getValues();
+    var colIndices = new Array();
+    for (var i = 0, headerDataLength = headerData[0].length; i < headerDataLength; i++) {
+        if (headerData[0][i].indexOf(colHeaderSubstring) != -1) {
+            colIndices.push(String.fromCharCode(65 + headerData[0][i]));
+        }
+    }
+    return colIndices;
+}
+
 function encodeUrlArray(urlArray) {
     if (urlArray instanceof Array) {
         for (var i in urlArray) {

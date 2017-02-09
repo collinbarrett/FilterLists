@@ -37,6 +37,13 @@ function createHtmlArrayLinkButton(htmlType, url, listName) {
     }
 }
 
+function createHtmlArrayTags() {
+    var tagsHtml = new Array();
+    var colIndexDataTags = getColIndicesWithHeaderSubstring(sData, "tag");
+    for (var i = 0, colIndexDataTagsLength = colIndexDataTags.length; i < colIndexDataTagsLength; i++) {}
+    return tagsHtml;
+}
+
 function createHtmlArrayListName(list) {
     if (list instanceof Array) {
         for (var i in list) {
@@ -63,11 +70,10 @@ function createHtmlArrayRelatedLists(related) {
             return "";
         } else {
             var relatedArray = related.split(',');
-            var relatedHtml = "<ul>";
+            var relatedHtml = "";
             for (var i = 0, relatedArrayLength = relatedArray.length; i < relatedArrayLength; i++) {
-                relatedHtml += "<li><a href=\"#" + trimUrlSlugArray(relatedArray[i]) + "\">" + relatedArray[i] + "</a></li>";
+                relatedHtml += "<a href=\"#" + trimUrlSlugArray(relatedArray[i]) + "\" class=\"related\"><span class=\"related\">" + relatedArray[i] + "</span></a>";
             }
-            relatedHtml += "</ul>";
             return relatedHtml;
         }
     }

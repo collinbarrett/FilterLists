@@ -23,7 +23,7 @@ function concatNamelessComboLists() {
 }
 
 function refreshParsed() {
-    var urlTypes = ["viewUrl", "addUrl", "homeUrl", "forumUrl", "issuesUrl", "email", "donateUrl"];
+    var urlTypes = ["viewUrl", "addUrl", "homeUrl", "forumUrl", "issuesUrl", "email", "donateUrl", "tags"];
     for (var i = 0, urlTypesLength = urlTypes.length; i < urlTypesLength; i++) {
         var colIndexParsedUrlType = getColIndex(sParsed, urlTypes[i]);
         var colRangeParsedUrlType = sParsed.getRange(colIndexParsedUrlType + "2:" + colIndexParsedUrlType);
@@ -52,6 +52,9 @@ function refreshParsed() {
             case "donateUrl":
                 colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"donateUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!A2:A)");
                 break;
+            case "tags":
+                colTopParsedUrlType.setValue("=createHtmlArrayTags()");
+                break;
             default:
         }
         var colDataParsedUrlType = colRangeParsedUrlType.getDisplayValues();
@@ -72,7 +75,7 @@ function refreshPublic() {
                 colTopPublicPublicField.setValue("=createHtmlArrayListName(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"list\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"list\",Data!A1:1,0),4),\"1\",\"\")))");
                 break;
             case "tags":
-                colTopPublicPublicField.setValue("=ARRAYFORMULA(\"<span class=\"\"fl-tag lang\"\">\"&INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"\"))&\"</span>\")");
+                colTopPublicPublicField.setValue("=ARRAYFORMULA(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"\")))");
                 break;
             case "description":
                 if (getColIndex(sData, "descrSourceUrl")) {
