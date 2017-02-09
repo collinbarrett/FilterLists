@@ -16,11 +16,9 @@ FilterLists is the independent and comprehensive directory of all public filter 
 | descrSourceUrl | The URL to the list's documentation page from which the description was quoted if applicable. |
 | viewUrl | The URL to the list in raw text format. zip files and other formats are acceptable if no text format is available. |
 | homeUrl | The URL to the list's home page. Preferably, this is stated in the header of the list. Alternatively, it could be a custom domain, GitHub page, blog post, forum post, etc. that serves as a primary source of information for the list. |
-| guideUrl | The URL to the list's instruction guide if it is significantly different than the homeUrl. |
 | forumUrl | The URL to the list's forum where issues, change requests, etc. are discussed. |
 | issuesUrl | The URL to the list's GitHub Issues. |
 | email | The email address of the list's maintainer(s) if publicly available. |
-| changelogUrl | The URL to the list's changelog such as an RSS feed, GitHub commits log, Mercurial log, etc. |
 | donateUrl | The URL to the list's donation page. This could be a custom PayPal or similar link, or a link to a web page discussing various donation options. Pull requests that include changes to this link will undergo further verification to prevent fraud. |
 | related | List names that are directly related to the list. For example, if a list is a combination of other lists, its master lists would be considered "related". Sorted alphabetically by convention. |
 | tagLang | Array of ISO 639-1 language codes targeted by the list. |
