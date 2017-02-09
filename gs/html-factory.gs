@@ -41,6 +41,7 @@ function createHtmlArrayTags() {
     var tagsHtml = new Array();
     var colIndexDataTags = getColIndicesWithHeaderSubstring(sData, "tag");
     for (var i = 0, colIndexDataTagsLength = colIndexDataTags.length; i < colIndexDataTagsLength; i++) {}
+    tagsHtml.push(0);
     return tagsHtml;
 }
 
@@ -70,10 +71,11 @@ function createHtmlArrayRelatedLists(related) {
             return "";
         } else {
             var relatedArray = related.split(',');
-            var relatedHtml = "";
+            var relatedHtml = "<p>";
             for (var i = 0, relatedArrayLength = relatedArray.length; i < relatedArrayLength; i++) {
                 relatedHtml += "<a href=\"#" + trimUrlSlugArray(relatedArray[i]) + "\" class=\"related\"><span class=\"related\">" + relatedArray[i] + "</span></a>";
             }
+            relatedHtml += "</p>";
             return relatedHtml;
         }
     }

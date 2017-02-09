@@ -23,13 +23,16 @@ function concatNamelessComboLists() {
 }
 
 function refreshParsed() {
-    var urlTypes = ["viewUrl", "addUrl", "homeUrl", "forumUrl", "issuesUrl", "email", "donateUrl", "tags"];
-    for (var i = 0, urlTypesLength = urlTypes.length; i < urlTypesLength; i++) {
-        var colIndexParsedUrlType = getColIndex(sParsed, urlTypes[i]);
+    var parsedFields = ["tags", "viewUrl", "addUrl", "homeUrl", "forumUrl", "issuesUrl", "email", "donateUrl"];
+    for (var i = 0, parsedFieldsLength = parsedFields.length; i < parsedFieldsLength; i++) {
+        var colIndexParsedUrlType = getColIndex(sParsed, parsedFields[i]);
         var colRangeParsedUrlType = sParsed.getRange(colIndexParsedUrlType + "2:" + colIndexParsedUrlType);
         colRangeParsedUrlType.clearContent();
         var colTopParsedUrlType = sParsed.getRange(colIndexParsedUrlType + "2");
-        switch (urlTypes[i]) {
+        switch (parsedFields[i]) {
+            case "tags":
+                colTopParsedUrlType.setValue("=createHtmlArrayTags()");
+                break;
             case "viewUrl":
                 colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"viewUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!A2:A)");
                 break;
@@ -51,9 +54,6 @@ function refreshParsed() {
                 break;
             case "donateUrl":
                 colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"donateUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!A2:A)");
-                break;
-            case "tags":
-                colTopParsedUrlType.setValue("=createHtmlArrayTags()");
                 break;
             default:
         }
@@ -85,7 +85,7 @@ function refreshPublic() {
                 }
                 break;
             case "links":
-                colTopPublicPublicField.setValue("=ARRAYFORMULA(IF(Parsed!A2:A=\"\",\"\",\"<p>\"&Parsed!A2:A&Parsed!B2:B&Parsed!C2:C&Parsed!D2:D&Parsed!E2:E&Parsed!F2:F&Parsed!G2:G&\"</p>\"))");
+                colTopPublicPublicField.setValue("=ARRAYFORMULA(IF(Parsed!B2:B=\"\",\"\",\"<p>\"&Parsed!B2:B&Parsed!C2:C&Parsed!D2:D&Parsed!E2:E&Parsed!F2:F&Parsed!G2:G&Parsed!H2:H&\"</p>\"))");
                 break;
             case "related":
                 colTopPublicPublicField.setValue("=createHtmlArrayRelatedLists(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"related\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"related\",Data!A1:1,0),4),\"1\",\"\")))");
