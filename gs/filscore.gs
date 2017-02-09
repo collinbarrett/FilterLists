@@ -87,6 +87,6 @@ function updateFilScoreArrayFormula(filScoreArrayFormula) {
 
 function copyFilScoreToPublic() {
     var colIndexFilScoreFilScore = getColIndex(sFilScore, "filScore");
-    var colIndexFilScorePublic = getColIndex(sPublic, "filScore");
-    copyRange(sFilScore, colIndexFilScoreFilScore + "2:" + colIndexFilScoreFilScore, sPublic, colIndexFilScorePublic + "2:" + colIndexFilScorePublic);
+    var colIndexPublicFilScore = getColIndex(sPublic, "filScore");
+    copyRange(sFilScore, colIndexFilScoreFilScore + "2:" + colIndexFilScoreFilScore, sPublic, colIndexPublicFilScore + "2:" + colIndexPublicFilScore);
 }
