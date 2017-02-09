@@ -34,7 +34,7 @@ function getColIndicesWithHeaderSubstring(sheet, colHeaderSubstring) {
     var colIndices = new Array();
     for (var i = 0, headerDataLength = headerData[0].length; i < headerDataLength; i++) {
         if (headerData[0][i].indexOf(colHeaderSubstring) != -1) {
-            colIndices.push(String.fromCharCode(65 + headerData[0][i]));
+            colIndices.push(String.fromCharCode(65 + i));
         }
     }
     return colIndices;

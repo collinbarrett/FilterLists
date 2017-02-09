@@ -38,10 +38,29 @@ function createHtmlArrayLinkButton(htmlType, url, listName) {
 }
 
 function createHtmlArrayTags() {
-    var tagsHtml = new Array();
-    var colIndexDataTags = getColIndicesWithHeaderSubstring(sData, "tag");
-    for (var i = 0, colIndexDataTagsLength = colIndexDataTags.length; i < colIndexDataTagsLength; i++) {}
-    tagsHtml.push(0);
+    var tagsHtml = [];
+    var numLists = getNumLists(sData);
+    var colIndicesDataTags = getColIndicesWithHeaderSubstring(sData, "tag");
+    for (var i = 0, colIndicesDataTagsLength = colIndicesDataTags.length; i < colIndicesDataTagsLength; i++) {
+        var colTopDataDataTag = sData.getRange(colIndicesDataTags[i] + "1").getValue();
+        var colDataDataTag = sData.getRange(colIndicesDataTags[i] + "2:" + colIndicesDataTags[i]).getValues();
+        for (var j = 0; j < numLists; j++) {
+            if (i == 0) {
+                tagsHtml[j] = "";
+            }
+            if (colDataDataTag[j].toString() != "") {
+                var colDataDataTagParsed = colDataDataTag[j].toString().split(',');
+                for (var k = 0, colDataDataTagParsedLength = colDataDataTagParsed.length; k < colDataDataTagParsedLength; k++) {
+                    switch (colTopDataDataTag) {
+                        case "tagLang":
+                            tagsHtml[j] += "<span class=\"tag-lang\">" + colDataDataTagParsed[k] + "</span>";
+                            break;
+                        default:
+                    }
+                }
+            }
+        }
+    }
     return tagsHtml;
 }
 

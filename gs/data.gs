@@ -75,7 +75,8 @@ function refreshPublic() {
                 colTopPublicPublicField.setValue("=createHtmlArrayListName(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"list\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"list\",Data!A1:1,0),4),\"1\",\"\")))");
                 break;
             case "tags":
-                colTopPublicPublicField.setValue("=ARRAYFORMULA(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"\")))");
+                copyTagsToPublic();
+                //colTopPublicPublicField.setValue("=ARRAYFORMULA(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"\")))");
                 break;
             case "description":
                 if (getColIndex(sData, "descrSourceUrl")) {
@@ -96,4 +97,10 @@ function refreshPublic() {
         colRangePublicPublicField.clearContent();
         colRangePublicPublicField.setValues(colDataPublicPublicField);
     }
+}
+
+function copyTagsToPublic() {
+    var colIndexParsedTags = getColIndex(sParsed, "tags");
+    var colIndexPublicTags = getColIndex(sPublic, "tags");
+    copyRange(sParsed, colIndexParsedTags + "2:" + colIndexParsedTags, sPublic, colIndexPublicTags + "2:" + colIndexPublicTags);
 }
