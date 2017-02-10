@@ -1734,48 +1734,62 @@
     "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/abpindo+easylist.txt",
+    "tagLang": ["id"],
     "related": ["ABPindo", "EasyList"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/bulgarian_list+easylist.txt",
+    "tagLang": ["bg"],
     "related": ["Bulgarian List", "EasyList"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt",
+    "tagLang": ["zh"],
     "related": ["EasyList China", "EasyList"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistczechslovak+easylist.txt",
+    "tagLang": ["cs", "sl"],
     "related": ["EasyList Czech and Slovak", "EasyList"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch+easylist.txt",
+    "tagLang": ["nl"],
     "related": ["EasyList Dutch", "EasyList"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany+easylist.txt",
+    "tagLang": ["de"],
     "related": ["EasyList Germany", "EasyList"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/israellist+easylist.txt",
+    "tagLang": ["he"],
     "related": ["EasyList Hebrew", "EasyList"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly+easylist.txt",
+    "tagLang": ["it"],
     "related": ["EasyList Italy", "EasyList"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistlithuania+easylist.txt",
+    "tagLang": ["lt"],
     "related": ["EasyList Lithuania", "EasyList"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy+easylist.txt",
     "related": ["EasyPrivacy", "EasyList"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/latvianlist+easylist.txt",
+    "tagLang": ["lv"],
     "related": ["Latvian List", "EasyList"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/liste_ar+liste_fr+easylist.txt",
+    "tagLang": ["ar", "fr"],
     "related": ["Liste AR", "Liste FR", "EasyList"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/liste_fr+easylist.txt",
+    "tagLang": ["fr"],
     "related": ["Liste FR", "EasyList"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/rolist+easylist.txt",
+    "tagLang": ["ro"],
     "related": ["ROList", "EasyList"]
 }, {
     "viewUrl": "https://easylist-downloads.adblockplus.org/ruadlist+easylist.txt",
+    "tagLang": ["ru"],
     "related": ["RU AdList", "EasyList"]
 }, {
     "list": "Adblock Korea",
