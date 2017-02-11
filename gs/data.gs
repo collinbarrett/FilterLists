@@ -4,7 +4,8 @@ function refreshData() {
     sData.clearContents();
     sData.getRange(1, 1, data.length, data[0].length).setValues(data);
     concatNamelessComboLists();
-    sData.getRange(2, 1, data.length, data[0].length).sort(1);
+    var colIndexNumDataList = getColIndexNum(sData, "list");
+    sData.getRange(2, 1, data.length, data[0].length).sort(colIndexNumDataList);
     refreshParsed();
     refreshPublic();
 }
@@ -27,6 +28,7 @@ function refreshParsed() {
     for (var i = 0, parsedFieldsLength = parsedFields.length; i < parsedFieldsLength; i++) {
         var colIndexParsedUrlType = getColIndex(sParsed, parsedFields[i]);
         var colRangeParsedUrlType = sParsed.getRange(colIndexParsedUrlType + "2:" + colIndexParsedUrlType);
+        var colIndexDataList = getColIndex(sData, "list");
         colRangeParsedUrlType.clearContent();
         var colTopParsedUrlType = sParsed.getRange(colIndexParsedUrlType + "2");
         switch (parsedFields[i]) {
@@ -34,26 +36,26 @@ function refreshParsed() {
                 colTopParsedUrlType.setValue("=createHtmlArrayTags()");
                 break;
             case "viewUrl":
-                colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"viewUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!A2:A)");
+                colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"viewUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!" + colIndexDataList + "2:" + colIndexDataList + ")");
                 break;
             case "addUrl":
                 var colIndexDataViewUrl = getColIndex(sData, "viewUrl");
-                colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"addUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(Data!" + colIndexDataViewUrl + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(Data!" + colIndexDataViewUrl + "1,Data!A1:1,0),4),\"1\",\"\")),Data!A2:A)");
+                colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"addUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(Data!" + colIndexDataViewUrl + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(Data!" + colIndexDataViewUrl + "1,Data!A1:1,0),4),\"1\",\"\")),Data!" + colIndexDataList + "2:" + colIndexDataList + ")");
                 break;
             case "homeUrl":
-                colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"homeUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!A2:A)");
+                colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"homeUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!" + colIndexDataList + "2:" + colIndexDataList + ")");
                 break;
             case "forumUrl":
-                colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"forumUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!A2:A)");
+                colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"forumUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!" + colIndexDataList + "2:" + colIndexDataList + ")");
                 break;
             case "issuesUrl":
-                colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"issuesUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!A2:A)");
+                colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"issuesUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!" + colIndexDataList + "2:" + colIndexDataList + ")");
                 break;
             case "email":
-                colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"email\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!A2:A)");
+                colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"email\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!" + colIndexDataList + "2:" + colIndexDataList + ")");
                 break;
             case "donateUrl":
-                colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"donateUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!A2:A)");
+                colTopParsedUrlType.setValue("=createHtmlArrayLinkButton(\"donateUrl\",INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(" + colIndexParsedUrlType + "1,Data!A1:1,0),4),\"1\",\"\")),Data!" + colIndexDataList + "2:" + colIndexDataList + ")");
                 break;
             default:
         }
@@ -76,7 +78,6 @@ function refreshPublic() {
                 break;
             case "tags":
                 copyTagsToPublic();
-                //colTopPublicPublicField.setValue("=ARRAYFORMULA(INDIRECT(\"Data!\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"2\")&\":\"&SUBSTITUTE(ADDRESS(1,MATCH(\"tagLang\",Data!A1:1,0),4),\"1\",\"\")))");
                 break;
             case "description":
                 if (getColIndex(sData, "descrSourceUrl")) {
