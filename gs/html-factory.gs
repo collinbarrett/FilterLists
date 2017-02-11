@@ -53,7 +53,7 @@ function createHtmlArrayTags() {
                 for (var k = 0, colDataDataTagParsedLength = colDataDataTagParsed.length; k < colDataDataTagParsedLength; k++) {
                     switch (colTopDataDataTag) {
                         case "tagLang":
-                            tagsHtml[j] += "<img src=\"https://img.shields.io/badge/lang-" + colDataDataTagParsed[k] + "-red.svg\" alt=\"lang: " + colDataDataTagParsed[k] + "\">";
+                            tagsHtml[j] += "<img src=\"https://filterlists.com/tags/lang-" + colDataDataTagParsed[k] + "-red.svg\" alt=\"lang: " + colDataDataTagParsed[k] + "\">";
                             break;
                         default:
                     }
