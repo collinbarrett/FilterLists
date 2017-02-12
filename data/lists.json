@@ -1127,8 +1127,6 @@
     "viewUrl": "https://hosts-file.net/grm.txt"
 }, {
     "descr": "Special classification for persons caught spamming the hpHosts forums.",
-    ts forums.
-    ",
     "descrSourceUrl": "https://hosts-file.net/?s=classifications",
     "forumUrl": "https://forum.hosts-file.net/",
     "homeUrl": "https://hosts-file.net/",
@@ -1136,7 +1134,7 @@
     "related": ["hpHosts"],
     "viewUrl": "https://hosts-file.net/hfs.txt"
 }, {
-    "descr": "Sites engaged in browser hijacking or other forms of hijacking (OS services, bandwidth, DNS, etc.dth, DNS, etc.).",
+    "descr": "Sites engaged in browser hijacking or other forms of hijacking (OS services, bandwidth, DNS, etc.).",
     "descrSourceUrl": "https://hosts-file.net/?s=classifications",
     "forumUrl": "https://forum.hosts-file.net/",
     "homeUrl": "https://hosts-file.net/",
@@ -1235,7 +1233,6 @@
     "homeUrl": "http://winhelp2002.mvps.org/hosts.htm",
     "list": "MVPS HOSTS",
     "related": ["Unified Hosts", "Unified Hosts + Gambling", "Unified Hosts + Porn", "Unified Hosts + Social", "Unified Hosts + Gambling + Porn", "Unified Hosts + Gambling + Social", "Unified Hosts + Porn + Social", "Unified Hosts + Gambling + Porn + Social"],
-    n + Social "],
     "viewUrl": "http://winhelp2002.mvps.org/hosts.txt"
 }, {
     "descr": "A personal filter list. Each host is either an ad, phishing, malicious, analytics, or clickbait.",
@@ -1277,10 +1274,8 @@
     "descrSourceUrl": "https://github.com/liamja/Prebake",
     "email": "cookies@prebake.eu",
     "homeUrl": "http://prebake.eu/",
-    "issuesUrl": "h   "
-    issuesUrl ": "
-    https: //github.com/liamja/Prebake/issues",
-        "list": "Prebake Quiet",
+    "issuesUrl": "https://github.com/liamja/Prebake/issues",
+    "list": "Prebake Quiet",
     "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/quiet.txt"
 }, {
     "descr": "A text file with filters to aid in blocking online trackers, for use in a blocker such as uBlock Origin.",
@@ -1322,9 +1317,6 @@
     "list": "Ransomware Tracker Locky Ransomware C2 Domain Blocklist",
     "related": ["Ransomware Tracker Ransomware Domain Blocklist"],
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_C2_DOMBL.txt"
-}, {
-    wUrl ": "
-    https: //ransomwaretracker.abuse.ch/downloads/LY_C2_DOMBL.txt"
 }, {
     "descr": "Blocks Locky from botnet command and control servers by IP.",
     "email": "rt-intel@abuse.ch",
