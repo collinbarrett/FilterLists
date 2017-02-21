@@ -59,6 +59,7 @@
     "tagLang": ["id"],
     "viewUrl": "https://raw.githubusercontent.com/heradhis/indonesianadblockrules/master/subscriptions/abpindo.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#ABPindo\">ABPindo</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "ABPindo + EasyList",
     "related": ["ABPindo", "EasyList"],
     "tagLang": ["id"],
