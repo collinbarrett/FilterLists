@@ -1955,34 +1955,58 @@
     "list": "UncheckyAds",
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts"
 }, {
+    "descr": "Extending and consolidating hosts files from a variety of sources",
+    "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+    "homeUrl": "https://github.com/StevenBlack/hosts",
     "list": "Unified Hosts",
     "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
 }, {
+    "descr": "Extending and consolidating hosts files from a variety of sources",
+    "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+    "homeUrl": "https://github.com/StevenBlack/hosts",
     "list": "Unified Hosts + Gambling",
     "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts"
 }, {
+    "descr": "Extending and consolidating hosts files from a variety of sources",
+    "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+    "homeUrl": "https://github.com/StevenBlack/hosts",
     "list": "Unified Hosts + Gambling + Porn",
     "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts"
 }, {
+    "descr": "Extending and consolidating hosts files from a variety of sources",
+    "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+    "homeUrl": "https://github.com/StevenBlack/hosts",
     "list": "Unified Hosts + Gambling + Porn + Social",
     "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts"
 }, {
+    "descr": "Extending and consolidating hosts files from a variety of sources",
+    "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+    "homeUrl": "https://github.com/StevenBlack/hosts",
     "list": "Unified Hosts + Gambling + Social",
     "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts"
 }, {
+    "descr": "Extending and consolidating hosts files from a variety of sources",
+    "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+    "homeUrl": "https://github.com/StevenBlack/hosts",
     "list": "Unified Hosts + Porn",
     "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts"
 }, {
+    "descr": "Extending and consolidating hosts files from a variety of sources",
+    "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+    "homeUrl": "https://github.com/StevenBlack/hosts",
     "list": "Unified Hosts + Porn + Social",
     "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-social/hosts"
 }, {
+    "descr": "Extending and consolidating hosts files from a variety of sources",
+    "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+    "homeUrl": "https://github.com/StevenBlack/hosts",
     "list": "Unified Hosts + Social",
     "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts"
