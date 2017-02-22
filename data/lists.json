@@ -1169,6 +1169,9 @@
     "tagLang": ["ja"],
     "viewUrl": "https://www.cubby.com/pl/ja.txt/_447d3ae976114d51b01bc83b7a1a77eb"
 }, {
+    "descr": "hpHosts is a community managed and maintained hosts file that allows an additional layer of protection against access to ad, tracking and malicious websites.",
+    "descrSourceUrl": "https://www.hosts-file.net/",
+    "homeUrl": "https://www.hosts-file.net/",
     "list": "hpHosts",
     "related": ["hpHosts ATS", "hpHosts EMD", "hpHosts EXP", "hpHosts FSA", "hpHosts GRM", "hpHosts HFS", "hpHosts HJK", "hpHosts MMT", "hpHosts PHA", "hpHosts PSH", "hpHosts WRZ"],
     "viewUrl": "https://www.hosts-file.net/download/hosts.txt"
@@ -1581,12 +1584,14 @@
     "list": "Ransomware Tracker CryptoWall Ransomware Payment Sites IP Blocklist",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_PS_IPBL.txt"
 }, {
+    "descr": "A combined domain blocklist for blocking ransomware.",
     "email": "rt-intel@abuse.ch",
     "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
     "list": "Ransomware Tracker Domain Blocklist",
     "related": ["Ransomware Tracker CryptoWall Ransomware Payment Sites Domain Blocklist", "Ransomware Tracker Locky Ransomware C2 Domain Blocklist", "Ransomware Tracker Locky Ransomware Payment Sites Domain Blocklist", "Ransomware Tracker TeslaCrypt Ransomware Payment Sites Domain Blocklist", "Ransomware Tracker TorrentLocker Ransomware C2 Domain Blocklist", "Ransomware Tracker TorrentLocker Ransomware Payment Sites Domain Blocklist"],
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt"
 }, {
+    "descr": "A combined IP blocklist for blocking ransomware.",
     "email": "rt-intel@abuse.ch",
     "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
     "list": "Ransomware Tracker IP Blocklist",
@@ -1689,6 +1694,7 @@
     "related": ["Ransomware Tracker Ransomware IP Blocklist"],
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TL_PS_IPBL.txt"
 }, {
+    "descr": "A combined URL blocklist for blocking ransomware.",
     "email": "rt-intel@abuse.ch",
     "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
     "list": "Ransomware Tracker URL Blocklist",
