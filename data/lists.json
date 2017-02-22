@@ -271,6 +271,8 @@
     "list": "Adguard Annoyances Filter",
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=14"
 }, {
+    "descr": "It is an alternative, free way to block ads, trackers and phishing websites, and also a parental control instrument.",
+    "homeUrl": "https://adguard.com/en/adguard-dns/overview.html",
     "list": "Adguard DNS Filter",
     "related": ["Adguard English Filter", "Adguard Social Media Filter", "Adguard Spyware Filter", "Adguard Mobile Ads Filter", "EasyList", "EasyPrivacy"],
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=15"
@@ -545,6 +547,7 @@
     "tagLang": ["bg"],
     "viewUrl": "https://stanev.org/abp/adblock_bg.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#BulgarianList\">Bulgarian List</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "Bulgarian List + EasyList",
     "related": ["Bulgarian List", "EasyList"],
     "tagLang": ["bg"],
@@ -714,6 +717,7 @@
     "tagLang": ["zh"],
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#EasyListChina\">EasyList China</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "EasyList China + EasyList",
     "related": ["EasyList China", "EasyList"],
     "tagLang": ["zh"],
@@ -730,6 +734,7 @@
     "tagLang": ["cs", "sl"],
     "viewUrl": "https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#EasyListCzechandSlovak\">EasyList Czech and Slovak</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "EasyList Czech and Slovak + EasyList",
     "related": ["EasyList Czech and Slovak", "EasyList"],
     "tagLang": ["cs", "sl"],
@@ -745,6 +750,7 @@
     "tagLang": ["nl"],
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#EasyListDutch\">EasyList Dutch</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "EasyList Dutch + EasyList",
     "related": ["EasyList Dutch", "EasyList"],
     "tagLang": ["nl"],
@@ -761,6 +767,7 @@
     "tagLang": ["de"],
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#EasyListGermany\">EasyList Germany</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "EasyList Germany + EasyList",
     "related": ["EasyList Germany", "EasyList"],
     "tagLang": ["de"],
@@ -776,6 +783,7 @@
     "tagLang": ["he"],
     "viewUrl": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#EasyListHebrew\">EasyList Hebrew</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "EasyList Hebrew + EasyList",
     "related": ["EasyList Hebrew", "EasyList"],
     "tagLang": ["he"],
@@ -791,6 +799,7 @@
     "tagLang": ["it"],
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#EasyListItaly\">EasyList Italy</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "EasyList Italy + EasyList",
     "related": ["EasyList Italy", "EasyList"],
     "tagLang": ["it"],
@@ -817,6 +826,7 @@
     "tagLang": ["lt"],
     "viewUrl": "http://margevicius.lt/easylistlithuania.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#EasyListLithuania\">EasyList Lithuania</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "EasyList Lithuania + EasyList",
     "related": ["EasyList Lithuania", "EasyList"],
     "tagLang": ["lt"],
@@ -869,6 +879,7 @@
     "related": ["EasyPrivacy Without International Filters", "EasyPrivacy + EasyList", "Fanboy's Complete List", "Fanboy's Ultimate List", "GNU Blacklist"],
     "viewUrl": "https://easylist.to/easylist/easyprivacy.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#EasyPrivacy\">EasyPrivacy</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "EasyPrivacy + EasyList",
     "related": ["EasyPrivacy", "EasyList"],
     "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy+easylist.txt"
@@ -955,6 +966,7 @@
     "list": "Fanboy's Anti-thirdparty Fonts",
     "viewUrl": "https://fanboy.co.nz/fanboy-antifonts.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#EasyList\">EasyList</a>, <a href=\"https://filterlists.com/#EasyPrivacy\">EasyPrivacy</a>, and <a href=\"https://filterlists.com/#FanboysEnhancedTrackingList\">Fanboy's Enhanced Tracking List</a>.",
     "list": "Fanboy's Complete List",
     "related": ["EasyList", "EasyPrivacy", "Fanboy's Enhanced Tracking List"],
     "viewUrl": "https://fanboy.co.nz/r/fanboy-complete.txt"
@@ -1292,10 +1304,12 @@
     "list": "JAB Creations' Adblock Plus Filter Subscription",
     "viewUrl": "http://www.jabcreations.com/downloads/adblock-filters.php"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#MalwareDomainList\">Malware Domain List</a>, <a href=\"https://filterlists.com/#PeterLowesList\">Peter Lowe's List</a>, <a href=\"https://filterlists.com/#Spybot\">Spybot</a>, and <a href=\"https://filterlists.com/#SpywareBlaster\">Spyware Blaster</a>.",
     "list": "Jansal's Hosts",
     "related": ["Malware Domain List", "Peter Lowe's List", "Spybot", "Spyware Blaster"],
     "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hosts"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#MalwareDomainList\">Malware Domain List</a> and <a href=\"https://filterlists.com/#Spybot\">Spybot</a>.",
     "list": "Jansal's Hosts Light",
     "related": ["Malware Domain List", "Spybot"],
     "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hostslt"
@@ -1350,6 +1364,7 @@
     "tagLang": ["lv"],
     "viewUrl": "https://notabug.org/latvian-list/adblock-latvian/raw/master/lists/latvian-list.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#LatvianList\">Latvian List</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "Latvian List + EasyList",
     "related": ["Latvian List", "EasyList"],
     "tagLang": ["lv"],
@@ -1389,6 +1404,7 @@
     "tagLang": ["ar"],
     "viewUrl": "https://easylist-downloads.adblockplus.org/Liste_AR.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#ListeAR\">Liste AR</a>, <a href=\"https://filterlists.com/#ListeFR\">Liste FR</a>, and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "Liste AR + Liste FR + EasyList",
     "related": ["Liste AR", "Liste FR", "EasyList"],
     "tagLang": ["ar", "fr"],
@@ -1404,6 +1420,7 @@
     "tagLang": ["fr"],
     "viewUrl": "https://easylist-downloads.adblockplus.org/liste_fr.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#ListeFR\">Liste FR</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "Liste FR + EasyList",
     "related": ["Liste FR", "EasyList"],
     "tagLang": ["fr"],
@@ -1696,6 +1713,7 @@
     "tagLang": ["ro"],
     "viewUrl": "https://www.zoso.ro/pages/rolist.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#ROList\">ROList</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "ROList + EasyList",
     "related": ["ROList", "EasyList"],
     "tagLang": ["ro"],
@@ -1718,6 +1736,7 @@
     "tagLang": ["ru"],
     "viewUrl": "https://easylist-downloads.adblockplus.org/advblock.txt"
 }, {
+    "descr": "A list combining <a href=\"https://filterlists.com/#RUAdList\">RU AdList</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "RU AdList + EasyList",
     "related": ["RU AdList", "EasyList"],
     "tagLang": ["ru"],
