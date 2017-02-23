@@ -8,7 +8,7 @@ Typical adblockers run as an extension in popular web browsers. As we browse the
 
 ## Software Support
 
-[Some](https://github.com/collinbarrett/FilterLists/issues/11) of the lists on FilterLists can be used in the following software tools.
+One can use [some](https://github.com/collinbarrett/FilterLists/issues/11) of the lists on FilterLists in the following software tools.
 
 *   [1Blocker](https://1blocker.com/)
 *   [AdAway](https://adaway.org/)
@@ -20,22 +20,22 @@ Typical adblockers run as an extension in popular web browsers. As we browse the
 
 ## FilScore<sup>beta</sup>
 
-FilScore will continue to evolve into a general score for lists based on factors such as popularity, quality, update frequency, update recency, support, coverage, etc. It is not meant to be a definitive quality score for each list, but rather to provide visitors with an approximation as to which lists are of higher subjective quality than others. It primarily serves as a more meaningful way to sort the lists than merely alphabetical. Visit this [GitHub Project](https://github.com/collinbarrett/FilterLists/projects/1) to learn more and contribute to this feature.
+FilScore continues to evolve into a general score for lists based on factors such as popularity, quality, update frequency, update recency, support, and coverage. It is not meant to be a final quality score for each list, but rather to provide visitors with an approximation as to which lists are of higher subjective quality than others. It primarily serves as a more meaningful way to sort the lists than merely alphabetical. Visit this [GitHub Project](https://github.com/collinbarrett/FilterLists/projects/1) to learn more and contribute to this feature.
 
 ## Add List / Report Bug
 
-List updates and bug reports are collected on [GitHub](https://github.com/collinbarrett/FilterLists/issues).
+We collect list updates and bug reports on [GitHub](https://github.com/collinbarrett/FilterLists/issues).
 
 ## Miscellany
 
 ### Disclaimer
 
-<small>FilterLists does not condone or endorse implementing any particular filter list or blocking any particular advertisement network. Make sure to financially support your favorite sites in some way if you choose to block their advertisements. FilterLists is also in no way officially affiliated with any of the software vendors or list maintainers referenced on this site.</small>
+FilterLists does not condone or endorse implementing any particular filter list or blocking any particular advertisement network. Make sure to financially support your favorite sites in some way if you choose to block their advertisements. FilterLists is also in no way officially affiliated with any of the software vendors or list maintainers referenced on this site.
 
 ### Terms
 
-<small>FilterLists is open-source ([mostly](https://github.com/collinbarrett/FilterLists#building)) and provided as-is under the [GPL-3.0](https://github.com/collinbarrett/FilterLists/blob/master/LICENSE) licence.</small>
+FilterLists is open-source ([mostly](https://github.com/collinbarrett/FilterLists#building)) and provided as-is under the [GPL-3.0](https://github.com/collinbarrett/FilterLists/blob/master/LICENSE) licence.
 
 ### Privacy
 
-<small>We respect your privacy. That is the whole point of this site. However, some minor analytical data is collected via both [CloudFlare](https://www.cloudflare.com/analytics/) and a self-hosted instance of [Piwik](https://piwik.org/) (IPs and fingerprints heavily anonymized). This data is used solely for developing improvements to this site (such as [FilScore](#filscorebeta)), and individual data is never shared.</small>
+We respect your privacy. That is the whole point of this site. However, this site does collect some minor analytical data via both [CloudFlare](https://www.cloudflare.com/analytics/) and a self-hosted instance of [Piwik](https://piwik.org/) (IPs and fingerprints heavily anonymized). This data is used solely for developing improvements to this site (such as [FilScore](#filscorebeta)), and we never share individualized data.
