@@ -1556,7 +1556,7 @@
     "homeUrl": "https://github.com/metaphoricgiraffe/tracking-filters",
     "issuesUrl": "https://github.com/metaphoricgiraffe/tracking-filters/issues",
     "list": "Privacy Filters",
-    "viewUrl": "https://raw.githubusercontent.com/metaphorcontent.com/metaphoricgiraffe/tracking-filters/master/trackingfilters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/metaphoricgiraffe/tracking-filters/master/trackingfilters.txt"
 }, {
     "descr": "Blocks CryptoWall from botnet command and control servers by domain.",
     "email": "rt-intel@abuse.ch",
