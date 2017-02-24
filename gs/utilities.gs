@@ -48,7 +48,7 @@ function encodeUrlArray(urlArray) {
         return urlArray;
     } else {
         if (urlArray) {
-            return encodeURIComponent(urlArray);
+            return encodeURI(urlArray);
         } else {
             return "";
         }
