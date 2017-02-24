@@ -41,13 +41,34 @@
     "tagLang": ["ja"],
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_paranoid.txt"
 }, {
-    "descr": "Blocks Italian regional advertisements and trackers.",
+    "descr": "Specific for Italian websites but with an eye also to the most visited international, is the main form and the list officially recognized (for Italy), perfectly compatible with AdBlock Plus.",
+    "descrSourceUrl": "https://github.com/gioxx/xfiles",
     "donateUrl": "https://paypal.me/gioxx/5",
     "forumUrl": "https://abpxfiles.uservoice.com/",
     "homeUrl": "http://noads.it/",
+    "issuesUrl": "https://github.com/gioxx/xfiles/issues",
     "list": "ABP X Files",
     "tagLang": ["it"],
     "viewUrl": "http://noads.it/filtri.txt"
+}, {
+    "descr": "The module that serves to protect the user's navigation, seamlessly integrates to subscriptions already installed on your Adblock Plus.",
+    "descrSourceUrl": "https://github.com/gioxx/xfiles",
+    "donateUrl": "https://paypal.me/gioxx/5",
+    "forumUrl": "https://abpxfiles.uservoice.com/",
+    "homeUrl": "http://noads.it/",
+    "issuesUrl": "https://github.com/gioxx/xfiles/issues",
+    "list": "X Files: HWS Harmful WebSites",
+    "related": ["Malware Domain List"],
+    "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/siteblock.txt"
+}, {
+    "descr": "Born from the need to block advertisements on the increasingly popular social network, this module is a great way to complete the protection offered by Adblock Plus and X Files during daily navigation. It may be associated with the main module of the X-Files or third-party lists.",
+    "descrSourceUrl": "https://github.com/gioxx/xfiles",
+    "donateUrl": "https://paypal.me/gioxx/5",
+    "forumUrl": "https://abpxfiles.uservoice.com/",
+    "homeUrl": "http://noads.it/",
+    "issuesUrl": "https://github.com/gioxx/xfiles/issues",
+    "list": "X Files: NoFacebookAds",
+    "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/facebook.txt"
 }, {
     "descr": "ABPindo is an affiliated filter list written by hermawan that specifically removes adverts on Indonesian language websites.",
     "descrSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
@@ -171,6 +192,13 @@
     "list": "Adblock & uBlock Polish Filters",
     "tagLang": ["pl"],
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt"
+}, {
+    "descr": "Blocks Estonian regional advertisements and trackers.",
+    "email": "adblock@gurud.ee",
+    "homeUrl": "http://gurud.ee/veeb/adblock",
+    "list": "Adblock Filters by Gurud.ee",
+    "tagLang": ["et"],
+    "viewUrl": "http://gurud.ee/ab.txt"
 }, {
     "descr": "Ad blocking rules for Iranian/Persian websites.",
     "descrSourceUrl": "https://github.com/farrokhi/adblock-iran",
@@ -495,6 +523,14 @@
     "list": "BadHosts",
     "viewUrl": "http://www.hostsfile.org/Downloads/hosts.txt"
 }, {
+    "descr": "This is a list for blocking advertisements on banki.ru site which is not blocked by \"conventional\" list.",
+    "descrSourceUrl": "https://raw.githubusercontent.com/rebelion76/bankiru_plus_adblock_list/master/bankiru_plus.txt",
+    "homeUrl": "https://github.com/rebelion76/bankiru_plus_adblock_list",
+    "issuesUrl": "https://github.com/rebelion76/bankiru_plus_adblock_list/issues",
+    "list": "Banki.ru Plus Adblock List",
+    "tagLang": ["ru"],
+    "viewUrl": "https://raw.githubusercontent.com/rebelion76/bankiru_plus_adblock_list/master/bankiru_plus.txt"
+}, {
     "descr": "Adblock / Adblock plus filter list for blocking cookie notifications.",
     "descrSourceUrl": "https://github.com/r4vi/block-the-eu-cookie-shit-list",
     "homeUrl": "https://github.com/r4vi/block-the-eu-cookie-shit-list",
@@ -722,6 +758,14 @@
     "related": ["EasyList China", "EasyList"],
     "tagLang": ["zh"],
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt"
+}, {
+    "descr": "Chinese supplement for the EasyList filters on IT sites.",
+    "homeUrl": "https://github.com/nfer/easylistchina_it",
+    "issuesUrl": "https://github.com/nfer/easylistchina_it/issues",
+    "list": "EasyList China in IT",
+    "related": ["EasyList China"],
+    "tagLang": ["zh"],
+    "viewUrl": "https://raw.githubusercontent.com/nfer/easylistchina_it/master/easylistchina_it.txt"
 }, {
     "descr": "Official filter list file used for blocking ads on Czech and Slovak websites.",
     "descrSourceUrl": "https://github.com/tomasko126/easylistczechandslovak",
@@ -1287,6 +1331,13 @@
     "list": "I Don't Care about Cookies",
     "viewUrl": "https://www.kiboke-studio.hr/i-dont-care-about-cookies/abp/"
 }, {
+    "descr": "List of filters for Adblock Plus that block cookie notices on European websites.",
+    "descrSourceUrl": "https://github.com/Rudloff/adblock-imokwithcookies",
+    "homeUrl": "https://github.com/Rudloff/adblock-imokwithcookies",
+    "issuesUrl": "https://github.com/Rudloff/adblock-imokwithcookies/issues",
+    "list": "I'm OK with Cookies",
+    "viewUrl": "https://raw.githubusercontent.com/Rudloff/adblock-imokwithcookies/master/filters.txt"
+}, {
     "descr": "Adblock Plus list for Icelandic websites.",
     "descrSourceUrl": "http://adblock.gardar.net/",
     "email": "adblock@gardar.net",
@@ -1294,6 +1345,13 @@
     "list": "Icelandic ABP List",
     "tagLang": ["is"],
     "viewUrl": "http://adblock.gardar.net/is.abp.txt"
+}, {
+    "descr": "This filter list for AdBlock removes popup sections on sites that distracts from the main content.",
+    "descrSourceUrl": "https://ilyakatz.github.io/adblock_filters/",
+    "homeUrl": "https://ilyakatz.github.io/adblock_filters/",
+    "issuesUrl": "https://github.com/ilyakatz/adblock_filters/issues",
+    "list": "Ilyakatz's Additional Filters for Adblock",
+    "viewUrl": "https://raw.githubusercontent.com/ilyakatz/adblock_filters/master/inpage_popups.txt"
 }, {
     "descr": "Filter any site/subsite who's only purpose is to log your IP.",
     "descrSourceUrl": "https://github.com/piperun/iploggerfilter",
@@ -1382,6 +1440,12 @@
     "tagLang": ["ru"],
     "viewUrl": "https://raw.githubusercontent.com/Rpsl/adblock-leadgenerator-list/master/list/list.txt"
 }, {
+    "descr": "Blocks advertisements and sponsored posts on LinkedIn.",
+    "homeUrl": "https://github.com/taylr/linkedinsanity",
+    "issuesUrl": "https://github.com/taylr/linkedinsanity/issues",
+    "list": "Linkedinsanity Rules",
+    "viewUrl": "https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt"
+}, {
     "descr": "Filter that enables removing of ads, trackers, and various scripts from websites with Korean content. Based on <a href=\"https://filterlists.com/stale/#Corset\">Corset</a>, <a href=\"https://filterlists.com/regional/#KoreanAdblockList\">Korean Adblock List</a>, <a href=\"https://filterlists.com/regional/#YousList\">YousList</a>.",
     "descrSourceUrl": "https://github.com/SlowMemory/List-KR",
     "homeUrl": "https://list-kr.github.io/",
@@ -1458,6 +1522,13 @@
     "list": "Malware URLs Gray Area",
     "viewUrl": "http://malwareurls.joxeankoret.com/grayarea.txt"
 }, {
+    "descr": "Blocks Japanese regional advertisements and trackers.",
+    "homeUrl": "https://github.com/mayve/private-adblock-filters",
+    "issuesUrl": "https://github.com/mayve/private-adblock-filters/issues",
+    "list": "Mayve's Private Adblock Filters",
+    "tagLang": ["jp"],
+    "viewUrl": "https://github.com/mayve/private-adblock-filters/raw/master/Adblock_List.txt"
+}, {
     "descr": "Prevents Facebook and other users of Facebook chat from seeing that you have read a message.",
     "list": "Message \"Seen\" Remover for Facebook",
     "viewUrl": "https://easylist-downloads.adblockplus.org/message_seen_remover_for_facebook.txt"
@@ -1510,6 +1581,13 @@
     "homeUrl": "https://openphish.com/",
     "list": "OpenPhish Phishing Intelligence Community Feed",
     "viewUrl": "https://openphish.com/feed.txt"
+}, {
+    "descr": "Adblock filter for obtrusive overlay (pop up) elements and various other annoying elements on websites.",
+    "descrSourceUrl": "https://github.com/LordBadmintonofYorkshire/Overlay-Blocker",
+    "homeUrl": "https://github.com/LordBadmintonofYorkshire/Overlay-Blocker",
+    "issuesUrl": "https://github.com/LordBadmintonofYorkshire/Overlay-Blocker/issues",
+    "list": "Overlay Blocker",
+    "viewUrl": "https://raw.githubusercontent.com/LordBadmintonofYorkshire/Overlay-Blocker/master/blocklist.txt"
 }, {
     "descr": "Block advertisements.",
     "email": "pgl@yoyo.org",
@@ -1743,6 +1821,14 @@
     "tagLang": ["ru"],
     "viewUrl": "https://easylist-downloads.adblockplus.org/advblock.txt"
 }, {
+    "descr": "Blocks Russian regional advertisements and trackers.",
+    "email": "denis-ovs@yandex.ru",
+    "forumUrl": "https://forum.mozilla-russia.org/viewtopic.php?id=3679",
+    "homeUrl": "http://denis-ovs.narod.ru/",
+    "list": "RU AdList [Old]",
+    "tagLang": ["ru"],
+    "viewUrl": "http://denis-ovs.narod.ru/adblock.txt"
+}, {
     "descr": "A list combining <a href=\"https://filterlists.com/#RUAdList\">RU AdList</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
     "list": "RU AdList + EasyList",
     "related": ["RU AdList", "EasyList"],
@@ -1865,6 +1951,11 @@
     "homeUrl": "http://hostsfile.mine.nu/",
     "list": "The Hosts File Project Hosts",
     "viewUrl": "http://hostsfile.mine.nu/hosts0.txt"
+}, {
+    "descr": "Blocks advertisements and trackers.",
+    "homeUrl": "https://github.com/thoughtconverge/abf",
+    "list": "Thoughtconverge's Custom AdBlock Filters",
+    "viewUrl": "https://raw.githubusercontent.com/thoughtconverge/abf/master/abf.txt"
 }, {
     "descr": "Blocks Japanese regional advertisements and trackers.",
     "homeUrl": "http://tofukko.r.ribbon.to/abp.html",
@@ -2023,7 +2114,7 @@
     "homeUrl": "https://github.com/wiltteri/subscriptions",
     "list": "Wiltteri Reborn",
     "tagLang": ["fi"],
-    "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt"
+    "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/maiptions/master/wiltteri-reborn.txt"
 }, {
     "descr": "Blocks Korean regional advertisements and trackers.",
     "homeUrl": "https://github.com/yous/YousList",
@@ -2068,4 +2159,5 @@
     "list": "YouTube: Remove Youtube Suggestions",
     "related": "YouTube: Pure Video Experience",
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt"
+}] tions.txt "
 }]
