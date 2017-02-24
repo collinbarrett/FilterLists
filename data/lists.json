@@ -2114,7 +2114,7 @@
     "homeUrl": "https://github.com/wiltteri/subscriptions",
     "list": "Wiltteri Reborn",
     "tagLang": ["fi"],
-    "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/maiptions/master/wiltteri-reborn.txt"
+    "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt"
 }, {
     "descr": "Blocks Korean regional advertisements and trackers.",
     "homeUrl": "https://github.com/yous/YousList",
@@ -2159,5 +2159,4 @@
     "list": "YouTube: Remove Youtube Suggestions",
     "related": "YouTube: Pure Video Experience",
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt"
-}] tions.txt "
 }]
