@@ -40,21 +40,6 @@ function getColIndicesWithHeaderSubstring(sheet, colHeaderSubstring) {
     return colIndices;
 }
 
-function encodeUrlArray(urlArray) {
-    if (urlArray instanceof Array) {
-        for (var i in urlArray) {
-            urlArray[i] = encodeUrlArray(urlArray[i]);
-        }
-        return urlArray;
-    } else {
-        if (urlArray) {
-            return encodeURI(urlArray);
-        } else {
-            return "";
-        }
-    }
-}
-
 function trimUrlSlugArray(slugArray) {
     if (slugArray instanceof Array) {
         for (var i in slugArray) {
