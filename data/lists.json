@@ -1526,7 +1526,7 @@
     "homeUrl": "https://github.com/mayve/private-adblock-filters",
     "issuesUrl": "https://github.com/mayve/private-adblock-filters/issues",
     "list": "Mayve's Private Adblock Filters",
-    "tagLang": ["jp"],
+    "tagLang": ["ja"],
     "viewUrl": "https://github.com/mayve/private-adblock-filters/raw/master/Adblock_List.txt"
 }, {
     "descr": "Prevents Facebook and other users of Facebook chat from seeing that you have read a message.",
