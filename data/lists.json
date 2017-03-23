@@ -1112,7 +1112,7 @@
 }, {
     "descr": "A list combining <a href=\"https://filterlists.com/#EasyList\">EasyList</a>, <a href=\"https://filterlists.com/#EasyPrivacy\">EasyPrivacy</a>, <a href=\"https://filterlists.com/#FanboysEnhancedTrackingList\">Fanboy's Enhanced Tracking List</a>, and <a href=\"https://filterlists.com/#FanboysAnnoyanceList\">Fanboy's Annoyance List</a>.",
     "list": "Fanboy's Ultimate List",
-    "related": ["EasyList", "EasyPrivacy", "Fanboy's Enhanced Tracking List", "Fanboy's AnAnnoyance List"],
+    "related": ["EasyList", "EasyPrivacy", "Fanboy's Enhanced Tracking List", "Fanboy's Annoyance List"],
     "viewUrl": "https://fanboy.co.nz/r/fanboy-ultimate.txt"
 }, {
     "descr": "Blocks Vietnamese regional advertisements and trackers.",
