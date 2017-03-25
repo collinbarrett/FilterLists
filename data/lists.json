@@ -606,6 +606,13 @@
     "tagLang": ["zh"],
     "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
 }, {
+    "descr": "Clickbait Blocklist just blocks the most annoying clickbait ads. I don't mind ads; I just don't want clickbait crap about shocking celebrity photos and \"deep searches\" for local singles.",
+    "descrSourceUrl": "https://github.com/cpeterso/clickbait-blocklist/",
+    "homeUrl": "https://github.com/cpeterso/clickbait-blocklist/",
+    "issues": "https://github.com/cpeterso/clickbait-blocklist/issues",
+    "list": "Clickbait Blocklist",
+    "viewUrl": "https://raw.githubusercontent.com/cpeterso/clickbait-blocklist/master/clickbait-blocklist.txt"
+}, {
     "descr": "EFF maintains a Privacy Badger \"yellowlist\" of domains for which requests are allowed but Privacy Badger restricts access or availability of objectionable cookies and potentially other objectionable identifiers.",
     "descrSourceUrl": "https://github.com/EFForg/privacybadgerchrome/blob/master/doc/yellowlist-criteria.md",
     "donateUrl": "https://supporters.eff.org/donate/support-privacy-badger",
