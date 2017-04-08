@@ -5,11 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="7.0.7-m61" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\FilterLists.Data.Contracts\FilterLists.Data.Contracts.csproj" />
     <ProjectReference Include="..\FilterLists.Models\FilterLists.Models.csproj" />
   </ItemGroup>
 

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FilterLists.Models
 {
-    public class List
+    public class List : BaseEntity
     {
         [StringLength(1024)] [Column("description")] public string Description;
         [StringLength(512)] [Column("description_source_url")] public string DescriptionSourceUrl;
