@@ -1,8 +1,11 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using FilterLists.Data;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using MySQL.Data.EntityFrameworkCore;
 
 namespace FilterLists.API
 {
@@ -24,6 +27,10 @@ namespace FilterLists.API
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            services.AddEntityFramework()
+                .AddEntityFrameworkMySQL()
+                .AddDbContext<FilterListsContext>(options =>
+                    options.UseMySQL(ConnectionString));
             services.AddMvc();
         }
 
