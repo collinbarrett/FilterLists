@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FilterLists.Data\FilterLists.Data.csproj" />
+    <ProjectReference Include="..\FilterLists.Data.Contracts\FilterLists.Data.Contracts.csproj" />
     <ProjectReference Include="..\FilterLists.Models\FilterLists.Models.csproj" />
   </ItemGroup>
 
