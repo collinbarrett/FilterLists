@@ -17,5 +17,8 @@
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FilterLists.Data\FilterLists.Data.csproj" />
+  </ItemGroup>
 
 </Project>
