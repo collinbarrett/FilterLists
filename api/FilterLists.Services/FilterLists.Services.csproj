@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FilterLists.Data\FilterLists.Data.csproj" />
+    <ProjectReference Include="..\FilterLists.Models\FilterLists.Models.csproj" />
+  </ItemGroup>
+
+</Project>

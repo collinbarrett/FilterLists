@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace FilterLists.API
+namespace FilterLists.Api
 {
     public class Program
     {
