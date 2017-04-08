@@ -3,17 +3,18 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using FilterLists.Data.Contexts;
 using FilterLists.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace FilterLists.Data
+namespace FilterLists.Data.Repositories
 {
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {
-        private readonly FilterListsContext _context;
+        private readonly FilterListsDbContext _context;
         private readonly DbSet<T> _entities;
 
-        public Repository(FilterListsContext context)
+        public Repository(FilterListsDbContext context)
         {
             _context = context;
             _entities = context.Set<T>();

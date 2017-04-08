@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Models", "Filte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Data.Contracts", "FilterLists.Data.Contracts\FilterLists.Data.Contracts.csproj", "{07A5064E-1CB9-4990-84F8-25A9A89B1D45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Services", "FilterLists.Services\FilterLists.Services.csproj", "{9F296ECF-97C9-47E6-A794-5AD900ECFE6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{07A5064E-1CB9-4990-84F8-25A9A89B1D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07A5064E-1CB9-4990-84F8-25A9A89B1D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07A5064E-1CB9-4990-84F8-25A9A89B1D45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F296ECF-97C9-47E6-A794-5AD900ECFE6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F296ECF-97C9-47E6-A794-5AD900ECFE6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F296ECF-97C9-47E6-A794-5AD900ECFE6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F296ECF-97C9-47E6-A794-5AD900ECFE6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

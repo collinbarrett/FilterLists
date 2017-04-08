@@ -1,38 +1,47 @@
 ﻿using System.Collections.Generic;
+using FilterLists.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FilterLists.API.Controllers
+namespace FilterLists.Api.Controllers
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class ListsController : Controller
     {
-        // GET api/values
+        private readonly IListService _listService;
+
+        public ListsController(IListService listService)
+        {
+            _listService = listService;
+        }
+
+        // GET api/lists
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new[] {"value1", "value2"};
+            var lists = _listService.Lists;
+            return (IEnumerable<string>) lists;
         }
 
-        // GET api/values/5
+        // GET api/lists/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            return "list";
         }
 
-        // POST api/values
+        // POST api/lists
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/values/5
+        // PUT api/lists/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/values/5
+        // DELETE api/lists/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

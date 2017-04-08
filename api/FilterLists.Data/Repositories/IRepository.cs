@@ -3,7 +3,7 @@
 using System.Collections.Generic;
 using FilterLists.Models;
 
-namespace FilterLists.Data
+namespace FilterLists.Data.Repositories
 {
     public interface IRepository<T> where T : BaseEntity
     {
