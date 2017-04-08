@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MySQL.Data.EntityFrameworkCore;
+using MySQL.Data.EntityFrameworkCore.Extensions;
 
 namespace FilterLists.API
 {
@@ -30,7 +31,7 @@ namespace FilterLists.API
             services.AddEntityFramework()
                 .AddEntityFrameworkMySQL()
                 .AddDbContext<FilterListsContext>(options =>
-                    options.UseMySQL(ConnectionString));
+                    options.UseMySQL(Configuration.GetConnectionString("FilterListsConnection")));
             services.AddMvc();
         }
 
