@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using FilterLists.Models;
 using FilterLists.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,10 +17,10 @@ namespace FilterLists.Api.Controllers
 
         // GET api/lists
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<List> Get()
         {
-            var lists = _listService.Lists;
-            return (IEnumerable<string>) lists;
+            var result = _listService.GetAll();
+            return result;
         }
 
         // GET api/lists/5

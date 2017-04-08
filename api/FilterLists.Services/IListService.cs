@@ -1,10 +1,10 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
 using FilterLists.Models;
 
 namespace FilterLists.Services
 {
     public interface IListService
     {
-        IQueryable<List> Lists { get; }
+        IEnumerable<List> GetAll();
     }
 }
