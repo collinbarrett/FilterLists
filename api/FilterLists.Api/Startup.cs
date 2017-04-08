@@ -1,13 +1,11 @@
-﻿using FilterLists.Data.Contexts;
-using FilterLists.Services;
+﻿using FilterLists.Api.DependencyInjection.Extensions;
+using FilterLists.Data.DependencyInjection.Extensions;
+using FilterLists.Services.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using MySQL.Data.EntityFrameworkCore;
-using MySQL.Data.EntityFrameworkCore.Extensions;
 
 namespace FilterLists.Api
 {
@@ -25,24 +23,17 @@ namespace FilterLists.Api
 
         public IConfigurationRoot Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.
-            services.AddEntityFramework()
-                .AddEntityFrameworkMySQL()
-                .AddDbContext<FilterListsDbContext>(options =>
-                    options.UseMySQL(Configuration.GetConnectionString("FilterListsConnection")));
-            services.AddMvc();
-            services.AddTransient<IListService, ListService>();
+            services.RegisterFilterListsRepositories(Configuration);
+            services.RegisterFilterListsServices();
+            services.RegisterFilterListsApi();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-
             app.UseMvc();
         }
     }

@@ -11,10 +11,6 @@ namespace FilterLists.Data.Contexts
         {
         }
 
-        public FilterListsDbContext()
-        {
-        }
-
-        public DbSet<List> Lists { get; set; }
+        public DbSet<List> List { get; set; }
     }
 }
