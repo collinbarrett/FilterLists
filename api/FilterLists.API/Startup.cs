@@ -1,5 +1,4 @@
-﻿using FilterLists.Data;
-using FilterLists.Data.Contexts;
+﻿using FilterLists.Data.Contexts;
 using FilterLists.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
