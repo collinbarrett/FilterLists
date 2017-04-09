@@ -1,14 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace FilterLists.Models
+﻿namespace FilterLists.Models
 {
     public class List : BaseEntity
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public new int Id { get; set; }
-
         public string Description { get; set; }
         public string DescriptionSourceUrl { get; set; }
         public string DonateUrl { get; set; }
