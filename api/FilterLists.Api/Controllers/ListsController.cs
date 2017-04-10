@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FilterLists.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class ListsController : Controller
     {
         private readonly IListService _listService;
@@ -13,7 +13,7 @@ namespace FilterLists.Api.Controllers
             _listService = listService;
         }
 
-        // GET api/lists
+        // GET lists
         [HttpGet]
         public JsonResult Get()
         {
