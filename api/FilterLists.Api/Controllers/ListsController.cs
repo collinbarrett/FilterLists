@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using FilterLists.Models;
-using FilterLists.Services;
+﻿using FilterLists.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FilterLists.Api.Controllers
@@ -17,35 +15,10 @@ namespace FilterLists.Api.Controllers
 
         // GET api/lists
         [HttpGet]
-        public IEnumerable<List> Get()
+        public JsonResult Get()
         {
-            var result = _listService.GetAll();
+            var result = Json(_listService.GetAll());
             return result;
-        }
-
-        // GET api/lists/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "list";
-        }
-
-        // POST api/lists
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/lists/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/lists/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }

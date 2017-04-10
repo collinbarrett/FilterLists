@@ -11,6 +11,7 @@ namespace FilterLists.Data.DependencyInjection.Extensions
 {
     public static class ConfigureServicesCollection
     {
+        // ReSharper disable once UnusedMethodReturnValue.Global
         public static IServiceCollection RegisterFilterListsRepositories(this IServiceCollection services,
             IConfiguration configuration)
         {

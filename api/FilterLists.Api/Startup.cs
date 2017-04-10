@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace FilterLists.Api
 {
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class Startup
     {
         public Startup(IHostingEnvironment env)
@@ -21,6 +22,7 @@ namespace FilterLists.Api
             Configuration = builder.Build();
         }
 
+        // ReSharper disable once MemberCanBePrivate.Global
         public IConfigurationRoot Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
