@@ -5,8 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using MySQL.Data.EntityFrameworkCore;
-using MySQL.Data.EntityFrameworkCore.Extensions;
+using MySQL.Data.Entity.Extensions;
 
 namespace FilterLists.Data.DependencyInjection.Extensions
 {
@@ -17,7 +16,6 @@ namespace FilterLists.Data.DependencyInjection.Extensions
         {
             services.AddSingleton(c => configuration);
             services.AddEntityFramework()
-                .AddEntityFrameworkMySQL()
                 .AddDbContext<FilterListsDbContext>(options =>
                     options.UseMySQL(configuration.GetConnectionString("FilterListsConnection")));
             services.TryAddScoped<IListRepository, ListRepository>();
