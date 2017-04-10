@@ -8,9 +8,10 @@ using FilterLists.Data.Contexts;
 namespace FilterLists.Data.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    partial class FilterListsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170410114552_FixListMaxMinAnnotations")]
+    partial class FixListMaxMinAnnotations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.1");
