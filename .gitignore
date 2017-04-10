@@ -290,3 +290,5 @@ __pycache__/
 # FilterLists Custom Ignores
 gs/Private.gs
 api/FilterLists.Api/appsettings.Development.json
+api/FilterLists.Api/appsettings.Production.json
+api/FilterLists.Api/api.filterlists
