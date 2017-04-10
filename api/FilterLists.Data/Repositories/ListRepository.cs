@@ -3,26 +3,22 @@ using System.Linq;
 using FilterLists.Data.Contexts;
 using FilterLists.Data.Contracts.Repositories;
 using FilterLists.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Data.Repositories
 {
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class ListRepository : IListRepository
     {
-        private readonly DbContextOptions _options;
+        private readonly FilterListsDbContext _filterListsDbContext;
 
-        public ListRepository(DbContextOptions options)
+        public ListRepository(FilterListsDbContext filterListsDbContext)
         {
-            _options = options;
+            _filterListsDbContext = filterListsDbContext;
         }
 
         public IEnumerable<List> GetAll()
         {
-            using (var context = new FilterListsDbContext(_options))
-            {
-                context.Database.OpenConnection();
-                return context.List.AsEnumerable();
-            }
+            return _filterListsDbContext.List.AsEnumerable();
         }
     }
 }

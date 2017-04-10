@@ -14,4 +14,8 @@
     <ProjectReference Include="..\FilterLists.Models\FilterLists.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Stored Procedures\" />
+  </ItemGroup>
+
 </Project>

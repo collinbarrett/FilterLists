@@ -4,6 +4,7 @@ using FilterLists.Models;
 
 namespace FilterLists.Services
 {
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class ListService : IListService
     {
         private readonly IListRepository _listRepository;
