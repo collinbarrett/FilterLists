@@ -6,7 +6,6 @@ using FilterLists.Models;
 
 namespace FilterLists.Data.Repositories
 {
-    // ReSharper disable once ClassNeverInstantiated.Global
     public class ListRepository : IListRepository
     {
         private readonly FilterListsDbContext _filterListsDbContext;

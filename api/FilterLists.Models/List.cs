@@ -3,8 +3,6 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace FilterLists.Models
 {
-    [SuppressMessage("ReSharper", "UnusedMember.Global")]
-    // ReSharper disable once ClassNeverInstantiated.Global
     public class List : BaseEntity
     {
         [MaxLength(512)]
