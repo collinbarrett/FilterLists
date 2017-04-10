@@ -15,6 +15,7 @@ namespace FilterLists.Api
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls("http://localhost:5123")
                 .UseApplicationInsights()
                 .Build();
 
