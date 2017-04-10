@@ -11,7 +11,6 @@ namespace FilterLists.Data.Contexts
         {
         }
 
-        // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public DbSet<List> List { get; set; }
     }
 }

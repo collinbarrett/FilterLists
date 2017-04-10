@@ -8,8 +8,8 @@ using FilterLists.Data.Contexts;
 namespace FilterLists.Data.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    [Migration("20170410114552_FixListMaxMinAnnotations")]
-    partial class FixListMaxMinAnnotations
+    [Migration("20170410220415_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
