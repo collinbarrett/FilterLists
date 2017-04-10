@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="api.filterlists\**" />
+    <Content Remove="api.filterlists\**" />
+    <EmbeddedResource Remove="api.filterlists\**" />
+    <None Remove="api.filterlists\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
