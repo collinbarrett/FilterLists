@@ -3,7 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FilterLists.Api.Controllers
 {
-    [Route("[controller]")]
+    //TODO: automate URL versioning
+    [Route("v1/[controller]")]
     public class ListsController : Controller
     {
         private readonly IListService _listService;
@@ -15,7 +16,7 @@ namespace FilterLists.Api.Controllers
 
         // GET lists
         [HttpGet]
-        public JsonResult Get()
+        public IActionResult Get()
         {
             var result = Json(_listService.GetAll());
             return result;
