@@ -1,11 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.CodeAnalysis;
 
 namespace FilterLists.Models
 {
     public class List : BaseEntity
     {
-        [MaxLength(512)]
+        [MaxLength(1022)]
         public string Description { get; set; }
 
         [MaxLength(2083)]
@@ -32,7 +31,7 @@ namespace FilterLists.Models
         [MinLength(6)]
         public string IssuesUrl { get; set; }
 
-        [MaxLength(64)]
+        [MaxLength(510)]
         public string Name { get; set; }
 
         [Required]
