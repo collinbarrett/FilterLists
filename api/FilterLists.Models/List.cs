@@ -15,7 +15,7 @@ namespace FilterLists.Models
         [MinLength(6)]
         public string DonateUrl { get; set; }
 
-        [MaxLength(254)]
+        [MaxLength(126)]
         [MinLength(7)]
         public string Email { get; set; }
 
@@ -31,7 +31,7 @@ namespace FilterLists.Models
         [MinLength(6)]
         public string IssuesUrl { get; set; }
 
-        [MaxLength(510)]
+        [MaxLength(126)]
         public string Name { get; set; }
 
         [Required]
