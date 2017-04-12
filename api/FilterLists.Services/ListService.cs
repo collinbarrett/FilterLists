@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using FilterLists.Data.Contracts.Repositories;
 using FilterLists.Models;
+using FilterLists.Services.Contracts;
 
 namespace FilterLists.Services
 {

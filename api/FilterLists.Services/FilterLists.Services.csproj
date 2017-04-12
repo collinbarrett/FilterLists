@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\FilterLists.Data.Contracts\FilterLists.Data.Contracts.csproj" />
     <ProjectReference Include="..\FilterLists.Models\FilterLists.Models.csproj" />
+    <ProjectReference Include="..\FilterLists.Services.Contracts\FilterLists.Services.Contracts.csproj" />
   </ItemGroup>
 
 </Project>
