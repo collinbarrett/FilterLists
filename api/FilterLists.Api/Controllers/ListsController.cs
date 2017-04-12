@@ -1,5 +1,4 @@
-﻿using FilterLists.Services;
-using FilterLists.Services.Contracts;
+﻿using FilterLists.Services.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FilterLists.Api.Controllers
