@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Services.Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Data.Tests", "FilterLists.Data.Tests\FilterLists.Data.Tests.csproj", "{AE4E5758-92F3-4BFA-B71E-6A05F5E71FAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Services.Contracts", "FilterLists.Services.Contracts\FilterLists.Services.Contracts.csproj", "{C001DB46-2DE7-40C1-B0F8-75E831C09E6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{AE4E5758-92F3-4BFA-B71E-6A05F5E71FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE4E5758-92F3-4BFA-B71E-6A05F5E71FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE4E5758-92F3-4BFA-B71E-6A05F5E71FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C001DB46-2DE7-40C1-B0F8-75E831C09E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C001DB46-2DE7-40C1-B0F8-75E831C09E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C001DB46-2DE7-40C1-B0F8-75E831C09E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C001DB46-2DE7-40C1-B0F8-75E831C09E6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
