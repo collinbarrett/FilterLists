@@ -11,7 +11,7 @@ namespace FilterLists.Data.DependencyInjection.Extensions
 {
     public static class ConfigureServicesCollection
     {
-        public static IServiceCollection RegisterFilterListsRepositories(this IServiceCollection services,
+        public static IServiceCollection AddFilterListsRepositories(this IServiceCollection services,
             IConfiguration configuration)
         {
             services.AddSingleton(c => configuration);

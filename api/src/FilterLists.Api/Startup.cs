@@ -19,21 +19,22 @@ namespace FilterLists.Api
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            loggerFactory.AddDebug();
         }
 
         public IConfigurationRoot Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.RegisterFilterListsRepositories(Configuration);
-            services.RegisterFilterListsServices();
-            services.RegisterFilterListsApi();
+            services.AddFilterListsRepositories(Configuration);
+            services.AddFilterListsServices();
+            services.AddFilterListsApi();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            loggerFactory.AddDebug();
             app.UseMvc();
         }
     }
