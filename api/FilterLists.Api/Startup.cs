@@ -19,9 +19,6 @@ namespace FilterLists.Api
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
-
-            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            loggerFactory.AddDebug();
         }
 
         public IConfigurationRoot Configuration { get; }
