@@ -8,4 +8,9 @@
     <ProjectReference Include="..\FilterLists.Models\FilterLists.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Contexts\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
 </Project>

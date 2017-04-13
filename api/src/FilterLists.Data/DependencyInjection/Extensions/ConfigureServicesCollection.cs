@@ -1,6 +1,6 @@
 ﻿using FilterLists.Data.Contexts;
-using FilterLists.Data.Contracts.Repositories;
-using FilterLists.Data.Repositories;
+using FilterLists.Data.Repositories.Contracts;
+using FilterLists.Data.Repositories.Implementations;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,7 +11,7 @@ namespace FilterLists.Data.DependencyInjection.Extensions
 {
     public static class ConfigureServicesCollection
     {
-        public static IServiceCollection RegisterFilterListsRepositories(this IServiceCollection services,
+        public static IServiceCollection AddFilterListsRepositories(this IServiceCollection services,
             IConfiguration configuration)
         {
             services.AddSingleton(c => configuration);

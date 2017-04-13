@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FilterLists.Models
+namespace FilterLists.Data.Models
 {
     public class List : BaseEntity
     {

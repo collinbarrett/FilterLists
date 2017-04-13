@@ -15,7 +15,6 @@ namespace FilterLists.Api.Controllers
             _listService = listService;
         }
 
-        // GET lists
         [HttpGet]
         public IActionResult Get()
         {

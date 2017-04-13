@@ -25,7 +25,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FilterLists.Data\FilterLists.Data.csproj" />
-    <ProjectReference Include="..\FilterLists.Services.Contracts\FilterLists.Services.Contracts.csproj" />
     <ProjectReference Include="..\FilterLists.Services\FilterLists.Services.csproj" />
   </ItemGroup>
   <ItemGroup>
