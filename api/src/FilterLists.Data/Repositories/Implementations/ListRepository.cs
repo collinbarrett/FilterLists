@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using FilterLists.Data.Contexts;
-using FilterLists.Data.Contracts.Repositories;
-using FilterLists.Models;
+using FilterLists.Data.Models;
+using FilterLists.Data.Repositories.Contracts;
 
-namespace FilterLists.Data.Repositories
+namespace FilterLists.Data.Repositories.Implementations
 {
     public class ListRepository : IListRepository
     {

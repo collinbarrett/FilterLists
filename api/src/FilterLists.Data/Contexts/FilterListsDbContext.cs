@@ -1,5 +1,4 @@
-﻿using FilterLists.Data.Contracts.Contexts;
-using FilterLists.Models;
+﻿using FilterLists.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Data.Contexts

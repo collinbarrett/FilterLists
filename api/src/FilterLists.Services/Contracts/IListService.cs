@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using FilterLists.Models;
+using FilterLists.Data.Models;
 
 namespace FilterLists.Services.Contracts
 {

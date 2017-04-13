@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using FilterLists.Data.Contracts.Repositories;
-using FilterLists.Models;
+using FilterLists.Data.Models;
+using FilterLists.Data.Repositories.Contracts;
 using FilterLists.Services.Contracts;
 
-namespace FilterLists.Services
+namespace FilterLists.Services.Implementations
 {
     public class ListService : IListService
     {

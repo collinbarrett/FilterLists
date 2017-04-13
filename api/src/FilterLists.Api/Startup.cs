@@ -25,9 +25,9 @@ namespace FilterLists.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.RegisterFilterListsRepositories(Configuration);
-            services.RegisterFilterListsServices();
-            services.RegisterFilterListsApi();
+            services.AddFilterListsRepositories(Configuration);
+            services.AddFilterListsServices();
+            services.AddFilterListsApi();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)

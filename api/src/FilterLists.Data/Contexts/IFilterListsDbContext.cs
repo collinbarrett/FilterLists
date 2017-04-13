@@ -1,4 +1,4 @@
-﻿namespace FilterLists.Data.Contracts.Contexts
+﻿namespace FilterLists.Data.Contexts
 {
     public interface IFilterListsDbContext
     {

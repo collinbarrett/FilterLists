@@ -10,12 +10,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FilterLists.Data.Contracts\FilterLists.Data.Contracts.csproj" />
-    <ProjectReference Include="..\FilterLists.Models\FilterLists.Models.csproj" />
+    <Folder Include="Stored Procedures\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Stored Procedures\" />
+    <Reference Include="System.Runtime">
+      <HintPath>..\..\..\..\..\.nuget\packages\system.runtime\4.3.0\ref\netstandard1.5\System.Runtime.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
