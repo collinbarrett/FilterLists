@@ -6,7 +6,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
 {
     public static class ConfigureServicesCollection
     {
-        public static IServiceCollection AddFilterListsServices(this IServiceCollection services)
+        public static IServiceCollection RegisterFilterListsServices(this IServiceCollection services)
         {
             services.TryAddScoped<IListService, ListService>();
             return services;
