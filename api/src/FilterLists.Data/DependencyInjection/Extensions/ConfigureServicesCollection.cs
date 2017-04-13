@@ -11,15 +11,13 @@ namespace FilterLists.Data.DependencyInjection.Extensions
 {
     public static class ConfigureServicesCollection
     {
-        public static IServiceCollection AddFilterListsRepositories(this IServiceCollection services,
-            IConfiguration configuration)
+        public static void AddFilterListsRepositories(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddSingleton(c => configuration);
             services.AddEntityFramework()
                 .AddDbContext<FilterListsDbContext>(options =>
                     options.UseMySQL(configuration.GetConnectionString("FilterListsConnection")));
             services.TryAddScoped<IListRepository, ListRepository>();
-            return services;
         }
     }
 }
