@@ -25,13 +25,15 @@ namespace FilterLists.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddFilterListsRepositories(Configuration);
-            services.AddFilterListsServices();
-            services.AddFilterListsApi();
+            services.RegisterFilterListsRepositories(Configuration);
+            services.RegisterFilterListsServices();
+            services.RegisterFilterListsApi();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            loggerFactory.AddDebug();
             app.UseMvc();
             //TODO: maybe move to Startup() per Scott Allen
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
