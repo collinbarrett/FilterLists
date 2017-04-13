@@ -2,9 +2,11 @@
 using FilterLists.Data.Models;
 using FilterLists.Data.Repositories.Contracts;
 using FilterLists.Services.Contracts;
+using JetBrains.Annotations;
 
 namespace FilterLists.Services.Implementations
 {
+    [UsedImplicitly]
     public class ListService : IListService
     {
         private readonly IListRepository _listRepository;

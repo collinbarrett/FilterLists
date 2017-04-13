@@ -5,7 +5,7 @@ namespace FilterLists.Api.DependencyInjection.Extensions
 {
     public static class ConfigureServicesCollection
     {
-        public static IServiceCollection AddFilterListsApi(this IServiceCollection services)
+        public static void AddFilterListsApi(this IServiceCollection services)
         {
             services.AddMvc()
                 .AddJsonOptions(options =>
@@ -13,7 +13,6 @@ namespace FilterLists.Api.DependencyInjection.Extensions
                     //TODO: determine why null values still get returned
                     options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
                 });
-            return services;
         }
     }
 }
