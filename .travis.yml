@@ -1,2 +1,4 @@
 language: csharp
 solution: FilterLists.sln
+mono: none
+dotnet: 1.1

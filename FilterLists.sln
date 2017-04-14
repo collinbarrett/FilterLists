@@ -3,19 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Api", "src\FilterLists.API\FilterLists.Api.csproj", "{57E4CE18-41F3-48F6-B142-12947FFBA86C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Api", "src\FilterLists.API\FilterLists.Api.csproj", "{57E4CE18-41F3-48F6-B142-12947FFBA86C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Data", "src\FilterLists.Data\FilterLists.Data.csproj", "{944ADE8F-18E3-4DB8-9098-6A55E026EAC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Data", "src\FilterLists.Data\FilterLists.Data.csproj", "{944ADE8F-18E3-4DB8-9098-6A55E026EAC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Services", "src\FilterLists.Services\FilterLists.Services.csproj", "{9F296ECF-97C9-47E6-A794-5AD900ECFE6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Services", "src\FilterLists.Services\FilterLists.Services.csproj", "{9F296ECF-97C9-47E6-A794-5AD900ECFE6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Services.Tests", "test\FilterLists.Services.Tests\FilterLists.Services.Tests.csproj", "{39072BBE-268D-408D-878F-1416F9C400A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Services.Tests", "test\FilterLists.Services.Tests\FilterLists.Services.Tests.csproj", "{39072BBE-268D-408D-878F-1416F9C400A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Data.Tests", "test\FilterLists.Data.Tests\FilterLists.Data.Tests.csproj", "{AE4E5758-92F3-4BFA-B71E-6A05F5E71FAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Data.Tests", "test\FilterLists.Data.Tests\FilterLists.Data.Tests.csproj", "{AE4E5758-92F3-4BFA-B71E-6A05F5E71FAC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E7590A2B-621D-47EA-B026-315793F0FE50}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2AD4EEF3-8372-4AE9-8B1C-25359EC87435}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{6EF78534-FCFD-4918-91AA-316D8AA951AA}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
