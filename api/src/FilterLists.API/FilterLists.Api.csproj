@@ -28,10 +28,5 @@
     <ProjectReference Include="..\FilterLists.Data\FilterLists.Data.csproj" />
     <ProjectReference Include="..\FilterLists.Services\FilterLists.Services.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="System.Configuration">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.Configuration.dll</HintPath>
-    </Reference>
-  </ItemGroup>
 
 </Project>
