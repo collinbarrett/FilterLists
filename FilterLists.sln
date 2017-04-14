@@ -20,6 +20,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{6EF78534-FCFD-4918-91AA-316D8AA951AA}"
 	ProjectSection(SolutionItems) = preProject
 		.travis.yml = .travis.yml
+		build.sh = build.sh
 	EndProjectSection
 EndProject
 Global
