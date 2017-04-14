@@ -3,4 +3,4 @@ sudo: required
 dist: trusty 
 solution: FilterLists.sln
 mono: none
-dotnet: 1.0.3
+dotnet: 1.0.1
