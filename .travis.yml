@@ -1,8 +1,7 @@
 language: csharp
-sudo: required  
-dist: trusty 
-solution: FilterLists.sln
+dist: trusty
+sudo: required
 mono: none
 dotnet: 1.0.1
-script:  
-  - ./build.sh
+script:
+  - ./build.sh --quiet verify
