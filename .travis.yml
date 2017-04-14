@@ -1,5 +1,6 @@
 language: csharp
-dist: xenial
+sudo: required  
+dist: trusty 
 solution: FilterLists.sln
 mono: none
 dotnet: 1.0.3
