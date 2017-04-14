@@ -2,8 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/collinbarrett/FilterLists/blob/master/LICENSE)
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://filterlists.com/)
-[![Travis](https://img.shields.io/travis/USER/REPO.svg?label=travis)](https://travis-ci.org/collinbarrett/FilterLists)
-[![Build Status](https://travis-ci.org/collinbarrett/FilterLists.svg?branch=master)](https://travis-ci.org/collinbarrett/FilterLists)
+[![Travis](https://img.shields.io/travis/collinbarrett/FilterLists.svg?label=travis)](https://travis-ci.org/collinbarrett/FilterLists)
 
 [filterlists.com](https://filterlists.com)
 
