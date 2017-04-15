@@ -1,8 +1,7 @@
  #!/usr/bin/env bash
-set localdir=/home/travis/build/collinbarrett/FilterLists/src/FilterLists.Api/bin/Release/netcoreapp1.1/
 set ftpdir=/var/www/api.filterlists
 
-for file in %localdir%*
+for file in /home/travis/build/collinbarrett/FilterLists/src/FilterLists.Api/bin/Release/netcoreapp1.1/*
 do
-   curl -T ${file} sftp://$FTP_HOST%ftpdir%/${file} --user $FTP_USER:$FTP_PASSWORD
+   curl -T ${file} sftp://$FTP_HOST%/var/www/api.filterlists/${file} --user $FTP_USER:$FTP_PASSWORD
 done
