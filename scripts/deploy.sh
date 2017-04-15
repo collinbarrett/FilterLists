@@ -1,2 +1,3 @@
  #!/usr/bin/env bash
-sshpass -p $FTP_PASSWORD scp -v -o StrictHostKeyChecking=no -r /home/travis/build/collinbarrett/FilterLists/src/FilterLists.Api/bin/Release/netcoreapp1.1/* $FTP_USER@$FTP_HOST:$FTP_DIR
+ #TODO: use ssh keys rather than pw
+sshpass -p $FTP_PASSWORD scp -o StrictHostKeyChecking=no -r /home/travis/build/collinbarrett/FilterLists/src/FilterLists.Api/bin/Release/netcoreapp1.1/* $FTP_USER@$FTP_HOST:$FTP_DIR
