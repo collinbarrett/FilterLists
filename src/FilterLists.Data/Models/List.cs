@@ -1,52 +1,53 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using JetBrains.Annotations;
+
+//using JetBrains.Annotations;
 
 namespace FilterLists.Data.Models
 {
     public class List : BaseEntity
     {
         [MaxLength(1022)]
-        [UsedImplicitly]
+        //[UsedImplicitly]
         public string Description { get; set; }
 
         [MaxLength(2083)]
         [MinLength(6)]
-        [UsedImplicitly]
+        //[UsedImplicitly]
         public string DescriptionSourceUrl { get; set; }
 
         [MaxLength(2083)]
         [MinLength(6)]
-        [UsedImplicitly]
+        //[UsedImplicitly]
         public string DonateUrl { get; set; }
 
         [MaxLength(126)]
         [MinLength(7)]
-        [UsedImplicitly]
+        //[UsedImplicitly]
         public string Email { get; set; }
 
         [MaxLength(2083)]
         [MinLength(6)]
-        [UsedImplicitly]
+        //[UsedImplicitly]
         public string ForumUrl { get; set; }
 
         [MaxLength(2083)]
         [MinLength(6)]
-        [UsedImplicitly]
+        //[UsedImplicitly]
         public string HomeUrl { get; set; }
 
         [MaxLength(2083)]
         [MinLength(6)]
-        [UsedImplicitly]
+        //[UsedImplicitly]
         public string IssuesUrl { get; set; }
 
         [MaxLength(126)]
-        [UsedImplicitly]
+        //[UsedImplicitly]
         public string Name { get; set; }
 
         [Required]
         [MaxLength(2083)]
         [MinLength(6)]
-        [UsedImplicitly]
+        //[UsedImplicitly]
         public string ViewUrl { get; set; }
     }
 }
