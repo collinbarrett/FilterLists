@@ -1,2 +1,2 @@
  #!/usr/bin/env bash
-dotnet restore && dotnet publish -c Release
+dotnet restore && dotnet pack -c Release
