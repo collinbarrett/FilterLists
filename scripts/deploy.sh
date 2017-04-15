@@ -5,4 +5,5 @@ do
   then
     echo "Uploading $f"
     curl -T ${file} ftp://$FTP_HOST$FTP_DIR${file} --user $FTP_USER:$FTP_PASSWORD
+  fi
 done
