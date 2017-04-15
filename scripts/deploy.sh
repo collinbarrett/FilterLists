@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+ #!/usr/bin/env bash
 set localdir=/home/travis/build/collinbarrett/FilterLists/src/FilterLists.Api/bin/Release/netcoreapp1.1/
 set ftpdir=/var/www/api.filterlists
 
