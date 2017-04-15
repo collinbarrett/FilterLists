@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 dotnet restore && dotnet publish -c Release
