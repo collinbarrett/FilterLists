@@ -4,7 +4,7 @@ sudo: required
 mono: none
 dotnet: 1.0.1
 script:
-- "./build.sh"
+- "scripts/build.sh"
 env:
   global:
     #FTP_USER
