@@ -5,6 +5,8 @@ mono: none
 dotnet: 1.0.1
 before_install:
   - sudo apt-get install sshpass
+install:
+  - nuget install JetBrains.ExternalAnnotations
 script:
 - scripts/build.sh
 env:
