@@ -1,2 +1,2 @@
  #!/usr/bin/env bash
-dotnet restore && dotnet pack -c Release
+dotnet restore && dotnet -f netcoreapp1.1 -c Release
