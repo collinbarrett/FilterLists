@@ -2,7 +2,7 @@ language: csharp
 dist: trusty
 sudo: required
 mono: none
-dotnet: 1.0.2
+dotnet: 1.0.1
 before_install:
   - sudo apt-get install sshpass
 script:
