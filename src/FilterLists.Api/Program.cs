@@ -16,7 +16,7 @@ namespace FilterLists.Api
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .UseUrls("http://localhost:5123")
-                .UseApplicationInsights()
+                //.UseApplicationInsights()
                 .Build();
 
             host.Run();
