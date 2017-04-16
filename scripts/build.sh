@@ -1,2 +1,2 @@
- #!/usr/bin/env bash
-sudo dotnet restore && sudo dotnet publish -c Release -r ubuntu.16.04-x64
+#!/usr/bin/bash
+dotnet restore && dotnet publish -c release -r ubuntu.16.04-x64
