@@ -3,12 +3,11 @@ using System.Linq;
 using FilterLists.Data.Contexts;
 using FilterLists.Data.Models;
 using FilterLists.Data.Repositories.Contracts;
-
-//using JetBrains.Annotations;
+using JetBrains.Annotations;
 
 namespace FilterLists.Data.Repositories.Implementations
 {
-    //[UsedImplicitly]
+    [UsedImplicitly]
     public class ListRepository : IListRepository
     {
         private readonly FilterListsDbContext _filterListsDbContext;
