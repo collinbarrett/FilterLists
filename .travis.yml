@@ -20,7 +20,3 @@ deploy:
   script: scripts/deploy.sh
   on:
     branch: master
-addons:
-  code_climate:
-    repo_token:
-    - secure: me9IlGMjw+xZcmCej27JM7wNCq4Yhp6tMJnBabvJkNUbdMyXewgFboE9VfHwksvgA5uDF7539Xm8Ivx/qM6k7DFPeQuxA+v0NOAOhhzNOBfJjlHjvrL+mt9y2GpyFk2u8Bd/FQIX/W0yAwsTaqvvqWZYCSK8NEbdd3nSwwtG4yvSVnsOjML+m7Gs5xBlJElNFsFgCp7s+1BORXqreJL3k6aSAaPBDp/GGVVAA7y7+6Se/iULLot6o8swaUfEhg+x0q3kCNThau+jEEaVD5z9HF7IkKTnVTbA/PCh2RPylcU/8BSMCYD2mhmU9kN5m1i0W73dOmotxlKghuvqjMcZz15VsrCay269cN3toOYN9pxxC2xbAVVRthVlDyeZ79uqkFI/giKjmIANGvReHzvhrWqxWQi0zrqd3VkV9LZqWLMvmW1KibBEgeI5MbrfrCZZIlWLJtCkjwBAXYrEogYcLZmctoSEmRpYK2sLq+i7EzOOx5CsybmsfFJVp6I6zVLopX8Yq+R9e1vvHs7tL+nUkR+RAg6fhIV7Prtw5ZwHig0EBfG5OmvoRUJvAG/dJhSIIkYyzx1fkuRlMdR6W2+A4gQefp6zeHsJ561qWhY3N8GMlvT6JzW6T0KoslWymdmfUF2O1NrRsDtmMsVw8v50WfQxk+ibUsWsMnM7eM9XCrE=
