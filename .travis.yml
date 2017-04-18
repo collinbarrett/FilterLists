@@ -1,7 +1,7 @@
 language: csharp
 dist: latest
 sudo: required
-mono: latest
+mono: none
 dotnet: 1.0.1
 solution: FilterLists.sln
 env:
@@ -12,7 +12,6 @@ env:
     - secure: R3coFui0kkQ72gwxStgicvs4aMR41pGQ6quTCeJGNVxI0Rx1viU6sgOK+5PJbte37fOGmgyf7WEZLO9RVncfd2UcChV4/UrHy1bYZsOMqA32fH8VRnQ4hd196cGzlX3TOpifnwu5iQ3UlamLcAb51wSENQJWUs6FiZHNYfp/c0jmJ2lSKFciVQh097ZdTaSd/ecRbVSCTxpcPKB7y8kSOlEQJjSN5LLcgQf8nqgrsCyIxNnazCipVjn6n/1M1ZKaDRj2fuAJ4JYGtI8bmbjcLYK9Xgz3kkUqAz0A/2VVodzngbtji6c0ZaJu4a+C/+J82divuAITV7XLjjpDTB8JZYIoH1u2kgZKivOE1smCnkvCQMbNk9zWe7fZCoHHDq4illrckeWfRgN5qBT3YkF4I1e+ruhpA142fI15fryvA+L4Nasmg8ILsKqpiN6zknOfo+PIgBPgXLX/TPmn8b3GMndCyPlB8tx+iBVQQ2+0CD1IiA3jmBQJ6Bnd5YS0TztQ7+TuHumNujCP8p8PZ6PQIx1YRoZM6cXJ/8rF4u8VnEa7QioaomLb7XcVg9KUyL3IU/rK2Jr5EK9IEAX5Whcxyy5l8zG+lDvdCoA9/7gSjOL7P90lTgxl/qiluO9HNRuHuOWoXGmQSp/3IVghI2vYLjHl0K3XXDAkfrvzlTAlndw=
 before_install:
   - sudo apt-get install sshpass
-  - nuget install xunit.runners -OutputDirectory testrunner
 script:
 - scripts/build.sh
 deploy:
