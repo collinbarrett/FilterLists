@@ -1131,13 +1131,13 @@
     "viewUrl": "https://fanboy.co.nz/fanboy-vietnam.txt"
 }, {
     "descr": "This filter list for uBlock Origin/Adblock Plus is designed to be used with such lists as EasyList, RU AdList etc., so it's substantially free of intersections with them. The list is made for blocking ad (mostly on Russian websites) missed by other filter lists maintainers. It is regularly updated and actively developed for now.",
-    "descrSourceUrl": "https://github.com/hant0508/uBlock-fillters",
+    "descrSourceUrl": "https://github.com/hant05080/uBlock-filters",
     "email": "hant0508@gmail.com",
-    "homeUrl": "https://github.com/hant0508/uBlock-fillters",
-    "issuesUrl": "https://github.com/hant0508/uBlock-fillters/issues",
+    "homeUrl": "https://github.com/hant05080/uBlock-filters",
+    "issuesUrl": "https://github.com/hant05080/uBlock-filters/issues",
     "list": "Filters by hant0508",
     "tagLang": ["ru"],
-    "viewUrl": "https://raw.githubusercontent.com/hant0508/uBlock-fillters/master/filters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/hant05080/uBlock-filters/master/filters.txt"
 }, {
     "descr": "Blocks English and Spanish regional advertisements and trackers.",
     "homeUrl": "https://nauscopio.wordpress.com/2010/07/05/filtrado-bloqueo-y-ocultacion-de-la-publicidad-en-google-chrome/",
