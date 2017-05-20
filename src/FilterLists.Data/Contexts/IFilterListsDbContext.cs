@@ -1,6 +1,10 @@
-﻿namespace FilterLists.Data.Contexts
+﻿using FilterLists.Data.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace FilterLists.Data.Contexts
 {
     public interface IFilterListsDbContext
     {
+        DbSet<List> List { get; set; }
     }
 }
