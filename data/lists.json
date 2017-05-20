@@ -2109,6 +2109,62 @@
   "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
   "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts"
 }, {
+  "descr": "Extending and consolidating hosts files from a variety of sources",
+  "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+  "homeUrl": "https://github.com/StevenBlack/hosts",
+  "list": "Unified Hosts + Fakenews",
+  "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
+  "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews/hosts"
+}, {
+  "descr": "Extending and consolidating hosts files from a variety of sources",
+  "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+  "homeUrl": "https://github.com/StevenBlack/hosts",
+  "list": "Unified Hosts + Fakenews + Gambling",
+  "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
+  "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts"
+}, {
+  "descr": "Extending and consolidating hosts files from a variety of sources",
+  "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+  "homeUrl": "https://github.com/StevenBlack/hosts",
+  "list": "Unified Hosts + Fakenews + Porn",
+  "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
+  "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn/hosts"
+}, {
+  "descr": "Extending and consolidating hosts files from a variety of sources",
+  "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+  "homeUrl": "https://github.com/StevenBlack/hosts",
+  "list": "Unified Hosts + Fakenews + Social",
+  "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
+  "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts"
+}, {
+  "descr": "Extending and consolidating hosts files from a variety of sources",
+  "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+  "homeUrl": "https://github.com/StevenBlack/hosts",
+  "list": "Unified Hosts + Fakenews + Gambling + Porn",
+  "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
+  "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts"
+}, {
+  "descr": "Extending and consolidating hosts files from a variety of sources",
+  "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+  "homeUrl": "https://github.com/StevenBlack/hosts",
+  "list": "Unified Hosts + Fakenews + Gambling + Social",
+  "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
+  "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts"
+}, {
+  "descr": "Extending and consolidating hosts files from a variety of sources",
+  "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+  "homeUrl": "https://github.com/StevenBlack/hosts",
+  "list": "Unified Hosts + Fakenews + Porn + Social",
+  "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
+  "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn-social/hosts"
+}, {
+  "descr": "Extending and consolidating hosts files from a variety of sources",
+  "descrSourceUrl": "https://github.com/StevenBlack/hosts",
+  "homeUrl": "https://github.com/StevenBlack/hosts",
+  "list": "Unified Hosts + Fakenews + Gambling + Porn + Social",
+  "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
+  "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts"
+}, {
   "descr": "Finnish supplement list for EasyList.",
   "descrSourceUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt",
   "homeUrl": "https://github.com/wiltteri/subscriptions",
