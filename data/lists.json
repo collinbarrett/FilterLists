@@ -13,6 +13,14 @@
   "list": "AakList (Anti-Adblock Killer)",
   "viewUrl": "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
 }, {
+  "descr": "This project was built based on Anti-Adblock Killer (by Reek), but is now significantly different. Anti-Adblock Killer Script was completely re-implemented. Anti-Adblock Killer Filter was mostly copied and concatenated to AdBlock Protector List.",
+  "descrSourceUrl": "https://github.com/jspenguin2017/AdBlockProtector",
+  "homeUrl": "https://jspenguin2017.github.io/AdBlockProtector/",
+  "issuesUrl": "https://github.com/jspenguin2017/AdBlockProtector/issues",
+  "list": "AdBlockProtector",
+  "related": ["AakList (Anti-Adblock Killer)"],
+  "viewUrl": "https://github.com/jspenguin2017/AdBlockProtector/blob/master/AdBlockProtectorList.txt"
+}, {
   "descr": "Blocks Japanese regional social network advertisements and trackers.",
   "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
   "issuesUrl": "https://github.com/k2jp/abp-japanese-filters/issues",
