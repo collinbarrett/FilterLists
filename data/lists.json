@@ -548,7 +548,6 @@
 }, {
   "descr": "Blockzilla is designed to be powerful and effective against ads and trackers while still maintaining to be an unbloated and slim list. This is achieved in part by avoiding many site specific rules and focusing more on generic rules for a wider range of effectiveness while still keeping the balance of having a low risk for false positives.",
   "descrSourceUrl": "https://github.com/zpacman/Blockzilla",
-  "email": "zpacman@protonmail.com",
   "homeUrl": "https://blockzilla.jimdo.com/",
   "issuesUrl": "https://github.com/zpacman/Blockzilla/issues",
   "list": "Blockzilla",
