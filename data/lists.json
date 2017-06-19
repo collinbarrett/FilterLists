@@ -13,6 +13,16 @@
   "list": "AakList (Anti-Adblock Killer)",
   "viewUrl": "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
 }, {
+  "descr": "The ABP advertising filter is built with the mission of improving the browsing experience for the vietnamese users. ABPVN may not help block all ads, but ABPVN will minimize the appearance of ads on most websites in Vietnam.",
+  "descrSourceUrl": "https://abpvn.com",
+  "donateUrl": "https://abpvn.com/napthe",
+  "email": "support@abpvn.com",
+  "forumUrl": "http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html",
+  "homeUrl": "https://abpvn.com",
+  "list": "ABPVN List",
+  "tagLang": ["vi"],
+  "viewUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn.txt"
+}, {
   "descr": "This project was built based on Anti-Adblock Killer (by Reek), but is now significantly different. Anti-Adblock Killer Script was completely re-implemented. Anti-Adblock Killer Filter was mostly copied and concatenated to AdBlock Protector List.",
   "descrSourceUrl": "https://github.com/jspenguin2017/AdBlockProtector",
   "homeUrl": "https://jspenguin2017.github.io/AdBlockProtector/",
