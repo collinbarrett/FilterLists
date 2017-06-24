@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using FilterLists.Data.Contexts;
 using FilterLists.Data.Models;
@@ -20,6 +21,11 @@ namespace FilterLists.Data.Repositories.Implementations
         public IEnumerable<List> GetAll()
         {
             return _filterListsDbContext.List.AsEnumerable();
+        }
+
+        public IEnumerable<List> UpdateAll()
+        {
+            throw new NotImplementedException();
         }
     }
 }

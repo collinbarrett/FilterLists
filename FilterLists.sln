@@ -1,7 +1,6 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.3
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Api", "src\FilterLists.Api\FilterLists.Api.csproj", "{57E4CE18-41F3-48F6-B142-12947FFBA86C}"
 EndProject
@@ -27,6 +26,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{E2F4
 		scripts\build.sh = scripts\build.sh
 		scripts\deploy.sh = scripts\deploy.sh
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.DataLoad", "src\FilterLists.DataLoad\FilterLists.DataLoad.csproj", "{B507EE76-B035-45D7-9D26-DF38A5013BC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +55,10 @@ Global
 		{AE4E5758-92F3-4BFA-B71E-6A05F5E71FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE4E5758-92F3-4BFA-B71E-6A05F5E71FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE4E5758-92F3-4BFA-B71E-6A05F5E71FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B507EE76-B035-45D7-9D26-DF38A5013BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B507EE76-B035-45D7-9D26-DF38A5013BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B507EE76-B035-45D7-9D26-DF38A5013BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B507EE76-B035-45D7-9D26-DF38A5013BC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,5 +70,6 @@ Global
 		{39072BBE-268D-408D-878F-1416F9C400A2} = {2AD4EEF3-8372-4AE9-8B1C-25359EC87435}
 		{AE4E5758-92F3-4BFA-B71E-6A05F5E71FAC} = {2AD4EEF3-8372-4AE9-8B1C-25359EC87435}
 		{E2F4C0A9-CA4D-4A11-8B10-899513E777F8} = {6EF78534-FCFD-4918-91AA-316D8AA951AA}
+		{B507EE76-B035-45D7-9D26-DF38A5013BC3} = {E7590A2B-621D-47EA-B026-315793F0FE50}
 	EndGlobalSection
 EndGlobal
