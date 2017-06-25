@@ -6,32 +6,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="api.filterlists\**" />
-    <Content Remove="api.filterlists\**" />
-    <EmbeddedResource Remove="api.filterlists\**" />
-    <None Remove="api.filterlists\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="10.4.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
   </ItemGroup>
+
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
   </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\FilterLists.Data\FilterLists.Data.csproj" />
     <ProjectReference Include="..\FilterLists.Services\FilterLists.Services.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Update="appsettings.json">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
 </Project>
