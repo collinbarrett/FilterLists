@@ -15,7 +15,7 @@ before_install:
 script:
 - scripts/build.sh
 deploy:
-  skip_cleanup: false
+  skip_cleanup: true
   provider: script
   script: scripts/deploy.sh
   on:
