@@ -11,7 +11,8 @@ namespace FilterLists.DataLoad
     {
         public Startup()
         {
-            var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", false, true);
             Configuration = builder.Build();
         }

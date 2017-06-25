@@ -6,6 +6,5 @@ namespace FilterLists.Data.Repositories.Contracts
     public interface IListRepository
     {
         IEnumerable<List> GetAll();
-        IEnumerable<List> UpdateAll();
     }
 }

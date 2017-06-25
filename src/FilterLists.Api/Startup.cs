@@ -1,4 +1,5 @@
-﻿using FilterLists.Api.DependencyInjection.Extensions;
+﻿using System.IO;
+using FilterLists.Api.DependencyInjection.Extensions;
 using FilterLists.Data.DependencyInjection.Extensions;
 using FilterLists.Services.DependencyInjection.Extensions;
 using JetBrains.Annotations;
@@ -12,13 +13,11 @@ namespace FilterLists.Api
 {
     public class Startup
     {
-        public Startup(IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public Startup(ILoggerFactory loggerFactory)
         {
             var builder = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", false, true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true)
-                .AddEnvironmentVariables();
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", false, true);
             Configuration = builder.Build();
 
             //TODO: replace with serilog
