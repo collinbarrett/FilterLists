@@ -9,10 +9,12 @@ namespace FilterLists.Services.Implementations
     public class TableService : ITableService
     {
         private readonly IListRepository _listRepository;
+        private readonly ITableCsvRepository _tableCsvRepository;
 
-        public TableService(IListRepository listRepository)
+        public TableService(IListRepository listRepository, ITableCsvRepository tableCsvRepository)
         {
             _listRepository = listRepository;
+            _tableCsvRepository = tableCsvRepository;
         }
 
         /// <summary>
@@ -30,33 +32,24 @@ namespace FilterLists.Services.Implementations
         /// <param name="tableName">name of database table</param>
         public void UpdateTable(string tableName)
         {
-            switch (tableName)
-            {
-                case "List":
-                    //TODO: fetch CSV URL from db table
-                    const string csvUrl =
-                        "https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/List.csv";
-                    var file = FetchFile(csvUrl).Result;
-                    break;
-                default:
-                    //TODO: throw invalid table exception
-                    break;
-            }
+            var file = FetchFile(_tableCsvRepository.GetUrlByName(tableName), tableName).Result;
+            //TODO: exec stored procedure to merge/upsert csv into corresponding db table
         }
 
         /// <summary>
         ///     fetch file as string from internet
         /// </summary>
         /// <param name="url">URL of file to fetch</param>
+        /// <param name="fileName">name to save file as</param>
         /// <returns>string of file</returns>
-        private static async Task<string> FetchFile(string url)
+        private static async Task<string> FetchFile(string url, string fileName)
         {
             var client = new HttpClient();
             var response = await client.GetAsync(url);
             response.EnsureSuccessStatusCode();
             var path = Path.Combine(Directory.GetCurrentDirectory(), "csv");
             Directory.CreateDirectory(path);
-            var file = Path.Combine(path,"List.csv");
+            var file = Path.Combine(path, fileName + ".csv");
             using (var fileStream = new FileStream(file, FileMode.Create, FileAccess.Write,
                 FileShare.None))
             {

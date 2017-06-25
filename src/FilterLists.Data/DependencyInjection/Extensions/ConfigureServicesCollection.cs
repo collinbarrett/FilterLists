@@ -18,6 +18,7 @@ namespace FilterLists.Data.DependencyInjection.Extensions
                 .AddDbContext<FilterListsDbContext>(options =>
                     options.UseMySQL(configuration.GetConnectionString("FilterListsConnection")));
             services.TryAddScoped<IListRepository, ListRepository>();
+            services.TryAddScoped<ITableCsvRepository, TableCsvRepository>();
         }
     }
 }
