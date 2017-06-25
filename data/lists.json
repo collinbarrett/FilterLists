@@ -1158,7 +1158,6 @@
 }, {
   "descr": "Tentative hosts file for Italian sites created from Easylist Italy and ADB X Files.",
   "descrSourceUrl": "https://filtri-dns.ga/filtri.txt",
-  "email": "quattro@filtri-dns.ga",
   "homeUrl": "https://filtri-dns.ga/",
   "list": "Filtri DNS",
   "related": ["EasyList Italy", "ABP X Files"],
