@@ -1,5 +1,5 @@
-﻿using System.Net.Http;
-using System.Net.Http.Headers;
+﻿using System.IO;
+using System.Net.Http;
 using System.Threading.Tasks;
 using FilterLists.Data.Repositories.Contracts;
 using FilterLists.Services.Contracts;
@@ -36,6 +36,7 @@ namespace FilterLists.Services.Implementations
                     //TODO: fetch CSV URL from db table
                     const string csvUrl =
                         "https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/List.csv";
+                    var file = FetchFile(csvUrl).Result;
                     break;
                 default:
                     //TODO: throw invalid table exception
@@ -50,9 +51,18 @@ namespace FilterLists.Services.Implementations
         /// <returns>string of file</returns>
         private static async Task<string> FetchFile(string url)
         {
-            var httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("FilterLists", "1.0"));
-            return await httpClient.GetStringAsync(url);
+            var client = new HttpClient();
+            var response = await client.GetAsync(url);
+            response.EnsureSuccessStatusCode();
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "csv");
+            Directory.CreateDirectory(path);
+            var file = Path.Combine(path,"List.csv");
+            using (var fileStream = new FileStream(file, FileMode.Create, FileAccess.Write,
+                FileShare.None))
+            {
+                await response.Content.CopyToAsync(fileStream);
+            }
+            return file;
         }
     }
 }
