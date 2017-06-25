@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using FilterLists.Data.DependencyInjection.Extensions;
-using FilterLists.DataLoad.DependencyInjection.Extensions;
 using FilterLists.Services.DependencyInjection.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,7 +25,7 @@ namespace FilterLists.DataLoad
             services.AddLogging();
             services.AddFilterListsRepositories(Configuration);
             services.AddFilterListsServices();
-            services.AddFilterListsDataLoad();
+            //services.AddFilterListsDataLoad();
         }
     }
 }
