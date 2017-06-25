@@ -10,7 +10,7 @@ namespace FilterLists.Data.Repositories.Implementations
     {
         private readonly IFilterListsDbContext _filterListsDbContext;
 
-        public ListRepository(IFilterListsDbContext filterListsDbContext)
+        public ListRepository(FilterListsDbContext filterListsDbContext)
         {
             _filterListsDbContext = filterListsDbContext;
         }
