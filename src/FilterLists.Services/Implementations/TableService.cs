@@ -9,11 +9,11 @@ namespace FilterLists.Services.Implementations
 {
     public class TableService : ITableService
     {
-        //private readonly IListRepository _listRepository;
+        private readonly IListRepository _listRepository;
 
-        public TableService(/*IListRepository listRepository*/)
+        public TableService(IListRepository listRepository)
         {
-            //_listRepository = listRepository;
+            _listRepository = listRepository;
         }
 
         /// <summary>

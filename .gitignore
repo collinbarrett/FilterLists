@@ -298,3 +298,4 @@ __pycache__/
 gs/Private.gs
 src/FilterLists.Api/appsettings.Development.json
 src/FilterLists.Api/appsettings.Production.json
+src/FilterLists.DataLoad/appsettings.json

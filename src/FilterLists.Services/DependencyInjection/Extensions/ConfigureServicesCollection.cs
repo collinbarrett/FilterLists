@@ -10,6 +10,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
         public static void AddFilterListsServices(this IServiceCollection services)
         {
             services.TryAddScoped<IListService, ListService>();
+            services.TryAddScoped<ITableService, TableService>();
         }
     }
 }

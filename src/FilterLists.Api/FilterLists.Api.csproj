@@ -28,5 +28,10 @@
     <ProjectReference Include="..\FilterLists.Data\FilterLists.Data.csproj" />
     <ProjectReference Include="..\FilterLists.Services\FilterLists.Services.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
 </Project>

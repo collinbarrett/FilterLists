@@ -21,7 +21,7 @@ namespace FilterLists.Api
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
 
-            //TODO: replace below with serilog
+            //TODO: replace with serilog
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
         }
