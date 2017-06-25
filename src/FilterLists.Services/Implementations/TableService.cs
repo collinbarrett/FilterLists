@@ -44,8 +44,7 @@ namespace FilterLists.Services.Implementations
         /// <returns>string of file</returns>
         private static async Task<string> FetchFile(string url, string fileName)
         {
-            var client = new HttpClient();
-            var response = await client.GetAsync(url);
+            var response = await new HttpClient().GetAsync(url);
             response.EnsureSuccessStatusCode();
             var path = Path.Combine(Directory.GetCurrentDirectory(), "csv");
             Directory.CreateDirectory(path);
