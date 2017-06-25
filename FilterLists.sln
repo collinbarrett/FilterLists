@@ -3,6 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Api", "src\FilterLists.Api\FilterLists.Api.csproj", "{57E4CE18-41F3-48F6-B142-12947FFBA86C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B507EE76-B035-45D7-9D26-DF38A5013BC3} = {B507EE76-B035-45D7-9D26-DF38A5013BC3}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Data", "src\FilterLists.Data\FilterLists.Data.csproj", "{944ADE8F-18E3-4DB8-9098-6A55E026EAC1}"
 EndProject
