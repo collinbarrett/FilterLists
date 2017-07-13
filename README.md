@@ -8,6 +8,9 @@
 
 FilterLists is the independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances. For more information on its purpose and function, check out [About](https://filterlists.com/about/).
 
+## Development Notice (Updated July 13, 2017)
+FilterLists improvements are slow and tend to be in spurts. I really care about this project as both a resource for the community and a learning tool for me. But, my day job comes first which often results in little to no work on the project at times. I happily welcome anyone that wants to contribute, though. The immediate projects are [converting the data to an actual database](https://github.com/collinbarrett/FilterLists/issues/102) (rather than a Google Sheet) and then exposing the data via a [.Net Core API](https://github.com/collinbarrett/FilterLists/projects/3). I would also love to build a more responsive front-end, but I am not a front-end developer and would definitely welcome help on [this](https://github.com/collinbarrett/FilterLists/issues/82).
+
 ## Properties
 
 | Property       | Description                              |
