@@ -1,5 +1,5 @@
 [{
-  "descr": "Adblock fitlers for both Adblock PLUS and uBlock. It also includes some anti-adblocking rules to make your adblocking extension undetectable. The author manually add the track block rules from https://better.fyi/trackers/ since those rules are only for an iOS app only.",
+  "descr": "Adblock filters for both Adblock PLUS and uBlock. It also includes some anti-adblocking rules to make your adblocking extension undetectable. The author manually add the track block rules from https://better.fyi/trackers/ since those rules are only for an iOS app only.",
   "descrSourceUrl": "https://github.com/anarki999/Adblock-List-Archive/blob/master/Better.fyiTrackersBlocklist.txt",
   "homeUrl": "https://github.com/anarki999/Adblock-List-Archive",
   "issuesUrl": "https://github.com/anarki999/Adblock-List-Archive/issues",
