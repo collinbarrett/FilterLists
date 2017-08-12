@@ -549,6 +549,13 @@
   "tagLang": ["ru"],
   "viewUrl": "https://raw.githubusercontent.com/rebelion76/bankiru_plus_adblock_list/master/bankiru_plus.txt"
 }, {
+  "descr": "Blocks requests to sites which have used legal threats to remove themselves from other blacklists.",
+  "descrSourceUrl": "https://raw.githubusercontent.com/paulgb/BarbBlock/master/BarbBlock.txt",
+  "homeUrl": "https://github.com/paulgb/BarbBlock",
+  "issuesUrl": "https://github.com/paulgb/BarbBlock/issues",
+  "list": "BarbBlock",
+  "viewUrl": "https://raw.githubusercontent.com/paulgb/BarbBlock/master/BarbBlock.txt"
+}, {
   "descr": "Adblock filters for both Adblock PLUS and uBlock. It also includes some anti-adblocking rules to make your adblocking extension undetectable. The author manually add the track block rules from https://better.fyi/trackers/ since those rules are only for an iOS app only.",
   "homeUrl": "https://github.com/anarki999/Adblock-List-Archive",
   "issuesUrl": "https://github.com/anarki999/Adblock-List-Archive/issues",
