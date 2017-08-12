@@ -1,11 +1,4 @@
 [{
-  "descr": "Adblock filters for both Adblock PLUS and uBlock. It also includes some anti-adblocking rules to make your adblocking extension undetectable. The author manually add the track block rules from https://better.fyi/trackers/ since those rules are only for an iOS app only.",
-  "descrSourceUrl": "https://github.com/anarki999/Adblock-List-Archive/blob/master/Better.fyiTrackersBlocklist.txt",
-  "homeUrl": "https://github.com/anarki999/Adblock-List-Archive",
-  "issuesUrl": "https://github.com/anarki999/Adblock-List-Archive/issues",
-  "list": "Better.fyi | Trackers (List)",
-  "viewUrl": "https://raw.githubusercontent.com/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt"
-},{
   "descr": "Blocks Japanese regional mobile advertisements and trackers.",
   "homeUrl": "https://70i.net/",
   "list": "280 Blocker",
@@ -555,6 +548,13 @@
   "list": "Banki.ru Plus Adblock List",
   "tagLang": ["ru"],
   "viewUrl": "https://raw.githubusercontent.com/rebelion76/bankiru_plus_adblock_list/master/bankiru_plus.txt"
+}, {
+  "descr": "Adblock filters for both Adblock PLUS and uBlock. It also includes some anti-adblocking rules to make your adblocking extension undetectable. The author manually add the track block rules from https://better.fyi/trackers/ since those rules are only for an iOS app only.",
+  "descrSourceUrl": "https://github.com/anarki999/Adblock-List-Archive/blob/master/Better.fyiTrackersBlocklist.txt",
+  "homeUrl": "https://github.com/anarki999/Adblock-List-Archive",
+  "issuesUrl": "https://github.com/anarki999/Adblock-List-Archive/issues",
+  "list": "Better.fyi | Trackers (List)",
+  "viewUrl": "https://raw.githubusercontent.com/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt"
 }, {
   "descr": "Adblock / Adblock plus filter list for blocking cookie notifications.",
   "descrSourceUrl": "https://github.com/r4vi/block-the-eu-cookie-shit-list",
