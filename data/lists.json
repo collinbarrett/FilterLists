@@ -550,7 +550,6 @@
   "viewUrl": "https://raw.githubusercontent.com/rebelion76/bankiru_plus_adblock_list/master/bankiru_plus.txt"
 }, {
   "descr": "Adblock filters for both Adblock PLUS and uBlock. It also includes some anti-adblocking rules to make your adblocking extension undetectable. The author manually add the track block rules from https://better.fyi/trackers/ since those rules are only for an iOS app only.",
-  "descrSourceUrl": "https://github.com/anarki999/Adblock-List-Archive/blob/master/Better.fyiTrackersBlocklist.txt",
   "homeUrl": "https://github.com/anarki999/Adblock-List-Archive",
   "issuesUrl": "https://github.com/anarki999/Adblock-List-Archive/issues",
   "list": "Better.fyi | Trackers (List)",
@@ -975,6 +974,12 @@
   "homeUrl": "https://forums.lanik.us/viewtopic.php?t=8505",
   "list": "EasyTest",
   "viewUrl": "https://easylist-downloads.adblockplus.org/easytest.txt"
+}, {
+  "descr": "Members with ad blocking software may experience issues receiving Cash Back. If you have AdBlock, Adblock Plus or uBlock, you can add or subscribe to the Ebates Cash Back Shopping filter list.",
+  "descrSourceUrl": "https://www.ebates.com/help/troubleshooting.htm#abp",
+  "homeUrl": "https://www.ebates.com/",
+  "list": "Ebates Cash Back Shopping",
+  "viewUrl": "https://www.ebates.com/whitelist/ebates-cash-back-shopping.txt"
 }, {
   "descr": "Blocks Estonian regional advertisements and trackers.",
   "homeUrl": "http://adblock.ee/",
