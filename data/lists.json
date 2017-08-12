@@ -2202,6 +2202,13 @@
   "related": ["AdAway", "Dan Pollock's Hosts", "Malware Domain List", "MVPS HOSTS", "Peter Lowe's List", "Steven Black's Hosts"],
   "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts"
 }, {
+  "descr": "Block annoying web elements and reclaim lost screen real estate to make the web more user friendly!",
+  "descrSourceUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt",
+  "homeUrl": "https://github.com/yourduskquibbles/webannoyances",
+  "issuesUrl": "https://github.com/yourduskquibbles/webannoyances/issues",
+  "list": "Web Annoyances Ultralist",
+  "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt"
+}, {
   "descr": "Finnish supplement list for EasyList.",
   "descrSourceUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt",
   "homeUrl": "https://github.com/wiltteri/subscriptions",
