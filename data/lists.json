@@ -1358,6 +1358,14 @@
   "related": ["hpHosts"],
   "viewUrl": "https://hosts-file.net/psh.txt"
 }, {
+  "descr": "Sites engaged in the distribution of Potentially Unwanted Programs.",
+  "descrSourceUrl": "https://hosts-file.net/?s=classifications",
+  "forumUrl": "https://forum.hosts-file.net/",
+  "homeUrl": "https://hosts-file.net/",
+  "list": "hpHosts PUP",
+  "related": ["hpHosts"],
+  "viewUrl": "https://hosts-file.net/pup.txt"
+}, {
   "descr": "Sites engaged in the selling, distribution or provision of warez (including but not limited to keygens, serials etc), where such provisions do not contain malware.",
   "descrSourceUrl": "https://hosts-file.net/?s=classifications",
   "forumUrl": "https://forum.hosts-file.net/",
