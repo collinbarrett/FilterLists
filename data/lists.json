@@ -23,14 +23,6 @@
   "tagLang": ["vi"],
   "viewUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn.txt"
 }, {
-  "descr": "This project was built based on Anti-Adblock Killer (by Reek), but is now significantly different. Anti-Adblock Killer Script was completely re-implemented. Anti-Adblock Killer Filter was mostly copied and concatenated to AdBlock Protector List.",
-  "descrSourceUrl": "https://github.com/jspenguin2017/AdBlockProtector",
-  "homeUrl": "https://jspenguin2017.github.io/AdBlockProtector/",
-  "issuesUrl": "https://github.com/jspenguin2017/AdBlockProtector/issues",
-  "list": "AdBlockProtector",
-  "related": ["AakList (Anti-Adblock Killer)"],
-  "viewUrl": "https://github.com/jspenguin2017/AdBlockProtector/blob/master/AdBlockProtectorList.txt"
-}, {
   "descr": "Blocks Japanese regional social network advertisements and trackers.",
   "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
   "issuesUrl": "https://github.com/k2jp/abp-japanese-filters/issues",
@@ -2091,6 +2083,14 @@
   "list": "uBlock Polish Filters - Supplement",
   "tagLang": ["pl"],
   "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt"
+}, {
+  "descr": "This project was built based on Anti-Adblock Killer (by Reek), but is now significantly different. Anti-Adblock Killer Script was completely re-implemented. Anti-Adblock Killer Filter was mostly copied and concatenated to uBlock Protector List.",
+  "descrSourceUrl": "https://github.com/jspenguin2017/uBlockProtector",
+  "homeUrl": "https://jspenguin2017.github.io/uBlockProtector",
+  "issuesUrl": "https://github.com/jspenguin2017/uBlockProtector/issues",
+  "list": "uBlock Protector List",
+  "related": ["AakList (Anti-Adblock Killer)"],
+  "viewUrl": "https://raw.githubusercontent.com/jspenguin2017/uBlockProtector/master/uBlockProtectorList.txt"
 }, {
   "descr": "A filterlist with additional filters for uBlock Origin to block third-party, tracking, annoyances and all other unwarranted resources from loading. Contains filters specific to uBlock Origin and some filters that have not yet been added to other filterlists.",
   "descrSourceUrl": "https://github.com/uBlock-user/uBO-Personal-Filters",
