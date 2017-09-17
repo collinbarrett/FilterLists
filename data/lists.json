@@ -1613,6 +1613,13 @@
   "related": ["Unified Hosts", "Unified Hosts + Gambling", "Unified Hosts + Porn", "Unified Hosts + Social", "Unified Hosts + Gambling + Porn", "Unified Hosts + Gambling + Social", "Unified Hosts + Porn + Social", "Unified Hosts + Gambling + Porn + Social"],
   "viewUrl": "http://winhelp2002.mvps.org/hosts.txt"
 }, {
+  "descr": "Prevents browser based coin mining from clogging up your resources.",
+  "descrSourceUrl": "https://github.com/hoshsadiq/adblock-nocoin-list",
+  "homeUrl": "https://github.com/hoshsadiq/adblock-nocoin-list",
+  "issuesUrl": "https://github.com/hoshsadiq/adblock-nocoin-list/issues",
+  "list": "NoCoin",
+  "viewUrl": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
+}, {
   "descr": "A personal filter list. Each host is either an ad, phishing, malicious, analytics, or clickbait.",
   "descrSourceUrl": "https://github.com/genediazjr/nopelist",
   "homeUrl": "https://github.com/genediazjr/nopelist",
