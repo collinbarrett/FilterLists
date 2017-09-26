@@ -14,7 +14,6 @@ One can use [some](https://github.com/collinbarrett/FilterLists/issues/11) of th
 *   [AdAway](https://adaway.org/)
 *   [AdBlock](https://getadblock.com/)
 *   [Adblock Plus](https://adblockplus.org/)
-*   [uBlock](https://github.com/chrisaljoudi/uBlock)
 *   [uBlock Origin](https://github.com/gorhill/uBlock)
 *   ...[Did we forget one?](https://github.com/collinbarrett/FilterLists/issues)
 
