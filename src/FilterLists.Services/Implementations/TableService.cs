@@ -8,12 +8,10 @@ namespace FilterLists.Services.Implementations
 {
     public class TableService : ITableService
     {
-        private readonly IListRepository _listRepository;
         private readonly ITableCsvRepository _tableCsvRepository;
 
-        public TableService(IListRepository listRepository, ITableCsvRepository tableCsvRepository)
+        public TableService(ITableCsvRepository tableCsvRepository)
         {
-            _listRepository = listRepository;
             _tableCsvRepository = tableCsvRepository;
         }
 
@@ -49,8 +47,7 @@ namespace FilterLists.Services.Implementations
             var path = Path.Combine(Directory.GetCurrentDirectory(), "csv");
             Directory.CreateDirectory(path);
             var file = Path.Combine(path, fileName + ".csv");
-            using (var fileStream = new FileStream(file, FileMode.Create, FileAccess.Write,
-                FileShare.None))
+            using (var fileStream = new FileStream(file, FileMode.Create, FileAccess.Write, FileShare.None))
             {
                 await response.Content.CopyToAsync(fileStream);
             }
