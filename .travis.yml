@@ -4,16 +4,13 @@ sudo: required
 mono: none
 dotnet: 2.0.2
 solution: FilterLists.sln
-branches:
-  only:
-    - master
 addons:
   apt:
     sources:
-      - sourceline: 'deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ trusty main'
+    - sourceline: 'deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ trusty main'
       key_url: 'https://apt-mo.trafficmanager.net/keys/microsoft.asc'
     packages:
-      - dotnet-dev-2.0.2
+- dotnet-dev-2.0.2
 env:
   global:
     - secure: bAVsm4H5Kh2/ac/reztswoM81rg6hF38KPvk5MwO6pBPImbyRlrTr00RiPc5dDK/EubxpKjjSpypLEycRrj0xks2GIrOA1irnBaRWRHNZOJpJl2yNDMmJ49VlfAyHwpydWRrfJ6siwHoHjJ5OoXRMthPc+O00lO2YMN0jmuZ2QVtJLiBWVxE/3EnGl1glyjsHdmhEH0JsZXJgYxyn2nXrExWjA5C0tO0P0LMrqiCuZiRzPO0O4VnnQMjMD40wtS82f1Dkjj4CefwrOc/88eP3bYRhkeIoBwiYuuO5R+PTVauHfuoT31v1y05AfbpY6w+2XzCndIJ+3q0yya9PsB8PoSUteUgIRRm5cBNxg/4bvlXDsJniRMyLsd0+Y3UXDF61N1Jo2RmOHUqBjx/QzjAjzYjQp9vUm8OVSfpFieLMp5KK6k6bVF5fds1aBpMMHrRjnbdYd9mzWXCJchdrWgLegcYQd4L/UbfXatetomPRvuBz4aLAZdz0PEAVtwwR2eG8Uvy7pYU6hUdp3xCq4/INExMwDPdyaxmV9k8yvhDpgBmu18qP1VhD0/aaiCMXQqdLizLt6P34YRO85rayaS0bX314XJhRrhGy2PhMe19lV0VK3JyAniMQSl2s5bmLsMJyeGQaIj3KBI28y1U9EiOVGcWZwdfMCzSJ6LX/8uQPjc=
