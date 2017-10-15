@@ -2,7 +2,7 @@ language: csharp
 dist: trusty
 sudo: required
 mono: none
-dotnet: 1.0.4
+dotnet: 2.0.2
 solution: FilterLists.sln
 env:
   global:
