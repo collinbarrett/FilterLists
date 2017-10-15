@@ -1,5 +1,4 @@
-﻿using System.IO;
-using FilterLists.Api.DependencyInjection.Extensions;
+﻿using FilterLists.Api.DependencyInjection.Extensions;
 using FilterLists.Data.DependencyInjection.Extensions;
 using FilterLists.Services.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Builder;
@@ -10,15 +9,12 @@ namespace FilterLists.Api
 {
     public class Startup
     {
-        public Startup()
+        public Startup(IConfiguration configuration)
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", false, true);
-            Configuration = builder.Build();
+            Configuration = configuration;
         }
 
-        private IConfigurationRoot Configuration { get; }
+        public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
