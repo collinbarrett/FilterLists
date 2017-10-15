@@ -1241,6 +1241,14 @@
   "tagLang": ["el"],
   "viewUrl": "https://raw.githubusercontent.com/kargig/greek-adblockplus-filter/master/void-gr-filters.txt"
 }, {
+  "descr": "We will blacklist domains that fall into any of the following categories: scams/phishing/malware/malvertising/exploits - and other general threats.",
+  "descrSourceUrl": "https://www.hexxiumcreations.com/projects/malicious-domain-blocking/",
+  "email": "support@hexxiumcreations.com",
+  "homeUrl": "https://www.hexxiumcreations.com/projects/malicious-domain-blocking/",
+  "issuesUrl": "https://github.com/HexxiumCreations/threat-list/issues",
+  "list": "Hexxium Creations Threat List",
+  "viewUrl": "https://raw.githubusercontent.com/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt"
+}, {
   "descr": "A modern HOSTS list providing most cutting-edge of anti-[tracking, malware, advertisements and popups, clickjacking, statistics, analytics, bad redirections, bad/shock web-sites, filmsy webapps, shady android connections, junk, ..and foo].",
   "descrSourceUrl": "https://github.com/eladkarako/hosts.eladkarako.com",
   "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=7994YX29444PA&lc=IL&item_name=Elad%20Karako%27s%20HOSTS&item_number=for_hosts_eladkarako_com&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted",
