@@ -2,7 +2,6 @@
 using FilterLists.Api.DependencyInjection.Extensions;
 using FilterLists.Data.DependencyInjection.Extensions;
 using FilterLists.Services.DependencyInjection.Extensions;
-using JetBrains.Annotations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,7 +20,6 @@ namespace FilterLists.Api
 
         private IConfigurationRoot Configuration { get; }
 
-        [UsedImplicitly]
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddFilterListsRepositories(Configuration);
@@ -29,7 +27,6 @@ namespace FilterLists.Api
             services.AddFilterListsApi();
         }
 
-        [UsedImplicitly]
         public void Configure(IApplicationBuilder app)
         {
             app.UseMvc();

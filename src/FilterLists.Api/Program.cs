@@ -1,13 +1,10 @@
-﻿using JetBrains.Annotations;
-using Microsoft.AspNetCore;
+﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
 namespace FilterLists.Api
 {
-    [UsedImplicitly]
     public class Program
     {
-        [UsedImplicitly]
         public static void Main(string[] args)
         {
             BuildWebHost(args).Run();
