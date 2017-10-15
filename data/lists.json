@@ -301,6 +301,13 @@
   "related": "BadHosts",
   "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts"
 }, {
+  "descr": "This is a general, mainly a Finnish list for blocking various elements on specific websites such as ads, cookie notifications and cosmetic annoyances.",
+  "descrSourceUrl": "https://dl.dropboxusercontent.com/s/1ybzw9lb7m1qiyl/AAs.txt",
+  "homeUrl": "https://dl.dropboxusercontent.com/s/1ybzw9lb7m1qiyl/AAs.txt",
+  "list": "Additional Adblock Rules",
+  "tagLang": ["fi"],
+  "viewUrl": "https://dl.dropboxusercontent.com/s/1ybzw9lb7m1qiyl/AAs.txt"
+}, {
   "descr": "Blocks irritating elements on webpages, including cookie notices, third-party widgets and in-page popups (Doesn’t include social media widgets and buttons, to block them you can still use Social media filter separately). It was inspired by Fanboy Annoyances List, but doesn’t duplicate it, so you can use them both together.",
   "descrSourceUrl": "https://adguard.com/en/filters.html",
   "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
