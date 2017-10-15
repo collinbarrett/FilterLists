@@ -96,6 +96,9 @@ ipch/
 *.vspx
 *.sap
 
+# Visual Studio Trace Files
+*.e2e
+
 # TFS 2012 Local Workspace
 $tf/
 
@@ -115,6 +118,10 @@ _TeamCity*
 
 # DotCover is a Code Coverage Tool
 *.dotCover
+
+# AxoCover is a Code Coverage Tool
+.axoCover/*
+!.axoCover/settings.json
 
 # Visual Studio code coverage results
 *.coverage
@@ -151,7 +158,7 @@ publish/
 # Publish Web Output
 *.[Pp]ublish.xml
 *.azurePubxml
-# TODO: Comment the next line if you want to checkin your web deploy settings
+# Note: Comment the next line if you want to checkin your web deploy settings,
 # but database connection strings (with potential passwords) will be unencrypted
 *.pubxml
 *.publishproj
@@ -294,7 +301,9 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 
+# OpenCover UI analysis results
+OpenCover/
+
 # FilterLists Custom Ignores
 gs/Private.gs
-src/FilterLists.DataLoad/appsettings.json
-src/FilterLists.Api/appsettings.json
+appsettings.json
