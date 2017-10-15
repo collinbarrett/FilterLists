@@ -3,6 +3,9 @@ dist: xenial
 sudo: required
 mono: none
 dotnet: 2.0.0
+branches:
+  only:
+  - master
 solution: FilterLists.sln
 env:
   global:
