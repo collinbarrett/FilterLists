@@ -1,5 +1,5 @@
-﻿using System.IO;
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
 namespace FilterLists.Api
@@ -10,13 +10,14 @@ namespace FilterLists.Api
         [UsedImplicitly]
         public static void Main(string[] args)
         {
-            var host = new WebHostBuilder()
-                .UseKestrel()
-                .UseContentRoot(Directory.GetCurrentDirectory())
+            BuildWebHost(args).Run();
+        }
+
+        public static IWebHost BuildWebHost(string[] args)
+        {
+            return WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .UseUrls("http://localhost:5123")
                 .Build();
-            host.Run();
         }
     }
 }
