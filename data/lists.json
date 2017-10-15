@@ -1249,21 +1249,6 @@
   "list": "Hexxium Creations Threat List",
   "viewUrl": "https://raw.githubusercontent.com/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt"
 }, {
-  "descr": "A modern HOSTS list providing most cutting-edge of anti-[tracking, malware, advertisements and popups, clickjacking, statistics, analytics, bad redirections, bad/shock web-sites, filmsy webapps, shady android connections, junk, ..and foo].",
-  "descrSourceUrl": "https://github.com/eladkarako/hosts.eladkarako.com",
-  "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=7994YX29444PA&lc=IL&item_name=Elad%20Karako%27s%20HOSTS&item_number=for_hosts_eladkarako_com&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted",
-  "homeUrl": "http://hosts.eladkarako.com/",
-  "issuesUrl": "https://github.com/eladkarako/hosts.eladkarako.com/issues",
-  "list": "HOSTS AdBlock",
-  "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts.eladkarako.com/master/build/hosts_adblock.txt"
-}, {
-  "descr": "Blocks annoyances.",
-  "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=7994YX29444PA&lc=IL&item_name=Elad%20Karako%27s%20HOSTS&item_number=for_hosts_eladkarako_com&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted",
-  "homeUrl": "http://hosts.eladkarako.com/",
-  "issuesUrl": "https://github.com/eladkarako/hosts.eladkarako.com/issues",
-  "list": "HOSTS AdBlock Anti-Annoyance Bonus",
-  "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts.eladkarako.com/master/build/hosts_adblock_anti_annoyances.txt"
-}, {
   "descr": "Japanese ad servers hosts file.",
   "forumUrl": "http://potato.2ch.net/test/read.cgi/android/1450730522/",
   "homeUrl": "https://sites.google.com/site/hosts2ch/",
