@@ -15,10 +15,4 @@
     <Folder Include="Stored Procedures\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="System.Runtime">
-      <HintPath>..\..\..\..\..\.nuget\packages\system.runtime\4.3.0\ref\netstandard1.5\System.Runtime.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>
