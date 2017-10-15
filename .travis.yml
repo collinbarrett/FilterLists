@@ -1,5 +1,5 @@
 language: csharp
-dist: trusty
+dist: xenial
 sudo: required
 mono: none
 dotnet: 2.0.0
