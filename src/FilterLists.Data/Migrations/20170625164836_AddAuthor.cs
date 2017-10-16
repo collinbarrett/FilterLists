@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FilterLists.Data.Migrations
@@ -9,8 +8,8 @@ namespace FilterLists.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "Name",
-                table: "List",
+                "Name",
+                "List",
                 maxLength: 126,
                 nullable: true,
                 oldClrType: typeof(string),
@@ -18,14 +17,14 @@ namespace FilterLists.Data.Migrations
                 oldNullable: true);
 
             migrationBuilder.AlterColumn<DateTime>(
-                name: "ModifiedDateUtc",
-                table: "List",
+                "ModifiedDateUtc",
+                "List",
                 nullable: true,
                 oldClrType: typeof(DateTime));
 
             migrationBuilder.AlterColumn<string>(
-                name: "Email",
-                table: "List",
+                "Email",
+                "List",
                 maxLength: 126,
                 nullable: true,
                 oldClrType: typeof(string),
@@ -33,8 +32,8 @@ namespace FilterLists.Data.Migrations
                 oldNullable: true);
 
             migrationBuilder.AlterColumn<string>(
-                name: "Description",
-                table: "List",
+                "Description",
+                "List",
                 maxLength: 1022,
                 nullable: true,
                 oldClrType: typeof(string),
@@ -42,8 +41,8 @@ namespace FilterLists.Data.Migrations
                 oldNullable: true);
 
             migrationBuilder.AddColumn<string>(
-                name: "Author",
-                table: "List",
+                "Author",
+                "List",
                 maxLength: 126,
                 nullable: true);
         }
@@ -51,12 +50,12 @@ namespace FilterLists.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "Author",
-                table: "List");
+                "Author",
+                "List");
 
             migrationBuilder.AlterColumn<string>(
-                name: "Name",
-                table: "List",
+                "Name",
+                "List",
                 maxLength: 64,
                 nullable: true,
                 oldClrType: typeof(string),
@@ -64,15 +63,15 @@ namespace FilterLists.Data.Migrations
                 oldNullable: true);
 
             migrationBuilder.AlterColumn<DateTime>(
-                name: "ModifiedDateUtc",
-                table: "List",
+                "ModifiedDateUtc",
+                "List",
                 nullable: false,
                 oldClrType: typeof(DateTime),
                 oldNullable: true);
 
             migrationBuilder.AlterColumn<string>(
-                name: "Email",
-                table: "List",
+                "Email",
+                "List",
                 maxLength: 254,
                 nullable: true,
                 oldClrType: typeof(string),
@@ -80,8 +79,8 @@ namespace FilterLists.Data.Migrations
                 oldNullable: true);
 
             migrationBuilder.AlterColumn<string>(
-                name: "Description",
-                table: "List",
+                "Description",
+                "List",
                 maxLength: 512,
                 nullable: true,
                 oldClrType: typeof(string),
