@@ -19,5 +19,10 @@ namespace FilterLists.Data.Repositories.Implementations
         {
             return _filterListsDbContext.List.AsEnumerable();
         }
+
+        public List GetByName(string listName)
+        {
+            return _filterListsDbContext.List.First(x => x.Name == listName);
+        }
     }
 }
