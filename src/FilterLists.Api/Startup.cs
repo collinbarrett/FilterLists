@@ -2,6 +2,7 @@
 using FilterLists.Data.DependencyInjection.Extensions;
 using FilterLists.Services.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -25,6 +26,10 @@ namespace FilterLists.Api
 
         public void Configure(IApplicationBuilder app)
         {
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            });
             app.UseMvc();
         }
     }
