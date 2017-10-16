@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore;
+﻿using FilterLists.Data;
+using FilterLists.Data.Contexts;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.Api
 {
@@ -7,7 +10,12 @@ namespace FilterLists.Api
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            var host = BuildWebHost(args);
+            //using (var scope = host.Services.CreateScope())
+            //{
+            //    DbInitializer.Initialize(scope.ServiceProvider.GetRequiredService<FilterListsDbContext>());
+            //}
+            host.Run();
         }
 
         public static IWebHost BuildWebHost(string[] args)

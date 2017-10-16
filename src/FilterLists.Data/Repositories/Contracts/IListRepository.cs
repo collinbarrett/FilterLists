@@ -7,5 +7,8 @@ namespace FilterLists.Data.Repositories.Contracts
     {
         IEnumerable<List> GetAll();
         List GetByName(string listName);
+        void Create(List list);
+        void DeleteAll();
+        bool Any();
     }
 }
