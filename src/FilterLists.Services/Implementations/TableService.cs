@@ -1,6 +1,8 @@
 ﻿using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
+using CsvHelper;
+using FilterLists.Data.Models.Implementations;
 using FilterLists.Data.Repositories.Contracts;
 using FilterLists.Services.Contracts;
 
@@ -20,18 +22,19 @@ namespace FilterLists.Services.Implementations
         /// </summary>
         public void UpdateTables()
         {
-            //TODO: loop through all CSVs
-            UpdateTable("List");
+            UpdateListTable();
         }
 
         /// <summary>
-        ///     update table via .CSV from GitHub
+        ///     update table via List.csv from GitHub
         /// </summary>
-        /// <param name="tableName">name of database table</param>
-        public void UpdateTable(string tableName)
+        public void UpdateListTable()
         {
-            var file = FetchFile(_tableCsvRepository.GetUrlByName(tableName), tableName).Result;
-            //TODO: exec stored procedure to merge/upsert csv into corresponding db table
+            var localCsvFilePath = FetchFile(_tableCsvRepository.GetUrlByName("List"), "List").Result;
+            TextReader textReader = File.OpenText(localCsvFilePath);
+            var csv = new CsvReader(textReader);
+            csv.Configuration.MissingFieldFound = null;
+            var records = csv.GetRecords<List>();
             //TODO: delete file when finished
         }
 
