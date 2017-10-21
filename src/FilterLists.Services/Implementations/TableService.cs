@@ -32,6 +32,7 @@ namespace FilterLists.Services.Implementations
         {
             var file = FetchFile(_tableCsvRepository.GetUrlByName(tableName), tableName).Result;
             //TODO: exec stored procedure to merge/upsert csv into corresponding db table
+            //TODO: delete file when finished
         }
 
         /// <summary>
