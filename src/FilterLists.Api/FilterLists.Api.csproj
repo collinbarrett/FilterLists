@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Connected Services\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -23,10 +24,6 @@
   <ItemGroup>
     <ProjectReference Include="..\FilterLists.Data\FilterLists.Data.csproj" />
     <ProjectReference Include="..\FilterLists.Services\FilterLists.Services.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>
