@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using FilterLists.Data.Contexts;
-using FilterLists.Data.Models;
+using FilterLists.Data.Models.Contracts;
 using FilterLists.Data.Repositories.Contracts;
 
 namespace FilterLists.Data.Repositories.Implementations
@@ -15,7 +15,7 @@ namespace FilterLists.Data.Repositories.Implementations
             _filterListsDbContext = filterListsDbContext;
         }
 
-        public IEnumerable<TableCsv> GetAll()
+        public IEnumerable<ITableCsv> GetAll()
         {
             return _filterListsDbContext.TableCsv.AsEnumerable();
         }

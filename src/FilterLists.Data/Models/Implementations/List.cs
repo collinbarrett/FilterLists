@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using FilterLists.Data.Models.Contracts;
 
-namespace FilterLists.Data.Models
+namespace FilterLists.Data.Models.Implementations
 {
-    public class List : BaseEntity
+    public class List : BaseEntity, IList
     {
         [MaxLength(126)]
         public string Name { get; set; }

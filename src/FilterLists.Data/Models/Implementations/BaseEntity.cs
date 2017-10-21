@@ -2,10 +2,11 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using FilterLists.Data.Models.Contracts;
 
-namespace FilterLists.Data.Models
+namespace FilterLists.Data.Models.Implementations
 {
-    public abstract class BaseEntity
+    public abstract class BaseEntity : IBaseEntity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

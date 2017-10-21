@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using FilterLists.Data.Models;
+using FilterLists.Data.Models.Contracts;
 using FilterLists.Data.Repositories.Contracts;
 using FilterLists.Services.Contracts;
 
@@ -14,7 +14,7 @@ namespace FilterLists.Services.Implementations
             _listRepository = listRepository;
         }
 
-        public IEnumerable<List> GetAll()
+        public IEnumerable<IList> GetAll()
         {
             return _listRepository.GetAll();
         }
