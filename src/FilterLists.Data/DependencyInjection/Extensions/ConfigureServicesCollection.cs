@@ -13,9 +13,8 @@ namespace FilterLists.Data.DependencyInjection.Extensions
         public static void AddFilterListsRepositories(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddSingleton(c => configuration);
-            services.AddEntityFrameworkMySql()
-                .AddDbContext<FilterListsDbContext>(options =>
-                    options.UseMySql(configuration.GetConnectionString("FilterListsConnection")));
+            services.AddEntityFrameworkMySql().AddDbContext<FilterListsDbContext>(options =>
+                options.UseMySql(configuration.GetConnectionString("FilterListsConnection")));
             services.TryAddScoped<IListRepository, ListRepository>();
             services.TryAddScoped<ITableCsvRepository, TableCsvRepository>();
         }
