@@ -1634,7 +1634,7 @@
   "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
   "list": "Norwegian list for tidier websites",
   "tagLang": ["no"],
-  "viewUrl": "https://github.com/DandelionSprout/adfilt/blob/master/ExperimentalNorwegianList.txt"
+  "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ExperimentalNorwegianList.txt"
 }, {
   "descr": "Blocks trackers.",
   "homeUrl": "https://github.com/quidsup/notrack",
