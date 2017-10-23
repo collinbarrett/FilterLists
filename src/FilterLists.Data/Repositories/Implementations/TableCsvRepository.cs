@@ -8,21 +8,21 @@ namespace FilterLists.Data.Repositories.Implementations
 {
     public class TableCsvRepository : ITableCsvRepository
     {
-        private readonly IFilterListsDbContext _filterListsDbContext;
+        private readonly IFilterListsDbContext filterListsDbContext;
 
         public TableCsvRepository(FilterListsDbContext filterListsDbContext)
         {
-            _filterListsDbContext = filterListsDbContext;
+            this.filterListsDbContext = filterListsDbContext;
         }
 
         public IEnumerable<ITableCsv> GetAll()
         {
-            return _filterListsDbContext.TableCsv.AsEnumerable();
+            return filterListsDbContext.TableCsv.AsEnumerable();
         }
 
         public string GetUrlByName(string name)
         {
-            return _filterListsDbContext.TableCsv.FirstOrDefault(x => x.Name == name).Url;
+            return filterListsDbContext.TableCsv.FirstOrDefault(x => x.Name == name).Url;
         }
     }
 }

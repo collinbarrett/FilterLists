@@ -7,16 +7,16 @@ namespace FilterLists.Services.Implementations
 {
     public class ListService : IListService
     {
-        private readonly IListRepository _listRepository;
+        private readonly IListRepository listRepository;
 
         public ListService(IListRepository listRepository)
         {
-            _listRepository = listRepository;
+            this.listRepository = listRepository;
         }
 
         public IEnumerable<IList> GetAll()
         {
-            return _listRepository.GetAll();
+            return listRepository.GetAll();
         }
     }
 }

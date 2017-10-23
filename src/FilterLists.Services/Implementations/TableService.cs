@@ -10,11 +10,11 @@ namespace FilterLists.Services.Implementations
 {
     public class TableService : ITableService
     {
-        private readonly ITableCsvRepository _tableCsvRepository;
+        private readonly ITableCsvRepository tableCsvRepository;
 
         public TableService(ITableCsvRepository tableCsvRepository)
         {
-            _tableCsvRepository = tableCsvRepository;
+            this.tableCsvRepository = tableCsvRepository;
         }
 
         public void UpdateTables()
@@ -24,7 +24,7 @@ namespace FilterLists.Services.Implementations
 
         public void UpdateListTable()
         {
-            var localCsvFilePath = FetchFile(_tableCsvRepository.GetUrlByName("List"), "List").Result;
+            var localCsvFilePath = FetchFile(tableCsvRepository.GetUrlByName("List"), "List").Result;
             TextReader textReader = File.OpenText(localCsvFilePath);
             var csv = new CsvReader(textReader);
             csv.Configuration.MissingFieldFound = null;

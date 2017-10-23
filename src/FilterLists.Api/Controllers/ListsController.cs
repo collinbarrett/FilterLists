@@ -8,17 +8,17 @@ namespace FilterLists.Api.Controllers
     [Route("v1/[controller]")]
     public class ListsController : Controller
     {
-        private readonly IListService _listService;
+        private readonly IListService listService;
 
         public ListsController(IListService listService)
         {
-            _listService = listService;
+            this.listService = listService;
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            return Json(_listService.GetAll());
+            return Json(listService.GetAll());
         }
     }
 }

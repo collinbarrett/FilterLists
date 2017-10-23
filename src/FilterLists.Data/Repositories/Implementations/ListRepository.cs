@@ -8,21 +8,21 @@ namespace FilterLists.Data.Repositories.Implementations
 {
     public class ListRepository : IListRepository
     {
-        private readonly IFilterListsDbContext _filterListsDbContext;
+        private readonly IFilterListsDbContext filterListsDbContext;
 
         public ListRepository(FilterListsDbContext filterListsDbContext)
         {
-            _filterListsDbContext = filterListsDbContext;
+            this.filterListsDbContext = filterListsDbContext;
         }
 
         public IEnumerable<IList> GetAll()
         {
-            return _filterListsDbContext.List.AsEnumerable();
+            return filterListsDbContext.List.AsEnumerable();
         }
 
         public IList GetByName(string listName)
         {
-            return _filterListsDbContext.List.First(x => x.Name == listName);
+            return filterListsDbContext.List.First(x => x.Name == listName);
         }
     }
 }
