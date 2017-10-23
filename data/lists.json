@@ -1,9 +1,9 @@
 [{
   "descr": "Blocks Japanese regional mobile advertisements and trackers.",
-  "homeUrl": "https://70i.net/",
+  "homeUrl": "https://280blocker.net",
   "list": "280 Blocker",
   "tagLang": ["ja"],
-  "viewUrl": "https://70i.net/files/70i_net_adblock.txt"
+  "viewUrl": "https://280blocker.net/files/280blocker_adblock.txt"
 }, {
   "descr": "Helps you keep your Ad-Blocker active, when you visit a website and it asks you to disable. Composed of a user script «AakScript» written in javascript and a filter list «AakList» using the same syntax as lists AdBlock and AdBlock Plus, the two are complementary and unlock different website.",
   "descrSourceUrl": "https://github.com/reek/anti-adblock-killer/",
