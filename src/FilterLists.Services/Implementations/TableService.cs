@@ -17,17 +17,11 @@ namespace FilterLists.Services.Implementations
             _tableCsvRepository = tableCsvRepository;
         }
 
-        /// <summary>
-        ///     update all tables via .CSVs from GitHub
-        /// </summary>
         public void UpdateTables()
         {
             UpdateListTable();
         }
 
-        /// <summary>
-        ///     update table via List.csv from GitHub
-        /// </summary>
         public void UpdateListTable()
         {
             var localCsvFilePath = FetchFile(_tableCsvRepository.GetUrlByName("List"), "List").Result;
@@ -38,12 +32,6 @@ namespace FilterLists.Services.Implementations
             //TODO: delete file when finished
         }
 
-        /// <summary>
-        ///     fetch file as string from internet
-        /// </summary>
-        /// <param name="url">URL of file to fetch</param>
-        /// <param name="fileName">name to save file as</param>
-        /// <returns>string of file</returns>
         private static async Task<string> FetchFile(string url, string fileName)
         {
             var response = await new HttpClient().GetAsync(url);
