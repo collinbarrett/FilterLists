@@ -6,6 +6,7 @@ namespace FilterLists.Api.Controllers
     //TODO: migrate controllers to separate projects by version, use dependency injection
     //TODO: automate URL versioning
     [Route("v1/[controller]")]
+    [Produces("application/json")]
     public class ListsController : Controller
     {
         private readonly IListService listService;
