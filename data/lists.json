@@ -203,6 +203,15 @@
   "tagLang": ["pl"],
   "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt"
 }, {
+  "descr": "A set of adblock filters to block advertisement in Persian websites.",
+  "descrSourceUrl": "https://github.com/SlashArash/adblockfa/",
+  "email": "slasharash@protonmail.com",
+  "homeUrl": "https://github.com/SlashArash/adblockfa",
+  "issuesUrl": "https://github.com/SlashArash/adblockfa/issues",
+  "list": "AdBlockFarsi",
+  "tagLang": ["fa"],
+  "viewUrl": "https://raw.githubusercontent.com/SlashArash/adblockfa/master/adblockfa.txt"
+}, {
   "descr": "Blocks Estonian regional advertisements and trackers.",
   "email": "adblock@gurud.ee",
   "homeUrl": "http://gurud.ee/veeb/adblock",
