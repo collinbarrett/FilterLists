@@ -1,10 +1,12 @@
-﻿using FilterLists.Api.DependencyInjection.Extensions;
+﻿using System.IO;
+using FilterLists.Api.DependencyInjection.Extensions;
 using FilterLists.Data.DependencyInjection.Extensions;
 using FilterLists.Services.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.PlatformAbstractions;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace FilterLists.Api
@@ -39,6 +41,8 @@ namespace FilterLists.Api
                             Url = "https://github.com/collinbarrett/FilterLists/blob/master/LICENSE"
                         }
                     });
+                c.IncludeXmlComments(Path.Combine(PlatformServices.Default.Application.ApplicationBasePath,
+                    "FilterLists.Api.xml"));
             });
         }
 
