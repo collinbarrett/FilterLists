@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using FilterLists.Api.DependencyInjection.Extensions;
-using FilterLists.Data.DependencyInjection.Extensions;
 using FilterLists.Services.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -22,8 +21,7 @@ namespace FilterLists.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddFilterListsRepositories(Configuration);
-            services.AddFilterListsServices();
+            services.AddFilterListsServices(Configuration);
             services.AddFilterListsApi();
             services.AddSwaggerGen(c =>
             {
