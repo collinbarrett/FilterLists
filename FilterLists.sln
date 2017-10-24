@@ -2,17 +2,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{E2F4C0A9-CA4D-4A11-8B10-899513E777F8}"
-	ProjectSection(SolutionItems) = preProject
-		scripts\build.sh = scripts\build.sh
-		scripts\deploy.sh = scripts\deploy.sh
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{6EF78534-FCFD-4918-91AA-316D8AA951AA}"
-	ProjectSection(SolutionItems) = preProject
-		.travis.yml = .travis.yml
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E7590A2B-621D-47EA-B026-315793F0FE50}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Api", "src\FilterLists.Api\FilterLists.Api.csproj", "{57E4CE18-41F3-48F6-B142-12947FFBA86C}"
@@ -70,7 +59,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E2F4C0A9-CA4D-4A11-8B10-899513E777F8} = {6EF78534-FCFD-4918-91AA-316D8AA951AA}
 		{57E4CE18-41F3-48F6-B142-12947FFBA86C} = {E7590A2B-621D-47EA-B026-315793F0FE50}
 		{944ADE8F-18E3-4DB8-9098-6A55E026EAC1} = {E7590A2B-621D-47EA-B026-315793F0FE50}
 		{B507EE76-B035-45D7-9D26-DF38A5013BC3} = {E7590A2B-621D-47EA-B026-315793F0FE50}

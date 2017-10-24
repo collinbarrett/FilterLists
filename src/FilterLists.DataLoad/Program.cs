@@ -1,4 +1,5 @@
-﻿using FilterLists.Services.Contracts;
+﻿using FilterLists.Data.Schema;
+using FilterLists.Services.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.DataLoad
@@ -9,9 +10,10 @@ namespace FilterLists.DataLoad
         public static void Main(string[] args)
         {
             IServiceCollection services = new ServiceCollection();
-            var startup = new Startup();
-            startup.ConfigureServices(services);
+            new Startup().ConfigureServices(services);
             var serviceProvider = services.BuildServiceProvider();
+
+            JsonSchemaGenerator.WriteSchemaToFiles();
 
             var tableService = serviceProvider.GetService<ITableService>();
             tableService.UpdateTables();

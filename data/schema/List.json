@@ -1,0 +1,109 @@
+{
+  "type": "object",
+  "properties": {
+    "Name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 126
+    },
+    "ViewUrl": {
+      "type": "string",
+      "minLength": 6,
+      "maxLength": 2083
+    },
+    "HomeUrl": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 6,
+      "maxLength": 2083
+    },
+    "Description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 1022
+    },
+    "DescriptionSourceUrl": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 6,
+      "maxLength": 2083
+    },
+    "Author": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 126
+    },
+    "ForumUrl": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 6,
+      "maxLength": 2083
+    },
+    "IssuesUrl": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 6,
+      "maxLength": 2083
+    },
+    "Email": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 7,
+      "maxLength": 126
+    },
+    "DonateUrl": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 6,
+      "maxLength": 2083
+    },
+    "Id": {
+      "type": "integer"
+    },
+    "AddedDateUtc": {
+      "type": "string",
+      "default": "CURRENT_TIMESTAMP",
+      "format": "date-time"
+    },
+    "ModifiedDateUtc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "Name",
+    "ViewUrl",
+    "HomeUrl",
+    "Description",
+    "DescriptionSourceUrl",
+    "Author",
+    "ForumUrl",
+    "IssuesUrl",
+    "Email",
+    "DonateUrl",
+    "Id",
+    "AddedDateUtc",
+    "ModifiedDateUtc"
+  ]
+}
