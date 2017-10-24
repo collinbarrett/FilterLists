@@ -1,5 +1,5 @@
 function refreshData() {
-    var data = ImportJSON("https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/data/lists.json", "", "noTruncate,rawHeaders,noInherit");
+    var data = ImportJSON("https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/lists.json", "", "noTruncate,rawHeaders,noInherit");
     data = fill2dJsonArrayWithNulls(data);
     sData.clearContents();
     sData.getRange(1, 1, data.length, data[0].length).setValues(data);
