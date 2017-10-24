@@ -15,7 +15,7 @@ namespace FilterLists.Data.Schema
             foreach (var type in GetTypesInNamespace(Assembly.GetExecutingAssembly(),
                 "FilterLists.Data.Models.Implementations"))
             {
-                if (type == typeof(BaseEntity)) continue;
+                if (type != typeof(List)) continue; //TEMP: only document List schema for now
                 WriteSchemaToFile(type);
             }
         }
