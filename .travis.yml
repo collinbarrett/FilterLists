@@ -14,8 +14,9 @@ env:
     - secure: R3coFui0kkQ72gwxStgicvs4aMR41pGQ6quTCeJGNVxI0Rx1viU6sgOK+5PJbte37fOGmgyf7WEZLO9RVncfd2UcChV4/UrHy1bYZsOMqA32fH8VRnQ4hd196cGzlX3TOpifnwu5iQ3UlamLcAb51wSENQJWUs6FiZHNYfp/c0jmJ2lSKFciVQh097ZdTaSd/ecRbVSCTxpcPKB7y8kSOlEQJjSN5LLcgQf8nqgrsCyIxNnazCipVjn6n/1M1ZKaDRj2fuAJ4JYGtI8bmbjcLYK9Xgz3kkUqAz0A/2VVodzngbtji6c0ZaJu4a+C/+J82divuAITV7XLjjpDTB8JZYIoH1u2kgZKivOE1smCnkvCQMbNk9zWe7fZCoHHDq4illrckeWfRgN5qBT3YkF4I1e+ruhpA142fI15fryvA+L4Nasmg8ILsKqpiN6zknOfo+PIgBPgXLX/TPmn8b3GMndCyPlB8tx+iBVQQ2+0CD1IiA3jmBQJ6Bnd5YS0TztQ7+TuHumNujCP8p8PZ6PQIx1YRoZM6cXJ/8rF4u8VnEa7QioaomLb7XcVg9KUyL3IU/rK2Jr5EK9IEAX5Whcxyy5l8zG+lDvdCoA9/7gSjOL7P90lTgxl/qiluO9HNRuHuOWoXGmQSp/3IVghI2vYLjHl0K3XXDAkfrvzlTAlndw=
 before_install:
   - sudo apt-get install sshpass
-  - sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ xenial main" > /etc/apt/sources.list.d/dotnetdev.list'
-  - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
+  - curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+  - sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+  - sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod xenial main" > /etc/apt/sources.list.d/dotnetdev.list'
   - sudo apt-get update
   - sudo apt-get install dotnet-sdk-2.0.2
 script:
