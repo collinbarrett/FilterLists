@@ -1,3 +1,5 @@
+<!-- The information below is for reference only, please delete it before submitting your PR. -->
+
 ### Closing Issues:
 * [ ] Have you included "closes #XXXX" in your comment to auto-close the issue that your PR fixes?
 
