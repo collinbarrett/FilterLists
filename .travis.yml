@@ -1,10 +1,6 @@
-language: csharp
 dist: trusty
 sudo: required
-mono: none
-branches:
-  only:
-  - master
+language: csharp
 solution: FilterLists.sln
 env:
   global:
