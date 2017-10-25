@@ -1,30 +1,13 @@
 {
   "type": "object",
   "properties": {
-    "Name": {
-      "description": "The name of the list as stated by the list maintainer(s) in title case.",
+    "Author": {
+      "description": "The author (person or group) who maintains the list.",
       "type": [
         "string",
         "null"
       ],
       "maxLength": 126
-    },
-    "ViewUrl": {
-      "description": "The URL to the list in raw text format. zip files and other formats are acceptable if no text format is available.",
-      "type": "string",
-      "minLength": 6,
-      "maxLength": 2083,
-      "format": "uri"
-    },
-    "HomeUrl": {
-      "description": "The URL to the list's home page. Preferably, this is stated in the header of the list. Alternatively, it could be a custom domain, GitHub page, blog post, forum post, etc. that serves as a primary source of information for the list.",
-      "type": [
-        "string",
-        "null"
-      ],
-      "minLength": 6,
-      "maxLength": 2083,
-      "format": "uri"
     },
     "Description": {
       "description": "A brief description of the list's functionality. Preferably, this is quoted (if non-English, translate to English via translator or Google Translate for consistency) from the list's documentation or composed by a maintainer of the list. If neither are available, a generic description should be composed by the FilterLists contributor.",
@@ -44,16 +27,37 @@
       "maxLength": 2083,
       "format": "uri"
     },
-    "Author": {
-      "description": "The author (person or group) who maintains the list.",
+    "DonateUrl": {
+      "description": "The URL to the list's donation page. This could be a custom PayPal or similar link, or a link to a web page discussing various donation options. Pull requests that include changes to this link will undergo further verification to prevent fraud.",
       "type": [
         "string",
         "null"
       ],
+      "minLength": 6,
+      "maxLength": 2083,
+      "format": "uri"
+    },
+    "Email": {
+      "description": "The email address of the list's maintainer(s) if publicly available.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 7,
       "maxLength": 126
     },
     "ForumUrl": {
       "description": "The URL to the list's forum where issues, change requests, etc. are discussed.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 6,
+      "maxLength": 2083,
+      "format": "uri"
+    },
+    "HomeUrl": {
+      "description": "The URL to the list's home page. Preferably, this is stated in the header of the list. Alternatively, it could be a custom domain, GitHub page, blog post, forum post, etc. that serves as a primary source of information for the list.",
       "type": [
         "string",
         "null"
@@ -72,21 +76,17 @@
       "maxLength": 2083,
       "format": "uri"
     },
-    "Email": {
-      "description": "The email address of the list's maintainer(s) if publicly available.",
+    "Name": {
+      "description": "The name of the list as stated by the list maintainer(s) in title case.",
       "type": [
         "string",
         "null"
       ],
-      "minLength": 7,
       "maxLength": 126
     },
-    "DonateUrl": {
-      "description": "The URL to the list's donation page. This could be a custom PayPal or similar link, or a link to a web page discussing various donation options. Pull requests that include changes to this link will undergo further verification to prevent fraud.",
-      "type": [
-        "string",
-        "null"
-      ],
+    "ViewUrl": {
+      "description": "The URL to the list in raw text format. zip files and other formats are acceptable if no text format is available.",
+      "type": "string",
       "minLength": 6,
       "maxLength": 2083,
       "format": "uri"
@@ -108,16 +108,16 @@
     }
   },
   "required": [
-    "Name",
-    "ViewUrl",
-    "HomeUrl",
+    "Author",
     "Description",
     "DescriptionSourceUrl",
-    "Author",
-    "ForumUrl",
-    "IssuesUrl",
-    "Email",
     "DonateUrl",
+    "Email",
+    "ForumUrl",
+    "HomeUrl",
+    "IssuesUrl",
+    "Name",
+    "ViewUrl",
     "Id",
     "AddedDateUtc",
     "ModifiedDateUtc"

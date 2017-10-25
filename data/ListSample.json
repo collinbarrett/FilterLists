@@ -1,0 +1,15 @@
+{
+  "Author": "John Doe",
+  "Description": "A sample list to filter out advertisements.",
+  "DescriptionSourceUrl": "https://mysample.list",
+  "DonateUrl": "https://mysample.list/donate/",
+  "Email": "contact@mysample.list",
+  "ForumUrl": "https://mysample.list/forum/",
+  "HomeUrl": "https://mysample.list/",
+  "IssuesUrl": "https://github.com/mysamplelist/issues",
+  "Name": "My Sample List",
+  "ViewUrl": "https://mysample.list/list.txt",
+  "Id": 0,
+  "AddedDateUtc": "0001-01-01T00:00:00",
+  "ModifiedDateUtc": null
+}
