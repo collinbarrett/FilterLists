@@ -1,17 +1,18 @@
-### All Submissions:
+### Closing issues
+* [ ] Have you included "closes #XXXX" in your comment to auto-close the issue that your PR fixes?
 
-* [ ] Have you followed the guidelines in our Contributing document?
-* [ ] Have you checked to ensure there aren't other open [Pull Requests](../../pulls) for the same update/change?
+### General Submissions:
+* [ ] Is there an issue open for this change? If not, please open a new issue prior to submitting this PR. 
 
-<!-- You can erase any parts of this template not applicable to your Pull Request. -->
-
-### New or Updated List:
+### Submissions for New or Updated Lists:
 
 * [ ] Have you filled in all properties available for the list (see sample below)?
 * [ ] Have you sorted the properties in alphabetical order?
+* [ ] Have you ensured that all URLS are functioning properly?
+* [ ] Have you ensured all URLs point to HTTPS if supported?
 
 #### Sample List JSON Object:
-https://github.com/collinbarrett/FilterLists/blob/master/data/ListSample.json
+[Source](https://github.com/collinbarrett/FilterLists/blob/master/data/ListSample.json)
 
 ```
 {
