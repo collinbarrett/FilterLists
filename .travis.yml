@@ -2,13 +2,6 @@ language: csharp
 dist: trusty
 sudo: required
 mono: none
-addons:
-  apt:
-    sources:
-    - sourceline: 'deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ trusty main'
-      key_url: 'https://apt-mo.trafficmanager.net/keys/microsoft.asc'
-    packages:
-    - dotnet-sdk-2.0.2
 branches:
   only:
   - master
@@ -21,6 +14,7 @@ env:
     - secure: R3coFui0kkQ72gwxStgicvs4aMR41pGQ6quTCeJGNVxI0Rx1viU6sgOK+5PJbte37fOGmgyf7WEZLO9RVncfd2UcChV4/UrHy1bYZsOMqA32fH8VRnQ4hd196cGzlX3TOpifnwu5iQ3UlamLcAb51wSENQJWUs6FiZHNYfp/c0jmJ2lSKFciVQh097ZdTaSd/ecRbVSCTxpcPKB7y8kSOlEQJjSN5LLcgQf8nqgrsCyIxNnazCipVjn6n/1M1ZKaDRj2fuAJ4JYGtI8bmbjcLYK9Xgz3kkUqAz0A/2VVodzngbtji6c0ZaJu4a+C/+J82divuAITV7XLjjpDTB8JZYIoH1u2kgZKivOE1smCnkvCQMbNk9zWe7fZCoHHDq4illrckeWfRgN5qBT3YkF4I1e+ruhpA142fI15fryvA+L4Nasmg8ILsKqpiN6zknOfo+PIgBPgXLX/TPmn8b3GMndCyPlB8tx+iBVQQ2+0CD1IiA3jmBQJ6Bnd5YS0TztQ7+TuHumNujCP8p8PZ6PQIx1YRoZM6cXJ/8rF4u8VnEa7QioaomLb7XcVg9KUyL3IU/rK2Jr5EK9IEAX5Whcxyy5l8zG+lDvdCoA9/7gSjOL7P90lTgxl/qiluO9HNRuHuOWoXGmQSp/3IVghI2vYLjHl0K3XXDAkfrvzlTAlndw=
 before_install:
   - sudo apt-get install sshpass
+  - sudo apt-get install dotnet-sdk-2.0.2
 script:
 - scripts/build.sh
 deploy:
