@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore;
+﻿using FilterLists.Data.Schema;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
 namespace FilterLists.Api
@@ -7,6 +8,7 @@ namespace FilterLists.Api
     {
         public static void Main(string[] args)
         {
+            JsonSchemaGenerator.WriteSchemaToFiles();
             BuildWebHost(args).Run();
         }
 
