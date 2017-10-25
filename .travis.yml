@@ -1,5 +1,4 @@
 dist: trusty
-sudo: required
 language: csharp
 mono: none
 solution: FilterLists.sln
