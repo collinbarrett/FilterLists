@@ -9,6 +9,13 @@ namespace FilterLists.Data.Json
     {
         public static void WriteSampleToFile()
         {
+            File.WriteAllText(
+                Path.GetFullPath(Path.Combine(AppContext.BaseDirectory + @"\", @"..\..\..\..\..\data\")) +
+                "ListSample.json", GetSampleList().ToString());
+        }
+
+        private static JObject GetSampleList()
+        {
             var sampleList = (JObject) JToken.FromObject(new List
             {
                 Author = "John Doe",
@@ -25,9 +32,7 @@ namespace FilterLists.Data.Json
             sampleList.Remove("Id");
             sampleList.Remove("AddedDateUtc");
             sampleList.Remove("ModifiedDateUtc");
-            File.WriteAllText(
-                Path.GetFullPath(Path.Combine(AppContext.BaseDirectory + @"\", @"..\..\..\..\..\data\")) +
-                "ListSample.json", sampleList.ToString());
+            return sampleList;
         }
     }
 }
