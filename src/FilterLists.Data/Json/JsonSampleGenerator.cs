@@ -16,7 +16,7 @@ namespace FilterLists.Data.Json
 
         private static JObject GetSampleList()
         {
-            var sampleList = (JObject) JToken.FromObject(new List
+            return (JObject) JToken.FromObject(new List
             {
                 Author = "John Doe",
                 Description = "A sample list to filter out advertisements.",
@@ -29,10 +29,6 @@ namespace FilterLists.Data.Json
                 Name = "My Sample List",
                 ViewUrl = "https://mysample.list/list.txt"
             });
-            sampleList.Remove("Id");
-            sampleList.Remove("AddedDateUtc");
-            sampleList.Remove("ModifiedDateUtc");
-            return sampleList;
         }
     }
 }

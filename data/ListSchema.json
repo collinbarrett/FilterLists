@@ -90,21 +90,6 @@
       "minLength": 6,
       "maxLength": 2083,
       "format": "uri"
-    },
-    "Id": {
-      "type": "integer"
-    },
-    "AddedDateUtc": {
-      "type": "string",
-      "default": "CURRENT_TIMESTAMP",
-      "format": "date-time"
-    },
-    "ModifiedDateUtc": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "format": "date-time"
     }
   },
   "required": [
@@ -117,9 +102,6 @@
     "HomeUrl",
     "IssuesUrl",
     "Name",
-    "ViewUrl",
-    "Id",
-    "AddedDateUtc",
-    "ModifiedDateUtc"
+    "ViewUrl"
   ]
 }
