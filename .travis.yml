@@ -1,8 +1,9 @@
 language: csharp
-dist: xenial
+dist: trusty
 sudo: required
 mono: none
-dotnet: 2.0.0
+before_install:
+    - sudo apt-get install dotnet-sdk-2.0.2
 branches:
   only:
   - master
