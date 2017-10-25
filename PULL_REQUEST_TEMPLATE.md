@@ -1,4 +1,4 @@
-### Closing issues
+### Closing Issues:
 * [ ] Have you included "closes #XXXX" in your comment to auto-close the issue that your PR fixes?
 
 ### General Submissions:
@@ -8,7 +8,8 @@
 
 * [ ] Have you filled in all properties available for the list (see sample below)?
 * [ ] Have you sorted the properties in alphabetical order?
-* [ ] Have you ensured that all URLS are functioning properly?
+* [ ] Have you converted the list name to [title case](https://en.wikipedia.org/wiki/Letter_case#Title_case)?
+* [ ] Have you ensured that all URLs are functioning properly?
 * [ ] Have you ensured all URLs point to HTTPS if supported?
 
 #### Sample List JSON Object:
