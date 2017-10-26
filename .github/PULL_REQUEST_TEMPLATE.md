@@ -1,12 +1,14 @@
-<!-- The information below is for reference only, please delete it before submitting your PR. -->
+<!-- The information below is for reference only; please delete it before submitting your pull request. -->
 
-### Closing Issues:
+Before submitting a new pull request, please review the checklist below.
+
+## Closing Issues:
 * [ ] Have you included "closes #XXXX" in your comment to auto-close the issue that your PR fixes?
 
-### General Submissions:
-* [ ] Is there an issue open for this change? If not, please open a new issue prior to submitting this PR. 
+## General Submissions:
+* [ ] Is there an issue open for this change? If not, please open a new issue before submitting this PR. 
 
-### Submissions for New or Updated Lists:
+## Submissions for New or Updated Lists:
 
 * [ ] Have you filled in all properties available for the list (see sample below)?
 * [ ] Have you sorted the properties in alphabetical order?
@@ -14,8 +16,8 @@
 * [ ] Have you ensured that all URLs are functioning properly?
 * [ ] Have you ensured all URLs point to HTTPS if supported?
 
-#### Sample List JSON Object:
-[Source](https://github.com/collinbarrett/FilterLists/blob/master/data/ListSample.json)
+### Sample List JSON Object:
+[Source](https://github.com/collinbarrett/FilterLists/blob/master/data/ListSample.json) | [Schema](https://github.com/collinbarrett/FilterLists/blob/master/data/ListSchema.json)
 
 ```
 {
