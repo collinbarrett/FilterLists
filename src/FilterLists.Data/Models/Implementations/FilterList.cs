@@ -8,7 +8,7 @@ namespace FilterLists.Data.Models.Implementations
 {
     public class FilterList : BaseEntity, IFilterList
     {
-        public List<ILanguage> FilterLists { get; set; }
+        public List<Language> Languages { get; set; }
 
         [JsonIgnore]
         public virtual Maintainer Maintainer { get; set; }

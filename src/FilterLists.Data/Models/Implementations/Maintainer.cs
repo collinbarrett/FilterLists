@@ -7,7 +7,7 @@ namespace FilterLists.Data.Models.Implementations
 {
     public class Maintainer : BaseEntity, IMaintainer
     {
-        public List<IFilterList> FilterLists { get; set; }
+        public List<FilterList> FilterLists { get; set; }
 
         [Description(@"The email address of the list maintainer.")]
         [EmailAddress]

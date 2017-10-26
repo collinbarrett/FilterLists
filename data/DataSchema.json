@@ -6,6 +6,15 @@
         "null"
       ],
       "properties": {
+        "Languages": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/Language"
+          }
+        },
         "Description": {
           "description": "A brief description of the list's functionality. Preferably, this is quoted (if non-English, translate to English via translator or Google Translate for consistency) from the list's documentation or composed by a maintainer of the list. If neither are available, a generic description should be composed by the FilterLists contributor.",
           "type": [
@@ -88,6 +97,7 @@
         }
       },
       "required": [
+        "Languages",
         "Description",
         "DescriptionSourceUrl",
         "DonateUrl",
@@ -97,6 +107,65 @@
         "IssuesUrl",
         "Name",
         "ViewUrl"
+      ]
+    },
+    "Language": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "Iso6391": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Iso6392": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Iso6392B": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Iso6392T": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Iso6393": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "LocalName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "Iso6391",
+        "Iso6392",
+        "Iso6392B",
+        "Iso6392T",
+        "Iso6393",
+        "LocalName",
+        "Name"
       ]
     }
   },

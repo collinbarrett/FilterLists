@@ -17,12 +17,12 @@ namespace FilterLists.Data.Repositories.Implementations
 
         public IEnumerable<IFilterList> GetAll()
         {
-            return filterListsDbContext.FilterList.AsEnumerable();
+            return filterListsDbContext.FilterLists.AsEnumerable();
         }
 
         public IFilterList GetByName(string filterListName)
         {
-            return filterListsDbContext.FilterList.First(x => x.Name == filterListName);
+            return filterListsDbContext.FilterLists.First(x => x.Name == filterListName);
         }
     }
 }

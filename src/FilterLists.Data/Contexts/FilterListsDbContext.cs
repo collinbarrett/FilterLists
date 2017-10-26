@@ -16,10 +16,10 @@ namespace FilterLists.Data.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Maintainer>()
+            modelBuilder.Entity<FilterList>()
                 .Property(b => b.CreatedDateUtc)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP");
-            modelBuilder.Entity<FilterList>()
+            modelBuilder.Entity<Maintainer>()
                 .Property(b => b.CreatedDateUtc)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP");
             modelBuilder.Entity<Language>()

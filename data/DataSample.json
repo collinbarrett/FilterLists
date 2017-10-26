@@ -1,6 +1,7 @@
 {
   "FilterLists": [
     {
+      "Languages": null,
       "Description": "A sample list to filter out advertisements.",
       "DescriptionSourceUrl": "https://mysample.list/advertisements",
       "DonateUrl": "https://mysample.list/donate/",
@@ -12,6 +13,7 @@
       "ViewUrl": "https://mysample.list/list.txt"
     },
     {
+      "Languages": null,
       "Description": "A sample list to filter out malware.",
       "DescriptionSourceUrl": "https://mysample.list/malware",
       "DonateUrl": "https://mysample.list/donate/",
