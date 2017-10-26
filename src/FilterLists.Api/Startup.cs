@@ -1,12 +1,9 @@
-﻿using System.IO;
-using FilterLists.Api.DependencyInjection.Extensions;
+﻿using FilterLists.Api.DependencyInjection.Extensions;
 using FilterLists.Services.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.PlatformAbstractions;
-using Swashbuckle.AspNetCore.Swagger;
 
 namespace FilterLists.Api
 {
@@ -23,25 +20,6 @@ namespace FilterLists.Api
         {
             services.AddFilterListsServices(Configuration);
             services.AddFilterListsApi();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1",
-                    new Info
-                    {
-                        Title = "FilterLists API",
-                        Version = "v1",
-                        Description =
-                            "FilterLists is the independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances.",
-                        Contact = new Contact {Url = "https://filterlists.com/contact/"},
-                        License = new License
-                        {
-                            Name = "Use under GPL-3.0",
-                            Url = "https://github.com/collinbarrett/FilterLists/blob/master/LICENSE"
-                        }
-                    });
-                c.IncludeXmlComments(Path.Combine(PlatformServices.Default.Application.ApplicationBasePath,
-                    "FilterLists.Api.xml"));
-            });
         }
 
         public void Configure(IApplicationBuilder app)
