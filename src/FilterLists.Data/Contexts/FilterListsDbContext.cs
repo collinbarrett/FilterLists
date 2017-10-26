@@ -10,7 +10,6 @@ namespace FilterLists.Data.Contexts
         {
         }
 
-        public DbSet<List> List { get; set; }
-        public DbSet<TableCsv> TableCsv { get; set; }
+        public DbSet<FilterList> FilterList { get; set; }
     }
 }

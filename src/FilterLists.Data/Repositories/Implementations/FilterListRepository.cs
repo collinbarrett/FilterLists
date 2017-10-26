@@ -6,23 +6,23 @@ using FilterLists.Data.Repositories.Contracts;
 
 namespace FilterLists.Data.Repositories.Implementations
 {
-    public class TableCsvRepository : ITableCsvRepository
+    public class FilterListRepository : IFilterListRepository
     {
         private readonly IFilterListsDbContext filterListsDbContext;
 
-        public TableCsvRepository(FilterListsDbContext filterListsDbContext)
+        public FilterListRepository(FilterListsDbContext filterListsDbContext)
         {
             this.filterListsDbContext = filterListsDbContext;
         }
 
-        public IEnumerable<ITableCsv> GetAll()
+        public IEnumerable<IFilterList> GetAll()
         {
-            return filterListsDbContext.TableCsv.AsEnumerable();
+            return filterListsDbContext.FilterList.AsEnumerable();
         }
 
-        public string GetUrlByName(string name)
+        public IFilterList GetByName(string filterListName)
         {
-            return filterListsDbContext.TableCsv.FirstOrDefault(x => x.Name == name).Url;
+            return filterListsDbContext.FilterList.First(x => x.Name == filterListName);
         }
     }
 }

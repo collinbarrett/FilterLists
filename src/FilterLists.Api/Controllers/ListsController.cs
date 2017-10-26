@@ -9,11 +9,11 @@ namespace FilterLists.Api.Controllers
     [Produces("application/json")]
     public class ListsController : Controller
     {
-        private readonly IListService listService;
+        private readonly IFilterListService filterListService;
 
-        public ListsController(IListService listService)
+        public ListsController(IFilterListService filterListService)
         {
-            this.listService = listService;
+            this.filterListService = filterListService;
         }
 
         /// <summary>
@@ -23,7 +23,7 @@ namespace FilterLists.Api.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Json(listService.GetAll());
+            return Json(filterListService.GetAll());
         }
     }
 }

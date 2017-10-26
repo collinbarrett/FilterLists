@@ -4,7 +4,7 @@ using FilterLists.Data.Models.Contracts;
 
 namespace FilterLists.Data.Models.Implementations
 {
-    public class List : BaseEntity, IList
+    public class FilterList : BaseEntity, IFilterList
     {
         [Description(@"The author (person or group) who maintains the list.")]
         [MaxLength(126)]

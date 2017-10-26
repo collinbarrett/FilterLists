@@ -18,7 +18,7 @@ namespace FilterLists.Data.Json
 
         private static JObject GetSampleList()
         {
-            return (JObject) JToken.FromObject(new List
+            return (JObject) JToken.FromObject(new FilterList
             {
                 Author = "John Doe",
                 Description = "A sample list to filter out advertisements.",
@@ -28,7 +28,7 @@ namespace FilterLists.Data.Json
                 ForumUrl = "https://mysample.list/forum/",
                 HomeUrl = "https://mysample.list/",
                 IssuesUrl = "https://github.com/mysamplelist/issues",
-                Name = "My Sample List",
+                Name = "My Sample Filter List",
                 ViewUrl = "https://mysample.list/list.txt"
             });
         }

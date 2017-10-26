@@ -2,7 +2,7 @@
 
 namespace FilterLists.Data.Models.Contracts
 {
-    public interface IList
+    public interface IFilterList
     {
         string Author { get; set; }
         string Description { get; set; }

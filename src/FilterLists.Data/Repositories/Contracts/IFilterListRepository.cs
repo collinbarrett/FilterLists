@@ -3,9 +3,9 @@ using FilterLists.Data.Models.Contracts;
 
 namespace FilterLists.Data.Repositories.Contracts
 {
-    public interface IListRepository
+    public interface IFilterListRepository
     {
-        IEnumerable<IList> GetAll();
-        IList GetByName(string listName);
+        IEnumerable<IFilterList> GetAll();
+        IFilterList GetByName(string filterListName);
     }
 }

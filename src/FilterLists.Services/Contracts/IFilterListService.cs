@@ -3,8 +3,8 @@ using FilterLists.Data.Models.Contracts;
 
 namespace FilterLists.Services.Contracts
 {
-    public interface IListService
+    public interface IFilterListService
     {
-        IEnumerable<IList> GetAll();
+        IEnumerable<IFilterList> GetAll();
     }
 }
