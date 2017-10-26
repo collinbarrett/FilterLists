@@ -1,0 +1,30 @@
+{
+  "FilterLists": [
+    {
+      "Description": "A sample list to filter out advertisements.",
+      "DescriptionSourceUrl": "https://mysample.list/advertisements",
+      "DonateUrl": "https://mysample.list/donate/",
+      "Email": "contact@mysample.list",
+      "ForumUrl": "https://mysample.list/forum/",
+      "HomeUrl": "https://mysample.list/",
+      "IssuesUrl": "https://github.com/johnsmith/mysamplelist/issues",
+      "Name": "My Sample Advertisement Filter List",
+      "ViewUrl": "https://mysample.list/list.txt"
+    },
+    {
+      "Description": "A sample list to filter out malware.",
+      "DescriptionSourceUrl": "https://mysample.list/malware",
+      "DonateUrl": "https://mysample.list/donate/",
+      "Email": "contact@mysample.list",
+      "ForumUrl": "https://mysample.list/forum/",
+      "HomeUrl": "https://mysample.list/",
+      "IssuesUrl": "https://github.com/johnsmith/mysamplelist/issues",
+      "Name": "My Sample Malware Filter List",
+      "ViewUrl": "https://mysample.list/list.txt"
+    }
+  ],
+  "Email": "john.smith@protonmail.com",
+  "HomeUrl": "https://johnsmith.com",
+  "Name": "John Smith",
+  "TwitterHandle": "@johnsmith"
+}

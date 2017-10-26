@@ -13,7 +13,7 @@ namespace FilterLists.Data.Json
         {
             File.WriteAllText(
                 Path.GetFullPath(Path.Combine(AppContext.BaseDirectory + @"\", @"..\..\..\..\..\data\")) +
-                "ListSchema.json", new JSchemaGenerator().Generate(typeof(FilterList)).ToString());
+                "DataSchema.json", new JSchemaGenerator().Generate(typeof(Maintainer)).ToString());
         }
     }
 }

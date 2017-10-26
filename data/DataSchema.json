@@ -1,0 +1,155 @@
+{
+  "definitions": {
+    "FilterList": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "Description": {
+          "description": "A brief description of the list's functionality. Preferably, this is quoted (if non-English, translate to English via translator or Google Translate for consistency) from the list's documentation or composed by a maintainer of the list. If neither are available, a generic description should be composed by the FilterLists contributor.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 1022
+        },
+        "DescriptionSourceUrl": {
+          "description": "The URL to the list's documentation page from which the description was quoted if applicable.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 6,
+          "maxLength": 2083,
+          "format": "uri"
+        },
+        "DonateUrl": {
+          "description": "The URL to the list's donation page. This could be a custom PayPal or similar link, or a link to a web page discussing various donation options. Pull requests that include changes to this link will undergo further verification to prevent fraud.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 6,
+          "maxLength": 2083,
+          "format": "uri"
+        },
+        "Email": {
+          "description": "The email address of the list's maintainer(s) if publicly available.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 7,
+          "maxLength": 126,
+          "format": "email"
+        },
+        "ForumUrl": {
+          "description": "The URL to the list's forum where issues, change requests, etc. are discussed.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 6,
+          "maxLength": 2083,
+          "format": "uri"
+        },
+        "HomeUrl": {
+          "description": "The URL to the list's home page. Preferably, this is stated in the header of the list. Alternatively, it could be a custom domain, GitHub page, blog post, forum post, etc. that serves as a primary source of information for the list.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 6,
+          "maxLength": 2083,
+          "format": "uri"
+        },
+        "IssuesUrl": {
+          "description": "The URL to the list's GitHub Issues.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 6,
+          "maxLength": 2083,
+          "format": "uri"
+        },
+        "Name": {
+          "description": "The name of the list as stated by the list maintainer(s) in title case.",
+          "type": "string",
+          "maxLength": 126
+        },
+        "ViewUrl": {
+          "description": "The URL to the list in raw text format. zip files and other formats are acceptable if no text format is available.",
+          "type": "string",
+          "minLength": 6,
+          "maxLength": 2083,
+          "format": "uri"
+        }
+      },
+      "required": [
+        "Description",
+        "DescriptionSourceUrl",
+        "DonateUrl",
+        "Email",
+        "ForumUrl",
+        "HomeUrl",
+        "IssuesUrl",
+        "Name",
+        "ViewUrl"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "FilterLists": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/FilterList"
+      }
+    },
+    "Email": {
+      "description": "The email address of the list maintainer.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 7,
+      "maxLength": 126,
+      "format": "email"
+    },
+    "HomeUrl": {
+      "description": "The URL to the list maintainer's home page.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 6,
+      "maxLength": 2083,
+      "format": "uri"
+    },
+    "Name": {
+      "description": "The name of the list maintainer.",
+      "type": "string",
+      "maxLength": 126
+    },
+    "TwitterHandle": {
+      "description": "The Twitter handle of the list maintainer.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 126
+    }
+  },
+  "required": [
+    "FilterLists",
+    "Email",
+    "HomeUrl",
+    "Name",
+    "TwitterHandle"
+  ]
+}

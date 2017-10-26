@@ -17,7 +17,7 @@ Before submitting a new issue, please review the checklist below.
 * [ ] Have you ensured all URLs point to HTTPS if supported?
 
 ## Properties
-[Source](https://github.com/collinbarrett/FilterLists/blob/master/data/ListSample.json) | [Schema](https://github.com/collinbarrett/FilterLists/blob/master/data/ListSchema.json)
+[Source](https://github.com/collinbarrett/FilterLists/blob/master/data/DataSample.json) | [Schema](https://github.com/collinbarrett/FilterLists/blob/master/data/DataSchema.json)
 
 | Property       | Description                              |
 | -------------- | ---------------------------------------- |

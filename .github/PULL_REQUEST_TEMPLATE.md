@@ -17,7 +17,7 @@ Before submitting a new pull request, please review the checklist below.
 * [ ] Have you ensured all URLs point to HTTPS if supported?
 
 ### Sample List JSON Object:
-[Source](https://github.com/collinbarrett/FilterLists/blob/master/data/ListSample.json) | [Schema](https://github.com/collinbarrett/FilterLists/blob/master/data/ListSchema.json)
+[Source](https://github.com/collinbarrett/FilterLists/blob/master/data/DataSample.json) | [Schema](https://github.com/collinbarrett/FilterLists/blob/master/data/DataSchema.json)
 
 ```
 {
