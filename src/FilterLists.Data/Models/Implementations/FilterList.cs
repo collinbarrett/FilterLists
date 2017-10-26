@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using FilterLists.Data.Models.Contracts;
 using Newtonsoft.Json;
@@ -7,6 +8,8 @@ namespace FilterLists.Data.Models.Implementations
 {
     public class FilterList : BaseEntity, IFilterList
     {
+        public List<ILanguage> FilterLists { get; set; }
+
         [JsonIgnore]
         public virtual Maintainer Maintainer { get; set; }
 

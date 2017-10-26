@@ -10,11 +10,19 @@ namespace FilterLists.Data.Contexts
         {
         }
 
-        public DbSet<FilterList> FilterList { get; set; }
+        public DbSet<FilterList> FilterLists { get; set; }
+        public DbSet<Maintainer> Maintainers { get; set; }
+        public DbSet<Language> Languages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Maintainer>()
+                .Property(b => b.CreatedDateUtc)
+                .HasDefaultValueSql("CURRENT_TIMESTAMP");
             modelBuilder.Entity<FilterList>()
+                .Property(b => b.CreatedDateUtc)
+                .HasDefaultValueSql("CURRENT_TIMESTAMP");
+            modelBuilder.Entity<Language>()
                 .Property(b => b.CreatedDateUtc)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP");
         }
