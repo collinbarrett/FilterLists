@@ -15,9 +15,9 @@ namespace FilterLists.Data.Models.Implementations
         public long Id { get; set; }
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [JsonIgnore]
         [DefaultValue("CURRENT_TIMESTAMP")]
-        public DateTime AddedDateUtc { get; set; }
+        [JsonIgnore]
+        public DateTime CreatedDateUtc { get; set; }
 
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         [JsonIgnore]

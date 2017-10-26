@@ -5,7 +5,7 @@ namespace FilterLists.Data.Models.Contracts
     public interface IBaseEntity
     {
         long Id { get; set; }
-        DateTime AddedDateUtc { get; set; }
+        DateTime CreatedDateUtc { get; set; }
         DateTime? ModifiedDateUtc { get; set; }
     }
 }
