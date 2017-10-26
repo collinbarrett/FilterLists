@@ -14,10 +14,6 @@ namespace FilterLists.Api.Controllers
             this.filterListService = filterListService;
         }
 
-        /// <summary>
-        /// Get Lists
-        /// </summary>
-        /// <returns>All FilterLists</returns>
         [HttpGet]
         public IActionResult Get()
         {
