@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using FilterLists.Data.Entities;
 using FilterLists.Data.Repositories.Contracts;
 using FilterLists.Services.Contracts;
 
@@ -13,7 +14,7 @@ namespace FilterLists.Services.Implementations
             this.filterListRepository = filterListRepository;
         }
 
-        public IEnumerable<IFilterList> GetAll()
+        public IEnumerable<FilterList> GetAll()
         {
             return filterListRepository.GetAll();
         }
