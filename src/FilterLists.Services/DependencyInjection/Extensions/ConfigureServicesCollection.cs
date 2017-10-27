@@ -16,7 +16,8 @@ namespace FilterLists.Services.DependencyInjection.Extensions
         {
             services.AddSingleton(c => configuration);
             services.AddEntityFrameworkMySql().AddDbContextPool<FilterListsDbContext>(options =>
-                options.UseMySql(configuration.GetConnectionString("FilterListsConnection")));
+                options.UseMySql(configuration.GetConnectionString("FilterListsConnection"),
+                    b => b.MigrationsAssembly("FilterLists.Api")));
             services.TryAddScoped<IFilterListRepository, FilterListRepository>();
             services.TryAddScoped<IFilterListService, FilterListService>();
         }
