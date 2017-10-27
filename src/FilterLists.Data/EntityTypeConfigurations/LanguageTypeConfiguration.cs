@@ -1,4 +1,5 @@
 ﻿using FilterLists.Data.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations
@@ -7,6 +8,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
     {
         public override void Configure(EntityTypeBuilder<Language> entityTypeBuilder)
         {
+            entityTypeBuilder.ToTable("Languages");
+
             entityTypeBuilder.Property(b => b.Iso6391)
                 .HasMaxLength(2);
 
