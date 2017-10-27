@@ -1,4 +1,4 @@
-﻿using FilterLists.Data.Models.Implementations;
+﻿using FilterLists.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Data.Contexts

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using FilterLists.Data.Models.Implementations;
+using FilterLists.Data.Entities;
 using Newtonsoft.Json.Schema.Generation;
 
 namespace FilterLists.Data.Json

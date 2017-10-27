@@ -1,12 +1,11 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using FilterLists.Data.Models.Contracts;
 using Newtonsoft.Json;
 
-namespace FilterLists.Data.Models.Implementations
+namespace FilterLists.Data.Entities
 {
-    public abstract class BaseEntity : IBaseEntity
+    public abstract class BaseEntity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

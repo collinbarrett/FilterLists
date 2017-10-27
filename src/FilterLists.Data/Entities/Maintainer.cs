@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using FilterLists.Data.Models.Contracts;
 
-namespace FilterLists.Data.Models.Implementations
+namespace FilterLists.Data.Entities
 {
-    public class Maintainer : BaseEntity, IMaintainer
+    public class Maintainer : BaseEntity
     {
         public List<FilterList> FilterLists { get; set; }
 

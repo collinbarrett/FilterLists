@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using FilterLists.Data.Contexts;
-using FilterLists.Data.Models.Contracts;
+using FilterLists.Data.Entities;
 using FilterLists.Data.Repositories.Contracts;
 
 namespace FilterLists.Data.Repositories.Implementations
@@ -15,12 +15,12 @@ namespace FilterLists.Data.Repositories.Implementations
             this.filterListsDbContext = filterListsDbContext;
         }
 
-        public IEnumerable<IFilterList> GetAll()
+        public IEnumerable<FilterList> GetAll()
         {
             return filterListsDbContext.FilterLists.AsEnumerable();
         }
 
-        public IFilterList GetByName(string filterListName)
+        public FilterList GetByName(string filterListName)
         {
             return filterListsDbContext.FilterLists.First(x => x.Name == filterListName);
         }

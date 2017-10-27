@@ -1,8 +1,6 @@
-﻿using FilterLists.Data.Models.Contracts;
-
-namespace FilterLists.Data.Models.Implementations
+﻿namespace FilterLists.Data.Entities
 {
-    public class Language : BaseEntity, ILanguage
+    public class Language : BaseEntity
     {
         public string Iso6391 { get; set; }
         public string Iso6392 { get; set; }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using FilterLists.Data.Models.Implementations;
+using FilterLists.Data.Entities;
 using Newtonsoft.Json.Linq;
 
 namespace FilterLists.Data.Json

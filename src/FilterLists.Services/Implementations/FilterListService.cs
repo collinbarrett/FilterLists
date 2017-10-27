@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using FilterLists.Data.Models.Contracts;
 using FilterLists.Data.Repositories.Contracts;
 using FilterLists.Services.Contracts;
 
