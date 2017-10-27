@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations
 {
-    public class FilterListConfiguration : IEntityTypeConfiguration<FilterList>
+    public class BaseEntityTypeConfiguration<TBase> : IEntityTypeConfiguration<TBase> where TBase : BaseEntity
     {
-        public void Configure(EntityTypeBuilder<FilterList> entityTypeBuilder)
+        public virtual void Configure(EntityTypeBuilder<TBase> entityTypeBuilder)
         {
             entityTypeBuilder.Property(b => b.CreatedDateUtc).HasDefaultValueSql("CURRENT_TIMESTAMP");
         }

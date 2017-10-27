@@ -17,9 +17,9 @@ namespace FilterLists.Data.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new FilterListConfiguration());
-            modelBuilder.ApplyConfiguration(new MaintainerConfiguration());
-            modelBuilder.ApplyConfiguration(new LanguageConfiguration());
+            modelBuilder.ApplyConfiguration(new FilterListTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new MaintainerTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new LanguageTypeConfiguration());
         }
     }
 }
