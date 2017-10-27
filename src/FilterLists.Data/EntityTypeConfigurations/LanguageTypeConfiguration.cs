@@ -8,7 +8,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
     {
         public override void Configure(EntityTypeBuilder<Language> entityTypeBuilder)
         {
-            entityTypeBuilder.ToTable("Languages");
+            entityTypeBuilder.ToTable("languages");
 
             entityTypeBuilder.Property(b => b.Iso6391)
                 .HasMaxLength(2);

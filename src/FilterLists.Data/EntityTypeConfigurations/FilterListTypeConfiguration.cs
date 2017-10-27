@@ -8,7 +8,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
     {
         public override void Configure(EntityTypeBuilder<FilterList> entityTypeBuilder)
         {
-            entityTypeBuilder.ToTable("FilterLists");
+            entityTypeBuilder.ToTable("filter_lists");
 
             entityTypeBuilder.Property(b => b.Description)
                 .HasMaxLength(1022);

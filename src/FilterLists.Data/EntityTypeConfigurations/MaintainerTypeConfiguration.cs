@@ -8,7 +8,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
     {
         public override void Configure(EntityTypeBuilder<Maintainer> entityTypeBuilder)
         {
-            entityTypeBuilder.ToTable("Maintainers");
+            entityTypeBuilder.ToTable("maintainers");
 
             entityTypeBuilder.Property(b => b.Email)
                 .HasMaxLength(126);
