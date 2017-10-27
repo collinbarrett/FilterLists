@@ -12,7 +12,6 @@ namespace FilterLists.Data.EntityTypeConfigurations
                 .HasColumnType("TIMESTAMP")
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .ValueGeneratedOnAdd();
-
             entityTypeBuilder.Property(b => b.ModifiedDateUtc)
                 .HasColumnType("TIMESTAMP")
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
