@@ -11,6 +11,9 @@ namespace FilterLists.Data.Contexts
         {
         }
 
+        public DbSet<FilterListLanguage> FilterListLanguages { get; set; }
+
+
         public DbSet<FilterList> FilterLists { get; set; }
         public DbSet<Maintainer> Maintainers { get; set; }
         public DbSet<Language> Languages { get; set; }
@@ -20,6 +23,7 @@ namespace FilterLists.Data.Contexts
             modelBuilder.ApplyConfiguration(new FilterListTypeConfiguration());
             modelBuilder.ApplyConfiguration(new MaintainerTypeConfiguration());
             modelBuilder.ApplyConfiguration(new LanguageTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new FilterListLanguageTypeConfiguration());
         }
     }
 }

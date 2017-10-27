@@ -4,7 +4,7 @@ namespace FilterLists.Data.Entities
 {
     public class Language : BaseEntity
     {
-        public ICollection<FilterList> FilterLists { get; set; }
+        public ICollection<FilterListLanguage> FilterListLanguages { get; set; }
         public string Iso6391 { get; set; }
         public string Iso6392 { get; set; }
         public string Iso6392B { get; set; }
