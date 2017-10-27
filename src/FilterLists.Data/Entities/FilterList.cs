@@ -11,7 +11,7 @@ namespace FilterLists.Data.Entities
         public string ForumUrl { get; set; }
         public string HomeUrl { get; set; }
         public string IssuesUrl { get; set; }
-        public List<Language> Languages { get; set; }
+        public ICollection<Language> Languages { get; set; }
         public int MaintainerId { get; set; }
         public string Name { get; set; }
         public string ViewUrl { get; set; }
