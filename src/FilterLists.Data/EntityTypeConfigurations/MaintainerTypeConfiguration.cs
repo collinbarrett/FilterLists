@@ -1,5 +1,4 @@
 ﻿using FilterLists.Data.Entities;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations
@@ -8,8 +7,6 @@ namespace FilterLists.Data.EntityTypeConfigurations
     {
         public override void Configure(EntityTypeBuilder<Maintainer> entityTypeBuilder)
         {
-            entityTypeBuilder.ToTable("maintainers");
-
             entityTypeBuilder.Property(b => b.Email)
                 .HasMaxLength(126);
 

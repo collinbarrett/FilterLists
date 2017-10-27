@@ -8,9 +8,6 @@ namespace FilterLists.Data.EntityTypeConfigurations
     {
         public virtual void Configure(EntityTypeBuilder<TBase> entityTypeBuilder)
         {
-            entityTypeBuilder.Property(b => b.Id)
-                .ValueGeneratedOnAdd();
-
             entityTypeBuilder.Property(b => b.CreatedDateUtc)
                 .HasColumnType("TIMESTAMP")
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
