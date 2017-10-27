@@ -10,7 +10,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
     {
         public override void Configure(EntityTypeBuilder<FilterList> entityTypeBuilder)
         {
-            entityTypeBuilder.Property(b => b.Maintainer)
+            entityTypeBuilder.Property(b => b.MaintainerId)
                 .HasAnnotation("JsonIgnore", new JsonIgnoreAttribute());
 
             entityTypeBuilder.Property(b => b.Description)

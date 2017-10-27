@@ -5,7 +5,7 @@ namespace FilterLists.Data.Entities
     public class FilterList : BaseEntity
     {
         public List<Language> Languages { get; set; }
-        public virtual Maintainer Maintainer { get; set; }
+        public long MaintainerId { get; set; }
         public string Description { get; set; }
         public string DescriptionSourceUrl { get; set; }
         public string DonateUrl { get; set; }
