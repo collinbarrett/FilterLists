@@ -15,10 +15,12 @@ namespace FilterLists.Data.EntityTypeConfigurations
 
             entityTypeBuilder.Property(b => b.CreatedDateUtc)
                 .HasColumnType("TIMESTAMP")
+                .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .ValueGeneratedOnAdd();
 
             entityTypeBuilder.Property(b => b.ModifiedDateUtc)
                 .HasColumnType("TIMESTAMP")
+                .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .ValueGeneratedOnUpdate();
         }
     }
