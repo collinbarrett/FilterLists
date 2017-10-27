@@ -1,6 +1,7 @@
 ﻿using FilterLists.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Newtonsoft.Json;
 
 namespace FilterLists.Data.EntityTypeConfigurations
 {
@@ -8,7 +9,21 @@ namespace FilterLists.Data.EntityTypeConfigurations
     {
         public virtual void Configure(EntityTypeBuilder<TBase> entityTypeBuilder)
         {
-            entityTypeBuilder.Property(b => b.CreatedDateUtc).HasDefaultValueSql("CURRENT_TIMESTAMP");
+            entityTypeBuilder.HasKey(b => b.Id);
+
+            entityTypeBuilder.Property(b => b.Id)
+                .HasAnnotation("JsonIgnore", new JsonIgnoreAttribute())
+                .ValueGeneratedOnAdd();
+
+            entityTypeBuilder.Property(b => b.CreatedDateUtc)
+                .HasAnnotation("JsonIgnore", new JsonIgnoreAttribute())
+                .HasColumnType("TIMESTAMP")
+                .ValueGeneratedOnAdd();
+
+            entityTypeBuilder.Property(b => b.ModifiedDateUtc)
+                .HasAnnotation("JsonIgnore", new JsonIgnoreAttribute())
+                .HasColumnType("TIMESTAMP")
+                .ValueGeneratedOnUpdate();
         }
     }
 }
