@@ -8,7 +8,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
     {
         public override void Configure(EntityTypeBuilder<FilterListLanguage> entityTypeBuilder)
         {
-            entityTypeBuilder.ToTable("FilterLists_Languages");
+            entityTypeBuilder.ToTable("filterlists_languages");
 
             entityTypeBuilder.HasKey(x => new {x.FilterListId, x.LanguageId});
 

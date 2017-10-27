@@ -1,4 +1,5 @@
 ﻿using FilterLists.Data.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations
@@ -7,8 +8,10 @@ namespace FilterLists.Data.EntityTypeConfigurations
     {
         public override void Configure(EntityTypeBuilder<FilterList> entityTypeBuilder)
         {
+            entityTypeBuilder.ToTable("filterlists");
+
             entityTypeBuilder.Property(b => b.Description)
-                .HasMaxLength(1022);
+                .HasMaxLength(4096);
 
             entityTypeBuilder.Property(b => b.DescriptionSourceUrl)
                 .HasMaxLength(2083);
