@@ -8,8 +8,6 @@ namespace FilterLists.Data.EntityTypeConfigurations
     {
         public virtual void Configure(EntityTypeBuilder<TBase> entityTypeBuilder)
         {
-            entityTypeBuilder.HasKey(b => b.Id);
-
             entityTypeBuilder.Property(b => b.Id)
                 .ValueGeneratedOnAdd();
 
