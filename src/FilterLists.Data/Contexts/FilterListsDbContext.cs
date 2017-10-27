@@ -1,8 +1,5 @@
-﻿using System;
-using System.Linq;
-using System.Reflection;
-using FilterLists.Data.Entities;
-using FilterLists.Data.EntityMaps;
+﻿using FilterLists.Data.Entities;
+using FilterLists.Data.EntityTypeConfigurations;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Data.Contexts
@@ -20,19 +17,9 @@ namespace FilterLists.Data.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            RegisterMaps(modelBuilder);
-        }
-
-        private static void RegisterMaps(ModelBuilder modelBuilder)
-        {
-            var entityMaps = typeof(FilterList).GetTypeInfo().Assembly.GetTypes().Where(type =>
-                    !string.IsNullOrWhiteSpace(type.Namespace) && typeof(IEntityMap).IsAssignableFrom(type) &&
-                    type.IsClass)
-                .ToList();
-
-            foreach (var entityMap in entityMaps)
-                Activator.CreateInstance(entityMap, BindingFlags.Public | BindingFlags.Instance, null,
-                    new object[] {modelBuilder}, null);
+            modelBuilder.ApplyConfiguration(new FilterListConfiguration());
+            modelBuilder.ApplyConfiguration(new MaintainerConfiguration());
+            modelBuilder.ApplyConfiguration(new LanguageConfiguration());
         }
     }
 }
