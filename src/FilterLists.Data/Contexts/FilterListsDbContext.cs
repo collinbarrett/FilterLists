@@ -24,6 +24,7 @@ namespace FilterLists.Data.Contexts
             modelBuilder.ApplyConfiguration(new MaintainerTypeConfiguration());
             modelBuilder.ApplyConfiguration(new LanguageTypeConfiguration());
             modelBuilder.ApplyConfiguration(new FilterListLanguageTypeConfiguration());
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
