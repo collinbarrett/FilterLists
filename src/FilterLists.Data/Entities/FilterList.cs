@@ -12,6 +12,7 @@ namespace FilterLists.Data.Entities
         public string HomeUrl { get; set; }
         public string IssuesUrl { get; set; }
         public ICollection<FilterListLanguage> FilterListLanguages { get; set; }
+        public ICollection<FilterListSoftware> FilterListSoftware { get; set; }
         public int MaintainerId { get; set; }
         public string Name { get; set; }
         public string ViewUrl { get; set; }

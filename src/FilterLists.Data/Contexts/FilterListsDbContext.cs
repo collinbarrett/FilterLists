@@ -14,13 +14,16 @@ namespace FilterLists.Data.Contexts
         public DbSet<FilterList> FilterLists { get; set; }
         public DbSet<Maintainer> Maintainers { get; set; }
         public DbSet<Language> Languages { get; set; }
+        public DbSet<Software> Software { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new FilterListTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new FilterListLanguageTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new FilterListSoftwareTypeConfiguration());
             modelBuilder.ApplyConfiguration(new MaintainerTypeConfiguration());
             modelBuilder.ApplyConfiguration(new LanguageTypeConfiguration());
-            modelBuilder.ApplyConfiguration(new FilterListLanguageTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new SoftwareTypeConfiguration());
             base.OnModelCreating(modelBuilder);
         }
     }
