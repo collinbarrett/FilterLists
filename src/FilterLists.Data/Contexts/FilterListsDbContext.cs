@@ -11,9 +11,6 @@ namespace FilterLists.Data.Contexts
         {
         }
 
-        public DbSet<FilterListLanguage> FilterListLanguages { get; set; }
-
-
         public DbSet<FilterList> FilterLists { get; set; }
         public DbSet<Maintainer> Maintainers { get; set; }
         public DbSet<Language> Languages { get; set; }
