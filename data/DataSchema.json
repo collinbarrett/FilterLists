@@ -6,107 +6,189 @@
         "null"
       ],
       "properties": {
-        "Languages": {
+        "Description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "DescriptionSourceUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "DonateUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "EmailAddress": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ForumUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "HomeUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "IssuesUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "FilterListLanguages": {
           "type": [
             "array",
             "null"
           ],
           "items": {
-            "$ref": "#/definitions/Language"
+            "$ref": "#/definitions/FilterListLanguage"
           }
         },
-        "Description": {
-          "description": "A brief description of the list's functionality. Preferably, this is quoted (if non-English, translate to English via translator or Google Translate for consistency) from the list's documentation or composed by a maintainer of the list. If neither are available, a generic description should be composed by the FilterLists contributor.",
+        "FilterListSoftware": {
           "type": [
-            "string",
+            "array",
             "null"
           ],
-          "maxLength": 1022
+          "items": {
+            "$ref": "#/definitions/FilterListSoftware"
+          }
         },
-        "DescriptionSourceUrl": {
-          "description": "The URL to the list's documentation page from which the description was quoted if applicable.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 6,
-          "maxLength": 2083,
-          "format": "uri"
-        },
-        "DonateUrl": {
-          "description": "The URL to the list's donation page. This could be a custom PayPal or similar link, or a link to a web page discussing various donation options. Pull requests that include changes to this link will undergo further verification to prevent fraud.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 6,
-          "maxLength": 2083,
-          "format": "uri"
-        },
-        "Email": {
-          "description": "The email address of the list's maintainer(s) if publicly available.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 7,
-          "maxLength": 126,
-          "format": "email"
-        },
-        "ForumUrl": {
-          "description": "The URL to the list's forum where issues, change requests, etc. are discussed.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 6,
-          "maxLength": 2083,
-          "format": "uri"
-        },
-        "HomeUrl": {
-          "description": "The URL to the list's home page. Preferably, this is stated in the header of the list. Alternatively, it could be a custom domain, GitHub page, blog post, forum post, etc. that serves as a primary source of information for the list.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 6,
-          "maxLength": 2083,
-          "format": "uri"
-        },
-        "IssuesUrl": {
-          "description": "The URL to the list's GitHub Issues.",
-          "type": [
-            "string",
-            "null"
-          ],
-          "minLength": 6,
-          "maxLength": 2083,
-          "format": "uri"
+        "MaintainerId": {
+          "type": "integer"
         },
         "Name": {
-          "description": "The name of the list as stated by the list maintainer(s) in title case.",
-          "type": "string",
-          "maxLength": 126
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "ViewUrl": {
-          "description": "The URL to the list in raw text format. zip files and other formats are acceptable if no text format is available.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Id": {
+          "type": "integer"
+        },
+        "CreatedDateUtc": {
           "type": "string",
-          "minLength": 6,
-          "maxLength": 2083,
-          "format": "uri"
+          "format": "date-time"
+        },
+        "ModifiedDateUtc": {
+          "type": "string",
+          "format": "date-time"
         }
       },
       "required": [
-        "Languages",
         "Description",
         "DescriptionSourceUrl",
         "DonateUrl",
-        "Email",
+        "EmailAddress",
         "ForumUrl",
         "HomeUrl",
         "IssuesUrl",
+        "FilterListLanguages",
+        "FilterListSoftware",
+        "MaintainerId",
         "Name",
-        "ViewUrl"
+        "ViewUrl",
+        "Id",
+        "CreatedDateUtc",
+        "ModifiedDateUtc"
+      ]
+    },
+    "FilterListLanguage": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "FilterListId": {
+          "type": "integer"
+        },
+        "FilterList": {
+          "$ref": "#/definitions/FilterList"
+        },
+        "LanguageId": {
+          "type": "integer"
+        },
+        "Language": {
+          "$ref": "#/definitions/Language"
+        },
+        "Id": {
+          "type": "integer"
+        },
+        "CreatedDateUtc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ModifiedDateUtc": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "FilterListId",
+        "FilterList",
+        "LanguageId",
+        "Language",
+        "Id",
+        "CreatedDateUtc",
+        "ModifiedDateUtc"
+      ]
+    },
+    "FilterListSoftware": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "FilterListId": {
+          "type": "integer"
+        },
+        "FilterList": {
+          "$ref": "#/definitions/FilterList"
+        },
+        "SoftwareId": {
+          "type": "integer"
+        },
+        "Software": {
+          "$ref": "#/definitions/Software"
+        },
+        "Id": {
+          "type": "integer"
+        },
+        "CreatedDateUtc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ModifiedDateUtc": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "FilterListId",
+        "FilterList",
+        "SoftwareId",
+        "Software",
+        "Id",
+        "CreatedDateUtc",
+        "ModifiedDateUtc"
       ]
     },
     "Language": {
@@ -115,6 +197,15 @@
         "null"
       ],
       "properties": {
+        "FilterListLanguages": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/FilterListLanguage"
+          }
+        },
         "Iso6391": {
           "type": [
             "string",
@@ -156,21 +247,97 @@
             "string",
             "null"
           ]
+        },
+        "Id": {
+          "type": "integer"
+        },
+        "CreatedDateUtc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ModifiedDateUtc": {
+          "type": "string",
+          "format": "date-time"
         }
       },
       "required": [
+        "FilterListLanguages",
         "Iso6391",
         "Iso6392",
         "Iso6392B",
         "Iso6392T",
         "Iso6393",
         "LocalName",
-        "Name"
+        "Name",
+        "Id",
+        "CreatedDateUtc",
+        "ModifiedDateUtc"
+      ]
+    },
+    "Software": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "DownloadUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "HomeUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "FilterListSoftware": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/FilterListSoftware"
+          }
+        },
+        "Name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Id": {
+          "type": "integer"
+        },
+        "CreatedDateUtc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ModifiedDateUtc": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "DownloadUrl",
+        "HomeUrl",
+        "FilterListSoftware",
+        "Name",
+        "Id",
+        "CreatedDateUtc",
+        "ModifiedDateUtc"
       ]
     }
   },
   "type": "object",
   "properties": {
+    "Email": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
     "FilterLists": {
       "type": [
         "array",
@@ -180,45 +347,44 @@
         "$ref": "#/definitions/FilterList"
       }
     },
-    "Email": {
-      "description": "The email address of the list maintainer.",
-      "type": [
-        "string",
-        "null"
-      ],
-      "minLength": 7,
-      "maxLength": 126,
-      "format": "email"
-    },
     "HomeUrl": {
-      "description": "The URL to the list maintainer's home page.",
       "type": [
         "string",
         "null"
-      ],
-      "minLength": 6,
-      "maxLength": 2083,
-      "format": "uri"
+      ]
     },
     "Name": {
-      "description": "The name of the list maintainer.",
-      "type": "string",
-      "maxLength": 126
-    },
-    "TwitterHandle": {
-      "description": "The Twitter handle of the list maintainer.",
       "type": [
         "string",
         "null"
-      ],
-      "maxLength": 126
+      ]
+    },
+    "TwitterHandle": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "Id": {
+      "type": "integer"
+    },
+    "CreatedDateUtc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ModifiedDateUtc": {
+      "type": "string",
+      "format": "date-time"
     }
   },
   "required": [
-    "FilterLists",
     "Email",
+    "FilterLists",
     "HomeUrl",
     "Name",
-    "TwitterHandle"
+    "TwitterHandle",
+    "Id",
+    "CreatedDateUtc",
+    "ModifiedDateUtc"
   ]
 }

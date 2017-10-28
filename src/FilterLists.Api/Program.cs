@@ -1,6 +1,8 @@
-﻿using FilterLists.Data.Json;
+﻿using FilterLists.Data;
+using FilterLists.Data.Json;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.Api
 {
@@ -10,7 +12,12 @@ namespace FilterLists.Api
         {
             JsonSchemaGenerator.WriteSchemaToFile();
             JsonSampleGenerator.WriteSampleToFile();
-            BuildWebHost(args).Run();
+            var host = BuildWebHost(args);
+            using (var scope = host.Services.CreateScope())
+            {
+                DbInitializer.Initialize(scope.ServiceProvider.GetRequiredService<FilterListsDbContext>());
+            }
+            host.Run();
         }
 
         public static IWebHost BuildWebHost(string[] args)

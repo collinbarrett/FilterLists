@@ -1,32 +1,45 @@
 {
+  "Email": "john.smith@protonmail.com",
   "FilterLists": [
     {
-      "Languages": null,
       "Description": "A sample list to filter out advertisements.",
       "DescriptionSourceUrl": "https://mysample.list/advertisements",
       "DonateUrl": "https://mysample.list/donate/",
-      "Email": "contact@mysample.list",
+      "EmailAddress": "contact@mysample.list",
       "ForumUrl": "https://mysample.list/forum/",
       "HomeUrl": "https://mysample.list/",
       "IssuesUrl": "https://github.com/johnsmith/mysamplelist/issues",
+      "FilterListLanguages": null,
+      "FilterListSoftware": null,
+      "MaintainerId": 0,
       "Name": "My Sample Advertisement Filter List",
-      "ViewUrl": "https://mysample.list/list.txt"
+      "ViewUrl": "https://mysample.list/list.txt",
+      "Id": 0,
+      "CreatedDateUtc": "0001-01-01T00:00:00",
+      "ModifiedDateUtc": "0001-01-01T00:00:00"
     },
     {
-      "Languages": null,
       "Description": "A sample list to filter out malware.",
       "DescriptionSourceUrl": "https://mysample.list/malware",
       "DonateUrl": "https://mysample.list/donate/",
-      "Email": "contact@mysample.list",
+      "EmailAddress": "contact@mysample.list",
       "ForumUrl": "https://mysample.list/forum/",
       "HomeUrl": "https://mysample.list/",
       "IssuesUrl": "https://github.com/johnsmith/mysamplelist/issues",
+      "FilterListLanguages": null,
+      "FilterListSoftware": null,
+      "MaintainerId": 0,
       "Name": "My Sample Malware Filter List",
-      "ViewUrl": "https://mysample.list/list.txt"
+      "ViewUrl": "https://mysample.list/list.txt",
+      "Id": 0,
+      "CreatedDateUtc": "0001-01-01T00:00:00",
+      "ModifiedDateUtc": "0001-01-01T00:00:00"
     }
   ],
-  "Email": "john.smith@protonmail.com",
   "HomeUrl": "https://johnsmith.com",
   "Name": "John Smith",
-  "TwitterHandle": "@johnsmith"
+  "TwitterHandle": "@johnsmith",
+  "Id": 0,
+  "CreatedDateUtc": "0001-01-01T00:00:00",
+  "ModifiedDateUtc": "0001-01-01T00:00:00"
 }
