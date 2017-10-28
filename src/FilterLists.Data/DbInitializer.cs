@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using FilterLists.Data.Entities;
@@ -10,6 +11,7 @@ namespace FilterLists.Data
 {
     public static class DbInitializer
     {
+        [Conditional("DEBUG")]
         public static void Initialize(FilterListsDbContext filterListsDbContext)
         {
             filterListsDbContext.Database.Migrate();
