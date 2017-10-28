@@ -1,4 +1,4 @@
-﻿using FilterLists.Data.Contexts;
+﻿using FilterLists.Data;
 using FilterLists.Data.Repositories.Contracts;
 using FilterLists.Data.Repositories.Implementations;
 using FilterLists.Services.Contracts;

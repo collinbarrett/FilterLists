@@ -2,9 +2,9 @@
 using FilterLists.Data.EntityTypeConfigurations;
 using Microsoft.EntityFrameworkCore;
 
-namespace FilterLists.Data.Contexts
+namespace FilterLists.Data
 {
-    public class FilterListsDbContext : DbContext, IFilterListsDbContext
+    public class FilterListsDbContext : DbContext
     {
         public FilterListsDbContext(DbContextOptions options)
             : base(options)
@@ -19,11 +19,13 @@ namespace FilterLists.Data.Contexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new FilterListTypeConfiguration());
-            modelBuilder.ApplyConfiguration(new FilterListLanguageTypeConfiguration());
-            modelBuilder.ApplyConfiguration(new FilterListSoftwareTypeConfiguration());
             modelBuilder.ApplyConfiguration(new MaintainerTypeConfiguration());
             modelBuilder.ApplyConfiguration(new LanguageTypeConfiguration());
             modelBuilder.ApplyConfiguration(new SoftwareTypeConfiguration());
+
+            modelBuilder.ApplyConfiguration(new FilterListLanguageTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new FilterListSoftwareTypeConfiguration());
+
             base.OnModelCreating(modelBuilder);
         }
     }
