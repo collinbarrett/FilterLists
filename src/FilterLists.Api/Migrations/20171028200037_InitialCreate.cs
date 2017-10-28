@@ -83,7 +83,7 @@ namespace FilterLists.Api.Migrations
                     ForumUrl = table.Column<string>(type: "varchar(2083)", maxLength: 2083, nullable: true),
                     HomeUrl = table.Column<string>(type: "varchar(2083)", maxLength: 2083, nullable: true),
                     IssuesUrl = table.Column<string>(type: "varchar(2083)", maxLength: 2083, nullable: true),
-                    MaintainerId = table.Column<int>(type: "int", nullable: false),
+                    MaintainerId = table.Column<int>(type: "int", nullable: true),
                     ModifiedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false),
                     Name = table.Column<string>(type: "varchar(126)", maxLength: 126, nullable: false),
                     ViewUrl = table.Column<string>(type: "varchar(2083)", maxLength: 2083, nullable: true)
@@ -96,7 +96,7 @@ namespace FilterLists.Api.Migrations
                         column: x => x.MaintainerId,
                         principalTable: "maintainers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(

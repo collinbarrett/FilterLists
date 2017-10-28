@@ -50,7 +50,7 @@ namespace FilterLists.Api.Migrations
                     b.Property<string>("IssuesUrl")
                         .HasMaxLength(2083);
 
-                    b.Property<int>("MaintainerId");
+                    b.Property<int?>("MaintainerId");
 
                     b.Property<DateTime>("ModifiedDateUtc")
                         .ValueGeneratedOnAddOrUpdate()
@@ -213,8 +213,7 @@ namespace FilterLists.Api.Migrations
                 {
                     b.HasOne("FilterLists.Data.Entities.Maintainer")
                         .WithMany("FilterLists")
-                        .HasForeignKey("MaintainerId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("MaintainerId");
                 });
 
             modelBuilder.Entity("FilterLists.Data.Entities.FilterListLanguage", b =>

@@ -67,7 +67,10 @@
           }
         },
         "MaintainerId": {
-          "type": "integer"
+          "type": [
+            "integer",
+            "null"
+          ]
         },
         "Name": {
           "type": [

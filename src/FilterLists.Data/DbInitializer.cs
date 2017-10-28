@@ -16,6 +16,7 @@ namespace FilterLists.Data
         {
             filterListsDbContext.Database.Migrate();
             InitializeLanguages(filterListsDbContext);
+            InitializeFilterLists(filterListsDbContext);
         }
 
         private static void InitializeLanguages(FilterListsDbContext filterListsDbContext)
@@ -24,6 +25,15 @@ namespace FilterLists.Data
             filterListsDbContext.AddRange(JsonConvert.DeserializeObject<List<Language>>(
                 File.ReadAllText(Path.GetFullPath(Path.Combine(AppContext.BaseDirectory + @"\",
                     @"..\..\..\..\..\data\Languages.json")))));
+            filterListsDbContext.SaveChanges();
+        }
+
+        private static void InitializeFilterLists(FilterListsDbContext filterListsDbContext)
+        {
+            if (filterListsDbContext.FilterLists.Any()) return;
+            filterListsDbContext.AddRange(JsonConvert.DeserializeObject<List<FilterList>>(
+                File.ReadAllText(Path.GetFullPath(Path.Combine(AppContext.BaseDirectory + @"\",
+                    @"..\..\..\..\..\data\ListsSeed.json")))));
             filterListsDbContext.SaveChanges();
         }
     }
