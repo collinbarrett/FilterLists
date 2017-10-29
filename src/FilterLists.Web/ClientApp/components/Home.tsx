@@ -2,20 +2,20 @@ import * as React from "react";
 import { RouteComponentProps } from "react-router";
 import "isomorphic-fetch";
 
-interface IFetchDataExampleState {
-    forecasts: IWeatherForecast[];
+interface IFilterListsState {
+    filterLists: IFilterList[];
     loading: boolean;
 }
 
-export class Home extends React.Component<RouteComponentProps<{}>, IFetchDataExampleState> {
+export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsState> {
     constructor() {
         super();
-        this.state = { forecasts: [], loading: true };
+        this.state = { filterLists: [], loading: true };
 
-        fetch("https://api.filterlists.com/v1/lists/WeatherForecasts")
-            .then(response => response.json() as Promise<IWeatherForecast[]>)
+        fetch("https://api.filterlists.com/v1/lists")
+            .then(response => response.json() as Promise<IFilterList[]>)
             .then(data => {
-                this.setState({ forecasts: data, loading: false });
+                this.setState({ filterLists: data, loading: false });
             });
     }
 
@@ -24,32 +24,26 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFetchDataExa
             ? <p>
                   <em>Loading...</em>
               </p>
-            : Home.renderForecastsTable(this.state.forecasts);
+            : Home.renderFilterListsTable(this.state.filterLists);
 
         return <div>
-                   <h1>Weather forecast</h1>
-                   <p>This component demonstrates fetching data from the server.</p>
                    { contents }
                </div>;
     }
 
-    private static renderForecastsTable(forecasts: IWeatherForecast[]) {
+    private static renderFilterListsTable(filterLists: IFilterList[]) {
         return <table className="table">
                    <thead>
                    <tr>
-                       <th>Date</th>
-                       <th>Temp. (C)</th>
-                       <th>Temp. (F)</th>
-                       <th>Summary</th>
+                       <th>Name</th>
+                       <th>Description</th>
                    </tr>
                    </thead>
                    <tbody>
-                   {forecasts.map(forecast =>
-                       <tr key={ forecast.dateFormatted }>
-                           <td>{ forecast.dateFormatted }</td>
-                           <td>{ forecast.temperatureC }</td>
-                           <td>{ forecast.temperatureF }</td>
-                           <td>{ forecast.summary }</td>
+                   {filterLists.map(filterList =>
+                       <tr key={ filterList.id }>
+                           <td>{ filterList.name }</td>
+                           <td>{ filterList.description }</td>
                        </tr>
                    )}
                    </tbody>
@@ -57,9 +51,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFetchDataExa
     }
 }
 
-interface IWeatherForecast {
-    dateFormatted: string;
-    temperatureC: number;
-    temperatureF: number;
-    summary: string;
+interface IFilterList {
+    id: number;
+    name: string;
+    description: string;
 }

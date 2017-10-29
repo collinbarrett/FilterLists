@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2afb86fea30d5104dd0b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "94072e0c334b478710f2"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -2571,14 +2571,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 var routes = __WEBPACK_IMPORTED_MODULE_6__routes__["routes"];
 function renderApp() {
-    // This code starts up the React app when it runs in a browser. It sets up the routing
-    // configuration and injects the app into a DOM element.
     var baseUrl = document.getElementsByTagName("base")[0].getAttribute("href");
     __WEBPACK_IMPORTED_MODULE_3_react_dom__["render"](__WEBPACK_IMPORTED_MODULE_2_react__["createElement"](__WEBPACK_IMPORTED_MODULE_4_react_hot_loader__["AppContainer"], null,
         __WEBPACK_IMPORTED_MODULE_2_react__["createElement"](__WEBPACK_IMPORTED_MODULE_5_react_router_dom__["BrowserRouter"], { children: routes, basename: baseUrl })), document.getElementById("react-app"));
 }
 renderApp();
-// Allow Hot Module Replacement
 if (true) {
     module.hot.accept(20, function(__WEBPACK_OUTDATED_DEPENDENCIES__) { /* harmony import */ __WEBPACK_IMPORTED_MODULE_6__routes__ = __webpack_require__(20); (function () {
         routes = __webpack_require__(20).routes;
@@ -7783,11 +7780,11 @@ var Home = (function (_super) {
     __extends(Home, _super);
     function Home() {
         var _this = _super.call(this) || this;
-        _this.state = { forecasts: [], loading: true };
-        fetch("api/SampleData/WeatherForecasts")
+        _this.state = { filterLists: [], loading: true };
+        fetch("https://api.filterlists.com/v1/lists")
             .then(function (response) { return response.json(); })
             .then(function (data) {
-            _this.setState({ forecasts: data, loading: false });
+            _this.setState({ filterLists: data, loading: false });
         });
         return _this;
     }
@@ -7795,26 +7792,19 @@ var Home = (function (_super) {
         var contents = this.state.loading
             ? __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("p", null,
                 __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("em", null, "Loading..."))
-            : Home.renderForecastsTable(this.state.forecasts);
-        return __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null,
-            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h1", null, "Weather forecast"),
-            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("p", null, "This component demonstrates fetching data from the server."),
-            contents);
+            : Home.renderFilterListsTable(this.state.filterLists);
+        return __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", null, contents);
     };
-    Home.renderForecastsTable = function (forecasts) {
+    Home.renderFilterListsTable = function (filterLists) {
         return __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("table", { className: "table" },
             __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("thead", null,
                 __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("tr", null,
-                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("th", null, "Date"),
-                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("th", null, "Temp. (C)"),
-                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("th", null, "Temp. (F)"),
-                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("th", null, "Summary"))),
-            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("tbody", null, forecasts.map(function (forecast) {
-                return __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("tr", { key: forecast.dateFormatted },
-                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("td", null, forecast.dateFormatted),
-                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("td", null, forecast.temperatureC),
-                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("td", null, forecast.temperatureF),
-                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("td", null, forecast.summary));
+                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("th", null, "Name"),
+                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("th", null, "Description"))),
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("tbody", null, filterLists.map(function (filterList) {
+                return __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("tr", { key: filterList.id },
+                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("td", null, filterList.name),
+                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("td", null, filterList.description));
             })));
     };
     return Home;
