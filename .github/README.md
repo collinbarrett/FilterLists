@@ -8,10 +8,17 @@
 
 FilterLists is the independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances. For more information on its purpose and function, check out [About](https://filterlists.com/about/).
 
+## Links
+| Site                                        | API                                               |
+| ------------------------------------------- | ------------------------------------------------- |
+| [v3 (Alpha)](https://beta.filterlists.com/) | [v1 (Alpha)](https://api.filterlists.com/swagger) |
+| [v2 (Stable)](https://filterlists.com/)     |                                                   |
+| [v1 (Legacy)](https://v1.filterlists.com/)  |                                                   |
+
 ## Development Notice (Updated July 13, 2017)
 FilterLists improvements are slow and tend to be in spurts. I care about this project as both a resource for the community and a learning tool for me. However, my day job comes first which often results in little to no work on the project at times. I happily welcome anyone that wants to contribute. The immediate projects are converting the data to an actual database (rather than a Google Sheet) and then exposing the data via a [.Net Core API](https://github.com/collinbarrett/FilterLists/projects/3). I would also love to build a more responsive front-end, but I am not a front-end developer and would welcome help on [this](https://github.com/collinbarrett/FilterLists/projects/4).
 
-## Properties
+## Indexed Properties (Under Construction)
 [Source](https://github.com/collinbarrett/FilterLists/blob/master/data/DataSample.json) | [Schema](https://github.com/collinbarrett/FilterLists/blob/master/data/DataSchema.json)
 
 | Property       | Description                              |
