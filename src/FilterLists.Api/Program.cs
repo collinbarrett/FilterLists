@@ -23,6 +23,7 @@ namespace FilterLists.Api
         public static IWebHost BuildWebHost(string[] args)
         {
             return WebHost.CreateDefaultBuilder(args)
+                .UseUrls("http://*:5001;")
                 .UseApplicationInsights()
                 .UseStartup<Startup>()
                 .Build();
