@@ -13,7 +13,7 @@ namespace FilterLists.Web
         public static IWebHost BuildWebHost(string[] args)
         {
             return WebHost.CreateDefaultBuilder(args)
-                .UseUrls("http://*:5000;")
+                .UseUrls("http://*:5001;")
                 .UseStartup<Startup>()
                 .Build();
         }
