@@ -12,7 +12,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFetchDataExa
         super();
         this.state = { forecasts: [], loading: true };
 
-        fetch("api/SampleData/WeatherForecasts")
+        fetch("https://api.filterlists.com/v1/lists/WeatherForecasts")
             .then(response => response.json() as Promise<IWeatherForecast[]>)
             .then(data => {
                 this.setState({ forecasts: data, loading: false });
