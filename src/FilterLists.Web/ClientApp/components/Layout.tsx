@@ -1,11 +1,11 @@
 import * as React from "react";
 import { NavMenu } from "./NavMenu";
 
-export interface LayoutProps {
+export interface ILayoutProps {
     children?: React.ReactNode;
 }
 
-export class Layout extends React.Component<LayoutProps, {}> {
+export class Layout extends React.Component<ILayoutProps, {}> {
     render() {
         return <div className="container-fluid">
                    <div className="row">
