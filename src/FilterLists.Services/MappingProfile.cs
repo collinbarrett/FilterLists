@@ -1,10 +1,10 @@
-﻿using AutoMapper;
+﻿using AutoMapper.Configuration;
 using FilterLists.Data.Entities;
 using FilterLists.Services.Models;
 
 namespace FilterLists.Services
 {
-    public class MappingProfile : Profile
+    public class MappingProfile : MapperConfigurationExpression
     {
         public MappingProfile()
         {
