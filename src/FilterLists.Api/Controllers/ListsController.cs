@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FilterLists.Api.Controllers
 {
-    [Route("v1/[controller]")]
     [Produces("application/json")]
     public class ListsController : Controller
     {

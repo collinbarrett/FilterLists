@@ -38,7 +38,7 @@ namespace FilterLists.Api
 
             app.UseStaticFiles();
 
-            app.UseMvc();
+            app.UseMvc(routes => { routes.MapRoute("default", "v1/{controller=Default}/{action=Get}/{id?}"); });
         }
     }
 }
