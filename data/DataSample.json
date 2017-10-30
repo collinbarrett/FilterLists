@@ -1,5 +1,5 @@
 {
-  "Email": "john.smith@protonmail.com",
+  "EmailAddress": "john.smith@protonmail.com",
   "FilterLists": [
     {
       "Description": "A sample list to filter out advertisements.",
@@ -10,6 +10,7 @@
       "HomeUrl": "https://mysample.list/",
       "IssuesUrl": "https://github.com/johnsmith/mysamplelist/issues",
       "FilterListLanguages": null,
+      "FilterListRules": null,
       "FilterListSoftware": null,
       "MaintainerId": null,
       "Name": "My Sample Advertisement Filter List",
@@ -27,6 +28,7 @@
       "HomeUrl": "https://mysample.list/",
       "IssuesUrl": "https://github.com/johnsmith/mysamplelist/issues",
       "FilterListLanguages": null,
+      "FilterListRules": null,
       "FilterListSoftware": null,
       "MaintainerId": null,
       "Name": "My Sample Malware Filter List",

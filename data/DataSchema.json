@@ -57,6 +57,15 @@
             "$ref": "#/definitions/FilterListLanguage"
           }
         },
+        "FilterListRules": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/FilterListRule"
+          }
+        },
         "FilterListSoftware": {
           "type": [
             "array",
@@ -105,6 +114,7 @@
         "HomeUrl",
         "IssuesUrl",
         "FilterListLanguages",
+        "FilterListRules",
         "FilterListSoftware",
         "MaintainerId",
         "Name",
@@ -149,6 +159,46 @@
         "FilterList",
         "LanguageId",
         "Language",
+        "Id",
+        "CreatedDateUtc",
+        "ModifiedDateUtc"
+      ]
+    },
+    "FilterListRule": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "FilterListId": {
+          "type": "integer"
+        },
+        "FilterList": {
+          "$ref": "#/definitions/FilterList"
+        },
+        "RuleId": {
+          "type": "integer"
+        },
+        "Rule": {
+          "$ref": "#/definitions/Rule"
+        },
+        "Id": {
+          "type": "integer"
+        },
+        "CreatedDateUtc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ModifiedDateUtc": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "FilterListId",
+        "FilterList",
+        "RuleId",
+        "Rule",
         "Id",
         "CreatedDateUtc",
         "ModifiedDateUtc"
@@ -277,6 +327,47 @@
         "ModifiedDateUtc"
       ]
     },
+    "Rule": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "FilterListRules": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/FilterListRule"
+          }
+        },
+        "Raw": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Id": {
+          "type": "integer"
+        },
+        "CreatedDateUtc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ModifiedDateUtc": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "FilterListRules",
+        "Raw",
+        "Id",
+        "CreatedDateUtc",
+        "ModifiedDateUtc"
+      ]
+    },
     "Software": {
       "type": [
         "object",
@@ -335,7 +426,7 @@
   },
   "type": "object",
   "properties": {
-    "Email": {
+    "EmailAddress": {
       "type": [
         "string",
         "null"
@@ -381,7 +472,7 @@
     }
   },
   "required": [
-    "Email",
+    "EmailAddress",
     "FilterLists",
     "HomeUrl",
     "Name",

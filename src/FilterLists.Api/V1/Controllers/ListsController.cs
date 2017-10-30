@@ -1,8 +1,9 @@
 ﻿using FilterLists.Services.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FilterLists.Api.Controllers
+namespace FilterLists.Api.V1.Controllers
 {
+    [ApiVersion("1.0")]
     [Produces("application/json")]
     public class ListsController : Controller
     {

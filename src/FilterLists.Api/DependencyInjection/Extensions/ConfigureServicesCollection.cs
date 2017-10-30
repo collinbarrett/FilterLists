@@ -10,6 +10,7 @@ namespace FilterLists.Api.DependencyInjection.Extensions
         public static void AddFilterListsApi(this IServiceCollection services)
         {
             services.AddMvc();
+            services.AddApiVersioning();
             services.AddSwagger();
         }
 
