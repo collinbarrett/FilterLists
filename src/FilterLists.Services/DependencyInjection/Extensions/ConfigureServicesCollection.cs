@@ -1,4 +1,5 @@
-﻿using FilterLists.Data;
+﻿using AutoMapper;
+using FilterLists.Data;
 using FilterLists.Data.Repositories.Contracts;
 using FilterLists.Data.Repositories.Implementations;
 using FilterLists.Services.Contracts;
@@ -20,6 +21,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
                     b => b.MigrationsAssembly("FilterLists.Api")));
             services.TryAddScoped<IFilterListRepository, FilterListRepository>();
             services.TryAddScoped<IFilterListService, FilterListService>();
+            services.AddAutoMapper();
         }
     }
 }

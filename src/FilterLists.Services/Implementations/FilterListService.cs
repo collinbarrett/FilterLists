@@ -9,15 +9,17 @@ namespace FilterLists.Services.Implementations
     public class FilterListService : IFilterListService
     {
         private readonly IFilterListRepository filterListRepository;
+        private readonly IMapper mapper;
 
-        public FilterListService(IFilterListRepository filterListRepository)
+        public FilterListService(IFilterListRepository filterListRepository, IMapper mapper)
         {
             this.filterListRepository = filterListRepository;
+            this.mapper = mapper;
         }
 
         public IEnumerable<FilterListSummaryDto> GetAllSummaries()
         {
-            return Mapper.Map<IEnumerable<FilterListSummaryDto>>(filterListRepository.GetAll());
+            return mapper.Map<IEnumerable<FilterListSummaryDto>>(filterListRepository.GetAll());
         }
     }
 }
