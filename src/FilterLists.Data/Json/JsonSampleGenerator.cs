@@ -11,7 +11,7 @@ namespace FilterLists.Data.Json
     {
         private static JObject DataSample => (JObject) JToken.FromObject(new Maintainer
         {
-            Email = "john.smith@protonmail.com",
+            EmailAddress = "john.smith@protonmail.com",
             HomeUrl = "https://johnsmith.com",
             TwitterHandle = "@johnsmith",
             Name = "John Smith",
