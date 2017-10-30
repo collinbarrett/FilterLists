@@ -17,7 +17,7 @@ namespace FilterLists.Api.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Json(filterListService.GetAll());
+            return Json(filterListService.GetAllSummaries());
         }
     }
 }

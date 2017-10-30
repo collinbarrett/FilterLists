@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
-using FilterLists.Data.Entities;
+using AutoMapper;
 using FilterLists.Data.Repositories.Contracts;
 using FilterLists.Services.Contracts;
+using FilterLists.Services.Models;
 
 namespace FilterLists.Services.Implementations
 {
@@ -14,9 +15,9 @@ namespace FilterLists.Services.Implementations
             this.filterListRepository = filterListRepository;
         }
 
-        public IEnumerable<FilterList> GetAll()
+        public IEnumerable<FilterListSummaryDto> GetAllSummaries()
         {
-            return filterListRepository.GetAll();
+            return Mapper.Map<IEnumerable<FilterListSummaryDto>>(filterListRepository.GetAll());
         }
     }
 }

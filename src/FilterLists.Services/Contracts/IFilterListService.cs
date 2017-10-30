@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using FilterLists.Data.Entities;
+using FilterLists.Services.Models;
 
 namespace FilterLists.Services.Contracts
 {
     public interface IFilterListService
     {
-        IEnumerable<FilterList> GetAll();
+        IEnumerable<FilterListSummaryDto> GetAllSummaries();
     }
 }
