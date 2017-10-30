@@ -6,6 +6,5 @@ namespace FilterLists.Data.Repositories.Contracts
     public interface IFilterListRepository
     {
         IEnumerable<FilterList> GetAll();
-        FilterList GetByName(string filterListName);
     }
 }
