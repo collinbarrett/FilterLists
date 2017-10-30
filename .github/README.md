@@ -11,7 +11,7 @@ FilterLists is the independent and comprehensive directory of all public filter 
 ## Links
 | Site                                        | API                                               |
 | ------------------------------------------- | ------------------------------------------------- |
-| [v3 (Alpha)](https://beta.filterlists.com/) | [v1 (Alpha)](https://api.filterlists.com/swagger) |
+| [v3 (Alpha)](https://beta.filterlists.com/) | [v1 (Alpha)](https://api.filterlists.com/docs) |
 | [v2 (Stable)](https://filterlists.com/)     |                                                   |
 | [v1 (Legacy)](https://v1.filterlists.com/)  |                                                   |
 
