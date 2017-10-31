@@ -1,6 +1,9 @@
 import * as React from "react";
 import { RouteComponentProps } from "react-router";
 import "isomorphic-fetch";
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {
     Table,
     TableBody,
@@ -8,7 +11,7 @@ import {
     TableHeaderColumn,
     TableRow,
     TableRowColumn,
-    } from "material-ui";
+} from "material-ui";
 
 interface IFilterListsState {
     filterLists: IFilterList[];
@@ -34,7 +37,9 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
             : Home.renderFilterListsTable(this.state.filterLists);
 
         return <div>
-                   {contents}
+                   <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+                       {contents}
+                   </MuiThemeProvider>
                </div>;
     }
 
