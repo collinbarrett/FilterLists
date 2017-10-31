@@ -1,6 +1,14 @@
 import * as React from "react";
 import { RouteComponentProps } from "react-router";
 import "isomorphic-fetch";
+import {
+    Table,
+    TableBody,
+    TableHeader,
+    TableHeaderColumn,
+    TableRow,
+    TableRowColumn,
+    } from "material-ui";
 
 interface IFilterListsState {
     filterLists: IFilterList[];
@@ -11,7 +19,6 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
     constructor() {
         super();
         this.state = { filterLists: [], loading: true };
-
         fetch("https://api.filterlists.com/v1/lists")
             .then(response => response.json() as Promise<IFilterList[]>)
             .then(data => {
@@ -32,22 +39,22 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
     }
 
     private static renderFilterListsTable(filterLists: IFilterList[]) {
-        return <table className="table">
-                   <thead>
-                   <tr>
-                       <th>Name</th>
-                       <th>Description</th>
-                   </tr>
-                   </thead>
-                   <tbody>
-                   {filterLists.map(filterList =>
-                       <tr key={filterList.id}>
-                           <td>{filterList.name}</td>
-                           <td>{filterList.description}</td>
-                       </tr>
-                   )}
-                   </tbody>
-               </table>;
+        return <Table>
+                   <TableHeader>
+                       <TableRow>
+                           <TableHeaderColumn>Name</TableHeaderColumn>
+                           <TableHeaderColumn>Description</TableHeaderColumn>
+                       </TableRow>
+                   </TableHeader>
+                   <TableBody>
+                       {filterLists.map(filterList =>
+                           <TableRow key={filterList.id}>
+                               <TableRowColumn>{filterList.name}</TableRowColumn>
+                               <TableRowColumn>{filterList.description}</TableRowColumn>
+                           </TableRow>
+                       )}
+                   </TableBody>
+               </Table>;
     }
 }
 
