@@ -307,3 +307,4 @@ OpenCover/
 # FilterLists Custom Ignores
 gs/Private.gs
 appsettings.json
+src/FilterLists.Web/wwwroot/dist
