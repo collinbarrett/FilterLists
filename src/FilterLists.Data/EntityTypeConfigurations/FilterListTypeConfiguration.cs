@@ -26,6 +26,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(b => b.Name)
                 .IsRequired()
                 .HasMaxLength(126);
+            entityTypeBuilder.Property(b => b.SubmissionUrl)
+                .HasMaxLength(2083);
             entityTypeBuilder.Property(b => b.ViewUrl)
                 .HasMaxLength(2083);
             base.Configure(entityTypeBuilder);

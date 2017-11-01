@@ -11,9 +11,10 @@ using System;
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    partial class FilterListsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20171101015403_add Submission URL, modify License bool names")]
+    partial class addSubmissionURLmodifyLicenseboolnames
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

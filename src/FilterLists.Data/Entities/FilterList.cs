@@ -17,6 +17,7 @@ namespace FilterLists.Data.Entities
         public int? LicenseId { get; set; }
         public int? MaintainerId { get; set; }
         public string Name { get; set; }
+        public string SubmissionUrl { get; set; }
         public string ViewUrl { get; set; }
     }
 }
