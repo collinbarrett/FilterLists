@@ -5,7 +5,7 @@
   "devDependencies": {
     "@types/history": "4.6.0",
     "@types/material-ui": "^0.18.3",
-    "@types/react": "16.0.19",
+    "@types/react": "^16.0.19",
     "@types/react-dom": "15.5.1",
     "@types/react-hot-loader": "3.0.3",
     "@types/react-router": "4.0.12",
