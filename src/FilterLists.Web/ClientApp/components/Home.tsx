@@ -1,17 +1,15 @@
 import * as React from "react";
 import { RouteComponentProps } from "react-router";
 import "isomorphic-fetch";
-import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import darkBaseTheme from "material-ui/styles/baseThemes/darkBaseTheme";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import getMuiTheme from "material-ui/styles/getMuiTheme";
 import {
     Table,
     TableBody,
-    TableHeader,
-    TableHeaderColumn,
     TableRow,
     TableRowColumn,
-} from "material-ui";
+    } from "material-ui";
 
 interface IFilterListsState {
     filterLists: IFilterList[];
@@ -45,17 +43,12 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
 
     private static renderFilterListsTable(filterLists: IFilterList[]) {
         return <Table>
-                   <TableHeader>
-                       <TableRow>
-                           <TableHeaderColumn>Name</TableHeaderColumn>
-                           <TableHeaderColumn>Description</TableHeaderColumn>
-                       </TableRow>
-                   </TableHeader>
                    <TableBody>
                        {filterLists.map(filterList =>
                            <TableRow key={filterList.id}>
-                               <TableRowColumn>{filterList.name}</TableRowColumn>
-                               <TableRowColumn>{filterList.description}</TableRowColumn>
+                               <TableRowColumn>
+                                   <h2>{filterList.name}</h2>{filterList.description}
+                               </TableRowColumn>
                            </TableRow>
                        )}
                    </TableBody>
