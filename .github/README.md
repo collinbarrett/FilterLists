@@ -53,4 +53,5 @@ The immediate projects are converting the data to an actual web application (rat
 | *Maintainer          | The list's maintainer                                                    |
 | Name                 | The list's name (APA Title Case)                                         |
 | SubmissionUrl        | The list's submission form URL                                           |
+| *UpstreamFilterLists | The list's upstream lists if it is a fork or a merge                     |
 | ViewUrl              | The list's view/download URL (typically a .txt file)                     |
