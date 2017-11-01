@@ -44,7 +44,7 @@ The immediate projects are converting the data to an actual web application (rat
 | Name                 | The list's name (APA Title Case)                                         |
 | SubmissionUrl        | The list's submission form URL                                           |
 | *UpstreamFilterLists | The list's upstream lists if it is a fork or a merge                     |
-| ViewUrl              | The list's view/download URL (typically a .txt file)                     |
+| ViewUrl              | The list's view/download URL (typically .txt file)                     |
 
 ### Maintainers
 
@@ -54,4 +54,4 @@ The immediate projects are converting the data to an actual web application (rat
 | HomeUrl       | The maintainer's home page URL             |
 | Name          | The maintainer's name                      |
 | TwitterHandle | The maintainer's Twitter handle            |
-| *FilterLists  | The maintainer's FilterLists               |
+| *FilterLists  | The maintainer's lists                     |
