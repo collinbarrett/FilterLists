@@ -27,16 +27,6 @@ The immediate projects are converting the data to an actual web application (rat
 ## Properties
 *Asterisks indicate a foreign key relationship.
 
-### Maintainers
-
-| Property      | Description                                |
-|---------------|--------------------------------------------|
-| EmailAddress  | The maintainer's email address             |
-| HomeUrl       | The maintainer's home page URL             |
-| Name          | The maintainer's name                      |
-| TwitterHandle | The maintainer's Twitter handle            |
-| *FilterLists  | Collection of the maintainer's FilterLists |
-
 ### FilterLists
 
 | Property             | Description                                                              |
@@ -55,3 +45,13 @@ The immediate projects are converting the data to an actual web application (rat
 | SubmissionUrl        | The list's submission form URL                                           |
 | *UpstreamFilterLists | The list's upstream lists if it is a fork or a merge                     |
 | ViewUrl              | The list's view/download URL (typically a .txt file)                     |
+
+### Maintainers
+
+| Property      | Description                                |
+|---------------|--------------------------------------------|
+| EmailAddress  | The maintainer's email address             |
+| HomeUrl       | The maintainer's home page URL             |
+| Name          | The maintainer's name                      |
+| TwitterHandle | The maintainer's Twitter handle            |
+| *FilterLists  | The maintainer's FilterLists               |
