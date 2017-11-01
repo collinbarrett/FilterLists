@@ -13,6 +13,7 @@ namespace FilterLists.Data
 
         public DbSet<FilterList> FilterLists { get; set; }
         public DbSet<Language> Languages { get; set; }
+        public DbSet<License> Licenses { get; set; }
         public DbSet<Maintainer> Maintainers { get; set; }
         public DbSet<Rule> Rules { get; set; }
         public DbSet<Software> Software { get; set; }
@@ -21,6 +22,7 @@ namespace FilterLists.Data
         {
             modelBuilder.ApplyConfiguration(new FilterListTypeConfiguration());
             modelBuilder.ApplyConfiguration(new LanguageTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new LicenseTypeConfiguration());
             modelBuilder.ApplyConfiguration(new MaintainerTypeConfiguration());
             modelBuilder.ApplyConfiguration(new RuleTypeConfiguration());
             modelBuilder.ApplyConfiguration(new SoftwareTypeConfiguration());

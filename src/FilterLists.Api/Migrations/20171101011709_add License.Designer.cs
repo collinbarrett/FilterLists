@@ -11,9 +11,10 @@ using System;
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    partial class FilterListsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20171101011709_add License")]
+    partial class addLicense
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

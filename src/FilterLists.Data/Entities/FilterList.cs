@@ -14,6 +14,7 @@ namespace FilterLists.Data.Entities
         public ICollection<FilterListLanguage> FilterListLanguages { get; set; }
         public ICollection<FilterListRule> FilterListRules { get; set; }
         public ICollection<FilterListSoftware> FilterListSoftware { get; set; }
+        public int? LicenseId { get; set; }
         public int? MaintainerId { get; set; }
         public string Name { get; set; }
         public string ViewUrl { get; set; }
