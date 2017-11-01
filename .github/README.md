@@ -15,8 +15,14 @@ FilterLists is the independent and comprehensive directory of all public filter 
 | [v2 (Stable)](https://filterlists.com/)     |                                                   |
 | [v1 (Legacy)](https://v1.filterlists.com/)  |                                                   |
 
-## Development Notice (Updated July 13, 2017)
-FilterLists improvements are slow and tend to be in spurts. I care about this project as both a resource for the community and a learning tool for me. However, my day job comes first which often results in little to no work on the project at times. I happily welcome anyone that wants to contribute. The immediate projects are converting the data to an actual database (rather than a Google Sheet) and then exposing the data via a [.Net Core API](https://github.com/collinbarrett/FilterLists/projects/3). I would also love to build a more responsive front-end, but I am not a front-end developer and would welcome help on [this](https://github.com/collinbarrett/FilterLists/projects/4).
+## Submitting or Updating Lists
+
+To suggest a new list or update the information of an existing list, please open a new [Issue](https://github.com/collinbarrett/FilterLists/issues). Provide all of the information in the Properties section below that is available.
+
+## Development Notice (Updated November 1, 2017)
+FilterLists improvements are slow and tend to be in spurts. I care about this project as both a resource for the community and a learning tool for me. However, my day job comes first which often results in little to no work on the project at times. I happily welcome anyone that wants to contribute.
+
+The immediate projects are converting the data to an actual web application (rather than a Google Sheet back-end and a WordPress front-end), and then exposing the data via a .Net Core API.
 
 ## Properties
 
