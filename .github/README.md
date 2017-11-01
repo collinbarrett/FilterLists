@@ -34,22 +34,23 @@ The immediate projects are converting the data to an actual web application (rat
 | EmailAddress  | The maintainer's email address             |
 | HomeUrl       | The maintainer's home page URL             |
 | Name          | The maintainer's name                      |
-| TwitterHandle | The maintainer's twitter handle            |
+| TwitterHandle | The maintainer's Twitter handle            |
 | *FilterLists  | Collection of the maintainer's FilterLists |
 
 ### FilterLists
 
-| Property             | Description                                            |
-|----------------------|--------------------------------------------------------|
-| Description          | The list's functionality                               |
-| DescriptionSourceUrl | If the Description was quoted directly, the source URL |
-| DonateUrl            | The list's donation URL                                |
-| EmailAddress         | The list's email address                               |
-| ForumUrl             | The list's forum URL                                   |
-| HomeUrl              | The list's home page URL                               |
-| IssuesUrl            | The list's GitHub Issues URL                           |
-| *Languages           | The list's target languages                            |
-| *Maintainer          | The list's maintainer                                  |
-| Name                 | The list's name (APA Title Case)                       |
-| SubmissionUrl        | The list's submission form URL                         |
-| ViewUrl              | The list's URL                                         |
+| Property             | Description                                                              |
+|----------------------|--------------------------------------------------------------------------|
+| Description          | The list's functionality                                                 |
+| DescriptionSourceUrl | If the Description was quoted directly, the source URL                   |
+| DonateUrl            | The list's donation URL                                                  |
+| EmailAddress         | The list's email address                                                 |
+| ForumUrl             | The list's forum URL                                                     |
+| HomeUrl              | The list's home page URL                                                 |
+| IssuesUrl            | The list's GitHub Issues URL                                             |
+| *Languages           | The list's target languages                                              |
+| *License             | The list's license (typically [CC](https://creativecommons.org/choose/)) |
+| *Maintainer          | The list's maintainer                                                    |
+| Name                 | The list's name (APA Title Case)                                         |
+| SubmissionUrl        | The list's submission form URL                                           |
+| ViewUrl              | The list's view/download URL (typically a .txt file)                     |
