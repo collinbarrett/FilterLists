@@ -32,7 +32,7 @@ The immediate projects are converting the data to an actual web application (rat
 | Property             | Description                                                              |
 |----------------------|--------------------------------------------------------------------------|
 | Description          | The list's functionality                                                 |
-| DescriptionSourceUrl | If the Description was quoted directly, the source URL                   |
+| DescriptionSourceUrl | The list's Description source URL if quoted directly                     |
 | DonateUrl            | The list's donation URL                                                  |
 | EmailAddress         | The list's email address                                                 |
 | ForumUrl             | The list's forum URL                                                     |
