@@ -25,28 +25,31 @@ FilterLists improvements are slow and tend to be in spurts. I care about this pr
 The immediate projects are converting the data to an actual web application (rather than a Google Sheet back-end and a WordPress front-end), and then exposing the data via a .Net Core API.
 
 ## Properties
+*Asterisks indicate a foreign key relationship.
 
 ### Maintainers
 
 | Property      | Description                                |
 |---------------|--------------------------------------------|
 | EmailAddress  | The maintainer's email address             |
-| HomeUrl       | The URL to the maintainer's home page      |
+| HomeUrl       | The maintainer's home page URL             |
 | Name          | The maintainer's name                      |
 | TwitterHandle | The maintainer's twitter handle            |
 | *FilterLists  | Collection of the maintainer's FilterLists |
 
 ### FilterLists
 
-| Property             | Description                                                                                                                                                                                                                                                                                                                                    |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Description          | A brief description of the list's functionality. Preferably, this is quoted (if non-English, translate to English via translator or Google Translate for consistency) from the list's documentation or composed by a maintainer of the list. If neither is available, a generic description should be composed by the FilterLists contributor. |
-| DescriptionSourceUrl | The URL to the list's documentation page from which the description was quoted if applicable.                                                                                                                                                                                                                                                  |
-| DonateUrl            | The URL to the list's donation page. This could be a custom PayPal or similar link, or a link to a web page discussing various donation options. Pull requests that include changes to this link will undergo further verification to prevent fraud.                                                                                           |
-| EmailAddress         | |
-| ForumUrl             | The URL to the list's forum where issues, change requests, etc. are discussed.                                                                                                                                                                                                                                                                 |
-| HomeUrl              | The URL to the list's home page. Preferably, this is stated in the header of the list. Alternatively, it could be a custom domain, GitHub page, blog post, forum post, etc. that serves as a primary source of information for the list.                                                                                                       |
-| IssuesUrl            | The URL to the list's GitHub Issues.                                                                                                                                                                                                                                                                                                           |
-| Name                 | The name of the list as stated by the list maintainer(s) in title case.                                                                                                                                                                                                                                                                        |
-| SubmissionUrl        | The URL to the list's contact form for suggesting new and updated filter rules.                                                                                                                                                                                                                                                                |
-| ViewUrl              | The URL to the list in raw text format. zip files and other formats are acceptable if no text format is available.                                                                                                                                                                                                                             |
+| Property             | Description                                            |
+|----------------------|--------------------------------------------------------|
+| Description          | The list's functionality                               |
+| DescriptionSourceUrl | If the Description was quoted directly, the source URL |
+| DonateUrl            | The list's donation URL                                |
+| EmailAddress         | The list's email address                               |
+| ForumUrl             | The list's forum URL                                   |
+| HomeUrl              | The list's home page URL                               |
+| IssuesUrl            | The list's GitHub Issues URL                           |
+| *Languages           | The list's target languages                            |
+| *Maintainer          | The list's maintainer                                  |
+| Name                 | The list's name (APA Title Case)                       |
+| SubmissionUrl        | The list's submission form URL                         |
+| ViewUrl              | The list's URL                                         |
