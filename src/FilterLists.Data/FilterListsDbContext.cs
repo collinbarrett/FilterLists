@@ -30,6 +30,7 @@ namespace FilterLists.Data
             modelBuilder.ApplyConfiguration(new FilterListLanguageTypeConfiguration());
             modelBuilder.ApplyConfiguration(new FilterListRuleTypeConfiguration());
             modelBuilder.ApplyConfiguration(new FilterListSoftwareTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new ForkTypeConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }
