@@ -9,6 +9,8 @@ export class NavMenu extends React.Component<{}, {}> {
                            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                <span className="sr-only">Toggle navigation</span>
                                <span className="icon-bar"></span>
+                               <span className="icon-bar"></span>
+                               <span className="icon-bar"></span>
                            </button>
                            <Link className="navbar-brand" to={ "/" }>FilterLists.Web</Link>
                        </div>
