@@ -31,6 +31,7 @@ namespace FilterLists.Data
             modelBuilder.ApplyConfiguration(new FilterListRuleTypeConfiguration());
             modelBuilder.ApplyConfiguration(new FilterListSoftwareTypeConfiguration());
             modelBuilder.ApplyConfiguration(new ForkTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new MergeTypeConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }
