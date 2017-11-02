@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
+using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace FilterLists.Api.DependencyInjection.Extensions
@@ -20,13 +21,17 @@ namespace FilterLists.Api.DependencyInjection.Extensions
         private static void AddMvcCustom(this IServiceCollection services)
         {
             services.AddMvc(options =>
-            {
-                options.CacheProfiles.Add("Long-Lived",
-                    new CacheProfile
-                    {
-                        Duration = 86400
-                    });
-            });
+                {
+                    options.CacheProfiles.Add("Long-Lived",
+                        new CacheProfile
+                        {
+                            Duration = 86400
+                        });
+                })
+                .AddJsonOptions(options =>
+                {
+                    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                });
         }
 
         private static void AddSwaggerGenCustom(this IServiceCollection services)
