@@ -9,11 +9,11 @@
     "@types/react-dom": "15.5.1",
     "@types/react-hot-loader": "^3.0.5",
     "@types/react-router": "^4.0.16",
-    "@types/react-router-dom": "4.0.5",
+    "@types/react-router-dom": "^4.2.0",
     "@types/webpack-env": "^1.13.2",
     "aspnet-webpack": "^2.0.1",
     "aspnet-webpack-react": "^3.0.0",
-    "awesome-typescript-loader": "3.2.1",
+    "awesome-typescript-loader": "^3.3.0",
     "bootstrap": "^3.3.7",
     "css-loader": "0.28.4",
     "event-source-polyfill": "0.0.9",
@@ -24,13 +24,13 @@
     "json-loader": "0.5.4",
     "react": "15.6.1",
     "react-dom": "15.6.1",
-    "react-hot-loader": "3.0.0-beta.7",
-    "react-router-dom": "4.1.1",
+    "react-hot-loader": "^3.1.1",
+    "react-router-dom": "^4.2.2",
     "style-loader": "0.18.2",
-    "typescript": "2.4.1",
+    "typescript": "^2.6.1",
     "url-loader": "0.5.9",
     "webpack": "2.5.1",
-    "webpack-hot-middleware": "2.18.2"
+    "webpack-hot-middleware": "^2.20.0"
   },
   "dependencies": {
     "material-ui": "^0.19.4"
