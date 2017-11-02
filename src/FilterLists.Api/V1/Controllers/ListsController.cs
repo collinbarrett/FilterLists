@@ -5,6 +5,7 @@ namespace FilterLists.Api.V1.Controllers
 {
     [ApiVersion("1.0")]
     [Produces("application/json")]
+    [ResponseCache(CacheProfileName = "Long-Lived")]
     public class ListsController : Controller
     {
         private readonly IFilterListService filterListService;
@@ -15,7 +16,6 @@ namespace FilterLists.Api.V1.Controllers
         }
 
         [HttpGet]
-        [ResponseCache(CacheProfileName = "Long-Lived")]
         public IActionResult Get()
         {
             return Json(filterListService.GetAllSummaries());
