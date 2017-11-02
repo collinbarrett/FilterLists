@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
 using Swashbuckle.AspNetCore.Swagger;
@@ -9,12 +10,25 @@ namespace FilterLists.Api.DependencyInjection.Extensions
     {
         public static void AddFilterListsApi(this IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvcCustom();
             services.AddApiVersioning();
-            services.AddSwagger();
+            services.AddResponseCaching();
+            services.AddSwaggerGenCustom();
         }
 
-        private static void AddSwagger(this IServiceCollection services)
+        private static void AddMvcCustom(this IServiceCollection services)
+        {
+            services.AddMvc(options =>
+            {
+                options.CacheProfiles.Add("Long-Lived",
+                    new CacheProfile
+                    {
+                        Duration = 86400
+                    });
+            });
+        }
+
+        private static void AddSwaggerGenCustom(this IServiceCollection services)
         {
             services.AddSwaggerGen(c =>
             {

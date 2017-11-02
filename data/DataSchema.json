@@ -75,6 +75,12 @@
             "$ref": "#/definitions/FilterListSoftware"
           }
         },
+        "LicenseId": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
         "MaintainerId": {
           "type": [
             "integer",
@@ -82,6 +88,12 @@
           ]
         },
         "Name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "SubmissionUrl": {
           "type": [
             "string",
             "null"
@@ -116,8 +128,10 @@
         "FilterListLanguages",
         "FilterListRules",
         "FilterListSoftware",
+        "LicenseId",
         "MaintainerId",
         "Name",
+        "SubmissionUrl",
         "ViewUrl",
         "Id",
         "CreatedDateUtc",

@@ -15,6 +15,7 @@ namespace FilterLists.Api.V1.Controllers
         }
 
         [HttpGet]
+        [ResponseCache(CacheProfileName = "Long-Lived")]
         public IActionResult Get()
         {
             return Json(filterListService.GetAllSummaries());

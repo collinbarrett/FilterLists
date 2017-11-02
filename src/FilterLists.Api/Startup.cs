@@ -29,6 +29,8 @@ namespace FilterLists.Api
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
             });
 
+            app.UseResponseCaching();
+
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
