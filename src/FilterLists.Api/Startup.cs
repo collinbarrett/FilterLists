@@ -28,19 +28,18 @@ namespace FilterLists.Api
             {
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
             });
-
             app.UseResponseCaching();
-
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/v1/swagger.json", "FilterLists API V1");
                 c.RoutePrefix = "docs";
             });
-
             app.UseStaticFiles();
-
-            app.UseMvc(routes => { routes.MapRoute("default", "v{version:apiVersion}/{controller=Default}/{action=Get}/{id?}"); });
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute("default", "v{version:apiVersion}/{controller=Default}/{action=Get}/{id?}");
+            });
         }
     }
 }

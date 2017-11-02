@@ -1,3 +1,4 @@
+using FilterLists.Web.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.Webpack;
@@ -17,7 +18,7 @@ namespace FilterLists.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddFilterListsWeb();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -32,12 +33,9 @@ namespace FilterLists.Web
                 });
             }
             else
-            {
                 app.UseExceptionHandler("/Home/Error");
-            }
-
+            app.UseResponseCaching();
             app.UseStaticFiles();
-
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

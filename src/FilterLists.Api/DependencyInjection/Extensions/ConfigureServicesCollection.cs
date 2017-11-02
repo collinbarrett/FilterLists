@@ -13,6 +13,7 @@ namespace FilterLists.Api.DependencyInjection.Extensions
             services.AddMvcCustom();
             services.AddApiVersioning();
             services.AddResponseCaching();
+            services.AddMemoryCache();
             services.AddSwaggerGenCustom();
         }
 
