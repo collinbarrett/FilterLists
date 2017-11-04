@@ -6,7 +6,6 @@ namespace FilterLists.Data.Entities
     {
         public string DownloadUrl { get; set; }
         public string HomeUrl { get; set; }
-        public ICollection<FilterListSoftware> FilterListSoftware { get; set; }
         public string Name { get; set; }
         public ICollection<SoftwareSyntax> SoftwareSyntaxes { get; set; }
     }
