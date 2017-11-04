@@ -30,6 +30,7 @@ namespace FilterLists.Data
             modelBuilder.ApplyConfiguration(new SyntaxTypeConfiguration());
 
             modelBuilder.ApplyConfiguration(new FilterListLanguageTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new FilterListMaintainerTypeConfiguration());
             modelBuilder.ApplyConfiguration(new FilterListRuleTypeConfiguration());
             modelBuilder.ApplyConfiguration(new ForkTypeConfiguration());
             modelBuilder.ApplyConfiguration(new MergeTypeConfiguration());
