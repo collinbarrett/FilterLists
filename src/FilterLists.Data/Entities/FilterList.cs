@@ -20,6 +20,7 @@ namespace FilterLists.Data.Entities
         public int? MaintainerId { get; set; }
         public string Name { get; set; }
         public string SubmissionUrl { get; set; }
+        public int? SyntaxId { get; set; }
         public string ViewUrl { get; set; }
     }
 }

@@ -33,6 +33,7 @@ The immediate projects are converting the data to an actual web application (rat
 |----------------------|--------------------------------------------------------------------------|
 | Description          | The list's functionality                                                 |
 | DescriptionSourceUrl | The list's Description source URL if quoted directly                     |
+| DiscontinuedDate     | The list's date of discontinuation as expressed by the maintainer        |
 | DonateUrl            | The list's donation URL                                                  |
 | EmailAddress         | The list's email address                                                 |
 | ForumUrl             | The list's forum URL                                                     |
@@ -43,8 +44,9 @@ The immediate projects are converting the data to an actual web application (rat
 | *Maintainer          | The list's maintainer                                                    |
 | Name                 | The list's name (APA Title Case)                                         |
 | SubmissionUrl        | The list's submission form URL                                           |
+| *Syntax              | The list's syntax (uBlock Origin, Adblock Plus, hosts, etc.)             |
 | *UpstreamFilterLists | The list's upstream lists if it is a fork or a merge                     |
-| ViewUrl              | The list's view/download URL (typically .txt file)                     |
+| ViewUrl              | The list's view/download URL (typically .txt file)                       |
 
 ### Maintainers
 
