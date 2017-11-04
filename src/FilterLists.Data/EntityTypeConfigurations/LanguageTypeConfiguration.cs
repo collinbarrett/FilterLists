@@ -9,19 +9,19 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public override void Configure(EntityTypeBuilder<Language> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("languages");
-            entityTypeBuilder.Property(b => b.Iso6391)
+            entityTypeBuilder.Property(x => x.Iso6391)
                 .HasMaxLength(2);
-            entityTypeBuilder.Property(b => b.Iso6392)
+            entityTypeBuilder.Property(x => x.Iso6392)
                 .HasMaxLength(3);
-            entityTypeBuilder.Property(b => b.Iso6392B)
+            entityTypeBuilder.Property(x => x.Iso6392B)
                 .HasMaxLength(3);
-            entityTypeBuilder.Property(b => b.Iso6392T)
+            entityTypeBuilder.Property(x => x.Iso6392T)
                 .HasMaxLength(3);
-            entityTypeBuilder.Property(b => b.Iso6393)
+            entityTypeBuilder.Property(x => x.Iso6393)
                 .HasMaxLength(3);
-            entityTypeBuilder.Property(b => b.LocalName)
+            entityTypeBuilder.Property(x => x.LocalName)
                 .HasMaxLength(126);
-            entityTypeBuilder.Property(b => b.Name)
+            entityTypeBuilder.Property(x => x.Name)
                 .HasMaxLength(126);
             base.Configure(entityTypeBuilder);
         }

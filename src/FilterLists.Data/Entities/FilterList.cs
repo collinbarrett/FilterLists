@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace FilterLists.Data.Entities
 {
@@ -6,6 +7,7 @@ namespace FilterLists.Data.Entities
     {
         public string Description { get; set; }
         public string DescriptionSourceUrl { get; set; }
+        public DateTime? DiscontinuedDate { get; set; }
         public string DonateUrl { get; set; }
         public string EmailAddress { get; set; }
         public string ForumUrl { get; set; }

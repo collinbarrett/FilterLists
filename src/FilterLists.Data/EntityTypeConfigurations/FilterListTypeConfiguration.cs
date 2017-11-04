@@ -9,26 +9,26 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public override void Configure(EntityTypeBuilder<FilterList> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("filterlists");
-            entityTypeBuilder.Property(b => b.Description)
+            entityTypeBuilder.Property(x => x.Description)
                 .HasMaxLength(4096);
-            entityTypeBuilder.Property(b => b.DescriptionSourceUrl)
+            entityTypeBuilder.Property(x => x.DescriptionSourceUrl)
                 .HasMaxLength(2083);
-            entityTypeBuilder.Property(b => b.DonateUrl)
+            entityTypeBuilder.Property(x => x.DonateUrl)
                 .HasMaxLength(2083);
-            entityTypeBuilder.Property(b => b.EmailAddress)
+            entityTypeBuilder.Property(x => x.EmailAddress)
                 .HasMaxLength(126);
-            entityTypeBuilder.Property(b => b.ForumUrl)
+            entityTypeBuilder.Property(x => x.ForumUrl)
                 .HasMaxLength(2083);
-            entityTypeBuilder.Property(b => b.HomeUrl)
+            entityTypeBuilder.Property(x => x.HomeUrl)
                 .HasMaxLength(2083);
-            entityTypeBuilder.Property(b => b.IssuesUrl)
+            entityTypeBuilder.Property(x => x.IssuesUrl)
                 .HasMaxLength(2083);
-            entityTypeBuilder.Property(b => b.Name)
+            entityTypeBuilder.Property(x => x.Name)
                 .IsRequired()
                 .HasMaxLength(126);
-            entityTypeBuilder.Property(b => b.SubmissionUrl)
+            entityTypeBuilder.Property(x => x.SubmissionUrl)
                 .HasMaxLength(2083);
-            entityTypeBuilder.Property(b => b.ViewUrl)
+            entityTypeBuilder.Property(x => x.ViewUrl)
                 .HasMaxLength(2083);
             base.Configure(entityTypeBuilder);
         }

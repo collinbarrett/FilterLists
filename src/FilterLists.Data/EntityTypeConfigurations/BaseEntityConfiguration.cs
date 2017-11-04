@@ -8,10 +8,10 @@ namespace FilterLists.Data.EntityTypeConfigurations
     {
         public virtual void Configure(EntityTypeBuilder<TBase> entityTypeBuilder)
         {
-            entityTypeBuilder.Property(b => b.CreatedDateUtc)
+            entityTypeBuilder.Property(x => x.CreatedDateUtc)
                 .HasColumnType("TIMESTAMP")
                 .ValueGeneratedOnAdd();
-            entityTypeBuilder.Property(b => b.ModifiedDateUtc)
+            entityTypeBuilder.Property(x => x.ModifiedDateUtc)
                 .HasColumnType("TIMESTAMP")
                 .ValueGeneratedOnAddOrUpdate();
         }

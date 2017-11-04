@@ -9,14 +9,14 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public override void Configure(EntityTypeBuilder<Maintainer> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("maintainers");
-            entityTypeBuilder.Property(b => b.EmailAddress)
+            entityTypeBuilder.Property(x => x.EmailAddress)
                 .HasMaxLength(126);
-            entityTypeBuilder.Property(b => b.HomeUrl)
+            entityTypeBuilder.Property(x => x.HomeUrl)
                 .HasMaxLength(2083);
-            entityTypeBuilder.Property(b => b.Name)
+            entityTypeBuilder.Property(x => x.Name)
                 .IsRequired()
                 .HasMaxLength(126);
-            entityTypeBuilder.Property(b => b.TwitterHandle)
+            entityTypeBuilder.Property(x => x.TwitterHandle)
                 .HasMaxLength(126);
             base.Configure(entityTypeBuilder);
         }

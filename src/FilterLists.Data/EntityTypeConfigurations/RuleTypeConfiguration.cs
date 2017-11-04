@@ -9,7 +9,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public override void Configure(EntityTypeBuilder<Rule> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("rules");
-            entityTypeBuilder.Property(b => b.Raw)
+            entityTypeBuilder.Property(x => x.Raw)
                 .HasMaxLength(2083);
             base.Configure(entityTypeBuilder);
         }

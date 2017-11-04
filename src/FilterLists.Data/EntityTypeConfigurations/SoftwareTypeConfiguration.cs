@@ -9,11 +9,11 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public override void Configure(EntityTypeBuilder<Software> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("software");
-            entityTypeBuilder.Property(b => b.DownloadUrl)
+            entityTypeBuilder.Property(x => x.DownloadUrl)
                 .HasMaxLength(2083);
-            entityTypeBuilder.Property(b => b.HomeUrl)
+            entityTypeBuilder.Property(x => x.HomeUrl)
                 .HasMaxLength(2083);
-            entityTypeBuilder.Property(b => b.Name)
+            entityTypeBuilder.Property(x => x.Name)
                 .HasMaxLength(126);
             base.Configure(entityTypeBuilder);
         }
