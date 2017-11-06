@@ -1,6 +1,6 @@
 ﻿namespace FilterLists.Services.Models
 {
-    public class FilterListSummaryDto
+    public class FilterListDetailsDto
     {
         public int Id;
         public string Description { get; set; }

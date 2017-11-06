@@ -18,5 +18,10 @@ namespace FilterLists.Data.Repositories.Implementations
         {
             return filterListsDbContext.FilterLists.AsEnumerable();
         }
+
+        public FilterList Get(int id)
+        {
+            return filterListsDbContext.FilterLists.Single(x => x.Id == id);
+        }
     }
 }

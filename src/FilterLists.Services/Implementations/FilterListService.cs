@@ -21,5 +21,13 @@ namespace FilterLists.Services.Implementations
         {
             return mapper.Map<IEnumerable<FilterListSummaryDto>>(filterListRepository.GetAll());
         }
+
+        public FilterListDetailsDto GetDetails(int id)
+        {
+            var list = filterListRepository.Get(id);
+            var maintainer = list.FilterListMaintainers;
+            //return mapper.Map<FilterListSummaryDto>(filterListRepository.GetBy)
+            return null;
+        }
     }
 }

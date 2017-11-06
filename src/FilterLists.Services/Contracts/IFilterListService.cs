@@ -6,5 +6,6 @@ namespace FilterLists.Services.Contracts
     public interface IFilterListService
     {
         IEnumerable<FilterListSummaryDto> GetAllSummaries();
+        FilterListDetailsDto GetDetails(int id);
     }
 }
