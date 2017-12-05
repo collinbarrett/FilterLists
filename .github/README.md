@@ -41,7 +41,7 @@ The immediate projects are converting the data to an actual web application (rat
 | IssuesUrl            | The list's GitHub Issues URL                                             |
 | *Languages           | The list's target languages                                              |
 | *License             | The list's license (typically [CC](https://creativecommons.org/choose/)) |
-| *Maintainer          | The list's maintainer                                                    |
+| *Maintainers         | The list's maintainers                                                   |
 | Name                 | The list's name (APA Title Case)                                         |
 | SubmissionUrl        | The list's submission form URL                                           |
 | *Syntax              | The list's syntax (uBlock Origin, Adblock Plus, hosts, etc.)             |
