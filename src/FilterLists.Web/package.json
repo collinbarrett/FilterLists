@@ -29,8 +29,8 @@
     "style-loader": "^0.19.0",
     "typescript": "^2.6.1",
     "url-loader": "^0.6.2",
-    "webpack": "^3.8.1",
-    "webpack-hot-middleware": "^2.20.0"
+    "webpack": "^3.10.0",
+    "webpack-hot-middleware": "^2.21.0"
   },
   "dependencies": {
     "material-ui": "^0.19.4"
