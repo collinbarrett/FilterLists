@@ -1,19 +1,24 @@
 import * as React from "react";
 import { RouteComponentProps } from "react-router";
 import "isomorphic-fetch";
-import darkBaseTheme from "material-ui/styles/baseThemes/darkBaseTheme";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import getMuiTheme from "material-ui/styles/getMuiTheme";
 import {
     Table,
+    TableHead,
     TableBody,
     TableRow,
-    TableRowColumn,
+    TableCell,
     } from "material-ui";
 
 interface IFilterListsState {
     filterLists: IFilterList[];
     loading: boolean;
+}
+
+interface IFilterList {
+    id: number;
+    name: string;
+    description: string;
 }
 
 export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsState> {
@@ -35,7 +40,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
             : Home.renderFilterListsTable(this.state.filterLists);
 
         return <div>
-                   <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+                   <MuiThemeProvider>
                        {contents}
                    </MuiThemeProvider>
                </div>;
@@ -43,21 +48,18 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
 
     private static renderFilterListsTable(filterLists: IFilterList[]) {
         return <Table>
+                   <TableHead>
+                       <TableRow>
+                           <TableCell>List</TableCell>
+                       </TableRow>
+                   </TableHead>
                    <TableBody>
                        {filterLists.map(filterList =>
                            <TableRow key={filterList.id}>
-                               <TableRowColumn>
-                                   <h2>{filterList.name}</h2>{filterList.description}
-                               </TableRowColumn>
+                                <TableCell><h2>{filterList.name}</h2>{filterList.description}</TableCell>
                            </TableRow>
                        )}
                    </TableBody>
                </Table>;
     }
-}
-
-interface IFilterList {
-    id: number;
-    name: string;
-    description: string;
 }
