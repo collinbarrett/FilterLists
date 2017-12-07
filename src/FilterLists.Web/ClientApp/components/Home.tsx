@@ -1,14 +1,7 @@
 import * as React from "react";
 import { RouteComponentProps } from "react-router";
 import "isomorphic-fetch";
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import {
-    Table,
-    TableHead,
-    TableBody,
-    TableRow,
-    TableCell,
-    } from "material-ui";
+import { Table } from 'antd';
 
 interface IFilterListsState {
     filterLists: IFilterList[];
@@ -40,26 +33,12 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
             : Home.renderFilterListsTable(this.state.filterLists);
 
         return <div>
-                   <MuiThemeProvider>
                        {contents}
-                   </MuiThemeProvider>
                </div>;
     }
 
     private static renderFilterListsTable(filterLists: IFilterList[]) {
         return <Table>
-                   <TableHead>
-                       <TableRow>
-                           <TableCell>List</TableCell>
-                       </TableRow>
-                   </TableHead>
-                   <TableBody>
-                       {filterLists.map(filterList =>
-                           <TableRow key={filterList.id}>
-                                <TableCell><h2>{filterList.name}</h2>{filterList.description}</TableCell>
-                           </TableRow>
-                       )}
-                   </TableBody>
                </Table>;
     }
 }
