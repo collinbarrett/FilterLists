@@ -1,7 +1,9 @@
 ﻿using FilterLists.Api.DependencyInjection.Extensions;
+using FilterLists.Data;
 using FilterLists.Services.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -40,6 +42,16 @@ namespace FilterLists.Api
             {
                 routes.MapRoute("default", "v{version:apiVersion}/{controller=Default}/{action=Get}/{id?}");
             });
+            MigrateAndSeedDatabase(app);
+        }
+
+        private static void MigrateAndSeedDatabase(IApplicationBuilder app)
+        {
+            using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                serviceScope.ServiceProvider.GetService<FilterListsDbContext>().Database.Migrate();
+                serviceScope.ServiceProvider.GetService<FilterListsDbContext>().EnsureSeeded();
+            }
         }
     }
 }
