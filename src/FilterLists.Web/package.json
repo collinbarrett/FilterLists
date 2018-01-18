@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "devDependencies": {
     "@types/history": "latest",
-    "@types/material-ui": "next",
+    "@types/material-ui": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/react-hot-loader": "latest",
