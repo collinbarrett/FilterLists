@@ -11,15 +11,15 @@ using System;
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    [Migration("20171101113123_add Fork")]
-    partial class addFork
+    [Migration("20180118184938_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
-                .HasAnnotation("ProductVersion", "2.0.0-rtm-26452");
+                .HasAnnotation("ProductVersion", "2.0.1-rtm-125");
 
             modelBuilder.Entity("FilterLists.Data.Entities.FilterList", b =>
                 {
@@ -31,29 +31,29 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Description")
-                        .HasMaxLength(4096);
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("DescriptionSourceUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("DiscontinuedDate");
 
                     b.Property<string>("DonateUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("EmailAddress")
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.Property<string>("ForumUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("HomeUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("IssuesUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<int?>("LicenseId");
-
-                    b.Property<int?>("MaintainerId");
 
                     b.Property<DateTime>("ModifiedDateUtc")
                         .ValueGeneratedOnAddOrUpdate()
@@ -61,19 +61,21 @@ namespace FilterLists.Api.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.Property<string>("SubmissionUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("SyntaxId");
 
                     b.Property<string>("ViewUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
                     b.HasIndex("LicenseId");
 
-                    b.HasIndex("MaintainerId");
+                    b.HasIndex("SyntaxId");
 
                     b.ToTable("filterlists");
                 });
@@ -99,6 +101,27 @@ namespace FilterLists.Api.Migrations
                     b.ToTable("filterlists_languages");
                 });
 
+            modelBuilder.Entity("FilterLists.Data.Entities.FilterListMaintainer", b =>
+                {
+                    b.Property<int>("FilterListId");
+
+                    b.Property<int>("MaintainerId");
+
+                    b.Property<DateTime>("CreatedDateUtc")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
+
+                    b.Property<DateTime>("ModifiedDateUtc")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("TIMESTAMP");
+
+                    b.HasKey("FilterListId", "MaintainerId");
+
+                    b.HasIndex("MaintainerId");
+
+                    b.ToTable("filterlists_maintainers");
+                });
+
             modelBuilder.Entity("FilterLists.Data.Entities.FilterListRule", b =>
                 {
                     b.Property<int>("FilterListId");
@@ -118,27 +141,6 @@ namespace FilterLists.Api.Migrations
                     b.HasIndex("RuleId");
 
                     b.ToTable("filterlists_rules");
-                });
-
-            modelBuilder.Entity("FilterLists.Data.Entities.FilterListSoftware", b =>
-                {
-                    b.Property<int>("FilterListId");
-
-                    b.Property<int>("SoftwareId");
-
-                    b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.HasKey("FilterListId", "SoftwareId");
-
-                    b.HasIndex("SoftwareId");
-
-                    b.ToTable("filterlists_software");
                 });
 
             modelBuilder.Entity("FilterLists.Data.Entities.Fork", b =>
@@ -172,29 +174,29 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Iso6391")
-                        .HasMaxLength(2);
+                        .HasColumnType("NVARCHAR(2)");
 
                     b.Property<string>("Iso6392")
-                        .HasMaxLength(3);
+                        .HasColumnType("NVARCHAR(3)");
 
                     b.Property<string>("Iso6392B")
-                        .HasMaxLength(3);
+                        .HasColumnType("NVARCHAR(3)");
 
                     b.Property<string>("Iso6392T")
-                        .HasMaxLength(3);
+                        .HasColumnType("NVARCHAR(3)");
 
                     b.Property<string>("Iso6393")
-                        .HasMaxLength(3);
+                        .HasColumnType("NVARCHAR(3)");
 
                     b.Property<string>("LocalName")
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.Property<DateTime>("ModifiedDateUtc")
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.HasKey("Id");
 
@@ -211,7 +213,7 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("DescriptionUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
                         .ValueGeneratedOnAddOrUpdate()
@@ -219,7 +221,7 @@ namespace FilterLists.Api.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.Property<bool>("PermissiveAdaptation");
 
@@ -240,10 +242,10 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("EmailAddress")
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.Property<string>("HomeUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
                         .ValueGeneratedOnAddOrUpdate()
@@ -251,14 +253,35 @@ namespace FilterLists.Api.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.Property<string>("TwitterHandle")
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.HasKey("Id");
 
                     b.ToTable("maintainers");
+                });
+
+            modelBuilder.Entity("FilterLists.Data.Entities.Merge", b =>
+                {
+                    b.Property<int>("MergeFilterListId");
+
+                    b.Property<int>("UpstreamFilterListId");
+
+                    b.Property<DateTime>("CreatedDateUtc")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
+
+                    b.Property<DateTime>("ModifiedDateUtc")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("TIMESTAMP");
+
+                    b.HasKey("MergeFilterListId", "UpstreamFilterListId");
+
+                    b.HasIndex("UpstreamFilterListId");
+
+                    b.ToTable("merges");
                 });
 
             modelBuilder.Entity("FilterLists.Data.Entities.Rule", b =>
@@ -275,7 +298,7 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Raw")
-                        .HasMaxLength(2083);
+                        .HasColumnType("NVARCHAR(2083)");
 
                     b.HasKey("Id");
 
@@ -292,21 +315,68 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("DownloadUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("HomeUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(126);
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.HasKey("Id");
 
                     b.ToTable("software");
+                });
+
+            modelBuilder.Entity("FilterLists.Data.Entities.SoftwareSyntax", b =>
+                {
+                    b.Property<int>("SoftwareId");
+
+                    b.Property<int>("SyntaxId");
+
+                    b.Property<DateTime>("CreatedDateUtc")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
+
+                    b.Property<DateTime>("ModifiedDateUtc")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("TIMESTAMP");
+
+                    b.HasKey("SoftwareId", "SyntaxId");
+
+                    b.HasIndex("SyntaxId");
+
+                    b.ToTable("software_syntaxes");
+                });
+
+            modelBuilder.Entity("FilterLists.Data.Entities.Syntax", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("CreatedDateUtc")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
+
+                    b.Property<string>("DefinitionUrl")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("ModifiedDateUtc")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("TIMESTAMP");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR(126)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("syntaxes");
                 });
 
             modelBuilder.Entity("FilterLists.Data.Entities.FilterList", b =>
@@ -315,9 +385,9 @@ namespace FilterLists.Api.Migrations
                         .WithMany("FilterLists")
                         .HasForeignKey("LicenseId");
 
-                    b.HasOne("FilterLists.Data.Entities.Maintainer")
+                    b.HasOne("FilterLists.Data.Entities.Syntax")
                         .WithMany("FilterLists")
-                        .HasForeignKey("MaintainerId");
+                        .HasForeignKey("SyntaxId");
                 });
 
             modelBuilder.Entity("FilterLists.Data.Entities.FilterListLanguage", b =>
@@ -330,6 +400,19 @@ namespace FilterLists.Api.Migrations
                     b.HasOne("FilterLists.Data.Entities.Language", "Language")
                         .WithMany("FilterListLanguages")
                         .HasForeignKey("LanguageId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("FilterLists.Data.Entities.FilterListMaintainer", b =>
+                {
+                    b.HasOne("FilterLists.Data.Entities.FilterList", "FilterList")
+                        .WithMany("FilterListMaintainers")
+                        .HasForeignKey("FilterListId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("FilterLists.Data.Entities.Maintainer", "Maintainer")
+                        .WithMany("FilterListMaintainers")
+                        .HasForeignKey("MaintainerId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
@@ -346,19 +429,6 @@ namespace FilterLists.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.FilterListSoftware", b =>
-                {
-                    b.HasOne("FilterLists.Data.Entities.FilterList", "FilterList")
-                        .WithMany("FilterListSoftware")
-                        .HasForeignKey("FilterListId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("FilterLists.Data.Entities.Software", "Software")
-                        .WithMany("FilterListSoftware")
-                        .HasForeignKey("SoftwareId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
             modelBuilder.Entity("FilterLists.Data.Entities.Fork", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.FilterList", "ForkFilterList")
@@ -369,6 +439,32 @@ namespace FilterLists.Api.Migrations
                     b.HasOne("FilterLists.Data.Entities.FilterList", "UpstreamFilterList")
                         .WithMany()
                         .HasForeignKey("UpstreamFilterListId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("FilterLists.Data.Entities.Merge", b =>
+                {
+                    b.HasOne("FilterLists.Data.Entities.FilterList", "MergeFilterList")
+                        .WithMany()
+                        .HasForeignKey("MergeFilterListId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("FilterLists.Data.Entities.FilterList", "UpstreamFilterList")
+                        .WithMany()
+                        .HasForeignKey("UpstreamFilterListId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("FilterLists.Data.Entities.SoftwareSyntax", b =>
+                {
+                    b.HasOne("FilterLists.Data.Entities.Software", "Software")
+                        .WithMany("SoftwareSyntaxes")
+                        .HasForeignKey("SoftwareId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("FilterLists.Data.Entities.Syntax", "Syntax")
+                        .WithMany("SoftwareSyntaxes")
+                        .HasForeignKey("SyntaxId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

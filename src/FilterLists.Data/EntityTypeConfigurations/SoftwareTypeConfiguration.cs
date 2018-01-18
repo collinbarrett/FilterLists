@@ -14,9 +14,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.HomeUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)
-                .IsUnicode()
-                .IsRequired()
-                .HasMaxLength(126);
+                .HasColumnType("NVARCHAR(126)")
+                .IsRequired();
             base.Configure(entityTypeBuilder);
         }
     }

@@ -10,17 +10,14 @@ namespace FilterLists.Data.EntityTypeConfigurations
         {
             entityTypeBuilder.ToTable("maintainers");
             entityTypeBuilder.Property(x => x.EmailAddress)
-                .IsUnicode()
-                .HasMaxLength(126);
+                .HasColumnType("NVARCHAR(126)");
             entityTypeBuilder.Property(x => x.HomeUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)
-                .IsUnicode()
-                .IsRequired()
-                .HasMaxLength(126);
+                .HasColumnType("NVARCHAR(126)")
+                .IsRequired();
             entityTypeBuilder.Property(x => x.TwitterHandle)
-                .IsUnicode()
-                .HasMaxLength(126);
+                .HasColumnType("NVARCHAR(126)");
             base.Configure(entityTypeBuilder);
         }
     }

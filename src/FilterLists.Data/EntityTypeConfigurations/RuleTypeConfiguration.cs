@@ -10,8 +10,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
         {
             entityTypeBuilder.ToTable("rules");
             entityTypeBuilder.Property(x => x.Raw)
-                .IsUnicode()
-                .HasMaxLength(2083);
+                .HasColumnType("NVARCHAR(2083)");
             base.Configure(entityTypeBuilder);
         }
     }
