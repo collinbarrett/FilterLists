@@ -10,8 +10,9 @@ namespace FilterLists.Data.EntityTypeConfigurations
         {
             entityTypeBuilder.ToTable("licenses");
             entityTypeBuilder.Property(x => x.DescriptionUrl)
-                .HasMaxLength(2083);
+                .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)
+                .IsUnicode()
                 .IsRequired()
                 .HasMaxLength(126);
             base.Configure(entityTypeBuilder);
