@@ -8,8 +8,8 @@ interface IFilterListsState {
 }
 
 export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsState> {
-    constructor() {
-        super();
+    constructor(props: any) {
+        super(props);
         this.state = { filterLists: [], loading: true };
 
         fetch("https://api.filterlists.com/v1/lists")
