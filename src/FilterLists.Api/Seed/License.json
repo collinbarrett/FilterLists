@@ -1,0 +1,79 @@
+﻿[
+  {
+    "Id": 1,
+    "DescriptionUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "Name": "CC BY-NC-ND 4.0",
+    "PermissiveAdaptation": 0,
+    "PermissiveCommercial": 0
+  },
+  {
+    "Id": 2,
+    "DescriptionUrl": "https://opensource.org/licenses/MIT",
+    "Name": "The MIT License",
+    "PermissiveAdaptation": 1,
+    "PermissiveCommercial": 1
+  },
+  {
+    "Id": 3,
+    "DescriptionUrl": null,
+    "Name": "Restricted (General)",
+    "PermissiveAdaptation": 0,
+    "PermissiveCommercial": 0
+  },
+  {
+    "Id": 4,
+    "DescriptionUrl": "https://www.gnu.org/licenses/gpl-3.0.en.html",
+    "Name": "GPLv3",
+    "PermissiveAdaptation": 1,
+    "PermissiveCommercial": 1
+  },
+  {
+    "Id": 5,
+    "DescriptionUrl": "https://en.wikipedia.org/wiki/All_rights_reserved",
+    "Name": "All Rights Reserved (Default)",
+    "PermissiveAdaptation": 0,
+    "PermissiveCommercial": 0
+  },
+  {
+    "Id": 6,
+    "DescriptionUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "Name": "CC BY-NC-SA 3.0",
+    "PermissiveAdaptation": 1,
+    "PermissiveCommercial": 0
+  },
+  {
+    "Id": 7,
+    "DescriptionUrl": null,
+    "Name": "Permissive (General)",
+    "PermissiveAdaptation": 1,
+    "PermissiveCommercial": 1
+  },
+  {
+    "Id": 8,
+    "DescriptionUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "Name": "CC BY-SA 4.0",
+    "PermissiveAdaptation": 1,
+    "PermissiveCommercial": 1
+  },
+  {
+    "Id": 9,
+    "DescriptionUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "Name": "CC BY-NC-SA 4.0",
+    "PermissiveAdaptation": 1,
+    "PermissiveCommercial": 0
+  },
+  {
+    "Id": 10,
+    "DescriptionUrl": "https://opensource.org/licenses/BSD-3-Clause",
+    "Name": "BSD-3-Clause",
+    "PermissiveAdaptation": 1,
+    "PermissiveCommercial": 1
+  },
+  {
+    "Id": 11,
+    "DescriptionUrl": "https://unlicense.org/",
+    "Name": "The Unlicense",
+    "PermissiveAdaptation": 1,
+    "PermissiveCommercial": 1
+  }
+]
