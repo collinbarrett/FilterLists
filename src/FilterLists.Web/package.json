@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "devDependencies": {
     "@types/history": "latest",
+    "@types/material-ui": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/react-hot-loader": "latest",
@@ -32,6 +33,6 @@
     "webpack-hot-middleware": "latest"
   },
   "dependencies": {
-    "antd": "latest"
+    "material-ui": "next"
   }
 }
