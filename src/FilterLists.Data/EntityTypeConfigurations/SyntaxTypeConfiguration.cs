@@ -10,8 +10,9 @@ namespace FilterLists.Data.EntityTypeConfigurations
         {
             entityTypeBuilder.ToTable("syntaxes");
             entityTypeBuilder.Property(x => x.DefinitionUrl)
-                .HasMaxLength(2083);
+                .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)
+                .IsUnicode()
                 .IsRequired()
                 .HasMaxLength(126);
             base.Configure(entityTypeBuilder);
