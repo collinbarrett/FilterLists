@@ -32,9 +32,8 @@
     }
 
     .main-nav .navbar {
-        -ms-border-radius: 0;
-        border-radius: 0;
-        border-width: 0;
+        border-radius: 0px;
+        border-width: 0px;
         height: 100%;
     }
 
@@ -42,7 +41,7 @@
 
     .main-nav .navbar-collapse {
         border-top: 1px solid #444;
-        padding: 0;
+        padding: 0px;
     }
 
     .main-nav .navbar ul { float: none; }
@@ -54,7 +53,6 @@
     }
 
     .main-nav .navbar li a {
-        -ms-border-radius: 4px;
         border-radius: 4px;
         padding: 10px 16px;
     }
