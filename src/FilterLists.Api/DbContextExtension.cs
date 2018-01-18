@@ -29,15 +29,16 @@ namespace FilterLists.Api
 
         public static void EnsureSeeded(this FilterListsDbContext context)
         {
-            SeedFilterLists(context);
+            if (context.FilterLists.Any()) return;
+            Seed<License>(context);
+            Seed<FilterList>(context);
         }
 
-        private static void SeedFilterLists(FilterListsDbContext context)
+        private static void Seed<T>(DbContext context)
         {
-            if (context.FilterLists.Any()) return;
-            var types = JsonConvert.DeserializeObject<List<FilterList>>(
-                File.ReadAllText(SeedDirectory + Path.DirectorySeparatorChar + "FilterLists.json"));
-            context.AddRange(types);
+            var rows = JsonConvert.DeserializeObject<List<T>>(
+                File.ReadAllText(SeedDirectory + Path.DirectorySeparatorChar + typeof(T) + ".json"));
+            context.AddRange(rows);
             context.SaveChanges();
         }
     }
