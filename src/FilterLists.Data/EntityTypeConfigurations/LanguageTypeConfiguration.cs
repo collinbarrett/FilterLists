@@ -10,26 +10,19 @@ namespace FilterLists.Data.EntityTypeConfigurations
         {
             entityTypeBuilder.ToTable("languages");
             entityTypeBuilder.Property(x => x.Iso6391)
-                .IsUnicode()
-                .HasMaxLength(2);
+                .HasColumnType("NVARCHAR(2)");
             entityTypeBuilder.Property(x => x.Iso6392)
-                .IsUnicode()
-                .HasMaxLength(3);
+                .HasColumnType("NVARCHAR(3)");
             entityTypeBuilder.Property(x => x.Iso6392B)
-                .IsUnicode()
-                .HasMaxLength(3);
+                .HasColumnType("NVARCHAR(3)");
             entityTypeBuilder.Property(x => x.Iso6392T)
-                .IsUnicode()
-                .HasMaxLength(3);
+                .HasColumnType("NVARCHAR(3)");
             entityTypeBuilder.Property(x => x.Iso6393)
-                .IsUnicode()
-                .HasMaxLength(3);
+                .HasColumnType("NVARCHAR(3)");
             entityTypeBuilder.Property(x => x.LocalName)
-                .IsUnicode()
-                .HasMaxLength(126);
+                .HasColumnType("NVARCHAR(126)");
             entityTypeBuilder.Property(x => x.Name)
-                .IsUnicode()
-                .HasMaxLength(126);
+                .HasColumnType("NVARCHAR(126)");
             base.Configure(entityTypeBuilder);
         }
     }

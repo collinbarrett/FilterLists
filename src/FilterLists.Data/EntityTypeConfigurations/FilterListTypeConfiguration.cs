@@ -16,8 +16,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.DonateUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.EmailAddress)
-                .IsUnicode()
-                .HasMaxLength(126);
+                .HasColumnType("NVARCHAR(126)");
             entityTypeBuilder.Property(x => x.ForumUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.HomeUrl)
@@ -25,9 +24,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.IssuesUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)
-                .IsUnicode()
-                .IsRequired()
-                .HasMaxLength(126);
+                .HasColumnType("NVARCHAR(126)")
+                .IsRequired();
             entityTypeBuilder.Property(x => x.SubmissionUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.ViewUrl)

@@ -18,7 +18,7 @@ namespace FilterLists.Api.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
-                .HasAnnotation("ProductVersion", "2.0.0-rtm-26452");
+                .HasAnnotation("ProductVersion", "2.0.1-rtm-125");
 
             modelBuilder.Entity("FilterLists.Data.Entities.FilterList", b =>
                 {
@@ -30,27 +30,27 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Description")
-                        .HasMaxLength(4096);
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("DescriptionSourceUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime?>("DiscontinuedDate");
 
                     b.Property<string>("DonateUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("EmailAddress")
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.Property<string>("ForumUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("HomeUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("IssuesUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<int?>("LicenseId");
 
@@ -60,15 +60,15 @@ namespace FilterLists.Api.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.Property<string>("SubmissionUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<int?>("SyntaxId");
 
                     b.Property<string>("ViewUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -173,29 +173,29 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Iso6391")
-                        .HasMaxLength(2);
+                        .HasColumnType("NVARCHAR(2)");
 
                     b.Property<string>("Iso6392")
-                        .HasMaxLength(3);
+                        .HasColumnType("NVARCHAR(3)");
 
                     b.Property<string>("Iso6392B")
-                        .HasMaxLength(3);
+                        .HasColumnType("NVARCHAR(3)");
 
                     b.Property<string>("Iso6392T")
-                        .HasMaxLength(3);
+                        .HasColumnType("NVARCHAR(3)");
 
                     b.Property<string>("Iso6393")
-                        .HasMaxLength(3);
+                        .HasColumnType("NVARCHAR(3)");
 
                     b.Property<string>("LocalName")
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.Property<DateTime>("ModifiedDateUtc")
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.HasKey("Id");
 
@@ -212,7 +212,7 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("DescriptionUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
                         .ValueGeneratedOnAddOrUpdate()
@@ -220,7 +220,7 @@ namespace FilterLists.Api.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.Property<bool>("PermissiveAdaptation");
 
@@ -241,10 +241,10 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("EmailAddress")
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.Property<string>("HomeUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
                         .ValueGeneratedOnAddOrUpdate()
@@ -252,10 +252,10 @@ namespace FilterLists.Api.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.Property<string>("TwitterHandle")
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.HasKey("Id");
 
@@ -297,7 +297,7 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Raw")
-                        .HasMaxLength(2083);
+                        .HasColumnType("NVARCHAR(2083)");
 
                     b.HasKey("Id");
 
@@ -314,17 +314,18 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("DownloadUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("HomeUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(126);
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.HasKey("Id");
 
@@ -362,7 +363,7 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("DefinitionUrl")
-                        .HasMaxLength(2083);
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
                         .ValueGeneratedOnAddOrUpdate()
@@ -370,7 +371,7 @@ namespace FilterLists.Api.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(126);
+                        .HasColumnType("NVARCHAR(126)");
 
                     b.HasKey("Id");
 
