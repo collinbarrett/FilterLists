@@ -1,0 +1,163 @@
+﻿[
+  {
+    "Id": 2,
+    "HomeUrl": null,
+    "Name": "AppliliZ",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 3,
+    "HomeUrl": "https://bradconte.com/",
+    "Name": "Brad Conte",
+    "TwitterHandle": "bradconte",
+    "EmailAddress": null
+  },
+  {
+    "Id": 4,
+    "HomeUrl": "https://forum.xda-developers.com/member.php?u=4877037",
+    "Name": "BSDgeek_Jake",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 5,
+    "HomeUrl": "https://www.michaeltrimm.com/",
+    "Name": "Michael Trimm",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 6,
+    "HomeUrl": "https://eyeo.com/",
+    "Name": "eyeo GmbH",
+    "TwitterHandle": "eyeo",
+    "EmailAddress": "info@eyeo.com"
+  },
+  {
+    "Id": 7,
+    "HomeUrl": "https://easylist.to/",
+    "Name": "The EasyList Authors",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 8,
+    "HomeUrl": "https://github.com/mayve",
+    "Name": "mayve",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 9,
+    "HomeUrl": "http://joxeankoret.com/",
+    "Name": "Joxean Koret",
+    "TwitterHandle": null,
+    "EmailAddress": "admin@oxeankoret.com"
+  },
+  {
+    "Id": 10,
+    "HomeUrl": "https://www.malwaredomainlist.com/",
+    "Name": "Malware Domain List Community",
+    "TwitterHandle": "_MDL_",
+    "EmailAddress": null
+  },
+  {
+    "Id": 11,
+    "HomeUrl": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=542",
+    "Name": "Lian",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 12,
+    "HomeUrl": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=2266",
+    "Name": "Crits",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 13,
+    "HomeUrl": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=1260",
+    "Name": "smed79",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 14,
+    "HomeUrl": "https://www.fanboy.co.nz/",
+    "Name": "fanboy",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 15,
+    "HomeUrl": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=333",
+    "Name": "MonztA",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 16,
+    "HomeUrl": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=1488",
+    "Name": "Famlam",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 17,
+    "HomeUrl": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=1400",
+    "Name": "Khrin",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 18,
+    "HomeUrl": "https://github.com/SlowMemory",
+    "Name": "SlowMemory",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 19,
+    "HomeUrl": "https://www.blogger.com/profile/09662737599549871224",
+    "Name": "MVPS HOSTS Maintainer",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 20,
+    "HomeUrl": "https://github.com/taylr",
+    "Name": "Matt Taylor",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 21,
+    "HomeUrl": "https://github.com/hoshsadiq/adblock-nocoin-list",
+    "Name": "Hosh",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 22,
+    "HomeUrl": "https://github.com/DandelionSprout",
+    "Name": "Imre Kristoffer Eilertsen",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  },
+  {
+    "Id": 23,
+    "HomeUrl": "https://abuse.ch/",
+    "Name": "abuse.ch",
+    "TwitterHandle": "abuse_ch",
+    "EmailAddress": "contactme@abuse.ch"
+  },
+  {
+    "Id": 24,
+    "HomeUrl": "https://github.com/metaphoricgiraffe",
+    "Name": "metaphoricgiraffe",
+    "TwitterHandle": null,
+    "EmailAddress": null
+  }
+]
