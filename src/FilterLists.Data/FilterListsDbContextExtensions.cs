@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using FilterLists.Data.Entities;
+using Humanizer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
@@ -25,7 +26,9 @@ namespace FilterLists.Data
         public static void EnsureSeeded(this FilterListsDbContext context)
         {
             SeedEntities(context);
+            //InsertOnDuplicateKeyUpdateEntities(context);
             SeedJunctions(context);
+            //TODO: determine if InsertOnDuplicateKeyUpdateEntities() will work for junctions
         }
 
         private static void SeedEntities(DbContext context)
@@ -58,55 +61,71 @@ namespace FilterLists.Data
         private static List<TEntity> GetSeedRows<TEntity>()
         {
             return JsonConvert.DeserializeObject<List<TEntity>>(
-                File.ReadAllText(SeedDirectory + Path.DirectorySeparatorChar + typeof(TEntity).Name + @".json"));
+                File.ReadAllText(SeedDirectory + Path.DirectorySeparatorChar + typeof(TEntity).Name + ".json"));
+        }
+
+        private static void InsertOnDuplicateKeyUpdateEntities(DbContext context)
+        {
+            InsertOnDuplicateKeyUpdate<Language>(context);
+            InsertOnDuplicateKeyUpdate<License>(context);
+            InsertOnDuplicateKeyUpdate<Maintainer>(context);
+            InsertOnDuplicateKeyUpdate<Software>(context);
+            InsertOnDuplicateKeyUpdate<Syntax>(context);
+            InsertOnDuplicateKeyUpdate<FilterList>(context);
         }
 
         private static void InsertOnDuplicateKeyUpdate<TEntity>(DbContext dbContext) where TEntity : class
         {
-            var tableName = GetTableName<TEntity>();
             var columnProperties = GetColumnPropertiesLessBaseEntityTimestamps<TEntity>();
+            var tableName = GetTableName<TEntity>();
             var columns = string.Join(", ", columnProperties.Select(x => x.Name));
-
-            var rows = GetSeedRows<TEntity>();
-
-            //TODO: create values query parameter string
-            //format like:
-            //('Helen', 24),
-            //('Katrina', 21)
-            var values = "";
-            foreach (var row in rows)
-            {
-                var rowValues = "(";
-                foreach (var property in columnProperties)
-                {
-                }
-
-                rowValues += ")";
-                values = values == "" ? rowValues : values + ", " + rowValues;
-            }
-
-            //TODO: create updates query parameter string
-            //format like:
-            //name = VALUES(name),
-            //age = VALUES(age)
-            var updates = "";
-
-            dbContext.Set<TEntity>().FromSql(@"INSERT INTO {0} ({1}) VALUES {2} ON DUPLICATE KEY UPDATE {3}", tableName,
-                columns, values, updates);
+            var values = CreateValues<TEntity>(columnProperties);
+            var updates = CreateUpdates(columnProperties);
+            var rawSqlString = "INSERT INTO " + tableName + " (" + columns + ") VALUES " + values +
+                               " ON DUPLICATE KEY UPDATE " + updates;
+            dbContext.Set<TEntity>().FromSql(rawSqlString);
             dbContext.SaveChanges();
         }
 
-        private static string GetTableName<TEntity>() where TEntity : class
+        private static string GetTableName<TEntity>()
         {
-            //TODO: handle atypical plural forms (like 'syntaxes')
-            return typeof(TEntity).Name.ToLower() + "s";
+            return typeof(TEntity).Name.Pluralize().ToLower();
         }
 
-        private static List<PropertyInfo> GetColumnPropertiesLessBaseEntityTimestamps<TEntity>() where TEntity : class
+        private static List<PropertyInfo> GetColumnPropertiesLessBaseEntityTimestamps<TEntity>()
         {
             return typeof(TEntity).GetProperties().Where(x =>
                 x.PropertyType.Namespace != "System.Collections.Generic" &&
                 !new List<string> {"CreatedDateUtc", "ModifiedDateUtc"}.Contains(x.Name)).ToList();
+        }
+
+        private static string CreateValues<TEntity>(IReadOnlyCollection<PropertyInfo> columnProperties)
+        {
+            return GetSeedRows<TEntity>().Select(row => CreateRowValues(columnProperties, row)).Aggregate("",
+                (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
+        }
+
+        private static string CreateRowValues<TEntity>(IEnumerable<PropertyInfo> columnProperties, TEntity row)
+        {
+            return (from property in columnProperties
+                       let value = row.GetType().GetProperty(property.Name).GetValue(row)
+                       select WrapStringPropertyValueInSingleQuotes(property, value)).Aggregate("",
+                       (current, value) => current == "" ? "(" + value : current + ", " + value) + ")";
+        }
+
+        private static object WrapStringPropertyValueInSingleQuotes(PropertyInfo property, object value)
+        {
+            if (property.PropertyType == typeof(string))
+                value = "'" + value + "'";
+            return value;
+        }
+
+        private static string CreateUpdates(IEnumerable<PropertyInfo> columnProperties)
+        {
+            //TODO: filter keys out
+            return columnProperties.Select(property => property.Name).Aggregate("", (current, column) => current == ""
+                ? column + " = VALUES(" + column + ")"
+                : current + ", " + column + " = VALUES(" + column + ")");
         }
     }
 }
