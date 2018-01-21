@@ -15,39 +15,39 @@ namespace FilterLists.Data
     {
         private const string SeedDirectory = "Seed";
 
-        public static bool AllMigrationsApplied(this FilterListsDbContext context)
+        public static bool AllMigrationsApplied(this FilterListsDbContext filterListsDbContext)
         {
-            var appliedMigrationIds = context.GetService<IHistoryRepository>().GetAppliedMigrations()
+            var appliedMigrationIds = filterListsDbContext.GetService<IHistoryRepository>().GetAppliedMigrations()
                 .Select(m => m.MigrationId);
-            var allMigrationKeys = context.GetService<IMigrationsAssembly>().Migrations.Select(m => m.Key);
+            var allMigrationKeys = filterListsDbContext.GetService<IMigrationsAssembly>().Migrations.Select(m => m.Key);
             return !allMigrationKeys.Except(appliedMigrationIds).Any();
         }
 
-        public static void EnsureSeeded(this FilterListsDbContext context)
+        public static void EnsureSeeded(this FilterListsDbContext filterListsDbContext)
         {
-            SeedEntities(context);
-            //InsertOnDuplicateKeyUpdateEntities(context);
-            SeedJunctions(context);
+            SeedEntities(filterListsDbContext);
+            //InsertOnDuplicateKeyUpdateEntities(filterListsDbContext);
+            SeedJunctions(filterListsDbContext);
             //TODO: determine if InsertOnDuplicateKeyUpdate() will work for junctions
         }
 
-        private static void SeedEntities(DbContext context)
+        private static void SeedEntities(DbContext dbContext)
         {
-            SeedIfEmpty<Language>(context);
-            SeedIfEmpty<License>(context);
-            SeedIfEmpty<Maintainer>(context);
-            SeedIfEmpty<Software>(context);
-            SeedIfEmpty<Syntax>(context);
-            SeedIfEmpty<FilterList>(context);
+            SeedIfEmpty<Language>(dbContext);
+            SeedIfEmpty<License>(dbContext);
+            SeedIfEmpty<Maintainer>(dbContext);
+            SeedIfEmpty<Software>(dbContext);
+            SeedIfEmpty<Syntax>(dbContext);
+            SeedIfEmpty<FilterList>(dbContext);
         }
 
-        private static void SeedJunctions(DbContext context)
+        private static void SeedJunctions(DbContext dbContext)
         {
-            SeedIfEmpty<FilterListLanguage>(context);
-            SeedIfEmpty<FilterListMaintainer>(context);
-            SeedIfEmpty<Fork>(context);
-            SeedIfEmpty<Merge>(context);
-            SeedIfEmpty<SoftwareSyntax>(context);
+            SeedIfEmpty<FilterListLanguage>(dbContext);
+            SeedIfEmpty<FilterListMaintainer>(dbContext);
+            SeedIfEmpty<Fork>(dbContext);
+            SeedIfEmpty<Merge>(dbContext);
+            SeedIfEmpty<SoftwareSyntax>(dbContext);
         }
 
         private static void SeedIfEmpty<TEntity>(DbContext dbContext) where TEntity : class
@@ -64,14 +64,14 @@ namespace FilterLists.Data
                 File.ReadAllText(SeedDirectory + Path.DirectorySeparatorChar + typeof(TEntityType).Name + ".json"));
         }
 
-        private static void InsertOnDuplicateKeyUpdateEntities(DbContext context)
+        private static void InsertOnDuplicateKeyUpdateEntities(DbContext dbContext)
         {
-            InsertOnDuplicateKeyUpdate<Language>(context);
-            InsertOnDuplicateKeyUpdate<License>(context);
-            InsertOnDuplicateKeyUpdate<Maintainer>(context);
-            InsertOnDuplicateKeyUpdate<Software>(context);
-            InsertOnDuplicateKeyUpdate<Syntax>(context);
-            InsertOnDuplicateKeyUpdate<FilterList>(context);
+            InsertOnDuplicateKeyUpdate<Language>(dbContext);
+            InsertOnDuplicateKeyUpdate<License>(dbContext);
+            InsertOnDuplicateKeyUpdate<Maintainer>(dbContext);
+            InsertOnDuplicateKeyUpdate<Software>(dbContext);
+            InsertOnDuplicateKeyUpdate<Syntax>(dbContext);
+            InsertOnDuplicateKeyUpdate<FilterList>(dbContext);
         }
 
         private static void InsertOnDuplicateKeyUpdate<TEntityType>(DbContext dbContext) where TEntityType : class
@@ -93,9 +93,9 @@ namespace FilterLists.Data
                 .Where(x => x.ClrType != typeof(DateTime) || x.ValueGenerated == ValueGenerated.Never).ToList();
         }
 
-        private static string CreateValues<TEntityType>(IReadOnlyCollection<IProperty> columnProperties)
+        private static string CreateValues<TEntityType>(IReadOnlyCollection<IProperty> properties)
         {
-            return GetSeedRows<TEntityType>().Select(row => CreateRowValues(columnProperties, row)).Aggregate("",
+            return GetSeedRows<TEntityType>().Select(row => CreateRowValues(properties, row)).Aggregate("",
                 (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
         }
 
