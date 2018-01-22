@@ -23,13 +23,9 @@ namespace FilterLists.Data
             return !allMigrationKeys.Except(appliedMigrationIds).Any();
         }
 
+        //TODO: consider handling deleted entities on seed
+        //TODO: read entities from model and iterate over
         public static void SeedOrUpdate(this FilterListsDbContext dbContext)
-        {
-            PerformEntityInsertOnDuplicateKeyUpdates(dbContext);
-            //PerformEntityInserts(dbContext);
-        }
-
-        private static void PerformEntityInsertOnDuplicateKeyUpdates(DbContext dbContext)
         {
             dbContext.InsertOnDuplicateKeyUpdate<Language>();
             dbContext.InsertOnDuplicateKeyUpdate<License>();
@@ -37,17 +33,14 @@ namespace FilterLists.Data
             dbContext.InsertOnDuplicateKeyUpdate<Software>();
             dbContext.InsertOnDuplicateKeyUpdate<Syntax>();
             dbContext.InsertOnDuplicateKeyUpdate<FilterList>();
+            dbContext.InsertOnDuplicateKeyUpdate<FilterListLanguage>();
+            dbContext.InsertOnDuplicateKeyUpdate<FilterListMaintainer>();
+            dbContext.InsertOnDuplicateKeyUpdate<Fork>();
+            dbContext.InsertOnDuplicateKeyUpdate<Merge>();
+            dbContext.InsertOnDuplicateKeyUpdate<SoftwareSyntax>();
         }
 
-        private static void PerformEntityInserts(DbContext dbContext)
-        {
-            dbContext.Insert<FilterListLanguage>();
-            dbContext.Insert<FilterListMaintainer>();
-            dbContext.Insert<Fork>();
-            dbContext.Insert<Merge>();
-            dbContext.Insert<SoftwareSyntax>();
-        }
-
+        //TODO: improve raw SQL against injection attacks
         private static void InsertOnDuplicateKeyUpdate<TEntityType>(this DbContext dbContext) where TEntityType : class
         {
             var entityType = dbContext.Model.FindEntityType(typeof(TEntityType));
@@ -100,20 +93,22 @@ namespace FilterLists.Data
             return value;
         }
 
-        private static string CreateUpdates(IEnumerable<IProperty> properties)
+        private static string CreateUpdates(IReadOnlyCollection<IProperty> properties)
         {
-            return (from property in properties
+            var update =
+            (from property in properties
                 where !property.IsPrimaryKey()
                 select property.Name + " = VALUES(" + property.Name + ")").Aggregate("",
                 (updates, columnUpdates) => updates == "" ? columnUpdates : updates + ", " + columnUpdates);
+            if (update == "") update = GetUpdateUnchangedColumnHack(properties);
+            return update;
         }
 
-        private static void Insert<TEntityType>(this DbContext dbContext) where TEntityType : class
+        //TODO: eliminate wasted IO updating unchanged column (https://stackoverflow.com/a/4596409/2343739)
+        private static string GetUpdateUnchangedColumnHack(IEnumerable<IProperty> properties)
         {
-            var rows = GetSeedRows<TEntityType>();
-            //TODO: filter out pre-existing records
-            dbContext.Set<TEntityType>().AddRange(rows);
-            dbContext.SaveChanges();
+            var firstId = properties.First(x => x.IsPrimaryKey()).Name;
+            return firstId + " = VALUES(" + firstId + ")";
         }
     }
 }
