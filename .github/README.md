@@ -17,7 +17,7 @@ FilterLists is the independent and comprehensive directory of all public filter 
 
 ## Submitting or Updating Lists
 
-To suggest a new list or update the information of an existing list, create a PR against [Seed](https://github.com/collinbarrett/FilterLists/tree/master/src/FilterLists.Api/Seed) or open a new [Issue](https://github.com/collinbarrett/FilterLists/issues). Provide all of the information in the Properties section below that is available.
+To suggest a new list or update the information of an existing list, create a PR against [data](https://github.com/collinbarrett/FilterLists/tree/master/data) or open a new [Issue](https://github.com/collinbarrett/FilterLists/issues). Provide all of the information in the Properties section below that is available.
 
 ## Development Notice (Updated November 1, 2017)
 FilterLists improvements are slow and tend to be in spurts. I care about this project as both a resource for the community and a learning tool for me. However, my day job comes first which often results in little to no work on the project at times. I happily welcome anyone that wants to contribute.
