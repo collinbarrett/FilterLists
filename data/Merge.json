@@ -1,0 +1,94 @@
+﻿[
+  {
+    "MergeFilterListId": 11,
+    "UpstreamFilterListId": 12
+  },
+  {
+    "MergeFilterListId": 13,
+    "UpstreamFilterListId": 12
+  },
+  {
+    "MergeFilterListId": 13,
+    "UpstreamFilterListId": 14
+  },
+  {
+    "MergeFilterListId": 21,
+    "UpstreamFilterListId": 23
+  },
+  {
+    "MergeFilterListId": 22,
+    "UpstreamFilterListId": 24
+  },
+  {
+    "MergeFilterListId": 120,
+    "UpstreamFilterListId": 25
+  },
+  {
+    "MergeFilterListId": 22,
+    "UpstreamFilterListId": 26
+  },
+  {
+    "MergeFilterListId": 22,
+    "UpstreamFilterListId": 37
+  },
+  {
+    "MergeFilterListId": 21,
+    "UpstreamFilterListId": 75
+  },
+  {
+    "MergeFilterListId": 120,
+    "UpstreamFilterListId": 76
+  },
+  {
+    "MergeFilterListId": 22,
+    "UpstreamFilterListId": 77
+  },
+  {
+    "MergeFilterListId": 21,
+    "UpstreamFilterListId": 121
+  },
+  {
+    "MergeFilterListId": 22,
+    "UpstreamFilterListId": 122
+  },
+  {
+    "MergeFilterListId": 21,
+    "UpstreamFilterListId": 123
+  },
+  {
+    "MergeFilterListId": 22,
+    "UpstreamFilterListId": 124
+  },
+  {
+    "MergeFilterListId": 21,
+    "UpstreamFilterListId": 125
+  },
+  {
+    "MergeFilterListId": 22,
+    "UpstreamFilterListId": 126
+  },
+  {
+    "MergeFilterListId": 120,
+    "UpstreamFilterListId": 127
+  },
+  {
+    "MergeFilterListId": 120,
+    "UpstreamFilterListId": 128
+  },
+  {
+    "MergeFilterListId": 22,
+    "UpstreamFilterListId": 129
+  },
+  {
+    "MergeFilterListId": 21,
+    "UpstreamFilterListId": 130
+  },
+  {
+    "MergeFilterListId": 11,
+    "UpstreamFilterListId": 301
+  },
+  {
+    "MergeFilterListId": 13,
+    "UpstreamFilterListId": 301
+  }
+]

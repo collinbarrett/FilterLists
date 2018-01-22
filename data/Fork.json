@@ -1,0 +1,22 @@
+﻿[
+  {
+    "ForkFilterListId": 7,
+    "UpstreamFilterListId": 9
+  },
+  {
+    "ForkFilterListId": 8,
+    "UpstreamFilterListId": 9
+  },
+  {
+    "ForkFilterListId": 16,
+    "UpstreamFilterListId": 59
+  },
+  {
+    "ForkFilterListId": 16,
+    "UpstreamFilterListId": 99
+  },
+  {
+    "ForkFilterListId": 16,
+    "UpstreamFilterListId": 278
+  }
+]
