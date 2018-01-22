@@ -44,9 +44,9 @@ namespace FilterLists.Data
         {
             var entityType = dbContext.Model.FindEntityType(typeof(TEntityType));
             var properties = GetPropertiesLessValueGeneratedTimestamps(entityType);
-            var columns = string.Join(", ", properties.Select(x => x.Name));
             var values = CreateValues<TEntityType>(properties, dataPath);
             if (values == "") return;
+            var columns = string.Join(", ", properties.Select(x => x.Name));
             var updates = CreateUpdates(properties);
             var rawSqlString = "INSERT INTO " + entityType.Relational().TableName + " (" + columns + ") VALUES " +
                                values + " ON DUPLICATE KEY UPDATE " + updates;
