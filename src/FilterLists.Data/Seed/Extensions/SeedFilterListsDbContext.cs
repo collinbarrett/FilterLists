@@ -4,23 +4,13 @@ using System.IO;
 using System.Linq;
 using FilterLists.Data.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Newtonsoft.Json;
 
-namespace FilterLists.Data
+namespace FilterLists.Data.Seed.Extensions
 {
-    public static class FilterListsDbContextExtensions
+    public static class SeedFilterListsDbContext
     {
-        public static bool AllMigrationsApplied(this FilterListsDbContext dbContext)
-        {
-            var appliedMigrationIds = dbContext.GetService<IHistoryRepository>().GetAppliedMigrations()
-                .Select(m => m.MigrationId);
-            var allMigrationKeys = dbContext.GetService<IMigrationsAssembly>().Migrations.Select(m => m.Key);
-            return !allMigrationKeys.Except(appliedMigrationIds).Any();
-        }
-
         //TODO: consider handling deleted entities on seed
         //TODO: read entities from model and iterate over
         public static void SeedOrUpdate(this FilterListsDbContext dbContext, string dataPath)
@@ -46,7 +36,7 @@ namespace FilterLists.Data
             var properties = GetPropertiesLessValueGeneratedTimestamps(entityType);
             var values = CreateValues<TEntityType>(properties, dataPath);
             if (values == "") return;
-            var columns = string.Join(", ", properties.Select(x => x.Name));
+            var columns = string.Join(", ", Enumerable.Select<IProperty, string>(properties, x => x.Name));
             var updates = CreateUpdates(properties);
             var rawSqlString = "INSERT INTO " + entityType.Relational().TableName + " (" + columns + ") VALUES " +
                                values + " ON DUPLICATE KEY UPDATE " + updates;
@@ -62,7 +52,7 @@ namespace FilterLists.Data
 
         private static string CreateValues<TEntityType>(IReadOnlyCollection<IProperty> properties, string dataPath)
         {
-            return GetSeedRows<TEntityType>(dataPath).Select(row => CreateRowValues(properties, row)).Aggregate("",
+            return Enumerable.Select<TEntityType, string>(GetSeedRows<TEntityType>(dataPath), row => CreateRowValues(properties, row)).Aggregate("",
                 (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
         }
 
@@ -84,7 +74,7 @@ namespace FilterLists.Data
         {
             return (from property in properties
                        let value = row.GetType().GetProperty(property.Name).GetValue(row)
-                       select FormatDataForMySql(property, value)).Aggregate("",
+                       select FormatDataForMySql(property, value)).Aggregate<object, string>("",
                        (rowValues, value) => rowValues == "" ? "(" + value : rowValues + ", " + value) + ")";
         }
 
