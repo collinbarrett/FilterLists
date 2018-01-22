@@ -13,7 +13,7 @@ namespace FilterLists.Data
 {
     public static class FilterListsDbContextExtensions
     {
-        private const string SeedDirectory = "Seed";
+        private const string DataDirectory = "data";
 
         public static bool AllMigrationsApplied(this FilterListsDbContext dbContext)
         {
@@ -68,8 +68,13 @@ namespace FilterLists.Data
 
         private static List<TEntityType> GetSeedRows<TEntityType>()
         {
+#if DEBUG
+            var path = Path.GetFullPath(Path.Combine(@"..\..\", DataDirectory));
+#else
+            var path = Path.GetFullPath(SeedDirectory);
+#endif
             return JsonConvert.DeserializeObject<List<TEntityType>>(
-                File.ReadAllText(SeedDirectory + Path.DirectorySeparatorChar + typeof(TEntityType).Name + ".json"));
+                File.ReadAllText(path + Path.DirectorySeparatorChar + typeof(TEntityType).Name + ".json"));
         }
 
         private static string CreateRowValues<TEntityType>(IEnumerable<IProperty> properties, TEntityType row)
