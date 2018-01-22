@@ -50,7 +50,7 @@ namespace FilterLists.Api
             using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
                 serviceScope.ServiceProvider.GetService<FilterListsDbContext>().Database.Migrate();
-                serviceScope.ServiceProvider.GetService<FilterListsDbContext>().EnsureSeeded();
+                serviceScope.ServiceProvider.GetService<FilterListsDbContext>().SeedOrUpdate();
             }
         }
     }

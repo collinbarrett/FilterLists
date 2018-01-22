@@ -15,66 +15,40 @@ namespace FilterLists.Data
     {
         private const string SeedDirectory = "Seed";
 
-        public static bool AllMigrationsApplied(this FilterListsDbContext filterListsDbContext)
+        public static bool AllMigrationsApplied(this FilterListsDbContext dbContext)
         {
-            var appliedMigrationIds = filterListsDbContext.GetService<IHistoryRepository>().GetAppliedMigrations()
+            var appliedMigrationIds = dbContext.GetService<IHistoryRepository>().GetAppliedMigrations()
                 .Select(m => m.MigrationId);
-            var allMigrationKeys = filterListsDbContext.GetService<IMigrationsAssembly>().Migrations.Select(m => m.Key);
+            var allMigrationKeys = dbContext.GetService<IMigrationsAssembly>().Migrations.Select(m => m.Key);
             return !allMigrationKeys.Except(appliedMigrationIds).Any();
         }
 
-        public static void EnsureSeeded(this FilterListsDbContext filterListsDbContext)
+        public static void SeedOrUpdate(this FilterListsDbContext dbContext)
         {
-            SeedEntities(filterListsDbContext);
-            //InsertOnDuplicateKeyUpdateEntities(filterListsDbContext);
-            SeedJunctions(filterListsDbContext);
-            //TODO: determine if InsertOnDuplicateKeyUpdate() will work for junctions
+            PerformEntityInsertOnDuplicateKeyUpdates(dbContext);
+            //PerformEntityInserts(dbContext);
         }
 
-        private static void SeedEntities(DbContext dbContext)
+        private static void PerformEntityInsertOnDuplicateKeyUpdates(DbContext dbContext)
         {
-            SeedIfEmpty<Language>(dbContext);
-            SeedIfEmpty<License>(dbContext);
-            SeedIfEmpty<Maintainer>(dbContext);
-            SeedIfEmpty<Software>(dbContext);
-            SeedIfEmpty<Syntax>(dbContext);
-            SeedIfEmpty<FilterList>(dbContext);
+            dbContext.InsertOnDuplicateKeyUpdate<Language>();
+            dbContext.InsertOnDuplicateKeyUpdate<License>();
+            dbContext.InsertOnDuplicateKeyUpdate<Maintainer>();
+            dbContext.InsertOnDuplicateKeyUpdate<Software>();
+            dbContext.InsertOnDuplicateKeyUpdate<Syntax>();
+            dbContext.InsertOnDuplicateKeyUpdate<FilterList>();
         }
 
-        private static void SeedJunctions(DbContext dbContext)
+        private static void PerformEntityInserts(DbContext dbContext)
         {
-            SeedIfEmpty<FilterListLanguage>(dbContext);
-            SeedIfEmpty<FilterListMaintainer>(dbContext);
-            SeedIfEmpty<Fork>(dbContext);
-            SeedIfEmpty<Merge>(dbContext);
-            SeedIfEmpty<SoftwareSyntax>(dbContext);
+            dbContext.Insert<FilterListLanguage>();
+            dbContext.Insert<FilterListMaintainer>();
+            dbContext.Insert<Fork>();
+            dbContext.Insert<Merge>();
+            dbContext.Insert<SoftwareSyntax>();
         }
 
-        private static void SeedIfEmpty<TEntity>(DbContext dbContext) where TEntity : class
-        {
-            if (dbContext.Set<TEntity>().Any()) return;
-            var rows = GetSeedRows<TEntity>();
-            dbContext.AddRange(rows);
-            dbContext.SaveChanges();
-        }
-
-        private static List<TEntityType> GetSeedRows<TEntityType>()
-        {
-            return JsonConvert.DeserializeObject<List<TEntityType>>(
-                File.ReadAllText(SeedDirectory + Path.DirectorySeparatorChar + typeof(TEntityType).Name + ".json"));
-        }
-
-        private static void InsertOnDuplicateKeyUpdateEntities(DbContext dbContext)
-        {
-            InsertOnDuplicateKeyUpdate<Language>(dbContext);
-            InsertOnDuplicateKeyUpdate<License>(dbContext);
-            InsertOnDuplicateKeyUpdate<Maintainer>(dbContext);
-            InsertOnDuplicateKeyUpdate<Software>(dbContext);
-            InsertOnDuplicateKeyUpdate<Syntax>(dbContext);
-            InsertOnDuplicateKeyUpdate<FilterList>(dbContext);
-        }
-
-        private static void InsertOnDuplicateKeyUpdate<TEntityType>(DbContext dbContext) where TEntityType : class
+        private static void InsertOnDuplicateKeyUpdate<TEntityType>(this DbContext dbContext) where TEntityType : class
         {
             var entityType = dbContext.Model.FindEntityType(typeof(TEntityType));
             var properties = GetPropertiesLessValueGeneratedTimestamps(entityType);
@@ -83,7 +57,7 @@ namespace FilterLists.Data
             var updates = CreateUpdates(properties);
             var rawSqlString = "INSERT INTO " + entityType.Relational().TableName + " (" + columns + ") VALUES " +
                                values + " ON DUPLICATE KEY UPDATE " + updates;
-            dbContext.Set<TEntityType>().FromSql(rawSqlString);
+            dbContext.Database.ExecuteSqlCommand(rawSqlString);
             dbContext.SaveChanges();
         }
 
@@ -99,17 +73,31 @@ namespace FilterLists.Data
                 (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
         }
 
+        private static List<TEntityType> GetSeedRows<TEntityType>()
+        {
+            return JsonConvert.DeserializeObject<List<TEntityType>>(
+                File.ReadAllText(SeedDirectory + Path.DirectorySeparatorChar + typeof(TEntityType).Name + ".json"));
+        }
+
         private static string CreateRowValues<TEntityType>(IEnumerable<IProperty> properties, TEntityType row)
         {
             return (from property in properties
                        let value = row.GetType().GetProperty(property.Name).GetValue(row)
-                       select WrapStringValueInSingleQuotes(property, value)).Aggregate("",
+                       select FormatDataForMySql(property, value)).Aggregate("",
                        (rowValues, value) => rowValues == "" ? "(" + value : rowValues + ", " + value) + ")";
         }
 
-        private static object WrapStringValueInSingleQuotes(IProperty property, object value)
+        //TODO: use .NET, EF, or other library rather than maintaining this
+        private static object FormatDataForMySql(IProperty property, object value)
         {
-            return property.ClrType == typeof(string) ? "'" + value + "'" : value;
+            if (value == null) return "NULL";
+            if (property.ClrType == typeof(string))
+                return "'" + value.ToString().Replace("'", "''") + "'";
+            if (property.ClrType == typeof(bool))
+                return Convert.ToInt32(value);
+            if (property.ClrType == typeof(DateTime?))
+                return "'" + ((DateTime)value).ToString("yyyy-MM-dd HH:mm:ss") + "'";
+            return value;
         }
 
         private static string CreateUpdates(IEnumerable<IProperty> properties)
@@ -118,6 +106,14 @@ namespace FilterLists.Data
                 where !property.IsPrimaryKey()
                 select property.Name + " = VALUES(" + property.Name + ")").Aggregate("",
                 (updates, columnUpdates) => updates == "" ? columnUpdates : updates + ", " + columnUpdates);
+        }
+
+        private static void Insert<TEntityType>(this DbContext dbContext) where TEntityType : class
+        {
+            var rows = GetSeedRows<TEntityType>();
+            //TODO: filter out pre-existing records
+            dbContext.Set<TEntityType>().AddRange(rows);
+            dbContext.SaveChanges();
         }
     }
 }
