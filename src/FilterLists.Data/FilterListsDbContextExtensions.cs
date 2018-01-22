@@ -66,6 +66,7 @@ namespace FilterLists.Data
                 (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
         }
 
+        //TODO: use Development and Production rather than Debug and Release
         private static List<TEntityType> GetSeedRows<TEntityType>()
         {
 #if DEBUG
