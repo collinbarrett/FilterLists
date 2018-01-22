@@ -36,7 +36,7 @@ namespace FilterLists.Data.Seed.Extensions
             var properties = GetPropertiesLessValueGeneratedTimestamps(entityType);
             var values = CreateValues<TEntityType>(properties, dataPath);
             if (values == "") return;
-            var columns = string.Join(", ", Enumerable.Select<IProperty, string>(properties, x => x.Name));
+            var columns = string.Join(", ", properties.Select(x => x.Name));
             var updates = CreateUpdates(properties);
             var rawSqlString = "INSERT INTO " + entityType.Relational().TableName + " (" + columns + ") VALUES " +
                                values + " ON DUPLICATE KEY UPDATE " + updates;
@@ -52,7 +52,7 @@ namespace FilterLists.Data.Seed.Extensions
 
         private static string CreateValues<TEntityType>(IReadOnlyCollection<IProperty> properties, string dataPath)
         {
-            return Enumerable.Select<TEntityType, string>(GetSeedRows<TEntityType>(dataPath), row => CreateRowValues(properties, row)).Aggregate("",
+            return GetSeedRows<TEntityType>(dataPath).Select(row => CreateRowValues(properties, row)).Aggregate("",
                 (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
         }
 
@@ -74,7 +74,7 @@ namespace FilterLists.Data.Seed.Extensions
         {
             return (from property in properties
                        let value = row.GetType().GetProperty(property.Name).GetValue(row)
-                       select FormatDataForMySql(property, value)).Aggregate<object, string>("",
+                       select FormatDataForMySql(property, value)).Aggregate("",
                        (rowValues, value) => rowValues == "" ? "(" + value : rowValues + ", " + value) + ")";
         }
 
