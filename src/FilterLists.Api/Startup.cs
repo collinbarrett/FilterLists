@@ -1,5 +1,6 @@
 ﻿using FilterLists.Api.DependencyInjection.Extensions;
 using FilterLists.Data;
+using FilterLists.Data.Seed.Extensions;
 using FilterLists.Services.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpOverrides;
