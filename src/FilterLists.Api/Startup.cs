@@ -45,12 +45,13 @@ namespace FilterLists.Api
             MigrateAndSeedDatabase(app);
         }
 
-        private static void MigrateAndSeedDatabase(IApplicationBuilder app)
+        private void MigrateAndSeedDatabase(IApplicationBuilder app)
         {
+            var dataPath = Configuration.GetSection("DataDirectory").GetValue<string>("Path");
             using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
                 serviceScope.ServiceProvider.GetService<FilterListsDbContext>().Database.Migrate();
-                serviceScope.ServiceProvider.GetService<FilterListsDbContext>().SeedOrUpdate();
+                serviceScope.ServiceProvider.GetService<FilterListsDbContext>().SeedOrUpdate(dataPath);
             }
         }
     }

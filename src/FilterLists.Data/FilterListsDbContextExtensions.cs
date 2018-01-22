@@ -13,8 +13,6 @@ namespace FilterLists.Data
 {
     public static class FilterListsDbContextExtensions
     {
-        private const string DataDirectory = "data";
-
         public static bool AllMigrationsApplied(this FilterListsDbContext dbContext)
         {
             var appliedMigrationIds = dbContext.GetService<IHistoryRepository>().GetAppliedMigrations()
@@ -25,28 +23,30 @@ namespace FilterLists.Data
 
         //TODO: consider handling deleted entities on seed
         //TODO: read entities from model and iterate over
-        public static void SeedOrUpdate(this FilterListsDbContext dbContext)
+        public static void SeedOrUpdate(this FilterListsDbContext dbContext, string dataPath)
         {
-            dbContext.InsertOnDuplicateKeyUpdate<Language>();
-            dbContext.InsertOnDuplicateKeyUpdate<License>();
-            dbContext.InsertOnDuplicateKeyUpdate<Maintainer>();
-            dbContext.InsertOnDuplicateKeyUpdate<Software>();
-            dbContext.InsertOnDuplicateKeyUpdate<Syntax>();
-            dbContext.InsertOnDuplicateKeyUpdate<FilterList>();
-            dbContext.InsertOnDuplicateKeyUpdate<FilterListLanguage>();
-            dbContext.InsertOnDuplicateKeyUpdate<FilterListMaintainer>();
-            dbContext.InsertOnDuplicateKeyUpdate<Fork>();
-            dbContext.InsertOnDuplicateKeyUpdate<Merge>();
-            dbContext.InsertOnDuplicateKeyUpdate<SoftwareSyntax>();
+            dbContext.InsertOnDuplicateKeyUpdate<Language>(dataPath);
+            dbContext.InsertOnDuplicateKeyUpdate<License>(dataPath);
+            dbContext.InsertOnDuplicateKeyUpdate<Maintainer>(dataPath);
+            dbContext.InsertOnDuplicateKeyUpdate<Software>(dataPath);
+            dbContext.InsertOnDuplicateKeyUpdate<Syntax>(dataPath);
+            dbContext.InsertOnDuplicateKeyUpdate<FilterList>(dataPath);
+            dbContext.InsertOnDuplicateKeyUpdate<FilterListLanguage>(dataPath);
+            dbContext.InsertOnDuplicateKeyUpdate<FilterListMaintainer>(dataPath);
+            dbContext.InsertOnDuplicateKeyUpdate<Fork>(dataPath);
+            dbContext.InsertOnDuplicateKeyUpdate<Merge>(dataPath);
+            dbContext.InsertOnDuplicateKeyUpdate<SoftwareSyntax>(dataPath);
         }
 
         //TODO: improve raw SQL against injection attacks
-        private static void InsertOnDuplicateKeyUpdate<TEntityType>(this DbContext dbContext) where TEntityType : class
+        private static void InsertOnDuplicateKeyUpdate<TEntityType>(this DbContext dbContext, string dataPath)
+            where TEntityType : class
         {
             var entityType = dbContext.Model.FindEntityType(typeof(TEntityType));
             var properties = GetPropertiesLessValueGeneratedTimestamps(entityType);
             var columns = string.Join(", ", properties.Select(x => x.Name));
-            var values = CreateValues<TEntityType>(properties);
+            var values = CreateValues<TEntityType>(properties, dataPath);
+            if (values == "") return;
             var updates = CreateUpdates(properties);
             var rawSqlString = "INSERT INTO " + entityType.Relational().TableName + " (" + columns + ") VALUES " +
                                values + " ON DUPLICATE KEY UPDATE " + updates;
@@ -60,22 +60,24 @@ namespace FilterLists.Data
                 .Where(x => x.ClrType != typeof(DateTime) || x.ValueGenerated == ValueGenerated.Never).ToList();
         }
 
-        private static string CreateValues<TEntityType>(IReadOnlyCollection<IProperty> properties)
+        private static string CreateValues<TEntityType>(IReadOnlyCollection<IProperty> properties, string dataPath)
         {
-            return GetSeedRows<TEntityType>().Select(row => CreateRowValues(properties, row)).Aggregate("",
+            return GetSeedRows<TEntityType>(dataPath).Select(row => CreateRowValues(properties, row)).Aggregate("",
                 (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
         }
 
-        //TODO: use Development and Production rather than Debug and Release
-        private static List<TEntityType> GetSeedRows<TEntityType>()
+        private static List<TEntityType> GetSeedRows<TEntityType>(string dataPath)
         {
-#if DEBUG
-            var path = Path.GetFullPath(Path.Combine(@"..\..\", DataDirectory));
-#else
-            var path = Path.GetFullPath(DataDirectory);
-#endif
-            return JsonConvert.DeserializeObject<List<TEntityType>>(
-                File.ReadAllText(path + Path.DirectorySeparatorChar + typeof(TEntityType).Name + ".json"));
+            try
+            {
+                return JsonConvert.DeserializeObject<List<TEntityType>>(
+                    File.ReadAllText(dataPath + Path.DirectorySeparatorChar + typeof(TEntityType).Name + ".json"));
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+                return new List<TEntityType>();
+            }
         }
 
         private static string CreateRowValues<TEntityType>(IEnumerable<IProperty> properties, TEntityType row)
