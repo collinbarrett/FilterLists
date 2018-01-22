@@ -71,7 +71,7 @@ namespace FilterLists.Data
 #if DEBUG
             var path = Path.GetFullPath(Path.Combine(@"..\..\", DataDirectory));
 #else
-            var path = Path.GetFullPath(SeedDirectory);
+            var path = Path.GetFullPath(DataDirectory);
 #endif
             return JsonConvert.DeserializeObject<List<TEntityType>>(
                 File.ReadAllText(path + Path.DirectorySeparatorChar + typeof(TEntityType).Name + ".json"));
