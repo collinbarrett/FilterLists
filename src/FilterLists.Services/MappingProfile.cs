@@ -9,6 +9,7 @@ namespace FilterLists.Services
         public MappingProfile()
         {
             CreateMap<FilterList, FilterListSummaryDto>();
+            CreateMap<FilterList, FilterListSeedDto>();
         }
     }
 }

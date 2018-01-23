@@ -1,4 +1,4 @@
-﻿namespace FilterLists.Data.Entities
+﻿namespace FilterLists.Data.Entities.Junctions
 {
     public class Fork : BaseEntity
     {

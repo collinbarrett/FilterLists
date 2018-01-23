@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using FilterLists.Data.Entities;
-using FilterLists.Data.Repositories.Contracts;
 
-namespace FilterLists.Data.Repositories.Implementations
+namespace FilterLists.Data.Repositories
 {
-    public class FilterListRepository : IFilterListRepository
+    public class FilterListRepository
     {
         private readonly FilterListsDbContext filterListsDbContext;
 
@@ -17,11 +16,6 @@ namespace FilterLists.Data.Repositories.Implementations
         public IEnumerable<FilterList> GetAll()
         {
             return filterListsDbContext.FilterLists.AsEnumerable();
-        }
-
-        public FilterList Get(int id)
-        {
-            return filterListsDbContext.FilterLists.Single(x => x.Id == id);
         }
     }
 }

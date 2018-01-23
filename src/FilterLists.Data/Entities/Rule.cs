@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using FilterLists.Data.Entities.Junctions;
 
 namespace FilterLists.Data.Entities
 {

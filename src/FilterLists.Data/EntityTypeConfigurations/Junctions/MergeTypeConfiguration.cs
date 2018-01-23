@@ -1,8 +1,8 @@
-﻿using FilterLists.Data.Entities;
+﻿using FilterLists.Data.Entities.Junctions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace FilterLists.Data.EntityTypeConfigurations
+namespace FilterLists.Data.EntityTypeConfigurations.Junctions
 {
     public class MergeTypeConfiguration : BaseEntityTypeConfiguration<Merge>
     {
