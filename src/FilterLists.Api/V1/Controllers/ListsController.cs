@@ -6,7 +6,6 @@ using Microsoft.Extensions.Caching.Memory;
 namespace FilterLists.Api.V1.Controllers
 {
     [ApiVersion("1.0")]
-    [Route("[controller]")]
     [Produces("application/json")]
     [ResponseCache(CacheProfileName = "Long-Lived")]
     public class ListsController : Controller
