@@ -16,6 +16,7 @@ namespace FilterLists.Api.DependencyInjection.Extensions
             services.AddResponseCaching();
             services.AddMemoryCache();
             services.AddSwaggerGenCustom();
+            Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryDebugWriter.IsTracingDisabled = true;
         }
 
         private static void AddMvcCustom(this IServiceCollection services)
