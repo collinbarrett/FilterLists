@@ -1,9 +1,6 @@
 ﻿using AutoMapper;
 using FilterLists.Data;
-using FilterLists.Data.Repositories.Contracts;
-using FilterLists.Data.Repositories.Implementations;
-using FilterLists.Services.Contracts;
-using FilterLists.Services.Implementations;
+using FilterLists.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,8 +16,8 @@ namespace FilterLists.Services.DependencyInjection.Extensions
             services.AddEntityFrameworkMySql().AddDbContextPool<FilterListsDbContext>(options =>
                 options.UseMySql(configuration.GetConnectionString("FilterListsConnection"),
                     b => b.MigrationsAssembly("FilterLists.Api")));
-            services.TryAddScoped<IFilterListRepository, FilterListRepository>();
-            services.TryAddScoped<IFilterListService, FilterListService>();
+            services.TryAddScoped<FilterListRepository>();
+            services.TryAddScoped<FilterListService>();
             services.AddAutoMapper();
         }
     }
