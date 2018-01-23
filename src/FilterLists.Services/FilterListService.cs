@@ -1,29 +1,29 @@
 ﻿using System.Collections.Generic;
 using AutoMapper;
-using FilterLists.Data.Repositories;
+using FilterLists.Data;
 using FilterLists.Services.Models;
 
 namespace FilterLists.Services
 {
     public class FilterListService
     {
-        private readonly FilterListRepository filterListRepository;
+        private readonly FilterListsDbContext filterListsDbContext;
         private readonly IMapper mapper;
 
-        public FilterListService(FilterListRepository filterListRepository, IMapper mapper)
+        public FilterListService(FilterListsDbContext filterListsDbContext, IMapper mapper)
         {
-            this.filterListRepository = filterListRepository;
+            this.filterListsDbContext = filterListsDbContext;
             this.mapper = mapper;
         }
 
         public IEnumerable<FilterListSummaryDto> GetAllSummaries()
         {
-            return mapper.Map<IEnumerable<FilterListSummaryDto>>(filterListRepository.GetAll());
+            return mapper.Map<IEnumerable<FilterListSummaryDto>>(filterListsDbContext.FilterLists);
         }
 
         public IEnumerable<FilterListSeedDto> GetAllSeeds()
         {
-            return mapper.Map<IEnumerable<FilterListSeedDto>>(filterListRepository.GetAll());
+            return mapper.Map<IEnumerable<FilterListSeedDto>>(filterListsDbContext.FilterLists);
         }
     }
 }
