@@ -5,7 +5,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Api.V1.Controllers
 {
-    public class ListsController : BaseController
+    public class ListsController : EntityController
     {
         private readonly FilterListService filterListService;
 
