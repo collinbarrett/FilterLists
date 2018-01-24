@@ -1,8 +1,8 @@
 ﻿using System.IO;
+using Microsoft.ApplicationInsights.Extensibility.Implementation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
-using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace FilterLists.Api.DependencyInjection.Extensions
@@ -16,23 +16,19 @@ namespace FilterLists.Api.DependencyInjection.Extensions
             services.AddResponseCaching();
             services.AddMemoryCache();
             services.AddSwaggerGenCustom();
-            Microsoft.ApplicationInsights.Extensibility.Implementation.TelemetryDebugWriter.IsTracingDisabled = true;
+            TelemetryDebugWriter.IsTracingDisabled = true;
         }
 
         private static void AddMvcCustom(this IServiceCollection services)
         {
             services.AddMvc(options =>
-                {
-                    options.CacheProfiles.Add("Long-Lived",
-                        new CacheProfile
-                        {
-                            Duration = 86400
-                        });
-                })
-                .AddJsonOptions(options =>
-                {
-                    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
-                });
+            {
+                options.CacheProfiles.Add("Long-Lived",
+                    new CacheProfile
+                    {
+                        Duration = 86400
+                    });
+            });
         }
 
         private static void AddSwaggerGenCustom(this IServiceCollection services)
