@@ -3,7 +3,7 @@ using AutoMapper;
 using FilterLists.Data;
 using FilterLists.Services.Models;
 
-namespace FilterLists.Services
+namespace FilterLists.Services.Services
 {
     public class FilterListService
     {
@@ -19,11 +19,6 @@ namespace FilterLists.Services
         public IEnumerable<FilterListSummaryDto> GetAllSummaries()
         {
             return mapper.Map<IEnumerable<FilterListSummaryDto>>(filterListsDbContext.FilterLists);
-        }
-
-        public IEnumerable<FilterListSeedDto> GetAllSeeds()
-        {
-            return mapper.Map<IEnumerable<FilterListSeedDto>>(filterListsDbContext.FilterLists);
         }
     }
 }
