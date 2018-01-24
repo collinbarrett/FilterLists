@@ -20,12 +20,22 @@ namespace FilterLists.Api.V1.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Index()
         {
             return memoryCache.GetOrCreate(CacheKeys.Entry, entry =>
             {
                 entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(86400);
                 return Json(filterListService.GetAllSummaries());
+            });
+        }
+
+        [HttpGet]
+        public IActionResult Seed()
+        {
+            return memoryCache.GetOrCreate(CacheKeys.Entry, entry =>
+            {
+                entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(86400);
+                return Json(filterListService.GetAllSeeds());
             });
         }
     }

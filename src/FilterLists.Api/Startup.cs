@@ -41,7 +41,7 @@ namespace FilterLists.Api
             app.UseStaticFiles();
             app.UseMvc(routes =>
             {
-                routes.MapRoute("default", "v{version:apiVersion}/{controller=Default}/{action=Get}/{id?}");
+                routes.MapRoute("default", "v{version:apiVersion}/{controller=Home}/{action=Index}/{id?}");
             });
             MigrateAndSeedDatabase(app);
         }
