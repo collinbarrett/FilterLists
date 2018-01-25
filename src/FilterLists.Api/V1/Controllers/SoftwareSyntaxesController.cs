@@ -1,10 +1,8 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Models.Seed.Junctions;
 using FilterLists.Services.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Api.V1.Controllers
 {
@@ -12,7 +10,7 @@ namespace FilterLists.Api.V1.Controllers
     {
         private readonly SeedService seedService;
 
-        public SoftwareSyntaxesController(IMemoryCache memoryCache, SeedService seedService) : base(memoryCache)
+        public SoftwareSyntaxesController(SeedService seedService)
         {
             this.seedService = seedService;
         }
@@ -20,11 +18,7 @@ namespace FilterLists.Api.V1.Controllers
         [HttpGet]
         public async Task<IActionResult> Seed()
         {
-            return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, async entry =>
-            {
-                entry.SlidingExpiration = TimeSpan.FromSeconds(MemoryCacheSlidingExpirationSeconds);
-                return Json(await seedService.GetAll<SoftwareSyntax, SoftwareSyntaxSeedDto>());
-            });
+            return Json(await seedService.GetAll<SoftwareSyntax, SoftwareSyntaxSeedDto>());
         }
     }
 }
