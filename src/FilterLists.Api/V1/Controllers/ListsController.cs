@@ -19,10 +19,10 @@ namespace FilterLists.Api.V1.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, entry =>
+            return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, async entry =>
             {
                 entry.SlidingExpiration = TimeSpan.FromSeconds(3);
-                return Task.FromResult(Json(filterListService.GetAllSummaries()));
+                return Json(await filterListService.GetAllSummaries());
             });
         }
     }

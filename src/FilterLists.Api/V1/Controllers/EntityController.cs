@@ -27,40 +27,40 @@ namespace FilterLists.Api.V1.Controllers
             switch (controllerName)
             {
                 case "lists":
-                    return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, entry =>
+                    return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, async entry =>
                     {
                         entry.SlidingExpiration = TimeSpan.FromSeconds(3);
-                        return Task.FromResult(Json(SeedService.GetAllFilterLists()));
+                        return Json(await SeedService.GetAllFilterLists());
                     });
                 case "languages":
-                    return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, entry =>
+                    return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, async entry =>
                     {
                         entry.SlidingExpiration = TimeSpan.FromSeconds(3);
-                        return Task.FromResult(Json(SeedService.GetAllLanguages()));
+                        return Json(await SeedService.GetAllLanguages());
                     });
                 case "licenses":
-                    return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, entry =>
+                    return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, async entry =>
                     {
                         entry.SlidingExpiration = TimeSpan.FromSeconds(3);
-                        return Task.FromResult(Json(SeedService.GetAllLicenses()));
+                        return Json(await SeedService.GetAllLicenses());
                     });
                 case "maintainers":
-                    return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, entry =>
+                    return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, async entry =>
                     {
                         entry.SlidingExpiration = TimeSpan.FromSeconds(3);
-                        return Task.FromResult(Json(SeedService.GetAllMaintainers()));
+                        return Json(await SeedService.GetAllMaintainers());
                     });
                 case "software":
-                    return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, entry =>
+                    return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, async entry =>
                     {
                         entry.SlidingExpiration = TimeSpan.FromSeconds(3);
-                        return Task.FromResult(Json(SeedService.GetAllSoftware()));
+                        return Json(await SeedService.GetAllSoftware());
                     });
                 case "syntaxes":
-                    return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, entry =>
+                    return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, async entry =>
                     {
                         entry.SlidingExpiration = TimeSpan.FromSeconds(3);
-                        return Task.FromResult(Json(SeedService.GetAllSyntaxes()));
+                        return Json(await SeedService.GetAllSyntaxes());
                     });
                 default:
                     return await Task.FromResult(NotFound());
