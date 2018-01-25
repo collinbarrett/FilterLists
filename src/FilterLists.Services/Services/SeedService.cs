@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using AutoMapper;
 using FilterLists.Data;
+using FilterLists.Data.Entities;
+using FilterLists.Services.Models.Seed;
 
 namespace FilterLists.Services.Services
 {
@@ -15,9 +18,38 @@ namespace FilterLists.Services.Services
             this.mapper = mapper;
         }
 
-        public IEnumerable<T> GetAll<T>() where T : class
+        public async Task<IEnumerable<FilterListSeedDto>> GetAllFilterLists()
         {
-            return mapper.Map<IEnumerable<T>>(filterListsDbContext.Set<T>());
+            return await Task.FromResult(
+                mapper.Map<IEnumerable<FilterListSeedDto>>(filterListsDbContext.Set<FilterList>()));
+        }
+
+        public async Task<IEnumerable<LanguageSeedDto>> GetAllLanguages()
+        {
+            return await Task.FromResult(
+                mapper.Map<IEnumerable<LanguageSeedDto>>(filterListsDbContext.Set<Language>()));
+        }
+
+        public async Task<IEnumerable<LicenseSeedDto>> GetAllLicenses()
+        {
+            return await Task.FromResult(mapper.Map<IEnumerable<LicenseSeedDto>>(filterListsDbContext.Set<License>()));
+        }
+
+        public async Task<IEnumerable<MaintainerSeedDto>> GetAllMaintainers()
+        {
+            return await Task.FromResult(
+                mapper.Map<IEnumerable<MaintainerSeedDto>>(filterListsDbContext.Set<Maintainer>()));
+        }
+
+        public async Task<IEnumerable<SoftwareSeedDto>> GetAllSoftware()
+        {
+            return await Task.FromResult(
+                mapper.Map<IEnumerable<SoftwareSeedDto>>(filterListsDbContext.Set<Software>()));
+        }
+
+        public async Task<IEnumerable<SyntaxSeedDto>> GetAllSyntaxes()
+        {
+            return await Task.FromResult(mapper.Map<IEnumerable<SyntaxSeedDto>>(filterListsDbContext.Set<Syntax>()));
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using AutoMapper;
 using FilterLists.Data;
 using FilterLists.Services.Models;
@@ -16,9 +17,10 @@ namespace FilterLists.Services.Services
             this.mapper = mapper;
         }
 
-        public IEnumerable<FilterListSummaryDto> GetAllSummaries()
+        public async Task<IEnumerable<FilterListSummaryDto>> GetAllSummaries()
         {
-            return mapper.Map<IEnumerable<FilterListSummaryDto>>(filterListsDbContext.FilterLists);
+            return await Task.FromResult(
+                mapper.Map<IEnumerable<FilterListSummaryDto>>(filterListsDbContext.FilterLists));
         }
     }
 }
