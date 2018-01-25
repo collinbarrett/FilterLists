@@ -1,94 +1,94 @@
 ﻿[
   {
-    "MergeFilterListId": 11,
-    "UpstreamFilterListId": 12
+    "mergeFilterListId": 11,
+    "upstreamFilterListId": 12
   },
   {
-    "MergeFilterListId": 13,
-    "UpstreamFilterListId": 12
+    "mergeFilterListId": 13,
+    "upstreamFilterListId": 12
   },
   {
-    "MergeFilterListId": 13,
-    "UpstreamFilterListId": 14
+    "mergeFilterListId": 13,
+    "upstreamFilterListId": 14
   },
   {
-    "MergeFilterListId": 21,
-    "UpstreamFilterListId": 23
+    "mergeFilterListId": 21,
+    "upstreamFilterListId": 23
   },
   {
-    "MergeFilterListId": 22,
-    "UpstreamFilterListId": 24
+    "mergeFilterListId": 22,
+    "upstreamFilterListId": 24
   },
   {
-    "MergeFilterListId": 120,
-    "UpstreamFilterListId": 25
+    "mergeFilterListId": 120,
+    "upstreamFilterListId": 25
   },
   {
-    "MergeFilterListId": 22,
-    "UpstreamFilterListId": 26
+    "mergeFilterListId": 22,
+    "upstreamFilterListId": 26
   },
   {
-    "MergeFilterListId": 22,
-    "UpstreamFilterListId": 37
+    "mergeFilterListId": 22,
+    "upstreamFilterListId": 37
   },
   {
-    "MergeFilterListId": 21,
-    "UpstreamFilterListId": 75
+    "mergeFilterListId": 21,
+    "upstreamFilterListId": 75
   },
   {
-    "MergeFilterListId": 120,
-    "UpstreamFilterListId": 76
+    "mergeFilterListId": 120,
+    "upstreamFilterListId": 76
   },
   {
-    "MergeFilterListId": 22,
-    "UpstreamFilterListId": 77
+    "mergeFilterListId": 22,
+    "upstreamFilterListId": 77
   },
   {
-    "MergeFilterListId": 21,
-    "UpstreamFilterListId": 121
+    "mergeFilterListId": 21,
+    "upstreamFilterListId": 121
   },
   {
-    "MergeFilterListId": 22,
-    "UpstreamFilterListId": 122
+    "mergeFilterListId": 22,
+    "upstreamFilterListId": 122
   },
   {
-    "MergeFilterListId": 21,
-    "UpstreamFilterListId": 123
+    "mergeFilterListId": 21,
+    "upstreamFilterListId": 123
   },
   {
-    "MergeFilterListId": 22,
-    "UpstreamFilterListId": 124
+    "mergeFilterListId": 22,
+    "upstreamFilterListId": 124
   },
   {
-    "MergeFilterListId": 21,
-    "UpstreamFilterListId": 125
+    "mergeFilterListId": 21,
+    "upstreamFilterListId": 125
   },
   {
-    "MergeFilterListId": 22,
-    "UpstreamFilterListId": 126
+    "mergeFilterListId": 22,
+    "upstreamFilterListId": 126
   },
   {
-    "MergeFilterListId": 120,
-    "UpstreamFilterListId": 127
+    "mergeFilterListId": 120,
+    "upstreamFilterListId": 127
   },
   {
-    "MergeFilterListId": 120,
-    "UpstreamFilterListId": 128
+    "mergeFilterListId": 120,
+    "upstreamFilterListId": 128
   },
   {
-    "MergeFilterListId": 22,
-    "UpstreamFilterListId": 129
+    "mergeFilterListId": 22,
+    "upstreamFilterListId": 129
   },
   {
-    "MergeFilterListId": 21,
-    "UpstreamFilterListId": 130
+    "mergeFilterListId": 21,
+    "upstreamFilterListId": 130
   },
   {
-    "MergeFilterListId": 11,
-    "UpstreamFilterListId": 301
+    "mergeFilterListId": 11,
+    "upstreamFilterListId": 301
   },
   {
-    "MergeFilterListId": 13,
-    "UpstreamFilterListId": 301
+    "mergeFilterListId": 13,
+    "upstreamFilterListId": 301
   }
 ]

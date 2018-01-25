@@ -1,22 +1,22 @@
 ﻿[
   {
-    "ForkFilterListId": 7,
-    "UpstreamFilterListId": 9
+    "forkFilterListId": 7,
+    "upstreamFilterListId": 9
   },
   {
-    "ForkFilterListId": 8,
-    "UpstreamFilterListId": 9
+    "forkFilterListId": 8,
+    "upstreamFilterListId": 9
   },
   {
-    "ForkFilterListId": 16,
-    "UpstreamFilterListId": 59
+    "forkFilterListId": 16,
+    "upstreamFilterListId": 59
   },
   {
-    "ForkFilterListId": 16,
-    "UpstreamFilterListId": 99
+    "forkFilterListId": 16,
+    "upstreamFilterListId": 99
   },
   {
-    "ForkFilterListId": 16,
-    "UpstreamFilterListId": 278
+    "forkFilterListId": 16,
+    "upstreamFilterListId": 278
   }
 ]
