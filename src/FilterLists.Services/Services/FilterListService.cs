@@ -1,26 +1,25 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
+using FilterLists.Data.Entities;
 using FilterLists.Services.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Services.Services
 {
     public class FilterListService
     {
         private readonly FilterListsDbContext filterListsDbContext;
-        private readonly IMapper mapper;
 
-        public FilterListService(FilterListsDbContext filterListsDbContext, IMapper mapper)
+        public FilterListService(FilterListsDbContext filterListsDbContext)
         {
             this.filterListsDbContext = filterListsDbContext;
-            this.mapper = mapper;
         }
 
         public async Task<IEnumerable<FilterListSummaryDto>> GetAllSummaries()
         {
-            return await Task.FromResult(
-                mapper.Map<IEnumerable<FilterListSummaryDto>>(filterListsDbContext.FilterLists));
+            return await filterListsDbContext.Set<FilterList>().ProjectTo<FilterListSummaryDto>().ToListAsync();
         }
     }
 }

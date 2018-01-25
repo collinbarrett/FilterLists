@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
 using FilterLists.Services.Models.Seed;
+using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Services.Services
 {
@@ -20,36 +22,32 @@ namespace FilterLists.Services.Services
 
         public async Task<IEnumerable<FilterListSeedDto>> GetAllFilterLists()
         {
-            return await Task.FromResult(
-                mapper.Map<IEnumerable<FilterListSeedDto>>(filterListsDbContext.Set<FilterList>()));
+            return await filterListsDbContext.Set<FilterList>().ProjectTo<FilterListSeedDto>().ToListAsync();
         }
 
         public async Task<IEnumerable<LanguageSeedDto>> GetAllLanguages()
         {
-            return await Task.FromResult(
-                mapper.Map<IEnumerable<LanguageSeedDto>>(filterListsDbContext.Set<Language>()));
+            return await filterListsDbContext.Set<Language>().ProjectTo<LanguageSeedDto>().ToListAsync();
         }
 
         public async Task<IEnumerable<LicenseSeedDto>> GetAllLicenses()
         {
-            return await Task.FromResult(mapper.Map<IEnumerable<LicenseSeedDto>>(filterListsDbContext.Set<License>()));
+            return await filterListsDbContext.Set<License>().ProjectTo<LicenseSeedDto>().ToListAsync();
         }
 
         public async Task<IEnumerable<MaintainerSeedDto>> GetAllMaintainers()
         {
-            return await Task.FromResult(
-                mapper.Map<IEnumerable<MaintainerSeedDto>>(filterListsDbContext.Set<Maintainer>()));
+            return await filterListsDbContext.Set<Maintainer>().ProjectTo<MaintainerSeedDto>().ToListAsync();
         }
 
         public async Task<IEnumerable<SoftwareSeedDto>> GetAllSoftware()
         {
-            return await Task.FromResult(
-                mapper.Map<IEnumerable<SoftwareSeedDto>>(filterListsDbContext.Set<Software>()));
+            return await filterListsDbContext.Set<Software>().ProjectTo<SoftwareSeedDto>().ToListAsync();
         }
 
         public async Task<IEnumerable<SyntaxSeedDto>> GetAllSyntaxes()
         {
-            return await Task.FromResult(mapper.Map<IEnumerable<SyntaxSeedDto>>(filterListsDbContext.Set<Syntax>()));
+            return await filterListsDbContext.Set<Syntax>().ProjectTo<SyntaxSeedDto>().ToListAsync();
         }
     }
 }
