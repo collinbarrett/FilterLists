@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
@@ -12,12 +11,10 @@ namespace FilterLists.Services.Services
     public class SeedService
     {
         private readonly FilterListsDbContext filterListsDbContext;
-        private readonly IMapper mapper;
 
-        public SeedService(FilterListsDbContext filterListsDbContext, IMapper mapper)
+        public SeedService(FilterListsDbContext filterListsDbContext)
         {
             this.filterListsDbContext = filterListsDbContext;
-            this.mapper = mapper;
         }
 
         public async Task<IEnumerable<FilterListSeedDto>> GetAllFilterLists()
