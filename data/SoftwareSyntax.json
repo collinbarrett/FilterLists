@@ -1,14 +1,14 @@
 ﻿[
   {
-    "SoftwareId": 2,
-    "SyntaxId": 3
+    "softwareId": 2,
+    "syntaxId": 3
   },
   {
-    "SoftwareId": 1,
-    "SyntaxId": 4
+    "softwareId": 1,
+    "syntaxId": 4
   },
   {
-    "SoftwareId": 3,
-    "SyntaxId": 6
+    "softwareId": 3,
+    "syntaxId": 6
   }
 ]

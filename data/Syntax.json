@@ -1,42 +1,42 @@
 ﻿[
   {
-    "Id": 1,
-    "DefinitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
-    "Name": "Hosts"
+    "id": 1,
+    "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
+    "name": "Hosts"
   },
   {
-    "Id": 2,
-    "DefinitionUrl": null,
-    "Name": "Domains"
+    "id": 2,
+    "definitionUrl": null,
+    "name": "Domains"
   },
   {
-    "Id": 3,
-    "DefinitionUrl": "https://adblockplus.org/filters",
-    "Name": "Adblock Plus"
+    "id": 3,
+    "definitionUrl": "https://adblockplus.org/filters",
+    "name": "Adblock Plus"
   },
   {
-    "Id": 4,
-    "DefinitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax",
-    "Name": "uBlock Origin"
+    "id": 4,
+    "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax",
+    "name": "uBlock Origin"
   },
   {
-    "Id": 6,
-    "DefinitionUrl": "https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters",
-    "Name": "AdGuard"
+    "id": 6,
+    "definitionUrl": "https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters",
+    "name": "AdGuard"
   },
   {
-    "Id": 7,
-    "DefinitionUrl": null,
-    "Name": "Exceptions (Whitelist)"
+    "id": 7,
+    "definitionUrl": null,
+    "name": "Exceptions (Whitelist)"
   },
   {
-    "Id": 8,
-    "DefinitionUrl": null,
-    "Name": "URLs"
+    "id": 8,
+    "definitionUrl": null,
+    "name": "URLs"
   },
   {
-    "Id": 9,
-    "DefinitionUrl": null,
-    "Name": "IPs"
+    "id": 9,
+    "definitionUrl": null,
+    "name": "IPs"
   }
 ]
