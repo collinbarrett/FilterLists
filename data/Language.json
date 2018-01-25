@@ -1,1842 +1,1842 @@
 ﻿[
   {
-    "Id": 1,
-    "Iso6391": "ab",
-    "Iso6392": "abk",
-    "Iso6392B": "abk",
-    "Iso6392T": "abk",
-    "Iso6393": "abk",
-    "LocalName": "Аҧсуа",
-    "Name": "Abkhaz"
-  },
-  {
-    "Id": 2,
-    "Iso6391": "oc",
-    "Iso6392": "oci",
-    "Iso6392B": "oci",
-    "Iso6392T": "oci",
-    "Iso6393": "oci",
-    "LocalName": "Occitan",
-    "Name": "Occitan"
-  },
-  {
-    "Id": 3,
-    "Iso6391": "oj",
-    "Iso6392": "oji",
-    "Iso6392B": "oji",
-    "Iso6392T": "oji",
-    "Iso6393": "oji",
-    "LocalName": "ᐊᓂᔑᓈᐯᒧᐎᓐ",
-    "Name": "Ojibwe"
-  },
-  {
-    "Id": 4,
-    "Iso6391": "cu",
-    "Iso6392": "chu",
-    "Iso6392B": "chu",
-    "Iso6392T": "chu",
-    "Iso6393": "chu",
-    "LocalName": "Словѣ́ньскъ",
-    "Name": "Old Church Slavonic"
-  },
-  {
-    "Id": 5,
-    "Iso6391": "om",
-    "Iso6392": "orm",
-    "Iso6392B": "orm",
-    "Iso6392T": "orm",
-    "Iso6393": "orm",
-    "LocalName": "Afaan Oromoo",
-    "Name": "Oromo"
-  },
-  {
-    "Id": 6,
-    "Iso6391": "or",
-    "Iso6392": "ori",
-    "Iso6392B": "ori",
-    "Iso6392T": "ori",
-    "Iso6393": "ori",
-    "LocalName": "ଓଡି଼ଆ",
-    "Name": "Oriya"
-  },
-  {
-    "Id": 7,
-    "Iso6391": "os",
-    "Iso6392": "oss",
-    "Iso6392B": "oss",
-    "Iso6392T": "oss",
-    "Iso6393": "oss",
-    "LocalName": "Ирон æвзаг",
-    "Name": "Ossetian"
-  },
-  {
-    "Id": 8,
-    "Iso6391": "pa",
-    "Iso6392": "pan",
-    "Iso6392B": "pan",
-    "Iso6392T": "pan",
-    "Iso6393": "pan",
-    "LocalName": "ਪੰਜਾਬੀ",
-    "Name": "Panjabi"
-  },
-  {
-    "Id": 9,
-    "Iso6391": "pi",
-    "Iso6392": "pli",
-    "Iso6392B": "pli",
-    "Iso6392T": "pli",
-    "Iso6393": "pli",
-    "LocalName": "पाऴि",
-    "Name": "Pāli"
-  },
-  {
-    "Id": 10,
-    "Iso6391": "fa",
-    "Iso6392": "fas",
-    "Iso6392B": "per",
-    "Iso6392T": "fas",
-    "Iso6393": "fas",
-    "LocalName": "فارسی",
-    "Name": "Persian"
-  },
-  {
-    "Id": 11,
-    "Iso6391": "pl",
-    "Iso6392": "pol",
-    "Iso6392B": "pol",
-    "Iso6392T": "pol",
-    "Iso6393": "pol",
-    "LocalName": "Polski",
-    "Name": "Polish"
-  },
-  {
-    "Id": 12,
-    "Iso6391": "ps",
-    "Iso6392": "pus",
-    "Iso6392B": "pus",
-    "Iso6392T": "pus",
-    "Iso6393": "pus",
-    "LocalName": "پښتو",
-    "Name": "Pashto"
-  },
-  {
-    "Id": 13,
-    "Iso6391": "pt",
-    "Iso6392": "por",
-    "Iso6392B": "por",
-    "Iso6392T": "por",
-    "Iso6393": "por",
-    "LocalName": "Português",
-    "Name": "Portuguese"
-  },
-  {
-    "Id": 14,
-    "Iso6391": "qu",
-    "Iso6392": "que",
-    "Iso6392B": "que",
-    "Iso6392T": "que",
-    "Iso6393": "que",
-    "LocalName": "Runa Simi",
-    "Name": "Quechua"
-  },
-  {
-    "Id": 15,
-    "Iso6391": "rm",
-    "Iso6392": "roh",
-    "Iso6392B": "roh",
-    "Iso6392T": "roh",
-    "Iso6393": "roh",
-    "LocalName": "Rumantsch",
-    "Name": "Romansh"
-  },
-  {
-    "Id": 16,
-    "Iso6391": "rn",
-    "Iso6392": "run",
-    "Iso6392B": "run",
-    "Iso6392T": "run",
-    "Iso6393": "run",
-    "LocalName": "Kirundi",
-    "Name": "Kirundi"
-  },
-  {
-    "Id": 17,
-    "Iso6391": "ro",
-    "Iso6392": "ron",
-    "Iso6392B": "rum",
-    "Iso6392T": "ron",
-    "Iso6393": "ron",
-    "LocalName": "Română",
-    "Name": "Romanian"
-  },
-  {
-    "Id": 18,
-    "Iso6391": "ru",
-    "Iso6392": "rus",
-    "Iso6392B": "rus",
-    "Iso6392T": "rus",
-    "Iso6393": "rus",
-    "LocalName": "Русский",
-    "Name": "Russian"
-  },
-  {
-    "Id": 19,
-    "Iso6391": "sa",
-    "Iso6392": "san",
-    "Iso6392B": "san",
-    "Iso6392T": "san",
-    "Iso6393": "san",
-    "LocalName": "संस्कृतम्",
-    "Name": "Sanskrit"
-  },
-  {
-    "Id": 20,
-    "Iso6391": "sc",
-    "Iso6392": "srd",
-    "Iso6392B": "srd",
-    "Iso6392T": "srd",
-    "Iso6393": "srd",
-    "LocalName": "Sardu",
-    "Name": "Sardinian"
-  },
-  {
-    "Id": 21,
-    "Iso6391": "nr",
-    "Iso6392": "nbl",
-    "Iso6392B": "nbl",
-    "Iso6392T": "nbl",
-    "Iso6393": "nbl",
-    "LocalName": "isiNdebele",
-    "Name": "Southern Ndebele"
-  },
-  {
-    "Id": 22,
-    "Iso6391": "sd",
-    "Iso6392": "snd",
-    "Iso6392B": "snd",
-    "Iso6392T": "snd",
-    "Iso6393": "snd",
-    "LocalName": "سنڌي‎",
-    "Name": "Sindhi"
-  },
-  {
-    "Id": 23,
-    "Iso6391": "ii",
-    "Iso6392": "iii",
-    "Iso6392B": "iii",
-    "Iso6392T": "iii",
-    "Iso6393": "iii",
-    "LocalName": "ꆈꌠ꒿ Nuosuhxop",
-    "Name": "Nuosu"
-  },
-  {
-    "Id": 24,
-    "Iso6391": "nn",
-    "Iso6392": "nno",
-    "Iso6392B": "nno",
-    "Iso6392T": "nno",
-    "Iso6393": "nno",
-    "LocalName": "Norsk (Nynorsk)",
-    "Name": "Norwegian Nynorsk"
-  },
-  {
-    "Id": 25,
-    "Iso6391": "lt",
-    "Iso6392": "lit",
-    "Iso6392B": "lit",
-    "Iso6392T": "lit",
-    "Iso6393": "lit",
-    "LocalName": "Lietuvių",
-    "Name": "Lithuanian"
-  },
-  {
-    "Id": 26,
-    "Iso6391": "lu",
-    "Iso6392": "lub",
-    "Iso6392B": "lub",
-    "Iso6392T": "lub",
-    "Iso6393": "lub",
-    "LocalName": "Tshiluba",
-    "Name": "Luba-Katanga"
-  },
-  {
-    "Id": 27,
-    "Iso6391": "lv",
-    "Iso6392": "lav",
-    "Iso6392B": "lav",
-    "Iso6392T": "lav",
-    "Iso6393": "lav",
-    "LocalName": "Latviešu",
-    "Name": "Latvian"
-  },
-  {
-    "Id": 28,
-    "Iso6391": "gv",
-    "Iso6392": "glv",
-    "Iso6392B": "glv",
-    "Iso6392T": "glv",
-    "Iso6393": "glv",
-    "LocalName": "Gaelg",
-    "Name": "Manx"
-  },
-  {
-    "Id": 29,
-    "Iso6391": "mk",
-    "Iso6392": "mkd",
-    "Iso6392B": "mac",
-    "Iso6392T": "mkd",
-    "Iso6393": "mkd",
-    "LocalName": "Македонски",
-    "Name": "Macedonian"
-  },
-  {
-    "Id": 30,
-    "Iso6391": "mg",
-    "Iso6392": "mlg",
-    "Iso6392B": "mlg",
-    "Iso6392T": "mlg",
-    "Iso6393": "mlg",
-    "LocalName": "Malagasy",
-    "Name": "Malagasy"
-  },
-  {
-    "Id": 31,
-    "Iso6391": "ms",
-    "Iso6392": "msa",
-    "Iso6392B": "may",
-    "Iso6392T": "msa",
-    "Iso6393": "msa",
-    "LocalName": "Bahasa Melayu",
-    "Name": "Malay"
-  },
-  {
-    "Id": 32,
-    "Iso6391": "ml",
-    "Iso6392": "mal",
-    "Iso6392B": "mal",
-    "Iso6392T": "mal",
-    "Iso6393": "mal",
-    "LocalName": "മലയാളം",
-    "Name": "Malayalam"
-  },
-  {
-    "Id": 33,
-    "Iso6391": "mt",
-    "Iso6392": "mlt",
-    "Iso6392B": "mlt",
-    "Iso6392T": "mlt",
-    "Iso6393": "mlt",
-    "LocalName": "Malti",
-    "Name": "Maltese"
-  },
-  {
-    "Id": 34,
-    "Iso6391": "mi",
-    "Iso6392": "mri",
-    "Iso6392B": "mao",
-    "Iso6392T": "mri",
-    "Iso6393": "mri",
-    "LocalName": "Māori",
-    "Name": "Māori"
-  },
-  {
-    "Id": 35,
-    "Iso6391": "mr",
-    "Iso6392": "mar",
-    "Iso6392B": "mar",
-    "Iso6392T": "mar",
-    "Iso6393": "mar",
-    "LocalName": "मराठी",
-    "Name": "Marathi"
-  },
-  {
-    "Id": 36,
-    "Iso6391": "mh",
-    "Iso6392": "mah",
-    "Iso6392B": "mah",
-    "Iso6392T": "mah",
-    "Iso6393": "mah",
-    "LocalName": "Kajin M̧ajeļ",
-    "Name": "Marshallese"
-  },
-  {
-    "Id": 37,
-    "Iso6391": "mn",
-    "Iso6392": "mon",
-    "Iso6392B": "mon",
-    "Iso6392T": "mon",
-    "Iso6393": "mon",
-    "LocalName": "Монгол",
-    "Name": "Mongolian"
-  },
-  {
-    "Id": 38,
-    "Iso6391": "na",
-    "Iso6392": "nau",
-    "Iso6392B": "nau",
-    "Iso6392T": "nau",
-    "Iso6393": "nau",
-    "LocalName": "Dorerin Naoero",
-    "Name": "Nauru"
-  },
-  {
-    "Id": 39,
-    "Iso6391": "nv",
-    "Iso6392": "nav",
-    "Iso6392B": "nav",
-    "Iso6392T": "nav",
-    "Iso6393": "nav",
-    "LocalName": "Diné Bizaad",
-    "Name": "Navajo"
-  },
-  {
-    "Id": 40,
-    "Iso6391": "nd",
-    "Iso6392": "nde",
-    "Iso6392B": "nde",
-    "Iso6392T": "nde",
-    "Iso6393": "nde",
-    "LocalName": "isiNdebele",
-    "Name": "Northern Ndebele"
-  },
-  {
-    "Id": 41,
-    "Iso6391": "ne",
-    "Iso6392": "nep",
-    "Iso6392B": "nep",
-    "Iso6392T": "nep",
-    "Iso6393": "nep",
-    "LocalName": "नेपाली",
-    "Name": "Nepali"
-  },
-  {
-    "Id": 42,
-    "Iso6391": "ng",
-    "Iso6392": "ndo",
-    "Iso6392B": "ndo",
-    "Iso6392T": "ndo",
-    "Iso6393": "ndo",
-    "LocalName": "Owambo",
-    "Name": "Ndonga"
-  },
-  {
-    "Id": 43,
-    "Iso6391": "nb",
-    "Iso6392": "nob",
-    "Iso6392B": "nob",
-    "Iso6392T": "nob",
-    "Iso6393": "nob",
-    "LocalName": "Norsk (Bokmål)",
-    "Name": "Norwegian Bokmål"
-  },
-  {
-    "Id": 44,
-    "Iso6391": "no",
-    "Iso6392": "nor",
-    "Iso6392B": "nor",
-    "Iso6392T": "nor",
-    "Iso6393": "nor",
-    "LocalName": "Norsk",
-    "Name": "Norwegian"
-  },
-  {
-    "Id": 45,
-    "Iso6391": "lo",
-    "Iso6392": "lao",
-    "Iso6392B": "lao",
-    "Iso6392T": "lao",
-    "Iso6393": "lao",
-    "LocalName": "ພາສາລາວ",
-    "Name": "Lao"
-  },
-  {
-    "Id": 46,
-    "Iso6391": "se",
-    "Iso6392": "sme",
-    "Iso6392B": "sme",
-    "Iso6392T": "sme",
-    "Iso6393": "sme",
-    "LocalName": "Sámegiella",
-    "Name": "Northern Sami"
-  },
-  {
-    "Id": 47,
-    "Iso6391": "sg",
-    "Iso6392": "sag",
-    "Iso6392B": "sag",
-    "Iso6392T": "sag",
-    "Iso6393": "sag",
-    "LocalName": "Sängö",
-    "Name": "Sango"
-  },
-  {
-    "Id": 48,
-    "Iso6391": "tr",
-    "Iso6392": "tur",
-    "Iso6392B": "tur",
-    "Iso6392T": "tur",
-    "Iso6393": "tur",
-    "LocalName": "Türkçe",
-    "Name": "Turkish"
-  },
-  {
-    "Id": 49,
-    "Iso6391": "ts",
-    "Iso6392": "tso",
-    "Iso6392B": "tso",
-    "Iso6392T": "tso",
-    "Iso6393": "tso",
-    "LocalName": "Xitsonga",
-    "Name": "Tsonga"
-  },
-  {
-    "Id": 50,
-    "Iso6391": "tt",
-    "Iso6392": "tat",
-    "Iso6392B": "tat",
-    "Iso6392T": "tat",
-    "Iso6393": "tat",
-    "LocalName": "Татарча",
-    "Name": "Tatar"
-  },
-  {
-    "Id": 51,
-    "Iso6391": "tw",
-    "Iso6392": "twi",
-    "Iso6392B": "twi",
-    "Iso6392T": "twi",
-    "Iso6393": "twi",
-    "LocalName": "Twi",
-    "Name": "Twi"
-  },
-  {
-    "Id": 52,
-    "Iso6391": "ty",
-    "Iso6392": "tah",
-    "Iso6392B": "tah",
-    "Iso6392T": "tah",
-    "Iso6393": "tah",
-    "LocalName": "Reo Mā’ohi",
-    "Name": "Tahitian"
-  },
-  {
-    "Id": 53,
-    "Iso6391": "ug",
-    "Iso6392": "uig",
-    "Iso6392B": "uig",
-    "Iso6392T": "uig",
-    "Iso6393": "uig",
-    "LocalName": "ئۇيغۇرچه",
-    "Name": "Uyghur"
-  },
-  {
-    "Id": 54,
-    "Iso6391": "uk",
-    "Iso6392": "ukr",
-    "Iso6392B": "ukr",
-    "Iso6392T": "ukr",
-    "Iso6393": "ukr",
-    "LocalName": "Українська",
-    "Name": "Ukrainian"
-  },
-  {
-    "Id": 55,
-    "Iso6391": "ur",
-    "Iso6392": "urd",
-    "Iso6392B": "urd",
-    "Iso6392T": "urd",
-    "Iso6393": "urd",
-    "LocalName": "اردو",
-    "Name": "Urdu"
-  },
-  {
-    "Id": 56,
-    "Iso6391": "uz",
-    "Iso6392": "uzb",
-    "Iso6392B": "uzb",
-    "Iso6392T": "uzb",
-    "Iso6393": "uzb",
-    "LocalName": "O‘zbek",
-    "Name": "Uzbek"
-  },
-  {
-    "Id": 57,
-    "Iso6391": "ve",
-    "Iso6392": "ven",
-    "Iso6392B": "ven",
-    "Iso6392T": "ven",
-    "Iso6393": "ven",
-    "LocalName": "Tshivenḓa",
-    "Name": "Venda"
-  },
-  {
-    "Id": 58,
-    "Iso6391": "vi",
-    "Iso6392": "vie",
-    "Iso6392B": "vie",
-    "Iso6392T": "vie",
-    "Iso6393": "vie",
-    "LocalName": "Tiếng Việt",
-    "Name": "Vietnamese"
-  },
-  {
-    "Id": 59,
-    "Iso6391": "vo",
-    "Iso6392": "vol",
-    "Iso6392B": "vol",
-    "Iso6392T": "vol",
-    "Iso6393": "vol",
-    "LocalName": "Volapük",
-    "Name": "Volapük"
-  },
-  {
-    "Id": 60,
-    "Iso6391": "wa",
-    "Iso6392": "wln",
-    "Iso6392B": "wln",
-    "Iso6392T": "wln",
-    "Iso6393": "wln",
-    "LocalName": "Walon",
-    "Name": "Walloon"
-  },
-  {
-    "Id": 61,
-    "Iso6391": "cy",
-    "Iso6392": "cym",
-    "Iso6392B": "wel",
-    "Iso6392T": "cym",
-    "Iso6393": "cym",
-    "LocalName": "Cymraeg",
-    "Name": "Welsh"
-  },
-  {
-    "Id": 62,
-    "Iso6391": "wo",
-    "Iso6392": "wol",
-    "Iso6392B": "wol",
-    "Iso6392T": "wol",
-    "Iso6393": "wol",
-    "LocalName": "Wolof",
-    "Name": "Wolof"
-  },
-  {
-    "Id": 63,
-    "Iso6391": "fy",
-    "Iso6392": "fry",
-    "Iso6392B": "fry",
-    "Iso6392T": "fry",
-    "Iso6393": "fry",
-    "LocalName": "Frysk",
-    "Name": "Western Frisian"
-  },
-  {
-    "Id": 64,
-    "Iso6391": "xh",
-    "Iso6392": "xho",
-    "Iso6392B": "xho",
-    "Iso6392T": "xho",
-    "Iso6393": "xho",
-    "LocalName": "isiXhosa",
-    "Name": "Xhosa"
-  },
-  {
-    "Id": 65,
-    "Iso6391": "yi",
-    "Iso6392": "yid",
-    "Iso6392B": "yid",
-    "Iso6392T": "yid",
-    "Iso6393": "yid",
-    "LocalName": "ייִדיש",
-    "Name": "Yiddish"
-  },
-  {
-    "Id": 66,
-    "Iso6391": "yo",
-    "Iso6392": "yor",
-    "Iso6392B": "yor",
-    "Iso6392T": "yor",
-    "Iso6393": "yor",
-    "LocalName": "Yorùbá",
-    "Name": "Yoruba"
-  },
-  {
-    "Id": 67,
-    "Iso6391": "to",
-    "Iso6392": "ton",
-    "Iso6392B": "ton",
-    "Iso6392T": "ton",
-    "Iso6393": "ton",
-    "LocalName": "faka Tonga",
-    "Name": "Tonga"
-  },
-  {
-    "Id": 68,
-    "Iso6391": "sm",
-    "Iso6392": "smo",
-    "Iso6392B": "smo",
-    "Iso6392T": "smo",
-    "Iso6393": "smo",
-    "LocalName": "Gagana Sāmoa",
-    "Name": "Samoan"
-  },
-  {
-    "Id": 69,
-    "Iso6391": "tn",
-    "Iso6392": "tsn",
-    "Iso6392B": "tsn",
-    "Iso6392T": "tsn",
-    "Iso6393": "tsn",
-    "LocalName": "Setswana",
-    "Name": "Tswana"
-  },
-  {
-    "Id": 70,
-    "Iso6391": "tk",
-    "Iso6392": "tuk",
-    "Iso6392B": "tuk",
-    "Iso6392T": "tuk",
-    "Iso6393": "tuk",
-    "LocalName": "Türkmençe",
-    "Name": "Turkmen"
-  },
-  {
-    "Id": 71,
-    "Iso6391": "sr",
-    "Iso6392": "srp",
-    "Iso6392B": "srp",
-    "Iso6392T": "srp",
-    "Iso6393": "srp",
-    "LocalName": "Српски",
-    "Name": "Serbian"
-  },
-  {
-    "Id": 72,
-    "Iso6391": "gd",
-    "Iso6392": "gla",
-    "Iso6392B": "gla",
-    "Iso6392T": "gla",
-    "Iso6393": "gla",
-    "LocalName": "Gàidhlig",
-    "Name": "Gaelic"
-  },
-  {
-    "Id": 73,
-    "Iso6391": "sn",
-    "Iso6392": "sna",
-    "Iso6392B": "sna",
-    "Iso6392T": "sna",
-    "Iso6393": "sna",
-    "LocalName": "ChiShona",
-    "Name": "Shona"
-  },
-  {
-    "Id": 74,
-    "Iso6391": "si",
-    "Iso6392": "sin",
-    "Iso6392B": "sin",
-    "Iso6392T": "sin",
-    "Iso6393": "sin",
-    "LocalName": "සිංහල",
-    "Name": "Sinhala"
-  },
-  {
-    "Id": 75,
-    "Iso6391": "sk",
-    "Iso6392": "slk",
-    "Iso6392B": "slo",
-    "Iso6392T": "slk",
-    "Iso6393": "slk",
-    "LocalName": "Slovenčina",
-    "Name": "Slovak"
-  },
-  {
-    "Id": 76,
-    "Iso6391": "sl",
-    "Iso6392": "slv",
-    "Iso6392B": "slv",
-    "Iso6392T": "slv",
-    "Iso6393": "slv",
-    "LocalName": "Slovenščina",
-    "Name": "Slovene"
-  },
-  {
-    "Id": 77,
-    "Iso6391": "so",
-    "Iso6392": "som",
-    "Iso6392B": "som",
-    "Iso6392T": "som",
-    "Iso6393": "som",
-    "LocalName": "Soomaaliga",
-    "Name": "Somali"
-  },
-  {
-    "Id": 78,
-    "Iso6391": "st",
-    "Iso6392": "sot",
-    "Iso6392B": "sot",
-    "Iso6392T": "sot",
-    "Iso6393": "sot",
-    "LocalName": "Sesotho",
-    "Name": "Southern Sotho"
-  },
-  {
-    "Id": 79,
-    "Iso6391": "es",
-    "Iso6392": "spa",
-    "Iso6392B": "spa",
-    "Iso6392T": "spa",
-    "Iso6393": "spa",
-    "LocalName": "Español",
-    "Name": "Spanish"
-  },
-  {
-    "Id": 80,
-    "Iso6391": "su",
-    "Iso6392": "sun",
-    "Iso6392B": "sun",
-    "Iso6392T": "sun",
-    "Iso6393": "sun",
-    "LocalName": "Basa Sunda",
-    "Name": "Sundanese"
-  },
-  {
-    "Id": 81,
-    "Iso6391": "sw",
-    "Iso6392": "swa",
-    "Iso6392B": "swa",
-    "Iso6392T": "swa",
-    "Iso6393": "swa",
-    "LocalName": "Kiswahili",
-    "Name": "Swahili"
-  },
-  {
-    "Id": 82,
-    "Iso6391": "ss",
-    "Iso6392": "ssw",
-    "Iso6392B": "ssw",
-    "Iso6392T": "ssw",
-    "Iso6393": "ssw",
-    "LocalName": "SiSwati",
-    "Name": "Swati"
-  },
-  {
-    "Id": 83,
-    "Iso6391": "sv",
-    "Iso6392": "swe",
-    "Iso6392B": "swe",
-    "Iso6392T": "swe",
-    "Iso6393": "swe",
-    "LocalName": "Svenska",
-    "Name": "Swedish"
-  },
-  {
-    "Id": 84,
-    "Iso6391": "ta",
-    "Iso6392": "tam",
-    "Iso6392B": "tam",
-    "Iso6392T": "tam",
-    "Iso6393": "tam",
-    "LocalName": "தமிழ்",
-    "Name": "Tamil"
-  },
-  {
-    "Id": 85,
-    "Iso6391": "te",
-    "Iso6392": "tel",
-    "Iso6392B": "tel",
-    "Iso6392T": "tel",
-    "Iso6393": "tel",
-    "LocalName": "తెలుగు",
-    "Name": "Telugu"
-  },
-  {
-    "Id": 86,
-    "Iso6391": "tg",
-    "Iso6392": "tgk",
-    "Iso6392B": "tgk",
-    "Iso6392T": "tgk",
-    "Iso6393": "tgk",
-    "LocalName": "Тоҷикӣ",
-    "Name": "Tajik"
-  },
-  {
-    "Id": 87,
-    "Iso6391": "th",
-    "Iso6392": "tha",
-    "Iso6392B": "tha",
-    "Iso6392T": "tha",
-    "Iso6393": "tha",
-    "LocalName": "ภาษาไทย",
-    "Name": "Thai"
-  },
-  {
-    "Id": 88,
-    "Iso6391": "ti",
-    "Iso6392": "tir",
-    "Iso6392B": "tir",
-    "Iso6392T": "tir",
-    "Iso6393": "tir",
-    "LocalName": "ትግርኛ",
-    "Name": "Tigrinya"
-  },
-  {
-    "Id": 89,
-    "Iso6391": "bo",
-    "Iso6392": "bod",
-    "Iso6392B": "tib",
-    "Iso6392T": "bod",
-    "Iso6393": "bod",
-    "LocalName": "བོད་ཡིག",
-    "Name": "Tibetan Standard"
-  },
-  {
-    "Id": 90,
-    "Iso6391": "tl",
-    "Iso6392": "tgl",
-    "Iso6392B": "tgl",
-    "Iso6392T": "tgl",
-    "Iso6393": "tgl",
-    "LocalName": "Tagalog",
-    "Name": "Tagalog"
-  },
-  {
-    "Id": 91,
-    "Iso6391": "ln",
-    "Iso6392": "lin",
-    "Iso6392B": "lin",
-    "Iso6392T": "lin",
-    "Iso6393": "lin",
-    "LocalName": "Lingála",
-    "Name": "Lingala"
-  },
-  {
-    "Id": 92,
-    "Iso6391": "li",
-    "Iso6392": "lim",
-    "Iso6392B": "lim",
-    "Iso6392T": "lim",
-    "Iso6393": "lim",
-    "LocalName": "Limburgs",
-    "Name": "Limburgish"
-  },
-  {
-    "Id": 93,
-    "Iso6391": "lg",
-    "Iso6392": "lug",
-    "Iso6392B": "lug",
-    "Iso6392T": "lug",
-    "Iso6393": "lug",
-    "LocalName": "Luganda",
-    "Name": "Ganda"
-  },
-  {
-    "Id": 94,
-    "Iso6391": "my",
-    "Iso6392": "mya",
-    "Iso6392B": "bur",
-    "Iso6392T": "mya",
-    "Iso6393": "mya",
-    "LocalName": "မြန်မာဘာသာ",
-    "Name": "Burmese"
-  },
-  {
-    "Id": 95,
-    "Iso6391": "ca",
-    "Iso6392": "cat",
-    "Iso6392B": "cat",
-    "Iso6392T": "cat",
-    "Iso6393": "cat",
-    "LocalName": "Català",
-    "Name": "Catalan"
-  },
-  {
-    "Id": 96,
-    "Iso6391": "ch",
-    "Iso6392": "cha",
-    "Iso6392B": "cha",
-    "Iso6392T": "cha",
-    "Iso6393": "cha",
-    "LocalName": "Chamoru",
-    "Name": "Chamorro"
-  },
-  {
-    "Id": 97,
-    "Iso6391": "ce",
-    "Iso6392": "che",
-    "Iso6392B": "che",
-    "Iso6392T": "che",
-    "Iso6393": "che",
-    "LocalName": "Нохчийн",
-    "Name": "Chechen"
-  },
-  {
-    "Id": 98,
-    "Iso6391": "ny",
-    "Iso6392": "nya",
-    "Iso6392B": "nya",
-    "Iso6392T": "nya",
-    "Iso6393": "nya",
-    "LocalName": "Chichewa",
-    "Name": "Chichewa"
-  },
-  {
-    "Id": 99,
-    "Iso6391": "zh",
-    "Iso6392": "zho",
-    "Iso6392B": "chi",
-    "Iso6392T": "zho",
-    "Iso6393": "zho",
-    "LocalName": "中文",
-    "Name": "Chinese"
-  },
-  {
-    "Id": 100,
-    "Iso6391": "cv",
-    "Iso6392": "chv",
-    "Iso6392B": "chv",
-    "Iso6392T": "chv",
-    "Iso6393": "chv",
-    "LocalName": "Чӑвашла",
-    "Name": "Chuvash"
-  },
-  {
-    "Id": 101,
-    "Iso6391": "kw",
-    "Iso6392": "cor",
-    "Iso6392B": "cor",
-    "Iso6392T": "cor",
-    "Iso6393": "cor",
-    "LocalName": "Kernewek",
-    "Name": "Cornish"
-  },
-  {
-    "Id": 102,
-    "Iso6391": "co",
-    "Iso6392": "cos",
-    "Iso6392B": "cos",
-    "Iso6392T": "cos",
-    "Iso6393": "cos",
-    "LocalName": "Corsu",
-    "Name": "Corsican"
-  },
-  {
-    "Id": 103,
-    "Iso6391": "cr",
-    "Iso6392": "cre",
-    "Iso6392B": "cre",
-    "Iso6392T": "cre",
-    "Iso6393": "cre",
-    "LocalName": "ᓀᐦᐃᔭᐍᐏᐣ",
-    "Name": "Cree"
-  },
-  {
-    "Id": 104,
-    "Iso6391": "hr",
-    "Iso6392": "hrv",
-    "Iso6392B": "hrv",
-    "Iso6392T": "hrv",
-    "Iso6393": "hrv",
-    "LocalName": "Hrvatski",
-    "Name": "Croatian"
-  },
-  {
-    "Id": 105,
-    "Iso6391": "cs",
-    "Iso6392": "ces",
-    "Iso6392B": "cze",
-    "Iso6392T": "ces",
-    "Iso6393": "ces",
-    "LocalName": "Čeština",
-    "Name": "Czech"
-  },
-  {
-    "Id": 106,
-    "Iso6391": "da",
-    "Iso6392": "dan",
-    "Iso6392B": "dan",
-    "Iso6392T": "dan",
-    "Iso6393": "dan",
-    "LocalName": "Dansk",
-    "Name": "Danish"
-  },
-  {
-    "Id": 107,
-    "Iso6391": "dv",
-    "Iso6392": "div",
-    "Iso6392B": "div",
-    "Iso6392T": "div",
-    "Iso6393": "div",
-    "LocalName": "Divehi",
-    "Name": "Divehi"
-  },
-  {
-    "Id": 108,
-    "Iso6391": "nl",
-    "Iso6392": "nld",
-    "Iso6392B": "dut",
-    "Iso6392T": "nld",
-    "Iso6393": "nld",
-    "LocalName": "Nederlands",
-    "Name": "Dutch"
-  },
-  {
-    "Id": 109,
-    "Iso6391": "dz",
-    "Iso6392": "dzo",
-    "Iso6392B": "dzo",
-    "Iso6392T": "dzo",
-    "Iso6393": "dzo",
-    "LocalName": "རྫོང་ཁ",
-    "Name": "Dzongkha"
-  },
-  {
-    "Id": 110,
-    "Iso6391": "en",
-    "Iso6392": "eng",
-    "Iso6392B": "eng",
-    "Iso6392T": "eng",
-    "Iso6393": "eng",
-    "LocalName": "English",
-    "Name": "English"
-  },
-  {
-    "Id": 111,
-    "Iso6391": "eo",
-    "Iso6392": "epo",
-    "Iso6392B": "epo",
-    "Iso6392T": "epo",
-    "Iso6393": "epo",
-    "LocalName": "Esperanto",
-    "Name": "Esperanto"
-  },
-  {
-    "Id": 112,
-    "Iso6391": "et",
-    "Iso6392": "est",
-    "Iso6392B": "est",
-    "Iso6392T": "est",
-    "Iso6393": "est",
-    "LocalName": "Eesti",
-    "Name": "Estonian"
-  },
-  {
-    "Id": 113,
-    "Iso6391": "bg",
-    "Iso6392": "bul",
-    "Iso6392B": "bul",
-    "Iso6392T": "bul",
-    "Iso6393": "bul",
-    "LocalName": "Български",
-    "Name": "Bulgarian"
-  },
-  {
-    "Id": 114,
-    "Iso6391": "ee",
-    "Iso6392": "ewe",
-    "Iso6392B": "ewe",
-    "Iso6392T": "ewe",
-    "Iso6393": "ewe",
-    "LocalName": "Eʋegbe",
-    "Name": "Ewe"
-  },
-  {
-    "Id": 115,
-    "Iso6391": "br",
-    "Iso6392": "bre",
-    "Iso6392B": "bre",
-    "Iso6392T": "bre",
-    "Iso6393": "bre",
-    "LocalName": "Brezhoneg",
-    "Name": "Breton"
-  },
-  {
-    "Id": 116,
-    "Iso6391": "bi",
-    "Iso6392": "bis",
-    "Iso6392B": "bis",
-    "Iso6392T": "bis",
-    "Iso6393": "bis",
-    "LocalName": "Bislama",
-    "Name": "Bislama"
-  },
-  {
-    "Id": 117,
-    "Iso6391": "aa",
-    "Iso6392": "aar",
-    "Iso6392B": "aar",
-    "Iso6392T": "aar",
-    "Iso6393": "aar",
-    "LocalName": "Afaraf",
-    "Name": "Afar"
-  },
-  {
-    "Id": 118,
-    "Iso6391": "af",
-    "Iso6392": "afr",
-    "Iso6392B": "afr",
-    "Iso6392T": "afr",
-    "Iso6393": "afr",
-    "LocalName": "Afrikaans",
-    "Name": "Afrikaans"
-  },
-  {
-    "Id": 119,
-    "Iso6391": "ak",
-    "Iso6392": "aka",
-    "Iso6392B": "aka",
-    "Iso6392T": "aka",
-    "Iso6393": "aka",
-    "LocalName": "Akan",
-    "Name": "Akan"
-  },
-  {
-    "Id": 120,
-    "Iso6391": "sq",
-    "Iso6392": "sqi",
-    "Iso6392B": "alb",
-    "Iso6392T": "sqi",
-    "Iso6393": "sqi",
-    "LocalName": "Shqip",
-    "Name": "Albanian"
-  },
-  {
-    "Id": 121,
-    "Iso6391": "am",
-    "Iso6392": "amh",
-    "Iso6392B": "amh",
-    "Iso6392T": "amh",
-    "Iso6393": "amh",
-    "LocalName": "አማርኛ",
-    "Name": "Amharic"
-  },
-  {
-    "Id": 122,
-    "Iso6391": "ar",
-    "Iso6392": "ara",
-    "Iso6392B": "ara",
-    "Iso6392T": "ara",
-    "Iso6393": "ara",
-    "LocalName": "العربية",
-    "Name": "Arabic"
-  },
-  {
-    "Id": 123,
-    "Iso6391": "an",
-    "Iso6392": "arg",
-    "Iso6392B": "arg",
-    "Iso6392T": "arg",
-    "Iso6393": "arg",
-    "LocalName": "Aragonés",
-    "Name": "Aragonese"
-  },
-  {
-    "Id": 124,
-    "Iso6391": "hy",
-    "Iso6392": "hye",
-    "Iso6392B": "arm",
-    "Iso6392T": "hye",
-    "Iso6393": "hye",
-    "LocalName": "Հայերեն",
-    "Name": "Armenian"
-  },
-  {
-    "Id": 125,
-    "Iso6391": "as",
-    "Iso6392": "asm",
-    "Iso6392B": "asm",
-    "Iso6392T": "asm",
-    "Iso6393": "asm",
-    "LocalName": "অসমীয়া",
-    "Name": "Assamese"
-  },
-  {
-    "Id": 126,
-    "Iso6391": "av",
-    "Iso6392": "ava",
-    "Iso6392B": "ava",
-    "Iso6392T": "ava",
-    "Iso6393": "ava",
-    "LocalName": "Авар",
-    "Name": "Avaric"
-  },
-  {
-    "Id": 127,
-    "Iso6391": "ae",
-    "Iso6392": "ave",
-    "Iso6392B": "ave",
-    "Iso6392T": "ave",
-    "Iso6393": "ave",
-    "LocalName": "avesta",
-    "Name": "Avestan"
-  },
-  {
-    "Id": 128,
-    "Iso6391": "ay",
-    "Iso6392": "aym",
-    "Iso6392B": "aym",
-    "Iso6392T": "aym",
-    "Iso6393": "aym",
-    "LocalName": "Aymar",
-    "Name": "Aymara"
-  },
-  {
-    "Id": 129,
-    "Iso6391": "az",
-    "Iso6392": "aze",
-    "Iso6392B": "aze",
-    "Iso6392T": "aze",
-    "Iso6393": "aze",
-    "LocalName": "Azərbaycanca",
-    "Name": "Azerbaijani"
-  },
-  {
-    "Id": 130,
-    "Iso6391": "bm",
-    "Iso6392": "bam",
-    "Iso6392B": "bam",
-    "Iso6392T": "bam",
-    "Iso6393": "bam",
-    "LocalName": "Bamanankan",
-    "Name": "Bambara"
-  },
-  {
-    "Id": 131,
-    "Iso6391": "ba",
-    "Iso6392": "bak",
-    "Iso6392B": "bak",
-    "Iso6392T": "bak",
-    "Iso6393": "bak",
-    "LocalName": "Башҡортса",
-    "Name": "Bashkir"
-  },
-  {
-    "Id": 132,
-    "Iso6391": "eu",
-    "Iso6392": "eus",
-    "Iso6392B": "baq",
-    "Iso6392T": "eus",
-    "Iso6393": "eus",
-    "LocalName": "Euskara",
-    "Name": "Basque"
-  },
-  {
-    "Id": 133,
-    "Iso6391": "be",
-    "Iso6392": "bel",
-    "Iso6392B": "bel",
-    "Iso6392T": "bel",
-    "Iso6393": "bel",
-    "LocalName": "Беларуская",
-    "Name": "Belarusian"
-  },
-  {
-    "Id": 134,
-    "Iso6391": "bn",
-    "Iso6392": "ben",
-    "Iso6392B": "ben",
-    "Iso6392T": "ben",
-    "Iso6393": "ben",
-    "LocalName": "বাংলা",
-    "Name": "Bengali"
-  },
-  {
-    "Id": 135,
-    "Iso6391": "bh",
-    "Iso6392": "bih",
-    "Iso6392B": "bih",
-    "Iso6392T": "bih",
-    "Iso6393": "bih",
-    "LocalName": "भोजपुरी",
-    "Name": "Bihari"
-  },
-  {
-    "Id": 136,
-    "Iso6391": "bs",
-    "Iso6392": "bos",
-    "Iso6392B": "bos",
-    "Iso6392T": "bos",
-    "Iso6393": "bos",
-    "LocalName": "Bosanski",
-    "Name": "Bosnian"
-  },
-  {
-    "Id": 137,
-    "Iso6391": "fo",
-    "Iso6392": "fao",
-    "Iso6392B": "fao",
-    "Iso6392T": "fao",
-    "Iso6393": "fao",
-    "LocalName": "Føroyskt",
-    "Name": "Faroese"
-  },
-  {
-    "Id": 138,
-    "Iso6391": "fj",
-    "Iso6392": "fij",
-    "Iso6392B": "fij",
-    "Iso6392T": "fij",
-    "Iso6393": "fij",
-    "LocalName": "Na Vosa Vaka-Viti",
-    "Name": "Fijian"
-  },
-  {
-    "Id": 139,
-    "Iso6391": "fi",
-    "Iso6392": "fin",
-    "Iso6392B": "fin",
-    "Iso6392T": "fin",
-    "Iso6393": "fin",
-    "LocalName": "Suomi",
-    "Name": "Finnish"
-  },
-  {
-    "Id": 140,
-    "Iso6391": "iu",
-    "Iso6392": "iku",
-    "Iso6392B": "iku",
-    "Iso6392T": "iku",
-    "Iso6393": "iku",
-    "LocalName": "ᐃᓄᒃᑎᑐᑦ",
-    "Name": "Inuktitut"
-  },
-  {
-    "Id": 141,
-    "Iso6391": "ja",
-    "Iso6392": "jpn",
-    "Iso6392B": "jpn",
-    "Iso6392T": "jpn",
-    "Iso6393": "jpn",
-    "LocalName": "日本語",
-    "Name": "Japanese"
-  },
-  {
-    "Id": 142,
-    "Iso6391": "jv",
-    "Iso6392": "jav",
-    "Iso6392B": "jav",
-    "Iso6392T": "jav",
-    "Iso6393": "jav",
-    "LocalName": "Basa Jawa",
-    "Name": "Javanese"
-  },
-  {
-    "Id": 143,
-    "Iso6391": "kl",
-    "Iso6392": "kal",
-    "Iso6392B": "kal",
-    "Iso6392T": "kal",
-    "Iso6393": "kal",
-    "LocalName": "Kalaallisut",
-    "Name": "Kalaallisut"
-  },
-  {
-    "Id": 144,
-    "Iso6391": "kn",
-    "Iso6392": "kan",
-    "Iso6392B": "kan",
-    "Iso6392T": "kan",
-    "Iso6393": "kan",
-    "LocalName": "ಕನ್ನಡ",
-    "Name": "Kannada"
-  },
-  {
-    "Id": 145,
-    "Iso6391": "kr",
-    "Iso6392": "kau",
-    "Iso6392B": "kau",
-    "Iso6392T": "kau",
-    "Iso6393": "kau",
-    "LocalName": "Kanuri",
-    "Name": "Kanuri"
-  },
-  {
-    "Id": 146,
-    "Iso6391": "ks",
-    "Iso6392": "kas",
-    "Iso6392B": "kas",
-    "Iso6392T": "kas",
-    "Iso6393": "kas",
-    "LocalName": "كشميري",
-    "Name": "Kashmiri"
-  },
-  {
-    "Id": 147,
-    "Iso6391": "kk",
-    "Iso6392": "kaz",
-    "Iso6392B": "kaz",
-    "Iso6392T": "kaz",
-    "Iso6393": "kaz",
-    "LocalName": "Қазақша",
-    "Name": "Kazakh"
-  },
-  {
-    "Id": 148,
-    "Iso6391": "km",
-    "Iso6392": "khm",
-    "Iso6392B": "khm",
-    "Iso6392T": "khm",
-    "Iso6393": "khm",
-    "LocalName": "ភាសាខ្មែរ",
-    "Name": "Khmer"
-  },
-  {
-    "Id": 149,
-    "Iso6391": "ki",
-    "Iso6392": "kik",
-    "Iso6392B": "kik",
-    "Iso6392T": "kik",
-    "Iso6393": "kik",
-    "LocalName": "Gĩkũyũ",
-    "Name": "Kikuyu"
-  },
-  {
-    "Id": 150,
-    "Iso6391": "rw",
-    "Iso6392": "kin",
-    "Iso6392B": "kin",
-    "Iso6392T": "kin",
-    "Iso6393": "kin",
-    "LocalName": "Kinyarwanda",
-    "Name": "Kinyarwanda"
-  },
-  {
-    "Id": 151,
-    "Iso6391": "ky",
-    "Iso6392": "kir",
-    "Iso6392B": "kir",
-    "Iso6392T": "kir",
-    "Iso6393": "kir",
-    "LocalName": "Кыргызча",
-    "Name": "Kyrgyz"
-  },
-  {
-    "Id": 152,
-    "Iso6391": "kv",
-    "Iso6392": "kom",
-    "Iso6392B": "kom",
-    "Iso6392T": "kom",
-    "Iso6393": "kom",
-    "LocalName": "Коми",
-    "Name": "Komi"
-  },
-  {
-    "Id": 153,
-    "Iso6391": "kg",
-    "Iso6392": "kon",
-    "Iso6392B": "kon",
-    "Iso6392T": "kon",
-    "Iso6393": "kon",
-    "LocalName": "Kongo",
-    "Name": "Kongo"
-  },
-  {
-    "Id": 154,
-    "Iso6391": "ko",
-    "Iso6392": "kor",
-    "Iso6392B": "kor",
-    "Iso6392T": "kor",
-    "Iso6393": "kor",
-    "LocalName": "한국어",
-    "Name": "Korean"
-  },
-  {
-    "Id": 155,
-    "Iso6391": "ku",
-    "Iso6392": "kur",
-    "Iso6392B": "kur",
-    "Iso6392T": "kur",
-    "Iso6393": "kur",
-    "LocalName": "Kurdî",
-    "Name": "Kurdish"
-  },
-  {
-    "Id": 156,
-    "Iso6391": "kj",
-    "Iso6392": "kua",
-    "Iso6392B": "kua",
-    "Iso6392T": "kua",
-    "Iso6393": "kua",
-    "LocalName": "Kuanyama",
-    "Name": "Kwanyama"
-  },
-  {
-    "Id": 157,
-    "Iso6391": "la",
-    "Iso6392": "lat",
-    "Iso6392B": "lat",
-    "Iso6392T": "lat",
-    "Iso6393": "lat",
-    "LocalName": "Latina",
-    "Name": "Latin"
-  },
-  {
-    "Id": 158,
-    "Iso6391": "lb",
-    "Iso6392": "ltz",
-    "Iso6392B": "ltz",
-    "Iso6392T": "ltz",
-    "Iso6393": "ltz",
-    "LocalName": "Lëtzebuergesch",
-    "Name": "Luxembourgish"
-  },
-  {
-    "Id": 159,
-    "Iso6391": "it",
-    "Iso6392": "ita",
-    "Iso6392B": "ita",
-    "Iso6392T": "ita",
-    "Iso6393": "ita",
-    "LocalName": "Italiano",
-    "Name": "Italian"
-  },
-  {
-    "Id": 160,
-    "Iso6391": "is",
-    "Iso6392": "isl",
-    "Iso6392B": "ice",
-    "Iso6392T": "isl",
-    "Iso6393": "isl",
-    "LocalName": "Íslenska",
-    "Name": "Icelandic"
-  },
-  {
-    "Id": 161,
-    "Iso6391": "io",
-    "Iso6392": "ido",
-    "Iso6392B": "ido",
-    "Iso6392T": "ido",
-    "Iso6393": "ido",
-    "LocalName": "Ido",
-    "Name": "Ido"
-  },
-  {
-    "Id": 162,
-    "Iso6391": "ik",
-    "Iso6392": "ipk",
-    "Iso6392B": "ipk",
-    "Iso6392T": "ipk",
-    "Iso6393": "ipk",
-    "LocalName": "Iñupiak",
-    "Name": "Inupiaq"
-  },
-  {
-    "Id": 163,
-    "Iso6391": "fr",
-    "Iso6392": "fra",
-    "Iso6392B": "fre",
-    "Iso6392T": "fra",
-    "Iso6393": "fra",
-    "LocalName": "Français",
-    "Name": "French"
-  },
-  {
-    "Id": 164,
-    "Iso6391": "ff",
-    "Iso6392": "ful",
-    "Iso6392B": "ful",
-    "Iso6392T": "ful",
-    "Iso6393": "ful",
-    "LocalName": "Fulfulde",
-    "Name": "Fula"
-  },
-  {
-    "Id": 165,
-    "Iso6391": "gl",
-    "Iso6392": "glg",
-    "Iso6392B": "glg",
-    "Iso6392T": "glg",
-    "Iso6393": "glg",
-    "LocalName": "Galego",
-    "Name": "Galician"
-  },
-  {
-    "Id": 166,
-    "Iso6391": "ka",
-    "Iso6392": "kat",
-    "Iso6392B": "geo",
-    "Iso6392T": "kat",
-    "Iso6393": "kat",
-    "LocalName": "ქართული",
-    "Name": "Georgian"
-  },
-  {
-    "Id": 167,
-    "Iso6391": "de",
-    "Iso6392": "deu",
-    "Iso6392B": "ger",
-    "Iso6392T": "deu",
-    "Iso6393": "deu",
-    "LocalName": "Deutsch",
-    "Name": "German"
-  },
-  {
-    "Id": 168,
-    "Iso6391": "el",
-    "Iso6392": "ell",
-    "Iso6392B": "gre",
-    "Iso6392T": "ell",
-    "Iso6393": "ell",
-    "LocalName": "Ελληνικά",
-    "Name": "Greek"
-  },
-  {
-    "Id": 169,
-    "Iso6391": "gn",
-    "Iso6392": "grn",
-    "Iso6392B": "grn",
-    "Iso6392T": "grn",
-    "Iso6393": "grn",
-    "LocalName": "Avañe'ẽ",
-    "Name": "Guaraní"
-  },
-  {
-    "Id": 170,
-    "Iso6391": "gu",
-    "Iso6392": "guj",
-    "Iso6392B": "guj",
-    "Iso6392T": "guj",
-    "Iso6393": "guj",
-    "LocalName": "ગુજરાતી",
-    "Name": "Gujarati"
-  },
-  {
-    "Id": 171,
-    "Iso6391": "ht",
-    "Iso6392": "hat",
-    "Iso6392B": "hat",
-    "Iso6392T": "hat",
-    "Iso6393": "hat",
-    "LocalName": "Kreyòl Ayisyen",
-    "Name": "Haitian"
-  },
-  {
-    "Id": 172,
-    "Iso6391": "za",
-    "Iso6392": "zha",
-    "Iso6392B": "zha",
-    "Iso6392T": "zha",
-    "Iso6393": "zha",
-    "LocalName": "Cuengh",
-    "Name": "Zhuang"
-  },
-  {
-    "Id": 173,
-    "Iso6391": "ha",
-    "Iso6392": "hau",
-    "Iso6392B": "hau",
-    "Iso6392T": "hau",
-    "Iso6393": "hau",
-    "LocalName": "هَوُسَ",
-    "Name": "Hausa"
-  },
-  {
-    "Id": 174,
-    "Iso6391": "hz",
-    "Iso6392": "her",
-    "Iso6392B": "her",
-    "Iso6392T": "her",
-    "Iso6393": "her",
-    "LocalName": "Otjiherero",
-    "Name": "Herero"
-  },
-  {
-    "Id": 175,
-    "Iso6391": "hi",
-    "Iso6392": "hin",
-    "Iso6392B": "hin",
-    "Iso6392T": "hin",
-    "Iso6393": "hin",
-    "LocalName": "हिन्दी",
-    "Name": "Hindi"
-  },
-  {
-    "Id": 176,
-    "Iso6391": "ho",
-    "Iso6392": "hmo",
-    "Iso6392B": "hmo",
-    "Iso6392T": "hmo",
-    "Iso6393": "hmo",
-    "LocalName": "Hiri Motu",
-    "Name": "Hiri Motu"
-  },
-  {
-    "Id": 177,
-    "Iso6391": "hu",
-    "Iso6392": "hun",
-    "Iso6392B": "hun",
-    "Iso6392T": "hun",
-    "Iso6393": "hun",
-    "LocalName": "Magyar",
-    "Name": "Hungarian"
-  },
-  {
-    "Id": 178,
-    "Iso6391": "ia",
-    "Iso6392": "ina",
-    "Iso6392B": "ina",
-    "Iso6392T": "ina",
-    "Iso6393": "ina",
-    "LocalName": "Interlingua",
-    "Name": "Interlingua"
-  },
-  {
-    "Id": 179,
-    "Iso6391": "id",
-    "Iso6392": "ind",
-    "Iso6392B": "ind",
-    "Iso6392T": "ind",
-    "Iso6393": "ind",
-    "LocalName": "Bahasa Indonesia",
-    "Name": "Indonesian"
-  },
-  {
-    "Id": 180,
-    "Iso6391": "ie",
-    "Iso6392": "ile",
-    "Iso6392B": "ile",
-    "Iso6392T": "ile",
-    "Iso6393": "ile",
-    "LocalName": "Interlingue",
-    "Name": "Interlingue"
-  },
-  {
-    "Id": 181,
-    "Iso6391": "ga",
-    "Iso6392": "gle",
-    "Iso6392B": "gle",
-    "Iso6392T": "gle",
-    "Iso6393": "gle",
-    "LocalName": "Gaeilge",
-    "Name": "Irish"
-  },
-  {
-    "Id": 182,
-    "Iso6391": "ig",
-    "Iso6392": "ibo",
-    "Iso6392B": "ibo",
-    "Iso6392T": "ibo",
-    "Iso6393": "ibo",
-    "LocalName": "Igbo",
-    "Name": "Igbo"
-  },
-  {
-    "Id": 183,
-    "Iso6391": "he",
-    "Iso6392": "heb",
-    "Iso6392B": "heb",
-    "Iso6392T": "heb",
-    "Iso6393": "heb",
-    "LocalName": "עברית",
-    "Name": "Hebrew"
-  },
-  {
-    "Id": 184,
-    "Iso6391": "zu",
-    "Iso6392": "zul",
-    "Iso6392B": "zul",
-    "Iso6392T": "zul",
-    "Iso6393": "zul",
-    "LocalName": "isiZulu",
-    "Name": "Zulu"
+    "id": 1,
+    "iso6391": "ab",
+    "iso6392": "abk",
+    "iso6392B": "abk",
+    "iso6392T": "abk",
+    "iso6393": "abk",
+    "localName": "Аҧсуа",
+    "name": "Abkhaz"
+  },
+  {
+    "id": 2,
+    "iso6391": "oc",
+    "iso6392": "oci",
+    "iso6392B": "oci",
+    "iso6392T": "oci",
+    "iso6393": "oci",
+    "localName": "Occitan",
+    "name": "Occitan"
+  },
+  {
+    "id": 3,
+    "iso6391": "oj",
+    "iso6392": "oji",
+    "iso6392B": "oji",
+    "iso6392T": "oji",
+    "iso6393": "oji",
+    "localName": "ᐊᓂᔑᓈᐯᒧᐎᓐ",
+    "name": "Ojibwe"
+  },
+  {
+    "id": 4,
+    "iso6391": "cu",
+    "iso6392": "chu",
+    "iso6392B": "chu",
+    "iso6392T": "chu",
+    "iso6393": "chu",
+    "localName": "Словѣ́ньскъ",
+    "name": "Old Church Slavonic"
+  },
+  {
+    "id": 5,
+    "iso6391": "om",
+    "iso6392": "orm",
+    "iso6392B": "orm",
+    "iso6392T": "orm",
+    "iso6393": "orm",
+    "localName": "Afaan Oromoo",
+    "name": "Oromo"
+  },
+  {
+    "id": 6,
+    "iso6391": "or",
+    "iso6392": "ori",
+    "iso6392B": "ori",
+    "iso6392T": "ori",
+    "iso6393": "ori",
+    "localName": "ଓଡି଼ଆ",
+    "name": "Oriya"
+  },
+  {
+    "id": 7,
+    "iso6391": "os",
+    "iso6392": "oss",
+    "iso6392B": "oss",
+    "iso6392T": "oss",
+    "iso6393": "oss",
+    "localName": "Ирон æвзаг",
+    "name": "Ossetian"
+  },
+  {
+    "id": 8,
+    "iso6391": "pa",
+    "iso6392": "pan",
+    "iso6392B": "pan",
+    "iso6392T": "pan",
+    "iso6393": "pan",
+    "localName": "ਪੰਜਾਬੀ",
+    "name": "Panjabi"
+  },
+  {
+    "id": 9,
+    "iso6391": "pi",
+    "iso6392": "pli",
+    "iso6392B": "pli",
+    "iso6392T": "pli",
+    "iso6393": "pli",
+    "localName": "पाऴि",
+    "name": "Pāli"
+  },
+  {
+    "id": 10,
+    "iso6391": "fa",
+    "iso6392": "fas",
+    "iso6392B": "per",
+    "iso6392T": "fas",
+    "iso6393": "fas",
+    "localName": "فارسی",
+    "name": "Persian"
+  },
+  {
+    "id": 11,
+    "iso6391": "pl",
+    "iso6392": "pol",
+    "iso6392B": "pol",
+    "iso6392T": "pol",
+    "iso6393": "pol",
+    "localName": "Polski",
+    "name": "Polish"
+  },
+  {
+    "id": 12,
+    "iso6391": "ps",
+    "iso6392": "pus",
+    "iso6392B": "pus",
+    "iso6392T": "pus",
+    "iso6393": "pus",
+    "localName": "پښتو",
+    "name": "Pashto"
+  },
+  {
+    "id": 13,
+    "iso6391": "pt",
+    "iso6392": "por",
+    "iso6392B": "por",
+    "iso6392T": "por",
+    "iso6393": "por",
+    "localName": "Português",
+    "name": "Portuguese"
+  },
+  {
+    "id": 14,
+    "iso6391": "qu",
+    "iso6392": "que",
+    "iso6392B": "que",
+    "iso6392T": "que",
+    "iso6393": "que",
+    "localName": "Runa Simi",
+    "name": "Quechua"
+  },
+  {
+    "id": 15,
+    "iso6391": "rm",
+    "iso6392": "roh",
+    "iso6392B": "roh",
+    "iso6392T": "roh",
+    "iso6393": "roh",
+    "localName": "Rumantsch",
+    "name": "Romansh"
+  },
+  {
+    "id": 16,
+    "iso6391": "rn",
+    "iso6392": "run",
+    "iso6392B": "run",
+    "iso6392T": "run",
+    "iso6393": "run",
+    "localName": "Kirundi",
+    "name": "Kirundi"
+  },
+  {
+    "id": 17,
+    "iso6391": "ro",
+    "iso6392": "ron",
+    "iso6392B": "rum",
+    "iso6392T": "ron",
+    "iso6393": "ron",
+    "localName": "Română",
+    "name": "Romanian"
+  },
+  {
+    "id": 18,
+    "iso6391": "ru",
+    "iso6392": "rus",
+    "iso6392B": "rus",
+    "iso6392T": "rus",
+    "iso6393": "rus",
+    "localName": "Русский",
+    "name": "Russian"
+  },
+  {
+    "id": 19,
+    "iso6391": "sa",
+    "iso6392": "san",
+    "iso6392B": "san",
+    "iso6392T": "san",
+    "iso6393": "san",
+    "localName": "संस्कृतम्",
+    "name": "Sanskrit"
+  },
+  {
+    "id": 20,
+    "iso6391": "sc",
+    "iso6392": "srd",
+    "iso6392B": "srd",
+    "iso6392T": "srd",
+    "iso6393": "srd",
+    "localName": "Sardu",
+    "name": "Sardinian"
+  },
+  {
+    "id": 21,
+    "iso6391": "nr",
+    "iso6392": "nbl",
+    "iso6392B": "nbl",
+    "iso6392T": "nbl",
+    "iso6393": "nbl",
+    "localName": "isiNdebele",
+    "name": "Southern Ndebele"
+  },
+  {
+    "id": 22,
+    "iso6391": "sd",
+    "iso6392": "snd",
+    "iso6392B": "snd",
+    "iso6392T": "snd",
+    "iso6393": "snd",
+    "localName": "سنڌي‎",
+    "name": "Sindhi"
+  },
+  {
+    "id": 23,
+    "iso6391": "ii",
+    "iso6392": "iii",
+    "iso6392B": "iii",
+    "iso6392T": "iii",
+    "iso6393": "iii",
+    "localName": "ꆈꌠ꒿ Nuosuhxop",
+    "name": "Nuosu"
+  },
+  {
+    "id": 24,
+    "iso6391": "nn",
+    "iso6392": "nno",
+    "iso6392B": "nno",
+    "iso6392T": "nno",
+    "iso6393": "nno",
+    "localName": "Norsk (Nynorsk)",
+    "name": "Norwegian Nynorsk"
+  },
+  {
+    "id": 25,
+    "iso6391": "lt",
+    "iso6392": "lit",
+    "iso6392B": "lit",
+    "iso6392T": "lit",
+    "iso6393": "lit",
+    "localName": "Lietuvių",
+    "name": "Lithuanian"
+  },
+  {
+    "id": 26,
+    "iso6391": "lu",
+    "iso6392": "lub",
+    "iso6392B": "lub",
+    "iso6392T": "lub",
+    "iso6393": "lub",
+    "localName": "Tshiluba",
+    "name": "Luba-Katanga"
+  },
+  {
+    "id": 27,
+    "iso6391": "lv",
+    "iso6392": "lav",
+    "iso6392B": "lav",
+    "iso6392T": "lav",
+    "iso6393": "lav",
+    "localName": "Latviešu",
+    "name": "Latvian"
+  },
+  {
+    "id": 28,
+    "iso6391": "gv",
+    "iso6392": "glv",
+    "iso6392B": "glv",
+    "iso6392T": "glv",
+    "iso6393": "glv",
+    "localName": "Gaelg",
+    "name": "Manx"
+  },
+  {
+    "id": 29,
+    "iso6391": "mk",
+    "iso6392": "mkd",
+    "iso6392B": "mac",
+    "iso6392T": "mkd",
+    "iso6393": "mkd",
+    "localName": "Македонски",
+    "name": "Macedonian"
+  },
+  {
+    "id": 30,
+    "iso6391": "mg",
+    "iso6392": "mlg",
+    "iso6392B": "mlg",
+    "iso6392T": "mlg",
+    "iso6393": "mlg",
+    "localName": "Malagasy",
+    "name": "Malagasy"
+  },
+  {
+    "id": 31,
+    "iso6391": "ms",
+    "iso6392": "msa",
+    "iso6392B": "may",
+    "iso6392T": "msa",
+    "iso6393": "msa",
+    "localName": "Bahasa Melayu",
+    "name": "Malay"
+  },
+  {
+    "id": 32,
+    "iso6391": "ml",
+    "iso6392": "mal",
+    "iso6392B": "mal",
+    "iso6392T": "mal",
+    "iso6393": "mal",
+    "localName": "മലയാളം",
+    "name": "Malayalam"
+  },
+  {
+    "id": 33,
+    "iso6391": "mt",
+    "iso6392": "mlt",
+    "iso6392B": "mlt",
+    "iso6392T": "mlt",
+    "iso6393": "mlt",
+    "localName": "Malti",
+    "name": "Maltese"
+  },
+  {
+    "id": 34,
+    "iso6391": "mi",
+    "iso6392": "mri",
+    "iso6392B": "mao",
+    "iso6392T": "mri",
+    "iso6393": "mri",
+    "localName": "Māori",
+    "name": "Māori"
+  },
+  {
+    "id": 35,
+    "iso6391": "mr",
+    "iso6392": "mar",
+    "iso6392B": "mar",
+    "iso6392T": "mar",
+    "iso6393": "mar",
+    "localName": "मराठी",
+    "name": "Marathi"
+  },
+  {
+    "id": 36,
+    "iso6391": "mh",
+    "iso6392": "mah",
+    "iso6392B": "mah",
+    "iso6392T": "mah",
+    "iso6393": "mah",
+    "localName": "Kajin M̧ajeļ",
+    "name": "Marshallese"
+  },
+  {
+    "id": 37,
+    "iso6391": "mn",
+    "iso6392": "mon",
+    "iso6392B": "mon",
+    "iso6392T": "mon",
+    "iso6393": "mon",
+    "localName": "Монгол",
+    "name": "Mongolian"
+  },
+  {
+    "id": 38,
+    "iso6391": "na",
+    "iso6392": "nau",
+    "iso6392B": "nau",
+    "iso6392T": "nau",
+    "iso6393": "nau",
+    "localName": "Dorerin Naoero",
+    "name": "Nauru"
+  },
+  {
+    "id": 39,
+    "iso6391": "nv",
+    "iso6392": "nav",
+    "iso6392B": "nav",
+    "iso6392T": "nav",
+    "iso6393": "nav",
+    "localName": "Diné Bizaad",
+    "name": "Navajo"
+  },
+  {
+    "id": 40,
+    "iso6391": "nd",
+    "iso6392": "nde",
+    "iso6392B": "nde",
+    "iso6392T": "nde",
+    "iso6393": "nde",
+    "localName": "isiNdebele",
+    "name": "Northern Ndebele"
+  },
+  {
+    "id": 41,
+    "iso6391": "ne",
+    "iso6392": "nep",
+    "iso6392B": "nep",
+    "iso6392T": "nep",
+    "iso6393": "nep",
+    "localName": "नेपाली",
+    "name": "Nepali"
+  },
+  {
+    "id": 42,
+    "iso6391": "ng",
+    "iso6392": "ndo",
+    "iso6392B": "ndo",
+    "iso6392T": "ndo",
+    "iso6393": "ndo",
+    "localName": "Owambo",
+    "name": "Ndonga"
+  },
+  {
+    "id": 43,
+    "iso6391": "nb",
+    "iso6392": "nob",
+    "iso6392B": "nob",
+    "iso6392T": "nob",
+    "iso6393": "nob",
+    "localName": "Norsk (Bokmål)",
+    "name": "Norwegian Bokmål"
+  },
+  {
+    "id": 44,
+    "iso6391": "no",
+    "iso6392": "nor",
+    "iso6392B": "nor",
+    "iso6392T": "nor",
+    "iso6393": "nor",
+    "localName": "Norsk",
+    "name": "Norwegian"
+  },
+  {
+    "id": 45,
+    "iso6391": "lo",
+    "iso6392": "lao",
+    "iso6392B": "lao",
+    "iso6392T": "lao",
+    "iso6393": "lao",
+    "localName": "ພາສາລາວ",
+    "name": "Lao"
+  },
+  {
+    "id": 46,
+    "iso6391": "se",
+    "iso6392": "sme",
+    "iso6392B": "sme",
+    "iso6392T": "sme",
+    "iso6393": "sme",
+    "localName": "Sámegiella",
+    "name": "Northern Sami"
+  },
+  {
+    "id": 47,
+    "iso6391": "sg",
+    "iso6392": "sag",
+    "iso6392B": "sag",
+    "iso6392T": "sag",
+    "iso6393": "sag",
+    "localName": "Sängö",
+    "name": "Sango"
+  },
+  {
+    "id": 48,
+    "iso6391": "tr",
+    "iso6392": "tur",
+    "iso6392B": "tur",
+    "iso6392T": "tur",
+    "iso6393": "tur",
+    "localName": "Türkçe",
+    "name": "Turkish"
+  },
+  {
+    "id": 49,
+    "iso6391": "ts",
+    "iso6392": "tso",
+    "iso6392B": "tso",
+    "iso6392T": "tso",
+    "iso6393": "tso",
+    "localName": "Xitsonga",
+    "name": "Tsonga"
+  },
+  {
+    "id": 50,
+    "iso6391": "tt",
+    "iso6392": "tat",
+    "iso6392B": "tat",
+    "iso6392T": "tat",
+    "iso6393": "tat",
+    "localName": "Татарча",
+    "name": "Tatar"
+  },
+  {
+    "id": 51,
+    "iso6391": "tw",
+    "iso6392": "twi",
+    "iso6392B": "twi",
+    "iso6392T": "twi",
+    "iso6393": "twi",
+    "localName": "Twi",
+    "name": "Twi"
+  },
+  {
+    "id": 52,
+    "iso6391": "ty",
+    "iso6392": "tah",
+    "iso6392B": "tah",
+    "iso6392T": "tah",
+    "iso6393": "tah",
+    "localName": "Reo Mā’ohi",
+    "name": "Tahitian"
+  },
+  {
+    "id": 53,
+    "iso6391": "ug",
+    "iso6392": "uig",
+    "iso6392B": "uig",
+    "iso6392T": "uig",
+    "iso6393": "uig",
+    "localName": "ئۇيغۇرچه",
+    "name": "Uyghur"
+  },
+  {
+    "id": 54,
+    "iso6391": "uk",
+    "iso6392": "ukr",
+    "iso6392B": "ukr",
+    "iso6392T": "ukr",
+    "iso6393": "ukr",
+    "localName": "Українська",
+    "name": "Ukrainian"
+  },
+  {
+    "id": 55,
+    "iso6391": "ur",
+    "iso6392": "urd",
+    "iso6392B": "urd",
+    "iso6392T": "urd",
+    "iso6393": "urd",
+    "localName": "اردو",
+    "name": "Urdu"
+  },
+  {
+    "id": 56,
+    "iso6391": "uz",
+    "iso6392": "uzb",
+    "iso6392B": "uzb",
+    "iso6392T": "uzb",
+    "iso6393": "uzb",
+    "localName": "O‘zbek",
+    "name": "Uzbek"
+  },
+  {
+    "id": 57,
+    "iso6391": "ve",
+    "iso6392": "ven",
+    "iso6392B": "ven",
+    "iso6392T": "ven",
+    "iso6393": "ven",
+    "localName": "Tshivenḓa",
+    "name": "Venda"
+  },
+  {
+    "id": 58,
+    "iso6391": "vi",
+    "iso6392": "vie",
+    "iso6392B": "vie",
+    "iso6392T": "vie",
+    "iso6393": "vie",
+    "localName": "Tiếng Việt",
+    "name": "Vietnamese"
+  },
+  {
+    "id": 59,
+    "iso6391": "vo",
+    "iso6392": "vol",
+    "iso6392B": "vol",
+    "iso6392T": "vol",
+    "iso6393": "vol",
+    "localName": "Volapük",
+    "name": "Volapük"
+  },
+  {
+    "id": 60,
+    "iso6391": "wa",
+    "iso6392": "wln",
+    "iso6392B": "wln",
+    "iso6392T": "wln",
+    "iso6393": "wln",
+    "localName": "Walon",
+    "name": "Walloon"
+  },
+  {
+    "id": 61,
+    "iso6391": "cy",
+    "iso6392": "cym",
+    "iso6392B": "wel",
+    "iso6392T": "cym",
+    "iso6393": "cym",
+    "localName": "Cymraeg",
+    "name": "Welsh"
+  },
+  {
+    "id": 62,
+    "iso6391": "wo",
+    "iso6392": "wol",
+    "iso6392B": "wol",
+    "iso6392T": "wol",
+    "iso6393": "wol",
+    "localName": "Wolof",
+    "name": "Wolof"
+  },
+  {
+    "id": 63,
+    "iso6391": "fy",
+    "iso6392": "fry",
+    "iso6392B": "fry",
+    "iso6392T": "fry",
+    "iso6393": "fry",
+    "localName": "Frysk",
+    "name": "Western Frisian"
+  },
+  {
+    "id": 64,
+    "iso6391": "xh",
+    "iso6392": "xho",
+    "iso6392B": "xho",
+    "iso6392T": "xho",
+    "iso6393": "xho",
+    "localName": "isiXhosa",
+    "name": "Xhosa"
+  },
+  {
+    "id": 65,
+    "iso6391": "yi",
+    "iso6392": "yid",
+    "iso6392B": "yid",
+    "iso6392T": "yid",
+    "iso6393": "yid",
+    "localName": "ייִדיש",
+    "name": "Yiddish"
+  },
+  {
+    "id": 66,
+    "iso6391": "yo",
+    "iso6392": "yor",
+    "iso6392B": "yor",
+    "iso6392T": "yor",
+    "iso6393": "yor",
+    "localName": "Yorùbá",
+    "name": "Yoruba"
+  },
+  {
+    "id": 67,
+    "iso6391": "to",
+    "iso6392": "ton",
+    "iso6392B": "ton",
+    "iso6392T": "ton",
+    "iso6393": "ton",
+    "localName": "faka Tonga",
+    "name": "Tonga"
+  },
+  {
+    "id": 68,
+    "iso6391": "sm",
+    "iso6392": "smo",
+    "iso6392B": "smo",
+    "iso6392T": "smo",
+    "iso6393": "smo",
+    "localName": "Gagana Sāmoa",
+    "name": "Samoan"
+  },
+  {
+    "id": 69,
+    "iso6391": "tn",
+    "iso6392": "tsn",
+    "iso6392B": "tsn",
+    "iso6392T": "tsn",
+    "iso6393": "tsn",
+    "localName": "Setswana",
+    "name": "Tswana"
+  },
+  {
+    "id": 70,
+    "iso6391": "tk",
+    "iso6392": "tuk",
+    "iso6392B": "tuk",
+    "iso6392T": "tuk",
+    "iso6393": "tuk",
+    "localName": "Türkmençe",
+    "name": "Turkmen"
+  },
+  {
+    "id": 71,
+    "iso6391": "sr",
+    "iso6392": "srp",
+    "iso6392B": "srp",
+    "iso6392T": "srp",
+    "iso6393": "srp",
+    "localName": "Српски",
+    "name": "Serbian"
+  },
+  {
+    "id": 72,
+    "iso6391": "gd",
+    "iso6392": "gla",
+    "iso6392B": "gla",
+    "iso6392T": "gla",
+    "iso6393": "gla",
+    "localName": "Gàidhlig",
+    "name": "Gaelic"
+  },
+  {
+    "id": 73,
+    "iso6391": "sn",
+    "iso6392": "sna",
+    "iso6392B": "sna",
+    "iso6392T": "sna",
+    "iso6393": "sna",
+    "localName": "ChiShona",
+    "name": "Shona"
+  },
+  {
+    "id": 74,
+    "iso6391": "si",
+    "iso6392": "sin",
+    "iso6392B": "sin",
+    "iso6392T": "sin",
+    "iso6393": "sin",
+    "localName": "සිංහල",
+    "name": "Sinhala"
+  },
+  {
+    "id": 75,
+    "iso6391": "sk",
+    "iso6392": "slk",
+    "iso6392B": "slo",
+    "iso6392T": "slk",
+    "iso6393": "slk",
+    "localName": "Slovenčina",
+    "name": "Slovak"
+  },
+  {
+    "id": 76,
+    "iso6391": "sl",
+    "iso6392": "slv",
+    "iso6392B": "slv",
+    "iso6392T": "slv",
+    "iso6393": "slv",
+    "localName": "Slovenščina",
+    "name": "Slovene"
+  },
+  {
+    "id": 77,
+    "iso6391": "so",
+    "iso6392": "som",
+    "iso6392B": "som",
+    "iso6392T": "som",
+    "iso6393": "som",
+    "localName": "Soomaaliga",
+    "name": "Somali"
+  },
+  {
+    "id": 78,
+    "iso6391": "st",
+    "iso6392": "sot",
+    "iso6392B": "sot",
+    "iso6392T": "sot",
+    "iso6393": "sot",
+    "localName": "Sesotho",
+    "name": "Southern Sotho"
+  },
+  {
+    "id": 79,
+    "iso6391": "es",
+    "iso6392": "spa",
+    "iso6392B": "spa",
+    "iso6392T": "spa",
+    "iso6393": "spa",
+    "localName": "Español",
+    "name": "Spanish"
+  },
+  {
+    "id": 80,
+    "iso6391": "su",
+    "iso6392": "sun",
+    "iso6392B": "sun",
+    "iso6392T": "sun",
+    "iso6393": "sun",
+    "localName": "Basa Sunda",
+    "name": "Sundanese"
+  },
+  {
+    "id": 81,
+    "iso6391": "sw",
+    "iso6392": "swa",
+    "iso6392B": "swa",
+    "iso6392T": "swa",
+    "iso6393": "swa",
+    "localName": "Kiswahili",
+    "name": "Swahili"
+  },
+  {
+    "id": 82,
+    "iso6391": "ss",
+    "iso6392": "ssw",
+    "iso6392B": "ssw",
+    "iso6392T": "ssw",
+    "iso6393": "ssw",
+    "localName": "SiSwati",
+    "name": "Swati"
+  },
+  {
+    "id": 83,
+    "iso6391": "sv",
+    "iso6392": "swe",
+    "iso6392B": "swe",
+    "iso6392T": "swe",
+    "iso6393": "swe",
+    "localName": "Svenska",
+    "name": "Swedish"
+  },
+  {
+    "id": 84,
+    "iso6391": "ta",
+    "iso6392": "tam",
+    "iso6392B": "tam",
+    "iso6392T": "tam",
+    "iso6393": "tam",
+    "localName": "தமிழ்",
+    "name": "Tamil"
+  },
+  {
+    "id": 85,
+    "iso6391": "te",
+    "iso6392": "tel",
+    "iso6392B": "tel",
+    "iso6392T": "tel",
+    "iso6393": "tel",
+    "localName": "తెలుగు",
+    "name": "Telugu"
+  },
+  {
+    "id": 86,
+    "iso6391": "tg",
+    "iso6392": "tgk",
+    "iso6392B": "tgk",
+    "iso6392T": "tgk",
+    "iso6393": "tgk",
+    "localName": "Тоҷикӣ",
+    "name": "Tajik"
+  },
+  {
+    "id": 87,
+    "iso6391": "th",
+    "iso6392": "tha",
+    "iso6392B": "tha",
+    "iso6392T": "tha",
+    "iso6393": "tha",
+    "localName": "ภาษาไทย",
+    "name": "Thai"
+  },
+  {
+    "id": 88,
+    "iso6391": "ti",
+    "iso6392": "tir",
+    "iso6392B": "tir",
+    "iso6392T": "tir",
+    "iso6393": "tir",
+    "localName": "ትግርኛ",
+    "name": "Tigrinya"
+  },
+  {
+    "id": 89,
+    "iso6391": "bo",
+    "iso6392": "bod",
+    "iso6392B": "tib",
+    "iso6392T": "bod",
+    "iso6393": "bod",
+    "localName": "བོད་ཡིག",
+    "name": "Tibetan Standard"
+  },
+  {
+    "id": 90,
+    "iso6391": "tl",
+    "iso6392": "tgl",
+    "iso6392B": "tgl",
+    "iso6392T": "tgl",
+    "iso6393": "tgl",
+    "localName": "Tagalog",
+    "name": "Tagalog"
+  },
+  {
+    "id": 91,
+    "iso6391": "ln",
+    "iso6392": "lin",
+    "iso6392B": "lin",
+    "iso6392T": "lin",
+    "iso6393": "lin",
+    "localName": "Lingála",
+    "name": "Lingala"
+  },
+  {
+    "id": 92,
+    "iso6391": "li",
+    "iso6392": "lim",
+    "iso6392B": "lim",
+    "iso6392T": "lim",
+    "iso6393": "lim",
+    "localName": "Limburgs",
+    "name": "Limburgish"
+  },
+  {
+    "id": 93,
+    "iso6391": "lg",
+    "iso6392": "lug",
+    "iso6392B": "lug",
+    "iso6392T": "lug",
+    "iso6393": "lug",
+    "localName": "Luganda",
+    "name": "Ganda"
+  },
+  {
+    "id": 94,
+    "iso6391": "my",
+    "iso6392": "mya",
+    "iso6392B": "bur",
+    "iso6392T": "mya",
+    "iso6393": "mya",
+    "localName": "မြန်မာဘာသာ",
+    "name": "Burmese"
+  },
+  {
+    "id": 95,
+    "iso6391": "ca",
+    "iso6392": "cat",
+    "iso6392B": "cat",
+    "iso6392T": "cat",
+    "iso6393": "cat",
+    "localName": "Català",
+    "name": "Catalan"
+  },
+  {
+    "id": 96,
+    "iso6391": "ch",
+    "iso6392": "cha",
+    "iso6392B": "cha",
+    "iso6392T": "cha",
+    "iso6393": "cha",
+    "localName": "Chamoru",
+    "name": "Chamorro"
+  },
+  {
+    "id": 97,
+    "iso6391": "ce",
+    "iso6392": "che",
+    "iso6392B": "che",
+    "iso6392T": "che",
+    "iso6393": "che",
+    "localName": "Нохчийн",
+    "name": "Chechen"
+  },
+  {
+    "id": 98,
+    "iso6391": "ny",
+    "iso6392": "nya",
+    "iso6392B": "nya",
+    "iso6392T": "nya",
+    "iso6393": "nya",
+    "localName": "Chichewa",
+    "name": "Chichewa"
+  },
+  {
+    "id": 99,
+    "iso6391": "zh",
+    "iso6392": "zho",
+    "iso6392B": "chi",
+    "iso6392T": "zho",
+    "iso6393": "zho",
+    "localName": "中文",
+    "name": "Chinese"
+  },
+  {
+    "id": 100,
+    "iso6391": "cv",
+    "iso6392": "chv",
+    "iso6392B": "chv",
+    "iso6392T": "chv",
+    "iso6393": "chv",
+    "localName": "Чӑвашла",
+    "name": "Chuvash"
+  },
+  {
+    "id": 101,
+    "iso6391": "kw",
+    "iso6392": "cor",
+    "iso6392B": "cor",
+    "iso6392T": "cor",
+    "iso6393": "cor",
+    "localName": "Kernewek",
+    "name": "Cornish"
+  },
+  {
+    "id": 102,
+    "iso6391": "co",
+    "iso6392": "cos",
+    "iso6392B": "cos",
+    "iso6392T": "cos",
+    "iso6393": "cos",
+    "localName": "Corsu",
+    "name": "Corsican"
+  },
+  {
+    "id": 103,
+    "iso6391": "cr",
+    "iso6392": "cre",
+    "iso6392B": "cre",
+    "iso6392T": "cre",
+    "iso6393": "cre",
+    "localName": "ᓀᐦᐃᔭᐍᐏᐣ",
+    "name": "Cree"
+  },
+  {
+    "id": 104,
+    "iso6391": "hr",
+    "iso6392": "hrv",
+    "iso6392B": "hrv",
+    "iso6392T": "hrv",
+    "iso6393": "hrv",
+    "localName": "Hrvatski",
+    "name": "Croatian"
+  },
+  {
+    "id": 105,
+    "iso6391": "cs",
+    "iso6392": "ces",
+    "iso6392B": "cze",
+    "iso6392T": "ces",
+    "iso6393": "ces",
+    "localName": "Čeština",
+    "name": "Czech"
+  },
+  {
+    "id": 106,
+    "iso6391": "da",
+    "iso6392": "dan",
+    "iso6392B": "dan",
+    "iso6392T": "dan",
+    "iso6393": "dan",
+    "localName": "Dansk",
+    "name": "Danish"
+  },
+  {
+    "id": 107,
+    "iso6391": "dv",
+    "iso6392": "div",
+    "iso6392B": "div",
+    "iso6392T": "div",
+    "iso6393": "div",
+    "localName": "Divehi",
+    "name": "Divehi"
+  },
+  {
+    "id": 108,
+    "iso6391": "nl",
+    "iso6392": "nld",
+    "iso6392B": "dut",
+    "iso6392T": "nld",
+    "iso6393": "nld",
+    "localName": "Nederlands",
+    "name": "Dutch"
+  },
+  {
+    "id": 109,
+    "iso6391": "dz",
+    "iso6392": "dzo",
+    "iso6392B": "dzo",
+    "iso6392T": "dzo",
+    "iso6393": "dzo",
+    "localName": "རྫོང་ཁ",
+    "name": "Dzongkha"
+  },
+  {
+    "id": 110,
+    "iso6391": "en",
+    "iso6392": "eng",
+    "iso6392B": "eng",
+    "iso6392T": "eng",
+    "iso6393": "eng",
+    "localName": "English",
+    "name": "English"
+  },
+  {
+    "id": 111,
+    "iso6391": "eo",
+    "iso6392": "epo",
+    "iso6392B": "epo",
+    "iso6392T": "epo",
+    "iso6393": "epo",
+    "localName": "Esperanto",
+    "name": "Esperanto"
+  },
+  {
+    "id": 112,
+    "iso6391": "et",
+    "iso6392": "est",
+    "iso6392B": "est",
+    "iso6392T": "est",
+    "iso6393": "est",
+    "localName": "Eesti",
+    "name": "Estonian"
+  },
+  {
+    "id": 113,
+    "iso6391": "bg",
+    "iso6392": "bul",
+    "iso6392B": "bul",
+    "iso6392T": "bul",
+    "iso6393": "bul",
+    "localName": "Български",
+    "name": "Bulgarian"
+  },
+  {
+    "id": 114,
+    "iso6391": "ee",
+    "iso6392": "ewe",
+    "iso6392B": "ewe",
+    "iso6392T": "ewe",
+    "iso6393": "ewe",
+    "localName": "Eʋegbe",
+    "name": "Ewe"
+  },
+  {
+    "id": 115,
+    "iso6391": "br",
+    "iso6392": "bre",
+    "iso6392B": "bre",
+    "iso6392T": "bre",
+    "iso6393": "bre",
+    "localName": "Brezhoneg",
+    "name": "Breton"
+  },
+  {
+    "id": 116,
+    "iso6391": "bi",
+    "iso6392": "bis",
+    "iso6392B": "bis",
+    "iso6392T": "bis",
+    "iso6393": "bis",
+    "localName": "Bislama",
+    "name": "Bislama"
+  },
+  {
+    "id": 117,
+    "iso6391": "aa",
+    "iso6392": "aar",
+    "iso6392B": "aar",
+    "iso6392T": "aar",
+    "iso6393": "aar",
+    "localName": "Afaraf",
+    "name": "Afar"
+  },
+  {
+    "id": 118,
+    "iso6391": "af",
+    "iso6392": "afr",
+    "iso6392B": "afr",
+    "iso6392T": "afr",
+    "iso6393": "afr",
+    "localName": "Afrikaans",
+    "name": "Afrikaans"
+  },
+  {
+    "id": 119,
+    "iso6391": "ak",
+    "iso6392": "aka",
+    "iso6392B": "aka",
+    "iso6392T": "aka",
+    "iso6393": "aka",
+    "localName": "Akan",
+    "name": "Akan"
+  },
+  {
+    "id": 120,
+    "iso6391": "sq",
+    "iso6392": "sqi",
+    "iso6392B": "alb",
+    "iso6392T": "sqi",
+    "iso6393": "sqi",
+    "localName": "Shqip",
+    "name": "Albanian"
+  },
+  {
+    "id": 121,
+    "iso6391": "am",
+    "iso6392": "amh",
+    "iso6392B": "amh",
+    "iso6392T": "amh",
+    "iso6393": "amh",
+    "localName": "አማርኛ",
+    "name": "Amharic"
+  },
+  {
+    "id": 122,
+    "iso6391": "ar",
+    "iso6392": "ara",
+    "iso6392B": "ara",
+    "iso6392T": "ara",
+    "iso6393": "ara",
+    "localName": "العربية",
+    "name": "Arabic"
+  },
+  {
+    "id": 123,
+    "iso6391": "an",
+    "iso6392": "arg",
+    "iso6392B": "arg",
+    "iso6392T": "arg",
+    "iso6393": "arg",
+    "localName": "Aragonés",
+    "name": "Aragonese"
+  },
+  {
+    "id": 124,
+    "iso6391": "hy",
+    "iso6392": "hye",
+    "iso6392B": "arm",
+    "iso6392T": "hye",
+    "iso6393": "hye",
+    "localName": "Հայերեն",
+    "name": "Armenian"
+  },
+  {
+    "id": 125,
+    "iso6391": "as",
+    "iso6392": "asm",
+    "iso6392B": "asm",
+    "iso6392T": "asm",
+    "iso6393": "asm",
+    "localName": "অসমীয়া",
+    "name": "Assamese"
+  },
+  {
+    "id": 126,
+    "iso6391": "av",
+    "iso6392": "ava",
+    "iso6392B": "ava",
+    "iso6392T": "ava",
+    "iso6393": "ava",
+    "localName": "Авар",
+    "name": "Avaric"
+  },
+  {
+    "id": 127,
+    "iso6391": "ae",
+    "iso6392": "ave",
+    "iso6392B": "ave",
+    "iso6392T": "ave",
+    "iso6393": "ave",
+    "localName": "avesta",
+    "name": "Avestan"
+  },
+  {
+    "id": 128,
+    "iso6391": "ay",
+    "iso6392": "aym",
+    "iso6392B": "aym",
+    "iso6392T": "aym",
+    "iso6393": "aym",
+    "localName": "Aymar",
+    "name": "Aymara"
+  },
+  {
+    "id": 129,
+    "iso6391": "az",
+    "iso6392": "aze",
+    "iso6392B": "aze",
+    "iso6392T": "aze",
+    "iso6393": "aze",
+    "localName": "Azərbaycanca",
+    "name": "Azerbaijani"
+  },
+  {
+    "id": 130,
+    "iso6391": "bm",
+    "iso6392": "bam",
+    "iso6392B": "bam",
+    "iso6392T": "bam",
+    "iso6393": "bam",
+    "localName": "Bamanankan",
+    "name": "Bambara"
+  },
+  {
+    "id": 131,
+    "iso6391": "ba",
+    "iso6392": "bak",
+    "iso6392B": "bak",
+    "iso6392T": "bak",
+    "iso6393": "bak",
+    "localName": "Башҡортса",
+    "name": "Bashkir"
+  },
+  {
+    "id": 132,
+    "iso6391": "eu",
+    "iso6392": "eus",
+    "iso6392B": "baq",
+    "iso6392T": "eus",
+    "iso6393": "eus",
+    "localName": "Euskara",
+    "name": "Basque"
+  },
+  {
+    "id": 133,
+    "iso6391": "be",
+    "iso6392": "bel",
+    "iso6392B": "bel",
+    "iso6392T": "bel",
+    "iso6393": "bel",
+    "localName": "Беларуская",
+    "name": "Belarusian"
+  },
+  {
+    "id": 134,
+    "iso6391": "bn",
+    "iso6392": "ben",
+    "iso6392B": "ben",
+    "iso6392T": "ben",
+    "iso6393": "ben",
+    "localName": "বাংলা",
+    "name": "Bengali"
+  },
+  {
+    "id": 135,
+    "iso6391": "bh",
+    "iso6392": "bih",
+    "iso6392B": "bih",
+    "iso6392T": "bih",
+    "iso6393": "bih",
+    "localName": "भोजपुरी",
+    "name": "Bihari"
+  },
+  {
+    "id": 136,
+    "iso6391": "bs",
+    "iso6392": "bos",
+    "iso6392B": "bos",
+    "iso6392T": "bos",
+    "iso6393": "bos",
+    "localName": "Bosanski",
+    "name": "Bosnian"
+  },
+  {
+    "id": 137,
+    "iso6391": "fo",
+    "iso6392": "fao",
+    "iso6392B": "fao",
+    "iso6392T": "fao",
+    "iso6393": "fao",
+    "localName": "Føroyskt",
+    "name": "Faroese"
+  },
+  {
+    "id": 138,
+    "iso6391": "fj",
+    "iso6392": "fij",
+    "iso6392B": "fij",
+    "iso6392T": "fij",
+    "iso6393": "fij",
+    "localName": "Na Vosa Vaka-Viti",
+    "name": "Fijian"
+  },
+  {
+    "id": 139,
+    "iso6391": "fi",
+    "iso6392": "fin",
+    "iso6392B": "fin",
+    "iso6392T": "fin",
+    "iso6393": "fin",
+    "localName": "Suomi",
+    "name": "Finnish"
+  },
+  {
+    "id": 140,
+    "iso6391": "iu",
+    "iso6392": "iku",
+    "iso6392B": "iku",
+    "iso6392T": "iku",
+    "iso6393": "iku",
+    "localName": "ᐃᓄᒃᑎᑐᑦ",
+    "name": "Inuktitut"
+  },
+  {
+    "id": 141,
+    "iso6391": "ja",
+    "iso6392": "jpn",
+    "iso6392B": "jpn",
+    "iso6392T": "jpn",
+    "iso6393": "jpn",
+    "localName": "日本語",
+    "name": "Japanese"
+  },
+  {
+    "id": 142,
+    "iso6391": "jv",
+    "iso6392": "jav",
+    "iso6392B": "jav",
+    "iso6392T": "jav",
+    "iso6393": "jav",
+    "localName": "Basa Jawa",
+    "name": "Javanese"
+  },
+  {
+    "id": 143,
+    "iso6391": "kl",
+    "iso6392": "kal",
+    "iso6392B": "kal",
+    "iso6392T": "kal",
+    "iso6393": "kal",
+    "localName": "Kalaallisut",
+    "name": "Kalaallisut"
+  },
+  {
+    "id": 144,
+    "iso6391": "kn",
+    "iso6392": "kan",
+    "iso6392B": "kan",
+    "iso6392T": "kan",
+    "iso6393": "kan",
+    "localName": "ಕನ್ನಡ",
+    "name": "Kannada"
+  },
+  {
+    "id": 145,
+    "iso6391": "kr",
+    "iso6392": "kau",
+    "iso6392B": "kau",
+    "iso6392T": "kau",
+    "iso6393": "kau",
+    "localName": "Kanuri",
+    "name": "Kanuri"
+  },
+  {
+    "id": 146,
+    "iso6391": "ks",
+    "iso6392": "kas",
+    "iso6392B": "kas",
+    "iso6392T": "kas",
+    "iso6393": "kas",
+    "localName": "كشميري",
+    "name": "Kashmiri"
+  },
+  {
+    "id": 147,
+    "iso6391": "kk",
+    "iso6392": "kaz",
+    "iso6392B": "kaz",
+    "iso6392T": "kaz",
+    "iso6393": "kaz",
+    "localName": "Қазақша",
+    "name": "Kazakh"
+  },
+  {
+    "id": 148,
+    "iso6391": "km",
+    "iso6392": "khm",
+    "iso6392B": "khm",
+    "iso6392T": "khm",
+    "iso6393": "khm",
+    "localName": "ភាសាខ្មែរ",
+    "name": "Khmer"
+  },
+  {
+    "id": 149,
+    "iso6391": "ki",
+    "iso6392": "kik",
+    "iso6392B": "kik",
+    "iso6392T": "kik",
+    "iso6393": "kik",
+    "localName": "Gĩkũyũ",
+    "name": "Kikuyu"
+  },
+  {
+    "id": 150,
+    "iso6391": "rw",
+    "iso6392": "kin",
+    "iso6392B": "kin",
+    "iso6392T": "kin",
+    "iso6393": "kin",
+    "localName": "Kinyarwanda",
+    "name": "Kinyarwanda"
+  },
+  {
+    "id": 151,
+    "iso6391": "ky",
+    "iso6392": "kir",
+    "iso6392B": "kir",
+    "iso6392T": "kir",
+    "iso6393": "kir",
+    "localName": "Кыргызча",
+    "name": "Kyrgyz"
+  },
+  {
+    "id": 152,
+    "iso6391": "kv",
+    "iso6392": "kom",
+    "iso6392B": "kom",
+    "iso6392T": "kom",
+    "iso6393": "kom",
+    "localName": "Коми",
+    "name": "Komi"
+  },
+  {
+    "id": 153,
+    "iso6391": "kg",
+    "iso6392": "kon",
+    "iso6392B": "kon",
+    "iso6392T": "kon",
+    "iso6393": "kon",
+    "localName": "Kongo",
+    "name": "Kongo"
+  },
+  {
+    "id": 154,
+    "iso6391": "ko",
+    "iso6392": "kor",
+    "iso6392B": "kor",
+    "iso6392T": "kor",
+    "iso6393": "kor",
+    "localName": "한국어",
+    "name": "Korean"
+  },
+  {
+    "id": 155,
+    "iso6391": "ku",
+    "iso6392": "kur",
+    "iso6392B": "kur",
+    "iso6392T": "kur",
+    "iso6393": "kur",
+    "localName": "Kurdî",
+    "name": "Kurdish"
+  },
+  {
+    "id": 156,
+    "iso6391": "kj",
+    "iso6392": "kua",
+    "iso6392B": "kua",
+    "iso6392T": "kua",
+    "iso6393": "kua",
+    "localName": "Kuanyama",
+    "name": "Kwanyama"
+  },
+  {
+    "id": 157,
+    "iso6391": "la",
+    "iso6392": "lat",
+    "iso6392B": "lat",
+    "iso6392T": "lat",
+    "iso6393": "lat",
+    "localName": "Latina",
+    "name": "Latin"
+  },
+  {
+    "id": 158,
+    "iso6391": "lb",
+    "iso6392": "ltz",
+    "iso6392B": "ltz",
+    "iso6392T": "ltz",
+    "iso6393": "ltz",
+    "localName": "Lëtzebuergesch",
+    "name": "Luxembourgish"
+  },
+  {
+    "id": 159,
+    "iso6391": "it",
+    "iso6392": "ita",
+    "iso6392B": "ita",
+    "iso6392T": "ita",
+    "iso6393": "ita",
+    "localName": "Italiano",
+    "name": "Italian"
+  },
+  {
+    "id": 160,
+    "iso6391": "is",
+    "iso6392": "isl",
+    "iso6392B": "ice",
+    "iso6392T": "isl",
+    "iso6393": "isl",
+    "localName": "Íslenska",
+    "name": "Icelandic"
+  },
+  {
+    "id": 161,
+    "iso6391": "io",
+    "iso6392": "ido",
+    "iso6392B": "ido",
+    "iso6392T": "ido",
+    "iso6393": "ido",
+    "localName": "Ido",
+    "name": "Ido"
+  },
+  {
+    "id": 162,
+    "iso6391": "ik",
+    "iso6392": "ipk",
+    "iso6392B": "ipk",
+    "iso6392T": "ipk",
+    "iso6393": "ipk",
+    "localName": "Iñupiak",
+    "name": "Inupiaq"
+  },
+  {
+    "id": 163,
+    "iso6391": "fr",
+    "iso6392": "fra",
+    "iso6392B": "fre",
+    "iso6392T": "fra",
+    "iso6393": "fra",
+    "localName": "Français",
+    "name": "French"
+  },
+  {
+    "id": 164,
+    "iso6391": "ff",
+    "iso6392": "ful",
+    "iso6392B": "ful",
+    "iso6392T": "ful",
+    "iso6393": "ful",
+    "localName": "Fulfulde",
+    "name": "Fula"
+  },
+  {
+    "id": 165,
+    "iso6391": "gl",
+    "iso6392": "glg",
+    "iso6392B": "glg",
+    "iso6392T": "glg",
+    "iso6393": "glg",
+    "localName": "Galego",
+    "name": "Galician"
+  },
+  {
+    "id": 166,
+    "iso6391": "ka",
+    "iso6392": "kat",
+    "iso6392B": "geo",
+    "iso6392T": "kat",
+    "iso6393": "kat",
+    "localName": "ქართული",
+    "name": "Georgian"
+  },
+  {
+    "id": 167,
+    "iso6391": "de",
+    "iso6392": "deu",
+    "iso6392B": "ger",
+    "iso6392T": "deu",
+    "iso6393": "deu",
+    "localName": "Deutsch",
+    "name": "German"
+  },
+  {
+    "id": 168,
+    "iso6391": "el",
+    "iso6392": "ell",
+    "iso6392B": "gre",
+    "iso6392T": "ell",
+    "iso6393": "ell",
+    "localName": "Ελληνικά",
+    "name": "Greek"
+  },
+  {
+    "id": 169,
+    "iso6391": "gn",
+    "iso6392": "grn",
+    "iso6392B": "grn",
+    "iso6392T": "grn",
+    "iso6393": "grn",
+    "localName": "Avañe'ẽ",
+    "name": "Guaraní"
+  },
+  {
+    "id": 170,
+    "iso6391": "gu",
+    "iso6392": "guj",
+    "iso6392B": "guj",
+    "iso6392T": "guj",
+    "iso6393": "guj",
+    "localName": "ગુજરાતી",
+    "name": "Gujarati"
+  },
+  {
+    "id": 171,
+    "iso6391": "ht",
+    "iso6392": "hat",
+    "iso6392B": "hat",
+    "iso6392T": "hat",
+    "iso6393": "hat",
+    "localName": "Kreyòl Ayisyen",
+    "name": "Haitian"
+  },
+  {
+    "id": 172,
+    "iso6391": "za",
+    "iso6392": "zha",
+    "iso6392B": "zha",
+    "iso6392T": "zha",
+    "iso6393": "zha",
+    "localName": "Cuengh",
+    "name": "Zhuang"
+  },
+  {
+    "id": 173,
+    "iso6391": "ha",
+    "iso6392": "hau",
+    "iso6392B": "hau",
+    "iso6392T": "hau",
+    "iso6393": "hau",
+    "localName": "هَوُسَ",
+    "name": "Hausa"
+  },
+  {
+    "id": 174,
+    "iso6391": "hz",
+    "iso6392": "her",
+    "iso6392B": "her",
+    "iso6392T": "her",
+    "iso6393": "her",
+    "localName": "Otjiherero",
+    "name": "Herero"
+  },
+  {
+    "id": 175,
+    "iso6391": "hi",
+    "iso6392": "hin",
+    "iso6392B": "hin",
+    "iso6392T": "hin",
+    "iso6393": "hin",
+    "localName": "हिन्दी",
+    "name": "Hindi"
+  },
+  {
+    "id": 176,
+    "iso6391": "ho",
+    "iso6392": "hmo",
+    "iso6392B": "hmo",
+    "iso6392T": "hmo",
+    "iso6393": "hmo",
+    "localName": "Hiri Motu",
+    "name": "Hiri Motu"
+  },
+  {
+    "id": 177,
+    "iso6391": "hu",
+    "iso6392": "hun",
+    "iso6392B": "hun",
+    "iso6392T": "hun",
+    "iso6393": "hun",
+    "localName": "Magyar",
+    "name": "Hungarian"
+  },
+  {
+    "id": 178,
+    "iso6391": "ia",
+    "iso6392": "ina",
+    "iso6392B": "ina",
+    "iso6392T": "ina",
+    "iso6393": "ina",
+    "localName": "Interlingua",
+    "name": "Interlingua"
+  },
+  {
+    "id": 179,
+    "iso6391": "id",
+    "iso6392": "ind",
+    "iso6392B": "ind",
+    "iso6392T": "ind",
+    "iso6393": "ind",
+    "localName": "Bahasa Indonesia",
+    "name": "Indonesian"
+  },
+  {
+    "id": 180,
+    "iso6391": "ie",
+    "iso6392": "ile",
+    "iso6392B": "ile",
+    "iso6392T": "ile",
+    "iso6393": "ile",
+    "localName": "Interlingue",
+    "name": "Interlingue"
+  },
+  {
+    "id": 181,
+    "iso6391": "ga",
+    "iso6392": "gle",
+    "iso6392B": "gle",
+    "iso6392T": "gle",
+    "iso6393": "gle",
+    "localName": "Gaeilge",
+    "name": "Irish"
+  },
+  {
+    "id": 182,
+    "iso6391": "ig",
+    "iso6392": "ibo",
+    "iso6392B": "ibo",
+    "iso6392T": "ibo",
+    "iso6393": "ibo",
+    "localName": "Igbo",
+    "name": "Igbo"
+  },
+  {
+    "id": 183,
+    "iso6391": "he",
+    "iso6392": "heb",
+    "iso6392B": "heb",
+    "iso6392T": "heb",
+    "iso6393": "heb",
+    "localName": "עברית",
+    "name": "Hebrew"
+  },
+  {
+    "id": 184,
+    "iso6391": "zu",
+    "iso6392": "zul",
+    "iso6392B": "zul",
+    "iso6392T": "zul",
+    "iso6393": "zul",
+    "localName": "isiZulu",
+    "name": "Zulu"
   }
 ]

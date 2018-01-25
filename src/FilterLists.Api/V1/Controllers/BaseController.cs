@@ -8,6 +8,7 @@ namespace FilterLists.Api.V1.Controllers
     [ResponseCache(CacheProfileName = "Long-Lived")]
     public class BaseController : Controller
     {
+        protected const int MemoryCacheSlidingExpirationSeconds = 30;
         protected readonly IMemoryCache MemoryCache;
 
         protected BaseController(IMemoryCache memoryCache)

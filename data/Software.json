@@ -1,20 +1,20 @@
 ﻿[
   {
-    "Id": 1,
-    "DownloadUrl": "https://github.com/gorhill/uBlock#installation",
-    "HomeUrl": "https://github.com/gorhill/uBlock",
-    "Name": "uBlock Origin"
+    "id": 1,
+    "downloadUrl": "https://github.com/gorhill/uBlock#installation",
+    "homeUrl": "https://github.com/gorhill/uBlock",
+    "name": "uBlock Origin"
   },
   {
-    "Id": 2,
-    "DownloadUrl": "https://adblockplus.org/",
-    "HomeUrl": "https://adblockplus.org/",
-    "Name": "Adblock Plus"
+    "id": 2,
+    "downloadUrl": "https://adblockplus.org/",
+    "homeUrl": "https://adblockplus.org/",
+    "name": "Adblock Plus"
   },
   {
-    "Id": 3,
-    "DownloadUrl": "https://adguard.com/en/download.html",
-    "HomeUrl": "https://adguard.com/",
-    "Name": "AdGuard"
+    "id": 3,
+    "downloadUrl": "https://adguard.com/en/download.html",
+    "homeUrl": "https://adguard.com/",
+    "name": "AdGuard"
   }
 ]
