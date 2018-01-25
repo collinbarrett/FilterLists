@@ -1,4 +1,4 @@
-﻿namespace FilterLists.Services.Models
+﻿namespace FilterLists.Services.Models.Seed
 {
     public class LanguageSeedDto
     {

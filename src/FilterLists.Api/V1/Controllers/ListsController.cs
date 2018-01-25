@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using FilterLists.Services.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
@@ -16,12 +17,12 @@ namespace FilterLists.Api.V1.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return MemoryCache.GetOrCreate(CacheKeys.Entry, entry =>
+            return await MemoryCache.GetOrCreateAsync(CacheKeys.Entry, entry =>
             {
-                entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(86400);
-                return Json(filterListService.GetAllSummaries());
+                entry.SlidingExpiration = TimeSpan.FromSeconds(3);
+                return Task.FromResult(Json(filterListService.GetAllSummaries()));
             });
         }
     }
