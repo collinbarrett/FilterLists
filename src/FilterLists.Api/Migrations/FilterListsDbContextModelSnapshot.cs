@@ -79,7 +79,7 @@ namespace FilterLists.Api.Migrations
                     b.ToTable("filterlists");
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.FilterListLanguage", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.FilterListLanguage", b =>
                 {
                     b.Property<int>("FilterListId");
 
@@ -100,7 +100,7 @@ namespace FilterLists.Api.Migrations
                     b.ToTable("filterlists_languages");
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.FilterListMaintainer", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.FilterListMaintainer", b =>
                 {
                     b.Property<int>("FilterListId");
 
@@ -121,7 +121,7 @@ namespace FilterLists.Api.Migrations
                     b.ToTable("filterlists_maintainers");
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.FilterListRule", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.FilterListRule", b =>
                 {
                     b.Property<int>("FilterListId");
 
@@ -142,7 +142,7 @@ namespace FilterLists.Api.Migrations
                     b.ToTable("filterlists_rules");
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.Fork", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.Fork", b =>
                 {
                     b.Property<int>("ForkFilterListId");
 
@@ -161,48 +161,6 @@ namespace FilterLists.Api.Migrations
                     b.HasIndex("UpstreamFilterListId");
 
                     b.ToTable("forks");
-                });
-
-            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.Merge", b =>
-                {
-                    b.Property<int>("MergeFilterListId");
-
-                    b.Property<int>("UpstreamFilterListId");
-
-                    b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.HasKey("MergeFilterListId", "UpstreamFilterListId");
-
-                    b.HasIndex("UpstreamFilterListId");
-
-                    b.ToTable("merges");
-                });
-
-            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.SoftwareSyntax", b =>
-                {
-                    b.Property<int>("SoftwareId");
-
-                    b.Property<int>("SyntaxId");
-
-                    b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.HasKey("SoftwareId", "SyntaxId");
-
-                    b.HasIndex("SyntaxId");
-
-                    b.ToTable("software_syntaxes");
                 });
 
             modelBuilder.Entity("FilterLists.Data.Entities.Language", b =>
@@ -304,6 +262,27 @@ namespace FilterLists.Api.Migrations
                     b.ToTable("maintainers");
                 });
 
+            modelBuilder.Entity("FilterLists.Data.Entities.Merge", b =>
+                {
+                    b.Property<int>("MergeFilterListId");
+
+                    b.Property<int>("UpstreamFilterListId");
+
+                    b.Property<DateTime>("CreatedDateUtc")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
+
+                    b.Property<DateTime>("ModifiedDateUtc")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("TIMESTAMP");
+
+                    b.HasKey("MergeFilterListId", "UpstreamFilterListId");
+
+                    b.HasIndex("UpstreamFilterListId");
+
+                    b.ToTable("merges");
+                });
+
             modelBuilder.Entity("FilterLists.Data.Entities.Rule", b =>
                 {
                     b.Property<int>("Id")
@@ -323,28 +302,6 @@ namespace FilterLists.Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("rules");
-                });
-
-            modelBuilder.Entity("FilterLists.Data.Entities.Snapshot", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.Property<int>("FilterListId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("FilterListId");
-
-                    b.ToTable("snapshots");
                 });
 
             modelBuilder.Entity("FilterLists.Data.Entities.Software", b =>
@@ -373,6 +330,27 @@ namespace FilterLists.Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("software");
+                });
+
+            modelBuilder.Entity("FilterLists.Data.Entities.SoftwareSyntax", b =>
+                {
+                    b.Property<int>("SoftwareId");
+
+                    b.Property<int>("SyntaxId");
+
+                    b.Property<DateTime>("CreatedDateUtc")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
+
+                    b.Property<DateTime>("ModifiedDateUtc")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("TIMESTAMP");
+
+                    b.HasKey("SoftwareId", "SyntaxId");
+
+                    b.HasIndex("SyntaxId");
+
+                    b.ToTable("software_syntaxes");
                 });
 
             modelBuilder.Entity("FilterLists.Data.Entities.Syntax", b =>
@@ -411,7 +389,7 @@ namespace FilterLists.Api.Migrations
                         .HasForeignKey("SyntaxId");
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.FilterListLanguage", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.FilterListLanguage", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.FilterList", "FilterList")
                         .WithMany("FilterListLanguages")
@@ -424,7 +402,7 @@ namespace FilterLists.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.FilterListMaintainer", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.FilterListMaintainer", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.FilterList", "FilterList")
                         .WithMany("FilterListMaintainers")
@@ -437,7 +415,7 @@ namespace FilterLists.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.FilterListRule", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.FilterListRule", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.FilterList", "FilterList")
                         .WithMany("FilterListRules")
@@ -450,7 +428,7 @@ namespace FilterLists.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.Fork", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.Fork", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.FilterList", "ForkFilterList")
                         .WithMany()
@@ -463,7 +441,7 @@ namespace FilterLists.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.Merge", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.Merge", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.FilterList", "MergeFilterList")
                         .WithMany()
@@ -476,7 +454,7 @@ namespace FilterLists.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.SoftwareSyntax", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.SoftwareSyntax", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.Software", "Software")
                         .WithMany("SoftwareSyntaxes")
@@ -486,14 +464,6 @@ namespace FilterLists.Api.Migrations
                     b.HasOne("FilterLists.Data.Entities.Syntax", "Syntax")
                         .WithMany("SoftwareSyntaxes")
                         .HasForeignKey("SyntaxId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("FilterLists.Data.Entities.Snapshot", b =>
-                {
-                    b.HasOne("FilterLists.Data.Entities.FilterList")
-                        .WithMany("Snapshots")
-                        .HasForeignKey("FilterListId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
