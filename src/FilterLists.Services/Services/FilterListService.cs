@@ -19,7 +19,8 @@ namespace FilterLists.Services.Services
 
         public async Task<IEnumerable<FilterListSummaryDto>> GetAllSummaries()
         {
-            return await filterListsDbContext.Set<FilterList>().ProjectTo<FilterListSummaryDto>().ToListAsync();
+            return await filterListsDbContext.Set<FilterList>().AsNoTracking().ProjectTo<FilterListSummaryDto>()
+                .ToListAsync();
         }
     }
 }
