@@ -10,7 +10,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
         {
             entityTypeBuilder.ToTable("snapshots");
             entityTypeBuilder.Property(x => x.Content)
-                .HasColumnType("TEXT")
+                .HasColumnType("MEDIUMTEXT")
                 .IsRequired();
             entityTypeBuilder.Ignore(x => x.ModifiedDateUtc);
             base.Configure(entityTypeBuilder);

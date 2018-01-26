@@ -18,6 +18,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
                     b => b.MigrationsAssembly("FilterLists.Api")));
             services.TryAddScoped<SeedService>();
             services.TryAddScoped<FilterListService>();
+            services.TryAddScoped<ScrapeService>();
             services.AddAutoMapper();
         }
     }
