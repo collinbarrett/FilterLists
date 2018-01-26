@@ -15,9 +15,9 @@ namespace FilterLists.Services.Services
             this.filterListsDbContext = filterListsDbContext;
         }
 
-        public async Task<IEnumerable<TMapped>> GetAll<TEntity, TMapped>() where TEntity : class
+        public async Task<IEnumerable<TSeedDto>> GetAll<TEntity, TSeedDto>() where TEntity : class
         {
-            return await filterListsDbContext.Set<TEntity>().AsNoTracking().ProjectTo<TMapped>().ToArrayAsync();
+            return await filterListsDbContext.Set<TEntity>().AsNoTracking().ProjectTo<TSeedDto>().ToArrayAsync();
         }
     }
 }
