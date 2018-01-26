@@ -18,14 +18,28 @@ namespace FilterLists.Services.Services
 
         public void Scrape()
         {
-            var list = filterListsDbContext.FilterLists.First();
+            var lists = filterListsDbContext.FilterLists.Take(5);
+            foreach (var list in lists) AddSnapshot(list);
+            filterListsDbContext.SaveChangesAsync();
+        }
+
+        private void AddSnapshot(FilterList list)
+        {
             var snapshot = GetContent(list.ViewUrl);
+            try
+            {
+                if (snapshot.Result == null) return;
+            }
+            catch (AggregateException)
+            {
+                return;
+            }
+
             filterListsDbContext.Snapshots.Add(new Snapshot
             {
                 Content = snapshot.Result,
                 FilterListId = list.Id
             });
-            filterListsDbContext.SaveChangesAsync();
         }
 
         private static async Task<string> GetContent(string url)

@@ -13,10 +13,11 @@ namespace FilterLists.Api.V1.Controllers
         }
 
         [HttpPost]
-        public void Index()
+        public IActionResult Index()
         {
-            //TODO: Convert endpoint into scheduled job, don't expose on prod
+            //TODO: convert endpoint into scheduled job, don't expose on prod
             //scrapeService.Scrape();
+            return Ok();
         }
     }
 }

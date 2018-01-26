@@ -11,9 +11,10 @@ using System;
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    partial class FilterListsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180126190529_addSnapshot")]
+    partial class addSnapshot
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
