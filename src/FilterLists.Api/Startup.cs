@@ -42,7 +42,7 @@ namespace FilterLists.Api
             {
                 routes.MapRoute("default", "v{version:apiVersion}/{controller=Home}/{action=Index}/{id?}");
             });
-            MigrateAndSeedDatabase(app);
+            //MigrateAndSeedDatabase(app);
         }
 
         private void MigrateAndSeedDatabase(IApplicationBuilder app)
