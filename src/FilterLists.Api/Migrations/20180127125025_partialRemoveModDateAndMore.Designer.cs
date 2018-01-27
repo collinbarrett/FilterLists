@@ -11,7 +11,7 @@ using System;
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    [Migration("20180127014225_partialRemoveModDateAndMore")]
+    [Migration("20180127125025_partialRemoveModDateAndMore")]
     partial class partialRemoveModDateAndMore
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -69,7 +69,6 @@ namespace FilterLists.Api.Migrations
                     b.Property<int?>("SyntaxId");
 
                     b.Property<string>("ViewUrl")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
