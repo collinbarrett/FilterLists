@@ -2,27 +2,32 @@
 
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://filterlists.com/)
 [![Travis](https://img.shields.io/travis/collinbarrett/FilterLists.svg?label=travis)](https://travis-ci.org/collinbarrett/FilterLists)
-[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/collinbarrett/FilterLists/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/collinbarrett/FilterLists/blob/master/LICENSE)
 
 [filterlists.com](https://filterlists.com)
 
 FilterLists is the independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances. For more information on its purpose and function, check out [About](https://filterlists.com/about/).
 
 ## Links
-| Site                                        | API                                               |
-| ------------------------------------------- | ------------------------------------------------- |
-| [v3 (Alpha)](https://beta.filterlists.com/) | [v1 (Alpha)](https://api.filterlists.com/docs) |
-| [v2 (Stable)](https://filterlists.com/)     |                                                   |
-| [v1 (Legacy)](https://v1.filterlists.com/)  |                                                   |
+| Site                                                | API                                               |
+| --------------------------------------------------- | ------------------------------------------------- |
+| [v3 (Alpha)](https://beta.filterlists.com/)         | [v1 (Alpha)](https://api.filterlists.com/docs)    |
+| [v2 (Stable, Frozen)](https://filterlists.com/)     |                                                   |
+| [v1 (Legacy, Frozen)](https://v1.filterlists.com/)  |                                                   |
 
 ## Submitting or Updating Lists
 
 To suggest a new list or update the information of an existing list, create a PR against [data](https://github.com/collinbarrett/FilterLists/tree/master/data) or open a new [Issue](https://github.com/collinbarrett/FilterLists/issues). Provide all of the information in the Properties section below that is available.
 
-## Development Notice (Updated November 1, 2017)
+## Development Notice (Updated January 27, 2018)
 FilterLists improvements are slow and tend to be in spurts. I care about this project as both a resource for the community and a learning tool for me. However, my day job comes first which often results in little to no work on the project at times. I happily welcome anyone that wants to contribute.
 
-The immediate projects are converting the data to an actual web application (rather than a Google Sheet back-end and a WordPress front-end), and then exposing the data via a .Net Core API.
+The immediate projects are converting the data to an actual web application (rather than Google Sheets & WordPress), and then exposing the data via a .Net Core API.
+
+### Help Wanted
+
+- Updating the [data](https://github.com/collinbarrett/FilterLists/tree/master/data)
+- Building the new API-driven front-end ([FilterLists.Web](https://github.com/collinbarrett/FilterLists/tree/master/src/FilterLists.Web)). The current early direction is [ReactJS](https://reactjs.org/) with [ANT](https://ant.design/) controls. I am not a front-end developer, so I would happily welcome any assistance.
 
 ## Properties
 *Asterisks indicate a foreign key relationship.
