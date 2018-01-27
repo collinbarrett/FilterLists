@@ -6,6 +6,7 @@ namespace FilterLists.Data.Entities
 {
     public class FilterList : BaseEntity
     {
+        public DateTime ModifiedDateUtc { get; set; }
         public string Description { get; set; }
         public string DescriptionSourceUrl { get; set; }
         public DateTime? DiscontinuedDate { get; set; }

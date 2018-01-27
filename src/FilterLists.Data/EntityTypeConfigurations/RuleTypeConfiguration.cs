@@ -10,7 +10,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
         {
             entityTypeBuilder.ToTable("rules");
             entityTypeBuilder.Property(x => x.Raw)
-                .HasColumnType("NVARCHAR(2083)");
+                .HasColumnType("NVARCHAR(2083)")
+                .IsRequired();
             base.Configure(entityTypeBuilder);
         }
     }

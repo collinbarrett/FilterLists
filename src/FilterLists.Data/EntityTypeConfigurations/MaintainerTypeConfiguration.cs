@@ -9,6 +9,9 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public override void Configure(EntityTypeBuilder<Maintainer> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("maintainers");
+            entityTypeBuilder.Property(x => x.ModifiedDateUtc)
+                .HasColumnType("TIMESTAMP")
+                .ValueGeneratedOnAddOrUpdate();
             entityTypeBuilder.Property(x => x.EmailAddress)
                 .HasColumnType("NVARCHAR(126)");
             entityTypeBuilder.Property(x => x.HomeUrl)

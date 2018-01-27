@@ -12,7 +12,6 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.Content)
                 .HasColumnType("MEDIUMTEXT")
                 .IsRequired();
-            entityTypeBuilder.Ignore(x => x.ModifiedDateUtc);
             base.Configure(entityTypeBuilder);
         }
     }

@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using FilterLists.Data.Entities.Junctions;
 
 namespace FilterLists.Data.Entities
 {
     public class Maintainer : BaseEntity
     {
+        public DateTime ModifiedDateUtc { get; set; }
         public string EmailAddress { get; set; }
         public ICollection<FilterListMaintainer> FilterListMaintainers { get; set; }
         public string HomeUrl { get; set; }

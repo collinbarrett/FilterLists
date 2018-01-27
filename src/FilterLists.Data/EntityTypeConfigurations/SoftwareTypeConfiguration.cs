@@ -9,6 +9,9 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public override void Configure(EntityTypeBuilder<Software> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("software");
+            entityTypeBuilder.Property(x => x.ModifiedDateUtc)
+                .HasColumnType("TIMESTAMP")
+                .ValueGeneratedOnAddOrUpdate();
             entityTypeBuilder.Property(x => x.DownloadUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.HomeUrl)
