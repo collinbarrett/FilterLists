@@ -13,9 +13,11 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.Id)
                 .HasColumnType("SMALLINT UNSIGNED");
             entityTypeBuilder.Property(x => x.CreatedDateUtc)
-                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                .HasColumnType("TIMESTAMP")
+                .ValueGeneratedOnAdd();
             entityTypeBuilder.Property(x => x.ModifiedDateUtc)
-                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
+                .HasColumnType("TIMESTAMP")
+                .ValueGeneratedOnAddOrUpdate();
 
             entityTypeBuilder.Property(x => x.Description)
                 .HasColumnType("TEXT");

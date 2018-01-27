@@ -11,7 +11,8 @@ namespace FilterLists.Data.EntityTypeConfigurations.Junctions
             entityTypeBuilder.ToTable("forks");
             entityTypeBuilder.HasKey(x => new {x.ForkFilterListId, x.UpstreamFilterListId});
             entityTypeBuilder.Property(x => x.CreatedDateUtc)
-                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                .HasColumnType("TIMESTAMP")
+                .ValueGeneratedOnAdd();
         }
     }
 }

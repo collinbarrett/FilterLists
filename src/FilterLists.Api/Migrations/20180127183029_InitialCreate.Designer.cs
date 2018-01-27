@@ -11,7 +11,7 @@ using System;
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    [Migration("20180127171317_InitialCreate")]
+    [Migration("20180127183029_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,7 +28,8 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("SMALLINT UNSIGNED");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
@@ -56,7 +57,8 @@ namespace FilterLists.Api.Migrations
                     b.Property<int?>("LicenseId");
 
                     b.Property<DateTime>("ModifiedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
                         .HasColumnType("NVARCHAR(126) NOT NULL");
@@ -85,7 +87,8 @@ namespace FilterLists.Api.Migrations
                     b.Property<int>("LanguageId");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
 
                     b.HasKey("FilterListId", "LanguageId");
 
@@ -101,7 +104,8 @@ namespace FilterLists.Api.Migrations
                     b.Property<int>("MaintainerId");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
 
                     b.HasKey("FilterListId", "MaintainerId");
 
@@ -117,7 +121,8 @@ namespace FilterLists.Api.Migrations
                     b.Property<int>("RuleId");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
 
                     b.HasKey("FilterListId", "RuleId");
 
@@ -133,7 +138,8 @@ namespace FilterLists.Api.Migrations
                     b.Property<int>("UpstreamFilterListId");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
 
                     b.HasKey("ForkFilterListId", "UpstreamFilterListId");
 
@@ -149,7 +155,8 @@ namespace FilterLists.Api.Migrations
                     b.Property<int>("UpstreamFilterListId");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
 
                     b.HasKey("MergeFilterListId", "UpstreamFilterListId");
 
@@ -165,7 +172,8 @@ namespace FilterLists.Api.Migrations
                     b.Property<int>("SyntaxId");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
 
                     b.HasKey("SoftwareId", "SyntaxId");
 
@@ -181,7 +189,8 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("SMALLINT UNSIGNED");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Iso6391")
                         .HasColumnType("NVARCHAR(2)");
@@ -202,7 +211,8 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("NVARCHAR(126)");
 
                     b.Property<DateTime>("ModifiedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
                         .HasColumnType("NVARCHAR(126)");
@@ -219,13 +229,15 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("SMALLINT UNSIGNED");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("DescriptionUrl")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
                         .HasColumnType("NVARCHAR(126) NOT NULL");
@@ -246,7 +258,8 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("SMALLINT UNSIGNED");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("EmailAddress")
                         .HasColumnType("NVARCHAR(126)");
@@ -255,7 +268,8 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
                         .HasColumnType("NVARCHAR(126) NOT NULL");
@@ -275,7 +289,8 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("BIGINT UNSIGNED");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Raw")
                         .HasColumnType("NVARCHAR(2083) NOT NULL");
@@ -292,7 +307,8 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("SMALLINT UNSIGNED");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("DownloadUrl")
                         .HasColumnType("TEXT");
@@ -301,7 +317,8 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
                         .HasColumnType("NVARCHAR(126) NOT NULL");
@@ -318,13 +335,15 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("SMALLINT UNSIGNED");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("DefinitionUrl")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
-                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
                         .HasColumnType("NVARCHAR(126) NOT NULL");

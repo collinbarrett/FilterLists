@@ -11,7 +11,8 @@ namespace FilterLists.Data.EntityTypeConfigurations.Junctions
             entityTypeBuilder.ToTable("filterlists_maintainers");
             entityTypeBuilder.HasKey(x => new {x.FilterListId, x.MaintainerId});
             entityTypeBuilder.Property(x => x.CreatedDateUtc)
-                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                .HasColumnType("TIMESTAMP")
+                .ValueGeneratedOnAdd();
         }
     }
 }
