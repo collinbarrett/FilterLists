@@ -20,8 +20,10 @@ namespace FilterLists.Data.Entities
         public string IssuesUrl { get; set; }
         public int? LicenseId { get; set; }
         public string Name { get; set; }
+        public DateTime? ScrapedDateUtc { get; set; }
         public string SubmissionUrl { get; set; }
         public int? SyntaxId { get; set; }
+        public DateTime? UpdatedDateUtc { get; set; }
         public string ViewUrl { get; set; }
 
         public ICollection<FilterListLanguage> FilterListLanguages { get; set; }
