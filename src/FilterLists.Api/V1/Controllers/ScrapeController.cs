@@ -1,4 +1,5 @@
-﻿using FilterLists.Services.Services;
+﻿using System.Threading.Tasks;
+using FilterLists.Services.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FilterLists.Api.V1.Controllers
@@ -13,10 +14,10 @@ namespace FilterLists.Api.V1.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             //TODO: convert endpoint into scheduled job, don't expose on prod
-            //scrapeService.Scrape();
+            //await scrapeService.Scrape();
             return Ok();
         }
     }

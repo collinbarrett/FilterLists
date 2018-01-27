@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using FilterLists.Data;
@@ -16,28 +15,32 @@ namespace FilterLists.Services.Services
             this.filterListsDbContext = filterListsDbContext;
         }
 
-        public void Scrape()
+        public async Task Scrape()
         {
-            var lists = filterListsDbContext.FilterLists.Take(5);
-            foreach (var list in lists) AddSnapshot(list);
-            filterListsDbContext.SaveChangesAsync();
+            var lists = filterListsDbContext.FilterLists;
+            foreach (var list in lists) await AddSnapshot(list);
+            await filterListsDbContext.SaveChangesAsync();
         }
 
-        private void AddSnapshot(FilterList list)
+        private async Task AddSnapshot(FilterList list)
         {
-            var snapshot = GetContent(list.ViewUrl);
+            var snapshot = await GetContent(list.ViewUrl);
             try
             {
-                if (snapshot.Result == null) return;
+                if (snapshot == null) return;
             }
             catch (AggregateException)
+            {
+                return;
+            }
+            catch (HttpRequestException)
             {
                 return;
             }
 
             filterListsDbContext.Snapshots.Add(new Snapshot
             {
-                Content = snapshot.Result,
+                Content = snapshot,
                 FilterListId = list.Id
             });
         }
