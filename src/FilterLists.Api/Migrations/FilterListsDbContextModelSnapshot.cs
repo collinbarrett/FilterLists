@@ -60,10 +60,14 @@ namespace FilterLists.Api.Migrations
                 b.Property<string>("Name")
                     .HasColumnType("NVARCHAR(126) NOT NULL");
 
+                b.Property<DateTime?>("ScrapedDateUtc");
+
                 b.Property<string>("SubmissionUrl")
                     .HasColumnType("TEXT");
 
                 b.Property<int?>("SyntaxId");
+
+                b.Property<DateTime?>("UpdatedDateUtc");
 
                 b.Property<string>("ViewUrl")
                     .HasColumnType("TEXT NOT NULL");

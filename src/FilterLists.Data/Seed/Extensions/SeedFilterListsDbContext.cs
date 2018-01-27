@@ -47,8 +47,10 @@ namespace FilterLists.Data.Seed.Extensions
 
         private static List<IProperty> GetPropertiesLessValueGeneratedTimestamps(IEntityType entityType)
         {
-            return entityType.GetProperties().Where(x => x.Name != "CreatedDateUtc" && x.Name != "ModifiedDateUtc")
-                .ToList();
+            //TODO: filter dynamically from JSON
+            return entityType.GetProperties().Where(x =>
+                !new List<string> {"CreatedDateUtc", "ModifiedDateUtc", "ScrapedDateUtc", "UpdatedDateUtc"}
+                    .Contains(x.Name)).ToList();
         }
 
         private static string CreateValues<TEntityType>(IReadOnlyCollection<IProperty> properties, string dataPath)
