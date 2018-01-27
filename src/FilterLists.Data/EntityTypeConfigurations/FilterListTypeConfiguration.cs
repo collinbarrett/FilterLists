@@ -9,6 +9,9 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public override void Configure(EntityTypeBuilder<FilterList> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("filterlists");
+            entityTypeBuilder.Property(x => x.ModifiedDateUtc)
+                .HasColumnType("TIMESTAMP")
+                .ValueGeneratedOnAddOrUpdate();
             entityTypeBuilder.Property(x => x.Description)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.DescriptionSourceUrl)
@@ -29,7 +32,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.SubmissionUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.ViewUrl)
-                .HasColumnType("TEXT");
+                .HasColumnType("TEXT")
+                .IsRequired();
             base.Configure(entityTypeBuilder);
         }
     }

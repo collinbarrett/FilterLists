@@ -9,6 +9,9 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public override void Configure(EntityTypeBuilder<License> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("licenses");
+            entityTypeBuilder.Property(x => x.ModifiedDateUtc)
+                .HasColumnType("TIMESTAMP")
+                .ValueGeneratedOnAddOrUpdate();
             entityTypeBuilder.Property(x => x.DescriptionUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)

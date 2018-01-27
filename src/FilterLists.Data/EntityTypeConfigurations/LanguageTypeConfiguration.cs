@@ -9,6 +9,9 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public override void Configure(EntityTypeBuilder<Language> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("languages");
+            entityTypeBuilder.Property(x => x.ModifiedDateUtc)
+                .HasColumnType("TIMESTAMP")
+                .ValueGeneratedOnAddOrUpdate();
             entityTypeBuilder.Property(x => x.Iso6391)
                 .HasColumnType("NVARCHAR(2)");
             entityTypeBuilder.Property(x => x.Iso6392)

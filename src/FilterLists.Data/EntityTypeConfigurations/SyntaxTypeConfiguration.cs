@@ -9,6 +9,9 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public override void Configure(EntityTypeBuilder<Syntax> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("syntaxes");
+            entityTypeBuilder.Property(x => x.ModifiedDateUtc)
+                .HasColumnType("TIMESTAMP")
+                .ValueGeneratedOnAddOrUpdate();
             entityTypeBuilder.Property(x => x.DefinitionUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)
