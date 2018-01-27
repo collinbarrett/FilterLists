@@ -1,7 +1,11 @@
-﻿namespace FilterLists.Data.Entities.Junctions
+﻿using System;
+
+namespace FilterLists.Data.Entities.Junctions
 {
-    public class FilterListMaintainer : BaseEntity
+    public class FilterListMaintainer
     {
+        public DateTime CreatedDateUtc { get; set; }
+
         public int FilterListId { get; set; }
         public FilterList FilterList { get; set; }
 

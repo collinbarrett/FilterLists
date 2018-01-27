@@ -4,14 +4,19 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations
 {
-    public class LanguageTypeConfiguration : BaseEntityTypeConfiguration<Language>
+    public class LanguageTypeConfiguration : IEntityTypeConfiguration<Language>
     {
-        public override void Configure(EntityTypeBuilder<Language> entityTypeBuilder)
+        public void Configure(EntityTypeBuilder<Language> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("languages");
+
+            entityTypeBuilder.Property(x => x.Id)
+                .HasColumnType("SMALLINT UNSIGNED");
+            entityTypeBuilder.Property(x => x.CreatedDateUtc)
+                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
             entityTypeBuilder.Property(x => x.ModifiedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAddOrUpdate();
+                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
+
             entityTypeBuilder.Property(x => x.Iso6391)
                 .HasColumnType("NVARCHAR(2)");
             entityTypeBuilder.Property(x => x.Iso6392)
@@ -26,7 +31,6 @@ namespace FilterLists.Data.EntityTypeConfigurations
                 .HasColumnType("NVARCHAR(126)");
             entityTypeBuilder.Property(x => x.Name)
                 .HasColumnType("NVARCHAR(126)");
-            base.Configure(entityTypeBuilder);
         }
     }
 }

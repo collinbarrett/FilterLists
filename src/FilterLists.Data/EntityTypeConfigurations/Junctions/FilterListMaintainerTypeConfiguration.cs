@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations.Junctions
 {
-    public class FilterListMaintainerTypeConfiguration : BaseEntityTypeConfiguration<FilterListMaintainer>
+    public class FilterListMaintainerTypeConfiguration : IEntityTypeConfiguration<FilterListMaintainer>
     {
-        public override void Configure(EntityTypeBuilder<FilterListMaintainer> entityTypeBuilder)
+        public void Configure(EntityTypeBuilder<FilterListMaintainer> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("filterlists_maintainers");
             entityTypeBuilder.HasKey(x => new {x.FilterListId, x.MaintainerId});
-            entityTypeBuilder.Ignore(x => x.Id);
-            base.Configure(entityTypeBuilder);
+            entityTypeBuilder.Property(x => x.CreatedDateUtc)
+                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
         }
     }
 }

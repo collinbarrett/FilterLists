@@ -4,14 +4,19 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations
 {
-    public class FilterListTypeConfiguration : BaseEntityTypeConfiguration<FilterList>
+    public class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList>
     {
-        public override void Configure(EntityTypeBuilder<FilterList> entityTypeBuilder)
+        public void Configure(EntityTypeBuilder<FilterList> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("filterlists");
+
+            entityTypeBuilder.Property(x => x.Id)
+                .HasColumnType("SMALLINT UNSIGNED");
+            entityTypeBuilder.Property(x => x.CreatedDateUtc)
+                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
             entityTypeBuilder.Property(x => x.ModifiedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAddOrUpdate();
+                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
+
             entityTypeBuilder.Property(x => x.Description)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.DescriptionSourceUrl)
@@ -27,13 +32,11 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.IssuesUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)
-                .HasColumnType("NVARCHAR(126)")
-                .IsRequired();
+                .HasColumnType("NVARCHAR(126) NOT NULL");
             entityTypeBuilder.Property(x => x.SubmissionUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.ViewUrl)
-                .HasColumnType("TEXT");
-            base.Configure(entityTypeBuilder);
+                .HasColumnType("TEXT NOT NULL");
         }
     }
 }

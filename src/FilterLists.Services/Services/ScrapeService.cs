@@ -20,6 +20,7 @@ namespace FilterLists.Services.Services
 
         public async Task Scrape()
         {
+            //TEMP: remove Take(1) when algorithm complete
             var lists = await filterListsDbContext.FilterLists.Take(1).ToListAsync();
             foreach (var list in lists) await ScrapeList(list);
         }
@@ -37,7 +38,6 @@ namespace FilterLists.Services.Services
                 return;
             }
 
-            await AddSnapshot(list.Id, snapshot);
             await AddRules(list, snapshot);
         }
 
@@ -53,24 +53,6 @@ namespace FilterLists.Services.Services
             }
 
             return null;
-        }
-
-        private async Task AddSnapshot(int listId, string snapshot)
-        {
-            filterListsDbContext.Snapshots.Add(new Snapshot
-            {
-                Content = snapshot,
-                FilterListId = listId
-            });
-
-            try
-            {
-                await filterListsDbContext.SaveChangesAsync();
-            }
-            catch (Exception)
-            {
-                //TODO: log exception
-            }
         }
 
         private async Task AddRules(FilterList list, string snapshot)

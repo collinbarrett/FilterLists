@@ -11,7 +11,7 @@ using System;
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    [Migration("20180118184938_InitialCreate")]
+    [Migration("20180127171317_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,11 +24,11 @@ namespace FilterLists.Api.Migrations
             modelBuilder.Entity("FilterLists.Data.Entities.FilterList", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("SMALLINT UNSIGNED");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
 
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
@@ -56,12 +56,10 @@ namespace FilterLists.Api.Migrations
                     b.Property<int?>("LicenseId");
 
                     b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("NVARCHAR(126)");
+                        .HasColumnType("NVARCHAR(126) NOT NULL");
 
                     b.Property<string>("SubmissionUrl")
                         .HasColumnType("TEXT");
@@ -69,7 +67,7 @@ namespace FilterLists.Api.Migrations
                     b.Property<int?>("SyntaxId");
 
                     b.Property<string>("ViewUrl")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("TEXT NOT NULL");
 
                     b.HasKey("Id");
 
@@ -80,19 +78,14 @@ namespace FilterLists.Api.Migrations
                     b.ToTable("filterlists");
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.FilterListLanguage", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.FilterListLanguage", b =>
                 {
                     b.Property<int>("FilterListId");
 
                     b.Property<int>("LanguageId");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
 
                     b.HasKey("FilterListId", "LanguageId");
 
@@ -101,19 +94,14 @@ namespace FilterLists.Api.Migrations
                     b.ToTable("filterlists_languages");
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.FilterListMaintainer", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.FilterListMaintainer", b =>
                 {
                     b.Property<int>("FilterListId");
 
                     b.Property<int>("MaintainerId");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
 
                     b.HasKey("FilterListId", "MaintainerId");
 
@@ -122,19 +110,14 @@ namespace FilterLists.Api.Migrations
                     b.ToTable("filterlists_maintainers");
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.FilterListRule", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.FilterListRule", b =>
                 {
                     b.Property<int>("FilterListId");
 
                     b.Property<int>("RuleId");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
 
                     b.HasKey("FilterListId", "RuleId");
 
@@ -143,19 +126,14 @@ namespace FilterLists.Api.Migrations
                     b.ToTable("filterlists_rules");
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.Fork", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.Fork", b =>
                 {
                     b.Property<int>("ForkFilterListId");
 
                     b.Property<int>("UpstreamFilterListId");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
 
                     b.HasKey("ForkFilterListId", "UpstreamFilterListId");
 
@@ -164,14 +142,46 @@ namespace FilterLists.Api.Migrations
                     b.ToTable("forks");
                 });
 
+            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.Merge", b =>
+                {
+                    b.Property<int>("MergeFilterListId");
+
+                    b.Property<int>("UpstreamFilterListId");
+
+                    b.Property<DateTime>("CreatedDateUtc")
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+
+                    b.HasKey("MergeFilterListId", "UpstreamFilterListId");
+
+                    b.HasIndex("UpstreamFilterListId");
+
+                    b.ToTable("merges");
+                });
+
+            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.SoftwareSyntax", b =>
+                {
+                    b.Property<int>("SoftwareId");
+
+                    b.Property<int>("SyntaxId");
+
+                    b.Property<DateTime>("CreatedDateUtc")
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+
+                    b.HasKey("SoftwareId", "SyntaxId");
+
+                    b.HasIndex("SyntaxId");
+
+                    b.ToTable("software_syntaxes");
+                });
+
             modelBuilder.Entity("FilterLists.Data.Entities.Language", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("SMALLINT UNSIGNED");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
 
                     b.Property<string>("Iso6391")
                         .HasColumnType("NVARCHAR(2)");
@@ -192,8 +202,7 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("NVARCHAR(126)");
 
                     b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
 
                     b.Property<string>("Name")
                         .HasColumnType("NVARCHAR(126)");
@@ -206,22 +215,20 @@ namespace FilterLists.Api.Migrations
             modelBuilder.Entity("FilterLists.Data.Entities.License", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("SMALLINT UNSIGNED");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
 
                     b.Property<string>("DescriptionUrl")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("NVARCHAR(126)");
+                        .HasColumnType("NVARCHAR(126) NOT NULL");
 
                     b.Property<bool>("PermissiveAdaptation");
 
@@ -235,11 +242,11 @@ namespace FilterLists.Api.Migrations
             modelBuilder.Entity("FilterLists.Data.Entities.Maintainer", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("SMALLINT UNSIGNED");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
 
                     b.Property<string>("EmailAddress")
                         .HasColumnType("NVARCHAR(126)");
@@ -248,12 +255,10 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("NVARCHAR(126)");
+                        .HasColumnType("NVARCHAR(126) NOT NULL");
 
                     b.Property<string>("TwitterHandle")
                         .HasColumnType("NVARCHAR(126)");
@@ -263,42 +268,17 @@ namespace FilterLists.Api.Migrations
                     b.ToTable("maintainers");
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.Merge", b =>
-                {
-                    b.Property<int>("MergeFilterListId");
-
-                    b.Property<int>("UpstreamFilterListId");
-
-                    b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.HasKey("MergeFilterListId", "UpstreamFilterListId");
-
-                    b.HasIndex("UpstreamFilterListId");
-
-                    b.ToTable("merges");
-                });
-
             modelBuilder.Entity("FilterLists.Data.Entities.Rule", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("BIGINT UNSIGNED");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
 
                     b.Property<string>("Raw")
-                        .HasColumnType("NVARCHAR(2083)");
+                        .HasColumnType("NVARCHAR(2083) NOT NULL");
 
                     b.HasKey("Id");
 
@@ -308,11 +288,11 @@ namespace FilterLists.Api.Migrations
             modelBuilder.Entity("FilterLists.Data.Entities.Software", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("SMALLINT UNSIGNED");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
 
                     b.Property<string>("DownloadUrl")
                         .HasColumnType("TEXT");
@@ -321,58 +301,33 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("NVARCHAR(126)");
+                        .HasColumnType("NVARCHAR(126) NOT NULL");
 
                     b.HasKey("Id");
 
                     b.ToTable("software");
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.SoftwareSyntax", b =>
-                {
-                    b.Property<int>("SoftwareId");
-
-                    b.Property<int>("SyntaxId");
-
-                    b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
-
-                    b.HasKey("SoftwareId", "SyntaxId");
-
-                    b.HasIndex("SyntaxId");
-
-                    b.ToTable("software_syntaxes");
-                });
-
             modelBuilder.Entity("FilterLists.Data.Entities.Syntax", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("SMALLINT UNSIGNED");
 
                     b.Property<DateTime>("CreatedDateUtc")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
 
                     b.Property<string>("DefinitionUrl")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
+                        .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("NVARCHAR(126)");
+                        .HasColumnType("NVARCHAR(126) NOT NULL");
 
                     b.HasKey("Id");
 
@@ -390,7 +345,7 @@ namespace FilterLists.Api.Migrations
                         .HasForeignKey("SyntaxId");
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.FilterListLanguage", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.FilterListLanguage", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.FilterList", "FilterList")
                         .WithMany("FilterListLanguages")
@@ -403,7 +358,7 @@ namespace FilterLists.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.FilterListMaintainer", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.FilterListMaintainer", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.FilterList", "FilterList")
                         .WithMany("FilterListMaintainers")
@@ -416,7 +371,7 @@ namespace FilterLists.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.FilterListRule", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.FilterListRule", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.FilterList", "FilterList")
                         .WithMany("FilterListRules")
@@ -429,7 +384,7 @@ namespace FilterLists.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.Fork", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.Fork", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.FilterList", "ForkFilterList")
                         .WithMany()
@@ -442,7 +397,7 @@ namespace FilterLists.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.Merge", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.Merge", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.FilterList", "MergeFilterList")
                         .WithMany()
@@ -455,7 +410,7 @@ namespace FilterLists.Api.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("FilterLists.Data.Entities.SoftwareSyntax", b =>
+            modelBuilder.Entity("FilterLists.Data.Entities.Junctions.SoftwareSyntax", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.Software", "Software")
                         .WithMany("SoftwareSyntaxes")
