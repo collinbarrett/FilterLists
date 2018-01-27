@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations.Junctions
 {
-    public class FilterListLanguageTypeConfiguration : BaseEntityTypeConfiguration<FilterListLanguage>
+    public class FilterListLanguageTypeConfiguration : IEntityTypeConfiguration<FilterListLanguage>
     {
-        public override void Configure(EntityTypeBuilder<FilterListLanguage> entityTypeBuilder)
+        public void Configure(EntityTypeBuilder<FilterListLanguage> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("filterlists_languages");
             entityTypeBuilder.HasKey(x => new {x.FilterListId, x.LanguageId});
-            entityTypeBuilder.Ignore(x => x.Id);
-            base.Configure(entityTypeBuilder);
+            entityTypeBuilder.Property(x => x.CreatedDateUtc)
+                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
         }
     }
 }

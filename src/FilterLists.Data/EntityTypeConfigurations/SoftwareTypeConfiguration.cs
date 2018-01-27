@@ -4,22 +4,25 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations
 {
-    public class SoftwareTypeConfiguration : BaseEntityTypeConfiguration<Software>
+    public class SoftwareTypeConfiguration : IEntityTypeConfiguration<Software>
     {
-        public override void Configure(EntityTypeBuilder<Software> entityTypeBuilder)
+        public void Configure(EntityTypeBuilder<Software> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("software");
+
+            entityTypeBuilder.Property(x => x.Id)
+                .HasColumnType("SMALLINT UNSIGNED");
+            entityTypeBuilder.Property(x => x.CreatedDateUtc)
+                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
             entityTypeBuilder.Property(x => x.ModifiedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAddOrUpdate();
+                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP");
+
             entityTypeBuilder.Property(x => x.DownloadUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.HomeUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)
-                .HasColumnType("NVARCHAR(126)")
-                .IsRequired();
-            base.Configure(entityTypeBuilder);
+                .HasColumnType("NVARCHAR(126) NOT NULL");
         }
     }
 }

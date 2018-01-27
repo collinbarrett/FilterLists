@@ -1,7 +1,11 @@
-﻿namespace FilterLists.Data.Entities.Junctions
+﻿using System;
+
+namespace FilterLists.Data.Entities.Junctions
 {
-    public class Merge : BaseEntity
+    public class Merge
     {
+        public DateTime CreatedDateUtc { get; set; }
+
         public int MergeFilterListId { get; set; }
         public FilterList MergeFilterList { get; set; }
 

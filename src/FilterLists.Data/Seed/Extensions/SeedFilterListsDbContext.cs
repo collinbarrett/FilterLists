@@ -47,8 +47,8 @@ namespace FilterLists.Data.Seed.Extensions
 
         private static List<IProperty> GetPropertiesLessValueGeneratedTimestamps(IEntityType entityType)
         {
-            return entityType.GetProperties()
-                .Where(x => x.ClrType != typeof(DateTime) || x.ValueGenerated == ValueGenerated.Never).ToList();
+            return entityType.GetProperties().Where(x => x.Name != "CreatedDateUtc" && x.Name != "ModifiedDateUtc")
+                .ToList();
         }
 
         private static string CreateValues<TEntityType>(IReadOnlyCollection<IProperty> properties, string dataPath)

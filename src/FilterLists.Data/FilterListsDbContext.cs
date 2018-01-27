@@ -27,7 +27,6 @@ namespace FilterLists.Data
             modelBuilder.ApplyConfiguration(new LicenseTypeConfiguration());
             modelBuilder.ApplyConfiguration(new MaintainerTypeConfiguration());
             modelBuilder.ApplyConfiguration(new RuleTypeConfiguration());
-            modelBuilder.ApplyConfiguration(new SnapshotTypeConfiguration());
             modelBuilder.ApplyConfiguration(new SoftwareTypeConfiguration());
             modelBuilder.ApplyConfiguration(new SyntaxTypeConfiguration());
         }
@@ -49,7 +48,6 @@ namespace FilterLists.Data
         public DbSet<License> Licenses { get; set; }
         public DbSet<Maintainer> Maintainers { get; set; }
         public DbSet<Rule> Rules { get; set; }
-        public DbSet<Snapshot> Snapshots { get; set; }
         public DbSet<Software> Software { get; set; }
         public DbSet<Syntax> Syntaxes { get; set; }
 

@@ -1,7 +1,11 @@
-﻿namespace FilterLists.Data.Entities.Junctions
+﻿using System;
+
+namespace FilterLists.Data.Entities.Junctions
 {
-    public class SoftwareSyntax : BaseEntity
+    public class SoftwareSyntax
     {
+        public DateTime CreatedDateUtc { get; set; }
+
         public int SoftwareId { get; set; }
         public Software Software { get; set; }
 

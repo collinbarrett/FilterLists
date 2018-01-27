@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations.Junctions
 {
-    public class MergeTypeConfiguration : BaseEntityTypeConfiguration<Merge>
+    public class MergeTypeConfiguration : IEntityTypeConfiguration<Merge>
     {
-        public override void Configure(EntityTypeBuilder<Merge> entityTypeBuilder)
+        public void Configure(EntityTypeBuilder<Merge> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("merges");
             entityTypeBuilder.HasKey(x => new {x.MergeFilterListId, x.UpstreamFilterListId});
-            entityTypeBuilder.Ignore(x => x.Id);
-            base.Configure(entityTypeBuilder);
+            entityTypeBuilder.Property(x => x.CreatedDateUtc)
+                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
         }
     }
 }

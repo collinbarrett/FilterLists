@@ -4,15 +4,19 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations
 {
-    public class RuleTypeConfiguration : BaseEntityTypeConfiguration<Rule>
+    public class RuleTypeConfiguration : IEntityTypeConfiguration<Rule>
     {
-        public override void Configure(EntityTypeBuilder<Rule> entityTypeBuilder)
+        public void Configure(EntityTypeBuilder<Rule> entityTypeBuilder)
         {
             entityTypeBuilder.ToTable("rules");
+
+            entityTypeBuilder.Property(x => x.Id)
+                .HasColumnType("BIGINT UNSIGNED");
+            entityTypeBuilder.Property(x => x.CreatedDateUtc)
+                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+
             entityTypeBuilder.Property(x => x.Raw)
-                .HasColumnType("NVARCHAR(2083)")
-                .IsRequired();
-            base.Configure(entityTypeBuilder);
+                .HasColumnType("NVARCHAR(2083) NOT NULL");
         }
     }
 }
