@@ -11,7 +11,8 @@ namespace FilterLists.Data.EntityTypeConfigurations.Junctions
             entityTypeBuilder.ToTable("software_syntaxes");
             entityTypeBuilder.HasKey(x => new {x.SoftwareId, x.SyntaxId});
             entityTypeBuilder.Property(x => x.CreatedDateUtc)
-                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                .HasColumnType("TIMESTAMP")
+                .ValueGeneratedOnAdd();
         }
     }
 }

@@ -13,7 +13,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.Id)
                 .HasColumnType("BIGINT UNSIGNED");
             entityTypeBuilder.Property(x => x.CreatedDateUtc)
-                .HasColumnType("TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+                .HasColumnType("TIMESTAMP")
+                .ValueGeneratedOnAdd();
 
             entityTypeBuilder.Property(x => x.Raw)
                 .HasColumnType("NVARCHAR(2083) NOT NULL");
