@@ -11,8 +11,8 @@ using System;
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    [Migration("20180127232215_AddScrapedAndUpdatedDates")]
-    partial class AddScrapedAndUpdatedDates
+    [Migration("20180128204823_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -294,6 +294,10 @@ namespace FilterLists.Api.Migrations
 
                     b.Property<DateTime>("CreatedDateUtc")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
+
+                    b.Property<DateTime>("ModifiedDateUtc")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Raw")
