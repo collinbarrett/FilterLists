@@ -17,6 +17,7 @@ namespace FilterLists.Services.Services
             this.filterListsDbContext = filterListsDbContext;
         }
 
+        //TODO: call via scheduled job
         public async Task Scrape(int numberLists)
         {
             var lists = filterListsDbContext.FilterLists.OrderBy(x => x.ScrapedDateUtc).Take(numberLists)
