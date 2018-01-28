@@ -85,6 +85,8 @@ namespace FilterLists.Services.Services
                 .Where(x => deletedRules.Select(y => y.Id).Contains(x.RuleId))
                 .Where(x => x.FilterListId == snapshot.FilterListId));
 
+            //TODO: consider never removing FilterListsRules but rather marking a flag as deprecated to expose when rule was removed
+
             if (newCurrentRules.Any() || deletedRules.Any())
             {
                 var list = filterListsDbContext.FilterLists.FindAsync(snapshot.FilterListId).Result;

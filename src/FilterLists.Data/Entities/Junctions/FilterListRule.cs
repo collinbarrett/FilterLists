@@ -1,11 +1,7 @@
-﻿using System;
-
-namespace FilterLists.Data.Entities.Junctions
+﻿namespace FilterLists.Data.Entities.Junctions
 {
-    public class FilterListRule
+    public class FilterListRule : BaseJunction
     {
-        public DateTime CreatedDateUtc { get; set; }
-
         public int FilterListId { get; set; }
         public FilterList FilterList { get; set; }
 

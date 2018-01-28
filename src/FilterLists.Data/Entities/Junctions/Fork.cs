@@ -1,11 +1,7 @@
-﻿using System;
-
-namespace FilterLists.Data.Entities.Junctions
+﻿namespace FilterLists.Data.Entities.Junctions
 {
-    public class Fork
+    public class Fork : BaseJunction
     {
-        public DateTime CreatedDateUtc { get; set; }
-
         public int ForkFilterListId { get; set; }
         public FilterList ForkFilterList { get; set; }
 
