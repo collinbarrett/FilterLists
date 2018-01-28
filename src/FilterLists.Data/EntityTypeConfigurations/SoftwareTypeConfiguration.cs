@@ -4,20 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations
 {
-    public class SoftwareTypeConfiguration : IEntityTypeConfiguration<Software>
+    public class SoftwareTypeConfiguration : BaseEntityTypeConfiguration<Software>
     {
-        public void Configure(EntityTypeBuilder<Software> entityTypeBuilder)
+        public override void Configure(EntityTypeBuilder<Software> entityTypeBuilder)
         {
-            entityTypeBuilder.ToTable("software");
+            base.Configure(entityTypeBuilder);
 
-            entityTypeBuilder.Property(x => x.Id)
-                .HasColumnType("SMALLINT UNSIGNED");
-            entityTypeBuilder.Property(x => x.CreatedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAdd();
-            entityTypeBuilder.Property(x => x.ModifiedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAddOrUpdate();
+            entityTypeBuilder.ToTable("software");
 
             entityTypeBuilder.Property(x => x.DownloadUrl)
                 .HasColumnType("TEXT");

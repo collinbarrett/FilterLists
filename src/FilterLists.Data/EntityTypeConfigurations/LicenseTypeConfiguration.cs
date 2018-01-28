@@ -4,20 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations
 {
-    public class LicenseTypeConfiguration : IEntityTypeConfiguration<License>
+    public class LicenseTypeConfiguration : BaseEntityTypeConfiguration<License>
     {
-        public void Configure(EntityTypeBuilder<License> entityTypeBuilder)
+        public override void Configure(EntityTypeBuilder<License> entityTypeBuilder)
         {
-            entityTypeBuilder.ToTable("licenses");
+            base.Configure(entityTypeBuilder);
 
-            entityTypeBuilder.Property(x => x.Id)
-                .HasColumnType("SMALLINT UNSIGNED");
-            entityTypeBuilder.Property(x => x.CreatedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAdd();
-            entityTypeBuilder.Property(x => x.ModifiedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAddOrUpdate();
+            entityTypeBuilder.ToTable("licenses");
 
             entityTypeBuilder.Property(x => x.DescriptionUrl)
                 .HasColumnType("TEXT");

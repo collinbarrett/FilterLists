@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using FilterLists.Data.Entities.Junctions;
 
 namespace FilterLists.Data.Entities
 {
-    public class Language
+    public class Language : BaseEntity
     {
-        public int Id { get; set; }
-        public DateTime CreatedDateUtc { get; set; }
-        public DateTime ModifiedDateUtc { get; set; }
-
         public string Iso6391 { get; set; }
         public string Iso6392 { get; set; }
         public string Iso6392B { get; set; }
