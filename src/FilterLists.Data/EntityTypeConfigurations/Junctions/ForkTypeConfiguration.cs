@@ -4,15 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations.Junctions
 {
-    public class ForkTypeConfiguration : IEntityTypeConfiguration<Fork>
+    public class ForkTypeConfiguration : JunctionBaseTypeConfiguration<Fork>
     {
-        public void Configure(EntityTypeBuilder<Fork> entityTypeBuilder)
+        public override void Configure(EntityTypeBuilder<Fork> entityTypeBuilder)
         {
+            base.Configure(entityTypeBuilder);
             entityTypeBuilder.ToTable("forks");
             entityTypeBuilder.HasKey(x => new {x.ForkFilterListId, x.UpstreamFilterListId});
-            entityTypeBuilder.Property(x => x.CreatedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAdd();
         }
     }
 }
