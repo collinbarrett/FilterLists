@@ -22,7 +22,7 @@ To suggest a new list or update the information of an existing list, create a PR
 ## Development Notice (Updated January 27, 2018)
 FilterLists improvements are slow and tend to be in spurts. I care about this project as both a resource for the community and a learning tool for me. However, my day job comes first which often results in little to no work on the project at times. I happily welcome anyone that wants to contribute.
 
-The immediate projects are converting the data to an actual web application (rather than Google Sheets & WordPress), and then exposing the data via a .Net Core API.
+The immediate projects are converting the data to an actual web application (rather than Google Sheets & WordPress), and then exposing the data via a .Net Core REST API.
 
 ### Help Wanted
 
@@ -32,7 +32,7 @@ The immediate projects are converting the data to an actual web application (rat
 ## Properties
 *Asterisks indicate a foreign key relationship.
 
-### FilterLists
+### FilterLists (mapped to [FilterList](https://github.com/collinbarrett/FilterLists/blob/master/src/FilterLists.Data/Entities/FilterList.cs))
 
 | Property             | Description                                                              |
 |----------------------|--------------------------------------------------------------------------|
@@ -53,7 +53,7 @@ The immediate projects are converting the data to an actual web application (rat
 | *UpstreamFilterLists | The list's upstream lists if it is a fork or a merge                     |
 | ViewUrl              | The list's view/download URL (typically .txt file)                       |
 
-### Maintainers
+### Maintainers (mapped to [Maintainer](https://github.com/collinbarrett/FilterLists/blob/master/src/FilterLists.Data/Entities/Maintainer.cs))
 
 | Property      | Description                                |
 |---------------|--------------------------------------------|
