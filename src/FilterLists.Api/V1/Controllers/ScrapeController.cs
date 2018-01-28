@@ -16,9 +16,12 @@ namespace FilterLists.Api.V1.Controllers
         [HttpPost]
         public async Task<IActionResult> Index()
         {
-            //TODO: convert endpoint into scheduled job, don't expose on prod
-            //await scrapeService.Scrape();
+#if DEBUG
+            await scrapeService.Scrape(5);
             return Ok();
+#else
+            return StatusCode(403);
+#endif
         }
     }
 }
