@@ -5,8 +5,6 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
-using FilterLists.Data.Entities.Junctions;
-using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Services.Services
 {
@@ -42,12 +40,10 @@ namespace FilterLists.Services.Services
             try
             {
                 using (var httpClient = new HttpClient())
+                using (var httpResponseMessage = await httpClient.GetAsync(url))
                 {
-                    using (var httpResponseMessage = await httpClient.GetAsync(url))
-                    {
-                        if (httpResponseMessage.IsSuccessStatusCode)
-                            return await httpResponseMessage.Content.ReadAsStringAsync();
-                    }
+                    if (httpResponseMessage.IsSuccessStatusCode)
+                        return await httpResponseMessage.Content.ReadAsStringAsync();
                 }
             }
             catch (Exception)
@@ -66,16 +62,21 @@ namespace FilterLists.Services.Services
                 await AddOrUpdateRules(snapshot);
         }
 
+        //TODO: finish and validate
         private async Task AddOrUpdateRules(Snapshot snapshot)
         {
             var cachedRules = filterListsDbContext.FilterListRules
                 .Where(x => x.FilterListId == snapshot.FilterListId)
                 .Select(x => x.Rule);
 
-            IEnumerable<string> currentRulesRaw =
-                snapshot.Content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.None);
+            var currentRulesRaw =
+                snapshot.Content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
 
             var existingCurrentRules = filterListsDbContext.Rules.Where(x => currentRulesRaw.Contains(x.Raw));
+
+            var newCurrentRulesRaw = currentRulesRaw.Except(existingCurrentRules.Select(x => x.Raw));
+
+            var newCurrentRules = newCurrentRulesRaw.Select(newCurrentRuleRaw => new Rule {Raw = newCurrentRuleRaw});
 
             var deletedRules = cachedRules.Except(existingCurrentRules).ToList();
 
@@ -83,29 +84,14 @@ namespace FilterLists.Services.Services
                 .Where(x => deletedRules.Select(y => y.Id).Contains(x.RuleId))
                 .Where(x => x.FilterListId == snapshot.FilterListId));
 
-            //TODO: update FilterList.UpdatedDateUtc
-
-            foreach (var line in currentRulesRaw)
+            if (newCurrentRules.Any() || deletedRules.Any())
             {
-                if (string.IsNullOrWhiteSpace(line)) continue;
-                var rule = new Rule {Raw = line};
-                if (!await filterListsDbContext.Rules.AnyAsync(x => x.Raw == rule.Raw))
-                    filterListsDbContext.Rules.Add(rule);
-                var filterListRule = new FilterListRule {FilterListId = snapshot.FilterListId, Rule = rule};
-                if (!await filterListsDbContext.FilterListRules.AnyAsync(x =>
-                    x.RuleId == rule.Id && x.FilterListId == snapshot.FilterListId))
-                    filterListsDbContext.FilterListRules.Add(filterListRule);
-                filterListsDbContext.FilterListRules.Add(filterListRule);
+                var list = filterListsDbContext.FilterLists.FindAsync(snapshot.FilterListId).Result;
+                list.UpdatedDateUtc = DateTime.UtcNow;
+                filterListsDbContext.FilterLists.Update(list);
             }
 
-            try
-            {
-                await filterListsDbContext.SaveChangesAsync();
-            }
-            catch (Exception)
-            {
-                //TODO: log exception
-            }
+            await filterListsDbContext.SaveChangesAsync();
         }
 
         private class FilterListDto
