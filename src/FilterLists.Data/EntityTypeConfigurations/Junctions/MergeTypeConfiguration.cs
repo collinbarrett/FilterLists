@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations.Junctions
 {
-    public class MergeTypeConfiguration : JunctionBaseTypeConfiguration<Merge>
+    public class MergeTypeConfiguration : BaseJunctionTypeConfiguration<Merge>
     {
         public override void Configure(EntityTypeBuilder<Merge> entityTypeBuilder)
         {

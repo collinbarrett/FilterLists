@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations.Junctions
 {
-    public class FilterListMaintainerTypeConfiguration : JunctionBaseTypeConfiguration<FilterListMaintainer>
+    public class FilterListMaintainerTypeConfiguration : BaseJunctionTypeConfiguration<FilterListMaintainer>
     {
         public override void Configure(EntityTypeBuilder<FilterListMaintainer> entityTypeBuilder)
         {

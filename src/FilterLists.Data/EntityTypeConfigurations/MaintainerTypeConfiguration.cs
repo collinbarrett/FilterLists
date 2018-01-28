@@ -4,20 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations
 {
-    public class MaintainerTypeConfiguration : IEntityTypeConfiguration<Maintainer>
+    public class MaintainerTypeConfiguration : BaseEntityTypeConfiguration<Maintainer>
     {
-        public void Configure(EntityTypeBuilder<Maintainer> entityTypeBuilder)
+        public override void Configure(EntityTypeBuilder<Maintainer> entityTypeBuilder)
         {
-            entityTypeBuilder.ToTable("maintainers");
+            base.Configure(entityTypeBuilder);
 
-            entityTypeBuilder.Property(x => x.Id)
-                .HasColumnType("SMALLINT UNSIGNED");
-            entityTypeBuilder.Property(x => x.CreatedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAdd();
-            entityTypeBuilder.Property(x => x.ModifiedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAddOrUpdate();
+            entityTypeBuilder.ToTable("maintainers");
 
             entityTypeBuilder.Property(x => x.EmailAddress)
                 .HasColumnType("NVARCHAR(126)");

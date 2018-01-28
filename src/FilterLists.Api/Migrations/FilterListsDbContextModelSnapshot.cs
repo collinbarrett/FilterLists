@@ -293,6 +293,10 @@ namespace FilterLists.Api.Migrations
                     .ValueGeneratedOnAdd()
                     .HasColumnType("TIMESTAMP");
 
+                b.Property<DateTime>("ModifiedDateUtc")
+                    .ValueGeneratedOnAddOrUpdate()
+                    .HasColumnType("TIMESTAMP");
+
                 b.Property<string>("Raw")
                     .HasColumnType("NVARCHAR(2083) NOT NULL");
 

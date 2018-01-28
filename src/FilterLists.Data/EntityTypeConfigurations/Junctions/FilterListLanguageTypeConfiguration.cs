@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations.Junctions
 {
-    public class FilterListLanguageTypeConfiguration : JunctionBaseTypeConfiguration<FilterListLanguage>
+    public class FilterListLanguageTypeConfiguration : BaseJunctionTypeConfiguration<FilterListLanguage>
     {
         public override void Configure(EntityTypeBuilder<FilterListLanguage> entityTypeBuilder)
         {

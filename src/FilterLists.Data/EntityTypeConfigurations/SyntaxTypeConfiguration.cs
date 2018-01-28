@@ -4,20 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Data.EntityTypeConfigurations
 {
-    public class SyntaxTypeConfiguration : IEntityTypeConfiguration<Syntax>
+    public class SyntaxTypeConfiguration : BaseEntityTypeConfiguration<Syntax>
     {
-        public void Configure(EntityTypeBuilder<Syntax> entityTypeBuilder)
+        public override void Configure(EntityTypeBuilder<Syntax> entityTypeBuilder)
         {
-            entityTypeBuilder.ToTable("syntaxes");
+            base.Configure(entityTypeBuilder);
 
-            entityTypeBuilder.Property(x => x.Id)
-                .HasColumnType("SMALLINT UNSIGNED");
-            entityTypeBuilder.Property(x => x.CreatedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAdd();
-            entityTypeBuilder.Property(x => x.ModifiedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAddOrUpdate();
+            entityTypeBuilder.ToTable("syntaxes");
 
             entityTypeBuilder.Property(x => x.DefinitionUrl)
                 .HasColumnType("TEXT");
