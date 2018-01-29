@@ -18,7 +18,7 @@ namespace FilterLists.Api.V1.Controllers
         [HttpGet]
         public async Task<IActionResult> Seed()
         {
-            return Json(await seedService.GetAll<Maintainer, MaintainerSeedDto>());
+            return Json(await seedService.GetAllAsync<Maintainer, MaintainerSeedDto>());
         }
     }
 }
