@@ -27,33 +27,38 @@ namespace FilterLists.Services.Services
             AddOrUpdateRules(snapshots);
         }
 
-        private async Task<IEnumerable<FilterListDto>> GetNextFilterListDtosToScrape(int batchSize)
+        private async Task<IEnumerable<FilterListViewUrlDto>> GetNextFilterListDtosToScrape(int batchSize)
         {
             return await filterListsDbContext.FilterLists.OrderBy(x => x.ScrapedDateUtc).Take(batchSize)
-                .ProjectTo<FilterListDto>().ToListAsync();
+                .ProjectTo<FilterListViewUrlDto>().ToListAsync();
         }
 
-        private static async Task<IEnumerable<Snapshot>> GetSnapshots(IEnumerable<FilterListDto> lists)
+        private static async Task<IEnumerable<Snapshot>> GetSnapshots(IEnumerable<FilterListViewUrlDto> lists)
         {
             return await Task.WhenAll(lists.Select(async list =>
-                new Snapshot {Content = await GetContent(list.ViewUrl), FilterListId = list.Id}));
+                new Snapshot {Content = await TryGetContent(list.ViewUrl), FilterListId = list.Id}));
         }
 
-        private static async Task<string> GetContent(string url)
+        private static async Task<string> TryGetContent(string url)
         {
             try
             {
-                using (var httpClient = new HttpClient())
-                using (var httpResponseMessage = await httpClient.GetAsync(url))
-                {
-                    if (httpResponseMessage.IsSuccessStatusCode)
-                        return await httpResponseMessage.Content.ReadAsStringAsync();
-                }
+                return await GetSuccessfulHttpResponseMessageContent(url);
             }
             catch (Exception)
             {
                 //TODO: log exception
                 return null;
+            }
+        }
+
+        private static async Task<string> GetSuccessfulHttpResponseMessageContent(string url)
+        {
+            using (var httpClient = new HttpClient())
+            using (var httpResponseMessage = await httpClient.GetAsync(url))
+            {
+                if (httpResponseMessage.IsSuccessStatusCode)
+                    return await httpResponseMessage.Content.ReadAsStringAsync();
             }
 
             //TODO: log httpResponseMessage.StatusCode
@@ -100,7 +105,7 @@ namespace FilterLists.Services.Services
             filterListsDbContext.SaveChangesAsync();
         }
 
-        private class FilterListDto
+        private class FilterListViewUrlDto
         {
             public int Id { get; set; }
             public string ViewUrl { get; set; }
