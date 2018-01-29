@@ -24,7 +24,7 @@ namespace FilterLists.Services.Services
         {
             var lists = await GetNextFilterListDtosToScrape(batchSize);
             var snapshots = await GetSnapshots(lists);
-            await AddOrUpdateRules(snapshots);
+            AddOrUpdateRules(snapshots);
         }
 
         private async Task<IEnumerable<FilterListDto>> GetNextFilterListDtosToScrape(int batchSize)
@@ -60,13 +60,14 @@ namespace FilterLists.Services.Services
             return null;
         }
 
-        private async Task AddOrUpdateRules(IEnumerable<Snapshot> snapshots)
+        private void AddOrUpdateRules(IEnumerable<Snapshot> snapshots)
         {
-            await Task.WhenAll(snapshots.Select(async snapshot => await AddOrUpdateRules(snapshot)));
+            foreach (var snapshot in snapshots)
+                AddOrUpdateRules(snapshot);
         }
 
         //TODO: finish and validate
-        private async Task AddOrUpdateRules(Snapshot snapshot)
+        private void AddOrUpdateRules(Snapshot snapshot)
         {
             // add new Rules
             var snapshotRulesRaw =
@@ -97,7 +98,7 @@ namespace FilterLists.Services.Services
 
             //TODO: update FilterList.ScrapedDateUtc
 
-            await filterListsDbContext.SaveChangesAsync();
+            filterListsDbContext.SaveChangesAsync();
         }
 
         private class FilterListDto
