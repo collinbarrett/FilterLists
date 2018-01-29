@@ -70,10 +70,9 @@ namespace FilterLists.Services.Services
         private void AddOrUpdateRules(Snapshot snapshot)
         {
             // add new Rules
-            var snapshotRulesRaw =
-                snapshot.Content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
-            var preExistingSnapshotRules = filterListsDbContext.Rules.Where(x => snapshotRulesRaw.Contains(x.Raw));
-            var newSnapshotRulesRaw = snapshotRulesRaw.Except(preExistingSnapshotRules.Select(x => x.Raw));
+            snapshot.ParseRawRules();
+            var preExistingSnapshotRules = filterListsDbContext.Rules.Where(x => snapshot.RawRules.Contains(x.Raw));
+            var newSnapshotRulesRaw = snapshot.RawRules.Except(preExistingSnapshotRules.Select(x => x.Raw));
             var newSnapshotRules =
                 newSnapshotRulesRaw.Select(newSnapshotRuleRaw => new Rule {Raw = newSnapshotRuleRaw});
             filterListsDbContext.Rules.AddRange(newSnapshotRules);
@@ -109,8 +108,14 @@ namespace FilterLists.Services.Services
 
         private class Snapshot
         {
-            public string Content { get; set; }
+            public string Content { private get; set; }
             public int FilterListId { get; set; }
+            public string[] RawRules { get; private set; }
+
+            public void ParseRawRules()
+            {
+                RawRules = Content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
+            }
         }
     }
 }
