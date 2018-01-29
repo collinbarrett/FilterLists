@@ -18,7 +18,7 @@ namespace FilterLists.Api.V1.Controllers
         [HttpGet]
         public async Task<IActionResult> Seed()
         {
-            return Json(await seedService.GetAll<Language, LanguageSeedDto>());
+            return Json(await seedService.GetAllAsync<Language, LanguageSeedDto>());
         }
     }
 }

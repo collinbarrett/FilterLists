@@ -18,7 +18,7 @@ namespace FilterLists.Api.V1.Controllers
         [HttpGet]
         public async Task<IActionResult> Seed()
         {
-            return Json(await seedService.GetAll<Software, SoftwareSeedDto>());
+            return Json(await seedService.GetAllAsync<Software, SoftwareSeedDto>());
         }
     }
 }

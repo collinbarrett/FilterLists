@@ -20,13 +20,13 @@ namespace FilterLists.Api.V1.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            return Json(await filterListService.GetAllSummaries());
+            return Json(await filterListService.GetAllSummariesAsync());
         }
 
         [HttpGet]
         public async Task<IActionResult> Seed()
         {
-            return Json(await seedService.GetAll<FilterList, FilterListSeedDto>());
+            return Json(await seedService.GetAllAsync<FilterList, FilterListSeedDto>());
         }
     }
 }
