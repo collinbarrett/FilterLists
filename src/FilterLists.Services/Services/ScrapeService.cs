@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
+using FilterLists.Data.Entities.Junctions;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Services.Services
@@ -65,37 +66,37 @@ namespace FilterLists.Services.Services
             return null;
         }
 
-        //TODO: finish and validate
         private void AddOrUpdateRules(Snapshot snapshot)
         {
             // add new Rules
             var preExistingSnapshotRules = dbContext.Rules.Where(x => snapshot.RawRules.Contains(x.Raw));
             var newSnapshotRulesRaw = snapshot.RawRules.Except(preExistingSnapshotRules.Select(x => x.Raw));
-            var newSnapshotRules =
-                newSnapshotRulesRaw.Select(newSnapshotRuleRaw => new Rule {Raw = newSnapshotRuleRaw});
+            var newSnapshotRules = newSnapshotRulesRaw.Select(newSnapshotRuleRaw => new Rule {Raw = newSnapshotRuleRaw});
             dbContext.Rules.AddRange(newSnapshotRules);
 
             // remove deleted FilterListRules
-            var preExistingFilterListRules =
-                dbContext.FilterListRules.Where(x => x.FilterListId == snapshot.FilterListId);
-            var deletedFilterListRules =
-                preExistingFilterListRules.Where(x => !preExistingSnapshotRules.Select(y => y.Id).Contains(x.RuleId));
+            var preExistingFilterListRules = dbContext.FilterListRules.Where(x => x.FilterListId == snapshot.FilterListId);
+            var deletedFilterListRules = preExistingFilterListRules.Where(x => !preExistingSnapshotRules.Select(y => y.Id).Contains(x.RuleId));
             dbContext.FilterListRules.RemoveRange(deletedFilterListRules);
 
-            // add new FilterListRules
-
+            // add new (or previously missing junction) FilterListRules
+            var preExistingSnapshotFilterListRules = preExistingSnapshotRules.Select(newSnapshotRule =>
+                new FilterListRule {FilterListId = snapshot.FilterListId, Rule = newSnapshotRule});
+            dbContext.FilterListRules.AddRange(preExistingSnapshotFilterListRules);
+            var newFilterListRules = newSnapshotRules.Select(newSnapshotRule =>
+                new FilterListRule {FilterListId = snapshot.FilterListId, Rule = newSnapshotRule});
+            dbContext.FilterListRules.AddRange(newFilterListRules);
 
             // update UpdatedDateUtc
-            if (newSnapshotRulesRaw.Any() || deletedFilterListRules.Any())
-            {
-                var list = dbContext.FilterLists.FindAsync(snapshot.FilterListId).Result;
+            var list = dbContext.FilterLists.Find(snapshot.FilterListId);
+            if (preExistingSnapshotFilterListRules.Any() || newFilterListRules.Any() || deletedFilterListRules.Any())
                 list.UpdatedDateUtc = DateTime.UtcNow;
-                dbContext.FilterLists.Update(list);
-            }
 
-            //TODO: update FilterList.ScrapedDateUtc
+            // update ScrapedDateUtc
+            list.ScrapedDateUtc = DateTime.UtcNow;
+            dbContext.FilterLists.Update(list);
 
-            dbContext.SaveChangesAsync();
+            dbContext.SaveChanges();
         }
 
         private class FilterListViewUrlDto
