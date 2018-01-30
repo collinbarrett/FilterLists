@@ -25,7 +25,7 @@ namespace FilterLists.Services.Services
         {
             var lists = await GetNextFilterListsToScrape(batchSize);
             var snapshots = await GetSnapshots(lists);
-            snapshots.ForEach(async snapshot => await AddOrUpdateRules(snapshot));
+            await SaveSnapshots(snapshots);
         }
 
         private async Task<IEnumerable<FilterListViewUrlDto>> GetNextFilterListsToScrape(int batchSize)
@@ -36,8 +36,10 @@ namespace FilterLists.Services.Services
 
         private static async Task<IEnumerable<Snapshot>> GetSnapshots(IEnumerable<FilterListViewUrlDto> lists)
         {
-            return await Task.WhenAll(lists.Select(async list =>
-                new Snapshot {Content = await TryGetContent(list.ViewUrl), FilterListId = list.Id}));
+            return await Task.WhenAll(lists
+                .Select(async list =>
+                    new Snapshot {Content = await TryGetContent(list.ViewUrl), FilterListId = list.Id})
+                .Where(x => x.Result.RawRules != null));
         }
 
         private static async Task<string> TryGetContent(string url)
@@ -66,25 +68,42 @@ namespace FilterLists.Services.Services
             return null;
         }
 
+        private async Task SaveSnapshots(IEnumerable<Snapshot> snapshots)
+        {
+            foreach (var snapshot in snapshots)
+            {
+                await AddOrUpdateRules(snapshot);
+            }
+        }
+
         private async Task AddOrUpdateRules(Snapshot snapshot)
         {
+            dbContext.ChangeTracker.AutoDetectChangesEnabled = false;
+
             // add new Rules
             var preExistingSnapshotRules = dbContext.Rules.Where(x => snapshot.RawRules.Contains(x.Raw));
             var newSnapshotRawRules = snapshot.RawRules.Except(preExistingSnapshotRules.Select(x => x.Raw));
-            var newSnapshotRules = newSnapshotRawRules.Select(newSnapshotRuleRaw => new Rule {Raw = newSnapshotRuleRaw});
+            var newSnapshotRules = newSnapshotRawRules.Select(newSnapshotRuleRaw => new Rule {Raw = newSnapshotRuleRaw})
+                .ToList();
             dbContext.Rules.AddRange(newSnapshotRules);
 
             // remove deleted FilterListRules
-            var preExistingFilterListRules = dbContext.FilterListRules.Where(x => x.FilterListId == snapshot.FilterListId);
-            var deletedFilterListRules = preExistingFilterListRules.Where(x => !preExistingSnapshotRules.Select(y => y.Id).Contains(x.RuleId));
+            var preExistingFilterListRules =
+                dbContext.FilterListRules.Where(x => x.FilterListId == snapshot.FilterListId);
+            var deletedFilterListRules =
+                preExistingFilterListRules.Where(x => !preExistingSnapshotRules.Select(y => y.Id).Contains(x.RuleId));
             dbContext.FilterListRules.RemoveRange(deletedFilterListRules);
 
-            // add new FilterListRules
-            var preExistingSnapshotFilterListRules = preExistingSnapshotRules.Select(newSnapshotRule =>
-                new FilterListRule {FilterListId = snapshot.FilterListId, Rule = newSnapshotRule}).Except(preExistingFilterListRules);
+            // add FilterListRules for pre-existing Rules
+            var preExistingSnapshotFilterListRules = preExistingSnapshotRules
+                .Select(newSnapshotRule =>
+                    new FilterListRule {FilterListId = snapshot.FilterListId, Rule = newSnapshotRule}).ToList()
+                .Except(preExistingFilterListRules).ToList();
             dbContext.FilterListRules.AddRange(preExistingSnapshotFilterListRules);
+
+            // add new FilterListRules
             var newFilterListRules = newSnapshotRules.Select(newSnapshotRule =>
-                new FilterListRule {FilterListId = snapshot.FilterListId, Rule = newSnapshotRule});
+                new FilterListRule {FilterListId = snapshot.FilterListId, Rule = newSnapshotRule}).ToList();
             dbContext.FilterListRules.AddRange(newFilterListRules);
 
             // update UpdatedDateUtc
@@ -107,9 +126,8 @@ namespace FilterLists.Services.Services
 
         private class Snapshot
         {
-            public string Content
-            {
-                set => RawRules = value.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
+            public string Content {  
+                set => RawRules = value?.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries);
             }
 
             public int FilterListId { get; set; }

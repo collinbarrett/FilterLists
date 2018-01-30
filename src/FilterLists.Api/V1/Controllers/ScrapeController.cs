@@ -17,7 +17,7 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> Index()
         {
 #if DEBUG
-            await scrapeService.ScrapeAsync(5);
+            await scrapeService.ScrapeAsync(3);
             return Ok();
 #else
             return StatusCode(403);
