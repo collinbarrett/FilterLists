@@ -13,19 +13,19 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.ToTable("languages");
 
             entityTypeBuilder.Property(x => x.Iso6391)
-                .HasColumnType("NVARCHAR(2)");
+                .HasColumnType("VARCHAR(2)");
             entityTypeBuilder.Property(x => x.Iso6392)
-                .HasColumnType("NVARCHAR(3)");
+                .HasColumnType("VARCHAR(3)");
             entityTypeBuilder.Property(x => x.Iso6392B)
-                .HasColumnType("NVARCHAR(3)");
+                .HasColumnType("VARCHAR(3)");
             entityTypeBuilder.Property(x => x.Iso6392T)
-                .HasColumnType("NVARCHAR(3)");
+                .HasColumnType("VARCHAR(3)");
             entityTypeBuilder.Property(x => x.Iso6393)
-                .HasColumnType("NVARCHAR(3)");
+                .HasColumnType("VARCHAR(3)");
             entityTypeBuilder.Property(x => x.LocalName)
-                .HasColumnType("NVARCHAR(126)");
+                .HasColumnType("VARCHAR(126)");
             entityTypeBuilder.Property(x => x.Name)
-                .HasColumnType("NVARCHAR(126)");
+                .HasColumnType("VARCHAR(126)");
         }
     }
 }
