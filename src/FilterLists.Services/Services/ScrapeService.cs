@@ -12,24 +12,24 @@ namespace FilterLists.Services.Services
 {
     public class ScrapeService
     {
-        private readonly FilterListsDbContext filterListsDbContext;
+        private readonly FilterListsDbContext dbContext;
 
-        public ScrapeService(FilterListsDbContext filterListsDbContext)
+        public ScrapeService(FilterListsDbContext dbContext)
         {
-            this.filterListsDbContext = filterListsDbContext;
+            this.dbContext = dbContext;
         }
 
         //TODO: call via scheduled job
         public async Task ScrapeAsync(int batchSize)
         {
-            var lists = await GetNextFilterListDtosToScrape(batchSize);
+            var lists = await GetNextFilterListsToScrape(batchSize);
             var snapshots = await GetSnapshots(lists);
-            AddOrUpdateRules(snapshots);
+            snapshots.ForEach(AddOrUpdateRules);
         }
 
-        private async Task<IEnumerable<FilterListViewUrlDto>> GetNextFilterListDtosToScrape(int batchSize)
+        private async Task<IEnumerable<FilterListViewUrlDto>> GetNextFilterListsToScrape(int batchSize)
         {
-            return await filterListsDbContext.FilterLists.OrderBy(x => x.ScrapedDateUtc).Take(batchSize)
+            return await dbContext.FilterLists.OrderBy(x => x.ScrapedDateUtc).Take(batchSize)
                 .ProjectTo<FilterListViewUrlDto>().ToListAsync();
         }
 
@@ -43,7 +43,7 @@ namespace FilterLists.Services.Services
         {
             try
             {
-                return await GetSuccessfulHttpResponseMessageContent(url);
+                return await GetHttpResponseMessageContent(url);
             }
             catch (Exception)
             {
@@ -52,7 +52,7 @@ namespace FilterLists.Services.Services
             }
         }
 
-        private static async Task<string> GetSuccessfulHttpResponseMessageContent(string url)
+        private static async Task<string> GetHttpResponseMessageContent(string url)
         {
             using (var httpClient = new HttpClient())
             using (var httpResponseMessage = await httpClient.GetAsync(url))
@@ -65,29 +65,22 @@ namespace FilterLists.Services.Services
             return null;
         }
 
-        private void AddOrUpdateRules(IEnumerable<Snapshot> snapshots)
-        {
-            foreach (var snapshot in snapshots)
-                AddOrUpdateRules(snapshot);
-        }
-
         //TODO: finish and validate
         private void AddOrUpdateRules(Snapshot snapshot)
         {
             // add new Rules
-            snapshot.ParseRawRules();
-            var preExistingSnapshotRules = filterListsDbContext.Rules.Where(x => snapshot.RawRules.Contains(x.Raw));
+            var preExistingSnapshotRules = dbContext.Rules.Where(x => snapshot.RawRules.Contains(x.Raw));
             var newSnapshotRulesRaw = snapshot.RawRules.Except(preExistingSnapshotRules.Select(x => x.Raw));
             var newSnapshotRules =
                 newSnapshotRulesRaw.Select(newSnapshotRuleRaw => new Rule {Raw = newSnapshotRuleRaw});
-            filterListsDbContext.Rules.AddRange(newSnapshotRules);
+            dbContext.Rules.AddRange(newSnapshotRules);
 
             // remove deleted FilterListRules
             var preExistingFilterListRules =
-                filterListsDbContext.FilterListRules.Where(x => x.FilterListId == snapshot.FilterListId);
+                dbContext.FilterListRules.Where(x => x.FilterListId == snapshot.FilterListId);
             var deletedFilterListRules =
                 preExistingFilterListRules.Where(x => !preExistingSnapshotRules.Select(y => y.Id).Contains(x.RuleId));
-            filterListsDbContext.FilterListRules.RemoveRange(deletedFilterListRules);
+            dbContext.FilterListRules.RemoveRange(deletedFilterListRules);
 
             // add new FilterListRules
 
@@ -95,14 +88,14 @@ namespace FilterLists.Services.Services
             // update UpdatedDateUtc
             if (newSnapshotRulesRaw.Any() || deletedFilterListRules.Any())
             {
-                var list = filterListsDbContext.FilterLists.FindAsync(snapshot.FilterListId).Result;
+                var list = dbContext.FilterLists.FindAsync(snapshot.FilterListId).Result;
                 list.UpdatedDateUtc = DateTime.UtcNow;
-                filterListsDbContext.FilterLists.Update(list);
+                dbContext.FilterLists.Update(list);
             }
 
             //TODO: update FilterList.ScrapedDateUtc
 
-            filterListsDbContext.SaveChangesAsync();
+            dbContext.SaveChangesAsync();
         }
 
         private class FilterListViewUrlDto
@@ -113,14 +106,14 @@ namespace FilterLists.Services.Services
 
         private class Snapshot
         {
-            public string Content { private get; set; }
-            public int FilterListId { get; set; }
-            public string[] RawRules { get; private set; }
-
-            public void ParseRawRules()
+            public string Content
             {
-                RawRules = Content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
+                set => RawRules = value.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
             }
+
+            public int FilterListId { get; set; }
+
+            public string[] RawRules { get; private set; }
         }
     }
 }
