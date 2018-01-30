@@ -70,8 +70,8 @@ namespace FilterLists.Services.Services
         {
             // add new Rules
             var preExistingSnapshotRules = dbContext.Rules.Where(x => snapshot.RawRules.Contains(x.Raw));
-            var newSnapshotRulesRaw = snapshot.RawRules.Except(preExistingSnapshotRules.Select(x => x.Raw));
-            var newSnapshotRules = newSnapshotRulesRaw.Select(newSnapshotRuleRaw => new Rule {Raw = newSnapshotRuleRaw});
+            var newSnapshotRawRules = snapshot.RawRules.Except(preExistingSnapshotRules.Select(x => x.Raw));
+            var newSnapshotRules = newSnapshotRawRules.Select(newSnapshotRuleRaw => new Rule {Raw = newSnapshotRuleRaw});
             dbContext.Rules.AddRange(newSnapshotRules);
 
             // remove deleted FilterListRules
@@ -79,9 +79,9 @@ namespace FilterLists.Services.Services
             var deletedFilterListRules = preExistingFilterListRules.Where(x => !preExistingSnapshotRules.Select(y => y.Id).Contains(x.RuleId));
             dbContext.FilterListRules.RemoveRange(deletedFilterListRules);
 
-            // add new (or previously missing junction) FilterListRules
+            // add new FilterListRules
             var preExistingSnapshotFilterListRules = preExistingSnapshotRules.Select(newSnapshotRule =>
-                new FilterListRule {FilterListId = snapshot.FilterListId, Rule = newSnapshotRule});
+                new FilterListRule {FilterListId = snapshot.FilterListId, Rule = newSnapshotRule}).Except(preExistingFilterListRules);
             dbContext.FilterListRules.AddRange(preExistingSnapshotFilterListRules);
             var newFilterListRules = newSnapshotRules.Select(newSnapshotRule =>
                 new FilterListRule {FilterListId = snapshot.FilterListId, Rule = newSnapshotRule});
