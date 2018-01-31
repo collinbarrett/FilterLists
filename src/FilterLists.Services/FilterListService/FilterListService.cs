@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
@@ -19,8 +20,8 @@ namespace FilterLists.Services.FilterListService
 
         public async Task<IEnumerable<FilterListSummaryDto>> GetAllSummariesAsync()
         {
-            return await filterListsDbContext.Set<FilterList>().AsNoTracking().ProjectTo<FilterListSummaryDto>()
-                .ToListAsync();
+            return await filterListsDbContext.Set<FilterList>().AsNoTracking().OrderBy(x => x.Name)
+                .ProjectTo<FilterListSummaryDto>().ToListAsync();
         }
     }
 }
