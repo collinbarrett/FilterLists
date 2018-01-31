@@ -44,6 +44,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                        <tr key={filterList.id}>
                            <td>{filterList.name}</td>
                            <td>{filterList.description}</td>
+                           <td><a href="{filterList.viewUrl}">View</a></td>
+                           <td><a href="abp:subscribe?location={filterList.viewUrl}">Subscribe</a></td>
                        </tr>
                    )}
                    </tbody>
@@ -55,4 +57,5 @@ interface IFilterList {
     id: number;
     name: string;
     description: string;
+    viewUrl: string;
 }
