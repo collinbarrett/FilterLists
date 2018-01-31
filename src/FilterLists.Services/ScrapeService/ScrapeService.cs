@@ -7,9 +7,10 @@ using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
+using FilterLists.Services.ScrapeService.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace FilterLists.Services.Services
+namespace FilterLists.Services.ScrapeService
 {
     public class ScrapeService
     {
@@ -113,42 +114,6 @@ namespace FilterLists.Services.Services
             dbContext.FilterLists.Update(list);
 
             await dbContext.SaveChangesAsync();
-        }
-
-        private class FilterListViewUrlDto
-        {
-            public int Id { get; set; }
-            public string ViewUrl { get; set; }
-        }
-
-        private class Snapshot
-        {
-            public string Content
-            {
-                set
-                {
-                    if (value == null) return;
-                    var rawRules = value.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
-                    for (var i = 0; i < rawRules.Length; i++)
-                        rawRules[i] = LintStringForMySql(rawRules[i]);
-                    RawRules = rawRules;
-                }
-            }
-
-            public int FilterListId { get; set; }
-
-            public string[] RawRules { get; private set; }
-
-            private static string LintStringForMySql(string rule)
-            {
-                rule = TrimSingleBackslashFromEnd(rule);
-                return rule;
-            }
-
-            private static string TrimSingleBackslashFromEnd(string rule)
-            {
-                return rule.EndsWith(@"\") && !rule.EndsWith(@"\\") ? rule.Remove(rule.Length - 1) : rule;
-            }
         }
     }
 }
