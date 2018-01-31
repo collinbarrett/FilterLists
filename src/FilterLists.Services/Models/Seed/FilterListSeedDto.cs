@@ -15,6 +15,7 @@ namespace FilterLists.Services.Models.Seed
         public string IssuesUrl { get; set; }
         public int? LicenseId { get; set; }
         public string Name { get; set; }
+        public string PolicyUrl { get; set; }
         public string SubmissionUrl { get; set; }
         public int? SyntaxId { get; set; }
         public string ViewUrl { get; set; }
