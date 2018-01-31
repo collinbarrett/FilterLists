@@ -45,7 +45,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            <td>{filterList.name}</td>
                            <td>{filterList.description}</td>
                            <td><a href={filterList.viewUrl}>View</a></td>
-                           <td><a href={"abp:subscribe?location=" + encodeURIComponent(filterList.viewUrl)}>Subscribe</a></td>
+                           <td><a href={`abp:subscribe?location=${encodeURI(filterList.viewUrl)}`}>Subscribe</a></td>
                        </tr>
                    )}
                    </tbody>
