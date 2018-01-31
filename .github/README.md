@@ -48,6 +48,7 @@ The immediate projects are converting the data to an actual web application (rat
 | *License             | The list's license (typically [CC](https://creativecommons.org/choose/)) |
 | *Maintainers         | The list's maintainers                                                   |
 | Name                 | The list's name (APA Title Case)                                         |
+| PolicyUrl            | The list's policy/guidelines for the types of rules it contains          |
 | SubmissionUrl        | The list's submission form URL                                           |
 | *Syntax              | The list's syntax (uBlock Origin, Adblock Plus, hosts, etc.)             |
 | *UpstreamFilterLists | The list's upstream lists if it is a fork or a merge                     |
