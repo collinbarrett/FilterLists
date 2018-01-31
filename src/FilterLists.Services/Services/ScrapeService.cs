@@ -70,10 +70,7 @@ namespace FilterLists.Services.Services
 
         private async Task SaveSnapshots(IEnumerable<Snapshot> snapshots)
         {
-            foreach (var snapshot in snapshots)
-            {
-                await AddOrUpdateRules(snapshot);
-            }
+            foreach (var snapshot in snapshots) await AddOrUpdateRules(snapshot);
         }
 
         private async Task AddOrUpdateRules(Snapshot snapshot)
@@ -126,13 +123,32 @@ namespace FilterLists.Services.Services
 
         private class Snapshot
         {
-            public string Content {  
-                set => RawRules = value?.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+            public string Content
+            {
+                set
+                {
+                    if (value == null) return;
+                    var rawRules = value.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
+                    for (var i = 0; i < rawRules.Length; i++)
+                        rawRules[i] = LintStringForMySql(rawRules[i]);
+                    RawRules = rawRules;
+                }
             }
 
             public int FilterListId { get; set; }
 
             public string[] RawRules { get; private set; }
+
+            private static string LintStringForMySql(string rule)
+            {
+                rule = TrimSingleBackslashFromEnd(rule);
+                return rule;
+            }
+
+            private static string TrimSingleBackslashFromEnd(string rule)
+            {
+                return rule.EndsWith(@"\") && !rule.EndsWith(@"\\") ? rule.Remove(rule.Length - 1) : rule;
+            }
         }
     }
 }
