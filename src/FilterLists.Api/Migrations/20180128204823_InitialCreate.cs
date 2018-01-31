@@ -1,7 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using System;
-using System.Collections.Generic;
 
 namespace FilterLists.Api.Migrations
 {
@@ -10,395 +9,377 @@ namespace FilterLists.Api.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "languages",
-                columns: table => new
+                "languages",
+                table => new
                 {
-                    Id = table.Column<int>(type: "SMALLINT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("SMALLINT UNSIGNED", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Iso6391 = table.Column<string>(type: "NVARCHAR(2)", nullable: true),
-                    Iso6392 = table.Column<string>(type: "NVARCHAR(3)", nullable: true),
-                    Iso6392B = table.Column<string>(type: "NVARCHAR(3)", nullable: true),
-                    Iso6392T = table.Column<string>(type: "NVARCHAR(3)", nullable: true),
-                    Iso6393 = table.Column<string>(type: "NVARCHAR(3)", nullable: true),
-                    LocalName = table.Column<string>(type: "NVARCHAR(126)", nullable: true),
-                    ModifiedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false),
-                    Name = table.Column<string>(type: "NVARCHAR(126)", nullable: true)
+                    Iso6391 = table.Column<string>("NVARCHAR(2)", nullable: true),
+                    Iso6392 = table.Column<string>("NVARCHAR(3)", nullable: true),
+                    Iso6392B = table.Column<string>("NVARCHAR(3)", nullable: true),
+                    Iso6392T = table.Column<string>("NVARCHAR(3)", nullable: true),
+                    Iso6393 = table.Column<string>("NVARCHAR(3)", nullable: true),
+                    LocalName = table.Column<string>("NVARCHAR(126)", nullable: true),
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
+                    Name = table.Column<string>("NVARCHAR(126)", nullable: true)
                 },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_languages", x => x.Id);
-                });
+                constraints: table => { table.PrimaryKey("PK_languages", x => x.Id); });
 
             migrationBuilder.CreateTable(
-                name: "licenses",
-                columns: table => new
+                "licenses",
+                table => new
                 {
-                    Id = table.Column<int>(type: "SMALLINT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("SMALLINT UNSIGNED", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    DescriptionUrl = table.Column<string>(type: "TEXT", nullable: true),
-                    ModifiedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false),
-                    Name = table.Column<string>(type: "NVARCHAR(126) NOT NULL", nullable: true),
+                    DescriptionUrl = table.Column<string>("TEXT", nullable: true),
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
+                    Name = table.Column<string>("NVARCHAR(126) NOT NULL", nullable: true),
                     PermissiveAdaptation = table.Column<bool>(nullable: false),
                     PermissiveCommercial = table.Column<bool>(nullable: false)
                 },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_licenses", x => x.Id);
-                });
+                constraints: table => { table.PrimaryKey("PK_licenses", x => x.Id); });
 
             migrationBuilder.CreateTable(
-                name: "maintainers",
-                columns: table => new
+                "maintainers",
+                table => new
                 {
-                    Id = table.Column<int>(type: "SMALLINT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("SMALLINT UNSIGNED", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    EmailAddress = table.Column<string>(type: "NVARCHAR(126)", nullable: true),
-                    HomeUrl = table.Column<string>(type: "TEXT", nullable: true),
-                    ModifiedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false),
-                    Name = table.Column<string>(type: "NVARCHAR(126) NOT NULL", nullable: true),
-                    TwitterHandle = table.Column<string>(type: "NVARCHAR(126)", nullable: true)
+                    EmailAddress = table.Column<string>("NVARCHAR(126)", nullable: true),
+                    HomeUrl = table.Column<string>("TEXT", nullable: true),
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
+                    Name = table.Column<string>("NVARCHAR(126) NOT NULL", nullable: true),
+                    TwitterHandle = table.Column<string>("NVARCHAR(126)", nullable: true)
                 },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_maintainers", x => x.Id);
-                });
+                constraints: table => { table.PrimaryKey("PK_maintainers", x => x.Id); });
 
             migrationBuilder.CreateTable(
-                name: "rules",
-                columns: table => new
+                "rules",
+                table => new
                 {
-                    Id = table.Column<int>(type: "BIGINT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("BIGINT UNSIGNED", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    ModifiedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false),
-                    Raw = table.Column<string>(type: "NVARCHAR(2083) NOT NULL", nullable: true)
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
+                    Raw = table.Column<string>("NVARCHAR(2083) NOT NULL", nullable: true)
                 },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_rules", x => x.Id);
-                });
+                constraints: table => { table.PrimaryKey("PK_rules", x => x.Id); });
 
             migrationBuilder.CreateTable(
-                name: "software",
-                columns: table => new
+                "software",
+                table => new
                 {
-                    Id = table.Column<int>(type: "SMALLINT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("SMALLINT UNSIGNED", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    DownloadUrl = table.Column<string>(type: "TEXT", nullable: true),
-                    HomeUrl = table.Column<string>(type: "TEXT", nullable: true),
-                    ModifiedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false),
-                    Name = table.Column<string>(type: "NVARCHAR(126) NOT NULL", nullable: true)
+                    DownloadUrl = table.Column<string>("TEXT", nullable: true),
+                    HomeUrl = table.Column<string>("TEXT", nullable: true),
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
+                    Name = table.Column<string>("NVARCHAR(126) NOT NULL", nullable: true)
                 },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_software", x => x.Id);
-                });
+                constraints: table => { table.PrimaryKey("PK_software", x => x.Id); });
 
             migrationBuilder.CreateTable(
-                name: "syntaxes",
-                columns: table => new
+                "syntaxes",
+                table => new
                 {
-                    Id = table.Column<int>(type: "SMALLINT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("SMALLINT UNSIGNED", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    DefinitionUrl = table.Column<string>(type: "TEXT", nullable: true),
-                    ModifiedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false),
-                    Name = table.Column<string>(type: "NVARCHAR(126) NOT NULL", nullable: true)
+                    DefinitionUrl = table.Column<string>("TEXT", nullable: true),
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
+                    Name = table.Column<string>("NVARCHAR(126) NOT NULL", nullable: true)
                 },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_syntaxes", x => x.Id);
-                });
+                constraints: table => { table.PrimaryKey("PK_syntaxes", x => x.Id); });
 
             migrationBuilder.CreateTable(
-                name: "filterlists",
-                columns: table => new
+                "filterlists",
+                table => new
                 {
-                    Id = table.Column<int>(type: "SMALLINT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("SMALLINT UNSIGNED", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Description = table.Column<string>(type: "TEXT", nullable: true),
-                    DescriptionSourceUrl = table.Column<string>(type: "TEXT", nullable: true),
+                    Description = table.Column<string>("TEXT", nullable: true),
+                    DescriptionSourceUrl = table.Column<string>("TEXT", nullable: true),
                     DiscontinuedDate = table.Column<DateTime>(nullable: true),
-                    DonateUrl = table.Column<string>(type: "TEXT", nullable: true),
-                    EmailAddress = table.Column<string>(type: "NVARCHAR(126)", nullable: true),
-                    ForumUrl = table.Column<string>(type: "TEXT", nullable: true),
-                    HomeUrl = table.Column<string>(type: "TEXT", nullable: true),
-                    IssuesUrl = table.Column<string>(type: "TEXT", nullable: true),
+                    DonateUrl = table.Column<string>("TEXT", nullable: true),
+                    EmailAddress = table.Column<string>("NVARCHAR(126)", nullable: true),
+                    ForumUrl = table.Column<string>("TEXT", nullable: true),
+                    HomeUrl = table.Column<string>("TEXT", nullable: true),
+                    IssuesUrl = table.Column<string>("TEXT", nullable: true),
                     LicenseId = table.Column<int>(nullable: true),
-                    ModifiedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false),
-                    Name = table.Column<string>(type: "NVARCHAR(126) NOT NULL", nullable: true),
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
+                    Name = table.Column<string>("NVARCHAR(126) NOT NULL", nullable: true),
                     ScrapedDateUtc = table.Column<DateTime>(nullable: true),
-                    SubmissionUrl = table.Column<string>(type: "TEXT", nullable: true),
+                    SubmissionUrl = table.Column<string>("TEXT", nullable: true),
                     SyntaxId = table.Column<int>(nullable: true),
                     UpdatedDateUtc = table.Column<DateTime>(nullable: true),
-                    ViewUrl = table.Column<string>(type: "TEXT NOT NULL", nullable: true)
+                    ViewUrl = table.Column<string>("TEXT NOT NULL", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_filterlists", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_filterlists_licenses_LicenseId",
-                        column: x => x.LicenseId,
-                        principalTable: "licenses",
-                        principalColumn: "Id",
+                        "FK_filterlists_licenses_LicenseId",
+                        x => x.LicenseId,
+                        "licenses",
+                        "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_filterlists_syntaxes_SyntaxId",
-                        column: x => x.SyntaxId,
-                        principalTable: "syntaxes",
-                        principalColumn: "Id",
+                        "FK_filterlists_syntaxes_SyntaxId",
+                        x => x.SyntaxId,
+                        "syntaxes",
+                        "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
-                name: "software_syntaxes",
-                columns: table => new
+                "software_syntaxes",
+                table => new
                 {
                     SoftwareId = table.Column<int>(nullable: false),
                     SyntaxId = table.Column<int>(nullable: false),
-                    CreatedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_software_syntaxes", x => new { x.SoftwareId, x.SyntaxId });
+                    table.PrimaryKey("PK_software_syntaxes", x => new {x.SoftwareId, x.SyntaxId});
                     table.ForeignKey(
-                        name: "FK_software_syntaxes_software_SoftwareId",
-                        column: x => x.SoftwareId,
-                        principalTable: "software",
-                        principalColumn: "Id",
+                        "FK_software_syntaxes_software_SoftwareId",
+                        x => x.SoftwareId,
+                        "software",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_software_syntaxes_syntaxes_SyntaxId",
-                        column: x => x.SyntaxId,
-                        principalTable: "syntaxes",
-                        principalColumn: "Id",
+                        "FK_software_syntaxes_syntaxes_SyntaxId",
+                        x => x.SyntaxId,
+                        "syntaxes",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "filterlists_languages",
-                columns: table => new
+                "filterlists_languages",
+                table => new
                 {
                     FilterListId = table.Column<int>(nullable: false),
                     LanguageId = table.Column<int>(nullable: false),
-                    CreatedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_filterlists_languages", x => new { x.FilterListId, x.LanguageId });
+                    table.PrimaryKey("PK_filterlists_languages", x => new {x.FilterListId, x.LanguageId});
                     table.ForeignKey(
-                        name: "FK_filterlists_languages_filterlists_FilterListId",
-                        column: x => x.FilterListId,
-                        principalTable: "filterlists",
-                        principalColumn: "Id",
+                        "FK_filterlists_languages_filterlists_FilterListId",
+                        x => x.FilterListId,
+                        "filterlists",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_filterlists_languages_languages_LanguageId",
-                        column: x => x.LanguageId,
-                        principalTable: "languages",
-                        principalColumn: "Id",
+                        "FK_filterlists_languages_languages_LanguageId",
+                        x => x.LanguageId,
+                        "languages",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "filterlists_maintainers",
-                columns: table => new
+                "filterlists_maintainers",
+                table => new
                 {
                     FilterListId = table.Column<int>(nullable: false),
                     MaintainerId = table.Column<int>(nullable: false),
-                    CreatedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_filterlists_maintainers", x => new { x.FilterListId, x.MaintainerId });
+                    table.PrimaryKey("PK_filterlists_maintainers", x => new {x.FilterListId, x.MaintainerId});
                     table.ForeignKey(
-                        name: "FK_filterlists_maintainers_filterlists_FilterListId",
-                        column: x => x.FilterListId,
-                        principalTable: "filterlists",
-                        principalColumn: "Id",
+                        "FK_filterlists_maintainers_filterlists_FilterListId",
+                        x => x.FilterListId,
+                        "filterlists",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_filterlists_maintainers_maintainers_MaintainerId",
-                        column: x => x.MaintainerId,
-                        principalTable: "maintainers",
-                        principalColumn: "Id",
+                        "FK_filterlists_maintainers_maintainers_MaintainerId",
+                        x => x.MaintainerId,
+                        "maintainers",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "filterlists_rules",
-                columns: table => new
+                "filterlists_rules",
+                table => new
                 {
                     FilterListId = table.Column<int>(nullable: false),
                     RuleId = table.Column<int>(nullable: false),
-                    CreatedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_filterlists_rules", x => new { x.FilterListId, x.RuleId });
+                    table.PrimaryKey("PK_filterlists_rules", x => new {x.FilterListId, x.RuleId});
                     table.ForeignKey(
-                        name: "FK_filterlists_rules_filterlists_FilterListId",
-                        column: x => x.FilterListId,
-                        principalTable: "filterlists",
-                        principalColumn: "Id",
+                        "FK_filterlists_rules_filterlists_FilterListId",
+                        x => x.FilterListId,
+                        "filterlists",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_filterlists_rules_rules_RuleId",
-                        column: x => x.RuleId,
-                        principalTable: "rules",
-                        principalColumn: "Id",
+                        "FK_filterlists_rules_rules_RuleId",
+                        x => x.RuleId,
+                        "rules",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "forks",
-                columns: table => new
+                "forks",
+                table => new
                 {
                     ForkFilterListId = table.Column<int>(nullable: false),
                     UpstreamFilterListId = table.Column<int>(nullable: false),
-                    CreatedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_forks", x => new { x.ForkFilterListId, x.UpstreamFilterListId });
+                    table.PrimaryKey("PK_forks", x => new {x.ForkFilterListId, x.UpstreamFilterListId});
                     table.ForeignKey(
-                        name: "FK_forks_filterlists_ForkFilterListId",
-                        column: x => x.ForkFilterListId,
-                        principalTable: "filterlists",
-                        principalColumn: "Id",
+                        "FK_forks_filterlists_ForkFilterListId",
+                        x => x.ForkFilterListId,
+                        "filterlists",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_forks_filterlists_UpstreamFilterListId",
-                        column: x => x.UpstreamFilterListId,
-                        principalTable: "filterlists",
-                        principalColumn: "Id",
+                        "FK_forks_filterlists_UpstreamFilterListId",
+                        x => x.UpstreamFilterListId,
+                        "filterlists",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "merges",
-                columns: table => new
+                "merges",
+                table => new
                 {
                     MergeFilterListId = table.Column<int>(nullable: false),
                     UpstreamFilterListId = table.Column<int>(nullable: false),
-                    CreatedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_merges", x => new { x.MergeFilterListId, x.UpstreamFilterListId });
+                    table.PrimaryKey("PK_merges", x => new {x.MergeFilterListId, x.UpstreamFilterListId});
                     table.ForeignKey(
-                        name: "FK_merges_filterlists_MergeFilterListId",
-                        column: x => x.MergeFilterListId,
-                        principalTable: "filterlists",
-                        principalColumn: "Id",
+                        "FK_merges_filterlists_MergeFilterListId",
+                        x => x.MergeFilterListId,
+                        "filterlists",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_merges_filterlists_UpstreamFilterListId",
-                        column: x => x.UpstreamFilterListId,
-                        principalTable: "filterlists",
-                        principalColumn: "Id",
+                        "FK_merges_filterlists_UpstreamFilterListId",
+                        x => x.UpstreamFilterListId,
+                        "filterlists",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_filterlists_LicenseId",
-                table: "filterlists",
-                column: "LicenseId");
+                "IX_filterlists_LicenseId",
+                "filterlists",
+                "LicenseId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_filterlists_SyntaxId",
-                table: "filterlists",
-                column: "SyntaxId");
+                "IX_filterlists_SyntaxId",
+                "filterlists",
+                "SyntaxId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_filterlists_languages_LanguageId",
-                table: "filterlists_languages",
-                column: "LanguageId");
+                "IX_filterlists_languages_LanguageId",
+                "filterlists_languages",
+                "LanguageId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_filterlists_maintainers_MaintainerId",
-                table: "filterlists_maintainers",
-                column: "MaintainerId");
+                "IX_filterlists_maintainers_MaintainerId",
+                "filterlists_maintainers",
+                "MaintainerId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_filterlists_rules_RuleId",
-                table: "filterlists_rules",
-                column: "RuleId");
+                "IX_filterlists_rules_RuleId",
+                "filterlists_rules",
+                "RuleId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_forks_UpstreamFilterListId",
-                table: "forks",
-                column: "UpstreamFilterListId");
+                "IX_forks_UpstreamFilterListId",
+                "forks",
+                "UpstreamFilterListId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_merges_UpstreamFilterListId",
-                table: "merges",
-                column: "UpstreamFilterListId");
+                "IX_merges_UpstreamFilterListId",
+                "merges",
+                "UpstreamFilterListId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_software_syntaxes_SyntaxId",
-                table: "software_syntaxes",
-                column: "SyntaxId");
+                "IX_software_syntaxes_SyntaxId",
+                "software_syntaxes",
+                "SyntaxId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "filterlists_languages");
+                "filterlists_languages");
 
             migrationBuilder.DropTable(
-                name: "filterlists_maintainers");
+                "filterlists_maintainers");
 
             migrationBuilder.DropTable(
-                name: "filterlists_rules");
+                "filterlists_rules");
 
             migrationBuilder.DropTable(
-                name: "forks");
+                "forks");
 
             migrationBuilder.DropTable(
-                name: "merges");
+                "merges");
 
             migrationBuilder.DropTable(
-                name: "software_syntaxes");
+                "software_syntaxes");
 
             migrationBuilder.DropTable(
-                name: "languages");
+                "languages");
 
             migrationBuilder.DropTable(
-                name: "maintainers");
+                "maintainers");
 
             migrationBuilder.DropTable(
-                name: "rules");
+                "rules");
 
             migrationBuilder.DropTable(
-                name: "filterlists");
+                "filterlists");
 
             migrationBuilder.DropTable(
-                name: "software");
+                "software");
 
             migrationBuilder.DropTable(
-                name: "licenses");
+                "licenses");
 
             migrationBuilder.DropTable(
-                name: "syntaxes");
+                "syntaxes");
         }
     }
 }
