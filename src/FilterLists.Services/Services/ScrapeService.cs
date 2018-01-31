@@ -130,7 +130,7 @@ namespace FilterLists.Services.Services
                     if (value == null) return;
                     var rawRules = value.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
                     for (var i = 0; i < rawRules.Length; i++)
-                        rawRules[i] = TrimSingleBackslashFromEnd(rawRules[i]);
+                        rawRules[i] = LintStringForMySql(rawRules[i]);
                     RawRules = rawRules;
                 }
             }
@@ -138,6 +138,12 @@ namespace FilterLists.Services.Services
             public int FilterListId { get; set; }
 
             public string[] RawRules { get; private set; }
+
+            private static string LintStringForMySql(string rule)
+            {
+                rule = TrimSingleBackslashFromEnd(rule);
+                return rule;
+            }
 
             private static string TrimSingleBackslashFromEnd(string rule)
             {
