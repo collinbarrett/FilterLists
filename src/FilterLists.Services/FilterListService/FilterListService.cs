@@ -3,10 +3,10 @@ using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
-using FilterLists.Services.Models;
+using FilterLists.Services.FilterListService.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace FilterLists.Services.Services
+namespace FilterLists.Services.FilterListService
 {
     public class FilterListService
     {

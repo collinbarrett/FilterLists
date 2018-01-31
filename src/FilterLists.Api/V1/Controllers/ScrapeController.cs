@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using FilterLists.Services.Services;
+using FilterLists.Services.ScrapeService;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FilterLists.Api.V1.Controllers

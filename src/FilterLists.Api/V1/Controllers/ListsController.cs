@@ -1,7 +1,8 @@
 ﻿using System.Threading.Tasks;
 using FilterLists.Data.Entities;
-using FilterLists.Services.Models.Seed;
-using FilterLists.Services.Services;
+using FilterLists.Services.FilterListService;
+using FilterLists.Services.SeedService;
+using FilterLists.Services.SeedService.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FilterLists.Api.V1.Controllers

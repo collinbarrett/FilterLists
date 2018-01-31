@@ -1,4 +1,4 @@
-﻿namespace FilterLists.Services.Models.Seed
+﻿namespace FilterLists.Services.SeedService.Models
 {
     public class LicenseSeedDto
     {
