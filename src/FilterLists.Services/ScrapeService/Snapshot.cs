@@ -15,7 +15,7 @@ namespace FilterLists.Services.ScrapeService
 
         private string[] rawRules;
 
-        public Snapshot(FilterListsDbContext dbContext, string content, int filterListId)
+        public Snapshot(FilterListsDbContext dbContext, int filterListId, string content)
         {
             this.dbContext = dbContext;
             this.filterListId = filterListId;
@@ -40,12 +40,10 @@ namespace FilterLists.Services.ScrapeService
             var preExistingSnapshotRules = dbContext.Rules.Where(x => rawRules.Contains(x.Raw));
             var newSnapshotRawRules = rawRules.Except(preExistingSnapshotRules.Select(x => x.Raw));
             var newSnapshotRules = newSnapshotRawRules.Select(newSnapshotRawRule => new Rule {Raw = newSnapshotRawRule}).ToList();
-            dbContext.Rules.AddRange(newSnapshotRules);
 
             // remove deleted FilterListRules
             var preExistingFilterListRules = dbContext.FilterListRules.Where(x => x.FilterListId == filterListId);
-            var deletedFilterListRules =
-                preExistingFilterListRules.Where(x => !preExistingSnapshotRules.Select(y => y.Id).Contains(x.RuleId));
+            var deletedFilterListRules = preExistingFilterListRules.Where(x => !preExistingSnapshotRules.Select(y => y.Id).Contains(x.RuleId));
 
             // add FilterListRules for pre-existing Rules
             var preExistingSnapshotFilterListRules = preExistingSnapshotRules.Select(newSnapshotRule =>
@@ -64,7 +62,7 @@ namespace FilterLists.Services.ScrapeService
             // update ScrapedDateUtc
             list.ScrapedDateUtc = DateTime.UtcNow;
 
-            
+            dbContext.Rules.AddRange(newSnapshotRules);
             dbContext.FilterListRules.RemoveRange(deletedFilterListRules);
             dbContext.FilterListRules.AddRange(preExistingSnapshotFilterListRules);
             dbContext.FilterListRules.AddRange(newFilterListRules);

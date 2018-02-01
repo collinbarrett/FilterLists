@@ -35,7 +35,7 @@ namespace FilterLists.Services.ScrapeService
         private async Task<IEnumerable<Snapshot>> GetSnapshots(IEnumerable<FilterListViewUrlDto> lists)
         {
             return await Task.WhenAll(lists
-                .Select(async list => new Snapshot(dbContext, await TryGetContent(list.ViewUrl), list.Id))
+                .Select(async list => new Snapshot(dbContext, list.Id, await TryGetContent(list.ViewUrl)))
                 .Where(x => x.Result.HasRules));
         }
 
