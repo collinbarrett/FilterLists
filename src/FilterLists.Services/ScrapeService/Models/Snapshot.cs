@@ -23,12 +23,19 @@ namespace FilterLists.Services.ScrapeService.Models
         private static string LintStringForMySql(string rule)
         {
             rule = TrimSingleBackslashFromEnd(rule);
+            rule = DropIfContainsBackslashSingleQuote(rule);
             return rule;
         }
 
         private static string TrimSingleBackslashFromEnd(string rule)
         {
             return rule.EndsWith(@"\") && !rule.EndsWith(@"\\") ? rule.Remove(rule.Length - 1) : rule;
+        }
+
+        private static string DropIfContainsBackslashSingleQuote(string rule)
+        {
+            //TODO: resolve issue and/or log rule
+            return rule.Contains(@"\'") ? null : rule;
         }
     }
 }
