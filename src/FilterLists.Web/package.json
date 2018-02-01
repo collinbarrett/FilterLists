@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "devDependencies": {
     "@types/history": "^4.6.2",
-    "@types/react": "^16.0.34",
+    "@types/react": "^16.0.36",
     "@types/react-dom": "^16.0.3",
     "@types/react-hot-loader": "^3.0.5",
-    "@types/react-router": "^4.0.20",
+    "@types/react-router": "^4.0.21",
     "@types/react-router-dom": "^4.2.3",
-    "@types/webpack-env": "^1.13.3",
-    "aspnet-webpack": "^2.0.1",
+    "@types/webpack-env": "^1.13.5",
+    "aspnet-webpack": "^2.0.3",
     "aspnet-webpack-react": "^3.0.0",
     "awesome-typescript-loader": "^3.4.1",
     "bootstrap": "3.3.7",
@@ -19,19 +19,17 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
     "isomorphic-fetch": "2.2.1",
-    "jquery": "3.2.1",
+    "jquery": "^3.3.1",
     "json-loader": "^0.5.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-hot-loader": "^3.1.3",
     "react-router-dom": "^4.2.2",
-    "style-loader": "^0.19.1",
-    "typescript": "^2.6.2",
+    "style-loader": "^0.20.1",
+    "typescript": "^2.7.1",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
     "webpack-hot-middleware": "^2.21.0"
   },
-  "dependencies": {
-    "antd": "^3.1.3"
-  }
+  "dependencies": {}
 }
