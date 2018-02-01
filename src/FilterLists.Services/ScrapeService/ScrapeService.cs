@@ -5,9 +5,6 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
-using FilterLists.Data.Entities;
-using FilterLists.Data.Entities.Junctions;
-using FilterLists.Services.ScrapeService.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Services.ScrapeService
@@ -24,23 +21,22 @@ namespace FilterLists.Services.ScrapeService
         //TODO: call via scheduled job
         public async Task ScrapeAsync(int batchSize)
         {
-            var lists = await GetNextFilterListsToScrape(batchSize);
+            var lists = await GetNextListsToScrape(batchSize);
             var snapshots = await GetSnapshots(lists);
             await SaveSnapshots(snapshots);
         }
 
-        private async Task<IEnumerable<FilterListViewUrlDto>> GetNextFilterListsToScrape(int batchSize)
+        private async Task<List<FilterListViewUrlDto>> GetNextListsToScrape(int batchSize)
         {
             return await dbContext.FilterLists.OrderBy(x => x.ScrapedDateUtc).Take(batchSize)
                 .ProjectTo<FilterListViewUrlDto>().ToListAsync();
         }
 
-        private static async Task<IEnumerable<Snapshot>> GetSnapshots(IEnumerable<FilterListViewUrlDto> lists)
+        private async Task<IEnumerable<Snapshot>> GetSnapshots(IEnumerable<FilterListViewUrlDto> lists)
         {
             return await Task.WhenAll(lists
-                .Select(async list =>
-                    new Snapshot {Content = await TryGetContent(list.ViewUrl), FilterListId = list.Id})
-                .Where(x => x.Result.RawRules != null));
+                .Select(async list => new Snapshot(dbContext, await TryGetContent(list.ViewUrl), list.Id))
+                .Where(x => x.Result.HasRules));
         }
 
         private static async Task<string> TryGetContent(string url)
@@ -69,51 +65,9 @@ namespace FilterLists.Services.ScrapeService
             return null;
         }
 
-        private async Task SaveSnapshots(IEnumerable<Snapshot> snapshots)
+        private static async Task SaveSnapshots(IEnumerable<Snapshot> snapshots)
         {
-            foreach (var snapshot in snapshots) await AddOrUpdateRules(snapshot);
-        }
-
-        private async Task AddOrUpdateRules(Snapshot snapshot)
-        {
-            dbContext.ChangeTracker.AutoDetectChangesEnabled = false;
-
-            // add new Rules
-            var preExistingSnapshotRules = dbContext.Rules.Where(x => snapshot.RawRules.Contains(x.Raw));
-            var newSnapshotRawRules = snapshot.RawRules.Except(preExistingSnapshotRules.Select(x => x.Raw));
-            var newSnapshotRules = newSnapshotRawRules.Select(newSnapshotRuleRaw => new Rule {Raw = newSnapshotRuleRaw})
-                .ToList();
-            dbContext.Rules.AddRange(newSnapshotRules);
-
-            // remove deleted FilterListRules
-            var preExistingFilterListRules =
-                dbContext.FilterListRules.Where(x => x.FilterListId == snapshot.FilterListId);
-            var deletedFilterListRules =
-                preExistingFilterListRules.Where(x => !preExistingSnapshotRules.Select(y => y.Id).Contains(x.RuleId));
-            dbContext.FilterListRules.RemoveRange(deletedFilterListRules);
-
-            // add FilterListRules for pre-existing Rules
-            var preExistingSnapshotFilterListRules = preExistingSnapshotRules
-                .Select(newSnapshotRule =>
-                    new FilterListRule {FilterListId = snapshot.FilterListId, Rule = newSnapshotRule}).ToList()
-                .Except(preExistingFilterListRules).ToList();
-            dbContext.FilterListRules.AddRange(preExistingSnapshotFilterListRules);
-
-            // add new FilterListRules
-            var newFilterListRules = newSnapshotRules.Select(newSnapshotRule =>
-                new FilterListRule {FilterListId = snapshot.FilterListId, Rule = newSnapshotRule}).ToList();
-            dbContext.FilterListRules.AddRange(newFilterListRules);
-
-            // update UpdatedDateUtc
-            var list = dbContext.FilterLists.Find(snapshot.FilterListId);
-            if (preExistingSnapshotFilterListRules.Any() || newFilterListRules.Any() || deletedFilterListRules.Any())
-                list.UpdatedDateUtc = DateTime.UtcNow;
-
-            // update ScrapedDateUtc
-            list.ScrapedDateUtc = DateTime.UtcNow;
-            dbContext.FilterLists.Update(list);
-
-            await dbContext.SaveChangesAsync();
+            foreach (var snapshot in snapshots) await snapshot.AddOrUpdateRules();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace FilterLists.Services.FilterListService.Models
+﻿namespace FilterLists.Services.FilterListService
 {
     public class FilterListSummaryDto
     {

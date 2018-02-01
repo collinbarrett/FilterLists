@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
-using FilterLists.Services.FilterListService.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Services.FilterListService

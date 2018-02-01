@@ -1,4 +1,4 @@
-﻿namespace FilterLists.Services.ScrapeService.Models
+﻿namespace FilterLists.Services.ScrapeService
 {
     public class FilterListViewUrlDto
     {
