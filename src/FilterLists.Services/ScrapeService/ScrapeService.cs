@@ -67,7 +67,15 @@ namespace FilterLists.Services.ScrapeService
 
         private static async Task SaveSnapshots(IEnumerable<Snapshot> snapshots)
         {
-            foreach (var snapshot in snapshots) await snapshot.AddOrUpdateRules();
+            foreach (var snapshot in snapshots)
+                try
+                {
+                    await snapshot.AddOrUpdateRules();
+                }
+                catch (Exception)
+                {
+                    //TODO: log exception
+                }
         }
     }
 }
