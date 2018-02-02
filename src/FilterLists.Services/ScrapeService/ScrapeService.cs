@@ -28,8 +28,8 @@ namespace FilterLists.Services.ScrapeService
 
         private async Task<List<FilterListViewUrlDto>> GetNextListsToScrape(int batchSize)
         {
-            return await dbContext.FilterLists.OrderBy(x => x.ScrapedDateUtc).Take(batchSize)
-                .ProjectTo<FilterListViewUrlDto>().ToListAsync();
+            //TODO: order by least recently scraped
+            return await dbContext.FilterLists.Take(batchSize).ProjectTo<FilterListViewUrlDto>().ToListAsync();
         }
 
         private async Task<IEnumerable<Snapshot>> GetSnapshots(IEnumerable<FilterListViewUrlDto> lists)

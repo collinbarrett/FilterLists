@@ -66,17 +66,14 @@ namespace FilterLists.Api.Migrations
                 b.Property<string>("PolicyUrl")
                     .HasColumnType("TEXT");
 
-                b.Property<DateTime?>("ScrapedDateUtc");
-
                 b.Property<string>("SubmissionUrl")
                     .HasColumnType("TEXT");
 
                 b.Property<int?>("SyntaxId");
 
-                b.Property<DateTime?>("UpdatedDateUtc");
-
                 b.Property<string>("ViewUrl")
-                    .HasColumnType("TEXT NOT NULL");
+                    .IsRequired()
+                    .HasColumnType("TEXT");
 
                 b.HasKey("Id");
 
@@ -319,10 +316,6 @@ namespace FilterLists.Api.Migrations
                     .ValueGeneratedOnAdd()
                     .HasColumnType("TIMESTAMP");
 
-                b.Property<DateTime>("ModifiedDateUtc")
-                    .ValueGeneratedOnAddOrUpdate()
-                    .HasColumnType("TIMESTAMP");
-
                 b.Property<string>("Raw")
                     .IsRequired()
                     .HasColumnType("VARCHAR(8192)");
@@ -330,6 +323,25 @@ namespace FilterLists.Api.Migrations
                 b.HasKey("Id");
 
                 b.ToTable("rules");
+            });
+
+            modelBuilder.Entity("FilterLists.Data.Entities.Scrape", b =>
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("SMALLINT UNSIGNED");
+
+                b.Property<DateTime>("CreatedDateUtc")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("TIMESTAMP");
+
+                b.Property<int>("FilterListId");
+
+                b.HasKey("Id");
+
+                b.HasIndex("FilterListId");
+
+                b.ToTable("scrapes");
             });
 
             modelBuilder.Entity("FilterLists.Data.Entities.Software", b =>
@@ -440,12 +452,12 @@ namespace FilterLists.Api.Migrations
             modelBuilder.Entity("FilterLists.Data.Entities.Junctions.Fork", b =>
             {
                 b.HasOne("FilterLists.Data.Entities.FilterList", "ForkFilterList")
-                    .WithMany()
+                    .WithMany("ForkFilterLists")
                     .HasForeignKey("ForkFilterListId")
                     .OnDelete(DeleteBehavior.Cascade);
 
                 b.HasOne("FilterLists.Data.Entities.FilterList", "UpstreamFilterList")
-                    .WithMany()
+                    .WithMany("UpstreamForkFilterLists")
                     .HasForeignKey("UpstreamFilterListId")
                     .OnDelete(DeleteBehavior.Cascade);
             });
@@ -453,12 +465,12 @@ namespace FilterLists.Api.Migrations
             modelBuilder.Entity("FilterLists.Data.Entities.Junctions.Merge", b =>
             {
                 b.HasOne("FilterLists.Data.Entities.FilterList", "MergeFilterList")
-                    .WithMany()
+                    .WithMany("MergeFilterLists")
                     .HasForeignKey("MergeFilterListId")
                     .OnDelete(DeleteBehavior.Cascade);
 
                 b.HasOne("FilterLists.Data.Entities.FilterList", "UpstreamFilterList")
-                    .WithMany()
+                    .WithMany("UpstreamMergeFilterLists")
                     .HasForeignKey("UpstreamFilterListId")
                     .OnDelete(DeleteBehavior.Cascade);
             });
@@ -473,6 +485,14 @@ namespace FilterLists.Api.Migrations
                 b.HasOne("FilterLists.Data.Entities.Syntax", "Syntax")
                     .WithMany("SoftwareSyntaxes")
                     .HasForeignKey("SyntaxId")
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            modelBuilder.Entity("FilterLists.Data.Entities.Scrape", b =>
+            {
+                b.HasOne("FilterLists.Data.Entities.FilterList")
+                    .WithMany("Scrapes")
+                    .HasForeignKey("FilterListId")
                     .OnDelete(DeleteBehavior.Cascade);
             });
 #pragma warning restore 612, 618
