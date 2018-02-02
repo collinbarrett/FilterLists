@@ -19,7 +19,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.DonateUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.EmailAddress)
-                .HasColumnType("VARCHAR(126)");
+                .HasColumnType("VARCHAR(126) DEFAULT NULL");
             entityTypeBuilder.Property(x => x.ForumUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.HomeUrl)
