@@ -40,7 +40,9 @@ namespace FilterLists.Api.Migrations
                     .HasColumnType("TEXT");
 
                 b.Property<string>("EmailAddress")
-                    .HasColumnType("VARCHAR(126) DEFAULT NULL");
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("VARCHAR(126)")
+                    .HasDefaultValueSql("NULL");
 
                 b.Property<string>("ForumUrl")
                     .HasColumnType("TEXT");
