@@ -13,13 +13,13 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.ToTable("maintainers");
 
             entityTypeBuilder.Property(x => x.EmailAddress)
-                .HasColumnType("VARCHAR(126)");
+                .HasColumnType("VARCHAR(126) DEFAULT NULL");
             entityTypeBuilder.Property(x => x.HomeUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)
                 .HasColumnType("VARCHAR(126) NOT NULL");
             entityTypeBuilder.Property(x => x.TwitterHandle)
-                .HasColumnType("VARCHAR(126)");
+                .HasColumnType("VARCHAR(126) DEFAULT NULL");
         }
     }
 }
