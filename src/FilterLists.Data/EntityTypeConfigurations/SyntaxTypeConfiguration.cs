@@ -15,7 +15,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.DefinitionUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)
-                .HasColumnType("VARCHAR(126) NOT NULL");
+                .HasColumnType("VARCHAR(126)")
+                .IsRequired();
         }
     }
 }

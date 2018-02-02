@@ -28,7 +28,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.IssuesUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)
-                .HasColumnType("VARCHAR(126) NOT NULL");
+                .HasColumnType("VARCHAR(126)")
+                .IsRequired();
             entityTypeBuilder.Property(x => x.PolicyUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.SubmissionUrl)

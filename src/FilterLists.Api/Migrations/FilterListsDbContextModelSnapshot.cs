@@ -60,7 +60,8 @@ namespace FilterLists.Api.Migrations
                     .HasColumnType("TIMESTAMP");
 
                 b.Property<string>("Name")
-                    .HasColumnType("VARCHAR(126) NOT NULL");
+                    .IsRequired()
+                    .HasColumnType("VARCHAR(126)");
 
                 b.Property<string>("PolicyUrl")
                     .HasColumnType("TEXT");
@@ -199,29 +200,43 @@ namespace FilterLists.Api.Migrations
                     .HasColumnType("TIMESTAMP");
 
                 b.Property<string>("Iso6391")
-                    .HasColumnType("VARCHAR(2) DEFAULT NULL");
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("VARCHAR(2)")
+                    .HasDefaultValueSql("NULL");
 
                 b.Property<string>("Iso6392")
-                    .HasColumnType("VARCHAR(3) DEFAULT NULL");
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("VARCHAR(3)")
+                    .HasDefaultValueSql("NULL");
 
                 b.Property<string>("Iso6392B")
-                    .HasColumnType("VARCHAR(3) DEFAULT NULL");
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("VARCHAR(3)")
+                    .HasDefaultValueSql("NULL");
 
                 b.Property<string>("Iso6392T")
-                    .HasColumnType("VARCHAR(3) DEFAULT NULL");
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("VARCHAR(3)")
+                    .HasDefaultValueSql("NULL");
 
                 b.Property<string>("Iso6393")
-                    .HasColumnType("VARCHAR(3) DEFAULT NULL");
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("VARCHAR(3)")
+                    .HasDefaultValueSql("NULL");
 
                 b.Property<string>("LocalName")
-                    .HasColumnType("VARCHAR(126) DEFAULT NULL");
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("VARCHAR(126)")
+                    .HasDefaultValueSql("NULL");
 
                 b.Property<DateTime>("ModifiedDateUtc")
                     .ValueGeneratedOnAddOrUpdate()
                     .HasColumnType("TIMESTAMP");
 
                 b.Property<string>("Name")
-                    .HasColumnType("VARCHAR(126) DEFAULT NULL");
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("VARCHAR(126)")
+                    .HasDefaultValueSql("NULL");
 
                 b.HasKey("Id");
 
@@ -246,7 +261,8 @@ namespace FilterLists.Api.Migrations
                     .HasColumnType("TIMESTAMP");
 
                 b.Property<string>("Name")
-                    .HasColumnType("VARCHAR(126) NOT NULL");
+                    .IsRequired()
+                    .HasColumnType("VARCHAR(126)");
 
                 b.Property<bool>("PermissiveAdaptation");
 
@@ -268,7 +284,9 @@ namespace FilterLists.Api.Migrations
                     .HasColumnType("TIMESTAMP");
 
                 b.Property<string>("EmailAddress")
-                    .HasColumnType("VARCHAR(126) DEFAULT NULL");
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("VARCHAR(126)")
+                    .HasDefaultValueSql("NULL");
 
                 b.Property<string>("HomeUrl")
                     .HasColumnType("TEXT");
@@ -278,10 +296,13 @@ namespace FilterLists.Api.Migrations
                     .HasColumnType("TIMESTAMP");
 
                 b.Property<string>("Name")
-                    .HasColumnType("VARCHAR(126) NOT NULL");
+                    .IsRequired()
+                    .HasColumnType("VARCHAR(126)");
 
                 b.Property<string>("TwitterHandle")
-                    .HasColumnType("VARCHAR(126) DEFAULT NULL");
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("VARCHAR(126)")
+                    .HasDefaultValueSql("NULL");
 
                 b.HasKey("Id");
 
@@ -303,7 +324,8 @@ namespace FilterLists.Api.Migrations
                     .HasColumnType("TIMESTAMP");
 
                 b.Property<string>("Raw")
-                    .HasColumnType("VARCHAR(16384) NOT NULL COLLATE 'utf8_unicode_ci'");
+                    .IsRequired()
+                    .HasColumnType("VARCHAR(8192)");
 
                 b.HasKey("Id");
 
@@ -331,7 +353,8 @@ namespace FilterLists.Api.Migrations
                     .HasColumnType("TIMESTAMP");
 
                 b.Property<string>("Name")
-                    .HasColumnType("VARCHAR(126) NOT NULL");
+                    .IsRequired()
+                    .HasColumnType("VARCHAR(126)");
 
                 b.HasKey("Id");
 
@@ -356,7 +379,8 @@ namespace FilterLists.Api.Migrations
                     .HasColumnType("TIMESTAMP");
 
                 b.Property<string>("Name")
-                    .HasColumnType("VARCHAR(126) NOT NULL");
+                    .IsRequired()
+                    .HasColumnType("VARCHAR(126)");
 
                 b.HasKey("Id");
 

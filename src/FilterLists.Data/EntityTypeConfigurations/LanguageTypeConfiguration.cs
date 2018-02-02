@@ -13,19 +13,26 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.ToTable("languages");
 
             entityTypeBuilder.Property(x => x.Iso6391)
-                .HasColumnType("VARCHAR(2) DEFAULT NULL");
+                .HasColumnType("VARCHAR(2)")
+                .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.Iso6392)
-                .HasColumnType("VARCHAR(3) DEFAULT NULL");
+                .HasColumnType("VARCHAR(3)")
+                .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.Iso6392B)
-                .HasColumnType("VARCHAR(3) DEFAULT NULL");
+                .HasColumnType("VARCHAR(3)")
+                .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.Iso6392T)
-                .HasColumnType("VARCHAR(3) DEFAULT NULL");
+                .HasColumnType("VARCHAR(3)")
+                .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.Iso6393)
-                .HasColumnType("VARCHAR(3) DEFAULT NULL");
+                .HasColumnType("VARCHAR(3)")
+                .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.LocalName)
-                .HasColumnType("VARCHAR(126) DEFAULT NULL");
+                .HasColumnType("VARCHAR(126)")
+                .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.Name)
-                .HasColumnType("VARCHAR(126) DEFAULT NULL");
+                .HasColumnType("VARCHAR(126)")
+                .HasDefaultValueSql("NULL");
         }
     }
 }
