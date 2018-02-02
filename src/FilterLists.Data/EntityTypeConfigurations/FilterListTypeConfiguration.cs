@@ -35,7 +35,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.SubmissionUrl)
                 .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.ViewUrl)
-                .HasColumnType("TEXT NOT NULL");
+                .HasColumnType("TEXT")
+                .IsRequired();
         }
     }
 }

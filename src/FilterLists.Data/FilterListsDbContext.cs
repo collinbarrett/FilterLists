@@ -27,6 +27,7 @@ namespace FilterLists.Data
             modelBuilder.ApplyConfiguration(new LicenseTypeConfiguration());
             modelBuilder.ApplyConfiguration(new MaintainerTypeConfiguration());
             modelBuilder.ApplyConfiguration(new RuleTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new ScrapeTypeConfiguration());
             modelBuilder.ApplyConfiguration(new SoftwareTypeConfiguration());
             modelBuilder.ApplyConfiguration(new SyntaxTypeConfiguration());
         }
@@ -37,8 +38,34 @@ namespace FilterLists.Data
             modelBuilder.ApplyConfiguration(new FilterListMaintainerTypeConfiguration());
             modelBuilder.ApplyConfiguration(new FilterListRuleTypeConfiguration());
             modelBuilder.ApplyConfiguration(new ForkTypeConfiguration());
+            ConfigureForkSelfReferencing(modelBuilder);
             modelBuilder.ApplyConfiguration(new MergeTypeConfiguration());
+            ConfigureMergeSelfReferencing(modelBuilder);
             modelBuilder.ApplyConfiguration(new SoftwareSyntaxTypeConfiguration());
+        }
+
+        private static void ConfigureForkSelfReferencing(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Fork>()
+                .HasOne(x => x.ForkFilterList)
+                .WithMany(x => x.ForkFilterLists)
+                .HasForeignKey(x => x.ForkFilterListId);
+            modelBuilder.Entity<Fork>()
+                .HasOne(x => x.UpstreamFilterList)
+                .WithMany(x => x.UpstreamForkFilterLists)
+                .HasForeignKey(x => x.UpstreamFilterListId);
+        }
+
+        private static void ConfigureMergeSelfReferencing(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Merge>()
+                .HasOne(x => x.MergeFilterList)
+                .WithMany(x => x.MergeFilterLists)
+                .HasForeignKey(x => x.MergeFilterListId);
+            modelBuilder.Entity<Merge>()
+                .HasOne(x => x.UpstreamFilterList)
+                .WithMany(x => x.UpstreamMergeFilterLists)
+                .HasForeignKey(x => x.UpstreamFilterListId);
         }
 
         #region Entities
@@ -48,6 +75,7 @@ namespace FilterLists.Data
         public DbSet<License> Licenses { get; set; }
         public DbSet<Maintainer> Maintainers { get; set; }
         public DbSet<Rule> Rules { get; set; }
+        public DbSet<Scrape> Scrapes { get; set; }
         public DbSet<Software> Software { get; set; }
         public DbSet<Syntax> Syntaxes { get; set; }
 

@@ -15,6 +15,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.Id)
                 .HasColumnType("BIGINT UNSIGNED");
 
+            entityTypeBuilder.Ignore(x => x.ModifiedDateUtc);
+
             entityTypeBuilder.Property(x => x.Raw)
                 .HasColumnType("VARCHAR(8192)")
                 .IsRequired();

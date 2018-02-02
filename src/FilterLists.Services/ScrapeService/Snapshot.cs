@@ -61,15 +61,7 @@ namespace FilterLists.Services.ScrapeService
                 new FilterListRule {FilterListId = filterListId, Rule = newSnapshotRule}).ToList();
             await dbContext.FilterListRules.AddRangeAsync(newFilterListRules);
 
-            // update UpdatedDateUtc
-            var list = dbContext.FilterLists.Find(filterListId);
-            if (preExistingSnapshotFilterListRules.Any() || newFilterListRules.Any() || deletedFilterListRules.Any())
-                list.UpdatedDateUtc = DateTime.UtcNow;
-
-            // update ScrapedDateUtc
-            list.ScrapedDateUtc = DateTime.UtcNow;
-
-            dbContext.FilterLists.Update(list);
+            // update scrapes
 
             await dbContext.SaveChangesAsync();
         }
