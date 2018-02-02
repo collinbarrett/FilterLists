@@ -16,7 +16,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
                 .HasColumnType("BIGINT UNSIGNED");
 
             entityTypeBuilder.Property(x => x.Raw)
-                .HasColumnType("VARCHAR(16384) NOT NULL COLLATE 'utf8_unicode_ci'");
+                .HasColumnType("VARCHAR(8192)")
+                .IsRequired();
         }
     }
 }
