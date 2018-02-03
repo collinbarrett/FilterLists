@@ -9,14 +9,12 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public override void Configure(EntityTypeBuilder<Syntax> entityTypeBuilder)
         {
             base.Configure(entityTypeBuilder);
-
             entityTypeBuilder.ToTable("syntaxes");
-
             entityTypeBuilder.Property(x => x.DefinitionUrl)
-                .HasColumnType("TEXT");
+                             .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)
-                .HasColumnType("VARCHAR(126)")
-                .IsRequired();
+                             .HasColumnType("VARCHAR(126)")
+                             .IsRequired();
         }
     }
 }

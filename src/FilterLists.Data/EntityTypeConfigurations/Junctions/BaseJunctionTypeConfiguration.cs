@@ -10,8 +10,8 @@ namespace FilterLists.Data.EntityTypeConfigurations.Junctions
         public virtual void Configure(EntityTypeBuilder<TJunction> entityTypeBuilder)
         {
             entityTypeBuilder.Property(x => x.CreatedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAdd();
+                             .HasColumnType("TIMESTAMP")
+                             .ValueGeneratedOnAdd();
         }
     }
 }

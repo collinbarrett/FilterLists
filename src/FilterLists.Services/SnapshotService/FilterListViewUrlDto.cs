@@ -1,4 +1,4 @@
-﻿namespace FilterLists.Services.ScrapeService
+﻿namespace FilterLists.Services.SnapshotService
 {
     public class FilterListViewUrlDto
     {

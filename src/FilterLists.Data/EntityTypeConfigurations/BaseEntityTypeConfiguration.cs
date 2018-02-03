@@ -9,13 +9,13 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public virtual void Configure(EntityTypeBuilder<TEntity> entityTypeBuilder)
         {
             entityTypeBuilder.Property(x => x.Id)
-                .HasColumnType("SMALLINT UNSIGNED");
+                             .HasColumnType("SMALLINT UNSIGNED");
             entityTypeBuilder.Property(x => x.CreatedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAdd();
+                             .HasColumnType("TIMESTAMP")
+                             .ValueGeneratedOnAdd();
             entityTypeBuilder.Property(x => x.ModifiedDateUtc)
-                .HasColumnType("TIMESTAMP")
-                .ValueGeneratedOnAddOrUpdate();
+                             .HasColumnType("TIMESTAMP")
+                             .ValueGeneratedOnAddOrUpdate();
         }
     }
 }

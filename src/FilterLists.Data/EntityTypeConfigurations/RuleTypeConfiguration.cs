@@ -9,17 +9,13 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public override void Configure(EntityTypeBuilder<Rule> entityTypeBuilder)
         {
             base.Configure(entityTypeBuilder);
-
             entityTypeBuilder.ToTable("rules");
-
             entityTypeBuilder.Property(x => x.Id)
-                .HasColumnType("BIGINT UNSIGNED");
-
+                             .HasColumnType("BIGINT UNSIGNED");
             entityTypeBuilder.Ignore(x => x.ModifiedDateUtc);
-
             entityTypeBuilder.Property(x => x.Raw)
-                .HasColumnType("VARCHAR(8192)")
-                .IsRequired();
+                             .HasColumnType("VARCHAR(8192)")
+                             .IsRequired();
         }
     }
 }
