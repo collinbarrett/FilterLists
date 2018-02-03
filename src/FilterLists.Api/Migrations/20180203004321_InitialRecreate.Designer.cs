@@ -5,14 +5,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage;
-using Microsoft.EntityFrameworkCore.Storage.Internal;
 using System;
 
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    [Migration("20180130170852_TweakVarcharCollationAndWidenRuleRaw")]
-    partial class TweakVarcharCollationAndWidenRuleRaw
+    [Migration("20180203004321_InitialRecreate")]
+    partial class InitialRecreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -43,7 +42,9 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("EmailAddress")
-                        .HasColumnType("VARCHAR(126)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("VARCHAR(126)")
+                        .HasDefaultValueSql("NULL");
 
                     b.Property<string>("ForumUrl")
                         .HasColumnType("TEXT");
@@ -61,19 +62,19 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .HasColumnType("VARCHAR(126) NOT NULL");
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(126)");
 
-                    b.Property<DateTime?>("ScrapedDateUtc");
+                    b.Property<string>("PolicyUrl")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("SubmissionUrl")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("SyntaxId");
 
-                    b.Property<DateTime?>("UpdatedDateUtc");
-
                     b.Property<string>("ViewUrl")
-                        .HasColumnType("TEXT NOT NULL");
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -197,29 +198,43 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Iso6391")
-                        .HasColumnType("VARCHAR(2)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("VARCHAR(2)")
+                        .HasDefaultValueSql("NULL");
 
                     b.Property<string>("Iso6392")
-                        .HasColumnType("VARCHAR(3)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("VARCHAR(3)")
+                        .HasDefaultValueSql("NULL");
 
                     b.Property<string>("Iso6392B")
-                        .HasColumnType("VARCHAR(3)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("VARCHAR(3)")
+                        .HasDefaultValueSql("NULL");
 
                     b.Property<string>("Iso6392T")
-                        .HasColumnType("VARCHAR(3)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("VARCHAR(3)")
+                        .HasDefaultValueSql("NULL");
 
                     b.Property<string>("Iso6393")
-                        .HasColumnType("VARCHAR(3)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("VARCHAR(3)")
+                        .HasDefaultValueSql("NULL");
 
                     b.Property<string>("LocalName")
-                        .HasColumnType("VARCHAR(126)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("VARCHAR(126)")
+                        .HasDefaultValueSql("NULL");
 
                     b.Property<DateTime>("ModifiedDateUtc")
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .HasColumnType("VARCHAR(126)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("VARCHAR(126)")
+                        .HasDefaultValueSql("NULL");
 
                     b.HasKey("Id");
 
@@ -244,7 +259,8 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .HasColumnType("VARCHAR(126) NOT NULL");
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(126)");
 
                     b.Property<bool>("PermissiveAdaptation");
 
@@ -266,7 +282,9 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("EmailAddress")
-                        .HasColumnType("VARCHAR(126)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("VARCHAR(126)")
+                        .HasDefaultValueSql("NULL");
 
                     b.Property<string>("HomeUrl")
                         .HasColumnType("TEXT");
@@ -276,10 +294,13 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .HasColumnType("VARCHAR(126) NOT NULL");
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(126)");
 
                     b.Property<string>("TwitterHandle")
-                        .HasColumnType("VARCHAR(126)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("VARCHAR(126)")
+                        .HasDefaultValueSql("NULL");
 
                     b.HasKey("Id");
 
@@ -296,16 +317,32 @@ namespace FilterLists.Api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("TIMESTAMP");
 
-                    b.Property<DateTime>("ModifiedDateUtc")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("TIMESTAMP");
-
                     b.Property<string>("Raw")
-                        .HasColumnType("VARCHAR(16384) NOT NULL COLLATE 'utf8_unicode_ci'");
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(8192)");
 
                     b.HasKey("Id");
 
                     b.ToTable("rules");
+                });
+
+            modelBuilder.Entity("FilterLists.Data.Entities.Scrape", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("SMALLINT UNSIGNED");
+
+                    b.Property<DateTime>("CreatedDateUtc")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TIMESTAMP");
+
+                    b.Property<int>("FilterListId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FilterListId");
+
+                    b.ToTable("scrapes");
                 });
 
             modelBuilder.Entity("FilterLists.Data.Entities.Software", b =>
@@ -329,7 +366,8 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .HasColumnType("VARCHAR(126) NOT NULL");
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(126)");
 
                     b.HasKey("Id");
 
@@ -354,7 +392,8 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("Name")
-                        .HasColumnType("VARCHAR(126) NOT NULL");
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(126)");
 
                     b.HasKey("Id");
 
@@ -414,12 +453,12 @@ namespace FilterLists.Api.Migrations
             modelBuilder.Entity("FilterLists.Data.Entities.Junctions.Fork", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.FilterList", "ForkFilterList")
-                        .WithMany()
+                        .WithMany("ForkFilterLists")
                         .HasForeignKey("ForkFilterListId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("FilterLists.Data.Entities.FilterList", "UpstreamFilterList")
-                        .WithMany()
+                        .WithMany("UpstreamForkFilterLists")
                         .HasForeignKey("UpstreamFilterListId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
@@ -427,12 +466,12 @@ namespace FilterLists.Api.Migrations
             modelBuilder.Entity("FilterLists.Data.Entities.Junctions.Merge", b =>
                 {
                     b.HasOne("FilterLists.Data.Entities.FilterList", "MergeFilterList")
-                        .WithMany()
+                        .WithMany("MergeFilterLists")
                         .HasForeignKey("MergeFilterListId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("FilterLists.Data.Entities.FilterList", "UpstreamFilterList")
-                        .WithMany()
+                        .WithMany("UpstreamMergeFilterLists")
                         .HasForeignKey("UpstreamFilterListId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
@@ -447,6 +486,14 @@ namespace FilterLists.Api.Migrations
                     b.HasOne("FilterLists.Data.Entities.Syntax", "Syntax")
                         .WithMany("SoftwareSyntaxes")
                         .HasForeignKey("SyntaxId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("FilterLists.Data.Entities.Scrape", b =>
+                {
+                    b.HasOne("FilterLists.Data.Entities.FilterList")
+                        .WithMany("Scrapes")
+                        .HasForeignKey("FilterListId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
