@@ -75,6 +75,7 @@ namespace FilterLists.Data.Seed.Extensions
 
         private static string CreateRowValues<TEntityType>(IEnumerable<IProperty> properties, TEntityType row)
         {
+            //TODO: use EF nav entity rather than foreign key so foreign key doesn't need to be explicitly in model (ie, License rather than LicenseId)
             return (from property in properties
                        let value = row.GetType().GetProperty(property.Name).GetValue(row)
                        select FormatDataForMySql(property, value)).Aggregate("",
