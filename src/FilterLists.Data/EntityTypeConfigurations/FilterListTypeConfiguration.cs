@@ -9,33 +9,31 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public override void Configure(EntityTypeBuilder<FilterList> entityTypeBuilder)
         {
             base.Configure(entityTypeBuilder);
-
             entityTypeBuilder.ToTable("filterlists");
-
             entityTypeBuilder.Property(x => x.Description)
-                .HasColumnType("TEXT");
+                             .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.DescriptionSourceUrl)
-                .HasColumnType("TEXT");
+                             .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.DonateUrl)
-                .HasColumnType("TEXT");
+                             .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.EmailAddress)
-                .HasColumnType("VARCHAR(126)")
-                .HasDefaultValueSql("NULL");
+                             .HasColumnType("VARCHAR(126)")
+                             .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.ForumUrl)
-                .HasColumnType("TEXT");
+                             .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.HomeUrl)
-                .HasColumnType("TEXT");
+                             .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.IssuesUrl)
-                .HasColumnType("TEXT");
+                             .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)
-                .HasColumnType("VARCHAR(126)")
-                .IsRequired();
+                             .HasColumnType("VARCHAR(126)")
+                             .IsRequired();
             entityTypeBuilder.Property(x => x.PolicyUrl)
-                .HasColumnType("TEXT");
+                             .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.SubmissionUrl)
-                .HasColumnType("TEXT");
+                             .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.ViewUrl)
-                .HasColumnType("TEXT");
+                             .HasColumnType("TEXT");
         }
     }
 }
