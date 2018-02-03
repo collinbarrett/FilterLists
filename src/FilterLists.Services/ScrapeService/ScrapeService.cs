@@ -28,8 +28,32 @@ namespace FilterLists.Services.ScrapeService
 
         private async Task<List<FilterListViewUrlDto>> GetNextListsToScrape(int batchSize)
         {
-            //TODO: order by least recently scraped
-            return await dbContext.FilterLists.Take(batchSize).ProjectTo<FilterListViewUrlDto>().ToListAsync();
+            var neverScraped = await GetNeverScrapedLists(batchSize);
+            if (neverScraped.Count == batchSize)
+                return neverScraped;
+            var leastRecentlyScraped = await GetLeastRecentlyScrapedLists(batchSize - neverScraped.Count);
+            return neverScraped.Concat(leastRecentlyScraped).ToList();
+        }
+
+        private async Task<List<FilterListViewUrlDto>> GetNeverScrapedLists(int batchSize)
+        {
+            return await dbContext.FilterLists
+                .Where(x => x.Scrapes.Count == 0)
+                .Take(batchSize)
+                .ProjectTo<FilterListViewUrlDto>()
+                .ToListAsync();
+        }
+
+        private async Task<List<FilterListViewUrlDto>> GetLeastRecentlyScrapedLists(int batchSize)
+        {
+            return await dbContext.Scrapes
+                .GroupBy(x => x.FilterList)
+                .Select(x => x.OrderByDescending(y => y.CreatedDateUtc).First())
+                .OrderBy(x => x.CreatedDateUtc)
+                .Select(x => x.FilterList)
+                .Take(batchSize)
+                .ProjectTo<FilterListViewUrlDto>()
+                .ToListAsync();
         }
 
         private async Task<IEnumerable<Snapshot>> GetSnapshots(IEnumerable<FilterListViewUrlDto> lists)
