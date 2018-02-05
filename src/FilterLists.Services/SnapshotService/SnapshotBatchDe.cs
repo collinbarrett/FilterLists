@@ -31,7 +31,7 @@ namespace FilterLists.Services.SnapshotService
 
         private void AddNewRules()
         {
-            preExistingSnapshotRules = dbContext.Rules.Where(rule => rawRules.Contains(rule.Raw)).AsNoTracking();
+            preExistingSnapshotRules = dbContext.Rules.Where(rule => rawRules.Contains(rule.Raw));
             var newSnapshotRawRules = rawRules.Except(preExistingSnapshotRules.Select(x => x.Raw));
             newSnapshotRules = newSnapshotRawRules.Select(newSnapshotRawRule => new Rule {Raw = newSnapshotRawRule})
                                                   .ToList();
@@ -40,10 +40,21 @@ namespace FilterLists.Services.SnapshotService
 
         private void AddSnapshotRules()
         {
-            snapshot.SnapshotRules = preExistingSnapshotRules
-                                     .Concat(newSnapshotRules)
-                                     .Select(rule => new SnapshotRule {Rule = rule, Snapshot = snapshot})
-                                     .ToList();
+            if (snapshot.SnapshotRules == null)
+                snapshot.SnapshotRules = new List<SnapshotRule>();
+            snapshot.SnapshotRules.AddRange(preExistingSnapshotRules
+                                            .Concat(newSnapshotRules)
+                                            .Select(rule => new SnapshotRule {Rule = rule, Snapshot = snapshot})
+                                            .ToList());
+        }
+    }
+
+    public static class CollectionExtensions
+    {
+        public static void AddRange<T>(this ICollection<T> destination, IEnumerable<T> source)
+        {
+            foreach (var item in source)
+                destination.Add(item);
         }
     }
 }
