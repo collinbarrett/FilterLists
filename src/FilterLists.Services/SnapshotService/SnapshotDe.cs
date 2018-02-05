@@ -11,7 +11,7 @@ namespace FilterLists.Services.SnapshotService
 {
     public class SnapshotDe
     {
-        private const int BatchSize = 100;
+        private const int BatchSize = 1000;
         private readonly FilterListsDbContext dbContext;
         private readonly FilterListViewUrlDto list;
         private Snapshot snapshot;
