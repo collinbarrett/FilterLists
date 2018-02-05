@@ -2,6 +2,7 @@
 {
     public static class RawRuleLinterExtensions
     {
+        //TODO: resolve issues and/or track dropped rules
         public static string LintStringForMySql(this string rule)
         {
             rule = rule.TrimSingleBackslashFromEnd();
@@ -19,7 +20,6 @@
 
         private static string DropIfContainsBackslashSingleQuote(this string rule)
         {
-            //TODO: resolve issue and/or track dropped rule
             if (rule != null)
                 return rule.Contains(@"\'") ? null : rule;
             return null;
@@ -27,7 +27,6 @@
 
         private static string DropIfTooLong(this string rule)
         {
-            //TODO: resolve issue and/or track dropped rule
             return rule?.Length > 8192 ? null : rule;
         }
     }

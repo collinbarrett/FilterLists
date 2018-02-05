@@ -14,6 +14,7 @@ namespace FilterLists.Api.V1.Controllers
         }
 
         [HttpPost]
+        //TODO: convert API endpoint to server-side scheduled job
         public async Task<IActionResult> Index()
         {
 #if DEBUG
