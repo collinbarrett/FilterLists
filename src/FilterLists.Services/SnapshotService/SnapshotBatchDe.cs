@@ -3,7 +3,6 @@ using System.Linq;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
-using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Services.SnapshotService
 {
