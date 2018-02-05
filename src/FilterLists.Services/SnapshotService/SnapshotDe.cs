@@ -50,7 +50,7 @@ namespace FilterLists.Services.SnapshotService
             }
             catch (HttpRequestException)
             {
-                //TODO: log error
+                snapshot.HttpStatusCode = null;
                 return null;
             }
         }
