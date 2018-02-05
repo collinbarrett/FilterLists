@@ -48,6 +48,11 @@ namespace FilterLists.Services.SnapshotService
                 snapshot.HttpStatusCode = (int)((HttpWebResponse)we.Response).StatusCode;
                 return null;
             }
+            catch (HttpRequestException)
+            {
+                //TODO: log error
+                return null;
+            }
         }
 
         private async Task<string> GetContent()
