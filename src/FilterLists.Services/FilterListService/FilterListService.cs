@@ -19,8 +19,11 @@ namespace FilterLists.Services.FilterListService
 
         public async Task<IEnumerable<FilterListSummaryDto>> GetAllSummariesAsync()
         {
-            return await filterListsDbContext.Set<FilterList>().AsNoTracking().OrderBy(x => x.Name)
-                .ProjectTo<FilterListSummaryDto>().ToListAsync();
+            return await filterListsDbContext.Set<FilterList>()
+                                             .AsNoTracking()
+                                             .OrderBy(x => x.Name)
+                                             .ProjectTo<FilterListSummaryDto>()
+                                             .ToListAsync();
         }
     }
 }
