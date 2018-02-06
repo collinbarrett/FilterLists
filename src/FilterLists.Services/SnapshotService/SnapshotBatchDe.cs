@@ -3,6 +3,7 @@ using System.Linq;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
+using FilterLists.Services.Extensions;
 
 namespace FilterLists.Services.SnapshotService
 {
@@ -45,15 +46,6 @@ namespace FilterLists.Services.SnapshotService
                                             .Concat(newSnapshotRules)
                                             .Select(rule => new SnapshotRule {Rule = rule, Snapshot = snapshot})
                                             .ToList());
-        }
-    }
-
-    public static class CollectionExtensions
-    {
-        public static void AddRange<T>(this ICollection<T> destination, IEnumerable<T> source)
-        {
-            foreach (var item in source)
-                destination.Add(item);
         }
     }
 }
