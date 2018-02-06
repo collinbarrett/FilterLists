@@ -11,7 +11,7 @@ namespace FilterLists.Data.EntityTypeConfigurations.Junctions
             base.Configure(entityTypeBuilder);
             entityTypeBuilder.ToTable("filterlists_maintainers");
             entityTypeBuilder.HasKey(x => new {x.FilterListId, x.MaintainerId});
-            entityTypeBuilder.HasIndex(x => new {x.FilterListId, x.MaintainerId}).IsUnique();
+            entityTypeBuilder.HasIndex(x => new {x.MaintainerId, x.FilterListId }).IsUnique();
             entityTypeBuilder.HasOne(x => x.FilterList)
                              .WithMany(x => x.FilterListMaintainers)
                              .HasForeignKey(x => x.FilterListId);

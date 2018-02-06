@@ -11,7 +11,7 @@ namespace FilterLists.Data.EntityTypeConfigurations.Junctions
             base.Configure(entityTypeBuilder);
             entityTypeBuilder.ToTable("snapshots_rules");
             entityTypeBuilder.HasKey(x => new {x.SnapshotId, x.RuleId});
-            entityTypeBuilder.HasIndex(x => new {x.SnapshotId, x.RuleId}).IsUnique();
+            entityTypeBuilder.HasIndex(x => new {x.RuleId, x.SnapshotId }).IsUnique();
             entityTypeBuilder.HasOne(x => x.Snapshot)
                              .WithMany(x => x.SnapshotRules)
                              .HasForeignKey(x => x.SnapshotId);

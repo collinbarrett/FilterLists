@@ -11,7 +11,7 @@ namespace FilterLists.Data.EntityTypeConfigurations.Junctions
             base.Configure(entityTypeBuilder);
             entityTypeBuilder.ToTable("filterlists_languages");
             entityTypeBuilder.HasKey(x => new {x.FilterListId, x.LanguageId});
-            entityTypeBuilder.HasIndex(x => new {x.FilterListId, x.LanguageId}).IsUnique();
+            entityTypeBuilder.HasIndex(x => new {x.LanguageId, x.FilterListId }).IsUnique();
             entityTypeBuilder.HasOne(x => x.FilterList)
                              .WithMany(x => x.FilterListLanguages)
                              .HasForeignKey(x => x.FilterListId);
