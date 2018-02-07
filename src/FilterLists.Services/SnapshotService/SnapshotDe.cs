@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
+using FilterLists.Services.Extensions;
 
 namespace FilterLists.Services.SnapshotService
 {
@@ -75,24 +76,18 @@ namespace FilterLists.Services.SnapshotService
             SaveSnapshotBatches(snapshotBatches);
         }
 
-        private static List<string> GetRawRules(string content)
+        private static IEnumerable<string> GetRawRules(string content)
         {
-            var rawRules = content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries).ToList();
-            for (var i = 0; i < rawRules.Count; i++)
+            var rawRules = content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
+            for (var i = 0; i < rawRules.Length; i++)
                 rawRules[i] = rawRules[i].LintStringForMySql();
-            return new List<string>(new HashSet<string>(rawRules.Where(x => !string.IsNullOrWhiteSpace(x))));
+            return new HashSet<string>(rawRules);
         }
 
-        private IEnumerable<SnapshotBatchDe> GetSnapshotBatches(List<string> rawRules)
+        private IEnumerable<SnapshotBatchDe> GetSnapshotBatches(IEnumerable<string> rawRules)
         {
-            var rawRuleBatches = GetRawRuleBatches(rawRules);
-            return rawRuleBatches.Select(rawRuleBatch => new SnapshotBatchDe(dbContext, snapshot, rawRuleBatch));
-        }
-
-        public static IEnumerable<IEnumerable<string>> GetRawRuleBatches(List<string> rawRules)
-        {
-            for (var i = 0; i < rawRules.Count; i += BatchSize)
-                yield return rawRules.GetRange(i, Math.Min(BatchSize, rawRules.Count - i));
+            return rawRules.Batch(BatchSize)
+                           .Select(rawRuleBatch => new SnapshotBatchDe(dbContext, snapshot, rawRuleBatch));
         }
 
         private static void SaveSnapshotBatches(IEnumerable<SnapshotBatchDe> snapshotBatches)
