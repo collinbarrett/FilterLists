@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
@@ -22,11 +23,11 @@ namespace FilterLists.Services.SnapshotService
             this.rawRules = rawRules;
         }
 
-        public void SaveSnapshotBatch()
+        public async Task SaveSnapshotBatchAsync()
         {
             AddNewRules();
             AddSnapshotRules();
-            dbContext.SaveChanges();
+            await dbContext.SaveChangesAsync();
         }
 
         private void AddNewRules()
