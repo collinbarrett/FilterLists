@@ -349,45 +349,9 @@ namespace FilterLists.Api.Migrations
                 column: "SyntaxId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_filterlists_languages_LanguageId_FilterListId",
-                table: "filterlists_languages",
-                columns: new[] { "LanguageId", "FilterListId" },
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_filterlists_maintainers_MaintainerId_FilterListId",
-                table: "filterlists_maintainers",
-                columns: new[] { "MaintainerId", "FilterListId" },
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_forks_UpstreamFilterListId_ForkFilterListId",
-                table: "forks",
-                columns: new[] { "UpstreamFilterListId", "ForkFilterListId" },
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_merges_UpstreamFilterListId_MergeFilterListId",
-                table: "merges",
-                columns: new[] { "UpstreamFilterListId", "MergeFilterListId" },
-                unique: true);
-
-            migrationBuilder.CreateIndex(
                 name: "IX_snapshots_FilterListId",
                 table: "snapshots",
                 column: "FilterListId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_snapshots_rules_RuleId_SnapshotId",
-                table: "snapshots_rules",
-                columns: new[] { "RuleId", "SnapshotId" },
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_software_syntaxes_SyntaxId_SoftwareId",
-                table: "software_syntaxes",
-                columns: new[] { "SyntaxId", "SoftwareId" },
-                unique: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -96,9 +96,6 @@ namespace FilterLists.Api.Migrations
 
                     b.HasKey("FilterListId", "LanguageId");
 
-                    b.HasIndex("LanguageId", "FilterListId")
-                        .IsUnique();
-
                     b.ToTable("filterlists_languages");
                 });
 
@@ -113,9 +110,6 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.HasKey("FilterListId", "MaintainerId");
-
-                    b.HasIndex("MaintainerId", "FilterListId")
-                        .IsUnique();
 
                     b.ToTable("filterlists_maintainers");
                 });
@@ -132,9 +126,6 @@ namespace FilterLists.Api.Migrations
 
                     b.HasKey("ForkFilterListId", "UpstreamFilterListId");
 
-                    b.HasIndex("UpstreamFilterListId", "ForkFilterListId")
-                        .IsUnique();
-
                     b.ToTable("forks");
                 });
 
@@ -149,9 +140,6 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.HasKey("MergeFilterListId", "UpstreamFilterListId");
-
-                    b.HasIndex("UpstreamFilterListId", "MergeFilterListId")
-                        .IsUnique();
 
                     b.ToTable("merges");
                 });
@@ -168,9 +156,6 @@ namespace FilterLists.Api.Migrations
 
                     b.HasKey("SnapshotId", "RuleId");
 
-                    b.HasIndex("RuleId", "SnapshotId")
-                        .IsUnique();
-
                     b.ToTable("snapshots_rules");
                 });
 
@@ -185,9 +170,6 @@ namespace FilterLists.Api.Migrations
                         .HasColumnType("TIMESTAMP");
 
                     b.HasKey("SoftwareId", "SyntaxId");
-
-                    b.HasIndex("SyntaxId", "SoftwareId")
-                        .IsUnique();
 
                     b.ToTable("software_syntaxes");
                 });
