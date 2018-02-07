@@ -5,10 +5,17 @@
         //TODO: resolve issues and/or track dropped rules
         public static string LintStringForMySql(this string rule)
         {
+            rule = rule.TrimLeadingAndTrailingWhitespace();
             rule = rule.TrimSingleBackslashFromEnd();
             rule = rule.DropIfContainsBackslashSingleQuote();
             rule = rule.DropIfTooLong();
             return rule;
+        }
+
+        private static string TrimLeadingAndTrailingWhitespace(this string rule)
+        {
+            char[] charsToTrim = {' ', '\t'};
+            return rule.Trim(charsToTrim);
         }
 
         private static string TrimSingleBackslashFromEnd(this string rule)
