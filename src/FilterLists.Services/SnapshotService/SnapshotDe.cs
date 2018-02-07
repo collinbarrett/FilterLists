@@ -29,7 +29,7 @@ namespace FilterLists.Services.SnapshotService
             var content = await TryGetContent();
             await dbContext.SaveChangesAsync();
             if (content != null)
-                SaveSnapshotInBatches(content);
+                await SaveSnapshotInBatches(content);
         }
 
         private async Task AddSnapshot()
@@ -69,11 +69,11 @@ namespace FilterLists.Services.SnapshotService
             return null;
         }
 
-        private void SaveSnapshotInBatches(string content)
+        private async Task SaveSnapshotInBatches(string content)
         {
             var rawRules = GetRawRules(content);
             var snapshotBatches = GetSnapshotBatches(rawRules);
-            SaveSnapshotBatches(snapshotBatches);
+            await SaveSnapshotBatches(snapshotBatches);
         }
 
         private static IEnumerable<string> GetRawRules(string content)
@@ -81,7 +81,7 @@ namespace FilterLists.Services.SnapshotService
             var rawRules = content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
             for (var i = 0; i < rawRules.Length; i++)
                 rawRules[i] = rawRules[i].LintStringForMySql();
-            return new HashSet<string>(rawRules);
+            return new HashSet<string>(rawRules.Where(x => x != null));
         }
 
         private IEnumerable<SnapshotBatchDe> GetSnapshotBatches(IEnumerable<string> rawRules)
@@ -90,10 +90,10 @@ namespace FilterLists.Services.SnapshotService
                            .Select(rawRuleBatch => new SnapshotBatchDe(dbContext, snapshot, rawRuleBatch));
         }
 
-        private static void SaveSnapshotBatches(IEnumerable<SnapshotBatchDe> snapshotBatches)
+        private static async Task SaveSnapshotBatches(IEnumerable<SnapshotBatchDe> snapshotBatches)
         {
             foreach (var snapshotBatch in snapshotBatches)
-                snapshotBatch.SaveSnapshotBatch();
+                await snapshotBatch.SaveSnapshotBatchAsync();
         }
     }
 }
