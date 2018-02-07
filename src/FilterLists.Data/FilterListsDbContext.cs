@@ -1,8 +1,10 @@
-﻿using FilterLists.Data.Entities;
+﻿using System.Linq;
+using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
 using FilterLists.Data.EntityTypeConfigurations;
 using FilterLists.Data.EntityTypeConfigurations.Junctions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace FilterLists.Data
 {
@@ -17,6 +19,19 @@ namespace FilterLists.Data
             base.OnModelCreating(modelBuilder);
             ApplyConfigurationsEntities(modelBuilder);
             ApplyConfigurationsJunctions(modelBuilder);
+            SelectivelyOmitConventions(modelBuilder);
+        }
+
+        //TODO: update when official API supported
+        //https://github.com/aspnet/EntityFrameworkCore/issues/10855#issuecomment-363219253
+        //https://github.com/aspnet/EntityFrameworkCore/issues/7605
+        private static void SelectivelyOmitConventions(ModelBuilder modelBuilder)
+        {
+            ((Model)modelBuilder.Model).ConventionDispatcher.StartBatch();
+            foreach (var entityType in modelBuilder.Model.GetEntityTypes())
+            foreach (var index in entityType.GetIndexes().ToList())
+                if (index.DeclaringEntityType.Name.Contains("Junctions"))
+                    entityType.RemoveIndex(index.Properties);
         }
 
         #region Entities
