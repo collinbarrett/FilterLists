@@ -80,7 +80,7 @@ namespace FilterLists.Services.SnapshotService
             var rawRules = content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries).ToList();
             for (var i = 0; i < rawRules.Count; i++)
                 rawRules[i] = rawRules[i].LintStringForMySql();
-            return rawRules.Where(x => !string.IsNullOrWhiteSpace(x)).Distinct().ToList();
+            return new List<string>(new HashSet<string>(rawRules.Where(x => !string.IsNullOrWhiteSpace(x))));
         }
 
         private IEnumerable<SnapshotBatchDe> GetSnapshotBatches(List<string> rawRules)
