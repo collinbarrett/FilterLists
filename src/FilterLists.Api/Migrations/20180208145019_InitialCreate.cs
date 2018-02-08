@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace FilterLists.Api.Migrations
 {
-    public partial class InitialReCreate : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -164,14 +164,14 @@ namespace FilterLists.Api.Migrations
                 name: "software_syntaxes",
                 columns: table => new
                 {
-                    SoftwareId = table.Column<int>(nullable: false),
                     SyntaxId = table.Column<int>(nullable: false),
+                    SoftwareId = table.Column<int>(nullable: false),
                     CreatedDateUtc = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_software_syntaxes", x => new { x.SoftwareId, x.SyntaxId });
+                    table.PrimaryKey("PK_software_syntaxes", x => new { x.SyntaxId, x.SoftwareId });
                     table.ForeignKey(
                         name: "FK_software_syntaxes_software_SoftwareId",
                         column: x => x.SoftwareId,
@@ -349,9 +349,39 @@ namespace FilterLists.Api.Migrations
                 column: "SyntaxId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_filterlists_languages_LanguageId_FilterListId",
+                table: "filterlists_languages",
+                columns: new[] { "LanguageId", "FilterListId" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_filterlists_maintainers_MaintainerId_FilterListId",
+                table: "filterlists_maintainers",
+                columns: new[] { "MaintainerId", "FilterListId" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_forks_UpstreamFilterListId_ForkFilterListId",
+                table: "forks",
+                columns: new[] { "UpstreamFilterListId", "ForkFilterListId" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_merges_UpstreamFilterListId_MergeFilterListId",
+                table: "merges",
+                columns: new[] { "UpstreamFilterListId", "MergeFilterListId" });
+
+            migrationBuilder.CreateIndex(
                 name: "IX_snapshots_FilterListId",
                 table: "snapshots",
                 column: "FilterListId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_snapshots_rules_RuleId_SnapshotId",
+                table: "snapshots_rules",
+                columns: new[] { "RuleId", "SnapshotId" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_software_syntaxes_SoftwareId_SyntaxId",
+                table: "software_syntaxes",
+                columns: new[] { "SoftwareId", "SyntaxId" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

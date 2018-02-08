@@ -11,6 +11,7 @@ namespace FilterLists.Data.EntityTypeConfigurations.Junctions
             base.Configure(entityTypeBuilder);
             entityTypeBuilder.ToTable("forks");
             entityTypeBuilder.HasKey(x => new {x.ForkFilterListId, x.UpstreamFilterListId});
+            entityTypeBuilder.HasIndex(x => new {x.UpstreamFilterListId, x.ForkFilterListId});
             entityTypeBuilder.HasOne(x => x.ForkFilterList)
                              .WithMany(x => x.ForkFilterLists)
                              .HasForeignKey(x => x.ForkFilterListId);
