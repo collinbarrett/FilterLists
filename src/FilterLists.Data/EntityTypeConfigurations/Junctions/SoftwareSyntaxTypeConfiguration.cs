@@ -10,7 +10,8 @@ namespace FilterLists.Data.EntityTypeConfigurations.Junctions
         {
             base.Configure(entityTypeBuilder);
             entityTypeBuilder.ToTable("software_syntaxes");
-            entityTypeBuilder.HasKey(x => new {x.SoftwareId, x.SyntaxId});
+            entityTypeBuilder.HasKey(x => new {x.SyntaxId, x.SoftwareId});
+            entityTypeBuilder.HasIndex(x => new {x.SoftwareId, x.SyntaxId});
             entityTypeBuilder.HasOne(x => x.Software)
                              .WithMany(x => x.SoftwareSyntaxes)
                              .HasForeignKey(x => x.SoftwareId);
