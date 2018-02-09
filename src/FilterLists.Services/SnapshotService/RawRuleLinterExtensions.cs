@@ -2,14 +2,14 @@
 {
     public static class RawRuleLinterExtensions
     {
-        //TODO: resolve issues and/or track dropped rules
         public static string LintStringForMySql(this string rule)
         {
             rule = rule.TrimLeadingAndTrailingWhitespace();
             rule = rule.DropIfEmpty();
-            rule = rule.TrimSingleBackslashFromEnd();
-            rule = rule.DropIfContainsBackslashSingleQuote();
+            rule = rule.DropIfComment();
             rule = rule.DropIfTooLong();
+            rule = rule.DropIfContainsBackslashSingleQuote();
+            rule = rule.TrimSingleBackslashFromEnd();
             return rule;
         }
 
@@ -24,11 +24,16 @@
             return rule == "" ? null : rule;
         }
 
-        private static string TrimSingleBackslashFromEnd(this string rule)
+        private static string DropIfComment(this string rule)
         {
             if (rule != null)
-                return rule.EndsWith(@"\") && !rule.EndsWith(@"\\") ? rule.Remove(rule.Length - 1) : rule;
+                return rule.StartsWith(@"!") && !rule.StartsWith(@"!#") ? null : rule;
             return null;
+        }
+
+        private static string DropIfTooLong(this string rule)
+        {
+            return rule?.Length > 8192 ? null : rule;
         }
 
         private static string DropIfContainsBackslashSingleQuote(this string rule)
@@ -38,9 +43,11 @@
             return null;
         }
 
-        private static string DropIfTooLong(this string rule)
+        private static string TrimSingleBackslashFromEnd(this string rule)
         {
-            return rule?.Length > 8192 ? null : rule;
+            if (rule != null)
+                return rule.EndsWith(@"\") && !rule.EndsWith(@"\\") ? rule.Remove(rule.Length - 1) : rule;
+            return null;
         }
     }
 }
