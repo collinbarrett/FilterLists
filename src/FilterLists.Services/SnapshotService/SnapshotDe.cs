@@ -46,7 +46,7 @@ namespace FilterLists.Services.SnapshotService
             }
             catch (WebException we)
             {
-                snapshot.HttpStatusCode = (int)((HttpWebResponse)we.Response).StatusCode;
+                snapshot.HttpStatusCode = ((HttpWebResponse)we.Response).StatusCode.ToString();
                 return null;
             }
             catch (HttpRequestException)
@@ -61,7 +61,7 @@ namespace FilterLists.Services.SnapshotService
             using (var httpClient = new HttpClient())
             using (var httpResponseMessage = await httpClient.GetAsync(list.ViewUrl))
             {
-                snapshot.HttpStatusCode = (int)httpResponseMessage.StatusCode;
+                snapshot.HttpStatusCode = httpResponseMessage.StatusCode.ToString();
                 if (httpResponseMessage.IsSuccessStatusCode)
                     return await httpResponseMessage.Content.ReadAsStringAsync();
             }

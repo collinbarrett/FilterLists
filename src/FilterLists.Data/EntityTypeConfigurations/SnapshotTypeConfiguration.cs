@@ -13,7 +13,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.Id)
                              .HasColumnType("MEDIUMINT UNSIGNED");
             entityTypeBuilder.Property(x => x.HttpStatusCode)
-                             .HasColumnType("SMALLINT UNSIGNED");
+                             .HasColumnType("VARCHAR(3)")
+                             .HasDefaultValueSql("NULL");
             entityTypeBuilder.Ignore(x => x.ModifiedDateUtc);
         }
     }
