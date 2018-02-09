@@ -26,7 +26,7 @@
 
         private static string DropIfComment(this string rule)
         {
-            return rule.StartsWith(@"!") && !rule.StartsWith(@"!#") ? null : rule;
+            return rule.StartsWith(@"!") && !rule.StartsWith(@"!#") || rule.StartsWith(@"!##") ? null : rule;
         }
 
         private static string DropIfTooLong(this string rule)
