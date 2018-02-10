@@ -25,11 +25,20 @@ namespace FilterLists.Services.SnapshotService
 
         public async Task SaveSnapshotAsync()
         {
+            var content = await CaptureSnapshot();
+            if (content != null)
+            {
+                await SaveSnapshotInBatches(content);
+                await DedupSnapshotRules();
+            }
+        }
+
+        private async Task<string> CaptureSnapshot()
+        {
             await AddSnapshot();
             var content = await TryGetContent();
             await dbContext.SaveChangesAsync();
-            if (content != null)
-                await SaveSnapshotInBatches(content);
+            return content;
         }
 
         private async Task AddSnapshot()
@@ -80,7 +89,7 @@ namespace FilterLists.Services.SnapshotService
         {
             var rawRules = content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
             for (var i = 0; i < rawRules.Length; i++)
-                rawRules[i] = rawRules[i].LintStringForMySql();
+                rawRules[i] = rawRules[i].LintRawRule();
             return new HashSet<string>(rawRules.Where(x => x != null));
         }
 
@@ -94,6 +103,26 @@ namespace FilterLists.Services.SnapshotService
         {
             foreach (var snapshotBatch in snapshotBatches)
                 await snapshotBatch.SaveSnapshotBatchAsync();
+        }
+
+        //TODO: test
+        private async Task DedupSnapshotRules()
+        {
+            var currentSnapshotRules =
+                dbContext.SnapshotRules.Where(x => x.AddedBySnapshot == snapshot).Select(x => x.Rule);
+
+            var existingSnapshotRules = dbContext.SnapshotRules.Where(x =>
+                x.AddedBySnapshot.FilterListId == list.Id &&
+                x.AddedBySnapshot != snapshot &&
+                x.RemovedBySnapshot == null);
+
+            var removedSnapshotRules = existingSnapshotRules.Where(x => !currentSnapshotRules.Contains(x.Rule));
+
+            removedSnapshotRules.ToList().ForEach(x => x.RemovedBySnapshot = snapshot);
+
+            //TODO: delete any added SnapshotRules that were already in a previous snapshot and were not marked as removed
+
+            await dbContext.SaveChangesAsync();
         }
     }
 }

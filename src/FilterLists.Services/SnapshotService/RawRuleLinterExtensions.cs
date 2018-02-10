@@ -2,7 +2,7 @@
 {
     public static class RawRuleLinterExtensions
     {
-        public static string LintStringForMySql(this string rule)
+        public static string LintRawRule(this string rule)
         {
             rule = rule?.TrimLeadingAndTrailingWhitespace();
             rule = rule?.DropIfEmpty();
