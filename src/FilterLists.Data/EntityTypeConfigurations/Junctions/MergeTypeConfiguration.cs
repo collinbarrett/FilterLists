@@ -11,7 +11,6 @@ namespace FilterLists.Data.EntityTypeConfigurations.Junctions
             base.Configure(entityTypeBuilder);
             entityTypeBuilder.ToTable("merges");
             entityTypeBuilder.HasKey(x => new {x.MergeFilterListId, x.UpstreamFilterListId});
-            entityTypeBuilder.HasIndex(x => new {x.UpstreamFilterListId, x.MergeFilterListId});
             entityTypeBuilder.HasOne(x => x.MergeFilterList)
                              .WithMany(x => x.MergeFilterLists)
                              .HasForeignKey(x => x.MergeFilterListId);

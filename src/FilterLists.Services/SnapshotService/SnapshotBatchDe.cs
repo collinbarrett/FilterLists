@@ -23,6 +23,7 @@ namespace FilterLists.Services.SnapshotService
             this.rawRules = rawRules;
         }
 
+        //TODO: support de-duplicated SnapshotRule
         public async Task SaveSnapshotBatchAsync()
         {
             AddNewRules();
@@ -41,11 +42,11 @@ namespace FilterLists.Services.SnapshotService
 
         private void AddSnapshotRules()
         {
-            if (snapshot.SnapshotRules == null)
-                snapshot.SnapshotRules = new List<SnapshotRule>();
-            snapshot.SnapshotRules.AddRange(preExistingSnapshotRules
+            if (snapshot.AddedSnapshotRules == null)
+                snapshot.AddedSnapshotRules = new List<SnapshotRule>();
+            snapshot.AddedSnapshotRules.AddRange(preExistingSnapshotRules
                                             .Concat(newSnapshotRules)
-                                            .Select(rule => new SnapshotRule {Rule = rule, Snapshot = snapshot})
+                                            .Select(rule => new SnapshotRule {Rule = rule, AddedBySnapshot = snapshot})
                                             .ToList());
         }
     }

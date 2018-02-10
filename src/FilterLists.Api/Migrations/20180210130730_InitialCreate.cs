@@ -301,7 +301,7 @@ namespace FilterLists.Api.Migrations
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn),
                     FilterListId = table.Column<int>(nullable: false),
-                    HttpStatusCode = table.Column<int>("SMALLINT UNSIGNED", nullable: true)
+                    HttpStatusCode = table.Column<string>("VARCHAR(3)", nullable: true, defaultValueSql: "NULL")
                 },
                 constraints: table =>
                 {
@@ -318,25 +318,33 @@ namespace FilterLists.Api.Migrations
                 "snapshots_rules",
                 table => new
                 {
-                    SnapshotId = table.Column<int>(nullable: false),
+                    AddedBySnapshotId = table.Column<int>(nullable: false),
                     RuleId = table.Column<int>(nullable: false),
                     CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
                                           .Annotation("MySql:ValueGenerationStrategy",
-                                              MySqlValueGenerationStrategy.IdentityColumn)
+                                              MySqlValueGenerationStrategy.IdentityColumn),
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
+                    RemovedBySnapshotId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_snapshots_rules", x => new {x.SnapshotId, x.RuleId});
+                    table.PrimaryKey("PK_snapshots_rules", x => new {x.AddedBySnapshotId, x.RuleId});
+                    table.ForeignKey(
+                        "FK_snapshots_rules_snapshots_AddedBySnapshotId",
+                        x => x.AddedBySnapshotId,
+                        "snapshots",
+                        "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        "FK_snapshots_rules_snapshots_RemovedBySnapshotId",
+                        x => x.RemovedBySnapshotId,
+                        "snapshots",
+                        "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         "FK_snapshots_rules_rules_RuleId",
                         x => x.RuleId,
                         "rules",
-                        "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        "FK_snapshots_rules_snapshots_SnapshotId",
-                        x => x.SnapshotId,
-                        "snapshots",
                         "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -352,24 +360,24 @@ namespace FilterLists.Api.Migrations
                 "SyntaxId");
 
             migrationBuilder.CreateIndex(
-                "IX_filterlists_languages_LanguageId_FilterListId",
+                "IX_filterlists_languages_LanguageId",
                 "filterlists_languages",
-                new[] {"LanguageId", "FilterListId"});
+                "LanguageId");
 
             migrationBuilder.CreateIndex(
-                "IX_filterlists_maintainers_MaintainerId_FilterListId",
+                "IX_filterlists_maintainers_MaintainerId",
                 "filterlists_maintainers",
-                new[] {"MaintainerId", "FilterListId"});
+                "MaintainerId");
 
             migrationBuilder.CreateIndex(
-                "IX_forks_UpstreamFilterListId_ForkFilterListId",
+                "IX_forks_UpstreamFilterListId",
                 "forks",
-                new[] {"UpstreamFilterListId", "ForkFilterListId"});
+                "UpstreamFilterListId");
 
             migrationBuilder.CreateIndex(
-                "IX_merges_UpstreamFilterListId_MergeFilterListId",
+                "IX_merges_UpstreamFilterListId",
                 "merges",
-                new[] {"UpstreamFilterListId", "MergeFilterListId"});
+                "UpstreamFilterListId");
 
             migrationBuilder.CreateIndex(
                 "IX_snapshots_FilterListId",
@@ -377,14 +385,19 @@ namespace FilterLists.Api.Migrations
                 "FilterListId");
 
             migrationBuilder.CreateIndex(
-                "IX_snapshots_rules_RuleId_SnapshotId",
+                "IX_snapshots_rules_RemovedBySnapshotId",
                 "snapshots_rules",
-                new[] {"RuleId", "SnapshotId"});
+                "RemovedBySnapshotId");
 
             migrationBuilder.CreateIndex(
-                "IX_software_syntaxes_SoftwareId_SyntaxId",
+                "IX_snapshots_rules_RuleId",
+                "snapshots_rules",
+                "RuleId");
+
+            migrationBuilder.CreateIndex(
+                "IX_software_syntaxes_SoftwareId",
                 "software_syntaxes",
-                new[] {"SoftwareId", "SyntaxId"});
+                "SoftwareId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -414,10 +427,10 @@ namespace FilterLists.Api.Migrations
                 "maintainers");
 
             migrationBuilder.DropTable(
-                "rules");
+                "snapshots");
 
             migrationBuilder.DropTable(
-                "snapshots");
+                "rules");
 
             migrationBuilder.DropTable(
                 "software");
