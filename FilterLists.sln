@@ -29,10 +29,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{FCA7
 	ProjectSection(SolutionItems) = preProject
 		scripts\build.sh = scripts\build.sh
 		scripts\createMySqlDb.sql = scripts\createMySqlDb.sql
+		cron.txt = cron.txt
 		scripts\deploy.sh = scripts\deploy.sh
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Agent", "src\FilterLists.Agent\FilterLists.Agent.csproj", "{4F39D132-498D-4A93-9F6C-1C604718300D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Agent", "src\FilterLists.Agent\FilterLists.Agent.csproj", "{4F39D132-498D-4A93-9F6C-1C604718300D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
