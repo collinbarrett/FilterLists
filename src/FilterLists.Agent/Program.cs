@@ -15,7 +15,7 @@ namespace FilterLists.Agent
         private static ServiceProvider serviceProvider;
         private static IConfigurationRoot configurationRoot;
 
-        public static void Main(string[] args)
+        public static int Main(string[] args)
         {
             InstantiateConfigurationRoot();
             InstantiateTelemetryClient();
@@ -24,6 +24,8 @@ namespace FilterLists.Agent
             //TODO: capture batchSize from args
             const int batchSize = 1;
             CaptureSnapshots(batchSize);
+
+            return 0;
         }
 
         private static void InstantiateConfigurationRoot()
