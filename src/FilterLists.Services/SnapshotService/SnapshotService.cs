@@ -18,6 +18,7 @@ namespace FilterLists.Services.SnapshotService
 
         public async Task CaptureSnapshotsAsync(int batchSize)
         {
+            //TODO: rollback changes from recent snapshots if they were interrupted
             var lists = await GetLeastRecentlyCapturedLists(batchSize);
             var snapshots = GetSnapshots(lists);
             await SaveSnapshots(snapshots);
