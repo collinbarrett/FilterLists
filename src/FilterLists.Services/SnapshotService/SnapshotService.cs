@@ -16,12 +16,19 @@ namespace FilterLists.Services.SnapshotService
             this.dbContext = dbContext;
         }
 
-        public async Task CaptureSnapshotsAsync(int batchSize)
+        public async Task CaptureAsync(int batchSize)
         {
-            //TODO: rollback changes from recent snapshots if they were interrupted
+            RollbackIncomplete();
             var lists = await GetLeastRecentlyCapturedLists(batchSize);
             var snapshots = GetSnapshots(lists);
             await SaveSnapshots(snapshots);
+        }
+
+        private void RollbackIncomplete()
+        {
+            var incompleteSnapshots = dbContext.Snapshots.Where(x => x.IsCompleted == false);
+            dbContext.Snapshots.RemoveRange(incompleteSnapshots);
+            //TODO: don't assume that SnapshotDe.DedupSnapshotRules() didn't partially complete
         }
 
         private async Task<IEnumerable<FilterListViewUrlDto>> GetLeastRecentlyCapturedLists(int batchSize)
