@@ -8,6 +8,7 @@ namespace FilterLists.Data.Entities
         public int FilterListId { get; set; }
         public FilterList FilterList { get; set; }
         public string HttpStatusCode { get; set; }
-        public ICollection<SnapshotRule> SnapshotRules { get; set; }
+        public ICollection<SnapshotRule> AddedSnapshotRules { get; set; }
+        public ICollection<SnapshotRule> RemovedSnapshotRules { get; set; }
     }
 }

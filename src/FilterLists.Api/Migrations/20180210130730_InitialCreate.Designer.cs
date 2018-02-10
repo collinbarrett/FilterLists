@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    [Migration("20180208153839_InitialCreate")]
+    [Migration("20180210130730_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -97,7 +97,7 @@ namespace FilterLists.Api.Migrations
 
                 b.HasKey("FilterListId", "LanguageId");
 
-                b.HasIndex("LanguageId", "FilterListId");
+                b.HasIndex("LanguageId");
 
                 b.ToTable("filterlists_languages");
             });
@@ -114,7 +114,7 @@ namespace FilterLists.Api.Migrations
 
                 b.HasKey("FilterListId", "MaintainerId");
 
-                b.HasIndex("MaintainerId", "FilterListId");
+                b.HasIndex("MaintainerId");
 
                 b.ToTable("filterlists_maintainers");
             });
@@ -131,7 +131,7 @@ namespace FilterLists.Api.Migrations
 
                 b.HasKey("ForkFilterListId", "UpstreamFilterListId");
 
-                b.HasIndex("UpstreamFilterListId", "ForkFilterListId");
+                b.HasIndex("UpstreamFilterListId");
 
                 b.ToTable("forks");
             });
@@ -148,14 +148,14 @@ namespace FilterLists.Api.Migrations
 
                 b.HasKey("MergeFilterListId", "UpstreamFilterListId");
 
-                b.HasIndex("UpstreamFilterListId", "MergeFilterListId");
+                b.HasIndex("UpstreamFilterListId");
 
                 b.ToTable("merges");
             });
 
             modelBuilder.Entity("FilterLists.Data.Entities.Junctions.SnapshotRule", b =>
             {
-                b.Property<int>("SnapshotId");
+                b.Property<int>("AddedBySnapshotId");
 
                 b.Property<int>("RuleId");
 
@@ -163,9 +163,17 @@ namespace FilterLists.Api.Migrations
                  .ValueGeneratedOnAdd()
                  .HasColumnType("TIMESTAMP");
 
-                b.HasKey("SnapshotId", "RuleId");
+                b.Property<DateTime>("ModifiedDateUtc")
+                 .ValueGeneratedOnAddOrUpdate()
+                 .HasColumnType("TIMESTAMP");
 
-                b.HasIndex("RuleId", "SnapshotId");
+                b.Property<int?>("RemovedBySnapshotId");
+
+                b.HasKey("AddedBySnapshotId", "RuleId");
+
+                b.HasIndex("RemovedBySnapshotId");
+
+                b.HasIndex("RuleId");
 
                 b.ToTable("snapshots_rules");
             });
@@ -182,7 +190,7 @@ namespace FilterLists.Api.Migrations
 
                 b.HasKey("SyntaxId", "SoftwareId");
 
-                b.HasIndex("SoftwareId", "SyntaxId");
+                b.HasIndex("SoftwareId");
 
                 b.ToTable("software_syntaxes");
             });
@@ -338,8 +346,10 @@ namespace FilterLists.Api.Migrations
 
                 b.Property<int>("FilterListId");
 
-                b.Property<int?>("HttpStatusCode")
-                 .HasColumnType("SMALLINT UNSIGNED");
+                b.Property<string>("HttpStatusCode")
+                 .ValueGeneratedOnAdd()
+                 .HasColumnType("VARCHAR(3)")
+                 .HasDefaultValueSql("NULL");
 
                 b.HasKey("Id");
 
@@ -468,14 +478,19 @@ namespace FilterLists.Api.Migrations
 
             modelBuilder.Entity("FilterLists.Data.Entities.Junctions.SnapshotRule", b =>
             {
+                b.HasOne("FilterLists.Data.Entities.Snapshot", "AddedBySnapshot")
+                 .WithMany("AddedSnapshotRules")
+                 .HasForeignKey("AddedBySnapshotId")
+                 .OnDelete(DeleteBehavior.Cascade);
+
+                b.HasOne("FilterLists.Data.Entities.Snapshot", "RemovedBySnapshot")
+                 .WithMany("RemovedSnapshotRules")
+                 .HasForeignKey("RemovedBySnapshotId")
+                 .OnDelete(DeleteBehavior.Cascade);
+
                 b.HasOne("FilterLists.Data.Entities.Rule", "Rule")
                  .WithMany("SnapshotRules")
                  .HasForeignKey("RuleId")
-                 .OnDelete(DeleteBehavior.Cascade);
-
-                b.HasOne("FilterLists.Data.Entities.Snapshot", "Snapshot")
-                 .WithMany("SnapshotRules")
-                 .HasForeignKey("SnapshotId")
                  .OnDelete(DeleteBehavior.Cascade);
             });
 
