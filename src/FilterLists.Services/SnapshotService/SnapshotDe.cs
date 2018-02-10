@@ -32,6 +32,8 @@ namespace FilterLists.Services.SnapshotService
                 await SaveSnapshotInBatches(content);
                 await DedupSnapshotRules();
             }
+
+            await SetCompleted();
         }
 
         private async Task<string> CaptureSnapshot()
@@ -135,6 +137,12 @@ namespace FilterLists.Services.SnapshotService
                 x.AddedBySnapshot == snapshot &&
                 existingSnapshotRules.Any(y => y.Rule == x.Rule));
             dbContext.SnapshotRules.RemoveRange(duplicateSnapshotRules);
+        }
+
+        private async Task SetCompleted()
+        {
+            snapshot.IsCompleted = true;
+            await dbContext.SaveChangesAsync();
         }
     }
 }

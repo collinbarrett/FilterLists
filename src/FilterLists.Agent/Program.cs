@@ -60,7 +60,7 @@ namespace FilterLists.Agent
             var snapshotService = serviceProvider.GetService<SnapshotService>();
 
             Log("Capturing FilterList snapshots...");
-            snapshotService.CaptureSnapshotsAsync(batchSize).Wait();
+            snapshotService.CaptureAsync(batchSize).Wait();
             Log("\nSnapshots captured.");
             telemetryClient.Flush();
         }
