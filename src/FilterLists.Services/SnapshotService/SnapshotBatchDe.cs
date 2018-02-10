@@ -40,7 +40,11 @@ namespace FilterLists.Services.SnapshotService
 
         private void AddSnapshotRules()
         {
-            var snapshotRules = rules.Select(rule => new SnapshotRule {Rule = rule, AddedBySnapshot = snapshot});
+            var snapshotRules = new List<SnapshotRule>();
+            foreach (var rule in rules)
+                snapshotRules.Add(new SnapshotRule {Rule = rule});
+            if (snapshot.AddedSnapshotRules == null)
+                snapshot.AddedSnapshotRules = new List<SnapshotRule>();
             snapshot.AddedSnapshotRules.AddRange(snapshotRules);
         }
     }
