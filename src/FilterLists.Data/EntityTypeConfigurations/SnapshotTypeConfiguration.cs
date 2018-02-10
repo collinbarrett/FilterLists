@@ -15,6 +15,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.HttpStatusCode)
                              .HasColumnType("VARCHAR(3)")
                              .HasDefaultValueSql("NULL");
+            entityTypeBuilder.Ignore(x => x.ModifiedDateUtc);
         }
     }
 }
