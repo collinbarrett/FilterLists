@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #sshpass -p $FTP_PASSWORD ssh -o StrictHostKeyChecking=no $FTP_USER@$FTP_HOST:$FTP_DIR 'rm -rf !(appsettings.json)'
 sshpass -p $FTP_PASSWORD scp -o StrictHostKeyChecking=no -r /home/travis/build/collinbarrett/FilterLists/data/ $FTP_USER@$FTP_HOST:$FTP_DIR
-chmod a+x /home/travis/build/collinbarrett/FilterLists/src/FilterLists.Agent/bin/Release/netcoreapp2.0/ubuntu.16.04-x64/publish/FilterLists.Agent.dll
+chmod 777 /home/travis/build/collinbarrett/FilterLists/src/FilterLists.Agent/bin/Release/netcoreapp2.0/ubuntu.16.04-x64/publish/FilterLists.Agent
 sshpass -p $FTP_PASSWORD scp -o StrictHostKeyChecking=no -r /home/travis/build/collinbarrett/FilterLists/src/FilterLists.Agent/bin/Release/netcoreapp2.0/ubuntu.16.04-x64/publish/* $FTP_USER@$FTP_HOST:$FTP_DIR
 chmod a+x /home/travis/build/collinbarrett/FilterLists/src/FilterLists.Api/bin/Release/netcoreapp2.0/ubuntu.16.04-x64/publish/FilterLists.Api.dll
 sshpass -p $FTP_PASSWORD scp -o StrictHostKeyChecking=no -r /home/travis/build/collinbarrett/FilterLists/src/FilterLists.Api/bin/Release/netcoreapp2.0/ubuntu.16.04-x64/publish/* $FTP_USER@$FTP_HOST:$FTP_DIR
