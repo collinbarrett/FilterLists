@@ -351,10 +351,6 @@ namespace FilterLists.Api.Migrations
 
                 b.Property<bool>("IsCompleted");
 
-                b.Property<DateTime>("ModifiedDateUtc")
-                 .ValueGeneratedOnAddOrUpdate()
-                 .HasColumnType("TIMESTAMP");
-
                 b.HasKey("Id");
 
                 b.HasIndex("FilterListId");
