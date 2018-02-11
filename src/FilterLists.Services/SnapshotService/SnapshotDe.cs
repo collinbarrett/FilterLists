@@ -93,7 +93,7 @@ namespace FilterLists.Services.SnapshotService
             var rawRules = content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
             for (var i = 0; i < rawRules.Length; i++)
                 rawRules[i] = rawRules[i].LintRawRule();
-            return new HashSet<string>(rawRules.Where(x => x != null));
+            return new HashSet<string>(rawRules.Where(rr => rr != null));
         }
 
         private IEnumerable<SnapshotBatchDe> GetSnapshotBatches(IEnumerable<string> rawRules)
@@ -118,24 +118,25 @@ namespace FilterLists.Services.SnapshotService
 
         private IQueryable<SnapshotRule> GetExistingSnapshotRules()
         {
-            return dbContext.SnapshotRules.Where(x =>
-                x.AddedBySnapshot.FilterListId == list.Id &&
-                x.AddedBySnapshot != snapshot &&
-                x.RemovedBySnapshot == null);
+            return dbContext.SnapshotRules.Where(sr =>
+                sr.AddedBySnapshot.FilterListId == list.Id &&
+                sr.AddedBySnapshot != snapshot &&
+                sr.RemovedBySnapshot == null);
         }
 
         private void UpdateRemovedSnapshotRules(IQueryable<SnapshotRule> existingSnapshotRules)
         {
-            var newSnapshotRules = dbContext.SnapshotRules.Where(x => x.AddedBySnapshot == snapshot);
-            var removedSnapshotRules = existingSnapshotRules.Where(x => !newSnapshotRules.Any(y => y.Rule == x.Rule));
-            removedSnapshotRules.ToList().ForEach(x => x.RemovedBySnapshot = snapshot);
+            var newSnapshotRules = dbContext.SnapshotRules.Where(sr => sr.AddedBySnapshot == snapshot);
+            var removedSnapshotRules =
+                existingSnapshotRules.Where(sr => !newSnapshotRules.Any(nsr => nsr.Rule == sr.Rule));
+            removedSnapshotRules.ToList().ForEach(sr => sr.RemovedBySnapshot = snapshot);
         }
 
         private void RemoveDuplicateSnapshotRules(IQueryable<SnapshotRule> existingSnapshotRules)
         {
-            var duplicateSnapshotRules = dbContext.SnapshotRules.Where(x =>
-                x.AddedBySnapshot == snapshot &&
-                existingSnapshotRules.Any(y => y.Rule == x.Rule));
+            var duplicateSnapshotRules = dbContext.SnapshotRules.Where(sr =>
+                sr.AddedBySnapshot == snapshot &&
+                existingSnapshotRules.Any(esr => esr.Rule == sr.Rule));
             dbContext.SnapshotRules.RemoveRange(duplicateSnapshotRules);
         }
 

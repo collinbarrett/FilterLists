@@ -19,35 +19,39 @@ namespace FilterLists.Services.SnapshotService
 
         public async Task CaptureAsync(int batchSize)
         {
-            RollbackIncomplete();
-            var lists = await GetLeastRecentlyCapturedLists(batchSize);
+            RollbackIncompletedSnapshot();
+            var lists = await GetListsToCapture(batchSize);
             var snapshots = GetSnapshots(lists);
             await SaveSnapshots(snapshots);
         }
 
-        private void RollbackIncomplete()
+        private void RollbackIncompletedSnapshot()
         {
-            var incompleteSnapshots = dbContext.Snapshots.Where(x => x.IsCompleted == false);
+            var incompleteSnapshots = dbContext.Snapshots.Where(ss => ss.IsCompleted == false);
             dbContext.Snapshots.RemoveRange(incompleteSnapshots);
             //TODO: don't assume that SnapshotDe.DedupSnapshotRules() didn't partially complete
         }
 
-        private async Task<IEnumerable<FilterListViewUrlDto>> GetLeastRecentlyCapturedLists(int batchSize)
+        private async Task<IEnumerable<FilterListViewUrlDto>> GetListsToCapture(int batchSize)
         {
-            return await dbContext.FilterLists.OrderBy(x => x.Snapshots.Any())
-                                  .ThenBy(x =>
-                                      x.Snapshots.Select(y => y.CreatedDateUtc)
-                                       .OrderByDescending(y => y)
-                                       .FirstOrDefault())
-                                  .Where(x => !x.Snapshots.Any() ||
-                                              x.Snapshots.Select(y => y.CreatedDateUtc)
-                                               .OrderByDescending(y => y)
-                                               .FirstOrDefault() <
-                                              DateTime.UtcNow.AddDays(-1))
-                                  .Take(batchSize)
-                                  .AsNoTracking()
-                                  .ProjectTo<FilterListViewUrlDto>()
-                                  .ToListAsync();
+            return await dbContext
+                         .FilterLists
+                         .Where(list =>
+                             !list.Snapshots.Any() ||
+                             list.Snapshots
+                                 .Select(ss => ss.CreatedDateUtc)
+                                 .OrderByDescending(sscd => sscd)
+                                 .FirstOrDefault() < DateTime.UtcNow.AddDays(-1))
+                         .OrderBy(list => list.Snapshots.Any())
+                         .ThenBy(list =>
+                             list.Snapshots
+                                 .Select(ss => ss.CreatedDateUtc)
+                                 .OrderByDescending(sscd => sscd)
+                                 .FirstOrDefault())
+                         .Take(batchSize)
+                         .AsNoTracking()
+                         .ProjectTo<FilterListViewUrlDto>()
+                         .ToListAsync();
         }
 
         private IEnumerable<SnapshotDe> GetSnapshots(IEnumerable<FilterListViewUrlDto> lists)
