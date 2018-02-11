@@ -70,7 +70,7 @@ namespace FilterLists.Services.SnapshotService
                 snapshot.HttpStatusCode = null;
                 return null;
             }
-            catch (AggregateException)
+            catch (ArgumentException)
             {
                 snapshot.HttpStatusCode = null;
                 return null;
