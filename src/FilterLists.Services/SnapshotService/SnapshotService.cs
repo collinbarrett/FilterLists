@@ -19,13 +19,13 @@ namespace FilterLists.Services.SnapshotService
 
         public async Task CaptureAsync(int batchSize)
         {
-            RollbackIncompletedSnapshot();
+            RollbackIncompletedSnapshots();
             var lists = await GetListsToCapture(batchSize);
             var snapshots = GetSnapshots(lists);
             await SaveSnapshots(snapshots);
         }
 
-        private void RollbackIncompletedSnapshot()
+        private void RollbackIncompletedSnapshots()
         {
             var incompleteSnapshots = dbContext.Snapshots.Where(ss => ss.IsCompleted == false);
             dbContext.Snapshots.RemoveRange(incompleteSnapshots);
