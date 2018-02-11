@@ -14,7 +14,10 @@ namespace FilterLists.Services.SnapshotService
     public class SnapshotDe
     {
         private const int BatchSize = 1000;
-        private const string UserAgentString = @"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36";
+
+        private const string UserAgentString =
+            @"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36";
+
         private readonly FilterListsDbContext dbContext;
         private readonly FilterListViewUrlDto list;
         private Snapshot snapshot;
@@ -63,6 +66,11 @@ namespace FilterLists.Services.SnapshotService
                 return null;
             }
             catch (HttpRequestException)
+            {
+                snapshot.HttpStatusCode = null;
+                return null;
+            }
+            catch (AggregateException)
             {
                 snapshot.HttpStatusCode = null;
                 return null;
