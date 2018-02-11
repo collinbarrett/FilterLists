@@ -2840,20 +2840,20 @@
   },
   {
     "id": 168,
-    "description": "It is an alternative, free way to block ads, trackers and phishing websites, and also a parental control instrument.",
-    "descriptionSourceUrl": null,
+    "description": "A filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by AdGuard DNS servers to block ads.",
+    "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#domains",
     "discontinuedDate": null,
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
-    "homeUrl": "https://adguard.com/en/adguard-dns/overview.html",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardDNS",
     "issuesUrl": null,
-    "licenseId": null,
-    "name": "Adguard DNS Filter",
+    "licenseId": 12,
+    "name": "Adguard Simplified Domain Names Filter",
     "policyUrl": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": "https://adguard.com/en/filter-rules.html?id=15"
+    "viewUrl": "https://filters.adtidy.org/windows/filters/15.txt"
   },
   {
     "id": 169,

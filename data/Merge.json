@@ -158,5 +158,29 @@
   {
     "mergeFilterListId": 309,
     "upstreamFilterListId": 177
+  },
+  {
+    "mergeFilterListId": 168,
+    "upstreamFilterListId": 166
+  },
+  {
+    "mergeFilterListId": 168,
+    "upstreamFilterListId": 159
+  },
+  {
+    "mergeFilterListId": 168,
+    "upstreamFilterListId": 157
+  },
+  {
+    "mergeFilterListId": 168,
+    "upstreamFilterListId": 162
+  },
+  {
+    "mergeFilterListId": 168,
+    "upstreamFilterListId": 301
+  },
+  {
+    "mergeFilterListId": 168,
+    "upstreamFilterListId": 242
   }
 ]
