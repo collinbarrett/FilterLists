@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
@@ -39,6 +40,10 @@ namespace FilterLists.Services.SnapshotService
                                                 .Select(y => y.CreatedDateUtc)
                                                 .OrderByDescending(y => y)
                                                 .FirstOrDefault())
+                                  .Where(x => x.Snapshots
+                                               .Select(y => y.CreatedDateUtc)
+                                               .OrderByDescending(y => y)
+                                               .FirstOrDefault() < DateTime.UtcNow.AddDays(-1))
                                   .Take(batchSize)
                                   .AsNoTracking()
                                   .ProjectTo<FilterListViewUrlDto>()

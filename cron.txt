@@ -1,2 +1,2 @@
-# FilterLists - Capture Snapshots Hourly (skips if previous still running)
-0 * * * * /usr/bin/flock -n /tmp/filterlistsagent.lockfile /var/www/filterlists/FilterLists.Agent > /dev/null 2>&1
+# FilterLists - Try Capture Snapshots Every Minute (skips if previous still running)
+*/1 * * * * /usr/bin/flock -n /tmp/filterlistsagent.lockfile /var/www/filterlists/FilterLists.Agent > /dev/null 2>&1

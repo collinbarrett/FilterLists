@@ -21,7 +21,6 @@ namespace FilterLists.Agent
             InstantiateTelemetryClient();
             InstantiateServiceProvider();
 
-            //TODO: capture batchSize from args
             const int batchSize = 1;
             CaptureSnapshots(batchSize);
 
