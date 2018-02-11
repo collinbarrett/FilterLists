@@ -5234,5 +5234,39 @@
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt"
+  },
+  {
+    "id": 309,
+    "description": "A merged hosts file from a variety of other lists.",
+    "descriptionSourceUrl": null,
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "issuesUrl": null,
+    "licenseId": 5,
+    "name": "1Hosts",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 1,
+    "viewUrl": "http://1hosts.cf/"
+  },
+  {
+    "id": 310,
+    "description": "A small supplement list for 1Hosts.",
+    "descriptionSourceUrl": null,
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "issuesUrl": null,
+    "licenseId": 5,
+    "name": "1Hosts Addon",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 2,
+    "viewUrl": "http://1hosts.cf/addon/"
   }
 ]
