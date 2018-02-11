@@ -154,5 +154,9 @@
   {
     "mergeFilterListId": 309,
     "upstreamFilterListId": 138
+  },
+  {
+    "mergeFilterListId": 309,
+    "upstreamFilterListId": 177
   }
 ]
