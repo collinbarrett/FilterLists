@@ -2993,20 +2993,20 @@
   },
   {
     "id": 177,
-    "description": "Blocks requests to sites which have used legal threats to remove themselves from other blacklists.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/paulgb/BarbBlock/master/BarbBlock.txt",
+    "description": "BarbBlock is a content blocking list with standalone browser extensions for Chrome and Firefox. It blacklists sites which have used DMCA takedowns to force removal from other content blocking lists. Such takedowns are categorically invalid, but they can be effective at intimidating small open-source projects into compliance.",
+    "descriptionSourceUrl": "https://github.com/paulgb/BarbBlock/blob/master/README.md",
     "discontinuedDate": null,
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
-    "homeUrl": "https://github.com/paulgb/BarbBlock",
+    "homeUrl": "https://ssl.bblck.me/",
     "issuesUrl": "https://github.com/paulgb/BarbBlock/issues",
-    "licenseId": null,
+    "licenseId": 2,
     "name": "BarbBlock",
     "policyUrl": null,
     "submissionUrl": null,
-    "syntaxId": null,
-    "viewUrl": "https://raw.githubusercontent.com/paulgb/BarbBlock/master/BarbBlock.txt"
+    "syntaxId": 1,
+    "viewUrl": "https://ssl.bblck.me/blacklists/hosts-file.txt"
   },
   {
     "id": 178,
