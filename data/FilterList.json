@@ -1548,20 +1548,20 @@
   },
   {
     "id": 92,
-    "description": "The ad server for a list of sites to block ads in Turkish.",
-    "descriptionSourceUrl": "https://github.com/bkrcrc/turk-adlist",
+    "description": "Ad servers list to block ads on Turkish websites (for use with hosts files).",
+    "descriptionSourceUrl": "https://github.com/bkrucarci/turk-adlist/blob/master/README.md",
     "discontinuedDate": null,
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
-    "homeUrl": "https://github.com/bkrcrc/turk-adlist",
-    "issuesUrl": "https://github.com/bkrcrc/turk-adlist/issues",
-    "licenseId": null,
+    "homeUrl": "https://github.com/bkrucarci/turk-adlist",
+    "issuesUrl": "https://github.com/bkrucarci/turk-adlist/issues",
+    "licenseId": 6,
     "name": "Turk-adlist",
     "policyUrl": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": "https://raw.githubusercontent.com/bkrcrc/turk-adlist/master/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/bkrucarci/turk-adlist/master/hosts"
   },
   {
     "id": 93,
