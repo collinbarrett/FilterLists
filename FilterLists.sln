@@ -28,12 +28,17 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{FCA7F77A-9EC6-4C6D-A80E-7DD27FF95673}"
 	ProjectSection(SolutionItems) = preProject
 		scripts\build.sh = scripts\build.sh
-		scripts\createMySqlDb.sql = scripts\createMySqlDb.sql
 		scripts\cron = scripts\cron
 		scripts\deploy.sh = scripts\deploy.sh
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Agent", "src\FilterLists.Agent\FilterLists.Agent.csproj", "{4F39D132-498D-4A93-9F6C-1C604718300D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{A4BB2C81-5232-4162-B410-704D123D2C01}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\sql\createDb.sql = scripts\sql\createDb.sql
+		scripts\sql\snapshotTimeAnalysis.sql = scripts\sql\snapshotTimeAnalysis.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,6 +69,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4BB2C81-5232-4162-B410-704D123D2C01} = {FCA7F77A-9EC6-4C6D-A80E-7DD27FF95673}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A31B449-52DD-4445-A9C4-033A24E25308}
