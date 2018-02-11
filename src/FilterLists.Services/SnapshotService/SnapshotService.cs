@@ -34,16 +34,16 @@ namespace FilterLists.Services.SnapshotService
 
         private async Task<IEnumerable<FilterListViewUrlDto>> GetLeastRecentlyCapturedLists(int batchSize)
         {
-            return await dbContext.FilterLists
-                                  .OrderBy(x => x.Snapshots.Any())
-                                  .ThenBy(x => x.Snapshots
-                                                .Select(y => y.CreatedDateUtc)
-                                                .OrderByDescending(y => y)
-                                                .FirstOrDefault())
-                                  .Where(x => x.Snapshots
-                                               .Select(y => y.CreatedDateUtc)
+            return await dbContext.FilterLists.OrderBy(x => x.Snapshots.Any())
+                                  .ThenBy(x =>
+                                      x.Snapshots.Select(y => y.CreatedDateUtc)
+                                       .OrderByDescending(y => y)
+                                       .FirstOrDefault())
+                                  .Where(x => !x.Snapshots.Any() ||
+                                              x.Snapshots.Select(y => y.CreatedDateUtc)
                                                .OrderByDescending(y => y)
-                                               .FirstOrDefault() < DateTime.UtcNow.AddDays(-1))
+                                               .FirstOrDefault() <
+                                              DateTime.UtcNow.AddDays(-1))
                                   .Take(batchSize)
                                   .AsNoTracking()
                                   .ProjectTo<FilterListViewUrlDto>()
