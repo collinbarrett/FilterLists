@@ -14,6 +14,7 @@ namespace FilterLists.Services.SnapshotService
     public class SnapshotDe
     {
         private const int BatchSize = 1000;
+        private const string UserAgentString = @"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36";
         private readonly FilterListsDbContext dbContext;
         private readonly FilterListViewUrlDto list;
         private Snapshot snapshot;
@@ -71,11 +72,14 @@ namespace FilterLists.Services.SnapshotService
         private async Task<string> GetContent()
         {
             using (var httpClient = new HttpClient())
-            using (var httpResponseMessage = await httpClient.GetAsync(list.ViewUrl))
             {
-                snapshot.HttpStatusCode = ((int)httpResponseMessage.StatusCode).ToString();
-                if (httpResponseMessage.IsSuccessStatusCode)
-                    return await httpResponseMessage.Content.ReadAsStringAsync();
+                httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(UserAgentString);
+                using (var httpResponseMessage = await httpClient.GetAsync(list.ViewUrl))
+                {
+                    snapshot.HttpStatusCode = ((int)httpResponseMessage.StatusCode).ToString();
+                    if (httpResponseMessage.IsSuccessStatusCode)
+                        return await httpResponseMessage.Content.ReadAsStringAsync();
+                }
             }
 
             return null;
