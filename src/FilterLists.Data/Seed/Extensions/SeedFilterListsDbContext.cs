@@ -12,8 +12,6 @@ namespace FilterLists.Data.Seed.Extensions
 {
     public static class SeedFilterListsDbContext
     {
-        //TODO: consider handling deleted entities on seed
-        //TODO: read entities from model and iterate over
         public static void SeedOrUpdate(this FilterListsDbContext dbContext, string dataPath)
         {
             dbContext.InsertOnDuplicateKeyUpdate<Language>(dataPath);
@@ -29,7 +27,6 @@ namespace FilterLists.Data.Seed.Extensions
             dbContext.InsertOnDuplicateKeyUpdate<SoftwareSyntax>(dataPath);
         }
 
-        //TODO: improve raw SQL against injection attacks
         private static void InsertOnDuplicateKeyUpdate<TEntityType>(this DbContext dbContext, string dataPath)
             where TEntityType : class
         {
@@ -47,16 +44,26 @@ namespace FilterLists.Data.Seed.Extensions
 
         private static List<IProperty> GetPropertiesLessValueGeneratedTimestamps(IEntityType entityType)
         {
-            //TODO: filter dynamically from JSON
-            return entityType.GetProperties().Where(x =>
-                !new List<string> {"CreatedDateUtc", "ModifiedDateUtc", "ScrapedDateUtc", "UpdatedDateUtc"}
-                    .Contains(x.Name)).ToList();
+            //TODO: get seed properties dynamically from JSON
+            return entityType.GetProperties()
+                             .Where(x =>
+                                 !new List<string>
+                                     {
+                                         "CreatedDateUtc",
+                                         "ModifiedDateUtc",
+                                         "ScrapedDateUtc",
+                                         "UpdatedDateUtc"
+                                     }
+                                     .Contains(x.Name))
+                             .ToList();
         }
 
         private static string CreateValues<TEntityType>(IReadOnlyCollection<IProperty> properties, string dataPath)
         {
-            return GetSeedRows<TEntityType>(dataPath).Select(row => CreateRowValues(properties, row)).Aggregate("",
-                (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
+            return GetSeedRows<TEntityType>(dataPath)
+                   .Select(row => CreateRowValues(properties, row))
+                   .Aggregate("",
+                       (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
         }
 
         private static List<TEntityType> GetSeedRows<TEntityType>(string dataPath)
@@ -81,7 +88,6 @@ namespace FilterLists.Data.Seed.Extensions
                        (rowValues, value) => rowValues == "" ? "(" + value : rowValues + ", " + value) + ")";
         }
 
-        //TODO: use .NET, EF, or other library rather than maintaining this
         private static object FormatDataForMySql(IProperty property, object value)
         {
             if (value == null) return "NULL";
@@ -97,15 +103,14 @@ namespace FilterLists.Data.Seed.Extensions
         private static string CreateUpdates(IReadOnlyCollection<IProperty> properties)
         {
             var update =
-            (from property in properties
-                where !property.IsPrimaryKey()
-                select property.Name + " = VALUES(" + property.Name + ")").Aggregate("",
-                (updates, columnUpdates) => updates == "" ? columnUpdates : updates + ", " + columnUpdates);
+                (from property in properties
+                    where !property.IsPrimaryKey()
+                    select property.Name + " = VALUES(" + property.Name + ")").Aggregate("",
+                    (updates, columnUpdates) => updates == "" ? columnUpdates : updates + ", " + columnUpdates);
             if (update == "") update = GetUpdateUnchangedColumnHack(properties);
             return update;
         }
 
-        //TODO: eliminate wasted IO updating unchanged column (https://stackoverflow.com/a/4596409/2343739)
         private static string GetUpdateUnchangedColumnHack(IEnumerable<IProperty> properties)
         {
             var firstId = properties.First(x => x.IsPrimaryKey()).Name;
