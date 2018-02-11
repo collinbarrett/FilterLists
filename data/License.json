@@ -75,5 +75,12 @@
     "name": "The Unlicense",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
+  },
+  {
+    "id": 12,
+    "descriptionUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "name": "CC BY-SA 3.0",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
   }
 ]
