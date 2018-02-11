@@ -32,7 +32,7 @@ namespace FilterLists.Services.SnapshotService
         private void AddRules()
         {
             var existingRules = dbContext.Rules.Where(rule => rawRules.Contains(rule.Raw));
-            var newRawRules = rawRules.Except(existingRules.Select(x => x.Raw));
+            var newRawRules = rawRules.Except(existingRules.Select(r => r.Raw));
             var newRules = newRawRules.Select(newRawRule => new Rule {Raw = newRawRule}).ToList();
             dbContext.Rules.AddRange(newRules);
             rules = existingRules.Concat(newRules);
