@@ -166,5 +166,13 @@
   {
     "filterListId": 27,
     "maintainerId": 24
+  },
+  {
+    "filterListId": 309,
+    "maintainerId": 25
+  },
+  {
+    "filterListId": 310,
+    "maintainerId": 25
   }
 ]
