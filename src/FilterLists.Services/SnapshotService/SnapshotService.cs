@@ -12,6 +12,9 @@ namespace FilterLists.Services.SnapshotService
     {
         private readonly FilterListsDbContext dbContext;
 
+        //lists too large to snapshot with current algorithm
+        private readonly List<int> ignoreLists = new List<int> {48};
+
         public SnapshotService(FilterListsDbContext dbContext)
         {
             this.dbContext = dbContext;
@@ -37,11 +40,12 @@ namespace FilterLists.Services.SnapshotService
             return await dbContext
                          .FilterLists
                          .Where(list =>
-                             !list.Snapshots.Any() ||
-                             list.Snapshots
-                                 .Select(ss => ss.CreatedDateUtc)
-                                 .OrderByDescending(sscd => sscd)
-                                 .FirstOrDefault() < DateTime.UtcNow.AddDays(-1))
+                             (!list.Snapshots.Any() ||
+                              list.Snapshots
+                                  .Select(ss => ss.CreatedDateUtc)
+                                  .OrderByDescending(sscd => sscd)
+                                  .FirstOrDefault() < DateTime.UtcNow.AddDays(-1)) &&
+                             !ignoreLists.Contains(list.Id))
                          .OrderBy(list => list.Snapshots.Any())
                          .ThenBy(list =>
                              list.Snapshots
