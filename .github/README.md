@@ -6,12 +6,12 @@
 
 [filterlists.com](https://filterlists.com)
 
-FilterLists is the independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances. For more information on its purpose and function, check out [About](https://filterlists.com/about/).
+FilterLists is the independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances. For more information on its purpose and function, check out [About](https://github.com/collinbarrett/FilterLists/blob/master/About.md).
 
 ## Links
 | Site                                                | API                                               |
 | --------------------------------------------------- | ------------------------------------------------- |
-| [v3 (Alpha)](https://beta.filterlists.com/)         | [v1 (Alpha)](https://api.filterlists.com/docs)    |
+| [v3 (Alpha)](https://beta.filterlists.com/)         | [v1 (Alpha)](https://api.filterlists.com/v1/lists)|
 | [v2 (Stable, Frozen)](https://filterlists.com/)     |                                                   |
 | [v1 (Legacy, Frozen)](https://v1.filterlists.com/)  |                                                   |
 
@@ -19,15 +19,15 @@ FilterLists is the independent and comprehensive directory of all public filter 
 
 To suggest a new list or update the information of an existing list, create a PR against [data](https://github.com/collinbarrett/FilterLists/tree/master/data) or open a new [Issue](https://github.com/collinbarrett/FilterLists/issues). Provide all of the information in the Properties section below that is available.
 
-## Development Notice (Updated January 27, 2018)
+## Development Notice (Updated February 12, 2018)
 FilterLists improvements are slow and tend to be in spurts. I care about this project as both a resource for the community and a learning tool for me. However, my day job comes first which often results in little to no work on the project at times. I happily welcome anyone that wants to contribute.
 
-The immediate projects are converting the data to an actual web application (rather than Google Sheets & WordPress), and then exposing the data via a .Net Core REST API.
+The immediate projects are converting the data to an actual web application (rather than Google Sheets & WordPress), and then exposing the data via a .Net Core REST API driving a first-party ReactJS UI.
 
 ### Help Wanted
 
 - Updating the [data](https://github.com/collinbarrett/FilterLists/tree/master/data)
-- Building the new API-driven front-end ([FilterLists.Web](https://github.com/collinbarrett/FilterLists/tree/master/src/FilterLists.Web)). The current early direction is [ReactJS](https://reactjs.org/) with [ANT](https://ant.design/) controls. I am not a front-end developer, so I would happily welcome any assistance.
+- Building the new API-driven front-end ([FilterLists.Web](https://github.com/collinbarrett/FilterLists/tree/master/src/FilterLists.Web)). The current direction is a [ReactJS](https://reactjs.org/) API-driven UI with (possibly) [ANT](https://ant.design/) controls. I am not a front-end developer, so I would happily welcome any assistance.
 
 ## Properties
 *Asterisks indicate a foreign key relationship.
