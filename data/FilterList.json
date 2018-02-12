@@ -5319,5 +5319,22 @@
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/elypter/filter_processor/master/generated_filterlists/blockhead(decoy_generic_selection).txt"
+  },
+  {
+    "id": 314,
+    "description": "No Coin is a tiny browser extension aiming to block coin miners such as Coinhive.",
+    "descriptionSourceUrl": "https://github.com/keraf/NoCoin",
+    "discontinuedDate": null,
+    "donateUrl": "https://paypal.me/keraf",
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/keraf/NoCoin",
+    "issuesUrl": "https://github.com/keraf/NoCoin/issues",
+    "licenseId": 4,
+    "name": "Cryptocurrency (Bitcoin) Mining Protection List",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://cdn.adblockcdn.com/filters/nominers.txt"
   }
 ]
