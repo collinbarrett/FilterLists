@@ -13,7 +13,7 @@ namespace FilterLists.Services.SnapshotService
         private readonly FilterListsDbContext dbContext;
 
         //lists too large to snapshot with current algorithm
-        private readonly List<int> ignoreLists = new List<int> {48};
+        private readonly List<int> ignoreLists = new List<int> {48, 173};
 
         public SnapshotService(FilterListsDbContext dbContext)
         {
