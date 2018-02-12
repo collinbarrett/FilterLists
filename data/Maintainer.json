@@ -178,7 +178,14 @@
     "id": 27,
     "emailAddress": null,
     "homeUrl": "https://ker.af/",
-    "name": "keraf",
+    "name": "Rafael K",
     "twitterHandle": "iamkeraf"
+  },
+  {
+    "id": 28,
+    "emailAddress": null,
+    "homeUrl": "https://github.com/maciejtarmas",
+    "name": "Maciej Tarmas",
+    "twitterHandle": null
   }
 ]
