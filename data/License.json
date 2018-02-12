@@ -82,5 +82,12 @@
     "name": "CC BY-SA 3.0",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
+  },
+  {
+    "id": 13,
+    "descriptionUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "name": "CC BY-NC 4.0",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": false
   }
 ]
