@@ -27,7 +27,7 @@ The immediate projects are converting the data to an actual web application (rat
 ### Help Wanted
 
 - Updating the [data](https://github.com/collinbarrett/FilterLists/tree/master/data)
-- Building the new API-driven front-end ([FilterLists.Web](https://github.com/collinbarrett/FilterLists/tree/master/src/FilterLists.Web)). The current direction is a [ReactJS](https://reactjs.org/) API-driven UI with (possibly) [ANT](https://ant.design/) controls. I am not a front-end developer, so I would happily welcome any assistance.
+- Building the new API-driven front-end ([FilterLists.Web](https://github.com/collinbarrett/FilterLists/tree/master/src/FilterLists.Web)). The current direction is a [ReactJS](https://reactjs.org/) API-driven UI with (possibly) [ANT](https://ant.design/) controls. I am not a front-end developer, so I would happily welcome any assistance. Early preview is deployed [here](https://beta.filterlists.com/).
 
 ## Properties
 *Asterisks indicate a foreign key relationship.
