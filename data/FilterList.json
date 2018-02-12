@@ -5336,5 +5336,22 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://cdn.adblockcdn.com/filters/nominers.txt"
+  },
+  {
+    "id": 315,
+    "description": "The rules facilitate the use of the largest Polish trading platforms Allegro, Ceneo, eBay, OLX and We sell, blocking unnecessary, burdensome and potentially dangerous elements - advertising, sponsored articles, or scripts that track users' activities. They enable simpler and faster use of supported websites without limiting their functionality, while increasing the privacy of buyers and sellers.",
+    "descriptionSourceUrl": "https://alleblock.pl/",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": "blablabla@alleblock.pl",
+    "forumUrl": null,
+    "homeUrl": "https://alleblock.pl/",
+    "issuesUrl": "https://github.com/maciejtarmas/AlleBlock/issues",
+    "licenseId": 13,
+    "name": "AlleBlock",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://alleblock.pl/alleblock/alleblock.txt"
   }
 ]
