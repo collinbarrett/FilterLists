@@ -1,9 +1,9 @@
 SELECT
-FilterListId,
- ModifiedDateUtc - CreatedDateUtc,
+ FilterListId,
+ ModifiedDateUtc - CreatedDateUtc As ProcessingTimeSecs,
  CreatedDateUtc,
  ModifiedDateUtc,
  IsCompleted
 FROM snapshots
 WHERE ModifiedDateUtc - CreatedDateUtc > 30 OR IsCompleted = 0
-ORDER BY ModifiedDateUtc - CreatedDateUtc DESC
+ORDER BY ProcessingTimeSecs DESC
