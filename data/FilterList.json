@@ -5540,5 +5540,39 @@
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://hosts.herndl.org/hosts_blacklist.txt"
+  },
+  {
+    "id": 327,
+    "description": "Removes \"Download Our App\" banners from mobile website versions, for those who prefer their phone web browsers instead of apps.",
+    "descriptionSourceUrl": null,
+    "discontinuedDate": null,
+    "donateUrl": "https://www.paypal.me/DandeeSprout",
+    "emailAddress": "imreeil42@gmail.com",
+    "forumUrl": null,
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Staying On The Phone Browser",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser"
+  },
+  {
+    "id": 328,
+    "description": "This list includes uBO-specific versions of filters, and are meant to be accessed by uBlock Origin, Nano Adblocker and Adguard whenever they load the main Norwegian list.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExtensionsForUBO%26Nano.txt",
+    "discontinuedDate": null,
+    "donateUrl": "https://www.paypal.me/DandeeSprout",
+    "emailAddress": "imreeil42@gmail.com",
+    "forumUrl": null,
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Norwegian Extensions For UBO & Nano",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExtensionsForUBO%26Nano.txt"
   }
 ]
