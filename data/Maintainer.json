@@ -208,5 +208,26 @@
     "homeUrl": "https://github.com/arcetera",
     "name": "arcetera",
     "twitterHandle": null
+  },
+  {
+    "id": 32,
+    "emailAddress": null,
+    "homeUrl": "https://github.com/MajkiIT",
+    "name": "Maciej M.",
+    "twitterHandle": null
+  },
+  {
+    "id": 33,
+    "emailAddress": null,
+    "homeUrl": "https://github.com/azet12/",
+    "name": "azet12",
+    "twitterHandle": null
+  },
+  {
+    "id": 34,
+    "emailAddress": "PolishJarvis@gmail.com",
+    "homeUrl": "https://github.com/PolishFiltersTeam/",
+    "name": "Polish Filters Team",
+    "twitterHandle": null
   }
 ]
