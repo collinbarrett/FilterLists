@@ -5608,5 +5608,39 @@
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiConsentHosts/master/ThaiConsentHosts.txt"
+  },
+  {
+    "id": 331,
+    "description": "Block ads, tracking, popup sites and servers that most used on Thai sites.",
+    "descriptionSourceUrl": "https://kowith337.github.io/ThaiParanoidBlock/",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://kowith337.github.io/ThaiParanoidBlock/",
+    "issuesUrl": "https://github.com/kowith337/ThaiParanoidBlock/issues",
+    "licenseId": 13,
+    "name": "Thai Paranoid Block",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/master/ThaiParanoid.txt"
+  },
+  {
+    "id": 332,
+    "description": "Get rid of \"Overlay Popups\" that trying to integrate your social network account, force you to like and/or follow pages and other accounts.",
+    "descriptionSourceUrl": "https://github.com/kowith337/ThaiAntiForceLike/blob/master/README.md",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/kowith337/ThaiAntiForceLike",
+    "issuesUrl": "https://github.com/kowith337/ThaiAntiForceLike/issues",
+    "licenseId": 5,
+    "name": "ThaiAntiForceLike",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiAntiForceLike/master/AntiForceLike.txt"
   }
 ]
