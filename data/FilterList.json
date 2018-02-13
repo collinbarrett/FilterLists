@@ -5489,5 +5489,22 @@
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/whitelist/master/optional-list.txt"
+  },
+  {
+    "id": 324,
+    "description": "A minimal adblocker for iOS.",
+    "descriptionSourceUrl": "https://github.com/arcetera/Minimal-Hosts-Blocker",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/arcetera/Minimal-Hosts-Blocker",
+    "issuesUrl": "https://github.com/arcetera/Minimal-Hosts-Blocker/issues",
+    "licenseId": 5,
+    "name": "Minimal Hosts Blocker",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/arcetera/Minimal-Hosts-Blocker/master/etc/MinimalHostsBlocker/minimalhosts"
   }
 ]
