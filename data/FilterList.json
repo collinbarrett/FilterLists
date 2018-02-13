@@ -5353,5 +5353,22 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://alleblock.pl/alleblock/alleblock.txt"
+  },
+  {
+    "id": 316,
+    "description": "Ad servers list to block ads on Turkish websites.",
+    "descriptionSourceUrl": "https://github.com/bkrucarci/turk-adlist",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": "",
+    "forumUrl": null,
+    "homeUrl": "https://github.com/bkrucarci/turk-adlist",
+    "issuesUrl": "https://github.com/bkrucarci/turk-adlist/issues",
+    "licenseId": 12,
+    "name": "Turk-Adlist",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/bkrucarci/turk-adlist/master/hosts"
   }
 ]
