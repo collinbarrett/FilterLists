@@ -89,5 +89,12 @@
     "name": "CC BY-NC 4.0",
     "permissiveAdaptation": true,
     "permissiveCommercial": false
+  },
+  {
+    "id": 14,
+    "descriptionUrl": "http://www.wtfpl.net/",
+    "name": "Do What The Fuck You Want To Public License (WTFPL)",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
   }
 ]
