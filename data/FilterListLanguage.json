@@ -82,5 +82,17 @@
   {
     "filterListId": 330,
     "languageId": 110
+  },
+  {
+    "filterListId": 331,
+    "languageId": 87
+  },
+  {
+    "filterListId": 331,
+    "languageId": 110
+  },
+  {
+    "filterListId": 332,
+    "languageId": 87
   }
 ]
