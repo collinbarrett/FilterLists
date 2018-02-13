@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "devDependencies": {
     "@types/history": "^4.6.2",
-    "@types/react": "^16.0.36",
-    "@types/react-dom": "^16.0.3",
-    "@types/react-hot-loader": "^3.0.5",
-    "@types/react-router": "^4.0.21",
-    "@types/react-router-dom": "^4.2.3",
+    "@types/react": "^16.0.37",
+    "@types/react-dom": "^16.0.4",
+    "@types/react-hot-loader": "^3.0.6",
+    "@types/react-router": "^4.0.22",
+    "@types/react-router-dom": "^4.2.4",
     "@types/webpack-env": "^1.13.5",
     "aspnet-webpack": "^2.0.3",
     "aspnet-webpack-react": "^3.0.0",
@@ -28,7 +28,7 @@
     "style-loader": "^0.20.1",
     "typescript": "^2.7.1",
     "url-loader": "^0.6.2",
-    "webpack": "^3.10.0",
+    "webpack": "^3.11.0",
     "webpack-hot-middleware": "^2.21.0"
   },
   "dependencies": {}
