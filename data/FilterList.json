@@ -5523,5 +5523,22 @@
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://github.com/bjornstar/hosts/blob/master/hosts"
+  },
+  {
+    "id": 326,
+    "description": "Hostfiles for adblocking / privacy reasons.",
+    "descriptionSourceUrl": "https://github.com/monojp/hosts_merge/blob/master/README.md",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/monojp/hosts_merge",
+    "issuesUrl": "https://github.com/monojp/hosts_merge/issues",
+    "licenseId": 5,
+    "name": "Monojp's Hosts",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 2,
+    "viewUrl": "https://hosts.herndl.org/hosts_blacklist.txt"
   }
 ]
