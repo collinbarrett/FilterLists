@@ -5591,5 +5591,22 @@
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/vokins/yhosts/master/hosts.txt"
+  },
+  {
+    "id": 330,
+    "description": "To block domains that known as cost-per-action (AOC/CPA) services in Thailand, aim to prevent additional costs (post-paid plan) or balance deduction (pre-paid plan) that caused by some nasty ads that auto subscribe SMS/MMS/WAP services.",
+    "descriptionSourceUrl": "https://github.com/kowith337/ThaiConsentHosts/blob/master/readme.md",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/kowith337/ThaiConsentHosts",
+    "issuesUrl": "https://github.com/kowith337/ThaiConsentHosts/issues",
+    "licenseId": 13,
+    "name": "ThaiConsentHosts",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiConsentHosts/master/ThaiConsentHosts.txt"
   }
 ]
