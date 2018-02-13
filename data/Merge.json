@@ -182,5 +182,9 @@
   {
     "mergeFilterListId": 168,
     "upstreamFilterListId": 242
+  },
+  {
+    "mergeFilterListId": 309,
+    "upstreamFilterListId": 316
   }
 ]
