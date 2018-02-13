@@ -65,13 +65,9 @@ namespace FilterLists.Services.SnapshotService
                 snapshot.HttpStatusCode = ((int)((HttpWebResponse)we.Response).StatusCode).ToString();
                 return null;
             }
-            catch (HttpRequestException)
-            {
-                snapshot.HttpStatusCode = null;
-                return null;
-            }
             catch (Exception)
             {
+                //TODO: log exception (#148)
                 snapshot.HttpStatusCode = null;
                 return null;
             }
