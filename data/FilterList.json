@@ -5574,5 +5574,22 @@
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExtensionsForUBO%26Nano.txt"
+  },
+  {
+    "id": 329,
+    "description": "A hosts file for Chinese websites.",
+    "descriptionSourceUrl": null,
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/vokins/yhosts",
+    "issuesUrl": "https://github.com/vokins/yhosts/issues",
+    "licenseId": 1,
+    "name": "Yhosts",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/vokins/yhosts/master/hosts.txt"
   }
 ]
