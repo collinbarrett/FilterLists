@@ -5506,5 +5506,22 @@
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/arcetera/Minimal-Hosts-Blocker/master/etc/MinimalHostsBlocker/minimalhosts"
+  },
+  {
+    "id": 325,
+    "description": "Hosts file, filled with advertisers and other purveyors of worthless content.",
+    "descriptionSourceUrl": "https://github.com/bjornstar/hosts",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": "bjorn@bjornstar.com",
+    "forumUrl": null,
+    "homeUrl": "https://github.com/bjornstar/hosts",
+    "issuesUrl": "https://github.com/bjornstar/hosts/issues",
+    "licenseId": 11,
+    "name": "Bjornstar's Hosts",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 1,
+    "viewUrl": "https://github.com/bjornstar/hosts/blob/master/hosts"
   }
 ]

@@ -229,5 +229,12 @@
     "homeUrl": "https://github.com/PolishFiltersTeam/",
     "name": "Polish Filters Team",
     "twitterHandle": null
+  },
+  {
+    "id": 35,
+    "emailAddress": "bjorn@bjornstar.com",
+    "homeUrl": "https://bjornstar.com/",
+    "name": "Bjorn Stromberg",
+    "twitterHandle": null
   }
 ]
