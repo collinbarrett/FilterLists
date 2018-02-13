@@ -34,5 +34,33 @@
   {
     "filterListId": 316,
     "languageId": 48
+  },
+  {
+    "filterListId": 30,
+    "languageId": 11
+  },
+  {
+    "filterListId": 216,
+    "languageId": 11
+  },
+  {
+    "filterListId": 224,
+    "languageId": 11
+  },
+  {
+    "filterListId": 84,
+    "languageId": 11
+  },
+  {
+    "filterListId": 223,
+    "languageId": 11
+  },
+  {
+    "filterListId": 60,
+    "languageId": 11
+  },
+  {
+    "filterListId": 61,
+    "languageId": 11
   }
 ]
