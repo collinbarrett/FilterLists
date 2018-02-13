@@ -5642,5 +5642,22 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiAntiForceLike/master/AntiForceLike.txt"
+  },
+  {
+    "id": 333,
+    "description": "Well-know illegal streaming sites (mostly in Thailand) that steal the non-profit works from various fansubs, also publish retail products/contents on their site (even it's unauthorized by local license), they earn profits and revenue from ad services. (e.g. insert banner, popunder, miner, many tracking and monetisation services, ...)",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/master/ThaiParanoid.txt",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/pureexe/LeeCh-List",
+    "issuesUrl": "https://github.com/pureexe/LeeCh-List/issues",
+    "licenseId": 2,
+    "name": "LeeCh List",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/pureexe/LeeCh-List/master/anime.txt"
   }
 ]
