@@ -5744,5 +5744,39 @@
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://sites.google.com/site/cosmonoteshosts/hosts_Ultimate.txt"
+  },
+  {
+    "id": 339,
+    "description": "Chinese hosts lists blocking sites like Gamil, Instagram, Wikipedia, Yahoo, Telegram(WEB), Dropbox, Flipboard, Mage, Line, Pinterest, W3schools, Ingress, Twitch, SoundCloud, Xboxlive, WordPress, Tapatalk, Kobo, Vimeo, Nytimes, Issuu, Tor, DuckDuckGo, Imgur, Pcbeta...",
+    "descriptionSourceUrl": null,
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/Lerist/Go-Hosts",
+    "issuesUrl": "https://github.com/Lerist/Go-Hosts/issues",
+    "licenseId": 2,
+    "name": "Go Hosts AD",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/Lerist/Go-Hosts/master/hosts-ad"
+  },
+  {
+    "id": 340,
+    "description": "Chinese hosts lists blocking sites like Google, Google Play, YouTube, Twitter, Facebook, Tumblr, Pixiv",
+    "descriptionSourceUrl": null,
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/Lerist/Go-Hosts",
+    "issuesUrl": "https://github.com/Lerist/Go-Hosts/issues",
+    "licenseId": 2,
+    "name": "Go Hosts",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/Lerist/Go-Hosts/master/hosts"
   }
 ]
