@@ -5662,7 +5662,7 @@
   },
   {
     "id": 334,
-    "description": "Hosts file to avoid advertisement display on website. ",
+    "description": "Hosts file to avoid advertisement display on website.",
     "descriptionSourceUrl": "https://warui.intaa.net/adhosts/",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -5676,5 +5676,22 @@
     "submissionUrl": "https://warui.intaa.net/adhosts/#fh5co-blog-section",
     "syntaxId": 1,
     "viewUrl": "https://warui.intaa.net/adhosts/hosts.txt"
+  },
+  {
+    "id": 335,
+    "description": "Hosts for Adaway. Block mainly on advertisements for mobile.",
+    "descriptionSourceUrl": "https://github.com/multiverse2011/adawaylist-jp/blob/master/README.md",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/multiverse2011/adawaylist-jp",
+    "issuesUrl": "https://github.com/multiverse2011/adawaylist-jp/issues",
+    "licenseId": 5,
+    "name": "Adawaylist JP",
+    "policyUrl": null,
+    "submissionUrl": null,
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/multiverse2011/adawaylist-jp/master/hosts"
   }
 ]
