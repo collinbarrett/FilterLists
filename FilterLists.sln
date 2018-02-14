@@ -20,6 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{8C3C7C63-F
 		data\License.json = data\License.json
 		data\Maintainer.json = data\Maintainer.json
 		data\Merge.json = data\Merge.json
+		data\README.md = data\README.md
 		data\Software.json = data\Software.json
 		data\SoftwareSyntax.json = data\SoftwareSyntax.json
 		data\Syntax.json = data\Syntax.json
