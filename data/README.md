@@ -1,4 +1,3 @@
-See here for data model documentation:
-https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar
+## Adding or Updating Lists
 
-Please contribute!
+To submit a new list or update data about an existing list, please submit a pull request to this directory in conjunction with the data model described [here](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar). Alternatively, you can [open a new issue](https://github.com/collinbarrett/FilterLists/issues/new) providing information for all of the fields described in the [data model](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar).
