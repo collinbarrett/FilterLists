@@ -4,9 +4,7 @@
 [![Travis](https://img.shields.io/travis/collinbarrett/FilterLists.svg?label=travis)](https://travis-ci.org/collinbarrett/FilterLists)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/collinbarrett/FilterLists/blob/master/LICENSE)
 
-[filterlists.com](https://filterlists.com)
-
-FilterLists is the independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances. For more information on its purpose and function, check out [About](https://github.com/collinbarrett/FilterLists/blob/master/About.md).
+FilterLists is the independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances. [Learn More](https://github.com/collinbarrett/FilterLists/blob/master/About.md).
 
 ## Links
 | Site                                                | API                                               |
