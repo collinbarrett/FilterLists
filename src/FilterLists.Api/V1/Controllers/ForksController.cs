@@ -18,7 +18,9 @@ namespace FilterLists.Api.V1.Controllers
         [HttpGet]
         public async Task<IActionResult> Seed()
         {
-            return Json(await seedService.GetAllAsync<Fork, ForkSeedDto>());
+            return Json(await seedService.GetAllAsync<Fork, ForkSeedDto>(
+                typeof(Fork).GetProperty("UpstreamFilterListId"),
+                typeof(Fork).GetProperty("ForkFilterListId")));
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
@@ -17,7 +19,31 @@ namespace FilterLists.Services.SeedService
 
         public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>() where TEntity : class
         {
-            return await filterListsDbContext.Set<TEntity>().AsNoTracking().ProjectTo<TSeedDto>().ToArrayAsync();
+            return await filterListsDbContext.Set<TEntity>()
+                                             .AsNoTracking()
+                                             .ProjectTo<TSeedDto>()
+                                             .ToArrayAsync();
+        }
+
+        public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>(PropertyInfo primarySort)
+            where TEntity : class
+        {
+            return await filterListsDbContext.Set<TEntity>()
+                                             .OrderBy(x => primarySort.GetValue(x, null))
+                                             .AsNoTracking()
+                                             .ProjectTo<TSeedDto>()
+                                             .ToArrayAsync();
+        }
+
+        public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>(PropertyInfo primarySort,
+            PropertyInfo secondarySort) where TEntity : class
+        {
+            return await filterListsDbContext.Set<TEntity>()
+                                             .OrderBy(x => primarySort.GetValue(x, null))
+                                             .ThenBy(x => secondarySort.GetValue(x, null))
+                                             .AsNoTracking()
+                                             .ProjectTo<TSeedDto>()
+                                             .ToArrayAsync();
         }
     }
 }
