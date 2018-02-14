@@ -264,5 +264,12 @@
     "homeUrl": "https://www.pureapp.in.th/",
     "name": "Pakkapon Phongthawee",
     "twitterHandle": null
+  },
+  {
+    "id": 40,
+    "emailAddress": null,
+    "homeUrl": "https://warui.intaa.net/",
+    "name": "Warui",
+    "twitterHandle": "gatolabo"
   }
 ]

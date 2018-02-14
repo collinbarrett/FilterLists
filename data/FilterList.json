@@ -5659,5 +5659,22 @@
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/pureexe/LeeCh-List/master/anime.txt"
+  },
+  {
+    "id": 334,
+    "description": "Hosts file to avoid advertisement display on website. ",
+    "descriptionSourceUrl": "https://warui.intaa.net/adhosts/",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://warui.intaa.net/adhosts/",
+    "issuesUrl": null,
+    "licenseId": 5,
+    "name": "Warui Hosts",
+    "policyUrl": null,
+    "submissionUrl": "https://warui.intaa.net/adhosts/#fh5co-blog-section",
+    "syntaxId": 1,
+    "viewUrl": "https://warui.intaa.net/adhosts/hosts.txt"
   }
 ]
