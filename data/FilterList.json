@@ -1448,7 +1448,7 @@
     "id": 86,
     "description": "Block sites with skimming scripts.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/byaka/ublock-antiskimming-list/master/build/data.txt",
-    "discontinuedDate": null,
+    "discontinuedDate": "2017-11-28T12:00:00",
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
