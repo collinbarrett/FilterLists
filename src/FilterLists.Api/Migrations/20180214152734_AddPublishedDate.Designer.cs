@@ -5,13 +5,15 @@ using FilterLists.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    internal class FilterListsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180214152734_AddPublishedDate")]
+    partial class AddPublishedDate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -35,9 +37,7 @@ namespace FilterLists.Api.Migrations
                  .HasColumnType("TEXT");
 
                 b.Property<DateTime?>("DiscontinuedDate")
-                 .ValueGeneratedOnAdd()
-                 .HasColumnType("DATE")
-                 .HasDefaultValueSql("NULL");
+                 .HasColumnType("DATE");
 
                 b.Property<string>("DonateUrl")
                  .HasColumnType("TEXT");
@@ -73,9 +73,7 @@ namespace FilterLists.Api.Migrations
                  .HasColumnType("TEXT");
 
                 b.Property<DateTime?>("PublishedDate")
-                 .ValueGeneratedOnAdd()
-                 .HasColumnType("DATE")
-                 .HasDefaultValueSql("NULL");
+                 .HasColumnType("DATE");
 
                 b.Property<string>("SubmissionUrl")
                  .HasColumnType("TEXT");

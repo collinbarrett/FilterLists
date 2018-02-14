@@ -16,6 +16,7 @@ namespace FilterLists.Services.SeedService.Models
         public int? LicenseId { get; set; }
         public string Name { get; set; }
         public string PolicyUrl { get; set; }
+        public DateTime? PublishedDate { get; set; }
         public string SubmissionUrl { get; set; }
         public int? SyntaxId { get; set; }
         public string ViewUrl { get; set; }

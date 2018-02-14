@@ -50,9 +50,7 @@ namespace FilterLists.Data.Seed.Extensions
                                  !new List<string>
                                      {
                                          "CreatedDateUtc",
-                                         "ModifiedDateUtc",
-                                         "ScrapedDateUtc",
-                                         "UpdatedDateUtc"
+                                         "ModifiedDateUtc"
                                      }
                                      .Contains(x.Name))
                              .ToList();
