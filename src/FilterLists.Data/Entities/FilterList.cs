@@ -24,6 +24,7 @@ namespace FilterLists.Data.Entities
         public ICollection<Merge> UpstreamMergeFilterLists { get; set; }
         public string Name { get; set; }
         public string PolicyUrl { get; set; }
+        public DateTime? PublishedDate { get; set; }
         public ICollection<Snapshot> Snapshots { get; set; }
         public string SubmissionUrl { get; set; }
         public int? SyntaxId { get; set; }

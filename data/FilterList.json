@@ -12,6 +12,7 @@
     "licenseId": 1,
     "name": "280 Blocker",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLScNeZhFrFZt9GhIVGdThGz7oyepcNRKuOi5PJDnsC-awxTeOQ/viewform",
     "syntaxId": 3,
     "viewUrl": "https://280blocker.net/files/280blocker_adblock.txt"
@@ -29,6 +30,7 @@
     "licenseId": 2,
     "name": "Mute",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://mute.bradconte.com/mute.txt"
@@ -46,6 +48,7 @@
     "licenseId": 3,
     "name": "MoaAB: Mother of All AD-BLOCKING",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://adblock.mahakala.is/"
@@ -63,6 +66,7 @@
     "licenseId": 2,
     "name": "Hosts Blocking",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/michaeltrimm/hosts-blocking/master/_hosts.txt"
@@ -80,6 +84,7 @@
     "licenseId": 4,
     "name": "Message \"Seen\" Remover for Facebook",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/message_seen_remover_for_facebook.txt"
@@ -97,6 +102,7 @@
     "licenseId": 5,
     "name": "Private Adblock Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/mayve/private-adblock-filters/master/Adblock_List.txt"
@@ -105,7 +111,7 @@
     "id": 7,
     "description": "The Malware URLs in the 'gray area.' To be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves. The 'gray area' is an area where many malware URLs exists, but there is also a big number of false positives as the gray area is the one where only 2 or 3 pieces of evidence were discovered. The 'gray area' should not be used for blocking domains or URLs, it is published only with the aim of helping malware researchers.",
     "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
-    "discontinuedDate": "2015-07-30T11:52:48",
+    "discontinuedDate": "2015-07-30T00:00:00",
     "donateUrl": null,
     "emailAddress": "info@joxeankoret.com",
     "forumUrl": null,
@@ -114,6 +120,7 @@
     "licenseId": 2,
     "name": "Malware URLs Gray Area",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "http://malwareurls.joxeankoret.com/grayarea.txt"
@@ -122,7 +129,7 @@
     "id": 8,
     "description": "The domains of Malware URLs to be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves.",
     "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
-    "discontinuedDate": "2015-07-30T11:52:48",
+    "discontinuedDate": "2015-07-30T00:00:00",
     "donateUrl": null,
     "emailAddress": "info@joxeankoret.com",
     "forumUrl": null,
@@ -131,6 +138,7 @@
     "licenseId": 2,
     "name": "Malware URLs Domains",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "http://malwareurls.joxeankoret.com/domains.txt"
@@ -139,7 +147,7 @@
     "id": 9,
     "description": "A full set of Malware URLs to be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves.",
     "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
-    "discontinuedDate": "2015-07-30T11:52:48",
+    "discontinuedDate": "2015-07-30T00:00:00",
     "donateUrl": null,
     "emailAddress": "info@joxeankoret.com",
     "forumUrl": null,
@@ -148,6 +156,7 @@
     "licenseId": 2,
     "name": "Malware URLs",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "http://malwareurls.joxeankoret.com/normal.txt"
@@ -165,6 +174,7 @@
     "licenseId": 7,
     "name": "Malware Domain Hosts List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": "https://www.malwaredomainlist.com/contact.php",
     "syntaxId": 1,
     "viewUrl": "https://www.malwaredomainlist.com/hostslist/hosts.txt"
@@ -182,6 +192,7 @@
     "licenseId": 6,
     "name": "Liste FR + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/liste_fr+easylist.txt"
@@ -199,6 +210,7 @@
     "licenseId": 6,
     "name": "Liste FR",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/liste_fr.txt"
@@ -216,6 +228,7 @@
     "licenseId": 6,
     "name": "Liste AR + Liste FR + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/liste_ar+liste_fr+easylist.txt"
@@ -233,6 +246,7 @@
     "licenseId": 6,
     "name": "Liste AR",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/Liste_AR.txt"
@@ -250,6 +264,7 @@
     "licenseId": 8,
     "name": "List-KR Unbreak",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": "https://list-kr.github.io/form.html",
     "syntaxId": 7,
     "viewUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/unbreak.txt"
@@ -267,6 +282,7 @@
     "licenseId": 8,
     "name": "List-KR",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": "https://list-kr.github.io/form.html",
     "syntaxId": 6,
     "viewUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/filter.txt"
@@ -284,6 +300,7 @@
     "licenseId": 9,
     "name": "MVPS HOSTS",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "http://winhelp2002.mvps.org/hosts.txt"
@@ -301,6 +318,7 @@
     "licenseId": 2,
     "name": "Linked Insanity Annoyance Rules",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt"
@@ -318,6 +336,7 @@
     "licenseId": 2,
     "name": "NoCoin",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
@@ -335,6 +354,7 @@
     "licenseId": 10,
     "name": "Dandelion Sprouts Norwegian Filters for More Clean Web Pages",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://github.com/DandelionSprout/adfilt/raw/master/ExperimentalNorwegianList.txt"
@@ -352,6 +372,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker IP Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 9,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_IPBL.txt"
@@ -369,6 +390,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker Domain Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt"
@@ -386,6 +408,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker CryptoWall Ransomware Payment Sites IP Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 9,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_PS_IPBL.txt"
@@ -403,6 +426,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker CryptoWall Ransomware Payment Sites Domain Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_PS_DOMBL.txt"
@@ -420,6 +444,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker CryptoWall Ransomware C2 URL Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 8,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_C2_URLBL.txt"
@@ -437,6 +462,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker CryptoWall Ransomware C2 Domain Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_C2_DOMBL.txt"
@@ -454,6 +480,7 @@
     "licenseId": 11,
     "name": "Privacy Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/metaphoricgiraffe/tracking-filters/master/trackingfilters.txt"
@@ -471,6 +498,7 @@
     "licenseId": 5,
     "name": "Prebake Quiet",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/quiet.txt"
@@ -488,6 +516,7 @@
     "licenseId": 5,
     "name": "Prebake Obtrusive",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/obtrusive.txt"
@@ -505,6 +534,7 @@
     "licenseId": 9,
     "name": "Polish Annoyance Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt"
@@ -522,6 +552,7 @@
     "licenseId": 5,
     "name": "PLgeneral",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://www.niecko.pl/adblock/adblock.txt"
@@ -539,6 +570,7 @@
     "licenseId": 5,
     "name": "Peter Lowe's List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext"
@@ -556,6 +588,7 @@
     "licenseId": 5,
     "name": "Overlay Blocker",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/LordBadmintonofYorkshire/Overlay-Blocker/master/blocklist.txt"
@@ -573,6 +606,7 @@
     "licenseId": 5,
     "name": "OpenPhish Phishing Intelligence Community Feed",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://openphish.com/feed.txt"
@@ -590,6 +624,7 @@
     "licenseId": 5,
     "name": "NoTrack Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt"
@@ -607,6 +642,7 @@
     "licenseId": 5,
     "name": "Nopelist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/genediazjr/nopelist/master/nopelist.txt"
@@ -624,6 +660,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker Locky Ransomware C2 Domain Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_C2_DOMBL.txt"
@@ -641,6 +678,7 @@
     "licenseId": 5,
     "name": "Lead Generator",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/Rpsl/adblock-leadgenerator-list/master/list/list.txt"
@@ -658,6 +696,7 @@
     "licenseId": 5,
     "name": "Latvian List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://notabug.org/latvian-list/adblock-latvian/raw/master/lists/latvian-list.txt"
@@ -675,6 +714,7 @@
     "licenseId": 5,
     "name": "hpHosts MMT",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://hosts-file.net/mmt.txt"
@@ -692,6 +732,7 @@
     "licenseId": 5,
     "name": "hpHosts HJK",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://hosts-file.net/hjk.txt"
@@ -709,6 +750,7 @@
     "licenseId": 5,
     "name": "hpHosts HFS",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://hosts-file.net/hfs.txt"
@@ -726,6 +768,7 @@
     "licenseId": 5,
     "name": "hpHosts GRM",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://hosts-file.net/grm.txt"
@@ -743,6 +786,7 @@
     "licenseId": 5,
     "name": "hpHosts FSA",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://hosts-file.net/fsa.txt"
@@ -760,6 +804,7 @@
     "licenseId": 5,
     "name": "hpHosts EXP",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://hosts-file.net/exp.txt"
@@ -777,6 +822,7 @@
     "licenseId": 5,
     "name": "hpHosts EMD",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://hosts-file.net/emd.txt"
@@ -794,6 +840,7 @@
     "licenseId": 5,
     "name": "hpHosts ATS",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://hosts-file.net/ad_servers.txt"
@@ -811,6 +858,7 @@
     "licenseId": 5,
     "name": "hpHosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://www.hosts-file.net/download/hosts.txt"
@@ -828,6 +876,7 @@
     "licenseId": 5,
     "name": "Hosts2ch",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://sites.google.com/site/hosts2ch/ja"
@@ -845,6 +894,7 @@
     "licenseId": 5,
     "name": "Hexxium Creations Threat List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt"
@@ -862,6 +912,7 @@
     "licenseId": 5,
     "name": "Greek AdBlock Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/kargig/greek-adblockplus-filter/master/void-gr-filters.txt"
@@ -879,6 +930,7 @@
     "licenseId": 5,
     "name": "GNU Blacklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://web.archive.org/web/20160425221243/http://gnuzilla.gnu.org/filters/blacklist.txt"
@@ -896,6 +948,7 @@
     "licenseId": 5,
     "name": "gmbk0's AdAway Hosts for Android",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://web.archive.org/web/20140719043102/https://gmbksfilters.googlecode.com/hg/hosts_adonly.txt"
@@ -913,6 +966,7 @@
     "licenseId": 5,
     "name": "G&J Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://web.archive.org/web/20160221135711/http://adblock.gjtech.net/?format=unix-hosts"
@@ -930,6 +984,7 @@
     "licenseId": 5,
     "name": "hpHosts Partial",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://hosts-file.net/hphosts-partial.txt"
@@ -947,6 +1002,7 @@
     "licenseId": 5,
     "name": "Latvian List + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/latvianlist+easylist.txt"
@@ -964,6 +1020,7 @@
     "licenseId": 5,
     "name": "hpHosts PHA",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://hosts-file.net/pha.txt"
@@ -981,6 +1038,7 @@
     "licenseId": 5,
     "name": "hpHosts PUP",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://hosts-file.net/pup.txt"
@@ -998,6 +1056,7 @@
     "licenseId": 5,
     "name": "Korean Adblock List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/gfmaster/adblock-korea-contrib/master/filter.txt"
@@ -1015,6 +1074,7 @@
     "licenseId": 8,
     "name": "KAD Hosts File",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt"
@@ -1032,6 +1092,7 @@
     "licenseId": 8,
     "name": "KAD - Scams",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt"
@@ -1049,6 +1110,7 @@
     "licenseId": 5,
     "name": "Japanese Site Adblock Filter ver 2",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://qme.mydns.jp/data/AdblockV2.txt"
@@ -1066,6 +1128,7 @@
     "licenseId": 5,
     "name": "Japanese Site Adblock Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://qme.mydns.jp/data/Adblock.txt"
@@ -1083,6 +1146,7 @@
     "licenseId": 5,
     "name": "Jansal's Hosts Light",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hostslt"
@@ -1100,6 +1164,7 @@
     "licenseId": 5,
     "name": "Jansal's Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hosts"
@@ -1117,6 +1182,7 @@
     "licenseId": 5,
     "name": "JAB Creations' Adblock Plus Filter Subscription",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://www.jabcreations.com/downloads/adblock-filters.php"
@@ -1134,6 +1200,7 @@
     "licenseId": 5,
     "name": "iploggerfilter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/piperun/iploggerfilter/master/filterlist"
@@ -1151,6 +1218,7 @@
     "licenseId": 5,
     "name": "Ilyakatz's Additional Filters for Adblock",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/ilyakatz/adblock_filters/master/inpage_popups.txt"
@@ -1168,6 +1236,7 @@
     "licenseId": 5,
     "name": "Icelandic ABP List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://adblock.gardar.net/is.abp.txt"
@@ -1185,6 +1254,7 @@
     "licenseId": 5,
     "name": "I'm OK with Cookies",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/Rudloff/adblock-imokwithcookies/master/filters.txt"
@@ -1202,6 +1272,7 @@
     "licenseId": 5,
     "name": "I Don't Care about Cookies",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://www.kiboke-studio.hr/i-dont-care-about-cookies/abp/"
@@ -1219,6 +1290,7 @@
     "licenseId": 5,
     "name": "hufilter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt"
@@ -1236,6 +1308,7 @@
     "licenseId": 5,
     "name": "hpHosts WRZ",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://hosts-file.net/wrz.txt"
@@ -1253,6 +1326,7 @@
     "licenseId": 5,
     "name": "hpHosts PSH",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://hosts-file.net/psh.txt"
@@ -1270,6 +1344,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker Locky Ransomware C2 IP Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 9,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_C2_IPBL.txt"
@@ -1287,6 +1362,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker Locky Ransomware Distribution Site URL Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 8,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_DS_URLBL.txt"
@@ -1304,6 +1380,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker Locky Ransomware Payment Sites Domain Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_PS_DOMBL.txt"
@@ -1321,6 +1398,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Gambling + Porn",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts"
@@ -1338,6 +1416,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Gambling",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts"
@@ -1355,6 +1434,7 @@
     "licenseId": 5,
     "name": "Unified Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
@@ -1372,6 +1452,7 @@
     "licenseId": 5,
     "name": "UncheckyAds",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts"
@@ -1389,6 +1470,7 @@
     "licenseId": 5,
     "name": "uBO-Personal-Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt"
@@ -1406,6 +1488,7 @@
     "licenseId": 5,
     "name": "Nano Defender",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/jspenguin2017/uBlockProtector/master/uBlockProtectorList.txt"
@@ -1423,6 +1506,7 @@
     "licenseId": 5,
     "name": "Official Polish Filters for AdBlock, uBlock Origin & AdGuard - supplement for uBlock",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt"
@@ -1440,6 +1524,7 @@
     "licenseId": 5,
     "name": "uBlock Filters Plus",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/IDKwhattoputhere/uBlock-Filters-Plus/master/uBlock-Filters-Plus.txt"
@@ -1448,7 +1533,7 @@
     "id": 86,
     "description": "Block sites with skimming scripts.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/byaka/ublock-antiskimming-list/master/build/data.txt",
-    "discontinuedDate": "2017-11-28T12:00:00",
+    "discontinuedDate": "2017-11-28T00:00:00",
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
@@ -1457,6 +1542,7 @@
     "licenseId": 5,
     "name": "uBlock Antiskimming List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/byaka/ublock-antiskimming-list/master/build/data.txt"
@@ -1474,6 +1560,7 @@
     "licenseId": 5,
     "name": "uAssets Unbreak",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt"
@@ -1491,6 +1578,7 @@
     "licenseId": 5,
     "name": "uAssets Privacy",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt"
@@ -1508,6 +1596,7 @@
     "licenseId": 5,
     "name": "uAssets Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt"
@@ -1525,6 +1614,7 @@
     "licenseId": 5,
     "name": "uAssets Experimental",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt"
@@ -1542,6 +1632,7 @@
     "licenseId": 5,
     "name": "uAssets Badware",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt"
@@ -1559,6 +1650,7 @@
     "licenseId": 6,
     "name": "Turk-adlist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/bkrucarci/turk-adlist/master/hosts"
@@ -1576,6 +1668,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Gambling + Porn + Social",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts"
@@ -1593,6 +1686,7 @@
     "licenseId": 5,
     "name": "Top Cash Back Adblock Whitelist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://www.topcashback.com/Misc/AdBlockWhiteList.aspx"
@@ -1610,6 +1704,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Gambling + Social",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts"
@@ -1627,6 +1722,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Porn + Social",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-social/hosts"
@@ -1644,6 +1740,7 @@
     "licenseId": 5,
     "name": "YouTube: Pure Video Experience",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt"
@@ -1661,6 +1758,7 @@
     "licenseId": 5,
     "name": "YouTube: Other Annoyances",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt"
@@ -1678,6 +1776,7 @@
     "licenseId": 5,
     "name": "YousList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/yous/YousList/master/youslist.txt"
@@ -1695,6 +1794,7 @@
     "licenseId": 5,
     "name": "Wiltteri Reborn",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt"
@@ -1712,6 +1812,7 @@
     "licenseId": 5,
     "name": "Wiltteri",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt"
@@ -1729,6 +1830,7 @@
     "licenseId": 5,
     "name": "Web Annoyances Ultralist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt"
@@ -1746,6 +1848,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Fakenews + Gambling + Porn + Social",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts"
@@ -1763,6 +1866,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Fakenews + Porn + Social",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn-social/hosts"
@@ -1780,6 +1884,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Fakenews + Gambling + Social",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts"
@@ -1797,6 +1902,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Fakenews + Gambling + Porn",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts"
@@ -1814,6 +1920,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Fakenews + Social",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts"
@@ -1831,6 +1938,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Fakenews + Porn",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn/hosts"
@@ -1848,6 +1956,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Fakenews + Gambling",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts"
@@ -1865,6 +1974,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Fakenews",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews/hosts"
@@ -1882,6 +1992,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Social",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts"
@@ -1899,6 +2010,7 @@
     "licenseId": 5,
     "name": "Unified Hosts + Porn",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts"
@@ -1916,6 +2028,7 @@
     "licenseId": 5,
     "name": "Tofu Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://tofukko.r.ribbon.to/Adblock_Plus_list.txt"
@@ -1933,6 +2046,7 @@
     "licenseId": 5,
     "name": "Thoughtconverge's Custom AdBlock Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/thoughtconverge/abf/master/abf.txt"
@@ -1950,6 +2064,7 @@
     "licenseId": 5,
     "name": "The Hosts File Project Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://hostsfile.mine.nu/hosts0.txt"
@@ -1967,6 +2082,7 @@
     "licenseId": 5,
     "name": "ROList2",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://www.zoso.ro/pages/rolist2.txt"
@@ -1984,6 +2100,7 @@
     "licenseId": 5,
     "name": "ROList + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/rolist+easylist.txt"
@@ -2001,6 +2118,7 @@
     "licenseId": 5,
     "name": "ROList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://www.zoso.ro/pages/rolist.txt"
@@ -2018,6 +2136,7 @@
     "licenseId": 5,
     "name": "ROad-Block",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://road.adblock.ro/lista.txt"
@@ -2035,6 +2154,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker URL Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 8,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_URLBL.txt"
@@ -2052,6 +2172,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TorrentLocker Ransomware Payment Sites IP Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 9,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TL_PS_IPBL.txt"
@@ -2069,6 +2190,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TorrentLocker Ransomware Payment Sites Domain Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TL_PS_DOMBL.txt"
@@ -2086,6 +2208,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TorrentLocker Ransomware C2 IP Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 9,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TL_C2_IPBL.txt"
@@ -2103,6 +2226,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TorrentLocker Ransomware C2 Domain Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TL_C2_DOMBL.txt"
@@ -2120,6 +2244,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TeslaCrypt Ransomware Payment Sites IP Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 9,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TC_PS_IPBL.txt"
@@ -2137,6 +2262,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TeslaCrypt Ransomware Payment Sites Domain Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TC_PS_DOMBL.txt"
@@ -2154,6 +2280,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TeslaCrypt Ransomware Distribution Site URL Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 8,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TC_DS_URLBL.txt"
@@ -2171,6 +2298,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TeslaCrypt Ransomware C2 URL Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 8,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TC_C2_URLBL.txt"
@@ -2188,6 +2316,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TeslaCrypt Ransomware C2 Domain Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TC_C2_DOMBL.txt"
@@ -2205,6 +2334,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker Locky Ransomware Payment Sites IP Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 9,
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_PS_IPBL.txt"
@@ -2222,6 +2352,7 @@
     "licenseId": 5,
     "name": "RU AdList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/advblock.txt"
@@ -2239,6 +2370,7 @@
     "licenseId": 5,
     "name": "RU AdList [Old]",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://denis-ovs.narod.ru/adblock.txt"
@@ -2256,6 +2388,7 @@
     "licenseId": 5,
     "name": "RU AdList + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/ruadlist+easylist.txt"
@@ -2273,6 +2406,7 @@
     "licenseId": 5,
     "name": "RU AdList: BitBlock",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/bitblock.txt"
@@ -2290,6 +2424,7 @@
     "licenseId": 5,
     "name": "The Hosts File Project Adblock Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://hostsfile.mine.nu/downloads/adblock.txt"
@@ -2307,6 +2442,7 @@
     "licenseId": 5,
     "name": "SVN: Slovenian List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/betterwebleon/slovenian-list/master/filters.txt"
@@ -2324,6 +2460,7 @@
     "licenseId": 5,
     "name": "Steven Black's Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts"
@@ -2341,6 +2478,7 @@
     "licenseId": 5,
     "name": "SpotifyAds",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/Spotify-Ad-free/hosts"
@@ -2358,6 +2496,7 @@
     "licenseId": 5,
     "name": "Spam404 Domain Blacklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/Dawsey21/Lists/master/main-blacklist.txt"
@@ -2375,6 +2514,7 @@
     "licenseId": 5,
     "name": "Spam404",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt"
@@ -2392,6 +2532,7 @@
     "licenseId": 5,
     "name": "Shopping Whitelist United Airlines",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://shopping.mileageplus.com/adBlockWhitelist.php"
@@ -2409,6 +2550,7 @@
     "licenseId": 5,
     "name": "G&J AdBlock",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://web.archive.org/web/20160221135808/http://adblock.gjtech.net/?format=adblock-plus"
@@ -2426,6 +2568,7 @@
     "licenseId": 5,
     "name": "Shopping Whitelist Southwest Airlines",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://rapidrewardsshopping.southwest.com/adBlockWhitelist.php"
@@ -2443,6 +2586,7 @@
     "licenseId": 5,
     "name": "Shopping Whitelist American Airlines",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://www.aadvantageeshopping.com/adBlockWhitelist.php"
@@ -2460,6 +2604,7 @@
     "licenseId": 5,
     "name": "Shopping Whitelist Alaska Airlines",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://www.mileageplanshopping.com/adBlockWhitelist.php"
@@ -2477,6 +2622,7 @@
     "licenseId": 5,
     "name": "Schuzak's Universal Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://web.archive.org/web/20121106002043/http://www.schuzak.jp/other/abp.conf"
@@ -2494,6 +2640,7 @@
     "licenseId": 5,
     "name": "Schack's Adblock Plus List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adblock.dk/block.csv"
@@ -2511,6 +2658,7 @@
     "licenseId": 5,
     "name": "Satterly's Adblock Plus Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://satterly.neocities.org/abp_filters.txt"
@@ -2528,6 +2676,7 @@
     "licenseId": 5,
     "name": "SA-Blacklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://www.sa-blacklist.stearns.org/sa-blacklist/sa-blacklist.current.domains"
@@ -2545,6 +2694,7 @@
     "licenseId": 5,
     "name": "RU AdList: Counters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/cntblock.txt"
@@ -2562,6 +2712,7 @@
     "licenseId": 5,
     "name": "Shopping Whitelist BarclayCard",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://www.barclaycardrewardsboost.com/adBlockWhitelist.php"
@@ -2579,6 +2730,7 @@
     "licenseId": 5,
     "name": "Firime (FED) EasyDownload List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://pastebin.com/raw/r9a5WrZa"
@@ -2596,6 +2748,7 @@
     "licenseId": 5,
     "name": "Finnish AntiSocial",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://adb.juvander.net/Finland_adb_antisocial.txt"
@@ -2613,6 +2766,7 @@
     "licenseId": 5,
     "name": "Filtros Nauscopicos Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/hosts"
@@ -2630,6 +2784,7 @@
     "licenseId": 5,
     "name": "Adguard Useful Ads Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=10"
@@ -2647,6 +2802,7 @@
     "licenseId": 5,
     "name": "Adguard Turkish Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=13"
@@ -2664,6 +2820,7 @@
     "licenseId": 5,
     "name": "Adguard Spyware Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=3"
@@ -2681,6 +2838,7 @@
     "licenseId": 5,
     "name": "Adguard Spanish/Portuguese Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=9"
@@ -2698,6 +2856,7 @@
     "licenseId": 5,
     "name": "Adguard Social Media Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=4"
@@ -2715,6 +2874,7 @@
     "licenseId": 5,
     "name": "Adguard Safari Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=12"
@@ -2732,6 +2892,7 @@
     "licenseId": 5,
     "name": "Adguard Russian Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=1"
@@ -2749,6 +2910,7 @@
     "licenseId": 5,
     "name": "Adguard Mobile Ads Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=11"
@@ -2766,6 +2928,7 @@
     "licenseId": 5,
     "name": "Adguard Japanese Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=7"
@@ -2783,6 +2946,7 @@
     "licenseId": 5,
     "name": "Adguard German Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=6"
@@ -2800,6 +2964,7 @@
     "licenseId": 5,
     "name": "Adguard Experimental Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=5"
@@ -2817,6 +2982,7 @@
     "licenseId": 5,
     "name": "Adguard English Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=2"
@@ -2834,6 +3000,7 @@
     "licenseId": 5,
     "name": "Adguard Dutch Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=8"
@@ -2851,6 +3018,7 @@
     "licenseId": 12,
     "name": "Adguard Simplified Domain Names Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://filters.adtidy.org/windows/filters/15.txt"
@@ -2868,6 +3036,7 @@
     "licenseId": 5,
     "name": "Adguard Annoyances Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=14"
@@ -2885,6 +3054,7 @@
     "licenseId": 5,
     "name": "Adware Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/adwarefilters.txt"
@@ -2902,6 +3072,7 @@
     "licenseId": 5,
     "name": "Additional Adblock Rules",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://dl.dropboxusercontent.com/s/1ybzw9lb7m1qiyl/AAs.txt"
@@ -2919,6 +3090,7 @@
     "licenseId": 5,
     "name": "AdZHosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://sourceforge.net/projects/adzhosts/files/HOSTS.txt/download"
@@ -2936,6 +3108,7 @@
     "licenseId": 5,
     "name": "Airelle's Anti-Miscellaneous Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hmis.7z"
@@ -2953,6 +3126,7 @@
     "licenseId": 5,
     "name": "Blockzilla",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/zpacman/Blockzilla/master/Blockzilla.txt"
@@ -2970,6 +3144,7 @@
     "licenseId": 5,
     "name": "Block the EU Cookie Shit List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/r4vi/block-the-eu-cookie-shit-list/master/filterlist.txt"
@@ -2987,6 +3162,7 @@
     "licenseId": 5,
     "name": "Better.fyi | Trackers (List)",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt"
@@ -3004,6 +3180,7 @@
     "licenseId": 2,
     "name": "BarbBlock",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://ssl.bblck.me/blacklists/hosts-file.txt"
@@ -3021,6 +3198,7 @@
     "licenseId": 5,
     "name": "Banki.ru Plus Adblock List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/rebelion76/bankiru_plus_adblock_list/master/bankiru_plus.txt"
@@ -3038,6 +3216,7 @@
     "licenseId": 5,
     "name": "BadHosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://www.hostsfile.org/Downloads/hosts.txt"
@@ -3055,6 +3234,7 @@
     "licenseId": 5,
     "name": "Bad JAV Sites",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://pastebin.com/raw/kDqbYwWr"
@@ -3072,6 +3252,7 @@
     "licenseId": 5,
     "name": "Ayucat Powerful List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://git.sourceforge.jp/view?p=ayucat-list/ayucat-list.git;a=blob_plain;f=ayucat-list.txt;hb=b254c74c132832a3ade7b9d42c2ef8d3dd59fdb9"
@@ -3089,6 +3270,7 @@
     "licenseId": 5,
     "name": "AntiPubWeb",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt"
@@ -3106,6 +3288,7 @@
     "licenseId": 5,
     "name": "Anti-PopAds",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt"
@@ -3123,6 +3306,7 @@
     "licenseId": 5,
     "name": "Anti-Facebook List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/fanboy-antifacebook.txt"
@@ -3140,6 +3324,7 @@
     "licenseId": 5,
     "name": "Airelle's Phishing Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hblc.7z"
@@ -3157,6 +3342,7 @@
     "licenseId": 5,
     "name": "Airelle's Malware Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hrsk.7z"
@@ -3174,6 +3360,7 @@
     "licenseId": 5,
     "name": "Airelle's Anti-Trackers Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://rlwpx.free.fr/WPFF/htrc.7z"
@@ -3191,6 +3378,7 @@
     "licenseId": 5,
     "name": "Airelle's Anti-Sex Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hsex.7z"
@@ -3208,6 +3396,7 @@
     "licenseId": 5,
     "name": "Airelle's Anti-Advertisements Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hpub.7z"
@@ -3225,6 +3414,7 @@
     "licenseId": 5,
     "name": "add.Spam",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts"
@@ -3242,6 +3432,7 @@
     "licenseId": 5,
     "name": "add.Risk",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts"
@@ -3259,6 +3450,7 @@
     "licenseId": 5,
     "name": "add.Dead",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Dead/hosts"
@@ -3276,6 +3468,7 @@
     "licenseId": 5,
     "name": "abuse.ch ZeuS Compromised URL Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=compromised"
@@ -3293,6 +3486,7 @@
     "licenseId": 5,
     "name": "abuse.ch Feodo IP Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://feodotracker.abuse.ch/blocklist/?download=ipblocklist"
@@ -3310,6 +3504,7 @@
     "licenseId": 5,
     "name": "abuse.ch Feodo Domain Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://feodotracker.abuse.ch/blocklist/?download=domainblocklist"
@@ -3327,6 +3522,7 @@
     "licenseId": 5,
     "name": "abuse.ch Feodo BadIP Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://feodotracker.abuse.ch/blocklist/?download=badips"
@@ -3344,6 +3540,7 @@
     "licenseId": 5,
     "name": "ABPindo + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/abpindo+easylist.txt"
@@ -3361,6 +3558,7 @@
     "licenseId": 5,
     "name": "ABPindo",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/heradhis/indonesianadblockrules/master/subscriptions/abpindo.txt"
@@ -3378,6 +3576,7 @@
     "licenseId": 5,
     "name": "X Files: NoFacebookAds",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/facebook.txt"
@@ -3395,6 +3594,7 @@
     "licenseId": 5,
     "name": "X Files: HWS Harmful WebSites",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/siteblock.txt"
@@ -3412,6 +3612,7 @@
     "licenseId": 5,
     "name": "ABP X Files",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/filtri.txt"
@@ -3429,6 +3630,7 @@
     "licenseId": 5,
     "name": "ABP Japanese Paranoid Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_paranoid.txt"
@@ -3446,6 +3648,7 @@
     "licenseId": 5,
     "name": "ABP Japanese Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf.txt"
@@ -3463,6 +3666,7 @@
     "licenseId": 5,
     "name": "ABP Japanese Element-hiding Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_element_hiding.txt"
@@ -3480,6 +3684,7 @@
     "licenseId": 5,
     "name": "ABP Japanese 3rd Party SNS Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_3rd_party_sns.txt"
@@ -3497,6 +3702,7 @@
     "licenseId": 5,
     "name": "ABPVN List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn.txt"
@@ -3514,6 +3720,7 @@
     "licenseId": 5,
     "name": "AakList (Anti-Adblock Killer)",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
@@ -3531,6 +3738,7 @@
     "licenseId": 5,
     "name": "abuse.ch ZeuS Domain Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist"
@@ -3548,6 +3756,7 @@
     "licenseId": 5,
     "name": "abuse.ch ZeuS Domain Blocklist \"BadDomains\"",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=baddomains"
@@ -3565,6 +3774,7 @@
     "licenseId": 5,
     "name": "abuse.ch ZeuS IP Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=ipblocklist"
@@ -3582,6 +3792,7 @@
     "licenseId": 5,
     "name": "abuse.ch ZeuS IP Blocklist \"BadIPs\"",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=badips"
@@ -3599,6 +3810,7 @@
     "licenseId": 5,
     "name": "add.2o7Net",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts"
@@ -3616,6 +3828,7 @@
     "licenseId": 5,
     "name": "Adblock YouTube Ads",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/kbinani/adblock-youtube-ads/master/signed.txt"
@@ -3633,6 +3846,7 @@
     "licenseId": 5,
     "name": "Adblock Warning Removal List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
@@ -3650,6 +3864,7 @@
     "licenseId": 5,
     "name": "Adblock Polska",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/adblockpolska/Adblock_PL_List/master/adblock_polska.txt"
@@ -3667,6 +3882,7 @@
     "licenseId": 13,
     "name": "Polish Social Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/adblock_social_filters/adblock_social_list.txt"
@@ -3684,6 +3900,7 @@
     "licenseId": 5,
     "name": "Adblock Persian List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://ideone.com/plain/K452p"
@@ -3701,6 +3918,7 @@
     "licenseId": 5,
     "name": "Adblock List for Finland",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://adb.juvander.net/Finland_adb.txt"
@@ -3718,6 +3936,7 @@
     "licenseId": 5,
     "name": "BLOGRAM Analysis Block Filter List for Japan",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://blogram.net/wp-content/uploads/easylist3.txt"
@@ -3735,6 +3954,7 @@
     "licenseId": 5,
     "name": "Adblock Korea",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://web.archive.org/web/20130615155938/http://adblock-korea.googlecode.com/git/adblock-korea.txt"
@@ -3752,6 +3972,7 @@
     "licenseId": 5,
     "name": "Adblock Filters by Gurud.ee",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://gurud.ee/ab.txt"
@@ -3769,6 +3990,7 @@
     "licenseId": 5,
     "name": "AdBlockFarsi",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/SlashArash/adblockfa/master/adblockfa.txt"
@@ -3786,6 +4008,7 @@
     "licenseId": 5,
     "name": "Official Polish Filters for AdBlock, uBlock Origin & AdGuard",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt"
@@ -3803,6 +4026,7 @@
     "licenseId": 9,
     "name": "Polish Cookies Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/cookies_filters/adblock_cookies.txt"
@@ -3820,6 +4044,7 @@
     "licenseId": 5,
     "name": "AdAway Blocking Hosts File for Japan",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://sites.google.com/site/logroid/files/hosts.txt"
@@ -3837,6 +4062,7 @@
     "licenseId": 5,
     "name": "AdAway",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://adaway.org/hosts.txt"
@@ -3854,6 +4080,7 @@
     "licenseId": 5,
     "name": "Acceptable Ads",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/exceptionrules.txt"
@@ -3871,6 +4098,7 @@
     "licenseId": 5,
     "name": "Adblock Iran",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/farrokhi/adblock-iran/master/filter.txt"
@@ -3888,6 +4116,7 @@
     "licenseId": 5,
     "name": "YouTube: Remove Comments",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt"
@@ -3905,6 +4134,7 @@
     "licenseId": 5,
     "name": "BLOGRAM Basic Filter List for Japan",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://blogram.net/wp-content/uploads/easylist2.txt"
@@ -3922,6 +4152,7 @@
     "licenseId": 5,
     "name": "BLOGRAM Element Hiding Filter List for Japan",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://blogram.net/wp-content/uploads/easylist1.txt"
@@ -3939,6 +4170,7 @@
     "licenseId": 5,
     "name": "Fake-News List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/ryanbr/fanboy-adblock/master/fake-news.txt"
@@ -3956,6 +4188,7 @@
     "licenseId": 5,
     "name": "Facebook Sidebar Blocker",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt"
@@ -3973,6 +4206,7 @@
     "licenseId": 5,
     "name": "Facebook Privacy List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt"
@@ -3990,6 +4224,7 @@
     "licenseId": 5,
     "name": "Facebook News Feed Annoyances Blocker",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt"
@@ -4007,6 +4242,7 @@
     "licenseId": 5,
     "name": "Facebook Annoyances Blocker",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt"
@@ -4024,6 +4260,7 @@
     "licenseId": 5,
     "name": "Eesti Custom Sites Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://adblock.ee/list.php"
@@ -4041,6 +4278,7 @@
     "licenseId": 5,
     "name": "Ebates Cash Back Shopping",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://www.ebates.com/whitelist/ebates-cash-back-shopping.txt"
@@ -4058,6 +4296,7 @@
     "licenseId": 5,
     "name": "EasyTest",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easytest.txt"
@@ -4075,6 +4314,7 @@
     "licenseId": 5,
     "name": "EasyPrivacy Without International Filters",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy_nointernational.txt"
@@ -4092,6 +4332,7 @@
     "licenseId": 5,
     "name": "EasyPrivacy + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy+easylist.txt"
@@ -4109,6 +4350,7 @@
     "licenseId": 5,
     "name": "EasyPrivacy",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist.to/easylist/easyprivacy.txt"
@@ -4126,6 +4368,7 @@
     "licenseId": 5,
     "name": "EasyList Without Rules for Adult Sites",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noadult.txt"
@@ -4143,6 +4386,7 @@
     "licenseId": 5,
     "name": "EasyList Without Element Hiding Rules",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noelemhide.txt"
@@ -4160,6 +4404,7 @@
     "licenseId": 5,
     "name": "EasyList Thailand",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/easylist-thailand/easylist-thailand/master/subscription/easylist-thailand.txt"
@@ -4177,6 +4422,7 @@
     "licenseId": 5,
     "name": "EasyList Spanish",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistspanish.txt"
@@ -4194,6 +4440,7 @@
     "licenseId": 5,
     "name": "Fanboy's Annoyance List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt"
@@ -4211,6 +4458,7 @@
     "licenseId": 5,
     "name": "EasyList Lithuania + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistlithuania+easylist.txt"
@@ -4228,6 +4476,7 @@
     "licenseId": 5,
     "name": "Fanboy's Anti-thirdparty Fonts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/fanboy-antifonts.txt"
@@ -4245,6 +4494,7 @@
     "licenseId": 5,
     "name": "Fanboy's Cookiemonster List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/fanboy-cookiemonster.txt"
@@ -4262,6 +4512,7 @@
     "licenseId": 5,
     "name": "Filtros Nauscopicos",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/filtros.txt"
@@ -4279,6 +4530,7 @@
     "licenseId": 5,
     "name": "Filtri DNS",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://filtri-dns.ga/filtri.txt"
@@ -4296,6 +4548,7 @@
     "licenseId": 5,
     "name": "Filters by hant0508",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/hant05080/uBlock-filters/master/filters.txt"
@@ -4313,6 +4566,7 @@
     "licenseId": 5,
     "name": "Fanboy's Vietnamese",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/fanboy-vietnam.txt"
@@ -4330,6 +4584,7 @@
     "licenseId": 5,
     "name": "Fanboy's Ultimate List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/r/fanboy-ultimate.txt"
@@ -4347,6 +4602,7 @@
     "licenseId": 5,
     "name": "Fanboy's Turkish",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/fanboy-turkish.txt"
@@ -4364,6 +4620,7 @@
     "licenseId": 5,
     "name": "Fanboy's Swedish",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/fanboy-swedish.txt"
@@ -4381,6 +4638,7 @@
     "licenseId": 5,
     "name": "Fanboy's Spanish/Portuguese",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/fanboy-espanol.txt"
@@ -4398,6 +4656,7 @@
     "licenseId": 5,
     "name": "Fanboy's Social Blocking List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-social.txt"
@@ -4415,6 +4674,7 @@
     "licenseId": 5,
     "name": "Fanboy's Polish",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/fanboy-polish.txt"
@@ -4432,6 +4692,7 @@
     "licenseId": 5,
     "name": "Fanboy's Korean",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/fanboy-korean.txt"
@@ -4449,6 +4710,7 @@
     "licenseId": 5,
     "name": "Fanboy's Japanese",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/fanboy-japanese.txt"
@@ -4466,6 +4728,7 @@
     "licenseId": 5,
     "name": "Fanboy's IsraelList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/israelilist/IsraelList.txt"
@@ -4483,6 +4746,7 @@
     "licenseId": 5,
     "name": "Fanboy's Indian",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/fanboy-indian.txt"
@@ -4500,6 +4764,7 @@
     "licenseId": 5,
     "name": "Fanboy's Enhanced Tracking List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/enhancedstats.txt"
@@ -4517,6 +4782,7 @@
     "licenseId": 5,
     "name": "Fanboy's Complete List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://fanboy.co.nz/r/fanboy-complete.txt"
@@ -4534,6 +4800,7 @@
     "licenseId": 5,
     "name": "EasyList Lithuania",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://margevicius.lt/easylistlithuania.txt"
@@ -4551,6 +4818,7 @@
     "licenseId": 5,
     "name": "EasyList Lite China",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt"
@@ -4568,6 +4836,7 @@
     "licenseId": 5,
     "name": "EasyList Italy + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly+easylist.txt"
@@ -4585,6 +4854,7 @@
     "licenseId": 5,
     "name": "DNS-BH Bulk Registrars",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://mirror1.malwaredomains.com/files/bulk_registrars.txt"
@@ -4602,6 +4872,7 @@
     "licenseId": 5,
     "name": "DNS-BH Adblock Plus Malware Domains Full",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt"
@@ -4619,6 +4890,7 @@
     "licenseId": 5,
     "name": "Disconnect Tracking Filter List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt"
@@ -4636,6 +4908,7 @@
     "licenseId": 5,
     "name": "Disconnect Malware Filter List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt"
@@ -4653,6 +4926,7 @@
     "licenseId": 5,
     "name": "Disconnect Malvertising Filter List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt"
@@ -4670,6 +4944,7 @@
     "licenseId": 5,
     "name": "Disconnect Advertising Filter List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt"
@@ -4687,6 +4962,7 @@
     "licenseId": 5,
     "name": "Dan Pollock's Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://someonewhocares.org/hosts/zero/hosts"
@@ -4704,6 +4980,7 @@
     "licenseId": 5,
     "name": "Czech Filters for AdBlock",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://adblock.dajbych.net/adblock.txt"
@@ -4721,6 +4998,7 @@
     "licenseId": 5,
     "name": "Corset",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://web.archive.org/web/20110212174029/http://abp-corset.googlecode.com/hg/corset.txt"
@@ -4738,6 +5016,7 @@
     "licenseId": 5,
     "name": "Cookie Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://www.eff.org/files/cookieblocklist.txt"
@@ -4755,6 +5034,7 @@
     "licenseId": 5,
     "name": "Clickbait Blocklist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/cpeterso/clickbait-blocklist/master/clickbait-blocklist.txt"
@@ -4772,6 +5052,7 @@
     "licenseId": 5,
     "name": "CJX's Annoyance List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
@@ -4789,6 +5070,7 @@
     "licenseId": 5,
     "name": "CAMELEON Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://sysctl.org/cameleon/hosts"
@@ -4806,6 +5088,7 @@
     "licenseId": 5,
     "name": "Bulgarian List + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/bulgarian_list+easylist.txt"
@@ -4823,6 +5106,7 @@
     "licenseId": 5,
     "name": "Bulgarian List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://stanev.org/abp/adblock_bg.txt"
@@ -4840,6 +5124,7 @@
     "licenseId": 5,
     "name": "DNS-BH Dynamic DNS",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://mirror1.malwaredomains.com/files/dynamic_dns.txt"
@@ -4857,6 +5142,7 @@
     "licenseId": 5,
     "name": "DNS-BH Free Web Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://mirror1.malwaredomains.com/files/freewebhosts.txt"
@@ -4874,6 +5160,7 @@
     "licenseId": 5,
     "name": "DNS-BH Malware Domains",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://mirror1.malwaredomains.com/files/justdomains"
@@ -4891,6 +5178,7 @@
     "licenseId": 5,
     "name": "DNS-BH Malware Domains Immortal",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://mirror1.malwaredomains.com/files/immortal_domains.txt"
@@ -4908,6 +5196,7 @@
     "licenseId": 5,
     "name": "EasyList Italy",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly.txt"
@@ -4925,6 +5214,7 @@
     "licenseId": 5,
     "name": "EasyList Hebrew + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/israellist+easylist.txt"
@@ -4942,6 +5232,7 @@
     "licenseId": 5,
     "name": "EasyList Hebrew",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt"
@@ -4959,6 +5250,7 @@
     "licenseId": 5,
     "name": "EasyList Germany + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany+easylist.txt"
@@ -4976,6 +5268,7 @@
     "licenseId": 5,
     "name": "EasyList Germany",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany.txt"
@@ -4993,6 +5286,7 @@
     "licenseId": 5,
     "name": "EasyList Dutch + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch+easylist.txt"
@@ -5010,6 +5304,7 @@
     "licenseId": 5,
     "name": "EasyList Dutch",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch.txt"
@@ -5027,6 +5322,7 @@
     "licenseId": 5,
     "name": "BLOGRAM Blog Parts Filter List for Japan",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://blogram.net/wp-content/uploads/easylist4.txt"
@@ -5044,6 +5340,7 @@
     "licenseId": 5,
     "name": "EasyList Czech and Slovak + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistczechslovak+easylist.txt"
@@ -5061,6 +5358,7 @@
     "licenseId": 5,
     "name": "EasyList China in IT",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/nfer/easylistchina_it/master/easylistchina_it.txt"
@@ -5078,6 +5376,7 @@
     "licenseId": 5,
     "name": "EasyList China + EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt"
@@ -5095,6 +5394,7 @@
     "licenseId": 5,
     "name": "EasyList China",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina.txt"
@@ -5112,6 +5412,7 @@
     "licenseId": 5,
     "name": "EasyList",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist.to/easylist/easylist.txt"
@@ -5129,6 +5430,7 @@
     "licenseId": 5,
     "name": "DShield.org Recommended Block List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://feeds.dshield.org/block.txt"
@@ -5146,6 +5448,7 @@
     "licenseId": 5,
     "name": "DNS-BH URL Shorteners",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://mirror1.malwaredomains.com/files/url_shorteners.txt"
@@ -5163,6 +5466,7 @@
     "licenseId": 5,
     "name": "DNS-BH Skype Resolvers",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "http://mirror1.malwaredomains.com/files/Skype-resolvers.txt"
@@ -5180,6 +5484,7 @@
     "licenseId": 5,
     "name": "EasyList Czech and Slovak",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters.txt"
@@ -5197,6 +5502,7 @@
     "licenseId": 5,
     "name": "YouTube: Remove Youtube Suggestions",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt"
@@ -5214,6 +5520,7 @@
     "licenseId": 2,
     "name": "Spies Dislike Us Having Privacy",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-dislike-us.txt"
@@ -5231,6 +5538,7 @@
     "licenseId": 2,
     "name": "NoCoin Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt"
@@ -5248,6 +5556,7 @@
     "licenseId": 5,
     "name": "1Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "http://1hosts.cf/"
@@ -5265,6 +5574,7 @@
     "licenseId": 5,
     "name": "1Hosts Addon",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "http://1hosts.cf/addon/"
@@ -5273,7 +5583,7 @@
     "id": 311,
     "description": "A generic filter for adblockers that keeps annoying header and footer bars from filling up your screen.",
     "descriptionSourceUrl": "https://github.com/elypter/generic_annoying_stickybar_filter",
-    "discontinuedDate": "2018-01-15T12:00:00",
+    "discontinuedDate": "2018-01-15T00:00:00",
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
@@ -5282,6 +5592,7 @@
     "licenseId": 4,
     "name": "Generic Annoying Stickybar Filter",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/elypter/generic_annoying_stickybar_filter/master/generic_header_list.txt"
@@ -5299,6 +5610,7 @@
     "licenseId": 4,
     "name": "Blockhead (Generic Extraction Based)",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/elypter/filter_processor/master/generated_filterlists/blockhead(decoy_generic_extraction).txt"
@@ -5316,6 +5628,7 @@
     "licenseId": 4,
     "name": "Generic Annoying Stickybar Filter v2",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/elypter/filter_processor/master/generated_filterlists/blockhead(decoy_generic_selection).txt"
@@ -5333,6 +5646,7 @@
     "licenseId": 4,
     "name": "Cryptocurrency (Bitcoin) Mining Protection List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://cdn.adblockcdn.com/filters/nominers.txt"
@@ -5350,6 +5664,7 @@
     "licenseId": 13,
     "name": "AlleBlock",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://alleblock.pl/alleblock/alleblock.txt"
@@ -5367,6 +5682,7 @@
     "licenseId": 12,
     "name": "Turk-Adlist",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/bkrucarci/turk-adlist/master/hosts"
@@ -5384,6 +5700,7 @@
     "licenseId": 2,
     "name": "Adserving and Tracking Domains",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt"
@@ -5401,6 +5718,7 @@
     "licenseId": 2,
     "name": "CoinMiner",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/blacklist/master/CoinMiner.txt"
@@ -5418,6 +5736,7 @@
     "licenseId": 14,
     "name": "YouTube Video Ads Blocklist Domains",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/youtubeadsblacklist/master/domainlist.txt"
@@ -5435,6 +5754,7 @@
     "licenseId": 14,
     "name": "YouTube Video Ads Blocklist Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/youtubeadsblacklist/master/hosts.txt"
@@ -5452,6 +5772,7 @@
     "licenseId": 2,
     "name": "Commonly Whitelisted Domains",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/whitelist/master/whitelist.txt"
@@ -5469,6 +5790,7 @@
     "licenseId": 2,
     "name": "Commonly Whitelisted Domains (Referral Sites)",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/whitelist/master/referral-sites.txt"
@@ -5486,6 +5808,7 @@
     "licenseId": 2,
     "name": "Commonly Whitelisted Domains (Optional)",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/whitelist/master/optional-list.txt"
@@ -5503,6 +5826,7 @@
     "licenseId": 5,
     "name": "Minimal Hosts Blocker",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/arcetera/Minimal-Hosts-Blocker/master/etc/MinimalHostsBlocker/minimalhosts"
@@ -5520,6 +5844,7 @@
     "licenseId": 11,
     "name": "Bjornstar's Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://github.com/bjornstar/hosts/blob/master/hosts"
@@ -5537,6 +5862,7 @@
     "licenseId": 5,
     "name": "Monojp's Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://hosts.herndl.org/hosts_blacklist.txt"
@@ -5554,6 +5880,7 @@
     "licenseId": 10,
     "name": "Staying On The Phone Browser",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser"
@@ -5571,6 +5898,7 @@
     "licenseId": 10,
     "name": "Norwegian Extensions For UBO & Nano",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExtensionsForUBO%26Nano.txt"
@@ -5588,6 +5916,7 @@
     "licenseId": 1,
     "name": "Yhosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/vokins/yhosts/master/hosts.txt"
@@ -5605,6 +5934,7 @@
     "licenseId": 13,
     "name": "ThaiConsentHosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiConsentHosts/master/ThaiConsentHosts.txt"
@@ -5622,6 +5952,7 @@
     "licenseId": 13,
     "name": "Thai Paranoid Block",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/master/ThaiParanoid.txt"
@@ -5639,6 +5970,7 @@
     "licenseId": 5,
     "name": "ThaiAntiForceLike",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiAntiForceLike/master/AntiForceLike.txt"
@@ -5656,6 +5988,7 @@
     "licenseId": 2,
     "name": "LeeCh List",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/pureexe/LeeCh-List/master/anime.txt"
@@ -5673,6 +6006,7 @@
     "licenseId": 5,
     "name": "Warui Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": "https://warui.intaa.net/adhosts/#fh5co-blog-section",
     "syntaxId": 1,
     "viewUrl": "https://warui.intaa.net/adhosts/hosts.txt"
@@ -5690,6 +6024,7 @@
     "licenseId": 5,
     "name": "Adawaylist JP",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/multiverse2011/adawaylist-jp/master/hosts"
@@ -5698,7 +6033,7 @@
     "id": 336,
     "description": "Amazon, Yahoo, Facebook , Twitter etc. It is a file created as a result of verifying and reducing connection failure as much as possible by making the filter mild. We also do not connect to tracking cookies or some malicious sites.",
     "descriptionSourceUrl": "http://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
-    "discontinuedDate": "2014-05-13T12:00:00",
+    "discontinuedDate": "2014-05-13T00:00:00",
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
@@ -5707,6 +6042,7 @@
     "licenseId": 5,
     "name": "HOSTS for Windows PC for Japan",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://sites.google.com/site/cosmonoteshosts/hosts_for_Windows8.txt"
@@ -5715,7 +6051,7 @@
     "id": 337,
     "description": "Advertisements on smartphones are versatile, there are many things too complicated. Several HOSTSs have been released to Adaway since the beginning, but this file was further integrated, sorted, deleted duplicates, and polished.",
     "descriptionSourceUrl": "http://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
-    "discontinuedDate": "2014-05-13T12:00:00",
+    "discontinuedDate": "2014-05-13T00:00:00",
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
@@ -5724,6 +6060,7 @@
     "licenseId": 5,
     "name": "HOSTS for Adaway for Japan",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://sites.google.com/site/cosmonoteshosts/hosts_for_Adaway.txt"
@@ -5732,7 +6069,7 @@
     "id": 338,
     "description": "Useful from any site It is a sharp meta-analysis that was born as a result of brushing up, collecting such files, eliminating all error syntax, saving waste, etc. It is a powerful file to prevent uprooting affiliates and magical advertisements.",
     "descriptionSourceUrl": "http://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
-    "discontinuedDate": "2014-05-13T12:00:00",
+    "discontinuedDate": "2014-05-13T00:00:00",
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
@@ -5741,6 +6078,7 @@
     "licenseId": 5,
     "name": "Japan Ultimate",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://sites.google.com/site/cosmonoteshosts/hosts_Ultimate.txt"
@@ -5758,6 +6096,7 @@
     "licenseId": 2,
     "name": "Go Hosts AD",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/Lerist/Go-Hosts/master/hosts-ad"
@@ -5775,6 +6114,7 @@
     "licenseId": 2,
     "name": "Go Hosts",
     "policyUrl": null,
+    "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/Lerist/Go-Hosts/master/hosts"
