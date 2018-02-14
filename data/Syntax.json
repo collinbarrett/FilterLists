@@ -12,12 +12,12 @@
   {
     "id": 3,
     "definitionUrl": "https://adblockplus.org/filters",
-    "name": "Adblock Plus"
+    "name": "Adblock Plus (Latest/Unspecified Version)"
   },
   {
     "id": 4,
     "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax",
-    "name": "uBlock Origin"
+    "name": "uBlock Origin Static"
   },
   {
     "id": 6,
@@ -26,8 +26,8 @@
   },
   {
     "id": 7,
-    "definitionUrl": null,
-    "name": "Exceptions (Whitelist)"
+    "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide",
+    "name": "uBlock Origin/uMatrix Dynamic"
   },
   {
     "id": 8,
