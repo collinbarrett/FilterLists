@@ -31,5 +31,8 @@
     "webpack": "^3.11.0",
     "webpack-hot-middleware": "^2.21.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@types/react-table": "^6.7.3",
+    "react-table": "^6.7.6"
+  }
 }

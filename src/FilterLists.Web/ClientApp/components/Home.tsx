@@ -1,6 +1,8 @@
 import * as React from "react";
 import { RouteComponentProps } from "react-router";
 import "isomorphic-fetch";
+import ReactTable from "react-table"
+import "react-table/react-table.css"
 
 interface IFilterListsState {
     filterLists: IFilterList[];
@@ -32,29 +34,29 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
     }
 
     private static renderFilterListsTable(filterLists: IFilterList[]) {
-        return <table className="table">
-                   <thead>
-                   <tr>
-                       <th>Name</th>
-                       <th>Description</th>
-                   </tr>
-                   </thead>
-                   <tbody>
-                   {filterLists.map(filterList =>
-                       <tr key={filterList.id}>
-                           <td>{filterList.name}</td>
-                           <td>{filterList.description}</td>
-                           <td>
-                               <a href={filterList.viewUrl}>View</a>
-                           </td>
-                           <td>
-                               <a href={`abp:subscribe?location=${encodeURIComponent(filterList.viewUrl)}&amp;title=${
-                                   encodeURIComponent(filterList.name)}`}>Subscribe</a>
-                           </td>
-                       </tr>
-                   )}
-                   </tbody>
-               </table>;
+        return <ReactTable
+                   data={filterLists}
+                   columns={[
+                       {
+                           Header: "Name",
+                           accessor: "name"
+                       },
+                       {
+                           Header: "Description",
+                           accessor: "description"
+                       },
+                       {
+                           Header: "View",
+                           accessor: "viewUrl",
+                           Cell: (d: any) => <a href={d.value}>View</a>
+                       },
+                       {
+                           Header: "Subscribe",
+                           accessor: "viewUrl",
+                           Cell: (d: any) => <a href={`abp:subscribe?location=${encodeURIComponent(d.value)
+                               }&amp;title=${encodeURIComponent(d.row.name)}`}>Subscribe</a>
+                       }
+                   ]}/>;
     }
 }
 
