@@ -18,7 +18,9 @@ namespace FilterLists.Api.V1.Controllers
         [HttpGet]
         public async Task<IActionResult> Seed()
         {
-            return Json(await seedService.GetAllAsync<Merge, MergeSeedDto>());
+            return Json(await seedService.GetAllAsync<Merge, MergeSeedDto>(
+                typeof(Merge).GetProperty("MergeFilterListId"),
+                typeof(Merge).GetProperty("UpstreamFilterListId")));
         }
     }
 }
