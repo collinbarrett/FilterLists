@@ -118,5 +118,13 @@
   {
     "filterListId": 338,
     "languageId": 141
+  },
+  {
+    "filterListId": 339,
+    "languageId": 99
+  },
+  {
+    "filterListId": 340,
+    "languageId": 99
   }
 ]
