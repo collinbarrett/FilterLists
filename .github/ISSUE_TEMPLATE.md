@@ -4,4 +4,4 @@ No rules, just let us know what's up in your issue providing all the relevant de
 
 ## Adding or Updating Lists?
 
-Please provide information for all of the fields described in the [data model](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar).
+Please provide information for all of the fields described here: https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar
