@@ -271,5 +271,12 @@
     "homeUrl": "https://warui.intaa.net/",
     "name": "Warui",
     "twitterHandle": "gatolabo"
+  },
+  {
+    "id": 41,
+    "emailAddress": null,
+    "homeUrl": "https://github.com/multiverse2011",
+    "name": "multiverse2011",
+    "twitterHandle": "multiverse2011_"
   }
 ]
