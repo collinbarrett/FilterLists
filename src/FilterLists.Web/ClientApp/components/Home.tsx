@@ -44,14 +44,14 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                        {
                            Header: "View",
                            accessor: "viewUrl",
-                           Cell: (d: any) => <a href={d.value}>View</a>,
+                           Cell: (d: any) => <a href={d.value} title={"View the raw list (typically) in .txt format. Many of these are quite large, so be cautious if on metered bandwidth."}>View</a>,
                            style: { textAlign: "center" }
                        },
                        {
                            Header: "Subscribe",
                            accessor: "viewUrl",
                            Cell: (d: any) => <a href={`abp:subscribe?location=${encodeURIComponent(d.value)
-                               }&amp;title=${encodeURIComponent(d.row.name)}`}>Subscribe</a>,
+                               }&amp;title=${encodeURIComponent(d.row.name)}`} title={"Subscribe to list with browser extension supporting \"abp:\" protool (e.g. uBlock Origin, AdBlock Plus)."}>Subscribe</a>,
                            style: { textAlign: "center" }
                        }
                    ]}
