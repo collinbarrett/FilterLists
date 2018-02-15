@@ -39,27 +39,20 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                    columns={[
                        {
                            Header: "Name",
-                           accessor: "name",
-                           maxWidth: 250
-                       },
-                       {
-                           Header: "Description",
-                           accessor: "description",
-                           className: "hidden-xs",
-                           headerClassName: "hidden-xs"
+                           accessor: "name"
                        },
                        {
                            Header: "View",
                            accessor: "viewUrl",
                            Cell: (d: any) => <a href={d.value}>View</a>,
-                           maxWidth: 100
+                           style: { textAlign: "center" }
                        },
                        {
                            Header: "Subscribe",
                            accessor: "viewUrl",
                            Cell: (d: any) => <a href={`abp:subscribe?location=${encodeURIComponent(d.value)
                                }&amp;title=${encodeURIComponent(d.row.name)}`}>Subscribe</a>,
-                           maxWidth: 100
+                           style: { textAlign: "center" }
                        }
                    ]}
                    SubComponent={(row: any) => {
