@@ -61,7 +61,16 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                                }&amp;title=${encodeURIComponent(d.row.name)}`}>Subscribe</a>,
                            maxWidth: 100
                        }
-                   ]}/>;
+                   ]}
+                   SubComponent={(row: any) => {
+                       return (
+                           <div style={{ padding: "20px" }}>
+                               <em>
+                                   {row.original.description}
+                               </em>
+                           </div>
+                       );
+                   }}/>;
     }
 }
 

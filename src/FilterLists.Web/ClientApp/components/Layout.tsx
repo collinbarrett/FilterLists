@@ -6,7 +6,7 @@ export interface LayoutProps {
 
 export class Layout extends React.Component<LayoutProps, {}> {
     render() {
-        return <div className="container-fluid">
+        return <div className="container">
                    <div className="row">
                        <h1>FilterLists</h1>
                        <p>The independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances.</p>
@@ -17,8 +17,8 @@ export class Layout extends React.Component<LayoutProps, {}> {
                        </div>
                    </div>
                    <div className="row text-center">
-                       A project by <a href="https://collinmbarrett.com/">Collin M. Barrett</a>. | View on <a href="https://github.com/collinbarrett/FilterLists">GitHub</a>.
+                       A project by <a href="https://collinmbarrett.com/">Collin M. Barrett</a>. | Contribute on <a href="https://github.com/collinbarrett/FilterLists">GitHub</a>.
                    </div>
                </div>;
-    }
+    };
 }
