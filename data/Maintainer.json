@@ -292,5 +292,12 @@
     "homeUrl": "https://github.com/Lerist",
     "name": "Lerist",
     "twitterHandle": null
+  },
+  {
+    "id": 44,
+    "emailAddress": null,
+    "homeUrl": "http://vxvault.net/",
+    "name": "VXVault",
+    "twitterHandle": null
   }
 ]
