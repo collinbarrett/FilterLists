@@ -25,5 +25,13 @@ namespace FilterLists.Services.FilterListService
                                              .ProjectTo<FilterListSummaryDto>()
                                              .ToListAsync();
         }
+
+        public async Task<FilterListDetailsDto> GetDetailsAsync(int id)
+        {
+            return await filterListsDbContext.Set<FilterList>()
+                                             .AsNoTracking()
+                                             .ProjectTo<FilterListDetailsDto>()
+                                             .FirstAsync(x => x.Id == id);
+        }
     }
 }
