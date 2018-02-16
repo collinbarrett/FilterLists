@@ -7,14 +7,17 @@ export interface LayoutProps {
 export class Layout extends React.Component<LayoutProps, {}> {
     render() {
         return <div className="container">
-                   <div className="row" style={{ margin: 1 }}>
+                   <div className="row">
                        <h1>
-                           FilterLists
-                           <sub>
-                               <em>beta</em>
-                           </sub>
+                           <img src="logo_filterlists.png" alt="FilterLists" style={{
+                               width: "40%",
+                               display: "block",
+                               height: "auto"
+                           }}/>
                        </h1>
-                       <p>The independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances.</p>
+                       <p style={{ margin: 10 }}>
+                           The independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances.
+                       </p>
                    </div>
                    <div className="row">
                        <div>
