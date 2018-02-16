@@ -25,6 +25,12 @@ namespace FilterLists.Api.V1.Controllers
         }
 
         [HttpGet]
+        public async Task<IActionResult> GetById(int id)
+        {
+            return Json(await filterListService.GetDetailsAsync(id));
+        }
+
+        [HttpGet]
         public async Task<IActionResult> Seed()
         {
             return Json(await seedService.GetAllAsync<FilterList, FilterListSeedDto>());
