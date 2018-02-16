@@ -23,7 +23,16 @@ module.exports = (env) => {
                         test: /\.css$/,
                         use: isDevBuild
                             ? ["style-loader", "css-loader"]
-                            : ExtractTextPlugin.extract({ use: "css-loader?minimize" })
+                            : ExtractTextPlugin.extract({
+                                use: [
+                                    {
+                                        loader: "css-loader",
+                                        options: {
+                                            minimize: { discardComments: { removeAll: true } }
+                                        }
+                                    }
+                                ]
+                            })
                     },
                     { test: /\.(png|jpg|jpeg|gif|svg)$/, use: "url-loader?limit=25000" }
                 ]
@@ -44,7 +53,11 @@ module.exports = (env) => {
                     })
                 ]
                 : [
-                    new webpack.optimize.UglifyJsPlugin(),
+                    new webpack.optimize.UglifyJsPlugin({
+                        output: {
+                            comments: false
+                        }
+                    }),
                     new ExtractTextPlugin("site.css")
                 ])
         }
