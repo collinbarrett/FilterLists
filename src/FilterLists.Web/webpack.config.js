@@ -58,6 +58,7 @@ module.exports = (env) => {
                             comments: false
                         }
                     }),
+                    new ExtractTextPlugin("vendor.css"),
                     new ExtractTextPlugin("site.css")
                 ])
         }
