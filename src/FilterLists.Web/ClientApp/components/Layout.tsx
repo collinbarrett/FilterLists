@@ -9,7 +9,7 @@ export class Layout extends React.Component<ILayoutProps, {}> {
         return <div className="container">
                    <div className="row">
                        <h1>
-                           <a href="./">
+                           <a href="./" style={{ display: "inline-block" }}>
                                <img src="logo_filterlists.png" alt="FilterLists" className="img-responsive"/>
                            </a>
                        </h1>
