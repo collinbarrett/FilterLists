@@ -45,20 +45,24 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            Header: "View",
                            accessor: "viewUrl",
                            Cell: (d: any) => <a href={d.value}
+                                                className="btn btn-primary btn-block"
                                                 title={"View the raw list. Many are quite large, so be cautious if on metered bandwidth."}>
                                                  View
                                              </a>,
-                           style: { textAlign: "center" }
+                           style: { textAlign: "center" },
+                           width: 100
                        },
                        {
                            Header: "Subscribe",
                            accessor: "viewUrl",
                            Cell: (d: any) => <a href={`abp:subscribe?location=${encodeURIComponent(d.value)
                                                 }&amp;title=${encodeURIComponent(d.row.name)}`}
+                                                className="btn btn-primary btn-block"
                                                 title={"Subscribe to list with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus)."}>
                                                 Subscribe
                                              </a>,
-                           style: { textAlign: "center" }
+                           style: { textAlign: "center" },
+                           width: 100
                        }
                    ]}
                    SubComponent={(row: any) => {
