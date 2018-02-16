@@ -23,7 +23,10 @@ module.exports = (env) => {
                         test: /\.css$/,
                         use: isDevBuild
                             ? ["style-loader", "css-loader"]
-                            : ExtractTextPlugin.extract({ use: "css-loader?minimize" })
+                            : ExtractTextPlugin.extract({
+                                fallbackLoader: "style-loader",
+                                loader: "css-loader?minimize"
+                            })
                     },
                     { test: /\.(png|jpg|jpeg|gif|svg)$/, use: "url-loader?limit=25000" }
                 ]
@@ -36,18 +39,20 @@ module.exports = (env) => {
                 })
             ].concat(isDevBuild
                 ? [
-                    // Plugins that apply in development builds only
                     new webpack.SourceMapDevToolPlugin({
-                        filename: "[file].map", // Remove this line if you prefer inline source maps
+                        filename: "[file].map",
                         moduleFilenameTemplate:
                             path.relative(bundleOutputDir,
-                                "[resourcePath]") // Point sourcemap entries to the original file locations on disk
+                                "[resourcePath]")
                     })
                 ]
                 : [
-                    // Plugins that apply in production builds only
                     new webpack.optimize.UglifyJsPlugin(),
-                    new ExtractTextPlugin("site.css")
+                    new ExtractTextPlugin("site.css"),
+                    new ExtractTextPlugin("vendor.css"),
+                    new PurifyCSSPlugin({
+                        paths: glob.sync(path.join(__dirname, "*.html")),
+                    })
                 ])
         }
     ];
