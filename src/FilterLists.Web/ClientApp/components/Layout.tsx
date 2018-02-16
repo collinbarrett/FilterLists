@@ -9,13 +9,15 @@ export class Layout extends React.Component<LayoutProps, {}> {
         return <div className="container">
                    <div className="row">
                        <h1>
-                           <img src="logo_filterlists.png" alt="FilterLists" style={{
-                               width: "40%",
-                               display: "block",
-                               height: "auto"
-                           }}/>
+                           <a href="./">
+                               <img src="logo_filterlists.png" alt="FilterLists" style={{
+                                   width: "40%",
+                                   display: "block",
+                                   height: "auto"
+                               }}/>
+                           </a>
                        </h1>
-                       <p style={{ margin: 10 }}>
+                <p style={{ margin: 10 }}>
                            The independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances.
                        </p>
                    </div>
