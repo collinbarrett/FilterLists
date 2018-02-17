@@ -44,8 +44,9 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                        },
                        {
                            Header: "Details",
+                           accessor: "id",
                            sortable: false,
-                           Cell: (rowInfo: any) => <ListDetailsModal listId={rowInfo.original.id}/>,
+                           Cell: (row: any) => <ListDetailsModal listId={row.value} />,
                            style: { textAlign: "center" },
                            width: 100
                        }
