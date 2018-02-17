@@ -32,7 +32,7 @@ export default class ListDetailsModal extends React.Component<any, any> {
                   onRequestClose={this.handleCloseModal}
                   shouldCloseOnOverlayClick={true}>
                   <FilterListDetails details={this.state.filterListDetails}/>
-                  <button onClick={this.handleCloseModal} className="btn btn-danger btn-block">Close</button>
+                  <button onClick={this.handleCloseModal} className="btn btn-danger btn-block push-to-bottom">Close</button>
               </ReactModal>;
         return (
             <div>
@@ -49,10 +49,15 @@ function FilterListDetails(props: any) {
                <Description description={props.details.description} url={props.details.descriptionSourceUrl}/>
                <PublishedDate date={props.details.publishedDate}/>
                <DiscontinuedDate date={props.details.discontinuedDate}/>
-               <SubscribeUrl url={props.details.viewUrl} name={props.details.name} />
-               <ViewUrl url={props.details.viewUrl} />
+               <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
+               <ViewUrl url={props.details.viewUrl}/>
                <HomeUrl url={props.details.homeUrl} />
+               <PolicyUrl url={props.details.policyUrl} />
                <DonateUrl url={props.details.donateUrl} />
+               <IssuesUrl url={props.details.issuesUrl} />
+               <ForumUrl url={props.details.forumUrl} />
+               <SubmissionUrl url={props.details.submissionUrl} />
+               <EmailAddress email={props.details.emailAddress} />
            </div>;
 }
 
@@ -63,7 +68,9 @@ function Name(props: any) {
 function Description(props: any) {
     if (props.description) {
         if (props.url) {
-            return <p><blockquote cite={props.url}>{props.description}</blockquote></p>;
+            return <p>
+                       <blockquote cite={props.url}>{props.description}</blockquote>
+                   </p>;
         } else {
             return <p>{props.description}</p>;
         }
@@ -112,10 +119,60 @@ function HomeUrl(props: any) {
     }
 }
 
+function PolicyUrl(props: any) {
+    if (props.url) {
+        return <a href={props.url} className="btn btn-primary btn-block" title={"View the policy for which rules this list includes."}>
+                   Policy
+               </a>;
+    } else {
+        return null;
+    }
+}
+
 function DonateUrl(props: any) {
     if (props.url) {
-        return <a href={props.url} className="btn btn-info btn-block" title={"Donate to support the list."}>
+        return <a href={props.url} className="btn btn-primary btn-block" title={"Donate to support the list."}>
                    Donate
+               </a>;
+    } else {
+        return null;
+    }
+}
+
+function IssuesUrl(props: any) {
+    if (props.url) {
+        return <a href={props.url} className="btn btn-primary btn-block" title={"View the GitHub Issues for this list."}>
+                   GitHub Issues
+               </a>;
+    } else {
+        return null;
+    }
+}
+
+function ForumUrl(props: any) {
+    if (props.url) {
+        return <a href={props.url} className="btn btn-primary btn-block" title={"View the forum for this list."}>
+                   Forum
+               </a>;
+    } else {
+        return null;
+    }
+}
+
+function SubmissionUrl(props: any) {
+    if (props.url) {
+        return <a href={props.url} className="btn btn-primary btn-block" title={"Submit a new rule to be included in this list."}>
+                   Submit New Rule
+               </a>;
+    } else {
+        return null;
+    }
+}
+
+function EmailAddress(props: any) {
+    if (props.email) {
+        return <a href={`mailto:${props.email}`} className="btn btn-primary btn-block" title={"Email the list."}>
+                   Email
                </a>;
     } else {
         return null;
