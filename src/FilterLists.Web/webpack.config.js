@@ -4,6 +4,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CheckerPlugin = require("awesome-typescript-loader").CheckerPlugin;
 const bundleOutputDir = "./wwwroot/dist";
 const PurifyCSSPlugin = require("purifycss-webpack");
+const glob = require("glob-all"); 
 
 module.exports = (env) => {
     const isDevBuild = !(env && env.prod);
