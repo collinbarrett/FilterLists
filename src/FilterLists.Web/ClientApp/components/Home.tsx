@@ -35,26 +35,23 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                    data={filterLists}
                    columns={[
                        {
-                           Header: "Id",
-                           accessor: "id",
-                           maxWidth: 50
-                       },
-                       {
                            Header: "Name",
-                           accessor: "name"
+                           accessor: "name",
+                           filterable: true,
+                           filterMethod: (filter: any, row: any) => row[filter.id].toUpperCase().startsWith(filter.value.toUpperCase())
                        },
                        {
                            Header: "Details",
-                           accessor: "id",
-                           Cell: (d: any) => <ListDetailsModal listId={d.value}/>,
+                           sortable: false,
+                           Cell: (rowInfo: any) => <ListDetailsModal listId={rowInfo.original.id}/>,
                            style: { textAlign: "center" },
                            width: 100
                        },
                        {
                            Header: "Subscribe",
-                           accessor: "viewUrl",
-                           Cell: (d: any) => <a
-                               href={`abp:subscribe?location=${encodeURIComponent(d.value)}&amp;title=${encodeURIComponent(d.row.name)}`}
+                           sortable: false,
+                           Cell: (rowInfo: any) => <a
+                               href={`abp:subscribe?location=${encodeURIComponent(rowInfo.row.viewUrl)}&amp;title=${encodeURIComponent(rowInfo.row.name)}`}
                                className="btn btn-primary btn-block"
                                title={"Subscribe to list with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus)."}>
                                Subscribe</a>,

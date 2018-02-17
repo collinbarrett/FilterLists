@@ -68,9 +68,7 @@ function Name(props: any) {
 function Description(props: any) {
     if (props.description) {
         if (props.url) {
-            return <p>
-                       <blockquote cite={props.url}>{props.description}</blockquote>
-                   </p>;
+            return <blockquote cite={props.url}>{props.description}</blockquote>;
         } else {
             return <p>{props.description}</p>;
         }
