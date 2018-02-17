@@ -35,6 +35,10 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                    data={filterLists}
                    columns={[
                        {
+                           Header: "Id (temp)",
+                           accessor: "id"
+                       },
+                       {
                            Header: "Name",
                            accessor: "name"
                        },
