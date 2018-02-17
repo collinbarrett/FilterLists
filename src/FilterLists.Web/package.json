@@ -36,6 +36,7 @@
   "dependencies": {
     "@types/react-modal": "^3.1.2",
     "@types/react-table": "^6.7.3",
+    "glob-all": "^3.1.0",
     "react-modal": "^3.2.1",
     "react-table": "^6.7.6"
   }
