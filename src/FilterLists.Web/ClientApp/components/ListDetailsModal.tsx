@@ -66,31 +66,16 @@ function Name(props: any) {
 }
 
 function Description(props: any) {
-    if (props.description) {
-        if (props.url) {
-            return <blockquote cite={props.url}>{props.description}</blockquote>;
-        } else {
-            return <p>{props.description}</p>;
-        }
-    } else {
-        return null;
-    }
+    return props.description ? (props.url ? <blockquote cite={props.url}>{props.description}</blockquote> : <p>{
+        props.description}</p>) : null;
 }
 
 function PublishedDate(props: any) {
-    if (props.date) {
-        return <p>Published: {props.date}</p>;
-    } else {
-        return null;
-    }
+    return props.date ? <p>Published: {props.date}</p> : null;
 }
 
 function DiscontinuedDate(props: any) {
-    if (props.date) {
-        return <p>Discontinued: {props.date}</p>;
-    } else {
-        return null;
-    }
+    return props.date ? <p>Discontinued: {props.date}</p> : null;
 }
 
 function SubscribeUrl(props: any) {
@@ -108,73 +93,45 @@ function ViewUrl(props: any) {
 }
 
 function HomeUrl(props: any) {
-    if (props.url) {
-        return <a href={props.url} className="btn btn-primary btn-block" title={"View the project's home page."}>
-                   Home
-               </a>;
-    } else {
-        return null;
-    }
+    return props.url ? <a href={props.url} className="btn btn-primary btn-block" title={"View the project's home page."}>
+                           Home
+                       </a> : null;
 }
 
 function PolicyUrl(props: any) {
-    if (props.url) {
-        return <a href={props.url} className="btn btn-primary btn-block" title={"View the policy for which rules this list includes."}>
-                   Policy
-               </a>;
-    } else {
-        return null;
-    }
+    return props.url ? <a href={props.url} className="btn btn-primary btn-block" title={"View the policy for which rules this list includes."}>
+                           Policy
+                       </a> : null;
 }
 
 function DonateUrl(props: any) {
-    if (props.url) {
-        return <a href={props.url} className="btn btn-primary btn-block" title={"Donate to support the list."}>
-                   Donate
-               </a>;
-    } else {
-        return null;
-    }
+    return props.url ? <a href={props.url} className="btn btn-primary btn-block" title={"Donate to support the list."}>
+                           Donate
+                       </a> : null;
 }
 
 function IssuesUrl(props: any) {
-    if (props.url) {
-        return <a href={props.url} className="btn btn-primary btn-block" title={"View the GitHub Issues for this list."}>
-                   GitHub Issues
-               </a>;
-    } else {
-        return null;
-    }
+    return props.url ? <a href={props.url} className="btn btn-primary btn-block" title={"View the GitHub Issues for this list."}>
+                           GitHub Issues
+                       </a> : null;
 }
 
 function ForumUrl(props: any) {
-    if (props.url) {
-        return <a href={props.url} className="btn btn-primary btn-block" title={"View the forum for this list."}>
-                   Forum
-               </a>;
-    } else {
-        return null;
-    }
+    return props.url ? <a href={props.url} className="btn btn-primary btn-block" title={"View the forum for this list."}>
+                           Forum
+                       </a> : null;
 }
 
 function SubmissionUrl(props: any) {
-    if (props.url) {
-        return <a href={props.url} className="btn btn-primary btn-block" title={"Submit a new rule to be included in this list."}>
-                   Submit New Rule
-               </a>;
-    } else {
-        return null;
-    }
+    return props.url ? <a href={props.url} className="btn btn-primary btn-block" title={"Submit a new rule to be included in this list."}>
+                           Submit New Rule
+                       </a> : null;
 }
 
 function EmailAddress(props: any) {
-    if (props.email) {
-        return <a href={`mailto:${props.email}`} className="btn btn-primary btn-block" title={"Email the list."}>
-                   Email
-               </a>;
-    } else {
-        return null;
-    }
+    return props.email ? <a href={`mailto:${props.email}`} className="btn btn-primary btn-block" title={"Email the list."}>
+                             Email
+                         </a> : null;
 }
 
 interface IFilterListDetailsDto {
