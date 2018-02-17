@@ -14,7 +14,7 @@ export class Layout extends React.Component<ILayoutProps, {}> {
                            </a>
                        </h1>
                        <p style={{ margin: 10 }}>
-                           The independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances.
+                           The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.
                        </p>
                    </div>
                    <div className="row">
