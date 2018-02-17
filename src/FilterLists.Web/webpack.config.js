@@ -3,7 +3,6 @@ const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CheckerPlugin = require("awesome-typescript-loader").CheckerPlugin;
 const bundleOutputDir = "./wwwroot/dist";
-const PurifyCSSPlugin = require("purifycss-webpack");
 
 module.exports = (env) => {
     const isDevBuild = !(env && env.prod);
@@ -59,15 +58,7 @@ module.exports = (env) => {
                             comments: false
                         }
                     }),
-                    new ExtractTextPlugin("site.css"),
-                    new ExtractTextPlugin("vendor.css"),
-                    new PurifyCSSPlugin({
-                        paths: globAll.sync([
-                            path.join(__dirname, "dist/*.html"),
-                            path.join(__dirname, "src/**/*.js")
-                        ]),
-                        moduleExtensions: [".js"]
-                    })
+                    new ExtractTextPlugin("site.css")
                 ])
         }
     ];
