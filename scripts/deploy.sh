@@ -22,8 +22,8 @@ sshpass -p $FTP_PASSWORD scp -o StrictHostKeyChecking=no -r /home/travis/build/c
 sshpass -p $FTP_PASSWORD ssh -o StrictHostKeyChecking=no $FTP_USER@$FTP_HOST 'sudo systemctl restart filterlists.web.service'
 
 #purge CDN
-#curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$CF_FILTERLISTS_ZONE/purge_cache" -H "X-Auth-Email: $CF_EMAIL" -H "X-Auth-Key: $CF_GLOBAL_API_KEY" -H "Content-Type: application/json" --data '{"purge_everything":true}'
-#sleep 10
+curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$CF_FILTERLISTS_ZONE/purge_cache" -H "X-Auth-Email: $CF_EMAIL" -H "X-Auth-Key: $CF_GLOBAL_API_KEY" -H "Content-Type: application/json" --data '{"purge_everything":true}'
+sleep 10
 
 #prime app
-#curl https://beta.filterlists.com/
+curl https://beta.filterlists.com/
