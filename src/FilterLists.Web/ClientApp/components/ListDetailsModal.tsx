@@ -32,7 +32,7 @@ export default class ListDetailsModal extends React.Component<any, any> {
                   onRequestClose={this.handleCloseModal}
                   shouldCloseOnOverlayClick={true}>
                   <FilterListDetails details={this.state.filterListDetails}/>
-                  <button onClick={this.handleCloseModal} className="btn btn-danger btn-block push-to-bottom">Close</button>
+                  <button onClick={this.handleCloseModal} className="btn btn-danger btn-block" id="close-modal">Close</button>
               </ReactModal>;
         return (
             <div>
