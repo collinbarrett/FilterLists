@@ -16,8 +16,8 @@ export default class ListDetailsModal extends React.Component<any, any> {
     handleOpenModal() {
         this.setState({ showModal: true });
         fetch(`https://api.filterlists.com/v1/lists/${this.listId}`)
-            .then(response => response.json() as Promise<IFilterListDetails[]>)
-            .then(data => { this.setState({ filterListdetails: data, loading: false }); });
+            .then(response => response.json() as Promise<IFilterListDetailsDto[]>)
+            .then(data => { this.setState({ filterListDetails: data, loading: false }); });
     }
 
     handleCloseModal() {
@@ -29,23 +29,10 @@ export default class ListDetailsModal extends React.Component<any, any> {
             ? null
             : <ReactModal
                   isOpen={this.state.showModal}
-                  contentLabel="onRequestClose Example"
                   onRequestClose={this.handleCloseModal}
-                  shouldCloseOnOverlayClick={false}>
-                  <h1>{this.state.filterListdetails.name}</h1>
-                  <p>{this.state.filterListdetails.description}</p>
-                  <a href={this.state.filterListdetails.viewUrl} className="btn btn-primary btn-block"
-                     title={"View the raw list. Many are quite large, so be cautious if on metered bandwidth."}>
-                      View
-                  </a>
-                  <a href={`abp:subscribe?location=${encodeURIComponent(this.state.filterListdetails.viewUrl)
-                      }&amp;title=${encodeURIComponent(this.state.filterListdetails.name)}`}
-                     className="btn btn-primary btn-block"
-                     title={
-"Subscribe to list with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus)."}>
-                      Subscribe
-                  </a>
-                  <button onClick={this.handleCloseModal} className="btn btn-primary btn-block">Close</button>
+                  shouldCloseOnOverlayClick={true}>
+                  <FilterListDetails details={this.state.filterListDetails}/>
+                  <button onClick={this.handleCloseModal} className="btn btn-danger btn-block">Close</button>
               </ReactModal>;
         return (
             <div>
@@ -54,13 +41,79 @@ export default class ListDetailsModal extends React.Component<any, any> {
             </div>
         );
     }
-
 }
 
-interface IFilterListDetails {
-    id: number;
-    name: string;
+function FilterListDetails(props: any) {
+    return <div>
+               <Name name={props.details.name}/>
+               <Description description={props.details.description}
+                            url={props.details.descriptionUrl}/>
+               <PublishedDate date={props.details.publishedDate}/>
+               <DiscontinuedDate date={props.details.discontinuedDate}/>
+               <ViewUrl url={props.details.viewUrl}/>
+               <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
+           </div>;
+}
+
+function Name(props: any) {
+    return <h1>{props.name}</h1>;
+}
+
+function PublishedDate(props: any) {
+    if (props.date) {
+        return <p>Published: props.date</p>;
+    } else {
+        return null;
+    }
+}
+
+function DiscontinuedDate(props: any) {
+    if (props.date) {
+        return <p>Discontinued: props.date</p>;
+    } else {
+        return null;
+    }
+}
+
+function Description(props: any) {
+    if (props.description) {
+        if (props.url) {
+            return <p>{props.description}</p>;
+        } else {
+            return <p>{props.description}</p>;
+        }
+    } else {
+        return null;
+    }
+}
+
+function ViewUrl(props: any) {
+    return <a href={props.url} className="btn btn-primary btn-block"
+              title={"View the raw list."}>
+               View
+           </a>;
+}
+
+function SubscribeUrl(props: any) {
+    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+              className="btn btn-primary btn-block"
+              title={"Subscribe to list with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus)."}>
+               Subscribe
+           </a>;
+}
+
+interface IFilterListDetailsDto {
     description: string;
     descriptionSourceUrl: string;
+    discontinuedDate: string;
+    donateUrl: string;
+    emailAddress: string;
+    forumUrl: string;
+    homeUrl: string;
+    issuesUrl: string;
+    name: string;
+    policyUrl: string;
+    publishedDate: string;
+    submissionUrl: string;
     viewUrl: string;
 }
