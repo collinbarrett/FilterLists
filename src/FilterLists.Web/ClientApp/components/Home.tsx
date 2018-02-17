@@ -33,12 +33,14 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
     private static renderFilterListsTable(filterLists: IFilterListSummaryDto[]) {
         return <ReactTable
                    data={filterLists}
+                   defaultSorted={[{id: "name"}]}
                    columns={[
                        {
                            Header: "Name",
                            accessor: "name",
                            filterable: true,
-                           filterMethod: (filter: any, row: any) => row[filter.id].toUpperCase().startsWith(filter.value.toUpperCase())
+                           filterMethod: (filter: any, row: any) => row[filter.id].toUpperCase().startsWith(filter.value.toUpperCase()),
+                           sortMethod: (a: any, b: any) =>  a.toUpperCase() > b.toUpperCase() ? 1 : -1
                        },
                        {
                            Header: "Details",
