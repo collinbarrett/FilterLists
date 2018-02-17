@@ -441,9 +441,9 @@
       "dev": true
     },
     "bootstrap": {
-      "version": "4.0.0",
-      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-4.0.0.tgz",
-      "integrity": "sha512-gulJE5dGFo6Q61V/whS6VM4WIyrlydXfCgkE+Gxe5hjrJ8rXLLZlALq7zq2RPhOc45PSwQpJkrTnc2KgD6cvmA==",
+      "version": "3.3.7",
+      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.7.tgz",
+      "integrity": "sha1-WjiTlFSfIzMIdaOxUGVldPip63E=",
       "dev": true
     },
     "brace-expansion": {
@@ -3987,12 +3987,6 @@
       "version": "2.3.0",
       "resolved": "https://registry.npmjs.org/pify/-/pify-2.3.0.tgz",
       "integrity": "sha1-7RQaasBDqEnqWISY59yosVMw6Qw=",
-      "dev": true
-    },
-    "popper.js": {
-      "version": "1.12.9",
-      "resolved": "https://registry.npmjs.org/popper.js/-/popper.js-1.12.9.tgz",
-      "integrity": "sha1-DfvC3/lsRRuzMu3Pz6r1ZtMx1bM=",
       "dev": true
     },
     "posix-character-classes": {
