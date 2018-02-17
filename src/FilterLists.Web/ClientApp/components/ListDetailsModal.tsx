@@ -49,13 +49,27 @@ function FilterListDetails(props: any) {
                <Description description={props.details.description} url={props.details.descriptionSourceUrl}/>
                <PublishedDate date={props.details.publishedDate}/>
                <DiscontinuedDate date={props.details.discontinuedDate}/>
-               <ViewUrl url={props.details.viewUrl}/>
-               <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
+               <SubscribeUrl url={props.details.viewUrl} name={props.details.name} />
+               <ViewUrl url={props.details.viewUrl} />
+               <HomeUrl url={props.details.homeUrl} />
+               <DonateUrl url={props.details.donateUrl} />
            </div>;
 }
 
 function Name(props: any) {
     return <h1>{props.name}</h1>;
+}
+
+function Description(props: any) {
+    if (props.description) {
+        if (props.url) {
+            return <p><blockquote cite={props.url}>{props.description}</blockquote></p>;
+        } else {
+            return <p>{props.description}</p>;
+        }
+    } else {
+        return null;
+    }
 }
 
 function PublishedDate(props: any) {
@@ -74,16 +88,12 @@ function DiscontinuedDate(props: any) {
     }
 }
 
-function Description(props: any) {
-    if (props.description) {
-        if (props.url) {
-            return <p>{props.description}</p>;
-        } else {
-            return <p>{props.description}</p>;
-        }
-    } else {
-        return null;
-    }
+function SubscribeUrl(props: any) {
+    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+              className="btn btn-primary btn-block"
+              title={"Subscribe to list with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus)."}>
+               Subscribe
+           </a>;
 }
 
 function ViewUrl(props: any) {
@@ -92,12 +102,24 @@ function ViewUrl(props: any) {
            </a>;
 }
 
-function SubscribeUrl(props: any) {
-    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-              className="btn btn-primary btn-block"
-              title={"Subscribe to list with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus)."}>
-               Subscribe
-           </a>;
+function HomeUrl(props: any) {
+    if (props.url) {
+        return <a href={props.url} className="btn btn-primary btn-block" title={"View the project's home page."}>
+                   Home
+               </a>;
+    } else {
+        return null;
+    }
+}
+
+function DonateUrl(props: any) {
+    if (props.url) {
+        return <a href={props.url} className="btn btn-info btn-block" title={"Donate to support the list."}>
+                   Donate
+               </a>;
+    } else {
+        return null;
+    }
 }
 
 interface IFilterListDetailsDto {
