@@ -48,17 +48,6 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            Cell: (rowInfo: any) => <ListDetailsModal listId={rowInfo.original.id}/>,
                            style: { textAlign: "center" },
                            width: 100
-                       },
-                       {
-                           Header: "Subscribe",
-                           sortable: false,
-                           Cell: (rowInfo: any) => <a
-                               href={`abp:subscribe?location=${encodeURIComponent(rowInfo.row.viewUrl)}&amp;title=${encodeURIComponent(rowInfo.row.name)}`}
-                               className="btn btn-primary btn-block"
-                               title={"Subscribe to list with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus)."}>
-                               Subscribe</a>,
-                           style: { textAlign: "center" },
-                           width: 100
                        }
                    ]}/>;
     }
@@ -67,5 +56,4 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
 interface IFilterListSummaryDto {
     id: number;
     name: string;
-    viewUrl: string;
 }
