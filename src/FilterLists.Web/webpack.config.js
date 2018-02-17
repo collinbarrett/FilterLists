@@ -62,7 +62,7 @@ module.exports = (env) => {
                     new ExtractTextPlugin("site.css"),
                     new ExtractTextPlugin("vendor.css"),
                     new PurifyCSSPlugin({
-                        paths: globAll.sync([
+                        paths: glob.sync([
                             path.join(__dirname, "dist/*.html"),
                             path.join(__dirname, "src/**/*.js")
                         ]),
