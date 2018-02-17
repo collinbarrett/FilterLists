@@ -46,8 +46,7 @@ export default class ListDetailsModal extends React.Component<any, any> {
 function FilterListDetails(props: any) {
     return <div>
                <Name name={props.details.name}/>
-               <Description description={props.details.description}
-                            url={props.details.descriptionUrl}/>
+               <Description description={props.details.description} url={props.details.descriptionSourceUrl}/>
                <PublishedDate date={props.details.publishedDate}/>
                <DiscontinuedDate date={props.details.discontinuedDate}/>
                <ViewUrl url={props.details.viewUrl}/>
@@ -61,7 +60,7 @@ function Name(props: any) {
 
 function PublishedDate(props: any) {
     if (props.date) {
-        return <p>Published: props.date</p>;
+        return <p>Published: {props.date}</p>;
     } else {
         return null;
     }
@@ -69,7 +68,7 @@ function PublishedDate(props: any) {
 
 function DiscontinuedDate(props: any) {
     if (props.date) {
-        return <p>Discontinued: props.date</p>;
+        return <p>Discontinued: {props.date}</p>;
     } else {
         return null;
     }
@@ -88,8 +87,7 @@ function Description(props: any) {
 }
 
 function ViewUrl(props: any) {
-    return <a href={props.url} className="btn btn-primary btn-block"
-              title={"View the raw list."}>
+    return <a href={props.url} className="btn btn-primary btn-block" title={"View the raw list."}>
                View
            </a>;
 }
