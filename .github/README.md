@@ -9,14 +9,9 @@ FilterLists is the independent, comprehensive directory of filter and host lists
 ## Links
 | Site                                                | API                                               |
 | --------------------------------------------------- | ------------------------------------------------- |
-| [v3 (Beta)](https://beta.filterlists.com/)         | [v1 (Beta)](https://api.filterlists.com/v1/lists)|
-| [v2 (Stable, Frozen)](https://filterlists.com/)     |                                                   |
+| [v3 (Beta)](https://filterlists.com/)               | [v1 (Beta)](https://api.filterlists.com/v1/lists)|
+| [v2 (Legacy, Frozen)](https://v2.filterlists.com/)  |                                                   |
 | [v1 (Legacy, Frozen)](https://v1.filterlists.com/)  |                                                   |
-
-## Development Notice (Updated February 14, 2018)
-FilterLists improvements are slow and tend to be in spurts. I care about this project as both a resource for the community and a learning tool for me. However, my day job comes first which often results in little to no work on the project at times. I happily welcome anyone that wants to contribute.
-
-The immediate projects are converting the data to an actual web application (rather than Google Sheets & WordPress), and then exposing the data via a .Net Core REST API driving a first-party ReactJS UI.
 
 ## Adding or Updating Lists
 
