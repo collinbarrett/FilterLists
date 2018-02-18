@@ -3,7 +3,7 @@ import "isomorphic-fetch";
 import * as ReactModal from "react-modal";
 
 export default class ListDetailsModal extends React.Component<any, any> {
-    private readonly listId: any;
+    private listId: any;
 
     constructor(props: any) {
         super(props);
@@ -11,6 +11,10 @@ export default class ListDetailsModal extends React.Component<any, any> {
         this.listId = props.listId;
         this.handleOpenModal = this.handleOpenModal.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);
+    }
+
+    componentWillReceiveProps(nextProps: any) {
+        this.listId = nextProps.listId;
     }
 
     handleOpenModal() {
