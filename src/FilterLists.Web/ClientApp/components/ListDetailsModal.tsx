@@ -15,13 +15,14 @@ export default class ListDetailsModal extends React.Component<any, any> {
 
     componentWillReceiveProps(nextProps: any) {
         this.listId = nextProps.listId;
+        this.setState({ filterListDetails: null });
     }
 
     handleOpenModal() {
-        this.setState({ showModal: true });
         fetch(`https://api.filterlists.com/v1/lists/${this.listId}`)
             .then(response => response.json() as Promise<IFilterListDetailsDto[]>)
             .then(data => { this.setState({ filterListDetails: data, loading: false }); });
+        this.setState({ showModal: true });
     }
 
     handleCloseModal() {
