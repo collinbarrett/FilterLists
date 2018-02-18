@@ -49,6 +49,16 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            Cell: (row: any) => <ListDetailsModal listId={row.value} />,
                            style: { textAlign: "center" },
                            width: 100
+                       },
+                       {
+                           Header: "Subscribe",
+                           accessor: "viewUrl",
+                           sortable: false,
+                           Cell: (row: any) => <SubscribeUrl url={row.value} name={row.value.name} />,
+                           style: { textAlign: "center" },
+                           width: 100,
+                           headerClassName: "hidden-xs",
+                           className: "hidden-xs"
                        }
                    ]}/>;
     }
@@ -57,4 +67,14 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
 interface IFilterListSummaryDto {
     id: number;
     name: string;
+    viewUrl: string;
+}
+
+//TODO: deduplicate function (maybe to a utils.js) also in ListDetailsModal.tsx
+function SubscribeUrl(props: any) {
+    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+              className="btn btn-primary btn-block"
+              title={"Subscribe to list with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus)."}>
+               Subscribe
+           </a>;
 }
