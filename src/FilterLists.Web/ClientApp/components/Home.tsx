@@ -17,7 +17,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
             filterLists: [],
             loading: true
         };
-        fetch("https://api.filterlists.com/v1/lists")
+        fetch("https://filterlists.com/api/v1/lists")
             .then(response => response.json() as Promise<IFilterListSummaryDto[]>)
             .then(data => {
                 this.setState({

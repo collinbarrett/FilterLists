@@ -22,7 +22,7 @@ export default class ListDetailsModal extends React.Component<any, any> {
     }
 
     openModal() {
-        fetch(`https://api.filterlists.com/v1/lists/${this.state.listId}`)
+        fetch(`https://filterlists.com/api/v1/lists/${this.state.listId}`)
             .then(response => response.json() as Promise<IFilterListDetailsDto[]>)
             .then(data => {
                 this.setState({
