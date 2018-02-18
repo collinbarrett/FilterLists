@@ -13,10 +13,18 @@ interface IFilterListsState {
 export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsState> {
     constructor(props: any) {
         super(props);
-        this.state = { filterLists: [], loading: true };
+        this.state = {
+            filterLists: [],
+            loading: true
+        };
         fetch("https://api.filterlists.com/v1/lists")
             .then(response => response.json() as Promise<IFilterListSummaryDto[]>)
-            .then(data => { this.setState({ filterLists: data, loading: false }); });
+            .then(data => {
+                this.setState({
+                    filterLists: data,
+                    loading: false
+                });
+            });
     }
 
     render() {
@@ -33,20 +41,20 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
     private static renderFilterListsTable(filterLists: IFilterListSummaryDto[]) {
         return <ReactTable
                    data={filterLists}
-                   defaultSorted={[{id: "name"}]}
+                   defaultSorted={[{ id: "name" }]}
                    columns={[
                        {
                            Header: "Name",
                            accessor: "name",
                            filterable: true,
                            filterMethod: (filter: any, row: any) => row[filter.id].toUpperCase().includes(filter.value.toUpperCase()),
-                           sortMethod: (a: any, b: any) =>  a.toUpperCase() > b.toUpperCase() ? 1 : -1
+                           sortMethod: (a: any, b: any) => a.toUpperCase() > b.toUpperCase() ? 1 : -1
                        },
                        {
                            Header: "Details",
                            accessor: "id",
                            sortable: false,
-                           Cell: (cell: any) => <ListDetailsModal listId={cell.value} />,
+                           Cell: (cell: any) => <ListDetailsModal listId={cell.value}/>,
                            style: { textAlign: "center" },
                            width: 100
                        },
@@ -54,7 +62,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            Header: "Subscribe",
                            accessor: "viewUrl",
                            sortable: false,
-                           Cell: (cell: any) => <SubscribeUrl url={cell.value} name={cell.row.name} />,
+                           Cell: (cell: any) => <SubscribeUrl url={cell.value} name={cell.row.name}/>,
                            style: { textAlign: "center" },
                            width: 100,
                            headerClassName: "hidden-xs",
