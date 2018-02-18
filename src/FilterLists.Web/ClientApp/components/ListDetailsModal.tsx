@@ -14,8 +14,9 @@ export default class ListDetailsModal extends React.Component<any, any> {
     }
 
     componentWillReceiveProps(nextProps: any) {
-        this.listId = nextProps.listId;
+        this.setState({ showModal: false });
         this.setState({ filterListDetails: null });
+        this.listId = nextProps.listId;
     }
 
     handleOpenModal() {
