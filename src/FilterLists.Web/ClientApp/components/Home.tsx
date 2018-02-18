@@ -46,7 +46,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            Header: "Details",
                            accessor: "id",
                            sortable: false,
-                           Cell: (row: any) => <ListDetailsModal listId={row.value} />,
+                           Cell: (cell: any) => <ListDetailsModal listId={cell.value} />,
                            style: { textAlign: "center" },
                            width: 100
                        },
@@ -54,7 +54,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            Header: "Subscribe",
                            accessor: "viewUrl",
                            sortable: false,
-                           Cell: (row: any) => <SubscribeUrl url={row.value} name={row.value.name} />,
+                           Cell: (cell: any) => <SubscribeUrl url={cell.value} name={cell.row.name} />,
                            style: { textAlign: "center" },
                            width: 100,
                            headerClassName: "hidden-xs",
