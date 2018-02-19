@@ -2786,7 +2786,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=10"
   },
   {
@@ -2804,7 +2804,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=13"
   },
   {
@@ -2822,7 +2822,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=3"
   },
   {
@@ -2840,7 +2840,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=9"
   },
   {
@@ -2858,7 +2858,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=4"
   },
   {
@@ -2876,7 +2876,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=12"
   },
   {
@@ -2894,7 +2894,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=1"
   },
   {
@@ -2912,7 +2912,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=11"
   },
   {
@@ -2930,7 +2930,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=7"
   },
   {
@@ -2948,7 +2948,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=6"
   },
   {
@@ -2966,25 +2966,25 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=5"
   },
   {
     "id": 166,
     "description": "Filter that enables removing of the ads from websites with English content.",
-    "descriptionSourceUrl": "https://adguard.com/en/filters.html",
+    "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#english-filter",
     "discontinuedDate": null,
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
-    "homeUrl": "https://adguard.com/en/filters.html",
+    "homeUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#english-filter",
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
-    "licenseId": 5,
+    "licenseId": 12,
     "name": "Adguard English Filter",
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=2"
   },
   {
@@ -3002,7 +3002,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=8"
   },
   {
@@ -3038,7 +3038,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://adguard.com/en/filter-rules.html?id=14"
   },
   {
