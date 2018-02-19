@@ -68,7 +68,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            headerClassName: "hidden-xs",
                            className: "hidden-xs"
                        }
-                   ]}/>;
+                   ]}
+                   className="-striped -highlight"/>;
     }
 }
 
