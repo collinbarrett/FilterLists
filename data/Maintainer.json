@@ -306,5 +306,12 @@
     "homeUrl": "https://disconnect.me",
     "name": "Disconnect",
     "twitterHandle": "disconnectme"
+  },
+  {
+    "id": 46,
+    "emailAddress": null,
+    "homeUrl": "https://adguard.com/",
+    "name": "AdGuard",
+    "twitterHandle": "adguard"
   }
 ]
