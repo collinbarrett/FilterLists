@@ -299,5 +299,12 @@
     "homeUrl": "http://vxvault.net/",
     "name": "VXVault",
     "twitterHandle": null
+  },
+  {
+    "id": 45,
+    "emailAddress": "support@disconnect.me",
+    "homeUrl": "https://disconnect.me",
+    "name": "Disconnect",
+    "twitterHandle": "disconnectme"
   }
 ]

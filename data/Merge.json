@@ -120,6 +120,14 @@
     "upstreamFilterListId": 338
   },
   {
+    "mergeFilterListId": 274,
+    "upstreamFilterListId": 273
+  },
+  {
+    "mergeFilterListId": 274,
+    "upstreamFilterListId": 275
+  },
+  {
     "mergeFilterListId": 309,
     "upstreamFilterListId": 17
   },
