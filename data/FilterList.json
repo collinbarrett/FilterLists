@@ -5977,8 +5977,8 @@
   },
   {
     "id": 333,
-    "description": "Well-know illegal streaming sites (mostly in Thailand) that steal the non-profit works from various fansubs, also publish retail products/contents on their site (even it's unauthorized by local license), they earn profits and revenue from ad services. (e.g. insert banner, popunder, miner, many tracking and monetisation services, ...)",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/master/ThaiParanoid.txt",
+    "description": "Web list \"Leech\" for filtering out search results",
+    "descriptionSourceUrl": "https://github.com/pureexe/LeeCh-List/blob/master/README.md",
     "discontinuedDate": null,
     "donateUrl": null,
     "emailAddress": null,
