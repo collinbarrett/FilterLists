@@ -919,7 +919,7 @@
   },
   {
     "id": 52,
-    "description": "Block all well known privacy trackers. (<a href=\"https://filterlists.com/#EasyList\">EasyList</a> + <a href=\"https://filterlists.com/#EasyPrivacy\">EasyPrivacy</a> + <a href=\"https://filterlists.com/#FanboysSocialBlockingList\">Fanboy's Social Blocking List</a>)",
+    "description": "Block all well known privacy trackers.",
     "descriptionSourceUrl": "https://web.archive.org/web/20160425221243/http://gnuzilla.gnu.org/filters/blacklist.txt",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -991,7 +991,7 @@
   },
   {
     "id": 56,
-    "description": "A list combining <a href=\"https://filterlists.com/#LatvianList\">Latvian List</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
+    "description": "A list combining Latvian List and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -1135,7 +1135,7 @@
   },
   {
     "id": 64,
-    "description": "A list combining <a href=\"https://filterlists.com/#MalwareDomainList\">Malware Domain List</a> and <a href=\"https://filterlists.com/#Spybot\">Spybot</a>.",
+    "description": "A list combining Malware Domain List and Spybot.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -1153,7 +1153,7 @@
   },
   {
     "id": 65,
-    "description": "A list combining <a href=\"https://filterlists.com/#MalwareDomainList\">Malware Domain List</a>, <a href=\"https://filterlists.com/#PeterLowesList\">Peter Lowe's List</a>, <a href=\"https://filterlists.com/#Spybot\">Spybot</a>, and <a href=\"https://filterlists.com/#SpywareBlaster\">Spyware Blaster</a>.",
+    "description": "A list combining Malware Domain List, Peter Lowe's List, Spybot, and Spyware Blaster.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -1441,7 +1441,7 @@
   },
   {
     "id": 81,
-    "description": "Windows installers ads sources sites based on <a href=\"https://unchecky.com/\">Unchecky</a> content.",
+    "description": "Windows installers ads sources sites based on Unchecky content.",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -2089,7 +2089,7 @@
   },
   {
     "id": 117,
-    "description": "A list combining <a href=\"https://filterlists.com/#ROList\">ROList</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
+    "description": "A list combining ROList and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -2377,7 +2377,7 @@
   },
   {
     "id": 133,
-    "description": "A list combining <a href=\"https://filterlists.com/#RUAdList\">RU AdList</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
+    "description": "A list combining RU AdList and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -2467,7 +2467,7 @@
   },
   {
     "id": 138,
-    "description": "Spotify ads sources sites based on <a href=\"https://github.com/Xeroday/Spotify-Ad-Blocker\">EZBlocker</a> content.",
+    "description": "Spotify ads sources sites based on EZBlocker content.",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -3205,7 +3205,7 @@
   },
   {
     "id": 179,
-    "description": "A non-comprehensive malware hosts list meant to be used in conjunction with the <a href=\"http://www.hostsfile.org/pac.html\">King of the PAC</a> file.",
+    "description": "A non-comprehensive malware hosts list meant to be used in conjunction with the King of the PAC file.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -3403,7 +3403,7 @@
   },
   {
     "id": 190,
-    "description": "Spam sites based on <a href=\"https://filterlists.com/#BadHosts\">BadHosts</a> content.",
+    "description": "Spam sites based on BadHosts content.",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -3421,7 +3421,7 @@
   },
   {
     "id": 191,
-    "description": "Risk content sites based on <a href=\"https://filterlists.com/#BadHosts\">BadHosts</a> content.",
+    "description": "Risk content sites based on BadHosts content.",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -3439,7 +3439,7 @@
   },
   {
     "id": 192,
-    "description": "Dead sites based on <a href=\"https://filterlists.com/#BadHosts\">BadHosts</a> content.",
+    "description": "Dead sites based on BadHosts content.",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -3529,7 +3529,7 @@
   },
   {
     "id": 197,
-    "description": "A list combining <a href=\"https://filterlists.com/#ABPindo\">ABPindo</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
+    "description": "A list combining ABPindo and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -3799,7 +3799,7 @@
   },
   {
     "id": 212,
-    "description": "2o7Net tracking sites based on <a href=\"https://filterlists.com/#BadHosts\">BadHosts</a> content.",
+    "description": "2o7Net tracking sites based on BadHosts content.",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -4321,7 +4321,7 @@
   },
   {
     "id": 241,
-    "description": "A list combining <a href=\"https://filterlists.com/#EasyPrivacy\">EasyPrivacy</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
+    "description": "A list combining EasyPrivacy and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -4429,7 +4429,7 @@
   },
   {
     "id": 247,
-    "description": "In page Pop-Ups and other annoyances; thereby substantially decreasing web page loading times and uncluttering them (includes <a href=\"https://filterlists.com/#FanboysSocialBlockingList\">Fanboy's Social Blocking List</a> and <a href=\"https://filterlists.com/#FanboysCookiemonsterList\">Fanboy's Cookiemonster List</a>.)",
+    "description": "In page Pop-Ups and other annoyances; thereby substantially decreasing web page loading times and uncluttering them (includes Fanboy's Social Blocking List and Fanboy's Cookiemonster List.)",
     "descriptionSourceUrl": "https://fanboy.co.nz/",
     "discontinuedDate": null,
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
@@ -4447,7 +4447,7 @@
   },
   {
     "id": 248,
-    "description": "A list combining <a href=\"https://filterlists.com/#EasyListLithuania\">EasyList Lithuania</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
+    "description": "A list combining EasyList Lithuania and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -4573,7 +4573,7 @@
   },
   {
     "id": 255,
-    "description": "A list combining <a href=\"https://filterlists.com/#EasyList\">EasyList</a>, <a href=\"https://filterlists.com/#EasyPrivacy\">EasyPrivacy</a>, <a href=\"https://filterlists.com/#FanboysEnhancedTrackingList\">Fanboy's Enhanced Tracking List</a>, and <a href=\"https://filterlists.com/#FanboysAnnoyanceList\">Fanboy's Annoyance List</a>.",
+    "description": "A list combining EasyList, EasyPrivacy, Fanboy's Enhanced Tracking List, and Fanboy's Annoyance List.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -4771,7 +4771,7 @@
   },
   {
     "id": 266,
-    "description": "A list combining <a href=\"https://filterlists.com/#EasyList\">EasyList</a>, <a href=\"https://filterlists.com/#EasyPrivacy\">EasyPrivacy</a>, and <a href=\"https://filterlists.com/#FanboysEnhancedTrackingList\">Fanboy's Enhanced Tracking List</a>.",
+    "description": "A list combining EasyList, EasyPrivacy, and Fanboy's Enhanced Tracking List.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -4825,7 +4825,7 @@
   },
   {
     "id": 269,
-    "description": "A list combining <a href=\"https://filterlists.com/#EasyListItaly\">EasyList Italy</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
+    "description": "A list combining EasyList Italy and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -5077,7 +5077,7 @@
   },
   {
     "id": 283,
-    "description": "A list combining <a href=\"https://filterlists.com/#BulgarianList\">Bulgarian List</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
+    "description": "A list combining Bulgarian List and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -5203,7 +5203,7 @@
   },
   {
     "id": 290,
-    "description": "A list combining <a href=\"https://filterlists.com/#EasyListHebrew\">EasyList Hebrew</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
+    "description": "A list combining EasyList Hebrew and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -5239,7 +5239,7 @@
   },
   {
     "id": 292,
-    "description": "A list combining <a href=\"https://filterlists.com/#EasyListGermany\">EasyList Germany</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
+    "description": "A list combining EasyList Germany and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -5275,7 +5275,7 @@
   },
   {
     "id": 294,
-    "description": "A list combining <a href=\"https://filterlists.com/#EasyListDutch\">EasyList Dutch</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
+    "description": "A list combining EasyList Dutch and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -5329,7 +5329,7 @@
   },
   {
     "id": 297,
-    "description": "A list combining <a href=\"https://filterlists.com/#EasyListCzechandSlovak\">EasyList Czech and Slovak</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
+    "description": "A list combining EasyList Czech and Slovak and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -5365,7 +5365,7 @@
   },
   {
     "id": 299,
-    "description": "A list combining <a href=\"https://filterlists.com/#EasyListChina\">EasyList China</a> and <a href=\"https://filterlists.com/#EasyList\">EasyList</a>.",
+    "description": "A list combining EasyList China and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
