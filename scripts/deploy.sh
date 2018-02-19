@@ -26,4 +26,4 @@ sshpass -p $FTP_PASSWORD ssh -o StrictHostKeyChecking=no $FTP_USER@$FTP_HOST 'su
 sleep 10
 
 #prime app
-curl https://beta.filterlists.com/
+curl https://filterlists.com/
