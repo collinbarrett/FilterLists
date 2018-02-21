@@ -327,5 +327,12 @@
     "homeUrl": "https://github.com/eladkarako",
     "name": "Elad Karako",
     "twitterHandle": null
+  },
+  {
+    "id": 49,
+    "emailAddress": "zerodot1@bk.ru",
+    "homeUrl": "https://github.com/ZeroDot1",
+    "name": "ZeroDot1",
+    "twitterHandle": "hobbygrafix"
   }
 ]
