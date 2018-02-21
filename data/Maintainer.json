@@ -320,5 +320,12 @@
     "homeUrl": "https://github.com/reek",
     "name": "Reek",
     "twitterHandle": null
+  },
+  {
+    "id": 48,
+    "emailAddress": null,
+    "homeUrl": "https://github.com/eladkarako",
+    "name": "Elad Karako",
+    "twitterHandle": null
   }
 ]
