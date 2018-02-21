@@ -4538,20 +4538,20 @@
   {
     "id": 253,
     "description": "This filter list for uBlock Origin/Adblock Plus is designed to be used with such lists as EasyList, RU AdList etc., so it's substantially free of intersections with them. The list is made for blocking ad (mostly on Russian websites) missed by other filter lists maintainers. It is regularly updated and actively developed for now.",
-    "descriptionSourceUrl": "https://github.com/hant05080/uBlock-filters",
+    "descriptionSourceUrl": "https://github.com/hant0508/uBlock-filters",
     "discontinuedDate": null,
     "donateUrl": null,
     "emailAddress": "hant0508@gmail.com",
     "forumUrl": null,
-    "homeUrl": "https://github.com/hant05080/uBlock-filters",
-    "issuesUrl": "https://github.com/hant05080/uBlock-filters/issues",
+    "homeUrl": "https://github.com/hant0508/uBlock-filters",
+    "issuesUrl": "https://github.com/hant0508/uBlock-filters/issues",
     "licenseId": 5,
     "name": "Filters by hant0508",
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": "https://raw.githubusercontent.com/hant05080/uBlock-filters/master/filters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/hant0508/uBlock-filters/master/filters.txt"
   },
   {
     "id": 254,
