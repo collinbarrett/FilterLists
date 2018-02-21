@@ -313,5 +313,12 @@
     "homeUrl": "https://adguard.com/",
     "name": "AdGuard",
     "twitterHandle": "adguard"
+  },
+  {
+    "id": 47,
+    "emailAddress": null,
+    "homeUrl": "https://github.com/reek",
+    "name": "Reek",
+    "twitterHandle": null
   }
 ]

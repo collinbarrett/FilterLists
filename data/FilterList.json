@@ -3710,19 +3710,19 @@
   {
     "id": 207,
     "description": "Helps you keep your Ad-Blocker active, when you visit a website and it asks you to disable. Composed of a user script «AakScript» written in javascript and a filter list «AakList» using the same syntax as lists AdBlock and AdBlock Plus, the two are complementary and unlock different website.",
-    "descriptionSourceUrl": "https://github.com/reek/anti-adblock-killer/",
-    "discontinuedDate": null,
+    "descriptionSourceUrl": "https://github.com/reek/anti-adblock-killer/blob/master/README.md",
+    "discontinuedDate": "2016-11-17T00:00:00",
     "donateUrl": "https://github.com/reek/anti-adblock-killer/#donate",
     "emailAddress": null,
     "forumUrl": null,
     "homeUrl": "https://github.com/reek/anti-adblock-killer/",
     "issuesUrl": "https://github.com/reek/anti-adblock-killer/issues",
-    "licenseId": 5,
+    "licenseId": 8,
     "name": "AakList (Anti-Adblock Killer)",
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
   },
   {
