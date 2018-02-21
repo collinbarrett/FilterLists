@@ -51,6 +51,20 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            sortMethod: (a: any, b: any) => a.toUpperCase() > b.toUpperCase() ? 1 : -1
                        },
                        {
+                           Header: "Languages",
+                           accessor: "languages",
+                           filterable: true,
+                           filterMethod: (filter: any, row: any) => row[filter.id].join().toUpperCase()
+                               .includes(filter.value.toUpperCase()),
+                           sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
+                           Cell: (cell: any) => <div style={{
+                               display: "inline-block", wordWrap: "break-word" }}>{cell
+                               .value.join(", ")}</div>,
+                           width: 100,
+                           headerClassName: "hidden-xs",
+                           className: "hidden-xs"
+                       },
+                       {
                            Header: "Details",
                            accessor: "id",
                            sortable: false,
@@ -76,6 +90,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
 interface IFilterListSummaryDto {
     id: number;
     name: string;
+    languages: string[];
     viewUrl: string;
 }
 
