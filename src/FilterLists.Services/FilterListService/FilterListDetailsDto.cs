@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace FilterLists.Services.FilterListService
 {
@@ -13,6 +14,7 @@ namespace FilterLists.Services.FilterListService
         public string ForumUrl { get; set; }
         public string HomeUrl { get; set; }
         public string IssuesUrl { get; set; }
+        public IEnumerable<string> Languages { get; set; }
         public string Name { get; set; }
         public string PolicyUrl { get; set; }
         public DateTime? PublishedDate { get; set; }

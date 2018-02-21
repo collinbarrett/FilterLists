@@ -3,7 +3,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
-using FilterLists.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Services.FilterListService
@@ -19,7 +18,7 @@ namespace FilterLists.Services.FilterListService
 
         public async Task<IEnumerable<FilterListSummaryDto>> GetAllSummariesAsync()
         {
-            return await filterListsDbContext.Set<FilterList>()
+            return await filterListsDbContext.FilterLists
                                              .AsNoTracking()
                                              .OrderBy(x => x.Name)
                                              .ProjectTo<FilterListSummaryDto>()
@@ -28,7 +27,7 @@ namespace FilterLists.Services.FilterListService
 
         public async Task<FilterListDetailsDto> GetDetailsAsync(int id)
         {
-            return await filterListsDbContext.Set<FilterList>()
+            return await filterListsDbContext.FilterLists
                                              .AsNoTracking()
                                              .ProjectTo<FilterListDetailsDto>()
                                              .FirstAsync(x => x.Id == id);
