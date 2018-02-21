@@ -9,8 +9,15 @@ namespace FilterLists.Services.FilterListService
         public MappingProfiles()
         {
             CreateMap<FilterList, FilterListDetailsDto>()
-                .ForMember(d => d.Languages,
-                    opt => opt.MapFrom(c => c.FilterListLanguages.Select(x => x.Language.Name)));
+                .ForMember(dto => dto.Languages,
+                    conf => conf.MapFrom(list =>
+                        list.FilterListLanguages.Select(listLangs => listLangs.Language.Name)));
+
+            //TODO: improve performance (https://stackoverflow.com/q/48897083/2343739)
+            CreateMap<FilterList, FilterListSummaryDto>()
+                .ForMember(dto => dto.Languages,
+                    conf => conf.MapFrom(list =>
+                        list.FilterListLanguages.Select(listLangs => listLangs.Language.Name)));
         }
     }
 }
