@@ -5481,12 +5481,12 @@
     "forumUrl": "https://easylist-czech-and-slovak.tenderapp.com/",
     "homeUrl": "https://adblock.sk/",
     "issuesUrl": "https://github.com/tomasko126/easylistczechandslovak/issues",
-    "licenseId": 5,
+    "licenseId": 8,
     "name": "EasyList Czech and Slovak",
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters.txt"
   },
   {
@@ -6622,5 +6622,41 @@
     "submissionUrl": null,
     "syntaxId": "7",
     "viewUrl": "https://raw.githubusercontent.com/uMatrix-Rules/uMatrix-Rules-Site/master/rules.txt"
+  },
+  {
+    "id": 369,
+    "description": "Official filter list file used for blocking ads on Czech and Slovak websites.",
+    "descriptionSourceUrl": "https://github.com/tomasko126/easylistczechandslovak",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": "tomastaro@adblock.sk",
+    "forumUrl": "https://easylist-czech-and-slovak.tenderapp.com/",
+    "homeUrl": "https://adblock.sk/",
+    "issuesUrl": "https://github.com/tomasko126/easylistczechandslovak/issues",
+    "licenseId": 8,
+    "name": "EasyList Czech and Slovak - uBlock",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters_ublock.txt"
+  },
+  {
+    "id": 370,
+    "description": "Official filter list file used for blocking ads on Czech and Slovak websites.",
+    "descriptionSourceUrl": "https://github.com/tomasko126/easylistczechandslovak",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": "tomastaro@adblock.sk",
+    "forumUrl": "https://easylist-czech-and-slovak.tenderapp.com/",
+    "homeUrl": "https://adblock.sk/",
+    "issuesUrl": "https://github.com/tomasko126/easylistczechandslovak/issues",
+    "licenseId": 8,
+    "name": "EasyList Czech and Slovak - IE",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 10,
+    "viewUrl": "https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters_ie.tpl"
   }
 ]

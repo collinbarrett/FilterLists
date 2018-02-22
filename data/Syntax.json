@@ -38,5 +38,10 @@
     "id": 9,
     "definitionUrl": null,
     "name": "IPs"
+  },
+  {
+    "id": 10,
+    "definitionUrl": "https://blogs.msdn.microsoft.com/ie/2010/12/07/ie9-and-privacy-introducing-tracking-protection/",
+    "name": "Tracking Protection List (IE)"
   }
 ]
