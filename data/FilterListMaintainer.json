@@ -506,5 +506,13 @@
   {
     "filterListId": 366,
     "maintainerId": 50
+  },
+  {
+    "filterListId": 367,
+    "maintainerId": 51
+  },
+  {
+    "filterListId": 368,
+    "maintainerId": 51
   }
 ]

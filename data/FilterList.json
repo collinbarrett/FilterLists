@@ -6278,7 +6278,7 @@
     "policyUrl": null,
     "publishedDate": "2017-10-23T00:00:00",
     "submissionUrl": null,
-    "syntaxId": 7,
+    "syntaxId": 6,
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB_uBlock_AdGuard.txt"
   },
   {
@@ -6586,5 +6586,41 @@
     "submissionUrl": "http://www.squidblacklist.org/php/url_submission_form.php",
     "syntaxId": 2,
     "viewUrl": "https://www.squidblacklist.org/downloads/dg-malicious.acl"
+  },
+  {
+    "id": 367,
+    "description": "uMatrix ruleset unbreaks all Alexa 100 and more at domain level",
+    "descriptionSourceUrl": "https://github.com/uMatrix-Rules/uMatrix-Rules-Domain",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": "lolipopplus@protonmail.com",
+    "forumUrl": null,
+    "homeUrl": "https://umatrix-rules.github.io/",
+    "issuesUrl": "https://github.com/uMatrix-Rules/uMatrix-Rules-Domain/issues",
+    "licenseId": 9,
+    "name": "uMatrix Rules - Domain",
+    "policyUrl": null,
+    "publishedDate": "2017-10-12T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": "7",
+    "viewUrl": "https://raw.githubusercontent.com/uMatrix-Rules/uMatrix-Rules-Domain/master/rules.txt"
+  },
+  {
+    "id": 368,
+    "description": "uMatrix ruleset unbreaks all Alexa 100 and more at site level",
+    "descriptionSourceUrl": "https://github.com/uMatrix-Rules/uMatrix-Rules-Site",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": "lolipopplus@protonmail.com",
+    "forumUrl": null,
+    "homeUrl": "https://umatrix-rules.github.io/",
+    "issuesUrl": "https://github.com/uMatrix-Rules/uMatrix-Rules-Site/issues",
+    "licenseId": 9,
+    "name": "uMatrix Rules - Site",
+    "policyUrl": null,
+    "publishedDate": "2017-10-12T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": "7",
+    "viewUrl": "https://raw.githubusercontent.com/uMatrix-Rules/uMatrix-Rules-Site/master/rules.txt"
   }
 ]

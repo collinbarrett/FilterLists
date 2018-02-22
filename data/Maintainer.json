@@ -341,5 +341,12 @@
     "homeUrl": "https://www.squidblacklist.org/",
     "name": "Squid Blacklist",
     "twitterHandle": null
+  },
+  {
+    "id": 51,
+    "emailAddress": "lolipopplus@protonmail.com",
+    "homeUrl": "https://github.com/Rictusempra",
+    "name": "Rictusempra",
+    "twitterHandle": null
   }
 ]
