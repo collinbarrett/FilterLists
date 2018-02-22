@@ -238,5 +238,13 @@
   {
     "mergeFilterListId": 331,
     "upstreamFilterListId": 333
+  },
+  {
+    "mergeFilterListId": 371,
+    "upstreamFilterListId": 110
+  },
+  {
+    "mergeFilterListId": 371,
+    "upstreamFilterListId": 232
   }
 ]

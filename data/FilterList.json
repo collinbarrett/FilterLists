@@ -6658,5 +6658,23 @@
     "submissionUrl": null,
     "syntaxId": 10,
     "viewUrl": "https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters_ie.tpl"
+  },
+  {
+    "id": 371,
+    "description": "AFNIL’s intention is to merge third-party lists of known fakenews sites and make them usable for programs that can block.",
+    "descriptionSourceUrl": "https://afnil-antifakenewsinternationallist.github.io/AFNIL/",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://afnil-antifakenewsinternationallist.github.io/AFNIL/",
+    "issuesUrl": "https://github.com/AFNIL-AntiFakeNewsInternationalList/AFNIL/issues",
+    "licenseId": 4,
+    "name": "AFNIL - Anti Fake News International List",
+    "policyUrl": null,
+    "publishedDate": "2017-12-20T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": 7,
+    "viewUrl": "https://raw.githubusercontent.com/AFNIL-AntiFakeNewsInternationalList/AFNIL/master/AFNIL-ABP-uBO.txt"
   }
 ]
