@@ -47,10 +47,6 @@ One can use FilterLists in the following software tools. Software support of any
 
 FilterLists does not condone or endorse implementing any particular FilterList or blocking any particular advertisement network. Make sure to financially support your favorite sites in some way if you choose to block their advertisements. FilterLists is also in no way officially affiliated with any of the software vendors or list maintainers referenced on this site.
 
-### Terms
-
-FilterLists is open-source and provided as-is under the [MIT License](https://github.com/collinbarrett/FilterLists/blob/master/LICENSE).
-
 ### Privacy
 
 We respect your privacy. That is the whole point of this site. The only minor data we collect about visitors is what [CloudFlare](https://www.cloudflare.com/analytics/) and [GitHub](https://help.github.com/articles/github-privacy-statement/) captures.
