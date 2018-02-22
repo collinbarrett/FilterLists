@@ -31,7 +31,7 @@ Typical adblockers run as an extension in popular web browsers. As we browse the
 
 ## Software Support
 
-One can use of the lists on FilterLists in the following software tools.
+One can use FilterLists in the following software tools. Software support of any given list varies by the list's syntax.
 
 *   [1Blocker](https://1blocker.com/)
 *   [AdAway](https://adaway.org/)
@@ -53,4 +53,4 @@ FilterLists is open-source and provided as-is under the [MIT License](https://gi
 
 ### Privacy
 
-We respect your privacy. That is the whole point of this site. The only minor data we collect about visitors is what [CloudFlare](https://www.cloudflare.com/analytics/) captures.
+We respect your privacy. That is the whole point of this site. The only minor data we collect about visitors is what [CloudFlare](https://www.cloudflare.com/analytics/) and [GitHub](https://help.github.com/articles/github-privacy-statement/) captures.
