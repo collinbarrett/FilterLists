@@ -1692,13 +1692,36 @@
       }
     },
     "file-loader": {
-      "version": "1.1.6",
-      "resolved": "https://registry.npmjs.org/file-loader/-/file-loader-1.1.6.tgz",
-      "integrity": "sha512-873ztuL+/hfvXbLDJ262PGO6XjERnybJu2gW1/5j8HUfxSiFJI9Hj/DhZ50ZGRUxBvuNiazb/cM2rh9pqrxP6Q==",
+      "version": "1.1.9",
+      "resolved": "https://registry.npmjs.org/file-loader/-/file-loader-1.1.9.tgz",
+      "integrity": "sha512-6ql03hOSoJHBkTB+3De/f7NJse+JXkUwvAf3y4Q5rIcTD0kqJiE3btvLnDcZT+P4t1QYLb9dJ9EI4auzfo3wFA==",
       "dev": true,
       "requires": {
         "loader-utils": "1.1.0",
-        "schema-utils": "0.3.0"
+        "schema-utils": "0.4.5"
+      },
+      "dependencies": {
+        "ajv": {
+          "version": "6.1.1",
+          "resolved": "https://registry.npmjs.org/ajv/-/ajv-6.1.1.tgz",
+          "integrity": "sha1-l41Zf7wrfQ5aXD3esUmmgvKr+g4=",
+          "dev": true,
+          "requires": {
+            "fast-deep-equal": "1.0.0",
+            "fast-json-stable-stringify": "2.0.0",
+            "json-schema-traverse": "0.3.1"
+          }
+        },
+        "schema-utils": {
+          "version": "0.4.5",
+          "resolved": "https://registry.npmjs.org/schema-utils/-/schema-utils-0.4.5.tgz",
+          "integrity": "sha512-yYrjb9TX2k/J1Y5UNy3KYdZq10xhYcF8nMpAW6o3hy6Q8WSIEf9lJHG/ePnOBfziPM3fvQwfOwa13U/Fh8qTfA==",
+          "dev": true,
+          "requires": {
+            "ajv": "6.1.1",
+            "ajv-keywords": "3.1.0"
+          }
+        }
       }
     },
     "filename-regex": {
@@ -4802,9 +4825,9 @@
       }
     },
     "react-modal": {
-      "version": "3.2.1",
-      "resolved": "https://registry.npmjs.org/react-modal/-/react-modal-3.2.1.tgz",
-      "integrity": "sha512-6idnYaDRvVRq702f1sgvMIisgHxYF4OoNDOLuWkxe0GoquI/CTVVXa9wvCFdu3vCTE85zMwX1GgUVyJfO+VnjQ==",
+      "version": "3.3.1",
+      "resolved": "https://registry.npmjs.org/react-modal/-/react-modal-3.3.1.tgz",
+      "integrity": "sha512-d1A8xXIvW+YVKwRMrFY5qneuC5FSa4OnOE78hgqfz+MYLb1Ai/B3D3Dzx1Zrw4ZD5rS16SKiPe5rl4UZt+AjpQ==",
       "requires": {
         "exenv": "1.2.2",
         "prop-types": "15.6.0",
