@@ -334,5 +334,12 @@
     "homeUrl": "https://github.com/ZeroDot1",
     "name": "ZeroDot1",
     "twitterHandle": "hobbygrafix"
+  },
+  {
+    "id": 50,
+    "emailAddress": "webmaster@squidblacklist.org",
+    "homeUrl": "https://www.squidblacklist.org/",
+    "name": "Squid Blacklist",
+    "twitterHandle": null
   }
 ]
