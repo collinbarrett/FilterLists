@@ -6730,5 +6730,23 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Hubird-au/Adversity/master/Extreme-Measures.txt"
+  },
+  {
+    "id": 375,
+    "description": "A comprehensive, all-in-one adblock list for thorough blocking of trackers, popup ads, ads, unwanted cookies, fake news, cookie warning messages, unwanted comment sections, crypto-coin mining, YouTube clutter and social network hassles.",
+    "descriptionSourceUrl": "https://hl2guide.github.io/All-in-One-Customized-Adblock-List/",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://hl2guide.github.io/All-in-One-Customized-Adblock-List/",
+    "issuesUrl": "https://github.com/hl2guide/All-in-One-Customized-Adblock-List/issues",
+    "licenseId": 2,
+    "name": "All-in-One Customized Adblock List",
+    "policyUrl": null,
+    "publishedDate": "2018-02-17T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/hl2guide/All-in-One-Customized-Adblock-List/master/deanoman-adblocklist.txt"
   }
 ]
