@@ -6802,5 +6802,23 @@
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/cb-software/CB-Malicious-Domains/master/block_lists/hosts"
+  },
+  {
+    "id": 379,
+    "description": "These filters will cause a button labeled: \"Disqus blocked by uBlock Origin: click to unblock\" to be embedded where Disqus comments would normally be loaded. Click the button to force the comments to be loaded.",
+    "descriptionSourceUrl": "https://gist.github.com/gorhill/ef1b62d606473c68d524",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://gist.github.com/gorhill/ef1b62d606473c68d524",
+    "issuesUrl": null,
+    "licenseId": 5,
+    "name": "Disqus Click-to-Load",
+    "policyUrl": null,
+    "publishedDate": "2016-03-09T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": 4,
+    "viewUrl": "https://gist.github.com/gorhill/ef1b62d606473c68d524/raw/f8181faac18cb5172c7c9bca8e5a3b22f0c925d0/gistfile1.txt"
   }
 ]

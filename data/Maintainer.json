@@ -383,5 +383,12 @@
     "homeUrl": "https://github.com/cb-software",
     "name": "cb-software",
     "twitterHandle": null
+  },
+  {
+    "id": 57,
+    "emailAddress": null,
+    "homeUrl": "https://github.com/gorhill",
+    "name": "Raymond Hill",
+    "twitterHandle": null
   }
 ]
