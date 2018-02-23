@@ -6766,5 +6766,41 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/haykam821/Blocklists/master/mmo.txt"
+  },
+  {
+    "id": 377,
+    "description": "A block list of malicious domains.",
+    "descriptionSourceUrl": "https://github.com/cb-software/CB-Malicious-Domains/blob/master/README.md",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/cb-software/CB-Malicious-Domains",
+    "issuesUrl": "https://github.com/cb-software/CB-Malicious-Domains/issues",
+    "licenseId": 2,
+    "name": "CB Malicious Domains",
+    "policyUrl": null,
+    "publishedDate": "2018-02-21T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/cb-software/CB-Malicious-Domains/master/block_lists/adblock_plus.txt"
+  },
+  {
+    "id": 378,
+    "description": "A block list of malicious domains.",
+    "descriptionSourceUrl": "https://github.com/cb-software/CB-Malicious-Domains/blob/master/README.md",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/cb-software/CB-Malicious-Domains",
+    "issuesUrl": "https://github.com/cb-software/CB-Malicious-Domains/issues",
+    "licenseId": 2,
+    "name": "CB Malicious Domains - Hosts",
+    "policyUrl": null,
+    "publishedDate": "2018-02-21T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/cb-software/CB-Malicious-Domains/master/block_lists/hosts"
   }
 ]
