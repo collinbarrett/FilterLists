@@ -6748,5 +6748,23 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/hl2guide/All-in-One-Customized-Adblock-List/master/deanoman-adblocklist.txt"
+  },
+  {
+    "id": 376,
+    "description": "Blocks title screen ads on several large MMO game websites.",
+    "descriptionSourceUrl": "https://github.com/collinbarrett/FilterLists/issues/257",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/haykam821/Blocklists",
+    "issuesUrl": "https://github.com/haykam821/Blocklists/issues",
+    "licenseId": 2,
+    "name": "Haykam's MMO List",
+    "policyUrl": null,
+    "publishedDate": "2018-02-19T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/haykam821/Blocklists/master/mmo.txt"
   }
 ]
