@@ -6820,5 +6820,23 @@
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://gist.github.com/gorhill/ef1b62d606473c68d524/raw/f8181faac18cb5172c7c9bca8e5a3b22f0c925d0/gistfile1.txt"
+  },
+  {
+    "id": 380,
+    "description": "Very experimental custom filters",
+    "descriptionSourceUrl": "https://github.com/toshiya44/myAssets/blob/master/README.md",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/toshiya44/myAssets",
+    "issuesUrl": "https://github.com/toshiya44/myAssets/issues",
+    "licenseId": 4,
+    "name": "Toshiya's Filter List - Experimental",
+    "policyUrl": null,
+    "publishedDate": "2016-03-09T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/toshiya44/myAssets/master/filters-exp.txt"
   }
 ]
