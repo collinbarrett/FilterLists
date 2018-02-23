@@ -6838,5 +6838,23 @@
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/toshiya44/myAssets/master/filters-exp.txt"
+  },
+  {
+    "id": 381,
+    "description": "Saving the Internets... one roll at a time.",
+    "descriptionSourceUrl": "http://rickrolldb.com/",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "http://rickrolldb.com/",
+    "issuesUrl": "https://github.com/jamiew/rickrolldb/issues",
+    "licenseId": 5,
+    "name": "Rickroll Blacklist",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": "http://rickrolldb.com/",
+    "syntaxId": 3,
+    "viewUrl": "http://rickrolldb.com/ricklist.txt"
   }
 ]
