@@ -11,7 +11,10 @@ namespace FilterLists.Services.FilterListService
             CreateMap<FilterList, FilterListDetailsDto>()
                 .ForMember(dto => dto.Languages,
                     conf => conf.MapFrom(list =>
-                        list.FilterListLanguages.Select(listLangs => listLangs.Language.Name)));
+                        list.FilterListLanguages.Select(listLangs => listLangs.Language.Name)))
+                .ForMember(dto => dto.Maintainers,
+                    conf => conf.MapFrom(list =>
+                        list.FilterListMaintainers.Select(listMaints => listMaints.Maintainer)));
 
             //TODO: improve performance (https://stackoverflow.com/q/48897083/2343739)
             CreateMap<FilterList, FilterListSummaryDto>()

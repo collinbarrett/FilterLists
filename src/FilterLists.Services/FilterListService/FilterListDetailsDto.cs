@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using FilterLists.Data.Entities;
 
 namespace FilterLists.Services.FilterListService
 {
@@ -15,6 +16,7 @@ namespace FilterLists.Services.FilterListService
         public string HomeUrl { get; set; }
         public string IssuesUrl { get; set; }
         public IEnumerable<string> Languages { get; set; }
+        public IEnumerable<MaintainerDto> Maintainers { get; set; }
         public string Name { get; set; }
         public string PolicyUrl { get; set; }
         public DateTime? PublishedDate { get; set; }
