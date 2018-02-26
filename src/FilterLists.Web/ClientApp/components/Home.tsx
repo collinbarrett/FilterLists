@@ -54,7 +54,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            Header: "Languages",
                            accessor: "languages",
                            filterable: true,
-                           filterMethod: (filter: any, row: any) => row[filter.id].join().toUpperCase()
+                           filterMethod: (filter: any, row: any) => row[filter.id].map((e: any) => e.name).join().toUpperCase()
                                .includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
                            Cell: (cell: any) => <div>{cell.value.map((e: any) => e.name).join(", ")}</div>,
