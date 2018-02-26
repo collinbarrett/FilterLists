@@ -30,7 +30,8 @@ namespace FilterLists.Services.FilterListService
             return await filterListsDbContext.FilterLists
                                              .AsNoTracking()
                                              .ProjectTo<ListDetailsDto>()
-                                             .FirstAsync(x => x.Id == id);
+                                             .FirstAsync(x => x.Id == id)
+                                             .FilterParentListFromMaintainerAdditionalLists();
         }
     }
 }
