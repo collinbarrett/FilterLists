@@ -47,18 +47,20 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            Header: "Name",
                            accessor: "name",
                            filterable: true,
-                           filterMethod: (filter: any, row: any) => row[filter.id].toUpperCase().includes(filter.value.toUpperCase()),
+                           filterMethod: (filter: any, row: any) => row[filter.id].toUpperCase()
+                               .includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.toUpperCase() > b.toUpperCase() ? 1 : -1
                        },
                        {
                            Header: "Languages",
                            accessor: "languages",
                            filterable: true,
-                           filterMethod: (filter: any, row: any) => row[filter.id].map((e: any) => e.name).join().toUpperCase()
+                           filterMethod: (filter: any, row: any) => row[filter.id]
+                               .map((e: any) => e.name.concat(e.iso6391)).join().toUpperCase()
                                .includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
                            Cell: (cell: any) => <div>{cell.value.map((e: any) => e.name).join(", ")}</div>,
-                           style: { whiteSpace: "inherit"},
+                           style: { whiteSpace: "inherit" },
                            width: 100,
                            headerClassName: "hidden-xs",
                            className: "hidden-xs"
