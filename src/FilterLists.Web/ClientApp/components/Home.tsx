@@ -57,7 +57,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            filterMethod: (filter: any, row: any) => row[filter.id].join().toUpperCase()
                                .includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
-                           Cell: (cell: any) => <div>{cell.value.join(", ")}</div>,
+                           Cell: (cell: any) => <div>{cell.value.map((e: any) => e.name).join(", ")}</div>,
                            style: { whiteSpace: "inherit"},
                            width: 100,
                            headerClassName: "hidden-xs",
@@ -89,8 +89,13 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
 interface IFilterListSummaryDto {
     id: number;
     name: string;
-    languages: string[];
+    languages: IListLanguageDto[];
     viewUrl: string;
+}
+
+interface IListLanguageDto {
+    name: string;
+    iso6391: string;
 }
 
 //TODO: deduplicate function (maybe to a utils.js) also in ListDetailsModal.tsx
