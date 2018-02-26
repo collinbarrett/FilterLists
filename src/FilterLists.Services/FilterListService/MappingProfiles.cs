@@ -25,6 +25,11 @@ namespace FilterLists.Services.FilterListService
                 .ForMember(dto => dto.AdditionalLists,
                     conf => conf.MapFrom(maint =>
                         maint.FilterListMaintainers.Select(listMaints => listMaints.FilterList)));
+
+            CreateMap<Syntax, ListSyntaxDto>()
+                .ForMember(dto => dto.SupportedSoftware,
+                    conf => conf.MapFrom(syntax =>
+                        syntax.SoftwareSyntaxes.Select(softSyn => softSyn.Software)));
         }
     }
 }
