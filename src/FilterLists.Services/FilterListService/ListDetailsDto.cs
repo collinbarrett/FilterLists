@@ -21,6 +21,7 @@ namespace FilterLists.Services.FilterListService
         public string PolicyUrl { get; set; }
         public DateTime? PublishedDate { get; set; }
         public string SubmissionUrl { get; set; }
+        public ListSyntaxDto Syntax { get; set; }
         public string ViewUrl { get; set; }
     }
 
@@ -43,6 +44,19 @@ namespace FilterLists.Services.FilterListService
     public class ListLicenseDto
     {
         public string DescriptionUrl { get; set; }
+        public string Name { get; set; }
+    }
+
+    public class ListSyntaxDto
+    {
+        public string DefinitionUrl { get; set; }
+        public string Name { get; set; }
+        public IEnumerable<SyntaxSupportedSoftwareDto> SupportedSoftware { get; set; }
+    }
+
+    public class SyntaxSupportedSoftwareDto
+    {
+        public string HomeUrl { get; set; }
         public string Name { get; set; }
     }
 }
