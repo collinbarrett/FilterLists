@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using FilterLists.Data.Entities;
 
 namespace FilterLists.Services.FilterListService
 {
-    public class FilterListDetailsDto
+    public class ListDetailsDto
     {
         public int Id { get; set; }
         public string Description { get; set; }
@@ -16,11 +15,27 @@ namespace FilterLists.Services.FilterListService
         public string HomeUrl { get; set; }
         public string IssuesUrl { get; set; }
         public IEnumerable<string> Languages { get; set; }
-        public IEnumerable<MaintainerDto> Maintainers { get; set; }
+        public IEnumerable<ListMaintainerDto> Maintainers { get; set; }
         public string Name { get; set; }
         public string PolicyUrl { get; set; }
         public DateTime? PublishedDate { get; set; }
         public string SubmissionUrl { get; set; }
         public string ViewUrl { get; set; }
+    }
+
+    public class ListMaintainerDto
+    {
+        public int Id { get; set; }
+        public string EmailAddress { get; set; }
+        public string HomeUrl { get; set; }
+        public string Name { get; set; }
+        public string TwitterHandle { get; set; }
+        public IEnumerable<MaintainerAdditionalListsDto> AdditionalLists { get; set; }
+    }
+
+    public class MaintainerAdditionalListsDto
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }

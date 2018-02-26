@@ -8,7 +8,12 @@ namespace FilterLists.Services.FilterListService
     {
         public MappingProfiles()
         {
-            CreateMap<FilterList, FilterListDetailsDto>()
+            CreateMap<FilterList, FilterListSummaryDto>()
+                .ForMember(dto => dto.Languages,
+                    conf => conf.MapFrom(list =>
+                        list.FilterListLanguages.Select(listLangs => listLangs.Language.Name)));
+
+            CreateMap<FilterList, ListDetailsDto>()
                 .ForMember(dto => dto.Languages,
                     conf => conf.MapFrom(list =>
                         list.FilterListLanguages.Select(listLangs => listLangs.Language.Name)))
@@ -16,11 +21,10 @@ namespace FilterLists.Services.FilterListService
                     conf => conf.MapFrom(list =>
                         list.FilterListMaintainers.Select(listMaints => listMaints.Maintainer)));
 
-            //TODO: improve performance (https://stackoverflow.com/q/48897083/2343739)
-            CreateMap<FilterList, FilterListSummaryDto>()
-                .ForMember(dto => dto.Languages,
-                    conf => conf.MapFrom(list =>
-                        list.FilterListLanguages.Select(listLangs => listLangs.Language.Name)));
+            CreateMap<Maintainer, ListMaintainerDto>()
+                .ForMember(dto => dto.AdditionalLists,
+                    conf => conf.MapFrom(maint =>
+                        maint.FilterListMaintainers.Select(listMaints => listMaints.FilterList)));
         }
     }
 }
