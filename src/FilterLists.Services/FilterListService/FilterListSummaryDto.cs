@@ -5,8 +5,14 @@ namespace FilterLists.Services.FilterListService
     public class FilterListSummaryDto
     {
         public int Id { get; set; }
-        public IEnumerable<string> Languages { get; set; }
+        public IEnumerable<ListLanguagesDto> Languages { get; set; }
         public string Name { get; set; }
         public string ViewUrl { get; set; }
+    }
+
+    public class ListLanguagesDto
+    {
+        public string Name { get; set; }
+        public string Iso6391 { get; set; }
     }
 }

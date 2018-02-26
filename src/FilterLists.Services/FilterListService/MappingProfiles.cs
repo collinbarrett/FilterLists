@@ -11,7 +11,7 @@ namespace FilterLists.Services.FilterListService
             CreateMap<FilterList, FilterListSummaryDto>()
                 .ForMember(dto => dto.Languages,
                     conf => conf.MapFrom(list =>
-                        list.FilterListLanguages.Select(listLangs => listLangs.Language.Name)));
+                        list.FilterListLanguages.Select(listLangs => listLangs.Language)));
 
             CreateMap<FilterList, ListDetailsDto>()
                 .ForMember(dto => dto.Languages,
