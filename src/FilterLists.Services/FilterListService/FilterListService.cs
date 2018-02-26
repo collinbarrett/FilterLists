@@ -25,11 +25,11 @@ namespace FilterLists.Services.FilterListService
                                              .ToListAsync();
         }
 
-        public async Task<FilterListDetailsDto> GetDetailsAsync(int id)
+        public async Task<ListDetailsDto> GetDetailsAsync(int id)
         {
             return await filterListsDbContext.FilterLists
                                              .AsNoTracking()
-                                             .ProjectTo<FilterListDetailsDto>()
+                                             .ProjectTo<ListDetailsDto>()
                                              .FirstAsync(x => x.Id == id);
         }
     }
