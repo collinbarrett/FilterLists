@@ -25,6 +25,12 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                   <em>Loading...</em>
               </p>
             : Home.renderFilterListsTable(this.state.filterLists);
+        return <div>
+                   {contents}
+               </div>;
+    }
+
+    componentDidMount() {
         fetch("https://filterlists.com/api/v1/lists")
             .then(response => response.json() as Promise<IFilterListSummaryDto[]>)
             .then(data => {
@@ -33,9 +39,6 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                     loading: false
                 });
             });
-        return <div>
-                   {contents}
-               </div>;
     }
 
     private static renderFilterListsTable(filterLists: IFilterListSummaryDto[]) {
