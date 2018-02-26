@@ -50,7 +50,8 @@ export default class ListDetailsModal extends React.Component<any, any> {
 function FilterListDetails(props: any) {
     return <div>
                <Name name={props.details.name}/>
-               <Description description={props.details.description} url={props.details.descriptionSourceUrl}/>
+               <Description description={props.details.description} url={props.details.descriptionSourceUrl} />
+               <Languages languages={props.details.languages} />
                <PublishedDate date={props.details.publishedDate}/>
                <DiscontinuedDate date={props.details.discontinuedDate}/>
                <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
@@ -74,6 +75,14 @@ function Description(props: any) {
         ? (props.url
             ? <blockquote cite={props.url}>{props.description}</blockquote>
             : <p>{props.description}</p>)
+        : null;
+}
+
+function Languages(props: any) {
+    return props.languages.length > 0
+        ? props.languages.length > 1
+            ? <p>Languages: {props.languages.join(", ")}</p>
+            : <p>Language: {props.languages.join(", ")}</p>
         : null;
 }
 
@@ -164,6 +173,7 @@ interface IFilterListDetailsDto {
     forumUrl: string;
     homeUrl: string;
     issuesUrl: string;
+    languages: string[];
     name: string;
     policyUrl: string;
     publishedDate: string;
