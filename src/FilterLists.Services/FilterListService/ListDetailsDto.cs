@@ -15,6 +15,7 @@ namespace FilterLists.Services.FilterListService
         public string HomeUrl { get; set; }
         public string IssuesUrl { get; set; }
         public IEnumerable<string> Languages { get; set; }
+        public ListLicenseDto License { get; set; }
         public IEnumerable<ListMaintainerDto> Maintainers { get; set; }
         public string Name { get; set; }
         public string PolicyUrl { get; set; }
@@ -36,6 +37,12 @@ namespace FilterLists.Services.FilterListService
     public class MaintainerAdditionalListsDto
     {
         public int Id { get; set; }
+        public string Name { get; set; }
+    }
+
+    public class ListLicenseDto
+    {
+        public string DescriptionUrl { get; set; }
         public string Name { get; set; }
     }
 }
