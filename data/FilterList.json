@@ -6351,7 +6351,7 @@
     "publishedDate": "2018-02-17T00:00:00",
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://github.com/eladkarako/hosts/blob/master/build/hosts_adblock_anti_annoyances_block.txt"
+    "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts/master/build/hosts_adblock_anti_annoyances_block.txt"
   },
   {
     "id": 354,
@@ -6369,7 +6369,7 @@
     "publishedDate": "2018-02-17T00:00:00",
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://github.com/eladkarako/hosts/blob/master/build/hosts_adblock_anti_annoyances_block_inline_script.txt"
+    "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts/master/build/hosts_adblock_anti_annoyances_block_inline_script.txt"
   },
   {
     "id": 355,
@@ -6387,7 +6387,7 @@
     "publishedDate": "2018-02-17T00:00:00",
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://github.com/eladkarako/hosts/blob/master/build/hosts_adblock_anti_annoyances_hide.txt"
+    "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts/master/build/hosts_adblock_anti_annoyances_hide.txt"
   },
   {
     "id": 356,
@@ -6405,7 +6405,7 @@
     "publishedDate": "2018-02-17T00:00:00",
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://github.com/eladkarako/hosts/blob/master/build/hosts_adblock_anti_annoyances_style_inject.txt"
+    "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts/master/build/hosts_adblock_anti_annoyances_style_inject.txt"
   },
   {
     "id": 357,
