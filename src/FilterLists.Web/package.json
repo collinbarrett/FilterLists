@@ -27,7 +27,7 @@
     "react-router-dom": "^4.2.2",
     "style-loader": "^0.20.3",
     "typescript": "^2.7.2",
-    "url-loader": "^0.6.2",
+    "url-loader": "^1.0.1",
     "webpack": "^3.11.0",
     "webpack-hot-middleware": "^2.21.2"
   },
