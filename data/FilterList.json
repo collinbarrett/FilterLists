@@ -6856,5 +6856,23 @@
     "submissionUrl": "http://rickrolldb.com/",
     "syntaxId": 3,
     "viewUrl": "http://rickrolldb.com/ricklist.txt"
+  },
+  {
+    "id": 382,
+    "description": "Blocks ads/popups/fake thumbs and more from porn websites",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/WowDude/PornList/master/PornList.txt",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/WowDude/PornList",
+    "issuesUrl": "https://github.com/WowDude/PornList/issues",
+    "licenseId": 16,
+    "name": "PornList",
+    "policyUrl": null,
+    "publishedDate": 2018-03-17T13:00:00,
+    "submissionUrl": null,
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/WowDude/PornList/master/PornList.txt"
   }
 ]
