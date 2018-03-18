@@ -6859,7 +6859,7 @@
   },
   {
     "id": 382,
-    "description": "Blocks ads/popups/fake thumbs and more from porn websites",
+    "description": "Blocks ads/popups/fake thumbs/spam bookmark buttons and more from porn websites",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/WowDude/PornList/master/PornList.txt",
     "discontinuedDate": null,
     "donateUrl": null,
