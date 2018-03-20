@@ -6877,7 +6877,7 @@
   },
   {
     "id": 383,
-    "description": "Removes tedious AD and AD frames from specific websites",
+    "description": "Removes tedious AD and AD frames from specific popular websites such as New York Times",
     "descriptionSourceUrl": "https://austinhuang.me/0131-block-list/",
     "discontinuedDate": null,
     "donateUrl": "https://austinhuang.me/donate",
@@ -6888,7 +6888,7 @@
     "licenseId": 8,
     "name": "0131 Block List",
     "policyUrl": null,
-    "publishedDate": "2018-03-20T13:22:18",
+    "publishedDate": "2018-02-16T17:19:00",
     "submissionUrl": "https://austinhuang.me/contact",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/austinhuang0131/0131-block-list/master/list.txt"
