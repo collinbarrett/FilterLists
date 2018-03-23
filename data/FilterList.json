@@ -3260,8 +3260,8 @@
   {
     "id": 182,
     "description": "Complementary subscription to Liste FR + EasyList.",
-    "descriptionSourceUrl": "https://web.archive.org/web/20160221135532/http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
-    "discontinuedDate": null,
+    "descriptionSourceUrl": "https://web.archive.org/web/20171213121952/http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
+    "discontinuedDate": "2017-12-09T00:00:00",
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
@@ -3273,7 +3273,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": "http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt"
+    "viewUrl": "https://web.archive.org/web/20171213121952/http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt"
   },
   {
     "id": 183,
