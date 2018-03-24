@@ -6,7 +6,6 @@ import { AppContainer } from "react-hot-loader";
 import { BrowserRouter } from "react-router-dom";
 import * as RoutesModule from "./routes";
 let routes = RoutesModule.routes;
-import * as ReactModal from "react-modal";
 
 function renderApp() {
     const baseUrl = document.getElementsByTagName("base")[0].getAttribute("href")!;
@@ -27,5 +26,3 @@ if (module.hot) {
             renderApp();
         });
 }
-
-ReactModal.setAppElement("#react-app");
