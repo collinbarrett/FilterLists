@@ -56,16 +56,16 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            Cell: (cell: any) => <h2 className="list-title">{cell.value}</h2>
                        },
                        {
-                           Header: "Languages",
+                           Header: "Langs.",
                            accessor: "languages",
                            filterable: true,
                            filterMethod: (filter: any, row: any) => row[filter.id]
                                .map((e: any) => e.name.concat(e.iso6391)).join().toUpperCase()
                                .includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
-                           Cell: (cell: any) => <div>{cell.value.map((e: any) => e.name).join(", ")}</div>,
+                           Cell: (cell: any) => <div>{cell.value.map((e: any) => e.iso6391).join(", ")}</div>,
                            style: { whiteSpace: "inherit" },
-                           width: 100,
+                           width: 60,
                            headerClassName: "hidden-xs",
                            className: "hidden-xs"
                        },

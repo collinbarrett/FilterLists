@@ -63,14 +63,14 @@ function Description(props: any) {
 function Languages(props: any) {
     return props.languages.length > 0
         ? props.languages.length > 1
-        ? <div className="visible-xs">
+        ? <div>
               <h3>Languages:</h3>
               <ul>
                   {props.languages.map(
                       (language: any) => <li>{language}</li>)}
               </ul>
           </div>
-        : <div className="visible-xs">
+        : <div>
               <h3>Language:</h3>
               <ul>
                   {props.languages.map(
