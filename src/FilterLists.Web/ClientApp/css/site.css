@@ -29,6 +29,8 @@ body, h2, h3, h4, h5, blockquote {
 }
 
 .btn-expander-link {
+    -ms-border-radius: 0;
+    border-radius: 0;
     margin: 0 auto 5px auto;
-    max-width: 250px;
+    width: 110px;
 }
