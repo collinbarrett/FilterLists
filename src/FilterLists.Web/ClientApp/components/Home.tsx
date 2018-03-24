@@ -53,7 +53,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            filterMethod: (filter: any, row: any) => row[filter.id].toUpperCase()
                                .includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.toUpperCase() > b.toUpperCase() ? 1 : -1,
-                           Cell: (cell: any) => <h2>{cell.value}</h2>
+                           Cell: (cell: any) => <h2 className="list-title">{cell.value}</h2>
                        },
                        {
                            Header: "Languages",
