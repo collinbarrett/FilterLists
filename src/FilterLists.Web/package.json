@@ -13,7 +13,7 @@
     "aspnet-webpack": "^2.0.3",
     "aspnet-webpack-react": "^3.0.0",
     "awesome-typescript-loader": "^4.0.1",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "3.3.7",
     "css-loader": "^0.28.11",
     "event-source-polyfill": "0.0.12",
     "extract-text-webpack-plugin": "^3.0.2",
@@ -33,7 +33,6 @@
   },
   "dependencies": {
     "@types/react-table": "^6.7.7",
-    "popper.js": "^1.14.1",
     "react-table": "^6.8.0"
   }
 }

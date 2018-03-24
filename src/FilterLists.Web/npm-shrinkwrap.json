@@ -64,7 +64,7 @@
     "@types/react-table": {
       "version": "6.7.7",
       "resolved": "https://registry.npmjs.org/@types/react-table/-/react-table-6.7.7.tgz",
-      "integrity": "sha1-8PghyrjW4/X416CxBQP/RYYmsTk=",
+      "integrity": "sha512-00Sx7fEtMFYw+H/8W4jh4BMi9cnG/6FB/00KZf00YODMEA/6JPBYHHQb71ebgIkDpzPgmWjtSw1BtXD4lk1cmg==",
       "requires": {
         "@types/react": "16.0.40"
       }
@@ -488,9 +488,9 @@
       "dev": true
     },
     "bootstrap": {
-      "version": "4.0.0",
-      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-4.0.0.tgz",
-      "integrity": "sha512-gulJE5dGFo6Q61V/whS6VM4WIyrlydXfCgkE+Gxe5hjrJ8rXLLZlALq7zq2RPhOc45PSwQpJkrTnc2KgD6cvmA==",
+      "version": "3.3.7",
+      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.7.tgz",
+      "integrity": "sha1-WjiTlFSfIzMIdaOxUGVldPip63E=",
       "dev": true
     },
     "brace-expansion": {
@@ -3357,7 +3357,7 @@
     "jquery": {
       "version": "3.3.1",
       "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.3.1.tgz",
-      "integrity": "sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==",
+      "integrity": "sha1-lYzinoHJeQ8xvneS311NlfxX+8o=",
       "dev": true
     },
     "js-base64": {
@@ -4128,11 +4128,6 @@
       "resolved": "https://registry.npmjs.org/pify/-/pify-2.3.0.tgz",
       "integrity": "sha1-7RQaasBDqEnqWISY59yosVMw6Qw=",
       "dev": true
-    },
-    "popper.js": {
-      "version": "1.14.1",
-      "resolved": "https://registry.npmjs.org/popper.js/-/popper.js-1.14.1.tgz",
-      "integrity": "sha1-uIFeXNpvYvwgQuR2GGSfdYZuZ1M="
     },
     "posix-character-classes": {
       "version": "0.1.1",
