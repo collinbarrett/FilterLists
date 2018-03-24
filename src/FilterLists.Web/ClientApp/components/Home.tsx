@@ -52,7 +52,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            filterable: true,
                            filterMethod: (filter: any, row: any) => row[filter.id].toUpperCase()
                                .includes(filter.value.toUpperCase()),
-                           sortMethod: (a: any, b: any) => a.toUpperCase() > b.toUpperCase() ? 1 : -1
+                           sortMethod: (a: any, b: any) => a.toUpperCase() > b.toUpperCase() ? 1 : -1,
+                           Cell: (cell: any) => <h2>{cell.value}</h2>
                        },
                        {
                            Header: "Languages",

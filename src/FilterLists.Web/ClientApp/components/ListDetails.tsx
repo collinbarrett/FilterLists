@@ -64,11 +64,11 @@ function Languages(props: any) {
     return props.languages.length > 0
         ? props.languages.length > 1
         ? <div className="visible-xs">
-              <h2>Languages</h2>
+              <h3>Languages</h3>
               <p>{props.languages.join(", ")}</p>
           </div>
         : <div className="visible-xs">
-              <h2>Language</h2>
+              <h3>Language</h3>
               <p>{props.languages.join(", ")}</p>
           </div>
         : null;
@@ -166,7 +166,7 @@ function Maintainers(props: any) {
     return props.maintainers.length > 0
         ? <div className="panel panel-default">
               <div className="panel-heading">
-                  <h2 className="panel-title">Maintainers</h2>
+                  <h3 className="panel-title">Maintainers</h3>
               </div>
               <div className="panel-body">
                   {props.maintainers.map(
@@ -179,7 +179,7 @@ function Maintainers(props: any) {
 function Maintainer(props: any) {
     return <div className="panel panel-default">
                <div className="panel-heading">
-                   <h3 className="panel-title">{props.maintainer.name}</h3>
+                   <h4 className="panel-title">{props.maintainer.name}</h4>
                </div>
                <div className="panel-body">
                    {props.maintainer.homeUrl
@@ -210,7 +210,7 @@ function Maintainer(props: any) {
                        : null}
                    {props.maintainer.additionalLists.length > 0
                        ? <div>
-                             <h4>More by {props.maintainer.name}</h4>
+                             <h5>More by {props.maintainer.name}</h5>
                              <ul>
                                  {props.maintainer.additionalLists.map(
                                      (list: any) => <MaintainerAdditionalList list={list} key={list.id.toString()}/>)}
