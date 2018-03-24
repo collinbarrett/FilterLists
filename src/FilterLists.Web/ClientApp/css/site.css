@@ -1,20 +1,16 @@
-body {
+body, h2, h3, h4, h5, blockquote {
     font-size: 16px;
 }
 
-h2 {
-    font-size: 16px;
-    margin: 0;
-}
-
-h5 {
-    font-size: 16px;
-}
-
-blockquote {
-    font-size: 16px;
+.panel {
+    margin-bottom: 0;
 }
 
 .panel-default {
     padding: 20px;
+}
+
+.btn-block {
+    margin-top: 0;
+    margin-bottom: 5px;
 }
