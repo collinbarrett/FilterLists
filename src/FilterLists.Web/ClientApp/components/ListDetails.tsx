@@ -64,12 +64,18 @@ function Languages(props: any) {
     return props.languages.length > 0
         ? props.languages.length > 1
         ? <div className="visible-xs">
-              <h3>Languages</h3>
-              <p>{props.languages.join(", ")}</p>
+              <h3>Languages:</h3>
+              <ul>
+                  {props.languages.map(
+                      (language: any) => <li>{language}</li>)}
+              </ul>
           </div>
         : <div className="visible-xs">
-              <h3>Language</h3>
-              <p>{props.languages.join(", ")}</p>
+              <h3>Language:</h3>
+              <ul>
+                  {props.languages.map(
+                      (language: any) => <li>{language}</li>)}
+              </ul>
           </div>
         : null;
 }
@@ -92,7 +98,7 @@ function SubscribeUrl(props: any) {
 
 function ViewUrl(props: any) {
     return <a href={props.url} className="btn btn-primary btn-block btn-expander-link"
-        title={`View ${props.name} in its raw format.`}>
+              title={`View ${props.name} in its raw format.`}>
                View
            </a>;
 }
@@ -100,7 +106,7 @@ function ViewUrl(props: any) {
 function HomeUrl(props: any) {
     return props.url
         ? <a href={props.url} className="btn btn-primary btn-block btn-expander-link"
-            title={`View the home page for ${props.name}.`}>
+             title={`View the home page for ${props.name}.`}>
               Home
           </a>
         : null;
@@ -118,7 +124,7 @@ function PolicyUrl(props: any) {
 function DonateUrl(props: any) {
     return props.url
         ? <a href={props.url} className="btn btn-primary btn-block btn-expander-link"
-            title={`Donate to support ${props.name}.`}>
+             title={`Donate to support ${props.name}.`}>
               Donate
           </a>
         : null;
@@ -127,7 +133,7 @@ function DonateUrl(props: any) {
 function IssuesUrl(props: any) {
     return props.url
         ? <a href={props.url} className="btn btn-primary btn-block btn-expander-link"
-            title={`View the GitHub Issues for ${props.name}.`}>
+             title={`View the GitHub Issues for ${props.name}.`}>
               GitHub Issues
           </a>
         : null;
@@ -136,7 +142,7 @@ function IssuesUrl(props: any) {
 function ForumUrl(props: any) {
     return props.url
         ? <a href={props.url} className="btn btn-primary btn-block btn-expander-link"
-            title={`View the forum for ${props.name}.`}>
+             title={`View the forum for ${props.name}.`}>
               Forum
           </a>
         : null;
@@ -145,7 +151,7 @@ function ForumUrl(props: any) {
 function ChatUrl(props: any) {
     return props.url
         ? <a href={props.url} className="btn btn-primary btn-block btn-expander-link"
-            title={`Enter the chat room for ${props.name}.`}>
+             title={`Enter the chat room for ${props.name}.`}>
               Chat
           </a>
         : null;
@@ -163,7 +169,7 @@ function SubmissionUrl(props: any) {
 function EmailAddress(props: any) {
     return props.email
         ? <a href={`mailto:${props.email}`} className="btn btn-primary btn-block btn-expander-link"
-            title={`Email ${props.name}.`}>
+             title={`Email ${props.name}.`}>
               Email
           </a>
         : null;
