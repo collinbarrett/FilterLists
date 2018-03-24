@@ -9,9 +9,6 @@ export default class ListDetails extends React.Component<any, any> {
             responseLoaded: false,
             listId: props.listId
         };
-    }
-
-    componentWillMount() {
         this.fetchData();
     }
 
