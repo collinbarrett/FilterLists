@@ -164,14 +164,9 @@ function EmailAddress(props: any) {
 
 function Maintainers(props: any) {
     return props.maintainers.length > 0
-        ? <div className="panel panel-default">
-              <div className="panel-heading">
-                  <h3 className="panel-title">Maintainers</h3>
-              </div>
-              <div className="panel-body">
-                  {props.maintainers.map(
-                      (maintainer: any) => <Maintainer maintainer={maintainer} key={maintainer.id.toString()}/>)}
-              </div>
+        ? <div>
+            {props.maintainers.map(
+                (maintainer: any) => <Maintainer maintainer={maintainer} key={maintainer.id.toString()}/>)}
           </div>
         : null;
 }
@@ -179,7 +174,7 @@ function Maintainers(props: any) {
 function Maintainer(props: any) {
     return <div className="panel panel-default">
                <div className="panel-heading">
-                   <h4 className="panel-title">{props.maintainer.name}</h4>
+                   <h4 className="panel-title">Maintained by {props.maintainer.name}</h4>
                </div>
                <div className="panel-body">
                    {props.maintainer.homeUrl
