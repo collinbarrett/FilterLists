@@ -8,7 +8,7 @@ namespace FilterLists.Services.FilterListService
     {
         public MappingProfiles()
         {
-            CreateMap<FilterList, FilterListSummaryDto>()
+            CreateMap<FilterList, ListSummaryDto>()
                 .ForMember(dto => dto.Languages,
                     conf => conf.MapFrom(list =>
                         list.FilterListLanguages.Select(listLangs => listLangs.Language)));

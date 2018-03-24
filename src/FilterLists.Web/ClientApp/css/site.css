@@ -15,6 +15,10 @@ body, h2, h3, h4, h5, blockquote {
     align-items: center;
 }
 
+.list-title {
+    margin: 0;
+}
+
 .panel-list-details {
     padding: 20px;
     margin-bottom: 0;

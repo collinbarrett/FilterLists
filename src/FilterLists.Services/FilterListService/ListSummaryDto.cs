@@ -2,7 +2,7 @@
 
 namespace FilterLists.Services.FilterListService
 {
-    public class FilterListSummaryDto
+    public class ListSummaryDto
     {
         public int Id { get; set; }
         public IEnumerable<ListLanguagesDto> Languages { get; set; }

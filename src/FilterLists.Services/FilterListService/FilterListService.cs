@@ -16,12 +16,12 @@ namespace FilterLists.Services.FilterListService
             this.filterListsDbContext = filterListsDbContext;
         }
 
-        public async Task<IEnumerable<FilterListSummaryDto>> GetAllSummariesAsync()
+        public async Task<IEnumerable<ListSummaryDto>> GetAllSummariesAsync()
         {
             return await filterListsDbContext.FilterLists
                                              .AsNoTracking()
                                              .OrderBy(x => x.Name)
-                                             .ProjectTo<FilterListSummaryDto>()
+                                             .ProjectTo<ListSummaryDto>()
                                              .ToListAsync();
         }
 
