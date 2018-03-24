@@ -10,6 +10,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
         {
             base.Configure(entityTypeBuilder);
             entityTypeBuilder.ToTable("filterlists");
+            entityTypeBuilder.Property(x => x.ChatUrl)
+                             .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Description)
                              .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.DescriptionSourceUrl)

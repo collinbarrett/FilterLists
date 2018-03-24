@@ -5,6 +5,7 @@ namespace FilterLists.Services.SeedService.Models
     public class FilterListSeedDto
     {
         public int Id { get; set; }
+        public string ChatUrl { get; set; }
         public string Description { get; set; }
         public string DescriptionSourceUrl { get; set; }
         public DateTime? DiscontinuedDate { get; set; }

@@ -65,6 +65,7 @@ function FilterListDetails(props: any) {
                <DonateUrl url={props.details.donateUrl} name={props.details.name}/>
                <IssuesUrl url={props.details.issuesUrl} name={props.details.name}/>
                <ForumUrl url={props.details.forumUrl} name={props.details.name}/>
+               <ChatUrl url={props.details.chatUrl} name={props.details.name}/>
                <SubmissionUrl url={props.details.submissionUrl} name={props.details.name}/>
                <EmailAddress email={props.details.emailAddress} name={props.details.name}/>
                <Maintainers maintainers={props.details.maintainers}/>
@@ -160,6 +161,14 @@ function ForumUrl(props: any) {
         : null;
 }
 
+function ChatUrl(props: any) {
+    return props.url
+        ? <a href={props.url} className="btn btn-primary btn-block" title={`Enter the chat room for ${props.name}.`}>
+              Forum
+          </a>
+        : null;
+}
+
 function SubmissionUrl(props: any) {
     return props.url
         ? <a href={props.url} className="btn btn-primary btn-block"
@@ -240,6 +249,7 @@ function MaintainerAdditionalList(props: any) {
 }
 
 interface IFilterListDetailsDto {
+    chatUrl: string;
     description: string;
     descriptionSourceUrl: string;
     discontinuedDate: string;

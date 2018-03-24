@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "chatUrl": null,
     "description": "A filter list that blocks mobile advertisements and trackers on Japanese properties",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -19,6 +20,7 @@
   },
   {
     "id": 2,
+    "chatUrl": null,
     "description": "Mute is an AdBlock Plus filter for user comments. In the same way that AdBlock hides ads, AdBlock can use this filter to hide user-generated comments, allowing you to browse the Internet with less stupidity clawing at your eyeballs.",
     "descriptionSourceUrl": "https://mute.bradconte.com/",
     "discontinuedDate": null,
@@ -37,6 +39,7 @@
   },
   {
     "id": 3,
+    "chatUrl": null,
     "description": "Hosts file to block advertisements and trackers designed for Android",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -55,6 +58,7 @@
   },
   {
     "id": 4,
+    "chatUrl": null,
     "description": "Hosts file blocking known malware, spyware, virus, and shock sites",
     "descriptionSourceUrl": "https://github.com/michaeltrimm/hosts-blocking",
     "discontinuedDate": null,
@@ -73,6 +77,7 @@
   },
   {
     "id": 5,
+    "chatUrl": null,
     "description": "A list to keep people from knowing you have read their Facebook message",
     "descriptionSourceUrl": "https://adblockplus.org/blog/how-to-keep-people-from-knowing-you-ve-read-their-facebook-message",
     "discontinuedDate": null,
@@ -91,6 +96,7 @@
   },
   {
     "id": 6,
+    "chatUrl": null,
     "description": "A filter list that blocks advertisements and trackers on Japanese properties",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -109,6 +115,7 @@
   },
   {
     "id": 7,
+    "chatUrl": null,
     "description": "The Malware URLs in the 'gray area.' To be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves. The 'gray area' is an area where many malware URLs exists, but there is also a big number of false positives as the gray area is the one where only 2 or 3 pieces of evidence were discovered. The 'gray area' should not be used for blocking domains or URLs, it is published only with the aim of helping malware researchers.",
     "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
     "discontinuedDate": "2015-07-30T00:00:00",
@@ -127,6 +134,7 @@
   },
   {
     "id": 8,
+    "chatUrl": null,
     "description": "The domains of Malware URLs to be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves.",
     "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
     "discontinuedDate": "2015-07-30T00:00:00",
@@ -145,6 +153,7 @@
   },
   {
     "id": 9,
+    "chatUrl": null,
     "description": "A full set of Malware URLs to be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves.",
     "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
     "discontinuedDate": "2015-07-30T00:00:00",
@@ -163,6 +172,7 @@
   },
   {
     "id": 10,
+    "chatUrl": null,
     "description": "A hosts list of domains serving malware",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -181,6 +191,7 @@
   },
   {
     "id": 11,
+    "chatUrl": null,
     "description": "A merged list of Liste FR and EasyList",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -199,6 +210,7 @@
   },
   {
     "id": 12,
+    "chatUrl": null,
     "description": "Liste FR is an EasyList affiliated filter list that specifically removes adverts on French language websites.",
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "discontinuedDate": null,
@@ -217,6 +229,7 @@
   },
   {
     "id": 13,
+    "chatUrl": null,
     "description": "A merged list of Liste AR, Liste FR, and EasyList",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -235,6 +248,7 @@
   },
   {
     "id": 14,
+    "chatUrl": null,
     "description": "Liste AR is an EasyList affiliated filter list that specifically removes adverts on Arabic language websites.",
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "discontinuedDate": null,
@@ -253,6 +267,7 @@
   },
   {
     "id": 15,
+    "chatUrl": null,
     "description": "A filter list that fixes filtration errors in an alternative way due to limitations of adblockers other than AdGuard or those using Webkit content blocker API.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/unbreak.txt",
     "discontinuedDate": null,
@@ -271,6 +286,7 @@
   },
   {
     "id": 16,
+    "chatUrl": null,
     "description": "A filter list that enables removing of ads, trackers, and various scripts from websites with Korean content.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/filter.txt",
     "discontinuedDate": null,
@@ -289,6 +305,7 @@
   },
   {
     "id": 17,
+    "chatUrl": null,
     "description": "Block ads, banners, 3rd party Cookies, 3rd party page counters, web bugs, and even most hijackers and possibly unwanted programs.",
     "descriptionSourceUrl": "http://winhelp2002.mvps.org/hosts.htm",
     "discontinuedDate": null,
@@ -307,6 +324,7 @@
   },
   {
     "id": 18,
+    "chatUrl": null,
     "description": "Remove filler, upsells, click bait and other low or negative-value annoyances.",
     "descriptionSourceUrl": "https://github.com/taylr/linkedinsanity",
     "discontinuedDate": null,
@@ -325,6 +343,7 @@
   },
   {
     "id": 19,
+    "chatUrl": null,
     "description": "A list for uBlock/Adblock plus to stop cryptomining in your browser. ",
     "descriptionSourceUrl": "https://github.com/hoshsadiq/adblock-nocoin-list",
     "discontinuedDate": null,
@@ -343,6 +362,7 @@
   },
   {
     "id": 20,
+    "chatUrl": null,
     "description": "Removes ads, affiliation ads, and empty boxes on Norwegian sites to produce a cleaner browser experience. Meant to be used on top of general filters.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -361,6 +381,7 @@
   },
   {
     "id": 21,
+    "chatUrl": null,
     "description": "A combined IP blocklist for blocking ransomware.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -379,6 +400,7 @@
   },
   {
     "id": 22,
+    "chatUrl": null,
     "description": "A combined domain blocklist for blocking ransomware.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -397,6 +419,7 @@
   },
   {
     "id": 23,
+    "chatUrl": null,
     "description": "Blocks CryptoWall from payment site servers by IP address.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -415,6 +438,7 @@
   },
   {
     "id": 24,
+    "chatUrl": null,
     "description": "Blocks CryptoWall from payment site servers by domain.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -433,6 +457,7 @@
   },
   {
     "id": 25,
+    "chatUrl": null,
     "description": "Blocks CryptoWall from botnet command and control servers by URL.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -451,6 +476,7 @@
   },
   {
     "id": 26,
+    "chatUrl": null,
     "description": "Blocks CryptoWall from botnet command and control servers by domain.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -469,6 +495,7 @@
   },
   {
     "id": 27,
+    "chatUrl": null,
     "description": "A text file with filters to aid in blocking online trackers, for use in a blocker such as uBlock Origin.",
     "descriptionSourceUrl": "https://github.com/metaphoricgiraffe/tracking-filters",
     "discontinuedDate": null,
@@ -487,6 +514,7 @@
   },
   {
     "id": 28,
+    "chatUrl": null,
     "description": "The Quiet list blocks all other notices regardless of their size or obnoxiousness. Simple two- or three-word links to privacy pages aren't blocked (such as links in a page footer), but a lengthy paragraph mid-page will be.",
     "descriptionSourceUrl": "https://github.com/liamja/Prebake",
     "discontinuedDate": null,
@@ -505,6 +533,7 @@
   },
   {
     "id": 29,
+    "chatUrl": null,
     "description": "Prebake is an Adblock filter subscription that blocks large, obtrusive cookie notices. These notices either consume a considerable amount of screen real estate or popup and distract the viewers attention, which can be just as annoying as ads.",
     "descriptionSourceUrl": "http://prebake.eu/",
     "discontinuedDate": null,
@@ -523,6 +552,7 @@
   },
   {
     "id": 30,
+    "chatUrl": null,
     "description": "Filters that hide and block pop-ups, widgets, newsletters, push notifications, arrows and other irritating elements on Polish websites. For proper operation Polish Cookies Filters are required.",
     "descriptionSourceUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
     "discontinuedDate": null,
@@ -541,6 +571,7 @@
   },
   {
     "id": 31,
+    "chatUrl": null,
     "description": "Contains a list of elements of advertising, such as banners or flash animations, the most commonly used on Polish websites.",
     "descriptionSourceUrl": "http://niecko.pl/adblock/",
     "discontinuedDate": null,
@@ -559,6 +590,7 @@
   },
   {
     "id": 32,
+    "chatUrl": null,
     "description": "Block advertisements.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -577,6 +609,7 @@
   },
   {
     "id": 33,
+    "chatUrl": null,
     "description": "Adblock filter for obtrusive overlay (pop up) elements and various other annoying elements on websites.",
     "descriptionSourceUrl": "https://github.com/LordBadmintonofYorkshire/Overlay-Blocker",
     "discontinuedDate": null,
@@ -595,6 +628,7 @@
   },
   {
     "id": 34,
+    "chatUrl": null,
     "description": "OpenPhish uses proprietary Artificial Intelligence algorithms to automatically identify zero-day phishing sites and provide comprehensive, actionable, real-time threat intelligence.",
     "descriptionSourceUrl": "https://openphish.com/",
     "discontinuedDate": null,
@@ -613,6 +647,7 @@
   },
   {
     "id": 35,
+    "chatUrl": null,
     "description": "Blocks trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -631,6 +666,7 @@
   },
   {
     "id": 36,
+    "chatUrl": null,
     "description": "A personal filter list. Each host is either an ad, phishing, malicious, analytics, or clickbait.",
     "descriptionSourceUrl": "https://github.com/genediazjr/nopelist",
     "discontinuedDate": null,
@@ -649,6 +685,7 @@
   },
   {
     "id": 37,
+    "chatUrl": null,
     "description": "Blocks Locky from botnet command and control servers by domain.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -667,6 +704,7 @@
   },
   {
     "id": 38,
+    "chatUrl": null,
     "description": "AdBlock list for blocking 'how i can help you?' widgets.",
     "descriptionSourceUrl": "https://github.com/Rpsl/adblock-leadgenerator-list",
     "discontinuedDate": null,
@@ -685,6 +723,7 @@
   },
   {
     "id": 39,
+    "chatUrl": null,
     "description": "Latvian List is an affiliated filter list written by anonymous74100 that specifically removes adverts on Latvian language websites.",
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "discontinuedDate": null,
@@ -703,6 +742,7 @@
   },
   {
     "id": 40,
+    "chatUrl": null,
     "description": "Sites engaged in the use of misleading marketing tactics.",
     "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
     "discontinuedDate": null,
@@ -721,6 +761,7 @@
   },
   {
     "id": 41,
+    "chatUrl": null,
     "description": "Sites engaged in browser hijacking or other forms of hijacking (OS services, bandwidth, DNS, etc.).",
     "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
     "discontinuedDate": null,
@@ -739,6 +780,7 @@
   },
   {
     "id": 42,
+    "chatUrl": null,
     "description": "Special classification for persons caught spamming the hpHosts forums.",
     "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
     "discontinuedDate": null,
@@ -757,6 +799,7 @@
   },
   {
     "id": 43,
+    "chatUrl": null,
     "description": "Sites engaged in astroturfing (otherwise known as grass roots marketing) or spamming.",
     "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
     "discontinuedDate": null,
@@ -775,6 +818,7 @@
   },
   {
     "id": 44,
+    "chatUrl": null,
     "description": "Sites engaged in the selling or distribution of bogus or fraudulent applications and/or provision of fraudulent services.",
     "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
     "discontinuedDate": null,
@@ -793,6 +837,7 @@
   },
   {
     "id": 45,
+    "chatUrl": null,
     "description": "Sites engaged in the housing, development or distribution of exploits, including but not limited to exploitation of browser, software (inclusive of website software such as CMS), operating system exploits aswell as those engaged in exploits via social engineering.",
     "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
     "discontinuedDate": null,
@@ -811,6 +856,7 @@
   },
   {
     "id": 46,
+    "chatUrl": null,
     "description": "Sites engaged in malware distribution.",
     "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
     "discontinuedDate": null,
@@ -829,6 +875,7 @@
   },
   {
     "id": 47,
+    "chatUrl": null,
     "description": "This classification is assigned for domains being used for advert or tracking purposes.",
     "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
     "discontinuedDate": null,
@@ -847,6 +894,7 @@
   },
   {
     "id": 48,
+    "chatUrl": null,
     "description": "hpHosts is a community managed and maintained hosts file that allows an additional layer of protection against access to ad, tracking and malicious websites.",
     "descriptionSourceUrl": "https://www.hosts-file.net/",
     "discontinuedDate": null,
@@ -865,6 +913,7 @@
   },
   {
     "id": 49,
+    "chatUrl": null,
     "description": "Japanese ad servers hosts file.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -883,6 +932,7 @@
   },
   {
     "id": 50,
+    "chatUrl": null,
     "description": "We will blacklist domains that fall into any of the following categories: scams/phishing/malware/malvertising/exploits - and other general threats.",
     "descriptionSourceUrl": "https://www.hexxiumcreations.com/projects/malicious-domain-blocking/",
     "discontinuedDate": null,
@@ -901,6 +951,7 @@
   },
   {
     "id": 51,
+    "chatUrl": null,
     "description": "Filter for advertisements on Greek sites.",
     "descriptionSourceUrl": "https://www.void.gr/kargig/blog/greek-adblock-plus-filter/",
     "discontinuedDate": null,
@@ -919,6 +970,7 @@
   },
   {
     "id": 52,
+    "chatUrl": null,
     "description": "Block all well known privacy trackers.",
     "descriptionSourceUrl": "https://web.archive.org/web/20160425221243/http://gnuzilla.gnu.org/filters/blacklist.txt",
     "discontinuedDate": null,
@@ -937,6 +989,7 @@
   },
   {
     "id": 53,
+    "chatUrl": null,
     "description": "Blocks Japanese regional mobile advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -955,6 +1008,7 @@
   },
   {
     "id": 54,
+    "chatUrl": null,
     "description": "Block ads with /etc/hosts.",
     "descriptionSourceUrl": "https://web.archive.org/web/20160221135808/http://adblock.gjtech.net/?format=adblock-plus",
     "discontinuedDate": null,
@@ -973,6 +1027,7 @@
   },
   {
     "id": 55,
+    "chatUrl": null,
     "description": "The following hosts were added to hpHosts AFTER the last full release.",
     "descriptionSourceUrl": "https://hosts-file.net/hphosts-partial.txt",
     "discontinuedDate": null,
@@ -991,6 +1046,7 @@
   },
   {
     "id": 56,
+    "chatUrl": null,
     "description": "A list combining Latvian List and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -1009,6 +1065,7 @@
   },
   {
     "id": 57,
+    "chatUrl": null,
     "description": "Sites engaged in illegal pharmacy activities.",
     "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
     "discontinuedDate": null,
@@ -1027,6 +1084,7 @@
   },
   {
     "id": 58,
+    "chatUrl": null,
     "description": "Sites engaged in the distribution of Potentially Unwanted Programs.",
     "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
     "discontinuedDate": null,
@@ -1045,6 +1103,7 @@
   },
   {
     "id": 59,
+    "chatUrl": null,
     "description": "A filter list for Adblock which covers filters for Korean websites.",
     "descriptionSourceUrl": "https://github.com/gfmaster/adblock-korea-contrib",
     "discontinuedDate": null,
@@ -1063,6 +1122,7 @@
   },
   {
     "id": 60,
+    "chatUrl": null,
     "description": "Polish hosts file for blocking scams (Experimental).",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -1081,6 +1141,7 @@
   },
   {
     "id": 61,
+    "chatUrl": null,
     "description": "A Polish filter that protects against scams such as SMS subscriptions.",
     "descriptionSourceUrl": "https://github.com/azet12/KAD",
     "discontinuedDate": null,
@@ -1099,6 +1160,7 @@
   },
   {
     "id": 62,
+    "chatUrl": null,
     "description": "This filter will mainly block affiliate advertising, behavioral advertising, tend embedded script will overload, blog parts.",
     "descriptionSourceUrl": "http://qme.mydns.jp/adblock.html",
     "discontinuedDate": null,
@@ -1117,6 +1179,7 @@
   },
   {
     "id": 63,
+    "chatUrl": null,
     "description": "This filter will mainly block affiliate advertising, behavioral advertising, tend embedded script will overload, blog parts.",
     "descriptionSourceUrl": "http://qme.mydns.jp/adblock.html",
     "discontinuedDate": null,
@@ -1135,6 +1198,7 @@
   },
   {
     "id": 64,
+    "chatUrl": null,
     "description": "A list combining Malware Domain List and Spybot.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -1153,6 +1217,7 @@
   },
   {
     "id": 65,
+    "chatUrl": null,
     "description": "A list combining Malware Domain List, Peter Lowe's List, Spybot, and Spyware Blaster.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -1171,6 +1236,7 @@
   },
   {
     "id": 66,
+    "chatUrl": null,
     "description": "My Adblock Plus filter subscription will block banner ads, flash ads, text-ads, and even completely block some rogue anti-virus and anti-spyware websites preventing infection.",
     "descriptionSourceUrl": "https://www.jabcreations.com/web/adblock-subscription",
     "discontinuedDate": null,
@@ -1189,6 +1255,7 @@
   },
   {
     "id": 67,
+    "chatUrl": null,
     "description": "Filter any site/subsite who's only purpose is to log your IP.",
     "descriptionSourceUrl": "https://github.com/piperun/iploggerfilter",
     "discontinuedDate": null,
@@ -1207,6 +1274,7 @@
   },
   {
     "id": 68,
+    "chatUrl": null,
     "description": "This filter list for AdBlock removes popup sections on sites that distracts from the main content.",
     "descriptionSourceUrl": "https://ilyakatz.github.io/adblock_filters/",
     "discontinuedDate": null,
@@ -1225,6 +1293,7 @@
   },
   {
     "id": 69,
+    "chatUrl": null,
     "description": "Adblock Plus list for Icelandic websites.",
     "descriptionSourceUrl": "http://adblock.gardar.net/",
     "discontinuedDate": null,
@@ -1243,6 +1312,7 @@
   },
   {
     "id": 70,
+    "chatUrl": null,
     "description": "List of filters for Adblock Plus that block cookie notices on European websites.",
     "descriptionSourceUrl": "https://github.com/Rudloff/adblock-imokwithcookies",
     "discontinuedDate": null,
@@ -1261,6 +1331,7 @@
   },
   {
     "id": 71,
+    "chatUrl": null,
     "description": "Get rid of annoying cookie warnings from almost all 'infected' websites!",
     "descriptionSourceUrl": "https://www.kiboke-studio.hr/i-dont-care-about-cookies/",
     "discontinuedDate": null,
@@ -1279,6 +1350,7 @@
   },
   {
     "id": 72,
+    "chatUrl": null,
     "description": "Blocks Hungarian regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -1297,6 +1369,7 @@
   },
   {
     "id": 73,
+    "chatUrl": null,
     "description": "Sites engaged in the selling, distribution or provision of warez (including but not limited to keygens, serials etc), where such provisions do not contain malware.",
     "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
     "discontinuedDate": null,
@@ -1315,6 +1388,7 @@
   },
   {
     "id": 74,
+    "chatUrl": null,
     "description": "Sites engaged in Phishing.",
     "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
     "discontinuedDate": null,
@@ -1333,6 +1407,7 @@
   },
   {
     "id": 75,
+    "chatUrl": null,
     "description": "Blocks Locky from botnet command and control servers by IP.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -1351,6 +1426,7 @@
   },
   {
     "id": 76,
+    "chatUrl": null,
     "description": "Blocks Locky from distribution site servers by URL.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -1369,6 +1445,7 @@
   },
   {
     "id": 77,
+    "chatUrl": null,
     "description": "Blocks Locky from payment site servers by domain.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -1387,6 +1464,7 @@
   },
   {
     "id": 78,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1405,6 +1483,7 @@
   },
   {
     "id": 79,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1423,6 +1502,7 @@
   },
   {
     "id": 80,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1441,6 +1521,7 @@
   },
   {
     "id": 81,
+    "chatUrl": null,
     "description": "Windows installers ads sources sites based on Unchecky content.",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1459,6 +1540,7 @@
   },
   {
     "id": 82,
+    "chatUrl": null,
     "description": "A filterlist with additional filters for uBlock Origin to block third-party, tracking, annoyances and all other unwarranted resources from loading. Contains filters specific to uBlock Origin and some filters that have not yet been added to other filterlists.",
     "descriptionSourceUrl": "https://github.com/uBlock-user/uBO-Personal-Filters",
     "discontinuedDate": null,
@@ -1477,6 +1559,7 @@
   },
   {
     "id": 83,
+    "chatUrl": null,
     "description": "This project was built based on Anti-Adblock Killer (by Reek), but is now significantly different. Anti-Adblock Killer Script was completely re-implemented. Anti-Adblock Killer Filter was mostly copied and concatenated to uBlock Protector List.",
     "descriptionSourceUrl": "https://github.com/jspenguin2017/uBlockProtector",
     "discontinuedDate": null,
@@ -1495,6 +1578,7 @@
   },
   {
     "id": 84,
+    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "uBlock Origin supplement list for Official Polish Filters for AdBlock, uBlock Origin & AdGuard",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -1513,6 +1597,7 @@
   },
   {
     "id": 85,
+    "chatUrl": null,
     "description": "A filterlist with additional filters for uBlock Origin. Contains filters specific to uBlock Origin (like popunder filters) and some filters that have not yet been added to other filterlists.",
     "descriptionSourceUrl": "https://github.com/IDKwhattoputhere/uBlock-Filters-Plus",
     "discontinuedDate": null,
@@ -1531,6 +1616,7 @@
   },
   {
     "id": 86,
+    "chatUrl": null,
     "description": "Block sites with skimming scripts.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/byaka/ublock-antiskimming-list/master/build/data.txt",
     "discontinuedDate": "2017-11-28T00:00:00",
@@ -1549,6 +1635,7 @@
   },
   {
     "id": 87,
+    "chatUrl": null,
     "description": "Needed to unbreak web sites, mostly because of hosts file-based filters.",
     "descriptionSourceUrl": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/unbreak.txt",
     "discontinuedDate": null,
@@ -1567,6 +1654,7 @@
   },
   {
     "id": 88,
+    "chatUrl": null,
     "description": "Privacy filters for uBlock Origin.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -1585,6 +1673,7 @@
   },
   {
     "id": 89,
+    "chatUrl": null,
     "description": "Filters optimized for uBlock.",
     "descriptionSourceUrl": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters.txt",
     "discontinuedDate": null,
@@ -1603,6 +1692,7 @@
   },
   {
     "id": 90,
+    "chatUrl": null,
     "description": "These filters are experimental and may cause breakage. They are being evaluated/fine-tuned for inclusion in the default set of filters.",
     "descriptionSourceUrl": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/experimental.txt",
     "discontinuedDate": null,
@@ -1621,6 +1711,7 @@
   },
   {
     "id": 91,
+    "chatUrl": null,
     "description": "To block sites known for delivering adware/crapware. For sites documented to put users at risk of installing adware/crapware etc. The purpose is to at least ensure a user is warned of the risks ahead.",
     "descriptionSourceUrl": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/badware.txt",
     "discontinuedDate": null,
@@ -1639,6 +1730,7 @@
   },
   {
     "id": 92,
+    "chatUrl": null,
     "description": "Ad servers list to block ads on Turkish websites (for use with hosts files).",
     "descriptionSourceUrl": "https://github.com/bkrucarci/turk-adlist/blob/master/README.md",
     "discontinuedDate": null,
@@ -1657,6 +1749,7 @@
   },
   {
     "id": 93,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1675,6 +1768,7 @@
   },
   {
     "id": 94,
+    "chatUrl": null,
     "description": "You can leave AdBlock functioning as normal, but the proper tracking of cashback cookies will be allowed on TopCashback and our affiliate network sites only.",
     "descriptionSourceUrl": "https://www.topcashback.com/Help/164",
     "discontinuedDate": null,
@@ -1693,6 +1787,7 @@
   },
   {
     "id": 95,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1711,6 +1806,7 @@
   },
   {
     "id": 96,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1729,6 +1825,7 @@
   },
   {
     "id": 97,
+    "chatUrl": null,
     "description": "Block all YouTube annoyances.",
     "descriptionSourceUrl": "https://youtube.adblockplus.me/",
     "discontinuedDate": null,
@@ -1747,6 +1844,7 @@
   },
   {
     "id": 98,
+    "chatUrl": null,
     "description": "Block only other annoyances.",
     "descriptionSourceUrl": "https://youtube.adblockplus.me/",
     "discontinuedDate": null,
@@ -1765,6 +1863,7 @@
   },
   {
     "id": 99,
+    "chatUrl": null,
     "description": "Blocks Korean regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -1783,6 +1882,7 @@
   },
   {
     "id": 100,
+    "chatUrl": null,
     "description": "Finnish supplement list for EasyList.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt",
     "discontinuedDate": null,
@@ -1801,6 +1901,7 @@
   },
   {
     "id": 101,
+    "chatUrl": null,
     "description": "Finnish supplement list for EasyList.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt",
     "discontinuedDate": null,
@@ -1819,6 +1920,7 @@
   },
   {
     "id": 102,
+    "chatUrl": null,
     "description": "Block annoying web elements and reclaim lost screen real estate to make the web more user friendly!",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt",
     "discontinuedDate": null,
@@ -1837,6 +1939,7 @@
   },
   {
     "id": 103,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1855,6 +1958,7 @@
   },
   {
     "id": 104,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1873,6 +1977,7 @@
   },
   {
     "id": 105,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1891,6 +1996,7 @@
   },
   {
     "id": 106,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1909,6 +2015,7 @@
   },
   {
     "id": 107,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1927,6 +2034,7 @@
   },
   {
     "id": 108,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1945,6 +2053,7 @@
   },
   {
     "id": 109,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1963,6 +2072,7 @@
   },
   {
     "id": 110,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1981,6 +2091,7 @@
   },
   {
     "id": 111,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -1999,6 +2110,7 @@
   },
   {
     "id": 112,
+    "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -2017,6 +2129,7 @@
   },
   {
     "id": 113,
+    "chatUrl": null,
     "description": "Blocks Japanese regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2035,6 +2148,7 @@
   },
   {
     "id": 114,
+    "chatUrl": null,
     "description": "Blocks advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2053,6 +2167,7 @@
   },
   {
     "id": 115,
+    "chatUrl": null,
     "description": "Web adverts can be simply blocked by using a specially formatted text file called a “Hosts” file which is a list myself and numerous others have painstakingly compiled to now over 60000 (verified) known banner advertising companies and providers along with hostile websites that have been discovered (popup providers, spyware, dialers ,scams etc). This file tells your computer to try to and access itself whenever a banner advert is requested from a server that is in its \"black\" list, but instead of contacting the advert server your computer tries to request itself, and as your machine doesn't contain any adverts (if you are not running a web server) nothing will be shown.",
     "descriptionSourceUrl": "http://hostsfile.mine.nu/",
     "discontinuedDate": null,
@@ -2071,6 +2186,7 @@
   },
   {
     "id": 116,
+    "chatUrl": null,
     "description": "This is a complementary list for RoList with annoyances that are not necessarly banners.",
     "descriptionSourceUrl": "https://www.zoso.ro/pages/rolist2.txt",
     "discontinuedDate": null,
@@ -2089,6 +2205,7 @@
   },
   {
     "id": 117,
+    "chatUrl": null,
     "description": "A list combining ROList and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2107,6 +2224,7 @@
   },
   {
     "id": 118,
+    "chatUrl": null,
     "description": "Romanian supplement for EasyList.",
     "descriptionSourceUrl": "https://adblockplus.org/subscriptions",
     "discontinuedDate": null,
@@ -2125,6 +2243,7 @@
   },
   {
     "id": 119,
+    "chatUrl": null,
     "description": "Romanian ad block filtering list.",
     "descriptionSourceUrl": "https://github.com/tcptomato/ROad-Block",
     "discontinuedDate": null,
@@ -2143,6 +2262,7 @@
   },
   {
     "id": 120,
+    "chatUrl": null,
     "description": "A combined URL blocklist for blocking ransomware.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2161,6 +2281,7 @@
   },
   {
     "id": 121,
+    "chatUrl": null,
     "description": "Blocks TorrentLocker from payment site servers by IP address.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2179,6 +2300,7 @@
   },
   {
     "id": 122,
+    "chatUrl": null,
     "description": "Blocks TorrentLocker from payment site servers by domain.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2197,6 +2319,7 @@
   },
   {
     "id": 123,
+    "chatUrl": null,
     "description": "Blocks TorrentLocker from botnet command and control servers by IP address.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2215,6 +2338,7 @@
   },
   {
     "id": 124,
+    "chatUrl": null,
     "description": "Blocks TorrentLocker from botnet command and control servers by domain.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2233,6 +2357,7 @@
   },
   {
     "id": 125,
+    "chatUrl": null,
     "description": "Blocks TeslaCrypt from payment site servers by IP address.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2251,6 +2376,7 @@
   },
   {
     "id": 126,
+    "chatUrl": null,
     "description": "Blocks TeslaCrypt from payment site servers by domain.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2269,6 +2395,7 @@
   },
   {
     "id": 127,
+    "chatUrl": null,
     "description": "Blocks TeslaCrypt from distribution site servers by URL.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2287,6 +2414,7 @@
   },
   {
     "id": 128,
+    "chatUrl": null,
     "description": "Blocks TeslaCrypt from botnet command and control servers by URL.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2305,6 +2433,7 @@
   },
   {
     "id": 129,
+    "chatUrl": null,
     "description": "Blocks TeslaCrypt from botnet command and control servers by domain.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2323,6 +2452,7 @@
   },
   {
     "id": 130,
+    "chatUrl": null,
     "description": "Blocks Locky from payment site servers by IP address.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2341,6 +2471,7 @@
   },
   {
     "id": 131,
+    "chatUrl": null,
     "description": "Russian supplement for EasyList.",
     "descriptionSourceUrl": "https://adblockplus.org/subscriptions",
     "discontinuedDate": null,
@@ -2359,6 +2490,7 @@
   },
   {
     "id": 132,
+    "chatUrl": null,
     "description": "Blocks Russian regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2377,6 +2509,7 @@
   },
   {
     "id": 133,
+    "chatUrl": null,
     "description": "A list combining RU AdList and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2395,6 +2528,7 @@
   },
   {
     "id": 134,
+    "chatUrl": null,
     "description": "Russian-only fork of Fanboy's Annoyance List.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2413,6 +2547,7 @@
   },
   {
     "id": 135,
+    "chatUrl": null,
     "description": "Blocks advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2431,6 +2566,7 @@
   },
   {
     "id": 136,
+    "chatUrl": null,
     "description": "SVN: Slovenian List is regional list primarily for uBlock Origin or uBlock, which consists mostly of static cosmetic filters and a few tracking filters. Among others, there are 100 most popular Slovenian websites included in this list.",
     "descriptionSourceUrl": "https://github.com/betterwebleon/slovenian-list",
     "discontinuedDate": null,
@@ -2449,6 +2585,7 @@
   },
   {
     "id": 137,
+    "chatUrl": null,
     "description": "Hosts contributed by Steven Black.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -2467,6 +2604,7 @@
   },
   {
     "id": 138,
+    "chatUrl": null,
     "description": "Spotify ads sources sites based on EZBlocker content.",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -2485,6 +2623,7 @@
   },
   {
     "id": 139,
+    "chatUrl": null,
     "description": "The Spam404 domain blacklist is a regularly updated list of abusive domain names.",
     "descriptionSourceUrl": "http://www.spam404.com/domain-blacklist.html",
     "discontinuedDate": null,
@@ -2503,6 +2642,7 @@
   },
   {
     "id": 140,
+    "chatUrl": null,
     "description": "This filter protects you from online scams. This filter is regularly updated with data collected by Spam404.com.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt",
     "discontinuedDate": null,
@@ -2521,6 +2661,7 @@
   },
   {
     "id": 141,
+    "chatUrl": null,
     "description": "Whitelists the trackers on the United Airlines shopping portal so that rewards can be credited.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2539,6 +2680,7 @@
   },
   {
     "id": 142,
+    "chatUrl": null,
     "description": "Block ads with AdBlock filter.",
     "descriptionSourceUrl": "https://web.archive.org/web/20160221135711/http://adblock.gjtech.net/?format=unix-hosts",
     "discontinuedDate": null,
@@ -2557,6 +2699,7 @@
   },
   {
     "id": 143,
+    "chatUrl": null,
     "description": "Whitelists the trackers on the Southwest Airlines shopping portal so that rewards can be credited.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2575,6 +2718,7 @@
   },
   {
     "id": 144,
+    "chatUrl": null,
     "description": "Whitelists the trackers on the American Airlines shopping portal so that rewards can be credited.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2593,6 +2737,7 @@
   },
   {
     "id": 145,
+    "chatUrl": null,
     "description": "Whitelists the trackers on the Alaska Airlines shopping portal so that rewards can be credited.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2611,6 +2756,7 @@
   },
   {
     "id": 146,
+    "chatUrl": null,
     "description": "Adblock Plus for Japan domestic and Japanese correspondence Universal Filter.",
     "descriptionSourceUrl": "http://www.schuzak.jp/other/abp.html",
     "discontinuedDate": null,
@@ -2629,6 +2775,7 @@
   },
   {
     "id": 147,
+    "chatUrl": null,
     "description": "My list removes advertisements from all the leading Danish Websites: Ekstra Bladet, Jyllands Posten, Berlingske, TV / 2, Computerworld, Version2, etc.",
     "descriptionSourceUrl": "https://henrik.schack.dk/adblock/",
     "discontinuedDate": null,
@@ -2647,6 +2794,7 @@
   },
   {
     "id": 148,
+    "chatUrl": null,
     "description": "I make supplemental filters in Adblock Plus to block garbage on webpages not blocked by other lists. I use many regular expressions, a few domain filters, but no CSS filters.",
     "descriptionSourceUrl": "https://satterly.neocities.org/abp_filters.html",
     "discontinuedDate": null,
@@ -2665,6 +2813,7 @@
   },
   {
     "id": 149,
+    "chatUrl": null,
     "description": "Blocks spammers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2683,6 +2832,7 @@
   },
   {
     "id": 150,
+    "chatUrl": null,
     "description": "Blocks most popular internet statistics counters on sites serving Russia.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2701,6 +2851,7 @@
   },
   {
     "id": 151,
+    "chatUrl": null,
     "description": "Whitelists the trackers on the BarclayCard shopping portal so that rewards can be credited.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -2719,6 +2870,7 @@
   },
   {
     "id": 152,
+    "chatUrl": null,
     "description": "Removes unnecessary elements from specific file sharing sites.",
     "descriptionSourceUrl": "https://firime.wordpress.com/projects/others/fedlist/",
     "discontinuedDate": null,
@@ -2737,6 +2889,7 @@
   },
   {
     "id": 153,
+    "chatUrl": null,
     "description": "Finnish blocklist for AdBlock to block social media stuff.",
     "descriptionSourceUrl": "http://adb.juvander.net/Finland_adb_antisocial.txt",
     "discontinuedDate": null,
@@ -2755,6 +2908,7 @@
   },
   {
     "id": 154,
+    "chatUrl": null,
     "description": "Use this file to prevent your computer from connecting to selected internet hosts. This is an easy and effective way to protect you from many types of spyware, reduces bandwidth use, blocks certain pop-up  traps, prevents user tracking by way of \"web bugs\" embedded in spam, provides partial protection to IE from certain web-based exploits and blocks most advertising you would otherwise be subjected to on the internet.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/hosts",
     "discontinuedDate": null,
@@ -2773,6 +2927,7 @@
   },
   {
     "id": 155,
+    "chatUrl": null,
     "description": "Filter that unblocks ads that may be useful to users.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#filter-for-useful-ads",
     "discontinuedDate": null,
@@ -2791,6 +2946,7 @@
   },
   {
     "id": 156,
+    "chatUrl": null,
     "description": "Filter that enables removing of the ads from websites with Turkish content.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#turkish-filter",
     "discontinuedDate": null,
@@ -2809,6 +2965,7 @@
   },
   {
     "id": 157,
+    "chatUrl": null,
     "description": "The most comprehensive list of various online counters and web analytics tools. If you do not want your actions on the Internet be tracked, use this filter.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#spyware-filter",
     "discontinuedDate": null,
@@ -2827,6 +2984,7 @@
   },
   {
     "id": 158,
+    "chatUrl": null,
     "description": "Filter that enables removing of the ads from websites in Spanish.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#spanish-portuguese-filter",
     "discontinuedDate": null,
@@ -2845,6 +3003,7 @@
   },
   {
     "id": 159,
+    "chatUrl": null,
     "description": "If you do not like numerous «Like» and «Tweet» buttons on all the popular websites on the Internet, subscribe to this filter, and you will not see them anymore.",
     "descriptionSourceUrl": "https://adguard.com/en/filters.html",
     "discontinuedDate": null,
@@ -2863,6 +3022,7 @@
   },
   {
     "id": 160,
+    "chatUrl": null,
     "description": "Filter that blocks ads on iOS mobile devices in Safari browser. Contains all known mobile ad networks.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#safari-filter",
     "discontinuedDate": null,
@@ -2881,6 +3041,7 @@
   },
   {
     "id": 161,
+    "chatUrl": null,
     "description": "Filter that enables removing of the ads from websites in Russian. The filter was created 5 years ago. Initially, the work on creation of this filter was based on RU AdList filter and a set of rules developed by us. Subsequently, the filter was developed completely independently, so at this point there are very little intersections with RU AdList left.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#russian-filter",
     "discontinuedDate": null,
@@ -2899,6 +3060,7 @@
   },
   {
     "id": 162,
+    "chatUrl": null,
     "description": "Filter that blocks ads on mobile devices. Contains all known mobile ad networks.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#mobile-ads-filter",
     "discontinuedDate": null,
@@ -2917,6 +3079,7 @@
   },
   {
     "id": 163,
+    "chatUrl": null,
     "description": "Filter that enables removing of the ads from websites in Japanese.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#japanese-filter",
     "discontinuedDate": null,
@@ -2935,6 +3098,7 @@
   },
   {
     "id": 164,
+    "chatUrl": null,
     "description": "Filter that enables removing of the ads from websites with German content.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#german-filter",
     "discontinuedDate": null,
@@ -2953,6 +3117,7 @@
   },
   {
     "id": 165,
+    "chatUrl": null,
     "description": "Filter designed to test certain hazardous filtering rules before they are added to the basic filters.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#experimental-filter",
     "discontinuedDate": null,
@@ -2971,6 +3136,7 @@
   },
   {
     "id": 166,
+    "chatUrl": null,
     "description": "Filter that enables removing of the ads from websites with English content.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#english-filter",
     "discontinuedDate": null,
@@ -2989,6 +3155,7 @@
   },
   {
     "id": 167,
+    "chatUrl": null,
     "description": "Filter that enables removing of the ads from websites with Dutch content.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#dutch-filter",
     "discontinuedDate": null,
@@ -3007,6 +3174,7 @@
   },
   {
     "id": 168,
+    "chatUrl": null,
     "description": "A filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by AdGuard DNS servers to block ads.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#simplified-domain-names-filter",
     "discontinuedDate": null,
@@ -3025,6 +3193,7 @@
   },
   {
     "id": 169,
+    "chatUrl": null,
     "description": "Blocks irritating elements on webpages, including cookie notices, third-party widgets and in-page popups (Doesn’t include social media widgets and buttons, to block them you can still use Social media filter separately). It was inspired by Fanboy Annoyances List, but doesn’t duplicate it, so you can use them both together.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter",
     "discontinuedDate": null,
@@ -3043,6 +3212,7 @@
   },
   {
     "id": 170,
+    "chatUrl": null,
     "description": "Blocks ads injected by adware.",
     "descriptionSourceUrl": "https://adblockplus.org/subscriptions",
     "discontinuedDate": null,
@@ -3061,6 +3231,7 @@
   },
   {
     "id": 171,
+    "chatUrl": null,
     "description": "This is a general, mainly a Finnish list for blocking various elements on specific websites such as ads, cookie notifications and cosmetic annoyances.",
     "descriptionSourceUrl": "https://dl.dropboxusercontent.com/s/1ybzw9lb7m1qiyl/AAs.txt",
     "discontinuedDate": null,
@@ -3079,6 +3250,7 @@
   },
   {
     "id": 172,
+    "chatUrl": null,
     "description": "The most complete and accurate list to block ads, tracers and other Internet crap on smartphones and PCs.",
     "descriptionSourceUrl": "https://github.com/collinbarrett/FilterLists/issues/280",
     "discontinuedDate": null,
@@ -3097,6 +3269,7 @@
   },
   {
     "id": 173,
+    "chatUrl": null,
     "description": "A hosts list blocking miscellaneous annoyances. (Compressed, currently cannot be subscribed to/added.)",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3115,6 +3288,7 @@
   },
   {
     "id": 174,
+    "chatUrl": null,
     "description": "Blockzilla is an unbloated and slim list, being light on system resources, yet still powerful against ads and trackers.",
     "descriptionSourceUrl": "https://github.com/zpacman/Blockzilla",
     "discontinuedDate": null,
@@ -3133,6 +3307,7 @@
   },
   {
     "id": 175,
+    "chatUrl": null,
     "description": "Adblock / Adblock plus filter list for blocking cookie notifications.",
     "descriptionSourceUrl": "https://github.com/r4vi/block-the-eu-cookie-shit-list",
     "discontinuedDate": null,
@@ -3151,6 +3326,7 @@
   },
   {
     "id": 176,
+    "chatUrl": null,
     "description": "Adblock filters for both Adblock PLUS and uBlock. It also includes some anti-adblocking rules to make your adblocking extension undetectable. The author manually add the track block rules from https://better.fyi/trackers/ since those rules are only for an iOS app only.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3169,6 +3345,7 @@
   },
   {
     "id": 177,
+    "chatUrl": null,
     "description": "BarbBlock is a content blocking list with standalone browser extensions for Chrome and Firefox. It blacklists sites which have used DMCA takedowns to force removal from other content blocking lists. Such takedowns are categorically invalid, but they can be effective at intimidating small open-source projects into compliance.",
     "descriptionSourceUrl": "https://github.com/paulgb/BarbBlock/blob/master/README.md",
     "discontinuedDate": null,
@@ -3187,6 +3364,7 @@
   },
   {
     "id": 178,
+    "chatUrl": null,
     "description": "This is a list for blocking advertisements on banki.ru site which is not blocked by \"conventional\" list.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/rebelion76/bankiru_plus_adblock_list/master/bankiru_plus.txt",
     "discontinuedDate": null,
@@ -3205,6 +3383,7 @@
   },
   {
     "id": 179,
+    "chatUrl": null,
     "description": "A non-comprehensive malware hosts list meant to be used in conjunction with the King of the PAC file.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3223,6 +3402,7 @@
   },
   {
     "id": 180,
+    "chatUrl": null,
     "description": "The sites listed there a fake/malicious sites that lure people with fake direct-download-links to JAV videos.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3241,6 +3421,7 @@
   },
   {
     "id": 181,
+    "chatUrl": null,
     "description": "A list for Adblock Plus, which is one of the most famous ad blocking softwares.",
     "descriptionSourceUrl": "https://osdn.net/projects/ayucat-list/",
     "discontinuedDate": null,
@@ -3259,6 +3440,7 @@
   },
   {
     "id": 182,
+    "chatUrl": null,
     "description": "Complementary subscription to Liste FR + EasyList.",
     "descriptionSourceUrl": "https://web.archive.org/web/20171213121952/http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
     "discontinuedDate": "2017-12-09T00:00:00",
@@ -3277,6 +3459,7 @@
   },
   {
     "id": 183,
+    "chatUrl": null,
     "description": "Blocks shady, annoying pop-under ads from the infamous PopAds ad network.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3295,6 +3478,7 @@
   },
   {
     "id": 184,
+    "chatUrl": null,
     "description": "Blocks Facebook trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3313,6 +3497,7 @@
   },
   {
     "id": 185,
+    "chatUrl": null,
     "description": "A hosts list blocking phishing sites. (Compressed, currently cannot be subscribed to/added.)",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3331,6 +3516,7 @@
   },
   {
     "id": 186,
+    "chatUrl": null,
     "description": "A hosts list blocking malware sites. (Compressed, currently cannot be subscribed to/added.)",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3349,6 +3535,7 @@
   },
   {
     "id": 187,
+    "chatUrl": null,
     "description": "A hosts list blocking tracking sites. (Compressed, currently cannot be subscribed to/added.)",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3367,6 +3554,7 @@
   },
   {
     "id": 188,
+    "chatUrl": null,
     "description": "A hosts list blocking adult/pornographic sites. (Compressed, currently cannot be subscribed to/added.)",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3385,6 +3573,7 @@
   },
   {
     "id": 189,
+    "chatUrl": null,
     "description": "A hosts list blocking advertising sites. (Compressed, currently cannot be subscribed to/added.)",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3403,6 +3592,7 @@
   },
   {
     "id": 190,
+    "chatUrl": null,
     "description": "Spam sites based on BadHosts content.",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -3421,6 +3611,7 @@
   },
   {
     "id": 191,
+    "chatUrl": null,
     "description": "Risk content sites based on BadHosts content.",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -3439,6 +3630,7 @@
   },
   {
     "id": 192,
+    "chatUrl": null,
     "description": "Dead sites based on BadHosts content.",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -3457,6 +3649,7 @@
   },
   {
     "id": 193,
+    "chatUrl": null,
     "description": "This blocklist only contains compromised / hijacked websites (level 2) which are being abused by cybercriminals to host a ZeuS botnet controller.",
     "descriptionSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
     "discontinuedDate": null,
@@ -3475,6 +3668,7 @@
   },
   {
     "id": 194,
+    "chatUrl": null,
     "description": "The Feodo Tracker Feodo IP Blocklist contains IP addresses (IPv4) used as C&C communication channel by the Feodo Trojan. This lists contains two types of IP address: Feodo C&C servers used by version A, version C and version D of the Feodo Trojan (these IP addresses are usually compromised servers running an nginx daemon on port 8080 TCP or 7779 TCP that is acting as proxy, forwarding all traffic to a tier 2 proxy node) and Feodo C&C servers used by version B which are usually used for the exclusive purpose of hosting a Feodo C&C server. Attention: Since Feodo C&C servers associated with version A, version C and version D are usually hosted on compromised servers, its likely that you also block/drop legit traffic e.g. towards websites hosted on a certain IP address acting as Feodo C&C for version A, version C and version D. If you only want to block/drop traffic to Feodo C&C servers hosted on bad IPs (version B), please use the blocklist BadIPs documented below.",
     "descriptionSourceUrl": "https://feodotracker.abuse.ch/blocklist/",
     "discontinuedDate": null,
@@ -3493,6 +3687,7 @@
   },
   {
     "id": 195,
+    "chatUrl": null,
     "description": "The Feodo Tracker Feodo Domain Blocklist contains domain names (FQDN) used as C&C communication channel by the Feodo Trojan. These domains names are usually registered and operated by cybercriminals for the exclusive purpose of hosting a Feodo botnet controller. Hence you should expect no legit traffic to those domains. I highly recommend you to block/drop any traffic towards any Feodo C&C domain by using the Feodo Domain Blocklist. Please consider that domain names are usually only used by version B of the Feodo Trojan. C&C communication channels used by version A, version C and version D are not covered by this blocklist.",
     "descriptionSourceUrl": "https://feodotracker.abuse.ch/blocklist/",
     "discontinuedDate": null,
@@ -3511,6 +3706,7 @@
   },
   {
     "id": 196,
+    "chatUrl": null,
     "description": "The Feodo Tracker Feodo BadIP Blocklist only contains IP addresses (IPv4) used as C&C communication channel by the Feodo Trojan version B. These IP addresses are usually servers rented by cybercriminals directly and used for the exclusive purpose of hosting a Feodo C&C server. Hence you should expect no legit traffic to those IP addresses. I highly recommend you to block/drop any traffic towards any Feodo C&C using the Feodo BadIP Blocklist. Please consider that this blocklist only contains IP addresses used by version B of the Feodo Trojan. C&C communication channels used by version A, version C and version D are not covered by this blocklist.",
     "descriptionSourceUrl": "https://feodotracker.abuse.ch/blocklist/",
     "discontinuedDate": null,
@@ -3529,6 +3725,7 @@
   },
   {
     "id": 197,
+    "chatUrl": null,
     "description": "A list combining ABPindo and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3547,6 +3744,7 @@
   },
   {
     "id": 198,
+    "chatUrl": null,
     "description": "ABPindo is an affiliated filter list written by hermawan that specifically removes adverts on Indonesian language websites.",
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "discontinuedDate": null,
@@ -3565,6 +3763,7 @@
   },
   {
     "id": 199,
+    "chatUrl": null,
     "description": "Born from the need to block advertisements on the increasingly popular social network, this module is a great way to complete the protection offered by Adblock Plus and X Files during daily navigation. It may be associated with the main module of the X-Files or third-party lists.",
     "descriptionSourceUrl": "https://github.com/gioxx/xfiles",
     "discontinuedDate": null,
@@ -3583,6 +3782,7 @@
   },
   {
     "id": 200,
+    "chatUrl": null,
     "description": "The module that serves to protect the user's navigation, seamlessly integrates to subscriptions already installed on your Adblock Plus.",
     "descriptionSourceUrl": "https://github.com/gioxx/xfiles",
     "discontinuedDate": null,
@@ -3601,6 +3801,7 @@
   },
   {
     "id": 201,
+    "chatUrl": null,
     "description": "Specific for Italian websites but with an eye also to the most visited international, is the main form and the list officially recognized (for Italy), perfectly compatible with AdBlock Plus.",
     "descriptionSourceUrl": "https://github.com/gioxx/xfiles",
     "discontinuedDate": null,
@@ -3619,6 +3820,7 @@
   },
   {
     "id": 202,
+    "chatUrl": null,
     "description": "Blocks Japanese regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3637,6 +3839,7 @@
   },
   {
     "id": 203,
+    "chatUrl": null,
     "description": "Blocks Japanese regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3655,6 +3858,7 @@
   },
   {
     "id": 204,
+    "chatUrl": null,
     "description": "Blocks irritating elements on Japanese regional webpages.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3673,6 +3877,7 @@
   },
   {
     "id": 205,
+    "chatUrl": null,
     "description": "Blocks Japanese regional social network advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3691,6 +3896,7 @@
   },
   {
     "id": 206,
+    "chatUrl": null,
     "description": "The ABP advertising filter is built with the mission of improving the browsing experience for the vietnamese users. ABPVN may not help block all ads, but ABPVN will minimize the appearance of ads on most websites in Vietnam.",
     "descriptionSourceUrl": "https://abpvn.com",
     "discontinuedDate": null,
@@ -3709,6 +3915,7 @@
   },
   {
     "id": 207,
+    "chatUrl": null,
     "description": "Helps you keep your Ad-Blocker active, when you visit a website and it asks you to disable. Composed of a user script «AakScript» written in javascript and a filter list «AakList» using the same syntax as lists AdBlock and AdBlock Plus, the two are complementary and unlock different website.",
     "descriptionSourceUrl": "https://github.com/reek/anti-adblock-killer/blob/master/README.md",
     "discontinuedDate": "2016-11-17T00:00:00",
@@ -3727,6 +3934,7 @@
   },
   {
     "id": 208,
+    "chatUrl": null,
     "description": "This blocklist contains all domain names associated with ZeuS C&Cs which are currently being tracked by ZeuS Tracker.",
     "descriptionSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
     "discontinuedDate": null,
@@ -3745,6 +3953,7 @@
   },
   {
     "id": 209,
+    "chatUrl": null,
     "description": "The ZeuS domain blocklist (BadDomains) is the recommended blocklist if you want to block only ZeuS domain names. It excludes domain names that ZeuS Tracker believes to be hijacked (level 2).",
     "descriptionSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
     "discontinuedDate": null,
@@ -3763,6 +3972,7 @@
   },
   {
     "id": 210,
+    "chatUrl": null,
     "description": "This blocklist contains all IPv4 addresses associated with ZeuS C&Cswhich are currently being tracked by ZeuS Tracker.",
     "descriptionSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
     "discontinuedDate": null,
@@ -3781,6 +3991,7 @@
   },
   {
     "id": 211,
+    "chatUrl": null,
     "description": "This blocklists only includes IPv4 addresses that are used by the ZeuS trojan. It is the recommened blocklist if you want to block only ZeuS IPs. It excludes IP addresses that ZeuS Tracker believes to be hijacked (level 2) or belong to a free web hosting provider (level 3).",
     "descriptionSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
     "discontinuedDate": null,
@@ -3799,6 +4010,7 @@
   },
   {
     "id": 212,
+    "chatUrl": null,
     "description": "2o7Net tracking sites based on BadHosts content.",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
@@ -3817,6 +4029,7 @@
   },
   {
     "id": 213,
+    "chatUrl": null,
     "description": "Blocks ads on YouTube.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3835,6 +4048,7 @@
   },
   {
     "id": 214,
+    "chatUrl": null,
     "description": "The Adblock Warning Removal List specifically removes obtrusive messages and warnings targeted to users who use an adblocker.",
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "discontinuedDate": null,
@@ -3853,6 +4067,7 @@
   },
   {
     "id": 215,
+    "chatUrl": null,
     "description": "Adblock PL is official Poland filter list for AdBlock and Adblock Plus.",
     "descriptionSourceUrl": "https://github.com/adblockpolska/Adblock_PL_List",
     "discontinuedDate": null,
@@ -3871,6 +4086,7 @@
   },
   {
     "id": 216,
+    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block social network elements, i.e. widgets, pop-ups and other social elements on Polish websites.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3889,6 +4105,7 @@
   },
   {
     "id": 217,
+    "chatUrl": null,
     "description": "Blocks Persian regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3907,6 +4124,7 @@
   },
   {
     "id": 218,
+    "chatUrl": null,
     "description": "Blocks Finnish regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3925,6 +4143,7 @@
   },
   {
     "id": 219,
+    "chatUrl": null,
     "description": "Prevention behavior tracking by the site administrator.",
     "descriptionSourceUrl": "http://blogram.net/2010/04/23/adblock/",
     "discontinuedDate": null,
@@ -3943,6 +4162,7 @@
   },
   {
     "id": 220,
+    "chatUrl": null,
     "description": "Blocks Korean regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3961,6 +4181,7 @@
   },
   {
     "id": 221,
+    "chatUrl": null,
     "description": "Blocks Estonian regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -3979,6 +4200,7 @@
   },
   {
     "id": 222,
+    "chatUrl": null,
     "description": "A set of adblock filters to block advertisement in Persian websites.",
     "descriptionSourceUrl": "https://github.com/SlashArash/adblockfa/",
     "discontinuedDate": null,
@@ -3997,6 +4219,7 @@
   },
   {
     "id": 223,
+    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Presented here filter set was created for Polish internet users. Contains a list of elements of advertising, such as banners or flash animations, the most commonly used on Polish websites.",
     "descriptionSourceUrl": "http://www.certyficate.it/polski-filtr-adblock/",
     "discontinuedDate": null,
@@ -4015,6 +4238,7 @@
   },
   {
     "id": 224,
+    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block messages about cookies and privacy policy on Polish websites.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4033,6 +4257,7 @@
   },
   {
     "id": 225,
+    "chatUrl": null,
     "description": "Blocks Japanese regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4051,6 +4276,7 @@
   },
   {
     "id": 226,
+    "chatUrl": null,
     "description": "Blocking mobile ad providers and some analytics providers.",
     "descriptionSourceUrl": "https://adaway.org/hosts.txt",
     "discontinuedDate": null,
@@ -4069,6 +4295,7 @@
   },
   {
     "id": 227,
+    "chatUrl": null,
     "description": "Allow non-intrusive advertising.",
     "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/exceptionrules.txt",
     "discontinuedDate": null,
@@ -4087,6 +4314,7 @@
   },
   {
     "id": 228,
+    "chatUrl": null,
     "description": "Ad blocking rules for Iranian/Persian websites.",
     "descriptionSourceUrl": "https://github.com/farrokhi/adblock-iran",
     "discontinuedDate": null,
@@ -4105,6 +4333,7 @@
   },
   {
     "id": 229,
+    "chatUrl": null,
     "description": "Block only comments.",
     "descriptionSourceUrl": "https://youtube.adblockplus.me/",
     "discontinuedDate": null,
@@ -4123,6 +4352,7 @@
   },
   {
     "id": 230,
+    "chatUrl": null,
     "description": "Block the DL itself of advertising.",
     "descriptionSourceUrl": "http://blogram.net/2010/04/23/adblock/",
     "discontinuedDate": null,
@@ -4141,6 +4371,7 @@
   },
   {
     "id": 231,
+    "chatUrl": null,
     "description": "Hide text ads by CSS.",
     "descriptionSourceUrl": "http://blogram.net/2010/04/23/adblock/",
     "discontinuedDate": null,
@@ -4159,6 +4390,7 @@
   },
   {
     "id": 232,
+    "chatUrl": null,
     "description": "Targeting sites with Hoax, propanganda and clickbait (fake sites). Note: List doesn't include harmless spoof/satire sites like theonion.com.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/ryanbr/fanboy-adblock/master/fake-news.txt",
     "discontinuedDate": null,
@@ -4177,6 +4409,7 @@
   },
   {
     "id": 233,
+    "chatUrl": null,
     "description": "Block only sidebar annoyances.",
     "descriptionSourceUrl": "https://facebook.adblockplus.me/",
     "discontinuedDate": null,
@@ -4195,6 +4428,7 @@
   },
   {
     "id": 234,
+    "chatUrl": null,
     "description": "Block Facebook objects on non-Facebook websites",
     "descriptionSourceUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt",
     "discontinuedDate": null,
@@ -4213,6 +4447,7 @@
   },
   {
     "id": 235,
+    "chatUrl": null,
     "description": "Block only news feed annoyances.",
     "descriptionSourceUrl": "https://facebook.adblockplus.me/",
     "discontinuedDate": null,
@@ -4231,6 +4466,7 @@
   },
   {
     "id": 236,
+    "chatUrl": null,
     "description": "Block all Facebook annoyances.",
     "descriptionSourceUrl": "https://facebook.adblockplus.me/",
     "discontinuedDate": null,
@@ -4249,6 +4485,7 @@
   },
   {
     "id": 237,
+    "chatUrl": null,
     "description": "Blocks Estonian regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4267,6 +4504,7 @@
   },
   {
     "id": 238,
+    "chatUrl": null,
     "description": "Members with ad blocking software may experience issues receiving Cash Back. If you have AdBlock, Adblock Plus or uBlock, you can add or subscribe to the Ebates Cash Back Shopping filter list.",
     "descriptionSourceUrl": "https://www.ebates.com/help/troubleshooting.htm#abp",
     "discontinuedDate": null,
@@ -4285,6 +4523,7 @@
   },
   {
     "id": 239,
+    "chatUrl": null,
     "description": "Testing unsafe rules for EasyList that will break certain websites.",
     "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/easytest.txt",
     "discontinuedDate": null,
@@ -4303,6 +4542,7 @@
   },
   {
     "id": 240,
+    "chatUrl": null,
     "description": "This EasyPrivacy variant does not contain rules for international domains.",
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "discontinuedDate": null,
@@ -4321,6 +4561,7 @@
   },
   {
     "id": 241,
+    "chatUrl": null,
     "description": "A list combining EasyPrivacy and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4339,6 +4580,7 @@
   },
   {
     "id": 242,
+    "chatUrl": null,
     "description": "EasyPrivacy is an optional supplementary filter list that completely removes all forms of tracking from the internet, including web bugs, tracking scripts and information collectors, thereby protecting your personal data.",
     "descriptionSourceUrl": "https://easylist.to/",
     "discontinuedDate": null,
@@ -4357,6 +4599,7 @@
   },
   {
     "id": 243,
+    "chatUrl": null,
     "description": "This EasyList variant does not contain filters for adult domains.",
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "discontinuedDate": null,
@@ -4375,6 +4618,7 @@
   },
   {
     "id": 244,
+    "chatUrl": null,
     "description": "This EasyList variant only contains blocking filters to remove adverts, with no element rules whatsoever; it, therefore, has more limited coverage than the full version of the list, although still commands a niche market.",
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "discontinuedDate": null,
@@ -4393,6 +4637,7 @@
   },
   {
     "id": 245,
+    "chatUrl": null,
     "description": "Help you to block ads in Thailand websites.",
     "descriptionSourceUrl": "https://github.com/easylist-thailand/easylist-thailand",
     "discontinuedDate": null,
@@ -4411,6 +4656,7 @@
   },
   {
     "id": 246,
+    "chatUrl": null,
     "description": "Spanish supplement for EasyList.",
     "descriptionSourceUrl": "https://adblockplus.org/subscriptions",
     "discontinuedDate": null,
@@ -4429,6 +4675,7 @@
   },
   {
     "id": 247,
+    "chatUrl": null,
     "description": "In page Pop-Ups and other annoyances; thereby substantially decreasing web page loading times and uncluttering them (includes Fanboy's Social Blocking List and Fanboy's Cookiemonster List.)",
     "descriptionSourceUrl": "https://fanboy.co.nz/",
     "discontinuedDate": null,
@@ -4447,6 +4694,7 @@
   },
   {
     "id": 248,
+    "chatUrl": null,
     "description": "A list combining EasyList Lithuania and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4465,6 +4713,7 @@
   },
   {
     "id": 249,
+    "chatUrl": null,
     "description": "Blocks fonts loaded from third parties.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4483,6 +4732,7 @@
   },
   {
     "id": 250,
+    "chatUrl": null,
     "description": "This will remove cookie and privacy warnings.",
     "descriptionSourceUrl": "https://fanboy.co.nz/",
     "discontinuedDate": null,
@@ -4501,6 +4751,7 @@
   },
   {
     "id": 251,
+    "chatUrl": null,
     "description": "Blocks English and Spanish regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4519,6 +4770,7 @@
   },
   {
     "id": 252,
+    "chatUrl": null,
     "description": "Tentative hosts file for Italian sites created from Easylist Italy and ADB X Files.",
     "descriptionSourceUrl": "https://filtri-dns.ga/filtri.txt",
     "discontinuedDate": null,
@@ -4537,6 +4789,7 @@
   },
   {
     "id": 253,
+    "chatUrl": null,
     "description": "This filter list for uBlock Origin/Adblock Plus is designed to be used with such lists as EasyList, RU AdList etc., so it's substantially free of intersections with them. The list is made for blocking ad (mostly on Russian websites) missed by other filter lists maintainers. It is regularly updated and actively developed for now.",
     "descriptionSourceUrl": "https://github.com/hant0508/uBlock-filters",
     "discontinuedDate": null,
@@ -4555,6 +4808,7 @@
   },
   {
     "id": 254,
+    "chatUrl": null,
     "description": "Blocks Vietnamese regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4573,6 +4827,7 @@
   },
   {
     "id": 255,
+    "chatUrl": null,
     "description": "A list combining EasyList, EasyPrivacy, Fanboy's Enhanced Tracking List, and Fanboy's Annoyance List.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4591,6 +4846,7 @@
   },
   {
     "id": 256,
+    "chatUrl": null,
     "description": "Blocks Turkish regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4609,6 +4865,7 @@
   },
   {
     "id": 257,
+    "chatUrl": null,
     "description": "Blocks Swedish regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4627,6 +4884,7 @@
   },
   {
     "id": 258,
+    "chatUrl": null,
     "description": "Blocks Spanish and Portuguese regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4645,6 +4903,7 @@
   },
   {
     "id": 259,
+    "chatUrl": null,
     "description": "Hide and block social content, social widgets, social scripts and social icons.",
     "descriptionSourceUrl": "https://fanboy.co.nz/",
     "discontinuedDate": null,
@@ -4663,6 +4922,7 @@
   },
   {
     "id": 260,
+    "chatUrl": null,
     "description": "Blocks Polish regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4681,6 +4941,7 @@
   },
   {
     "id": 261,
+    "chatUrl": null,
     "description": "Blocks Korean regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4699,6 +4960,7 @@
   },
   {
     "id": 262,
+    "chatUrl": null,
     "description": "Blocks Japanese regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4717,6 +4979,7 @@
   },
   {
     "id": 263,
+    "chatUrl": null,
     "description": "Blocks Hebrew regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4735,6 +4998,7 @@
   },
   {
     "id": 264,
+    "chatUrl": null,
     "description": "Blocks Indian regional advertisements and trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4753,6 +5017,7 @@
   },
   {
     "id": 265,
+    "chatUrl": null,
     "description": "Blocks common tracking scripts such as Omniture, Webtrends, Foresee, Coremetrics, Google-Analytics, Touchclarity, ChannelIntelligence.",
     "descriptionSourceUrl": "https://fanboy.co.nz/filters.html",
     "discontinuedDate": null,
@@ -4771,6 +5036,7 @@
   },
   {
     "id": 266,
+    "chatUrl": null,
     "description": "A list combining EasyList, EasyPrivacy, and Fanboy's Enhanced Tracking List.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4789,6 +5055,7 @@
   },
   {
     "id": 267,
+    "chatUrl": null,
     "description": "EasyList Lithuania is an affiliated filter list written by gymka that specifically removes adverts on Lithuanian language websites.",
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "discontinuedDate": null,
@@ -4807,6 +5074,7 @@
   },
   {
     "id": 268,
+    "chatUrl": null,
     "description": "This is a lite version of EasyList. Only for Simplified Chinese language websites.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt",
     "discontinuedDate": null,
@@ -4825,6 +5093,7 @@
   },
   {
     "id": 269,
+    "chatUrl": null,
     "description": "A list combining EasyList Italy and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4843,6 +5112,7 @@
   },
   {
     "id": 270,
+    "chatUrl": null,
     "description": "This is a list of free/bulk domain registration services, who register 2nd level domains for free or almost free.",
     "descriptionSourceUrl": "http://mirror1.malwaredomains.com/files/bulk_registrars.txt",
     "discontinuedDate": null,
@@ -4861,6 +5131,7 @@
   },
   {
     "id": 271,
+    "chatUrl": null,
     "description": "This is a list of malware domains generated from malwaredomains.com data.",
     "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt",
     "discontinuedDate": null,
@@ -4879,6 +5150,7 @@
   },
   {
     "id": 272,
+    "chatUrl": null,
     "description": "Blocks trackers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4897,6 +5169,7 @@
   },
   {
     "id": 273,
+    "chatUrl": null,
     "description": "Blocks malware.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4915,6 +5188,7 @@
   },
   {
     "id": 274,
+    "chatUrl": null,
     "description": "Blocks malvertising.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4933,6 +5207,7 @@
   },
   {
     "id": 275,
+    "chatUrl": null,
     "description": "Blocks advertisements.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -4951,6 +5226,7 @@
   },
   {
     "id": 276,
+    "chatUrl": null,
     "description": "Use this file to prevent your computer from connecting to selected internet hosts. This is an easy and effective way to protect you from many types of spyware, reduces bandwidth use, blocks certain pop-up traps, prevents user tracking by way of \"web bugs\" embedded in spam, provides partial protection to IE from certain web-based exploits and blocks most advertising you would otherwise be subjected to on the internet.",
     "descriptionSourceUrl": "http://someonewhocares.org/hosts/",
     "discontinuedDate": null,
@@ -4969,6 +5245,7 @@
   },
   {
     "id": 277,
+    "chatUrl": null,
     "description": "Czech filters for Adblock Plus.",
     "descriptionSourceUrl": "http://adblock.dajbych.net/adblock.txt",
     "discontinuedDate": null,
@@ -4987,6 +5264,7 @@
   },
   {
     "id": 278,
+    "chatUrl": null,
     "description": "Corset is a subscription filter to block intruding ads on sites using Korean.",
     "descriptionSourceUrl": "https://code.google.com/archive/p/abp-corset/",
     "discontinuedDate": null,
@@ -5005,6 +5283,7 @@
   },
   {
     "id": 279,
+    "chatUrl": null,
     "description": "EFF maintains a Privacy Badger \"yellowlist\" of domains for which requests are allowed but Privacy Badger restricts access or availability of objectionable cookies and potentially other objectionable identifiers.",
     "descriptionSourceUrl": "https://github.com/EFForg/privacybadgerchrome/blob/master/doc/yellowlist-criteria.md",
     "discontinuedDate": null,
@@ -5023,6 +5302,7 @@
   },
   {
     "id": 280,
+    "chatUrl": null,
     "description": "Clickbait Blocklist just blocks the most annoying clickbait ads. I don't mind ads; I just don't want clickbait crap about shocking celebrity photos and \"deep searches\" for local singles.",
     "descriptionSourceUrl": "https://github.com/cpeterso/clickbait-blocklist/",
     "discontinuedDate": null,
@@ -5041,6 +5321,7 @@
   },
   {
     "id": 281,
+    "chatUrl": null,
     "description": "Removes annoyances, self-promotion and privacy protection on Chinese websites.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt",
     "discontinuedDate": null,
@@ -5059,6 +5340,7 @@
   },
   {
     "id": 282,
+    "chatUrl": null,
     "description": "CAMELEON is a free system that helps Internet users or administrators to blocks web-adverts.",
     "descriptionSourceUrl": "http://sysctl.org/cameleon/",
     "discontinuedDate": null,
@@ -5077,6 +5359,7 @@
   },
   {
     "id": 283,
+    "chatUrl": null,
     "description": "A list combining Bulgarian List and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5095,6 +5378,7 @@
   },
   {
     "id": 284,
+    "chatUrl": null,
     "description": "On this page you can find updated lists to block unwanted content in your favorite browser. With their help, the pesky ads that some sites terrorizing customers will be hidden.",
     "descriptionSourceUrl": "https://stanev.org/abp/",
     "discontinuedDate": null,
@@ -5113,6 +5397,7 @@
   },
   {
     "id": 285,
+    "chatUrl": null,
     "description": "This is a list of dynamic DNS providers.",
     "descriptionSourceUrl": "http://mirror1.malwaredomains.com/files/dynamic_dns.txt",
     "discontinuedDate": null,
@@ -5131,6 +5416,7 @@
   },
   {
     "id": 286,
+    "chatUrl": null,
     "description": "This is a list of free web hosting services.",
     "descriptionSourceUrl": "http://mirror1.malwaredomains.com/files/freewebhosts.txt",
     "discontinuedDate": null,
@@ -5149,6 +5435,7 @@
   },
   {
     "id": 287,
+    "chatUrl": null,
     "description": "This is a list of malware domains.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5167,6 +5454,7 @@
   },
   {
     "id": 288,
+    "chatUrl": null,
     "description": "This is a list of long-lived, \"immortal,\" malware domains.",
     "descriptionSourceUrl": "http://mirror1.malwaredomains.com/files/immortal_domains.txt",
     "discontinuedDate": null,
@@ -5185,6 +5473,7 @@
   },
   {
     "id": 289,
+    "chatUrl": null,
     "description": "EasyList Italy is a filter list written by the EasyList author Khrin that specifically removes adverts on Italian language websites.",
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "discontinuedDate": null,
@@ -5203,6 +5492,7 @@
   },
   {
     "id": 290,
+    "chatUrl": null,
     "description": "A list combining EasyList Hebrew and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5221,6 +5511,7 @@
   },
   {
     "id": 291,
+    "chatUrl": null,
     "description": "EasyList Hebrew is an [EasyList] affiliated filter list written by BsT that specifically removes adverts on Hebrew language websites.",
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "discontinuedDate": null,
@@ -5239,6 +5530,7 @@
   },
   {
     "id": 292,
+    "chatUrl": null,
     "description": "A list combining EasyList Germany and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5257,6 +5549,7 @@
   },
   {
     "id": 293,
+    "chatUrl": null,
     "description": "EasyList Germany is a filter list written by the EasyList authors MonztA, Famlam, and Khrin that specifically removes adverts on German language websites.",
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "discontinuedDate": null,
@@ -5275,6 +5568,7 @@
   },
   {
     "id": 294,
+    "chatUrl": null,
     "description": "A list combining EasyList Dutch and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5293,6 +5587,7 @@
   },
   {
     "id": 295,
+    "chatUrl": null,
     "description": "EasyList Dutch is an [EasyList] affiliated filter list written by the EasyList author Famlam that specifically removes adverts on Dutch language websites.",
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "discontinuedDate": null,
@@ -5311,6 +5606,7 @@
   },
   {
     "id": 296,
+    "chatUrl": null,
     "description": "Low spec for equipment extremists blocked.",
     "descriptionSourceUrl": "http://blogram.net/2010/04/23/adblock/",
     "discontinuedDate": null,
@@ -5329,6 +5625,7 @@
   },
   {
     "id": 297,
+    "chatUrl": null,
     "description": "A list combining EasyList Czech and Slovak and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5347,6 +5644,7 @@
   },
   {
     "id": 298,
+    "chatUrl": null,
     "description": "Chinese supplement for the EasyList filters on IT sites.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5365,6 +5663,7 @@
   },
   {
     "id": 299,
+    "chatUrl": null,
     "description": "A list combining EasyList China and EasyList.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5383,6 +5682,7 @@
   },
   {
     "id": 300,
+    "chatUrl": null,
     "description": "Chinese supplement for the EasyList filters.",
     "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/easylistchina.txt",
     "discontinuedDate": null,
@@ -5401,6 +5701,7 @@
   },
   {
     "id": 301,
+    "chatUrl": null,
     "description": "EasyList is the primary filter list that removes most adverts from international web pages, including unwanted frames, images, and objects. It is the most popular list used by many ad blockers and forms the basis of over a dozen combination and supplementary filter lists.",
     "descriptionSourceUrl": "https://easylist.to/",
     "discontinuedDate": null,
@@ -5419,6 +5720,7 @@
   },
   {
     "id": 302,
+    "chatUrl": null,
     "description": "This list summarizes the top 20 attacking class C (/24) subnets over the last three days. The number of 'attacks' indicates the number of targets reporting scans from this subnet.",
     "descriptionSourceUrl": "http://feeds.dshield.org/block.txt",
     "discontinuedDate": null,
@@ -5437,6 +5739,7 @@
   },
   {
     "id": 303,
+    "chatUrl": null,
     "description": "This is a list of URL shorteners.",
     "descriptionSourceUrl": "http://mirror1.malwaredomains.com/files/url_shorteners.txt",
     "discontinuedDate": null,
@@ -5455,6 +5758,7 @@
   },
   {
     "id": 304,
+    "chatUrl": null,
     "description": "A list of Skype resolvers.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5473,6 +5777,7 @@
   },
   {
     "id": 305,
+    "chatUrl": null,
     "description": "Official filter list file used for blocking ads on Czech and Slovak websites.",
     "descriptionSourceUrl": "https://github.com/tomasko126/easylistczechandslovak",
     "discontinuedDate": null,
@@ -5491,6 +5796,7 @@
   },
   {
     "id": 306,
+    "chatUrl": null,
     "description": "Block only suggestions.",
     "descriptionSourceUrl": "https://youtube.adblockplus.me/",
     "discontinuedDate": null,
@@ -5509,6 +5815,7 @@
   },
   {
     "id": 307,
+    "chatUrl": null,
     "description": "Blocks various trackers",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5527,6 +5834,7 @@
   },
   {
     "id": 308,
+    "chatUrl": null,
     "description": "A hosts list to stop cryptomining in your browser.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5545,6 +5853,7 @@
   },
   {
     "id": 309,
+    "chatUrl": null,
     "description": "A merged hosts file from a variety of other lists.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5563,6 +5872,7 @@
   },
   {
     "id": 310,
+    "chatUrl": null,
     "description": "A small supplement list for 1Hosts.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5581,6 +5891,7 @@
   },
   {
     "id": 311,
+    "chatUrl": null,
     "description": "A generic filter for adblockers that keeps annoying header and footer bars from filling up your screen.",
     "descriptionSourceUrl": "https://github.com/elypter/generic_annoying_stickybar_filter",
     "discontinuedDate": "2018-01-15T00:00:00",
@@ -5599,6 +5910,7 @@
   },
   {
     "id": 312,
+    "chatUrl": null,
     "description": "A generic list that makes annoying sticky headers unsticky.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/elypter/filter_processor/master/generated_filterlists/blockhead(decoy_generic_extraction).txt",
     "discontinuedDate": null,
@@ -5617,6 +5929,7 @@
   },
   {
     "id": 313,
+    "chatUrl": null,
     "description": "A generic list that makes annoying sticky headers unsticky.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/elypter/filter_processor/master/generated_filterlists/blockhead(decoy_generic_selection).txt",
     "discontinuedDate": null,
@@ -5635,6 +5948,7 @@
   },
   {
     "id": 314,
+    "chatUrl": null,
     "description": "No Coin is a tiny browser extension aiming to block coin miners such as Coinhive.",
     "descriptionSourceUrl": "https://github.com/keraf/NoCoin",
     "discontinuedDate": null,
@@ -5653,6 +5967,7 @@
   },
   {
     "id": 315,
+    "chatUrl": null,
     "description": "Filters, which makes easer to use of the largest Polish trading platforms like Allegro, Ceneo, eBay, OLX and Sprzedajemy and other, blocking unnecessary, annoying and potentially dangerous elements - ads, sponsored articles, or scripts that track user's activities. They enable simpler and faster use of supported websites without limiting their functionality, while increasing the privacy of buyers and sellers.",
     "descriptionSourceUrl": "https://alleblock.pl/",
     "discontinuedDate": null,
@@ -5671,6 +5986,7 @@
   },
   {
     "id": 316,
+    "chatUrl": null,
     "description": "Ad servers list to block ads on Turkish websites.",
     "descriptionSourceUrl": "https://github.com/bkrucarci/turk-adlist",
     "discontinuedDate": null,
@@ -5689,6 +6005,7 @@
   },
   {
     "id": 317,
+    "chatUrl": null,
     "description": "Host file to block ads, tracking and more!",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
     "discontinuedDate": null,
@@ -5707,6 +6024,7 @@
   },
   {
     "id": 318,
+    "chatUrl": null,
     "description": "Blocks crytocurrency miner hosts.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5725,6 +6043,7 @@
   },
   {
     "id": 319,
+    "chatUrl": null,
     "description": "An expiremental list of domains for blocking YouTube video ads.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5743,6 +6062,7 @@
   },
   {
     "id": 320,
+    "chatUrl": null,
     "description": "An expiremental hosts list for blocking YouTube video ads.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5761,6 +6081,7 @@
   },
   {
     "id": 321,
+    "chatUrl": null,
     "description": "Commonly whitelisted domains for Pi-Hole.",
     "descriptionSourceUrl": "https://github.com/anudeepND/whitelist/blob/master/README.md",
     "discontinuedDate": null,
@@ -5779,6 +6100,7 @@
   },
   {
     "id": 322,
+    "chatUrl": null,
     "description": "Some deals sites like Slickdeals and Fatwallet needs a few sites (most of them are ads) to be whitelisted to work properly.",
     "descriptionSourceUrl": "https://github.com/anudeepND/whitelist/blob/master/README.md",
     "discontinuedDate": null,
@@ -5797,6 +6119,7 @@
   },
   {
     "id": 323,
+    "chatUrl": null,
     "description": "This file contain domains that are needed to be whitelisted depending on the service you use. (It may include analytics sites!)",
     "descriptionSourceUrl": "https://github.com/anudeepND/whitelist/blob/master/README.md",
     "discontinuedDate": null,
@@ -5815,6 +6138,7 @@
   },
   {
     "id": 324,
+    "chatUrl": null,
     "description": "A minimal adblocker for iOS.",
     "descriptionSourceUrl": "https://github.com/arcetera/Minimal-Hosts-Blocker",
     "discontinuedDate": null,
@@ -5833,6 +6157,7 @@
   },
   {
     "id": 325,
+    "chatUrl": null,
     "description": "Hosts file, filled with advertisers and other purveyors of worthless content.",
     "descriptionSourceUrl": "https://github.com/bjornstar/hosts",
     "discontinuedDate": null,
@@ -5851,6 +6176,7 @@
   },
   {
     "id": 326,
+    "chatUrl": null,
     "description": "Hostfiles for adblocking / privacy reasons.",
     "descriptionSourceUrl": "https://github.com/monojp/hosts_merge/blob/master/README.md",
     "discontinuedDate": null,
@@ -5869,6 +6195,7 @@
   },
   {
     "id": 327,
+    "chatUrl": null,
     "description": "Removes \"Download Our App\" banners from mobile website versions, for those who prefer their phone web browsers instead of apps.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5887,6 +6214,7 @@
   },
   {
     "id": 328,
+    "chatUrl": null,
     "description": "This list includes uBO-specific versions of filters, and are meant to be accessed by uBlock Origin, Nano Adblocker and AdGuard whenever they load the main Norwegian list.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExtensionsForUBO%26Nano.txt",
     "discontinuedDate": null,
@@ -5905,6 +6233,7 @@
   },
   {
     "id": 329,
+    "chatUrl": null,
     "description": "A hosts file for Chinese websites.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -5923,6 +6252,7 @@
   },
   {
     "id": 330,
+    "chatUrl": null,
     "description": "To block domains that known as cost-per-action (AOC/CPA) services in Thailand, aim to prevent additional costs (post-paid plan) or balance deduction (pre-paid plan) that caused by some nasty ads that auto subscribe SMS/MMS/WAP services.",
     "descriptionSourceUrl": "https://github.com/kowith337/ThaiConsentHosts/blob/master/readme.md",
     "discontinuedDate": null,
@@ -5941,6 +6271,7 @@
   },
   {
     "id": 331,
+    "chatUrl": null,
     "description": "Block ads, tracking, popup sites and servers that most used on Thai sites.",
     "descriptionSourceUrl": "https://kowith337.github.io/ThaiParanoidBlock/",
     "discontinuedDate": null,
@@ -5959,6 +6290,7 @@
   },
   {
     "id": 332,
+    "chatUrl": null,
     "description": "Get rid of \"Overlay Popups\" that trying to integrate your social network account, force you to like and/or follow pages and other accounts.",
     "descriptionSourceUrl": "https://github.com/kowith337/ThaiAntiForceLike/blob/master/README.md",
     "discontinuedDate": null,
@@ -5977,6 +6309,7 @@
   },
   {
     "id": 333,
+    "chatUrl": null,
     "description": "Web list \"Leech\" for filtering out search results",
     "descriptionSourceUrl": "https://github.com/pureexe/LeeCh-List/blob/master/README.md",
     "discontinuedDate": null,
@@ -5995,6 +6328,7 @@
   },
   {
     "id": 334,
+    "chatUrl": null,
     "description": "Hosts file to avoid advertisement display on website.",
     "descriptionSourceUrl": "https://warui.intaa.net/adhosts/",
     "discontinuedDate": null,
@@ -6013,6 +6347,7 @@
   },
   {
     "id": 335,
+    "chatUrl": null,
     "description": "Hosts for Adaway. Block mainly on advertisements for mobile.",
     "descriptionSourceUrl": "https://github.com/multiverse2011/adawaylist-jp/blob/master/README.md",
     "discontinuedDate": null,
@@ -6031,6 +6366,7 @@
   },
   {
     "id": 336,
+    "chatUrl": null,
     "description": "Amazon, Yahoo, Facebook , Twitter etc. It is a file created as a result of verifying and reducing connection failure as much as possible by making the filter mild. We also do not connect to tracking cookies or some malicious sites.",
     "descriptionSourceUrl": "http://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
     "discontinuedDate": "2014-05-13T00:00:00",
@@ -6049,6 +6385,7 @@
   },
   {
     "id": 337,
+    "chatUrl": null,
     "description": "Advertisements on smartphones are versatile, there are many things too complicated. Several HOSTSs have been released to Adaway since the beginning, but this file was further integrated, sorted, deleted duplicates, and polished.",
     "descriptionSourceUrl": "http://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
     "discontinuedDate": "2014-05-13T00:00:00",
@@ -6067,6 +6404,7 @@
   },
   {
     "id": 338,
+    "chatUrl": null,
     "description": "Useful from any site It is a sharp meta-analysis that was born as a result of brushing up, collecting such files, eliminating all error syntax, saving waste, etc. It is a powerful file to prevent uprooting affiliates and magical advertisements.",
     "descriptionSourceUrl": "http://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
     "discontinuedDate": "2014-05-13T00:00:00",
@@ -6085,6 +6423,7 @@
   },
   {
     "id": 339,
+    "chatUrl": null,
     "description": "Chinese hosts lists blocking sites like Gamil, Instagram, Wikipedia, Yahoo, Telegram(WEB), Dropbox, Flipboard, Mage, Line, Pinterest, W3schools, Ingress, Twitch, SoundCloud, Xboxlive, WordPress, Tapatalk, Kobo, Vimeo, Nytimes, Issuu, Tor, DuckDuckGo, Imgur, Pcbeta...",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -6103,6 +6442,7 @@
   },
   {
     "id": 340,
+    "chatUrl": null,
     "description": "Chinese hosts lists blocking sites like Google, Google Play, YouTube, Twitter, Facebook, Tumblr, Pixiv",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -6121,6 +6461,7 @@
   },
   {
     "id": 341,
+    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "uBlock Origin supplement list for Polish Social Filters",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -6139,6 +6480,7 @@
   },
   {
     "id": 342,
+    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Blocks banners (paypal, payu, bitcoin and patronite), charity banners, other forms of inclination to support on Polish sites.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -6157,6 +6499,7 @@
   },
   {
     "id": 343,
+    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "uBlock Origin supplement list for Polish Cookies Filters.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -6175,6 +6518,7 @@
   },
   {
     "id": 344,
+    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Blocks internal advertising, paid subscriptions, own stores on Polish sites.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -6193,6 +6537,7 @@
   },
   {
     "id": 345,
+    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "AdGuard supplement list for Official Polish Filters for AdBlock, uBlock Origin & AdGuard",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -6211,6 +6556,7 @@
   },
   {
     "id": 346,
+    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Test supplement list for Official Polish Filters for AdBlock, uBlock Origin & AdGuard",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -6229,6 +6575,7 @@
   },
   {
     "id": 347,
+    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Polish hosts file for use in Pi-hole",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -6247,6 +6594,7 @@
   },
   {
     "id": 348,
+    "chatUrl": null,
     "description": null,
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -6265,6 +6613,7 @@
   },
   {
     "id": 349,
+    "chatUrl": null,
     "description": "Supplement list for Polish Annoyance Filters, only for uBlock & AdGuard.",
     "descriptionSourceUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
     "discontinuedDate": null,
@@ -6283,6 +6632,7 @@
   },
   {
     "id": 350,
+    "chatUrl": null,
     "description": "Filter that enables removing of the ads from websites with French content.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#french-filter",
     "discontinuedDate": null,
@@ -6301,6 +6651,7 @@
   },
   {
     "id": 351,
+    "chatUrl": null,
     "description": "This is an AdGuard-specific supplement for the Adblock polskie reguły filter. It specifically removes adverts on Polish language websites.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#polish-ads-filter",
     "discontinuedDate": null,
@@ -6319,6 +6670,7 @@
   },
   {
     "id": 352,
+    "chatUrl": null,
     "description": "A bad hosts blocking list",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
@@ -6337,6 +6689,7 @@
   },
   {
     "id": 353,
+    "chatUrl": null,
     "description": "Block annoying connections",
     "descriptionSourceUrl": "https://github.com/eladkarako/hosts/blob/master/build/hosts_adblock_anti_annoyances_block.txt",
     "discontinuedDate": null,
@@ -6355,6 +6708,7 @@
   },
   {
     "id": 354,
+    "chatUrl": null,
     "description": "Block annoying page-scripts",
     "descriptionSourceUrl": "https://github.com/eladkarako/hosts/blob/master/build/hosts_adblock_anti_annoyances_block_inline_script.txt",
     "discontinuedDate": null,
@@ -6373,6 +6727,7 @@
   },
   {
     "id": 355,
+    "chatUrl": null,
     "description": "Hide annoying elements",
     "descriptionSourceUrl": "https://github.com/eladkarako/hosts/blob/master/build/hosts_adblock_anti_annoyances_hide.txt",
     "discontinuedDate": null,
@@ -6391,6 +6746,7 @@
   },
   {
     "id": 356,
+    "chatUrl": null,
     "description": "ReStyle annoying pages",
     "descriptionSourceUrl": "https://github.com/eladkarako/hosts/blob/master/build/hosts_adblock_anti_annoyances_style_inject.txt",
     "discontinuedDate": null,
@@ -6409,6 +6765,7 @@
   },
   {
     "id": 357,
+    "chatUrl": null,
     "description": "A list for administrators to prevent mining in networks",
     "descriptionSourceUrl": "https://github.com/ZeroDot1/CoinBlockerLists",
     "discontinuedDate": null,
@@ -6427,6 +6784,7 @@
   },
   {
     "id": 358,
+    "chatUrl": null,
     "description": "An additional list for administrators",
     "descriptionSourceUrl": "https://github.com/ZeroDot1/CoinBlockerLists",
     "discontinuedDate": null,
@@ -6445,6 +6803,7 @@
   },
   {
     "id": 359,
+    "chatUrl": null,
     "description": "A list to prevent browser mining only",
     "descriptionSourceUrl": "https://github.com/ZeroDot1/CoinBlockerLists",
     "discontinuedDate": null,
@@ -6463,6 +6822,7 @@
   },
   {
     "id": 360,
+    "chatUrl": null,
     "description": "A hostslist for administrators to prevent mining in networks",
     "descriptionSourceUrl": "https://github.com/ZeroDot1/CoinBlockerLists",
     "discontinuedDate": null,
@@ -6481,6 +6841,7 @@
   },
   {
     "id": 361,
+    "chatUrl": null,
     "description": "An additional hostslist for administrators",
     "descriptionSourceUrl": "https://github.com/ZeroDot1/CoinBlockerLists",
     "discontinuedDate": null,
@@ -6499,6 +6860,7 @@
   },
   {
     "id": 362,
+    "chatUrl": null,
     "description": "A hostslist to prevent browser mining only",
     "descriptionSourceUrl": "https://github.com/ZeroDot1/CoinBlockerLists",
     "discontinuedDate": null,
@@ -6517,6 +6879,7 @@
   },
   {
     "id": 363,
+    "chatUrl": null,
     "description": "A additional list for administrators to prevent mining in networks",
     "descriptionSourceUrl": "https://github.com/ZeroDot1/CoinBlockerLists",
     "discontinuedDate": null,
@@ -6535,6 +6898,7 @@
   },
   {
     "id": 364,
+    "chatUrl": null,
     "description": "Advertisements and tracking",
     "descriptionSourceUrl": "https://www.squidblacklist.org/downloads.html",
     "discontinuedDate": null,
@@ -6553,6 +6917,7 @@
   },
   {
     "id": 365,
+    "chatUrl": null,
     "description": "Official Facebook domains",
     "descriptionSourceUrl": "https://www.squidblacklist.org/downloads.html",
     "discontinuedDate": null,
@@ -6571,6 +6936,7 @@
   },
   {
     "id": 366,
+    "chatUrl": null,
     "description": "Malicious, hijacked, ransomware, dangerous websites",
     "descriptionSourceUrl": "https://www.squidblacklist.org/downloads.html",
     "discontinuedDate": null,
@@ -6589,6 +6955,7 @@
   },
   {
     "id": 367,
+    "chatUrl": null,
     "description": "uMatrix ruleset unbreaks all Alexa 100 and more at domain level",
     "descriptionSourceUrl": "https://github.com/uMatrix-Rules/uMatrix-Rules-Domain",
     "discontinuedDate": null,
@@ -6602,11 +6969,12 @@
     "policyUrl": null,
     "publishedDate": "2017-10-12T00:00:00",
     "submissionUrl": null,
-    "syntaxId": "7",
+    "syntaxId": 7,
     "viewUrl": "https://raw.githubusercontent.com/uMatrix-Rules/uMatrix-Rules-Domain/master/rules.txt"
   },
   {
     "id": 368,
+    "chatUrl": null,
     "description": "uMatrix ruleset unbreaks all Alexa 100 and more at site level",
     "descriptionSourceUrl": "https://github.com/uMatrix-Rules/uMatrix-Rules-Site",
     "discontinuedDate": null,
@@ -6620,11 +6988,12 @@
     "policyUrl": null,
     "publishedDate": "2017-10-12T00:00:00",
     "submissionUrl": null,
-    "syntaxId": "7",
+    "syntaxId": 7,
     "viewUrl": "https://raw.githubusercontent.com/uMatrix-Rules/uMatrix-Rules-Site/master/rules.txt"
   },
   {
     "id": 369,
+    "chatUrl": null,
     "description": "Official filter list file used for blocking ads on Czech and Slovak websites.",
     "descriptionSourceUrl": "https://github.com/tomasko126/easylistczechandslovak",
     "discontinuedDate": null,
@@ -6643,6 +7012,7 @@
   },
   {
     "id": 370,
+    "chatUrl": null,
     "description": "Official filter list file used for blocking ads on Czech and Slovak websites.",
     "descriptionSourceUrl": "https://github.com/tomasko126/easylistczechandslovak",
     "discontinuedDate": null,
@@ -6661,6 +7031,7 @@
   },
   {
     "id": 371,
+    "chatUrl": null,
     "description": "AFNIL’s intention is to merge third-party lists of known fakenews sites and make them usable for programs that can block.",
     "descriptionSourceUrl": "https://afnil-antifakenewsinternationallist.github.io/AFNIL/",
     "discontinuedDate": null,
@@ -6679,6 +7050,7 @@
   },
   {
     "id": 372,
+    "chatUrl": null,
     "description": null,
     "descriptionSourceUrl": null,
     "discontinuedDate": "2016-07-01T00:00:00",
@@ -6697,6 +7069,7 @@
   },
   {
     "id": 373,
+    "chatUrl": null,
     "description": null,
     "descriptionSourceUrl": null,
     "discontinuedDate": "2016-07-01T00:00:00",
@@ -6715,6 +7088,7 @@
   },
   {
     "id": 374,
+    "chatUrl": null,
     "description": null,
     "descriptionSourceUrl": null,
     "discontinuedDate": "2016-07-01T00:00:00",
@@ -6733,6 +7107,7 @@
   },
   {
     "id": 375,
+    "chatUrl": null,
     "description": "A comprehensive, all-in-one adblock list for thorough blocking of trackers, popup ads, ads, unwanted cookies, fake news, cookie warning messages, unwanted comment sections, crypto-coin mining, YouTube clutter and social network hassles.",
     "descriptionSourceUrl": "https://hl2guide.github.io/All-in-One-Customized-Adblock-List/",
     "discontinuedDate": null,
@@ -6751,6 +7126,7 @@
   },
   {
     "id": 376,
+    "chatUrl": null,
     "description": "Blocks title screen ads on several large MMO game websites.",
     "descriptionSourceUrl": "https://github.com/collinbarrett/FilterLists/issues/257",
     "discontinuedDate": null,
@@ -6769,6 +7145,7 @@
   },
   {
     "id": 377,
+    "chatUrl": null,
     "description": "A block list of malicious domains.",
     "descriptionSourceUrl": "https://github.com/cb-software/CB-Malicious-Domains/blob/master/README.md",
     "discontinuedDate": null,
@@ -6787,6 +7164,7 @@
   },
   {
     "id": 378,
+    "chatUrl": null,
     "description": "A block list of malicious domains.",
     "descriptionSourceUrl": "https://github.com/cb-software/CB-Malicious-Domains/blob/master/README.md",
     "discontinuedDate": null,
@@ -6805,6 +7183,7 @@
   },
   {
     "id": 379,
+    "chatUrl": null,
     "description": "These filters will cause a button labeled: \"Disqus blocked by uBlock Origin: click to unblock\" to be embedded where Disqus comments would normally be loaded. Click the button to force the comments to be loaded.",
     "descriptionSourceUrl": "https://gist.github.com/gorhill/ef1b62d606473c68d524",
     "discontinuedDate": null,
@@ -6823,6 +7202,7 @@
   },
   {
     "id": 380,
+    "chatUrl": null,
     "description": "Very experimental custom filters",
     "descriptionSourceUrl": "https://github.com/toshiya44/myAssets/blob/master/README.md",
     "discontinuedDate": null,
@@ -6841,6 +7221,7 @@
   },
   {
     "id": 381,
+    "chatUrl": null,
     "description": "Saving the Internets... one roll at a time.",
     "descriptionSourceUrl": "http://rickrolldb.com/",
     "discontinuedDate": null,
@@ -6859,6 +7240,7 @@
   },
   {
     "id": 382,
+    "chatUrl": null,
     "description": "Blocks ads/popups/fake thumbs/spam bookmark buttons and more from porn websites",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/WowDude/PornList/master/PornList.txt",
     "discontinuedDate": null,
@@ -6870,13 +7252,14 @@
     "licenseId": 16,
     "name": "PornList",
     "policyUrl": null,
-    "publishedDate": "2018-03-17T13:00:00",
+    "publishedDate": "2018-03-17T00:00:00",
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/WowDude/PornList/master/PornList.txt"
   },
   {
     "id": 383,
+    "chatUrl": null,
     "description": "Removes tedious AD and AD frames from specific popular websites such as New York Times",
     "descriptionSourceUrl": "https://austinhuang.me/0131-block-list/",
     "discontinuedDate": null,
@@ -6888,7 +7271,7 @@
     "licenseId": 8,
     "name": "0131 Block List",
     "policyUrl": null,
-    "publishedDate": "2018-02-16T17:19:00",
+    "publishedDate": "2018-02-16T00:00:00",
     "submissionUrl": "https://austinhuang.me/contact",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/austinhuang0131/0131-block-list/master/list.txt"
