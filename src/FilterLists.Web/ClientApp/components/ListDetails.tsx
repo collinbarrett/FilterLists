@@ -38,6 +38,7 @@ function FilterListDetails(props: any) {
                <Languages languages={props.details.languages}/>
                <PublishedDate date={props.details.publishedDate}/>
                <DiscontinuedDate date={props.details.discontinuedDate}/>
+               <License license={props.details.license}/>
                <div className="btn-group" role="group">
                    <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
                    <ViewUrl url={props.details.viewUrl} name={props.details.name}/>
@@ -66,14 +67,14 @@ function Languages(props: any) {
     return props.languages.length > 0
         ? props.languages.length > 1
         ? <div>
-              <h3>Languages:</h3>
+              <p>Languages:</p>
               <ul>
                   {props.languages.map(
                       (language: any) => <li>{language}</li>)}
               </ul>
           </div>
         : <div>
-              <h3>Language:</h3>
+              <p>Language:</p>
               <ul>
                   {props.languages.map(
                       (language: any) => <li>{language}</li>)}
@@ -88,6 +89,14 @@ function PublishedDate(props: any) {
 
 function DiscontinuedDate(props: any) {
     return props.date ? <p>Discontinued: {props.date}</p> : null;
+}
+
+function License(props: any) {
+    return props.license
+        ? (props.license.descriptionUrl
+            ? <p>License: <a href={props.license.descriptionUrl}>{props.license.name}</a></p>
+            : <p>License: {props.license.name}</p>)
+        : null;
 }
 
 function SubscribeUrl(props: any) {
@@ -242,11 +251,17 @@ interface IFilterListDetailsDto {
     homeUrl: string;
     issuesUrl: string;
     languages: string[];
+    license: IListLicenseDto;
     maintainers: IListMaintainerDto[];
     policyUrl: string;
     publishedDate: string;
     submissionUrl: string;
     viewUrl: string;
+}
+
+interface IListLicenseDto {
+    descriptionUrl: number;
+    name: string;
 }
 
 interface IListMaintainerDto {
