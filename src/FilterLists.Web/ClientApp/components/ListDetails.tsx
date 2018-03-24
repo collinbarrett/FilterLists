@@ -1,64 +1,46 @@
 import * as React from "react";
 import "isomorphic-fetch";
-import * as ReactModal from "react-modal";
 
-export default class ListDetailsModal extends React.Component<any, any> {
+export default class ListDetails extends React.Component<any, any> {
 
     constructor(props: any) {
         super(props);
         this.state = {
-            isModalOpen: false,
+            responseLoaded: false,
             listId: props.listId
         };
-        this.openModal = this.openModal.bind(this);
-        this.closeModal = this.closeModal.bind(this);
     }
 
-    componentWillReceiveProps(nextProps: any) {
-        this.setState({
-            isModalOpen: false,
-            listId: nextProps.listId
-        });
+    componentWillMount() {
+        this.fetchData();
     }
 
-    openModal() {
+    fetchData() {
         fetch(`https://filterlists.com/api/v1/lists/${this.state.listId}`)
             .then(response => response.json() as Promise<IFilterListDetailsDto[]>)
             .then(data => {
                 this.setState({
                     filterListDetails: data,
-                    isModalOpen: true
+                    responseLoaded: true
                 });
             });
     }
 
-    closeModal() {
-        this.setState({ isModalOpen: false });
-    }
-
     render() {
-        return <div>
-                   <button onClick={this.openModal} className="btn btn-primary btn-block">Details</button>
-                   <ReactModal isOpen={this.state.isModalOpen} onRequestClose={this.closeModal}
-                               shouldCloseOnOverlayClick={true}>
-                       <FilterListDetails details={this.state.filterListDetails}/>
-                       <button onClick={this.closeModal}
-                               className="btn btn-danger btn-block" id="close-modal">
-                           Close
-                       </button>
-                   </ReactModal>
-               </div>;
+        return this.state.responseLoaded
+            ? <div>
+                  <FilterListDetails details={this.state.filterListDetails}/>
+              </div>
+            : <div>Loading...</div>;
     }
 }
 
 function FilterListDetails(props: any) {
-    return <div>
-               <Name name={props.details.name}/>
+    return <div className="panel panel-default">
                <Description description={props.details.description} url={props.details.descriptionSourceUrl}/>
                <Languages languages={props.details.languages}/>
                <PublishedDate date={props.details.publishedDate}/>
                <DiscontinuedDate date={props.details.discontinuedDate}/>
-               <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
                <ViewUrl url={props.details.viewUrl} name={props.details.name}/>
                <HomeUrl url={props.details.homeUrl} name={props.details.name}/>
                <PolicyUrl url={props.details.policyUrl} name={props.details.name}/>
@@ -70,10 +52,6 @@ function FilterListDetails(props: any) {
                <EmailAddress email={props.details.emailAddress} name={props.details.name}/>
                <Maintainers maintainers={props.details.maintainers}/>
            </div>;
-}
-
-function Name(props: any) {
-    return <h1>{props.name}</h1>;
 }
 
 function Description(props: any) {
@@ -104,14 +82,6 @@ function PublishedDate(props: any) {
 
 function DiscontinuedDate(props: any) {
     return props.date ? <p>Discontinued: {props.date}</p> : null;
-}
-
-function SubscribeUrl(props: any) {
-    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-              className="btn btn-primary btn-block"
-              title={`Subscribe to ${props.name} with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus).`}>
-               Subscribe
-           </a>;
 }
 
 function ViewUrl(props: any) {
@@ -235,11 +205,12 @@ function Maintainer(props: any) {
                    {props.maintainer.additionalLists.length > 0
                        ? <div>
                              <h4>More by {props.maintainer.name}</h4>
-                             <ul>{props.maintainer.additionalLists.map(
-                                 (list: any) => <MaintainerAdditionalList list={list} key={list.id.toString()}/>)}
+                             <ul>
+                                 {props.maintainer.additionalLists.map(
+                                     (list: any) => <MaintainerAdditionalList list={list} key={list.id.toString()}/>)}
                              </ul>
                          </div>
-                       : null }
+                       : null}
                </div>
            </div>;
 }
@@ -260,7 +231,6 @@ interface IFilterListDetailsDto {
     issuesUrl: string;
     languages: string[];
     maintainers: IListMaintainerDto[];
-    name: string;
     policyUrl: string;
     publishedDate: string;
     submissionUrl: string;

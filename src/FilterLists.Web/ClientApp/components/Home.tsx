@@ -3,7 +3,7 @@ import { RouteComponentProps } from "react-router";
 import "isomorphic-fetch";
 import ReactTable from "react-table"
 import "react-table/react-table.css"
-import ListDetailsModal from "./ListDetailsModal";
+import ListDetails from "./ListDetails";
 
 interface IFilterListsState {
     filterLists: IFilterListSummaryDto[];
@@ -72,7 +72,13 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            Header: "Details",
                            accessor: "id",
                            sortable: false,
-                           Cell: (cell: any) => <ListDetailsModal listId={cell.value}/>,
+                           expander: true,
+                           Expander: ({ isExpanded, ...rest }) =>
+                               <div>
+                                   {isExpanded
+                                       ? <button className="btn btn-primary btn-block active">Details</button>
+                                       : <button className="btn btn-primary btn-block">Details</button>}
+                               </div>,
                            style: { textAlign: "center" },
                            width: 100
                        },
@@ -87,6 +93,11 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            className: "hidden-xs"
                        }
                    ]}
+                   SubComponent={(row: any) => {
+                       return (
+                           <ListDetails listId={row.original.id}/>
+                       );
+                   }}
                    className="-striped -highlight"/>;
     }
 }
@@ -103,7 +114,6 @@ interface IListLanguageDto {
     iso6391: string;
 }
 
-//TODO: deduplicate function (maybe to a utils.js) also in ListDetailsModal.tsx
 function SubscribeUrl(props: any) {
     return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
               className="btn btn-primary btn-block"

@@ -32,9 +32,7 @@
     "webpack-hot-middleware": "^2.21.2"
   },
   "dependencies": {
-    "@types/react-modal": "^3.1.2",
     "@types/react-table": "^6.7.3",
-    "react-modal": "^3.3.1",
     "react-table": "^6.7.6"
   }
 }
