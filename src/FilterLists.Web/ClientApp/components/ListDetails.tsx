@@ -62,11 +62,11 @@ function Description(props: any) {
 function Languages(props: any) {
     return props.languages.length > 0
         ? props.languages.length > 1
-        ? <div>
+        ? <div className="visible-xs">
               <h2>Languages</h2>
               <p>{props.languages.join(", ")}</p>
           </div>
-        : <div>
+        : <div className="visible-xs">
               <h2>Language</h2>
               <p>{props.languages.join(", ")}</p>
           </div>
