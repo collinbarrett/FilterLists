@@ -260,7 +260,7 @@ interface IFilterListDetailsDto {
 }
 
 interface IListLicenseDto {
-    descriptionUrl: number;
+    descriptionUrl: string;
     name: string;
 }
 
