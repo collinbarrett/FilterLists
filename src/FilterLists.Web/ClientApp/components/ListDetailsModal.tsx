@@ -164,7 +164,7 @@ function ForumUrl(props: any) {
 function ChatUrl(props: any) {
     return props.url
         ? <a href={props.url} className="btn btn-primary btn-block" title={`Enter the chat room for ${props.name}.`}>
-              Forum
+              Chat
           </a>
         : null;
 }
