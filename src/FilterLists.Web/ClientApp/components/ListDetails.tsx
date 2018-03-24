@@ -38,6 +38,7 @@ function FilterListDetails(props: any) {
                <Languages languages={props.details.languages}/>
                <PublishedDate date={props.details.publishedDate}/>
                <DiscontinuedDate date={props.details.discontinuedDate}/>
+               <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
                <ViewUrl url={props.details.viewUrl} name={props.details.name}/>
                <HomeUrl url={props.details.homeUrl} name={props.details.name}/>
                <PolicyUrl url={props.details.policyUrl} name={props.details.name}/>
@@ -79,6 +80,14 @@ function PublishedDate(props: any) {
 
 function DiscontinuedDate(props: any) {
     return props.date ? <p>Discontinued: {props.date}</p> : null;
+}
+
+function SubscribeUrl(props: any) {
+    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+              className="visible-xs btn btn-primary btn-bloc"
+              title={ `Subscribe to ${props.name} with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus).` }>
+               Subscribe
+           </a >;
 }
 
 function ViewUrl(props: any) {
