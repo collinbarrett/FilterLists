@@ -7,7 +7,6 @@ body, h2, h3, h4, h5, blockquote {
     min-width: 0 !important;
 }
 
-/* center align react-table row elements */
 .rt-tr {
     -ms-align-items: center;
     -o-align-items: center;
@@ -20,16 +19,16 @@ body, h2, h3, h4, h5, blockquote {
 }
 
 .panel-list-details {
-    padding: 20px;
     margin-bottom: 0;
+    padding: 20px;
 }
 
 .panel-maintainer {
-    padding: 20px;
     margin-bottom: 0;
+    padding: 20px;
 }
 
 .btn-expander-link {
-    margin-top: 0;
-    margin-bottom: 5px;
+    margin: 0 auto 5px auto;
+    max-width: 250px;
 }
