@@ -2,6 +2,19 @@ body {
     font-size: 16px;
 }
 
-#close-modal {
-    margin-top: 5px;
+h2 {
+    font-size: 16px;
+    margin: 0;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+blockquote {
+    font-size: 16px;
+}
+
+.panel-default {
+    padding: 20px;
 }
