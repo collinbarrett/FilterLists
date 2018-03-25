@@ -62,9 +62,9 @@
       }
     },
     "@types/react-table": {
-      "version": "6.7.7",
-      "resolved": "https://registry.npmjs.org/@types/react-table/-/react-table-6.7.7.tgz",
-      "integrity": "sha1-8PghyrjW4/X416CxBQP/RYYmsTk=",
+      "version": "6.7.8",
+      "resolved": "https://registry.npmjs.org/@types/react-table/-/react-table-6.7.8.tgz",
+      "integrity": "sha512-KTjOKCWLaQKxPhBcnrwQvneKRfIdzzPlZFVFOND+w9ISImLE1vx7i5JG5COqwUOIGAvgIeiK3YgQD9Delf1Jzg==",
       "requires": {
         "@types/react": "16.0.41"
       }
