@@ -53,11 +53,6 @@ module.exports = (env) => {
                     })
                 ]
                 : [
-                    new webpack.optimize.UglifyJsPlugin({
-                        output: {
-                            comments: false
-                        }
-                    }),
                     new ExtractTextPlugin("site.css")
                 ])
         }
