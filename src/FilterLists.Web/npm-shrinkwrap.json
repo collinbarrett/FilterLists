@@ -17,9 +17,9 @@
       "dev": true
     },
     "@types/react": {
-      "version": "16.0.40",
-      "resolved": "https://registry.npmjs.org/@types/react/-/react-16.0.40.tgz",
-      "integrity": "sha1-yqvCKWiG9Atn9vyA8PNGRHZGHfk="
+      "version": "16.0.41",
+      "resolved": "https://registry.npmjs.org/@types/react/-/react-16.0.41.tgz",
+      "integrity": "sha512-hbAKPclom+NzM/iqB9JmP7UfWl0j/xsOIzWCB8iIJ7Dq0BlY80IeulgHwod2EOYILD5hc/DJAJvMFKfczdWBsQ=="
     },
     "@types/react-dom": {
       "version": "16.0.4",
@@ -28,7 +28,7 @@
       "dev": true,
       "requires": {
         "@types/node": "9.4.5",
-        "@types/react": "16.0.40"
+        "@types/react": "16.0.41"
       }
     },
     "@types/react-hot-loader": {
@@ -37,7 +37,7 @@
       "integrity": "sha1-I7GHWjJ8MsurcF+/Zg2PIH7eTWk=",
       "dev": true,
       "requires": {
-        "@types/react": "16.0.40"
+        "@types/react": "16.0.41"
       }
     },
     "@types/react-router": {
@@ -47,7 +47,7 @@
       "dev": true,
       "requires": {
         "@types/history": "4.6.2",
-        "@types/react": "16.0.40"
+        "@types/react": "16.0.41"
       }
     },
     "@types/react-router-dom": {
@@ -57,16 +57,16 @@
       "dev": true,
       "requires": {
         "@types/history": "4.6.2",
-        "@types/react": "16.0.40",
+        "@types/react": "16.0.41",
         "@types/react-router": "4.0.23"
       }
     },
     "@types/react-table": {
       "version": "6.7.7",
       "resolved": "https://registry.npmjs.org/@types/react-table/-/react-table-6.7.7.tgz",
-      "integrity": "sha512-00Sx7fEtMFYw+H/8W4jh4BMi9cnG/6FB/00KZf00YODMEA/6JPBYHHQb71ebgIkDpzPgmWjtSw1BtXD4lk1cmg==",
+      "integrity": "sha1-8PghyrjW4/X416CxBQP/RYYmsTk=",
       "requires": {
-        "@types/react": "16.0.40"
+        "@types/react": "16.0.41"
       }
     },
     "@types/webpack-env": {
