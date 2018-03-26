@@ -9,6 +9,10 @@ body, h2, h3, h4, h5, blockquote {
     align-items: center;
 }
 
-.list-title {
+.fl-list-title {
     margin: 0;
+}
+
+#fl-tagline {
+    margin: 0 10px 10px 10px;
 }
