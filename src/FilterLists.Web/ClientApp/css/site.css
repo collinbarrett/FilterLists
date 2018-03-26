@@ -2,11 +2,6 @@ body, h2, h3, h4, h5, blockquote {
     font-size: 16px;
 }
 
-/* resolve react-table conflict with bootstrap responsive column hiding */
-.rt-thead, .rt-tbody {
-    min-width: 0 !important;
-}
-
 .rt-tr {
     -ms-align-items: center;
     -o-align-items: center;
@@ -16,21 +11,4 @@ body, h2, h3, h4, h5, blockquote {
 
 .list-title {
     margin: 0;
-}
-
-.panel-list-details {
-    margin-bottom: 0;
-    padding: 20px;
-}
-
-.panel-maintainer {
-    margin-bottom: 0;
-    padding: 20px;
-}
-
-.btn-expander-link {
-    -ms-border-radius: 0;
-    border-radius: 0;
-    margin: 0 auto 5px auto;
-    width: 110px;
 }

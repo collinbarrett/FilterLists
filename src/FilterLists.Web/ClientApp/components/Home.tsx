@@ -66,8 +66,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            Cell: (cell: any) => <div>{cell.value.map((e: any) => e.iso6391).join(", ")}</div>,
                            style: { whiteSpace: "inherit" },
                            width: 60,
-                           headerClassName: "hidden-xs",
-                           className: "hidden-xs"
+                           headerClassName: "d-none d-sm-block",
+                           className: "d-none d-sm-block"
                        },
                        {
                            Header: "Details",
@@ -90,8 +90,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            Cell: (cell: any) => <SubscribeUrl url={cell.value} name={cell.row.name}/>,
                            style: { textAlign: "center" },
                            width: 100,
-                           headerClassName: "hidden-xs",
-                           className: "hidden-xs"
+                           headerClassName: "d-none d-sm-block",
+                           className: "d-none d-sm-block"
                        }
                    ]}
                    SubComponent={(row: any) => {

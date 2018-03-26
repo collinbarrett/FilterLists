@@ -18,7 +18,7 @@ export class Layout extends React.Component<ILayoutProps, {}> {
                        </p>
                    </div>
                    <div className="row">
-                       <div>
+                       <div className="w-100">
                            { this.props.children }
                        </div>
                    </div>

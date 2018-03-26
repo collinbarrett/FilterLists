@@ -33,33 +33,37 @@ export default class ListDetails extends React.Component<any, any> {
 }
 
 function FilterListDetails(props: any) {
-    return <div className="panel panel-default panel-list-details">
-               <Description description={props.details.description} url={props.details.descriptionSourceUrl}/>
-               <Languages languages={props.details.languages}/>
-               <PublishedDate date={props.details.publishedDate}/>
-               <DiscontinuedDate date={props.details.discontinuedDate}/>
-               <License license={props.details.license}/>
-               <div className="btn-group" role="group">
-                   <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
-                   <ViewUrl url={props.details.viewUrl} name={props.details.name}/>
-                   <HomeUrl url={props.details.homeUrl} name={props.details.name}/>
-                   <PolicyUrl url={props.details.policyUrl} name={props.details.name}/>
-                   <DonateUrl url={props.details.donateUrl} name={props.details.name}/>
-                   <IssuesUrl url={props.details.issuesUrl} name={props.details.name}/>
-                   <ForumUrl url={props.details.forumUrl} name={props.details.name}/>
-                   <ChatUrl url={props.details.chatUrl} name={props.details.name}/>
-                   <SubmissionUrl url={props.details.submissionUrl} name={props.details.name}/>
-                   <EmailAddress email={props.details.emailAddress} name={props.details.name}/>
+    return <div className="card">
+               <div className="card-body">
+                   <Description description={props.details.description} url={props.details.descriptionSourceUrl}/>
+                   <Languages languages={props.details.languages}/>
+                   <PublishedDate date={props.details.publishedDate}/>
+                   <DiscontinuedDate date={props.details.discontinuedDate}/>
+                   <License license={props.details.license}/>
+                   <div className="btn-group" role="group">
+                       <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
+                       <ViewUrl url={props.details.viewUrl} name={props.details.name}/>
+                       <HomeUrl url={props.details.homeUrl} name={props.details.name}/>
+                       <PolicyUrl url={props.details.policyUrl} name={props.details.name}/>
+                       <DonateUrl url={props.details.donateUrl} name={props.details.name}/>
+                       <IssuesUrl url={props.details.issuesUrl} name={props.details.name}/>
+                       <ForumUrl url={props.details.forumUrl} name={props.details.name}/>
+                       <ChatUrl url={props.details.chatUrl} name={props.details.name}/>
+                       <SubmissionUrl url={props.details.submissionUrl} name={props.details.name}/>
+                       <EmailAddress email={props.details.emailAddress} name={props.details.name}/>
+                   </div>
+                   <Maintainers maintainers={props.details.maintainers}/>
                </div>
-               <Maintainers maintainers={props.details.maintainers}/>
            </div>;
 }
 
 function Description(props: any) {
     return props.description
         ? (props.url
-            ? <blockquote cite={props.url}>{props.description}</blockquote>
-            : <p>{props.description}</p>)
+            ? <h3 className="card-subtitle">
+                  <blockquote cite={props.url}>{props.description}</blockquote>
+              </h3>
+            : <h3 className="card-subtitle">{props.description}</h3>)
         : null;
 }
 
@@ -101,14 +105,14 @@ function License(props: any) {
 
 function SubscribeUrl(props: any) {
     return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-              className="visible-xs btn btn-primary btn-expander-link"
+              className="visible-xs btn btn-primary"
               title={ `Subscribe to ${props.name} with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus).` }>
                Subscribe
            </a >;
 }
 
 function ViewUrl(props: any) {
-    return <a href={props.url} className="btn btn-primary btn-expander-link"
+    return <a href={props.url} className="btn btn-primary"
               title={`View ${props.name} in its raw format.`}>
                View
            </a>;
@@ -116,7 +120,7 @@ function ViewUrl(props: any) {
 
 function HomeUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary btn-expander-link"
+        ? <a href={props.url} className="btn btn-primary"
              title={`View the home page for ${props.name}.`}>
               Home
           </a>
@@ -125,7 +129,7 @@ function HomeUrl(props: any) {
 
 function PolicyUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary btn-expander-link"
+        ? <a href={props.url} className="btn btn-primary"
              title={`View the policy for which rules ${props.name} includes.`}>
               Policy
           </a>
@@ -134,7 +138,7 @@ function PolicyUrl(props: any) {
 
 function DonateUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary btn-expander-link"
+        ? <a href={props.url} className="btn btn-primary"
              title={`Donate to support ${props.name}.`}>
               Donate
           </a>
@@ -143,7 +147,7 @@ function DonateUrl(props: any) {
 
 function IssuesUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary btn-expander-link"
+        ? <a href={props.url} className="btn btn-primary"
              title={`View the GitHub Issues for ${props.name}.`}>
               GitHub Issues
           </a>
@@ -152,7 +156,7 @@ function IssuesUrl(props: any) {
 
 function ForumUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary btn-expander-link"
+        ? <a href={props.url} className="btn btn-primary"
              title={`View the forum for ${props.name}.`}>
               Forum
           </a>
@@ -161,7 +165,7 @@ function ForumUrl(props: any) {
 
 function ChatUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary btn-expander-link"
+        ? <a href={props.url} className="btn btn-primary"
              title={`Enter the chat room for ${props.name}.`}>
               Chat
           </a>
@@ -170,7 +174,7 @@ function ChatUrl(props: any) {
 
 function SubmissionUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary btn-expander-link"
+        ? <a href={props.url} className="btn btn-primary"
              title={`Submit a new rule to be included in ${props.name}.`}>
               Submit Rule
           </a>
@@ -179,7 +183,7 @@ function SubmissionUrl(props: any) {
 
 function EmailAddress(props: any) {
     return props.email
-        ? <a href={`mailto:${props.email}`} className="btn btn-primary btn-expander-link"
+        ? <a href={`mailto:${props.email}`} className="btn btn-primary"
              title={`Email ${props.name}.`}>
               Email
           </a>
@@ -196,28 +200,26 @@ function Maintainers(props: any) {
 }
 
 function Maintainer(props: any) {
-    return <div className="panel panel-default panel-maintainer">
-               <div className="panel-heading">
-                   <h4 className="panel-title">Maintained by {props.maintainer.name}</h4>
-               </div>
-               <div className="panel-body">
+    return <div className="card">
+               <div className="card-body">
+                   <h3 className="card-title">Maintained by {props.maintainer.name}</h3>
                    <div className="btn-group" role="group">
                        {props.maintainer.homeUrl
-                           ? <a href={props.maintainer.homeUrl} className="btn btn-primary btn-expander-link"
+                           ? <a href={props.maintainer.homeUrl} className="btn btn-primary"
                                 title={`View the home page of ${props.maintainer.name}.`}>
                                  Home
                              </a>
                            : null}
                        {props.maintainer.emailAddress
                            ? <a href={`mailto:${props.maintainer.emailAddress}`}
-                                className="btn btn-primary btn-expander-link"
+                                className="btn btn-primary"
                                 title={`Email ${props.maintainer.name}.`}>
                                  Email
                              </a>
                            : null}
                        {props.maintainer.twitterHandle
                            ? <a href={`https://twitter.com/${props.maintainer.twitterHandle}`}
-                                className="btn btn-primary btn-expander-link"
+                                className="btn btn-primary"
                                 title={`View the Twitter page of ${props.maintainer.name}.`}>
                                  Twitter
                              </a>
@@ -225,7 +227,7 @@ function Maintainer(props: any) {
                    </div>
                    {props.maintainer.additionalLists.length > 0
                        ? <div>
-                             <h5>More by {props.maintainer.name}</h5>
+                             <h4>More by {props.maintainer.name}</h4>
                              <ul>
                                  {props.maintainer.additionalLists.map(
                                      (list: any) => <MaintainerAdditionalList list={list} key={list.id.toString()}/>)}
