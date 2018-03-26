@@ -34,25 +34,34 @@ export default class ListDetails extends React.Component<any, any> {
 
 function FilterListDetails(props: any) {
     return <div className="card">
-               <div className="card-body">
-                   <Description description={props.details.description} url={props.details.descriptionSourceUrl}/>
-                   <Languages languages={props.details.languages}/>
-                   <PublishedDate date={props.details.publishedDate}/>
-                   <DiscontinuedDate date={props.details.discontinuedDate}/>
-                   <License license={props.details.license}/>
-                   <div className="btn-group" role="group">
-                       <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
-                       <ViewUrl url={props.details.viewUrl} name={props.details.name}/>
-                       <HomeUrl url={props.details.homeUrl} name={props.details.name}/>
-                       <PolicyUrl url={props.details.policyUrl} name={props.details.name}/>
-                       <DonateUrl url={props.details.donateUrl} name={props.details.name}/>
-                       <IssuesUrl url={props.details.issuesUrl} name={props.details.name}/>
-                       <ForumUrl url={props.details.forumUrl} name={props.details.name}/>
-                       <ChatUrl url={props.details.chatUrl} name={props.details.name}/>
-                       <SubmissionUrl url={props.details.submissionUrl} name={props.details.name}/>
-                       <EmailAddress email={props.details.emailAddress} name={props.details.name}/>
+               <div className="card-body p-2">
+                   <div className="container m-0">
+                       <div className="row">
+                           <div className="col-9 p-0">
+                               <Description description={props.details.description} url={props.details
+                                   .descriptionSourceUrl}/>
+                               <Languages languages={props.details.languages}/>
+                               <PublishedDate date={props.details.publishedDate}/>
+                               <DiscontinuedDate date={props.details.discontinuedDate}/>
+                               <License license={props.details.license}/>
+                           </div>
+                           <div className="col-3 p-0 btn-group-vertical align-top">
+                               <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
+                               <ViewUrl url={props.details.viewUrl} name={props.details.name}/>
+                               <HomeUrl url={props.details.homeUrl} name={props.details.name}/>
+                               <PolicyUrl url={props.details.policyUrl} name={props.details.name}/>
+                               <DonateUrl url={props.details.donateUrl} name={props.details.name}/>
+                               <IssuesUrl url={props.details.issuesUrl} name={props.details.name}/>
+                               <ForumUrl url={props.details.forumUrl} name={props.details.name}/>
+                               <ChatUrl url={props.details.chatUrl} name={props.details.name}/>
+                               <SubmissionUrl url={props.details.submissionUrl} name={props.details.name}/>
+                               <EmailAddress email={props.details.emailAddress} name={props.details.name}/>
+                           </div>
+                       </div>
+                       <div className="row">
+                           <Maintainers maintainers={props.details.maintainers}/>
+                       </div>
                    </div>
-                   <Maintainers maintainers={props.details.maintainers}/>
                </div>
            </div>;
 }
@@ -104,9 +113,11 @@ function License(props: any) {
 }
 
 function SubscribeUrl(props: any) {
-    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)
+        }`}
               className="d-block d-sm-none btn btn-primary"
-              title={ `Subscribe to ${props.name} with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus).` }>
+              title={ `Subscribe to ${props.name
+                  } with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus).` }>
                Subscribe
            </a >;
 }
@@ -149,7 +160,7 @@ function IssuesUrl(props: any) {
     return props.url
         ? <a href={props.url} className="btn btn-primary"
              title={`View the GitHub Issues for ${props.name}.`}>
-              GitHub Issues
+              GH Issues
           </a>
         : null;
 }
