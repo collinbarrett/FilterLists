@@ -105,7 +105,7 @@ function License(props: any) {
 
 function SubscribeUrl(props: any) {
     return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-              className="visible-xs btn btn-primary"
+              className="d-block d-sm-none btn btn-primary"
               title={ `Subscribe to ${props.name} with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus).` }>
                Subscribe
            </a >;
