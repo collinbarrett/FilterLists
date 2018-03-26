@@ -10,10 +10,10 @@ export class Layout extends React.Component<ILayoutProps, {}> {
                    <div className="row">
                        <h1>
                            <a href="./" style={{ display: "inline-block" }}>
-                               <img src="logo_filterlists.png" alt="FilterLists" className="img-responsive"/>
+                               <img src="logo_filterlists.png" alt="FilterLists" className="img-fluid"/>
                            </a>
                        </h1>
-                       <p style={{ margin: 10 }}>
+                       <p id="fl-tagline">
                            The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.
                        </p>
                    </div>
@@ -22,8 +22,8 @@ export class Layout extends React.Component<ILayoutProps, {}> {
                            { this.props.children }
                        </div>
                    </div>
-                   <div className="row text-center" style={{ margin: 10 }}>
-                       A project by <a href="https://collinmbarrett.com/">Collin M. Barrett</a>. | Contribute on <a href="https://github.com/collinbarrett/FilterLists">GitHub</a>.
+                   <div className="row justify-content-center">
+                       <p>A project by <a href="https://collinmbarrett.com/">Collin M. Barrett</a>. | Contribute on <a href="https://github.com/collinbarrett/FilterLists">GitHub</a>.</p>
                    </div>
                </div>;
     };
