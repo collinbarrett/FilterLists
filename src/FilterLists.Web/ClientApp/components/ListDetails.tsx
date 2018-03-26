@@ -113,17 +113,15 @@ function License(props: any) {
 }
 
 function SubscribeUrl(props: any) {
-    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)
-        }`}
-              className="d-block d-sm-none btn btn-primary"
-              title={ `Subscribe to ${props.name
-                  } with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus).` }>
+    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+              className="d-block d-sm-none btn btn-primary fl-btn-margin"
+              title={ `Subscribe to ${props.name} with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus).` }>
                Subscribe
            </a >;
 }
 
 function ViewUrl(props: any) {
-    return <a href={props.url} className="btn btn-primary"
+    return <a href={props.url} className="btn btn-primary fl-btn-margin"
               title={`View ${props.name} in its raw format.`}>
                View
            </a>;
@@ -131,7 +129,7 @@ function ViewUrl(props: any) {
 
 function HomeUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary"
+        ? <a href={props.url} className="btn btn-primary fl-btn-margin"
              title={`View the home page for ${props.name}.`}>
               Home
           </a>
@@ -140,7 +138,7 @@ function HomeUrl(props: any) {
 
 function PolicyUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary"
+        ? <a href={props.url} className="btn btn-primary fl-btn-margin"
              title={`View the policy for which rules ${props.name} includes.`}>
               Policy
           </a>
@@ -149,7 +147,7 @@ function PolicyUrl(props: any) {
 
 function DonateUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary"
+        ? <a href={props.url} className="btn btn-primary fl-btn-margin"
              title={`Donate to support ${props.name}.`}>
               Donate
           </a>
@@ -158,7 +156,7 @@ function DonateUrl(props: any) {
 
 function IssuesUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary"
+        ? <a href={props.url} className="btn btn-primary fl-btn-margin"
              title={`View the GitHub Issues for ${props.name}.`}>
               GH Issues
           </a>
@@ -167,7 +165,7 @@ function IssuesUrl(props: any) {
 
 function ForumUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary"
+        ? <a href={props.url} className="btn btn-primary fl-btn-margin"
              title={`View the forum for ${props.name}.`}>
               Forum
           </a>
@@ -176,7 +174,7 @@ function ForumUrl(props: any) {
 
 function ChatUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary"
+        ? <a href={props.url} className="btn btn-primary fl-btn-margin"
              title={`Enter the chat room for ${props.name}.`}>
               Chat
           </a>
@@ -185,16 +183,16 @@ function ChatUrl(props: any) {
 
 function SubmissionUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary"
+        ? <a href={props.url} className="btn btn-primary fl-btn-margin"
              title={`Submit a new rule to be included in ${props.name}.`}>
-              Submit Rule
+              Add Rule
           </a>
         : null;
 }
 
 function EmailAddress(props: any) {
     return props.email
-        ? <a href={`mailto:${props.email}`} className="btn btn-primary"
+        ? <a href={`mailto:${props.email}`} className="btn btn-primary fl-btn-margin"
              title={`Email ${props.name}.`}>
               Email
           </a>
