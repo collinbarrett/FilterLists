@@ -37,7 +37,7 @@ function FilterListDetails(props: any) {
                <div className="card-body p-2">
                    <div className="container m-0">
                        <div className="row">
-                           <div className="col-9 p-0">
+                           <div className="col-9">
                                <Description description={props.details.description} url={props.details.descriptionSourceUrl}/>
                                <Languages languages={props.details.languages}/>
                                <PublishedDate date={props.details.publishedDate}/>
