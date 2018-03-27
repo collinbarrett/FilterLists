@@ -74,11 +74,17 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                            accessor: "id",
                            sortable: false,
                            expander: true,
-                           Expander: ({ isExpanded, ...rest }) =>
+                           Expander: ({ isExpanded, row }) =>
                                <div>
                                    {isExpanded
-                                       ? <button className="btn btn-primary btn-block active">Details</button>
-                                       : <button className="btn btn-primary btn-block">Details</button>}
+                                       ? <button className="btn btn-primary btn-block active"
+                                                 title={`Collapse details about ${row.name}.`}>
+                                             Details
+                                         </button>
+                                       : <button className="btn btn-primary btn-block"
+                                                 title={`Learn more about ${row.name}.`}>
+                                             Details
+                                         </button>}
                                </div>,
                            style: { textAlign: "center" },
                            width: 100

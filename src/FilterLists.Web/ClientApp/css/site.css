@@ -9,6 +9,7 @@ body, h2, h3, h4, h5, blockquote {
     align-items: center;
 }
 
-.fl-btn-margin {
+.fl-btn-details-action {
     margin-bottom: .2rem;
+    max-width: 100px;
 }
