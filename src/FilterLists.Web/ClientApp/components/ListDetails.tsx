@@ -210,38 +210,44 @@ function Maintainers(props: any) {
 function Maintainer(props: any) {
     return <div className="card">
                <div className="card-body">
-                   <h3 className="card-title">Maintained by {props.maintainer.name}</h3>
-                   <div className="btn-group" role="group">
-                       {props.maintainer.homeUrl
-                           ? <a href={props.maintainer.homeUrl} className="btn btn-primary fl-btn-details-action"
-                                title={`View the home page of ${props.maintainer.name}.`}>
-                                 Home
-                             </a>
-                           : null}
-                       {props.maintainer.emailAddress
-                           ? <a href={`mailto:${props.maintainer.emailAddress}`}
-                                className="btn btn-primary fl-btn-details-action"
-                                title={`Email ${props.maintainer.name}.`}>
-                                 Email
-                             </a>
-                           : null}
-                       {props.maintainer.twitterHandle
-                           ? <a href={`https://twitter.com/${props.maintainer.twitterHandle}`}
-                                className="btn btn-primary fl-btn-details-action"
-                                title={`View the Twitter page of ${props.maintainer.name}.`}>
-                                 Twitter
-                             </a>
-                           : null}
+                   <h3 className="card-header">Maintained by {props.maintainer.name}</h3>
+                   <div className="container pt-1">
+                       <div className="row">
+                           <div className="col-9">
+                               {props.maintainer.additionalLists.length > 0
+                                   ? <div>
+                                         <h4>More by {props.maintainer.name}:</h4>
+                                         <ul>
+                                             {props.maintainer.additionalLists.map(
+                                                 (list: any) => <MaintainerAdditionalList list={list} key={list.id.toString()}/>)}
+                                         </ul>
+                                     </div>
+                                   : null}
+                           </div>
+                           <div className="col-3 p-0 btn-group-vertical justify-content-start d-flex align-items-end" role="group">
+                               {props.maintainer.homeUrl
+                                   ? <a href={props.maintainer.homeUrl} className="btn btn-primary fl-btn-details-action"
+                                        title={`View the home page of ${props.maintainer.name}.`}>
+                                         Home
+                                     </a>
+                                   : null}
+                               {props.maintainer.emailAddress
+                                   ? <a href={`mailto:${props.maintainer.emailAddress}`}
+                                        className="btn btn-primary fl-btn-details-action"
+                                        title={`Email ${props.maintainer.name}.`}>
+                                         Email
+                                     </a>
+                                   : null}
+                               {props.maintainer.twitterHandle
+                                   ? <a href={`https://twitter.com/${props.maintainer.twitterHandle}`}
+                                        className="btn btn-primary fl-btn-details-action"
+                                        title={`View the Twitter page of ${props.maintainer.name}.`}>
+                                         Twitter
+                                     </a>
+                                   : null}
+                           </div>
+                       </div>
                    </div>
-                   {props.maintainer.additionalLists.length > 0
-                       ? <div>
-                             <h4>More by {props.maintainer.name}</h4>
-                             <ul>
-                                 {props.maintainer.additionalLists.map(
-                                     (list: any) => <MaintainerAdditionalList list={list} key={list.id.toString()}/>)}
-                             </ul>
-                         </div>
-                       : null}
                </div>
            </div>;
 }
