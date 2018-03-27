@@ -13,7 +13,7 @@ export class Layout extends React.Component<ILayoutProps, {}> {
                                <img src="logo_filterlists.png" alt="FilterLists" className="img-fluid"/>
                            </a>
                        </h1>
-                       <p className="ml-1 mr-1">
+                       <p className="ml-2 mr-2">
                            The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.
                        </p>
                    </div>

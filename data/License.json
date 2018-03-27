@@ -16,7 +16,7 @@
   {
     "id": 3,
     "descriptionUrl": null,
-    "name": "Restricted (General)",
+    "name": "Restricted",
     "permissiveAdaptation": false,
     "permissiveCommercial": false
   },
@@ -30,7 +30,7 @@
   {
     "id": 5,
     "descriptionUrl": "https://en.wikipedia.org/wiki/All_rights_reserved",
-    "name": "All Rights Reserved (Default)",
+    "name": "All Rights Reserved",
     "permissiveAdaptation": false,
     "permissiveCommercial": false
   },
@@ -44,7 +44,7 @@
   {
     "id": 7,
     "descriptionUrl": null,
-    "name": "Permissive (General)",
+    "name": "Permissive",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
   },
