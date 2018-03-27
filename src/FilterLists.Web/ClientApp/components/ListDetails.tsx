@@ -68,10 +68,10 @@ function FilterListDetails(props: any) {
 function Description(props: any) {
     return props.description
         ? (props.url
-            ? <h3 className="card-subtitle">
-                  <blockquote cite={props.url}>{props.description}</blockquote>
+            ? <h3 className="card-subtitle fl-description">
+                  <blockquote cite={props.url} className="m-0">{props.description}</blockquote>
               </h3>
-            : <h3 className="card-subtitle">{props.description}</h3>)
+            : <h3 className="card-subtitle fl-description">{props.description}</h3>)
         : null;
 }
 

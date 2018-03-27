@@ -13,3 +13,7 @@ body, h2, h3, h4, h5, blockquote {
     margin-bottom: .2rem;
     max-width: 90px;
 }
+
+.fl-description {
+    margin: 0 0 .5rem;
+}
