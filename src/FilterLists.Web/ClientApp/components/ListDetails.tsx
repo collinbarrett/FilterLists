@@ -200,7 +200,7 @@ function EmailAddress(props: any) {
 
 function Maintainers(props: any) {
     return props.maintainers.length > 0
-        ? <div>
+        ? <div className="w-100">
               {props.maintainers.map(
                   (maintainer: any) => <Maintainer maintainer={maintainer} key={maintainer.id.toString()}/>)}
           </div>
@@ -213,21 +213,21 @@ function Maintainer(props: any) {
                    <h3 className="card-title">Maintained by {props.maintainer.name}</h3>
                    <div className="btn-group" role="group">
                        {props.maintainer.homeUrl
-                           ? <a href={props.maintainer.homeUrl} className="btn btn-primary"
+                           ? <a href={props.maintainer.homeUrl} className="btn btn-primary fl-btn-details-action"
                                 title={`View the home page of ${props.maintainer.name}.`}>
                                  Home
                              </a>
                            : null}
                        {props.maintainer.emailAddress
                            ? <a href={`mailto:${props.maintainer.emailAddress}`}
-                                className="btn btn-primary"
+                                className="btn btn-primary fl-btn-details-action"
                                 title={`Email ${props.maintainer.name}.`}>
                                  Email
                              </a>
                            : null}
                        {props.maintainer.twitterHandle
                            ? <a href={`https://twitter.com/${props.maintainer.twitterHandle}`}
-                                className="btn btn-primary"
+                                className="btn btn-primary fl-btn-details-action"
                                 title={`View the Twitter page of ${props.maintainer.name}.`}>
                                  Twitter
                              </a>
