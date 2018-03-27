@@ -44,7 +44,7 @@ function FilterListDetails(props: any) {
                                <DiscontinuedDate date={props.details.discontinuedDate}/>
                                <License license={props.details.license}/>
                            </div>
-                           <div className="col-3 p-0 btn-group-vertical justify-content-start align-end">
+                           <div className="col-3 p-0 btn-group-vertical justify-content-start d-flex align-items-end">
                                <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
                                <ViewUrl url={props.details.viewUrl} name={props.details.name}/>
                                <HomeUrl url={props.details.homeUrl} name={props.details.name}/>
