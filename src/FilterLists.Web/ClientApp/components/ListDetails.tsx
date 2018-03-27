@@ -39,10 +39,12 @@ function FilterListDetails(props: any) {
                        <div className="row">
                            <div className="col-9">
                                <Description description={props.details.description} url={props.details.descriptionSourceUrl}/>
-                               <Languages languages={props.details.languages}/>
-                               <PublishedDate date={props.details.publishedDate}/>
-                               <DiscontinuedDate date={props.details.discontinuedDate}/>
-                               <License license={props.details.license}/>
+                               <ul className="list-group list-group-flush">
+                                   <Languages languages={props.details.languages}/>
+                                   <PublishedDate date={props.details.publishedDate}/>
+                                   <DiscontinuedDate date={props.details.discontinuedDate}/>
+                                   <License license={props.details.license}/>
+                               </ul>
                            </div>
                            <div className="col-3 p-0 btn-group-vertical justify-content-start d-flex align-items-end">
                                <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
@@ -68,46 +70,54 @@ function FilterListDetails(props: any) {
 function Description(props: any) {
     return props.description
         ? (props.url
-            ? <h3 className="card-subtitle fl-description">
+            ? <h3 className="card-header fl-description">
                   <blockquote cite={props.url} className="m-0">{props.description}</blockquote>
               </h3>
-            : <h3 className="card-subtitle fl-description">{props.description}</h3>)
+            : <h3 className="card-header fl-description">{props.description}</h3>)
         : null;
 }
 
 function Languages(props: any) {
     return props.languages.length > 0
         ? props.languages.length > 1
-        ? <div>
-              <p>Languages:</p>
+        ? <li className="list-group-item">
+              <p className="m-0">Languages:</p>
               <ul>
                   {props.languages.map(
                       (language: any) => <li>{language}</li>)}
               </ul>
-          </div>
-        : <div>
-              <p>Language:</p>
-              <ul>
-                  {props.languages.map(
-                      (language: any) => <li>{language}</li>)}
-              </ul>
-          </div>
+          </li>
+        : <li className="list-group-item">
+              <p>Language: {props.languages.map((language: any) => language)}</p>
+          </li>
         : null;
 }
 
 function PublishedDate(props: any) {
-    return props.date ? <p>Published: {props.date}</p> : null;
+    return props.date
+        ? <li className="list-group-item">
+              <p>Published: {props.date}</p>
+          </li>
+        : null;
 }
 
 function DiscontinuedDate(props: any) {
-    return props.date ? <p>Discontinued: {props.date}</p> : null;
+    return props.date
+        ? <li className="list-group-item">
+              <p>Discontinued: {props.date}</p>
+          </li>
+        : null;
 }
 
 function License(props: any) {
     return props.license
         ? (props.license.descriptionUrl
-            ? <p>License: <a href={props.license.descriptionUrl}>{props.license.name}</a></p>
-            : <p>License: {props.license.name}</p>)
+            ? <li className="list-group-item">
+                  <p>License: <a href={props.license.descriptionUrl}>{props.license.name}</a></p>
+              </li>
+            : <li className="list-group-item">
+                  <p>License: {props.license.name}</p>
+              </li>)
         : null;
 }
 
@@ -219,14 +229,16 @@ function Maintainer(props: any) {
                                          <h4>More by {props.maintainer.name}:</h4>
                                          <ul>
                                              {props.maintainer.additionalLists.map(
-                                                 (list: any) => <MaintainerAdditionalList list={list} key={list.id.toString()}/>)}
+                                                 (list: any) => <MaintainerAdditionalList list={list} key={list.id
+                                                     .toString()}/>)}
                                          </ul>
                                      </div>
                                    : null}
                            </div>
                            <div className="col-3 p-0 btn-group-vertical justify-content-start d-flex align-items-end" role="group">
                                {props.maintainer.homeUrl
-                                   ? <a href={props.maintainer.homeUrl} className="btn btn-primary fl-btn-details-action"
+                                   ? <a href={props.maintainer.homeUrl
+} className="btn btn-primary fl-btn-details-action"
                                         title={`View the home page of ${props.maintainer.name}.`}>
                                          Home
                                      </a>
