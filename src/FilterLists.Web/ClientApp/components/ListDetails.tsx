@@ -33,7 +33,7 @@ export default class ListDetails extends React.Component<any, any> {
 }
 
 function FilterListDetails(props: any) {
-    return <div className="card">
+    return <div className="card border-primary">
                <div className="card-body p-2">
                    <div className="container m-0">
                        <div className="row">
