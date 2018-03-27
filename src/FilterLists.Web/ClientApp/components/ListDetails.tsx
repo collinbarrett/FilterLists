@@ -38,14 +38,13 @@ function FilterListDetails(props: any) {
                    <div className="container m-0">
                        <div className="row">
                            <div className="col-9 p-0">
-                               <Description description={props.details.description} url={props.details
-                                   .descriptionSourceUrl}/>
+                               <Description description={props.details.description} url={props.details.descriptionSourceUrl}/>
                                <Languages languages={props.details.languages}/>
                                <PublishedDate date={props.details.publishedDate}/>
                                <DiscontinuedDate date={props.details.discontinuedDate}/>
                                <License license={props.details.license}/>
                            </div>
-                           <div className="col-3 p-0 btn-group-vertical justify-content-start">
+                           <div className="col-3 p-0 btn-group-vertical justify-content-start align-end">
                                <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
                                <ViewUrl url={props.details.viewUrl} name={props.details.name}/>
                                <HomeUrl url={props.details.homeUrl} name={props.details.name}/>
@@ -114,14 +113,14 @@ function License(props: any) {
 
 function SubscribeUrl(props: any) {
     return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-              className="d-block d-sm-none btn btn-primary fl-btn-margin"
+              className="d-block d-sm-none btn btn-primary fl-btn-details-action"
               title={ `Subscribe to ${props.name} with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus).` }>
                Subscribe
            </a >;
 }
 
 function ViewUrl(props: any) {
-    return <a href={props.url} className="btn btn-primary fl-btn-margin"
+    return <a href={props.url} className="btn btn-primary fl-btn-details-action"
               title={`View ${props.name} in its raw format.`}>
                View
            </a>;
@@ -129,7 +128,7 @@ function ViewUrl(props: any) {
 
 function HomeUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary fl-btn-margin"
+        ? <a href={props.url} className="btn btn-primary fl-btn-details-action"
              title={`View the home page for ${props.name}.`}>
               Home
           </a>
@@ -138,7 +137,7 @@ function HomeUrl(props: any) {
 
 function PolicyUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary fl-btn-margin"
+        ? <a href={props.url} className="btn btn-primary fl-btn-details-action"
              title={`View the policy for which rules ${props.name} includes.`}>
               Policy
           </a>
@@ -147,7 +146,7 @@ function PolicyUrl(props: any) {
 
 function DonateUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary fl-btn-margin"
+        ? <a href={props.url} className="btn btn-primary fl-btn-details-action"
              title={`Donate to support ${props.name}.`}>
               Donate
           </a>
@@ -156,7 +155,7 @@ function DonateUrl(props: any) {
 
 function IssuesUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary fl-btn-margin"
+        ? <a href={props.url} className="btn btn-primary fl-btn-details-action"
              title={`View the GitHub Issues for ${props.name}.`}>
               GH Issues
           </a>
@@ -165,7 +164,7 @@ function IssuesUrl(props: any) {
 
 function ForumUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary fl-btn-margin"
+        ? <a href={props.url} className="btn btn-primary fl-btn-details-action"
              title={`View the forum for ${props.name}.`}>
               Forum
           </a>
@@ -174,7 +173,7 @@ function ForumUrl(props: any) {
 
 function ChatUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary fl-btn-margin"
+        ? <a href={props.url} className="btn btn-primary fl-btn-details-action"
              title={`Enter the chat room for ${props.name}.`}>
               Chat
           </a>
@@ -183,7 +182,7 @@ function ChatUrl(props: any) {
 
 function SubmissionUrl(props: any) {
     return props.url
-        ? <a href={props.url} className="btn btn-primary fl-btn-margin"
+        ? <a href={props.url} className="btn btn-primary fl-btn-details-action"
              title={`Submit a new rule to be included in ${props.name}.`}>
               Add Rule
           </a>
@@ -192,7 +191,7 @@ function SubmissionUrl(props: any) {
 
 function EmailAddress(props: any) {
     return props.email
-        ? <a href={`mailto:${props.email}`} className="btn btn-primary fl-btn-margin"
+        ? <a href={`mailto:${props.email}`} className="btn btn-primary fl-btn-details-action"
              title={`Email ${props.name}.`}>
               Email
           </a>
