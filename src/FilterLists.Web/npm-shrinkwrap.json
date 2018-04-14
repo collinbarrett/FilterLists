@@ -17,9 +17,12 @@
       "dev": true
     },
     "@types/react": {
-      "version": "16.0.41",
-      "resolved": "https://registry.npmjs.org/@types/react/-/react-16.0.41.tgz",
-      "integrity": "sha1-chRnN/TUOdyVpTMV3kv7Q6yFQso="
+      "version": "16.3.10",
+      "resolved": "https://registry.npmjs.org/@types/react/-/react-16.3.10.tgz",
+      "integrity": "sha512-NGqrP0qhgn8hlFMO3I1w7vwT8KIcdEg1D1AFtYaNBhp1Uo4SZgUpNcbOBfrvgAPRr1nn+Ail/0VoPLI2n4SNMw==",
+      "requires": {
+        "csstype": "2.2.0"
+      }
     },
     "@types/react-dom": {
       "version": "16.0.5",
@@ -28,7 +31,7 @@
       "dev": true,
       "requires": {
         "@types/node": "9.6.5",
-        "@types/react": "16.0.41"
+        "@types/react": "16.3.10"
       }
     },
     "@types/react-hot-loader": {
@@ -37,7 +40,7 @@
       "integrity": "sha1-I7GHWjJ8MsurcF+/Zg2PIH7eTWk=",
       "dev": true,
       "requires": {
-        "@types/react": "16.0.41"
+        "@types/react": "16.3.10"
       }
     },
     "@types/react-router": {
@@ -47,7 +50,7 @@
       "dev": true,
       "requires": {
         "@types/history": "4.6.2",
-        "@types/react": "16.0.41"
+        "@types/react": "16.3.10"
       }
     },
     "@types/react-router-dom": {
@@ -57,7 +60,7 @@
       "dev": true,
       "requires": {
         "@types/history": "4.6.2",
-        "@types/react": "16.0.41",
+        "@types/react": "16.3.10",
         "@types/react-router": "4.0.23"
       }
     },
@@ -66,7 +69,7 @@
       "resolved": "https://registry.npmjs.org/@types/react-table/-/react-table-6.7.9.tgz",
       "integrity": "sha512-eXd7jr+uW/PNcYxiOlZxbUXonCyn2GTpmdKWr4OWPzI5PItruSSlwMCWSlmxR1RUiQx38DY54HXzy4jW2IZ7Qg==",
       "requires": {
-        "@types/react": "16.0.41"
+        "@types/react": "16.3.10"
       }
     },
     "@types/webpack-env": {
@@ -488,9 +491,9 @@
       "dev": true
     },
     "bootstrap": {
-      "version": "4.0.0",
-      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-4.0.0.tgz",
-      "integrity": "sha512-gulJE5dGFo6Q61V/whS6VM4WIyrlydXfCgkE+Gxe5hjrJ8rXLLZlALq7zq2RPhOc45PSwQpJkrTnc2KgD6cvmA==",
+      "version": "4.1.0",
+      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-4.1.0.tgz",
+      "integrity": "sha512-kCo82nE8qYVfOa/Z3hL98CPgPIEkh6iPdiJrUJMQ9n9r0+6PEET7cmhLlV0XVYmEj5QtKIOaSGMLxy5jSFhKog==",
       "dev": true
     },
     "brace-expansion": {
@@ -1187,6 +1190,11 @@
         "clap": "1.2.3",
         "source-map": "0.5.7"
       }
+    },
+    "csstype": {
+      "version": "2.2.0",
+      "resolved": "https://registry.npmjs.org/csstype/-/csstype-2.2.0.tgz",
+      "integrity": "sha512-5YHWQgAtzKIA8trr2AVg6Jq5Fs5eAR1UqKbRJjgQQevNx3IAhD3S9wajvqJdmO7bgIxy0MA5lFVPzJYjmMlNeQ=="
     },
     "d": {
       "version": "1.0.0",
@@ -4852,9 +4860,9 @@
       "dev": true
     },
     "react": {
-      "version": "16.2.0",
-      "resolved": "https://registry.npmjs.org/react/-/react-16.2.0.tgz",
-      "integrity": "sha1-oxvS2rib/2XUITT6GH8k0FTCc7o=",
+      "version": "16.3.1",
+      "resolved": "https://registry.npmjs.org/react/-/react-16.3.1.tgz",
+      "integrity": "sha512-NbkxN9jsZ6+G+ICsLdC7/wUD26uNbvKU/RAxEWgc9kcdKvROt+5d5j2cNQm5PSFTQ4WNGsR3pa4qL2Q0/WSy1w==",
       "dev": true,
       "requires": {
         "fbjs": "0.8.16",
@@ -4870,9 +4878,9 @@
       "dev": true
     },
     "react-dom": {
-      "version": "16.2.0",
-      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-16.2.0.tgz",
-      "integrity": "sha1-aQAxeGAcDKGbcJszqDNp/mEkwEQ=",
+      "version": "16.3.1",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-16.3.1.tgz",
+      "integrity": "sha512-2Infg89vzahq8nfVi1GkjPqq0vrBvf0f3T0+dTtyjq4f6HKOqKixAK25Vr593O3QTx4kw/vmUtAJwerlevNWOA==",
       "dev": true,
       "requires": {
         "fbjs": "0.8.16",
@@ -5849,9 +5857,9 @@
       "dev": true
     },
     "typescript": {
-      "version": "2.7.2",
-      "resolved": "https://registry.npmjs.org/typescript/-/typescript-2.7.2.tgz",
-      "integrity": "sha1-LWFaHvSu5PV0Qlzf9wJu34GRmDY=",
+      "version": "2.8.1",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-2.8.1.tgz",
+      "integrity": "sha512-Ao/f6d/4EPLq0YwzsQz8iXflezpTkQzqAyenTiw4kCUGr1uPiFLC3+fZ+gMZz6eeI/qdRUqvC+HxIJzUAzEFdg==",
       "dev": true
     },
     "ua-parser-js": {
