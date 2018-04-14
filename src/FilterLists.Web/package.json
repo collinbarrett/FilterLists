@@ -5,11 +5,11 @@
   "devDependencies": {
     "@types/history": "^4.6.2",
     "@types/react": "^16.0.41",
-    "@types/react-dom": "^16.0.4",
+    "@types/react-dom": "^16.0.5",
     "@types/react-hot-loader": "^3.0.6",
     "@types/react-router": "^4.0.23",
-    "@types/react-router-dom": "^4.2.5",
-    "@types/webpack-env": "^1.13.5",
+    "@types/react-router-dom": "^4.2.6",
+    "@types/webpack-env": "^1.13.6",
     "aspnet-webpack": "^2.0.3",
     "aspnet-webpack-react": "^3.0.0",
     "awesome-typescript-loader": "^4.0.1",
@@ -32,8 +32,8 @@
     "webpack-hot-middleware": "^2.21.2"
   },
   "dependencies": {
-    "@types/react-table": "^6.7.8",
-    "popper.js": "^1.14.1",
+    "@types/react-table": "^6.7.9",
+    "popper.js": "^1.14.3",
     "react-table": "^6.8.0"
   }
 }
