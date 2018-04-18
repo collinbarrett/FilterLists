@@ -334,5 +334,4 @@ appsettings.development.json
 appsettings.production.json
 src/FilterLists.Agent/appsettings.json
 src/FilterLists.Web/wwwroot/dist
-FilterLists.ndproj
 NDependOut*/
