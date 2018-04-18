@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <NDepend AppName="FilterLists" Platform="DotNet" FileWrittenByProductVersion="2018.1.0.9030">
-  <OutputDir KeepXmlFiles="False">C:\Users\cb\Documents\GitHub\filterlists\NDependOut1</OutputDir>
+  <OutputDir KeepXmlFiles="False">NDependOut</OutputDir>
   <Assemblies>
     <Name>FilterLists.Api</Name>
     <Name>FilterLists.Data</Name>
@@ -56,9 +56,9 @@
     <Name>System.Console</Name>
   </FrameworkAssemblies>
   <Dirs>
-    <Dir>C:\Users\cb\Documents\GitHub\filterlists\src\FilterLists.Api\bin\debug\netcoreapp2.0</Dir>
-    <Dir>C:\Users\cb\Documents\GitHub\filterlists\src\FilterLists.Agent\bin\debug\netcoreapp2.0</Dir>
-    <Dir>C:\Users\cb\Documents\GitHub\filterlists\src\FilterLists.Web\bin\debug\netcoreapp2.1</Dir>
+    <Dir>src\FilterLists.Api\bin\debug\netcoreapp2.0</Dir>
+    <Dir>src\FilterLists.Agent\bin\debug\netcoreapp2.0</Dir>
+    <Dir>src\FilterLists.Web\bin\debug\netcoreapp2.1</Dir>
     <Dir>C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.6</Dir>
     <Dir>C:\Program Files\dotnet\store\x64\netcoreapp2.0</Dir>
     <Dir>C:\Program Files\dotnet\sdk\NuGetFallbackFolder</Dir>
