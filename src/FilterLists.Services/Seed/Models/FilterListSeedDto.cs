@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FilterLists.Services.SeedService.Models
+namespace FilterLists.Services.Seed.Models
 {
     public class FilterListSeedDto
     {

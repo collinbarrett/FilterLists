@@ -1,4 +1,4 @@
-﻿namespace FilterLists.Services.SeedService.Models.Junctions
+﻿namespace FilterLists.Services.Seed.Models.Junctions
 {
     public class FilterListLanguageSeedDto
     {

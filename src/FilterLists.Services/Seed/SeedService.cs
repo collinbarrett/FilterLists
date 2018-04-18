@@ -6,7 +6,7 @@ using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace FilterLists.Services.SeedService
+namespace FilterLists.Services.Seed
 {
     public class SeedService
     {

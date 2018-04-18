@@ -6,16 +6,16 @@ using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Extensions;
 
-namespace FilterLists.Services.SnapshotService
+namespace FilterLists.Services.Snapshot
 {
     public class SnapshotBatchDe
     {
         private readonly FilterListsDbContext dbContext;
         private readonly IEnumerable<string> rawRules;
-        private readonly Snapshot snapshot;
+        private readonly Data.Entities.Snapshot snapshot;
         private IQueryable<Rule> rules;
 
-        public SnapshotBatchDe(FilterListsDbContext dbContext, Snapshot snapshot, IEnumerable<string> rawRules)
+        public SnapshotBatchDe(FilterListsDbContext dbContext, Data.Entities.Snapshot snapshot, IEnumerable<string> rawRules)
         {
             this.dbContext = dbContext;
             this.snapshot = snapshot;

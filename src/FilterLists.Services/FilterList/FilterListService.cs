@@ -5,7 +5,7 @@ using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace FilterLists.Services.FilterListService
+namespace FilterLists.Services.FilterList
 {
     public class FilterListService
     {

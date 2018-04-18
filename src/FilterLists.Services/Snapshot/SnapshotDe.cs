@@ -9,7 +9,7 @@ using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Extensions;
 
-namespace FilterLists.Services.SnapshotService
+namespace FilterLists.Services.Snapshot
 {
     public class SnapshotDe
     {
@@ -20,7 +20,7 @@ namespace FilterLists.Services.SnapshotService
 
         private readonly FilterListsDbContext dbContext;
         private readonly FilterListViewUrlDto list;
-        private Snapshot snapshot;
+        private Data.Entities.Snapshot snapshot;
 
         public SnapshotDe(FilterListsDbContext dbContext, FilterListViewUrlDto list)
         {
@@ -50,7 +50,7 @@ namespace FilterLists.Services.SnapshotService
 
         private async Task AddSnapshot()
         {
-            snapshot = new Snapshot {FilterListId = list.Id};
+            snapshot = new Data.Entities.Snapshot {FilterListId = list.Id};
             await dbContext.Snapshots.AddAsync(snapshot);
         }
 

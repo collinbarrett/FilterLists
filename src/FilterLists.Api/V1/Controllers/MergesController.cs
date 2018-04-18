@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using FilterLists.Data.Entities.Junctions;
-using FilterLists.Services.SeedService;
-using FilterLists.Services.SeedService.Models.Junctions;
+using FilterLists.Services.Seed;
+using FilterLists.Services.Seed.Models.Junctions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FilterLists.Api.V1.Controllers
