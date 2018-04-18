@@ -77,4 +77,7 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A31B449-52DD-4445-A9C4-033A24E25308}
 	EndGlobalSection
+	GlobalSection(NDepend) = preSolution
+		Project = ".\FilterLists.ndproj"
+	EndGlobalSection
 EndGlobal
