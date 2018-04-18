@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using FilterLists.Services.DependencyInjection.Extensions;
-using FilterLists.Services.SnapshotService;
+using FilterLists.Services.Snapshot;
 using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.Extensibility;
 using Microsoft.Extensions.Configuration;

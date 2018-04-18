@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 
-namespace FilterLists.Services.FilterListService
+namespace FilterLists.Services.FilterList
 {
     public static class FilterListServiceExtensions
     {

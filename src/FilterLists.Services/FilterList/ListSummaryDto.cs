@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace FilterLists.Services.FilterListService
+namespace FilterLists.Services.FilterList
 {
     public class ListSummaryDto
     {
