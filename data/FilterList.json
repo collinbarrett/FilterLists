@@ -552,8 +552,8 @@
   },
   {
     "id": 30,
-    "chatUrl": null,
-    "description": "Filters that hide and block pop-ups, widgets, newsletters, push notifications, arrows and other irritating elements on Polish websites. For proper operation Polish Cookies Filters are required.",
+    "chatUrl": "https://discord.me/polskiefiltry",
+    "description": "Filters that hide and block pop-ups, widgets, newsletters, push notifications, arrows and other irritating elements on Polish websites (include Polish Cookies Filters).",
     "descriptionSourceUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -6462,7 +6462,7 @@
   {
     "id": 341,
     "chatUrl": "https://discord.me/polskiefiltry",
-    "description": "uBlock Origin supplement list for Polish Social Filters",
+    "description": "uBlock Origin & AdGuard supplement list for Polish Social Filters",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": "https://patronite.pl/polskiefiltry",
@@ -6471,7 +6471,7 @@
     "homeUrl": "http://www.certyficate.it/",
     "issuesUrl": "https://github.com/MajkiIT/polish-ads-filter/issues",
     "licenseId": 9,
-    "name": "Polish Social Filters - Supplement for uBlock",
+    "name": "Polish Social Filters - Supplement for uBlock & AdGuard",
     "policyUrl": null,
     "publishedDate": "2018-01-06T00:00:00",
     "submissionUrl": null,
@@ -6500,7 +6500,7 @@
   {
     "id": 343,
     "chatUrl": "https://discord.me/polskiefiltry",
-    "description": "uBlock Origin supplement list for Polish Cookies Filters.",
+    "description": "uBlock Origin & AdGuard supplement list for Polish Cookies Filters.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": "https://patronite.pl/polskiefiltry",
@@ -6509,7 +6509,7 @@
     "homeUrl": "http://www.certyficate.it/",
     "issuesUrl": "https://github.com/MajkiIT/polish-ads-filter/issues",
     "licenseId": 9,
-    "name": "Polish Cookies Filters - Supplement for uBlock",
+    "name": "Polish Cookies Filters - Supplement for uBlock and AdGuard",
     "policyUrl": null,
     "publishedDate": "2018-01-12T00:00:00",
     "submissionUrl": null,
@@ -6613,7 +6613,7 @@
   },
   {
     "id": 349,
-    "chatUrl": null,
+    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Supplement list for Polish Annoyance Filters, only for uBlock & AdGuard.",
     "descriptionSourceUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
     "discontinuedDate": null,
@@ -7390,4 +7390,23 @@
     "syntaxId": 8,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/List%20for%20Chrome%20Personal%20Blocklist"
   },
+  {
+    "id": 390,
+    "chatUrl": "https://discord.me/polskiefiltry",
+    "description": "Filters that hide and block RSS sections on Polish websites (supplement for Polish Social Filters).",
+    "descriptionSourceUrl": "https://github.com/PolishFiltersTeam/PolishRSSFilters",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/PolishFiltersTeam/PolishRSSFilters",
+    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishRSSFilters/issues",
+    "licenseId": 9,
+    "name": "Polish RSS Filters",
+    "policyUrl": null,
+    "publishedDate": "2018-03-30T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishRSSFilters/master/polish_rss_filters.txt"
+  }
 ]
