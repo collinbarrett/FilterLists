@@ -1,14 +1,26 @@
-﻿[
-  {
-    "softwareId": 2,
-    "syntaxId": 3
-  },
+ [
   {
     "softwareId": 1,
     "syntaxId": 4
   },
   {
+    "softwareId": 2,
+    "syntaxId": 3
+  },
+  {
     "softwareId": 3,
     "syntaxId": 6
+  },
+  {
+    "softwareId": 4,
+    "syntaxId": 3
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 4
+  },
+  {
+    "softwareId": 6,
+    "syntaxId": 3
   }
 ]
