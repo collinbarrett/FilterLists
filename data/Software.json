@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": 1,
     "downloadUrl": "https://github.com/gorhill/uBlock#installation",
@@ -16,5 +16,23 @@
     "downloadUrl": "https://adguard.com/en/download.html",
     "homeUrl": "https://adguard.com/",
     "name": "AdGuard"
+  },
+  {
+    "id": 4,
+    "downloadUrl": "https://f-droid.org/packages/org.jak_linux.dns66/",
+    "homeUrl": "https://github.com/julian-klode/dns66",
+    "name": "DNS66"
+  },
+  {
+    "id": 5,
+    "downloadUrl": "https://github.com/NanoAdblocker/NanoCore#nano-adblocker-core",
+    "homeUrl": "https://github.com/NanoAdblocker/NanoCore",
+    "name": "Nano Adblocker"
+  },
+  {
+    "id": 6,
+    "downloadUrl": "https://getadblock.com/",
+    "homeUrl": "https://getadblock.com/",
+    "name": "AdBlock"
   }
 ]

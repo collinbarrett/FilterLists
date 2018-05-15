@@ -598,5 +598,17 @@
   {
     "filterListId": 390,
     "maintainerId": 34
+  },
+  {
+    "filterListId": 391,
+    "maintainerId": 22
+  },
+  {
+    "filterListId": 392,
+    "maintainerId": 22
+  },
+  {
+    "filterListId": 393,
+    "maintainerId": 22
   }
 ]
