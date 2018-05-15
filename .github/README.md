@@ -40,6 +40,7 @@ One can use FilterLists in the following software tools. Software support of any
 *   [AdGuard](https://adguard.com/)
 *   [uBlock Origin](https://github.com/gorhill/uBlock)
 *   [DNS66](https://github.com/julian-klode/dns66)
+*   [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore)
 *   ...[Did we forget one?](https://github.com/collinbarrett/FilterLists/issues)
 
 ## Miscellany
