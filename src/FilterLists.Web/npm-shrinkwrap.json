@@ -4949,9 +4949,9 @@
       }
     },
     "react-table": {
-      "version": "6.8.2",
-      "resolved": "https://registry.npmjs.org/react-table/-/react-table-6.8.2.tgz",
-      "integrity": "sha1-Olrvq8hZUzANFnhvowfDBhDbmtw=",
+      "version": "6.8.6",
+      "resolved": "https://registry.npmjs.org/react-table/-/react-table-6.8.6.tgz",
+      "integrity": "sha1-oK2LSDkxkFLVvvwBJgP7Fh5S7eM=",
       "requires": {
         "classnames": "2.2.5"
       }
@@ -6372,9 +6372,9 @@
       }
     },
     "webpack-hot-middleware": {
-      "version": "2.22.1",
-      "resolved": "https://registry.npmjs.org/webpack-hot-middleware/-/webpack-hot-middleware-2.22.1.tgz",
-      "integrity": "sha512-wbjnvcc3HOPKRE/L0KmTv2MrByfLFOJlVFNKo5Svxy+1plR/bMIMYQDgB4pUOzJXhiBLU7Clp6P1SSzS89iKxA==",
+      "version": "2.22.2",
+      "resolved": "https://registry.npmjs.org/webpack-hot-middleware/-/webpack-hot-middleware-2.22.2.tgz",
+      "integrity": "sha512-uccPS6b/UlXJoNCS+3fuc40z2KZgO0qQhnu+Ne1iZiHTy9s5fMCJAV+Vc8VTVkN203UphsxQmkumxYeHLiQ5jg==",
       "dev": true,
       "requires": {
         "ansi-html": "0.0.7",
