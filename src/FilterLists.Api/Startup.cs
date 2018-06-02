@@ -2,19 +2,14 @@
 using FilterLists.Data;
 using FilterLists.Data.Seed.Extensions;
 using FilterLists.Services.DependencyInjection.Extensions;
-using JetBrains.Annotations;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpOverrides;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.Api
 {
-    [UsedImplicitly]
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -22,34 +17,16 @@ namespace FilterLists.Api
             Configuration = configuration;
         }
 
-        private IConfiguration Configuration { get; }
+        public IConfiguration Configuration { get; }
 
-        [UsedImplicitly]
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddFilterListsServices(Configuration);
             services.AddFilterListsApi();
         }
 
-        [UsedImplicitly]
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-                app.UseHsts();
-            }
-
             app.UseForwardedHeaders(new ForwardedHeadersOptions
             {
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
@@ -60,9 +37,7 @@ namespace FilterLists.Api
                 c.SwaggerEndpoint("/v1/swagger.json", "FilterLists API V1");
                 c.RoutePrefix = "docs";
             });
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseCookiePolicy();
             app.UseMvc(routes =>
             {
                 routes.MapRoute("noAction", "v{version:apiVersion}/{controller}/{id:int}",
