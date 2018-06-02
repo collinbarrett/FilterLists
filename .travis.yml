@@ -1,13 +1,11 @@
 dist: trusty
-sudo: false
+sudo: required
 language: csharp
 dotnet: 2.1.300
 mono: none
 solution: FilterLists.sln
-addons:
-  apt:
-    packages:
-    - sshpass
+before_install:
+- sudo apt-get install sshpass
 script:
 - scripts/build.sh
 env:
