@@ -7462,5 +7462,23 @@
     "submissionUrl": null,
     "syntaxId": 11,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json"
+  },
+  {
+    "id": 394,
+    "description": "A comprehensive, all-in-one ad-block list for thorough blocking of trackers, pop-up ads, ads, unwanted cookies, fake news, cookie warning messages, unwanted comment sections, crypto-coin mining, YouTube clutter and social network hassles.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/CK%27s-FilterList.txt",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": "CHEF-KOCH@protonmail.com",
+    "forumUrl": null,
+    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
+    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
+    "licenseId": 17,
+    "name": "CHEF-KOCH's Filter List",
+    "policyUrl": null,
+    "publishedDate": "2015-08-14T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/CK%27s-FilterList.txt"
   }
 ]
