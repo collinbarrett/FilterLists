@@ -411,5 +411,12 @@
     "homeUrl": null,
     "name": "hajdar",
     "twitterHandle": null
+  },
+  {
+    "id": 61,
+    "emailAddress": "CHEF-KOCH@protonmail.com",
+    "homeUrl": "https://github.com/CHEF-KOCH",
+    "name": "CHEF-KOCH",
+    "twitterHandle": "CKsTechNews"
   }
 ]

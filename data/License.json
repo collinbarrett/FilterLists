@@ -110,5 +110,12 @@
     "name": "CC BY 3.0",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
+  },
+  {
+    "id": 17,
+    "descriptionUrl": "https://opensource.org/licenses/ISC",
+    "name": "ISC",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
   }
 ]
