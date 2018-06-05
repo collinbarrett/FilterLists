@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <RuntimeIdentifiers>ubuntu.16.04-x64</RuntimeIdentifiers>
     <ApplicationInsightsResourceId>/subscriptions/4bcbdfe1-6c65-4c02-820f-7c0e7ec5614f/resourcegroups/FilterLists/providers/microsoft.insights/components/FilterLists</ApplicationInsightsResourceId>
     <ApplicationInsightsAnnotationResourceId>/subscriptions/4bcbdfe1-6c65-4c02-820f-7c0e7ec5614f/resourcegroups/FilterLists/providers/microsoft.insights/components/FilterLists</ApplicationInsightsAnnotationResourceId>
@@ -23,7 +23,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.3.0" />
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="2.2.0" />
     <PackageReference Include="Microsoft.DotNet.Analyzers.Compatibility" Version="0.2.12-alpha" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="2.4.0" />
