@@ -1,5 +1,5 @@
 {
-  "name": "FilterLists.Web",
+  "name": "filterlists",
   "private": true,
   "version": "0.0.0",
   "devDependencies": {
