@@ -2,7 +2,6 @@
 using System.IO;
 using FilterLists.Services.DependencyInjection.Extensions;
 using FilterLists.Services.Snapshot;
-using JetBrains.Annotations;
 using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.Extensibility;
 using Microsoft.Extensions.Configuration;
@@ -10,8 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.Agent
 {
-    [UsedImplicitly]
-    public class Program
+    public static class Program
     {
         private const int BatchSize = 1;
         private static TelemetryClient _telemetryClient;
