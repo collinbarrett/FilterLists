@@ -22,15 +22,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="11.1.0" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.3.0" />
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="2.2.0" />
     <PackageReference Include="Microsoft.DotNet.Analyzers.Compatibility" Version="0.2.12-alpha" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="2.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
