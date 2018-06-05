@@ -7480,5 +7480,23 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/CK%27s-FilterList.txt"
+  },
+  {
+    "id": 395,
+    "description": "This is a whitelist for DNSlock & PiHole which unblocks some of the popular domains which were wrongly listed and blocked by hosts file from various sources.",
+    "descriptionSourceUrl": null,
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/raghavdua1995/DNSlock-PiHole-whitelist",
+    "issuesUrl": "https://github.com/raghavdua1995/DNSlock-PiHole-whitelist/issues",
+    "licenseId": 7,
+    "name": "DNSlock-PiHole-whitelist",
+    "policyUrl": null,
+    "publishedDate": "2018-03-11T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/raghavdua1995/DNSlock-PiHole-whitelist/master/whitelist.list"
   }
 ]
