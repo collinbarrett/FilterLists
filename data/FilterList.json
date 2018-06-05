@@ -6525,7 +6525,7 @@
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "emailAddress": null,
     "forumUrl": null,
-    "homeUrl": "http://www.certyficate.it/",
+    "homeUrl": "https://github.com/KonoromiHimaries/PolishSubFilters/",
     "issuesUrl": "https://github.com/MajkiIT/polish-ads-filter/issues",
     "licenseId": 9,
     "name": "Polish Internal Filters",
@@ -6533,7 +6533,7 @@
     "publishedDate": "2018-01-26T00:00:00",
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/inside-filters/adblock_wewnetrzne.txt"
+    "viewUrl": "https://raw.githubusercontent.com/KonoromiHimaries/PolishSubFilters/master/internal-filters/wewnetrzne.txt"
   },
   {
     "id": 345,
