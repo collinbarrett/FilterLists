@@ -24,7 +24,10 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
             ? <p>
                   <em>Loading...</em>
               </p>
-            : Home.renderFilterListsTable(this.state.filterLists);
+            : <div>
+                  {Home.renderTagline(this.state.filterLists)}
+                  {Home.renderFilterListsTable(this.state.filterLists)}
+              </div>;
         return <div>
                    {contents}
                </div>;
@@ -39,6 +42,12 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
                     loading: false
                 });
             });
+    }
+
+    private static renderTagline(filterLists: IFilterListSummaryDto[]) {
+        return <p className="ml-2 mr-2">
+                   The independent, comprehensive directory of <strong>{filterLists.length}</strong> filter and host lists for advertisements, trackers, malware, and annoyances.
+               </p>;
     }
 
     private static renderFilterListsTable(filterLists: IFilterListSummaryDto[]) {
