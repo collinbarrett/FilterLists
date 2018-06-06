@@ -1,7 +1,9 @@
 ﻿using System;
+using JetBrains.Annotations;
 
 namespace FilterLists.Services.Seed.Models
 {
+    [UsedImplicitly]
     public class FilterListSeedDto
     {
         public int Id { get; set; }

@@ -8,17 +8,11 @@ namespace FilterLists.Api.V1.Controllers
 {
     public class SoftwareController : BaseController
     {
-        private readonly SeedService seedService;
-
-        public SoftwareController(SeedService seedService)
+        public SoftwareController(SeedService seedService) : base(seedService)
         {
-            this.seedService = seedService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Seed()
-        {
-            return Json(await seedService.GetAllAsync<Software, SoftwareSeedDto>());
-        }
+        public async Task<IActionResult> Seed() => Json(await SeedService.GetAllAsync<Software, SoftwareSeedDto>());
     }
 }

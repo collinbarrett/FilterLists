@@ -4,11 +4,10 @@ using JetBrains.Annotations;
 namespace FilterLists.Services.FilterList
 {
     [UsedImplicitly]
-    public class ListSummaryDto
+    public class ListSyntaxDto
     {
-        public int Id { get; set; }
-        public IEnumerable<ListLanguagesDto> Languages { get; set; }
+        public string DefinitionUrl { get; set; }
         public string Name { get; set; }
-        public string ViewUrl { get; set; }
+        public IEnumerable<SyntaxSupportedSoftwareDto> SupportedSoftware { get; set; }
     }
 }

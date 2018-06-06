@@ -8,19 +8,13 @@ namespace FilterLists.Api.V1.Controllers
 {
     public class SoftwareSyntaxesController : BaseController
     {
-        private readonly SeedService seedService;
-
-        public SoftwareSyntaxesController(SeedService seedService)
+        public SoftwareSyntaxesController(SeedService seedService) : base(seedService)
         {
-            this.seedService = seedService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Seed()
-        {
-            return Json(await seedService.GetAllAsync<SoftwareSyntax, SoftwareSyntaxSeedDto>(
-                typeof(SoftwareSyntax).GetProperty("SyntaxId"),
-                typeof(SoftwareSyntax).GetProperty("SoftwareId")));
-        }
+        public async Task<IActionResult> Seed() =>
+            Json(await SeedService.GetAllAsync<SoftwareSyntax, SoftwareSyntaxSeedDto>(
+                typeof(SoftwareSyntax).GetProperty("SyntaxId"), typeof(SoftwareSyntax).GetProperty("SoftwareId")));
     }
 }

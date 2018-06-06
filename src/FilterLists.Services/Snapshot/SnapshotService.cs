@@ -4,16 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
+using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Services.Snapshot
 {
+    [UsedImplicitly]
     public class SnapshotService
     {
-        private readonly FilterListsDbContext dbContext;
-
         //TODO: update algorithm to support non-standard list sizes and formats (#200, #201)
-        private readonly List<int> ignoreLists = new List<int> {48, 149, 173, 185, 186, 187, 188, 189, 352};
+        private readonly List<int> _ignoreLists = new List<int> {48, 149, 173, 185, 186, 187, 188, 189, 352};
+        private readonly FilterListsDbContext dbContext;
 
         public SnapshotService(FilterListsDbContext dbContext)
         {
@@ -41,15 +42,12 @@ namespace FilterLists.Services.Snapshot
                          .FilterLists
                          .Where(list =>
                              (!list.Snapshots.Any() ||
-                              list.Snapshots
-                                  .Select(ss => ss.CreatedDateUtc)
+                              list.Snapshots.Select(ss => ss.CreatedDateUtc)
                                   .OrderByDescending(sscd => sscd)
-                                  .FirstOrDefault() < DateTime.UtcNow.AddDays(-1)) &&
-                             !ignoreLists.Contains(list.Id))
+                                  .FirstOrDefault() < DateTime.UtcNow.AddDays(-1)) && !_ignoreLists.Contains(list.Id))
                          .OrderBy(list => list.Snapshots.Any())
                          .ThenBy(list =>
-                             list.Snapshots
-                                 .Select(ss => ss.CreatedDateUtc)
+                             list.Snapshots.Select(ss => ss.CreatedDateUtc)
                                  .OrderByDescending(sscd => sscd)
                                  .FirstOrDefault())
                          .Take(batchSize)

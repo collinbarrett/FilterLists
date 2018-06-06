@@ -8,19 +8,12 @@ namespace FilterLists.Api.V1.Controllers
 {
     public class MergesController : BaseController
     {
-        private readonly SeedService seedService;
-
-        public MergesController(SeedService seedService)
+        public MergesController(SeedService seedService) : base(seedService)
         {
-            this.seedService = seedService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Seed()
-        {
-            return Json(await seedService.GetAllAsync<Merge, MergeSeedDto>(
-                typeof(Merge).GetProperty("MergeFilterListId"),
-                typeof(Merge).GetProperty("UpstreamFilterListId")));
-        }
+        public async Task<IActionResult> Seed() => Json(await SeedService.GetAllAsync<Merge, MergeSeedDto>(
+            typeof(Merge).GetProperty("MergeFilterListId"), typeof(Merge).GetProperty("UpstreamFilterListId")));
     }
 }
