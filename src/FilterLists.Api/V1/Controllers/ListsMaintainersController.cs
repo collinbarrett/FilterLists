@@ -12,7 +12,7 @@ namespace FilterLists.Api.V1.Controllers
         {
         }
 
-        [HttpGet]
+        [HttpGet("seed")]
         public async Task<IActionResult> Seed() => Json(
             await SeedService.GetAllAsync<FilterListMaintainer, FilterListMaintainerSeedDto>(
                 typeof(FilterListMaintainer).GetProperty("MaintainerId"),

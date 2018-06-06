@@ -12,7 +12,7 @@ namespace FilterLists.Api.V1.Controllers
         {
         }
 
-        [HttpGet]
+        [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
             Json(await SeedService.GetAllAsync<SoftwareSyntax, SoftwareSyntaxSeedDto>(
                 typeof(SoftwareSyntax).GetProperty("SyntaxId"), typeof(SoftwareSyntax).GetProperty("SoftwareId")));

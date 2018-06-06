@@ -20,9 +20,10 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> Index() => Json(await _filterListService.GetAllSummariesAsync());
 
         [HttpGet]
+        [Route("{id}")]
         public async Task<IActionResult> GetById(int id) => Json(await _filterListService.GetDetailsAsync(id));
 
-        [HttpGet]
+        [HttpGet("seed")]
         public async Task<IActionResult> Seed() => Json(await SeedService.GetAllAsync<FilterList, FilterListSeedDto>());
     }
 }

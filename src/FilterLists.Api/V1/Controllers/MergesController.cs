@@ -12,7 +12,7 @@ namespace FilterLists.Api.V1.Controllers
         {
         }
 
-        [HttpGet]
+        [HttpGet("seed")]
         public async Task<IActionResult> Seed() => Json(await SeedService.GetAllAsync<Merge, MergeSeedDto>(
             typeof(Merge).GetProperty("MergeFilterListId"), typeof(Merge).GetProperty("UpstreamFilterListId")));
     }

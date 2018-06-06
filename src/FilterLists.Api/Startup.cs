@@ -1,4 +1,5 @@
-﻿using FilterLists.Api.DependencyInjection.Extensions;
+﻿using System.Linq;
+using FilterLists.Api.DependencyInjection.Extensions;
 using FilterLists.Data;
 using FilterLists.Data.Seed.Extensions;
 using FilterLists.Services.DependencyInjection.Extensions;
@@ -11,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace FilterLists.Api
 {
@@ -52,22 +54,28 @@ namespace FilterLists.Api
             {
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
             });
-            app.UseSwagger();
+            app.UseSwagger(UseLowercaseControllerNameInSwaggerHack);
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/api/swagger/v1/swagger.json", "FilterLists API V1");
+                c.SwaggerEndpoint("../swagger/v1/swagger.json", "FilterLists API V1");
                 c.RoutePrefix = "docs";
             });
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute("noAction", "v{version:apiVersion}/{controller}/{id:int}",
-                    new {controller = "{controller}", action = "GetById", id = "{id}"});
-                routes.MapRoute("default", "v{version:apiVersion}/{controller}/{action=Index}/{id:int?}");
-            });
+            app.UseMvc();
             MigrateAndSeedDatabase(app);
+        }
+
+        //https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/74#issuecomment-386762178
+        private static void UseLowercaseControllerNameInSwaggerHack(SwaggerOptions c)
+        {
+            c.PreSerializeFilters.Add((document, request) =>
+            {
+                var paths = document.Paths.ToDictionary(item => item.Key.ToLowerInvariant(), item => item.Value);
+                document.Paths.Clear();
+                foreach (var pathItem in paths) document.Paths.Add(pathItem.Key, pathItem.Value);
+            });
         }
 
         private void MigrateAndSeedDatabase(IApplicationBuilder app)
