@@ -20,7 +20,9 @@ export class Layout extends React.Component<ILayoutProps, {}> {
                        </div>
                    </div>
                    <div className="row justify-content-center">
-                       <p className="mt-2 ml-1 mr-1">Contribute on <a href="https://github.com/collinbarrett/FilterLists">GitHub</a> | By <a href="https://collinmbarrett.com/">Collin M. Barrett</a></p>
+                       <p className="mt-2 ml-1 mr-1">
+                           <a href="https://filterlists.com/api/docs/">API</a> | <a href="https://github.com/collinbarrett/FilterLists">GitHub</a> | By <a href="https://collinmbarrett.com/">Collin M. Barrett</a>
+                       </p>
                    </div>
                </div>;
     };
