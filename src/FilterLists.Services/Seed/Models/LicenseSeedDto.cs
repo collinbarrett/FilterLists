@@ -1,5 +1,8 @@
-﻿namespace FilterLists.Services.Seed.Models
+﻿using JetBrains.Annotations;
+
+namespace FilterLists.Services.Seed.Models
 {
+    [UsedImplicitly]
     public class LicenseSeedDto
     {
         public int Id { get; set; }

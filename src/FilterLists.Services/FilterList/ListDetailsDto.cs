@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 
 namespace FilterLists.Services.FilterList
 {
+    [UsedImplicitly]
     public class ListDetailsDto
     {
         public int Id { get; set; }
@@ -24,40 +26,5 @@ namespace FilterLists.Services.FilterList
         public string SubmissionUrl { get; set; }
         public ListSyntaxDto Syntax { get; set; }
         public string ViewUrl { get; set; }
-    }
-
-    public class ListMaintainerDto
-    {
-        public int Id { get; set; }
-        public string EmailAddress { get; set; }
-        public string HomeUrl { get; set; }
-        public string Name { get; set; }
-        public string TwitterHandle { get; set; }
-        public IEnumerable<MaintainerAdditionalListsDto> AdditionalLists { get; set; }
-    }
-
-    public class MaintainerAdditionalListsDto
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-    }
-
-    public class ListLicenseDto
-    {
-        public string DescriptionUrl { get; set; }
-        public string Name { get; set; }
-    }
-
-    public class ListSyntaxDto
-    {
-        public string DefinitionUrl { get; set; }
-        public string Name { get; set; }
-        public IEnumerable<SyntaxSupportedSoftwareDto> SupportedSoftware { get; set; }
-    }
-
-    public class SyntaxSupportedSoftwareDto
-    {
-        public string HomeUrl { get; set; }
-        public string Name { get; set; }
     }
 }

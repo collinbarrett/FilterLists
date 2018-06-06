@@ -46,13 +46,7 @@ namespace FilterLists.Data.Seed.Extensions
         {
             //TODO: get seed properties dynamically from JSON
             return entityType.GetProperties()
-                             .Where(x =>
-                                 !new List<string>
-                                     {
-                                         "CreatedDateUtc",
-                                         "ModifiedDateUtc"
-                                     }
-                                     .Contains(x.Name))
+                             .Where(x => !new List<string> {"CreatedDateUtc", "ModifiedDateUtc"}.Contains(x.Name))
                              .ToList();
         }
 
@@ -60,8 +54,7 @@ namespace FilterLists.Data.Seed.Extensions
         {
             return GetSeedRows<TEntityType>(dataPath)
                    .Select(row => CreateRowValues(properties, row))
-                   .Aggregate("",
-                       (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
+                   .Aggregate("", (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
         }
 
         private static List<TEntityType> GetSeedRows<TEntityType>(string dataPath)
@@ -81,7 +74,7 @@ namespace FilterLists.Data.Seed.Extensions
         private static string CreateRowValues<TEntityType>(IEnumerable<IProperty> properties, TEntityType row)
         {
             return (from property in properties
-                       let value = row.GetType().GetProperty(property.Name).GetValue(row)
+                       let value = row.GetType().GetProperty(property.Name)?.GetValue(row)
                        select FormatDataForMySql(property, value)).Aggregate("",
                        (rowValues, value) => rowValues == "" ? "(" + value : rowValues + ", " + value) + ")";
         }
@@ -94,7 +87,7 @@ namespace FilterLists.Data.Seed.Extensions
             if (property.ClrType == typeof(bool))
                 return Convert.ToInt32(value);
             if (property.ClrType == typeof(DateTime?))
-                return "'" + ((DateTime)value).ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                return "'" + ((DateTime) value).ToString("yyyy-MM-dd HH:mm:ss") + "'";
             return value;
         }
 

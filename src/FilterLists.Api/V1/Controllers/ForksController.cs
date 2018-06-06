@@ -8,19 +8,12 @@ namespace FilterLists.Api.V1.Controllers
 {
     public class ForksController : BaseController
     {
-        private readonly SeedService seedService;
-
-        public ForksController(SeedService seedService)
+        public ForksController(SeedService seedService) : base(seedService)
         {
-            this.seedService = seedService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Seed()
-        {
-            return Json(await seedService.GetAllAsync<Fork, ForkSeedDto>(
-                typeof(Fork).GetProperty("UpstreamFilterListId"),
-                typeof(Fork).GetProperty("ForkFilterListId")));
-        }
+        public async Task<IActionResult> Seed() => Json(await SeedService.GetAllAsync<Fork, ForkSeedDto>(
+            typeof(Fork).GetProperty("UpstreamFilterListId"), typeof(Fork).GetProperty("ForkFilterListId")));
     }
 }

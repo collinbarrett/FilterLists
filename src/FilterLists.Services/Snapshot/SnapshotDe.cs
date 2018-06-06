@@ -5,7 +5,6 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using FilterLists.Data;
-using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Extensions;
 
@@ -13,19 +12,18 @@ namespace FilterLists.Services.Snapshot
 {
     public class SnapshotDe
     {
-        private const int BatchSize = 1000;
-
         private const string UserAgentString =
             @"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36";
 
-        private readonly FilterListsDbContext dbContext;
-        private readonly FilterListViewUrlDto list;
-        private Data.Entities.Snapshot snapshot;
+        private const int BatchSize = 1000;
+        private readonly FilterListsDbContext _dbContext;
+        private readonly FilterListViewUrlDto _list;
+        private Data.Entities.Snapshot _snapshot;
 
         public SnapshotDe(FilterListsDbContext dbContext, FilterListViewUrlDto list)
         {
-            this.dbContext = dbContext;
-            this.list = list;
+            _dbContext = dbContext;
+            _list = list;
         }
 
         public async Task SaveSnapshotAsync()
@@ -44,14 +42,14 @@ namespace FilterLists.Services.Snapshot
         {
             await AddSnapshot();
             var content = await TryGetContent();
-            await dbContext.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync();
             return content;
         }
 
         private async Task AddSnapshot()
         {
-            snapshot = new Data.Entities.Snapshot {FilterListId = list.Id};
-            await dbContext.Snapshots.AddAsync(snapshot);
+            _snapshot = new Data.Entities.Snapshot {FilterListId = _list.Id};
+            await _dbContext.Snapshots.AddAsync(_snapshot);
         }
 
         private async Task<string> TryGetContent()
@@ -62,13 +60,13 @@ namespace FilterLists.Services.Snapshot
             }
             catch (WebException we)
             {
-                snapshot.HttpStatusCode = ((int)((HttpWebResponse)we.Response).StatusCode).ToString();
+                _snapshot.HttpStatusCode = ((int) ((HttpWebResponse) we.Response).StatusCode).ToString();
                 return null;
             }
             catch (Exception)
             {
                 //TODO: log exception (#148)
-                snapshot.HttpStatusCode = null;
+                _snapshot.HttpStatusCode = null;
                 return null;
             }
         }
@@ -78,9 +76,9 @@ namespace FilterLists.Services.Snapshot
             using (var httpClient = new HttpClient())
             {
                 httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(UserAgentString);
-                using (var httpResponseMessage = await httpClient.GetAsync(list.ViewUrl))
+                using (var httpResponseMessage = await httpClient.GetAsync(_list.ViewUrl))
                 {
-                    snapshot.HttpStatusCode = ((int)httpResponseMessage.StatusCode).ToString();
+                    _snapshot.HttpStatusCode = ((int) httpResponseMessage.StatusCode).ToString();
                     if (httpResponseMessage.IsSuccessStatusCode)
                         return await httpResponseMessage.Content.ReadAsStringAsync();
                 }
@@ -107,7 +105,7 @@ namespace FilterLists.Services.Snapshot
         private IEnumerable<SnapshotBatchDe> GetSnapshotBatches(IEnumerable<string> rawRules)
         {
             return rawRules.Batch(BatchSize)
-                           .Select(rawRuleBatch => new SnapshotBatchDe(dbContext, snapshot, rawRuleBatch));
+                           .Select(rawRuleBatch => new SnapshotBatchDe(_dbContext, _snapshot, rawRuleBatch));
         }
 
         private static async Task SaveSnapshotBatches(IEnumerable<SnapshotBatchDe> snapshotBatches)
@@ -121,37 +119,36 @@ namespace FilterLists.Services.Snapshot
             var existingSnapshotRules = GetExistingSnapshotRules();
             UpdateRemovedSnapshotRules(existingSnapshotRules);
             RemoveDuplicateSnapshotRules(existingSnapshotRules);
-            await dbContext.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync();
         }
 
         private IQueryable<SnapshotRule> GetExistingSnapshotRules()
         {
-            return dbContext.SnapshotRules.Where(sr =>
-                sr.AddedBySnapshot.FilterListId == list.Id &&
-                sr.AddedBySnapshot != snapshot &&
+            return _dbContext.SnapshotRules.Where(sr =>
+                sr.AddedBySnapshot.FilterListId == _list.Id && sr.AddedBySnapshot != _snapshot &&
                 sr.RemovedBySnapshot == null);
         }
 
         private void UpdateRemovedSnapshotRules(IQueryable<SnapshotRule> existingSnapshotRules)
         {
-            var newSnapshotRules = dbContext.SnapshotRules.Where(sr => sr.AddedBySnapshot == snapshot);
+            var newSnapshotRules = _dbContext.SnapshotRules.Where(sr => sr.AddedBySnapshot == _snapshot);
             var removedSnapshotRules =
                 existingSnapshotRules.Where(sr => !newSnapshotRules.Any(nsr => nsr.Rule == sr.Rule));
-            removedSnapshotRules.ToList().ForEach(sr => sr.RemovedBySnapshot = snapshot);
+            removedSnapshotRules.ToList().ForEach(sr => sr.RemovedBySnapshot = _snapshot);
         }
 
         private void RemoveDuplicateSnapshotRules(IQueryable<SnapshotRule> existingSnapshotRules)
         {
-            var duplicateSnapshotRules = dbContext.SnapshotRules.Where(sr =>
-                sr.AddedBySnapshot == snapshot &&
+            var duplicateSnapshotRules = _dbContext.SnapshotRules.Where(sr =>
+                sr.AddedBySnapshot == _snapshot &&
                 existingSnapshotRules.Any(esr => esr.Rule == sr.Rule));
-            dbContext.SnapshotRules.RemoveRange(duplicateSnapshotRules);
+            _dbContext.SnapshotRules.RemoveRange(duplicateSnapshotRules);
         }
 
         private async Task SetCompleted()
         {
-            snapshot.IsCompleted = true;
-            await dbContext.SaveChangesAsync();
+            _snapshot.IsCompleted = true;
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

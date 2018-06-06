@@ -9,31 +9,20 @@ namespace FilterLists.Api.V1.Controllers
 {
     public class ListsController : BaseController
     {
-        private readonly FilterListService filterListService;
-        private readonly SeedService seedService;
+        private readonly FilterListService _filterListService;
 
-        public ListsController(SeedService seedService, FilterListService filterListService)
+        public ListsController(SeedService seedService, FilterListService filterListService) : base(seedService)
         {
-            this.seedService = seedService;
-            this.filterListService = filterListService;
+            _filterListService = filterListService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index()
-        {
-            return Json(await filterListService.GetAllSummariesAsync());
-        }
+        public async Task<IActionResult> Index() => Json(await _filterListService.GetAllSummariesAsync());
 
         [HttpGet]
-        public async Task<IActionResult> GetById(int id)
-        {
-            return Json(await filterListService.GetDetailsAsync(id));
-        }
+        public async Task<IActionResult> GetById(int id) => Json(await _filterListService.GetDetailsAsync(id));
 
         [HttpGet]
-        public async Task<IActionResult> Seed()
-        {
-            return Json(await seedService.GetAllAsync<FilterList, FilterListSeedDto>());
-        }
+        public async Task<IActionResult> Seed() => Json(await SeedService.GetAllAsync<FilterList, FilterListSeedDto>());
     }
 }

@@ -1,5 +1,8 @@
 ﻿using AutoMapper;
 using FilterLists.Data;
+using FilterLists.Services.FilterList;
+using FilterLists.Services.Seed;
+using FilterLists.Services.Snapshot;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,9 +20,9 @@ namespace FilterLists.Services.DependencyInjection.Extensions
                         options.UseMySql(configuration.GetConnectionString("FilterListsConnection"),
                                    b => b.MigrationsAssembly("FilterLists.Api"))
                                .EnableSensitiveDataLogging());
-            services.TryAddScoped<FilterList.FilterListService>();
-            services.TryAddScoped<Seed.SeedService>();
-            services.TryAddScoped<Snapshot.SnapshotService>();
+            services.TryAddScoped<FilterListService>();
+            services.TryAddScoped<SeedService>();
+            services.TryAddScoped<SnapshotService>();
             services.AddAutoMapper();
         }
     }

@@ -8,19 +8,14 @@ namespace FilterLists.Api.V1.Controllers
 {
     public class ListsLanguagesController : BaseController
     {
-        private readonly SeedService seedService;
-
-        public ListsLanguagesController(SeedService seedService)
+        public ListsLanguagesController(SeedService seedService) : base(seedService)
         {
-            this.seedService = seedService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Seed()
-        {
-            return Json(await seedService.GetAllAsync<FilterListLanguage, FilterListLanguageSeedDto>(
+        public async Task<IActionResult> Seed() =>
+            Json(await SeedService.GetAllAsync<FilterListLanguage, FilterListLanguageSeedDto>(
                 typeof(FilterListLanguage).GetProperty("FilterListId"),
                 typeof(FilterListLanguage).GetProperty("LanguageId")));
-        }
     }
 }

@@ -9,10 +9,10 @@ namespace FilterLists.Services.FilterList
             this Task<ListDetailsDto> listDetailsDtos)
         {
             foreach (var maintainer in listDetailsDtos.Result.Maintainers)
-                maintainer.AdditionalLists = maintainer.AdditionalLists
-                                                       .Where(additionalList =>
-                                                           additionalList.Id != listDetailsDtos.Result.Id)
-                                                       .ToList();
+                maintainer.AdditionalLists = maintainer
+                                             .AdditionalLists.Where(additionalList =>
+                                                 additionalList.Id != listDetailsDtos.Result.Id)
+                                             .ToList();
             return await listDetailsDtos;
         }
     }

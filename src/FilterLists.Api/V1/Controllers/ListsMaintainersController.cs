@@ -8,19 +8,14 @@ namespace FilterLists.Api.V1.Controllers
 {
     public class ListsMaintainersController : BaseController
     {
-        private readonly SeedService seedService;
-
-        public ListsMaintainersController(SeedService seedService)
+        public ListsMaintainersController(SeedService seedService) : base(seedService)
         {
-            this.seedService = seedService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Seed()
-        {
-            return Json(await seedService.GetAllAsync<FilterListMaintainer, FilterListMaintainerSeedDto>(
+        public async Task<IActionResult> Seed() => Json(
+            await SeedService.GetAllAsync<FilterListMaintainer, FilterListMaintainerSeedDto>(
                 typeof(FilterListMaintainer).GetProperty("MaintainerId"),
                 typeof(FilterListMaintainer).GetProperty("FilterListId")));
-        }
     }
 }

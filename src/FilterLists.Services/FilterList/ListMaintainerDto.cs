@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
-using FilterLists.Data.Entities.Junctions;
 using JetBrains.Annotations;
 
-namespace FilterLists.Data.Entities
+namespace FilterLists.Services.FilterList
 {
     [UsedImplicitly]
-    public class Maintainer : BaseEntity
+    public class ListMaintainerDto
     {
+        public int Id { get; set; }
         public string EmailAddress { get; set; }
-        public ICollection<FilterListMaintainer> FilterListMaintainers { get; set; }
         public string HomeUrl { get; set; }
         public string Name { get; set; }
         public string TwitterHandle { get; set; }
+        public IEnumerable<MaintainerAdditionalListsDto> AdditionalLists { get; set; }
     }
 }

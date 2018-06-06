@@ -8,17 +8,11 @@ namespace FilterLists.Api.V1.Controllers
 {
     public class SyntaxesController : BaseController
     {
-        private readonly SeedService seedService;
-
-        public SyntaxesController(SeedService seedService)
+        public SyntaxesController(SeedService seedService) : base(seedService)
         {
-            this.seedService = seedService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Seed()
-        {
-            return Json(await seedService.GetAllAsync<Syntax, SyntaxSeedDto>());
-        }
+        public async Task<IActionResult> Seed() => Json(await SeedService.GetAllAsync<Syntax, SyntaxSeedDto>());
     }
 }

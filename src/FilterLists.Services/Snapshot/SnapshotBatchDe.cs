@@ -10,42 +10,43 @@ namespace FilterLists.Services.Snapshot
 {
     public class SnapshotBatchDe
     {
-        private readonly FilterListsDbContext dbContext;
-        private readonly IEnumerable<string> rawRules;
-        private readonly Data.Entities.Snapshot snapshot;
-        private IQueryable<Rule> rules;
+        private readonly FilterListsDbContext _dbContext;
+        private readonly IEnumerable<string> _rawRules;
+        private readonly Data.Entities.Snapshot _snapshot;
+        private IQueryable<Rule> _rules;
 
-        public SnapshotBatchDe(FilterListsDbContext dbContext, Data.Entities.Snapshot snapshot, IEnumerable<string> rawRules)
+        public SnapshotBatchDe(FilterListsDbContext dbContext, Data.Entities.Snapshot snapshot,
+            IEnumerable<string> rawRules)
         {
-            this.dbContext = dbContext;
-            this.snapshot = snapshot;
-            this.rawRules = rawRules;
+            _dbContext = dbContext;
+            _snapshot = snapshot;
+            _rawRules = rawRules;
         }
 
         public async Task SaveSnapshotBatchAsync()
         {
             AddRules();
             AddSnapshotRules();
-            await dbContext.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync();
         }
 
         private void AddRules()
         {
-            var existingRules = dbContext.Rules.Where(rule => rawRules.Contains(rule.Raw));
-            var newRawRules = rawRules.Except(existingRules.Select(r => r.Raw));
+            var existingRules = _dbContext.Rules.Where(rule => _rawRules.Contains(rule.Raw));
+            var newRawRules = _rawRules.Except(existingRules.Select(r => r.Raw));
             var newRules = newRawRules.Select(newRawRule => new Rule {Raw = newRawRule}).ToList();
-            dbContext.Rules.AddRange(newRules);
-            rules = existingRules.Concat(newRules);
+            _dbContext.Rules.AddRange(newRules);
+            _rules = existingRules.Concat(newRules);
         }
 
         private void AddSnapshotRules()
         {
             var snapshotRules = new List<SnapshotRule>();
-            foreach (var rule in rules)
+            foreach (var rule in _rules)
                 snapshotRules.Add(new SnapshotRule {Rule = rule});
-            if (snapshot.AddedSnapshotRules == null)
-                snapshot.AddedSnapshotRules = new List<SnapshotRule>();
-            snapshot.AddedSnapshotRules.AddRange(snapshotRules);
+            if (_snapshot.AddedSnapshotRules == null)
+                _snapshot.AddedSnapshotRules = new List<SnapshotRule>();
+            _snapshot.AddedSnapshotRules.AddRange(snapshotRules);
         }
     }
 }
