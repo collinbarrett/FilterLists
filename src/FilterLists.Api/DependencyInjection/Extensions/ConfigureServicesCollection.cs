@@ -27,10 +27,14 @@ namespace FilterLists.Api.DependencyInjection.Extensions
                         Version = "v1",
                         Description =
                             "FilterLists is the independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances.",
-                        Contact = new Contact {Url = "https://github.com/collinbarrett/FilterLists/issues"},
+                        Contact = new Contact
+                        {
+                            Url = "https://github.com/collinbarrett/FilterLists/",
+                            Name = "FilterLists - GitHub"
+                        },
                         License = new License
                         {
-                            Name = "Use under MIT License",
+                            Name = "MIT License",
                             Url = "https://github.com/collinbarrett/FilterLists/blob/master/LICENSE"
                         }
                     });
