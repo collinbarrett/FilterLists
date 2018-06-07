@@ -58,10 +58,15 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
 
     private static renderTagline(state: IHomeState) {
         return <p className="ml-2 mr-2">
-                   The independent, comprehensive directory of <strong>{state.ruleCount
+                   The independent, comprehensive directory of <strong>{this.insertCommasInNumber(state.ruleCount)
                    }</strong> unique rules across <strong>{state.lists.length
                    }</strong> filter and host lists for advertisements, trackers, malware, and annoyances.
                </p>;
+    }
+
+    //https://stackoverflow.com/a/2901298/2343739
+    private static insertCommasInNumber(num: number) {
+        return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
     private static renderFilterListsTable(filterLists: IListDto[]) {
