@@ -29,7 +29,7 @@ namespace FilterLists.Api.DependencyInjection.Extensions
                         Description =
                             "A REST-ish API for FilterLists, the independent, comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances." +
                             Environment.NewLine +
-                            " - {version} has to be specified manually in Swagger playground below due to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/370",
+                            " - {version} has to be specified manually (to \"1\") in Swagger playground below due to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/370",
                         Contact = new Contact
                         {
                             Url = "https://github.com/collinbarrett/FilterLists/",
