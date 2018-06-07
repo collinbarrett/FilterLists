@@ -61,7 +61,7 @@ namespace FilterLists.Api
             app.UseSwagger(UseLowercaseControllerNameInSwaggerHack);
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "FilterLists API V1");
+                c.SwaggerEndpoint("/../swagger/v1/swagger.json", "FilterLists API V1");
                 c.RoutePrefix = "docs";
                 c.DocumentTitle = "FilterLists API";
             });
