@@ -61,6 +61,7 @@ namespace FilterLists.Api
             app.UseSwagger(c =>
             {
                 c.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.Host = httpReq.Host.Value);
+                //TODO: remove preprocessor directives
 #if RELEASE
                 c.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.BasePath = "/api");
 #endif
@@ -76,7 +77,7 @@ namespace FilterLists.Api
             MigrateAndSeedDatabase(app);
         }
 
-        //https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/74#issuecomment-386762178
+        //TODO: remove hack (https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/74#issuecomment-386762178)
         private static void UseLowercaseControllerNameInSwaggerHack(SwaggerOptions c)
         {
             c.PreSerializeFilters.Add((document, request) =>
