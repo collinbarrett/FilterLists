@@ -26,7 +26,7 @@ namespace FilterLists.Api.DependencyInjection.Extensions
                         Title = "FilterLists API",
                         Version = "v1",
                         Description =
-                            "FilterLists is the independent and comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances.",
+                            "A REST-ish API for FilterLists, the independent, comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances.",
                         Contact = new Contact
                         {
                             Url = "https://github.com/collinbarrett/FilterLists/",
