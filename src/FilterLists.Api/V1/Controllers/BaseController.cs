@@ -10,6 +10,10 @@ namespace FilterLists.Api.V1.Controllers
     {
         protected readonly SeedService SeedService;
 
+        public BaseController()
+        {
+        }
+
         protected BaseController(SeedService seedService)
         {
             SeedService = seedService;

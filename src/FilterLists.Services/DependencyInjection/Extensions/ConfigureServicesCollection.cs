@@ -20,9 +20,10 @@ namespace FilterLists.Services.DependencyInjection.Extensions
                         options.UseMySql(configuration.GetConnectionString("FilterListsConnection"),
                                    b => b.MigrationsAssembly("FilterLists.Api"))
                                .EnableSensitiveDataLogging());
-            services.TryAddScoped<FilterListService>();
-            services.TryAddScoped<SeedService>();
             services.TryAddScoped<SnapshotService>();
+            services.TryAddScoped<FilterListService>();
+            services.TryAddScoped<RuleService>();
+            services.TryAddScoped<SeedService>();
             services.AddAutoMapper();
         }
     }
