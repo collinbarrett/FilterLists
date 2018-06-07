@@ -9,29 +9,27 @@ using Microsoft.EntityFrameworkCore;
 namespace FilterLists.Services.FilterList
 {
     [UsedImplicitly]
-    public class FilterListService
+    public class FilterListService : Service
     {
-        private readonly FilterListsDbContext _filterListsDbContext;
-
-        public FilterListService(FilterListsDbContext filterListsDbContext)
+        public FilterListService(FilterListsDbContext dbContext) : base(dbContext)
         {
-            _filterListsDbContext = filterListsDbContext;
+            DbContext = dbContext;
         }
 
         public async Task<IEnumerable<ListSummaryDto>> GetAllSummariesAsync()
         {
-            return await _filterListsDbContext.FilterLists.AsNoTracking()
-                                              .OrderBy(x => x.Name)
-                                              .ProjectTo<ListSummaryDto>()
-                                              .ToListAsync();
+            return await DbContext.FilterLists.AsNoTracking()
+                                  .OrderBy(x => x.Name)
+                                  .ProjectTo<ListSummaryDto>()
+                                  .ToListAsync();
         }
 
         public async Task<ListDetailsDto> GetDetailsAsync(int id)
         {
-            return await _filterListsDbContext.FilterLists.AsNoTracking()
-                                              .ProjectTo<ListDetailsDto>()
-                                              .FirstAsync(x => x.Id == id)
-                                              .FilterParentListFromMaintainerAdditionalLists();
+            return await DbContext.FilterLists.AsNoTracking()
+                                  .ProjectTo<ListDetailsDto>()
+                                  .FirstAsync(x => x.Id == id)
+                                  .FilterParentListFromMaintainerAdditionalLists();
         }
     }
 }

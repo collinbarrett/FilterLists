@@ -10,37 +10,35 @@ using Microsoft.EntityFrameworkCore;
 namespace FilterLists.Services.Seed
 {
     [UsedImplicitly]
-    public class SeedService
+    public class SeedService : Service
     {
-        private readonly FilterListsDbContext _filterListsDbContext;
-
-        public SeedService(FilterListsDbContext filterListsDbContext)
+        public SeedService(FilterListsDbContext dbContext) : base(dbContext)
         {
-            _filterListsDbContext = filterListsDbContext;
+            DbContext = dbContext;
         }
 
         public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>() where TEntity : class =>
-            await _filterListsDbContext.Set<TEntity>().AsNoTracking().ProjectTo<TSeedDto>().ToArrayAsync();
+            await DbContext.Set<TEntity>().AsNoTracking().ProjectTo<TSeedDto>().ToArrayAsync();
 
         public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>(PropertyInfo primarySort)
             where TEntity : class
         {
-            return await _filterListsDbContext.Set<TEntity>()
-                                              .OrderBy(x => primarySort.GetValue(x, null))
-                                              .AsNoTracking()
-                                              .ProjectTo<TSeedDto>()
-                                              .ToArrayAsync();
+            return await DbContext.Set<TEntity>()
+                                  .OrderBy(x => primarySort.GetValue(x, null))
+                                  .AsNoTracking()
+                                  .ProjectTo<TSeedDto>()
+                                  .ToArrayAsync();
         }
 
         public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>(PropertyInfo primarySort,
             PropertyInfo secondarySort) where TEntity : class
         {
-            return await _filterListsDbContext.Set<TEntity>()
-                                              .OrderBy(x => primarySort.GetValue(x, null))
-                                              .ThenBy(x => secondarySort.GetValue(x, null))
-                                              .AsNoTracking()
-                                              .ProjectTo<TSeedDto>()
-                                              .ToArrayAsync();
+            return await DbContext.Set<TEntity>()
+                                  .OrderBy(x => primarySort.GetValue(x, null))
+                                  .ThenBy(x => secondarySort.GetValue(x, null))
+                                  .AsNoTracking()
+                                  .ProjectTo<TSeedDto>()
+                                  .ToArrayAsync();
         }
     }
 }
