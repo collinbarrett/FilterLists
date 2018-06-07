@@ -7,11 +7,11 @@
 FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.
 
 ## Links
-| Site                                                | API                                                    |
-| --------------------------------------------------- | ------------------------------------------------------ |
-| [v3 (Live, Beta)](https://filterlists.com/)         | [v1 (Live, Beta)](https://filterlists.com/api/docs/)   |
-| [v2 (Legacy, Frozen)](https://v2.filterlists.com/)  |                                                        |
-| [v1 (Legacy, Frozen)](https://v1.filterlists.com/)  |                                                        |
+| Site                                                | API                                                            |
+| --------------------------------------------------- | -------------------------------------------------------------- |
+| [v3 (Live, Beta)](https://filterlists.com/)         | [v1 (Live, Beta)](https://filterlists.com/api/docs/index.html) |
+| [v2 (Legacy, Frozen)](https://v2.filterlists.com/)  |                                                                |
+| [v1 (Legacy, Frozen)](https://v1.filterlists.com/)  |                                                                |
 
 ## Adding or Updating Lists
 
