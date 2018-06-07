@@ -61,7 +61,7 @@ namespace FilterLists.Api
             app.UseSwagger(c =>
             {
                 c.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.Host = httpReq.Host.Value);
-                c.RouteTemplate = "docs/{documentName}/swagger.json";
+                c.RouteTemplate = "/docs/{documentName}/swagger.json";
                 UseLowercaseControllerNameInSwaggerHack(c);
             });
             app.UseSwaggerUI(c =>
