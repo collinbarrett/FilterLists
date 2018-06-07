@@ -11,7 +11,6 @@ namespace FilterLists.Api.DependencyInjection.Extensions
         public static void AddFilterListsApi(this IServiceCollection services)
         {
             services.AddRouting(options => options.LowercaseUrls = true);
-            services.AddMvcCore();
             services.AddApiVersioning();
             services.AddSwaggerGenCustom();
             TelemetryDebugWriter.IsTracingDisabled = true;

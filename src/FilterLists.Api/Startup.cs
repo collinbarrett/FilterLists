@@ -40,25 +40,14 @@ namespace FilterLists.Api
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseSwagger(UseLowercaseControllerNameInSwaggerHack);
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwaggerUI(c =>
-                {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "FilterLists API V1");
-                    c.RoutePrefix = "docs";
-                });
             }
             else
             {
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
-                app.UseSwaggerUI(c =>
-                {
-                    c.SwaggerEndpoint("/api/swagger/v1/swagger.json", "FilterLists API V1");
-                    c.RoutePrefix = "docs";
-                });
             }
 
             app.UseForwardedHeaders(new ForwardedHeadersOptions
@@ -69,6 +58,13 @@ namespace FilterLists.Api
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseMvc();
+            app.UseSwagger(UseLowercaseControllerNameInSwaggerHack);
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "FilterLists API V1");
+                c.RoutePrefix = "docs";
+                c.DocumentTitle = "FilterLists API";
+            });
             MigrateAndSeedDatabase(app);
         }
 
