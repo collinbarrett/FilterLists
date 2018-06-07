@@ -64,12 +64,12 @@ namespace FilterLists.Api
 #if RELEASE
                 c.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.BasePath = "/api");
 #endif
-                c.RouteTemplate = "/docs/{documentName}/swagger.json";
+                c.RouteTemplate = "docs/{documentName}/swagger.json";
                 UseLowercaseControllerNameInSwaggerHack(c);
             });
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/docs/v1/swagger.json", "FilterLists API v1");
+                c.SwaggerEndpoint("v1/swagger.json", "FilterLists API v1");
                 c.DocumentTitle = "FilterLists API v1";
                 c.RoutePrefix = "docs";
             });
