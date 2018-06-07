@@ -9,7 +9,7 @@ FilterLists is the independent, comprehensive directory of filter and host lists
 ## Links
 | Site                                                | API                                                    |
 | --------------------------------------------------- | ------------------------------------------------------ |
-| [v3 (Live, Beta)](https://filterlists.com/)         | [v1 (Live, Beta)](https://filterlists.com/api/swagger/)|
+| [v3 (Live, Beta)](https://filterlists.com/)         | [v1 (Live, Beta)](https://filterlists.com/api/docs/)   |
 | [v2 (Legacy, Frozen)](https://v2.filterlists.com/)  |                                                        |
 | [v1 (Legacy, Frozen)](https://v1.filterlists.com/)  |                                                        |
 
