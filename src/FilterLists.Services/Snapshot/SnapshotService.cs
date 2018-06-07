@@ -10,15 +10,14 @@ using Microsoft.EntityFrameworkCore;
 namespace FilterLists.Services.Snapshot
 {
     [UsedImplicitly]
-    public class SnapshotService
+    public class SnapshotService : Service
     {
         //TODO: update algorithm to support non-standard list sizes and formats (#200, #201)
         private readonly List<int> _ignoreLists = new List<int> {48, 149, 173, 185, 186, 187, 188, 189, 352};
-        private readonly FilterListsDbContext dbContext;
 
-        public SnapshotService(FilterListsDbContext dbContext)
+        public SnapshotService(FilterListsDbContext dbContext) : base(dbContext)
         {
-            this.dbContext = dbContext;
+            DbContext = dbContext;
         }
 
         public async Task CaptureAsync(int batchSize)
@@ -31,14 +30,14 @@ namespace FilterLists.Services.Snapshot
 
         private void RollbackIncompletedSnapshots()
         {
-            var incompleteSnapshots = dbContext.Snapshots.Where(ss => ss.IsCompleted == false);
-            dbContext.Snapshots.RemoveRange(incompleteSnapshots);
+            var incompleteSnapshots = DbContext.Snapshots.Where(ss => ss.IsCompleted == false);
+            DbContext.Snapshots.RemoveRange(incompleteSnapshots);
             //TODO: don't assume that SnapshotDe.DedupSnapshotRules() didn't partially complete
         }
 
         private async Task<IEnumerable<FilterListViewUrlDto>> GetListsToCapture(int batchSize)
         {
-            return await dbContext
+            return await DbContext
                          .FilterLists
                          .Where(list =>
                              (!list.Snapshots.Any() ||
@@ -58,7 +57,7 @@ namespace FilterLists.Services.Snapshot
 
         private IEnumerable<SnapshotDe> GetSnapshots(IEnumerable<FilterListViewUrlDto> lists)
         {
-            return lists.Select(list => new SnapshotDe(dbContext, list));
+            return lists.Select(list => new SnapshotDe(DbContext, list));
         }
 
         private static async Task SaveSnapshots(IEnumerable<SnapshotDe> snapshots)
