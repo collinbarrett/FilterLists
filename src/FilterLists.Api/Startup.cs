@@ -61,11 +61,7 @@ namespace FilterLists.Api
             app.UseSwagger(UseLowercaseControllerNameInSwaggerHack);
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint(
-                    env.IsDevelopment()
-                        ? "/../swagger/v1/swagger.json"
-                        : "https://filterlists.com/api/swagger/v1/swagger.json", "FilterLists API V1");
-                c.RoutePrefix = "docs";
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "FilterLists API V1");
                 c.DocumentTitle = "FilterLists API";
             });
             MigrateAndSeedDatabase(app);
