@@ -57,11 +57,7 @@ namespace FilterLists.Api
             app.UseSwagger(UseLowercaseControllerNameInSwaggerHack);
             app.UseSwaggerUI(c =>
             {
-#if DEBUG
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "FilterLists API V1");
-#else
-                c.SwaggerEndpoint("/api/swagger/v1/swagger.json", "FilterLists API V1");
-#endif
                 c.RoutePrefix = "docs";
             });
             app.UseHttpsRedirection();

@@ -4,12 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace FilterLists.Api.V1.Controllers
 {
     [ApiVersion("1.0")]
-#if DEBUG
     //https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/370
     [Route("v{version:apiVersion}/[controller]")]
-#else
-    [Route("api/v{version:apiVersion}/[controller]")]
-#endif
     public class BaseController : Controller
     {
         protected readonly SeedService SeedService;
