@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using Microsoft.ApplicationInsights.Extensibility.Implementation;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
@@ -26,7 +27,9 @@ namespace FilterLists.Api.DependencyInjection.Extensions
                         Title = "FilterLists API",
                         Version = "v1",
                         Description =
-                            "A REST-ish API for FilterLists, the independent, comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances.",
+                            "A REST-ish API for FilterLists, the independent, comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances." +
+                            Environment.NewLine +
+                            " - {version} has to be specified manually in Swagger playground below due to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/370",
                         Contact = new Contact
                         {
                             Url = "https://github.com/collinbarrett/FilterLists/",
