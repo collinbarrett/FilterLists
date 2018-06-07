@@ -14,6 +14,6 @@ namespace FilterLists.Api.V1.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index() => Json(await _ruleService.GetCountAllActiveRules());
+        public async Task<IActionResult> Index() => Json(new {Count = await _ruleService.GetCountAllActiveRules()});
     }
 }

@@ -7,9 +7,7 @@ import ListDetails from "./ListDetails";
 
 interface IFilterListsState {
     filterLists: IFilterListSummaryDto[];
-    loadingLists: boolean;
-    ruleCount: number;
-    loadingRuleCount: boolean;
+    loading: boolean;
 }
 
 export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsState> {
@@ -17,19 +15,17 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
         super(props);
         this.state = {
             filterLists: [],
-            loadingLists: true,
-            ruleCount: 0,
-            loadingRuleCount: true
+            loading: true
         };
     }
 
     render() {
-        const contents = this.state.loadingLists || this.state.loadingRuleCount
+        const contents = this.state.loading
             ? <p>
                   <em>Loading...</em>
               </p>
             : <div>
-                  {Home.renderTagline(this.state.filterLists, this.state.ruleCount)}
+                  {Home.renderTagline(this.state.filterLists)}
                   {Home.renderFilterListsTable(this.state.filterLists)}
               </div>;
         return <div>
@@ -43,24 +39,14 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
             .then(data => {
                 this.setState({
                     filterLists: data,
-                    loadingLists: false
-                });
-            });
-        fetch("https://filterlists.com/api/v1/rules")
-            .then(response => response.json() as Promise<number>)
-            .then(data => {
-                this.setState({
-                    ruleCount: data,
-                    loadingRuleCount: false
+                    loading: false
                 });
             });
     }
 
-    private static renderTagline(filterLists: IFilterListSummaryDto[], ruleCount: number) {
+    private static renderTagline(filterLists: IFilterListSummaryDto[]) {
         return <p className="ml-2 mr-2">
-                   The independent, comprehensive directory of <strong>{filterLists.length
-                   }</strong> filter and host lists containing <strong>{ruleCount
-                   }</strong> unique rules for advertisements, trackers, malware, and annoyances.
+                   The independent, comprehensive directory of <strong>{filterLists.length}</strong> filter and host lists for advertisements, trackers, malware, and annoyances.
                </p>;
     }
 
