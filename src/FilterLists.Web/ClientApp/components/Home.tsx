@@ -29,7 +29,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                   <em>Loading...</em>
               </p>
             : <div>
-                  {Home.renderTagline(this.state.lists, this.state.ruleCount)}
+                  {Home.renderTagline(this.state)}
                   {Home.renderFilterListsTable(this.state.lists)}
               </div>;
         return <div>
@@ -56,9 +56,11 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
             });
     }
 
-    private static renderTagline(filterLists: IListDto[], ruleCount: number) {
+    private static renderTagline(state: IHomeState) {
         return <p className="ml-2 mr-2">
-                   The independent, comprehensive directory of <strong>{ruleCount}</strong> unique rules across <strong>{filterLists.length}</strong> filter and host lists for advertisements, trackers, malware, and annoyances.
+                   The independent, comprehensive directory of <strong>{state.ruleCount
+                   }</strong> unique rules across <strong>{state.lists.length
+                   }</strong> filter and host lists for advertisements, trackers, malware, and annoyances.
                </p>;
     }
 
