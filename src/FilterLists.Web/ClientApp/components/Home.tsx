@@ -5,28 +5,32 @@ import ReactTable from "react-table"
 import "react-table/react-table.css"
 import ListDetails from "./ListDetails";
 
-interface IFilterListsState {
-    filterLists: IFilterListSummaryDto[];
-    loading: boolean;
+interface IHomeState {
+    lists: IListDto[];
+    loadingLists: boolean;
+    ruleCount: number;
+    loadingRuleCount: boolean;
 }
 
-export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsState> {
+export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
     constructor(props: any) {
         super(props);
         this.state = {
-            filterLists: [],
-            loading: true
+            lists: [],
+            loadingLists: true,
+            ruleCount: 0,
+            loadingRuleCount: true
         };
     }
 
     render() {
-        const contents = this.state.loading
+        const contents = this.state.loadingLists || this.state.loadingRuleCount
             ? <p>
                   <em>Loading...</em>
               </p>
             : <div>
-                  {Home.renderTagline(this.state.filterLists)}
-                  {Home.renderFilterListsTable(this.state.filterLists)}
+                  {Home.renderTagline(this.state.lists, this.state.ruleCount)}
+                  {Home.renderFilterListsTable(this.state.lists)}
               </div>;
         return <div>
                    {contents}
@@ -35,22 +39,30 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
 
     componentDidMount() {
         fetch("https://filterlists.com/api/v1/lists")
-            .then(response => response.json() as Promise<IFilterListSummaryDto[]>)
+            .then(response => response.json() as Promise<IListDto[]>)
             .then(data => {
                 this.setState({
-                    filterLists: data,
-                    loading: false
+                    lists: data,
+                    loadingLists: false
+                });
+            });
+        fetch("https://filterlists.com/api/v1/rules")
+            .then(response => response.json() as Promise<number>)
+            .then(data => {
+                this.setState({
+                    ruleCount: data,
+                    loadingRuleCount: false
                 });
             });
     }
 
-    private static renderTagline(filterLists: IFilterListSummaryDto[]) {
+    private static renderTagline(filterLists: IListDto[], ruleCount: number) {
         return <p className="ml-2 mr-2">
-                   The independent, comprehensive directory of <strong>{filterLists.length}</strong> filter and host lists for advertisements, trackers, malware, and annoyances.
+                   The independent, comprehensive directory of <strong>{ruleCount}</strong> unique rules across <strong>{filterLists.length}</strong> filter and host lists for advertisements, trackers, malware, and annoyances.
                </p>;
     }
 
-    private static renderFilterListsTable(filterLists: IFilterListSummaryDto[]) {
+    private static renderFilterListsTable(filterLists: IListDto[]) {
         return <ReactTable
                    data={filterLists}
                    defaultSorted={[{ id: "name" }]}
@@ -118,7 +130,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IFilterListsS
     }
 }
 
-interface IFilterListSummaryDto {
+interface IListDto {
     id: number;
     name: string;
     languages: IListLanguageDto[];
