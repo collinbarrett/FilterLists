@@ -58,17 +58,16 @@ namespace FilterLists.Api
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseMvc();
-            app.UseSwagger(
-                c =>
-                {
-                    c.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.Host = httpReq.Host.Value);
-                    UseLowercaseControllerNameInSwaggerHack(c);
-                });
-
+            app.UseSwagger(c =>
+            {
+                c.RouteTemplate = "docs/{documentName}/swagger.json";
+                c.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.Host = httpReq.Host.Value);
+                UseLowercaseControllerNameInSwaggerHack(c);
+            });
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "FilterLists API V1");
-                c.DocumentTitle = "FilterLists API";
+                c.SwaggerEndpoint("/docs/v1/swagger.json", "FilterLists API v1");
+                c.DocumentTitle = "FilterLists API v1";
                 c.RoutePrefix = "docs";
             });
             MigrateAndSeedDatabase(app);
