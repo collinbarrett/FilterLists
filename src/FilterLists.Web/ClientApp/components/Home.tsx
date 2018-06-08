@@ -94,15 +94,28 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            className: "d-none d-sm-block"
                        },
                        {
-                           Header: "Added",
-                           accessor: "createdDateUtc",
+                           Header: "Updated",
+                           accessor: "updatedDate",
                            filterable: true,
                            filterMethod: (filter: any, row: any) => row[filter.id].toUpperCase()
                                .includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a > b ? 1 : -1,
                            Cell: (cell: any) => <div>{moment(cell.value).format("M-D-YY")}</div>,
                            style: { whiteSpace: "inherit" },
-                           width: 70,
+                           width: 75,
+                           headerClassName: "d-none d-sm-block",
+                           className: "d-none d-sm-block"
+                       },
+                       {
+                           Header: "Added",
+                           accessor: "addedDate",
+                           filterable: true,
+                           filterMethod: (filter: any, row: any) => row[filter.id].toUpperCase()
+                               .includes(filter.value.toUpperCase()),
+                           sortMethod: (a: any, b: any) => a > b ? 1 : -1,
+                           Cell: (cell: any) => <div>{moment(cell.value).format("M-D-YY")}</div>,
+                           style: { whiteSpace: "inherit" },
+                           width: 75,
                            headerClassName: "d-none d-sm-block",
                            className: "d-none d-sm-block"
                        },
@@ -148,9 +161,10 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
 
 interface IListDto {
     id: number;
-    createdDateUtc: string;
+    addedDate: string;
     name: string;
     languages: IListLanguageDto[];
+    updatedDate: string;
     viewUrl: string;
 }
 
