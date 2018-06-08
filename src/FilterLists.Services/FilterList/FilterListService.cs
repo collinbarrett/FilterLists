@@ -25,14 +25,14 @@ namespace FilterLists.Services.FilterList
                 (summary, snap) =>
                 {
                     snap = snap as Data.Entities.Snapshot[] ?? snap.ToArray();
-                    var crawledDate = snap.Any() ? snap.Single().CreatedDateUtc : (DateTime?) null;
+                    var updatedDate = snap.Any() ? snap.Single().CreatedDateUtc : (DateTime?) null;
                     return new ListSummaryDto
                     {
                         Id = summary.Id,
                         AddedDate = summary.AddedDate,
-                        CrawledDate = crawledDate,
                         Languages = summary.Languages,
                         Name = summary.Name,
+                        UpdatedDate = updatedDate,
                         ViewUrl = summary.ViewUrl
                     };
                 });
@@ -64,7 +64,7 @@ namespace FilterLists.Services.FilterList
                                          .FirstAsync(x => x.Id == id)
                                          .FilterParentListFromMaintainerAdditionalLists();
             details.RuleCount = await GetActiveRuleCount(details);
-            details.CrawledDate = await GetCrawledDate(details);
+            details.UpdatedDate = await GetUpdatedDate(details);
             return details;
         }
 
@@ -76,7 +76,7 @@ namespace FilterLists.Services.FilterList
                    await listSnapshots.SelectMany(sr => sr.RemovedSnapshotRules).CountAsync();
         }
 
-        private async Task<DateTime?> GetCrawledDate(ListDetailsDto details)
+        private async Task<DateTime?> GetUpdatedDate(ListDetailsDto details)
         {
             var snapshotDates = DbContext.Snapshots.AsNoTracking()
                                          .Where(s => s.FilterListId == details.Id &&

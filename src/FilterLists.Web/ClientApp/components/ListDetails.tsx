@@ -56,7 +56,7 @@ function ListInfo(props: any) {
                    <Languages languages={props.details.languages}/>
                    <RuleCount count={props.details.ruleCount}/>
                    <DiscontinuedDate date={props.details.discontinuedDate}/>
-                   <CrawledDate date={props.details.crawledDate}/>
+                   <UpdatedDate date={props.details.updatedDate}/>
                    <AddedDate date={props.details.addedDate}/>
                    <PublishedDate date={props.details.publishedDate}/>
                    <License license={props.details.license}/>
@@ -120,10 +120,10 @@ function DiscontinuedDate(props: any) {
         : null;
 }
 
-function CrawledDate(props: any) {
+function UpdatedDate(props: any) {
     return props.date
         ? <li className="list-group-item">
-              <p>Last Crawled: {moment(props.date).format("MMM D, Y")}</p>
+              <p>Last Updated by Maintainer: {moment(props.date).format("MMM D, Y")}</p>
           </li>
         : null;
 }
@@ -312,7 +312,6 @@ function MaintainerUrls(props: any) {
 interface IFilterListDetailsDto {
     addedDate: string;
     chatUrl: string;
-    crawledDate: string;
     description: string;
     descriptionSourceUrl: string;
     discontinuedDate: string;
@@ -329,6 +328,7 @@ interface IFilterListDetailsDto {
     ruleCount: number;
     submissionUrl: string;
     syntax: IListSyntaxDto[];
+    updatedDate: string;
     viewUrl: string;
 }
 
