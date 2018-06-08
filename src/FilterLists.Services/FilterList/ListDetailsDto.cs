@@ -10,7 +10,6 @@ namespace FilterLists.Services.FilterList
         public int Id { get; set; }
         public DateTime AddedDate { get; set; }
         public string ChatUrl { get; set; }
-        public DateTime? CrawledDate { get; set; }
         public string Description { get; set; }
         public string DescriptionSourceUrl { get; set; }
         public DateTime? DiscontinuedDate { get; set; }
@@ -28,6 +27,7 @@ namespace FilterLists.Services.FilterList
         public int RuleCount { get; set; }
         public string SubmissionUrl { get; set; }
         public ListSyntaxDto Syntax { get; set; }
+        public DateTime? UpdatedDate { get; set; }
         public string ViewUrl { get; set; }
     }
 }
