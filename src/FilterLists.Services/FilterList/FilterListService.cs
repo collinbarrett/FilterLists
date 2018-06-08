@@ -26,10 +26,24 @@ namespace FilterLists.Services.FilterList
 
         public async Task<ListDetailsDto> GetDetailsAsync(int id)
         {
-            return await DbContext.FilterLists.AsNoTracking()
-                                  .ProjectTo<ListDetailsDto>()
-                                  .FirstAsync(x => x.Id == id)
-                                  .FilterParentListFromMaintainerAdditionalLists();
+            var details = await DbContext.FilterLists.AsNoTracking()
+                                         .ProjectTo<ListDetailsDto>()
+                                         .FirstAsync(x => x.Id == id)
+                                         .FilterParentListFromMaintainerAdditionalLists();
+            details.RuleCount = await GetActiveRuleCount(details);
+            return details;
+        }
+
+        private async Task<int> GetActiveRuleCount(ListDetailsDto details)
+        {
+            return await DbContext.Snapshots.Where(s => s.FilterListId == details.Id && s.IsCompleted)
+                                  .Include(s => s.AddedSnapshotRules)
+                                  .SelectMany(sr => sr.AddedSnapshotRules)
+                                  .CountAsync() -
+                   await DbContext.Snapshots.Where(s => s.FilterListId == details.Id && s.IsCompleted)
+                                  .Include(s => s.RemovedSnapshotRules)
+                                  .SelectMany(sr => sr.RemovedSnapshotRules)
+                                  .CountAsync();
         }
     }
 }
