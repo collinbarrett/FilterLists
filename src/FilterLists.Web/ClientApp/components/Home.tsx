@@ -4,6 +4,7 @@ import "isomorphic-fetch";
 import ReactTable from "react-table"
 import "react-table/react-table.css"
 import ListDetails from "./ListDetails";
+import * as moment from "moment";
 
 interface IHomeState {
     lists: IListDto[];
@@ -93,6 +94,19 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            className: "d-none d-sm-block"
                        },
                        {
+                           Header: "Added",
+                           accessor: "createdDateUtc",
+                           filterable: true,
+                           filterMethod: (filter: any, row: any) => row[filter.id].toUpperCase()
+                               .includes(filter.value.toUpperCase()),
+                           sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
+                           Cell: (cell: any) => <div>{moment(cell.value).format("M-D-Y")}</div>,
+                           style: { whiteSpace: "inherit" },
+                           width: 60,
+                           headerClassName: "d-none d-sm-block",
+                           className: "d-none d-sm-block"
+                       },
+                       {
                            Header: "Details",
                            accessor: "id",
                            sortable: false,
@@ -134,6 +148,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
 
 interface IListDto {
     id: number;
+    createdDateUtc: string;
     name: string;
     languages: IListLanguageDto[];
     viewUrl: string;
