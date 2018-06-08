@@ -48,15 +48,17 @@ namespace FilterLists.Services.FilterList
                                   .CountAsync();
         }
 
-        private async Task<DateTime> GetUpdatedDate(ListDetailsDto details)
+        private async Task<DateTime?> GetUpdatedDate(ListDetailsDto details)
         {
-            return await DbContext.Snapshots.Where(s => s.FilterListId == details.Id && s.IsCompleted)
-                                  .Include(s => s.AddedSnapshotRules)
-                                  .Include(s => s.RemovedSnapshotRules)
-                                  .Where(s => s.AddedSnapshotRules.Count > 0 || s.RemovedSnapshotRules.Count > 0)
-                                  .Select(s => s.CreatedDateUtc)
-                                  .OrderByDescending(s => s.Date)
-                                  .FirstAsync();
+            return details.DiscontinuedDate != null
+                ? (DateTime?) null
+                : await DbContext.Snapshots.Where(s => s.FilterListId == details.Id && s.IsCompleted)
+                                 .Include(s => s.AddedSnapshotRules)
+                                 .Include(s => s.RemovedSnapshotRules)
+                                 .Where(s => s.AddedSnapshotRules.Count > 0 || s.RemovedSnapshotRules.Count > 0)
+                                 .Select(s => s.CreatedDateUtc)
+                                 .OrderByDescending(s => s.Date)
+                                 .FirstAsync();
         }
     }
 }
