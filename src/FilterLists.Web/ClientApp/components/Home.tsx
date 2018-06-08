@@ -95,7 +95,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                        },
                        {
                            Header: "Crawled",
-                           accessor: "updatedDate",
+                           accessor: "crawledDate",
                            filterable: true,
                            filterMethod: (filter: any, row: any) => row[filter.id].toUpperCase()
                                .includes(filter.value.toUpperCase()),
@@ -166,9 +166,9 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
 interface IListDto {
     id: number;
     addedDate: string;
+    crawledDate: string;
     name: string;
     languages: IListLanguageDto[];
-    updatedDate: string;
     viewUrl: string;
 }
 
