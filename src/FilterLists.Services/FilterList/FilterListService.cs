@@ -20,8 +20,8 @@ namespace FilterLists.Services.FilterList
         public async Task<IEnumerable<ListSummaryDto>> GetAllSummariesAsync()
         {
             var summaries = await GetSummaryDtos();
-            var latestUpdatedSnapshots = await GetLatestUpdatedSnapshots();
-            return summaries.GroupJoin(latestUpdatedSnapshots, summary => summary.Id, snap => snap.FilterListId,
+            var latestSnapshots = await GetLatestSnapshots();
+            return summaries.GroupJoin(latestSnapshots, summary => summary.Id, snap => snap.FilterListId,
                 (summary, snap) =>
                 {
                     var snaps = snap as Data.Entities.Snapshot[] ?? snap.ToArray();
@@ -29,9 +29,9 @@ namespace FilterLists.Services.FilterList
                     {
                         Id = summary.Id,
                         AddedDate = summary.AddedDate,
+                        CrawledDate = snaps.Any() ? snaps.Single().CreatedDateUtc : (DateTime?) null,
                         Languages = summary.Languages,
                         Name = summary.Name,
-                        UpdatedDate = snaps.Any() ? snaps.Single().CreatedDateUtc : (DateTime?) null,
                         ViewUrl = summary.ViewUrl
                     };
                 });
@@ -45,7 +45,7 @@ namespace FilterLists.Services.FilterList
                                   .ToListAsync();
         }
 
-        private async Task<List<Data.Entities.Snapshot>> GetLatestUpdatedSnapshots()
+        private async Task<List<Data.Entities.Snapshot>> GetLatestSnapshots()
         {
             return await DbContext.Snapshots.AsNoTracking()
                                   .Where(snap =>
@@ -63,7 +63,7 @@ namespace FilterLists.Services.FilterList
                                          .FirstAsync(x => x.Id == id)
                                          .FilterParentListFromMaintainerAdditionalLists();
             details.RuleCount = await GetActiveRuleCount(details);
-            details.UpdatedDate = await GetUpdatedDate(details);
+            details.CrawledDate = await GetCrawledDate(details);
             return details;
         }
 
@@ -75,7 +75,7 @@ namespace FilterLists.Services.FilterList
                    await listSnapshots.SelectMany(sr => sr.RemovedSnapshotRules).CountAsync();
         }
 
-        private async Task<DateTime?> GetUpdatedDate(ListDetailsDto details)
+        private async Task<DateTime?> GetCrawledDate(ListDetailsDto details)
         {
             var snapshotDates = DbContext.Snapshots.AsNoTracking()
                                          .Where(s => s.FilterListId == details.Id && s.IsCompleted &&
