@@ -54,6 +54,7 @@ function ListInfo(props: any) {
                <Description description={props.details.description} url={props.details.descriptionSourceUrl}/>
                <ul className="list-group list-group-flush">
                    <Languages languages={props.details.languages}/>
+                   <RuleCount count={props.details.ruleCount}/>
                    <PublishedDate date={props.details.publishedDate}/>
                    <DiscontinuedDate date={props.details.discontinuedDate}/>
                    <License license={props.details.license}/>
@@ -92,12 +93,19 @@ function Languages(props: any) {
         ? <li className="list-group-item">
               <p className="m-0">Languages:</p>
               <ul>
-                  {props.languages.map(
-                      (language: any) => <li>{language}</li>)}
+                  {props.languages.map((language: any) => <li>{language}</li>)}
               </ul>
           </li>
         : <li className="list-group-item">
               <p>Language: {props.languages.map((language: any) => language)}</p>
+          </li>
+        : null;
+}
+
+function RuleCount(props: any) {
+    return props.count
+        ? <li className="list-group-item">
+              <p>Rule Count: {props.count.toLocaleString()}</p>
           </li>
         : null;
 }
@@ -298,6 +306,7 @@ interface IFilterListDetailsDto {
     maintainers: IListMaintainerDto[];
     policyUrl: string;
     publishedDate: string;
+    ruleCount: number;
     submissionUrl: string;
     syntax: IListSyntaxDto[];
     viewUrl: string;
@@ -331,4 +340,4 @@ interface IListSyntaxDto {
 interface ISyntaxSupportedSoftwareDto {
     homeUrl: string;
     name: string;
-}
+};

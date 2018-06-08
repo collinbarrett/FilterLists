@@ -23,6 +23,7 @@ namespace FilterLists.Services.FilterList
         public string Name { get; set; }
         public string PolicyUrl { get; set; }
         public DateTime? PublishedDate { get; set; }
+        public int RuleCount { get; set; }
         public string SubmissionUrl { get; set; }
         public ListSyntaxDto Syntax { get; set; }
         public string ViewUrl { get; set; }
