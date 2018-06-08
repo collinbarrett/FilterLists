@@ -24,12 +24,13 @@ namespace FilterLists.Services.FilterList
             return summaries.GroupJoin(latestSnapshots, summary => summary.Id, snap => snap.FilterListId,
                 (summary, snap) =>
                 {
-                    var snaps = snap as Data.Entities.Snapshot[] ?? snap.ToArray();
+                    snap = snap as Data.Entities.Snapshot[] ?? snap.ToArray();
+                    var crawledDate = snap.Any() ? snap.Single().CreatedDateUtc : (DateTime?) null;
                     return new ListSummaryDto
                     {
                         Id = summary.Id,
                         AddedDate = summary.AddedDate,
-                        CrawledDate = snaps.Any() ? snaps.Single().CreatedDateUtc : (DateTime?) null,
+                        CrawledDate = crawledDate,
                         Languages = summary.Languages,
                         Name = summary.Name,
                         ViewUrl = summary.ViewUrl
@@ -40,7 +41,7 @@ namespace FilterLists.Services.FilterList
         private async Task<List<ListSummaryDto>> GetSummaryDtos()
         {
             return await DbContext.FilterLists.AsNoTracking()
-                                  .OrderBy(list => list.Name)
+                                  .OrderBy(l => l.Name)
                                   .ProjectTo<ListSummaryDto>()
                                   .ToListAsync();
         }
@@ -48,10 +49,10 @@ namespace FilterLists.Services.FilterList
         private async Task<List<Data.Entities.Snapshot>> GetLatestSnapshots()
         {
             return await DbContext.Snapshots.AsNoTracking()
-                                  .Where(snap =>
-                                      snap.IsCompleted &&
-                                      (snap.AddedSnapshotRules.Count > 0 || snap.RemovedSnapshotRules.Count > 0))
-                                  .GroupBy(snap => snap.FilterListId,
+                                  .Where(s => s.IsCompleted &&
+                                              s.HttpStatusCode == "200" &&
+                                              (s.AddedSnapshotRules.Count > 0 || s.RemovedSnapshotRules.Count > 0))
+                                  .GroupBy(s => s.FilterListId,
                                       (key, x) => x.OrderByDescending(y => y.CreatedDateUtc).First())
                                   .ToListAsync();
         }
@@ -78,7 +79,9 @@ namespace FilterLists.Services.FilterList
         private async Task<DateTime?> GetCrawledDate(ListDetailsDto details)
         {
             var snapshotDates = DbContext.Snapshots.AsNoTracking()
-                                         .Where(s => s.FilterListId == details.Id && s.IsCompleted &&
+                                         .Where(s => s.FilterListId == details.Id &&
+                                                     s.IsCompleted &&
+                                                     s.HttpStatusCode == "200" &&
                                                      (s.AddedSnapshotRules.Count > 0 ||
                                                       s.RemovedSnapshotRules.Count > 0))
                                          .Select(s => s.CreatedDateUtc)
