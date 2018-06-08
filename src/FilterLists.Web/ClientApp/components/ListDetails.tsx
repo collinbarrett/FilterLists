@@ -1,5 +1,6 @@
 import * as React from "react";
 import "isomorphic-fetch";
+import * as moment from "moment";
 
 export default class ListDetails extends React.Component<any, any> {
 
@@ -104,7 +105,7 @@ function Languages(props: any) {
 function PublishedDate(props: any) {
     return props.date
         ? <li className="list-group-item">
-              <p>Published: {props.date}</p>
+              <p>Published: {moment(props.date).format("MMM. D YYYY")}</p>
           </li>
         : null;
 }
@@ -112,7 +113,7 @@ function PublishedDate(props: any) {
 function DiscontinuedDate(props: any) {
     return props.date
         ? <li className="list-group-item">
-              <p>Discontinued: {props.date}</p>
+              <p>Discontinued: {moment(props.date).format("MMM. D YYYY")}</p>
           </li>
         : null;
 }
