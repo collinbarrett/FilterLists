@@ -17,7 +17,8 @@ namespace FilterLists.Services.FilterList
                     conf => conf.MapFrom(list => list.FilterListLanguages.Select(listLangs => listLangs.Language.Name)))
                 .ForMember(dto => dto.Maintainers,
                     conf => conf.MapFrom(list =>
-                        list.FilterListMaintainers.Select(listMaints => listMaints.Maintainer)));
+                        list.FilterListMaintainers.Select(listMaints => listMaints.Maintainer)))
+                .ForMember(dto => dto.AddedDate, conf => conf.MapFrom(list => list.CreatedDateUtc));
             CreateMap<Maintainer, ListMaintainerDto>()
                 .ForMember(dto => dto.AdditionalLists,
                     conf => conf.MapFrom(maint =>
