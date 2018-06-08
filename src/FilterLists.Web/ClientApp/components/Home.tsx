@@ -99,7 +99,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            filterable: true,
                            filterMethod: (filter: any, row: any) => row[filter.id].toUpperCase()
                                .includes(filter.value.toUpperCase()),
-                           sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
+                           sortMethod: (a: any, b: any) => a > b ? 1 : -1,
                            Cell: (cell: any) => <div>{moment(cell.value).format("M-D-YY")}</div>,
                            style: { whiteSpace: "inherit" },
                            width: 70,
