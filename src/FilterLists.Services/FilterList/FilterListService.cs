@@ -75,7 +75,7 @@ namespace FilterLists.Services.FilterList
                                   .CountAsync();
         }
 
-        private async Task<DateTime?> GetUpdatedDate(ListDetailsDto details)
+        private async Task<DateTime> GetUpdatedDate(ListDetailsDto details)
         {
             return await DbContext.Snapshots.AsNoTracking()
                                   .Where(s => s.FilterListId == details.Id && s.IsCompleted &&

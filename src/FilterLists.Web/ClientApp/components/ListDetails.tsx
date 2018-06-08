@@ -57,6 +57,7 @@ function ListInfo(props: any) {
                    <RuleCount count={props.details.ruleCount}/>
                    <DiscontinuedDate date={props.details.discontinuedDate}/>
                    <UpdatedDate date={props.details.updatedDate}/>
+                   <AddedDate date={props.details.addedDate}/>
                    <PublishedDate date={props.details.publishedDate}/>
                    <License license={props.details.license}/>
                </ul>
@@ -122,7 +123,15 @@ function DiscontinuedDate(props: any) {
 function UpdatedDate(props: any) {
     return props.date
         ? <li className="list-group-item">
-              <p>Updated: {moment(props.date).format("MMM D, Y")}</p>
+              <p>Last Updated: {moment(props.date).format("MMM D, Y")}</p>
+          </li>
+        : null;
+}
+
+function AddedDate(props: any) {
+    return props.date
+        ? <li className="list-group-item">
+              <p>Added to FilterLists: {moment(props.date).format("MMM D, Y")}</p>
           </li>
         : null;
 }
@@ -301,6 +310,7 @@ function MaintainerUrls(props: any) {
 }
 
 interface IFilterListDetailsDto {
+    addedDate: string;
     chatUrl: string;
     description: string;
     descriptionSourceUrl: string;
