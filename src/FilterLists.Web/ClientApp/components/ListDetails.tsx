@@ -55,8 +55,9 @@ function ListInfo(props: any) {
                <ul className="list-group list-group-flush">
                    <Languages languages={props.details.languages}/>
                    <RuleCount count={props.details.ruleCount}/>
-                   <PublishedDate date={props.details.publishedDate}/>
                    <DiscontinuedDate date={props.details.discontinuedDate}/>
+                   <UpdatedDate date={props.details.updatedDate}/>
+                   <PublishedDate date={props.details.publishedDate}/>
                    <License license={props.details.license}/>
                </ul>
            </div>;
@@ -110,18 +111,26 @@ function RuleCount(props: any) {
         : null;
 }
 
-function PublishedDate(props: any) {
-    return props.date
-        ? <li className="list-group-item">
-              <p>Published: {moment(props.date).format("MMM. D YYYY")}</p>
-          </li>
-        : null;
-}
-
 function DiscontinuedDate(props: any) {
     return props.date
         ? <li className="list-group-item">
               <p>Discontinued: {moment(props.date).format("MMM. D YYYY")}</p>
+          </li>
+        : null;
+}
+
+function UpdatedDate(props: any) {
+    return props.date
+        ? <li className="list-group-item">
+              <p>Updated: {moment(props.date).format("MMM. D YYYY")}</p>
+          </li>
+        : null;
+}
+
+function PublishedDate(props: any) {
+    return props.date
+        ? <li className="list-group-item">
+              <p>Published: {moment(props.date).format("MMM. D YYYY")}</p>
           </li>
         : null;
 }
@@ -309,6 +318,7 @@ interface IFilterListDetailsDto {
     ruleCount: number;
     submissionUrl: string;
     syntax: IListSyntaxDto[];
+    updatedDate: string;
     viewUrl: string;
 }
 
