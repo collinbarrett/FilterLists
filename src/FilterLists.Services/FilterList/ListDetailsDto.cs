@@ -27,7 +27,7 @@ namespace FilterLists.Services.FilterList
         public int RuleCount { get; set; }
         public string SubmissionUrl { get; set; }
         public ListSyntaxDto Syntax { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
         public string ViewUrl { get; set; }
     }
 }

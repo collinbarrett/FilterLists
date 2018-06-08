@@ -11,7 +11,7 @@ namespace FilterLists.Services.FilterList
         public DateTime AddedDate { get; set; }
         public IEnumerable<ListLanguagesDto> Languages { get; set; }
         public string Name { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
         public string ViewUrl { get; set; }
     }
 }

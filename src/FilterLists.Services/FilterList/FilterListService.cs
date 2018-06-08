@@ -21,15 +21,19 @@ namespace FilterLists.Services.FilterList
         {
             var summaries = await GetSummaryDtos();
             var latestUpdatedSnapshots = await GetLatestUpdatedSnapshots();
-            return summaries.Join(latestUpdatedSnapshots, summary => summary.Id, snap => snap.FilterListId,
-                (summary, snap) => new ListSummaryDto
+            return summaries.GroupJoin(latestUpdatedSnapshots, summary => summary.Id, snap => snap.FilterListId,
+                (summary, snap) =>
                 {
-                    Id = summary.Id,
-                    AddedDate = summary.AddedDate,
-                    Languages = summary.Languages,
-                    Name = summary.Name,
-                    UpdatedDate = snap.CreatedDateUtc,
-                    ViewUrl = summary.ViewUrl
+                    var snaps = snap as Data.Entities.Snapshot[] ?? snap.ToArray();
+                    return new ListSummaryDto
+                    {
+                        Id = summary.Id,
+                        AddedDate = summary.AddedDate,
+                        Languages = summary.Languages,
+                        Name = summary.Name,
+                        UpdatedDate = snaps.Any() ? snaps.Single().CreatedDateUtc : (DateTime?) null,
+                        ViewUrl = summary.ViewUrl
+                    };
                 });
         }
 
@@ -65,24 +69,21 @@ namespace FilterLists.Services.FilterList
 
         private async Task<int> GetActiveRuleCount(ListDetailsDto details)
         {
-            return await DbContext.Snapshots.AsNoTracking()
-                                  .Where(s => s.FilterListId == details.Id && s.IsCompleted)
-                                  .SelectMany(sr => sr.AddedSnapshotRules)
-                                  .CountAsync() -
-                   await DbContext.Snapshots.AsNoTracking()
-                                  .Where(s => s.FilterListId == details.Id && s.IsCompleted)
-                                  .SelectMany(sr => sr.RemovedSnapshotRules)
-                                  .CountAsync();
+            var listSnapshots = DbContext.Snapshots.AsNoTracking()
+                                         .Where(s => s.FilterListId == details.Id && s.IsCompleted);
+            return await listSnapshots.SelectMany(sr => sr.AddedSnapshotRules).CountAsync() -
+                   await listSnapshots.SelectMany(sr => sr.RemovedSnapshotRules).CountAsync();
         }
 
-        private async Task<DateTime> GetUpdatedDate(ListDetailsDto details)
+        private async Task<DateTime?> GetUpdatedDate(ListDetailsDto details)
         {
-            return await DbContext.Snapshots.AsNoTracking()
-                                  .Where(s => s.FilterListId == details.Id && s.IsCompleted &&
-                                              (s.AddedSnapshotRules.Count > 0 || s.RemovedSnapshotRules.Count > 0))
-                                  .Select(s => s.CreatedDateUtc)
-                                  .OrderByDescending(s => s.Date)
-                                  .FirstAsync();
+            var snapshotDates = DbContext.Snapshots.AsNoTracking()
+                                         .Where(s => s.FilterListId == details.Id && s.IsCompleted &&
+                                                     (s.AddedSnapshotRules.Count > 0 ||
+                                                      s.RemovedSnapshotRules.Count > 0))
+                                         .Select(s => s.CreatedDateUtc)
+                                         .OrderByDescending(s => s.Date);
+            return snapshotDates.Any() ? (DateTime?) await snapshotDates.FirstAsync() : null;
         }
     }
 }
