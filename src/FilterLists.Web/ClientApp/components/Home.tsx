@@ -100,10 +100,10 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            filterMethod: (filter: any, row: any) => row[filter.id].includes(filter.value),
                            sortMethod: (a: any, b: any) => a > b ? 1 : -1,
                            Cell: (cell: any) => <div>{moment(cell.value).isValid()
-                               ? moment(cell.value).format("M-D-YY")
+                               ? moment(cell.value).format(moment.HTML5_FMT.DATE)
                                : "N/A"}</div>,
                            style: { whiteSpace: "inherit" },
-                           width: 75,
+                           width: 100,
                            headerClassName: "d-none d-sm-block",
                            className: "d-none d-sm-block"
                        },
@@ -114,10 +114,10 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            filterMethod: (filter: any, row: any) => row[filter.id].includes(filter.value),
                            sortMethod: (a: any, b: any) => a > b ? 1 : -1,
                            Cell: (cell: any) => <div>{moment(cell.value).isValid()
-                               ? moment(cell.value).format("M-D-YY")
+                               ? moment(cell.value).format(moment.HTML5_FMT.DATE)
                                : "N/A"}</div>,
                            style: { whiteSpace: "inherit" },
-                           width: 75,
+                           width: 100,
                            headerClassName: "d-none d-sm-block",
                            className: "d-none d-sm-block"
                        },
