@@ -98,7 +98,9 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            accessor: "updatedDate",
                            filterable: true,
                            filterMethod: (filter: any, row: any) => row[filter.id].includes(filter.value),
-                           sortMethod: (a: any, b: any) => a > b ? 1 : -1,
+                           sortMethod: (a: any, b: any) => moment(a).isValid()
+                               ? (moment(b).isValid() ? (moment(a).isBefore(b) ? -1 : 1) : 1)
+                               : -1,
                            Cell: (cell: any) => <div>{moment(cell.value).isValid()
                                ? moment(cell.value).format(moment.HTML5_FMT.DATE)
                                : "N/A"}</div>,
