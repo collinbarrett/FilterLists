@@ -2,11 +2,12 @@
   "profiles": {
     "FilterLists.Api": {
       "commandName": "Project",
-      "launchBrowser": false,
+      "launchBrowser": true,
+      "launchUrl": "http://localhost:5000/docs/index.html",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:5000/v1/lists"
+      "applicationUrl": "http://localhost:5000/docs/index.html"
     }
   }
 }
