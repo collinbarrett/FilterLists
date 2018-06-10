@@ -3,6 +3,16 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Authors>Collin M. Barrett</Authors>
+    <Company>Collin M. Barrett</Company>
+    <Product>FilterLists</Product>
+    <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
+    <Copyright>Copyright (c) 2018 Collin M. Barrett</Copyright>
+    <PackageLicenseUrl>https://github.com/collinbarrett/FilterLists/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>https://github.com/collinbarrett/FilterLists/raw/master/imgs/icon_filterlists.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://filterlists.com/</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
