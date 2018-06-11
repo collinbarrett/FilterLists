@@ -6,7 +6,7 @@ namespace FilterLists.Services.FilterList
     [UsedImplicitly]
     public class ListMaintainerDto
     {
-        public int Id { get; set; }
+        public uint Id { get; set; }
         public string EmailAddress { get; set; }
         public string HomeUrl { get; set; }
         public string Name { get; set; }

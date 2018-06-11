@@ -57,7 +57,7 @@ namespace FilterLists.Services.FilterList
                                   .ToListAsync();
         }
 
-        public async Task<ListDetailsDto> GetDetailsAsync(int id)
+        public async Task<ListDetailsDto> GetDetailsAsync(uint id)
         {
             var details = await DbContext.FilterLists.AsNoTracking()
                                          .ProjectTo<ListDetailsDto>()

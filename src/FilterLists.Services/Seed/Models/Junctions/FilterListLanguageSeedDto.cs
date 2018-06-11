@@ -5,7 +5,7 @@ namespace FilterLists.Services.Seed.Models.Junctions
     [UsedImplicitly]
     public class FilterListLanguageSeedDto
     {
-        public int FilterListId { get; set; }
-        public int LanguageId { get; set; }
+        public uint FilterListId { get; set; }
+        public uint LanguageId { get; set; }
     }
 }
