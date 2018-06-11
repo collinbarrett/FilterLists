@@ -31,7 +31,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.IssuesUrl)
                              .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.LicenseId)
-                             .HasDefaultValue(5)
+                             .HasDefaultValue((uint)5)
                              .IsRequired();
             entityTypeBuilder.Property(x => x.Name)
                              .HasColumnType("VARCHAR(126)")

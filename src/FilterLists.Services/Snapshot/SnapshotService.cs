@@ -13,7 +13,7 @@ namespace FilterLists.Services.Snapshot
     public class SnapshotService : Service
     {
         //TODO: update algorithm to support non-standard list sizes and formats (#200, #201)
-        private readonly List<int> _ignoreLists = new List<int> {48, 149, 173, 185, 186, 187, 188, 189, 352};
+        private readonly List<uint> _ignoreLists = new List<uint> {48, 149, 173, 185, 186, 187, 188, 189, 352};
 
         public SnapshotService(FilterListsDbContext dbContext) : base(dbContext)
         {

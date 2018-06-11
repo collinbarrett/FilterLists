@@ -7,7 +7,7 @@ namespace FilterLists.Services.FilterList
     [UsedImplicitly]
     public class ListSummaryDto
     {
-        public int Id { get; set; }
+        public uint Id { get; set; }
         public DateTime AddedDate { get; set; }
         public IEnumerable<ListLanguagesDto> Languages { get; set; }
         public string Name { get; set; }

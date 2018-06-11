@@ -5,7 +5,7 @@ namespace FilterLists.Services.Seed.Models
     [UsedImplicitly]
     public class LanguageSeedDto
     {
-        public int Id { get; set; }
+        public uint Id { get; set; }
         public string Iso6391 { get; set; }
         public string Iso6392 { get; set; }
         public string Iso6392B { get; set; }

@@ -2,9 +2,9 @@
 {
     public class FilterListMaintainer : BaseJunction
     {
-        public int FilterListId { get; set; }
+        public uint FilterListId { get; set; }
         public FilterList FilterList { get; set; }
-        public int MaintainerId { get; set; }
+        public uint MaintainerId { get; set; }
         public Maintainer Maintainer { get; set; }
     }
 }

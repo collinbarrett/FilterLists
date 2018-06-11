@@ -2,9 +2,9 @@
 {
     public class Fork : BaseJunction
     {
-        public int ForkFilterListId { get; set; }
+        public uint ForkFilterListId { get; set; }
         public FilterList ForkFilterList { get; set; }
-        public int UpstreamFilterListId { get; set; }
+        public uint UpstreamFilterListId { get; set; }
         public FilterList UpstreamFilterList { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
             base.Configure(entityTypeBuilder);
             entityTypeBuilder.ToTable("rules");
             entityTypeBuilder.Property(x => x.Id)
-                             .HasColumnType("INT"/* UNSIGNED"*/);
+                             .HasColumnType("INT UNSIGNED");
             entityTypeBuilder.Ignore(x => x.ModifiedDateUtc);
             entityTypeBuilder.Property(x => x.Raw)
                              .HasColumnType("VARCHAR(8192)")

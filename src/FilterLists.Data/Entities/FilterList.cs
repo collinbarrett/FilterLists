@@ -20,7 +20,7 @@ namespace FilterLists.Data.Entities
         public string HomeUrl { get; set; }
         public string IssuesUrl { get; set; }
         public ICollection<FilterListLanguage> FilterListLanguages { get; set; }
-        public int? LicenseId { get; set; }
+        public uint? LicenseId { get; set; }
         public License License { get; set; }
         public ICollection<FilterListMaintainer> FilterListMaintainers { get; set; }
         public ICollection<Merge> MergeFilterLists { get; set; }
@@ -30,7 +30,7 @@ namespace FilterLists.Data.Entities
         public DateTime? PublishedDate { get; set; }
         public ICollection<Snapshot> Snapshots { get; set; }
         public string SubmissionUrl { get; set; }
-        public int? SyntaxId { get; set; }
+        public uint? SyntaxId { get; set; }
         public Syntax Syntax { get; set; }
         public string ViewUrl { get; set; }
     }

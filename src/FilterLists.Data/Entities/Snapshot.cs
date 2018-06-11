@@ -5,7 +5,7 @@ namespace FilterLists.Data.Entities
 {
     public class Snapshot : BaseEntity
     {
-        public int FilterListId { get; set; }
+        public uint FilterListId { get; set; }
         public FilterList FilterList { get; set; }
         public string HttpStatusCode { get; set; }
         public bool IsCompleted { get; set; }
