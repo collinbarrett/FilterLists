@@ -9,6 +9,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
         public virtual void Configure(EntityTypeBuilder<TEntity> entityTypeBuilder)
         {
             entityTypeBuilder.Property(x => x.Id)
+                             .UseMySqlIdentityColumn()
                              .HasColumnType("SMALLINT UNSIGNED");
             entityTypeBuilder.Property(x => x.CreatedDateUtc)
                              .HasColumnType("TIMESTAMP")
