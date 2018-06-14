@@ -1,6 +1,9 @@
 ﻿using System;
 using System.IO;
 using Microsoft.ApplicationInsights.Extensibility.Implementation;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
 using Swashbuckle.AspNetCore.Swagger;
@@ -11,10 +14,31 @@ namespace FilterLists.Api.DependencyInjection.Extensions
     {
         public static void AddFilterListsApi(this IServiceCollection services)
         {
-            services.AddRouting(options => options.LowercaseUrls = true);
+            services.ConfigureCookiePolicy();
+            services.AddMvcCustom();
+            services.AddRoutingCustom();
             services.AddApiVersioning();
             services.AddSwaggerGenCustom();
             TelemetryDebugWriter.IsTracingDisabled = true;
+        }
+
+        private static void ConfigureCookiePolicy(this IServiceCollection services)
+        {
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+        }
+
+        private static void AddMvcCustom(this IServiceCollection services)
+        {
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+        }
+
+        private static void AddRoutingCustom(this IServiceCollection services)
+        {
+            services.AddRouting(options => options.LowercaseUrls = true);
         }
 
         private static void AddSwaggerGenCustom(this IServiceCollection services)
