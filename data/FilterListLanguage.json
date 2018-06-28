@@ -641,11 +641,19 @@
   },
   {
     "filterListID": 422,
-    "languageId": 110, 99
+    "languageId": 110
+  },
+  {
+    "filterListID": 422,
+    "languageId": 99
   },
   {
     "filterListID": 429,
-    "languageId": 110, 167
+    "languageId": 110
+  },
+  {
+    "filterListID": 429,
+    "languageId": 167
   },
   {
     "filterListID": 430,
