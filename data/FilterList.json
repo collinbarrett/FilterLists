@@ -7794,7 +7794,7 @@
     "emailAddress": null,
     "forumUrl": null,
     "homeUrl": "https://gist.github.com/BBcan177",
-    "issuesUrl": "(Insert an ID for Apache 2.0 here.)",
+    "issuesUrl": 18,
     "licenseId": null,
     "name": "pfBlockerNG - Blacklist Configuration",
     "policyUrl": null,
@@ -7839,8 +7839,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
-    "viewUrl": "https://gist.githubusercontent.com/BBcan177/b6df57cef74e28d90acf1eec93d62d3b/raw/f0996cf5248657ada2adb396f3636be8716b99eb/MS-4
-"
+    "viewUrl": "https://gist.githubusercontent.com/BBcan177/b6df57cef74e28d90acf1eec93d62d3b/raw/f0996cf5248657ada2adb396f3636be8716b99eb/MS-4"
   },
   {
     "id": 414,
@@ -7910,7 +7909,7 @@
     "forumUrl": null,
     "homeUrl": "https://github.com/matomo-org/referrer-spam-blacklist",
     "issuesUrl": "https://github.com/matomo-org/referrer-spam-blacklist/issues",
-    "licenseId": "(Insert ID for Public Domain here.)",
+    "licenseId": "20",
     "name": "Referrer Spam Blacklist (Matomo)",
     "policyUrl": null,
     "publishedDate": null,
@@ -7986,7 +7985,7 @@
     "forumUrl": null,
     "homeUrl": "https://gitlab.com/Kurobeats/phishing_hosts",
     "issuesUrl": "https://gitlab.com/Kurobeats/phishing_hosts/issues",
-    "licenseId": "(Insert ID for GPLv2 here)",
+    "licenseId": 19,
     "name": "Phishing Hosts",
     "policyUrl": null,
     "publishedDate": null,
