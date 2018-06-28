@@ -425,5 +425,47 @@
     "homeUrl": "https://github.com/raghavdua1995",
     "name": "Raghav Dua",
     "twitterHandle": null
+  },
+  {
+    "id": 63,
+    "emailAddress": null,
+    "homeUrl": "https://jspenguin2017.github.io/uBlockProtector/",
+    "name": "Jspenguin2017",
+    "twitterHandle": null
+  },
+  {
+    "id": 64,
+    "emailAddress": null,
+    "homeUrl": null,
+    "name": "Frellwit",
+    "twitterHandle": null
+  },
+  {
+    "id": 65,
+    "emailAddress": null,
+    "homeUrl": "https://github.com/uBlockOrigin/uAssets",
+    "name": "uBlock Origin",
+    "twitterHandle": null
+  },
+  {
+    "id": 66,
+    "emailAddress": null,
+    "homeUrl": "https://gist.github.com/BBcan177",
+    "name": "BBcan177",
+    "twitterHandle": null
+  },
+  {
+    "id": 67,
+    "emailAddress": "joewein@pobox.com",
+    "homeUrl": "https://www.joewein.net/spam/index.htm",
+    "name": "Joe Wein",
+    "twitterHandle": null
+  },
+  {
+    "id": 68,
+    "emailAddress": null,
+    "homeUrl": "https://github.com/betterwebleon/",
+    "name": "betterwebleon",
+    "twitterHandle": null
   }
 ]
