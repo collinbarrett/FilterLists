@@ -8149,20 +8149,20 @@
   {
     "id": 430,
     "chatUrl": null,
-    "description": "",
-    "descriptionSourceUrl": "",
+    "description": "Blocks rogue websites and some ads on Norwegian sites. Intended for use only with hosts-specific tools; users of uBlock Origin and Nano Adblocker should preferably use the regular version of this list instead.",
+    "descriptionSourceUrl": null,
     "discontinuedDate": null,
-    "donateUrl": null,
-    "emailAddress": null,
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
     "forumUrl": null,
-    "homeUrl": "",
-    "issuesUrl": "",
-    "licenseId": null,
-    "name": "",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Dandelion Sprout's Norwegian Filters for Tidier Websites (Hosts version)",
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": ,
-    "viewUrl": ""
-  }
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts"
+  },
 ]
