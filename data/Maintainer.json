@@ -213,7 +213,7 @@
     "id": 32,
     "emailAddress": null,
     "homeUrl": "https://github.com/MajkiIT",
-    "name": "Maciej M.",
+    "name": "MajkiIT",
     "twitterHandle": null
   },
   {
@@ -424,6 +424,13 @@
     "emailAddress": null,
     "homeUrl": "https://github.com/raghavdua1995",
     "name": "Raghav Dua",
+    "twitterHandle": null
+  },
+  {
+    "id": 63,
+    "emailAddress": null,
+    "homeUrl": "https://github.com/KonoromiHimaries",
+    "name": "KonoromiHimaries",
     "twitterHandle": null
   }
 ]
