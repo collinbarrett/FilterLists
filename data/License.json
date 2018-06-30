@@ -117,5 +117,26 @@
     "name": "ISC",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
+  },
+  {
+    "id": 18,
+    "descriptionUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "name": "Apache 2.0",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 19,
+    "descriptionUrl": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+    "name": "GPLv2",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 20,
+    "descriptionUrl": null,
+    "name": "Public Domain",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
   }
 ]
