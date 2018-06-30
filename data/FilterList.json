@@ -7515,7 +7515,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": 10,
+    "syntaxId": 12,
     "viewUrl": "https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt"
   },
   {
@@ -7534,7 +7534,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": 10,
+    "syntaxId": 12,
     "viewUrl": "https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelist.txt"
   },
   {
@@ -7553,7 +7553,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": 10,
+    "syntaxId": 12,
     "viewUrl": "https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt"
   },
   {
