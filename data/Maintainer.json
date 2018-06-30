@@ -473,6 +473,11 @@
     "emailAddress": null,
     "homeUrl": "https://github.com/notracking",
     "name": "notracking",
+    "twitterHandle": null
+  },
+  {
+    "id": 70,
+    "emailAddress": null,
     "homeUrl": "https://github.com/KonoromiHimaries",
     "name": "KonoromiHimaries",
     "twitterHandle": null
