@@ -138,5 +138,12 @@
     "name": "Public Domain",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
+  },
+  {
+    "id": 21,
+    "descriptionUrl": "https://osint.bambenekconsulting.com/license.txt",
+    "name": "OSINT",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
   }
 ]
