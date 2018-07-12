@@ -22,5 +22,29 @@
   {
     "softwareId": 6,
     "syntaxId": 3
+  },
+  {
+    "softwareId": 7,
+    "syntaxId": 1
+  },
+  {
+    "softwareId": 8,
+    "syntaxId": 2
+  },
+  {
+    "softwareId": 9,
+    "syntaxId": 2
+  },
+  {
+    "softwareId": 10,
+    "syntaxId": 11
+  },
+  {
+    "softwareId": 11,
+    "syntaxId": 1
+  },
+  {
+    "softwareId": 12,
+    "syntaxId": 1
   }
 ]
