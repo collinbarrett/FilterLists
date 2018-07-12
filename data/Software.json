@@ -34,5 +34,41 @@
     "downloadUrl": "https://getadblock.com/",
     "homeUrl": "https://getadblock.com/",
     "name": "AdBlock"
+  },
+  {
+    "id": 7,
+    "downloadUrl": "https://f-droid.org/packages/org.adaway/",
+    "homeUrl": "https://adaway.org/",
+    "name": "AdAway"
+  },
+  {
+    "id": 8,
+    "downloadUrl": "https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef",
+    "homeUrl": "https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef",
+    "name": "Personal Blocklist (Chrome)"
+  },
+  {
+    "id": 9,
+    "downloadUrl": "https://addons.mozilla.org/firefox/addon/personal-blocklist/",
+    "homeUrl": "https://github.com/wildskyf/personal-blocklist",
+    "name": "Personal Blocklist (Firefox)"
+  },
+  {
+    "id": 10,
+    "downloadUrl": "http://einaregilsson.com/redirector/",
+    "homeUrl": "http://einaregilsson.com/redirector/",
+    "name": "Redirector"
+  },
+  {
+    "id": 11,
+    "downloadUrl": "https://github.com/scottlerch/HostsFileEditor/releases",
+    "homeUrl": "https://scottlerch.github.io/HostsFileEditor/",
+    "name": "Hosts File Editor"
+  },
+  {
+    "id": 12,
+    "downloadUrl": "https://github.com/2ndalpha/gasmask/releases",
+    "homeUrl": "https://github.com/2ndalpha/gasmask",
+    "name": "Gas Mask"
   }
 ]
