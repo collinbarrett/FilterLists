@@ -38,19 +38,13 @@ namespace FilterLists.Services.FilterList
                 });
         }
 
-        private async Task<List<ListSummaryDto>> GetSummaryDtos()
-        {
-            return await DbContext.FilterLists.AsNoTracking()
-                                  .OrderBy(l => l.Name)
-                                  .ProjectTo<ListSummaryDto>()
-                                  .ToListAsync();
-        }
+        private async Task<List<ListSummaryDto>> GetSummaryDtos() =>
+            await DbContext.FilterLists.OrderBy(l => l.Name).ProjectTo<ListSummaryDto>().ToListAsync();
 
         private async Task<List<Data.Entities.Snapshot>> GetLatestSnapshots()
         {
             return await DbContext.Snapshots.AsNoTracking()
-                                  .Where(s => s.IsCompleted &&
-                                              s.HttpStatusCode == "200" &&
+                                  .Where(s => s.IsCompleted && s.HttpStatusCode == "200" &&
                                               (s.AddedSnapshotRules.Count > 0 || s.RemovedSnapshotRules.Count > 0))
                                   .GroupBy(s => s.FilterListId,
                                       (key, x) => x.OrderByDescending(y => y.CreatedDateUtc).First())
@@ -59,8 +53,7 @@ namespace FilterLists.Services.FilterList
 
         public async Task<ListDetailsDto> GetDetailsAsync(uint id)
         {
-            var details = await DbContext.FilterLists.AsNoTracking()
-                                         .ProjectTo<ListDetailsDto>()
+            var details = await DbContext.FilterLists.ProjectTo<ListDetailsDto>()
                                          .FirstAsync(x => x.Id == id)
                                          .FilterParentListFromMaintainerAdditionalLists();
             details.RuleCount = await GetActiveRuleCount(details);
@@ -79,8 +72,7 @@ namespace FilterLists.Services.FilterList
         private async Task<DateTime?> GetUpdatedDate(ListDetailsDto details)
         {
             var snapshotDates = DbContext.Snapshots.AsNoTracking()
-                                         .Where(s => s.FilterListId == details.Id &&
-                                                     s.IsCompleted &&
+                                         .Where(s => s.FilterListId == details.Id && s.IsCompleted &&
                                                      s.HttpStatusCode == "200" &&
                                                      (s.AddedSnapshotRules.Count > 0 ||
                                                       s.RemovedSnapshotRules.Count > 0))
