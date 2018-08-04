@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using JetBrains.Annotations;
@@ -12,9 +13,8 @@ namespace FilterLists.Services.FilterList
     [UsedImplicitly]
     public class FilterListService : Service
     {
-        public FilterListService(FilterListsDbContext dbContext) : base(dbContext)
+        public FilterListService(FilterListsDbContext dbContext, IMapper mapper) : base(dbContext, mapper)
         {
-            DbContext = dbContext;
         }
 
         public async Task<IEnumerable<ListSummaryDto>> GetAllSummariesAsync()
@@ -39,7 +39,9 @@ namespace FilterLists.Services.FilterList
         }
 
         private async Task<List<ListSummaryDto>> GetSummaryDtos() =>
-            await DbContext.FilterLists.OrderBy(l => l.Name).ProjectTo<ListSummaryDto>().ToListAsync();
+            await DbContext.FilterLists.OrderBy(l => l.Name)
+                           .ProjectTo<ListSummaryDto>(Mapper.ConfigurationProvider)
+                           .ToListAsync();
 
         private async Task<List<Data.Entities.Snapshot>> GetLatestSnapshots()
         {
@@ -53,7 +55,7 @@ namespace FilterLists.Services.FilterList
 
         public async Task<ListDetailsDto> GetDetailsAsync(uint id)
         {
-            var details = await DbContext.FilterLists.ProjectTo<ListDetailsDto>()
+            var details = await DbContext.FilterLists.ProjectTo<ListDetailsDto>(Mapper.ConfigurationProvider)
                                          .FirstAsync(x => x.Id == id)
                                          .FilterParentListFromMaintainerAdditionalLists();
             details.RuleCount = await GetActiveRuleCount(details);

@@ -10,7 +10,6 @@ namespace FilterLists.Services
     {
         public RuleService(FilterListsDbContext dbContext) : base(dbContext)
         {
-            DbContext = dbContext;
         }
 
         public async Task<int> GetCountAll() => await DbContext

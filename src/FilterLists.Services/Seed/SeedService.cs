@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using JetBrains.Annotations;
@@ -12,18 +13,17 @@ namespace FilterLists.Services.Seed
     [UsedImplicitly]
     public class SeedService : Service
     {
-        public SeedService(FilterListsDbContext dbContext) : base(dbContext)
+        public SeedService(FilterListsDbContext dbContext, IMapper mapper) : base(dbContext, mapper)
         {
-            DbContext = dbContext;
         }
 
         public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>() where TEntity : class =>
-            await DbContext.Set<TEntity>().ProjectTo<TSeedDto>().ToArrayAsync();
+            await DbContext.Set<TEntity>().ProjectTo<TSeedDto>(Mapper.ConfigurationProvider).ToArrayAsync();
 
         public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>(PropertyInfo primarySort)
             where TEntity : class => await DbContext.Set<TEntity>()
                                                     .OrderBy(x => primarySort.GetValue(x, null))
-                                                    .ProjectTo<TSeedDto>()
+                                                    .ProjectTo<TSeedDto>(Mapper.ConfigurationProvider)
                                                     .ToArrayAsync();
 
         public async Task<IEnumerable<TSeedDto>>
@@ -31,7 +31,7 @@ namespace FilterLists.Services.Seed
             where TEntity : class => await DbContext.Set<TEntity>()
                                                     .OrderBy(x => primarySort.GetValue(x, null))
                                                     .ThenBy(x => secondarySort.GetValue(x, null))
-                                                    .ProjectTo<TSeedDto>()
+                                                    .ProjectTo<TSeedDto>(Mapper.ConfigurationProvider)
                                                     .ToArrayAsync();
     }
 }
