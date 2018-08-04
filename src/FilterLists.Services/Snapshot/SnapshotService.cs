@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using JetBrains.Annotations;
@@ -15,9 +16,8 @@ namespace FilterLists.Services.Snapshot
         //TODO: update algorithm to support non-standard list sizes and formats (#200, #201)
         private readonly List<uint> ignoreLists = new List<uint> {48, 149, 173, 185, 186, 187, 188, 189, 352};
 
-        public SnapshotService(FilterListsDbContext dbContext) : base(dbContext)
+        public SnapshotService(FilterListsDbContext dbContext, IMapper mapper) : base(dbContext, mapper)
         {
-            DbContext = dbContext;
         }
 
         public async Task CaptureAsync(int batchSize)
@@ -46,7 +46,7 @@ namespace FilterLists.Services.Snapshot
                   .ThenBy(list =>
                       list.Snapshots.Select(ss => ss.CreatedDateUtc).OrderByDescending(sscd => sscd).FirstOrDefault())
                   .Take(batchSize)
-                  .ProjectTo<FilterListViewUrlDto>()
+                  .ProjectTo<FilterListViewUrlDto>(Mapper.ConfigurationProvider)
                   .ToListAsync();
 
         private IEnumerable<SnapshotDe> GetSnapshots(IEnumerable<FilterListViewUrlDto> lists) =>
