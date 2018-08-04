@@ -3343,8 +3343,7 @@
   {
     "id": 174,
     "chatUrl": null,
-    "description":
-      "Blockzilla is an unbloated and slim list, being light on system resources, yet still powerful against ads and trackers.",
+    "description": "Blockzilla is an optimized and slim list. Light on system resources yet still powerful against ads and trackers.",
     "descriptionSourceUrl": "https://github.com/zpacman/Blockzilla",
     "discontinuedDate": null,
     "donateUrl": null,
