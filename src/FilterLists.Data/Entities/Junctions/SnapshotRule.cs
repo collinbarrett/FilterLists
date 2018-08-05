@@ -2,7 +2,7 @@
 
 namespace FilterLists.Data.Entities.Junctions
 {
-    public class SnapshotRule : BaseJunction
+    public class SnapshotRule : BaseJunctionEntity
     {
         public DateTime ModifiedDateUtc { get; set; }
         public uint AddedBySnapshotId { get; set; }
