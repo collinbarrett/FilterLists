@@ -10,7 +10,7 @@ namespace FilterLists.Services.Extensions
                 destination.Add(item);
         }
 
-        public static IEnumerable<IEnumerable<T>> Batch<T>(this IEnumerable<T> source, int batchSize)
+        public static IEnumerable<IEnumerable<T>> GetBatches<T>(this IEnumerable<T> source, int batchSize)
         {
             var batches = new List<T>(batchSize);
             foreach (var item in source)

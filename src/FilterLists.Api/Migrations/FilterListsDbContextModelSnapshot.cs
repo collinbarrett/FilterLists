@@ -2,12 +2,14 @@
 
 using System;
 using FilterLists.Data;
+using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace FilterLists.Api.Migrations
 {
+    [UsedImplicitly]
     [DbContext(typeof(FilterListsDbContext))]
     internal class FilterListsDbContextModelSnapshot : ModelSnapshot
     {

@@ -10,9 +10,10 @@ namespace FilterLists.Api
             CreateWebHostBuilder(args).Build().Run();
         }
 
-        private static IWebHostBuilder CreateWebHostBuilder(string[] args) => WebHost.CreateDefaultBuilder(args)
-                                                                                     .UseUrls("http://localhost:5000")
-                                                                                     .UseApplicationInsights()
-                                                                                     .UseStartup<Startup>();
+        private static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                   .UseUrls("http://localhost:5000")
+                   .UseApplicationInsights()
+                   .UseStartup<Startup>();
     }
 }

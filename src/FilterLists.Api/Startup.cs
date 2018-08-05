@@ -24,12 +24,14 @@ namespace FilterLists.Api
 
         private IConfiguration Configuration { get; }
 
+        [UsedImplicitly]
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddFilterListsServices(Configuration);
             services.AddFilterListsApi();
         }
 
+        [UsedImplicitly]
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -50,33 +52,34 @@ namespace FilterLists.Api
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseMvc();
-            app.UseSwagger(c =>
+            app.UseSwagger(opts =>
             {
-                c.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.Host = httpReq.Host.Value);
+                opts.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.Host = httpReq.Host.Value);
                 //TODO: remove preprocessor directives
 #if RELEASE
-                c.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.BasePath = "/api");
+                opts.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.BasePath = "/api");
 #endif
-                c.RouteTemplate = "docs/{documentName}/swagger.json";
-                UseLowercaseControllerNameInSwaggerHack(c);
+                opts.RouteTemplate = "docs/{documentName}/swagger.json";
+                UseLowercaseControllerNameInSwaggerHack(opts);
             });
-            app.UseSwaggerUI(c =>
+            app.UseSwaggerUI(opts =>
             {
-                c.SwaggerEndpoint("v1/swagger.json", "FilterLists API v1");
-                c.DocumentTitle = "FilterLists API v1";
-                c.RoutePrefix = "docs";
+                opts.SwaggerEndpoint("v1/swagger.json", "FilterLists API v1");
+                opts.DocumentTitle = "FilterLists API v1";
+                opts.RoutePrefix = "docs";
             });
             MigrateAndSeedDatabase(app);
         }
 
         //TODO: remove hack (https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/74#issuecomment-386762178)
-        private static void UseLowercaseControllerNameInSwaggerHack(SwaggerOptions c)
+        private static void UseLowercaseControllerNameInSwaggerHack(SwaggerOptions opts)
         {
-            c.PreSerializeFilters.Add((document, request) =>
+            opts.PreSerializeFilters.Add((document, request) =>
             {
                 var paths = document.Paths.ToDictionary(item => item.Key.ToLowerInvariant(), item => item.Value);
                 document.Paths.Clear();
-                foreach (var pathItem in paths) document.Paths.Add(pathItem.Key, pathItem.Value);
+                foreach (var pathItem in paths)
+                    document.Paths.Add(pathItem.Key, pathItem.Value);
             });
         }
 
@@ -85,8 +88,9 @@ namespace FilterLists.Api
             var dataPath = Configuration.GetSection("DataDirectory").GetValue<string>("Path");
             using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
-                serviceScope.ServiceProvider.GetService<FilterListsDbContext>().Database.Migrate();
-                serviceScope.ServiceProvider.GetService<FilterListsDbContext>().SeedOrUpdate(dataPath);
+                var filterListsDbContext = serviceScope.ServiceProvider.GetService<FilterListsDbContext>();
+                filterListsDbContext.Database.Migrate();
+                filterListsDbContext.SeedOrUpdate(dataPath);
             }
         }
     }
