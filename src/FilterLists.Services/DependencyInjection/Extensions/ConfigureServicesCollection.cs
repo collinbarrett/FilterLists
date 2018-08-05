@@ -12,14 +12,14 @@ namespace FilterLists.Services.DependencyInjection.Extensions
 {
     public static class ConfigureServicesCollection
     {
-        public static void AddFilterListsServices(this IServiceCollection services, IConfiguration configuration)
+        public static void AddFilterListsServices(this IServiceCollection services, IConfiguration config)
         {
-            services.AddSingleton(c => configuration);
+            services.AddSingleton(c => config);
             services.AddEntityFrameworkMySql()
-                    .AddDbContextPool<FilterListsDbContext>(options =>
-                        options.UseMySql(configuration.GetConnectionString("FilterListsConnection"),
-                                   b => b.MigrationsAssembly("FilterLists.Api"))
-                               .EnableSensitiveDataLogging());
+                    .AddDbContextPool<FilterListsDbContext>(opts =>
+                        opts.UseMySql(config.GetConnectionString("FilterListsConnection"),
+                                x => x.MigrationsAssembly("FilterLists.Api"))
+                            .EnableSensitiveDataLogging());
             services.TryAddScoped<SnapshotService>();
             services.TryAddScoped<FilterListService>();
             services.TryAddScoped<RuleService>();

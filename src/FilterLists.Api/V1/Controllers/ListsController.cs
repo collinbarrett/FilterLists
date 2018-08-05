@@ -22,7 +22,7 @@ namespace FilterLists.Api.V1.Controllers
         [HttpGet]
         [Route("{id}")]
         //TODO: respond with appropriate exception if negative id queried
-        public async Task<IActionResult> GetById(int id) => Json(await filterListService.GetDetailsAsync((uint)id));
+        public async Task<IActionResult> GetById(int id) => Json(await filterListService.GetDetailsAsync((uint) id));
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() => Json(await SeedService.GetAllAsync<FilterList, FilterListSeedDto>());

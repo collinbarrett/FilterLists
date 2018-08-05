@@ -24,10 +24,10 @@ namespace FilterLists.Api.DependencyInjection.Extensions
 
         private static void ConfigureCookiePolicy(this IServiceCollection services)
         {
-            services.Configure<CookiePolicyOptions>(options =>
+            services.Configure<CookiePolicyOptions>(opts =>
             {
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
+                opts.CheckConsentNeeded = context => true;
+                opts.MinimumSameSitePolicy = SameSiteMode.None;
             });
         }
 
@@ -38,14 +38,14 @@ namespace FilterLists.Api.DependencyInjection.Extensions
 
         private static void AddRoutingCustom(this IServiceCollection services)
         {
-            services.AddRouting(options => options.LowercaseUrls = true);
+            services.AddRouting(opts => opts.LowercaseUrls = true);
         }
 
         private static void AddSwaggerGenCustom(this IServiceCollection services)
         {
-            services.AddSwaggerGen(c =>
+            services.AddSwaggerGen(opts =>
             {
-                c.SwaggerDoc("v1",
+                opts.SwaggerDoc("v1",
                     new Info
                     {
                         Title = "FilterLists API",
@@ -65,7 +65,7 @@ namespace FilterLists.Api.DependencyInjection.Extensions
                             Url = "https://github.com/collinbarrett/FilterLists/blob/master/LICENSE"
                         }
                     });
-                c.IncludeXmlComments(Path.Combine(PlatformServices.Default.Application.ApplicationBasePath,
+                opts.IncludeXmlComments(Path.Combine(PlatformServices.Default.Application.ApplicationBasePath,
                     "FilterLists.Api.xml"));
             });
         }

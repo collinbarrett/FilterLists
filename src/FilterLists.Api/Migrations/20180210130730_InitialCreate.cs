@@ -1,9 +1,11 @@
 ﻿using System;
+using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FilterLists.Api.Migrations
 {
+    [UsedImplicitly]
     public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -12,10 +14,10 @@ namespace FilterLists.Api.Migrations
                 "languages",
                 table => new
                 {
-                    Id = table.Column<int>("SMALLINT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("SMALLINT UNSIGNED")
                               .Annotation("MySql:ValueGenerationStrategy",
                                   MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP")
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn),
                     Iso6391 = table.Column<string>("VARCHAR(2)", nullable: true, defaultValueSql: "NULL"),
@@ -24,7 +26,7 @@ namespace FilterLists.Api.Migrations
                     Iso6392T = table.Column<string>("VARCHAR(3)", nullable: true, defaultValueSql: "NULL"),
                     Iso6393 = table.Column<string>("VARCHAR(3)", nullable: true, defaultValueSql: "NULL"),
                     LocalName = table.Column<string>("VARCHAR(126)", nullable: true, defaultValueSql: "NULL"),
-                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP"),
                     Name = table.Column<string>("VARCHAR(126)", nullable: true, defaultValueSql: "NULL")
                 },
                 constraints: table => { table.PrimaryKey("PK_languages", x => x.Id); });
@@ -33,17 +35,17 @@ namespace FilterLists.Api.Migrations
                 "licenses",
                 table => new
                 {
-                    Id = table.Column<int>("TINYINT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("TINYINT UNSIGNED")
                               .Annotation("MySql:ValueGenerationStrategy",
                                   MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP")
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn),
                     DescriptionUrl = table.Column<string>("TEXT", nullable: true),
-                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
-                    Name = table.Column<string>("VARCHAR(126)", nullable: false),
-                    PermissiveAdaptation = table.Column<bool>(nullable: false),
-                    PermissiveCommercial = table.Column<bool>(nullable: false)
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP"),
+                    Name = table.Column<string>("VARCHAR(126)"),
+                    PermissiveAdaptation = table.Column<bool>(),
+                    PermissiveCommercial = table.Column<bool>()
                 },
                 constraints: table => { table.PrimaryKey("PK_licenses", x => x.Id); });
 
@@ -51,16 +53,16 @@ namespace FilterLists.Api.Migrations
                 "maintainers",
                 table => new
                 {
-                    Id = table.Column<int>("SMALLINT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("SMALLINT UNSIGNED")
                               .Annotation("MySql:ValueGenerationStrategy",
                                   MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP")
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn),
                     EmailAddress = table.Column<string>("VARCHAR(126)", nullable: true, defaultValueSql: "NULL"),
                     HomeUrl = table.Column<string>("TEXT", nullable: true),
-                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
-                    Name = table.Column<string>("VARCHAR(126)", nullable: false),
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP"),
+                    Name = table.Column<string>("VARCHAR(126)"),
                     TwitterHandle = table.Column<string>("VARCHAR(126)", nullable: true, defaultValueSql: "NULL")
                 },
                 constraints: table => { table.PrimaryKey("PK_maintainers", x => x.Id); });
@@ -69,13 +71,13 @@ namespace FilterLists.Api.Migrations
                 "rules",
                 table => new
                 {
-                    Id = table.Column<int>("INT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("INT UNSIGNED")
                               .Annotation("MySql:ValueGenerationStrategy",
                                   MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP")
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn),
-                    Raw = table.Column<string>("VARCHAR(8192)", nullable: false)
+                    Raw = table.Column<string>("VARCHAR(8192)")
                 },
                 constraints: table => { table.PrimaryKey("PK_rules", x => x.Id); });
 
@@ -83,16 +85,16 @@ namespace FilterLists.Api.Migrations
                 "software",
                 table => new
                 {
-                    Id = table.Column<int>("TINYINT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("TINYINT UNSIGNED")
                               .Annotation("MySql:ValueGenerationStrategy",
                                   MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP")
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn),
                     DownloadUrl = table.Column<string>("TEXT", nullable: true),
                     HomeUrl = table.Column<string>("TEXT", nullable: true),
-                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
-                    Name = table.Column<string>("VARCHAR(126)", nullable: false)
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP"),
+                    Name = table.Column<string>("VARCHAR(126)")
                 },
                 constraints: table => { table.PrimaryKey("PK_software", x => x.Id); });
 
@@ -100,15 +102,15 @@ namespace FilterLists.Api.Migrations
                 "syntaxes",
                 table => new
                 {
-                    Id = table.Column<int>("TINYINT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("TINYINT UNSIGNED")
                               .Annotation("MySql:ValueGenerationStrategy",
                                   MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP")
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn),
                     DefinitionUrl = table.Column<string>("TEXT", nullable: true),
-                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
-                    Name = table.Column<string>("VARCHAR(126)", nullable: false)
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP"),
+                    Name = table.Column<string>("VARCHAR(126)")
                 },
                 constraints: table => { table.PrimaryKey("PK_syntaxes", x => x.Id); });
 
@@ -116,10 +118,10 @@ namespace FilterLists.Api.Migrations
                 "filterlists",
                 table => new
                 {
-                    Id = table.Column<int>("SMALLINT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("SMALLINT UNSIGNED")
                               .Annotation("MySql:ValueGenerationStrategy",
                                   MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP")
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn),
                     Description = table.Column<string>("TEXT", nullable: true),
@@ -131,8 +133,8 @@ namespace FilterLists.Api.Migrations
                     HomeUrl = table.Column<string>("TEXT", nullable: true),
                     IssuesUrl = table.Column<string>("TEXT", nullable: true),
                     LicenseId = table.Column<int>(nullable: true),
-                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
-                    Name = table.Column<string>("VARCHAR(126)", nullable: false),
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP"),
+                    Name = table.Column<string>("VARCHAR(126)"),
                     PolicyUrl = table.Column<string>("TEXT", nullable: true),
                     SubmissionUrl = table.Column<string>("TEXT", nullable: true),
                     SyntaxId = table.Column<int>(nullable: true),
@@ -159,9 +161,9 @@ namespace FilterLists.Api.Migrations
                 "software_syntaxes",
                 table => new
                 {
-                    SyntaxId = table.Column<int>(nullable: false),
-                    SoftwareId = table.Column<int>(nullable: false),
-                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
+                    SyntaxId = table.Column<int>(),
+                    SoftwareId = table.Column<int>(),
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP")
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn)
                 },
@@ -186,9 +188,9 @@ namespace FilterLists.Api.Migrations
                 "filterlists_languages",
                 table => new
                 {
-                    FilterListId = table.Column<int>(nullable: false),
-                    LanguageId = table.Column<int>(nullable: false),
-                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
+                    FilterListId = table.Column<int>(),
+                    LanguageId = table.Column<int>(),
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP")
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn)
                 },
@@ -213,9 +215,9 @@ namespace FilterLists.Api.Migrations
                 "filterlists_maintainers",
                 table => new
                 {
-                    FilterListId = table.Column<int>(nullable: false),
-                    MaintainerId = table.Column<int>(nullable: false),
-                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
+                    FilterListId = table.Column<int>(),
+                    MaintainerId = table.Column<int>(),
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP")
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn)
                 },
@@ -240,9 +242,9 @@ namespace FilterLists.Api.Migrations
                 "forks",
                 table => new
                 {
-                    ForkFilterListId = table.Column<int>(nullable: false),
-                    UpstreamFilterListId = table.Column<int>(nullable: false),
-                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
+                    ForkFilterListId = table.Column<int>(),
+                    UpstreamFilterListId = table.Column<int>(),
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP")
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn)
                 },
@@ -267,9 +269,9 @@ namespace FilterLists.Api.Migrations
                 "merges",
                 table => new
                 {
-                    MergeFilterListId = table.Column<int>(nullable: false),
-                    UpstreamFilterListId = table.Column<int>(nullable: false),
-                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
+                    MergeFilterListId = table.Column<int>(),
+                    UpstreamFilterListId = table.Column<int>(),
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP")
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn)
                 },
@@ -294,13 +296,13 @@ namespace FilterLists.Api.Migrations
                 "snapshots",
                 table => new
                 {
-                    Id = table.Column<int>("MEDIUMINT UNSIGNED", nullable: false)
+                    Id = table.Column<int>("MEDIUMINT UNSIGNED")
                               .Annotation("MySql:ValueGenerationStrategy",
                                   MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP")
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn),
-                    FilterListId = table.Column<int>(nullable: false),
+                    FilterListId = table.Column<int>(),
                     HttpStatusCode = table.Column<string>("VARCHAR(3)", nullable: true, defaultValueSql: "NULL")
                 },
                 constraints: table =>
@@ -318,12 +320,12 @@ namespace FilterLists.Api.Migrations
                 "snapshots_rules",
                 table => new
                 {
-                    AddedBySnapshotId = table.Column<int>(nullable: false),
-                    RuleId = table.Column<int>(nullable: false),
-                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false)
+                    AddedBySnapshotId = table.Column<int>(),
+                    RuleId = table.Column<int>(),
+                    CreatedDateUtc = table.Column<DateTime>("TIMESTAMP")
                                           .Annotation("MySql:ValueGenerationStrategy",
                                               MySqlValueGenerationStrategy.IdentityColumn),
-                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false),
+                    ModifiedDateUtc = table.Column<DateTime>("TIMESTAMP"),
                     RemovedBySnapshotId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>

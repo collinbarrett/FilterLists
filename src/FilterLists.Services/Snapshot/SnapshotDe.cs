@@ -104,7 +104,7 @@ namespace FilterLists.Services.Snapshot
 
         private IEnumerable<SnapshotBatchDe> GetSnapshotBatches(IEnumerable<string> rawRules)
         {
-            return rawRules.Batch(BatchSize)
+            return rawRules.GetBatches(BatchSize)
                            .Select(rawRuleBatch => new SnapshotBatchDe(dbContext, snapshot, rawRuleBatch));
         }
 
