@@ -6,14 +6,14 @@ namespace FilterLists.Api.V1.Controllers
 {
     public class RulesController : BaseController
     {
-        private readonly RuleService _ruleService;
+        private readonly RuleService ruleService;
 
         public RulesController(RuleService ruleService)
         {
-            _ruleService = ruleService;
+            this.ruleService = ruleService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index() => Json(await _ruleService.GetCountAll());
+        public async Task<IActionResult> Index() => Json(await ruleService.GetCountAll());
     }
 }

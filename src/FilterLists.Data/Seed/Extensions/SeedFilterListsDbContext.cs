@@ -27,12 +27,12 @@ namespace FilterLists.Data.Seed.Extensions
             dbContext.InsertOnDuplicateKeyUpdate<SoftwareSyntax>(dataPath);
         }
 
-        private static void InsertOnDuplicateKeyUpdate<TEntityType>(this DbContext dbContext, string dataPath)
-            where TEntityType : class
+        private static void InsertOnDuplicateKeyUpdate<TEntity>(this DbContext dbContext, string dataPath)
+            where TEntity : IBaseEntity
         {
-            var entityType = dbContext.Model.FindEntityType(typeof(TEntityType));
+            var entityType = dbContext.Model.FindEntityType(typeof(TEntity));
             var properties = GetPropertiesLessValueGeneratedTimestamps(entityType);
-            var values = CreateValues<TEntityType>(properties, dataPath);
+            var values = CreateValues<TEntity>(properties, dataPath);
             if (values == "") return;
             var columns = string.Join(", ", properties.Select(x => x.Name));
             var updates = CreateUpdates(properties);
@@ -50,28 +50,30 @@ namespace FilterLists.Data.Seed.Extensions
                              .ToList();
         }
 
-        private static string CreateValues<TEntityType>(IReadOnlyCollection<IProperty> properties, string dataPath)
+        private static string CreateValues<TEntity>(IReadOnlyCollection<IProperty> properties, string dataPath)
+            where TEntity : IBaseEntity
         {
-            return GetSeedRows<TEntityType>(dataPath)
+            return GetSeedRows<TEntity>(dataPath)
                    .Select(row => CreateRowValues(properties, row))
                    .Aggregate("", (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
         }
 
-        private static List<TEntityType> GetSeedRows<TEntityType>(string dataPath)
+        private static List<TEntity> GetSeedRows<TEntity>(string dataPath) where TEntity : IBaseEntity
         {
             try
             {
-                return JsonConvert.DeserializeObject<List<TEntityType>>(
-                    File.ReadAllText(dataPath + Path.DirectorySeparatorChar + typeof(TEntityType).Name + ".json"));
+                return JsonConvert.DeserializeObject<List<TEntity>>(
+                    File.ReadAllText(dataPath + Path.DirectorySeparatorChar + typeof(TEntity).Name + ".json"));
             }
             catch (FileNotFoundException e)
             {
                 Console.WriteLine(e.Message);
-                return new List<TEntityType>();
+                return new List<TEntity>();
             }
         }
 
-        private static string CreateRowValues<TEntityType>(IEnumerable<IProperty> properties, TEntityType row)
+        private static string CreateRowValues<TEntity>(IEnumerable<IProperty> properties, TEntity row)
+            where TEntity : IBaseEntity
         {
             return (from property in properties
                        let value = row.GetType().GetProperty(property.Name)?.GetValue(row)

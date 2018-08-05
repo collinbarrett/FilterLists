@@ -9,20 +9,20 @@ namespace FilterLists.Api.V1.Controllers
 {
     public class ListsController : BaseController
     {
-        private readonly FilterListService _filterListService;
+        private readonly FilterListService filterListService;
 
         public ListsController(SeedService seedService, FilterListService filterListService) : base(seedService)
         {
-            _filterListService = filterListService;
+            this.filterListService = filterListService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index() => Json(await _filterListService.GetAllSummariesAsync());
+        public async Task<IActionResult> Index() => Json(await filterListService.GetAllSummariesAsync());
 
         [HttpGet]
         [Route("{id}")]
         //TODO: respond with appropriate exception if negative id queried
-        public async Task<IActionResult> GetById(int id) => Json(await _filterListService.GetDetailsAsync((uint)id));
+        public async Task<IActionResult> GetById(int id) => Json(await filterListService.GetDetailsAsync((uint)id));
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() => Json(await SeedService.GetAllAsync<FilterList, FilterListSeedDto>());

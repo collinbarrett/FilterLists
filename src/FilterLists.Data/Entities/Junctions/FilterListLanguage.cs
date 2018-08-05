@@ -1,6 +1,6 @@
 ﻿namespace FilterLists.Data.Entities.Junctions
 {
-    public class FilterListLanguage : BaseJunction
+    public class FilterListLanguage : BaseJunctionEntity
     {
         public uint FilterListId { get; set; }
         public FilterList FilterList { get; set; }

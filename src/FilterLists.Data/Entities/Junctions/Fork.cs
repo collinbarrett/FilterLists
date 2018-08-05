@@ -1,6 +1,6 @@
 ﻿namespace FilterLists.Data.Entities.Junctions
 {
-    public class Fork : BaseJunction
+    public class Fork : BaseJunctionEntity
     {
         public uint ForkFilterListId { get; set; }
         public FilterList ForkFilterList { get; set; }

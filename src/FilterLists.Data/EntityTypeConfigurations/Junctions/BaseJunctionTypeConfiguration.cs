@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 namespace FilterLists.Data.EntityTypeConfigurations.Junctions
 {
     public class BaseJunctionTypeConfiguration<TJunction> : IEntityTypeConfiguration<TJunction>
-        where TJunction : BaseJunction
+        where TJunction : BaseJunctionEntity
     {
         public virtual void Configure(EntityTypeBuilder<TJunction> entityTypeBuilder)
         {

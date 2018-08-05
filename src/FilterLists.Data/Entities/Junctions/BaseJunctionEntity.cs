@@ -2,7 +2,7 @@
 
 namespace FilterLists.Data.Entities.Junctions
 {
-    public class BaseJunction
+    public class BaseJunctionEntity : IBaseEntity
     {
         public DateTime CreatedDateUtc { get; set; }
     }

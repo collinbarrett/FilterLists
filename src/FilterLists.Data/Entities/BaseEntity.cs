@@ -2,7 +2,7 @@
 
 namespace FilterLists.Data.Entities
 {
-    public class BaseEntity
+    public class BaseEntity : IBaseEntity
     {
         public uint Id { get; set; }
         public DateTime CreatedDateUtc { get; set; }

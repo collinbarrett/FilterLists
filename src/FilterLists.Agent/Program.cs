@@ -12,59 +12,53 @@ namespace FilterLists.Agent
     public static class Program
     {
         private const int BatchSize = 1;
-        private static TelemetryClient _telemetryClient;
-        private static ServiceProvider _serviceProvider;
-        private static IConfigurationRoot _configurationRoot;
+        private const string AiConfigSetting = "ApplicationInsights:InstrumentationKey";
+        private static IConfigurationRoot configurationRoot;
+        private static ServiceProvider serviceProvider;
+        private static TelemetryClient telemetryClient;
 
-        public static int Main()
+        public static void Main()
         {
-            InstantiateConfigurationRoot();
+            BuildConfigurationRoot();
             InstantiateTelemetryClient();
-            InstantiateServiceProvider();
+            BuildServiceProvider();
             CaptureSnapshots(BatchSize);
-            return 0;
         }
 
-        private static void InstantiateConfigurationRoot()
+        private static void BuildConfigurationRoot()
         {
-            _configurationRoot = new ConfigurationBuilder()
-                                 .SetBasePath(Directory.GetCurrentDirectory())
-                                 .AddJsonFile("appsettings.json", false, true)
-                                 .Build();
+            configurationRoot = new ConfigurationBuilder()
+                                .SetBasePath(Directory.GetCurrentDirectory())
+                                .AddJsonFile("appsettings.json", true)
+                                .Build();
         }
 
         private static void InstantiateTelemetryClient()
         {
-            TelemetryConfiguration.Active.InstrumentationKey =
-                _configurationRoot["ApplicationInsights:InstrumentationKey"];
-            _telemetryClient = new TelemetryClient();
+            TelemetryConfiguration.Active.InstrumentationKey = configurationRoot[AiConfigSetting];
+            telemetryClient = new TelemetryClient();
         }
 
-        private static void InstantiateServiceProvider()
+        private static void BuildServiceProvider()
         {
             var serviceCollection = new ServiceCollection();
-            ConfigureServices(serviceCollection);
-            _serviceProvider = serviceCollection.BuildServiceProvider();
-        }
-
-        private static void ConfigureServices(IServiceCollection serviceCollection)
-        {
-            serviceCollection.AddFilterListsServices(_configurationRoot);
+            serviceCollection.AddFilterListsServices(configurationRoot);
+            serviceProvider = serviceCollection.BuildServiceProvider();
         }
 
         private static void CaptureSnapshots(int batchSize)
         {
-            var snapshotService = _serviceProvider.GetService<SnapshotService>();
+            var snapshotService = serviceProvider.GetService<SnapshotService>();
             Log("Capturing FilterList snapshots...");
             snapshotService.CaptureAsync(batchSize).Wait();
-            Log("\nSnapshots captured.");
-            _telemetryClient.Flush();
+            Log(Environment.NewLine + "Snapshots captured.");
+            telemetryClient.Flush();
         }
 
         private static void Log(string message)
         {
             Console.WriteLine(message);
-            _telemetryClient.TrackTrace(message);
+            telemetryClient.TrackTrace(message);
         }
     }
 }
