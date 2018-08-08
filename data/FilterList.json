@@ -7411,14 +7411,14 @@
   },
   {
     "id": 383,
-    "chatUrl": null,
-    "description": "Removes tedious AD and AD frames from specific popular websites such as New York Times",
-    "descriptionSourceUrl": "https://austinhuang.me/0131-block-list/",
+    "chatUrl": "https://discord.gg/013MqTM1p1qm52VcZ",
+    "description": "Removes uncovered AD, AD frames, and adblock warnings from specific popular websites",
+    "descriptionSourceUrl": "https://austinhuang.me/0131-block-list",
     "discontinuedDate": null,
     "donateUrl": "https://austinhuang.me/donate",
     "emailAddress": "im@austinhuang.me",
     "forumUrl": null,
-    "homeUrl": "https://austinhuang.me/0131-block-list/",
+    "homeUrl": "https://austinhuang.me/0131-block-list",
     "issuesUrl": "https://github.com/austinhuang0131/0131-block-list/issues",
     "licenseId": 8,
     "name": "0131 Block List",
@@ -7426,7 +7426,7 @@
     "publishedDate": "2018-02-16T00:00:00",
     "submissionUrl": "https://austinhuang.me/contact",
     "syntaxId": 4,
-    "viewUrl": "https://raw.githubusercontent.com/austinhuang0131/0131-block-list/master/list.txt"
+    "viewUrl": "https://austinhuang.me/0131-block-list/list.txt"
   },
   {
     "id": 384,
