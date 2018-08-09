@@ -777,7 +777,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://hosts-file.net/mmt.txt"
+    "viewUrl": "https://hosts-file.net/mmt.txt"
   },
   {
     "id": 41,
@@ -797,7 +797,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://hosts-file.net/hjk.txt"
+    "viewUrl": "https://hosts-file.net/hjk.txt"
   },
   {
     "id": 42,
@@ -816,7 +816,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://hosts-file.net/hfs.txt"
+    "viewUrl": "https://hosts-file.net/hfs.txt"
   },
   {
     "id": 43,
@@ -835,7 +835,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://hosts-file.net/grm.txt"
+    "viewUrl": "https://hosts-file.net/grm.txt"
   },
   {
     "id": 44,
@@ -855,7 +855,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://hosts-file.net/fsa.txt"
+    "viewUrl": "https://hosts-file.net/fsa.txt"
   },
   {
     "id": 45,
@@ -875,7 +875,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://hosts-file.net/exp.txt"
+    "viewUrl": "https://hosts-file.net/exp.txt"
   },
   {
     "id": 46,
@@ -894,7 +894,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://hosts-file.net/emd.txt"
+    "viewUrl": "https://hosts-file.net/emd.txt"
   },
   {
     "id": 47,
@@ -913,7 +913,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://hosts-file.net/ad_servers.txt"
+    "viewUrl": "https://hosts-file.net/ad_servers.txt"
   },
   {
     "id": 48,
@@ -1067,7 +1067,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://hosts-file.net/hphosts-partial.txt"
+    "viewUrl": "https://hosts-file.net/hphosts-partial.txt"
   },
   {
     "id": 56,
@@ -1086,7 +1086,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/latvianlist+easylist.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/latvianlist+easylist.txt"
   },
   {
     "id": 57,
@@ -1105,7 +1105,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://hosts-file.net/pha.txt"
+    "viewUrl": "https://hosts-file.net/pha.txt"
   },
   {
     "id": 58,
@@ -1124,7 +1124,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://hosts-file.net/pup.txt"
+    "viewUrl": "https://hosts-file.net/pup.txt"
   },
   {
     "id": 59,
@@ -1413,7 +1413,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://hosts-file.net/wrz.txt"
+    "viewUrl": "https://hosts-file.net/wrz.txt"
   },
   {
     "id": 74,
@@ -1432,7 +1432,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://hosts-file.net/psh.txt"
+    "viewUrl": "https://hosts-file.net/psh.txt"
   },
   {
     "id": 75,
@@ -1508,7 +1508,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts"
   },
   {
     "id": 79,
@@ -1527,7 +1527,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts"
   },
   {
     "id": 80,
@@ -1546,7 +1546,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
   },
   {
     "id": 81,
@@ -1799,7 +1799,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts"
   },
   {
     "id": 94,
@@ -1838,7 +1838,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts"
   },
   {
     "id": 96,
@@ -1857,7 +1857,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-social/hosts"
   },
   {
     "id": 97,
@@ -1876,7 +1876,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt"
   },
   {
     "id": 98,
@@ -1895,7 +1895,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt"
   },
   {
     "id": 99,
@@ -2011,7 +2011,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn-social/hosts"
   },
   {
     "id": 105,
@@ -2030,7 +2030,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts"
   },
   {
     "id": 106,
@@ -2049,7 +2049,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts"
   },
   {
     "id": 107,
@@ -2068,7 +2068,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts"
   },
   {
     "id": 108,
@@ -2087,7 +2087,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn/hosts"
   },
   {
     "id": 109,
@@ -2106,7 +2106,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts"
   },
   {
     "id": 110,
@@ -2125,7 +2125,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews/hosts"
   },
   {
     "id": 111,
@@ -2144,7 +2144,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts"
   },
   {
     "id": 112,
@@ -2163,7 +2163,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts"
   },
   {
     "id": 113,
@@ -2259,7 +2259,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/rolist+easylist.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/rolist+easylist.txt"
   },
   {
     "id": 118,
@@ -2525,7 +2525,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/advblock.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/advblock.txt"
   },
   {
     "id": 132,
@@ -2563,7 +2563,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/ruadlist+easylist.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/ruadlist+easylist.txt"
   },
   {
     "id": 134,
@@ -2582,7 +2582,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/bitblock.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/bitblock.txt"
   },
   {
     "id": 135,
@@ -2640,7 +2640,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-	"viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts"
   },
   {
     "id": 138,
@@ -2889,7 +2889,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/cntblock.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/cntblock.txt"
   },
   {
     "id": 151,
@@ -3278,7 +3278,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/adwarefilters.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/adwarefilters.txt"
   },
   {
     "id": 171,
@@ -3556,7 +3556,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/fanboy-antifacebook.txt"
+    "viewUrl": "https://fanboy.co.nz/fanboy-antifacebook.txt"
   },
   {
     "id": 185,
@@ -3808,7 +3808,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/abpindo+easylist.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/abpindo+easylist.txt"
   },
   {
     "id": 198,
@@ -4142,7 +4142,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
   },
   {
     "id": 215,
@@ -4393,7 +4393,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/exceptionrules.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/exceptionrules.txt"
   },
   {
     "id": 228,
@@ -4431,7 +4431,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt"
   },
   {
     "id": 230,
@@ -4508,7 +4508,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt"
   },
   {
     "id": 234,
@@ -4546,7 +4546,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt"
   },
   {
     "id": 236,
@@ -4565,7 +4565,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt"
   },
   {
     "id": 237,
@@ -4623,7 +4623,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easytest.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easytest.txt"
   },
   {
     "id": 240,
@@ -4642,7 +4642,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy_nointernational.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy_nointernational.txt"
   },
   {
     "id": 241,
@@ -4661,7 +4661,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy+easylist.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy+easylist.txt"
   },
   {
     "id": 242,
@@ -4700,7 +4700,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noadult.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noadult.txt"
   },
   {
     "id": 244,
@@ -4720,7 +4720,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noelemhide.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noelemhide.txt"
   },
   {
     "id": 245,
@@ -4759,7 +4759,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easylistspanish.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistspanish.txt"
   },
   {
     "id": 247,
@@ -4779,7 +4779,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt"
   },
   {
     "id": 248,
@@ -4798,7 +4798,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easylistlithuania+easylist.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistlithuania+easylist.txt"
   },
   {
     "id": 249,
@@ -4817,7 +4817,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/fanboy-antifonts.txt"
+    "viewUrl": "https://fanboy.co.nz/fanboy-antifonts.txt"
   },
   {
     "id": 250,
@@ -4836,7 +4836,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/fanboy-cookiemonster.txt"
+    "viewUrl": "https://fanboy.co.nz/fanboy-cookiemonster.txt"
   },
   {
     "id": 251,
@@ -4914,7 +4914,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/fanboy-vietnam.txt"
+    "viewUrl": "https://fanboy.co.nz/fanboy-vietnam.txt"
   },
   {
     "id": 255,
@@ -4934,7 +4934,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/r/fanboy-ultimate.txt"
+    "viewUrl": "https://fanboy.co.nz/r/fanboy-ultimate.txt"
   },
   {
     "id": 256,
@@ -4953,7 +4953,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/fanboy-turkish.txt"
+    "viewUrl": "https://fanboy.co.nz/fanboy-turkish.txt"
   },
   {
     "id": 257,
@@ -4972,7 +4972,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/fanboy-swedish.txt"
+    "viewUrl": "https://fanboy.co.nz/fanboy-swedish.txt"
   },
   {
     "id": 258,
@@ -4991,7 +4991,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/fanboy-espanol.txt"
+    "viewUrl": "https://fanboy.co.nz/fanboy-espanol.txt"
   },
   {
     "id": 259,
@@ -5010,7 +5010,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-social.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-social.txt"
   },
   {
     "id": 260,
@@ -5029,7 +5029,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/fanboy-polish.txt"
+    "viewUrl": "https://fanboy.co.nz/fanboy-polish.txt"
   },
   {
     "id": 261,
@@ -5048,7 +5048,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/fanboy-korean.txt"
+    "viewUrl": "https://fanboy.co.nz/fanboy-korean.txt"
   },
   {
     "id": 262,
@@ -5067,7 +5067,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/fanboy-japanese.txt"
+    "viewUrl": "https://fanboy.co.nz/fanboy-japanese.txt"
   },
   {
     "id": 263,
@@ -5086,7 +5086,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/israelilist/IsraelList.txt"
+    "viewUrl": "https://fanboy.co.nz/israelilist/IsraelList.txt"
   },
   {
     "id": 264,
@@ -5105,7 +5105,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/fanboy-indian.txt"
+    "viewUrl": "https://fanboy.co.nz/fanboy-indian.txt"
   },
   {
     "id": 265,
@@ -5125,7 +5125,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/enhancedstats.txt"
+    "viewUrl": "https://fanboy.co.nz/enhancedstats.txt"
   },
   {
     "id": 266,
@@ -5144,7 +5144,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://fanboy.co.nz/r/fanboy-complete.txt"
+    "viewUrl": "https://fanboy.co.nz/r/fanboy-complete.txt"
   },
   {
     "id": 267,
@@ -5202,7 +5202,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly+easylist.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly+easylist.txt"
   },
   {
     "id": 270,
@@ -5241,7 +5241,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt"
   },
   {
     "id": 272,
@@ -5472,7 +5472,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/bulgarian_list+easylist.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/bulgarian_list+easylist.txt"
   },
   {
     "id": 284,
@@ -5588,7 +5588,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly.txt"
   },
   {
     "id": 290,
@@ -5607,7 +5607,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/israellist+easylist.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/israellist+easylist.txt"
   },
   {
     "id": 291,
@@ -5646,7 +5646,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany+easylist.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany+easylist.txt"
   },
   {
     "id": 293,
@@ -5666,7 +5666,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany.txt"
   },
   {
     "id": 294,
@@ -5685,7 +5685,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch+easylist.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch+easylist.txt"
   },
   {
     "id": 295,
@@ -5705,7 +5705,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch.txt"
   },
   {
     "id": 296,
@@ -5743,7 +5743,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easylistczechslovak+easylist.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistczechslovak+easylist.txt"
   },
   {
     "id": 298,
@@ -5781,7 +5781,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt"
   },
   {
     "id": 300,
@@ -5800,7 +5800,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina.txt"
   },
   {
     "id": 301,
@@ -5916,7 +5916,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-	"viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt"
   },
   {
     "id": 307,
