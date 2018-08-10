@@ -776,7 +776,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://hosts-file.net/mmt.txt"
   },
   {
@@ -796,7 +796,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://hosts-file.net/hjk.txt"
   },
   {
@@ -815,7 +815,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://hosts-file.net/hfs.txt"
   },
   {
@@ -834,7 +834,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://hosts-file.net/grm.txt"
   },
   {
@@ -854,7 +854,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://hosts-file.net/fsa.txt"
   },
   {
@@ -874,7 +874,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://hosts-file.net/exp.txt"
   },
   {
@@ -893,7 +893,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://hosts-file.net/emd.txt"
   },
   {
@@ -912,7 +912,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://hosts-file.net/ad_servers.txt"
   },
   {
@@ -1066,7 +1066,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://hosts-file.net/hphosts-partial.txt"
   },
   {
@@ -1085,7 +1085,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/latvianlist+easylist.txt"
   },
   {
@@ -1104,7 +1104,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://hosts-file.net/pha.txt"
   },
   {
@@ -1123,7 +1123,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://hosts-file.net/pup.txt"
   },
   {
@@ -1412,7 +1412,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://hosts-file.net/wrz.txt"
   },
   {
@@ -1431,7 +1431,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://hosts-file.net/psh.txt"
   },
   {
@@ -1507,7 +1507,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts"
   },
   {
@@ -1526,7 +1526,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts"
   },
   {
@@ -1545,7 +1545,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
   },
   {
@@ -1584,7 +1584,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt"
   },
   {
@@ -1604,7 +1604,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/jspenguin2017/uBlockProtector/master/uBlockProtectorList.txt"
   },
   {
@@ -1644,7 +1644,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/IDKwhattoputhere/uBlock-Filters-Plus/master/uBlock-Filters-Plus.txt"
   },
   {
@@ -1663,7 +1663,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/byaka/ublock-antiskimming-list/master/build/data.txt"
   },
   {
@@ -1779,7 +1779,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/bkrucarci/turk-adlist/master/hosts"
   },
   {
@@ -1798,7 +1798,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts"
   },
   {
@@ -1818,7 +1818,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://www.topcashback.com/Misc/AdBlockWhiteList.aspx"
   },
   {
@@ -1837,7 +1837,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts"
   },
   {
@@ -1856,7 +1856,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-social/hosts"
   },
   {
@@ -1875,7 +1875,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt"
   },
   {
@@ -1894,7 +1894,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt"
   },
   {
@@ -2010,7 +2010,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn-social/hosts"
   },
   {
@@ -2029,7 +2029,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts"
   },
   {
@@ -2048,7 +2048,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts"
   },
   {
@@ -2067,7 +2067,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts"
   },
   {
@@ -2086,7 +2086,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn/hosts"
   },
   {
@@ -2105,7 +2105,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts"
   },
   {
@@ -2124,7 +2124,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews/hosts"
   },
   {
@@ -2143,7 +2143,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts"
   },
   {
@@ -2162,7 +2162,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts"
   },
   {
@@ -2258,7 +2258,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/rolist+easylist.txt"
   },
   {
@@ -2524,7 +2524,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/advblock.txt"
   },
   {
@@ -2562,7 +2562,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/ruadlist+easylist.txt"
   },
   {
@@ -2581,7 +2581,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/bitblock.txt"
   },
   {
@@ -2639,7 +2639,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts"
   },
   {
@@ -2888,7 +2888,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/cntblock.txt"
   },
   {
@@ -3277,7 +3277,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/adwarefilters.txt"
   },
   {
@@ -3555,7 +3555,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-antifacebook.txt"
   },
   {
@@ -3807,7 +3807,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/abpindo+easylist.txt"
   },
   {
@@ -4141,7 +4141,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
   },
   {
@@ -4392,7 +4392,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/exceptionrules.txt"
   },
   {
@@ -4430,7 +4430,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt"
   },
   {
@@ -4507,7 +4507,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt"
   },
   {
@@ -4545,7 +4545,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt"
   },
   {
@@ -4564,7 +4564,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt"
   },
   {
@@ -4622,7 +4622,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easytest.txt"
   },
   {
@@ -4641,7 +4641,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy_nointernational.txt"
   },
   {
@@ -4660,7 +4660,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy+easylist.txt"
   },
   {
@@ -4699,7 +4699,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noadult.txt"
   },
   {
@@ -4719,7 +4719,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noelemhide.txt"
   },
   {
@@ -4758,7 +4758,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistspanish.txt"
   },
   {
@@ -4778,7 +4778,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt"
   },
   {
@@ -4797,7 +4797,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistlithuania+easylist.txt"
   },
   {
@@ -4816,7 +4816,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-antifonts.txt"
   },
   {
@@ -4835,7 +4835,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-cookiemonster.txt"
   },
   {
@@ -4913,7 +4913,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-vietnam.txt"
   },
   {
@@ -4933,7 +4933,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/r/fanboy-ultimate.txt"
   },
   {
@@ -4952,7 +4952,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-turkish.txt"
   },
   {
@@ -4971,7 +4971,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-swedish.txt"
   },
   {
@@ -4990,7 +4990,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-espanol.txt"
   },
   {
@@ -5009,7 +5009,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-social.txt"
   },
   {
@@ -5028,7 +5028,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-polish.txt"
   },
   {
@@ -5047,7 +5047,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-korean.txt"
   },
   {
@@ -5066,7 +5066,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-japanese.txt"
   },
   {
@@ -5085,7 +5085,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/israelilist/IsraelList.txt"
   },
   {
@@ -5104,7 +5104,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-indian.txt"
   },
   {
@@ -5124,7 +5124,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/enhancedstats.txt"
   },
   {
@@ -5143,7 +5143,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/r/fanboy-complete.txt"
   },
   {
@@ -5201,7 +5201,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly+easylist.txt"
   },
   {
@@ -5240,7 +5240,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt"
   },
   {
@@ -5471,7 +5471,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/bulgarian_list+easylist.txt"
   },
   {
@@ -5587,7 +5587,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly.txt"
   },
   {
@@ -5606,7 +5606,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/israellist+easylist.txt"
   },
   {
@@ -5645,7 +5645,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany+easylist.txt"
   },
   {
@@ -5665,7 +5665,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany.txt"
   },
   {
@@ -5684,7 +5684,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch+easylist.txt"
   },
   {
@@ -5704,7 +5704,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch.txt"
   },
   {
@@ -5742,7 +5742,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistczechslovak+easylist.txt"
   },
   {
@@ -5780,7 +5780,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt"
   },
   {
@@ -5799,7 +5799,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina.txt"
   },
   {
@@ -5915,7 +5915,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt"
   },
   {
@@ -7989,7 +7989,7 @@
     "id": 417,
     "chatUrl": null,
     "description":
-      "This is a community-contributed list of referrer spammers maintained by Matomo, the leading open source web analytics platform.",
+      "This is a community-contributed list of referrer spammers maintained by Matomo, the leading open source web analytics platform.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -8028,7 +8028,7 @@
     "id": 419,
     "chatUrl": null,
     "description":
-      "Spammers get paid by businesses whose websites they advertise. We refuse to accept spam from any of following domains or advertising any of these domains, as we don't want to buy from spammers. We publish this list for informational purposes only.",
+      "Spammers get paid by businesses whose websites they advertise. We refuse to accept spam from any of following domains or advertising any of these domains, as we don't want to buy from spammers. We publish this list for informational purposes only.",
     "descriptionSourceUrl": "https://www.joewein.net/spam/blacklist.htm",
     "discontinuedDate": null,
     "donateUrl": "https://www.joewein.net/spam/blacklist.htm",
@@ -8085,7 +8085,7 @@
   {
     "id": 422,
     "chatUrl": null,
-    "description": "List of shit websites for Google Personal Blocklist or Google Hit Hider by Domain",
+    "description": "List of shit websites for Google Personal Blocklist or Google Hit Hider by Domain",
     "descriptionSourceUrl": "https://github.com/ligyxy/Blocklist#blocklist",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -8184,7 +8184,7 @@
     "id": 427,
     "chatUrl": null,
     "description":
-      "The phishing bad sites is updated using data from www.phishtank.com once per day. The domains included are known to be fraudulent and generally dangerous.",
+      "The phishing bad sites is updated using data from www.phishtank.com once per day. The domains included are known to be fraudulent and generally dangerous.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": null,
@@ -8223,7 +8223,7 @@
     "id": 429,
     "chatUrl": null,
     "description":
-      "International List consists mostly of static cosmetic filters. English and few German websites are included. As regards tracking filters, they have been partly copied from other privacy filter lists.",
+      "International List consists mostly of static cosmetic filters. English and few German websites are included. As regards tracking filters, they have been partly copied from other privacy filter lists.",
     "descriptionSourceUrl": "https://github.com/betterwebleon/international-list#international-list",
     "discontinuedDate": null,
     "donateUrl": null,
