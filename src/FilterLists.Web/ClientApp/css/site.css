@@ -1,6 +1,4 @@
-body, h2, h3, h4, h5, blockquote {
-    font-size: 16px;
-}
+body, h2, h3, h4, h5, blockquote { font-size: 16px; }
 
 .rt-tr {
     -ms-align-items: center;
@@ -9,15 +7,11 @@ body, h2, h3, h4, h5, blockquote {
     align-items: center;
 }
 
-.rt-thead.-header, .rt-thead.-filters, .rt-tbody {
-    min-width: 350px;
-}
+.rt-thead .-header, .rt-thead .-filters, .rt-tbody { min-width: 350px; }
 
 .fl-btn-details-action {
     margin-bottom: .2rem;
     max-width: 90px;
 }
 
-.fl-description {
-    margin: 0 0 .5rem;
-}
+.fl-description { margin: 0 0 .5rem; }
