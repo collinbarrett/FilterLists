@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Extensions;
+using FilterLists.Services.Snapshot.Models;
 
 namespace FilterLists.Services.Snapshot
 {
@@ -60,7 +61,7 @@ namespace FilterLists.Services.Snapshot
             }
             catch (WebException we)
             {
-                snapshot.HttpStatusCode = ((int) ((HttpWebResponse) we.Response).StatusCode).ToString();
+                snapshot.HttpStatusCode = ((int)((HttpWebResponse)we.Response).StatusCode).ToString();
                 return null;
             }
             catch (Exception)
@@ -78,7 +79,7 @@ namespace FilterLists.Services.Snapshot
                 httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(UserAgentString);
                 using (var httpResponseMessage = await httpClient.GetAsync(list.ViewUrl))
                 {
-                    snapshot.HttpStatusCode = ((int) httpResponseMessage.StatusCode).ToString();
+                    snapshot.HttpStatusCode = ((int)httpResponseMessage.StatusCode).ToString();
                     if (httpResponseMessage.IsSuccessStatusCode)
                         return await httpResponseMessage.Content.ReadAsStringAsync();
                 }
@@ -102,11 +103,9 @@ namespace FilterLists.Services.Snapshot
             return new HashSet<string>(rawRules.Where(rr => rr != null));
         }
 
-        private IEnumerable<SnapshotBatchDe> GetSnapshotBatches(IEnumerable<string> rawRules)
-        {
-            return rawRules.GetBatches(BatchSize)
-                           .Select(rawRuleBatch => new SnapshotBatchDe(dbContext, snapshot, rawRuleBatch));
-        }
+        private IEnumerable<SnapshotBatchDe> GetSnapshotBatches(IEnumerable<string> rawRules) =>
+            rawRules.GetBatches(BatchSize)
+                    .Select(rawRuleBatch => new SnapshotBatchDe(dbContext, snapshot, rawRuleBatch));
 
         private static async Task SaveSnapshotBatches(IEnumerable<SnapshotBatchDe> snapshotBatches)
         {
@@ -122,12 +121,10 @@ namespace FilterLists.Services.Snapshot
             await dbContext.SaveChangesAsync();
         }
 
-        private IQueryable<SnapshotRule> GetExistingSnapshotRules()
-        {
-            return dbContext.SnapshotRules.Where(sr =>
+        private IQueryable<SnapshotRule> GetExistingSnapshotRules() =>
+            dbContext.SnapshotRules.Where(sr =>
                 sr.AddedBySnapshot.FilterListId == list.Id && sr.AddedBySnapshot != snapshot &&
                 sr.RemovedBySnapshot == null);
-        }
 
         private void UpdateRemovedSnapshotRules(IQueryable<SnapshotRule> existingSnapshotRules)
         {

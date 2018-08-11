@@ -1,6 +1,6 @@
 ﻿using JetBrains.Annotations;
 
-namespace FilterLists.Services.Snapshot
+namespace FilterLists.Services.Snapshot.Models
 {
     [UsedImplicitly]
     public class FilterListViewUrlDto

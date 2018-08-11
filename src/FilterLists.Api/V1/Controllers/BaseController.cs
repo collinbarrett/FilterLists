@@ -14,9 +14,6 @@ namespace FilterLists.Api.V1.Controllers
         {
         }
 
-        protected BaseController(SeedService seedService)
-        {
-            SeedService = seedService;
-        }
+        protected BaseController(SeedService seedService) => SeedService = seedService;
     }
 }

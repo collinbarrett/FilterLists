@@ -10,11 +10,10 @@ namespace FilterLists.Web
     [UsedImplicitly]
     public class Startup
     {
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddFilterListsWeb();
-        }
+        [UsedImplicitly]
+        public void ConfigureServices(IServiceCollection services) => services.AddFilterListsWeb();
 
+        [UsedImplicitly]
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())

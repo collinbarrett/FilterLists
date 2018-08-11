@@ -13,18 +13,14 @@ namespace FilterLists.Web.DependencyInjection.Extensions
             services.AddMvcCustom();
         }
 
-        private static void ConfigureCookiePolicy(this IServiceCollection services)
-        {
+        private static void ConfigureCookiePolicy(this IServiceCollection services) =>
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-        }
 
-        private static void AddMvcCustom(this IServiceCollection services)
-        {
+        private static void AddMvcCustom(this IServiceCollection services) =>
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-        }
     }
 }

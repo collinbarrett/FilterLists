@@ -8,10 +8,7 @@ namespace FilterLists.Api.V1.Controllers
     {
         private readonly RuleService ruleService;
 
-        public RulesController(RuleService ruleService)
-        {
-            this.ruleService = ruleService;
-        }
+        public RulesController(RuleService ruleService) => this.ruleService = ruleService;
 
         [HttpGet]
         public async Task<IActionResult> Index() => Json(await ruleService.GetCountAll());

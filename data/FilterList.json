@@ -2837,7 +2837,8 @@
   {
     "id": 148,
     "chatUrl": null,
-    "description": "I make supplemental filters in Adblock Plus to block garbage on webpages not blocked by other lists. I use many regular expressions, a few domain filters, but no CSS filters.",
+    "description":
+      "I make supplemental filters in Adblock Plus to block garbage on webpages not blocked by other lists. I use many regular expressions, a few domain filters, but no CSS filters.",
     "descriptionSourceUrl": "https://satterly.neocities.org/abp_filters.html",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -3343,7 +3344,8 @@
   {
     "id": 174,
     "chatUrl": null,
-    "description": "Blockzilla is an optimized and slim list. Light on system resources yet still powerful against ads and trackers.",
+    "description":
+      "Blockzilla is an optimized and slim list. Light on system resources yet still powerful against ads and trackers.",
     "descriptionSourceUrl": "https://github.com/zpacman/Blockzilla",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -8257,12 +8259,14 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts"
+    "viewUrl":
+      "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts"
   },
   {
     "id": 431,
     "chatUrl": null,
-    "description": "Have you ever felt bothered by how many websites still think that everyone are using narrow monitors? Well, here's how to stretch them out like a piece of gum!",
+    "description":
+      "Have you ever felt bothered by how many websites still think that everyone are using narrow monitors? Well, here's how to stretch them out like a piece of gum!",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
@@ -8276,6 +8280,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 4,
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Website%20Stretcher.txt"
+    "viewUrl":
+      "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Website%20Stretcher.txt"
   }
 ]

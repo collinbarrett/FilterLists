@@ -25,13 +25,11 @@ namespace FilterLists.Agent
             CaptureSnapshots(BatchSize);
         }
 
-        private static void BuildConfigurationRoot()
-        {
+        private static void BuildConfigurationRoot() =>
             configurationRoot = new ConfigurationBuilder()
                                 .SetBasePath(Directory.GetCurrentDirectory())
                                 .AddJsonFile("appsettings.json", true)
                                 .Build();
-        }
 
         private static void InstantiateTelemetryClient()
         {
@@ -42,7 +40,7 @@ namespace FilterLists.Agent
         private static void BuildServiceProvider()
         {
             var serviceCollection = new ServiceCollection();
-            serviceCollection.AddFilterListsServices(configurationRoot);
+            serviceCollection.AddFilterListsAgentServices(configurationRoot);
             serviceProvider = serviceCollection.BuildServiceProvider();
         }
 

@@ -10,10 +10,7 @@ namespace FilterLists.Services
         protected readonly FilterListsDbContext DbContext;
         protected readonly IMapper Mapper;
 
-        public Service(FilterListsDbContext dbContext)
-        {
-            DbContext = dbContext;
-        }
+        public Service(FilterListsDbContext dbContext) => DbContext = dbContext;
 
         public Service(FilterListsDbContext dbContext, IMapper mapper)
         {

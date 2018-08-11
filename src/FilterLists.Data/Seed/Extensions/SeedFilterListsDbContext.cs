@@ -42,21 +42,17 @@ namespace FilterLists.Data.Seed.Extensions
             dbContext.SaveChanges();
         }
 
-        private static List<IProperty> GetPropertiesLessValueGeneratedTimestamps(IEntityType entityType)
-        {
-            //TODO: get seed properties dynamically from JSON
-            return entityType.GetProperties()
-                             .Where(x => !new List<string> {"CreatedDateUtc", "ModifiedDateUtc"}.Contains(x.Name))
-                             .ToList();
-        }
+        //TODO: get seed properties dynamically from JSON
+        private static List<IProperty> GetPropertiesLessValueGeneratedTimestamps(IEntityType entityType) =>
+            entityType.GetProperties()
+                      .Where(x => !new List<string> {"CreatedDateUtc", "ModifiedDateUtc"}.Contains(x.Name))
+                      .ToList();
 
         private static string CreateValues<TEntity>(IReadOnlyCollection<IProperty> properties, string dataPath)
-            where TEntity : IBaseEntity
-        {
-            return GetSeedRows<TEntity>(dataPath)
-                   .Select(row => CreateRowValues(properties, row))
-                   .Aggregate("", (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
-        }
+            where TEntity : IBaseEntity =>
+            GetSeedRows<TEntity>(dataPath)
+                .Select(row => CreateRowValues(properties, row))
+                .Aggregate("", (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
 
         private static List<TEntity> GetSeedRows<TEntity>(string dataPath) where TEntity : IBaseEntity
         {
@@ -73,13 +69,11 @@ namespace FilterLists.Data.Seed.Extensions
         }
 
         private static string CreateRowValues<TEntity>(IEnumerable<IProperty> properties, TEntity row)
-            where TEntity : IBaseEntity
-        {
-            return (from property in properties
-                       let value = row.GetType().GetProperty(property.Name)?.GetValue(row)
-                       select FormatDataForMySql(property, value)).Aggregate("",
-                       (rowValues, value) => rowValues == "" ? "(" + value : rowValues + ", " + value) + ")";
-        }
+            where TEntity : IBaseEntity =>
+            (from property in properties
+                let value = row.GetType().GetProperty(property.Name)?.GetValue(row)
+                select FormatDataForMySql(property, value)).Aggregate("",
+                (rowValues, value) => rowValues == "" ? "(" + value : rowValues + ", " + value) + ")";
 
         private static object FormatDataForMySql(IProperty property, object value)
         {
@@ -89,7 +83,7 @@ namespace FilterLists.Data.Seed.Extensions
             if (property.ClrType == typeof(bool))
                 return Convert.ToInt32(value);
             if (property.ClrType == typeof(DateTime?))
-                return "'" + ((DateTime) value).ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                return "'" + ((DateTime)value).ToString("yyyy-MM-dd HH:mm:ss") + "'";
             return value;
         }
 
@@ -100,7 +94,8 @@ namespace FilterLists.Data.Seed.Extensions
                     where !property.IsPrimaryKey()
                     select property.Name + " = VALUES(" + property.Name + ")").Aggregate("",
                     (updates, columnUpdates) => updates == "" ? columnUpdates : updates + ", " + columnUpdates);
-            if (update == "") update = GetUpdateUnchangedColumnHack(properties);
+            if (update == "")
+                update = GetUpdateUnchangedColumnHack(properties);
             return update;
         }
 
