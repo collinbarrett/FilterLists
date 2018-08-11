@@ -20,9 +20,9 @@ namespace FilterLists.Services.FilterList
 
         private void CreateListSummaryDtoMap() =>
             CreateMap<Data.Entities.FilterList, ListSummaryDto>()
+                .ForMember(dto => dto.AddedDate, conf => conf.MapFrom(list => list.CreatedDateUtc))
                 .ForMember(dto => dto.Languages,
                     conf => conf.MapFrom(list => list.FilterListLanguages.Select(listLangs => listLangs.Language)))
-                .ForMember(dto => dto.AddedDate, conf => conf.MapFrom(list => list.CreatedDateUtc))
                 .ForMember(dto => dto.UpdatedDate,
                     conf => conf.MapFrom(list =>
                         list.Snapshots.Where(s =>
@@ -35,12 +35,29 @@ namespace FilterLists.Services.FilterList
 
         private void CreateListDetailsDtoMap() =>
             CreateMap<Data.Entities.FilterList, ListDetailsDto>()
+                .ForMember(dto => dto.AddedDate, conf => conf.MapFrom(list => list.CreatedDateUtc))
                 .ForMember(dto => dto.Languages,
                     conf => conf.MapFrom(list => list.FilterListLanguages.Select(listLangs => listLangs.Language.Name)))
                 .ForMember(dto => dto.Maintainers,
                     conf => conf.MapFrom(list =>
                         list.FilterListMaintainers.Select(listMaints => listMaints.Maintainer)))
-                .ForMember(dto => dto.AddedDate, conf => conf.MapFrom(list => list.CreatedDateUtc));
+                .ForMember(dto => dto.RuleCount,
+                    conf => conf.MapFrom(list =>
+                        list.Snapshots.Where(s => s.IsCompleted && s.HttpStatusCode == "200")
+                            .SelectMany(sr => sr.AddedSnapshotRules)
+                            .Count() -
+                        list.Snapshots.Where(s => s.IsCompleted && s.HttpStatusCode == "200")
+                            .SelectMany(sr => sr.RemovedSnapshotRules)
+                            .Count()))
+                .ForMember(dto => dto.UpdatedDate,
+                    conf => conf.MapFrom(list =>
+                        list.Snapshots.Where(s =>
+                                s.IsCompleted && s.HttpStatusCode == "200" &&
+                                (s.AddedSnapshotRules.Count > 0 || s.RemovedSnapshotRules.Count > 0))
+                            .OrderByDescending(s => s.CreatedDateUtc)
+                            .Select(s => s.CreatedDateUtc)
+                            .Cast<DateTime?>()
+                            .FirstOrDefault()));
 
         private void CreateListMaintainerDtoMap() =>
             CreateMap<Maintainer, ListMaintainerDto>()
