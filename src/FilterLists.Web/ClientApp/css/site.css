@@ -9,6 +9,10 @@ body, h2, h3, h4, h5, blockquote {
     align-items: center;
 }
 
+.rt-thead.-header, .rt-thead.-filters, .rt-tbody {
+    min-width: 350px;
+}
+
 .fl-btn-details-action {
     margin-bottom: .2rem;
     max-width: 90px;
