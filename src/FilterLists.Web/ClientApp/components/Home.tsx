@@ -3,6 +3,7 @@ import { RouteComponentProps } from "react-router";
 import "isomorphic-fetch";
 import ReactTable from "react-table"
 import "react-table/react-table.css"
+import "./css/site.css";
 import ListDetails from "./ListDetails";
 import * as moment from "moment";
 
