@@ -18,39 +18,8 @@ namespace FilterLists.Services.FilterList
         {
         }
 
-        public async Task<IEnumerable<ListSummaryDto>> GetAllSummariesAsync()
-        {
-            var summaries = await GetSummaryDtos();
-            var latestSnapshots = await GetLatestSnapshots();
-            return summaries.GroupJoin(latestSnapshots, summary => summary.Id, snap => snap.FilterListId,
-                (summary, snap) =>
-                {
-                    snap = snap as Data.Entities.Snapshot[] ?? snap.ToArray();
-                    var updatedDate = snap.Any() ? snap.Single().CreatedDateUtc : (DateTime?) null;
-                    return new ListSummaryDto
-                    {
-                        Id = summary.Id,
-                        AddedDate = summary.AddedDate,
-                        Languages = summary.Languages,
-                        Name = summary.Name,
-                        UpdatedDate = updatedDate,
-                        ViewUrl = summary.ViewUrl
-                    };
-                });
-        }
-
-        private async Task<List<ListSummaryDto>> GetSummaryDtos() =>
-            await DbContext.FilterLists.OrderBy(l => l.Name)
-                           .ProjectTo<ListSummaryDto>(Mapper.ConfigurationProvider)
-                           .ToListAsync();
-
-        private async Task<List<Data.Entities.Snapshot>> GetLatestSnapshots() =>
-            await DbContext.Snapshots.AsNoTracking()
-                           .Where(s => s.IsCompleted && s.HttpStatusCode == "200" &&
-                                       (s.AddedSnapshotRules.Count > 0 || s.RemovedSnapshotRules.Count > 0))
-                           .GroupBy(s => s.FilterListId,
-                               (key, x) => x.OrderByDescending(y => y.CreatedDateUtc).First())
-                           .ToListAsync();
+        public async Task<IEnumerable<ListSummaryDto>> GetAllSummariesAsync() =>
+            await DbContext.FilterLists.ProjectTo<ListSummaryDto>(Mapper.ConfigurationProvider).ToListAsync();
 
         public async Task<ListDetailsDto> GetDetailsAsync(uint id)
         {
@@ -79,7 +48,7 @@ namespace FilterLists.Services.FilterList
                                                       s.RemovedSnapshotRules.Count > 0))
                                          .Select(s => s.CreatedDateUtc)
                                          .OrderByDescending(s => s.Date);
-            return snapshotDates.Any() ? (DateTime?) await snapshotDates.FirstAsync() : null;
+            return snapshotDates.Any() ? (DateTime?)await snapshotDates.FirstAsync() : null;
         }
     }
 }
