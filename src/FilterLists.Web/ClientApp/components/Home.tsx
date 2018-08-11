@@ -67,7 +67,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
     }
 
     updatePageSize() {
-        this.setState({ pageSize: (window.innerHeight - 200) / 50 });
+        this.setState({ pageSize: (window.innerHeight - (361)) / 52 });
     }
 
     private static renderTagline(state: IHomeState) {
@@ -180,11 +180,9 @@ interface IListLanguageDto {
 }
 
 function SubscribeUrl(props: any) {
-    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)
-        }`}
+    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
               className="btn btn-primary btn-block"
-              title={
-"Subscribe to list with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus)."}>
+              title={"Subscribe to list with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus)."}>
                Subscribe
            </a>;
 }
