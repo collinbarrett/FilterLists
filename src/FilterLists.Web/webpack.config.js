@@ -23,16 +23,7 @@ module.exports = (env) => {
                         test: /\.css$/,
                         use: isDevBuild
                             ? ["style-loader", "css-loader"]
-                            : ExtractTextPlugin.extract({
-                                use: [
-                                    {
-                                        loader: "css-loader",
-                                        options: {
-                                            minimize: { discardComments: { removeAll: true } }
-                                        }
-                                    }
-                                ]
-                            })
+                            : ExtractTextPlugin.extract({ use: "css-loader?minimize" })
                     },
                     { test: /\.(png|jpg|jpeg|gif|svg)$/, use: "url-loader?limit=25000" }
                 ]
@@ -45,19 +36,17 @@ module.exports = (env) => {
                 })
             ].concat(isDevBuild
                 ? [
+                    // Plugins that apply in development builds only
                     new webpack.SourceMapDevToolPlugin({
-                        filename: "[file].map",
+                        filename: "[file].map", // Remove this line if you prefer inline source maps
                         moduleFilenameTemplate:
                             path.relative(bundleOutputDir,
-                                "[resourcePath]")
+                                "[resourcePath]") // Point sourcemap entries to the original file locations on disk
                     })
                 ]
                 : [
-                    new webpack.optimize.UglifyJsPlugin({
-                        output: {
-                            comments: false
-                        }
-                    }),
+                    // Plugins that apply in production builds only
+                    new webpack.optimize.UglifyJsPlugin(),
                     new ExtractTextPlugin("site.css")
                 ])
         }
