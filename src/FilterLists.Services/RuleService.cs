@@ -12,8 +12,7 @@ namespace FilterLists.Services
         {
         }
 
-        public async Task<int> GetCountAll() => await DbContext
-                                                      .Rules.AsNoTracking()
-                                                      .CountAsync();
+        public async Task<int> GetCountAll() =>
+            await DbContext.Rules.AsNoTracking().CountAsync();
     }
 }

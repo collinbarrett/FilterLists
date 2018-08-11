@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using FilterLists.Services.FilterList.Models;
 
 namespace FilterLists.Services.FilterList
 {

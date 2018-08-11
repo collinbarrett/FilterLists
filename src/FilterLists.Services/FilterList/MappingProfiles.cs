@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using AutoMapper;
 using FilterLists.Data.Entities;
+using FilterLists.Services.FilterList.Models;
 
 namespace FilterLists.Services.FilterList
 {

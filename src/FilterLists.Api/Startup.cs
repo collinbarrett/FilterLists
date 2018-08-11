@@ -17,17 +17,14 @@ namespace FilterLists.Api
     [UsedImplicitly]
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+        public Startup(IConfiguration configuration) => Configuration = configuration;
 
         private IConfiguration Configuration { get; }
 
         [UsedImplicitly]
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddFilterListsServices(Configuration);
+            services.AddFilterListsApiServices(Configuration);
             services.AddFilterListsApi();
         }
 
@@ -72,16 +69,13 @@ namespace FilterLists.Api
         }
 
         //TODO: remove hack (https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/74#issuecomment-386762178)
-        private static void UseLowercaseControllerNameInSwaggerHack(SwaggerOptions opts)
-        {
+        private static void UseLowercaseControllerNameInSwaggerHack(SwaggerOptions opts) =>
             opts.PreSerializeFilters.Add((document, request) =>
             {
                 var paths = document.Paths.ToDictionary(item => item.Key.ToLowerInvariant(), item => item.Value);
                 document.Paths.Clear();
-                foreach (var pathItem in paths)
-                    document.Paths.Add(pathItem.Key, pathItem.Value);
+                foreach (var pathItem in paths) document.Paths.Add(pathItem.Key, pathItem.Value);
             });
-        }
 
         private void MigrateAndSeedDatabase(IApplicationBuilder app)
         {

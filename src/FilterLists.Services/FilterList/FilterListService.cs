@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
+using FilterLists.Services.FilterList.Models;
 using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 
@@ -43,15 +44,13 @@ namespace FilterLists.Services.FilterList
                            .ProjectTo<ListSummaryDto>(Mapper.ConfigurationProvider)
                            .ToListAsync();
 
-        private async Task<List<Data.Entities.Snapshot>> GetLatestSnapshots()
-        {
-            return await DbContext.Snapshots.AsNoTracking()
-                                  .Where(s => s.IsCompleted && s.HttpStatusCode == "200" &&
-                                              (s.AddedSnapshotRules.Count > 0 || s.RemovedSnapshotRules.Count > 0))
-                                  .GroupBy(s => s.FilterListId,
-                                      (key, x) => x.OrderByDescending(y => y.CreatedDateUtc).First())
-                                  .ToListAsync();
-        }
+        private async Task<List<Data.Entities.Snapshot>> GetLatestSnapshots() =>
+            await DbContext.Snapshots.AsNoTracking()
+                           .Where(s => s.IsCompleted && s.HttpStatusCode == "200" &&
+                                       (s.AddedSnapshotRules.Count > 0 || s.RemovedSnapshotRules.Count > 0))
+                           .GroupBy(s => s.FilterListId,
+                               (key, x) => x.OrderByDescending(y => y.CreatedDateUtc).First())
+                           .ToListAsync();
 
         public async Task<ListDetailsDto> GetDetailsAsync(uint id)
         {

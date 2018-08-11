@@ -12,7 +12,21 @@ namespace FilterLists.Services.DependencyInjection.Extensions
 {
     public static class ConfigureServicesCollection
     {
-        public static void AddFilterListsServices(this IServiceCollection services, IConfiguration config)
+        public static void AddFilterListsApiServices(this IServiceCollection services, IConfiguration config)
+        {
+            services.AddSingleton(c => config);
+            services.AddEntityFrameworkMySql()
+                    .AddDbContextPool<FilterListsDbContext>(opts =>
+                        opts.UseMySql(config.GetConnectionString("FilterListsConnection"),
+                                x => x.MigrationsAssembly("FilterLists.Api"))
+                            .EnableSensitiveDataLogging());
+            services.TryAddScoped<FilterListService>();
+            services.TryAddScoped<RuleService>();
+            services.TryAddScoped<SeedService>();
+            services.AddAutoMapper();
+        }
+
+        public static void AddFilterListsAgentServices(this IServiceCollection services, IConfiguration config)
         {
             services.AddSingleton(c => config);
             services.AddEntityFrameworkMySql()
@@ -21,9 +35,6 @@ namespace FilterLists.Services.DependencyInjection.Extensions
                                 x => x.MigrationsAssembly("FilterLists.Api"))
                             .EnableSensitiveDataLogging());
             services.TryAddScoped<SnapshotService>();
-            services.TryAddScoped<FilterListService>();
-            services.TryAddScoped<RuleService>();
-            services.TryAddScoped<SeedService>();
             services.AddAutoMapper();
         }
     }

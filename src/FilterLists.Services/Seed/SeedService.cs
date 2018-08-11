@@ -21,17 +21,18 @@ namespace FilterLists.Services.Seed
             await DbContext.Set<TEntity>().ProjectTo<TSeedDto>(Mapper.ConfigurationProvider).ToArrayAsync();
 
         public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>(PropertyInfo primarySort)
-            where TEntity : class => await DbContext.Set<TEntity>()
-                                                    .OrderBy(x => primarySort.GetValue(x, null))
-                                                    .ProjectTo<TSeedDto>(Mapper.ConfigurationProvider)
-                                                    .ToArrayAsync();
+            where TEntity : class =>
+            await DbContext.Set<TEntity>()
+                           .OrderBy(x => primarySort.GetValue(x, null))
+                           .ProjectTo<TSeedDto>(Mapper.ConfigurationProvider)
+                           .ToArrayAsync();
 
-        public async Task<IEnumerable<TSeedDto>>
-            GetAllAsync<TEntity, TSeedDto>(PropertyInfo primarySort, PropertyInfo secondarySort)
-            where TEntity : class => await DbContext.Set<TEntity>()
-                                                    .OrderBy(x => primarySort.GetValue(x, null))
-                                                    .ThenBy(x => secondarySort.GetValue(x, null))
-                                                    .ProjectTo<TSeedDto>(Mapper.ConfigurationProvider)
-                                                    .ToArrayAsync();
+        public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>(PropertyInfo primarySort,
+            PropertyInfo secondarySort) where TEntity : class =>
+            await DbContext.Set<TEntity>()
+                           .OrderBy(x => primarySort.GetValue(x, null))
+                           .ThenBy(x => secondarySort.GetValue(x, null))
+                           .ProjectTo<TSeedDto>(Mapper.ConfigurationProvider)
+                           .ToArrayAsync();
     }
 }

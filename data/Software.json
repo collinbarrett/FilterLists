@@ -43,7 +43,8 @@
   },
   {
     "id": 8,
-    "downloadUrl": "https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef",
+    "downloadUrl":
+      "https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef",
     "homeUrl": "https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef",
     "name": "Personal Blocklist (Chrome)"
   },

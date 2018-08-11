@@ -11,10 +11,8 @@ namespace FilterLists.Api.V1.Controllers
     {
         private readonly FilterListService filterListService;
 
-        public ListsController(SeedService seedService, FilterListService filterListService) : base(seedService)
-        {
+        public ListsController(SeedService seedService, FilterListService filterListService) : base(seedService) =>
             this.filterListService = filterListService;
-        }
 
         [HttpGet]
         public async Task<IActionResult> Index() => Json(await filterListService.GetAllSummariesAsync());
