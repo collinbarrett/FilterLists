@@ -67,7 +67,9 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
     }
 
     updatePageSize() {
-        this.setState({ pageSize: (window.innerHeight - (361)) / 52 });
+        this.setState({
+            pageSize: window.innerHeight - (window.innerWidth > 540 ? 361 : 320) / 52
+        });
     }
 
     private static renderTagline(state: IHomeState) {
