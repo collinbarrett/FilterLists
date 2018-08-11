@@ -7,7 +7,7 @@ body, h2, h3, h4, h5, blockquote { font-size: 16px; }
     align-items: center;
 }
 
-rt-thead, rt-tbody { min-width: 320px !important; }
+div.rt-tbody, div.rt-thead.-filters, div.rt-thead.-header { min-width: 320px !important; }
 
 .fl-btn-details-action {
     margin-bottom: .2rem;
