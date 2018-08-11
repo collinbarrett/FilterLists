@@ -997,7 +997,7 @@
     "id": 52,
     "chatUrl": null,
     "description": "Block all well known privacy trackers.",
-    "descriptionSourceUrl": "https://web.archive.org/web/20160425221243/http://gnuzilla.gnu.org/filters/blacklist.txt",
+    "descriptionSourceUrl": "http://gnuzilla.gnu.org/filters/blacklist.txt",
     "discontinuedDate": null,
     "donateUrl": null,
     "emailAddress": "bug-gnuzilla@gnu.org",
@@ -1010,7 +1010,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": "https://web.archive.org/web/20160425221243/http://gnuzilla.gnu.org/filters/blacklist.txt"
+    "viewUrl": "http://gnuzilla.gnu.org/filters/blacklist.txt"
   },
   {
     "id": 53,
