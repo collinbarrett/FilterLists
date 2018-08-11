@@ -11,6 +11,7 @@ interface IHomeState {
     loadingLists: boolean;
     ruleCount: number;
     loadingRuleCount: boolean;
+    pageSize: number;
 }
 
 export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
@@ -20,8 +21,10 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
             lists: [],
             loadingLists: true,
             ruleCount: 0,
-            loadingRuleCount: true
+            loadingRuleCount: true,
+            pageSize: 20
         };
+        this.updatePageSize = this.updatePageSize.bind(this);
     }
 
     render() {
@@ -31,7 +34,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
               </p>
             : <div>
                   {Home.renderTagline(this.state)}
-                  {Home.renderFilterListsTable(this.state.lists)}
+                  {Home.renderFilterListsTable(this.state)}
               </div>;
         return <div>
                    {contents}
@@ -39,6 +42,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
     }
 
     componentDidMount() {
+        this.updatePageSize();
+        window.addEventListener("resize", this.updatePageSize);
         fetch("https://filterlists.com/api/v1/lists")
             .then(response => response.json() as Promise<IListDto[]>)
             .then(data => {
@@ -57,6 +62,14 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
             });
     }
 
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updatePageSize);
+    }
+
+    updatePageSize() {
+        this.setState({ pageSize: (window.innerHeight - 200) / 50 });
+    }
+
     private static renderTagline(state: IHomeState) {
         return <p className="ml-2 mr-2">
                    The independent, comprehensive directory of <strong>{state.ruleCount.toLocaleString()
@@ -65,10 +78,13 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                </p>;
     }
 
-    private static renderFilterListsTable(filterLists: IListDto[]) {
+    private static renderFilterListsTable(state: IHomeState) {
         return <ReactTable
-                   data={filterLists}
+                   data={state.lists}
                    defaultSorted={[{ id: "name" }]}
+                   key={state.pageSize}
+                   defaultPageSize={state.pageSize}
+                   showPageSizeOptions={false}
                    columns={[
                        {
                            Header: "Name",
@@ -164,9 +180,11 @@ interface IListLanguageDto {
 }
 
 function SubscribeUrl(props: any) {
-    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)
+        }`}
               className="btn btn-primary btn-block"
-              title={"Subscribe to list with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus)."}>
+              title={
+"Subscribe to list with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus)."}>
                Subscribe
            </a>;
 }
