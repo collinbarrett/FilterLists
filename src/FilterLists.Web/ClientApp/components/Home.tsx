@@ -43,7 +43,6 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
 
     componentDidMount() {
         this.updatePageSize();
-        window.addEventListener("resize", this.updatePageSize);
         fetch("https://filterlists.com/api/v1/lists")
             .then(response => response.json() as Promise<IListDto[]>)
             .then(data => {
@@ -60,10 +59,6 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                     loadingRuleCount: false
                 });
             });
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener("resize", this.updatePageSize);
     }
 
     updatePageSize() {
