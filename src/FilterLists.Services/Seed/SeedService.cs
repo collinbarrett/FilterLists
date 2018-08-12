@@ -13,18 +13,19 @@ namespace FilterLists.Services.Seed
     [UsedImplicitly]
     public class SeedService : Service
     {
-        public SeedService(FilterListsDbContext dbContext, IMapper mapper) : base(dbContext, mapper)
+        public SeedService(FilterListsDbContext dbContext, IConfigurationProvider configurationProvider)
+            : base(dbContext, configurationProvider)
         {
         }
 
         public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>() where TEntity : class =>
-            await DbContext.Set<TEntity>().ProjectTo<TSeedDto>(Mapper.ConfigurationProvider).ToArrayAsync();
+            await DbContext.Set<TEntity>().ProjectTo<TSeedDto>(ConfigurationProvider).ToArrayAsync();
 
         public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>(PropertyInfo primarySort)
             where TEntity : class =>
             await DbContext.Set<TEntity>()
                            .OrderBy(x => primarySort.GetValue(x, null))
-                           .ProjectTo<TSeedDto>(Mapper.ConfigurationProvider)
+                           .ProjectTo<TSeedDto>(ConfigurationProvider)
                            .ToArrayAsync();
 
         public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>(PropertyInfo primarySort,
@@ -32,7 +33,7 @@ namespace FilterLists.Services.Seed
             await DbContext.Set<TEntity>()
                            .OrderBy(x => primarySort.GetValue(x, null))
                            .ThenBy(x => secondarySort.GetValue(x, null))
-                           .ProjectTo<TSeedDto>(Mapper.ConfigurationProvider)
+                           .ProjectTo<TSeedDto>(ConfigurationProvider)
                            .ToArrayAsync();
     }
 }
