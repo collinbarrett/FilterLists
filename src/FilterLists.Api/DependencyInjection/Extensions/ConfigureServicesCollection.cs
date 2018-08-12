@@ -15,6 +15,7 @@ namespace FilterLists.Api.DependencyInjection.Extensions
         public static void AddFilterListsApi(this IServiceCollection services)
         {
             services.ConfigureCookiePolicy();
+            services.AddMemoryCache();
             services.AddMvcCustom();
             services.AddRoutingCustom();
             services.AddApiVersioning();
