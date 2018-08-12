@@ -7,15 +7,15 @@ namespace FilterLists.Services
     [UsedImplicitly]
     public class Service
     {
+        protected readonly IConfigurationProvider ConfigurationProvider;
         protected readonly FilterListsDbContext DbContext;
-        protected readonly IMapper Mapper;
 
         public Service(FilterListsDbContext dbContext) => DbContext = dbContext;
 
-        public Service(FilterListsDbContext dbContext, IMapper mapper)
+        public Service(FilterListsDbContext dbContext, IConfigurationProvider configurationProvider)
         {
             DbContext = dbContext;
-            Mapper = mapper;
+            ConfigurationProvider = configurationProvider;
         }
     }
 }
