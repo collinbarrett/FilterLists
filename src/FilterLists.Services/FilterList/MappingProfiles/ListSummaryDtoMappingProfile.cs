@@ -9,19 +9,23 @@ namespace FilterLists.Services.FilterList.MappingProfiles
     [UsedImplicitly]
     public class ListSummaryDtoMappingProfile : Profile
     {
+        private readonly Func<Data.Entities.Snapshot, bool> isDiffSnapshot =
+            s => s.AddedSnapshotRules.Count > 0 || s.RemovedSnapshotRules.Count > 0;
+
+        private readonly Func<Data.Entities.Snapshot, bool> isSuccessfulSnapshot =
+            s => s.IsCompleted && s.HttpStatusCode == "200";
+
         public ListSummaryDtoMappingProfile() =>
             CreateMap<Data.Entities.FilterList, ListSummaryDto>()
-                .ForMember(dto => dto.AddedDate, conf => conf.MapFrom(list => list.CreatedDateUtc))
-                .ForMember(dto => dto.Languages,
-                    conf => conf.MapFrom(list => list.FilterListLanguages.Select(listLangs => listLangs.Language)))
-                .ForMember(dto => dto.UpdatedDate,
-                    conf => conf.MapFrom(list =>
-                        list.Snapshots.Where(s =>
-                                s.IsCompleted && s.HttpStatusCode == "200" &&
-                                (s.AddedSnapshotRules.Count > 0 || s.RemovedSnapshotRules.Count > 0))
-                            .OrderByDescending(s => s.CreatedDateUtc)
-                            .Select(s => s.CreatedDateUtc)
-                            .Cast<DateTime?>()
-                            .FirstOrDefault()));
+                .ForMember(d => d.AddedDate, c => c.MapFrom(l => l.CreatedDateUtc))
+                .ForMember(d => d.Languages, c => c.MapFrom(l => l.FilterListLanguages.Select(la => la.Language)))
+                .ForMember(d => d.UpdatedDate,
+                    c => c.MapFrom(l =>
+                        l.Snapshots.Where(isSuccessfulSnapshot)
+                         .Where(isDiffSnapshot)
+                         .OrderByDescending(s => s.CreatedDateUtc)
+                         .Select(s => s.CreatedDateUtc)
+                         .Cast<DateTime?>()
+                         .FirstOrDefault()));
     }
 }
