@@ -1,5 +1,7 @@
-﻿using FilterLists.Services.Seed;
+﻿using System;
+using FilterLists.Services.Seed;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Api.V1.Controllers
 {
@@ -8,6 +10,8 @@ namespace FilterLists.Api.V1.Controllers
     [Route("v{version:apiVersion}/[controller]")]
     public class BaseController : Controller
     {
+        protected readonly TimeSpan AbsoluteExpirationRelativeToNow = TimeSpan.FromHours(4);
+        protected readonly IMemoryCache MemoryCache;
         protected readonly SeedService SeedService;
 
         public BaseController()
@@ -15,5 +19,11 @@ namespace FilterLists.Api.V1.Controllers
         }
 
         protected BaseController(SeedService seedService) => SeedService = seedService;
+
+        protected BaseController(IMemoryCache memoryCache, SeedService seedService)
+        {
+            MemoryCache = memoryCache;
+            SeedService = seedService;
+        }
     }
 }
