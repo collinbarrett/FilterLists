@@ -35,6 +35,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
                                 x => x.MigrationsAssembly("FilterLists.Api"))
                             .EnableSensitiveDataLogging());
             services.TryAddScoped<SnapshotService>();
+            services.TryAddScoped<EmailService>();
             services.AddAutoMapper();
         }
     }

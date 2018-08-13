@@ -28,7 +28,7 @@ namespace FilterLists.Agent
         private static void BuildConfigurationRoot() =>
             configurationRoot = new ConfigurationBuilder()
                                 .SetBasePath(Directory.GetCurrentDirectory())
-                                .AddJsonFile("appsettings.json", true)
+                                .AddJsonFile("appsettings.json", false)
                                 .Build();
 
         private static void InstantiateTelemetryClient()
