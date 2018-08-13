@@ -3,19 +3,25 @@ using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Seed;
 using FilterLists.Services.Seed.Models.Junctions;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Api.V1.Controllers
 {
     public class ListsMaintainersController : BaseController
     {
-        public ListsMaintainersController(SeedService seedService) : base(seedService)
+        public ListsMaintainersController(IMemoryCache memoryCache, SeedService seedService)
+            : base(memoryCache, seedService)
         {
         }
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
-            Json(await SeedService.GetAllAsync<FilterListMaintainer, FilterListMaintainerSeedDto>(
-                typeof(FilterListMaintainer).GetProperty("MaintainerId"),
-                typeof(FilterListMaintainer).GetProperty("FilterListId")));
+            Json(await MemoryCache.GetOrCreate("ListsMaintainersController_Seed", entry =>
+            {
+                entry.AbsoluteExpirationRelativeToNow = FourHoursFromNow;
+                return SeedService.GetAllAsync<FilterListMaintainer, FilterListMaintainerSeedDto>(
+                    typeof(FilterListMaintainer).GetProperty("MaintainerId"),
+                    typeof(FilterListMaintainer).GetProperty("FilterListId"));
+            }));
     }
 }
