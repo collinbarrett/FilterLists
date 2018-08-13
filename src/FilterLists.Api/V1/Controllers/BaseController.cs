@@ -10,15 +10,13 @@ namespace FilterLists.Api.V1.Controllers
     [Route("v{version:apiVersion}/[controller]")]
     public class BaseController : Controller
     {
-        protected readonly TimeSpan AbsoluteExpirationRelativeToNow = TimeSpan.FromHours(4);
+        protected static readonly TimeSpan FourHoursFromNow = TimeSpan.FromHours(4);
         protected readonly IMemoryCache MemoryCache;
         protected readonly SeedService SeedService;
 
         public BaseController()
         {
         }
-
-        protected BaseController(SeedService seedService) => SeedService = seedService;
 
         protected BaseController(IMemoryCache memoryCache, SeedService seedService)
         {

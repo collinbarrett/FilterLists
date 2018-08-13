@@ -3,18 +3,23 @@ using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Seed;
 using FilterLists.Services.Seed.Models.Junctions;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Api.V1.Controllers
 {
     public class ForksController : BaseController
     {
-        public ForksController(SeedService seedService) : base(seedService)
+        public ForksController(IMemoryCache memoryCache, SeedService seedService) : base(memoryCache, seedService)
         {
         }
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
-            Json(await SeedService.GetAllAsync<Fork, ForkSeedDto>(typeof(Fork).GetProperty("UpstreamFilterListId"),
-                typeof(Fork).GetProperty("ForkFilterListId")));
+            Json(await MemoryCache.GetOrCreate("ForksController_Seed", entry =>
+            {
+                entry.AbsoluteExpirationRelativeToNow = FourHoursFromNow;
+                return SeedService.GetAllAsync<Fork, ForkSeedDto>(typeof(Fork).GetProperty("UpstreamFilterListId"),
+                    typeof(Fork).GetProperty("ForkFilterListId"));
+            }));
     }
 }
