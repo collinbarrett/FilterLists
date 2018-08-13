@@ -1764,25 +1764,6 @@
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt"
   },
   {
-    "id": 92,
-    "chatUrl": null,
-    "description": "Ad servers list to block ads on Turkish websites (for use with hosts files).",
-    "descriptionSourceUrl": "https://github.com/bkrucarci/turk-adlist/blob/master/README.md",
-    "discontinuedDate": null,
-    "donateUrl": null,
-    "emailAddress": null,
-    "forumUrl": null,
-    "homeUrl": "https://github.com/bkrucarci/turk-adlist",
-    "issuesUrl": "https://github.com/bkrucarci/turk-adlist/issues",
-    "licenseId": 6,
-    "name": "Turk-adlist",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/bkrucarci/turk-adlist/master/hosts"
-  },
-  {
     "id": 93,
     "chatUrl": null,
     "description": "Extending and consolidating hosts files from a variety of sources",
