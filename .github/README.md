@@ -39,9 +39,11 @@ One can use FilterLists in the following software tools. Software support of any
 *   [Adblock Plus](https://adblockplus.org/)
 *   [AdGuard](https://adguard.com/)
 *   [DNS66](https://github.com/julian-klode/dns66)
+*   [Hosts File Editor](https://github.com/scottlerch/HostsFileEditor)
 *   [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore)
+*   [Personal Blocklist](https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef)
 *   [uBlock Origin](https://github.com/gorhill/uBlock)
-*   ...[Did we forget one?](https://github.com/collinbarrett/FilterLists/issues)
+*   …[Did we forget one?](https://github.com/collinbarrett/FilterLists/issues)
 
 ## Miscellany
 
