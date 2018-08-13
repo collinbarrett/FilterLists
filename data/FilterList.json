@@ -6339,7 +6339,7 @@
     "descriptionSourceUrl":
       "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExtensionsForUBO%26Nano.txt",
     "discontinuedDate": null,
-    "donateUrl": "https://www.paypal.me/DandeeSprout",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "forumUrl": null,
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
@@ -8282,5 +8282,65 @@
     "syntaxId": 4,
     "viewUrl":
       "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Website%20Stretcher.txt"
+  },
+  {
+    "id": 432,
+    "chatUrl": null,
+    "description":
+      "Do you feel that Friendship is Magic has overstayed its welcome? Here's a list that'll let you keep more of a distance to it.",
+    "descriptionSourceUrl": null,
+    "discontinuedDate": null,
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "forumUrl": null,
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-FіМ List",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-F%D1%96%D0%9C%20List.txt"
+  },
+  {
+    "id": 433,
+    "chatUrl": null,
+    "description":
+      "Are you tired of being told by others what you should watch, specifically the hipsters that run around on IMDB? Here's a way to let you feel more peaceful with your truly own opinions.",
+    "descriptionSourceUrl": null,
+    "discontinuedDate": null,
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "forumUrl": null,
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-IMDB List",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-IMDB%20List.txt"
+  },
+  {
+    "id": 434,
+    "chatUrl": null,
+    "description":
+      "Are you tired of having to turn off autoplay on YouTube every time you e.g. go to incognito mode? Are you worried of having to use specific extensions just for that purpose? Then this list is for you.",
+    "descriptionSourceUrl": null,
+    "discontinuedDate": null,
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "forumUrl": null,
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Stop Autoplay on YouTube",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/StopAutoplayOnYouTube.txt"
   }
 ]
