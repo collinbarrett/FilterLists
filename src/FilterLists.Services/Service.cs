@@ -9,6 +9,7 @@ namespace FilterLists.Services
     {
         protected readonly IConfigurationProvider ConfigurationProvider;
         protected readonly FilterListsDbContext DbContext;
+        protected readonly EmailService EmailService;
 
         public Service(FilterListsDbContext dbContext) => DbContext = dbContext;
 
@@ -16,6 +17,14 @@ namespace FilterLists.Services
         {
             DbContext = dbContext;
             ConfigurationProvider = configurationProvider;
+        }
+
+        public Service(FilterListsDbContext dbContext, IConfigurationProvider configurationProvider,
+            EmailService emailService)
+        {
+            DbContext = dbContext;
+            ConfigurationProvider = configurationProvider;
+            EmailService = emailService;
         }
     }
 }

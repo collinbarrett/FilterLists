@@ -19,8 +19,9 @@ namespace FilterLists.Services.Snapshot
         private static readonly IList<uint> IgnoreLists =
             new ReadOnlyCollection<uint>(new List<uint> {48, 149, 173, 185, 186, 187, 188, 189, 352});
 
-        public SnapshotService(FilterListsDbContext dbContext, IConfigurationProvider configurationProvider)
-            : base(dbContext, configurationProvider)
+        public SnapshotService(FilterListsDbContext dbContext, IConfigurationProvider configurationProvider,
+            EmailService emailService)
+            : base(dbContext, configurationProvider, emailService)
         {
         }
 
@@ -54,7 +55,7 @@ namespace FilterLists.Services.Snapshot
                   .ToListAsync();
 
         private IEnumerable<SnapshotDe> GetSnapshots(IEnumerable<FilterListViewUrlDto> lists) =>
-            lists.Select(list => new SnapshotDe(DbContext, list));
+            lists.Select(list => new SnapshotDe(DbContext, EmailService, list));
 
         private static async Task SaveSnapshots(IEnumerable<SnapshotDe> snapshots)
         {

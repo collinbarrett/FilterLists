@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities.Junctions;
@@ -18,12 +19,14 @@ namespace FilterLists.Services.Snapshot
 
         private const int BatchSize = 1000;
         private readonly FilterListsDbContext dbContext;
+        private readonly EmailService emailService;
         private readonly FilterListViewUrlDto list;
         private Data.Entities.Snapshot snapshot;
 
-        public SnapshotDe(FilterListsDbContext dbContext, FilterListViewUrlDto list)
+        public SnapshotDe(FilterListsDbContext dbContext, EmailService emailService, FilterListViewUrlDto list)
         {
             this.dbContext = dbContext;
+            this.emailService = emailService;
             this.list = list;
         }
 
@@ -62,12 +65,14 @@ namespace FilterLists.Services.Snapshot
             catch (WebException we)
             {
                 snapshot.HttpStatusCode = ((int)((HttpWebResponse)we.Response).StatusCode).ToString();
+                await SendWebExceptionEmail();
                 return null;
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 //TODO: log exception (#148)
                 snapshot.HttpStatusCode = null;
+                await SendExceptionEmail(e);
                 return null;
             }
         }
@@ -85,7 +90,26 @@ namespace FilterLists.Services.Snapshot
                 }
             }
 
+            await SendWebExceptionEmail();
             return null;
+        }
+
+        private async Task SendWebExceptionEmail()
+        {
+            var message = new StringBuilder();
+            message.AppendLine("Snapshot WebException");
+            message.AppendLine("FilterListId: " + snapshot.FilterList.Id);
+            message.AppendLine("HTTP Status Code: " + snapshot.HttpStatusCode);
+            await emailService.SendEmailAsync("Snapshot WebException", message.ToString());
+        }
+
+        private async Task SendExceptionEmail(Exception e)
+        {
+            var message = new StringBuilder();
+            message.AppendLine("Snapshot Exception");
+            message.AppendLine("FilterListId: " + snapshot.FilterList.Id);
+            message.AppendLine("Exception: " + e.Message);
+            await emailService.SendEmailAsync("Snapshot Exception", message.ToString());
         }
 
         private async Task SaveSnapshotInBatches(string content)
