@@ -179,7 +179,7 @@ interface IListLanguageDto {
 function SubscribeUrl(props: any) {
     return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
               className="btn btn-primary btn-block"
-              title={"Subscribe to list with browser extension supporting \"abp:\" protcool (e.g. uBlock Origin, AdBlock Plus)."}>
+              title={"Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus)."}>
                Subscribe
            </a>;
 }
