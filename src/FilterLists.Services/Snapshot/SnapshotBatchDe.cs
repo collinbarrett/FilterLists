@@ -25,28 +25,25 @@ namespace FilterLists.Services.Snapshot
 
         public async Task SaveSnapshotBatchAsync()
         {
-            AddRules();
+            await AddRules();
             AddSnapshotRules();
             await dbContext.SaveChangesAsync();
         }
 
-        private void AddRules()
+        private async Task AddRules()
         {
-            var existingRules = dbContext.Rules.Where(rule => rawRules.Contains(rule.Raw));
+            var existingRules = dbContext.Rules.Where(r => rawRules.Contains(r.Raw));
             var newRawRules = rawRules.Except(existingRules.Select(r => r.Raw));
-            var newRules = newRawRules.Select(newRawRule => new Rule {Raw = newRawRule}).ToList();
-            dbContext.Rules.AddRange(newRules);
+            var newRules = newRawRules.Select(r => new Rule {Raw = r}).ToList();
             rules = existingRules.Concat(newRules);
+            await dbContext.Rules.AddRangeAsync(newRules);
         }
 
         private void AddSnapshotRules()
         {
-            var snapshotRules = new List<SnapshotRule>();
-            foreach (var rule in rules)
-                snapshotRules.Add(new SnapshotRule {Rule = rule});
             if (snapshot.AddedSnapshotRules == null)
                 snapshot.AddedSnapshotRules = new List<SnapshotRule>();
-            snapshot.AddedSnapshotRules.AddRange(snapshotRules);
+            snapshot.AddedSnapshotRules.AddRange(rules.Select(r => new SnapshotRule {Rule = r}));
         }
     }
 }
