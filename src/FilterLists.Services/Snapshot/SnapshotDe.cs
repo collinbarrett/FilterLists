@@ -42,12 +42,12 @@ namespace FilterLists.Services.Snapshot
                     {
                         await SaveSnapshotInBatches(content);
                         await DedupSnapshotRules();
-
-                        //TODO: remove after closed: https://github.com/collinbarrett/FilterLists/issues/344
-                        await SetCompleted();
-
-                        transaction.Commit();
                     }
+
+                    //TODO: remove after closed: https://github.com/collinbarrett/FilterLists/issues/344
+                    await SetCompleted();
+
+                    transaction.Commit();
                 }
                 catch (Exception e)
                 {
