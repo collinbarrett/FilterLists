@@ -15,9 +15,12 @@ namespace FilterLists.Services.Snapshot
     [UsedImplicitly]
     public class SnapshotService : Service
     {
-        //TODO: update algorithm to support non-standard list sizes and formats (#200, #201)
+        //TODO: https://github.com/collinbarrett/FilterLists/issues/200
+        //TODO: https://github.com/collinbarrett/FilterLists/issues/201
         private static readonly IList<uint> IgnoreLists =
             new ReadOnlyCollection<uint>(new List<uint> {48, 149, 173, 185, 186, 187, 188, 189, 352});
+
+        private readonly DateTime yesterday = DateTime.UtcNow.AddDays(-1);
 
         public SnapshotService(FilterListsDbContext dbContext, IConfigurationProvider configurationProvider,
             EmailService emailService)
@@ -27,35 +30,41 @@ namespace FilterLists.Services.Snapshot
 
         public async Task CaptureAsync(int batchSize)
         {
-            RollbackIncompletedSnapshots();
+            //TODO: remove after closed: https://github.com/collinbarrett/FilterLists/issues/344
+            await RollbackIncompletedSnapshots();
+
             var lists = await GetListsToCapture(batchSize);
-            var snapshots = GetSnapshots(lists);
+            var snapshots = CreateSnapshots(lists);
             await SaveSnapshots(snapshots);
         }
 
-        private void RollbackIncompletedSnapshots()
+        private async Task RollbackIncompletedSnapshots()
         {
             var incompleteSnapshots = DbContext.Snapshots.Where(ss => ss.IsCompleted == false);
             DbContext.Snapshots.RemoveRange(incompleteSnapshots);
-            //TODO: don't assume that SnapshotDe.DedupSnapshotRules() didn't partially complete
+            await DbContext.SaveChangesAsync();
         }
 
-        private async Task<IEnumerable<FilterListViewUrlDto>> GetListsToCapture(int batchSize) =>
+        private async Task<List<FilterListViewUrlDto>> GetListsToCapture(int batchSize) =>
             await DbContext
                   .FilterLists
-                  .Where(list =>
-                      (!list.Snapshots.Any() ||
-                       list.Snapshots.Select(ss => ss.CreatedDateUtc).OrderByDescending(sscd => sscd).FirstOrDefault() <
-                       DateTime.UtcNow.AddDays(-1)) && !IgnoreLists.Contains(list.Id))
-                  .OrderBy(list => list.Snapshots.Any())
-                  .ThenBy(list =>
-                      list.Snapshots.Select(ss => ss.CreatedDateUtc).OrderByDescending(sscd => sscd).FirstOrDefault())
+                  .Where(l => !IgnoreLists.Contains(l.Id) &&
+                              (!l.Snapshots.Any() ||
+                               l.Snapshots
+                                .Select(s => s.CreatedDateUtc)
+                                .OrderByDescending(d => d)
+                                .First() < yesterday))
+                  .OrderBy(l => l.Snapshots.Any())
+                  .ThenBy(l => l.Snapshots
+                                .Select(s => s.CreatedDateUtc)
+                                .OrderByDescending(d => d)
+                                .FirstOrDefault())
                   .Take(batchSize)
                   .ProjectTo<FilterListViewUrlDto>(ConfigurationProvider)
                   .ToListAsync();
 
-        private IEnumerable<SnapshotDe> GetSnapshots(IEnumerable<FilterListViewUrlDto> lists) =>
-            lists.Select(list => new SnapshotDe(DbContext, EmailService, list));
+        private IEnumerable<SnapshotDe> CreateSnapshots(IEnumerable<FilterListViewUrlDto> lists) =>
+            lists.Select(l => new SnapshotDe(DbContext, EmailService, l));
 
         private static async Task SaveSnapshots(IEnumerable<SnapshotDe> snapshots)
         {
