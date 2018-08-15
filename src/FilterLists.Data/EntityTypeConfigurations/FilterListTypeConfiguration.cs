@@ -18,7 +18,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
                              .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.DiscontinuedDate)
                              .HasColumnType("DATE")
-                             .HasDefaultValueSql("NULL"); ;
+                             .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.DonateUrl)
                              .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.EmailAddress)
@@ -40,7 +40,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
                              .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.PublishedDate)
                              .HasColumnType("DATE")
-                             .HasDefaultValueSql("NULL"); ;
+                             .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.SubmissionUrl)
                              .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.ViewUrl)
