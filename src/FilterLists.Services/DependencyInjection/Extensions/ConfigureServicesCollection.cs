@@ -18,8 +18,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
             services.AddEntityFrameworkMySql()
                     .AddDbContextPool<FilterListsDbContext>(opts =>
                         opts.UseMySql(config.GetConnectionString("FilterListsConnection"),
-                                x => x.MigrationsAssembly("FilterLists.Api"))
-                            .EnableSensitiveDataLogging());
+                            x => x.MigrationsAssembly("FilterLists.Api")));
             services.TryAddScoped<FilterListService>();
             services.TryAddScoped<RuleService>();
             services.TryAddScoped<SeedService>();
@@ -32,8 +31,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
             services.AddEntityFrameworkMySql()
                     .AddDbContextPool<FilterListsDbContext>(opts =>
                         opts.UseMySql(config.GetConnectionString("FilterListsConnection"),
-                                x => x.MigrationsAssembly("FilterLists.Api"))
-                            .EnableSensitiveDataLogging());
+                            x => x.MigrationsAssembly("FilterLists.Api")));
             services.TryAddScoped<SnapshotService>();
             services.TryAddScoped<EmailService>();
             services.AddAutoMapper();
