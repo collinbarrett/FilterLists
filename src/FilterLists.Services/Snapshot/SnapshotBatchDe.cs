@@ -8,14 +8,14 @@ using FilterLists.Services.Extensions;
 
 namespace FilterLists.Services.Snapshot
 {
-    public class SnapshotDeBatch
+    public class SnapshotBatchDe
     {
         private readonly FilterListsDbContext dbContext;
         private readonly IEnumerable<string> rawRules;
         private readonly Data.Entities.Snapshot snapshot;
-        private IEnumerable<Rule> rules;
+        private IQueryable<Rule> rules;
 
-        public SnapshotDeBatch(FilterListsDbContext dbContext, Data.Entities.Snapshot snapshot,
+        public SnapshotBatchDe(FilterListsDbContext dbContext, Data.Entities.Snapshot snapshot,
             IEnumerable<string> rawRules)
         {
             this.dbContext = dbContext;
@@ -23,7 +23,7 @@ namespace FilterLists.Services.Snapshot
             this.rawRules = rawRules;
         }
 
-        public async Task SaveAsync()
+        public async Task SaveSnapshotBatchAsync()
         {
             await AddRules();
             AddSnapshotRules();
@@ -32,18 +32,18 @@ namespace FilterLists.Services.Snapshot
 
         private async Task AddRules()
         {
-            var existingRules = GetExistingRules();
-            var newRules = CreateNewRules(existingRules);
+            var existingRules = dbContext.Rules.Where(r => rawRules.Contains(r.Raw));
+            var newRawRules = rawRules.Except(existingRules.Select(r => r.Raw));
+            var newRules = newRawRules.Select(r => new Rule {Raw = r}).ToList();
             rules = existingRules.Concat(newRules);
             await dbContext.Rules.AddRangeAsync(newRules);
         }
 
-        private IQueryable<Rule> GetExistingRules() => dbContext.Rules.Where(r => rawRules.Contains(r.Raw));
-
-        private List<Rule> CreateNewRules(IQueryable<Rule> existingRules) =>
-            rawRules.Except(existingRules.Select(r => r.Raw)).Select(r => new Rule {Raw = r}).ToList();
-
-        private void AddSnapshotRules() =>
+        private void AddSnapshotRules()
+        {
+            if (snapshot.AddedSnapshotRules == null)
+                snapshot.AddedSnapshotRules = new List<SnapshotRule>();
             snapshot.AddedSnapshotRules.AddRange(rules.Select(r => new SnapshotRule {Rule = r}));
+        }
     }
 }
