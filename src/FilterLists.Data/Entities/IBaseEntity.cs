@@ -4,6 +4,6 @@ namespace FilterLists.Data.Entities
 {
     public interface IBaseEntity
     {
-        DateTime CreatedDateUtc { get; set; }
+        DateTime? CreatedDateUtc { get; set; }
     }
 }

@@ -13,7 +13,9 @@ namespace FilterLists.Data.EntityTypeConfigurations.Junctions
             entityTypeBuilder.HasKey(x => new {x.AddedBySnapshotId, x.RuleId});
             entityTypeBuilder.Property(x => x.ModifiedDateUtc)
                              .HasColumnType("TIMESTAMP")
-                             .ValueGeneratedOnAddOrUpdate();
+                             .ValueGeneratedOnAddOrUpdate()
+                             .IsRequired()
+                             .HasDefaultValueSql("current_timestamp() ON UPDATE current_timestamp()");
             entityTypeBuilder.HasOne(x => x.AddedBySnapshot)
                              .WithMany(x => x.AddedSnapshotRules)
                              .HasForeignKey(x => x.AddedBySnapshotId);

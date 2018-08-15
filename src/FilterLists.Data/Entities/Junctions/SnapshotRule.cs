@@ -4,7 +4,7 @@ namespace FilterLists.Data.Entities.Junctions
 {
     public class SnapshotRule : BaseJunctionEntity
     {
-        public DateTime ModifiedDateUtc { get; set; }
+        public DateTime? ModifiedDateUtc { get; set; }
         public uint AddedBySnapshotId { get; set; }
         public Snapshot AddedBySnapshot { get; set; }
         public uint? RemovedBySnapshotId { get; set; }
