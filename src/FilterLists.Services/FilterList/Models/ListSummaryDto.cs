@@ -8,7 +8,7 @@ namespace FilterLists.Services.FilterList.Models
     public class ListSummaryDto
     {
         public uint Id { get; set; }
-        public DateTime AddedDate { get; set; }
+        public DateTime? AddedDate { get; set; }
         public IEnumerable<ListLanguagesDto> Languages { get; set; }
         public string Name { get; set; }
         public DateTime? UpdatedDate { get; set; }
