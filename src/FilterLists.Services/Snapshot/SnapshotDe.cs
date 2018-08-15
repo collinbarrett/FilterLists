@@ -135,7 +135,7 @@ namespace FilterLists.Services.Snapshot
             var rawRules = content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
             for (var i = 0; i < rawRules.Length; i++)
                 rawRules[i] = rawRules[i].LintRawRule();
-            return new HashSet<string>(rawRules.Where(r => r != null));
+            return rawRules.Where(r => r != null);
         }
 
         private IEnumerable<SnapshotDeBatch> CreateSnapshotBatches(IEnumerable<string> rawRules) =>
