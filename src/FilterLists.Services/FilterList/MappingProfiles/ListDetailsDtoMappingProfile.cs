@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using AutoMapper;
 using FilterLists.Services.FilterList.Models;
 using JetBrains.Annotations;
@@ -28,7 +27,6 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                          .Where(s => s.AddedSnapshotRules.Count > 0 || s.RemovedSnapshotRules.Count > 0)
                          .OrderByDescending(s => s.CreatedDateUtc)
                          .Select(s => s.CreatedDateUtc)
-                         .Cast<DateTime?>()
                          .FirstOrDefault()));
     }
 }

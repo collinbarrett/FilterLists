@@ -8,7 +8,7 @@ namespace FilterLists.Services.FilterList.Models
     public class ListDetailsDto
     {
         public uint Id { get; set; }
-        public DateTime AddedDate { get; set; }
+        public DateTime? AddedDate { get; set; }
         public string ChatUrl { get; set; }
         public string Description { get; set; }
         public string DescriptionSourceUrl { get; set; }
