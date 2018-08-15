@@ -37,11 +37,12 @@ namespace FilterLists.Services.Snapshot
 
         public async Task SaveAsync()
         {
+            await AddSnapshot();
             using (var transaction = dbContext.Database.BeginTransaction())
             {
                 try
                 {
-                    var content = await CaptureSnapshot();
+                    var content = await TryGetContent();
                     if (content != null)
                     {
                         await SaveSnapshotInBatches(content);
@@ -58,12 +59,10 @@ namespace FilterLists.Services.Snapshot
             }
         }
 
-        private async Task<string> CaptureSnapshot()
+        private async Task AddSnapshot()
         {
-            var content = await TryGetContent();
             await dbContext.Snapshots.AddAsync(snapshot);
             await dbContext.SaveChangesAsync();
-            return content;
         }
 
         private async Task<string> TryGetContent()
