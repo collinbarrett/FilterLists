@@ -18,6 +18,11 @@ namespace FilterLists.Api.V1.Controllers
         {
         }
 
+        protected BaseController(IMemoryCache memoryCache)
+        {
+            MemoryCache = memoryCache;
+        }
+
         protected BaseController(IMemoryCache memoryCache, SeedService seedService)
         {
             MemoryCache = memoryCache;
