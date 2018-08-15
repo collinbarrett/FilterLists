@@ -69,7 +69,7 @@ namespace FilterLists.Services.Snapshot
         private static async Task SaveSnapshots(IEnumerable<SnapshotDe> snapshots)
         {
             foreach (var snapshot in snapshots)
-                await snapshot.SaveSnapshotAsync();
+                await snapshot.SaveAsync();
         }
     }
 }
