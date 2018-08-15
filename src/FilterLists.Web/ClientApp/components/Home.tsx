@@ -164,7 +164,6 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
 
 interface IListDto {
     id: number;
-    addedDate: string;
     name: string;
     languages: IListLanguageDto[];
     updatedDate: string;
