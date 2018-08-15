@@ -12,8 +12,6 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.ToTable("snapshots");
             entityTypeBuilder.Property(x => x.Id)
                              .HasColumnType("MEDIUMINT UNSIGNED");
-            entityTypeBuilder.Property(x => x.ModifiedDateUtc)
-                             .HasDefaultValueSql("CURRENT_TIMESTAMP()");
             entityTypeBuilder.Property(x => x.HttpStatusCode)
                              .HasColumnType("VARCHAR(3)")
                              .HasDefaultValueSql("NULL");
