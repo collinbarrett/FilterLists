@@ -9,6 +9,7 @@ using FilterLists.Data;
 using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Extensions;
 using FilterLists.Services.Snapshot.Models;
+using MoreLinq;
 
 namespace FilterLists.Services.Snapshot
 {
@@ -135,7 +136,7 @@ namespace FilterLists.Services.Snapshot
         }
 
         private IEnumerable<SnapshotBatchDe> GetSnapshotBatches(IEnumerable<string> rawRules) =>
-            rawRules.GetBatches(BatchSize).Select(b => new SnapshotBatchDe(dbContext, snapshot, b));
+            rawRules.Batch(BatchSize).Select(b => new SnapshotBatchDe(dbContext, snapshot, b));
 
         private static async Task SaveSnapshotBatches(IEnumerable<SnapshotBatchDe> snapshotBatches)
         {
