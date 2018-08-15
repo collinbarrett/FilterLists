@@ -46,10 +46,8 @@ namespace FilterLists.Services.Snapshot
                     {
                         await SaveSnapshotInBatches(content);
                         await DedupSnapshotRules();
+                        await SetSuccessful();
                     }
-
-                    //TODO: remove after closed: https://github.com/collinbarrett/FilterLists/issues/344
-                    await SetCompleted();
 
                     transaction.Commit();
                 }
@@ -119,7 +117,11 @@ namespace FilterLists.Services.Snapshot
             var message = new StringBuilder();
             message.AppendLine("Snapshot Exception");
             message.AppendLine("FilterListId: " + snapshot.FilterListId);
-            message.AppendLine("Exception: " + e.Message);
+            message.AppendLine("Exception:");
+            message.AppendLine(e.Message);
+            message.AppendLine(e.StackTrace);
+            message.AppendLine(e.InnerException?.Message);
+            message.AppendLine(e.InnerException?.StackTrace);
             await emailService.SendEmailAsync("Snapshot Exception", message.ToString());
         }
 
@@ -176,9 +178,9 @@ namespace FilterLists.Services.Snapshot
             dbContext.SnapshotRules.RemoveRange(duplicateSnapshotRules);
         }
 
-        private async Task SetCompleted()
+        private async Task SetSuccessful()
         {
-            snapshot.IsCompleted = true;
+            snapshot.WasSuccessful = true;
             await dbContext.SaveChangesAsync();
         }
     }

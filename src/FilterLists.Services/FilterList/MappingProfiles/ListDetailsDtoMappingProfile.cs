@@ -15,15 +15,15 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                 .ForMember(d => d.Maintainers, c => c.MapFrom(l => l.FilterListMaintainers.Select(m => m.Maintainer)))
                 .ForMember(d => d.RuleCount,
                     c => c.MapFrom(l =>
-                        l.Snapshots.Where(s => s.IsCompleted && s.HttpStatusCode == "200")
+                        l.Snapshots.Where(s => s.WasSuccessful)
                          .SelectMany(sr => sr.AddedSnapshotRules)
                          .Count() -
-                        l.Snapshots.Where(s => s.IsCompleted && s.HttpStatusCode == "200")
+                        l.Snapshots.Where(s => s.WasSuccessful)
                          .SelectMany(sr => sr.RemovedSnapshotRules)
                          .Count()))
                 .ForMember(d => d.UpdatedDate,
                     c => c.MapFrom(l =>
-                        l.Snapshots.Where(s => s.IsCompleted && s.HttpStatusCode == "200")
+                        l.Snapshots.Where(s => s.WasSuccessful)
                          .Where(s => s.AddedSnapshotRules.Count > 0 || s.RemovedSnapshotRules.Count > 0)
                          .OrderByDescending(s => s.CreatedDateUtc)
                          .Select(s => s.CreatedDateUtc)
