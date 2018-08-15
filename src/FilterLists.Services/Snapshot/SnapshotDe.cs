@@ -7,8 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities.Junctions;
-using FilterLists.Services.Extensions;
 using FilterLists.Services.Snapshot.Models;
+using MoreLinq;
 
 namespace FilterLists.Services.Snapshot
 {
@@ -28,10 +28,14 @@ namespace FilterLists.Services.Snapshot
             this.dbContext = dbContext;
             this.emailService = emailService;
             this.list = list;
-            snapshot = new Data.Entities.Snapshot {FilterListId = list.Id};
+            snapshot = new Data.Entities.Snapshot
+            {
+                FilterListId = list.Id,
+                AddedSnapshotRules = new List<SnapshotRule>()
+            };
         }
 
-        public async Task SaveSnapshotAsync()
+        public async Task SaveAsync()
         {
             using (var transaction = dbContext.Database.BeginTransaction())
             {
@@ -121,26 +125,26 @@ namespace FilterLists.Services.Snapshot
 
         private async Task SaveSnapshotInBatches(string content)
         {
-            var rawRules = GetRawRules(content);
-            var snapshotBatches = GetSnapshotBatches(rawRules);
+            var rawRules = ParseRawRules(content);
+            var snapshotBatches = CreateSnapshotBatches(rawRules);
             await SaveSnapshotBatches(snapshotBatches);
         }
 
-        private static IEnumerable<string> GetRawRules(string content)
+        private static IEnumerable<string> ParseRawRules(string content)
         {
             var rawRules = content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
             for (var i = 0; i < rawRules.Length; i++)
                 rawRules[i] = rawRules[i].LintRawRule();
-            return new HashSet<string>(rawRules.Where(r => r != null));
+            return rawRules.Where(r => r != null);
         }
 
-        private IEnumerable<SnapshotBatchDe> GetSnapshotBatches(IEnumerable<string> rawRules) =>
-            rawRules.GetBatches(BatchSize).Select(b => new SnapshotBatchDe(dbContext, snapshot, b));
+        private IEnumerable<SnapshotDeBatch> CreateSnapshotBatches(IEnumerable<string> rawRules) =>
+            rawRules.Batch(BatchSize).Select(b => new SnapshotDeBatch(dbContext, snapshot, b));
 
-        private static async Task SaveSnapshotBatches(IEnumerable<SnapshotBatchDe> snapshotBatches)
+        private static async Task SaveSnapshotBatches(IEnumerable<SnapshotDeBatch> snapshotBatches)
         {
             foreach (var snapshotBatch in snapshotBatches)
-                await snapshotBatch.SaveSnapshotBatchAsync();
+                await snapshotBatch.SaveAsync();
         }
 
         private async Task DedupSnapshotRules()
