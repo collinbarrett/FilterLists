@@ -8323,5 +8323,25 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/StopAutoplayOnYouTube.txt"
+  },
+  {
+    "id": 435,
+    "chatUrl": null,
+    "description":
+      "A proxy redirector list for Chinese users.",
+    "descriptionSourceUrl": null,
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/googlehosts/hosts",
+    "issuesUrl": "https://github.com/googlehosts/hosts/issues",
+    "licenseId": 23,
+    "name": "Google Hosts",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts"
   }
 ]
