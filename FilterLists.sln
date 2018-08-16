@@ -37,7 +37,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Agent", "src\Fi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{A4BB2C81-5232-4162-B410-704D123D2C01}"
 	ProjectSection(SolutionItems) = preProject
-		scripts\sql\cantSnapshot.sql = scripts\sql\cantSnapshot.sql
 		scripts\sql\createDb.sql = scripts\sql\createDb.sql
 		scripts\sql\snapshotTimeAnalysis.sql = scripts\sql\snapshotTimeAnalysis.sql
 	EndProjectSection
