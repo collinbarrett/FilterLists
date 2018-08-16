@@ -22,6 +22,7 @@ namespace FilterLists.Services.Snapshot
         private readonly EmailService emailService;
         private readonly FilterListViewUrlDto list;
         private readonly Data.Entities.Snapshot snapshot;
+        private string httpStatusCodeBak;
 
         public SnapshotDe(FilterListsDbContext dbContext, EmailService emailService, FilterListViewUrlDto list)
         {
@@ -57,6 +58,8 @@ namespace FilterLists.Services.Snapshot
                     await SendExceptionEmail(e);
                 }
             }
+
+            await EnsureHttpStatusCodeSaved();
         }
 
         private async Task AddSnapshot()
@@ -93,6 +96,7 @@ namespace FilterLists.Services.Snapshot
                 using (var httpResponseMessage = await httpClient.GetAsync(list.ViewUrl))
                 {
                     snapshot.HttpStatusCode = ((int)httpResponseMessage.StatusCode).ToString();
+                    httpStatusCodeBak = snapshot.HttpStatusCode;
                     if (httpResponseMessage.IsSuccessStatusCode)
                         return await httpResponseMessage.Content.ReadAsStringAsync();
                 }
@@ -100,6 +104,15 @@ namespace FilterLists.Services.Snapshot
 
             await SendWebExceptionEmail();
             return null;
+        }
+
+        private async Task EnsureHttpStatusCodeSaved()
+        {
+            if (!snapshot.WasSuccessful)
+            {
+                snapshot.HttpStatusCode = httpStatusCodeBak;
+                await dbContext.SaveChangesAsync();
+            }
         }
 
         private async Task SendWebExceptionEmail()
