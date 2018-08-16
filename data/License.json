@@ -145,5 +145,12 @@
     "name": "OSINT",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
+  },
+  {
+    "id": 22,
+    "descriptionUrl": "https://raw.githubusercontent.com/googlehosts/hosts/master/LICENSE",
+    "name": "GoogleHosts",
+    "permissiveAdaptation": false,
+    "permissiveCommercial": false
   }
 ]
