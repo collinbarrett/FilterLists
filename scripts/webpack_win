@@ -1,2 +1,0 @@
-npx webpack --config webpack.config.vendor.js
-npx webpack --config webpack.config.js
