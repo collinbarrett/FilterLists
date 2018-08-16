@@ -31,6 +31,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{FCA7
 		scripts\build.sh = scripts\build.sh
 		scripts\cron = scripts\cron
 		scripts\deploy.sh = scripts\deploy.sh
+		scripts\webpack_win = scripts\webpack_win
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Agent", "src\FilterLists.Agent\FilterLists.Agent.csproj", "{4F39D132-498D-4A93-9F6C-1C604718300D}"
