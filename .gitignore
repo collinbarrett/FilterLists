@@ -335,5 +335,4 @@ ASALocalRun/
 gs/Private.gs
 appsettings.development.json
 appsettings.production.json
-src/FilterLists.Web/wwwroot/dist/*
-!src/FilterLists.Web/wwwroot/dist/vendor-manifest.json
+src/FilterLists.Web/wwwroot/dist
