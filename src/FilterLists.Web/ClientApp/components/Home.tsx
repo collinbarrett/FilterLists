@@ -63,7 +63,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
 
     updatePageSize() {
         this.setState({
-            pageSize: Math.floor((window.innerHeight - 361) / 52)
+            pageSize: Math.max(Math.floor((window.innerHeight - 361) / 52), 5)
         });
     }
 
