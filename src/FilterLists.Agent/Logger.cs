@@ -26,5 +26,11 @@ namespace FilterLists.Agent
             Console.WriteLine(message);
             telemetryClient.TrackTrace(message);
         }
+
+        public void Log(Exception e)
+        {
+            Console.WriteLine(e.Message);
+            telemetryClient.TrackException(e);
+        }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
+using System.Threading.Tasks;
 using FilterLists.Services.DependencyInjection.Extensions;
 using FilterLists.Services.Snapshot;
 using Microsoft.Extensions.Configuration;
@@ -41,10 +43,22 @@ namespace FilterLists.Agent
 
         private static void CaptureSnapshots(int batchSize)
         {
-            var snapshotService = serviceProvider.GetService<SnapshotService>();
             logger.Log("Capturing FilterList snapshots...");
-            snapshotService.CaptureAsync(batchSize).Wait();
+            TryCaptureAsync(batchSize).Wait();
             logger.Log("Snapshots captured.");
+        }
+
+        private static async Task TryCaptureAsync(int batchSize)
+        {
+            var snapshotService = serviceProvider.GetService<SnapshotService>();
+            try
+            {
+                await snapshotService.CaptureAsync(batchSize);
+            }
+            catch (Exception e)
+            {
+                logger.Log(e);
+            }
         }
     }
 }
