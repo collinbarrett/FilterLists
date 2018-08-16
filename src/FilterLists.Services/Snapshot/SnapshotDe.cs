@@ -17,7 +17,7 @@ namespace FilterLists.Services.Snapshot
         private const string UserAgentString =
             @"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36";
 
-        private const int BatchSize = 100;
+        private const int BatchSize = 5;
         private readonly FilterListsDbContext dbContext;
         private readonly EmailService emailService;
         private readonly FilterListViewUrlDto list;
