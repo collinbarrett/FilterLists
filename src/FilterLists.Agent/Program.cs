@@ -14,12 +14,14 @@ namespace FilterLists.Agent
         private const string AppInsightsKeyConfig = "ApplicationInsights:InstrumentationKey";
         private static IConfigurationRoot configRoot;
         private static ServiceProvider serviceProvider;
+        private static SnapshotService snapshotService;
         private static Logger logger;
 
         public static void Main()
         {
             BuildConfigRoot();
             BuildServiceProvider();
+            snapshotService = serviceProvider.GetService<SnapshotService>();
             using (BuildLogger())
             {
                 CaptureSnapshots(BatchSize);
@@ -50,7 +52,6 @@ namespace FilterLists.Agent
 
         private static async Task TryCaptureAsync(int batchSize)
         {
-            var snapshotService = serviceProvider.GetService<SnapshotService>();
             try
             {
                 await snapshotService.CaptureAsync(batchSize);
