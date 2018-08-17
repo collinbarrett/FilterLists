@@ -52,7 +52,7 @@ namespace FilterLists.Services.Snapshot
 
         private async Task Add()
         {
-            await dbContext.Snapshots.AddAsync(snapshot);
+            dbContext.Snapshots.Add(snapshot);
             await dbContext.SaveChangesAsync();
         }
 
