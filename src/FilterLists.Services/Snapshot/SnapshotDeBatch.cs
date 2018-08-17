@@ -25,17 +25,17 @@ namespace FilterLists.Services.Snapshot
 
         public async Task SaveAsync()
         {
-            await AddRules();
+            AddRules();
             AddSnapshotRules();
             await dbContext.SaveChangesAsync();
         }
 
-        private async Task AddRules()
+        private void AddRules()
         {
             var existingRules = GetExistingRules();
             var newRules = CreateNewRules(existingRules);
             rules = existingRules.Concat(newRules);
-            await dbContext.Rules.AddRangeAsync(newRules);
+            dbContext.Rules.AddRange(newRules);
         }
 
         private IQueryable<Rule> GetExistingRules() => dbContext.Rules.Where(r => rawRules.Contains(r.Raw));
