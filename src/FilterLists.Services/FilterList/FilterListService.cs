@@ -13,18 +13,16 @@ namespace FilterLists.Services.FilterList
     [UsedImplicitly]
     public class FilterListService : Service
     {
-        public FilterListService(FilterListsDbContext dbContext, IConfigurationProvider configurationProvider) :
-            base(dbContext, configurationProvider)
+        public FilterListService(FilterListsDbContext dbContext, IConfigurationProvider mapConfig)
+            : base(dbContext, mapConfig)
         {
         }
 
         public async Task<IEnumerable<ListSummaryDto>> GetAllSummariesAsync() =>
-            await DbContext.FilterLists.OrderBy(l => l.Name)
-                           .ProjectTo<ListSummaryDto>(ConfigurationProvider)
-                           .ToListAsync();
+            await DbContext.FilterLists.OrderBy(l => l.Name).ProjectTo<ListSummaryDto>(MapConfig).ToListAsync();
 
         public async Task<ListDetailsDto> GetDetailsAsync(uint id) =>
-            await DbContext.FilterLists.ProjectTo<ListDetailsDto>(ConfigurationProvider)
+            await DbContext.FilterLists.ProjectTo<ListDetailsDto>(MapConfig)
                            .FirstOrDefaultAsync(x => x.Id == id)
                            .FilterParentListFromMaintainerAdditionalLists();
     }
