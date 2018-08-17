@@ -29,7 +29,7 @@ namespace FilterLists.Services.Snapshot
             await SaveSnapshots(snapshots);
         }
 
-        private async Task<List<FilterListViewUrlDto>> GetListsToCapture(int batchSize) =>
+        private async Task<IEnumerable<FilterListViewUrlDto>> GetListsToCapture(int batchSize) =>
             await DbContext
                   .FilterLists
                   .Where(l => !l.CantSnapshot &&
@@ -53,7 +53,7 @@ namespace FilterLists.Services.Snapshot
         private static async Task SaveSnapshots(IEnumerable<SnapshotDe> snapshots)
         {
             foreach (var snapshot in snapshots)
-                await snapshot.SaveAsync();
+                await snapshot.TrySaveAsync();
         }
     }
 }

@@ -36,36 +36,40 @@ namespace FilterLists.Services.Snapshot
             };
         }
 
-        public async Task SaveAsync()
+        public async Task TrySaveAsync()
         {
-            await AddSnapshot();
-            using (var transaction = dbContext.Database.BeginTransaction())
+            await Add();
+            try
             {
-                try
-                {
-                    var content = await TryGetContent();
-                    if (content != null)
-                    {
-                        await SaveSnapshotInBatches(content);
-                        await DedupSnapshotRules();
-                        await SetSuccessful();
-                    }
-
-                    transaction.Commit();
-                }
-                catch (Exception e)
-                {
-                    await SendExceptionEmail(e);
-                }
+                await SaveAsync();
             }
-
-            await EnsureHttpStatusCodeSaved();
+            catch (Exception e)
+            {
+                await SaveHttpStatusCodeBak();
+                await SendExceptionEmail(e);
+            }
         }
 
-        private async Task AddSnapshot()
+        private async Task Add()
         {
             await dbContext.Snapshots.AddAsync(snapshot);
             await dbContext.SaveChangesAsync();
+        }
+
+        private async Task SaveAsync()
+        {
+            using (var transaction = dbContext.Database.BeginTransaction())
+            {
+                var content = await TryGetContent();
+                if (content != null)
+                {
+                    await SaveInBatches(content);
+                    await DedupSnapshotRules();
+                    await SetSuccessful();
+                }
+
+                transaction.Commit();
+            }
         }
 
         private async Task<string> TryGetContent()
@@ -80,12 +84,6 @@ namespace FilterLists.Services.Snapshot
                 await SendWebExceptionEmail();
                 return null;
             }
-            catch (Exception e)
-            {
-                snapshot.HttpStatusCode = null;
-                await SendExceptionEmail(e);
-                return null;
-            }
         }
 
         private async Task<string> GetContent()
@@ -95,8 +93,7 @@ namespace FilterLists.Services.Snapshot
                 httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(UserAgentString);
                 using (var httpResponseMessage = await httpClient.GetAsync(list.ViewUrl))
                 {
-                    snapshot.HttpStatusCode = ((int)httpResponseMessage.StatusCode).ToString();
-                    httpStatusCodeBak = snapshot.HttpStatusCode;
+                    snapshot.HttpStatusCode = httpStatusCodeBak = ((int)httpResponseMessage.StatusCode).ToString();
                     if (httpResponseMessage.IsSuccessStatusCode)
                         return await httpResponseMessage.Content.ReadAsStringAsync();
                 }
@@ -106,7 +103,7 @@ namespace FilterLists.Services.Snapshot
             return null;
         }
 
-        private async Task EnsureHttpStatusCodeSaved()
+        private async Task SaveHttpStatusCodeBak()
         {
             if (!snapshot.WasSuccessful)
             {
@@ -137,11 +134,11 @@ namespace FilterLists.Services.Snapshot
             await emailService.SendEmailAsync("Snapshot Exception", message.ToString());
         }
 
-        private async Task SaveSnapshotInBatches(string content)
+        private async Task SaveInBatches(string content)
         {
             var rawRules = ParseRawRules(content);
-            var snapshotBatches = CreateSnapshotBatches(rawRules);
-            await SaveSnapshotBatches(snapshotBatches);
+            var snapshotBatches = CreateBatches(rawRules);
+            await SaveBatches(snapshotBatches);
         }
 
         private static IEnumerable<string> ParseRawRules(string content)
@@ -152,13 +149,13 @@ namespace FilterLists.Services.Snapshot
             return rawRules.Where(r => r != null);
         }
 
-        private IEnumerable<SnapshotDeBatch> CreateSnapshotBatches(IEnumerable<string> rawRules) =>
+        private IEnumerable<SnapshotDeBatch> CreateBatches(IEnumerable<string> rawRules) =>
             rawRules.Batch(BatchSize).Select(b => new SnapshotDeBatch(dbContext, snapshot, b));
 
-        private static async Task SaveSnapshotBatches(IEnumerable<SnapshotDeBatch> snapshotBatches)
+        private static async Task SaveBatches(IEnumerable<SnapshotDeBatch> snapshotBatches)
         {
-            foreach (var snapshotBatch in snapshotBatches)
-                await snapshotBatch.SaveAsync();
+            foreach (var batch in snapshotBatches)
+                await batch.SaveAsync();
         }
 
         private async Task DedupSnapshotRules()
@@ -179,7 +176,7 @@ namespace FilterLists.Services.Snapshot
         {
             var newSnapshotRules = dbContext.SnapshotRules.Where(sr => sr.AddedBySnapshot == snapshot);
             var removedSnapshotRules = existingSnapshotRules.Where(sr => !newSnapshotRules.Any(n => n.Rule == sr.Rule));
-            removedSnapshotRules.ToList().ForEach(sr => sr.RemovedBySnapshot = snapshot);
+            removedSnapshotRules.ForEach(sr => sr.RemovedBySnapshot = snapshot);
         }
 
         private void RemoveDuplicateSnapshotRules(IQueryable<SnapshotRule> existingSnapshotRules)
