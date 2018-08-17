@@ -6,12 +6,10 @@ using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using FilterLists.Services.Snapshot.Models;
-using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Services.Snapshot
 {
-    [UsedImplicitly]
     public class SnapshotService : Service
     {
         private readonly DateTime yesterday = DateTime.UtcNow.AddDays(-1);
