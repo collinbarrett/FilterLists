@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
     <Authors>Collin M. Barrett</Authors>
     <Company>Collin M. Barrett</Company>
     <Product>FilterLists</Product>
