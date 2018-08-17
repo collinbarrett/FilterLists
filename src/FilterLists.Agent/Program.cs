@@ -22,7 +22,7 @@ namespace FilterLists.Agent
             BuildConfigRoot();
             BuildServiceProvider();
             snapshotService = serviceProvider.GetService<SnapshotService>();
-            using (BuildLogger())
+            using (logger = new Logger(configRoot[AppInsightsKeyConfig]))
             {
                 CaptureSnapshots(BatchSize);
             }
@@ -40,8 +40,6 @@ namespace FilterLists.Agent
             serviceCollection.AddFilterListsAgentServices(configRoot);
             serviceProvider = serviceCollection.BuildServiceProvider();
         }
-
-        private static Logger BuildLogger() => logger = new Logger(configRoot[AppInsightsKeyConfig]);
 
         private static void CaptureSnapshots(int batchSize)
         {
