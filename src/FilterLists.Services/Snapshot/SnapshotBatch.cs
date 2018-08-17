@@ -8,18 +8,18 @@ using FilterLists.Services.Extensions;
 
 namespace FilterLists.Services.Snapshot
 {
-    public class SnapshotDeBatch
+    public class SnapshotBatch
     {
         private readonly FilterListsDbContext dbContext;
         private readonly IEnumerable<string> rawRules;
-        private readonly Data.Entities.Snapshot snapshot;
+        private readonly Data.Entities.Snapshot snapEntity;
         private IQueryable<Rule> rules;
 
-        public SnapshotDeBatch(FilterListsDbContext dbContext, Data.Entities.Snapshot snapshot,
-            IEnumerable<string> rawRules)
+        public SnapshotBatch(FilterListsDbContext dbContext, IEnumerable<string> rawRules,
+            Data.Entities.Snapshot snapEntity)
         {
             this.dbContext = dbContext;
-            this.snapshot = snapshot;
+            this.snapEntity = snapEntity;
             this.rawRules = rawRules;
         }
 
@@ -44,6 +44,6 @@ namespace FilterLists.Services.Snapshot
             rawRules.Except(existingRules.Select(r => r.Raw)).Select(r => new Rule {Raw = r}).ToList();
 
         private void AddSnapshotRules() =>
-            snapshot.AddedSnapshotRules.AddRange(rules.Select(r => new SnapshotRule {Rule = r}));
+            snapEntity.AddedSnapshotRules.AddRange(rules.Select(r => new SnapshotRule {Rule = r}));
     }
 }
