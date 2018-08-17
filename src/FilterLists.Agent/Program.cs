@@ -17,14 +17,14 @@ namespace FilterLists.Agent
         private static SnapshotService snapshotService;
         private static Logger logger;
 
-        public static void Main()
+        public static async Task Main()
         {
             BuildConfigRoot();
             BuildServiceProvider();
             snapshotService = serviceProvider.GetService<SnapshotService>();
             using (logger = new Logger(configRoot[AppInsightsKeyConfig]))
             {
-                CaptureSnapshots(BatchSize);
+                await CaptureSnapshots(BatchSize);
             }
         }
 
@@ -41,10 +41,10 @@ namespace FilterLists.Agent
             serviceProvider = serviceCollection.BuildServiceProvider();
         }
 
-        private static void CaptureSnapshots(int batchSize)
+        private static async Task CaptureSnapshots(int batchSize)
         {
             logger.Log("Capturing FilterList snapshots...");
-            TryCaptureAsync(batchSize).Wait();
+            await TryCaptureAsync(batchSize);
             logger.Log("Snapshots captured.");
         }
 
