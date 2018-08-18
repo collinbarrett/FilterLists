@@ -13,29 +13,23 @@ namespace FilterLists.Services.Snapshot
         private readonly FilterListsDbContext dbContext;
         private readonly IEnumerable<string> rawRules;
         private readonly Data.Entities.Snapshot snapEntity;
-        private IQueryable<Rule> rules;
 
         public SnapshotBatch(FilterListsDbContext dbContext, IEnumerable<string> rawRules,
             Data.Entities.Snapshot snapEntity)
         {
             this.dbContext = dbContext;
-            this.snapEntity = snapEntity;
             this.rawRules = rawRules;
+            this.snapEntity = snapEntity;
         }
 
         public async Task SaveAsync()
         {
-            AddRules();
-            AddSnapshotRules();
-            await dbContext.SaveChangesAsync();
-        }
-
-        private void AddRules()
-        {
             var existingRules = GetExistingRules();
             var newRules = CreateNewRules(existingRules);
-            rules = existingRules.Concat(newRules);
             dbContext.Rules.AddRange(newRules);
+            var rules = existingRules.Concat(newRules);
+            AddSnapshotRules(rules);
+            await dbContext.SaveChangesAsync();
         }
 
         private IQueryable<Rule> GetExistingRules() => dbContext.Rules.Where(r => rawRules.Contains(r.Raw));
@@ -43,7 +37,7 @@ namespace FilterLists.Services.Snapshot
         private List<Rule> CreateNewRules(IQueryable<Rule> existingRules) =>
             rawRules.Except(existingRules.Select(r => r.Raw)).Select(r => new Rule {Raw = r}).ToList();
 
-        private void AddSnapshotRules() =>
+        private void AddSnapshotRules(IQueryable<Rule> rules) =>
             snapEntity.AddedSnapshotRules.AddRange(rules.Select(r => new SnapshotRule {Rule = r}));
     }
 }

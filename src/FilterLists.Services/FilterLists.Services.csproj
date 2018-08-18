@@ -29,4 +29,8 @@
     <ProjectReference Include="..\FilterLists.Data\FilterLists.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
 </Project>
