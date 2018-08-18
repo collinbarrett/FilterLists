@@ -5,11 +5,11 @@
         public static string LintLine(this string line)
         {
             line = line.Trim();
-            line = line.DropIfTooLong();
+            line = line.TruncateIfTooLong();
             return line;
         }
 
-        private static string DropIfTooLong(this string line) =>
-            line.Length > 8192 ? null : line;
+        private static string TruncateIfTooLong(this string line) =>
+            line.Length > 768 ? line.Substring(0, 768) : line;
     }
 }
