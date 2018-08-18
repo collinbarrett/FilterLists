@@ -13,7 +13,7 @@ namespace FilterLists.Services.Snapshot
 {
     public class Snapshot
     {
-        private const int BatchSize = 50;
+        private const int BatchSize = 1000;
         private readonly FilterListsDbContext dbContext;
         private readonly FilterListViewUrlDto list;
         private readonly Data.Entities.Snapshot snapEntity;
@@ -104,7 +104,7 @@ namespace FilterLists.Services.Snapshot
             var rawRules = content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
             for (var i = 0; i < rawRules.Length; i++)
                 rawRules[i] = rawRules[i].LintRawRule();
-            return rawRules.Where(r => r != null);
+            return new HashSet<string>(rawRules.Where(r => r != null));
         }
 
         private IEnumerable<SnapshotBatch> CreateBatches(IEnumerable<string> rawRules) =>
