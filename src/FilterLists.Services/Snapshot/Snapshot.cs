@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities.Junctions;
+using FilterLists.Services.Extensions;
 using FilterLists.Services.Snapshot.Models;
 using MoreLinq;
 
@@ -29,20 +31,22 @@ namespace FilterLists.Services.Snapshot
             };
         }
 
+        //TODO: add better compliance with Try/Parse pattern (https://stackoverflow.com/q/37810660/2343739)
         public async Task TrySaveAsync()
         {
-            await Add();
+            await AddSnapEntity();
             try
             {
                 await SaveAsync();
             }
             catch (Exception)
             {
+                //allow other snapshots to continue
                 //TODO: log
             }
         }
 
-        private async Task Add()
+        private async Task AddSnapEntity()
         {
             dbContext.Snapshots.Add(snapEntity);
             await dbContext.SaveChangesAsync();
@@ -52,10 +56,10 @@ namespace FilterLists.Services.Snapshot
         {
             using (var transaction = dbContext.Database.BeginTransaction())
             {
-                var content = await TryGetContent();
-                if (content != null)
+                var lines = await TryGetLines();
+                if (lines != null)
                 {
-                    await SaveInBatches(content);
+                    await SaveInBatches(lines);
                     await DedupSnapshotRules();
                     await SetSuccessful();
                 }
@@ -64,11 +68,15 @@ namespace FilterLists.Services.Snapshot
             }
         }
 
-        private async Task<string> TryGetContent()
+        private async Task<IEnumerable<string>> TryGetLines()
         {
             try
             {
-                return await GetContent();
+                return await GetLines();
+            }
+            catch (HttpRequestException)
+            {
+                return null;
             }
             catch (WebException we)
             {
@@ -77,49 +85,45 @@ namespace FilterLists.Services.Snapshot
             }
         }
 
-        private async Task<string> GetContent()
+        private async Task<IEnumerable<string>> GetLines()
         {
+            var lines = new HashSet<string>();
             using (var httpClient = new HttpClient())
             {
-                using (var httpResponseMessage = await httpClient.GetAsync(list.ViewUrl))
+                var response = await httpClient.GetAsync(list.ViewUrl, HttpCompletionOption.ResponseHeadersRead);
+                snapEntity.HttpStatusCode = ((int)response.StatusCode).ToString();
+                response.EnsureSuccessStatusCode();
+                using (var stream = await response.Content.ReadAsStreamAsync())
+                using (var streamReader = new StreamReader(stream))
                 {
-                    snapEntity.HttpStatusCode = ((int)httpResponseMessage.StatusCode).ToString();
-                    if (httpResponseMessage.IsSuccessStatusCode)
-                        return await httpResponseMessage.Content.ReadAsStringAsync();
+                    string line;
+                    while ((line = await streamReader.ReadLineAsync()) != null)
+                        lines.AddIfNotNullOrEmpty(line.LintLine());
                 }
             }
 
-            return null;
+            return lines;
         }
 
-        private async Task SaveInBatches(string content)
+        private async Task SaveInBatches(IEnumerable<string> lines)
         {
-            var rawRules = ParseRawRules(content);
-            var snapshotBatches = CreateBatches(rawRules);
+            var snapshotBatches = CreateBatches(lines);
             await SaveBatches(snapshotBatches);
         }
 
-        private static IEnumerable<string> ParseRawRules(string content)
-        {
-            var rawRules = content.Split(new[] {"\r\n", "\r", "\n"}, StringSplitOptions.RemoveEmptyEntries);
-            for (var i = 0; i < rawRules.Length; i++)
-                rawRules[i] = rawRules[i].LintRawRule();
-            return new HashSet<string>(rawRules.Where(r => r != null));
-        }
+        private IEnumerable<SnapshotBatch> CreateBatches(IEnumerable<string> lines) =>
+            lines.Batch(BatchSize).Select(b => new SnapshotBatch(dbContext, b, snapEntity));
 
-        private IEnumerable<SnapshotBatch> CreateBatches(IEnumerable<string> rawRules) =>
-            rawRules.Batch(BatchSize).Select(b => new SnapshotBatch(dbContext, b, snapEntity));
-
-        private static async Task SaveBatches(IEnumerable<SnapshotBatch> snapshotBatches)
+        private static async Task SaveBatches(IEnumerable<SnapshotBatch> batches)
         {
-            foreach (var batch in snapshotBatches)
+            foreach (var batch in batches)
                 await batch.SaveAsync();
         }
 
         private async Task DedupSnapshotRules()
         {
             var existingSnapshotRules = GetExistingSnapshotRules();
-            UpdateRemovedSnapshotRules(existingSnapshotRules);
+            AddRemovedBySnapshots(existingSnapshotRules);
             RemoveDuplicateSnapshotRules(existingSnapshotRules);
             await dbContext.SaveChangesAsync();
         }
@@ -130,7 +134,7 @@ namespace FilterLists.Services.Snapshot
                 sr.AddedBySnapshot != snapEntity &&
                 sr.RemovedBySnapshot == null);
 
-        private void UpdateRemovedSnapshotRules(IQueryable<SnapshotRule> existingSnapshotRules)
+        private void AddRemovedBySnapshots(IQueryable<SnapshotRule> existingSnapshotRules)
         {
             var newSnapshotRules = dbContext.SnapshotRules.Where(sr => sr.AddedBySnapshot == snapEntity);
             var removedSnapshotRules = existingSnapshotRules.Where(sr => !newSnapshotRules.Any(n => n.Rule == sr.Rule));
@@ -141,7 +145,8 @@ namespace FilterLists.Services.Snapshot
         {
             var duplicateSnapshotRules = dbContext.SnapshotRules.Where(sr =>
                 sr.AddedBySnapshot == snapEntity &&
-                existingSnapshotRules.Any(e => e.Rule == sr.Rule));
+                existingSnapshotRules.Any(e =>
+                    e.Rule == sr.Rule && e.RemovedBySnapshot == null));
             dbContext.SnapshotRules.RemoveRange(duplicateSnapshotRules);
         }
 

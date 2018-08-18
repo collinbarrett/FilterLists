@@ -13,5 +13,11 @@ namespace FilterLists.Services.Extensions
                 foreach (var item in source)
                     destination.Add(item);
         }
+
+        public static void AddIfNotNullOrEmpty(this ICollection<string> set, string item)
+        {
+            if (!string.IsNullOrEmpty(item))
+                set.Add(item);
+        }
     }
 }
