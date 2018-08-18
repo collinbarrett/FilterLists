@@ -11,14 +11,14 @@ namespace FilterLists.Services.Snapshot
     public class SnapshotBatch
     {
         private readonly FilterListsDbContext dbContext;
-        private readonly IEnumerable<string> rawRules;
+        private readonly IEnumerable<string> lines;
         private readonly Data.Entities.Snapshot snapEntity;
 
-        public SnapshotBatch(FilterListsDbContext dbContext, IEnumerable<string> rawRules,
+        public SnapshotBatch(FilterListsDbContext dbContext, IEnumerable<string> lines,
             Data.Entities.Snapshot snapEntity)
         {
             this.dbContext = dbContext;
-            this.rawRules = rawRules;
+            this.lines = lines;
             this.snapEntity = snapEntity;
         }
 
@@ -32,10 +32,10 @@ namespace FilterLists.Services.Snapshot
             await dbContext.SaveChangesAsync();
         }
 
-        private IQueryable<Rule> GetExistingRules() => dbContext.Rules.Where(r => rawRules.Contains(r.Raw));
+        private IQueryable<Rule> GetExistingRules() => dbContext.Rules.Where(r => lines.Contains(r.Raw));
 
         private List<Rule> CreateNewRules(IQueryable<Rule> existingRules) =>
-            rawRules.Except(existingRules.Select(r => r.Raw)).Select(r => new Rule {Raw = r}).ToList();
+            lines.Except(existingRules.Select(r => r.Raw)).Select(r => new Rule {Raw = r}).ToList();
 
         private void AddSnapshotRules(IQueryable<Rule> rules) =>
             snapEntity.AddedSnapshotRules.AddRange(rules.Select(r => new SnapshotRule {Rule = r}));
