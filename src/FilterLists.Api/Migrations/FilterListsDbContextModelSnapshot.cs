@@ -377,12 +377,9 @@ namespace FilterLists.Api.Migrations
 
                 b.Property<string>("Raw")
                  .IsRequired()
-                 .HasColumnType("VARCHAR(768)");
+                 .HasColumnType("VARCHAR(8192)");
 
                 b.HasKey("Id");
-
-                b.HasIndex("Raw")
-                 .IsUnique();
 
                 b.ToTable("rules");
             });
