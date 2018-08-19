@@ -10,6 +10,6 @@
         }
 
         private static string TruncateIfTooLong(this string line) =>
-            line.Length > 768 ? line.Substring(0, 768) : line;
+            line.Length > 191 ? line.Substring(0, 191) : line;
     }
 }
