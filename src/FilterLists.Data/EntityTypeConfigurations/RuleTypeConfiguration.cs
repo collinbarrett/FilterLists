@@ -14,7 +14,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
                              .HasColumnType("INT UNSIGNED");
             entityTypeBuilder.Ignore(x => x.ModifiedDateUtc);
             entityTypeBuilder.Property(x => x.Raw)
-                             .HasColumnType("VARCHAR(8192)")
+                             .HasColumnType("VARCHAR(768)")
                              .IsRequired();
         }
     }
