@@ -12,12 +12,12 @@ namespace FilterLists.Services.Snapshot
 {
     public class SnapshotService : Service
     {
-        private readonly EmailService emailService;
         private readonly DateTime yesterday = DateTime.UtcNow.AddDays(-1);
 
-        public SnapshotService(FilterListsDbContext dbContext, IConfigurationProvider mapConfig,
-            EmailService emailService)
-            : base(dbContext, mapConfig) => this.emailService = emailService;
+        public SnapshotService(FilterListsDbContext dbContext, IConfigurationProvider mapConfig)
+            : base(dbContext, mapConfig)
+        {
+        }
 
         public async Task CaptureAsync(int batchSize)
         {
@@ -45,7 +45,7 @@ namespace FilterLists.Services.Snapshot
                   .ToListAsync();
 
         private IEnumerable<Snapshot> CreateSnapshots(IEnumerable<FilterListViewUrlDto> lists) =>
-            lists.Select(l => new Snapshot(DbContext, emailService, l));
+            lists.Select(l => new Snapshot(DbContext, l));
 
         private static async Task SaveSnapshots(IEnumerable<Snapshot> snapshots)
         {
