@@ -8363,5 +8363,24 @@
     "syntaxId": 4,
     "viewUrl":
       "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/i-dont-want-your-app.txt"
+  },
+  {
+    "id": 437,
+    "chatUrl": null,
+    "description": "Complementary subscription to EasyList.",
+    "descriptionSourceUrl": "https://github.com/easylistbrasil/easylistbrasil/",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": "easylistbrasil.subscription@gmail.com",
+    "forumUrl": "http://easylistbrasil.freeforums.net",
+    "homeUrl": "https://easylistbrasil.github.io/",
+    "issuesUrl": "https://github.com/easylistbrasil/easylistbrasil/issues",
+    "licenseId": 8,
+    "name": "EasyList Brasil",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": null,
+    "viewUrl": "https://raw.githubusercontent.com/easylistbrasil/easylistbrasil/filtro/easylistbrasil.txt"
   }
 ]
