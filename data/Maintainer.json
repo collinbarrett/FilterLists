@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": 2,
     "emailAddress": null,
@@ -473,6 +473,13 @@
     "emailAddress": null,
     "homeUrl": "https://github.com/KonoromiHimaries",
     "name": "KonoromiHimaries",
+    "twitterHandle": null
+  },
+  {
+    "id": 71,
+    "emailAddress": null,
+    "homeUrl": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=9300",
+    "name": "invisible666",
     "twitterHandle": null
   }
 ]
