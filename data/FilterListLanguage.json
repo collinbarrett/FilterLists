@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "filterListId": 1,
     "languageId": 141
@@ -670,5 +670,9 @@
   {
     "filterListID": 435,
     "languageId": 99
+  },
+  {
+    "filterListID": 437,
+    "languageId": 13
   }
 ]
