@@ -10,7 +10,6 @@ namespace FilterLists.Services.FilterList.MappingProfiles
     {
         public ListDetailsDtoMappingProfile() =>
             CreateMap<Data.Entities.FilterList, ListDetailsDto>()
-                .ForMember(d => d.AddedDate, c => c.MapFrom(l => l.CreatedDateUtc))
                 .ForMember(d => d.Languages, c => c.MapFrom(l => l.FilterListLanguages.Select(la => la.Language.Name)))
                 .ForMember(d => d.Maintainers, c => c.MapFrom(l => l.FilterListMaintainers.Select(m => m.Maintainer)))
                 .ForMember(d => d.RuleCount,
