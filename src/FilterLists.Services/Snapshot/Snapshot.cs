@@ -4,11 +4,13 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Extensions;
 using FilterLists.Services.Snapshot.Models;
+using Microsoft.ApplicationInsights;
 using MoreLinq;
 
 namespace FilterLists.Services.Snapshot
@@ -19,11 +21,13 @@ namespace FilterLists.Services.Snapshot
         private readonly FilterListsDbContext dbContext;
         private readonly FilterListViewUrlDto list;
         private readonly Data.Entities.Snapshot snapEntity;
+        private readonly TelemetryClient telemetryClient;
 
         public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list)
         {
             this.dbContext = dbContext;
             this.list = list;
+            telemetryClient = new TelemetryClient();
             snapEntity = new Data.Entities.Snapshot
             {
                 FilterListId = list.Id,
@@ -39,10 +43,9 @@ namespace FilterLists.Services.Snapshot
             {
                 await SaveAsync();
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                //allow other snapshots to continue
-                //TODO: log
+                TrackException(e);
             }
         }
 
@@ -74,13 +77,15 @@ namespace FilterLists.Services.Snapshot
             {
                 return await GetLines();
             }
-            catch (HttpRequestException)
+            catch (HttpRequestException hre)
             {
+                TrackException(hre);
                 return null;
             }
             catch (WebException we)
             {
                 snapEntity.HttpStatusCode = ((int)((HttpWebResponse)we.Response).StatusCode).ToString();
+                TrackException(we);
                 return null;
             }
         }
@@ -154,6 +159,13 @@ namespace FilterLists.Services.Snapshot
         {
             snapEntity.WasSuccessful = true;
             await dbContext.SaveChangesAsync();
+        }
+
+        private void TrackException(Exception e)
+        {
+            telemetryClient.TrackException(e);
+            telemetryClient.Flush();
+            Thread.Sleep(5000);
         }
     }
 }
