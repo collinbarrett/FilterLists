@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Data;
@@ -19,20 +20,22 @@ namespace FilterLists.Services.Snapshot
     {
         private const int BatchSize = 500;
         private readonly FilterListsDbContext dbContext;
+        private readonly EmailService emailService;
         private readonly FilterListViewUrlDto list;
         private readonly Data.Entities.Snapshot snapEntity;
         private readonly TelemetryClient telemetryClient;
 
-        public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list)
+        public Snapshot(FilterListsDbContext dbContext, EmailService emailService, FilterListViewUrlDto list)
         {
             this.dbContext = dbContext;
+            this.emailService = emailService;
             this.list = list;
-            telemetryClient = new TelemetryClient();
             snapEntity = new Data.Entities.Snapshot
             {
                 FilterListId = list.Id,
                 AddedSnapshotRules = new List<SnapshotRule>()
             };
+            telemetryClient = new TelemetryClient();
         }
 
         //TODO: add better compliance with Try/Parse pattern (https://stackoverflow.com/q/37810660/2343739)
@@ -45,7 +48,7 @@ namespace FilterLists.Services.Snapshot
             }
             catch (Exception e)
             {
-                TrackException(e);
+                await TrackException(e);
             }
         }
 
@@ -79,13 +82,13 @@ namespace FilterLists.Services.Snapshot
             }
             catch (HttpRequestException hre)
             {
-                TrackException(hre);
+                await TrackException(hre);
                 return null;
             }
             catch (WebException we)
             {
                 snapEntity.HttpStatusCode = ((int)((HttpWebResponse)we.Response).StatusCode).ToString();
-                TrackException(we);
+                await TrackException(we);
                 return null;
             }
         }
@@ -161,7 +164,25 @@ namespace FilterLists.Services.Snapshot
             await dbContext.SaveChangesAsync();
         }
 
-        private void TrackException(Exception e)
+        private async Task TrackException(Exception e)
+        {
+            await SendExceptionEmail(e);
+            TrackExceptionInApplicationInsights(e);
+        }
+
+        private async Task SendExceptionEmail(Exception e)
+        {
+            var msg = new StringBuilder();
+            msg.AppendLine("FilterListId: " + list.Id);
+            msg.AppendLine("Exception:");
+            msg.AppendLine(e.Message);
+            msg.AppendLine(e.StackTrace);
+            msg.AppendLine(e.InnerException?.Message);
+            msg.AppendLine(e.InnerException?.StackTrace);
+            await emailService.SendEmailAsync("Snapshot Exception", msg.ToString());
+        }
+
+        private void TrackExceptionInApplicationInsights(Exception e)
         {
             telemetryClient.TrackException(e);
             telemetryClient.Flush();
