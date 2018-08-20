@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FilterLists.Data;
@@ -32,12 +33,23 @@ namespace FilterLists.Services.Snapshot
             await dbContext.SaveChangesAsync();
         }
 
-        private IQueryable<Rule> GetExistingRules() => dbContext.Rules.Where(r => lines.Contains(r.Raw));
+        private IQueryable<Rule> GetExistingRules()
+        {
+            var lineRules = lines.Select(l => new Rule {Raw = l});
+            return dbContext.Rules.Intersect(lineRules, new RuleRawEqualityComparer());
+        }
 
         private List<Rule> CreateNewRules(IQueryable<Rule> existingRules) =>
             lines.Except(existingRules.Select(r => r.Raw)).Select(r => new Rule {Raw = r}).ToList();
 
         private void AddSnapshotRules(IQueryable<Rule> rules) =>
             snapEntity.AddedSnapshotRules.AddRange(rules.Select(r => new SnapshotRule {Rule = r}));
+
+        private class RuleRawEqualityComparer : IEqualityComparer<Rule>
+        {
+            public bool Equals(Rule x, Rule y) => x?.Raw == y?.Raw;
+
+            public int GetHashCode(Rule obj) => throw new NotImplementedException();
+        }
     }
 }
