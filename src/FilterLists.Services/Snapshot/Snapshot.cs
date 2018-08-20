@@ -62,7 +62,7 @@ namespace FilterLists.Services.Snapshot
                 var lines = await TryGetLines();
                 if (lines != null)
                 {
-                    SaveInBatches(lines);
+                    await SaveInBatches(lines);
                     await DedupSnapshotRules();
                     await SetSuccessful();
                 }
@@ -110,19 +110,19 @@ namespace FilterLists.Services.Snapshot
             return lines;
         }
 
-        private void SaveInBatches(IEnumerable<string> lines)
+        private async Task SaveInBatches(IEnumerable<string> lines)
         {
             var snapshotBatches = CreateBatches(lines);
-            SaveBatches(snapshotBatches);
+            await SaveBatches(snapshotBatches);
         }
 
         private IEnumerable<SnapshotBatch> CreateBatches(IEnumerable<string> lines) =>
             lines.Batch(BatchSize).Select(b => new SnapshotBatch(dbContext, b, snapEntity));
 
-        private static void SaveBatches(IEnumerable<SnapshotBatch> batches)
+        private static async Task SaveBatches(IEnumerable<SnapshotBatch> batches)
         {
             foreach (var batch in batches)
-                batch.Save();
+                await batch.SaveAsync();
         }
 
         private async Task DedupSnapshotRules()
