@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities.Junctions;
@@ -17,12 +18,14 @@ namespace FilterLists.Services.Snapshot
     {
         private const int BatchSize = 1000;
         private readonly FilterListsDbContext dbContext;
+        private readonly EmailService emailService;
         private readonly FilterListViewUrlDto list;
         private readonly Data.Entities.Snapshot snapEntity;
 
-        public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list)
+        public Snapshot(FilterListsDbContext dbContext, EmailService emailService, FilterListViewUrlDto list)
         {
             this.dbContext = dbContext;
+            this.emailService = emailService;
             this.list = list;
             snapEntity = new Data.Entities.Snapshot
             {
@@ -39,10 +42,10 @@ namespace FilterLists.Services.Snapshot
             {
                 await SaveAsync();
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 //allow other snapshots to continue
-                //TODO: log
+                await SendExceptionEmail(e);
             }
         }
 
@@ -154,6 +157,18 @@ namespace FilterLists.Services.Snapshot
         {
             snapEntity.WasSuccessful = true;
             await dbContext.SaveChangesAsync();
+        }
+
+        private async Task SendExceptionEmail(Exception e)
+        {
+            var msg = new StringBuilder();
+            msg.AppendLine("FilterListId: " + list.Id);
+            msg.AppendLine("Exception:");
+            msg.AppendLine(e.Message);
+            msg.AppendLine(e.StackTrace);
+            msg.AppendLine(e.InnerException?.Message);
+            msg.AppendLine(e.InnerException?.StackTrace);
+            await emailService.SendEmailAsync("Snapshot Exception", msg.ToString());
         }
     }
 }
