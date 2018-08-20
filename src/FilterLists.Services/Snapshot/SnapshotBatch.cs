@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
@@ -21,14 +22,14 @@ namespace FilterLists.Services.Snapshot
             this.snapEntity = snapEntity;
         }
 
-        public void Save()
+        public async Task SaveAsync()
         {
             var existingRules = GetExistingRules();
             var newRules = CreateNewRules(existingRules);
             dbContext.Rules.AddRange(newRules);
             var rules = existingRules.Concat(newRules);
             AddSnapshotRules(rules);
-            dbContext.SaveChanges();
+            await dbContext.SaveChangesAsync();
         }
 
         private IQueryable<Rule> GetExistingRules() =>
