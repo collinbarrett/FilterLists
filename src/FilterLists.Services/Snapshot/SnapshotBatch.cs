@@ -33,7 +33,7 @@ namespace FilterLists.Services.Snapshot
         }
 
         private IQueryable<Rule> GetExistingRules() =>
-            dbContext.Rules.Join(lines, rule => rule.Raw, line => line, (rule, line) => rule);
+            dbContext.Rules.Where(r => lines.Contains(r.Raw));
 
         private List<Rule> CreateNewRules(IQueryable<Rule> existingRules) =>
             lines.Except(existingRules.Select(r => r.Raw)).Select(r => new Rule {Raw = r}).ToList();
