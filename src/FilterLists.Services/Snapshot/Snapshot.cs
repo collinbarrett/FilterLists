@@ -87,12 +87,14 @@ namespace FilterLists.Services.Snapshot
             }
             catch (HttpRequestException hre)
             {
+                await dbContext.SaveChangesAsync();
                 await TrackException(hre);
                 return null;
             }
             catch (WebException we)
             {
                 snapEntity.HttpStatusCode = ((int)((HttpWebResponse)we.Response).StatusCode).ToString();
+                await dbContext.SaveChangesAsync();
                 await TrackException(we);
                 return null;
             }
