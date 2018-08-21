@@ -3284,8 +3284,7 @@
   {
     "id": 172,
     "chatUrl": null,
-    "description":
-      "The most complete and accurate list to block ads, tracers and other Internet crap on smartphones and PCs.",
+    "description": "The most complete and accurate list to block ads, tracers and other Internet crap on smartphones and PCs.",
     "descriptionSourceUrl": "https://github.com/collinbarrett/FilterLists/issues/280",
     "discontinuedDate": null,
     "donateUrl": "https://paypal.me/hajdarkakud",
@@ -3299,7 +3298,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 6,
-    "viewUrl": "https://adzhosts.fr/hosts/AdZGuardFilter.txt"
+    "viewUrl": "https://adzhosts.eu/hosts/AdZGuardFilter.txt"
   },
   {
     "id": 173,
