@@ -20,9 +20,11 @@ namespace FilterLists.Data
         public DbSet<Snapshot> Snapshots { get; set; }
         public DbSet<Software> Software { get; set; }
         public DbSet<Syntax> Syntaxes { get; set; }
+        public DbSet<Tag> Tags { get; set; }
 
         public DbSet<FilterListLanguage> FilterListLanguages { get; set; }
         public DbSet<FilterListMaintainer> FilterListMaintainers { get; set; }
+        public DbSet<FilterListTag> FilterListTags { get; set; }
         public DbSet<Fork> Forks { get; set; }
         public DbSet<Merge> Merges { get; set; }
         public DbSet<SnapshotRule> SnapshotRules { get; set; }
@@ -45,9 +47,11 @@ namespace FilterLists.Data
             modelBuilder.ApplyConfiguration(new SnapshotTypeConfiguration());
             modelBuilder.ApplyConfiguration(new SoftwareTypeConfiguration());
             modelBuilder.ApplyConfiguration(new SyntaxTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new TagTypeConfiguration());
 
             modelBuilder.ApplyConfiguration(new FilterListLanguageTypeConfiguration());
             modelBuilder.ApplyConfiguration(new FilterListMaintainerTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new FilterListTagTypeConfiguration());
             modelBuilder.ApplyConfiguration(new ForkTypeConfiguration());
             modelBuilder.ApplyConfiguration(new MergeTypeConfiguration());
             modelBuilder.ApplyConfiguration(new SnapshotRuleTypeConfiguration());
