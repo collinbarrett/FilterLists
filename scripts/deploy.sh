@@ -9,7 +9,7 @@ sshpass -p $FTP_PASSWORD scp -o StrictHostKeyChecking=no -r /home/travis/build/c
 
 #deploy Agent
 sshpass -p $FTP_PASSWORD ssh -o StrictHostKeyChecking=no $FTP_USER@$FTP_HOST 'sudo /etc/init.d/mysql restart'
-sshpass -p $FTP_PASSWORD ssh -o StrictHostKeyChecking=no $FTP_USER@$FTP_HOST 'kill /var/www/filterlists/FilterLists.Agent'
+sshpass -p $FTP_PASSWORD ssh -o StrictHostKeyChecking=no $FTP_USER@$FTP_HOST 'killall /var/www/filterlists/FilterLists.Agent'
 sshpass -p $FTP_PASSWORD scp -o StrictHostKeyChecking=no -r /home/travis/build/collinbarrett/FilterLists/src/FilterLists.Agent/bin/Release/netcoreapp2.1/ubuntu.18.04-x64/publish/* $FTP_USER@$FTP_HOST:$FTP_DIR
 
 #deploy API
