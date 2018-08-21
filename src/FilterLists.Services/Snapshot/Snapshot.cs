@@ -24,8 +24,10 @@ namespace FilterLists.Services.Snapshot
         private readonly FilterListViewUrlDto list;
         private readonly Data.Entities.Snapshot snapEntity;
         private readonly TelemetryClient telemetryClient;
+        private readonly string userAgentString;
 
-        public Snapshot(FilterListsDbContext dbContext, EmailService emailService, FilterListViewUrlDto list)
+        public Snapshot(FilterListsDbContext dbContext, EmailService emailService, FilterListViewUrlDto list,
+            string userAgentString)
         {
             this.dbContext = dbContext;
             this.emailService = emailService;
@@ -35,6 +37,7 @@ namespace FilterLists.Services.Snapshot
                 FilterListId = list.Id,
                 AddedSnapshotRules = new List<SnapshotRule>()
             };
+            this.userAgentString = userAgentString;
             telemetryClient = new TelemetryClient();
         }
 
@@ -59,7 +62,7 @@ namespace FilterLists.Services.Snapshot
             dbContext.Snapshots.Add(snapEntity);
             await dbContext.SaveChangesAsync();
         }
-        
+
         private bool IsViewUrlValid() =>
             Uri.TryCreate(list.ViewUrl, UriKind.Absolute, out var uriResult) &&
             (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps);
@@ -104,6 +107,7 @@ namespace FilterLists.Services.Snapshot
             var lines = new HashSet<string>();
             using (var httpClient = new HttpClient())
             {
+                httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(userAgentString);
                 var response = await httpClient.GetAsync(list.ViewUrl, HttpCompletionOption.ResponseHeadersRead);
                 snapEntity.HttpStatusCode = ((int)response.StatusCode).ToString();
                 response.EnsureSuccessStatusCode();
