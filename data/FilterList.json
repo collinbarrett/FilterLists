@@ -1590,8 +1590,7 @@
   {
     "id": 83,
     "chatUrl": null,
-    "description":
-      "This project was built based on Anti-Adblock Killer (by Reek), but is now significantly different. Anti-Adblock Killer Script was completely re-implemented. Anti-Adblock Killer Filter was mostly copied and concatenated to uBlock Protector List.",
+    "description": "This project was built based on Anti-Adblock Killer (by Reek), but is now significantly different. Anti-Adblock Killer Script was completely re-implemented. Anti-Adblock Killer Filter was mostly copied and concatenated to uBlock Protector List.",
     "descriptionSourceUrl": "https://github.com/jspenguin2017/uBlockProtector",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -1600,12 +1599,12 @@
     "homeUrl": "https://jspenguin2017.github.io/uBlockProtector",
     "issuesUrl": "https://github.com/jspenguin2017/uBlockProtector/issues",
     "licenseId": 5,
-    "name": "Nano Defender",
+    "name": "Nano Defender Integration",
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 4,
-    "viewUrl": "https://raw.githubusercontent.com/jspenguin2017/uBlockProtector/master/uBlockProtectorList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt"
   },
   {
     "id": 84,
