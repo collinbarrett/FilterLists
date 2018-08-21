@@ -19,7 +19,6 @@ namespace FilterLists.Services
         {
             using (var httpClient = new HttpClient())
             {
-                httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(UaStringDefault);
                 var response = await httpClient.GetAsync(UaStringSource, HttpCompletionOption.ResponseHeadersRead);
                 using (var stream = await response.Content.ReadAsStreamAsync())
                 using (var streamReader = new StreamReader(stream))
