@@ -182,15 +182,21 @@ namespace FilterLists.Services.Snapshot
 
         private async Task SendExceptionEmail(Exception e)
         {
-            var msg = new StringBuilder();
-            msg.AppendLine("FilterListId: " + list.Id);
-            msg.AppendLine("Exception:");
-            msg.AppendLine(e.Message);
-            msg.AppendLine(e.StackTrace);
-            msg.AppendLine(e.InnerException?.Message);
-            msg.AppendLine(e.InnerException?.StackTrace);
-            await emailService.SendEmailAsync("Snapshot Exception", msg.ToString());
+            if (!IsDeploymentInterrupted(e))
+            {
+                var msg = new StringBuilder();
+                msg.AppendLine("FilterListId: " + list.Id);
+                msg.AppendLine("Exception:");
+                msg.AppendLine(e.Message);
+                msg.AppendLine(e.StackTrace);
+                msg.AppendLine(e.InnerException?.Message);
+                msg.AppendLine(e.InnerException?.StackTrace);
+                await emailService.SendEmailAsync("Snapshot Exception", msg.ToString());
+            }
         }
+
+        private static bool IsDeploymentInterrupted(Exception e) =>
+            e.Message.Contains("Failed to read the result set.");
 
         private void TrackExceptionInApplicationInsights(Exception e)
         {
