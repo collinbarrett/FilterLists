@@ -42,6 +42,8 @@ namespace FilterLists.Services.Snapshot
         public async Task TrySaveAsync()
         {
             await AddSnapEntity();
+            if (!IsViewUrlValid())
+                return;
             try
             {
                 await SaveAsync();
@@ -57,6 +59,10 @@ namespace FilterLists.Services.Snapshot
             dbContext.Snapshots.Add(snapEntity);
             await dbContext.SaveChangesAsync();
         }
+        
+        private bool IsViewUrlValid() =>
+            Uri.TryCreate(list.ViewUrl, UriKind.Absolute, out var uriResult) &&
+            (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps);
 
         private async Task SaveAsync()
         {
