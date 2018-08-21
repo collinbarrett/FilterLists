@@ -53,4 +53,4 @@ FilterLists does not condone or endorse implementing any particular FilterList o
 
 ### Privacy
 
-We respect your privacy. That is the whole point of this site. The only minor data we collect about visitors is what [CloudFlare](https://www.cloudflare.com/analytics/) and [GitHub](https://help.github.com/articles/github-privacy-statement/) captures.
+We respect your privacy. That is the whole point of this site. The only minor data we collect about visitors is what [CloudFlare](https://www.cloudflare.com/analytics/), [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-data-retention-privacy), and [GitHub](https://help.github.com/articles/github-privacy-statement/) capture.
