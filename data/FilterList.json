@@ -2625,7 +2625,7 @@
   {
     "id": 138,
     "chatUrl": null,
-    "description": "Spotify ads sources sites based on EZBlocker content.",
+    "description": "Streaming services ads sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -2634,12 +2634,12 @@
     "homeUrl": "https://github.com/FadeMind/hosts.extras",
     "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
     "licenseId": 5,
-    "name": "SpotifyAds",
+    "name": "StreamingAds",
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/Spotify-Ad-free/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/StreamingAds/hosts"
   },
   {
     "id": 139,
