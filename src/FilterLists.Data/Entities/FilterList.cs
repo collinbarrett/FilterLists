@@ -33,6 +33,7 @@ namespace FilterLists.Data.Entities
         public string SubmissionUrl { get; set; }
         public uint? SyntaxId { get; set; }
         public Syntax Syntax { get; set; }
+        public ICollection<FilterListTag> FilterListTags { get; set; }
         public string ViewUrl { get; set; }
     }
 }
