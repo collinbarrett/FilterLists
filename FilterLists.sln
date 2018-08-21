@@ -15,6 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{8C3C7C63-F
 		data\FilterList.json = data\FilterList.json
 		data\FilterListLanguage.json = data\FilterListLanguage.json
 		data\FilterListMaintainer.json = data\FilterListMaintainer.json
+		data\FilterListTag.json = data\FilterListTag.json
 		data\Fork.json = data\Fork.json
 		data\Language.json = data\Language.json
 		data\License.json = data\License.json
@@ -24,6 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{8C3C7C63-F
 		data\Software.json = data\Software.json
 		data\SoftwareSyntax.json = data\SoftwareSyntax.json
 		data\Syntax.json = data\Syntax.json
+		data\Tag.json = data\Tag.json
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{FCA7F77A-9EC6-4C6D-A80E-7DD27FF95673}"
