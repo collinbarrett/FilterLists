@@ -22,7 +22,8 @@ namespace FilterLists.Services.Snapshot
         public async Task CaptureAsync(int batchSize)
         {
             var lists = await GetListsToCapture(batchSize);
-            var snapshots = CreateSnapshots(lists);
+            var uaString = await UserAgentService.GetMostPopularString();
+            var snapshots = CreateSnapshots(lists, uaString);
             await SaveSnapshots(snapshots);
         }
 
@@ -44,8 +45,8 @@ namespace FilterLists.Services.Snapshot
                   .ProjectTo<FilterListViewUrlDto>(MapConfig)
                   .ToListAsync();
 
-        private IEnumerable<Snapshot> CreateSnapshots(IEnumerable<FilterListViewUrlDto> lists) =>
-            lists.Select(l => new Snapshot(DbContext, emailService, l));
+        private IEnumerable<Snapshot> CreateSnapshots(IEnumerable<FilterListViewUrlDto> lists, string uaString) =>
+            lists.Select(l => new Snapshot(DbContext, emailService, l, uaString));
 
         private static async Task SaveSnapshots(IEnumerable<Snapshot> snapshots)
         {
