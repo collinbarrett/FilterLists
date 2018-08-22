@@ -9179,21 +9179,21 @@
   {
     "id": 494,
     "chatUrl": null,
-    "description": "This list of hosts is compiled from server logs on my own servers and forms the basis of the bad referrers domain lists for The Nginx Ultimate Bad Bot Blocker at https://github.com/2chellkrogza/nginx-ultimate-bad-bot-blocker and the Apache Ultimate Bad Bot Blocker at https://github.com/2chellkrogza/apache-ultimate-bad-bot-blocker",
+    "description": "This list of hosts is compiled from server logs on my own servers and forms the basis of the bad referrers domain lists for The Nginx Ultimate Bad Bot Blocker at https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker and the Apache Ultimate Bad Bot Blocker at https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
-    "donateUrl": "https://paypal.me/2chellkrog/",
-    "emailAddress": "2chellkrog@gmail.com",
+    "donateUrl": "https://paypal.me/mitchellkrog/",
+    "emailAddress": "mitchellkrog@gmail.com",
     "forumUrl": null,
-    "homeUrl": "https://github.com/2chellkrogza/Badd-Boyz-Hosts",
-    "issuesUrl": "https://github.com/2chellkrogza/Badd-Boyz-Hosts/issues",
+    "homeUrl": "https://github.com/mitchellkrogza/Badd-Boyz-Hosts",
+    "issuesUrl": "https://github.com/mitchellkrogza/Badd-Boyz-Hosts/issues",
     "licenseId": 2,
     "name": "Badd Boyz Hosts",
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/2chellkrogza/Badd-Boyz-Hosts/master/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts"
   },
   {
     "id": 495,
