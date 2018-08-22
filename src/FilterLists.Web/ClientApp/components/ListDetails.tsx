@@ -114,7 +114,7 @@ function RuleCount(props: any) {
 function DiscontinuedDate(props: any) {
     return props.date
         ? <li className="list-group-item">
-              <p>Discontinued: {moment(props.date).format("MMM D, Y")}</p>
+              <p>Discontinued: {moment(props.date).format("l")}</p>
           </li>
         : null;
 }
@@ -122,7 +122,7 @@ function DiscontinuedDate(props: any) {
 function UpdatedDate(props: any) {
     return props.date
         ? <li className="list-group-item">
-              <p>Last Updated by Maintainer: {moment(props.date).format("MMM D, Y")}</p>
+              <p>Last Updated by Maintainer: {moment(props.date).format("l")}</p>
           </li>
         : null;
 }
@@ -130,7 +130,7 @@ function UpdatedDate(props: any) {
 function PublishedDate(props: any) {
     return props.date
         ? <li className="list-group-item">
-              <p>Published: {moment(props.date).format("MMM D, Y")}</p>
+              <p>Published: {moment(props.date).format("l")}</p>
           </li>
         : null;
 }
