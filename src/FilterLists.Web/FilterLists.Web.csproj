@@ -70,7 +70,7 @@
   </Target>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <!--<Exec Command="if $(ConfigurationName) == Debug call &quot;$(SolutionDir)scripts\npm_webpack_win.bat&quot;" />-->
+    <Exec Command="if $(ConfigurationName) == Debug call &quot;$(SolutionDir)scripts\npm_webpack_win.bat&quot;" />
   </Target>
 
 </Project>
