@@ -75,6 +75,15 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                </p>;
     }
 
+    //https://stackoverflow.com/a/11868398/2343739
+    private static getContrast(hexcolor: string) {
+        const r = parseInt(hexcolor.substr(0, 2), 16);
+        const g = parseInt(hexcolor.substr(2, 2), 16);
+        const b = parseInt(hexcolor.substr(4, 2), 16);
+        const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        return (yiq >= 128) ? "black" : "white";
+    }
+
     private static renderFilterListsTable(state: IHomeState) {
         return <ReactTable
                    data={state.lists}
@@ -99,7 +108,11 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            filterMethod: (filter: any, row: any) => row[filter.id].map((e: any) => e.name).join()
                                .toUpperCase().includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
-                           Cell: (cell: any) => <div>{cell.value.map((e: any) => <span className="badge" style={{ backgroundColor: `#${e.colorHex}` }} title={e.description}>{e.name}</span>)}</div>,
+                           Cell: (cell: any) => <div>{cell.value.map(
+                               (e: any) => <span className="badge" style={{
+                                   backgroundColor: `#${e.colorHex}`,
+                                   color: Home.getContrast(`${e.colorHex}`)
+                               }} title={e.description}>{e.name}</span>)}</div>,
                            width: 100,
                            headerClassName: "d-none d-lg-block",
                            className: "d-none d-lg-block"
