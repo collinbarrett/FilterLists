@@ -114,11 +114,7 @@ namespace FilterLists.Services.Snapshot
                 {
                     string line;
                     while ((line = await streamReader.ReadLineAsync()) != null)
-                    {
                         lines.AddIfNotNullOrEmpty(line.LintLine());
-                        if (line.Length >= 191)
-                            await emailService.SendEmailAsync("Long Line Possibly Truncated", line);
-                    }
                 }
             }
 
