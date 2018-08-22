@@ -3,5 +3,70 @@
     "id": 1,
     "description": "Blocks cryptomining and/or cryptojacking",
     "name": "crypto"
+  },
+  {
+    "id": 2,
+    "description": "Blocks advertisements",
+    "name": "ads"
+  },
+  {
+    "id": 3,
+    "description": "Blocks trackers and other privacy-invasive resources",
+    "name": "privacy"
+  },
+  {
+    "id": 4,
+    "description": "Blocks social media scripts, trackers, widgets, etc.",
+    "name": "social"
+  },
+  {
+    "id": 5,
+    "description": "Blocks adblock detection scripts",
+    "name": "anti-adblock"
+  },
+  {
+    "id": 6,
+    "description": "Blocks malicious resources",
+    "name": "malware"
+  },
+  {
+    "id": 7,
+    "description": "Blocks phishing and/or scam resources",
+    "name": "phishing"
+  },
+  {
+    "id": 8,
+    "description": "Blocks cookie notices primarily in response to the EU Cookie Law",
+    "name": "cookies"
+  },
+  {
+    "id": 9,
+    "description": "Blocks subjectively annoying resources",
+    "name": "annoyances"
+  },
+  {
+    "id": 10,
+    "description": "Unblocks categorical resources",
+    "name": "whitelist"
+  },
+  {
+    "id": 11,
+    "description": "Blocks adult, NSFW, pornographic, etc. resources",
+    "name": "nsfw"
+  },
+  {
+    "id": 12,
+    "description": "Redirects traffic through proxies to get around firewalls",
+    "name": "proxy"
+  },
+  {
+    "id": 13,
+    "description": "Extends or blocks functionality from search engines",
+    "name": "search"
+  },
+  {
+    "id": 14,
+    "description": "Intended for research only",
+    "name": "research"
   }
 ]
