@@ -2,5 +2,61 @@
   {
     "filterListId": 19,
     "tagId": 1
+  },
+  {
+    "filterListId": 94,
+    "tagId": 10
+  },
+  {
+    "filterListId": 141,
+    "tagId": 10
+  },
+  {
+    "filterListId": 143,
+    "tagId": 10
+  },
+  {
+    "filterListId": 144,
+    "tagId": 10
+  },
+  {
+    "filterListId": 145,
+    "tagId": 10
+  },
+  {
+    "filterListId": 238,
+    "tagId": 10
+  },
+  {
+    "filterListId": 270,
+    "tagId": 14
+  },
+  {
+    "filterListId": 333,
+    "tagId": 13
+  },
+  {
+    "filterListId": 339,
+    "tagId": 12
+  },
+  {
+    "filterListId": 371,
+    "tagId": 13
+  },
+  {
+    "filterListId": 384,
+    "tagId": 10
+  },
+  {
+    "filterListId": 389,
+    "tagId": 13
+  },
+  {
+    "filterListId": 422,
+    "tagId": 13
+  },
+  {
+    "filterListId": 435,
+    "tagId": 12
   }
 ]
