@@ -93,6 +93,20 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            Cell: (cell: any) => <h2 className="mb-0">{cell.value}</h2>
                        },
                        {
+                           Header: "Tags",
+                           accessor: "tags",
+                           filterable: true,
+                           filterMethod: (filter: any, row: any) => row[filter.id].map((e: any) => e.name).join()
+                               .toUpperCase().includes(filter.value.toUpperCase()),
+                           sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
+                           Cell: (cell: any) => <div>{cell.value.map(
+                               (e: any) => <span className="badge badge-warning" title={e.description}>{e.name}</span>)
+                           }</div>,
+                           width: 100,
+                           headerClassName: "d-none d-lg-block",
+                           className: "d-none d-lg-block"
+                       },
+                       {
                            Header: "Langs.",
                            accessor: "languages",
                            filterable: true,
@@ -100,7 +114,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                .map((e: any) => e.name.concat(e.iso6391)).join().toUpperCase()
                                .includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
-                           Cell: (cell: any) => <div>{cell.value.map((e: any) => e.iso6391).join(", ")}</div>,
+                           Cell: (cell: any) =>
+                               <div>{cell.value.map((e: any) => e.iso6391).join(", ")}</div>,
                            style: { whiteSpace: "inherit" },
                            width: 60,
                            headerClassName: "d-none d-lg-block",
@@ -166,6 +181,7 @@ interface IListDto {
     id: number;
     name: string;
     languages: IListLanguageDto[];
+    tags: IListTagDto[];
     updatedDate: string;
     viewUrl: string;
 }
@@ -173,6 +189,11 @@ interface IListDto {
 interface IListLanguageDto {
     name: string;
     iso6391: string;
+}
+
+interface IListTagDto {
+    name: string;
+    description: string;
 }
 
 function SubscribeUrl(props: any) {
