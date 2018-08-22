@@ -112,7 +112,7 @@ namespace FilterLists.Data.Seed.Extensions
         //TODO: https://github.com/collinbarrett/FilterLists/issues/201
         private static void SetCantSnapshot(DbContext dbContext)
         {
-            const string rawSqlString = "UPDATE filterlists SET CantSnapshot = 1 WHERE id IN(48, 149, 173, 185, 186, 187, 188, 189, 352)";
+            const string rawSqlString = "UPDATE filterlists SET CantSnapshot = 1 WHERE id IN(48, 149, 173, 185, 188, 189, 352)";
             dbContext.Database.ExecuteSqlCommand(rawSqlString);
             dbContext.SaveChanges();
         }
