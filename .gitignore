@@ -332,7 +332,6 @@ ASALocalRun/
 .localhistory/
 
 # FilterLists Custom Ignores
-gs/Private.gs
 appsettings.development.json
 appsettings.production.json
 src/FilterLists.Web/wwwroot/dist
