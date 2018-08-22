@@ -6,7 +6,7 @@ namespace FilterLists.Services.FilterList.Models
     public class ListTagDto
     {
         public string Name { get; set; }
-        public string Description { get; set; }
         public string ColorHex { get; set; }
+        public string Description { get; set; }
     }
 }

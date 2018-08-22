@@ -99,9 +99,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            filterMethod: (filter: any, row: any) => row[filter.id].map((e: any) => e.name).join()
                                .toUpperCase().includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
-                           Cell: (cell: any) => <div>{cell.value.map(
-                               (e: any) => <span className="badge" style={{ color: "#{e.colorHex}" }} title={e
-                                   .description}>{e.name}</span>)}</div>,
+                           Cell: (cell: any) => <div>{cell.value.map((e: any) => <span className="badge" style={{ backgroundColor: `#${e.colorHex}` }} title={e.description}>{e.name}</span>)}</div>,
                            width: 100,
                            headerClassName: "d-none d-lg-block",
                            className: "d-none d-lg-block"
@@ -193,6 +191,7 @@ interface IListLanguageDto {
 
 interface IListTagDto {
     name: string;
+    colorHex: string;
     description: string;
 }
 
