@@ -152,5 +152,12 @@
     "name": "GoogleHosts",
     "permissiveAdaptation": false,
     "permissiveCommercial": false
+  },
+  {
+    "id": 23,
+    "descriptionUrl": "https://dbad-license.org/",
+    "name": "\"Don't Be A Dick\" Public License",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
   }
 ]
