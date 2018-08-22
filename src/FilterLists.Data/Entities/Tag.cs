@@ -5,8 +5,8 @@ namespace FilterLists.Data.Entities
 {
     public class Tag : BaseEntity
     {
-        public string Name { get; set; }
         public string Description { get; set; }
         public ICollection<FilterListTag> FilterListTags { get; set; }
+        public string Name { get; set; }
     }
 }

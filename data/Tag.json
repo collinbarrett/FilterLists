@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "crypto",
-    "description": "Blocks cryptomining and/or cryptojacking"
+    "description": "Blocks cryptomining and/or cryptojacking",
+    "name": "crypto"
   }
 ]
