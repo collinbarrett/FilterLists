@@ -16,16 +16,14 @@ namespace FilterLists.Agent
         private static ServiceProvider serviceProvider;
         private static SnapshotService snapshotService;
         private static Logger logger;
+        private static readonly TimeSpan OneHourTimeout = TimeSpan.FromHours(1);
 
         public static async Task Main()
         {
             BuildConfigRoot();
             BuildServiceProvider();
             snapshotService = serviceProvider.GetService<SnapshotService>();
-            using (logger = new Logger(configRoot[AppInsightsKeyConfig]))
-            {
-                await CaptureSnapshots(BatchSize);
-            }
+            await TryCaptureSnapshots();
         }
 
         private static void BuildConfigRoot() =>
@@ -39,6 +37,21 @@ namespace FilterLists.Agent
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddFilterListsAgentServices(configRoot);
             serviceProvider = serviceCollection.BuildServiceProvider();
+        }
+
+        private static async Task TryCaptureSnapshots()
+        {
+            using (logger = new Logger(configRoot[AppInsightsKeyConfig]))
+            {
+                try
+                {
+                    await CaptureSnapshots(BatchSize).TimeoutAfter(OneHourTimeout);
+                }
+                catch (TimeoutException)
+                {
+                    logger.Log("Timeout - Program.CaptureSnapshots()");
+                }
+            }
         }
 
         private static async Task CaptureSnapshots(int batchSize)
