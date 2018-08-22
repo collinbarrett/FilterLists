@@ -100,8 +100,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                .toUpperCase().includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
                            Cell: (cell: any) => <div>{cell.value.map(
-                               (e: any) => <span className="badge badge-warning" title={e.description}>{e.name}</span>)
-                           }</div>,
+                               (e: any) => <span className="badge" style={{ color: "#{e.colorHex}" }} title={e
+                                   .description}>{e.name}</span>)}</div>,
                            width: 100,
                            headerClassName: "d-none d-lg-block",
                            className: "d-none d-lg-block"
