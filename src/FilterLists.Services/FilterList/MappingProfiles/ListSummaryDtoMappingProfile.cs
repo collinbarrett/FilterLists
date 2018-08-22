@@ -11,6 +11,7 @@ namespace FilterLists.Services.FilterList.MappingProfiles
         public ListSummaryDtoMappingProfile() =>
             CreateMap<Data.Entities.FilterList, ListSummaryDto>()
                 .ForMember(d => d.Languages, c => c.MapFrom(l => l.FilterListLanguages.Select(la => la.Language)))
+                .ForMember(d => d.Tags, c => c.MapFrom(l => l.FilterListTags.Select(m => m.Tag)))
                 .ForMember(d => d.UpdatedDate,
                     c => c.MapFrom(l =>
                         l.Snapshots.Where(s => s.WasSuccessful)
