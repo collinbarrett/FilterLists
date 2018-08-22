@@ -38,6 +38,10 @@ namespace FilterLists.Services.Snapshot
                                 .First() < yesterday))
                   .OrderBy(l => l.Snapshots.Any())
                   .ThenBy(l => l.Snapshots
+                                .OrderByDescending(s => s.CreatedDateUtc)
+                                .FirstOrDefault()
+                                .WasSuccessful)
+                  .ThenBy(l => l.Snapshots
                                 .Select(s => s.CreatedDateUtc)
                                 .OrderByDescending(d => d)
                                 .FirstOrDefault())
