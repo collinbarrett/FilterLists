@@ -8639,7 +8639,7 @@
       "id": 468,
       "description": "list for bad isueads",
       "issuesUrl": "https://github.com/kano1/I/issues",
-      "licenseId": 5"
+      "licenseId": 5,
       "name": "Adware Filter Block",
       "syntaxId": 3,
       "viewUrl": "https://github.com/kano1/I/raw/master/adware.txt"
