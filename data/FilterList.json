@@ -3560,7 +3560,7 @@
   {
     "id": 186,
     "chatUrl": null,
-    "description": "A hosts list blocking malware sites. (Compressed, currently cannot be subscribed to/added.)",
+    "description": "A hosts list blocking malware sites.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": "http://rlwpx.free.fr/WPFF/don.htm",
@@ -3574,12 +3574,12 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": "http://rlwpx.free.fr/WPFF/hrsk.7z"
+    "viewUrl": "https://v.firebog.net/hosts/Airelle-hrsk.txt"
   },
   {
     "id": 187,
     "chatUrl": null,
-    "description": "A hosts list blocking tracking sites. (Compressed, currently cannot be subscribed to/added.)",
+    "description": "A hosts list blocking tracking sites.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": "http://rlwpx.free.fr/WPFF/don.htm",
@@ -3593,7 +3593,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": "http://rlwpx.free.fr/WPFF/htrc.7z"
+    "viewUrl": "https://v.firebog.net/hosts/Airelle-trc.txt"
   },
   {
     "id": 188,
