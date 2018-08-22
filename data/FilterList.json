@@ -8380,5 +8380,589 @@
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/easylistbrasil/easylistbrasil/filtro/easylistbrasil.txt"
-  }
+  },
+  {
+      "id": "438",
+      "emailAddress": "mail@perflyst.de",
+      "homeUrl": "https://github.com/Perflyst/PiHoleBlocklist",
+      "issuesUrl": "https://github.com/Perflyst/PiHoleBlocklist/issues",
+      "licenseId": "2",
+      "Name": "PiHole Blocklist Session Replay",
+      "syntaxId": "2",
+      "viewUrl": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SessionReplay.txt"
+    },
+    {
+      "id": "439",
+      "emailAddress": "mail@perflyst.de",
+      "homeUrl": "https://github.com/Perflyst/PiHoleBlocklist",
+      "issuesUrl": "https://github.com/Perflyst/PiHoleBlocklist/issues",
+      "licenseId": "2",
+      "Name": "PiHole Blocklist SmartTV",
+      "syntaxId": "2",
+      "viewUrl": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt"
+    },
+    {
+      "id": "440",
+      "emailAddress": "mail@perflyst.de",
+      "homeUrl": "https://github.com/Perflyst/PiHoleBlocklist",
+      "issuesUrl": "https://github.com/Perflyst/PiHoleBlocklist/issues",
+      "licenseId": "2",
+      "Name": "PiHole Blocklist Android Tracking",
+      "syntaxId": "2",
+      "viewUrl": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt"
+    },
+    {
+      "id": "441",
+      "description": "Personal Blocklist by WaLLy3K (https://firebog.net/about).  Content added to this list has been manually verified, and usually updated every two weeks.",
+      "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HU4EDJZP2S9QA",
+      "homeUrl": "https://firebog.net/",
+      "licenseId": "13",
+      "Name": "WaLLy3K Blocklist",
+      "syntaxId": "2",
+      "viewUrl": "https://v.firebog.net/hosts/static/w3kbl.txt"
+    },
+    {
+      "id": "442",
+      "licenseId": "2",
+      "Name": "Bill Stearns' Hosts",
+      "syntaxId": "2",
+      "viewUrl": "https://v.firebog.net/hosts/BillStearns.txt"
+    },
+    {
+      "id": "443",
+      "licenseId": "2",
+      "Name": "Kowabit",
+      "syntaxId": "2",
+      "viewUrl": "https://v.firebog.net/hosts/Kowabit.txt"
+    },
+    {
+      "id": "444",
+      "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HU4EDJZP2S9QA",
+      "homeUrl": "https://firebog.net/",
+      "licenseId": "2",
+      "Name": "EasyList Hosts",
+      "syntaxId": "2",
+      "viewUrl": "https://v.firebog.net/hosts/Easylist.txt"
+    },
+    {
+      "id": "445",
+      "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HU4EDJZP2S9QA",
+      "homeUrl": "https://firebog.net/",
+      "licenseId": "2",
+      "Name": "EasyPrivacy Hosts",
+      "syntaxId": "2",
+      "viewUrl": "https://v.firebog.net/hosts/Easyprivacy.txt"
+    },
+    {
+      "id": "446",
+      "licenseId": "2",
+      "Name": "Prigent Ads",
+      "syntaxId": "2",
+      "viewUrl": "https://v.firebog.net/hosts/Prigent-Ads.txt"
+    },
+    {
+      "id": "447",
+      "description": "Tracker Domains Block List from quidsup.net",
+      "donateUrl": "https://quidsup.net/donate/",
+      "homeUrl": "https://quidsup.net/notrack/blocklist.php",
+      "issuesUrl": "https://gitlab.com/quidsup/notrack-blocklists/issues",
+      "licenseId": "4",
+      "Name": "NoTrack Tracker Blocklist",
+      "syntaxId": "2",
+      "viewUrl": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt"
+    },
+    {
+      "id": "448",
+      "description": "Malware Domains Block List from quidsup.net",
+      "donateUrl": "https://quidsup.net/donate/",
+      "homeUrl": "https://quidsup.net/notrack/blocklist.php",
+      "issuesUrl": "https://gitlab.com/quidsup/notrack-blocklists/issues",
+      "licenseId": "4",
+      "Name": "NoTrack Malware Blocklist",
+      "syntaxId": "2",
+      "viewUrl": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt"
+    },
+    {
+      "id": "449",
+      "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXF2HBWCMSZVL",
+      "homeUrl": "https://github.com/crazy-max/WindowsSpyBlocker",
+      "issuesUrl": "https://github.com/crazy-max/WindowsSpyBlocker/issues",
+      "licenseId": "2",
+      "Name": "WindowsSpyBlocker Hosts Spy",
+      "syntaxId": "1",
+      "viewUrl": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt"
+    },
+    {
+      "id": "450",
+      "description": "Blocks Windows updates.",
+      "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXF2HBWCMSZVL",
+      "homeUrl": "https://github.com/crazy-max/WindowsSpyBlocker",
+      "issuesUrl": "https://github.com/crazy-max/WindowsSpyBlocker/issues",
+      "licenseId": "2",
+      "Name": "WindowsSpyBlocker Hosts Update",
+      "syntaxId": "1",
+      "viewUrl": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/update.txt"
+    },
+    {
+      "id": "451",
+      "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXF2HBWCMSZVL",
+      "homeUrl": "https://github.com/crazy-max/WindowsSpyBlocker",
+      "issuesUrl": "https://github.com/crazy-max/WindowsSpyBlocker/issues",
+      "licenseId": "2",
+      "Name": "WindowsSpyBlocker Hosts Extra",
+      "syntaxId": "1",
+      "viewUrl": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/extra.txt"
+    },
+    {
+      "id": "452",
+      "description": "A comprehensive, all-in-one ad-block list for Android. Apps and OS related traffic, it's designed to filter 'unneeded' Android connections. The list is only tested against AdGuard!",
+      "donateUrl": "https://github.com/CHEF-KOCH/Donations",
+      "emailAddress": "CHEF-KOCH@protonmail.com",
+      "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
+      "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
+      "licenseId": "17",
+      "Name": "CHEF-KOCH's Android Filter List",
+      "syntaxId": "3",
+      "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Android/CK's-Android-FilterList.txt"
+    },
+    {
+      "id": "453",
+      "description": "Block all external Fonts.",
+      "donateUrl": "https://github.com/CHEF-KOCH/Donations",
+      "emailAddress": "CHEF-KOCH@protonmail.com",
+      "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
+      "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
+      "licenseId": "17",
+      "Name": "CHEF-KOCH's Fonts Filter List",
+      "syntaxId": "3",
+      "viewUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/raw/master/Fonts/CK's-Fonts-FilterList.txt"
+    },
+    {
+      "id": "454",
+      "description": "Blocks all suspicious, unverified, fake, duplicate or malfunction torrent trackers. ",
+      "donateUrl": "https://github.com/CHEF-KOCH/Donations",
+      "emailAddress": "CHEF-KOCH@protonmail.com",
+      "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
+      "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
+      "licenseId": "17",
+      "Name": "CHEF-KOCH's BadTorrentTracker Filter List",
+      "syntaxId": "3",
+      "viewUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/raw/master/Torrent/CK's-Torrent-FilterList.txt"
+    },
+    {
+      "id": "455",
+      "description": "HOSTS file to block all known NSA / GCHQ / C.I.A. / F.B.I. spying servers.",
+      "donateUrl": "https://github.com/CHEF-KOCH/Donations",
+      "emailAddress": "CHEF-KOCH@protonmail.com",
+      "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
+      "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
+      "licenseId": "17",
+      "Name": "CHEF-KOCH's NSABlocklist FilterList",
+      "syntaxId": "1",
+      "viewUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/raw/master/Corporations/NSABlocklist/CK's-NSABlocklist-FilterList.txt"
+    },
+    {
+      "id": "460",
+      "description": "A comprehensive, all-in-one domain list for thorough blocking of trackers, pop-up ads, ads, unwanted cookies and faked pages.",
+      "donateUrl": "https://github.com/CHEF-KOCH/Donations",
+      "emailAddress": "CHEF-KOCH@protonmail.com",
+      "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
+      "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
+      "licenseId": "17",
+      "Name": "CHEF-KOCH's Onion & I2P Filter List",
+      "syntaxId": "1",
+      "viewUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/raw/master/I2P%20%26%20Onion/CK's-Onion-FilterList.txt"
+    },
+    {
+      "id": "461",
+      "description": "Blocks Game Telemetry and other game specific 'unneeded' stuff.",
+      "donateUrl": "https://github.com/CHEF-KOCH/Donations",
+      "emailAddress": "CHEF-KOCH@protonmail.com",
+      "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
+      "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
+      "licenseId": "17",
+      "Name": "CHEF-KOCH's Game HOSTS Filter List",
+      "syntaxId": "1",
+      "viewUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/raw/master/HOSTS/CK's-Game-HOSTS-FilterList.txt"
+    },
+    {
+      "id": "462",
+      "description": "A comprehensive, all-in-one ad-block list in order to block Malware Domains.",
+      "donateUrl": "https://github.com/CHEF-KOCH/Donations",
+      "emailAddress": "CHEF-KOCH@protonmail.com",
+      "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
+      "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
+      "licenseId": "17",
+      "Name": "CHEF-KOCH's Malware Filter List",
+      "syntaxId": "3",
+      "viewUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/raw/master/Malware/CK's-Malware-FilterList.txt"
+    },
+    {
+      "id": "463",
+      "licenseId": "2",
+      "Name": "Prigent Malware",
+      "syntaxId": "2",
+      "viewUrl": "https://v.firebog.net/hosts/Prigent-Malware.txt"
+    },
+    {
+      "id": "464",
+      "licenseId": "2",
+      "Name": "Prigent Tracking",
+      "syntaxId": "2",
+      "viewUrl": "https://v.firebog.net/hosts/Prigent-Tracking.txt"
+    },
+    {
+      "id": "465",
+      "licenseId": "2",
+      "Name": "Shalla Malware",
+      "syntaxId": "2",
+      "viewUrl": "https://v.firebog.net/hosts/Shalla-mal.txt"
+    },
+    {
+      "id": "466",
+      "issuesUrl": "https://github.com/kano1/I/issues",
+      "licenseId": "5",
+      "Name": "Kano1 Simple List",
+      "syntaxId": "3",
+      "viewUrl": "https://github.com/kano1/I/raw/master/adblock.txt"
+    },
+    {
+      "id": "467",
+      "description": "Domain Bad Isue Ads",
+      "issuesUrl": "https://github.com/kano1/I/issues",
+      "licenseId": "5",
+      "Name": "Adware BL(By Garuda)",
+      "syntaxId": "3",
+      "viewUrl": "https://github.com/kano1/I/raw/master/badway.txt"
+    },
+    {
+      "id": "468",
+      "description": "list for bad isueads",
+      "issuesUrl": "https://github.com/kano1/I/issues",
+      "licenseId": "5",
+      "Name": "Adware Filter Block",
+      "syntaxId": "3",
+      "viewUrl": "https://github.com/kano1/I/raw/master/adware.txt"
+    },
+    {
+      "id": "469",
+      "description": "list for keloger,system tracker,cookie collector,malware tracker, and oter spyware",
+      "issuesUrl": "https://github.com/kano1/I/issues",
+      "licenseId": "5",
+      "Name": "Spyware Filter Block List",
+      "syntaxId": "3",
+      "viewUrl": "https://raw.githubusercontent.com/kano1/Kano/master/Spyware.txt"
+    },
+    {
+      "id": "470",
+      "description": "A firewall blacklist composed from IP lists, providing maximum protection with minimum false positives. Suitable for basic protection on all internet facing servers, routers and firewalls. (includes: bambenek_c2, dshield, feodo, fullbogons, spamhaus_drop, spamhaus_edrop, sslbl, zeus_badips, ransomware_rw)",
+      "emailAddress": "costa@tsaousis.gr",
+      "homeUrl": "https://iplists.firehol.org/",
+      "Name": "Firehol Level 1",
+      "viewUrl": "https://github.com/firehol/blocklist-ipsets/raw/master/firehol_level1.netset"
+    },
+    {
+      "id": "471",
+      "description": "An ipset made from blocklists that track attacks, during  about the last 48 hours. (includes: blocklist_de, dshield_1d, greensnow)",
+      "emailAddress": "costa@tsaousis.gr",
+      "homeUrl": "https://iplists.firehol.org/",
+      "Name": "Firehol Level 2",
+      "viewUrl": "https://github.com/firehol/blocklist-ipsets/raw/master/firehol_level2.netset"
+    },
+    {
+      "id": "472",
+      "description": "Blocks access to Pinterest domains.",
+      "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
+      "homeUrl": "https://github.com/jmdugan/blocklists",
+      "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
+      "Name": "jmdugan Blocklists Pinterest",
+      "syntaxId": "1",
+      "viewUrl": "https://github.com/jmdugan/blocklists/raw/master/corporations/pinterest/all"
+    },
+    {
+      "id": "473",
+      "description": "Blocks access to CloudFlare domains.",
+      "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
+      "homeUrl": "https://github.com/jmdugan/blocklists",
+      "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
+      "Name": "jmdugan Blocklists CloudFlare",
+      "syntaxId": "1",
+      "viewUrl": "https://github.com/jmdugan/blocklists/raw/master/corporations/cloudflare/all"
+    },
+    {
+      "id": "474",
+      "description": "Blocks access to all Facebook domains.",
+      "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
+      "homeUrl": "https://github.com/jmdugan/blocklists",
+      "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
+      "Name": "jmdugan Blocklists Facebook",
+      "syntaxId": "1",
+      "viewUrl": "https://github.com/jmdugan/blocklists/raw/master/corporations/facebook/all"
+    },
+    {
+      "id": "475",
+      "description": "Blocks access to Mozilla tracking domains.",
+      "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
+      "homeUrl": "https://github.com/jmdugan/blocklists",
+      "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
+      "Name": "jmdugan Blocklists Mozilla",
+      "syntaxId": "1",
+      "viewUrl": "https://github.com/jmdugan/blocklists/raw/master/corporations/mozilla/all.txt"
+    },
+    {
+      "id": "476",
+      "description": "Blocks access to Microsoft domains.",
+      "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
+      "homeUrl": "https://github.com/jmdugan/blocklists",
+      "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
+      "Name": "jmdugan Blocklists Microsoft",
+      "syntaxId": "1",
+      "viewUrl": "https://github.com/jmdugan/blocklists/raw/master/corporations/microsoft/all"
+    },
+    {
+      "id": "477",
+      "description": "Blocks access to utility Google domains.",
+      "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
+      "homeUrl": "https://github.com/jmdugan/blocklists",
+      "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
+      "Name": "jmdugan Blocklists Google Utility",
+      "syntaxId": "1",
+      "viewUrl": "https://github.com/jmdugan/blocklists/raw/master/corporations/google/non_localized"
+    },
+    {
+      "id": "478",
+      "description": "Blocks access to international Google domains.",
+      "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
+      "homeUrl": "https://github.com/jmdugan/blocklists",
+      "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
+      "Name": "jmdugan Blocklists Google International",
+      "syntaxId": "1",
+      "viewUrl": "https://github.com/jmdugan/blocklists/raw/master/corporations/google/localized"
+    },
+    {
+      "id": "479",
+      "emailAddress": "easylist.polish@gmail.com",
+      "homeUrl": "https://easylist.to",
+      "issuesUrl": "easylist.polish@gmail.com",
+      "licenseId": "3",
+      "Name": "EasyList Polish",
+      "syntaxId": "3",
+      "viewUrl": "https://easylist-downloads.adblockplus.org/easylistpolish.txt"
+    },
+    {
+      "id": "480",
+      "emailAddress": "mail.energized@protonmail.com",
+      "homeUrl": "https://github.com/yecarrillo/adblock-colombia",
+      "issuesUrl": "https://github.com/yecarrillo/adblock-colombia/issues",
+      "licenseId": "3",
+      "Name": "yecarrillo's ad-blocking subscription for Colombian sites",
+      "syntaxId": "3",
+      "viewUrl": "https://github.com/yecarrillo/adblock-colombia/raw/master/adblock_co.txt"
+    },
+    {
+      "id": "481",
+      "emailAddress": "mail.energized@protonmail.com",
+      "homeUrl": "https://ador.chorompotro.com/energized",
+      "issuesUrl": "https://github.com/EnergizedProtection/EnergizedHosts/issues",
+      "licenseId": "2",
+      "Name": "Energized Ad Protection",
+      "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedAd/energized/hosts"
+    },
+    {
+      "id": "482",
+      "emailAddress": "mail.energized@protonmail.com",
+      "homeUrl": "https://ador.chorompotro.com/energized",
+      "issuesUrl": "https://github.com/EnergizedProtection/EnergizedHosts/issues",
+      "licenseId": "2",
+      "Name": "Energized Malware Protection",
+      "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedMalware/energized/hosts"
+    },
+    {
+      "id": "483",
+      "emailAddress": "mail.energized@protonmail.com",
+      "homeUrl": "https://ador.chorompotro.com/energized",
+      "issuesUrl": "https://github.com/EnergizedProtection/EnergizedHosts/issues",
+      "licenseId": "2",
+      "Name": "Energized Porn Protection",
+      "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedPorn/energized/hosts"
+    },
+    {
+      "id": "484",
+      "emailAddress": "mail.energized@protonmail.com",
+      "homeUrl": "https://ador.chorompotro.com/energized",
+      "issuesUrl": "https://github.com/EnergizedProtection/EnergizedHosts/issues",
+      "licenseId": "2",
+      "Name": "Energized Blu",
+      "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedBlu/master/energized/blu"
+    },
+    {
+      "id": "485",
+      "emailAddress": "mail.energized@protonmail.com",
+      "homeUrl": "https://ador.chorompotro.com/energized",
+      "issuesUrl": "https://github.com/EnergizedProtection/EnergizedHosts/issues",
+      "licenseId": "2",
+      "Name": "Energized Blu go",
+      "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedBlu/master/energized/blu_go"
+    },
+    {
+      "id": "486",
+      "emailAddress": "mail.energized@protonmail.com",
+      "homeUrl": "https://ador.chorompotro.com/energized",
+      "issuesUrl": "https://github.com/EnergizedProtection/EnergizedHosts/issues",
+      "licenseId": "2",
+      "Name": "Energized Lite Protection",
+      "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedLite/energized/hosts"
+    },
+    {
+      "id": "487",
+      "emailAddress": "mail.energized@protonmail.com",
+      "homeUrl": "https://ador.chorompotro.com/energized",
+      "issuesUrl": "https://github.com/EnergizedProtection/EnergizedHosts/issues",
+      "licenseId": "2",
+      "Name": "Energized Porn Lite Protection",
+      "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedPornLite/energized/hosts"
+    },
+    {
+      "id": "488",
+      "emailAddress": "mail.energized@protonmail.com",
+      "homeUrl": "https://ador.chorompotro.com/energized",
+      "issuesUrl": "https://github.com/EnergizedProtection/EnergizedHosts/issues",
+      "licenseId": "2",
+      "Name": "Energized Ultimate Protection",
+      "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedUltimate/energized/hosts"
+    },
+    {
+      "id": "489",
+      "emailAddress": "mail.energized@protonmail.com",
+      "homeUrl": "https://ador.chorompotro.com/energized",
+      "issuesUrl": "https://github.com/EnergizedProtection/EnergizedHosts/issues",
+      "licenseId": "2",
+      "Name": "Energized Unified Protection",
+      "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedUnified/energized/hosts"
+    },
+    {
+      "id": "490",
+      "homeUrl": "https://github.com/CyanideBrother/anti-pr0n",
+      "issuesUrl": "https://github.com/CyanideBrother/anti-pr0n/issues",
+      "licenseId": "5",
+      "Name": "Anti-pr0n hosts",
+      "syntaxId": "1",
+      "viewUrl": "https://raw.githubusercontent.com/CyanideBrother/anti-pr0n/master/hosts"
+    },
+    {
+      "id": "491",
+      "description": "This is an endeavour to find all porn domains and compile them into a single hosts to allow for easy blocking of porn on your local machine or on a network.",
+      "homeUrl": "https://github.com/Clefspeare13/pornhosts",
+      "issuesUrl": "https://github.com/Clefspeare13/pornhosts/issues",
+      "licenseId": "2",
+      "Name": "pornhosts",
+      "syntaxId": "1",
+      "viewUrl": "https://github.com/Clefspeare13/pornhosts/raw/master/0.0.0.0/hosts"
+    },
+    {
+      "id": "492",
+      "homeUrl": "https://github.com/mhxion/pornaway",
+      "issuesUrl": "https://github.com/mhxion/pornaway/issues",
+      "licenseId": "2",
+      "Name": "PornAway blacklist (sites)",
+      "syntaxId": "1",
+      "viewUrl": "https://raw.githubusercontent.com/mhxion/pornaway/master/hosts/porn_sites.txt"
+    },
+    {
+      "id": "493",
+      "homeUrl": "https://github.com/mhxion/pornaway",
+      "issuesUrl": "https://github.com/mhxion/pornaway/issues",
+      "licenseId": "2",
+      "Name": "PornAway blacklist (ads)",
+      "syntaxId": "1",
+      "viewUrl": "https://github.com/mhxion/pornaway/raw/master/hosts/porn_ads.txt"
+    },
+    {
+      "id": "494",
+      "description": "This list of hosts is compiled from server logs on my own servers and forms the basis of the bad referrers domain lists for The Nginx Ultimate Bad Bot Blocker at https://github.com/2chellkrogza/nginx-ultimate-bad-bot-blocker and the Apache Ultimate Bad Bot Blocker at https://github.com/2chellkrogza/apache-ultimate-bad-bot-blocker",
+      "donateUrl": "https://paypal.me/2chellkrog/",
+      "emailAddress": "2chellkrog@gmail.com",
+      "homeUrl": "https://github.com/2chellkrogza/Badd-Boyz-Hosts",
+      "issuesUrl": "https://github.com/2chellkrogza/Badd-Boyz-Hosts/issues",
+      "licenseId": "2",
+      "Name": "Badd Boyz Hosts",
+      "syntaxId": "1",
+      "viewUrl": "https://raw.githubusercontent.com/2chellkrogza/Badd-Boyz-Hosts/master/hosts"
+    },
+    {
+      "id": "495",
+      "description": "Utility for detecting phishing domains targeting Ethereum users.",
+      "emailAddress": "hello@metamask.io",
+      "homeUrl": "https://github.com/MetaMask/eth-phishing-detect",
+      "issuesUrl": "https://github.com/MetaMask/eth-phishing-detect/issues",
+      "licenseId": "23",
+      "Name": "ETH Phishing Detect",
+      "syntaxId": "1",
+      "viewUrl": "https://raw.githubusercontent.com/MetaMask/eth-phishing-detect/master/src/hosts.txt"
+    },
+    {
+      "id": "496",
+      "description": "MrThreats filter list that blocks confirmed phishing domains",
+      "homeUrl": "https://github.com/MrThreat/Confirmed-Phish",
+      "issuesUrl": "https://github.com/MrThreat/Confirmed-Phish/issues",
+      "licenseId": "5",
+      "Name": "Confirmed Phishing Domains",
+      "viewUrl": "https://raw.githubusercontent.com/MrThreat/Confirmed-Phish/master/phish.txt"
+    },
+    {
+      "id": "497",
+      "donateUrl": "https://adzhosts.eu/index-en.php",
+      "homeUrl": "https://adzhosts.eu/index-en.php",
+      "Name": "AdZHosts Windows",
+      "syntaxId": "1",
+      "viewUrl": "https://adzhosts.eu/hosts/adzhosts-windows.txt"
+    },
+    {
+      "id": "498",
+      "donateUrl": "https://adzhosts.eu/index-en.php",
+      "homeUrl": "https://adzhosts.eu/index-en.php",
+      "Name": "AdZHosts Mac / Linux",
+      "syntaxId": "1",
+      "viewUrl": "https://adzhosts.eu/hosts/adzhosts-mac-linux.txt"
+    },
+    {
+      "id": "499",
+      "donateUrl": "https://adzhosts.eu/index-en.php",
+      "homeUrl": "https://adzhosts.eu/index-en.php",
+      "Name": "AdZHosts Android",
+      "syntaxId": "1",
+      "viewUrl": "https://adzhosts.eu/hosts/adzhosts-android.txt"
+    },
+    {
+      "id": "500",
+      "donateUrl": "https://adzhosts.eu/index-en.php",
+      "homeUrl": "https://adzhosts.eu/index-en.php",
+      "Name": "AdZHosts AdGuard / uBlock Social List",
+      "syntaxId": "1",
+      "viewUrl": "https://adzhosts.eu/hosts/adzguard-as.txt"
+    },
+    {
+      "id": "501",
+      "donateUrl": "https://adzhosts.eu/index-en.php",
+      "homeUrl": "https://adzhosts.eu/index-en.php",
+      "Name": "AdZHosts Windows Social List",
+      "syntaxId": "1",
+      "viewUrl": "https://adzhosts.eu/hosts/adzhosts-as-windows.txt"
+    },
+    {
+      "id": "502",
+      "donateUrl": "https://adzhosts.eu/index-en.php",
+      "homeUrl": "https://adzhosts.eu/index-en.php",
+      "Name": "AdZHosts Android Social List",
+      "syntaxId": "1",
+      "viewUrl": "https://adzhosts.eu/hosts/adzhosts-as-android.txt"
+    },
+    {
+      "id": "503",
+      "donateUrl": "https://adzhosts.eu/index-en.php",
+      "homeUrl": "https://adzhosts.eu/index-en.php",
+      "Name": "AdZHosts Mac / Linux Social List",
+      "syntaxId": "1",
+      "viewUrl": "https://adzhosts.eu/hosts/adzhosts-as-mac-linux.txt"
+    }
 ]
