@@ -27,12 +27,9 @@ namespace FilterLists.Services.Snapshot
         public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list, string uaString)
         {
             this.dbContext = dbContext;
-            this.uaString = uaString;
             listViewUrl = list.ViewUrl;
-            snapEntity = new Data.Entities.Snapshot
-            {
-                FilterListId = list.Id
-            };
+            snapEntity = new Data.Entities.Snapshot {FilterListId = list.Id};
+            this.uaString = uaString;
             telemetryClient = new TelemetryClient();
         }
 
@@ -100,7 +97,7 @@ namespace FilterLists.Services.Snapshot
                 {
                     string line;
                     while ((line = await streamReader.ReadLineAsync()) != null)
-                        lines.AddIfNotNullOrEmpty(line.LintLine());
+                        lines.AddIfNotNullOrEmpty(line.Trim());
                 }
             }
         }

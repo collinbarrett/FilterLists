@@ -27,8 +27,8 @@ namespace FilterLists.Services.Snapshot
             var newRules = lines.Except(existingRules.Select(r => r.Raw)).Select(l => new Rule {Raw = l}).ToList();
             dbContext.Rules.AddRange(newRules);
             var rules = existingRules.Concat(newRules);
-            var snapshotRules = rules.Select(r => new SnapshotRule {Rule = r});
-            snapEntity.SnapshotRules = snapshotRules.ToList();
+            var snapshotRules = rules.Select(r => new SnapshotRule {Rule = r}).ToList();
+            snapEntity.SnapshotRules = snapshotRules;
             await dbContext.SaveChangesAsync();
         }
     }
