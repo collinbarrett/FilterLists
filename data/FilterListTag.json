@@ -230,5 +230,9 @@
   {
     "filterListId": 503,
     "tagId": 4
+  },
+  {
+    "filterListId": 506,
+    "tagId": 10
   }
 ]
