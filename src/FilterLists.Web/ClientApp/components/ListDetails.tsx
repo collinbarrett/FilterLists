@@ -54,7 +54,7 @@ function ListInfo(props: any) {
                <Description description={props.details.description} url={props.details.descriptionSourceUrl}/>
                <ul className="list-group list-group-flush">
                    <Languages languages={props.details.languages}/>
-                   <RuleCount count={props.details.ruleCount}/>
+               {/* <RuleCount count={props.details.ruleCount}/> */}
                    <DiscontinuedDate date={props.details.discontinuedDate}/>
                {/* <UpdatedDate date={props.details.updatedDate}/>--> */}
                    <PublishedDate date={props.details.publishedDate}/>
