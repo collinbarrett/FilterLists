@@ -18,12 +18,12 @@ namespace FilterLists.Agent
         private static Logger logger;
         private static readonly TimeSpan OneHourTimeout = TimeSpan.FromHours(1);
 
-        public static void Main()
+        public static async Task Main()
         {
             BuildConfigRoot();
             BuildServiceProvider();
             snapshotService = serviceProvider.GetService<SnapshotService>();
-            TryCaptureSnapshots().Wait();
+            await TryCaptureSnapshots();
         }
 
         private static void BuildConfigRoot() =>
