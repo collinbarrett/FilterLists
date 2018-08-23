@@ -68,5 +68,10 @@
     "id": 14,
     "description": "Intended for research only",
     "name": "research"
+  },
+  {
+    "id": 15,
+    "description": "Blocks specific topics/things",
+    "name": "topical"
   }
 ]
