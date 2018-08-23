@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
-using FilterLists.Services.Extensions;
 
 namespace FilterLists.Services.Snapshot
 {
@@ -22,45 +21,15 @@ namespace FilterLists.Services.Snapshot
             this.snapEntity = snapEntity;
         }
 
-        private IQueryable<Rule> ExistingRules =>
-            dbContext.Rules.Join(lines, rule => rule.Raw, line => line, (rule, line) => rule);
-
         public async Task SaveAsync()
         {
-            AddAddedSnapRulesForExistingRules();
-            AddAddedSnapRulesForNewRules();
+            var existingRules = dbContext.Rules.Join(lines, rule => rule.Raw, line => line, (rule, line) => rule);
+            var newRules = lines.Except(existingRules.Select(r => r.Raw)).Select(l => new Rule { Raw = l }).ToList();
+            dbContext.Rules.AddRange(newRules);
+            var rules = existingRules.Concat(newRules);
+            var snapshotRules = rules.Select(r => new SnapshotRule { Rule = r });
+            snapEntity.SnapshotRules = snapshotRules.ToList();
             await dbContext.SaveChangesAsync();
         }
-
-        private void AddAddedSnapRulesForExistingRules()
-        {
-            var existingAddedSnapRules = GetExistingAddedSnapRules();
-            var newAddedSnapRules = CreateNewAddedSnapRules(existingAddedSnapRules);
-            snapEntity.AddedSnapshotRules.AddRange(newAddedSnapRules);
-        }
-
-        private IQueryable<SnapshotRule> GetExistingAddedSnapRules() =>
-            dbContext.SnapshotRules
-                     .Where(sr =>
-                         ExistingRules.Contains(sr.Rule) &&
-                         sr.AddedBySnapshot.FilterListId == snapEntity.FilterListId &&
-                         sr.RemovedBySnapshot == null);
-
-        private IEnumerable<SnapshotRule> CreateNewAddedSnapRules(IQueryable<SnapshotRule> existingAddedSnapRules) =>
-            ExistingRules.Where(r => !existingAddedSnapRules.Select(sr => sr.Rule).Contains(r))
-                         .Select(r => new SnapshotRule {Rule = r});
-
-        private void AddAddedSnapRulesForNewRules()
-        {
-            var newRules = CreateNewRules();
-            var newAddedSnapRules = CreateSnapRules(newRules);
-            snapEntity.AddedSnapshotRules.AddRange(newAddedSnapRules);
-        }
-
-        private IEnumerable<Rule> CreateNewRules() =>
-            lines.Except(ExistingRules.Select(r => r.Raw)).Select(l => new Rule {Raw = l});
-
-        private static IEnumerable<SnapshotRule> CreateSnapRules(IEnumerable<Rule> rules) =>
-            rules.Select(r => new SnapshotRule {Rule = r});
     }
 }
