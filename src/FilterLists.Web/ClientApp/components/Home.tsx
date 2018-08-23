@@ -69,8 +69,9 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
 
     private static renderTagline(state: IHomeState) {
         return <p className="ml-2 mr-2">
-                   The independent, comprehensive directory of <strong>{state.ruleCount.toLocaleString()
-                   }</strong> unique rules across <strong>{state.lists.length
+                   The independent, comprehensive directory of { /*<strong>{state.ruleCount.toLocaleString()
+                   }</strong> unique rules across */
+                   }<strong>{state.lists.length
                    }</strong> filter and host lists for advertisements, trackers, malware, and annoyances.
                </p>;
     }
