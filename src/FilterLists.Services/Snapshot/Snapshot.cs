@@ -71,7 +71,7 @@ namespace FilterLists.Services.Snapshot
                 if (lines != null)
                 {
                     await SaveInBatches(lines);
-                    await DedupSnapshotRules();
+                    await AddRemovedSnapshotRules();
                     await SetSuccessful();
                 }
 
@@ -136,11 +136,10 @@ namespace FilterLists.Services.Snapshot
                 await batch.SaveAsync();
         }
 
-        private async Task DedupSnapshotRules()
+        private async Task AddRemovedSnapshotRules()
         {
             var existingSnapshotRules = GetExistingSnapshotRules();
             AddRemovedBySnapshots(existingSnapshotRules);
-            RemoveDuplicateSnapshotRules(existingSnapshotRules);
             await dbContext.SaveChangesAsync();
         }
 
@@ -155,15 +154,6 @@ namespace FilterLists.Services.Snapshot
             var newSnapshotRules = dbContext.SnapshotRules.Where(sr => sr.AddedBySnapshot == snapEntity);
             var removedSnapshotRules = existingSnapshotRules.Where(sr => !newSnapshotRules.Any(n => n.Rule == sr.Rule));
             removedSnapshotRules.ForEach(sr => sr.RemovedBySnapshot = snapEntity);
-        }
-
-        private void RemoveDuplicateSnapshotRules(IQueryable<SnapshotRule> existingSnapshotRules)
-        {
-            var duplicateSnapshotRules = dbContext.SnapshotRules.Where(sr =>
-                sr.AddedBySnapshot == snapEntity &&
-                existingSnapshotRules.Any(e =>
-                    e.Rule == sr.Rule && e.RemovedBySnapshot == null));
-            dbContext.SnapshotRules.RemoveRange(duplicateSnapshotRules);
         }
 
         private async Task SetSuccessful()
