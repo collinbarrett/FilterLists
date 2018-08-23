@@ -25,6 +25,7 @@ namespace FilterLists.Services.Snapshot
         private readonly Data.Entities.Snapshot snapEntity;
         private readonly TelemetryClient telemetryClient;
         private readonly string userAgentString;
+        private HashSet<string> lines;
 
         public Snapshot(FilterListsDbContext dbContext, EmailService emailService, FilterListViewUrlDto list,
             string userAgentString)
@@ -41,7 +42,6 @@ namespace FilterLists.Services.Snapshot
             telemetryClient = new TelemetryClient();
         }
 
-        //TODO: add better compliance with Try/Parse pattern (https://stackoverflow.com/q/37810660/2343739)
         public async Task TrySaveAsync()
         {
             await AddSnapEntity();
@@ -65,50 +65,43 @@ namespace FilterLists.Services.Snapshot
 
         private async Task SaveAsync()
         {
-            using (var transaction = dbContext.Database.BeginTransaction())
+            await TryGetLines();
+            if (lines != null)
             {
-                var lines = await TryGetLines();
-                if (lines != null)
-                {
-                    await SaveInBatches(lines);
-                    await AddRemovedSnapshotRules();
-                    await SetSuccessful();
-                }
-
-                transaction.Commit();
+                await SaveInBatches();
+                await AddRemovedSnapRules();
+                await SetSuccessful();
             }
         }
 
-        private async Task<IEnumerable<string>> TryGetLines()
+        private async Task TryGetLines()
         {
             try
             {
-                return await GetLines();
+                await GetLines();
             }
             catch (HttpRequestException hre)
             {
                 await dbContext.SaveChangesAsync();
                 await TrackException(hre);
-                return null;
             }
             catch (WebException we)
             {
                 snapEntity.HttpStatusCode = ((int)((HttpWebResponse)we.Response).StatusCode).ToString();
                 await dbContext.SaveChangesAsync();
                 await TrackException(we);
-                return null;
             }
         }
 
-        private async Task<IEnumerable<string>> GetLines()
+        private async Task GetLines()
         {
-            var lines = new HashSet<string>();
             using (var httpClient = new HttpClient())
             {
                 httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(userAgentString);
                 var response = await httpClient.GetAsync(list.ViewUrl, HttpCompletionOption.ResponseHeadersRead);
                 snapEntity.HttpStatusCode = ((int)response.StatusCode).ToString();
                 response.EnsureSuccessStatusCode();
+                lines = new HashSet<string>();
                 using (var stream = await response.Content.ReadAsStreamAsync())
                 using (var streamReader = new StreamReader(stream))
                 {
@@ -117,17 +110,15 @@ namespace FilterLists.Services.Snapshot
                         lines.AddIfNotNullOrEmpty(line.LintLine());
                 }
             }
-
-            return lines;
         }
 
-        private async Task SaveInBatches(IEnumerable<string> lines)
+        private async Task SaveInBatches()
         {
-            var snapshotBatches = CreateBatches(lines);
+            var snapshotBatches = CreateBatches();
             await SaveBatches(snapshotBatches);
         }
 
-        private IEnumerable<SnapshotBatch> CreateBatches(IEnumerable<string> lines) =>
+        private IEnumerable<SnapshotBatch> CreateBatches() =>
             lines.Batch(BatchSize).Select(b => new SnapshotBatch(dbContext, b, snapEntity));
 
         private static async Task SaveBatches(IEnumerable<SnapshotBatch> batches)
@@ -136,24 +127,15 @@ namespace FilterLists.Services.Snapshot
                 await batch.SaveAsync();
         }
 
-        private async Task AddRemovedSnapshotRules()
+        private async Task AddRemovedSnapRules()
         {
-            var existingSnapshotRules = GetExistingSnapshotRules();
-            AddRemovedBySnapshots(existingSnapshotRules);
+            dbContext.SnapshotRules
+                     .Where(sr =>
+                         sr.AddedBySnapshot.FilterListId == list.Id &&
+                         sr.RemovedBySnapshot == null &&
+                         !lines.Contains(sr.Rule.Raw))
+                     .ForEach(sr => sr.RemovedBySnapshot = snapEntity);
             await dbContext.SaveChangesAsync();
-        }
-
-        private IQueryable<SnapshotRule> GetExistingSnapshotRules() =>
-            dbContext.SnapshotRules.Where(sr =>
-                sr.AddedBySnapshot.FilterListId == list.Id &&
-                sr.AddedBySnapshot != snapEntity &&
-                sr.RemovedBySnapshot == null);
-
-        private void AddRemovedBySnapshots(IQueryable<SnapshotRule> existingSnapshotRules)
-        {
-            var newSnapshotRules = dbContext.SnapshotRules.Where(sr => sr.AddedBySnapshot == snapEntity);
-            var removedSnapshotRules = existingSnapshotRules.Where(sr => !newSnapshotRules.Any(n => n.Rule == sr.Rule));
-            removedSnapshotRules.ForEach(sr => sr.RemovedBySnapshot = snapEntity);
         }
 
         private async Task SetSuccessful()
