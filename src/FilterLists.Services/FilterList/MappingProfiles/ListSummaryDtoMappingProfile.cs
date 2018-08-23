@@ -15,9 +15,6 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                 .ForMember(d => d.Tags, c => c.MapFrom(l => l.FilterListTags.Select(m => m.Tag)))
                 .ForMember(d => d.UpdatedDate,
                     c => c.MapFrom(l =>
-                        l.Snapshots.Where(s => s.WasSuccessful)
-                         .OrderByDescending(s => s.CreatedDateUtc)
-                         .FirstOrDefault()
-                         .CreatedDateUtc));
+                        l.ModifiedDateUtc));
     }
 }
