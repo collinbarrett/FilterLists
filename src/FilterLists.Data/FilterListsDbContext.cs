@@ -34,7 +34,6 @@ namespace FilterLists.Data
         {
             base.OnModelCreating(modelBuilder);
             ApplyConfigurations(modelBuilder);
-            ApplyIndexes(modelBuilder);
         }
 
         private static void ApplyConfigurations(ModelBuilder modelBuilder)
@@ -56,11 +55,6 @@ namespace FilterLists.Data
             modelBuilder.ApplyConfiguration(new MergeTypeConfiguration());
             modelBuilder.ApplyConfiguration(new SnapshotRuleTypeConfiguration());
             modelBuilder.ApplyConfiguration(new SoftwareSyntaxTypeConfiguration());
-        }
-
-        private static void ApplyIndexes(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Rule>(b => { b.HasIndex(e => e.Raw).IsUnique(); });
         }
     }
 }
