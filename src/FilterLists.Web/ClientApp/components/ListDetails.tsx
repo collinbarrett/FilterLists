@@ -56,7 +56,7 @@ function ListInfo(props: any) {
                    <Languages languages={props.details.languages}/>
                    <RuleCount count={props.details.ruleCount}/>
                    <DiscontinuedDate date={props.details.discontinuedDate}/>
-                   <UpdatedDate date={props.details.updatedDate}/>
+               {/* <UpdatedDate date={props.details.updatedDate}/>--> */}
                    <PublishedDate date={props.details.publishedDate}/>
                    <License license={props.details.license}/>
                </ul>
