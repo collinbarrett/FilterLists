@@ -4,11 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Data;
-using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Extensions;
 using FilterLists.Services.Snapshot.Models;
 using Microsoft.ApplicationInsights;
@@ -20,28 +18,24 @@ namespace FilterLists.Services.Snapshot
     {
         private const int BatchSize = 500;
         private readonly FilterListsDbContext dbContext;
-        private readonly EmailService emailService;
         private readonly FilterListViewUrlDto list;
         private readonly Data.Entities.Snapshot snapEntity;
         private readonly TelemetryClient telemetryClient;
-        private readonly string userAgentString;
+        private readonly string uaString;
+        private HashSet<string> lines;
 
-        public Snapshot(FilterListsDbContext dbContext, EmailService emailService, FilterListViewUrlDto list,
-            string userAgentString)
+        public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list, string uaString)
         {
             this.dbContext = dbContext;
-            this.emailService = emailService;
             this.list = list;
+            this.uaString = uaString;
             snapEntity = new Data.Entities.Snapshot
             {
-                FilterListId = list.Id,
-                AddedSnapshotRules = new List<SnapshotRule>()
+                FilterListId = list.Id
             };
-            this.userAgentString = userAgentString;
             telemetryClient = new TelemetryClient();
         }
 
-        //TODO: add better compliance with Try/Parse pattern (https://stackoverflow.com/q/37810660/2343739)
         public async Task TrySaveAsync()
         {
             await AddSnapEntity();
@@ -53,7 +47,7 @@ namespace FilterLists.Services.Snapshot
             }
             catch (Exception e)
             {
-                await TrackException(e);
+                TrackException(e);
             }
         }
 
@@ -65,50 +59,42 @@ namespace FilterLists.Services.Snapshot
 
         private async Task SaveAsync()
         {
-            using (var transaction = dbContext.Database.BeginTransaction())
+            await TryGetLines();
+            if (lines != null)
             {
-                var lines = await TryGetLines();
-                if (lines != null)
-                {
-                    await SaveInBatches(lines);
-                    await DedupSnapshotRules();
-                    await SetSuccessful();
-                }
-
-                transaction.Commit();
+                await SaveInBatches();
+                await SetSuccessful();
             }
         }
 
-        private async Task<IEnumerable<string>> TryGetLines()
+        private async Task TryGetLines()
         {
             try
             {
-                return await GetLines();
+                await GetLines();
             }
             catch (HttpRequestException hre)
             {
                 await dbContext.SaveChangesAsync();
-                await TrackException(hre);
-                return null;
+                TrackException(hre);
             }
             catch (WebException we)
             {
-                snapEntity.HttpStatusCode = ((int)((HttpWebResponse)we.Response).StatusCode).ToString();
+                snapEntity.HttpStatusCode = (uint)((HttpWebResponse)we.Response).StatusCode;
                 await dbContext.SaveChangesAsync();
-                await TrackException(we);
-                return null;
+                TrackException(we);
             }
         }
 
-        private async Task<IEnumerable<string>> GetLines()
+        private async Task GetLines()
         {
-            var lines = new HashSet<string>();
             using (var httpClient = new HttpClient())
             {
-                httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(userAgentString);
+                httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(uaString);
                 var response = await httpClient.GetAsync(list.ViewUrl, HttpCompletionOption.ResponseHeadersRead);
-                snapEntity.HttpStatusCode = ((int)response.StatusCode).ToString();
+                snapEntity.HttpStatusCode = (uint)response.StatusCode;
                 response.EnsureSuccessStatusCode();
+                lines = new HashSet<string>();
                 using (var stream = await response.Content.ReadAsStreamAsync())
                 using (var streamReader = new StreamReader(stream))
                 {
@@ -117,17 +103,15 @@ namespace FilterLists.Services.Snapshot
                         lines.AddIfNotNullOrEmpty(line.LintLine());
                 }
             }
-
-            return lines;
         }
 
-        private async Task SaveInBatches(IEnumerable<string> lines)
+        private async Task SaveInBatches()
         {
-            var snapshotBatches = CreateBatches(lines);
-            await SaveBatches(snapshotBatches);
+            var snapBatches = CreateBatches();
+            await SaveBatches(snapBatches);
         }
 
-        private IEnumerable<SnapshotBatch> CreateBatches(IEnumerable<string> lines) =>
+        private IEnumerable<SnapshotBatch> CreateBatches() =>
             lines.Batch(BatchSize).Select(b => new SnapshotBatch(dbContext, b, snapEntity));
 
         private static async Task SaveBatches(IEnumerable<SnapshotBatch> batches)
@@ -136,67 +120,13 @@ namespace FilterLists.Services.Snapshot
                 await batch.SaveAsync();
         }
 
-        private async Task DedupSnapshotRules()
-        {
-            var existingSnapshotRules = GetExistingSnapshotRules();
-            AddRemovedBySnapshots(existingSnapshotRules);
-            RemoveDuplicateSnapshotRules(existingSnapshotRules);
-            await dbContext.SaveChangesAsync();
-        }
-
-        private IQueryable<SnapshotRule> GetExistingSnapshotRules() =>
-            dbContext.SnapshotRules.Where(sr =>
-                sr.AddedBySnapshot.FilterListId == list.Id &&
-                sr.AddedBySnapshot != snapEntity &&
-                sr.RemovedBySnapshot == null);
-
-        private void AddRemovedBySnapshots(IQueryable<SnapshotRule> existingSnapshotRules)
-        {
-            var newSnapshotRules = dbContext.SnapshotRules.Where(sr => sr.AddedBySnapshot == snapEntity);
-            var removedSnapshotRules = existingSnapshotRules.Where(sr => !newSnapshotRules.Any(n => n.Rule == sr.Rule));
-            removedSnapshotRules.ForEach(sr => sr.RemovedBySnapshot = snapEntity);
-        }
-
-        private void RemoveDuplicateSnapshotRules(IQueryable<SnapshotRule> existingSnapshotRules)
-        {
-            var duplicateSnapshotRules = dbContext.SnapshotRules.Where(sr =>
-                sr.AddedBySnapshot == snapEntity &&
-                existingSnapshotRules.Any(e =>
-                    e.Rule == sr.Rule && e.RemovedBySnapshot == null));
-            dbContext.SnapshotRules.RemoveRange(duplicateSnapshotRules);
-        }
-
         private async Task SetSuccessful()
         {
             snapEntity.WasSuccessful = true;
             await dbContext.SaveChangesAsync();
         }
 
-        private async Task TrackException(Exception e)
-        {
-            await SendExceptionEmail(e);
-            TrackExceptionInApplicationInsights(e);
-        }
-
-        private async Task SendExceptionEmail(Exception e)
-        {
-            if (!IsDeploymentInterrupted(e))
-            {
-                var msg = new StringBuilder();
-                msg.AppendLine("FilterListId: " + list.Id);
-                msg.AppendLine("Exception:");
-                msg.AppendLine(e.Message);
-                msg.AppendLine(e.StackTrace);
-                msg.AppendLine(e.InnerException?.Message);
-                msg.AppendLine(e.InnerException?.StackTrace);
-                await emailService.SendEmailAsync("Snapshot Exception", msg.ToString());
-            }
-        }
-
-        private static bool IsDeploymentInterrupted(Exception e) =>
-            e.Message.Contains("Failed to read the result set.");
-
-        private void TrackExceptionInApplicationInsights(Exception e)
+        private void TrackException(Exception e)
         {
             telemetryClient.TrackException(e);
             telemetryClient.Flush();
