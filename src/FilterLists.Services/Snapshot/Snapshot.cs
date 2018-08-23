@@ -18,7 +18,7 @@ namespace FilterLists.Services.Snapshot
     {
         private const int BatchSize = 500;
         private readonly FilterListsDbContext dbContext;
-        private readonly FilterListViewUrlDto list;
+        private readonly string listViewUrl;
         private readonly Data.Entities.Snapshot snapEntity;
         private readonly TelemetryClient telemetryClient;
         private readonly string uaString;
@@ -27,8 +27,8 @@ namespace FilterLists.Services.Snapshot
         public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list, string uaString)
         {
             this.dbContext = dbContext;
-            this.list = list;
             this.uaString = uaString;
+            listViewUrl = list.ViewUrl;
             snapEntity = new Data.Entities.Snapshot
             {
                 FilterListId = list.Id
@@ -39,7 +39,7 @@ namespace FilterLists.Services.Snapshot
         public async Task TrySaveAsync()
         {
             await AddSnapEntity();
-            if (!list.ViewUrl.IsValidHttpOrHttpsUrl())
+            if (!listViewUrl.IsValidHttpOrHttpsUrl())
                 return;
             try
             {
@@ -91,7 +91,7 @@ namespace FilterLists.Services.Snapshot
             using (var httpClient = new HttpClient())
             {
                 httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(uaString);
-                var response = await httpClient.GetAsync(list.ViewUrl, HttpCompletionOption.ResponseHeadersRead);
+                var response = await httpClient.GetAsync(listViewUrl, HttpCompletionOption.ResponseHeadersRead);
                 snapEntity.HttpStatusCode = (uint)response.StatusCode;
                 response.EnsureSuccessStatusCode();
                 lines = new HashSet<string>();

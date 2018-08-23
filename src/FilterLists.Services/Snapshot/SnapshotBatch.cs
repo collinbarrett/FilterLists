@@ -24,10 +24,10 @@ namespace FilterLists.Services.Snapshot
         public async Task SaveAsync()
         {
             var existingRules = dbContext.Rules.Join(lines, rule => rule.Raw, line => line, (rule, line) => rule);
-            var newRules = lines.Except(existingRules.Select(r => r.Raw)).Select(l => new Rule { Raw = l }).ToList();
+            var newRules = lines.Except(existingRules.Select(r => r.Raw)).Select(l => new Rule {Raw = l}).ToList();
             dbContext.Rules.AddRange(newRules);
             var rules = existingRules.Concat(newRules);
-            var snapshotRules = rules.Select(r => new SnapshotRule { Rule = r });
+            var snapshotRules = rules.Select(r => new SnapshotRule {Rule = r});
             snapEntity.SnapshotRules = snapshotRules.ToList();
             await dbContext.SaveChangesAsync();
         }

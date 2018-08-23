@@ -19,7 +19,8 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                         l.Snapshots.Where(s => s.WasSuccessful)
                          .OrderByDescending(s => s.CreatedDateUtc)
                          .FirstOrDefault()
-                         .SnapshotRules.Count))
+                         .SnapshotRules
+                         .Count))
                 .ForMember(d => d.UpdatedDate,
                     c => c.MapFrom(l =>
                         l.Snapshots.Where(s => s.WasSuccessful)
