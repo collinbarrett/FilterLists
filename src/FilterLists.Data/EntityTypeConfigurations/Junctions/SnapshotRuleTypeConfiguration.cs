@@ -10,19 +10,10 @@ namespace FilterLists.Data.EntityTypeConfigurations.Junctions
         {
             base.Configure(entityTypeBuilder);
             entityTypeBuilder.ToTable("snapshots_rules");
-            entityTypeBuilder.HasKey(x => new {x.AddedBySnapshotId, x.RuleId});
-            entityTypeBuilder.Property(x => x.ModifiedDateUtc)
-                             .HasColumnType("TIMESTAMP")
-                             .ValueGeneratedOnAddOrUpdate()
-                             .IsRequired()
-                             .HasDefaultValueSql("current_timestamp() ON UPDATE current_timestamp()");
-            entityTypeBuilder.HasOne(x => x.AddedBySnapshot)
-                             .WithMany(x => x.AddedSnapshotRules)
-                             .HasForeignKey(x => x.AddedBySnapshotId);
-            entityTypeBuilder.HasOne(x => x.RemovedBySnapshot)
-                             .WithMany(x => x.RemovedSnapshotRules)
-                             .HasForeignKey(x => x.RemovedBySnapshotId)
-                             .OnDelete(DeleteBehavior.Cascade);
+            entityTypeBuilder.HasKey(x => new {x.SnapshotId, x.RuleId});
+            entityTypeBuilder.HasOne(x => x.Snapshot)
+                             .WithMany(x => x.SnapshotRules)
+                             .HasForeignKey(x => x.SnapshotId);
             entityTypeBuilder.HasOne(x => x.Rule)
                              .WithMany(x => x.SnapshotRules)
                              .HasForeignKey(x => x.RuleId);

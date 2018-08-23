@@ -8,6 +8,7 @@ namespace FilterLists.Services.FilterList.MappingProfiles
     [UsedImplicitly]
     public class ListSummaryDtoMappingProfile : Profile
     {
+        //TODO: fix UpdatedDate to look at most recent snapshot with changes
         public ListSummaryDtoMappingProfile() =>
             CreateMap<Data.Entities.FilterList, ListSummaryDto>()
                 .ForMember(d => d.Languages, c => c.MapFrom(l => l.FilterListLanguages.Select(la => la.Language)))
@@ -15,9 +16,8 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                 .ForMember(d => d.UpdatedDate,
                     c => c.MapFrom(l =>
                         l.Snapshots.Where(s => s.WasSuccessful)
-                         .Where(s => s.AddedSnapshotRules.Count > 0 || s.RemovedSnapshotRules.Count > 0)
                          .OrderByDescending(s => s.CreatedDateUtc)
-                         .Select(s => s.CreatedDateUtc)
-                         .FirstOrDefault()));
+                         .FirstOrDefault()
+                         .CreatedDateUtc));
     }
 }

@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
-using FilterLists.Services.Extensions;
 
 namespace FilterLists.Services.Snapshot
 {
@@ -24,21 +23,13 @@ namespace FilterLists.Services.Snapshot
 
         public async Task SaveAsync()
         {
-            var existingRules = GetExistingRules();
-            var newRules = CreateNewRules(existingRules);
+            var existingRules = dbContext.Rules.Join(lines, rule => rule.Raw, line => line, (rule, line) => rule);
+            var newRules = lines.Except(existingRules.Select(r => r.Raw)).Select(l => new Rule { Raw = l }).ToList();
             dbContext.Rules.AddRange(newRules);
             var rules = existingRules.Concat(newRules);
-            AddSnapshotRules(rules);
+            var snapshotRules = rules.Select(r => new SnapshotRule { Rule = r });
+            snapEntity.SnapshotRules = snapshotRules.ToList();
             await dbContext.SaveChangesAsync();
         }
-
-        private IQueryable<Rule> GetExistingRules() =>
-            dbContext.Rules.Join(lines, rule => rule.Raw, line => line, (rule, line) => rule);
-
-        private List<Rule> CreateNewRules(IQueryable<Rule> existingRules) =>
-            lines.Except(existingRules.Select(r => r.Raw)).Select(r => new Rule {Raw = r}).ToList();
-
-        private void AddSnapshotRules(IQueryable<Rule> rules) =>
-            snapEntity.AddedSnapshotRules.AddRange(rules.Select(r => new SnapshotRule {Rule = r}));
     }
 }
