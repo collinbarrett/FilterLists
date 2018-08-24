@@ -104,7 +104,7 @@ function Languages(props: any) {
 }
 
 function RuleCount(props: any) {
-    return props.count
+    return props.count > 0
         ? <li className="list-group-item">
               <p>Rule Count: {props.count.toLocaleString()}</p>
           </li>
