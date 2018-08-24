@@ -75,15 +75,6 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                </p>;
     }
 
-    //https://stackoverflow.com/a/11868398/2343739
-    private static getContrast(hexcolor: string) {
-        const r = parseInt(hexcolor.substr(0, 2), 16);
-        const g = parseInt(hexcolor.substr(2, 2), 16);
-        const b = parseInt(hexcolor.substr(4, 2), 16);
-        const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
-        return (yiq >= 128) ? "black" : "white";
-    }
-
     private static renderFilterListsTable(state: IHomeState) {
         return <ReactTable
                    data={state.lists}
@@ -184,6 +175,15 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                        );
                    }}
                    className="-striped -highlight"/>;
+    }
+
+    //https://stackoverflow.com/a/11868398/2343739
+    private static getContrast(hexcolor: string) {
+        const r = parseInt(hexcolor.substr(0, 2), 16);
+        const g = parseInt(hexcolor.substr(2, 2), 16);
+        const b = parseInt(hexcolor.substr(4, 2), 16);
+        const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        return (yiq >= 128) ? "black" : "white";
     }
 }
 
