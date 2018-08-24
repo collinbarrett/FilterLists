@@ -6,9 +6,10 @@ namespace FilterLists.Data.Entities
 {
     public class Snapshot : BaseEntity
     {
+        public int? BatchSize { get; set; }
         public uint FilterListId { get; set; }
         public FilterList FilterList { get; set; }
-        public uint? HttpStatusCode { get; set; }
+        public int? HttpStatusCode { get; set; }
         public bool WasSuccessful { get; set; }
         public ICollection<SnapshotRule> SnapshotRules { get; set; }
         public DateTime? WaybackTimestamp { get; set; }

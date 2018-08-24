@@ -7,14 +7,13 @@ using FilterLists.Data.Entities.Junctions;
 
 namespace FilterLists.Services.Snapshot
 {
-    public class SnapshotBatch
+    public class Batch
     {
         private readonly FilterListsDbContext dbContext;
         private readonly IEnumerable<string> lines;
         private readonly Data.Entities.Snapshot snapEntity;
 
-        public SnapshotBatch(FilterListsDbContext dbContext, IEnumerable<string> lines,
-            Data.Entities.Snapshot snapEntity)
+        public Batch(FilterListsDbContext dbContext, IEnumerable<string> lines, Data.Entities.Snapshot snapEntity)
         {
             this.dbContext = dbContext;
             this.lines = lines;

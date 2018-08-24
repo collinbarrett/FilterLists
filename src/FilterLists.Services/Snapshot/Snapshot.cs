@@ -17,7 +17,7 @@ namespace FilterLists.Services.Snapshot
 {
     public class Snapshot
     {
-        private const int BatchSize = 500;
+        private readonly BatchSizeService batchSizeService;
         private readonly FilterListsDbContext dbContext;
         public readonly FilterListViewUrlDto List;
         protected readonly Data.Entities.Snapshot SnapEntity;
@@ -31,8 +31,10 @@ namespace FilterLists.Services.Snapshot
         }
 
         [UsedImplicitly]
-        public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list, string uaString)
+        public Snapshot(BatchSizeService batchSizeService, FilterListsDbContext dbContext, FilterListViewUrlDto list,
+            string uaString)
         {
+            this.batchSizeService = batchSizeService;
             this.dbContext = dbContext;
             List = list;
             ListUrl = list.ViewUrl;
@@ -89,7 +91,7 @@ namespace FilterLists.Services.Snapshot
             }
             catch (WebException we)
             {
-                SnapEntity.HttpStatusCode = (uint)((HttpWebResponse)we.Response).StatusCode;
+                SnapEntity.HttpStatusCode = (int)((HttpWebResponse)we.Response).StatusCode;
                 await dbContext.SaveChangesAsync();
                 TrackException(we);
             }
@@ -101,7 +103,7 @@ namespace FilterLists.Services.Snapshot
             {
                 httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(uaString);
                 var response = await httpClient.GetAsync(ListUrl, HttpCompletionOption.ResponseHeadersRead);
-                SnapEntity.HttpStatusCode = (uint)response.StatusCode;
+                SnapEntity.HttpStatusCode = (int)response.StatusCode;
                 response.EnsureSuccessStatusCode();
                 lines = new HashSet<string>();
                 using (var stream = await response.Content.ReadAsStreamAsync())
@@ -116,14 +118,17 @@ namespace FilterLists.Services.Snapshot
 
         private async Task SaveInBatches()
         {
-            var snapBatches = CreateBatches();
+            var snapBatches = await CreateBatches();
             await SaveBatches(snapBatches);
         }
 
-        private IEnumerable<SnapshotBatch> CreateBatches() =>
-            lines.Batch(BatchSize).Select(b => new SnapshotBatch(dbContext, b, SnapEntity));
+        private async Task<IEnumerable<Batch>> CreateBatches()
+        {
+            SnapEntity.BatchSize = await batchSizeService.GetBatchSize();
+            return lines.Batch(SnapEntity.BatchSize.Value).Select(b => new Batch(dbContext, b, SnapEntity));
+        }
 
-        private static async Task SaveBatches(IEnumerable<SnapshotBatch> batches)
+        private static async Task SaveBatches(IEnumerable<Batch> batches)
         {
             foreach (var batch in batches)
                 await batch.SaveAsync();

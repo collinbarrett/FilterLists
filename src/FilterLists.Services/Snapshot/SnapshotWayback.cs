@@ -13,8 +13,9 @@ namespace FilterLists.Services.Snapshot
         }
 
         [UsedImplicitly]
-        public SnapshotWayback(FilterListsDbContext dbContext, FilterListViewUrlDto list, string uaString)
-            : base(dbContext, list, uaString)
+        public SnapshotWayback(BatchSizeService batchSizeService, FilterListsDbContext dbContext,
+            FilterListViewUrlDto list, string uaString)
+            : base(batchSizeService, dbContext, list, uaString)
         {
         }
 

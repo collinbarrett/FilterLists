@@ -13,13 +13,13 @@ namespace FilterLists.Services.Snapshot
 {
     public class SnapshotService : Service
     {
+        private readonly BatchSizeService batchSizeService;
         private readonly DateTime yesterday = DateTime.UtcNow.AddDays(-1);
         private string uaString;
 
-        public SnapshotService(FilterListsDbContext dbContext, IConfigurationProvider mapConfig)
-            : base(dbContext, mapConfig)
-        {
-        }
+        public SnapshotService(FilterListsDbContext dbContext, IConfigurationProvider mapConfig,
+            BatchSizeService batchSizeService)
+            : base(dbContext, mapConfig) => this.batchSizeService = batchSizeService;
 
         public async Task CaptureAsync(int batchSize)
         {
@@ -67,7 +67,8 @@ namespace FilterLists.Services.Snapshot
 
         private IEnumerable<TSnap> CreateSnaps<TSnap>(IEnumerable<FilterListViewUrlDto> lists)
             where TSnap : Snapshot, new() =>
-            lists.Select(l => Activator.CreateInstance(typeof(TSnap), DbContext, l, uaString) as TSnap);
+            lists.Select(l =>
+                Activator.CreateInstance(typeof(TSnap), batchSizeService, DbContext, l, uaString) as TSnap);
 
         private static async Task SaveSnaps(IEnumerable<Snapshot> snaps)
         {
