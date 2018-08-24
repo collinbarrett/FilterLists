@@ -12,6 +12,6 @@ namespace FilterLists.Services.FilterList.MappingProfiles
         public ListMaintainerDtoMappingProfile() =>
             CreateMap<Maintainer, ListMaintainerDto>()
                 .ForMember(d => d.AdditionalLists,
-                    c => c.MapFrom(m => m.FilterListMaintainers.Select(lm => lm.FilterList)));
+                    o => o.MapFrom(m => m.FilterListMaintainers.Select(lm => lm.FilterList)));
     }
 }
