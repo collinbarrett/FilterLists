@@ -1,7 +1,7 @@
 ﻿using JetBrains.Annotations;
 using Newtonsoft.Json;
 
-namespace FilterLists.Services.Snapshot.Models.Wayback
+namespace FilterLists.Services.Wayback.Models
 {
     [UsedImplicitly]
     public class Closest
