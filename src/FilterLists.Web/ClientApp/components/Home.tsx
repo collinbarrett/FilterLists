@@ -87,7 +87,6 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
     private static renderFilterListsTable(state: IHomeState) {
         return <ReactTable
                    data={state.lists}
-                   defaultSorted={[{ id: "name" }]}
                    key={state.pageSize}
                    defaultPageSize={state.pageSize}
                    showPageSizeOptions={false}
