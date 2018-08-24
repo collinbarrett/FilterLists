@@ -6,6 +6,7 @@ using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using FilterLists.Services.Snapshot.Models;
+using FilterLists.Services.Wayback;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Services.Snapshot
@@ -37,7 +38,12 @@ namespace FilterLists.Services.Snapshot
                                l.Snapshots
                                 .Select(s => s.CreatedDateUtc)
                                 .OrderByDescending(d => d)
-                                .First() < yesterday))
+                                .First() < yesterday &&
+                               !l.Snapshots
+                                 .First()
+                                 .FilterList
+                                 .ViewUrl
+                                 .StartsWith(WaybackService.WaybackMachineUrlPrefix)))
                   .OrderBy(l => l.Snapshots.Any())
                   .ThenBy(l => l.Snapshots
                                 .OrderByDescending(s => s.CreatedDateUtc)
