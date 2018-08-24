@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Services.Extensions;
 using FilterLists.Services.Snapshot.Models;
+using JetBrains.Annotations;
 using Microsoft.ApplicationInsights;
 using MoreLinq;
 
@@ -18,25 +19,36 @@ namespace FilterLists.Services.Snapshot
     {
         private const int BatchSize = 500;
         private readonly FilterListsDbContext dbContext;
-        private readonly string listViewUrl;
-        private readonly Data.Entities.Snapshot snapEntity;
+        public readonly FilterListViewUrlDto List;
+        protected readonly Data.Entities.Snapshot SnapEntity;
         private readonly TelemetryClient telemetryClient;
         private readonly string uaString;
         private HashSet<string> lines;
+        protected string ListUrl;
 
+        public Snapshot()
+        {
+        }
+
+        [UsedImplicitly]
         public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list, string uaString)
         {
             this.dbContext = dbContext;
-            listViewUrl = list.ViewUrl;
-            snapEntity = new Data.Entities.Snapshot {FilterListId = list.Id};
+            List = list;
+            ListUrl = list.ViewUrl;
+            SnapEntity = new Data.Entities.Snapshot {FilterListId = list.Id};
             this.uaString = uaString;
             telemetryClient = new TelemetryClient();
         }
 
-        public async Task TrySaveAsync()
+        public bool WasSuccessful => SnapEntity.WasSuccessful;
+
+        public virtual async Task TrySaveAsync() => await TrySaveAsyncBase();
+
+        protected async Task TrySaveAsyncBase()
         {
             await AddSnapEntity();
-            if (!listViewUrl.IsValidHttpOrHttpsUrl())
+            if (!ListUrl.IsValidHttpOrHttpsUrl())
                 return;
             try
             {
@@ -50,7 +62,7 @@ namespace FilterLists.Services.Snapshot
 
         private async Task AddSnapEntity()
         {
-            dbContext.Snapshots.Add(snapEntity);
+            dbContext.Snapshots.Add(SnapEntity);
             await dbContext.SaveChangesAsync();
         }
 
@@ -77,7 +89,7 @@ namespace FilterLists.Services.Snapshot
             }
             catch (WebException we)
             {
-                snapEntity.HttpStatusCode = (uint)((HttpWebResponse)we.Response).StatusCode;
+                SnapEntity.HttpStatusCode = (uint)((HttpWebResponse)we.Response).StatusCode;
                 await dbContext.SaveChangesAsync();
                 TrackException(we);
             }
@@ -88,8 +100,8 @@ namespace FilterLists.Services.Snapshot
             using (var httpClient = new HttpClient())
             {
                 httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(uaString);
-                var response = await httpClient.GetAsync(listViewUrl, HttpCompletionOption.ResponseHeadersRead);
-                snapEntity.HttpStatusCode = (uint)response.StatusCode;
+                var response = await httpClient.GetAsync(ListUrl, HttpCompletionOption.ResponseHeadersRead);
+                SnapEntity.HttpStatusCode = (uint)response.StatusCode;
                 response.EnsureSuccessStatusCode();
                 lines = new HashSet<string>();
                 using (var stream = await response.Content.ReadAsStreamAsync())
@@ -109,7 +121,7 @@ namespace FilterLists.Services.Snapshot
         }
 
         private IEnumerable<SnapshotBatch> CreateBatches() =>
-            lines.Batch(BatchSize).Select(b => new SnapshotBatch(dbContext, b, snapEntity));
+            lines.Batch(BatchSize).Select(b => new SnapshotBatch(dbContext, b, SnapEntity));
 
         private static async Task SaveBatches(IEnumerable<SnapshotBatch> batches)
         {
@@ -119,7 +131,7 @@ namespace FilterLists.Services.Snapshot
 
         private async Task SetSuccessful()
         {
-            snapEntity.WasSuccessful = true;
+            SnapEntity.WasSuccessful = true;
             await dbContext.SaveChangesAsync();
         }
 

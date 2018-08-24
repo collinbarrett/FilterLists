@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using FilterLists.Data.Entities.Junctions;
 
 namespace FilterLists.Data.Entities
@@ -10,5 +11,6 @@ namespace FilterLists.Data.Entities
         public uint? HttpStatusCode { get; set; }
         public bool WasSuccessful { get; set; }
         public ICollection<SnapshotRule> SnapshotRules { get; set; }
+        public DateTime? WaybackTimestamp { get; set; }
     }
 }
