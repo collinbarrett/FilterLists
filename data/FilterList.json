@@ -1004,13 +1004,13 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": ""
+    "viewUrl": "https://gmbksfilters.googlecode.com/hg/hosts_adonly.txt"
   },
   {
     "id": 54,
     "chatUrl": null,
     "description": "Block ads with /etc/hosts.",
-    "descriptionSourceUrl": "https://web.archive.org/web/20160221135808/http://adblock.gjtech.net/?format=adblock-plus",
+    "descriptionSourceUrl": "http://adblock.gjtech.net/?format=adblock-plus",
     "discontinuedDate": null,
     "donateUrl": null,
     "emailAddress": null,
@@ -1023,7 +1023,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": ""
+    "viewUrl": "http://adblock.gjtech.net/?format=adblock-plus"
   },
   {
     "id": 55,
@@ -2663,7 +2663,7 @@
     "id": 142,
     "chatUrl": null,
     "description": "Block ads with AdBlock filter.",
-    "descriptionSourceUrl": "https://web.archive.org/web/20160221135711/http://adblock.gjtech.net/?format=unix-hosts",
+    "descriptionSourceUrl": "http://adblock.gjtech.net/?format=unix-hosts",
     "discontinuedDate": null,
     "donateUrl": null,
     "emailAddress": null,
@@ -2676,7 +2676,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": ""
+    "viewUrl": "http://adblock.gjtech.net/?format=unix-hosts"
   },
   {
     "id": 143,
@@ -2752,7 +2752,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": ""
+    "viewUrl": "https://web.archive.org/web/20121106002043if_/http://www.schuzak.jp:80/other/abp.conf"
   },
   {
     "id": 147,
@@ -3423,7 +3423,7 @@
     "id": 182,
     "chatUrl": null,
     "description": "Complementary subscription to Liste FR + EasyList.",
-    "descriptionSourceUrl": "https://web.archive.org/web/20171213121952/http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
+    "descriptionSourceUrl": "http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
     "discontinuedDate": "2017-12-09T00:00:00",
     "donateUrl": null,
     "emailAddress": null,
@@ -3436,7 +3436,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": ""
+    "viewUrl": "http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt"
   },
   {
     "id": 183,
@@ -4146,7 +4146,7 @@
     "chatUrl": null,
     "description": "Blocks Korean regional advertisements and trackers.",
     "descriptionSourceUrl": null,
-    "discontinuedDate": null,
+    "discontinuedDate": "2014-12-01T00:00:00",
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
@@ -4158,7 +4158,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": ""
+    "viewUrl": "https://web.archive.org/web/20160411115130/http://adblock-korea.googlecode.com:80/git/adblock-korea.txt"
   },
   {
     "id": 221,
@@ -5248,7 +5248,7 @@
     "chatUrl": null,
     "description": "Corset is a subscription filter to block intruding ads on sites using Korean.",
     "descriptionSourceUrl": "https://code.google.com/archive/p/abp-corset/",
-    "discontinuedDate": null,
+    "discontinuedDate": "2011-02-09T00:00:00",
     "donateUrl": null,
     "emailAddress": "corset@tistory.com",
     "forumUrl": null,
@@ -5260,7 +5260,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": ""
+    "viewUrl": "https://web.archive.org/web/20110212174029/http://abp-corset.googlecode.com:80/hg/corset.txt"
   },
   {
     "id": 279,
