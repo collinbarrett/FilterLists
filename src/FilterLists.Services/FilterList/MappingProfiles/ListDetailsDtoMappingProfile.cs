@@ -15,12 +15,7 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                 .ForMember(d => d.Maintainers, c => c.MapFrom(l => l.FilterListMaintainers.Select(m => m.Maintainer)))
                 .ForMember(d => d.Tags, c => c.MapFrom(l => l.FilterListTags.Select(m => m.Tag)))
                 .ForMember(d => d.RuleCount,
-                    c => c.MapFrom(l =>
-                        l.Snapshots
-                         .OrderByDescending(s => s.CreatedDateUtc)
-                         .FirstOrDefault()
-                         .SnapshotRules
-                         .Count))
+                    c => c.MapFrom(l => 0))
                 .ForMember(d => d.UpdatedDate,
                     c => c.MapFrom(l =>
                         l.ModifiedDateUtc));
