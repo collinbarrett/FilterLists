@@ -156,7 +156,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                          </button>}
                                </div>,
                            style: { textAlign: "center" },
-                           width: 100
+                           width: 105
                        },
                        {
                            Header: "Subscribe",
@@ -164,7 +164,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            sortable: false,
                            Cell: (cell: any) => <SubscribeUrl url={cell.value} name={cell.row.name}/>,
                            style: { textAlign: "center" },
-                           width: 100,
+                           width: 105,
                            headerClassName: "d-none d-lg-block",
                            className: "d-none d-lg-block"
                        }
