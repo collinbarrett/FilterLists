@@ -23,13 +23,23 @@ namespace FilterLists.Services.Snapshot
 
         public async Task SaveAsync()
         {
+            var rules = GetOrCreateRules();
+            CreateSnapRules(rules);
+            await dbContext.SaveChangesAsync();
+        }
+
+        private IQueryable<Rule> GetOrCreateRules()
+        {
             var existingRules = dbContext.Rules.Join(lines, rule => rule.Raw, line => line, (rule, line) => rule);
             var newRules = lines.Except(existingRules.Select(r => r.Raw)).Select(l => new Rule {Raw = l}).ToList();
             dbContext.Rules.AddRange(newRules);
-            var rules = existingRules.Concat(newRules);
-            var snapshotRules = rules.Select(r => new SnapshotRule {Rule = r}).ToList();
-            snapEntity.SnapshotRules = snapshotRules;
-            await dbContext.SaveChangesAsync();
+            return existingRules.Concat(newRules);
+        }
+
+        private void CreateSnapRules(IQueryable<Rule> rules)
+        {
+            var snapRules = rules.Select(r => new SnapshotRule {Rule = r}).ToList();
+            snapEntity.SnapshotRules = snapRules;
         }
     }
 }

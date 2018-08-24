@@ -41,7 +41,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{A4BB2C81-5232-4162-B410-704D123D2C01}"
 	ProjectSection(SolutionItems) = preProject
 		scripts\sql\createDb.sql = scripts\sql\createDb.sql
-		scripts\sql\monitorForDuplicateRules.sql = scripts\sql\monitorForDuplicateRules.sql
+		scripts\sql\getDuplicateRules.sql = scripts\sql\getDuplicateRules.sql
 		scripts\sql\resetSnapshotsRules.sql = scripts\sql\resetSnapshotsRules.sql
 		scripts\sql\snapshotTimeAnalysis.sql = scripts\sql\snapshotTimeAnalysis.sql
 	EndProjectSection
