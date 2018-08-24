@@ -15,6 +15,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.HttpStatusCode)
                              .HasColumnType("SMALLINT UNSIGNED")
                              .HasDefaultValueSql("NULL");
+            entityTypeBuilder.Property(x => x.WaybackTimestamp)
+                             .HasColumnType("TIMESTAMP");
         }
     }
 }
