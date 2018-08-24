@@ -8,11 +8,10 @@ namespace FilterLists.Services.FilterList.MappingProfiles
     [UsedImplicitly]
     public class ListSummaryDtoMappingProfile : Profile
     {
-        //TODO: fix UpdatedDate to look at most recent snapshot with changes
         public ListSummaryDtoMappingProfile() =>
             CreateMap<Data.Entities.FilterList, ListSummaryDto>()
-                .ForMember(d => d.Languages, c => c.MapFrom(l => l.FilterListLanguages.Select(la => la.Language)))
-                .ForMember(d => d.Tags, c => c.MapFrom(l => l.FilterListTags.Select(m => m.Tag)))
-                .ForMember(d => d.UpdatedDate, c => c.MapFrom(l => l.ModifiedDateUtc));
+                .ForMember(d => d.Languages, o => o.MapFrom(l => l.FilterListLanguages.Select(la => la.Language)))
+                .ForMember(d => d.Tags, o => o.MapFrom(l => l.FilterListTags.Select(m => m.Tag)))
+                .ForMember(d => d.UpdatedDate, o => o.MapFrom(l => l.ModifiedDateUtc));
     }
 }

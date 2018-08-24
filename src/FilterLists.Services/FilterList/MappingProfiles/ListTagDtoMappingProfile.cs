@@ -9,6 +9,6 @@ namespace FilterLists.Services.FilterList.MappingProfiles
     public class ListTagDtoMappingProfile : Profile
     {
         public ListTagDtoMappingProfile() =>
-            CreateMap<Tag, ListTagDto>().ForMember(d => d.ColorHex, c => c.MapFrom(m => TagColors.Colors[(int)m.Id]));
+            CreateMap<Tag, ListTagDto>().ForMember(d => d.ColorHex, o => o.MapFrom(m => TagColors.Colors[(int)m.Id]));
     }
 }
