@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
+using FilterLists.Services.Extensions;
 
 namespace FilterLists.Services.Snapshot
 {
@@ -38,7 +39,7 @@ namespace FilterLists.Services.Snapshot
         private void CreateSnapRules(IQueryable<Rule> rules)
         {
             var snapRules = rules.Select(r => new SnapshotRule {Rule = r}).ToList();
-            snapEntity.SnapshotRules = snapRules;
+            snapEntity.SnapshotRules.AddRange(snapRules);
         }
     }
 }
