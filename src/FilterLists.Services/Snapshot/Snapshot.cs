@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Data;
+using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Extensions;
 using FilterLists.Services.Snapshot.Models;
 using JetBrains.Annotations;
@@ -39,7 +40,7 @@ namespace FilterLists.Services.Snapshot
             this.dbContext = dbContext;
             List = list;
             ListUrl = list.ViewUrl;
-            SnapEntity = new Data.Entities.Snapshot {FilterListId = list.Id};
+            SnapEntity = new Data.Entities.Snapshot {FilterListId = list.Id, SnapshotRules = new List<SnapshotRule>()};
             this.uaString = uaString;
             telemetryClient = new TelemetryClient();
         }
