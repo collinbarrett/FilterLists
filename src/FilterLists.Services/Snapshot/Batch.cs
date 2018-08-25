@@ -20,11 +20,11 @@ namespace FilterLists.Services.Snapshot
             this.snapEntity = snapEntity;
         }
 
-        public async Task SaveAsync()
+        public void Save()
         {
             var rules = GetOrCreateRules();
             CreateSnapRules(rules);
-            await dbContext.SaveChangesAsync();
+            dbContext.SaveChanges();
         }
 
         private IQueryable<Rule> GetOrCreateRules()

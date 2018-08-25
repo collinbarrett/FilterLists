@@ -122,7 +122,7 @@ namespace FilterLists.Services.Snapshot
         private async Task SaveInBatches()
         {
             var snapBatches = await CreateBatches();
-            await SaveBatches(snapBatches);
+            SaveBatches(snapBatches);
         }
 
         private async Task<IEnumerable<Batch>> CreateBatches()
@@ -131,10 +131,10 @@ namespace FilterLists.Services.Snapshot
             return lines.Batch(SnapEntity.BatchSize.Value).Select(b => new Batch(dbContext, b, SnapEntity));
         }
 
-        private static async Task SaveBatches(IEnumerable<Batch> batches)
+        private static void SaveBatches(IEnumerable<Batch> batches)
         {
             foreach (var batch in batches)
-                await batch.SaveAsync();
+                batch.Save();
         }
 
         private async Task SetSuccessful()
