@@ -125,7 +125,7 @@ namespace FilterLists.Services.Snapshot
         private async Task<IEnumerable<Batch>> CreateBatches()
         {
             SnapEntity.BatchSize = await batchSizeService.GetBatchSize();
-            return lines.Batch(SnapEntity.BatchSize.Value).Select(b => new Batch(dbContext, b, SnapEntity));
+            return lines.Batch((int)SnapEntity.BatchSize.Value).Select(b => new Batch(dbContext, b, SnapEntity));
         }
 
         private static async Task SaveBatches(IEnumerable<Batch> batches)
