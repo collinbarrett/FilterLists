@@ -78,5 +78,10 @@
     "id": 16,
     "description": "Removes obstructing or annoying overlays",
     "name": "overlay"
+  },
+  {
+    "id": 17,
+    "description": "Intended for use in Internet Explorer",
+    "name": "ie"
   }
 ]
