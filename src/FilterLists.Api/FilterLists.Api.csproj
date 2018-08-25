@@ -29,6 +29,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Migrations\Extensions\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
