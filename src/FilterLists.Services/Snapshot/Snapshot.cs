@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading;
@@ -120,13 +121,20 @@ namespace FilterLists.Services.Snapshot
 
         private async Task SaveInBatches()
         {
+            var snapBatches = await CreateBatches();
+            SaveBatches(snapBatches);
+        }
+
+        private async Task<IEnumerable<Batch>> CreateBatches()
+        {
             SnapEntity.BatchSize = await batchSizeService.GetBatchSize();
-            var lineBatches = lines.Batch(SnapEntity.BatchSize.Value);
-            foreach (var lineBatch in lineBatches)
-            {
-                var batch = new Batch(dbContext, lineBatch, SnapEntity);
+            return lines.Batch(SnapEntity.BatchSize.Value).Select(b => new Batch(dbContext, b, SnapEntity));
+        }
+
+        private static void SaveBatches(IEnumerable<Batch> batches)
+        {
+            foreach (var batch in batches)
                 batch.Save();
-            }
         }
 
         private async Task SetSuccessful()
