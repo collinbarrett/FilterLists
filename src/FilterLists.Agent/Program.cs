@@ -16,7 +16,7 @@ namespace FilterLists.Agent
         private static ServiceProvider serviceProvider;
         private static SnapshotService snapshotService;
         private static Logger logger;
-        private static readonly TimeSpan OneHourTimeout = TimeSpan.FromHours(1);
+        private static readonly TimeSpan Timeout = TimeSpan.FromHours(6);
 
         public static async Task Main()
         {
@@ -45,7 +45,7 @@ namespace FilterLists.Agent
             {
                 try
                 {
-                    await CaptureSnapshots(BatchSize).TimeoutAfter(OneHourTimeout);
+                    await CaptureSnapshots(BatchSize).TimeoutAfter(Timeout);
                 }
                 catch (TimeoutException)
                 {
