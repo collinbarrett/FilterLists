@@ -1,0 +1,4 @@
+SELECT Raw, COUNT(*) 'Count'
+FROM rules
+GROUP BY Raw
+HAVING COUNT > 1;
