@@ -13,7 +13,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.Id)
                              .HasColumnType("MEDIUMINT UNSIGNED");
             entityTypeBuilder.Property(x => x.BatchSize)
-                             .HasColumnType("SMALLINT")
+                             .HasColumnType("MEDIUMINT")
                              .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.HttpStatusCode)
                              .HasColumnType("SMALLINT")
