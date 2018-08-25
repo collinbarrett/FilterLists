@@ -16,13 +16,13 @@ namespace FilterLists.Services.Snapshot
         {
         }
 
-        public async Task<uint> GetBatchSize()
+        public async Task<int> GetBatchSize()
         {
             var recentSnapPerfs = await GetRecentSnapPerfs();
             return recentSnapPerfs.Count == 2
                 ? (recentSnapPerfs[0].RulesPerMs >= recentSnapPerfs[1].RulesPerMs
-                    ? (uint)Math.Round(recentSnapPerfs[0].BatchSize * (1 + PercentMultiplier))
-                    : (uint)Math.Round(recentSnapPerfs[0].BatchSize * (1 - PercentMultiplier)))
+                    ? (int)Math.Round(recentSnapPerfs[0].BatchSize * (1 + PercentMultiplier))
+                    : (int)Math.Round(recentSnapPerfs[0].BatchSize * (1 - PercentMultiplier)))
                 : DefaultBatchSize;
         }
 
@@ -42,7 +42,7 @@ namespace FilterLists.Services.Snapshot
 
         private class SnapshotPerformance
         {
-            public uint BatchSize { get; set; }
+            public int BatchSize { get; set; }
             public int RulesCount { private get; set; }
             public DateTime CreatedDateUtc { private get; set; }
             public DateTime ModifiedDateUtc { private get; set; }

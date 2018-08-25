@@ -400,9 +400,9 @@ namespace FilterLists.Api.Migrations
                  .HasColumnType("MEDIUMINT UNSIGNED")
                  .HasAnnotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn);
 
-                b.Property<uint?>("BatchSize")
+                b.Property<short?>("BatchSize")
                  .ValueGeneratedOnAdd()
-                 .HasColumnType("MEDIUMINT UNSIGNED")
+                 .HasColumnType("SMALLINT")
                  .HasDefaultValueSql("NULL");
 
                 b.Property<DateTime?>("CreatedDateUtc")
