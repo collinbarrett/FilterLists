@@ -14,7 +14,6 @@ namespace FilterLists.Services.Snapshot
     public class SnapshotService : Service
     {
         private readonly BatchSizeService batchSizeService;
-        private readonly DateTime yesterday = DateTime.UtcNow.AddDays(-1);
         private string uaString;
 
         public SnapshotService(FilterListsDbContext dbContext, IConfigurationProvider mapConfig,
@@ -35,17 +34,8 @@ namespace FilterLists.Services.Snapshot
                   .FilterLists
                   .Where(l => !l.CantSnapshot &&
                               !(l.ViewUrl.StartsWith(WaybackService.WaybackMachineUrlPrefix) &&
-                                l.Snapshots.Any(s => s.WasSuccessful)) &&
-                              (!l.Snapshots.Any() ||
-                               l.Snapshots
-                                .Select(s => s.CreatedDateUtc)
-                                .OrderByDescending(d => d)
-                                .First() < yesterday))
+                                l.Snapshots.Any(s => s.WasSuccessful)))
                   .OrderBy(l => l.Snapshots.Any())
-                  .ThenBy(l => l.Snapshots
-                                .OrderByDescending(s => s.CreatedDateUtc)
-                                .FirstOrDefault()
-                                .WasSuccessful)
                   .ThenBy(l => l.Snapshots
                                 .Select(s => s.CreatedDateUtc)
                                 .OrderByDescending(d => d)
