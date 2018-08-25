@@ -31,6 +31,15 @@ export default class ListDetails extends React.Component<any, any> {
               </div>
             : <div>Loading...</div>;
     }
+
+    //https://stackoverflow.com/a/11868398/2343739
+    public static getContrast(hexcolor: string) {
+        const r = parseInt(hexcolor.substr(0, 2), 16);
+        const g = parseInt(hexcolor.substr(2, 2), 16);
+        const b = parseInt(hexcolor.substr(4, 2), 16);
+        const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        return (yiq >= 128) ? "black" : "white";
+    }
 }
 
 function FilterListDetails(props: any) {
@@ -51,6 +60,7 @@ function FilterListDetails(props: any) {
 
 function ListInfo(props: any) {
     return <div className="col-9">
+               <Tags tags={props.details.tags}/>
                <Description description={props.details.description} url={props.details.descriptionSourceUrl}/>
                <ul className="list-group list-group-flush">
                    <Languages languages={props.details.languages}/>
@@ -76,6 +86,16 @@ function ListUrls(props: any) {
                <SubmissionUrl url={props.details.submissionUrl} name={props.details.name}/>
                <EmailAddress email={props.details.emailAddress} name={props.details.name}/>
            </div>;
+}
+
+function Tags(props: any) {
+    return props.tags.length > 0
+        ? <div className="d-block d-sm-none">{props.tags.map(
+            (tag: any) => <span className="badge" style={{
+                backgroundColor: `#${tag.colorHex}`,
+                color: ListDetails.getContrast(`${tag.colorHex}`)
+            }} title={tag.description}>{tag.name}</span>)}</div>
+        : null;
 }
 
 function Description(props: any) {
@@ -318,6 +338,7 @@ interface IFilterListDetailsDto {
     ruleCount: number;
     submissionUrl: string;
     syntax: IListSyntaxDto[];
+    tags: IListTagDto[];
     updatedDate: string;
     viewUrl: string;
 }
@@ -345,6 +366,12 @@ interface IListSyntaxDto {
     definitionUrl: string;
     name: string;
     supportedSoftware: ISyntaxSupportedSoftwareDto[];
+}
+
+interface IListTagDto {
+    name: string;
+    colorHex: string;
+    description: string;
 }
 
 interface ISyntaxSupportedSoftwareDto {
