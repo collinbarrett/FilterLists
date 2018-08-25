@@ -199,9 +199,15 @@ interface IListTagDto {
 }
 
 function SubscribeUrl(props: any) {
-    return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+    return props.url.indexOf("web.archive.org") !== -1
+        ? (<a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+              className="btn btn-secondary btn-block"
+              title={"Archive.org Mirror (Original Offline) - Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus)."}>
+               Subscribe
+           </a>)
+        : (<a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
               className="btn btn-primary btn-block"
               title={"Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus)."}>
                Subscribe
-           </a>;
+           </a>);
 }
