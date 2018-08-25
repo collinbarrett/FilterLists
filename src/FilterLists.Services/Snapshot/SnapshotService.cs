@@ -34,13 +34,13 @@ namespace FilterLists.Services.Snapshot
             await DbContext
                   .FilterLists
                   .Where(l => !l.CantSnapshot &&
+                              !(l.ViewUrl.StartsWith(WaybackService.WaybackMachineUrlPrefix) &&
+                                l.Snapshots.Any(s => s.WasSuccessful)) &&
                               (!l.Snapshots.Any() ||
                                l.Snapshots
                                 .Select(s => s.CreatedDateUtc)
                                 .OrderByDescending(d => d)
-                                .First() < yesterday &&
-                               !l.ViewUrl
-                                 .StartsWith(WaybackService.WaybackMachineUrlPrefix)))
+                                .First() < yesterday))
                   .OrderBy(l => l.Snapshots.Any())
                   .ThenBy(l => l.Snapshots
                                 .OrderByDescending(s => s.CreatedDateUtc)
