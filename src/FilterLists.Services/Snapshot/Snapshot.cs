@@ -25,6 +25,7 @@ namespace FilterLists.Services.Snapshot
         private readonly string uaString;
         private HashSet<string> lines;
         protected string ListUrl;
+        private bool wasWebException;
 
         public Snapshot()
         {
@@ -43,7 +44,7 @@ namespace FilterLists.Services.Snapshot
             telemetryClient = new TelemetryClient();
         }
 
-        public bool WasSuccessful => SnapEntity.WasSuccessful;
+        public bool RetryMirror => !SnapEntity.WasSuccessful && wasWebException;
 
         public virtual async Task TrySaveAsync() => await TrySaveAsyncBase();
 
@@ -86,11 +87,13 @@ namespace FilterLists.Services.Snapshot
             }
             catch (HttpRequestException hre)
             {
+                wasWebException = true;
                 await dbContext.SaveChangesAsync();
                 TrackException(hre);
             }
             catch (WebException we)
             {
+                wasWebException = true;
                 SnapEntity.HttpStatusCode = (int)((HttpWebResponse)we.Response).StatusCode;
                 await dbContext.SaveChangesAsync();
                 TrackException(we);
