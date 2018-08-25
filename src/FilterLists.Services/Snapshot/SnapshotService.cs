@@ -39,10 +39,7 @@ namespace FilterLists.Services.Snapshot
                                 .Select(s => s.CreatedDateUtc)
                                 .OrderByDescending(d => d)
                                 .First() < yesterday &&
-                               !l.Snapshots
-                                 .First()
-                                 .FilterList
-                                 .ViewUrl
+                               !l.ViewUrl
                                  .StartsWith(WaybackService.WaybackMachineUrlPrefix)))
                   .OrderBy(l => l.Snapshots.Any())
                   .ThenBy(l => l.Snapshots
