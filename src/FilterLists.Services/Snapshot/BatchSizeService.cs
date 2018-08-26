@@ -9,7 +9,7 @@ namespace FilterLists.Services.Snapshot
 {
     public class BatchSizeService : Service
     {
-        private const int DefaultBatchSize = 10000;
+        private const int DefaultBatchSize = 1000;
         private const float PercentMultiplier = 0.05F;
 
         public BatchSizeService(FilterListsDbContext dbContext) : base(dbContext)
