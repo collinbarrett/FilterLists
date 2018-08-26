@@ -9,7 +9,7 @@ namespace FilterLists.Services.Snapshot
 {
     public class BatchSizeService : Service
     {
-        private const int DefaultBatchSize = 500;
+        private const int DefaultBatchSize = 10000;
         private const float PercentMultiplier = 0.05F;
 
         public BatchSizeService(FilterListsDbContext dbContext) : base(dbContext)
@@ -18,6 +18,7 @@ namespace FilterLists.Services.Snapshot
 
         public async Task<int> GetBatchSize()
         {
+            return DefaultBatchSize;
             var recentSnapPerfs = await GetRecentSnapPerfs();
             return recentSnapPerfs.Count == 2
                 ? recentSnapPerfs[0].RulesCount > recentSnapPerfs[0].BatchSize
