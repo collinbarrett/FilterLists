@@ -674,5 +674,13 @@
   {
     "filterListId": 437,
     "languageId": 13
+  },
+  {
+    "filterListId": 479,
+    "languageId": 11
+  },
+  {
+    "filterListId": 480,
+    "languageId": 79
   }
 ]
