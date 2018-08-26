@@ -81,7 +81,7 @@
   },
   {
     "id": 17,
-    "description": "Intended for use in Internet Explorer",
+    "description": "Intended for use with Internet Explorer's TPL feature",
     "name": "ie"
   }
 ]
