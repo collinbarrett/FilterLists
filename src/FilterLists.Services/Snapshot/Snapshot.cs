@@ -122,13 +122,13 @@ namespace FilterLists.Services.Snapshot
 
         private async Task SaveInBatches()
         {
-            var snapBatches = await CreateBatches();
+            var snapBatches = CreateBatches();
             await SaveBatches(snapBatches);
         }
 
-        private async Task<IEnumerable<Batch>> CreateBatches()
+        private IEnumerable<Batch> CreateBatches()
         {
-            SnapEntity.BatchSize = await batchSizeService.GetBatchSize();
+            SnapEntity.BatchSize = batchSizeService.GetBatchSize();
             return lines.Batch(SnapEntity.BatchSize.Value).Select(b => new Batch(dbContext, b, SnapEntity));
         }
 
