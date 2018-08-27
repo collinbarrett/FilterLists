@@ -390,5 +390,49 @@
   {
     "filterListId": 507,
     "tagId": 17
+  },
+  {
+    "filterListId": 30,
+    "tagId": 9
+  },
+  {
+    "filterListId": 349,
+    "tagId": 9
+  },
+  {
+    "filterListId": 60,
+    "tagId": 7
+  },
+  {
+    "filterListId": 61,
+    "tagId": 7
+  },
+  {
+    "filterListId": 508,
+    "tagId": 7
+  },
+  {
+    "filterListId": 223,
+    "tagId": 2
+  },
+  {
+    "filterListId": 345,
+    "tagId": 2
+  },
+  {
+    "filterListId": 84,
+    "tagId": 2
+  },
+  {
+    "filterListId": 315,
+    "tagId": 3
+  },
+  {
+    "filterListId": 315,
+    "tagId": 2
+  },
+  {
+    "filterListId": 315,
+    "tagId": 15
   }
 ]
