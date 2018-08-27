@@ -22,11 +22,18 @@ namespace FilterLists.Services.Snapshot
 
         public async Task CaptureAsync(int batchSize)
         {
+            await CleanupFailedSnapshots();
             uaString = await UserAgentService.GetMostPopularString();
             var lists = await GetListsToCapture(batchSize);
             var snaps = await CreateAndSaveSnaps<Snapshot>(lists);
             var listsToRetry = snaps.Where(s => s.RetryMirror).Select(s => s.List);
             await CreateAndSaveSnaps<SnapshotWayback>(listsToRetry);
+        }
+
+        private async Task CleanupFailedSnapshots()
+        {
+            DbContext.RemoveRange(DbContext.SnapshotRules.Where(sr => !sr.Snapshot.WasSuccessful));
+            await DbContext.SaveChangesAsync();
         }
 
         private async Task<IEnumerable<FilterListViewUrlDto>> GetListsToCapture(int batchSize) =>
