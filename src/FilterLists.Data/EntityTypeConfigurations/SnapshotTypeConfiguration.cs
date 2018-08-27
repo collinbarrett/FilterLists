@@ -12,9 +12,6 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.ToTable("snapshots");
             entityTypeBuilder.Property(x => x.Id)
                              .HasColumnType("MEDIUMINT UNSIGNED");
-            entityTypeBuilder.Property(x => x.BatchSize)
-                             .HasColumnType("MEDIUMINT")
-                             .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.HttpStatusCode)
                              .HasColumnType("SMALLINT")
                              .HasDefaultValueSql("NULL");

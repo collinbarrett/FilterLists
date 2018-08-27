@@ -6,7 +6,6 @@ namespace FilterLists.Data.Entities
 {
     public class Snapshot : BaseEntity
     {
-        public int? BatchSize { get; set; }
         public uint FilterListId { get; set; }
         public FilterList FilterList { get; set; }
         public int? HttpStatusCode { get; set; }
