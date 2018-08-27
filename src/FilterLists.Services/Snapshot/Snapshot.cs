@@ -18,7 +18,7 @@ namespace FilterLists.Services.Snapshot
 {
     public class Snapshot
     {
-        private readonly BatchSizeService batchSizeService;
+        private const int BatchSize = 1000;
         private readonly FilterListsDbContext dbContext;
         public readonly FilterListViewUrlDto List;
         protected readonly Data.Entities.Snapshot SnapEntity;
@@ -33,10 +33,9 @@ namespace FilterLists.Services.Snapshot
         }
 
         [UsedImplicitly]
-        public Snapshot(BatchSizeService batchSizeService, FilterListsDbContext dbContext, FilterListViewUrlDto list,
+        public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list,
             string uaString)
         {
-            this.batchSizeService = batchSizeService;
             this.dbContext = dbContext;
             List = list;
             ListUrl = list.ViewUrl;
@@ -126,11 +125,8 @@ namespace FilterLists.Services.Snapshot
             await SaveBatches(snapBatches);
         }
 
-        private IEnumerable<Batch> CreateBatches()
-        {
-            SnapEntity.BatchSize = BatchSizeService.GetBatchSize();
-            return lines.Batch(SnapEntity.BatchSize.Value).Select(b => new Batch(dbContext, b, SnapEntity));
-        }
+        private IEnumerable<Batch> CreateBatches() =>
+            lines.Batch(BatchSize).Select(b => new Batch(dbContext, b, SnapEntity));
 
         private static async Task SaveBatches(IEnumerable<Batch> batches)
         {

@@ -33,7 +33,6 @@ namespace FilterLists.Services.DependencyInjection.Extensions
                         o.UseMySql(config.GetConnectionString("FilterListsConnection"),
                             m => m.MigrationsAssembly("FilterLists.Api")));
             services.TryAddScoped<SnapshotService>();
-            services.TryAddScoped<BatchSizeService>();
             services.AddAutoMapper();
         }
     }
