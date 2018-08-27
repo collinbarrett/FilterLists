@@ -33,6 +33,7 @@ namespace FilterLists.Services.Snapshot
         private async Task CleanupFailedSnapshots()
         {
             DbContext.RemoveRange(DbContext.SnapshotRules.Where(sr => !sr.Snapshot.WasSuccessful));
+            DbContext.RemoveRange(DbContext.Rules.Where(r => !r.SnapshotRules.Any()));
             await DbContext.SaveChangesAsync();
         }
 
