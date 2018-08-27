@@ -553,7 +553,7 @@
   {
     "id": 30,
     "chatUrl": "https://discord.me/polskiefiltry",
-    "description": "Filters that hide and block pop-ups, widgets, newsletters, push notifications, arrows and other irritating elements on Polish websites (include Polish Cookies Filters).",
+    "description": "Filters that hide and block pop-ups, widgets, newsletters, push notifications, arrows and other irritating elements on Polish websites (include Polish GDPR-Cookies Filters).",
     "descriptionSourceUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -1135,7 +1135,7 @@
     "name": "KAD Hosts File",
     "policyUrl": null,
     "publishedDate": null,
-    "submissionUrl": null,
+    "submissionUrl": "https://azet12.github.io/KAD/informacje.html#form1-35",
     "syntaxId": null,
     "viewUrl": "https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt"
   },
@@ -1154,7 +1154,7 @@
     "name": "KAD - Scams",
     "policyUrl": null,
     "publishedDate": null,
-    "submissionUrl": null,
+    "submissionUrl": "https://azet12.github.io/KAD/informacje.html#form1-35",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt"
   },
@@ -4220,7 +4220,7 @@
   {
     "id": 224,
     "chatUrl": "https://discord.me/polskiefiltry",
-    "description": "Filters that hide and block messages about cookies and privacy policy on Polish websites.",
+    "description": "Filters that hide and block messages about cookies and GDPR/privacy policy on Polish websites.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": "https://patronite.pl/polskiefiltry",
@@ -4229,7 +4229,7 @@
     "homeUrl": "https://www.certyficate.it/",
     "issuesUrl": "https://github.com/MajkiIT/polish-ads-filter/issues",
     "licenseId": 9,
-    "name": "Polish Cookies Filters",
+    "name": "Polish GDPR-Cookies Filters",
     "policyUrl": null,
     "publishedDate": "2017-11-12T00:00:00",
     "submissionUrl": null,
@@ -5952,7 +5952,7 @@
     "description": "Filters, which makes easer to use of the largest Polish trading platforms like Allegro, Ceneo, eBay, OLX and Sprzedajemy and other, blocking unnecessary, annoying and potentially dangerous elements - ads, sponsored articles, or scripts that track user's activities. They enable simpler and faster use of supported websites without limiting their functionality, while increasing the privacy of buyers and sellers.",
     "descriptionSourceUrl": "https://alleblock.pl/",
     "discontinuedDate": null,
-    "donateUrl": null,
+    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RN7R64TJLWQW6",
     "emailAddress": "blablabla@alleblock.pl",
     "forumUrl": null,
     "homeUrl": "https://alleblock.pl/",
@@ -6481,7 +6481,7 @@
   {
     "id": 343,
     "chatUrl": "https://discord.me/polskiefiltry",
-    "description": "uBlock Origin & AdGuard supplement list for Polish Cookies Filters.",
+    "description": "uBlock Origin & AdGuard supplement list for Polish GDPR-Cookies Filters.",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": "https://patronite.pl/polskiefiltry",
@@ -6490,7 +6490,7 @@
     "homeUrl": "https://www.certyficate.it/",
     "issuesUrl": "https://github.com/MajkiIT/polish-ads-filter/issues",
     "licenseId": 9,
-    "name": "Polish Cookies Filters - Supplement for uBlock & AdGuard",
+    "name": "Polish GDPR-Cookies Filters - Supplement for uBlock & AdGuard",
     "policyUrl": null,
     "publishedDate": "2018-01-12T00:00:00",
     "submissionUrl": null,
@@ -9441,5 +9441,24 @@
     "submissionUrl": null,
     "syntaxId": null,
     "viewUrl": "https://easylist-msie.adblockplus.org/easylist.tpl"
+  },
+  {
+    "id": 508,
+    "chatUrl": null,
+    "description": "Whitelist of section with promotion of fake science/news. More at: https://github.com/azet12/KAD/issues/649.",
+    "descriptionSourceUrl": "https://github.com/azet12/KAD",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": "kadrep@outlook.com",
+    "forumUrl": null,
+    "homeUrl": "https://azet12.github.io/KAD/",
+    "issuesUrl": "https://github.com/azet12/KAD/issues",
+    "licenseId": 8,
+    "name": "KAD - The Whitelist of the Controversial Pages",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": "https://azet12.github.io/KAD/informacje.html#form1-35",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt"
   }
 ]
