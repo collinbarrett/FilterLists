@@ -11,7 +11,6 @@ namespace FilterLists.Data.EntityTypeConfigurations.Junctions
             entityTypeBuilder.Property(x => x.CreatedDateUtc)
                              .HasColumnType("TIMESTAMP")
                              .ValueGeneratedOnAdd()
-                             .IsRequired()
                              .HasDefaultValueSql("current_timestamp()");
     }
 }
