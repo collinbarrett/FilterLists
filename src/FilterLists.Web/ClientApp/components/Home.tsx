@@ -104,8 +104,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                    color: ListDetails.getContrast(`${e.colorHex}`)
                                }} title={e.description}>{e.name}</span>)}</div>,
                            width: 100,
-                           headerClassName: "d-sm-none d-md-block",
-                           className: "d-sm-none d-md-block"
+                           headerClassName: "d-none d-lg-block",
+                           className: "d-none d-lg-block"
                        },
                        {
                            Header: "Langs.",
@@ -119,8 +119,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                <div>{cell.value.map((e: any) => e.iso6391).join(", ")}</div>,
                            style: { whiteSpace: "inherit" },
                            width: 60,
-                           headerClassName: "d-sm-none d-md-block",
-                           className: "d-sm-none d-md-block"
+                           headerClassName: "d-none d-lg-block",
+                           className: "d-none d-lg-block"
                        },
                        //{
                        //    Header: "Updated",
@@ -135,8 +135,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                        //        : "N/A"}</div>,
                        //    style: { whiteSpace: "inherit" },
                        //    width: 100,
-                       //    headerClassName: "d-sm-none d-md-block",
-                       //    className: "d-sm-none d-md-block"
+                       //    headerClassName: "d-none d-lg-block",
+                       //    className: "d-none d-lg-block"
                        //},
                        {
                            Header: "Details",
@@ -165,8 +165,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            Cell: (cell: any) => <SubscribeUrl url={cell.value} name={cell.row.name}/>,
                            style: { textAlign: "center" },
                            width: 105,
-                           headerClassName: "d-sm-none d-md-block",
-                           className: "d-sm-none d-md-block"
+                           headerClassName: "d-none d-lg-block",
+                           className: "d-none d-lg-block"
                        }
                    ]}
                    SubComponent={(row: any) => {
