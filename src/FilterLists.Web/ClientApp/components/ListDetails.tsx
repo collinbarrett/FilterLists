@@ -168,30 +168,69 @@ function License(props: any) {
 }
 
 function SubscribeUrl(props: any) {
-    return props.url.indexOf("web.archive.org") !== -1
-        ? (<a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-              className="d-block d-sm-none btn btn-secondary fl-btn-details-action"
-              title={"Archive.org Mirror (Original Offline) - Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus)."}>
-               Subscribe
-           </a>)
-        : (<a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-              className="d-block d-sm-none btn btn-primary fl-btn-details-action"
-              title={"Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus)."}>
-               Subscribe
-           </a>);
-}
+    const titleBase = "Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).";
+    return props.url.indexOf("https://") === -1
+        ? SubscribeUrlNotSecure()
+        : props.url.indexOf("web.archive.org") === -1
+            ? SubscribeUrlPrimary()
+            : SubscribeUrlWayback();
+
+    function SubscribeUrlPrimary() {
+        return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+                  className="d-block d-sm-none btn btn-primary btn-block fl-btn-details-action"
+                  title={titleBase}>
+                   Subscribe
+               </a>;
+    }
+
+    function SubscribeUrlWayback() {
+        return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+                  className="d-block d-sm-none btn btn-secondary btn-block fl-btn-details-action"
+                  title={`Archive.org Mirror (Original Offline) - ${{ titleBase }}`}>
+                   Subscribe
+               </a>;
+    }
+
+    function SubscribeUrlNotSecure() {
+        return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+                  className="d-block d-sm-none btn btn-warning btn-block fl-btn-details-action"
+                  title={`Not Secure - ${{ titleBase }}`}>
+                   Subscribe
+               </a>;
+    }
+};
 
 function ViewUrl(props: any) {
-    return props.url.indexOf("web.archive.org") !== -1
-        ? (<a href={props.url} className="btn btn-secondary fl-btn-details-action"
-              title={`Archive.org Mirror (Original Offline) - View ${props.name} in its raw format.`}>
-               View
-           </a>)
-        : (<a href={props.url} className="btn btn-primary fl-btn-details-action"
-              title={`View ${props.name} in its raw format.`}>
-               View
-           </a>);
-}
+    return props.url.indexOf("https://") === -1
+        ? ViewUrlNotSecure()
+        : props.url.indexOf("web.archive.org") === -1
+            ? ViewUrlPrimary()
+            : ViewUrlWayback();
+
+    function ViewUrlPrimary() {
+        return <a href={props.url}
+                  className="btn btn-primary fl-btn-details-action"
+                  title={`View ${props.name} in its raw format.`}>
+                   View
+               </a>;
+    }
+
+    function ViewUrlWayback() {
+        return <a href={props.url}
+                  className="btn btn-secondary fl-btn-details-action"
+                  title={`Archive.org Mirror (Original Offline) - View ${props.name} in its raw format.`}>
+                   View
+               </a>;
+    }
+
+    function ViewUrlNotSecure() {
+        return <a href={props.url}
+                  className="btn btn-warning fl-btn-details-action"
+                  title={`Not Secure - View ${props.name} in its raw format.`}>
+                   View
+               </a>;
+    }
+};
 
 function HomeUrl(props: any) {
     return props.url

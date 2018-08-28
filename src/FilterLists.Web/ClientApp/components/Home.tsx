@@ -199,15 +199,34 @@ interface IListTagDto {
 }
 
 function SubscribeUrl(props: any) {
-    return props.url.indexOf("web.archive.org") !== -1
-        ? (<a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-              className="btn btn-secondary btn-block"
-              title={"Archive.org Mirror (Original Offline) - Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus)."}>
-               Subscribe
-           </a>)
-        : (<a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-              className="btn btn-primary btn-block"
-              title={"Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus)."}>
-               Subscribe
-           </a>);
-}
+    const titleBase = "Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).";
+    return props.url.indexOf("https://") === -1
+        ? SubscribeUrlNotSecure()
+        : props.url.indexOf("web.archive.org") === -1
+            ? SubscribeUrlPrimary()
+            : SubscribeUrlWayback();
+
+    function SubscribeUrlPrimary() {
+        return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+                  className="btn btn-primary btn-block"
+                  title={titleBase}>
+                   Subscribe
+               </a>;
+    }
+
+    function SubscribeUrlWayback() {
+        return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+                  className="btn btn-secondary btn-block"
+                  title={`Archive.org Mirror (Original Offline) - ${{ titleBase }}`}>
+                   Subscribe
+               </a>;
+    }
+
+    function SubscribeUrlNotSecure() {
+        return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+                  className="btn btn-warning btn-block"
+                  title={`Not Secure - ${{ titleBase }}` }>
+                   Subscribe
+               </a>;
+    }
+};
