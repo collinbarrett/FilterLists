@@ -13,6 +13,7 @@
     <PackageIconUrl>https://github.com/collinbarrett/FilterLists/raw/master/imgs/icon_filterlists.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <ServerGarbageCollection>false</ServerGarbageCollection>
   </PropertyGroup>
 
   <ItemGroup>
