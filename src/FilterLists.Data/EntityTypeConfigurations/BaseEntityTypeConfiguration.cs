@@ -14,10 +14,12 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.CreatedDateUtc)
                              .HasColumnType("TIMESTAMP")
                              .ValueGeneratedOnAdd()
+                             .IsRequired()
                              .HasDefaultValueSql("current_timestamp()");
             entityTypeBuilder.Property(x => x.ModifiedDateUtc)
                              .HasColumnType("TIMESTAMP")
                              .ValueGeneratedOnAddOrUpdate()
+                             .IsRequired()
                              .HasDefaultValueSql("current_timestamp() ON UPDATE current_timestamp()");
         }
     }

@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using FilterLists.Api.DependencyInjection.Extensions;
 using FilterLists.Data;
-using FilterLists.Data.Extensions;
+using FilterLists.Data.Seed.Extensions;
 using FilterLists.Services.DependencyInjection.Extensions;
 using JetBrains.Annotations;
 using Microsoft.AspNetCore.Builder;
@@ -17,14 +17,14 @@ namespace FilterLists.Api
     [UsedImplicitly]
     public class Startup
     {
-        public Startup(IConfiguration configuration) => Config = configuration;
+        public Startup(IConfiguration configuration) => Configuration = configuration;
 
-        private IConfiguration Config { get; }
+        private IConfiguration Configuration { get; }
 
         [UsedImplicitly]
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddFilterListsApiServices(Config);
+            services.AddFilterListsApiServices(Configuration);
             services.AddFilterListsApi();
         }
 
@@ -79,11 +79,12 @@ namespace FilterLists.Api
 
         private void MigrateAndSeedDatabase(IApplicationBuilder app)
         {
-            ModelBuilderExtensions.DataPath = Config.GetSection("DataDirectory").GetValue<string>("Path");
+            var dataPath = Configuration.GetSection("DataDirectory").GetValue<string>("Path");
             using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
                 var filterListsDbContext = serviceScope.ServiceProvider.GetService<FilterListsDbContext>();
                 filterListsDbContext.Database.Migrate();
+                filterListsDbContext.SeedOrUpdate(dataPath);
             }
         }
     }
