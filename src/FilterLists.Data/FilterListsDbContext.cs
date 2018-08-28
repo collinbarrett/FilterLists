@@ -2,6 +2,7 @@
 using FilterLists.Data.Entities.Junctions;
 using FilterLists.Data.EntityTypeConfigurations;
 using FilterLists.Data.EntityTypeConfigurations.Junctions;
+using FilterLists.Data.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Data
@@ -34,6 +35,7 @@ namespace FilterLists.Data
         {
             base.OnModelCreating(modelBuilder);
             ApplyConfigurations(modelBuilder);
+            ApplySeed(modelBuilder);
         }
 
         private static void ApplyConfigurations(ModelBuilder modelBuilder)
@@ -55,6 +57,24 @@ namespace FilterLists.Data
             modelBuilder.ApplyConfiguration(new MergeTypeConfiguration());
             modelBuilder.ApplyConfiguration(new SnapshotRuleTypeConfiguration());
             modelBuilder.ApplyConfiguration(new SoftwareSyntaxTypeConfiguration());
+        }
+
+        private static void ApplySeed(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Seed<Language>();
+            modelBuilder.Seed<License>();
+            modelBuilder.Seed<Maintainer>();
+            modelBuilder.Seed<Software>();
+            modelBuilder.Seed<Syntax>();
+            modelBuilder.Seed<Tag>();
+            modelBuilder.Seed<FilterList>();
+
+            modelBuilder.Seed<FilterListLanguage>();
+            modelBuilder.Seed<FilterListMaintainer>();
+            modelBuilder.Seed<FilterListTag>();
+            modelBuilder.Seed<Fork>();
+            modelBuilder.Seed<Merge>();
+            modelBuilder.Seed<SoftwareSyntax>();
         }
     }
 }
