@@ -128,14 +128,6 @@
     "tagId": 2
   },
   {
-    "filterListId": 223,
-    "tagId": 4
-  },
-  {
-    "filterListId": 224,
-    "tagId": 4
-  },
-  {
     "filterListId": 224,
     "tagId": 8
   },
@@ -449,6 +441,6 @@
   },
   {
     "filterListId": 508,
-    "tagId": 7
+    "tagId": 10
   }
 ]
