@@ -192,7 +192,7 @@ function SubscribeUrl(props: any) {
 
     function SubscribeUrlNotSecure() {
         return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-                  className="d-block d-sm-none btn btn-warning btn-block fl-btn-details-action"
+                  className="d-block d-sm-none btn btn-danger btn-block fl-btn-details-action"
                   title={`Not Secure - Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).`}>
                    Subscribe
                </a>;
@@ -224,7 +224,7 @@ function ViewUrl(props: any) {
 
     function ViewUrlNotSecure() {
         return <a href={props.url}
-                  className="btn btn-warning fl-btn-details-action"
+                  className="btn btn-danger fl-btn-details-action"
                   title={`Not Secure - View ${props.name} in its raw format.`}>
                    View
                </a>;

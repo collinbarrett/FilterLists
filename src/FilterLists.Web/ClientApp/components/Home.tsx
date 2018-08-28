@@ -223,7 +223,7 @@ function SubscribeUrl(props: any) {
 
     function SubscribeUrlNotSecure() {
         return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-                  className="btn btn-warning btn-block"
+                  className="btn btn-danger btn-block"
                   title={`Not Secure - Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).`}>
                    Subscribe
                </a>;
