@@ -199,7 +199,6 @@ interface IListTagDto {
 }
 
 function SubscribeUrl(props: any) {
-    const titleBase = "Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).";
     return props.url.indexOf("https://") === -1
         ? SubscribeUrlNotSecure()
         : props.url.indexOf("web.archive.org") === -1
@@ -209,7 +208,7 @@ function SubscribeUrl(props: any) {
     function SubscribeUrlPrimary() {
         return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
                   className="btn btn-primary btn-block"
-                  title={titleBase}>
+                  title={`Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).`}>
                    Subscribe
                </a>;
     }
@@ -217,7 +216,7 @@ function SubscribeUrl(props: any) {
     function SubscribeUrlWayback() {
         return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
                   className="btn btn-secondary btn-block"
-                  title={`Archive.org Mirror (Original Offline) - ${{ titleBase }}`}>
+                  title={`Archive.org Mirror (Original Offline) - Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).`}>
                    Subscribe
                </a>;
     }
@@ -225,7 +224,7 @@ function SubscribeUrl(props: any) {
     function SubscribeUrlNotSecure() {
         return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
                   className="btn btn-warning btn-block"
-                  title={`Not Secure - ${{ titleBase }}` }>
+                  title={`Not Secure - Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).`}>
                    Subscribe
                </a>;
     }
