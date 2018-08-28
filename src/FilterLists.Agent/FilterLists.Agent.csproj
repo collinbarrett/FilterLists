@@ -14,6 +14,7 @@
     <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://filterlists.com/</PackageProjectUrl>
+    <ServerGarbageCollection>false</ServerGarbageCollection>
   </PropertyGroup>
 
   <ItemGroup>
