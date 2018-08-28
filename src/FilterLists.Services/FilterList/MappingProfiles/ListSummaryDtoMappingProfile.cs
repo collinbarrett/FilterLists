@@ -12,6 +12,13 @@ namespace FilterLists.Services.FilterList.MappingProfiles
             CreateMap<Data.Entities.FilterList, ListSummaryDto>()
                 .ForMember(d => d.Languages, o => o.MapFrom(l => l.FilterListLanguages.Select(la => la.Language)))
                 .ForMember(d => d.Tags, o => o.MapFrom(l => l.FilterListTags.Select(m => m.Tag)))
-                .ForMember(d => d.UpdatedDate, o => o.MapFrom(l => l.ModifiedDateUtc));
+                .ForMember(d => d.UpdatedDate, o => o.MapFrom(l => l.ModifiedDateUtc))
+                .ForMember(d => d.ViewUrl,
+                    o => o.MapFrom(l =>
+                        l.Snapshots
+                         .Where(s => s.WasSuccessful)
+                         .OrderByDescending(s => s.CreatedDateUtc)
+                         .FirstOrDefault()
+                         .WaybackUrl ?? l.ViewUrl));
     }
 }

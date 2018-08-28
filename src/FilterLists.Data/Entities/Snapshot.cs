@@ -12,5 +12,6 @@ namespace FilterLists.Data.Entities
         public bool WasSuccessful { get; set; }
         public ICollection<SnapshotRule> SnapshotRules { get; set; }
         public DateTime? WaybackTimestamp { get; set; }
+        public string WaybackUrl { get; set; }
     }
 }

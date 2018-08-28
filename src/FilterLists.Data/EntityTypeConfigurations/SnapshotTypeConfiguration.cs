@@ -17,6 +17,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
                              .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.WaybackTimestamp)
                              .HasColumnType("TIMESTAMP");
+            entityTypeBuilder.Property(x => x.WaybackUrl)
+                             .HasColumnType("TEXT");
         }
     }
 }

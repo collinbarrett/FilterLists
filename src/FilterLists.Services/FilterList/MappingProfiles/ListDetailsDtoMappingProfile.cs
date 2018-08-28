@@ -23,6 +23,13 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                            .SnapshotRules
                            .Count
                         : 0))
-                .ForMember(d => d.UpdatedDate, o => o.MapFrom(l => l.ModifiedDateUtc));
+                .ForMember(d => d.UpdatedDate, o => o.MapFrom(l => l.ModifiedDateUtc))
+                .ForMember(d => d.ViewUrl,
+                    o => o.MapFrom(l =>
+                        l.Snapshots
+                         .Where(s => s.WasSuccessful)
+                         .OrderByDescending(s => s.CreatedDateUtc)
+                         .FirstOrDefault()
+                         .WaybackUrl ?? l.ViewUrl));
     }
 }
