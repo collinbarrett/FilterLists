@@ -41,10 +41,11 @@ namespace FilterLists.Services.Wayback
         private static string ParseUrlRaw(Closest closest)
         {
             var waybackUrl = closest.Url;
-            var indexOfUrlModification = waybackUrl.GetNthIndexOfChar(5, '/');
+            var waybackUrlHttps = waybackUrl.StartsWith("http:") ? "https" + waybackUrl.Substring(4) : waybackUrl;
+            var indexOfUrlModification = waybackUrlHttps.GetNthIndexOfChar(5, '/');
             const string urlModification = "if_";
-            return "https" + waybackUrl.Substring(4, indexOfUrlModification - 4) + urlModification +
-                   waybackUrl.Substring(indexOfUrlModification);
+            return waybackUrlHttps.Substring(0, indexOfUrlModification) + urlModification +
+                   waybackUrlHttps.Substring(indexOfUrlModification);
         }
 
         private static DateTime ParseTimestampUtc(Closest closest) =>
