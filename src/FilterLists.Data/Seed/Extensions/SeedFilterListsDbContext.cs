@@ -27,7 +27,6 @@ namespace FilterLists.Data.Seed.Extensions
             dbContext.InsertOnDuplicateKeyUpdate<Fork>(dataPath);
             dbContext.InsertOnDuplicateKeyUpdate<Merge>(dataPath);
             dbContext.InsertOnDuplicateKeyUpdate<SoftwareSyntax>(dataPath);
-            SetCantSnapshot(dbContext);
         }
 
         private static void InsertOnDuplicateKeyUpdate<TEntity>(this DbContext dbContext, string dataPath)
@@ -106,14 +105,6 @@ namespace FilterLists.Data.Seed.Extensions
         {
             var firstId = properties.First(x => x.IsPrimaryKey()).Name;
             return firstId + " = VALUES(" + firstId + ")";
-        }
-
-        //TODO: https://github.com/collinbarrett/FilterLists/issues/201
-        private static void SetCantSnapshot(DbContext dbContext)
-        {
-            const string rawSqlString = "UPDATE filterlists SET CantSnapshot = 1 WHERE id IN(173, 185, 188, 189)";
-            dbContext.Database.ExecuteSqlCommand(rawSqlString);
-            dbContext.SaveChanges();
         }
     }
 }

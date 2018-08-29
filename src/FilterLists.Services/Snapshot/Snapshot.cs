@@ -13,6 +13,7 @@ using FilterLists.Services.Snapshot.Models;
 using JetBrains.Annotations;
 using Microsoft.ApplicationInsights;
 using MoreLinq;
+using SharpCompress.Archives.SevenZip;
 
 namespace FilterLists.Services.Snapshot
 {
@@ -72,7 +73,7 @@ namespace FilterLists.Services.Snapshot
         private async Task SaveAsync()
         {
             await TryGetLines();
-            if (lines != null)
+            if (lines != null && lines.Count > 0)
             {
                 await SaveInBatches();
                 await SetSuccessful();
@@ -110,12 +111,38 @@ namespace FilterLists.Services.Snapshot
                 response.EnsureSuccessStatusCode();
                 lines = new HashSet<string>();
                 using (var stream = await response.Content.ReadAsStreamAsync())
-                using (var streamReader = new StreamReader(stream))
                 {
-                    string line;
-                    while ((line = await streamReader.ReadLineAsync()) != null)
-                        lines.AddIfNotNullOrEmpty(line.Trim());
+                    if (ListUrl.EndsWith(".7z"))
+                        await GetLinesFrom7Zip(stream);
+                    else
+                        await GetLinesFromStream(stream);
                 }
+            }
+        }
+
+        private async Task GetLinesFrom7Zip(Stream stream)
+        {
+            using (var memoryStream = new MemoryStream())
+            {
+                stream.CopyTo(memoryStream);
+                using (var archive = SevenZipArchive.Open(memoryStream))
+                {
+                    foreach (var entry in archive.Entries.Where(entry => !entry.IsDirectory))
+                        using (var entryMemoryStream = entry.OpenEntryStream())
+                        {
+                            await GetLinesFromStream(entryMemoryStream);
+                        }
+                }
+            }
+        }
+
+        private async Task GetLinesFromStream(Stream stream)
+        {
+            using (var streamReader = new StreamReader(stream))
+            {
+                string line;
+                while ((line = await streamReader.ReadLineAsync()) != null)
+                    lines.AddIfNotNullOrEmpty(line.Trim());
             }
         }
 
