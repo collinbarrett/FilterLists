@@ -2049,7 +2049,6 @@
           "version": "0.0.9",
           "bundled": true,
           "dev": true,
-          "optional": true,
           "requires": {
             "inherits": "~2.0.0"
           }
@@ -2074,8 +2073,7 @@
         "buffer-shims": {
           "version": "1.0.0",
           "bundled": true,
-          "dev": true,
-          "optional": true
+          "dev": true
         },
         "caseless": {
           "version": "0.12.0",
@@ -2092,14 +2090,12 @@
         "code-point-at": {
           "version": "1.1.0",
           "bundled": true,
-          "dev": true,
-          "optional": true
+          "dev": true
         },
         "combined-stream": {
           "version": "1.0.5",
           "bundled": true,
           "dev": true,
-          "optional": true,
           "requires": {
             "delayed-stream": "~1.0.0"
           }
@@ -2112,20 +2108,17 @@
         "console-control-strings": {
           "version": "1.1.0",
           "bundled": true,
-          "dev": true,
-          "optional": true
+          "dev": true
         },
         "core-util-is": {
           "version": "1.0.2",
           "bundled": true,
-          "dev": true,
-          "optional": true
+          "dev": true
         },
         "cryptiles": {
           "version": "2.0.5",
           "bundled": true,
           "dev": true,
-          "optional": true,
           "requires": {
             "boom": "2.x.x"
           }
@@ -2165,8 +2158,7 @@
         "delayed-stream": {
           "version": "1.0.0",
           "bundled": true,
-          "dev": true,
-          "optional": true
+          "dev": true
         },
         "delegates": {
           "version": "1.0.0",
@@ -2198,8 +2190,7 @@
         "extsprintf": {
           "version": "1.0.2",
           "bundled": true,
-          "dev": true,
-          "optional": true
+          "dev": true
         },
         "forever-agent": {
           "version": "0.6.1",
@@ -2322,7 +2313,6 @@
           "version": "3.1.3",
           "bundled": true,
           "dev": true,
-          "optional": true,
           "requires": {
             "boom": "2.x.x",
             "cryptiles": "2.x.x",
@@ -2370,7 +2360,6 @@
           "version": "1.0.0",
           "bundled": true,
           "dev": true,
-          "optional": true,
           "requires": {
             "number-is-nan": "^1.0.0"
           }
@@ -2384,8 +2373,7 @@
         "isarray": {
           "version": "1.0.0",
           "bundled": true,
-          "dev": true,
-          "optional": true
+          "dev": true
         },
         "isstream": {
           "version": "0.1.2",
@@ -2458,14 +2446,12 @@
         "mime-db": {
           "version": "1.27.0",
           "bundled": true,
-          "dev": true,
-          "optional": true
+          "dev": true
         },
         "mime-types": {
           "version": "2.1.15",
           "bundled": true,
           "dev": true,
-          "optional": true,
           "requires": {
             "mime-db": "~1.27.0"
           }
@@ -2541,8 +2527,7 @@
         "number-is-nan": {
           "version": "1.0.1",
           "bundled": true,
-          "dev": true,
-          "optional": true
+          "dev": true
         },
         "oauth-sign": {
           "version": "0.8.2",
@@ -2600,8 +2585,7 @@
         "process-nextick-args": {
           "version": "1.0.7",
           "bundled": true,
-          "dev": true,
-          "optional": true
+          "dev": true
         },
         "punycode": {
           "version": "1.4.1",
@@ -2639,7 +2623,6 @@
           "version": "2.2.9",
           "bundled": true,
           "dev": true,
-          "optional": true,
           "requires": {
             "buffer-shims": "~1.0.0",
             "core-util-is": "~1.0.0",
@@ -2691,8 +2674,7 @@
         "safe-buffer": {
           "version": "5.0.1",
           "bundled": true,
-          "dev": true,
-          "optional": true
+          "dev": true
         },
         "semver": {
           "version": "5.3.0",
@@ -2716,7 +2698,6 @@
           "version": "1.0.9",
           "bundled": true,
           "dev": true,
-          "optional": true,
           "requires": {
             "hoek": "2.x.x"
           }
@@ -2750,7 +2731,6 @@
           "version": "1.0.2",
           "bundled": true,
           "dev": true,
-          "optional": true,
           "requires": {
             "code-point-at": "^1.0.0",
             "is-fullwidth-code-point": "^1.0.0",
@@ -2761,7 +2741,6 @@
           "version": "1.0.1",
           "bundled": true,
           "dev": true,
-          "optional": true,
           "requires": {
             "safe-buffer": "^5.0.1"
           }
@@ -2790,7 +2769,6 @@
           "version": "2.2.1",
           "bundled": true,
           "dev": true,
-          "optional": true,
           "requires": {
             "block-stream": "*",
             "fstream": "^1.0.2",
@@ -2846,8 +2824,7 @@
         "util-deprecate": {
           "version": "1.0.2",
           "bundled": true,
-          "dev": true,
-          "optional": true
+          "dev": true
         },
         "uuid": {
           "version": "3.0.1",
