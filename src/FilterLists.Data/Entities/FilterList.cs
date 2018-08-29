@@ -8,7 +8,6 @@ namespace FilterLists.Data.Entities
     [UsedImplicitly]
     public class FilterList : BaseEntity
     {
-        public bool CantSnapshot { get; set; }
         public string ChatUrl { get; set; }
         public string Description { get; set; }
         public string DescriptionSourceUrl { get; set; }
