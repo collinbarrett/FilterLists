@@ -43,7 +43,7 @@ namespace FilterLists.Services.Wayback
             var waybackUrl = closest.Url;
             var indexOfUrlModification = waybackUrl.GetNthIndexOfChar(5, '/');
             const string urlModification = "if_";
-            return waybackUrl.Substring(0, indexOfUrlModification) + urlModification +
+            return "https" + waybackUrl.Substring(4, indexOfUrlModification - 4) + urlModification +
                    waybackUrl.Substring(indexOfUrlModification);
         }
 
