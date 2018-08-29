@@ -39,8 +39,7 @@ namespace FilterLists.Services.Snapshot
         private async Task<IEnumerable<FilterListViewUrlDto>> GetListsToCapture(int batchSize) =>
             await DbContext
                   .FilterLists
-                  .Where(l => !l.CantSnapshot &&
-                              !(l.ViewUrl.StartsWith(WaybackService.WaybackMachineUrlPrefix) &&
+                  .Where(l => !(l.ViewUrl.StartsWith(WaybackService.WaybackMachineUrlPrefix) &&
                                 l.Snapshots.Any(s => s.WasSuccessful)))
                   .OrderBy(l => l.Snapshots.Any())
                   .ThenBy(l => l.Snapshots
