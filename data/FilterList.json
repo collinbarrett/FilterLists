@@ -8374,7 +8374,7 @@
     "name": "NoTrack Tracker Blocklist",
     "policyUrl": null,
     "publishedDate": null,
-    "submissionUrl": null,
+    "submissionUrl": "https://quidsup.net/notrack/report.php?view=submit",
     "syntaxId": 2,
     "viewUrl": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt"
   },
@@ -8393,7 +8393,7 @@
     "name": "NoTrack Malware Blocklist",
     "policyUrl": null,
     "publishedDate": null,
-    "submissionUrl": null,
+    "submissionUrl": "https://quidsup.net/notrack/report.php?view=submit",
     "syntaxId": 2,
     "viewUrl": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt"
   },
