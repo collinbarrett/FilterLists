@@ -537,5 +537,12 @@
     "homeUrl": "https://dshield.org/",
     "name": "DShield",
     "twitterHandle": null
+  },
+  {
+    "id": 80,
+    "emailAddress": null,
+    "homeUrl": "https://www.kowabit.de/",
+    "name": "kowabit",
+    "twitterHandle": null
   }
 ]
