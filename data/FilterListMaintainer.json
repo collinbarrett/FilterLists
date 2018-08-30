@@ -782,5 +782,21 @@
   {
     "filterListId": 517,
     "maintainerId": 78
+  },
+  {
+    "filterListId": 302,
+    "maintainerId": 79
+  },
+  {
+    "filterListId": 518,
+    "maintainerId": 79
+  },
+  {
+    "filterListId": 519,
+    "maintainerId": 79
+  },
+  {
+    "filterListId": 520,
+    "maintainerId": 79
   }
 ]
