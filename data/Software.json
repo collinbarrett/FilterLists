@@ -76,5 +76,11 @@
     "downloadUrl": "https://github.com/xd4rker/MinerBlock/releases",
     "homeUrl": "https://github.com/xd4rker/MinerBlock",
     "name": "MinerBlock"
+  },
+  {
+    "id": 14,
+    "downloadUrl": "https://pi-hole.net/",
+    "homeUrl": "https://pi-hole.net/",
+    "name": "Pi-hole"
   }
 ]
