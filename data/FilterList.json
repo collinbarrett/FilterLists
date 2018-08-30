@@ -287,21 +287,21 @@
   {
     "id": 16,
     "chatUrl": null,
-    "description": "A filter list that enables removing of ads, trackers, and various scripts from websites with Korean content.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/filter.txt",
+    "description": "Filter that enables removing of ads, trackers, and various scripts from websites with Korean content.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/slang1998/List-KR/master/filter.txt",
     "discontinuedDate": null,
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
-    "homeUrl": "https://list-kr.github.io/",
-    "issuesUrl": "https://github.com/SlowMemory/List-KR/issues",
+    "homeUrl": null,
+    "issuesUrl": null,
     "licenseId": 8,
-    "name": "List-KR",
+    "name": "List-KR (Fork, original offline)",
     "policyUrl": null,
     "publishedDate": null,
-    "submissionUrl": "https://list-kr.github.io/form.html",
+    "submissionUrl": null,
     "syntaxId": 6,
-    "viewUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/filter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/slang1998/List-KR/master/filter.txt"
   },
   {
     "id": 17,
