@@ -159,5 +159,12 @@
     "name": "\"Don't Be A Dick\" Public License",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
+  },
+  {
+    "id": 24,
+    "descriptionUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "CC BY 4.0",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
   }
 ]
