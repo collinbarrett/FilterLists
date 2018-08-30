@@ -9460,5 +9460,24 @@
     "submissionUrl": "https://azet12.github.io/KAD/informacje.html#form1-35",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/azet12/KAD/gh-pages/assets/other/kadfakewhitelist.txt"
+  },
+  {
+    "id": 509,
+    "chatUrl": null,
+    "description": "Filters for blocking all the clickbait that surrounds articles and tries to drag you into a never-ending binge.",
+    "descriptionSourceUrl": "https://github.com/endolith/clickbait",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/endolith/clickbait",
+    "issuesUrl": "https://github.com/endolith/clickbait/issues",
+    "licenseId": 2,
+    "name": "Distractions and Clickbait Filter",
+    "policyUrl": null,
+    "publishedDate": "2016-03-11T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/endolith/clickbait/master/clickbait.txt"
   }
 ]
