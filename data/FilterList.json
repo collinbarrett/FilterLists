@@ -9479,5 +9479,24 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/endolith/clickbait/master/clickbait.txt"
+  },
+  {
+    "id": 510,
+    "chatUrl": null,
+    "description": "Filter list for uBlock, AdBlock and similar extensions.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/UnluckyLuke/BlockUnderRadarJunk/master/blockunderradarjunk-list.txt",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/UnluckyLuke/BlockUnderRadarJunk",
+    "issuesUrl": "https://github.com/UnluckyLuke/BlockUnderRadarJunk/issues",
+    "licenseId": 24,
+    "name": "BlockUnderRadarJunk",
+    "policyUrl": null,
+    "publishedDate": "2018-02-02T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/UnluckyLuke/BlockUnderRadarJunk/master/blockunderradarjunk-list.txt"
   }
 ]
