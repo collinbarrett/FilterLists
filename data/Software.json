@@ -70,5 +70,11 @@
     "downloadUrl": "https://github.com/2ndalpha/gasmask/releases",
     "homeUrl": "https://github.com/2ndalpha/gasmask",
     "name": "Gas Mask"
+  },
+  {
+    "id": 13,
+    "downloadUrl": "https://github.com/xd4rker/MinerBlock/releases",
+    "homeUrl": "https://github.com/xd4rker/MinerBlock",
+    "name": "MinerBlock"
   }
 ]

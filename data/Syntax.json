@@ -53,5 +53,10 @@
     "id": 12,
     "definitionUrl": "https://github.com/NanoAdblocker/NanoCore/tree/master/notes",
     "name": "Nano Adblocker Static"
+  },
+  {
+    "id": 13,
+    "definitionUrl": "https://github.com/xd4rker/MinerBlock",
+    "name": "MinerBlock"
   }
 ]
