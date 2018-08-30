@@ -810,5 +810,9 @@
   {
     "filterListId": 522,
     "maintainerId": 80
+  },
+  {
+    "filterListId": 523,
+    "maintainerId": 61
   }
 ]
