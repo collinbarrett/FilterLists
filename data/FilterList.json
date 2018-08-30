@@ -9517,5 +9517,24 @@
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/bogachenko/adfilters/master/adfilters.txt"
+  },
+  {
+    "id": 512,
+    "chatUrl": null,
+    "description": "MinerBlock is an efficient browser extension that focuses on blocking browser-based cryptocurrency miners all over the web.",
+    "descriptionSourceUrl": "https://github.com/xd4rker/MinerBlock",
+    "discontinuedDate": null,
+    "donateUrl": "https://github.com/xd4rker/MinerBlock#donations",
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/xd4rker/MinerBlock",
+    "issuesUrl": "https://github.com/xd4rker/MinerBlock/issues",
+    "licenseId": 2,
+    "name": "MinerBlock Filters",
+    "policyUrl": null,
+    "publishedDate": "2017-09-26T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": 13,
+    "viewUrl": "https://raw.githubusercontent.com/xd4rker/MinerBlock/master/assets/filters.txt"
   }
 ]
