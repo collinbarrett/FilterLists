@@ -530,5 +530,12 @@
     "homeUrl": "http://paulbutler.org",
     "name": "Paul Butler",
     "twitterHandle": null
+  },
+  {
+    "id": 79,
+    "emailAddress": "info@dshield.org",
+    "homeUrl": "https://dshield.org/",
+    "name": "DShield",
+    "twitterHandle": null
   }
 ]
