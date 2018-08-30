@@ -54,3 +54,8 @@ FilterLists does not condone or endorse implementing any particular FilterList o
 ### Privacy
 
 We respect your privacy. That is the whole point of this site. The only minor data we collect about visitors is what [CloudFlare](https://www.cloudflare.com/analytics/), [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-data-retention-privacy), and [GitHub](https://help.github.com/articles/github-privacy-statement/) capture.
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/collinbarrett/FilterLists/badge.svg?style=beer-square)](https://beerpay.io/collinbarrett/FilterLists)  [![Beerpay](https://beerpay.io/collinbarrett/FilterLists/make-wish.svg?style=flat-square)](https://beerpay.io/collinbarrett/FilterLists?focus=wish)
