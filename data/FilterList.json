@@ -9543,7 +9543,7 @@
     "description": "This filter disables some Ad and Tracking Hosts in uBlock",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/hit3shjain/Andromeda-ublock-list/master/hosts.txt",
     "discontinuedDate": null,
-    "donateUrl": "https://github.com/xd4rker/MinerBlock#donations",
+    "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
     "homeUrl": "https://github.com/hit3shjain/Andromeda-ublock-list",
@@ -9555,5 +9555,24 @@
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/hit3shjain/Andromeda-ublock-list/master/hosts.txt"
+  },
+  {
+    "id": 514,
+    "chatUrl": null,
+    "description": "A filter list that blocks ads, trackers, and more.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/SkeletalDemise/Skeletal-Blocker/master/Skeletal%20Blocker%20List",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/SkeletalDemise/Skeletal-Blocker",
+    "issuesUrl": "https://github.com/SkeletalDemise/Skeletal-Blocker/issues",
+    "licenseId": 4,
+    "name": "Skeletal Blocker",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/SkeletalDemise/Skeletal-Blocker/master/Skeletal%20Blocker%20List"
   }
 ]
