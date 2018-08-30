@@ -523,5 +523,12 @@
     "homeUrl": "https://github.com/SkeletalDemise",
     "name": "SkeletalDemise",
     "twitterHandle": null
+  },
+  {
+    "id": 78,
+    "emailAddress": "github@paulbutler.org",
+    "homeUrl": "http://paulbutler.org",
+    "name": "Paul Butler",
+    "twitterHandle": null
   }
 ]
