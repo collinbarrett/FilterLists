@@ -462,5 +462,13 @@
   {
     "filterListId": 512,
     "tagId": 1
+  },
+  {
+    "filterListId": 513,
+    "tagId": 2
+  },
+  {
+    "filterListId": 513,
+    "tagId": 3
   }
 ]

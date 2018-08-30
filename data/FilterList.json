@@ -9536,5 +9536,24 @@
     "submissionUrl": null,
     "syntaxId": 13,
     "viewUrl": "https://raw.githubusercontent.com/xd4rker/MinerBlock/master/assets/filters.txt"
+  },
+  {
+    "id": 513,
+    "chatUrl": null,
+    "description": "This filter disables some Ad and Tracking Hosts in uBlock",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/hit3shjain/Andromeda-ublock-list/master/hosts.txt",
+    "discontinuedDate": null,
+    "donateUrl": "https://github.com/xd4rker/MinerBlock#donations",
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/hit3shjain/Andromeda-ublock-list",
+    "issuesUrl": "https://github.com/hit3shjain/Andromeda-ublock-list/issues",
+    "licenseId": 2,
+    "name": "Andromeda uBlock List",
+    "policyUrl": null,
+    "publishedDate": "2018-05-01T00:00:00",
+    "submissionUrl": null,
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/hit3shjain/Andromeda-ublock-list/master/hosts.txt"
   }
 ]
