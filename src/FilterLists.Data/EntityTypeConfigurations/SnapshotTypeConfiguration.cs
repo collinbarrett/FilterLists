@@ -15,6 +15,8 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.HttpStatusCode)
                              .HasColumnType("SMALLINT")
                              .HasDefaultValueSql("NULL");
+            entityTypeBuilder.Property(x => x.Md5Checksum)
+                             .HasColumnType("BINARY(16)");
             entityTypeBuilder.Property(x => x.WaybackTimestamp)
                              .HasColumnType("TIMESTAMP");
             entityTypeBuilder.Property(x => x.WaybackUrl)

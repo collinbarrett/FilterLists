@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Data;
@@ -12,6 +13,7 @@ using FilterLists.Services.Extensions;
 using FilterLists.Services.Snapshot.Models;
 using JetBrains.Annotations;
 using Microsoft.ApplicationInsights;
+using Microsoft.EntityFrameworkCore;
 using MoreLinq;
 using SharpCompress.Archives.SevenZip;
 
@@ -112,27 +114,52 @@ namespace FilterLists.Services.Snapshot
                 lines = new HashSet<string>();
                 using (var stream = await response.Content.ReadAsStreamAsync())
                 {
-                    if (ListUrl.EndsWith(".7z"))
-                        await GetLinesFrom7Zip(stream);
-                    else
-                        await GetLinesFromStream(stream);
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        await stream.CopyToAsync(memoryStream);
+                        await SaveChecksum(memoryStream);
+                        if (await IsNewChecksum())
+                        {
+                            memoryStream.Position = 0;
+                            if (ListUrl.EndsWith(".7z"))
+                                await GetLinesFrom7Zip(memoryStream);
+                            else
+                                await GetLinesFromStream(memoryStream);
+                        }
+                    }
                 }
             }
         }
 
+        private async Task SaveChecksum(Stream stream)
+        {
+            using (var md5 = MD5.Create())
+            {
+                SnapEntity.Md5Checksum = md5.ComputeHash(stream);
+            }
+
+            await dbContext.SaveChangesAsync();
+        }
+
+        private async Task<bool> IsNewChecksum() =>
+            !SnapEntity.Md5Checksum.SequenceEqual(await GetPreviousChecksum() ?? Array.Empty<byte>());
+
+        private async Task<byte[]> GetPreviousChecksum() =>
+            await dbContext.Snapshots
+                           .Where(s => s.WasSuccessful && s.FilterListId == List.Id)
+                           .OrderByDescending(s => s.CreatedDateUtc)
+                           .Select(s => s.Md5Checksum)
+                           .FirstOrDefaultAsync();
+
         private async Task GetLinesFrom7Zip(Stream stream)
         {
-            using (var memoryStream = new MemoryStream())
+            using (var archive = SevenZipArchive.Open(stream))
             {
-                stream.CopyTo(memoryStream);
-                using (var archive = SevenZipArchive.Open(memoryStream))
-                {
-                    foreach (var entry in archive.Entries.Where(entry => !entry.IsDirectory))
-                        using (var entryMemoryStream = entry.OpenEntryStream())
-                        {
-                            await GetLinesFromStream(entryMemoryStream);
-                        }
-                }
+                foreach (var entry in archive.Entries.Where(entry => !entry.IsDirectory))
+                    using (var entryMemoryStream = entry.OpenEntryStream())
+                    {
+                        await GetLinesFromStream(entryMemoryStream);
+                    }
             }
         }
 
