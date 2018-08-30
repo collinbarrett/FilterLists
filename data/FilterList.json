@@ -9745,5 +9745,24 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Spotify-HOSTS-FilterList.txt"
+  },
+  {
+    "id": 524,
+    "chatUrl": null,
+    "description": "A comprehensive, all-in-one ad-block list for blocking of trackers, pop-up ads, ads, unwanted cookies, fake news, cookie warning messages, unwanted comment sections, crypto-coin mining, YouTube clutter and social network hassles.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/CK's-FilterList.txt",
+    "discontinuedDate": null,
+    "donateUrl": "https://github.com/CHEF-KOCH/Donations",
+    "emailAddress": "CHEF-KOCH@protonmail.com",
+    "forumUrl": null,
+    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
+    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
+    "licenseId": 17,
+    "name": "CHEF-KOCH's Filter List",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/CK's-FilterList.txt"
   }
 ]
