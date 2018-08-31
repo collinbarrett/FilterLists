@@ -14,14 +14,15 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                 .ForMember(d => d.Tags, o => o.MapFrom(l => l.FilterListTags.Select(m => m.Tag)))
                 .ForMember(d => d.UpdatedDate,
                     o => o.MapFrom(l =>
-                        l.Snapshots
-                         .Count(s => s.WasSuccessful && s.Md5Checksum != null) >= 2
+                        l.DiscontinuedDate ??
+                        (l.Snapshots
+                          .Count(s => s.WasSuccessful && s.Md5Checksum != null) >= 2
                             ? l.Snapshots
                                .Where(s => s.WasSuccessful && s.Md5Checksum != null)
                                .Select(s => s.CreatedDateUtc)
                                .OrderByDescending(c => c)
                                .FirstOrDefault()
-                            : null))
+                            : null)))
                 .ForMember(d => d.ViewUrl,
                     o => o.MapFrom(l =>
                         l.Snapshots
