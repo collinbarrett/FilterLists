@@ -377,7 +377,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://github.com/DandelionSprout/adfilt/raw/master/NorwegianList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianList.txt"
   },
   {
     "id": 21,
@@ -6153,7 +6153,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://github.com/bjornstar/hosts/blob/master/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/bjornstar/hosts/master/hosts"
   },
   {
     "id": 326,
@@ -7451,7 +7451,7 @@
     "id": 394,
     "chatUrl": null,
     "description": "A comprehensive, all-in-one ad-block list for thorough blocking of trackers, pop-up ads, ads, unwanted cookies, fake news, cookie warning messages, unwanted comment sections, crypto-coin mining, YouTube clutter and social network hassles.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/CK%27s-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/CK's-FilterList.txt",
     "discontinuedDate": null,
     "donateUrl": null,
     "emailAddress": "CHEF-KOCH@protonmail.com",
@@ -7464,7 +7464,7 @@
     "publishedDate": "2015-08-14T00:00:00",
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/CK%27s-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/CK's-FilterList.txt"
   },
   {
     "id": 395,
@@ -7901,7 +7901,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
-    "viewUrl": "https://github.com/ligyxy/Blocklist/blob/master/BLOCKLIST"
+    "viewUrl": "https://raw.githubusercontent.com/ligyxy/Blocklist/master/BLOCKLIST"
   },
   {
     "id": 423,
@@ -8477,7 +8477,7 @@
     "id": 453,
     "chatUrl": null,
     "description": "Block all external Fonts.",
-    "descriptionSourceUrl": null,
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Fonts/CK's-Fonts-FilterList.txt",
     "discontinuedDate": null,
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
@@ -8490,13 +8490,13 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/raw/master/Fonts/CK's-Fonts-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Fonts/CK's-Fonts-FilterList.txt"
   },
   {
     "id": 454,
     "chatUrl": null,
     "description": "Blocks all suspicious, unverified, fake, duplicate or malfunction torrent trackers. ",
-    "descriptionSourceUrl": null,
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Torrent/CK's-Torrent-FilterList.txt",
     "discontinuedDate": null,
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
@@ -8509,13 +8509,13 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/raw/master/Torrent/CK's-Torrent-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Torrent/CK's-Torrent-FilterList.txt"
   },
   {
     "id": 455,
     "chatUrl": null,
     "description": "HOSTS file to block all known NSA / GCHQ / C.I.A. / F.B.I. spying servers.",
-    "descriptionSourceUrl": null,
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/NSABlocklist/CK's-NSABlocklist-FilterList.txt",
     "discontinuedDate": null,
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
@@ -8528,13 +8528,13 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/raw/master/Corporations/NSABlocklist/CK's-NSABlocklist-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/NSABlocklist/CK's-NSABlocklist-FilterList.txt"
   },
   {
     "id": 460,
     "chatUrl": null,
     "description": "A comprehensive, all-in-one domain list for thorough blocking of trackers, pop-up ads, ads, unwanted cookies and faked pages.",
-    "descriptionSourceUrl": null,
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/I2P%20%26%20Onion/CK's-Onion-FilterList.txt",
     "discontinuedDate": null,
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
@@ -8547,13 +8547,13 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/raw/master/I2P%20%26%20Onion/CK's-Onion-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/I2P%20%26%20Onion/CK's-Onion-FilterList.txt"
   },
   {
     "id": 461,
     "chatUrl": null,
     "description": "Blocks Game Telemetry and other game specific 'unneeded' stuff.",
-    "descriptionSourceUrl": null,
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Game-HOSTS-FilterList.txt",
     "discontinuedDate": null,
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
@@ -8566,13 +8566,13 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/raw/master/HOSTS/CK's-Game-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Game-HOSTS-FilterList.txt"
   },
   {
     "id": 462,
     "chatUrl": null,
     "description": "A comprehensive, all-in-one ad-block list in order to block Malware Domains.",
-    "descriptionSourceUrl": null,
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Malware/CK's-Malware-FilterList.txt",
     "discontinuedDate": null,
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
@@ -8585,7 +8585,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/raw/master/Malware/CK's-Malware-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Malware/CK's-Malware-FilterList.txt"
   },
   {
     "id": 463,
@@ -8661,7 +8661,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://github.com/kano1/I/raw/master/adblock.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kano1/I/master/adblock.txt"
   },
   {
     "id": 467,
@@ -8680,7 +8680,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://github.com/kano1/I/raw/master/badway.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kano1/I/master/badway.txt"
   },
   {
     "id": 468,
@@ -8699,7 +8699,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://github.com/kano1/I/raw/master/adware.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kano1/I/master/adware.txt"
   },
   {
     "id": 469,
@@ -8737,7 +8737,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": "https://github.com/firehol/blocklist-ipsets/raw/master/firehol_level1.netset"
+    "viewUrl": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level1.netset"
   },
   {
     "id": 471,
@@ -8756,7 +8756,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": null,
-    "viewUrl": "https://github.com/firehol/blocklist-ipsets/raw/master/firehol_level2.netset"
+    "viewUrl": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level2.netset"
   },
   {
     "id": 472,
@@ -8775,7 +8775,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://github.com/jmdugan/blocklists/raw/master/corporations/pinterest/all"
+    "viewUrl": "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/pinterest/all"
   },
   {
     "id": 473,
@@ -8794,7 +8794,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://github.com/jmdugan/blocklists/raw/master/corporations/cloudflare/all"
+    "viewUrl": "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/cloudflare/all"
   },
   {
     "id": 474,
@@ -8813,7 +8813,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://github.com/jmdugan/blocklists/raw/master/corporations/facebook/all"
+    "viewUrl": "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/facebook/all"
   },
   {
     "id": 475,
@@ -8832,7 +8832,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://github.com/jmdugan/blocklists/raw/master/corporations/mozilla/all.txt"
+    "viewUrl": "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/mozilla/all.txt"
   },
   {
     "id": 476,
@@ -8851,7 +8851,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://github.com/jmdugan/blocklists/raw/master/corporations/microsoft/all"
+    "viewUrl": "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/microsoft/all"
   },
   {
     "id": 477,
@@ -8870,7 +8870,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://github.com/jmdugan/blocklists/raw/master/corporations/google/non_localized"
+    "viewUrl": "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/google/non_localized"
   },
   {
     "id": 478,
@@ -8889,7 +8889,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://github.com/jmdugan/blocklists/raw/master/corporations/google/localized"
+    "viewUrl": "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/google/localized"
   },
   {
     "id": 479,
@@ -8927,7 +8927,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 4,
-    "viewUrl": "https://github.com/yecarrillo/adblock-colombia/raw/master/adblock_co.txt"
+    "viewUrl": "https://raw.githubusercontent.com/yecarrillo/adblock-colombia/master/adblock_co.txt"
   },
   {
     "id": 481,
@@ -9136,7 +9136,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://github.com/Clefspeare13/pornhosts/raw/master/0.0.0.0/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/Clefspeare13/pornhosts/master/0.0.0.0/hosts"
   },
   {
     "id": 492,
@@ -9174,7 +9174,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "https://github.com/mhxion/pornaway/raw/master/hosts/porn_ads.txt"
+    "viewUrl": "https://raw.githubusercontent.com/mhxion/pornaway/master/hosts/porn_ads.txt"
   },
   {
     "id": 494,
@@ -9731,7 +9731,7 @@
     "id": 523,
     "chatUrl": null,
     "description": "Blocks all annoying Spotify Ads.",
-    "descriptionSourceUrl": null,
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Spotify-HOSTS-FilterList.txt",
     "discontinuedDate": null,
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
@@ -9739,31 +9739,12 @@
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
     "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
     "licenseId": 17,
-    "name": "CHEF-KOCH's Spotify Ad-Filter List",
+    "name": "CHEF-KOCH's Spotify HOSTS Ad-Filter List",
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": 3,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Spotify-HOSTS-FilterList.txt"
-  },
-  {
-    "id": 524,
-    "chatUrl": null,
-    "description": "A comprehensive, all-in-one ad-block list for blocking of trackers, pop-up ads, ads, unwanted cookies, fake news, cookie warning messages, unwanted comment sections, crypto-coin mining, YouTube clutter and social network hassles.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/CK's-FilterList.txt",
-    "discontinuedDate": null,
-    "donateUrl": "https://github.com/CHEF-KOCH/Donations",
-    "emailAddress": "CHEF-KOCH@protonmail.com",
-    "forumUrl": null,
-    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
-    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
-    "licenseId": 17,
-    "name": "CHEF-KOCH's Filter List",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/CK's-FilterList.txt"
   },
   {
     "id": 525,
@@ -10051,63 +10032,6 @@
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Spotify%20Ad-Free/CK's-Spotify-FilterList.txt"
   },
   {
-    "id": 540,
-    "chatUrl": null,
-    "description": "Block all external Fonts.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Fonts/CK's-Fonts-FilterList.txt",
-    "discontinuedDate": null,
-    "donateUrl": "https://github.com/CHEF-KOCH/Donations",
-    "emailAddress": "CHEF-KOCH@protonmail.com",
-    "forumUrl": null,
-    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
-    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
-    "licenseId": 17,
-    "name": "CHEF-KOCH's Fonts Filter List",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Fonts/CK's-Fonts-FilterList.txt"
-  },
-  {
-    "id": 541,
-    "chatUrl": null,
-    "description": "A comprehensive, all-in-one domain list for thorough blocking of trackers, pop-up ads, ads, unwanted cookies and faked pages.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/I2P%20&%20Onion/CK's-Onion-FilterList.txt",
-    "discontinuedDate": null,
-    "donateUrl": "https://github.com/CHEF-KOCH/Donations",
-    "emailAddress": "CHEF-KOCH@protonmail.com",
-    "forumUrl": null,
-    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
-    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
-    "licenseId": 17,
-    "name": "CHEF-KOCH's Onion & I2P Filter List",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/I2P%20&%20Onion/CK's-Onion-FilterList.txt"
-  },
-  {
-    "id": 542,
-    "chatUrl": null,
-    "description": "A comprehensive, all-in-one ad-block list in order to block Malware Domains.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Malware/CK's-Malware-FilterList.txt",
-    "discontinuedDate": null,
-    "donateUrl": "https://github.com/CHEF-KOCH/Donations",
-    "emailAddress": "CHEF-KOCH@protonmail.com",
-    "forumUrl": null,
-    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
-    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
-    "licenseId": 17,
-    "name": "CHEF-KOCH's Malware Filter List",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Malware/CK's-Malware-FilterList.txt"
-  },
-  {
     "id": 543,
     "chatUrl": null,
     "description": "This list will not be avbl. via subscription.",
@@ -10125,44 +10049,6 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Not%20blocked/CK's-Wontblock-FilterList.txt"
-  },
-  {
-    "id": 544,
-    "chatUrl": null,
-    "description": "Blocks all suspicious, unverified, fake, duplicate or malfunction torrent trackers.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Torrent/CK's-Torrent-FilterList.txt",
-    "discontinuedDate": null,
-    "donateUrl": "https://github.com/CHEF-KOCH/Donations",
-    "emailAddress": "CHEF-KOCH@protonmail.com",
-    "forumUrl": null,
-    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
-    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
-    "licenseId": 17,
-    "name": "CHEF-KOCH's BadTorrentTracker Filter List",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Torrent/CK's-Torrent-FilterList.txt"
-  },
-  {
-    "id": 545,
-    "chatUrl": null,
-    "description": "Blocks all suspicious, unverified, fake, duplicate or malfunction torrent trackers.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Torrent/CK's-Torrent-FilterList.txt",
-    "discontinuedDate": null,
-    "donateUrl": "https://github.com/CHEF-KOCH/Donations",
-    "emailAddress": "CHEF-KOCH@protonmail.com",
-    "forumUrl": null,
-    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
-    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
-    "licenseId": 17,
-    "name": "CHEF-KOCH's BadTorrentTracker Filter List",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Torrent/CK's-Torrent-FilterList.txt"
   },
   {
     "id": 546,
@@ -10214,7 +10100,7 @@
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
     "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
     "licenseId": 17,
-    "name": "CHEF-KOCH's Apple Filter List",
+    "name": "CHEF-KOCH's Apple HOSTS Filter List",
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
@@ -10355,25 +10241,6 @@
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Mozilla-HOSTS-FilterList.txt"
   },
   {
-    "id": 556,
-    "chatUrl": null,
-    "description": "HOSTS file to block all known NSA / GCHQ / C.I.A. / F.B.I. spying servers.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/NSABlocklist/CK's-NSABlocklist-FilterList.txt",
-    "discontinuedDate": null,
-    "donateUrl": "https://github.com/CHEF-KOCH/Donations",
-    "emailAddress": "CHEF-KOCH@protonmail.com",
-    "forumUrl": null,
-    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
-    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
-    "licenseId": 17,
-    "name": "CHEF-KOCH's NSABlocklist FilterList",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/NSABlocklist/CK's-NSABlocklist-FilterList.txt"
-  },
-  {
     "id": 557,
     "chatUrl": null,
     "description": "Blocks all annoying Skype Ads.",
@@ -10391,25 +10258,6 @@
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Skype-HOSTS-FilterList.txt"
-  },
-  {
-    "id": 558,
-    "chatUrl": null,
-    "description": "Blocks all annoying Spotify Ads.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Spotify-HOSTS-FilterList.txt",
-    "discontinuedDate": null,
-    "donateUrl": "https://github.com/CHEF-KOCH/Donations",
-    "emailAddress": "CHEF-KOCH@protonmail.com",
-    "forumUrl": null,
-    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
-    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
-    "licenseId": 17,
-    "name": "CHEF-KOCH's Spotify Ad-Filter List",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Spotify-HOSTS-FilterList.txt"
   },
   {
     "id": 559,
@@ -10431,25 +10279,6 @@
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/uMatrix/CK's-uMatrix-FilterList.txt"
   },
   {
-    "id": 560,
-    "chatUrl": null,
-    "description": "Blocks Game Telemetry and other game specific 'unneeded' stuff.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Game-HOSTS-FilterList.txt",
-    "discontinuedDate": null,
-    "donateUrl": "https://github.com/CHEF-KOCH/Donations",
-    "emailAddress": "CHEF-KOCH@protonmail.com",
-    "forumUrl": null,
-    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
-    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
-    "licenseId": 17,
-    "name": "CHEF-KOCH's Game HOSTS Filter List",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Game-HOSTS-FilterList.txt"
-  },
-  {
     "id": 561,
     "chatUrl": null,
     "description": "Filters Ad & Trackers only.",
@@ -10461,7 +10290,7 @@
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
     "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
     "licenseId": 17,
-    "name": "CHEF-KOCH's Ad & Tracker Filter List",
+    "name": "CHEF-KOCH's Ad & Tracker HOSTS Filter List",
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
