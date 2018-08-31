@@ -66,7 +66,7 @@ function ListInfo(props: any) {
                    <Languages languages={props.details.languages}/>
                    <RuleCount count={props.details.ruleCount}/>
                    <DiscontinuedDate date={props.details.discontinuedDate}/>
-              { /* <UpdatedDate date={props.details.updatedDate}/>--> */ }
+                   <UpdatedDate date={props.details.updatedDate}/>
                    <PublishedDate date={props.details.publishedDate}/>
                    <License license={props.details.license}/>
                </ul>
@@ -141,8 +141,8 @@ function DiscontinuedDate(props: any) {
 
 function UpdatedDate(props: any) {
     return props.date
-        ? <li className="list-group-item">
-              <p>Last Updated by Maintainer: {moment(props.date).format("l")}</p>
+        ? <li className="d-md-none list-group-item">
+              <p>Last Updated: {moment(props.date).isValid() ? moment(props.date).fromNow() : "N/A"}</p>
           </li>
         : null;
 }

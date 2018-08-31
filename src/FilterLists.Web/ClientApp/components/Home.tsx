@@ -122,22 +122,22 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            headerClassName: "d-none d-md-block",
                            className: "d-none d-md-block"
                        },
-                       //{
-                       //    Header: "Updated",
-                       //    accessor: "updatedDate",
-                       //    filterable: true,
-                       //    filterMethod: (filter: any, row: any) => row[filter.id].includes(filter.value),
-                       //    sortMethod: (a: any, b: any) => moment(a).isValid()
-                       //        ? (moment(b).isValid() ? (moment(a).isBefore(b) ? -1 : 1) : 1)
-                       //        : -1,
-                       //    Cell: (cell: any) => <div>{moment(cell.value).isValid()
-                       //        ? moment(cell.value).format("l")
-                       //        : "N/A"}</div>,
-                       //    style: { whiteSpace: "inherit" },
-                       //    width: 100,
-                       //    headerClassName: "d-none d-md-block",
-                       //    className: "d-none d-md-block"
-                       //},
+                       {
+                           Header: "Updated",
+                           accessor: "updatedDate",
+                           filterable: true,
+                           filterMethod: (filter: any, row: any) => row[filter.id].includes(filter.value),
+                           sortMethod: (a: any, b: any) => moment(a).isValid()
+                               ? (moment(b).isValid() ? (moment(a).isBefore(b) ? -1 : 1) : 1)
+                               : -1,
+                           Cell: (cell: any) => <div>{moment(cell.value).isValid()
+                               ? moment(cell.value).fromNow()
+                               : "N/A"}</div>,
+                           style: { whiteSpace: "inherit" },
+                           width: 100,
+                           headerClassName: "d-none d-md-block",
+                           className: "d-none d-md-block"
+                       },
                        {
                            Header: "Details",
                            accessor: "id",
