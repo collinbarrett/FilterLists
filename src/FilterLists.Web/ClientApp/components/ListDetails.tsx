@@ -142,7 +142,7 @@ function DiscontinuedDate(props: any) {
 function UpdatedDate(props: any) {
     return props.date
         ? <li className="d-md-none list-group-item">
-              <p>Last Updated: {moment(props.date).isValid() ? moment(props.date).fromNow() : "N/A"}</p>
+              <p>Last Updated: {moment(props.date).isValid() ? moment(props.date).format("l") : "N/A"}</p>
           </li>
         : null;
 }
