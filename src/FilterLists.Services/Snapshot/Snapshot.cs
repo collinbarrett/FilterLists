@@ -117,6 +117,7 @@ namespace FilterLists.Services.Snapshot
                     using (var memoryStream = new MemoryStream())
                     {
                         await stream.CopyToAsync(memoryStream);
+                        memoryStream.Position = 0;
                         await SaveChecksum(memoryStream);
                         if (await IsNewChecksum())
                         {
