@@ -9764,5 +9764,43 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/CK's-FilterList.txt"
+  },
+  {
+    "id": 525,
+    "chatUrl": null,
+    "description": "This list is a correlated list to only block porn sites that appear on Alex'a top 1m site list.",
+    "descriptionSourceUrl": "https://github.com/chadmayfield/my-pihole-blocklists",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/chadmayfield/my-pihole-blocklists",
+    "issuesUrl": "https://github.com/chadmayfield/my-pihole-blocklists/issues",
+    "licenseId": 4,
+    "name": "Chad Mayfield's Porn List Light",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list"
+  },
+  {
+    "id": 526,
+    "chatUrl": null,
+    "description": "This list is a slightly edited list from Université Toulouse 1 Capitole.",
+    "descriptionSourceUrl": "https://github.com/chadmayfield/my-pihole-blocklists",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/chadmayfield/my-pihole-blocklists",
+    "issuesUrl": "https://github.com/chadmayfield/my-pihole-blocklists/issues",
+    "licenseId": 4,
+    "name": "Chad Mayfield's Porn List Heavy",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list"
   }
 ]
