@@ -16,7 +16,7 @@ namespace FilterLists.Agent
         private static ServiceProvider serviceProvider;
         private static SnapshotService snapshotService;
         private static Logger logger;
-        private static readonly TimeSpan Timeout = TimeSpan.FromHours(6);
+        private static readonly TimeSpan Timeout = TimeSpan.FromHours(12);
 
         public static async Task Main()
         {

@@ -544,5 +544,12 @@
     "homeUrl": "https://www.kowabit.de/",
     "name": "kowabit",
     "twitterHandle": null
+  },
+  {
+    "id": 81,
+    "emailAddress": null,
+    "homeUrl": "https://github.com/chadmayfield",
+    "name": "Chad Mayfield",
+    "twitterHandle": null
   }
 ]

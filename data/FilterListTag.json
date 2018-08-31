@@ -478,5 +478,13 @@
   {
     "filterListId": 514,
     "tagId": 3
+  },
+  {
+    "filterListId": 525,
+    "tagId": 11
+  },
+  {
+    "filterListId": 526,
+    "tagId": 11
   }
 ]
