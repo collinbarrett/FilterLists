@@ -131,7 +131,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                ? (moment(b).isValid() ? (moment(a).isBefore(b) ? -1 : 1) : 1)
                                : -1,
                            Cell: (cell: any) => <div>{moment(cell.value).isValid()
-                               ? moment(cell.value).fromNow()
+                               ? moment(cell.value).format("l")
                                : "N/A"}</div>,
                            style: { whiteSpace: "inherit" },
                            width: 100,
