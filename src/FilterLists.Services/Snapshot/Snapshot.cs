@@ -29,7 +29,6 @@ namespace FilterLists.Services.Snapshot
         private readonly string uaString;
         protected string ListUrl;
         private HashSet<string> lines;
-        private bool wasWebException;
 
         public Snapshot()
         {
@@ -46,7 +45,7 @@ namespace FilterLists.Services.Snapshot
             telemetryClient = new TelemetryClient();
         }
 
-        public bool RetryMirror => !SnapEntity.WasSuccessful && wasWebException;
+        public bool WebExcepted { get; private set; }
 
         public virtual async Task TrySaveAsync() => await TrySaveAsyncBase();
 
@@ -89,13 +88,13 @@ namespace FilterLists.Services.Snapshot
             }
             catch (HttpRequestException hre)
             {
-                wasWebException = true;
+                WebExcepted = true;
                 await dbContext.SaveChangesAsync();
                 TrackException(hre);
             }
             catch (WebException we)
             {
-                wasWebException = true;
+                WebExcepted = true;
                 SnapEntity.HttpStatusCode = (int)((HttpWebResponse)we.Response).StatusCode;
                 await dbContext.SaveChangesAsync();
                 TrackException(we);
@@ -141,7 +140,8 @@ namespace FilterLists.Services.Snapshot
 
         private async Task<bool> SaveIsNewChecksum()
         {
-            SnapEntity.WasUpdated = !SnapEntity.Md5Checksum.SequenceEqual(await GetPreviousChecksum() ?? Array.Empty<byte>());
+            SnapEntity.WasUpdated =
+                !SnapEntity.Md5Checksum.SequenceEqual(await GetPreviousChecksum() ?? Array.Empty<byte>());
             await dbContext.SaveChangesAsync();
             return SnapEntity.WasUpdated;
         }

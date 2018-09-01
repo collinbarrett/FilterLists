@@ -2,11 +2,9 @@
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
-using JetBrains.Annotations;
 
 namespace FilterLists.Services
 {
-    [UsedImplicitly]
     public static class UserAgentService
     {
         private const string UaStringSource = "https://techblog.willshouse.com/2012/01/03/most-common-user-agents/";
