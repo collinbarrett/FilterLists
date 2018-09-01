@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -13,6 +14,26 @@ namespace FilterLists.Services.Snapshot
 {
     public class SnapshotService : Service
     {
+        private readonly Expression<Func<Data.Entities.FilterList, bool>> ifLastSnapFailed =
+            l => l.Snapshots
+                  .OrderByDescending(s => s.CreatedDateUtc)
+                  .FirstOrDefault()
+                  .WasUpdated &&
+                 !l.Snapshots
+                   .OrderByDescending(s => s.CreatedDateUtc)
+                   .FirstOrDefault()
+                   .WasSuccessful;
+
+        private readonly Expression<Func<Data.Entities.FilterList, bool>> isNotWaybackViewUrlWithSuccessfulSnap =
+            l => !(l.ViewUrl.StartsWith(WaybackService.WaybackMachineUrlPrefix) &&
+                   l.Snapshots.Any(s => s.WasSuccessful));
+
+        private readonly Expression<Func<Data.Entities.FilterList, DateTime?>> lastSnapTimestamp =
+            l => l.Snapshots
+                  .Select(s => s.CreatedDateUtc)
+                  .OrderByDescending(d => d)
+                  .FirstOrDefault();
+
         private string uaString;
 
         public SnapshotService(FilterListsDbContext dbContext, IConfigurationProvider mapConfig)
@@ -39,13 +60,10 @@ namespace FilterLists.Services.Snapshot
         private async Task<IEnumerable<FilterListViewUrlDto>> GetListsToCapture(int batchSize) =>
             await DbContext
                   .FilterLists
-                  .Where(l => !(l.ViewUrl.StartsWith(WaybackService.WaybackMachineUrlPrefix) &&
-                                l.Snapshots.Any(s => s.WasSuccessful)))
+                  .Where(isNotWaybackViewUrlWithSuccessfulSnap)
                   .OrderBy(l => l.Snapshots.Any())
-                  .ThenBy(l => l.Snapshots
-                                .Select(s => s.CreatedDateUtc)
-                                .OrderByDescending(d => d)
-                                .FirstOrDefault())
+                  .ThenByDescending(ifLastSnapFailed)
+                  .ThenBy(lastSnapTimestamp)
                   .Take(batchSize)
                   .ProjectTo<FilterListViewUrlDto>(MapConfig)
                   .ToListAsync();
@@ -60,8 +78,7 @@ namespace FilterLists.Services.Snapshot
 
         private IEnumerable<TSnap> CreateSnaps<TSnap>(IEnumerable<FilterListViewUrlDto> lists)
             where TSnap : Snapshot, new() =>
-            lists.Select(l =>
-                Activator.CreateInstance(typeof(TSnap), DbContext, l, uaString) as TSnap);
+            lists.Select(l => Activator.CreateInstance(typeof(TSnap), DbContext, l, uaString) as TSnap);
 
         private static async Task SaveSnaps(IEnumerable<Snapshot> snaps)
         {
