@@ -43,7 +43,7 @@ namespace FilterLists.Services.Snapshot
             uaString = await UserAgentService.GetMostPopularString();
             var lists = await GetListsToCapture(batchSize);
             var snaps = await CreateAndSaveSnaps<Snapshot>(lists);
-            var listsToRetry = snaps.Where(s => s.RetryMirror).Select(s => s.List);
+            var listsToRetry = snaps.Where(s => s.WebExcepted).Select(s => s.List);
             await CreateAndSaveSnaps<SnapshotWayback>(listsToRetry);
         }
 
