@@ -12,6 +12,7 @@ namespace FilterLists.Data.Entities
         public byte[] Md5Checksum { get; set; }
         public ICollection<SnapshotRule> SnapshotRules { get; set; }
         public bool WasSuccessful { get; set; }
+        public bool WasUpdated { get; set; }
         public DateTime? WaybackTimestamp { get; set; }
         public string WaybackUrl { get; set; }
     }
