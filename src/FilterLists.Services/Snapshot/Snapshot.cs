@@ -22,13 +22,13 @@ namespace FilterLists.Services.Snapshot
     public class Snapshot
     {
         private const int BatchSize = 1000;
-        private readonly FilterListsDbContext dbContext;
         public readonly FilterListViewUrlDto List;
         protected readonly Data.Entities.Snapshot SnapEntity;
+        private readonly FilterListsDbContext dbContext;
         private readonly TelemetryClient telemetryClient;
         private readonly string uaString;
-        private HashSet<string> lines;
         protected string ListUrl;
+        private HashSet<string> lines;
         private bool wasWebException;
 
         public Snapshot()
