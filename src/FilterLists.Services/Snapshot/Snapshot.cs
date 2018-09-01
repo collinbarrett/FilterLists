@@ -107,24 +107,30 @@ namespace FilterLists.Services.Snapshot
                 var response = await httpClient.GetAsync(ListUrl, HttpCompletionOption.ResponseHeadersRead);
                 SnapEntity.HttpStatusCode = (int)response.StatusCode;
                 response.EnsureSuccessStatusCode();
-                lines = new HashSet<string>();
-                using (var stream = await response.Content.ReadAsStreamAsync())
+                await GetLinesFromSource(response);
+            }
+        }
+
+        private async Task GetLinesFromSource(HttpResponseMessage response)
+        {
+            lines = new HashSet<string>();
+            using (var stream = await response.Content.ReadAsStreamAsync())
+            using (var memoryStream = new MemoryStream())
+            {
+                await stream.CopyToAsync(memoryStream);
+                memoryStream.Position = 0;
+                SetChecksum(memoryStream);
+                await SetWasUpdated();
+                if (SnapEntity.WasUpdated)
                 {
-                    using (var memoryStream = new MemoryStream())
-                    {
-                        await stream.CopyToAsync(memoryStream);
-                        memoryStream.Position = 0;
-                        SetChecksum(memoryStream);
-                        if (await SaveIsNewChecksum())
-                        {
-                            memoryStream.Position = 0;
-                            if (ListUrl.EndsWith(".7z"))
-                                await GetLinesFrom7Zip(memoryStream);
-                            else
-                                await GetLinesFromStream(memoryStream);
-                        }
-                    }
+                    memoryStream.Position = 0;
+                    if (ListUrl.EndsWith(".7z"))
+                        await GetLinesFrom7Zip(memoryStream);
+                    else
+                        await GetLinesFromStream(memoryStream);
                 }
+
+                await dbContext.SaveChangesAsync();
             }
         }
 
@@ -136,29 +142,25 @@ namespace FilterLists.Services.Snapshot
             }
         }
 
-        private async Task<bool> SaveIsNewChecksum()
-        {
-            SnapEntity.WasUpdated =
-                !SnapEntity.Md5Checksum.SequenceEqual(await GetPreviousChecksum() ?? Array.Empty<byte>());
-            await dbContext.SaveChangesAsync();
-            return SnapEntity.WasUpdated;
-        }
+        private async Task SetWasUpdated() =>
+            SnapEntity.WasUpdated = !SnapEntity.Md5Checksum.SequenceEqual(await GetPreviousChecksum());
 
         private async Task<byte[]> GetPreviousChecksum() =>
             await dbContext.Snapshots
                            .Where(s => s.WasSuccessful && s.FilterListId == List.Id)
                            .OrderByDescending(s => s.CreatedDateUtc)
                            .Select(s => s.Md5Checksum)
-                           .FirstOrDefaultAsync();
+                           .FirstOrDefaultAsync() ?? Array.Empty<byte>();
 
         private async Task GetLinesFrom7Zip(Stream stream)
         {
             using (var archive = SevenZipArchive.Open(stream))
             {
-                foreach (var entry in archive.Entries.Where(entry => !entry.IsDirectory))
-                    using (var entryMemoryStream = entry.OpenEntryStream())
+                var archiveEntries = archive.Entries.Where(entry => !entry.IsDirectory);
+                foreach (var entry in archiveEntries)
+                    using (var entryStream = entry.OpenEntryStream())
                     {
-                        await GetLinesFromStream(entryMemoryStream);
+                        await GetLinesFromStream(entryStream);
                     }
             }
         }
