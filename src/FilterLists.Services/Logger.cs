@@ -1,17 +1,21 @@
 ﻿using System;
 using System.Threading;
+using JetBrains.Annotations;
 using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.Extensibility;
+using Microsoft.Extensions.Configuration;
 
-namespace FilterLists.Agent
+namespace FilterLists.Services
 {
+    [UsedImplicitly]
     public class Logger : IDisposable
     {
+        private const string AppInsightsKeyConfig = "ApplicationInsights:InstrumentationKey";
         private readonly TelemetryClient telemetryClient;
 
-        public Logger(string appInsightsKey)
+        public Logger(IConfiguration config)
         {
-            TelemetryConfiguration.Active.InstrumentationKey = appInsightsKey;
+            TelemetryConfiguration.Active.InstrumentationKey = config[AppInsightsKeyConfig];
             telemetryClient = new TelemetryClient();
         }
 

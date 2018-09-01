@@ -1,7 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Threading.Tasks;
+using FilterLists.Services;
 using FilterLists.Services.DependencyInjection.Extensions;
+using FilterLists.Services.Extensions;
 using FilterLists.Services.Snapshot;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,7 +13,6 @@ namespace FilterLists.Agent
     public static class Program
     {
         private const int BatchSize = 1;
-        private const string AppInsightsKeyConfig = "ApplicationInsights:InstrumentationKey";
         private static IConfigurationRoot configRoot;
         private static ServiceProvider serviceProvider;
         private static SnapshotService snapshotService;
@@ -23,6 +24,7 @@ namespace FilterLists.Agent
             BuildConfigRoot();
             BuildServiceProvider();
             snapshotService = serviceProvider.GetService<SnapshotService>();
+            logger = serviceProvider.GetService<Logger>();
             await TryCaptureSnapshots();
         }
 
@@ -41,16 +43,13 @@ namespace FilterLists.Agent
 
         private static async Task TryCaptureSnapshots()
         {
-            using (logger = new Logger(configRoot[AppInsightsKeyConfig]))
+            try
             {
-                try
-                {
-                    await CaptureSnapshots(BatchSize).TimeoutAfter(Timeout);
-                }
-                catch (TimeoutException te)
-                {
-                    logger.Log(te);
-                }
+                await CaptureSnapshots(BatchSize).TimeoutAfter(Timeout);
+            }
+            catch (TimeoutException te)
+            {
+                logger.Log(te);
             }
         }
 
