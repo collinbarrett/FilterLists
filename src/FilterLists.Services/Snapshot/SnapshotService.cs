@@ -17,12 +17,8 @@ namespace FilterLists.Services.Snapshot
         private readonly Expression<Func<Data.Entities.FilterList, bool>> ifLastSnapFailed =
             l => l.Snapshots
                   .OrderByDescending(s => s.CreatedDateUtc)
-                  .FirstOrDefault()
-                  .WasUpdated &&
-                 !l.Snapshots
-                   .OrderByDescending(s => s.CreatedDateUtc)
-                   .FirstOrDefault()
-                   .WasSuccessful;
+                  .Select(s => s.WasUpdated && !s.WasSuccessful)
+                  .FirstOrDefault();
 
         private readonly Expression<Func<Data.Entities.FilterList, bool>> isNotWaybackViewUrlWithSuccessfulSnap =
             l => !(l.ViewUrl.StartsWith(WaybackService.WaybackMachineUrlPrefix) &&
