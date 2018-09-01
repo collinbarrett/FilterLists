@@ -200,6 +200,8 @@ namespace FilterLists.Services.Snapshot
         {
             telemetryClient.TrackException(e);
             telemetryClient.Flush();
+
+            //https://docs.microsoft.com/en-us/azure/application-insights/app-insights-api-custom-events-metrics#flushing-data
             Thread.Sleep(5000);
         }
     }
