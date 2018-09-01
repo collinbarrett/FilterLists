@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace FilterLists.Agent
+namespace FilterLists.Services.Extensions
 {
     public static class TaskExtensions
     {
