@@ -19,7 +19,7 @@ namespace FilterLists.Services.FilterList
         }
 
         public async Task<IEnumerable<ListSummaryDto>> GetAllSummariesAsync() =>
-            await DbContext.FilterLists.OrderBy(l => l.Name.ToLower()).ProjectTo<ListSummaryDto>(MapConfig).ToListAsync();
+            await DbContext.FilterLists.OrderBy(l => l.Name).ProjectTo<ListSummaryDto>(MapConfig).ToListAsync();
 
         public async Task<ListDetailsDto> GetDetailsAsync(uint id) =>
             await DbContext.FilterLists.ProjectTo<ListDetailsDto>(MapConfig)
