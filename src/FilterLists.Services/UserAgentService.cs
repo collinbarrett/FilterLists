@@ -17,23 +17,36 @@ namespace FilterLists.Services
 
         public static async Task<string> GetMostPopularString()
         {
+            try
+            {
+                return await TryGetLatestMostPopularStringOrDefault();
+            }
+            catch (HttpRequestException)
+            {
+                return UaStringDefault;
+            }
+        }
+
+        private static async Task<string> TryGetLatestMostPopularStringOrDefault()
+        {
             using (var httpClient = new HttpClient())
             {
                 var response = await httpClient.GetAsync(UaStringSource, HttpCompletionOption.ResponseHeadersRead);
+                response.EnsureSuccessStatusCode();
                 using (var stream = await response.Content.ReadAsStreamAsync())
                 using (var streamReader = new StreamReader(stream))
                 {
                     string line;
                     while ((line = await streamReader.ReadLineAsync()) != null)
                         if (line.Contains(UaStringSourceClass))
-                            return ParseUaString(line);
+                            return ParseUaStringOrDefault(line);
                 }
             }
 
             return UaStringDefault;
         }
 
-        private static string ParseUaString(string line)
+        private static string ParseUaStringOrDefault(string line)
         {
             var classIndex = line.IndexOf(UaStringSourceClass, StringComparison.Ordinal);
             var postClassIndexSubstring = line.Substring(classIndex);

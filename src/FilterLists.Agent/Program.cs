@@ -47,9 +47,9 @@ namespace FilterLists.Agent
                 {
                     await CaptureSnapshots(BatchSize).TimeoutAfter(Timeout);
                 }
-                catch (TimeoutException)
+                catch (TimeoutException te)
                 {
-                    logger.Log("Timeout - Program.CaptureSnapshots()");
+                    logger.Log(te);
                 }
             }
         }
