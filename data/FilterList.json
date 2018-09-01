@@ -10296,5 +10296,43 @@
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Ad-Tracker-HOSTS-FilterList.txt"
+  },
+  {
+    "id": 562,
+    "chatUrl": null,
+    "description": "Supports major domestic video sites! Already mainly supports uBO rules! Some of the large site element hiding rules have moved to Stylish, please go to https://userstyles.org/styles/117992/theme to install those entries.",
+    "descriptionSourceUrl": "https://github.com/xinggsf/Adblock-Plus-Rule/blob/master/README.md",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": "xinggsf@gmail.com",
+    "forumUrl": "https://bbs.kafan.cn/thread-1866845-1-1.html",
+    "homeUrl": "https://bbs.kafan.cn/thread-1866845-1-1.html",
+    "issuesUrl": "https://github.com/xinggsf/Adblock-Plus-Rule/issues",
+    "licenseId": null,
+    "name": "Winding Advertising Filter Rules (乘风 广告过滤规则)",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://github.com/xinggsf/Adblock-Plus-Rule/raw/master/ABP-FX.txt"
+  },
+  {
+    "id": 563,
+    "chatUrl": null,
+    "description": "Filter list for Adguard",
+    "descriptionSourceUrl": "https://github.com/andromedarabbit/List-KR",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": "plaintext@andromedarabbit.net",
+    "forumUrl": null,
+    "homeUrl": "https://github.com/andromedarabbit/List-KR",
+    "issuesUrl": "https://github.com/andromedarabbit/List-KR/issues",
+    "licenseId": 8,
+    "name": "List-KR (andromedarabbit)",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 4,
+    "viewUrl": "https://github.com/andromedarabbit/List-KR/raw/master/filter.txt"
   }
 ]
