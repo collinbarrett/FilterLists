@@ -50,5 +50,9 @@
   {
     "forkFilterListId": 313,
     "upstreamFilterListId": 311
+  },
+  {
+    "forkFilterListId": 563,
+    "upstreamFilterListId": 16
   }
 ]
