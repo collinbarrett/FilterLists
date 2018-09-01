@@ -5,14 +5,12 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Security.Cryptography;
-using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Extensions;
 using FilterLists.Services.Snapshot.Models;
 using JetBrains.Annotations;
-using Microsoft.ApplicationInsights;
 using Microsoft.EntityFrameworkCore;
 using MoreLinq;
 using SharpCompress.Archives.SevenZip;
@@ -25,7 +23,7 @@ namespace FilterLists.Services.Snapshot
         public readonly FilterListViewUrlDto List;
         protected readonly Data.Entities.Snapshot SnapEntity;
         private readonly FilterListsDbContext dbContext;
-        private readonly TelemetryClient telemetryClient;
+        private readonly Logger logger;
         private readonly string uaString;
         protected string ListUrl;
         private HashSet<string> lines;
@@ -35,14 +33,14 @@ namespace FilterLists.Services.Snapshot
         }
 
         [UsedImplicitly]
-        public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list, string uaString)
+        public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list, Logger logger, string uaString)
         {
             this.dbContext = dbContext;
             List = list;
             ListUrl = list.ViewUrl;
+            this.logger = logger;
             SnapEntity = new Data.Entities.Snapshot {FilterListId = list.Id, SnapshotRules = new List<SnapshotRule>()};
             this.uaString = uaString;
-            telemetryClient = new TelemetryClient();
         }
 
         public bool WebExcepted { get; private set; }
@@ -60,7 +58,7 @@ namespace FilterLists.Services.Snapshot
             }
             catch (Exception e)
             {
-                TrackException(e);
+                logger.Log(e);
             }
         }
 
@@ -90,14 +88,14 @@ namespace FilterLists.Services.Snapshot
             {
                 WebExcepted = true;
                 await dbContext.SaveChangesAsync();
-                TrackException(hre);
+                logger.Log(hre);
             }
             catch (WebException we)
             {
                 WebExcepted = true;
                 SnapEntity.HttpStatusCode = (int)((HttpWebResponse)we.Response).StatusCode;
                 await dbContext.SaveChangesAsync();
-                TrackException(we);
+                logger.Log(we);
             }
         }
 
@@ -194,15 +192,6 @@ namespace FilterLists.Services.Snapshot
         {
             SnapEntity.WasSuccessful = true;
             await dbContext.SaveChangesAsync();
-        }
-
-        private void TrackException(Exception e)
-        {
-            telemetryClient.TrackException(e);
-            telemetryClient.Flush();
-
-            //https://docs.microsoft.com/en-us/azure/application-insights/app-insights-api-custom-events-metrics#flushing-data
-            Thread.Sleep(5000);
         }
     }
 }
