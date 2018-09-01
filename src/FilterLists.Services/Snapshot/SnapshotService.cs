@@ -30,12 +30,11 @@ namespace FilterLists.Services.Snapshot
                   .OrderByDescending(d => d)
                   .FirstOrDefault();
 
+        private readonly Logger logger;
         private string uaString;
 
-        public SnapshotService(FilterListsDbContext dbContext, IConfigurationProvider mapConfig)
-            : base(dbContext, mapConfig)
-        {
-        }
+        public SnapshotService(FilterListsDbContext dbContext, IConfigurationProvider mapConfig, Logger logger)
+            : base(dbContext, mapConfig) => this.logger = logger;
 
         public async Task CaptureAsync(int batchSize)
         {
@@ -74,7 +73,7 @@ namespace FilterLists.Services.Snapshot
 
         private IEnumerable<TSnap> CreateSnaps<TSnap>(IEnumerable<FilterListViewUrlDto> lists)
             where TSnap : Snapshot, new() =>
-            lists.Select(l => Activator.CreateInstance(typeof(TSnap), DbContext, l, uaString) as TSnap);
+            lists.Select(l => Activator.CreateInstance(typeof(TSnap), DbContext, l, logger, uaString) as TSnap);
 
         private static async Task SaveSnaps(IEnumerable<Snapshot> snaps)
         {
