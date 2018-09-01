@@ -36,8 +36,7 @@ namespace FilterLists.Services.Snapshot
         }
 
         [UsedImplicitly]
-        public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list,
-            string uaString)
+        public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list, string uaString)
         {
             this.dbContext = dbContext;
             List = list;
