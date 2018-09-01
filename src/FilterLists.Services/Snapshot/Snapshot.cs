@@ -118,8 +118,8 @@ namespace FilterLists.Services.Snapshot
                     {
                         await stream.CopyToAsync(memoryStream);
                         memoryStream.Position = 0;
-                        await SaveChecksum(memoryStream);
-                        if (await IsNewChecksum())
+                        SetChecksum(memoryStream);
+                        if (await SaveIsNewChecksum())
                         {
                             memoryStream.Position = 0;
                             if (ListUrl.EndsWith(".7z"))
@@ -132,18 +132,20 @@ namespace FilterLists.Services.Snapshot
             }
         }
 
-        private async Task SaveChecksum(Stream stream)
+        private void SetChecksum(Stream stream)
         {
             using (var md5 = MD5.Create())
             {
                 SnapEntity.Md5Checksum = md5.ComputeHash(stream);
             }
-
-            await dbContext.SaveChangesAsync();
         }
 
-        private async Task<bool> IsNewChecksum() =>
-            !SnapEntity.Md5Checksum.SequenceEqual(await GetPreviousChecksum() ?? Array.Empty<byte>());
+        private async Task<bool> SaveIsNewChecksum()
+        {
+            SnapEntity.WasUpdated = !SnapEntity.Md5Checksum.SequenceEqual(await GetPreviousChecksum() ?? Array.Empty<byte>());
+            await dbContext.SaveChangesAsync();
+            return SnapEntity.WasUpdated;
+        }
 
         private async Task<byte[]> GetPreviousChecksum() =>
             await dbContext.Snapshots
