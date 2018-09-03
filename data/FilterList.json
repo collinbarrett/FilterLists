@@ -10353,5 +10353,24 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://secure.fanboy.co.nz/fanboy-problematic-sites.txt"
+  },
+  {
+    "id": 565,
+    "chatUrl": null,
+    "description": "EasyList Lite is new in AdBlock for Microsoft Edge and Mozilla Firefox. It's a subset of EasyList. EasyList Lite includes only the filters that actually block and hide ads on the websites people visit most. This makes it several thousand filters smaller than EasyList, and that enables AdBlock to work faster on those sites.",
+    "descriptionSourceUrl": "https://help.getadblock.com/support/solutions/articles/6000142821-what-is-easylist-lite-",
+    "discontinuedDate": null,
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": "https://help.getadblock.com/",
+    "homeUrl": "https://help.getadblock.com/",
+    "issuesUrl": null,
+    "licenseId": 4,
+    "name": "EasyList - Lite",
+    "policyUrl": "https://help.getadblock.com/support/solutions/articles/6000142821-what-is-easylist-lite-",
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://cdn.adblockcdn.com/filters/easylist_lite.txt"
   }
 ]
