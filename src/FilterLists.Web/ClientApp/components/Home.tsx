@@ -98,7 +98,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            filterMethod: (filter: any, row: any) => row[filter.id].map((e: any) => e.name).join()
                                .toUpperCase().includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
-                           Cell: (cell: any) => <div>{cell.value.map(
+                           Cell: (cell: any) => <div className="fl-tag-container">{cell.value.map(
                                (e: any) => <span className="badge" style={{
                                    backgroundColor: `#${e.colorHex}`,
                                    color: ListDetails.getContrast(`${e.colorHex}`)
