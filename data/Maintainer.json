@@ -551,5 +551,12 @@
     "homeUrl": "https://github.com/chadmayfield",
     "name": "Chad Mayfield",
     "twitterHandle": null
+  },
+  {
+    "id": 82,
+    "emailAddress": null,
+    "homeUrl": "https://getadblock.com/",
+    "name": "AdBlock",
+    "twitterHandle": null
   }
 ]
