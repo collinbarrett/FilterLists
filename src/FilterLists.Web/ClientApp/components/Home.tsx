@@ -157,16 +157,6 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                </div>,
                            style: { textAlign: "center" },
                            width: 105
-                       },
-                       {
-                           Header: "Subscribe",
-                           accessor: "viewUrl",
-                           sortable: false,
-                           Cell: (cell: any) => <SubscribeUrl url={cell.value} name={cell.row.name}/>,
-                           style: { textAlign: "center" },
-                           width: 105,
-                           headerClassName: "d-none d-md-block",
-                           className: "d-none d-md-block"
                        }
                    ]}
                    SubComponent={(row: any) => {
@@ -184,7 +174,6 @@ interface IListDto {
     languages: IListLanguageDto[];
     tags: IListTagDto[];
     updatedDate: string;
-    viewUrl: string;
 }
 
 interface IListLanguageDto {
@@ -197,35 +186,3 @@ interface IListTagDto {
     colorHex: string;
     description: string;
 }
-
-function SubscribeUrl(props: any) {
-    return props.url.indexOf("https://") === -1
-        ? SubscribeUrlNotSecure()
-        : props.url.indexOf("web.archive.org") === -1
-            ? SubscribeUrlPrimary()
-            : SubscribeUrlWayback();
-
-    function SubscribeUrlPrimary() {
-        return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-                  className="btn btn-primary btn-block"
-                  title={`Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).`}>
-                   Subscribe
-               </a>;
-    }
-
-    function SubscribeUrlWayback() {
-        return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-                  className="btn btn-secondary btn-block"
-                  title={`Archive.org Mirror (Original Offline) - Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).`}>
-                   Subscribe
-               </a>;
-    }
-
-    function SubscribeUrlNotSecure() {
-        return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-                  className="btn btn-danger btn-block"
-                  title={`Not Secure - Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).`}>
-                   Subscribe
-               </a>;
-    }
-};

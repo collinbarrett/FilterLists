@@ -176,7 +176,7 @@ function SubscribeUrl(props: any) {
 
     function SubscribeUrlPrimary() {
         return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-                  className="d-md-none btn btn-primary btn-block fl-btn-details-action"
+                  className="btn btn-primary btn-block fl-btn-details-action"
                   title={`Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).`}>
                    Subscribe
                </a>;
@@ -184,7 +184,7 @@ function SubscribeUrl(props: any) {
 
     function SubscribeUrlWayback() {
         return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-                  className="d-md-none btn btn-secondary btn-block fl-btn-details-action"
+                  className="btn btn-secondary btn-block fl-btn-details-action"
                   title={`Archive.org Mirror (Original Offline) - Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).`}>
                    Subscribe
                </a>;
@@ -192,7 +192,7 @@ function SubscribeUrl(props: any) {
 
     function SubscribeUrlNotSecure() {
         return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
-                  className="d-md-none btn btn-danger btn-block fl-btn-details-action"
+                  className="btn btn-danger btn-block fl-btn-details-action"
                   title={`Not Secure - Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).`}>
                    Subscribe
                </a>;

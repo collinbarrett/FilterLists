@@ -22,13 +22,6 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                                .Select(s => s.CreatedDateUtc)
                                .OrderByDescending(c => c)
                                .FirstOrDefault()
-                            : null)))
-                .ForMember(d => d.ViewUrl,
-                    o => o.MapFrom(l =>
-                        l.Snapshots
-                         .Where(s => s.WasSuccessful)
-                         .OrderByDescending(s => s.CreatedDateUtc)
-                         .FirstOrDefault()
-                         .WaybackUrl ?? l.ViewUrl));
+                            : null)));
     }
 }
