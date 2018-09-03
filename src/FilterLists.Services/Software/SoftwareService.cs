@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -18,6 +19,6 @@ namespace FilterLists.Services.Software
         }
 
         public async Task<IEnumerable<SoftwareDto>> GetAll() =>
-            await DbContext.Software.ProjectTo<SoftwareDto>(MapConfig).ToListAsync();
+            await DbContext.Software.OrderBy(s => s.Name).ProjectTo<SoftwareDto>(MapConfig).ToListAsync();
     }
 }
