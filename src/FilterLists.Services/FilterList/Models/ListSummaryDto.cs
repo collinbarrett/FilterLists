@@ -12,6 +12,5 @@ namespace FilterLists.Services.FilterList.Models
         public string Name { get; set; }
         public IEnumerable<ListTagDto> Tags { get; set; }
         public DateTime? UpdatedDate { get; set; }
-        public string ViewUrl { get; set; }
     }
 }
