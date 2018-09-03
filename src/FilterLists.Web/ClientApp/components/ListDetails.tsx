@@ -33,7 +33,7 @@ export default class ListDetails extends React.Component<any, any> {
     }
 
     //https://stackoverflow.com/a/11868398/2343739
-    public static getContrast(hexcolor: string) {
+    static getContrast(hexcolor: string) {
         const r = parseInt(hexcolor.substr(0, 2), 16);
         const g = parseInt(hexcolor.substr(2, 2), 16);
         const b = parseInt(hexcolor.substr(4, 2), 16);
@@ -66,7 +66,7 @@ function ListInfo(props: any) {
                    <Languages languages={props.details.languages}/>
                    <RuleCount count={props.details.ruleCount}/>
                    <DiscontinuedDate date={props.details.discontinuedDate}/>
-                   <UpdatedDate date={props.details.updatedDate}/>
+                   {props.details.discontinuedDate ? null : <UpdatedDate date={props.details.updatedDate}/>}
                    <PublishedDate date={props.details.publishedDate}/>
                    <License license={props.details.license}/>
                </ul>
@@ -142,7 +142,7 @@ function DiscontinuedDate(props: any) {
 function UpdatedDate(props: any) {
     return props.date
         ? <li className="d-md-none list-group-item">
-              <p>Last Updated: {moment(props.date).isValid() ? moment(props.date).format("l") : "N/A"}</p>
+              <p>Updated: {moment(props.date).isValid() ? moment(props.date).format("l") : "N/A"}</p>
           </li>
         : null;
 }
