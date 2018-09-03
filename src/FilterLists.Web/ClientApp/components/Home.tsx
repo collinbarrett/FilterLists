@@ -11,6 +11,8 @@ interface IHomeState {
     loadingLists: boolean;
     ruleCount: number;
     loadingRuleCount: boolean;
+    software: ISoftwareDto[];
+    loadingSoftware: boolean;
     pageSize: number;
 }
 
@@ -22,13 +24,15 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
             loadingLists: true,
             ruleCount: 0,
             loadingRuleCount: true,
+            software: [],
+            loadingSoftware: true,
             pageSize: 20
         };
         this.updatePageSize = this.updatePageSize.bind(this);
     }
 
     render() {
-        const contents = this.state.loadingLists || this.state.loadingRuleCount
+        const contents = this.state.loadingLists || this.state.loadingRuleCount || this.state.loadingSoftware
             ? <p>
                   <em>Loading...</em>
               </p>
@@ -57,6 +61,14 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                 this.setState({
                     ruleCount: data,
                     loadingRuleCount: false
+                });
+            });
+        fetch("https://filterlists.com/api/v1/software")
+            .then(response => response.json() as Promise<ISoftwareDto[]>)
+            .then(data => {
+                this.setState({
+                    software: data,
+                    loadingSoftware: false
                 });
             });
     }
@@ -116,7 +128,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                .includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
                            Cell: (cell: any) => <div className="fl-tag-container">{cell.value.map(
-                               (e: any) => <span className="badge badge-secondary" title={e.name}>{e.iso6391}</span>)}</div>,
+                               (e: any) => <span className="badge badge-secondary" title={e.name}>{e.iso6391}</span>)
+                           }</div>,
                            style: { whiteSpace: "inherit" },
                            width: 60,
                            headerClassName: "d-none d-md-block",
@@ -140,9 +153,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                    onChange={event => onChange(event.target.value)}
                                    style={{ width: "100%" }}
                                    value={filter ? filter.value : "all"}>
-                                   <option value="all">Show All</option>
-                                   <option value="true">Can Drink</option>
-                                   <option value="false">Can't Drink</option>
+                                   {state.software.map((e: any) => <option value={e.id}>{e.name}</option>)}
                                </select>,
                            Cell: (cell: any) => <div className="fl-tag-container">{cell.value.map(
                                (e: any) => <span className="badge badge-info">{e}</span>)}</div>,
