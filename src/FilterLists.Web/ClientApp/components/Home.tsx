@@ -123,6 +123,35 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            className: "d-none d-md-block"
                        },
                        {
+                           Header: "Software",
+                           accessor: "software",
+                           filterable: true,
+                           filterMethod: (filter: any, row: any) => {
+                               if (filter.value === "all") {
+                                   return true;
+                               }
+                               if (filter.value === "true") {
+                                   return row[filter.id] >= 21;
+                               }
+                               return row[filter.id] < 21;
+                           },
+                           Filter: ({ filter, onChange }) =>
+                               <select
+                                   onChange={event => onChange(event.target.value)}
+                                   style={{ width: "100%" }}
+                                   value={filter ? filter.value : "all"}>
+                                   <option value="all">Show All</option>
+                                   <option value="true">Can Drink</option>
+                                   <option value="false">Can't Drink</option>
+                               </select>,
+                           Cell: (cell: any) => <div className="fl-tag-container">{cell.value.map(
+                               (e: any) => <span className="badge badge-info">{e}</span>)}</div>,
+                           style: { whiteSpace: "inherit" },
+                           width: 150,
+                           headerClassName: "d-none d-md-block",
+                           className: "d-none d-md-block"
+                       },
+                       {
                            Header: "Updated",
                            accessor: "updatedDate",
                            filterable: true,
@@ -172,6 +201,7 @@ interface IListDto {
     id: number;
     name: string;
     languages: IListLanguageDto[];
+    software: string[];
     tags: IListTagDto[];
     updatedDate: string;
 }
