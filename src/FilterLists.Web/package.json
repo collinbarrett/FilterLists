@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "devDependencies": {
     "@types/history": "^4.7.0",
-    "@types/react": "^16.4.12",
+    "@types/react": "^16.4.13",
     "@types/react-dom": "^16.0.7",
     "@types/react-hot-loader": "^4.1.0",
     "@types/react-router": "^4.0.30",
@@ -29,7 +29,7 @@
     "typescript": "^2.9.2",
     "url-loader": "^1.1.1",
     "webpack": "^3.11.0",
-    "webpack-hot-middleware": "^2.22.3"
+    "webpack-hot-middleware": "^2.23.1"
   },
   "dependencies": {
     "@types/react-table": "^6.7.12",
