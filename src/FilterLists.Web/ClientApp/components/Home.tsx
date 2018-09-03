@@ -113,6 +113,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                }
                                return row[filter.id].join(",").split(",").includes(filter.value);
                            },
+                           sortable: false,
                            Filter: ({ filter, onChange }) =>
                                <select
                                    onChange={event => onChange(event.target.value)}
@@ -132,7 +133,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            filterable: true,
                            filterMethod: (filter: any, row: any) => row[filter.id].map((e: any) => e.name).join()
                                .toUpperCase().includes(filter.value.toUpperCase()),
-                           sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
+                           sortable: false,
                            Cell: (cell: any) => <div className="fl-tag-container">{cell.value.map(
                                (e: any) => <span className="badge" style={{
                                    backgroundColor: `#${e.colorHex}`,
@@ -149,7 +150,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            filterMethod: (filter: any, row: any) => row[filter.id]
                                .map((e: any) => e.name.concat(e.iso6391)).join().toUpperCase()
                                .includes(filter.value.toUpperCase()),
-                           sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
+                           sortable: false,
                            Cell: (cell: any) => <div className="fl-tag-container">{cell.value.map(
                                (e: any) => <span className="badge badge-secondary" title={e.name}>{e.iso6391}</span>)}</div>,
                            style: { whiteSpace: "inherit" },
