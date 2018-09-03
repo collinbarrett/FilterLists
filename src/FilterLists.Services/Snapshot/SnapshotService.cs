@@ -7,7 +7,6 @@ using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using FilterLists.Services.Snapshot.Models;
-using FilterLists.Services.Wayback;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Services.Snapshot
@@ -19,10 +18,6 @@ namespace FilterLists.Services.Snapshot
                   .OrderByDescending(s => s.CreatedDateUtc)
                   .Select(s => s.WasUpdated && !s.WasSuccessful)
                   .FirstOrDefault();
-
-        private readonly Expression<Func<Data.Entities.FilterList, bool>> isNotWaybackViewUrlWithSuccessfulSnap =
-            l => !(l.ViewUrl.StartsWith(WaybackService.WaybackMachineUrlPrefix) &&
-                   l.Snapshots.Any(s => s.WasSuccessful));
 
         private readonly Expression<Func<Data.Entities.FilterList, DateTime?>> lastSnapTimestamp =
             l => l.Snapshots
@@ -55,7 +50,6 @@ namespace FilterLists.Services.Snapshot
         private async Task<IEnumerable<FilterListViewUrlDto>> GetListsToCapture(int batchSize) =>
             await DbContext
                   .FilterLists
-                  .Where(isNotWaybackViewUrlWithSuccessfulSnap)
                   .OrderBy(l => l.Snapshots.Any())
                   .ThenByDescending(ifLastSnapFailed)
                   .ThenBy(lastSnapTimestamp)

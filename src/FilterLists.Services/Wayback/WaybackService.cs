@@ -9,7 +9,6 @@ namespace FilterLists.Services.Wayback
 {
     public static class WaybackService
     {
-        public const string WaybackMachineUrlPrefix = "https://web.archive.org/web/";
         private const string WaybackAvailabilityApiUrlPrefix = "https://archive.org/wayback/available?url=";
 
         public static async Task<SnapshotMetaDto> GetMostRecentSnapshotMeta(string url)
