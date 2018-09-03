@@ -10334,5 +10334,24 @@
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://github.com/andromedarabbit/List-KR/raw/master/filter.txt"
+  },
+  {
+    "id": 564,
+    "chatUrl": null,
+    "description": "Stop Anti-adblock tracking and problematic Anti-adblock websites",
+    "descriptionSourceUrl": "https://fanboy.co.nz/",
+    "discontinuedDate": null,
+    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://www.fanboy.co.nz/",
+    "issuesUrl": "https://github.com/ryanbr/fanboy-adblock/issues",
+    "licenseId": 16,
+    "name": "Fanboy's problematic-sites",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://secure.fanboy.co.nz/fanboy-problematic-sites.txt"
   }
 ]
