@@ -104,6 +104,29 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            Cell: (cell: any) => <h2 className="mb-0">{cell.value}</h2>
                        },
                        {
+                           Header: "Software",
+                           accessor: "softwareIds",
+                           filterable: true,
+                           filterMethod: (filter: any, row: any) => {
+                               if (filter.value === "any") {
+                                   return true;
+                               }
+                               return row[filter.id].join(",").split(",").includes(filter.value);
+                           },
+                           Filter: ({ filter, onChange }) =>
+                               <select
+                                   onChange={event => onChange(event.target.value)}
+                                   style={{ width: "100%" }}
+                                   value={filter ? filter.value : "all"}>
+                                   <option value="any">Any</option>
+                                   {state.software.map((e: any) => <option value={e.id}>{e.name}</option>)}
+                               </select>,
+                           Cell: () => null,
+                           width: 100,
+                           headerClassName: "d-none d-md-block",
+                           className: "d-none d-md-block"
+                       },
+                       {
                            Header: "Tags",
                            accessor: "tags",
                            filterable: true,
@@ -132,33 +155,6 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            }</div>,
                            style: { whiteSpace: "inherit" },
                            width: 60,
-                           headerClassName: "d-none d-md-block",
-                           className: "d-none d-md-block"
-                       },
-                       {
-                           Header: "Software",
-                           accessor: "software",
-                           filterable: true,
-                           filterMethod: (filter: any, row: any) => {
-                               if (filter.value === "all") {
-                                   return true;
-                               }
-                               if (filter.value === "true") {
-                                   return row[filter.id] >= 21;
-                               }
-                               return row[filter.id] < 21;
-                           },
-                           Filter: ({ filter, onChange }) =>
-                               <select
-                                   onChange={event => onChange(event.target.value)}
-                                   style={{ width: "100%" }}
-                                   value={filter ? filter.value : "all"}>
-                                   {state.software.map((e: any) => <option value={e.id}>{e.name}</option>)}
-                               </select>,
-                           Cell: (cell: any) => <div className="fl-tag-container">{cell.value.map(
-                               (e: any) => <span className="badge badge-info">{e}</span>)}</div>,
-                           style: { whiteSpace: "inherit" },
-                           width: 150,
                            headerClassName: "d-none d-md-block",
                            className: "d-none d-md-block"
                        },
