@@ -197,11 +197,16 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
     }
 }
 
+interface ISoftwareDto {
+    id: number;
+    name: string;
+}
+
 interface IListDto {
     id: number;
     name: string;
     languages: IListLanguageDto[];
-    software: string[];
+    softwareIds: number[];
     tags: IListTagDto[];
     updatedDate: string;
 }
