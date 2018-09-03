@@ -3,6 +3,7 @@ using FilterLists.Data;
 using FilterLists.Services.FilterList;
 using FilterLists.Services.Seed;
 using FilterLists.Services.Snapshot;
+using FilterLists.Services.Software;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,6 +22,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
                             m => m.MigrationsAssembly("FilterLists.Api")));
             services.TryAddScoped<FilterListService>();
             services.TryAddScoped<RuleService>();
+            services.TryAddScoped<SoftwareService>();
             services.TryAddScoped<SeedService>();
             services.AddAutoMapper();
         }
