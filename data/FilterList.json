@@ -1315,7 +1315,7 @@
     "chatUrl": null,
     "description": "List of filters for Adblock Plus that block cookie notices on European websites.",
     "descriptionSourceUrl": "https://github.com/Rudloff/adblock-imokwithcookies",
-    "discontinuedDate": null,
+    "discontinuedDate": "2018-07-05T00:00:00",
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
