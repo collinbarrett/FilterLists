@@ -10,7 +10,7 @@ namespace FilterLists.Services.FilterList.Models
         public uint Id { get; set; }
         public IEnumerable<ListLanguagesDto> Languages { get; set; }
         public string Name { get; set; }
-        public IEnumerable<string> Software { get; set; }
+        public IEnumerable<int> SoftwareIds { get; set; }
         public IEnumerable<ListTagDto> Tags { get; set; }
         public DateTime? UpdatedDate { get; set; }
     }
