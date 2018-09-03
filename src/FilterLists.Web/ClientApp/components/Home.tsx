@@ -117,7 +117,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                <select
                                    onChange={event => onChange(event.target.value)}
                                    style={{ width: "100%" }}
-                                   value={filter ? filter.value : "all"}>
+                                   value={filter ? filter.value : "any"}>
                                    <option value="any">Any</option>
                                    {state.software.map((e: any) => <option value={e.id}>{e.name}</option>)}
                                </select>,
@@ -151,8 +151,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                .includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.join().toUpperCase() > b.join().toUpperCase() ? 1 : -1,
                            Cell: (cell: any) => <div className="fl-tag-container">{cell.value.map(
-                               (e: any) => <span className="badge badge-secondary" title={e.name}>{e.iso6391}</span>)
-                           }</div>,
+                               (e: any) => <span className="badge badge-secondary" title={e.name}>{e.iso6391}</span>)}</div>,
                            style: { whiteSpace: "inherit" },
                            width: 60,
                            headerClassName: "d-none d-md-block",
