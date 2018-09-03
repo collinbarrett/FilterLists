@@ -156,7 +156,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                          </button>}
                                </div>,
                            style: { textAlign: "center" },
-                           width: 105
+                           width: 85
                        }
                    ]}
                    SubComponent={(row: any) => {
