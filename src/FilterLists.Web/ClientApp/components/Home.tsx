@@ -160,7 +160,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            className: "d-none d-md-block"
                        },
                        {
-                           Header: "Langs.",
+                           Header: "Languages",
                            accessor: "languages",
                            filterable: true,
                            filterMethod: (filter: any, row: any) => {
