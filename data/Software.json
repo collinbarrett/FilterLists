@@ -88,5 +88,17 @@
     "downloadUrl": "https://www.ublock.org/",
     "homeUrl": "https://www.ublock.org/",
     "name": "uBlock"
+  },
+  {
+    "id": 16,
+    "downloadUrl": "https://support.microsoft.com/en-gb/help/18520/download-internet-explorer-11-offline-installer",
+    "homeUrl": "https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/hh273399(v=vs.85)",
+    "name": "Internet Explorer (TPL)"
+  },
+  {
+    "id": 17,
+    "downloadUrl": "https://greasyfork.org/scripts/1682-google-hit-hider-by-domain-search-filter-block-sites",
+    "homeUrl": "https://www.jeffersonscher.com/gm/google-hit-hider/",
+    "name": "Google Hit Hider by Domain"
   }
 ]

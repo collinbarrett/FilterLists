@@ -782,5 +782,17 @@
   {
     "filterListId": 588,
     "languageId": 48
+  },
+  {
+    "filterListId": 598,
+    "languageId": 58
+  },
+  {
+    "filterListId": 599,
+    "languageId": 58
+  },
+  {
+    "filterListId": 600,
+    "languageId": 58
   }
 ]
