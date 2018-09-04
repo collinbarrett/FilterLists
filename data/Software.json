@@ -97,12 +97,6 @@
   },
   {
     "id": 17,
-    "downloadUrl": "https://github.com/NanoAdblocker/NanoCore#nano-adblocker-core",
-    "homeUrl": "https://github.com/NanoAdblocker/NanoCore",
-    "name": "Nano Adblocker"
-  },
-  {
-    "id": 18,
     "downloadUrl": "https://greasyfork.org/scripts/1682-google-hit-hider-by-domain-search-filter-block-sites",
     "homeUrl": "https://www.jeffersonscher.com/gm/google-hit-hider/",
     "name": "Google Hit Hider by Domain"
