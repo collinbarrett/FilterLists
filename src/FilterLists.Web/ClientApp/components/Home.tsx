@@ -13,6 +13,8 @@ interface IHomeState {
     loadingRuleCount: boolean;
     software: ISoftwareDto[];
     loadingSoftware: boolean;
+    languages: ILanguageDto[];
+    loadingLanguages: boolean;
     pageSize: number;
 }
 
@@ -26,13 +28,18 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
             loadingRuleCount: true,
             software: [],
             loadingSoftware: true,
+            languages: [],
+            loadingLanguages: true,
             pageSize: 20
         };
         this.updatePageSize = this.updatePageSize.bind(this);
     }
 
     render() {
-        const contents = this.state.loadingLists || this.state.loadingRuleCount || this.state.loadingSoftware
+        const contents = this.state.loadingLists ||
+            this.state.loadingRuleCount ||
+            this.state.loadingSoftware ||
+            this.state.loadingLanguages
             ? <p>
                   <em>Loading...</em>
               </p>
@@ -69,6 +76,14 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                 this.setState({
                     software: data,
                     loadingSoftware: false
+                });
+            });
+        fetch("https://filterlists.com/api/v1/languages")
+            .then(response => response.json() as Promise<ILanguageDto[]>)
+            .then(data => {
+                this.setState({
+                    languages: data,
+                    loadingLanguages: false
                 });
             });
     }
@@ -113,15 +128,15 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                }
                                return row[filter.id].join(",").split(",").includes(filter.value);
                            },
-                           sortable: false,
                            Filter: ({ filter, onChange }) =>
                                <select
-                                   onChange={event => onChange(event.target.value)}
+                                   onChange={(event: any) => onChange(event.target.value)}
                                    style={{ width: "100%" }}
                                    value={filter ? filter.value : "any"}>
                                    <option value="any">Any</option>
                                    {state.software.map((e: any) => <option value={e.id}>{e.name}</option>)}
                                </select>,
+                           sortable: false,
                            Cell: () => null,
                            width: 100,
                            headerClassName: "d-none d-md-block",
@@ -147,14 +162,25 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            Header: "Langs.",
                            accessor: "languages",
                            filterable: true,
-                           filterMethod: (filter: any, row: any) => row[filter.id]
-                               .map((e: any) => e.name.concat(e.iso6391)).join().toUpperCase()
-                               .includes(filter.value.toUpperCase()),
+                           filterMethod: (filter: any, row: any) => {
+                               if (filter.value === "any") {
+                                   return true;
+                               }
+                               return row[filter.id].map((x: any) => x.iso6391).includes(filter.value);
+                           },
+                           Filter: ({ filter, onChange }) =>
+                               <select
+                                   onChange={(event: any) => onChange(event.target.value)}
+                                   style={{ width: "100%" }}
+                                   value={filter ? filter.value : "any"}>
+                                   <option value="any">Any</option>
+                                   {state.languages.map((e: any) => <option value={e.iso6391}>{e.name}</option>)}
+                               </select>,
                            sortable: false,
                            Cell: (cell: any) => <div className="fl-tag-container">{cell.value.map(
                                (e: any) => <span className="badge badge-secondary" title={e.name}>{e.iso6391}</span>)}</div>,
                            style: { whiteSpace: "inherit" },
-                           width: 60,
+                           width: 100,
                            headerClassName: "d-none d-md-block",
                            className: "d-none d-md-block"
                        },
@@ -192,7 +218,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                          </button>}
                                </div>,
                            style: { textAlign: "center" },
-                           width: 85
+                           width: 90
                        }
                    ]}
                    SubComponent={(row: any) => {
@@ -206,6 +232,11 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
 
 interface ISoftwareDto {
     id: number;
+    name: string;
+}
+
+interface ILanguageDto {
+    iso6391: string;
     name: string;
 }
 
