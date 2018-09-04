@@ -7364,11 +7364,11 @@
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
-    "name": "Dandelion Sprout's list for Chrome Personal Blocklist",
+    "name": "Dandelion Sprout's list for Personal Blocklist",
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": 8,
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/List%20for%20Chrome%20Personal%20Blocklist"
   },
   {
