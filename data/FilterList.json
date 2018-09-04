@@ -281,7 +281,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": "https://list-kr.github.io/form.html",
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/unbreak.txt"
   },
   {
@@ -528,7 +528,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/quiet.txt"
   },
   {
@@ -547,7 +547,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/obtrusive.txt"
   },
   {
@@ -585,7 +585,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://www.niecko.pl/adblock/adblock.txt"
   },
   {
@@ -604,7 +604,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext"
   },
   {
@@ -623,7 +623,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/LordBadmintonofYorkshire/Overlay-Blocker/master/blocklist.txt"
   },
   {
@@ -642,7 +642,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 8,
     "viewUrl": "https://openphish.com/feed.txt"
   },
   {
@@ -661,7 +661,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt"
   },
   {
@@ -680,7 +680,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/genediazjr/nopelist/master/nopelist.txt"
   },
   {
@@ -718,7 +718,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Rpsl/adblock-leadgenerator-list/master/list/list.txt"
   },
   {
@@ -737,7 +737,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://notabug.org/latvian-list/adblock-latvian/raw/master/lists/latvian-list.txt"
   },
   {
@@ -908,7 +908,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://www.hosts-file.net/download/hosts.txt"
   },
   {
@@ -927,7 +927,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://sites.google.com/site/hosts2ch/ja"
   },
   {
@@ -946,7 +946,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt"
   },
   {
@@ -965,7 +965,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/kargig/greek-adblockplus-filter/master/void-gr-filters.txt"
   },
   {
@@ -984,7 +984,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://gnuzilla.gnu.org/filters/blacklist.txt"
   },
   {
@@ -1117,7 +1117,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/gfmaster/adblock-korea-contrib/master/filter.txt"
   },
   {
@@ -1136,7 +1136,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": "https://azet12.github.io/KAD/informacje.html#form1-35",
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt"
   },
   {
@@ -1174,7 +1174,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://qme.mydns.jp/data/AdblockV2.txt"
   },
   {
@@ -1193,7 +1193,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://qme.mydns.jp/data/Adblock.txt"
   },
   {
@@ -1212,7 +1212,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hostslt"
   },
   {
@@ -1231,7 +1231,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hosts"
   },
   {
@@ -1250,7 +1250,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://www.jabcreations.com/downloads/adblock-filters.php"
   },
   {
@@ -1269,7 +1269,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/piperun/iploggerfilter/master/filterlist"
   },
   {
@@ -1288,7 +1288,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/ilyakatz/adblock_filters/master/inpage_popups.txt"
   },
   {
@@ -1307,7 +1307,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://adblock.gardar.net/is.abp.txt"
   },
   {
@@ -1326,7 +1326,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Rudloff/adblock-imokwithcookies/master/filters.txt"
   },
   {
@@ -1345,7 +1345,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://www.kiboke-studio.hr/i-dont-care-about-cookies/abp/"
   },
   {
@@ -1364,7 +1364,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt"
   },
   {
@@ -1535,7 +1535,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts"
   },
   {
@@ -1858,7 +1858,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/yous/YousList/master/youslist.txt"
   },
   {
@@ -1877,7 +1877,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt"
   },
   {
@@ -1896,7 +1896,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt"
   },
   {
@@ -1915,7 +1915,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt"
   },
   {
@@ -1934,7 +1934,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts"
   },
   {
@@ -2124,7 +2124,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "http://tofukko.r.ribbon.to/Adblock_Plus_list.txt"
   },
   {
@@ -2143,7 +2143,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/thoughtconverge/abf/master/abf.txt"
   },
   {
@@ -2162,7 +2162,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://hostsfile.mine.nu/hosts0.txt"
   },
   {
@@ -2181,7 +2181,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://www.zoso.ro/pages/rolist2.txt"
   },
   {
@@ -2219,7 +2219,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://www.zoso.ro/pages/rolist.txt"
   },
   {
@@ -2238,7 +2238,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://road.adblock.ro/lista.txt"
   },
   {
@@ -2485,7 +2485,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "http://denis-ovs.narod.ru/adblock.txt"
   },
   {
@@ -2542,7 +2542,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://hostsfile.mine.nu/downloads/adblock.txt"
   },
   {
@@ -2561,7 +2561,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/betterwebleon/slovenian-list/master/filters.txt"
   },
   {
@@ -2599,7 +2599,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/StreamingAds/hosts"
   },
   {
@@ -2618,7 +2618,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/Dawsey21/Lists/master/main-blacklist.txt"
   },
   {
@@ -2637,7 +2637,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt"
   },
   {
@@ -2656,7 +2656,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://shopping.mileageplus.com/adBlockWhitelist.php"
   },
   {
@@ -2694,7 +2694,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://rapidrewardsshopping.southwest.com/adBlockWhitelist.php"
   },
   {
@@ -2713,7 +2713,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://www.aadvantageeshopping.com/adBlockWhitelist.php"
   },
   {
@@ -2732,7 +2732,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://www.mileageplanshopping.com/adBlockWhitelist.php"
   },
   {
@@ -2751,13 +2751,13 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://web.archive.org/web/20121106002043if_/http://www.schuzak.jp:80/other/abp.conf"
   },
   {
     "id": 147,
     "chatUrl": null,
-    "description": "My list removes advertisements from all the leading Danish Websites: Ekstra Bladet, Jyllands Posten, Berlingske, TV / 2, Computerworld, Version2, etc.",
+    "description": "My list removes advertisements from all the leading Danish Websites: Ekstra Bladet, Jyllands Posten, Berlingske, TV/2, Computerworld, Version2, etc.",
     "descriptionSourceUrl": "https://henrik.schack.dk/adblock/",
     "discontinuedDate": null,
     "donateUrl": "https://www.paypal.me/schack",
@@ -2770,7 +2770,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://adblock.dk/block.csv"
   },
   {
@@ -2789,7 +2789,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://satterly.neocities.org/abp_filters.txt"
   },
   {
@@ -2846,7 +2846,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://www.barclaycardrewardsboost.com/adBlockWhitelist.php"
   },
   {
@@ -2865,7 +2865,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 4,
     "viewUrl": "https://pastebin.com/raw/r9a5WrZa"
   },
   {
@@ -2884,7 +2884,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://adb.juvander.net/Finland_adb_antisocial.txt"
   },
   {
@@ -2903,7 +2903,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/hosts"
   },
   {
@@ -3169,7 +3169,7 @@
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 6,
     "viewUrl": "https://filters.adtidy.org/windows/filters/15.txt"
   },
   {
@@ -3226,7 +3226,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://dl.dropboxusercontent.com/s/1ybzw9lb7m1qiyl/AAs.txt"
   },
   {
@@ -3264,7 +3264,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hmis.7z"
   },
   {
@@ -3283,7 +3283,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/zpacman/Blockzilla/master/Blockzilla.txt"
   },
   {
@@ -3302,7 +3302,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/r4vi/block-the-eu-cookie-shit-list/master/filterlist.txt"
   },
   {
@@ -3321,7 +3321,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt"
   },
   {
@@ -3359,7 +3359,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/rebelion76/bankiru_plus_adblock_list/master/bankiru_plus.txt"
   },
   {
@@ -3378,7 +3378,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://www.hostsfile.org/Downloads/hosts.txt"
   },
   {
@@ -3416,7 +3416,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "http://git.sourceforge.jp/view?p=ayucat-list/ayucat-list.git;a=blob_plain;f=ayucat-list.txt;hb=b254c74c132832a3ade7b9d42c2ef8d3dd59fdb9"
   },
   {
@@ -3435,7 +3435,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt"
   },
   {
@@ -3454,7 +3454,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt"
   },
   {
@@ -3492,7 +3492,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hblc.7z"
   },
   {
@@ -3511,7 +3511,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hrsk.7z"
   },
   {
@@ -3530,7 +3530,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "http://rlwpx.free.fr/WPFF/htrc.7z"
   },
   {
@@ -3549,7 +3549,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hsex.7z"
   },
   {
@@ -3568,7 +3568,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hpub.7z"
   },
   {
@@ -3587,7 +3587,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts"
   },
   {
@@ -3606,7 +3606,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts"
   },
   {
@@ -3625,7 +3625,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Dead/hosts"
   },
   {
@@ -3644,7 +3644,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 8,
     "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=compromised"
   },
   {
@@ -3663,7 +3663,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 8,
     "viewUrl": "https://feodotracker.abuse.ch/blocklist/?download=ipblocklist"
   },
   {
@@ -3739,7 +3739,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/heradhis/indonesianadblockrules/master/subscriptions/abpindo.txt"
   },
   {
@@ -3758,7 +3758,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/facebook.txt"
   },
   {
@@ -3777,7 +3777,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/siteblock.txt"
   },
   {
@@ -3796,7 +3796,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/filtri.txt"
   },
   {
@@ -3815,7 +3815,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_paranoid.txt"
   },
   {
@@ -3834,7 +3834,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf.txt"
   },
   {
@@ -3853,7 +3853,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_element_hiding.txt"
   },
   {
@@ -3872,7 +3872,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_3rd_party_sns.txt"
   },
   {
@@ -3891,7 +3891,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn.txt"
   },
   {
@@ -3929,7 +3929,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 2,
     "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist"
   },
   {
@@ -3948,7 +3948,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 2,
     "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=baddomains"
   },
   {
@@ -3967,7 +3967,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 9,
     "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=ipblocklist"
   },
   {
@@ -3986,7 +3986,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 9,
     "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=badips"
   },
   {
@@ -4005,7 +4005,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts"
   },
   {
@@ -4024,7 +4024,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/kbinani/adblock-youtube-ads/master/signed.txt"
   },
   {
@@ -4062,7 +4062,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/adblockpolska/Adblock_PL_List/master/adblock_polska.txt"
   },
   {
@@ -4100,7 +4100,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://ideone.com/plain/K452p"
   },
   {
@@ -4119,7 +4119,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://adb.juvander.net/Finland_adb.txt"
   },
   {
@@ -4138,7 +4138,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://blogram.net/wp-content/uploads/easylist3.txt"
   },
   {
@@ -4157,7 +4157,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://web.archive.org/web/20160411115130if_/http://adblock-korea.googlecode.com:80/git/adblock-korea.txt"
   },
   {
@@ -4176,7 +4176,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "http://gurud.ee/ab.txt"
   },
   {
@@ -4195,7 +4195,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/SlashArash/adblockfa/master/adblockfa.txt"
   },
   {
@@ -4252,7 +4252,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://sites.google.com/site/logroid/files/hosts.txt"
   },
   {
@@ -4271,7 +4271,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://adaway.org/hosts.txt"
   },
   {
@@ -4309,7 +4309,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/farrokhi/adblock-iran/master/filter.txt"
   },
   {
@@ -4347,7 +4347,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://blogram.net/wp-content/uploads/easylist2.txt"
   },
   {
@@ -4366,7 +4366,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://blogram.net/wp-content/uploads/easylist1.txt"
   },
   {
@@ -4385,7 +4385,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/ryanbr/fanboy-adblock/master/fake-news.txt"
   },
   {
@@ -4423,7 +4423,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt"
   },
   {
@@ -4480,7 +4480,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://adblock.ee/list.php"
   },
   {
@@ -4499,7 +4499,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://www.ebates.com/whitelist/ebates-cash-back-shopping.txt"
   },
   {
@@ -4575,7 +4575,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist.to/easylist/easyprivacy.txt"
   },
   {
@@ -4632,7 +4632,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/easylist-thailand/easylist-thailand/master/subscription/easylist-thailand.txt"
   },
   {
@@ -4746,7 +4746,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/filtros.txt"
   },
   {
@@ -4765,7 +4765,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://filtri-dns.ga/filtri.txt"
   },
   {
@@ -4784,7 +4784,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/hant0508/uBlock-filters/master/filters.txt"
   },
   {
@@ -5050,7 +5050,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://margevicius.lt/easylistlithuania.txt"
   },
   {
@@ -5069,7 +5069,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt"
   },
   {
@@ -5221,7 +5221,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://someonewhocares.org/hosts/zero/hosts"
   },
   {
@@ -5240,7 +5240,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "http://adblock.dajbych.net/adblock.txt"
   },
   {
@@ -5259,7 +5259,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://web.archive.org/web/20110212174029if_/http://abp-corset.googlecode.com:80/hg/corset.txt"
   },
   {
@@ -5278,7 +5278,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://www.eff.org/files/cookieblocklist.txt"
   },
   {
@@ -5297,7 +5297,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/cpeterso/clickbait-blocklist/master/clickbait-blocklist.txt"
   },
   {
@@ -5316,7 +5316,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
   },
   {
@@ -5335,7 +5335,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "http://sysctl.org/cameleon/hosts"
   },
   {
@@ -5373,7 +5373,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://stanev.org/abp/adblock_bg.txt"
   },
   {
@@ -5506,7 +5506,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt"
   },
   {
@@ -5601,7 +5601,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://blogram.net/wp-content/uploads/easylist4.txt"
   },
   {
@@ -5639,7 +5639,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/nfer/easylistchina_it/master/easylistchina_it.txt"
   },
   {
@@ -5696,7 +5696,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://easylist.to/easylist/easylist.txt"
   },
   {
@@ -5715,7 +5715,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 9,
     "viewUrl": "https://feeds.dshield.org/block.txt"
   },
   {
@@ -5734,7 +5734,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 2,
     "viewUrl": "https://mirror1.malwaredomains.com/files/url_shorteners.txt"
   },
   {
@@ -5753,7 +5753,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 2,
     "viewUrl": "https://mirror1.malwaredomains.com/files/Skype-resolvers.txt"
   },
   {
@@ -8185,7 +8185,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/easylistbrasil/easylistbrasil/filtro/easylistbrasil.txt"
   },
   {
@@ -8736,7 +8736,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 9,
     "viewUrl": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level1.netset"
   },
   {
@@ -8755,7 +8755,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 9,
     "viewUrl": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level2.netset"
   },
   {
@@ -8945,7 +8945,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedAd/energized/hosts"
   },
   {
@@ -8964,7 +8964,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedMalware/energized/hosts"
   },
   {
@@ -8983,7 +8983,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedPorn/energized/hosts"
   },
   {
@@ -9002,7 +9002,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedBlu/master/energized/blu"
   },
   {
@@ -9021,7 +9021,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedBlu/master/energized/blu_go"
   },
   {
@@ -9040,7 +9040,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedLite/energized/hosts"
   },
   {
@@ -9059,7 +9059,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedPornLite/energized/hosts"
   },
   {
@@ -9078,7 +9078,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedUltimate/energized/hosts"
   },
   {
@@ -9097,7 +9097,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/EnergizedHosts/master/EnergizedUnified/energized/hosts"
   },
   {
@@ -9230,7 +9230,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 8,
     "viewUrl": "https://raw.githubusercontent.com/MrThreat/Confirmed-Phish/master/phish.txt"
   },
   {
@@ -9439,7 +9439,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 10,
     "viewUrl": "https://easylist-msie.adblockplus.org/easylist.tpl"
   },
   {
