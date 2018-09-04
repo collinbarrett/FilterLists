@@ -10809,5 +10809,142 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/turkish.txt"
-  }
-]
+  },
+   {
+      "id": 589,
+      "description": "A occasionally updated collection gambling domains in hosts file format.",
+      "descriptionSourceUrl": "https://github.com/Sinfonietta/hostfiles",
+      "homeUrl": "https://github.com/Sinfonietta/hostfiles",
+      "issuesUrl": "https://github.com/Sinfonietta/hostfiles/issues",
+      "licenseId": 2,
+      "name": "Gambling Hosts",
+      "syntaxId": 1,
+      "viewUrl": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/gambling-hosts"
+    },
+    {
+      "id": 590,
+      "description": "A occasionally updated collection of porn domains in hosts file format.",
+      "descriptionSourceUrl": "https://github.com/Sinfonietta/hostfiles",
+      "homeUrl": "https://github.com/Sinfonietta/hostfiles",
+      "issuesUrl": "https://github.com/Sinfonietta/hostfiles/issues",
+      "licenseId": 2,
+      "name": "Pornography Hosts",
+      "syntaxId": 1,
+      "viewUrl": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts"
+    },
+    {
+      "id": 591,
+      "description": "A occasionally updated collection of snuff domains in hosts file format.",
+      "homeUrl": "https://github.com/Sinfonietta/hostfiles",
+      "issuesUrl": "https://github.com/Sinfonietta/hostfiles/issues",
+      "licenseId": 2,
+      "name": "Snuff Hosts",
+      "syntaxId": 1,
+      "viewUrl": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts"
+    },
+    {
+      "id": 592,
+      "description": "A occasionally updated collection of social media domains in hosts file format.",
+      "descriptionSourceUrl": "https://github.com/Sinfonietta/hostfiles",
+      "homeUrl": "https://github.com/Sinfonietta/hostfiles",
+      "issuesUrl": "https://github.com/Sinfonietta/hostfiles/issues",
+      "licenseId": 2,
+      "name": "Social Hosts",
+      "syntaxId": 1,
+      "viewUrl": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts"
+    },
+    {
+      "id": 593,
+      "description": "This is a small attempt to limit my exposure to sites that fall under the umbrella of “fake news.” It blocks sites that willfully and regularly spread clickbait, hoaxes, propaganda and disinformation.",
+      "descriptionSourceUrl": "https://github.com/marktron/fakenews#purpose",
+      "emailAddress": "moustache@gmail.com",
+      "homeUrl": "https://github.com/marktron/fakenews",
+      "issuesUrl": "https://github.com/marktron/fakenews/issues",
+      "licenseId": 2,
+      "name": "fakenews",
+      "syntaxId": 1,
+      "viewUrl": "https://raw.githubusercontent.com/marktron/fakenews/master/fakenews"
+    },
+    {
+      "id": 594,
+      "description": "Collection of Analytics, Ads, and tracking hosts to block.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking.txt",
+      "homeUrl": "https://github.com/lightswitch05/hosts",
+      "issuesUrl": "https://github.com/lightswitch05/hosts/issues",
+      "licenseId": 18,
+      "name": "Ads & Tracking",
+      "syntaxId": 1,
+      "viewUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking.txt"
+    },
+    {
+      "id": 595,
+      "description": "Collection of Analytics, Ads, and tracking hosts to block.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking-extended.txt",
+      "homeUrl": "https://github.com/lightswitch05/hosts",
+      "issuesUrl": "https://github.com/lightswitch05/hosts/issues",
+      "licenseId": 18,
+      "name": "Ads & Tracking Extended",
+      "syntaxId": 1,
+      "viewUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking-extended.txt"
+    },
+    {
+      "id": 596,
+      "description": "Collection of Analytics, Ads, and tracking hosts to block.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/tracking-aggressive.txt",
+      "homeUrl": "https://github.com/lightswitch05/hosts",
+      "issuesUrl": "https://github.com/lightswitch05/hosts/issues",
+      "licenseId": 18,
+      "name": "Tracking Aggressive",
+      "syntaxId": 1,
+      "viewUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/tracking-aggressive.txt"
+    },
+    {
+      "id": 597,
+      "description": "Collection of Analytics, Ads, and tracking hosts to block.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/tracking-aggressive-extended.txt",
+      "homeUrl": "https://github.com/lightswitch05/hosts",
+      "issuesUrl": "https://github.com/lightswitch05/hosts/issues",
+      "licenseId": 18,
+      "name": "Tracking Aggressive Extended",
+      "syntaxId": 1,
+      "viewUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/tracking-aggressive-extended.txt"
+    },
+    {
+      "id": 598,
+      "description": "Hosts block ads of Vietnamese",
+      "descriptionSourceUrl": "https://github.com/bigdargon/hostsVN#hostsvn",
+      "homeUrl": "https://github.com/bigdargon/hostsVN",
+      "issuesUrl": "https://github.com/bigdargon/hostsVN/issues",
+      "licenseId": null,
+      "name": "hostsVN",
+      "syntaxId": 1,
+      "viewUrl": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts"
+    },
+    {
+      "id": 599,
+      "description": "Android host file - Adaway",
+      "descriptionSourceUrl": "https://abpvn.com/android/abpvn.txt",
+      "forumUrl": "http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html",
+      "emailAddress": "support@abpvn.com",
+      "homeUrl": "https://abpvn.com/",
+      "issuesUrl": "support@abpvn.com",
+      "licenseId": null,
+      "name": "ABPVN Hosts",
+      "syntaxId": 1,
+      "viewUrl": "https://abpvn.com/android/abpvn.txt"
+    },
+    {
+      "id": 600,
+      "description": "The ABP advertising filter is built with the mission of improving the browsing experience for the Vietnamese users. ABPVN may not help block all ads, but ABPVN will minimize the appearance of ads on most websites in Vietnam.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn_noelemhide.txt",
+      "forumUrl": "http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html",
+      "emailAddress": "support@abpvn.com",
+      "homeUrl": "https://abpvn.com/",
+      "issuesUrl": "support@abpvn.com",
+      "licenseId": null,
+      "name": "ABPVN List - No Element Hide",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn_noelemhide.txt"
+    }
+  ]
+}
