@@ -658,5 +658,33 @@
   {
     "filterListId": 588,
     "tagId": 5
+  },
+  {
+    "filterListId": 589,
+    "tagId": 15
+  },
+  {
+    "filterListId": 590,
+    "tagId": 11
+  },
+  {
+    "filterListId": 591,
+    "tagId": 11
+  },
+  {
+    "filterListId": 592,
+    "tagId": 4
+  },
+  {
+    "filterListId": 593,
+    "tagId": 15
+  },
+  {
+    "filterListId": 596,
+    "tagId": 3
+  },
+  {
+    "filterListId": 597,
+    "tagId": 3
   }
 ]
