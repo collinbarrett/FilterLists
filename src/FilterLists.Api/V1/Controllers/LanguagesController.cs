@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using FilterLists.Data.Entities;
+using FilterLists.Services.Language;
 using FilterLists.Services.Seed;
 using FilterLists.Services.Seed.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -9,9 +10,18 @@ namespace FilterLists.Api.V1.Controllers
 {
     public class LanguagesController : BaseController
     {
-        public LanguagesController(IMemoryCache memoryCache, SeedService seedService) : base(memoryCache, seedService)
-        {
-        }
+        private readonly LanguageService languageService;
+
+        public LanguagesController(IMemoryCache memoryCache, SeedService seedService, LanguageService languageService) :
+            base(memoryCache, seedService) => this.languageService = languageService;
+
+        [HttpGet]
+        public async Task<IActionResult> Index() =>
+            Json(await MemoryCache.GetOrCreate("LanguageService_Index", entry =>
+            {
+                entry.AbsoluteExpirationRelativeToNow = FourHoursFromNow;
+                return languageService.GetAllTargeted();
+            }));
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>

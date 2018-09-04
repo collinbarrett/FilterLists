@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using FilterLists.Data;
 using FilterLists.Services.FilterList;
+using FilterLists.Services.Language;
 using FilterLists.Services.Seed;
 using FilterLists.Services.Snapshot;
 using FilterLists.Services.Software;
@@ -23,6 +24,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
             services.TryAddScoped<FilterListService>();
             services.TryAddScoped<RuleService>();
             services.TryAddScoped<SoftwareService>();
+            services.TryAddScoped<LanguageService>();
             services.TryAddScoped<SeedService>();
             services.AddAutoMapper();
         }
