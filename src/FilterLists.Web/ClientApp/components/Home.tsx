@@ -116,10 +116,11 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            filterMethod: (filter: any, row: any) => row[filter.id].toUpperCase()
                                .includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.toUpperCase() > b.toUpperCase() ? 1 : -1,
-                           Cell: (cell: any) => <h2 className="mb-0">{cell.value}</h2>
+                           Cell: (cell: any) => <h2 className="mb-0">{cell.value}</h2>,
+                           style: { overflow: "visible" }
                        },
                        {
-                           Header: "Software",
+                           Header: "Software Support",
                            accessor: "softwareIds",
                            filterable: true,
                            filterMethod: (filter: any, row: any) => {
@@ -138,7 +139,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                </select>,
                            sortable: false,
                            Cell: () => null,
-                           width: 100,
+                           width: 250,
                            headerClassName: "d-none d-md-block",
                            className: "d-none d-md-block"
                        },
