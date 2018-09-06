@@ -71,7 +71,7 @@ namespace FilterLists.Services.Snapshot
         private async Task SaveAsync()
         {
             await TryGetLines();
-            if (lines != null && lines.Count > 0)
+            if (lines != null)
             {
                 await SaveInBatches();
                 await SetSuccessful();
