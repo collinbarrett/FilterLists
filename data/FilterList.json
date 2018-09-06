@@ -3363,25 +3363,6 @@
     "viewUrl": "https://www.hostsfile.org/Downloads/hosts.txt"
   },
   {
-    "id": 180,
-    "chatUrl": null,
-    "description": "The sites listed there a fake/malicious sites that lure people with fake direct-download-links to JAV videos.",
-    "descriptionSourceUrl": null,
-    "discontinuedDate": null,
-    "donateUrl": null,
-    "emailAddress": null,
-    "forumUrl": "https://www.akiba-online.com/threads/fake-jav-ddl-sites-list.1560416/",
-    "homeUrl": "https://www.akiba-online.com/threads/fake-jav-ddl-sites-list.1560416/",
-    "issuesUrl": null,
-    "licenseId": 5,
-    "name": "Bad JAV Sites",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": null,
-    "viewUrl": "https://pastebin.com/raw/kDqbYwWr"
-  },
-  {
     "id": 181,
     "chatUrl": null,
     "description": "A list for Adblock Plus, which is one of the most famous ad blocking softwares.",
