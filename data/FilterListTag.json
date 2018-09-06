@@ -734,5 +734,21 @@
   {
     "filterListId": 597,
     "tagId": 3
+  },
+  {
+    "filterListId": 601,
+    "tagId": 4
+  },
+  {
+    "filterListId": 601,
+    "tagId": 7
+  },
+  {
+    "filterListId": 602,
+    "tagId": 4
+  },
+  {
+    "filterListId": 602,
+    "tagId": 7
   }
 ]
