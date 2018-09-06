@@ -11037,5 +11037,24 @@
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiAntiTokenSites/master/AntiPumpSites_hosts.txt"
+  },
+  {
+    "id": 603,
+    "chatUrl": null,
+    "description": "This list aims to remove particularly disturbing content on YouTube that targets young children, as well as nursery rhymes, \"Finger Family\", \"Wrong Heads\", and other things that are hotbeds for extremely unproductive videos. Also supports YouTube on mobile browsers (but sadly not the apps).",
+    "descriptionSourceUrl": null,
+    "discontinuedDate": null,
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "forumUrl": null,
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-Elsagate List for YouTube",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Elsagate%20List.txt"
   }
 ]
