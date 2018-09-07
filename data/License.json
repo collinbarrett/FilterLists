@@ -178,7 +178,7 @@
     "id": 26,
     "descriptionUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
     "name": "CC BY-NC-ND 3.0",
-    "permissiveAdaptation": true,
+    "permissiveAdaptation": false,
     "permissiveCommercial": false
   }
 ]
