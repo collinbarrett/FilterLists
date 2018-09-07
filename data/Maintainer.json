@@ -551,5 +551,12 @@
     "homeUrl": "https://getadblock.com/",
     "name": "AdBlock",
     "twitterHandle": null
+  },
+  {
+    "id": 83,
+    "emailAddress": null,
+    "homeUrl": "https://forum.xda-developers.com/member.php?u=4546389",
+    "name": "jerryn70",
+    "twitterHandle": null
   }
 ]
