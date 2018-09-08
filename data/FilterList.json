@@ -9293,21 +9293,21 @@
   {
     "id": 511,
     "chatUrl": null,
-    "description": "Custom filters allow you to block the download and display of ads, both on site pages and in search results",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/bogachenko/adfilters/master/adfilters.txt",
+    "description": "Custom filters allow you to block popular trackers, banners, download and display ads on site pages and in search results",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/bogachenko/personalfilters/master/personalfilters.txt",
     "discontinuedDate": null,
     "donateUrl": null,
     "emailAddress": null,
     "forumUrl": null,
-    "homeUrl": "https://github.com/bogachenko/adfilters",
+    "homeUrl": "https://github.com/bogachenko/personalfilters",
     "issuesUrl": null,
     "licenseId": 11,
-    "name": "AdFilter",
+    "name": "bogachenko's Personal Filters",
     "policyUrl": null,
     "publishedDate": "2017-12-03T00:00:00",
     "submissionUrl": null,
     "syntaxId": 4,
-    "viewUrl": "https://raw.githubusercontent.com/bogachenko/adfilters/master/adfilters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/bogachenko/personalfilters/master/personalfilters.txt"
   },
   {
     "id": 512,
