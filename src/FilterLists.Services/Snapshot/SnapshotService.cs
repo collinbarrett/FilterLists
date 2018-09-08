@@ -33,7 +33,7 @@ namespace FilterLists.Services.Snapshot
 
         public async Task CaptureAsync(int batchSize)
         {
-            //await CleanupFailedSnapshots();
+            await CleanupFailedSnapshots();
             uaString = await UserAgentService.GetMostPopularString();
             var lists = await GetListsToCapture(batchSize);
             var snaps = await CreateAndSaveSnaps<Snapshot>(lists);
@@ -41,11 +41,14 @@ namespace FilterLists.Services.Snapshot
             await CreateAndSaveSnaps<SnapshotWayback>(listsToRetry);
         }
 
-        //TODO: speed this up, too slow, loads all into memory
         private async Task CleanupFailedSnapshots()
         {
-            DbContext.RemoveRange(DbContext.SnapshotRules.Where(sr => !sr.Snapshot.WasSuccessful));
-            await DbContext.SaveChangesAsync();
+            const string command =
+                @"DELETE snapshots_rules
+                  FROM snapshots_rules
+                  JOIN snapshots ON snapshots.Id = snapshots_rules.SnapshotId
+                  WHERE snapshots.WasSuccessful = 0;";
+            await DbContext.Database.ExecuteSqlCommandAsync(command);
         }
 
         private async Task<IEnumerable<FilterListViewUrlDto>> GetListsToCapture(int batchSize) =>
