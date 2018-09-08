@@ -8588,25 +8588,6 @@
     "viewUrl": "https://v.firebog.net/hosts/Shalla-mal.txt"
   },
   {
-    "id": 466,
-    "chatUrl": null,
-    "description": null,
-    "descriptionSourceUrl": null,
-    "discontinuedDate": null,
-    "donateUrl": null,
-    "emailAddress": null,
-    "forumUrl": null,
-    "homeUrl": null,
-    "issuesUrl": "https://github.com/kano1/I/issues",
-    "licenseId": 5,
-    "name": "Kano1 Simple List",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/kano1/I/master/adblock.txt"
-  },
-  {
     "id": 467,
     "chatUrl": null,
     "description": "Domain Bad Isue Ads",
