@@ -8569,25 +8569,6 @@
     "viewUrl": "https://v.firebog.net/hosts/Prigent-Malware.txt"
   },
   {
-    "id": 464,
-    "chatUrl": null,
-    "description": null,
-    "descriptionSourceUrl": null,
-    "discontinuedDate": null,
-    "donateUrl": null,
-    "emailAddress": null,
-    "forumUrl": null,
-    "homeUrl": null,
-    "issuesUrl": null,
-    "licenseId": 2,
-    "name": "Prigent Tracking",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": 2,
-    "viewUrl": "https://v.firebog.net/hosts/Prigent-Tracking.txt"
-  },
-  {
     "id": 465,
     "chatUrl": null,
     "description": null,
