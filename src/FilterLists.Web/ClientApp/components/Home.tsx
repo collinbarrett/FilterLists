@@ -155,7 +155,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                    backgroundColor: `#${e.colorHex}`,
                                    color: ListDetails.getContrast(`${e.colorHex}`)
                                }} title={e.description}>{e.name}</span>)}</div>,
-                           width: 100,
+                           width: 200,
                            headerClassName: "d-none d-md-block",
                            className: "d-none d-md-block"
                        },
