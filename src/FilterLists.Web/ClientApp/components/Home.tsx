@@ -19,6 +19,15 @@ interface IHomeState {
     pageSize: number;
 }
 
+const columnVisibilityDefaults = [
+    { column: "Name", visible: true },
+    { column: "Software", visible: true },
+    { column: "Tags", visible: true },
+    { column: "Languages", visible: true },
+    { column: "Updated Date", visible: true },
+    { column: "Details", visible: true }
+];
+
 export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
     constructor(props: any) {
         super(props);
@@ -31,14 +40,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
             loadingSoftware: true,
             languages: [],
             loadingLanguages: true,
-            columnVisibility: [
-                { column: "Name", visible: true },
-                { column: "Software", visible: true },
-                { column: "Tags", visible: true },
-                { column: "Languages", visible: true },
-                { column: "Updated Date", visible: true },
-                { column: "Details", visible: true }
-            ],
+            columnVisibility: columnVisibilityDefaults,
             pageSize: 20
         };
         this.updatePageSize = this.updatePageSize.bind(this);
@@ -112,19 +114,6 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                </p>;
     }
 
-    private renderColumnVisibilityCheckboxes() {
-        return <div className="d-none d-md-block text-right">
-                   Visible:&nbsp;&nbsp;{this.state.columnVisibility.map((c: IColumnVisibility) => this.renderColumnVisibilityCheckbox(c))}
-               </div>;
-    };
-
-    private renderColumnVisibilityCheckbox(props: IColumnVisibility) {
-        return <div className="form-check form-check-inline">
-                   <input className="form-check-input" type="checkbox" id={`checkbox${props.column.replace(/\s+/g, "")}` } defaultChecked={props.visible}/>
-                   <label className="form-check-label" htmlFor={`checkbox${props.column.replace(/\s+/g, "")}`}>{props.column}</label>
-               </div>;
-    }
-
     private static renderFilterListsTable(state: IHomeState) {
         return <ReactTable
                    data={state.lists}
@@ -140,7 +129,10 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                .includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.toUpperCase() > b.toUpperCase() ? 1 : -1,
                            Cell: (cell: any) => <h2 className="mb-0">{cell.value}</h2>,
-                           style: { overflow: "visible" }
+                           style: { overflow: "visible" },
+                           show: state.columnVisibility.filter((c: IColumnVisibility) => {
+                               return c.column === "Name";
+                           })[0].visible
                        },
                        {
                            Header: "Software Support",
@@ -164,7 +156,10 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            Cell: () => null,
                            width: 250,
                            headerClassName: "d-none d-md-block",
-                           className: "d-none d-md-block"
+                           className: "d-none d-md-block",
+                           show: state.columnVisibility.filter((c: IColumnVisibility) => {
+                               return c.column === "Software";
+                           })[0].visible
                        },
                        {
                            Header: "Tags",
@@ -180,7 +175,10 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                }} title={e.description}>{e.name}</span>)}</div>,
                            width: 200,
                            headerClassName: "d-none d-md-block",
-                           className: "d-none d-md-block"
+                           className: "d-none d-md-block",
+                           show: state.columnVisibility.filter((c: IColumnVisibility) => {
+                               return c.column === "Tags";
+                           })[0].visible
                        },
                        {
                            Header: "Languages",
@@ -202,11 +200,15 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                </select>,
                            sortable: false,
                            Cell: (cell: any) => <div className="fl-tag-container">{cell.value.map(
-                               (e: any) => <span className="badge badge-secondary" title={e.name}>{e.iso6391}</span>)}</div>,
+                               (e: any) => <span className="badge badge-secondary" title={e.name}>{e.iso6391}</span>)
+                           }</div>,
                            style: { whiteSpace: "inherit" },
                            width: 100,
                            headerClassName: "d-none d-md-block",
-                           className: "d-none d-md-block"
+                           className: "d-none d-md-block",
+                           show: state.columnVisibility.filter((c: IColumnVisibility) => {
+                               return c.column === "Languages";
+                           })[0].visible
                        },
                        {
                            Header: "Updated",
@@ -222,7 +224,10 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            style: { whiteSpace: "inherit" },
                            width: 100,
                            headerClassName: "d-none d-md-block",
-                           className: "d-none d-md-block"
+                           className: "d-none d-md-block",
+                           show: state.columnVisibility.filter((c: IColumnVisibility) => {
+                               return c.column === "Updated Date";
+                           })[0].visible
                        },
                        {
                            Header: "Details",
@@ -242,7 +247,10 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                          </button>}
                                </div>,
                            style: { textAlign: "center" },
-                           width: 90
+                           width: 90,
+                           show: state.columnVisibility.filter((c: IColumnVisibility) => {
+                               return c.column === "Details";
+                           })[0].visible
                        }
                    ]}
                    SubComponent={(row: any) => {
@@ -251,6 +259,19 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                        );
                    }}
                    className="-striped -highlight"/>;
+    }
+
+    private renderColumnVisibilityCheckboxes() {
+        return <div className="d-none d-md-block text-right">
+                   Visible:&nbsp;&nbsp;{this.state.columnVisibility.map((c: IColumnVisibility) => this.renderColumnVisibilityCheckbox(c))}
+               </div>;
+    };
+
+    private renderColumnVisibilityCheckbox(props: IColumnVisibility) {
+        return <div className="form-check form-check-inline">
+                   <input className="form-check-input" type="checkbox" id={`checkbox${props.column.replace(/\s+/g, "")}`} defaultChecked={props.visible} />
+                   <label className="form-check-label" htmlFor={`checkbox${props.column.replace(/\s+/g, "")}`}>{props.column}</label>
+               </div>;
     }
 }
 
