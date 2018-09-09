@@ -23,5 +23,7 @@ namespace FilterLists.Services.Seed.Models
         public string SubmissionUrl { get; set; }
         public uint? SyntaxId { get; set; }
         public string ViewUrl { get; set; }
+        public string ViewUrlMirror1 { get; set; }
+        public string ViewUrlMirror2 { get; set; }
     }
 }

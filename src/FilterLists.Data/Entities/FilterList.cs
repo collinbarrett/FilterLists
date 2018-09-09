@@ -36,5 +36,7 @@ namespace FilterLists.Data.Entities
         public Syntax Syntax { get; set; }
         public ICollection<FilterListTag> FilterListTags { get; set; }
         public string ViewUrl { get; set; }
+        public string ViewUrlMirror1 { get; set; }
+        public string ViewUrlMirror2 { get; set; }
     }
 }

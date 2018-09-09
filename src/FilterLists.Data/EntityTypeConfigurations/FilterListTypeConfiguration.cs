@@ -44,6 +44,10 @@ namespace FilterLists.Data.EntityTypeConfigurations
                              .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.ViewUrl)
                              .HasColumnType("TEXT");
+            entityTypeBuilder.Property(x => x.ViewUrlMirror1)
+                             .HasColumnType("TEXT");
+            entityTypeBuilder.Property(x => x.ViewUrlMirror2)
+                             .HasColumnType("TEXT");
         }
     }
 }
