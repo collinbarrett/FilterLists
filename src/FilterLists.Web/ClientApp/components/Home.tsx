@@ -15,6 +15,7 @@ interface IHomeState {
     loadingSoftware: boolean;
     languages: ILanguageDto[];
     loadingLanguages: boolean;
+    columnVisibility: IColumnVisibility[];
     pageSize: number;
 }
 
@@ -30,6 +31,14 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
             loadingSoftware: true,
             languages: [],
             loadingLanguages: true,
+            columnVisibility: [
+                { column: "name", visible: true },
+                { column: "software", visible: true },
+                { column: "tags", visible: true },
+                { column: "languages", visible: true },
+                { column: "updatedDate", visible: true },
+                { column: "details", visible: true }
+            ],
             pageSize: 20
         };
         this.updatePageSize = this.updatePageSize.bind(this);
@@ -45,6 +54,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
               </p>
             : <div>
                   {Home.renderTagline(this.state)}
+                  {this.renderColumnVisibilityCheckboxes()}
                   {Home.renderFilterListsTable(this.state)}
               </div>;
         return <div>
@@ -100,6 +110,19 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                    }</strong> unique rules across <strong>{state.lists.length
                    }</strong> filter and host lists for advertisements, trackers, malware, and annoyances.
                </p>;
+    }
+
+    private renderColumnVisibilityCheckboxes() {
+        return <div className="d-none d-md-block">
+                   {this.state.columnVisibility.map((c: IColumnVisibility) => this.renderColumnVisibilityCheckbox(c))}
+               </div>;
+    };
+
+    private renderColumnVisibilityCheckbox(props: IColumnVisibility) {
+        return <div className="form-check form-check-inline">
+                   <input className="form-check-input" type="checkbox" id="inlineCheckbox" defaultChecked={props.visible}/>
+                   <label className="form-check-label" htmlFor="inlineCheckbox">{props.column}</label>
+               </div>;
     }
 
     private static renderFilterListsTable(state: IHomeState) {
@@ -259,4 +282,9 @@ interface IListTagDto {
     name: string;
     colorHex: string;
     description: string;
+}
+
+interface IColumnVisibility {
+    column: string;
+    visible: boolean;
 }
