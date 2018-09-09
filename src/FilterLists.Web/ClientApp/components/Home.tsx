@@ -32,12 +32,12 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
             languages: [],
             loadingLanguages: true,
             columnVisibility: [
-                { column: "name", visible: true },
-                { column: "software", visible: true },
-                { column: "tags", visible: true },
-                { column: "languages", visible: true },
-                { column: "updatedDate", visible: true },
-                { column: "details", visible: true }
+                { column: "Name", visible: true },
+                { column: "Software", visible: true },
+                { column: "Tags", visible: true },
+                { column: "Languages", visible: true },
+                { column: "Updated Date", visible: true },
+                { column: "Details", visible: true }
             ],
             pageSize: 20
         };
@@ -54,8 +54,8 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
               </p>
             : <div>
                   {Home.renderTagline(this.state)}
-                  {this.renderColumnVisibilityCheckboxes()}
                   {Home.renderFilterListsTable(this.state)}
+                  {this.renderColumnVisibilityCheckboxes()}
               </div>;
         return <div>
                    {contents}
@@ -100,7 +100,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
 
     updatePageSize() {
         this.setState({
-            pageSize: Math.max(Math.floor((window.innerHeight - 361) / 52), 5)
+            pageSize: Math.max(Math.floor((window.innerHeight - 386) / 52), 5)
         });
     }
 
@@ -113,15 +113,15 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
     }
 
     private renderColumnVisibilityCheckboxes() {
-        return <div className="d-none d-md-block">
-                   {this.state.columnVisibility.map((c: IColumnVisibility) => this.renderColumnVisibilityCheckbox(c))}
+        return <div className="d-none d-md-block text-right">
+                   Visible:&nbsp;&nbsp;{this.state.columnVisibility.map((c: IColumnVisibility) => this.renderColumnVisibilityCheckbox(c))}
                </div>;
     };
 
     private renderColumnVisibilityCheckbox(props: IColumnVisibility) {
         return <div className="form-check form-check-inline">
-                   <input className="form-check-input" type="checkbox" id="inlineCheckbox" defaultChecked={props.visible}/>
-                   <label className="form-check-label" htmlFor="inlineCheckbox">{props.column}</label>
+                   <input className="form-check-input" type="checkbox" id={`checkbox${props.column.replace(/\s+/g, "")}` } defaultChecked={props.visible}/>
+                   <label className="form-check-label" htmlFor={`checkbox${props.column.replace(/\s+/g, "")}`}>{props.column}</label>
                </div>;
     }
 
