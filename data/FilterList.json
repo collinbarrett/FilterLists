@@ -206,8 +206,8 @@
     "submissionUrl": "https://www.malwaredomainlist.com/contact.php",
     "syntaxId": 1,
     "viewUrl": "https://www.malwaredomainlist.com/hostslist/hosts.txt",
-    "viewUrlMirror1": null,
-    "viewUrlMirror2": null
+    "viewUrlMirror1": "https://cdn.rawgit.com/NanoMeow/MDLMirror/master/hosts.txt",
+    "viewUrlMirror2": "https://raw.githubusercontent.com/NanoMeow/MDLMirror/master/hosts.txt"
   },
   {
     "id": 11,
@@ -416,7 +416,7 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianList.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianList.txt",
     "viewUrlMirror2": null
   },
   {
@@ -2474,7 +2474,7 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://road.adblock.ro/lista.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://raw.githubusercontent.com/tcptomato/ROad-Block/master/road-block-filters-light.txt",
     "viewUrlMirror2": null
   },
   {
@@ -4090,8 +4090,8 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/heradhis/indonesianadblockrules/master/subscriptions/abpindo.txt",
-    "viewUrlMirror1": null,
+    "viewUrl": "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/heradhis/indonesianadblockrules/master/subscriptions/abpindo.txt",
     "viewUrlMirror2": null
   },
   {
@@ -5015,8 +5015,8 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://easylist.to/easylist/easyprivacy.txt",
-    "viewUrlMirror1": null,
-    "viewUrlMirror2": null
+    "viewUrlMirror1": "https://secure.fanboy.co.nz/easyprivacy.txt",
+    "viewUrlMirror2": "https://easylist-downloads.adblockplus.org/easyprivacy.txt"
   },
   {
     "id": 243,
@@ -5120,8 +5120,8 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt",
-    "viewUrlMirror1": null,
-    "viewUrlMirror2": null
+    "viewUrlMirror1": "https://fanboy.co.nz/fanboy-social.txt",
+    "viewUrlMirror2": "https://easylist.to/easylist/fanboy-social.txt"
   },
   {
     "id": 248,
@@ -6086,7 +6086,7 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://easylist.to/easylistgermany/easylistgermany.txt",
     "viewUrlMirror2": null
   },
   {
@@ -6254,8 +6254,8 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://easylist.to/easylist/easylist.txt",
-    "viewUrlMirror1": null,
-    "viewUrlMirror2": null
+    "viewUrlMirror1": "https://secure.fanboy.co.nz/easylist.txt",
+    "viewUrlMirror2": "https://easylist-downloads.adblockplus.org/easylist.txt"
   },
   {
     "id": 302,
@@ -6800,7 +6800,7 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/stayingonbrowser/Staying%20On%20The%20Phone%20Browser",
     "viewUrlMirror2": null
   },
   {
@@ -6821,7 +6821,7 @@
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExtensionsForUBO%26Nano.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExtensionsForUBO&Nano.txt",
     "viewUrlMirror2": null
   },
   {
@@ -7980,27 +7980,6 @@
     "viewUrlMirror2": null
   },
   {
-    "id": 384,
-    "chatUrl": null,
-    "description": "This list is made so as to make it a lot easier on paper to use Norwegian cashback services without necessarily having to turn off your adblocker. This is because it'll prevent your adblocker from working on these sites, as adblockers have otherwise been known to interrupt cashback recognition mechanisms. It's currently tailored to users of Kickback, ViaTrumf and Norwegian Reward.",
-    "descriptionSourceUrl": null,
-    "discontinuedDate": null,
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "forumUrl": null,
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 10,
-    "name": "Norwegian Cashback Helper",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianCashbackHelper.txt",
-    "viewUrlMirror1": null,
-    "viewUrlMirror2": null
-  },
-  {
     "id": 385,
     "chatUrl": null,
     "description": "Are you tired of having to use Paint to remove potentially sensitive usernames, each and every time you're making a compilation of social media posts? Say no more! This list will remove posters' usernames from the biggest compilation sources, so that you can simply take a screencap and add it directly into your video/timeline!",
@@ -8018,7 +7997,7 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Username%20Hider%20for%20Compilation%20Creators.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Username%20Hider%20for%20Compilation%20Creators.txt",
     "viewUrlMirror2": null
   },
   {
@@ -8039,28 +8018,7 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/S%C3%A1megiella-interneahttalisttu.txt",
-    "viewUrlMirror1": null,
-    "viewUrlMirror2": null
-  },
-  {
-    "id": 387,
-    "chatUrl": null,
-    "description": "Removes ads, affiliation ads, and empty boxes on Norwegian sites to produce a cleaner browser experience. Meant to be used on top of general filters.",
-    "descriptionSourceUrl": null,
-    "discontinuedDate": null,
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "forumUrl": null,
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 10,
-    "name": "Dandelion Sprout's Norwegian Filters for Tidier Websites (iOS Safari)",
-    "policyUrl": null,
-    "publishedDate": null,
-    "submissionUrl": null,
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.json",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/S%C3%A1megiella-interneahttalisttu.txt",
     "viewUrlMirror2": null
   },
   {
@@ -8081,7 +8039,7 @@
     "submissionUrl": null,
     "syntaxId": 10,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl",
     "viewUrlMirror2": null
   },
   {
@@ -8102,7 +8060,7 @@
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/List%20for%20Chrome%20Personal%20Blocklist",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/List%20for%20Chrome%20Personal%20Blocklist",
     "viewUrlMirror2": null
   },
   {
@@ -8144,7 +8102,7 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/IHateOverpromotedGames.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/IHateOverpromotedGames.txt",
     "viewUrlMirror2": null
   },
   {
@@ -8165,7 +8123,7 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/BrowseWebsitesWithoutLoggingIn.txt",
     "viewUrlMirror2": null
   },
   {
@@ -8186,7 +8144,7 @@
     "submissionUrl": null,
     "syntaxId": 11,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json",
     "viewUrlMirror2": null
   },
   {
@@ -8858,7 +8816,7 @@
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/AdawayHosts",
     "viewUrlMirror2": null
   },
   {
@@ -8879,7 +8837,7 @@
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Website%20Stretcher.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout%27s%20Website%20Stretcher.txt",
     "viewUrlMirror2": null
   },
   {
@@ -8900,7 +8858,7 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-F%D1%96%D0%9C%20List.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-F%D1%96%D0%9C%20List.txt",
     "viewUrlMirror2": null
   },
   {
@@ -8921,13 +8879,13 @@
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-IMDB%20List.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-IMDB%20List.txt",
     "viewUrlMirror2": null
   },
   {
     "id": 434,
     "chatUrl": null,
-    "description": "Are you tired of having to turn off autoplay on YouTube every time you e.g. go to incognito mode? Are you worried of having to use specific extensions just for that purpose? Then this list is for you.",
+    "description": "Are you tired of having to turn off autoplay on YouTube every time you e.g. go to incognito mode? Are you worried of having to use specific extensions just for that purpose? Then this list is for you. Now also working on phone browsers!",
     "descriptionSourceUrl": null,
     "discontinuedDate": null,
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
@@ -8942,7 +8900,7 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/StopAutoplayOnYouTube.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "http://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/StopAutoplayOnYouTube.txt",
     "viewUrlMirror2": null
   },
   {
@@ -10139,7 +10097,7 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt",
     "viewUrlMirror2": null
   },
   {
@@ -10160,7 +10118,7 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt",
     "viewUrlMirror2": null
   },
   {
@@ -12029,7 +11987,7 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Elsagate%20List.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-Elsagate%20List.txt",
     "viewUrlMirror2": null
   },
   {
