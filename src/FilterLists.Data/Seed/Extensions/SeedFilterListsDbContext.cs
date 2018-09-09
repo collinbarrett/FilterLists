@@ -24,6 +24,7 @@ namespace FilterLists.Data.Seed.Extensions
             dbContext.InsertOnDuplicateKeyUpdate<FilterListLanguage>(dataPath);
             dbContext.InsertOnDuplicateKeyUpdate<FilterListMaintainer>(dataPath);
             dbContext.InsertOnDuplicateKeyUpdate<FilterListTag>(dataPath);
+            dbContext.InsertOnDuplicateKeyUpdate<Dependent>(dataPath);
             dbContext.InsertOnDuplicateKeyUpdate<Fork>(dataPath);
             dbContext.InsertOnDuplicateKeyUpdate<Merge>(dataPath);
             dbContext.InsertOnDuplicateKeyUpdate<SoftwareSyntax>(dataPath);
