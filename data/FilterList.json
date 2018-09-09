@@ -1901,7 +1901,7 @@
   },
   {
     "id": 102,
-    "chatUrl": null,
+    "chatUrl": "https://discord.me/yourduskquibbles",
     "description": "Block annoying web elements and reclaim lost screen real estate to make the web more user friendly!",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt",
     "discontinuedDate": null,
