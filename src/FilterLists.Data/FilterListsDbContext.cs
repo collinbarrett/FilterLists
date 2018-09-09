@@ -22,6 +22,7 @@ namespace FilterLists.Data
         public DbSet<Syntax> Syntaxes { get; set; }
         public DbSet<Tag> Tags { get; set; }
 
+        public DbSet<Dependent> Dependents { get; set; }
         public DbSet<FilterListLanguage> FilterListLanguages { get; set; }
         public DbSet<FilterListMaintainer> FilterListMaintainers { get; set; }
         public DbSet<FilterListTag> FilterListTags { get; set; }
@@ -48,6 +49,7 @@ namespace FilterLists.Data
             modelBuilder.ApplyConfiguration(new SyntaxTypeConfiguration());
             modelBuilder.ApplyConfiguration(new TagTypeConfiguration());
 
+            modelBuilder.ApplyConfiguration(new DependentTypeConfiguration());
             modelBuilder.ApplyConfiguration(new FilterListLanguageTypeConfiguration());
             modelBuilder.ApplyConfiguration(new FilterListMaintainerTypeConfiguration());
             modelBuilder.ApplyConfiguration(new FilterListTagTypeConfiguration());
