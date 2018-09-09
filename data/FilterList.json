@@ -6431,13 +6431,13 @@
     "emailAddress": null,
     "forumUrl": null,
     "homeUrl": "https://github.com/KonoromiHimaries/PolishSubFilters",
-    "issuesUrl": null,
+    "issuesUrl": "https://discord.gg/UEWEBqz",
     "licenseId": 9,
     "name": "Polish Anti-Donate Filters",
     "policyUrl": null,
     "publishedDate": "2018-01-06T00:00:00",
     "submissionUrl": null,
-    "syntaxId": 3,
+    "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/KonoromiHimaries/PolishSubFilters/master/internal-filters/anti-donate-filters/anty-donacje.txt"
   },
   {
@@ -6469,13 +6469,13 @@
     "emailAddress": null,
     "forumUrl": null,
     "homeUrl": "https://github.com/KonoromiHimaries/PolishSubFilters/",
-    "issuesUrl": null,
+    "issuesUrl": "https://discord.gg/UEWEBqz",
     "licenseId": 9,
     "name": "Polish Internal Filters",
     "policyUrl": null,
     "publishedDate": "2018-01-26T00:00:00",
     "submissionUrl": null,
-    "syntaxId": 3,
+    "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/KonoromiHimaries/PolishSubFilters/master/internal-filters/wewnetrzne.txt"
   },
   {
