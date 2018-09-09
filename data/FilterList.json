@@ -206,8 +206,8 @@
     "submissionUrl": "https://www.malwaredomainlist.com/contact.php",
     "syntaxId": 1,
     "viewUrl": "https://www.malwaredomainlist.com/hostslist/hosts.txt",
-    "viewUrlMirror1": "https://cdn.rawgit.com/NanoMeow/MDLMirror/master/hosts.txt",
-    "viewUrlMirror2": "https://raw.githubusercontent.com/NanoMeow/MDLMirror/master/hosts.txt"
+    "viewUrlMirror1": null,
+    "viewUrlMirror2": null
   },
   {
     "id": 11,
@@ -5120,8 +5120,8 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt",
-    "viewUrlMirror1": "https://fanboy.co.nz/fanboy-social.txt",
-    "viewUrlMirror2": "https://easylist.to/easylist/fanboy-social.txt"
+    "viewUrlMirror1": "https://fanboy.co.nz/fanboy-annoyance.txt",
+    "viewUrlMirror2": "https://easylist.to/easylist/fanboy-annoyance.txt"
   },
   {
     "id": 248,
@@ -5372,8 +5372,8 @@
     "submissionUrl": null,
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-social.txt",
-    "viewUrlMirror1": null,
-    "viewUrlMirror2": null
+    "viewUrlMirror1": "https://fanboy.co.nz/fanboy-social.txt",
+    "viewUrlMirror2": "https://easylist-downloads.adblockplus.org/fanboy-social.txt"
   },
   {
     "id": 260,
