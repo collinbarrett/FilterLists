@@ -34,19 +34,12 @@ namespace FilterLists.Data.Seed.Extensions
         private static void SeedOrUpdate<TEntity>(this DbContext dbContext, string dataPath)
             where TEntity : class, IBaseEntity
         {
-            var entityType = dbContext.Model.FindEntityType(typeof(TEntity));
-            var properties = GetPropertiesLessValueGeneratedTimestamps(entityType);
-            var seedRows = GetSeedRows<TEntity>(dataPath);
-            ApplyRemovals(dbContext, seedRows);
-            InsertOnDuplicateKeyUpdate(dbContext, properties, entityType, seedRows);
+            var seed = GetSeed<TEntity>(dataPath);
+            ApplyRemovals(dbContext, seed);
+            InsertOnDuplicateKeyUpdate(dbContext, seed);
         }
 
-        private static List<IProperty> GetPropertiesLessValueGeneratedTimestamps(IEntityType entityType) =>
-            entityType.GetProperties()
-                      .Where(x => !new List<string> {"CreatedDateUtc", "ModifiedDateUtc"}.Contains(x.Name))
-                      .ToList();
-
-        private static List<TEntity> GetSeedRows<TEntity>(string dataPath) where TEntity : IBaseEntity
+        private static List<TEntity> GetSeed<TEntity>(string dataPath) where TEntity : IBaseEntity
         {
             try
             {
@@ -60,32 +53,44 @@ namespace FilterLists.Data.Seed.Extensions
             }
         }
 
-        //https://stackoverflow.com/a/52264468/2343739
-        private static void ApplyRemovals<TEntity>(DbContext dbContext, IEnumerable<TEntity> seedRows)
+        private static void ApplyRemovals<TEntity>(DbContext dbContext, IEnumerable<TEntity> seed)
             where TEntity : class
         {
-            var entityType = dbContext.Model.FindEntityType(typeof(TEntity));
-            var entityPk = entityType.FindPrimaryKey();
-            var dbEntity = Expression.Parameter(entityType.ClrType, "e");
-            var matchAny = seedRows.Select(e => entityPk.Properties
-                                                             .Select(p => Expression.Equal(
-                                                                 Expression.Property(dbEntity, p.PropertyInfo),
-                                                                 Expression.Property(Expression.Constant(e), p.PropertyInfo)))
-                                                             .Aggregate(Expression.AndAlso))
-                                   .Aggregate<BinaryExpression, Expression>(null,
-                                       (current, match) =>
-                                           current != null ? Expression.OrElse(current, match) : match);
-            var notInSeedRows = Expression.Lambda<Func<TEntity, bool>>(Expression.Not(matchAny), dbEntity);
-            var removedEntities = dbContext.Set<TEntity>().Where(notInSeedRows);
+            var removedEntities = GetRemovedEntities(dbContext, seed);
             dbContext.RemoveRange(removedEntities);
             dbContext.SaveChanges();
         }
 
-        private static void InsertOnDuplicateKeyUpdate<TEntity>(DbContext dbContext,
-            IReadOnlyCollection<IProperty> properties, IEntityType entityType, IEnumerable<TEntity> seedRows)
+        //https://stackoverflow.com/a/52264468/2343739
+        private static IEnumerable<TEntity> GetRemovedEntities<TEntity>(DbContext dbContext, IEnumerable<TEntity> seed)
+            where TEntity : class
+        {
+            var entityType = dbContext.Model.FindEntityType(typeof(TEntity));
+            var dbEntity = Expression.Parameter(entityType.ClrType, "e");
+            var matchesAnyPk = GetMatchesAnyPk(seed, entityType, dbEntity);
+            var notInSeed = Expression.Lambda<Func<TEntity, bool>>(Expression.Not(matchesAnyPk), dbEntity);
+            return dbContext.Set<TEntity>().Where(notInSeed);
+        }
+
+        private static Expression GetMatchesAnyPk<TEntity>(IEnumerable<TEntity> seed, IEntityType entityType,
+            Expression dbEntity)
+            where TEntity : class =>
+            seed.Select(e => entityType.FindPrimaryKey()
+                                       .Properties
+                                       .Select(p => Expression.Equal(
+                                           Expression.Property(dbEntity, p.PropertyInfo),
+                                           Expression.Property(Expression.Constant(e), p.PropertyInfo)))
+                                       .Aggregate(Expression.AndAlso))
+                .Aggregate(null,
+                    (Func<Expression, BinaryExpression, Expression>)((current, match) =>
+                        current != null ? Expression.OrElse(current, match) : match));
+
+        private static void InsertOnDuplicateKeyUpdate<TEntity>(DbContext dbContext, IEnumerable<TEntity> seed)
             where TEntity : IBaseEntity
         {
-            var values = CreateValues(seedRows, properties);
+            var entityType = dbContext.Model.FindEntityType(typeof(TEntity));
+            var properties = GetPropertiesLessValueGeneratedTimestamps(entityType);
+            var values = CreateValues(seed, properties);
             if (values == "")
                 return;
             var columns = string.Join(", ", properties.Select(x => x.Name));
@@ -95,10 +100,15 @@ namespace FilterLists.Data.Seed.Extensions
             dbContext.Database.ExecuteSqlCommand(sql);
         }
 
-        private static string CreateValues<TEntity>(IEnumerable<TEntity> seedRows,
+        private static List<IProperty> GetPropertiesLessValueGeneratedTimestamps(IEntityType entityType) =>
+            entityType.GetProperties()
+                      .Where(x => !new List<string> {"CreatedDateUtc", "ModifiedDateUtc"}.Contains(x.Name))
+                      .ToList();
+
+        private static string CreateValues<TEntity>(IEnumerable<TEntity> seed,
             IReadOnlyCollection<IProperty> properties) where TEntity : IBaseEntity =>
-            seedRows.Select(row => CreateRowValues(properties, row))
-                    .Aggregate("", (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
+            seed.Select(row => CreateRowValues(properties, row))
+                .Aggregate("", (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
 
         private static string CreateRowValues<TEntity>(IEnumerable<IProperty> properties, TEntity row)
             where TEntity : IBaseEntity =>
