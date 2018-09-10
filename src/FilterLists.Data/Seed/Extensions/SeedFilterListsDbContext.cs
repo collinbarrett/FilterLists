@@ -14,35 +14,31 @@ namespace FilterLists.Data.Seed.Extensions
     {
         public static void SeedOrUpdate(this FilterListsDbContext dbContext, string dataPath)
         {
-            dbContext.InsertOnDuplicateKeyUpdate<Language>(dataPath);
-            dbContext.InsertOnDuplicateKeyUpdate<License>(dataPath);
-            dbContext.InsertOnDuplicateKeyUpdate<Maintainer>(dataPath);
-            dbContext.InsertOnDuplicateKeyUpdate<Software>(dataPath);
-            dbContext.InsertOnDuplicateKeyUpdate<Syntax>(dataPath);
-            dbContext.InsertOnDuplicateKeyUpdate<Tag>(dataPath);
-            dbContext.InsertOnDuplicateKeyUpdate<FilterList>(dataPath);
-            dbContext.InsertOnDuplicateKeyUpdate<FilterListLanguage>(dataPath);
-            dbContext.InsertOnDuplicateKeyUpdate<FilterListMaintainer>(dataPath);
-            dbContext.InsertOnDuplicateKeyUpdate<FilterListTag>(dataPath);
-            dbContext.InsertOnDuplicateKeyUpdate<Dependent>(dataPath);
-            dbContext.InsertOnDuplicateKeyUpdate<Fork>(dataPath);
-            dbContext.InsertOnDuplicateKeyUpdate<Merge>(dataPath);
-            dbContext.InsertOnDuplicateKeyUpdate<SoftwareSyntax>(dataPath);
+            dbContext.SeedOrUpdate<Language>(dataPath);
+            dbContext.SeedOrUpdate<License>(dataPath);
+            dbContext.SeedOrUpdate<Maintainer>(dataPath);
+            dbContext.SeedOrUpdate<Software>(dataPath);
+            dbContext.SeedOrUpdate<Syntax>(dataPath);
+            dbContext.SeedOrUpdate<Tag>(dataPath);
+            dbContext.SeedOrUpdate<FilterList>(dataPath);
+            dbContext.SeedOrUpdate<FilterListLanguage>(dataPath);
+            dbContext.SeedOrUpdate<FilterListMaintainer>(dataPath);
+            dbContext.SeedOrUpdate<FilterListTag>(dataPath);
+            dbContext.SeedOrUpdate<Dependent>(dataPath);
+            dbContext.SeedOrUpdate<Fork>(dataPath);
+            dbContext.SeedOrUpdate<Merge>(dataPath);
+            dbContext.SeedOrUpdate<SoftwareSyntax>(dataPath);
         }
 
-        private static void InsertOnDuplicateKeyUpdate<TEntity>(this DbContext dbContext, string dataPath)
+        private static void SeedOrUpdate<TEntity>(this DbContext dbContext, string dataPath)
             where TEntity : IBaseEntity
         {
             var entityType = dbContext.Model.FindEntityType(typeof(TEntity));
             var properties = GetPropertiesLessValueGeneratedTimestamps(entityType);
             var values = CreateValues<TEntity>(properties, dataPath);
-            if (values == "") return;
-            var columns = string.Join(", ", properties.Select(x => x.Name));
-            var updates = CreateUpdates(properties);
-            var rawSqlString = "INSERT INTO " + entityType.Relational().TableName + " (" + columns + ") VALUES " +
-                               values + " ON DUPLICATE KEY UPDATE " + updates;
-            dbContext.Database.ExecuteSqlCommand(rawSqlString);
-            dbContext.SaveChanges();
+            if (values == "")
+                return;
+            InsertOnDuplicateKeyUpdate(dbContext, properties, entityType, values);
         }
 
         //TODO: get seed properties dynamically from JSON
@@ -88,6 +84,16 @@ namespace FilterLists.Data.Seed.Extensions
             if (property.ClrType == typeof(DateTime?))
                 return "'" + ((DateTime)value).ToString("yyyy-MM-dd HH:mm:ss") + "'";
             return value;
+        }
+
+        private static void InsertOnDuplicateKeyUpdate(DbContext dbContext, IReadOnlyCollection<IProperty> properties,
+            IEntityType entityType, string values)
+        {
+            var columns = string.Join(", ", properties.Select(x => x.Name));
+            var updates = CreateUpdates(properties);
+            var rawSqlString = "INSERT INTO " + entityType.Relational().TableName + " (" + columns + ") VALUES " +
+                               values + " ON DUPLICATE KEY UPDATE " + updates;
+            dbContext.Database.ExecuteSqlCommand(rawSqlString);
         }
 
         private static string CreateUpdates(IReadOnlyCollection<IProperty> properties)
