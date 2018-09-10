@@ -76,7 +76,11 @@ function ListInfo(props: any) {
 function ListUrls(props: any) {
     return <div className="col-3 p-0 btn-group-vertical justify-content-start d-flex align-items-end">
                <SubscribeUrl url={props.details.viewUrl} name={props.details.name}/>
+               <SubscribeUrlMirror url={props.details.viewUrlMirror1} name={props.details.name}/>
+               <SubscribeUrlMirror url={props.details.viewUrlMirror2} name={props.details.name}/>
                <ViewUrl url={props.details.viewUrl} name={props.details.name}/>
+               <ViewUrlMirror url={props.details.viewUrlMirror1} name={props.details.name}/>
+               <ViewUrlMirror url={props.details.viewUrlMirror2} name={props.details.name}/>
                <HomeUrl url={props.details.homeUrl} name={props.details.name}/>
                <PolicyUrl url={props.details.policyUrl} name={props.details.name}/>
                <DonateUrl url={props.details.donateUrl} name={props.details.name}/>
@@ -199,6 +203,30 @@ function SubscribeUrl(props: any) {
     }
 };
 
+function SubscribeUrlMirror(props: any) {
+    return props.url
+        ? props.url.indexOf("https://") === -1
+            ? SubscribeUrlNotSecure()
+            : SubscribeUrlSecondary()
+        : null;
+
+    function SubscribeUrlSecondary() {
+        return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+                  className="btn btn-secondary btn-block fl-btn-details-action"
+                  title={`Mirror - Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).`}>
+                   Subscribe
+               </a>;
+    }
+
+    function SubscribeUrlNotSecure() {
+        return <a href={`abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${encodeURIComponent(props.name)}`}
+                  className="btn btn-danger btn-block fl-btn-details-action"
+                  title={`Mirrow - Not Secure - Subscribe to list with browser extension supporting \"abp:\" protocol (e.g. uBlock Origin, AdBlock Plus).`}>
+                   Subscribe
+               </a>;
+    }
+};
+
 function ViewUrl(props: any) {
     return props.url.indexOf("https://") === -1
         ? ViewUrlNotSecure()
@@ -226,6 +254,30 @@ function ViewUrl(props: any) {
         return <a href={props.url}
                   className="btn btn-danger fl-btn-details-action"
                   title={`Not Secure - View ${props.name} in its raw format.`}>
+                   View
+               </a>;
+    }
+};
+
+function ViewUrlMirror(props: any) {
+    return props.url
+        ? props.url.indexOf("https://") === -1
+            ? ViewUrlNotSecure()
+            : viewUrlSecondary()
+        : null;
+
+    function viewUrlSecondary() {
+        return <a href={props.url}
+                  className="btn btn-secondary fl-btn-details-action"
+                  title={`Mirror - View ${props.name} in its raw format.`}>
+                   View
+               </a>;
+    }
+
+    function ViewUrlNotSecure() {
+        return <a href={props.url}
+                  className="btn btn-danger fl-btn-details-action"
+                  title={`Mirror - Not Secure - View ${props.name} in its raw format.`}>
                    View
                </a>;
     }
@@ -390,6 +442,8 @@ interface IFilterListDetailsDto {
     tags: IListTagDto[];
     updatedDate: string;
     viewUrl: string;
+    viewUrlMirror1: string;
+    viewUrlMirror2: string;
 }
 
 interface IListLicenseDto {
