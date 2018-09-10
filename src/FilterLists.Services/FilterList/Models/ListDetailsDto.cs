@@ -29,5 +29,7 @@ namespace FilterLists.Services.FilterList.Models
         public IEnumerable<ListTagDto> Tags { get; set; }
         public DateTime? UpdatedDate { get; set; }
         public string ViewUrl { get; set; }
+        public string ViewUrlMirror1 { get; set; }
+        public string ViewUrlMirror2 { get; set; }
     }
 }
