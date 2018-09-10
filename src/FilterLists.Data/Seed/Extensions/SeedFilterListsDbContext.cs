@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
 using Microsoft.EntityFrameworkCore;
@@ -59,14 +60,31 @@ namespace FilterLists.Data.Seed.Extensions
             }
         }
 
+        //https://stackoverflow.com/a/52264468/2343739
         private static void Delete<TEntity>(DbContext dbContext, IEnumerable<TEntity> seedRows)
             where TEntity : class, IBaseEntity
         {
-            var idProperties = typeof(TEntity).GetProperties().Where(p => p.Name.Contains("Id"));
-            var toRemove = dbContext.Set<TEntity>()
-                                    .Select(s => idProperties)
-                                    .Except(seedRows.Select(s => idProperties));
-            dbContext.RemoveRange(toRemove);
+            var entityType = dbContext.Model.FindEntityType(typeof(TEntity));
+            var entityPrimaryKey = entityType.FindPrimaryKey();
+            var dbEntity = Expression.Parameter(entityType.ClrType, "e");
+            var matchAny = seedRows.Select(entity => entityPrimaryKey.Properties
+                                                                     .Select(p => Expression.Equal(
+                                                                         Expression.Property(dbEntity, p.PropertyInfo),
+                                                                         Expression.Property(Expression.Constant(entity), p.PropertyInfo)))
+                                                                     .Aggregate(Expression.AndAlso))
+                                   .Aggregate<BinaryExpression, Expression>(null,
+                                       (current, match) => current != null ? Expression.OrElse(current, match) : match);
+            var dbQuery = dbContext.Set<TEntity>().AsQueryable();
+            if (matchAny != null)
+            {
+                var predicate = Expression.Lambda<Func<TEntity, bool>>(Expression.Not(matchAny), dbEntity);
+                dbQuery = dbQuery.Where(predicate);
+            }
+
+            var dbEntities = dbQuery.ToList();
+            if (dbEntities.Count == 0)
+                return;
+            dbContext.RemoveRange(dbEntities);
             dbContext.SaveChanges();
         }
 
