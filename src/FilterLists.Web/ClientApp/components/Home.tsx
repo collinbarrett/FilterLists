@@ -269,9 +269,25 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
 
     private renderColumnVisibilityCheckbox(props: IColumnVisibility) {
         return <div className="form-check form-check-inline">
-                   <input className="form-check-input" type="checkbox" id={`checkbox${props.column.replace(/\s+/g, "")}`} defaultChecked={props.visible} />
+                   <input className="form-check-input" type="checkbox"id={`checkbox${props.column.replace(/\s+/g, "")}`} defaultChecked={props.visible} onChange={() => this.checkColumn(props)}/>
                    <label className="form-check-label" htmlFor={`checkbox${props.column.replace(/\s+/g, "")}`}>{props.column}</label>
                </div>;
+    }
+
+    private checkColumn(props: IColumnVisibility) {
+        const columnVisibility = this.state.columnVisibility;
+        const index = this.findWithAttr(columnVisibility, "column", props.column);
+        columnVisibility[index].visible = !columnVisibility[index].visible;
+        this.forceUpdate();
+    }
+
+    private findWithAttr(array: any, attr: any, value: any) {
+        for (let i = 0; i < array.length; i += 1) {
+            if (array[i][attr] === value) {
+                return i;
+            }
+        }
+        return -1;
     }
 }
 
