@@ -20,12 +20,10 @@ interface IHomeState {
 }
 
 const columnVisibilityDefaults = [
-    { column: "Name", visible: true },
     { column: "Software", visible: true },
     { column: "Tags", visible: true },
     { column: "Languages", visible: true },
-    { column: "Updated Date", visible: true },
-    { column: "Details", visible: true }
+    { column: "Updated Date", visible: true }
 ];
 
 export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
@@ -129,10 +127,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                .includes(filter.value.toUpperCase()),
                            sortMethod: (a: any, b: any) => a.toUpperCase() > b.toUpperCase() ? 1 : -1,
                            Cell: (cell: any) => <h2 className="mb-0">{cell.value}</h2>,
-                           style: { overflow: "visible" },
-                           show: state.columnVisibility.filter((c: IColumnVisibility) => {
-                               return c.column === "Name";
-                           })[0].visible
+                           style: { overflow: "visible" }
                        },
                        {
                            Header: "Software Support",
@@ -247,10 +242,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                                          </button>}
                                </div>,
                            style: { textAlign: "center" },
-                           width: 90,
-                           show: state.columnVisibility.filter((c: IColumnVisibility) => {
-                               return c.column === "Details";
-                           })[0].visible
+                           width: 90
                        }
                    ]}
                    SubComponent={(row: any) => {
