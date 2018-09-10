@@ -30,11 +30,13 @@ namespace FilterLists.Data.Seed.Extensions
             dbContext.SeedOrUpdate<SoftwareSyntax>(dataPath);
         }
 
-        private static void SeedOrUpdate<TEntity>(this DbContext dbContext, string dataPath) where TEntity : IBaseEntity
+        private static void SeedOrUpdate<TEntity>(this DbContext dbContext, string dataPath)
+            where TEntity : class, IBaseEntity
         {
             var entityType = dbContext.Model.FindEntityType(typeof(TEntity));
             var properties = GetPropertiesLessValueGeneratedTimestamps(entityType);
             var seedRows = GetSeedRows<TEntity>(dataPath);
+            Delete(dbContext, seedRows);
             InsertOnDuplicateKeyUpdate(dbContext, properties, entityType, seedRows);
         }
 
@@ -55,6 +57,17 @@ namespace FilterLists.Data.Seed.Extensions
                 Console.WriteLine(e.Message);
                 return new List<TEntity>();
             }
+        }
+
+        private static void Delete<TEntity>(DbContext dbContext, IEnumerable<TEntity> seedRows)
+            where TEntity : class, IBaseEntity
+        {
+            var idProperties = typeof(TEntity).GetProperties().Where(p => p.Name.Contains("Id"));
+            var toRemove = dbContext.Set<TEntity>()
+                                    .Select(s => idProperties)
+                                    .Except(seedRows.Select(s => idProperties));
+            dbContext.RemoveRange(toRemove);
+            dbContext.SaveChanges();
         }
 
         private static void InsertOnDuplicateKeyUpdate<TEntity>(DbContext dbContext,
