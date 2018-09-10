@@ -37,7 +37,7 @@ namespace FilterLists.Data.Seed.Extensions
             var entityType = dbContext.Model.FindEntityType(typeof(TEntity));
             var properties = GetPropertiesLessValueGeneratedTimestamps(entityType);
             var seedRows = GetSeedRows<TEntity>(dataPath);
-            Delete(dbContext, seedRows);
+            ApplyRemovals(dbContext, seedRows);
             InsertOnDuplicateKeyUpdate(dbContext, properties, entityType, seedRows);
         }
 
@@ -61,30 +61,23 @@ namespace FilterLists.Data.Seed.Extensions
         }
 
         //https://stackoverflow.com/a/52264468/2343739
-        private static void Delete<TEntity>(DbContext dbContext, IEnumerable<TEntity> seedRows)
-            where TEntity : class, IBaseEntity
+        private static void ApplyRemovals<TEntity>(DbContext dbContext, IEnumerable<TEntity> seedRows)
+            where TEntity : class
         {
             var entityType = dbContext.Model.FindEntityType(typeof(TEntity));
-            var entityPrimaryKey = entityType.FindPrimaryKey();
+            var entityPk = entityType.FindPrimaryKey();
             var dbEntity = Expression.Parameter(entityType.ClrType, "e");
-            var matchAny = seedRows.Select(entity => entityPrimaryKey.Properties
-                                                                     .Select(p => Expression.Equal(
-                                                                         Expression.Property(dbEntity, p.PropertyInfo),
-                                                                         Expression.Property(Expression.Constant(entity), p.PropertyInfo)))
-                                                                     .Aggregate(Expression.AndAlso))
+            var matchAny = seedRows.Select(e => entityPk.Properties
+                                                             .Select(p => Expression.Equal(
+                                                                 Expression.Property(dbEntity, p.PropertyInfo),
+                                                                 Expression.Property(Expression.Constant(e), p.PropertyInfo)))
+                                                             .Aggregate(Expression.AndAlso))
                                    .Aggregate<BinaryExpression, Expression>(null,
-                                       (current, match) => current != null ? Expression.OrElse(current, match) : match);
-            var dbQuery = dbContext.Set<TEntity>().AsQueryable();
-            if (matchAny != null)
-            {
-                var predicate = Expression.Lambda<Func<TEntity, bool>>(Expression.Not(matchAny), dbEntity);
-                dbQuery = dbQuery.Where(predicate);
-            }
-
-            var dbEntities = dbQuery.ToList();
-            if (dbEntities.Count == 0)
-                return;
-            dbContext.RemoveRange(dbEntities);
+                                       (current, match) =>
+                                           current != null ? Expression.OrElse(current, match) : match);
+            var notInSeedRows = Expression.Lambda<Func<TEntity, bool>>(Expression.Not(matchAny), dbEntity);
+            var removedEntities = dbContext.Set<TEntity>().Where(notInSeedRows);
+            dbContext.RemoveRange(removedEntities);
             dbContext.SaveChanges();
         }
 
