@@ -1042,5 +1042,41 @@
   {
     "filterListId": 606,
     "maintainerId": 83
+  },
+  {
+    "filterListId": 481,
+    "maintainerId": 84
+  },
+  {
+    "filterListId": 482,
+    "maintainerId": 84
+  },
+  {
+    "filterListId": 483,
+    "maintainerId": 84
+  },
+  {
+    "filterListId": 484,
+    "maintainerId": 84
+  },
+  {
+    "filterListId": 485,
+    "maintainerId": 84
+  },
+  {
+    "filterListId": 486,
+    "maintainerId": 84
+  },
+  {
+    "filterListId": 487,
+    "maintainerId": 84
+  },
+  {
+    "filterListId": 488,
+    "maintainerId": 84
+  },
+  {
+    "filterListId": 489,
+    "maintainerId": 84
   }
 ]
