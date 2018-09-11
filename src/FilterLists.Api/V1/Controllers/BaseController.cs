@@ -11,7 +11,7 @@ namespace FilterLists.Api.V1.Controllers
     [ResponseCache(Duration = 86400)]
     public class BaseController : Controller
     {
-        protected static readonly TimeSpan MemoryCacheDurationDefault = TimeSpan.FromDays(1);
+        protected static readonly TimeSpan MemoryCacheSlidingExpirationDefault = TimeSpan.FromMinutes(5);
         protected readonly IMemoryCache MemoryCache;
         protected readonly SeedService SeedService;
 

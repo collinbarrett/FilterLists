@@ -17,7 +17,7 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> Seed() =>
             Json(await MemoryCache.GetOrCreate("LicensesController_Seed", entry =>
             {
-                entry.AbsoluteExpirationRelativeToNow = MemoryCacheDurationDefault;
+                entry.SlidingExpiration = MemoryCacheSlidingExpirationDefault;
                 return SeedService.GetAllAsync<License, LicenseSeedDto>();
             }));
     }
