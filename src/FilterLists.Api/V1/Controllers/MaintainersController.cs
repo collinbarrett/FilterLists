@@ -17,7 +17,7 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> Seed() =>
             Json(await MemoryCache.GetOrCreate("MaintainersController_Seed", entry =>
             {
-                entry.AbsoluteExpirationRelativeToNow = FourHoursFromNow;
+                entry.AbsoluteExpirationRelativeToNow = MemoryCacheDurationDefault;
                 return SeedService.GetAllAsync<Maintainer, MaintainerSeedDto>();
             }));
     }

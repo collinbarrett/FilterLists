@@ -18,7 +18,7 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> Seed() =>
             Json(await MemoryCache.GetOrCreate("ListsTagsController_Seed", entry =>
             {
-                entry.AbsoluteExpirationRelativeToNow = FourHoursFromNow;
+                entry.AbsoluteExpirationRelativeToNow = MemoryCacheDurationDefault;
                 return SeedService.GetAllAsync<FilterListTag, FilterListTagSeedDto>(
                     typeof(FilterListTag).GetProperty("FilterListId"),
                     typeof(FilterListTag).GetProperty("TagId"));

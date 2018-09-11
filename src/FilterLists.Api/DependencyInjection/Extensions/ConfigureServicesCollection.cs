@@ -16,6 +16,7 @@ namespace FilterLists.Api.DependencyInjection.Extensions
         {
             services.ConfigureCookiePolicy();
             services.AddMemoryCache();
+            services.AddResponseCaching();
             services.AddMvcCustom();
             services.AddRoutingCustom();
             services.AddApiVersioning();
