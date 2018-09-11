@@ -19,7 +19,7 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> Index() =>
             Json(await MemoryCache.GetOrCreate("LanguageService_Index", entry =>
             {
-                entry.AbsoluteExpirationRelativeToNow = MemoryCacheDurationDefault;
+                entry.SlidingExpiration = MemoryCacheSlidingExpirationDefault;
                 return languageService.GetAllTargeted();
             }));
 
@@ -27,7 +27,7 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> Seed() =>
             Json(await MemoryCache.GetOrCreate("LanguagesController_Seed", entry =>
             {
-                entry.AbsoluteExpirationRelativeToNow = MemoryCacheDurationDefault;
+                entry.SlidingExpiration = MemoryCacheSlidingExpirationDefault;
                 return SeedService.GetAllAsync<Language, LanguageSeedDto>();
             }));
     }
