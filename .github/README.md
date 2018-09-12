@@ -1,7 +1,7 @@
 ![FilterLists](https://github.com/collinbarrett/FilterLists/blob/master/imgs/logo_filterlists.png)
 
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://filterlists.com/)
-[![Travis](https://img.shields.io/travis/collinbarrett/FilterLists.svg?label=travis&branch=master)](https://travis-ci.org/collinbarrett/FilterLists)
+[![Travis](https://travis-ci.org/collinbarrett/FilterLists.svg?branch=master)](https://travis-ci.org/collinbarrett/FilterLists)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/collinbarrett/FilterLists/blob/master/LICENSE)
 [![Beerpay](https://beerpay.io/collinbarrett/FilterLists/badge.svg?style=beer-square)](https://beerpay.io/collinbarrett/FilterLists)
 [![Beerpay](https://beerpay.io/collinbarrett/FilterLists/make-wish.svg?style=flat-square)](https://beerpay.io/collinbarrett/FilterLists?focus=wish)
