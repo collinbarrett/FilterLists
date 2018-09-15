@@ -6,6 +6,7 @@ import ReactTable from "react-table"
 import "react-table/react-table.css"
 import "./listsTable.css";
 import * as moment from "moment";
+import { SoftwareIcon } from "./SoftwareIcon";
 import { getContrast } from "../../../../utils/GetContrast";
 import { DetailsExpander } from "../../components";
 
@@ -36,11 +37,10 @@ export const ListsTable = (props: IProps) => {
                        filterMethod: (f: any, r: any) =>
                            r[f.id].toUpperCase().includes(f.value.toUpperCase()),
                        sortMethod: (a: any, b: any) => a.toUpperCase() > b.toUpperCase() ? 1 : -1,
-                       Cell: (c: any) => <h2 className="mb-0">{c.value}</h2>,
-                       style: { overflow: "visible" }
+                       Cell: (c: any) => <h2 className="mb-0">{c.value}</h2>
                    },
                    {
-                       Header: "Software Support",
+                       Header: "Software",
                        accessor: "softwareIds",
                        filterable: true,
                        filterMethod: (f: any, r: any) =>
@@ -54,8 +54,8 @@ export const ListsTable = (props: IProps) => {
                                {props.software.map((s: any, i) => <option value={s.id} key={i}>{s.name}</option>)}
                            </select>,
                        sortable: false,
-                       Cell: () => null,
-                       width: 250,
+                       Cell: (c: any) => c.value.map((s: number, i: any) => <SoftwareIcon id={s} key={i}/>),
+                       width: 212,
                        headerClassName: "d-none d-md-block",
                        className: "d-none d-md-block",
                        show: props.columnVisibility.filter(
