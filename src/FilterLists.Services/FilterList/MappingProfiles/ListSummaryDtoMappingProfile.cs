@@ -13,7 +13,11 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                 .ForMember(d => d.Languages, o => o.MapFrom(l => l.FilterListLanguages.Select(la => la.Language)))
                 .ForMember(d => d.SoftwareIds,
                     o => o.MapFrom(l =>
-                        l.Syntax.SoftwareSyntaxes.Select(ss => (int)ss.Software.Id)))
+                        l.Syntax
+                         .SoftwareSyntaxes
+                         .Select(ss => ss.Software)
+                         .OrderBy(s => s.Name)
+                         .Select(s => (int)s.Id)))
                 .ForMember(d => d.Tags, o => o.MapFrom(l => l.FilterListTags.Select(m => m.Tag)))
                 .ForMember(d => d.UpdatedDate,
                     o => o.MapFrom(l =>
