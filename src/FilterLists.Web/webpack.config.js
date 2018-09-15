@@ -9,7 +9,7 @@ module.exports = (env) => {
     return [
         {
             stats: { modules: false },
-            entry: { 'main': "./ClientApp/boot.tsx" },
+            entry: { 'main': "./ClientApp/Boot.tsx" },
             resolve: { extensions: [".js", ".jsx", ".ts", ".tsx"] },
             output: {
                 path: path.join(__dirname, bundleOutputDir),
