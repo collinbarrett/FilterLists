@@ -1,12 +1,13 @@
 import * as React from "react";
-import img1 from "../../../../imgs/software/1-uBlock-Origin.svg";
-import img2 from "../../../../imgs/software/2-Adblock-Plus.svg";
-import img3 from "../../../../imgs/software/3-AdGuard.png";
-import img4 from "../../../../imgs/software/4-DNS66.png";
-import img5 from "../../../../imgs/software/5-Nano-Adblocker.png";
-import img6 from "../../../../imgs/software/6-AdBlock.png";
-import img7 from "../../../../imgs/software/7-AdAway.png";
-import img8 from "../../../../imgs/software/8-Personal-Blocklist.png";
+import img1 from "../../../../imgs/software/01-uBlock-Origin.svg";
+import img2 from "../../../../imgs/software/02-Adblock-Plus.svg";
+import img3 from "../../../../imgs/software/03-AdGuard.png";
+import img4 from "../../../../imgs/software/04-DNS66.png";
+import img5 from "../../../../imgs/software/05-Nano-Adblocker.png";
+import img6 from "../../../../imgs/software/06-AdBlock.png";
+import img7 from "../../../../imgs/software/07-AdAway.png";
+import img8 from "../../../../imgs/software/08-Personal-Blocklist.png";
+import img10 from "../../../../imgs/software/10-Redirector.png";
 
 interface IProps {
     id: number;
@@ -34,5 +35,6 @@ const icons: { [id: number]: IIcon; } = {
     5: { image: img5, imageTitle: "Nano Adblocker" },
     6: { image: img6, imageTitle: "AdBlock" },
     7: { image: img7, imageTitle: "AdAway" },
-    8: { image: img8, imageTitle: "Personal Blocklist" }
+    8: { image: img8, imageTitle: "Personal Blocklist" },
+    10: { image: img10, imageTitle: "Redirector" }
 };
