@@ -8,6 +8,10 @@ import img6 from "../../../../imgs/software/06-AdBlock.png";
 import img7 from "../../../../imgs/software/07-AdAway.png";
 import img8 from "../../../../imgs/software/08-Personal-Blocklist.png";
 import img10 from "../../../../imgs/software/10-Redirector.png";
+import img13 from "../../../../imgs/software/13-MinerBlock.svg";
+import img14 from "../../../../imgs/software/14-Pi-hole.png";
+import img15 from "../../../../imgs/software/15-uBlock.svg";
+import img16 from "../../../../imgs/software/16-Internet-Explorer-TPL.png";
 
 interface IProps {
     id: number;
@@ -36,5 +40,9 @@ const icons: { [id: number]: IIcon; } = {
     6: { image: img6, imageTitle: "AdBlock" },
     7: { image: img7, imageTitle: "AdAway" },
     8: { image: img8, imageTitle: "Personal Blocklist" },
-    10: { image: img10, imageTitle: "Redirector" }
+    10: { image: img10, imageTitle: "Redirector" },
+    13: { image: img13, imageTitle: "MinerBlock" },
+    14: { image: img14, imageTitle: "Pi-hole" },
+    15: { image: img15, imageTitle: "uBlock" },
+    16: { image: img16, imageTitle: "Internet Explorer (TPL)" }
 };
