@@ -55,7 +55,7 @@ export const ListsTable = (props: IProps) => {
                            </select>,
                        sortable: false,
                        Cell: (c: any) => c.value.map((s: number, i: any) => <SoftwareIcon id={s} key={i}/>),
-                       width: 212,
+                       width: 150,
                        headerClassName: "d-none d-md-block",
                        className: "d-none d-md-block",
                        show: props.columnVisibility.filter(
