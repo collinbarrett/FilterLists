@@ -1,10 +1,13 @@
 import * as React from "react";
 import { RouteComponentProps } from "react-router";
 import "isomorphic-fetch";
+import "../../utils/loader.css";
 import ReactTable from "react-table"
 import "react-table/react-table.css"
-import ListDetails from "./ListDetails";
+import "./home.css";
 import * as moment from "moment";
+import { getContrast } from "../../utils/GetContrast";
+import { DetailsExpanderContainer } from "./components";
 
 interface IHomeState {
     lists: IListDto[];
@@ -49,9 +52,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
             this.state.loadingRuleCount ||
             this.state.loadingSoftware ||
             this.state.loadingLanguages
-            ? <p>
-                  <em>Loading...</em>
-              </p>
+            ? <div className="loader">Loading...</div>
             : <div>
                   {Home.renderTagline(this.state)}
                   {Home.renderFilterListsTable(this.state)}
@@ -166,7 +167,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                            Cell: (cell: any) => <div className="fl-tag-container">{cell.value.map(
                                (e: any) => <span className="badge" style={{
                                    backgroundColor: `#${e.colorHex}`,
-                                   color: ListDetails.getContrast(`${e.colorHex}`)
+                                   color: getContrast(`${e.colorHex}`)
                                }} title={e.description}>{e.name}</span>)}</div>,
                            width: 200,
                            headerClassName: "d-none d-md-block",
@@ -247,7 +248,7 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
                    ]}
                    SubComponent={(row: any) => {
                        return (
-                           <ListDetails listId={row.original.id}/>
+                           <DetailsExpanderContainer listId={row.original.id}/>
                        );
                    }}
                    className="-striped -highlight"/>;
@@ -255,14 +256,17 @@ export class Home extends React.Component<RouteComponentProps<{}>, IHomeState> {
 
     private renderColumnVisibilityCheckboxes() {
         return <div className="d-none d-md-block text-right">
-                   Visible:&nbsp;&nbsp;{this.state.columnVisibility.map((c: IColumnVisibility) => this.renderColumnVisibilityCheckbox(c))}
+                   Visible:&nbsp;&nbsp;{this.state.columnVisibility.map(
+                   (c: IColumnVisibility) => this.renderColumnVisibilityCheckbox(c))}
                </div>;
     };
 
     private renderColumnVisibilityCheckbox(props: IColumnVisibility) {
         return <div className="form-check form-check-inline">
-                   <input className="form-check-input" type="checkbox"id={`checkbox${props.column.replace(/\s+/g, "")}`} defaultChecked={props.visible} onChange={() => this.checkColumn(props)}/>
-                   <label className="form-check-label" htmlFor={`checkbox${props.column.replace(/\s+/g, "")}`}>{props.column}</label>
+                   <input className="form-check-input" type="checkbox"id={`checkbox${props.column.replace(/\s+/g, "")}`
+} defaultChecked={props.visible} onChange={() => this.checkColumn(props)}/>
+                   <label className="form-check-label" htmlFor={`checkbox${props.column.replace(/\s+/g, "")}`}>{props
+                       .column}</label>
                </div>;
     }
 
