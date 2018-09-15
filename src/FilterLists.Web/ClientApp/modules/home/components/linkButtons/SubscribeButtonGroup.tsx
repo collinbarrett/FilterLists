@@ -30,12 +30,12 @@ const SubscribeButtonGroupDropdown = (props: ISubscribeButtonGroupDropdownProps)
         mirrorIndex++;
     }
 
-    return <div className="btn-group-vertical fl-btn-link" role="group">
+    return <div className="btn-group-vertical dropleft fl-btn-link" role="group">
                <BtnGroupDropSubscribe/>
                <div className="dropdown-menu" aria-labelledby="btnGroupDropSubscribe">
                    <SubscribeButton {...props} text={firstButtonText}/>
                    {props.urlMirrors.map(
-                       (m, i) => <SubscribeButton {...props} url={m} text={`Mirror ${i + 1 + mirrorIndex}`}/>)}
+                       (m, i) => <SubscribeButton {...props} url={m} text={`Mirror ${i + 1 + mirrorIndex}`} key={i}/>)}
                </div>
            </div>;
 };

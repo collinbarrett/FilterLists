@@ -30,12 +30,12 @@ const ViewButtonGroupDropdown = (props: IViewButtonGroupDropdownProps) => {
         mirrorIndex++;
     }
 
-    return <div className="btn-group-vertical fl-btn-link" role="group">
+    return <div className="btn-group-vertical dropleft fl-btn-link" role="group">
                <BtnGroupDropView/>
                <div className="dropdown-menu" aria-labelledby="btnGroupDropView">
                    <ViewButton {...props} text={firstButtonText}/>
                    {props.urlMirrors.map(
-                       (m, i) => <ViewButton {...props} url={m} text={`Mirror ${i + 1 + mirrorIndex}`}/>)}
+                       (m, i) => <ViewButton {...props} url={m} text={`Mirror ${i + 1 + mirrorIndex}`} key={i}/>)}
                </div>
            </div>;
 };
