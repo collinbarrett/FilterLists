@@ -2,9 +2,7 @@ import * as React from "react";
 import { IListDto } from "./IListDto";
 import { ISoftwareDto } from "./ISoftwareDto";
 import { ILanguageDto } from "./ILanguageDto";
-import { Tagline } from "./Tagline";
-import { ListsTable } from "./ListsTable";
-import { IColumnVisibility } from "./ListsTable";
+import { Tagline, ListsTable, IColumnVisibility } from "./components";
 
 const columnVisibilityDefaults = [
     { column: "Software", visible: true },
