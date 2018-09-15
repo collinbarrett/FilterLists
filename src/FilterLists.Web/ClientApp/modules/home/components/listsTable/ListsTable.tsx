@@ -113,7 +113,7 @@ export const ListsTable = (props: IProps) => {
                                    </span>)}
                            </div>,
                        style: { whiteSpace: "inherit" },
-                       width: 90,
+                       width: 95,
                        headerClassName: "d-none d-md-block",
                        className: "d-none d-md-block",
                        show: props.columnVisibility.filter(
