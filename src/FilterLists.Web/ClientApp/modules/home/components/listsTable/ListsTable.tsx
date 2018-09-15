@@ -70,15 +70,16 @@ export const ListsTable = (props: IProps) => {
                        sortable: false,
                        Cell: (c: any) =>
                            <div className="fl-tag-container">
-                               {c.value.map((e: any, i: any) => <span className="badge"
-                                                                      style={{
-                                                                          backgroundColor: `#${e.colorHex}`,
-                                                                          color: getContrast(`${e.colorHex}`)
-                                                                      }}
-                                                                      title={e.description}
-                                                                      key={i}>
-                                                                    {e.name}
-                                                                </span>)}
+                               {c.value.map((e: any, i: any) =>
+                                   <span className="badge"
+                                         style={{
+                                             backgroundColor: `#${e.colorHex}`,
+                                             color: getContrast(`${e.colorHex}`)
+                                         }}
+                                         title={e.description}
+                                         key={i}>
+                                       {e.name}
+                                   </span>)}
                            </div>,
                        width: 200,
                        headerClassName: "d-none d-md-block",
@@ -98,17 +99,19 @@ export const ListsTable = (props: IProps) => {
                                style={{ width: "100%" }}
                                value={filter ? filter.value : "any"}>
                                <option value="any">Any</option>
-                               {props.languages.map((l: any, i) => <option value={l.iso6391} key={i}>{l.name}</option>)
-                               }
+                               {props.languages.map((l: any, i) =>
+                                   <option value={l.iso6391} key={i}>{l.name}</option>)}
                            </select>,
                        sortable: false,
-                       Cell: (c: any) => <div className="fl-tag-container">
-                                             {c.value.map((e: any, i: any) => <span className="badge badge-secondary"
-                                                                                    title={e.name}
-                                                                                    key={i}>
-                                                                                  {e.iso6391}
-                                                                              </span>)}
-                                         </div>,
+                       Cell: (c: any) =>
+                           <div className="fl-tag-container">
+                               {c.value.map((e: any, i: any) =>
+                                   <span className="badge badge-secondary"
+                                         title={e.name}
+                                         key={i}>
+                                       {e.iso6391}
+                                   </span>)}
+                           </div>,
                        style: { whiteSpace: "inherit" },
                        width: 100,
                        headerClassName: "d-none d-md-block",
@@ -123,9 +126,10 @@ export const ListsTable = (props: IProps) => {
                        filterMethod: (f: any, r: any) => r[f.id].includes(f.value),
                        sortMethod: (a: any, b: any) =>
                            moment(a).isValid() ? (moment(b).isValid() ? (moment(a).isBefore(b) ? -1 : 1) : 1) : -1,
-                       Cell: (c: any) => <div>
-                                             {moment(c.value).isValid() ? moment(c.value).format("l") : "N/A"}
-                                         </div>,
+                       Cell: (c: any) =>
+                           <div>
+                               {moment(c.value).isValid() ? moment(c.value).format("l") : "N/A"}
+                           </div>,
                        style: { whiteSpace: "inherit" },
                        width: 100,
                        headerClassName: "d-none d-md-block",
