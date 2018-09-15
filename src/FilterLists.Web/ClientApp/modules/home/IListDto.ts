@@ -1,7 +1,7 @@
 ﻿export interface IListDto {
     id: number;
-    name: string;
     languages: IListLanguageDto[];
+    name: string;
     softwareIds: number[];
     tags: IListTagDto[];
     updatedDate: string;
