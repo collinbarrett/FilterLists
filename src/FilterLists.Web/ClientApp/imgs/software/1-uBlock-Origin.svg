@@ -12,13 +12,18 @@
     <radialGradient cx="82.145" cy="81.055" r="22.573" xlink:href="#a" fx="82.145" fy="81.055"
                     gradientTransform="matrix(1 0 0 1.258 0 -20.947)" gradientUnits="userSpaceOnUse" />
   </defs>
-  <path fill="#800000" stroke="#fff"
-        d="M64 128c56-32 56-32 56-112-24 0-32 0-56-16m0 128C8 96 8 96 8 16c24 0 32 0 56-16" stroke-linecap="round" />
+  <g fill="#800000" stroke="#fff" stroke-linecap="round">
+    <g stroke-width="1.602" stroke-linejoin="round">
+      <path d="M64 128c56-32 56-32 56-112-24 0-32 0-56-16m0 128C8 96 8 96 8 16c24 0 32 0 56-16" />
+    </g>
+  </g>
   <g stroke="#fff" transform="translate(-17.873 -17.325)" letter-spacing="0" word-spacing="0">
-    <ellipse cx="102.123" cy="81.325" fill="none" ry="12"
+    <ellipse cx="102.123" cy="81.325" fill="none" stroke-width="6" ry="12"
              style="text-align:center;line-height:125%;-inkscape-font-specification:Ubuntu" font-size="100.219"
              text-anchor="middle" rx="12" font-family="Ubuntu" transform="matrix(1.333 0 0 1.333 -42.291 -31.108)" />
-    <path fill="#fff" d="M81.87 81.33c0 11-5 16-16 16s-16-5-16-16v-24h8v24c0 7 1 8 8 8s8-1 8-8v-24h8z"
-          style="-inkscape-font-specification:Ubuntu" font-family="Ubuntu" font-size="73.201" />
+    <g fill="#fff" stroke-width="2" style="line-height:125%" font-size="73.201" font-family="Sans">
+      <path d="M81.87 81.33c0 11-5 16-16 16s-16-5-16-16v-24h8v24c0 7 1 8 8 8s8-1 8-8v-24h8z"
+            style="-inkscape-font-specification:Ubuntu" font-family="Ubuntu" />
+    </g>
   </g>
 </svg>
