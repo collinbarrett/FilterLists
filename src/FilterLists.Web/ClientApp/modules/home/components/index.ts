@@ -1,5 +1,5 @@
-﻿import { DetailsExpanderContainer } from "./detailsExpanderContainer";
+﻿import { DetailsExpander } from "./detailsExpander";
 
 export {
-    DetailsExpanderContainer
+    DetailsExpander
     };
