@@ -2,6 +2,7 @@ import * as React from "react";
 import img1 from "../../../../imgs/software/1-uBlock-Origin.svg";
 import img2 from "../../../../imgs/software/2-Adblock-Plus.svg";
 import img3 from "../../../../imgs/software/3-AdGuard.png";
+import img4 from "../../../../imgs/software/4-DNS66.png";
 
 interface IProps {
     id: number;
@@ -24,5 +25,6 @@ interface IIcon {
 const icons: { [id: number]: IIcon; } = {
     1: { image: img1, imageTitle: "uBlock Origin" },
     2: { image: img2, imageTitle: "Adblock Plus" },
-    3: { image: img3, imageTitle: "AdGuard" }
+    3: { image: img3, imageTitle: "AdGuard" },
+    4: { image: img4, imageTitle: "DNS66" }
 };
