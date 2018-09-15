@@ -54,6 +54,7 @@ namespace FilterLists.Services.Snapshot
         private async Task<IEnumerable<FilterListViewUrlDto>> GetListsToCapture(int batchSize) =>
             await DbContext
                   .FilterLists
+                  .Where(l => l.Id != 526)  //~2 million rules, too big for SnapshotService currently
                   .OrderBy(l => l.Snapshots.Any())
                   .ThenByDescending(ifLastSnapFailed)
                   .ThenBy(lastSnapTimestamp)
