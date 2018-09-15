@@ -23,7 +23,7 @@
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.4.1" />
     <PackageReference Include="Microsoft.DotNet.Analyzers.Compatibility" Version="0.2.12-alpha" />
     <PackageReference Include="morelinq" Version="3.0.0" />
-    <PackageReference Include="SendGrid" Version="9.9.0" />
+    <PackageReference Include="SendGrid" Version="9.10.0" />
     <PackageReference Include="SharpCompress" Version="0.22.0" />
   </ItemGroup>
 
