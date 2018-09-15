@@ -10,10 +10,10 @@ export const MaintainerAdditionalLists = (props: IProps) => {
     return <div className="col-9">
                {props.additionalLists.length > 0
                     ? <div>
-
                           <h4>More by {props.name}:</h4>
                           <ul>
-                              {props.additionalLists.map((l: IMaintainerAdditionalListDto) => <li>{l.name}</li>)}
+                              {props.additionalLists.map(
+                                  (l: IMaintainerAdditionalListDto, i) => <li key={i}>{l.name}</li>)}
                           </ul>
 
                       </div>
