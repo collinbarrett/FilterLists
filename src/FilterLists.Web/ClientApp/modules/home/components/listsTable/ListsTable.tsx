@@ -1,13 +1,13 @@
 import * as React from "react";
-import { IListDto } from "./IListDto";
-import { ISoftwareDto } from "./ISoftwareDto";
-import { ILanguageDto } from "./ILanguageDto";
+import { IListDto } from "../../IListDto";
+import { ISoftwareDto } from "../../ISoftwareDto";
+import { ILanguageDto } from "../../ILanguageDto";
 import ReactTable from "react-table"
 import "react-table/react-table.css"
 import "./listsTable.css";
 import * as moment from "moment";
-import { getContrast } from "../../utils/GetContrast";
-import { DetailsExpander } from "./components";
+import { getContrast } from "../../../../utils/GetContrast";
+import { DetailsExpander } from "../../components";
 
 export interface IColumnVisibility {
     column: string;
