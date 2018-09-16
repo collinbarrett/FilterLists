@@ -38,7 +38,7 @@
     "id": 6,
     "downloadUrl": "https://getadblock.com/",
     "homeUrl": "https://getadblock.com/",
-    "isAbpSubscribable": false,
+    "isAbpSubscribable": true,
     "name": "AdBlock"
   },
   {
@@ -94,7 +94,7 @@
     "id": 15,
     "downloadUrl": "https://www.ublock.org/",
     "homeUrl": "https://www.ublock.org/",
-    "isAbpSubscribable": false,
+    "isAbpSubscribable": true,
     "name": "uBlock"
   },
   {
@@ -110,5 +110,12 @@
     "homeUrl": "https://www.jeffersonscher.com/gm/google-hit-hider/",
     "isAbpSubscribable": false,
     "name": "Google Hit Hider by Domain"
+  },
+  {
+    "id": 18,
+    "downloadUrl": "https://firehol.org/installing/",
+    "homeUrl": "https://firehol.org/",
+    "isAbpSubscribable": false,
+    "name": "FireHOL"
   }
 ]
