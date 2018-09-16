@@ -81,7 +81,7 @@ export const ListsTable = (props: IProps) => {
                                        {e.name}
                                    </span>)}
                            </div>,
-                       width: 212,
+                       width: 215,
                        headerClassName: "d-none d-md-block",
                        className: "d-none d-md-block",
                        show: props.columnVisibility.filter(
