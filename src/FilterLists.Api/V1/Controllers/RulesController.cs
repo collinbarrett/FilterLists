@@ -16,7 +16,7 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> Index() =>
             Json(await MemoryCache.GetOrCreate("RulesController_Index", entry =>
             {
-                entry.SlidingExpiration = MemoryCacheSlidingExpirationDefault;
+                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return ruleService.GetCountAll();
             }));
     }

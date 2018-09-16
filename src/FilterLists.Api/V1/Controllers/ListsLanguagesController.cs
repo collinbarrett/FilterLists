@@ -18,7 +18,7 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> Seed() =>
             Json(await MemoryCache.GetOrCreate("ListsLanguagesController_Seed", entry =>
             {
-                entry.SlidingExpiration = MemoryCacheSlidingExpirationDefault;
+                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return SeedService.GetAllAsync<FilterListLanguage, FilterListLanguageSeedDto>(
                     typeof(FilterListLanguage).GetProperty("FilterListId"),
                     typeof(FilterListLanguage).GetProperty("LanguageId"));

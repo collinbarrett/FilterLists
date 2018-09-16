@@ -18,7 +18,7 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> Seed() =>
             Json(await MemoryCache.GetOrCreate("ListsMaintainersController_Seed", entry =>
             {
-                entry.SlidingExpiration = MemoryCacheSlidingExpirationDefault;
+                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return SeedService.GetAllAsync<FilterListMaintainer, FilterListMaintainerSeedDto>(
                     typeof(FilterListMaintainer).GetProperty("MaintainerId"),
                     typeof(FilterListMaintainer).GetProperty("FilterListId"));

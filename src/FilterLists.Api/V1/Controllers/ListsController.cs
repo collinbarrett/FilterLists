@@ -19,7 +19,7 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> Index() =>
             Json(await MemoryCache.GetOrCreate("ListsController_Index", entry =>
             {
-                entry.SlidingExpiration = MemoryCacheSlidingExpirationDefault;
+                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return filterListService.GetAllSummariesAsync();
             }));
 
@@ -29,7 +29,7 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> GetById(int id) =>
             Json(await MemoryCache.GetOrCreate("ListsController_GetById_" + id, entry =>
             {
-                entry.SlidingExpiration = MemoryCacheSlidingExpirationDefault;
+                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return filterListService.GetDetailsAsync((uint)id);
             }));
 
@@ -37,7 +37,7 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> Seed() =>
             Json(await MemoryCache.GetOrCreate("ListsController_Seed", entry =>
             {
-                entry.SlidingExpiration = MemoryCacheSlidingExpirationDefault;
+                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return SeedService.GetAllAsync<FilterList, FilterListSeedDto>();
             }));
     }
