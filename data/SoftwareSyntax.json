@@ -105,6 +105,14 @@
   },
   {
     "softwareId": 1,
+    "syntaxId": 7
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 7
+  },
+  {
+    "softwareId": 1,
     "syntaxId": 8
   },
   {
