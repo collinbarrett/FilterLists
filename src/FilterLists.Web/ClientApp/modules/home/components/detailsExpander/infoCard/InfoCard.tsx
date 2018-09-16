@@ -6,6 +6,7 @@ import { Languages } from "./Languages";
 import { License } from "./License";
 import { PublishedDate } from "./PublishedDate";
 import { RuleCount } from "./RuleCount";
+import { Syntax } from "./Syntax";
 import { Tags } from "./Tags";
 import { UpdatedDate } from "./UpdatedDate";
 
@@ -18,7 +19,7 @@ interface IProps {
     name: string;
     publishedDate: string;
     ruleCount: number;
-    syntax: IListSyntaxDto[];
+    syntax: IListSyntaxDto;
     tags: IListTagDto[];
     updatedDate: string;
 }
@@ -33,6 +34,7 @@ export const InfoCard = (props: IProps) => {
                    <DiscontinuedDate date={props.discontinuedDate}/>
                    <UpdatedDate {...props}/>
                    <PublishedDate date={props.publishedDate}/>
+                   <Syntax {...props.syntax}/>
                    <License {...props.license}/>
                </ul>
            </div>;

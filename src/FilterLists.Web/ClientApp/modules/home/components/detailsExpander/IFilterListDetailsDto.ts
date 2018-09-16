@@ -16,7 +16,7 @@
     publishedDate: string;
     ruleCount: number;
     submissionUrl: string;
-    syntax: IListSyntaxDto[];
+    syntax: IListSyntaxDto;
     tags: IListTagDto[];
     updatedDate: string;
     viewUrl: string;
