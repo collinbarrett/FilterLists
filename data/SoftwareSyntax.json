@@ -105,6 +105,14 @@
   },
   {
     "softwareId": 1,
+    "syntaxId": 7
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 7
+  },
+  {
+    "softwareId": 1,
     "syntaxId": 8
   },
   {
@@ -117,6 +125,10 @@
   },
   {
     "softwareId": 5,
+    "syntaxId": 9
+  },
+  {
+    "softwareId": 18,
     "syntaxId": 9
   },
   {
@@ -134,5 +146,21 @@
   {
     "softwareId": 13,
     "syntaxId": 13
+  },
+  {
+    "softwareId": 7,
+    "syntaxId": 14
+  },
+  {
+    "softwareId": 11,
+    "syntaxId": 14
+  },
+  {
+    "softwareId": 12,
+    "syntaxId": 14
+  },
+  {
+    "softwareId": 18,
+    "syntaxId": 15
   }
 ]

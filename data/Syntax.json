@@ -2,7 +2,7 @@
   {
     "id": 1,
     "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
-    "name": "Hosts"
+    "name": "Hosts (localhost)"
   },
   {
     "id": 2,
@@ -37,7 +37,7 @@
   {
     "id": 9,
     "definitionUrl": null,
-    "name": "IPs"
+    "name": "IPs (Singular or singular+range)"
   },
   {
     "id": 10,
@@ -58,5 +58,15 @@
     "id": 13,
     "definitionUrl": "https://github.com/xd4rker/MinerBlock",
     "name": "MinerBlock"
+  },
+  {
+    "id": 14,
+    "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
+    "name": "Non-localhost hosts"
+  },
+  {
+    "id": 15,
+    "definitionUrl": null,
+    "name": "IPs (Range-only)"
   }
 ]
