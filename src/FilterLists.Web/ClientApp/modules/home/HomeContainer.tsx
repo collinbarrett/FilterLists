@@ -1,14 +1,14 @@
 import * as React from "react";
 import "isomorphic-fetch";
-import { IListDto, ISoftwareDto, ILanguageDto } from "./interfaces";
+import { ILanguageDto, IListDto, ISoftwareDto } from "./interfaces";
 import "../../utils/loader.css";
 import { Home } from "./Home";
 
 interface IState {
+    languages: ILanguageDto[];
     lists: IListDto[];
     ruleCount: number;
     software: ISoftwareDto[];
-    languages: ILanguageDto[];
 }
 
 export class HomeContainer extends React.Component<{}, IState> {
@@ -16,9 +16,9 @@ export class HomeContainer extends React.Component<{}, IState> {
         super(props);
         this.state = {
             lists: [],
+            languages: [],
             ruleCount: 0,
-            software: [],
-            languages: []
+            software: []
         };
     }
 

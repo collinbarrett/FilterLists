@@ -18,7 +18,7 @@ function renderApp() {
 renderApp();
 
 if (module.hot) {
-    module.hot.accept("./routes",
+    module.hot.accept("./Routes",
         () => {
             routes = require<typeof RoutesModule>("./Routes").Routes;
             renderApp();

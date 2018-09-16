@@ -2,11 +2,11 @@ import * as React from "react";
 import "bootstrap";
 import "./site.css";
 
-interface ILayoutProps {
+interface IProps {
     children?: React.ReactNode;
 }
 
-export const Layout = (props: ILayoutProps) => {
+export const Layout = (props: IProps) => {
     return <div className="container">
                <Header/>
                <div className="row">
