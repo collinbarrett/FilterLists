@@ -1,8 +1,6 @@
 import * as React from "react";
 import "isomorphic-fetch";
-import { IListDto } from "./IListDto";
-import { ISoftwareDto } from "./ISoftwareDto";
-import { ILanguageDto } from "./ILanguageDto";
+import { IListDto, ISoftwareDto, ILanguageDto } from "./interfaces";
 import "../../utils/loader.css";
 import { Home } from "./Home";
 

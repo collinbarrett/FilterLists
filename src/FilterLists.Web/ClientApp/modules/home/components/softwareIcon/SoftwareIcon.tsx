@@ -1,18 +1,18 @@
 import * as React from "react";
-import img1 from "../../../../imgs/software/01-uBlock-Origin.svg";
-import img2 from "../../../../imgs/software/02-Adblock-Plus.svg";
-import img3 from "../../../../imgs/software/03-AdGuard.png";
-import img4 from "../../../../imgs/software/04-DNS66.png";
-import img5 from "../../../../imgs/software/05-Nano-Adblocker.png";
-import img6 from "../../../../imgs/software/06-AdBlock.png";
-import img7 from "../../../../imgs/software/07-AdAway.png";
-import img8 from "../../../../imgs/software/08-Personal-Blocklist.png";
-import img10 from "../../../../imgs/software/10-Redirector.png";
-import img13 from "../../../../imgs/software/13-MinerBlock.svg";
-import img14 from "../../../../imgs/software/14-Pi-hole.png";
-import img15 from "../../../../imgs/software/15-uBlock.svg";
-import img16 from "../../../../imgs/software/16-Internet-Explorer-TPL.png";
-import img18 from "../../../../imgs/software/18-FireHOL.png";
+import img1 from "./imgs/01-uBlock-Origin.svg";
+import img2 from "./imgs/02-Adblock-Plus.svg";
+import img3 from "./imgs/03-AdGuard.png";
+import img4 from "./imgs/04-DNS66.png";
+import img5 from "./imgs/05-Nano-Adblocker.png";
+import img6 from "./imgs/06-AdBlock.png";
+import img7 from "./imgs/07-AdAway.png";
+import img8 from "./imgs/08-Personal-Blocklist.png";
+import img10 from "./imgs/10-Redirector.png";
+import img13 from "./imgs/13-MinerBlock.svg";
+import img14 from "./imgs/14-Pi-hole.png";
+import img15 from "./imgs/15-uBlock.svg";
+import img16 from "./imgs/16-Internet-Explorer-TPL.png";
+import img18 from "./imgs/18-FireHOL.png";
 
 interface IProps {
     id: number;
