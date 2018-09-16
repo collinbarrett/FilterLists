@@ -122,7 +122,7 @@ export const ListsTable = (props: IProps) => {
                    {
                        Header: "Updated",
                        accessor: "updatedDate",
-                       filterable: true,
+                       filterable: false,
                        filterMethod: (f: any, r: any) => r[f.id].includes(f.value),
                        sortMethod: (a: any, b: any) =>
                            moment(a).isValid() ? (moment(b).isValid() ? (moment(a).isBefore(b) ? -1 : 1) : 1) : -1,
