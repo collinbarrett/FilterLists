@@ -5601,7 +5601,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 4,
     "viewUrl": "https://mirror1.malwaredomains.com/files/bulk_registrars.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
@@ -5916,7 +5916,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 2,
     "viewUrl": "https://mirror1.malwaredomains.com/files/dynamic_dns.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
@@ -5937,7 +5937,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 2,
     "viewUrl": "https://mirror1.malwaredomains.com/files/freewebhosts.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
@@ -5958,7 +5958,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 2,
     "viewUrl": "https://mirror1.malwaredomains.com/files/justdomains",
     "viewUrlMirror1": "https://mirror.cedia.org.ec/malwaredomains/justdomains",
     "viewUrlMirror2": null
@@ -5979,7 +5979,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 2,
     "viewUrl": "https://mirror1.malwaredomains.com/files/immortal_domains.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
@@ -7071,7 +7071,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": 1,
+    "syntaxId": 14,
     "viewUrl": "https://raw.githubusercontent.com/Lerist/Go-Hosts/master/hosts",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
@@ -8919,7 +8919,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": 1,
+    "syntaxId": 14,
     "viewUrl": "https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts",
     "viewUrlMirror1": "https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts-files/hosts",
     "viewUrlMirror2": null
