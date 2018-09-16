@@ -6,7 +6,7 @@ import { Languages } from "./Languages";
 import { License } from "./License";
 import { PublishedDate } from "./PublishedDate";
 import { RuleCount } from "./RuleCount";
-import { SoftwareIcon } from "../../listsTable/SoftwareIcon";
+import { SoftwareIcon } from "../../softwareIcon";
 import { Syntax } from "./Syntax";
 import { Tags } from "./Tags";
 import { UpdatedDate } from "./UpdatedDate";

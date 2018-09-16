@@ -1,7 +1,5 @@
 import * as React from "react";
-import { IListDto } from "./IListDto";
-import { ISoftwareDto } from "./ISoftwareDto";
-import { ILanguageDto } from "./ILanguageDto";
+import { IListDto, ISoftwareDto, ILanguageDto } from "./interfaces";
 import { Tagline, ListsTable, IColumnVisibility } from "./components";
 
 const columnVisibilityDefaults = [
