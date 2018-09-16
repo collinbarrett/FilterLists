@@ -11,6 +11,7 @@ namespace FilterLists.Services.FilterList.MappingProfiles
     {
         public ListSyntaxDtoMappingProfile() =>
             CreateMap<Syntax, ListSyntaxDto>()
-                .ForMember(d => d.SupportedSoftware, o => o.MapFrom(s => s.SoftwareSyntaxes.Select(ss => ss.Software)));
+                .ForMember(d => d.SupportedSoftware,
+                    o => o.MapFrom(s => s.SoftwareSyntaxes.Select(ss => ss.Software).OrderBy(sw => sw.Name)));
     }
 }
