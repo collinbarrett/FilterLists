@@ -12,6 +12,7 @@ import img13 from "../../../../imgs/software/13-MinerBlock.svg";
 import img14 from "../../../../imgs/software/14-Pi-hole.png";
 import img15 from "../../../../imgs/software/15-uBlock.svg";
 import img16 from "../../../../imgs/software/16-Internet-Explorer-TPL.png";
+import img18 from "../../../../imgs/software/18-FireHOL.png";
 
 interface IProps {
     id: number;
@@ -44,5 +45,6 @@ const icons: { [id: number]: IIcon; } = {
     13: { image: img13, imageTitle: "MinerBlock" },
     14: { image: img14, imageTitle: "Pi-hole" },
     15: { image: img15, imageTitle: "uBlock" },
-    16: { image: img16, imageTitle: "Internet Explorer (TPL)" }
+    16: { image: img16, imageTitle: "Internet Explorer (TPL)" },
+    18: { image: img18, imageTitle: "FireHOL" }
 };
