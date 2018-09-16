@@ -6,7 +6,7 @@ import ReactTable from "react-table"
 import "react-table/react-table.css"
 import "./listsTable.css";
 import * as moment from "moment";
-import { SoftwareIcon } from "./SoftwareIcon";
+import { SoftwareIcons } from "../SoftwareIcons";
 import { getContrast } from "../../../../utils/GetContrast";
 import { DetailsExpander } from "../../components";
 
@@ -54,7 +54,7 @@ export const ListsTable = (props: IProps) => {
                                {props.software.map((s: any, i) => <option value={s.id} key={i}>{s.name}</option>)}
                            </select>,
                        sortable: false,
-                       Cell: (c: any) => c.value.map((s: number, i: any) => <SoftwareIcon id={s} key={i}/>),
+                       Cell: (c: any) => <SoftwareIcons {...c}/>,
                        width: 155,
                        headerClassName: "d-none d-md-block",
                        className: "d-none d-md-block",
