@@ -3,96 +3,112 @@
     "id": 1,
     "downloadUrl": "https://github.com/gorhill/uBlock#installation",
     "homeUrl": "https://github.com/gorhill/uBlock",
+    "isAbpSubscribable": true,
     "name": "uBlock Origin"
   },
   {
     "id": 2,
     "downloadUrl": "https://adblockplus.org/",
     "homeUrl": "https://adblockplus.org/",
+    "isAbpSubscribable": true,
     "name": "Adblock Plus"
   },
   {
     "id": 3,
     "downloadUrl": "https://adguard.com/en/download.html",
     "homeUrl": "https://adguard.com/",
+    "isAbpSubscribable": true,
     "name": "AdGuard"
   },
   {
     "id": 4,
     "downloadUrl": "https://f-droid.org/packages/org.jak_linux.dns66/",
     "homeUrl": "https://github.com/julian-klode/dns66",
+    "isAbpSubscribable": false,
     "name": "DNS66"
   },
   {
     "id": 5,
     "downloadUrl": "https://github.com/NanoAdblocker/NanoCore#nano-adblocker-core",
     "homeUrl": "https://github.com/NanoAdblocker/NanoCore",
+    "isAbpSubscribable": true,
     "name": "Nano Adblocker"
   },
   {
     "id": 6,
     "downloadUrl": "https://getadblock.com/",
     "homeUrl": "https://getadblock.com/",
+    "isAbpSubscribable": false,
     "name": "AdBlock"
   },
   {
     "id": 7,
     "downloadUrl": "https://f-droid.org/packages/org.adaway/",
     "homeUrl": "https://adaway.org/",
+    "isAbpSubscribable": false,
     "name": "AdAway"
   },
   {
     "id": 8,
     "downloadUrl": "https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef",
     "homeUrl": "https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef",
+    "isAbpSubscribable": false,
     "name": "Personal Blocklist"
   },
   {
     "id": 10,
     "downloadUrl": "http://einaregilsson.com/redirector/",
     "homeUrl": "http://einaregilsson.com/redirector/",
+    "isAbpSubscribable": false,
     "name": "Redirector"
   },
   {
     "id": 11,
     "downloadUrl": "https://github.com/scottlerch/HostsFileEditor/releases",
     "homeUrl": "https://scottlerch.github.io/HostsFileEditor/",
+    "isAbpSubscribable": false,
     "name": "Hosts File Editor"
   },
   {
     "id": 12,
     "downloadUrl": "https://github.com/2ndalpha/gasmask/releases",
     "homeUrl": "https://github.com/2ndalpha/gasmask",
+    "isAbpSubscribable": false,
     "name": "Gas Mask"
   },
   {
     "id": 13,
     "downloadUrl": "https://github.com/xd4rker/MinerBlock/releases",
     "homeUrl": "https://github.com/xd4rker/MinerBlock",
+    "isAbpSubscribable": false,
     "name": "MinerBlock"
   },
   {
     "id": 14,
     "downloadUrl": "https://pi-hole.net/",
     "homeUrl": "https://pi-hole.net/",
+    "isAbpSubscribable": false,
     "name": "Pi-hole"
   },
   {
     "id": 15,
     "downloadUrl": "https://www.ublock.org/",
     "homeUrl": "https://www.ublock.org/",
+    "isAbpSubscribable": false,
     "name": "uBlock"
   },
   {
     "id": 16,
     "downloadUrl": "https://support.microsoft.com/en-gb/help/18520/download-internet-explorer-11-offline-installer",
     "homeUrl": "https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/hh273399(v=vs.85)",
+    "isAbpSubscribable": false,
     "name": "Internet Explorer (TPL)"
   },
   {
     "id": 17,
     "downloadUrl": "https://greasyfork.org/scripts/1682-google-hit-hider-by-domain-search-filter-block-sites",
     "homeUrl": "https://www.jeffersonscher.com/gm/google-hit-hider/",
+    "isAbpSubscribable": false,
     "name": "Google Hit Hider by Domain"
   }
 ]
