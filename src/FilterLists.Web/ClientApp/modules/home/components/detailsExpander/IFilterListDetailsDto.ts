@@ -57,6 +57,5 @@ export interface IMaintainerAdditionalListDto {
 
 export interface ISyntaxSupportedSoftwareDto {
     homeUrl: string;
-    id: number;
     name: string;
 }

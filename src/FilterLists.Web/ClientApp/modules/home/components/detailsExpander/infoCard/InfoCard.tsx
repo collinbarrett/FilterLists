@@ -6,7 +6,6 @@ import { Languages } from "./Languages";
 import { License } from "./License";
 import { PublishedDate } from "./PublishedDate";
 import { RuleCount } from "./RuleCount";
-import { SoftwareIcons } from "../../SoftwareIcons";
 import { Syntax } from "./Syntax";
 import { Tags } from "./Tags";
 import { UpdatedDate } from "./UpdatedDate";
@@ -27,7 +26,6 @@ interface IProps {
 
 export const InfoCard = (props: IProps) => {
     return <div className="col-9">
-               <SoftwareIcons software={props.syntax.supportedSoftware} mdNone={true}/>
                <Tags tags={props.tags}/>
                <Description {...props} url={props.descriptionSourceUrl}/>
                <ul className="list-group list-group-flush">
