@@ -31,7 +31,7 @@ export const InfoCard = (props: IProps) => {
                <div className="d-md-none">
                    {props.syntax.supportedSoftware.map(
                        (s: ISyntaxSupportedSoftwareDto, i: number) =>
-                       <a href={s.homeUrl} title={`View ${s.name}'s homepage.`} key={i}>
+                       <a href={s.homeUrl} key={i}>
                            <SoftwareIcon id={s.id} key={i}/>
                        </a>)}
                </div>

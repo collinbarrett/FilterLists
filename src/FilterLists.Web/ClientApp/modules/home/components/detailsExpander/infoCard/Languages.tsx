@@ -10,11 +10,11 @@ export const Languages = (props: IProps) => {
                  ? <li className="list-group-item">
                        <p className="m-0">Languages:</p>
                        <ul>
-                           {props.languages.map((language: string) => <li>{language}</li>)}
+                           {props.languages.map((language: string, i: number) => <li key={i}>{language}</li>)}
                        </ul>
                    </li>
                  : <li className="list-group-item">
-                       <p>Language: {props.languages.map((language: string) => language)}</p>
+                       <p>Language: {props.languages[0]}</p>
                    </li>
                : null;
 };

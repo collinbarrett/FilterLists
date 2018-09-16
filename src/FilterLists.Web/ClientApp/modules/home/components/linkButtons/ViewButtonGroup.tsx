@@ -35,7 +35,8 @@ const ViewButtonGroupDropdown = (props: IViewButtonGroupDropdownProps) => {
                <div className="dropdown-menu" aria-labelledby="btnGroupDropView">
                    <ViewButton {...props} text={firstButtonText}/>
                    {props.urlMirrors.map(
-                       (m, i) => <ViewButton {...props} url={m} text={`Mirror ${i + 1 + mirrorIndex}`} key={i}/>)}
+                       (m: string, i: number) =>
+                       <ViewButton {...props} url={m} text={`Mirror ${i + 1 + mirrorIndex}`} key={i}/>)}
                </div>
            </div>;
 };

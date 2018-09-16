@@ -13,7 +13,7 @@ export const MaintainerAdditionalLists = (props: IProps) => {
                           <h4>More by {props.name}:</h4>
                           <ul>
                               {props.additionalLists.map(
-                                  (l: IMaintainerAdditionalListDto, i) => <li key={i}>{l.name}</li>)}
+                                  (l: IMaintainerAdditionalListDto, i: number) => <li key={i}>{l.name}</li>)}
                           </ul>
 
                       </div>
