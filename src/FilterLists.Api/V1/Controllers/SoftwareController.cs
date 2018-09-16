@@ -19,7 +19,7 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> Index() =>
             Json(await MemoryCache.GetOrCreate("SoftwareController_Index", entry =>
             {
-                entry.SlidingExpiration = MemoryCacheSlidingExpirationDefault;
+                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return softwareService.GetAll();
             }));
 
@@ -27,7 +27,7 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> Seed() =>
             Json(await MemoryCache.GetOrCreate("SoftwareController_Seed", entry =>
             {
-                entry.SlidingExpiration = MemoryCacheSlidingExpirationDefault;
+                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return SeedService.GetAllAsync<Software, SoftwareSeedDto>();
             }));
     }

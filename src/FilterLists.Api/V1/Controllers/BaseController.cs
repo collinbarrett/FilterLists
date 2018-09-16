@@ -11,7 +11,7 @@ namespace FilterLists.Api.V1.Controllers
     [ResponseCache(Duration = 86400)]
     public class BaseController : Controller
     {
-        protected static readonly TimeSpan MemoryCacheSlidingExpirationDefault = TimeSpan.FromMinutes(5);
+        protected static readonly TimeSpan MemoryCacheExpirationDefault = TimeSpan.FromDays(1);
         protected readonly IMemoryCache MemoryCache;
         protected readonly SeedService SeedService;
 
@@ -19,10 +19,7 @@ namespace FilterLists.Api.V1.Controllers
         {
         }
 
-        protected BaseController(IMemoryCache memoryCache)
-        {
-            MemoryCache = memoryCache;
-        }
+        protected BaseController(IMemoryCache memoryCache) => MemoryCache = memoryCache;
 
         protected BaseController(IMemoryCache memoryCache, SeedService seedService)
         {
