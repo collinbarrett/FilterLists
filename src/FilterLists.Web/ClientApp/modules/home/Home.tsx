@@ -10,10 +10,10 @@ const columnVisibilityDefaults = [
 ];
 
 interface IProps {
+    languages: ILanguageDto[];
     lists: IListDto[];
     ruleCount: number;
     software: ISoftwareDto[];
-    languages: ILanguageDto[];
 }
 
 interface IState {
@@ -22,7 +22,7 @@ interface IState {
 }
 
 export class Home extends React.Component<IProps, IState> {
-    constructor(props: any) {
+    constructor(props: IProps) {
         super(props);
         this.state = {
             columnVisibility: columnVisibilityDefaults,
@@ -38,10 +38,8 @@ export class Home extends React.Component<IProps, IState> {
     render() {
         return this.props.lists
                    ? <div>
-                         <Tagline {...this.props} listCount={this.props.lists.length}/>
-                         <ListsTable {...this.props}
-                             pageSize={this.state.pageSize}
-                             columnVisibility={this.state.columnVisibility}/>
+                         <Tagline listCount={this.props.lists.length} ruleCount={this.props.ruleCount}/>
+                         <ListsTable {...this.props} {...this.state}/>
                          {this.renderColumnVisibilityCheckboxes()}
                      </div>
                    : null;
@@ -81,7 +79,7 @@ export class Home extends React.Component<IProps, IState> {
         this.forceUpdate();
     }
 
-    private findWithAttr(array: any, attr: any, value: any) {
+    private findWithAttr(array: any, attr: string, value: string) {
         for (let i = 0; i < array.length; i += 1) {
             if (array[i][attr] === value) {
                 return i;

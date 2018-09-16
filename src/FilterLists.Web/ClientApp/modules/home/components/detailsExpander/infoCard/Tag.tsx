@@ -1,6 +1,6 @@
 import * as React from "react";
 import { IListTagDto } from "../IFilterListDetailsDto";
-import { getContrast } from "../../../../../utils/GetContrast";
+import { getContrast } from "../../../../../utils";
 
 export const Tag = (props: IListTagDto) => {
     const style = {

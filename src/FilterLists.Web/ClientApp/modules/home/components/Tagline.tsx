@@ -1,8 +1,8 @@
 ﻿import * as React from "react";
 
 interface IProps {
-    ruleCount: number,
     listCount: number;
+    ruleCount: number,
 }
 
 export const Tagline = (props: IProps) => {

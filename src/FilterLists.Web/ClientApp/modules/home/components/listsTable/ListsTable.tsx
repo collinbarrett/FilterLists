@@ -3,9 +3,9 @@ import { IListDto, ISoftwareDto, ILanguageDto } from "../../interfaces";
 import ReactTable from "react-table"
 import "react-table/react-table.css"
 import "./listsTable.css";
-import * as moment from "moment";
 import { SoftwareIcon } from "../softwareIcon";
-import { getContrast } from "../../../../utils/GetContrast";
+import { getContrast } from "../../../../utils";
+import * as moment from "moment";
 import { DetailsExpander } from "../../components";
 
 export interface IColumnVisibility {
@@ -14,9 +14,9 @@ export interface IColumnVisibility {
 }
 
 interface IProps {
+    languages: ILanguageDto[];
     lists: IListDto[];
     software: ISoftwareDto[];
-    languages: ILanguageDto[];
     columnVisibility: IColumnVisibility[];
     pageSize: number;
 }
@@ -49,10 +49,11 @@ export const ListsTable = (props: IProps) => {
                                style={{ width: "100%" }}
                                value={filter ? filter.value : "any"}>
                                <option value="any">Any</option>
-                               {props.software.map((s: any, i) => <option value={s.id} key={i}>{s.name}</option>)}
+                               {props.software.map(
+                                   (s: ISoftwareDto, i: number) => <option value={s.id} key={i}>{s.name}</option>)}
                            </select>,
                        sortable: false,
-                       Cell: (c: any) => c.value.map((s: number, i: any) => <SoftwareIcon id={s} key={i}/>),
+                       Cell: (c: any) => c.value.map((s: number, i: number) => <SoftwareIcon id={s} key={i}/>),
                        width: 155,
                        headerClassName: "d-none d-md-block",
                        className: "d-none d-md-block",
@@ -68,7 +69,7 @@ export const ListsTable = (props: IProps) => {
                        sortable: false,
                        Cell: (c: any) =>
                            <div className="fl-tag-container">
-                               {c.value.map((e: any, i: any) =>
+                               {c.value.map((e: any, i: number) =>
                                    <span className="badge"
                                          style={{
                                              backgroundColor: `#${e.colorHex}`,
@@ -97,13 +98,13 @@ export const ListsTable = (props: IProps) => {
                                style={{ width: "100%" }}
                                value={filter ? filter.value : "any"}>
                                <option value="any">Any</option>
-                               {props.languages.map((l: any, i) =>
+                               {props.languages.map((l: ILanguageDto, i: number) =>
                                    <option value={l.iso6391} key={i}>{l.name}</option>)}
                            </select>,
                        sortable: false,
                        Cell: (c: any) =>
                            <div className="fl-tag-container">
-                               {c.value.map((e: any, i: any) =>
+                               {c.value.map((e: ILanguageDto, i: number) =>
                                    <span className="badge badge-secondary"
                                          title={e.name}
                                          key={i}>
