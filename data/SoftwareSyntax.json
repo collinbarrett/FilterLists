@@ -69,7 +69,7 @@
   },
   {
     "softwareId": 4,
-    "syntaxId": 3
+    "syntaxId": 1
   },
   {
     "softwareId": 5,
@@ -178,5 +178,13 @@
   {
     "softwareId": 19,
     "syntaxId": 16
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 17
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 17
   }
 ]
