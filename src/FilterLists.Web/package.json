@@ -24,7 +24,7 @@
     "react-hot-loader": "^4.3.8",
     "react-router-dom": "^4.3.1",
     "style-loader": "^0.23.0",
-    "typescript": "^2.9.2",
+    "typescript": "^3.0.3",
     "url-loader": "^1.1.1",
     "webpack": "^3.11.0"
   },

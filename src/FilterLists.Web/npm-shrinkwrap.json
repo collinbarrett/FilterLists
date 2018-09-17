@@ -5798,9 +5798,9 @@
       "dev": true
     },
     "typescript": {
-      "version": "2.9.2",
-      "resolved": "https://registry.npmjs.org/typescript/-/typescript-2.9.2.tgz",
-      "integrity": "sha1-HL9h0F1rliaSROtqO85L2RTg8Aw=",
+      "version": "3.0.3",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-3.0.3.tgz",
+      "integrity": "sha512-kk80vLW9iGtjMnIv11qyxLqZm20UklzuR2tL0QAnDIygIUIemcZMxlMWudl9OOt76H3ntVzcTiddQ1/pAAJMYg==",
       "dev": true
     },
     "uglify-js": {
