@@ -117,5 +117,12 @@
     "homeUrl": "https://firehol.org/",
     "isAbpSubscribable": false,
     "name": "FireHOL"
+  },
+  {
+    "id": 19,
+    "downloadUrl": null,
+    "homeUrl": "https://www.samsungknox.com",
+    "isAbpSubscribable": false,
+    "name": "Samsung Knox"
   }
 ]
