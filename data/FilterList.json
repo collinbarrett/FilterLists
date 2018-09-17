@@ -1697,7 +1697,7 @@
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/UncheckyAds/hosts",
     "viewUrlMirror2": null
   },
   {
@@ -3839,7 +3839,7 @@
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hrsk.7z",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://v.firebog.net/hosts/Airelle-hrsk.txt",
     "viewUrlMirror2": null
   },
   {
@@ -3860,7 +3860,7 @@
     "submissionUrl": null,
     "syntaxId": 1,
     "viewUrl": "http://rlwpx.free.fr/WPFF/htrc.7z",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://v.firebog.net/hosts/Airelle-trc.txt",
     "viewUrlMirror2": null
   },
   {
@@ -5981,7 +5981,7 @@
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://mirror1.malwaredomains.com/files/immortal_domains.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt",
     "viewUrlMirror2": null
   },
   {
@@ -9089,7 +9089,7 @@
     "submissionUrl": null,
     "syntaxId": 4,
     "viewUrl": "https://blocklist.kowabit.de/list.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://v.firebog.net/hosts/Kowabit.txt",
     "viewUrlMirror2": null
   },
   {
@@ -9194,7 +9194,7 @@
     "submissionUrl": "https://quidsup.net/notrack/report.php?view=submit",
     "syntaxId": 2,
     "viewUrl": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://raw.githubusercontent.com/quidsup/notrack/master/malicious-sites.txt",
     "viewUrlMirror2": null
   },
   {
@@ -10412,7 +10412,7 @@
     "submissionUrl": null,
     "syntaxId": 2,
     "viewUrl": "https://www.dshield.org/feeds/suspiciousdomains_Medium.txt",
-    "viewUrlMirror1": null,
+    "viewUrlMirror1": "https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt",
     "viewUrlMirror2": null
   },
   {
@@ -12052,5 +12052,529 @@
     "viewUrl": "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
-  }
-]
+  },
+      {
+      "id": 607,
+      "description": "Filters that hide and block newsletters (without pop-ups).",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt",
+      "chatUrl": "https://discord.me/polskiefiltry",
+      "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+      "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+      "licenseId": 9,
+      "name": "Polish Annoyance Filters - Newsletters",
+      "syntaxid": 3,
+      "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt"
+    },
+    {
+      "id": 608,
+      "description": "Filters that hide and block arrows.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_arrows.txt",
+      "chatUrl": "https://discord.me/polskiefiltry",
+      "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+      "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+      "licenseId": 9,
+      "name": "Polish Annoyance Filters - Arrows",
+      "syntaxid": 3,
+      "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_arrows.txt"
+    },
+    {
+      "id": 609,
+      "description": "Filters that hide and block web push notifications.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_push.txt",
+      "chatUrl": "https://discord.me/polskiefiltry",
+      "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+      "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+      "licenseId": 9,
+      "name": "Polish Annoyances Filters - Web Push Notifications",
+      "syntaxid": 3,
+      "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_push.txt"
+    },
+    {
+      "id": 610,
+      "description": "Filters that prevent scrolling movies from playing.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt",
+      "chatUrl": "https://discord.me/polskiefiltry",
+      "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+      "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+      "licenseId": 9,
+      "name": "Polish Annoyance Filters - Scrolling Videos",
+      "syntaxid": 3,
+      "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt"
+    },
+    {
+      "id": 611,
+      "description": "Filters that hide and block in-house ads.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_backgrounds_self-advertising.txt",
+      "chatUrl": "https://discord.me/polskiefiltry",
+      "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+      "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+      "licenseId": 9,
+      "name": "Polish Annoyance Filters - Backgrounds Containing Self-Advertising",
+      "syntaxid": 3,
+      "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_backgrounds_self-advertising.txt"
+    },
+    {
+      "id": 612,
+      "description": "Filters that hide and block pop-ups.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_pop-ups.txt",
+      "chatUrl": "https://discord.me/polskiefiltry",
+      "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+      "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+      "licenseId": 9,
+      "name": "Polish Annoyance Filters - Pop-ups",
+      "syntaxid": 3,
+      "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_pop-ups.txt"
+    },
+    {
+      "id": 613,
+      "description": "Filters that hide and block contact/feedback widgets.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_contact_feedback_widgets.txt",
+      "chatUrl": "https://discord.me/polskiefiltry",
+      "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+      "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+      "licenseId": 9,
+      "name": "Polish Annoyance Filters - Contact/Feedback Widgets",
+      "syntaxid": 3,
+      "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_contact_feedback_widgets.txt"
+    },
+    {
+      "id": 614,
+      "description": "Filters that remove internal tags that do not match the subject of the article, which are easily accidentally clicked. Inspired by Agora Tag Links Remove.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt",
+      "chatUrl": "https://discord.me/polskiefiltry",
+      "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+      "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+      "licenseId": 9,
+      "name": "Polish Annoyance Filters - Tagged Internal Links",
+      "syntaxid": 4,
+      "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt"
+    },
+    {
+      "id": 615,
+      "description": "Filters that unlock right-clicking.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_unlocking_right_click.txt",
+      "chatUrl": "https://discord.me/polskiefiltry",
+      "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+      "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+      "licenseId": 9,
+      "name": "Polish Annoyance Filters - Unlocking Right Click",
+      "syntaxid": 4,
+      "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_unlocking_right_click.txt"
+    },
+    {
+      "id": 616,
+      "description": "Filters that hide and block various other widgets.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt",
+      "chatUrl": "https://discord.me/polskiefiltry",
+      "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+      "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+      "licenseId": 9,
+      "name": "Polish Annoyance Filters - Other Widgets",
+      "syntaxid": 3,
+      "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt"
+    },
+    {
+      "id": 617,
+      "description": "Ad server list for use with hosts files to block ads",
+      "descriptionSourceUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
+      "homeUrl": " https://pgl.yoyo.org/adservers",
+      "licenseId": null,
+      "name": "Peter Lowe's List (Hosts)",
+      "syntaxid": 1,
+      "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext"
+    },
+    {
+      "id": 618,
+      "descriptionSourceUrl": "https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt",
+      "licenseId": null,
+      "name": "Mandiant APT1 Report Appendix D",
+      "syntaxid": 2,
+      "viewUrl": "https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt"
+    },
+    {
+      "id": 619,
+      "description": "YouTube Ad-Block-List for PiHole by HenningVanRäumle",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/HenningVanRaumle/pihole-ytadblock/master/ytadblock.txt",
+      "licenseId": null,
+      "name": "pihole-ytadblock",
+      "syntaxid": 1,
+      "viewUrl": "https://raw.githubusercontent.com/HenningVanRaumle/pihole-ytadblock/master/ytadblock.txt"
+    },
+    {
+      "id": 620,
+      "description": "Audio fingerprint pages filter list which gets once time per year an update.",
+      "descriptionSourceUrl": "https://github.com/CHEF-KOCH/Audio-fingerprint-pages#audio-fingerprint-pages",
+      "emailAddress": "CHEF-KOCH@protonmail.com",
+      "homeUrl": "https://github.com/CHEF-KOCH/Audio-fingerprint-pages",
+      "issuesUrl": "https://github.com/CHEF-KOCH/Audio-fingerprint-pages/issues",
+      "licenseId": 2,
+      "name": "CHEF-KOCH Audio Fingerprint Pages",
+      "syntaxid": 1,
+      "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/Audio-fingerprint-pages/master/AudioFp.txt"
+    },
+    {
+      "id": 621,
+      "description": "This list blocks requests to sites which have used legal threats to remove themselves from other blacklists.",
+      "descriptionSourceUrl": "https://github.com/CHEF-KOCH/BarbBlock-filter-list#barbblock-filter-list",
+      "emailAddress": "CHEF-KOCH@protonmail.com",
+      "homeUrl": "https://github.com/CHEF-KOCH/BarbBlock-filter-list",
+      "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
+      "licenseId": 2,
+      "name": "CHEF-KOCH BarbBlock Filter List",
+      "syntaxid": 1,
+      "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/BarbBlock-filter-list/master/HOSTS.txt"
+    },
+    {
+      "id": 622,
+      "description": "Canvas fingerprinting pages filter list resource list, updated once in a year.",
+      "descriptionSourceUrl": "https://github.com/CHEF-KOCH/Canvas-fingerprinting-pages#canvas-fingerprinting-pages",
+      "emailAddress": "CHEF-KOCH@protonmail.com",
+      "homeUrl": "https://github.com/CHEF-KOCH/Canvas-fingerprinting-pages",
+      "issuesUrl": "https://github.com/CHEF-KOCH/Canvas-fingerprinting-pages/issues",
+      "licenseId": 2,
+      "name": "CHEF-KOCH Canvas Fingerprinting Pages",
+      "syntaxid": 1,
+      "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/Canvas-fingerprinting-pages/master/Canvas.txt"
+    },
+    {
+      "id": 623,
+      "description": "Canvas Font fingerprinting pages filter list which gets an update one time per year.",
+      "descriptionSourceUrl": "https://github.com/CHEF-KOCH/Canvas-Font-Fingerprinting-pages#canvas-font-fingerprinting-pages",
+      "emailAddress": "CHEF-KOCH@protonmail.com",
+      "homeUrl": "https://github.com/CHEF-KOCH/Canvas-Font-Fingerprinting-pages",
+      "issuesUrl": "https://github.com/CHEF-KOCH/Canvas-Font-Fingerprinting-pages/issues",
+      "licenseId": 2,
+      "name": "CHEF-KOCH Canvas Font Fingerprinting Pages",
+      "syntaxid": 1,
+      "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/Canvas-Font-Fingerprinting-pages/master/Canvas.txt"
+    },
+    {
+      "id": 624,
+      "description": "WebRTC tracking filter list which gets one time per year an update.",
+      "descriptionSourceUrl": "https://github.com/CHEF-KOCH/WebRTC-tracking#webrtc-tracking",
+      "emailAddress": "CHEF-KOCH@protonmail.com",
+      "homeUrl": "https://github.com/CHEF-KOCH/WebRTC-tracking",
+      "issuesUrl": "https://github.com/CHEF-KOCH/WebRTC-tracking/issues",
+      "licenseId": 2,
+      "name": "CHEF-KOCH WebRTC Tracking",
+      "syntaxid": 1,
+      "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/WebRTC-tracking/master/WebRTC.txt"
+    },
+    {
+      "id": 625,
+      "description": "A lightweight and constantly updated host blocker available for free on GitHub.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/nathanaccidentally/SystemHostsBlocker/master/hosts",
+      "donateUrl": "https://github.com/nathanaccidentally/SystemHostsBlocker#systemhostblocker",
+      "emailAddress": "nathanaccidentally@gmail.com",
+      "homeUrl": "https://github.com/nathanaccidentally/SystemHostsBlocker",
+      "issuesUrl": "https://github.com/nathanaccidentally/SystemHostsBlocker/issues",
+      "licenseId": 2,
+      "name": "System Hosts Blocker",
+      "syntaxid": 1,
+      "viewUrl": "https://raw.githubusercontent.com/nathanaccidentally/SystemHostsBlocker/master/hosts"
+    },
+    {
+      "id": 626,
+      "licenseId": null,
+      "name": "Tyzbit Hosts",
+      "syntaxid": 1,
+      "viewUrl": "https://raw.githubusercontent.com/tyzbit/hosts/master/data/tyzbit/hosts"
+    },
+    {
+      "id": 627,
+      "description": "This is a list to prevent those fake survey gift card / fradulent websites that seem to replicate itself. Hopefully, this prevents a majority of them.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/giftcardkiller.txt",
+      "homeUrl": "https://github.com/TakoYachty/Gift-Card-Killer",
+      "issuesUrl": "https://github.com/TakoYachty/Gift-Card-Killer/issues",
+      "licenseId": null,
+      "name": "Gift Card Killer",
+      "syntaxid": 1,
+      "viewUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/giftcardkiller.txt"
+    },
+    {
+      "id": 628,
+      "description": "Say goodbye to ads, spies, tracking and untrusted hosts.",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/Untrusted%20Hosts%20Blocker.txt",
+      "homeUrl": "https://github.com/TakoYachty/Gift-Card-Killer",
+      "issuesUrl": "https://github.com/TakoYachty/Gift-Card-Killer/issues",
+      "licenseId": null,
+      "name": "Untrusted Hosts Blocker",
+      "syntaxid": 1,
+      "viewUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/Untrusted%20Hosts%20Blocker.txt"
+    },
+    {
+      "id": 629,
+      "homeUrl": "https://github.com/TakoYachty/Gift-Card-Killer",
+      "issuesUrl": "https://github.com/TakoYachty/Gift-Card-Killer/issues",
+      "licenseId": null,
+      "name": "Thieus Hosts Spotify",
+      "syntaxid": 1,
+      "viewUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/Thieus%20Hosts%20Spotify.txt"
+    },
+    {
+      "id": 630,
+      "licenseId": null,
+      "name": "AdGuard Simplified Domain Names Filter (Domains)",
+      "syntaxid": 2,
+      "viewUrl": "https://v.firebog.net/hosts/AdguardDNS.txt"
+    },
+    {
+      "id": 631,
+      "licenseId": null,
+      "name": "Prigent Phishing",
+      "syntaxid": 2,
+      "viewUrl": "https://v.firebog.net/hosts/Prigent-Phishing.txt"
+    },
+    {
+      "id": 632,
+      "description": "Samsung SmartTV domains (Will block \"Smart\" aspects of device)",
+      "descriptionSourceUrl": "https://v.firebog.net/hosts/static/SamsungSmart.txt",
+      "licenseId": null,
+      "name": "Samsung SmartTV Domains",
+      "syntaxid": 1,
+      "viewUrl": "https://v.firebog.net/hosts/static/SamsungSmart.txt"
+    },
+    {
+      "id": 634,
+      "description": "The aim of this host file has been to keep the amount of hosts as small as possible. Bigger isn't always better, especially with the effective use of wildcards and pruning of dead hosts.",
+      "descriptionSourceUrl": "https://github.com/mmotti/mmotti-host-file#mmotti-host-file-samsung-knox-firewall",
+      "homeUrl": "https://github.com/mmotti/mmotti-host-file",
+      "issuesUrl": "https://github.com/mmotti/mmotti-host-file/issues",
+      "licenseId": null,
+      "name": "MMotti Host File (Samsung Knox Firewall)",
+      "syntaxid": 16,
+      "viewUrl": "https://raw.githubusercontent.com/mmotti/mmotti-host-file/master/hosts"
+    },
+    {
+      "id": 635,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "DOTA Gambling Sites",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Gambling/DOTA%20Gambling%20Sites"
+    },
+    {
+      "id": 636,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "ESports Gambling Sites",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Gambling/ESports%20Gambling%20Sites"
+    },
+    {
+      "id": 637,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "H1Z1 Gambling Sites",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Gambling/H1Z1%20Gambling%20Sites"
+    },
+    {
+      "id": 638,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "LOL Gambling Sites",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Gambling/LOL%20Gambling%20Sites"
+    },
+    {
+      "id": 639,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "DOTA Scam Sites",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/DOTA"
+    },
+    {
+      "id": 640,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Fortnite Scam Sites",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Fortnite%20Scam%20Sites"
+    },
+    {
+      "id": 641,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Last Day on Earth Scam Sites",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Last%20Day%20on%20Earth"
+    },
+    {
+      "id": 642,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "PUBG Scam Sites",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/PUBG"
+    },
+    {
+      "id": 643,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Riot Scam Sites",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Riot%20Scam%20Sites"
+    },
+    {
+      "id": 644,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Roblox Scam Sites",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Roblox%20Scam%20Sites"
+    },
+    {
+      "id": 645,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Steam Scam Sites",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Steam%20Scam%20Sites"
+    },
+    {
+      "id": 647,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Discord Resources - Account Resellers",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Account%20Resellers"
+    },
+    {
+      "id": 648,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Discord Resources - Booters",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Booters"
+    },
+    {
+      "id": 649,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Discord Resources - Hack Distributors",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Hack%20Distributors"
+    },
+    {
+      "id": 650,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Discord Resources - Harmful",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Harmful"
+    },
+    {
+      "id": 651,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Discord Resources - IP Grabbers",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/IP%20Grabbers"
+    },
+    {
+      "id": 652,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Discord Resources - Malware",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Malware"
+    },
+    {
+      "id": 653,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Discord Resources - Phishing",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Phishing"
+    },
+    {
+      "id": 654,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Discord Resources - Screamers",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Screamers"
+    },
+    {
+      "id": 655,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Discord Resources - Invites",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Miscellanious/Invites"
+    },
+    {
+      "id": 656,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Discord Resources - Link Shortners",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Miscellanious/Link%20Shortners"
+    },
+    {
+      "id": 657,
+      "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+      "licenseId": null,
+      "name": "Discord Resources - NSFW",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Miscellanious/NSFW"
+    },
+    {
+      "id": 658,
+      "description": "Block annoying web elements and reclaim lost screen real estate - Unsuck the web and make it more user friendly!",
+      "homeUrl": "https://github.com/yourduskquibbles/webannoyances",
+      "issuesUrl": "https://github.com/yourduskquibbles/webannoyances/issues",
+      "licenseId": 8,
+      "name": "Web Annoyances Ultralist - Generic Filters",
+      "syntaxid": 3,
+      "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/filters/generic_filters.txt"
+    },
+    {
+      "id": 659,
+      "description": "Block annoying web elements and reclaim lost screen real estate - Unsuck the web and make it more user friendly!",
+      "homeUrl": "https://github.com/yourduskquibbles/webannoyances",
+      "issuesUrl": "https://github.com/yourduskquibbles/webannoyances/issues",
+      "licenseId": 8,
+      "name": "Web Annoyances Ultralist - Modal Overlay Filters",
+      "syntaxid": 3,
+      "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/filters/modal_filters.txt"
+    },
+    {
+      "id": 660,
+      "description": "Block annoying web elements and reclaim lost screen real estate - Unsuck the web and make it more user friendly!",
+      "homeUrl": "https://github.com/yourduskquibbles/webannoyances",
+      "issuesUrl": "https://github.com/yourduskquibbles/webannoyances/issues",
+      "licenseId": 8,
+      "name": "Web Annoyances Ultralist - Newsletter Subscription Filters",
+      "syntaxid": 3,
+      "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/filters/newsletter_filters.txt"
+    },
+    {
+      "id": 661,
+      "description": "Block annoying web elements and reclaim lost screen real estate - Unsuck the web and make it more user friendly!",
+      "homeUrl": "https://github.com/yourduskquibbles/webannoyances",
+      "issuesUrl": "https://github.com/yourduskquibbles/webannoyances/issues",
+      "licenseId": 8,
+      "name": "Web Annoyances Ultralist - Social Filters",
+      "syntaxid": 3,
+      "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/filters/social_filters.txt"
+    },
+    {
+      "id": 662,
+      "homeUrl": "https://github.com/RikoDEV/NoMoreIPLogger-adblock-list",
+      "licenseId": 9,
+      "name": "NoMoreIPLogger List",
+      "syntaxid": 2,
+      "viewUrl": "https://raw.githubusercontent.com/RikoDEV/NoMoreIPLogger-adblock-list/master/list.txt"
+    },
+    {
+      "id": 663,
+      "homeUrl": "http://nmtrung.com/fmsf-2",
+      "issuesUrl": "https://github.com/nmtrung/FMSF-2.0/issues",
+      "licenseId": null,
+      "name": "FSMF 2",
+      "viewUrl": "https://raw.githubusercontent.com/nmtrung/FMSF-2.0/master/fmsf_2.0.txt"
+    }
+  ]
