@@ -17,10 +17,8 @@
     "css-loader": "^0.28.11",
     "event-source-polyfill": "0.0.16",
     "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.11",
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.3.1",
-    "json-loader": "^0.5.7",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-hot-loader": "^4.3.8",
@@ -28,8 +26,7 @@
     "style-loader": "^0.23.0",
     "typescript": "^2.9.2",
     "url-loader": "^1.1.1",
-    "webpack": "^3.11.0",
-    "webpack-hot-middleware": "^2.24.0"
+    "webpack": "^3.11.0"
   },
   "dependencies": {
     "@types/react-table": "^6.7.12",
