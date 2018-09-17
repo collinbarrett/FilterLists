@@ -10,7 +10,7 @@
     "@types/react-router": "^4.0.31",
     "@types/react-router-dom": "^4.3.1",
     "@types/webpack-env": "^1.13.6",
-    "aspnet-webpack": "^2.0.3",
+    "aspnet-webpack": "^3.0.0",
     "aspnet-webpack-react": "^3.0.0",
     "awesome-typescript-loader": "^4.0.1",
     "bootstrap": "^4.1.3",
