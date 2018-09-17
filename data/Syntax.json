@@ -68,5 +68,10 @@
     "id": 15,
     "definitionUrl": null,
     "name": "IPs (Range-only)"
+  },
+  {
+    "id": 16,
+    "definitionUrl": null,
+    "name": "Domains with wildcards"
   }
 ]
