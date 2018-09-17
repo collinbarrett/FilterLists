@@ -12119,7 +12119,7 @@
   {
     "id": 610,
     "chatUrl": "https://discord.me/polskiefiltry",
-    "description": "Filters that prevent scrolling movies from playing.",
+    "description": "Filters that prevent videos from scrolling.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt",
     "discontinuedDate": null,
     "donateUrl": null,
@@ -12203,7 +12203,7 @@
   {
     "id": 614,
     "chatUrl": "https://discord.me/polskiefiltry",
-    "description": "Filters that remove internal tags that do not match the subject of the article, which are easily accidentally clicked. Inspired by Agora Tag Links Remove.",
+    "description": "Filters that remove internal tags that do not match the subject of the article, which are easily accidentally clicked. Inspired by Agora Tag Links Remove extension.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt",
     "discontinuedDate": null,
     "donateUrl": null,
