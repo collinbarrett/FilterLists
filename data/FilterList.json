@@ -1758,7 +1758,7 @@
     "policyUrl": null,
     "publishedDate": "2018-01-06T00:00:00",
     "submissionUrl": null,
-    "syntaxId": 4,
+    "syntaxId": 17,
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
@@ -7260,7 +7260,7 @@
     "policyUrl": null,
     "publishedDate": "2017-10-23T00:00:00",
     "submissionUrl": "https://polishannoyancefilters.netlify.com/issues",
-    "syntaxId": 6,
+    "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB_uBlock_AdGuard.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
@@ -12237,7 +12237,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": 4,
+    "syntaxId": 17,
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_unlocking_right_click.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
