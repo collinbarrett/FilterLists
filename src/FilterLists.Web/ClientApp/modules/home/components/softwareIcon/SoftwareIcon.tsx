@@ -9,11 +9,13 @@ import {
     img7,
     img8,
     img10,
+    img12,
     img13,
     img14,
     img15,
     img16,
-    img18
+    img18,
+    img19
 } from "./imgs";
 
 interface IProps {
@@ -44,9 +46,11 @@ const icons: { [id: number]: IIcon; } = {
     7: { image: img7, imageTitle: "AdAway" },
     8: { image: img8, imageTitle: "Personal Blocklist" },
     10: { image: img10, imageTitle: "Redirector" },
+    12: { image: img12, imageTitle: "Gas Mask" },
     13: { image: img13, imageTitle: "MinerBlock" },
     14: { image: img14, imageTitle: "Pi-hole" },
     15: { image: img15, imageTitle: "uBlock" },
     16: { image: img16, imageTitle: "Internet Explorer (TPL)" },
-    18: { image: img18, imageTitle: "FireHOL" }
+    18: { image: img18, imageTitle: "FireHOL" },
+    19: { image: img19, imageTitle: "Samsung Knox" }
 };
