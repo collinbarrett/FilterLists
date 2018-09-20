@@ -73,5 +73,10 @@
     "id": 16,
     "definitionUrl": null,
     "name": "Domains with wildcards"
+  },
+  {
+    "id": 17,
+    "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#scriptlet-injection",
+    "name": "uBlock Origin scriptlet injection"
   }
 ]
