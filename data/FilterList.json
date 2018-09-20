@@ -10229,7 +10229,7 @@
   {
     "id": 511,
     "chatUrl": null,
-    "description": "Custom filters allow you to block popular trackers, banners, download and do not display ads on site pages and in search results",
+    "description": "Custom filters allow you to block malicious sites, popular trackers, banners, delete and do not display ads on the site and in search results",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/bogachenko/personalfilters/master/repository.txt",
     "discontinuedDate": null,
     "donateUrl": null,
