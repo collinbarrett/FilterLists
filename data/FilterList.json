@@ -1107,7 +1107,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 1,
     "viewUrl": "https://gmbksfilters.googlecode.com/hg/hosts_adonly.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
@@ -2829,7 +2829,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": 4,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/betterwebleon/slovenian-list/master/filters.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
@@ -3102,7 +3102,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 2,
     "viewUrl": "http://www.sa-blacklist.stearns.org/sa-blacklist/sa-blacklist.current.domains",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
@@ -8268,7 +8268,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": 4,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Filter.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
@@ -8940,7 +8940,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": 4,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/i-dont-want-your-app.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
@@ -9087,7 +9087,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": 4,
+    "syntaxId": 2,
     "viewUrl": "https://blocklist.kowabit.de/list.txt",
     "viewUrlMirror1": "https://v.firebog.net/hosts/Kowabit.txt",
     "viewUrlMirror2": null
@@ -10229,8 +10229,8 @@
   {
     "id": 511,
     "chatUrl": null,
-    "description": "Custom filters allow you to block popular trackers, banners, download and display ads on site pages and in search results",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/bogachenko/personalfilters/master/personalfilters.txt",
+    "description": "Custom filters allow you to block popular trackers, banners, download and do not display ads on site pages and in search results",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/bogachenko/personalfilters/master/repository.txt",
     "discontinuedDate": null,
     "donateUrl": null,
     "emailAddress": null,
@@ -10243,7 +10243,7 @@
     "publishedDate": "2017-12-03T00:00:00",
     "submissionUrl": null,
     "syntaxId": 4,
-    "viewUrl": "https://raw.githubusercontent.com/bogachenko/personalfilters/master/personalfilters.txt",
+    "viewUrl": "https://raw.githubusercontent.com/bogachenko/personalfilters/master/repository.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
   },
@@ -13203,7 +13203,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/nmtrung/FMSF-2.0/master/fmsf_2.0.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
