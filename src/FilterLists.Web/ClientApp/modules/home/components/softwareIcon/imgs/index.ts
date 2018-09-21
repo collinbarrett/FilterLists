@@ -14,6 +14,8 @@ import img15 from "./15-uBlock.svg";
 import img16 from "./16-Internet-Explorer-TPL.png";
 import img18 from "./18-FireHOL.png";
 import img19 from "./19-Samsung-Knox.png";
+import img20 from "./20-Little-Snitch.png";
+import img21 from "./21-Privoxy.png";
 
 export {
     img1,
@@ -31,5 +33,7 @@ export {
     img15,
     img16,
     img18,
-    img19
+    img19,
+    img20,
+    img21
     };
