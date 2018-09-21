@@ -13501,5 +13501,47 @@
     "viewUrl": "https://pgl.yoyo.org/as/serverlist.php?hostformat=adblock;showintro=1&mimetype=plaintext"
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
+  },
+  {
+    "id": 678,
+    "chatUrl": null,
+    "description": null,
+    "descriptionSourceUrl": null,
+    "discontinuedDate": "2014-05-19",
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://gist.github.com/sx2008/2766874",
+    "issuesUrl": null,
+    "licenseId": null,
+    "name": "Privoxy User Action File (sx2008)",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 19,
+    "viewUrl": "https://gist.githubusercontent.com/sx2008/2766874/raw/c12a305decef3332663d1e04efa80b881211cfac/user.action"
+    "viewUrlMirror1": null,
+    "viewUrlMirror2": null
+  },
+  {
+    "id": 679,
+    "chatUrl": null,
+    "description": "This is my Privoxy configuration. It blocks common trackers and ads.",
+    "descriptionSourceUrl": "https://github.com/fdb/privoxy-config/blob/master/README",
+    "discontinuedDate": "2012-05-15",
+    "donateUrl": null,
+    "emailAddress": null,
+    "forumUrl": null,
+    "homeUrl": "https://github.com/fdb/privoxy-config",
+    "issuesUrl": "https://github.com/fdb/privoxy-config/issues",
+    "licenseId": null,
+    "name": "Privoxy Config - Block Trackers",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 19,
+    "viewUrl": "https://raw.githubusercontent.com/fdb/privoxy-config/master/block-trackers.action"
+    "viewUrlMirror1": null,
+    "viewUrlMirror2": null
   }
 ]
