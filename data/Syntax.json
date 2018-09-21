@@ -86,7 +86,7 @@
   },
   {
     "id": 19,
-    "definitionUrl": "https://www.privoxy.org/user-manual/actions-file.html#ACTIONS",
-    "name": "Privoxy"
+    "definitionUrl": "https://www.privoxy.org/user-manual/actions-file.html",
+    "name": "Privoxy action file"
   }
 ]
