@@ -13543,5 +13543,26 @@
     "viewUrl": "https://raw.githubusercontent.com/fdb/privoxy-config/master/block-trackers.action",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
+  },
+  {
+    "id": 680,
+    "chatUrl": null,
+    "description": "A version of the Norwegian filter list for domains tools, such as Pi-hole, Samsung Knox, Personal Blocklist, and Google Hit Hider by Domain.",
+    "descriptionSourceUrl": null,
+    "discontinuedDate": null,
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "forumUrl": null,
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Dandelion Sprout's Norwegian Filters for Tidier Websites (Domains)",
+    "policyUrl": null,
+    "publishedDate": null,
+    "submissionUrl": null,
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt",
+    "viewUrlMirror2": null
   }
 ]
