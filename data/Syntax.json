@@ -83,5 +83,10 @@
     "id": 18,
     "definitionUrl": "https://help.obdev.at/littlesnitch/#/lsc-rule-group-subscriptions",
     "name": "Little Snitch subscription-style rules"
+  },
+  {
+    "id": 19,
+    "definitionUrl": "https://www.privoxy.org/user-manual/actions-file.html#ACTIONS",
+    "name": "Privoxy"
   }
 ]
