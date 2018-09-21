@@ -124,5 +124,12 @@
     "homeUrl": "https://www.samsungknox.com",
     "isAbpSubscribable": false,
     "name": "Samsung Knox"
+  },
+  {
+    "id": 20,
+    "downloadUrl": "https://www.obdev.at/products/littlesnitch/download.html",
+    "homeUrl": "https://www.obdev.at/products/littlesnitch/index.html",
+    "isAbpSubscribable": false,
+    "name": "Little Snitch"
   }
 ]
