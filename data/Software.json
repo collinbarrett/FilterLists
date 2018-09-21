@@ -131,5 +131,12 @@
     "homeUrl": "https://www.obdev.at/products/littlesnitch/index.html",
     "isAbpSubscribable": false,
     "name": "Little Snitch"
+  },
+  {
+    "id": 21,
+    "downloadUrl": "https://www.privoxy.org/sf-download-mirror/",
+    "homeUrl": "https://www.privoxy.org/",
+    "isAbpSubscribable": false,
+    "name": "Privoxy"
   }
 ]
