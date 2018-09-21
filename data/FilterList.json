@@ -13435,7 +13435,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
-    "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&showintro=1&mimetype=plaintext"
+    "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&showintro=1&mimetype=plaintext",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
   },
@@ -13477,7 +13477,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 19,
-    "viewUrl": "https://pgl.yoyo.org/as/serverlist.php?hostformat=junkbuster;showintro=1&mimetype=plaintext"
+    "viewUrl": "https://pgl.yoyo.org/as/serverlist.php?hostformat=junkbuster;showintro=1&mimetype=plaintext",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
   },
@@ -13498,7 +13498,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 16,
-    "viewUrl": "https://pgl.yoyo.org/as/serverlist.php?hostformat=adblock;showintro=1&mimetype=plaintext"
+    "viewUrl": "https://pgl.yoyo.org/as/serverlist.php?hostformat=adblock;showintro=1&mimetype=plaintext",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
   },
@@ -13519,7 +13519,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 19,
-    "viewUrl": "https://gist.githubusercontent.com/sx2008/2766874/raw/c12a305decef3332663d1e04efa80b881211cfac/user.action"
+    "viewUrl": "https://gist.githubusercontent.com/sx2008/2766874/raw/c12a305decef3332663d1e04efa80b881211cfac/user.action",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
   },
@@ -13540,7 +13540,7 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 19,
-    "viewUrl": "https://raw.githubusercontent.com/fdb/privoxy-config/master/block-trackers.action"
+    "viewUrl": "https://raw.githubusercontent.com/fdb/privoxy-config/master/block-trackers.action",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
   }
