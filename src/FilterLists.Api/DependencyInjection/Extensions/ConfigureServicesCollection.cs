@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
+using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace FilterLists.Api.DependencyInjection.Extensions
@@ -32,7 +33,13 @@ namespace FilterLists.Api.DependencyInjection.Extensions
             });
 
         private static void AddMvcCustom(this IServiceCollection services) =>
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc()
+                    .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+                    .AddJsonOptions(opts =>
+                    {
+                        opts.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+                        opts.SerializerSettings.ContractResolver = new SkipEmptyContractResolver();
+                    });
 
         private static void AddRoutingCustom(this IServiceCollection services) =>
             services.AddRouting(opts => opts.LowercaseUrls = true);

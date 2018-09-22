@@ -5,12 +5,10 @@ using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using FilterLists.Services.FilterList.Models;
-using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Services.FilterList
 {
-    [UsedImplicitly]
     public class FilterListService : Service
     {
         public FilterListService(FilterListsDbContext dbContext, IConfigurationProvider mapConfig)
@@ -19,7 +17,16 @@ namespace FilterLists.Services.FilterList
         }
 
         public async Task<IEnumerable<ListSummaryDto>> GetAllSummariesAsync() =>
-            await DbContext.FilterLists.OrderBy(l => l.Name).ProjectTo<ListSummaryDto>(MapConfig).ToListAsync();
+            await DbContext.FilterLists
+                           .OrderBy(l => l.Name)
+                           .ProjectTo<ListSummaryDto>(MapConfig)
+                           .ToListAsync();
+
+        public async Task<IEnumerable<ListIndexRecord>> GetIndexAsync() =>
+            await DbContext.FilterLists
+                           .OrderBy(l => l.Name)
+                           .ProjectTo<ListIndexRecord>(MapConfig)
+                           .ToListAsync();
 
         public async Task<ListDetailsDto> GetDetailsAsync(uint id) =>
             await DbContext.FilterLists.ProjectTo<ListDetailsDto>(MapConfig)
