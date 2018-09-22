@@ -37,8 +37,8 @@ namespace FilterLists.Api.DependencyInjection.Extensions
                     .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
                     .AddJsonOptions(opts =>
                     {
-                        //opts.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
-                        //opts.SerializerSettings.ContractResolver = new SkipEmptyContractResolver();
+                        opts.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+                        opts.SerializerSettings.ContractResolver = new SkipEmptyContractResolver();
                     });
 
         private static void AddRoutingCustom(this IServiceCollection services) =>
