@@ -78,5 +78,15 @@
     "id": 17,
     "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#scriptlet-injection",
     "name": "uBlock Origin scriptlet injection"
+  },
+  {
+    "id": 18,
+    "definitionUrl": "https://help.obdev.at/littlesnitch/#/lsc-rule-group-subscriptions",
+    "name": "Little Snitch subscription-style rules"
+  },
+  {
+    "id": 19,
+    "definitionUrl": "https://www.privoxy.org/user-manual/actions-file.html",
+    "name": "Privoxy action file"
   }
 ]
