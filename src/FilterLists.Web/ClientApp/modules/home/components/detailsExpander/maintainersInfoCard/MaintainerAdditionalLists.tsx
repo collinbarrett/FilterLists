@@ -8,7 +8,7 @@ interface IProps {
 
 export const MaintainerAdditionalLists = (props: IProps) => {
     return <div className="col-9">
-               {props.additionalLists.length > 0
+               {props.additionalLists && props.additionalLists.length > 0
                     ? <div>
                           <h4>More by {props.name}:</h4>
                           <ul>
