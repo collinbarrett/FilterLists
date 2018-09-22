@@ -5,7 +5,7 @@ interface IProps {
     name: string;
     url: string;
     text?: string;
-    syntaxId: number;
+    syntaxId: uint?;
 }
 
 export const SubscribeButton = (props: IProps) => {
@@ -61,3 +61,4 @@ export const SubscribeButton = (props: IProps) => {
                : null;
 };
        
+}
