@@ -67,7 +67,9 @@ export const ListsTable = (props: IProps) => {
                        accessor: "tags",
                        filterable: true,
                        filterMethod: (f: any, r: any) =>
-                           r[f.id].map((e: any) => e.name).join().toUpperCase().includes(f.value.toUpperCase()),
+                       (r[f.id]
+                            ? r[f.id].map((e: any) => e.name).join().toUpperCase().includes(f.value.toUpperCase())
+                            : null),
                        sortable: false,
                        Cell: (c: any) => c.value
                                          ? <div className="fl-tag-container">
