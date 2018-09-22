@@ -56,5 +56,5 @@ const icons: { [id: number]: IIcon; } = {
     18: { image: img18, imageTitle: "FireHOL" },
     19: { image: img19, imageTitle: "Samsung Knox" },
     20: { image: img20, imageTitle: "Little Snitch" },
-    21: { image: img20, imageTitle: "Privoxy" }
+    21: { image: img21, imageTitle: "Privoxy" }
 };
