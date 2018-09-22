@@ -70,7 +70,17 @@ export const ListsTable = (props: IProps) => {
                        (r[f.id]
                             ? r[f.id].map((e: any) => e.name).join().toUpperCase().includes(f.value.toUpperCase())
                             : null),
-                       sortable: false,
+                       sortMethod: (a: any, b: any) => a
+                                                       ? b
+                                                         ? a.length === b.length
+                                                           ? a[0].name > b[0].name
+                                                             ? -1
+                                                             : 1
+                                                           : a.length > b.length
+                                                             ? 1
+                                                             : -1
+                                                         : 1
+                                                       : -1,
                        Cell: (c: any) => c.value
                                          ? <div className="fl-tag-container">
                                                {c.value.map((e: any, i: number) =>
