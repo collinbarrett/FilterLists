@@ -5,7 +5,7 @@ interface IProps {
     name: string;
     url: string;
     text?: string;
-    syntaxId: uint?;
+    syntax: number;
 }
 
 export const SubscribeButton = (props: IProps) => {
@@ -21,7 +21,7 @@ export const SubscribeButton = (props: IProps) => {
     }
    
 
-    if (props.syntaxId = 10 ) {
+    if (props.syntax = 10 ) {
     const hrefTitle = `&amp;title=${encodeURIComponent(props.name)}`;
     const href = `javascript:window.external.msAddTrackingProtectionList('${encodeURIComponent(props.url)}','${hrefTitle}')`;
     const title =
@@ -34,7 +34,7 @@ export const SubscribeButton = (props: IProps) => {
                              text={props.text || "Subscribe"}/>
                : null;
     
-    } if (props.syntaxId = 18 ) {
+    } if (props.syntax = 18 ) {
     const hrefTitle = `&amp;title=${encodeURIComponent(props.name)}`;
     const href = `x-littlesnitch:subscribe-rules?url=${encodeURIComponent(props.url)}`;
     const title =
