@@ -19,6 +19,9 @@ namespace FilterLists.Services.Software
         }
 
         public async Task<IEnumerable<SoftwareDto>> GetAll() =>
-            await DbContext.Software.OrderBy(s => s.Name).ProjectTo<SoftwareDto>(MapConfig).ToListAsync();
+            await DbContext.Software
+                           .OrderBy(s => s.Name)
+                           .ProjectTo<SoftwareDto>(MapConfig)
+                           .ToListAsync();
     }
 }

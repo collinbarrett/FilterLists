@@ -10,25 +10,31 @@ namespace FilterLists.Services.FilterList.MappingProfiles
     {
         public ListSummaryDtoMappingProfile() =>
             CreateMap<Data.Entities.FilterList, ListSummaryDto>()
-                .ForMember(d => d.Languages, o => o.MapFrom(l => l.FilterListLanguages.Select(la => la.Language)))
-                .ForMember(d => d.SoftwareIds,
-                    o => o.MapFrom(l =>
-                        l.Syntax
-                         .SoftwareSyntaxes
-                         .Select(ss => ss.Software)
-                         .OrderBy(s => s.Name)
-                         .Select(s => (int)s.Id)))
-                .ForMember(d => d.Tags, o => o.MapFrom(l => l.FilterListTags.Select(m => m.Tag)))
-                .ForMember(d => d.UpdatedDate,
-                    o => o.MapFrom(l =>
-                        l.DiscontinuedDate ??
-                        (l.Snapshots
-                          .Count(s => s.WasSuccessful && s.Md5Checksum != null) >= 2
-                            ? l.Snapshots
-                               .Where(s => s.WasSuccessful && s.Md5Checksum != null)
-                               .Select(s => s.CreatedDateUtc)
-                               .OrderByDescending(c => c)
-                               .FirstOrDefault()
+                .ForMember(dest => dest.Id,
+                    opt => opt.MapFrom(src =>
+                        (int)src.Id))
+                .ForMember(dest => dest.Languages,
+                    opt => opt.MapFrom(src =>
+                        src.FilterListLanguages.Select(la => la.Language)))
+                .ForMember(dest => dest.SoftwareIds,
+                    opt => opt.MapFrom(src =>
+                        src.Syntax
+                           .SoftwareSyntaxes
+                           .Select(ss => ss.Software)
+                           .OrderBy(s => s.Name)
+                           .Select(s => (int)s.Id)))
+                .ForMember(dest => dest.Tags,
+                    opt => opt.MapFrom(src =>
+                        src.FilterListTags.Select(m => m.Tag)))
+                .ForMember(dest => dest.UpdatedDate,
+                    opt => opt.MapFrom(src =>
+                        src.DiscontinuedDate ??
+                        (src.Snapshots.Count(s => s.WasSuccessful && s.Md5Checksum != null) >= 2
+                            ? src.Snapshots
+                                 .Where(s => s.WasSuccessful && s.Md5Checksum != null)
+                                 .Select(s => s.CreatedDateUtc)
+                                 .OrderByDescending(c => c)
+                                 .FirstOrDefault()
                             : null)));
     }
 }

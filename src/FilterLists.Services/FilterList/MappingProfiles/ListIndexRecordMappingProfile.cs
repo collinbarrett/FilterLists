@@ -11,43 +11,43 @@ namespace FilterLists.Services.FilterList.MappingProfiles
     {
         public ListIndexRecordMappingProfile() =>
             CreateMap<Data.Entities.FilterList, ListIndexRecord>()
-                .ForMember(r => r.Id,
-                    o => o.MapFrom(l =>
-                        (int)l.Id))
-                .ForMember(r => r.LanguageIds,
-                    o => o.MapFrom(l =>
-                        l.FilterListLanguages.Select(ll => (int)ll.LanguageId)))
-                .ForMember(r => r.MaintainerIds,
-                    o => o.MapFrom(l =>
-                        l.FilterListMaintainers.Select(ll => (int)ll.MaintainerId)))
-                .ForMember(r => r.RuleCount,
-                    o => o.MapFrom(l =>
-                        l.Snapshots
-                         .Where(s => s.WasSuccessful)
-                         .Select(s => (int?)s.SnapshotRules.Count)
-                         .FirstOrDefault()))
-                .ForMember(r => r.SyntaxId,
-                    o => o.MapFrom(l =>
-                        (int)l.SyntaxId))
-                .ForMember(r => r.TagIds,
-                    o => o.MapFrom(l =>
-                        l.FilterListTags.Select(lt => (int)lt.TagId)))
-                .ForMember(r => r.UpdatedDate,
-                    o => o.MapFrom(l =>
-                        l.Snapshots
-                         .Count(s => s.WasSuccessful && s.WasUpdated) >= 2
-                            ? l.Snapshots
-                               .Where(s => s.WasSuccessful && s.WasUpdated)
-                               .Select(s => s.CreatedDateUtc)
-                               .OrderByDescending(c => c)
-                               .FirstOrDefault()
+                .ForMember(dest => dest.Id,
+                    opt => opt.MapFrom(src =>
+                        (int)src.Id))
+                .ForMember(dest => dest.LanguageIds,
+                    opt => opt.MapFrom(src =>
+                        src.FilterListLanguages.Select(ll => (int)ll.LanguageId)))
+                .ForMember(dest => dest.MaintainerIds,
+                    opt => opt.MapFrom(src =>
+                        src.FilterListMaintainers.Select(ll => (int)ll.MaintainerId)))
+                .ForMember(dest => dest.RuleCount,
+                    opt => opt.MapFrom(src =>
+                        src.Snapshots
+                           .Where(s => s.WasSuccessful)
+                           .Select(s => (int?)s.SnapshotRules.Count)
+                           .FirstOrDefault()))
+                .ForMember(dest => dest.SyntaxId,
+                    opt => opt.MapFrom(src =>
+                        (int)src.SyntaxId))
+                .ForMember(dest => dest.TagIds,
+                    opt => opt.MapFrom(src =>
+                        src.FilterListTags.Select(lt => (int)lt.TagId)))
+                .ForMember(dest => dest.UpdatedDate,
+                    opt => opt.MapFrom(src =>
+                        src.Snapshots
+                           .Count(s => s.WasSuccessful && s.WasUpdated) >= 2
+                            ? src.Snapshots
+                                 .Where(s => s.WasSuccessful && s.WasUpdated)
+                                 .Select(s => s.CreatedDateUtc)
+                                 .OrderByDescending(c => c)
+                                 .FirstOrDefault()
                             : null))
-                .ForMember(r => r.ViewUrlMirrors,
-                    o => o.MapFrom(l =>
-                        l.ViewUrlMirror1 != null
-                            ? l.ViewUrlMirror2 != null
-                                ? new List<string> {l.ViewUrlMirror1, l.ViewUrlMirror2}
-                                : new List<string> {l.ViewUrlMirror1}
+                .ForMember(dest => dest.ViewUrlMirrors,
+                    opt => opt.MapFrom(src =>
+                        src.ViewUrlMirror1 != null
+                            ? src.ViewUrlMirror2 != null
+                                ? new List<string> {src.ViewUrlMirror1, src.ViewUrlMirror2}
+                                : new List<string> {src.ViewUrlMirror1}
                             : null));
     }
 }

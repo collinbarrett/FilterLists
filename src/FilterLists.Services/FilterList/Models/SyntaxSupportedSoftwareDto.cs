@@ -5,8 +5,8 @@ namespace FilterLists.Services.FilterList.Models
     [UsedImplicitly]
     public class SyntaxSupportedSoftwareDto
     {
+        public int Id { get; set; }
         public string HomeUrl { get; set; }
-        public uint Id { get; set; }
         public string Name { get; set; }
     }
 }

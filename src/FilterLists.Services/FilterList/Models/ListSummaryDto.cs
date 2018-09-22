@@ -7,7 +7,7 @@ namespace FilterLists.Services.FilterList.Models
     [UsedImplicitly]
     public class ListSummaryDto
     {
-        public uint Id { get; set; }
+        public int Id { get; set; }
         public IEnumerable<ListLanguagesDto> Languages { get; set; }
         public string Name { get; set; }
         public IEnumerable<int> SoftwareIds { get; set; }
