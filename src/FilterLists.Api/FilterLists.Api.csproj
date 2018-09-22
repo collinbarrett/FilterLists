@@ -35,6 +35,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Humanizer.Core" Version="2.5.1" />
     <PackageReference Include="JetBrains.Annotations" Version="2018.2.1" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.4.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.4" />
