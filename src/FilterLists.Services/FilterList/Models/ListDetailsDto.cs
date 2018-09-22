@@ -7,7 +7,7 @@ namespace FilterLists.Services.FilterList.Models
     [UsedImplicitly]
     public class ListDetailsDto
     {
-        public uint Id { get; set; }
+        public int Id { get; set; }
         public string ChatUrl { get; set; }
         public string Description { get; set; }
         public string DescriptionSourceUrl { get; set; }

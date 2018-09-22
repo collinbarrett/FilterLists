@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
-using FilterLists.Services.Language.Models;
+using FilterLists.Services.FilterList.Models;
 using JetBrains.Annotations;
 
 namespace FilterLists.Services.FilterList.MappingProfiles
 {
     [UsedImplicitly]
-    public class LanguageDtoMappingProfile : Profile
+    public class SyntaxSupportedSoftwareDtoMappingProfile : Profile
     {
-        public LanguageDtoMappingProfile() =>
-            CreateMap<Data.Entities.Language, LanguageDto>()
+        public SyntaxSupportedSoftwareDtoMappingProfile() =>
+            CreateMap<Data.Entities.Software, SyntaxSupportedSoftwareDto>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
                         (int)src.Id));
