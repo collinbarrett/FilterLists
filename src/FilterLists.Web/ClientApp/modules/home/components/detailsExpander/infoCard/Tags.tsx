@@ -7,7 +7,7 @@ interface IProps {
 }
 
 export const Tags = (props: IProps) => {
-    return props.tags.length > 0
+    return props.tags && props.tags.length > 0
                ? <div className="d-md-none">
                      {props.tags.map((t: IListTagDto, i: number) => <Tag {...t} key={i}/>)}
                  </div>
