@@ -15,7 +15,9 @@ import {
     img15,
     img16,
     img18,
-    img19
+    img19,
+    img20,
+    img21
 } from "./imgs";
 
 interface IProps {
@@ -52,5 +54,7 @@ const icons: { [id: number]: IIcon; } = {
     15: { image: img15, imageTitle: "uBlock" },
     16: { image: img16, imageTitle: "Internet Explorer (TPL)" },
     18: { image: img18, imageTitle: "FireHOL" },
-    19: { image: img19, imageTitle: "Samsung Knox" }
+    19: { image: img19, imageTitle: "Samsung Knox" },
+    20: { image: img20, imageTitle: "Little Snitch" },
+    21: { image: img20, imageTitle: "Privoxy" }
 };
