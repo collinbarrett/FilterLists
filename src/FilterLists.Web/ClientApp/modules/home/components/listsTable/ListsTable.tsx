@@ -53,7 +53,9 @@ export const ListsTable = (props: IProps) => {
                                    (s: ISoftwareDto, i: number) => <option value={s.id} key={i}>{s.name}</option>)}
                            </select>,
                        sortable: false,
-                       Cell: (c: any) => c.value.map((s: number, i: number) => <SoftwareIcon id={s} key={i}/>),
+                       Cell: (c: any) => c.value
+                                         ? c.value.map((s: number, i: number) => <SoftwareIcon id={s} key={i}/>)
+                                         : null,
                        width: 155,
                        headerClassName: "d-none d-md-block",
                        className: "d-none d-md-block",
@@ -67,19 +69,20 @@ export const ListsTable = (props: IProps) => {
                        filterMethod: (f: any, r: any) =>
                            r[f.id].map((e: any) => e.name).join().toUpperCase().includes(f.value.toUpperCase()),
                        sortable: false,
-                       Cell: (c: any) =>
-                           <div className="fl-tag-container">
-                               {c.value.map((e: any, i: number) =>
-                                   <span className="badge"
-                                         style={{
-                                             backgroundColor: `#${e.colorHex}`,
-                                             color: getContrast(`${e.colorHex}`)
-                                         }}
-                                         title={e.description}
-                                         key={i}>
-                                       {e.name}
-                                   </span>)}
-                           </div>,
+                       Cell: (c: any) => c.value
+                                         ? <div className="fl-tag-container">
+                                               {c.value.map((e: any, i: number) =>
+                                                   <span className="badge"
+                                                         style={{
+                                                             backgroundColor: `#${e.colorHex}`,
+                                                             color: getContrast(`${e.colorHex}`)
+                                                         }}
+                                                         title={e.description}
+                                                         key={i}>
+                                                       {e.name}
+                                                   </span>)}
+                                           </div>
+                                         : null,
                        width: 215,
                        headerClassName: "d-none d-md-block",
                        className: "d-none d-md-block",
@@ -102,15 +105,16 @@ export const ListsTable = (props: IProps) => {
                                    <option value={l.iso6391} key={i}>{l.name}</option>)}
                            </select>,
                        sortable: false,
-                       Cell: (c: any) =>
-                           <div className="fl-tag-container">
-                               {c.value.map((e: ILanguageDto, i: number) =>
-                                   <span className="badge badge-secondary"
-                                         title={e.name}
-                                         key={i}>
-                                       {e.iso6391}
-                                   </span>)}
-                           </div>,
+                       Cell: (c: any) => c.value
+                                         ? <div className="fl-tag-container">
+                                               {c.value.map((e: ILanguageDto, i: number) =>
+                                                   <span className="badge badge-secondary"
+                                                         title={e.name}
+                                                         key={i}>
+                                                       {e.iso6391}
+                                                   </span>)}
+                                           </div>
+                                         : null,
                        style: { whiteSpace: "inherit" },
                        width: 95,
                        headerClassName: "d-none d-md-block",
