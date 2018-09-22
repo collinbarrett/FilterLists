@@ -94,15 +94,20 @@ export const ListsTable = (props: IProps) => {
                        accessor: "languages",
                        filterable: true,
                        filterMethod: (f: any, r: any) =>
-                           f.value === "any" || r[f.id].map((x: any) => x.iso6391).includes(f.value),
+                           f.value === "any" ||
+                           (r[f.id]
+                                ? r[f.id].map((x: any) => x.iso6391).includes(f.value)
+                                : false),
                        Filter: ({ filter, onChange }) =>
                            <select
                                onChange={(event: any) => onChange(event.target.value)}
                                style={{ width: "100%" }}
                                value={filter ? filter.value : "any"}>
                                <option value="any">Any</option>
-                               {props.languages.map((l: ILanguageDto, i: number) =>
-                                   <option value={l.iso6391} key={i}>{l.name}</option>)}
+                               {props.languages
+                                    ? props.languages.map((l: ILanguageDto, i: number) =>
+                                        <option value={l.iso6391} key={i}>{l.name}</option>)
+                                    : null}
                            </select>,
                        sortable: false,
                        Cell: (c: any) => c.value
