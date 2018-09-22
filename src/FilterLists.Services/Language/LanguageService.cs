@@ -19,7 +19,8 @@ namespace FilterLists.Services.Language
         }
 
         public async Task<IEnumerable<LanguageDto>> GetAllTargeted() =>
-            await DbContext.Languages.Where(l => l.FilterListLanguages.Any())
+            await DbContext.Languages
+                           .Where(l => l.FilterListLanguages.Any())
                            .OrderBy(s => s.Name)
                            .ProjectTo<LanguageDto>(MapConfig)
                            .ToListAsync();
