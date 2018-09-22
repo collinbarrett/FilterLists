@@ -5,6 +5,7 @@ interface IProps {
     name: string;
     url: string;
     text?: string;
+    syntaxId: number;
 }
 
 export const SubscribeButton = (props: IProps) => {
@@ -52,7 +53,7 @@ export const SubscribeButton = (props: IProps) => {
     const title =
         `${titlePrefix}Subscribe to ${props.name
             } with a browser extension supporting the \"abp:\" protocol (e.g. uBlock Origin, Adblock Plus).`;
-    }         return props.url
+            return props.url
                ? <LinkButton href={href}
                              title={title}
                              buttonClass={buttonClass}
