@@ -1,5 +1,6 @@
 ﻿import { ChatButton } from "./ChatButton";
 import { DonateButton } from "./DonateButton";
+import { DownloadButton } from "./DownloadButton";
 import { EmailButton } from "./EmailButton";
 import { ForumButton } from "./ForumButton";
 import { HomeButton } from "./HomeButton";
@@ -13,6 +14,7 @@ import { ViewButtonGroup } from "./ViewButtonGroup";
 export {
     ChatButton,
     DonateButton,
+    DownloadButton,
     EmailButton,
     ForumButton,
     HomeButton,
