@@ -5,6 +5,7 @@ using FilterLists.Services.Language;
 using FilterLists.Services.Seed;
 using FilterLists.Services.Snapshot;
 using FilterLists.Services.Software;
+using FilterLists.Services.Tag;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,10 +23,11 @@ namespace FilterLists.Services.DependencyInjection.Extensions
                         o.UseMySql(config.GetConnectionString("FilterListsConnection"),
                             m => m.MigrationsAssembly("FilterLists.Api")));
             services.TryAddScoped<FilterListService>();
-            services.TryAddScoped<RuleService>();
-            services.TryAddScoped<SoftwareService>();
             services.TryAddScoped<LanguageService>();
             services.TryAddScoped<SeedService>();
+            services.TryAddScoped<SoftwareService>();
+            services.TryAddScoped<TagService>();
+            services.TryAddScoped<RuleService>();
             services.AddAutoMapper();
         }
 
