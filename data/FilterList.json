@@ -3586,7 +3586,8 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "http://rlwpx.free.fr/WPFF/hmis.7z",
+    "downloadUrl": "http://rlwpx.free.fr/WPFF/hmis.7z",
+    "viewUrl": null,
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
   },
@@ -3817,7 +3818,8 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "http://rlwpx.free.fr/WPFF/hblc.7z",
+    "downloadUrl": "http://rlwpx.free.fr/WPFF/hblc.7z",
+    "viewUrl": null,
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
   },
@@ -3838,7 +3840,8 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "http://rlwpx.free.fr/WPFF/hrsk.7z",
+    "downloadUrl": "http://rlwpx.free.fr/WPFF/hrsk.7z",
+    "viewUrl": null,
     "viewUrlMirror1": "https://v.firebog.net/hosts/Airelle-hrsk.txt",
     "viewUrlMirror2": null
   },
@@ -3859,7 +3862,8 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "http://rlwpx.free.fr/WPFF/htrc.7z",
+    "downloadUrl": "http://rlwpx.free.fr/WPFF/htrc.7z",
+    "viewUrl": null,
     "viewUrlMirror1": "https://v.firebog.net/hosts/Airelle-trc.txt",
     "viewUrlMirror2": null
   },
@@ -3880,7 +3884,8 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "http://rlwpx.free.fr/WPFF/hsex.7z",
+    "downloadUrl": "http://rlwpx.free.fr/WPFF/hsex.7z",
+    "viewUrl": null,
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
   },
@@ -3901,7 +3906,8 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "http://rlwpx.free.fr/WPFF/hpub.7z",
+    "downloadUrl": "http://rlwpx.free.fr/WPFF/hpub.7z",
+    "viewUrl": null,
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
   },
@@ -5854,7 +5860,8 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "http://sysctl.org/cameleon/hosts",
+    "downloadUrl": "http://sysctl.org/cameleon/hosts",
+    "viewUrl": null,
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
   },
@@ -5959,7 +5966,8 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 2,
-    "viewUrl": "https://mirror1.malwaredomains.com/files/justdomains",
+    "downloadUrl": "https://mirror1.malwaredomains.com/files/justdomains",
+    "viewUrl": null,
     "viewUrlMirror1": "https://mirror.cedia.org.ec/malwaredomains/justdomains",
     "viewUrlMirror2": null
   },
@@ -13687,7 +13695,8 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 3,
-    "viewUrl": "https://cdn.adblockcdn.com/filters/adblock_custom.txt",
+    "downloadUrl": "https://cdn.adblockcdn.com/filters/adblock_custom.txt",
+    "viewUrl": null,
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
   },
@@ -13708,7 +13717,8 @@
     "publishedDate": null,
     "submissionUrl": null,
     "syntaxId": 1,
-    "viewUrl": "http://www.quero.at/download/adblock-hosts.zip",
+    "downloadUrl": "http://www.quero.at/download/adblock-hosts.zip",
+    "viewUrl": null,
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
   },
