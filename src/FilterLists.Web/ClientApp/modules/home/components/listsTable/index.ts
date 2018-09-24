@@ -1,6 +1,5 @@
-﻿import { ListsTable, IColumnVisibility } from "./ListsTable";
+﻿import { ListsTable } from "./ListsTable";
 
 export {
     ListsTable,
-    IColumnVisibility
     };
