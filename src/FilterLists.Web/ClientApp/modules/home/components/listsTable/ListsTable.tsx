@@ -52,7 +52,17 @@ export const ListsTable = (props: IProps) => {
                                {props.software.map(
                                    (s: ISoftwareDto, i: number) => <option value={s.id} key={i}>{s.name}</option>)}
                            </select>,
-                       sortable: false,
+                       sortMethod: (a: any, b: any) => a
+                                                       ? b
+                                                         ? a.length === b.length
+                                                           ? a[0].name > b[0].name
+                                                             ? -1
+                                                             : 1
+                                                           : a.length > b.length
+                                                             ? 1
+                                                             : -1
+                                                         : 1
+                                                       : -1,
                        Cell: (c: any) => c.value
                                          ? c.value.map((s: number, i: number) => <SoftwareIcon id={s} key={i}/>)
                                          : null,
@@ -121,7 +131,17 @@ export const ListsTable = (props: IProps) => {
                                         <option value={l.iso6391} key={i}>{l.name}</option>)
                                     : null}
                            </select>,
-                       sortable: false,
+                       sortMethod: (a: any, b: any) => a
+                                                       ? b
+                                                         ? a.length === b.length
+                                                           ? a[0].name > b[0].name
+                                                             ? -1
+                                                             : 1
+                                                           : a.length > b.length
+                                                             ? 1
+                                                             : -1
+                                                         : 1
+                                                       : -1,
                        Cell: (c: any) => c.value
                                          ? <div className="fl-tag-container">
                                                {c.value.map((e: ILanguageDto, i: number) =>
