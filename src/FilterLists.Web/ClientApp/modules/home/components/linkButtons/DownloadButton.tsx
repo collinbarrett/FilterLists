@@ -7,7 +7,7 @@ interface IProps {
     text?: string;
 }
 
-export const ViewButton = (props: IProps) => {
+export const DownloadButton = (props: IProps) => {
     return props.url
                ? <LinkButton href={props.url}
                              title={`Download ${props.name} in its raw format.`}
