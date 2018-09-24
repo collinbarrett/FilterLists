@@ -19,6 +19,7 @@
     syntax: IListSyntaxDto;
     tags: IListTagDto[];
     updatedDate: string;
+    downloadUrl: string;
     viewUrl: string;
     viewUrlMirror1: string;
     viewUrlMirror2: string;
