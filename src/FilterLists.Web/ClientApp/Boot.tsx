@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import * as RoutesModule from "./Routes";
 let routes = RoutesModule.Routes;
 
-function renderApp() {
+const renderApp = () => {
     const baseUrl = document.getElementsByTagName("base")[0].getAttribute("href")!;
     ReactDOM.render(
         <AppContainer>
@@ -13,7 +13,7 @@ function renderApp() {
         </AppContainer>,
         document.getElementById("react-app")
     );
-}
+};
 
 renderApp();
 

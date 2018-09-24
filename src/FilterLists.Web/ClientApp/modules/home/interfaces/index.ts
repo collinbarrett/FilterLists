@@ -1,9 +1,14 @@
-﻿import { ILanguageDto } from "./ILanguageDto";
-import { IListDto } from "./IListDto";
-import { ISoftwareDto } from "./ISoftwareDto";
+﻿import { IColumnVisibility } from "./IColumnVisibility";
+import { ILanguage } from "./ILanguage";
+import { IList } from "./IList";
+import { ISoftware } from "./ISoftware";
+import { ITag } from "./ITag";
+
 
 export {
-    ILanguageDto,
-    IListDto,
-    ISoftwareDto
+    IColumnVisibility,
+    ILanguage,
+    IList,
+    ISoftware,
+    ITag
     };

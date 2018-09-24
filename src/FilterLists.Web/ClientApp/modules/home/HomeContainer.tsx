@@ -1,64 +1,67 @@
 import * as React from "react";
 import "isomorphic-fetch";
-import { ILanguageDto, IListDto, ISoftwareDto } from "./interfaces";
-import "../../utils/loader.css";
+import { ILanguage, IList, ISoftware, ITag } from "./interfaces";
 import { Home } from "./Home";
 
 interface IState {
-    languages: ILanguageDto[];
-    lists: IListDto[];
+    languages: ILanguage[];
+    lists: IList[];
     ruleCount: number;
-    software: ISoftwareDto[];
-}
+    software: ISoftware[];
+    tags: ITag[];
+};
 
 export class HomeContainer extends React.Component<{}, IState> {
     constructor(props: any) {
         super(props);
         this.state = {
-            lists: [],
             languages: [],
+            lists: [],
             ruleCount: 0,
-            software: []
+            software: [],
+            tags: []
         };
     }
 
     componentDidMount() {
-        fetch("https://filterlists.com/api/v1/lists")
-            .then(r => r.json() as Promise<IListDto[]>)
-            .then(d => {
-                this.setState({
-                    lists: d
-                });
-            });
+        this.fetchLists();
+        this.fetchSoftware();
+        this.fetchTags();
+        this.fetchLanguages();
+        this.fetchRuleCount();
+    };
+
+    fetchLists() {
+        fetch("https://filterlists.com/api/v1/lists/alpha")
+            .then(r => r.json() as Promise<IList[]>)
+            .then(d => { this.setState({ lists: d }); });
+    };
+
+    fetchSoftware() {
+        fetch("https://filterlists.com/api/v1/software")
+            .then(r => r.json() as Promise<ISoftware[]>)
+            .then(d => { this.setState({ software: d }); });
+    };
+
+    fetchTags() {
+        fetch("https://filterlists.com/api/v1/tags")
+            .then(r => r.json() as Promise<ITag[]>)
+            .then(d => { this.setState({ tags: d }); });
+    };
+
+    fetchLanguages() {
+        fetch("https://filterlists.com/api/v1/languages")
+            .then(r => r.json() as Promise<ILanguage[]>)
+            .then(d => { this.setState({ languages: d }); });
+    };
+
+    fetchRuleCount() {
         fetch("https://filterlists.com/api/v1/rules")
             .then(r => r.json() as Promise<number>)
-            .then(d => {
-                this.setState({
-                    ruleCount: d
-                });
-            });
-        fetch("https://filterlists.com/api/v1/software")
-            .then(r => r.json() as Promise<ISoftwareDto[]>)
-            .then(d => {
-                this.setState({
-                    software: d
-                });
-            });
-        fetch("https://filterlists.com/api/v1/languages")
-            .then(r => r.json() as Promise<ILanguageDto[]>)
-            .then(d => {
-                this.setState({
-                    languages: d
-                });
-            });
-    }
+            .then(d => { this.setState({ ruleCount: d }); });
+    };
 
     render() {
-        return this.state.lists.length === 0 ||
-                   this.state.ruleCount === 0 ||
-                   this.state.software.length === 0 ||
-                   this.state.languages.length === 0
-                   ? <div className="loader">Loading...</div>
-                   : <Home {...this.state}/>;
-    }
-}
+        return <Home {...this.state}/>;
+    };
+};
