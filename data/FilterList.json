@@ -13728,7 +13728,7 @@
     "policyUrl": null,
     "publishedDate": null,
     "submissionUrl": null,
-    "syntaxId": null,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/rbrito/easylist-ptbr/master/adblock-rules.txt",
     "viewUrlMirror1": null,
     "viewUrlMirror2": null
