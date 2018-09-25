@@ -20,18 +20,6 @@ namespace FilterLists.Api.V1.Controllers
             Json(await MemoryCache.GetOrCreate("ListsController_Index", entry =>
             {
                 entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
-                return filterListService.GetAllSummariesAsync();
-            }));
-
-        /// <summary>
-        /// in development for https://github.com/collinbarrett/FilterLists/issues/505
-        /// </summary>
-        [HttpGet]
-        [Route("alpha")]
-        public async Task<IActionResult> Alpha() =>
-            Json(await MemoryCache.GetOrCreate("ListsController_Alpha", entry =>
-            {
-                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return filterListService.GetIndexAsync();
             }));
 

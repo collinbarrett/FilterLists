@@ -32,7 +32,7 @@ export class HomeContainer extends React.Component<{}, IState> {
     };
 
     fetchLists() {
-        fetch("https://filterlists.com/api/v1/lists/alpha")
+        fetch("https://filterlists.com/api/v1/lists")
             .then(r => r.json() as Promise<IList[]>)
             .then(d => { this.setState({ lists: d }); });
     };
