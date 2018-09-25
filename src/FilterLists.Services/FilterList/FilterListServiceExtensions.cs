@@ -6,8 +6,8 @@ namespace FilterLists.Services.FilterList
 {
     public static class FilterListServiceExtensions
     {
-        public static async Task<ListDetailsDto> FilterParentListFromMaintainerAdditionalLists(
-            this Task<ListDetailsDto> listDetailsDtos)
+        public static async Task<ListDetails> FilterParentListFromMaintainerAdditionalLists(
+            this Task<ListDetails> listDetailsDtos)
         {
             foreach (var maintainer in listDetailsDtos.Result.Maintainers)
                 maintainer.AdditionalLists = maintainer

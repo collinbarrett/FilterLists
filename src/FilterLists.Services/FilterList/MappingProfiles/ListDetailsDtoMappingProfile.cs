@@ -9,7 +9,7 @@ namespace FilterLists.Services.FilterList.MappingProfiles
     public class ListDetailsDtoMappingProfile : Profile
     {
         public ListDetailsDtoMappingProfile() =>
-            CreateMap<Data.Entities.FilterList, ListDetailsDto>()
+            CreateMap<Data.Entities.FilterList, ListDetails>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
                         (int)src.Id))

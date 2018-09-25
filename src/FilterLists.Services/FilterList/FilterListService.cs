@@ -16,14 +16,15 @@ namespace FilterLists.Services.FilterList
         {
         }
 
-        public async Task<IEnumerable<ListIndexRecord>> GetIndexAsync() =>
+        public async Task<IEnumerable<List>> GetAllAsync() =>
             await DbContext.FilterLists
                            .OrderBy(l => l.Name)
-                           .ProjectTo<ListIndexRecord>(MapConfig)
+                           .ProjectTo<List>(MapConfig)
                            .ToListAsync();
 
-        public async Task<ListDetailsDto> GetDetailsAsync(uint id) =>
-            await DbContext.FilterLists.ProjectTo<ListDetailsDto>(MapConfig)
+        public async Task<ListDetails> GetDetailsAsync(uint id) =>
+            await DbContext.FilterLists
+                           .ProjectTo<ListDetails>(MapConfig)
                            .FirstOrDefaultAsync(x => x.Id == id)
                            .FilterParentListFromMaintainerAdditionalLists();
     }

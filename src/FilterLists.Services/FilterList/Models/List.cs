@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 namespace FilterLists.Services.FilterList.Models
 {
     [UsedImplicitly]
-    public class ListIndexRecord
+    public class List
     {
         public int Id { get; set; }
         public List<int> LanguageIds { get; set; }
