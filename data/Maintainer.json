@@ -1,31 +1,23 @@
 [
   {
     "id": 2,
-    "emailAddress": null,
-    "homeUrl": null,
-    "name": "AppliliZ",
-    "twitterHandle": null
+    "name": "AppliliZ"
   },
   {
     "id": 3,
-    "emailAddress": null,
     "homeUrl": "https://bradconte.com/",
     "name": "Brad Conte",
     "twitterHandle": "bradconte"
   },
   {
     "id": 4,
-    "emailAddress": null,
     "homeUrl": "https://forum.xda-developers.com/member.php?u=4877037",
-    "name": "BSDgeek_Jake",
-    "twitterHandle": null
+    "name": "BSDgeek_Jake"
   },
   {
     "id": 5,
-    "emailAddress": null,
     "homeUrl": "https://www.michaeltrimm.com/",
-    "name": "Michael Trimm",
-    "twitterHandle": null
+    "name": "Michael Trimm"
   },
   {
     "id": 6,
@@ -36,115 +28,86 @@
   },
   {
     "id": 7,
-    "emailAddress": null,
     "homeUrl": "https://easylist.to/",
-    "name": "The EasyList Authors",
-    "twitterHandle": null
+    "name": "The EasyList Authors"
   },
   {
     "id": 8,
-    "emailAddress": null,
     "homeUrl": "https://github.com/mayve",
-    "name": "mayve",
-    "twitterHandle": null
+    "name": "mayve"
   },
   {
     "id": 9,
     "emailAddress": "admin@oxeankoret.com",
     "homeUrl": "http://joxeankoret.com/",
-    "name": "Joxean Koret",
-    "twitterHandle": null
+    "name": "Joxean Koret"
   },
   {
     "id": 10,
-    "emailAddress": null,
     "homeUrl": "https://www.malwaredomainlist.com/",
     "name": "Malware Domain List Community",
     "twitterHandle": "_MDL_"
   },
   {
     "id": 11,
-    "emailAddress": null,
     "homeUrl": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=542",
-    "name": "Lian",
-    "twitterHandle": null
+    "name": "Lian"
   },
   {
     "id": 12,
-    "emailAddress": null,
     "homeUrl": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=2266",
-    "name": "Crits",
-    "twitterHandle": null
+    "name": "Crits"
   },
   {
     "id": 13,
-    "emailAddress": null,
     "homeUrl": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=1260",
-    "name": "smed79",
-    "twitterHandle": null
+    "name": "smed79"
   },
   {
     "id": 14,
-    "emailAddress": null,
     "homeUrl": "https://www.fanboy.co.nz/",
-    "name": "fanboy",
-    "twitterHandle": null
+    "name": "fanboy"
   },
   {
     "id": 15,
-    "emailAddress": null,
     "homeUrl": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=333",
-    "name": "MonztA",
-    "twitterHandle": null
+    "name": "MonztA"
   },
   {
     "id": 16,
-    "emailAddress": null,
     "homeUrl": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=1488",
-    "name": "Famlam",
-    "twitterHandle": null
+    "name": "Famlam"
   },
   {
     "id": 17,
-    "emailAddress": null,
     "homeUrl": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=1400",
-    "name": "Khrin",
-    "twitterHandle": null
+    "name": "Khrin"
   },
   {
     "id": 18,
-    "emailAddress": null,
     "homeUrl": "https://github.com/SlowMemory",
-    "name": "SlowMemory",
-    "twitterHandle": null
+    "name": "SlowMemory"
   },
   {
     "id": 19,
-    "emailAddress": null,
     "homeUrl": "https://www.blogger.com/profile/09662737599549871224",
-    "name": "MVPS HOSTS Maintainer",
-    "twitterHandle": null
+    "name": "MVPS HOSTS Maintainer"
   },
   {
     "id": 20,
-    "emailAddress": null,
     "homeUrl": "https://github.com/taylr",
-    "name": "Matt Taylor",
-    "twitterHandle": null
+    "name": "Matt Taylor"
   },
   {
     "id": 21,
-    "emailAddress": null,
     "homeUrl": "https://github.com/hoshsadiq/adblock-nocoin-list",
-    "name": "Hosh",
-    "twitterHandle": null
+    "name": "Hosh"
   },
   {
     "id": 22,
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://sproutsluckycorner.wordpress.com/",
-    "name": "Imre Kristoffer Eilertsen",
-    "twitterHandle": null
+    "name": "Imre Kristoffer Eilertsen"
   },
   {
     "id": 23,
@@ -155,105 +118,81 @@
   },
   {
     "id": 24,
-    "emailAddress": null,
     "homeUrl": "https://github.com/metaphoricgiraffe",
-    "name": "metaphoricgiraffe",
-    "twitterHandle": null
+    "name": "metaphoricgiraffe"
   },
   {
     "id": 25,
     "emailAddress": "badmojr@gmail.com",
     "homeUrl": "https://forum.xda-developers.com/member.php?u=8758244",
-    "name": "badmojr",
-    "twitterHandle": null
+    "name": "badmojr"
   },
   {
     "id": 26,
-    "emailAddress": null,
     "homeUrl": "https://github.com/elypter",
-    "name": "elypter",
-    "twitterHandle": null
+    "name": "elypter"
   },
   {
     "id": 27,
-    "emailAddress": null,
     "homeUrl": "https://ker.af/",
     "name": "Rafael K",
     "twitterHandle": "iamkeraf"
   },
   {
     "id": 28,
-    "emailAddress": null,
     "homeUrl": "https://github.com/maciejtarmas",
-    "name": "Maciej Tarmas",
-    "twitterHandle": null
+    "name": "Maciej Tarmas"
   },
   {
     "id": 29,
-    "emailAddress": null,
     "homeUrl": "https://github.com/bkrucarci",
-    "name": "bkrucarci",
-    "twitterHandle": null
+    "name": "bkrucarci"
   },
   {
     "id": 30,
     "emailAddress": "anudeep@protonmail.com",
     "homeUrl": "https://github.com/anudeepND",
-    "name": "Anudeep",
-    "twitterHandle": null
+    "name": "Anudeep"
   },
   {
     "id": 31,
-    "emailAddress": null,
     "homeUrl": "https://github.com/arcetera",
-    "name": "arcetera",
-    "twitterHandle": null
+    "name": "arcetera"
   },
   {
     "id": 32,
-    "emailAddress": null,
     "homeUrl": "https://github.com/MajkiIT",
-    "name": "MajkiIT",
-    "twitterHandle": null
+    "name": "MajkiIT"
   },
   {
     "id": 33,
-    "emailAddress": null,
     "homeUrl": "https://github.com/azet12/",
-    "name": "azet12",
-    "twitterHandle": null
+    "name": "azet12"
   },
   {
     "id": 34,
     "emailAddress": "PolishJarvis@gmail.com",
     "homeUrl": "https://github.com/PolishFiltersTeam/",
-    "name": "Polish Filters Team",
-    "twitterHandle": null
+    "name": "Polish Filters Team"
   },
   {
     "id": 35,
     "emailAddress": "bjorn@bjornstar.com",
     "homeUrl": "https://bjornstar.com/",
-    "name": "Bjorn Stromberg",
-    "twitterHandle": null
+    "name": "Bjorn Stromberg"
   },
   {
     "id": 36,
-    "emailAddress": null,
     "homeUrl": "https://github.com/monojp",
-    "name": "Monojp",
-    "twitterHandle": null
+    "name": "Monojp"
   },
   {
     "id": 37,
-    "emailAddress": null,
     "homeUrl": "https://github.com/vokins",
-    "name": "vokins",
-    "twitterHandle": null
+    "name": "vokins"
   },
   {
     "id": 38,
-    "emailAddress": null,
     "homeUrl": "https://kowith337.github.io/",
     "name": "kowith337",
     "twitterHandle": "kowith337"
@@ -262,43 +201,34 @@
     "id": 39,
     "emailAddress": "me@pureapp.in.th",
     "homeUrl": "https://www.pureapp.in.th/",
-    "name": "Pakkapon Phongthawee",
-    "twitterHandle": null
+    "name": "Pakkapon Phongthawee"
   },
   {
     "id": 40,
-    "emailAddress": null,
     "homeUrl": "https://warui.intaa.net/",
     "name": "Warui",
     "twitterHandle": "gatolabo"
   },
   {
     "id": 41,
-    "emailAddress": null,
     "homeUrl": "https://github.com/multiverse2011",
     "name": "Multiverse2011",
     "twitterHandle": "multiverse2011_"
   },
   {
     "id": 42,
-    "emailAddress": null,
     "homeUrl": "http://cosmonote.blogspot.jp",
-    "name": "Cosmonote",
-    "twitterHandle": null
+    "name": "Cosmonote"
   },
   {
     "id": 43,
-    "emailAddress": null,
     "homeUrl": "https://github.com/Lerist",
-    "name": "Lerist",
-    "twitterHandle": null
+    "name": "Lerist"
   },
   {
     "id": 44,
-    "emailAddress": null,
     "homeUrl": "http://vxvault.net/",
-    "name": "VXVault",
-    "twitterHandle": null
+    "name": "VXVault"
   },
   {
     "id": 45,
@@ -309,24 +239,19 @@
   },
   {
     "id": 46,
-    "emailAddress": null,
     "homeUrl": "https://adguard.com/",
     "name": "AdGuard",
     "twitterHandle": "adguard"
   },
   {
     "id": 47,
-    "emailAddress": null,
     "homeUrl": "https://github.com/reek",
-    "name": "Reek",
-    "twitterHandle": null
+    "name": "Reek"
   },
   {
     "id": 48,
-    "emailAddress": null,
     "homeUrl": "https://github.com/eladkarako",
-    "name": "Elad Karako",
-    "twitterHandle": null
+    "name": "Elad Karako"
   },
   {
     "id": 49,
@@ -339,64 +264,48 @@
     "id": 50,
     "emailAddress": "webmaster@squidblacklist.org",
     "homeUrl": "https://www.squidblacklist.org/",
-    "name": "Squid Blacklist",
-    "twitterHandle": null
+    "name": "Squid Blacklist"
   },
   {
     "id": 51,
     "emailAddress": "lolipopplus@protonmail.com",
     "homeUrl": "https://github.com/Rictusempra",
-    "name": "Rictusempra",
-    "twitterHandle": null
+    "name": "Rictusempra"
   },
   {
     "id": 52,
-    "emailAddress": null,
     "homeUrl": "https://github.com/tomasko126",
-    "name": "Tomáš Taro",
-    "twitterHandle": null
+    "name": "Tomáš Taro"
   },
   {
     "id": 53,
-    "emailAddress": null,
     "homeUrl": "https://github.com/Hubird-au",
-    "name": "Hubird-au",
-    "twitterHandle": null
+    "name": "Hubird-au"
   },
   {
     "id": 54,
-    "emailAddress": null,
     "homeUrl": "https://github.com/hl2guide",
-    "name": "deanoman",
-    "twitterHandle": null
+    "name": "deanoman"
   },
   {
     "id": 55,
-    "emailAddress": null,
     "homeUrl": "https://github.com/haykam821",
-    "name": "haykam821",
-    "twitterHandle": null
+    "name": "haykam821"
   },
   {
     "id": 56,
-    "emailAddress": null,
     "homeUrl": "https://github.com/cb-software",
-    "name": "cb-software",
-    "twitterHandle": null
+    "name": "cb-software"
   },
   {
     "id": 57,
-    "emailAddress": null,
     "homeUrl": "https://github.com/gorhill",
-    "name": "Raymond Hill",
-    "twitterHandle": null
+    "name": "Raymond Hill"
   },
   {
     "id": 58,
-    "emailAddress": null,
     "homeUrl": "https://github.com/toshiya44",
-    "name": "toshiya44",
-    "twitterHandle": null
+    "name": "toshiya44"
   },
   {
     "id": 59,
@@ -414,150 +323,113 @@
   },
   {
     "id": 62,
-    "emailAddress": null,
     "homeUrl": "https://github.com/raghavdua1995",
-    "name": "Raghav Dua",
-    "twitterHandle": null
+    "name": "Raghav Dua"
   },
   {
     "id": 63,
-    "emailAddress": null,
     "homeUrl": "https://jspenguin2017.github.io/uBlockProtector/",
-    "name": "Jspenguin2017",
-    "twitterHandle": null
+    "name": "Jspenguin2017"
   },
   {
     "id": 64,
-    "emailAddress": null,
-    "homeUrl": null,
-    "name": "Frellwit",
-    "twitterHandle": null
+    "name": "Frellwit"
   },
   {
     "id": 66,
-    "emailAddress": null,
     "homeUrl": "https://gist.github.com/BBcan177",
-    "name": "BBcan177",
-    "twitterHandle": null
+    "name": "BBcan177"
   },
   {
     "id": 67,
     "emailAddress": "joewein@pobox.com",
     "homeUrl": "https://www.joewein.net/spam/index.htm",
-    "name": "Joe Wein",
-    "twitterHandle": null
+    "name": "Joe Wein"
   },
   {
     "id": 68,
-    "emailAddress": null,
     "homeUrl": "https://github.com/betterwebleon/",
-    "name": "betterwebleon",
-    "twitterHandle": null
+    "name": "betterwebleon"
   },
   {
     "id": 69,
-    "emailAddress": null,
     "homeUrl": "https://github.com/notracking",
-    "name": "notracking",
-    "twitterHandle": null
+    "name": "notracking"
   },
   {
     "id": 70,
-    "emailAddress": null,
     "homeUrl": "https://github.com/KonoromiHimaries",
-    "name": "KonoromiHimaries",
-    "twitterHandle": null
+    "name": "KonoromiHimaries"
   },
   {
     "id": 71,
-    "emailAddress": null,
     "homeUrl": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=9300",
-    "name": "invisible666",
-    "twitterHandle": null
+    "name": "invisible666"
   },
   {
     "id": 72,
     "emailAddress": "endolith@gmail.com",
     "homeUrl": "https://github.com/endolith",
-    "name": "endolith",
-    "twitterHandle": null
+    "name": "endolith"
   },
   {
     "id": 73,
-    "emailAddress": null,
     "homeUrl": "https://github.com/UnluckyLuke",
-    "name": "UnluckyLuke",
-    "twitterHandle": null
+    "name": "UnluckyLuke"
   },
   {
     "id": 74,
     "emailAddress": "bogachenkove@gmail.com",
     "homeUrl": "https://github.com/bogachenko",
-    "name": "Bogachenko Vyacheslav",
-    "twitterHandle": null
+    "name": "Bogachenko Vyacheslav"
   },
   {
     "id": 75,
-    "emailAddress": null,
     "homeUrl": "https://github.com/xd4rker",
     "name": "xd4rker",
     "twitterHandle": "xd4rker"
   },
   {
     "id": 76,
-    "emailAddress": null,
     "homeUrl": "https://github.com/hit3shjain",
-    "name": "hit3shjain",
-    "twitterHandle": null
+    "name": "hit3shjain"
   },
   {
     "id": 77,
-    "emailAddress": null,
     "homeUrl": "https://github.com/SkeletalDemise",
-    "name": "SkeletalDemise",
-    "twitterHandle": null
+    "name": "SkeletalDemise"
   },
   {
     "id": 78,
     "emailAddress": "github@paulbutler.org",
     "homeUrl": "http://paulbutler.org",
-    "name": "Paul Butler",
-    "twitterHandle": null
+    "name": "Paul Butler"
   },
   {
     "id": 79,
     "emailAddress": "info@dshield.org",
     "homeUrl": "https://dshield.org/",
-    "name": "DShield",
-    "twitterHandle": null
+    "name": "DShield"
   },
   {
     "id": 80,
-    "emailAddress": null,
     "homeUrl": "https://www.kowabit.de/",
-    "name": "kowabit",
-    "twitterHandle": null
+    "name": "kowabit"
   },
   {
     "id": 81,
-    "emailAddress": null,
     "homeUrl": "https://github.com/chadmayfield",
-    "name": "Chad Mayfield",
-    "twitterHandle": null
+    "name": "Chad Mayfield"
   },
   {
     "id": 82,
-    "emailAddress": null,
     "homeUrl": "https://getadblock.com/",
-    "name": "AdBlock",
-    "twitterHandle": null
+    "name": "AdBlock"
   },
   {
     "id": 83,
-    "emailAddress": null,
     "homeUrl": "https://forum.xda-developers.com/member.php?u=4546389",
-    "name": "jerryn70",
-    "twitterHandle": null
+    "name": "jerryn70"
   },
   {
     "id": 84,

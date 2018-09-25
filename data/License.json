@@ -15,7 +15,6 @@
   },
   {
     "id": 3,
-    "descriptionUrl": null,
     "name": "Restricted",
     "permissiveAdaptation": false,
     "permissiveCommercial": false
@@ -43,7 +42,6 @@
   },
   {
     "id": 7,
-    "descriptionUrl": null,
     "name": "Permissive",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
@@ -134,7 +132,6 @@
   },
   {
     "id": 20,
-    "descriptionUrl": null,
     "name": "Public Domain",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
