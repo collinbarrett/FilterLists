@@ -18,8 +18,8 @@ export const UpdatedDate = (columnVisibility: IColumnVisibility[]) => {
 };
 
 const sortMethod = (a: string, b: string) =>
-    moment(a).isValid()
-    ? (moment(b).isValid()
+    a && moment(a).isValid()
+    ? (b && moment(b).isValid()
            ? (moment(a).isBefore(b)
                   ? -1
                   : 1)
