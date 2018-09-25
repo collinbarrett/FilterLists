@@ -16,12 +16,8 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
-            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("ListsLanguagesController_Seed", entry =>
-            {
-                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
-                return SeedService.GetAllAsync<FilterListLanguage, FilterListLanguageSeedDto>(
-                    typeof(FilterListLanguage).GetProperty("FilterListId"),
-                    typeof(FilterListLanguage).GetProperty("LanguageId"));
-            })));
+            await Get(() => SeedService.GetAllAsync<FilterListLanguage, FilterListLanguageSeedDto>(
+                typeof(FilterListLanguage).GetProperty("FilterListId"),
+                typeof(FilterListLanguage).GetProperty("LanguageId")));
     }
 }

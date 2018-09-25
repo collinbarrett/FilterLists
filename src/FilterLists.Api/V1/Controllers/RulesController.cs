@@ -14,10 +14,6 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet]
         public async Task<IActionResult> Index() =>
-            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("RulesController_Index", entry =>
-            {
-                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
-                return ruleService.GetCountAll();
-            })));
+            await Get(() => ruleService.GetCountAll());
     }
 }

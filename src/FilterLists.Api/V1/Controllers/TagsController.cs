@@ -17,18 +17,10 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet]
         public async Task<IActionResult> Index() =>
-            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("TagsController_Index", entry =>
-            {
-                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
-                return tagService.GetAll();
-            })));
+            await Get(() => tagService.GetAll());
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
-            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("TagsController_Seed", entry =>
-            {
-                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
-                return SeedService.GetAllAsync<Tag, TagSeedDto>();
-            })));
+            await Get(() => SeedService.GetAllAsync<Tag, TagSeedDto>());
     }
 }

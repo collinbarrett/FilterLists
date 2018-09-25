@@ -15,11 +15,8 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
-            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("DependentsController_Seed", entry =>
-            {
-                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
-                return SeedService.GetAllAsync<Dependent, DependentSeedDto>(typeof(Dependent).GetProperty("DependentFilterListId"),
-                    typeof(Dependent).GetProperty("DependencyFilterListId"));
-            })));
+            await Get(() => SeedService.GetAllAsync<Dependent, DependentSeedDto>(
+                typeof(Dependent).GetProperty("DependentFilterListId"),
+                typeof(Dependent).GetProperty("DependencyFilterListId")));
     }
 }

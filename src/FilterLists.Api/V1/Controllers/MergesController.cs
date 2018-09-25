@@ -15,11 +15,8 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
-            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("MergesController_Seed", entry =>
-            {
-                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
-                return SeedService.GetAllAsync<Merge, MergeSeedDto>(typeof(Merge).GetProperty("MergeFilterListId"),
-                    typeof(Merge).GetProperty("UpstreamFilterListId"));
-            })));
+            await Get(() => SeedService.GetAllAsync<Merge, MergeSeedDto>(
+                typeof(Merge).GetProperty("MergeFilterListId"),
+                typeof(Merge).GetProperty("UpstreamFilterListId")));
     }
 }

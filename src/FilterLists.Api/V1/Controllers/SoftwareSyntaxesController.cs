@@ -16,11 +16,8 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
-            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("SoftwareSyntaxesController_Seed", entry =>
-            {
-                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
-                return SeedService.GetAllAsync<SoftwareSyntax, SoftwareSyntaxSeedDto>(
-                    typeof(SoftwareSyntax).GetProperty("SyntaxId"), typeof(SoftwareSyntax).GetProperty("SoftwareId"));
-            })));
+            await Get(() => SeedService.GetAllAsync<SoftwareSyntax, SoftwareSyntaxSeedDto>(
+                typeof(SoftwareSyntax).GetProperty("SyntaxId"),
+                typeof(SoftwareSyntax).GetProperty("SoftwareId")));
     }
 }
