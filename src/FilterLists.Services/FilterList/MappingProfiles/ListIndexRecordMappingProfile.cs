@@ -10,7 +10,7 @@ namespace FilterLists.Services.FilterList.MappingProfiles
     public class ListIndexRecordMappingProfile : Profile
     {
         public ListIndexRecordMappingProfile() =>
-            CreateMap<Data.Entities.FilterList, ListIndexRecord>()
+            CreateMap<Data.Entities.FilterList, List>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
                         (int)src.Id))

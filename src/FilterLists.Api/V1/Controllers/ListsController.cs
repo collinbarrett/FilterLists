@@ -20,7 +20,7 @@ namespace FilterLists.Api.V1.Controllers
             Json(await MemoryCache.GetOrCreate("ListsController_Index", entry =>
             {
                 entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
-                return filterListService.GetIndexAsync();
+                return filterListService.GetAllAsync();
             }));
 
         [HttpGet]
