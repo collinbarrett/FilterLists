@@ -18,11 +18,17 @@ namespace FilterLists.Services.Language
         {
         }
 
-        public async Task<IEnumerable<LanguageDto>> GetAllTargeted() =>
-            await DbContext.Languages
-                           .Where(l => l.FilterListLanguages.Any())
-                           .OrderBy(s => s.Name)
-                           .ProjectTo<LanguageDto>(MapConfig)
-                           .ToListAsync();
+        private IQueryable<Data.Entities.Language> TargetedLanguages =>
+            DbContext.Languages.Where(l => l.FilterListLanguages.Any());
+
+        public async Task<IEnumerable<LanguageDto>> GetAllTargetedAsync() =>
+            await TargetedLanguages.OrderBy(s => s.Name)
+                                   .ProjectTo<LanguageDto>(MapConfig)
+                                   .ToListAsync();
+
+        public async Task<LanguageDto> GetTargetedByIdAsync(int id) =>
+            await TargetedLanguages.Where(l => l.Id == (uint)id)
+                                   .ProjectTo<LanguageDto>(MapConfig)
+                                   .FirstOrDefaultAsync();
     }
 }

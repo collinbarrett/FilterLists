@@ -17,10 +17,19 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet]
         public async Task<IActionResult> Index() =>
-            Json(await MemoryCache.GetOrCreate("LanguageService_Index", entry =>
+            Json(await MemoryCache.GetOrCreate("LanguagesController_Index", entry =>
             {
                 entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
-                return languageService.GetAllTargeted();
+                return languageService.GetAllTargetedAsync();
+            }));
+
+        [HttpGet]
+        [Route("{id}")]
+        public async Task<IActionResult> GetById(int id) =>
+            Json(await MemoryCache.GetOrCreate("LanguagesController_GetById_" + id, entry =>
+            {
+                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
+                return languageService.GetTargetedByIdAsync(id);
             }));
 
         [HttpGet("seed")]
