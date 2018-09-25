@@ -22,7 +22,7 @@ namespace FilterLists.Services.FilterList
                            .ProjectTo<List>(MapConfig)
                            .ToListAsync();
 
-        public async Task<ListDetails> GetDetailsAsync(uint id) =>
+        public async Task<ListDetails> GetDetailsAsync(int id) =>
             await DbContext.FilterLists
                            .ProjectTo<ListDetails>(MapConfig)
                            .FirstOrDefaultAsync(x => x.Id == id)

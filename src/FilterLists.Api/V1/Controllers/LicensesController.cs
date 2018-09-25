@@ -15,10 +15,6 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
-            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("LicensesController_Seed", entry =>
-            {
-                entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
-                return SeedService.GetAllAsync<License, LicenseSeedDto>();
-            })));
+            await Get(() => SeedService.GetAllAsync<License, LicenseSeedDto>());
     }
 }
