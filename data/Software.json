@@ -137,5 +137,12 @@
     "homeUrl": "https://www.privoxy.org/",
     "isAbpSubscribable": false,
     "name": "Privoxy"
+  },
+  {
+    "id": 22,
+    "downloadUrl": "https://diversion.ch/installation/",
+    "homeUrl": "https://diversion.ch/",
+    "isAbpSubscribable": false,
+    "name": "Diversion"
   }
 ]
