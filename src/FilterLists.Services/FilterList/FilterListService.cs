@@ -16,12 +16,6 @@ namespace FilterLists.Services.FilterList
         {
         }
 
-        public async Task<IEnumerable<ListSummaryDto>> GetAllSummariesAsync() =>
-            await DbContext.FilterLists
-                           .OrderBy(l => l.Name)
-                           .ProjectTo<ListSummaryDto>(MapConfig)
-                           .ToListAsync();
-
         public async Task<IEnumerable<ListIndexRecord>> GetIndexAsync() =>
             await DbContext.FilterLists
                            .OrderBy(l => l.Name)
