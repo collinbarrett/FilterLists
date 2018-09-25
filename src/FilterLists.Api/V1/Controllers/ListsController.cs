@@ -17,27 +17,27 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet]
         public async Task<IActionResult> Index() =>
-            Json(await MemoryCache.GetOrCreate("ListsController_Index", entry =>
+            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("ListsController_Index", entry =>
             {
                 entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return filterListService.GetAllAsync();
-            }));
+            })));
 
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> GetById(int id) =>
-            Json(await MemoryCache.GetOrCreate("ListsController_GetById_" + id, entry =>
+            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("ListsController_GetById_" + id, entry =>
             {
                 entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return filterListService.GetDetailsAsync((uint)id);
-            }));
+            })));
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
-            Json(await MemoryCache.GetOrCreate("ListsController_Seed", entry =>
+            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("ListsController_Seed", entry =>
             {
                 entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return SeedService.GetAllAsync<FilterList, FilterListSeedDto>();
-            }));
+            })));
     }
 }

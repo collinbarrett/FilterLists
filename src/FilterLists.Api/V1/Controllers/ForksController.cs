@@ -15,11 +15,11 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
-            Json(await MemoryCache.GetOrCreate("ForksController_Seed", entry =>
+            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("ForksController_Seed", entry =>
             {
                 entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return SeedService.GetAllAsync<Fork, ForkSeedDto>(typeof(Fork).GetProperty("UpstreamFilterListId"),
                     typeof(Fork).GetProperty("ForkFilterListId"));
-            }));
+            })));
     }
 }

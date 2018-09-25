@@ -16,12 +16,12 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
-            Json(await MemoryCache.GetOrCreate("ListsTagsController_Seed", entry =>
+            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("ListsTagsController_Seed", entry =>
             {
                 entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return SeedService.GetAllAsync<FilterListTag, FilterListTagSeedDto>(
                     typeof(FilterListTag).GetProperty("FilterListId"),
                     typeof(FilterListTag).GetProperty("TagId"));
-            }));
+            })));
     }
 }

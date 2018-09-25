@@ -15,10 +15,10 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
-            Json(await MemoryCache.GetOrCreate("MaintainersController_Seed", entry =>
+            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("MaintainersController_Seed", entry =>
             {
                 entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return SeedService.GetAllAsync<Maintainer, MaintainerSeedDto>();
-            }));
+            })));
     }
 }
