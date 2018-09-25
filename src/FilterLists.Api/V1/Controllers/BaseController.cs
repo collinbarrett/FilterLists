@@ -26,5 +26,8 @@ namespace FilterLists.Api.V1.Controllers
             MemoryCache = memoryCache;
             SeedService = seedService;
         }
+
+        protected IActionResult CoalesceNotFound(JsonResult result) =>
+            result.Value is null ? NotFound() : (IActionResult)result;
     }
 }

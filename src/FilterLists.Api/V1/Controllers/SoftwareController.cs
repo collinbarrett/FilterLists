@@ -17,18 +17,18 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet]
         public async Task<IActionResult> Index() =>
-            Json(await MemoryCache.GetOrCreate("SoftwareController_Index", entry =>
+            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("SoftwareController_Index", entry =>
             {
                 entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return softwareService.GetAll();
-            }));
+            })));
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
-            Json(await MemoryCache.GetOrCreate("SoftwareController_Seed", entry =>
+            CoalesceNotFound(Json(await MemoryCache.GetOrCreate("SoftwareController_Seed", entry =>
             {
                 entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
                 return SeedService.GetAllAsync<Software, SoftwareSeedDto>();
-            }));
+            })));
     }
 }
