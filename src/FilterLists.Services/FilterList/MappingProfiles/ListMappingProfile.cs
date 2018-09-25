@@ -7,9 +7,9 @@ using JetBrains.Annotations;
 namespace FilterLists.Services.FilterList.MappingProfiles
 {
     [UsedImplicitly]
-    public class ListIndexRecordMappingProfile : Profile
+    public class ListMappingProfile : Profile
     {
-        public ListIndexRecordMappingProfile() =>
+        public ListMappingProfile() =>
             CreateMap<Data.Entities.FilterList, List>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>

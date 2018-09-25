@@ -27,8 +27,10 @@ const sortMethod = (a: string, b: string) =>
     : -1;
 
 const Cell = (updatedDate: string) =>
-    <div>
-        {moment(updatedDate).isValid()
-             ? moment(updatedDate).format("l")
-             : null}
-    </div>;
+    updatedDate
+    ? <div>
+          {moment(updatedDate).isValid()
+               ? moment(updatedDate).format("l")
+               : null}
+      </div>
+    : null;
