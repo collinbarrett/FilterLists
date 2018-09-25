@@ -840,7 +840,43 @@
     "languageId": 13
   },
   {
+    "filterListId": 689,
+    "languageId": 11
+  },
+  {
     "filterListId": 703,
     "languageId": 11
+  },
+  {
+    "filterListId": 720,
+    "languageId": 13
+  },
+  {
+    "filterListId": 721,
+    "languageId": 13
+  },
+  {
+    "filterListId": 727,
+    "languageId": 99
+  },
+  {
+    "filterListId": 728,
+    "languageId": 179
+  },
+  {
+    "filterListId": 733,
+    "languageId": 99
+  },
+  {
+    "filterListId": 745,
+    "languageId": 154
+  },
+  {
+    "filterListId": 746,
+    "languageId": 179
+  },
+  {
+    "filterListId": 747,
+    "languageId": 10
   }
 ]
