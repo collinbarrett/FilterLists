@@ -23,5 +23,10 @@ namespace FilterLists.Services.Software
                            .OrderBy(s => s.Name)
                            .ProjectTo<SoftwareDto>(MapConfig)
                            .ToListAsync();
+
+        public async Task<SoftwareDto> GetById(int id) =>
+            await DbContext.Software
+                           .ProjectTo<SoftwareDto>(MapConfig)
+                           .FirstOrDefaultAsync(s => s.Id == id);
     }
 }

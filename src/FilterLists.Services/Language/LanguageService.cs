@@ -27,8 +27,7 @@ namespace FilterLists.Services.Language
                                    .ToListAsync();
 
         public async Task<LanguageDto> GetTargetedByIdAsync(int id) =>
-            await TargetedLanguages.Where(l => l.Id == (uint)id)
-                                   .ProjectTo<LanguageDto>(MapConfig)
-                                   .FirstOrDefaultAsync();
+            await TargetedLanguages.ProjectTo<LanguageDto>(MapConfig)
+                                   .FirstOrDefaultAsync(l => l.Id == id);
     }
 }
