@@ -7540,528 +7540,528 @@
     "viewUrl": "https://raw.githubusercontent.com/popcorner/cernet-ipv6-hosts/master/hosts"
   },
   {
-      "id": 719,
-      "description": "This list allows advertising that directly benefits open source projects by paying for development, paying for operations, or providing direct funding. You can read more at https://ads-for-open-source.readthedocs.io/inclusion.html for details on the criteria for inclusion or to get your project included.",
-      "descriptionSourceUrl": "https://github.com/rtfd/ads-for-opensource#advertising-for-open-source-exception-lists",
-      "homeUrl": "https://github.com/rtfd/ads-for-opensource",
-      "issuesUrl": "https://github.com/rtfd/ads-for-opensource/issues",
-      "licenseId": 2,
-      "name": "Open Source Advertising Exception List",
-      "syntaxId": 3,
-      "viewUrl": "https://ads-for-open-source.readthedocs.io/en/latest/_static/lists/opensource-ads.txt"
-    },
-    {
-      "id": 720,
-      "description": "Nónio - The platform that violates your privacy.",
-      "homeUrl": "https://nonio.pt/ublock.html",
-      "name": "AntiNónio",
-      "syntaxId": 4,
-      "viewUrl": "https://nonio.pt/antinonio.txt"
-    },
-    {
-      "id": 721,
-      "description": "This list started as a replica of the content that was on the AntiNónio project at https://nonio.pt/ublock.html. However, since this content contained several addresses that I don't think should be included in it, I decided to redo it and make it more dynamic.",
-      "descriptionSourceUrl": "https://github.com/brunomiguel/antinonio/blob/master/README.md",
-      "homeUrl": "https://github.com/brunomiguel/antinonio",
-      "issuesUrl": "https://github.com/brunomiguel/antinonio/issues",
-      "licenseId": 8,
-      "name": "AntiNónio - Bruno Miguel",
-      "syntaxId": 4,
-      "viewUrl": "https://raw.githubusercontent.com/brunomiguel/antinonio/master/antinonio.txt"
-    },
-    {
-      "id": 722,
-      "homeUrl": "https://gist.github.com/balupton/6960605",
-      "name": "Twitter Drama",
-      "syntaxId": 3,
-      "viewUrl": "https://gist.githubusercontent.com/balupton/6960605/raw/16bfeff88761b16296ed3ee15fbacf6840f1701a/filter-twitterdrama.txt"
-    },
-    {
-      "id": 723,
-      "homeUrl": "https://gist.github.com/balupton/6960605",
-      "name": "Feedly Ads",
-      "syntaxId": 3,
-      "viewUrl": "https://gist.githubusercontent.com/balupton/6960605/raw/16bfeff88761b16296ed3ee15fbacf6840f1701a/filter-feedlyads.txt"
-    },
-    {
-      "id": 724,
-      "homeUrl": "https://gist.github.com/balupton/6960605",
-      "name": "Facebook Drama",
-      "syntaxId": 3,
-      "viewUrl": "https://gist.githubusercontent.com/balupton/6960605/raw/16bfeff88761b16296ed3ee15fbacf6840f1701a/filter-facebookdrama.txt"
-    },
-    {
-      "id": 725,
-      "homeUrl": "https://github.com/littlepig10/92Clearnet",
-      "issuesUrl": "https://github.com/littlepig10/92Clearnet/issues",
-      "licenseId": 23,
-      "name": "92Clearnet AdBlock List",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/littlepig10/92Clearnet/master/AdBlock/AdBlock-92clearnet.txt"
-    },
-    {
-      "id": 726,
-      "homeUrl": "https://github.com/whtsky/abp-rules",
-      "issuesUrl": "https://github.com/whtsky/abp-rules/issues",
-      "name": "whtsky's rules",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/whtsky/abp-rules/master/rules.txt"
-    },
-    {
-      "id": 727,
-      "description": "Blocking some advertisement from Formosa",
-      "descriptionSourceUrl": "https://raw.githubusercontent.com/Yuan573/ADG/master/block",
-      "homeUrl": "https://github.com/Yuan573/ADG",
-      "name": "AdGuard Personal Block List",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/Yuan573/ADG/master/block"
-    },
-    {
-      "id": 728,
-      "description": "Filter list that specifically removes adverts on Indonesian language websites.",
-      "descriptionSourceUrl": "https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt",
-      "homeUrl": "https://github.com/realodix/AdBlockID",
-      "issuesUrl": "https://github.com/realodix/AdBlockID/issues",
-      "name": "AdBlockID",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt"
-    },
-    {
-      "id": 729,
-      "description": "Blocks crap on websites",
-      "descriptionSourceUrl": "https://github.com/theel0ja/CrapBlock#crapblock",
-      "emailAddress": "elias.ojala+github@kapsi.fi",
-      "homeUrl": "https://crapblock.theel0ja.info/",
-      "issuesUrl": "https://github.com/theel0ja/CrapBlock/issues",
-      "name": "CrapBlock Annoyances",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/crapblock-annoyances.txt",
-      "viewUrlMirror1": "https://crapblock.theel0ja.info/crapblock-annoyances.txt"
-    },
-    {
-      "id": 730,
-      "description": "Blocks crap on websites",
-      "descriptionSourceUrl": "https://github.com/theel0ja/CrapBlock#crapblock",
-      "emailAddress": "elias.ojala+github@kapsi.fi",
-      "homeUrl": "https://crapblock.theel0ja.info/",
-      "issuesUrl": "https://github.com/theel0ja/CrapBlock/issues",
-      "name": "Block Google Fonts (by CrapBlock)",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/block-googlefonts.txt",
-      "viewUrlMirror1": "https://crapblock.theel0ja.info/block-googlefonts.txt"
-    },
-    {
-      "id": 731,
-      "description": "A list that blocks ads from my choice",
-      "descriptionSourceUrl": "https://github.com/NeeEoo/AdBlockNeeEoo#adblockneeeoo",
-      "homeUrl": "https://github.com/NeeEoo/AdBlockNeeEoo",
-      "issuesUrl": "https://github.com/NeeEoo/AdBlockNeeEoo/issues",
-      "name": "AdBlockNeeEoo",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/NeeEoo/AdBlockNeeEoo/master/List.txt"
-    },
-    {
-      "id": 732,
-      "description": "This is a blocklist (might not be ad specific) for ublock orgin and other blockers... Reason: Out of box nagware/pop up box less internet (also used by me)",
-      "descriptionSourceUrl": "https://github.com/bads-tm/superblock#superblock",
-      "donateUrl": "https://bads.team/ultrapage#donate",
-      "emailAddress": "hello@bads.team",
-      "homeUrl": "https://github.com/bads-tm/superblock",
-      "issuesUrl": "https://github.com/bads-tm/superblock/issues",
-      "licenseId": 2,
-      "name": "BADS.TM Cleaner Sites List All In One",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/bads-tm/superblock/master/cleanersitesAiO.txt"
-    },
-    {
-      "id": 733,
-      "description": "Collect the annoyance ad hosts for mobile webs using AdBlockPlus filter format. Mainly focus on Chinese web sites.",
-      "descriptionSourceUrl": "https://github.com/yowu/AnnoyanceMobileAdHosts#annoyancemobileadhosts",
-      "homeUrl": "https://github.com/yowu/AnnoyanceMobileAdHosts",
-      "issuesUrl": "https://github.com/yowu/AnnoyanceMobileAdHosts/issues",
-      "licenseId": 2,
-      "name": "Annoyance Mobile Ad hosts filter",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/yowu/AnnoyanceMobileAdHosts/master/AnnoyanceMobileAdHosts.txt"
-    },
-    {
-      "id": 734,
-      "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
-      "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
-      "licenseId": 13,
-      "name": "GelboLube",
-      "syntaxId": 4,
-      "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/GelboLube.txt"
-    },
-    {
-      "id": 735,
-      "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
-      "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
-      "licenseId": 13,
-      "name": "Anti APKMirror Ads and Countdown",
-      "syntaxId": 4,
-      "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/AntiAPKMirrorCountdown.txt"
-    },
-    {
-      "id": 736,
-      "description": "A systematic Internet filter halting analytics.",
-      "descriptionSourceUrl": "https://raw.githubusercontent.com/OsborneSystems/Columbia/master/Columbia.txt",
-      "homeUrl": "https://github.com/OsborneSystems/Columbia",
-      "issuesUrl": "https://github.com/OsborneSystems/Columbia/issues",
-      "licenseId": 5,
-      "name": "Columbia Analytica",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/OsborneSystems/Columbia/master/Columbia.txt"
-    },
-    {
-      "id": 737,
-      "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
-      "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
-      "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
-      "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
-      "licenseId": 2,
-      "name": "Minimalist Cryptocurrency Filter List",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/minimalistcryptocurrencyfilterlist.txt"
-    },
-    {
-      "id": 738,
-      "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
-      "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
-      "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
-      "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
-      "licenseId": 2,
-      "name": "Music Filter List",
-      "syntaxId": 4,
-      "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/musicfilterlist.txt"
-    },
-    {
-      "id": 739,
-      "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
-      "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
-      "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
-      "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
-      "licenseId": 2,
-      "name": "Resources Filter List",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/resourcesfilterlist.txt"
-    },
-    {
-      "id": 740,
-      "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
-      "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
-      "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
-      "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
-      "licenseId": 2,
-      "name": "Social Filter List",
-      "syntaxId": 4,
-      "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/socialfilterlist.txt"
-    },
-    {
-      "id": 741,
-      "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
-      "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
-      "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
-      "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
-      "licenseId": 2,
-      "name": "Sports Filter List",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/sportsfilterlist.txt"
-    },
-    {
-      "id": 742,
-      "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
-      "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
-      "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
-      "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
-      "licenseId": 2,
-      "name": "Streaming Filter List",
-      "syntaxId": 4,
-      "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/streamingfilterlist.txt"
-    },
-    {
-      "id": 743,
-      "description": "In this repo I'm keeping all custom filter rules I'm using for the sites I'm typically visit. Some of them are trying to \"mask\" ad or make it \"native\". But this is not what I want to see.",
-      "descriptionSourceUrl": "https://github.com/akopachov/uBlock-AK-filter-rules#ublock-filter-rules",
-      "homeUrl": "https://github.com/akopachov/uBlock-AK-filter-rules",
-      "issuesUrl": "https://github.com/akopachov/uBlock-AK-filter-rules/issues",
-      "licenseId": 2,
-      "name": "uBlock AK Filter Rules",
-      "syntaxId": 4,
-      "viewUrl": "https://raw.githubusercontent.com/akopachov/uBlock-AK-filter-rules/master/entertainment"
-    },
-    {
-      "id": 744,
-      "description": "How to filter out advertisements and noise on Stack Overflow",
-      "descriptionSourceUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/README.md",
-      "homeUrl": "https://github.com/Hunter-Github/the-best-stack-overflow",
-      "issuesUrl": "https://github.com/Hunter-Github/the-best-stack-overflow/issues",
-      "name": "The Best Stack Overflow",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/README.md"
-    },
-    {
-      "id": 745,
-      "description": "Korean Media Comment, SNS Share Count, Likes Count, News Reaction Filter",
-      "descriptionSourceUrl": "https://raw.githubusercontent.com/KMCF/Korean-Media-Comment/master/filter.txt",
-      "homeUrl": "https://github.com/KMCF/Korean-Media-Comment",
-      "issuesUrl": "https://github.com/KMCF/Korean-Media-Comment/issues",
-      "licenseId": 24,
-      "name": "Korean Media Comment",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/KMCF/Korean-Media-Comment/master/filter.txt"
-    },
-    {
-      "id": 746,
-      "description": "By using this extension, you can block ads that you think are annoying while browsing on websites that you like to explore. You can also save internet quota usage or speed up website loading, so you can save time.",
-      "descriptionSourceUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/tree/master/uBlock%20Indo#ublock",
-      "homeUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/tree/master/uBlock%20Indo",
-      "issuesUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/tree/master/uBlock%20Indo/issues",
-      "name": "uBlock Indo",
-      "syntaxId": 4,
-      "viewUrl": "https://raw.githubusercontent.com/Hakame-kun/uBlock-Filters-Indonesia/master/uBlock%20Indo/ubindo.txt"
-    },
-    {
-      "id": 747,
-      "description": "A filterlist to block ads. It's specifically written for uBlock Origin, but still compatible with most ad blockers. However, some filters could only be detected by uBO. Main focus of this filter list is to cover Parsi websites and also most-visited websites in Iran, or other Parsi speaking countries, that are not covered by other major filter lists.",
-      "descriptionSourceUrl": "https://github.com/nimasaj/uBOPa#ubopa---ubo-parsi-filter-list",
-      "homeUrl": "https://github.com/nimasaj/uBOPa",
-      "issuesUrl": "https://github.com/nimasaj/uBOPa/issues",
-      "licenseId": 2,
-      "name": "uBOPa",
-      "viewUrl": "https://raw.githubusercontent.com/nimasaj/uBOPa/master/uBOPa.txt",
-      "syntaxId": 4,
-      "viewUrlMirror1": "https://mynext.pro/uBOPa.txt"
-    },
-    {
-      "id": 748,
-      "description": "Blocks 3rd-party Google tracking",
-      "descriptionSourceUrl": "https://www.microsoft.com/cms/api/am/binary/RWilsQ",
-      "discontinuedDate": "2013-07-11T00:00:00",
-      "homeUrl": "https://blogs.msdn.microsoft.com/ie/2012/02/20/google-bypassing-user-privacy-settings/",
-      "name": "Stop Google Tracking",
-      "syntaxId": 10,
-      "viewUrl": "https://www.microsoft.com/cms/api/am/binary/RWilsQ"
-    },
-    {
-      "id": 749,
-      "description": "This is a list of malware domains generated from malwaredomains.com data.",
-      "descriptionSourceUrl": "https://easylist-msie.adblockplus.org/malwaredomains_full.tpl",
-      "emailAddress": "malwaredomains@gmail.com",
-      "homeUrl": "https://www.malwaredomains.com/",
-      "name": "DNS-BH Malware Domains (TPL)",
-      "syntaxId": 10,
-      "viewUrl": "https://easylist-msie.adblockplus.org/malwaredomains_full.tpl"
-    },
-    {
-      "id": 750,
-      "description": "TRUSTe's Easy Tracking Protection list enables relevant and targeted content from companies that demonstrate respectful consumer privacy practices and comply with TRUSTe's high standards and direct oversight.",
-      "descriptionSourceUrl": "https://easy-tracking-protection.truste.com/easy.tpl",
-      "homeUrl": "https://www.trustarc.com/blog/2011/02/17/truste-tpl-next-steps/",
-      "name": "TRUSTe Easy Tracking Protection List",
-      "syntaxId": 10,
-      "viewUrl": "https://easy-tracking-protection.truste.com/easy.tpl"
-    },
-    {
-      "id": 751,
-      "discontinuedDate": "2016-05-09T00:00:00",
-      "homeUrl": "http://jansal.net/TPL.shtml",
-      "name": "Rickroll Blacklist (TPL)",
-      "syntaxId": 10,
-      "viewUrl": "http://jansal.net/tpl/ricklist.tpl"
-    },
-    {
-      "id": 752,
-      "discontinuedDate": "2011-10-05T00:00:00",
-      "homeUrl": "http://jansal.net/TPL.shtml",
-      "licenseId": 16,
-      "name": "Popup Block List for Adblock Plus Popup Addon",
-      "syntaxId": 10,
-      "viewUrl": "http://jansal.net/tpl/popup-block.tpl"
-    },
-    {
-      "id": 753,
-      "discontinuedDate": "2016-05-04T00:00:00",
-      "homeUrl": "http://jansal.net/TPL.shtml",
-      "licenseId": 2,
-      "name": "Prebake TPL",
-      "syntaxId": 10,
-      "viewUrl": "http://jansal.net/tpl/obtrusive.tpl"
-    },
-    {
-      "id": 754,
-      "discontinuedDate": "2016-09-05T15:38:00",
-      "homeUrl": "http://jansal.net/TPL.shtml",
-      "name": "Malware Patrol TPL",
-      "syntaxId": 10,
-      "viewUrl": "http://jansal.net/tpl/malpatrol.tpl"
-    },
-    {
-      "id": 755,
-      "discontinuedDate": "2013-12-28T10:21",
-      "homeUrl": "http://jansal.net/TPL.shtml",
-      "name": "M",
-      "syntaxId": 10,
-      "viewUrl": "http://jansal.net/tpl/m.tpl"
-    },
-    {
-      "id": 756,
-      "discontinuedDate": "2016-07-02T16:46:00",
-      "homeUrl": "http://jansal.net/TPL.shtml",
-      "licenseId": 8,
-      "name": "Latvian List (TPL)",
-      "syntaxId": 10,
-      "viewUrl": "http://jansal.net/tpl/latvian-list.tpl"
-    },
-    {
-      "id": 757,
-      "discontinuedDate": "2011-07-14T09:22:00",
-      "homeUrl": "http://jansal.net/TPL.shtml",
-      "name": "Facebook Connect Opt-Out",
-      "syntaxId": 10,
-      "viewUrl": "http://jansal.net/tpl/facebook-connect-optout-adblockplusfilter.tpl"
-    },
-    {
-      "id": 758,
-      "discontinuedDate": "2016-09-05T15:38:00",
-      "homeUrl": "http://jansal.net/TPL.shtml",
-      "name": "Adblock Persian List (TPL)",
-      "syntaxId": 10,
-      "viewUrl": "http://jansal.net/tpl/adblock-persian.tpl"
-    },
-    {
-      "id": 759,
-      "discontinuedDate": "2013-08-19T00:00:00",
-      "homeUrl": "http://jansal.net/TPL.shtml",
-      "name": "Fanboy's IsraelList (TPL)",
-      "syntaxId": 10,
-      "viewUrl": "http://jansal.net/tpl/IsraelList.tpl"
-    },
-    {
-      "id": 760,
-      "discontinuedDate": "2013-09-21T00:00:00",
-      "homeUrl": "http://jansal.net/TPL.shtml",
-      "licenseId": 16,
-      "name": "Adversity - AntiSocial (TPL)",
-      "syntaxId": 10,
-      "viewUrl": "http://jansal.net/tpl/Adversity/Antisocial.tpl"
-    },
-    {
-      "id": 761,
-      "discontinuedDate": "2013-09-24T00:00:00",
-      "homeUrl": "http://jansal.net/TPL.shtml",
-      "licenseId": 16,
-      "name": "Adversity (TPL)",
-      "syntaxId": 10,
-      "viewUrl": "http://jansal.net/tpl/Adversity/Adversity.tpl"
-    },
-    {
-      "id": 762,
-      "discontinuedDate": "2013-05-11T00:00:00",
-      "donateUrl": "https://www.paypal.com/nz/cgi-bin/webscr?cmd=_flow&SESSION=e3IZrPcc9VRrZhVknlZQ_6FjPBYH0_TRCkvdN7P_2F8lM3LsRl5iaKoa5LO&dispatch=5885d80a13c0db1f8e263663d3faee8db8175432b4df92754f4b4adb5a123d61&rapidsState=Donation__DonationFlow___StateDonationLogin&rapidsStateSignature=97ea3fa28f688ec0477182a325851e412cbbd40d",
-      "homeUrl": "https://www.fanboy.co.nz/",
-      "licenseId": 16,
-      "name": "Fanboy's Adblock-Nonelements List",
-      "syntaxId": 10,
-      "viewUrl": "https://www.fanboy.co.nz/adblock/ie/fanboy-noele.tpl"
-    },
-    {
-      "id": 763,
-      "discontinuedDate": "2013-02-16T00:00:00",
-      "donateUrl": "https://www.paypal.com/nz/cgi-bin/webscr?cmd=_flow&SESSION=e3IZrPcc9VRrZhVknlZQ_6FjPBYH0_TRCkvdN7P_2F8lM3LsRl5iaKoa5LO&dispatch=5885d80a13c0db1f8e263663d3faee8db8175432b4df92754f4b4adb5a123d61&rapidsState=Donation__DonationFlow___StateDonationLogin&rapidsStateSignature=97ea3fa28f688ec0477182a325851e412cbbd40d",
-      "homeUrl": "https://www.fanboy.co.nz/",
-      "licenseId": 16,
-      "name": "Fanboy's Tracking List (TPL)",
-      "syntaxId": 10,
-      "viewUrl": "https://www.fanboy.co.nz/adblock/ie/fanboy-tracking.tpl"
-    },
-    {
-      "id": 764,
-      "discontinuedDate": "2016-09-05T00:00:00",
-      "homeUrl": "http://jansal.net/TPL.shtml",
-      "licenseId": 16,
-      "name": "Fanboy's Enhanced Tracking List",
-      "syntaxId": 10,
-      "viewUrl": "http://jansal.net/tpl/fanboy/enhancedstats-addon.tpl"
-    },
-    {
-      "id": 765,
-      "discontinuedDate": "2013-05-17T00:00:00",
-      "homeUrl": "http://jansal.net/TPL.shtml",
-      "licenseId": 16,
-      "name": "Fanboy's Adblock List (TPL)",
-      "syntaxId": 10,
-      "viewUrl": "http://jansal.net/tpl/fanboy/fanboy-adult.tpl"
-    },
-    {
-      "id": 766,
-      "description": "lilydjwg's rules, mainly for China websites",
-      "descriptionSourceUrl": "https://raw.githubusercontent.com/lilydjwg/abp-rules/master/list.txt",
-      "emailAddress": "lilydjwg@gmail.com",
-      "homeUrl": "https://github.com/lilydjwg/abp-rules",
-      "issuesUrl": "https://github.com/lilydjwg/abp-rules/issues",
-      "name": "lilydjwg's rules",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/lilydjwg/abp-rules/master/list.txt"
-    },
-    {
-      "id": 767,
-      "description": "Rules contributed by diligent owls.",
-      "descriptionSourceUrl": "https://github.com/OwlStudioCN/owl-abp-rules#owl-abp-rules",
-      "homeUrl": "https://github.com/OwlStudioCN/owl-abp-rules",
-      "issuesUrl": "https://github.com/OwlStudioCN/owl-abp-rules/issues",
-      "licenseId": 8,
-      "name": "OwlStudio ABP Rules",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/OwlStudioCN/owl-abp-rules/master/owl-abp-rules.txt"
-    },
-    {
-      "id": 768,
-      "homeUrl": "https://github.com/fuyunliu/Adblock-Plus-User-Rule",
-      "issuesUrl": "https://github.com/fuyunliu/Adblock-Plus-User-Rule/issues",
-      "name": "Adblock Plus User Rule",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/fuyunliu/Adblock-Plus-User-Rule/master/user-rule.txt"
-    },
-    {
-      "id": 769,
-      "description": "A filter list for Adblock Plus for remove all newsletters banners",
-      "descriptionSourceUrl": "https://github.com/Manu1400/i-don-t-care-about-newsletters#i-don-t-care-about-newsletters",
-      "homeUrl": "https://github.com/Manu1400/i-don-t-care-about-newsletters",
-      "issuesUrl": "https://github.com/Manu1400/i-don-t-care-about-newsletters/issues",
-      "licenseId": 8,
-      "name": "I don't care about newsletters",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/Manu1400/i-don-t-care-about-newsletters/master/adp.txt"
-    },
-    {
-      "id": 770,
-      "emailAddress": "magno.biet+adp@gmail.com",
-      "homeUrl": "https://github.com/magnobiet/adblock-plus-list",
-      "issuesUrl": "https://github.com/magnobiet/adblock-plus-list/issues",
-      "licenseId": 2,
-      "name": "Magno's Adblock List",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/magnobiet/adblock-plus-list/gh-pages/list.txt"
-    },
-    {
-      "id": 771,
-      "description": "AdBlockPlus Rule, block ads click to visit page.",
-      "homeUrl": "https://github.com/CPlayer-CN/Anti-Ad-Click-Popup",
-      "issuesUrl": "https://github.com/CPlayer-CN/Anti-Ad-Click-Popup/issues",
-      "name": "Anti Ad Click Popup",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/CPlayer-CN/Anti-Ad-Click-Popup/master/rule.txt",
-      "viewUrlMirror1": "https://raw.githubusercontent.com/PChenWillPlay/Anti-Ad-Click-Popup/master/rule.txt"
-    },
-    {
-      "id": 772,
-      "emailAddress": "kbinani.bt@gmail.com",
-      "homeUrl": "https://github.com/kbinani/adblock-wikipedia",
-      "issuesUrl": "https://github.com/kbinani/adblock-wikipedia/issues",
-      "licenseId": 2,
-      "name": "adblock-wikipedia",
-      "syntaxId": 3,
-      "viewUrl": "https://raw.githubusercontent.com/kbinani/adblock-wikipedia/master/signed.txt"
-    }
+    "id": 719,
+    "description": "This list allows advertising that directly benefits open source projects by paying for development, paying for operations, or providing direct funding. You can read more at https://ads-for-open-source.readthedocs.io/inclusion.html for details on the criteria for inclusion or to get your project included.",
+    "descriptionSourceUrl": "https://github.com/rtfd/ads-for-opensource#advertising-for-open-source-exception-lists",
+    "homeUrl": "https://github.com/rtfd/ads-for-opensource",
+    "issuesUrl": "https://github.com/rtfd/ads-for-opensource/issues",
+    "licenseId": 2,
+    "name": "Open Source Advertising Exception List",
+    "syntaxId": 3,
+    "viewUrl": "https://ads-for-open-source.readthedocs.io/en/latest/_static/lists/opensource-ads.txt"
+  },
+  {
+    "id": 720,
+    "description": "Nónio - The platform that violates your privacy.",
+    "homeUrl": "https://nonio.pt/ublock.html",
+    "name": "AntiNónio",
+    "syntaxId": 4,
+    "viewUrl": "https://nonio.pt/antinonio.txt"
+  },
+  {
+    "id": 721,
+    "description": "This list started as a replica of the content that was on the AntiNónio project at https://nonio.pt/ublock.html. However, since this content contained several addresses that I don't think should be included in it, I decided to redo it and make it more dynamic.",
+    "descriptionSourceUrl": "https://github.com/brunomiguel/antinonio/blob/master/README.md",
+    "homeUrl": "https://github.com/brunomiguel/antinonio",
+    "issuesUrl": "https://github.com/brunomiguel/antinonio/issues",
+    "licenseId": 8,
+    "name": "AntiNónio - Bruno Miguel",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/brunomiguel/antinonio/master/antinonio.txt"
+  },
+  {
+    "id": 722,
+    "homeUrl": "https://gist.github.com/balupton/6960605",
+    "name": "Twitter Drama",
+    "syntaxId": 3,
+    "viewUrl": "https://gist.githubusercontent.com/balupton/6960605/raw/16bfeff88761b16296ed3ee15fbacf6840f1701a/filter-twitterdrama.txt"
+  },
+  {
+    "id": 723,
+    "homeUrl": "https://gist.github.com/balupton/6960605",
+    "name": "Feedly Ads",
+    "syntaxId": 3,
+    "viewUrl": "https://gist.githubusercontent.com/balupton/6960605/raw/16bfeff88761b16296ed3ee15fbacf6840f1701a/filter-feedlyads.txt"
+  },
+  {
+    "id": 724,
+    "homeUrl": "https://gist.github.com/balupton/6960605",
+    "name": "Facebook Drama",
+    "syntaxId": 3,
+    "viewUrl": "https://gist.githubusercontent.com/balupton/6960605/raw/16bfeff88761b16296ed3ee15fbacf6840f1701a/filter-facebookdrama.txt"
+  },
+  {
+    "id": 725,
+    "homeUrl": "https://github.com/littlepig10/92Clearnet",
+    "issuesUrl": "https://github.com/littlepig10/92Clearnet/issues",
+    "licenseId": 23,
+    "name": "92Clearnet AdBlock List",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/littlepig10/92Clearnet/master/AdBlock/AdBlock-92clearnet.txt"
+  },
+  {
+    "id": 726,
+    "homeUrl": "https://github.com/whtsky/abp-rules",
+    "issuesUrl": "https://github.com/whtsky/abp-rules/issues",
+    "name": "whtsky's rules",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/whtsky/abp-rules/master/rules.txt"
+  },
+  {
+    "id": 727,
+    "description": "Blocking some advertisement from Formosa",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/Yuan573/ADG/master/block",
+    "homeUrl": "https://github.com/Yuan573/ADG",
+    "name": "AdGuard Personal Block List",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Yuan573/ADG/master/block"
+  },
+  {
+    "id": 728,
+    "description": "Filter list that specifically removes adverts on Indonesian language websites.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt",
+    "homeUrl": "https://github.com/realodix/AdBlockID",
+    "issuesUrl": "https://github.com/realodix/AdBlockID/issues",
+    "name": "AdBlockID",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt"
+  },
+  {
+    "id": 729,
+    "description": "Blocks crap on websites",
+    "descriptionSourceUrl": "https://github.com/theel0ja/CrapBlock#crapblock",
+    "emailAddress": "elias.ojala+github@kapsi.fi",
+    "homeUrl": "https://crapblock.theel0ja.info/",
+    "issuesUrl": "https://github.com/theel0ja/CrapBlock/issues",
+    "name": "CrapBlock Annoyances",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/crapblock-annoyances.txt",
+    "viewUrlMirror1": "https://crapblock.theel0ja.info/crapblock-annoyances.txt"
+  },
+  {
+    "id": 730,
+    "description": "Blocks crap on websites",
+    "descriptionSourceUrl": "https://github.com/theel0ja/CrapBlock#crapblock",
+    "emailAddress": "elias.ojala+github@kapsi.fi",
+    "homeUrl": "https://crapblock.theel0ja.info/",
+    "issuesUrl": "https://github.com/theel0ja/CrapBlock/issues",
+    "name": "Block Google Fonts (by CrapBlock)",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/block-googlefonts.txt",
+    "viewUrlMirror1": "https://crapblock.theel0ja.info/block-googlefonts.txt"
+  },
+  {
+    "id": 731,
+    "description": "A list that blocks ads from my choice",
+    "descriptionSourceUrl": "https://github.com/NeeEoo/AdBlockNeeEoo#adblockneeeoo",
+    "homeUrl": "https://github.com/NeeEoo/AdBlockNeeEoo",
+    "issuesUrl": "https://github.com/NeeEoo/AdBlockNeeEoo/issues",
+    "name": "AdBlockNeeEoo",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/NeeEoo/AdBlockNeeEoo/master/List.txt"
+  },
+  {
+    "id": 732,
+    "description": "This is a blocklist (might not be ad specific) for ublock orgin and other blockers... Reason: Out of box nagware/pop up box less internet (also used by me)",
+    "descriptionSourceUrl": "https://github.com/bads-tm/superblock#superblock",
+    "donateUrl": "https://bads.team/ultrapage#donate",
+    "emailAddress": "hello@bads.team",
+    "homeUrl": "https://github.com/bads-tm/superblock",
+    "issuesUrl": "https://github.com/bads-tm/superblock/issues",
+    "licenseId": 2,
+    "name": "BADS.TM Cleaner Sites List All In One",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/bads-tm/superblock/master/cleanersitesAiO.txt"
+  },
+  {
+    "id": 733,
+    "description": "Collect the annoyance ad hosts for mobile webs using AdBlockPlus filter format. Mainly focus on Chinese web sites.",
+    "descriptionSourceUrl": "https://github.com/yowu/AnnoyanceMobileAdHosts#annoyancemobileadhosts",
+    "homeUrl": "https://github.com/yowu/AnnoyanceMobileAdHosts",
+    "issuesUrl": "https://github.com/yowu/AnnoyanceMobileAdHosts/issues",
+    "licenseId": 2,
+    "name": "Annoyance Mobile Ad hosts filter",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/yowu/AnnoyanceMobileAdHosts/master/AnnoyanceMobileAdHosts.txt"
+  },
+  {
+    "id": 734,
+    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
+    "licenseId": 13,
+    "name": "GelboLube",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/GelboLube.txt"
+  },
+  {
+    "id": 735,
+    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
+    "licenseId": 13,
+    "name": "Anti APKMirror Ads and Countdown",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/AntiAPKMirrorCountdown.txt"
+  },
+  {
+    "id": 736,
+    "description": "A systematic Internet filter halting analytics.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/OsborneSystems/Columbia/master/Columbia.txt",
+    "homeUrl": "https://github.com/OsborneSystems/Columbia",
+    "issuesUrl": "https://github.com/OsborneSystems/Columbia/issues",
+    "licenseId": 5,
+    "name": "Columbia Analytica",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/OsborneSystems/Columbia/master/Columbia.txt"
+  },
+  {
+    "id": 737,
+    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
+    "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
+    "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
+    "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
+    "licenseId": 2,
+    "name": "Minimalist Cryptocurrency Filter List",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/minimalistcryptocurrencyfilterlist.txt"
+  },
+  {
+    "id": 738,
+    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
+    "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
+    "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
+    "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
+    "licenseId": 2,
+    "name": "Music Filter List",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/musicfilterlist.txt"
+  },
+  {
+    "id": 739,
+    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
+    "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
+    "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
+    "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
+    "licenseId": 2,
+    "name": "Resources Filter List",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/resourcesfilterlist.txt"
+  },
+  {
+    "id": 740,
+    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
+    "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
+    "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
+    "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
+    "licenseId": 2,
+    "name": "Social Filter List",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/socialfilterlist.txt"
+  },
+  {
+    "id": 741,
+    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
+    "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
+    "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
+    "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
+    "licenseId": 2,
+    "name": "Sports Filter List",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/sportsfilterlist.txt"
+  },
+  {
+    "id": 742,
+    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
+    "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
+    "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
+    "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
+    "licenseId": 2,
+    "name": "Streaming Filter List",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/streamingfilterlist.txt"
+  },
+  {
+    "id": 743,
+    "description": "In this repo I'm keeping all custom filter rules I'm using for the sites I'm typically visit. Some of them are trying to \"mask\" ad or make it \"native\". But this is not what I want to see.",
+    "descriptionSourceUrl": "https://github.com/akopachov/uBlock-AK-filter-rules#ublock-filter-rules",
+    "homeUrl": "https://github.com/akopachov/uBlock-AK-filter-rules",
+    "issuesUrl": "https://github.com/akopachov/uBlock-AK-filter-rules/issues",
+    "licenseId": 2,
+    "name": "uBlock AK Filter Rules",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/akopachov/uBlock-AK-filter-rules/master/entertainment"
+  },
+  {
+    "id": 744,
+    "description": "How to filter out advertisements and noise on Stack Overflow",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/README.md",
+    "homeUrl": "https://github.com/Hunter-Github/the-best-stack-overflow",
+    "issuesUrl": "https://github.com/Hunter-Github/the-best-stack-overflow/issues",
+    "name": "The Best Stack Overflow",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/README.md"
+  },
+  {
+    "id": 745,
+    "description": "Korean Media Comment, SNS Share Count, Likes Count, News Reaction Filter",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/KMCF/Korean-Media-Comment/master/filter.txt",
+    "homeUrl": "https://github.com/KMCF/Korean-Media-Comment",
+    "issuesUrl": "https://github.com/KMCF/Korean-Media-Comment/issues",
+    "licenseId": 24,
+    "name": "Korean Media Comment",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/KMCF/Korean-Media-Comment/master/filter.txt"
+  },
+  {
+    "id": 746,
+    "description": "By using this extension, you can block ads that you think are annoying while browsing on websites that you like to explore. You can also save internet quota usage or speed up website loading, so you can save time.",
+    "descriptionSourceUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/tree/master/uBlock%20Indo#ublock",
+    "homeUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/tree/master/uBlock%20Indo",
+    "issuesUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/tree/master/uBlock%20Indo/issues",
+    "name": "uBlock Indo",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Hakame-kun/uBlock-Filters-Indonesia/master/uBlock%20Indo/ubindo.txt"
+  },
+  {
+    "id": 747,
+    "description": "A filterlist to block ads. It's specifically written for uBlock Origin, but still compatible with most ad blockers. However, some filters could only be detected by uBO. Main focus of this filter list is to cover Parsi websites and also most-visited websites in Iran, or other Parsi speaking countries, that are not covered by other major filter lists.",
+    "descriptionSourceUrl": "https://github.com/nimasaj/uBOPa#ubopa---ubo-parsi-filter-list",
+    "homeUrl": "https://github.com/nimasaj/uBOPa",
+    "issuesUrl": "https://github.com/nimasaj/uBOPa/issues",
+    "licenseId": 2,
+    "name": "uBOPa",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/nimasaj/uBOPa/master/uBOPa.txt",
+    "viewUrlMirror1": "https://mynext.pro/uBOPa.txt"
+  },
+  {
+    "id": 748,
+    "description": "Blocks 3rd-party Google tracking",
+    "descriptionSourceUrl": "https://www.microsoft.com/cms/api/am/binary/RWilsQ",
+    "discontinuedDate": "2013-07-11T00:00:00",
+    "homeUrl": "https://blogs.msdn.microsoft.com/ie/2012/02/20/google-bypassing-user-privacy-settings/",
+    "name": "Stop Google Tracking",
+    "syntaxId": 10,
+    "viewUrl": "https://www.microsoft.com/cms/api/am/binary/RWilsQ"
+  },
+  {
+    "id": 749,
+    "description": "This is a list of malware domains generated from malwaredomains.com data.",
+    "descriptionSourceUrl": "https://easylist-msie.adblockplus.org/malwaredomains_full.tpl",
+    "emailAddress": "malwaredomains@gmail.com",
+    "homeUrl": "https://www.malwaredomains.com/",
+    "name": "DNS-BH Malware Domains (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-msie.adblockplus.org/malwaredomains_full.tpl"
+  },
+  {
+    "id": 750,
+    "description": "TRUSTe's Easy Tracking Protection list enables relevant and targeted content from companies that demonstrate respectful consumer privacy practices and comply with TRUSTe's high standards and direct oversight.",
+    "descriptionSourceUrl": "https://easy-tracking-protection.truste.com/easy.tpl",
+    "homeUrl": "https://www.trustarc.com/blog/2011/02/17/truste-tpl-next-steps/",
+    "name": "TRUSTe Easy Tracking Protection List",
+    "syntaxId": 10,
+    "viewUrl": "https://easy-tracking-protection.truste.com/easy.tpl"
+  },
+  {
+    "id": 751,
+    "discontinuedDate": "2016-05-09T00:00:00",
+    "homeUrl": "http://jansal.net/TPL.shtml",
+    "name": "Rickroll Blacklist (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "http://jansal.net/tpl/ricklist.tpl"
+  },
+  {
+    "id": 752,
+    "discontinuedDate": "2011-10-05T00:00:00",
+    "homeUrl": "http://jansal.net/TPL.shtml",
+    "licenseId": 16,
+    "name": "Popup Block List for Adblock Plus Popup Addon",
+    "syntaxId": 10,
+    "viewUrl": "http://jansal.net/tpl/popup-block.tpl"
+  },
+  {
+    "id": 753,
+    "discontinuedDate": "2016-05-04T00:00:00",
+    "homeUrl": "http://jansal.net/TPL.shtml",
+    "licenseId": 2,
+    "name": "Prebake TPL",
+    "syntaxId": 10,
+    "viewUrl": "http://jansal.net/tpl/obtrusive.tpl"
+  },
+  {
+    "id": 754,
+    "discontinuedDate": "2016-09-05T00:00:00",
+    "homeUrl": "http://jansal.net/TPL.shtml",
+    "name": "Malware Patrol TPL",
+    "syntaxId": 10,
+    "viewUrl": "http://jansal.net/tpl/malpatrol.tpl"
+  },
+  {
+    "id": 755,
+    "discontinuedDate": "2013-12-28T00:00:00",
+    "homeUrl": "http://jansal.net/TPL.shtml",
+    "name": "M",
+    "syntaxId": 10,
+    "viewUrl": "http://jansal.net/tpl/m.tpl"
+  },
+  {
+    "id": 756,
+    "discontinuedDate": "2016-07-02T00:00:00",
+    "homeUrl": "http://jansal.net/TPL.shtml",
+    "licenseId": 8,
+    "name": "Latvian List (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "http://jansal.net/tpl/latvian-list.tpl"
+  },
+  {
+    "id": 757,
+    "discontinuedDate": "2011-07-14T00:00:00",
+    "homeUrl": "http://jansal.net/TPL.shtml",
+    "name": "Facebook Connect Opt-Out",
+    "syntaxId": 10,
+    "viewUrl": "http://jansal.net/tpl/facebook-connect-optout-adblockplusfilter.tpl"
+  },
+  {
+    "id": 758,
+    "discontinuedDate": "2016-09-05T00:00:00",
+    "homeUrl": "http://jansal.net/TPL.shtml",
+    "name": "Adblock Persian List (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "http://jansal.net/tpl/adblock-persian.tpl"
+  },
+  {
+    "id": 759,
+    "discontinuedDate": "2013-08-19T00:00:00",
+    "homeUrl": "http://jansal.net/TPL.shtml",
+    "name": "Fanboy's IsraelList (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "http://jansal.net/tpl/IsraelList.tpl"
+  },
+  {
+    "id": 760,
+    "discontinuedDate": "2013-09-21T00:00:00",
+    "homeUrl": "http://jansal.net/TPL.shtml",
+    "licenseId": 16,
+    "name": "Adversity - AntiSocial (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "http://jansal.net/tpl/Adversity/Antisocial.tpl"
+  },
+  {
+    "id": 761,
+    "discontinuedDate": "2013-09-24T00:00:00",
+    "homeUrl": "http://jansal.net/TPL.shtml",
+    "licenseId": 16,
+    "name": "Adversity (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "http://jansal.net/tpl/Adversity/Adversity.tpl"
+  },
+  {
+    "id": 762,
+    "discontinuedDate": "2013-05-11T00:00:00",
+    "donateUrl": "https://www.paypal.com/nz/cgi-bin/webscr?cmd=_flow&SESSION=e3IZrPcc9VRrZhVknlZQ_6FjPBYH0_TRCkvdN7P_2F8lM3LsRl5iaKoa5LO&dispatch=5885d80a13c0db1f8e263663d3faee8db8175432b4df92754f4b4adb5a123d61&rapidsState=Donation__DonationFlow___StateDonationLogin&rapidsStateSignature=97ea3fa28f688ec0477182a325851e412cbbd40d",
+    "homeUrl": "https://www.fanboy.co.nz/",
+    "licenseId": 16,
+    "name": "Fanboy's Adblock-Nonelements List",
+    "syntaxId": 10,
+    "viewUrl": "https://www.fanboy.co.nz/adblock/ie/fanboy-noele.tpl"
+  },
+  {
+    "id": 763,
+    "discontinuedDate": "2013-02-16T00:00:00",
+    "donateUrl": "https://www.paypal.com/nz/cgi-bin/webscr?cmd=_flow&SESSION=e3IZrPcc9VRrZhVknlZQ_6FjPBYH0_TRCkvdN7P_2F8lM3LsRl5iaKoa5LO&dispatch=5885d80a13c0db1f8e263663d3faee8db8175432b4df92754f4b4adb5a123d61&rapidsState=Donation__DonationFlow___StateDonationLogin&rapidsStateSignature=97ea3fa28f688ec0477182a325851e412cbbd40d",
+    "homeUrl": "https://www.fanboy.co.nz/",
+    "licenseId": 16,
+    "name": "Fanboy's Tracking List (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://www.fanboy.co.nz/adblock/ie/fanboy-tracking.tpl"
+  },
+  {
+    "id": 764,
+    "discontinuedDate": "2016-09-05T00:00:00",
+    "homeUrl": "http://jansal.net/TPL.shtml",
+    "licenseId": 16,
+    "name": "Fanboy's Enhanced Tracking List",
+    "syntaxId": 10,
+    "viewUrl": "http://jansal.net/tpl/fanboy/enhancedstats-addon.tpl"
+  },
+  {
+    "id": 765,
+    "discontinuedDate": "2013-05-17T00:00:00",
+    "homeUrl": "http://jansal.net/TPL.shtml",
+    "licenseId": 16,
+    "name": "Fanboy's Adblock List (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "http://jansal.net/tpl/fanboy/fanboy-adult.tpl"
+  },
+  {
+    "id": 766,
+    "description": "lilydjwg's rules, mainly for China websites",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/lilydjwg/abp-rules/master/list.txt",
+    "emailAddress": "lilydjwg@gmail.com",
+    "homeUrl": "https://github.com/lilydjwg/abp-rules",
+    "issuesUrl": "https://github.com/lilydjwg/abp-rules/issues",
+    "name": "lilydjwg's rules",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/lilydjwg/abp-rules/master/list.txt"
+  },
+  {
+    "id": 767,
+    "description": "Rules contributed by diligent owls.",
+    "descriptionSourceUrl": "https://github.com/OwlStudioCN/owl-abp-rules#owl-abp-rules",
+    "homeUrl": "https://github.com/OwlStudioCN/owl-abp-rules",
+    "issuesUrl": "https://github.com/OwlStudioCN/owl-abp-rules/issues",
+    "licenseId": 8,
+    "name": "OwlStudio ABP Rules",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/OwlStudioCN/owl-abp-rules/master/owl-abp-rules.txt"
+  },
+  {
+    "id": 768,
+    "homeUrl": "https://github.com/fuyunliu/Adblock-Plus-User-Rule",
+    "issuesUrl": "https://github.com/fuyunliu/Adblock-Plus-User-Rule/issues",
+    "name": "Adblock Plus User Rule",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/fuyunliu/Adblock-Plus-User-Rule/master/user-rule.txt"
+  },
+  {
+    "id": 769,
+    "description": "A filter list for Adblock Plus for remove all newsletters banners",
+    "descriptionSourceUrl": "https://github.com/Manu1400/i-don-t-care-about-newsletters#i-don-t-care-about-newsletters",
+    "homeUrl": "https://github.com/Manu1400/i-don-t-care-about-newsletters",
+    "issuesUrl": "https://github.com/Manu1400/i-don-t-care-about-newsletters/issues",
+    "licenseId": 8,
+    "name": "I don't care about newsletters",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Manu1400/i-don-t-care-about-newsletters/master/adp.txt"
+  },
+  {
+    "id": 770,
+    "emailAddress": "magno.biet+adp@gmail.com",
+    "homeUrl": "https://github.com/magnobiet/adblock-plus-list",
+    "issuesUrl": "https://github.com/magnobiet/adblock-plus-list/issues",
+    "licenseId": 2,
+    "name": "Magno's Adblock List",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/magnobiet/adblock-plus-list/gh-pages/list.txt"
+  },
+  {
+    "id": 771,
+    "description": "AdBlockPlus Rule, block ads click to visit page.",
+    "homeUrl": "https://github.com/CPlayer-CN/Anti-Ad-Click-Popup",
+    "issuesUrl": "https://github.com/CPlayer-CN/Anti-Ad-Click-Popup/issues",
+    "name": "Anti Ad Click Popup",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/CPlayer-CN/Anti-Ad-Click-Popup/master/rule.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/PChenWillPlay/Anti-Ad-Click-Popup/master/rule.txt"
+  },
+  {
+    "id": 772,
+    "emailAddress": "kbinani.bt@gmail.com",
+    "homeUrl": "https://github.com/kbinani/adblock-wikipedia",
+    "issuesUrl": "https://github.com/kbinani/adblock-wikipedia/issues",
+    "licenseId": 2,
+    "name": "adblock-wikipedia",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/kbinani/adblock-wikipedia/master/signed.txt"
+  }
 ]
