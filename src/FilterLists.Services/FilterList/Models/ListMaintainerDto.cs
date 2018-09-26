@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using JetBrains.Annotations;
 
-namespace FilterLists.Services.List.Models
+namespace FilterLists.Services.FilterList.Models
 {
     [UsedImplicitly]
     public class ListMaintainerDto

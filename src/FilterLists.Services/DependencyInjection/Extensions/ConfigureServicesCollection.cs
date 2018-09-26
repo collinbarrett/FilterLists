@@ -2,7 +2,6 @@
 using FilterLists.Data;
 using FilterLists.Services.FilterList;
 using FilterLists.Services.Language;
-using FilterLists.Services.List;
 using FilterLists.Services.Seed;
 using FilterLists.Services.Snapshot;
 using FilterLists.Services.Software;
@@ -23,7 +22,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
                     .AddDbContextPool<FilterListsDbContext>(o =>
                         o.UseMySql(config.GetConnectionString("FilterListsConnection"),
                             m => m.MigrationsAssembly("FilterLists.Api")));
-            services.TryAddScoped<ListService>();
+            services.TryAddScoped<FilterListService>();
             services.TryAddScoped<LanguageService>();
             services.TryAddScoped<SeedService>();
             services.TryAddScoped<SoftwareService>();
