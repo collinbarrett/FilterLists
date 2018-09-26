@@ -30,10 +30,10 @@ namespace FilterLists.Api.V1.Controllers
         }
 
         //https://stackoverflow.com/a/52506210/2343739
-        protected async Task<IActionResult> Get<T>(Func<Task<T>> createAction, int? actionParam = null,
+        protected async Task<IActionResult> Get<T>(Func<Task<T>> createAction, int? paramCacheKey = null,
             [CallerMemberName] string actionName = null)
         {
-            var cacheKey = GetType().Name + "_" + actionName + "_" + actionParam;
+            var cacheKey = GetType().Name + "_" + actionName + "_" + paramCacheKey;
             var result = await memoryCache.GetOrCreateAsync(cacheKey, entry =>
             {
                 entry.AbsoluteExpirationRelativeToNow = MemoryCacheExpirationDefault;
