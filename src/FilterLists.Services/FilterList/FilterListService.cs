@@ -15,9 +15,9 @@ namespace FilterLists.Services.FilterList
         {
         }
 
-        public async Task<IEnumerable<List>> GetAllAsync() =>
+        public async Task<IEnumerable<FilterListDto>> GetAllAsync() =>
             await DbContext.FilterLists
-                           .ProjectTo<List>(MapConfig)
+                           .ProjectTo<FilterListDto>(MapConfig)
                            .ToListAsync();
 
         public async Task<ListDetails> GetDetailsAsync(int id) =>
