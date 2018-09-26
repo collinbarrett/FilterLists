@@ -128,14 +128,6 @@
     "syntaxId": 8
   },
   {
-    "softwareId": 1,
-    "syntaxId": 9
-  },
-  {
-    "softwareId": 5,
-    "syntaxId": 9
-  },
-  {
     "softwareId": 18,
     "syntaxId": 9
   },
@@ -198,5 +190,45 @@
   {
     "softwareId": 21,
     "syntaxId": 19
+  },
+  {
+    "softwareId": 2,
+    "syntaxId": 4,
+    "partial": true
+  },
+  {
+    "softwareId": 3,
+    "syntaxId": 4,
+    "partial": true
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 9,
+    "partial": true
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 9,
+    "partial": true
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 13,
+    "partial": true
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 13,
+    "partial": true
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 19,
+    "partial": true
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 19,
+    "partial": true
   }
 ]
