@@ -7239,7 +7239,8 @@
     "homeUrl": "https://getadblock.com/",
     "licenseId": 4,
     "name": "Chrome AdBlock auxiliarly filters",
-    "syntaxId": 3
+    "syntaxId": 3,
+    "viewUrl": "https://cdn.adblockcdn.com/filters/adblock_custom.txt"
   },
   {
     "id": 687,
@@ -7250,7 +7251,8 @@
     "homeUrl": "http://www.quero.at/adblock-hosts-edge.php",
     "licenseId": 4,
     "name": "Quero AdBlock Hosts",
-    "syntaxId": 1
+    "syntaxId": 1,
+    "viewUrl": "http://www.quero.at/download/adblock-hosts.zip"
   },
   {
     "id": 688,
@@ -7828,6 +7830,238 @@
       "licenseId": 2,
       "name": "uBOPa",
       "viewUrl": "https://raw.githubusercontent.com/nimasaj/uBOPa/master/uBOPa.txt",
+      "syntaxId": 4,
       "viewUrlMirror1": "https://mynext.pro/uBOPa.txt"
+    },
+    {
+      "id": 748,
+      "description": "Blocks 3rd-party Google tracking",
+      "descriptionSourceUrl": "https://www.microsoft.com/cms/api/am/binary/RWilsQ",
+      "discontinuedDate": "2013-07-11T00:00:00",
+      "homeUrl": "https://blogs.msdn.microsoft.com/ie/2012/02/20/google-bypassing-user-privacy-settings/",
+      "name": "Stop Google Tracking",
+      "syntaxId": 10,
+      "viewUrl": "https://www.microsoft.com/cms/api/am/binary/RWilsQ"
+    },
+    {
+      "id": 749,
+      "description": "This is a list of malware domains generated from malwaredomains.com data.",
+      "descriptionSourceUrl": "https://easylist-msie.adblockplus.org/malwaredomains_full.tpl",
+      "emailAddress": "malwaredomains@gmail.com",
+      "homeUrl": "https://www.malwaredomains.com/",
+      "name": "DNS-BH Malware Domains (TPL)",
+      "syntaxId": 10,
+      "viewUrl": "https://easylist-msie.adblockplus.org/malwaredomains_full.tpl"
+    },
+    {
+      "id": 750,
+      "description": "TRUSTe's Easy Tracking Protection list enables relevant and targeted content from companies that demonstrate respectful consumer privacy practices and comply with TRUSTe's high standards and direct oversight.",
+      "descriptionSourceUrl": "https://easy-tracking-protection.truste.com/easy.tpl",
+      "homeUrl": "https://www.trustarc.com/blog/2011/02/17/truste-tpl-next-steps/",
+      "name": "TRUSTe Easy Tracking Protection List",
+      "syntaxId": 10,
+      "viewUrl": "https://easy-tracking-protection.truste.com/easy.tpl"
+    },
+    {
+      "id": 751,
+      "discontinuedDate": "2016-05-09T00:00:00",
+      "homeUrl": "http://jansal.net/TPL.shtml",
+      "name": "Rickroll Blacklist (TPL)",
+      "syntaxId": 10,
+      "viewUrl": "http://jansal.net/tpl/ricklist.tpl"
+    },
+    {
+      "id": 752,
+      "discontinuedDate": "2011-10-05T00:00:00",
+      "homeUrl": "http://jansal.net/TPL.shtml",
+      "licenseId": 16,
+      "name": "Popup Block List for Adblock Plus Popup Addon",
+      "syntaxId": 10,
+      "viewUrl": "http://jansal.net/tpl/popup-block.tpl"
+    },
+    {
+      "id": 753,
+      "discontinuedDate": "2016-05-04T00:00:00",
+      "homeUrl": "http://jansal.net/TPL.shtml",
+      "licenseId": 2,
+      "name": "Prebake TPL",
+      "syntaxId": 10,
+      "viewUrl": "http://jansal.net/tpl/obtrusive.tpl"
+    },
+    {
+      "id": 754,
+      "discontinuedDate": "2016-09-05T15:38:00",
+      "homeUrl": "http://jansal.net/TPL.shtml",
+      "name": "Malware Patrol TPL",
+      "syntaxId": 10,
+      "viewUrl": "http://jansal.net/tpl/malpatrol.tpl"
+    },
+    {
+      "id": 755,
+      "discontinuedDate": "2013-12-28T10:21",
+      "homeUrl": "http://jansal.net/TPL.shtml",
+      "name": "M",
+      "syntaxId": 10,
+      "viewUrl": "http://jansal.net/tpl/m.tpl"
+    },
+    {
+      "id": 756,
+      "discontinuedDate": "2016-07-02T16:46:00",
+      "homeUrl": "http://jansal.net/TPL.shtml",
+      "licenseId": 8,
+      "name": "Latvian List (TPL)",
+      "syntaxId": 10,
+      "viewUrl": "http://jansal.net/tpl/latvian-list.tpl"
+    },
+    {
+      "id": 757,
+      "discontinuedDate": "2011-07-14T09:22:00",
+      "homeUrl": "http://jansal.net/TPL.shtml",
+      "name": "Facebook Connect Opt-Out",
+      "syntaxId": 10,
+      "viewUrl": "http://jansal.net/tpl/facebook-connect-optout-adblockplusfilter.tpl"
+    },
+    {
+      "id": 758,
+      "discontinuedDate": "2016-09-05T15:38:00",
+      "homeUrl": "http://jansal.net/TPL.shtml",
+      "name": "Adblock Persian List (TPL)",
+      "syntaxId": 10,
+      "viewUrl": "http://jansal.net/tpl/adblock-persian.tpl"
+    },
+    {
+      "id": 759,
+      "discontinuedDate": "2013-08-19T00:00:00",
+      "homeUrl": "http://jansal.net/TPL.shtml",
+      "name": "Fanboy's IsraelList (TPL)",
+      "syntaxId": 10,
+      "viewUrl": "http://jansal.net/tpl/IsraelList.tpl"
+    },
+    {
+      "id": 760,
+      "discontinuedDate": "2013-09-21T00:00:00",
+      "homeUrl": "http://jansal.net/TPL.shtml",
+      "licenseId": 16,
+      "name": "Adversity - AntiSocial (TPL)",
+      "syntaxId": 10,
+      "viewUrl": "http://jansal.net/tpl/Adversity/Antisocial.tpl"
+    },
+    {
+      "id": 761,
+      "discontinuedDate": "2013-09-24T00:00:00",
+      "homeUrl": "http://jansal.net/TPL.shtml",
+      "licenseId": 16,
+      "name": "Adversity (TPL)",
+      "syntaxId": 10,
+      "viewUrl": "http://jansal.net/tpl/Adversity/Adversity.tpl"
+    },
+    {
+      "id": 762,
+      "discontinuedDate": "2013-05-11T00:00:00",
+      "donateUrl": "https://www.paypal.com/nz/cgi-bin/webscr?cmd=_flow&SESSION=e3IZrPcc9VRrZhVknlZQ_6FjPBYH0_TRCkvdN7P_2F8lM3LsRl5iaKoa5LO&dispatch=5885d80a13c0db1f8e263663d3faee8db8175432b4df92754f4b4adb5a123d61&rapidsState=Donation__DonationFlow___StateDonationLogin&rapidsStateSignature=97ea3fa28f688ec0477182a325851e412cbbd40d",
+      "homeUrl": "https://www.fanboy.co.nz/",
+      "licenseId": 16,
+      "name": "Fanboy's Adblock-Nonelements List",
+      "syntaxId": 10,
+      "viewUrl": "https://www.fanboy.co.nz/adblock/ie/fanboy-noele.tpl"
+    },
+    {
+      "id": 763,
+      "discontinuedDate": "2013-02-16T00:00:00",
+      "donateUrl": "https://www.paypal.com/nz/cgi-bin/webscr?cmd=_flow&SESSION=e3IZrPcc9VRrZhVknlZQ_6FjPBYH0_TRCkvdN7P_2F8lM3LsRl5iaKoa5LO&dispatch=5885d80a13c0db1f8e263663d3faee8db8175432b4df92754f4b4adb5a123d61&rapidsState=Donation__DonationFlow___StateDonationLogin&rapidsStateSignature=97ea3fa28f688ec0477182a325851e412cbbd40d",
+      "homeUrl": "https://www.fanboy.co.nz/",
+      "licenseId": 16,
+      "name": "Fanboy's Tracking List (TPL)",
+      "syntaxId": 10,
+      "viewUrl": "https://www.fanboy.co.nz/adblock/ie/fanboy-tracking.tpl"
+    },
+    {
+      "id": 764,
+      "discontinuedDate": "2016-09-05T00:00:00",
+      "homeUrl": "http://jansal.net/TPL.shtml",
+      "licenseId": 16,
+      "name": "Fanboy's Enhanced Tracking List",
+      "syntaxId": 10,
+      "viewUrl": "http://jansal.net/tpl/fanboy/enhancedstats-addon.tpl"
+    },
+    {
+      "id": 765,
+      "discontinuedDate": "2013-05-17T00:00:00",
+      "homeUrl": "http://jansal.net/TPL.shtml",
+      "licenseId": 16,
+      "name": "Fanboy's Adblock List (TPL)",
+      "syntaxId": 10,
+      "viewUrl": "http://jansal.net/tpl/fanboy/fanboy-adult.tpl"
+    },
+    {
+      "id": 766,
+      "description": "lilydjwg's rules, mainly for China websites",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/lilydjwg/abp-rules/master/list.txt",
+      "emailAddress": "lilydjwg@gmail.com",
+      "homeUrl": "https://github.com/lilydjwg/abp-rules",
+      "issuesUrl": "https://github.com/lilydjwg/abp-rules/issues",
+      "name": "lilydjwg's rules",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/lilydjwg/abp-rules/master/list.txt"
+    },
+    {
+      "id": 767,
+      "description": "Rules contributed by diligent owls.",
+      "descriptionSourceUrl": "https://github.com/OwlStudioCN/owl-abp-rules#owl-abp-rules",
+      "homeUrl": "https://github.com/OwlStudioCN/owl-abp-rules",
+      "issuesUrl": "https://github.com/OwlStudioCN/owl-abp-rules/issues",
+      "licenseId": 8,
+      "name": "OwlStudio ABP Rules",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/OwlStudioCN/owl-abp-rules/master/owl-abp-rules.txt"
+    },
+    {
+      "id": 768,
+      "homeUrl": "https://github.com/fuyunliu/Adblock-Plus-User-Rule",
+      "issuesUrl": "https://github.com/fuyunliu/Adblock-Plus-User-Rule/issues",
+      "name": "Adblock Plus User Rule",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/fuyunliu/Adblock-Plus-User-Rule/master/user-rule.txt"
+    },
+    {
+      "id": 769,
+      "description": "A filter list for Adblock Plus for remove all newsletters banners",
+      "descriptionSourceUrl": "https://github.com/Manu1400/i-don-t-care-about-newsletters#i-don-t-care-about-newsletters",
+      "homeUrl": "https://github.com/Manu1400/i-don-t-care-about-newsletters",
+      "issuesUrl": "https://github.com/Manu1400/i-don-t-care-about-newsletters/issues",
+      "licenseId": 8,
+      "name": "I don't care about newsletters",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/Manu1400/i-don-t-care-about-newsletters/master/adp.txt"
+    },
+    {
+      "id": 770,
+      "emailAddress": "magno.biet+adp@gmail.com",
+      "homeUrl": "https://github.com/magnobiet/adblock-plus-list",
+      "issuesUrl": "https://github.com/magnobiet/adblock-plus-list/issues",
+      "licenseId": 2,
+      "name": "Magno's Adblock List",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/magnobiet/adblock-plus-list/gh-pages/list.txt"
+    },
+    {
+      "id": 771,
+      "description": "AdBlockPlus Rule, block ads click to visit page.",
+      "homeUrl": "https://github.com/CPlayer-CN/Anti-Ad-Click-Popup",
+      "issuesUrl": "https://github.com/CPlayer-CN/Anti-Ad-Click-Popup/issues",
+      "name": "Anti Ad Click Popup",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/CPlayer-CN/Anti-Ad-Click-Popup/master/rule.txt",
+      "viewUrlMirror1": "https://raw.githubusercontent.com/PChenWillPlay/Anti-Ad-Click-Popup/master/rule.txt"
+    },
+    {
+      "id": 772,
+      "emailAddress": "kbinani.bt@gmail.com",
+      "homeUrl": "https://github.com/kbinani/adblock-wikipedia",
+      "issuesUrl": "https://github.com/kbinani/adblock-wikipedia/issues",
+      "licenseId": 2,
+      "name": "adblock-wikipedia",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/kbinani/adblock-wikipedia/master/signed.txt"
     }
 ]
