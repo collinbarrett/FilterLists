@@ -20,11 +20,10 @@ namespace FilterLists.Api.V1.Controllers
         public async Task<IActionResult> GetAll() =>
             await Get(() => tagService.GetAll());
 
-        // TODO
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> GetById(int id) =>
-            await Task.FromResult((IActionResult)BadRequest());
+            await Get(() => tagService.GetById(id), id);
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>

@@ -23,5 +23,10 @@ namespace FilterLists.Services.Tag
                            .OrderBy(s => s.Name)
                            .ProjectTo<TagDto>(MapConfig)
                            .ToListAsync();
+
+        public async Task<TagDto> GetById(int id) =>
+            await DbContext.Tags
+                           .ProjectTo<TagDto>(MapConfig)
+                           .FirstOrDefaultAsync(t => t.Id == id);
     }
 }
