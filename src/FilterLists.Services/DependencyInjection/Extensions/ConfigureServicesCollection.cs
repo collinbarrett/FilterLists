@@ -7,6 +7,7 @@ using FilterLists.Services.Maintainer;
 using FilterLists.Services.Seed;
 using FilterLists.Services.Snapshot;
 using FilterLists.Services.Software;
+using FilterLists.Services.Syntax;
 using FilterLists.Services.Tag;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -30,6 +31,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
             services.TryAddScoped<MaintainerService>();
             services.TryAddScoped<SeedService>();
             services.TryAddScoped<SoftwareService>();
+            services.TryAddScoped<SyntaxService>();
             services.TryAddScoped<TagService>();
             services.TryAddScoped<RuleService>();
             services.AddAutoMapper();
