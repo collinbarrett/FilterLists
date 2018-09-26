@@ -8069,7 +8069,7 @@
       "forumUrl": "https://forums.lanik.us/viewforum.php?f=90",
       "emailAddress": "easylist.germany@gmail.com",
       "homeUrl": "https://easylist.to/",
-      "licenseId": "GPL 3.0",
+      "licenseId": 4,
       "name": "EasyList Germany + EasyList (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/easylistgermany+easylist.tpl"
@@ -8079,7 +8079,7 @@
       "forumUrl": "https://forums.lanik.us/",
       "emailAddress": "easylist.subscription@gmail.com",
       "homeUrl": "https://easylist.to/",
-      "licenseId": "CC BY 3.0",
+      "licenseId": 16,
       "name": "Fanboy's Annoyance List",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/fanboy-annoyance.tpl"
@@ -8087,7 +8087,7 @@
     {
       "id": 775,
       "homeUrl": "https://margevicius.lt/",
-      "licenseId": "GPL 3.0",
+      "licenseId": 4,
       "name": "EasyList Lithuania + EasyList (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/easylistlithuania+easylist.tpl"
@@ -8102,7 +8102,7 @@
     {
       "id": 777,
       "homeUrl": "https://easylist.to/",
-      "licenseId": "CC BY-SA 4.0",
+      "licenseId": 8,
       "name": "Latvian List + EasyList (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/latvianlist+easylist.tpl"
@@ -8110,7 +8110,7 @@
     {
       "id": 778,
       "homeUrl": "https://easylist.to/",
-      "licenseId": "GPL 3.0",
+      "licenseId": 4,
       "name": "EasyPrivacy + EasyList (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/easyprivacy+easylist.tpl"
@@ -8118,7 +8118,7 @@
     {
       "id": 779,
       "homeUrl": "https://easylist.to/",
-      "licenseId": "GPL 3.0",
+      "licenseId": 4,
       "name": "EasyList Italy + Italy (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/easylistitaly+easylist.tpl"
@@ -8126,7 +8126,7 @@
     {
       "id": 780,
       "homeUrl": "https://github.com/easylist/EasyListHebrew",
-      "licenseId": "GPL 3.0",
+      "licenseId": 4,
       "name": "EasyList Hebrew + EasyList (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/israellist+easylist.tpl"
@@ -8134,7 +8134,7 @@
     {
       "id": 781,
       "homeUrl": "https://easylist.to/",
-      "licenseId": "GPL 3.0",
+      "licenseId": 4,
       "name": "EasyList China + EasyList (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/easylistchina+easylist.tpl"
@@ -8142,7 +8142,7 @@
     {
       "id": 782,
       "homeUrl": "https://easylist.to/",
-      "licenseId": "GPL 3.0",
+      "licenseId": 4,
       "name": "EasyList Dutch + EasyList (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/easylistdutch+easylist.tpl"
@@ -8168,7 +8168,7 @@
       "forumUrl": "https://forums.lanik.us/",
       "emailAddress": "easylist.subscription@gmail.com",
       "homeUrl": "https://easylist.to/",
-      "licenseId": "CC BY 3.0",
+      "licenseId": 16,
       "name": "Fanboy's Social Blocking List (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/fanboy-social.tpl"
@@ -8176,7 +8176,7 @@
     {
       "id": 786,
       "homeUrl": "https://code.google.com/archive/p/liste-ar-adblock/",
-      "licenseId": "CC BY-SA 3.0",
+      "licenseId": 12,
       "name": "Liste AR + Liste FR + EasyList (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/liste_ar+liste_fr+easylist.tpl"
@@ -8184,7 +8184,7 @@
     {
       "id": 787,
       "homeUrl": "https://easylist.to/",
-      "licenseId": "CC BY 3.0",
+      "licenseId": 16,
       "name": "RU AdList + EasyList (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/ruadlist+easylist.tpl"
@@ -8192,7 +8192,7 @@
     {
       "id": 788,
       "homeUrl": "https://code.google.com/archive/p/liste-ar-adblock/",
-      "licenseId": "CC BY-SA 3.0",
+      "licenseId": 12,
       "name": "Liste AR (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/Liste_AR.tpl"
@@ -8200,7 +8200,7 @@
     {
       "id": 789,
       "homeUrl": "https://easylist.to/",
-      "licenseId": "GPL 3.0",
+      "licenseId": 4,
       "name": "EasyList Dutch (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/easylistdutch.tpl"
@@ -8209,7 +8209,7 @@
       "id": 790,
       "forumUrl": "https://forums.lanik.us/",
       "homeUrl": "https://easylist.to/",
-      "licenseId": "GPL 3.0",
+      "licenseId": 4,
       "name": "EasyPrivacy Without International Rules (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/easyprivacy_nointernational.tpl"
@@ -8218,7 +8218,7 @@
       "id": 791,
       "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
       "homeUrl": "https://easylist.to/",
-      "licenseId": "CC BY 3.0",
+      "licenseId": 16,
       "name": "RU AdList (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/advblock.tpl"
@@ -8227,7 +8227,7 @@
       "id": 792,
       "forumUrl": "https://forums.lanik.us/",
       "homeUrl": "https://easylist.to/",
-      "licenseId": "GPL 3.0",
+      "licenseId": 4,
       "name": "EasyList Without Rules for Adult Sites (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/easylist_noadult.tpl"
@@ -8236,7 +8236,7 @@
       "id": 793,
       "forumUrl": "https://forums.lanik.us/viewforum.php?f=103",
       "homeUrl": "https://easylist.to/",
-      "licenseId": "GPL 3.0",
+      "licenseId": 4,
       "name": "EasyList Spanish (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/easylistspanish.tpl"
@@ -8244,7 +8244,7 @@
     {
       "id": 794,
       "homeUrl": "https://easylist.to/",
-      "licenseId": "GPL 3.0",
+      "licenseId": 4,
       "name": "EasyList China (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/easylistchina.tpl"
@@ -8253,7 +8253,7 @@
       "id": 795,
       "forumUrl": "https://forums.lanik.us/viewforum.php?f=91",
       "homeUrl": "https://easylist.to/",
-      "licenseId": "CC BY-NC-SA 3.0",
+      "licenseId": 6,
       "name": "Liste FR",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/liste_fr.tpl"
@@ -8263,7 +8263,7 @@
       "forumUrl": "https://forums.lanik.us/viewforum.php?f=90",
       "emailAddress": "easylist.germany@gmail.com",
       "homeUrl": "https://easylist.to/",
-      "licenseId": "GPL 3.0",
+      "licenseId": 4,
       "name": "EasyList Germany (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/easylistgermany.tpl"
@@ -8281,9 +8281,26 @@
       "id": 798,
       "forumUrl": "https://forums.lanik.us/viewforum.php?f=91",
       "homeUrl": "https://easylist.to/",
-      "licenseId": "CC BY-NC-SA 3.0",
+      "licenseId": 6,
       "name": "Liste FR + EasyList (TPL)",
       "syntaxId": 10,
       "viewUrl": "https://easylist-msie.adblockplus.org/liste_fr+easylist.tpl"
+    },
+    {
+      "id": 799,
+      "homeUrl": "https://easylist.to/",
+      "licenseId": 4,
+      "name": "EasyList Italy (TPL)",
+      "syntaxId": 10,
+      "viewUrl": "https://easylist-msie.adblockplus.org/easylistitaly.tpl"
+    },
+    {
+      "id": 800,
+      "forumUrl": "https://forums.lanik.us/viewforum.php?f=103",
+      "homeUrl": "https://easylist.to/",
+      "licenseId": 4,
+      "name": "EasyList Spanish + EasyList (TPL)",
+      "syntaxId": 10,
+      "viewUrl": "https://easylist-msie.adblockplus.org/easylistspanish+easylist.tpl"
     }
   ]
