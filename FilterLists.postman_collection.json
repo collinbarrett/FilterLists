@@ -326,6 +326,45 @@
 			"name": "maintainers",
 			"item": [
 				{
+					"name": "maintainers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{baseUrl}}/{{version}}/maintainers",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{{version}}",
+								"maintainers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "maintainers/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{baseUrl}}/{{version}}/maintainers/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{{version}}",
+								"maintainers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "maintainers/seed",
 					"request": {
 						"method": "GET",
