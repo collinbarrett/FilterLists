@@ -2,6 +2,7 @@
 using FilterLists.Data;
 using FilterLists.Services.FilterList;
 using FilterLists.Services.Language;
+using FilterLists.Services.License;
 using FilterLists.Services.Seed;
 using FilterLists.Services.Snapshot;
 using FilterLists.Services.Software;
@@ -24,6 +25,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
                             m => m.MigrationsAssembly("FilterLists.Api")));
             services.TryAddScoped<FilterListService>();
             services.TryAddScoped<LanguageService>();
+            services.TryAddScoped<LicenseService>();
             services.TryAddScoped<SeedService>();
             services.TryAddScoped<SoftwareService>();
             services.TryAddScoped<TagService>();

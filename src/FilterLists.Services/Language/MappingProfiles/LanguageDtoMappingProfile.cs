@@ -2,7 +2,7 @@
 using FilterLists.Services.Language.Models;
 using JetBrains.Annotations;
 
-namespace FilterLists.Services.FilterList.MappingProfiles
+namespace FilterLists.Services.Language.MappingProfiles
 {
     [UsedImplicitly]
     public class LanguageDtoMappingProfile : Profile
