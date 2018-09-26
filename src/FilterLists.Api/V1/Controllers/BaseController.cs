@@ -11,13 +11,13 @@ namespace FilterLists.Api.V1.Controllers
     //TODO: use versioning without needing to manually specify in swagger-ui (https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/370)
     [Route("v{version:apiVersion}/[controller]")]
     [ResponseCache(Duration = 14400)]
-    public class BaseController : Controller
+    public abstract class BaseController : Controller
     {
         private static readonly TimeSpan MemoryCacheExpirationDefault = TimeSpan.FromHours(4);
         protected readonly SeedService SeedService;
         private readonly IMemoryCache memoryCache;
 
-        public BaseController()
+        protected BaseController()
         {
         }
 
@@ -29,6 +29,7 @@ namespace FilterLists.Api.V1.Controllers
             SeedService = seedService;
         }
 
+        //https://stackoverflow.com/a/52506210/2343739
         protected async Task<IActionResult> Get<T>(Func<Task<T>> createAction, int? actionParam = null,
             [CallerMemberName] string actionName = null)
         {

@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using FilterLists.Api.V1.Interfaces;
 using FilterLists.Data.Entities;
 using FilterLists.Services.FilterList;
 using FilterLists.Services.Seed;
@@ -8,7 +9,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Api.V1.Controllers
 {
-    public class ListsController : BaseController
+    public class ListsController : BaseController, IGet, ISeed
     {
         private readonly FilterListService filterListService;
 
@@ -16,7 +17,7 @@ namespace FilterLists.Api.V1.Controllers
             base(memoryCache, seedService) => this.filterListService = filterListService;
 
         [HttpGet]
-        public async Task<IActionResult> Index() =>
+        public async Task<IActionResult> GetAll() =>
             await Get(() => filterListService.GetAllAsync());
 
         [HttpGet]

@@ -13,7 +13,7 @@ namespace FilterLists.Api.V1.Controllers
             this.ruleService = ruleService;
 
         [HttpGet]
-        public async Task<IActionResult> Index() =>
+        public async Task<IActionResult> GetCount() =>
             await Get(() => ruleService.GetCountAll());
     }
 }

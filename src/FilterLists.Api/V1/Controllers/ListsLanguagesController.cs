@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using FilterLists.Api.V1.Interfaces;
 using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Seed;
 using FilterLists.Services.Seed.Models.Junctions;
@@ -7,7 +8,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Api.V1.Controllers
 {
-    public class ListsLanguagesController : BaseController
+    public class ListsLanguagesController : BaseController, ISeed
     {
         public ListsLanguagesController(IMemoryCache memoryCache, SeedService seedService)
             : base(memoryCache, seedService)
