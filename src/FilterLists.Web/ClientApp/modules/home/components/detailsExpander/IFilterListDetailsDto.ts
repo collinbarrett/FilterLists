@@ -22,6 +22,7 @@
     viewUrl: string;
     viewUrlMirror1: string;
     viewUrlMirror2: string;
+    downloadUrl: string;
 }
 
 export interface IListLicenseDto {
