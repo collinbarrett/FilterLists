@@ -1,16 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
-using FilterLists.Services.FilterList.Models;
 using JetBrains.Annotations;
 
-namespace FilterLists.Services.FilterList.MappingProfiles
+namespace FilterLists.Services.List.MappingProfiles
 {
     [UsedImplicitly]
     public class ListMappingProfile : Profile
     {
         public ListMappingProfile() =>
-            CreateMap<Data.Entities.FilterList, List>()
+            CreateMap<Data.Entities.FilterList, Models.List>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
                         (int)src.Id))

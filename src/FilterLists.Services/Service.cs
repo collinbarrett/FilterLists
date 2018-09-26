@@ -5,14 +5,14 @@ using JetBrains.Annotations;
 namespace FilterLists.Services
 {
     [UsedImplicitly]
-    public class Service
+    public abstract class Service
     {
         protected readonly FilterListsDbContext DbContext;
         protected readonly IConfigurationProvider MapConfig;
 
-        public Service(FilterListsDbContext dbContext) => DbContext = dbContext;
+        protected Service(FilterListsDbContext dbContext) => DbContext = dbContext;
 
-        public Service(FilterListsDbContext dbContext, IConfigurationProvider mapConfig)
+        protected Service(FilterListsDbContext dbContext, IConfigurationProvider mapConfig)
         {
             DbContext = dbContext;
             MapConfig = mapConfig;

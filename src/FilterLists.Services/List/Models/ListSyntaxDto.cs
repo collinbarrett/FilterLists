@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using JetBrains.Annotations;
 
-namespace FilterLists.Services.FilterList.Models
+namespace FilterLists.Services.List.Models
 {
     [UsedImplicitly]
     public class ListSyntaxDto

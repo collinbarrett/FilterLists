@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace FilterLists.Services.FilterList
+namespace FilterLists.Services.List
 {
     public static class TagColors
     {
