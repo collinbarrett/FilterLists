@@ -33,7 +33,8 @@ const Filter = (props: any, languages: ILanguage[]) =>
             value={props.filter ? props.filter.value : "any"}>
         <option value="any">Any</option>
         {languages.length > 0
-             ? languages.map((l: ILanguage, i: number) => <option value={l.id} key={i}>{l.name}</option>)
+             ? languages.sort((a, b) => a.name.localeCompare(b.name))
+             .map((l: ILanguage, i: number) => <option value={l.id} key={i}>{l.name}</option>)
              : null}
     </select>;
 

@@ -34,7 +34,7 @@ const Filter = (props: any, software: ISoftware[]) =>
         value={props.filter ? props.filter.value : "any"}>
         <option value="any">Any</option>
         {software.length > 0
-             ? software.map(
+             ? software.sort((a, b) => a.name.localeCompare(b.name)).map(
                  (s: ISoftware, i: number) => <option value={s.id} key={i}>{s.name}</option>)
              : null}
     </select>;
@@ -42,5 +42,5 @@ const Filter = (props: any, software: ISoftware[]) =>
 const Cell = (listSyntaxId: number, software: ISoftware[]) =>
     listSyntaxId
     ? software.filter((s: ISoftware) => s.syntaxIds.indexOf(listSyntaxId) > -1)
-              .map((s: ISoftware, i: number) => <SoftwareIcon id={s.id} key={i}/>)
+    .map((s: ISoftware, i: number) => <SoftwareIcon id={s.id} key={i}/>)
     : null;
