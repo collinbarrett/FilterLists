@@ -25,6 +25,6 @@ namespace FilterLists.Services.Maintainer
         public async Task<MaintainerDto> GetByIdAsync(int id) =>
             await DbContext.Maintainers
                            .ProjectTo<MaintainerDto>(MapConfig)
-                           .FirstOrDefaultAsync(l => l.Id == id);
+                           .FirstOrDefaultAsync(m => m.Id == id);
     }
 }

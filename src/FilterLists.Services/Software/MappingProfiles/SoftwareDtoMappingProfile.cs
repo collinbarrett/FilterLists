@@ -3,7 +3,7 @@ using AutoMapper;
 using FilterLists.Services.Software.Models;
 using JetBrains.Annotations;
 
-namespace FilterLists.Services.FilterList.MappingProfiles
+namespace FilterLists.Services.Software.MappingProfiles
 {
     [UsedImplicitly]
     public class SoftwareDtoMappingProfile : Profile
@@ -15,6 +15,7 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                         (int)src.Id))
                 .ForMember(dest => dest.SyntaxIds,
                     opt => opt.MapFrom(src =>
-                        src.SoftwareSyntaxes.Select(ss => (int)ss.SyntaxId)));
+                        src.SoftwareSyntaxes
+                           .Select(ss => (int)ss.SyntaxId)));
     }
 }

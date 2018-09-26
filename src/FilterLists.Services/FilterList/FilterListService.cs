@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -18,14 +17,13 @@ namespace FilterLists.Services.FilterList
 
         public async Task<IEnumerable<List>> GetAllAsync() =>
             await DbContext.FilterLists
-                           .OrderBy(l => l.Name)
                            .ProjectTo<List>(MapConfig)
                            .ToListAsync();
 
         public async Task<ListDetails> GetDetailsAsync(int id) =>
             await DbContext.FilterLists
                            .ProjectTo<ListDetails>(MapConfig)
-                           .FirstOrDefaultAsync(x => x.Id == id)
+                           .FirstOrDefaultAsync(l => l.Id == id)
                            .FilterParentListFromMaintainerAdditionalLists();
     }
 }

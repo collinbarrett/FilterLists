@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Linq;
+using AutoMapper;
 using FilterLists.Services.Tag.Models;
 using JetBrains.Annotations;
 
@@ -11,6 +12,10 @@ namespace FilterLists.Services.Tag.MappingProfiles
             CreateMap<Data.Entities.Tag, TagDto>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
-                        (int)src.Id));
+                        (int)src.Id))
+                .ForMember(dest => dest.FilterListIds,
+                    opt => opt.MapFrom(src =>
+                        src.FilterListTags
+                           .Select(ft => (int)ft.FilterListId)));
     }
 }

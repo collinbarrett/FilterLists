@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Linq;
+using AutoMapper;
 using FilterLists.Services.License.Models;
 using JetBrains.Annotations;
 
@@ -11,6 +12,10 @@ namespace FilterLists.Services.License.MappingProfiles
             CreateMap<Data.Entities.License, LicenseDto>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
-                        (int)src.Id));
+                        (int)src.Id))
+                .ForMember(dest => dest.FilterListIds,
+                    opt => opt.MapFrom(src =>
+                        src.FilterLists
+                           .Select(l => (int)l.Id)));
     }
 }

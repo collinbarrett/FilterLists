@@ -22,8 +22,7 @@ namespace FilterLists.Services.Language
             DbContext.Languages.Where(l => l.FilterListLanguages.Any());
 
         public async Task<IEnumerable<LanguageDto>> GetAllTargetedAsync() =>
-            await TargetedLanguages.OrderBy(s => s.Name)
-                                   .ProjectTo<LanguageDto>(MapConfig)
+            await TargetedLanguages.ProjectTo<LanguageDto>(MapConfig)
                                    .ToListAsync();
 
         public async Task<LanguageDto> GetTargetedByIdAsync(int id) =>

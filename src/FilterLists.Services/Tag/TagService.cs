@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -20,7 +19,6 @@ namespace FilterLists.Services.Tag
 
         public async Task<IEnumerable<TagDto>> GetAll() =>
             await DbContext.Tags
-                           .OrderBy(s => s.Name)
                            .ProjectTo<TagDto>(MapConfig)
                            .ToListAsync();
 
