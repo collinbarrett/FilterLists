@@ -878,5 +878,29 @@
   {
     "filterListId": 747,
     "languageId": 10
+  },
+  {
+    "filterListId": 756,
+    "languageId": 27
+  },
+  {
+    "filterListId": 759,
+    "languageId": 183
+  },
+  {
+    "filterListId": 766,
+    "languageId": 99
+  },
+  {
+    "filterListId": 768,
+    "languageId": 99
+  },
+  {
+    "filterListId": 770,
+    "languageId": 13
+  },
+  {
+    "filterListId": 771,
+    "languageId": 99
   }
 ]
