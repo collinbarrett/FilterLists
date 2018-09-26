@@ -7,19 +7,24 @@ using JetBrains.Annotations;
 namespace FilterLists.Services.FilterList.MappingProfiles
 {
     [UsedImplicitly]
-    public class ListMappingProfile : Profile
+    public class FilterListDtoMappingProfile : Profile
     {
-        public ListMappingProfile() =>
-            CreateMap<Data.Entities.FilterList, List>()
+        public FilterListDtoMappingProfile() =>
+            CreateMap<Data.Entities.FilterList, FilterListDto>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
                         (int)src.Id))
                 .ForMember(dest => dest.LanguageIds,
                     opt => opt.MapFrom(src =>
-                        src.FilterListLanguages.Select(ll => (int)ll.LanguageId)))
+                        src.FilterListLanguages
+                           .Select(ll => (int)ll.LanguageId)))
+                .ForMember(dest => dest.LicenseId,
+                    opt => opt.MapFrom(src =>
+                        (int)src.LicenseId))
                 .ForMember(dest => dest.MaintainerIds,
                     opt => opt.MapFrom(src =>
-                        src.FilterListMaintainers.Select(ll => (int)ll.MaintainerId)))
+                        src.FilterListMaintainers
+                           .Select(ll => (int)ll.MaintainerId)))
                 .ForMember(dest => dest.RuleCount,
                     opt => opt.MapFrom(src =>
                         src.Snapshots
@@ -31,7 +36,8 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                         (int)src.SyntaxId))
                 .ForMember(dest => dest.TagIds,
                     opt => opt.MapFrom(src =>
-                        src.FilterListTags.Select(lt => (int)lt.TagId)))
+                        src.FilterListTags
+                           .Select(lt => (int)lt.TagId)))
                 .ForMember(dest => dest.UpdatedDate,
                     opt => opt.MapFrom(src =>
                         src.Snapshots
