@@ -123,6 +123,45 @@
 			"name": "licenses",
 			"item": [
 				{
+					"name": "licenses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{baseUrl}}/{{version}}/licenses",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{{version}}",
+								"licenses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "licenses/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{baseUrl}}/{{version}}/licenses/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{{version}}",
+								"licenses",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "licenses/seed",
 					"request": {
 						"method": "GET",
