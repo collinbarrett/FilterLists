@@ -19,15 +19,15 @@ namespace FilterLists.Services.Seed
         }
 
         public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>() where TEntity : class =>
-            await DbContext.Set<TEntity>().ProjectTo<TSeedDto>(MapConfig).ToArrayAsync();
+            await DbContext.Set<TEntity>().ProjectTo<TSeedDto>(MapConfig).ToListAsync();
 
         public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>(PropertyInfo primarySort,
             PropertyInfo secondarySort)
             where TEntity : class =>
             await DbContext.Set<TEntity>()
-                           .OrderBy(x => primarySort.GetValue(x, null))
-                           .ThenBy(x => secondarySort.GetValue(x, null))
+                           .OrderBy(s => primarySort.GetValue(s, null))
+                           .ThenBy(s => secondarySort.GetValue(s, null))
                            .ProjectTo<TSeedDto>(MapConfig)
-                           .ToArrayAsync();
+                           .ToListAsync();
     }
 }

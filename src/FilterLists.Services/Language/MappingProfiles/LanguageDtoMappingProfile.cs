@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Linq;
+using AutoMapper;
 using FilterLists.Services.Language.Models;
 using JetBrains.Annotations;
 
@@ -11,6 +12,10 @@ namespace FilterLists.Services.Language.MappingProfiles
             CreateMap<Data.Entities.Language, LanguageDto>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
-                        (int)src.Id));
+                        (int)src.Id))
+                .ForMember(dest => dest.FilterListIds,
+                    opt => opt.MapFrom(src =>
+                        src.FilterListLanguages
+                           .Select(fl => (int)fl.FilterListId)));
     }
 }

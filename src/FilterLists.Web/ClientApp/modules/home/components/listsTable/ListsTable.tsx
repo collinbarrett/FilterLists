@@ -30,6 +30,7 @@ export const ListsTable = (props: IProps) =>
               UpdatedDate(props.columnVisibility),
               DetailsButton
           ]}
+          defaultSorted={[{ id: "name" }]}
           SubComponent={(r: any) => <DetailsExpander listId={r.original.id}/>}
           className="-striped -highlight"/>
     : <div className="loader">Loading...</div>;

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -20,7 +19,6 @@ namespace FilterLists.Services.License
 
         public async Task<IEnumerable<LicenseDto>> GetAllAsync() =>
             await DbContext.Licenses
-                           .OrderBy(s => s.Name)
                            .ProjectTo<LicenseDto>(MapConfig)
                            .ToListAsync();
 
