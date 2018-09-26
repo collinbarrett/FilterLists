@@ -5,6 +5,7 @@ interface IProps {
     name: string;
     url: string;
     text?: string;
+    syntax: number;
 }
 
 export const SubscribeButton = (props: IProps) => {
@@ -18,17 +19,46 @@ export const SubscribeButton = (props: IProps) => {
         buttonClass = undefined;
         titlePrefix = "";
     }
+   
 
+    if (props.syntax = 10 ) {
+    const hrefTitle = `&amp;title=${encodeURIComponent(props.name)}`;
+    const href = `javascript:window.external.msAddTrackingProtectionList('${encodeURIComponent(props.url)}','${hrefTitle}')`;
+    const title =
+        `${titlePrefix}Subscribe to ${props.name
+            } with Internet Explorer's Tracking Protection List feature.`;
+                return props.url
+               ? <LinkButton href={href}
+                             title={title}
+                             buttonClass={buttonClass}
+                             text={props.text || "Subscribe"}/>
+               : null;
+    
+    } if (props.syntax = 18 ) {
+    const hrefTitle = `&amp;title=${encodeURIComponent(props.name)}`;
+    const href = `x-littlesnitch:subscribe-rules?url=${encodeURIComponent(props.url)}`;
+    const title =
+        `${titlePrefix}Subscribe to ${props.name
+            } with Little Snitch's list subscription feature.`;
+                return props.url
+               ? <LinkButton href={href}
+                             title={title}
+                             buttonClass={buttonClass}
+                             text={props.text || "Subscribe"}/>
+               : null;
+    
+    } else {
     const hrefTitle = `&amp;title=${encodeURIComponent(props.name)}`;
     const href = `abp:subscribe?location=${encodeURIComponent(props.url)}${hrefTitle}`;
     const title =
         `${titlePrefix}Subscribe to ${props.name
             } with a browser extension supporting the \"abp:\" protocol (e.g. uBlock Origin, Adblock Plus).`;
-
-    return props.url
+            return props.url
                ? <LinkButton href={href}
                              title={title}
                              buttonClass={buttonClass}
                              text={props.text || "Subscribe"}/>
                : null;
 };
+       
+}
