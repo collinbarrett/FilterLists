@@ -10,10 +10,10 @@ namespace FilterLists.Api.V1.Controllers
     [ApiVersion("1.0")]
     //TODO: use versioning without needing to manually specify in swagger-ui (https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/370)
     [Route("v{version:apiVersion}/[controller]")]
-    [ResponseCache(Duration = 14400)]
+    [ResponseCache(Duration = 3600)]
     public abstract class BaseController : Controller
     {
-        private static readonly TimeSpan MemoryCacheExpirationDefault = TimeSpan.FromHours(4);
+        private static readonly TimeSpan MemoryCacheExpirationDefault = TimeSpan.FromHours(1);
         protected readonly SeedService SeedService;
         private readonly IMemoryCache memoryCache;
 
