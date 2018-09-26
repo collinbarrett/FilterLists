@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using FilterLists.Api.V1.Interfaces;
 using FilterLists.Data.Entities;
 using FilterLists.Services.Language;
 using FilterLists.Services.Seed;
@@ -8,7 +9,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Api.V1.Controllers
 {
-    public class LanguagesController : BaseController
+    public class LanguagesController : BaseController, IGet, ISeed
     {
         private readonly LanguageService languageService;
 
@@ -16,7 +17,7 @@ namespace FilterLists.Api.V1.Controllers
             base(memoryCache, seedService) => this.languageService = languageService;
 
         [HttpGet]
-        public async Task<IActionResult> Index() =>
+        public async Task<IActionResult> GetAll() =>
             await Get(() => languageService.GetAllTargetedAsync());
 
         [HttpGet]

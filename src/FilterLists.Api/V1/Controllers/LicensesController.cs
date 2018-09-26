@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using FilterLists.Api.V1.Interfaces;
 using FilterLists.Data.Entities;
 using FilterLists.Services.Seed;
 using FilterLists.Services.Seed.Models;
@@ -7,7 +8,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Api.V1.Controllers
 {
-    public class LicensesController : BaseController
+    public class LicensesController : BaseController, ISeed
     {
         public LicensesController(IMemoryCache memoryCache, SeedService seedService) : base(memoryCache, seedService)
         {

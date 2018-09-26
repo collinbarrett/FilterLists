@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using FilterLists.Api.V1.Interfaces;
 using FilterLists.Data.Entities;
 using FilterLists.Services.Seed;
 using FilterLists.Services.Seed.Models;
@@ -8,7 +9,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Api.V1.Controllers
 {
-    public class SoftwareController : BaseController
+    public class SoftwareController : BaseController, ISeed, IGet
     {
         private readonly SoftwareService softwareService;
 
@@ -16,8 +17,14 @@ namespace FilterLists.Api.V1.Controllers
             base(memoryCache, seedService) => this.softwareService = softwareService;
 
         [HttpGet]
-        public async Task<IActionResult> Index() =>
+        public async Task<IActionResult> GetAll() =>
             await Get(() => softwareService.GetAll());
+
+        // TODO
+        [HttpGet]
+        [Route("{id}")]
+        public async Task<IActionResult> GetById(int id) =>
+            await Task.FromResult((IActionResult)BadRequest());
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
