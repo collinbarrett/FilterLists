@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using AutoMapper;
-using FilterLists.Data.Entities;
 using FilterLists.Services.FilterList.Models;
 using JetBrains.Annotations;
 
@@ -10,7 +9,7 @@ namespace FilterLists.Services.FilterList.MappingProfiles
     public class ListMaintainerDtoMappingProfile : Profile
     {
         public ListMaintainerDtoMappingProfile() =>
-            CreateMap<Maintainer, ListMaintainerDto>()
+            CreateMap<Data.Entities.Maintainer, ListMaintainerDto>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
                         (int)src.Id))
