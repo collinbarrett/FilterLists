@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using FilterLists.Services.List.Models;
+using FilterLists.Services.FilterList.Models;
 using JetBrains.Annotations;
 
-namespace FilterLists.Services.List.MappingProfiles
+namespace FilterLists.Services.FilterList.MappingProfiles
 {
     [UsedImplicitly]
     public class SyntaxSupportedSoftwareDtoMappingProfile : Profile
