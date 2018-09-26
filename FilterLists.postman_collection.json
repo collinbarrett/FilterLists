@@ -351,14 +351,14 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "{{baseUrl}}/{{version}}/maintainers/1",
+							"raw": "{{baseUrl}}/{{version}}/maintainers/2",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"{{version}}",
 								"maintainers",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -527,6 +527,45 @@
 		{
 			"name": "syntaxes",
 			"item": [
+				{
+					"name": "syntaxes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{baseUrl}}/{{version}}/syntaxes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{{version}}",
+								"syntaxes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "syntaxes/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{baseUrl}}/{{version}}/syntaxes/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{{version}}",
+								"syntaxes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
 				{
 					"name": "syntaxes/seed",
 					"request": {
