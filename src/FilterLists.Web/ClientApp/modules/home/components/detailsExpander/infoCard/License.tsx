@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IListLicenseDto } from "../IFilterListDetailsDto";
+import { IListLicense as IListLicenseDto } from "../IListDetails";
 
 export const License = (props: IListLicenseDto) => {
     return props.name

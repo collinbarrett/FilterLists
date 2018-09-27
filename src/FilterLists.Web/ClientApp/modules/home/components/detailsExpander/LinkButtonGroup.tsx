@@ -23,15 +23,13 @@ interface IProps {
     policyUrl: string;
     submissionUrl: string;
     viewUrl: string;
-    viewUrlMirror1: string;
-    viewUrlMirror2: string;
+    viewUrlMirrors: string[];
 }
 
 export const LinkButtonGroup = (props: IProps) => {
-    const viewUrlMirrors = new Array(props.viewUrlMirror1, props.viewUrlMirror2).filter(u => u);
     return <div className="col-3 p-0 btn-group-vertical justify-content-start d-flex align-items-end">
-               <SubscribeButtonGroup name={props.name} url={props.viewUrl} urlMirrors={viewUrlMirrors}/>
-               <ViewButtonGroup name={props.name} url={props.viewUrl} urlMirrors={viewUrlMirrors}/>
+               <SubscribeButtonGroup name={props.name} url={props.viewUrl} urlMirrors={props.viewUrlMirrors}/>
+               <ViewButtonGroup name={props.name} url={props.viewUrl} urlMirrors={props.viewUrlMirrors}/>
                <HomeButton name={props.name} url={props.homeUrl}/>
                <PolicyButton name={props.name} url={props.policyUrl}/>
                <DonateButton name={props.name} url={props.donateUrl}/>

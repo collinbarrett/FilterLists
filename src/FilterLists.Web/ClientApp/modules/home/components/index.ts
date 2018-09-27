@@ -1,9 +1,9 @@
 ﻿import { DetailsExpander } from "./detailsExpander";
 import { ListsTable } from "./listsTable";
-import { Tagline } from "./Tagline";
+import { Oneliner } from "./Oneliner";
 
 export {
     DetailsExpander,
     ListsTable,
-    Tagline
+    Oneliner
     };

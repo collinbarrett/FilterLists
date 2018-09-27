@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IListSyntaxDto } from "../IFilterListDetailsDto";
+import { IListSyntax as IListSyntaxDto } from "../IListDetails";
 
 export const Syntax = (props: IListSyntaxDto) => {
     return props.name

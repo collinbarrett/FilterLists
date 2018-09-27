@@ -2,16 +2,35 @@ import * as React from "react";
 import { ITag } from "../interfaces";
 import { getContrast } from "../../../utils";
 
-export const Tag = (props: ITag) => {
-    const hexColor = kelly_colors_hex[props.id % kelly_colors_hex.length];
-    return <span className="badge"
-                 style={{
-                     backgroundColor: `#${hexColor}`,
-                     color: getContrast(hexColor)
-                 }}
-                 title={props.description}>
-               {props.name}
-           </span>;
+interface IProps {
+    tags: ITag[];
+};
+
+export const TagGroup = (props: IProps) =>
+    props.tags && props.tags.length > 0
+    ? <div className="fl-tag-container">
+          {props.tags.map((t: ITag, i: number) => <Tag tag={t} key={i}/>)}
+      </div>
+    : null;
+
+interface ITagProps {
+    tag: ITag;
+};
+
+const Tag = (props: ITagProps) => {
+    if (props.tag) {
+        const hexColor = kelly_colors_hex[props.tag.id % kelly_colors_hex.length];
+        return <span className="badge"
+                     style={{
+                         backgroundColor: `#${hexColor}`,
+                         color: getContrast(hexColor)
+                     }}
+                     title={props.tag.description}>
+                   {props.tag.name}
+               </span>;
+    } else {
+        return null;
+    }
 };
 
 //https://stackoverflow.com/a/4382138/2343739

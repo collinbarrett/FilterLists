@@ -1,10 +1,10 @@
 import * as React from "react";
-import { IFilterListDetailsDto } from "./IFilterListDetailsDto";
+import { IListDetails } from "./IListDetails";
 import { InfoCard } from "./infoCard";
 import { LinkButtonGroup } from "./LinkButtonGroup";
 import { MaintainersInfoCard } from "./maintainersInfoCard";
 
-export const DetailsExpander = (props: IFilterListDetailsDto) => {
+export const DetailsExpander = (props: IListDetails) => {
     return <div className="card border-primary">
                <div className="card-body p-2">
                    <div className="container m-0">

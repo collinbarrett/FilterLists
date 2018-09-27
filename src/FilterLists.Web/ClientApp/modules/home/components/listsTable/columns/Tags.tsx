@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Column, Filter } from "react-table";
-import { Tag } from "../../Tag"
+import { TagGroup } from "../../TagGroup"
 import { IColumnVisibility, ITag } from "../../../interfaces";
 
 export const Tags = (columnVisibility: IColumnVisibility[], tags: ITag[]) => {
@@ -41,9 +41,6 @@ const sortMethod = (a: number[], b: number[]): any =>
 const Cell = (tagIds: number[], tags: ITag[]) =>
     tagIds
     ? <div className="fl-tag-container">
-          {tagIds.map((tid: number, i: number) => {
-              const tag = tags.filter((t: ITag) => t.id === tid)[0];
-              return <Tag {...tag} key={i}/>;
-          })}
+          <TagGroup tags={tags.filter((t: ITag) => tagIds.indexOf(t.id) > -1)}/>
       </div>
     : null;

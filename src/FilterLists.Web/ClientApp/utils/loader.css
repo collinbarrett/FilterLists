@@ -3,11 +3,11 @@
 .loader,
 .loader:before,
 .loader:after {
-	-webkit-animation: load1 1s infinite ease-in-out;
-	animation: load1 1s infinite ease-in-out;
-	background: #000000;
-	height: 4em;
-	width: 1em;
+    -webkit-animation: load1 1s infinite ease-in-out;
+    animation: load1 1s infinite ease-in-out;
+    background: #000000;
+    height: 4em;
+    width: 1em;
 }
 
 .loader {
