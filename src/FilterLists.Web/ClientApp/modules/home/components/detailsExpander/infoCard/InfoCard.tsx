@@ -32,9 +32,10 @@ export const InfoCard = (props: IProps) =>
         <div className="d-md-none">
             {props.syntax
                  ? props.syntax.supportedSoftware.map(
-                     (s: ISyntaxSupportedSoftware, i: number) => <a href={s.homeUrl} key={i}>
-                                                                     <SoftwareIcon id={s.id} key={i}/>
-                                                                 </a>)
+                     (s: ISyntaxSupportedSoftware, i: number) =>
+                     <a href={s.homeUrl} key={i}>
+                         <SoftwareIcon id={s.id} key={i}/>
+                     </a>)
                  : null}
         </div>
         <Description {...props} url={props.descriptionSourceUrl}/>
