@@ -1921,7 +1921,9 @@
     "licenseId": 5,
     "name": "Ayucat Powerful List",
     "syntaxId": 3,
-    "viewUrl": "http://git.sourceforge.jp/view?p=ayucat-list/ayucat-list.git;a=blob_plain;f=ayucat-list.txt;hb=b254c74c132832a3ade7b9d42c2ef8d3dd59fdb9"
+    "viewUrl": "http://git.sourceforge.jp/view?p=ayucat-list/ayucat-list.git;a=blob_plain;f=ayucat-list.txt;hb=b254c74c132832a3ade7b9d42c2ef8d3dd59fdb9",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Ayucat%20Powerful%20List.txt",
+    "viewUrlMirror2": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Ayucat%20Powerful%20List.txt"
   },
   {
     "id": 182,
@@ -2528,7 +2530,9 @@
     "licenseId": 5,
     "name": "Facebook Privacy List",
     "syntaxId": 3,
-    "viewUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt"
+    "viewUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Facebook%20Privacy%20List.txt",
+    "viewUrlMirror2": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Facebook%20Privacy%20List.txt"
   },
   {
     "id": 235,
@@ -3016,7 +3020,9 @@
     "licenseId": 5,
     "name": "Czech Filters for AdBlock",
     "syntaxId": 3,
-    "viewUrl": "http://adblock.dajbych.net/adblock.txt"
+    "viewUrl": "http://adblock.dajbych.net/adblock.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Czech%20Filters%20for%20Adblock%20Plus",
+    "viewUrlMirror2": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Czech%20Filters%20for%20Adblock%20Plus"
   },
   {
     "id": 278,
@@ -8302,5 +8308,98 @@
     "name": "EasyList Spanish + EasyList (TPL)",
     "syntaxId": 10,
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistspanish+easylist.tpl"
-  }
+  },
+  {
+      "id": 801,
+      "description": "This is a Macedonian list",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/ABP%20Macedonian%20List.txt",
+      "discontinuedDate": "2011-05-11T00:00:00",
+      "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/AncientLibrary",
+      "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+      "name": "ABP Macedonian List",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/ABP%20Macedonian%20List.txt"
+    },
+    {
+      "id": 802,
+      "description": "Algerian filters for Adblock Plus",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Liste%20DZ.txt",
+      "discontinuedDate": "2011-05-25T00:00:00",
+      "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/AncientLibrary",
+      "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+      "licenseId": 6,
+      "name": "Liste DZ",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Liste%20DZ.txt",
+      "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Liste%20DZ.txt"
+    },
+    {
+      "id": 803,
+      "description": "General icelandic ad and blocking subscription",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Snaevar87's%20Icelandic%20filter.txt",
+      "discontinuedDate": "2014-03-11T00:00:00",
+      "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/AncientLibrary",
+      "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+      "name": "Snaevar87's Icelandic filter",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Snaevar87's%20Icelandic%20filter.txt",
+      "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Snaevar87%27s%20Icelandic%20filter.txt"
+    },
+    {
+      "id": 804,
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/TamilFriends%20List.txt",
+      "discontinuedDate": "2010-07-30T00:00:00",
+      "emailAddress": "tamilfriendslist@gmail.com",
+      "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/AncientLibrary",
+      "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+      "licenseId": 16,
+      "name": "TamilFriends List",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/TamilFriends%20List.txt",
+      "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/TamilFriends%20List.txt"
+    },
+    {
+      "id": 805,
+      "description": "A combined version of the filterlist RU AdList against advertising, and an experimental list of cosmetic CSS style fixes. At the moment it only works normally in uBlock Origin.",
+      "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/advblock+cssfixes.txt",
+      "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
+      "homeUrl": "https://forums.lanik.us/viewforum.php?f=102",
+      "name": "RU AdList + CSS Fixes",
+      "syntaxId": 4,
+      "viewUrl": "https://easylist-downloads.adblockplus.org/advblock+cssfixes.txt"
+    },
+    {
+      "id": 806,
+      "emailAddress": "easylist.portuguese@gmail.com",
+      "homeUrl": "https://easylist.to/",
+      "licenseId": 4,
+      "name": "EasyList Portuguese",
+      "syntaxId": 3,
+      "viewUrl": "https://easylist-downloads.adblockplus.org/easylistportuguese.txt"
+    },
+    {
+      "id": 807,
+      "description": "This is a cosmetic filter for the uBlock Origin extension (with adblock support) to automatically filter all the pro-5-Star comments and the \"anti-information\" pages they share with sensationalistic headlines.",
+      "descriptionSourceUrl": "https://github.com/luigimannoni/m5s-ublock-filter#cosa-%C3%A9",
+      "homeUrl": "https://github.com/luigimannoni/m5s-ublock-filter",
+      "issuesUrl": "https://github.com/luigimannoni/m5s-ublock-filter/issues",
+      "name": "M5S uBlock Filter",
+      "syntaxId": 4,
+      "viewUrl": "https://raw.githubusercontent.com/luigimannoni/m5s-ublock-filter/master/filter-list.txt"
+    },
+    {
+      "id": 808,
+      "homeUrl": "https://ajnasz.hu/adblock",
+      "name": "ajnasz's list",
+      "syntaxId": 3,
+      "viewUrl": "https://ajnasz.hu/adblock/recent"
+    },
+    {
+      "id": 809,
+      "discontinuedDate": "2014-12-15T00:00:00",
+      "homeUrl": "https://www.ergensin.nl/",
+      "name": "NLblock",
+      "syntaxId": 3,
+      "viewUrl": "http://www.verzijlbergh.com/adblock/nlblock.txt"
+    }
 ]
