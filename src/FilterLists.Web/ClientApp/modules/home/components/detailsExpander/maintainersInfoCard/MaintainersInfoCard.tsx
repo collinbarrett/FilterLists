@@ -4,7 +4,7 @@ import { MaintainerInfoCard } from "./MaintainerInfoCard";
 
 interface IProps {
     maintainers: IMaintainer[];
-}
+};
 
 export const MaintainersInfoCard = (props: IProps) =>
     props.maintainers && props.maintainers.length > 0

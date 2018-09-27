@@ -1,22 +1,21 @@
 import * as React from "react";
 import { Column, Filter } from "react-table";
-import { TagGroup } from "../../TagGroup"
+import { TagGroup } from "../../TagGroup";
 import { IColumnVisibility, ITag } from "../../../interfaces";
 
-export const Tags = (columnVisibility: IColumnVisibility[], tags: ITag[]) => {
-    return {
-        Header: "Tags",
-        accessor: "tagIds",
-        filterable: true,
-        filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, tags),
-        sortMethod: (a: number[], b: number[]) => sortMethod(a, b),
-        Cell: (c: any) => Cell(c.value, tags),
-        width: 215,
-        headerClassName: "d-none d-md-block",
-        className: "d-none d-md-block",
-        show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Tags")[0].visible
-    } as Column;
-};
+export const Tags = (columnVisibility: IColumnVisibility[], tags: ITag[]) =>
+({
+    Header: "Tags",
+    accessor: "tagIds",
+    filterable: true,
+    filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, tags),
+    sortMethod: (a: number[], b: number[]) => sortMethod(a, b),
+    Cell: (c: any) => Cell(c.value, tags),
+    width: 215,
+    headerClassName: "d-none d-md-block",
+    className: "d-none d-md-block",
+    show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Tags")[0].visible
+} as Column);
 
 const filterMethod = (f: Filter, r: any[], tags: ITag[]): boolean => {
     const listTagIds = r[f.id as any];

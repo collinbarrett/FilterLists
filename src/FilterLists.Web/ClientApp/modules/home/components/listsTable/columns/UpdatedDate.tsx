@@ -3,19 +3,18 @@ import { Column } from "react-table";
 import * as moment from "moment";
 import { IColumnVisibility } from "../../../interfaces";
 
-export const UpdatedDate = (columnVisibility: IColumnVisibility[]) => {
-    return {
-        Header: "Updated",
-        accessor: "updatedDate",
-        sortMethod: (a: string, b: string) => sortMethod(a, b),
-        Cell: (c: any) => Cell(c.value),
-        style: { whiteSpace: "inherit" },
-        width: 100,
-        headerClassName: "d-none d-md-block",
-        className: "d-none d-md-block",
-        show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Updated Date")[0].visible
-    } as Column;
-};
+export const UpdatedDate = (columnVisibility: IColumnVisibility[]) =>
+({
+    Header: "Updated",
+    accessor: "updatedDate",
+    sortMethod: (a: string, b: string) => sortMethod(a, b),
+    Cell: (c: any) => Cell(c.value),
+    style: { whiteSpace: "inherit" },
+    width: 100,
+    headerClassName: "d-none d-md-block",
+    className: "d-none d-md-block",
+    show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Updated Date")[0].visible
+} as Column);
 
 const sortMethod = (a: string, b: string) =>
     a && moment(a).isValid()

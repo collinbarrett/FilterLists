@@ -4,12 +4,11 @@ import { LinkButton } from "./LinkButton";
 interface IProps {
     name: string;
     url: string;
-}
-
-export const HomeButton = (props: IProps) => {
-    return props.url
-               ? <LinkButton href={props.url}
-                             title={`View ${props.name}'s homepage.`}
-                             text="Home"/>
-               : null;
 };
+
+export const HomeButton = (props: IProps) =>
+    props.url
+    ? <LinkButton href={props.url}
+                  title={`View ${props.name}'s homepage.`}
+                  text="Home"/>
+    : null;

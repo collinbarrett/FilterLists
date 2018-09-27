@@ -22,4 +22,4 @@
     updatedDate: string;
     viewUrl: string;
     viewUrlMirrors: string[];
-}
+};

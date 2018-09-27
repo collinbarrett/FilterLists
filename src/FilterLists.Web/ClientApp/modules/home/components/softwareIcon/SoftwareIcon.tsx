@@ -22,21 +22,20 @@ import {
 
 interface IProps {
     id: number;
-}
-
-export const SoftwareIcon = (props: IProps) => {
-    return icons[props.id]
-               ? <img src={icons[props.id].image}
-                      width="20"
-                      alt={icons[props.id].imageTitle}
-                      title={icons[props.id].imageTitle}/>
-               : null;
 };
+
+export const SoftwareIcon = (props: IProps) =>
+    icons[props.id]
+    ? <img src={icons[props.id].image}
+           width="20"
+           alt={icons[props.id].imageTitle}
+           title={icons[props.id].imageTitle}/>
+    : null;
 
 interface IIcon {
     image: any;
     imageTitle: string;
-}
+};
 
 const icons: { [id: number]: IIcon; } = {
     1: { image: img1, imageTitle: "uBlock Origin" },

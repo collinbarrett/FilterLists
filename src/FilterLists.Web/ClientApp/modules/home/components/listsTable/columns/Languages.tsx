@@ -2,22 +2,21 @@ import * as React from "react";
 import { Column, Filter } from "react-table";
 import { IColumnVisibility, ILanguage } from "../../../interfaces";
 
-export const Languages = (columnVisibility: IColumnVisibility[], languages: ILanguage[]) => {
-    return {
-        Header: "Languages",
-        accessor: "languageIds",
-        filterable: true,
-        filterMethod: (f: Filter, r: any[]) => filterMethod(f, r),
-        Filter: ({ onChange, filter }: any) => Filter({ onChange, filter }, languages),
-        sortable: false,
-        Cell: (c: any) => Cell(c.value, languages),
-        style: { whiteSpace: "inherit" },
-        width: 95,
-        headerClassName: "d-none d-md-block",
-        className: "d-none d-md-block",
-        show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Languages")[0].visible
-    } as Column;
-};
+export const Languages = (columnVisibility: IColumnVisibility[], languages: ILanguage[]) =>
+({
+    Header: "Languages",
+    accessor: "languageIds",
+    filterable: true,
+    filterMethod: (f: Filter, r: any[]) => filterMethod(f, r),
+    Filter: ({ onChange, filter }: any) => Filter({ onChange, filter }, languages),
+    sortable: false,
+    Cell: (c: any) => Cell(c.value, languages),
+    style: { whiteSpace: "inherit" },
+    width: 95,
+    headerClassName: "d-none d-md-block",
+    className: "d-none d-md-block",
+    show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Languages")[0].visible
+} as Column);
 
 const filterMethod = (f: Filter, r: any[]): boolean => {
     const listLanguageIds = r[f.id as any];

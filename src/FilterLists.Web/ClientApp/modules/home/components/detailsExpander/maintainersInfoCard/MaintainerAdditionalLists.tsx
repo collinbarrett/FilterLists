@@ -3,11 +3,11 @@ import * as React from "react";
 //interface IProps {
 //    name: string;
 //    additionalLists: IMaintainerAdditionalListDto[];
-//}
+//};
 
-export const MaintainerAdditionalLists = (/*props: IProps*/) => {
-    return <div className="col-9">
-               { /*props.additionalLists && props.additionalLists.length > 0
+export const MaintainerAdditionalLists = (/*props: IProps*/) =>
+    <div className="col-9">
+        { /*props.additionalLists && props.additionalLists.length > 0
                     ? <div>
                           <h4>More by {props.name}:</h4>
                           <ul>
@@ -17,5 +17,4 @@ export const MaintainerAdditionalLists = (/*props: IProps*/) => {
 
                       </div>
                     : null*/ }
-           </div>;
-};
+    </div>;

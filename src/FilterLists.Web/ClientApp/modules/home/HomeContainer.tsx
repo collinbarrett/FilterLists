@@ -26,24 +26,24 @@ export class HomeContainer extends React.Component<{}, IState> {
     }
 
     componentDidMount() {
-        this.fetchLists();
         this.fetchLanguages();
+        this.fetchLists();
         this.fetchMaintainers();
         this.fetchSoftware();
         this.fetchTags();
         this.fetchRuleCount();
     };
 
-    fetchLists() {
-        fetch("https://filterlists.com/api/v1/lists")
-            .then(r => r.json() as Promise<IList[]>)
-            .then(p => { this.setState({ lists: p }); });
-    };
-
     fetchLanguages() {
         fetch("https://filterlists.com/api/v1/languages")
             .then(r => r.json() as Promise<ILanguage[]>)
             .then(p => { this.setState({ languages: p }); });
+    };
+
+    fetchLists() {
+        fetch("https://filterlists.com/api/v1/lists")
+            .then(r => r.json() as Promise<IList[]>)
+            .then(p => { this.setState({ lists: p }); });
     };
 
     fetchMaintainers() {

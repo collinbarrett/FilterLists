@@ -5,7 +5,7 @@ import { MaintainerLinkButtonGroup } from "./MaintainerLinkButtonGroup";
 
 interface IProps {
     maintainer: IMaintainer;
-}
+};
 
 export const MaintainerInfoCard = (props: IProps) =>
     props.maintainer.name

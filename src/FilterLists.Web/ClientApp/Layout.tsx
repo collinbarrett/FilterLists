@@ -4,7 +4,7 @@ import "./site.css";
 
 interface IProps {
     children?: React.ReactNode;
-}
+};
 
 export const Layout = (props: IProps) =>
     <div className="container">
