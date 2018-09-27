@@ -2656,7 +2656,7 @@
     "descriptionSourceUrl": "https://github.com/easylist-thailand/easylist-thailand",
     "homeUrl": "https://easylist-thailand.github.io/",
     "issuesUrl": "https://github.com/easylist-thailand/easylist-thailand/issues",
-    "licenseId": 5,
+    "licenseId": 18,
     "name": "EasyList Thailand",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/easylist-thailand/easylist-thailand/master/subscription/easylist-thailand.txt"
@@ -6463,7 +6463,7 @@
   },
   {
     "id": 601,
-    "description": "A filterlist and/or hosts file to prevent sites that know to trick and gain 'Facebook access token' from you that their site offer to boost likes, followers, comments, post shares, etc. while gain access your account to do the same for others.",
+    "description": "A filterlist to prevent sites that know to trick and gain 'Facebook access token' from you that their site offer to boost likes, followers, comments, post shares, etc. while gain access your account to do the same for others.",
     "discontinuedDate": "2018-02-03T00:00:00",
     "homeUrl": "https://github.com/kowith337/ThaiAntiTokenSites",
     "issuesUrl": "https://github.com/kowith337/ThaiAntiTokenSites/issues",
@@ -6475,7 +6475,7 @@
   },
   {
     "id": 602,
-    "description": "A filterlist and/or hosts file to prevent sites that know to trick and gain 'Facebook access token' from you that their site offer to boost likes, followers, comments, post shares, etc. while gain access your account to do the same for others.",
+    "description": "A hosts file to prevent sites that know to trick and gain 'Facebook access token' from you that their site offer to boost likes, followers, comments, post shares, etc. while gain access your account to do the same for others.",
     "discontinuedDate": "2018-02-03T00:00:00",
     "homeUrl": "https://github.com/kowith337/ThaiAntiTokenSites",
     "issuesUrl": "https://github.com/kowith337/ThaiAntiTokenSites/issues",
@@ -7692,21 +7692,24 @@
   },
   {
     "id": 734,
+	"description": "Filterlist that targeted to use on Gelbooru image board site.",
+	"descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/filterlist/imageboard/readme.md",
     "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
-    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues/labels/Site%3A%20Gelbooru",
     "licenseId": 13,
     "name": "GelboLube",
     "syntaxId": 4,
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/GelboLube.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/imageboard/GelboLube.txt"
   },
   {
     "id": 735,
+    "description": "Help blocking ads, unnecessary widgets and also prevent anti-adblock cooldown on APKMirror.",
     "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
-    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues/labels/Site%3A%20APKMirror",
     "licenseId": 13,
     "name": "Anti APKMirror Ads and Countdown",
     "syntaxId": 4,
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/AntiAPKMirrorCountdown.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/specific/AntiAPKMirrorCountdown.txt"
   },
   {
     "id": 736,
