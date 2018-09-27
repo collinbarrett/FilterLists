@@ -1,14 +1,13 @@
 import * as React from "react";
-import { IMaintainerAdditionalListDto } from "../IFilterListDetailsDto";
 
-interface IProps {
-    name: string;
-    additionalLists: IMaintainerAdditionalListDto[];
-}
+//interface IProps {
+//    name: string;
+//    additionalLists: IMaintainerAdditionalListDto[];
+//}
 
-export const MaintainerAdditionalLists = (props: IProps) => {
+export const MaintainerAdditionalLists = (/*props: IProps*/) => {
     return <div className="col-9">
-               {props.additionalLists && props.additionalLists.length > 0
+               { /*props.additionalLists && props.additionalLists.length > 0
                     ? <div>
                           <h4>More by {props.name}:</h4>
                           <ul>
@@ -17,6 +16,6 @@ export const MaintainerAdditionalLists = (props: IProps) => {
                           </ul>
 
                       </div>
-                    : null}
+                    : null*/ }
            </div>;
 };

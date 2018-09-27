@@ -23,7 +23,7 @@ namespace FilterLists.Api.V1.Controllers
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> GetById(int id) =>
-            await Get(() => filterListService.GetDetailsAsync(id), id);
+            await Get(() => filterListService.GetByIdAsync(id), id);
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>

@@ -1,6 +1,6 @@
 import * as React from "react";
-import { IColumnVisibility, ILanguage, IList, ISoftware, ITag } from "./interfaces";
-import { Tagline, ListsTable } from "./components";
+import { IColumnVisibility, ILanguage, IList, IMaintainer, ISoftware, ITag } from "./interfaces";
+import { ListsTable, Oneliner } from "./components";
 
 const columnVisibilityDefaults: IColumnVisibility[] = [
     { column: "Software", visible: true },
@@ -12,6 +12,7 @@ const columnVisibilityDefaults: IColumnVisibility[] = [
 interface IProps {
     languages: ILanguage[];
     lists: IList[];
+    maintainers: IMaintainer[];
     ruleCount: number;
     software: ISoftware[];
     tags: ITag[];
@@ -44,7 +45,7 @@ export class Home extends React.Component<IProps, IState> {
 
     render() {
         return <div>
-                   <Tagline listCount={this.props.lists.length} ruleCount={this.props.ruleCount}/>
+                   <Oneliner listCount={this.props.lists.length} ruleCount={this.props.ruleCount}/>
                    <ListsTable {...this.props} {...this.state}/>
                    {this.renderColumnVisibilityCheckboxes()}
                </div>;

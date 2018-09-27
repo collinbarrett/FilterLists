@@ -1,16 +1,14 @@
 import * as React from "react";
-import { IListMaintainerDto } from "../IFilterListDetailsDto";
+import { IMaintainer } from "../../../interfaces";
 import { MaintainerInfoCard } from "./MaintainerInfoCard";
 
 interface IProps {
-    maintainers: IListMaintainerDto[];
+    maintainers: IMaintainer[];
 }
 
-export const MaintainersInfoCard = (props: IProps) => {
-    return props.maintainers && props.maintainers.length > 0
-               ? <div className="w-100">
-                     {props.maintainers.map(
-                         (m: IListMaintainerDto, i: number) => <MaintainerInfoCard {...m} key={i}/>)}
-                 </div>
-               : null;
-};
+export const MaintainersInfoCard = (props: IProps) =>
+    props.maintainers && props.maintainers.length > 0
+    ? <div className="w-100">
+          {props.maintainers.map((m: IMaintainer, i: number) => <MaintainerInfoCard maintainer={m} key={i}/>)}
+      </div>
+    : null;

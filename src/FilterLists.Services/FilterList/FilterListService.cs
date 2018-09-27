@@ -20,10 +20,9 @@ namespace FilterLists.Services.FilterList
                            .ProjectTo<FilterListDto>(MapConfig)
                            .ToListAsync();
 
-        public async Task<ListDetails> GetDetailsAsync(int id) =>
+        public async Task<FilterListDto> GetByIdAsync(int id) =>
             await DbContext.FilterLists
-                           .ProjectTo<ListDetails>(MapConfig)
-                           .FirstOrDefaultAsync(l => l.Id == id)
-                           .FilterParentListFromMaintainerAdditionalLists();
+                           .ProjectTo<FilterListDto>(MapConfig)
+                           .FirstOrDefaultAsync(l => l.Id == id);
     }
 }
