@@ -24,21 +24,21 @@ export interface IListDetails {
     updatedDate: string;
     viewUrl: string;
     viewUrlMirrors: string[];
-}
+};
 
 export interface IListLicense {
     descriptionUrl: string;
     name: string;
-}
+};
 
 export interface IListSyntax {
     definitionUrl: string;
     name: string;
     supportedSoftware: ISyntaxSupportedSoftware[];
-}
+};
 
 export interface ISyntaxSupportedSoftware {
     homeUrl: string;
     id: number;
     name: string;
-}
+};

@@ -6,14 +6,13 @@ interface IProps {
     title?: string;
     buttonClass?: string;
     text: string;
-}
-
-export const LinkButton = (props: IProps) => {
-    return props.href
-               ? <a href={props.href}
-                    title={props.title}
-                    className={`btn ${props.buttonClass || "btn-primary"} fl-btn-link`}>
-                     {props.text}
-                 </a>
-               : null;
 };
+
+export const LinkButton = (props: IProps) =>
+    props.href
+    ? <a href={props.href}
+         title={props.title}
+         className={`btn ${props.buttonClass || "btn-primary"} fl-btn-link`}>
+          {props.text}
+      </a>
+    : null;

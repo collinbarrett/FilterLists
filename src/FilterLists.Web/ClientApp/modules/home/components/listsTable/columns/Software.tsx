@@ -3,21 +3,19 @@ import { Column, Filter } from "react-table";
 import { IColumnVisibility, ISoftware } from "../../../interfaces";
 import { SoftwareIcon } from "../../softwareIcon";
 
-export const Software = (columnVisibility: IColumnVisibility[], software: ISoftware[]) => {
-    return {
-        Header: "Software",
-        accessor: "syntaxId",
-        filterable: true,
-        filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, software),
-        Filter: ({ filter, onChange }: any) => Filter({ onChange, filter }, software),
-        sortable: false,
-        Cell: (c: any) => Cell(c.value, software),
-        width: 155,
-        headerClassName: "d-none d-md-block",
-        className: "d-none d-md-block",
-        show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Software")[0].visible
-    } as Column;
-};
+export const Software = (columnVisibility: IColumnVisibility[], software: ISoftware[]) => ({
+    Header: "Software",
+    accessor: "syntaxId",
+    filterable: true,
+    filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, software),
+    Filter: ({ filter, onChange }: any) => Filter({ onChange, filter }, software),
+    sortable: false,
+    Cell: (c: any) => Cell(c.value, software),
+    width: 155,
+    headerClassName: "d-none d-md-block",
+    className: "d-none d-md-block",
+    show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Software")[0].visible
+} as Column);
 
 const filterMethod = (f: Filter, r: any[], software: ISoftware[]): boolean => {
     const isAny = f.value === "any";

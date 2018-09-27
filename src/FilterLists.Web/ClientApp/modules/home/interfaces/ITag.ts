@@ -3,4 +3,4 @@
     description: string;
     filterListIds: number[];
     name: string;
-}
+};

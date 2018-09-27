@@ -4,4 +4,4 @@
     isAbpSubscribable: boolean;
     name: string;
     syntaxIds: number[];
-}
+};

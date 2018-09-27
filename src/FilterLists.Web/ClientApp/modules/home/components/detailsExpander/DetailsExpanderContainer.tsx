@@ -6,10 +6,10 @@ import { DetailsExpander } from "./DetailsExpander";
 
 interface IProps {
     list: IListDetails;
-}
+};
 
 interface IState {
-}
+};
 
 export class DetailsExpanderContainer extends React.Component<IProps, IState> {
     constructor(props: IProps) {
@@ -22,4 +22,4 @@ export class DetailsExpanderContainer extends React.Component<IProps, IState> {
                    ? <DetailsExpander {...this.props.list}/>
                    : <div className="loader">Loading...</div>;;
     }
-}
+};

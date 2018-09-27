@@ -5,21 +5,20 @@ interface IProps {
     name: string;
     url: string;
     urlMirrors?: string[];
-}
-
-export const ViewButtonGroup = (props: IProps) => {
-    return props.url
-               ? (props.urlMirrors && props.urlMirrors.length > 0)
-                 ? <ViewButtonGroupDropdown {...props} urlMirrors={props.urlMirrors}/>
-                 : <ViewButton {...props}/>
-               : null;
 };
+
+export const ViewButtonGroup = (props: IProps) =>
+    props.url
+    ? (props.urlMirrors && props.urlMirrors.length > 0)
+      ? <ViewButtonGroupDropdown {...props} urlMirrors={props.urlMirrors}/>
+      : <ViewButton {...props}/>
+    : null;
 
 interface IViewButtonGroupDropdownProps {
     name: string;
     url: string;
     urlMirrors: string[];
-}
+};
 
 const ViewButtonGroupDropdown = (props: IViewButtonGroupDropdownProps) => {
     let firstButtonText: string = "Original";
@@ -41,13 +40,12 @@ const ViewButtonGroupDropdown = (props: IViewButtonGroupDropdownProps) => {
            </div>;
 };
 
-const BtnGroupDropView = () => {
-    return <button id="btnGroupDropView"
-                   type="button"
-                   className="btn btn-primary dropdown-toggle"
-                   data-toggle="dropdown"
-                   aria-haspopup="true"
-                   aria-expanded="false">
-               View
-           </button>;
-};
+const BtnGroupDropView = () =>
+    <button id="btnGroupDropView"
+            type="button"
+            className="btn btn-primary dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">
+        View
+    </button>;

@@ -5,7 +5,7 @@ interface IProps {
     name: string;
     url: string;
     text?: string;
-}
+};
 
 export const SubscribeButton = (props: IProps) => {
     let buttonClass: string | undefined;

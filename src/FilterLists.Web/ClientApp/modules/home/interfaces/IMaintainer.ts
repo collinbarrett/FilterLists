@@ -5,4 +5,4 @@
     homeUrl: string;
     name: string;
     twitterHandle: string;
-}
+};

@@ -5,12 +5,11 @@ interface IProps {
     name: string;
     url: string;
     text?: string;
-}
-
-export const ViewButton = (props: IProps) => {
-    return props.url
-               ? <LinkButton href={props.url}
-                             title={`View ${props.name} in its raw format.`}
-                             text={props.text || "View"}/>
-               : null;
 };
+
+export const ViewButton = (props: IProps) =>
+    props.url
+    ? <LinkButton href={props.url}
+                  title={`View ${props.name} in its raw format.`}
+                  text={props.text || "View"}/>
+    : null;

@@ -5,21 +5,21 @@ interface IProps {
     name: string;
     url: string;
     urlMirrors?: string[];
-}
-
-export const SubscribeButtonGroup = (props: IProps) => {
-    return props.url
-               ? (props.urlMirrors && props.urlMirrors.length > 0)
-                 ? <SubscribeButtonGroupDropdown {...props} urlMirrors={props.urlMirrors}/>
-                 : <SubscribeButton {...props}/>
-               : null;
 };
+
+export const SubscribeButtonGroup = (props: IProps) =>
+    props.url
+    ? (props.urlMirrors && props.urlMirrors.length > 0)
+      ? <SubscribeButtonGroupDropdown {...props} urlMirrors={props
+          .urlMirrors}/>
+      : <SubscribeButton {...props}/>
+    : null;
 
 interface ISubscribeButtonGroupDropdownProps {
     name: string;
     url: string;
     urlMirrors: string[];
-}
+};
 
 const SubscribeButtonGroupDropdown = (props: ISubscribeButtonGroupDropdownProps) => {
     let firstButtonText: string = "Original";
@@ -41,13 +41,12 @@ const SubscribeButtonGroupDropdown = (props: ISubscribeButtonGroupDropdownProps)
            </div>;
 };
 
-const BtnGroupDropSubscribe = () => {
-    return <button id="btnGroupDropSubscribe"
-                   type="button"
-                   className="btn btn-primary dropdown-toggle"
-                   data-toggle="dropdown"
-                   aria-haspopup="true"
-                   aria-expanded="false">
-               Subscribe
-           </button>;
-};
+const BtnGroupDropSubscribe = () =>
+    <button id="btnGroupDropSubscribe"
+            type="button"
+            className="btn btn-primary dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">
+        Subscribe
+    </button>;
