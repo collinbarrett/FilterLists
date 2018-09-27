@@ -8310,7 +8310,7 @@
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistspanish+easylist.tpl"
   },
   {
-      "id": 801,
+     "id": 801,
       "description": "This is a Macedonian list",
       "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/ABP%20Macedonian%20List.txt",
       "discontinuedDate": "2011-05-11T00:00:00",
@@ -8379,7 +8379,7 @@
     },
     {
       "id": 807,
-      "description": "This is a cosmetic filter for the uBlock Origin extension (with adblock support) to automatically filter all the pro-5-Star comments and the \"anti-information\" pages they share with sensationalistic headlines.",
+      "description": "This is a cosmetic filter for the uBlock Origin extension (with adblock support) to automatically filter all the pro-5-Star comments and the 'anti-information' pages they share with sensationalistic headlines.",
       "descriptionSourceUrl": "https://github.com/luigimannoni/m5s-ublock-filter#cosa-%C3%A9",
       "homeUrl": "https://github.com/luigimannoni/m5s-ublock-filter",
       "issuesUrl": "https://github.com/luigimannoni/m5s-ublock-filter/issues",
@@ -8402,4 +8402,4 @@
       "syntaxId": 3,
       "viewUrl": "http://www.verzijlbergh.com/adblock/nlblock.txt"
     }
-]
+   ]
