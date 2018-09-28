@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IColumnVisibility, ILanguage, IList, IMaintainer, ISoftware, ITag } from "./interfaces";
+import { IColumnVisibility, ILanguage, ILicense, IList, IMaintainer, ISoftware, ITag } from "./interfaces";
 import { ListsTable, Oneliner } from "./components";
 
 const columnVisibilityDefaults: IColumnVisibility[] = [
@@ -8,11 +8,13 @@ const columnVisibilityDefaults: IColumnVisibility[] = [
     { column: "Tags", visible: true },
     { column: "Updated", visible: false },
     { column: "Rules", visible: false },
+    { column: "License", visible: false },
     { column: "Maintainers", visible: false }
 ];
 
 interface IProps {
     languages: ILanguage[];
+    licenses: ILicense[];
     lists: IList[];
     maintainers: IMaintainer[];
     ruleCount: number;

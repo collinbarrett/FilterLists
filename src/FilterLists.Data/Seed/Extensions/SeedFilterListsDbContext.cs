@@ -22,6 +22,7 @@ namespace FilterLists.Data.Seed.Extensions
             dbContext.SeedOrUpdate<Syntax>(dataPath);
             dbContext.SeedOrUpdate<Tag>(dataPath);
             dbContext.SeedOrUpdate<FilterList>(dataPath);
+            dbContext.SetDefaultLicenseId();
             dbContext.SeedOrUpdate<FilterListLanguage>(dataPath);
             dbContext.SeedOrUpdate<FilterListMaintainer>(dataPath);
             dbContext.SeedOrUpdate<FilterListTag>(dataPath);
@@ -146,6 +147,20 @@ namespace FilterLists.Data.Seed.Extensions
         {
             var firstId = properties.First(x => x.IsPrimaryKey()).Name;
             return firstId + " = VALUES(" + firstId + ")";
+        }
+
+        private static void SetDefaultLicenseId(this DbContext dbContext)
+        {
+            var lists = dbContext.Set<FilterList>()
+                                 .Where(l => l.LicenseId == null)
+                                 .ToList()
+                                 .Select(c =>
+                                 {
+                                     c.LicenseId = 5;
+                                     return c;
+                                 });
+            dbContext.UpdateRange(lists);
+            dbContext.SaveChanges();
         }
     }
 }
