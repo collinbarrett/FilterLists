@@ -19,12 +19,12 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet]
         public async Task<IActionResult> GetAll() =>
-            await Get(() => maintainerService.GetAllAsync());
+            await Get(() => maintainerService.GetAllThatMaintainAnyListAsync());
 
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> GetById(int id) =>
-            await Get(() => maintainerService.GetByIdAsync(id), id);
+            await Get(() => maintainerService.GetIfMaintainsAnyListByIdAsync(id), id);
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>

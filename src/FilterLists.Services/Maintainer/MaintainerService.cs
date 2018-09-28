@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -17,14 +18,15 @@ namespace FilterLists.Services.Maintainer
         {
         }
 
-        public async Task<IEnumerable<MaintainerDto>> GetAllAsync() =>
-            await DbContext.Maintainers
-                           .ProjectTo<MaintainerDto>(MapConfig)
-                           .ToListAsync();
+        private IQueryable<Data.Entities.Maintainer> MaintainsAnyLists =>
+            DbContext.Maintainers.Where(m => m.FilterListMaintainers.Any());
 
-        public async Task<MaintainerDto> GetByIdAsync(int id) =>
-            await DbContext.Maintainers
-                           .ProjectTo<MaintainerDto>(MapConfig)
-                           .FirstOrDefaultAsync(m => m.Id == id);
+        public async Task<IEnumerable<MaintainerDto>> GetAllThatMaintainAnyListAsync() =>
+            await MaintainsAnyLists.ProjectTo<MaintainerDto>(MapConfig)
+                                   .ToListAsync();
+
+        public async Task<MaintainerDto> GetIfMaintainsAnyListByIdAsync(int id) =>
+            await MaintainsAnyLists.ProjectTo<MaintainerDto>(MapConfig)
+                                   .FirstOrDefaultAsync(m => m.Id == id);
     }
 }

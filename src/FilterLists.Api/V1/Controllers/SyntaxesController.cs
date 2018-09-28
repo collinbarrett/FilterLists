@@ -18,12 +18,12 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet]
         public async Task<IActionResult> GetAll() =>
-            await Get(() => syntaxService.GetAll());
+            await Get(() => syntaxService.GetAllImplemented());
 
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> GetById(int id) =>
-            await Get(() => syntaxService.GetById(id), id);
+            await Get(() => syntaxService.GetImplementedById(id), id);
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>

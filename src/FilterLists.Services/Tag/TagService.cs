@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -17,14 +18,15 @@ namespace FilterLists.Services.Tag
         {
         }
 
-        public async Task<IEnumerable<TagDto>> GetAll() =>
-            await DbContext.Tags
-                           .ProjectTo<TagDto>(MapConfig)
-                           .ToListAsync();
+        private IQueryable<Data.Entities.Tag> ImplementedTags =>
+            DbContext.Tags.Where(t => t.FilterListTags.Any());
 
-        public async Task<TagDto> GetById(int id) =>
-            await DbContext.Tags
-                           .ProjectTo<TagDto>(MapConfig)
-                           .FirstOrDefaultAsync(t => t.Id == id);
+        public async Task<IEnumerable<TagDto>> GetAllImplemented() =>
+            await ImplementedTags.ProjectTo<TagDto>(MapConfig)
+                                 .ToListAsync();
+
+        public async Task<TagDto> GetImplementedById(int id) =>
+            await ImplementedTags.ProjectTo<TagDto>(MapConfig)
+                                 .FirstOrDefaultAsync(t => t.Id == id);
     }
 }
