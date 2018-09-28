@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -17,14 +18,15 @@ namespace FilterLists.Services.Syntax
         {
         }
 
-        public async Task<IEnumerable<SyntaxDto>> GetAll() =>
-            await DbContext.Syntaxes
-                           .ProjectTo<SyntaxDto>(MapConfig)
-                           .ToListAsync();
+        private IQueryable<Data.Entities.Syntax> ImplementedSyntaxes =>
+            DbContext.Syntaxes.Where(s => s.FilterLists.Any());
 
-        public async Task<SyntaxDto> GetById(int id) =>
-            await DbContext.Syntaxes
-                           .ProjectTo<SyntaxDto>(MapConfig)
-                           .FirstOrDefaultAsync(s => s.Id == id);
+        public async Task<IEnumerable<SyntaxDto>> GetAllImplemented() =>
+            await ImplementedSyntaxes.ProjectTo<SyntaxDto>(MapConfig)
+                                     .ToListAsync();
+
+        public async Task<SyntaxDto> GetImplementedById(int id) =>
+            await ImplementedSyntaxes.ProjectTo<SyntaxDto>(MapConfig)
+                                     .FirstOrDefaultAsync(s => s.Id == id);
     }
 }
