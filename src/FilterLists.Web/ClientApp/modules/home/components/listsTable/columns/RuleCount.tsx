@@ -1,0 +1,26 @@
+import * as React from "react";
+import { Column } from "react-table";
+import { IColumnVisibility } from "../../../interfaces";
+
+export const RuleCount = (columnVisibility: IColumnVisibility[]) =>
+({
+    Header: "Rules",
+    accessor: "ruleCount",
+    sortMethod: (a: string, b: string) => sortMethod(a, b),
+    Cell: (c: any) => Cell(c.value),
+    style: { whiteSpace: "inherit" },
+    width: 80,
+    headerClassName: "d-none d-md-block",
+    className: "d-none d-md-block",
+    show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Rule Count")[0].visible
+} as Column);
+
+const sortMethod = (a: string, b: string) =>
+    a > b
+    ? 1
+    : -1;
+
+const Cell = (ruleCount: number) =>
+    ruleCount
+    ? <span>{ruleCount.toLocaleString() }</span>
+    : null;

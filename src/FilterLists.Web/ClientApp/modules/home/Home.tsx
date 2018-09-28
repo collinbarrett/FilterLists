@@ -3,11 +3,12 @@ import { IColumnVisibility, ILanguage, IList, IMaintainer, ISoftware, ITag } fro
 import { ListsTable, Oneliner } from "./components";
 
 const columnVisibilityDefaults: IColumnVisibility[] = [
+    { column: "Maintainers", visible: false },
     { column: "Software", visible: true },
     { column: "Tags", visible: true },
     { column: "Languages", visible: true },
-    { column: "Maintainers", visible: false },
-    { column: "Updated Date", visible: true }
+    { column: "Updated Date", visible: true },
+    { column: "Rule Count", visible: true }
 ];
 
 interface IProps {
