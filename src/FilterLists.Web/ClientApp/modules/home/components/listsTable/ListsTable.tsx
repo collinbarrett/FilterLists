@@ -26,12 +26,12 @@ export const ListsTable = (props: IProps) =>
           showPageSizeOptions={false}
           columns={[
               Name,
-              Maintainers(props.columnVisibility, props.maintainers),
               Software(props.columnVisibility, props.software),
-              Tags(props.columnVisibility, props.tags),
               Languages(props.columnVisibility, props.languages),
+              Tags(props.columnVisibility, props.tags),
               UpdatedDate(props.columnVisibility),
               RuleCount(props.columnVisibility),
+              Maintainers(props.columnVisibility, props.maintainers),
               DetailsButton
           ]}
           defaultSorted={[{ id: "name" }]}
