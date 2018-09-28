@@ -12,8 +12,6 @@ export const License = (columnVisibility: IColumnVisibility[], licenses: ILicens
     sortMethod: (a: number, b: number) => sortMethod(a, b, licenses),
     Cell: (c: any) => Cell(c.value, licenses),
     width: 140,
-    headerClassName: "d-none d-md-block",
-    className: "d-none d-md-block",
     show: columnVisibility.filter((c: IColumnVisibility) => c.column === "License")[0].visible
 } as Column);
 

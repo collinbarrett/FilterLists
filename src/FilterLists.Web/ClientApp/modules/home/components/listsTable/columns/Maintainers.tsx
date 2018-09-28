@@ -12,8 +12,6 @@ export const Maintainers = (columnVisibility: IColumnVisibility[], maintainers: 
     sortMethod: (a: number[], b: number[]) => sortMethod(a, b, maintainers),
     Cell: (c: any) => Cell(c.value, maintainers),
     width: 140,
-    headerClassName: "d-none d-md-block",
-    className: "d-none d-md-block",
     show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Maintainers")[0].visible
 } as Column);
 

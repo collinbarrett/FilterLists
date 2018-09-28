@@ -13,8 +13,6 @@ export const Languages = (columnVisibility: IColumnVisibility[], languages: ILan
     Cell: (c: any) => Cell(c.value, languages),
     style: { whiteSpace: "inherit" },
     width: 95,
-    headerClassName: "d-none d-md-block",
-    className: "d-none d-md-block",
     show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Languages")[0].visible
 } as Column);
 

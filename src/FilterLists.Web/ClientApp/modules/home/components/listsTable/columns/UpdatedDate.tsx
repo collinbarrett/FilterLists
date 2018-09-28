@@ -11,8 +11,6 @@ export const UpdatedDate = (columnVisibility: IColumnVisibility[]) =>
     Cell: (c: any) => Cell(c.value),
     style: { whiteSpace: "inherit" },
     width: 100,
-    headerClassName: "d-none d-md-block",
-    className: "d-none d-md-block",
     show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Updated")[0].visible
 } as Column);
 
