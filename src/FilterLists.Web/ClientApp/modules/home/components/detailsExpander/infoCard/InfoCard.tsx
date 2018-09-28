@@ -45,9 +45,13 @@ export const InfoCard = (props: IProps) =>
         <Description {...props} url={props.descriptionSourceUrl}/>
         <ul className="list-group list-group-flush">
             <Languages {...props}/>
-            <RuleCount {...props}/>
+            {props.columnVisibility.filter((c: IColumnVisibility) => c.column === "Rules")[0].visible
+                 ? null
+                 : <RuleCount {...props}/>}
             <DiscontinuedDate date={props.discontinuedDate}/>
-            <UpdatedDate {...props}/>
+            {props.columnVisibility.filter((c: IColumnVisibility) => c.column === "Updated")[0].visible
+                 ? null
+                 : <UpdatedDate {...props}/>}
             <PublishedDate date={props.publishedDate}/>
             <Syntax {...props.syntax}/>
             <License {...props.license}/>
