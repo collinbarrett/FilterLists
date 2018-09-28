@@ -10,8 +10,6 @@ export const RuleCount = (columnVisibility: IColumnVisibility[]) =>
     Cell: (c: any) => Cell(c.value),
     style: { whiteSpace: "inherit" },
     width: 85,
-    headerClassName: "d-none d-md-block",
-    className: "d-none d-md-block",
     show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Rules")[0].visible
 } as Column);
 

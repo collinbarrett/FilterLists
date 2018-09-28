@@ -13,8 +13,6 @@ export const Tags = (columnVisibility: IColumnVisibility[], tags: ITag[]) =>
     sortMethod: (a: number[], b: number[]) => sortMethod(a, b),
     Cell: (c: any) => Cell(c.value, tags),
     width: 215,
-    headerClassName: "d-none d-md-block",
-    className: "d-none d-md-block",
     show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Tags")[0].visible
 } as Column);
 

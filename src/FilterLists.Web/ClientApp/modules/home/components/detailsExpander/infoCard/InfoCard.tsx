@@ -29,7 +29,7 @@ interface IProps {
 export const InfoCard = (props: IProps) =>
     <div className="col-9">
         <TagGroup tags={props.tags}/>
-        <div className="d-md-none">
+        <div>
             {props.syntax
                  ? props.syntax.supportedSoftware.map(
                      (s: ISyntaxSupportedSoftware, i: number) =>

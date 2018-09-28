@@ -12,8 +12,6 @@ export const Software = (columnVisibility: IColumnVisibility[], software: ISoftw
     sortable: false,
     Cell: (c: any) => Cell(c.value, software),
     width: 155,
-    headerClassName: "d-none d-md-block",
-    className: "d-none d-md-block",
     show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Software")[0].visible
 } as Column);
 

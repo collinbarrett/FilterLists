@@ -38,7 +38,16 @@ export class Home extends React.Component<IProps, IState> {
     }
 
     componentDidMount() {
+        this.setMobileColumnVisibility();
         this.updatePageSize();
+    };
+    
+    setMobileColumnVisibility() {
+        if (window.innerWidth < 768) {
+            this.state.columnVisibility.forEach((c: IColumnVisibility) => {
+                c.visible = false;
+            });
+        }
     };
 
     updatePageSize() {
