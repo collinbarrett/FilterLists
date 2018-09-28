@@ -16,8 +16,12 @@ export const RuleCount = (columnVisibility: IColumnVisibility[]) =>
 } as Column);
 
 const sortMethod = (a: string, b: string) =>
-    a > b
-    ? 1
+    a
+    ? b
+      ? a > b
+        ? 1
+        : -1
+      : 1
     : -1;
 
 const Cell = (ruleCount: number) =>
