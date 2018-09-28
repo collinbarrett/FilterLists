@@ -9,7 +9,7 @@ export const Languages = (columnVisibility: IColumnVisibility[], languages: ILan
     filterable: true,
     filterMethod: (f: Filter, r: any[]) => filterMethod(f, r),
     Filter: ({ onChange, filter }: any) => Filter({ onChange, filter }, languages),
-    sortable: false,
+    sortMethod: (a: number[], b: number[]) => sortMethod(a, b, languages),
     Cell: (c: any) => Cell(c.value, languages),
     style: { whiteSpace: "inherit" },
     width: 95,
@@ -39,6 +39,20 @@ const Filter = (props: any, languages: ILanguage[]) =>
                  </option>)
              : null}
     </select>;
+
+const sortMethod = (a: number[], b: number[], languages: ILanguage[]) => {
+    if (a && a.length > 0) {
+        if (b && b.length > 0) {
+            const aFirstLanguageName = languages.filter((l: ILanguage) => l.id === a[0])[0].name;
+            const bFirstLanguageName = languages.filter((l: ILanguage) => l.id === b[0])[0].name;
+            return aFirstLanguageName.toLowerCase() > bFirstLanguageName.toLowerCase() ? 1 : -1;
+        } else {
+            return -1;
+        }
+    } else {
+        return 1;
+    }
+};
 
 const Cell = (languageIds: number[], languages: ILanguage[]) =>
     languageIds
