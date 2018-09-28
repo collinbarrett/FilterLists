@@ -13,7 +13,7 @@ export const UpdatedDate = (columnVisibility: IColumnVisibility[]) =>
     width: 100,
     headerClassName: "d-none d-md-block",
     className: "d-none d-md-block",
-    show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Updated Date")[0].visible
+    show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Updated")[0].visible
 } as Column);
 
 const sortMethod = (a: string, b: string) =>
