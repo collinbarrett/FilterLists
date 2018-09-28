@@ -151,15 +151,15 @@ namespace FilterLists.Data.Seed.Extensions
 
         private static void SetDefaultLicenseId(this DbContext dbContext)
         {
-            var lists = dbContext.Set<FilterList>()
-                                 .Where(l => l.LicenseId == null)
-                                 .ToList()
-                                 .Select(c =>
-                                 {
-                                     c.LicenseId = 5;
-                                     return c;
-                                 });
-            dbContext.UpdateRange(lists);
+            var listsWithoutLicense = dbContext.Set<FilterList>()
+                                               .Where(l => l.LicenseId == null)
+                                               .ToList()
+                                               .Select(l =>
+                                               {
+                                                   l.LicenseId = 5;
+                                                   return l;
+                                               });
+            dbContext.UpdateRange(listsWithoutLicense);
             dbContext.SaveChanges();
         }
     }
