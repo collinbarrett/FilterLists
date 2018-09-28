@@ -46,7 +46,7 @@ const Filter = (props: any, maintainers: IMaintainer[]) =>
 const Cell = (maintainerIds: number[], maintainers: IMaintainer[]) =>
     maintainerIds
     ? <div className="fl-tag-container">
-          {maintainers.filter((m: IMaintainer) => maintainerIds.indexOf(m.id) > -1)
-              .map((m: IMaintainer, i: number) => <span key={i}>{m.name}</span>)}
+          {maintainers.filter((m: IMaintainer) => maintainerIds.indexOf(m.id) > -1).map((m: IMaintainer) => m.name)
+              .join(", ")}
       </div>
     : null;
