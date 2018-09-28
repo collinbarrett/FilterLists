@@ -1,10 +1,11 @@
 import * as React from "react";
 import "isomorphic-fetch";
-import { ILanguage, IList, IMaintainer, ISoftware, ITag } from "./interfaces";
+import { ILanguage, ILicense, IList, IMaintainer, ISoftware, ITag } from "./interfaces";
 import { Home } from "./Home";
 
 interface IState {
     languages: ILanguage[];
+    licenses: ILicense[];
     lists: IList[];
     maintainers: IMaintainer[];
     ruleCount: number;
@@ -17,6 +18,7 @@ export class HomeContainer extends React.Component<{}, IState> {
         super(props);
         this.state = {
             languages: [],
+            licenses: [],
             lists: [],
             maintainers: [],
             ruleCount: 0,
@@ -27,6 +29,7 @@ export class HomeContainer extends React.Component<{}, IState> {
 
     componentDidMount() {
         this.fetchLanguages();
+        this.fetchLicenses();
         this.fetchLists();
         this.fetchMaintainers();
         this.fetchSoftware();
@@ -38,6 +41,12 @@ export class HomeContainer extends React.Component<{}, IState> {
         fetch("https://filterlists.com/api/v1/languages")
             .then(r => r.json() as Promise<ILanguage[]>)
             .then(p => { this.setState({ languages: p }); });
+    };
+
+    fetchLicenses() {
+        fetch("https://filterlists.com/api/v1/licenses")
+            .then(r => r.json() as Promise<ILicense[]>)
+            .then(p => { this.setState({ licenses: p }); });
     };
 
     fetchLists() {

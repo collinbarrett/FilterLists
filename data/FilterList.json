@@ -6014,6 +6014,7 @@
     "forumUrl": "https://bbs.kafan.cn/thread-1866845-1-1.html",
     "homeUrl": "https://bbs.kafan.cn/thread-1866845-1-1.html",
     "issuesUrl": "https://github.com/xinggsf/Adblock-Plus-Rule/issues",
+    "licenseId": 5,
     "name": "Winding Advertising Filter Rules (乘风 广告过滤规则)",
     "syntaxId": 3,
     "viewUrl": "https://github.com/xinggsf/Adblock-Plus-Rule/raw/master/ABP-FX.txt"
@@ -6435,6 +6436,7 @@
     "descriptionSourceUrl": "https://github.com/bigdargon/hostsVN#hostsvn",
     "homeUrl": "https://github.com/bigdargon/hostsVN",
     "issuesUrl": "https://github.com/bigdargon/hostsVN/issues",
+    "licenseId": 5,
     "name": "hostsVN",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts"
@@ -6446,6 +6448,7 @@
     "emailAddress": "support@abpvn.com",
     "forumUrl": "http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html",
     "homeUrl": "https://abpvn.com/",
+    "licenseId": 5,
     "name": "ABPVN Hosts",
     "syntaxId": 1,
     "viewUrl": "https://abpvn.com/android/abpvn.txt"
@@ -6457,6 +6460,7 @@
     "emailAddress": "support@abpvn.com",
     "forumUrl": "http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html",
     "homeUrl": "https://abpvn.com/",
+    "licenseId": 5,
     "name": "ABPVN List - No Element Hide",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn_noelemhide.txt"
@@ -6653,6 +6657,7 @@
     "description": "Ad server list for use with hosts files to block ads",
     "descriptionSourceUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
     "homeUrl": " https://pgl.yoyo.org/adservers",
+    "licenseId": 5,
     "name": "Peter Lowe's List (Hosts)",
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
     "syntaxId": 1,
@@ -6661,6 +6666,7 @@
   {
     "id": 618,
     "descriptionSourceUrl": "https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt",
+    "licenseId": 5,
     "name": "Mandiant APT1 Report Appendix D",
     "syntaxId": 2,
     "viewUrl": "https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt"
@@ -6669,6 +6675,7 @@
     "id": 619,
     "description": "YouTube Ad-Block-List for PiHole by HenningVanRäumle",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/HenningVanRaumle/pihole-ytadblock/master/ytadblock.txt",
+    "licenseId": 5,
     "name": "pihole-ytadblock",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/HenningVanRaumle/pihole-ytadblock/master/ytadblock.txt"
@@ -6748,6 +6755,7 @@
   },
   {
     "id": 626,
+    "licenseId": 5,
     "name": "Tyzbit Hosts",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/tyzbit/hosts/master/data/tyzbit/hosts"
@@ -6758,6 +6766,7 @@
     "descriptionSourceUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/giftcardkiller.txt",
     "homeUrl": "https://github.com/TakoYachty/Gift-Card-Killer",
     "issuesUrl": "https://github.com/TakoYachty/Gift-Card-Killer/issues",
+    "licenseId": 5,
     "name": "Gift Card Killer",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/giftcardkiller.txt"
@@ -6768,6 +6777,7 @@
     "descriptionSourceUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/Untrusted%20Hosts%20Blocker.txt",
     "homeUrl": "https://github.com/TakoYachty/Gift-Card-Killer",
     "issuesUrl": "https://github.com/TakoYachty/Gift-Card-Killer/issues",
+    "licenseId": 5,
     "name": "Untrusted Hosts Blocker",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/Untrusted%20Hosts%20Blocker.txt"
@@ -6776,18 +6786,21 @@
     "id": 629,
     "homeUrl": "https://github.com/TakoYachty/Gift-Card-Killer",
     "issuesUrl": "https://github.com/TakoYachty/Gift-Card-Killer/issues",
+    "licenseId": 5,
     "name": "Thieus Hosts Spotify",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/Thieus%20Hosts%20Spotify.txt"
   },
   {
     "id": 630,
+    "licenseId": 5,
     "name": "AdGuard Simplified Domain Names Filter (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://v.firebog.net/hosts/AdguardDNS.txt"
   },
   {
     "id": 631,
+    "licenseId": 5,
     "name": "Prigent Phishing",
     "syntaxId": 2,
     "viewUrl": "https://v.firebog.net/hosts/Prigent-Phishing.txt"
@@ -6796,6 +6809,7 @@
     "id": 632,
     "description": "Samsung SmartTV domains (Will block \"Smart\" aspects of device)",
     "descriptionSourceUrl": "https://v.firebog.net/hosts/static/SamsungSmart.txt",
+    "licenseId": 5,
     "name": "Samsung SmartTV Domains",
     "syntaxId": 1,
     "viewUrl": "https://v.firebog.net/hosts/static/SamsungSmart.txt"
@@ -6806,6 +6820,7 @@
     "descriptionSourceUrl": "https://github.com/mmotti/mmotti-host-file#mmotti-host-file-samsung-knox-firewall",
     "homeUrl": "https://github.com/mmotti/mmotti-host-file",
     "issuesUrl": "https://github.com/mmotti/mmotti-host-file/issues",
+    "licenseId": 5,
     "name": "MMotti Host File (Samsung Knox Firewall)",
     "syntaxId": 16,
     "viewUrl": "https://raw.githubusercontent.com/mmotti/mmotti-host-file/master/hosts"
@@ -6813,6 +6828,7 @@
   {
     "id": 635,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "DOTA Gambling Sites",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Gambling/DOTA%20Gambling%20Sites"
@@ -6820,6 +6836,7 @@
   {
     "id": 636,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "ESports Gambling Sites",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Gambling/ESports%20Gambling%20Sites"
@@ -6827,6 +6844,7 @@
   {
     "id": 637,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "H1Z1 Gambling Sites",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Gambling/H1Z1%20Gambling%20Sites"
@@ -6834,6 +6852,7 @@
   {
     "id": 638,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "LOL Gambling Sites",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Gambling/LOL%20Gambling%20Sites"
@@ -6841,6 +6860,7 @@
   {
     "id": 639,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "DOTA Scam Sites",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/DOTA"
@@ -6848,6 +6868,7 @@
   {
     "id": 640,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Fortnite Scam Sites",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Fortnite%20Scam%20Sites"
@@ -6855,6 +6876,7 @@
   {
     "id": 641,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Last Day on Earth Scam Sites",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Last%20Day%20on%20Earth"
@@ -6862,6 +6884,7 @@
   {
     "id": 642,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "PUBG Scam Sites",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/PUBG"
@@ -6869,6 +6892,7 @@
   {
     "id": 643,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Riot Scam Sites",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Riot%20Scam%20Sites"
@@ -6876,6 +6900,7 @@
   {
     "id": 644,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Roblox Scam Sites",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Roblox%20Scam%20Sites"
@@ -6883,6 +6908,7 @@
   {
     "id": 645,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Steam Scam Sites",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Steam%20Scam%20Sites"
@@ -6890,6 +6916,7 @@
   {
     "id": 647,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Discord Resources - Account Resellers",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Account%20Resellers"
@@ -6897,6 +6924,7 @@
   {
     "id": 648,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Discord Resources - Booters",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Booters"
@@ -6904,6 +6932,7 @@
   {
     "id": 649,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Discord Resources - Hack Distributors",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Hack%20Distributors"
@@ -6911,6 +6940,7 @@
   {
     "id": 650,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Discord Resources - Harmful",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Harmful"
@@ -6918,6 +6948,7 @@
   {
     "id": 651,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Discord Resources - IP Grabbers",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/IP%20Grabbers"
@@ -6925,6 +6956,7 @@
   {
     "id": 652,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Discord Resources - Malware",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Malware"
@@ -6932,6 +6964,7 @@
   {
     "id": 653,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Discord Resources - Phishing",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Phishing"
@@ -6939,6 +6972,7 @@
   {
     "id": 654,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Discord Resources - Screamers",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Screamers"
@@ -6946,6 +6980,7 @@
   {
     "id": 655,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Discord Resources - Invites",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Miscellanious/Invites"
@@ -6953,6 +6988,7 @@
   {
     "id": 656,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Discord Resources - Link Shortners",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Miscellanious/Link%20Shortners"
@@ -6960,6 +6996,7 @@
   {
     "id": 657,
     "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
+    "licenseId": 5,
     "name": "Discord Resources - NSFW",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Miscellanious/NSFW"
@@ -7016,6 +7053,7 @@
     "id": 663,
     "homeUrl": "http://nmtrung.com/fmsf-2",
     "issuesUrl": "https://github.com/nmtrung/FMSF-2.0/issues",
+    "licenseId": 5,
     "name": "FSMF 2",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/nmtrung/FMSF-2.0/master/fmsf_2.0.txt"
@@ -7091,6 +7129,7 @@
     "id": 671,
     "description": "This rule group demonstrates the subscription of a blocklist. It's for demo purposes only. It lets you try out the subscription procedure and the available configuration options. You can rename the group, enable/disable either individual rules or the entire group, specify the update interval, and more.",
     "homeUrl": "https://www.obdev.at/products/littlesnitch/index.html",
+    "licenseId": 5,
     "name": "Little Snitch Blocklist Example",
     "syntaxId": 18,
     "viewUrl": "https://obdev.at/resources/littlesnitch/blocklist-example.lsrules"
@@ -7162,6 +7201,7 @@
     "id": 678,
     "discontinuedDate": "2014-05-19T00:00:00",
     "homeUrl": "https://gist.github.com/sx2008/2766874",
+    "licenseId": 5,
     "name": "Privoxy User Action File (sx2008)",
     "syntaxId": 19,
     "viewUrl": "https://gist.githubusercontent.com/sx2008/2766874/raw/c12a305decef3332663d1e04efa80b881211cfac/user.action"
@@ -7173,6 +7213,7 @@
     "discontinuedDate": "2012-05-15T00:00:00",
     "homeUrl": "https://github.com/fdb/privoxy-config",
     "issuesUrl": "https://github.com/fdb/privoxy-config/issues",
+    "licenseId": 5,
     "name": "Privoxy Config - Block Trackers",
     "syntaxId": 19,
     "viewUrl": "https://raw.githubusercontent.com/fdb/privoxy-config/master/block-trackers.action"
@@ -7205,6 +7246,7 @@
     "id": 682,
     "description": "This file will be automatically updated daily and populated with the last 30 days of malicious IP addresses.",
     "homeUrl": "https://malc0de.com",
+    "licenseId": 5,
     "name": "Malc0de IP Blacklist",
     "syntaxId": 9,
     "viewUrl": "https://malc0de.com/bl/IP_Blacklist.txt"
@@ -7355,6 +7397,7 @@
     "id": 696,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "Dan Pollock's Hosts (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/dan-pollock-someonewhocares-org.txt"
@@ -7363,6 +7406,7 @@
     "id": 697,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "MVPS Hosts (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/mvps-hosts-file.txt"
@@ -7371,6 +7415,7 @@
     "id": 698,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "Malware Domain List (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/malware-domain-list.txt"
@@ -7379,6 +7424,7 @@
     "id": 699,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "NoCoin (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/nocoin.txt"
@@ -7387,6 +7433,7 @@
     "id": 700,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "EasyList (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/easylist.txt"
@@ -7395,6 +7442,7 @@
     "id": 701,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "EasyPrivacy (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/easyprivacy.txt"
@@ -7403,6 +7451,7 @@
     "id": 702,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "Unified Hosts (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/steven-blacks-unified-list.txt"
@@ -7411,6 +7460,7 @@
     "id": 703,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "KAD Hosts File (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/kadhosts.txt"
@@ -7419,6 +7469,7 @@
     "id": 704,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "Steven Black's Hosts (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/steven-blacks-ad-hoc-list.txt"
@@ -7427,6 +7478,7 @@
     "id": 705,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "Badd Boyz Hosts (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/coinblocker.txt"
@@ -7435,6 +7487,7 @@
     "id": 706,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "add.2o7Net (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/add-2o7net.txt"
@@ -7443,6 +7496,7 @@
     "id": 707,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "add.Dead (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/add-dead.txt"
@@ -7451,6 +7505,7 @@
     "id": 708,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "add.Risk (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/add-risk.txt"
@@ -7459,6 +7514,7 @@
     "id": 709,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "add.Spam (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/add-spam.txt"
@@ -7467,6 +7523,7 @@
     "id": 710,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "Tyzbit (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/tyzbit.txt"
@@ -7475,6 +7532,7 @@
     "id": 711,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "Unchecky Ads (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/uncheckyads.txt"
@@ -7483,6 +7541,7 @@
     "id": 712,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "Spotify Ad Domains",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/spotifyads.txt"
@@ -7491,6 +7550,7 @@
     "id": 713,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "AdGuard DNS (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/adguard.txt"
@@ -7499,6 +7559,7 @@
     "id": 714,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "licenseId": 5,
     "name": "AdAway (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/adaway.txt"
@@ -7530,6 +7591,7 @@
     "discontinuedDate": "2016-07-10T00:00:00",
     "homeUrl": "https://github.com/superliaoyong/hosts",
     "issuesUrl": "https://github.com/superliaoyong/hosts/issues",
+    "licenseId": 5,
     "name": "Full Address Hosts File",
     "policyUrl": "https://github.com/superliaoyong/hosts#%E9%A1%B9%E7%9B%AE%E5%BC%80%E6%BA%90%E5%A4%8D%E5%88%B6%E6%97%B6%E6%B3%A8%E6%98%8E%E6%9D%A5%E6%BA%90%E4%BD%86%E7%A6%81%E6%AD%A2%E4%BB%BB%E4%BD%95%E4%BA%BA%E6%88%96%E7%BB%84%E7%BB%87%E9%87%8D%E5%8F%91%E5%B8%83%E5%88%B0%E5%A4%A7%E9%99%86%E7%BD%91%E7%AB%99",
     "syntaxId": 14,
@@ -7541,6 +7603,7 @@
     "descriptionSourceUrl": "https://github.com/popcorner/cernet-ipv6-hosts#welcome-to-cernet-ipv6-hosts",
     "homeUrl": "https://github.com/popcorner/cernet-ipv6-hosts",
     "issuesUrl": "https://github.com/popcorner/cernet-ipv6-hosts/issues",
+    "licenseId": 5,
     "name": "CERNET IPv6 Hosts",
     "syntaxId": 14,
     "viewUrl": "https://raw.githubusercontent.com/popcorner/cernet-ipv6-hosts/master/hosts"
@@ -7560,6 +7623,7 @@
     "id": 720,
     "description": "Nónio - The platform that violates your privacy.",
     "homeUrl": "https://nonio.pt/ublock.html",
+    "licenseId": 5,
     "name": "AntiNónio",
     "syntaxId": 4,
     "viewUrl": "https://nonio.pt/antinonio.txt"
@@ -7578,6 +7642,7 @@
   {
     "id": 722,
     "homeUrl": "https://gist.github.com/balupton/6960605",
+    "licenseId": 5,
     "name": "Twitter Drama",
     "syntaxId": 3,
     "viewUrl": "https://gist.githubusercontent.com/balupton/6960605/raw/16bfeff88761b16296ed3ee15fbacf6840f1701a/filter-twitterdrama.txt"
@@ -7585,6 +7650,7 @@
   {
     "id": 723,
     "homeUrl": "https://gist.github.com/balupton/6960605",
+    "licenseId": 5,
     "name": "Feedly Ads",
     "syntaxId": 3,
     "viewUrl": "https://gist.githubusercontent.com/balupton/6960605/raw/16bfeff88761b16296ed3ee15fbacf6840f1701a/filter-feedlyads.txt"
@@ -7592,6 +7658,7 @@
   {
     "id": 724,
     "homeUrl": "https://gist.github.com/balupton/6960605",
+    "licenseId": 5,
     "name": "Facebook Drama",
     "syntaxId": 3,
     "viewUrl": "https://gist.githubusercontent.com/balupton/6960605/raw/16bfeff88761b16296ed3ee15fbacf6840f1701a/filter-facebookdrama.txt"
@@ -7609,6 +7676,7 @@
     "id": 726,
     "homeUrl": "https://github.com/whtsky/abp-rules",
     "issuesUrl": "https://github.com/whtsky/abp-rules/issues",
+    "licenseId": 5,
     "name": "whtsky's rules",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/whtsky/abp-rules/master/rules.txt"
@@ -7618,6 +7686,7 @@
     "description": "Blocking some advertisement from Formosa",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/Yuan573/ADG/master/block",
     "homeUrl": "https://github.com/Yuan573/ADG",
+    "licenseId": 5,
     "name": "AdGuard Personal Block List",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Yuan573/ADG/master/block"
@@ -7628,6 +7697,7 @@
     "descriptionSourceUrl": "https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt",
     "homeUrl": "https://github.com/realodix/AdBlockID",
     "issuesUrl": "https://github.com/realodix/AdBlockID/issues",
+    "licenseId": 5,
     "name": "AdBlockID",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt"
@@ -7639,6 +7709,7 @@
     "emailAddress": "elias.ojala+github@kapsi.fi",
     "homeUrl": "https://crapblock.theel0ja.info/",
     "issuesUrl": "https://github.com/theel0ja/CrapBlock/issues",
+    "licenseId": 5,
     "name": "CrapBlock Annoyances",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/crapblock-annoyances.txt",
@@ -7651,6 +7722,7 @@
     "emailAddress": "elias.ojala+github@kapsi.fi",
     "homeUrl": "https://crapblock.theel0ja.info/",
     "issuesUrl": "https://github.com/theel0ja/CrapBlock/issues",
+    "licenseId": 5,
     "name": "Block Google Fonts (by CrapBlock)",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/block-googlefonts.txt",
@@ -7662,6 +7734,7 @@
     "descriptionSourceUrl": "https://github.com/NeeEoo/AdBlockNeeEoo#adblockneeeoo",
     "homeUrl": "https://github.com/NeeEoo/AdBlockNeeEoo",
     "issuesUrl": "https://github.com/NeeEoo/AdBlockNeeEoo/issues",
+    "licenseId": 5,
     "name": "AdBlockNeeEoo",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/NeeEoo/AdBlockNeeEoo/master/List.txt"
@@ -7692,8 +7765,8 @@
   },
   {
     "id": 734,
-	"description": "Filterlist that targeted to use on Gelbooru image board site.",
-	"descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/filterlist/imageboard/readme.md",
+    "description": "Filterlist that targeted to use on Gelbooru image board site.",
+    "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/filterlist/imageboard/readme.md",
     "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
     "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues/labels/Site%3A%20Gelbooru",
     "licenseId": 13,
@@ -7805,6 +7878,7 @@
     "descriptionSourceUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/README.md",
     "homeUrl": "https://github.com/Hunter-Github/the-best-stack-overflow",
     "issuesUrl": "https://github.com/Hunter-Github/the-best-stack-overflow/issues",
+    "licenseId": 5,
     "name": "The Best Stack Overflow",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/README.md"
@@ -7826,6 +7900,7 @@
     "descriptionSourceUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/tree/master/uBlock%20Indo#ublock",
     "homeUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/tree/master/uBlock%20Indo",
     "issuesUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/tree/master/uBlock%20Indo/issues",
+    "licenseId": 5,
     "name": "uBlock Indo",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/Hakame-kun/uBlock-Filters-Indonesia/master/uBlock%20Indo/ubindo.txt"
@@ -7848,6 +7923,7 @@
     "descriptionSourceUrl": "https://www.microsoft.com/cms/api/am/binary/RWilsQ",
     "discontinuedDate": "2013-07-11T00:00:00",
     "homeUrl": "https://blogs.msdn.microsoft.com/ie/2012/02/20/google-bypassing-user-privacy-settings/",
+    "licenseId": 5,
     "name": "Stop Google Tracking",
     "syntaxId": 10,
     "viewUrl": "https://www.microsoft.com/cms/api/am/binary/RWilsQ"
@@ -7858,6 +7934,7 @@
     "descriptionSourceUrl": "https://easylist-msie.adblockplus.org/malwaredomains_full.tpl",
     "emailAddress": "malwaredomains@gmail.com",
     "homeUrl": "https://www.malwaredomains.com/",
+    "licenseId": 5,
     "name": "DNS-BH Malware Domains (TPL)",
     "syntaxId": 10,
     "viewUrl": "https://easylist-msie.adblockplus.org/malwaredomains_full.tpl"
@@ -7867,6 +7944,7 @@
     "description": "TRUSTe's Easy Tracking Protection list enables relevant and targeted content from companies that demonstrate respectful consumer privacy practices and comply with TRUSTe's high standards and direct oversight.",
     "descriptionSourceUrl": "https://easy-tracking-protection.truste.com/easy.tpl",
     "homeUrl": "https://www.trustarc.com/blog/2011/02/17/truste-tpl-next-steps/",
+    "licenseId": 5,
     "name": "TRUSTe Easy Tracking Protection List",
     "syntaxId": 10,
     "viewUrl": "https://easy-tracking-protection.truste.com/easy.tpl"
@@ -7875,6 +7953,7 @@
     "id": 751,
     "discontinuedDate": "2016-05-09T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
+    "licenseId": 5,
     "name": "Rickroll Blacklist (TPL)",
     "syntaxId": 10,
     "viewUrl": "http://jansal.net/tpl/ricklist.tpl"
@@ -7901,6 +7980,7 @@
     "id": 754,
     "discontinuedDate": "2016-09-05T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
+    "licenseId": 5,
     "name": "Malware Patrol TPL",
     "syntaxId": 10,
     "viewUrl": "http://jansal.net/tpl/malpatrol.tpl"
@@ -7909,6 +7989,7 @@
     "id": 755,
     "discontinuedDate": "2013-12-28T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
+    "licenseId": 5,
     "name": "M",
     "syntaxId": 10,
     "viewUrl": "http://jansal.net/tpl/m.tpl"
@@ -7926,6 +8007,7 @@
     "id": 757,
     "discontinuedDate": "2011-07-14T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
+    "licenseId": 5,
     "name": "Facebook Connect Opt-Out",
     "syntaxId": 10,
     "viewUrl": "http://jansal.net/tpl/facebook-connect-optout-adblockplusfilter.tpl"
@@ -7934,6 +8016,7 @@
     "id": 758,
     "discontinuedDate": "2016-09-05T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
+    "licenseId": 5,
     "name": "Adblock Persian List (TPL)",
     "syntaxId": 10,
     "viewUrl": "http://jansal.net/tpl/adblock-persian.tpl"
@@ -7942,6 +8025,7 @@
     "id": 759,
     "discontinuedDate": "2013-08-19T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
+    "licenseId": 5,
     "name": "Fanboy's IsraelList (TPL)",
     "syntaxId": 10,
     "viewUrl": "http://jansal.net/tpl/IsraelList.tpl"
@@ -8009,6 +8093,7 @@
     "emailAddress": "lilydjwg@gmail.com",
     "homeUrl": "https://github.com/lilydjwg/abp-rules",
     "issuesUrl": "https://github.com/lilydjwg/abp-rules/issues",
+    "licenseId": 5,
     "name": "lilydjwg's rules",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/lilydjwg/abp-rules/master/list.txt"
@@ -8028,6 +8113,7 @@
     "id": 768,
     "homeUrl": "https://github.com/fuyunliu/Adblock-Plus-User-Rule",
     "issuesUrl": "https://github.com/fuyunliu/Adblock-Plus-User-Rule/issues",
+    "licenseId": 5,
     "name": "Adblock Plus User Rule",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/fuyunliu/Adblock-Plus-User-Rule/master/user-rule.txt"
@@ -8058,6 +8144,7 @@
     "description": "AdBlockPlus Rule, block ads click to visit page.",
     "homeUrl": "https://github.com/CPlayer-CN/Anti-Ad-Click-Popup",
     "issuesUrl": "https://github.com/CPlayer-CN/Anti-Ad-Click-Popup/issues",
+    "licenseId": 5,
     "name": "Anti Ad Click Popup",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/CPlayer-CN/Anti-Ad-Click-Popup/master/rule.txt",
@@ -8104,6 +8191,7 @@
   {
     "id": 776,
     "homeUrl": "https://stanev.org/abp/",
+    "licenseId": 5,
     "name": "Bulgarian List + EasyList (TPL)",
     "syntaxId": 10,
     "viewUrl": "https://easylist-msie.adblockplus.org/bulgarian_list+easylist.tpl"
@@ -8160,6 +8248,7 @@
     "id": 783,
     "emailAddress": "mail@zoso.ro",
     "homeUrl": "https://www.zoso.ro/rolist/",
+    "licenseId": 5,
     "name": "ROList + EasyList (TPL)",
     "syntaxId": 10,
     "viewUrl": "https://easylist-msie.adblockplus.org/rolist+easylist.tpl"
@@ -8168,6 +8257,7 @@
     "id": 784,
     "discontinuedDate": "2015-05-16T00:00:00",
     "homeUrl": "https://easylist.to/",
+    "licenseId": 5,
     "name": "Wiltteri + EasyList (TPL)",
     "syntaxId": 10,
     "viewUrl": "https://easylist-msie.adblockplus.org/wiltteri+easylist.tpl"
@@ -8282,6 +8372,7 @@
     "emailAddress": "easylist.subscription+anti@gmail.com",
     "forumUrl": "https://forums.lanik.us/",
     "homeUrl": "https://easylist.to/",
+    "licenseId": 5,
     "name": "Adblock Warning Removal List (TPL)",
     "syntaxId": 10,
     "viewUrl": "https://easylist-msie.adblockplus.org/antiadblockfilters.tpl"
@@ -8319,6 +8410,7 @@
     "discontinuedDate": "2011-05-11T00:00:00",
     "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/AncientLibrary",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 5,
     "name": "ABP Macedonian List",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/ABP%20Macedonian%20List.txt"
@@ -8343,6 +8435,7 @@
     "discontinuedDate": "2014-03-11T00:00:00",
     "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/AncientLibrary",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 5,
     "name": "Snaevar87's Icelandic filter",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Snaevar87's%20Icelandic%20filter.txt",
@@ -8367,6 +8460,7 @@
     "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/advblock+cssfixes.txt",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
     "homeUrl": "https://forums.lanik.us/viewforum.php?f=102",
+    "licenseId": 5,
     "name": "RU AdList + CSS Fixes",
     "syntaxId": 4,
     "viewUrl": "https://easylist-downloads.adblockplus.org/advblock+cssfixes.txt"
@@ -8386,6 +8480,7 @@
     "descriptionSourceUrl": "https://github.com/luigimannoni/m5s-ublock-filter#cosa-%C3%A9",
     "homeUrl": "https://github.com/luigimannoni/m5s-ublock-filter",
     "issuesUrl": "https://github.com/luigimannoni/m5s-ublock-filter/issues",
+    "licenseId": 5,
     "name": "M5S uBlock Filter",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/luigimannoni/m5s-ublock-filter/master/filter-list.txt"
@@ -8393,6 +8488,7 @@
   {
     "id": 808,
     "homeUrl": "https://ajnasz.hu/adblock",
+    "licenseId": 5,
     "name": "ajnasz's list",
     "syntaxId": 3,
     "viewUrl": "https://ajnasz.hu/adblock/recent"
@@ -8401,6 +8497,7 @@
     "id": 809,
     "discontinuedDate": "2014-12-15T00:00:00",
     "homeUrl": "https://www.ergensin.nl/",
+    "licenseId": 5,
     "name": "NLblock",
     "syntaxId": 3,
     "viewUrl": "http://www.verzijlbergh.com/adblock/nlblock.txt"

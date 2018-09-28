@@ -1,15 +1,16 @@
 import * as React from "react";
-import { IColumnVisibility, ILanguage, IList, IMaintainer, ISoftware, ITag } from "../../interfaces";
+import { IColumnVisibility, ILanguage, ILicense, IList, IMaintainer, ISoftware, ITag } from "../../interfaces";
 import "../../../../utils/loader.css";
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import "./listsTable.css";
-import { DetailsButton, Languages, Maintainers, Name, RuleCount, Software, Tags, UpdatedDate } from "./columns";
+import { DetailsButton, Languages, License, Maintainers, Name, RuleCount, Software, Tags, UpdatedDate } from "./columns";
 import { IListDetails } from "../../components/detailsExpander";
 import { DetailsExpander } from "../../components";
 
 interface IProps {
     languages: ILanguage[];
+    licenses: ILicense[];
     lists: IList[];
     maintainers: IMaintainer[];
     software: ISoftware[];
@@ -31,6 +32,7 @@ export const ListsTable = (props: IProps) =>
               Tags(props.columnVisibility, props.tags),
               UpdatedDate(props.columnVisibility),
               RuleCount(props.columnVisibility),
+              License(props.columnVisibility, props.licenses),
               Maintainers(props.columnVisibility, props.maintainers),
               DetailsButton
           ]}
