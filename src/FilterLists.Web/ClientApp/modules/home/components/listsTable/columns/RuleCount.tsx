@@ -9,7 +9,7 @@ export const RuleCount = (columnVisibility: IColumnVisibility[]) =>
     sortMethod: (a: string, b: string) => sortMethod(a, b),
     Cell: (c: any) => Cell(c.value),
     style: { whiteSpace: "inherit" },
-    width: 80,
+    width: 85,
     headerClassName: "d-none d-md-block",
     className: "d-none d-md-block",
     show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Rule Count")[0].visible
