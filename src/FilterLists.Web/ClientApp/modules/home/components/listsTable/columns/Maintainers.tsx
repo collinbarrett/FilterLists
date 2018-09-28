@@ -36,7 +36,10 @@ const Filter = (props: any, maintainers: IMaintainer[]) =>
         <option value="any">Any</option>
         {maintainers.length > 0
              ? maintainers.sort((a, b) => a.name.localeCompare(b.name))
-             .map((m: IMaintainer, i: number) => <option value={m.id} key={i}>{m.name}</option>)
+             .map((m: IMaintainer, i: number) =>
+                 <option value={m.id} key={i}>
+                     {m.name} ({m.filterListIds ? m.filterListIds.length : 0})
+                 </option>)
              : null}
     </select>;
 
