@@ -9,6 +9,7 @@ export const Maintainers = (columnVisibility: IColumnVisibility[], maintainers: 
     filterable: true,
     filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, maintainers),
     Filter: ({ filter, onChange }: any) => Filter({ onChange, filter }, maintainers),
+    sortMethod: (a: number[], b: number[]) => sortMethod(a, b, maintainers),
     Cell: (c: any) => Cell(c.value, maintainers),
     width: 140,
     headerClassName: "d-none d-md-block",
@@ -42,6 +43,20 @@ const Filter = (props: any, maintainers: IMaintainer[]) =>
                  </option>)
              : null}
     </select>;
+
+const sortMethod = (a: number[], b: number[], maintainers: IMaintainer[]) => {
+    if (a && a.length > 0) {
+        if (b && b.length > 0) {
+            const aFirstMaintainerName = maintainers.filter((m: IMaintainer) => m.id === a[0])[0].name;
+            const bFirstMaintainerName = maintainers.filter((m: IMaintainer) => m.id === b[0])[0].name;
+            return aFirstMaintainerName.toLowerCase() > bFirstMaintainerName.toLowerCase() ? 1 : -1;
+        } else {
+            return -1;
+        }
+    } else {
+        return 1;
+    }
+};
 
 const Cell = (maintainerIds: number[], maintainers: IMaintainer[]) =>
     maintainerIds
