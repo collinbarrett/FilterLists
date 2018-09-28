@@ -7,8 +7,8 @@ const columnVisibilityDefaults: IColumnVisibility[] = [
     { column: "Software", visible: true },
     { column: "Tags", visible: true },
     { column: "Languages", visible: true },
-    { column: "Updated Date", visible: true },
-    { column: "Rule Count", visible: true }
+    { column: "Updated Date", visible: false },
+    { column: "Rule Count", visible: false }
 ];
 
 interface IProps {
