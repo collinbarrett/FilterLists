@@ -18,12 +18,12 @@ namespace FilterLists.Api.V1.Controllers
 
         [HttpGet]
         public async Task<IActionResult> GetAll() =>
-            await Get(() => licenseService.GetAllAsync());
+            await Get(() => licenseService.GetAllImplementedAsync());
 
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> GetById(int id) =>
-            await Get(() => licenseService.GetByIdAsync(id), id);
+            await Get(() => licenseService.GetImplementedByIdAsync(id), id);
 
         [HttpGet("seed")]
         public async Task<IActionResult> Seed() =>
