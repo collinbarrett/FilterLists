@@ -4,7 +4,7 @@ import "../../../../utils/loader.css";
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import "./listsTable.css";
-import { DetailsButton, Languages, Name, Software, Tags, UpdatedDate } from "./columns";
+import { DetailsButton, Languages, Maintainers, Name, Software, Tags, UpdatedDate } from "./columns";
 import { IListDetails } from "../../components/detailsExpander";
 import { DetailsExpander } from "../../components";
 
@@ -26,6 +26,7 @@ export const ListsTable = (props: IProps) =>
           showPageSizeOptions={false}
           columns={[
               Name,
+              Maintainers(props.columnVisibility, props.maintainers),
               Software(props.columnVisibility, props.software),
               Tags(props.columnVisibility, props.tags),
               Languages(props.columnVisibility, props.languages),

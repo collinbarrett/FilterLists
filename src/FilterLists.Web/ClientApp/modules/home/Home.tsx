@@ -6,6 +6,7 @@ const columnVisibilityDefaults: IColumnVisibility[] = [
     { column: "Software", visible: true },
     { column: "Tags", visible: true },
     { column: "Languages", visible: true },
+    { column: "Maintainers", visible: false },
     { column: "Updated Date", visible: true }
 ];
 
