@@ -8,7 +8,8 @@ export const Tags = (columnVisibility: IColumnVisibility[], tags: ITag[]) =>
     Header: "Tags",
     accessor: "tagIds",
     filterable: true,
-    filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, tags),
+    filterMethod: (f: Filter, r: any[]) => filterMethod(f, r),
+    Filter: ({ onChange, filter }: any) => Filter({ onChange, filter }, tags),
     sortMethod: (a: number[], b: number[]) => sortMethod(a, b),
     Cell: (c: any) => Cell(c.value, tags),
     width: 215,
@@ -17,16 +18,27 @@ export const Tags = (columnVisibility: IColumnVisibility[], tags: ITag[]) =>
     show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Tags")[0].visible
 } as Column);
 
-const filterMethod = (f: Filter, r: any[], tags: ITag[]): boolean => {
+const filterMethod = (f: Filter, r: any[]): boolean => {
     const listTagIds = r[f.id as any];
-    if (f.value.length > 0 && listTagIds && listTagIds.length > 0) {
-        const listTags = tags.filter((t: ITag) => listTagIds.includes(t.id));
-        const listTagNames = listTags.map((t: ITag) => t.name.toLowerCase()).join(",").split(",");
-        return listTagNames.filter((l: string) => l.indexOf(f.value.toLowerCase()) > -1).length > 0;
-    } else {
-        return false;
-    }
+    return f.value === "any" ||
+    (listTagIds
+         ? listTagIds.join(",").split(",").includes(f.value)
+         : false);
 };
+
+const Filter = (props: any, tags: ITag[]) =>
+    <select onChange={(event: any) => props.onChange(event.target.value)}
+            style={{ width: "100%" }}
+            value={props.filter ? props.filter.value : "any"}>
+        <option value="any">Any</option>
+        {tags.length > 0
+             ? tags.sort((a, b) => a.name.localeCompare(b.name))
+             .map((t: ITag, i: number) =>
+                 <option value={t.id} key={i}>
+                     {t.name} ({t.filterListIds ? t.filterListIds.length : 0})
+                 </option>)
+             : null}
+    </select>;
 
 const sortMethod = (a: number[], b: number[]): any =>
     a
