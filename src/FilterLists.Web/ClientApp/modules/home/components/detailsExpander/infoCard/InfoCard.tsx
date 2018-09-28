@@ -1,4 +1,5 @@
 import * as React from "react";
+import { IColumnVisibility } from "../../../interfaces";
 import { IListLicense, IListSyntax, ISyntaxSupportedSoftware } from "../IListDetails";
 import { ILanguage, ITag } from "../../../interfaces";
 import { Description } from "./Description";
@@ -13,6 +14,7 @@ import { TagGroup } from "../../TagGroup"
 import { UpdatedDate } from "./UpdatedDate";
 
 interface IProps {
+    columnVisibility: IColumnVisibility[];
     description: string;
     descriptionSourceUrl: string;
     discontinuedDate: string;
@@ -28,7 +30,9 @@ interface IProps {
 
 export const InfoCard = (props: IProps) =>
     <div className="col-9">
-        <TagGroup tags={props.tags}/>
+        {props.columnVisibility.filter((c: IColumnVisibility) => c.column === "Tags")[0].visible
+             ? null
+             : <TagGroup tags={props.tags}/>}
         <div>
             {props.syntax
                  ? props.syntax.supportedSoftware.map(

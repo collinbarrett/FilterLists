@@ -4,7 +4,8 @@ import "../../../../utils/loader.css";
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import "./listsTable.css";
-import { DetailsButton, Languages, License, Maintainers, Name, RuleCount, Software, Tags, UpdatedDate } from "./columns";
+import { DetailsButton, Languages, License, Maintainers, Name, RuleCount, Software, Tags, UpdatedDate } from
+    "./columns";
 import { IListDetails } from "../../components/detailsExpander";
 import { DetailsExpander } from "../../components";
 
@@ -37,12 +38,14 @@ export const ListsTable = (props: IProps) =>
               DetailsButton
           ]}
           defaultSorted={[{ id: "name" }]}
-          SubComponent={(r: any) => <DetailsExpander list={mapListDetails(({
-              list: r.original,
-              languages: props.languages,
-              maintainers: props.maintainers,
-              tags: props.tags
-          } as ICreateListDtoProps))}/>}
+          SubComponent={(r: any) =>
+              <DetailsExpander columnVisibility={props.columnVisibility}
+                               list={mapListDetails(({
+                                   list: r.original,
+                                   languages: props.languages,
+                                   maintainers: props.maintainers,
+                                   tags: props.tags
+                               } as ICreateListDtoProps))}/>}
           className="-striped -highlight"/>
     : <div className="loader">Loading...</div>;
 

@@ -1,7 +1,7 @@
-﻿import { DetailsExpanderContainer } from "./DetailsExpanderContainer";
+﻿import { DetailsExpander } from "./DetailsExpander";
 import { IListDetails } from "./IListDetails";
 
 export {
-    DetailsExpanderContainer as DetailsExpander,
+    DetailsExpander,
     IListDetails
     };
