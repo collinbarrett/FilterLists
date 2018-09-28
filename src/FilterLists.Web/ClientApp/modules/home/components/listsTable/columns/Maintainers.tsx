@@ -10,7 +10,7 @@ export const Maintainers = (columnVisibility: IColumnVisibility[], maintainers: 
     filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, maintainers),
     Filter: ({ filter, onChange }: any) => Filter({ onChange, filter }, maintainers),
     Cell: (c: any) => Cell(c.value, maintainers),
-    width: 215,
+    width: 140,
     headerClassName: "d-none d-md-block",
     className: "d-none d-md-block",
     show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Maintainers")[0].visible
