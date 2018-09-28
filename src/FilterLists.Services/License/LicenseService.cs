@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -17,14 +18,15 @@ namespace FilterLists.Services.License
         {
         }
 
-        public async Task<IEnumerable<LicenseDto>> GetAllAsync() =>
-            await DbContext.Licenses
-                           .ProjectTo<LicenseDto>(MapConfig)
-                           .ToListAsync();
+        private IQueryable<Data.Entities.License> ImplementedLicenses =>
+            DbContext.Licenses.Where(l => l.FilterLists.Any());
 
-        public async Task<LicenseDto> GetByIdAsync(int id) =>
-            await DbContext.Licenses
-                           .ProjectTo<LicenseDto>(MapConfig)
-                           .FirstOrDefaultAsync(l => l.Id == id);
+        public async Task<IEnumerable<LicenseDto>> GetAllImplementedAsync() =>
+            await ImplementedLicenses.ProjectTo<LicenseDto>(MapConfig)
+                                     .ToListAsync();
+
+        public async Task<LicenseDto> GetImplementedByIdAsync(int id) =>
+            await ImplementedLicenses.ProjectTo<LicenseDto>(MapConfig)
+                                     .FirstOrDefaultAsync(l => l.Id == id);
     }
 }
