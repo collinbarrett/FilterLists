@@ -12,7 +12,7 @@ export const RuleCount = (columnVisibility: IColumnVisibility[]) =>
     width: 85,
     headerClassName: "d-none d-md-block",
     className: "d-none d-md-block",
-    show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Rule Count")[0].visible
+    show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Rules")[0].visible
 } as Column);
 
 const sortMethod = (a: string, b: string) =>
