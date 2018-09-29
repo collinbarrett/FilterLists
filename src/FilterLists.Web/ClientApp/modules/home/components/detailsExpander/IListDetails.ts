@@ -1,4 +1,4 @@
-﻿import { ILanguage, IMaintainer, ISyntax, ITag } from "../../interfaces";
+﻿import { ILanguage, ILicense, IMaintainer, ISyntax, ITag } from "../../interfaces";
 
 export interface IListDetails {
     id: number;
@@ -12,6 +12,7 @@ export interface IListDetails {
     homeUrl: string;
     issuesUrl: string;
     languages: ILanguage[];
+    license: ILicense;
     maintainers: IMaintainer[];
     name: string;
     policyUrl: string;

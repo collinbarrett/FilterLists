@@ -1,9 +1,10 @@
 import * as React from "react";
 import { IColumnVisibility } from "../../../interfaces";
-import { ILanguage, ISoftware, ISyntax, ITag } from "../../../interfaces";
+import { ILanguage, ILicense, ISoftware, ISyntax, ITag } from "../../../interfaces";
 import { Description } from "./Description";
 import { DiscontinuedDate } from "./DiscontinuedDate";
 import { Languages } from "./Languages";
+import { License } from "./License";
 import { PublishedDate } from "./PublishedDate";
 import { RuleCount } from "./RuleCount";
 import { SoftwareIcon } from "../../softwareIcon";
@@ -17,6 +18,7 @@ interface IProps {
     descriptionSourceUrl: string;
     discontinuedDate: string;
     languages: ILanguage[];
+    license: ILicense;
     name: string;
     publishedDate: string;
     ruleCount: number;
@@ -50,7 +52,9 @@ export const InfoCard = (props: IProps) =>
                  ? null
                  : <UpdatedDate {...props}/>}
             <PublishedDate date={props.publishedDate}/>
-            <Syntax {...props}/>
-            { /*<License {...props.license}/>*/ }
+            <Syntax {...props} />
+            {props.columnVisibility.filter((c: IColumnVisibility) => c.column === "License")[0].visible
+                ? null
+                : <License {...props} />}
         </ul>
     </div>;
