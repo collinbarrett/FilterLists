@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using FilterLists.Data;
 using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +13,6 @@ namespace FilterLists.Services
         }
 
         public async Task<int> GetCountAll() =>
-            await DbContext.Rules.AsNoTracking().Where(r => r.SnapshotRules.Any()).CountAsync();
+            await DbContext.Rules.AsNoTracking().CountAsync();
     }
 }
