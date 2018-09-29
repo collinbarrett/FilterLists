@@ -5,6 +5,7 @@ import { Maintainers } from "./Maintainers";
 import { Name } from "./Name";
 import { RuleCount } from "./RuleCount";
 import { Software } from "./Software";
+import { Syntax } from "./Syntax";
 import { Tags } from "./Tags";
 import { UpdatedDate } from "./UpdatedDate";
 
@@ -16,6 +17,7 @@ export {
     Name,
     RuleCount,
     Software,
+    Syntax,
     Tags,
     UpdatedDate
     };

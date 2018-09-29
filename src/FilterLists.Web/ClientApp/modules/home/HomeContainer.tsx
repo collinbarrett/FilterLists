@@ -1,6 +1,6 @@
 import * as React from "react";
 import "isomorphic-fetch";
-import { ILanguage, ILicense, IList, IMaintainer, ISoftware, ITag } from "./interfaces";
+import { ILanguage, ILicense, IList, IMaintainer, ISoftware, ISyntax, ITag } from "./interfaces";
 import { Home } from "./Home";
 
 interface IState {
@@ -10,6 +10,7 @@ interface IState {
     maintainers: IMaintainer[];
     ruleCount: number;
     software: ISoftware[];
+    syntaxes: ISyntax[];
     tags: ITag[];
 };
 
@@ -23,6 +24,7 @@ export class HomeContainer extends React.Component<{}, IState> {
             maintainers: [],
             ruleCount: 0,
             software: [],
+            syntaxes: [],
             tags: []
         };
     }
@@ -33,6 +35,7 @@ export class HomeContainer extends React.Component<{}, IState> {
         this.fetchLists();
         this.fetchMaintainers();
         this.fetchSoftware();
+        this.fetchSyntaxes();
         this.fetchTags();
         this.fetchRuleCount();
     };
@@ -65,6 +68,12 @@ export class HomeContainer extends React.Component<{}, IState> {
         fetch("https://filterlists.com/api/v1/software")
             .then(r => r.json() as Promise<ISoftware[]>)
             .then(p => { this.setState({ software: p }); });
+    };
+
+    fetchSyntaxes() {
+        fetch("https://filterlists.com/api/v1/syntaxes")
+            .then(r => r.json() as Promise<ISyntax[]>)
+            .then(p => { this.setState({ syntaxes: p }); });
     };
 
     fetchTags() {
