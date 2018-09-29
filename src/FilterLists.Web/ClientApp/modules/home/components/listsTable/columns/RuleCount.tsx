@@ -17,12 +17,12 @@ const sortMethod = (a: string, b: string) =>
     a
     ? b
       ? a > b
-        ? 1
-        : -1
-      : 1
-    : -1;
+        ? -1
+        : 1
+      : -1
+    : 1;
 
 const Cell = (ruleCount: number) =>
     ruleCount
-    ? <span>{ruleCount.toLocaleString() }</span>
+    ? <span>{ ruleCount.toLocaleString() }</span>
     : null;

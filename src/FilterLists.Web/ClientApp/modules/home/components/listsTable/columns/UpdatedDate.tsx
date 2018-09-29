@@ -18,10 +18,10 @@ const sortMethod = (a: string, b: string) =>
     a && moment(a).isValid()
     ? (b && moment(b).isValid()
            ? (moment(a).isBefore(b)
-                  ? -1
-                  : 1)
-           : 1)
-    : -1;
+                  ? 1
+                  : -1)
+           : -1)
+    : 1;
 
 const Cell = (updatedDate: string) =>
     updatedDate

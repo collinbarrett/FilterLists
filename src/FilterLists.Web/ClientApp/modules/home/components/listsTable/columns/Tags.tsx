@@ -6,7 +6,8 @@ import { IColumnVisibility, ITag } from "../../../interfaces";
 export const Tags = (columnVisibility: IColumnVisibility[], tags: ITag[]) => {
     const tagsSorted = tags.sort((a: ITag, b: ITag) => a.name.localeCompare(b.name));
     return ({
-        Header: <span title="Generic taxonomies applied to the FilterList to provide information about its contents and/or purpose.">Tags</span>,
+        Header:
+            <span title="Generic taxonomies applied to the FilterList to provide information about its contents and/or purpose.">Tags</span>,
         accessor: "tagIds",
         filterable: true,
         filterMethod: (f: Filter, r: any[]) => filterMethod(f, r),
@@ -46,13 +47,13 @@ const sortMethod = (a: number[], b: number[], tags: ITag[]): any => {
                    ? tags.filter((t: ITag) => a.indexOf(t.id) > -1).map((t: ITag) => t.name).join()
                      .toLowerCase() >
                      tags.filter((t: ITag) => b.indexOf(t.id) > -1).map((t: ITag) => t.name).join().toLowerCase()
-                     ? -1
-                     : 1
-                   : a.length > b.length
                      ? 1
                      : -1
-                 : 1
-               : -1;
+                   : a.length > b.length
+                     ? -1
+                     : 1
+                 : -1
+               : 1;
 };
 
 const Cell = (tagIds: number[], tags: ITag[]) =>
