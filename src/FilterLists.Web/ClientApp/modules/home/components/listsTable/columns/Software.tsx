@@ -3,17 +3,20 @@ import { Column, Filter } from "react-table";
 import { IColumnVisibility, ISoftware } from "../../../interfaces";
 import { SoftwareIcon } from "../../softwareIcon";
 
-export const Software = (columnVisibility: IColumnVisibility[], software: ISoftware[]) => ({
-    Header: "Software",
-    accessor: "syntaxId",
-    filterable: true,
-    filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, software),
-    Filter: ({ filter, onChange }: any) => Filter({ onChange, filter }, software),
-    sortable: false,
-    Cell: (c: any) => Cell(c.value, software),
-    width: 155,
-    show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Software")[0].visible
-} as Column);
+export const Software = (columnVisibility: IColumnVisibility[], software: ISoftware[]) => {
+    const softwareSorted = software.sort((a, b) => a.name.localeCompare(b.name));
+    return ({
+        Header: "Software",
+        accessor: "syntaxId",
+        filterable: true,
+        filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, softwareSorted),
+        Filter: ({ filter, onChange }: any) => Filter({ onChange, filter }, softwareSorted),
+        sortMethod: (a: number, b: number) => sortMethod(a, b, softwareSorted),
+        Cell: (c: any) => Cell(c.value, software),
+        width: 155,
+        show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Software")[0].visible
+    } as Column);
+};
 
 const filterMethod = (f: Filter, r: any[], software: ISoftware[]): boolean => {
     const isAny = f.value === "any";
@@ -30,10 +33,31 @@ const Filter = (props: any, software: ISoftware[]) =>
         value={props.filter ? props.filter.value : "any"}>
         <option value="any">Any</option>
         {software.length > 0
-             ? software.sort((a, b) => a.name.localeCompare(b.name)).map(
-                 (s: ISoftware, i: number) => <option value={s.id} key={i}>{s.name}</option>)
+             ? software.map((s: ISoftware, i: number) => <option value={s.id} key={i}>{s.name}</option>)
              : null}
     </select>;
+
+const sortMethod = (a: number, b: number, software: ISoftware[]) => {
+    if (a) {
+        if (b) {
+            const aSoftwareNames =
+                software.filter((s: ISoftware) => s.syntaxIds.indexOf(a) > -1).map((s: ISoftware) => s.name);
+            const bSoftwareNames =
+                software.filter((s: ISoftware) => s.syntaxIds.indexOf(b) > -1).map((s: ISoftware) => s.name);
+            if (aSoftwareNames.length === bSoftwareNames.length) {
+                return aSoftwareNames.join().toLowerCase() > bSoftwareNames.join().toLowerCase() ? 1 : -1;
+            } else if (aSoftwareNames.length > bSoftwareNames.length) {
+                return -1;
+            } else {
+                return 1;
+            }
+        } else {
+            return -1;
+        }
+    } else {
+        return 1;
+    }
+};
 
 const Cell = (listSyntaxId: number, software: ISoftware[]) =>
     listSyntaxId
