@@ -63,5 +63,9 @@ const sortMethod = (a: number, b: number, software: ISoftware[]) => {
 const Cell = (listSyntaxId: number, software: ISoftware[]) =>
     listSyntaxId
     ? software.filter((s: ISoftware) => s.syntaxIds.indexOf(listSyntaxId) > -1)
-    .map((s: ISoftware, i: number) => <SoftwareIcon id={s.id} key={i}/>)
+    .map((s: ISoftware, i: number) => s.homeUrl
+                                      ? <a href={s.homeUrl} key={i}>
+                                            <SoftwareIcon id={s.id}/>
+                                        </a>
+                                      : <SoftwareIcon id={s.id} key={i}/>)
     : null;
