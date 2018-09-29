@@ -8,7 +8,6 @@ const columnVisibilityDefaults: IColumnVisibility[] = [
     { column: "Tags", visible: true },
     { column: "Updated", visible: false },
     { column: "Rules", visible: false },
-    //{ column: "Syntax", visible: false },
     { column: "License", visible: false },
     { column: "Maintainers", visible: false }
 ];

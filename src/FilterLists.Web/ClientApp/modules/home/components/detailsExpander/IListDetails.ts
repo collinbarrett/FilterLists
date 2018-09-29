@@ -1,4 +1,4 @@
-﻿import { ILanguage, IMaintainer, ITag } from "../../interfaces";
+﻿import { ILanguage, IMaintainer, ISyntax, ITag } from "../../interfaces";
 
 export interface IListDetails {
     id: number;
@@ -12,33 +12,15 @@ export interface IListDetails {
     homeUrl: string;
     issuesUrl: string;
     languages: ILanguage[];
-    license: IListLicense;
     maintainers: IMaintainer[];
     name: string;
     policyUrl: string;
     publishedDate: string;
     ruleCount: number;
     submissionUrl: string;
-    syntax: IListSyntax;
+    syntax: ISyntax;
     tags: ITag[];
     updatedDate: string;
     viewUrl: string;
     viewUrlMirrors: string[];
-};
-
-export interface IListLicense {
-    descriptionUrl: string;
-    name: string;
-};
-
-export interface IListSyntax {
-    definitionUrl: string;
-    name: string;
-    supportedSoftware: ISyntaxSupportedSoftware[];
-};
-
-export interface ISyntaxSupportedSoftware {
-    homeUrl: string;
-    id: number;
-    name: string;
 };

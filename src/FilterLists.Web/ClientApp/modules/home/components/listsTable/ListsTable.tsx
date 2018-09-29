@@ -4,7 +4,7 @@ import "../../../../utils/loader.css";
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import "./listsTable.css";
-import { DetailsButton, Languages, License, Maintainers, Name, RuleCount, Software, Syntax, Tags, UpdatedDate } from
+import { DetailsButton, Languages, License, Maintainers, Name, RuleCount, Software, Tags, UpdatedDate } from
     "./columns";
 import { IListDetails } from "../../components/detailsExpander";
 import { DetailsExpander } from "../../components";
@@ -34,7 +34,6 @@ export const ListsTable = (props: IProps) =>
               Tags(props.columnVisibility, props.tags),
               UpdatedDate(props.columnVisibility),
               RuleCount(props.columnVisibility),
-              //Syntax(props.columnVisibility, props.syntaxes),
               License(props.columnVisibility, props.licenses),
               Maintainers(props.columnVisibility, props.maintainers),
               DetailsButton
@@ -46,8 +45,10 @@ export const ListsTable = (props: IProps) =>
                                    list: r.original,
                                    languages: props.languages,
                                    maintainers: props.maintainers,
+                                   syntaxes: props.syntaxes,
                                    tags: props.tags
-                               } as ICreateListDtoProps))}/>}
+                               } as ICreateListDtoProps))}
+                               software={props.software}/>}
           className="-striped -highlight"/>
     : <div className="loader">Loading...</div>;
 
@@ -55,6 +56,7 @@ interface ICreateListDtoProps {
     list: IList;
     languages: ILanguage[];
     maintainers: IMaintainer[];
+    syntaxes: ISyntax[];
     tags: ITag[];
 };
 
@@ -73,7 +75,6 @@ const mapListDetails = (props: ICreateListDtoProps): IListDetails =>
     languages: props.list.languageIds
                    ? props.languages.filter((l: ILanguage) => props.list.languageIds.indexOf(l.id) > -1)
                    : undefined,
-    //license:,
     maintainers: props.list.maintainerIds
                      ? props.maintainers.filter((m: IMaintainer) => props.list.maintainerIds.indexOf(m.id) > -1)
                      : undefined,
@@ -82,7 +83,7 @@ const mapListDetails = (props: ICreateListDtoProps): IListDetails =>
     publishedDate: props.list.publishedDate,
     ruleCount: props.list.ruleCount,
     submissionUrl: props.list.submissionUrl,
-    //syntax:,
+    syntax: props.syntaxes.filter((s: ISyntax) => props.list.syntaxId === s.id)[0],
     tags: props.list.tagIds ? props.tags.filter((t: ITag) => props.list.tagIds.indexOf(t.id) > -1) : undefined,
     updatedDate: props.list.updatedDate,
     viewUrl: props.list.viewUrl,
