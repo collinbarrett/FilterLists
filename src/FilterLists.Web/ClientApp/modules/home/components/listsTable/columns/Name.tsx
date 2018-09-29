@@ -14,7 +14,7 @@ const filterMethod = (f: Filter, r: any[]): boolean =>
     r[f.id as any].toUpperCase().includes(f.value.toUpperCase());
 
 const sortMethod = (a: string, b: string) =>
-    a.toUpperCase() > b.toUpperCase() ? 1 : -1;
+    a.toLowerCase() > b.toLowerCase() ? 1 : -1;
 
 const Cell = (name: string) =>
     name

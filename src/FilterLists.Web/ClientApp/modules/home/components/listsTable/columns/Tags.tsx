@@ -3,18 +3,20 @@ import { Column, Filter } from "react-table";
 import { TagGroup } from "../../TagGroup";
 import { IColumnVisibility, ITag } from "../../../interfaces";
 
-export const Tags = (columnVisibility: IColumnVisibility[], tags: ITag[]) =>
-({
-    Header: "Tags",
-    accessor: "tagIds",
-    filterable: true,
-    filterMethod: (f: Filter, r: any[]) => filterMethod(f, r),
-    Filter: ({ onChange, filter }: any) => Filter({ onChange, filter }, tags),
-    sortMethod: (a: number[], b: number[]) => sortMethod(a, b),
-    Cell: (c: any) => Cell(c.value, tags),
-    width: 215,
-    show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Tags")[0].visible
-} as Column);
+export const Tags = (columnVisibility: IColumnVisibility[], tags: ITag[]) => {
+    const tagsSorted = tags.sort((a: ITag, b: ITag) => a.name.localeCompare(b.name));
+    return ({
+        Header: "Tags",
+        accessor: "tagIds",
+        filterable: true,
+        filterMethod: (f: Filter, r: any[]) => filterMethod(f, r),
+        Filter: ({ onChange, filter }: any) => Filter({ onChange, filter }, tagsSorted),
+        sortMethod: (a: number[], b: number[]) => sortMethod(a, b, tagsSorted),
+        Cell: (c: any) => Cell(c.value, tagsSorted),
+        width: 215,
+        show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Tags")[0].visible
+    } as Column);
+};
 
 const filterMethod = (f: Filter, r: any[]): boolean => {
     const listTagIds = r[f.id as any];
@@ -30,22 +32,28 @@ const Filter = (props: any, tags: ITag[]) =>
             value={props.filter ? props.filter.value : "any"}>
         <option value="any">Any</option>
         {tags.length > 0
-             ? tags.sort((a, b) => a.name.localeCompare(b.name))
-             .map((t: ITag, i: number) =>
+             ? tags.map((t: ITag, i: number) =>
                  <option value={t.id} key={i}>
                      {t.name} ({t.filterListIds ? t.filterListIds.length : 0})
                  </option>)
              : null}
     </select>;
 
-const sortMethod = (a: number[], b: number[]): any =>
-    a
-    ? b
-      ? a.length > b.length
-        ? 1
-        : -1
-      : 1
-    : -1;
+const sortMethod = (a: number[], b: number[], tags: ITag[]): any => {
+    return a
+               ? b
+                 ? a.length === b.length
+                   ? tags.filter((t: ITag) => a.indexOf(t.id) > -1).map((t: ITag) => t.name).join()
+                     .toLowerCase() >
+                     tags.filter((t: ITag) => b.indexOf(t.id) > -1).map((t: ITag) => t.name).join().toLowerCase()
+                     ? -1
+                     : 1
+                   : a.length > b.length
+                     ? 1
+                     : -1
+                 : 1
+               : -1;
+};
 
 const Cell = (tagIds: number[], tags: ITag[]) =>
     tagIds
