@@ -5,7 +5,7 @@ import { IColumnVisibility } from "../../../interfaces";
 
 export const UpdatedDate = (columnVisibility: IColumnVisibility[]) =>
 ({
-    Header: "Updated",
+    Header: <span title="The estimated date that the FilterList was last updated by the maintainer.">Updated</span>,
     accessor: "updatedDate",
     sortMethod: (a: string, b: string) => sortMethod(a, b),
     Cell: (c: any) => Cell(c.value),

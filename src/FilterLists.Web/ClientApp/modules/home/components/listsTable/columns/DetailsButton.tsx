@@ -2,7 +2,7 @@ import * as React from "react";
 import { Column, RowRenderProps } from "react-table";
 
 export const DetailsButton = {
-    Header: "Details",
+    Header: <span title="Learn more about the FilterList.">Details</span>,
     accessor: "id",
     sortable: false,
     expander: true,

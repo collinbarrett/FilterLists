@@ -4,7 +4,7 @@ import { IColumnVisibility, IMaintainer } from "../../../interfaces";
 
 export const Maintainers = (columnVisibility: IColumnVisibility[], maintainers: IMaintainer[]) =>
 ({
-    Header: "Maintainers",
+    Header: <span title="Individuals, groups, or organizations who maintain the FilterList.">Maintainers</span>,
     accessor: "maintainerIds",
     filterable: true,
     filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, maintainers),

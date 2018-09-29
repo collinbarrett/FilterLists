@@ -6,7 +6,7 @@ import { IColumnVisibility, ITag } from "../../../interfaces";
 export const Tags = (columnVisibility: IColumnVisibility[], tags: ITag[]) => {
     const tagsSorted = tags.sort((a: ITag, b: ITag) => a.name.localeCompare(b.name));
     return ({
-        Header: "Tags",
+        Header: <span title="Generic taxonomies applied to the FilterList to provide information about its contents and/or purpose.">Tags</span>,
         accessor: "tagIds",
         filterable: true,
         filterMethod: (f: Filter, r: any[]) => filterMethod(f, r),

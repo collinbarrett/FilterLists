@@ -4,7 +4,7 @@ import { IColumnVisibility, ISyntax } from "../../../interfaces";
 
 //TODO: https://github.com/collinbarrett/FilterLists/issues/488
 export const Syntax = (columnVisibility: IColumnVisibility[], syntaxes: ISyntax[]) => ({
-    Header: "Syntax",
+    Header: <span title="A named set of rules that govern the format of the FilterList.">Syntax</span>,
     accessor: "syntaxId",
     filterable: true,
     filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, syntaxes),
