@@ -37,11 +37,27 @@ namespace FilterLists.Services.Snapshot
 
         private async Task CleanupFailedSnapshots()
         {
+            await CleanupOrphanedSnapshotsRules();
+            await CleanupOrphanedRules();
+        }
+
+        private async Task CleanupOrphanedSnapshotsRules()
+        {
             const string command =
                 @"DELETE snapshots_rules
                   FROM snapshots_rules
                   JOIN snapshots ON snapshots.Id = snapshots_rules.SnapshotId
                   WHERE snapshots.WasSuccessful = 0;";
+            await DbContext.Database.ExecuteSqlCommandAsync(command);
+        }
+        
+        private async Task CleanupOrphanedRules()
+        {
+            const string command =
+                @"DELETE rules
+                  FROM rules
+                  LEFT JOIN snapshots_rules ON rules.Id = snapshots_rules.RuleId
+                  WHERE snapshots_rules.RuleId IS NULL;";
             await DbContext.Database.ExecuteSqlCommandAsync(command);
         }
 
