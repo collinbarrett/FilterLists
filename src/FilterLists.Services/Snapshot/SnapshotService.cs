@@ -13,12 +13,6 @@ namespace FilterLists.Services.Snapshot
 {
     public class SnapshotService : Service
     {
-        private readonly Expression<Func<Data.Entities.FilterList, bool>> ifLastSnapFailed =
-            l => l.Snapshots
-                  .OrderByDescending(s => s.CreatedDateUtc)
-                  .Select(s => s.WasUpdated && !s.WasSuccessful)
-                  .FirstOrDefault();
-
         private readonly Expression<Func<Data.Entities.FilterList, DateTime?>> lastSnapTimestamp =
             l => l.Snapshots
                   .Select(s => s.CreatedDateUtc)
@@ -55,7 +49,6 @@ namespace FilterLists.Services.Snapshot
             await DbContext
                   .FilterLists
                   .OrderBy(l => l.Snapshots.Any())
-                  .ThenByDescending(ifLastSnapFailed)
                   .ThenBy(lastSnapTimestamp)
                   .Take(batchSize)
                   .ProjectTo<FilterListViewUrlDto>(MapConfig)
