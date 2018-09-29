@@ -2,6 +2,7 @@ import * as React from "react";
 import { Column, Filter } from "react-table";
 import { IColumnVisibility, ISyntax } from "../../../interfaces";
 
+//TODO: https://github.com/collinbarrett/FilterLists/issues/488
 export const Syntax = (columnVisibility: IColumnVisibility[], syntaxes: ISyntax[]) => ({
     Header: "Syntax",
     accessor: "syntaxId",
