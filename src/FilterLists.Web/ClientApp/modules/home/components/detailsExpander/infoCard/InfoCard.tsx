@@ -1,11 +1,9 @@
 import * as React from "react";
 import { IColumnVisibility } from "../../../interfaces";
-import { IListLicense, IListSyntax, ISyntaxSupportedSoftware } from "../IListDetails";
-import { ILanguage, ITag } from "../../../interfaces";
+import { ILanguage, ISoftware, ISyntax, ITag } from "../../../interfaces";
 import { Description } from "./Description";
 import { DiscontinuedDate } from "./DiscontinuedDate";
 import { Languages } from "./Languages";
-import { License } from "./License";
 import { PublishedDate } from "./PublishedDate";
 import { RuleCount } from "./RuleCount";
 import { SoftwareIcon } from "../../softwareIcon";
@@ -19,11 +17,11 @@ interface IProps {
     descriptionSourceUrl: string;
     discontinuedDate: string;
     languages: ILanguage[];
-    license: IListLicense;
     name: string;
     publishedDate: string;
     ruleCount: number;
-    syntax: IListSyntax;
+    software: ISoftware[];
+    syntax: ISyntax;
     tags: ITag[];
     updatedDate: string;
 };
@@ -34,13 +32,12 @@ export const InfoCard = (props: IProps) =>
              ? null
              : <TagGroup tags={props.tags}/>}
         <div>
-            {props.syntax
-                 ? props.syntax.supportedSoftware.map(
-                     (s: ISyntaxSupportedSoftware, i: number) =>
-                     <a href={s.homeUrl} key={i}>
-                         <SoftwareIcon id={s.id} key={i}/>
-                     </a>)
-                 : null}
+            {props.columnVisibility.filter((c: IColumnVisibility) => c.column === "Software")[0].visible
+                 ? null
+                 : props.syntax
+                   ? props.software.filter((s: ISoftware) => s.syntaxIds.indexOf(props.syntax.id) > -1)
+                   .map((s: ISoftware, i: number) => <SoftwareIcon id={s.id} key={i}/>)
+                   : null}
         </div>
         <Description {...props} url={props.descriptionSourceUrl}/>
         <ul className="list-group list-group-flush">
@@ -54,6 +51,6 @@ export const InfoCard = (props: IProps) =>
                  : <UpdatedDate {...props}/>}
             <PublishedDate date={props.publishedDate}/>
             <Syntax {...props.syntax}/>
-            <License {...props.license}/>
+            { /*<License {...props.license}/>*/ }
         </ul>
     </div>;

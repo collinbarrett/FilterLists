@@ -1,7 +1,6 @@
 import * as React from "react";
-import { IListLicense as IListLicenseDto } from "../IListDetails";
 
-export const License = (props: IListLicenseDto) =>
+export const License = (props: any) =>
     props.name
     ? (props.descriptionUrl
            ? <li className="list-group-item">

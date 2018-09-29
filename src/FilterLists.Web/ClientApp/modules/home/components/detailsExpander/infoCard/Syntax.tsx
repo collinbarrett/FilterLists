@@ -1,7 +1,6 @@
 import * as React from "react";
-import { IListSyntax as IListSyntaxDto } from "../IListDetails";
 
-export const Syntax = (props: IListSyntaxDto) =>
+export const Syntax = (props: any) =>
     props.name
     ? (props.definitionUrl
            ? <li className="list-group-item">
