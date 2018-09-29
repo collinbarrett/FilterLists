@@ -14,7 +14,7 @@ export const Tags = (columnVisibility: IColumnVisibility[], tags: ITag[]) => {
         Filter: ({ onChange, filter }: any) => Filter({ onChange, filter }, tagsSorted),
         sortMethod: (a: number[], b: number[]) => sortMethod(a, b, tagsSorted),
         Cell: (c: any) => Cell(c.value, tagsSorted),
-        width: 215,
+        width: 220,
         show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Tags")[0].visible
     } as Column);
 };
