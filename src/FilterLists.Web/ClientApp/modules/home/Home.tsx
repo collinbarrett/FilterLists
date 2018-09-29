@@ -52,7 +52,7 @@ export class Home extends React.Component<IProps, IState> {
 
     updatePageSize() {
         this.setState({
-            pageSize: Math.max(Math.floor((window.innerHeight - 386) / 52), 5)
+            pageSize: Math.max(Math.floor((window.innerHeight - 400) / 52), 5)
         });
     };
 
