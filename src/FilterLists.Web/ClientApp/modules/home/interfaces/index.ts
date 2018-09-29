@@ -4,8 +4,8 @@ import { ILicense } from "./ILicense";
 import { IList } from "./IList";
 import { IMaintainer } from "./IMaintainer";
 import { ISoftware } from "./ISoftware";
+import { ISyntax } from "./ISyntax";
 import { ITag } from "./ITag";
-
 
 export {
     IColumnVisibility,
@@ -14,5 +14,6 @@ export {
     IList,
     IMaintainer,
     ISoftware,
+    ISyntax,
     ITag
     };
