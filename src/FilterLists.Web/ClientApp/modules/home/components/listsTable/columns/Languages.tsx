@@ -2,19 +2,21 @@ import * as React from "react";
 import { Column, Filter } from "react-table";
 import { IColumnVisibility, ILanguage } from "../../../interfaces";
 
-export const Languages = (columnVisibility: IColumnVisibility[], languages: ILanguage[]) =>
-({
-    Header: "Languages",
-    accessor: "languageIds",
-    filterable: true,
-    filterMethod: (f: Filter, r: any[]) => filterMethod(f, r),
-    Filter: ({ onChange, filter }: any) => Filter({ onChange, filter }, languages),
-    sortMethod: (a: number[], b: number[]) => sortMethod(a, b, languages),
-    Cell: (c: any) => Cell(c.value, languages),
-    style: { whiteSpace: "inherit" },
-    width: 95,
-    show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Languages")[0].visible
-} as Column);
+export const Languages = (columnVisibility: IColumnVisibility[], languages: ILanguage[]) => {
+    const languagesSorted = languages.sort((a, b) => a.name.localeCompare(b.name));
+    return ({
+        Header: "Languages",
+        accessor: "languageIds",
+        filterable: true,
+        filterMethod: (f: Filter, r: any[]) => filterMethod(f, r),
+        Filter: ({ onChange, filter }: any) => Filter({ onChange, filter }, languagesSorted),
+        sortMethod: (a: number[], b: number[]) => sortMethod(a, b, languagesSorted),
+        Cell: (c: any) => Cell(c.value, languagesSorted),
+        style: { whiteSpace: "inherit" },
+        width: 95,
+        show: columnVisibility.filter((c: IColumnVisibility) => c.column === "Languages")[0].visible
+    } as Column);
+};
 
 const filterMethod = (f: Filter, r: any[]): boolean => {
     const listLanguageIds = r[f.id as any];
@@ -30,8 +32,7 @@ const Filter = (props: any, languages: ILanguage[]) =>
             value={props.filter ? props.filter.value : "any"}>
         <option value="any">Any</option>
         {languages.length > 0
-             ? languages.sort((a, b) => a.name.localeCompare(b.name))
-             .map((l: ILanguage, i: number) =>
+             ? languages.map((l: ILanguage, i: number) =>
                  <option value={l.id} key={i}>
                      {l.name} ({l.filterListIds ? l.filterListIds.length : 0})
                  </option>)
@@ -41,9 +42,11 @@ const Filter = (props: any, languages: ILanguage[]) =>
 const sortMethod = (a: number[], b: number[], languages: ILanguage[]) => {
     if (a && a.length > 0) {
         if (b && b.length > 0) {
-            const aFirstLanguageName = languages.filter((l: ILanguage) => l.id === a[0])[0].name;
-            const bFirstLanguageName = languages.filter((l: ILanguage) => l.id === b[0])[0].name;
-            return aFirstLanguageName.toLowerCase() > bFirstLanguageName.toLowerCase() ? 1 : -1;
+            const aLanguageNames =
+                languages.filter((l: ILanguage) => l.id === a[0]).map((l: ILanguage) => l.name).join();
+            const bLanguageNames =
+                languages.filter((l: ILanguage) => l.id === b[0]).map((l: ILanguage) => l.name).join();
+            return aLanguageNames.toLowerCase() > bLanguageNames.toLowerCase() ? 1 : -1;
         } else {
             return -1;
         }
