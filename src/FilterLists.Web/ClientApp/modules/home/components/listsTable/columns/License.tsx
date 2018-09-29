@@ -56,9 +56,11 @@ const sortMethod = (a: number, b: number, licenses: ILicense[]) => {
     }
 };
 
-const Cell = (licenseId: number, licenses: ILicense[]) =>
-    licenseId
-    ? <div className="fl-tag-container">
-          {licenses.filter((l: ILicense) => licenseId === l.id)[0].name}
-      </div>
-    : null;
+const Cell = (licenseId: number, licenses: ILicense[]) => {
+    const license = licenses.filter((l: ILicense) => licenseId === l.id)[0];
+    return license
+               ? <div className="fl-tag-container">
+                     {license.descriptionUrl ? <a href={license.descriptionUrl}>{license.name}</a> : license.name}
+                 </div>
+               : null;
+};
