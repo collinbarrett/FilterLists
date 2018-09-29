@@ -43,9 +43,9 @@ const sortMethod = (a: number[], b: number[], languages: ILanguage[]) => {
     if (a && a.length > 0) {
         if (b && b.length > 0) {
             const aLanguageNames =
-                languages.filter((l: ILanguage) => l.id === a[0]).map((l: ILanguage) => l.name).join();
+                languages.filter((l: ILanguage) => a.indexOf(l.id) > -1).map((l: ILanguage) => l.name).join();
             const bLanguageNames =
-                languages.filter((l: ILanguage) => l.id === b[0]).map((l: ILanguage) => l.name).join();
+                languages.filter((l: ILanguage) => b.indexOf(l.id) > -1).map((l: ILanguage) => l.name).join();
             return aLanguageNames.toLowerCase() > bLanguageNames.toLowerCase() ? 1 : -1;
         } else {
             return -1;
