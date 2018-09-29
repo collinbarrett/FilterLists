@@ -10,7 +10,7 @@
     homeUrl: string;
     issuesUrl: string;
     languageIds: number[];
-    licenseId: string;
+    licenseId: number;
     maintainerIds: number[];
     name: string;
     policyUrl: string;

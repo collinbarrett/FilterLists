@@ -44,6 +44,7 @@ export const ListsTable = (props: IProps) =>
                                list={mapListDetails(({
                                    list: r.original,
                                    languages: props.languages,
+                                   licenses: props.licenses,
                                    maintainers: props.maintainers,
                                    syntaxes: props.syntaxes,
                                    tags: props.tags
@@ -55,6 +56,7 @@ export const ListsTable = (props: IProps) =>
 interface ICreateListDtoProps {
     list: IList;
     languages: ILanguage[];
+    licenses: ILicense[];
     maintainers: IMaintainer[];
     syntaxes: ISyntax[];
     tags: ITag[];
@@ -75,6 +77,7 @@ const mapListDetails = (props: ICreateListDtoProps): IListDetails =>
     languages: props.list.languageIds
                    ? props.languages.filter((l: ILanguage) => props.list.languageIds.indexOf(l.id) > -1)
                    : undefined,
+    license: props.licenses.filter((l: ILicense) => props.list.licenseId === l.id)[0],
     maintainers: props.list.maintainerIds
                      ? props.maintainers.filter((m: IMaintainer) => props.list.maintainerIds.indexOf(m.id) > -1)
                      : undefined,
