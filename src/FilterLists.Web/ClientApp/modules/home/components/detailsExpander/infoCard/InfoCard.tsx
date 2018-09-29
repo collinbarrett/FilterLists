@@ -50,7 +50,7 @@ export const InfoCard = (props: IProps) =>
                  ? null
                  : <UpdatedDate {...props}/>}
             <PublishedDate date={props.publishedDate}/>
-            <Syntax {...props.syntax}/>
+            <Syntax {...props}/>
             { /*<License {...props.license}/>*/ }
         </ul>
     </div>;

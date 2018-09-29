@@ -1,12 +1,17 @@
 import * as React from "react";
+import { ISyntax } from "../../../interfaces";
 
-export const Syntax = (props: any) =>
-    props.name
-    ? (props.definitionUrl
+interface IProps {
+    syntax: ISyntax;
+};
+
+export const Syntax = (props: IProps) =>
+    props.syntax
+    ? (props.syntax.definitionUrl
            ? <li className="list-group-item">
-                 <p>Syntax: <a href={props.definitionUrl}>{props.name}</a></p>
+                 <p>Syntax: <a href={props.syntax.definitionUrl}>{props.syntax.name}</a></p>
              </li>
            : <li className="list-group-item">
-                 <p>Syntax: {props.name}</p>
+                 <p>Syntax: {props.syntax.name}</p>
              </li>)
     : null;
