@@ -34,7 +34,7 @@ export const ListsTable = (props: IProps) =>
               Tags(props.columnVisibility, props.tags),
               UpdatedDate(props.columnVisibility),
               RuleCount(props.columnVisibility),
-              Syntax(props.columnVisibility, props.syntaxes),
+              //Syntax(props.columnVisibility, props.syntaxes),
               License(props.columnVisibility, props.licenses),
               Maintainers(props.columnVisibility, props.maintainers),
               DetailsButton
