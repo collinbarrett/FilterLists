@@ -4,7 +4,7 @@ import { IColumnVisibility, ILicense } from "../../../interfaces";
 
 export const License = (columnVisibility: IColumnVisibility[], licenses: ILicense[]) =>
 ({
-    Header: "License",
+    Header: <span title="A legal document governing the use or redistribution of a FilterList.">License</span>,
     accessor: "licenseId",
     filterable: true,
     filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, licenses),

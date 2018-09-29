@@ -5,7 +5,7 @@ import { IColumnVisibility, ILanguage } from "../../../interfaces";
 export const Languages = (columnVisibility: IColumnVisibility[], languages: ILanguage[]) => {
     const languagesSorted = languages.sort((a, b) => a.name.localeCompare(b.name));
     return ({
-        Header: "Languages",
+        Header: <span title="Written forms of communication used by sites targeted by the FilterList.">Languages</span>,
         accessor: "languageIds",
         filterable: true,
         filterMethod: (f: Filter, r: any[]) => filterMethod(f, r),

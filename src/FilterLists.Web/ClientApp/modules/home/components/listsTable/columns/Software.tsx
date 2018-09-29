@@ -6,7 +6,8 @@ import { SoftwareIcon } from "../../softwareIcon";
 export const Software = (columnVisibility: IColumnVisibility[], software: ISoftware[]) => {
     const softwareSorted = software.sort((a, b) => a.name.localeCompare(b.name));
     return ({
-        Header: "Software",
+        Header:
+            <span title="Applications, browser extensions, or other utilities that consume the FilterList.">Software</span>,
         accessor: "syntaxId",
         filterable: true,
         filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, softwareSorted),

@@ -2,7 +2,7 @@ import * as React from "react";
 import { Column, Filter } from "react-table";
 
 export const Name = {
-    Header: "Name",
+    Header: <span title="The name/title of the FilterList in title case.">Name</span>,
     accessor: "name",
     filterable: true,
     filterMethod: (f: Filter, r: any[]) => filterMethod(f, r),
