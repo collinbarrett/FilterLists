@@ -3381,17 +3381,6 @@
     "viewUrl": "https://1hosts.cf/"
   },
   {
-    "id": 310,
-    "description": "A small supplement list for 1Hosts.",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "licenseId": 5,
-    "name": "1Hosts Addon",
-    "syntaxId": 1,
-    "viewUrl": "https://1hosts.cf/addon/"
-  },
-  {
     "id": 311,
     "description": "A generic filter for adblockers that keeps annoying header and footer bars from filling up your screen.",
     "descriptionSourceUrl": "https://github.com/elypter/generic_annoying_stickybar_filter",
@@ -7610,7 +7599,7 @@
   },
   {
     "id": 719,
-    "description": "This list allows advertising that directly benefits open source projects by paying for development, paying for operations, or providing direct funding. You can read more at https://ads-for-open-source.readthedocs.io/inclusion.html for details on the criteria for inclusion or to get your project included.",
+    "description": "This list allows advertising that directly benefits open source projects by paying for development, paying for operations, or providing direct funding. You can read more at https://ads-for-open-source.readthedocs.io/inclusion.html for details on the criteria for inclusion or to get your project included.",
     "descriptionSourceUrl": "https://github.com/rtfd/ads-for-opensource#advertising-for-open-source-exception-lists",
     "homeUrl": "https://github.com/rtfd/ads-for-opensource",
     "issuesUrl": "https://github.com/rtfd/ads-for-opensource/issues",
@@ -7797,7 +7786,7 @@
   },
   {
     "id": 737,
-    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
+    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
     "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
     "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
     "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
@@ -7808,7 +7797,7 @@
   },
   {
     "id": 738,
-    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
+    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
     "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
     "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
     "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
@@ -7819,7 +7808,7 @@
   },
   {
     "id": 739,
-    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
+    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
     "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
     "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
     "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
@@ -7830,7 +7819,7 @@
   },
   {
     "id": 740,
-    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
+    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
     "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
     "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
     "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
@@ -7841,7 +7830,7 @@
   },
   {
     "id": 741,
-    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
+    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
     "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
     "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
     "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
@@ -7852,7 +7841,7 @@
   },
   {
     "id": 742,
-    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
+    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
     "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
     "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
     "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
@@ -8501,5 +8490,38 @@
     "name": "NLblock",
     "syntaxId": 3,
     "viewUrl": "http://www.verzijlbergh.com/adblock/nlblock.txt"
+  },
+  {
+    "id": 810,
+    "description": "A merged hosts file from a variety of other lists.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "licenseId": 5,
+    "name": "1Hosts (Domains)",
+    "syntaxId": 2,
+    "viewUrl": "https://1hosts.cf/complete/list.txt"
+  },
+  {
+    "id": 811,
+    "description": "A merged hosts file from a variety of other lists.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "licenseId": 5,
+    "name": "1Hosts Mini",
+    "syntaxId": 1,
+    "viewUrl": "https://1hosts.cf/mini/"
+  },
+  {
+    "id": 812,
+    "description": "A merged hosts file from a variety of other lists.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "licenseId": 5,
+    "name": "1Hosts Mini (Domains)",
+    "syntaxId": 2,
+    "viewUrl": "https://1hosts.cf/mini/list.txt"
   }
 ]
