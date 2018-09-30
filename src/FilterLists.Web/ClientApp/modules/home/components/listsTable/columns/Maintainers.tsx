@@ -59,7 +59,11 @@ const sortMethod = (a: number[], b: number[], maintainers: IMaintainer[]) => {
 const Cell = (maintainerIds: number[], maintainers: IMaintainer[]) =>
     maintainerIds
     ? <div className="fl-tag-container">
-          {maintainers.filter((m: IMaintainer) => maintainerIds.indexOf(m.id) > -1).map((m: IMaintainer) => m.name)
-              .join(", ")}
+          {maintainers.filter((m: IMaintainer) => maintainerIds.indexOf(m.id) > -1)
+              .map((m: IMaintainer, i: number) => {
+                  return m.homeUrl
+                             ? <a href={m.homeUrl} key={i}>{m.name}</a>
+                             : <span key={i}>{m.name}</span>;
+              }).reduce(((prev: JSX.Element, curr: JSX.Element): any => [prev, ", ", curr]) as any)}
       </div>
     : null;
