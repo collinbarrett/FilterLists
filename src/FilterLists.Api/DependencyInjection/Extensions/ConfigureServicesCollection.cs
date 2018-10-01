@@ -53,9 +53,11 @@ namespace FilterLists.Api.DependencyInjection.Extensions
                         Title = "FilterLists API",
                         Version = "v1",
                         Description =
-                            "A REST-ish API for FilterLists, the independent, comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances." +
+                            "An API for FilterLists, the independent, comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances." +
                             Environment.NewLine +
-                            " - {version} has to be specified manually (to \"1\") in Swagger playground below due to https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/370",
+                            "Home: https://filterlists.com" +
+                            Environment.NewLine +
+                            "Data Model Docs: https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar",
                         Contact =
                             new Contact
                             {
