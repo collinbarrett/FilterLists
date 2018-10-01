@@ -92,6 +92,10 @@
     "tagId": 9
   },
   {
+    "filterListId": 18,
+    "tagId": 21
+  },
+  {
     "filterListId": 19,
     "tagId": 1
   },
@@ -480,6 +484,10 @@
     "tagId": 17
   },
   {
+    "filterListId": 103,
+    "tagId": 21
+  },
+  {
     "filterListId": 104,
     "tagId": 2
   },
@@ -488,24 +496,44 @@
     "tagId": 17
   },
   {
+    "filterListId": 104,
+    "tagId": 21
+  },
+  {
     "filterListId": 105,
     "tagId": 2
   },
   {
     "filterListId": 105,
     "tagId": 17
+  },
+  {
+    "filterListId": 105,
+    "tagId": 21
   },
   {
     "filterListId": 106,
     "tagId": 2
   },
   {
+    "filterListId": 106,
+    "tagId": 21
+  },
+  {
     "filterListId": 107,
     "tagId": 2
   },
   {
+    "filterListId": 107,
+    "tagId": 21
+  },
+  {
     "filterListId": 108,
     "tagId": 2
+  },
+  {
+    "filterListId": 108,
+    "tagId": 21
   },
   {
     "filterListId": 109,
@@ -518,6 +546,10 @@
   {
     "filterListId": 110,
     "tagId": 2
+  },
+  {
+    "filterListId": 110,
+    "tagId": 21
   },
   {
     "filterListId": 111,
@@ -1049,7 +1081,7 @@
   },
   {
     "filterListId": 232,
-    "tagId": 15
+    "tagId": 21
   },
   {
     "filterListId": 233,
@@ -1681,7 +1713,7 @@
   },
   {
     "filterListId": 371,
-    "tagId": 15
+    "tagId": 21
   },
   {
     "filterListId": 372,
@@ -1766,6 +1798,10 @@
   {
     "filterListId": 389,
     "tagId": 13
+  },
+  {
+    "filterListId": 389,
+    "tagId": 21
   },
   {
     "filterListId": 390,
@@ -2649,7 +2685,7 @@
   },
   {
     "filterListId": 593,
-    "tagId": 15
+    "tagId": 21
   },
   {
     "filterListId": 594,
