@@ -4491,15 +4491,6 @@
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt"
   },
   {
-    "id": 411,
-    "descriptionSourceUrl": "",
-    "homeUrl": "https://gist.github.com/BBcan177",
-    "licenseId": 18,
-    "name": "pfBlockerNG - Blacklist Configuration",
-    "syntaxId": 2,
-    "viewUrl": "https://gist.githubusercontent.com/BBcan177/b91d3c25667d326411b6fc4eb5c1f080/raw/7e23b07148adf030262f056870373c8f1ac2056c/squidblacklist_global_usage"
-  },
-  {
     "id": 412,
     "homeUrl": "https://gist.github.com/BBcan177",
     "licenseId": 5,
