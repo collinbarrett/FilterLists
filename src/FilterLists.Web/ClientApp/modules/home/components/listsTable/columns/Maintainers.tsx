@@ -58,7 +58,7 @@ const sortMethod = (a: number[], b: number[], maintainers: IMaintainer[]) => {
 
 const Cell = (maintainerIds: number[], maintainers: IMaintainer[]) =>
     maintainerIds
-    ? <div className="fl-tag-container">
+    ? <div className="fl-wrap-cell">
           {maintainers.filter((m: IMaintainer) => maintainerIds.indexOf(m.id) > -1)
               .map((m: IMaintainer, i: number) => {
                   return m.homeUrl

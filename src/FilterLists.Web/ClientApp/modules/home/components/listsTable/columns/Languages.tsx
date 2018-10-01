@@ -57,7 +57,7 @@ const sortMethod = (a: number[], b: number[], languages: ILanguage[]) => {
 
 const Cell = (languageIds: number[], languages: ILanguage[]) =>
     languageIds
-    ? <div className="fl-tag-container">
+    ? <div className="fl-wrap-cell">
           {languageIds.map((id: number, i: number) => {
               const language = languages.filter((l: ILanguage) => l.id === id)[0];
               return <span className="badge badge-secondary"

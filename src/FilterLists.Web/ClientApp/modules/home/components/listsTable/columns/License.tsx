@@ -11,7 +11,7 @@ export const License = (columnVisibility: IColumnVisibility[], licenses: ILicens
     Filter: ({ filter, onChange }: any) => Filter({ onChange, filter }, licenses),
     sortMethod: (a: number, b: number) => sortMethod(a, b, licenses),
     Cell: (c: any) => Cell(c.value, licenses),
-    width: 140,
+    width: 75,
     show: columnVisibility.filter((c: IColumnVisibility) => c.column === "License")[0].visible
 } as Column);
 
@@ -59,8 +59,10 @@ const sortMethod = (a: number, b: number, licenses: ILicense[]) => {
 const Cell = (licenseId: number, licenses: ILicense[]) => {
     const license = licenses.filter((l: ILicense) => licenseId === l.id)[0];
     return license
-               ? <div className="fl-tag-container">
-                     {license.descriptionUrl ? <a href={license.descriptionUrl}>{license.name}</a> : license.name}
+               ? <div>
+                     <span title={license.name}>
+                         {license.descriptionUrl ? <a href={license.descriptionUrl}>{license.name}</a> : license.name}
+                     </span>
                  </div>
                : null;
 };

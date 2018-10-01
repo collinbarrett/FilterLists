@@ -8,7 +8,7 @@ interface IProps {
 
 export const TagGroup = (props: IProps) =>
     props.tags && props.tags.length > 0
-    ? <div className="fl-tag-container">
+    ? <div className="fl-wrap-cell">
           {props.tags.map((t: ITag, i: number) => <Tag tag={t} key={i}/>)}
       </div>
     : null;

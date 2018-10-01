@@ -58,7 +58,5 @@ const sortMethod = (a: number[], b: number[], tags: ITag[]): any => {
 
 const Cell = (tagIds: number[], tags: ITag[]) =>
     tagIds
-    ? <div className="fl-tag-container">
-          <TagGroup tags={tags.filter((t: ITag) => tagIds.indexOf(t.id) > -1)}/>
-      </div>
+    ? <TagGroup tags={tags.filter((t: ITag) => tagIds.indexOf(t.id) > -1)}/>
     : null;
