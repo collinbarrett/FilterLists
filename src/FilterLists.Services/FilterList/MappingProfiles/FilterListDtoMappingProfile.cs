@@ -40,14 +40,15 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                            .Select(lt => (int)lt.TagId)))
                 .ForMember(dest => dest.UpdatedDate,
                     opt => opt.MapFrom(src =>
-                        src.Snapshots
-                           .Count(s => s.WasSuccessful && s.WasUpdated) >= 2
+                        src.DiscontinuedDate ??
+                        (src.Snapshots
+                            .Count(s => s.WasSuccessful && s.WasUpdated) >= 2
                             ? src.Snapshots
                                  .Where(s => s.WasSuccessful && s.WasUpdated)
                                  .Select(s => s.CreatedDateUtc)
                                  .OrderByDescending(c => c)
                                  .FirstOrDefault()
-                            : null))
+                            : null)))
                 .ForMember(dest => dest.ViewUrlMirrors,
                     opt => opt.MapFrom(src =>
                         src.ViewUrlMirror1 != null
