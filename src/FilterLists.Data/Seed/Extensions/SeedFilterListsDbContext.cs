@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
 using Microsoft.EntityFrameworkCore;
@@ -11,41 +12,41 @@ using Newtonsoft.Json;
 
 namespace FilterLists.Data.Seed.Extensions
 {
-    public static class SeedFilterListsDbContext
+    public class SeedFilterListsDbContext
     {
-        public static void SeedOrUpdate(this FilterListsDbContext dbContext, string dataPath)
+        public async Task SeedOrUpdateAsync(FilterListsDbContext dbContext, string dataPath)
         {
-            dbContext.SeedOrUpdate<Language>(dataPath);
-            dbContext.SeedOrUpdate<License>(dataPath);
-            dbContext.SeedOrUpdate<Maintainer>(dataPath);
-            dbContext.SeedOrUpdate<Software>(dataPath);
-            dbContext.SeedOrUpdate<Syntax>(dataPath);
-            dbContext.SeedOrUpdate<Tag>(dataPath);
-            dbContext.SeedOrUpdate<FilterList>(dataPath);
-            dbContext.SetDefaultLicenseId();
-            dbContext.SeedOrUpdate<FilterListLanguage>(dataPath);
-            dbContext.SeedOrUpdate<FilterListMaintainer>(dataPath);
-            dbContext.SeedOrUpdate<FilterListTag>(dataPath);
-            dbContext.SeedOrUpdate<Dependent>(dataPath);
-            dbContext.SeedOrUpdate<Fork>(dataPath);
-            dbContext.SeedOrUpdate<Merge>(dataPath);
-            dbContext.SeedOrUpdate<SoftwareSyntax>(dataPath);
+           await SeedOrUpdateAsync<Language>(dbContext,dataPath);
+           await SeedOrUpdateAsync<License>(dbContext, dataPath);
+           await SeedOrUpdateAsync<Maintainer>(dbContext,dataPath);
+           await SeedOrUpdateAsync<Software>(dbContext,dataPath);
+           await SeedOrUpdateAsync<Syntax>(dbContext,dataPath);
+           await SeedOrUpdateAsync<Tag>(dbContext,dataPath);
+           await SeedOrUpdateAsync<FilterList>(dbContext,dataPath);
+           await SetDefaultLicenseIdAsync(dbContext);
+           await SeedOrUpdateAsync<FilterListLanguage>(dbContext,dataPath);
+           await SeedOrUpdateAsync<FilterListMaintainer>(dbContext,dataPath);
+           await SeedOrUpdateAsync<FilterListTag>(dbContext,dataPath);
+           await SeedOrUpdateAsync<Dependent>(dbContext,dataPath);
+           await SeedOrUpdateAsync<Fork>(dbContext,dataPath);
+           await SeedOrUpdateAsync<Merge>(dbContext,dataPath);
+           await SeedOrUpdateAsync<SoftwareSyntax>(dbContext,dataPath);
         }
 
-        private static void SeedOrUpdate<TEntity>(this DbContext dbContext, string dataPath)
+        private async Task SeedOrUpdateAsync<TEntity>(DbContext dbContext, string dataPath)
             where TEntity : class, IBaseEntity
         {
             var seed = GetSeed<TEntity>(dataPath);
-            ApplyRemovals(dbContext, seed);
-            InsertOnDuplicateKeyUpdate(dbContext, seed);
+            await ApplyRemovals(dbContext, seed);
+            await InsertOnDuplicateKeyUpdate(dbContext, seed);
         }
 
-        private static List<TEntity> GetSeed<TEntity>(string dataPath) where TEntity : IBaseEntity
+        private List<TEntity> GetSeed<TEntity>(string dataPath) where TEntity : IBaseEntity
         {
             try
             {
                 return JsonConvert.DeserializeObject<List<TEntity>>(
-                    File.ReadAllText(dataPath + Path.DirectorySeparatorChar + typeof(TEntity).Name + ".json"));
+                    File.ReadAllText(Path.Combine(dataPath,typeof(TEntity).Name + ".json")));
             }
             catch (FileNotFoundException e)
             {
@@ -54,16 +55,16 @@ namespace FilterLists.Data.Seed.Extensions
             }
         }
 
-        private static void ApplyRemovals<TEntity>(DbContext dbContext, IEnumerable<TEntity> seed)
+        private async Task ApplyRemovals<TEntity>(DbContext dbContext, IEnumerable<TEntity> seed)
             where TEntity : class
         {
             var removedEntities = GetRemovedEntities(dbContext, seed);
             dbContext.RemoveRange(removedEntities);
-            dbContext.SaveChanges();
+            await dbContext.SaveChangesAsync();
         }
 
         //https://stackoverflow.com/a/52264468/2343739
-        private static IEnumerable<TEntity> GetRemovedEntities<TEntity>(DbContext dbContext, IEnumerable<TEntity> seed)
+        private IEnumerable<TEntity> GetRemovedEntities<TEntity>(DbContext dbContext, IEnumerable<TEntity> seed)
             where TEntity : class
         {
             var entityType = dbContext.Model.FindEntityType(typeof(TEntity));
@@ -73,7 +74,7 @@ namespace FilterLists.Data.Seed.Extensions
             return dbContext.Set<TEntity>().Where(notInSeed);
         }
 
-        private static Expression GetMatchesAnyPk<TEntity>(IEnumerable<TEntity> seed, IEntityType entityType,
+        private Expression GetMatchesAnyPk<TEntity>(IEnumerable<TEntity> seed, IEntityType entityType,
             Expression dbEntity)
             where TEntity : class =>
             seed.Select(e => entityType.FindPrimaryKey()
@@ -86,7 +87,7 @@ namespace FilterLists.Data.Seed.Extensions
                     (Func<Expression, BinaryExpression, Expression>)((current, match) =>
                         current != null ? Expression.OrElse(current, match) : match));
 
-        private static void InsertOnDuplicateKeyUpdate<TEntity>(DbContext dbContext, IEnumerable<TEntity> seed)
+        private async Task InsertOnDuplicateKeyUpdate<TEntity>(DbContext dbContext, IEnumerable<TEntity> seed)
             where TEntity : IBaseEntity
         {
             var entityType = dbContext.Model.FindEntityType(typeof(TEntity));
@@ -98,27 +99,27 @@ namespace FilterLists.Data.Seed.Extensions
             var updates = CreateUpdates(properties);
             var sql = "INSERT INTO " + entityType.Relational().TableName + " (" + columns + ") VALUES " + values +
                       " ON DUPLICATE KEY UPDATE " + updates;
-            dbContext.Database.ExecuteSqlCommand(sql);
+            await dbContext.Database.ExecuteSqlCommandAsync(sql);
         }
 
-        private static List<IProperty> GetPropertiesLessValueGeneratedTimestamps(IEntityType entityType) =>
+        private List<IProperty> GetPropertiesLessValueGeneratedTimestamps(IEntityType entityType) =>
             entityType.GetProperties()
                       .Where(x => !new List<string> {"CreatedDateUtc", "ModifiedDateUtc"}.Contains(x.Name))
                       .ToList();
 
-        private static string CreateValues<TEntity>(IEnumerable<TEntity> seed,
+        private string CreateValues<TEntity>(IEnumerable<TEntity> seed,
             IReadOnlyCollection<IProperty> properties) where TEntity : IBaseEntity =>
             seed.Select(row => CreateRowValues(properties, row))
                 .Aggregate("", (current, rowValues) => current == "" ? rowValues : current + ", " + rowValues);
 
-        private static string CreateRowValues<TEntity>(IEnumerable<IProperty> properties, TEntity row)
+        private string CreateRowValues<TEntity>(IEnumerable<IProperty> properties, TEntity row)
             where TEntity : IBaseEntity =>
             (from property in properties
                 let value = row.GetType().GetProperty(property.Name)?.GetValue(row)
                 select FormatDataForMySql(property, value)).Aggregate("",
                 (rowValues, value) => rowValues == "" ? "(" + value : rowValues + ", " + value) + ")";
 
-        private static object FormatDataForMySql(IProperty property, object value)
+        private object FormatDataForMySql(IProperty property, object value)
         {
             if (value == null)
                 return "NULL";
@@ -131,7 +132,7 @@ namespace FilterLists.Data.Seed.Extensions
             return value;
         }
 
-        private static string CreateUpdates(IReadOnlyCollection<IProperty> properties)
+        private string CreateUpdates(IReadOnlyCollection<IProperty> properties)
         {
             var update =
                 (from property in properties
@@ -143,13 +144,13 @@ namespace FilterLists.Data.Seed.Extensions
             return update;
         }
 
-        private static string GetUpdateUnchangedColumnHack(IEnumerable<IProperty> properties)
+        private string GetUpdateUnchangedColumnHack(IEnumerable<IProperty> properties)
         {
             var firstId = properties.First(x => x.IsPrimaryKey()).Name;
             return firstId + " = VALUES(" + firstId + ")";
         }
 
-        private static void SetDefaultLicenseId(this DbContext dbContext)
+        private async Task SetDefaultLicenseIdAsync(DbContext dbContext)
         {
             var listsWithoutLicense = dbContext.Set<FilterList>()
                                                .Where(l => l.LicenseId == null)
@@ -160,7 +161,7 @@ namespace FilterLists.Data.Seed.Extensions
                                                    return l;
                                                });
             dbContext.UpdateRange(listsWithoutLicense);
-            dbContext.SaveChanges();
+            await dbContext.SaveChangesAsync();
         }
     }
 }
