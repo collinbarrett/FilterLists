@@ -123,6 +123,7 @@ namespace FilterLists.Services.Snapshot
                 await SetWasUpdated();
                 if (SnapEntity.WasUpdated)
                 {
+                    await UpdateDiscontinuedDate();
                     memoryStream.Position = 0;
                     if (ListUrl.EndsWith(".7z"))
                         await GetLinesFrom7Zip(memoryStream);
@@ -151,6 +152,13 @@ namespace FilterLists.Services.Snapshot
                            .OrderByDescending(s => s.CreatedDateUtc)
                            .Select(s => s.Md5Checksum)
                            .FirstOrDefaultAsync() ?? Array.Empty<byte>();
+
+        private async Task UpdateDiscontinuedDate()
+        {
+            var list = await dbContext.FilterLists.FirstOrDefaultAsync(l => l.Id == List.Id);
+            if (!(list.DiscontinuedDate is null) && DateTime.Now > list.DiscontinuedDate)
+                list.DiscontinuedDate = null;
+        }
 
         private async Task GetLinesFrom7Zip(Stream stream)
         {
