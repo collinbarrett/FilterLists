@@ -78,5 +78,30 @@
     "id": 16,
     "description": "Removes obstructing or annoying overlays",
     "name": "overlay"
+  },
+  {
+    "id": 17,
+    "description": "Blocks gambling resources",
+    "name": "gambling"
+  },
+  {
+    "id": 18,
+    "description": "Removes website-embedded fonts",
+    "name": "fonts"
+  },
+  {
+    "id": 19,
+    "description": "Blocks resources from certain companies",
+    "name": "anti-corp"
+  },
+  {
+    "id": 20,
+    "description": "Lists that are of special interest to IT admins",
+    "name": "admin"
+  },
+  {
+    "id": 21,
+    "description": "Lists that remove news stories of subjectively low quality",
+    "name": "clickbait"
   }
 ]
