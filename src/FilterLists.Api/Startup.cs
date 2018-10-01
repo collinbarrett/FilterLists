@@ -1,13 +1,10 @@
 ﻿using System.Linq;
 using FilterLists.Api.DependencyInjection.Extensions;
-using FilterLists.Data;
-using FilterLists.Data.Seed.Extensions;
 using FilterLists.Services.DependencyInjection.Extensions;
 using JetBrains.Annotations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
@@ -26,7 +23,7 @@ namespace FilterLists.Api
         {
             services.AddFilterListsApiServices(Configuration);
             services.AddFilterListsApi();
-            services.AddSingleton<IConfiguration> (Configuration);
+            services.AddSingleton(Configuration);
         }
 
         [UsedImplicitly]
@@ -66,7 +63,6 @@ namespace FilterLists.Api
                 opts.DocumentTitle = "FilterLists API v1";
                 opts.RoutePrefix = "docs";
             });
-            // MigrateAndSeedDatabase(app);
         }
 
         //TODO: remove hack (https://github.com/domaindrivendev/Swashbuckle.AspNetCore/issues/74#issuecomment-386762178)
@@ -77,6 +73,5 @@ namespace FilterLists.Api
                 document.Paths.Clear();
                 foreach (var pathItem in paths) document.Paths.Add(pathItem.Key, pathItem.Value);
             });
-
     }
 }
