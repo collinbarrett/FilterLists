@@ -98,5 +98,10 @@
     "id": 20,
     "description": "Lists that are of special interest to IT admins",
     "name": "admin"
+  },
+  {
+    "id": 21,
+    "description": "Lists that remove news stories of subjectively low quality",
+    "name": "clickbait"
   }
 ]
