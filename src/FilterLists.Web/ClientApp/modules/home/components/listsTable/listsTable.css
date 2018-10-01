@@ -7,7 +7,7 @@
 
 div.rt-tbody, div.rt-thead.-filters, div.rt-thead.-header { min-width: 320px !important; }
 
-.fl-tag-container {
+.fl-wrap-cell {
     line-height: 1;
     white-space: normal;
 }
