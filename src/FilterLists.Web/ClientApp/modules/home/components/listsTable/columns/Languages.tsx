@@ -23,7 +23,7 @@ const filterMethod = (f: Filter, r: any[]): boolean => {
     return f.value === "any" ||
     (listLanguageIds
          ? listLanguageIds.join(",").split(",").includes(f.value)
-         : false);
+         : f.value === "none");
 };
 
 const Filter = (props: any, languages: ILanguage[]) =>
@@ -31,6 +31,7 @@ const Filter = (props: any, languages: ILanguage[]) =>
             style={{ width: "100%" }}
             value={props.filter ? props.filter.value : "any"}>
         <option value="any">Any</option>
+        <option value="none">None</option>
         {languages.length > 0
              ? languages.map((l: ILanguage, i: number) =>
                  <option value={l.id} key={i}>
