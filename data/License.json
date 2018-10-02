@@ -205,5 +205,18 @@
     "name": "CC BY-SA 2.1 JP",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
+  },
+  {
+    "id": 31,
+    "descriptionUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "name": "CC BY-NC 3.0",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": false
+  },
+  {
+    "id": 31,
+    "name": "Permissive but non-commercial",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": false
   }
 ]
