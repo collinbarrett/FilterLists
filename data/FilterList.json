@@ -4425,7 +4425,7 @@
     "issuesUrl": "https://github.com/notracking/hosts-blocklists/issues",
     "licenseId": 5,
     "name": "notracking - Domains",
-    "syntaxId": 23,
+    "syntaxId": 20,
     "viewUrl": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domains.txt"
   },
   {
