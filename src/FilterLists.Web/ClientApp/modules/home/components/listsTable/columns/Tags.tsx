@@ -24,7 +24,7 @@ const filterMethod = (f: Filter, r: any[]): boolean => {
     return f.value === "any" ||
     (listTagIds
          ? listTagIds.join(",").split(",").includes(f.value)
-         : false);
+         : f.value === "none");
 };
 
 const Filter = (props: any, tags: ITag[]) =>
@@ -32,6 +32,7 @@ const Filter = (props: any, tags: ITag[]) =>
             style={{ width: "100%" }}
             value={props.filter ? props.filter.value : "any"}>
         <option value="any">Any</option>
+        <option value="none">None</option>
         {tags.length > 0
              ? tags.map((t: ITag, i: number) =>
                  <option value={t.id} title={t.description} key={i}>
