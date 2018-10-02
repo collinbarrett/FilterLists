@@ -299,7 +299,7 @@
     "emailAddress": "cookies@prebake.eu",
     "homeUrl": "http://prebake.eu/",
     "issuesUrl": "https://github.com/liamja/Prebake/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Prebake Quiet",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/quiet.txt"
@@ -312,7 +312,7 @@
     "emailAddress": "cookies@prebake.eu",
     "homeUrl": "http://prebake.eu/",
     "issuesUrl": "https://github.com/liamja/Prebake/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Prebake Obtrusive",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/obtrusive.txt"
@@ -360,7 +360,7 @@
     "discontinuedDate": "2015-01-21T00:00:00",
     "homeUrl": "https://github.com/LordBadmintonofYorkshire/Overlay-Blocker",
     "issuesUrl": "https://github.com/LordBadmintonofYorkshire/Overlay-Blocker/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Overlay Blocker",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/LordBadmintonofYorkshire/Overlay-Blocker/master/blocklist.txt"
@@ -425,7 +425,7 @@
     "emailAddress": "latvian-list@googlegroups.com",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=99",
     "homeUrl": "https://notabug.org/latvian-list/adblock-latvian",
-    "licenseId": 5,
+    "licenseId": 8,
     "name": "Latvian List",
     "syntaxId": 3,
     "viewUrl": "https://notabug.org/latvian-list/adblock-latvian/raw/master/lists/latvian-list.txt"
@@ -543,6 +543,7 @@
     "description": "We will blacklist domains that fall into any of the following categories: scams/phishing/malware/malvertising/exploits - and other general threats.",
     "descriptionSourceUrl": "https://www.hexxiumcreations.com/projects/malicious-domain-blocking/",
     "emailAddress": "support@hexxiumcreations.com",
+    "donateUrl": "https://www.hexxiumcreations.com/donate/",
     "homeUrl": "https://www.hexxiumcreations.com/projects/malicious-domain-blocking/",
     "issuesUrl": "https://github.com/HexxiumCreations/threat-list/issues",
     "licenseId": 5,
@@ -556,7 +557,7 @@
     "descriptionSourceUrl": "https://www.void.gr/kargig/blog/greek-adblock-plus-filter/",
     "homeUrl": "https://www.void.gr/kargig/blog/greek-adblock-plus-filter/",
     "issuesUrl": "https://github.com/kargig/greek-adblockplus-filter/issues",
-    "licenseId": 5,
+    "licenseId": 12,
     "name": "Greek AdBlock Filter",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/kargig/greek-adblockplus-filter/master/void-gr-filters.txt"
@@ -603,7 +604,7 @@
   {
     "id": 56,
     "description": "A list combining Latvian List and EasyList.",
-    "licenseId": 5,
+    "licenseId": 8,
     "name": "Latvian List + EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/latvianlist+easylist.txt"
@@ -720,8 +721,8 @@
     "descriptionSourceUrl": "https://github.com/piperun/iploggerfilter",
     "homeUrl": "https://github.com/piperun/iploggerfilter",
     "issuesUrl": "https://github.com/piperun/iploggerfilter/issues",
-    "licenseId": 5,
-    "name": "iploggerfilter",
+    "licenseId": 19,
+    "name": "Piperun's iplogger filter",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/piperun/iploggerfilter/master/filterlist"
   },
@@ -754,7 +755,7 @@
     "discontinuedDate": "2018-07-05T00:00:00",
     "homeUrl": "https://github.com/Rudloff/adblock-imokwithcookies",
     "issuesUrl": "https://github.com/Rudloff/adblock-imokwithcookies/issues",
-    "licenseId": 5,
+    "licenseId": 19,
     "name": "I'm OK with Cookies",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Rudloff/adblock-imokwithcookies/master/filters.txt"
@@ -765,7 +766,7 @@
     "descriptionSourceUrl": "https://www.kiboke-studio.hr/i-dont-care-about-cookies/",
     "emailAddress": "info@kiboke-studio.hr",
     "homeUrl": "https://www.kiboke-studio.hr/i-dont-care-about-cookies/",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "I Don't Care about Cookies",
     "syntaxId": 3,
     "viewUrl": "https://www.kiboke-studio.hr/i-dont-care-about-cookies/abp/"
@@ -776,7 +777,7 @@
     "emailAddress": "hufilter.adblock@gmail.com",
     "homeUrl": "https://github.com/szpeter80/hufilter/wiki",
     "issuesUrl": "https://github.com/szpeter80/hufilter/issues",
-    "licenseId": 5,
+    "licenseId": 24,
     "name": "hufilter",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt"
@@ -880,7 +881,7 @@
     "description": "A filterlist with additional filters for uBlock Origin to block third-party, tracking, annoyances and all other unwarranted resources from loading. Contains filters specific to uBlock Origin and some filters that have not yet been added to other filterlists.",
     "descriptionSourceUrl": "https://github.com/uBlock-user/uBO-Personal-Filters",
     "homeUrl": "https://github.com/uBlock-user/uBO-Personal-Filters",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "uBO-Personal-Filters",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt"
@@ -891,7 +892,7 @@
     "descriptionSourceUrl": "https://github.com/jspenguin2017/uBlockProtector",
     "homeUrl": "https://jspenguin2017.github.io/uBlockProtector",
     "issuesUrl": "https://github.com/jspenguin2017/uBlockProtector/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "Nano Defender Integration",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt"
@@ -916,7 +917,7 @@
     "descriptionSourceUrl": "https://github.com/IDKwhattoputhere/uBlock-Filters-Plus",
     "homeUrl": "https://github.com/IDKwhattoputhere/uBlock-Filters-Plus",
     "issuesUrl": "https://github.com/IDKwhattoputhere/uBlock-Filters-Plus/issues",
-    "licenseId": 5,
+    "licenseId": 8,
     "name": "uBlock Filters Plus",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/IDKwhattoputhere/uBlock-Filters-Plus/master/uBlock-Filters-Plus.txt"
@@ -939,7 +940,7 @@
     "descriptionSourceUrl": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/unbreak.txt",
     "homeUrl": "https://github.com/uBlockOrigin/uAssets",
     "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "uAssets Unbreak",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt"
@@ -949,7 +950,7 @@
     "description": "Privacy filters for uBlock Origin.",
     "homeUrl": "https://github.com/uBlockOrigin/uAssets",
     "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "uAssets Privacy",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt"
@@ -960,7 +961,7 @@
     "descriptionSourceUrl": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters.txt",
     "homeUrl": "https://github.com/uBlockOrigin/uAssets",
     "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "uAssets Filters",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt"
@@ -971,7 +972,7 @@
     "descriptionSourceUrl": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/experimental.txt",
     "homeUrl": "https://github.com/uBlockOrigin/uAssets",
     "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "uAssets Experimental",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt"
@@ -982,7 +983,7 @@
     "descriptionSourceUrl": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/badware.txt",
     "homeUrl": "https://github.com/uBlockOrigin/uAssets",
     "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "uAssets Badware",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt"
@@ -1056,7 +1057,7 @@
     "description": "Blocks Korean regional advertisements and trackers.",
     "homeUrl": "https://github.com/yous/YousList",
     "issuesUrl": "https://github.com/yous/YousList/issues",
-    "licenseId": 5,
+    "licenseId": 24,
     "name": "YousList",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/yous/YousList/master/youslist.txt"
@@ -1067,7 +1068,7 @@
     "descriptionSourceUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt",
     "discontinuedDate": "2015-05-16T00:00:00",
     "homeUrl": "https://github.com/wiltteri/subscriptions",
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Wiltteri Reborn",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt"
@@ -1078,7 +1079,7 @@
     "descriptionSourceUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt",
     "discontinuedDate": "2015-05-16T00:00:00",
     "homeUrl": "https://github.com/wiltteri/subscriptions",
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Wiltteri",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt"
@@ -1090,7 +1091,7 @@
     "descriptionSourceUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt",
     "homeUrl": "https://github.com/yourduskquibbles/webannoyances",
     "issuesUrl": "https://github.com/yourduskquibbles/webannoyances/issues",
-    "licenseId": 5,
+    "licenseId": 8,
     "name": "Web Annoyances Ultralist",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt"
@@ -1405,7 +1406,7 @@
   {
     "id": 133,
     "description": "A list combining RU AdList and EasyList.",
-    "licenseId": 5,
+    "licenseId": 12,
     "name": "RU AdList + EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/ruadlist+easylist.txt"
@@ -1415,7 +1416,7 @@
     "description": "Russian-only fork of Fanboy's Annoyance List.",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
     "homeUrl": "https://code.google.com/archive/p/ruadlist/",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "RU AdList: BitBlock",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/bitblock.txt"
@@ -1432,13 +1433,13 @@
   },
   {
     "id": 136,
-    "description": "SVN: Slovenian List is regional list primarily for uBlock Origin or uBlock, which consists mostly of static cosmetic filters and a few tracking filters. Among others, there are 100 most popular Slovenian websites included in this list.",
+    "description": "Slovenian List is regional list primarily for uBlock Origin or uBlock, which consists mostly of static cosmetic filters and a few tracking filters. Among others, there are 100 most popular Slovenian websites included in this list.",
     "descriptionSourceUrl": "https://github.com/betterwebleon/slovenian-list",
     "emailAddress": "betterweb.leon@outlook.com",
     "homeUrl": "https://github.com/betterwebleon/slovenian-list",
     "issuesUrl": "https://github.com/betterwebleon/slovenian-list/issues",
-    "licenseId": 5,
-    "name": "SVN: Slovenian List",
+    "licenseId": 2,
+    "name": "Slovenian List",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/betterwebleon/slovenian-list/master/filters.txt"
   },
@@ -1472,7 +1473,7 @@
     "emailAddress": "admin@spam404.com",
     "homeUrl": "http://www.spam404.com/domain-blacklist.html",
     "issuesUrl": "https://github.com/Dawsey21/Lists/issues",
-    "licenseId": 5,
+    "licenseId": 8,
     "name": "Spam404 Domain Blacklist",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/Dawsey21/Lists/master/main-blacklist.txt"
@@ -1484,7 +1485,7 @@
     "emailAddress": "admin@spam404.com",
     "homeUrl": "http://www.spam404.com/blog/block-online-scams-with-spam404-and-adblock",
     "issuesUrl": "https://github.com/Dawsey21/Lists/issues",
-    "licenseId": 5,
+    "licenseId": 8,
     "name": "Spam404",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt"
@@ -1535,7 +1536,7 @@
     "description": "Adblock Plus for Japan domestic and Japanese correspondence Universal Filter.",
     "descriptionSourceUrl": "http://www.schuzak.jp/other/abp.html",
     "homeUrl": "http://www.schuzak.jp/other/abp.html",
-    "licenseId": 5,
+    "licenseId": 30,
     "name": "Schuzak's Universal Filter",
     "syntaxId": 3,
     "viewUrl": "https://web.archive.org/web/20121106002043if_/http://www.schuzak.jp:80/other/abp.conf"
@@ -1555,11 +1556,11 @@
     "id": 148,
     "description": "I make supplemental filters in Adblock Plus to block garbage on webpages not blocked by other lists. I use many regular expressions, a few domain filters, but no CSS filters.",
     "descriptionSourceUrl": "https://satterly.neocities.org/abp_filters.html",
-    "homeUrl": "https://satterly.neocities.org/abp_filters.html",
-    "licenseId": 5,
+    "homeUrl": "https://mrsatterly.com/abp_filters.html",
+    "licenseId": 14,
     "name": "Satterly's Adblock Plus Filters",
     "syntaxId": 3,
-    "viewUrl": "https://satterly.neocities.org/abp_filters.txt"
+    "viewUrl": "https://mrsatterly.com/abp_filters.txt"
   },
   {
     "id": 149,
@@ -1577,7 +1578,7 @@
     "description": "Blocks most popular internet statistics counters on sites serving Russia.",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
     "homeUrl": "https://code.google.com/archive/p/ruadlist/",
-    "licenseId": 5,
+    "licenseId": 12,
     "name": "RU AdList: Counters",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/cntblock.txt"
@@ -1604,7 +1605,7 @@
     "id": 153,
     "description": "Finnish blocklist for AdBlock to block social media stuff.",
     "descriptionSourceUrl": "https://adb.juvander.net/Finland_adb_antisocial.txt",
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Finnish AntiSocial",
     "syntaxId": 3,
     "viewUrl": "https://adb.juvander.net/Finland_adb_antisocial.txt"
@@ -1831,7 +1832,7 @@
     "description": "This is a general, mainly a Finnish list for blocking various elements on specific websites such as ads, cookie notifications and cosmetic annoyances.",
     "descriptionSourceUrl": "https://dl.dropboxusercontent.com/s/1ybzw9lb7m1qiyl/AAs.txt",
     "homeUrl": "https://dl.dropboxusercontent.com/s/1ybzw9lb7m1qiyl/AAs.txt",
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Additional Adblock Rules",
     "syntaxId": 3,
     "viewUrl": "https://dl.dropboxusercontent.com/s/1ybzw9lb7m1qiyl/AAs.txt"
@@ -1941,7 +1942,7 @@
     "description": "Blocks shady, annoying pop-under ads from the infamous PopAds ad network.",
     "homeUrl": "https://github.com/Yhonay/antipopads",
     "issuesUrl": "https://github.com/Yhonay/antipopads/issues",
-    "licenseId": 5,
+    "licenseId": 14,
     "name": "Anti-PopAds",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt"
@@ -1951,7 +1952,7 @@
     "description": "Blocks Facebook trackers.",
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "homeUrl": "https://fanboy.co.nz/",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Anti-Facebook List",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-antifacebook.txt"
@@ -2097,7 +2098,7 @@
   {
     "id": 197,
     "description": "A list combining ABPindo and EasyList.",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "ABPindo + EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/abpindo+easylist.txt"
@@ -2109,7 +2110,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=94",
     "homeUrl": "https://abpindo.blogspot.com/",
     "issuesUrl": "https://github.com/ABPindo/indonesianadblockrules/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "ABPindo",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt",
@@ -2123,7 +2124,7 @@
     "forumUrl": "https://abpxfiles.uservoice.com/",
     "homeUrl": "https://xfiles.noads.it/",
     "issuesUrl": "https://github.com/gioxx/xfiles/issues",
-    "licenseId": 5,
+    "licenseId": 9,
     "name": "X Files: NoFacebookAds",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/facebook.txt"
@@ -2136,7 +2137,7 @@
     "forumUrl": "https://abpxfiles.uservoice.com/",
     "homeUrl": "https://xfiles.noads.it/",
     "issuesUrl": "https://github.com/gioxx/xfiles/issues",
-    "licenseId": 5,
+    "licenseId": 9,
     "name": "X Files: HWS Harmful WebSites",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/siteblock.txt"
@@ -2149,7 +2150,7 @@
     "forumUrl": "https://abpxfiles.uservoice.com/",
     "homeUrl": "https://xfiles.noads.it/",
     "issuesUrl": "https://github.com/gioxx/xfiles/issues",
-    "licenseId": 5,
+    "licenseId": 9,
     "name": "ABP X Files",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/filtri.txt"
@@ -2159,7 +2160,7 @@
     "description": "Blocks Japanese regional advertisements and trackers.",
     "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
     "issuesUrl": "https://github.com/k2jp/abp-japanese-filters/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "ABP Japanese Paranoid Filters",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_paranoid.txt"
@@ -2169,7 +2170,7 @@
     "description": "Blocks Japanese regional advertisements and trackers.",
     "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
     "issuesUrl": "https://github.com/k2jp/abp-japanese-filters/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "ABP Japanese Filters",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf.txt"
@@ -2179,7 +2180,7 @@
     "description": "Blocks irritating elements on Japanese regional webpages.",
     "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
     "issuesUrl": "https://github.com/k2jp/abp-japanese-filters/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "ABP Japanese Element-hiding Filters",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_element_hiding.txt"
@@ -2189,7 +2190,7 @@
     "description": "Blocks Japanese regional social network advertisements and trackers.",
     "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
     "issuesUrl": "https://github.com/k2jp/abp-japanese-filters/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "ABP Japanese 3rd Party SNS Filters",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_3rd_party_sns.txt"
@@ -2283,7 +2284,7 @@
     "id": 213,
     "description": "Blocks ads on YouTube.",
     "homeUrl": "https://github.com/kbinani/adblock-youtube-ads",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Adblock YouTube Ads",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/kbinani/adblock-youtube-ads/master/signed.txt"
@@ -2295,7 +2296,7 @@
     "emailAddress": "easylist.subscription+anti@gmail.com",
     "forumUrl": "https://forums.lanik.us/",
     "homeUrl": "https://easylist.to/",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "Adblock Warning Removal List",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
@@ -2308,7 +2309,7 @@
     "emailAddress": "adblockpolska@gmail.com",
     "homeUrl": "https://www.facebook.com/adblockpl",
     "issuesUrl": "https://github.com/adblockpolska/Adblock_PL_List/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "Adblock Polska",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/adblockpolska/Adblock_PL_List/master/adblock_polska.txt"
@@ -2341,7 +2342,7 @@
     "description": "Blocks Finnish regional advertisements and trackers.",
     "forumUrl": "https://www.juvander.fi/site/ilpo/Forums/tabid/139/forumid/23/scope/threads/Default.aspx",
     "homeUrl": "https://www.juvander.fi/site/ilpo/Home/tabid/127/EntryId/825/New-Adblock-filter-list.aspx",
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Adblock List for Finland",
     "syntaxId": 3,
     "viewUrl": "https://adb.juvander.net/Finland_adb.txt"
@@ -2384,7 +2385,7 @@
     "emailAddress": "slasharash@protonmail.com",
     "homeUrl": "https://github.com/SlashArash/adblockfa",
     "issuesUrl": "https://github.com/SlashArash/adblockfa/issues",
-    "licenseId": 5,
+    "licenseId": 29,
     "name": "AdBlockFarsi",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/SlashArash/adblockfa/master/adblockfa.txt"
@@ -2456,7 +2457,7 @@
     "descriptionSourceUrl": "https://github.com/farrokhi/adblock-iran",
     "homeUrl": "https://github.com/farrokhi/adblock-iran",
     "issuesUrl": "https://github.com/farrokhi/adblock-iran/issues",
-    "licenseId": 5,
+    "licenseId": 27,
     "name": "Adblock Iran",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/farrokhi/adblock-iran/master/filter.txt"
@@ -2503,7 +2504,7 @@
     "forumUrl": "https://forums.lanik.us/viewtopic.php?f=88&t=34971",
     "homeUrl": "https://github.com/ryanbr/fanboy-adblock",
     "issuesUrl": "https://github.com/ryanbr/fanboy-adblock/issues",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fake-News List",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/ryanbr/fanboy-adblock/master/fake-news.txt"
@@ -2527,7 +2528,7 @@
     "discontinuedDate": "2010-05-18T00:00:00",
     "emailAddress": "fbprivacylist@squirrelconspiracy.net",
     "homeUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.html",
-    "licenseId": 5,
+    "licenseId": 12,
     "name": "Facebook Privacy List",
     "syntaxId": 3,
     "viewUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt",
@@ -2562,7 +2563,7 @@
     "id": 237,
     "description": "Blocks Estonian regional advertisements and trackers.",
     "homeUrl": "https://adblock.ee/",
-    "licenseId": 5,
+    "licenseId": 28,
     "name": "Eesti Custom Sites Filter",
     "syntaxId": 3,
     "viewUrl": "https://adblock.ee/list.php"
@@ -2596,7 +2597,7 @@
     "forumUrl": "https://forums.lanik.us/",
     "homeUrl": "https://easylist.to/",
     "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyPrivacy Without International Filters",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy_nointernational.txt"
@@ -2604,7 +2605,7 @@
   {
     "id": 241,
     "description": "A list combining EasyPrivacy and EasyList.",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyPrivacy + EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy+easylist.txt"
@@ -2617,7 +2618,7 @@
     "forumUrl": "https://forums.lanik.us/",
     "homeUrl": "https://easylist.to/",
     "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyPrivacy",
     "syntaxId": 3,
     "viewUrl": "https://easylist.to/easylist/easyprivacy.txt",
@@ -2645,7 +2646,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=23",
     "homeUrl": "https://easylist.to/",
     "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList Without Element Hiding Rules",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noelemhide.txt"
@@ -2668,7 +2669,7 @@
     "emailAddress": "easylist.spanish@gmail.com",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=103",
     "homeUrl": "https://easylist.to/",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList Spanish",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistspanish.txt"
@@ -2682,7 +2683,7 @@
     "forumUrl": "https://forums.lanik.us/",
     "homeUrl": "https://easylist.to/",
     "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's Annoyance List",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt",
@@ -2692,7 +2693,7 @@
   {
     "id": 248,
     "description": "A list combining EasyList Lithuania and EasyList.",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList Lithuania + EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistlithuania+easylist.txt"
@@ -2701,7 +2702,7 @@
     "id": 249,
     "description": "Blocks fonts loaded from third parties.",
     "homeUrl": "https://fanboy.co.nz/",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's Anti-thirdparty Fonts",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-antifonts.txt"
@@ -2715,7 +2716,7 @@
     "forumUrl": "https://forums.lanik.us/",
     "homeUrl": "https://easylist.to/",
     "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's Cookiemonster List",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-cookiemonster.txt"
@@ -2725,7 +2726,7 @@
     "description": "Blocks English and Spanish regional advertisements and trackers.",
     "homeUrl": "https://nauscopio.wordpress.com/2010/07/05/filtrado-bloqueo-y-ocultacion-de-la-publicidad-en-google-chrome/",
     "issuesUrl": "https://github.com/mozillahispano/nauscopio-filtros/issues",
-    "licenseId": 5,
+    "licenseId": 6,
     "name": "Filtros Nauscopicos",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/filtros.txt"
@@ -2759,7 +2760,7 @@
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's Vietnamese",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-vietnam.txt"
@@ -2767,7 +2768,7 @@
   {
     "id": 255,
     "description": "A list combining EasyList, EasyPrivacy, Fanboy's Enhanced Tracking List, and Fanboy's Annoyance List.",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's Ultimate List",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/r/fanboy-ultimate.txt"
@@ -2779,7 +2780,7 @@
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's Turkish",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-turkish.txt"
@@ -2791,7 +2792,7 @@
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's Swedish",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-swedish.txt"
@@ -2803,7 +2804,7 @@
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's Spanish/Portuguese",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-espanol.txt"
@@ -2831,7 +2832,7 @@
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's Polish",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-polish.txt"
@@ -2843,7 +2844,7 @@
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's Korean",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-korean.txt"
@@ -2855,7 +2856,7 @@
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's Japanese",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-japanese.txt"
@@ -2866,7 +2867,7 @@
     "discontinuedDate": "2013-08-19T00:00:00",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's IsraelList",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/israelilist/IsraelList.txt"
@@ -2878,7 +2879,7 @@
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's Indian",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/fanboy-indian.txt"
@@ -2890,7 +2891,7 @@
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "homeUrl": "https://fanboy.co.nz/",
     "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's Enhanced Tracking List",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/enhancedstats.txt"
@@ -2898,7 +2899,7 @@
   {
     "id": 266,
     "description": "A list combining EasyList, EasyPrivacy, and Fanboy's Enhanced Tracking List.",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "Fanboy's Complete List",
     "syntaxId": 3,
     "viewUrl": "https://fanboy.co.nz/r/fanboy-complete.txt"
@@ -2910,7 +2911,7 @@
     "emailAddress": "algimantas@margevicius.lt",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=101",
     "homeUrl": "https://margevicius.lt/easylist_lithuania/",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList Lithuania",
     "syntaxId": 3,
     "viewUrl": "https://margevicius.lt/easylistlithuania.txt"
@@ -2923,7 +2924,7 @@
     "forumUrl": "https://abpchina.org/forum/forum.php",
     "homeUrl": "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
     "issuesUrl": "https://github.com/cjx82630/cjxlist/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList Lite China",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt"
@@ -2931,7 +2932,7 @@
   {
     "id": 269,
     "description": "A list combining EasyList Italy and EasyList.",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList Italy + EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly+easylist.txt"
@@ -3031,7 +3032,7 @@
     "discontinuedDate": "2011-02-09T00:00:00",
     "emailAddress": "corset@tistory.com",
     "homeUrl": "http://corset.tistory.com/",
-    "licenseId": 5,
+    "licenseId": 12,
     "name": "Corset",
     "syntaxId": 3,
     "viewUrl": "https://web.archive.org/web/20110212174029if_/http://abp-corset.googlecode.com:80/hg/corset.txt"
@@ -3053,7 +3054,7 @@
     "description": "Clickbait Blocklist just blocks the most annoying clickbait ads. I don't mind ads; I just don't want clickbait crap about shocking celebrity photos and \"deep searches\" for local singles.",
     "descriptionSourceUrl": "https://github.com/cpeterso/clickbait-blocklist/",
     "homeUrl": "https://github.com/cpeterso/clickbait-blocklist/",
-    "licenseId": 5,
+    "licenseId": 28,
     "name": "Clickbait Blocklist",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/cpeterso/clickbait-blocklist/master/clickbait-blocklist.txt"
@@ -3066,7 +3067,7 @@
     "forumUrl": "https://abpchina.org/forum/forum.php",
     "homeUrl": "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
     "issuesUrl": "https://github.com/cjx82630/cjxlist/issues",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "CJX's Annoyance List",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
@@ -3085,7 +3086,7 @@
   {
     "id": 283,
     "description": "A list combining Bulgarian List and EasyList.",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "Bulgarian List + EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/bulgarian_list+easylist.txt"
@@ -3096,7 +3097,7 @@
     "descriptionSourceUrl": "https://stanev.org/abp/",
     "emailAddress": "alex@stanev.org",
     "homeUrl": "https://stanev.org/abp/",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "Bulgarian List",
     "syntaxId": 3,
     "viewUrl": "https://stanev.org/abp/adblock_bg.txt"
@@ -3158,7 +3159,7 @@
     "emailAddress": "easylistitaly@gmail.com",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=96",
     "homeUrl": "https://easylist.to/",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList Italy",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly.txt"
@@ -3166,7 +3167,7 @@
   {
     "id": 290,
     "description": "A list combining EasyList Hebrew and EasyList.",
-    "licenseId": 5,
+    "licenseId": 7,
     "name": "EasyList Hebrew + EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/israellist+easylist.txt"
@@ -3178,7 +3179,7 @@
     "emailAddress": "easylisthebrew@gmail.com",
     "homeUrl": "https://github.com/easylist/EasyListHebrew",
     "issuesUrl": "https://github.com/easylist/EasyListHebrew/issues",
-    "licenseId": 5,
+    "licenseId": 7,
     "name": "EasyList Hebrew",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt"
@@ -3186,7 +3187,7 @@
   {
     "id": 292,
     "description": "A list combining EasyList Germany and EasyList.",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList Germany + EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany+easylist.txt"
@@ -3199,7 +3200,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=90",
     "homeUrl": "https://easylist.to/",
     "issuesUrl": "https://github.com/easylist/easylistgermany/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList Germany",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany.txt",
@@ -3208,7 +3209,7 @@
   {
     "id": 294,
     "description": "A list combining EasyList Dutch and EasyList.",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList Dutch + EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch+easylist.txt"
@@ -3220,7 +3221,7 @@
     "emailAddress": "fam.lam@live.nl",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=100",
     "homeUrl": "https://easylist.to/",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList Dutch",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch.txt"
@@ -3239,7 +3240,7 @@
   {
     "id": 297,
     "description": "A list combining EasyList Czech and Slovak and EasyList.",
-    "licenseId": 5,
+    "licenseId": 8,
     "name": "EasyList Czech and Slovak + EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistczechslovak+easylist.txt"
@@ -3258,7 +3259,7 @@
   {
     "id": 299,
     "description": "A list combining EasyList China and EasyList.",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList China + EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt"
@@ -3270,7 +3271,7 @@
     "emailAddress": "easylist.china@gmail.com",
     "forumUrl": "https://abpchina.org/forum/forum.php",
     "homeUrl": "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList China",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina.txt"
@@ -3283,7 +3284,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=23",
     "homeUrl": "https://easylist.to/",
     "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist.to/easylist/easylist.txt",
@@ -5057,7 +5058,7 @@
     "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
     "homeUrl": "https://github.com/jmdugan/blocklists",
     "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
-    "licenseId": 5,
+    "licenseId": 28,
     "name": "jmdugan Blocklists Pinterest",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/pinterest/all"
@@ -5068,7 +5069,7 @@
     "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
     "homeUrl": "https://github.com/jmdugan/blocklists",
     "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
-    "licenseId": 5,
+    "licenseId": 28,
     "name": "jmdugan Blocklists CloudFlare",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/cloudflare/all"
@@ -5079,7 +5080,7 @@
     "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
     "homeUrl": "https://github.com/jmdugan/blocklists",
     "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
-    "licenseId": 5,
+    "licenseId": 28,
     "name": "jmdugan Blocklists Facebook",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/facebook/all"
@@ -5090,7 +5091,7 @@
     "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
     "homeUrl": "https://github.com/jmdugan/blocklists",
     "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
-    "licenseId": 5,
+    "licenseId": 28,
     "name": "jmdugan Blocklists Mozilla",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/mozilla/all.txt"
@@ -5101,7 +5102,7 @@
     "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
     "homeUrl": "https://github.com/jmdugan/blocklists",
     "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
-    "licenseId": 5,
+    "licenseId": 28,
     "name": "jmdugan Blocklists Microsoft",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/microsoft/all"
@@ -5112,7 +5113,7 @@
     "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
     "homeUrl": "https://github.com/jmdugan/blocklists",
     "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
-    "licenseId": 5,
+    "licenseId": 28,
     "name": "jmdugan Blocklists Google Utility",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/google/non_localized"
@@ -5123,7 +5124,7 @@
     "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
     "homeUrl": "https://github.com/jmdugan/blocklists",
     "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
-    "licenseId": 5,
+    "licenseId": 28,
     "name": "jmdugan Blocklists Google International",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/google/localized"
@@ -5422,7 +5423,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=23",
     "homeUrl": "https://easylist.to/",
     "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList TPL",
     "syntaxId": 10,
     "viewUrl": "https://easylist-msie.adblockplus.org/easylist.tpl"
@@ -8172,7 +8173,7 @@
   {
     "id": 776,
     "homeUrl": "https://stanev.org/abp/",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "Bulgarian List + EasyList (TPL)",
     "syntaxId": 10,
     "viewUrl": "https://easylist-msie.adblockplus.org/bulgarian_list+easylist.tpl"
@@ -8238,7 +8239,7 @@
     "id": 784,
     "discontinuedDate": "2015-05-16T00:00:00",
     "homeUrl": "https://easylist.to/",
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Wiltteri + EasyList (TPL)",
     "syntaxId": 10,
     "viewUrl": "https://easylist-msie.adblockplus.org/wiltteri+easylist.tpl"
@@ -8353,7 +8354,7 @@
     "emailAddress": "easylist.subscription+anti@gmail.com",
     "forumUrl": "https://forums.lanik.us/",
     "homeUrl": "https://easylist.to/",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "Adblock Warning Removal List (TPL)",
     "syntaxId": 10,
     "viewUrl": "https://easylist-msie.adblockplus.org/antiadblockfilters.tpl"
@@ -8391,7 +8392,7 @@
     "discontinuedDate": "2011-05-11T00:00:00",
     "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/AncientLibrary",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 5,
+    "licenseId": 10,
     "name": "ABP Macedonian List",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/ABP%20Macedonian%20List.txt"
@@ -8416,7 +8417,7 @@
     "discontinuedDate": "2014-03-11T00:00:00",
     "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/AncientLibrary",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 5,
+    "licenseId": 10,
     "name": "Snaevar87's Icelandic filter",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Snaevar87's%20Icelandic%20filter.txt",
@@ -8441,7 +8442,7 @@
     "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/advblock+cssfixes.txt",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
     "homeUrl": "https://forums.lanik.us/viewforum.php?f=102",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "RU AdList + CSS Fixes",
     "syntaxId": 4,
     "viewUrl": "https://easylist-downloads.adblockplus.org/advblock+cssfixes.txt"
