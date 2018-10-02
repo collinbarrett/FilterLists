@@ -82,5 +82,9 @@
     "id": 19,
     "definitionUrl": "https://www.privoxy.org/user-manual/actions-file.html",
     "name": "Privoxy action file"
+  },
+  {
+    "id": 20,
+    "name": "dnsmasq domains list"
   }
 ]

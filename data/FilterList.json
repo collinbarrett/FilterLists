@@ -381,7 +381,7 @@
     "description": "Blocks trackers.",
     "homeUrl": "https://github.com/quidsup/notrack",
     "issuesUrl": "https://github.com/quidsup/notrack/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "NoTrack Blocklist",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt"
@@ -392,7 +392,7 @@
     "descriptionSourceUrl": "https://github.com/genediazjr/nopelist",
     "homeUrl": "https://github.com/genediazjr/nopelist",
     "issuesUrl": "https://github.com/genediazjr/nopelist/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Nopelist",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/genediazjr/nopelist/master/nopelist.txt"
@@ -533,7 +533,7 @@
     "description": "Japanese ad servers hosts file.",
     "forumUrl": "http://potato.2ch.net/test/read.cgi/android/1450730522/",
     "homeUrl": "https://sites.google.com/site/hosts2ch/",
-    "licenseId": 5,
+    "licenseId": 20,
     "name": "Hosts2ch",
     "syntaxId": 1,
     "viewUrl": "https://sites.google.com/site/hosts2ch/ja"
@@ -839,7 +839,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Gambling + Porn",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts"
@@ -849,7 +849,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Gambling",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts"
@@ -859,7 +859,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
@@ -993,7 +993,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Gambling + Porn + Social",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts"
@@ -1013,7 +1013,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Gambling + Social",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts"
@@ -1023,7 +1023,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Porn + Social",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-social/hosts"
@@ -1101,7 +1101,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Fakenews + Gambling + Porn + Social",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts"
@@ -1111,7 +1111,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Fakenews + Porn + Social",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn-social/hosts"
@@ -1121,7 +1121,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Fakenews + Gambling + Social",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts"
@@ -1131,7 +1131,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Fakenews + Gambling + Porn",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts"
@@ -1141,7 +1141,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Fakenews + Social",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts"
@@ -1151,7 +1151,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Fakenews + Porn",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn/hosts"
@@ -1161,7 +1161,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Fakenews + Gambling",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts"
@@ -1171,7 +1171,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Fakenews",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews/hosts"
@@ -1181,7 +1181,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Social",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts"
@@ -1191,7 +1191,7 @@
     "description": "Extending and consolidating hosts files from a variety of sources",
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/StevenBlack/hosts",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts + Porn",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts"
@@ -1221,7 +1221,7 @@
     "descriptionSourceUrl": "https://hostsfile.mine.nu/",
     "emailAddress": "wduk10@hotmail.com",
     "homeUrl": "https://hostsfile.mine.nu/",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "The Hosts File Project Hosts",
     "syntaxId": 1,
     "viewUrl": "https://hostsfile.mine.nu/hosts0.txt"
@@ -1450,7 +1450,7 @@
     "emailAddress": "steveb@stevenblack.com",
     "homeUrl": "https://github.com/StevenBlack/hosts",
     "issuesUrl": "https://github.com/StevenBlack/hosts/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Steven Black's Hosts",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts"
@@ -1461,7 +1461,7 @@
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/FadeMind/hosts.extras",
     "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "StreamingAds",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/StreamingAds/hosts"
@@ -1609,17 +1609,6 @@
     "name": "Finnish AntiSocial",
     "syntaxId": 3,
     "viewUrl": "https://adb.juvander.net/Finland_adb_antisocial.txt"
-  },
-  {
-    "id": 154,
-    "description": "Use this file to prevent your computer from connecting to selected internet hosts. This is an easy and effective way to protect you from many types of spyware, reduces bandwidth use, blocks certain pop-up  traps, prevents user tracking by way of \"web bugs\" embedded in spam, provides partial protection to IE from certain web-based exploits and blocks most advertising you would otherwise be subjected to on the internet.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/hosts",
-    "homeUrl": "https://nauscopio.wordpress.com/2011/09/05/archivo-hosts-nauscopico-para-combatir-publicidad-paginas-peligrosas-contadores-de-visitas-spam-en-combinacion-con-los-filtros-nauscopicos/",
-    "issuesUrl": "https://github.com/mozillahispano/nauscopio-filtros/issues",
-    "licenseId": 5,
-    "name": "Filtros Nauscopicos Hosts",
-    "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/hosts"
   },
   {
     "id": 155,
@@ -1822,7 +1811,7 @@
     "emailAddress": "easylist.subscription@gmail.com",
     "forumUrl": "https://forums.lanik.us/",
     "homeUrl": "https://easylist.to/",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "Adware Filters",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/adwarefilters.txt"
@@ -1844,7 +1833,7 @@
     "emailAddress": "contact.wiki.airelle@spamgourmet.com",
     "forumUrl": "http://rlwpx.free.fr/Webforum/",
     "homeUrl": "http://rlwpx.free.fr/WPFF/hosts.htm",
-    "licenseId": 5,
+    "licenseId": 31,
     "name": "Airelle's Anti-Miscellaneous Hosts",
     "syntaxId": 1,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hmis.7z"
@@ -1866,7 +1855,7 @@
     "descriptionSourceUrl": "https://github.com/r4vi/block-the-eu-cookie-shit-list",
     "homeUrl": "https://github.com/r4vi/block-the-eu-cookie-shit-list",
     "issuesUrl": "https://github.com/r4vi/block-the-eu-cookie-shit-list/issues",
-    "licenseId": 5,
+    "licenseId": 14,
     "name": "Block the EU Cookie Shit List",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/r4vi/block-the-eu-cookie-shit-list/master/filterlist.txt"
@@ -1908,7 +1897,7 @@
     "id": 179,
     "description": "A non-comprehensive malware hosts list meant to be used in conjunction with the King of the PAC file.",
     "homeUrl": "https://www.hostsfile.org/hosts.html",
-    "licenseId": 5,
+    "licenseId": 19,
     "name": "BadHosts",
     "syntaxId": 1,
     "viewUrl": "https://www.hostsfile.org/Downloads/hosts.txt"
@@ -1964,7 +1953,7 @@
     "emailAddress": "contact.wiki.airelle@spamgourmet.com",
     "forumUrl": "http://rlwpx.free.fr/Webforum/",
     "homeUrl": "http://rlwpx.free.fr/WPFF/hosts.htm",
-    "licenseId": 5,
+    "licenseId": 31,
     "name": "Airelle's Phishing Hosts",
     "syntaxId": 1,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hblc.7z"
@@ -1976,7 +1965,7 @@
     "emailAddress": "contact.wiki.airelle@spamgourmet.com",
     "forumUrl": "http://rlwpx.free.fr/Webforum/",
     "homeUrl": "http://rlwpx.free.fr/WPFF/hosts.htm",
-    "licenseId": 5,
+    "licenseId": 31,
     "name": "Airelle's Malware Hosts",
     "syntaxId": 1,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hrsk.7z",
@@ -1989,7 +1978,7 @@
     "emailAddress": "contact.wiki.airelle@spamgourmet.com",
     "forumUrl": "http://rlwpx.free.fr/Webforum/",
     "homeUrl": "http://rlwpx.free.fr/WPFF/hosts.htm",
-    "licenseId": 5,
+    "licenseId": 31,
     "name": "Airelle's Anti-Trackers Hosts",
     "syntaxId": 1,
     "viewUrl": "http://rlwpx.free.fr/WPFF/htrc.7z",
@@ -2002,7 +1991,7 @@
     "emailAddress": "contact.wiki.airelle@spamgourmet.com",
     "forumUrl": "http://rlwpx.free.fr/Webforum/",
     "homeUrl": "http://rlwpx.free.fr/WPFF/hosts.htm",
-    "licenseId": 5,
+    "licenseId": 31,
     "name": "Airelle's Anti-Sex Hosts",
     "syntaxId": 1,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hsex.7z"
@@ -2014,7 +2003,7 @@
     "emailAddress": "contact.wiki.airelle@spamgourmet.com",
     "forumUrl": "http://rlwpx.free.fr/Webforum/",
     "homeUrl": "http://rlwpx.free.fr/WPFF/hosts.htm",
-    "licenseId": 5,
+    "licenseId": 31,
     "name": "Airelle's Anti-Advertisements Hosts",
     "syntaxId": 1,
     "viewUrl": "http://rlwpx.free.fr/WPFF/hpub.7z"
@@ -2025,7 +2014,7 @@
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/FadeMind/hosts.extras",
     "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "add.Spam",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts"
@@ -2036,7 +2025,7 @@
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/FadeMind/hosts.extras",
     "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "add.Risk",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts"
@@ -2047,7 +2036,7 @@
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/FadeMind/hosts.extras",
     "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "add.Dead",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Dead/hosts"
@@ -2275,7 +2264,7 @@
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/FadeMind/hosts.extras",
     "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "add.2o7Net",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts"
@@ -2435,7 +2424,7 @@
     "forumUrl": "https://forum.xda-developers.com/showthread.php?t=2190753",
     "homeUrl": "https://adaway.org/",
     "issuesUrl": "https://github.com/AdAway/AdAway/issues",
-    "licenseId": 5,
+    "licenseId": 16,
     "name": "AdAway",
     "syntaxId": 1,
     "viewUrl": "https://adaway.org/hosts.txt"
@@ -2736,7 +2725,7 @@
     "description": "Tentative hosts file for Italian sites created from Easylist Italy and ADB X Files.",
     "descriptionSourceUrl": "https://filtri-dns.ga/filtri.txt",
     "homeUrl": "https://filtri-dns.ga/",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "Filtri DNS",
     "syntaxId": 1,
     "viewUrl": "https://filtri-dns.ga/filtri.txt"
@@ -3007,7 +2996,7 @@
     "descriptionSourceUrl": "https://someonewhocares.org/hosts/",
     "emailAddress": "hosts@someonewhocares.org",
     "homeUrl": "https://someonewhocares.org/hosts/",
-    "licenseId": 5,
+    "licenseId": 32,
     "name": "Dan Pollock's Hosts",
     "syntaxId": 1,
     "viewUrl": "https://someonewhocares.org/hosts/zero/hosts"
@@ -4436,7 +4425,7 @@
     "issuesUrl": "https://github.com/notracking/hosts-blocklists/issues",
     "licenseId": 5,
     "name": "notracking - Domains",
-    "syntaxId": 2,
+    "syntaxId": 20,
     "viewUrl": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domains.txt"
   },
   {
@@ -6417,7 +6406,7 @@
     "descriptionSourceUrl": "https://github.com/bigdargon/hostsVN#hostsvn",
     "homeUrl": "https://github.com/bigdargon/hostsVN",
     "issuesUrl": "https://github.com/bigdargon/hostsVN/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "hostsVN",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts"
@@ -6736,7 +6725,7 @@
   },
   {
     "id": 626,
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Tyzbit Hosts",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/tyzbit/hosts/master/data/tyzbit/hosts"
@@ -7378,7 +7367,7 @@
     "id": 696,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Dan Pollock's Hosts (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/dan-pollock-someonewhocares-org.txt"
@@ -7387,7 +7376,7 @@
     "id": 697,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "MVPS Hosts (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/mvps-hosts-file.txt"
@@ -7396,7 +7385,7 @@
     "id": 698,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Malware Domain List (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/malware-domain-list.txt"
@@ -7405,7 +7394,7 @@
     "id": 699,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "NoCoin (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/nocoin.txt"
@@ -7414,7 +7403,7 @@
     "id": 700,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "EasyList (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/easylist.txt"
@@ -7423,7 +7412,7 @@
     "id": 701,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "EasyPrivacy (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/easyprivacy.txt"
@@ -7432,7 +7421,7 @@
     "id": 702,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unified Hosts (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/steven-blacks-unified-list.txt"
@@ -7441,7 +7430,7 @@
     "id": 703,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "KAD Hosts File (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/kadhosts.txt"
@@ -7450,7 +7439,7 @@
     "id": 704,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Steven Black's Hosts (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/steven-blacks-ad-hoc-list.txt"
@@ -7459,7 +7448,7 @@
     "id": 705,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Badd Boyz Hosts (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/coinblocker.txt"
@@ -7468,7 +7457,7 @@
     "id": 706,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "add.2o7Net (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/add-2o7net.txt"
@@ -7477,7 +7466,7 @@
     "id": 707,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "add.Dead (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/add-dead.txt"
@@ -7486,7 +7475,7 @@
     "id": 708,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "add.Risk (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/add-risk.txt"
@@ -7495,7 +7484,7 @@
     "id": 709,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "add.Spam (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/add-spam.txt"
@@ -7504,7 +7493,7 @@
     "id": 710,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Tyzbit (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/tyzbit.txt"
@@ -7513,7 +7502,7 @@
     "id": 711,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Unchecky Ads (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/uncheckyads.txt"
@@ -7522,7 +7511,7 @@
     "id": 712,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Spotify Ad Domains",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/spotifyads.txt"
@@ -7531,7 +7520,7 @@
     "id": 713,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "AdGuard DNS (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/adguard.txt"
@@ -7540,7 +7529,7 @@
     "id": 714,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "AdAway (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/adaway.txt"
