@@ -144,5 +144,12 @@
     "homeUrl": "https://diversion.ch/",
     "isAbpSubscribable": false,
     "name": "Diversion"
+  },
+  {
+    "id": 23,
+    "downloadUrl": "http://www.thekelleys.org.uk/dnsmasq/",
+    "homeUrl": "http://www.thekelleys.org.uk/dnsmasq/doc.html",
+    "isAbpSubscribable": false,
+    "name": "dnsmasq"
   }
 ]
