@@ -177,5 +177,33 @@
     "name": "CC BY-NC-ND 3.0",
     "permissiveAdaptation": false,
     "permissiveCommercial": false
+  },
+  {
+    "id": 27,
+    "descriptionUrl": "https://opensource.org/licenses/BSD-2-Clause",
+    "name": "BSD-2-Clause",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 28,
+    "descriptionUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "name": "CC0 1.0 Universal",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 29,
+    "descriptionUrl": "https://spdx.org/licenses/Beerware.html",
+    "name": "The Beer-Ware License",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 30,
+    "descriptionUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+    "name": "CC BY-SA 2.1 JP",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
   }
 ]
