@@ -17,14 +17,12 @@ export const Maintainers = (columnVisibility: IColumnVisibility[], maintainers: 
 
 const filterMethod = (f: Filter, r: any[], maintainers: IMaintainer[]): boolean => {
     const listMaintainerIds: number[] = r[f.id as any];
-    if (f.value === "any") {
-        return true;
-    } else if (listMaintainerIds) {
-        const maintainerFiltered = maintainers.filter((m: IMaintainer) => m.id === parseInt(f.value))[0];
-        return listMaintainerIds.indexOf(maintainerFiltered.id) > -1;
-    } else {
-        return false;
-    }
+    return f.value === "any" ||
+    (listMaintainerIds
+         ? f.value === "none"
+           ? false
+           : listMaintainerIds.indexOf(maintainers.filter((m: IMaintainer) => m.id === parseInt(f.value))[0].id) > -1
+         : f.value === "none");
 };
 
 const Filter = (props: any, maintainers: IMaintainer[]) =>
@@ -33,6 +31,7 @@ const Filter = (props: any, maintainers: IMaintainer[]) =>
         style={{ width: "100%" }}
         value={props.filter ? props.filter.value : "any"}>
         <option value="any">Any</option>
+        <option value="none">None</option>
         {maintainers.length > 0
              ? maintainers.sort((a, b) => a.name.localeCompare(b.name))
              .map((m: IMaintainer, i: number) =>
