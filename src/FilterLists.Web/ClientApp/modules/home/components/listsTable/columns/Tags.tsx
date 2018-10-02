@@ -34,7 +34,7 @@ const Filter = (props: any, tags: ITag[]) =>
         <option value="any">Any</option>
         {tags.length > 0
              ? tags.map((t: ITag, i: number) =>
-                 <option value={t.id} key={i}>
+                 <option value={t.id} title={t.description} key={i}>
                      {t.name} ({t.filterListIds ? t.filterListIds.length : 0})
                  </option>)
              : null}
