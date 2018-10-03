@@ -1082,5 +1082,17 @@
   {
     "filterListId": 809,
     "languageId": 108
+  },
+  {
+    "filterListId": 814,
+    "languageId": 141
+  },
+  {
+    "filterListId": 815,
+    "languageId": 110
+  },
+  {
+    "filterListId": 815,
+    "languageId": 141
   }
 ]
