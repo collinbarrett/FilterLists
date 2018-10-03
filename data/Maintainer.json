@@ -437,5 +437,59 @@
     "homeUrl": "https://github.com/EnergizedProtection",
     "name": "Team Boltz",
     "twitterHandle": "adroitadorkhan"
+  },
+  {
+    "id": 85,
+    "name": "FadeMind"
+  },
+  {
+    "id": 86,
+    "homeUrl": "http://rlwpx.free.fr/",
+    "name": "Airelle"
+  },
+  {
+    "id": 87,
+    "name": "Aegis Team",
+    "twitterHandle": "TeamAEGISgg"
+  },
+  {
+    "id": 88,
+    "emailAddress": "Info@RiskAnalytics.com",
+    "homeUrl": "https://www.riskanalytics.com/",
+    "name": "RiskAnalytics"
+  },
+  {
+    "id": 89,
+    "emailAddress": "support@it-mate.co.uk",
+    "homeUrl": "https://hosts-file.net/",
+    "name": "Hosts-File Dot Net",
+  },
+  {
+    "id": 90,
+    "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
+    "homeUrl": "https://biocontact.org/jmdugan/",
+    "name": "Jonathan Dugan"
+  },
+  {
+    "id": 91,
+    "emailAddress": "pgl@yoyo.org",
+    "homeUrl": "https://pgl.yoyo.org/",
+    "name": "Peter Lowe"
+  },
+  {
+    "id": 92,
+    "homeUrl": "https://code.google.com/archive/p/ruadlist/",
+    "name": "RU AdList"
+  },
+  {
+    "id": 93,
+    "emailAddress": "steveb@stevenblack.com",
+    "homeUrl": "http://stevenblack.com/",
+    "name": "Steven Black",
+    "twitterHandle": "steveblack"
+  },
+  {
+    "id": 94,
+    "name": "yourduskquibbles"
   }
 ]
