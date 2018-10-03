@@ -575,11 +575,13 @@
   {
     "id": 53,
     "description": "Blocks Japanese regional mobile advertisements and trackers.",
-    "homeUrl": "https://gmbk0.tumblr.com/",
-    "licenseId": 5,
-    "name": "gmbk0's AdAway Hosts for Android",
+    "discontinuedDate": "2014-05-07T15:14:00"
+    "homeUrl": "http://gmbk0.tumblr.com/",
+    "licenseId": 20,
+    "name": "gmbkslist (Hosts)",
     "syntaxId": 1,
-    "viewUrl": "https://gmbksfilters.googlecode.com/hg/hosts_adonly.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist%20(Hosts).txt",
+    "viewUrl": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/gmbkslist%20(Hosts).txt"
   },
   {
     "id": 54,
@@ -8505,5 +8507,51 @@
     "name": "1Hosts Mini (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://1hosts.cf/mini/list.txt"
+  },
+  {
+    "id": 813,
+    "description": "I use an ad blocker not because I hate ads, but because it makes the Internet so much more safe and less annoying. Most advertising is horrible and annoying, but there are exceptions. However, ad blocking lists like EasyList are dedicated to blocking all ads. The only maintained \"Acceptable Ads\" list is by Eyeo, Inc., which basically takes bribes to whitelist ads. I wanted to start an Acceptable Ads list that was of the people, by the people and for the people.",
+    "descriptionSourceUrl": "https://github.com/jwinnie/acceptable-ads#acceptable-ads",
+    "homeUrl": "https://github.com/jwinnie/acceptable-ads",
+    "issuesUrl": "https://github.com/jwinnie/acceptable-ads/issues",
+    "licenseId": 4,
+    "name": "jwinnie Acceptable Ads",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/jwinnie/acceptable-ads/master/filters.txt"
+  },
+  {
+    "id": 814,
+    "description": "Blocks Japanese regional mobile advertisements and trackers.",
+    "discontinuedDate": "2014-05-07T15:14:00"
+    "homeUrl": "http://gmbk0.tumblr.com/",
+    "licenseId": 20,
+    "name": "gmbkslist (ABP)",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist.txt",
+    "viewUrl": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/gmbkslist.txt"
+  },
+  {
+    "id": 815,
+    "discontinuedDate": "2012-09-16T00:00:00"
+    "homeUrl": "https://code.google.com/archive/p/adblocking-openfilter-jp/",
+    "licenseId": 5,
+    "name": "Adblocking Open Filter JP",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Adblocking%20Open%20Filter%20JP",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Adblocking%20Open%20Filter%20JP"
+  },
+  {
+    "id": 816,
+    "description": "Do you already have a favourite browser? Are you tired of seeing \"Try out [some browser] now!\" on some websites? Then this is a list is for you!.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "I Don't Want to Download Your Browser",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt"
   }
 ]
