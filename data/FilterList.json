@@ -5133,7 +5133,7 @@
     "emailAddress": "mail.energized@protonmail.com",
     "homeUrl": "https://github.com/yecarrillo/adblock-colombia",
     "issuesUrl": "https://github.com/yecarrillo/adblock-colombia/issues",
-    "licenseId": 3,
+    "licenseId": 4,
     "name": "yecarrillo's ad-blocking subscription for Colombian sites",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/yecarrillo/adblock-colombia/master/adblock_co.txt"
@@ -8147,7 +8147,7 @@
     "forumUrl": "https://forums.lanik.us/",
     "homeUrl": "https://easylist.to/",
     "licenseId": 16,
-    "name": "Fanboy's Annoyance List",
+    "name": "Fanboy's Annoyance List (TPL)",
     "syntaxId": 10,
     "viewUrl": "https://easylist-msie.adblockplus.org/fanboy-annoyance.tpl"
   },
@@ -8187,7 +8187,7 @@
     "id": 779,
     "homeUrl": "https://easylist.to/",
     "licenseId": 4,
-    "name": "EasyList Italy + Italy (TPL)",
+    "name": "EasyList Italy + EasyList (TPL)",
     "syntaxId": 10,
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistitaly+easylist.tpl"
   },
