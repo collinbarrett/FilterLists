@@ -575,7 +575,7 @@
   {
     "id": 53,
     "description": "Blocks Japanese regional mobile advertisements and trackers.",
-    "discontinuedDate": "2014-05-07T15:14:00"
+    "discontinuedDate": "2014-05-07T15:14:00",
     "homeUrl": "http://gmbk0.tumblr.com/",
     "licenseId": 20,
     "name": "gmbkslist (Hosts)",
@@ -8522,7 +8522,7 @@
   {
     "id": 814,
     "description": "Blocks Japanese regional mobile advertisements and trackers.",
-    "discontinuedDate": "2014-05-07T15:14:00"
+    "discontinuedDate": "2014-05-07T15:14:00",
     "homeUrl": "http://gmbk0.tumblr.com/",
     "licenseId": 20,
     "name": "gmbkslist (ABP)",
@@ -8532,7 +8532,7 @@
   },
   {
     "id": 815,
-    "discontinuedDate": "2012-09-16T00:00:00"
+    "discontinuedDate": "2012-09-16T00:00:00",
     "homeUrl": "https://code.google.com/archive/p/adblocking-openfilter-jp/",
     "licenseId": 5,
     "name": "Adblocking Open Filter JP",
