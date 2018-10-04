@@ -495,5 +495,57 @@
   {
     "id": 95,
     "name": "k2japan"
+  },
+  {
+    "id": 96,
+    "emailAddress": "blog@zoso.ro",
+    "homeUrl": "https://www.zoso.ro/",
+    "name": "Zoso",
+    "twitterHandle": "zoso"
+  },
+  {
+    "id": 97,
+    "name": "BsT"
+  },
+  {
+    "id": 98,
+    "name": "John and Li"
+  },
+  {
+    "id": 99,
+    "homeUrl": "https://margevicius.lt/",
+    "name": "gymka"
+  },
+  {
+    "id": 100,
+    "homeUrl": "https://stanev.org/",
+    "name": "Alex Stanev"
+  },
+  {
+    "id": 101,
+    "homeUrl": "https://blogram.net/",
+    "name": "BLOGRAM"
+  },
+  {
+    "id": 102,
+    "homeUrl": "https://notabug.org/anonymous74100?tab=activity",
+    "name": "anonymous74100"
+  },
+  {
+    "id": 103,
+    "emailAddress": "costa@firehol.org",
+    "homeUrl": "https://firehol.org/",
+    "name": "FireHOL"
+  },
+  {
+    "id": 104,
+    "emailAddress": "mail@perflyst.de",
+    "homeUrl": "https://github.com/Perflyst",
+    "name": "Perflyst"
+  },
+  {
+    "id": 105,
+    "homeUrl": "https://github.com/crazy-max",
+    "name": "CrazyMax"
   }
 ]
