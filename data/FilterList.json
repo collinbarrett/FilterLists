@@ -2715,12 +2715,14 @@
   {
     "id": 251,
     "description": "Blocks English and Spanish regional advertisements and trackers.",
+    "discontinuedDate": "2013-10-26T00:00:00"
     "homeUrl": "https://nauscopio.wordpress.com/2010/07/05/filtrado-bloqueo-y-ocultacion-de-la-publicidad-en-google-chrome/",
     "issuesUrl": "https://github.com/mozillahispano/nauscopio-filtros/issues",
     "licenseId": 6,
     "name": "Filtros Nauscopicos",
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/filtros.txt"
+    "viewUrl": "http://abp.mozilla-hispano.org/nauscopio/filtros.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/filtros.txt"
   },
   {
     "id": 252,
@@ -8553,5 +8555,25 @@
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt"
+  },
+  {
+    "id": 817,
+    "description": "This file is in hosts file format and works best when used in for example pi-hole, routers, etc. It aims to reduce your exposure to ads, tracking, scams & badware, and occasionally some annoyances on (mostly) Swedish websites. As always with hosts file, use at your own risk and make sure that you know what you're doing. This is not as powerful as the filter list for uBO.",
+    "descriptionSourceUrl": "https://github.com/lassekongo83/Frellwits-filter-lists#available-lists",
+    "homeUrl": "https://github.com/lassekongo83/Frellwits-filter-lists",
+    "issuesUrl": "https://github.com/lassekongo83/Frellwits-filter-lists/issues",
+    "licenseId": 4,
+    "name": "Frellwit's Swedish Filter",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt"
+  },
+  {
+    "id": 818,
+    "homeUrl": "https://github.com/mediumkreation/IndianList",
+    "issuesUrl": "https://github.com/mediumkreation/IndianList/issues",
+    "licenseId": 3,
+    "name": "IndianList",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/indianlist.txt"
   }
 ]
