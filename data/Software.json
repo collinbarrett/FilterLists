@@ -151,5 +151,19 @@
     "homeUrl": "http://www.thekelleys.org.uk/dnsmasq/doc.html",
     "isAbpSubscribable": false,
     "name": "dnsmasq"
+  },
+  {
+    "id": 24,
+    "downloadUrl": "https://www.slimjet.com/en/dlpage.php",
+    "homeUrl": "https://www.slimjet.com",
+    "isAbpSubscribable": true,
+    "name": "Slimjet"
+  },
+  {
+    "id": 25,
+    "downloadUrl": "https://github.com/gorhill/uMatrix#umatrix",
+    "homeUrl": "https://github.com/gorhill/uMatrix",
+    "isAbpSubscribable": true,
+    "name": "uMatrix"
   }
 ]
