@@ -542,8 +542,8 @@
     "id": 50,
     "description": "We will blacklist domains that fall into any of the following categories: scams/phishing/malware/malvertising/exploits - and other general threats.",
     "descriptionSourceUrl": "https://www.hexxiumcreations.com/projects/malicious-domain-blocking/",
-    "emailAddress": "support@hexxiumcreations.com",
     "donateUrl": "https://www.hexxiumcreations.com/donate/",
+    "emailAddress": "support@hexxiumcreations.com",
     "homeUrl": "https://www.hexxiumcreations.com/projects/malicious-domain-blocking/",
     "issuesUrl": "https://github.com/HexxiumCreations/threat-list/issues",
     "licenseId": 5,
@@ -575,13 +575,13 @@
   {
     "id": 53,
     "description": "Blocks Japanese regional mobile advertisements and trackers.",
-    "discontinuedDate": "2014-05-07T15:14:00",
+    "discontinuedDate": "2014-05-07T00:00:00",
     "homeUrl": "http://gmbk0.tumblr.com/",
     "licenseId": 20,
     "name": "gmbkslist (Hosts)",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist%20(Hosts).txt",
-    "viewUrl": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/gmbkslist%20(Hosts).txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/gmbkslist%20(Hosts).txt"
   },
   {
     "id": 54,
@@ -8524,7 +8524,7 @@
   {
     "id": 814,
     "description": "Blocks Japanese regional mobile advertisements and trackers.",
-    "discontinuedDate": "2014-05-07T15:14:00",
+    "discontinuedDate": "2014-05-07T00:00:00",
     "homeUrl": "http://gmbk0.tumblr.com/",
     "licenseId": 20,
     "name": "gmbkslist (ABP)",
