@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Extensions;
+using FilterLists.Services.GitHub;
 using FilterLists.Services.Snapshot.Models;
 using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +24,7 @@ namespace FilterLists.Services.Snapshot
         public readonly FilterListViewUrlDto List;
         protected readonly Data.Entities.Snapshot SnapEntity;
         private readonly FilterListsDbContext dbContext;
+        private readonly GitHubService gitHubService;
         private readonly Logger logger;
         private readonly string uaString;
         protected string ListUrl;
@@ -33,11 +35,13 @@ namespace FilterLists.Services.Snapshot
         }
 
         [UsedImplicitly]
-        public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list, Logger logger, string uaString)
+        public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list, GitHubService gitHubService,
+            Logger logger, string uaString)
         {
             this.dbContext = dbContext;
             List = list;
             ListUrl = list.ViewUrl;
+            this.gitHubService = gitHubService;
             this.logger = logger;
             SnapEntity = new Data.Entities.Snapshot {FilterListId = list.Id, SnapshotRules = new List<SnapshotRule>()};
             this.uaString = uaString;
@@ -52,6 +56,7 @@ namespace FilterLists.Services.Snapshot
             await AddSnapEntity();
             if (!ListUrl.IsValidHttpOrHttpsUrl())
                 return;
+            await UpdateDates();
             try
             {
                 await SaveAsync();
@@ -66,6 +71,30 @@ namespace FilterLists.Services.Snapshot
         {
             dbContext.Snapshots.Add(SnapEntity);
             await dbContext.SaveChangesAsync();
+        }
+
+        private async Task UpdateDates()
+        {
+            var dates = await gitHubService.GetCommitDatesAsync(ListUrl);
+            if (dates is null)
+                return;
+            var list = await dbContext.FilterLists.FirstOrDefaultAsync(l => l.Id == List.Id);
+            UpdatePublishedDate(dates.First, list);
+            UpdateDiscontinuedDate(dates.Last, list);
+            await dbContext.SaveChangesAsync();
+        }
+
+        private static void UpdatePublishedDate(DateTime? date, Data.Entities.FilterList list)
+        {
+            if (date is DateTime firstDate && (list.PublishedDate is null || firstDate < list.PublishedDate))
+                list.PublishedDate = firstDate;
+        }
+
+        private static void UpdateDiscontinuedDate(DateTime? date, Data.Entities.FilterList list)
+        {
+            if (date is DateTime lastDate && lastDate < DateTime.Now.AddYears(-2) &&
+                (list.DiscontinuedDate is null || lastDate > list.DiscontinuedDate))
+                list.DiscontinuedDate = lastDate;
         }
 
         private async Task SaveAsync()
