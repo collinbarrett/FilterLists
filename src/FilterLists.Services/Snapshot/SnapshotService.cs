@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
+using FilterLists.Services.GitHub;
 using FilterLists.Services.Snapshot.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,11 +20,16 @@ namespace FilterLists.Services.Snapshot
                   .OrderByDescending(d => d)
                   .FirstOrDefault();
 
+        private readonly GitHubService gitHubService;
         private readonly Logger logger;
         private string uaString;
 
-        public SnapshotService(FilterListsDbContext dbContext, IConfigurationProvider mapConfig, Logger logger)
-            : base(dbContext, mapConfig) => this.logger = logger;
+        public SnapshotService(FilterListsDbContext dbContext, IConfigurationProvider mapConfig,
+            GitHubService gitHubService, Logger logger) : base(dbContext, mapConfig)
+        {
+            this.gitHubService = gitHubService;
+            this.logger = logger;
+        }
 
         public async Task CaptureAsync(int batchSize)
         {
@@ -46,13 +52,12 @@ namespace FilterLists.Services.Snapshot
         }
 
         private async Task<IEnumerable<FilterListViewUrlDto>> GetListsToCapture(int batchSize) =>
-            await DbContext
-                  .FilterLists
-                  .OrderBy(l => l.Snapshots.Any())
-                  .ThenBy(lastSnapTimestamp)
-                  .Take(batchSize)
-                  .ProjectTo<FilterListViewUrlDto>(MapConfig)
-                  .ToListAsync();
+            await DbContext.FilterLists
+                           .OrderBy(l => l.Snapshots.Any())
+                           .ThenBy(lastSnapTimestamp)
+                           .Take(batchSize)
+                           .ProjectTo<FilterListViewUrlDto>(MapConfig)
+                           .ToListAsync();
 
         private async Task<List<TSnap>> CreateAndSaveSnaps<TSnap>(IEnumerable<FilterListViewUrlDto> lists)
             where TSnap : Snapshot, new()
@@ -63,8 +68,8 @@ namespace FilterLists.Services.Snapshot
         }
 
         private IEnumerable<TSnap> CreateSnaps<TSnap>(IEnumerable<FilterListViewUrlDto> lists)
-            where TSnap : Snapshot, new() =>
-            lists.Select(l => Activator.CreateInstance(typeof(TSnap), DbContext, l, logger, uaString) as TSnap);
+            where TSnap : Snapshot, new() => lists.Select(l =>
+            Activator.CreateInstance(typeof(TSnap), DbContext, l, gitHubService, logger, uaString) as TSnap);
 
         private static async Task SaveSnaps(IEnumerable<Snapshot> snaps)
         {

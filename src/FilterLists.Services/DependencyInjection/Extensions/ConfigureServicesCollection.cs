@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using FilterLists.Data;
 using FilterLists.Services.FilterList;
+using FilterLists.Services.GitHub;
 using FilterLists.Services.Language;
 using FilterLists.Services.License;
 using FilterLists.Services.Maintainer;
@@ -44,6 +45,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
                     .AddDbContextPool<FilterListsDbContext>(o =>
                         o.UseMySql(config.GetConnectionString("FilterListsConnection"),
                             m => m.MigrationsAssembly("FilterLists.Api")));
+            services.TryAddScoped<GitHubService>();
             services.TryAddScoped<SnapshotService>();
             services.TryAddScoped<Logger>();
             services.AddAutoMapper();

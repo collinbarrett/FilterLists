@@ -102,8 +102,13 @@ namespace FilterLists.Data.Seed.Extensions
 
         private static List<IProperty> GetPropertiesLessValueGeneratedTimestamps(IEntityType entityType) =>
             entityType.GetProperties()
-                      .Where(x =>
-                          !new List<string> {"CreatedDateUtc", "ModifiedDateUtc", "DiscontinuedDate"}.Contains(x.Name))
+                      .Where(x => !new List<string>
+                      {
+                          "CreatedDateUtc",
+                          "ModifiedDateUtc",
+                          "DiscontinuedDate",
+                          "PublishedDate"
+                      }.Contains(x.Name))
                       .ToList();
 
         private static string CreateValues<TEntity>(IEnumerable<TEntity> seed,
