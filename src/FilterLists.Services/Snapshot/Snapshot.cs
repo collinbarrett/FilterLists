@@ -10,7 +10,6 @@ using FilterLists.Data;
 using FilterLists.Data.Entities.Junctions;
 using FilterLists.Services.Extensions;
 using FilterLists.Services.GitHub;
-using FilterLists.Services.Snapshot.Models;
 using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 using MoreLinq;
@@ -21,23 +20,22 @@ namespace FilterLists.Services.Snapshot
     public class Snapshot
     {
         private const int BatchSize = 25000;
-        public readonly FilterListViewUrlDto List;
+        public readonly Data.Entities.FilterList List;
         protected readonly Data.Entities.Snapshot SnapEntity;
         private readonly FilterListsDbContext dbContext;
         private readonly GitHubService gitHubService;
         private readonly Logger logger;
         private readonly string uaString;
         protected string ListUrl;
-        private Data.Entities.FilterList filterList;
         private bool isUpdatedDateFromGitHub;
         private HashSet<string> lines;
-        
+
         public Snapshot()
         {
         }
 
         [UsedImplicitly]
-        public Snapshot(FilterListsDbContext dbContext, FilterListViewUrlDto list, GitHubService gitHubService,
+        public Snapshot(FilterListsDbContext dbContext, Data.Entities.FilterList list, GitHubService gitHubService,
             Logger logger, string uaString)
         {
             this.dbContext = dbContext;
@@ -80,29 +78,22 @@ namespace FilterLists.Services.Snapshot
             var dates = await gitHubService.GetCommitDatesAsync(ListUrl);
             if (dates is null)
                 return;
-            var list = await GetList();
-            UpdatePublishedDateFromGitHub(dates.First, list);
-            UpdateUpdatedDateFromGitHub(dates.Last, list);
+            UpdatePublishedDateFromGitHub(dates.First);
+            UpdateUpdatedDateFromGitHub(dates.Last);
             await dbContext.SaveChangesAsync();
         }
 
-        private async Task<Data.Entities.FilterList> GetList()
+        private void UpdatePublishedDateFromGitHub(DateTime? date)
         {
-            filterList = filterList ?? await dbContext.FilterLists.FirstOrDefaultAsync(l => l.Id == List.Id);
-            return filterList;
+            if (date is DateTime firstDate && (List.PublishedDate is null || firstDate < List.PublishedDate))
+                List.PublishedDate = firstDate;
         }
 
-        private static void UpdatePublishedDateFromGitHub(DateTime? date, Data.Entities.FilterList list)
+        private void UpdateUpdatedDateFromGitHub(DateTime? date)
         {
-            if (date is DateTime firstDate && (list.PublishedDate is null || firstDate < list.PublishedDate))
-                list.PublishedDate = firstDate;
-        }
-
-        private void UpdateUpdatedDateFromGitHub(DateTime? date, Data.Entities.FilterList list)
-        {
-            if (date is DateTime lastDate && (list.UpdatedDate is null || lastDate > list.UpdatedDate))
+            if (date is DateTime lastDate && (List.UpdatedDate is null || lastDate > List.UpdatedDate))
             {
-                list.UpdatedDate = lastDate;
+                List.UpdatedDate = lastDate;
                 isUpdatedDateFromGitHub = true;
             }
         }
@@ -162,7 +153,7 @@ namespace FilterLists.Services.Snapshot
                 await SetWasUpdated();
                 if (SnapEntity.WasUpdated)
                 {
-                    await UpdateUpdatedDate();
+                    UpdateUpdatedDate();
                     memoryStream.Position = 0;
                     if (ListUrl.EndsWith(".7z"))
                         await GetLinesFrom7Zip(memoryStream);
@@ -192,12 +183,11 @@ namespace FilterLists.Services.Snapshot
                            .Select(s => s.Md5Checksum)
                            .FirstOrDefaultAsync() ?? Array.Empty<byte>();
 
-        private async Task UpdateUpdatedDate()
+        private void UpdateUpdatedDate()
         {
             if (isUpdatedDateFromGitHub)
                 return;
-            var list = await GetList();
-            list.UpdatedDate = DateTime.Now;
+            List.UpdatedDate = DateTime.Now;
         }
 
         private async Task GetLinesFrom7Zip(Stream stream)
