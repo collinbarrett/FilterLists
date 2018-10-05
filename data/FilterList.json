@@ -4110,7 +4110,7 @@
     "licenseId": 4,
     "name": "AFNIL - Anti Fake News International List",
     "publishedDate": "2017-12-20T00:00:00",
-    "syntaxId": 7,
+    "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/AFNIL-AntiFakeNewsInternationalList/AFNIL/master/AFNIL-ABP-uBO.txt"
   },
   {
@@ -8563,7 +8563,7 @@
     "homeUrl": "https://github.com/lassekongo83/Frellwits-filter-lists",
     "issuesUrl": "https://github.com/lassekongo83/Frellwits-filter-lists/issues",
     "licenseId": 4,
-    "name": "Frellwit's Swedish Filter",
+    "name": "Frellwit's Swedish Hosts File",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt"
   },
@@ -8575,5 +8575,28 @@
     "name": "IndianList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/indianlist.txt"
+  },
+  {
+    "id": 819,
+    "description": "This list is mostly meant to be used on top of \"YouTube: Pure Video Experience\", and it removes even more (number-wise) distracting or uncomfortable things on YouTube.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeEvenMorePureVideoExperience.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "YouTube: Even More Pure Video Experience",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeEvenMorePureVideoExperience.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/YouTubeEvenMorePureVideoExperience.txt"
+  },
+  {
+    "id": 820,
+    "homeUrl": "https://github.com/uBlockOrigin/uAssets",
+    "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
+    "licenseId": 4,
+    "name": "uMatrix - Rulesets for English websites",
+    "syntaxId": 7,
+    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/recipes/recipes_en.txt"
   }
 ]
