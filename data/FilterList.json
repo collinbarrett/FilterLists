@@ -34,12 +34,12 @@
     "id": 4,
     "description": "Hosts file blocking known malware, spyware, virus, and shock sites",
     "descriptionSourceUrl": "https://github.com/michaeltrimm/hosts-blocking",
-    "discontinuedDate": "2016-12-29T00:00:00",
     "homeUrl": "https://github.com/michaeltrimm/hosts-blocking",
     "issuesUrl": "https://github.com/michaeltrimm/hosts-blocking/issues",
     "licenseId": 2,
     "name": "Hosts Blocking",
     "syntaxId": 1,
+    "updatedDate": "2016-12-29T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/michaeltrimm/hosts-blocking/master/_hosts.txt"
   },
   {
@@ -68,36 +68,36 @@
     "id": 7,
     "description": "The Malware URLs in the 'gray area.' To be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves. The 'gray area' is an area where many malware URLs exists, but there is also a big number of false positives as the gray area is the one where only 2 or 3 pieces of evidence were discovered. The 'gray area' should not be used for blocking domains or URLs, it is published only with the aim of helping malware researchers.",
     "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
-    "discontinuedDate": "2015-07-30T00:00:00",
     "emailAddress": "info@joxeankoret.com",
     "homeUrl": "http://malwareurls.joxeankoret.com/",
     "licenseId": 2,
     "name": "Malware URLs Gray Area",
     "syntaxId": 3,
+    "updatedDate": "2015-07-30T00:00:00",
     "viewUrl": "http://malwareurls.joxeankoret.com/grayarea.txt"
   },
   {
     "id": 8,
     "description": "The domains of Malware URLs to be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves.",
     "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
-    "discontinuedDate": "2015-07-30T00:00:00",
     "emailAddress": "info@joxeankoret.com",
     "homeUrl": "http://malwareurls.joxeankoret.com/",
     "licenseId": 2,
     "name": "Malware URLs Domains",
     "syntaxId": 2,
+    "updatedDate": "2015-07-30T00:00:00",
     "viewUrl": "http://malwareurls.joxeankoret.com/domains.txt"
   },
   {
     "id": 9,
     "description": "A full set of Malware URLs to be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves.",
     "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
-    "discontinuedDate": "2015-07-30T00:00:00",
     "emailAddress": "info@joxeankoret.com",
     "homeUrl": "http://malwareurls.joxeankoret.com/",
     "licenseId": 2,
     "name": "Malware URLs",
     "syntaxId": 3,
+    "updatedDate": "2015-07-30T00:00:00",
     "viewUrl": "http://malwareurls.joxeankoret.com/normal.txt"
   },
   {
@@ -295,26 +295,26 @@
     "id": 28,
     "description": "The Quiet list blocks all other notices regardless of their size or obnoxiousness. Simple two- or three-word links to privacy pages aren't blocked (such as links in a page footer), but a lengthy paragraph mid-page will be.",
     "descriptionSourceUrl": "https://github.com/liamja/Prebake",
-    "discontinuedDate": "2018-05-28T00:00:00",
     "emailAddress": "cookies@prebake.eu",
     "homeUrl": "http://prebake.eu/",
     "issuesUrl": "https://github.com/liamja/Prebake/issues",
     "licenseId": 2,
     "name": "Prebake Quiet",
     "syntaxId": 3,
+    "updatedDate": "2018-05-28T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/quiet.txt"
   },
   {
     "id": 29,
     "description": "Prebake is an Adblock filter subscription that blocks large, obtrusive cookie notices. These notices either consume a considerable amount of screen real estate or popup and distract the viewers attention, which can be just as annoying as ads.",
     "descriptionSourceUrl": "http://prebake.eu/",
-    "discontinuedDate": "2018-05-28T00:00:00",
     "emailAddress": "cookies@prebake.eu",
     "homeUrl": "http://prebake.eu/",
     "issuesUrl": "https://github.com/liamja/Prebake/issues",
     "licenseId": 2,
     "name": "Prebake Obtrusive",
     "syntaxId": 3,
+    "updatedDate": "2018-05-28T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/obtrusive.txt"
   },
   {
@@ -335,11 +335,11 @@
     "id": 31,
     "description": "Contains a list of elements of advertising, such as banners or flash animations, the most commonly used on Polish websites.",
     "descriptionSourceUrl": "http://niecko.pl/adblock/",
-    "discontinuedDate": "2011-12-10T00:00:00",
     "homeUrl": "http://niecko.pl/adblock/",
     "licenseId": 5,
     "name": "PLgeneral",
     "syntaxId": 3,
+    "updatedDate": "2011-12-10T00:00:00",
     "viewUrl": "https://www.niecko.pl/adblock/adblock.txt"
   },
   {
@@ -357,12 +357,12 @@
     "id": 33,
     "description": "Adblock filter for obtrusive overlay (pop up) elements and various other annoying elements on websites.",
     "descriptionSourceUrl": "https://github.com/LordBadmintonofYorkshire/Overlay-Blocker",
-    "discontinuedDate": "2015-01-21T00:00:00",
     "homeUrl": "https://github.com/LordBadmintonofYorkshire/Overlay-Blocker",
     "issuesUrl": "https://github.com/LordBadmintonofYorkshire/Overlay-Blocker/issues",
     "licenseId": 2,
     "name": "Overlay Blocker",
     "syntaxId": 3,
+    "updatedDate": "2015-01-21T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/LordBadmintonofYorkshire/Overlay-Blocker/master/blocklist.txt"
   },
   {
@@ -575,21 +575,21 @@
   {
     "id": 53,
     "description": "Blocks Japanese regional mobile advertisements and trackers.",
-    "discontinuedDate": "2014-05-07T00:00:00",
     "homeUrl": "http://gmbk0.tumblr.com/",
     "licenseId": 20,
     "name": "gmbkslist (Hosts)",
     "syntaxId": 1,
+    "updatedDate": "2014-05-07T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist%20(Hosts).txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/gmbkslist%20(Hosts).txt"
   },
   {
     "id": 54,
     "description": "Block ads with /etc/hosts.",
-    "discontinuedDate": "2016-02-21T00:00:00",
     "licenseId": 16,
     "name": "G&J Hosts",
     "syntaxId": 1,
+    "updatedDate": "2016-02-21T00:00:00",
     "viewUrl": "https://web.archive.org/web/20160221140034if_/http://adblock.gjtech.net/?format=unix-hosts"
   },
   {
@@ -692,19 +692,19 @@
   {
     "id": 64,
     "description": "A list combining Malware Domain List and Spybot.",
-    "discontinuedDate": "2016-09-17T00:00:00",
     "licenseId": 5,
     "name": "Jansal's Hosts Light",
     "syntaxId": 1,
+    "updatedDate": "2016-09-17T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hostslt"
   },
   {
     "id": 65,
     "description": "A list combining Malware Domain List, Peter Lowe's List, Spybot, and Spyware Blaster.",
-    "discontinuedDate": "2016-09-17T00:00:00",
     "licenseId": 5,
     "name": "Jansal's Hosts",
     "syntaxId": 1,
+    "updatedDate": "2016-09-17T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hosts"
   },
   {
@@ -754,12 +754,12 @@
     "id": 70,
     "description": "List of filters for Adblock Plus that block cookie notices on European websites.",
     "descriptionSourceUrl": "https://github.com/Rudloff/adblock-imokwithcookies",
-    "discontinuedDate": "2018-07-05T00:00:00",
     "homeUrl": "https://github.com/Rudloff/adblock-imokwithcookies",
     "issuesUrl": "https://github.com/Rudloff/adblock-imokwithcookies/issues",
     "licenseId": 19,
     "name": "I'm OK with Cookies",
     "syntaxId": 3,
+    "updatedDate": "2018-07-05T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/Rudloff/adblock-imokwithcookies/master/filters.txt"
   },
   {
@@ -928,12 +928,12 @@
     "id": 86,
     "description": "Block sites with skimming scripts.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/byaka/ublock-antiskimming-list/master/build/data.txt",
-    "discontinuedDate": "2017-11-28T00:00:00",
     "homeUrl": "https://github.com/byaka/ublock-antiskimming-list",
     "issuesUrl": "https://github.com/byaka/ublock-antiskimming-list/issues",
     "licenseId": 5,
     "name": "uBlock Antiskimming List",
     "syntaxId": 4,
+    "updatedDate": "2017-11-28T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/byaka/ublock-antiskimming-list/master/build/data.txt"
   },
   {
@@ -1068,22 +1068,22 @@
     "id": 100,
     "description": "Finnish supplement list for EasyList.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt",
-    "discontinuedDate": "2015-05-16T00:00:00",
     "homeUrl": "https://github.com/wiltteri/subscriptions",
     "licenseId": 11,
     "name": "Wiltteri Reborn",
     "syntaxId": 3,
+    "updatedDate": "2015-05-16T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt"
   },
   {
     "id": 101,
     "description": "Finnish supplement list for EasyList.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt",
-    "discontinuedDate": "2015-05-16T00:00:00",
     "homeUrl": "https://github.com/wiltteri/subscriptions",
     "licenseId": 11,
     "name": "Wiltteri",
     "syntaxId": 3,
+    "updatedDate": "2015-05-16T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt"
   },
   {
@@ -1210,11 +1210,11 @@
   {
     "id": 114,
     "description": "Blocks advertisements and trackers.",
-    "discontinuedDate": "2015-04-11T00:00:00",
     "homeUrl": "https://github.com/thoughtconverge/abf",
     "licenseId": 5,
     "name": "Thoughtconverge's Custom AdBlock Filters",
     "syntaxId": 3,
+    "updatedDate": "2015-04-11T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/thoughtconverge/abf/master/abf.txt"
   },
   {
@@ -1396,13 +1396,13 @@
   {
     "id": 132,
     "description": "Blocks Russian regional advertisements and trackers.",
-    "discontinuedDate": "2008-05-18T00:00:00",
     "emailAddress": "denis-ovs@yandex.ru",
     "forumUrl": "https://forum.mozilla-russia.org/viewtopic.php?id=3679",
     "homeUrl": "http://denis-ovs.narod.ru/",
     "licenseId": 5,
     "name": "RU AdList [Old]",
     "syntaxId": 3,
+    "updatedDate": "2008-05-18T00:00:00",
     "viewUrl": "http://denis-ovs.narod.ru/adblock.txt"
   },
   {
@@ -1503,10 +1503,10 @@
   {
     "id": 142,
     "description": "Block ads with AdBlock filter.",
-    "discontinuedDate": "2016-02-21T00:00:00",
     "licenseId": 16,
     "name": "G&J AdBlock",
     "syntaxId": 3,
+    "updatedDate": "2016-02-21T00:00:00",
     "viewUrl": "https://web.archive.org/web/20160221140104if_/http://adblock.gjtech.net/?format=adblock-plus"
   },
   {
@@ -1567,12 +1567,12 @@
   {
     "id": 149,
     "description": "Blocks spammers.",
-    "discontinuedDate": "2015-07-23T00:00:00",
     "emailAddress": "wstearns@pobox.com",
     "homeUrl": "http://www.sa-blacklist.stearns.org/sa-blacklist/",
     "licenseId": 5,
     "name": "SA-Blacklist",
     "syntaxId": 2,
+    "updatedDate": "2015-07-23T00:00:00",
     "viewUrl": "http://www.sa-blacklist.stearns.org/sa-blacklist/sa-blacklist.current.domains"
   },
   {
@@ -1887,12 +1887,12 @@
     "id": 178,
     "description": "This is a list for blocking advertisements on the banki.ru site that are not blocked by \"conventional\" lists.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/rebelion76/bankiru_plus_adblock_list/master/bankiru_plus.txt",
-    "discontinuedDate": "2016-03-26T00:00:00",
     "homeUrl": "https://github.com/rebelion76/bankiru_plus_adblock_list",
     "issuesUrl": "https://github.com/rebelion76/bankiru_plus_adblock_list/issues",
     "licenseId": 5,
     "name": "Banki.ru Plus Adblock List",
     "syntaxId": 3,
+    "updatedDate": "2016-03-26T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/rebelion76/bankiru_plus_adblock_list/master/bankiru_plus.txt"
   },
   {
@@ -1908,11 +1908,11 @@
     "id": 181,
     "description": "A list for Adblock Plus, which is one of the most famous ad blocking softwares.",
     "descriptionSourceUrl": "https://osdn.net/projects/ayucat-list/",
-    "discontinuedDate": "2009-10-18T00:00:00",
     "homeUrl": "https://osdn.net/projects/ayucat-list/",
     "licenseId": 5,
     "name": "Ayucat Powerful List",
     "syntaxId": 3,
+    "updatedDate": "2009-10-18T00:00:00",
     "viewUrl": "http://git.sourceforge.jp/view?p=ayucat-list/ayucat-list.git;a=blob_plain;f=ayucat-list.txt;hb=b254c74c132832a3ade7b9d42c2ef8d3dd59fdb9",
     "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Ayucat%20Powerful%20List.txt",
     "viewUrlMirror2": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Ayucat%20Powerful%20List.txt"
@@ -1921,11 +1921,11 @@
     "id": 182,
     "description": "Complementary subscription to Liste FR + EasyList.",
     "descriptionSourceUrl": "http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
-    "discontinuedDate": "2017-12-09T00:00:00",
     "homeUrl": "https://www.antipubweb.org/",
     "licenseId": 5,
     "name": "AntiPubWeb",
     "syntaxId": 3,
+    "updatedDate": "2017-12-09T00:00:00",
     "viewUrl": "http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt"
   },
   {
@@ -2203,13 +2203,13 @@
     "id": 207,
     "description": "Helps you keep your Ad-Blocker active, when you visit a website and it asks you to disable. Composed of a user script «AakScript» written in javascript and a filter list «AakList» using the same syntax as lists AdBlock and AdBlock Plus, the two are complementary and unlock different website.",
     "descriptionSourceUrl": "https://github.com/reek/anti-adblock-killer/blob/master/README.md",
-    "discontinuedDate": "2016-11-17T00:00:00",
     "donateUrl": "https://github.com/reek/anti-adblock-killer/#donate",
     "homeUrl": "https://github.com/reek/anti-adblock-killer/",
     "issuesUrl": "https://github.com/reek/anti-adblock-killer/issues",
     "licenseId": 8,
     "name": "AakList (Anti-Adblock Killer)",
     "syntaxId": 3,
+    "updatedDate": "2016-11-17T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
   },
   {
@@ -2296,13 +2296,13 @@
     "id": 215,
     "description": "Adblock PL is official Poland filter list for AdBlock and Adblock Plus.",
     "descriptionSourceUrl": "https://github.com/adblockpolska/Adblock_PL_List",
-    "discontinuedDate": "2014-11-07T00:00:00",
     "emailAddress": "adblockpolska@gmail.com",
     "homeUrl": "https://www.facebook.com/adblockpl",
     "issuesUrl": "https://github.com/adblockpolska/Adblock_PL_List/issues",
     "licenseId": 4,
     "name": "Adblock Polska",
     "syntaxId": 3,
+    "updatedDate": "2014-11-07T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/adblockpolska/Adblock_PL_List/master/adblock_polska.txt"
   },
   {
@@ -2342,21 +2342,21 @@
     "id": 219,
     "description": "Prevention behavior tracking by the site administrator.",
     "descriptionSourceUrl": "https://blogram.net/2010/04/23/adblock/",
-    "discontinuedDate": "2014-11-19T00:00:00",
     "homeUrl": "https://blogram.net/2010/04/23/adblock/",
     "licenseId": 5,
     "name": "BLOGRAM Analysis Block Filter List for Japan",
     "syntaxId": 3,
+    "updatedDate": "2014-11-19T00:00:00",
     "viewUrl": "https://blogram.net/wp-content/uploads/easylist3.txt"
   },
   {
     "id": 220,
     "description": "Blocks Korean regional advertisements and trackers.",
-    "discontinuedDate": "2014-12-01T00:00:00",
     "homeUrl": "https://code.google.com/archive/p/adblock-korea/",
     "licenseId": 5,
     "name": "Adblock Korea",
     "syntaxId": 3,
+    "updatedDate": "2014-12-01T00:00:00",
     "viewUrl": "https://web.archive.org/web/20160411115130if_/http://adblock-korea.googlecode.com:80/git/adblock-korea.txt"
   },
   {
@@ -2469,22 +2469,22 @@
     "id": 230,
     "description": "Block the DL itself of advertising.",
     "descriptionSourceUrl": "https://blogram.net/2010/04/23/adblock/",
-    "discontinuedDate": "2014-12-13T00:00:00",
     "homeUrl": "https://blogram.net/2010/04/23/adblock/",
     "licenseId": 5,
     "name": "BLOGRAM Basic Filter List for Japan",
     "syntaxId": 3,
+    "updatedDate": "2014-12-13T00:00:00",
     "viewUrl": "https://blogram.net/wp-content/uploads/easylist2.txt"
   },
   {
     "id": 231,
     "description": "Hide text ads by CSS.",
     "descriptionSourceUrl": "https://blogram.net/2010/04/23/adblock/",
-    "discontinuedDate": "2015-01-10T00:00:00",
     "homeUrl": "https://blogram.net/2010/04/23/adblock/",
     "licenseId": 5,
     "name": "BLOGRAM Element Hiding Filter List for Japan",
     "syntaxId": 3,
+    "updatedDate": "2015-01-10T00:00:00",
     "viewUrl": "https://blogram.net/wp-content/uploads/easylist1.txt"
   },
   {
@@ -2516,12 +2516,12 @@
     "id": 234,
     "description": "Block Facebook objects on non-Facebook websites",
     "descriptionSourceUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt",
-    "discontinuedDate": "2010-05-18T00:00:00",
     "emailAddress": "fbprivacylist@squirrelconspiracy.net",
     "homeUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.html",
     "licenseId": 12,
     "name": "Facebook Privacy List",
     "syntaxId": 3,
+    "updatedDate": "2010-05-18T00:00:00",
     "viewUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt",
     "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Facebook%20Privacy%20List.txt",
     "viewUrlMirror2": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Facebook%20Privacy%20List.txt"
@@ -2715,12 +2715,12 @@
   {
     "id": 251,
     "description": "Blocks English and Spanish regional advertisements and trackers.",
-    "discontinuedDate": "2013-10-26T00:00:00",
     "homeUrl": "https://nauscopio.wordpress.com/2010/07/05/filtrado-bloqueo-y-ocultacion-de-la-publicidad-en-google-chrome/",
     "issuesUrl": "https://github.com/mozillahispano/nauscopio-filtros/issues",
     "licenseId": 6,
     "name": "Filtros Nauscopicos",
     "syntaxId": 3,
+    "updatedDate": "2013-10-26T00:00:00",
     "viewUrl": "http://abp.mozilla-hispano.org/nauscopio/filtros.txt",
     "viewUrlMirror1": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/filtros.txt"
   },
@@ -2749,13 +2749,13 @@
   {
     "id": 254,
     "description": "Blocks Vietnamese regional advertisements and trackers.",
-    "discontinuedDate": "2017-02-19T00:00:00",
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
     "licenseId": 16,
     "name": "Fanboy's Vietnamese",
     "syntaxId": 3,
+    "updatedDate": "2017-02-19T00:00:00",
     "viewUrl": "https://fanboy.co.nz/fanboy-vietnam.txt"
   },
   {
@@ -2769,37 +2769,37 @@
   {
     "id": 256,
     "description": "Blocks Turkish regional advertisements and trackers.",
-    "discontinuedDate": "2017-02-19T00:00:00",
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
     "licenseId": 16,
     "name": "Fanboy's Turkish",
     "syntaxId": 3,
+    "updatedDate": "2017-02-19T00:00:00",
     "viewUrl": "https://fanboy.co.nz/fanboy-turkish.txt"
   },
   {
     "id": 257,
     "description": "Blocks Swedish regional advertisements and trackers.",
-    "discontinuedDate": "2017-02-19T00:00:00",
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
     "licenseId": 16,
     "name": "Fanboy's Swedish",
     "syntaxId": 3,
+    "updatedDate": "2017-02-19T00:00:00",
     "viewUrl": "https://fanboy.co.nz/fanboy-swedish.txt"
   },
   {
     "id": 258,
     "description": "Blocks Spanish and Portuguese regional advertisements and trackers.",
-    "discontinuedDate": "2017-02-19T00:00:00",
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
     "licenseId": 16,
     "name": "Fanboy's Spanish/Portuguese",
     "syntaxId": 3,
+    "updatedDate": "2017-02-19T00:00:00",
     "viewUrl": "https://fanboy.co.nz/fanboy-espanol.txt"
   },
   {
@@ -2821,60 +2821,60 @@
   {
     "id": 260,
     "description": "Blocks Polish regional advertisements and trackers.",
-    "discontinuedDate": "2017-02-19T00:00:00",
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
     "licenseId": 16,
     "name": "Fanboy's Polish",
     "syntaxId": 3,
+    "updatedDate": "2017-02-19T00:00:00",
     "viewUrl": "https://fanboy.co.nz/fanboy-polish.txt"
   },
   {
     "id": 261,
     "description": "Blocks Korean regional advertisements and trackers.",
-    "discontinuedDate": "2017-02-19T00:00:00",
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
     "licenseId": 16,
     "name": "Fanboy's Korean",
     "syntaxId": 3,
+    "updatedDate": "2017-02-19T00:00:00",
     "viewUrl": "https://fanboy.co.nz/fanboy-korean.txt"
   },
   {
     "id": 262,
     "description": "Blocks Japanese regional advertisements and trackers.",
-    "discontinuedDate": "2017-02-19T00:00:00",
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
     "licenseId": 16,
     "name": "Fanboy's Japanese",
     "syntaxId": 3,
+    "updatedDate": "2017-02-19T00:00:00",
     "viewUrl": "https://fanboy.co.nz/fanboy-japanese.txt"
   },
   {
     "id": 263,
     "description": "Blocks Hebrew regional advertisements and trackers.",
-    "discontinuedDate": "2013-08-19T00:00:00",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
     "licenseId": 16,
     "name": "Fanboy's IsraelList",
     "syntaxId": 3,
+    "updatedDate": "2013-08-19T00:00:00",
     "viewUrl": "https://fanboy.co.nz/israelilist/IsraelList.txt"
   },
   {
     "id": 264,
     "description": "Blocks Indian regional advertisements and trackers.",
-    "discontinuedDate": "2017-02-19T00:00:00",
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
     "licenseId": 16,
     "name": "Fanboy's Indian",
     "syntaxId": 3,
+    "updatedDate": "2017-02-19T00:00:00",
     "viewUrl": "https://fanboy.co.nz/fanboy-indian.txt"
   },
   {
@@ -3009,11 +3009,11 @@
     "id": 277,
     "description": "Czech filters for Adblock Plus.",
     "descriptionSourceUrl": "http://adblock.dajbych.net/adblock.txt",
-    "discontinuedDate": "2014-08-16T00:00:00",
     "homeUrl": "http://adblock.dajbych.net/",
     "licenseId": 5,
     "name": "Czech Filters for AdBlock",
     "syntaxId": 3,
+    "updatedDate": "2014-08-16T00:00:00",
     "viewUrl": "http://adblock.dajbych.net/adblock.txt",
     "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Czech%20Filters%20for%20Adblock%20Plus",
     "viewUrlMirror2": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Czech%20Filters%20for%20Adblock%20Plus"
@@ -3022,12 +3022,12 @@
     "id": 278,
     "description": "Corset is a subscription filter to block intruding ads on sites using Korean.",
     "descriptionSourceUrl": "https://code.google.com/archive/p/abp-corset/",
-    "discontinuedDate": "2011-02-09T00:00:00",
     "emailAddress": "corset@tistory.com",
     "homeUrl": "http://corset.tistory.com/",
     "licenseId": 12,
     "name": "Corset",
     "syntaxId": 3,
+    "updatedDate": "2011-02-09T00:00:00",
     "viewUrl": "https://web.archive.org/web/20110212174029if_/http://abp-corset.googlecode.com:80/hg/corset.txt"
   },
   {
@@ -3223,11 +3223,11 @@
     "id": 296,
     "description": "For low-spec equipment - Blocks very broadly",
     "descriptionSourceUrl": "https://blogram.net/2010/04/23/adblock/",
-    "discontinuedDate": "2014-11-19T00:00:00",
     "homeUrl": "https://blogram.net/2010/04/23/adblock/",
     "licenseId": 5,
     "name": "BLOGRAM Blog Parts Filter List for Japan",
     "syntaxId": 3,
+    "updatedDate": "2014-11-19T00:00:00",
     "viewUrl": "https://blogram.net/wp-content/uploads/easylist4.txt"
   },
   {
@@ -3241,12 +3241,12 @@
   {
     "id": 298,
     "description": "Chinese supplement for the EasyList filters on IT sites.",
-    "discontinuedDate": "2015-03-18T00:00:00",
     "homeUrl": "https://github.com/nfer/easylistchina_it",
     "issuesUrl": "https://github.com/nfer/easylistchina_it/issues",
     "licenseId": 5,
     "name": "EasyList China in IT",
     "syntaxId": 3,
+    "updatedDate": "2015-03-18T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/nfer/easylistchina_it/master/easylistchina_it.txt"
   },
   {
@@ -3378,12 +3378,12 @@
     "id": 311,
     "description": "A generic filter for adblockers that keeps annoying header and footer bars from filling up your screen.",
     "descriptionSourceUrl": "https://github.com/elypter/generic_annoying_stickybar_filter",
-    "discontinuedDate": "2018-01-15T00:00:00",
     "homeUrl": "https://github.com/elypter/generic_annoying_stickybar_filter",
     "issuesUrl": "https://github.com/elypter/generic_annoying_stickybar_filter/issues",
     "licenseId": 4,
     "name": "Generic Annoying Stickybar Filter",
     "syntaxId": 4,
+    "updatedDate": "2018-01-15T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/elypter/generic_annoying_stickybar_filter/master/generic_header_list.txt"
   },
   {
@@ -3529,12 +3529,12 @@
     "id": 324,
     "description": "A minimal adblocker for iOS.",
     "descriptionSourceUrl": "https://github.com/arcetera/Minimal-Hosts-Blocker",
-    "discontinuedDate": "2015-10-17T00:00:00",
     "homeUrl": "https://github.com/arcetera/Minimal-Hosts-Blocker",
     "issuesUrl": "https://github.com/arcetera/Minimal-Hosts-Blocker/issues",
     "licenseId": 5,
     "name": "Minimal Hosts Blocker",
     "syntaxId": 1,
+    "updatedDate": "2015-10-17T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/arcetera/Minimal-Hosts-Blocker/master/etc/MinimalHostsBlocker/minimalhosts"
   },
   {
@@ -3667,33 +3667,33 @@
     "id": 336,
     "description": "Amazon, Yahoo, Facebook , Twitter etc. It is a file created as a result of verifying and reducing connection failure as much as possible by making the filter mild. We also do not connect to tracking cookies or some malicious sites.",
     "descriptionSourceUrl": "http://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
-    "discontinuedDate": "2014-05-13T00:00:00",
     "homeUrl": "http://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
     "licenseId": 5,
     "name": "HOSTS for Windows PC for Japan",
     "syntaxId": 1,
+    "updatedDate": "2014-05-13T00:00:00",
     "viewUrl": "https://sites.google.com/site/cosmonoteshosts/hosts_for_Windows8.txt"
   },
   {
     "id": 337,
     "description": "Advertisements on smartphones are versatile, there are many things too complicated. Several HOSTSs have been released to Adaway since the beginning, but this file was further integrated, sorted, deleted duplicates, and polished.",
     "descriptionSourceUrl": "https://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
-    "discontinuedDate": "2014-05-13T00:00:00",
     "homeUrl": "https://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
     "licenseId": 5,
     "name": "HOSTS for Adaway for Japan",
     "syntaxId": 1,
+    "updatedDate": "2014-05-13T00:00:00",
     "viewUrl": "https://sites.google.com/site/cosmonoteshosts/hosts_for_Adaway.txt"
   },
   {
     "id": 338,
     "description": "Useful from any site It is a sharp meta-analysis that was born as a result of brushing up, collecting such files, eliminating all error syntax, saving waste, etc. It is a powerful file to prevent uprooting affiliates and magical advertisements.",
     "descriptionSourceUrl": "https://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
-    "discontinuedDate": "2014-05-13T00:00:00",
     "homeUrl": "https://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
     "licenseId": 5,
     "name": "Japan Ultimate",
     "syntaxId": 1,
+    "updatedDate": "2014-05-13T00:00:00",
     "viewUrl": "https://sites.google.com/site/cosmonoteshosts/hosts_Ultimate.txt"
   },
   {
@@ -3846,7 +3846,6 @@
     "id": 351,
     "description": "This is an AdGuard-specific supplement for the Adblock polskie reguły filter. It specifically removes adverts on Polish language websites.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#polish-ads-filter",
-    "discontinuedDate": "2018-06-26T00:00:00",
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
@@ -3854,6 +3853,7 @@
     "name": "AdGuard Polish Filter (Obsolete)",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
+    "updatedDate": "2018-06-26T00:00:00",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/238.txt"
   },
   {
@@ -4115,32 +4115,32 @@
   },
   {
     "id": 372,
-    "discontinuedDate": "2016-07-01T00:00:00",
     "homeUrl": "https://github.com/Hubird-au/Adversity",
     "issuesUrl": "https://github.com/Hubird-au/Adversity/issues",
     "licenseId": 16,
     "name": "Adversity",
     "syntaxId": 3,
+    "updatedDate": "2016-07-01T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/Hubird-au/Adversity/master/Adversity.txt"
   },
   {
     "id": 373,
-    "discontinuedDate": "2016-07-01T00:00:00",
     "homeUrl": "https://github.com/Hubird-au/Adversity",
     "issuesUrl": "https://github.com/Hubird-au/Adversity/issues",
     "licenseId": 16,
     "name": "Adversity - Antisocial",
     "syntaxId": 3,
+    "updatedDate": "2016-07-01T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/Hubird-au/Adversity/master/Antisocial.txt"
   },
   {
     "id": 374,
-    "discontinuedDate": "2016-07-01T00:00:00",
     "homeUrl": "https://github.com/Hubird-au/Adversity",
     "issuesUrl": "https://github.com/Hubird-au/Adversity/issues",
     "licenseId": 16,
     "name": "Adversity - Extreme Measures",
     "syntaxId": 3,
+    "updatedDate": "2016-07-01T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/Hubird-au/Adversity/master/Extreme-Measures.txt"
   },
   {
@@ -4444,11 +4444,11 @@
   },
   {
     "id": 402,
-    "discontinuedDate": "2015-11-18T00:00:00",
     "homeUrl": "https://startshop.no/",
     "licenseId": 5,
     "name": "Startshop ABP Filters",
     "syntaxId": 3,
+    "updatedDate": "2015-11-18T00:00:00",
     "viewUrl": "https://startshop.no/filter/abp"
   },
   {
@@ -6442,25 +6442,25 @@
   {
     "id": 601,
     "description": "A filterlist to prevent sites that know to trick and gain 'Facebook access token' from you that their site offer to boost likes, followers, comments, post shares, etc. while gain access your account to do the same for others.",
-    "discontinuedDate": "2018-02-03T00:00:00",
     "homeUrl": "https://github.com/kowith337/ThaiAntiTokenSites",
     "issuesUrl": "https://github.com/kowith337/ThaiAntiTokenSites/issues",
     "licenseId": 5,
     "name": "ThaiAntiTokenSites",
     "publishedDate": "2016-01-04T00:00:00",
     "syntaxId": 4,
+    "updatedDate": "2018-02-03T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiAntiTokenSites/master/AntiPumpSites.txt"
   },
   {
     "id": 602,
     "description": "A hosts file to prevent sites that know to trick and gain 'Facebook access token' from you that their site offer to boost likes, followers, comments, post shares, etc. while gain access your account to do the same for others.",
-    "discontinuedDate": "2018-02-03T00:00:00",
     "homeUrl": "https://github.com/kowith337/ThaiAntiTokenSites",
     "issuesUrl": "https://github.com/kowith337/ThaiAntiTokenSites/issues",
     "licenseId": 5,
     "name": "ThaiAntiTokenSites Hosts",
     "publishedDate": "2016-01-04T00:00:00",
     "syntaxId": 1,
+    "updatedDate": "2018-02-03T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiAntiTokenSites/master/AntiPumpSites_hosts.txt"
   },
   {
@@ -7173,23 +7173,23 @@
   },
   {
     "id": 678,
-    "discontinuedDate": "2014-05-19T00:00:00",
     "homeUrl": "https://gist.github.com/sx2008/2766874",
     "licenseId": 5,
     "name": "Privoxy User Action File (sx2008)",
     "syntaxId": 19,
+    "updatedDate": "2014-05-19T00:00:00",
     "viewUrl": "https://gist.githubusercontent.com/sx2008/2766874/raw/c12a305decef3332663d1e04efa80b881211cfac/user.action"
   },
   {
     "id": 679,
     "description": "This is my Privoxy configuration. It blocks common trackers and ads.",
     "descriptionSourceUrl": "https://github.com/fdb/privoxy-config/blob/master/README",
-    "discontinuedDate": "2012-05-15T00:00:00",
     "homeUrl": "https://github.com/fdb/privoxy-config",
     "issuesUrl": "https://github.com/fdb/privoxy-config/issues",
     "licenseId": 5,
     "name": "Privoxy Config - Block Trackers",
     "syntaxId": 19,
+    "updatedDate": "2012-05-15T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/fdb/privoxy-config/master/block-trackers.action"
   },
   {
@@ -7540,13 +7540,13 @@
   },
   {
     "id": 715,
-    "discontinuedDate": "2015-03-30T00:00:00",
     "emailAddress": "admin@highsea90.com",
     "homeUrl": "https://github.com/highsea/Hosts",
     "issuesUrl": "https://github.com/highsea/Hosts/issues",
     "licenseId": 5,
     "name": "High Sea Hosts",
     "syntaxId": 14,
+    "updatedDate": "2015-03-30T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/highsea/Hosts/master/host-include-appale/hosts"
   },
   {
@@ -7562,13 +7562,13 @@
     "id": 717,
     "description": "The project does not make any profit, only for convenient browsing of some websites for study and research, please comply with local laws.",
     "descriptionSourceUrl": "https://github.com/superliaoyong/hosts#%E9%A1%B9%E7%9B%AE%E4%B8%8D%E5%81%9A%E4%BB%BB%E4%BD%95%E7%9B%88%E5%88%A9%E5%8F%AA%E4%BE%9B%E4%BE%BF%E5%88%A9%E7%9A%84%E6%B5%8F%E8%A7%88%E9%83%A8%E5%88%86%E7%BD%91%E7%AB%99%E4%BB%A5%E5%AD%A6%E4%B9%A0%E7%A0%94%E7%A9%B6%E8%AF%B7%E9%81%B5%E5%AE%88%E5%BD%93%E5%9C%B0%E6%B3%95%E5%BE%8B",
-    "discontinuedDate": "2016-07-10T00:00:00",
     "homeUrl": "https://github.com/superliaoyong/hosts",
     "issuesUrl": "https://github.com/superliaoyong/hosts/issues",
     "licenseId": 5,
     "name": "Full Address Hosts File",
     "policyUrl": "https://github.com/superliaoyong/hosts#%E9%A1%B9%E7%9B%AE%E5%BC%80%E6%BA%90%E5%A4%8D%E5%88%B6%E6%97%B6%E6%B3%A8%E6%98%8E%E6%9D%A5%E6%BA%90%E4%BD%86%E7%A6%81%E6%AD%A2%E4%BB%BB%E4%BD%95%E4%BA%BA%E6%88%96%E7%BB%84%E7%BB%87%E9%87%8D%E5%8F%91%E5%B8%83%E5%88%B0%E5%A4%A7%E9%99%86%E7%BD%91%E7%AB%99",
     "syntaxId": 14,
+    "updatedDate": "2016-07-10T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/superliaoyong/hosts/master/hosts"
   },
   {
@@ -7895,11 +7895,11 @@
     "id": 748,
     "description": "Blocks 3rd-party Google tracking",
     "descriptionSourceUrl": "https://www.microsoft.com/cms/api/am/binary/RWilsQ",
-    "discontinuedDate": "2013-07-11T00:00:00",
     "homeUrl": "https://blogs.msdn.microsoft.com/ie/2012/02/20/google-bypassing-user-privacy-settings/",
     "licenseId": 5,
     "name": "Stop Google Tracking",
     "syntaxId": 10,
+    "updatedDate": "2013-07-11T00:00:00",
     "viewUrl": "https://www.microsoft.com/cms/api/am/binary/RWilsQ"
   },
   {
@@ -7925,139 +7925,139 @@
   },
   {
     "id": 751,
-    "discontinuedDate": "2016-05-09T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
     "licenseId": 5,
     "name": "Rickroll Blacklist (TPL)",
     "syntaxId": 10,
+    "updatedDate": "2016-05-09T00:00:00",
     "viewUrl": "http://jansal.net/tpl/ricklist.tpl"
   },
   {
     "id": 752,
-    "discontinuedDate": "2011-10-05T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
     "licenseId": 16,
     "name": "Popup Block List for Adblock Plus Popup Addon",
     "syntaxId": 10,
+    "updatedDate": "2011-10-05T00:00:00",
     "viewUrl": "http://jansal.net/tpl/popup-block.tpl"
   },
   {
     "id": 753,
-    "discontinuedDate": "2016-05-04T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
     "licenseId": 2,
     "name": "Prebake TPL",
     "syntaxId": 10,
+    "updatedDate": "2016-05-04T00:00:00",
     "viewUrl": "http://jansal.net/tpl/obtrusive.tpl"
   },
   {
     "id": 754,
-    "discontinuedDate": "2016-09-05T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
     "licenseId": 5,
     "name": "Malware Patrol TPL",
     "syntaxId": 10,
+    "updatedDate": "2016-09-05T00:00:00",
     "viewUrl": "http://jansal.net/tpl/malpatrol.tpl"
   },
   {
     "id": 755,
-    "discontinuedDate": "2013-12-28T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
     "licenseId": 5,
     "name": "M",
     "syntaxId": 10,
+    "updatedDate": "2013-12-28T00:00:00",
     "viewUrl": "http://jansal.net/tpl/m.tpl"
   },
   {
     "id": 756,
-    "discontinuedDate": "2016-07-02T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
     "licenseId": 8,
     "name": "Latvian List (TPL)",
     "syntaxId": 10,
+    "updatedDate": "2016-07-02T00:00:00",
     "viewUrl": "http://jansal.net/tpl/latvian-list.tpl"
   },
   {
     "id": 757,
-    "discontinuedDate": "2011-07-14T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
     "licenseId": 5,
     "name": "Facebook Connect Opt-Out",
     "syntaxId": 10,
+    "updatedDate": "2011-07-14T00:00:00",
     "viewUrl": "http://jansal.net/tpl/facebook-connect-optout-adblockplusfilter.tpl"
   },
   {
     "id": 758,
-    "discontinuedDate": "2016-09-05T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
     "licenseId": 5,
     "name": "Adblock Persian List (TPL)",
     "syntaxId": 10,
+    "updatedDate": "2016-09-05T00:00:00",
     "viewUrl": "http://jansal.net/tpl/adblock-persian.tpl"
   },
   {
     "id": 759,
-    "discontinuedDate": "2013-08-19T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
     "licenseId": 5,
     "name": "Fanboy's IsraelList (TPL)",
     "syntaxId": 10,
+    "updatedDate": "2013-08-19T00:00:00",
     "viewUrl": "http://jansal.net/tpl/IsraelList.tpl"
   },
   {
     "id": 760,
-    "discontinuedDate": "2013-09-21T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
     "licenseId": 16,
     "name": "Adversity - AntiSocial (TPL)",
     "syntaxId": 10,
+    "updatedDate": "2013-09-21T00:00:00",
     "viewUrl": "http://jansal.net/tpl/Adversity/Antisocial.tpl"
   },
   {
     "id": 761,
-    "discontinuedDate": "2013-09-24T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
     "licenseId": 16,
     "name": "Adversity (TPL)",
     "syntaxId": 10,
+    "updatedDate": "2013-09-24T00:00:00",
     "viewUrl": "http://jansal.net/tpl/Adversity/Adversity.tpl"
   },
   {
     "id": 762,
-    "discontinuedDate": "2013-05-11T00:00:00",
     "donateUrl": "https://www.paypal.com/nz/cgi-bin/webscr?cmd=_flow&SESSION=e3IZrPcc9VRrZhVknlZQ_6FjPBYH0_TRCkvdN7P_2F8lM3LsRl5iaKoa5LO&dispatch=5885d80a13c0db1f8e263663d3faee8db8175432b4df92754f4b4adb5a123d61&rapidsState=Donation__DonationFlow___StateDonationLogin&rapidsStateSignature=97ea3fa28f688ec0477182a325851e412cbbd40d",
     "homeUrl": "https://www.fanboy.co.nz/",
     "licenseId": 16,
     "name": "Fanboy's Adblock-Nonelements List",
     "syntaxId": 10,
+    "updatedDate": "2013-05-11T00:00:00",
     "viewUrl": "https://www.fanboy.co.nz/adblock/ie/fanboy-noele.tpl"
   },
   {
     "id": 763,
-    "discontinuedDate": "2013-02-16T00:00:00",
     "donateUrl": "https://www.paypal.com/nz/cgi-bin/webscr?cmd=_flow&SESSION=e3IZrPcc9VRrZhVknlZQ_6FjPBYH0_TRCkvdN7P_2F8lM3LsRl5iaKoa5LO&dispatch=5885d80a13c0db1f8e263663d3faee8db8175432b4df92754f4b4adb5a123d61&rapidsState=Donation__DonationFlow___StateDonationLogin&rapidsStateSignature=97ea3fa28f688ec0477182a325851e412cbbd40d",
     "homeUrl": "https://www.fanboy.co.nz/",
     "licenseId": 16,
     "name": "Fanboy's Tracking List (TPL)",
     "syntaxId": 10,
+    "updatedDate": "2013-02-16T00:00:00",
     "viewUrl": "https://www.fanboy.co.nz/adblock/ie/fanboy-tracking.tpl"
   },
   {
     "id": 764,
-    "discontinuedDate": "2016-09-05T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
     "licenseId": 16,
     "name": "Fanboy's Enhanced Tracking List",
     "syntaxId": 10,
+    "updatedDate": "2016-09-05T00:00:00",
     "viewUrl": "http://jansal.net/tpl/fanboy/enhancedstats-addon.tpl"
   },
   {
     "id": 765,
-    "discontinuedDate": "2013-05-17T00:00:00",
     "homeUrl": "http://jansal.net/TPL.shtml",
     "licenseId": 16,
     "name": "Fanboy's Adblock List (TPL)",
     "syntaxId": 10,
+    "updatedDate": "2013-05-17T00:00:00",
     "viewUrl": "http://jansal.net/tpl/fanboy/fanboy-adult.tpl"
   },
   {
@@ -8230,11 +8230,11 @@
   },
   {
     "id": 784,
-    "discontinuedDate": "2015-05-16T00:00:00",
     "homeUrl": "https://easylist.to/",
     "licenseId": 11,
     "name": "Wiltteri + EasyList (TPL)",
     "syntaxId": 10,
+    "updatedDate": "2015-05-16T00:00:00",
     "viewUrl": "https://easylist-msie.adblockplus.org/wiltteri+easylist.tpl"
   },
   {
@@ -8382,24 +8382,24 @@
     "id": 801,
     "description": "This is a Macedonian list",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/ABP%20Macedonian%20List.txt",
-    "discontinuedDate": "2011-05-11T00:00:00",
     "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/AncientLibrary",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
     "name": "ABP Macedonian List",
     "syntaxId": 3,
+    "updatedDate": "2011-05-11T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/ABP%20Macedonian%20List.txt"
   },
   {
     "id": 802,
     "description": "Algerian filters for Adblock Plus",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Liste%20DZ.txt",
-    "discontinuedDate": "2011-05-25T00:00:00",
     "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/AncientLibrary",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 6,
     "name": "Liste DZ",
     "syntaxId": 3,
+    "updatedDate": "2011-05-25T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Liste%20DZ.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Liste%20DZ.txt"
   },
@@ -8407,25 +8407,25 @@
     "id": 803,
     "description": "General icelandic ad and blocking subscription",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Snaevar87's%20Icelandic%20filter.txt",
-    "discontinuedDate": "2014-03-11T00:00:00",
     "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/AncientLibrary",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
     "name": "Snaevar87's Icelandic filter",
     "syntaxId": 3,
+    "updatedDate": "2014-03-11T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Snaevar87's%20Icelandic%20filter.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Snaevar87%27s%20Icelandic%20filter.txt"
   },
   {
     "id": 804,
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/TamilFriends%20List.txt",
-    "discontinuedDate": "2010-07-30T00:00:00",
     "emailAddress": "tamilfriendslist@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/AncientLibrary",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 16,
     "name": "TamilFriends List",
     "syntaxId": 3,
+    "updatedDate": "2010-07-30T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/TamilFriends%20List.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/TamilFriends%20List.txt"
   },
@@ -8470,11 +8470,11 @@
   },
   {
     "id": 809,
-    "discontinuedDate": "2014-12-15T00:00:00",
     "homeUrl": "https://www.ergensin.nl/",
     "licenseId": 5,
     "name": "NLblock",
     "syntaxId": 3,
+    "updatedDate": "2014-12-15T00:00:00",
     "viewUrl": "http://www.verzijlbergh.com/adblock/nlblock.txt"
   },
   {
@@ -8524,21 +8524,21 @@
   {
     "id": 814,
     "description": "Blocks Japanese regional mobile advertisements and trackers.",
-    "discontinuedDate": "2014-05-07T00:00:00",
     "homeUrl": "http://gmbk0.tumblr.com/",
     "licenseId": 20,
     "name": "gmbkslist (ABP)",
     "syntaxId": 3,
+    "updatedDate": "2014-05-07T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/gmbkslist.txt"
   },
   {
     "id": 815,
-    "discontinuedDate": "2012-09-16T00:00:00",
     "homeUrl": "https://code.google.com/archive/p/adblocking-openfilter-jp/",
     "licenseId": 5,
     "name": "Adblocking Open Filter JP",
     "syntaxId": 3,
+    "updatedDate": "2012-09-16T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Adblocking%20Open%20Filter%20JP",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Adblocking%20Open%20Filter%20JP"
   },

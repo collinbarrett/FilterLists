@@ -13,7 +13,6 @@ namespace FilterLists.Data.Entities
         public ICollection<Dependent> DependencyFilterLists { get; set; }
         public string Description { get; set; }
         public string DescriptionSourceUrl { get; set; }
-        public DateTime? DiscontinuedDate { get; set; }
         public string DonateUrl { get; set; }
         public string EmailAddress { get; set; }
         public ICollection<Fork> ForkFilterLists { get; set; }
@@ -35,6 +34,7 @@ namespace FilterLists.Data.Entities
         public uint? SyntaxId { get; set; }
         public Syntax Syntax { get; set; }
         public ICollection<FilterListTag> FilterListTags { get; set; }
+        public DateTime? UpdatedDate { get; set; }
         public string ViewUrl { get; set; }
         public string ViewUrlMirror1 { get; set; }
         public string ViewUrlMirror2 { get; set; }

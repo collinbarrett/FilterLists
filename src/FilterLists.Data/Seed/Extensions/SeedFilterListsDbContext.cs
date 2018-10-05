@@ -106,8 +106,8 @@ namespace FilterLists.Data.Seed.Extensions
                       {
                           "CreatedDateUtc",
                           "ModifiedDateUtc",
-                          "DiscontinuedDate",
-                          "PublishedDate"
+                          "PublishedDate",
+                          "UpdatedDate"
                       }.Contains(x.Name))
                       .ToList();
 

@@ -5,7 +5,6 @@ export interface IListDetails {
     chatUrl: string;
     description: string;
     descriptionSourceUrl: string;
-    discontinuedDate: string;
     donateUrl: string;
     emailAddress: string;
     forumUrl: string;
