@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
 using FilterLists.Data;
 using FilterLists.Services.GitHub;
-using FilterLists.Services.Snapshot.Models;
 using FilterLists.Services.Wayback;
 using JetBrains.Annotations;
 
@@ -14,8 +13,9 @@ namespace FilterLists.Services.Snapshot
         }
 
         [UsedImplicitly]
-        public SnapshotWayback(FilterListsDbContext dbContext, FilterListViewUrlDto list, GitHubService gitHubService,
-            Logger logger, string uaString) : base(dbContext, list, gitHubService, logger, uaString)
+        public SnapshotWayback(FilterListsDbContext dbContext, Data.Entities.FilterList list,
+            GitHubService gitHubService, Logger logger, string uaString) :
+            base(dbContext, list, gitHubService, logger, uaString)
         {
         }
 

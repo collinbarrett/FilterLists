@@ -4,10 +4,8 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using AutoMapper;
-using AutoMapper.QueryableExtensions;
 using FilterLists.Data;
 using FilterLists.Services.GitHub;
-using FilterLists.Services.Snapshot.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Services.Snapshot
@@ -51,15 +49,14 @@ namespace FilterLists.Services.Snapshot
             await DbContext.Database.ExecuteSqlCommandAsync(command);
         }
 
-        private async Task<IEnumerable<FilterListViewUrlDto>> GetListsToCapture(int batchSize) =>
+        private async Task<IEnumerable<Data.Entities.FilterList>> GetListsToCapture(int batchSize) =>
             await DbContext.FilterLists
                            .OrderBy(l => l.Snapshots.Any())
                            .ThenBy(lastSnapTimestamp)
                            .Take(batchSize)
-                           .ProjectTo<FilterListViewUrlDto>(MapConfig)
                            .ToListAsync();
 
-        private async Task<List<TSnap>> CreateAndSaveSnaps<TSnap>(IEnumerable<FilterListViewUrlDto> lists)
+        private async Task<List<TSnap>> CreateAndSaveSnaps<TSnap>(IEnumerable<Data.Entities.FilterList> lists)
             where TSnap : Snapshot, new()
         {
             var snaps = CreateSnaps<TSnap>(lists).ToList();
@@ -67,7 +64,7 @@ namespace FilterLists.Services.Snapshot
             return snaps;
         }
 
-        private IEnumerable<TSnap> CreateSnaps<TSnap>(IEnumerable<FilterListViewUrlDto> lists)
+        private IEnumerable<TSnap> CreateSnaps<TSnap>(IEnumerable<Data.Entities.FilterList> lists)
             where TSnap : Snapshot, new() => lists.Select(l =>
             Activator.CreateInstance(typeof(TSnap), DbContext, l, gitHubService, logger, uaString) as TSnap);
 
