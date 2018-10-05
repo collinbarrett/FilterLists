@@ -68,7 +68,6 @@ const mapListDetails = (props: ICreateListDtoProps): IListDetails =>
     chatUrl: props.list.chatUrl,
     description: props.list.description,
     descriptionSourceUrl: props.list.descriptionSourceUrl,
-    discontinuedDate: props.list.discontinuedDate,
     donateUrl: props.list.donateUrl,
     emailAddress: props.list.emailAddress,
     forumUrl: props.list.forumUrl,

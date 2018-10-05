@@ -16,9 +16,6 @@ namespace FilterLists.Data.EntityTypeConfigurations
                              .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.DescriptionSourceUrl)
                              .HasColumnType("TEXT");
-            entityTypeBuilder.Property(x => x.DiscontinuedDate)
-                             .HasColumnType("DATE")
-                             .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.DonateUrl)
                              .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.EmailAddress)
@@ -38,10 +35,13 @@ namespace FilterLists.Data.EntityTypeConfigurations
             entityTypeBuilder.Property(x => x.PolicyUrl)
                              .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.PublishedDate)
-                             .HasColumnType("DATE")
+                             .HasColumnType("DATETIME")
                              .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.SubmissionUrl)
                              .HasColumnType("TEXT");
+            entityTypeBuilder.Property(x => x.UpdatedDate)
+                             .HasColumnType("DATETIME")
+                             .HasDefaultValueSql("NULL");
             entityTypeBuilder.Property(x => x.ViewUrl)
                              .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.ViewUrlMirror1)

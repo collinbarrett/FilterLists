@@ -10,7 +10,6 @@ namespace FilterLists.Services.Seed.Models
         public string ChatUrl { get; set; }
         public string Description { get; set; }
         public string DescriptionSourceUrl { get; set; }
-        public DateTime? DiscontinuedDate { get; set; }
         public string DonateUrl { get; set; }
         public string EmailAddress { get; set; }
         public string ForumUrl { get; set; }
@@ -22,6 +21,7 @@ namespace FilterLists.Services.Seed.Models
         public DateTime? PublishedDate { get; set; }
         public string SubmissionUrl { get; set; }
         public uint? SyntaxId { get; set; }
+        public DateTime? UpdatedDate { get; set; }
         public string ViewUrl { get; set; }
         public string ViewUrlMirror1 { get; set; }
         public string ViewUrlMirror2 { get; set; }

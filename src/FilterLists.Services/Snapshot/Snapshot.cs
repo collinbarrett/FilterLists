@@ -28,8 +28,10 @@ namespace FilterLists.Services.Snapshot
         private readonly Logger logger;
         private readonly string uaString;
         protected string ListUrl;
+        private Data.Entities.FilterList filterList;
+        private bool isUpdatedDateFromGitHub;
         private HashSet<string> lines;
-
+        
         public Snapshot()
         {
         }
@@ -56,7 +58,7 @@ namespace FilterLists.Services.Snapshot
             await AddSnapEntity();
             if (!ListUrl.IsValidHttpOrHttpsUrl())
                 return;
-            await UpdateDates();
+            await UpdateDatesFromGitHub();
             try
             {
                 await SaveAsync();
@@ -73,28 +75,36 @@ namespace FilterLists.Services.Snapshot
             await dbContext.SaveChangesAsync();
         }
 
-        private async Task UpdateDates()
+        private async Task UpdateDatesFromGitHub()
         {
             var dates = await gitHubService.GetCommitDatesAsync(ListUrl);
             if (dates is null)
                 return;
-            var list = await dbContext.FilterLists.FirstOrDefaultAsync(l => l.Id == List.Id);
-            UpdatePublishedDate(dates.First, list);
-            UpdateDiscontinuedDate(dates.Last, list);
+            var list = await GetList();
+            UpdatePublishedDateFromGitHub(dates.First, list);
+            UpdateUpdatedDateFromGitHub(dates.Last, list);
             await dbContext.SaveChangesAsync();
         }
 
-        private static void UpdatePublishedDate(DateTime? date, Data.Entities.FilterList list)
+        private async Task<Data.Entities.FilterList> GetList()
+        {
+            filterList = filterList ?? await dbContext.FilterLists.FirstOrDefaultAsync(l => l.Id == List.Id);
+            return filterList;
+        }
+
+        private static void UpdatePublishedDateFromGitHub(DateTime? date, Data.Entities.FilterList list)
         {
             if (date is DateTime firstDate && (list.PublishedDate is null || firstDate < list.PublishedDate))
                 list.PublishedDate = firstDate;
         }
 
-        private static void UpdateDiscontinuedDate(DateTime? date, Data.Entities.FilterList list)
+        private void UpdateUpdatedDateFromGitHub(DateTime? date, Data.Entities.FilterList list)
         {
-            if (date is DateTime lastDate && lastDate < DateTime.Now.AddYears(-2) &&
-                (list.DiscontinuedDate is null || lastDate > list.DiscontinuedDate))
-                list.DiscontinuedDate = lastDate;
+            if (date is DateTime lastDate && (list.UpdatedDate is null || lastDate > list.UpdatedDate))
+            {
+                list.UpdatedDate = lastDate;
+                isUpdatedDateFromGitHub = true;
+            }
         }
 
         private async Task SaveAsync()
@@ -152,7 +162,7 @@ namespace FilterLists.Services.Snapshot
                 await SetWasUpdated();
                 if (SnapEntity.WasUpdated)
                 {
-                    await UpdateDiscontinuedDate();
+                    await UpdateUpdatedDate();
                     memoryStream.Position = 0;
                     if (ListUrl.EndsWith(".7z"))
                         await GetLinesFrom7Zip(memoryStream);
@@ -182,11 +192,12 @@ namespace FilterLists.Services.Snapshot
                            .Select(s => s.Md5Checksum)
                            .FirstOrDefaultAsync() ?? Array.Empty<byte>();
 
-        private async Task UpdateDiscontinuedDate()
+        private async Task UpdateUpdatedDate()
         {
-            var list = await dbContext.FilterLists.FirstOrDefaultAsync(l => l.Id == List.Id);
-            if (!(list.DiscontinuedDate is null) && DateTime.Now > list.DiscontinuedDate)
-                list.DiscontinuedDate = null;
+            if (isUpdatedDateFromGitHub)
+                return;
+            var list = await GetList();
+            list.UpdatedDate = DateTime.Now;
         }
 
         private async Task GetLinesFrom7Zip(Stream stream)
