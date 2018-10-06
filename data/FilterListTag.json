@@ -3926,5 +3926,41 @@
   {
     "filterListId": 842,
     "tagId": 2
+  },
+  {
+    "filterListId": 843,
+    "tagId": 3
+  },
+  {
+    "filterListId": 843,
+    "tagId": 4
+  },
+  {
+    "filterListId": 843,
+    "tagId": 9
+  },
+  {
+    "filterListId": 844,
+    "tagId": 3
+  },
+  {
+    "filterListId": 844,
+    "tagId": 4
+  },
+  {
+    "filterListId": 845,
+    "tagId": 3
+  },
+  {
+    "filterListId": 846,
+    "tagId": 2
+  },
+  {
+    "filterListId": 846,
+    "tagId": 3
+  },
+  {
+    "filterListId": 847,
+    "tagId": 2
   }
 ]
