@@ -8818,5 +8818,59 @@
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
     "syntaxId": 20,
     "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=dnsmasq&showintro=1&mimetype=plaintext"
+    },
+	{
+    "id": 843,
+    "description": "Zuckestion is not a typo! this filterlist is build nearly from scratch based on personal usage experience of Facebook to eliminated most of ads, tracking, telemetry, suggestions that I've found by myself and then share these rules as filterlist, also support basic mode and touch mode for mobile browser users (Only support on Firefox for Android or any related forks that can install uBlock Origin extension). However, this list won't support Facebook site or domains that serve under 'Free Basics' services.",
+    "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/filterlist/facebook/readme.md",
+    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?q=label%3A%22Site%3A+Facebook%22",
+    "licenseId": 13,
+    "name": "Facebook Zuckestion Killer",
+    "syntaxId": 4,
+    "viewUrl": "https://github.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/facebook/FacebookZuckestionKiller.txt"
+  },
+  {
+    "id": 844,
+    "description": "Sublist of Facebook filter to prevent some 'modules' connections, e.g. content chaining (click external link, like, react or save posts) that show the suggestions under posts that you've acted on.",
+    "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/filterlist/facebook/readme.md",
+    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?q=label%3A%22Site%3A+Facebook%22",
+    "licenseId": 13,
+    "name": "Facebook Modules Command List",
+    "syntaxId": 4,
+    "viewUrl": "https://github.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/facebook/FacebookCommands.txt"
+  },
+  {
+    "id": 845,
+    "description": "List of all regional subdomains of 'adservice.google.com' and 'id.google.com'",
+    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?q=is%3Aissue+label%3A%22Hosts+File%22",
+    "licenseId": 13,
+    "name": "All of adservice.google.com and id.google.com regional hosts",
+    "syntaxId": 1,
+    "viewUrl": "https://github.com/kowith337/PersonalFilterListCollection/raw/master/hosts/hosts_google_adservice_id.txt"
+  },
+  {
+    "id": 846,
+    "description": "A zero tolerance version of Thai Paranoid Block, you need to be careful before using this because this filter will be strict blocking well-known ads and trackings that use in Thai sites without any reasonable to whitelist them!",
+    "descriptionSourceUrl": "https://github.com/kowith337/ThaiParanoidBlock/blob/maximum/readme.md",
+    "homeUrl": "https://github.com/kowith337/ThaiParanoidBlock/tree/maximum",
+    "issuesUrl": "https://github.com/kowith337/ThaiParanoidBlock/issues",
+    "licenseId": 13,
+    "name": "Thai Paranoid Block ~Maximum~",
+    "syntaxId": 4,
+    "viewUrl": "https://github.com/kowith337/ThaiParanoidBlock/raw/maximum/ThaiParanoid.txt"
+  },
+  {
+    "id": 847,
+    "description": "Get ads out of the way, applied mostly with Thai sites since there are tons of Easylist coverage is good outside already.",
+    "descriptionSourceUrl": "https://github.com/sipp11/th_ad_filters/blob/master/README.md",
+    "homeUrl": "https://github.com/sipp11/th_ad_filters",
+    "issuesUrl": "https://github.com/sipp11/th_ad_filters/issues",
+    "licenseId": 5,
+    "name": "sipp11's Thai Ad Filters",
+    "syntaxId": 3,
+    "viewUrl": "https://github.com/sipp11/th_ad_filters/raw/master/th_list.txt"
   }
-  ]
+]
