@@ -187,7 +187,8 @@ namespace FilterLists.Services.Snapshot
         {
             if (isUpdatedDateFromGitHub)
                 return;
-            List.UpdatedDate = DateTime.Now;
+            if (List.Snapshots.Any(s => s.WasUpdated && s.WasSuccessful))
+                List.UpdatedDate = DateTime.Now;
         }
 
         private async Task GetLinesFrom7Zip(Stream stream)
