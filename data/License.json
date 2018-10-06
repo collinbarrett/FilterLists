@@ -218,5 +218,12 @@
     "name": "Permissive but non-commercial",
     "permissiveAdaptation": true,
     "permissiveCommercial": false
+  },
+  {
+    "id": 33,
+    "descriptionUrl": "https://www.mozilla.org/MPL/2.0/",
+    "name": "Mozilla Public License, version 2.0",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
   }
 ]
