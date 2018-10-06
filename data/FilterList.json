@@ -8821,7 +8821,7 @@
     },
 	{
     "id": 843,
-    "description": "Zuckestion is not a typo! this filterlist is build from scratch based on personal usage experience of Facebook to eliminated most of ads, tracking, telemetry, suggestions that I've found by myself and then share these rules as filterlist, also support basic mode and touch mode for mobile browser users (Only support on Firefox for Android or any related forks that can install uBlock Origin extension). However, this list won't support Facebook site or domains that serve under 'Free Basics' services due to it's use and share your data as their profit to keep this service running on your region and/or worldwide.",
+    "description": "Zuckestion is not a typo! this filterlist is build nearly from scratch based on personal usage experience of Facebook to eliminated most of ads, tracking, telemetry, suggestions that I've found by myself and then share these rules as filterlist, also support basic mode and touch mode for mobile browser users (Only support on Firefox for Android or any related forks that can install uBlock Origin extension). However, this list won't support Facebook site or domains that serve under 'Free Basics' services.",
     "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/filterlist/facebook/readme.md",
     "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
     "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?q=label%3A%22Site%3A+Facebook%22",
@@ -8853,7 +8853,7 @@
   },
   {
     "id": 846,
-    "description": "A zero tolerance version of Thai Paranoid Block, you need to be careful before using this because this filter will be strict blocking well-known ads and trackings that use in Thai sites without any reasonable to whitelist them, period!",
+    "description": "A zero tolerance version of Thai Paranoid Block, you need to be careful before using this because this filter will be strict blocking well-known ads and trackings that use in Thai sites without any reasonable to whitelist them!",
     "descriptionSourceUrl": "https://github.com/kowith337/ThaiParanoidBlock/blob/maximum/readme.md",
     "homeUrl": "https://github.com/kowith337/ThaiParanoidBlock/tree/maximum",
     "issuesUrl": "https://github.com/kowith337/ThaiParanoidBlock/issues",
