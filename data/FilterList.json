@@ -8598,5 +8598,225 @@
     "name": "uMatrix - Rulesets for English websites",
     "syntaxId": 7,
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/recipes/recipes_en.txt"
+  },
+      {
+      "id": 821,
+      "emailAddress": "support@brave.com",
+      "homeUrl": "https://github.com/brave/adblock-lists",
+      "issuesUrl": "https://github.com/brave/adblock-lists/issues",
+      "licenseId": 33,
+      "name": "Brave Unbreak",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/brave/adblock-lists/master/brave-unbreak.txt"
+    },
+    {
+      "id": 822,
+      "homeUrl": "https://bbs.kafan.cn/thread-586237-1-1.html",
+      "licenseId": 2,
+      "name": "VeleSila's Kafan List",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/VeleSila/VELE-SILA-List/gh-pages/KaFanList.txt"
+    },
+    {
+      "id": 823,
+      "description": "uBlock/Adblock filters to block known NSA malware servers from Shadow Brokers dump.",
+      "descriptionSourceUrl": "https://github.com/gasull/adblock-nsa#adblock-the-nsa",
+      "homeUrl": "https://github.com/gasull/adblock-nsa",
+      "issuesUrl": "https://github.com/gasull/adblock-nsa/issues",
+      "name": "Adblock the NSA",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/gasull/adblock-nsa/master/filters.txt"
+    },
+    {
+      "id": 824,
+      "description": "Simple list for uBlock (and perhaps Adblock) for blocking popovers",
+      "descriptionSourceUrl": "https://github.com/mistalaba/popover-blocklist#popover-blocklist",
+      "homeUrl": "https://github.com/mistalaba/popover-blocklist",
+      "issuesUrl": "https://github.com/mistalaba/popover-blocklist/issues",
+      "licenseId": 2,
+      "name": "popover-blocklist",
+      "syntaxId": 4,
+      "viewUrl": "https://raw.githubusercontent.com/mistalaba/popover-blocklist/master/blocklist.txt"
+    },
+    {
+      "id": 825,
+      "description": "An experiment that proves how unsecure most membership apps are.",
+      "descriptionSourceUrl": "https://github.com/jasonbarone/membership-app-block-list#membership-app-block-list",
+      "emailAddress": "jason@jasonbarone.com",
+      "homeUrl": "https://github.com/jasonbarone/membership-app-block-list",
+      "issuesUrl": "https://github.com/jasonbarone/membership-app-block-list/issues",
+      "name": "Membership App Block List",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/jasonbarone/membership-app-block-list/master/membership-app-block-list.txt"
+    },
+    {
+      "id": 826,
+      "homeUrl": "https://github.com/w13d/adblockListABP-PiHole",
+      "issuesUrl": "https://github.com/w13d/adblockListABP-PiHole/issues",
+      "name": "Spotify AdBlocking for pihole",
+      "syntaxId": 2,
+      "viewUrl": "https://raw.githubusercontent.com/w13d/adblockListABP-PiHole/master/Spotify.txt"
+    },
+    {
+      "id": 827,
+      "homeUrl": "https://github.com/w13d/adblockListABP-PiHole",
+      "issuesUrl": "https://github.com/w13d/adblockListABP-PiHole/issues",
+      "name": "List adblock Indonesia",
+      "syntaxId": 1,
+      "viewUrl": "https://raw.githubusercontent.com/w13d/adblockListABP-PiHole/master/list.txt"
+    },
+    {
+      "id": 828,
+      "description": "Adblock List for Maldivian Websites",
+      "descriptionSourceUrl": "https://github.com/evenxzero/Raajje-AdList/blob/master/README.md",
+      "homeUrl": "https://github.com/evenxzero/Raajje-AdList",
+      "issuesUrl": "https://github.com/evenxzero/Raajje-AdList/issues",
+      "licenseId": 13,
+      "name": "Raajje-AdList",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/evenxzero/Raajje-AdList/master/filter"
+    },
+    {
+      "id": 829,
+      "homeUrl": "https://github.com/miyurusankalpa/adblock-list-sri-lanka",
+      "issuesUrl": "https://github.com/miyurusankalpa/adblock-list-sri-lanka/issues",
+      "licenseId": 4,
+      "name": "Adblock Sri Lanka",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/miyurusankalpa/adblock-list-sri-lanka/master/lkfilter.txt"
+    },
+    {
+      "id": 830,
+      "description": "AdBlock Lists formatted for dnsmasq. Title says it all.",
+      "descriptionSourceUrl": "https://github.com/acidwars/AdBlock-Lists#adblock-lists",
+      "homeUrl": "https://github.com/acidwars/AdBlock-Lists",
+      "issuesUrl": "https://github.com/acidwars/AdBlock-Lists/issues",
+      "name": "dnsmasq Adblock Lists - Adblock",
+      "syntaxId": 20,
+      "viewUrl": "https://raw.githubusercontent.com/acidwars/AdBlock-Lists/master/adblock.conf"
+    },
+    {
+      "id": 831,
+      "description": "AdBlock Lists formatted for dnsmasq. Title says it all.",
+      "descriptionSourceUrl": "https://github.com/acidwars/AdBlock-Lists#adblock-lists",
+      "homeUrl": "https://github.com/acidwars/AdBlock-Lists",
+      "issuesUrl": "https://github.com/acidwars/AdBlock-Lists/issues",
+      "name": "dnsmasq Adblock Lists - Ads 01",
+      "syntaxId": 20,
+      "viewUrl": "https://raw.githubusercontent.com/acidwars/AdBlock-Lists/master/ads01.conf"
+    },
+    {
+      "id": 832,
+      "description": "AdBlock Lists formatted for dnsmasq. Title says it all.",
+      "descriptionSourceUrl": "https://github.com/acidwars/AdBlock-Lists#adblock-lists",
+      "homeUrl": "https://github.com/acidwars/AdBlock-Lists",
+      "issuesUrl": "https://github.com/acidwars/AdBlock-Lists/issues",
+      "name": "dnsmasq Adblock Lists - Facebook",
+      "syntaxId": 20,
+      "viewUrl": "https://raw.githubusercontent.com/acidwars/AdBlock-Lists/master/facebookblock.conf"
+    },
+    {
+      "id": 833,
+      "description": "AdBlock Lists formatted for dnsmasq. Title says it all.",
+      "descriptionSourceUrl": "https://github.com/acidwars/AdBlock-Lists#adblock-lists",
+      "homeUrl": "https://github.com/acidwars/AdBlock-Lists",
+      "issuesUrl": "https://github.com/acidwars/AdBlock-Lists/issues",
+      "name": "dnsmasq Adblock Lists - FastClick",
+      "syntaxId": 20,
+      "viewUrl": "https://raw.githubusercontent.com/acidwars/AdBlock-Lists/master/fastclick.conf"
+    },
+    {
+      "id": 834,
+      "description": "AdBlock Lists formatted for dnsmasq. Title says it all.",
+      "descriptionSourceUrl": "https://github.com/acidwars/AdBlock-Lists#adblock-lists",
+      "homeUrl": "https://github.com/acidwars/AdBlock-Lists",
+      "issuesUrl": "https://github.com/acidwars/AdBlock-Lists/issues",
+      "name": "dnsmasq Adblock Lists - Google",
+      "syntaxId": 20,
+      "viewUrl": "https://raw.githubusercontent.com/acidwars/AdBlock-Lists/master/google.conf"
+    },
+    {
+      "id": 835,
+      "description": "AdBlock Lists formatted for dnsmasq. Title says it all.",
+      "descriptionSourceUrl": "https://github.com/acidwars/AdBlock-Lists#adblock-lists",
+      "homeUrl": "https://github.com/acidwars/AdBlock-Lists",
+      "issuesUrl": "https://github.com/acidwars/AdBlock-Lists/issues",
+      "name": "dnsmasq Adblock Lists - Microsoft",
+      "syntaxId": 20,
+      "viewUrl": "https://raw.githubusercontent.com/acidwars/AdBlock-Lists/master/microsoftblock.conf"
+    },
+    {
+      "id": 836,
+      "description": "This AdBlock list contains strange media sites created after the disinformation campaign that took place following the fire at the Colectiv nightclub in 2015.",
+      "descriptionSourceUrl": "https://github.com/Recon/romanian-media-propaganda-adblock-list#romanian-media-propaganda-adblock-list",
+      "homeUrl": "https://github.com/Recon/romanian-media-propaganda-adblock-list",
+      "issuesUrl": "https://github.com/Recon/romanian-media-propaganda-adblock-list/issues",
+      "licenseId": 9,
+      "name": "Romanian Media Propaganda AdBlock List",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/Recon/romanian-media-propaganda-adblock-list/master/ro-media-blocklist.txt"
+    },
+    {
+      "id": 837,
+      "description": "SyndicationBlock is an AdBlock filter list to block content syndicators.",
+      "descriptionSourceUrl": "https://github.com/duskwuff/syndicationblock#syndicationblock",
+      "emailAddress": "dusk@woofle.net",
+      "homeUrl": "https://github.com/duskwuff/syndicationblock",
+      "issuesUrl": "https://github.com/duskwuff/syndicationblock/issues",
+      "licenseId": 28,
+      "name": "SyndicationBlock",
+      "syntaxId": 3,
+      "updatedDate": "2016-07-14T00:00:00",
+      "viewUrl": "https://raw.githubusercontent.com/duskwuff/syndicationblock/master/filters.txt"
+    },
+    {
+      "id": 838,
+      "description": "VBlocker is made by a normal person that surfs the web to see all of the ads that should be blocked and added to VBlocker.",
+      "descriptionSourceUrl": "https://github.com/Just1GamerYT/vblocker_adblockplus-filterlist#why-vblocker",
+      "homeUrl": "https://github.com/Just1GamerYT/vblocker_adblockplus-filterlist",
+      "issuesUrl": "https://github.com/Just1GamerYT/vblocker_adblockplus-filterlist/issues",
+      "licenseId": 7,
+      "name": "VBlocker",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/Just1GamerYT/vblocker_adblockplus-filterlist/master/vblocker"
+    },
+    {
+      "id": 839,
+      "description": "A filter list for Adblock Plus for remove \"Go to up\" buttons",
+      "descriptionSourceUrl": "https://raw.githubusercontent.com/Manu1400/i-don-t-care-about-gotoup-btns/master/list-gotoup-btns.txt",
+      "donateUrl": "https://opencollective.com/captainfact_io",
+      "homeUrl": "https://github.com/Manu1400/i-don-t-care-about-gotoup-btns",
+      "issuesUrl": "https://github.com/Manu1400/i-don-t-care-about-gotoup-btns/issues",
+      "name": "I don't care about Go to up buttons",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/Manu1400/i-don-t-care-about-gotoup-btns/master/list-gotoup-btns.txt"
+    },
+    {
+      "id": 840,
+      "description": "A filter list that filters unrelated recommendations in websites. It can be used via filtering/blocking software such as adblock and ublock. It is written with compliance to abp organization filter guidelines.",
+      "descriptionSourceUrl": "https://github.com/KCaglarCoskun/enur-filter-list#unrelated-recommendations-filter-list-for-english-websites",
+      "homeUrl": "https://github.com/KCaglarCoskun/enur-filter-list",
+      "issuesUrl": "https://github.com/KCaglarCoskun/enur-filter-list/issues",
+      "licenseId": 11,
+      "name": "Unrelated Recommendations Filter List for English Websites",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/KCaglarCoskun/enur-filter-list/master/enur-filter-list.txt"
+    },
+    {
+      "id": 841,
+      "homeUrl": "https://github.com/LinuxLowell/chat-annoyances",
+      "issuesUrl": "https://github.com/LinuxLowell/chat-annoyances/issues",
+      "name": "Chat Annoyances Filter List",
+      "syntaxId": 3,
+      "viewUrl": "https://raw.githubusercontent.com/LinuxLowell/chat-annoyances/master/chat-annoyances.txt"
+    },
+    {
+    "id": 842,
+    "homeUrl": " https://pgl.yoyo.org/adservers",
+    "licenseId": 5,
+    "name": "Peter Lowe's List (dnsmasq)",
+    "policyUrl": "https://pgl.yoyo.org/as/policy.php",
+    "syntaxId": 20,
+    "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=dnsmasq&showintro=1&mimetype=plaintext"
   }
-]
+  ]

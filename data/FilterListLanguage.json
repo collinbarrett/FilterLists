@@ -1110,5 +1110,41 @@
   {
     "filterListId": 818,
     "languageId": 175
+  },
+  {
+    "filterListId": 822,
+    "languageId": 99
+  },
+  {
+    "filterListId": 827,
+    "languageId": 110
+  },
+  {
+    "filterListId": 827,
+    "languageId": 179
+  },
+  {
+    "filterListId": 828,
+    "languageId": 107
+  },
+  {
+    "filterListId": 829,
+    "languageId": 74
+  },
+  {
+    "filterListId": 829,
+    "languageId": 84
+  },
+  {
+    "filterListId": 836,
+    "languageId": 17
+  },
+  {
+    "filterListId": 839,
+    "languageId": 110
+  },
+  {
+    "filterListId": 839,
+    "languageId": 163
   }
 ]
