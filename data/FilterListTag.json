@@ -3852,6 +3852,10 @@
     "tagId": 2
   },
   {
+    "filterListId": 828,
+    "tagId": 6
+  },
+  {
     "filterListId": 829,
     "tagId": 2
   },
@@ -3898,10 +3902,6 @@
   {
     "filterListId": 838,
     "tagId": 2
-  },
-  {
-    "filterListId": 828,
-    "tagId": 6
   },
   {
     "filterListId": 839,
