@@ -22,8 +22,11 @@ namespace FilterLists.Data.Seed.Extensions
             await SeedOrUpdate<Software>(dbContext, dataPath);
             await SeedOrUpdate<Syntax>(dbContext, dataPath);
             await SeedOrUpdate<Tag>(dbContext, dataPath);
+
             await SeedOrUpdate<FilterList>(dbContext, dataPath);
             await SetDefaultLicenseIdAsync(dbContext);
+            await SeedFilterListDates(dbContext, dataPath);
+
             await SeedOrUpdate<FilterListLanguage>(dbContext, dataPath);
             await SeedOrUpdate<FilterListMaintainer>(dbContext, dataPath);
             await SeedOrUpdate<FilterListTag>(dbContext, dataPath);
@@ -165,6 +168,34 @@ namespace FilterLists.Data.Seed.Extensions
                                                    return l;
                                                });
             dbContext.UpdateRange(listsWithoutLicense);
+            await dbContext.SaveChangesAsync();
+        }
+
+        private static async Task SeedFilterListDates(DbContext dbContext, string dataPath)
+        {
+            var seed = GetSeed<FilterList>(dataPath);
+            var lists = dbContext.Set<FilterList>()
+                                 .ToList()
+                                 .Select(l =>
+                                 {
+                                     var seedList = seed.FirstOrDefault(s => s.Id == l.Id);
+                                     l.PublishedDate = seedList?.PublishedDate is DateTime seedPublishedDate
+                                         ? l.PublishedDate is DateTime currentPublishedDate
+                                             ? seedPublishedDate < currentPublishedDate
+                                                 ? seedPublishedDate
+                                                 : currentPublishedDate
+                                             : seedPublishedDate
+                                         : l.PublishedDate;
+                                     l.UpdatedDate = seedList?.UpdatedDate is DateTime seedUpdatedDate
+                                         ? l.UpdatedDate is DateTime currentUpdatedDate
+                                             ? seedUpdatedDate < currentUpdatedDate
+                                                 ? currentUpdatedDate
+                                                 : seedUpdatedDate
+                                             : seedUpdatedDate
+                                         : l.UpdatedDate;
+                                     return l;
+                                 });
+            dbContext.UpdateRange(lists);
             await dbContext.SaveChangesAsync();
         }
     }
