@@ -9328,5 +9328,45 @@
     "name": "sipp11's Thai Ad Filters",
     "syntaxId": 3,
     "viewUrl": "https://github.com/sipp11/th_ad_filters/raw/master/th_list.txt"
+  },
+  {
+    "id": 848,
+    "description": "Makes things a bit more tidy when watching things on Twitch.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Twitch: Pure Viewing Experience",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchPureViewingExperience.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TwitchPureViewingExperience.txt"
+  },
+  {
+    "id": 849,
+    "description": "This list aims to prevent low-quality (or even illegal) forks of more popular adblockers, adblockers that add unnecessary tracking, as well as links to dead filterlists. Currently this list only fully works with AdGuard's paid desktop version, as most other adblockers will refuse to function on a browser's own extension store.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "List Against Fake or Inoptimal Adblockers",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ListAgainstFakeOrInoptimalAdblockers.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/ListAgainstFakeOrInoptimalAdblockers.txt"
+  },
+  {
+    "id": 850,
+    "description": "Pixiv is an East Asian artsite, whose average art quality wipes the floor with DeviantArt. It also allows porn of many types. Pressure on \"many\". So say that you're looking for imagery of consensual and pleasurable sex, and then you stumble across a crying Daniel Tiger with a corset being strapped to a bench in a diaper? Now such scenarios won't occur nearly as often as they did before!",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAbusePorn.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-'Abuse porn' list for Pixiv",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAbusePorn.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAbusePorn.txt"
   }
 ]
