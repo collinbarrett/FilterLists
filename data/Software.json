@@ -50,10 +50,10 @@
   },
   {
     "id": 8,
-    "downloadUrl": "https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef",
-    "homeUrl": "https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef",
+    "downloadUrl": "https://addons.mozilla.org/firefox/addon/personal-blocklist/",
+    "homeUrl": "https://addons.mozilla.org/firefox/addon/personal-blocklist/",
     "isAbpSubscribable": false,
-    "name": "Personal Blocklist"
+    "name": "Personal Blocklist for Firefox"
   },
   {
     "id": 10,
