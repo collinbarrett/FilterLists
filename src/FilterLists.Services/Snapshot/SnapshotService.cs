@@ -54,6 +54,7 @@ namespace FilterLists.Services.Snapshot
                            .OrderBy(l => l.Snapshots.Any())
                            .ThenBy(lastSnapTimestamp)
                            .Take(batchSize)
+                           .Include(l => l.Snapshots)
                            .ToListAsync();
 
         private async Task<List<TSnap>> CreateAndSaveSnaps<TSnap>(IEnumerable<Data.Entities.FilterList> lists)
