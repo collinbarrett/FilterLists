@@ -4,8 +4,18 @@ import "../../../../utils/loader.css";
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import "./listsTable.css";
-import { DetailsButton, Languages, License, Maintainers, Name, RuleCount, Software, Tags, UpdatedDate } from
-    "./columns";
+import {
+    DetailsButton,
+    Languages,
+    License,
+    Maintainers,
+    Name,
+    RuleCount,
+    Software,
+    SubscribeButton,
+    Tags,
+    UpdatedDate
+} from "./columns";
 import { IListDetails } from "../../components/detailsExpander";
 import { DetailsExpander } from "../../components";
 
@@ -36,6 +46,7 @@ export const ListsTable = (props: IProps) =>
               RuleCount(props.columnVisibility),
               License(props.columnVisibility, props.licenses),
               Maintainers(props.columnVisibility, props.maintainers),
+              SubscribeButton(props.columnVisibility),
               DetailsButton
           ]}
           defaultSorted={[{ id: "name" }]}

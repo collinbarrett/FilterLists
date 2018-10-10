@@ -9,7 +9,8 @@ const columnVisibilityDefaults: IColumnVisibility[] = [
     { column: "Updated", visible: false },
     { column: "Rules", visible: false },
     { column: "License", visible: false },
-    { column: "Maintainers", visible: false }
+    { column: "Maintainers", visible: false },
+    { column: "Subscribe", visible: false }
 ];
 
 interface IProps {
@@ -42,7 +43,7 @@ export class Home extends React.Component<IProps, IState> {
         this.setMobileColumnVisibility();
         this.updatePageSize();
     };
-    
+
     setMobileColumnVisibility() {
         if (window.innerWidth < 768) {
             this.state.columnVisibility.forEach((c: IColumnVisibility) => {
