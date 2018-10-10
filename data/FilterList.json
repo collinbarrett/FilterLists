@@ -5731,17 +5731,6 @@
     "viewUrl": "https://raw.githubusercontent.com/UnluckyLuke/BlockUnderRadarJunk/master/blockunderradarjunk-list.txt"
   },
   {
-    "id": 511,
-    "description": "Custom filters allow you to block malicious sites, popular trackers, banners, delete and do not display ads on the site and in search results",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/bogachenko/personalfilters/master/repository.txt",
-    "homeUrl": "https://github.com/bogachenko/personalfilters",
-    "licenseId": 11,
-    "name": "bogachenko's Personal Filters",
-    "publishedDate": "2017-12-03T00:00:00",
-    "syntaxId": 4,
-    "viewUrl": "https://raw.githubusercontent.com/bogachenko/personalfilters/master/repository.txt"
-  },
-  {
     "id": 512,
     "description": "MinerBlock is an efficient browser extension that focuses on blocking browser-based cryptocurrency miners all over the web.",
     "descriptionSourceUrl": "https://github.com/xd4rker/MinerBlock",
