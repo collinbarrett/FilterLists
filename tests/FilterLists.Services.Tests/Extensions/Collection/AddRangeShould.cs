@@ -8,10 +8,7 @@ namespace FilterLists.Services.Tests.Extensions.Collection
 {
     public class AddRangeShould
     {
-        public AddRangeShould() =>
-            sut = new Collection<string>();
-
-        private readonly ICollection<string> sut;
+        private readonly ICollection<string> sut = new Collection<string>();
         private IEnumerable<string> range;
 
         [Fact]

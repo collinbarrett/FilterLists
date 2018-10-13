@@ -7,10 +7,7 @@ namespace FilterLists.Services.Tests.Extensions.Collection
 {
     public class AddIfNotNullOrEmptyShould
     {
-        public AddIfNotNullOrEmptyShould() =>
-            sut = new Collection<string>();
-
-        private readonly ICollection<string> sut;
+        private readonly ICollection<string> sut = new Collection<string>();
         private string item;
 
         [Fact]
