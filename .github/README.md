@@ -1,7 +1,7 @@
 ![FilterLists](https://github.com/collinbarrett/FilterLists/blob/master/imgs/logo_filterlists.png)
 
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://filterlists.com/)
-[![API](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://filterlists.com/api/v1/lists)
+[![API](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=API)](https://filterlists.com/api/v1/lists)
 [![Travis](https://travis-ci.org/collinbarrett/FilterLists.svg?branch=master)](https://travis-ci.org/collinbarrett/FilterLists)
 [![codecov](https://codecov.io/gh/collinbarrett/FilterLists/branch/master/graph/badge.svg)](https://codecov.io/gh/collinbarrett/FilterLists)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/collinbarrett/FilterLists/blob/master/LICENSE)
