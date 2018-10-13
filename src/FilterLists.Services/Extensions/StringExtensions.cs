@@ -9,7 +9,12 @@ namespace FilterLists.Services.Extensions
             Uri.TryCreate(source, UriKind.Absolute, out var uriResult) &&
             new[] {Uri.UriSchemeHttps, Uri.UriSchemeHttp}.Contains(uriResult.Scheme);
 
-        public static int GetNthIndexOfChar(this string s, int n, char t) =>
-            s.TakeWhile(c => (n -= c == t ? 1 : 0) > 0).Count();
+        public static int GetNthIndexOfChar(this string s, int n, char t)
+        {
+            if (n < 1)
+                throw new ArgumentOutOfRangeException();
+            var nthIndexOfChar = s.TakeWhile(c => (n -= c == t ? 1 : 0) > 0).Count();
+            return nthIndexOfChar == s.Length ? -1 : nthIndexOfChar;
+        }
     }
 }
