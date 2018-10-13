@@ -5,11 +5,13 @@ namespace FilterLists.Services.Tests.Extensions.String
 {
     public class IsValidHttpOrHttpsUrlShould
     {
-        [Fact]
-        public void ReturnFalseIfNotHttpOrHttps()
+        [Theory]
+        [InlineData("abp://www.google.com")]
+        [InlineData("www.google.com")]
+        [InlineData("google")]
+        public void ReturnFalseIfNotHttpOrHttps(string url)
         {
-            const string abp = "abp://www.google.com";
-            Assert.False(abp.IsValidHttpOrHttpsUrl());
+            Assert.False(url.IsValidHttpOrHttpsUrl());
         }
 
         [Fact]
