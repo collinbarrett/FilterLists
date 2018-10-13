@@ -9,6 +9,7 @@ addons:
     - sshpass
 script:
 - scripts/build.sh
+- dotnet test tests/FilterLists.Services.Tests/FilterLists.Services.Tests.csproj
 env:
   global:
     #FTP_USER
