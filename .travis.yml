@@ -9,7 +9,9 @@ addons:
     - sshpass
 script:
 - scripts/build.sh
-- dotnet test tests/FilterLists.Services.Tests/FilterLists.Services.Tests.csproj
+- dotnet test -c Release --no-build tests/FilterLists.Services.Tests/FilterLists.Services.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+after_script:
+- bash <(curl -s https://codecov.io/bash)
 env:
   global:
     #FTP_USER
