@@ -27,7 +27,7 @@ namespace FilterLists.Services.Snapshot
 
         private async Task UpdateWaybackData()
         {
-            var snapshotMeta = await WaybackService.GetMostRecentSnapshotMeta(ListUrl);
+            var snapshotMeta = await WaybackService.GetMostRecentSnapshotMetaAsync(ListUrl);
             if (snapshotMeta != null)
             {
                 ListUrl = SnapEntity.WaybackUrl = snapshotMeta.UrlRaw;

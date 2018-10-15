@@ -11,7 +11,7 @@ namespace FilterLists.Services.Wayback
     {
         private const string WaybackAvailabilityApiUrlPrefix = "https://archive.org/wayback/available?url=";
 
-        public static async Task<SnapshotMetaDto> GetMostRecentSnapshotMeta(string url)
+        public static async Task<SnapshotMetaDto> GetMostRecentSnapshotMetaAsync(string url)
         {
             var closest = (await GetWaybackAvailability(url))?.ArchivedSnapshots?.Closest;
             return closest != null
