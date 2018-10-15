@@ -15,7 +15,7 @@ namespace FilterLists.Services.Wayback
         {
             var closest = (await GetWaybackAvailability(url))?.ArchivedSnapshots?.Closest;
             return closest != null
-                ? new SnapshotMetaDto {TimestampUtc = ParseTimestampUtc(closest), UrlRaw = ParseUrlRaw(closest)}
+                ? new SnapshotMetaDto {TimestampUtc = ParseTimestampUtc(closest), RawUrl = ParseUrlRaw(closest)}
                 : null;
         }
 

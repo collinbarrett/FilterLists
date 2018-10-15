@@ -4,12 +4,20 @@ using FilterLists.Services.GitHub;
 using FilterLists.Services.GitHub.Models;
 using Xunit;
 
-namespace FilterLists.Services.Tests.GitHub
+namespace FilterLists.Services.Tests
 {
-    public class GetCommitDatesAsyncShould
+    public class GitHubServiceTests
     {
         [Fact]
-        public async Task ReturnCorrectFirstAndLastCommitDatesForValidGitHubRawUrl()
+        public async Task GetCommitDatesAsync_InvalidGitHubRawUrl_ReturnsNull()
+        {
+            const string url = "https://github.com/collinbarrett/FilterLists/blob/master/.gitattributes";
+            var actualDates = await new GitHubService().GetCommitDatesAsync(url);
+            Assert.Null(actualDates);
+        }
+
+        [Fact]
+        public async Task GetCommitDatesAsync_ValidGitHubRawUrl_ReturnsCorrectFirstAndLastCommitDates()
         {
             const string url = "https://raw.githubusercontent.com/collinbarrett/FilterLists/master/LICENSE";
             var expectedDates = new CommitDates
@@ -23,15 +31,7 @@ namespace FilterLists.Services.Tests.GitHub
         }
 
         [Fact]
-        public async Task ReturnNullForInvalidGitHubRawUrl()
-        {
-            const string url = "https://github.com/collinbarrett/FilterLists/blob/master/.gitattributes";
-            var actualDates = await new GitHubService().GetCommitDatesAsync(url);
-            Assert.Null(actualDates);
-        }
-
-        [Fact]
-        public async Task ReturnNullForValidGitHubRawUrlToNonexistentFile()
+        public async Task GetCommitDatesAsync_ValidGitHubRawUrlToNonexistentFile_ReturnsNull()
         {
             const string url = "https://github.com/collinbarrett/FilterLists/blob/master/doesnotexist";
             var actualDates = await new GitHubService().GetCommitDatesAsync(url);
@@ -39,7 +39,7 @@ namespace FilterLists.Services.Tests.GitHub
         }
 
         [Fact]
-        public async Task ReturnSameFirstAndLastCommitDatesForValidGitHubRawUrlWithOnlyOneCommit()
+        public async Task GetCommitDatesAsync_ValidGitHubRawUrlWithOnlyOneCommit_ReturnsSameFirstAndLastCommitDates()
         {
             const string url = "https://raw.githubusercontent.com/collinbarrett/FilterLists/master/.gitattributes";
             var expectedDate = DateTime.Parse("2017-04-08T00:05:26.0000000");

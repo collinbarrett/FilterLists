@@ -1,11 +1,11 @@
 ﻿using Xunit;
 
-namespace FilterLists.Services.Tests.UserAgent
+namespace FilterLists.Services.Tests
 {
-    public class GetMostPopularStringAsyncShould
+    public class UserAgentServiceTests
     {
         [Fact]
-        public async void ReturnStringContainingMozilla()
+        public async void GetMostPopularStringAsync_ReturnsStringContainingMozilla()
         {
             var actualString = await UserAgentService.GetMostPopularStringAsync();
             Assert.Contains("Mozilla", actualString);
