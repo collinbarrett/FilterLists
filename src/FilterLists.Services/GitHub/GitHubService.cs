@@ -12,7 +12,15 @@ namespace FilterLists.Services.GitHub
     public class GitHubService
     {
         private const string RawFileUrlRoot = "raw.githubusercontent.com";
-        private readonly GitHubClient client = new GitHubClient(new ProductHeaderValue("FilterLists"));
+        private const string ProductHeader = "FilterLists";
+        private const string ReadOnlyPersonalAccessToken = "25ef3c8e20d2fcacf1583e7650b63cfa3e784fec";
+        private readonly GitHubClient client;
+
+        public GitHubService() =>
+            client = new GitHubClient(new ProductHeaderValue(ProductHeader))
+            {
+                Credentials = new Credentials(ReadOnlyPersonalAccessToken)
+            };
 
         public async Task<CommitDates> GetCommitDatesAsync(string rawFileUrl)
         {
