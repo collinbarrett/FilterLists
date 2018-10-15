@@ -32,7 +32,7 @@ namespace FilterLists.Services.Snapshot
         public async Task CaptureAsync(int batchSize)
         {
             await CleanupFailedSnapshots();
-            uaString = await UserAgentService.GetMostPopularString();
+            uaString = await UserAgentService.GetMostPopularStringAsync();
             var lists = await GetListsToCapture(batchSize);
             var snaps = await CreateAndSaveSnaps<Snapshot>(lists);
             var listsToRetry = snaps.Where(s => s.WebExcepted).Select(s => s.List);
