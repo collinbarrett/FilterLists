@@ -30,7 +30,7 @@ namespace FilterLists.Services.Snapshot
             var snapshotMeta = await WaybackService.GetMostRecentSnapshotMetaAsync(ListUrl);
             if (snapshotMeta != null)
             {
-                ListUrl = SnapEntity.WaybackUrl = snapshotMeta.UrlRaw;
+                ListUrl = SnapEntity.WaybackUrl = snapshotMeta.RawUrl;
                 SnapEntity.WaybackTimestamp = snapshotMeta.TimestampUtc;
             }
             else
