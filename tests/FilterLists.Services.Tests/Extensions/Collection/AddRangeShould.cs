@@ -26,5 +26,21 @@ namespace FilterLists.Services.Tests.Extensions.Collection
             sut.AddRange(range);
             Assert.True(!range.Except(sut).Any());
         }
+
+        [Fact]
+        public void NotAddAnyItemsFromEmptyCollection()
+        {
+            range = new Collection<string>();
+            sut.AddRange(range);
+            Assert.Empty(sut);
+        }
+
+        [Fact]
+        public void NotAddAnyItemsFromEmptyList()
+        {
+            range = new List<string>();
+            sut.AddRange(range);
+            Assert.Empty(sut);
+        }
     }
 }
