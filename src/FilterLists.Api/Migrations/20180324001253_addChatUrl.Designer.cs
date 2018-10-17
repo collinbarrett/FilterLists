@@ -11,6 +11,7 @@ namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
     [Migration("20180324001253_addChatUrl")]
+    // ReSharper disable once InconsistentNaming
     partial class addChatUrl
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

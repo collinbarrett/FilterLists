@@ -12,6 +12,7 @@ module.exports = (env) => {
             entry: { 'main': "./ClientApp/Boot.tsx" },
             resolve: { extensions: [".js", ".jsx", ".ts", ".tsx"] },
             output: {
+                // ReSharper disable once UseOfImplicitGlobalInFunctionScope
                 path: path.join(__dirname, bundleOutputDir),
                 filename: "[name].js",
                 publicPath: "dist/"
@@ -31,6 +32,7 @@ module.exports = (env) => {
             plugins: [
                 new CheckerPlugin(),
                 new webpack.DllReferencePlugin({
+                    // ReSharper disable once UseOfImplicitGlobalInFunctionScope
                     context: __dirname,
                     manifest: require("./wwwroot/dist/vendor-manifest.json")
                 })

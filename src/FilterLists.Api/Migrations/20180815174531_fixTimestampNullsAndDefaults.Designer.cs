@@ -11,6 +11,7 @@ namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
     [Migration("20180815174531_fixTimestampNullsAndDefaults")]
+    // ReSharper disable once InconsistentNaming
     partial class fixTimestampNullsAndDefaults
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

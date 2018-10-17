@@ -13,8 +13,8 @@ namespace FilterLists.Api.Migrations
                 {
                     CreatedDateUtc = table.Column<DateTime>("TIMESTAMP", nullable: false,
                         defaultValueSql: "current_timestamp()"),
-                    DependentFilterListId = table.Column<ushort>(nullable: false),
-                    DependencyFilterListId = table.Column<ushort>(nullable: false)
+                    DependentFilterListId = table.Column<ushort>(),
+                    DependencyFilterListId = table.Column<ushort>()
                 },
                 constraints: table =>
                 {

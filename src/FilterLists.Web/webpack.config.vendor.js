@@ -27,6 +27,7 @@ module.exports = (env) => {
                 ]
             },
             output: {
+                // ReSharper disable once UseOfImplicitGlobalInFunctionScope
                 path: path.join(__dirname, "wwwroot", "dist"),
                 publicPath: "dist/",
                 filename: "[name].js",
@@ -39,6 +40,7 @@ module.exports = (env) => {
                     jQuery: "jquery"
                 }), // Maps these identifiers to the jQuery package (because Bootstrap expects it to be a global variable)
                 new webpack.DllPlugin({
+                    // ReSharper disable once UseOfImplicitGlobalInFunctionScope
                     path: path.join(__dirname, "wwwroot", "dist", "[name]-manifest.json"),
                     name: "[name]_[hash]"
                 }),
@@ -46,10 +48,10 @@ module.exports = (env) => {
                     'process.env.NODE_ENV': isDevBuild ? '"development"' : '"production"'
                 })
             ].concat(isDevBuild
-                ? []
-                : [
-                    new webpack.optimize.UglifyJsPlugin()
-                ])
+                     ? []
+                     : [
+                         new webpack.optimize.UglifyJsPlugin()
+                     ])
         }
     ];
 };

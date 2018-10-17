@@ -5,7 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.Api.DependencyInjection.Extensions
 {
-    public static class IWebHostExtension
+    // ReSharper disable once InconsistentNaming
+    public static class IWebHostExtensions
     {
         public static IWebHost MigrateAndSeedDbContext<TContext>(this IWebHost webHost,
             Action<TContext, IServiceProvider> seeder) where TContext : DbContext
