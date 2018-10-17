@@ -7,7 +7,7 @@ namespace FilterLists.Services.Tests
 {
     public class WaybackServiceTests
     {
-        [Fact]
+        [Fact(Skip = "https://github.com/collinbarrett/FilterLists/issues/590")]
         public async void GetMostRecentSnapshotMetaAsync_UrlInWaybackMachine_ReturnsAccessibleRawUrl()
         {
             const string url = "https://github.com/collinbarrett/FilterLists";
@@ -19,7 +19,7 @@ namespace FilterLists.Services.Tests
             }
         }
 
-        [Fact]
+        [Fact(Skip = "https://github.com/collinbarrett/FilterLists/issues/590")]
         public async void GetMostRecentSnapshotMetaAsync_UrlInWaybackMachine_ReturnsRecentTimestampUtc()
         {
             const string url = "https://github.com/collinbarrett/FilterLists";
@@ -28,7 +28,7 @@ namespace FilterLists.Services.Tests
                         meta.TimestampUtc < DateTime.UtcNow);
         }
 
-        [Fact]
+        [Fact(Skip = "https://github.com/collinbarrett/FilterLists/issues/590")]
         public async void GetMostRecentSnapshotMetaAsync_UrlNotInWaybackMachine_ReturnsNull()
         {
             const string url = "https://raw.githubusercontent.com/collinbarrett/FilterLists/master/doesnotexist";
