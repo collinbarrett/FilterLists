@@ -965,7 +965,9 @@
     "publishedDate": "2018-05-23T21:53:55",
     "syntaxId": 4,
     "updatedDate": "2018-10-09T01:28:00",
-    "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt"
+    "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt",
+    "viewUrlMirror2": "https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt"
   },
   {
     "id": 84,
@@ -2642,7 +2644,8 @@
     "name": "Adblock Iran",
     "syntaxId": 3,
     "updatedDate": "2018-10-04T18:11:06",
-    "viewUrl": "https://raw.githubusercontent.com/farrokhi/adblock-iran/master/filter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/farrokhi/adblock-iran/master/filter.txt",
+    "viewUrlMirror1": "https://cdn.rawgit.com/farrokhi/adblock-iran/master/filter.txt""
   },
   {
     "id": 229,
@@ -2815,7 +2818,7 @@
     "syntaxId": 3,
     "updatedDate": "2018-10-10T06:28:09",
     "viewUrl": "https://easylist.to/easylist/easyprivacy.txt",
-    "viewUrlMirror1": "https://secure.fanboy.co.nz/easyprivacy.txt",
+    "viewUrlMirror1": "https://fanboy.co.nz/easyprivacy.txt",
     "viewUrlMirror2": "https://easylist-downloads.adblockplus.org/easyprivacy.txt"
   },
   {
@@ -3525,7 +3528,7 @@
     "syntaxId": 3,
     "updatedDate": "2018-10-10T13:00:09",
     "viewUrl": "https://easylist.to/easylist/easylist.txt",
-    "viewUrlMirror1": "https://secure.fanboy.co.nz/easylist.txt",
+    "viewUrlMirror1": "https://fanboy.co.nz/easylist.txt",
     "viewUrlMirror2": "https://easylist-downloads.adblockplus.org/easylist.txt"
   },
   {
@@ -4518,7 +4521,7 @@
     "name": "Disqus Click-to-Load",
     "publishedDate": "2016-03-09T00:00:00",
     "syntaxId": 4,
-    "viewUrl": "https://gist.github.com/gorhill/ef1b62d606473c68d524/raw/f8181faac18cb5172c7c9bca8e5a3b22f0c925d0/gistfile1.txt"
+    "viewUrl": "https://gist.githubusercontent.com/gorhill/ef1b62d606473c68d524/raw/f8181faac18cb5172c7c9bca8e5a3b22f0c925d0/gistfile1.txt"
   },
   {
     "id": 380,
@@ -4722,7 +4725,8 @@
     "name": "Nano filters",
     "syntaxId": 12,
     "updatedDate": "2018-10-10T21:40:09",
-    "viewUrl": "https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt"
+    "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt",
+    "viewUrlMirror1": "https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt"
   },
   {
     "id": 397,
@@ -4731,7 +4735,8 @@
     "licenseId": 4,
     "name": "Nano filters - Whitelist",
     "syntaxId": 12,
-    "viewUrl": "https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelist.txt",
+    "viewUrlMirror2": "https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelist.txt"
   },
   {
     "id": 398,
@@ -4741,7 +4746,8 @@
     "name": "Nano filters - Annoyance",
     "syntaxId": 12,
     "updatedDate": "2018-10-10T21:45:10",
-    "viewUrl": "https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt"
+    "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt",
+    "viewUrlMirror2": "https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt"
   },
   {
     "id": 399,
@@ -6487,7 +6493,7 @@
     "name": "Winding Advertising Filter Rules (乘风 广告过滤规则)",
     "syntaxId": 3,
     "updatedDate": "2018-10-10T14:10:09",
-    "viewUrl": "https://github.com/xinggsf/Adblock-Plus-Rule/raw/master/ABP-FX.txt"
+    "viewUrl": "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/ABP-FX.txt"
   },
   {
     "id": 563,
@@ -6499,7 +6505,7 @@
     "licenseId": 8,
     "name": "List-KR (andromedarabbit)",
     "syntaxId": 4,
-    "viewUrl": "https://github.com/andromedarabbit/List-KR/raw/master/filter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/andromedarabbit/List-KR/master/filter.txt"
   },
   {
     "id": 564,
@@ -6512,7 +6518,7 @@
     "name": "Fanboy's problematic-sites",
     "syntaxId": 3,
     "updatedDate": "2018-10-10T14:19:10",
-    "viewUrl": "https://secure.fanboy.co.nz/fanboy-problematic-sites.txt"
+    "viewUrl": "https://fanboy.co.nz/fanboy-problematic-sites.txt"
   },
   {
     "id": 565,
@@ -9628,7 +9634,7 @@
     "licenseId": 13,
     "name": "Facebook Zuckestion Killer",
     "syntaxId": 4,
-    "viewUrl": "https://github.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/facebook/FacebookZuckestionKiller.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookZuckestionKiller.txt"
   },
   {
     "id": 844,
@@ -9639,7 +9645,7 @@
     "licenseId": 13,
     "name": "Facebook Modules Command List",
     "syntaxId": 4,
-    "viewUrl": "https://github.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/facebook/FacebookCommands.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookCommands.txt"
   },
   {
     "id": 845,
@@ -9649,7 +9655,7 @@
     "licenseId": 13,
     "name": "All of adservice.google.com and id.google.com regional hosts",
     "syntaxId": 1,
-    "viewUrl": "https://github.com/kowith337/PersonalFilterListCollection/raw/master/hosts/hosts_google_adservice_id.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_google_adservice_id.txt"
   },
   {
     "id": 846,
@@ -9660,7 +9666,7 @@
     "licenseId": 13,
     "name": "Thai Paranoid Block ~Maximum~",
     "syntaxId": 4,
-    "viewUrl": "https://github.com/kowith337/ThaiParanoidBlock/raw/maximum/ThaiParanoid.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/maximum/ThaiParanoid.txt"
   },
   {
     "id": 847,
@@ -9671,7 +9677,7 @@
     "licenseId": 5,
     "name": "sipp11's Thai Ad Filters",
     "syntaxId": 3,
-    "viewUrl": "https://github.com/sipp11/th_ad_filters/raw/master/th_list.txt"
+    "viewUrl": "https://raw.githubusercontent.com/sipp11/th_ad_filters/master/th_list.txt"
   },
   {
     "id": 848,
