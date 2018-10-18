@@ -5,7 +5,7 @@ namespace FilterLists.Services.Seed.Models.Junctions
     [UsedImplicitly]
     public class DependentSeedDto
     {
-        public uint DependentFilterListId { get; set; }
-        public uint DependencyFilterListId { get; set; }
+        public int DependentFilterListId { get; set; }
+        public int DependencyFilterListId { get; set; }
     }
 }

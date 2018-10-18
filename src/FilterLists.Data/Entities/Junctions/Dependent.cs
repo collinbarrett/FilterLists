@@ -2,9 +2,9 @@
 {
     public class Dependent : BaseJunctionEntity
     {
-        public uint DependentFilterListId { get; set; }
+        public int DependentFilterListId { get; set; }
         public FilterList DependentFilterList { get; set; }
-        public uint DependencyFilterListId { get; set; }
+        public int DependencyFilterListId { get; set; }
         public FilterList DependencyFilterList { get; set; }
     }
 }

@@ -5,7 +5,7 @@ namespace FilterLists.Services.Seed.Models.Junctions
     [UsedImplicitly]
     public class ForkSeedDto
     {
-        public uint ForkFilterListId { get; set; }
-        public uint UpstreamFilterListId { get; set; }
+        public int ForkFilterListId { get; set; }
+        public int UpstreamFilterListId { get; set; }
     }
 }

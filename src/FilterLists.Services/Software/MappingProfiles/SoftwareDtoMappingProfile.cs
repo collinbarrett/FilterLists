@@ -12,10 +12,10 @@ namespace FilterLists.Services.Software.MappingProfiles
             CreateMap<Data.Entities.Software, SoftwareDto>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
-                        (int)src.Id))
+                        src.Id))
                 .ForMember(dest => dest.SyntaxIds,
                     opt => opt.MapFrom(src =>
                         src.SoftwareSyntaxes
-                           .Select(ss => (int)ss.SyntaxId)));
+                           .Select(ss => ss.SyntaxId)));
     }
 }

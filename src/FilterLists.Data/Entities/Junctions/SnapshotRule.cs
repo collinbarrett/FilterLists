@@ -2,9 +2,9 @@
 {
     public class SnapshotRule : BaseJunctionEntity
     {
-        public uint SnapshotId { get; set; }
+        public int SnapshotId { get; set; }
         public Snapshot Snapshot { get; set; }
-        public uint RuleId { get; set; }
+        public int RuleId { get; set; }
         public Rule Rule { get; set; }
     }
 }

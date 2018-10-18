@@ -12,10 +12,10 @@ namespace FilterLists.Services.Maintainer.MappingProfiles
             CreateMap<Data.Entities.Maintainer, MaintainerDto>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
-                        (int)src.Id))
+                        src.Id))
                 .ForMember(dest => dest.FilterListIds,
                     opt => opt.MapFrom(src =>
                         src.FilterListMaintainers
-                           .Select(fm => (int)fm.FilterListId)));
+                           .Select(fm => fm.FilterListId)));
     }
 }

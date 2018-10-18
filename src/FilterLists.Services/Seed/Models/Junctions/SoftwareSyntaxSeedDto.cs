@@ -5,7 +5,7 @@ namespace FilterLists.Services.Seed.Models.Junctions
     [UsedImplicitly]
     public class SoftwareSyntaxSeedDto
     {
-        public uint SoftwareId { get; set; }
-        public uint SyntaxId { get; set; }
+        public int SoftwareId { get; set; }
+        public int SyntaxId { get; set; }
     }
 }

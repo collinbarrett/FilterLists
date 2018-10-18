@@ -12,10 +12,10 @@ namespace FilterLists.Services.Language.MappingProfiles
             CreateMap<Data.Entities.Language, LanguageDto>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
-                        (int)src.Id))
+                        src.Id))
                 .ForMember(dest => dest.FilterListIds,
                     opt => opt.MapFrom(src =>
                         src.FilterListLanguages
-                           .Select(fl => (int)fl.FilterListId)));
+                           .Select(fl => fl.FilterListId)));
     }
 }

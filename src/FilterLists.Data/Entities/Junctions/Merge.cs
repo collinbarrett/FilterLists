@@ -2,9 +2,9 @@
 {
     public class Merge : BaseJunctionEntity
     {
-        public uint MergeFilterListId { get; set; }
+        public int MergeFilterListId { get; set; }
         public FilterList MergeFilterList { get; set; }
-        public uint UpstreamFilterListId { get; set; }
+        public int UpstreamFilterListId { get; set; }
         public FilterList UpstreamFilterList { get; set; }
     }
 }

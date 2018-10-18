@@ -12,10 +12,10 @@ namespace FilterLists.Services.Tag.MappingProfiles
             CreateMap<Data.Entities.Tag, TagDto>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
-                        (int)src.Id))
+                        src.Id))
                 .ForMember(dest => dest.FilterListIds,
                     opt => opt.MapFrom(src =>
                         src.FilterListTags
-                           .Select(ft => (int)ft.FilterListId)));
+                           .Select(ft => ft.FilterListId)));
     }
 }

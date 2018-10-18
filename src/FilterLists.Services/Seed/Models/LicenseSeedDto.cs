@@ -5,7 +5,7 @@ namespace FilterLists.Services.Seed.Models
     [UsedImplicitly]
     public class LicenseSeedDto
     {
-        public uint Id { get; set; }
+        public int Id { get; set; }
         public string DescriptionUrl { get; set; }
         public string Name { get; set; }
         public bool PermissiveAdaptation { get; set; }

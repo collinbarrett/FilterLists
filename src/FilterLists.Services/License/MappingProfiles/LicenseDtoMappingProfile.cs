@@ -12,10 +12,10 @@ namespace FilterLists.Services.License.MappingProfiles
             CreateMap<Data.Entities.License, LicenseDto>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
-                        (int)src.Id))
+                        src.Id))
                 .ForMember(dest => dest.FilterListIds,
                     opt => opt.MapFrom(src =>
                         src.FilterLists
-                           .Select(l => (int)l.Id)));
+                           .Select(l => l.Id)));
     }
 }

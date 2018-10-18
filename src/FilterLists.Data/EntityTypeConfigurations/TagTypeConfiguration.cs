@@ -10,8 +10,6 @@ namespace FilterLists.Data.EntityTypeConfigurations
         {
             base.Configure(entityTypeBuilder);
             entityTypeBuilder.ToTable("tags");
-            entityTypeBuilder.Property(x => x.Id)
-                             .HasColumnType("TINYINT UNSIGNED");
             entityTypeBuilder.Property(x => x.Name)
                              .HasColumnType("VARCHAR(126)")
                              .IsRequired();

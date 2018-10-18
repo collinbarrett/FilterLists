@@ -12,14 +12,14 @@ namespace FilterLists.Services.Syntax.MappingProfiles
             CreateMap<Data.Entities.Syntax, SyntaxDto>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
-                        (int)src.Id))
+                        src.Id))
                 .ForMember(dest => dest.FilterListIds,
                     opt => opt.MapFrom(src =>
                         src.FilterLists
-                           .Select(l => (int)l.Id)))
+                           .Select(l => l.Id)))
                 .ForMember(dest => dest.SoftwareIds,
                     opt => opt.MapFrom(src =>
                         src.SoftwareSyntaxes
-                           .Select(ss => (int)ss.SoftwareId)));
+                           .Select(ss => ss.SoftwareId)));
     }
 }

@@ -10,8 +10,6 @@ namespace FilterLists.Data.EntityTypeConfigurations
         {
             base.Configure(entityTypeBuilder);
             entityTypeBuilder.ToTable("syntaxes");
-            entityTypeBuilder.Property(x => x.Id)
-                             .HasColumnType("TINYINT UNSIGNED");
             entityTypeBuilder.Property(x => x.DefinitionUrl)
                              .HasColumnType("TEXT");
             entityTypeBuilder.Property(x => x.Name)

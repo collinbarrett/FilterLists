@@ -13,18 +13,18 @@ namespace FilterLists.Services.FilterList.MappingProfiles
             CreateMap<Data.Entities.FilterList, FilterListDto>()
                 .ForMember(dest => dest.Id,
                     opt => opt.MapFrom(src =>
-                        (int)src.Id))
+                        src.Id))
                 .ForMember(dest => dest.LanguageIds,
                     opt => opt.MapFrom(src =>
                         src.FilterListLanguages
-                           .Select(ll => (int)ll.LanguageId)))
+                           .Select(ll => ll.LanguageId)))
                 .ForMember(dest => dest.LicenseId,
                     opt => opt.MapFrom(src =>
-                        (int)src.LicenseId))
+                        src.LicenseId))
                 .ForMember(dest => dest.MaintainerIds,
                     opt => opt.MapFrom(src =>
                         src.FilterListMaintainers
-                           .Select(ll => (int)ll.MaintainerId)))
+                           .Select(ll => ll.MaintainerId)))
                 .ForMember(dest => dest.RuleCount,
                     opt => opt.MapFrom(src =>
                         src.Snapshots
@@ -33,11 +33,11 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                            .FirstOrDefault()))
                 .ForMember(dest => dest.SyntaxId,
                     opt => opt.MapFrom(src =>
-                        (int)src.SyntaxId))
+                        src.SyntaxId))
                 .ForMember(dest => dest.TagIds,
                     opt => opt.MapFrom(src =>
                         src.FilterListTags
-                           .Select(lt => (int)lt.TagId)))
+                           .Select(lt => lt.TagId)))
                 .ForMember(dest => dest.ViewUrlMirrors,
                     opt => opt.MapFrom(src =>
                         src.ViewUrlMirror1 != null
