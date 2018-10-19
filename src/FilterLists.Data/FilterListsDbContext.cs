@@ -35,6 +35,7 @@ namespace FilterLists.Data
         {
             base.OnModelCreating(modelBuilder);
             ApplyConfigurations(modelBuilder);
+            modelBuilder.Entity<Rule>().HasIndex(r => r.Raw);
         }
 
         private static void ApplyConfigurations(ModelBuilder modelBuilder)
