@@ -1,5 +1,4 @@
-﻿using FilterLists.Api.Migrations.Extensions;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FilterLists.Api.Migrations
@@ -8,7 +7,7 @@ namespace FilterLists.Api.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropFK_filterlists_tags_tags_TagId();
+            DropFK_filterlists_tags_tags_TagId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                                 "Id",
@@ -27,11 +26,11 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(byte));
 
-            migrationBuilder.AddFK_filterlists_tags_tags_TagId();
+            AddFK_filterlists_tags_tags_TagId(migrationBuilder);
 
-            migrationBuilder.DropFK_filterlists_syntaxes_SyntaxId();
+            DropFK_filterlists_syntaxes_SyntaxId(migrationBuilder);
 
-            migrationBuilder.DropFK_software_syntaxes_syntaxes_SyntaxId();
+            DropFK_software_syntaxes_syntaxes_SyntaxId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                                 "Id",
@@ -51,7 +50,7 @@ namespace FilterLists.Api.Migrations
                 oldClrType: typeof(byte),
                 oldNullable: true);
 
-            migrationBuilder.AddFK_filterlists_syntaxes_SyntaxId();
+            AddFK_filterlists_syntaxes_SyntaxId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                 "SyntaxId",
@@ -59,9 +58,9 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(byte));
 
-            migrationBuilder.AddFK_software_syntaxes_syntaxes_SyntaxId();
+            AddFK_software_syntaxes_syntaxes_SyntaxId(migrationBuilder);
 
-            migrationBuilder.DropFK_software_syntaxes_software_SoftwareId();
+            DropFK_software_syntaxes_software_SoftwareId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                 "SoftwareId",
@@ -80,9 +79,9 @@ namespace FilterLists.Api.Migrations
                             .OldAnnotation("MySql:ValueGenerationStrategy",
                                 MySqlValueGenerationStrategy.IdentityColumn);
 
-            migrationBuilder.AddFK_software_syntaxes_software_SoftwareId();
+            AddFK_software_syntaxes_software_SoftwareId(migrationBuilder);
 
-            migrationBuilder.DropFK_snapshots_rules_rules_RuleId();
+            DropFK_snapshots_rules_rules_RuleId(migrationBuilder);
 
             migrationBuilder.AlterColumn<int>(
                 "RuleId",
@@ -101,9 +100,9 @@ namespace FilterLists.Api.Migrations
                             .OldAnnotation("MySql:ValueGenerationStrategy",
                                 MySqlValueGenerationStrategy.IdentityColumn);
 
-            migrationBuilder.AddFK_snapshots_rules_rules_RuleId();
+            AddFK_snapshots_rules_rules_RuleId(migrationBuilder);
 
-            migrationBuilder.DropFK_snapshots_rules_snapshots_SnapshotId();
+            DropFK_snapshots_rules_snapshots_SnapshotId(migrationBuilder);
 
             migrationBuilder.AlterColumn<int>(
                 "SnapshotId",
@@ -122,9 +121,9 @@ namespace FilterLists.Api.Migrations
                             .OldAnnotation("MySql:ValueGenerationStrategy",
                                 MySqlValueGenerationStrategy.IdentityColumn);
 
-            migrationBuilder.AddFK_snapshots_rules_snapshots_SnapshotId();
+            AddFK_snapshots_rules_snapshots_SnapshotId(migrationBuilder);
 
-            migrationBuilder.DropFK_snapshots_filterlists_FilterListId();
+            DropFK_snapshots_filterlists_FilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                 "FilterListId",
@@ -132,7 +131,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(ushort));
 
-            migrationBuilder.DropFK_merges_filterlists_UpstreamFilterListId();
+            DropFK_merges_filterlists_UpstreamFilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                 "UpstreamFilterListId",
@@ -140,7 +139,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(ushort));
 
-            migrationBuilder.DropFK_merges_filterlists_MergeFilterListId();
+            DropFK_merges_filterlists_MergeFilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                 "MergeFilterListId",
@@ -148,7 +147,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(ushort));
 
-            migrationBuilder.DropFK_forks_filterlists_UpstreamFilterListId();
+            DropFK_forks_filterlists_UpstreamFilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                 "UpstreamFilterListId",
@@ -156,7 +155,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(ushort));
 
-            migrationBuilder.DropFK_forks_filterlists_ForkFilterListId();
+            DropFK_forks_filterlists_ForkFilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                 "ForkFilterListId",
@@ -164,7 +163,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(ushort));
 
-            migrationBuilder.DropFK_filterlists_tags_filterlists_FilterListId();
+            DropFK_filterlists_tags_filterlists_FilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                 "FilterListId",
@@ -172,7 +171,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(ushort));
 
-            migrationBuilder.DropFK_filterlists_maintainers_filterlists_FilterListId();
+            DropFK_filterlists_maintainers_filterlists_FilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                 "FilterListId",
@@ -180,7 +179,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(ushort));
 
-            migrationBuilder.DropFK_filterlists_languages_filterlists_FilterListId();
+            DropFK_filterlists_languages_filterlists_FilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                 "FilterListId",
@@ -188,9 +187,9 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(ushort));
 
-            migrationBuilder.DropFK_dependents_filterlists_DependencyFilterListId();
+            DropFK_dependents_filterlists_DependencyFilterListId(migrationBuilder);
 
-            migrationBuilder.DropFK_dependents_filterlists_DependentFilterListId();
+            DropFK_dependents_filterlists_DependentFilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                                 "Id",
@@ -203,21 +202,21 @@ namespace FilterLists.Api.Migrations
                             .OldAnnotation("MySql:ValueGenerationStrategy",
                                 MySqlValueGenerationStrategy.IdentityColumn);
 
-            migrationBuilder.AddFK_snapshots_filterlists_FilterListId();
+            AddFK_snapshots_filterlists_FilterListId(migrationBuilder);
 
-            migrationBuilder.AddFK_merges_filterlists_UpstreamFilterListId();
+            AddFK_merges_filterlists_UpstreamFilterListId(migrationBuilder);
 
-            migrationBuilder.AddFK_merges_filterlists_MergeFilterListId();
+            AddFK_merges_filterlists_MergeFilterListId(migrationBuilder);
 
-            migrationBuilder.AddFK_forks_filterlists_UpstreamFilterListId();
+            AddFK_forks_filterlists_UpstreamFilterListId(migrationBuilder);
 
-            migrationBuilder.AddFK_forks_filterlists_ForkFilterListId();
+            AddFK_forks_filterlists_ForkFilterListId(migrationBuilder);
 
-            migrationBuilder.AddFK_filterlists_tags_filterlists_FilterListId();
+            AddFK_filterlists_tags_filterlists_FilterListId(migrationBuilder);
 
-            migrationBuilder.AddFK_filterlists_maintainers_filterlists_FilterListId();
+            AddFK_filterlists_maintainers_filterlists_FilterListId(migrationBuilder);
 
-            migrationBuilder.AddFK_filterlists_languages_filterlists_FilterListId();
+            AddFK_filterlists_languages_filterlists_FilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                 "DependencyFilterListId",
@@ -225,7 +224,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(ushort));
 
-            migrationBuilder.AddFK_dependents_filterlists_DependencyFilterListId();
+            AddFK_dependents_filterlists_DependencyFilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                 "DependentFilterListId",
@@ -233,9 +232,9 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(ushort));
 
-            migrationBuilder.AddFK_dependents_filterlists_DependentFilterListId();
+            AddFK_dependents_filterlists_DependentFilterListId(migrationBuilder);
 
-            migrationBuilder.DropFK_filterlists_maintainers_maintainers_MaintainerId();
+            DropFK_filterlists_maintainers_maintainers_MaintainerId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                                 "Id",
@@ -254,9 +253,9 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(ushort));
 
-            migrationBuilder.AddFK_filterlists_maintainers_maintainers_MaintainerId();
+            AddFK_filterlists_maintainers_maintainers_MaintainerId(migrationBuilder);
 
-            migrationBuilder.DropFK_filterlists_licenses_LicenseId();
+            DropFK_filterlists_licenses_LicenseId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                                 "Id",
@@ -278,9 +277,9 @@ namespace FilterLists.Api.Migrations
                 oldNullable: true,
                 oldDefaultValue: (byte)5);
 
-            migrationBuilder.AddFK_filterlists_licenses_LicenseId();
+            AddFK_filterlists_licenses_LicenseId(migrationBuilder);
 
-            migrationBuilder.DropFK_filterlists_languages_languages_LanguageId();
+            DropFK_filterlists_languages_languages_LanguageId(migrationBuilder);
 
             migrationBuilder.AlterColumn<short>(
                                 "Id",
@@ -299,12 +298,12 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(ushort));
 
-            migrationBuilder.AddFK_filterlists_languages_languages_LanguageId();
+            AddFK_filterlists_languages_languages_LanguageId(migrationBuilder);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropFK_filterlists_tags_tags_TagId();
+            DropFK_filterlists_tags_tags_TagId(migrationBuilder);
 
             migrationBuilder.AlterColumn<byte>(
                                 "Id",
@@ -323,11 +322,11 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(short));
 
-            migrationBuilder.AddFK_filterlists_tags_tags_TagId();
+            AddFK_filterlists_tags_tags_TagId(migrationBuilder);
 
-            migrationBuilder.DropFK_filterlists_syntaxes_SyntaxId();
+            DropFK_filterlists_syntaxes_SyntaxId(migrationBuilder);
 
-            migrationBuilder.DropFK_software_syntaxes_syntaxes_SyntaxId();
+            DropFK_software_syntaxes_syntaxes_SyntaxId(migrationBuilder);
 
             migrationBuilder.AlterColumn<byte>(
                                 "Id",
@@ -347,7 +346,7 @@ namespace FilterLists.Api.Migrations
                 oldClrType: typeof(short),
                 oldNullable: true);
 
-            migrationBuilder.AddFK_filterlists_syntaxes_SyntaxId();
+            AddFK_filterlists_syntaxes_SyntaxId(migrationBuilder);
 
             migrationBuilder.AlterColumn<byte>(
                 "SyntaxId",
@@ -355,9 +354,9 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(short));
 
-            migrationBuilder.AddFK_software_syntaxes_syntaxes_SyntaxId();
+            AddFK_software_syntaxes_syntaxes_SyntaxId(migrationBuilder);
 
-            migrationBuilder.DropFK_software_syntaxes_software_SoftwareId();
+            DropFK_software_syntaxes_software_SoftwareId(migrationBuilder);
 
             migrationBuilder.AlterColumn<byte>(
                 "SoftwareId",
@@ -376,9 +375,9 @@ namespace FilterLists.Api.Migrations
                             .OldAnnotation("MySql:ValueGenerationStrategy",
                                 MySqlValueGenerationStrategy.IdentityColumn);
 
-            migrationBuilder.AddFK_software_syntaxes_software_SoftwareId();
+            AddFK_software_syntaxes_software_SoftwareId(migrationBuilder);
 
-            migrationBuilder.DropFK_snapshots_rules_rules_RuleId();
+            DropFK_snapshots_rules_rules_RuleId(migrationBuilder);
 
             migrationBuilder.AlterColumn<uint>(
                 "RuleId",
@@ -397,9 +396,9 @@ namespace FilterLists.Api.Migrations
                             .OldAnnotation("MySql:ValueGenerationStrategy",
                                 MySqlValueGenerationStrategy.IdentityColumn);
 
-            migrationBuilder.AddFK_snapshots_rules_rules_RuleId();
+            AddFK_snapshots_rules_rules_RuleId(migrationBuilder);
 
-            migrationBuilder.DropFK_snapshots_rules_snapshots_SnapshotId();
+            DropFK_snapshots_rules_snapshots_SnapshotId(migrationBuilder);
 
             migrationBuilder.AlterColumn<uint>(
                 "SnapshotId",
@@ -418,9 +417,9 @@ namespace FilterLists.Api.Migrations
                             .OldAnnotation("MySql:ValueGenerationStrategy",
                                 MySqlValueGenerationStrategy.IdentityColumn);
 
-            migrationBuilder.AddFK_snapshots_rules_snapshots_SnapshotId();
+            AddFK_snapshots_rules_snapshots_SnapshotId(migrationBuilder);
 
-            migrationBuilder.DropFK_snapshots_filterlists_FilterListId();
+            DropFK_snapshots_filterlists_FilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<ushort>(
                 "FilterListId",
@@ -428,7 +427,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(short));
 
-            migrationBuilder.DropFK_merges_filterlists_UpstreamFilterListId();
+            DropFK_merges_filterlists_UpstreamFilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<ushort>(
                 "UpstreamFilterListId",
@@ -436,7 +435,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(short));
 
-            migrationBuilder.DropFK_merges_filterlists_MergeFilterListId();
+            DropFK_merges_filterlists_MergeFilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<ushort>(
                 "MergeFilterListId",
@@ -444,7 +443,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(short));
 
-            migrationBuilder.DropFK_forks_filterlists_UpstreamFilterListId();
+            DropFK_forks_filterlists_UpstreamFilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<ushort>(
                 "UpstreamFilterListId",
@@ -452,7 +451,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(short));
 
-            migrationBuilder.DropFK_forks_filterlists_ForkFilterListId();
+            DropFK_forks_filterlists_ForkFilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<ushort>(
                 "ForkFilterListId",
@@ -460,7 +459,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(short));
 
-            migrationBuilder.DropFK_filterlists_tags_filterlists_FilterListId();
+            DropFK_filterlists_tags_filterlists_FilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<ushort>(
                 "FilterListId",
@@ -468,7 +467,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(short));
 
-            migrationBuilder.DropFK_filterlists_maintainers_filterlists_FilterListId();
+            DropFK_filterlists_maintainers_filterlists_FilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<ushort>(
                 "FilterListId",
@@ -476,7 +475,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(short));
 
-            migrationBuilder.DropFK_filterlists_languages_filterlists_FilterListId();
+            DropFK_filterlists_languages_filterlists_FilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<ushort>(
                 "FilterListId",
@@ -484,9 +483,9 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(short));
 
-            migrationBuilder.DropFK_dependents_filterlists_DependencyFilterListId();
+            DropFK_dependents_filterlists_DependencyFilterListId(migrationBuilder);
 
-            migrationBuilder.DropFK_dependents_filterlists_DependentFilterListId();
+            DropFK_dependents_filterlists_DependentFilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<ushort>(
                                 "Id",
@@ -499,21 +498,21 @@ namespace FilterLists.Api.Migrations
                             .OldAnnotation("MySql:ValueGenerationStrategy",
                                 MySqlValueGenerationStrategy.IdentityColumn);
 
-            migrationBuilder.AddFK_snapshots_filterlists_FilterListId();
+            AddFK_snapshots_filterlists_FilterListId(migrationBuilder);
 
-            migrationBuilder.AddFK_merges_filterlists_UpstreamFilterListId();
+            AddFK_merges_filterlists_UpstreamFilterListId(migrationBuilder);
 
-            migrationBuilder.AddFK_merges_filterlists_MergeFilterListId();
+            AddFK_merges_filterlists_MergeFilterListId(migrationBuilder);
 
-            migrationBuilder.AddFK_forks_filterlists_UpstreamFilterListId();
+            AddFK_forks_filterlists_UpstreamFilterListId(migrationBuilder);
 
-            migrationBuilder.AddFK_forks_filterlists_ForkFilterListId();
+            AddFK_forks_filterlists_ForkFilterListId(migrationBuilder);
 
-            migrationBuilder.AddFK_filterlists_tags_filterlists_FilterListId();
+            AddFK_filterlists_tags_filterlists_FilterListId(migrationBuilder);
 
-            migrationBuilder.AddFK_filterlists_maintainers_filterlists_FilterListId();
+            AddFK_filterlists_maintainers_filterlists_FilterListId(migrationBuilder);
 
-            migrationBuilder.AddFK_filterlists_languages_filterlists_FilterListId();
+            AddFK_filterlists_languages_filterlists_FilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<ushort>(
                 "DependencyFilterListId",
@@ -521,7 +520,7 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(short));
 
-            migrationBuilder.AddFK_dependents_filterlists_DependencyFilterListId();
+            AddFK_dependents_filterlists_DependencyFilterListId(migrationBuilder);
 
             migrationBuilder.AlterColumn<ushort>(
                 "DependentFilterListId",
@@ -529,9 +528,9 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(short));
 
-            migrationBuilder.AddFK_dependents_filterlists_DependentFilterListId();
+            AddFK_dependents_filterlists_DependentFilterListId(migrationBuilder);
 
-            migrationBuilder.DropFK_filterlists_maintainers_maintainers_MaintainerId();
+            DropFK_filterlists_maintainers_maintainers_MaintainerId(migrationBuilder);
 
             migrationBuilder.AlterColumn<ushort>(
                                 "Id",
@@ -550,9 +549,9 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(short));
 
-            migrationBuilder.AddFK_filterlists_maintainers_maintainers_MaintainerId();
+            AddFK_filterlists_maintainers_maintainers_MaintainerId(migrationBuilder);
 
-            migrationBuilder.DropFK_filterlists_licenses_LicenseId();
+            DropFK_filterlists_licenses_LicenseId(migrationBuilder);
 
             migrationBuilder.AlterColumn<byte>(
                                 "Id",
@@ -574,9 +573,9 @@ namespace FilterLists.Api.Migrations
                 oldNullable: true,
                 oldDefaultValue: (short)5);
 
-            migrationBuilder.AddFK_filterlists_licenses_LicenseId();
+            AddFK_filterlists_licenses_LicenseId(migrationBuilder);
 
-            migrationBuilder.DropFK_filterlists_languages_languages_LanguageId();
+            DropFK_filterlists_languages_languages_LanguageId(migrationBuilder);
 
             migrationBuilder.AlterColumn<ushort>(
                                 "Id",
@@ -595,7 +594,347 @@ namespace FilterLists.Api.Migrations
                 nullable: false,
                 oldClrType: typeof(short));
 
-            migrationBuilder.AddFK_filterlists_languages_languages_LanguageId();
+            AddFK_filterlists_languages_languages_LanguageId(migrationBuilder);
+        }
+
+        private static void DropFK_filterlists_tags_tags_TagId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_filterlists_tags_tags_TagId",
+                "filterlists_tags");
+        }
+
+        private static void AddFK_filterlists_tags_tags_TagId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_filterlists_tags_tags_TagId",
+                "filterlists_tags",
+                "TagId",
+                "tags",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_filterlists_syntaxes_SyntaxId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_filterlists_syntaxes_SyntaxId",
+                "filterlists");
+        }
+
+        private static void AddFK_filterlists_syntaxes_SyntaxId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_filterlists_syntaxes_SyntaxId",
+                "filterlists",
+                "SyntaxId",
+                "syntaxes",
+                principalColumn: "Id");
+        }
+
+        private static void DropFK_software_syntaxes_syntaxes_SyntaxId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_software_syntaxes_syntaxes_SyntaxId",
+                "software_syntaxes");
+        }
+
+        private static void AddFK_software_syntaxes_syntaxes_SyntaxId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_software_syntaxes_syntaxes_SyntaxId",
+                "software_syntaxes",
+                "SyntaxId",
+                "syntaxes",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_software_syntaxes_software_SoftwareId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_software_syntaxes_software_SoftwareId",
+                "software_syntaxes");
+        }
+
+        private static void AddFK_software_syntaxes_software_SoftwareId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_software_syntaxes_software_SoftwareId",
+                "software_syntaxes",
+                "SoftwareId",
+                "software",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_snapshots_rules_rules_RuleId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_snapshots_rules_rules_RuleId",
+                "snapshots_rules");
+        }
+
+        private static void AddFK_snapshots_rules_rules_RuleId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_snapshots_rules_rules_RuleId",
+                "snapshots_rules",
+                "RuleId",
+                "rules",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_snapshots_rules_snapshots_SnapshotId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_snapshots_rules_snapshots_SnapshotId",
+                "snapshots_rules");
+        }
+
+        private static void AddFK_snapshots_rules_snapshots_SnapshotId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_snapshots_rules_snapshots_SnapshotId",
+                "snapshots_rules",
+                "SnapshotId",
+                "snapshots",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_snapshots_filterlists_FilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_snapshots_filterlists_FilterListId",
+                "snapshots");
+        }
+
+        private static void AddFK_snapshots_filterlists_FilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_snapshots_filterlists_FilterListId",
+                "snapshots",
+                "FilterListId",
+                "filterlists",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_merges_filterlists_UpstreamFilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_merges_filterlists_UpstreamFilterListId",
+                "merges");
+        }
+
+        private static void AddFK_merges_filterlists_UpstreamFilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_merges_filterlists_UpstreamFilterListId",
+                "merges",
+                "UpstreamFilterListId",
+                "filterlists",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_merges_filterlists_MergeFilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_merges_filterlists_MergeFilterListId",
+                "merges");
+        }
+
+        private static void AddFK_merges_filterlists_MergeFilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_merges_filterlists_MergeFilterListId",
+                "merges",
+                "MergeFilterListId",
+                "filterlists",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_forks_filterlists_UpstreamFilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_forks_filterlists_UpstreamFilterListId",
+                "forks");
+        }
+
+        private static void AddFK_forks_filterlists_UpstreamFilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_forks_filterlists_UpstreamFilterListId",
+                "forks",
+                "UpstreamFilterListId",
+                "filterlists",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_forks_filterlists_ForkFilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_forks_filterlists_ForkFilterListId",
+                "forks");
+        }
+
+        private static void AddFK_forks_filterlists_ForkFilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_forks_filterlists_ForkFilterListId",
+                "forks",
+                "ForkFilterListId",
+                "filterlists",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_filterlists_tags_filterlists_FilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_filterlists_tags_filterlists_FilterListId",
+                "filterlists_tags");
+        }
+
+        private static void AddFK_filterlists_tags_filterlists_FilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_filterlists_tags_filterlists_FilterListId",
+                "filterlists_tags",
+                "FilterListId",
+                "filterlists",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_filterlists_maintainers_filterlists_FilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_filterlists_maintainers_filterlists_FilterListId",
+                "filterlists_maintainers");
+        }
+
+        private static void AddFK_filterlists_maintainers_filterlists_FilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_filterlists_maintainers_filterlists_FilterListId",
+                "filterlists_maintainers",
+                "FilterListId",
+                "filterlists",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_filterlists_languages_filterlists_FilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_filterlists_languages_filterlists_FilterListId",
+                "filterlists_languages");
+        }
+
+        private static void AddFK_filterlists_languages_filterlists_FilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_filterlists_languages_filterlists_FilterListId",
+                "filterlists_languages",
+                "FilterListId",
+                "filterlists",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_dependents_filterlists_DependencyFilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_dependents_filterlists_DependencyFilterListId",
+                "dependents");
+        }
+
+        private static void AddFK_dependents_filterlists_DependencyFilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_dependents_filterlists_DependencyFilterListId",
+                "dependents",
+                "DependencyFilterListId",
+                "filterlists",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_dependents_filterlists_DependentFilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_dependents_filterlists_DependentFilterListId",
+                "dependents");
+        }
+
+        private static void AddFK_dependents_filterlists_DependentFilterListId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_dependents_filterlists_DependentFilterListId",
+                "dependents",
+                "DependentFilterListId",
+                "filterlists",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_filterlists_maintainers_maintainers_MaintainerId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_filterlists_maintainers_maintainers_MaintainerId",
+                "filterlists_maintainers");
+        }
+
+        private static void AddFK_filterlists_maintainers_maintainers_MaintainerId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_filterlists_maintainers_maintainers_MaintainerId",
+                "filterlists_maintainers",
+                "MaintainerId",
+                "maintainers",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+        }
+
+        private static void DropFK_filterlists_licenses_LicenseId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_filterlists_licenses_LicenseId",
+                "filterlists");
+        }
+
+        private static void AddFK_filterlists_licenses_LicenseId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_filterlists_licenses_LicenseId",
+                "filterlists",
+                "LicenseId",
+                "licenses",
+                principalColumn: "Id");
+        }
+
+        private static void DropFK_filterlists_languages_languages_LanguageId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropForeignKey(
+                "FK_filterlists_languages_languages_LanguageId",
+                "filterlists_languages");
+        }
+
+        private static void AddFK_filterlists_languages_languages_LanguageId(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.AddForeignKey(
+                "FK_filterlists_languages_languages_LanguageId",
+                "filterlists_languages",
+                "LanguageId",
+                "languages",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Restrict);
         }
     }
 }
