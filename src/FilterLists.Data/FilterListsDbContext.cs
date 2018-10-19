@@ -1,5 +1,4 @@
-﻿using System;
-using FilterLists.Data.Entities;
+﻿using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
 using FilterLists.Data.EntityTypeConfigurations;
 using FilterLists.Data.EntityTypeConfigurations.Junctions;
@@ -11,7 +10,6 @@ namespace FilterLists.Data
     {
         public FilterListsDbContext(DbContextOptions options) : base(options)
         {
-
         }
 
         public DbSet<FilterList> FilterLists { get; set; }
@@ -35,7 +33,6 @@ namespace FilterLists.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            Database.SetCommandTimeout((int)TimeSpan.FromMinutes(5).TotalSeconds);
             base.OnModelCreating(modelBuilder);
             ApplyConfigurations(modelBuilder);
         }
