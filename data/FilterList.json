@@ -7,7 +7,6 @@
     "name": "280 Blocker",
     "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLScNeZhFrFZt9GhIVGdThGz7oyepcNRKuOi5PJDnsC-awxTeOQ/viewform",
     "syntaxId": 3,
-    "updatedDate": "2018-10-10T08:45:09",
     "viewUrl": "https://280blocker.net/files/280blocker_adblock.txt"
   },
   {
@@ -42,7 +41,9 @@
     "publishedDate": "2016-11-19T20:26:13",
     "syntaxId": 1,
     "updatedDate": "2016-12-29T17:46:08",
-    "viewUrl": "https://raw.githubusercontent.com/michaeltrimm/hosts-blocking/master/_hosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/michaeltrimm/hosts-blocking/master/_hosts.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/michaeltrimm/hosts-blocking/master/_hosts.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/michaeltrimm/hosts-blocking/master/_hosts.txt"
   },
   {
     "id": 5,
@@ -67,7 +68,9 @@
     "publishedDate": "2014-08-23T07:30:22",
     "syntaxId": 3,
     "updatedDate": "2017-03-04T08:46:00",
-    "viewUrl": "https://raw.githubusercontent.com/mayve/private-adblock-filters/master/Adblock_List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/mayve/private-adblock-filters/master/Adblock_List.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/mayve/private-adblock-filters/master/Adblock_List.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/mayve/private-adblock-filters/master/Adblock_List.txt"
   },
   {
     "id": 7,
@@ -171,7 +174,9 @@
     "name": "List-KR Unbreak",
     "submissionUrl": "https://list-kr.github.io/form.html",
     "syntaxId": 6,
-    "viewUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/unbreak.txt"
+    "viewUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/unbreak.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/SlowMemory/List-KR/master/unbreak.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/SlowMemory/List-KR/master/unbreak.txt"
   },
   {
     "id": 16,
@@ -182,7 +187,9 @@
     "publishedDate": "2016-05-13T13:02:19",
     "syntaxId": 6,
     "updatedDate": "2016-06-15T16:16:26",
-    "viewUrl": "https://raw.githubusercontent.com/slang1998/List-KR/master/filter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/slang1998/List-KR/master/filter.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/slang1998/List-KR/master/filter.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/slang1998/List-KR/master/filter.txt"
   },
   {
     "id": 17,
@@ -196,7 +203,8 @@
     "syntaxId": 1,
     "updatedDate": "2018-10-03T23:06:19",
     "viewUrl": "http://winhelp2002.mvps.org/hosts.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/mvps.org/hosts"
+    "viewUrlMirror1": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/mvps.org/hosts",
+    "viewUrlMirror2": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/data/mvps.org/hosts"
   },
   {
     "id": 18,
@@ -209,7 +217,9 @@
     "publishedDate": "2014-06-16T23:37:58",
     "syntaxId": 3,
     "updatedDate": "2018-09-01T19:14:39",
-    "viewUrl": "https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt"
+    "viewUrl": "https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/taylr/linkedinsanity/master/linkedinsanity.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/taylr/linkedinsanity/master/linkedinsanity.txt"
   },
   {
     "id": 19,
@@ -222,7 +232,9 @@
     "publishedDate": "2017-09-17T20:18:51",
     "syntaxId": 3,
     "updatedDate": "2018-10-05T15:46:39",
-    "viewUrl": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
+    "viewUrl": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
   },
   {
     "id": 20,
@@ -237,7 +249,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-10-09T22:01:04",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianList.txt"
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/DandelionSprout/adfilt/master/NorwegianList.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/DandelionSprout/adfilt/master/NorwegianList.txt"
   },
   {
     "id": 21,
@@ -316,7 +329,9 @@
     "publishedDate": "2015-06-15T06:06:48",
     "syntaxId": 4,
     "updatedDate": "2018-06-29T10:10:37",
-    "viewUrl": "https://raw.githubusercontent.com/metaphoricgiraffe/tracking-filters/master/trackingfilters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/metaphoricgiraffe/tracking-filters/master/trackingfilters.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/metaphoricgiraffe/tracking-filters/master/trackingfilters.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/metaphoricgiraffe/tracking-filters/master/trackingfilters.txt"
   },
   {
     "id": 28,
@@ -330,7 +345,9 @@
     "publishedDate": "2012-11-18T20:23:53",
     "syntaxId": 3,
     "updatedDate": "2018-05-28T00:00:00",
-    "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/quiet.txt"
+    "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/quiet.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/liamja/Prebake/master/quiet.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/liamja/Prebake/master/quiet.txt"
   },
   {
     "id": 29,
@@ -344,7 +361,9 @@
     "publishedDate": "2012-11-18T20:23:53",
     "syntaxId": 3,
     "updatedDate": "2018-05-28T14:01:13",
-    "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/obtrusive.txt"
+    "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/obtrusive.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/liamja/Prebake/master/obtrusive.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/liamja/Prebake/master/obtrusive.txt"
   },
   {
     "id": 30,
@@ -359,7 +378,9 @@
     "submissionUrl": "https://polishannoyancefilters.netlify.com/issues",
     "syntaxId": 3,
     "updatedDate": "2018-10-04T00:02:17",
-    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt"
+    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt"
   },
   {
     "id": 31,
@@ -367,7 +388,7 @@
     "descriptionSourceUrl": "http://niecko.pl/adblock/",
     "homeUrl": "http://niecko.pl/adblock/",
     "licenseId": 5,
-    "name": "PLgeneral",
+    "name": "PLgeneral (Obsolete)",
     "syntaxId": 3,
     "updatedDate": "2011-12-10T00:00:00",
     "viewUrl": "https://www.niecko.pl/adblock/adblock.txt"
@@ -394,7 +415,9 @@
     "name": "Overlay Blocker",
     "syntaxId": 3,
     "updatedDate": "2015-01-21T00:00:00",
-    "viewUrl": "https://raw.githubusercontent.com/LordBadmintonofYorkshire/Overlay-Blocker/master/blocklist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/LordBadmintonofYorkshire/Overlay-Blocker/master/blocklist.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/LordBadmintonofYorkshire/Overlay-Blocker/master/blocklist.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/LordBadmintonofYorkshire/Overlay-Blocker/master/blocklist.txt"
   },
   {
     "id": 34,
@@ -416,7 +439,9 @@
     "licenseId": 4,
     "name": "NoTrack Blocklist",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt"
+    "viewUrl": "https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/quidsup/notrack/master/trackers.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/quidsup/notrack/master/trackers.txt"
   },
   {
     "id": 36,
@@ -427,7 +452,9 @@
     "licenseId": 2,
     "name": "Nopelist",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/genediazjr/nopelist/master/nopelist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/genediazjr/nopelist/master/nopelist.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/genediazjr/nopelist/master/nopelist.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/genediazjr/nopelist/master/nopelist.txt"
   },
   {
     "id": 37,
@@ -451,7 +478,9 @@
     "publishedDate": "2016-11-06T14:22:56",
     "syntaxId": 3,
     "updatedDate": "2018-04-12T19:48:34",
-    "viewUrl": "https://raw.githubusercontent.com/Rpsl/adblock-leadgenerator-list/master/list/list.txt"
+    "viewUrl": "https://raw.githubusercontent.com/Rpsl/adblock-leadgenerator-list/master/list/list.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/Rpsl/adblock-leadgenerator-list/master/list/list.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/Rpsl/adblock-leadgenerator-list/master/list/list.txt"
   },
   {
     "id": 39,
@@ -590,7 +619,9 @@
     "publishedDate": "2016-06-29T08:27:06",
     "syntaxId": 3,
     "updatedDate": "2018-10-10T13:38:49",
-    "viewUrl": "https://raw.githubusercontent.com/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt"
   },
   {
     "id": 51,
@@ -603,7 +634,9 @@
     "publishedDate": "2012-04-25T07:10:10",
     "syntaxId": 3,
     "updatedDate": "2018-05-01T09:50:35",
-    "viewUrl": "https://raw.githubusercontent.com/kargig/greek-adblockplus-filter/master/void-gr-filters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kargig/greek-adblockplus-filter/master/void-gr-filters.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/kargig/greek-adblockplus-filter/master/void-gr-filters.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/kargig/greek-adblockplus-filter/master/void-gr-filters.txt"
   },
   {
     "id": 52,
@@ -625,7 +658,8 @@
     "syntaxId": 1,
     "updatedDate": "2018-10-04T03:04:09",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist%20(Hosts).txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/gmbkslist%20(Hosts).txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/gmbkslist%20(Hosts).txt",
+    "viewUrlMirror2": "https://gitcdn.xyz/repo/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist%20(Hosts).txt"
   },
   {
     "id": 54,
@@ -692,7 +726,9 @@
     "publishedDate": "2014-11-18T06:06:09",
     "syntaxId": 3,
     "updatedDate": "2018-09-15T14:39:15",
-    "viewUrl": "https://raw.githubusercontent.com/gfmaster/adblock-korea-contrib/master/filter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/gfmaster/adblock-korea-contrib/master/filter.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/gfmaster/adblock-korea-contrib/master/filter.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/gfmaster/adblock-korea-contrib/master/filter.txt"
   },
   {
     "id": 60,
@@ -706,7 +742,9 @@
     "submissionUrl": "https://azet12.github.io/KAD/informacje.html#form1-35",
     "syntaxId": 1,
     "updatedDate": "2018-10-09T17:21:00",
-    "viewUrl": "https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/azet12/KADhosts/master/KADhosts.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/azet12/KADhosts/master/KADhosts.txt"
   },
   {
     "id": 61,
@@ -721,7 +759,9 @@
     "submissionUrl": "https://azet12.github.io/KAD/informacje.html#form1-35",
     "syntaxId": 3,
     "updatedDate": "2018-09-30T03:09:51",
-    "viewUrl": "https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt"
+    "viewUrl": "https://raw.githubusercontent.com/azet12/KAD/master/KAD.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/azet12/KAD/master/KAD.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/azet12/KAD/master/KAD.txt"
   },
   {
     "id": 62,
@@ -750,7 +790,9 @@
     "name": "Jansal's Hosts Light",
     "syntaxId": 1,
     "updatedDate": "2016-09-17T00:00:00",
-    "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hostslt"
+    "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hostslt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/lewisje/jansal/master/adblock/hostslt",
+    "viewUrlMirror2": "https://gitcdn.link/repo/lewisje/jansal/master/adblock/hostslt"
   },
   {
     "id": 65,
@@ -759,7 +801,9 @@
     "name": "Jansal's Hosts",
     "syntaxId": 1,
     "updatedDate": "2016-09-17T00:00:00",
-    "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hosts",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/lewisje/jansal/master/adblock/hosts",
+    "viewUrlMirror2": "https://gitcdn.link/repo/lewisje/jansal/master/adblock/hosts"
   },
   {
     "id": 66,
@@ -780,7 +824,9 @@
     "licenseId": 19,
     "name": "Piperun's iplogger filter",
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/piperun/iploggerfilter/master/filterlist"
+    "viewUrl": "https://raw.githubusercontent.com/piperun/iploggerfilter/master/filterlist",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/piperun/iploggerfilter/master/filterlist",
+    "viewUrlMirror2": "https://gitcdn.link/repo/piperun/iploggerfilter/master/filterlist"
   },
   {
     "id": 68,
@@ -791,7 +837,9 @@
     "licenseId": 5,
     "name": "Ilyakatz's Additional Filters for Adblock",
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/ilyakatz/adblock_filters/master/inpage_popups.txt"
+    "viewUrl": "https://raw.githubusercontent.com/ilyakatz/adblock_filters/master/inpage_popups.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/ilyakatz/adblock_filters/master/inpage_popups.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/ilyakatz/adblock_filters/master/inpage_popups.txt"
   },
   {
     "id": 69,
@@ -814,7 +862,9 @@
     "name": "I'm OK with Cookies",
     "syntaxId": 3,
     "updatedDate": "2018-07-05T00:00:00",
-    "viewUrl": "https://raw.githubusercontent.com/Rudloff/adblock-imokwithcookies/master/filters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/Rudloff/adblock-imokwithcookies/master/filters.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/Rudloff/adblock-imokwithcookies/master/filters.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/Rudloff/adblock-imokwithcookies/master/filters.txt"
   },
   {
     "id": 71,
@@ -838,7 +888,9 @@
     "name": "hufilter",
     "syntaxId": 3,
     "updatedDate": "2018-10-04T04:47:10",
-    "viewUrl": "https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/szpeter80/hufilter/master/hufilter.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/szpeter80/hufilter/master/hufilter.txt"
   },
   {
     "id": 73,
@@ -906,7 +958,9 @@
     "publishedDate": "2016-03-13T06:49:47",
     "syntaxId": 1,
     "updatedDate": "2018-10-10T02:02:14",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/gambling-porn/hosts",
+    "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/gambling-porn/hosts"
   },
   {
     "id": 79,
@@ -918,7 +972,9 @@
     "publishedDate": "2016-03-13T06:49:47",
     "syntaxId": 1,
     "updatedDate": "2018-10-10T02:02:14",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/gambling/host",
+    "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/gambling/host"
   },
   {
     "id": 80,
@@ -929,7 +985,9 @@
     "name": "Unified Hosts",
     "syntaxId": 1,
     "updatedDate": "2018-10-04T06:10:46",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/hosts",
+    "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/hosts"
   },
   {
     "id": 81,
@@ -941,7 +999,8 @@
     "name": "UncheckyAds",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/UncheckyAds/hosts"
+    "viewUrlMirror1": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/UncheckyAds/hosts",
+    "viewUrlMirror2": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/data/UncheckyAds/hosts"
   },
   {
     "id": 82,
@@ -952,7 +1011,9 @@
     "name": "uBO-Personal-Filters",
     "syntaxId": 4,
     "updatedDate": "2018-10-04T06:17:12",
-    "viewUrl": "https://raw.githubusercontent.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt"
+    "viewUrl": "https://raw.githubusercontent.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlock-user/uBO-Personal-Filters/master/uPF.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt"
   },
   {
     "id": 83,
@@ -967,7 +1028,7 @@
     "updatedDate": "2018-10-09T01:28:00",
     "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt",
     "viewUrlMirror1": "https://raw.githubusercontent.com/jspenguin2017/uBlockProtector/master/uBlockProtectorList.txt",
-    "viewUrlMirror2": "https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt"
+    "viewUrlMirror2": "https://gitcdn.xyz/repo/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt"
   },
   {
     "id": 84,
@@ -982,7 +1043,9 @@
     "publishedDate": "2016-08-07T20:10:32",
     "syntaxId": 17,
     "updatedDate": "2018-10-09T15:45:47",
-    "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt"
+    "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt"
   },
   {
     "id": 85,
@@ -995,7 +1058,9 @@
     "publishedDate": "2018-06-08T17:32:45",
     "syntaxId": 4,
     "updatedDate": "2018-06-08T17:32:45",
-    "viewUrl": "https://raw.githubusercontent.com/IDKwhattoputhere/uBlock-Filters-Plus/master/uBlock-Filters-Plus.txt"
+    "viewUrl": "https://raw.githubusercontent.com/IDKwhattoputhere/uBlock-Filters-Plus/master/uBlock-Filters-Plus.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/IDKwhattoputhere/uBlock-Filters-Plus/master/uBlock-Filters-Plus.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/IDKwhattoputhere/uBlock-Filters-Plus/master/uBlock-Filters-Plus.txt"
   },
   {
     "id": 86,
@@ -1008,7 +1073,9 @@
     "publishedDate": "2016-10-18T15:20:50",
     "syntaxId": 4,
     "updatedDate": "2017-11-28T14:12:38",
-    "viewUrl": "https://raw.githubusercontent.com/byaka/ublock-antiskimming-list/master/build/data.txt"
+    "viewUrl": "https://raw.githubusercontent.com/byaka/ublock-antiskimming-list/master/build/data.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/byaka/ublock-antiskimming-list/master/build/data.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/byaka/ublock-antiskimming-list/master/build/data.txt"
   },
   {
     "id": 87,
@@ -1020,7 +1087,9 @@
     "name": "uAssets Unbreak",
     "syntaxId": 4,
     "updatedDate": "2018-10-04T06:39:10",
-    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt"
+    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlockOrigin/uAssets/master/filters/unbreak.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/unbreak.txt"
   },
   {
     "id": 88,
@@ -1031,7 +1100,9 @@
     "name": "uAssets Privacy",
     "syntaxId": 4,
     "updatedDate": "2018-09-30T05:07:52",
-    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt"
+    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlockOrigin/uAssets/master/filters/privacy.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/privacy.txt"
   },
   {
     "id": 89,
@@ -1043,7 +1114,9 @@
     "name": "uAssets Filters",
     "syntaxId": 4,
     "updatedDate": "2018-10-04T06:48:12",
-    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlockOrigin/uAssets/master/filters/filters.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/filters.txt"
   },
   {
     "id": 90,
@@ -1054,7 +1127,9 @@
     "licenseId": 4,
     "name": "uAssets Experimental",
     "syntaxId": 4,
-    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt"
+    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlockOrigin/uAssets/master/filters/experimental.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/experimental.txt"
   },
   {
     "id": 91,
@@ -1066,7 +1141,9 @@
     "name": "uAssets Badware",
     "syntaxId": 4,
     "updatedDate": "2018-09-15T19:23:14",
-    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt"
+    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlockOrigin/uAssets/master/filters/badware.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/badware.txt"
   },
   {
     "id": 93,
@@ -1077,7 +1154,9 @@
     "name": "Unified Hosts + Gambling + Porn + Social",
     "syntaxId": 1,
     "updatedDate": "2018-10-04T07:02:24",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts",
+    "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts"
   },
   {
     "id": 94,
@@ -1099,7 +1178,9 @@
     "name": "Unified Hosts + Gambling + Social",
     "syntaxId": 1,
     "updatedDate": "2018-10-04T07:12:53",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/gambling-social/hosts",
+    "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/gambling-social/hosts"
   },
   {
     "id": 96,
@@ -1110,7 +1191,9 @@
     "name": "Unified Hosts + Porn + Social",
     "syntaxId": 1,
     "updatedDate": "2018-10-04T07:19:38",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-social/hosts",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/porn-social/hosts",
+    "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/porn-social/hosts"
   },
   {
     "id": 97,
@@ -1147,7 +1230,9 @@
     "name": "YousList",
     "syntaxId": 3,
     "updatedDate": "2018-09-30T06:37:52",
-    "viewUrl": "https://raw.githubusercontent.com/yous/YousList/master/youslist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/yous/YousList/master/youslist.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/yous/YousList/master/youslist.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/yous/YousList/master/youslist.txt"
   },
   {
     "id": 100,
@@ -1158,7 +1243,9 @@
     "name": "Wiltteri Reborn",
     "syntaxId": 3,
     "updatedDate": "2015-05-16T00:00:00",
-    "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt"
+    "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/wiltteri/subscriptions/master/wiltteri-reborn.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/wiltteri/subscriptions/master/wiltteri-reborn.txt"
   },
   {
     "id": 101,
@@ -1169,7 +1256,9 @@
     "name": "Wiltteri",
     "syntaxId": 3,
     "updatedDate": "2015-05-16T00:00:00",
-    "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt"
+    "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/wiltteri/subscriptions/master/wiltteri.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/wiltteri/subscriptions/master/wiltteri.txt"
   },
   {
     "id": 102,
@@ -1182,7 +1271,9 @@
     "name": "Web Annoyances Ultralist",
     "syntaxId": 4,
     "updatedDate": "2018-10-04T08:39:19",
-    "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/yourduskquibbles/webannoyances/master/ultralist.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/yourduskquibbles/webannoyances/master/ultralist.txt"
   },
   {
     "id": 103,
@@ -2484,7 +2575,7 @@
     "homeUrl": "https://www.facebook.com/adblockpl",
     "issuesUrl": "https://github.com/adblockpolska/Adblock_PL_List/issues",
     "licenseId": 4,
-    "name": "Adblock Polska",
+    "name": "Adblock Polska (Obsolete)",
     "publishedDate": "2014-04-21T00:24:26",
     "syntaxId": 3,
     "updatedDate": "2014-11-23T01:09:26",
@@ -3043,7 +3134,7 @@
     "emailAddress": "fanboyadblock@googlegroups.com",
     "homeUrl": "https://fanboy.co.nz/",
     "licenseId": 16,
-    "name": "Fanboy's Polish",
+    "name": "Fanboy's Polish (Obsolete)",
     "syntaxId": 3,
     "updatedDate": "2017-02-19T00:00:00",
     "viewUrl": "https://fanboy.co.nz/fanboy-polish.txt"
@@ -9376,7 +9467,7 @@
   },
   {
     "id": 823,
-    "description": "uBlock/Adblock filters to block known NSA malware servers from Shadow Brokers dump.",
+    "description": "uBlock/Adblock filters to block known NSA malware servers from Shadow Brokers dump.",
     "descriptionSourceUrl": "https://github.com/gasull/adblock-nsa#adblock-the-nsa",
     "homeUrl": "https://github.com/gasull/adblock-nsa",
     "issuesUrl": "https://github.com/gasull/adblock-nsa/issues",
@@ -9553,7 +9644,7 @@
   },
   {
     "id": 837,
-    "description": "SyndicationBlock is an AdBlock filter list to block content syndicators.",
+    "description": "SyndicationBlock is an AdBlock filter list to block content syndicators.",
     "descriptionSourceUrl": "https://github.com/duskwuff/syndicationblock#syndicationblock",
     "emailAddress": "dusk@woofle.net",
     "homeUrl": "https://github.com/duskwuff/syndicationblock",
