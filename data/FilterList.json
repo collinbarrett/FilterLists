@@ -250,8 +250,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-10-09T22:01:04",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianList.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/DandelionSprout/adfilt/master/NorwegianList.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/DandelionSprout/adfilt/master/NorwegianList.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianList.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/NorwegianList.txt"
   },
   {
     "id": 21,
@@ -890,8 +890,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-10-04T04:47:10",
     "viewUrl": "https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/szpeter80/hufilter/master/hufilter.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/szpeter80/hufilter/master/hufilter.txt"
+    "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-hufilter.git/blob_plain/refs/heads/master:/hufilter.txt"
+    "viewUrlMirror2": "https://gitcdn.xyz/repo/szpeter80/hufilter/master/hufilter.txt"
   },
   {
     "id": 73,
@@ -3406,7 +3406,8 @@
     "name": "Dan Pollock's Hosts",
     "syntaxId": 1,
     "updatedDate": "2018-10-10T10:31:10",
-    "viewUrl": "https://someonewhocares.org/hosts/zero/hosts"
+    "viewUrl": "https://someonewhocares.org/hosts/zero/hosts",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/someonewhocares.org/hosts"
   },
   {
     "id": 277,
@@ -4021,7 +4022,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-09-30T03:39:52",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/stayingonbrowser/Staying%20On%20The%20Phone%20Browser"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/stayingonbrowser/Staying%20On%20The%20Phone%20Browser",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser"
   },
   {
     "id": 328,
@@ -4036,7 +4038,8 @@
     "syntaxId": 4,
     "updatedDate": "2018-09-21T22:29:19",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExtensionsForUBO%26Nano.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExtensionsForUBO&Nano.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExtensionsForUBO&Nano.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/masterNorwegianExtensionsForUBO&Nano.txt"
   },
   {
     "id": 329,
@@ -4765,7 +4768,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-09-30T08:52:54",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Username%20Hider%20for%20Compilation%20Creators.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Username%20Hider%20for%20Compilation%20Creators.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Username%20Hider%20for%20Compilation%20Creators.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Username%20Hider%20for%20Compilation%20Creators.txt"
   },
   {
     "id": 386,
@@ -4779,7 +4783,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-09-30T08:54:51",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/S%C3%A1megiella-interneahttalisttu.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/S%C3%A1megiella-interneahttalisttu.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/S%C3%A1megiella-interneahttalisttu.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/S%C3%A1megiella-interneahttalisttu.txt"
   },
   {
     "id": 388,
@@ -4792,7 +4797,8 @@
     "name": "Dandelion Sprout's Norwegian Filters for Tidier Websites (Internet Explorer)",
     "syntaxId": 10,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl"
   },
   {
     "id": 389,
@@ -4806,7 +4812,8 @@
     "syntaxId": 2,
     "updatedDate": "2018-10-10T21:17:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/List%20for%20Chrome%20Personal%20Blocklist",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/List%20for%20Chrome%20Personal%20Blocklist"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/List%20for%20Chrome%20Personal%20Blocklist",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/List%20for%20Chrome%20Personal%20Blocklist"
   },
   {
     "id": 390,
@@ -4835,7 +4842,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-10-08T11:33:19",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/IHateOverpromotedGames.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/IHateOverpromotedGames.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/IHateOverpromotedGames.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/IHateOverpromotedGames.txt"
   },
   {
     "id": 392,
@@ -4850,7 +4858,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-09-30T09:13:50",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/BrowseWebsitesWithoutLoggingIn.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/BrowseWebsitesWithoutLoggingIn.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/BrowseWebsitesWithoutLoggingIn.txt"
   },
   {
     "id": 393,
@@ -4864,7 +4873,8 @@
     "publishedDate": "2018-05-15T00:00:00",
     "syntaxId": 11,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json"
   },
   {
     "id": 394,
@@ -4932,7 +4942,8 @@
     "publishedDate": "2017-01-05T07:07:23",
     "syntaxId": 3,
     "updatedDate": "2018-10-10T16:26:21",
-    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Filter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Filter.txt",
+    "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/Frellwits-Swedish-Filter.txt"
   },
   {
     "id": 400,
@@ -4974,7 +4985,8 @@
     "licenseId": 4,
     "name": "I Don't Care About Emojis",
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/emoji-filter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/emoji-filter.txt",
+    "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/emoji-filter.txt"
   },
   {
     "id": 405,
@@ -5007,7 +5019,7 @@
     "homeUrl": "https://gist.github.com/BBcan177",
     "licenseId": 5,
     "name": "pfBlockerNG - MS-3",
-    "syntaxId": 2,
+    "syntaxId": 9,
     "viewUrl": "https://gist.githubusercontent.com/BBcan177/d7105c242f17f4498f81/raw/201968fa11b1f409d408a129a0774ffedb1560e2/MS-3"
   },
   {
@@ -5032,14 +5044,14 @@
     "homeUrl": "https://gist.github.com/BBcan177",
     "licenseId": 5,
     "name": "pfBlockerNG - MS-1",
-    "syntaxId": 2,
+    "syntaxId": 9,
     "viewUrl": "https://gist.githubusercontent.com/BBcan177/bf29d47ea04391cb3eb0/raw/7290e0681bcd07415420b5c80a253652fd13f840/MS-1"
   },
   {
     "id": 416,
     "homeUrl": "https://gist.github.com/BBcan177",
     "licenseId": 5,
-    "name": "EasyList DE Domains",
+    "name": "EasyList Germany (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://gist.githubusercontent.com/BBcan177/2a9fc2548c3c5a5e2dc86e580b5795d2/raw/2f5c90ffb3bd02199ace1b16a0bd9f53b29f0879/EasyList_DE"
   },
@@ -5198,7 +5210,8 @@
     "syntaxId": 1,
     "updatedDate": "2018-09-30T15:15:50",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/AdawayHosts"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/AdawayHosts",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts"
   },
   {
     "id": 431,
@@ -5212,7 +5225,8 @@
     "syntaxId": 4,
     "updatedDate": "2018-10-04T15:09:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Website%20Stretcher.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout%27s%20Website%20Stretcher.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout%27s%20Website%20Stretcher.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Dandelion%20Sprout%27s%20Website%20Stretcher.txt"
   },
   {
     "id": 432,
@@ -5226,7 +5240,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-10-04T15:12:08",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-F%D1%96%D0%9C%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-F%D1%96%D0%9C%20List.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-F%D1%96%D0%9C%20List.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Anti-F%D1%96%D0%9C%20List.txt"
   },
   {
     "id": 433,
@@ -5240,7 +5255,8 @@
     "syntaxId": 4,
     "updatedDate": "2018-10-11T03:54:09",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-IMDB%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-IMDB%20List.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-IMDB%20List.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Anti-IMDB%20List.txt"
   },
   {
     "id": 434,
@@ -5255,7 +5271,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-09-30T15:23:50",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/StopAutoplayOnYouTube.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/StopAutoplayOnYouTube.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/StopAutoplayOnYouTube.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/StopAutoplayOnYouTube.txt"
   },
   {
     "id": 435,
@@ -5281,7 +5298,8 @@
     "publishedDate": "2018-07-15T07:17:10",
     "syntaxId": 3,
     "updatedDate": "2018-10-04T15:19:16",
-    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/i-dont-want-your-app.txt"
+    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/i-dont-want-your-app.txt",
+    "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/i-dont-want-your-app.txt"
   },
   {
     "id": 437,
@@ -6004,7 +6022,8 @@
     "name": "Adblock List Template (Beginner)",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt"
   },
   {
     "id": 505,
@@ -6017,7 +6036,8 @@
     "name": "Adblock List Template (Novice)",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt"
   },
   {
     "id": 506,
@@ -7207,7 +7227,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-09-29T20:27:52",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Elsagate%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-Elsagate%20List.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-Elsagate%20List.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Anti-Elsagate%20List.txt"
   },
   {
     "id": 604,
@@ -7381,7 +7402,8 @@
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
     "syntaxId": 1,
     "updatedDate": "2018-10-10T18:30:09",
-    "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext"
+    "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/yoyo.org/hosts"
   },
   {
     "id": 618,
@@ -7880,7 +7902,8 @@
     "syntaxId": 18,
     "updatedDate": "2018-09-30T04:23:50",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules"
   },
   {
     "id": 671,
@@ -7994,7 +8017,8 @@
     "syntaxId": 2,
     "updatedDate": "2018-09-30T04:33:48",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt"
   },
   {
     "id": 681,
@@ -9310,7 +9334,8 @@
     "syntaxId": 3,
     "updatedDate": "2011-05-25T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Liste%20DZ.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Liste%20DZ.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Liste%20DZ.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/AncientLibrary/Liste%20DZ.txt"
   },
   {
     "id": 803,
@@ -9323,7 +9348,8 @@
     "syntaxId": 3,
     "updatedDate": "2014-03-11T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Snaevar87's%20Icelandic%20filter.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Snaevar87%27s%20Icelandic%20filter.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Snaevar87%27s%20Icelandic%20filter.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/AncientLibrary/Snaevar87%27s%20Icelandic%20filter.txt"
   },
   {
     "id": 804,
@@ -9336,7 +9362,8 @@
     "syntaxId": 3,
     "updatedDate": "2010-07-30T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/TamilFriends%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/TamilFriends%20List.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/TamilFriends%20List.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/AncientLibrary/TamilFriends%20List.txt"
   },
   {
     "id": 805,
@@ -9449,7 +9476,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-10-02T19:32:03",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/gmbkslist.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/gmbkslist.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/AncientLibrary/gmbkslist.txt"
   },
   {
     "id": 815,
@@ -9459,7 +9487,8 @@
     "syntaxId": 3,
     "updatedDate": "2012-09-16T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Adblocking%20Open%20Filter%20JP",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Adblocking%20Open%20Filter%20JP"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Adblocking%20Open%20Filter%20JP",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/AncientLibrary/AncientLibrary/gmbkslist.txt"
   },
   {
     "id": 816,
@@ -9474,7 +9503,8 @@
     "syntaxId": 4,
     "updatedDate": "2018-10-10T03:29:09",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt"
   },
   {
     "id": 817,
@@ -9487,7 +9517,8 @@
     "publishedDate": "2018-09-23T17:51:40",
     "syntaxId": 1,
     "updatedDate": "2018-10-09T11:06:31",
-    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt"
+    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt",
+    "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/Frellwits-Swedish-Hosts-File.txt"
   },
   {
     "id": 818,
@@ -9512,7 +9543,8 @@
     "publishedDate": "2018-10-05T12:48:26",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeEvenMorePureVideoExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/YouTubeEvenMorePureVideoExperience.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/YouTubeEvenMorePureVideoExperience.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/YouTubeEvenMorePureVideoExperience.txt"
   },
   {
     "id": 820,
@@ -9864,7 +9896,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-10-09T15:47:21",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchPureViewingExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TwitchPureViewingExperience.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TwitchPureViewingExperience.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/TwitchPureViewingExperience.txt"
   },
   {
     "id": 849,
@@ -9879,7 +9912,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-10-09T18:46:47",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ListAgainstFakeOrInoptimalAdblockers.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/ListAgainstFakeOrInoptimalAdblockers.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/ListAgainstFakeOrInoptimalAdblockers.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/ListAgainstFakeOrInoptimalAdblockers.txt"
   },
   {
     "id": 850,
@@ -9895,7 +9929,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-10-09T19:34:49",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAbusePorn.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAbusePorn.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAbusePorn.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/AntiAbusePorn.txt"
   },
   {
     "id": 851,
@@ -9909,7 +9944,8 @@
     "name": "Wikia: Pure Browsing Experience",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WikiaPureBrowsingExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/WikiaPureBrowsingExperience.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/WikiaPureBrowsingExperience.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/WikiaPureBrowsingExperience.txt"
   },
   {
     "id": 852,
@@ -9923,7 +9959,8 @@
     "name": "YouTube: Yet Even More Pure Video Experience",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeYetEvenMorePureVideoExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/YouTubeYetEvenMorePureVideoExperience.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/YouTubeYetEvenMorePureVideoExperience.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/YouTubeYetEvenMorePureVideoExperience.txt"
   },
   {
     "id": 853,
@@ -9937,6 +9974,52 @@
     "name": "Dandelion Sprout's Very Thorough Website Cleaner",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/VeryThoroughWebsiteCleaner.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/VeryThoroughWebsiteCleaner.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/VeryThoroughWebsiteCleaner.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/VeryThoroughWebsiteCleaner.txt"
+  },
+  {
+    "id": 854,
+    "description": "Evidon is a platform that helps websites display GDPR notifications for European users. However, their displaying does temporarily break some elements on some sites... and can even break them outright if using certain adblock lists that prevent cookie notifications. The problem is believed to be even more frequent in non-EU EEC countries like Norway. So if you find yourself frustrated by the breakage, this list is for you.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EvidonUnbreaker.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Evidon Unbreaker",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EvidonUnbreaker.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/EvidonUnbreaker.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/EvidonUnbreaker.txt"
+  },
+  {
+    "id": 855,
+    "description": "I have 0.75 nearsightedness, which means that if I sit in my TV couch 3m away, and want to see if there's been any new posts on my PC monitor or not, I've had to squint my eyes quite strongly to tell all the grey and tiny red elements apart at such a distance. So now I've made a higher-contrast theme that should make that job a lot easier for me. It just so happened that pink was the least straining non-grey background colour on my eyes by far, but I don't mind that.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MeWe%20Pink%20Theme.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "MeWe Pink Theme",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MeWe%20Pink%20Theme.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/MeWe%20Pink%20Theme.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/MeWe%20Pink%20Theme.txt"
+  },
+  {
+    "id": 856,
+    "description": "I am of the firm belief that LED bulbs are the future. They use ⅒ of the wattage, lasts 10 times longer, can be found in a plethora of colours and strengths, and doesn't roast your hands if you touch it. A lot of people have however not got the memo. So if you want to discreetly lead them onto the path of buying LED bulbs, deploy this list on their computers and hope that they don't notice.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Pro-LED%20List.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Pro-LED List",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Pro-LED%20List.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Pro-LED%20List.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Pro-LED%20List.txt"
   }
 ]

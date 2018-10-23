@@ -340,6 +340,10 @@
     "languageId": 141
   },
   {
+    "filterListId": 232,
+    "languageId": 110
+  },
+  {
     "filterListId": 237,
     "languageId": 112
   },
@@ -800,6 +804,10 @@
     "languageId": 58
   },
   {
+    "filterListId": 593,
+    "languageId": 110
+  },
+  {
     "filterListId": 599,
     "languageId": 58
   },
@@ -900,8 +908,16 @@
     "languageId": 99
   },
   {
+    "filterListId": 734,
+    "languageId": 110
+  },
+  {
     "filterListId": 743,
     "languageId": 18
+  },
+  {
+    "filterListId": 744,
+    "languageId": 110
   },
   {
     "filterListId": 745,
