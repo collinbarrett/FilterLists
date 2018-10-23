@@ -10021,5 +10021,20 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Pro-LED%20List.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Pro-LED%20List.txt",
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Pro-LED%20List.txt"
+  },
+  {
+    "id": 857,
+    "description": "A list that makes use of Einar Egilsson's Redirector extensions, in order to make links to certain websites redirect to the proper .onion pages.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Tor Redirector List",
+    "publishedDate": "2018-10-23T00:00:00",
+    "syntaxId": 11,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json"
   }
 ]
