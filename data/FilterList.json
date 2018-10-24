@@ -4729,15 +4729,15 @@
   },
   {
     "id": 382,
-    "description": "Blocks ads/popups/fake thumbs/spam bookmark buttons and more from porn websites",
+    "description": "Blocks ads/popups/fake thumbs/fake redirections/spam bookmark buttons and more from porn websites",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/WowDude/PornList/master/PornList.txt",
     "homeUrl": "https://github.com/WowDude/PornList",
     "issuesUrl": "https://github.com/WowDude/PornList/issues",
     "licenseId": 16,
     "name": "PornList",
     "publishedDate": "2018-03-17T00:00:00",
-    "syntaxId": 4,
-    "updatedDate": "2018-09-18T02:35:16",
+    "syntaxId": 3,
+    "updatedDate": "2018-10-24T09:47:44",
     "viewUrl": "https://raw.githubusercontent.com/WowDude/PornList/master/PornList.txt"
   },
   {
