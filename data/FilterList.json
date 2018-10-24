@@ -1894,15 +1894,6 @@
     "viewUrl": "https://pastebin.com/raw/r9a5WrZa"
   },
   {
-    "id": 153,
-    "description": "Finnish blocklist for AdBlock to block social media stuff.",
-    "descriptionSourceUrl": "https://adb.juvander.net/Finland_adb_antisocial.txt",
-    "licenseId": 11,
-    "name": "Finnish AntiSocial",
-    "syntaxId": 3,
-    "viewUrl": "https://adb.juvander.net/Finland_adb_antisocial.txt"
-  },
-  {
     "id": 155,
     "description": "Filter that unblocks ads that may be useful to users.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#filter-for-useful-ads",
@@ -2732,17 +2723,6 @@
     "syntaxId": 3,
     "updatedDate": "2018-10-11T09:38:09",
     "viewUrl": "https://ideone.com/plain/K452p"
-  },
-  {
-    "id": 218,
-    "description": "Blocks Finnish regional advertisements and trackers.",
-    "forumUrl": "https://www.juvander.fi/site/ilpo/Forums/tabid/139/forumid/23/scope/threads/Default.aspx",
-    "homeUrl": "https://www.juvander.fi/site/ilpo/Home/tabid/127/EntryId/825/New-Adblock-filter-list.aspx",
-    "licenseId": 11,
-    "name": "Adblock List for Finland",
-    "syntaxId": 3,
-    "updatedDate": "2018-10-20T20:52:09",
-    "viewUrl": "https://adb.juvander.net/Finland_adb.txt"
   },
   {
     "id": 219,
