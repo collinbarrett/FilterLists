@@ -48,7 +48,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{A4BB2C81-523
 		scripts\sql\snapshotTimeAnalysis.sql = scripts\sql\snapshotTimeAnalysis.sql
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Services.Tests", "tests\FilterLists.Services.Tests\FilterLists.Services.Tests.csproj", "{7D9F0D85-E906-401A-BDAD-724440B34567}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Services.Tests", "tests\FilterLists.Services.Tests\FilterLists.Services.Tests.csproj", "{7D9F0D85-E906-401A-BDAD-724440B34567}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Data.Tests", "tests\FilterLists.Data.Tests\FilterLists.Data.Tests.csproj", "{DA34DED7-B352-4855-9C7B-9E3D983DBE2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,6 +82,10 @@ Global
 		{7D9F0D85-E906-401A-BDAD-724440B34567}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D9F0D85-E906-401A-BDAD-724440B34567}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D9F0D85-E906-401A-BDAD-724440B34567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA34DED7-B352-4855-9C7B-9E3D983DBE2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA34DED7-B352-4855-9C7B-9E3D983DBE2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA34DED7-B352-4855-9C7B-9E3D983DBE2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA34DED7-B352-4855-9C7B-9E3D983DBE2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
