@@ -32,7 +32,7 @@ namespace FilterLists.Data.Tests
                 }
 
                 await context.Database.MigrateAsync();
-                await SeedFilterListsDbContext.SeedOrUpdateAsync(context, "../../../../../../../../data");
+                await SeedFilterListsDbContext.SeedOrUpdateAsync(context, "../../../../../data");
             }
         }
     }
