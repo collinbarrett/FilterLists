@@ -11,7 +11,7 @@ namespace FilterLists.Api.Migrations
                 "IX_rules_Raw",
                 "rules",
                 "Raw",
-                10); //191);
+                3072);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

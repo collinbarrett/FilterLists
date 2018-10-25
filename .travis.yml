@@ -3,9 +3,8 @@ language: csharp
 mono: none
 dotnet: 2.1.403
 solution: FilterLists.sln
-services:
-  - mysql
 addons:
+  mariadb: '10.3.10'
   apt:
     packages:
       - sshpass
