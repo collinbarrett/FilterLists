@@ -4,7 +4,7 @@ mono: none
 dotnet: 2.1.403
 solution: FilterLists.sln
 addons:
-  mariadb: '10.3.10'
+  mariadb: '10.3'
   apt:
     packages:
       - sshpass
