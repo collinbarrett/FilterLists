@@ -1,3 +1,4 @@
+using System.IO;
 using FilterLists.Data.Seed.Extensions;
 using Microsoft.EntityFrameworkCore;
 using MySql.Data.MySqlClient;
@@ -32,7 +33,10 @@ namespace FilterLists.Data.Tests
                 }
 
                 await context.Database.MigrateAsync();
-                await SeedFilterListsDbContext.SeedOrUpdateAsync(context, "../../../../../data");
+                if (Directory.Exists("../../../../../data"))
+                    await SeedFilterListsDbContext.SeedOrUpdateAsync(context, "../../../../../data");
+                else
+                    await SeedFilterListsDbContext.SeedOrUpdateAsync(context, "../../../../../../../../data");
             }
         }
     }
