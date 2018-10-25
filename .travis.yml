@@ -9,9 +9,9 @@ addons:
     packages:
       - sshpass
 script:
-  - scripts/build.sh
   - dotnet test tests/FilterLists.Data.Tests/FilterLists.Data.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
   - dotnet test tests/FilterLists.Services.Tests/FilterLists.Services.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+  - scripts/build.sh
 after_script:
   - bash <(curl -s https://codecov.io/bash)
 env:
