@@ -1046,8 +1046,7 @@
     "syntaxId": 4,
     "updatedDate": "2018-10-18T20:13:28",
     "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/jspenguin2017/uBlockProtector/master/uBlockProtectorList.txt",
-    "viewUrlMirror2": "https://gitcdn.xyz/repo/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt"
+    "viewUrlMirror1": "https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt"
   },
   {
     "id": 84,
