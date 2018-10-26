@@ -211,6 +211,19 @@ namespace FilterLists.Services.Snapshot
                 string line;
                 while ((line = await streamReader.ReadLineAsync()) != null)
                     lines.AddIfNotNullOrEmpty(line.Trim());
+                stream.Position = 0;
+                await SaveOriginalFile(stream);
+            }
+        }
+
+        private async Task SaveOriginalFile(Stream stream)
+        {
+            var fileName = Path.Combine("snapshots", List.Id.ToString(),
+                BitConverter.ToString(SnapEntity.Md5Checksum).Replace("-", "") + ".txt");
+            new FileInfo(fileName).Directory?.Create();
+            using (var fileStream = File.Create(fileName))
+            {
+                await stream.CopyToAsync(fileStream);
             }
         }
 
