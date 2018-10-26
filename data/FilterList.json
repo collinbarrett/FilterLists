@@ -3585,7 +3585,8 @@
     "name": "DNS-BH Malware Domains Immortal",
     "syntaxId": 2,
     "viewUrl": "https://mirror1.malwaredomains.com/files/immortal_domains.txt",
-    "viewUrlMirror1": "https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt"
+    "viewUrlMirror1": "http://mirror2.malwaredomains.com/files/immortal_domains.txt",
+    "viewUrlMirror2": "https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt"
   },
   {
     "id": 289,
