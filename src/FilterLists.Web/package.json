@@ -29,7 +29,7 @@
     "webpack": "^3.11.0"
   },
   "dependencies": {
-    "@types/react-table": "^6.7.13",
+    "@types/react-table": "^6.7.14",
     "moment": "^2.22.2",
     "popper.js": "^1.14.4",
     "react-table": "^6.8.6"

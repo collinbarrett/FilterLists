@@ -72,9 +72,9 @@
       }
     },
     "@types/react-table": {
-      "version": "6.7.13",
-      "resolved": "https://registry.npmjs.org/@types/react-table/-/react-table-6.7.13.tgz",
-      "integrity": "sha512-EpjyWqfjXjsJPnxJQPOsH3zg9yIVvUF/OJxyUcbvKt9LEyXr08RdqD//XKN/rwLx0re7e/oF7d0U/RzWI5PU8Q==",
+      "version": "6.7.14",
+      "resolved": "https://registry.npmjs.org/@types/react-table/-/react-table-6.7.14.tgz",
+      "integrity": "sha512-qUw1aRPQ1Lxsygjf7AadLEm3qG2H9t2ly6LUIDGfkds0i5MQEVvAQ1dCT66i27XS7ek1W1RaiyeJxQJ6IvsVYw==",
       "requires": {
         "@types/react": "*"
       }
