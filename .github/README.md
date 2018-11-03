@@ -11,13 +11,6 @@
 
 FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.
 
-## Links
-| Site                                                | API                                                            |
-| --------------------------------------------------- | -------------------------------------------------------------- |
-| [v3 (Live, Beta)](https://filterlists.com/)         | [v1 (Live, Beta)](https://filterlists.com/api/docs/index.html) |
-| [v2 (Legacy, Frozen)](https://v2.filterlists.com/)  |                                                                |
-| [v1 (Legacy, Frozen)](https://v1.filterlists.com/)  |                                                                |
-
 ## Adding or Updating Lists
 
 To submit a new list or update data about an existing list, please submit a pull request to [data](https://github.com/collinbarrett/FilterLists/tree/master/data) in conjunction with the data model described [here](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar). Alternatively, you can [open a new issue](https://github.com/collinbarrett/FilterLists/issues/new) providing information for all of the fields described in the [data model](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar).
