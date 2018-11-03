@@ -9596,5 +9596,32 @@
     "name": "abuse.ch URLhaus Malicious URL Blocklist",
     "syntaxId": 2,
     "viewUrl": "https://gitlab.com/curben/urlhaus/raw/master/urlhaus-filter.txt"
+  },
+  {
+    "id": 859,
+    "description": "It seems to me that a common thought process on porn sites are \"Hey, do you know what would've made this cute woman even sexier? I know. We should give her a dick!\". Well, not anymore, thanks to this list.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-Futa List",
+    "publishedDate": "2018-11-03T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Futa%20List.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-Futa%20List.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Anti-Futa%20List.txt"
+  },
+  {
+    "id": 860,
+    "description": "This repository contains some custom ad- and content-blocking rules I use to make life online easier (or just nicer to look at). Most of the content blocked here deals with sites I or my contributors regularly visit.",
+    "emailAddress": "nicktabick@gmail.com",
+    "homeUrl": "https://adblock.twoslashes.com/",
+    "issuesUrl": "https://github.com/nicktabick/adblock-rules/issues",
+    "name": "NT Adblock List",
+    "syntaxId": 3,
+    "viewUrl": "https://bitbucket.org/nicktabick/adblock-rules/raw/master/nt-adblock.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/nicktabick/adblock-rules/master/nt-adblock.txt",
+    "viewUrlMirror2": "https://gitlab.com/nicktabick/adblock-rules/raw/master/nt-adblock.txt"
   }
 ]
