@@ -91,13 +91,6 @@
     "name": "Pi-hole"
   },
   {
-    "id": 15,
-    "downloadUrl": "https://www.ublock.org/",
-    "homeUrl": "https://www.ublock.org/",
-    "isAbpSubscribable": true,
-    "name": "uBlock"
-  },
-  {
     "id": 16,
     "downloadUrl": "https://support.microsoft.com/en-gb/help/18520/download-internet-explorer-11-offline-installer",
     "homeUrl": "https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/hh273399(v=vs.85)",
