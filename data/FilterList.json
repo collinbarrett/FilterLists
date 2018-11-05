@@ -9623,5 +9623,17 @@
     "viewUrl": "https://bitbucket.org/nicktabick/adblock-rules/raw/master/nt-adblock.txt",
     "viewUrlMirror1": "https://raw.githubusercontent.com/nicktabick/adblock-rules/master/nt-adblock.txt",
     "viewUrlMirror2": "https://gitlab.com/nicktabick/adblock-rules/raw/master/nt-adblock.txt"
+  },
+  {
+    "id": 861,
+    "description": "Custom filters blocking popular trackers, banners, loading and displaying ads on website pages and search results, it also includes cosmetic filters for problem sites.",
+    "descriptionSourceUrl": "https://github.com/bogachenko/presstheattack",
+    "emailAddress": "bogachenkove@gmail.com",
+    "homeUrl": "https://github.com/bogachenko/presstheattack",
+    "issuesUrl": "https://github.com/bogachenko/presstheattack/issues",
+    "licenseId": 2,
+    "name": "Press the Attack",
+    "syntaxId": 4,
+    "viewUrl": "https://github.com/bogachenko/presstheattack/blob/master/presstheattack.txt"
   }
 ]
