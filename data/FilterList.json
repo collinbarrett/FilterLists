@@ -9635,5 +9635,17 @@
     "name": "Press the Attack",
     "syntaxId": 4,
     "viewUrl": "https://github.com/bogachenko/presstheattack/blob/master/presstheattack.txt"
+  },
+  {
+    "id": 862,
+    "description": "This filterlist only works for uBlock Origin and other proper forks (I only recommend NanoAdBlocker than others) because it's borrow the strict blocking ability to prevent navigation to specific sites or any traffic that re-routed to go inside first party with tracking parameters that their made first and then sent you to the target URL, the internal strict blocking warning page will prevent navigation to be happen and also reveal real URLs under the warning sign, however, you need to make manual text selection to exclude tracking parameters if some sites have multiple parameters and internal strict blocking cannot divide or clean-up target URL properly.",
+    "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/tree/master/filterlist/other/readme.md",
+    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
+    "licenseId": 13,
+    "name": "Anti Survived Tracking Link Warning",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/other/SurvivedTrackingLinkWarning.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/other/SurvivedTrackingLinkWarning.txt"
   }
 ]
