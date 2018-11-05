@@ -7,7 +7,7 @@
     "name": "280 Blocker",
     "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLScNeZhFrFZt9GhIVGdThGz7oyepcNRKuOi5PJDnsC-awxTeOQ/viewform",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T13:10:10",
+    "updatedDate": "2018-11-04T00:47:09",
     "viewUrl": "https://280blocker.net/files/280blocker_adblock.txt"
   },
   {
@@ -56,7 +56,7 @@
     "licenseId": 4,
     "name": "Message \"Seen\" Remover for Facebook",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T13:24:09",
+    "updatedDate": "2018-11-04T01:05:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/message_seen_remover_for_facebook.txt"
   },
   {
@@ -127,7 +127,7 @@
     "licenseId": 6,
     "name": "Liste FR + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T13:55:11",
+    "updatedDate": "2018-11-04T01:51:07",
     "viewUrl": "https://easylist-downloads.adblockplus.org/liste_fr+easylist.txt"
   },
   {
@@ -140,7 +140,7 @@
     "licenseId": 6,
     "name": "Liste FR",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T14:05:09",
+    "updatedDate": "2018-11-04T02:08:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/liste_fr.txt"
   },
   {
@@ -149,7 +149,7 @@
     "licenseId": 6,
     "name": "Liste AR + Liste FR + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T14:08:11",
+    "updatedDate": "2018-11-04T02:12:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/liste_ar+liste_fr+easylist.txt"
   },
   {
@@ -162,7 +162,7 @@
     "licenseId": 6,
     "name": "Liste AR",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T14:25:09",
+    "updatedDate": "2018-11-04T02:44:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/Liste_AR.txt"
   },
   {
@@ -232,7 +232,7 @@
     "name": "NoCoin",
     "publishedDate": "2017-09-17T20:18:51",
     "syntaxId": 3,
-    "updatedDate": "2018-10-18T01:15:26",
+    "updatedDate": "2018-11-02T19:22:51",
     "viewUrl": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
@@ -248,7 +248,7 @@
     "name": "Dandelion Sprout's Norwegian Filters for Tidier Websites",
     "publishedDate": "2018-05-15T02:39:19",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T09:45:11",
+    "updatedDate": "2018-11-01T20:59:25",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianList.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianList.txt",
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/NorwegianList.txt"
@@ -261,7 +261,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker IP Blocklist",
     "syntaxId": 9,
-    "updatedDate": "2018-10-19T15:06:09",
+    "updatedDate": "2018-11-04T03:15:10",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_IPBL.txt"
   },
   {
@@ -272,7 +272,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker Domain Blocklist",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T15:10:09",
+    "updatedDate": "2018-11-04T03:19:10",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt"
   },
   {
@@ -283,7 +283,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker CryptoWall Ransomware Payment Sites IP Blocklist",
     "syntaxId": 9,
-    "updatedDate": "2018-10-19T15:14:08",
+    "updatedDate": "2018-11-04T03:23:09",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_PS_IPBL.txt"
   },
   {
@@ -294,7 +294,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker CryptoWall Ransomware Payment Sites Domain Blocklist",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T15:18:09",
+    "updatedDate": "2018-11-04T03:27:11",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_PS_DOMBL.txt"
   },
   {
@@ -305,7 +305,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker CryptoWall Ransomware C2 URL Blocklist",
     "syntaxId": 8,
-    "updatedDate": "2018-10-19T15:22:09",
+    "updatedDate": "2018-11-04T03:31:09",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_C2_URLBL.txt"
   },
   {
@@ -316,7 +316,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker CryptoWall Ransomware C2 Domain Blocklist",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T15:27:09",
+    "updatedDate": "2018-11-04T03:37:10",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_C2_DOMBL.txt"
   },
   {
@@ -378,7 +378,7 @@
     "publishedDate": "2016-10-24T00:00:00",
     "submissionUrl": "https://polishannoyancefilters.netlify.com/issues",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T14:11:57",
+    "updatedDate": "2018-11-03T23:09:38",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt"
@@ -403,7 +403,7 @@
     "name": "Peter Lowe's List",
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T15:51:08",
+    "updatedDate": "2018-11-04T04:08:11",
     "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext"
   },
   {
@@ -430,7 +430,7 @@
     "licenseId": 5,
     "name": "OpenPhish Phishing Intelligence Community Feed",
     "syntaxId": 8,
-    "updatedDate": "2018-10-19T15:57:09",
+    "updatedDate": "2018-11-04T04:16:11",
     "viewUrl": "https://openphish.com/feed.txt"
   },
   {
@@ -470,7 +470,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker Locky Ransomware C2 Domain Blocklist",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T16:20:08",
+    "updatedDate": "2018-11-04T04:52:10",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_C2_DOMBL.txt"
   },
   {
@@ -520,6 +520,7 @@
     "licenseId": 5,
     "name": "hpHosts HJK",
     "syntaxId": 1,
+    "updatedDate": "2018-11-04T05:16:09",
     "viewUrl": "https://hosts-file.net/hjk.txt"
   },
   {
@@ -553,7 +554,7 @@
     "licenseId": 5,
     "name": "hpHosts FSA",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T17:01:09",
+    "updatedDate": "2018-11-04T05:49:11",
     "viewUrl": "https://hosts-file.net/fsa.txt"
   },
   {
@@ -576,7 +577,7 @@
     "licenseId": 5,
     "name": "hpHosts EMD",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T17:43:09",
+    "updatedDate": "2018-11-04T06:52:09",
     "viewUrl": "https://hosts-file.net/emd.txt"
   },
   {
@@ -588,7 +589,7 @@
     "licenseId": 5,
     "name": "hpHosts ATS",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T18:20:09",
+    "updatedDate": "2018-10-30T21:50:08",
     "viewUrl": "https://hosts-file.net/ad_servers.txt"
   },
   {
@@ -609,7 +610,7 @@
     "licenseId": 20,
     "name": "Hosts2ch",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T18:28:09",
+    "updatedDate": "2018-10-25T18:09:09",
     "viewUrl": "https://sites.google.com/site/hosts2ch/ja"
   },
   {
@@ -652,7 +653,7 @@
     "licenseId": 5,
     "name": "GNU Blacklist",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T18:41:09",
+    "updatedDate": "2018-11-04T08:05:09",
     "viewUrl": "https://gnuzilla.gnu.org/filters/blacklist.txt"
   },
   {
@@ -685,7 +686,7 @@
     "licenseId": 5,
     "name": "hpHosts Partial",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T18:58:09",
+    "updatedDate": "2018-11-04T08:31:10",
     "viewUrl": "https://hosts-file.net/hphosts-partial.txt"
   },
   {
@@ -694,7 +695,7 @@
     "licenseId": 8,
     "name": "Latvian List + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T19:39:10",
+    "updatedDate": "2018-11-04T09:35:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/latvianlist+easylist.txt"
   },
   {
@@ -706,7 +707,7 @@
     "licenseId": 5,
     "name": "hpHosts PHA",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T19:46:09",
+    "updatedDate": "2018-11-04T09:47:09",
     "viewUrl": "https://hosts-file.net/pha.txt"
   },
   {
@@ -718,7 +719,7 @@
     "licenseId": 5,
     "name": "hpHosts PUP",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T19:49:09",
+    "updatedDate": "2018-10-30T23:16:08",
     "viewUrl": "https://hosts-file.net/pup.txt"
   },
   {
@@ -747,7 +748,7 @@
     "publishedDate": "2016-11-20T11:41:02",
     "submissionUrl": "https://azet12.github.io/KAD/informacje.html#form1-35",
     "syntaxId": 1,
-    "updatedDate": "2018-10-16T17:21:47",
+    "updatedDate": "2018-10-30T17:23:01",
     "viewUrl": "https://raw.githubusercontent.com/azet12/KADhosts/master/KADhosts.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/azet12/KADhosts/master/KADhosts.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/azet12/KADhosts/master/KADhosts.txt"
@@ -833,7 +834,7 @@
     "name": "Piperun's iplogger filter",
     "publishedDate": "2015-10-30T17:39:31",
     "syntaxId": 3,
-    "updatedDate": "2018-07-31T10:38:35",
+    "updatedDate": "2018-10-25T00:24:00",
     "viewUrl": "https://raw.githubusercontent.com/piperun/iploggerfilter/master/filterlist",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/piperun/iploggerfilter/master/filterlist",
     "viewUrlMirror2": "https://gitcdn.link/repo/piperun/iploggerfilter/master/filterlist"
@@ -888,7 +889,7 @@
     "licenseId": 4,
     "name": "I Don't Care about Cookies",
     "syntaxId": 3,
-    "updatedDate": "2018-10-04T04:43:23",
+    "updatedDate": "2018-11-04T10:38:12",
     "viewUrl": "https://www.kiboke-studio.hr/i-dont-care-about-cookies/abp/"
   },
   {
@@ -901,7 +902,7 @@
     "name": "hufilter",
     "publishedDate": "2015-01-14T14:16:50",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T09:53:27",
+    "updatedDate": "2018-10-31T11:50:15",
     "viewUrl": "https://raw.githubusercontent.com/szpeter80/hufilter/master/hufilter.txt",
     "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-hufilter.git/blob_plain/refs/heads/master:/hufilter.txt",
     "viewUrlMirror2": "https://gitcdn.xyz/repo/szpeter80/hufilter/master/hufilter.txt"
@@ -927,7 +928,7 @@
     "licenseId": 5,
     "name": "hpHosts PSH",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T20:44:09",
+    "updatedDate": "2018-11-04T10:52:10",
     "viewUrl": "https://hosts-file.net/psh.txt"
   },
   {
@@ -938,7 +939,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker Locky Ransomware C2 IP Blocklist",
     "syntaxId": 9,
-    "updatedDate": "2018-10-19T21:04:09",
+    "updatedDate": "2018-11-04T11:26:09",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_C2_IPBL.txt"
   },
   {
@@ -949,7 +950,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker Locky Ransomware Distribution Site URL Blocklist",
     "syntaxId": 8,
-    "updatedDate": "2018-10-19T21:08:08",
+    "updatedDate": "2018-11-04T11:31:09",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_DS_URLBL.txt"
   },
   {
@@ -960,7 +961,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker Locky Ransomware Payment Sites Domain Blocklist",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T21:12:09",
+    "updatedDate": "2018-11-04T11:36:09",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_PS_DOMBL.txt"
   },
   {
@@ -972,7 +973,7 @@
     "name": "Unified Hosts + Gambling + Porn",
     "publishedDate": "2016-03-13T06:49:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/gambling-porn/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/gambling-porn/hosts"
@@ -986,7 +987,7 @@
     "name": "Unified Hosts + Gambling",
     "publishedDate": "2016-03-13T06:49:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/gambling/host",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/gambling/host"
@@ -1000,7 +1001,7 @@
     "name": "Unified Hosts",
     "publishedDate": "2012-04-12T22:56:41",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/hosts"
@@ -1029,7 +1030,7 @@
     "name": "uBO-Personal-Filters",
     "publishedDate": "2016-12-03T20:18:12",
     "syntaxId": 4,
-    "updatedDate": "2018-10-18T15:59:06",
+    "updatedDate": "2018-11-04T12:41:56",
     "viewUrl": "https://raw.githubusercontent.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlock-user/uBO-Personal-Filters/master/uPF.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt"
@@ -1044,7 +1045,7 @@
     "name": "Nano Defender Integration",
     "publishedDate": "2018-05-23T21:53:55",
     "syntaxId": 4,
-    "updatedDate": "2018-10-18T20:13:28",
+    "updatedDate": "2018-11-03T00:22:12",
     "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt",
     "viewUrlMirror1": "https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt"
   },
@@ -1060,7 +1061,7 @@
     "name": "Official Polish Filters for AdBlock, uBlock Origin & AdGuard - Supplement for uBlock",
     "publishedDate": "2016-08-07T20:10:32",
     "syntaxId": 17,
-    "updatedDate": "2018-10-15T11:46:18",
+    "updatedDate": "2018-11-02T16:20:10",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt"
@@ -1105,7 +1106,7 @@
     "name": "uAssets Unbreak",
     "publishedDate": "2016-04-01T12:08:37",
     "syntaxId": 4,
-    "updatedDate": "2018-10-19T09:14:28",
+    "updatedDate": "2018-11-04T00:22:18",
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlockOrigin/uAssets/master/filters/unbreak.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/unbreak.txt"
@@ -1134,7 +1135,7 @@
     "name": "uAssets Filters",
     "publishedDate": "2016-04-01T12:06:54",
     "syntaxId": 4,
-    "updatedDate": "2018-10-19T22:18:01",
+    "updatedDate": "2018-11-04T00:15:06",
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlockOrigin/uAssets/master/filters/filters.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/filters.txt"
@@ -1178,7 +1179,7 @@
     "name": "Unified Hosts + Gambling + Porn + Social",
     "publishedDate": "2016-03-13T06:49:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts"
@@ -1191,7 +1192,7 @@
     "licenseId": 5,
     "name": "Top Cash Back Adblock Whitelist",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T23:02:09",
+    "updatedDate": "2018-11-04T14:01:10",
     "viewUrl": "https://www.topcashback.com/Misc/AdBlockWhiteList.aspx"
   },
   {
@@ -1203,7 +1204,7 @@
     "name": "Unified Hosts + Gambling + Social",
     "publishedDate": "2016-03-13T06:49:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/gambling-social/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/gambling-social/hosts"
@@ -1217,7 +1218,7 @@
     "name": "Unified Hosts + Porn + Social",
     "publishedDate": "2016-03-13T06:49:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-social/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/porn-social/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/porn-social/hosts"
@@ -1232,7 +1233,7 @@
     "licenseId": 5,
     "name": "YouTube: Pure Video Experience",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T12:01:09",
+    "updatedDate": "2018-11-05T10:12:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt"
   },
   {
@@ -1245,7 +1246,7 @@
     "licenseId": 5,
     "name": "YouTube: Other Annoyances",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T12:05:09",
+    "updatedDate": "2018-11-05T10:18:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt"
   },
   {
@@ -1257,7 +1258,7 @@
     "name": "YousList",
     "publishedDate": "2014-09-13T15:24:35",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T10:51:29",
+    "updatedDate": "2018-11-05T09:11:57",
     "viewUrl": "https://raw.githubusercontent.com/yous/YousList/master/youslist.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/yous/YousList/master/youslist.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/yous/YousList/master/youslist.txt"
@@ -1301,7 +1302,7 @@
     "name": "Web Annoyances Ultralist",
     "publishedDate": "2016-09-17T15:25:03",
     "syntaxId": 4,
-    "updatedDate": "2018-10-19T19:02:34",
+    "updatedDate": "2018-11-02T19:48:45",
     "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/yourduskquibbles/webannoyances/master/ultralist.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/yourduskquibbles/webannoyances/master/ultralist.txt"
@@ -1315,7 +1316,7 @@
     "name": "Unified Hosts + Fakenews + Gambling + Porn + Social",
     "publishedDate": "2016-12-17T19:28:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts"
@@ -1329,7 +1330,7 @@
     "name": "Unified Hosts + Fakenews + Porn + Social",
     "publishedDate": "2016-12-17T19:28:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn-social/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/fakenews-porn-social/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/fakenews-porn-social/hosts"
@@ -1343,7 +1344,7 @@
     "name": "Unified Hosts + Fakenews + Gambling + Social",
     "publishedDate": "2016-12-17T19:28:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts"
@@ -1357,7 +1358,7 @@
     "name": "Unified Hosts + Fakenews + Gambling + Porn",
     "publishedDate": "2016-12-17T19:28:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts"
@@ -1371,7 +1372,7 @@
     "name": "Unified Hosts + Fakenews + Social",
     "publishedDate": "2016-12-17T19:28:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/fakenews-social/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/fakenews-social/hosts"
@@ -1385,7 +1386,7 @@
     "name": "Unified Hosts + Fakenews + Porn",
     "publishedDate": "2016-12-17T19:28:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/fakenews-porn/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/fakenews-porn/hosts"
@@ -1399,7 +1400,7 @@
     "name": "Unified Hosts + Fakenews + Gambling",
     "publishedDate": "2016-12-17T19:28:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts"
@@ -1413,7 +1414,7 @@
     "name": "Unified Hosts + Fakenews",
     "publishedDate": "2016-12-17T19:28:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/fakenews/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/fakenews/hosts"
@@ -1427,7 +1428,7 @@
     "name": "Unified Hosts + Social",
     "publishedDate": "2016-03-13T06:49:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/social/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/social/hosts"
@@ -1441,7 +1442,7 @@
     "name": "Unified Hosts + Porn",
     "publishedDate": "2016-03-13T06:49:47",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T02:33:06",
+    "updatedDate": "2018-11-02T18:14:37",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/porn/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/StevenBlack/hosts/master/alternates/porn/hosts"
@@ -1453,7 +1454,7 @@
     "licenseId": 5,
     "name": "Tofu Filter",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T13:40:10",
+    "updatedDate": "2018-10-31T15:47:11",
     "viewUrl": "http://tofukko.r.ribbon.to/Adblock_Plus_list.txt"
   },
   {
@@ -1489,6 +1490,7 @@
     "licenseId": 5,
     "name": "ROList2",
     "syntaxId": 3,
+    "updatedDate": "2018-10-31T15:57:09",
     "viewUrl": "https://www.zoso.ro/pages/rolist2.txt"
   },
   {
@@ -1497,7 +1499,7 @@
     "licenseId": 5,
     "name": "ROList + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T13:52:10",
+    "updatedDate": "2018-11-05T13:17:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/rolist+easylist.txt"
   },
   {
@@ -1509,6 +1511,7 @@
     "licenseId": 5,
     "name": "ROList",
     "syntaxId": 3,
+    "updatedDate": "2018-10-31T16:08:09",
     "viewUrl": "https://www.zoso.ro/pages/rolist.txt"
   },
   {
@@ -1535,7 +1538,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker URL Blocklist",
     "syntaxId": 8,
-    "updatedDate": "2018-10-20T14:31:09",
+    "updatedDate": "2018-11-05T13:35:11",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_URLBL.txt"
   },
   {
@@ -1546,7 +1549,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TorrentLocker Ransomware Payment Sites IP Blocklist",
     "syntaxId": 9,
-    "updatedDate": "2018-10-20T14:34:10",
+    "updatedDate": "2018-10-31T16:46:08",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TL_PS_IPBL.txt"
   },
   {
@@ -1557,7 +1560,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TorrentLocker Ransomware Payment Sites Domain Blocklist",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T14:38:08",
+    "updatedDate": "2018-10-31T16:49:08",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TL_PS_DOMBL.txt"
   },
   {
@@ -1568,7 +1571,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TorrentLocker Ransomware C2 IP Blocklist",
     "syntaxId": 9,
-    "updatedDate": "2018-10-20T14:42:10",
+    "updatedDate": "2018-10-31T16:52:08",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TL_C2_IPBL.txt"
   },
   {
@@ -1579,7 +1582,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TorrentLocker Ransomware C2 Domain Blocklist",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T14:45:09",
+    "updatedDate": "2018-10-31T16:55:09",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TL_C2_DOMBL.txt"
   },
   {
@@ -1590,7 +1593,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TeslaCrypt Ransomware Payment Sites IP Blocklist",
     "syntaxId": 9,
-    "updatedDate": "2018-10-20T14:48:08",
+    "updatedDate": "2018-10-31T16:58:09",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TC_PS_IPBL.txt"
   },
   {
@@ -1601,7 +1604,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TeslaCrypt Ransomware Payment Sites Domain Blocklist",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T14:52:08",
+    "updatedDate": "2018-10-31T17:02:08",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TC_PS_DOMBL.txt"
   },
   {
@@ -1612,7 +1615,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TeslaCrypt Ransomware Distribution Site URL Blocklist",
     "syntaxId": 8,
-    "updatedDate": "2018-10-20T14:55:09",
+    "updatedDate": "2018-10-31T17:05:08",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TC_DS_URLBL.txt"
   },
   {
@@ -1633,7 +1636,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker TeslaCrypt Ransomware C2 Domain Blocklist",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T14:59:08",
+    "updatedDate": "2018-10-31T17:09:08",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/TC_C2_DOMBL.txt"
   },
   {
@@ -1644,7 +1647,7 @@
     "licenseId": 7,
     "name": "Ransomware Tracker Locky Ransomware Payment Sites IP Blocklist",
     "syntaxId": 9,
-    "updatedDate": "2018-10-20T15:02:08",
+    "updatedDate": "2018-10-31T17:12:08",
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/LY_PS_IPBL.txt"
   },
   {
@@ -1656,7 +1659,7 @@
     "licenseId": 5,
     "name": "RU AdList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T15:05:10",
+    "updatedDate": "2018-10-31T17:15:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/advblock.txt"
   },
   {
@@ -1677,7 +1680,7 @@
     "licenseId": 12,
     "name": "RU AdList + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T15:09:11",
+    "updatedDate": "2018-10-31T17:19:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/ruadlist+easylist.txt"
   },
   {
@@ -1688,7 +1691,7 @@
     "licenseId": 16,
     "name": "RU AdList: BitBlock",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T15:19:09",
+    "updatedDate": "2018-10-31T17:29:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/bitblock.txt"
   },
   {
@@ -1759,7 +1762,7 @@
     "name": "Spam404 Domain Blacklist",
     "publishedDate": "2016-02-15T21:04:57",
     "syntaxId": 2,
-    "updatedDate": "2018-04-15T14:04:06",
+    "updatedDate": "2018-10-27T20:52:17",
     "viewUrl": "https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/Spam404/lists/master/main-blacklist.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/Spam404/lists/master/main-blacklist.txt"
@@ -1775,7 +1778,7 @@
     "name": "Spam404",
     "publishedDate": "2016-02-15T21:04:28",
     "syntaxId": 3,
-    "updatedDate": "2018-04-15T14:04:02",
+    "updatedDate": "2018-10-27T20:52:13",
     "viewUrl": "https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/Spam404/lists/master/adblock-list.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/Spam404/lists/master/adblock-list.txt"
@@ -1860,7 +1863,7 @@
     "licenseId": 5,
     "name": "SA-Blacklist",
     "syntaxId": 2,
-    "updatedDate": "2018-10-10T21:59:16",
+    "updatedDate": "2018-10-31T18:35:20",
     "viewUrl": "http://www.sa-blacklist.stearns.org/sa-blacklist/sa-blacklist.current.domains"
   },
   {
@@ -1871,7 +1874,7 @@
     "licenseId": 12,
     "name": "RU AdList: Counters",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T16:26:09",
+    "updatedDate": "2018-10-31T22:08:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/cntblock.txt"
   },
   {
@@ -1903,7 +1906,7 @@
     "name": "AdGuard Useful Ads Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-20T16:33:09",
+    "updatedDate": "2018-10-26T16:04:08",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/10.txt"
   },
   {
@@ -1917,7 +1920,7 @@
     "name": "AdGuard Turkish Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-20T16:35:09",
+    "updatedDate": "2018-10-31T22:15:09",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/13.txt"
   },
   {
@@ -1931,7 +1934,7 @@
     "name": "AdGuard Spyware Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-20T16:38:08",
+    "updatedDate": "2018-10-31T22:18:09",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/3.txt"
   },
   {
@@ -1945,7 +1948,7 @@
     "name": "AdGuard Spanish/Portuguese Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-20T16:41:09",
+    "updatedDate": "2018-10-31T22:21:09",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/9.txt"
   },
   {
@@ -1959,7 +1962,7 @@
     "name": "AdGuard Social Media Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-20T16:44:09",
+    "updatedDate": "2018-10-31T22:24:09",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/4.txt"
   },
   {
@@ -1973,7 +1976,7 @@
     "name": "AdGuard Safari Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-20T16:47:08",
+    "updatedDate": "2018-10-26T16:17:08",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/12.txt"
   },
   {
@@ -1987,7 +1990,7 @@
     "name": "AdGuard Russian Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-20T16:50:08",
+    "updatedDate": "2018-10-31T22:29:08",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/1.txt"
   },
   {
@@ -2001,7 +2004,7 @@
     "name": "AdGuard Mobile Ads Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-20T16:58:08",
+    "updatedDate": "2018-10-31T22:36:08",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/11.txt"
   },
   {
@@ -2015,7 +2018,7 @@
     "name": "AdGuard Japanese Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-20T17:02:08",
+    "updatedDate": "2018-10-31T22:39:09",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/7.txt"
   },
   {
@@ -2029,7 +2032,7 @@
     "name": "AdGuard German Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-20T17:27:08",
+    "updatedDate": "2018-10-31T23:03:09",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/6.txt"
   },
   {
@@ -2056,7 +2059,7 @@
     "name": "AdGuard English Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-20T18:18:08",
+    "updatedDate": "2018-10-31T23:56:09",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/2.txt"
   },
   {
@@ -2070,7 +2073,7 @@
     "name": "AdGuard Dutch Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-04T14:47:10",
+    "updatedDate": "2018-10-26T17:59:10",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/8.txt"
   },
   {
@@ -2083,7 +2086,7 @@
     "name": "AdGuard Simplified Domain Names Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-20T18:30:09",
+    "updatedDate": "2018-11-01T00:09:09",
     "viewUrl": "https://filters.adtidy.org/windows/filters/15.txt"
   },
   {
@@ -2097,7 +2100,7 @@
     "name": "AdGuard Annoyances Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-20T18:33:09",
+    "updatedDate": "2018-11-01T00:13:08",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/14.txt"
   },
   {
@@ -2110,7 +2113,7 @@
     "licenseId": 4,
     "name": "Adware Filters",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T18:36:09",
+    "updatedDate": "2018-11-01T00:16:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/adwarefilters.txt"
   },
   {
@@ -2121,7 +2124,7 @@
     "licenseId": 11,
     "name": "Additional Adblock Rules",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T18:40:09",
+    "updatedDate": "2018-11-01T00:20:10",
     "viewUrl": "https://dl.dropboxusercontent.com/s/1ybzw9lb7m1qiyl/AAs.txt"
   },
   {
@@ -2176,7 +2179,7 @@
     "name": "Better.fyi | Trackers (List)",
     "publishedDate": "2017-06-25T06:24:35",
     "syntaxId": 1,
-    "updatedDate": "2018-08-24T01:36:12",
+    "updatedDate": "2018-10-26T03:13:40",
     "viewUrl": "https://raw.githubusercontent.com/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt"
@@ -2249,7 +2252,7 @@
     "name": "Anti-PopAds",
     "publishedDate": "2016-10-29T15:08:58",
     "syntaxId": 4,
-    "updatedDate": "2018-10-20T18:09:44",
+    "updatedDate": "2018-10-31T23:52:50",
     "viewUrl": "https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/Yhonay/antipopads/master/popads.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/Yhonay/antipopads/master/popads.txt"
@@ -2355,7 +2358,7 @@
     "name": "add.Risk",
     "publishedDate": "2016-09-30T11:36:06",
     "syntaxId": 1,
-    "updatedDate": "2018-10-09T13:38:21",
+    "updatedDate": "2018-10-31T08:04:43",
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/FadeMind/hosts.extras/master/add.Risk/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/FadeMind/hosts.extras/master/add.Risk/hosts"
@@ -2370,7 +2373,7 @@
     "name": "add.Dead",
     "publishedDate": "2016-09-30T11:36:06",
     "syntaxId": 1,
-    "updatedDate": "2018-09-05T09:58:06",
+    "updatedDate": "2018-10-31T08:04:43",
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Dead/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/FadeMind/hosts.extras/master/add.Dead/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/FadeMind/hosts.extras/master/add.Dead/hosts"
@@ -2397,7 +2400,7 @@
     "licenseId": 5,
     "name": "abuse.ch Feodo IP Blocklist",
     "syntaxId": 8,
-    "updatedDate": "2018-10-20T19:39:08",
+    "updatedDate": "2018-11-01T01:12:08",
     "viewUrl": "https://feodotracker.abuse.ch/blocklist/?download=ipblocklist"
   },
   {
@@ -2408,7 +2411,7 @@
     "homeUrl": "https://feodotracker.abuse.ch/blocklist/",
     "licenseId": 5,
     "name": "abuse.ch Feodo Domain Blocklist",
-    "updatedDate": "2018-10-20T19:42:08",
+    "updatedDate": "2018-11-01T01:15:09",
     "viewUrl": "https://feodotracker.abuse.ch/blocklist/?download=domainblocklist"
   },
   {
@@ -2419,7 +2422,7 @@
     "homeUrl": "https://feodotracker.abuse.ch/blocklist/",
     "licenseId": 5,
     "name": "abuse.ch Feodo BadIP Blocklist",
-    "updatedDate": "2018-10-20T19:45:08",
+    "updatedDate": "2018-11-01T01:18:09",
     "viewUrl": "https://feodotracker.abuse.ch/blocklist/?download=badips"
   },
   {
@@ -2428,7 +2431,7 @@
     "licenseId": 4,
     "name": "ABPindo + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T19:48:10",
+    "updatedDate": "2018-11-01T01:20:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/abpindo+easylist.txt"
   },
   {
@@ -2476,7 +2479,7 @@
     "name": "X Files: HWS Harmful WebSites",
     "publishedDate": "2016-12-20T14:53:03",
     "syntaxId": 3,
-    "updatedDate": "2018-10-10T13:51:07",
+    "updatedDate": "2018-10-30T10:26:52",
     "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/siteblock.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/gioxx/xfiles/master/siteblock.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/gioxx/xfiles/master/siteblock.txt"
@@ -2493,7 +2496,7 @@
     "name": "ABP X Files",
     "publishedDate": "2016-12-20T14:53:03",
     "syntaxId": 3,
-    "updatedDate": "2018-10-10T13:51:07",
+    "updatedDate": "2018-10-30T10:26:52",
     "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/filtri.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/gioxx/xfiles/master/filtri.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/gioxx/xfiles/master/filtri.txt"
@@ -2566,7 +2569,7 @@
     "name": "ABPVN List",
     "publishedDate": "2016-07-10T08:55:52",
     "syntaxId": 3,
-    "updatedDate": "2018-10-18T13:47:04",
+    "updatedDate": "2018-10-29T10:26:56",
     "viewUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/abpvn/abpvn/master/filter/abpvn.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/abpvn/abpvn/master/filter/abpvn.txt"
@@ -2623,7 +2626,7 @@
     "licenseId": 5,
     "name": "abuse.ch ZeuS IP Blocklist",
     "syntaxId": 9,
-    "updatedDate": "2018-10-20T20:25:09",
+    "updatedDate": "2018-10-26T19:39:09",
     "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=ipblocklist"
   },
   {
@@ -2677,7 +2680,7 @@
     "licenseId": 4,
     "name": "Adblock Warning Removal List",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T20:39:09",
+    "updatedDate": "2018-11-01T01:53:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
   },
   {
@@ -2707,7 +2710,7 @@
     "name": "Polish Social Filters",
     "publishedDate": "2016-03-02T07:42:05",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T09:03:18",
+    "updatedDate": "2018-10-30T11:44:00",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/adblock_social_filters/adblock_social_list.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/MajkiIT/polish-ads-filter/master/adblock_social_filters/adblock_social_list.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/MajkiIT/polish-ads-filter/master/adblock_social_filters/adblock_social_list.txt"
@@ -2720,7 +2723,7 @@
     "licenseId": 5,
     "name": "Adblock Persian List",
     "syntaxId": 3,
-    "updatedDate": "2018-10-11T09:38:09",
+    "updatedDate": "2018-11-01T02:04:15",
     "viewUrl": "https://ideone.com/plain/K452p"
   },
   {
@@ -2783,7 +2786,7 @@
     "name": "Official Polish Filters for AdBlock, uBlock Origin & AdGuard",
     "publishedDate": "2015-09-17T09:36:26",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T19:01:46",
+    "updatedDate": "2018-10-30T22:28:07",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt"
@@ -2799,7 +2802,7 @@
     "name": "Polish GDPR-Cookies Filters",
     "publishedDate": "2015-09-17T09:35:37",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T09:03:18",
+    "updatedDate": "2018-10-30T11:44:01",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/cookies_filters/adblock_cookies.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/MajkiIT/polish-ads-filter/master/cookies_filters/adblock_cookies.txt",
     "viewUrlMirror2": "https://rawcdn.githack.com/MajkiIT/polish-ads-filter/master/cookies_filters/adblock_cookies.txt"
@@ -2835,7 +2838,7 @@
     "licenseId": 5,
     "name": "Acceptable Ads",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T21:31:13",
+    "updatedDate": "2018-11-01T02:43:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/exceptionrules.txt"
   },
   {
@@ -2848,7 +2851,7 @@
     "name": "Adblock Iran",
     "publishedDate": "2016-10-14T17:36:56",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T13:00:45",
+    "updatedDate": "2018-10-31T13:49:41",
     "viewUrl": "https://raw.githubusercontent.com/farrokhi/adblock-iran/master/filter.txt",
     "viewUrlMirror1": "https://rawcdn.githack.com/farrokhi/adblock-iran/master/filter.txt"
   },
@@ -2862,7 +2865,7 @@
     "licenseId": 5,
     "name": "YouTube: Remove Comments",
     "syntaxId": 3,
-    "updatedDate": "2018-10-21T01:10:09",
+    "updatedDate": "2018-11-01T06:23:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt"
   },
   {
@@ -2912,7 +2915,7 @@
     "licenseId": 5,
     "name": "Facebook Sidebar Blocker",
     "syntaxId": 3,
-    "updatedDate": "2018-10-16T01:26:09",
+    "updatedDate": "2018-11-03T21:19:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt"
   },
   {
@@ -2939,7 +2942,7 @@
     "licenseId": 5,
     "name": "Facebook News Feed Annoyances Blocker",
     "syntaxId": 3,
-    "updatedDate": "2018-10-16T01:59:10",
+    "updatedDate": "2018-11-03T22:25:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt"
   },
   {
@@ -2952,7 +2955,7 @@
     "licenseId": 5,
     "name": "Facebook Annoyances Blocker",
     "syntaxId": 3,
-    "updatedDate": "2018-10-16T02:02:09",
+    "updatedDate": "2018-11-03T22:29:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt"
   },
   {
@@ -2962,7 +2965,7 @@
     "licenseId": 28,
     "name": "Eesti Custom Sites Filter",
     "syntaxId": 3,
-    "updatedDate": "2018-10-16T02:04:10",
+    "updatedDate": "2018-11-03T22:32:12",
     "viewUrl": "https://adblock.ee/list.php"
   },
   {
@@ -2984,7 +2987,7 @@
     "licenseId": 5,
     "name": "EasyTest",
     "syntaxId": 3,
-    "updatedDate": "2018-10-16T02:10:10",
+    "updatedDate": "2018-11-03T22:40:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easytest.txt"
   },
   {
@@ -2998,7 +3001,7 @@
     "licenseId": 4,
     "name": "EasyPrivacy Without International Filters",
     "syntaxId": 3,
-    "updatedDate": "2018-10-16T02:13:10",
+    "updatedDate": "2018-11-03T22:44:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy_nointernational.txt"
   },
   {
@@ -3007,7 +3010,7 @@
     "licenseId": 4,
     "name": "EasyPrivacy + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T12:43:11",
+    "updatedDate": "2018-11-04T00:29:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easyprivacy+easylist.txt"
   },
   {
@@ -3021,7 +3024,7 @@
     "licenseId": 4,
     "name": "EasyPrivacy",
     "syntaxId": 3,
-    "updatedDate": "2018-10-16T02:16:09",
+    "updatedDate": "2018-11-03T22:48:09",
     "viewUrl": "https://easylist.to/easylist/easyprivacy.txt",
     "viewUrlMirror1": "https://fanboy.co.nz/easyprivacy.txt",
     "viewUrlMirror2": "https://easylist-downloads.adblockplus.org/easyprivacy.txt"
@@ -3037,7 +3040,7 @@
     "licenseId": 5,
     "name": "EasyList Without Rules for Adult Sites",
     "syntaxId": 3,
-    "updatedDate": "2018-10-16T02:18:09",
+    "updatedDate": "2018-11-03T22:51:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noadult.txt"
   },
   {
@@ -3051,7 +3054,7 @@
     "licenseId": 4,
     "name": "EasyList Without Element Hiding Rules",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T10:45:11",
+    "updatedDate": "2018-11-03T23:02:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noelemhide.txt"
   },
   {
@@ -3064,7 +3067,7 @@
     "name": "EasyList Thailand",
     "publishedDate": "2017-04-22T16:36:12",
     "syntaxId": 3,
-    "updatedDate": "2018-10-13T08:54:53",
+    "updatedDate": "2018-10-30T06:45:01",
     "viewUrl": "https://raw.githubusercontent.com/easylist-thailand/easylist-thailand/master/subscription/easylist-thailand.txt"
   },
   {
@@ -3077,7 +3080,7 @@
     "licenseId": 4,
     "name": "EasyList Spanish",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T10:51:09",
+    "updatedDate": "2018-11-03T23:10:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistspanish.txt"
   },
   {
@@ -3092,7 +3095,7 @@
     "licenseId": 16,
     "name": "Fanboy's Annoyance List",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T12:01:10",
+    "updatedDate": "2018-11-03T23:13:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt",
     "viewUrlMirror1": "https://fanboy.co.nz/fanboy-annoyance.txt",
     "viewUrlMirror2": "https://easylist.to/easylist/fanboy-annoyance.txt"
@@ -3103,7 +3106,7 @@
     "licenseId": 4,
     "name": "EasyList Lithuania + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T12:04:10",
+    "updatedDate": "2018-11-03T23:19:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistlithuania+easylist.txt"
   },
   {
@@ -3127,7 +3130,7 @@
     "licenseId": 16,
     "name": "Fanboy's Cookiemonster List",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T12:09:09",
+    "updatedDate": "2018-11-03T23:34:11",
     "viewUrl": "https://fanboy.co.nz/fanboy-cookiemonster.txt"
   },
   {
@@ -3150,7 +3153,7 @@
     "licenseId": 4,
     "name": "Filtri DNS",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T12:17:08",
+    "updatedDate": "2018-11-03T23:47:10",
     "viewUrl": "https://filtri-dns.ga/filtri.txt"
   },
   {
@@ -3164,7 +3167,7 @@
     "name": "Filters by hant0508",
     "publishedDate": "2015-07-11T18:55:57",
     "syntaxId": 3,
-    "updatedDate": "2018-10-03T21:04:09",
+    "updatedDate": "2018-10-30T18:03:19",
     "viewUrl": "https://raw.githubusercontent.com/hant0508/uBlock-filters/master/filters.txt"
   },
   {
@@ -3185,7 +3188,7 @@
     "licenseId": 16,
     "name": "Fanboy's Ultimate List",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T12:25:11",
+    "updatedDate": "2018-11-03T23:59:14",
     "viewUrl": "https://fanboy.co.nz/r/fanboy-ultimate.txt"
   },
   {
@@ -3236,7 +3239,7 @@
     "licenseId": 5,
     "name": "Fanboy's Social Blocking List",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T13:18:09",
+    "updatedDate": "2018-11-04T00:58:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-social.txt",
     "viewUrlMirror1": "https://fanboy.co.nz/fanboy-social.txt",
     "viewUrlMirror2": "https://easylist-downloads.adblockplus.org/fanboy-social.txt"
@@ -3310,7 +3313,7 @@
     "licenseId": 16,
     "name": "Fanboy's Enhanced Tracking List",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T13:41:08",
+    "updatedDate": "2018-11-04T01:27:09",
     "viewUrl": "https://fanboy.co.nz/enhancedstats.txt"
   },
   {
@@ -3319,7 +3322,7 @@
     "licenseId": 16,
     "name": "Fanboy's Complete List",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T13:46:10",
+    "updatedDate": "2018-11-04T01:32:11",
     "viewUrl": "https://fanboy.co.nz/r/fanboy-complete.txt"
   },
   {
@@ -3332,7 +3335,7 @@
     "licenseId": 4,
     "name": "EasyList Lithuania",
     "syntaxId": 3,
-    "updatedDate": "2018-10-10T09:39:10",
+    "updatedDate": "2018-10-30T18:14:09",
     "viewUrl": "https://margevicius.lt/easylistlithuania.txt"
   },
   {
@@ -3356,7 +3359,7 @@
     "licenseId": 4,
     "name": "EasyList Italy + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T14:17:11",
+    "updatedDate": "2018-11-04T02:29:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly+easylist.txt"
   },
   {
@@ -3381,7 +3384,7 @@
     "licenseId": 5,
     "name": "DNS-BH Adblock Plus Malware Domains Full",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T14:42:09",
+    "updatedDate": "2018-11-04T02:49:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt"
   },
   {
@@ -3402,7 +3405,7 @@
     "licenseId": 4,
     "name": "Disconnect Malware Filter List",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T14:50:08",
+    "updatedDate": "2018-11-04T02:58:09",
     "viewUrl": "https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt"
   },
   {
@@ -3413,7 +3416,7 @@
     "licenseId": 4,
     "name": "Disconnect Malvertising Filter List",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T14:54:09",
+    "updatedDate": "2018-11-04T03:02:09",
     "viewUrl": "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt"
   },
   {
@@ -3435,7 +3438,7 @@
     "licenseId": 32,
     "name": "Dan Pollock's Hosts",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T15:03:10",
+    "updatedDate": "2018-11-04T03:12:12",
     "viewUrl": "https://someonewhocares.org/hosts/zero/hosts",
     "viewUrlMirror1": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/someonewhocares.org/hosts"
   },
@@ -3474,7 +3477,7 @@
     "licenseId": 5,
     "name": "Cookie Blocklist",
     "syntaxId": 3,
-    "updatedDate": "2018-10-03T23:34:06",
+    "updatedDate": "2018-10-25T14:57:09",
     "viewUrl": "https://www.eff.org/files/cookieblocklist.txt"
   },
   {
@@ -3501,7 +3504,7 @@
     "name": "CJX's Annoyance List",
     "publishedDate": "2015-02-04T10:34:04",
     "syntaxId": 3,
-    "updatedDate": "2018-10-15T13:02:25",
+    "updatedDate": "2018-11-02T05:33:52",
     "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
   },
   {
@@ -3521,7 +3524,7 @@
     "licenseId": 4,
     "name": "Bulgarian List + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T15:32:11",
+    "updatedDate": "2018-11-04T03:42:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/bulgarian_list+easylist.txt"
   },
   {
@@ -3533,6 +3536,7 @@
     "licenseId": 4,
     "name": "Bulgarian List",
     "syntaxId": 3,
+    "updatedDate": "2018-10-25T15:22:09",
     "viewUrl": "https://stanev.org/abp/adblock_bg.txt"
   },
   {
@@ -3569,7 +3573,7 @@
     "licenseId": 5,
     "name": "DNS-BH Malware Domains",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T15:47:08",
+    "updatedDate": "2018-11-04T04:02:12",
     "viewUrl": "https://mirror1.malwaredomains.com/files/justdomains",
     "viewUrlMirror1": "https://mirror.cedia.org.ec/malwaredomains/justdomains"
   },
@@ -3597,7 +3601,7 @@
     "licenseId": 4,
     "name": "EasyList Italy",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T15:55:09",
+    "updatedDate": "2018-11-04T04:13:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly.txt"
   },
   {
@@ -3606,7 +3610,7 @@
     "licenseId": 7,
     "name": "EasyList Hebrew + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T15:59:10",
+    "updatedDate": "2018-11-04T04:19:13",
     "viewUrl": "https://easylist-downloads.adblockplus.org/israellist+easylist.txt"
   },
   {
@@ -3620,7 +3624,7 @@
     "name": "EasyList Hebrew",
     "publishedDate": "2014-01-20T15:40:09",
     "syntaxId": 3,
-    "updatedDate": "2018-10-12T09:49:22",
+    "updatedDate": "2018-11-01T18:46:49",
     "viewUrl": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt"
   },
   {
@@ -3629,7 +3633,7 @@
     "licenseId": 4,
     "name": "EasyList Germany + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T16:11:10",
+    "updatedDate": "2018-11-04T04:37:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany+easylist.txt"
   },
   {
@@ -3643,7 +3647,7 @@
     "licenseId": 4,
     "name": "EasyList Germany",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T16:22:12",
+    "updatedDate": "2018-11-04T04:55:13",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany.txt",
     "viewUrlMirror1": "https://easylist.to/easylistgermany/easylistgermany.txt"
   },
@@ -3653,7 +3657,7 @@
     "licenseId": 4,
     "name": "EasyList Dutch + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T16:26:10",
+    "updatedDate": "2018-11-04T04:59:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch+easylist.txt"
   },
   {
@@ -3666,7 +3670,7 @@
     "licenseId": 4,
     "name": "EasyList Dutch",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T16:34:09",
+    "updatedDate": "2018-11-04T05:11:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch.txt"
   },
   {
@@ -3686,7 +3690,7 @@
     "licenseId": 8,
     "name": "EasyList Czech and Slovak + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T16:41:10",
+    "updatedDate": "2018-11-04T05:19:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistczechslovak+easylist.txt"
   },
   {
@@ -3707,7 +3711,7 @@
     "licenseId": 4,
     "name": "EasyList China + EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T16:52:11",
+    "updatedDate": "2018-11-04T05:33:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt"
   },
   {
@@ -3720,7 +3724,7 @@
     "licenseId": 4,
     "name": "EasyList China",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T17:33:11",
+    "updatedDate": "2018-11-04T06:37:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina.txt"
   },
   {
@@ -3734,7 +3738,7 @@
     "licenseId": 4,
     "name": "EasyList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T17:36:08",
+    "updatedDate": "2018-11-04T06:41:09",
     "viewUrl": "https://easylist.to/easylist/easylist.txt",
     "viewUrlMirror1": "https://fanboy.co.nz/easylist.txt",
     "viewUrlMirror2": "https://easylist-downloads.adblockplus.org/easylist.txt"
@@ -3748,7 +3752,7 @@
     "licenseId": 25,
     "name": "DShield.org Recommended Block List",
     "syntaxId": 9,
-    "updatedDate": "2018-10-19T18:18:08",
+    "updatedDate": "2018-11-04T07:46:10",
     "viewUrl": "https://feeds.dshield.org/block.txt"
   },
   {
@@ -3786,7 +3790,7 @@
     "name": "EasyList Czech and Slovak",
     "publishedDate": "2013-08-17T18:16:56",
     "syntaxId": 3,
-    "updatedDate": "2018-10-17T21:14:33",
+    "updatedDate": "2018-11-03T20:51:53",
     "viewUrl": "https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters.txt"
   },
   {
@@ -3799,7 +3803,7 @@
     "licenseId": 5,
     "name": "YouTube: Remove Youtube Suggestions",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T18:34:09",
+    "updatedDate": "2018-11-04T07:58:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt"
   },
   {
@@ -3823,7 +3827,7 @@
     "name": "NoCoin Hosts",
     "publishedDate": "2017-09-24T07:21:24",
     "syntaxId": 1,
-    "updatedDate": "2018-10-18T01:15:26",
+    "updatedDate": "2018-10-28T03:27:14",
     "viewUrl": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt"
   },
   {
@@ -3835,7 +3839,7 @@
     "licenseId": 5,
     "name": "1Hosts",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T18:49:08",
+    "updatedDate": "2018-11-04T08:16:13",
     "viewUrl": "https://1hosts.cf/"
   },
   {
@@ -3900,7 +3904,7 @@
     "licenseId": 13,
     "name": "AlleBlock",
     "syntaxId": 3,
-    "updatedDate": "2018-10-04T04:06:12",
+    "updatedDate": "2018-10-30T23:21:09",
     "viewUrl": "https://alleblock.pl/alleblock/alleblock.txt"
   },
   {
@@ -3927,7 +3931,7 @@
     "name": "Adserving and Tracking Domains",
     "publishedDate": "2017-07-11T07:43:35",
     "syntaxId": 1,
-    "updatedDate": "2018-10-16T11:47:03",
+    "updatedDate": "2018-11-02T08:19:39",
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt"
   },
   {
@@ -3940,7 +3944,7 @@
     "name": "CoinMiner",
     "publishedDate": "2017-11-25T09:12:55",
     "syntaxId": 1,
-    "updatedDate": "2018-09-15T15:14:22",
+    "updatedDate": "2018-10-28T06:59:56",
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/blacklist/master/CoinMiner.txt"
   },
   {
@@ -3980,7 +3984,7 @@
     "name": "Commonly Whitelisted Domains",
     "publishedDate": "2018-02-22T18:09:03",
     "syntaxId": 2,
-    "updatedDate": "2018-10-04T04:28:10",
+    "updatedDate": "2018-11-01T22:57:11",
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt"
   },
   {
@@ -4008,7 +4012,7 @@
     "name": "Commonly Whitelisted Domains (Optional)",
     "publishedDate": "2018-02-22T18:10:09",
     "syntaxId": 2,
-    "updatedDate": "2018-09-30T03:28:50",
+    "updatedDate": "2018-11-02T08:05:31",
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt"
   },
   {
@@ -4047,7 +4051,7 @@
     "licenseId": 5,
     "name": "Monojp's Hosts",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T20:29:09",
+    "updatedDate": "2018-10-30T23:59:09",
     "viewUrl": "https://hosts.herndl.org/hosts_blacklist.txt"
   },
   {
@@ -4076,7 +4080,7 @@
     "licenseId": 10,
     "name": "Norwegian Extensions For UBO & Nano",
     "syntaxId": 4,
-    "updatedDate": "2018-10-19T20:37:10",
+    "updatedDate": "2018-10-31T00:06:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExtensionsForUBO%26Nano.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExtensionsForUBO&Nano.txt",
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/masterNorwegianExtensionsForUBO&Nano.txt"
@@ -4090,7 +4094,7 @@
     "name": "Yhosts",
     "publishedDate": "2016-01-12T12:53:17",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T11:07:10",
+    "updatedDate": "2018-11-03T11:30:57",
     "viewUrl": "https://raw.githubusercontent.com/vokins/yhosts/master/hosts.txt"
   },
   {
@@ -4103,7 +4107,7 @@
     "name": "ThaiConsentHosts",
     "publishedDate": "2017-05-12T13:34:17",
     "syntaxId": 1,
-    "updatedDate": "2018-10-09T11:28:21",
+    "updatedDate": "2018-10-23T13:23:40",
     "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiConsentHosts/master/ThaiConsentHosts.txt"
   },
   {
@@ -4116,7 +4120,7 @@
     "name": "Thai Paranoid Block",
     "publishedDate": "2016-01-09T17:08:54",
     "syntaxId": 4,
-    "updatedDate": "2018-09-21T23:44:21",
+    "updatedDate": "2018-10-30T05:36:45",
     "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/master/ThaiParanoid.txt"
   },
   {
@@ -4154,7 +4158,7 @@
     "name": "Warui Hosts",
     "submissionUrl": "https://warui.intaa.net/adhosts/#fh5co-blog-section",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T21:22:12",
+    "updatedDate": "2018-10-31T00:47:13",
     "viewUrl": "https://warui.intaa.net/adhosts/hosts.txt"
   },
   {
@@ -4238,7 +4242,7 @@
     "name": "Polish Social Filters - Supplement for uBlock & AdGuard",
     "publishedDate": "2018-01-06T00:00:00",
     "syntaxId": 4,
-    "updatedDate": "2018-10-19T09:03:18",
+    "updatedDate": "2018-10-21T19:37:42",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/adblock_social_filters/social_filters_uB_AG.txt"
   },
   {
@@ -4251,7 +4255,7 @@
     "name": "Polish Anti-Donate Filters",
     "publishedDate": "2018-01-06T00:00:00",
     "syntaxId": 4,
-    "updatedDate": "2018-10-19T16:16:39",
+    "updatedDate": "2018-10-26T03:23:53",
     "viewUrl": "https://raw.githubusercontent.com/KonoromiHimaries/PolishSubFilters/master/internal-filters/anti-donate-filters/anty-donacje.txt"
   },
   {
@@ -4265,7 +4269,7 @@
     "name": "Polish GDPR-Cookies Filters - Supplement for uBlock & AdGuard",
     "publishedDate": "2018-01-12T00:00:00",
     "syntaxId": 4,
-    "updatedDate": "2018-10-19T09:03:18",
+    "updatedDate": "2018-11-03T09:15:44",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/cookies_filters/cookies_uB_AG.txt"
   },
   {
@@ -4278,7 +4282,7 @@
     "name": "Polish Internal Filters",
     "publishedDate": "2018-01-26T00:00:00",
     "syntaxId": 4,
-    "updatedDate": "2018-10-19T16:14:40",
+    "updatedDate": "2018-10-26T03:16:46",
     "viewUrl": "https://raw.githubusercontent.com/KonoromiHimaries/PolishSubFilters/master/internal-filters/wewnetrzne.txt"
   },
   {
@@ -4293,7 +4297,7 @@
     "name": "Official Polish Filters for AdBlock, uBlock Origin & AdGuard - Supplement for AdGuard",
     "publishedDate": "2017-04-25T00:00:00",
     "syntaxId": 6,
-    "updatedDate": "2018-10-12T20:39:56",
+    "updatedDate": "2018-11-02T16:21:13",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_adguard.txt"
   },
   {
@@ -4322,7 +4326,7 @@
     "name": "Polish Filters for Pi-hole",
     "publishedDate": "2017-09-11T00:00:00",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T01:03:18",
+    "updatedDate": "2018-11-04T02:03:15",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/hostfile.txt"
   },
   {
@@ -4331,7 +4335,7 @@
     "licenseId": 5,
     "name": "VXVault",
     "syntaxId": 8,
-    "updatedDate": "2018-10-19T22:52:09",
+    "updatedDate": "2018-11-04T13:44:10",
     "viewUrl": "http://vxvault.net/URL_List.php"
   },
   {
@@ -4346,7 +4350,7 @@
     "publishedDate": "2017-10-23T00:00:00",
     "submissionUrl": "https://polishannoyancefilters.netlify.com/issues",
     "syntaxId": 4,
-    "updatedDate": "2018-10-19T15:39:42",
+    "updatedDate": "2018-11-04T13:42:53",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB_uBlock_AdGuard.txt"
   },
   {
@@ -4360,7 +4364,7 @@
     "name": "AdGuard French Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
-    "updatedDate": "2018-10-19T23:04:09",
+    "updatedDate": "2018-11-04T14:04:10",
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/16.txt"
   },
   {
@@ -4386,7 +4390,7 @@
     "name": "HOSTS AdBlock",
     "publishedDate": "2018-02-17T00:00:00",
     "syntaxId": 3,
-    "updatedDate": "2018-10-12T19:07:12",
+    "updatedDate": "2018-10-31T22:11:54",
     "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts/master/build/hosts_adblock.txt"
   },
   {
@@ -4399,7 +4403,7 @@
     "name": "HOSTS AdBlock - Anti-Annoyance - Block Annoying Connections",
     "publishedDate": "2018-02-17T00:00:00",
     "syntaxId": 3,
-    "updatedDate": "2018-10-12T19:07:12",
+    "updatedDate": "2018-10-31T22:11:54",
     "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts/master/build/hosts_adblock_anti_annoyances_block.txt"
   },
   {
@@ -4412,7 +4416,7 @@
     "name": "HOSTS AdBlock - Anti-Annoyance - Block Annoying Page-Scripts",
     "publishedDate": "2018-02-17T00:00:00",
     "syntaxId": 3,
-    "updatedDate": "2018-08-31T19:42:05",
+    "updatedDate": "2018-10-31T22:11:54",
     "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts/master/build/hosts_adblock_anti_annoyances_block_inline_script.txt"
   },
   {
@@ -4425,7 +4429,7 @@
     "name": "HOSTS AdBlock - Anti-Annoyance - Hide Annoying Elements",
     "publishedDate": "2018-02-17T00:00:00",
     "syntaxId": 3,
-    "updatedDate": "2018-10-12T19:07:12",
+    "updatedDate": "2018-10-31T22:11:54",
     "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts/master/build/hosts_adblock_anti_annoyances_hide.txt"
   },
   {
@@ -4438,7 +4442,7 @@
     "name": "HOSTS AdBlock - Anti-Annoyance - ReStyle Annoying Pages",
     "publishedDate": "2018-02-17T00:00:00",
     "syntaxId": 3,
-    "updatedDate": "2018-10-05T19:08:08",
+    "updatedDate": "2018-10-31T21:13:37",
     "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts/master/build/hosts_adblock_anti_annoyances_style_inject.txt"
   },
   {
@@ -4453,7 +4457,7 @@
     "name": "CoinBlocker Domains List",
     "publishedDate": "2017-10-12T00:00:00",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T12:16:09",
+    "updatedDate": "2018-10-31T15:13:09",
     "viewUrl": "https://zerodot1.gitlab.io/CoinBlockerLists/list.txt"
   },
   {
@@ -4498,7 +4502,7 @@
     "name": "CoinBlocker Hosts List",
     "publishedDate": "2017-10-12T00:00:00",
     "syntaxId": 1,
-    "updatedDate": "2018-10-20T12:35:09",
+    "updatedDate": "2018-10-31T15:20:09",
     "viewUrl": "https://zerodot1.gitlab.io/CoinBlockerLists/hosts"
   },
   {
@@ -4556,7 +4560,7 @@
     "name": "Squid Blacklist Ad Servers and Trackers",
     "submissionUrl": "https://www.squidblacklist.org/php/url_submission_form.php",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T13:03:09",
+    "updatedDate": "2018-11-05T11:54:10",
     "viewUrl": "https://www.squidblacklist.org/downloads/dg-ads.acl"
   },
   {
@@ -4569,7 +4573,7 @@
     "name": "Squid Blacklist Facebook",
     "submissionUrl": "https://www.squidblacklist.org/php/url_submission_form.php",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T13:10:10",
+    "updatedDate": "2018-11-05T12:08:11",
     "viewUrl": "https://www.squidblacklist.org/downloads/dg-facebook.acl"
   },
   {
@@ -4582,7 +4586,7 @@
     "name": "Squid Blacklist Malicious",
     "submissionUrl": "https://www.squidblacklist.org/php/url_submission_form.php",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T13:17:08",
+    "updatedDate": "2018-11-05T12:22:10",
     "viewUrl": "https://www.squidblacklist.org/downloads/dg-malicious.acl"
   },
   {
@@ -4639,7 +4643,7 @@
     "licenseId": 8,
     "name": "EasyList Czech and Slovak - IE",
     "syntaxId": 10,
-    "updatedDate": "2018-10-20T13:45:10",
+    "updatedDate": "2018-11-05T13:06:10",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistczechslovak+easylist.tpl"
   },
   {
@@ -4698,7 +4702,7 @@
     "name": "All-in-One Customized Adblock List",
     "publishedDate": "2018-02-17T00:00:00",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T12:08:02",
+    "updatedDate": "2018-11-05T13:11:43",
     "viewUrl": "https://raw.githubusercontent.com/hl2guide/All-in-One-Customized-Adblock-List/master/deanoman-adblocklist.txt"
   },
   {
@@ -4774,7 +4778,7 @@
     "name": "Rickroll Blacklist",
     "submissionUrl": "http://rickrolldb.com/",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T14:50:08",
+    "updatedDate": "2018-10-31T17:00:10",
     "viewUrl": "http://rickrolldb.com/ricklist.txt"
   },
   {
@@ -4787,7 +4791,7 @@
     "name": "PornList",
     "publishedDate": "2018-03-17T00:00:00",
     "syntaxId": 3,
-    "updatedDate": "2018-10-24T09:47:44",
+    "updatedDate": "2018-10-24T12:39:14",
     "viewUrl": "https://raw.githubusercontent.com/WowDude/PornList/master/PornList.txt"
   },
   {
@@ -4876,7 +4880,7 @@
     "name": "Polish RSS Filters",
     "publishedDate": "2018-03-30T00:00:00",
     "syntaxId": 3,
-    "updatedDate": "2018-10-18T09:31:35",
+    "updatedDate": "2018-10-30T11:07:44",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishRSSFilters/master/polish_rss_filters.txt"
   },
   {
@@ -4922,7 +4926,7 @@
     "name": "Dandelion Sprout's Redirector List",
     "publishedDate": "2018-05-15T00:00:00",
     "syntaxId": 11,
-    "updatedDate": "2018-10-20T15:28:09",
+    "updatedDate": "2018-10-26T14:58:08",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json",
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json"
@@ -4936,7 +4940,7 @@
     "name": "DNSlock-PiHole-whitelist",
     "publishedDate": "2018-03-11T00:00:00",
     "syntaxId": 2,
-    "updatedDate": "2018-09-30T09:19:51",
+    "updatedDate": "2018-10-26T17:30:49",
     "viewUrl": "https://raw.githubusercontent.com/raghavdua1995/DNSlock-PiHole-whitelist/master/whitelist.list"
   },
   {
@@ -4947,7 +4951,7 @@
     "name": "Nano filters",
     "publishedDate": "2017-12-09T03:28:59",
     "syntaxId": 12,
-    "updatedDate": "2018-10-19T00:59:13",
+    "updatedDate": "2018-10-31T00:53:41",
     "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt"
   },
   {
@@ -4969,7 +4973,7 @@
     "name": "Nano filters - Annoyance",
     "publishedDate": "2017-12-11T15:31:47",
     "syntaxId": 12,
-    "updatedDate": "2018-10-18T20:13:28",
+    "updatedDate": "2018-10-28T16:25:02",
     "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt"
   },
   {
@@ -4982,7 +4986,7 @@
     "name": "Frellwit's Swedish Filter",
     "publishedDate": "2017-01-05T07:07:23",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T16:20:24",
+    "updatedDate": "2018-10-30T20:45:02",
     "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Filter.txt",
     "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/Frellwits-Swedish-Filter.txt"
   },
@@ -4995,7 +4999,7 @@
     "name": "notracking - Domains",
     "publishedDate": "2015-12-20T00:23:44",
     "syntaxId": 20,
-    "updatedDate": "2018-10-20T03:19:17",
+    "updatedDate": "2018-10-31T04:24:58",
     "viewUrl": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domains.txt"
   },
   {
@@ -5007,7 +5011,7 @@
     "name": "notracking - Hostnames",
     "publishedDate": "2015-12-20T00:23:44",
     "syntaxId": 1,
-    "updatedDate": "2018-10-20T03:19:17",
+    "updatedDate": "2018-10-31T04:24:58",
     "viewUrl": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt"
   },
   {
@@ -5043,7 +5047,7 @@
     "name": "uAssets Annoyances",
     "publishedDate": "2017-12-17T14:31:17",
     "syntaxId": 4,
-    "updatedDate": "2018-10-19T21:38:28",
+    "updatedDate": "2018-10-31T12:35:30",
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt"
   },
   {
@@ -5056,7 +5060,7 @@
     "name": "uAssets Resource Abuse",
     "publishedDate": "2017-09-23T22:19:37",
     "syntaxId": 4,
-    "updatedDate": "2018-10-17T06:49:26",
+    "updatedDate": "2018-10-29T05:46:22",
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt"
   },
   {
@@ -5109,7 +5113,7 @@
     "name": "Referrer Spam Blacklist (Matomo)",
     "publishedDate": "2015-04-19T11:34:53",
     "syntaxId": 2,
-    "updatedDate": "2018-10-10T22:10:08",
+    "updatedDate": "2018-10-25T15:44:11",
     "viewUrl": "https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/spammers.txt"
   },
   {
@@ -5121,7 +5125,7 @@
     "name": "Referer Spam Blacklist (desbma)",
     "publishedDate": "2015-04-19T11:34:53",
     "syntaxId": 2,
-    "updatedDate": "2018-10-16T22:56:08",
+    "updatedDate": "2018-10-25T22:09:06",
     "viewUrl": "https://raw.githubusercontent.com/desbma/referer-spam-domains-blacklist/master/spammers.txt"
   },
   {
@@ -5133,7 +5137,7 @@
     "licenseId": 5,
     "name": "JoeWein Domain Blacklist Base",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T17:04:13",
+    "updatedDate": "2018-10-31T22:41:11",
     "viewUrl": "https://www.joewein.net/dl/bl/dom-bl-base.txt"
   },
   {
@@ -5143,7 +5147,7 @@
     "licenseId": 5,
     "name": "JoeWein Email Sender Blacklist",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T17:29:12",
+    "updatedDate": "2018-10-31T23:05:12",
     "viewUrl": "https://www.joewein.net/dl/bl/from-bl.txt"
   },
   {
@@ -5210,7 +5214,7 @@
     "licenseId": 21,
     "name": "OSINT C2 IP Feed",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T18:38:08",
+    "updatedDate": "2018-11-01T00:18:09",
     "viewUrl": "https://osint.bambenekconsulting.com/feeds/c2-ipmasterlist.txt"
   },
   {
@@ -5269,7 +5273,7 @@
     "licenseId": 10,
     "name": "Dandelion Sprout's Website Stretcher",
     "syntaxId": 4,
-    "updatedDate": "2018-10-20T18:48:08",
+    "updatedDate": "2018-10-26T18:21:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Website%20Stretcher.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout%27s%20Website%20Stretcher.txt",
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Dandelion%20Sprout%27s%20Website%20Stretcher.txt"
@@ -5284,7 +5288,7 @@
     "licenseId": 10,
     "name": "Anti-FіМ List",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T18:51:09",
+    "updatedDate": "2018-11-01T00:30:09",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-F%D1%96%D0%9C%20List.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-F%D1%96%D0%9C%20List.txt",
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Anti-F%D1%96%D0%9C%20List.txt"
@@ -5329,7 +5333,7 @@
     "name": "Google Hosts",
     "publishedDate": "2017-08-18T07:43:41",
     "syntaxId": 14,
-    "updatedDate": "2018-10-20T12:35:12",
+    "updatedDate": "2018-10-29T12:29:13",
     "viewUrl": "https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts",
     "viewUrlMirror1": "https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts-files/hosts"
   },
@@ -5359,7 +5363,7 @@
     "name": "EasyList Brasil",
     "publishedDate": "2018-08-05T20:20:52",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T19:02:09",
+    "updatedDate": "2018-10-26T18:35:10",
     "viewUrl": "https://raw.githubusercontent.com/easylistbrasil/easylistbrasil/filtro/easylistbrasil.txt"
   },
   {
@@ -5435,7 +5439,7 @@
     "licenseId": 2,
     "name": "EasyList Hosts",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T19:22:09",
+    "updatedDate": "2018-11-01T00:57:09",
     "viewUrl": "https://v.firebog.net/hosts/Easylist.txt"
   },
   {
@@ -5445,7 +5449,7 @@
     "licenseId": 2,
     "name": "EasyPrivacy Hosts",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T19:25:09",
+    "updatedDate": "2018-11-01T01:00:09",
     "viewUrl": "https://v.firebog.net/hosts/Easyprivacy.txt"
   },
   {
@@ -5492,7 +5496,7 @@
     "name": "WindowsSpyBlocker Hosts Spy",
     "publishedDate": "2018-06-02T20:09:11",
     "syntaxId": 1,
-    "updatedDate": "2018-08-13T22:20:10",
+    "updatedDate": "2018-10-23T00:20:37",
     "viewUrl": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt"
   },
   {
@@ -5505,7 +5509,7 @@
     "name": "WindowsSpyBlocker Hosts Update",
     "publishedDate": "2018-06-02T20:09:11",
     "syntaxId": 1,
-    "updatedDate": "2018-09-18T14:39:17",
+    "updatedDate": "2018-10-23T00:01:29",
     "viewUrl": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/update.txt"
   },
   {
@@ -5517,7 +5521,7 @@
     "name": "WindowsSpyBlocker Hosts Extra",
     "publishedDate": "2018-06-02T20:09:11",
     "syntaxId": 1,
-    "updatedDate": "2018-08-13T22:20:10",
+    "updatedDate": "2018-10-23T00:01:29",
     "viewUrl": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/extra.txt"
   },
   {
@@ -5525,7 +5529,7 @@
     "licenseId": 2,
     "name": "Prigent Malware",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T20:18:09",
+    "updatedDate": "2018-11-01T01:41:09",
     "viewUrl": "https://v.firebog.net/hosts/Prigent-Malware.txt"
   },
   {
@@ -5577,7 +5581,7 @@
     "name": "Firehol Level 1",
     "publishedDate": "2018-10-07T05:30:15",
     "syntaxId": 9,
-    "updatedDate": "2018-10-14T05:30:13",
+    "updatedDate": "2018-10-28T06:31:43",
     "viewUrl": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level1.netset"
   },
   {
@@ -5589,7 +5593,7 @@
     "name": "Firehol Level 2",
     "publishedDate": "2018-10-07T05:30:15",
     "syntaxId": 9,
-    "updatedDate": "2018-10-14T05:30:13",
+    "updatedDate": "2018-10-28T06:31:43",
     "viewUrl": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level2.netset"
   },
   {
@@ -5691,7 +5695,7 @@
     "licenseId": 4,
     "name": "EasyList Polish",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T21:05:09",
+    "updatedDate": "2018-11-01T02:18:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistpolish.txt"
   },
   {
@@ -5721,7 +5725,7 @@
     "publishedDate": "2018-10-12T13:30:18",
     "submissionUrl": "https://goo.gl/forms/OcfsOHWsSDMp5dw53",
     "syntaxId": 1,
-    "updatedDate": "2018-10-12T13:30:18",
+    "updatedDate": "2018-10-27T06:12:18",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/spark/formats/hosts",
     "viewUrlMirror1": "https://nayemador.com/energized/spark"
   },
@@ -5740,7 +5744,7 @@
     "publishedDate": "2018-10-12T13:30:18",
     "submissionUrl": "https://goo.gl/forms/OcfsOHWsSDMp5dw53",
     "syntaxId": 1,
-    "updatedDate": "2018-10-12T13:30:18",
+    "updatedDate": "2018-10-27T06:12:18",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/bluGo/formats/hosts",
     "viewUrlMirror1": "https://nayemador.com/energized/bluGo",
     "viewUrlMirror2": "https://raw.githubusercontent.com/EnergizedProtection/block/master/bluGo/formats/hosts.txt"
@@ -5760,7 +5764,7 @@
     "publishedDate": "2018-10-12T13:30:18",
     "submissionUrl": "https://goo.gl/forms/OcfsOHWsSDMp5dw53",
     "syntaxId": 1,
-    "updatedDate": "2018-10-12T13:30:18",
+    "updatedDate": "2018-10-27T06:12:18",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/blu/formats/hosts",
     "viewUrlMirror1": "https://nayemador.com/energized/blu",
     "viewUrlMirror2": "https://raw.githubusercontent.com/EnergizedProtection/block/master/blu/formats/hosts.txt"
@@ -5780,7 +5784,7 @@
     "publishedDate": "2018-10-12T13:30:18",
     "submissionUrl": "https://goo.gl/forms/OcfsOHWsSDMp5dw53",
     "syntaxId": 1,
-    "updatedDate": "2018-10-12T13:30:18",
+    "updatedDate": "2018-10-27T06:12:18",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/basic/formats/hosts",
     "viewUrlMirror1": "https://nayemador.com/energized/basic",
     "viewUrlMirror2": "https://raw.githubusercontent.com/EnergizedProtection/block/master/basic/formats/hosts.txt"
@@ -5800,7 +5804,7 @@
     "publishedDate": "2018-10-08T06:24:46",
     "submissionUrl": "https://goo.gl/forms/OcfsOHWsSDMp5dw53",
     "syntaxId": 1,
-    "updatedDate": "2018-10-12T13:30:18",
+    "updatedDate": "2018-10-27T06:12:18",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn/formats/hosts",
     "viewUrlMirror1": "https://nayemador.com/energized/porn",
     "viewUrlMirror2": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn/formats/hosts.txt"
@@ -5820,7 +5824,7 @@
     "publishedDate": "2018-10-08T06:24:46",
     "submissionUrl": "https://goo.gl/forms/OcfsOHWsSDMp5dw53",
     "syntaxId": 1,
-    "updatedDate": "2018-10-12T13:30:18",
+    "updatedDate": "2018-10-27T06:12:18",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/ultimate/formats/hosts",
     "viewUrlMirror1": "https://nayemador.com/energized/ultimate",
     "viewUrlMirror2": "https://raw.githubusercontent.com/EnergizedProtection/block/master/ultimate/formats/hosts.txt"
@@ -5840,7 +5844,7 @@
     "publishedDate": "2018-10-08T06:24:46",
     "submissionUrl": "https://goo.gl/forms/OcfsOHWsSDMp5dw53",
     "syntaxId": 1,
-    "updatedDate": "2018-10-12T13:30:18",
+    "updatedDate": "2018-10-27T06:12:18",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/unified/formats/hosts",
     "viewUrlMirror1": "https://nayemador.com/energized/unified",
     "viewUrlMirror2": "https://raw.githubusercontent.com/EnergizedProtection/block/master/unified/formats/hosts.txt"
@@ -5937,7 +5941,7 @@
     "name": "Badd Boyz Hosts",
     "publishedDate": "2017-02-22T08:37:26",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T22:41:41",
+    "updatedDate": "2018-10-31T07:36:49",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts"
   },
   {
@@ -6002,7 +6006,7 @@
     "licenseId": 5,
     "name": "Acceptable Ads without third-party tracking",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T12:11:10",
+    "updatedDate": "2018-11-03T23:37:11",
     "viewUrl": "https://easylist-downloads.adblockplus.org/exceptionrules-privacy-friendly.txt"
   },
   {
@@ -6016,7 +6020,7 @@
     "licenseId": 4,
     "name": "EasyList TPL",
     "syntaxId": 10,
-    "updatedDate": "2018-10-19T12:14:10",
+    "updatedDate": "2018-11-03T23:41:11",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylist.tpl"
   },
   {
@@ -6055,7 +6059,7 @@
     "name": "BlockUnderRadarJunk",
     "publishedDate": "2018-02-02T00:00:00",
     "syntaxId": 3,
-    "updatedDate": "2018-10-17T15:55:45",
+    "updatedDate": "2018-11-01T21:25:38",
     "viewUrl": "https://raw.githubusercontent.com/UnluckyLuke/BlockUnderRadarJunk/master/blockunderradarjunk-list.txt"
   },
   {
@@ -6069,7 +6073,7 @@
     "name": "MinerBlock Filters",
     "publishedDate": "2017-09-26T00:00:00",
     "syntaxId": 13,
-    "updatedDate": "2018-10-11T18:35:15",
+    "updatedDate": "2018-10-21T10:08:46",
     "viewUrl": "https://raw.githubusercontent.com/xd4rker/MinerBlock/master/assets/filters.txt"
   },
   {
@@ -6082,7 +6086,7 @@
     "name": "Andromeda uBlock List",
     "publishedDate": "2018-05-01T00:00:00",
     "syntaxId": 4,
-    "updatedDate": "2018-10-17T19:49:04",
+    "updatedDate": "2018-11-02T04:38:34",
     "viewUrl": "https://raw.githubusercontent.com/hit3shjain/Andromeda-ublock-list/master/hosts.txt"
   },
   {
@@ -6140,7 +6144,7 @@
     "licenseId": 25,
     "name": "DShield.org Suspicious Domain List - Low",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T13:30:09",
+    "updatedDate": "2018-11-04T01:12:10",
     "viewUrl": "https://www.dshield.org/feeds/suspiciousdomains_Low.txt"
   },
   {
@@ -6152,7 +6156,7 @@
     "licenseId": 25,
     "name": "DShield.org Suspicious Domain List - Medium",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T13:34:08",
+    "updatedDate": "2018-11-04T01:17:25",
     "viewUrl": "https://www.dshield.org/feeds/suspiciousdomains_Medium.txt",
     "viewUrlMirror1": "https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt"
   },
@@ -6165,7 +6169,7 @@
     "licenseId": 25,
     "name": "DShield.org Suspicious Domain List - High",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T13:38:08",
+    "updatedDate": "2018-11-04T01:23:10",
     "viewUrl": "https://www.dshield.org/feeds/suspiciousdomains_High.txt"
   },
   {
@@ -6228,7 +6232,7 @@
     "name": "Winding Advertising Filter Rules (乘风 广告过滤规则)",
     "publishedDate": "2015-07-20T14:39:35",
     "syntaxId": 3,
-    "updatedDate": "2018-10-16T07:42:34",
+    "updatedDate": "2018-10-28T08:55:00",
     "viewUrl": "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/ABP-FX.txt"
   },
   {
@@ -6255,7 +6259,7 @@
     "licenseId": 16,
     "name": "Fanboy's problematic-sites",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T18:46:10",
+    "updatedDate": "2018-11-04T08:12:09",
     "viewUrl": "https://fanboy.co.nz/fanboy-problematic-sites.txt"
   },
   {
@@ -6281,7 +6285,7 @@
     "licenseId": 4,
     "name": "ABP Anti-Circumvention Filter List",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T18:56:10",
+    "updatedDate": "2018-11-04T08:28:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
   },
   {
@@ -6337,7 +6341,7 @@
     "name": "ABP Anti-Circumvention Filter List - Czech",
     "publishedDate": "2018-05-15T09:50:43",
     "syntaxId": 3,
-    "updatedDate": "2018-10-15T17:16:40",
+    "updatedDate": "2018-11-02T15:17:18",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/czech.txt"
   },
   {
@@ -6365,7 +6369,7 @@
     "name": "ABP Anti-Circumvention Filter List - Dutch",
     "publishedDate": "2018-05-15T09:50:43",
     "syntaxId": 3,
-    "updatedDate": "2018-09-30T03:08:51",
+    "updatedDate": "2018-10-30T21:03:03",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/dutch.txt"
   },
   {
@@ -6379,7 +6383,7 @@
     "name": "ABP Anti-Circumvention Filter List - English",
     "publishedDate": "2018-05-15T09:50:43",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T16:04:33",
+    "updatedDate": "2018-11-02T15:16:46",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/english.txt"
   },
   {
@@ -6393,7 +6397,7 @@
     "name": "ABP Anti-Circumvention Filter List - French",
     "publishedDate": "2018-05-15T09:50:43",
     "syntaxId": 3,
-    "updatedDate": "2018-09-30T03:16:52",
+    "updatedDate": "2018-10-26T10:59:41",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/french.txt"
   },
   {
@@ -6407,7 +6411,7 @@
     "name": "ABP Anti-Circumvention Filter List - German",
     "publishedDate": "2018-05-15T09:50:43",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T18:36:26",
+    "updatedDate": "2018-11-02T19:34:33",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/german.txt"
   },
   {
@@ -6602,7 +6606,7 @@
     "name": "Gambling Hosts",
     "publishedDate": "2016-03-08T22:13:19",
     "syntaxId": 1,
-    "updatedDate": "2018-09-03T16:26:37",
+    "updatedDate": "2018-10-24T09:28:49",
     "viewUrl": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/gambling-hosts"
   },
   {
@@ -6615,7 +6619,7 @@
     "name": "Pornography Hosts",
     "publishedDate": "2016-02-22T17:16:24",
     "syntaxId": 1,
-    "updatedDate": "2018-10-09T14:21:25",
+    "updatedDate": "2018-11-02T23:01:43",
     "viewUrl": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts"
   },
   {
@@ -6627,7 +6631,7 @@
     "name": "Snuff Hosts",
     "publishedDate": "2017-09-15T16:20:51",
     "syntaxId": 1,
-    "updatedDate": "2018-05-31T04:48:33",
+    "updatedDate": "2018-10-24T09:26:59",
     "viewUrl": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts"
   },
   {
@@ -6640,7 +6644,7 @@
     "name": "Social Hosts",
     "publishedDate": "2016-03-06T16:55:18",
     "syntaxId": 1,
-    "updatedDate": "2018-08-22T16:18:37",
+    "updatedDate": "2018-10-24T09:27:16",
     "viewUrl": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts"
   },
   {
@@ -6667,7 +6671,7 @@
     "name": "Ads & Tracking",
     "publishedDate": "2018-05-10T21:33:02",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T13:10:19",
+    "updatedDate": "2018-11-02T14:43:30",
     "viewUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking.txt"
   },
   {
@@ -6680,7 +6684,7 @@
     "name": "Ads & Tracking Extended",
     "publishedDate": "2018-05-24T14:40:19",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T13:10:19",
+    "updatedDate": "2018-11-02T14:43:30",
     "viewUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking-extended.txt"
   },
   {
@@ -6693,7 +6697,7 @@
     "name": "Tracking Aggressive",
     "publishedDate": "2018-07-19T11:03:56",
     "syntaxId": 1,
-    "updatedDate": "2018-10-16T14:27:34",
+    "updatedDate": "2018-11-01T16:27:55",
     "viewUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/tracking-aggressive.txt"
   },
   {
@@ -6706,7 +6710,7 @@
     "name": "Tracking Aggressive Extended",
     "publishedDate": "2018-07-19T11:03:56",
     "syntaxId": 1,
-    "updatedDate": "2018-10-16T14:27:34",
+    "updatedDate": "2018-11-01T16:27:55",
     "viewUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/tracking-aggressive-extended.txt"
   },
   {
@@ -6719,7 +6723,7 @@
     "name": "hostsVN",
     "publishedDate": "2018-07-02T02:47:03",
     "syntaxId": 1,
-    "updatedDate": "2018-10-18T13:34:51",
+    "updatedDate": "2018-11-02T02:06:14",
     "viewUrl": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts"
   },
   {
@@ -6732,7 +6736,7 @@
     "licenseId": 5,
     "name": "ABPVN Hosts",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T22:34:09",
+    "updatedDate": "2018-11-04T13:23:11",
     "viewUrl": "https://abpvn.com/android/abpvn.txt"
   },
   {
@@ -6746,7 +6750,7 @@
     "name": "ABPVN List - No Element Hide",
     "publishedDate": "2016-10-26T10:06:22",
     "syntaxId": 3,
-    "updatedDate": "2018-10-18T13:47:04",
+    "updatedDate": "2018-11-04T01:32:31",
     "viewUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn_noelemhide.txt"
   },
   {
@@ -6797,7 +6801,7 @@
     "name": "StopForumSpam",
     "publishedDate": "2018-10-07T05:30:15",
     "syntaxId": 9,
-    "updatedDate": "2018-10-14T05:30:13",
+    "updatedDate": "2018-11-03T21:24:10",
     "viewUrl": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/stopforumspam_30d.ipset"
   },
   {
@@ -6808,7 +6812,7 @@
     "name": "Firehol Level 3",
     "publishedDate": "2018-10-07T05:30:15",
     "syntaxId": 9,
-    "updatedDate": "2018-10-14T05:30:13",
+    "updatedDate": "2018-11-03T21:39:10",
     "viewUrl": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level3.netset"
   },
   {
@@ -6821,7 +6825,7 @@
     "name": "Goodbye Ads",
     "publishedDate": "2018-08-11T06:43:58",
     "syntaxId": 1,
-    "updatedDate": "2018-10-14T08:41:00",
+    "updatedDate": "2018-10-31T10:33:10",
     "viewUrl": "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt"
   },
   {
@@ -6835,7 +6839,7 @@
     "name": "Polish Annoyance Filters - Newsletters",
     "publishedDate": "2018-06-27T17:32:02",
     "syntaxId": 3,
-    "updatedDate": "2018-10-16T10:58:25",
+    "updatedDate": "2018-11-04T23:04:44",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt"
   },
   {
@@ -6849,7 +6853,7 @@
     "name": "Polish Annoyance Filters - Arrows",
     "publishedDate": "2018-06-27T17:32:02",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T18:56:48",
+    "updatedDate": "2018-11-04T22:52:23",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_arrows.txt"
   },
   {
@@ -6863,7 +6867,7 @@
     "name": "Polish Annoyances Filters - Web Push Notifications",
     "publishedDate": "2018-06-22T16:42:29",
     "syntaxId": 3,
-    "updatedDate": "2018-10-18T13:21:08",
+    "updatedDate": "2018-11-04T23:04:46",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_push.txt"
   },
   {
@@ -6877,7 +6881,7 @@
     "name": "Polish Annoyance Filters - Scrolling Videos",
     "publishedDate": "2018-06-27T17:32:02",
     "syntaxId": 3,
-    "updatedDate": "2018-09-02T11:22:16",
+    "updatedDate": "2018-11-04T23:04:47",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt"
   },
   {
@@ -6891,7 +6895,7 @@
     "name": "Polish Annoyance Filters - Backgrounds Containing Self-Advertising",
     "publishedDate": "2018-06-29T19:22:33",
     "syntaxId": 3,
-    "updatedDate": "2018-07-14T17:04:55",
+    "updatedDate": "2018-11-04T23:04:43",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_backgrounds_self-advertising.txt"
   },
   {
@@ -6905,7 +6909,7 @@
     "name": "Polish Annoyance Filters - Pop-ups",
     "publishedDate": "2018-06-27T17:32:02",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T07:41:38",
+    "updatedDate": "2018-11-04T23:04:45",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_pop-ups.txt"
   },
   {
@@ -6919,7 +6923,7 @@
     "name": "Polish Annoyance Filters - Contact/Feedback Widgets",
     "publishedDate": "2018-06-30T16:14:48",
     "syntaxId": 3,
-    "updatedDate": "2018-10-18T13:25:41",
+    "updatedDate": "2018-11-04T23:07:01",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_contact_feedback_widgets.txt"
   },
   {
@@ -6961,7 +6965,7 @@
     "name": "Polish Annoyance Filters - Other Widgets",
     "publishedDate": "2018-06-30T16:19:08",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T07:57:12",
+    "updatedDate": "2018-11-04T23:04:45",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt"
   },
   {
@@ -6973,7 +6977,7 @@
     "name": "Peter Lowe's List (Hosts)",
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
     "syntaxId": 1,
-    "updatedDate": "2018-10-20T11:09:09",
+    "updatedDate": "2018-11-05T09:19:10",
     "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
     "viewUrlMirror1": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/yoyo.org/hosts"
   },
@@ -7058,7 +7062,7 @@
     "licenseId": 5,
     "name": "AdGuard Simplified Domain Names Filter (Domains)",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T11:23:08",
+    "updatedDate": "2018-11-05T09:29:15",
     "viewUrl": "https://v.firebog.net/hosts/AdguardDNS.txt"
   },
   {
@@ -7087,7 +7091,7 @@
     "name": "MMotti Host File (Samsung Knox Firewall)",
     "publishedDate": "2018-06-04T23:05:20",
     "syntaxId": 16,
-    "updatedDate": "2018-09-03T13:51:35",
+    "updatedDate": "2018-10-28T09:49:29",
     "viewUrl": "https://raw.githubusercontent.com/mmotti/mmotti-host-file/master/hosts"
   },
   {
@@ -7275,7 +7279,7 @@
     "name": "Web Annoyances Ultralist - Generic Filters",
     "publishedDate": "2018-07-27T15:09:06",
     "syntaxId": 3,
-    "updatedDate": "2018-10-15T12:14:26",
+    "updatedDate": "2018-11-02T14:36:49",
     "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/filters/generic_filters.txt"
   },
   {
@@ -7287,7 +7291,7 @@
     "name": "Web Annoyances Ultralist - Modal Overlay Filters",
     "publishedDate": "2018-08-01T13:56:25",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T18:46:24",
+    "updatedDate": "2018-11-02T18:42:39",
     "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/filters/modal_filters.txt"
   },
   {
@@ -7299,7 +7303,7 @@
     "name": "Web Annoyances Ultralist - Newsletter Subscription Filters",
     "publishedDate": "2018-07-28T20:33:58",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T16:52:31",
+    "updatedDate": "2018-11-02T12:49:48",
     "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/filters/newsletter_filters.txt"
   },
   {
@@ -7311,7 +7315,7 @@
     "name": "Web Annoyances Ultralist - Social Filters",
     "publishedDate": "2018-07-28T20:33:58",
     "syntaxId": 3,
-    "updatedDate": "2018-10-19T16:52:31",
+    "updatedDate": "2018-11-02T12:49:48",
     "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/filters/social_filters.txt"
   },
   {
@@ -7332,7 +7336,7 @@
     "name": "FSMF 2",
     "publishedDate": "2017-01-05T04:44:41",
     "syntaxId": 3,
-    "updatedDate": "2018-10-17T13:56:08",
+    "updatedDate": "2018-10-29T12:15:59",
     "viewUrl": "https://raw.githubusercontent.com/nmtrung/FMSF-2.0/master/fmsf_2.0.txt"
   },
   {
@@ -7343,7 +7347,7 @@
     "name": "Adguard Mobile Ads (hosts)",
     "publishedDate": "2017-07-10T00:35:15",
     "syntaxId": 1,
-    "updatedDate": "2018-10-13T01:34:36",
+    "updatedDate": "2018-11-03T07:34:35",
     "viewUrl": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileAds.txt"
   },
   {
@@ -7354,7 +7358,7 @@
     "name": "Adguard Mobile Tracking and Spyware (hosts)",
     "publishedDate": "2017-07-10T00:35:15",
     "syntaxId": 1,
-    "updatedDate": "2018-10-13T01:34:55",
+    "updatedDate": "2018-11-03T07:34:59",
     "viewUrl": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileSpyware.txt"
   },
   {
@@ -7365,7 +7369,7 @@
     "name": "Adguard Specific Apps (hosts)",
     "publishedDate": "2017-09-13T22:07:05",
     "syntaxId": 1,
-    "updatedDate": "2018-09-29T18:33:51",
+    "updatedDate": "2018-11-03T07:37:50",
     "viewUrl": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardApps.txt"
   },
   {
@@ -7376,7 +7380,7 @@
     "name": "Adguard DNS (hosts)",
     "publishedDate": "2017-11-21T23:40:34",
     "syntaxId": 1,
-    "updatedDate": "2018-10-13T01:35:11",
+    "updatedDate": "2018-11-03T07:37:06",
     "viewUrl": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardDNS.txt"
   },
   {
@@ -7394,7 +7398,7 @@
     "licenseId": 5,
     "name": "10ZiN Host Database (Full)",
     "syntaxId": 1,
-    "updatedDate": "2018-10-15T23:22:09",
+    "updatedDate": "2018-11-03T18:11:09",
     "viewUrl": "https://tgc.cloud/downloads/hosts.txt",
     "viewUrlMirror1": "https://raw.githubusercontent.com/10ZiN/10ZiN.github.io/master/downloads/hosts.txt"
   },
@@ -7431,7 +7435,7 @@
     "name": "Peter Lowe's List (Little Snitch)",
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
     "syntaxId": 18,
-    "updatedDate": "2018-10-19T21:33:10",
+    "updatedDate": "2018-11-04T11:58:10",
     "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=littlesnitch-rule-group-subscriptions;showintro=1&mimetype=plaintext"
   },
   {
@@ -7442,7 +7446,7 @@
     "name": "Peter Lowe's List (Internet Explorer)",
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
     "syntaxId": 10,
-    "updatedDate": "2018-10-19T21:35:09",
+    "updatedDate": "2018-11-04T12:01:18",
     "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=msfilter&showintro=1&mimetype=plaintext"
   },
   {
@@ -7453,7 +7457,7 @@
     "name": "Peter Lowe's List (Domains)",
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T21:37:10",
+    "updatedDate": "2018-11-04T12:05:11",
     "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&showintro=1&mimetype=plaintext"
   },
   {
@@ -7464,7 +7468,7 @@
     "name": "Peter Lowe's List (IPs)",
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
     "syntaxId": 9,
-    "updatedDate": "2018-10-19T21:39:10",
+    "updatedDate": "2018-10-31T01:03:09",
     "viewUrl": "https://pgl.yoyo.org/adservers/iplist.php?ipformat=plain&showintro=1&mimetype=plaintext"
   },
   {
@@ -7477,7 +7481,7 @@
     "name": "Peter Lowe's List (Privoxy)",
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
     "syntaxId": 19,
-    "updatedDate": "2018-10-19T21:41:10",
+    "updatedDate": "2018-11-04T12:09:10",
     "viewUrl": "https://pgl.yoyo.org/as/serverlist.php?hostformat=junkbuster;showintro=1&mimetype=plaintext"
   },
   {
@@ -7488,7 +7492,7 @@
     "name": "Peter Lowe's List (Domains with wildcards)",
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
     "syntaxId": 16,
-    "updatedDate": "2018-10-19T21:43:09",
+    "updatedDate": "2018-11-04T12:12:11",
     "viewUrl": "https://pgl.yoyo.org/as/serverlist.php?hostformat=adblock;showintro=1&mimetype=plaintext"
   },
   {
@@ -7547,7 +7551,7 @@
     "licenseId": 5,
     "name": "Malc0de IP Blacklist",
     "syntaxId": 9,
-    "updatedDate": "2018-10-20T18:07:08",
+    "updatedDate": "2018-10-31T23:45:08",
     "viewUrl": "https://malc0de.com/bl/IP_Blacklist.txt"
   },
   {
@@ -7557,7 +7561,7 @@
     "licenseId": 5,
     "name": "URLVir Active Malicious IP Addresses Hosting Malware",
     "syntaxId": 9,
-    "updatedDate": "2018-10-20T18:09:09",
+    "updatedDate": "2018-10-31T23:47:09",
     "viewUrl": "http://www.urlvir.com/export-ip-addresses/"
   },
   {
@@ -7567,7 +7571,7 @@
     "licenseId": 5,
     "name": "URLVir Active Malicious Hosts",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T18:11:08",
+    "updatedDate": "2018-10-31T23:49:09",
     "viewUrl": "http://www.urlvir.com/export-hosts/"
   },
   {
@@ -7579,7 +7583,7 @@
     "licenseId": 5,
     "name": "DNS-BH Malware Domains (Hosts)",
     "syntaxId": 1,
-    "updatedDate": "2018-10-20T18:13:13",
+    "updatedDate": "2018-10-31T23:51:12",
     "viewUrl": "https://mirror1.malwaredomains.com/files/domains.hosts",
     "viewUrlMirror1": "https://mirror.cedia.org.ec/malwaredomains/domains.hosts"
   },
@@ -7667,7 +7671,7 @@
     "name": "The Big List of Hacked Malware Web Sites",
     "publishedDate": "2017-09-20T13:22:22",
     "syntaxId": 1,
-    "updatedDate": "2018-10-21T10:35:14",
+    "updatedDate": "2018-10-29T10:27:47",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hacked-domains.list"
   },
   {
@@ -7679,6 +7683,7 @@
     "licenseId": 2,
     "name": "Ultimate Hosts Blacklist - Hosts",
     "syntaxId": 1,
+    "updatedDate": "2018-11-01T23:13:10",
     "viewUrl": "https://hosts.ubuntu101.co.za/hosts"
   },
   {
@@ -7690,7 +7695,7 @@
     "licenseId": 2,
     "name": "Ultimate Hosts Blacklist - Domains",
     "syntaxId": 2,
-    "updatedDate": "2018-10-22T15:47:11",
+    "updatedDate": "2018-11-02T23:11:11",
     "viewUrl": "https://hosts.ubuntu101.co.za/domains.list"
   },
   {
@@ -7702,7 +7707,7 @@
     "licenseId": 2,
     "name": "Ultimate Hosts Blacklist - IPs",
     "syntaxId": 9,
-    "updatedDate": "2018-10-21T14:27:09",
+    "updatedDate": "2018-11-01T19:13:09",
     "viewUrl": "https://hosts.ubuntu101.co.za/ips.list"
   },
   {
@@ -7713,7 +7718,7 @@
     "name": "Dan Pollock's Hosts (Domains)",
     "publishedDate": "2017-02-23T05:59:04",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T08:00:26",
+    "updatedDate": "2018-11-01T08:00:12",
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/dan-pollock-someonewhocares-org.txt"
   },
   {
@@ -7746,7 +7751,7 @@
     "name": "NoCoin (Domains)",
     "publishedDate": "2018-02-25T00:22:29",
     "syntaxId": 2,
-    "updatedDate": "2018-10-19T00:00:18",
+    "updatedDate": "2018-10-30T00:00:13",
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/nocoin.txt"
   },
   {
@@ -7757,7 +7762,7 @@
     "name": "EasyList (Domains)",
     "publishedDate": "2018-06-23T01:33:18",
     "syntaxId": 2,
-    "updatedDate": "2018-10-21T08:00:15",
+    "updatedDate": "2018-11-01T08:00:12",
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/easylist.txt"
   },
   {
@@ -7768,7 +7773,7 @@
     "name": "EasyPrivacy (Domains)",
     "publishedDate": "2018-06-23T01:33:18",
     "syntaxId": 2,
-    "updatedDate": "2018-10-20T08:00:15",
+    "updatedDate": "2018-10-31T08:00:12",
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/easyprivacy.txt"
   },
   {
@@ -7779,7 +7784,7 @@
     "name": "Unified Hosts (Domains)",
     "publishedDate": "2017-02-26T01:37:04",
     "syntaxId": 2,
-    "updatedDate": "2018-10-15T08:00:19",
+    "updatedDate": "2018-11-01T16:00:29",
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/steven-blacks-unified-list.txt"
   },
   {
@@ -7801,7 +7806,7 @@
     "name": "Steven Black's Hosts (Domains)",
     "publishedDate": "2017-02-23T05:59:04",
     "syntaxId": 2,
-    "updatedDate": "2018-10-07T00:00:17",
+    "updatedDate": "2018-11-01T16:00:29",
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/steven-blacks-ad-hoc-list.txt"
   },
   {
@@ -7834,7 +7839,7 @@
     "name": "add.Dead (Domains)",
     "publishedDate": "2017-02-23T05:59:04",
     "syntaxId": 2,
-    "updatedDate": "2018-09-06T00:00:26",
+    "updatedDate": "2018-10-31T16:00:13",
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/add-dead.txt"
   },
   {
@@ -7845,7 +7850,7 @@
     "name": "add.Risk (Domains)",
     "publishedDate": "2017-02-23T05:59:04",
     "syntaxId": 2,
-    "updatedDate": "2018-10-09T16:00:15",
+    "updatedDate": "2018-10-31T16:00:13",
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/add-risk.txt"
   },
   {
@@ -7900,7 +7905,7 @@
     "name": "AdGuard DNS (Domains)",
     "publishedDate": "2018-06-23T01:33:18",
     "syntaxId": 2,
-    "updatedDate": "2018-10-21T08:00:15",
+    "updatedDate": "2018-11-01T08:00:12",
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/adguard.txt"
   },
   {
@@ -7934,7 +7939,7 @@
     "name": "lennylxx IPv6 Hosts",
     "publishedDate": "2014-07-15T12:43:47",
     "syntaxId": 14,
-    "updatedDate": "2018-10-01T08:28:53",
+    "updatedDate": "2018-10-30T12:31:30",
     "viewUrl": "https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts"
   },
   {
@@ -8040,7 +8045,7 @@
     "name": "whtsky's rules",
     "publishedDate": "2018-05-18T03:24:19",
     "syntaxId": 3,
-    "updatedDate": "2018-07-12T07:48:43",
+    "updatedDate": "2018-10-31T18:59:29",
     "viewUrl": "https://raw.githubusercontent.com/whtsky/abp-rules/master/rules.txt"
   },
   {
@@ -8079,7 +8084,7 @@
     "name": "CrapBlock Annoyances",
     "publishedDate": "2018-02-14T16:27:38",
     "syntaxId": 3,
-    "updatedDate": "2018-10-18T17:40:53",
+    "updatedDate": "2018-10-29T20:00:47",
     "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/crapblock-annoyances.txt",
     "viewUrlMirror1": "https://crapblock.theel0ja.info/crapblock-annoyances.txt"
   },
@@ -8094,7 +8099,7 @@
     "name": "Block Google Fonts (by CrapBlock)",
     "publishedDate": "2018-09-09T16:03:11",
     "syntaxId": 3,
-    "updatedDate": "2018-10-01T08:42:49",
+    "updatedDate": "2018-10-28T12:03:20",
     "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/block-googlefonts.txt",
     "viewUrlMirror1": "https://crapblock.theel0ja.info/block-googlefonts.txt"
   },
@@ -8149,7 +8154,7 @@
     "name": "GelboLube",
     "publishedDate": "2018-09-27T13:46:05",
     "syntaxId": 4,
-    "updatedDate": "2018-10-01T08:46:50",
+    "updatedDate": "2018-10-31T05:11:18",
     "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/imageboard/GelboLube.txt"
   },
   {
@@ -8222,7 +8227,7 @@
     "licenseId": 2,
     "name": "Social Filter List",
     "syntaxId": 4,
-    "updatedDate": "2018-10-01T08:52:50",
+    "updatedDate": "2018-10-27T16:23:10",
     "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/socialfilterlist.txt"
   },
   {
@@ -8297,7 +8302,7 @@
     "licenseId": 5,
     "name": "uBlock Indo",
     "syntaxId": 4,
-    "updatedDate": "2018-10-21T17:46:12",
+    "updatedDate": "2018-11-01T22:28:09",
     "viewUrl": "https://raw.githubusercontent.com/Hakame-kun/uBlock-Filters-Indonesia/master/uBlock%20Indo/ubindo.txt"
   },
   {
@@ -8310,7 +8315,7 @@
     "name": "uBOPa",
     "publishedDate": "2018-08-21T07:52:21",
     "syntaxId": 4,
-    "updatedDate": "2018-10-21T16:28:20",
+    "updatedDate": "2018-10-31T22:12:21",
     "viewUrl": "https://raw.githubusercontent.com/nimasaj/uBOPa/master/uBOPa.txt",
     "viewUrlMirror1": "https://mynext.pro/uBOPa.txt"
   },
@@ -8334,7 +8339,7 @@
     "licenseId": 5,
     "name": "DNS-BH Malware Domains (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T17:51:10",
+    "updatedDate": "2018-11-01T22:33:09",
     "viewUrl": "https://easylist-msie.adblockplus.org/malwaredomains_full.tpl"
   },
   {
@@ -8508,7 +8513,7 @@
     "name": "OwlStudio ABP Rules",
     "publishedDate": "2018-08-15T07:51:22",
     "syntaxId": 3,
-    "updatedDate": "2018-10-21T07:56:50",
+    "updatedDate": "2018-10-28T06:23:23",
     "viewUrl": "https://raw.githubusercontent.com/OwlStudioCN/owl-abp-rules/master/owl-abp-rules.txt"
   },
   {
@@ -8579,7 +8584,7 @@
     "licenseId": 4,
     "name": "EasyList Germany + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-23T14:56:10",
+    "updatedDate": "2018-11-03T17:16:10",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistgermany+easylist.tpl"
   },
   {
@@ -8590,7 +8595,7 @@
     "licenseId": 16,
     "name": "Fanboy's Annoyance List (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T13:19:09",
+    "updatedDate": "2018-11-01T18:03:09",
     "viewUrl": "https://easylist-msie.adblockplus.org/fanboy-annoyance.tpl"
   },
   {
@@ -8599,7 +8604,7 @@
     "licenseId": 4,
     "name": "EasyList Lithuania + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-23T15:00:10",
+    "updatedDate": "2018-11-03T17:22:10",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistlithuania+easylist.tpl"
   },
   {
@@ -8608,7 +8613,7 @@
     "licenseId": 4,
     "name": "Bulgarian List + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T13:21:10",
+    "updatedDate": "2018-11-01T18:05:09",
     "viewUrl": "https://easylist-msie.adblockplus.org/bulgarian_list+easylist.tpl"
   },
   {
@@ -8617,7 +8622,7 @@
     "licenseId": 8,
     "name": "Latvian List + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T13:25:09",
+    "updatedDate": "2018-11-01T18:08:09",
     "viewUrl": "https://easylist-msie.adblockplus.org/latvianlist+easylist.tpl"
   },
   {
@@ -8626,7 +8631,7 @@
     "licenseId": 4,
     "name": "EasyPrivacy + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T13:29:10",
+    "updatedDate": "2018-11-01T18:12:10",
     "viewUrl": "https://easylist-msie.adblockplus.org/easyprivacy+easylist.tpl"
   },
   {
@@ -8635,7 +8640,7 @@
     "licenseId": 4,
     "name": "EasyList Italy + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T13:34:10",
+    "updatedDate": "2018-11-01T18:17:10",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistitaly+easylist.tpl"
   },
   {
@@ -8644,7 +8649,7 @@
     "licenseId": 4,
     "name": "EasyList Hebrew + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T13:37:11",
+    "updatedDate": "2018-11-01T18:21:10",
     "viewUrl": "https://easylist-msie.adblockplus.org/israellist+easylist.tpl"
   },
   {
@@ -8653,7 +8658,7 @@
     "licenseId": 4,
     "name": "EasyList China + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T13:40:10",
+    "updatedDate": "2018-11-01T18:24:10",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistchina+easylist.tpl"
   },
   {
@@ -8662,7 +8667,7 @@
     "licenseId": 4,
     "name": "EasyList Dutch + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T13:44:10",
+    "updatedDate": "2018-11-01T18:28:09",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistdutch+easylist.tpl"
   },
   {
@@ -8672,7 +8677,7 @@
     "licenseId": 5,
     "name": "ROList + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T13:47:10",
+    "updatedDate": "2018-11-01T18:31:10",
     "viewUrl": "https://easylist-msie.adblockplus.org/rolist+easylist.tpl"
   },
   {
@@ -8681,7 +8686,7 @@
     "licenseId": 11,
     "name": "Wiltteri + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-23T15:04:10",
+    "updatedDate": "2018-11-03T17:28:11",
     "viewUrl": "https://easylist-msie.adblockplus.org/wiltteri+easylist.tpl"
   },
   {
@@ -8692,7 +8697,7 @@
     "licenseId": 16,
     "name": "Fanboy's Social Blocking List (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T13:50:10",
+    "updatedDate": "2018-11-01T18:34:09",
     "viewUrl": "https://easylist-msie.adblockplus.org/fanboy-social.tpl"
   },
   {
@@ -8701,7 +8706,7 @@
     "licenseId": 12,
     "name": "Liste AR + Liste FR + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-23T15:08:10",
+    "updatedDate": "2018-11-03T17:34:11",
     "viewUrl": "https://easylist-msie.adblockplus.org/liste_ar+liste_fr+easylist.tpl"
   },
   {
@@ -8710,7 +8715,7 @@
     "licenseId": 16,
     "name": "RU AdList + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T13:52:11",
+    "updatedDate": "2018-11-01T18:36:10",
     "viewUrl": "https://easylist-msie.adblockplus.org/ruadlist+easylist.tpl"
   },
   {
@@ -8719,7 +8724,7 @@
     "licenseId": 12,
     "name": "Liste AR (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-11T23:14:10",
+    "updatedDate": "2018-11-01T18:41:09",
     "viewUrl": "https://easylist-msie.adblockplus.org/Liste_AR.tpl"
   },
   {
@@ -8728,7 +8733,7 @@
     "licenseId": 4,
     "name": "EasyList Dutch (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T13:58:09",
+    "updatedDate": "2018-11-01T18:43:10",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistdutch.tpl"
   },
   {
@@ -8738,7 +8743,7 @@
     "licenseId": 4,
     "name": "EasyPrivacy Without International Rules (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T14:00:09",
+    "updatedDate": "2018-11-01T18:45:09",
     "viewUrl": "https://easylist-msie.adblockplus.org/easyprivacy_nointernational.tpl"
   },
   {
@@ -8748,7 +8753,7 @@
     "licenseId": 16,
     "name": "RU AdList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T14:02:10",
+    "updatedDate": "2018-11-01T18:47:11",
     "viewUrl": "https://easylist-msie.adblockplus.org/advblock.tpl"
   },
   {
@@ -8758,7 +8763,7 @@
     "licenseId": 4,
     "name": "EasyList Without Rules for Adult Sites (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T14:04:11",
+    "updatedDate": "2018-11-01T18:49:10",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylist_noadult.tpl"
   },
   {
@@ -8768,7 +8773,7 @@
     "licenseId": 4,
     "name": "EasyList Spanish (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T14:07:09",
+    "updatedDate": "2018-11-01T18:52:09",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistspanish.tpl"
   },
   {
@@ -8777,7 +8782,7 @@
     "licenseId": 4,
     "name": "EasyList China (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T14:09:09",
+    "updatedDate": "2018-11-01T18:54:09",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistchina.tpl"
   },
   {
@@ -8787,7 +8792,7 @@
     "licenseId": 6,
     "name": "Liste FR",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T14:11:09",
+    "updatedDate": "2018-11-01T18:56:09",
     "viewUrl": "https://easylist-msie.adblockplus.org/liste_fr.tpl"
   },
   {
@@ -8798,7 +8803,7 @@
     "licenseId": 4,
     "name": "EasyList Germany (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T14:13:09",
+    "updatedDate": "2018-11-01T18:58:10",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistgermany.tpl"
   },
   {
@@ -8809,7 +8814,7 @@
     "licenseId": 4,
     "name": "Adblock Warning Removal List (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T14:15:09",
+    "updatedDate": "2018-11-01T19:00:10",
     "viewUrl": "https://easylist-msie.adblockplus.org/antiadblockfilters.tpl"
   },
   {
@@ -8819,7 +8824,7 @@
     "licenseId": 6,
     "name": "Liste FR + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T14:17:10",
+    "updatedDate": "2018-11-01T19:02:11",
     "viewUrl": "https://easylist-msie.adblockplus.org/liste_fr+easylist.tpl"
   },
   {
@@ -8828,7 +8833,7 @@
     "licenseId": 4,
     "name": "EasyList Italy (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T14:22:09",
+    "updatedDate": "2018-11-01T19:07:09",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistitaly.tpl"
   },
   {
@@ -8838,7 +8843,7 @@
     "licenseId": 4,
     "name": "EasyList Spanish + EasyList (TPL)",
     "syntaxId": 10,
-    "updatedDate": "2018-10-21T14:24:11",
+    "updatedDate": "2018-11-01T19:09:10",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistspanish+easylist.tpl"
   },
   {
@@ -8904,7 +8909,7 @@
     "licenseId": 16,
     "name": "RU AdList + CSS Fixes",
     "syntaxId": 4,
-    "updatedDate": "2018-10-21T18:17:12",
+    "updatedDate": "2018-11-01T22:59:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/advblock+cssfixes.txt"
   },
   {
@@ -8914,7 +8919,7 @@
     "licenseId": 4,
     "name": "EasyList Portuguese",
     "syntaxId": 3,
-    "updatedDate": "2018-10-21T18:19:12",
+    "updatedDate": "2018-11-01T23:01:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistportuguese.txt"
   },
   {
@@ -8956,7 +8961,7 @@
     "licenseId": 5,
     "name": "1Hosts (Domains)",
     "syntaxId": 2,
-    "updatedDate": "2018-10-21T05:02:09",
+    "updatedDate": "2018-11-01T10:18:48",
     "viewUrl": "https://1hosts.cf/complete/list.txt"
   },
   {
@@ -8968,7 +8973,7 @@
     "licenseId": 5,
     "name": "1Hosts Mini",
     "syntaxId": 1,
-    "updatedDate": "2018-10-21T05:08:09",
+    "updatedDate": "2018-11-01T10:24:10",
     "viewUrl": "https://1hosts.cf/mini/"
   },
   {
@@ -8980,7 +8985,7 @@
     "licenseId": 5,
     "name": "1Hosts Mini (Domains)",
     "syntaxId": 2,
-    "updatedDate": "2018-10-21T05:12:09",
+    "updatedDate": "2018-11-01T10:29:09",
     "viewUrl": "https://1hosts.cf/mini/list.txt"
   },
   {
@@ -9046,7 +9051,7 @@
     "name": "Frellwit's Swedish Hosts File",
     "publishedDate": "2018-09-23T17:51:40",
     "syntaxId": 1,
-    "updatedDate": "2018-10-19T16:28:06",
+    "updatedDate": "2018-10-29T06:22:37",
     "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt",
     "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/Frellwits-Swedish-Hosts-File.txt"
   },
@@ -9057,7 +9062,7 @@
     "licenseId": 3,
     "name": "IndianList",
     "syntaxId": 3,
-    "updatedDate": "2018-10-20T16:56:09",
+    "updatedDate": "2018-10-31T22:34:09",
     "viewUrl": "https://easylist-downloads.adblockplus.org/indianlist.txt"
   },
   {
@@ -9085,7 +9090,7 @@
     "name": "uMatrix - Rulesets for English websites",
     "publishedDate": "2018-01-29T19:26:53",
     "syntaxId": 7,
-    "updatedDate": "2018-10-04T10:29:43",
+    "updatedDate": "2018-10-28T22:23:38",
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/recipes/recipes_en.txt"
   },
   {
@@ -9097,7 +9102,7 @@
     "name": "Brave Unbreak",
     "publishedDate": "2016-11-10T13:11:50",
     "syntaxId": 3,
-    "updatedDate": "2018-10-08T15:54:15",
+    "updatedDate": "2018-10-22T17:20:02",
     "viewUrl": "https://raw.githubusercontent.com/brave/adblock-lists/master/brave-unbreak.txt"
   },
   {
@@ -9359,7 +9364,7 @@
     "name": "Peter Lowe's List (dnsmasq)",
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
     "syntaxId": 20,
-    "updatedDate": "2018-10-22T15:37:09",
+    "updatedDate": "2018-11-02T23:02:10",
     "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=dnsmasq&showintro=1&mimetype=plaintext"
   },
   {
@@ -9372,7 +9377,7 @@
     "name": "Facebook Zuckestion Killer",
     "publishedDate": "2018-09-26T14:26:24",
     "syntaxId": 4,
-    "updatedDate": "2018-10-22T14:02:54",
+    "updatedDate": "2018-11-01T03:01:39",
     "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookZuckestionKiller.txt"
   },
   {
@@ -9410,7 +9415,7 @@
     "name": "Thai Paranoid Block ~Maximum~",
     "publishedDate": "2016-01-09T17:08:54",
     "syntaxId": 4,
-    "updatedDate": "2018-10-21T08:31:39",
+    "updatedDate": "2018-10-30T05:36:45",
     "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/maximum/ThaiParanoid.txt"
   },
   {
@@ -9437,7 +9442,7 @@
     "name": "Twitch: Pure Viewing Experience",
     "publishedDate": "2018-10-09T15:47:21",
     "syntaxId": 3,
-    "updatedDate": "2018-10-15T01:36:45",
+    "updatedDate": "2018-10-29T15:41:20",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchPureViewingExperience.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TwitchPureViewingExperience.txt",
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/TwitchPureViewingExperience.txt"
@@ -9470,7 +9475,7 @@
     "name": "Anti-'Abuse porn' list for Pixiv",
     "publishedDate": "2018-10-09T18:07:51",
     "syntaxId": 3,
-    "updatedDate": "2018-10-11T00:01:13",
+    "updatedDate": "2018-11-01T20:41:49",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAbusePorn.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAbusePorn.txt",
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/AntiAbusePorn.txt"
@@ -9487,7 +9492,7 @@
     "name": "Wikia: Pure Browsing Experience",
     "publishedDate": "2018-10-12T18:31:48",
     "syntaxId": 3,
-    "updatedDate": "2018-10-13T16:00:06",
+    "updatedDate": "2018-10-26T15:26:38",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WikiaPureBrowsingExperience.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/WikiaPureBrowsingExperience.txt",
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/WikiaPureBrowsingExperience.txt"
@@ -9536,7 +9541,9 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
     "name": "Evidon Unbreaker",
+    "publishedDate": "2018-10-21T09:57:28",
     "syntaxId": 3,
+    "updatedDate": "2018-10-21T09:57:28",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EvidonUnbreaker.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/EvidonUnbreaker.txt",
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/EvidonUnbreaker.txt"
@@ -9618,6 +9625,7 @@
     "emailAddress": "nicktabick@gmail.com",
     "homeUrl": "https://adblock.twoslashes.com/",
     "issuesUrl": "https://github.com/nicktabick/adblock-rules/issues",
+    "licenseId": 5,
     "name": "NT Adblock List",
     "syntaxId": 3,
     "viewUrl": "https://bitbucket.org/nicktabick/adblock-rules/raw/master/nt-adblock.txt",
