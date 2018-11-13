@@ -672,6 +672,10 @@
     "maintainerId": 22
   },
   {
+    "filterListId": 863,
+    "maintainerId": 22
+  },
+  {
     "filterListId": 21,
     "maintainerId": 23
   },
@@ -757,18 +761,6 @@
   },
   {
     "filterListId": 193,
-    "maintainerId": 23
-  },
-  {
-    "filterListId": 194,
-    "maintainerId": 23
-  },
-  {
-    "filterListId": 195,
-    "maintainerId": 23
-  },
-  {
-    "filterListId": 196,
     "maintainerId": 23
   },
   {

@@ -2392,40 +2392,6 @@
     "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=compromised"
   },
   {
-    "id": 194,
-    "description": "The Feodo Tracker Feodo IP Blocklist contains IP addresses (IPv4) used as C&C communication channel by the Feodo Trojan. This lists contains two types of IP address: Feodo C&C servers used by version A, version C and version D of the Feodo Trojan (these IP addresses are usually compromised servers running an nginx daemon on port 8080 TCP or 7779 TCP that is acting as proxy, forwarding all traffic to a tier 2 proxy node) and Feodo C&C servers used by version B which are usually used for the exclusive purpose of hosting a Feodo C&C server. Attention: Since Feodo C&C servers associated with version A, version C and version D are usually hosted on compromised servers, its likely that you also block/drop legit traffic e.g. towards websites hosted on a certain IP address acting as Feodo C&C for version A, version C and version D. If you only want to block/drop traffic to Feodo C&C servers hosted on bad IPs (version B), please use the blocklist BadIPs documented below.",
-    "descriptionSourceUrl": "https://feodotracker.abuse.ch/blocklist/",
-    "emailAddress": "contactme@abuse.ch",
-    "homeUrl": "https://feodotracker.abuse.ch/blocklist/",
-    "licenseId": 5,
-    "name": "abuse.ch Feodo IP Blocklist",
-    "syntaxId": 8,
-    "updatedDate": "2018-11-01T01:12:08",
-    "viewUrl": "https://feodotracker.abuse.ch/blocklist/?download=ipblocklist"
-  },
-  {
-    "id": 195,
-    "description": "The Feodo Tracker Feodo Domain Blocklist contains domain names (FQDN) used as C&C communication channel by the Feodo Trojan. These domains names are usually registered and operated by cybercriminals for the exclusive purpose of hosting a Feodo botnet controller. Hence you should expect no legit traffic to those domains. I highly recommend you to block/drop any traffic towards any Feodo C&C domain by using the Feodo Domain Blocklist. Please consider that domain names are usually only used by version B of the Feodo Trojan. C&C communication channels used by version A, version C and version D are not covered by this blocklist.",
-    "descriptionSourceUrl": "https://feodotracker.abuse.ch/blocklist/",
-    "emailAddress": "contactme@abuse.ch",
-    "homeUrl": "https://feodotracker.abuse.ch/blocklist/",
-    "licenseId": 5,
-    "name": "abuse.ch Feodo Domain Blocklist",
-    "updatedDate": "2018-11-01T01:15:09",
-    "viewUrl": "https://feodotracker.abuse.ch/blocklist/?download=domainblocklist"
-  },
-  {
-    "id": 196,
-    "description": "The Feodo Tracker Feodo BadIP Blocklist only contains IP addresses (IPv4) used as C&C communication channel by the Feodo Trojan version B. These IP addresses are usually servers rented by cybercriminals directly and used for the exclusive purpose of hosting a Feodo C&C server. Hence you should expect no legit traffic to those IP addresses. I highly recommend you to block/drop any traffic towards any Feodo C&C using the Feodo BadIP Blocklist. Please consider that this blocklist only contains IP addresses used by version B of the Feodo Trojan. C&C communication channels used by version A, version C and version D are not covered by this blocklist.",
-    "descriptionSourceUrl": "https://feodotracker.abuse.ch/blocklist/",
-    "emailAddress": "contactme@abuse.ch",
-    "homeUrl": "https://feodotracker.abuse.ch/blocklist/",
-    "licenseId": 5,
-    "name": "abuse.ch Feodo BadIP Blocklist",
-    "updatedDate": "2018-11-01T01:18:09",
-    "viewUrl": "https://feodotracker.abuse.ch/blocklist/?download=badips"
-  },
-  {
     "id": 197,
     "description": "A list combining ABPindo and EasyList.",
     "licenseId": 4,
@@ -3840,7 +3806,7 @@
     "name": "1Hosts",
     "syntaxId": 1,
     "updatedDate": "2018-11-04T08:16:13",
-    "viewUrl": "https://1hosts.cf/"
+    "viewUrl": "https://1hos.cf/"
   },
   {
     "id": 311,
@@ -4458,7 +4424,7 @@
     "publishedDate": "2017-10-12T00:00:00",
     "syntaxId": 2,
     "updatedDate": "2018-10-31T15:13:09",
-    "viewUrl": "https://zerodot1.gitlab.io/CoinBlockerLists/list.txt"
+    "viewUrl": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list.txt"
   },
   {
     "id": 358,
@@ -4473,7 +4439,7 @@
     "publishedDate": "2017-10-12T00:00:00",
     "syntaxId": 2,
     "updatedDate": "2018-09-17T20:27:13",
-    "viewUrl": "https://zerodot1.gitlab.io/CoinBlockerLists/list_optional.txt"
+    "viewUrl": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_optional.txt"
   },
   {
     "id": 359,
@@ -4488,7 +4454,7 @@
     "publishedDate": "2017-10-12T00:00:00",
     "syntaxId": 2,
     "updatedDate": "2018-10-20T12:27:08",
-    "viewUrl": "https://zerodot1.gitlab.io/CoinBlockerLists/list_browser.txt"
+    "viewUrl": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser.txt"
   },
   {
     "id": 360,
@@ -4503,7 +4469,7 @@
     "publishedDate": "2017-10-12T00:00:00",
     "syntaxId": 1,
     "updatedDate": "2018-10-31T15:20:09",
-    "viewUrl": "https://zerodot1.gitlab.io/CoinBlockerLists/hosts"
+    "viewUrl": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/hosts"
   },
   {
     "id": 361,
@@ -4518,7 +4484,7 @@
     "publishedDate": "2017-10-12T00:00:00",
     "syntaxId": 1,
     "updatedDate": "2018-09-17T21:33:15",
-    "viewUrl": "https://zerodot1.gitlab.io/CoinBlockerLists/hosts_optional"
+    "viewUrl": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/hosts_optional"
   },
   {
     "id": 362,
@@ -4533,7 +4499,7 @@
     "publishedDate": "2017-10-12T00:00:00",
     "syntaxId": 1,
     "updatedDate": "2018-10-20T12:49:08",
-    "viewUrl": "https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser"
+    "viewUrl": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/hosts_browser"
   },
   {
     "id": 363,
@@ -4544,11 +4510,10 @@
     "homeUrl": "https://gitlab.com/ZeroDot1/CoinBlockerLists",
     "issuesUrl": "https://gitlab.com/ZeroDot1/CoinBlockerLists/issues",
     "licenseId": 4,
-    "name": "CoinBlocker IPs List",
-    "publishedDate": "2017-10-12T00:00:00",
-    "syntaxId": 9,
-    "updatedDate": "2018-10-04T09:18:10",
-    "viewUrl": "https://zerodot1.gitlab.io/CoinBlockerLists/MiningServerIPList.txt"
+    "name": "CoinBlocker uBO List",
+    "publishedDate": "2017-10-26T00:00:00",
+    "syntaxId": 4,
+    "viewUrl": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser_UBO.txt"
   },
   {
     "id": 364,
@@ -8962,7 +8927,7 @@
     "name": "1Hosts (Domains)",
     "syntaxId": 2,
     "updatedDate": "2018-11-01T10:18:48",
-    "viewUrl": "https://1hosts.cf/complete/list.txt"
+    "viewUrl": "https://1hos.cf/complete/list.txt"
   },
   {
     "id": 811,
@@ -8974,7 +8939,7 @@
     "name": "1Hosts Mini",
     "syntaxId": 1,
     "updatedDate": "2018-11-01T10:24:10",
-    "viewUrl": "https://1hosts.cf/mini/"
+    "viewUrl": "https://1hos.cf/mini/"
   },
   {
     "id": 812,
@@ -8986,7 +8951,7 @@
     "name": "1Hosts Mini (Domains)",
     "syntaxId": 2,
     "updatedDate": "2018-11-01T10:29:09",
-    "viewUrl": "https://1hosts.cf/mini/list.txt"
+    "viewUrl": "https://1hos.cf/mini/list.txt"
   },
   {
     "id": 813,
@@ -9655,5 +9620,20 @@
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/other/SurvivedTrackingLinkWarning.txt",
     "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/other/SurvivedTrackingLinkWarning.txt"
+  },
+  {
+    "id": 863,
+    "description": "Do you use music streaming services, and have grown really tired of how the same few songs are covered every year by every band and artist that have ever existed (and some that haven't)? Now you can let your eyes get a break from coming across just those songs.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-'Christmas carols' list",
+    "publishedDate": "2018-11-12T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Christmas%20carols'%20List.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Christmas%20carols'%20List.txt",
+    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Anti-'Christmas%20carols'%20List.txt"
   }
 ]
