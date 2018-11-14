@@ -5682,7 +5682,7 @@
     "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
     "donateUrl": "https://energized.pro/support",
     "emailAddress": "mail@energized.pro",
-    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
+    "forumUrl": "http://go.energized.pro/xda",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 9,
@@ -5692,7 +5692,8 @@
     "syntaxId": 1,
     "updatedDate": "2018-10-27T06:12:18",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/spark/formats/hosts",
-    "viewUrlMirror1": "https://energized.pro/spark"
+    "viewUrlMirror1": "https://energized.pro/spark",
+    "viewUrlMirror2": "https://raw.githubusercontent.com/EnergizedProtection/block/master/spark/formats/hosts.txt"
   },
   {
     "id": 482,
