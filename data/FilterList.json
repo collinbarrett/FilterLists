@@ -9567,7 +9567,9 @@
     "licenseId": 28,
     "name": "abuse.ch URLhaus Malicious URL Blocklist",
     "syntaxId": 2,
-    "viewUrl": "https://gitlab.com/curben/urlhaus/raw/master/urlhaus-filter.txt"
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
+    "viewUrlMirror1": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
+    "viewUrlMirror2": "https://cdn.staticaly.com/gl/curben/urlhaus-filter/raw/master/urlhaus-filter.txt"
   },
   {
     "id": 859,
