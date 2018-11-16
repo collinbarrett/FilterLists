@@ -8643,18 +8643,6 @@
     "viewUrl": "https://raw.githubusercontent.com/whtsky/abp-rules/master/rules.txt"
   },
   {
-    "id": 727,
-    "description": "Blocking some advertisement from Formosa",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/Yuan573/ADG/master/block",
-    "homeUrl": "https://github.com/Yuan573/ADG",
-    "licenseId": 5,
-    "name": "AdGuard Personal Block List",
-    "publishedDate": "2018-08-27T17:45:02",
-    "syntaxId": 3,
-    "updatedDate": "2018-10-20T05:04:58",
-    "viewUrl": "https://raw.githubusercontent.com/Yuan573/ADG/master/block"
-  },
-  {
     "id": 728,
     "description": "Filter list that specifically removes adverts on Indonesian language websites.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt",
