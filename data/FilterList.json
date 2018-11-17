@@ -4063,7 +4063,8 @@
     "publishedDate": "2017-05-12T13:34:17",
     "syntaxId": 1,
     "updatedDate": "2018-10-23T13:23:40",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiConsentHosts/master/ThaiConsentHosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiConsentHosts/master/ThaiConsentHosts.txt",
+	"viewUrlMirror1": "https://gitlab.com/kowith337/ThaiConsentHosts/raw/master/ThaiConsentHosts.txt"
   },
   {
     "id": 331,
@@ -4076,7 +4077,8 @@
     "publishedDate": "2016-01-09T17:08:54",
     "syntaxId": 4,
     "updatedDate": "2018-10-30T05:36:45",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/master/ThaiParanoid.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/master/ThaiParanoid.txt",
+	"viewUrlMirror1": "https://gitlab.com/kowith337/ThaiParanoidBlock/raw/master/ThaiParanoid.txt"
   },
   {
     "id": 332,
@@ -5956,42 +5958,6 @@
     "viewUrlMirror1": "https://energized.pro/exts/porn-lite"
   },
   {
-    "id": 864,
-    "chatUrl": "https://t.me/EnergizedProtection",
-    "description": "Energized Xtreme Blocking.",
-    "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
-    "donateUrl": "https://energized.pro/support",
-    "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
-    "homeUrl": "https://energized.pro",
-    "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
-    "name": "Energized Xtreme Protection - Extension",
-    "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 1,
-    "updatedDate": "2018-09-21T04:16:43",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-porn-hosts",
-    "viewUrlMirror1": "https://energized.pro/exts/xtreme"
-  },
-  {
-    "id": 865,
-    "chatUrl": "https://t.me/EnergizedProtection",
-    "description": "Energized Regional Blocking.",
-    "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
-    "donateUrl": "https://energized.pro/support",
-    "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
-    "homeUrl": "https://energized.pro",
-    "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
-    "name": "Energized Regional Protection - Extension",
-    "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 1,
-    "updatedDate": "2018-09-21T04:16:43",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-porn-hosts",
-    "viewUrlMirror1": "https://energized.pro/exts/regional"
-  },
-  {
     "id": 490,
     "homeUrl": "https://github.com/CyanideBrother/anti-pr0n",
     "issuesUrl": "https://github.com/CyanideBrother/anti-pr0n/issues",
@@ -7182,7 +7148,8 @@
     "publishedDate": "2016-01-04T00:00:00",
     "syntaxId": 4,
     "updatedDate": "2018-10-05T10:19:31",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiAntiTokenSites/master/AntiPumpSites.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiAntiTokenSites/master/AntiPumpSites.txt",
+	"viewUrlMirror1": "https://gitlab.com/kowith337/ThaiAntiTokenSites/raw/master/AntiPumpSites.txt"
   },
   {
     "id": 602,
@@ -7194,7 +7161,8 @@
     "publishedDate": "2016-01-04T00:00:00",
     "syntaxId": 1,
     "updatedDate": "2018-10-13T17:01:49",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiAntiTokenSites/master/AntiPumpSites_hosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiAntiTokenSites/master/AntiPumpSites_hosts.txt",
+	"viewUrlMirror1": "https://gitlab.com/kowith337/ThaiAntiTokenSites/raw/master/AntiPumpSites_hosts.txt"
   },
   {
     "id": 603,
@@ -8628,7 +8596,8 @@
     "publishedDate": "2018-09-27T13:46:05",
     "syntaxId": 4,
     "updatedDate": "2018-10-31T05:11:18",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/imageboard/GelboLube.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/imageboard/GelboLube.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/imageboard/GelboLube.txt"
   },
   {
     "id": 735,
@@ -8640,7 +8609,8 @@
     "publishedDate": "2018-09-26T14:26:24",
     "syntaxId": 4,
     "updatedDate": "2018-10-01T08:47:49",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/specific/AntiAPKMirrorCountdown.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/specific/AntiAPKMirrorCountdown.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/specific/AntiAPKMirrorCountdown.txt"
   },
   {
     "id": 736,
@@ -9851,7 +9821,8 @@
     "publishedDate": "2018-09-26T14:26:24",
     "syntaxId": 4,
     "updatedDate": "2018-11-01T03:01:39",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookZuckestionKiller.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookZuckestionKiller.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/facebook/FacebookZuckestionKiller.txt"
   },
   {
     "id": 844,
@@ -9864,7 +9835,8 @@
     "publishedDate": "2018-09-26T14:26:24",
     "syntaxId": 4,
     "updatedDate": "2018-10-17T18:29:56",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookCommands.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookCommands.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/facebook/FacebookCommands.txt"
   },
   {
     "id": 845,
@@ -9876,7 +9848,8 @@
     "publishedDate": "2018-07-13T11:10:35",
     "syntaxId": 1,
     "updatedDate": "2018-07-13T11:10:35",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_google_adservice_id.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_google_adservice_id.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/hosts_google_adservice_id.txt"
   },
   {
     "id": 846,
@@ -9889,7 +9862,8 @@
     "publishedDate": "2016-01-09T17:08:54",
     "syntaxId": 4,
     "updatedDate": "2018-10-30T05:36:45",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/maximum/ThaiParanoid.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/maximum/ThaiParanoid.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/ThaiParanoidBlock/raw/maximum/ThaiParanoid.txt"
   },
   {
     "id": 847,
@@ -10145,5 +10119,67 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Christmas%20carols'%20List.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Christmas%20carols'%20List.txt",
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Anti-'Christmas%20carols'%20List.txt"
+  },
+  {
+    "id": 864,
+    "chatUrl": "https://t.me/EnergizedProtection",
+    "description": "Energized Xtreme Blocking.",
+    "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
+    "donateUrl": "https://energized.pro/support",
+    "emailAddress": "mail@energized.pro",
+    "forumUrl": "http://go.energized.pro/xda",
+    "homeUrl": "https://energized.pro",
+    "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
+    "licenseId": 9,
+    "name": "Energized Xtreme Protection - Extension",
+    "submissionUrl": "https://app.energized.pro",
+    "syntaxId": 1,
+    "updatedDate": "2018-09-21T04:16:43",
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-porn-hosts",
+    "viewUrlMirror1": "https://energized.pro/exts/xtreme"
+  },
+  {
+    "id": 865,
+    "chatUrl": "https://t.me/EnergizedProtection",
+    "description": "Energized Regional Blocking.",
+    "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
+    "donateUrl": "https://energized.pro/support",
+    "emailAddress": "mail@energized.pro",
+    "forumUrl": "http://go.energized.pro/xda",
+    "homeUrl": "https://energized.pro",
+    "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
+    "licenseId": 9,
+    "name": "Energized Regional Protection - Extension",
+    "submissionUrl": "https://app.energized.pro",
+    "syntaxId": 1,
+    "updatedDate": "2018-09-21T04:16:43",
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-porn-hosts",
+    "viewUrlMirror1": "https://energized.pro/exts/regional"
+  },
+  {
+    "id": 866,
+    "description": "This aim to block non-formal hosts that serve all Facebook contents and resources from alternative \"Free Basics\" servers that it happen when you're using on mobile data over the carrier that collaborate with Facebook to have THAT service! Note that all rules are have many duplicates and didn't checked how many servers or domains really exists.",
+    "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/hosts/readme.md",
+    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?q=label%3A%22Hosts+File%22",
+    "licenseId": 13,
+    "name": "Facebook Zero Hosts Block",
+	"publishedDate": "2018-11-04T12:51:35",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_facebook0.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/hosts_facebook0.txt"
+  },
+  {
+    "id": 867,
+    "description": "This aim to block non-formal hosts that serve all Facebook contents and resources from alternative \"Free Basics\" servers that it happen when you're using on mobile data over the carrier that collaborate with Facebook to have THAT service! NoEdge version is split from main version that aim to support low to mid end devices that cannot combine or merge too much hosts file rules.",
+    "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/hosts/readme.md",
+    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?q=label%3A%22Hosts+File%22",
+    "licenseId": 13,
+    "name": "Facebook Zero Hosts Block (NoEdge)",
+	"publishedDate": "2018-11-13T14:07:15",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_facebook0_noedgetxt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/hosts_facebook0_noedge.txt"
   }
 ]
