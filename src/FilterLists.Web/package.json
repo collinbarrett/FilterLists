@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "devDependencies": {
     "@types/history": "^4.7.2",
-    "@types/react": "^16.4.18",
+    "@types/react": "^16.7.6",
     "@types/react-dom": "^16.0.9",
     "@types/react-hot-loader": "^4.1.0",
-    "@types/react-router": "^4.4.0",
+    "@types/react-router": "^4.4.1",
     "@types/react-router-dom": "^4.3.1",
     "@types/webpack-env": "^1.13.6",
     "aspnet-webpack": "^3.0.0",
@@ -19,8 +19,8 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.3.1",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "react-hot-loader": "^4.3.12",
     "react-router-dom": "^4.3.1",
     "style-loader": "^0.23.1",
@@ -29,9 +29,9 @@
     "webpack": "^3.11.0"
   },
   "dependencies": {
-    "@types/react-table": "^6.7.14",
+    "@types/react-table": "^6.7.16",
     "moment": "^2.22.2",
-    "popper.js": "^1.14.4",
+    "popper.js": "^1.14.5",
     "react-table": "^6.8.6"
   }
 }
