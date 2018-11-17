@@ -2233,17 +2233,6 @@
     "viewUrlMirror2": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Ayucat%20Powerful%20List.txt"
   },
   {
-    "id": 182,
-    "description": "Complementary subscription to Liste FR + EasyList.",
-    "descriptionSourceUrl": "http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt",
-    "homeUrl": "https://www.antipubweb.org/",
-    "licenseId": 5,
-    "name": "AntiPubWeb",
-    "syntaxId": 3,
-    "updatedDate": "2017-12-09T00:00:00",
-    "viewUrl": "http://www.antipubfirefox.org/antipub/antipubfirefox-adblocklist-current-expanded.txt"
-  },
-  {
     "id": 183,
     "description": "Blocks shady, annoying pop-under ads from the infamous PopAds ad network.",
     "homeUrl": "https://github.com/Yhonay/antipopads",
@@ -6817,34 +6806,6 @@
     "viewUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
   },
   {
-    "id": 567,
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
-    "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
-    "emailAddress": "filters+cv@adblockplus.org",
-    "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
-    "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
-    "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - Arabic",
-    "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
-    "updatedDate": "2018-05-15T09:50:43",
-    "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/arabic.txt"
-  },
-  {
-    "id": 568,
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
-    "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
-    "emailAddress": "filters+cv@adblockplus.org",
-    "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
-    "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
-    "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - Bulgarian",
-    "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
-    "updatedDate": "2018-05-15T09:50:43",
-    "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/bulgarian.txt"
-  },
-  {
     "id": 569,
     "description": "Filter list designed to fight circumvention ads in Adblock Plus",
     "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
@@ -6943,20 +6904,6 @@
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/german.txt"
   },
   {
-    "id": 576,
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
-    "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
-    "emailAddress": "filters+cv@adblockplus.org",
-    "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
-    "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
-    "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - Hebrew",
-    "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
-    "updatedDate": "2018-05-15T09:50:43",
-    "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/hebrew.txt"
-  },
-  {
     "id": 577,
     "description": "Filter list designed to fight circumvention ads in Adblock Plus",
     "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
@@ -6971,20 +6918,6 @@
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/hungarian.txt"
   },
   {
-    "id": 578,
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
-    "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
-    "emailAddress": "filters+cv@adblockplus.org",
-    "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
-    "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
-    "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - Indonesian",
-    "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
-    "updatedDate": "2018-05-15T09:50:43",
-    "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/indonesian.txt"
-  },
-  {
     "id": 579,
     "description": "Filter list designed to fight circumvention ads in Adblock Plus",
     "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
@@ -6997,34 +6930,6 @@
     "syntaxId": 3,
     "updatedDate": "2018-09-30T03:29:49",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/italian.txt"
-  },
-  {
-    "id": 580,
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
-    "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
-    "emailAddress": "filters+cv@adblockplus.org",
-    "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
-    "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
-    "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - Latvian",
-    "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
-    "updatedDate": "2018-05-15T09:50:43",
-    "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/latvian.txt"
-  },
-  {
-    "id": 581,
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
-    "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
-    "emailAddress": "filters+cv@adblockplus.org",
-    "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
-    "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
-    "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - Lithuanian",
-    "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
-    "updatedDate": "2018-05-15T09:50:43",
-    "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/lithuanian.txt"
   },
   {
     "id": 582,
@@ -7053,20 +6958,6 @@
     "syntaxId": 3,
     "updatedDate": "2018-09-30T03:40:51",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/portuguese.txt"
-  },
-  {
-    "id": 584,
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
-    "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
-    "emailAddress": "filters+cv@adblockplus.org",
-    "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
-    "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
-    "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - Romanian",
-    "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
-    "updatedDate": "2018-05-15T09:50:43",
-    "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/romanian.txt"
   },
   {
     "id": 585,
