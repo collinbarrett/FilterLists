@@ -10354,7 +10354,7 @@
   "descriptionSourceUrl": "https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/master/Finland_adb.txt",
   "homeUrl": "https://github.com/finnish-easylist-addition/finnish-easylist-addition",
   "issuesUrl": "https://github.com/finnish-easylist-addition/finnish-easylist-addition/issues",
-  "licenseId": "The Unlicense",
+  "licenseId": 11,
   "name": "Adblock List for Finland",
   "publishedDate": "2018-11-02T00:00:00",
   "syntaxId": 3,
