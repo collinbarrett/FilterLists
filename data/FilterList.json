@@ -4021,6 +4021,7 @@
     "updatedDate": "2018-09-30T03:39:52",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/stayingonbrowser/Staying%20On%20The%20Phone%20Browser"
+  },
   {
     "id": 328,
     "description": "This list includes uBO-specific versions of filters, and are meant to be accessed by uBlock Origin, Nano Adblocker and AdGuard whenever they load the main Norwegian list.",
