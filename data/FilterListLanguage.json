@@ -1126,5 +1126,469 @@
   {
     "filterListId": 847,
     "languageId": 87
-  }
+  },
+  {
+  "filterListId": 885,
+  "languageId": 10
+},
+{
+  "filterListId": 895,
+  "languageId": 79
+},
+{
+  "filterListId": 909,
+  "languageId": 79
+},
+{
+  "filterListId": 926,
+  "languageId": 79
+},
+{
+  "filterListId": 930,
+  "languageId": 79
+},
+{
+  "filterListId": 933,
+  "languageId": 79
+},
+{
+  "filterListId": 935,
+  "languageId": 79
+},
+{
+  "filterListId": 942,
+  "languageId": 79
+},
+{
+  "filterListId": 944,
+  "languageId": 79
+},
+{
+  "filterListId": 945,
+  "languageId": 79
+},
+{
+  "filterListId": 972,
+  "languageId": 79
+},
+{
+  "filterListId": 1010,
+  "languageId": 79
+},
+{
+  "filterListId": 1034,
+  "languageId": 79
+},
+{
+  "filterListId": 1067,
+  "languageId": 79
+},
+{
+  "filterListId": 1093,
+  "languageId": 79
+},
+{
+  "filterListId": 1096,
+  "languageId": 79
+},
+{
+  "filterListId": 886,
+  "languageId": 83
+},
+{
+  "filterListId": 1071,
+  "languageId": 83
+},
+{
+  "filterListId": 889,
+  "languageId": 110
+},
+{
+  "filterListId": 892,
+  "languageId": 110
+},
+{
+  "filterListId": 894,
+  "languageId": 110
+},
+{
+  "filterListId": 897,
+  "languageId": 110
+},
+{
+  "filterListId": 898,
+  "languageId": 110
+},
+{
+  "filterListId": 901,
+  "languageId": 110
+},
+{
+  "filterListId": 906,
+  "languageId": 110
+},
+{
+  "filterListId": 907,
+  "languageId": 110
+},
+{
+  "filterListId": 914,
+  "languageId": 110
+},
+{
+  "filterListId": 915,
+  "languageId": 110
+},
+{
+  "filterListId": 921,
+  "languageId": 110
+},
+{
+  "filterListId": 924,
+  "languageId": 110
+},
+{
+  "filterListId": 928,
+  "languageId": 110
+},
+{
+  "filterListId": 932,
+  "languageId": 110
+},
+{
+  "filterListId": 940,
+  "languageId": 110
+},
+{
+  "filterListId": 963,
+  "languageId": 110
+},
+{
+  "filterListId": 965,
+  "languageId": 110
+},
+{
+  "filterListId": 967,
+  "languageId": 110
+},
+{
+  "filterListId": 971,
+  "languageId": 110
+},
+{
+  "filterListId": 976,
+  "languageId": 110
+},
+{
+  "filterListId": 980,
+  "languageId": 110
+},
+{
+  "filterListId": 986,
+  "languageId": 110
+},
+{
+  "filterListId": 989,
+  "languageId": 110
+},
+{
+  "filterListId": 1014,
+  "languageId": 110
+},
+{
+  "filterListId": 1022,
+  "languageId": 110
+},
+{
+  "filterListId": 1025,
+  "languageId": 110
+},
+{
+  "filterListId": 1026,
+  "languageId": 110
+},
+{
+  "filterListId": 1027,
+  "languageId": 110
+},
+{
+  "filterListId": 1028,
+  "languageId": 110
+},
+{
+  "filterListId": 1032,
+  "languageId": 110
+},
+{
+  "filterListId": 1038,
+  "languageId": 110
+},
+{
+  "filterListId": 1047,
+  "languageId": 110
+},
+{
+  "filterListId": 1064,
+  "languageId": 110
+},
+{
+  "filterListId": 1082,
+  "languageId": 110
+},
+{
+  "filterListId": 1086,
+  "languageId": 110
+},
+{
+  "filterListId": 1087,
+  "languageId": 110
+},
+{
+  "filterListId": 1088,
+  "languageId": 110
+},
+{
+  "filterListId": 1091,
+  "languageId": 110
+},
+{
+  "filterListId": 1092,
+  "languageId": 110
+},
+{
+  "filterListId": 1101,
+  "languageId": 110
+},
+{
+  "filterListId": 888,
+  "languageId": 122
+},
+{
+  "filterListId": 943,
+  "languageId": 122
+},
+{
+  "filterListId": 957,
+  "languageId": 122
+},
+{
+  "filterListId": 979,
+  "languageId": 122
+},
+{
+  "filterListId": 987,
+  "languageId": 122
+},
+{
+  "filterListId": 996,
+  "languageId": 122
+},
+{
+  "filterListId": 1007,
+  "languageId": 122
+},
+{
+  "filterListId": 1015,
+  "languageId": 122
+},
+{
+  "filterListId": 1030,
+  "languageId": 122
+},
+{
+  "filterListId": 1033,
+  "languageId": 122
+},
+{
+  "filterListId": 1042,
+  "languageId": 122
+},
+{
+  "filterListId": 1054,
+  "languageId": 122
+},
+{
+  "filterListId": 1069,
+  "languageId": 122
+},
+{
+  "filterListId": 1073,
+  "languageId": 122
+},
+{
+  "filterListId": 1090,
+  "languageId": 122
+},
+{
+  "filterListId": 1099,
+  "languageId": 122
+},
+{
+  "filterListId": 884,
+  "languageId": 139
+},
+{
+  "filterListId": 868,
+  "languageId": 141
+},
+{
+  "filterListId": 869,
+  "languageId": 141
+},
+{
+  "filterListId": 870,
+  "languageId": 141
+},
+{
+  "filterListId": 871,
+  "languageId": 141
+},
+{
+  "filterListId": 872,
+  "languageId": 141
+},
+{
+  "filterListId": 873,
+  "languageId": 141
+},
+{
+  "filterListId": 874,
+  "languageId": 141
+},
+{
+  "filterListId": 875,
+  "languageId": 141
+},
+{
+  "filterListId": 876,
+  "languageId": 141
+},
+{
+  "filterListId": 877,
+  "languageId": 141
+},
+{
+  "filterListId": 878,
+  "languageId": 141
+},
+{
+  "filterListId": 879,
+  "languageId": 141
+},
+{
+  "filterListId": 880,
+  "languageId": 141
+},
+{
+  "filterListId": 882,
+  "languageId": 141
+},
+{
+  "filterListId": 884,
+  "languageId": 141
+},
+{
+  "filterListId": 985,
+  "languageId": 141
+},
+{
+  "filterListId": 1104,
+  "languageId": 141
+},
+{
+  "filterListId": 1105,
+  "languageId": 141
+},
+{
+  "filterListId": 1106,
+  "languageId": 141
+},
+{
+  "filterListId": 1123,
+  "languageId": 141
+},
+{
+  "filterListId": 1124,
+  "languageId": 141
+},
+{
+  "filterListId": 1162,
+  "languageId": 141
+},
+{
+  "filterListId": 905,
+  "languageId": 163
+},
+{
+  "filterListId": 917,
+  "languageId": 163
+},
+{
+  "filterListId": 920,
+  "languageId": 163
+},
+{
+  "filterListId": 925,
+  "languageId": 163
+},
+{
+  "filterListId": 931,
+  "languageId": 163
+},
+{
+  "filterListId": 952,
+  "languageId": 163
+},
+{
+  "filterListId": 953,
+  "languageId": 163
+},
+{
+  "filterListId": 954,
+  "languageId": 163
+},
+{
+  "filterListId": 964,
+  "languageId": 163
+},
+{
+  "filterListId": 970,
+  "languageId": 163
+},
+{
+  "filterListId": 984,
+  "languageId": 163
+},
+{
+  "filterListId": 1002,
+  "languageId": 163
+},
+{
+  "filterListId": 1005,
+  "languageId": 163
+},
+{
+  "filterListId": 1009,
+  "languageId": 163
+},
+{
+  "filterListId": 1021,
+  "languageId": 163
+},
+{
+  "filterListId": 1024,
+  "languageId": 163
+},
+{
+  "filterListId": 1046,
+  "languageId": 163
+},
+{
+  "filterListId": 1055,
+  "languageId": 163
+},
+{
+  "filterListId": 1098,
+  "languageId": 163
+}
 ]
