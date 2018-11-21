@@ -600,7 +600,7 @@
     "licenseId": 5,
     "name": "hpHosts",
     "syntaxId": 1,
-    "viewUrl": "https://www.hosts-file.net/download/hosts.txt"
+    "viewUrl": "https://www.hosts-file.net/hosts.txt"
   },
   {
     "id": 49,
@@ -10356,7 +10356,7 @@
   "issuesUrl": "https://github.com/finnish-easylist-addition/finnish-easylist-addition/issues",
   "licenseId": "The Unlicense",
   "name": "Adblock List for Finland",
-  "publishedDate": 2018-11-02T00:00:00,
+  "publishedDate": "2018-11-02T00:00:00",
   "syntaxId": 3,
   "viewUrl": "https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/master/Finland_adb.txt"
 },
