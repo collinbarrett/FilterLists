@@ -595,12 +595,12 @@
   {
     "id": 48,
     "description": "hpHosts is a community managed and maintained hosts file that allows an additional layer of protection against access to ad, tracking and malicious websites.",
-    "descriptionSourceUrl": "https://www.hosts-file.net/",
-    "homeUrl": "https://www.hosts-file.net/",
+    "descriptionSourceUrl": "https://hosts-file.net/",
+    "homeUrl": "https://hosts-file.net/",
     "licenseId": 5,
     "name": "hpHosts",
     "syntaxId": 1,
-    "viewUrl": "https://www.hosts-file.net/download/hosts.txt"
+    "viewUrl": "https://hosts-file.net/download/hosts.txt"
   },
   {
     "id": 49,
