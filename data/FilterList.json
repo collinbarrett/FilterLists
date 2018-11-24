@@ -239,13 +239,13 @@
   },
   {
     "id": 20,
-    "description": "Removes ads, affiliation ads, and empty boxes on Norwegian sites to produce a cleaner browser experience. Meant to be used on top of general filters.",
+    "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
-    "name": "Dandelion Sprout's Norwegian Filters for Tidier Websites",
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites",
     "publishedDate": "2018-05-15T02:39:19",
     "syntaxId": 3,
     "updatedDate": "2018-11-01T20:59:25",
@@ -4025,22 +4025,6 @@
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser"
   },
   {
-    "id": 328,
-    "description": "This list includes uBO-specific versions of filters, and are meant to be accessed by uBlock Origin, Nano Adblocker and AdGuard whenever they load the main Norwegian list.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExtensionsForUBO%26Nano.txt",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 10,
-    "name": "Norwegian Extensions For UBO & Nano",
-    "syntaxId": 4,
-    "updatedDate": "2018-10-31T00:06:10",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExtensionsForUBO%26Nano.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExtensionsForUBO&Nano.txt",
-    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/masterNorwegianExtensionsForUBO&Nano.txt"
-  },
-  {
     "id": 329,
     "description": "A hosts file for Chinese websites.",
     "homeUrl": "https://github.com/vokins/yhosts",
@@ -4780,21 +4764,6 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Username%20Hider%20for%20Compilation%20Creators.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Username%20Hider%20for%20Compilation%20Creators.txt",
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Username%20Hider%20for%20Compilation%20Creators.txt"
-  },
-  {
-    "id": 386,
-    "description": "The Sami indigenous people, spanning 4 official countries, and 6 actively used Sami languages, deserve a list of their own to bolster their proudness.",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 10,
-    "name": "Dandelion Sprout's Tidy Sami-languages Internet List",
-    "syntaxId": 3,
-    "updatedDate": "2018-09-30T08:54:51",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/S%C3%A1megiella-interneahttalisttu.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/S%C3%A1megiella-interneahttalisttu.txt",
-    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/S%C3%A1megiella-interneahttalisttu.txt"
   },
   {
     "id": 388,
