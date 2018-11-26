@@ -239,13 +239,13 @@
   },
   {
     "id": 20,
-    "description": "Removes ads, affiliation ads, and empty boxes on Norwegian sites to produce a cleaner browser experience. Meant to be used on top of general filters.",
+    "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
-    "name": "Dandelion Sprout's Norwegian Filters for Tidier Websites",
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites",
     "publishedDate": "2018-05-15T02:39:19",
     "syntaxId": 3,
     "updatedDate": "2018-11-01T20:59:25",
@@ -595,12 +595,12 @@
   {
     "id": 48,
     "description": "hpHosts is a community managed and maintained hosts file that allows an additional layer of protection against access to ad, tracking and malicious websites.",
-    "descriptionSourceUrl": "https://www.hosts-file.net/",
-    "homeUrl": "https://www.hosts-file.net/",
+    "descriptionSourceUrl": "https://hosts-file.net/",
+    "homeUrl": "https://hosts-file.net/",
     "licenseId": 5,
     "name": "hpHosts",
     "syntaxId": 1,
-    "viewUrl": "https://www.hosts-file.net/download/hosts.txt"
+    "viewUrl": "https://hosts-file.net/download/hosts.txt"
   },
   {
     "id": 49,
@@ -4025,22 +4025,6 @@
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser"
   },
   {
-    "id": 328,
-    "description": "This list includes uBO-specific versions of filters, and are meant to be accessed by uBlock Origin, Nano Adblocker and AdGuard whenever they load the main Norwegian list.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExtensionsForUBO%26Nano.txt",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 10,
-    "name": "Norwegian Extensions For UBO & Nano",
-    "syntaxId": 4,
-    "updatedDate": "2018-10-31T00:06:10",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExtensionsForUBO%26Nano.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExtensionsForUBO&Nano.txt",
-    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/masterNorwegianExtensionsForUBO&Nano.txt"
-  },
-  {
     "id": 329,
     "description": "A hosts file for Chinese websites.",
     "homeUrl": "https://github.com/vokins/yhosts",
@@ -4780,21 +4764,6 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Username%20Hider%20for%20Compilation%20Creators.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Username%20Hider%20for%20Compilation%20Creators.txt",
     "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/Username%20Hider%20for%20Compilation%20Creators.txt"
-  },
-  {
-    "id": 386,
-    "description": "The Sami indigenous people, spanning 4 official countries, and 6 actively used Sami languages, deserve a list of their own to bolster their proudness.",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 10,
-    "name": "Dandelion Sprout's Tidy Sami-languages Internet List",
-    "syntaxId": 3,
-    "updatedDate": "2018-09-30T08:54:51",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/S%C3%A1megiella-interneahttalisttu.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/S%C3%A1megiella-interneahttalisttu.txt",
-    "viewUrlMirror2": "https://notabug.org/DandelionSprout/FilterMirrorRepo2/raw/master/S%C3%A1megiella-interneahttalisttu.txt"
   },
   {
     "id": 388,
@@ -10181,5 +10150,3434 @@
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_facebook0_noedgetxt",
     "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/hosts_facebook0_noedge.txt"
-  }
+  },
+  {
+  "id": 868,
+  "description": "Advertisement blocking.",
+  "descriptionSourceUrl": "https://github.com/eEIi0A5L/adblock_filter/blob/master/README.md",
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Mochi Filter",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/mochi_filter.txt"
+},
+{
+  "id": 869,
+  "description": "Advertisement blocking.",
+  "descriptionSourceUrl": "https://github.com/eEIi0A5L/adblock_filter/blob/master/README.md",
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Mochi Filter 2gun",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/mochi_filter_2gun.txt"
+},
+{
+  "id": 870,
+  "description": "Advertisement blocking.",
+  "descriptionSourceUrl": "https://github.com/eEIi0A5L/adblock_filter/blob/master/README.md",
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Mochi Filter Amazon",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/mochi_filter_amazon.txt"
+},
+{
+  "id": 871,
+  "description": "Advertisement blocking.",
+  "descriptionSourceUrl": "https://github.com/eEIi0A5L/adblock_filter/blob/master/README.md",
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Mochi Filter Extended",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/mochi_filter_extended.txt"
+},
+{
+  "id": 872,
+  "description": "Block unnecessary items other than advertisements.",
+  "descriptionSourceUrl": "https://github.com/eEIi0A5L/adblock_filter/blob/master/README.md",
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Leek Filter",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/negi_filter.txt"
+},
+{
+  "id": 873,
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Leek: Filter to remove Google's logo",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/negi_google_hplogo_block.txt"
+},
+{
+  "id": 874,
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Leek: Allow saving image collections on Twitter (Remove GalleryNav)",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/negi_twitter_allow_save_multi_images.txt"
+},
+{
+  "id": 875,
+  "description": "Blocking virus sites.",
+  "descriptionSourceUrl": "https://github.com/eEIi0A5L/adblock_filter/blob/master/README.md",
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Turtle Filter",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/kame_filter.txt"
+},
+{
+  "id": 876,
+  "description": "Blocks buttons for social networks.",
+  "descriptionSourceUrl": "https://github.com/eEIi0A5L/adblock_filter/blob/master/README.md",
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Birdie Filter",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/kotori_filter.txt"
+},
+{
+  "id": 877,
+  "description": "Coin mining block.",
+  "descriptionSourceUrl": "https://github.com/eEIi0A5L/adblock_filter/blob/master/README.md",
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Whale Filter",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/kujira_filter.txt"
+},
+{
+  "id": 878,
+  "description": "Blocks ads for adult sites.",
+  "descriptionSourceUrl": "https://github.com/eEIi0A5L/adblock_filter/blob/master/README.md",
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Strawberry Filter",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/ichigo_filter.txt"
+},
+{
+  "id": 879,
+  "description": "Filter for phones.",
+  "descriptionSourceUrl": "https://github.com/eEIi0A5L/adblock_filter/blob/master/README.md",
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Egg Filter",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/tamago_filter.txt"
+},
+{
+  "id": 880,
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Yahoo!Japan Filter for Blocking Ads",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/yahoojapan_wo_tonikaku_filter.txt"
+},
+{
+  "id": 881,
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "YouTube Filter for Blocking Ads",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/youtube_wo_tonikaku_filter.txt"
+},
+{
+  "id": 882,
+  "description": "Combines Mochi Filter, Mochi Filter Extended, Negi Filter, Kame Filter, Kotori Filter, Ichigo Filter, and Kujira Filter.",
+  "descriptionSourceUrl": "https://github.com/eEIi0A5L/adblock_filter/blob/master/README.md",
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Complete Mochi Filter",
+  "syntaxId": 4,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/all.txt"
+},
+{
+  "id": 883,
+  "emailAddress": "mochifilter@yahoo.co.jp",
+  "homeUrl": "https://pokapoka.shoooter.net/",
+  "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
+  "name": "Mochi Filter Beta",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/beta.txt"
+},
+{
+  "id": 884,
+  "description": "Finnish adblock list",
+  "descriptionSourceUrl": "https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/master/Finland_adb.txt",
+  "homeUrl": "https://github.com/finnish-easylist-addition/finnish-easylist-addition",
+  "issuesUrl": "https://github.com/finnish-easylist-addition/finnish-easylist-addition/issues",
+  "licenseId": 11,
+  "name": "Adblock List for Finland",
+  "publishedDate": "2018-11-02T00:00:00",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/master/Finland_adb.txt"
+},
+{
+  "id": 885,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Afghanistan",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Afghanistan.txt"
+},
+{
+  "id": 886,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Åland",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Aland.txt"
+},
+{
+  "id": 887,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Albania",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Albania.txt"
+},
+{
+  "id": 888,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Algeria",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Algeria.txt"
+},
+{
+  "id": 889,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - American Samoa",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/AmericanSamoa.txt"
+},
+{
+  "id": 890,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Andorra",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Andorra.txt"
+},
+{
+  "id": 891,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Angola",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Angola.txt"
+},
+{
+  "id": 892,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Anguilla",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Anguilla.txt"
+},
+{
+  "id": 893,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Antarctica",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Antarctica.txt"
+},
+{
+  "id": 894,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Antigua And Barbuda",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/AntiguaAndBarbuda.txt"
+},
+{
+  "id": 895,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Argentina",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Argentina.txt"
+},
+{
+  "id": 896,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Armenia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Armenia.txt"
+},
+{
+  "id": 897,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Ascension Island",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/AscensionIsland.txt"
+},
+{
+  "id": 898,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Australia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Australia.txt"
+},
+{
+  "id": 899,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Austria",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Austria.txt"
+},
+{
+  "id": 900,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Azerbaijan",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Azerbaijan.txt"
+},
+{
+  "id": 901,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Bahamas",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Bahamas.txt"
+},
+{
+  "id": 902,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Bahrain",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Bahrain.txt"
+},
+{
+  "id": 903,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Bangladesh",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Bangladesh.txt"
+},
+{
+  "id": 904,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Belarus",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Belarus.txt"
+},
+{
+  "id": 905,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Belgium",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Belgium.txt"
+},
+{
+  "id": 906,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Belize",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Belize.txt"
+},
+{
+  "id": 907,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Bermuda",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Bermuda.txt"
+},
+{
+  "id": 908,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Bhutan",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Bhutan.txt"
+},
+{
+  "id": 909,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Bolivia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Bolivia.txt"
+},
+{
+  "id": 910,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Bonaire",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Bonaire.txt"
+},
+{
+  "id": 911,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Bosnia And Herzegovina",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/BosniaAndHerzegovina.txt"
+},
+{
+  "id": 912,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Botswana",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Botswana.txt"
+},
+{
+  "id": 913,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Brazil",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Brazil.txt"
+},
+{
+  "id": 914,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - British Indian Ocean Territory",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/BritishIndianOceanTerritory.txt"
+},
+{
+  "id": 915,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - British Virgin Islands",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/BritishVirginIslands.txt"
+},
+{
+  "id": 916,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Bulgaria",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Bulgaria.txt"
+},
+{
+  "id": 917,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Burkina Faso",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/BurkinaFaso.txt"
+},
+{
+  "id": 918,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Burundi",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Burundi.txt"
+},
+{
+  "id": 919,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Cambodia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Cambodia.txt"
+},
+{
+  "id": 920,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Cameroon",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Cameroon.txt"
+},
+{
+  "id": 921,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Canada",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Canada.txt"
+},
+{
+  "id": 922,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Cape Verde",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/CapeVerde.txt"
+},
+{
+  "id": 923,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Catalonia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Catalonia.txt"
+},
+{
+  "id": 924,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Cayman Islands",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/CaymanIslands.txt"
+},
+{
+  "id": 925,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Central African Republic",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/CentralAfricanRepublic.txt"
+},
+{
+  "id": 926,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Chile",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Chile.txt"
+},
+{
+  "id": 927,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - China, Peoples Republic of",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/ChinaPeoplesRepublicof.txt"
+},
+{
+  "id": 928,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Christmas Island",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/ChristmasIsland.txt"
+},
+{
+  "id": 929,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Cocos and Keeling Islands",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/CocosKeelingIslands.txt"
+},
+{
+  "id": 930,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Colombia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Colombia.txt"
+},
+{
+  "id": 931,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Congo Kinshasa",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/CongoKinshasa.txt"
+},
+{
+  "id": 932,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Cook Islands",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/CookIslands.txt"
+},
+{
+  "id": 933,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Costa Rica",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/CostaRica.txt"
+},
+{
+  "id": 934,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Croatia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Croatia.txt"
+},
+{
+  "id": 935,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Cuba",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Cuba.txt"
+},
+{
+  "id": 936,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Cyprus",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Cyprus.txt"
+},
+{
+  "id": 937,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Czech Republic",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/CzechRepublic.txt"
+},
+{
+  "id": 938,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Denmark",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Denmark.txt"
+},
+{
+  "id": 939,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Djibouti",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Djibouti.txt"
+},
+{
+  "id": 940,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Dominica",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Dominica.txt"
+},
+{
+  "id": 941,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Dominican Republic",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/DominicanRepublic.txt"
+},
+{
+  "id": 942,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Ecuador",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Ecuador.txt"
+},
+{
+  "id": 943,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Egypt",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Egypt.txt"
+},
+{
+  "id": 944,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - El Salvador",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/ElSalvador.txt"
+},
+{
+  "id": 945,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Equatorial Guinea",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/EquatorialGuinea.txt"
+},
+{
+  "id": 946,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Estonia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Estonia.txt"
+},
+{
+  "id": 947,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - European Union",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/EuropeanUnion.txt"
+},
+{
+  "id": 948,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Faroe Islands",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/FaeroeIslands.txt"
+},
+{
+  "id": 949,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Federated States Of Micronesia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/FederatedStatesOfMicronesia.txt"
+},
+{
+  "id": 950,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Fiji",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Fiji.txt"
+},
+{
+  "id": 951,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Finland",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Finland.txt"
+},
+{
+  "id": 952,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - France",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/France.txt"
+},
+{
+  "id": 953,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - French Polynesia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/FrenchPolynesia.txt"
+},
+{
+  "id": 954,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - French Southern And Antarctic Lands",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/FrenchSouthernAndAntarcticLands.txt"
+},
+{
+  "id": 955,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Gabonese Republic",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/GaboneseRepublic.txt"
+},
+{
+  "id": 956,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Gambia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Gambia.txt"
+},
+{
+  "id": 957,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Gaza Strip",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/GazaStrip.txt"
+},
+{
+  "id": 958,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Georgia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Georgia.txt"
+},
+{
+  "id": 959,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Germany",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Germany.txt"
+},
+{
+  "id": 960,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Ghana",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Ghana.txt"
+},
+{
+  "id": 961,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Greece",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Greece.txt"
+},
+{
+  "id": 962,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Greenland",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Greenland.txt"
+},
+{
+  "id": 963,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Grenada",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Grenada.txt"
+},
+{
+  "id": 964,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Guadeloupe",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Guadeloupe.txt"
+},
+{
+  "id": 965,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Guam",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Guam.txt"
+},
+{
+  "id": 966,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Guatemala",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Guatemala.txt"
+},
+{
+  "id": 967,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Guernsey",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Guernsey.txt"
+},
+{
+  "id": 968,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Guinea",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Guinea.txt"
+},
+{
+  "id": 969,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Guyana",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Guyana.txt"
+},
+{
+  "id": 970,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Haiti",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Haiti.txt"
+},
+{
+  "id": 971,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Heard Island And McDonald Islands",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/HeardIslandAndMcDonaldIslands.txt"
+},
+{
+  "id": 972,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Honduras",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Honduras.txt"
+},
+{
+  "id": 973,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Hong Kong",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/HongKong.txt"
+},
+{
+  "id": 974,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Hungary",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Hungary.txt"
+},
+{
+  "id": 975,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Iceland",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Iceland.txt"
+},
+{
+  "id": 976,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - India",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/India.txt"
+},
+{
+  "id": 977,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Indonesia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Indonesia.txt"
+},
+{
+  "id": 978,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Iran",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Iran.txt"
+},
+{
+  "id": 979,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Iraq",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Iraq.txt"
+},
+{
+  "id": 980,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Ireland",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Ireland.txt"
+},
+{
+  "id": 981,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Isle of Man",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/IsleofMan.txt"
+},
+{
+  "id": 982,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Israel",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Israel.txt"
+},
+{
+  "id": 983,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Italy",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Italy.txt"
+},
+{
+  "id": 984,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Ivory Coast",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/IvoryCoast.txt"
+},
+{
+  "id": 985,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Japan",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Japan.txt"
+},
+{
+  "id": 986,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Jersey",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Jersey.txt"
+},
+{
+  "id": 987,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Jordan",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Jordan.txt"
+},
+{
+  "id": 988,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Kazakhstan",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Kazakhstan.txt"
+},
+{
+  "id": 989,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Kenya",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Kenya.txt"
+},
+{
+  "id": 990,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Kiribati",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Kiribati.txt"
+},
+{
+  "id": 991,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Kuwait",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Kuwait.txt"
+},
+{
+  "id": 992,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Kyrgyzstan",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Kyrgyzstan.txt"
+},
+{
+  "id": 993,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Laos",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Laos.txt"
+},
+{
+  "id": 994,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Latvia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Latvia.txt"
+},
+{
+  "id": 995,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Lebanon",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Lebanon.txt"
+},
+{
+  "id": 996,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Libya",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Libya.txt"
+},
+{
+  "id": 997,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Liechtenstein",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Liechtenstein.txt"
+},
+{
+  "id": 998,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Lithuania",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Lithuania.txt"
+},
+{
+  "id": 999,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Luxembourg",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Luxembourg.txt"
+},
+{
+  "id": 1000,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Macau",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Macau.txt"
+},
+{
+  "id": 1001,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Macedonia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Macedonia.txt"
+},
+{
+  "id": 1002,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Madagascar",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Madagascar.txt"
+},
+{
+  "id": 1003,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Malawi",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Malawi.txt"
+},
+{
+  "id": 1004,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Malaysia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Malaysia.txt"
+},
+{
+  "id": 1005,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Mali",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Mali.txt"
+},
+{
+  "id": 1006,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Malta",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Malta.txt"
+},
+{
+  "id": 1007,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Mauritania",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Mauritania.txt"
+},
+{
+  "id": 1008,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Mauritius",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Mauritius.txt"
+},
+{
+  "id": 1009,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Mayotte",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Mayotte.txt"
+},
+{
+  "id": 1010,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Mexico",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Mexico.txt"
+},
+{
+  "id": 1011,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Moldova",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Moldova.txt"
+},
+{
+  "id": 1012,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Mongolia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Mongolia.txt"
+},
+{
+  "id": 1013,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Montenegro",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Montenegro.txt"
+},
+{
+  "id": 1014,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Montserrat",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Montserrat.txt"
+},
+{
+  "id": 1015,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Morocco",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Morocco.txt"
+},
+{
+  "id": 1016,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Mozambique",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Mozambique.txt"
+},
+{
+  "id": 1017,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Namibia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Namibia.txt"
+},
+{
+  "id": 1018,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Nauru",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Nauru.txt"
+},
+{
+  "id": 1019,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Nepal",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Nepal.txt"
+},
+{
+  "id": 1020,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Netherlands",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Netherlands.txt"
+},
+{
+  "id": 1021,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - New Caledonia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/NewCaledonia.txt"
+},
+{
+  "id": 1022,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - New Zealand",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/NewZealand.txt"
+},
+{
+  "id": 1023,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Nicaragua",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Nicaragua.txt"
+},
+{
+  "id": 1024,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Niger",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Niger.txt"
+},
+{
+  "id": 1025,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Nigeria",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Nigeria.txt"
+},
+{
+  "id": 1026,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Niue",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Niue.txt"
+},
+{
+  "id": 1027,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Norfolk Island",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/NorfolkIsland.txt"
+},
+{
+  "id": 1028,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Northern Mariana Islands",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/NorthernMarianaIslands.txt"
+},
+{
+  "id": 1029,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Norway",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Norway.txt"
+},
+{
+  "id": 1030,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Oman",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Oman.txt"
+},
+{
+  "id": 1031,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Pakistan",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Pakistan.txt"
+},
+{
+  "id": 1032,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Palau",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Palau.txt"
+},
+{
+  "id": 1033,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Palestine",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Palestine.txt"
+},
+{
+  "id": 1034,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Panama",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Panama.txt"
+},
+{
+  "id": 1035,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Paraguay",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Paraguay.txt"
+},
+{
+  "id": 1036,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Peru",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Peru.txt"
+},
+{
+  "id": 1037,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Philippines",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Philippines.txt"
+},
+{
+  "id": 1038,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Pitcairn Islands",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/PitcairnIslands.txt"
+},
+{
+  "id": 1039,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Poland",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Poland.txt"
+},
+{
+  "id": 1040,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Portugal",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Portugal.txt"
+},
+{
+  "id": 1041,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Puerto Rico",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/PuertoRico.txt"
+},
+{
+  "id": 1042,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Qatar",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Qatar.txt"
+},
+{
+  "id": 1043,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Romania",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Romania.txt"
+},
+{
+  "id": 1044,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Russia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Russia.txt"
+},
+{
+  "id": 1045,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Rwanda",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Rwanda.txt"
+},
+{
+  "id": 1046,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Réunion Island",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/RéunionIsland.txt"
+},
+{
+  "id": 1047,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Saint Helena",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/SaintHelena.txt"
+},
+{
+  "id": 1048,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Saint Lucia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/SaintLucia.txt"
+},
+{
+  "id": 1049,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Saint Pierre And Miquelon",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/SaintPierreAndMiquelon.txt"
+},
+{
+  "id": 1050,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Saint Vincent And Grenadines",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/SaintVincentAndGrenadines.txt"
+},
+{
+  "id": 1051,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Samoa",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Samoa.txt"
+},
+{
+  "id": 1052,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - San Marino",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/SanMarino.txt"
+},
+{
+  "id": 1053,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Sao Tome And Principe",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/SaoTomeAndPrincipe.txt"
+},
+{
+  "id": 1054,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Saudi-Arabia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/SaudiArabia.txt"
+},
+{
+  "id": 1055,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Senegal",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Senegal.txt"
+},
+{
+  "id": 1056,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Serbia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Serbia.txt"
+},
+{
+  "id": 1057,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Seychelles",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Seychelles.txt"
+},
+{
+  "id": 1058,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Sierra Leone",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/SierraLeone.txt"
+},
+{
+  "id": 1059,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Singapore",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Singapore.txt"
+},
+{
+  "id": 1060,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Sint Maarten",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/SintMaarten.txt"
+},
+{
+  "id": 1061,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Slovakia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Slovakia.txt"
+},
+{
+  "id": 1062,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Slovenia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Slovenia.txt"
+},
+{
+  "id": 1063,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Somalia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Somalia.txt"
+},
+{
+  "id": 1064,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - South Africa",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/SouthAfrica.txt"
+},
+{
+  "id": 1065,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - South Georgia And South Sandwich Islands",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/SouthGeorgiaAndSouthSandwichIslands.txt"
+},
+{
+  "id": 1066,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - South Korea",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/SouthKorea.txt"
+},
+{
+  "id": 1067,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Spain",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Spain.txt"
+},
+{
+  "id": 1068,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Sri Lanka",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/SriLanka.txt"
+},
+{
+  "id": 1069,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Sudan",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Sudan.txt"
+},
+{
+  "id": 1070,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Suriname",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Suriname.txt"
+},
+{
+  "id": 1071,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Sweden",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Sweden.txt"
+},
+{
+  "id": 1072,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Switzerland",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Switzerland.txt"
+},
+{
+  "id": 1073,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Syria",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Syria.txt"
+},
+{
+  "id": 1074,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Taiwan",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Taiwan.txt"
+},
+{
+  "id": 1075,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Tajikistan",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Tajikistan.txt"
+},
+{
+  "id": 1076,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Tanzania",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Tanzania.txt"
+},
+{
+  "id": 1077,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Thailand",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Thailand.txt"
+},
+{
+  "id": 1078,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Timor Leste",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/TimorLeste.txt"
+},
+{
+  "id": 1079,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Togo",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Togo.txt"
+},
+{
+  "id": 1080,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Tokelau",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Tokelau.txt"
+},
+{
+  "id": 1081,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Tonga",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Tonga.txt"
+},
+{
+  "id": 1082,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Trinidad And Tobago",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/TrinidadAndTobago.txt"
+},
+{
+  "id": 1083,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Tunisia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Tunisia.txt"
+},
+{
+  "id": 1084,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Turkey",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Turkey.txt"
+},
+{
+  "id": 1085,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Turkmenistan",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Turkmenistan.txt"
+},
+{
+  "id": 1086,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Turks And Caicos Islands",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/TurksAndCaicosIslands.txt"
+},
+{
+  "id": 1087,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Tuvalu",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Tuvalu.txt"
+},
+{
+  "id": 1088,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Uganda",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Uganda.txt"
+},
+{
+  "id": 1089,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Ukraine",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Ukraine.txt"
+},
+{
+  "id": 1090,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - United Arab Emirates",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/UnitedArabEmirates.txt"
+},
+{
+  "id": 1091,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - United Kingdom",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/UnitedKingdom.txt"
+},
+{
+  "id": 1092,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - United States of America",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/UnitedStatesofAmerica.txt"
+},
+{
+  "id": 1093,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Uruguay",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Uruguay.txt"
+},
+{
+  "id": 1094,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Uzbekistan",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Uzbekistan.txt"
+},
+{
+  "id": 1095,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Vanuatu",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Vanuatu.txt"
+},
+{
+  "id": 1096,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Venezuela",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Venezuela.txt"
+},
+{
+  "id": 1097,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Vietnam",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Vietnam.txt"
+},
+{
+  "id": 1098,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Wallis and Futuna",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/WallisandFutuna.txt"
+},
+{
+  "id": 1099,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Western Sahara",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/WesternSahara.txt"
+},
+{
+  "id": 1100,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Zambia",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Zambia.txt"
+},
+{
+  "id": 1101,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Zimbabwe",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Zimbabwe.txt"
+},
+{
+  "id": 1102,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "ABP Bulgarian List (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/ABP-Bulgarian-List.txt"
+},
+{
+  "id": 1103,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "ABP Clickbait Blocklist (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/ABP-Clickbait-Blocklist.txt"
+},
+{
+  "id": 1104,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "ABP Japanese 3rd Party SNS Filters (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/ABP-Japanese-3rd-Party-SNS-Filters.txt"
+},
+{
+  "id": 1105,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "ABP Japanese Filters (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/ABP-Japanese-Filters.txt"
+},
+{
+  "id": 1106,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "ABP Japanese Paranoid Filters (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/ABP-Japanese-Paranoid-Filters.txt"
+},
+{
+  "id": 1107,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "ABP X Files (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/ABP-X-Files.txt"
+},
+{
+  "id": 1108,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "ABPindo (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/ABPindo.txt"
+},
+{
+  "id": 1109,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "AakList (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/AakList.txt"
+},
+{
+  "id": 1110,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "AdAway Default Blocklist (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/AdAway-Default-Blocklist.txt"
+},
+{
+  "id": 1111,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Adblock Filters by Gurudee (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Adblock-Filters-by-Gurudee.txt"
+},
+{
+  "id": 1112,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Adblock Iran (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Adblock-Iran.txt"
+},
+{
+  "id": 1113,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Adblock Korea (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Adblock-Korea.txt"
+},
+{
+  "id": 1114,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Adblock Persian (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Adblock-Persian.txt"
+},
+{
+  "id": 1115,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Adblock Polska (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Adblock-Polska.txt"
+},
+{
+  "id": 1116,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Adblock YouTube Ads (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Adblock-YouTube-Ads.txt"
+},
+{
+  "id": 1117,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Adblock uBlock Polish Filters (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Adblock-uBlock-Polish-Filters.txt"
+},
+{
+  "id": 1118,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Adguard English Filter (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Adguard-English-Filter.txt"
+},
+{
+  "id": 1119,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Adware Filters (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Adware-Filters.txt"
+},
+{
+  "id": 1120,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "AntiPubWeb (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/AntiPubWeb.txt"
+},
+{
+  "id": 1121,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Anudeep Youtube (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Anudeep-Youtube.txt"
+},
+{
+  "id": 1122,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Ayucat Powerful (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Ayucat-Powerful.txt"
+},
+{
+  "id": 1123,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "BLOGRAM Analysis Block Filter List for Japan (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/BLOGRAM-Analysis-Block-Filter-List-for-Japan.txt"
+},
+{
+  "id": 1124,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "BLOGRAM Basic Filter List for Japan (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/BLOGRAM-Basic-Filter-List-for-Japan.txt"
+},
+{
+  "id": 1125,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Bad JAV Sites (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Bad-JAV-Sites.txt"
+},
+{
+  "id": 1126,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Block EU Cookie Shit List (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Block-EU-Cookie-Shit-List.txt"
+},
+{
+  "id": 1127,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Blockzilla (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Blockzilla.txt"
+},
+{
+  "id": 1128,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "BreakingTheNews (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/BreakingTheNews.txt"
+},
+{
+  "id": 1129,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "BulgarianListEasyList (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/BulgarianListEasyList.txt"
+},
+{
+  "id": 1130,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "CAMELEON Hosts (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/CAMELEON-Hosts.txt"
+},
+{
+  "id": 1131,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Chad Mayfield Porn Blocklist Heavy (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Chad-Mayfield-Porn-Blocklist-Heavy.txt"
+},
+{
+  "id": 1132,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Chad Mayfield Porn Blocklist Light (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Chad-Mayfield-Porn-Blocklist-Light.txt"
+},
+{
+  "id": 1133,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "CryptoWall Ransomware C2 Domain blocklist (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/CryptoWall-Ransomware-C2-Domain-blocklist.txt"
+},
+{
+  "id": 1134,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "DNS BH Free Web Hosts (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/DNS-BH-Free-Web-Hosts.txt"
+},
+{
+  "id": 1135,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "DNS BH Malware Domains (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/DNS-BH-Malware-Domains.txt"
+},
+{
+  "id": 1136,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Dan Pollock's Hosts (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Dan-Pollocks-Hosts.txt"
+},
+{
+  "id": 1137,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Disconnect Advertising Filter (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Disconnect-Advertising-Filter.txt"
+},
+{
+  "id": 1138,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Disconnect Malvertising Filter (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Disconnect-Malvertising-Filter.txt"
+},
+{
+  "id": 1139,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Disconnect Malware Filter (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Disconnect-Malware-Filter.txt"
+},
+{
+  "id": 1140,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Dshield Suspicious High (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Dshield-Suspicious-High.txt"
+},
+{
+  "id": 1141,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Dshield Suspicious Low (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Dshield-Suspicious-Low.txt"
+},
+{
+  "id": 1142,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Dshield Suspicious Medium (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Dshield-Suspicious-Medium.txt"
+},
+{
+  "id": 1143,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "EasyList Czech Slovak (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/EasyList-Czech-Slovak.txt"
+},
+{
+  "id": 1144,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "EasyList Dutch (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/EasyList-Dutch.txt"
+},
+{
+  "id": 1145,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "EasyList Germany (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/EasyList-Germany.txt"
+},
+{
+  "id": 1146,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "EasyList Italy (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/EasyList-Italy.txt"
+},
+{
+  "id": 1147,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "EasyList Latvian (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/EasyList-Latvian.txt"
+},
+{
+  "id": 1148,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "EasyList Liste FR (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/EasyList-Liste-FR.txt"
+},
+{
+  "id": 1149,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "EasyList Thailand (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/EasyList-Thailand.txt"
+},
+{
+  "id": 1150,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "EasyList (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/EasyList.txt"
+},
+{
+  "id": 1151,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "FadeMind addSpam (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/FadeMind-addSpam.txt"
+},
+{
+  "id": 1152,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Fanboy Annoyances List (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Fanboy-Annoyances-List.txt"
+},
+{
+  "id": 1153,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Filtros Nauscopicos (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Filtros-Nauscopicos.txt"
+},
+{
+  "id": 1154,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Finnish AntiSocial (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Finnish-AntiSocial.txt"
+},
+{
+  "id": 1155,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "GandJ Hosts (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/GandJ-Hosts.txt"
+},
+{
+  "id": 1156,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Greek AdBlock Filter (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Greek-AdBlock-Filter.txt"
+},
+{
+  "id": 1157,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Hant05080 Filters (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Hant05080-Filters.txt"
+},
+{
+  "id": 1158,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Henning VanRaumle Youtube (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Henning-VanRaumle-Youtube.txt"
+},
+{
+  "id": 1159,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Hufilter (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Hufilter.txt"
+},
+{
+  "id": 1160,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Ilyakatzs inpage popups (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Ilyakatzs-inpage-popups.txt"
+},
+{
+  "id": 1161,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "ImmortalMalwareDomains (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/ImmortalMalwareDomains.txt"
+},
+{
+  "id": 1162,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "JapaneseSiteAdblockFilterver2 (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/JapaneseSiteAdblockFilterver2.txt"
+},
+{
+  "id": 1163,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "JoeWein (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/JoeWein.txt"
+},
+{
+  "id": 1164,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "KowabitBOD (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/KowabitBOD.txt"
+},
+{
+  "id": 1165,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "LatvianList (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/LatvianList.txt"
+},
+{
+  "id": 1166,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Lead Generator (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Lead-Generator.txt"
+},
+{
+  "id": 1167,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "ListeAR (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/ListeAR.txt"
+},
+{
+  "id": 1168,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Locky Ransomware C2 Domain Blocklist (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Locky-Ransomware-C2-Domain-Blocklist.txt"
+},
+{
+  "id": 1169,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Malware Domains Just Domains (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Malware-Domains-Just-Domains.txt"
+},
+{
+  "id": 1170,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Malware URLs Domains (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Malware-URLs-Domains.txt"
+},
+{
+  "id": 1171,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Mandiant APT1 Report (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Mandiant-APT1-Report.txt"
+},
+{
+  "id": 1172,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Mat1th DNS add block (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Mat1th-DNS-add-block.txt"
+},
+{
+  "id": 1173,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Mayvs Private Adblock Filters (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Mayvs-Private-Adblock-Filters.txt"
+},
+{
+  "id": 1174,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Metaphoricgiraffe Privacy Filters (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Metaphoricgiraffe-Privacy-Filters.txt"
+},
+{
+  "id": 1175,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Michael Trimms Hosts (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Michael-Trimms-Hosts.txt"
+},
+{
+  "id": 1176,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Mitchell Krogs Badd Boyz Hosts (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Mitchell-Krogs-Badd-Boyz-Hosts.txt"
+},
+{
+  "id": 1177,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Mother of All ADBLOCKING (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Mother-of-All-ADBLOCKING.txt"
+},
+{
+  "id": 1178,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "NoTrack Blocklist (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/NoTrack-Blocklist.txt"
+},
+{
+  "id": 1179,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Notracking hostnames (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Notracking-hostnames.txt"
+},
+{
+  "id": 1180,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "PLgeneral (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/PLgeneral.txt"
+},
+{
+  "id": 1181,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "PeterLowes (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/PeterLowes.txt"
+},
+{
+  "id": 1182,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Piwik Spam (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Piwik-Spam.txt"
+},
+{
+  "id": 1183,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "PopupBlocker (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/PopupBlocker.txt"
+},
+{
+  "id": 1184,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Prebake Obtrusive (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Prebake-Obtrusive.txt"
+},
+{
+  "id": 1185,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Prigent Malware (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Prigent-Malware.txt"
+},
+{
+  "id": 1186,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Prigent Phishing (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Prigent-Phishing.txt"
+},
+{
+  "id": 1187,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Quidsup Malicious (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Quidsup-Malicious.txt"
+},
+{
+  "id": 1189,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "ROad Block (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/ROad-Block.txt"
+},
+{
+  "id": 1190,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "RU AdList (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/RU-AdList.txt"
+},
+{
+  "id": 1191,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "RUAdListBitBlock (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/RUAdListBitBlock.txt"
+},
+{
+  "id": 1192,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "RUAdListCounters (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/RUAdListCounters.txt"
+},
+{
+  "id": 1193,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Ransomware Domain Blocklist (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Ransomware-Domain-Blocklist.txt"
+},
+{
+  "id": 1194,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "SVN Slovenian (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/SVN-Slovenian.txt"
+},
+{
+  "id": 1195,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Samsung SmartTV Domains (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Samsung-SmartTV-Domains.txt"
+},
+{
+  "id": 1196,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "SatterlysAdblockPlusFilters (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/SatterlysAdblockPlusFilters.txt"
+},
+{
+  "id": 1197,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Schacks Adblock Plus Liste (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Schacks-Adblock-Plus-Liste.txt"
+},
+{
+  "id": 1198,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Shalla Malicious (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Shalla-Malicious.txt"
+},
+{
+  "id": 1199,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Spam Assassin Bill Stearns (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Spam-Assassin-Bill-Stearns.txt"
+},
+{
+  "id": 1200,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Spam404 Domain Blacklist (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Spam404-Domain-Blacklist.txt"
+},
+{
+  "id": 1201,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Spam404 (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Spam404.txt"
+},
+{
+  "id": 1202,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Steven Blacks Fakenews (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Steven-Blacks-Fakenews.txt"
+},
+{
+  "id": 1203,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Steven Blacks Gambling (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Steven-Blacks-Gambling.txt"
+},
+{
+  "id": 1204,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Steven Blacks Hosts (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Steven-Blacks-Hosts.txt"
+},
+{
+  "id": 1205,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Steven Blacks Porn (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Steven-Blacks-Porn.txt"
+},
+{
+  "id": 1206,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Steven Blacks Risky Hosts (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Steven-Blacks-Risky-Hosts.txt"
+},
+{
+  "id": 1207,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Steven Blacks Trackers (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Steven-Blacks-Trackers.txt"
+},
+{
+  "id": 1208,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Steven Blacks Unchecky Ads (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Steven-Blacks-Unchecky-Ads.txt"
+},
+{
+  "id": 1209,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Steven Blacks Unified Hosts (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Steven-Blacks-Unified-Hosts.txt"
+},
+{
+  "id": 1210,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "TakoYachty Gift Card Killer (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/TakoYachty-Gift-Card-Killer.txt"
+},
+{
+  "id": 1211,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "TeslaCrypt Ransomware C2 Domain Blocklist (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/TeslaCrypt-Ransomware-C2-Domain-Blocklist.txt"
+},
+{
+  "id": 1212,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "TeslaCrypt Ransomware Payment Sites Domain Blocklist (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/TeslaCrypt-Ransomware-Payment-Sites-Domain-Blocklist.txt"
+},
+{
+  "id": 1213,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "The Hosts File Project (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/The-Hosts-File-Project.txt"
+},
+{
+  "id": 1214,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Thoughtconverge AdBlock Filters (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Thoughtconverge-AdBlock-Filters.txt"
+},
+{
+  "id": 1215,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Tofu Filter (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Tofu-Filter.txt"
+},
+{
+  "id": 1216,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "TorrentLocker Ransomware C2 Domain Blocklist (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/TorrentLocker-Ransomware-C2-Domain-Blocklist.txt"
+},
+{
+  "id": 1217,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "TorrentLocker Ransomware Payment Sites Domain Blocklist (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/TorrentLocker-Ransomware-Payment-Sites-Domain-Blocklist.txt"
+},
+{
+  "id": 1218,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Turk adlist (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Turk-adlist.txt"
+},
+{
+  "id": 1219,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Tyzbit (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Tyzbit.txt"
+},
+{
+  "id": 1220,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Wiltteri (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Wiltteri.txt"
+},
+{
+  "id": 1221,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "WindowsSpyBlocker7 (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/WindowsSpyBlocker7.txt"
+},
+{
+  "id": 1222,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "WindowsSpyBlocker81 (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/WindowsSpyBlocker81.txt"
+},
+{
+  "id": 1223,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Yhonay AntiPopAds (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Yhonay-AntiPopAds.txt"
+},
+{
+  "id": 1224,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "YousList (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/YousList.txt"
+},
+{
+  "id": 1225,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "ZeuS Domain Blocklist Bad Domains (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/ZeuS-Domain-Blocklist-Bad-Domains.txt"
+},
+{
+  "id": 1226,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "uAssetsFilters (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/uAssetsFilters.txt"
+},
+{
+  "id": 1227,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "uAssetsPrivacy (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/uAssetsPrivacy.txt"
+},
+{
+  "id": 1228,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "uAssetsUnbreak (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/uAssetsUnbreak.txt"
+},
+{
+  "id": 1229,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "uBOPersonalFilters (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/uBOPersonalFilters.txt"
+},
+{
+  "id": 1230,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "uBlockFiltersPlus (Domains)",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/uBlockFiltersPlus.txt"
+},
+{
+  "id": 1231,
+  "description": "Block ads in apps on iOS and Android",
+  "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
+  "homeUrl": "https://github.com/Akamaru/Pi-Hole-Lists",
+  "issuesUrl": "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+  "name": "Pi-Hole-Lists - App ads",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/appads.txt"
+},
+{
+  "id": 1232,
+  "description": "To block advertising on SmartTVs (HbbTV and co.)",
+  "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
+  "homeUrl": "https://github.com/Akamaru/Pi-Hole-Lists",
+  "issuesUrl": "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+  "name": "Pi-Hole-Lists - SmartTV",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/hbbtv.txt"
+},
+{
+  "id": 1233,
+  "description": "To block Adobe Updates (Photoshop & co.)",
+  "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
+  "homeUrl": "https://github.com/Akamaru/Pi-Hole-Lists",
+  "issuesUrl": "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+  "name": "Pi-Hole-Lists - Adobe updates",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/adobeblock.txt"
+},
+{
+  "id": 1234,
+  "description": "To block Nintendo system updates (3DS / Wii U / Switch)",
+  "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
+  "homeUrl": "https://github.com/Akamaru/Pi-Hole-Lists",
+  "issuesUrl": "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+  "name": "Pi-Hole-Lists - Nintendo updates",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/nintendoblock.txt"
+},
+{
+  "id": 1235,
+  "description": "To block tracking and information that Windows collects",
+  "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
+  "homeUrl": "https://github.com/Akamaru/Pi-Hole-Lists",
+  "issuesUrl": "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+  "name": "Pi-Hole-Lists - Windows tracking",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/nomsdata.txt"
+},
+{
+  "id": 1236,
+  "description": "To block ads on YouTube (Not very effective)",
+  "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
+  "homeUrl": "https://github.com/Akamaru/Pi-Hole-Lists",
+  "issuesUrl": "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+  "name": "Pi-Hole-Lists - YouTube",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/youtube.txt"
+},
+{
+  "id": 1237,
+  "description": "Block fake jailbreak websites (Domains of The iPhone Wiki)",
+  "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
+  "homeUrl": "https://github.com/Akamaru/Pi-Hole-Lists",
+  "issuesUrl": "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+  "name": "Pi-Hole-Lists - Fake jailbreak sites",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/jbfake.txt"
+},
+{
+  "id": 1238,
+  "description": "To block fake gaming websites (fake emulators, etc.)",
+  "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
+  "homeUrl": "https://github.com/Akamaru/Pi-Hole-Lists",
+  "issuesUrl": "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+  "name": "Pi-Hole-Lists - Fake game sites",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/gamefake.txt"
+},
+{
+  "id": 1239,
+  "description": "To block German fake news websites",
+  "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
+  "homeUrl": "https://github.com/Akamaru/Pi-Hole-Lists",
+  "issuesUrl": "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+  "name": "Pi-Hole-Lists - German fake news",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/fakenewsde.txt"
+},
+{
+  "id": 1240,
+  "description": "To block cryptomining",
+  "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
+  "homeUrl": "https://github.com/Akamaru/Pi-Hole-Lists",
+  "issuesUrl": "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+  "name": "Pi-Hole-Lists - Cryptomining",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/cryptomine.txt"
+},
+{
+  "id": 1241,
+  "description": "To block other things that I could not assign anywhere",
+  "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
+  "homeUrl": "https://github.com/Akamaru/Pi-Hole-Lists",
+  "issuesUrl": "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+  "name": "Pi-Hole-Lists - Other",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/other.txt"
+},
+{
+  "id": 1242,
+  "homeUrl": "https://github.com/Akamaru/Adblock-Filterliste",
+  "issuesUrl": "https://github.com/Akamaru/Adblock-Filterliste/issues",
+  "licenseId": 33,
+  "name": "Aka's Filter Liste",
+  "syntaxId": 3,
+  "viewUrl": "https://raw.githubusercontent.com/Akamaru/Adblock-Filterliste/master/filterlist.txt"
+},
+{
+  "id": 1243,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Combined Blacklists",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CombinedBlacklists/CombinedBlackLists.txt"
+},
+{
+  "id": 1244,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - deathbybandaid List",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CombinedBlacklists/DeathbybandaidList.txt"
+},
+{
+  "id": 1245,
+  "homeUrl": "https://github.com/deathbybandaid/piholeparser",
+  "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
+  "licenseId": 14,
+  "name": "Pi-hole Parser - Combined Whitelists",
+  "syntaxId": 2,
+  "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CombinedWhitelists/CombinedWhiteLists.txt"
+}
 ]
