@@ -8491,14 +8491,14 @@
     "licenseId": 5,
     "name": "CrapBlock Annoyances",
     "publishedDate": "2018-02-14T16:27:38",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-11-20T12:58:16",
     "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/crapblock-annoyances.txt",
     "viewUrlMirror1": "https://crapblock.theel0ja.info/crapblock-annoyances.txt"
   },
   {
     "id": 730,
-    "description": "Blocks crap on websites",
+    "description": "Blocks Google Fonts, except those not available for download.",
     "descriptionSourceUrl": "https://github.com/theel0ja/CrapBlock#crapblock",
     "emailAddress": "elias.ojala+github@kapsi.fi",
     "homeUrl": "https://crapblock.theel0ja.info/",
@@ -8506,7 +8506,7 @@
     "licenseId": 5,
     "name": "Block Google Fonts (by CrapBlock)",
     "publishedDate": "2018-09-09T16:03:11",
-    "syntaxId": 4,
+    "syntaxId": 3,
     "updatedDate": "2018-11-07T14:35:29",
     "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/block-googlefonts.txt",
     "viewUrlMirror1": "https://crapblock.theel0ja.info/block-googlefonts.txt"
