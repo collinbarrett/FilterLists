@@ -230,16 +230,6 @@
     "name": "Nuosu"
   },
   {
-    "id": 24,
-    "iso6391": "nn",
-    "iso6392": "nno",
-    "iso6392B": "nno",
-    "iso6392T": "nno",
-    "iso6393": "nno",
-    "localName": "Norsk (Nynorsk)",
-    "name": "Norwegian Nynorsk"
-  },
-  {
     "id": 25,
     "iso6391": "lt",
     "iso6392": "lit",
@@ -418,16 +408,6 @@
     "iso6393": "ndo",
     "localName": "Owambo",
     "name": "Ndonga"
-  },
-  {
-    "id": 43,
-    "iso6391": "nb",
-    "iso6392": "nob",
-    "iso6392B": "nob",
-    "iso6392T": "nob",
-    "iso6393": "nob",
-    "localName": "Norsk (Bokmål)",
-    "name": "Norwegian Bokmål"
   },
   {
     "id": 44,
@@ -717,7 +697,7 @@
     "iso6392T": "gla",
     "iso6393": "gla",
     "localName": "Gàidhlig",
-    "name": "Gaelic"
+    "name": "Scottish Gaelic"
   },
   {
     "id": 73,
