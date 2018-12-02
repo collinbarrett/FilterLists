@@ -13984,5 +13984,33 @@
     "name": "Pi-hole Parser - Combined Whitelists",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CombinedWhitelists/CombinedWhiteLists.txt"
+  },
+  {
+    "id": 1246,
+    "description": "PC browser notifications have become something of a wild west. Not only are they being used by many websites as a shoddy newsletter substitute, but some are even showing you large banner prompts that ask if you want to see the actual notification prompts. This list blocks such banners.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-'Notification pre-prompt banners' List",
+    "publishedDate": "2018-02-12T00:00:00"
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Notification%20pre-prompt%20banners'%20List.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Notification%20pre-prompt%20banners'%20List.txt"
+  },
+  {
+    "id": 1247,
+    "description": "The \"Battle Royale\" videogame genre has escalated in popularity. And with such popularity, comes annoying promotions, hopeless copycats, and questionable fandoms. If you need a breather from such things, this is a list for you.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-'Battle Royale' List",
+    "publishedDate": "2018-12-02T00:00:00"
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Battle%20Royale'%20List.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Battle%20Royale'%20List.txt"
   }
 ]
