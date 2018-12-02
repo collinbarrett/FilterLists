@@ -5570,7 +5570,8 @@
     "licenseId": 2,
     "name": "Shalla Malware",
     "syntaxId": 2,
-    "viewUrl": "https://v.firebog.net/hosts/Shalla-mal.txt"
+    "viewUrl": "https://v.firebog.net/hosts/Shalla-mal.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Shalla-Malicious.txt"
   },
   {
     "id": 467,
@@ -6211,7 +6212,7 @@
     "donateUrl": "https://kowabit.de/willkommen/finanzierung-von-kowabit/",
     "homeUrl": "https://www.kowabit.de/blcklst/",
     "licenseId": 20,
-    "name": "kowabit.de - bl*cklist of death - Domains",
+    "name": "kowabit.de - bl*cklist of death - List for Fritz!Box routers",
     "syntaxId": 2,
     "updatedDate": "2018-11-08T04:53:11",
     "viewUrl": "https://blocklist.kowabit.de/fritzboxliste.txt"
@@ -7338,7 +7339,8 @@
     "licenseId": 5,
     "name": "Mandiant APT1 Report Appendix D",
     "syntaxId": 2,
-    "viewUrl": "https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt"
+    "viewUrl": "https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Mandiant-APT1-Report.txt"
   },
   {
     "id": 619,
@@ -7491,7 +7493,8 @@
     "licenseId": 5,
     "name": "Prigent Phishing",
     "syntaxId": 2,
-    "viewUrl": "https://v.firebog.net/hosts/Prigent-Phishing.txt"
+    "viewUrl": "https://v.firebog.net/hosts/Prigent-Phishing.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Prigent-Phishing.txt"
   },
   {
     "id": 632,
@@ -8292,7 +8295,8 @@
     "publishedDate": "2017-02-23T05:59:04",
     "syntaxId": 2,
     "updatedDate": "2017-02-23T05:59:04",
-    "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/tyzbit.txt"
+    "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/tyzbit.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Tyzbit.txt"
   },
   {
     "id": 711,
@@ -8326,17 +8330,6 @@
     "syntaxId": 2,
     "updatedDate": "2018-11-21T08:00:11",
     "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/adguard.txt"
-  },
-  {
-    "id": 714,
-    "emailAddress": "me@austinheap.com",
-    "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
-    "licenseId": 2,
-    "name": "AdAway (Domains)",
-    "publishedDate": "2017-02-23T05:59:04",
-    "syntaxId": 2,
-    "updatedDate": "2017-02-23T05:59:04",
-    "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/adaway.txt"
   },
   {
     "id": 715,
@@ -13125,24 +13118,6 @@
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Dan-Pollocks-Hosts.txt"
   },
   {
-    "id": 1137,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Disconnect Advertising Filter (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Disconnect-Advertising-Filter.txt"
-  },
-  {
-    "id": 1138,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Disconnect Malvertising Filter (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Disconnect-Malvertising-Filter.txt"
-  },
-  {
     "id": 1139,
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
@@ -13197,15 +13172,6 @@
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/EasyList-Dutch.txt"
   },
   {
-    "id": 1145,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "EasyList Germany (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/EasyList-Germany.txt"
-  },
-  {
     "id": 1146,
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
@@ -13213,15 +13179,6 @@
     "name": "EasyList Italy (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/EasyList-Italy.txt"
-  },
-  {
-    "id": 1147,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "EasyList Latvian (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/EasyList-Latvian.txt"
   },
   {
     "id": 1148,
@@ -13240,15 +13197,6 @@
     "name": "EasyList Thailand (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/EasyList-Thailand.txt"
-  },
-  {
-    "id": 1150,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "EasyList (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/EasyList.txt"
   },
   {
     "id": 1151,
@@ -13368,15 +13316,6 @@
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/JoeWein.txt"
   },
   {
-    "id": 1164,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "KowabitBOD (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/KowabitBOD.txt"
-  },
-  {
     "id": 1165,
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
@@ -13420,24 +13359,6 @@
     "name": "Malware Domains Just Domains (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Malware-Domains-Just-Domains.txt"
-  },
-  {
-    "id": 1170,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Malware URLs Domains (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Malware-URLs-Domains.txt"
-  },
-  {
-    "id": 1171,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Mandiant APT1 Report (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Mandiant-APT1-Report.txt"
   },
   {
     "id": 1172,
@@ -13494,15 +13415,6 @@
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Mother-of-All-ADBLOCKING.txt"
   },
   {
-    "id": 1178,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "NoTrack Blocklist (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/NoTrack-Blocklist.txt"
-  },
-  {
     "id": 1179,
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
@@ -13519,15 +13431,6 @@
     "name": "PLgeneral (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/PLgeneral.txt"
-  },
-  {
-    "id": 1181,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "PeterLowes (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/PeterLowes.txt"
   },
   {
     "id": 1182,
@@ -13564,15 +13467,6 @@
     "name": "Prigent Malware (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Prigent-Malware.txt"
-  },
-  {
-    "id": 1186,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Prigent Phishing (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Prigent-Phishing.txt"
   },
   {
     "id": 1187,
@@ -13633,7 +13527,7 @@
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
     "licenseId": 14,
-    "name": "SVN Slovenian (Domains)",
+    "name": "Slovenian List (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/SVN-Slovenian.txt"
   },
@@ -13663,15 +13557,6 @@
     "name": "Schacks Adblock Plus Liste (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Schacks-Adblock-Plus-Liste.txt"
-  },
-  {
-    "id": 1198,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Shalla Malicious (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Shalla-Malicious.txt"
   },
   {
     "id": 1199,
@@ -13753,15 +13638,6 @@
     "name": "Steven Blacks Trackers (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Steven-Blacks-Trackers.txt"
-  },
-  {
-    "id": 1208,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Steven Blacks Unchecky Ads (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Steven-Blacks-Unchecky-Ads.txt"
   },
   {
     "id": 1209,
@@ -13852,15 +13728,6 @@
     "name": "Turk adlist (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Turk-adlist.txt"
-  },
-  {
-    "id": 1219,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Tyzbit (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Tyzbit.txt"
   },
   {
     "id": 1220,
