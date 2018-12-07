@@ -5470,5 +5470,173 @@
   {
     "filterListId": 1247,
     "tagId": 6
+  },
+  {
+    "filterListId": 1248,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1249,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1249,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1250,
+    "tagId": 1
+  },
+  {
+    "filterListId": 1251,
+    "tagId": 8
+  },
+  {
+    "filterListId": 1251,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1252,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1253,
+    "tagId": 15
+  },
+  {
+    "filterListId": 1254,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1255,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1255,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1256,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1257,
+    "tagId": 15
+  },
+  {
+    "filterListId": 1258,
+    "tagId": 16
+  },
+  {
+    "filterListId": 1259,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1259,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1259,
+    "tagId": 16
+  },
+  {
+    "filterListId": 1260,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1260,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1261,
+    "tagId": 4
+  },
+  {
+    "filterListId": 1262,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1262,
+    "tagId": 4
+  },
+  {
+    "filterListId": 1263,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1263,
+    "tagId": 4
+  },
+  {
+    "filterListId": 1264,
+    "tagId": 15
+  },
+  {
+    "filterListId": 1264,
+    "tagId": 19
+  },
+  {
+    "filterListId": 1265,
+    "tagId": 15
+  },
+  {
+    "filterListId": 1266,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1266,
+    "tagId": 13
+  },
+  {
+    "filterListId": 1267,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1267,
+    "tagId": 13
+  },
+  {
+    "filterListId": 1268,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1269,
+    "tagId": 1
+  },
+  {
+    "filterListId": 1270,
+    "tagId": 15
+  },
+  {
+    "filterListId": 1271,
+    "tagId": 15
+  },
+  {
+    "filterListId": 1272,
+    "tagId": 15
+  },
+  {
+    "filterListId": 1273,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1274,
+    "tagId": 19
+  },
+  {
+    "filterListId": 1275,
+    "tagId": 19
+  },
+  {
+    "filterListId": 1276,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1276,
+    "tagId": 19
+  },
+  {
+    "filterListId": 1277,
+    "tagId": 15
   }
 ]
