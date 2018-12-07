@@ -5472,7 +5472,7 @@
   {
     "id": 453,
     "description": "Block all external Fonts.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Fonts/CK's-Fonts-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/fonts.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -5482,12 +5482,12 @@
     "publishedDate": "2018-05-12T11:53:39",
     "syntaxId": 3,
     "updatedDate": "2018-09-30T16:08:51",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Fonts/CK's-Fonts-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/fonts.txt"
   },
   {
     "id": 454,
     "description": "Blocks all suspicious, unverified, fake, duplicate or malfunction torrent trackers. ",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Torrent/CK's-Torrent-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/torrent-tracker.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -5497,12 +5497,12 @@
     "publishedDate": "2018-05-15T02:31:14",
     "syntaxId": 3,
     "updatedDate": "2018-05-29T07:46:46",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Torrent/CK's-Torrent-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/torrent-tracker.txt"
   },
   {
     "id": 455,
     "description": "HOSTS file to block all known NSA / GCHQ / C.I.A. / F.B.I. spying servers.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/NSABlocklist/CK's-NSABlocklist-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/nsablocklist.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -5512,12 +5512,12 @@
     "publishedDate": "2018-05-17T15:44:44",
     "syntaxId": 1,
     "updatedDate": "2018-05-29T07:46:46",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/NSABlocklist/CK's-NSABlocklist-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/nsablocklist.txt"
   },
   {
     "id": 460,
     "description": "A comprehensive, all-in-one domain list for thorough blocking of trackers, pop-up ads, ads, unwanted cookies and faked pages.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/I2P%20%26%20Onion/CK's-Onion-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Onion/Onion-FilterList.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -5525,12 +5525,12 @@
     "licenseId": 17,
     "name": "CHEF-KOCH's Onion & I2P Filter List",
     "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/I2P%20%26%20Onion/CK's-Onion-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Onion/Onion-FilterList.txt"
   },
   {
     "id": 461,
     "description": "Blocks Game Telemetry and other game specific 'unneeded' stuff.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Game-HOSTS-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Game.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -5540,12 +5540,12 @@
     "publishedDate": "2018-07-07T09:00:54",
     "syntaxId": 1,
     "updatedDate": "2018-10-07T10:45:00",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Game-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Game.txt"
   },
   {
     "id": 462,
     "description": "A comprehensive, all-in-one ad-block list in order to block Malware Domains.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Malware/CK's-Malware-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/malware.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -5555,7 +5555,7 @@
     "publishedDate": "2018-05-10T16:01:27",
     "syntaxId": 3,
     "updatedDate": "2018-11-15T13:15:14",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Malware/CK's-Malware-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/malware.txt"
   },
   {
     "id": 463,
@@ -6232,7 +6232,7 @@
   {
     "id": 523,
     "description": "Blocks all annoying Spotify Ads.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Spotify-HOSTS-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Spotify/Spotify-HOSTS.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6242,7 +6242,7 @@
     "publishedDate": "2018-05-17T18:24:07",
     "syntaxId": 1,
     "updatedDate": "2018-11-15T13:15:14",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Spotify-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Spotify/Spotify-HOSTS.txt"
   },
   {
     "id": 525,
@@ -6273,7 +6273,7 @@
   {
     "id": 527,
     "description": "Filters Ad & Trackers only.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Ad%20&%20Tracker/CK's-Ad%20&%20Tracker-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/ads-tracker.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6282,12 +6282,12 @@
     "name": "CHEF-KOCH's Ad & Tracker Filter List",
     "syntaxId": 3,
     "updatedDate": "2018-10-10T10:09:09",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Ad%20&%20Tracker/CK's-Ad%20&%20Tracker-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/ads-tracker.txt"
   },
   {
     "id": 528,
     "description": "Block all Adobe related connections, this also breaks activation etc.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Adobe/CK's-Adobe-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/adobe.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6297,12 +6297,12 @@
     "publishedDate": "2018-05-16T16:31:26",
     "syntaxId": 3,
     "updatedDate": "2018-11-16T00:45:56",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Adobe/CK's-Adobe-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/adobe.txt"
   },
   {
     "id": 529,
     "description": "Block all Apple related connections, this also breaks iCloud etc.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Apple/CK's-Apple-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6312,12 +6312,12 @@
     "publishedDate": "2018-05-16T17:11:53",
     "syntaxId": 3,
     "updatedDate": "2018-05-29T07:46:46",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Apple/CK's-Apple-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/apple.txt"
   },
   {
     "id": 530,
     "description": "Block all CCleaner related connections.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/CCleaner/CK's-CCleaner-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/ccleaner.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6327,12 +6327,12 @@
     "publishedDate": "2018-05-16T16:21:14",
     "syntaxId": 3,
     "updatedDate": "2018-11-16T00:45:56",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/CCleaner/CK's-CCleaner-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/ccleaner.txt"
   },
   {
     "id": 531,
     "description": "Block all Cloudflare related connections.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Cloudflare/CK's-Cloudflare-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/cloudflare.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6342,12 +6342,12 @@
     "publishedDate": "2018-05-12T11:53:39",
     "syntaxId": 3,
     "updatedDate": "2018-05-29T07:46:46",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Cloudflare/CK's-Cloudflare-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/cloudflare.txt"
   },
   {
     "id": 532,
     "description": "Block all Facebook related connections. This will also block apps and services related to Facebook, like WhatsApp etc.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Facebook/CK's-Facebook-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/facebook.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6357,12 +6357,12 @@
     "publishedDate": "2018-05-12T11:53:39",
     "syntaxId": 3,
     "updatedDate": "2018-05-29T07:46:46",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Facebook/CK's-Facebook-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/facebook.txt"
   },
   {
     "id": 533,
     "description": "Block all Google related connections.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Google/CK's-Google-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/google.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6372,12 +6372,12 @@
     "publishedDate": "2018-05-12T11:53:39",
     "syntaxId": 3,
     "updatedDate": "2018-11-16T00:45:56",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Google/CK's-Google-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/google.txt"
   },
   {
     "id": 534,
     "description": "Block all Instagram related connections, it also blocks sync and other apps and services.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Instagram/CK's-Instagram-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/instagram.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6387,12 +6387,12 @@
     "publishedDate": "2018-05-15T02:30:29",
     "syntaxId": 3,
     "updatedDate": "2018-05-29T07:46:46",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Instagram/CK's-Instagram-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/instagram.txt"
   },
   {
     "id": 535,
     "description": "Block all Microsoft related connections, it also blocks Skype etc.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Microsoft/CK's-Microsoft-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/microsoft.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6402,12 +6402,12 @@
     "publishedDate": "2018-05-12T11:53:39",
     "syntaxId": 3,
     "updatedDate": "2018-05-29T07:46:46",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Microsoft/CK's-Microsoft-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/microsoft.txt"
   },
   {
     "id": 536,
     "description": "Block all Mozilla related connections, it also blocks sync and other apps and services.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Mozilla/CK's-Mozilla-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/mozilla.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6417,12 +6417,12 @@
     "publishedDate": "2018-05-12T11:53:39",
     "syntaxId": 3,
     "updatedDate": "2018-11-16T00:45:56",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Mozilla/CK's-Mozilla-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/mozilla.txt"
   },
   {
     "id": 537,
     "description": "Block all Pinterest related connections, it also blocks sync and other apps and services.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Pinterest/CK's-Pinterest-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/pinterest.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6432,12 +6432,12 @@
     "publishedDate": "2018-05-12T11:53:39",
     "syntaxId": 3,
     "updatedDate": "2018-07-06T12:27:14",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Pinterest/CK's-Pinterest-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/pinterest.txt"
   },
   {
     "id": 538,
     "description": "Blocks all annoying Skype Ads.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Skype%20Ad-Free/CK's-Skype-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/skype.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6445,12 +6445,12 @@
     "licenseId": 17,
     "name": "CHEF-KOCH's Skype Ad-Filter List",
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Skype%20Ad-Free/CK's-Skype-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/skype.txt"
   },
   {
     "id": 539,
     "description": "Blocks all annoying Spotify Ads.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Spotify%20Ad-Free/CK's-Spotify-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Spotify/Spotify-AdBlock.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6459,25 +6459,25 @@
     "name": "CHEF-KOCH's Spotify Ad-Filter List",
     "syntaxId": 3,
     "updatedDate": "2018-09-29T23:54:50",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Corporations/Spotify%20Ad-Free/CK's-Spotify-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Spotify/Spotify-AdBlock.txt"
   },
   {
     "id": 543,
     "description": "This list will not be avbl. via subscription.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Not%20blocked/CK's-Wontblock-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Not%20blocked/Wontblock.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
     "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
     "licenseId": 17,
-    "name": "CHEF-KOCH's Won't Block",
+    "name": "CHEF-KOCH's Unblock Filter List",
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Not%20blocked/CK's-Wontblock-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Not%20blocked/Wontblock.txt"
   },
   {
     "id": 546,
     "description": "Filters AdGuard traffic only.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Adguard-HOSTS-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/AdGuard.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6487,12 +6487,12 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-05-17T14:29:27",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Adguard-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/AdGuard.txt"
   },
   {
     "id": 547,
     "description": "Block all Adobe related connections, this also breaks activation etc.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Adobe-HOSTS-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Adobe.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6502,12 +6502,12 @@
     "publishedDate": "2018-05-16T16:31:26",
     "syntaxId": 1,
     "updatedDate": "2018-10-04T00:27:09",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Adobe-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Adobe.txt"
   },
   {
     "id": 548,
     "description": "Block all Apple related connections, this also breaks iCloud etc.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Apple-HOSTS-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Apple.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6517,12 +6517,12 @@
     "publishedDate": "2018-05-16T17:11:22",
     "syntaxId": 1,
     "updatedDate": "2018-05-29T07:46:46",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Apple-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Apple.txt"
   },
   {
     "id": 549,
     "description": "Block all CCleaner related connections.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-CCleaner-HOSTS-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CCleaner.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6532,12 +6532,12 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-07-07T07:44:12",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-CCleaner-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CCleaner.txt"
   },
   {
     "id": 550,
     "description": "Block all Cloudflare connections.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Cloudflare-HOSTS-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Cloudflare.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6547,12 +6547,12 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-11-15T13:15:14",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Cloudflare-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Cloudflare.txt"
   },
   {
     "id": 551,
     "description": "Block all Facebook related connections. This will also block apps and services related to Facebook, like WhatsApp etc.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Facebook-HOSTS-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Facebook.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6562,12 +6562,12 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-11-15T13:15:14",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Facebook-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Facebook.txt"
   },
   {
     "id": 552,
     "description": "Block all Google connections and services.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Google-HOSTS-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Google.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6577,12 +6577,12 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-11-15T13:15:14",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Google-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Google.txt"
   },
   {
     "id": 553,
     "description": "Block all Instagram related connections, it also blocks sync and other apps and services.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Instagram-HOSTS-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Instagram.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6592,12 +6592,12 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-05-29T07:46:46",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Instagram-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Instagram.txt"
   },
   {
     "id": 554,
     "description": "Block all Microsoft related connections, it also blocks Skype etc.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Microsoft-HOSTS-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Microsoft.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6607,12 +6607,12 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-11-15T13:15:14",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Microsoft-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Microsoft.txt"
   },
   {
     "id": 555,
     "description": "Block all Mozilla related connections, it also blocks sync and other apps + services.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Mozilla-HOSTS-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Mozilla.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6622,12 +6622,12 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-11-15T13:15:14",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Mozilla-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Mozilla.txt"
   },
   {
     "id": 557,
     "description": "Blocks all annoying Skype Ads.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Skype-HOSTS-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Skype.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6637,7 +6637,7 @@
     "publishedDate": "2018-05-20T10:50:27",
     "syntaxId": 1,
     "updatedDate": "2018-11-15T13:15:14",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Skype-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Skype.txt"
   },
   {
     "id": 559,
@@ -6657,7 +6657,7 @@
   {
     "id": 561,
     "description": "Filters Ad & Trackers only.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Ad-Tracker-HOSTS-FilterList.txt",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Ads-tracker.txt",
     "donateUrl": "https://github.com/CHEF-KOCH/Donations",
     "emailAddress": "CHEF-KOCH@protonmail.com",
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
@@ -6667,7 +6667,7 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-11-15T13:15:14",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CK's-Ad-Tracker-HOSTS-FilterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Ads-tracker.txt"
   },
   {
     "id": 562,
