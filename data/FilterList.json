@@ -14418,5 +14418,16 @@
     "name": "Polish Anti Adblock Filters - supplement for uBlock Origin",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/anti-adblock-suplement.txt"
+  },
+  {
+    "id": 1282,
+    "description": "Little Snitch rules for Mac apps.",
+    "descriptionSourceUrl": "https://github.com/koenrh/little-snitch-rules",
+    "homeUrl": "https://github.com/koenrh/little-snitch-rules",
+    "issuesUrl": "https://github.com/koenrh/little-snitch-rules/issues",
+    "licenseId": 5,
+    "name": "Koen's Little Snitch rules",
+    "syntaxId": 18,
+    "viewUrl": "https://raw.githubusercontent.com/koenrh/little-snitch-rules/master/apps.lsrules"
   }
 ]
