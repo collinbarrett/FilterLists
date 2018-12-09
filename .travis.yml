@@ -1,7 +1,7 @@
 dist: trusty
 language: csharp
 mono: none
-dotnet: 2.2.100
+dotnet: 2.1.403
 solution: FilterLists.sln
 addons:
   mariadb: '10.3'
