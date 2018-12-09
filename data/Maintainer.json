@@ -561,11 +561,27 @@
   },
   {
     "id": 109,
+	"homeUrl": "https://github.com/deathbybandaid",
     "name": "deathbybandaid"
   },
   {
     "id": 110,
     "homeUrl": "https://akamaru.de/",
     "name": "Akamaru"
+  },
+  {
+    "id": 111,
+    "homeUrl": "https://github.com/MrBukLau",
+    "name": "MrBukLau"
+  },
+  {
+    "id": 112,
+    "homeUrl": "https://github.com/olegwukr",
+    "name": "olegwukr"
+  },
+  {
+    "id": 113,
+    "homeUrl": "https://github.com/koenrh",
+    "name": "Koen Rouwhorst"
   }
 ]
