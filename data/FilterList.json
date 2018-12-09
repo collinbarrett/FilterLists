@@ -8594,7 +8594,7 @@
     "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
     "licenseId": 2,
     "name": "Minimalist Cryptocurrency Filter List",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-11-06T05:37:11",
     "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/minimalistcryptocurrencyfilterlist.txt"
   },
@@ -8618,7 +8618,7 @@
     "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
     "licenseId": 2,
     "name": "Resources Filter List",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-11-06T05:45:11",
     "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/resourcesfilterlist.txt"
   },
@@ -8642,7 +8642,7 @@
     "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
     "licenseId": 2,
     "name": "Sports Filter List",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-10-01T08:53:49",
     "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/sportsfilterlist.txt"
   },
@@ -14373,5 +14373,50 @@
     "name": "CHEF-KOCH's Techsmith HOSTS Filter List",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Techsmith.txt"
+  },
+  {
+    "id": 1278,
+    "description": "A filterlist that use in \"Better\" app on the iOS devices (iPhone, iPad, MacOS)",
+    "descriptionSourceUrl": "https://better.fyi",
+    "emailAddress": "hello@ind.ie",
+    "homeUrl": "https://better.fyi",
+    "issuesUrl": "https://forum.ind.ie/c/better/support",
+    "licenseId": 8,
+    "name": "Better content blocking rules",
+    "syntaxId": 4,
+    "viewUrl": "https://better.fyi/blockerList.txt"
+  },
+  {
+    "id": 1279,
+    "description": "Oficjalne polskie filtry prywatności",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/adblock.txt",
+    "homeUrl": "https://github.com/olegwukr/polish-privacy-filters",
+    "issuesUrl": "https://github.com/olegwukr/polish-privacy-filters/issues",
+    "licenseId": 8,
+    "name": "Polish Privacy Filters",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/adblock.txt"
+  },
+  {
+    "id": 1280,
+    "description": "Oficjalne polskie filtry przeciwko alertom o Adblocku",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/anti-adblock.txt",
+    "homeUrl": "https://github.com/olegwukr/polish-privacy-filters",
+    "issuesUrl": "https://github.com/olegwukr/polish-privacy-filters/issues",
+    "licenseId": 8,
+    "name": "Polish Anti Adblock Filters",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/anti-adblock.txt"
+  },
+  {
+    "id": 1281,
+    "description": "Oficjalne polskie filtry przeciwko alertom o Adblocku - uzupełnienie dla uBlock Origin",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/anti-adblock-suplement.txt",
+    "homeUrl": "https://github.com/olegwukr/polish-privacy-filters",
+    "issuesUrl": "https://github.com/olegwukr/polish-privacy-filters/issues",
+    "licenseId": 8,
+    "name": "Polish Anti Adblock Filters - supplement for uBlock Origin",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/anti-adblock-suplement.txt"
   }
 ]
