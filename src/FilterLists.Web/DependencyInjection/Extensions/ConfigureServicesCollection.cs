@@ -21,6 +21,6 @@ namespace FilterLists.Web.DependencyInjection.Extensions
             });
 
         private static void AddMvcCustom(this IServiceCollection services) =>
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
     }
 }
