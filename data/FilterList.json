@@ -5188,13 +5188,13 @@
   },
   {
     "id": 430,
-    "description": "Blocks rogue websites and some ads on Norwegian sites. Intended for use only with hosts-specific tools; users of uBlock Origin and Nano Adblocker should preferably use the regular version of this list instead.",
+    "description": "Blocks rogue websites and some ads on Norwegian and Danish sites. Intended for use only with hosts-specific tools; users of uBlock Origin and Nano Adblocker should preferably use the regular version of this list instead.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
-    "name": "Dandelion Sprout's Norwegian Filters for Tidier Websites (Hosts version)",
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (Hosts)",
     "syntaxId": 1,
     "updatedDate": "2018-09-30T15:15:50",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts",
@@ -7945,13 +7945,13 @@
   },
   {
     "id": 680,
-    "description": "A version of the Norwegian filter list for domains tools, such as Pi-hole, Samsung Knox, Personal Blocklist, and Google Hit Hider by Domain.",
+    "description": "A version of the Nordic filter list for domains tools, such as Pi-hole, Samsung Knox, Personal Blocklist, and Google Hit Hider by Domain.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
-    "name": "Dandelion Sprout's Norwegian Filters for Tidier Websites (Domains)",
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (Domains)",
     "syntaxId": 2,
     "updatedDate": "2018-09-30T04:33:48",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt",
@@ -14650,5 +14650,47 @@
     "name": "Koen's Little Snitch rules",
     "syntaxId": 18,
     "viewUrl": "https://raw.githubusercontent.com/koenrh/little-snitch-rules/master/apps.lsrules"
+  },
+  {
+    "id": 1283,
+    "description": "A filter to make the web better",
+    "descriptionSourceUrl": "https://github.com/AnXh3L0/blocklist/blob/master/README.md",
+    "homeUrl": "https://github.com/AnXh3L0/blocklist",
+    "issuesUrl": "https://github.com/AnXh3L0/blocklist/issues",
+    "licenseId": 5,
+    "name": "Adblock List for Albania",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/AnXh3L0/blocklist/master/albanian-easylist-addition/Albania.txt"
+  },
+  {
+    "id": 1284,
+    "homeUrl": "https://github.com/finnish-easylist-addition/finnish-easylist-addition",
+    "issuesUrl": "https://github.com/finnish-easylist-addition/finnish-easylist-addition/issues",
+    "licenseId": 11,
+    "name": "Annoyance List for Finland",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/master/annoyances/Finland_annoyances.txt"
+  },
+  {
+    "id": 1285,
+    "description": "My uMatrix starting point with CDNs pre-whitelisted.",
+    "descriptionSourceUrl": "https://github.com/theel0ja/uMatrix-rules/blob/master/README.md",
+    "homeUrl": "https://github.com/theel0ja/uMatrix-rules",
+    "issuesUrl": "https://github.com/theel0ja/uMatrix-rules/issues",
+    "licenseId": 5,
+    "name": "uMatrix Rules (theel0ja)",
+    "syntaxId": 7,
+    "viewUrl": "https://raw.githubusercontent.com/theel0ja/uMatrix-rules/master/my-umatrix-rules.txt"
+  },
+  {
+    "id": 1286,
+    "description": "This is a filter list repo, based on the wishihab/steamscamsite scam list https://github.com/wishihab/steamscamsite with a couple of personally added found scam websites.",
+    "descriptionSourceUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsite/blob/master/README.md",
+    "homeUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsite",
+    "issuesUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsite/issues",
+    "licenseId": 5,
+    "name": "SteamScamSite",
+    "syntaxId": 8,
+    "viewUrl": "https://raw.githubusercontent.com/PoorPocketsMcNewHold/steamscamsite/master/steamscamsite.txt"
   }
 ]
