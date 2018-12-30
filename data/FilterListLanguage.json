@@ -1212,6 +1212,10 @@
     "languageId": 83
   },
   {
+    "filterListId": 887,
+    "languageId": 120
+  },
+  {
     "filterListId": 888,
     "languageId": 122
   },
@@ -1614,5 +1618,21 @@
   {
     "filterListId": 1281,
     "languageId": 11
+  },
+  {
+    "filterListId": 1283,
+    "languageId": 120
+  },
+  {
+    "filterListId": 1284,
+    "languageId": 139
+  },
+  {
+    "filterListId": 1286,
+    "languageId": 110
+  },
+  {
+    "filterListId": 1286,
+    "languageId": 163
   }
 ]
