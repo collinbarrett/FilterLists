@@ -14696,6 +14696,7 @@
   {
     "id": 1287,
     "description": "Are you tired of being told that Adobe Reader is supposedly necessary to view a PDF manual in 2019? Are you tired of reading tech guides and seeing ads for questionable optimalisation tools after every paragraph? If you answered yes to at least one of those two, here's a list for that.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TechnologicalDiversity.txt"
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
@@ -14709,6 +14710,8 @@
   },
   {
     "id": 1288,
+    "description": "Removes empty ads placeholders"
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/NanoAdblockerLab/NanoContrib/master/dist/placeholder-buster.txt"
     "homeUrl": "https://github.com/NanoAdblockerLab/NanoContrib",
     "licenseId": 4,
     "name": "Nano Contrib Filter - Placeholder Buster",
