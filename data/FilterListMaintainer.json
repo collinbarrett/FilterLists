@@ -3806,5 +3806,13 @@
   {
     "filterListId": 1288,
     "maintainerId": 63
+  },
+  {
+    "filterListId": 1289,
+    "maintainerId": 22
+  },
+  {
+    "filterListId": 1290,
+    "maintainerId": 22
   }
 ]
