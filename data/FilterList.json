@@ -9916,7 +9916,7 @@
   },
   {
     "id": 853,
-    "description": "This list combines \"YouTube: Even More Pure Video Experience\", \"Stop Autoplay For YouTube\", \"Anti-Elsagate List\", \"Wikia: Pure Browsing Experience\", and \"Twitch: Pure Viewing Experience\". It only works with blockers that support the !#include tag, such as uBO, Nano, and AdGuard.",
+    "description": "This list combines \"YouTube: Even More Pure Video Experience\", \"Stop Autoplay For YouTube\", \"Anti-Elsagate List\", \"Wikia: Pure Browsing Experience\", \"Twitch: Pure Viewing Experience\", and \"Know Your Meme: Pure Browsing Experience\". It only works with blockers that support the !#include tag, such as uBO and Nano.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/VeryThoroughWebsiteCleaner.txt",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
@@ -14719,5 +14719,35 @@
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/NanoAdblockerLab/NanoContrib/master/dist/placeholder-buster.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/NanoAdblockerLab/NanoContrib/master/dist/placeholder-buster.txt"
+  },
+  {
+    "id": 1289,
+    "description": "So let's say that you're doing research on Half-Life: Full Life Consequences, which is the best meme ever made, but you've grown very tired of seeing unrelated images, social media nags, and things that are categorically not memes? In that case, this list will save your sanity.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/KnowYourMemePureBrowsingExperience.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Know Your Meme: Pure Browsing Experience",
+    "publishedDate": "2018-01-04T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/KnowYourMemePureBrowsingExperience.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/KnowYourMemePureBrowsingExperience.txt"
+  },
+  {
+    "id": 1290,
+    "description": "Most anti-malware lists are pretty big and can cover a 5- or 6-digit amount of specific domains. But my list hereby claims to remove more than 25% of all known malware sites with just a 2-digit amount of entries. This is mostly done by blocking top-level domains that have become devastatingly abused by spammers, usually because they allowed for free and uncontrolled domain registrations.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Dandelion Sprout's Anti-Malware List",
+    "publishedDate": "2018-01-04T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout's%20Anti-Malware%20List.txt"
   }
 ]
