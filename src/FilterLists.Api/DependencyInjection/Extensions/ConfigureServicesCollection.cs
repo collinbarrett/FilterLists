@@ -34,7 +34,7 @@ namespace FilterLists.Api.DependencyInjection.Extensions
 
         private static void AddMvcCustom(this IServiceCollection services) =>
             services.AddMvc()
-                    .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+                    .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
                     .AddJsonOptions(opts =>
                     {
                         opts.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
