@@ -14749,5 +14749,49 @@
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout's%20Anti-Malware%20List.txt"
+  },
+  {
+    "id": 1291,
+    "description": "Are you just trying to casually browse through some comedy and art accounts on Twitter, and have grown really, really tired and worn out by seeing trashy posts and accounts made by tweeters who physically can't stop babbling about politics, especially American politics? Then this list will probably save your life.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Twitter%20De-Politificator.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Twitter De-Politificator",
+    "publishedDate": "2018-01-10T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Twitter%20De-Politificator.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Twitter%20De-Politificator.txt"
+  },
+  {
+    "id": 1292,
+    "description": "Having the app's logo display a permanent fake notification counter, to make the users think that they've received a notification when they haven't, takes quite a bit of scumminess on the app maker's behalf to pull off. If you like to browse through Google Play Store on a PC web browser, here's how to filter them out of sight.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Android Scum Class — Fake notification counters",
+    "publishedDate": "2018-01-10T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt"
+  },
+  {
+    "id": 1293,
+    "description": "This serves as a template and guidance for people who want to learn how to make their own «hosts» files, or how to make them optimalised for uBlock Origin. This template contains all conventionally used tags, with added notes on how they differ from the tags that are used in adblock lists.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Adblock List Template (Combined hosts and uBlock Origin)",
+    "publishedDate": "2018-01-10T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt"
   }
 ]
