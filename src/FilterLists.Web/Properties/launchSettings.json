@@ -13,6 +13,11 @@
       "launchBrowser": true,
       "launchUrl": "http://localhost:5001/",
       "applicationUrl": "http://localhost:5001/"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/"
     }
   }
 }
