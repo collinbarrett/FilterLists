@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  filterlists.api:
+    image: ${DOCKER_REGISTRY-}filterlistsapi
+    build:
+      context: .
+      dockerfile: src/FilterLists.Api/Dockerfile
+
+  filterlists.web:
+    image: ${DOCKER_REGISTRY-}filterlistsweb
+    build:
+      context: .
+      dockerfile: src/FilterLists.Web/Dockerfile
+
