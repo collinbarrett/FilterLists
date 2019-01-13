@@ -1,6 +1,6 @@
 FROM microsoft/dotnet:2.2-sdk AS publish
 COPY FilterLists.Web /FilterLists.Web
-RUN curl -sL https://deb.nodesource.com/setup_11.x | bash - \
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
 	&& apt-get install -y nodejs \
 	&& dotnet publish FilterLists.Web/FilterLists.Web.csproj -c Release -o /out
 
