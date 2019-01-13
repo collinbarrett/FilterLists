@@ -5517,8 +5517,8 @@
     "publishedDate": "2018-05-17T15:44:44",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/nsablocklist.txt"
-  },
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/NSABlocklist.txt"
+	},
   {
     "id": 460,
     "description": "A comprehensive, all-in-one domain list for thorough blocking of trackers, pop-up ads, ads, unwanted cookies and faked pages.",
@@ -6250,7 +6250,7 @@
     "publishedDate": "2018-05-17T18:24:07",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Spotify/Spotify-HOSTS.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/Spotify/Spotify-HOSTS.txt"
   },
   {
     "id": 525,
@@ -6306,7 +6306,7 @@
     "publishedDate": "2018-05-16T16:31:26",
     "syntaxId": 3,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/adobe.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/filters/adobe.txt"
   },
   {
     "id": 529,
@@ -6321,7 +6321,7 @@
     "publishedDate": "2018-05-16T17:11:53",
     "syntaxId": 3,
     "updatedDate": "2018-12-31T18:33:28",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/apple.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/filters/apple.txt"
   },
   {
     "id": 530,
@@ -6336,7 +6336,7 @@
     "publishedDate": "2018-05-16T16:21:14",
     "syntaxId": 3,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/ccleaner.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/filters/ccleaner.txt"
   },
   {
     "id": 531,
@@ -6351,7 +6351,7 @@
     "publishedDate": "2018-05-12T11:53:39",
     "syntaxId": 3,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/cloudflare.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/filters/cloudflare.txt"
   },
   {
     "id": 532,
@@ -6396,7 +6396,7 @@
     "publishedDate": "2018-05-15T02:30:29",
     "syntaxId": 3,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/instagram.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/filters/instagram.txt"
   },
   {
     "id": 535,
@@ -6411,7 +6411,7 @@
     "publishedDate": "2018-05-12T11:53:39",
     "syntaxId": 3,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/microsoft.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/filters/microsoft.txt"
   },
   {
     "id": 536,
@@ -6426,7 +6426,7 @@
     "publishedDate": "2018-05-12T11:53:39",
     "syntaxId": 3,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/mozilla.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/filters/mozilla.txt"
   },
   {
     "id": 537,
@@ -6441,7 +6441,7 @@
     "publishedDate": "2018-05-12T11:53:39",
     "syntaxId": 3,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/pinterest.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/filters/pinterest.txt"
   },
   {
     "id": 538,
@@ -6456,7 +6456,7 @@
     "publishedDate": "2018-12-02T11:28:55",
     "syntaxId": 3,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/skype.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/filters/skype.txt"
   },
   {
     "id": 539,
@@ -6471,21 +6471,7 @@
     "publishedDate": "2018-12-07T02:08:59",
     "syntaxId": 3,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Spotify/Spotify-AdBlock.txt"
-  },
-  {
-    "id": 543,
-    "description": "This list will not be avbl. via subscription.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Not%20blocked/Wontblock.txt",
-    "donateUrl": "https://github.com/CHEF-KOCH/Donations",
-    "emailAddress": "CHEF-KOCH@protonmail.com",
-    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
-    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
-    "licenseId": 17,
-    "name": "CHEF-KOCH's Unblock Filter List",
-    "syntaxId": 3,
-    "updatedDate": "2018-12-18T17:35:12",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Not%20blocked/Wontblock.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/Spotify/Spotify-AdBlock.txt"
   },
   {
     "id": 546,
@@ -6500,7 +6486,7 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/AdGuard.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/AdGuard.txt"
   },
   {
     "id": 547,
@@ -6515,7 +6501,7 @@
     "publishedDate": "2018-05-16T16:31:26",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Adobe.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/Adobe.txt"
   },
   {
     "id": 548,
@@ -6530,7 +6516,7 @@
     "publishedDate": "2018-05-16T17:11:22",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Apple.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/Apple.txt"
   },
   {
     "id": 549,
@@ -6545,7 +6531,7 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/CCleaner.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/CCleaner.txt"
   },
   {
     "id": 550,
@@ -6560,7 +6546,7 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Cloudflare.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/Cloudflare.txt"
   },
   {
     "id": 551,
@@ -6575,7 +6561,7 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Facebook.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/Facebook.txt"
   },
   {
     "id": 552,
@@ -6590,7 +6576,7 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Google.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/Google.txt"
   },
   {
     "id": 553,
@@ -6605,7 +6591,7 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Instagram.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/Instagram.txt"
   },
   {
     "id": 554,
@@ -6620,7 +6606,7 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Microsoft.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/Microsoft.txt"
   },
   {
     "id": 555,
@@ -6635,7 +6621,7 @@
     "publishedDate": "2018-05-16T16:25:33",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Mozilla.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/Mozilla.txt"
   },
   {
     "id": 557,
@@ -6650,7 +6636,21 @@
     "publishedDate": "2018-05-20T10:50:27",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Skype.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/Skype.txt"
+  },
+  {
+    "id": 543,
+    "description": "This list will not be avbl. via subscription.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Not%20blocked/Wontblock.txt",
+    "donateUrl": "https://github.com/CHEF-KOCH/Donations",
+    "emailAddress": "CHEF-KOCH@protonmail.com",
+    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
+    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
+    "licenseId": 17,
+    "name": "CHEF-KOCH's Unblock Filter List",
+    "syntaxId": 3,
+    "updatedDate": "2018-12-18T17:35:12",
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Whitelist/Wontblock.txt"
   },
   {
     "id": 559,
@@ -14308,7 +14308,7 @@
     "publishedDate": "2018-12-02T11:28:55",
     "syntaxId": 3,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/eset.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/filters/eset.txt"
   },
   {
     "id": 1254,
@@ -14364,7 +14364,7 @@
     "publishedDate": "2018-12-05T22:37:39",
     "syntaxId": 3,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/luckypatcher.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/filters/luckypatcher.txt"
   },
   {
     "id": 1258,
@@ -14490,7 +14490,7 @@
     "publishedDate": "2018-12-02T14:39:45",
     "syntaxId": 3,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/yahoo.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/filters/yahoo.txt"
   },
   {
     "id": 1267,
@@ -14504,7 +14504,7 @@
     "publishedDate": "2018-12-02T14:39:45",
     "syntaxId": 3,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/yandex.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/filters/yandex.txt"
   },
   {
     "id": 1268,
@@ -14546,7 +14546,7 @@
     "publishedDate": "2018-12-02T10:41:26",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Eset.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/Eset.txt"
   },
   {
     "id": 1271,
@@ -14558,7 +14558,7 @@
     "licenseId": 17,
     "name": "CHEF-KOCH's Internet Download Manager HOSTS Filter List",
     "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Internet%20Download%20Manager.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/Internet%20Download%20Manager.txt"
   },
   {
     "id": 1272,
@@ -14572,7 +14572,7 @@
     "publishedDate": "2018-12-05T22:37:39",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/LuckyPatcher.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/LuckyPatcher.txt"
   },
   {
     "id": 1273,
@@ -14600,7 +14600,7 @@
     "publishedDate": "2018-12-02T10:41:26",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/NSABlocklist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/NSABlocklist.txt"
   },
   {
     "id": 1275,
@@ -14614,7 +14614,7 @@
     "publishedDate": "2018-12-02T10:41:26",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Pinterest.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/Pinterest.txt"
   },
   {
     "id": 1276,
@@ -14642,7 +14642,7 @@
     "publishedDate": "2018-12-02T15:21:56",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Techsmith.txt"
+    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/hosts/Techsmith.txt"
   },
   {
     "id": 1278,
