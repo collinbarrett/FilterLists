@@ -1,29 +1,29 @@
 version: '3.7'
-
 services:
-  filterlists.mariadb:
-    image: mariadb
-
-  filterlists.nginx:
-    build:
-      context:  ./nginx
-      dockerfile: nginx/Dockerfile
-    ports:
-      - "80:80"
-    links:
-      - filterlists.api
-      - filterlists.web
-
-  filterlists.api:
-    image: ${DOCKER_REGISTRY-}filterlistsapi
-    build:
-      context: .
-      dockerfile: src/FilterLists.Api/Dockerfile
-    links:
-      - filterlists.mariadb
-
-  filterlists.web:
-    image: ${DOCKER_REGISTRY-}filterlistsweb
-    build:
-      context: .
-      dockerfile: src/FilterLists.Web/Dockerfile
+    filterlists.mariadb:
+        image: mariadb
+    filterlists.nginx:
+        build:
+            context: ./nginx
+        ports:
+            - '80:80'
+            - '443:443'
+        links:
+            - filterlists.api
+            - filterlists.web
+    filterlists.api:
+        image: '${DOCKER_REGISTRY-}filterlistsapi'
+        build:
+            context: ./src
+            dockerfile: ./FilterLists.Api/Dockerfile
+        expose:
+            - '5000'
+        links:
+            - filterlists.mariadb
+    filterlists.web:
+        image: '${DOCKER_REGISTRY-}filterlistsweb'
+        build:
+            context: ./src
+            dockerfile: ./FilterLists.Web/Dockerfile
+        expose:
+            - '5001'

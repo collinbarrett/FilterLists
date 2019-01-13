@@ -1,13 +1,13 @@
 FROM microsoft/dotnet:2.2-aspnetcore-runtime AS base
 WORKDIR /app
-EXPOSE 80
+EXPOSE 5001
 
 FROM microsoft/dotnet:2.2-sdk AS build
 WORKDIR /src
-COPY src/FilterLists.Web/FilterLists.Web.csproj src/FilterLists.Web/
+COPY FilterLists.Web/FilterLists.Web.csproj src/FilterLists.Web/
 RUN dotnet restore src/FilterLists.Web/FilterLists.Web.csproj
 COPY . .
-WORKDIR /src/src/FilterLists.Web
+WORKDIR FilterLists.Web
 RUN dotnet build FilterLists.Web.csproj -c Release -o /app
 
 FROM build AS publish
