@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3.7'
 
 services:
   filterlists.api:
@@ -12,4 +12,3 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "80"
-
