@@ -732,7 +732,7 @@
     "licenseId": 5,
     "name": "Korean Adblock List",
     "publishedDate": "2014-11-18T06:06:09",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-09-15T14:39:15",
     "viewUrl": "https://raw.githubusercontent.com/gfmaster/adblock-korea-contrib/master/filter.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/gfmaster/adblock-korea-contrib/master/filter.txt",
@@ -1455,7 +1455,7 @@
     "homeUrl": "http://tofukko.r.ribbon.to/abp.html",
     "licenseId": 5,
     "name": "Tofu Filter",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-12-04T06:25:16",
     "viewUrl": "http://tofukko.r.ribbon.to/Adblock_Plus_list.txt"
   },
@@ -3127,7 +3127,7 @@
     "licenseId": 5,
     "name": "Filters by hant0508",
     "publishedDate": "2015-07-11T18:55:57",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-12-22T20:05:03",
     "viewUrl": "https://raw.githubusercontent.com/hant0508/uBlock-filters/master/filters.txt"
   },
@@ -3776,7 +3776,7 @@
     "licenseId": 2,
     "name": "Spies Dislike Us Having Privacy",
     "publishedDate": "2017-07-07T16:41:06",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-11-19T14:04:12",
     "viewUrl": "https://raw.githubusercontent.com/taylr/linkedinsanity/master/spies-dislike-us.txt"
   },
@@ -4336,7 +4336,7 @@
     "licenseId": 11,
     "name": "HOSTS AdBlock",
     "publishedDate": "2018-02-17T00:00:00",
-    "syntaxId": 3,
+    "syntaxId": 2,
     "updatedDate": "2018-12-31T15:45:34",
     "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts/master/build/hosts_adblock.txt"
   },
@@ -4349,7 +4349,7 @@
     "licenseId": 11,
     "name": "HOSTS AdBlock - Anti-Annoyance - Block Annoying Connections",
     "publishedDate": "2018-02-17T00:00:00",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-12-31T15:45:34",
     "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts/master/build/hosts_adblock_anti_annoyances_block.txt"
   },
@@ -4362,7 +4362,7 @@
     "licenseId": 11,
     "name": "HOSTS AdBlock - Anti-Annoyance - Block Annoying Page-Scripts",
     "publishedDate": "2018-02-17T00:00:00",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-12-20T22:36:03",
     "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts/master/build/hosts_adblock_anti_annoyances_block_inline_script.txt"
   },
@@ -4737,7 +4737,7 @@
     "licenseId": 16,
     "name": "PornList",
     "publishedDate": "2018-03-17T00:00:00",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-10-24T12:39:14",
     "viewUrl": "https://raw.githubusercontent.com/WowDude/PornList/master/PornList.txt"
   },
@@ -6099,7 +6099,7 @@
     "licenseId": 24,
     "name": "BlockUnderRadarJunk",
     "publishedDate": "2018-02-02T00:00:00",
-    "syntaxId": 3,
+    "syntaxId": 16,
     "updatedDate": "2018-12-01T11:08:42",
     "viewUrl": "https://raw.githubusercontent.com/UnluckyLuke/BlockUnderRadarJunk/master/blockunderradarjunk-list.txt"
   },
@@ -6364,7 +6364,7 @@
     "licenseId": 17,
     "name": "CHEF-KOCH's Facebook Filter List",
     "publishedDate": "2018-05-12T11:53:39",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-12-31T22:21:26",
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/facebook.txt"
   },
@@ -6379,7 +6379,7 @@
     "licenseId": 17,
     "name": "CHEF-KOCH's Google Filter List",
     "publishedDate": "2018-05-12T11:53:39",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2019-01-01T00:09:15",
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/google.txt"
   },
@@ -7727,7 +7727,7 @@
     "licenseId": 8,
     "name": "Web Annoyances Ultralist - Modal Overlay Filters",
     "publishedDate": "2018-08-01T13:56:25",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2019-01-03T02:58:34",
     "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/filters/modal_filters.txt"
   },
@@ -7751,7 +7751,7 @@
     "licenseId": 8,
     "name": "Web Annoyances Ultralist - Social Filters",
     "publishedDate": "2018-07-28T20:33:58",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2019-01-02T20:50:52",
     "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/filters/social_filters.txt"
   },
@@ -7772,7 +7772,7 @@
     "licenseId": 5,
     "name": "FSMF 2",
     "publishedDate": "2017-01-05T04:44:41",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-12-26T13:22:26",
     "viewUrl": "https://raw.githubusercontent.com/nmtrung/FMSF-2.0/master/fmsf_2.0.txt"
   },
@@ -8694,7 +8694,7 @@
     "licenseId": 5,
     "name": "The Best Stack Overflow",
     "publishedDate": "2018-05-26T14:55:11",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2019-01-01T19:25:02",
     "viewUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/README.md"
   },
@@ -10156,7 +10156,7 @@
     "licenseId": 5,
     "name": "Mochi Filter",
     "publishedDate": "2017-07-18T05:46:21",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-12-29T23:32:49",
     "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/mochi_filter.txt"
   },
@@ -10170,7 +10170,7 @@
     "licenseId": 5,
     "name": "Mochi Filter 2gun",
     "publishedDate": "2017-09-17T22:15:28",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-12-29T23:32:49",
     "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/mochi_filter_2gun.txt"
   },
@@ -10198,7 +10198,7 @@
     "licenseId": 5,
     "name": "Mochi Filter Extended",
     "publishedDate": "2017-07-18T05:46:21",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-12-29T23:32:49",
     "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/mochi_filter_extended.txt"
   },
@@ -10292,7 +10292,7 @@
     "licenseId": 5,
     "name": "Strawberry Filter",
     "publishedDate": "2017-07-18T05:46:21",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-12-29T23:32:49",
     "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/ichigo_filter.txt"
   },
@@ -10306,7 +10306,7 @@
     "licenseId": 5,
     "name": "Egg Filter",
     "publishedDate": "2017-10-07T21:04:35",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-12-29T23:32:49",
     "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/tamago_filter.txt"
   },
@@ -14376,7 +14376,7 @@
     "licenseId": 17,
     "name": "CHEF-KOCH's Modal Filter List",
     "publishedDate": "2018-12-02T10:41:26",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2018-12-31T18:52:21",
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/modal.txt"
   },
@@ -14418,7 +14418,7 @@
     "licenseId": 17,
     "name": "CHEF-KOCH's Reddit Filter List",
     "publishedDate": "2018-12-02T15:21:56",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2019-01-01T04:53:09",
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/reddit.txt"
   },
@@ -14755,7 +14755,7 @@
     "licenseId": 5,
     "name": "SteamScamSite",
     "publishedDate": "2018-08-31T09:11:52",
-    "syntaxId": 8,
+    "syntaxId": 2,
     "updatedDate": "2019-01-06T16:23:43",
     "viewUrl": "https://raw.githubusercontent.com/PoorPocketsMcNewHold/steamscamsite/master/steamscamsite.txt"
   },
