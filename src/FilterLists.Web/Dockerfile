@@ -6,5 +6,6 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
 
 FROM microsoft/dotnet:2.2-aspnetcore-runtime AS final
 COPY --from=publish /out .
+ENV ASPNETCORE_URLS http://+:5001
 EXPOSE 5001
 ENTRYPOINT ["dotnet", "FilterLists.Web.dll"]
