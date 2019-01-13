@@ -6294,20 +6294,6 @@
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/google.txt"
   },
   {
-    "id": 543,
-    "description": "This list will not be avbl. via subscription.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Not%20blocked/Wontblock.txt",
-    "donateUrl": "https://github.com/CHEF-KOCH/Donations",
-    "emailAddress": "CHEF-KOCH@protonmail.com",
-    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
-    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
-    "licenseId": 17,
-    "name": "CHEF-KOCH's Unblock Filter List",
-    "syntaxId": 3,
-    "updatedDate": "2018-12-18T17:35:12",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Not%20blocked/Wontblock.txt"
-  },
-  {
     "id": 559,
     "description": "A comprehensive, all-in-one domain list for thorough blocking of trackers, pop-up ads, ads, unwanted cookies, fake news, cookie warning messages, unwanted comment sections, crypto-coin mining, YouTube clutter and social network hassles.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/uMatrix/CK's-uMatrix-FilterList.txt",
