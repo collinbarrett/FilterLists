@@ -13,7 +13,7 @@ import img13 from "./13-MinerBlock.svg";
 import img14 from "./14-Pi-hole.png";
 import img15 from "./15-uBlock.svg";
 import img16 from "./16-Internet-Explorer-TPL.png";
-import img17 from "./16-Google-Hit-Hider-by-Domain.png";
+import img17 from "./17-Google-Hit-Hider-by-Domain.png";
 import img18 from "./18-FireHOL.png";
 import img19 from "./19-Samsung-Knox.png";
 import img20 from "./20-Little-Snitch.png";
