@@ -1,6 +1,6 @@
 FROM microsoft/dotnet:2.2-sdk-alpine AS publish
 COPY FilterLists.Web /FilterLists.Web
-RUN apk add --update nodejs nodejs-npm \
+RUN apk add --update nodejs-npm \
 	&& dotnet publish FilterLists.Web/FilterLists.Web.csproj -c Release -o /out
 
 FROM microsoft/dotnet:2.2-aspnetcore-runtime-alpine AS final
