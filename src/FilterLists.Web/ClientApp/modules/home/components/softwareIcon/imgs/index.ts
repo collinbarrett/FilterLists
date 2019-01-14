@@ -21,7 +21,7 @@ import img21 from "./21-Privoxy.png";
 import img22 from "./22-Diversion.png";
 import img23 from "./23-dnsmasq.png";
 import img24 from "./24-Slimjet.png";
-import img25 from "./25-dnsmasq.png";
+import img25 from "./25-uMatrix.png";
 
 export {
     img1,
