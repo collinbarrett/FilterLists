@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-    filterlists.db:
+    filterlists.mariadb:
         image: mariadb:latest
         restart: always
         environment:
@@ -16,7 +16,7 @@ services:
         expose:
             - '5000'
         depends_on:
-            - filterlists.db
+            - filterlists.mariadb
     filterlists.web:
         image: '${DOCKER_REGISTRY-}filterlistsweb'
         build:
@@ -28,7 +28,7 @@ services:
             - filterlists.api
     filterlists.nginx:
         build:
-            context: ./nginx
+            context: ./ops/nginx
         ports:
             - '80:80'
             - '443:443'

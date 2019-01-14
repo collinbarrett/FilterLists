@@ -29,30 +29,50 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{8C3C7C63-F
 		data\Tag.json = data\Tag.json
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{FCA7F77A-9EC6-4C6D-A80E-7DD27FF95673}"
-	ProjectSection(SolutionItems) = preProject
-		scripts\build.sh = scripts\build.sh
-		scripts\cron = scripts\cron
-		scripts\deploy.sh = scripts\deploy.sh
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Agent", "src\FilterLists.Agent\FilterLists.Agent.csproj", "{4F39D132-498D-4A93-9F6C-1C604718300D}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{A4BB2C81-5232-4162-B410-704D123D2C01}"
-	ProjectSection(SolutionItems) = preProject
-		scripts\sql\createDb.sql = scripts\sql\createDb.sql
-		scripts\sql\duplicateRules.sql = scripts\sql\duplicateRules.sql
-		scripts\sql\orphanedSnapshotsRules.sql = scripts\sql\orphanedSnapshotsRules.sql
-		scripts\sql\resetSnapshotsRules.sql = scripts\sql\resetSnapshotsRules.sql
-		scripts\sql\snapshotMetrics.sql = scripts\sql\snapshotMetrics.sql
-		scripts\sql\snapshotTimeAnalysis.sql = scripts\sql\snapshotTimeAnalysis.sql
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Services.Tests", "tests\FilterLists.Services.Tests\FilterLists.Services.Tests.csproj", "{7D9F0D85-E906-401A-BDAD-724440B34567}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Data.Tests", "tests\FilterLists.Data.Tests\FilterLists.Data.Tests.csproj", "{DA34DED7-B352-4855-9C7B-9E3D983DBE2E}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{94FF757E-0A78-4E9C-971E-A0709206AC27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CE4AB25B-5501-42E9-B8B4-87B9C20472AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{041F9CFA-B6F7-4DEB-9441-829DE697B1BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ops", "ops", "{AF336194-8932-4C99-BF8B-30FF8EC146E9}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.travis.yml = .travis.yml
+		azure-pipelines.yml = azure-pipelines.yml
+		codecov.yml = codecov.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{E11FDECE-A7F7-4ECB-A61F-83C124466412}"
+	ProjectSection(SolutionItems) = preProject
+		ops\nginx\Dockerfile = ops\nginx\Dockerfile
+		ops\nginx\nginx.conf = ops\nginx\nginx.conf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mariadb", "mariadb", "{982092B7-CCE2-4BD1-9240-E59D0817F5CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{EA7CB599-AE37-429E-A44D-E5C741F9FB3D}"
+	ProjectSection(SolutionItems) = preProject
+		ops\scripts\build.sh = ops\scripts\build.sh
+		ops\scripts\cron = ops\scripts\cron
+		ops\scripts\deploy.sh = ops\scripts\deploy.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{D44C45FF-1AF9-4404-8510-418D9981B7CD}"
+	ProjectSection(SolutionItems) = preProject
+		ops\scripts\sql\createDb.sql = ops\scripts\sql\createDb.sql
+		ops\scripts\sql\duplicateRules.sql = ops\scripts\sql\duplicateRules.sql
+		ops\scripts\sql\orphanedSnapshotsRules.sql = ops\scripts\sql\orphanedSnapshotsRules.sql
+		ops\scripts\sql\resetSnapshotsRules.sql = ops\scripts\sql\resetSnapshotsRules.sql
+		ops\scripts\sql\snapshotMetrics.sql = ops\scripts\sql\snapshotMetrics.sql
+		ops\scripts\sql\snapshotTimeAnalysis.sql = ops\scripts\sql\snapshotTimeAnalysis.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,7 +117,18 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A4BB2C81-5232-4162-B410-704D123D2C01} = {FCA7F77A-9EC6-4C6D-A80E-7DD27FF95673}
+		{57E4CE18-41F3-48F6-B142-12947FFBA86C} = {CE4AB25B-5501-42E9-B8B4-87B9C20472AC}
+		{944ADE8F-18E3-4DB8-9098-6A55E026EAC1} = {CE4AB25B-5501-42E9-B8B4-87B9C20472AC}
+		{9F296ECF-97C9-47E6-A794-5AD900ECFE6C} = {CE4AB25B-5501-42E9-B8B4-87B9C20472AC}
+		{6B3E6765-5B8B-4A23-AD12-7E2BC5F4D2E6} = {CE4AB25B-5501-42E9-B8B4-87B9C20472AC}
+		{4F39D132-498D-4A93-9F6C-1C604718300D} = {CE4AB25B-5501-42E9-B8B4-87B9C20472AC}
+		{7D9F0D85-E906-401A-BDAD-724440B34567} = {041F9CFA-B6F7-4DEB-9441-829DE697B1BB}
+		{DA34DED7-B352-4855-9C7B-9E3D983DBE2E} = {041F9CFA-B6F7-4DEB-9441-829DE697B1BB}
+		{94FF757E-0A78-4E9C-971E-A0709206AC27} = {AF336194-8932-4C99-BF8B-30FF8EC146E9}
+		{E11FDECE-A7F7-4ECB-A61F-83C124466412} = {AF336194-8932-4C99-BF8B-30FF8EC146E9}
+		{982092B7-CCE2-4BD1-9240-E59D0817F5CF} = {AF336194-8932-4C99-BF8B-30FF8EC146E9}
+		{EA7CB599-AE37-429E-A44D-E5C741F9FB3D} = {AF336194-8932-4C99-BF8B-30FF8EC146E9}
+		{D44C45FF-1AF9-4404-8510-418D9981B7CD} = {EA7CB599-AE37-429E-A44D-E5C741F9FB3D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A31B449-52DD-4445-A9C4-033A24E25308}
