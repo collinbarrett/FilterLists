@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/"
+    }
+  }
+}
