@@ -7381,20 +7381,6 @@
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/Audio-fingerprint-pages/master/AudioFp.txt"
   },
   {
-    "id": 621,
-    "description": "This list blocks requests to sites which have used legal threats to remove themselves from other blacklists.",
-    "descriptionSourceUrl": "https://github.com/CHEF-KOCH/BarbBlock-filter-list#barbblock-filter-list",
-    "emailAddress": "CHEF-KOCH@protonmail.com",
-    "homeUrl": "https://github.com/CHEF-KOCH/BarbBlock-filter-list",
-    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
-    "licenseId": 2,
-    "name": "CHEF-KOCH BarbBlock Filter List",
-    "publishedDate": "2017-08-13T00:29:57",
-    "syntaxId": 1,
-    "updatedDate": "2018-01-30T10:01:43",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/BarbBlock-filter-list/master/HOSTS.txt"
-  },
-  {
     "id": 622,
     "description": "Canvas fingerprinting pages filter list resource list, updated once in a year.",
     "descriptionSourceUrl": "https://github.com/CHEF-KOCH/Canvas-fingerprinting-pages#canvas-fingerprinting-pages",
@@ -14365,20 +14351,6 @@
     "syntaxId": 3,
     "updatedDate": "2018-12-30T15:04:23",
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Corp/filters/luckypatcher.txt"
-  },
-  {
-    "id": 1258,
-    "description": "A comprehensive, all-in-one ad-block list for blocking of trackers, pop-up ads, ads, unwanted cookies, fake news, cookie warning messages, unwanted comment sections, crypto-coin mining, YouTube clutter and social network hassles.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/modal.txt",
-    "emailAddress": "CHEF-KOCH@protonmail.com",
-    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
-    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
-    "licenseId": 17,
-    "name": "CHEF-KOCH's Modal Filter List",
-    "publishedDate": "2018-12-02T10:41:26",
-    "syntaxId": 4,
-    "updatedDate": "2018-12-31T18:52:21",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/modal.txt"
   },
   {
     "id": 1259,
