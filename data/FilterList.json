@@ -14832,5 +14832,17 @@
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt"
+  },
+  {
+    "id": 1294,
+    "descriptionSourceUrl": "https://gitlab.com/intr0/iVOID.GitLab.io",
+    "emailAddress": "intr0@intr0.com",
+    "homeUrl": "https://gitlab.com/intr0/iVOID.GitLab.io",
+    "issuesUrl": "https://gitlab.com/intr0/iVOID.GitLab.io/issues",
+    "name": "iVOID.hosts",
+    "syntaxId": 1,
+	"licenseId": 19,
+    "updatedDate": "2019-01-15T02:53:02",
+    "viewUrl": "https://gitlab.com/intr0/iVOID.GitLab.io/raw/master/iVOID.hosts"
   }
 ]
