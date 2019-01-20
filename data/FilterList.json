@@ -14830,5 +14830,27 @@
     "syntaxId": 3,
     "updatedDate": "2018-02-14T18:54:12",
     "viewUrl": "https://crapblock.theel0ja.info/even-cleaner-news-sites.txt"
+  },
+  {
+    "id": 1295,
+    "emailAddress": "intr0@intr0.com",
+    "homeUrl": "https://intr0.com/",
+    "issuesUrl": "https://gitlab.com/intr0/iVOID.GitLab.io/issues",
+    "name": "iVOID.hosts",
+    "syntaxId": 1,
+	"licenseId": 19,
+    "updatedDate": "2019-01-15T03:13:12:00",
+    "viewUrl": "https://gitlab.com/intr0/iVOID.GitLab.io/raw/master/iVOID.hosts"
+  },
+  {
+    "id": 1296,
+    "emailAddress": "intr0@intr0.com",
+    "homeUrl": "https://intr0.com/",
+    "issuesUrl": "https://gitlab.com/intr0/DomainVoider/issues",
+    "name": "DomainVoider",
+    "syntaxId": 1,
+	"licenseId": 19,
+    "updatedDate": "2019-01-15T03:13:12:00",
+    "viewUrl": "https://gitlab.com/intr0/DomainVoider/raw/master/DomainVoider.txt"
   }
 ]

@@ -5762,5 +5762,13 @@
   {
     "filterListId": 1294,
     "tagId": 2
+  },
+  {
+    "filterListId": 1295,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1296,
+    "tagId": 3
   }
 ]
