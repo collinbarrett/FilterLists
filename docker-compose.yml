@@ -1,37 +1,33 @@
 version: '3.7'
 services:
-    filterlists.mariadb:
+    FilterLists.MariaDB:
         image: mariadb:latest
-        restart: always
         environment:
             MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
             MYSQL_DATABASE: filterlistsdata
             MYSQL_USER: filterlists
             MYSQL_PASSWORD: C53A28194242D82288E1E84A37E56D3EC7DFF83F1D9E018AF19E9BA27A5DF833
-    filterlists.api:
-        image: '${DOCKER_REGISTRY-}filterlistsapi'
+        command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_520_ci']
+    FilterLists.Api:
+        image: 'filterlists.api'
         build:
             context: .
-            dockerfile: ./src/FilterLists.Api/Dockerfile
+            dockerfile: src/FilterLists.Api/Dockerfile
         expose:
-            - '5000'
+            - "80/tcp"
         depends_on:
-            - filterlists.mariadb
-    filterlists.web:
-        image: '${DOCKER_REGISTRY-}filterlistsweb'
-        build:
-            context: ./src
-            dockerfile: ./FilterLists.Web/Dockerfile
-        expose:
-            - '5001'
-        depends_on:
-            - filterlists.api
-    filterlists.nginx:
+            - FilterLists.MariaDB
+#    FilterLists.Web:
+#        image: 'filterlists.web'
+#        build:
+#            context: src/FilterLists.Web
+    FilterLists.NGINX:
+        image: 'nginx:stable-alpine'
         build:
             context: ./ops/nginx
         ports:
             - '80:80'
             - '443:443'
-        depends_on:
-            - filterlists.api
-            - filterlists.web
+        links:
+            - FilterLists.Api
+#            - FilterLists.Web
