@@ -6104,18 +6104,6 @@
     "viewUrl": "https://raw.githubusercontent.com/UnluckyLuke/BlockUnderRadarJunk/master/blockunderradarjunk-list.txt"
   },
   {
-    "id": 511,
-    "description": "Blocks crap such as infinite scrolling on websites.",
-    "descriptionSourceUrl": "https://github.com/theel0ja/CrapBlock",
-    "emailAddress": "elias.ojala+github@kapsi.fi",
-    "homeUrl": "https://github.com/theel0ja/CrapBlock",
-    "issuesUrl": "https://github.com/theel0ja/CrapBlock/issues",
-    "name": "Even cleaner news sites",
-    "syntaxId": 3,
-    "updatedDate": "2018-02-14T18:54:12",
-    "viewUrl": "https://crapblock.theel0ja.info/even-cleaner-news-sites.txt"
-  },
-  {
     "id": 512,
     "description": "MinerBlock is an efficient browser extension that focuses on blocking browser-based cryptocurrency miners all over the web.",
     "descriptionSourceUrl": "https://github.com/xd4rker/MinerBlock",
@@ -14835,14 +14823,12 @@
   },
   {
     "id": 1294,
-    "descriptionSourceUrl": "https://gitlab.com/intr0/iVOID.GitLab.io",
-    "emailAddress": "intr0@intr0.com",
-    "homeUrl": "https://gitlab.com/intr0/iVOID.GitLab.io",
-    "issuesUrl": "https://gitlab.com/intr0/iVOID.GitLab.io/issues",
-    "name": "iVOID.hosts",
-    "syntaxId": 1,
-	"licenseId": 19,
-    "updatedDate": "2019-01-15T02:53:02",
-    "viewUrl": "https://gitlab.com/intr0/iVOID.GitLab.io/raw/master/iVOID.hosts"
+    "emailAddress": "elias.ojala+github@kapsi.fi",
+    "homeUrl": "https://github.com/theel0ja/CrapBlock",
+    "issuesUrl": "https://github.com/theel0ja/CrapBlock/issues",
+    "name": "Even cleaner news sites",
+    "syntaxId": 3,
+    "updatedDate": "2018-02-14T18:54:12",
+    "viewUrl": "https://crapblock.theel0ja.info/even-cleaner-news-sites.txt"
   }
 ]
