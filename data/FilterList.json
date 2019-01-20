@@ -14820,5 +14820,15 @@
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt"
+  },
+  {
+    "id": 1294,
+    "emailAddress": "elias.ojala+github@kapsi.fi",
+    "homeUrl": "https://github.com/theel0ja/CrapBlock",
+    "issuesUrl": "https://github.com/theel0ja/CrapBlock/issues",
+    "name": "Even cleaner news sites",
+    "syntaxId": 3,
+    "updatedDate": "2018-02-14T18:54:12",
+    "viewUrl": "https://crapblock.theel0ja.info/even-cleaner-news-sites.txt"
   }
 ]
