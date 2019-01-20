@@ -14311,20 +14311,6 @@
     "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/emoji.txt"
   },
   {
-    "id": 1255,
-    "description": "A comprehensive, all-in-one ad-block list for blocking of trackers, pop-up ads, ads, unwanted cookies, fake news, cookie warning messages, unwanted comment sections, crypto-coin mining, YouTube clutter and social network hassles.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/generic.txt",
-    "emailAddress": "CHEF-KOCH@protonmail.com",
-    "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
-    "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
-    "licenseId": 17,
-    "name": "CHEF-KOCH's Generic Filter List",
-    "publishedDate": "2018-12-02T10:41:26",
-    "syntaxId": 3,
-    "updatedDate": "2019-01-01T00:09:15",
-    "viewUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/generic.txt"
-  },
-  {
     "id": 1256,
     "description": "Block iframe elements.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/filters/iframe.txt",
