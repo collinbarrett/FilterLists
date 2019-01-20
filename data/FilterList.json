@@ -10121,7 +10121,7 @@
   },
   {
     "id": 867,
-    "description": "This aim to block non-formal hosts that serve all Facebook contents and resources from alternative \"Free Basics\" servers that it happen when you're using on mobile data over the carrier that collaborate with Facebook to have THAT service! The static version will list related sites of Facebook under Free Baiscs (include internet.org) and regional CDN that begin with z-m-\^ (scontent, static, video).",
+    "description": "This aim to block non-formal hosts that serve all Facebook contents and resources from alternative \"Free Basics\" servers that it happen when you're using on mobile data over the carrier that collaborate with Facebook to have THAT service! The static version will list related sites of Facebook under Free Baiscs (include internet.org) and regional CDN that begin with z-m- (scontent, static, video).",
     "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/hosts/readme.md",
     "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
     "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?q=label%3A%22Hosts+File%22",
