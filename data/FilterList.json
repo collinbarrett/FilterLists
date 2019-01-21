@@ -15379,5 +15379,81 @@
     "syntaxId": 8,
     "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/fortunetelling/urls"
+  },
+  {
+    "id": 1349,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Forum Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/forum",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/forum/domains"
+  },  {
+    "id": 1350,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Forum Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/forum",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/forum/urls"
+  },
+  {
+    "id": 1351,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Gamble Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/gamble",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/gamble/domains"
+  },  {
+    "id": 1352,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Gamble Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/gamble",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/gamble/urls"
+  },
+  {
+    "id": 1353,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Government Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/government",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/government/domains"
+  },  {
+    "id": 1354,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Government Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/government",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/government/domains"
+  },
+  {
+    "id": 1355,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Hacking Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/hacking",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/hacking/domains"
+  },  {
+    "id": 1356,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Hacking Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/hacking",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/hacking/urls"
   }
 ]
