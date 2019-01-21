@@ -14866,5 +14866,27 @@
     "syntaxId": 4,
     "updatedDate": "2019-01-13T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/filters/css_style_filters.txt"
-}
+},
+  {
+    "id": 1298,
+    "emailAddress": "neofelhz+github@gmail.com",
+    "homeUrl": "https://github.com/neofelhz/neoHosts",
+    "issuesUrl": "https://github.com/neofelhz/neoHosts/issues",
+    "name": "NeoHosts Full",
+    "syntaxId": 1,
+	"licenseId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://hosts.nfz.moe/full/hosts"
+  },
+    {
+    "id": 1299,
+    "emailAddress": "neofelhz+github@gmail.com",
+    "homeUrl": "https://github.com/neofelhz/neoHosts",
+    "issuesUrl": "https://github.com/neofelhz/neoHosts/issues",
+    "name": "NeoHosts Basic",
+    "syntaxId": 1,
+	"licenseId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://hosts.nfz.moe/basic/hosts"
+  }
 ]
