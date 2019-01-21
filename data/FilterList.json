@@ -14966,7 +14966,7 @@
     "name": "Shalla List Adv Domains",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/adv",
     "syntaxId": 2,
-    "updatedDate": "2019-22-01T02:09:11",
+    "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/adv/domains"
   },
   {
@@ -14976,7 +14976,7 @@
     "name": "Shalla List Adv Urls",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/adv",
     "syntaxId": 8,
-    "updatedDate": "2019-22-01T02:09:11",
+    "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/adv/urls"
   },
   {
@@ -14986,7 +14986,7 @@
     "name": "Shalla List Aggressive Domains",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/aggressive",
     "syntaxId": 2,
-    "updatedDate": "2019-22-01T02:09:11",
+    "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/aggressive/domains"
   },  {
     "id": 1308,
@@ -14995,7 +14995,7 @@
     "name": "Shalla List Aggressive Urls",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/aggressive",
     "syntaxId": 8,
-    "updatedDate": "2019-22-01T02:09:11",
+    "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/aggressive/urls"
   }
   
@@ -15007,7 +15007,7 @@
     "name": "Shalla List Alcohol Domains",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/alcohol",
     "syntaxId": 2,
-    "updatedDate": "2019-22-01T02:09:11",
+    "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/alcohol/domains"
   },  {
     "id": 1310,
@@ -15016,7 +15016,7 @@
     "name": "Shalla List Aggressive Urls",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/alcohol",
     "syntaxId": 8,
-    "updatedDate": "2019-22-01T02:09:11",
+    "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/alcohol/urls"
   },
   {
@@ -15026,7 +15026,7 @@
     "name": "Shalla List Anonvpn Domains",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/anonvpn",
     "syntaxId": 2,
-    "updatedDate": "2019-22-01T02:09:11",
+    "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/anonvpn/domains"
   },  {
     "id": 1312,
@@ -15035,7 +15035,7 @@
     "name": "Shalla List Anonvpn Urls",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/anonvpn",
     "syntaxId": 8,
-    "updatedDate": "2019-22-01T02:09:11",
+    "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/anonvpn/urls"
   },
   {
@@ -15045,7 +15045,7 @@
     "name": "Shalla List Automobile Bikes Domains",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/automobile/bikes",
     "syntaxId": 2,
-    "updatedDate": "2019-22-01T02:09:11",
+    "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/automobile/bikes/domains"
   },  {
     "id": 1314,
@@ -15054,7 +15054,7 @@
     "name": "Shalla List Automobile Bikes Urls",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/automobile/bikes",
     "syntaxId": 8,
-    "updatedDate": "2019-22-01T02:09:11",
+    "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/automobile/bikes/urls"
   },
   {
@@ -15064,7 +15064,7 @@
     "name": "Shalla List Automobile Boats Domains",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/automobile/boats",
     "syntaxId": 2,
-    "updatedDate": "2019-22-01T02:09:11",
+    "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/automobile/boats/domains"
   },  {
     "id": 1316,
@@ -15073,7 +15073,7 @@
     "name": "Shalla List Automobile Boats Urls",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/automobile/boats",
     "syntaxId": 8,
-    "updatedDate": "2019-22-01T02:09:11",
+    "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/automobile/boats/urls"
   },
   {
@@ -15083,7 +15083,7 @@
     "name": "Shalla List Automobile Cars Domains",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/automobile/cars",
     "syntaxId": 2,
-    "updatedDate": "2019-22-01T02:09:11",
+    "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/automobile/cars/domains"
   },  {
     "id": 1318,
@@ -15092,7 +15092,7 @@
     "name": "Shalla List Automobile Cars Urls",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/automobile/cars",
     "syntaxId": 8,
-    "updatedDate": "2019-22-01T02:09:11",
+    "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/automobile/cars/urls"
   },
   {
@@ -15102,8 +15102,8 @@
     "name": "Shalla List Automobile Planes Domains",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/automobile/planes",
     "syntaxId": 2,
-    "updatedDate": "2019-22-01T02:09:11",
-    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/automobile/cars/domains"
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/automobile/planes/domains"
   },  {
     "id": 1320,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
@@ -15111,7 +15111,45 @@
     "name": "Shalla List Automobile Planes Urls",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/automobile/planes",
     "syntaxId": 8,
-    "updatedDate": "2019-22-01T02:09:11",
-    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/automobile/cars/urls"
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/automobile/planes/urls"
+  },
+  {
+    "id": 1321,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Automobile Chat Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/chat",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/chat/domains"
+  },  {
+    "id": 1322,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Automobile Chat Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/chat",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/chat/urls"
+  },
+  {
+    "id": 1323,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Automobile Chat Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/chat",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/chat/domains"
+  },  {
+    "id": 1324,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Automobile Chat Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/chat",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/chat/urls"
   }
 ]
