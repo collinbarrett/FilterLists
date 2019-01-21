@@ -5974,5 +5974,44 @@
   },{
     "filterListId": 1328,
     "tagId": 3
+  },
+  {
+    "filterListId": 1329,
+    "tagId": 6
+  },{
+    "filterListId": 1329,
+    "tagId": 3
+  },{
+    "filterListId": 1330,
+    "tagId": 6
+  },{
+    "filterListId": 1330,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1331,
+    "tagId": 6
+  },{
+    "filterListId": 1331,
+    "tagId": 3
+  },{
+    "filterListId": 1332,
+    "tagId": 6
+  },{
+    "filterListId": 1332,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1333,
+    "tagId": 6
+  },{
+    "filterListId": 1333,
+    "tagId": 3
+  },{
+    "filterListId": 1334,
+    "tagId": 6
+  },{
+    "filterListId": 1334,
+    "tagId": 3
   }
 ]
