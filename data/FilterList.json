@@ -15241,10 +15241,86 @@
     "id": 1334,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
     "homeUrl": "http://www.shallalist.de/",
-    "name": "Shalla List Education Schools  Urls",
+    "name": "Shalla List Education Schools Urls",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/education/schools",
     "syntaxId": 8,
     "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/education/schools/urls"
+  },
+  {
+    "id": 1335,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Finance Banking Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/finance/banking",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/finance/banking/domains"
+  },  {
+    "id": 1336,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Finance Banking Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/finance/banking",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/finance/banking/urls"
+  },
+  {
+    "id": 1337,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Finance Insurance Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/finance/insurance",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/finance/insurance/domains"
+  },  {
+    "id": 1338,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Finance Insurance Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/finance/insurance",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/finance/insurance/urls"
+  },
+  {
+    "id": 1339,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Finance Moneylending Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/finance/moneylending",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/finance/moneylending/domains"
+  },  {
+    "id": 1340,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Finance Moneylending Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/finance/moneylending",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/finance/moneylending/urls"
+  },
+  {
+    "id": 1341,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Finance Other Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/finance/other",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/finance/other/domains"
+  },  {
+    "id": 1342,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Finance Other Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/finance/other",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/finance/other/urls"
   }
 ]
