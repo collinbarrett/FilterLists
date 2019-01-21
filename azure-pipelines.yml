@@ -10,10 +10,8 @@ variables:
 
 steps:
   - script: |
-      dotnet build --configuration $(buildConfiguration)
-      dotnet publish --configuration $(buildConfiguration) --output out
-      docker build -f Dockerfile -t $(dockerId)/$(imageName) .
+      docker-compose build
       docker login -u $(dockerId) -p $pswd
-      docker push $(dockerId)/$(imageName)
+      docker-compose push
     env:
       pswd: $(dockerPassword)
