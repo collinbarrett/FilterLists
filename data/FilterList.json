@@ -14892,9 +14892,10 @@
       {
     "id": 1300,
     "homeUrl": "https://www.stopforumspam.com/",
+	"forumUrl": "https://www.stopforumspam.com/forum/",
+    "licenseId": 26,
     "name": "StopForumSpam Toxic Domains Whole",
     "syntaxId": 1,
-	"licenseId": 26,
     "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://www.stopforumspam.com/downloads/toxic_domains_whole.txt"
   }
