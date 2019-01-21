@@ -5786,5 +5786,45 @@
   {
     "filterListId": 1300,
     "tagId": 3
+  },
+  {
+    "filterListId": 1301,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1301,
+    "tagId": 4
+  },
+  {
+    "filterListId": 1301,
+    "tagId": 14
+  },
+  {
+    "filterListId": 1301,
+    "tagId": 19
+  },
+  {
+    "filterListId": 1302,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1302,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1302,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1303,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1304,
+    "tagId": 14
+  },
+  {
+    "filterListId": 1304,
+    "tagId": 15
   }
 ]
