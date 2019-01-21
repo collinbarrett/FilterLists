@@ -5826,5 +5826,102 @@
   {
     "filterListId": 1304,
     "tagId": 15
+  },
+   {
+    "filterListId": 1305,
+    "tagId": 6
+  },{
+    "filterListId": 1305,
+    "tagId": 3
+  },{
+    "filterListId": 1306,
+    "tagId": 6
+  },{
+    "filterListId": 1306,
+    "tagId": 3
+  },{
+    "filterListId": 1307,
+    "tagId": 6
+  },{
+    "filterListId": 1307,
+    "tagId": 3
+  },{
+    "filterListId": 1308,
+    "tagId": 6
+  },{
+    "filterListId": 1308,
+    "tagId": 3
+  },{
+    "filterListId": 1309,
+    "tagId": 6
+  },{
+    "filterListId": 1309,
+    "tagId": 3
+  },{
+    "filterListId": 1310,
+    "tagId": 6
+  },{
+    "filterListId": 1310,
+    "tagId": 3
+  },{
+    "filterListId": 1311,
+    "tagId": 6
+  },{
+    "filterListId": 1311,
+    "tagId": 3
+  },{
+    "filterListId": 1312,
+    "tagId": 6
+  },{
+    "filterListId": 1312,
+    "tagId": 3
+  },{
+    "filterListId": 1313,
+    "tagId": 6
+  },{
+    "filterListId": 1313,
+    "tagId": 3
+  },{
+    "filterListId": 1314,
+    "tagId": 6
+  },{
+    "filterListId": 1314,
+    "tagId": 3
+  },{
+    "filterListId": 1315,
+    "tagId": 6
+  },{
+    "filterListId": 1315,
+    "tagId": 3
+  },{
+    "filterListId": 1316,
+    "tagId": 6
+  },{
+    "filterListId": 1316,
+    "tagId": 3
+  },{
+    "filterListId": 1317,
+    "tagId": 6
+  },{
+    "filterListId": 1317,
+    "tagId": 3
+  },{
+    "filterListId": 1318,
+    "tagId": 6
+  },{
+    "filterListId": 1318,
+    "tagId": 3
+  },{
+    "filterListId": 1319,
+    "tagId": 6
+  },{
+    "filterListId": 1319,
+    "tagId": 3
+  },{
+    "filterListId": 1320,
+    "tagId": 6
+  },{
+    "filterListId": 1320,
+    "tagId": 3
   }
 ]
