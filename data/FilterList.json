@@ -14895,6 +14895,7 @@
   },
       {
     "id": 1300,
+	"description": "Stop Forum Spam is a free service that records reports of spam on forums, blogs and wikis to name a few. All these records are then made available to you search and view but most importantly, to access in an automated way to block suspected spammers before they can get in the front door. Everyone is familiar with more traditional "solve the word" systems to prevent abuse, Stop Forum Spam is a targeted and specialsed solution to help stop abuse of your website.",
     "homeUrl": "https://www.stopforumspam.com/",
 	"forumUrl": "https://www.stopforumspam.com/forum/",
     "licenseId": 5,
