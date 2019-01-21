@@ -15493,5 +15493,62 @@
     "syntaxId": 8,
     "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/hobby/games-misc/urls"
+  },
+  {
+    "id": 1361,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Hobby Games-online Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/hobby/games-online",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/hobby/games-online/domains"
+  },  {
+    "id": 1362,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Hobby Games-online Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/hobby/games-online",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/hobby/games-online/urls"
+  },
+  {
+    "id": 1363,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Hobby Gardening Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/hobby/gardening",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/hobby/gardening/domains"
+  },  {
+    "id": 1364,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Hobby Gardening Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/hobby/gardening",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/hobby/gardening/urls"
+  },
+  {
+    "id": 1365,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Hobby Pets Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/hobby/pets",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/hobby/pets/domains"
+  },  {
+    "id": 1366,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Hobby Pets Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/hobby/pets",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/hobby/pets/urls"
   }
 ]
