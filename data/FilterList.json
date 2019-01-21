@@ -15455,5 +15455,43 @@
     "syntaxId": 8,
     "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/hacking/urls"
+  },
+  {
+    "id": 1357,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Hobby Cooking Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/hobby/cooking",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/hobby/cooking/domains"
+  },  {
+    "id": 1358,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Hobby Cooking Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/hobby/cooking",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/hobby/cooking/urls"
+  },
+  {
+    "id": 1359,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Hobby Games-misc Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/hobby/games-misc",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/hobby/games-misc/domains"
+  },  {
+    "id": 1360,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Hobby Games-misc Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/hobby/games-misc",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/hobby/games-misc/urls"
   }
 ]
