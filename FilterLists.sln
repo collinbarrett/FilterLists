@@ -44,7 +44,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ops", "ops", "{AF336194-8932-4C99-BF8B-30FF8EC146E9}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		.travis.yml = .travis.yml
 		azure-pipelines.yml = azure-pipelines.yml
 		codecov.yml = codecov.yml
 	EndProjectSection
