@@ -14888,5 +14888,13 @@
 	"licenseId": 2,
     "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://hosts.nfz.moe/basic/hosts"
+  },
+      {
+    "id": 1300,
+    "homeUrl": "https://www.stopforumspam.com/",
+    "name": "StopForumSpam Toxic Domains Whole",
+    "syntaxId": 1,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://www.stopforumspam.com/downloads/toxic_domains_whole.txt"
   }
 ]
