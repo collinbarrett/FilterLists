@@ -6,7 +6,20 @@ pool:
 
 variables:
   buildConfiguration: "Release"
+  imageName: "FilterLists:$(Build.BuildId)"
 
 steps:
-  - script: docker-compose build --configuration $(buildConfiguration)
-    displayName: "dotnet-compose build $(buildConfiguration)"
+  - script: |
+      dotnet build --configuration $(buildConfiguration)
+      dotnet publish --configuration $(buildConfiguration) --output out
+      docker build -f Dockerfile -t $(dockerId)/$(imageName) .
+      docker login -u $(dockerId) -p $pswd
+      docker push $(dockerId)/$(imageName)
+    env:
+      pswd: $(dockerPassword)
+
+  - task: PublishTestResults@2
+    condition: succeededOrFailed()
+    inputs:
+      testRunner: VSTest
+testResultsFiles: "**/*.trx"
