@@ -1,0 +1,17 @@
+trigger:
+  - docker-devops
+
+pool:
+  vmImage: "Ubuntu-16.04"
+
+variables:
+  buildConfiguration: "Release"
+  imageName: "FilterLists:$(Build.BuildId)"
+
+steps:
+  - script: |
+      docker-compose build
+      docker login -u $(dockerId) -p $pswd
+      docker-compose push --ignore-push-failures
+    env:
+      pswd: $(dockerPassword)
