@@ -14869,7 +14869,9 @@
 },
   {
     "id": 1298,
+	"description": "A Hosts file for free, responsible, and controlled advertising.",
     "emailAddress": "neofelhz+github@gmail.com",
+		    "descriptionSourceUrl": "https://hosts.nfz.moe/",
     "homeUrl": "https://github.com/neofelhz/neoHosts",
     "issuesUrl": "https://github.com/neofelhz/neoHosts/issues",
     "name": "NeoHosts Full",
@@ -14880,7 +14882,9 @@
   },
     {
     "id": 1299,
+	"description": "A Hosts file for free, responsible, and controlled advertising.",
     "emailAddress": "neofelhz+github@gmail.com",
+	    "descriptionSourceUrl": "https://hosts.nfz.moe/",
     "homeUrl": "https://github.com/neofelhz/neoHosts",
     "issuesUrl": "https://github.com/neofelhz/neoHosts/issues",
     "name": "NeoHosts Basic",
@@ -14893,9 +14897,9 @@
     "id": 1300,
     "homeUrl": "https://www.stopforumspam.com/",
 	"forumUrl": "https://www.stopforumspam.com/forum/",
-    "licenseId": 26,
+    "licenseId": 5,
     "name": "StopForumSpam Toxic Domains Whole",
-    "syntaxId": 1,
+    "syntaxId": 2,
     "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://www.stopforumspam.com/downloads/toxic_domains_whole.txt"
   }
