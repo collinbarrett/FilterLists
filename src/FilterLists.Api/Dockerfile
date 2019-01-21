@@ -1,3 +1,6 @@
+FROM microsoft/dotnet:2.2-aspnetcore-runtime-alpine as base
+WORKDIR /app
+
 FROM microsoft/dotnet:2.2-sdk-alpine AS publish
 WORKDIR /app
 COPY src/FilterLists.Data/FilterLists.Data.csproj ./FilterLists.Data/
@@ -13,7 +16,7 @@ COPY src/FilterLists.Api/. ./FilterLists.Api/
 WORKDIR /app/FilterLists.Api
 RUN dotnet publish -c Release -o /out
 
-FROM microsoft/dotnet:2.2-aspnetcore-runtime-alpine
+FROM base
 WORKDIR /app
 COPY --from=publish /out .
 COPY data ./data/
