@@ -12,6 +12,6 @@ steps:
   - script: |
       docker-compose build
       docker login -u $(dockerId) -p $pswd
-      docker-compose push
+      docker-compose push --ignore-push-failures
     env:
       pswd: $(dockerPassword)
