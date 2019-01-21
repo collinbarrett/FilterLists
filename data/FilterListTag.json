@@ -6065,5 +6065,44 @@
   },{
     "filterListId": 1342,
     "tagId": 3
+  },
+  {
+    "filterListId": 1343,
+    "tagId": 6
+  },{
+    "filterListId": 1343,
+    "tagId": 3
+  },{
+    "filterListId": 1344,
+    "tagId": 6
+  },{
+    "filterListId": 1344,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1345,
+    "tagId": 6
+  },{
+    "filterListId": 1345,
+    "tagId": 3
+  },{
+    "filterListId": 1346,
+    "tagId": 6
+  },{
+    "filterListId": 1346,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1347,
+    "tagId": 6
+  },{
+    "filterListId": 1347,
+    "tagId": 3
+  },{
+    "filterListId": 1348,
+    "tagId": 6
+  },{
+    "filterListId": 1348,
+    "tagId": 3
   }
 ]
