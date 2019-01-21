@@ -6222,5 +6222,45 @@
   },{
     "filterListId": 1366,
     "tagId": 3
+  },
+  {
+    "filterListId": 1367,
+    "tagId": 6
+  },{
+    "filterListId": 1367,
+    "tagId": 3
+  },{
+    "filterListId": 1368,
+    "tagId": 6
+  },{
+    "filterListId": 1368,
+    "tagId": 3
+  }
+  ,
+  {
+    "filterListId": 1369,
+    "tagId": 6
+  },{
+    "filterListId": 1369,
+    "tagId": 3
+  },{
+    "filterListId": 1370,
+    "tagId": 6
+  },{
+    "filterListId": 1370,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1371,
+    "tagId": 6
+  },{
+    "filterListId": 1371,
+    "tagId": 3
+  },{
+    "filterListId": 1372,
+    "tagId": 6
+  },{
+    "filterListId": 1372,
+    "tagId": 3
   }
 ]
