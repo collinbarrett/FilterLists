@@ -34,7 +34,7 @@ const Footer = () =>
     </footer>;
 
 const ApiLink = () =>
-    <a href="https://filterlists.com/api/docs/index.html"
+    <a href="/api/docs/index.html"
        title="API Swagger Docs">
         API
     </a>;

@@ -17,17 +17,19 @@ services:
             - "80/tcp"
         depends_on:
             - FilterLists.MariaDB
-#    FilterLists.Web:
-#        image: 'filterlists.web'
-#        build:
-#            context: src/FilterLists.Web
+    FilterLists.Web:
+        image: 'filterlists.web'
+        build:
+            context: src/FilterLists.Web
+        expose:
+            - "80/tcp"
     FilterLists.NGINX:
         image: 'nginx:stable-alpine'
         build:
             context: ./ops/nginx
         ports:
-            - '80:80'
-            - '443:443'
+            - '80:80/tcp'
+            - '443:443/tcp'
         links:
             - FilterLists.Api
-#            - FilterLists.Web
+            - FilterLists.Web
