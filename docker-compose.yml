@@ -14,7 +14,7 @@ services:
         "--collation-server=utf8mb4_unicode_520_ci",
       ]
   FilterLists.Api:
-    image: "filterlists.api"
+    image: "collinbarrett/filterlists.api"
     build:
       context: .
       dockerfile: src/FilterLists.Api/Dockerfile
@@ -23,7 +23,7 @@ services:
     depends_on:
       - FilterLists.MariaDB
   FilterLists.Web:
-    image: "filterlists.web"
+    image: "collinbarrett/filterlists.web"
     build:
       context: src/FilterLists.Web
     expose:
