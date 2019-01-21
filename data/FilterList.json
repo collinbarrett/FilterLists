@@ -16147,5 +16147,68 @@
     "syntaxId": 8,
     "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/shopping/urls"
+  }  ,
+  {
+    "id": 1429,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Socialnet Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/socialnet",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/socialnet/domains"
+  },  {
+    "id": 1430,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Socialnet Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/socialnet",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/socialnet/urls"
+  }
+  
+  ,
+  {
+    "id": 1431,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Spyware Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/spyware",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/spyware/domains"
+  },  {
+    "id": 1432,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Spyware Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/spyware",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/spyware/urls"
+  }
+  
+  
+  
+  ,
+  {
+    "id": 1433,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Tracker Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/tracker",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/tracker/domains"
+  },  {
+    "id": 1434,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Tracker Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/tracker",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/tracker/urls"
   }
 ]
