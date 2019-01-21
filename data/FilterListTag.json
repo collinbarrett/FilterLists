@@ -6288,5 +6288,33 @@
   },{
     "filterListId": 1376,
     "tagId": 3
+  },
+  {
+    "filterListId": 1377,
+    "tagId": 6
+  },{
+    "filterListId": 1377,
+    "tagId": 3
+  },{
+    "filterListId": 1378,
+    "tagId": 6
+  },{
+    "filterListId": 1378,
+    "tagId": 3
+  }
+  
+  ,
+  {
+    "filterListId": 1379,
+    "tagId": 6
+  },{
+    "filterListId": 1379,
+    "tagId": 3
+  },{
+    "filterListId": 1380,
+    "tagId": 6
+  },{
+    "filterListId": 1380,
+    "tagId": 3
   }
 ]
