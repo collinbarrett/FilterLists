@@ -5948,5 +5948,31 @@
   },{
     "filterListId": 1324,
     "tagId": 3
+  },
+  {
+    "filterListId": 1325,
+    "tagId": 6
+  },{
+    "filterListId": 1325,
+    "tagId": 3
+  },{
+    "filterListId": 1326,
+    "tagId": 6
+  },{
+    "filterListId": 1326,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1327,
+    "tagId": 6
+  },{
+    "filterListId": 1327,
+    "tagId": 3
+  },{
+    "filterListId": 1328,
+    "tagId": 6
+  },{
+    "filterListId": 1328,
+    "tagId": 3
   }
 ]
