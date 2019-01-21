@@ -10042,7 +10042,7 @@
   },
   {
     "id": 862,
-    "description": "This filterlist only works for uBlock Origin and other proper forks (I only recommend NanoAdBlocker than others) because it's borrow the strict blocking ability to prevent navigation to specific sites or any traffic that re-routed to go inside first party with tracking parameters that their made first and then sent you to the target URL, the internal strict blocking warning page will prevent navigation to be happen and also reveal real URLs under the warning sign, however, you need to make manual text selection to exclude tracking parameters if some sites have multiple parameters and internal strict blocking cannot divide or clean-up target URL properly.",
+    "description": "This filterlist only works for uBlock Origin and other proper forks (I only recommend NanoAdBlocker than others) because it's borrow the strict blocking ability to prevent navigation to specific sites that have unnecessary parameters added to keep track users regardless of privacy settings (DNT, cookies, referer, etc.), the internal strict blocking possibly to reveal real URLs under the warning sign and also divide each parameters to make sure you're going to the legitmate destination, however, you need to make manual text selection to exclude tracking parameters if some sites have multiple parameters and internal strict blocking cannot divide or clean-up target URL properly.",
     "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/tree/master/filterlist/other/readme.md",
     "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
     "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
@@ -10107,7 +10107,7 @@
   },
   {
     "id": 866,
-    "description": "This aim to block non-formal hosts that serve all Facebook contents and resources from alternative \"Free Basics\" servers that it happen when you're using on mobile data over the carrier that collaborate with Facebook to have THAT service! Note that all rules are have many duplicates and didn't checked how many servers or domains really exists.",
+    "description": "This aim to block non-formal hosts that serve all Facebook contents and resources from alternative \"Free Basics\" servers that it happen when you're using on mobile data over the carrier that collaborate with Facebook to have THAT service! This list will follow the update after routine check results of dead-hosts.",
     "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/hosts/readme.md",
     "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
     "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?q=label%3A%22Hosts+File%22",
@@ -10121,16 +10121,16 @@
   },
   {
     "id": 867,
-    "description": "This aim to block non-formal hosts that serve all Facebook contents and resources from alternative \"Free Basics\" servers that it happen when you're using on mobile data over the carrier that collaborate with Facebook to have THAT service! NoEdge version is split from main version that aim to support low to mid end devices that cannot combine or merge too much hosts file rules.",
+    "description": "This aim to block non-formal hosts that serve all Facebook contents and resources from alternative \"Free Basics\" servers that it happen when you're using on mobile data over the carrier that collaborate with Facebook to have THAT service! The static version will list related sites of Facebook under Free Baiscs (include internet.org) and regional CDN that begin with z-m- (scontent, static, video).",
     "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/hosts/readme.md",
     "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
     "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?q=label%3A%22Hosts+File%22",
     "licenseId": 13,
-    "name": "Facebook Zero Hosts Block (NoEdge)",
+    "name": "Facebook Zero Hosts Block (Static)",
     "publishedDate": "2018-11-13T14:07:15",
     "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_facebook0_noedgetxt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/hosts_facebook0_noedge.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/ststic/hosts_facebook0_noregionsv.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/ststic/hosts_facebook0_noregionsv.txt"
   },
   {
     "id": 868,
@@ -14568,7 +14568,7 @@
     "homeUrl": "https://github.com/CHEF-KOCH/CKs-FilterList",
     "issuesUrl": "https://github.com/CHEF-KOCH/CKs-FilterList/issues",
     "licenseId": 17,
-    "name": "CHEF-KOCH's  HOSTS Filter List",
+    "name": "CHEF-KOCH's Pinterest HOSTS Filter List",
     "publishedDate": "2018-12-02T10:41:26",
     "syntaxId": 1,
     "updatedDate": "2018-12-30T15:04:23",
@@ -14893,7 +14893,7 @@
     "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://hosts.nfz.moe/basic/hosts"
   },
-      {
+    {
     "id": 1300,
 	"description": "Stop Forum Spam is a free service that records reports of spam on forums, blogs and wikis to name a few. All these records are then made available to you search and view but most importantly, to access in an automated way to block suspected spammers before they can get in the front door. Everyone is familiar with more traditional 'solve the word' systems to prevent abuse, Stop Forum Spam is a targeted and specialsed solution to help stop abuse of your website.",
     "homeUrl": "https://www.stopforumspam.com/",
@@ -14903,5 +14903,57 @@
     "syntaxId": 2,
     "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://www.stopforumspam.com/downloads/toxic_domains_whole.txt"
+  },
+  {
+    "id": 1301,
+    "description": "This aim to block non-formal hosts that serve all Facebook contents and resources from alternative \"Free Basics\" servers that it happen when you're using on mobile data over the carrier that collaborate with Facebook to have THAT service! Note this is an old version that seems to have a lots of offline domains but keep it for check with dead-hosts, or if you're not sure because most subdomains and CDNs of \"Facebook Zero\" seems to be accessed when you're using mobile data only.",
+    "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/hosts/readme.md",
+    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?q=label%3A%22Hosts+File%22",
+    "licenseId": 13,
+    "name": "Facebook Zero Hosts Block (Test List)",
+    "publishedDate": "2018-12-25T08:55:57",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/test/hosts_facebook0.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/test/hosts_facebook0.txt"
+  },
+  {
+    "id": 1302,
+    "description": "A custom hosts list that aim to re-block whitelisted domains but seems not trusted by self opinion, this not recommend for general use and company setup.",
+    "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/hosts/readme.md",
+    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?q=label%3A%22Hosts+File%22",
+    "licenseId": 13,
+    "name": "kowith337's Custom leftover hosts",
+    "publishedDate": "2018-02-12T06:10:24",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_leftover.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/hosts_leftover.txt"
+  },
+  {
+    "id": 1303,
+    "description": "Collections of custom filters (mostly about DOM elements) that not yet categorised or not fit to any topics of the creator's repo yet.",
+    "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/filterlist/other/readme.md",
+    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
+    "licenseId": 13,
+    "name": "kowith337's Miscellaneous Annoyance",
+    "publishedDate": "2018-09-27T14:26:13",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/other/MiscAnnoynace.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/other/MiscAnnoynace.txt"
+  },
+  {
+    "id": 1304,
+    "description": "Bring back the \"Square\" layout (similar to Windows 8's metro) because circles and material design is too mainstream.",
+    "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/filterlist/ubo-css/readme.md",
+    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
+    "licenseId": 13,
+    "name": "iHateCircles",
+    "publishedDate": "2018-10-18T14:19:38",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/other/MiscAnnoynace.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/other/MiscAnnoynace.txt"
   }
 ]
