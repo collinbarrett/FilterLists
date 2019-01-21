@@ -15950,5 +15950,123 @@
     "syntaxId": 8,
     "updatedDate": "2019-01-15T03:00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/recreation/wellness/urls"
+},
+  {
+    "id": 1409,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Redirector Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/redirector",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/redirector/domains"
+  },  {
+    "id": 1410,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Redirector Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/redirector",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/redirector/urls"
+},
+  {
+    "id": 1411,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Religion Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/religion",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/religion/domains"
+  },  {
+    "id": 1412,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Religion Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/religion",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/religion/urls"
+  }
+  
+  
+  ,
+  {
+    "id": 1413,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Remotecontrol Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/remotecontrol",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/remotecontrol/domains"
+  },  {
+    "id": 1414,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Remotecontrol Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/remotecontrol",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/remotecontrol/urls"
+  },
+  {
+    "id": 1415,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Ringtones Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/ringtones",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/ringtones/domains"
+  },  {
+    "id": 1416,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Ringtones Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/ringtones",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/ringtones/urls"
+  }
+  ,
+  {
+    "id": 1417,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Science Astronomy Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/science/astronomy",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/science/astronomy/domains"
+  },  {
+    "id": 1418,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Science Astronomy Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/science/astronomy",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/science/astronomy/urls"
+  },
+  {
+    "id": 1419,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Science Chemistry Domains",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/science/chemistry",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/science/chemistry/domains"
+  },  {
+    "id": 1420,
+    "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
+    "homeUrl": "http://www.shallalist.de/",
+    "name": "Shalla List Science Chemistry Urls",
+    "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/science/chemistry",
+    "syntaxId": 8,
+    "updatedDate": "2019-01-15T03:00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/science/chemistry/urls"
   }
 ]
