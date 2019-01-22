@@ -6962,5 +6962,53 @@
   {
     "filterListId": 1446,
     "tagId": 3
+  },
+  {
+    "filterListId": 1447,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1447,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1448,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1448,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1449,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1449,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1450,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1450,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1451,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1451,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1452,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1452,
+    "tagId": 3
   }
 ]
