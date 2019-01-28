@@ -1,17 +1,28 @@
 trigger:
-  - docker-devops
-
+    - docker-devops
+resources:
+    -
+        repo: self
+        clean: true
 pool:
-  vmImage: "Ubuntu-16.04"
-
-variables:
-  buildConfiguration: "Release"
-  imageName: "FilterLists:$(Build.BuildId)"
-
+    vmImage: 'Hosted Ubuntu 1604'
 steps:
-  - script: |
-      docker-compose build
-      docker login -u $(dockerId) -p $pswd
-      docker-compose push --ignore-push-failures
-    env:
-      pswd: $(dockerPassword)
+    -
+        task: DockerCompose@0
+        displayName: build
+        inputs:
+            containerregistrytype: 'Container Registry'
+            dockerRegistryEndpoint: 'Docker Hub - collinbarrett'
+            dockerComposeFile: docker-compose.yml
+            dockerComposeCommand: build
+    -
+        task: DockerCompose@0
+        displayName: push
+        inputs:
+            containerregistrytype: 'Container Registry'
+            dockerRegistryEndpoint: 'Docker Hub - collinbarrett'
+            dockerComposeFile: docker-compose.yml
+            dockerComposeCommand: 'push --ignore-push-failures'
+    -
+        task: PublishBuildArtifacts@1
+        displayName: publish
