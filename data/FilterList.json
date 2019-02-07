@@ -15022,7 +15022,7 @@
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
     "homeUrl": "http://www.shallalist.de/",
     "licenseId": 5,
-    "name": "Shalla List Aggressive Urls",
+    "name": "Shalla List Alcohol Urls",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/alcohol",
     "syntaxId": 8,
     "updatedDate": "2019-01-15T03:00:00",
