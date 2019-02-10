@@ -214,5 +214,13 @@
   {
     "softwareId": 23,
     "syntaxId": 20
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 21
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 21
   }
 ]
