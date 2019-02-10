@@ -6272,7 +6272,8 @@
     "publishedDate": "2017-05-06T16:37:22",
     "syntaxId": 2,
     "updatedDate": "2019-01-03T04:47:29",
-    "viewUrl": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list"
+    "viewUrl": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Chad-Mayfield-Porn-Blocklist-Light.txt"
   },
   {
     "id": 526,
@@ -6285,7 +6286,8 @@
     "publishedDate": "2017-05-06T16:37:22",
     "syntaxId": 2,
     "updatedDate": "2019-01-03T04:47:29",
-    "viewUrl": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list"
+    "viewUrl": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Chad-Mayfield-Porn-Blocklist-Heavy.txt"
   },
   {
     "id": 527,
@@ -9206,7 +9208,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=91",
     "homeUrl": "https://easylist.to/",
     "licenseId": 6,
-    "name": "Liste FR",
+    "name": "Liste FR (TPL)",
     "syntaxId": 10,
     "updatedDate": "2018-12-17T04:37:11",
     "viewUrl": "https://easylist-msie.adblockplus.org/liste_fr.tpl"
@@ -10338,7 +10340,7 @@
     "licenseId": 5,
     "name": "Complete Mochi Filter",
     "publishedDate": "2018-02-16T23:42:21",
-    "syntaxId": 4,
+    "syntaxId": 21,
     "updatedDate": "2019-01-14T15:03:10",
     "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/all.txt"
   },
@@ -13074,28 +13076,6 @@
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/CAMELEON-Hosts.txt"
   },
   {
-    "id": 1131,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Chad Mayfield Porn Blocklist Heavy (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2019-01-04T00:43:49",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Chad-Mayfield-Porn-Blocklist-Heavy.txt"
-  },
-  {
-    "id": 1132,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Chad Mayfield Porn Blocklist Light (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2018-05-28T14:02:55",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Chad-Mayfield-Porn-Blocklist-Light.txt"
-  },
-  {
     "id": 1133,
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
@@ -13107,37 +13087,15 @@
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/CryptoWall-Ransomware-C2-Domain-blocklist.txt"
   },
   {
-    "id": 1134,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "DNS BH Free Web Hosts (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2018-05-28T14:02:55",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/DNS-BH-Free-Web-Hosts.txt"
-  },
-  {
     "id": 1135,
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
     "licenseId": 14,
-    "name": "DNS BH Malware Domains (Domains)",
+    "name": "DNS-BH Malware Domains (Domains)",
     "publishedDate": "2017-09-02T01:07:36",
     "syntaxId": 2,
     "updatedDate": "2019-01-11T00:46:31",
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/DNS-BH-Malware-Domains.txt"
-  },
-  {
-    "id": 1136,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Dan Pollock's Hosts (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2018-07-16T00:38:05",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Dan-Pollocks-Hosts.txt"
   },
   {
     "id": 1139,
@@ -13369,17 +13327,6 @@
     "syntaxId": 2,
     "updatedDate": "2018-05-28T14:02:55",
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/JapaneseSiteAdblockFilterver2.txt"
-  },
-  {
-    "id": 1163,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "JoeWein (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2019-01-17T00:41:59",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/JoeWein.txt"
   },
   {
     "id": 1165,
@@ -13688,28 +13635,6 @@
     "syntaxId": 2,
     "updatedDate": "2018-05-28T14:02:55",
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Spam-Assassin-Bill-Stearns.txt"
-  },
-  {
-    "id": 1200,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Spam404 Domain Blacklist (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2018-05-28T14:02:55",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Spam404-Domain-Blacklist.txt"
-  },
-  {
-    "id": 1201,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Spam404 (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2018-05-28T14:02:55",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Spam404.txt"
   },
   {
     "id": 1202,
