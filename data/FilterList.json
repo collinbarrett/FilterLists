@@ -4801,7 +4801,8 @@
     "syntaxId": 2,
     "updatedDate": "2018-10-10T21:17:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/List%20for%20Chrome%20Personal%20Blocklist",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/List%20for%20Chrome%20Personal%20Blocklist"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/List%20for%20Chrome%20Personal%20Blocklist",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/List%20for%20Chrome%20Personal%20Blocklist"
   },
   {
     "id": 390,
