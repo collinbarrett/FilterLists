@@ -86,5 +86,9 @@
   {
     "id": 20,
     "name": "dnsmasq domains list"
+  },
+  {
+    "id": 21,
+    "name": "uBlock Origin !#include-tag compilation"
   }
 ]
