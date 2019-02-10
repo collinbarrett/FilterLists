@@ -4787,7 +4787,7 @@
   },
   {
     "id": 389,
-    "description": "Here's how this list works. This is a categorised list of URLs that clot up Google search results. The list is designed for use with Google Hit Hider by Domain (and its Import function) for Google Search and Google Chrome users, in such a way that it removes search results for the URLs from your Google searches. If any other URL-based search-result-blockers for other search engines (incl. for Google Image Search) and browsers exist out there, feel free to tell me about them. The list is VERY subjective, so quite a few of you may NOT want to block the results for ALL of these URLs. In that case, simply pick whichever ones from this buffet that you want to block, and paste them into Google Hit Hider by Domain. While this list is technically possible to add to adblocker tools, it'd be a very bad idea to do so, since you wouldn't have any control over which URLs you'll be able to block outright or not.",
+    "description": "Here's how this list works. This is a categorised list of URLs that clot up Google search results. The list is designed for use with Google Hit Hider by Domain (and its Import function), in such a way that it removes search results for the URLs from your searches. The list is VERY subjective, so quite a few of you may NOT want to block the results for ALL of these URLs. In that case, simply pick whichever ones from this buffet that you want to block, and paste them into Google Hit Hider by Domain. While this list is technically possible to add to adblocker tools, it'd be a very bad idea to do so, since you wouldn't have any control over which URLs you'll be able to block outright or not.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
@@ -4954,15 +4954,6 @@
     "syntaxId": 1,
     "updatedDate": "2019-01-03T03:59:50",
     "viewUrl": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt"
-  },
-  {
-    "id": 402,
-    "homeUrl": "https://startshop.no/",
-    "licenseId": 5,
-    "name": "Startshop ABP Filters",
-    "syntaxId": 3,
-    "updatedDate": "2015-11-18T00:00:00",
-    "viewUrl": "https://startshop.no/filter/abp"
   },
   {
     "id": 403,
@@ -9908,7 +9899,7 @@
     "licenseId": 10,
     "name": "YouTube: Yet Even More Pure Video Experience",
     "publishedDate": "2018-10-12T18:43:20",
-    "syntaxId": 4,
+    "syntaxId": 21,
     "updatedDate": "2018-10-12T18:43:20",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeYetEvenMorePureVideoExperience.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/YouTubeYetEvenMorePureVideoExperience.txt"
@@ -9924,26 +9915,10 @@
     "licenseId": 10,
     "name": "Dandelion Sprout's Very Thorough Website Cleaner",
     "publishedDate": "2018-10-12T18:49:52",
-    "syntaxId": 4,
+    "syntaxId": 21,
     "updatedDate": "2019-01-04T15:37:06",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/VeryThoroughWebsiteCleaner.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/VeryThoroughWebsiteCleaner.txt"
-  },
-  {
-    "id": 854,
-    "description": "Evidon is a platform that helps websites display GDPR notifications for European users. However, their displaying does temporarily break some elements on some sites... and can even break them outright if using certain adblock lists that prevent cookie notifications. The problem is believed to be even more frequent in non-EU EEC countries like Norway. So if you find yourself frustrated by the breakage, this list is for you.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EvidonUnbreaker.txt",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 10,
-    "name": "Evidon Unbreaker",
-    "publishedDate": "2018-10-21T09:57:28",
-    "syntaxId": 3,
-    "updatedDate": "2018-10-21T09:57:28",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EvidonUnbreaker.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/EvidonUnbreaker.txt"
   },
   {
     "id": 855,
