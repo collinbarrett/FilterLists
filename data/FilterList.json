@@ -16590,16 +16590,18 @@
     "syntaxId": 8,
     "updatedDate": "2019-01-15T03:00:00",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/webtv/urls"
-  }
-    "id": 1452,
+  },
+  {
+    "id": 1453,
     "description": "The SteamScamSites domains list, but without comments or dead/down domains ! A lighter version, called the Ashes version.",
     "descriptionSourceUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsites/blob/master/README.md",
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://poorpocketsmcnewhold.github.io/SteamScamSites",
-    "issuesUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsites/issues",
+    "issuesUrl": "[https://github.com/PoorPocketsMcNewHold/steamscamsites/issues](https://github.com/PoorPocketsMcNewHold/steamscamsites/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)",
     "licenseId": 14,
     "name": "SteamScamSites Ashes version",
     "syntaxId": 2,
-    "publishedDate": "2019-02-09T01:14:01",
+    "updatedDate": "2019-01-15T03:00:00",
     "viewUrl": "https://raw.githubusercontent.com/PoorPocketsMcNewHold/SteamScamSites/master/steamscamsitesashes"
+}
 ]
