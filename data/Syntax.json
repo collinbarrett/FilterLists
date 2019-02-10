@@ -89,7 +89,7 @@
   },
   {
     "id": 21,
-    "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name"
+    "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name",
     "name": "uBlock Origin !#include-tag compilation"
   }
 ]
