@@ -250,7 +250,8 @@
     "syntaxId": 3,
     "updatedDate": "2019-01-11T20:22:07",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianList.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianList.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianList.txt"
   },
   {
     "id": 21,
@@ -4029,7 +4030,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-09-30T03:39:52",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/stayingonbrowser/Staying%20On%20The%20Phone%20Browser"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/stayingonbrowser/Staying%20On%20The%20Phone%20Browser",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser"
   },
   {
     "id": 329,
@@ -4770,7 +4772,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-09-30T08:52:54",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Username%20Hider%20for%20Compilation%20Creators.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Username%20Hider%20for%20Compilation%20Creators.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Username%20Hider%20for%20Compilation%20Creators.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Username%20Hider%20for%20Compilation%20Creators.txt"
   },
   {
     "id": 388,
@@ -4783,11 +4786,12 @@
     "name": "Dandelion Sprout's Norwegian Filters for Tidier Websites (Internet Explorer)",
     "syntaxId": 10,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl"
   },
   {
     "id": 389,
-    "description": "Here's how this list works. This is a categorised list of URLs that clot up Google search results. The list is designed for use with Google Hit Hider by Domain (and its Import function) for Google Search and Google Chrome users, in such a way that it removes search results for the URLs from your Google searches. If any other URL-based search-result-blockers for other search engines (incl. for Google Image Search) and browsers exist out there, feel free to tell me about them. The list is VERY subjective, so quite a few of you may NOT want to block the results for ALL of these URLs. In that case, simply pick whichever ones from this buffet that you want to block, and paste them into Google Hit Hider by Domain. While this list is technically possible to add to adblocker tools, it'd be a very bad idea to do so, since you wouldn't have any control over which URLs you'll be able to block outright or not.",
+    "description": "Here's how this list works. This is a categorised list of URLs that clot up Google search results. The list is designed for use with Google Hit Hider by Domain (and its Import function), in such a way that it removes search results for the URLs from your searches. The list is VERY subjective, so quite a few of you may NOT want to block the results for ALL of these URLs. In that case, simply pick whichever ones from this buffet that you want to block, and paste them into Google Hit Hider by Domain. While this list is technically possible to add to adblocker tools, it'd be a very bad idea to do so, since you wouldn't have any control over which URLs you'll be able to block outright or not.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
@@ -4797,7 +4801,8 @@
     "syntaxId": 2,
     "updatedDate": "2018-10-10T21:17:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/List%20for%20Chrome%20Personal%20Blocklist",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/List%20for%20Chrome%20Personal%20Blocklist"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/List%20for%20Chrome%20Personal%20Blocklist",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/List%20for%20Chrome%20Personal%20Blocklist"
   },
   {
     "id": 390,
@@ -4826,7 +4831,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-12-04T21:41:01",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/IHateOverpromotedGames.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/IHateOverpromotedGames.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/IHateOverpromotedGames.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/IHateOverpromotedGames.txt"
   },
   {
     "id": 392,
@@ -4841,7 +4847,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-12-31T06:16:23",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/BrowseWebsitesWithoutLoggingIn.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/BrowseWebsitesWithoutLoggingIn.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/BrowseWebsitesWithoutLoggingIn.txt"
   },
   {
     "id": 393,
@@ -4856,7 +4863,8 @@
     "syntaxId": 11,
     "updatedDate": "2018-10-26T14:58:08",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json"
   },
   {
     "id": 394,
@@ -4954,15 +4962,6 @@
     "syntaxId": 1,
     "updatedDate": "2019-01-03T03:59:50",
     "viewUrl": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt"
-  },
-  {
-    "id": 402,
-    "homeUrl": "https://startshop.no/",
-    "licenseId": 5,
-    "name": "Startshop ABP Filters",
-    "syntaxId": 3,
-    "updatedDate": "2015-11-18T00:00:00",
-    "viewUrl": "https://startshop.no/filter/abp"
   },
   {
     "id": 403,
@@ -5201,7 +5200,8 @@
     "syntaxId": 1,
     "updatedDate": "2018-09-30T15:15:50",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/AdawayHosts"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/AdawayHosts",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts"
   },
   {
     "id": 431,
@@ -5215,7 +5215,8 @@
     "syntaxId": 4,
     "updatedDate": "2018-12-04T14:41:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Website%20Stretcher.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout%27s%20Website%20Stretcher.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout%27s%20Website%20Stretcher.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout%27s%20Website%20Stretcher.txt"
   },
   {
     "id": 432,
@@ -5229,7 +5230,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-12-16T01:28:09",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-F%D1%96%D0%9C%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-F%D1%96%D0%9C%20List.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-F%D1%96%D0%9C%20List.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-F%D1%96%D0%9C%20List.txt"
   },
   {
     "id": 433,
@@ -5243,7 +5245,8 @@
     "syntaxId": 4,
     "updatedDate": "2018-12-16T01:34:13",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-IMDB%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-IMDB%20List.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-IMDB%20List.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-IMDB%20List.txt"
   },
   {
     "id": 434,
@@ -5258,7 +5261,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-12-19T09:39:03",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/StopAutoplayOnYouTube.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/StopAutoplayOnYouTube.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/StopAutoplayOnYouTube.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/StopAutoplayOnYouTube.txt"
   },
   {
     "id": 435,
@@ -6024,7 +6028,8 @@
     "name": "Adblock List Template (Beginner)",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt"
   },
   {
     "id": 505,
@@ -6037,7 +6042,8 @@
     "name": "Adblock List Template (Novice)",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt"
   },
   {
     "id": 506,
@@ -6266,7 +6272,8 @@
     "publishedDate": "2017-05-06T16:37:22",
     "syntaxId": 2,
     "updatedDate": "2019-01-03T04:47:29",
-    "viewUrl": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list"
+    "viewUrl": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Chad-Mayfield-Porn-Blocklist-Light.txt"
   },
   {
     "id": 526,
@@ -6279,7 +6286,8 @@
     "publishedDate": "2017-05-06T16:37:22",
     "syntaxId": 2,
     "updatedDate": "2019-01-03T04:47:29",
-    "viewUrl": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list"
+    "viewUrl": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Chad-Mayfield-Porn-Blocklist-Heavy.txt"
   },
   {
     "id": 527,
@@ -7158,7 +7166,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-12-09T20:07:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Elsagate%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-Elsagate%20List.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-Elsagate%20List.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-Elsagate%20List.txt"
   },
   {
     "id": 604,
@@ -7840,7 +7849,8 @@
     "syntaxId": 18,
     "updatedDate": "2018-09-30T04:23:50",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules"
   },
   {
     "id": 671,
@@ -7954,7 +7964,8 @@
     "syntaxId": 2,
     "updatedDate": "2018-09-30T04:33:48",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt"
   },
   {
     "id": 681,
@@ -9197,7 +9208,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=91",
     "homeUrl": "https://easylist.to/",
     "licenseId": 6,
-    "name": "Liste FR",
+    "name": "Liste FR (TPL)",
     "syntaxId": 10,
     "updatedDate": "2018-12-17T04:37:11",
     "viewUrl": "https://easylist-msie.adblockplus.org/liste_fr.tpl"
@@ -9440,7 +9451,8 @@
     "syntaxId": 4,
     "updatedDate": "2019-01-14T00:42:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt"
   },
   {
     "id": 817,
@@ -9480,7 +9492,8 @@
     "syntaxId": 3,
     "updatedDate": "2019-01-10T01:23:26",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeEvenMorePureVideoExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/YouTubeEvenMorePureVideoExperience.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/YouTubeEvenMorePureVideoExperience.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/YouTubeEvenMorePureVideoExperience.txt"
   },
   {
     "id": 820,
@@ -9588,7 +9601,7 @@
     "publishedDate": "2017-08-10T04:05:10",
     "syntaxId": 3,
     "updatedDate": "2019-01-06T10:44:42",
-    "viewUrl": "https://raw.githubusercontent.com/evenxzero/Raajje-AdList/master/filter"
+    "viewUrl": "https://raw.githubusercontent.com/evenxzero/Raajje-AdList/master/filter.txt"
   },
   {
     "id": 829,
@@ -9848,7 +9861,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-12-19T08:44:16",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchPureViewingExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TwitchPureViewingExperience.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TwitchPureViewingExperience.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TwitchPureViewingExperience.txt"
   },
   {
     "id": 849,
@@ -9863,7 +9877,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-11-04T02:57:03",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ListAgainstFakeOrInoptimalAdblockers.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/ListAgainstFakeOrInoptimalAdblockers.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/ListAgainstFakeOrInoptimalAdblockers.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ListAgainstFakeOrInoptimalAdblockers.txt"
   },
   {
     "id": 850,
@@ -9879,7 +9894,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-12-04T21:27:46",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAbusePorn.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAbusePorn.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAbusePorn.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAbusePorn.txt"
   },
   {
     "id": 851,
@@ -9895,7 +9911,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-12-19T08:49:15",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WikiaPureBrowsingExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/WikiaPureBrowsingExperience.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/WikiaPureBrowsingExperience.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WikiaPureBrowsingExperience.txt"
   },
   {
     "id": 852,
@@ -9908,10 +9925,11 @@
     "licenseId": 10,
     "name": "YouTube: Yet Even More Pure Video Experience",
     "publishedDate": "2018-10-12T18:43:20",
-    "syntaxId": 4,
+    "syntaxId": 21,
     "updatedDate": "2018-10-12T18:43:20",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeYetEvenMorePureVideoExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/YouTubeYetEvenMorePureVideoExperience.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/YouTubeYetEvenMorePureVideoExperience.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/YouTubeYetEvenMorePureVideoExperience.txt"
   },
   {
     "id": 853,
@@ -9924,26 +9942,11 @@
     "licenseId": 10,
     "name": "Dandelion Sprout's Very Thorough Website Cleaner",
     "publishedDate": "2018-10-12T18:49:52",
-    "syntaxId": 4,
+    "syntaxId": 21,
     "updatedDate": "2019-01-04T15:37:06",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/VeryThoroughWebsiteCleaner.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/VeryThoroughWebsiteCleaner.txt"
-  },
-  {
-    "id": 854,
-    "description": "Evidon is a platform that helps websites display GDPR notifications for European users. However, their displaying does temporarily break some elements on some sites... and can even break them outright if using certain adblock lists that prevent cookie notifications. The problem is believed to be even more frequent in non-EU EEC countries like Norway. So if you find yourself frustrated by the breakage, this list is for you.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EvidonUnbreaker.txt",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 10,
-    "name": "Evidon Unbreaker",
-    "publishedDate": "2018-10-21T09:57:28",
-    "syntaxId": 3,
-    "updatedDate": "2018-10-21T09:57:28",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EvidonUnbreaker.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/EvidonUnbreaker.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/VeryThoroughWebsiteCleaner.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/VeryThoroughWebsiteCleaner.txt"
   },
   {
     "id": 855,
@@ -9957,7 +9960,8 @@
     "name": "MeWe Pink Theme",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MeWe%20Pink%20Theme.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/MeWe%20Pink%20Theme.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/MeWe%20Pink%20Theme.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/MeWe%20Pink%20Theme.txt"
   },
   {
     "id": 856,
@@ -9972,7 +9976,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-12-09T15:53:09",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Pro-LED%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Pro-LED%20List.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Pro-LED%20List.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Pro-LED%20List.txt"
   },
   {
     "id": 857,
@@ -9987,7 +9992,8 @@
     "syntaxId": 11,
     "updatedDate": "2019-01-14T00:32:11",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json"
   },
   {
     "id": 858,
@@ -10016,7 +10022,8 @@
     "syntaxId": 3,
     "updatedDate": "2019-01-14T04:57:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Futa%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-Futa%20List.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-Futa%20List.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-Futa%20List.txt"
   },
   {
     "id": 860,
@@ -10071,7 +10078,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-12-09T21:19:09",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Christmas%20carols'%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Christmas%20carols'%20List.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Christmas%20carols'%20List.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Christmas%20carols'%20List.txt"
   },
   {
     "id": 864,
@@ -10332,7 +10340,7 @@
     "licenseId": 5,
     "name": "Complete Mochi Filter",
     "publishedDate": "2018-02-16T23:42:21",
-    "syntaxId": 4,
+    "syntaxId": 21,
     "updatedDate": "2019-01-14T15:03:10",
     "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/all.txt"
   },
@@ -13068,28 +13076,6 @@
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/CAMELEON-Hosts.txt"
   },
   {
-    "id": 1131,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Chad Mayfield Porn Blocklist Heavy (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2019-01-04T00:43:49",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Chad-Mayfield-Porn-Blocklist-Heavy.txt"
-  },
-  {
-    "id": 1132,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Chad Mayfield Porn Blocklist Light (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2018-05-28T14:02:55",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Chad-Mayfield-Porn-Blocklist-Light.txt"
-  },
-  {
     "id": 1133,
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
@@ -13101,37 +13087,15 @@
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/CryptoWall-Ransomware-C2-Domain-blocklist.txt"
   },
   {
-    "id": 1134,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "DNS BH Free Web Hosts (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2018-05-28T14:02:55",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/DNS-BH-Free-Web-Hosts.txt"
-  },
-  {
     "id": 1135,
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
     "licenseId": 14,
-    "name": "DNS BH Malware Domains (Domains)",
+    "name": "DNS-BH Malware Domains (Domains)",
     "publishedDate": "2017-09-02T01:07:36",
     "syntaxId": 2,
     "updatedDate": "2019-01-11T00:46:31",
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/DNS-BH-Malware-Domains.txt"
-  },
-  {
-    "id": 1136,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Dan Pollock's Hosts (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2018-07-16T00:38:05",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Dan-Pollocks-Hosts.txt"
   },
   {
     "id": 1139,
@@ -13363,17 +13327,6 @@
     "syntaxId": 2,
     "updatedDate": "2018-05-28T14:02:55",
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/JapaneseSiteAdblockFilterver2.txt"
-  },
-  {
-    "id": 1163,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "JoeWein (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2019-01-17T00:41:59",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/JoeWein.txt"
   },
   {
     "id": 1165,
@@ -13682,28 +13635,6 @@
     "syntaxId": 2,
     "updatedDate": "2018-05-28T14:02:55",
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Spam-Assassin-Bill-Stearns.txt"
-  },
-  {
-    "id": 1200,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Spam404 Domain Blacklist (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2018-05-28T14:02:55",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Spam404-Domain-Blacklist.txt"
-  },
-  {
-    "id": 1201,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Spam404 (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2018-05-28T14:02:55",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Spam404.txt"
   },
   {
     "id": 1202,
@@ -14201,7 +14132,8 @@
     "publishedDate": "2018-02-12T00:00:00",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Notification%20pre-prompt%20banners'%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Notification%20pre-prompt%20banners'%20List.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Notification%20pre-prompt%20banners'%20List.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Notification%20pre-prompt%20banners'%20List.txt"
   },
   {
     "id": 1247,
@@ -14216,7 +14148,8 @@
     "syntaxId": 3,
     "updatedDate": "2018-12-14T04:43:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Battle%20Royale'%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Battle%20Royale'%20List.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Battle%20Royale'%20List.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Battle%20Royale'%20List.txt"
   },
   {
     "id": 1248,
@@ -14738,7 +14671,8 @@
     "syntaxId": 3,
     "updatedDate": "2019-01-06T02:04:25",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TechnologicalDiversity.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TechnologicalDiversity.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TechnologicalDiversity.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TechnologicalDiversity.txt"
   },
   {
     "id": 1288,
@@ -14767,11 +14701,12 @@
     "syntaxId": 3,
     "updatedDate": "2019-01-04T15:35:57",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/KnowYourMemePureBrowsingExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/KnowYourMemePureBrowsingExperience.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/KnowYourMemePureBrowsingExperience.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/KnowYourMemePureBrowsingExperience.txt"
   },
   {
     "id": 1290,
-    "description": "Most anti-malware lists are pretty big and can cover a 5- or 6-digit amount of specific domains. But my list hereby claims to remove more than 25% of all known malware sites with just a 2-digit amount of entries. This is mostly done by blocking top-level domains that have become devastatingly abused by spammers, usually because they allowed for free and uncontrolled domain registrations.",
+    "description": "Most anti-malware lists are pretty big and can cover a 5- or 6-digit amount of specific domains. But my list hereby claims to remove more than 25% of all known malware sites with just a 2-digit amount of entries. This is mostly done by blocking top-level domains that have become devastatingly abused by spammers, usually because they allowed for free and uncontrolled domain registrations. There's also additional categories that cover unusual malware and phishing domains that no other lists seem to cover.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
@@ -14782,7 +14717,8 @@
     "publishedDate": "2018-01-04T00:00:00",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout's%20Anti-Malware%20List.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout's%20Anti-Malware%20List.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt"
   },
   {
     "id": 1291,
@@ -14797,7 +14733,8 @@
     "publishedDate": "2018-01-10T00:00:00",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Twitter%20De-Politificator.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Twitter%20De-Politificator.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Twitter%20De-Politificator.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Twitter%20De-Politificator.txt"
   },
   {
     "id": 1292,
@@ -14812,7 +14749,8 @@
     "publishedDate": "2018-01-10T00:00:00",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt"
   },
   {
     "id": 1293,
@@ -14826,7 +14764,8 @@
     "publishedDate": "2018-01-10T00:00:00",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt"
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt"
   },
   {
     "id": 1294,
@@ -16592,7 +16531,66 @@
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/webtv/urls"
   },
   {
-    "id": 1457,
+    "id": 1453,
+    "description": "This compilation list was made to help resolve two of the most frequent tech complaints on r/assholedesign: Websites that require logging in to browse them, and Android apps with fake notification counters. To that effect, this list embeds two of my other lists that covers either one of those purposes. This list requires using Nano Adblocker or uBlock Origin, the latter of which is also available for Firefox on Android phones, as they're the only adblockers that have full support for list embeddings. Now let's see how many months it'll take before anyone on that subreddit notices the existence of this list...",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ListForRAssholeDesign.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Dandelion Sprout's List for the Benefit of r/assholedesign",
+    "syntaxId": 21,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ListForRAssholeDesign.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/ListForRAssholeDesign.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ListForRAssholeDesign.txt"
+  },
+  {
+    "id": 1454,
+    "description": "This list was initially made as a kind gesture to https://github.com/theel0ja, who has been using, recommending, and promoting the lists above. This Nano- and uBO-exclusive list removes all sorts of annoying banners that few other lists take care of, including uncloseable overlays, banners that advertise major browsers, and certain banners that ask if you want to be asked to receive bad browser notifications (It makes sense in context).",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyingBannersAndOverlays.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Dandelion Sprout's Annoying Banners and Overlays List",
+    "syntaxId": 21,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyingBannersAndOverlays.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AnnoyingBannersAndOverlays.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AnnoyingBannersAndOverlays.txt"
+  },
+  {
+    "id": 1455,
+    "description": "If Fanboy and AdGuard can make overly broad and imperfect 'Annoyances' lists and get included in uBlock Origin without breaking a sweat, then so can I... hopefully...",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Dandelion Sprout's Annoyances List",
+    "syntaxId": 21,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AnnoyancesList",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AnnoyancesList"
+  },
+  {
+    "id": 1456,
+    "description": "This list aims to achieve pretty broad (if not overly broad) coverage of social sharing buttons, with perhaps 1/50th~1/100th as many entries as what the biggest anti-'social button' lists out there have.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/SocialShareList.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Dandelion Sprout's Lightweight Anti-'Social share' List",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/SocialShareList.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/SocialShareList.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/SocialShareList.txt"
+  },
+      "id": 1457,
     "description": "The SteamScamSites domains list, but without comments or dead/down domains ! A lighter version, called the Ashes version.",
     "descriptionSourceUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsites/blob/master/README.md",
     "emailAddress": "poorpocketsmcnewhold@pm.me",
@@ -16603,5 +16601,5 @@
     "syntaxId": 2,
     "updatedDate": "2019-01-15T03:00:00",
     "viewUrl": "https://raw.githubusercontent.com/PoorPocketsMcNewHold/SteamScamSites/master/steamscamsitesashes"
-}
+  },
 ]
