@@ -14645,16 +14645,17 @@
   },
   {
     "id": 1286,
-    "description": "This is a filter list repo, based on the wishihab/steamscamsite scam list https://github.com/wishihab/steamscamsite with a couple of personally added found scam websites.",
-    "descriptionSourceUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsite/blob/master/README.md",
-    "homeUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsite",
-    "issuesUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsite/issues",
-    "licenseId": 5,
-    "name": "SteamScamSite",
+    "description": "A phishing domains list aiming at blocking scam domains from Steam Store, CS:GO, Dota 2, Team Fortress 2, PUBG and other related scams related to it, based on the wishihab/steamscamsite scam list https://github.com/wishihab/steamscamsite.",
+    "descriptionSourceUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsites/blob/master/README.md",
+    "emailAddress": "poorpocketsmcnewhold@pm.me",
+    "homeUrl": "https://poorpocketsmcnewhold.github.io/SteamScamSites",
+    "issuesUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsites/issues",
+    "licenseId": 14,
+    "name": "SteamScamSites",
     "publishedDate": "2018-08-31T09:11:52",
     "syntaxId": 2,
     "updatedDate": "2019-01-06T16:23:43",
-    "viewUrl": "https://raw.githubusercontent.com/PoorPocketsMcNewHold/steamscamsite/master/steamscamsite.txt"
+    "viewUrl": "https://raw.githubusercontent.com/PoorPocketsMcNewHold/steamscamsites/master/steamscamsite.txt"
   },
   {
     "id": 1287,
@@ -16504,7 +16505,7 @@
     "name": "Shalla List Webradio Urls",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/webradio",
     "syntaxId": 8,
-    "updatedDate": "2019-01-15T03:00:00",
+    "publishedDate": "2019-02-09T01:14:01",
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/webradio/urls"
   },
   {
@@ -16589,4 +16590,17 @@
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/SocialShareList.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/SocialShareList.txt"
   },
+  {
+    "id": 1457,
+    "description": "The SteamScamSites domains list, but without comments or dead/down domains ! A lighter version, called the Ashes version.",
+    "descriptionSourceUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsites/blob/master/README.md",
+    "emailAddress": "poorpocketsmcnewhold@pm.me",
+    "homeUrl": "https://poorpocketsmcnewhold.github.io/SteamScamSites",
+    "issuesUrl": "[https://github.com/PoorPocketsMcNewHold/steamscamsites/issues](https://github.com/PoorPocketsMcNewHold/steamscamsites/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)",
+    "licenseId": 14,
+    "name": "SteamScamSites Ashes version",
+    "syntaxId": 2,
+    "updatedDate": "2019-01-15T03:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/PoorPocketsMcNewHold/SteamScamSites/master/steamscamsitesashes"
+  }
 ]
