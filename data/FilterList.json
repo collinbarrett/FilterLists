@@ -16590,6 +16590,7 @@
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/SocialShareList.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/SocialShareList.txt"
   },
+  {
     "id": 1457,
     "description": "The SteamScamSites domains list, but without comments or dead/down domains ! A lighter version, called the Ashes version.",
     "descriptionSourceUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsites/blob/master/README.md",
@@ -16601,5 +16602,4 @@
     "syntaxId": 2,
     "updatedDate": "2019-01-15T03:00:00",
     "viewUrl": "https://raw.githubusercontent.com/PoorPocketsMcNewHold/SteamScamSites/master/steamscamsitesashes"
-  },
-]
+  }
