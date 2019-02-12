@@ -16615,5 +16615,16 @@
     "syntaxId": 1,
     "updatedDate": "2019-01-15T03:00:00",
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/blacklist/master/facebook.txt"
+  },
+  {
+    "id": 1159,
+    "homeUrl": "https://phishing.army/",
+    "description": "The Blocklist to filter Phishing.",
+    "name": "Phishing Army",
+    "publishedDate": "2017-09-05T08:14:36",
+    "syntaxId": 2,
+	"licenseId": 13,
+    "updatedDate": "2019-01-15T03:00:00",
+    "viewUrl": "https://phishing.army/download/phishing_army_blocklist_extended.txt"
   }
 ]
