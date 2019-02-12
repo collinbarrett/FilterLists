@@ -16637,5 +16637,16 @@
 	"licenseId": 2,
     "updatedDate": "2019-01-15T03:00:00",
     "viewUrl": "https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/url-lists.txt"
+  },
+  {
+    "id": 1161,
+    "homeUrl": "https://phishing.horus.com.tr/",
+    "description": "List of toxic links for Turkey.",
+    "name": "TR-PhishingList IP List",
+    "publishedDate": "2017-09-05T08:14:36",
+    "syntaxId": 9,
+	"licenseId": 2,
+    "updatedDate": "2019-01-15T03:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/ip-lists.txt"
   }
 ]
