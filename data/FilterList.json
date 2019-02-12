@@ -16602,5 +16602,18 @@
     "syntaxId": 2,
     "updatedDate": "2019-01-15T03:00:00",
     "viewUrl": "https://raw.githubusercontent.com/PoorPocketsMcNewHold/SteamScamSites/master/steamscamsitesashes"
+  },
+    {
+    "id": 1458,
+    "description": "Host file to block ads, tracking and more!",
+    "emailAddress": "anudeep@protonmail.com",
+    "homeUrl": "https://github.com/anudeepND/blacklist",
+    "issuesUrl": "https://github.com/anudeepND/blacklist/issues",
+    "licenseId": 2,
+    "name": "anudeepND facebook",
+    "publishedDate": "2017-11-25T09:12:55",
+    "syntaxId": 1,
+    "updatedDate": "2019-01-15T03:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/anudeepND/blacklist/master/facebook.txt"
   }
 ]
