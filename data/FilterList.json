@@ -16626,5 +16626,16 @@
 	"licenseId": 13,
     "updatedDate": "2019-01-15T03:00:00",
     "viewUrl": "https://phishing.army/download/phishing_army_blocklist_extended.txt"
+  },
+  {
+    "id": 1160,
+    "homeUrl": "https://phishing.horus.com.tr/",
+    "description": "List of toxic links for Turkey.",
+    "name": "TR-PhishingList URL List",
+    "publishedDate": "2017-09-05T08:14:36",
+    "syntaxId": 8,
+	"licenseId": 2,
+    "updatedDate": "2019-01-15T03:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/url-lists.txt"
   }
 ]
