@@ -226,17 +226,6 @@
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt"
   },
   {
-    "id": 23,
-    "description": "Blocks CryptoWall from payment site servers by IP address.",
-    "emailAddress": "rt-intel@abuse.ch",
-    "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
-    "licenseId": 7,
-    "name": "Ransomware Tracker CryptoWall Ransomware Payment Sites IP Blocklist",
-    "syntaxId": 9,
-    "updatedDate": "2019-02-02T08:26:09",
-    "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_PS_IPBL.txt"
-  },
-  {
     "id": 24,
     "description": "Blocks CryptoWall from payment site servers by domain.",
     "emailAddress": "rt-intel@abuse.ch",
