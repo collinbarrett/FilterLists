@@ -8955,8 +8955,7 @@
     "licenseId": 2,
     "name": "Magno's Adblock List",
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/magnobiet/adblock-plus-list/gh-pages/list.txt",
-    "viewUrlMirror1": "https://adp.magnobiet.com/list.txt"
+    "viewUrl": "https://adp.magnobiet.com/list.txt",
   },
   {
     "id": 771,
