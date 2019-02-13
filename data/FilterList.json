@@ -13466,17 +13466,6 @@
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Mitchell-Krogs-Badd-Boyz-Hosts.txt"
   },
   {
-    "id": 1177,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Mother of All ADBLOCKING (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2018-12-21T00:38:29",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Mother-of-All-ADBLOCKING.txt"
-  },
-  {
     "id": 1179,
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
