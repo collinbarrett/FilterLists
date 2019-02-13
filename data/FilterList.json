@@ -98,18 +98,6 @@
     "viewUrl": "http://malwareurls.joxeankoret.com/domains.txt"
   },
   {
-    "id": 9,
-    "description": "A full set of Malware URLs to be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves.",
-    "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
-    "emailAddress": "info@joxeankoret.com",
-    "homeUrl": "http://malwareurls.joxeankoret.com/",
-    "licenseId": 2,
-    "name": "Malware URLs",
-    "syntaxId": 3,
-    "updatedDate": "2015-07-30T00:00:00",
-    "viewUrl": "http://malwareurls.joxeankoret.com/normal.txt"
-  },
-  {
     "id": 10,
     "description": "A hosts list of domains serving malware",
     "forumUrl": "https://www.malwaredomainlist.com/forums/",
