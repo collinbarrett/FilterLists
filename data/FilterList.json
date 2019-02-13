@@ -226,28 +226,6 @@
     "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt"
   },
   {
-    "id": 23,
-    "description": "Blocks CryptoWall from payment site servers by IP address.",
-    "emailAddress": "rt-intel@abuse.ch",
-    "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
-    "licenseId": 7,
-    "name": "Ransomware Tracker CryptoWall Ransomware Payment Sites IP Blocklist",
-    "syntaxId": 9,
-    "updatedDate": "2019-02-02T08:26:09",
-    "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_PS_IPBL.txt"
-  },
-  {
-    "id": 24,
-    "description": "Blocks CryptoWall from payment site servers by domain.",
-    "emailAddress": "rt-intel@abuse.ch",
-    "homeUrl": "https://ransomwaretracker.abuse.ch/blocklist/",
-    "licenseId": 7,
-    "name": "Ransomware Tracker CryptoWall Ransomware Payment Sites Domain Blocklist",
-    "syntaxId": 2,
-    "updatedDate": "2019-02-02T08:30:10",
-    "viewUrl": "https://ransomwaretracker.abuse.ch/downloads/CW_PS_DOMBL.txt"
-  },
-  {
     "id": 25,
     "description": "Blocks CryptoWall from botnet command and control servers by URL.",
     "emailAddress": "rt-intel@abuse.ch",
@@ -10297,18 +10275,6 @@
     "syntaxId": 21,
     "updatedDate": "2019-01-14T15:03:10",
     "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/all.txt"
-  },
-  {
-    "id": 883,
-    "emailAddress": "mochifilter@yahoo.co.jp",
-    "homeUrl": "https://pokapoka.shoooter.net/",
-    "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
-    "licenseId": 5,
-    "name": "Mochi Filter Beta",
-    "publishedDate": "2018-02-08T17:13:18",
-    "syntaxId": 3,
-    "updatedDate": "2019-01-31T03:32:23",
-    "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/beta.txt"
   },
   {
     "id": 884,
