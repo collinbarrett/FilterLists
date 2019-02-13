@@ -10277,18 +10277,6 @@
     "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/all.txt"
   },
   {
-    "id": 883,
-    "emailAddress": "mochifilter@yahoo.co.jp",
-    "homeUrl": "https://pokapoka.shoooter.net/",
-    "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
-    "licenseId": 5,
-    "name": "Mochi Filter Beta",
-    "publishedDate": "2018-02-08T17:13:18",
-    "syntaxId": 3,
-    "updatedDate": "2019-01-31T03:32:23",
-    "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/beta.txt"
-  },
-  {
     "id": 884,
     "description": "Finnish adblock list",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/master/Finland_adb.txt",
