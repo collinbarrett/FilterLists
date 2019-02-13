@@ -166,20 +166,6 @@
     "viewUrl": "https://easylist-downloads.adblockplus.org/Liste_AR.txt"
   },
   {
-    "id": 15,
-    "description": "A filter list that fixes filtration errors in an alternative way due to limitations of adblockers other than AdGuard or those using Webkit content blocker API.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/unbreak.txt",
-    "homeUrl": "https://list-kr.github.io/",
-    "issuesUrl": "https://github.com/SlowMemory/List-KR/issues",
-    "licenseId": 8,
-    "name": "List-KR Unbreak",
-    "submissionUrl": "https://list-kr.github.io/form.html",
-    "syntaxId": 6,
-    "viewUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/unbreak.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/SlowMemory/List-KR/master/unbreak.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/SlowMemory/List-KR/master/unbreak.txt"
-  },
-  {
     "id": 16,
     "description": "Filter that enables removing of ads, trackers, and various scripts from websites with Korean content.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/slang1998/List-KR/master/filter.txt",
