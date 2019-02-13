@@ -7087,13 +7087,13 @@
   },
   {
     "id": 603,
-    "description": "This list aims to remove particularly disturbing content on YouTube, DailyMotion, and Vimeo that targets young children, as well as nursery rhymes, \"Finger Family\", \"Wrong Heads\", and other things that are hotbeds for extremely unproductive videos. Also supports YouTube on mobile browsers (but sadly not the apps).",
+    "description": "This list aims to remove particularly disturbing content on YouTube, DailyMotion, Vimeo, and several other video sites, that targets young children, as well as nursery rhymes, \"Finger Family\", \"Wrong Heads\", and other things that are hotbeds for extremely unproductive videos. Also supports YouTube on mobile browsers (but sadly not the apps).",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
-    "name": "Anti-Elsagate List for YouTube",
+    "name": "Anti-Elsagate List",
     "syntaxId": 3,
     "updatedDate": "2018-12-09T20:07:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Elsagate%20List.txt",
@@ -16711,5 +16711,35 @@
     "syntaxId": 1,
     "updatedDate": "2019-02-09T08:02:46",
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/blacklist/master/facebook.txt"
+  },
+  {
+    "id": 1459,
+    "description": "The alignment of the stars predict that you will use this list, in order to stop listening so much to such completely unfounded predictions anymore, and to get your eyes off the starry skies and onto your life that should be planted firmly on the ground.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAstrologyList.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-Astrology List",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAstrologyList.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAstrologyList.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAstrologyList.txt"
+  },
+  {
+    "id": 1460,
+    "description": "Most of us who are able to read this description, likely have some old relatives who get very easily confused about even the most basic of PC stuff. This list, if implemented on their PCs alongside uBlock Origin, can help you help them stay more safe from old people's tech mistakes, giving you fewer strange help requests from them as well.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ListForOldPeople.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Dandelion Sprout's List for Old People",
+    "syntaxId": 21,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ListForOldPeople.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/ListForOldPeople.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ListForOldPeople.txt"
   }
 ]
