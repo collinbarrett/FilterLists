@@ -232,18 +232,6 @@
     "maintainerId": 8
   },
   {
-    "filterListId": 7,
-    "maintainerId": 9
-  },
-  {
-    "filterListId": 8,
-    "maintainerId": 9
-  },
-  {
-    "filterListId": 9,
-    "maintainerId": 9
-  },
-  {
     "filterListId": 10,
     "maintainerId": 10
   },
@@ -482,10 +470,6 @@
   {
     "filterListId": 588,
     "maintainerId": 15
-  },
-  {
-    "filterListId": 15,
-    "maintainerId": 18
   },
   {
     "filterListId": 16,
@@ -3537,10 +3521,6 @@
   },
   {
     "filterListId": 1176,
-    "maintainerId": 109
-  },
-  {
-    "filterListId": 1177,
     "maintainerId": 109
   },
   {

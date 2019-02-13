@@ -74,42 +74,6 @@
     "viewUrlMirror2": "https://rawcdn.githack.com/mayve/private-adblock-filters/master/Adblock_List.txt"
   },
   {
-    "id": 7,
-    "description": "The Malware URLs in the 'gray area.' To be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves. The 'gray area' is an area where many malware URLs exists, but there is also a big number of false positives as the gray area is the one where only 2 or 3 pieces of evidence were discovered. The 'gray area' should not be used for blocking domains or URLs, it is published only with the aim of helping malware researchers.",
-    "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
-    "emailAddress": "info@joxeankoret.com",
-    "homeUrl": "http://malwareurls.joxeankoret.com/",
-    "licenseId": 2,
-    "name": "Malware URLs Gray Area",
-    "syntaxId": 3,
-    "updatedDate": "2015-07-30T00:00:00",
-    "viewUrl": "http://malwareurls.joxeankoret.com/grayarea.txt"
-  },
-  {
-    "id": 8,
-    "description": "The domains of Malware URLs to be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves.",
-    "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
-    "emailAddress": "info@joxeankoret.com",
-    "homeUrl": "http://malwareurls.joxeankoret.com/",
-    "licenseId": 2,
-    "name": "Malware URLs Domains",
-    "syntaxId": 2,
-    "updatedDate": "2015-07-30T00:00:00",
-    "viewUrl": "http://malwareurls.joxeankoret.com/domains.txt"
-  },
-  {
-    "id": 9,
-    "description": "A full set of Malware URLs to be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves.",
-    "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
-    "emailAddress": "info@joxeankoret.com",
-    "homeUrl": "http://malwareurls.joxeankoret.com/",
-    "licenseId": 2,
-    "name": "Malware URLs",
-    "syntaxId": 3,
-    "updatedDate": "2015-07-30T00:00:00",
-    "viewUrl": "http://malwareurls.joxeankoret.com/normal.txt"
-  },
-  {
     "id": 10,
     "description": "A hosts list of domains serving malware",
     "forumUrl": "https://www.malwaredomainlist.com/forums/",
@@ -164,20 +128,6 @@
     "syntaxId": 3,
     "updatedDate": "2019-02-02T07:48:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/Liste_AR.txt"
-  },
-  {
-    "id": 15,
-    "description": "A filter list that fixes filtration errors in an alternative way due to limitations of adblockers other than AdGuard or those using Webkit content blocker API.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/unbreak.txt",
-    "homeUrl": "https://list-kr.github.io/",
-    "issuesUrl": "https://github.com/SlowMemory/List-KR/issues",
-    "licenseId": 8,
-    "name": "List-KR Unbreak",
-    "submissionUrl": "https://list-kr.github.io/form.html",
-    "syntaxId": 6,
-    "viewUrl": "https://raw.githubusercontent.com/SlowMemory/List-KR/master/unbreak.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/SlowMemory/List-KR/master/unbreak.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/SlowMemory/List-KR/master/unbreak.txt"
   },
   {
     "id": 16,
@@ -8969,8 +8919,7 @@
     "licenseId": 2,
     "name": "Magno's Adblock List",
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/magnobiet/adblock-plus-list/gh-pages/list.txt",
-    "viewUrlMirror1": "https://adp.magnobiet.com/list.txt"
+    "viewUrl": "https://adp.magnobiet.com/list.txt"
   },
   {
     "id": 771,
@@ -13464,17 +13413,6 @@
     "syntaxId": 2,
     "updatedDate": "2018-05-28T14:02:55",
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Mitchell-Krogs-Badd-Boyz-Hosts.txt"
-  },
-  {
-    "id": 1177,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Mother of All ADBLOCKING (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2018-12-21T00:38:29",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Mother-of-All-ADBLOCKING.txt"
   },
   {
     "id": 1179,
