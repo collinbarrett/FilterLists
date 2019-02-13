@@ -74,18 +74,6 @@
     "viewUrlMirror2": "https://rawcdn.githack.com/mayve/private-adblock-filters/master/Adblock_List.txt"
   },
   {
-    "id": 7,
-    "description": "The Malware URLs in the 'gray area.' To be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves. The 'gray area' is an area where many malware URLs exists, but there is also a big number of false positives as the gray area is the one where only 2 or 3 pieces of evidence were discovered. The 'gray area' should not be used for blocking domains or URLs, it is published only with the aim of helping malware researchers.",
-    "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
-    "emailAddress": "info@joxeankoret.com",
-    "homeUrl": "http://malwareurls.joxeankoret.com/",
-    "licenseId": 2,
-    "name": "Malware URLs Gray Area",
-    "syntaxId": 3,
-    "updatedDate": "2015-07-30T00:00:00",
-    "viewUrl": "http://malwareurls.joxeankoret.com/grayarea.txt"
-  },
-  {
     "id": 8,
     "description": "The domains of Malware URLs to be used by security researchers and anti-malware researchers. It can also be used by individuals to protect themselves.",
     "descriptionSourceUrl": "http://malwareurls.joxeankoret.com/",
