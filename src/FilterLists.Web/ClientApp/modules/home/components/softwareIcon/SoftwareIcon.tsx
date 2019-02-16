@@ -23,7 +23,10 @@ import {
     img22,
     img23,
     img24,
-    img25
+    img25,
+    img26,
+    img27,
+    img28
 } from "./imgs";
 
 interface IProps {
@@ -67,5 +70,8 @@ const icons: { [id: number]: IIcon; } = {
     22: { image: img22, imageTitle: "Diversion" },
     23: { image: img23, imageTitle: "dnsmasq" },
     24: { image: img24, imageTitle: "Slimjet" },
-    25: { image: img25, imageTitle: "uMatrix" }
+    25: { image: img25, imageTitle: "uMatrix" },
+    26: { image: img24, imageTitle: "Blokada" },
+    27: { image: img24, imageTitle: "hostsmgr" },
+    28: { image: img24, imageTitle: "personalDNSfilter" }
 };
