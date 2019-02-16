@@ -11,7 +11,7 @@
   {
     "id": 3,
     "definitionUrl": "https://adblockplus.org/filters",
-    "name": "Adblock Plus (Latest/Unspecified Version)"
+    "name": "Adblock Plus"
   },
   {
     "id": 4,
@@ -91,5 +91,9 @@
     "id": 21,
     "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name",
     "name": "uBlock Origin !#include-tag compilation"
+  },
+  {
+    "id": 22,
+    "name": "DNS servers"
   }
 ]
