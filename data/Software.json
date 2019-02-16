@@ -158,5 +158,26 @@
     "homeUrl": "https://github.com/gorhill/uMatrix",
     "isAbpSubscribable": true,
     "name": "uMatrix"
+  },
+  {
+    "id": 26,
+    "downloadUrl": "https://f-droid.org/packages/org.blokada.alarm/",
+    "homeUrl": "https://blokada.org",
+    "isAbpSubscribable": false,
+    "name": "Blokada"
+  },
+  {
+    "id": 27,
+    "downloadUrl": "https://github.com/henrypp/hostsmgr/releases",
+    "homeUrl": "https://www.henrypp.org/product/hostsmgr",
+    "isAbpSubscribable": false,
+    "name": "hostsmgr"
+  },
+  {
+    "id": 28,
+    "downloadUrl": "https://zenz-solutions.de/personaldnsfilter",
+    "homeUrl": "https://zenz-solutions.de/personaldnsfilter",
+    "isAbpSubscribable": false,
+    "name": "personalDNSfilter"
   }
 ]
