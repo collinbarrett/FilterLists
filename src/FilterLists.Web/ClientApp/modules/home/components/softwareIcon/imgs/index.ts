@@ -22,6 +22,9 @@ import img22 from "./22-Diversion.png";
 import img23 from "./23-dnsmasq.png";
 import img24 from "./24-Slimjet.png";
 import img25 from "./25-uMatrix.png";
+import img26 from "./26-Blokada.png";
+import img27 from "./27-hostsmgr.png";
+import img28 from "./28-personalDNSfilter.png";
 
 export {
     img1,
@@ -47,5 +50,8 @@ export {
     img22,
     img23,
     img24,
-    img25
+    img25,
+    img26,
+    img27,
+    img28
     };
