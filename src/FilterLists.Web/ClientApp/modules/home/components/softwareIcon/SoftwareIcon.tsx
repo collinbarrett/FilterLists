@@ -71,7 +71,7 @@ const icons: { [id: number]: IIcon; } = {
     23: { image: img23, imageTitle: "dnsmasq" },
     24: { image: img24, imageTitle: "Slimjet" },
     25: { image: img25, imageTitle: "uMatrix" },
-    26: { image: img24, imageTitle: "Blokada" },
-    27: { image: img24, imageTitle: "hostsmgr" },
-    28: { image: img24, imageTitle: "personalDNSfilter" }
+    26: { image: img26, imageTitle: "Blokada" },
+    27: { image: img27, imageTitle: "hostsmgr" },
+    28: { image: img28, imageTitle: "personalDNSfilter" }
 };
