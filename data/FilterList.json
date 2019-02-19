@@ -7755,8 +7755,7 @@
     "licenseId": 5,
     "name": "iOS/Mobile Host Database",
     "syntaxId": 1,
-    "viewUrl": "https://tgc.cloud/downloads/iOSAds.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/10ZiN/10ZiN.github.io/master/downloads/iOSAds.txt"
+    "viewUrl": "https://tgc.cloud/downloads/iOSAds.txt"
   },
   {
     "id": 669,
@@ -7765,8 +7764,7 @@
     "name": "10ZiN Host Database (Full)",
     "syntaxId": 1,
     "updatedDate": "2019-02-01T22:33:10",
-    "viewUrl": "https://tgc.cloud/downloads/hosts.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/10ZiN/10ZiN.github.io/master/downloads/hosts.txt"
+    "viewUrl": "https://tgc.cloud/downloads/hosts.txt"
   },
   {
     "id": 670,
