@@ -1759,8 +1759,8 @@
   {
     "id": 146,
     "description": "Adblock Plus for Japan domestic and Japanese correspondence Universal Filter.",
-    "descriptionSourceUrl": "http://www.schuzak.jp/other/abp.html",
-    "homeUrl": "http://www.schuzak.jp/other/abp.html",
+    "descriptionSourceUrl": "http://web.archive.org/web/20120419124052/http://www.schuzak.jp/other/abp.html",
+    "homeUrl": "http://web.archive.org/web/20120419124052/http://www.schuzak.jp/other/abp.html",
     "licenseId": 30,
     "name": "Schuzak's Universal Filter",
     "syntaxId": 3,
@@ -1786,17 +1786,6 @@
     "name": "Satterly's Adblock Plus Filters",
     "syntaxId": 3,
     "viewUrl": "https://mrsatterly.com/abp_filters.txt"
-  },
-  {
-    "id": 149,
-    "description": "Blocks spammers.",
-    "emailAddress": "wstearns@pobox.com",
-    "homeUrl": "http://www.sa-blacklist.stearns.org/sa-blacklist/",
-    "licenseId": 5,
-    "name": "SA-Blacklist",
-    "syntaxId": 2,
-    "updatedDate": "2019-01-27T11:05:18",
-    "viewUrl": "http://www.sa-blacklist.stearns.org/sa-blacklist/sa-blacklist.current.domains"
   },
   {
     "id": 150,
@@ -8006,7 +7995,7 @@
     "licenseId": 2,
     "name": "Suspicious Snooping Sniffing Hacking IP Addresses",
     "syntaxId": 9,
-    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses/master/ips.EasyList"
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses/master/ips.list"
   },
   {
     "id": 691,
@@ -8617,7 +8606,7 @@
   {
     "id": 744,
     "description": "How to filter out advertisements and noise on Stack Overflow",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/README.md",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/se_filters.txt",
     "homeUrl": "https://github.com/Hunter-Github/the-best-stack-overflow",
     "issuesUrl": "https://github.com/Hunter-Github/the-best-stack-overflow/issues",
     "licenseId": 5,
@@ -8625,7 +8614,7 @@
     "publishedDate": "2018-05-26T14:55:11",
     "syntaxId": 4,
     "updatedDate": "2019-01-28T23:48:11",
-    "viewUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/README.md"
+    "viewUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/se_filters.txt"
   },
   {
     "id": 745,
