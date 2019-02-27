@@ -1788,17 +1788,6 @@
     "viewUrl": "https://mrsatterly.com/abp_filters.txt"
   },
   {
-    "id": 149,
-    "description": "Blocks spammers.",
-    "emailAddress": "wstearns@pobox.com",
-    "homeUrl": "http://www.sa-blacklist.stearns.org/sa-blacklist/",
-    "licenseId": 5,
-    "name": "SA-Blacklist",
-    "syntaxId": 2,
-    "updatedDate": "2019-01-27T11:05:18",
-    "viewUrl": "http://www.sa-blacklist.stearns.org/sa-blacklist/sa-blacklist.current.domains"
-  },
-  {
     "id": 150,
     "description": "Blocks most popular internet statistics counters on sites serving Russia.",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
