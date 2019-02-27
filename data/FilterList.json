@@ -8606,7 +8606,7 @@
   {
     "id": 744,
     "description": "How to filter out advertisements and noise on Stack Overflow",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/README.md",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/se_filters.txt",
     "homeUrl": "https://github.com/Hunter-Github/the-best-stack-overflow",
     "issuesUrl": "https://github.com/Hunter-Github/the-best-stack-overflow/issues",
     "licenseId": 5,
@@ -8614,7 +8614,7 @@
     "publishedDate": "2018-05-26T14:55:11",
     "syntaxId": 4,
     "updatedDate": "2019-01-28T23:48:11",
-    "viewUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/README.md"
+    "viewUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/se_filters.txt"
   },
   {
     "id": 745,
