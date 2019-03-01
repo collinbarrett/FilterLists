@@ -16728,5 +16728,30 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ListForOldPeople.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/ListForOldPeople.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ListForOldPeople.txt"
+  },
+  {
+    "id": 1461,
+    "description": "Are you tired of having to look at all the buttons and links with which Amazon promote their account and payment services while you're watching a good stream (i.e. Vinesauce)? Now you won't have look at all those buttons anymore!",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAmazonListForTwitch.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-Amazon List for Twitch",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAmazonListForTwitch.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAmazonListForTwitch.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAmazonListForTwitch.txt"
+  },
+  {
+    "id": 1462,
+    "description": "Blocks web workers (including mining scripts) everywhere by default and allows them only when needed",
+    "homeUrl": "https://github.com/adranger/web-workers-whitelist/",
+    "issuesUrl": "https://github.com/adranger/web-workers-whitelist/issues",
+    "licenseId": 28,
+    "name": "Web Workers Whitelist",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/adranger/web-workers-whitelist/master/web-workers-whitelist.txt"
   }
 ]
