@@ -16763,5 +16763,13 @@
     "name": "CitizenXVIL Hosts",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/CitizenXVIL/Hosts/master/Optimized_hosts_list.txt"
+  } ,{
+    "id": 1464,
+    "description": "Mobile ad/tracker list based on AdGuard's mobile ad filter.",
+    "homeUrl": "https://github.com/CitizenXVIL/Hosts",
+    "issuesUrl": "https://github.com/CitizenXVIL/Hosts/issues",
+    "name": "CitizenXVIL Hosts Mobile",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/CitizenXVIL/Hosts/master/mobile%20domains.txt"
   } 
 ]
