@@ -16780,4 +16780,12 @@
     "syntaxId": 8,
     "viewUrl": "https://raw.githubusercontent.com/CitizenXVIL/Hosts/master/Youtube%20hosts.txt"
   } 
+  ,{
+    "id": 1466,
+    "description": "Some optimized host files for Knox Adblockers.",
+    "homeUrl": "https://github.com/Zykreh/vortexhosts",
+    "name": "Vortex Hosts",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/CitizenXVIL/Hosts/master/Youtube%20hosts.txt"
+  } 
 ]
