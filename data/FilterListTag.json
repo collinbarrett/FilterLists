@@ -7022,5 +7022,11 @@
   }, {
     "filterListId": 1469,
     "tagId": 3
-  }
+  }, {
+    "filterListId": 1470,
+    "tagId": 3
+  }, {
+    "filterListId": 1470,
+	    "tagId": 6
+    }
 ]

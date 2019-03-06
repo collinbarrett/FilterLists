@@ -16808,5 +16808,14 @@
     "name": "Vortex Hosts Lite",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/Zykreh/vortexhosts/master/vortex_lite.txt"
+  },{
+    "id": 1470,
+    "description": "An Extreme Solution for Ultimate Protection.",
+    "homeUrl": "https://github.com/EnergizedProtection/block",
+	    "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
+    "name": "Energized Xtreme Protection",
+	    "licenseId": 9,
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/xtreme/formats/hosts.txt"
   }
 ]
