@@ -16769,7 +16769,15 @@
     "homeUrl": "https://github.com/CitizenXVIL/Hosts",
     "issuesUrl": "https://github.com/CitizenXVIL/Hosts/issues",
     "name": "CitizenXVIL Hosts Mobile",
-    "syntaxId": 4,
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/CitizenXVIL/Hosts/master/mobile%20domains.txt"
+  } ,{
+    "id": 1465,
+    "description": "Experimental list to attempt to block YouTube video ads.",
+    "homeUrl": "https://github.com/CitizenXVIL/Hosts",
+    "issuesUrl": "https://github.com/CitizenXVIL/Hosts/issues",
+    "name": "CitizenXVIL YouTube Hosts",
+    "syntaxId": 8,
+    "viewUrl": "https://raw.githubusercontent.com/CitizenXVIL/Hosts/master/Youtube%20hosts.txt"
   } 
 ]
