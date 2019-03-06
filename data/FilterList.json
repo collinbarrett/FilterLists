@@ -14714,7 +14714,7 @@
   {
     "id": 1296,
     "emailAddress": "intr0@intr0.com",
-	"description": "DomainVoider is dedicated to providing AdGuard Pro for iOS users with custom built, privacy and security focused filters using a simplified adblocking format.",
+    "description": "DomainVoider is dedicated to providing AdGuard Pro for iOS users with custom built, privacy and security focused filters using a simplified adblocking format.",
     "homeUrl": "https://intr0.com/",
     "issuesUrl": "https://gitlab.com/intr0/DomainVoider/issues",
     "licenseId": 19,
