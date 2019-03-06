@@ -16747,12 +16747,88 @@
   },
   {
     "id": 1462,
-    "description": "Blocks web workers (including mining scripts) everywhere by default and allows them only when needed",
+    "description": "Blocks web workers (including mining scripts) everywhere by default and allows them only when needed.",
     "homeUrl": "https://github.com/adranger/web-workers-whitelist/",
     "issuesUrl": "https://github.com/adranger/web-workers-whitelist/issues",
     "licenseId": 28,
     "name": "Web Workers Whitelist",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/adranger/web-workers-whitelist/master/web-workers-whitelist.txt"
+  },
+  {
+    "id": 1463,
+    "description": "Personal hosts list for Samsung Knox-based ad blockers.",
+    "homeUrl": "https://github.com/CitizenXVIL/Hosts",
+    "issuesUrl": "https://github.com/CitizenXVIL/Hosts/issues",
+    "name": "CitizenXVIL Hosts",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/CitizenXVIL/Hosts/master/Optimized_hosts_list.txt"
+  },
+  {
+    "id": 1464,
+    "description": "Mobile ad/tracker list based on AdGuard's mobile ad filter.",
+    "homeUrl": "https://github.com/CitizenXVIL/Hosts",
+    "issuesUrl": "https://github.com/CitizenXVIL/Hosts/issues",
+    "name": "CitizenXVIL Hosts Mobile",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/CitizenXVIL/Hosts/master/mobile%20domains.txt"
+  },
+  {
+    "id": 1465,
+    "description": "Experimental list to attempt to block YouTube video ads.",
+    "homeUrl": "https://github.com/CitizenXVIL/Hosts",
+    "issuesUrl": "https://github.com/CitizenXVIL/Hosts/issues",
+    "name": "CitizenXVIL YouTube Hosts",
+    "syntaxId": 8,
+    "viewUrl": "https://raw.githubusercontent.com/CitizenXVIL/Hosts/master/Youtube%20hosts.txt"
+  },
+  {
+    "id": 1466,
+    "description": "Some optimized host files for Knox Adblockers.",
+    "homeUrl": "https://github.com/Zykreh/vortexhosts",
+    "name": "Vortex Hosts",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Zykreh/vortexhosts/master/vortex.txt"
+  },
+  {
+    "id": 1467,
+    "description": "Some optimized host files for Knox Adblockers.",
+    "homeUrl": "https://github.com/Zykreh/vortexhosts",
+    "name": "Vortex Hosts Energized",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Zykreh/vortexhosts/master/vortex_energized.txt"
+  },
+  {
+    "id": 1468,
+    "description": "Some optimized host files for Knox Adblockers.",
+    "homeUrl": "https://github.com/Zykreh/vortexhosts",
+    "name": "Vortex Hosts Experimental",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Zykreh/vortexhosts/master/vortex_experimental.txt"
+  },
+  {
+    "id": 1469,
+    "description": "Some optimized host files for Knox Adblockers.",
+    "homeUrl": "https://github.com/Zykreh/vortexhosts",
+    "name": "Vortex Hosts Lite",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Zykreh/vortexhosts/master/vortex_lite.txt"
+  },
+  {
+    "id": 1470,
+    "description": "An Extreme Solution for Ultimate Protection.",
+    "homeUrl": "https://github.com/EnergizedProtection/block",
+    "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
+    "name": "Energized Xtreme Protection",
+    "licenseId": 9,
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/xtreme/formats/hosts.txt"
+  },
+  {
+    "id": 1471,
+    "homeUrl": "http://getadhell.com",
+    "name": "AdHell Standart",
+    "syntaxId": 1,
+    "viewUrl": "http://getadhell.com/standard-package.txt"
   }
 ]
