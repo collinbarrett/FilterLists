@@ -16817,5 +16817,12 @@
 	    "licenseId": 9,
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/xtreme/formats/hosts.txt"
+  },
+  {
+    "id": 1471,
+    "homeUrl": "http://getadhell.com",
+    "name": "AdHell Standart",
+    "syntaxId": 1,
+    "viewUrl": "http://getadhell.com/standard-package.txt"
   }
 ]
