@@ -16846,5 +16846,13 @@
     "name": "Blah DNS Hosts blacklist",
     "syntaxId": 8,
     "viewUrl": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/blacklist.txt"
+  },
+    {
+    "id": 1474,
+    "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
+	"issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
+    "name": "Blah DNS Hosts whitelist",
+    "syntaxId": 8,
+    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/whitelist.txt"
   }
 ]
