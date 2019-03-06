@@ -16794,5 +16794,19 @@
     "name": "Vortex Hosts Energized",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/Zykreh/vortexhosts/master/vortex_energized.txt"
+  },{
+    "id": 1468,
+    "description": "Some optimized host files for Knox Adblockers.",
+    "homeUrl": "https://github.com/Zykreh/vortexhosts",
+    "name": "Vortex Hosts Experimental",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Zykreh/vortexhosts/master/vortex_experimental.txt"
+  },{
+    "id": 1469,
+    "description": "Some optimized host files for Knox Adblockers.",
+    "homeUrl": "https://github.com/Zykreh/vortexhosts",
+    "name": "Vortex Hosts Lite",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Zykreh/vortexhosts/master/vortex_lite.txt"
   }
 ]
