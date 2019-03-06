@@ -16747,12 +16747,21 @@
   },
   {
     "id": 1462,
-    "description": "Blocks web workers (including mining scripts) everywhere by default and allows them only when needed",
+    "description": "Blocks web workers (including mining scripts) everywhere by default and allows them only when needed.",
     "homeUrl": "https://github.com/adranger/web-workers-whitelist/",
     "issuesUrl": "https://github.com/adranger/web-workers-whitelist/issues",
     "licenseId": 28,
     "name": "Web Workers Whitelist",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/adranger/web-workers-whitelist/master/web-workers-whitelist.txt"
-  }
+  },
+  {
+    "id": 1463,
+    "description": "Personal hosts list for Samsung Knox-based ad blockers.",
+    "homeUrl": "https://github.com/CitizenXVIL/Hosts",
+    "issuesUrl": "https://github.com/CitizenXVIL/Hosts/issues",
+    "name": "CitizenXVIL Hosts",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/CitizenXVIL/Hosts/master/Optimized_hosts_list.txt"
+  } 
 ]
