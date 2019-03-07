@@ -16855,4 +16855,20 @@
     "syntaxId": 8,
     "viewUrl": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/whitelist.txt"
   }
+  
+  ,
+  {
+    "id": 1475,
+    "homeUrl": "https://hblock.molinero.xyz/",
+    "name": "hBlock Hosts",
+    "syntaxId": 1,
+    "viewUrl": "https://hblock.molinero.xyz/hosts"
+  } ,
+  {
+    "id": 1476,
+    "homeUrl": "https://hblock.molinero.xyz/",
+    "name": "hBlock Hosts for Android",
+    "syntaxId": 1,
+    "viewUrl": "https://hblock.molinero.xyz/hosts_android.zip"
+  }
 ]
