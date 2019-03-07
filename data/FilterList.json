@@ -16862,6 +16862,7 @@
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts",
     "syntaxId": 1,
+	    "updatedDate": "2019-03-07T03:30:18",
     "viewUrl": "https://hblock.molinero.xyz/hosts"
   } ,
   {
@@ -16869,6 +16870,14 @@
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts for Android",
     "syntaxId": 1,
+		    "updatedDate": "2019-03-07T03:30:18",
     "viewUrl": "https://hblock.molinero.xyz/hosts_android.zip"
+  },
+  {
+    "id": 1477,
+		    "updatedDate": "2019-03-07T03:30:18",
+    "homeUrl": "https://hblock.molinero.xyz/",
+    "name": "hBlock Hosts for Android",
+    "viewUrl": "https://hblock.molinero.xyz/hosts_rpz.txt"
   }
 ]
