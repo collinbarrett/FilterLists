@@ -16893,5 +16893,12 @@
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts DNSMASQ",
     "viewUrl": "https://hblock.molinero.xyz/hosts_dnsmasq.conf"
+  },
+  {
+    "id": 1480,
+    "name": "Blah DNS RPZ Blacklist",
+	    "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
+    "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
+    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/rpz.blacklist"
   }
 ]
