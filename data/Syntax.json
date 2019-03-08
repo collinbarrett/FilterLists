@@ -3,7 +3,8 @@
     "id": 1,
     "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
     "name": "Hosts (localhost)",
-    "example": "127.0.0.1 example.com"
+    "example": "127.0.0.1 example.com",
+    "example2": "0.0.0.0 example.com"
   },
   {
     "id": 2,
