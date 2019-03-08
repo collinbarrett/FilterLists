@@ -16886,5 +16886,12 @@
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts Unbound",
     "viewUrl": "https://hblock.molinero.xyz/hosts_unbound.conf"
+  },
+  {
+    "id": 1479,
+		    "updatedDate": "2019-03-07T03:30:18",
+    "homeUrl": "https://hblock.molinero.xyz/",
+    "name": "hBlock Hosts DNSMASQ",
+    "viewUrl": "https://hblock.molinero.xyz/hosts_dnsmasq.conf"
   }
 ]
