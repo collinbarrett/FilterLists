@@ -23,13 +23,13 @@
     "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax",
     "name": "uBlock Origin Regular",
     "example": "example.com##div:has(example)",
-    "example2": "example.com##.example:style(height: 0px! important)"
+    "example2": "example.com##.example:style(height: 0px !important)"
   },
   {
     "id": 6,
     "definitionUrl": "https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters",
     "name": "AdGuard",
-    "example": "example.com#$#.example { height: 0px!important; }"
+    "example": "example.com#$#.example { height: 0px !important }"
   },
   {
     "id": 7,
