@@ -2,54 +2,54 @@
   {
     "id": 1,
     "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
-    "name": "Hosts (localhost)"
+    "name": "Hosts (localhost)",
     "example": "127.0.0.1 example.com"
   },
   {
     "id": 2,
-    "name": "Domains"
+    "name": "Domains",
     "example": "example.com"
   },
   {
     "id": 3,
     "definitionUrl": "https://adblockplus.org/filters",
-    "name": "Adblock Plus"
-    "example": "example.com##.example"
+    "name": "Adblock Plus",
+    "example": "example.com##.example",
     "example2": "||example.com^"
   },
   {
     "id": 4,
     "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax",
-    "name": "uBlock Origin Regular"
-    "example": "example.com##div:has(example)"
+    "name": "uBlock Origin Regular",
+    "example": "example.com##div:has(example)",
     "example2": "example.com##.example:style(height: 0px! important)"
   },
   {
     "id": 6,
     "definitionUrl": "https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters",
-    "name": "AdGuard"
+    "name": "AdGuard",
     "example": "example.com#$#.example { height: 0px!important; }"
   },
   {
     "id": 7,
     "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide",
-    "name": "uMatrix / uBlock Origin Dynamic"
+    "name": "uMatrix / uBlock Origin Dynamic",
     "example": "_ example.com script"
   },
   {
     "id": 8,
-    "name": "URLs"
+    "name": "URLs",
     "example": "https://www.example.com/"
   },
   {
     "id": 9,
-    "name": "IPs (Singular or singular+range)"
+    "name": "IPs (Singular or singular+range)",
     "example": "123.45.67.89"
   },
   {
     "id": 10,
     "definitionUrl": "https://blogs.msdn.microsoft.com/ie/2010/12/07/ie9-and-privacy-introducing-tracking-protection/",
-    "name": "Tracking Protection List (IE)"
+    "name": "Tracking Protection List (IE)",
     "example": "-d example.com /example/"
   },
   {
@@ -59,35 +59,35 @@
   {
     "id": 12,
     "definitionUrl": "https://github.com/NanoAdblocker/NanoCore/tree/master/notes",
-    "name": "Nano Adblocker Static"
+    "name": "Nano Adblocker Static",
     "example": "example.com##+js(nanop-easy-set-cookie.js, __example=true)"
   },
   {
     "id": 13,
     "definitionUrl": "https://github.com/xd4rker/MinerBlock",
-    "name": "MinerBlock"
+    "name": "MinerBlock",
     "example": "*://*.example.com/*"
   },
   {
     "id": 14,
     "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
-    "name": "Non-localhost hosts"
+    "name": "Non-localhost hosts",
     "example": "123.45.67.89 example.com"
   },
   {
     "id": 15,
-    "name": "IPs (Range-only)"
+    "name": "IPs (Range-only)",
     "example": "12.34.56.78-123.45.67.89"
   },
   {
     "id": 16,
-    "name": "Domains with wildcards"
+    "name": "Domains with wildcards",
     "example": "example.*"
   },
   {
     "id": 17,
     "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#scriptlet-injection",
-    "name": "uBlock Origin scriptlet injection"
+    "name": "uBlock Origin scriptlet injection",
     "example": "example.com##+js(abort-current-inline-script.js, Example)"
   },
   {
@@ -98,18 +98,18 @@
   {
     "id": 19,
     "definitionUrl": "https://www.privoxy.org/user-manual/actions-file.html",
-    "name": "Privoxy action file"
+    "name": "Privoxy action file",
     "example": ".example.com"
   },
   {
     "id": 20,
-    "name": "dnsmasq domains list"
+    "name": "dnsmasq domains list",
     "example": "address=/example.com/127.0.0.1"
   },
   {
     "id": 21,
     "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name",
-    "name": "uBlock Origin !#include-tag compilation"
+    "name": "uBlock Origin !#include-tag compilation",
     "example": "!#include ExampleList.txt"
   },
   {
