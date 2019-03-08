@@ -83,7 +83,7 @@
   {
     "id": 16,
     "name": "Domains with wildcards",
-    "example": "example.*"
+    "example": "*.example.com"
   },
   {
     "id": 17,
