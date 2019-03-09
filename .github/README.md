@@ -32,7 +32,7 @@ Typical adblockers run as an extension in popular web browsers. As we browse the
   - Imre Kristoffer Eilertsen [@DandelionSprout](https://github.com/DandelionSprout) : major contributor
   - Raymond Hill [@gorhill](https://github.com/gorhill) : uBlock Origin owner, advised on some technical aspects of FilterLists
   - Andrey Meshkov [@ameshkov](https://github.com/ameshkov) : AdGuard CTO, advised on some technical aspects of FilterLists
-  - [More Contributors](https://github.com/collinbarrett/FilterLists/graphs/contributors)
+  - [More contributors](https://github.com/collinbarrett/FilterLists/graphs/contributors)
 
 ## Miscellany
 
