@@ -15924,10 +15924,18 @@
     "viewUrl": "https://280blocker.net/files/280blocker_domain.txt"
   },{
     "id": 1484,
-    "name": "Block List Project",
+    "name": "Block List Project: Torrent",
 	"updatedDate": "2019-03-09T23:08:18",
 	    "syntaxId": 2,
 	"homeUrl": "https://tspprs.com/",
     "viewUrl": "https://tspprs.com/dl/torrent"
+  },{
+    "id": 1485,
+    "name": "List of torrent trackers",
+	    "syntaxId": 8,
+		    "licenseId": 19,
+		"description": "An updated list of public BitTorrent trackers ",
+	"homeUrl": "https://github.com/ngosang/trackerslist",
+    "viewUrl": "https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt"
   },
 ]
