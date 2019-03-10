@@ -15899,5 +15899,12 @@
 	    "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
     "viewUrl": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/rpz.blacklist"
-  }
+  },
+  {
+    "id": 1481,
+    "name": "jawz101 MobileAdTrackers",
+	    "homeUrl": "https://github.com/jawz101/MobileAdTrackers",
+    "issuesUrl": "https://github.com/jawz101/MobileAdTrackers/issues",
+    "viewUrl": "https://raw.githubusercontent.com/jawz101/MobileAdTrackers/master/hosts"
+  },
 ]
