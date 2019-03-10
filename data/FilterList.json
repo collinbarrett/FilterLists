@@ -15941,5 +15941,13 @@
     "description": "An updated list of public BitTorrent trackers ",
     "homeUrl": "https://github.com/ngosang/trackerslist",
     "viewUrl": "https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt"
+  },{
+    "id": 1486,
+    "name": "List of torrent trackers: Blacklist",
+    "syntaxId": 8,
+    "licenseId": 19,
+    "description": "An updated list of public BitTorrent trackers ",
+    "homeUrl": "https://github.com/ngosang/trackerslist",
+    "viewUrl": "https://raw.githubusercontent.com/ngosang/trackerslist/master/blacklist.txt"
   }
 ]
