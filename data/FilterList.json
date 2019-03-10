@@ -15912,5 +15912,12 @@
 	"description": "Optimized ad domains for your phone.",
 	"updatedDate": "2019-03-09T23:08:18",
     "viewUrl": "https://dbl2.oisd.nl/"
+  }, {
+    "id": 1482,
+    "name": "280blocker adblock domain lists",
+		    "homeUrl": "https://280blocker.net/",
+	"updatedDate": "2019-03-06T23:08:18",
+	    "licenseId": 1,
+    "viewUrl": "https://280blocker.net/files/280blocker_domain.txt"
   }
 ]

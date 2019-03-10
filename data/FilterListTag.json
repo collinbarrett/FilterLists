@@ -6740,4 +6740,15 @@
     "filterListId": 1482,
     "tagId": 3
   },
+  {
+    "filterListId": 1483,
+    "tagId": 4
+  },
+  {
+    "filterListId": 1483,
+    "tagId": 3
+  },{
+    "filterListId": 1483,
+    "tagId": 10
+  }
 ]
