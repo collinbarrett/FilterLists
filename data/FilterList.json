@@ -15906,5 +15906,11 @@
 	    "homeUrl": "https://github.com/jawz101/MobileAdTrackers",
     "issuesUrl": "https://github.com/jawz101/MobileAdTrackers/issues",
     "viewUrl": "https://raw.githubusercontent.com/jawz101/MobileAdTrackers/master/hosts"
-  },
+  }, {
+    "id": 1482,
+    "name": "Optimized PI Hole HOSTS",
+	"description": "Optimized ad domains for your phone.",
+	"updatedDate": "2019-03-09T23:08:18",
+    "viewUrl": "https://dbl2.oisd.nl/"
+  }
 ]
