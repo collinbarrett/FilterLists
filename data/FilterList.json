@@ -6699,20 +6699,6 @@
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt"
   },
   {
-    "id": 615,
-    "chatUrl": "https://discord.me/polskiefiltry",
-    "description": "Filters that unlock right-clicking.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_unlocking_right_click.txt",
-    "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
-    "licenseId": 9,
-    "name": "Polish Annoyance Filters - Unlocking Right Click",
-    "publishedDate": "2018-06-27T17:32:02",
-    "syntaxId": 17,
-    "updatedDate": "2018-10-19T15:39:45",
-    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_unlocking_right_click.txt"
-  },
-  {
     "id": 616,
     "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block various other widgets.",
