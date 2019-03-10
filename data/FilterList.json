@@ -15861,34 +15861,34 @@
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts",
     "syntaxId": 1,
-	    "updatedDate": "2019-03-07T03:30:18",
+    "updatedDate": "2019-03-07T03:30:18",
     "viewUrl": "https://hblock.molinero.xyz/hosts"
-  } ,
+  },
   {
     "id": 1476,
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts for Android",
     "syntaxId": 1,
-		    "updatedDate": "2019-03-07T03:30:18",
+    "updatedDate": "2019-03-07T03:30:18",
     "viewUrl": "https://hblock.molinero.xyz/hosts_android.zip"
   },
   {
     "id": 1477,
-		    "updatedDate": "2019-03-07T03:30:18",
+    "updatedDate": "2019-03-07T03:30:18",
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts RPZ",
     "viewUrl": "https://hblock.molinero.xyz/hosts_rpz.txt"
   },
   {
     "id": 1478,
-		    "updatedDate": "2019-03-07T03:30:18",
+    "updatedDate": "2019-03-07T03:30:18",
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts Unbound",
     "viewUrl": "https://hblock.molinero.xyz/hosts_unbound.conf"
   },
   {
     "id": 1479,
-		    "updatedDate": "2019-03-07T03:30:18",
+    "updatedDate": "2019-03-07T03:30:18",
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts DNSMASQ",
     "viewUrl": "https://hblock.molinero.xyz/hosts_dnsmasq.conf"
@@ -15896,23 +15896,25 @@
   {
     "id": 1480,
     "name": "Blah DNS RPZ Blacklist",
-	    "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
+    "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
     "viewUrl": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/rpz.blacklist"
   },
   {
     "id": 1481,
     "name": "jawz101 MobileAdTrackers",
-	    "homeUrl": "https://github.com/jawz101/MobileAdTrackers",
+    "homeUrl": "https://github.com/jawz101/MobileAdTrackers",
     "issuesUrl": "https://github.com/jawz101/MobileAdTrackers/issues",
     "viewUrl": "https://raw.githubusercontent.com/jawz101/MobileAdTrackers/master/hosts"
-  }, {
+  },
+  {
     "id": 1482,
     "name": "Optimized PI Hole HOSTS",
-	"description": "Optimized ad domains for your phone.",
-	"updatedDate": "2019-03-09T23:08:18",
+    "description": "Optimized ad domains for your phone.",
+    "updatedDate": "2019-03-09T23:08:18",
     "viewUrl": "https://dbl2.oisd.nl/"
-  }, {
+  },
+  {
     "id": 1483,
     "name": "280blocker adblock domain lists",
     "description": "A filter list that blocks mobile advertisements and trackers on Japanese properties",
@@ -15922,20 +15924,22 @@
     "syntaxId": 2,
     "updatedDate": "2019-02-02T05:57:11",
     "viewUrl": "https://280blocker.net/files/280blocker_domain.txt"
-  },{
+  },
+  {
     "id": 1484,
     "name": "Block List Project: Torrent",
-	"updatedDate": "2019-03-09T23:08:18",
-	    "syntaxId": 2,
-	"homeUrl": "https://tspprs.com/",
+    "updatedDate": "2019-03-09T23:08:18",
+    "syntaxId": 2,
+    "homeUrl": "https://tspprs.com/",
     "viewUrl": "https://tspprs.com/dl/torrent"
-  },{
+  },
+  {
     "id": 1485,
     "name": "List of torrent trackers",
-	    "syntaxId": 8,
-		    "licenseId": 19,
-		"description": "An updated list of public BitTorrent trackers ",
-	"homeUrl": "https://github.com/ngosang/trackerslist",
+    "syntaxId": 8,
+    "licenseId": 19,
+    "description": "An updated list of public BitTorrent trackers ",
+    "homeUrl": "https://github.com/ngosang/trackerslist",
     "viewUrl": "https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt"
-  },
+  }
 ]
