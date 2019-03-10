@@ -15922,5 +15922,12 @@
     "syntaxId": 2,
     "updatedDate": "2019-02-02T05:57:11",
     "viewUrl": "https://280blocker.net/files/280blocker_domain.txt"
-  }
+  },{
+    "id": 1484,
+    "name": "Block List Project",
+	"updatedDate": "2019-03-09T23:08:18",
+	    "syntaxId": 2,
+	"homeUrl": "https://tspprs.com/",
+    "viewUrl": "https://tspprs.com/dl/torrent"
+  },
 ]
