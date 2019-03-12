@@ -15952,15 +15952,6 @@
     "viewUrl": "https://raw.githubusercontent.com/ngosang/trackerslist/master/blacklist.txt"
   },
   {
-    "id": 1487,
-    "name": "Top Attacking IP Addresses Against Wordpress Sites",
-    "syntaxId": 9,
-    "licenseId": 2,
-    "description": "Lists of the top attacking IP addresses trying to hack or compromise Wordpress web sites.",
-    "homeUrl": "https://github.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/",
-    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/master/wordpress-attacking-ips.txt"
-  },
-  {
     "id": 1488,
     "name": "Suspicious Snooping Sniffing Hacking IP Addresses",
     "syntaxId": 9,
@@ -16014,5 +16005,13 @@
     "homeUrl": "https://github.com/greatis/Anti-WebMiner/",
     "issuesUrl": "https://github.com/greatis/Anti-WebMiner/issues",
     "viewUrl": "https://raw.githubusercontent.com/greatis/Anti-WebMiner/master/blacklist.txt"
+  },
+  {
+    "id": 1494,
+    "name": "Carl's Spam List",
+    "syntaxId": 2,
+    "licenseId": 11,
+    "homeUrl": "http://www.carl.net",
+    "viewUrl": "http://www.carl.net/spam/access.txt"
   }
 ]
