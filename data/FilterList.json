@@ -15973,5 +15973,13 @@
     "description": "This repository contains a list of all web sites I come across that are either hacked with or purposefully hosting malware, ransomware, viruses or trojans.",
     "homeUrl": "https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hacked-domains.list"
+  },{
+    "id": 1490,
+    "name": "Phishing Domain Database",
+    "syntaxId": 2,
+    "licenseId": 2,
+    "description": "Phishing Domains, urls websites and threats database. We use the PyFunceble testing tool to validate the status of all known Phishing domains and provide stats to reveal how many unique domains used for Phishing are still active.",
+    "homeUrl": "https://github.com/mitchellkrogza/Phishing.Database",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-domains-ACTIVE.txt"
   }
 ]

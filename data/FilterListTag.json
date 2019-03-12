@@ -6778,5 +6778,12 @@
   {
     "filterListId": 1489,
     "tagId": 2
+  },
+  {
+    "filterListId": 1490,
+    "tagId": 3
+  },{
+    "filterListId": 1490,
+    "tagId": 6
   }
 ]
