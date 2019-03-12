@@ -6789,5 +6789,14 @@
   {
     "filterListId": 1491,
     "tagId": 3
+  },
+  {
+    "filterListId": 1492,
+    "tagId": 3
+  },
+  
+  {
+    "filterListId": 1493,
+    "tagId": 1
   }
 ]

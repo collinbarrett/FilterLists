@@ -15989,5 +15989,22 @@
     "description": "The Ultimate hosts file for protecting your computer or device against over a million bad web sites. Protect your children and family from gaining access to bad web sites and protect your devices and pc from being infected with Malware or Ransomware.",
     "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/hosts.deny/hosts0.deny"
+  },{
+    "id": 1492,
+    "name": "The Ultimate Daily Hosts Blacklist",
+    "syntaxId": 9,
+    "licenseId": 2,
+    "description": "The Ultimate hosts file for protecting your computer or device against over a million bad web sites. Protect your children and family from gaining access to bad web sites and protect your devices and pc from being infected with Malware or Ransomware.",
+    "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/hosts.deny/hosts0.deny"
+  },{
+    "id": 1493,
+    "name": "Greatis Anti-WebMiner",
+    "syntaxId": 2,
+    "licenseId": 19,
+    "description": "Anti-WebMiner protects your PC against web cryptocurrency miners (JS scripts like Coinhive executed in the browser) by modifying Windows hosts file",
+    "homeUrl": "https://github.com/greatis/Anti-WebMiner/",
+	    "issuesUrl": "https://github.com/greatis/Anti-WebMiner/issues",
+    "viewUrl": "https://raw.githubusercontent.com/greatis/Anti-WebMiner/master/blacklist.txt"
   }
 ]
