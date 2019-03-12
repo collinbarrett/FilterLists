@@ -15965,5 +15965,13 @@
     "description": "A daily updated list of suspicious, snooping, sniffing and hacking attempts from IP addresses against services like SSH, HTTP and Wordpress Hack Attempts",
     "homeUrl": "https://github.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses/",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses/master/ips.list"
+  },{
+    "id": 1489,
+    "name": "The Big List of Hacked Malware Web Sites",
+    "syntaxId": 2,
+    "licenseId": 2,
+    "description": "This repository contains a list of all web sites I come across that are either hacked with or purposefully hosting malware, ransomware, viruses or trojans.",
+    "homeUrl": "https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hacked-domains.list"
   }
 ]
