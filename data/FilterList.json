@@ -15955,7 +15955,15 @@
     "syntaxId": 9,
     "licenseId": 2,
     "description": "Lists of the top attacking IP addresses trying to hack or compromise Wordpress web sites.",
-    "homeUrl": "https://github.com/ngosang/trackerslist",
+    "homeUrl": "https://github.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/master/wordpress-attacking-ips.txt"
+  },{
+    "id": 1488,
+    "name": "Suspicious Snooping Sniffing Hacking IP Addresses",
+    "syntaxId": 9,
+    "licenseId": 2,
+    "description": "A daily updated list of suspicious, snooping, sniffing and hacking attempts from IP addresses against services like SSH, HTTP and Wordpress Hack Attempts",
+    "homeUrl": "https://github.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses/",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses/master/ips.list"
   }
 ]
