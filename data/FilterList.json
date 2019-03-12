@@ -15938,7 +15938,7 @@
     "name": "List of torrent trackers",
     "syntaxId": 8,
     "licenseId": 19,
-    "description": "An updated list of public BitTorrent trackers ",
+    "description": "An updated list of public BitTorrent trackers",
     "homeUrl": "https://github.com/ngosang/trackerslist",
     "viewUrl": "https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt"
   },{
@@ -15946,8 +15946,16 @@
     "name": "List of torrent trackers: Blacklist",
     "syntaxId": 8,
     "licenseId": 19,
-    "description": "An updated list of public BitTorrent trackers ",
+    "description": "An updated list of public BitTorrent trackers",
     "homeUrl": "https://github.com/ngosang/trackerslist",
     "viewUrl": "https://raw.githubusercontent.com/ngosang/trackerslist/master/blacklist.txt"
+  },{
+    "id": 1487,
+    "name": "Top Attacking IP Addresses Against Wordpress Sites",
+    "syntaxId": 9,
+    "licenseId": 2,
+    "description": "Lists of the top attacking IP addresses trying to hack or compromise Wordpress web sites.",
+    "homeUrl": "https://github.com/ngosang/trackerslist",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/master/wordpress-attacking-ips.txt"
   }
 ]
