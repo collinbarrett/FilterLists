@@ -15941,7 +15941,8 @@
     "description": "An updated list of public BitTorrent trackers",
     "homeUrl": "https://github.com/ngosang/trackerslist",
     "viewUrl": "https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt"
-  },{
+  },
+  {
     "id": 1486,
     "name": "List of torrent trackers: Blacklist",
     "syntaxId": 8,
@@ -15949,7 +15950,8 @@
     "description": "An updated list of public BitTorrent trackers",
     "homeUrl": "https://github.com/ngosang/trackerslist",
     "viewUrl": "https://raw.githubusercontent.com/ngosang/trackerslist/master/blacklist.txt"
-  },{
+  },
+  {
     "id": 1487,
     "name": "Top Attacking IP Addresses Against Wordpress Sites",
     "syntaxId": 9,
@@ -15957,7 +15959,8 @@
     "description": "Lists of the top attacking IP addresses trying to hack or compromise Wordpress web sites.",
     "homeUrl": "https://github.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/master/wordpress-attacking-ips.txt"
-  },{
+  },
+  {
     "id": 1488,
     "name": "Suspicious Snooping Sniffing Hacking IP Addresses",
     "syntaxId": 9,
@@ -15965,7 +15968,8 @@
     "description": "A daily updated list of suspicious, snooping, sniffing and hacking attempts from IP addresses against services like SSH, HTTP and Wordpress Hack Attempts",
     "homeUrl": "https://github.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses/",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses/master/ips.list"
-  },{
+  },
+  {
     "id": 1489,
     "name": "The Big List of Hacked Malware Web Sites",
     "syntaxId": 2,
@@ -15973,7 +15977,8 @@
     "description": "This repository contains a list of all web sites I come across that are either hacked with or purposefully hosting malware, ransomware, viruses or trojans.",
     "homeUrl": "https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hacked-domains.list"
-  },{
+  },
+  {
     "id": 1490,
     "name": "Phishing Domain Database",
     "syntaxId": 2,
@@ -15981,7 +15986,8 @@
     "description": "Phishing Domains, urls websites and threats database. We use the PyFunceble testing tool to validate the status of all known Phishing domains and provide stats to reveal how many unique domains used for Phishing are still active.",
     "homeUrl": "https://github.com/mitchellkrogza/Phishing.Database",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-domains-ACTIVE.txt"
-  },{
+  },
+  {
     "id": 1491,
     "name": "The Ultimate Daily Hosts Blacklist",
     "syntaxId": 9,
@@ -15989,7 +15995,8 @@
     "description": "The Ultimate hosts file for protecting your computer or device against over a million bad web sites. Protect your children and family from gaining access to bad web sites and protect your devices and pc from being infected with Malware or Ransomware.",
     "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/hosts.deny/hosts0.deny"
-  },{
+  },
+  {
     "id": 1492,
     "name": "The Ultimate Daily Hosts Blacklist",
     "syntaxId": 9,
@@ -15997,14 +16004,15 @@
     "description": "The Ultimate hosts file for protecting your computer or device against over a million bad web sites. Protect your children and family from gaining access to bad web sites and protect your devices and pc from being infected with Malware or Ransomware.",
     "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/hosts.deny/hosts0.deny"
-  },{
+  },
+  {
     "id": 1493,
     "name": "Greatis Anti-WebMiner",
     "syntaxId": 2,
     "licenseId": 19,
     "description": "Anti-WebMiner protects your PC against web cryptocurrency miners (JS scripts like Coinhive executed in the browser) by modifying Windows hosts file",
     "homeUrl": "https://github.com/greatis/Anti-WebMiner/",
-	    "issuesUrl": "https://github.com/greatis/Anti-WebMiner/issues",
+    "issuesUrl": "https://github.com/greatis/Anti-WebMiner/issues",
     "viewUrl": "https://raw.githubusercontent.com/greatis/Anti-WebMiner/master/blacklist.txt"
   }
 ]
