@@ -15891,7 +15891,6 @@
     "updatedDate": "2019-03-07T03:30:18",
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts DNSMASQ",
-    "syntaxId": 20,
     "viewUrl": "https://hblock.molinero.xyz/hosts_dnsmasq.conf"
   },
   {
@@ -15991,7 +15990,6 @@
   {
     "id": 1491,
     "name": "The Ultimate Daily Hosts Blacklist",
-    "syntaxId": 9,
     "licenseId": 2,
     "description": "The Ultimate hosts file for protecting your computer or device against over a million bad web sites. Protect your children and family from gaining access to bad web sites and protect your devices and pc from being infected with Malware or Ransomware.",
     "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
@@ -16009,7 +16007,6 @@
   {
     "id": 1493,
     "name": "Greatis Anti-WebMiner",
-    "syntaxId": 2,
     "licenseId": 19,
     "description": "Anti-WebMiner protects your PC against web cryptocurrency miners (JS scripts like Coinhive executed in the browser) by modifying Windows hosts file",
     "homeUrl": "https://github.com/greatis/Anti-WebMiner/",
@@ -16019,7 +16016,6 @@
   {
     "id": 1494,
     "name": "Carl's Spam List",
-    "syntaxId": 2,
     "licenseId": 11,
     "homeUrl": "http://www.carl.net",
     "viewUrl": "http://www.carl.net/spam/access.txt"
@@ -16035,7 +16031,7 @@
   {
     "id": 1496,
     "name": "Temporary Autonomous Zone Spam Domains",
-    "syntaxId": 14,
+    "syntaxId": 2,
     "homeUrl": "http://www.taz.net.au/Mail/",
     "viewUrl": "http://www.taz.net.au/Mail/SpamDomains"
   },
@@ -16043,15 +16039,15 @@
     "id": 1497,
     "name": "tankmohit's WhitelistUnifiedHosts",
     "description": "Unified hosts combined from wally3k pihole lists and possibly without false positives",
-    "syntaxId": 14,
+    "syntaxId": 2,
     "homeUrl": "https://github.com/tankmohit/UnifiedHosts",
-    "viewUrl": "https://github.com/tankmohit/UnifiedHosts/blob/master/whitelist"
+    "viewUrl": "https://raw.githubusercontent.com/tankmohit/UnifiedHosts/master/whitelist"
   },
   {
     "id": 1498,
     "name": "Stop Google Analytics Ghost Spam Active List",
     "description": "How to stop Google Analytics \"Ghost\" Spam using a well curated list of spam referrer domains and web sites. Simple and easy to use with instructions for creating Segments in Google Analytics using our google-exclude files.",
-    "syntaxId": 14,
+    "syntaxId": 2,
     "licenseId": 2,
     "homeUrl": "https://github.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO/master/output/domains/ACTIVE/list"
@@ -16060,7 +16056,7 @@
     "id": 1499,
     "name": "Stop Google Analytics Ghost Spam Inactive List",
     "description": "How to stop Google Analytics \"Ghost\" Spam using a well curated list of spam referrer domains and web sites. Simple and easy to use with instructions for creating Segments in Google Analytics using our google-exclude files.",
-    "syntaxId": 14,
+    "syntaxId": 2,
     "licenseId": 2,
     "homeUrl": "https://github.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO/master/output/domains/INACTIVE/list"
@@ -16156,7 +16152,6 @@
     "homeUrl": "http://www.joewein.de/sw/bl-text.htm",
     "donateUrl": "http://www.joewein.de/sw/bl-text.htm#donate",
     "name": "JoeWein's Email sender blacklist",
-    "syntaxId": 2,
     "viewUrl": "https://joewein.net/dl/bl/from-bl.txt"
   }
 ]
