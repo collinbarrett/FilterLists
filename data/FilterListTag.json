@@ -6922,5 +6922,13 @@
   {
     "filterListId": 1512,
     "tagId": 3
+  },
+  {
+    "filterListId": 1513,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1513,
+    "tagId": 12
   }
 ]

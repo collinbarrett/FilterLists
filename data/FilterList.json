@@ -16160,6 +16160,7 @@
 	"licenseId": 2,
     "homeUrl": "https://github.com/mitchellkrogza/Fail2Ban.WebExploits",
     "name": "Fail2Ban WebExploits",
+    "issuesUrl": "https://github.com/mitchellkrogza/Fail2Ban.WebExploits/issues",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Fail2Ban.WebExploits/master/input-source/exploits.list"
   },
   {
@@ -16170,5 +16171,14 @@
     "issuesUrl": "https://www.badips.com/documentation#3",
     "name": "BadIPs",
     "viewUrl": "https://www.badips.com/info"
+  },
+  {
+    "id": 1513,
+    "description": "Black list for Squid proxy.",
+    "homeUrl": "https://github.com/oleksiig/Squid-BlackList/",
+    "issuesUrl": "https://www.badips.com/documentation#3",
+    "name": "Gulchenko's SquidBlackList",
+    "syntaxId": 8,
+    "viewUrl": "https://raw.githubusercontent.com/oleksiig/Squid-BlackList/master/denied_ext.conf"
   }
 ]
