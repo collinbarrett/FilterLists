@@ -16085,7 +16085,7 @@
     "name": "DNS Zone Blacklist Generator BIND",
     "description": "This project generates dnsmasq, bind and unbound zone files to be used in DNS based AD Blockers.",
     "homeUrl": "https://github.com/oznu/dns-zone-blacklist",
-	    "issuesUrl": "https://github.com/oznu/dns-zone-blacklist/issues",
+    "issuesUrl": "https://github.com/oznu/dns-zone-blacklist/issues",
     "viewUrl": "https://raw.githubusercontent.com/oznu/dns-zone-blacklist/master/bind/zones.blacklist"
   },
   {
@@ -16093,8 +16093,8 @@
     "name": "DNS Zone Blacklist Generator Dnsmasq",
     "description": "This project generates dnsmasq, bind and unbound zone files to be used in DNS based AD Blockers.",
     "homeUrl": "https://github.com/oznu/dns-zone-blacklist",
-	    "issuesUrl": "https://github.com/oznu/dns-zone-blacklist/issues",
-		    "syntaxId": 20,
+    "issuesUrl": "https://github.com/oznu/dns-zone-blacklist/issues",
+    "syntaxId": 20,
     "viewUrl": "https://raw.githubusercontent.com/oznu/dns-zone-blacklist/master/dnsmasq/dnsmasq.blacklist"
   },
   {
@@ -16102,6 +16102,23 @@
     "name": "DNS Zone Blacklist Generator Unbound",
     "description": "This project generates dnsmasq, bind and unbound zone files to be used in DNS based AD Blockers.",
     "homeUrl": "https://github.com/oznu/dns-zone-blacklist",
-	    "issuesUrl": "https://github.com/oznu/dns-zone-blacklist/issues",
-	    "viewUrl": "https://raw.githubusercontent.com/oznu/dns-zone-blacklist/master/unbound/unbound.blacklist"
+    "issuesUrl": "https://github.com/oznu/dns-zone-blacklist/issues",
+    "viewUrl": "https://raw.githubusercontent.com/oznu/dns-zone-blacklist/master/unbound/unbound.blacklist"
+  },
+  {
+    "id": 1505,
+    "name": "ReddestDream MinimalHostsBlockerCB",
+    "homeUrl": "https://github.com/ReddestDream/reddestdream.github.io",
+    "issuesUrl": "https://github.com/ReddestDream/reddestdream.github.io/issues",
+	"syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/ReddestDream/reddestdream.github.io/master/Projects/MinimalHostsCB/etc/MinimalHostsBlocker/minimalhosts"
+  },
+  {
+    "id": 1506,
+    "name": "ReddestDream MinimalHosts",
+    "homeUrl": "https://github.com/ReddestDream/reddestdream.github.io",
+    "issuesUrl": "https://github.com/ReddestDream/reddestdream.github.io/issues",
+	"syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/ReddestDream/reddestdream.github.io/master/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts"
+  }
 ]

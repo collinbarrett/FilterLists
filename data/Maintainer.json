@@ -610,10 +610,17 @@
     "id": 121,
     "homeUrl": "https://github.com/mitchellkrogza",
     "name": "mitchellkrogza"
-  },{
+  },
+  {
     "id": 122,
     "homeUrl": "https://oz.nu/",
-	    "emailAddress": "dev@oz.nu",
+    "emailAddress": "dev@oz.nu",
     "name": "oznu"
+  },
+  {
+    "id": 123,
+    "homeUrl": "https://github.com/ReddestDream",
+    "emailAddress": "reddestdream@gmail.com",
+    "name": "ReddestDream"
   }
 ]

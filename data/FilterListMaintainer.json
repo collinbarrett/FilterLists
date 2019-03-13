@@ -4222,9 +4222,17 @@
   {
     "filterListId": 1503,
     "maintainerId": 122
-  ,
+  },
   {
     "filterListId": 1504,
     "maintainerId": 122
+  },
+  {
+    "filterListId": 1505,
+    "maintainerId": 123
+  },
+  {
+    "filterListId": 1506,
+    "maintainerId": 123
   }
 ]
