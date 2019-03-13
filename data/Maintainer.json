@@ -610,5 +610,10 @@
     "id": 121,
     "homeUrl": "https://github.com/mitchellkrogza",
     "name": "mitchellkrogza"
+  },{
+    "id": 122,
+    "homeUrl": "https://oz.nu/",
+	    "emailAddress": "dev@oz.nu",
+    "name": "oznu"
   }
 ]

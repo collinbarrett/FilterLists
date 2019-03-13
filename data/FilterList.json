@@ -16079,5 +16079,29 @@
     "description": "This is a project that provides a pornography URL blacklist",
     "homeUrl": "https://github.com//joelotz/URL_Blacklist",
     "viewUrl": "https://raw.githubusercontent.com/joelotz/URL_Blacklist/master/blacklist.csv"
-  }
+  },
+  {
+    "id": 1502,
+    "name": "DNS Zone Blacklist Generator BIND",
+    "description": "This project generates dnsmasq, bind and unbound zone files to be used in DNS based AD Blockers.",
+    "homeUrl": "https://github.com/oznu/dns-zone-blacklist",
+	    "issuesUrl": "https://github.com/oznu/dns-zone-blacklist/issues",
+    "viewUrl": "https://raw.githubusercontent.com/oznu/dns-zone-blacklist/master/bind/zones.blacklist"
+  },
+  {
+    "id": 1503,
+    "name": "DNS Zone Blacklist Generator Dnsmasq",
+    "description": "This project generates dnsmasq, bind and unbound zone files to be used in DNS based AD Blockers.",
+    "homeUrl": "https://github.com/oznu/dns-zone-blacklist",
+	    "issuesUrl": "https://github.com/oznu/dns-zone-blacklist/issues",
+		    "syntaxId": 20,
+    "viewUrl": "https://raw.githubusercontent.com/oznu/dns-zone-blacklist/master/dnsmasq/dnsmasq.blacklist"
+  },
+  {
+    "id": 1504,
+    "name": "DNS Zone Blacklist Generator Unbound",
+    "description": "This project generates dnsmasq, bind and unbound zone files to be used in DNS based AD Blockers.",
+    "homeUrl": "https://github.com/oznu/dns-zone-blacklist",
+	    "issuesUrl": "https://github.com/oznu/dns-zone-blacklist/issues",
+	    "viewUrl": "https://raw.githubusercontent.com/oznu/dns-zone-blacklist/master/unbound/unbound.blacklist"
 ]
