@@ -16161,5 +16161,14 @@
     "homeUrl": "https://github.com/mitchellkrogza/Fail2Ban.WebExploits",
     "name": "Fail2Ban WebExploits",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Fail2Ban.WebExploits/master/input-source/exploits.list"
+  },
+  {
+    "id": 1512,
+    "description": "This is a community list with a blacklist of IP addresses.",
+	"licenseId": 2,
+    "homeUrl": "https://www.badips.com/",
+    "issuesUrl": "https://www.badips.com/documentation#3",
+    "name": "BadIPs",
+    "viewUrl": "https://www.badips.com/info"
   }
 ]

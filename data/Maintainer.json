@@ -574,6 +574,7 @@
   {
     "id": 114,
     "homeUrl": "https://nfz.moe/",
+    "emailAddress": "neofelhz@gmail.com",	
     "name": "neo Felhz"
   },
   {
@@ -584,11 +585,13 @@
   {
     "id": 116,
     "homeUrl": "https://github.com/cbuijs/",
+    "emailAddress": "github@chrisbuijs.com",
     "name": "Chris Buijs"
   },
   {
     "id": 117,
     "homeUrl": "https://intr0.com/",
+    "emailAddress": "admin@intr0.com",
     "name": "intr0"
   },
   {
@@ -599,6 +602,7 @@
   {
     "id": 119,
     "homeUrl": "https://github.com/hectorm",
+    "emailAddress": "hector@molinero.dev",	
     "name": "Héctor Molinero Fernández"
   },
   {
