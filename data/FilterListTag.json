@@ -6889,6 +6889,30 @@
   },
   {
     "filterListId": 1507,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1508,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1508,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1509,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1509,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1510,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1510,
     "tagId": 3
   }
 ]

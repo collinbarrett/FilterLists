@@ -628,5 +628,11 @@
     "homeUrl": "http://bambenekconsulting.com",
     "emailAddress": "jcb@bambenekconsulting.com",
     "name": "John Bambenek"
+  },
+  {
+    "id": 125,
+    "homeUrl": "http://www.joewein.de",
+    "emailAddress": "jwspamspy@pobox.com",
+    "name": "Joe Wein"
   }
 ]

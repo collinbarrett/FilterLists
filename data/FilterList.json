@@ -16131,5 +16131,32 @@
     "syntaxId": 2,
     "updatedDate": "2019-02-11T14:22:09",
     "viewUrl": "http://osint.bambenekconsulting.com/feeds/dga-feed.txt"
+  },
+  {
+    "id": 1508,
+    "description": "This file contains the bulk of the spam domains. It is updated infrequently and therefore need not be downloaded more than once a week. You must not download it more than once a day or your IP address may be blocked without notice.",
+    "homeUrl": "http://www.joewein.de/sw/bl-text.htm",
+    "donateUrl": "http://www.joewein.de/sw/bl-text.htm#donate",
+    "name": "JoeWein's Domain blacklist base",
+    "syntaxId": 2,
+    "viewUrl": "https://joewein.net/dl/bl/dom-bl-base.txt"
+  },
+  {
+    "id": 1509,
+    "description": "This file contains additions made during the last week or two only. You can download once per day or more, but we currently don't recommend intervals more frequent than hourly.",
+    "homeUrl": "http://www.joewein.de/sw/bl-text.htm",
+    "donateUrl": "http://www.joewein.de/sw/bl-text.htm#donate",
+    "name": "JoeWein's Domain blacklist new",
+    "syntaxId": 2,
+    "viewUrl": "https://joewein.net/dl/bl/dom-bl.txt"
+  },
+  {
+    "id": 1510,
+    "description": "List of black email addresses.",
+    "homeUrl": "http://www.joewein.de/sw/bl-text.htm",
+    "donateUrl": "http://www.joewein.de/sw/bl-text.htm#donate",
+    "name": "JoeWein's Email sender blacklist",
+    "syntaxId": 2,
+    "viewUrl": "https://joewein.net/dl/bl/from-bl.txt"
   }
 ]
