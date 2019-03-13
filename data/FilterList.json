@@ -16026,10 +16026,44 @@
   },
     {
     "id": 1495,
-    "name": "tankmohit's UnifiedHosts",
-	"description": "Unified hosts combined from wally3k pihole lists and possibly without false positives ",
+    "name": "tankmohit's AllUnifiedHosts",
+	"description": "Unified hosts combined from wally3k pihole lists and possibly without false positives",
     "syntaxId": 14,
     "homeUrl": "https://github.com/tankmohit/UnifiedHosts",
     "viewUrl": "https://raw.githubusercontent.com/tankmohit/UnifiedHosts/master/hosts.all"
+  },
+    {
+    "id": 1496,
+    "name": "Temporary Autonomous Zone Spam Domains",
+    "syntaxId": 14,
+    "homeUrl": "http://www.taz.net.au/Mail/",
+    "viewUrl": "http://www.taz.net.au/Mail/SpamDomains"
+  }
+  ,
+    {
+    "id": 1497,
+    "name": "tankmohit's WhitelistUnifiedHosts",
+	"description": "Unified hosts combined from wally3k pihole lists and possibly without false positives",
+    "syntaxId": 14,
+    "homeUrl": "https://github.com/tankmohit/UnifiedHosts",
+    "viewUrl": "https://github.com/tankmohit/UnifiedHosts/blob/master/whitelist"
+  },
+    {
+    "id": 1498,
+    "name": "Stop Google Analytics Ghost Spam Active List",
+	"description": "How to stop Google Analytics \"Ghost\" Spam using a well curated list of spam referrer domains and web sites. Simple and easy to use with instructions for creating Segments in Google Analytics using our google-exclude files.",
+    "syntaxId": 14,
+	    "licenseId": 2,
+    "homeUrl": "https://github.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO/master/output/domains/ACTIVE/list"
+  },
+    {
+    "id": 1499,
+    "name": "Stop Google Analytics Ghost Spam Inactive List",
+	"description": "How to stop Google Analytics \"Ghost\" Spam using a well curated list of spam referrer domains and web sites. Simple and easy to use with instructions for creating Segments in Google Analytics using our google-exclude files.",
+    "syntaxId": 14,
+	    "licenseId": 2,
+    "homeUrl": "https://github.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO/master/output/domains/INACTIVE/list"
   }
 ]
