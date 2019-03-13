@@ -16153,5 +16153,13 @@
     "donateUrl": "http://www.joewein.de/sw/bl-text.htm#donate",
     "name": "JoeWein's Email sender blacklist",
     "viewUrl": "https://joewein.net/dl/bl/from-bl.txt"
+  },
+  {
+    "id": 1511,
+    "description": "This custom Fail2Ban filter and jail will deal with all scans for common Wordpress, Joomla and other Web Exploits being scanned for by automated bots and those seeking to find exploitable web sites.",
+	"licenseId": 2,
+    "homeUrl": "https://github.com/mitchellkrogza/Fail2Ban.WebExploits",
+    "name": "Fail2Ban WebExploits",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Fail2Ban.WebExploits/master/input-source/exploits.list"
   }
 ]
