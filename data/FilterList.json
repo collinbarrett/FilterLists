@@ -16120,5 +16120,16 @@
     "issuesUrl": "https://github.com/ReddestDream/reddestdream.github.io/issues",
 	"syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/ReddestDream/reddestdream.github.io/master/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts"
-  }
+  },
+    {
+    "id": 1507,
+    "description": "Domain feed of known DGA domains from -2 to +3 days",
+    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YMFSMT9MW2Y6Q",
+    "homeUrl": "https://osint.bambenekconsulting.com/feeds/",
+    "licenseId": 21,
+    "name": "DGA domains",
+    "syntaxId": 2,
+    "updatedDate": "2019-02-11T14:22:09",
+    "viewUrl": "http://osint.bambenekconsulting.com/feeds/dga-feed.txt"
+  },
 ]
