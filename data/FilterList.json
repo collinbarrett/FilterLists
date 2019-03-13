@@ -16110,7 +16110,7 @@
     "name": "ReddestDream MinimalHostsBlockerCB",
     "homeUrl": "https://github.com/ReddestDream/reddestdream.github.io",
     "issuesUrl": "https://github.com/ReddestDream/reddestdream.github.io/issues",
-	"syntaxId": 1,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/ReddestDream/reddestdream.github.io/master/Projects/MinimalHostsCB/etc/MinimalHostsBlocker/minimalhosts"
   },
   {
@@ -16118,10 +16118,10 @@
     "name": "ReddestDream MinimalHosts",
     "homeUrl": "https://github.com/ReddestDream/reddestdream.github.io",
     "issuesUrl": "https://github.com/ReddestDream/reddestdream.github.io/issues",
-	"syntaxId": 1,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/ReddestDream/reddestdream.github.io/master/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts"
   },
-    {
+  {
     "id": 1507,
     "description": "Domain feed of known DGA domains from -2 to +3 days",
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YMFSMT9MW2Y6Q",
@@ -16131,5 +16131,5 @@
     "syntaxId": 2,
     "updatedDate": "2019-02-11T14:22:09",
     "viewUrl": "http://osint.bambenekconsulting.com/feeds/dga-feed.txt"
-  },
+  }
 ]
