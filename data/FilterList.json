@@ -15891,7 +15891,7 @@
     "updatedDate": "2019-03-07T03:30:18",
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts DNSMASQ",
-	    "syntaxId": 20,
+    "syntaxId": 20,
     "viewUrl": "https://hblock.molinero.xyz/hosts_dnsmasq.conf"
   },
   {
@@ -15906,7 +15906,7 @@
     "name": "jawz101 MobileAdTrackers",
     "homeUrl": "https://github.com/jawz101/MobileAdTrackers",
     "issuesUrl": "https://github.com/jawz101/MobileAdTrackers/issues",
-	 "syntaxId": 14,
+    "syntaxId": 14,
     "viewUrl": "https://raw.githubusercontent.com/jawz101/MobileAdTrackers/master/hosts"
   },
   {
@@ -15914,7 +15914,7 @@
     "name": "Optimized PI Hole HOSTS",
     "description": "Optimized ad domains for your phone.",
     "updatedDate": "2019-03-09T23:08:18",
-	 "syntaxId": 2,
+    "syntaxId": 2,
     "viewUrl": "https://dbl2.oisd.nl/"
   },
   {
@@ -15954,7 +15954,7 @@
     "homeUrl": "https://github.com/ngosang/trackerslist",
     "viewUrl": "https://raw.githubusercontent.com/ngosang/trackerslist/master/blacklist.txt"
   },
-   {
+  {
     "id": 1487,
     "name": "Quedlin Blacklist",
     "syntaxId": 2,
@@ -16024,46 +16024,60 @@
     "homeUrl": "http://www.carl.net",
     "viewUrl": "http://www.carl.net/spam/access.txt"
   },
-    {
+  {
     "id": 1495,
     "name": "tankmohit's AllUnifiedHosts",
-	"description": "Unified hosts combined from wally3k pihole lists and possibly without false positives",
+    "description": "Unified hosts combined from wally3k pihole lists and possibly without false positives",
     "syntaxId": 14,
     "homeUrl": "https://github.com/tankmohit/UnifiedHosts",
     "viewUrl": "https://raw.githubusercontent.com/tankmohit/UnifiedHosts/master/hosts.all"
   },
-    {
+  {
     "id": 1496,
     "name": "Temporary Autonomous Zone Spam Domains",
     "syntaxId": 14,
     "homeUrl": "http://www.taz.net.au/Mail/",
     "viewUrl": "http://www.taz.net.au/Mail/SpamDomains"
-  }
-  ,
-    {
+  },
+  {
     "id": 1497,
     "name": "tankmohit's WhitelistUnifiedHosts",
-	"description": "Unified hosts combined from wally3k pihole lists and possibly without false positives",
+    "description": "Unified hosts combined from wally3k pihole lists and possibly without false positives",
     "syntaxId": 14,
     "homeUrl": "https://github.com/tankmohit/UnifiedHosts",
     "viewUrl": "https://github.com/tankmohit/UnifiedHosts/blob/master/whitelist"
   },
-    {
+  {
     "id": 1498,
     "name": "Stop Google Analytics Ghost Spam Active List",
-	"description": "How to stop Google Analytics \"Ghost\" Spam using a well curated list of spam referrer domains and web sites. Simple and easy to use with instructions for creating Segments in Google Analytics using our google-exclude files.",
+    "description": "How to stop Google Analytics \"Ghost\" Spam using a well curated list of spam referrer domains and web sites. Simple and easy to use with instructions for creating Segments in Google Analytics using our google-exclude files.",
     "syntaxId": 14,
-	    "licenseId": 2,
+    "licenseId": 2,
     "homeUrl": "https://github.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO/master/output/domains/ACTIVE/list"
   },
-    {
+  {
     "id": 1499,
     "name": "Stop Google Analytics Ghost Spam Inactive List",
-	"description": "How to stop Google Analytics \"Ghost\" Spam using a well curated list of spam referrer domains and web sites. Simple and easy to use with instructions for creating Segments in Google Analytics using our google-exclude files.",
+    "description": "How to stop Google Analytics \"Ghost\" Spam using a well curated list of spam referrer domains and web sites. Simple and easy to use with instructions for creating Segments in Google Analytics using our google-exclude files.",
     "syntaxId": 14,
-	    "licenseId": 2,
+    "licenseId": 2,
     "homeUrl": "https://github.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO/master/output/domains/INACTIVE/list"
+  },
+  {
+    "id": 1500,
+    "name": "Cybercrime List",
+    "syntaxId": 8,
+    "homeUrl": "http://cybercrime-tracker.net",
+    "viewUrl": "http://cybercrime-tracker.net/all.php"
+  },
+  {
+    "id": 1501,
+    "name": "joelotz URLBlacklist",
+    "syntaxId": 8,
+    "description": "This is a project that provides a pornography URL blacklist",
+    "homeUrl": "https://github.com//joelotz/URL_Blacklist",
+    "viewUrl": "https://raw.githubusercontent.com/joelotz/URL_Blacklist/master/blacklist.csv"
   }
 ]
