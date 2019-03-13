@@ -15891,6 +15891,7 @@
     "updatedDate": "2019-03-07T03:30:18",
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts DNSMASQ",
+	    "syntaxId": 20,
     "viewUrl": "https://hblock.molinero.xyz/hosts_dnsmasq.conf"
   },
   {
@@ -15905,6 +15906,7 @@
     "name": "jawz101 MobileAdTrackers",
     "homeUrl": "https://github.com/jawz101/MobileAdTrackers",
     "issuesUrl": "https://github.com/jawz101/MobileAdTrackers/issues",
+	 "syntaxId": 14,
     "viewUrl": "https://raw.githubusercontent.com/jawz101/MobileAdTrackers/master/hosts"
   },
   {
@@ -15912,6 +15914,7 @@
     "name": "Optimized PI Hole HOSTS",
     "description": "Optimized ad domains for your phone.",
     "updatedDate": "2019-03-09T23:08:18",
+	 "syntaxId": 2,
     "viewUrl": "https://dbl2.oisd.nl/"
   },
   {
@@ -15950,6 +15953,13 @@
     "description": "An updated list of public BitTorrent trackers",
     "homeUrl": "https://github.com/ngosang/trackerslist",
     "viewUrl": "https://raw.githubusercontent.com/ngosang/trackerslist/master/blacklist.txt"
+  },
+   {
+    "id": 1487,
+    "name": "Quedlin Blacklist",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/quedlin/blacklist",
+    "viewUrl": "https://raw.githubusercontent.com/quedlin/blacklist/master/domains"
   },
   {
     "id": 1488,
@@ -16013,5 +16023,13 @@
     "licenseId": 11,
     "homeUrl": "http://www.carl.net",
     "viewUrl": "http://www.carl.net/spam/access.txt"
+  },
+    {
+    "id": 1495,
+    "name": "tankmohit's UnifiedHosts",
+	"description": "Unified hosts combined from wally3k pihole lists and possibly without false positives ",
+    "syntaxId": 14,
+    "homeUrl": "https://github.com/tankmohit/UnifiedHosts",
+    "viewUrl": "https://raw.githubusercontent.com/tankmohit/UnifiedHosts/master/hosts.all"
   }
 ]
