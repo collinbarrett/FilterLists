@@ -4274,13 +4274,17 @@
   {
     "filterListId": 1517,
     "maintainerId": 121
-},
+  },
   {
     "filterListId": 1518,
     "maintainerId": 121
   },
   {
     "filterListId": 1519,
+    "maintainerId": 121
+  },
+  {
+    "filterListId": 1520,
     "maintainerId": 121
   }
 ]
