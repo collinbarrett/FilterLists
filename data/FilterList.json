@@ -16180,5 +16180,59 @@
     "name": "Gulchenko's SquidBlackList",
     "syntaxId": 8,
     "viewUrl": "https://raw.githubusercontent.com/oleksiig/Squid-BlackList/master/denied_ext.conf"
+  },
+  {
+    "id": 1514,
+    "homeUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects",
+    "issuesUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/issues",
+    "name": "mitchellkrogza's Dead Domains",
+    "syntaxId": 8,
+	"licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/master/DOMAINS-dead.txt"
+  } ,
+  {
+    "id": 1515,
+    "homeUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects",
+    "issuesUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/issues",
+    "name": "mitchellkrogza's Re-Active Domains",
+    "syntaxId": 8,
+	"licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/master/DOMAINS-re-active.txt"
+  } ,
+  {
+    "id": 1516,
+    "homeUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects",
+    "issuesUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/issues",
+    "name": "mitchellkrogza's Whitelisted",
+    "syntaxId": 8,
+	"licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/master/DOMAINS-whitelist.txt"
+  }  ,
+  {
+    "id": 1517,
+    "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
+    "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
+    "name": "Ultimate Hosts Blacklist IPs",
+    "syntaxId": 9,
+	"licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/ips/ips0.list"
+  }  ,
+  {
+    "id": 1517,
+    "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
+    "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
+    "name": "Ultimate Hosts Blacklist",
+    "syntaxId": 1,
+	"licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/hosts/hosts0"
+  } ,
+  {
+    "id": 1518,
+    "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
+    "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
+    "name": "Ultimate Hosts Blacklist Domains",
+    "syntaxId": 8,
+	"licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/domains/domains0.list"
   }
 ]
