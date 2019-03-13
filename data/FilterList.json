@@ -16248,7 +16248,7 @@
     "homeUrl": "https://hosts.ubuntu101.co.za/",
     "name": "Ultimate Hosts Blacklist dany",
     "licenseId": 2,
-    "viewUrl": "https://hosts.ubuntu101.co.za/hosts.deny",
+    "viewUrl": "https://hosts.ubuntu101.co.za/hosts.deny"
   },
   {
     "id": 1522,
@@ -16257,5 +16257,4 @@
     "licenseId": 2,
     "viewUrl": "https://hosts.ubuntu101.co.za/superhosts.deny"
   }
-  
 ]
