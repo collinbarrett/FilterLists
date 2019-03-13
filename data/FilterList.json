@@ -16242,5 +16242,20 @@
     "name": "Ultimate Hosts Blacklist Superhosts",
     "licenseId": 2,
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/superhosts.deny/superhosts0.deny"
+  },
+  {
+    "id": 1521,
+    "homeUrl": "https://hosts.ubuntu101.co.za/",
+    "name": "Ultimate Hosts Blacklist dany",
+    "licenseId": 2,
+    "viewUrl": "https://hosts.ubuntu101.co.za/hosts.deny",
+  },
+  {
+    "id": 1522,
+    "homeUrl": "https://hosts.ubuntu101.co.za/",
+    "name": "Ultimate Hosts Blacklist Superhosts",
+    "licenseId": 2,
+    "viewUrl": "https://hosts.ubuntu101.co.za/superhosts.deny"
   }
+  
 ]
