@@ -6699,20 +6699,6 @@
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt"
   },
   {
-    "id": 615,
-    "chatUrl": "https://discord.me/polskiefiltry",
-    "description": "Filters that unlock right-clicking.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_unlocking_right_click.txt",
-    "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
-    "licenseId": 9,
-    "name": "Polish Annoyance Filters - Unlocking Right Click",
-    "publishedDate": "2018-06-27T17:32:02",
-    "syntaxId": 17,
-    "updatedDate": "2018-10-19T15:39:45",
-    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_unlocking_right_click.txt"
-  },
-  {
     "id": 616,
     "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block various other widgets.",
@@ -15869,5 +15855,406 @@
     "name": "Blah DNS Hosts whitelist",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/whitelist.txt"
+  },
+  {
+    "id": 1475,
+    "homeUrl": "https://hblock.molinero.xyz/",
+    "name": "hBlock Hosts",
+    "syntaxId": 1,
+    "updatedDate": "2019-03-07T03:30:18",
+    "viewUrl": "https://hblock.molinero.xyz/hosts"
+  },
+  {
+    "id": 1476,
+    "homeUrl": "https://hblock.molinero.xyz/",
+    "name": "hBlock Hosts for Android",
+    "syntaxId": 1,
+    "updatedDate": "2019-03-07T03:30:18",
+    "viewUrl": "https://hblock.molinero.xyz/hosts_android.zip"
+  },
+  {
+    "id": 1477,
+    "updatedDate": "2019-03-07T03:30:18",
+    "homeUrl": "https://hblock.molinero.xyz/",
+    "name": "hBlock Hosts RPZ",
+    "viewUrl": "https://hblock.molinero.xyz/hosts_rpz.txt"
+  },
+  {
+    "id": 1478,
+    "updatedDate": "2019-03-07T03:30:18",
+    "homeUrl": "https://hblock.molinero.xyz/",
+    "name": "hBlock Hosts Unbound",
+    "viewUrl": "https://hblock.molinero.xyz/hosts_unbound.conf"
+  },
+  {
+    "id": 1479,
+    "updatedDate": "2019-03-07T03:30:18",
+    "homeUrl": "https://hblock.molinero.xyz/",
+    "name": "hBlock Hosts DNSMASQ",
+    "viewUrl": "https://hblock.molinero.xyz/hosts_dnsmasq.conf"
+  },
+  {
+    "id": 1480,
+    "name": "Blah DNS RPZ Blacklist",
+    "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
+    "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
+    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/rpz.blacklist"
+  },
+  {
+    "id": 1481,
+    "name": "jawz101 MobileAdTrackers",
+    "homeUrl": "https://github.com/jawz101/MobileAdTrackers",
+    "issuesUrl": "https://github.com/jawz101/MobileAdTrackers/issues",
+    "syntaxId": 14,
+    "viewUrl": "https://raw.githubusercontent.com/jawz101/MobileAdTrackers/master/hosts"
+  },
+  {
+    "id": 1482,
+    "name": "Optimized PI Hole HOSTS",
+    "description": "Optimized ad domains for your phone.",
+    "updatedDate": "2019-03-09T23:08:18",
+    "syntaxId": 2,
+    "viewUrl": "https://dbl2.oisd.nl/"
+  },
+  {
+    "id": 1483,
+    "name": "280blocker adblock domain lists",
+    "description": "A filter list that blocks mobile advertisements and trackers on Japanese properties",
+    "homeUrl": "https://280blocker.net",
+    "licenseId": 1,
+    "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLScNeZhFrFZt9GhIVGdThGz7oyepcNRKuOi5PJDnsC-awxTeOQ/viewform",
+    "syntaxId": 2,
+    "updatedDate": "2019-02-02T05:57:11",
+    "viewUrl": "https://280blocker.net/files/280blocker_domain.txt"
+  },
+  {
+    "id": 1484,
+    "name": "Block List Project: Torrent",
+    "updatedDate": "2019-03-09T23:08:18",
+    "syntaxId": 2,
+    "homeUrl": "https://tspprs.com/",
+    "viewUrl": "https://tspprs.com/dl/torrent"
+  },
+  {
+    "id": 1485,
+    "name": "List of torrent trackers",
+    "syntaxId": 8,
+    "licenseId": 19,
+    "description": "An updated list of public BitTorrent trackers",
+    "homeUrl": "https://github.com/ngosang/trackerslist",
+    "viewUrl": "https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt"
+  },
+  {
+    "id": 1486,
+    "name": "List of torrent trackers: Blacklist",
+    "syntaxId": 8,
+    "licenseId": 19,
+    "description": "An updated list of public BitTorrent trackers",
+    "homeUrl": "https://github.com/ngosang/trackerslist",
+    "viewUrl": "https://raw.githubusercontent.com/ngosang/trackerslist/master/blacklist.txt"
+  },
+  {
+    "id": 1487,
+    "name": "Quedlin Blacklist",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/quedlin/blacklist",
+    "viewUrl": "https://raw.githubusercontent.com/quedlin/blacklist/master/domains"
+  },
+  {
+    "id": 1488,
+    "name": "Suspicious Snooping Sniffing Hacking IP Addresses",
+    "syntaxId": 9,
+    "licenseId": 2,
+    "description": "A daily updated list of suspicious, snooping, sniffing and hacking attempts from IP addresses against services like SSH, HTTP and Wordpress Hack Attempts",
+    "homeUrl": "https://github.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses/",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses/master/ips.list"
+  },
+  {
+    "id": 1489,
+    "name": "The Big List of Hacked Malware Web Sites",
+    "syntaxId": 2,
+    "licenseId": 2,
+    "description": "This repository contains a list of all web sites I come across that are either hacked with or purposefully hosting malware, ransomware, viruses or trojans.",
+    "homeUrl": "https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hacked-domains.list"
+  },
+  {
+    "id": 1490,
+    "name": "Phishing Domain Database",
+    "syntaxId": 2,
+    "licenseId": 2,
+    "description": "Phishing Domains, urls websites and threats database. We use the PyFunceble testing tool to validate the status of all known Phishing domains and provide stats to reveal how many unique domains used for Phishing are still active.",
+    "homeUrl": "https://github.com/mitchellkrogza/Phishing.Database",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-domains-ACTIVE.txt"
+  },
+  {
+    "id": 1491,
+    "name": "The Ultimate Daily Hosts Blacklist",
+    "licenseId": 2,
+    "description": "The Ultimate hosts file for protecting your computer or device against over a million bad web sites. Protect your children and family from gaining access to bad web sites and protect your devices and pc from being infected with Malware or Ransomware.",
+    "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/hosts.deny/hosts0.deny"
+  },
+  {
+    "id": 1492,
+    "name": "The Ultimate Daily Hosts Blacklist",
+    "syntaxId": 9,
+    "licenseId": 2,
+    "description": "The Ultimate hosts file for protecting your computer or device against over a million bad web sites. Protect your children and family from gaining access to bad web sites and protect your devices and pc from being infected with Malware or Ransomware.",
+    "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/hosts.deny/hosts0.deny"
+  },
+  {
+    "id": 1493,
+    "name": "Greatis Anti-WebMiner",
+    "licenseId": 19,
+    "description": "Anti-WebMiner protects your PC against web cryptocurrency miners (JS scripts like Coinhive executed in the browser) by modifying Windows hosts file",
+    "homeUrl": "https://github.com/greatis/Anti-WebMiner/",
+    "issuesUrl": "https://github.com/greatis/Anti-WebMiner/issues",
+    "viewUrl": "https://raw.githubusercontent.com/greatis/Anti-WebMiner/master/blacklist.txt"
+  },
+  {
+    "id": 1494,
+    "name": "Carl's Spam List",
+    "licenseId": 11,
+    "homeUrl": "http://www.carl.net",
+    "viewUrl": "http://www.carl.net/spam/access.txt"
+  },
+  {
+    "id": 1495,
+    "name": "tankmohit's AllUnifiedHosts",
+    "description": "Unified hosts combined from wally3k pihole lists and possibly without false positives",
+    "syntaxId": 14,
+    "homeUrl": "https://github.com/tankmohit/UnifiedHosts",
+    "viewUrl": "https://raw.githubusercontent.com/tankmohit/UnifiedHosts/master/hosts.all"
+  },
+  {
+    "id": 1496,
+    "name": "Temporary Autonomous Zone Spam Domains",
+    "syntaxId": 2,
+    "homeUrl": "http://www.taz.net.au/Mail/",
+    "viewUrl": "http://www.taz.net.au/Mail/SpamDomains"
+  },
+  {
+    "id": 1497,
+    "name": "tankmohit's WhitelistUnifiedHosts",
+    "description": "Unified hosts combined from wally3k pihole lists and possibly without false positives",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/tankmohit/UnifiedHosts",
+    "viewUrl": "https://raw.githubusercontent.com/tankmohit/UnifiedHosts/master/whitelist"
+  },
+  {
+    "id": 1498,
+    "name": "Stop Google Analytics Ghost Spam Active List",
+    "description": "How to stop Google Analytics \"Ghost\" Spam using a well curated list of spam referrer domains and web sites. Simple and easy to use with instructions for creating Segments in Google Analytics using our google-exclude files.",
+    "syntaxId": 2,
+    "licenseId": 2,
+    "homeUrl": "https://github.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO/master/output/domains/ACTIVE/list"
+  },
+  {
+    "id": 1499,
+    "name": "Stop Google Analytics Ghost Spam Inactive List",
+    "description": "How to stop Google Analytics \"Ghost\" Spam using a well curated list of spam referrer domains and web sites. Simple and easy to use with instructions for creating Segments in Google Analytics using our google-exclude files.",
+    "syntaxId": 2,
+    "licenseId": 2,
+    "homeUrl": "https://github.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO/master/output/domains/INACTIVE/list"
+  },
+  {
+    "id": 1500,
+    "name": "Cybercrime List",
+    "syntaxId": 8,
+    "homeUrl": "http://cybercrime-tracker.net",
+    "viewUrl": "http://cybercrime-tracker.net/all.php"
+  },
+  {
+    "id": 1501,
+    "name": "joelotz URLBlacklist",
+    "syntaxId": 8,
+    "description": "This is a project that provides a pornography URL blacklist",
+    "homeUrl": "https://github.com//joelotz/URL_Blacklist",
+    "viewUrl": "https://raw.githubusercontent.com/joelotz/URL_Blacklist/master/blacklist.csv"
+  },
+  {
+    "id": 1502,
+    "name": "DNS Zone Blacklist Generator BIND",
+    "description": "This project generates dnsmasq, bind and unbound zone files to be used in DNS based AD Blockers.",
+    "homeUrl": "https://github.com/oznu/dns-zone-blacklist",
+    "issuesUrl": "https://github.com/oznu/dns-zone-blacklist/issues",
+    "viewUrl": "https://raw.githubusercontent.com/oznu/dns-zone-blacklist/master/bind/zones.blacklist"
+  },
+  {
+    "id": 1503,
+    "name": "DNS Zone Blacklist Generator Dnsmasq",
+    "description": "This project generates dnsmasq, bind and unbound zone files to be used in DNS based AD Blockers.",
+    "homeUrl": "https://github.com/oznu/dns-zone-blacklist",
+    "issuesUrl": "https://github.com/oznu/dns-zone-blacklist/issues",
+    "syntaxId": 20,
+    "viewUrl": "https://raw.githubusercontent.com/oznu/dns-zone-blacklist/master/dnsmasq/dnsmasq.blacklist"
+  },
+  {
+    "id": 1504,
+    "name": "DNS Zone Blacklist Generator Unbound",
+    "description": "This project generates dnsmasq, bind and unbound zone files to be used in DNS based AD Blockers.",
+    "homeUrl": "https://github.com/oznu/dns-zone-blacklist",
+    "issuesUrl": "https://github.com/oznu/dns-zone-blacklist/issues",
+    "viewUrl": "https://raw.githubusercontent.com/oznu/dns-zone-blacklist/master/unbound/unbound.blacklist"
+  },
+  {
+    "id": 1505,
+    "name": "ReddestDream MinimalHostsBlockerCB",
+    "homeUrl": "https://github.com/ReddestDream/reddestdream.github.io",
+    "issuesUrl": "https://github.com/ReddestDream/reddestdream.github.io/issues",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/ReddestDream/reddestdream.github.io/master/Projects/MinimalHostsCB/etc/MinimalHostsBlocker/minimalhosts"
+  },
+  {
+    "id": 1506,
+    "name": "ReddestDream MinimalHosts",
+    "homeUrl": "https://github.com/ReddestDream/reddestdream.github.io",
+    "issuesUrl": "https://github.com/ReddestDream/reddestdream.github.io/issues",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/ReddestDream/reddestdream.github.io/master/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts"
+  },
+  {
+    "id": 1507,
+    "description": "Domain feed of known DGA domains from -2 to +3 days",
+    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YMFSMT9MW2Y6Q",
+    "homeUrl": "https://osint.bambenekconsulting.com/feeds/",
+    "licenseId": 21,
+    "name": "DGA domains",
+    "syntaxId": 2,
+    "updatedDate": "2019-02-11T14:22:09",
+    "viewUrl": "http://osint.bambenekconsulting.com/feeds/dga-feed.txt"
+  },
+  {
+    "id": 1508,
+    "description": "This file contains the bulk of the spam domains. It is updated infrequently and therefore need not be downloaded more than once a week. You must not download it more than once a day or your IP address may be blocked without notice.",
+    "homeUrl": "http://www.joewein.de/sw/bl-text.htm",
+    "donateUrl": "http://www.joewein.de/sw/bl-text.htm#donate",
+    "name": "JoeWein's Domain blacklist base",
+    "syntaxId": 2,
+    "viewUrl": "https://joewein.net/dl/bl/dom-bl-base.txt"
+  },
+  {
+    "id": 1509,
+    "description": "This file contains additions made during the last week or two only. You can download once per day or more, but we currently don't recommend intervals more frequent than hourly.",
+    "homeUrl": "http://www.joewein.de/sw/bl-text.htm",
+    "donateUrl": "http://www.joewein.de/sw/bl-text.htm#donate",
+    "name": "JoeWein's Domain blacklist new",
+    "syntaxId": 2,
+    "viewUrl": "https://joewein.net/dl/bl/dom-bl.txt"
+  },
+  {
+    "id": 1510,
+    "description": "List of black email addresses.",
+    "homeUrl": "http://www.joewein.de/sw/bl-text.htm",
+    "donateUrl": "http://www.joewein.de/sw/bl-text.htm#donate",
+    "name": "JoeWein's Email sender blacklist",
+    "viewUrl": "https://joewein.net/dl/bl/from-bl.txt"
+  },
+  {
+    "id": 1511,
+    "description": "This custom Fail2Ban filter and jail will deal with all scans for common Wordpress, Joomla and other Web Exploits being scanned for by automated bots and those seeking to find exploitable web sites.",
+    "licenseId": 2,
+    "homeUrl": "https://github.com/mitchellkrogza/Fail2Ban.WebExploits",
+    "name": "Fail2Ban WebExploits",
+    "issuesUrl": "https://github.com/mitchellkrogza/Fail2Ban.WebExploits/issues",
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Fail2Ban.WebExploits/master/input-source/exploits.list"
+  },
+  {
+    "id": 1512,
+    "description": "This is a community list with a blacklist of IP addresses.",
+    "licenseId": 2,
+    "homeUrl": "https://www.badips.com/",
+    "issuesUrl": "https://www.badips.com/documentation#3",
+    "name": "BadIPs",
+    "viewUrl": "https://www.badips.com/info"
+  },
+  {
+    "id": 1513,
+    "description": "Black list for Squid proxy.",
+    "homeUrl": "https://github.com/oleksiig/Squid-BlackList/",
+    "issuesUrl": "https://www.badips.com/documentation#3",
+    "name": "Gulchenko's SquidBlackList",
+    "syntaxId": 8,
+    "viewUrl": "https://raw.githubusercontent.com/oleksiig/Squid-BlackList/master/denied_ext.conf"
+  },
+  {
+    "id": 1514,
+    "homeUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects",
+    "issuesUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/issues",
+    "name": "mitchellkrogza's Dead Domains",
+    "syntaxId": 8,
+    "licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/master/DOMAINS-dead.txt"
+  },
+  {
+    "id": 1515,
+    "homeUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects",
+    "issuesUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/issues",
+    "name": "mitchellkrogza's Re-Active Domains",
+    "syntaxId": 8,
+    "licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/master/DOMAINS-re-active.txt"
+  },
+  {
+    "id": 1516,
+    "homeUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects",
+    "issuesUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/issues",
+    "name": "mitchellkrogza's Whitelisted",
+    "syntaxId": 8,
+    "licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/master/DOMAINS-whitelist.txt"
+  },
+  {
+    "id": 1517,
+    "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
+    "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
+    "name": "Ultimate Hosts Blacklist IPs",
+    "syntaxId": 9,
+    "licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/ips/ips0.list"
+  },
+  {
+    "id": 1518,
+    "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
+    "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
+    "name": "Ultimate Hosts Blacklist",
+    "syntaxId": 1,
+    "licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/hosts/hosts0"
+  },
+  {
+    "id": 1519,
+    "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
+    "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
+    "name": "Ultimate Hosts Blacklist Domains",
+    "syntaxId": 8,
+    "licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/domains/domains0.list"
+  },
+  {
+    "id": 1520,
+    "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
+    "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
+    "name": "Ultimate Hosts Blacklist Superhosts",
+    "licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/superhosts.deny/superhosts0.deny"
+  },
+  {
+    "id": 1521,
+    "homeUrl": "https://hosts.ubuntu101.co.za/",
+    "name": "Ultimate Hosts Blacklist dany",
+    "licenseId": 2,
+    "viewUrl": "https://hosts.ubuntu101.co.za/hosts.deny"
+  },
+  {
+    "id": 1522,
+    "homeUrl": "https://hosts.ubuntu101.co.za/",
+    "name": "Ultimate Hosts Blacklist Superhosts",
+    "licenseId": 2,
+    "viewUrl": "https://hosts.ubuntu101.co.za/superhosts.deny"
   }
 ]

@@ -574,6 +574,7 @@
   {
     "id": 114,
     "homeUrl": "https://nfz.moe/",
+    "emailAddress": "neofelhz@gmail.com",	
     "name": "neo Felhz"
   },
   {
@@ -584,16 +585,59 @@
   {
     "id": 116,
     "homeUrl": "https://github.com/cbuijs/",
+    "emailAddress": "github@chrisbuijs.com",
     "name": "Chris Buijs"
   },
   {
     "id": 117,
     "homeUrl": "https://intr0.com/",
+    "emailAddress": "admin@intr0.com",
     "name": "intr0"
   },
   {
     "id": 118,
     "homeUrl": "https://github.com/ookangzheng",
     "name": "ookangzheng"
+  },
+  {
+    "id": 119,
+    "homeUrl": "https://github.com/hectorm",
+    "emailAddress": "hector@molinero.dev",	
+    "name": "Héctor Molinero Fernández"
+  },
+  {
+    "id": 120,
+    "homeUrl": "https://github.com/ngosang",
+    "name": "Diego Heras"
+  },
+  {
+    "id": 121,
+    "homeUrl": "https://github.com/mitchellkrogza",
+    "emailAddress": "mitchellkrog@gmail.com",	
+    "name": "mitchellkrogza"
+  },
+  {
+    "id": 122,
+    "homeUrl": "https://oz.nu/",
+    "emailAddress": "dev@oz.nu",
+    "name": "oznu"
+  },
+  {
+    "id": 123,
+    "homeUrl": "https://github.com/ReddestDream",
+    "emailAddress": "reddestdream@gmail.com",
+    "name": "ReddestDream"
+  },
+  {
+    "id": 124,
+    "homeUrl": "http://bambenekconsulting.com",
+    "emailAddress": "jcb@bambenekconsulting.com",
+    "name": "John Bambenek"
+  },
+  {
+    "id": 125,
+    "homeUrl": "http://www.joewein.de",
+    "emailAddress": "jwspamspy@pobox.com",
+    "name": "Joe Wein"
   }
 ]
