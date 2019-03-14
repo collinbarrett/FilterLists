@@ -1,7 +1,8 @@
 [
   {
     "id": 2,
-    "name": "AppliliZ"
+    "name": "AppliliZ",
+    "twitterHandle": "280blocker"
   },
   {
     "id": 3,
@@ -60,7 +61,9 @@
   {
     "id": 14,
     "homeUrl": "https://www.fanboy.co.nz/",
-    "name": "fanboy"
+    "name": "Ryan Brown",
+    "emailAddress": "mp3geek@gmail.com",
+    "twitterHandle": "fanboynz"
   },
   {
     "id": 15,
@@ -105,7 +108,7 @@
   },
   {
     "id": 23,
-    "emailAddress": "contactme@abuse.ch",
+    "emailAddress": "cosntacptamem@abuse.ch",
     "homeUrl": "https://abuse.ch/",
     "name": "abuse.ch",
     "twitterHandle": "abuse_ch"
@@ -129,24 +132,26 @@
   {
     "id": 27,
     "homeUrl": "https://ker.af/",
-    "name": "Rafael K",
+    "name": "Rafael Keramidas",
     "twitterHandle": "iamkeraf"
   },
   {
     "id": 28,
     "homeUrl": "https://github.com/maciejtarmas",
-    "name": "Maciej Tarmas"
+    "name": "Maciej Tarmas",
+    "emailAddress": "blablabla@alleblock.pl"
   },
   {
     "id": 29,
     "homeUrl": "https://github.com/bkrucarci",
-    "name": "bkrucarci"
+    "name": "Bekir"
   },
   {
     "id": 30,
     "emailAddress": "anudeep@protonmail.com",
     "homeUrl": "https://github.com/anudeepND",
-    "name": "Anudeep"
+    "name": "Anudeep",
+    "twitterHandle": "anudeepND"
   },
   {
     "id": 31,
@@ -161,11 +166,12 @@
   {
     "id": 33,
     "homeUrl": "https://github.com/azet12/",
-    "name": "azet12"
+    "name": "azet12",
+    "emailAddress": "kadrep@outlook.com"
   },
   {
     "id": 34,
-    "emailAddress": "PolishJarvis@gmail.com",
+    "emailAddress": "polishjarvis@gmail.com",
     "homeUrl": "https://github.com/PolishFiltersTeam/",
     "name": "Polish Filters Team"
   },
@@ -178,7 +184,8 @@
   {
     "id": 36,
     "homeUrl": "https://github.com/monojp",
-    "name": "Monojp"
+    "name": "Martin Herndl",
+    "emailAddress": "martin@herndl.org"
   },
   {
     "id": 37,
@@ -199,15 +206,17 @@
   },
   {
     "id": 40,
+    "emailAddress": "gato@intaa.net",
     "homeUrl": "https://warui.intaa.net/",
     "name": "Warui",
     "twitterHandle": "gatolabo"
   },
   {
     "id": 41,
+    "emailAddress": "multiverse2011@gmail.com",
     "homeUrl": "https://github.com/multiverse2011",
     "name": "Multiverse2011",
-    "twitterHandle": "multiverse2011_"
+    "twitterHandle": "multiverse2011"
   },
   {
     "id": 42,
@@ -222,7 +231,8 @@
   {
     "id": 44,
     "homeUrl": "http://vxvault.net/",
-    "name": "VXVault"
+    "name": "VXVault",
+    "twitterHandle": "siri_urz"
   },
   {
     "id": 45,
@@ -268,6 +278,7 @@
   },
   {
     "id": 52,
+    "emailAddress": "tomas@getadblock.com",
     "homeUrl": "https://github.com/tomasko126",
     "name": "Tomáš Taro"
   },
@@ -294,12 +305,13 @@
   {
     "id": 57,
     "homeUrl": "https://github.com/gorhill",
-    "name": "Raymond Hill"
+    "name": "Raymond Hill",
+    "twitterHandle": "gorhill"
   },
   {
     "id": 58,
     "homeUrl": "https://github.com/toshiya44",
-    "name": "toshiya44"
+    "name": "Toshiya"
   },
   {
     "id": 59,
@@ -315,23 +327,19 @@
   },
   {
     "id": 63,
-    "homeUrl": "https://jspenguin2017.github.io/uBlockProtector/",
-    "name": "Jspenguin2017"
+    "homeUrl": "https://github.com/jspenguin2017",
+    "name": "Hugo Xu"
   },
   {
     "id": 64,
-    "name": "Frellwit"
+    "homeUrl": "https://github.com/lassekongo83",
+    "name": "Mattias"
   },
   {
     "id": 66,
     "homeUrl": "https://gist.github.com/BBcan177",
-    "name": "BBcan177"
-  },
-  {
-    "id": 67,
-    "emailAddress": "joewein@pobox.com",
-    "homeUrl": "https://www.joewein.net/spam/index.htm",
-    "name": "Joe Wein"
+    "name": "BBcan177",
+    "twitterHandle": "BBcan177"
   },
   {
     "id": 68,
@@ -384,7 +392,8 @@
     "id": 78,
     "emailAddress": "github@paulbutler.org",
     "homeUrl": "http://paulbutler.org",
-    "name": "Paul Butler"
+    "name": "Paul Butler",
+    "twitterHandle": "paulgb"
   },
   {
     "id": 79,
@@ -395,12 +404,14 @@
   {
     "id": 80,
     "homeUrl": "https://www.kowabit.de/",
-    "name": "kowabit"
+    "name": "kowabit",
+    "emailAddress": "email@kowabit.de"
   },
   {
     "id": 81,
     "homeUrl": "https://github.com/chadmayfield",
-    "name": "Chad Mayfield"
+    "name": "Chad Mayfield",
+    "twitterHandle": "chadrmayfield"
   },
   {
     "id": 82,
@@ -421,6 +432,7 @@
   },
   {
     "id": 85,
+    "homeUrl": "https://github.com/FadeMind",
     "name": "FadeMind"
   },
   {
@@ -435,7 +447,7 @@
   },
   {
     "id": 88,
-    "emailAddress": "Info@RiskAnalytics.com",
+    "emailAddress": "support@riskanalytics.com",
     "homeUrl": "https://www.riskanalytics.com/",
     "name": "RiskAnalytics"
   },
@@ -459,7 +471,7 @@
   },
   {
     "id": 92,
-    "homeUrl": "https://code.google.com/archive/p/ruadlist/",
+    "homeUrl": "https://forums.lanik.us/viewforum.php?f=102",
     "name": "RU AdList"
   },
   {
@@ -471,11 +483,13 @@
   },
   {
     "id": 94,
+    "homeUrl": "https://github.com/yourduskquibbles",
     "name": "yourduskquibbles"
   },
   {
     "id": 95,
-    "name": "k2japan"
+    "homeUrl": "https://github.com/k2jp",
+    "name": "k2jp"
   },
   {
     "id": 96,
@@ -486,11 +500,15 @@
   },
   {
     "id": 97,
-    "name": "BsT"
+    "homeUrl": "https://github.com/easylist/EasyListHebrew",
+    "emailAddress": "easylisthebrew@gmail.com",
+    "name": "EasyListHebrew"
   },
   {
     "id": 98,
-    "name": "John and Li"
+    "homeUrl": "https://abpchina.org",
+    "emailAddress": "easylist.china@gmail.com",
+    "name": "EasyList China"
   },
   {
     "id": 99,
@@ -537,6 +555,7 @@
   {
     "id": 107,
     "homeUrl": "https://github.com/bogachenko",
+    "emailAddress": "bogachenkove@gmail.com",
     "name": "Bogachenko Vyacheslav"
   },
   {
@@ -549,17 +568,18 @@
   {
     "id": 109,
     "homeUrl": "https://github.com/deathbybandaid",
-    "name": "deathbybandaid"
+    "name": "Deathbybandaid"
   },
   {
     "id": 110,
     "homeUrl": "https://akamaru.de/",
-    "name": "Akamaru"
+    "name": "Akamaru",
+    "twitterHandle": "Akamaru_Pie"
   },
   {
     "id": 111,
     "homeUrl": "https://github.com/MrBukLau",
-    "name": "MrBukLau"
+    "name": "Buk Lau"
   },
   {
     "id": 112,
@@ -574,13 +594,15 @@
   {
     "id": 114,
     "homeUrl": "https://nfz.moe/",
-    "emailAddress": "neofelhz@gmail.com",	
-    "name": "neo Felhz"
+    "emailAddress": "neofelhz@gmail.com",
+    "name": "neo Felhz",
+    "twitterHandle": "neoFelhz"
   },
   {
     "id": 115,
     "homeUrl": "http://www.stopforumspam.com/",
-    "name": "StopForumSpam.com"
+    "name": "StopForumSpam.com",
+    "twitterHandle": "StopForumSpam"
   },
   {
     "id": 116,
@@ -602,7 +624,7 @@
   {
     "id": 119,
     "homeUrl": "https://github.com/hectorm",
-    "emailAddress": "hector@molinero.dev",	
+    "emailAddress": "hector@molinero.dev",
     "name": "Héctor Molinero Fernández"
   },
   {
@@ -613,7 +635,7 @@
   {
     "id": 121,
     "homeUrl": "https://github.com/mitchellkrogza",
-    "emailAddress": "mitchellkrog@gmail.com",	
+    "emailAddress": "mitchellkrog@gmail.com",
     "name": "mitchellkrogza"
   },
   {
