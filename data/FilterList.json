@@ -16256,5 +16256,32 @@
     "name": "Ultimate Hosts Blacklist Superhosts",
     "licenseId": 2,
     "viewUrl": "https://hosts.ubuntu101.co.za/superhosts.deny"
+  },
+  {
+    "id": 1523,
+    "description": "Is a comprehensive hosts list which blocks known ad, exploit, and tracking servers, taken from MVPS, PGL Yoyo, Malware Domain List, and hpHosts, then merged, sorted and deduped. This list is compatible with all operating systems that make use of a hosts file (obviously this includes Windows, OS X, LiGnux and more). Notably enhanced privacy and security awaits you.",
+    "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
+    "syntaxId": 14,
+    "name": "Combined Privacy Block Lists HOSTS",
+    "licenseId": 9,
+    "viewUrl": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final.hosts"
+  },
+  {
+    "id": 1524,
+    "description": "Is a DAT-format IP block list suitable for use in torrent clients like Halite for Windows. The list is merged from BlueTack levels 1 and 2, then deduped and sorted. This will come in especially handy on public trackers.",
+    "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
+    "name": "Combined Privacy Block Lists IPs DAT-format",
+	"syntaxId": 15,
+    "licenseId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/combined-final-win.dat"
+  },
+  {
+    "id": 1525,
+    "description": "Is a P2P-format IP block list suitable for use in torrent clients like qBitTorrent and Transmission under any OS. The list is merged from BlueTack levels 1 and 2.",
+    "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
+    "name": "Combined Privacy Block Lists IPs P2P-format",
+	"syntaxId": 15,
+    "licenseId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/combined-final.p2p"
   }
 ]

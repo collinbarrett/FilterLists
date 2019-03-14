@@ -6990,5 +6990,25 @@
   {
     "filterListId": 1522,
     "tagId": 7
+  },
+  {
+    "filterListId": 1523,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1523,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1523,
+    "tagId": 7
+  },
+  {
+    "filterListId": 1524,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1525,
+    "tagId": 3
   }
 ]
