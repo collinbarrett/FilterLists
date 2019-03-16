@@ -107,5 +107,9 @@
   {
     "id": 25,
     "name": "Response Policy Zones (RPZ)"
+  },
+  {
+    "id": 26,
+    "name": "BIND"
   }
 ]
