@@ -1978,7 +1978,7 @@
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
     "licenseId": 12,
-    "name": "AdGuard English Filter",
+    "name": "AdGuard English Filter + EasyList",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
     "updatedDate": "2019-02-11T13:50:09",
@@ -16309,5 +16309,18 @@
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
     "syntaxId": 26,
     "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=bindconfig&showintro=1&mimetype=plaintext"
+  },
+  {
+    "id": 1528,
+    "description": "Filter that enables removing of the ads from websites with English content.",
+    "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#english-filter",
+    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard English Filter without EasyList",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 6,
+    "viewUrl": "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt"
   }
 ]
