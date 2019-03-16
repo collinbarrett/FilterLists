@@ -25,6 +25,8 @@ import img25 from "./25-uMatrix.png";
 import img26 from "./26-Blokada.png";
 import img27 from "./27-hostsmgr.png";
 import img28 from "./28-personalDNSfilter.png";
+import img29 from "./29-Unbound.png";
+import img30 from "./30-BIND.png";
 
 export {
     img1,
@@ -53,5 +55,7 @@ export {
     img25,
     img26,
     img27,
-    img28
+    img28,
+    img29,
+    img30
     };
