@@ -15,7 +15,7 @@ import img15 from "./15-uBlock.svg";
 import img16 from "./16-Internet-Explorer-TPL.svg";
 import img17 from "./17-Google-Hit-Hider-by-Domain.png";
 import img18 from "./18-FireHOL.png";
-import img19 from "./19-Samsung-Knox.svg";
+import img19 from "./19-Samsung-Knox.png";
 import img20 from "./20-Little-Snitch.png";
 import img21 from "./21-Privoxy.png";
 import img22 from "./22-Diversion.png";
