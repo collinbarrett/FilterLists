@@ -15901,7 +15901,7 @@
     "name": "Blah DNS RPZ Blacklist",
     "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
-    "syntaxId": 25
+    "syntaxId": 25,
     "viewUrl": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/rpz.blacklist"
   },
   {
