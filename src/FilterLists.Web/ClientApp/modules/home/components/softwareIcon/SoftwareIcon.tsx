@@ -38,7 +38,7 @@ interface IProps {
 export const SoftwareIcon = (props: IProps) =>
     icons[props.id]
     ? <img src={icons[props.id].image}
-           width="20"
+           height="20"
            alt={icons[props.id].imageTitle}
            title={icons[props.id].imageTitle}/>
     : null;
