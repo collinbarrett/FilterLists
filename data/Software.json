@@ -179,5 +179,19 @@
     "homeUrl": "https://zenz-solutions.de/personaldnsfilter",
     "isAbpSubscribable": false,
     "name": "personalDNSfilter"
+  },
+  {
+    "id": 29,
+    "downloadUrl": "https://nlnetlabs.nl/projects/unbound/download/",
+    "homeUrl": "https://nlnetlabs.nl/projects/unbound/about/",
+    "isAbpSubscribable": false,
+    "name": "Unbound"
+  },
+  {
+    "id": 30,
+    "downloadUrl": "https://www.isc.org/downloads/bind/",
+    "homeUrl": "https://www.isc.org/downloads/bind/",
+    "isAbpSubscribable": false,
+    "name": "BIND"
   }
 ]

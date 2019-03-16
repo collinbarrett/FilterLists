@@ -15877,6 +15877,7 @@
     "updatedDate": "2019-03-07T03:30:18",
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts RPZ",
+    "syntaxId": 25,
     "viewUrl": "https://hblock.molinero.xyz/hosts_rpz.txt"
   },
   {
@@ -15884,6 +15885,7 @@
     "updatedDate": "2019-03-07T03:30:18",
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts Unbound",
+    "syntaxId": 24,
     "viewUrl": "https://hblock.molinero.xyz/hosts_unbound.conf"
   },
   {
@@ -15891,6 +15893,7 @@
     "updatedDate": "2019-03-07T03:30:18",
     "homeUrl": "https://hblock.molinero.xyz/",
     "name": "hBlock Hosts DNSMASQ",
+    "syntaxId": 20,
     "viewUrl": "https://hblock.molinero.xyz/hosts_dnsmasq.conf"
   },
   {
@@ -15898,6 +15901,7 @@
     "name": "Blah DNS RPZ Blacklist",
     "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
+    "syntaxId": 25,
     "viewUrl": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/rpz.blacklist"
   },
   {
@@ -16011,6 +16015,7 @@
     "description": "Anti-WebMiner protects your PC against web cryptocurrency miners (JS scripts like Coinhive executed in the browser) by modifying Windows hosts file",
     "homeUrl": "https://github.com/greatis/Anti-WebMiner/",
     "issuesUrl": "https://github.com/greatis/Anti-WebMiner/issues",
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/greatis/Anti-WebMiner/master/blacklist.txt"
   },
   {
@@ -16082,6 +16087,7 @@
     "description": "This project generates dnsmasq, bind and unbound zone files to be used in DNS based AD Blockers.",
     "homeUrl": "https://github.com/oznu/dns-zone-blacklist",
     "issuesUrl": "https://github.com/oznu/dns-zone-blacklist/issues",
+    "syntaxId": 26,
     "viewUrl": "https://raw.githubusercontent.com/oznu/dns-zone-blacklist/master/bind/zones.blacklist"
   },
   {
@@ -16099,6 +16105,7 @@
     "description": "This project generates dnsmasq, bind and unbound zone files to be used in DNS based AD Blockers.",
     "homeUrl": "https://github.com/oznu/dns-zone-blacklist",
     "issuesUrl": "https://github.com/oznu/dns-zone-blacklist/issues",
+    "syntaxId": 24,
     "viewUrl": "https://raw.githubusercontent.com/oznu/dns-zone-blacklist/master/unbound/unbound.blacklist"
   },
   {
@@ -16156,11 +16163,12 @@
   },
   {
     "id": 1511,
-    "description": "This custom Fail2Ban filter and jail will deal with all scans for common Wordpress, Joomla and other Web Exploits being scanned for by automated bots and those seeking to find exploitable web sites.",
+    "description": "This custom Fail2Ban filter and jail will deal with all scans for common WordPress, Joomla and other Web Exploits being scanned for by automated bots and those seeking to find exploitable web sites.",
     "licenseId": 2,
     "homeUrl": "https://github.com/mitchellkrogza/Fail2Ban.WebExploits",
     "name": "Fail2Ban WebExploits",
     "issuesUrl": "https://github.com/mitchellkrogza/Fail2Ban.WebExploits/issues",
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Fail2Ban.WebExploits/master/input-source/exploits.list"
   },
   {
@@ -16241,21 +16249,17 @@
     "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
     "name": "Ultimate Hosts Blacklist Superhosts",
     "licenseId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/superhosts.deny/superhosts0.deny"
+    "syntaxId": 23,
+    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/superhosts.deny/superhosts0.deny",
+    "viewUrlMirror1": "https://hosts.ubuntu101.co.za/superhosts.deny"
   },
   {
     "id": 1521,
     "homeUrl": "https://hosts.ubuntu101.co.za/",
-    "name": "Ultimate Hosts Blacklist dany",
+    "name": "Ultimate Hosts Blacklist Deny",
     "licenseId": 2,
+    "syntaxId": 23,
     "viewUrl": "https://hosts.ubuntu101.co.za/hosts.deny"
-  },
-  {
-    "id": 1522,
-    "homeUrl": "https://hosts.ubuntu101.co.za/",
-    "name": "Ultimate Hosts Blacklist Superhosts",
-    "licenseId": 2,
-    "viewUrl": "https://hosts.ubuntu101.co.za/superhosts.deny"
   },
   {
     "id": 1523,
@@ -16271,7 +16275,7 @@
     "description": "Is a DAT-format IP block list suitable for use in torrent clients like Halite for Windows. The list is merged from BlueTack levels 1 and 2, then deduped and sorted. This will come in especially handy on public trackers.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "name": "Combined Privacy Block Lists IPs DAT-format",
-	"syntaxId": 15,
+    "syntaxId": 15,
     "licenseId": 4,
     "viewUrl": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/combined-final-win.dat"
   },
@@ -16280,8 +16284,30 @@
     "description": "Is a P2P-format IP block list suitable for use in torrent clients like qBitTorrent and Transmission under any OS. The list is merged from BlueTack levels 1 and 2.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "name": "Combined Privacy Block Lists IPs P2P-format",
-	"syntaxId": 15,
+    "syntaxId": 15,
     "licenseId": 4,
     "viewUrl": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/combined-final.p2p"
+  },
+  {
+    "id": 1526,
+    "description": "Block advertisements.",
+    "emailAddress": "pgl@yoyo.org",
+    "homeUrl": "https://pgl.yoyo.org/adservers/",
+    "licenseId": 5,
+    "name": "Peter Lowe's List (Unbound)",
+    "policyUrl": "https://pgl.yoyo.org/as/policy.php",
+    "syntaxId": 24,
+    "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=unbound&showintro=1&mimetype=plaintext"
+  },
+  {
+    "id": 1527,
+    "description": "Block advertisements.",
+    "emailAddress": "pgl@yoyo.org",
+    "homeUrl": "https://pgl.yoyo.org/adservers/",
+    "licenseId": 5,
+    "name": "Peter Lowe's List (BIND)",
+    "policyUrl": "https://pgl.yoyo.org/as/policy.php",
+    "syntaxId": 26,
+    "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=bindconfig&showintro=1&mimetype=plaintext"
   }
 ]
