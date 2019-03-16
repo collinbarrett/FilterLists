@@ -10,5 +10,17 @@
   {
     "dependentFilterListId": 344,
     "dependencyFilterListId": 479
+  },
+  {
+    "dependentFilterListId": 819,
+    "dependencyFilterListId": 97
+  },
+  {
+    "dependentFilterListId": 852,
+    "dependencyFilterListId": 97
+  },
+  {
+    "dependentFilterListId": 853,
+    "dependencyFilterListId": 97
   }
 ]
