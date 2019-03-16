@@ -95,5 +95,17 @@
   {
     "id": 22,
     "name": "DNS servers"
+  },
+  {
+    "id": 23,
+    "name": "Unix-format hosts.deny file"
+  },
+  {
+    "id": 24,
+    "name": "Unbound"
+  },
+  {
+    "id": 25,
+    "name": "Response Policy Zones (RPZ)"
   }
 ]
