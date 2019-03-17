@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": 1,
     "iso6391": "ab",
@@ -681,13 +681,13 @@
   },
   {
     "id": 71,
-    "iso6391": "sr",
-    "iso6392": "srp",
-    "iso6392B": "srp",
-    "iso6392T": "srp",
-    "iso6393": "srp",
-    "localName": "Српски",
-    "name": "Serbian"
+    "iso6391": "sh",
+    "iso6392": "scr",
+    "iso6392B": "scr",
+    "iso6392T": "scr",
+    "iso6393": "hbs",
+    "localName": "Srpskohrvatski",
+    "name": "Serbo-Croatian"
   },
   {
     "id": 72,
@@ -1010,16 +1010,6 @@
     "name": "Cree"
   },
   {
-    "id": 104,
-    "iso6391": "hr",
-    "iso6392": "hrv",
-    "iso6392B": "hrv",
-    "iso6392T": "hrv",
-    "iso6393": "hrv",
-    "localName": "Hrvatski",
-    "name": "Croatian"
-  },
-  {
     "id": 105,
     "iso6391": "cs",
     "iso6392": "ces",
@@ -1328,16 +1318,6 @@
     "iso6393": "bih",
     "localName": "भोजपुरी",
     "name": "Bihari"
-  },
-  {
-    "id": 136,
-    "iso6391": "bs",
-    "iso6392": "bos",
-    "iso6392B": "bos",
-    "iso6392T": "bos",
-    "iso6393": "bos",
-    "localName": "Bosanski",
-    "name": "Bosnian"
   },
   {
     "id": 137,
