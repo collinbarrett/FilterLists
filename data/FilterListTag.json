@@ -7002,5 +7002,29 @@
   {
     "filterListId": 1525,
     "tagId": 3
+  },
+  {
+    "filterListId": 1526,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1526,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1527,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1527,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1528,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1529,
+    "tagId": 2
   }
 ]
