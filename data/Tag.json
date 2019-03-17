@@ -103,5 +103,15 @@
     "id": 21,
     "description": "Lists that remove news stories of subjectively low quality",
     "name": "clickbait"
+  },
+  {
+    "id": 22,
+    "description": "Blocks religious or superstitious content",
+    "name": "religious"
+  },
+  {
+    "id": 23,
+    "description": "Blocks pages from link-shortening services",
+    "name": "shorteners"
   }
 ]
