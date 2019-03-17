@@ -16322,5 +16322,13 @@
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
     "viewUrl": "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt"
+  },
+  {
+    "id": 1529,
+    "homeUrl": "https://easylist.to/",
+    "licenseId": 3,
+    "name": "KoreanList",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/koreanlist.txt"
   }
 ]
