@@ -16266,7 +16266,7 @@
   },
   {
     "id": 1523,
-    "description": "Is a comprehensive hosts list which blocks known ad, exploit, and tracking servers, taken from MVPS, PGL Yoyo, Malware Domain List, and hpHosts, then merged, sorted and deduped. This list is compatible with all operating systems that make use of a hosts file (obviously this includes Windows, OS X, LiGnux and more). Notably enhanced privacy and security awaits you.",
+    "description": "Is a comprehensive hosts list which blocks known ad, exploit, and tracking servers, taken from MVPS, PGL Yoyo, Malware Domain List, hpHosts and AdAway, then merged, sorted and deduped. This list is compatible with all operating systems that make use of a hosts file (obviously this includes Windows, OS X, LiGnux and more). It works great with mobile VPN ad-blocking solutions too. Notably enhanced privacy and security awaits you. This file will be updated once a week, along with a separate IPv6 version.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "syntaxId": 14,
     "name": "Combined Privacy Block Lists HOSTS",
