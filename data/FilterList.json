@@ -16333,5 +16333,14 @@
     "name": "KoreanList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/koreanlist.txt"
+  },
+  {
+    "id": 1530,
+    "viewUrl": "https://raw.githubusercontent.com/bcye/Hello-Goodbye/master/filterlist.txt",
+    "name": "Hello, Goodbye!",
+    "description": "Blocks every chat or helpdesk pop up in your browser.",
+    "homeUrl": "https://hellogoodbye.app/",
+    "issuesUrl": "https://github.com/bcye/Hello-Goodbye/issues",
+    "emailAddress": "hello@hellogoodbye.app"
   }
 ]
