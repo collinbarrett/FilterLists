@@ -13704,13 +13704,16 @@
   {
     "id": 1295,
     "emailAddress": "intr0@intr0.com",
+    "description": "iVOID.hosts is dedicated to providing AdGuard Pro for iOS users with custom built, privacy & security focused hosts files. Also for use with Linux workstations & uBlock Origins for Firefox.",
     "homeUrl": "https://intr0.com/",
     "issuesUrl": "https://gitlab.com/intr0/iVOID.GitLab.io/issues",
     "licenseId": 19,
     "name": "iVOID.hosts",
+    "publishedDate": "2018-07-09",
     "syntaxId": 1,
-    "updatedDate": "2019-03-05T19:39:00",
-    "viewUrl": "https://gitlab.com/intr0/iVOID.GitLab.io/raw/master/iVOID.hosts"
+    "updatedDate": "2019-03-18T05:32:20",
+    "viewUrl": "https://gitlab.com/intr0/iVOID.GitLab.io/raw/master/iVOID.hosts",
+    "viewUrlMirror1": "https://notabug.org/-intr0/iVOID/raw/master/iVOID.hosts"
   },
   {
     "id": 1296,
