@@ -362,20 +362,6 @@
     "viewUrl": "https://openphish.com/feed.txt"
   },
   {
-    "id": 35,
-    "description": "Blocks trackers.",
-    "homeUrl": "https://github.com/quidsup/notrack",
-    "issuesUrl": "https://github.com/quidsup/notrack/issues",
-    "licenseId": 4,
-    "name": "NoTrack Blocklist",
-    "publishedDate": "2015-12-31T23:27:37",
-    "syntaxId": 2,
-    "updatedDate": "2019-02-02T09:37:17",
-    "viewUrl": "https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/quidsup/notrack/master/trackers.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/quidsup/notrack/master/trackers.txt"
-  },
-  {
     "id": 36,
     "description": "A personal filter list. Each host is either an ad, phishing, malicious, analytics, or clickbait.",
     "descriptionSourceUrl": "https://github.com/genediazjr/nopelist",
@@ -5329,8 +5315,7 @@
     "submissionUrl": "https://quidsup.net/notrack/report.php?view=submit",
     "syntaxId": 2,
     "updatedDate": "2019-02-11T15:30:10",
-    "viewUrl": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/quidsup/notrack/master/malicious-sites.txt"
+    "viewUrl": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt"
   },
   {
     "id": 449,
@@ -5574,8 +5559,7 @@
     "syntaxId": 1,
     "updatedDate": "2019-02-01T09:21:26",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/spark/formats/hosts",
-    "viewUrlMirror1": "https://energized.pro/spark",
-    "viewUrlMirror2": "https://raw.githubusercontent.com/EnergizedProtection/block/master/spark/formats/hosts.txt"
+    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/spark/formats/hosts.txt"
   },
   {
     "id": 482,
@@ -5594,8 +5578,7 @@
     "syntaxId": 1,
     "updatedDate": "2019-02-01T09:21:26",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/bluGo/formats/hosts",
-    "viewUrlMirror1": "https://energized.pro/bluGo",
-    "viewUrlMirror2": "https://raw.githubusercontent.com/EnergizedProtection/block/master/bluGo/formats/hosts.txt"
+    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/bluGo/formats/hosts.txt"
   },
   {
     "id": 483,
@@ -5614,8 +5597,7 @@
     "syntaxId": 1,
     "updatedDate": "2019-02-01T09:21:26",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/blu/formats/hosts",
-    "viewUrlMirror1": "https://energized.pro/blu",
-    "viewUrlMirror2": "https://raw.githubusercontent.com/EnergizedProtection/block/master/blu/formats/hosts.txt"
+    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/blu/formats/hosts.txt"
   },
   {
     "id": 484,
@@ -5634,8 +5616,7 @@
     "syntaxId": 1,
     "updatedDate": "2019-02-01T09:21:26",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/basic/formats/hosts",
-    "viewUrlMirror1": "https://energized.pro/basic",
-    "viewUrlMirror2": "https://raw.githubusercontent.com/EnergizedProtection/block/master/basic/formats/hosts.txt"
+    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/basic/formats/hosts.txt"
   },
   {
     "id": 485,
@@ -5654,8 +5635,7 @@
     "syntaxId": 1,
     "updatedDate": "2019-02-01T09:21:26",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn/formats/hosts",
-    "viewUrlMirror1": "https://energized.pro/porn",
-    "viewUrlMirror2": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn/formats/hosts.txt"
+    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn/formats/hosts.txt"
   },
   {
     "id": 486,
@@ -5674,8 +5654,7 @@
     "syntaxId": 1,
     "updatedDate": "2019-02-01T09:21:26",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/ultimate/formats/hosts",
-    "viewUrlMirror1": "https://energized.pro/ultimate",
-    "viewUrlMirror2": "https://raw.githubusercontent.com/EnergizedProtection/block/master/ultimate/formats/hosts.txt"
+    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/ultimate/formats/hosts.txt"
   },
   {
     "id": 487,
@@ -5694,8 +5673,7 @@
     "syntaxId": 1,
     "updatedDate": "2019-02-01T09:21:26",
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/unified/formats/hosts",
-    "viewUrlMirror1": "https://energized.pro/unified",
-    "viewUrlMirror2": "https://raw.githubusercontent.com/EnergizedProtection/block/master/unified/formats/hosts.txt"
+    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/unified/formats/hosts.txt"
   },
   {
     "id": 488,
@@ -5712,8 +5690,7 @@
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2018-09-21T04:00:39",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-social-hosts",
-    "viewUrlMirror1": "https://energized.pro/exts/social"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-social-hosts"
   },
   {
     "id": 489,
@@ -5730,8 +5707,7 @@
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2018-09-21T04:16:43",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-porn-hosts",
-    "viewUrlMirror1": "https://energized.pro/exts/porn-lite"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-porn-hosts"
   },
   {
     "id": 490,
@@ -7762,17 +7738,6 @@
     "viewUrl": "https://gist.githubusercontent.com/balupton/6960605/raw/16bfeff88761b16296ed3ee15fbacf6840f1701a/filter-facebookdrama.txt"
   },
   {
-    "id": 725,
-    "homeUrl": "https://github.com/littlepig10/92Clearnet",
-    "issuesUrl": "https://github.com/littlepig10/92Clearnet/issues",
-    "licenseId": 23,
-    "name": "92Clearnet AdBlock List",
-    "publishedDate": "2018-01-27T09:45:12",
-    "syntaxId": 3,
-    "updatedDate": "2018-12-08T04:21:47",
-    "viewUrl": "https://raw.githubusercontent.com/littlepig10/92Clearnet/master/AdBlock/AdBlock-92clearnet.txt"
-  },
-  {
     "id": 726,
     "homeUrl": "https://github.com/whtsky/abp-rules",
     "issuesUrl": "https://github.com/whtsky/abp-rules/issues",
@@ -8276,19 +8241,6 @@
     "name": "Magno's Adblock List",
     "syntaxId": 3,
     "viewUrl": "https://adp.magnobiet.com/list.txt"
-  },
-  {
-    "id": 771,
-    "description": "AdBlockPlus Rule, block ads click to visit page.",
-    "homeUrl": "https://github.com/CPlayer-CN/Anti-Ad-Click-Popup",
-    "issuesUrl": "https://github.com/CPlayer-CN/Anti-Ad-Click-Popup/issues",
-    "licenseId": 5,
-    "name": "Anti Ad Click Popup",
-    "publishedDate": "2018-01-28T10:17:43",
-    "syntaxId": 3,
-    "updatedDate": "2018-01-28T12:09:33",
-    "viewUrl": "https://raw.githubusercontent.com/CPlayer-CN/Anti-Ad-Click-Popup/master/rule.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/PChenWillPlay/Anti-Ad-Click-Popup/master/rule.txt"
   },
   {
     "id": 772,
@@ -9406,8 +9358,7 @@
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2018-09-21T04:16:43",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-porn-hosts",
-    "viewUrlMirror1": "https://energized.pro/exts/xtreme"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-porn-hosts"
   },
   {
     "id": 865,
@@ -9424,8 +9375,7 @@
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2018-09-21T04:16:43",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-porn-hosts",
-    "viewUrlMirror1": "https://energized.pro/exts/regional"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-porn-hosts"
   },
   {
     "id": 866,
@@ -9451,8 +9401,8 @@
     "name": "Facebook Zero Hosts Block (Static)",
     "publishedDate": "2018-11-13T14:07:15",
     "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/ststic/hosts_facebook0_noregionsv.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/ststic/hosts_facebook0_noregionsv.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/static/hosts_facebook0_noregionsv.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/static/hosts_facebook0_noregionsv.txt"
   },
   {
     "id": 868,
