@@ -362,20 +362,6 @@
     "viewUrl": "https://openphish.com/feed.txt"
   },
   {
-    "id": 35,
-    "description": "Blocks trackers.",
-    "homeUrl": "https://github.com/quidsup/notrack",
-    "issuesUrl": "https://github.com/quidsup/notrack/issues",
-    "licenseId": 4,
-    "name": "NoTrack Blocklist",
-    "publishedDate": "2015-12-31T23:27:37",
-    "syntaxId": 2,
-    "updatedDate": "2019-02-02T09:37:17",
-    "viewUrl": "https://raw.githubusercontent.com/quidsup/notrack/master/trackers.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/quidsup/notrack/master/trackers.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/quidsup/notrack/master/trackers.txt"
-  },
-  {
     "id": 36,
     "description": "A personal filter list. Each host is either an ad, phishing, malicious, analytics, or clickbait.",
     "descriptionSourceUrl": "https://github.com/genediazjr/nopelist",
@@ -5329,8 +5315,7 @@
     "submissionUrl": "https://quidsup.net/notrack/report.php?view=submit",
     "syntaxId": 2,
     "updatedDate": "2019-02-11T15:30:10",
-    "viewUrl": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/quidsup/notrack/master/malicious-sites.txt"
+    "viewUrl": "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt"
   },
   {
     "id": 449,
