@@ -7738,17 +7738,6 @@
     "viewUrl": "https://gist.githubusercontent.com/balupton/6960605/raw/16bfeff88761b16296ed3ee15fbacf6840f1701a/filter-facebookdrama.txt"
   },
   {
-    "id": 725,
-    "homeUrl": "https://github.com/littlepig10/92Clearnet",
-    "issuesUrl": "https://github.com/littlepig10/92Clearnet/issues",
-    "licenseId": 23,
-    "name": "92Clearnet AdBlock List",
-    "publishedDate": "2018-01-27T09:45:12",
-    "syntaxId": 3,
-    "updatedDate": "2018-12-08T04:21:47",
-    "viewUrl": "https://raw.githubusercontent.com/littlepig10/92Clearnet/master/AdBlock/AdBlock-92clearnet.txt"
-  },
-  {
     "id": 726,
     "homeUrl": "https://github.com/whtsky/abp-rules",
     "issuesUrl": "https://github.com/whtsky/abp-rules/issues",
