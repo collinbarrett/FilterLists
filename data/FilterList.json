@@ -8243,19 +8243,6 @@
     "viewUrl": "https://adp.magnobiet.com/list.txt"
   },
   {
-    "id": 771,
-    "description": "AdBlockPlus Rule, block ads click to visit page.",
-    "homeUrl": "https://github.com/CPlayer-CN/Anti-Ad-Click-Popup",
-    "issuesUrl": "https://github.com/CPlayer-CN/Anti-Ad-Click-Popup/issues",
-    "licenseId": 5,
-    "name": "Anti Ad Click Popup",
-    "publishedDate": "2018-01-28T10:17:43",
-    "syntaxId": 3,
-    "updatedDate": "2018-01-28T12:09:33",
-    "viewUrl": "https://raw.githubusercontent.com/CPlayer-CN/Anti-Ad-Click-Popup/master/rule.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/PChenWillPlay/Anti-Ad-Click-Popup/master/rule.txt"
-  },
-  {
     "id": 772,
     "emailAddress": "kbinani.bt@gmail.com",
     "homeUrl": "https://github.com/kbinani/adblock-wikipedia",
