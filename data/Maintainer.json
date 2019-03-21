@@ -665,12 +665,17 @@
   {
     "id": 126,
     "homeUrl": "https://github.com/bongochong",
-	"emailAddress": "radicalbotanical@aol.com",
+    "emailAddress": "radicalbotanical@aol.com",
     "name": "Chongo Bong"
   },
-    {
+  {
     "id": 127,
     "homeUrl": "https://quidsup.net/",
     "name": "QuidsUp"
+  },
+  {
+    "id": 128,
+    "homeUrl": "https://github.com/kano1",
+    "name": "kano1"
   }
 ]

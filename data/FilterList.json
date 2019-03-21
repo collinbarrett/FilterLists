@@ -16292,5 +16292,25 @@
     "homeUrl": "https://hellogoodbye.app/",
     "issuesUrl": "https://github.com/bcye/Hello-Goodbye/issues",
     "emailAddress": "hello@hellogoodbye.app"
+  },
+  {
+    "id": 1531,
+    "homeUrl": "https://github.com/kano1/I/",
+    "issuesUrl": "https://github.com/kano1/I/issues/",
+    "licenseId": 5,
+    "name": "Adware Filter Scrip",
+    "syntaxId": 3,
+    "description": "List for bad isueads for public like adware and popup/ads that are exploited by hackers.",
+    "viewUrl": "https://raw.githubusercontent.com/kano1/I/master/adware_Scrip.txt"
+  },
+  {
+    "id": 1532,
+    "homeUrl": "https://github.com/kano1/Kano/",
+    "issuesUrl": "https://github.com/kano1/Kano/issues/",
+    "licenseId": 5,
+    "name": "Spyware Filter Scrip",
+    "syntaxId": 3,
+    "description": "List for keloger, cookie collector, malware tracker and other spyware for suspicious.",
+    "viewUrl": "https://raw.githubusercontent.com/kano1/Kano/master/Spyware_Scrip.txt"
   }
 ]
