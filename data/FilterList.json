@@ -7390,7 +7390,7 @@
     "licenseId": 2,
     "name": "The Big List of Hacked Malware Web Sites",
     "publishedDate": "2017-09-20T13:22:22",
-    "syntaxId": 1,
+    "syntaxId": 2,
     "updatedDate": "2018-11-29T10:37:56",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hacked-domains.list"
   },
@@ -15918,24 +15918,6 @@
     "viewUrl": "https://raw.githubusercontent.com/quedlin/blacklist/master/domains"
   },
   {
-    "id": 1488,
-    "name": "Suspicious Snooping Sniffing Hacking IP Addresses",
-    "syntaxId": 9,
-    "licenseId": 2,
-    "description": "A daily updated list of suspicious, snooping, sniffing and hacking attempts from IP addresses against services like SSH, HTTP and Wordpress Hack Attempts",
-    "homeUrl": "https://github.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses/",
-    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses/master/ips.list"
-  },
-  {
-    "id": 1489,
-    "name": "The Big List of Hacked Malware Web Sites",
-    "syntaxId": 2,
-    "licenseId": 2,
-    "description": "This repository contains a list of all web sites I come across that are either hacked with or purposefully hosting malware, ransomware, viruses or trojans.",
-    "homeUrl": "https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites",
-    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hacked-domains.list"
-  },
-  {
     "id": 1490,
     "name": "Phishing Domain Database",
     "syntaxId": 2,
@@ -15943,14 +15925,6 @@
     "description": "Phishing Domains, urls websites and threats database. We use the PyFunceble testing tool to validate the status of all known Phishing domains and provide stats to reveal how many unique domains used for Phishing are still active.",
     "homeUrl": "https://github.com/mitchellkrogza/Phishing.Database",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-domains-ACTIVE.txt"
-  },
-  {
-    "id": 1491,
-    "name": "The Ultimate Daily Hosts Blacklist",
-    "licenseId": 2,
-    "description": "The Ultimate hosts file for protecting your computer or device against over a million bad web sites. Protect your children and family from gaining access to bad web sites and protect your devices and pc from being infected with Malware or Ransomware.",
-    "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
-    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/hosts.deny/hosts0.deny"
   },
   {
     "id": 1492,
