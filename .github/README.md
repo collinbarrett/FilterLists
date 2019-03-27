@@ -43,3 +43,7 @@ FilterLists does not condone or endorse implementing any particular FilterList o
 ### Privacy
 
 We respect your privacy. That is the whole point of this site. The only minor data we collect about visitors is what [Cloudflare](https://www.cloudflare.com/analytics/), [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-data-retention-privacy), and [GitHub](https://help.github.com/articles/github-privacy-statement/) capture.
+
+### Internet Explorer TPL users
+
+Due to problems with finding time to look into issues with TPL subscription buttons and to load the website in Internet Explorer, a makeshift archive has been set up in the meantime. To view a smaller TPL-only archive with subscribable links, right-click on [this link](https://raw.githubusercontent.com/DandelionSprout/FilterLists/patch-74/data/TPLSubscriptionAssistant.html), choose to save it as an HTML file, and open it in Internet Explorer ≥9.
