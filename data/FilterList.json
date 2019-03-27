@@ -16288,5 +16288,15 @@
     "name": "uAssets Legacy",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/legacy.txt"
+  },
+  {
+    "id": 1534,
+    "emailAddress": "wduk10@hotmail.com",
+    "homeUrl": "https://hostsfile.mine.nu/",
+    "licenseId": 4,
+    "name": "The Hosts File Project IPs",
+    "syntaxId": 9,
+    "updatedDate": "2005-09-24T00:00:00",
+    "viewUrl": "https://hostsfile.mine.nu/hosts.ips"
   }
 ]
