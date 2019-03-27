@@ -1862,5 +1862,145 @@
   {
     "filterListId": 1529,
     "languageId": 154
+  },
+  {
+    "filterListId": 1115,
+    "languageId": 11
+  },
+  {
+    "filterListId": 1117,
+    "languageId": 11
+  },
+  {
+    "filterListId": 1039,
+    "languageId": 11
+  },
+  {
+    "filterListId": 1180,
+    "languageId": 11
+  },
+  {
+    "filterListId": 978,
+    "languageId": 10
+  },
+  {
+    "filterListId": 1075,
+    "languageId": 10
+  },
+  {
+    "filterListId": 1112,
+    "languageId": 10
+  },
+  {
+    "filterListId": 1011,
+    "languageId": 17
+  },
+  {
+    "filterListId": 1043,
+    "languageId": 17
+  },
+  {
+    "filterListId": 1189,
+    "languageId": 17
+  },
+  {
+    "filterListId": 1107,
+    "languageId": 159
+  },
+  {
+    "filterListId": 983,
+    "languageId": 159
+  },
+  {
+    "filterListId": 1052,
+    "languageId": 159
+  },
+  {
+    "filterListId": 890,
+    "languageId": 95
+  },
+  {
+    "filterListId": 923,
+    "languageId": 95
+  },
+  {
+    "filterListId": 1036,
+    "languageId": 79
+  },
+  {
+    "filterListId": 941,
+    "languageId": 79
+  },
+  {
+    "filterListId": 938,
+    "languageId": 106
+  },
+  {
+    "filterListId": 1197,
+    "languageId": 106
+  },
+  {
+    "filterListId": 1111,
+    "languageId": 112
+  },
+  {
+    "filterListId": 946,
+    "languageId": 112
+  },
+  {
+    "filterListId": 1218,
+    "languageId": 48
+  },
+  {
+    "filterListId": 1084,
+    "languageId": 48
+  },
+  {
+    "filterListId": 948,
+    "languageId": 137
+  },
+  {
+    "filterListId": 951,
+    "languageId": 139
+  },
+  {
+    "filterListId": 1220,
+    "languageId": 139
+  },
+  {
+    "filterListId": 1159,
+    "languageId": 177
+  },
+  {
+    "filterListId": 974,
+    "languageId": 177
+  },
+  {
+    "filterListId": 1102,
+    "languageId": 113
+  },
+  {
+    "filterListId": 916,
+    "languageId": 113
+  },
+  {
+    "filterListId": 1113,
+    "languageId": 154
+  },
+  {
+    "filterListId": 1128,
+    "languageId": 110
+  },
+  {
+    "filterListId": 1173,
+    "languageId": 99
+  },
+  {
+    "filterListId": 1173,
+    "languageId": 141
+  },
+  {
+    "filterListId": 927,
+    "languageId": 99
   }
 ]
