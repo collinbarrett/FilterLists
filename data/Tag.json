@@ -113,5 +113,20 @@
     "id": 23,
     "description": "Blocks pages from link-shortening services",
     "name": "shorteners"
+  },
+  {
+    "id": 24,
+    "description": "Blocks piracy-focusing sites",
+    "name": "piracy"
+  },
+  {
+    "id": 25,
+    "description": "Blocks political content",
+    "name": "politics"
+  },
+  {
+    "id": 26,
+    "description": "Blocks software updates",
+    "name": "updates"
   }
 ]
