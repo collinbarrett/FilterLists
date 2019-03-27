@@ -16298,5 +16298,21 @@
     "syntaxId": 9,
     "updatedDate": "2005-09-24T00:00:00",
     "viewUrl": "https://hostsfile.mine.nu/hosts.ips"
+  },
+  {
+    "id": 1535,
+    "description": "As someone who is a translation validator for WordPress.com and WordPress' phone apps, this list fixes some minor botherances to make the process of going through hundreds of strings and suggestions slightly easier. So now I'm sharing them with the world as well.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WordPressTranslatorAssistant.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Assistant list for WordPress validators and translators",
+    "publishedDate": "2018-03-27T00:00:00",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WordPressTranslatorAssistant.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/WordPressTranslatorAssistant.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WordPressTranslatorAssistant.txt"
   }
 ]
