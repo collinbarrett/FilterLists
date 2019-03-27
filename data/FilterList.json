@@ -6798,11 +6798,11 @@
   },
   {
     "id": 632,
-    "description": "Samsung SmartTV domains (Will block \"Smart\" aspects of device)",
+    "description": "Samsung SmartTV domains (Will block the \"Smart\" aspects of devices)",
     "descriptionSourceUrl": "https://v.firebog.net/hosts/static/SamsungSmart.txt",
     "licenseId": 5,
     "name": "Samsung SmartTV Domains",
-    "syntaxId": 1,
+    "syntaxId": 2,
     "viewUrl": "https://v.firebog.net/hosts/static/SamsungSmart.txt"
   },
   {
@@ -12850,17 +12850,6 @@
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/SVN-Slovenian.txt"
   },
   {
-    "id": 1195,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Samsung SmartTV Domains (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2018-05-28T14:02:55",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Samsung-SmartTV-Domains.txt"
-  },
-  {
     "id": 1196,
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
@@ -13858,7 +13847,7 @@
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
     "homeUrl": "http://www.shallalist.de/",
     "licenseId": 5,
-    "name": "Shalla List Anonvpn Domains",
+    "name": "Shalla List AnonVPN Domains",
     "publishedDate": "2018-04-20T21:26:11",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/anonvpn",
     "syntaxId": 2,
@@ -13870,7 +13859,7 @@
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
     "homeUrl": "http://www.shallalist.de/",
     "licenseId": 5,
-    "name": "Shalla List Anonvpn Urls",
+    "name": "Shalla List AnonVPN Urls",
     "publishedDate": "2018-04-20T21:26:11",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/anonvpn",
     "syntaxId": 8,
@@ -15346,7 +15335,7 @@
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
     "homeUrl": "http://www.shallalist.de/",
     "licenseId": 5,
-    "name": "Shalla List Updatesites Domains",
+    "name": "Shalla List Program Updates Domains",
     "publishedDate": "2018-04-20T21:26:11",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/updatesites",
     "syntaxId": 2,
@@ -15358,7 +15347,7 @@
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
     "homeUrl": "http://www.shallalist.de/",
     "licenseId": 5,
-    "name": "Shalla List Updatesites Urls",
+    "name": "Shalla List Program Updates Urls",
     "publishedDate": "2018-04-20T21:26:11",
     "submissionUrl": "https://github.com/cbuijs/shallalist/tree/master/updatesites",
     "syntaxId": 8,
