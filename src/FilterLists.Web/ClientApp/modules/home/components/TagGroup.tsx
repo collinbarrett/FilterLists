@@ -57,11 +57,11 @@ const kelly_colors_hex = [
     "232C16", // Dark Olive Green
     "000000", // Black
     "FFFFFF" // White
-    "c2f4be" // Light Green
-    "1edbb9" // Medium Greenish Blue
+    "C2F4BE" // Light Green
+    "1EDBB9" // Medium Greenish Blue
     "890000" // Dark Red
     "474747" // Dark Grey
-    "bfa125" // Matte Gold
-    "a7823c" // Dark Beige
-    "035a5c" // Dark Greenish Blue
+    "BFA125" // Matte Gold
+    "A7823C" // Dark Beige
+    "035A5C" // Dark Greenish Blue
 ];
