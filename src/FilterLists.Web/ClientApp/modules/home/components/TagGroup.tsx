@@ -56,12 +56,12 @@ const kelly_colors_hex = [
     "F13A13", // Vivid Reddish Orange
     "232C16", // Dark Olive Green
     "000000", // Black
-    "FFFFFF" // White
-    "C2F4BE" // Light Green
-    "1EDBB9" // Medium Greenish Blue
-    "890000" // Dark Red
-    "474747" // Dark Grey
-    "BFA125" // Matte Gold
-    "A7823C" // Dark Beige
+    "FFFFFF", // White
+    "C2F4BE", // Light Green
+    "1EDBB9", // Medium Greenish Blue
+    "890000", // Dark Red
+    "474747", // Dark Grey
+    "BFA125", // Matte Gold
+    "A7823C", // Dark Beige
     "035A5C" // Dark Greenish Blue
 ];
