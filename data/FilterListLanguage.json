@@ -2022,5 +2022,41 @@
   {
     "filterListId": 1536,
     "languageId": 110
+  },
+  {
+    "filterListId": 1114,
+    "languageId": 10
+  },
+  {
+    "filterListId": 1540,
+    "languageId": 11
+  },
+  {
+    "filterListId": 1543,
+    "languageId": 154
+  },
+  {
+    "filterListId": 1544,
+    "languageId": 13
+  },
+  {
+    "filterListId": 1545,
+    "languageId": 139
+  },
+  {
+    "filterListId": 1546,
+    "languageId": 139
+  },
+  {
+    "filterListId": 1549,
+    "languageId": 139
+  },
+  {
+    "filterListId": 1547,
+    "languageId": 175
+  },
+  {
+    "filterListId": 1548,
+    "languageId": 79
   }
 ]
