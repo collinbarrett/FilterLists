@@ -16325,5 +16325,152 @@
     "name": "SNAFU List",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt"
+  },
+  {
+    "id": 1537,
+    "description": "EasyPrivacy is an optional supplementary filter list that completely removes all forms of tracking from the internet, including web bugs, tracking scripts and information collectors, thereby protecting your personal data.",
+    "descriptionSourceUrl": "https://easylist.to/",
+    "emailAddress": "easylist.subscription@gmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "licenseId": 4,
+    "name": "EasyPrivacy (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist.to/easylist/easyprivacy.tpl"
+  },
+  {
+    "id": 1538,
+    "emailAddress": "easylist.subscription@gmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "licenseId": 4,
+    "name": "EasyList Without Element Hiding Rules (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noelemhide.tpl"
+  },
+  {
+    "id": 1539,
+    "emailAddress": "easylist.subscription@gmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "licenseId": 4,
+    "name": "EasyTest (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easytest.tpl"
+  },
+  {
+    "id": 1540,
+    "emailAddress": "easylist.subscription@gmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "licenseId": 4,
+    "name": "EasyList Polish (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistpolish.tpl"
+  },
+  {
+    "id": 1541,
+    "emailAddress": "easylist.subscription@gmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "licenseId": 4,
+    "name": "Acceptable Ads (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/exceptionrules.tpl"
+  },
+  {
+    "id": 1542,
+    "emailAddress": "easylist.subscription@gmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "licenseId": 4,
+    "name": "Adware Filters (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/adwarefilters.tpl"
+  },
+  {
+    "id": 1543,
+    "emailAddress": "easylist.subscription@gmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "licenseId": 4,
+    "name": "KoreanList (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/koreanlist.tpl"
+  },
+  {
+    "id": 1544,
+    "emailAddress": "easylist.subscription@gmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "licenseId": 4,
+    "name": "EasyList Portuguese (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistportuguese.tpl"
+  },
+  {
+    "id": 1545,
+    "description": "Finnish supplement list for EasyList.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt",
+    "homeUrl": "https://github.com/wiltteri/subscriptions",
+    "licenseId": 11,
+    "name": "Wiltteri (TPL)",
+    "publishedDate": "2015-04-25T19:15:33",
+    "syntaxId": 10,
+    "updatedDate": "2015-05-16T15:23:08",
+    "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.tpl"
+  },
+  {
+    "id": 1546,
+    "description": "Finnish supplement list for EasyList.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt",
+    "homeUrl": "https://github.com/wiltteri/subscriptions",
+    "licenseId": 11,
+    "name": "Wiltteri Reborn (TPL)",
+    "publishedDate": "2015-04-25T19:15:33",
+    "syntaxId": 10,
+    "updatedDate": "2015-05-16T15:23:08",
+    "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.tpl"
+  },
+  {
+    "id": 1547,
+    "emailAddress": "easylist.subscription@gmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "licenseId": 4,
+    "name": "IndianList (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/indianlist.tpl"
+  },
+  {
+    "id": 1548,
+    "emailAddress": "easylist.subscription@gmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "licenseId": 4,
+    "name": "EasyList Spanish + EasyList",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-msie.adblockplus.org/easylistspanish+easylist.txt"
+  },
+  {
+    "id": 1549,
+    "emailAddress": "easylist.subscription@gmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "licenseId": 4,
+    "name": "Wiltteri + EasyList",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-msie.adblockplus.org/wiltteri+easylist.txt"
   }
 ]
