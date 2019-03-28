@@ -46,4 +46,4 @@ We respect your privacy. That is the whole point of this site. The only minor da
 
 ### Internet Explorer TPL users
 
-Due to problems with finding time to look into issues with TPL subscription buttons and to load the website in Internet Explorer, a makeshift archive has been set up in the meantime. To view a smaller TPL-only archive with subscribable links, right-click on [this link](https://raw.githubusercontent.com/DandelionSprout/FilterLists/patch-74/data/TPLSubscriptionAssistant.html), choose to save it as an HTML file, and open it in Internet Explorer ≥9.
+Due to problems with finding time to look into issues with TPL subscription buttons and to load the website in Internet Explorer, a makeshift archive has been set up in the meantime. To view a smaller TPL-only archive with subscribable links, right-click on [this link](https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html), choose to save it as an HTML file, and open it in Internet Explorer ≥9.
