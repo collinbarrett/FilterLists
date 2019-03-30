@@ -128,5 +128,10 @@
     "id": 26,
     "description": "Blocks software updates",
     "name": "updates"
+  },
+  {
+    "id": 27,
+    "description": "Userstyles in adblocker syntax that change the appearance of sites",
+    "name": "userstyle"
   }
 ]
