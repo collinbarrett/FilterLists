@@ -16472,5 +16472,50 @@
     "name": "Wiltteri + EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-msie.adblockplus.org/wiltteri+easylist.txt"
+  },
+  {
+    "id": 1550,
+    "description": "Do you have a high-res or portrait monitor, and are feeling bothered by how websites still think that everyone are using low-res landscape monitors? Well, here's how to stretch them out like a piece of gum!",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Dandelion Sprout's Website Stretcher - Vertical Edition",
+    "publishedDate": "2019-03-29T00:00:00",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WebsiteStretcherVertical.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/WebsiteStretcherVertical.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WebsiteStretcherVertical.txt"
+  },
+  {
+    "id": 1551,
+    "description": "Do you have a huge high-resolution monitor, and are feeling bothered by how websites still think that everyone are using 768-1080px monitors? Well, here's how to stretch them out like a piece of gum!",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Dandelion Sprout's Website Stretcher - 4K and 5K Edition",
+    "publishedDate": "2019-03-29T00:00:00",
+    "syntaxId": 21,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WebsiteStretcher4K.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/WebsiteStretcher4K.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WebsiteStretcher4K.txt"
+  },
+  {
+    "id": 1552,
+    "description": "Reddit can have some good places and posts, but unfortunately 95% of it is also a large pile of echo chambers whose only equivalent is 8chan. So if you only browse Reddit for its humouristical and artistical subreddits, this list will massively help you focus on those things.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Reddit Trash Removal Service",
+    "publishedDate": "2019-03-30T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RedditTrashRemovalService.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/RedditTrashRemovalService.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/RedditTrashRemovalService.txt"
   }
 ]
