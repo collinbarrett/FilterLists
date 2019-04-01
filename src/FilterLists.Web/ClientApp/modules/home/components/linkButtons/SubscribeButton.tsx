@@ -24,7 +24,7 @@ export const SubscribeButton = (props: IProps) => {
     
     if (props.url.indexOf(".tpl") {
     const hrefTitle = `&amp;title=${encodeURIComponent(props.name)}`;
-    const href = `https://github.com/collinbarrett/FilterLists/blob/master/data/TPLSubscriptionAssistant.html`;
+    const href = `https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html`;
     const title = 
         `${titlePrefix}Visit a TPL archive from which ${props.name
             } can be subscribed to with Internet Explorer.`;
