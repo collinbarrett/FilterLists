@@ -22,18 +22,17 @@ export const SubscribeButton = (props: IProps) => {
         titlePrefix = "";
     }
     
-    if (props.url.indexOf(".tpl")) {
     const hrefTitle = `&amp;title=${encodeURIComponent(props.name)}`;
-    const href = `https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html`;
+    const href =
+          if (props.url.indexOf(".tpl")) {`https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html`}
+    else {`abp:subscribe?location=${encodeURIComponent(props.url)}${hrefTitle}`};
     const title = 
+          if (props.url.indexOf(".tpl")) {
         `${titlePrefix}Visit a TPL archive from which ${props.name
-            } can be subscribed to with Internet Explorer.`;
-    } else {
-    const hrefTitle = `&amp;title=${encodeURIComponent(props.name)}`;
-    const href = `abp:subscribe?location=${encodeURIComponent(props.url)}${hrefTitle}`;
-    const title =
+            } can be subscribed to with Internet Explorer.`
+          } else {
         `${titlePrefix}Subscribe to ${props.name
-            } with a browser extension supporting the \"abp:\" protocol (e.g. uBlock Origin, Adblock Plus).`;
+            } with a browser extension supporting the \"abp:\" protocol (e.g. uBlock Origin, Adblock Plus).`};
     }
 
     return props.url
