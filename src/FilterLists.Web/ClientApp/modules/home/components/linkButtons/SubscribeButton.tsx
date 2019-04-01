@@ -22,7 +22,7 @@ export const SubscribeButton = (props: IProps) => {
         titlePrefix = "";
     }
     
-    if (props.url.indexOf(".tpl") {
+    if (props.url.indexOf(".tpl")) {
     const hrefTitle = `&amp;title=${encodeURIComponent(props.name)}`;
     const href = `https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html`;
     const title = 
