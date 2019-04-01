@@ -11,10 +11,10 @@ export const SubscribeButton = (props: IProps) => {
     let buttonClass: string | undefined;
     let titlePrefix: string;
     
-    if (props.url.indexOf(".onion/") > 0)) {
+    if (props.url.indexOf(".onion/") > 0) {
         buttonClass = "btn-success";
         titlePrefix = "Tor address - ";
-    } else if (props.url.indexOf("http://") === 0)) {
+    } else if (props.url.indexOf("http://") === 0) {
         buttonClass = "btn-danger";
         titlePrefix = "Not Secure - ";
     } else {
