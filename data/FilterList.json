@@ -16557,5 +16557,20 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPrayerTimesList.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPrayerTimesList.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPrayerTimesList.txt"
+  },
+  {
+    "id": 1555,
+    "description": "This script can help you bypass all website content that is blocked by Indonesia's «Positive Internet» campaign through the hosts file.",
+    "descriptionSourceUrl": "https://github.com/gvoze32/unblockhostid#unblockhostid",
+    "donateUrl": "https://unblockhostid.github.io/",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://unblockhostid.github.io/",
+    "issuesUrl": "https://github.com/gvoze32/unblockhostid/issues",
+    "licenseId": 2,
+    "name": "UNBLOCKHOSTID",
+    "updatedDate": "2019-03-25T00:00:00",
+    "syntaxId": 14,
+    "policyUrl": "https://github.com/gvoze32/unblockhostid/blob/master/RULES.md",
+    "viewUrl": "https://raw.githubusercontent.com/gvoze32/unblockhostid/master/hosts"
   }
 ]
