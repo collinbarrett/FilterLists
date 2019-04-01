@@ -37,19 +37,6 @@ if (props.url.indexOf(".tpl") > 0)
 } else {
     title = `${titlePrefix}Subscribe to ${props.name} with a browser extension supporting the \"abp:\" protocol (e.g. uBlock Origin, Adblock Plus).`;
 };
-    
-    
-    const href =
-          if (props.url.indexOf(".tpl") === 1) {`https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html`}
-    else {`abp:subscribe?location=${encodeURIComponent(props.url)}${hrefTitle}`};
-    const title = 
-          if (props.url.indexOf(".tpl") === 1) {
-        `${titlePrefix}Visit a TPL archive from which ${props.name
-            } can be subscribed to with Internet Explorer.`
-          } else {
-        `${titlePrefix}Subscribe to ${props.name
-            } with a browser extension supporting the \"abp:\" protocol (e.g. uBlock Origin, Adblock Plus).`};
-    }
 
     return props.url
                ? <LinkButton href={href}
