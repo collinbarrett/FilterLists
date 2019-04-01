@@ -11,10 +11,10 @@ export const SubscribeButton = (props: IProps) => {
     let buttonClass: string | undefined;
     let titlePrefix: string;
     
-    if (props.url.indexOf(".onion/")) {
+    if (props.url.indexOf(".onion/") === -1) {
         buttonClass = "btn-success";
         titlePrefix = "Tor address - ";
-    } else if (props.url.indexOf("http://")) {
+    } else if (props.url.indexOf("http://") === -1) {
         buttonClass = "btn-danger";
         titlePrefix = "Not Secure - ";
     } else {
@@ -24,10 +24,10 @@ export const SubscribeButton = (props: IProps) => {
     
     const hrefTitle = `&amp;title=${encodeURIComponent(props.name)}`;
     const href =
-          if (props.url.indexOf(".tpl")) {`https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html`}
+          if (props.url.indexOf(".tpl") === -1) {`https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html`}
     else {`abp:subscribe?location=${encodeURIComponent(props.url)}${hrefTitle}`};
     const title = 
-          if (props.url.indexOf(".tpl")) {
+          if (props.url.indexOf(".tpl") === -1) {
         `${titlePrefix}Visit a TPL archive from which ${props.name
             } can be subscribed to with Internet Explorer.`
           } else {
