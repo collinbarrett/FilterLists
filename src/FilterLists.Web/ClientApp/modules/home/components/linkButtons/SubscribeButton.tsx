@@ -26,14 +26,20 @@ export const SubscribeButton = (props: IProps) => {
     let href;
 if (props.url.indexOf(".tpl") > 0) 
 {
-    href = `https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html`;
+    href = `javascript:window.external.msAddTrackingProtectionList('${encodeURIComponent(props.url)}', '${hrefTitle}')`;
+} else if (props.url.indexOf(".lsrules") > 0)
+{
+    href = `x-littlesnitch:subscribe-rules?url=${encodeURIComponent(props.url)}`;
 } else {
     href = `abp:subscribe?location=${encodeURIComponent(props.url)}${hrefTitle}`;
 };
     let title;
 if (props.url.indexOf(".tpl") > 0) 
 {
-    title = `${titlePrefix}Visit a TPL archive from which ${props.name} can be subscribed to with Internet Explorer.`;
+    title = `${titlePrefix}Subscribe to ${props.name} with Internet Explorer's Tracking Protection List feature.`;
+} else if (props.url.indexOf(".lsrules") > 0)
+{
+    href = `${titlePrefix}Subscribe to ${props.name} with Little Snitch's rule group subscription feature.`;
 } else {
     title = `${titlePrefix}Subscribe to ${props.name} with a browser extension supporting the \"abp:\" protocol (e.g. uBlock Origin, Adblock Plus).`;
 };
