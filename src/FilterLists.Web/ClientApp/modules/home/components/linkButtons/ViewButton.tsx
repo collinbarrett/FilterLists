@@ -12,13 +12,10 @@ let text: string;
     
     if (props.url.indexOf(".onion/") > 0) {
         buttonClass = "btn-success";
-        titlePrefix = "Tor address - ";
-    } else if (props.url.indexOf(".7z",".zip") > 0) {
+    } else if (props.url.indexOf(".7z") > 0) {
         buttonClass = "btn-warning";
-        titlePrefix = "Not Secure - ";
     } else {
         buttonClass = undefined;
-        titlePrefix = "";
     }
     
     let title;
@@ -26,7 +23,7 @@ let text: string;
     else if (props.url.indexOf(".7z",".zip") > 0) { title = `Download ${props.name} as a compressed archive.`; }
     else { title = `View ${props.name} in its raw format`; };
     
-    if (props.url.indexOf(".7z",".zip") > 0) { text = `Download`; }
+    if (props.url.indexOf(".7z") > 0) { text = `Download`; }
 else { text = `View`; };
 
 return props.url
