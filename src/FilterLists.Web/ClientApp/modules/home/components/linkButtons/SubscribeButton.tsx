@@ -39,7 +39,7 @@ if (props.url.indexOf(".tpl") > 0)
     title = `${titlePrefix}Subscribe to ${props.name} with Internet Explorer's Tracking Protection List feature.`;
 } else if (props.url.indexOf(".lsrules") > 0)
 {
-    href = `${titlePrefix}Subscribe to ${props.name} with Little Snitch's rule group subscription feature.`;
+    title = `${titlePrefix}Subscribe to ${props.name} with Little Snitch's rule group subscription feature.`;
 } else {
     title = `${titlePrefix}Subscribe to ${props.name} with a browser extension supporting the \"abp:\" protocol (e.g. uBlock Origin, Adblock Plus).`;
 };
