@@ -8,16 +8,6 @@ interface IProps {
 };
 
 export const ViewButton = (props: IProps) => {
-let buttonClass: string | undefined;
-    
-    let buttonClass
-    if (props.url.indexOf(".onion/") > 0) {
-        buttonClass = "btn-success";
-    } else if (props.url.indexOf(".zip") > 0) {
-        buttonClass = "btn-warning";
-    } else {
-        buttonClass = undefined;
-    }
     
     let title;
     if (props.url.indexOf(".onion/") > 0) { title = `Tor address - View ${props.name} in its raw format.`; }
@@ -27,7 +17,6 @@ let buttonClass: string | undefined;
 return props.url
     ? <LinkButton href={props.url}
                   title={title}
-                  buttonClass={buttonClass}
                   text={props.text || "View"}/>
     : null;
 }
