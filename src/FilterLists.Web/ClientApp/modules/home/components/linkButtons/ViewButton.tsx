@@ -9,7 +9,6 @@ interface IProps {
 
 export const ViewButton = (props: IProps) => {
 let buttonClass: string | undefined;
-let text: string;
     
     let buttonClass
     if (props.url.indexOf(".onion/") > 0) {
@@ -28,5 +27,7 @@ let text: string;
 return props.url
     ? <LinkButton href={props.url}
                   title={title}
-                  buttonClass={buttonClass}/>
+                  buttonClass={buttonClass}
+                  text={props.text || "View"}/>
     : null;
+}
