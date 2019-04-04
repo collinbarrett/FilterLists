@@ -4,8 +4,6 @@ interface IProps {
     updatedDate: string;
 };
 
-options = { timeZone: 'utc' };
-
 export const UpdatedDate = (props: IProps) =>
     props.updatedDate
     ? <li className="list-group-item">
