@@ -1,1 +1,3 @@
 body, h2, h3, h4, h5, blockquote { font-size: 16px; }
+.container{ max-width:98vw!important;padding-left:7px!important }
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
