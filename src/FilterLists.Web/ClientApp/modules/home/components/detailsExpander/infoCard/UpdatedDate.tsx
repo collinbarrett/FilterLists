@@ -10,8 +10,7 @@ export const UpdatedDate = (props: IProps) =>
     props.updatedDate
     ? <li className="list-group-item">
           <p>Updated: (props.updatedDate).isValid()
-                            
-                           ? (props.updatedDate)Intl.DateTimeFormat([], options).format(date)
+                           ? (props.updatedDate)Intl.DateTimeFormat().format(date)
                            : "N/A"}</p>
       </li>
     : null;
