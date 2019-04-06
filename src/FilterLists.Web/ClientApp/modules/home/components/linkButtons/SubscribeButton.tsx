@@ -22,7 +22,7 @@ export const SubscribeButton = (props: IProps) => {
         titlePrefix = "";
     }
     
-    const hrefTitle = `&amp;title=${encodeURIComponent(props.name)}`;
+    const hrefTitle = `${encodeURIComponent(props.name)}`;
     let href;
 if (props.url.indexOf(".tpl") > 0) 
 {
@@ -31,7 +31,7 @@ if (props.url.indexOf(".tpl") > 0)
 {
     href = `x-littlesnitch:subscribe-rules?url=${encodeURIComponent(props.url)}`;
 } else {
-    href = `abp:subscribe?location=${encodeURIComponent(props.url)}${hrefTitle}`;
+    href = `abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${hrefTitle}`;
 };
     let title;
 if (props.url.indexOf(".tpl") > 0) 
