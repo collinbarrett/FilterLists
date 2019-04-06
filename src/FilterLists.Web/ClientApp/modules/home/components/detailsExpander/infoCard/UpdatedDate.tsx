@@ -9,7 +9,7 @@ export const UpdatedDate = (props: IProps) =>
     props.updatedDate
     ? <li className="list-group-item">
           <p>Updated: {moment(props.updatedDate).isValid()
-                           ? moment(props.updatedDate).utc(date).local().format("l")
+                           ? moment(props.updatedDate).local().format("l")
                            : "N/A"}</p>
       </li>
     : null;
