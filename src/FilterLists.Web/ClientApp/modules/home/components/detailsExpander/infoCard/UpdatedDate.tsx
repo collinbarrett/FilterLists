@@ -1,7 +1,7 @@
 import * as React from "react";
 
 interface IProps {
-    updatedDate: string;
+    updatedDate: date;
 };
 
 export const UpdatedDate = (props: IProps) =>
