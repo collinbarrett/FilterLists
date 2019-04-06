@@ -7,6 +7,6 @@ interface IProps {
 export const UpdatedDate = (props: IProps) =>
     props.updatedDate
     ? <li className="list-group-item">
-          <p>Updated: {props.updatedDate.format("l").toLocaleString()}</p>
+          <p>Updated: {props.updatedDate.toLocaleDateString()}</p>
       </li>
     : null;
