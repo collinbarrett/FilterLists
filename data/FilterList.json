@@ -16573,5 +16573,19 @@
     "syntaxId": 14,
     "policyUrl": "https://github.com/gvoze32/unblockhostid/blob/master/RULES.md",
     "viewUrl": "https://raw.githubusercontent.com/gvoze32/unblockhostid/master/hosts"
+  },
+  {
+    "id": 1556,
+    "description": "Prevent Game of Thrones spoilers",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/ColumWalsh/unsullied/master/unsullied.txt",
+    "donateUrl": "https://www.svp.ie/get-involved/donate/single-donation.aspx",
+    "homeUrl": "https://github.com/ColumWalsh/unsullied",
+    "issuesUrl": "https://github.com/ColumWalsh/unsullied/issues",
+    "licenseId": 2,
+    "name": "Unsullied",
+    "updatedDate": "2019-04-07T00:00:00",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/ColumWalsh/unsullied/master/unsullied.txt"
   }
+
 ]
