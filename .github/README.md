@@ -5,7 +5,7 @@
 [![Travis](https://travis-ci.org/collinbarrett/FilterLists.svg?branch=master)](https://travis-ci.org/collinbarrett/FilterLists)
 [![codecov](https://codecov.io/gh/collinbarrett/FilterLists/branch/master/graph/badge.svg)](https://codecov.io/gh/collinbarrett/FilterLists)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/collinbarrett/FilterLists/blob/master/LICENSE)
-[![BuitlWithDot.Net shield](https://builtwithdot.net/project/125/filterlists/badge)](https://builtwithdot.net/project/125/filterlists)
+[![BuiltWithDot.Net shield](https://builtwithdot.net/project/125/filterlists/badge)](https://builtwithdot.net/project/125/filterlists)
 [![Beerpay](https://beerpay.io/collinbarrett/FilterLists/badge.svg?style=beer-square)](https://beerpay.io/collinbarrett/FilterLists)
 [![Beerpay](https://beerpay.io/collinbarrett/FilterLists/make-wish.svg?style=flat-square)](https://beerpay.io/collinbarrett/FilterLists?focus=wish)
 
@@ -46,4 +46,4 @@ We respect your privacy. That is the whole point of this site. The only minor da
 
 ### Internet Explorer TPL users
 
-The FilterLists.com website returns a blank page in Internet Explorer, mostly due to problems with both polyfill and JavaScript elements. To help alleviate this, a makeshift archive has been set up. To view a smaller TPL-only archive with subscribable links, right-click on [this link](https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html), choose to save it as an HTML file, and open it in Internet Explorer ≥9.
+The FilterLists.com website returns a blank page in Internet Explorer, mostly due to problems with both polyfill and JavaScript elements, in addition to IE being considered by us to be an outdated browser. To help alleviate this, a makeshift archive has been set up. To view a smaller TPL-only archive with subscribable links, right-click on [this link](https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html), choose to save it as an HTML file, and open it in Internet Explorer ≥9.
