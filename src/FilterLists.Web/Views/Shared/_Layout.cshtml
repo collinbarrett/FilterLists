@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
@@ -16,10 +16,10 @@
 <body>
 @RenderBody()
 <script src="~/dist/vendor.js" asp-append-version="true"></script>
-<script src="https://cdn.polyfill.io/v2/polyfill.min.js" asp-append-version="true"></script>
+if (Function('/*@cc_on return document.documentMode > 8@*/')()) {<script src="https://cdn.polyfill.io/v3/polyfill.min.js" asp-append-version="true"></script>}
 @RenderSection("scripts", false)
 <noscript>
-    <p>FilterLists is built with ReactJS and therefore requires first-party JavaScript to be enabled. We do not use any third-party JavaScript, and your privacy is very important to us. If you prefer not to enable JavaScript or your browser does not support it, the data is largely available on <a href="https://github.com/collinbarrett/FilterLists">our GitHub repo</a>.</p>
+    <p>FilterLists is built with ReactJS and therefore requires first-party JavaScript to be enabled. We do not use any third-party JavaScript, and your privacy is very important to us. If you prefer not to enable JavaScript or your browser does not support it, the data is largely available on <a href="https://github.com/collinbarrett/FilterLists">our GitHub repo</a>.<br><br>Note that one open-source third-party library is currently used when loading the site in Internet Explorer only, as a stepstone to resolve site-breaking loading issues in that browser.</p>
 </noscript>
 </body>
 </html>
