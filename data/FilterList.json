@@ -16237,7 +16237,7 @@
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
     "licenseId": 12,
-    "name": "AdGuard English Filter without EasyList",
+    "name": "AdGuard Base Filter without EasyList",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
     "viewUrl": "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt"
