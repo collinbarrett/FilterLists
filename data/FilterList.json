@@ -9306,9 +9306,7 @@
     "issuesUrl": "https://github.com/bogachenko/presstheattack/issues",
     "licenseId": 2,
     "name": "Press the Attack",
-    "publishedDate": "2018-10-01T13:53:10",
     "syntaxId": 4,
-    "updatedDate": "2019-02-11T03:04:33",
     "viewUrl": "https://raw.githubusercontent.com/bogachenko/presstheattack/master/presstheattack.txt"
   },
   {
@@ -16586,6 +16584,27 @@
     "updatedDate": "2019-04-07T00:00:00",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/ColumWalsh/unsullied/master/unsullied.txt"
+  },
+  {
+    "id": 1557,
+    "description": "Android AdBlock Hosts file for /etc/hosts",
+    "homeUrl": "https://github.com/DataMaster-2501/DataMaster-Android-AdBlock-Hosts",
+    "issuesUrl": "https://github.com/DataMaster-2501/DataMaster-Android-AdBlock-Hosts/issues",
+    "licenseId": 4,
+    "name": "DataMaster Android AdBlock Hosts",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/DataMaster-2501/DataMaster-Android-AdBlock-Hosts/master/hosts"
+  },
+  {
+    "id": 1558,
+    "description": "Filters for blocking pop-ups and anti-adblock bypass.",
+    "descriptionSourceUrl": "https://github.com/bogachenko/fuckfuckadblock",
+    "emailAddress": "bogachenkove@gmail.com",
+    "homeUrl": "https://github.com/bogachenko/fuckfuckadblock",
+    "issuesUrl": "https://github.com/bogachenko/fuckfuckadblock/issues",
+    "licenseId": 2,
+    "name": "Fuck Fuckadblock",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/bogachenko/fuckfuckadblock/master/fuckfuckadblock.txt"
   }
-
 ]
