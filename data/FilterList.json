@@ -16586,6 +16586,15 @@
     "updatedDate": "2019-04-07T00:00:00",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/ColumWalsh/unsullied/master/unsullied.txt"
+  },
+  {
+    "id": 1557,
+    "description": "Android AdBlock Hosts file for /etc/hosts",
+    "homeUrl": "https://github.com/DataMaster-2501/DataMaster-Android-AdBlock-Hosts",
+    "issuesUrl": "https://github.com/DataMaster-2501/DataMaster-Android-AdBlock-Hosts/issues",
+    "licenseId": 4,
+    "name": "DataMaster Android AdBlock Hosts",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/DataMaster-2501/DataMaster-Android-AdBlock-Hosts/master/hosts"
   }
-
 ]
