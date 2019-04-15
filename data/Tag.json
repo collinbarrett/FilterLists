@@ -133,5 +133,15 @@
     "id": 27,
     "description": "Userstyles in adblocker syntax that change the appearance of sites",
     "name": "userstyle"
+  },
+  {
+    "id": 28,
+    "description": "Blocks requests that ask you to subscribe to newsletters",
+    "name": "newsletters"
+  },
+  {
+    "id": 29,
+    "description": "Prevents \"How can I help you?\" prompts from popping up",
+    "name": "helpprompt"
   }
 ]
