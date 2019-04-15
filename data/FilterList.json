@@ -8081,7 +8081,7 @@
     "id": 755,
     "homeUrl": "http://jansal.net/TPL.shtml",
     "licenseId": 5,
-    "name": "M",
+    "name": "Sucuri M",
     "syntaxId": 10,
     "updatedDate": "2013-12-28T00:00:00",
     "viewUrl": "http://jansal.net/tpl/m.tpl"
@@ -12298,17 +12298,6 @@
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/BreakingTheNews.txt"
   },
   {
-    "id": 1129,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Bulgarian List (Domains)",
-    "publishedDate": "2017-09-02T01:07:36",
-    "syntaxId": 2,
-    "updatedDate": "2019-02-01T00:40:14",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/BulgarianListEasyList.txt"
-  },
-  {
     "id": 1130,
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
@@ -13663,7 +13652,7 @@
     "updatedDate": "2019-03-27T21:25:33+00:00",
     "viewUrl": "https://gitlab.com/intr0/DomainVoider/raw/master/DomainVoider.txt",
     "viewUrlMirror1": "https://notabug.org/-intr0/DomainVoider/raw/master/DomainVoider.txt",
-    "viewUrlMirror2": "http://vivmyccb3jdb7yij.onion/intr0/DomainVoider/raw/master/DomainVoider.txt"
+    "viewUrlMirror2": "https://vivmyccb3jdb7yij.onion/intr0/DomainVoider/raw/master/DomainVoider.txt"
   },
   {
     "id": 1297,
@@ -16606,5 +16595,35 @@
     "name": "Fuck Fuckadblock",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/bogachenko/fuckfuckadblock/master/fuckfuckadblock.txt"
+  },
+  {
+    "id": 1559,
+    "description": "This hosts file blocks the BBC News website Breaking News banner",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/BreakingTheNews/BreakingTheNews.github.io/master/hosts",
+    "homeUrl": "https://github.com/BreakingTheNews/BreakingTheNews.github.io",
+    "issuesUrl": "https://github.com/BreakingTheNews/BreakingTheNews.github.io/issues",
+    "name": "Breaking the News",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/BreakingTheNews/BreakingTheNews.github.io/master/hosts"
+  },
+  {
+    "id": 1560,
+    "description": "Block Bitcoin Mining in browser (webs and extensions)",
+    "descriptionSourceUrl": "https://github.com/ruvelro/Halt-and-Block-Mining/blob/master/README.md",
+    "homeUrl": "https://github.com/ruvelro/Halt-and-Block-Mining",
+    "issuesUrl": "https://github.com/ruvelro/Halt-and-Block-Mining/issues",
+    "name": "Halt-and-Block-Mining",
+    "syntaxId": 27,
+    "viewUrl": "https://raw.githubusercontent.com/ruvelro/Halt-and-Block-Mining/master/HBmining.bat"
+  },
+  {
+    "id": 1561,
+    "description": "A list of 400+ Admiral domains. These are provided for educational and research purposes only.",
+    "descriptionSourceUrl": "https://github.com/jkrejcha/AdmiraList/",
+    "homeUrl": "https://github.com/jkrejcha/AdmiraList/",
+    "issuesUrl": "https://github.com/jkrejcha/AdmiraList/issues",
+    "name": "AdmiraList",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/jkrejcha/AdmiraList/master/AdmiraList.txt"
   }
 ]
