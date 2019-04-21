@@ -193,5 +193,12 @@
     "homeUrl": "https://www.isc.org/downloads/bind/",
     "isAbpSubscribable": false,
     "name": "BIND"
+  },
+  {
+    "id": 31,
+    "downloadUrl": "https://github.com/AdguardTeam/AdGuardHome/releases",
+    "homeUrl": "https://github.com/AdguardTeam/AdGuardHome",
+    "isAbpSubscribable": false,
+    "name": "AdGuard Home"
   }
 ]

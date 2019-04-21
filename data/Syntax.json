@@ -115,5 +115,9 @@
   {
     "id": 27,
     "name": "Windows command line script"
+  },
+  {
+    "id": 28,
+    "name": "Adblocker-syntax domains"
   }
 ]
