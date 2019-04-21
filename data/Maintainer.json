@@ -60,9 +60,9 @@
   },
   {
     "id": 14,
+    "emailAddress": "mp3geek@gmail.com",
     "homeUrl": "https://www.fanboy.co.nz/",
     "name": "Ryan Brown",
-    "emailAddress": "mp3geek@gmail.com",
     "twitterHandle": "fanboynz"
   },
   {
@@ -137,9 +137,9 @@
   },
   {
     "id": 28,
+    "emailAddress": "blablabla@alleblock.pl",
     "homeUrl": "https://github.com/maciejtarmas",
-    "name": "Maciej Tarmas",
-    "emailAddress": "blablabla@alleblock.pl"
+    "name": "Maciej Tarmas"
   },
   {
     "id": 29,
@@ -165,9 +165,9 @@
   },
   {
     "id": 33,
+    "emailAddress": "kadrep@outlook.com",
     "homeUrl": "https://github.com/azet12/",
-    "name": "azet12",
-    "emailAddress": "kadrep@outlook.com"
+    "name": "azet12"
   },
   {
     "id": 34,
@@ -183,9 +183,9 @@
   },
   {
     "id": 36,
+    "emailAddress": "martin@herndl.org",
     "homeUrl": "https://github.com/monojp",
-    "name": "Martin Herndl",
-    "emailAddress": "martin@herndl.org"
+    "name": "Martin Herndl"
   },
   {
     "id": 37,
@@ -403,9 +403,9 @@
   },
   {
     "id": 80,
+    "emailAddress": "email@kowabit.de",
     "homeUrl": "https://www.kowabit.de/",
-    "name": "kowabit",
-    "emailAddress": "email@kowabit.de"
+    "name": "kowabit"
   },
   {
     "id": 81,
@@ -500,14 +500,14 @@
   },
   {
     "id": 97,
-    "homeUrl": "https://github.com/easylist/EasyListHebrew",
     "emailAddress": "easylisthebrew@gmail.com",
+    "homeUrl": "https://github.com/easylist/EasyListHebrew",
     "name": "EasyListHebrew"
   },
   {
     "id": 98,
-    "homeUrl": "https://abpchina.org",
     "emailAddress": "easylist.china@gmail.com",
+    "homeUrl": "https://abpchina.org",
     "name": "EasyList China"
   },
   {
@@ -554,8 +554,8 @@
   },
   {
     "id": 107,
-    "homeUrl": "https://github.com/bogachenko",
     "emailAddress": "bogachenkove@gmail.com",
+    "homeUrl": "https://github.com/bogachenko",
     "name": "Bogachenko Vyacheslav"
   },
   {
@@ -593,8 +593,8 @@
   },
   {
     "id": 114,
-    "homeUrl": "https://nfz.moe/",
     "emailAddress": "neofelhz@gmail.com",
+    "homeUrl": "https://nfz.moe/",
     "name": "neo Felhz",
     "twitterHandle": "neoFelhz"
   },
@@ -606,14 +606,14 @@
   },
   {
     "id": 116,
-    "homeUrl": "https://github.com/cbuijs/",
     "emailAddress": "github@chrisbuijs.com",
+    "homeUrl": "https://github.com/cbuijs/",
     "name": "Chris Buijs"
   },
   {
     "id": 117,
-    "homeUrl": "https://intr0.com/",
     "emailAddress": "admin@intr0.com",
+    "homeUrl": "https://intr0.com/",
     "name": "intr0"
   },
   {
@@ -623,8 +623,8 @@
   },
   {
     "id": 119,
-    "homeUrl": "https://github.com/hectorm",
     "emailAddress": "hector@molinero.dev",
+    "homeUrl": "https://github.com/hectorm",
     "name": "Héctor Molinero Fernández"
   },
   {
@@ -634,38 +634,38 @@
   },
   {
     "id": 121,
-    "homeUrl": "https://github.com/mitchellkrogza",
     "emailAddress": "mitchellkrog@gmail.com",
+    "homeUrl": "https://github.com/mitchellkrogza",
     "name": "mitchellkrogza"
   },
   {
     "id": 122,
-    "homeUrl": "https://oz.nu/",
     "emailAddress": "dev@oz.nu",
+    "homeUrl": "https://oz.nu/",
     "name": "oznu"
   },
   {
     "id": 123,
-    "homeUrl": "https://github.com/ReddestDream",
     "emailAddress": "reddestdream@gmail.com",
+    "homeUrl": "https://github.com/ReddestDream",
     "name": "ReddestDream"
   },
   {
     "id": 124,
-    "homeUrl": "http://bambenekconsulting.com",
     "emailAddress": "jcb@bambenekconsulting.com",
+    "homeUrl": "http://bambenekconsulting.com",
     "name": "John Bambenek"
   },
   {
     "id": 125,
-    "homeUrl": "http://www.joewein.de",
     "emailAddress": "jwspamspy@pobox.com",
+    "homeUrl": "http://www.joewein.de",
     "name": "Joe Wein"
   },
   {
     "id": 126,
-    "homeUrl": "https://github.com/bongochong",
     "emailAddress": "radicalbotanical@aol.com",
+    "homeUrl": "https://github.com/bongochong",
     "name": "Chongo Bong"
   },
   {
