@@ -6632,6 +6632,30 @@
     "tagId": 2
   },
   {
+    "filterListId": 1562,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1562,
+    "tagId": 4
+  },
+  {
+    "filterListId": 1562,
+    "tagId": 8
+  },
+  {
+    "filterListId": 1562,
+    "tagId": 16
+  },
+  {
+    "filterListId": 1562,
+    "tagId": 20
+  },
+  {
+    "filterListId": 1562,
+    "tagId": 29
+  },
+  {
     "filterListId": 1563,
     "tagId": 2
   },
@@ -6642,5 +6666,9 @@
   {
     "filterListId": 1565,
     "tagId": 15
+  },
+  {
+    "filterListId": 1566,
+    "tagId": 2
   }
 ]

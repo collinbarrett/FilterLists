@@ -16617,15 +16617,13 @@
   },
   {
     "id": 1562,
-    "description": "This ad blocker list aims to block mobile ads which includes in-app ads.",
-    "descriptionSourceUrl": "https://github.com/biroloter/Mobile-Ad-Hosts#mobile-ad-hosts",
-    "homeUrl": "https://github.com/biroloter/Mobile-Ad-Hosts",
-    "issuesUrl": "https://github.com/biroloter/Mobile-Ad-Hosts/issues",
-    "name": "Mobile-Ad-Hosts",
-    "syntaxId": 1,
-    "licenseId": 19,
-    "updatedDate": "2018-03-21T00:00:00",
-    "viewUrl": "https://raw.githubusercontent.com/biroloter/Mobile-Ad-Hosts/master/hosts"
+    "description": "Constantly updated filter list for uBlock Origin. Let's make sites cleaner and reading more comfortable!",
+    "descriptionSourceUrl": "https://github.com/mtxadmin/ublock/issues",
+    "homeUrl": "https://github.com/mtxadmin/ublock/",
+    "issuesUrl": "https://github.com/mtxadmin/ublock/issues",
+    "name": "Yet another small uBlock filter list",
+    "syntaxId": 21,
+    "viewUrl": "https://raw.githubusercontent.com/mtxadmin/ublock/master/it"
   },
   {
     "id": 1563,
@@ -16671,5 +16669,17 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GamestoreMovieRemover.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/GamestoreMovieRemover.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/GamestoreMovieRemover.txt"
+  },
+  {
+    "id": 1566,
+    "description": "This ad blocker list aims to block mobile ads which includes in-app ads.",
+    "descriptionSourceUrl": "https://github.com/biroloter/Mobile-Ad-Hosts#mobile-ad-hosts",
+    "homeUrl": "https://github.com/biroloter/Mobile-Ad-Hosts",
+    "issuesUrl": "https://github.com/biroloter/Mobile-Ad-Hosts/issues",
+    "name": "Mobile-Ad-Hosts",
+    "syntaxId": 1,
+    "licenseId": 19,
+    "updatedDate": "2018-03-21T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/biroloter/Mobile-Ad-Hosts/master/hosts"
   }
 ]
