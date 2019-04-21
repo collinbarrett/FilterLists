@@ -27,6 +27,7 @@ import img27 from "./27-hostsmgr.png";
 import img28 from "./28-personalDNSfilter.svg";
 import img29 from "./29-Unbound.png";
 import img30 from "./30-BIND.png";
+import img31 from "./31-AdGuard-Home.png";
 
 export {
     img1,
@@ -57,5 +58,6 @@ export {
     img27,
     img28,
     img29,
-    img30
+    img30,
+    img31
     };
