@@ -55,7 +55,7 @@
     "homeUrl": "https://adblockplus.org/blog/how-to-keep-people-from-knowing-you-ve-read-their-facebook-message",
     "licenseId": 4,
     "name": "Message \"Seen\" Remover for Facebook",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2019-02-02T06:15:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/message_seen_remover_for_facebook.txt"
   },
@@ -181,7 +181,7 @@
     "licenseId": 2,
     "name": "NoCoin",
     "publishedDate": "2017-09-17T20:18:51",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2019-01-27T20:08:01",
     "viewUrl": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
@@ -331,7 +331,7 @@
     "licenseId": 5,
     "name": "Peter Lowe's List",
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2019-02-02T09:13:10",
     "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext"
   },
@@ -397,7 +397,7 @@
     "licenseId": 5,
     "name": "Lead Generator",
     "publishedDate": "2016-11-06T14:22:56",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2018-04-12T19:48:34",
     "viewUrl": "https://raw.githubusercontent.com/Rpsl/adblock-leadgenerator-list/master/list/list.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/Rpsl/adblock-leadgenerator-list/master/list/list.txt",
@@ -570,7 +570,7 @@
     "emailAddress": "bug-gnuzilla@gnu.org",
     "licenseId": 5,
     "name": "GNU Blacklist",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2019-02-09T19:25:16",
     "viewUrl": "https://gnuzilla.gnu.org/filters/blacklist.txt"
   },
@@ -682,7 +682,7 @@
     "name": "KAD - Scams",
     "publishedDate": "2016-04-08T12:11:44",
     "submissionUrl": "https://kadantiscam.netlify.com/#contact",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2019-02-08T15:48:27",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/master/KAD.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/PolishFiltersTeam/KAD/master/KAD.txt",
@@ -751,7 +751,7 @@
     "licenseId": 19,
     "name": "Piperun's iplogger filter",
     "publishedDate": "2015-10-30T17:39:31",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2018-12-04T16:03:22",
     "viewUrl": "https://raw.githubusercontent.com/piperun/iploggerfilter/master/filterlist",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/piperun/iploggerfilter/master/filterlist",
@@ -1707,7 +1707,7 @@
     "description": "Whitelists the trackers on the United Airlines shopping portal so that rewards can be credited.",
     "licenseId": 5,
     "name": "Shopping Whitelist United Airlines",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "viewUrl": "https://shopping.mileageplus.com/adBlockWhitelist.php"
   },
   {
@@ -1724,7 +1724,7 @@
     "description": "Whitelists the trackers on the Southwest Airlines shopping portal so that rewards can be credited.",
     "licenseId": 5,
     "name": "Shopping Whitelist Southwest Airlines",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "viewUrl": "https://rapidrewardsshopping.southwest.com/adBlockWhitelist.php"
   },
   {
@@ -1732,7 +1732,7 @@
     "description": "Whitelists the trackers on the American Airlines shopping portal so that rewards can be credited.",
     "licenseId": 5,
     "name": "Shopping Whitelist American Airlines",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "viewUrl": "https://www.aadvantageeshopping.com/adBlockWhitelist.php"
   },
   {
@@ -1740,7 +1740,7 @@
     "description": "Whitelists the trackers on the Alaska Airlines shopping portal so that rewards can be credited.",
     "licenseId": 5,
     "name": "Shopping Whitelist Alaska Airlines",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "viewUrl": "https://www.mileageplanshopping.com/adBlockWhitelist.php"
   },
   {
@@ -1790,7 +1790,7 @@
     "description": "Whitelists the trackers on the BarclayCard shopping portal so that rewards can be credited.",
     "licenseId": 5,
     "name": "Shopping Whitelist BarclayCard",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "viewUrl": "https://www.barclaycardrewardsboost.com/adBlockWhitelist.php"
   },
   {
@@ -1994,7 +1994,7 @@
     "licenseId": 12,
     "name": "AdGuard Simplified Domain Names Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
-    "syntaxId": 6,
+    "syntaxId": 28,
     "updatedDate": "2019-02-11T14:08:09",
     "viewUrl": "https://filters.adtidy.org/windows/filters/15.txt"
   },
@@ -2792,7 +2792,7 @@
     "homeUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.html",
     "licenseId": 12,
     "name": "Facebook Privacy List",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2010-05-18T00:00:00",
     "viewUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt",
     "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Facebook%20Privacy%20List.txt",
@@ -2841,7 +2841,7 @@
     "homeUrl": "https://www.ebates.com/",
     "licenseId": 5,
     "name": "Ebates Cash Back Shopping",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2018-12-09T21:22:11",
     "viewUrl": "https://www.ebates.com/whitelist/ebates-cash-back-shopping.txt"
   },
@@ -2920,7 +2920,7 @@
     "issuesUrl": "https://github.com/easylist/easylist/issues",
     "licenseId": 4,
     "name": "EasyList Without Element Hiding Rules",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2019-02-02T04:14:13",
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylist_noelemhide.txt"
   },
@@ -2982,7 +2982,8 @@
     "homeUrl": "https://fanboy.co.nz/",
     "licenseId": 16,
     "name": "Fanboy's Anti-thirdparty Fonts",
-    "syntaxId": 3,
+    "syntaxId": 28,
+    "updatedDate": "2018-05-28T00:00:00",
     "viewUrl": "https://fanboy.co.nz/fanboy-antifonts.txt"
   },
   {
@@ -3179,7 +3180,7 @@
     "issuesUrl": "https://github.com/easylist/easylist/issues",
     "licenseId": 16,
     "name": "Fanboy's Enhanced Tracking List",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2019-02-02T06:36:10",
     "viewUrl": "https://fanboy.co.nz/enhancedstats.txt"
   },
@@ -3250,7 +3251,7 @@
     "homeUrl": "https://www.malwaredomains.com/",
     "licenseId": 5,
     "name": "DNS-BH Adblock Plus Malware Domains Full",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2019-02-02T07:53:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt"
   },
@@ -3343,7 +3344,7 @@
     "issuesUrl": "https://github.com/EFForg/privacybadgerfirefox/issues",
     "licenseId": 5,
     "name": "Cookie Blocklist",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2019-01-14T11:14:09",
     "viewUrl": "https://www.eff.org/files/cookieblocklist.txt"
   },
@@ -3748,18 +3749,6 @@
     "syntaxId": 4,
     "updatedDate": "2018-01-15T14:44:41",
     "viewUrl": "https://raw.githubusercontent.com/elypter/filter_processor/master/generated_filterlists/blockhead(decoy_generic_selection).txt"
-  },
-  {
-    "id": 314,
-    "description": "No Coin is a tiny browser extension aiming to block coin miners such as Coinhive.",
-    "descriptionSourceUrl": "https://github.com/keraf/NoCoin",
-    "donateUrl": "https://paypal.me/keraf",
-    "homeUrl": "https://github.com/keraf/NoCoin",
-    "issuesUrl": "https://github.com/keraf/NoCoin/issues",
-    "licenseId": 4,
-    "name": "Cryptocurrency (Bitcoin) Mining Protection List",
-    "syntaxId": 3,
-    "viewUrl": "https://cdn.adblockcdn.com/filters/nominers.txt"
   },
   {
     "id": 315,
@@ -4581,7 +4570,7 @@
     "licenseId": 2,
     "name": "CB Malicious Domains",
     "publishedDate": "2018-02-21T00:00:00",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2018-11-12T22:16:09",
     "viewUrl": "https://raw.githubusercontent.com/cb-software/CB-Malicious-Domains/master/block_lists/adblock_plus.txt"
   },
@@ -5858,7 +5847,7 @@
     "licenseId": 8,
     "name": "KAD - The Whitelist of the Controversial Pages",
     "submissionUrl": "https://azet12.github.io/KAD/informacje.html#form1-35",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "viewUrl": "https://raw.githubusercontent.com/azet12/KAD/gh-pages/assets/other/kadfakewhitelist.txt"
   },
   {
@@ -6482,7 +6471,7 @@
     "licenseId": 5,
     "name": "ABPVN List - No Element Hide",
     "publishedDate": "2016-10-26T10:06:22",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2019-02-04T05:59:30",
     "viewUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn_noelemhide.txt"
   },
@@ -7827,7 +7816,7 @@
     "licenseId": 2,
     "name": "Annoyance Mobile Ad hosts filter",
     "publishedDate": "2016-09-09T05:32:12",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2018-01-16T03:26:53",
     "viewUrl": "https://raw.githubusercontent.com/yowu/AnnoyanceMobileAdHosts/master/AnnoyanceMobileAdHosts.txt"
   },
@@ -8771,7 +8760,7 @@
     "licenseId": 33,
     "name": "Brave Unbreak",
     "publishedDate": "2016-11-10T13:11:50",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2019-01-21T14:20:41",
     "viewUrl": "https://raw.githubusercontent.com/brave/adblock-lists/master/brave-unbreak.txt"
   },
@@ -8794,7 +8783,7 @@
     "licenseId": 5,
     "name": "Adblock the NSA",
     "publishedDate": "2016-11-01T10:14:53",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2016-11-01T10:14:53",
     "viewUrl": "https://raw.githubusercontent.com/gasull/adblock-nsa/master/filters.txt"
   },
@@ -8958,7 +8947,7 @@
     "licenseId": 9,
     "name": "Romanian Media Propaganda AdBlock List",
     "publishedDate": "2015-11-12T19:00:24",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2015-11-13T10:10:40",
     "viewUrl": "https://raw.githubusercontent.com/Recon/romanian-media-propaganda-adblock-list/master/ro-media-blocklist.txt"
   },
@@ -9532,7 +9521,7 @@
     "licenseId": 5,
     "name": "Whale Filter",
     "publishedDate": "2017-12-27T22:53:18",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2019-01-14T14:50:10",
     "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/kujira_filter.txt"
   },
@@ -13559,7 +13548,7 @@
     "licenseId": 10,
     "name": "Dandelion Sprout's Anti-Malware List",
     "publishedDate": "2018-01-04T00:00:00",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2019-01-31T13:13:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout's%20Anti-Malware%20List.txt",
@@ -13648,7 +13637,7 @@
     "licenseId": 19,
     "name": "DomainVoider",
     "publishedDate": "2017-11-11",
-    "syntaxId": 3,
+    "syntaxId": 28,
     "updatedDate": "2019-03-27T21:25:33+00:00",
     "viewUrl": "https://gitlab.com/intr0/DomainVoider/raw/master/DomainVoider.txt",
     "viewUrlMirror1": "https://notabug.org/-intr0/DomainVoider/raw/master/DomainVoider.txt",
@@ -16243,7 +16232,7 @@
     "name": "Hello, Goodbye!",
     "description": "Blocks every chat or helpdesk pop up in your browser.",
     "licenseId": 4,
-    "syntaxId": 3,
+    "syntaxId": 28,
     "homeUrl": "https://hellogoodbye.app/",
     "issuesUrl": "https://github.com/bcye/Hello-Goodbye/issues",
     "emailAddress": "hello@hellogoodbye.app"
@@ -16635,5 +16624,62 @@
     "name": "Yet another small uBlock filter list",
     "syntaxId": 21,
     "viewUrl": "https://raw.githubusercontent.com/mtxadmin/ublock/master/it"
-  }  
+  },
+  {
+    "id": 1563,
+    "description": "Hosts file for annoying ads",
+    "descriptionSourceUrl": "https://github.com/xorcan/hosts",
+    "homeUrl": "https://github.com/xorcan/hosts",
+    "issuesUrl": "https://github.com/xorcan/hosts/issues",
+    "name": "xorcan türk ad-list",
+    "syntaxId": 1,
+    "licenseId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt"
+  },
+  {
+    "id": 1564,
+    "description": "We hear so much talk about \"fake news\" nowadays, but we never hear any talk about non-news, such as C-tier celebrities either expecting offspring or giving birth to such. This list will aid in removing such kinds of non-news.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiCelebBirthList",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-'Newsstories about celebs giving birth' List",
+    "publishedDate": "2019-04-21T00:00:00",
+    "updatedDate": "2019-04-21T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiCelebBirthList",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiCelebBirthList",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiCelebBirthList"
+  },
+  {
+    "id": 1565,
+    "description": "While it was admirable that places like GOG, Humble Bundle, and Steam began selling movies and books, their categories for such quickly became a dumping ground for useless indie filler. No one needs three book bundles a month about how to write JavaScript, nor do they need a cashgrab \"documentary\" about bronies. This list is for those who once again want to reclaim such stores in the name of videogames.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GamestoreMovieRemover.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "List for removing movies and books from videogame storefronts",
+    "publishedDate": "2019-04-21T00:00:00",
+    "updatedDate": "2019-04-21T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GamestoreMovieRemover.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/GamestoreMovieRemover.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/GamestoreMovieRemover.txt"
+  },
+  {
+    "id": 1566,
+    "description": "This ad blocker list aims to block mobile ads which includes in-app ads.",
+    "descriptionSourceUrl": "https://github.com/biroloter/Mobile-Ad-Hosts#mobile-ad-hosts",
+    "homeUrl": "https://github.com/biroloter/Mobile-Ad-Hosts",
+    "issuesUrl": "https://github.com/biroloter/Mobile-Ad-Hosts/issues",
+    "name": "Mobile-Ad-Hosts",
+    "syntaxId": 1,
+    "licenseId": 19,
+    "updatedDate": "2018-03-21T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/biroloter/Mobile-Ad-Hosts/master/hosts"
+  }
 ]
