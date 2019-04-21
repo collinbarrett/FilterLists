@@ -16625,8 +16625,8 @@
     "name": "AdmiraList",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/jkrejcha/AdmiraList/master/AdmiraList.txt"
-  }
-{
+  },
+  {
     "id": 1562,
     "description": "Constantly updated filter list for uBlock Origin. Let's make sites cleaner and reading more comfortable!",
     "descriptionSourceUrl": "https://github.com/mtxadmin/ublock/issues",
@@ -16635,5 +16635,5 @@
     "name": "Yet another small uBlock filter list",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/mtxadmin/ublock/master/it"
-    }  
+  }  
 ]
