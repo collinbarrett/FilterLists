@@ -16647,12 +16647,29 @@
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
-    "name": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiCelebBirthList",
+    "name": "Anti-'Newsstories about celebs giving birth' List",
     "publishedDate": "2019-04-21T00:00:00",
     "updatedDate": "2019-04-21T00:00:00",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiCelebBirthList",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiCelebBirthList",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiCelebBirthList"
+  },
+  {
+    "id": 1565,
+    "description": "While it was admirable that places like GOG, Humble Bundle, and Steam began selling movies and books, their categories for such quickly became a dumping ground for useless indie filler. No one needs three book bundles a month about how to write JavaScript, nor do they need a cashgrab \"documentary\" about bronies. This list is for those who once again want to reclaim such stores in the name of videogames.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GamestoreMovieRemover.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "List for removing movies and books from videogame storefronts",
+    "publishedDate": "2019-04-21T00:00:00",
+    "updatedDate": "2019-04-21T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GamestoreMovieRemover.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/GamestoreMovieRemover.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/GamestoreMovieRemover.txt"
   }
 ]
