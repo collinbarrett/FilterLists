@@ -294,5 +294,21 @@
   {
     "softwareId": 31,
     "syntaxId": 28
+  },
+  {
+    "softwareId": 31,
+    "syntaxId": 1
+  },
+  {
+    "softwareId": 31,
+    "syntaxId": 2
+  },
+  {
+    "softwareId": 31,
+    "syntaxId": 14
+  },
+  {
+    "softwareId": 31,
+    "syntaxId": 16
   }
 ]
