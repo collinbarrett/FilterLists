@@ -16633,7 +16633,7 @@
     "homeUrl": "https://github.com/mtxadmin/ublock/",
     "issuesUrl": "https://github.com/mtxadmin/ublock/issues",
     "name": "Yet another small uBlock filter list",
-    "syntaxId": 3,
+    "syntaxId": 21,
     "viewUrl": "https://raw.githubusercontent.com/mtxadmin/ublock/master/it"
   }  
 ]
