@@ -5,7 +5,7 @@
 [![Travis](https://travis-ci.org/collinbarrett/FilterLists.svg?branch=master)](https://travis-ci.org/collinbarrett/FilterLists)
 [![codecov](https://codecov.io/gh/collinbarrett/FilterLists/branch/master/graph/badge.svg)](https://codecov.io/gh/collinbarrett/FilterLists)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/collinbarrett/FilterLists/blob/master/LICENSE)
-[![BuitlWithDot.Net shield](https://builtwithdot.net/project/125/filterlists/badge)](https://builtwithdot.net/project/125/filterlists)
+[![BuiltWithDot.Net shield](https://builtwithdot.net/project/125/filterlists/badge)](https://builtwithdot.net/project/125/filterlists)
 [![Beerpay](https://beerpay.io/collinbarrett/FilterLists/badge.svg?style=beer-square)](https://beerpay.io/collinbarrett/FilterLists)
 [![Beerpay](https://beerpay.io/collinbarrett/FilterLists/make-wish.svg?style=flat-square)](https://beerpay.io/collinbarrett/FilterLists?focus=wish)
 
@@ -32,7 +32,7 @@ Typical adblockers run as an extension in popular web browsers. As we browse the
   - Imre Kristoffer Eilertsen [@DandelionSprout](https://github.com/DandelionSprout) : major contributor
   - Raymond Hill [@gorhill](https://github.com/gorhill) : uBlock Origin owner, advised on some technical aspects of FilterLists
   - Andrey Meshkov [@ameshkov](https://github.com/ameshkov) : AdGuard CTO, advised on some technical aspects of FilterLists
-  - [More Contributors](https://github.com/collinbarrett/FilterLists/graphs/contributors)
+  - [More contributors](https://github.com/collinbarrett/FilterLists/graphs/contributors)
 
 ## Miscellany
 
@@ -43,3 +43,7 @@ FilterLists does not condone or endorse implementing any particular FilterList o
 ### Privacy
 
 We respect your privacy. That is the whole point of this site. The only minor data we collect about visitors is what [Cloudflare](https://www.cloudflare.com/analytics/), [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-data-retention-privacy), and [GitHub](https://help.github.com/articles/github-privacy-statement/) capture.
+
+### Internet Explorer TPL users
+
+The FilterLists.com website returns a blank page in Internet Explorer, mostly due to problems with both polyfill and JavaScript elements, in addition to IE being considered by us to be an outdated browser. To help alleviate this, a makeshift archive has been set up. To view a smaller TPL-only archive with subscribable links, right-click on [this link](https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html), choose to save it as an HTML file, and open it in Internet Explorer ≥9.

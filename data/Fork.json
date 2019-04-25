@@ -1,13 +1,5 @@
 ﻿[
   {
-    "forkFilterListId": 7,
-    "upstreamFilterListId": 9
-  },
-  {
-    "forkFilterListId": 8,
-    "upstreamFilterListId": 9
-  },
-  {
     "forkFilterListId": 350,
     "upstreamFilterListId": 12
   },

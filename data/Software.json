@@ -158,5 +158,47 @@
     "homeUrl": "https://github.com/gorhill/uMatrix",
     "isAbpSubscribable": true,
     "name": "uMatrix"
+  },
+  {
+    "id": 26,
+    "downloadUrl": "https://f-droid.org/packages/org.blokada.alarm/",
+    "homeUrl": "https://blokada.org",
+    "isAbpSubscribable": false,
+    "name": "Blokada"
+  },
+  {
+    "id": 27,
+    "downloadUrl": "https://github.com/henrypp/hostsmgr/releases",
+    "homeUrl": "https://www.henrypp.org/product/hostsmgr",
+    "isAbpSubscribable": false,
+    "name": "hostsmgr"
+  },
+  {
+    "id": 28,
+    "downloadUrl": "https://zenz-solutions.de/personaldnsfilter",
+    "homeUrl": "https://zenz-solutions.de/personaldnsfilter",
+    "isAbpSubscribable": false,
+    "name": "personalDNSfilter"
+  },
+  {
+    "id": 29,
+    "downloadUrl": "https://nlnetlabs.nl/projects/unbound/download/",
+    "homeUrl": "https://nlnetlabs.nl/projects/unbound/about/",
+    "isAbpSubscribable": false,
+    "name": "Unbound"
+  },
+  {
+    "id": 30,
+    "downloadUrl": "https://www.isc.org/downloads/bind/",
+    "homeUrl": "https://www.isc.org/downloads/bind/",
+    "isAbpSubscribable": false,
+    "name": "BIND"
+  },
+  {
+    "id": 31,
+    "downloadUrl": "https://github.com/AdguardTeam/AdGuardHome/releases",
+    "homeUrl": "https://github.com/AdguardTeam/AdGuardHome",
+    "isAbpSubscribable": false,
+    "name": "AdGuard Home"
   }
 ]

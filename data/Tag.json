@@ -103,5 +103,45 @@
     "id": 21,
     "description": "Lists that remove news stories of subjectively low quality",
     "name": "clickbait"
+  },
+  {
+    "id": 22,
+    "description": "Blocks religious or superstitious content",
+    "name": "religious"
+  },
+  {
+    "id": 23,
+    "description": "Blocks pages from link-shortening services",
+    "name": "shorteners"
+  },
+  {
+    "id": 24,
+    "description": "Blocks piracy-focusing sites",
+    "name": "piracy"
+  },
+  {
+    "id": 25,
+    "description": "Blocks political content",
+    "name": "politics"
+  },
+  {
+    "id": 26,
+    "description": "Blocks software updates",
+    "name": "updates"
+  },
+  {
+    "id": 27,
+    "description": "Userstyles in adblocker syntax that change the appearance of sites",
+    "name": "userstyle"
+  },
+  {
+    "id": 28,
+    "description": "Blocks requests that ask you to subscribe to newsletters",
+    "name": "newsletters"
+  },
+  {
+    "id": 29,
+    "description": "Prevents \"How can I help you?\" prompts from popping up",
+    "name": "helpprompt"
   }
 ]

@@ -11,7 +11,7 @@
   {
     "id": 3,
     "definitionUrl": "https://adblockplus.org/filters",
-    "name": "Adblock Plus (Latest/Unspecified Version)"
+    "name": "Adblock Plus"
   },
   {
     "id": 4,
@@ -26,7 +26,7 @@
   {
     "id": 7,
     "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide",
-    "name": "uBlock Origin/uMatrix Dynamic"
+    "name": "uMatrix / uBlock Origin Dynamic"
   },
   {
     "id": 8,
@@ -86,5 +86,38 @@
   {
     "id": 20,
     "name": "dnsmasq domains list"
+  },
+  {
+    "id": 21,
+    "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name",
+    "name": "uBlock Origin !#include-tag compilation"
+  },
+  {
+    "id": 22,
+    "name": "DNS servers"
+  },
+  {
+    "id": 23,
+    "name": "Unix-format hosts.deny file"
+  },
+  {
+    "id": 24,
+    "name": "Unbound"
+  },
+  {
+    "id": 25,
+    "name": "Response Policy Zones (RPZ)"
+  },
+  {
+    "id": 26,
+    "name": "BIND"
+  },
+  {
+    "id": 27,
+    "name": "Windows command line script"
+  },
+  {
+    "id": 28,
+    "name": "Adblocker-syntax domains"
   }
 ]
