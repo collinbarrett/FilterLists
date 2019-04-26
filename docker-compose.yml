@@ -1,7 +1,9 @@
 version: "3.7"
+
 services:
+
   FilterLists.MariaDB:
-    image: mariadb:latest
+    image: mariadb:10
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: "yes"
       MYSQL_DATABASE: filterlistsdata
@@ -13,6 +15,7 @@ services:
         "--character-set-server=utf8mb4",
         "--collation-server=utf8mb4_unicode_520_ci",
       ]
+
   FilterLists.Api:
     image: "collinbarrett/filterlists.api"
     build:
@@ -22,19 +25,10 @@ services:
       - "80/tcp"
     depends_on:
       - FilterLists.MariaDB
+
   FilterLists.Web:
     image: "collinbarrett/filterlists.web"
     build:
       context: src/FilterLists.Web
     expose:
       - "80/tcp"
-  FilterLists.NGINX:
-    image: "nginx:stable-alpine"
-    build:
-      context: ./ops/nginx
-    ports:
-      - "80:80/tcp"
-      - "443:443/tcp"
-    links:
-      - FilterLists.Api
-      - FilterLists.Web

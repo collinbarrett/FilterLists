@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2026
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Api", "src\FilterLists.Api\FilterLists.Api.csproj", "{57E4CE18-41F3-48F6-B142-12947FFBA86C}"
 EndProject
@@ -44,7 +44,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ops", "ops", "{AF336194-8932-4C99-BF8B-30FF8EC146E9}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		ops\azure-pipelines.yml = ops\azure-pipelines.yml
 		codecov.yml = codecov.yml
 	EndProjectSection
 EndProject

@@ -1,6 +1,9 @@
 version: "3.7"
+
 services:
+
   FilterLists.Api:
     image: collinbarrett/filterlists.api:latest
+
   FilterLists.Web:
     image: collinbarrett/filterlists.web:latest
