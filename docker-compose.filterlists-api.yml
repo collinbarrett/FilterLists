@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  app_filterlists-api:
+  filterlists-api:
     image: collinbarrett/filterlists.api
     build:
       context: src
@@ -16,7 +16,7 @@ services:
     networks:
       - filterlists-api
     volumes:
-      - filterlists-api_data:/var/lib/mysql
+      - filterlists-api:/var/lib/mysql
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: "yes"
       MYSQL_DATABASE: filterlistsdata
@@ -33,4 +33,4 @@ networks:
   filterlists-api:
 
 volumes:
-  filterlists-api_data:
+  filterlists-api:
