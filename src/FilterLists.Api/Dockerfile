@@ -1,24 +1,14 @@
-FROM microsoft/dotnet:2.2-aspnetcore-runtime-alpine as base
+# docker build -f FilterLists.Api/Dockerfile .
+
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine AS build
 WORKDIR /app
 
-FROM microsoft/dotnet:2.2-sdk-alpine AS publish
-WORKDIR /app
-COPY src/FilterLists.Data/FilterLists.Data.csproj ./FilterLists.Data/
-COPY src/FilterLists.Services/FilterLists.Services.csproj ./FilterLists.Services/
-COPY src/FilterLists.Api/FilterLists.Api.csproj ./FilterLists.Api/
-WORKDIR /app/FilterLists.Api
-RUN dotnet restore
+COPY FilterLists.Data/. ./FilterLists.Data/
+COPY FilterLists.Services/. ./FilterLists.Services/
+COPY FilterLists.Api/. ./FilterLists.Api/
+RUN dotnet publish FilterLists.Api/*.csproj -c Release -o out
 
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-alpine
 WORKDIR /app
-COPY src/FilterLists.Data/. ./FilterLists.Data/
-COPY src/FilterLists.Services/. ./FilterLists.Services/
-COPY src/FilterLists.Api/. ./FilterLists.Api/
-WORKDIR /app/FilterLists.Api
-RUN dotnet publish -c Release -o /out
-
-FROM base
-WORKDIR /app
-COPY --from=publish /out .
-COPY data ./data/
-ENV ASPNETCORE_URLS http://+:80
+COPY --from=build /app/FilterLists.Api/out ./
 ENTRYPOINT ["dotnet", "FilterLists.Api.dll"]
