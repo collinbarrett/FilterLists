@@ -4,12 +4,17 @@ services:
   filterlists-api:
     image: collinbarrett/filterlists.api
     build:
-      context: src
-      dockerfile: FilterLists.Api/Dockerfile
+      context: .
+      dockerfile: src/FilterLists.Api/Dockerfile
+    ports:
+     - "80:80"
+     - "443:443"
     networks:
       - filterlists-api
     depends_on:
       - mariadb_filterlists-api
+    environment:
+      ConnectionStrings__FilterListsConnection: "Server=mariadb_filterlists-api;Database=filterlistsdata;Uid=filterlists;Pwd=C53A28194242D82288E1E84A37E56D3EC7DFF83F1D9E018AF19E9BA27A5DF833;"
 
   mariadb_filterlists-api:
     image: mariadb:10
