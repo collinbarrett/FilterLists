@@ -1,0 +1,36 @@
+version: "3.7"
+
+services:
+  app_filterlists-api:
+    image: collinbarrett/filterlists.api
+    build:
+      context: src
+      dockerfile: FilterLists.Api/Dockerfile
+    networks:
+      - filterlists-api
+    depends_on:
+      - mariadb_filterlists-api
+
+  mariadb_filterlists-api:
+    image: mariadb:10
+    networks:
+      - filterlists-api
+    volumes:
+      - filterlists-api_data:/var/lib/mysql
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+      MYSQL_DATABASE: filterlistsdata
+      MYSQL_USER: filterlists
+      MYSQL_PASSWORD: C53A28194242D82288E1E84A37E56D3EC7DFF83F1D9E018AF19E9BA27A5DF833
+    command:
+      [
+        "mysqld",
+        "--character-set-server=utf8mb4",
+        "--collation-server=utf8mb4_unicode_520_ci"
+      ]
+
+networks:
+  filterlists-api:
+
+volumes:
+  filterlists-api_data:

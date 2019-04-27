@@ -10,7 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.prod.yml" />
-    <None Include="docker-compose.yml" />
+    <None Include="docker-compose.filterlists-api.yml" />
     <None Include=".dockerignore" />
   </ItemGroup>
 </Project>
