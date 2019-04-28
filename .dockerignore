@@ -1,11 +1,11 @@
-.git
-.github
+**/.git
+**/.github
 .gitattributes
 .gitignore
-.vs
-.vscode
-images
-ops
+**/.vs
+**/.vscode
+**/images
+**/ops
 codecov.yml
 .dockerignore
 docker-compose.yml
@@ -13,5 +13,5 @@ docker-compose.*.yml
 *.DotSettings*
 FilterLists.postman_collection.json
 LICENSE
-*/bin
-*/obj
+**/bin
+**/obj

@@ -18,8 +18,9 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
     <ServerGarbageCollection>false</ServerGarbageCollection>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
