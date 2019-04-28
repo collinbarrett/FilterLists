@@ -14,3 +14,4 @@ docker-compose.*.yml
 LICENSE
 **/bin
 **/obj
+**/node_modules

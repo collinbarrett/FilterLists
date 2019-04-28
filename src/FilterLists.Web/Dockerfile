@@ -1,18 +1,28 @@
-FROM microsoft/dotnet:2.2-aspnetcore-runtime-alpine as base
-WORKDIR /app
+# Context: .
+# Command: docker build -f src/FilterLists.Web/Dockerfile .
 
-FROM microsoft/dotnet:2.2-sdk-alpine AS publish
-RUN apk add --update nodejs-npm
+# prep runtime
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-alpine as runtime
+ENTRYPOINT ["dotnet", "FilterLists.Web.dll"]
+ENV ASPNETCORE_URLS "http://*:5000"
+EXPOSE 5000
 
-WORKDIR /app
-COPY FilterLists.Web.csproj .
+# init build
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine AS build
+RUN apk add --update nodejs nodejs-npm
+
+# restore
+COPY FilterLists.Web.sln ./
+WORKDIR /src/FilterLists.Web/
+COPY src/FilterLists.Web/FilterLists.Web.csproj ./
+WORKDIR /
 RUN dotnet restore
 
-COPY . .
-RUN dotnet publish -c Release -o /out
+# publish
+WORKDIR /src/FilterLists.Web/
+COPY src/FilterLists.Web/. ./
+RUN dotnet publish -c Release -o out --no-restore
 
-FROM base
-WORKDIR /app
-COPY --from=publish /out .
-ENV ASPNETCORE_URLS http://+:80
-ENTRYPOINT ["dotnet", "FilterLists.Web.dll"]
+# run
+FROM runtime
+COPY --from=build /src/FilterLists.Web/out ./

@@ -11,6 +11,17 @@ services:
     volumes:
       - ./ops/nginx/conf.d:/etc/nginx/conf.d:ro
 
+  filterlists-web:
+    image: collinbarrett/filterlists.web
+    restart: always
+    build:
+      context: .
+      dockerfile: src/FilterLists.Web/Dockerfile
+    networks:
+      - reverse-proxy
+    depends_on:
+      - filterlists-api
+
   filterlists-api:
     image: collinbarrett/filterlists.api
     restart: always
