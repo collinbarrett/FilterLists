@@ -6,9 +6,6 @@
 .vscode
 images
 ops
-scripts
-*/bin
-*/obj
 codecov.yml
 .dockerignore
 docker-compose.yml
@@ -16,3 +13,5 @@ docker-compose.*.yml
 *.DotSettings*
 FilterLists.postman_collection.json
 LICENSE
+*/bin
+*/obj
