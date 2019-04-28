@@ -12,19 +12,13 @@ FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine AS build
 RUN apk add --update nodejs nodejs-npm
 
 # restore
-COPY FilterLists.Web.sln ./
-WORKDIR /src/FilterLists.Web/
 COPY src/FilterLists.Web/FilterLists.Web.csproj ./
-WORKDIR /
 RUN dotnet restore
 
 # publish
-WORKDIR /src/FilterLists.Web/
 COPY src/FilterLists.Web/. ./
 RUN dotnet publish -c Release -o out --no-restore
 
 # run
 FROM runtime
-COPY --from=build /src/FilterLists.Web/out ./
-
-# test build trigger
+COPY --from=build /out ./
