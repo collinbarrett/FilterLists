@@ -39,8 +39,9 @@ ENTRYPOINT ["dotnet", "test"]
 
 # run
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-alpine as runtime
-ENV DataDirectory__Path "data"
 ENTRYPOINT ["dotnet", "FilterLists.Api.dll"]
+ENV DataDirectory__Path "data"
+ENV ASPNETCORE_URLS "http://*:5000"
 EXPOSE 5000
 COPY --from=build /src/FilterLists.Api/out ./
 COPY data/. ./data/
