@@ -15,16 +15,16 @@ FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine AS build
 WORKDIR /src/
 COPY src/FilterLists.Data/FilterLists.Data.csproj ./FilterLists.Data/
 COPY src/FilterLists.Services/FilterLists.Services.csproj ./FilterLists.Services/
-COPY src/FilterLists.Api/FilterLists.Api.csproj ./FilterLists.Api/
 WORKDIR /src/FilterLists.Api/
+COPY src/FilterLists.Api/FilterLists.Api.csproj ./
 RUN dotnet restore
 
 # publish
 WORKDIR /src/
 COPY src/FilterLists.Data/. ./FilterLists.Data/
 COPY src/FilterLists.Services/. ./FilterLists.Services/
-COPY src/FilterLists.Api/. ./FilterLists.Api/
 WORKDIR /src/FilterLists.Api/
+COPY src/FilterLists.Api/. ./
 RUN dotnet publish -c Release -o out --no-restore
 
 # build data tests
