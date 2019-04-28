@@ -9,7 +9,7 @@ services:
     networks:
       - reverse-proxy
     volumes:
-      - ./ops/nginx/dev/conf.d:/etc/nginx/conf.d:ro
+      - ./ops/nginx/conf.d:/etc/nginx/conf.d:ro
 
   filterlists-api:
     image: collinbarrett/filterlists.api
