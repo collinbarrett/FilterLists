@@ -10,6 +10,7 @@ codecov.yml
 .dockerignore
 docker-compose.yml
 docker-compose.*.yml
+FilterLists.sln
 *.DotSettings*
 LICENSE
 **/bin
