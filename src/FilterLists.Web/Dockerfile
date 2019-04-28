@@ -26,3 +26,5 @@ RUN dotnet publish -c Release -o out --no-restore
 # run
 FROM runtime
 COPY --from=build /src/FilterLists.Web/out ./
+
+# test build trigger
