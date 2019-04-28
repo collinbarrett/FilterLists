@@ -1,6 +1,14 @@
 # Context: .
 # Command: docker build -f src/FilterLists.Api/Dockerfile .
 
+# prep runtime
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-alpine as runtime
+ENTRYPOINT ["dotnet", "FilterLists.Api.dll"]
+ENV DataDirectory__Path "data"
+ENV ASPNETCORE_URLS "http://*:5000"
+EXPOSE 5000
+
+# init build
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine AS build
 
 # restore
@@ -38,10 +46,6 @@ RUN dotnet build -c Release --no-restore
 ENTRYPOINT ["dotnet", "test"]
 
 # run
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-alpine as runtime
-ENTRYPOINT ["dotnet", "FilterLists.Api.dll"]
-ENV DataDirectory__Path "data"
-ENV ASPNETCORE_URLS "http://*:5000"
-EXPOSE 5000
+FROM runtime
 COPY --from=build /src/FilterLists.Api/out ./
 COPY data/. ./data/
