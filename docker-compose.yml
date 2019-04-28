@@ -11,7 +11,7 @@ services:
     volumes:
       - ./ops/nginx/conf.d:/etc/nginx/conf.d:ro
 
-  filterlists-web:
+  web:
     image: collinbarrett/filterlists.web
     restart: always
     build:
@@ -20,9 +20,9 @@ services:
     networks:
       - reverse-proxy
     depends_on:
-      - filterlists-api
+      - api
 
-  filterlists-api:
+  api:
     image: collinbarrett/filterlists.api
     restart: always
     build:
@@ -30,19 +30,19 @@ services:
       dockerfile: src/FilterLists.Api/Dockerfile
     networks:
       - reverse-proxy
-      - filterlists-api
+      - api
     depends_on:
-      - mariadb_filterlists-api
+      - mariadb
     environment:
-      ConnectionStrings__FilterListsConnection: "Server=mariadb_filterlists-api;Database=filterlistsdata;Uid=filterlists;Pwd=C53A28194242D82288E1E84A37E56D3EC7DFF83F1D9E018AF19E9BA27A5DF833;"
+      ConnectionStrings__FilterListsConnection: "Server=mariadb;Database=filterlistsdata;Uid=filterlists;Pwd=C53A28194242D82288E1E84A37E56D3EC7DFF83F1D9E018AF19E9BA27A5DF833;"
 
-  mariadb_filterlists-api:
+  mariadb:
     image: mariadb:10
     restart: always
     networks:
-      - filterlists-api
+      - api
     volumes:
-      - filterlists-api:/var/lib/mysql
+      - data:/var/lib/mysql
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: "yes"
       MYSQL_DATABASE: filterlistsdata
@@ -57,7 +57,7 @@ services:
 
 networks:
   reverse-proxy:
-  filterlists-api:
+  api:
 
 volumes:
-  filterlists-api:
+  data:
