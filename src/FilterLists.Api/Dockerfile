@@ -12,15 +12,11 @@ EXPOSE 5000
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine AS build
 
 # restore
-COPY FilterLists.Api.sln ./
 WORKDIR /src/
 COPY src/FilterLists.Data/FilterLists.Data.csproj ./FilterLists.Data/
 COPY src/FilterLists.Services/FilterLists.Services.csproj ./FilterLists.Services/
 COPY src/FilterLists.Api/FilterLists.Api.csproj ./FilterLists.Api/
-WORKDIR /tests/
-COPY tests/FilterLists.Data.Tests/FilterLists.Data.Tests.csproj ./FilterLists.Data.Tests/
-COPY tests/FilterLists.Services.Tests/FilterLists.Services.Tests.csproj ./FilterLists.Services.Tests/
-WORKDIR /
+WORKDIR /src/FilterLists.Api/
 RUN dotnet restore
 
 # publish
@@ -34,6 +30,8 @@ RUN dotnet publish -c Release -o out --no-restore
 # build data tests
 FROM build AS test-data
 WORKDIR /tests/FilterLists.Data.Tests/
+COPY tests/FilterLists.Data.Tests/FilterLists.Data.Tests.csproj ./
+RUN dotnet restore
 COPY tests/FilterLists.Data.Tests/. ./
 RUN dotnet build -c Release --no-restore
 ENTRYPOINT ["dotnet", "test"]
@@ -41,6 +39,8 @@ ENTRYPOINT ["dotnet", "test"]
 # build services tests
 FROM build AS test-services
 WORKDIR /tests/FilterLists.Services.Tests/
+COPY tests/FilterLists.Services.Tests/FilterLists.Services.Tests.csproj ./
+RUN dotnet restore
 COPY tests/FilterLists.Services.Tests/. ./
 RUN dotnet build -c Release --no-restore
 ENTRYPOINT ["dotnet", "test"]
