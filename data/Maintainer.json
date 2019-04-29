@@ -698,5 +698,22 @@
     "id": 132,
     "homeUrl": "https://github.com/mtxadmin",
     "name": "mtxadmin"
+  },
+  {
+    "id": 133,
+    "homeUrl": "https://gioxx.org/",
+    "name": "Giovanni Francesco Solone",
+    "twitterHandle": "gioxx"
+  },
+  {
+    "id": 134,
+    "emailAddress": "elias.ojala+github@kapsi.fi",
+    "homeUrl": "https://github.com/theel0ja",
+    "name": "Elias Ojala"
+  },
+  {
+    "id": 135,
+    "homeUrl": "https://github.com/CitizenXVIL",
+    "name": "CitizenXVIL"
   }
 ]
