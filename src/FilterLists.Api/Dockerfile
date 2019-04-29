@@ -46,6 +46,6 @@ RUN dotnet build -c Release --no-restore
 ENTRYPOINT ["dotnet", "test"]
 
 # run
-FROM runtime
+FROM runtime as final
 COPY --from=build /src/FilterLists.Api/out ./
 COPY data/. ./data/

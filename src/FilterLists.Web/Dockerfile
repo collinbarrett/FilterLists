@@ -24,6 +24,6 @@ COPY src/FilterLists.Web/. ./
 RUN dotnet publish -c Release -o out --no-restore
 
 # run
-FROM runtime
+FROM runtime as final
 COPY --from=build /src/FilterLists.Web/out ./
  
