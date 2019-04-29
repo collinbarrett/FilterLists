@@ -6670,5 +6670,33 @@
   {
     "filterListId": 1566,
     "tagId": 2
+  },
+  {
+    "filterListId": 1567,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1568,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1569,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1570,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1571,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1572,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1573,
+    "tagId": 2
   }
 ]
