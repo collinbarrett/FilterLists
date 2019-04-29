@@ -3267,17 +3267,6 @@
     "viewUrl": "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt"
   },
   {
-    "id": 273,
-    "description": "Blocks malware.",
-    "emailAddress": "support@disconnect.me",
-    "homeUrl": "https://disconnect.me/trackerprotection",
-    "licenseId": 4,
-    "name": "Disconnect Malware Filter List",
-    "syntaxId": 2,
-    "updatedDate": "2019-04-08T17:56:10",
-    "viewUrl": "https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt"
-  },
-  {
     "id": 274,
     "description": "Blocks malvertising.",
     "emailAddress": "support@disconnect.me",
