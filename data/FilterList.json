@@ -15673,7 +15673,7 @@
     "licenseId": 5,
     "name": "CitizenXVIL Hosts",
     "publishedDate": "2018-05-23T18:28:32",
-    "syntaxId": 4,
+    "syntaxId": 16,
     "updatedDate": "2019-04-03T03:14:10",
     "viewUrl": "https://raw.githubusercontent.com/CitizenXVIL/Hosts/master/Optimized_hosts_list.txt"
   },
@@ -15694,7 +15694,7 @@
     "issuesUrl": "https://github.com/CitizenXVIL/Hosts/issues",
     "licenseId": 5,
     "name": "CitizenXVIL YouTube Hosts",
-    "syntaxId": 8,
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/CitizenXVIL/Hosts/master/Youtube%20hosts.txt"
   },
   {
