@@ -4212,20 +4212,6 @@
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/16.txt"
   },
   {
-    "id": 351,
-    "description": "This is an AdGuard-specific supplement for the Adblock polskie reguły filter. It specifically removes adverts on Polish language websites.",
-    "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#polish-ads-filter",
-    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
-    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
-    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
-    "licenseId": 12,
-    "name": "AdGuard Polish Filter",
-    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
-    "syntaxId": 6,
-    "updatedDate": "2019-04-13T13:56:12",
-    "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/238.txt"
-  },
-  {
     "id": 352,
     "description": "A bad hosts blocking list",
     "donateUrl": "https://www.paypal.me/e1adkarak0",
@@ -13504,23 +13490,6 @@
     "viewUrl": "https://raw.githubusercontent.com/PoorPocketsMcNewHold/steamscamsites/master/steamscamsite.txt"
   },
   {
-    "id": 1287,
-    "description": "Are you tired of being told that Adobe Reader is supposedly necessary to view a PDF manual in 2019? Are you tired of reading tech guides and seeing ads for questionable optimalisation tools after every paragraph? If you answered yes to at least one of those two, here's a list for that.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TechnologicalDiversity.txt",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 10,
-    "name": "List for the Freedom of Technological Diversity",
-    "publishedDate": "2018-12-31T00:00:00",
-    "syntaxId": 3,
-    "updatedDate": "2019-03-27T04:16:49",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TechnologicalDiversity.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TechnologicalDiversity.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TechnologicalDiversity.txt"
-  },
-  {
     "id": 1288,
     "description": "Removes empty ads placeholders",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/NanoAdblockerLab/NanoContrib/master/dist/placeholder-buster.txt",
@@ -16865,5 +16834,85 @@
     "syntaxId": 1,
     "updatedDate": "2018-03-21T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/biroloter/Mobile-Ad-Hosts/master/hosts"
+  },
+  {
+    "id": 1567,
+    "description": "EasyList is the primary subscription that removes adverts from web pages in English language.",
+    "descriptionSourceUrl": "https://filters.adtidy.org/extension/ublock/filters/101_optimized.txt",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "EasyList Optimized",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 3,
+    "viewUrl": "https://filters.adtidy.org/extension/ublock/filters/101_optimized.txt"
+  },
+  {
+    "id": 1568,
+    "description": "Filter that enables removing of the ads from websites with English content.",
+    "descriptionSourceUrl": "https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Base Filter Optimized",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 6,
+    "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt"
+  },
+  {
+    "id": 1569,
+    "description": "Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.",
+    "descriptionSourceUrl": "https://filters.adtidy.org/extension/chromium/filters/16_optimized.txt",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard French Filter Optimized",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 6,
+    "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/16_optimized.txt"
+  },
+  {
+    "id": 1570,
+    "description": "EasyList Germany + AdGuard German filter. Filter list that specifically removes ads on websites in German language.",
+    "descriptionSourceUrl": "https://filters.adtidy.org/extension/chromium/filters/6_optimized.txt",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard German Filter Optimized",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 6,
+    "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/6_optimized.txt"
+  },
+  {
+    "id": 1571,
+    "description": "This blocklist only contains compromised / hijacked websites (level 2) which are being abused by cybercriminals to host a ZeuS botnet controller.",
+    "descriptionSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
+    "donateUrl": "https://zeustracker.abuse.ch/faq.php",
+    "emailAddress": "contactme@abuse.ch",
+    "homeUrl": "https://zeustracker.abuse.ch/blocklist.php",
+    "licenseId": 5,
+    "name": "abuse.ch ZeuS Blocklist Hosts File",
+    "syntaxId": 1,
+    "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=hostfile"
+  },
+  {
+    "id": 1572,
+    "description": "This blocklist only contains compromised / hijacked websites (level 2) which are being abused by cybercriminals to host a ZeuS botnet controller.",
+    "descriptionSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
+    "donateUrl": "https://zeustracker.abuse.ch/faq.php",
+    "emailAddress": "contactme@abuse.ch",
+    "homeUrl": "https://zeustracker.abuse.ch/blocklist.php",
+    "licenseId": 5,
+    "name": "abuse.ch ZeuS Blocklist hosts.deny",
+    "syntaxId": 23,
+    "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=hostsdeny"
+  },
+  {
+    "id": 1573,
+    "homeUrl": "https://github.com/qwIvan/privoxy-adfilter",
+    "issuesUrl": "https://github.com/qwIvan/privoxy-adfilter/issues",
+    "name": "Privoxy Adfilter",
+    "syntaxId": 19,
+    "viewUrl": "https://raw.githubusercontent.com/qwIvan/privoxy-adfilter/master/adfilter.action"
   }
 ]
