@@ -1,0 +1,23 @@
+# For running data integration tests in FilterLists.Data.Tests
+
+version: "3.7"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: src/FilterLists.Api/Dockerfile
+      target: test-data
+    depends_on:
+      - mariadb
+
+  mariadb:
+    image: mariadb:10
+    environment:
+      MYSQL_ROOT_PASSWORD: filterlists
+    command:
+      [
+        "mysqld",
+        "--character-set-server=utf8mb4",
+        "--collation-server=utf8mb4_unicode_520_ci"
+      ]

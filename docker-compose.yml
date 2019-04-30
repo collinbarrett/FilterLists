@@ -1,3 +1,5 @@
+# For building and running all modules
+
 version: "3.7"
 
 services:
@@ -17,6 +19,7 @@ services:
     build:
       context: .
       dockerfile: src/FilterLists.Web/Dockerfile
+      target: final
     networks:
       - reverse-proxy
     depends_on:
@@ -28,6 +31,7 @@ services:
     build:
       context: .
       dockerfile: src/FilterLists.Api/Dockerfile
+      target: final
     networks:
       - reverse-proxy
       - api

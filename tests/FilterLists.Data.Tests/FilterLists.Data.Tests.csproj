@@ -38,6 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\FilterLists.Api\FilterLists.Api.csproj" />
     <ProjectReference Include="..\..\src\FilterLists.Data\FilterLists.Data.csproj" />
   </ItemGroup>
 

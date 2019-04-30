@@ -25,7 +25,8 @@ COPY src/FilterLists.Data/. ./FilterLists.Data/
 COPY src/FilterLists.Services/. ./FilterLists.Services/
 WORKDIR /src/FilterLists.Api/
 COPY src/FilterLists.Api/. ./
-RUN dotnet publish -c Release -o out --no-restore
+RUN dotnet build -c Release --no-restore
+RUN dotnet publish -c Release -o out --no-restore --no-build
 
 # build data tests
 FROM build AS test-data
@@ -34,6 +35,7 @@ COPY tests/FilterLists.Data.Tests/FilterLists.Data.Tests.csproj ./
 RUN dotnet restore
 COPY tests/FilterLists.Data.Tests/. ./
 RUN dotnet build -c Release --no-restore
+COPY data/. ./data/
 ENTRYPOINT ["dotnet", "test"]
 
 # build services tests
