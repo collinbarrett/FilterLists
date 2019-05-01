@@ -19,14 +19,13 @@ WORKDIR /src/FilterLists.Api/
 COPY src/FilterLists.Api/FilterLists.Api.csproj ./
 RUN dotnet restore
 
-# publish
+# build
 WORKDIR /src/
 COPY src/FilterLists.Data/. ./FilterLists.Data/
 COPY src/FilterLists.Services/. ./FilterLists.Services/
 WORKDIR /src/FilterLists.Api/
 COPY src/FilterLists.Api/. ./
 RUN dotnet build -c Release --no-restore
-RUN dotnet publish -c Release -o out --no-restore --no-build
 
 # build data tests
 FROM build AS test-data
@@ -47,7 +46,11 @@ COPY tests/FilterLists.Services.Tests/. ./
 RUN dotnet build -c Release --no-restore
 ENTRYPOINT ["dotnet", "test"]
 
+# publish
+FROM build AS publish
+RUN dotnet publish -c Release -o out --no-restore --no-build
+
 # run
 FROM runtime as final
-COPY --from=build /src/FilterLists.Api/out ./
+COPY --from=publish /src/FilterLists.Api/out ./
 COPY data/. ./data/
