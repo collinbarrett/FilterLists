@@ -14,7 +14,10 @@ services:
   mariadb:
     image: mariadb:10
     environment:
-      MYSQL_ROOT_PASSWORD: filterlists
+      - MYSQL_ROOT_PASSWORD=filterlists
+      - MYSQL_DATABASE=filterlists
+      - MYSQL_USER=filterlists
+      - MYSQL_PASSWORD=filterlists
     command:
       [
         "mysqld",

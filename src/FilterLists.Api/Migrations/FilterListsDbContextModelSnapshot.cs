@@ -407,8 +407,6 @@ namespace FilterLists.Api.Migrations
 
                 b.HasKey("Id");
 
-                b.HasIndex("Raw");
-
                 b.ToTable("rules");
             });
 
