@@ -1,11 +1,9 @@
-# For running pre-build instances of all modules from Hub
-
 version: "3.7"
 
 services:
 
-  FilterLists.Api:
+  api:
     image: collinbarrett/filterlists.api:latest
 
-  FilterLists.Web:
+  web:
     image: collinbarrett/filterlists.web:latest

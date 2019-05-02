@@ -1,5 +1,3 @@
-# For running data integration tests in FilterLists.Data.Tests
-
 version: "3.7"
 
 services:

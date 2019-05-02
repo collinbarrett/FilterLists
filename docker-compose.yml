@@ -1,5 +1,3 @@
-# For building and running all modules
-
 version: "3.7"
 
 services:

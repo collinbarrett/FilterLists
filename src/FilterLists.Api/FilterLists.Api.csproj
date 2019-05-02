@@ -18,6 +18,7 @@
     <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
     <ServerGarbageCollection>false</ServerGarbageCollection>
     <OutputType>Exe</OutputType>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
