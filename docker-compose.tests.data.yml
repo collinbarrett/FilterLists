@@ -4,7 +4,6 @@ version: "3.7"
 
 services:
   api:
-    image: filiterlists.api:test-data
     build:
       context: .
       dockerfile: src/FilterLists.Api/Dockerfile
