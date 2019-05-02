@@ -18,6 +18,7 @@
     <RepositoryType>git</RepositoryType>
     <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
     <ServerGarbageCollection>false</ServerGarbageCollection>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
