@@ -24,7 +24,6 @@
     <PackageReference Include="Microsoft.DotNet.Analyzers.Compatibility" Version="0.2.12-alpha" />
     <PackageReference Include="morelinq" Version="3.1.1" />
     <PackageReference Include="Octokit" Version="0.32.0" />
-    <PackageReference Include="SendGrid" Version="9.11.0" />
     <PackageReference Include="SharpCompress" Version="0.23.0" />
   </ItemGroup>
 
