@@ -54,6 +54,11 @@ We have containerized FilterLists to make it as easy as possible for contributer
 1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.web` container.
 2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
 
+### Debugging
+
+1. Execute `docker container ls -a` to find the `CONTAINER ID` of the container in question.
+2. Execute `docker logs [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1 to view the logs from that container.
+
 # Acknowledgements
 
   - Imre Kristoffer Eilertsen [@DandelionSprout](https://github.com/DandelionSprout) : major contributor
