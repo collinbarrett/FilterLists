@@ -27,15 +27,32 @@ To submit a new list or update data about an existing list, please submit a pull
 
 FilterLists does not maintain any of these lists. It serves only as a discovery tool to direct users to lists that they may want to use. If you want to request addition, modification, or removal of a rule from a list, you will need to contact the maintainers of that list directly. FilterLists provides a variety of ways you can get in contact with the maintainers to do so.
 
-## Building and/or Running Locally
+## Building and Running Locally
 
 We have containerized FilterLists to make it as easy as possible for contributers to get the project up and running locally.
 
+### Up and Running
+
 1. Install Docker CE for your computer's operating system. [Docs](https://docs.docker.com/install/)
-2. Clone the FilterLists git repo to your computer. [Docs](https://help.github.com/en/articles/cloning-a-repository)
+2. Clone the FilterLists git repository to your computer. [Docs](https://help.github.com/en/articles/cloning-a-repository)
 3. Navigate to the root directory of your locally cloned FilterLists git repository in a command-line interface (bash, cmd, etc.).
 4. Execute `docker-compose up -d`.
 5. Visit the locally running version of FilterLists in a web browser at `http://localhost/` (web) and `http://localhost/api/v1/lists` (API).
+
+### Testing changes to the data (.json files)
+
+1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.api` container.
+2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
+
+### Testing changes to the `Api`, `Services`, or `Data` projects
+
+1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.api` container.
+2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
+
+### Testing changes to the `Web` project
+
+1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.web` container.
+2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
 
 # Acknowledgements
 
