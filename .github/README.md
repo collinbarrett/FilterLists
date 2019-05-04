@@ -37,17 +37,32 @@ We have containerized FilterLists to make it as easy as possible for contributer
 2. Clone the FilterLists git repository to your computer. [Docs](https://help.github.com/en/articles/cloning-a-repository)
 3. Navigate to the root directory of your locally cloned FilterLists git repository in a command-line interface (bash, cmd, etc.).
 4. Execute `docker-compose up -d`.
-5. Visit the locally running version of FilterLists in a web browser at `http://localhost/` (web) and `http://localhost/api/v1/lists` (API).
+5. Visit the locally running version of FilterLists in a web browser at `http://localhost/`.
 
 ### Testing changes to the data (.json files)
 
+#### Automated
+
+Execute `docker-compose -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -f docker-compose.data.tests.yml run api`
+
+#### Manual
+
 1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.api` container.
 2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
+3. Verify your changes are properly reflected at `http://localhost/`.
 
 ### Testing changes to the `Api`, `Services`, or `Data` projects
 
+#### Automated
+
+- `Services`: Execute `docker-compose -f docker-compose.services.tests.yml down -v && docker-compose -f docker-compose.services.tests.yml build api && docker-compose -f docker-compose.services.tests.yml run api`
+- `Data`: Execute `docker-compose -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -f docker-compose.data.tests.yml run api`
+
+#### Manual
+
 1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.api` container.
 2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
+3. Verify your changes are properly reflected at `http://localhost/api`.
 
 ### Testing changes to the `Web` project
 
