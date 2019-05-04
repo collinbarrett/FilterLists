@@ -59,7 +59,8 @@ Execute:
 
 - For `Services`, execute:
 
-  `docker-compose -f docker-compose.services.tests.yml down -v && docker-compose -f docker-compose.services.tests.yml build api && docker-compose -f docker-compose.services.tests.yml run api`
+  `docker-compose -f docker-compose.services.tests.yml build api && docker-compose -f docker-compose.services.tests.yml run --rm api`
+
 - For `Data`, execute:
 
   `docker-compose -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -f docker-compose.data.tests.yml run api`

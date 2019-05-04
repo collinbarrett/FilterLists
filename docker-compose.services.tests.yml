@@ -2,12 +2,8 @@ version: "3.7"
 
 services:
   api:
+    image: collinbarrett/filterlists.api:test-services
     build:
       context: .
       dockerfile: src/FilterLists.Api/Dockerfile
       target: test-services
-    networks:
-      - test-services
-
-networks:
-  test-services:
