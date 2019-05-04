@@ -16903,5 +16903,16 @@
     "name": "Privoxy Adfilter",
     "syntaxId": 19,
     "viewUrl": "https://raw.githubusercontent.com/qwIvan/privoxy-adfilter/master/adfilter.action"
-  }
+  },
+  {
+    "id": 1574,
+    "description": "Constantly updated hosts file. Good addition for uBlock Origin filters in a browser",
+    "descriptionSourceUrl": "https://github.com/mtxadmin/ublock/issues",
+    "homeUrl": "https://github.com/mtxadmin/ublock/blob/master/docs/hosts_file_en.md",
+    "issuesUrl": "https://github.com/mtxadmin/ublock/issues",
+    "licenseId": 5,
+    "name": "Yet another small hosts file",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt"
+  },  
 ]
