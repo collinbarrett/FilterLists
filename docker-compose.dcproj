@@ -6,11 +6,14 @@
     <ProjectGuid>b94a5bcd-3be3-4fe4-ae48-adcf904a22a4</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
-    <DockerServiceName>filterlists.api</DockerServiceName>
+    <DockerServiceName>filterlists</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.prod.yml" />
     <None Include="docker-compose.data.tests.yml" />
+    <None Include="docker-compose.vs.debug.yml">
+      <DependentUpon>docker-compose.yml</DependentUpon>
+    </None>
     <None Include="docker-compose.yml" />
     <None Include=".dockerignore" />
   </ItemGroup>

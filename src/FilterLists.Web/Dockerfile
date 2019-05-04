@@ -1,11 +1,11 @@
 # Context: .
 # Command: docker build -f src/FilterLists.Web/Dockerfile .
 
-# prep runtime
+# init base
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-alpine as runtime
-ENTRYPOINT ["dotnet", "FilterLists.Web.dll"]
 ENV ASPNETCORE_URLS "http://*:5000"
 EXPOSE 5000
+ENTRYPOINT ["dotnet", "FilterLists.Web.dll"]
 
 # init build
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine AS build

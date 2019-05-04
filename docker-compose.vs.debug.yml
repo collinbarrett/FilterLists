@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  api:
+    build:
+      target: build
+
+  web:
+    build:
+      target: build
