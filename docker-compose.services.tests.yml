@@ -7,3 +7,9 @@ services:
       context: .
       dockerfile: src/FilterLists.Api/Dockerfile
       target: test-services
+    networks:
+      - test-services
+
+networks:
+  test-services:
+    
