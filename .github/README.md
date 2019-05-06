@@ -2,6 +2,8 @@
 
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://filterlists.com/)
 [![API](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=API)](https://filterlists.com/api/v1/lists)
+[![Build status](https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/FilterLists.Api-CI)](https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=3)
+[![Build status](https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/FilterLists.Web-CI)](https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=12)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/collinbarrett/FilterLists/blob/master/LICENSE)
 [![BuiltWithDot.Net shield](https://builtwithdot.net/project/125/filterlists/badge)](https://builtwithdot.net/project/125/filterlists)
 [![Beerpay](https://beerpay.io/collinbarrett/FilterLists/badge.svg?style=beer-square)](https://beerpay.io/collinbarrett/FilterLists)
