@@ -16254,7 +16254,7 @@
     "licenseId": 9,
     "name": "Combined Privacy Block Lists HOSTS",
     "publishedDate": "2019-03-11T22:39:55",
-    "syntaxId": 14,
+    "syntaxId": 1,
     "updatedDate": "2019-04-15T08:52:00",
     "viewUrl": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final.hosts"
   },
