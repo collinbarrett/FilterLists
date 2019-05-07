@@ -16260,7 +16260,7 @@
   },
   {
     "id": 1524,
-    "description": "Is a DAT-format IP block list suitable for use in torrent clients like Halite for Windows. The list is merged from BlueTack levels 1 and 2, then deduped and sorted. This will come in especially handy on public trackers.",
+    "description": "Is a DAT-format IP block list suitable for use in torrent clients like Halite for Windows. The list is merged from BlueTack levels 1 and 2, then deduped and sorted. This will come in especially handy on public trackers. This file will be updated every two weeks.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "licenseId": 4,
     "name": "Combined Privacy Block Lists IPs DAT-format",
@@ -16271,7 +16271,7 @@
   },
   {
     "id": 1525,
-    "description": "Is a P2P-format IP block list suitable for use in torrent clients like qBitTorrent and Transmission under any OS. The list is merged from BlueTack levels 1 and 2.",
+    "description": "Is a P2P-format IP block list suitable for use in torrent clients like qBitTorrent and Transmission under any OS. The list is merged from BlueTack levels 1 and 2, then deduped and sorted. This will also come in especially handy on public trackers. This file will be updated every two weeks.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "licenseId": 4,
     "name": "Combined Privacy Block Lists IPs P2P-format",
