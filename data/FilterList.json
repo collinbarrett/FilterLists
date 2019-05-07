@@ -16249,18 +16249,18 @@
   },
   {
     "id": 1523,
-    "description": "Is a comprehensive hosts list which blocks known ad, exploit, and tracking servers, taken from MVPS, PGL Yoyo, Malware Domain List, hpHosts and AdAway, then merged, sorted and deduped. This list is compatible with all operating systems that make use of a hosts file (obviously this includes Windows, OS X, LiGnux and more). It works great with mobile VPN ad-blocking solutions too. Notably enhanced privacy and security awaits you. This file will be updated once a week, along with a separate IPv6 version.",
+    "description": "Is a comprehensive hosts file which blocks known ad, exploit, and tracking servers, taken from MVPS, PGL Yoyo, Malware Domain List, hpHosts and AdAway, along with some supplementary entries for increased protection, then merged, sorted and deduped. This list is compatible with all operating systems that make use of a hosts file (obviously this includes Windows, OS X, LiGnux and more). It works great with mobile VPN ad-blocking solutions too. Notably enhanced privacy and security awaits you. This file will be updated once a week, along with an IPv6 version, and an experimental version for both IPv4 and IPv6.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "licenseId": 9,
     "name": "Combined Privacy Block Lists HOSTS",
     "publishedDate": "2019-03-11T22:39:55",
-    "syntaxId": 14,
+    "syntaxId": 1,
     "updatedDate": "2019-04-15T08:52:00",
     "viewUrl": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final.hosts"
   },
   {
     "id": 1524,
-    "description": "Is a DAT-format IP block list suitable for use in torrent clients like Halite for Windows. The list is merged from BlueTack levels 1 and 2, then deduped and sorted. This will come in especially handy on public trackers.",
+    "description": "Is a DAT-format IP block list suitable for use in torrent clients like Halite for Windows. The list is merged from BlueTack levels 1 and 2, then deduped and sorted. This will come in especially handy on public trackers. This file will be updated every two weeks.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "licenseId": 4,
     "name": "Combined Privacy Block Lists IPs DAT-format",
@@ -16271,7 +16271,7 @@
   },
   {
     "id": 1525,
-    "description": "Is a P2P-format IP block list suitable for use in torrent clients like qBitTorrent and Transmission under any OS. The list is merged from BlueTack levels 1 and 2.",
+    "description": "Is a P2P-format IP block list suitable for use in torrent clients like qBitTorrent and Transmission under any OS. The list is merged from BlueTack levels 1 and 2, then deduped and sorted. This will also come in especially handy on public trackers. This file will be updated every two weeks.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "licenseId": 4,
     "name": "Combined Privacy Block Lists IPs P2P-format",
