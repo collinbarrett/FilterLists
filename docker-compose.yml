@@ -12,7 +12,7 @@ services:
       - ./ops/nginx/conf.d:/etc/nginx/conf.d:ro
 
   web:
-    image: collinbarrett/filterlists.web
+    image: collinbarrett/filterlists.web:latest
     restart: always
     build:
       context: .
@@ -24,7 +24,7 @@ services:
       - api
 
   api:
-    image: collinbarrett/filterlists.api
+    image: collinbarrett/filterlists.api:latest
     restart: always
     build:
       context: .
@@ -36,7 +36,7 @@ services:
     depends_on:
       - mariadb
     environment:
-      ConnectionStrings__FilterListsConnection: "Server=mariadb;Database=filterlistsdata;Uid=filterlists;Pwd=C53A28194242D82288E1E84A37E56D3EC7DFF83F1D9E018AF19E9BA27A5DF833;"
+      ConnectionStrings__FilterListsConnection: ${FILTERLISTS_CONNECTION_STRING}
 
   mariadb:
     image: mariadb:10
@@ -46,10 +46,10 @@ services:
     volumes:
       - data:/var/lib/mysql
     environment:
-      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
-      MYSQL_DATABASE: filterlistsdata
-      MYSQL_USER: filterlists
-      MYSQL_PASSWORD: C53A28194242D82288E1E84A37E56D3EC7DFF83F1D9E018AF19E9BA27A5DF833
+      MYSQL_ROOT_PASSWORD: ${FILTERLISTS_MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${FILTERLISTS_MYSQL_DATABASE}
+      MYSQL_USER: ${FILTERLISTS_MYSQL_USER}
+      MYSQL_PASSWORD: ${FILTERLISTS_MYSQL_PASSWORD}
     command:
       [
         "mysqld",
