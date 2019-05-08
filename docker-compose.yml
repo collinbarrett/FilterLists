@@ -20,8 +20,6 @@ services:
       target: final
     networks:
       - reverse-proxy
-    depends_on:
-      - api
 
   api:
     image: collinbarrett/filterlists.api:latest
