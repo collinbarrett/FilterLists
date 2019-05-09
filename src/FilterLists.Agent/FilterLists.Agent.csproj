@@ -2,15 +2,14 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
     <LangVersion>latest</LangVersion>
-    <RuntimeIdentifiers>ubuntu.18.04-x64</RuntimeIdentifiers>
     <Authors>Collin M. Barrett</Authors>
     <Company>Collin M. Barrett</Company>
     <Product>FilterLists</Product>
     <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
-    <Copyright>Copyright (c) 2018 Collin M. Barrett</Copyright>
+    <Copyright>Copyright (c) 2019 Collin M. Barrett</Copyright>
     <PackageLicenseUrl>https://github.com/collinbarrett/FilterLists/blob/master/LICENSE</PackageLicenseUrl>
     <PackageIconUrl>https://github.com/collinbarrett/FilterLists/raw/master/imgs/icon_filterlists.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
@@ -20,12 +19,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.5.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.6.1" />
     <PackageReference Include="Microsoft.DotNet.Analyzers.Compatibility" Version="0.2.12-alpha" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>

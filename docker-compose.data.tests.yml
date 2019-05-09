@@ -1,0 +1,32 @@
+version: "3.7"
+
+services:
+  api:
+    image: collinbarrett/filterlists.api:test-data
+    build:
+      context: .
+      dockerfile: src/FilterLists.Api/Dockerfile
+      target: test-data
+    networks:
+      - test-data
+    depends_on:
+      - mariadb
+
+  mariadb:
+    image: mariadb:10
+    networks:
+      - test-data
+    environment:
+      - MYSQL_ROOT_PASSWORD=filterlists
+      - MYSQL_DATABASE=filterlists
+      - MYSQL_USER=filterlists
+      - MYSQL_PASSWORD=filterlists
+    command:
+      [
+        "mysqld",
+        "--character-set-server=utf8mb4",
+        "--collation-server=utf8mb4_unicode_520_ci"
+      ]
+
+networks:
+  test-data:

@@ -24,7 +24,6 @@ namespace FilterLists.Api
 
         private static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                   .UseUrls("http://localhost:5000")
                    .UseApplicationInsights()
                    .UseStartup<Startup>();
     }

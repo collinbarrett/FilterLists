@@ -41,49 +41,49 @@ export class HomeContainer extends React.Component<{}, IState> {
     };
 
     fetchLanguages() {
-        fetch("https://filterlists.com/api/v1/languages")
+        fetch("/api/v1/languages")
             .then(r => r.json() as Promise<ILanguage[]>)
             .then(p => { this.setState({ languages: p }); });
     };
 
     fetchLicenses() {
-        fetch("https://filterlists.com/api/v1/licenses")
+        fetch("/api/v1/licenses")
             .then(r => r.json() as Promise<ILicense[]>)
             .then(p => { this.setState({ licenses: p }); });
     };
 
     fetchLists() {
-        fetch("https://filterlists.com/api/v1/lists")
+        fetch("/api/v1/lists")
             .then(r => r.json() as Promise<IList[]>)
             .then(p => { this.setState({ lists: p }); });
     };
 
     fetchMaintainers() {
-        fetch("https://filterlists.com/api/v1/maintainers")
+        fetch("/api/v1/maintainers")
             .then(r => r.json() as Promise<IMaintainer[]>)
             .then(p => { this.setState({ maintainers: p }); });
     };
 
     fetchSoftware() {
-        fetch("https://filterlists.com/api/v1/software")
+        fetch("/api/v1/software")
             .then(r => r.json() as Promise<ISoftware[]>)
             .then(p => { this.setState({ software: p }); });
     };
 
     fetchSyntaxes() {
-        fetch("https://filterlists.com/api/v1/syntaxes")
+        fetch("/api/v1/syntaxes")
             .then(r => r.json() as Promise<ISyntax[]>)
             .then(p => { this.setState({ syntaxes: p }); });
     };
 
     fetchTags() {
-        fetch("https://filterlists.com/api/v1/tags")
+        fetch("/api/v1/tags")
             .then(r => r.json() as Promise<ITag[]>)
             .then(p => { this.setState({ tags: p }); });
     };
 
     fetchRuleCount() {
-        fetch("https://filterlists.com/api/v1/rules")
+        fetch("/api/v1/rules")
             .then(r => r.json() as Promise<number>)
             .then(p => { this.setState({ ruleCount: p }); });
     };

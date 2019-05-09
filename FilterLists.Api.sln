@@ -8,8 +8,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Data", "src\Fil
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Services", "src\FilterLists.Services\FilterLists.Services.csproj", "{9F296ECF-97C9-47E6-A794-5AD900ECFE6C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Web", "src\FilterLists.Web\FilterLists.Web.csproj", "{6B3E6765-5B8B-4A23-AD12-7E2BC5F4D2E6}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{8C3C7C63-F5EF-4E4E-B9BF-47F6EA7D2CBD}"
 	ProjectSection(SolutionItems) = preProject
 		data\Dependent.json = data\Dependent.json
@@ -29,8 +27,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{8C3C7C63-F
 		data\Tag.json = data\Tag.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Agent", "src\FilterLists.Agent\FilterLists.Agent.csproj", "{4F39D132-498D-4A93-9F6C-1C604718300D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Services.Tests", "tests\FilterLists.Services.Tests\FilterLists.Services.Tests.csproj", "{7D9F0D85-E906-401A-BDAD-724440B34567}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Data.Tests", "tests\FilterLists.Data.Tests\FilterLists.Data.Tests.csproj", "{DA34DED7-B352-4855-9C7B-9E3D983DBE2E}"
@@ -38,8 +34,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CE4AB25B-5501-42E9-B8B4-87B9C20472AC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{041F9CFA-B6F7-4DEB-9441-829DE697B1BB}"
-EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B94A5BCD-3BE3-4FE4-AE48-ADCF904A22A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,14 +53,6 @@ Global
 		{9F296ECF-97C9-47E6-A794-5AD900ECFE6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F296ECF-97C9-47E6-A794-5AD900ECFE6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F296ECF-97C9-47E6-A794-5AD900ECFE6C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B3E6765-5B8B-4A23-AD12-7E2BC5F4D2E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B3E6765-5B8B-4A23-AD12-7E2BC5F4D2E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B3E6765-5B8B-4A23-AD12-7E2BC5F4D2E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B3E6765-5B8B-4A23-AD12-7E2BC5F4D2E6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4F39D132-498D-4A93-9F6C-1C604718300D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F39D132-498D-4A93-9F6C-1C604718300D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F39D132-498D-4A93-9F6C-1C604718300D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F39D132-498D-4A93-9F6C-1C604718300D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7D9F0D85-E906-401A-BDAD-724440B34567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7D9F0D85-E906-401A-BDAD-724440B34567}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D9F0D85-E906-401A-BDAD-724440B34567}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -75,10 +61,6 @@ Global
 		{DA34DED7-B352-4855-9C7B-9E3D983DBE2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA34DED7-B352-4855-9C7B-9E3D983DBE2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA34DED7-B352-4855-9C7B-9E3D983DBE2E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B94A5BCD-3BE3-4FE4-AE48-ADCF904A22A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B94A5BCD-3BE3-4FE4-AE48-ADCF904A22A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B94A5BCD-3BE3-4FE4-AE48-ADCF904A22A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B94A5BCD-3BE3-4FE4-AE48-ADCF904A22A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,8 +69,6 @@ Global
 		{57E4CE18-41F3-48F6-B142-12947FFBA86C} = {CE4AB25B-5501-42E9-B8B4-87B9C20472AC}
 		{944ADE8F-18E3-4DB8-9098-6A55E026EAC1} = {CE4AB25B-5501-42E9-B8B4-87B9C20472AC}
 		{9F296ECF-97C9-47E6-A794-5AD900ECFE6C} = {CE4AB25B-5501-42E9-B8B4-87B9C20472AC}
-		{6B3E6765-5B8B-4A23-AD12-7E2BC5F4D2E6} = {CE4AB25B-5501-42E9-B8B4-87B9C20472AC}
-		{4F39D132-498D-4A93-9F6C-1C604718300D} = {CE4AB25B-5501-42E9-B8B4-87B9C20472AC}
 		{7D9F0D85-E906-401A-BDAD-724440B34567} = {041F9CFA-B6F7-4DEB-9441-829DE697B1BB}
 		{DA34DED7-B352-4855-9C7B-9E3D983DBE2E} = {041F9CFA-B6F7-4DEB-9441-829DE697B1BB}
 	EndGlobalSection

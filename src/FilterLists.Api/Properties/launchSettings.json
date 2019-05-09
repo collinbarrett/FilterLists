@@ -1,13 +1,10 @@
 {
+  "$schema": "http://json.schemastore.org/launchsettings.json",
   "profiles": {
-    "FilterLists.Api": {
-      "commandName": "Project",
+    "Docker": {
+      "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:5000/docs/index.html",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "http://localhost:5000/docs/index.html"
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/docs/index.html"
     }
   }
 }

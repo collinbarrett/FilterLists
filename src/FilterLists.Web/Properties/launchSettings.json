@@ -1,18 +1,10 @@
 {
-  "FilterLists.Web": {
-    "commandName": "Project",
-    "launchBrowser": true,
-    "environmentVariables": {
-      "ASPNETCORE_ENVIRONMENT": "Development"
-    },
-    "applicationUrl": "http://localhost:5001/"
-  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
   "profiles": {
-    "FilterLists.Web": {
-      "commandName": "Project",
+    "Docker": {
+      "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:5001/",
-      "applicationUrl": "http://localhost:5001/"
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/"
     }
   }
 }

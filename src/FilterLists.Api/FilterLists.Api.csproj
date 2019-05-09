@@ -1,33 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
     <LangVersion>latest</LangVersion>
-    <RuntimeIdentifiers>ubuntu.18.04-x64</RuntimeIdentifiers>
     <ApplicationInsightsResourceId>/subscriptions/4bcbdfe1-6c65-4c02-820f-7c0e7ec5614f/resourcegroups/FilterLists/providers/microsoft.insights/components/FilterLists</ApplicationInsightsResourceId>
     <ApplicationInsightsAnnotationResourceId>/subscriptions/4bcbdfe1-6c65-4c02-820f-7c0e7ec5614f/resourcegroups/FilterLists/providers/microsoft.insights/components/FilterLists</ApplicationInsightsAnnotationResourceId>
     <Authors>Collin M. Barrett</Authors>
     <Company>Collin M. Barrett</Company>
     <Product>FilterLists</Product>
     <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
-    <Copyright>Copyright (c) 2018 Collin M. Barrett</Copyright>
+    <Copyright>Copyright (c) 2019 Collin M. Barrett</Copyright>
     <PackageLicenseUrl>https://github.com/collinbarrett/FilterLists/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://filterlists.com/</PackageProjectUrl>
     <PackageIconUrl>https://github.com/collinbarrett/FilterLists/raw/master/imgs/icon_filterlists.png</PackageIconUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
     <ServerGarbageCollection>false</ServerGarbageCollection>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp2.0\FilterLists.Api.xml</DocumentationFile>
-    <NoWarn>1701;1702;1705;1591</NoWarn>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netcoreapp2.0\FilterLists.Api.xml</DocumentationFile>
-    <NoWarn>1701;1702;1705;1591</NoWarn>
+    <OutputType>Exe</OutputType>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -36,12 +28,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Humanizer.Core" Version="2.5.16" />
-    <PackageReference Include="JetBrains.Annotations" Version="2018.2.1" />
-    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.5.1" />
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.6" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="2.3.0" />
+    <PackageReference Include="Humanizer.Core" Version="2.6.2" />
+    <PackageReference Include="JetBrains.Annotations" Version="2019.1.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.6.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="3.1.2" />
     <PackageReference Include="Microsoft.DotNet.Analyzers.Compatibility" Version="0.2.12-alpha" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.8" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
   </ItemGroup>
 

@@ -1,14 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
     <LangVersion>latest</LangVersion>
     <Authors>Collin M. Barrett</Authors>
     <Company>Collin M. Barrett</Company>
     <Product>FilterLists</Product>
     <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
-    <Copyright>Copyright (c) 2018 Collin M. Barrett</Copyright>
+    <Copyright>Copyright (c) 2019 Collin M. Barrett</Copyright>
     <PackageLicenseUrl>https://github.com/collinbarrett/FilterLists/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://filterlists.com/</PackageProjectUrl>
     <PackageIconUrl>https://github.com/collinbarrett/FilterLists/raw/master/imgs/icon_filterlists.png</PackageIconUrl>
@@ -17,19 +17,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="coverlet.msbuild" Version="2.4.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
     <PackageReference Include="Microsoft.DotNet.Analyzers.Compatibility" Version="0.2.12-alpha">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.4">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
       <PrivateAssets>all</PrivateAssets>
@@ -38,7 +34,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\FilterLists.Api\FilterLists.Api.csproj" />
     <ProjectReference Include="..\..\src\FilterLists.Data\FilterLists.Data.csproj" />
   </ItemGroup>
 

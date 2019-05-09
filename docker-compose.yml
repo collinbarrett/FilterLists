@@ -1,0 +1,63 @@
+version: "3.7"
+
+services:
+  nginx:
+    image: nginx:alpine
+    restart: always
+    ports:
+      - "80:80"
+    networks:
+      - reverse-proxy
+    volumes:
+      - ./ops/nginx/conf.d:/etc/nginx/conf.d:ro
+
+  web:
+    image: collinbarrett/filterlists.web:latest
+    restart: always
+    build:
+      context: .
+      dockerfile: src/FilterLists.Web/Dockerfile
+      target: final
+    networks:
+      - reverse-proxy
+
+  api:
+    image: collinbarrett/filterlists.api:latest
+    restart: always
+    build:
+      context: .
+      dockerfile: src/FilterLists.Api/Dockerfile
+      target: final
+    networks:
+      - reverse-proxy
+      - api
+    depends_on:
+      - mariadb
+    environment:
+      ConnectionStrings__FilterListsConnection: ${FILTERLISTS_CONNECTION_STRING}
+
+  mariadb:
+    image: mariadb:10
+    restart: always
+    networks:
+      - api
+    volumes:
+      - data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${FILTERLISTS_MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${FILTERLISTS_MYSQL_DATABASE}
+      MYSQL_USER: ${FILTERLISTS_MYSQL_USER}
+      MYSQL_PASSWORD: ${FILTERLISTS_MYSQL_PASSWORD}
+    command:
+      [
+        "mysqld",
+        "--character-set-server=utf8mb4",
+        "--collation-server=utf8mb4_unicode_520_ci"
+      ]
+
+networks:
+  reverse-proxy:
+  api:
+
+volumes:
+  data:
