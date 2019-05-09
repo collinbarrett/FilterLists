@@ -6,13 +6,13 @@
 [![Beerpay](https://beerpay.io/collinbarrett/FilterLists/make-wish.svg?style=flat-square)](https://beerpay.io/collinbarrett/FilterLists?focus=wish)
 
 [![API](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=API)](https://filterlists.com/api/v1/lists)
-[![Build status](https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/FilterLists.Api-CI)](https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=3)
-![Release status](https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4)
+[![Azure DevOps builds](https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/3.svg)](https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=3)
+![Azure DevOps releases](https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4.svg)
 [![Docker Pulls](https://img.shields.io/docker/pulls/collinbarrett/filterlists.api.svg)](https://hub.docker.com/r/collinbarrett/filterlists.api)
 
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://filterlists.com/)
-[![Build status](https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/FilterLists.Web-CI)](https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=12)
-![Release status](https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/4/5)
+[![Azure DevOps builds](https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/12.svg)](https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=12)
+![Azure DevOps releases](https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/4/5.svg)
 [![Docker Pulls](https://img.shields.io/docker/pulls/collinbarrett/filterlists.web.svg)](https://hub.docker.com/r/collinbarrett/filterlists.web)
 
 FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.
