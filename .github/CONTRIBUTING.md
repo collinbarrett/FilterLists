@@ -2,4 +2,60 @@
 
 To submit a new list or update data about an existing list, please submit a pull request to [data](https://github.com/collinbarrett/FilterLists/tree/master/data) in conjunction with the data model described [here](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar). Alternatively, you can [open a new issue](https://github.com/collinbarrett/FilterLists/issues/new) providing information for all of the fields described in the [data model](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar).
 
-Note that filterlists that are maintained by CHEF-KOCH will not be added, due to him on at least 3 occasions breaking licence terms while refusing to honor requests to accomodate to them, rude behavior towards other filterlist makers, and having tried to get FilterLists.com shut down on thin grounds. Partial details about this can be found [here](https://github.com/github/dmca/blob/master/2019/03/2019-03-05-WindowsSpyBlocker.md).
+## Adding or Updating Rules
+
+FilterLists does not maintain any of these lists. It serves only as a discovery tool to direct users to lists that they may want to use. If you want to request addition, modification, or removal of a rule from a list, you will need to contact the maintainers of that list directly. FilterLists provides a variety of ways you can get in contact with the maintainers to do so.
+
+## Building and Running Locally
+
+We have containerized FilterLists to make it as easy as possible for contributers to get the project up and running locally.
+
+### Up and Running
+
+1. Install Docker CE for your computer's operating system. [Docs](https://docs.docker.com/install/)
+2. Clone the FilterLists git repository to your computer. [Docs](https://help.github.com/en/articles/cloning-a-repository)
+3. Navigate to the root directory of your locally cloned FilterLists git repository in a command-line interface.
+4. Execute `docker-compose up`.
+5. Visit the locally running version of FilterLists in a web browser at `http://localhost/`.
+
+### Testing changes to the data (.json files)
+
+#### Automated
+
+Execute:
+
+`docker-compose -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -f docker-compose.data.tests.yml run api`
+
+#### Manual
+
+1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.api` container.
+2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
+3. Verify your changes are properly reflected at `http://localhost/`.
+
+### Testing changes to the `Api`, `Services`, or `Data` projects
+
+#### Automated
+
+- For `Services`, execute:
+
+  `docker-compose -f docker-compose.services.tests.yml build api && docker-compose -f docker-compose.services.tests.yml run --rm api`
+
+- For `Data`, execute:
+
+  `docker-compose -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -f docker-compose.data.tests.yml run api`
+
+#### Manual
+
+1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.api` container.
+2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
+3. Verify your changes are properly reflected at `http://localhost/api`.
+
+### Testing changes to the `Web` project
+
+1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.web` container.
+2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
+
+### Debugging
+
+1. Execute `docker container ls -a` to find the `CONTAINER ID` of the container in question.
+2. Execute `docker logs [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1 to view the logs from that container.
