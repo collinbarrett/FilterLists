@@ -44,7 +44,7 @@ We have containerized FilterLists to make it as easy as possible for contributer
 1. Install Docker CE for your computer's operating system. [Docs](https://docs.docker.com/install/)
 2. Clone the FilterLists git repository to your computer. [Docs](https://help.github.com/en/articles/cloning-a-repository)
 3. Navigate to the root directory of your locally cloned FilterLists git repository in a command-line interface.
-4. Execute `docker-compose up -d`.
+4. Execute `docker-compose up`.
 5. Visit the locally running version of FilterLists in a web browser at `http://localhost/`.
 
 ### Testing changes to the data (.json files)
@@ -106,6 +106,6 @@ FilterLists does not condone or endorse implementing any particular FilterList o
 
 We respect your privacy. That is the whole point of this site. The only minor data we collect about visitors is what [Cloudflare](https://www.cloudflare.com/analytics/), [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-data-retention-privacy), and [GitHub](https://help.github.com/articles/github-privacy-statement/) capture.
 
-## Internet Explorer TPL users
+## Internet Explorer
 
-The FilterLists.com website returns a blank page in Internet Explorer, mostly due to problems with both polyfill and JavaScript elements, in addition to IE being considered by us to be an outdated browser. To help alleviate this, a makeshift archive has been set up. To view a smaller TPL-only archive with subscribable links, right-click on [this link](https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html), choose to save it as an HTML file, and open it in Internet Explorer ≥9.
+FilterLists does not support Internet Explorer. To view a smaller, TPL-only archive with subscribable links, right-click on [this link](https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html), choose to save it as an HTML file, and open it in Internet Explorer ≥9.
