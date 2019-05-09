@@ -3267,17 +3267,6 @@
     "viewUrl": "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt"
   },
   {
-    "id": 273,
-    "description": "Blocks malware.",
-    "emailAddress": "support@disconnect.me",
-    "homeUrl": "https://disconnect.me/trackerprotection",
-    "licenseId": 4,
-    "name": "Disconnect Malware Filter List",
-    "syntaxId": 2,
-    "updatedDate": "2019-04-08T17:56:10",
-    "viewUrl": "https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt"
-  },
-  {
     "id": 274,
     "description": "Blocks malvertising.",
     "emailAddress": "support@disconnect.me",
@@ -4212,20 +4201,6 @@
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/16.txt"
   },
   {
-    "id": 351,
-    "description": "This is an AdGuard-specific supplement for the Adblock polskie reguły filter. It specifically removes adverts on Polish language websites.",
-    "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#polish-ads-filter",
-    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
-    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
-    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
-    "licenseId": 12,
-    "name": "AdGuard Polish Filter",
-    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
-    "syntaxId": 6,
-    "updatedDate": "2019-04-13T13:56:12",
-    "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/238.txt"
-  },
-  {
     "id": 352,
     "description": "A bad hosts blocking list",
     "donateUrl": "https://www.paypal.me/e1adkarak0",
@@ -4672,13 +4647,13 @@
   },
   {
     "id": 388,
-    "description": "Removes ads, affiliation ads, and empty boxes on Norwegian sites to produce a cleaner browser experience. Meant to be used on top of general filters. The quality of the current TPL conversion is so-so, so don't expect perfect results.",
+    "description": "Removes ads, affiliation ads, and empty boxes on Nordic sites to produce a cleaner browser experience. Meant to be used on top of general filters. The quality of the current TPL conversion is so-so, so don't expect perfect results.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
-    "name": "Dandelion Sprout's Norwegian Filters for Tidier Websites (Internet Explorer)",
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (Internet Explorer)",
     "syntaxId": 10,
     "updatedDate": "2019-04-14T22:37:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl",
@@ -4687,7 +4662,7 @@
   },
   {
     "id": 389,
-    "description": "Here's how this list works. This is a categorised list of URLs that clot up Google search results. The list is designed for use with Google Hit Hider by Domain (and its Import function), in such a way that it removes search results for the URLs from your searches. The list is VERY subjective, so quite a few of you may NOT want to block the results for ALL of these URLs. In that case, simply pick whichever ones from this buffet that you want to block, and paste them into Google Hit Hider by Domain. While this list is technically possible to add to adblocker tools, it'd be a very bad idea to do so, since you wouldn't have any control over which URLs you'll be able to block outright or not.",
+    "description": "This is a list of URLs that clot up Google search results. The list is designed for use with Google Hit Hider by Domain, in such a way that it removes search results for the URLs from your searches. The list is categorised, so that you can take the entries that YOU want, and paste them into Google Hit Hider by Domain. While this list is possible to add to adblocker tools, it'd be a very bad idea to do so, since you wouldn't have any control over which URLs you'll be able to block outright or not.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
@@ -4738,7 +4713,7 @@
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
-    "name": "Browsing websites without logging in",
+    "name": "Browse Websites Without Logging In",
     "publishedDate": "2018-05-15T00:00:00",
     "syntaxId": 3,
     "updatedDate": "2019-04-14T22:38:07",
@@ -4748,7 +4723,7 @@
   },
   {
     "id": 393,
-    "description": "A list that demonstrates and makes use of Einar Egilsson's Redirector extensions, in order to accomplish things that no adblock tool could've achieved. Examples include turning 32-bit Windows program installation links into 64-bit ones, making Disney's US websites accessible from other countries, and turning mobile Wikipedia links into desktop ones, among other things.",
+    "description": "A list that shows off and makes use of Einar Egilsson's Redirector extension, in order to accomplish things that no adblock tool could've achieved. Examples include turning 32-bit Windows program installation links into 64-bit ones, making Disney's US websites accessible from other countries, turning mobile Wikipedia links into desktop ones, changing Reddit/YouTube UIs into their old ones, and making image resolutions on some sites larger, among many other things.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List",
@@ -5072,7 +5047,7 @@
   },
   {
     "id": 430,
-    "description": "Blocks rogue websites and some ads on Norwegian and Danish sites. Intended for use only with hosts-specific tools; users of uBlock Origin and Nano Adblocker should preferably use the regular version of this list instead.",
+    "description": "Blocks rogue websites and some ads on Norwegian and Danish sites. Intended for use only with hosts-file-specific tools and with system «hosts» files.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
@@ -5117,14 +5092,14 @@
   },
   {
     "id": 433,
-    "description": "Are you tired of being told by others what you should watch, specifically the hipsters that run around on IMDB? Here's a way to let you feel more peaceful with your truly own opinions.",
+    "description": "Are you tired of being told by others what you should watch, specifically the hipsters that run rampant on IMDB? Here's a way to let you feel more peaceful with your truly own opinions.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
     "name": "Anti-IMDB List",
-    "syntaxId": 4,
+    "syntaxId": 3,
     "updatedDate": "2019-04-15T07:32:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-IMDB%20List.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-IMDB%20List.txt",
@@ -5132,7 +5107,7 @@
   },
   {
     "id": 434,
-    "description": "Are you tired of having to turn off autoplay on YouTube every time you e.g. go to incognito mode? Are you worried of having to use specific extensions just for that purpose? Then this list is for you. Now also working on phone browsers!",
+    "description": "Are you tired of having to turn off Autoplay on YouTube every time you e.g. go to incognito mode? Are you worried of having to use specific extensions just for that purpose? Then this list is for you. Now also working on phone browsers!",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
@@ -6506,7 +6481,7 @@
   },
   {
     "id": 603,
-    "description": "This list aims to remove particularly disturbing content on YouTube, DailyMotion, Vimeo, and several other video sites, that targets young children, as well as nursery rhymes, \"Finger Family\", \"Wrong Heads\", and other things that are hotbeds for extremely unproductive videos. Also supports YouTube on mobile browsers (but sadly not the apps).",
+    "description": "This list aims to remove particularly disturbing content on YouTube, DailyMotion, Vimeo, Rumble, and several other video sites, that targets young children, as well as nursery rhymes, \"Finger Family\", \"Wrong Heads\", and other things that are hotbeds for extremely unproductive videos. Also supports YouTube on mobile browsers (but sadly not the apps).",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
@@ -7120,7 +7095,7 @@
   },
   {
     "id": 670,
-    "description": "A version of the Norwegian filter list for Little Snitch.",
+    "description": "A version of the Norwegian filter list for Little Snitch. It currently doesn't see much work done on it, as the maintainer does not have a Mac to test it with.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
@@ -7241,7 +7216,7 @@
   },
   {
     "id": 680,
-    "description": "A version of the Nordic filter list for domains tools, such as Pi-hole, Samsung Knox, Personal Blocklist, and Google Hit Hider by Domain.",
+    "description": "A version of the Nordic filter list for domains tools, such as Pi-hole, Google Hit Hider by Domain, and Samsung Knox.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
@@ -8695,7 +8670,7 @@
   },
   {
     "id": 816,
-    "description": "Do you already have a favourite browser? Are you tired of seeing \"Try out [some browser] now!\" on some websites? Then this is a list is for you!",
+    "description": "Do you already have a favourite browser or PDF reader? Are you tired of seeing \"Try out [some browser] now!\" on some websites? Then this is a list is for you!",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
@@ -8703,7 +8678,7 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
     "name": "I Don't Want to Download Your Browser",
-    "syntaxId": 4,
+    "syntaxId": 3,
     "updatedDate": "2019-03-03T04:37:09",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt",
@@ -9106,7 +9081,7 @@
   },
   {
     "id": 848,
-    "description": "Makes things a bit more tidy when watching things on Twitch.",
+    "description": "Makes things a bit more tidy when watching things on Twitch, by e.g. .",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
@@ -9138,14 +9113,14 @@
   },
   {
     "id": 850,
-    "description": "Pixiv is an East Asian artsite, whose average art quality wipes the floor with DeviantArt. It also allows porn of many types. Pressure on \"many\". So say that you're looking for imagery of consensual and pleasurable sex, and then you stumble across a crying Daniel Tiger with a corset being strapped to a bench in a diaper? Now such scenarios won't occur nearly as often as they did before!",
+    "description": "This list is mostly made for Pixiv, which is an East Asian artsite, whose on-average art quality wipes the floor with DeviantArt. It also allows porn of many types. Pressure on \"many\". So say that you're looking for imagery of consensual and pleasurable sex, and then you stumble across a crying Daniel Tiger wearing a corset being strapped to a bench in a diaper? Now such scenarios won't occur nearly as often as they did before!",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAbusePorn.txt",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
-    "name": "Anti-'Abuse porn' list for Pixiv",
+    "name": "Anti-'Abuse porn' List",
     "publishedDate": "2018-10-09T18:07:51",
     "syntaxId": 3,
     "updatedDate": "2019-04-02T23:58:26",
@@ -9238,7 +9213,7 @@
   },
   {
     "id": 857,
-    "description": "A list that makes use of Einar Egilsson's Redirector extensions, in order to make links to certain websites redirect to the proper .onion pages.",
+    "description": "A list that makes use of Einar Egilsson's Redirector extension, in order to make links to certain websites redirect to the proper .onion pages. For example, clicking on links to nytimes.com would instead lead to nytimes3xbfgragh.onion.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt/tree/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List",
@@ -13504,23 +13479,6 @@
     "viewUrl": "https://raw.githubusercontent.com/PoorPocketsMcNewHold/steamscamsites/master/steamscamsite.txt"
   },
   {
-    "id": 1287,
-    "description": "Are you tired of being told that Adobe Reader is supposedly necessary to view a PDF manual in 2019? Are you tired of reading tech guides and seeing ads for questionable optimalisation tools after every paragraph? If you answered yes to at least one of those two, here's a list for that.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TechnologicalDiversity.txt",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 10,
-    "name": "List for the Freedom of Technological Diversity",
-    "publishedDate": "2018-12-31T00:00:00",
-    "syntaxId": 3,
-    "updatedDate": "2019-03-27T04:16:49",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TechnologicalDiversity.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TechnologicalDiversity.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TechnologicalDiversity.txt"
-  },
-  {
     "id": 1288,
     "description": "Removes empty ads placeholders",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/NanoAdblockerLab/NanoContrib/master/dist/placeholder-buster.txt",
@@ -13535,7 +13493,7 @@
   },
   {
     "id": 1289,
-    "description": "So let's say that you're doing research on Half-Life: Full Life Consequences, which is the best meme ever made, but you've grown very tired of seeing unrelated images, social media nags, and things that are categorically not memes? In that case, this list will save your sanity.",
+    "description": "So let's say you're doing research on Half-Life: Full Life Consequences, which is the best meme ever made, but you've grown very tired of seeing unrelated images, social media nags, and articles about things that are categorically not memes? In that case, this list will save your sanity.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/KnowYourMemePureBrowsingExperience.txt",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
@@ -13552,7 +13510,7 @@
   },
   {
     "id": 1290,
-    "description": "Most anti-malware lists are pretty big and can cover a 5- or 6-digit amount of specific domains. But my list hereby claims to remove more than 25% of all known malware sites with just a 2-digit amount of entries. This is mostly done by blocking top-level domains that have become devastatingly abused by spammers, usually because they allowed for free and uncontrolled domain registrations. There's also additional categories that cover unusual malware and phishing domains that no other lists seem to cover.",
+    "description": "Most anti-malware lists are pretty big and can cover a 5- or 6-digit amount of specific domains. But my list hereby claims to remove more than 25% of all known malware sites with just a 2-digit amount of entries. This is mostly done by blocking top-level domains that have become devastatingly abused by spammers, usually because they allowed for free and uncontrolled domain registrations. There's also additional categories that cover unusual malware and phishing domains that very few other lists seem to cover.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
@@ -13586,14 +13544,14 @@
   },
   {
     "id": 1292,
-    "description": "Having the app's logo display a permanent fake notification counter, to make the users think that they've received a notification when they haven't, takes quite a bit of scumminess on the app maker's behalf to pull off. If you like to browse through Google Play Store on a PC web browser, here's how to filter them out of sight.",
+    "description": "Having something display a permanent fake notification counter, to make the users think that they've received a notification when they haven't, takes quite a bit of scumminess on the maker's behalf to pull off. Here's how to filter them out of sight.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
-    "name": "Android Scum Class — Fake notification counters",
+    "name": "Anti-'Fake notification counters' List",
     "publishedDate": "2018-01-10T00:00:00",
     "syntaxId": 3,
     "updatedDate": "2019-03-03T03:39:10",
@@ -15574,7 +15532,7 @@
   },
   {
     "id": 1455,
-    "description": "If Fanboy and AdGuard can make overly broad and imperfect 'Annoyances' lists and get included in uBlock Origin without breaking a sweat, then so can I... hopefully...",
+    "description": "Having initially been made in a failed bid to get a 2nd list of mine included in uBlock Origin, it remains online for collection count purposes.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
@@ -15704,7 +15662,7 @@
     "licenseId": 5,
     "name": "CitizenXVIL Hosts",
     "publishedDate": "2018-05-23T18:28:32",
-    "syntaxId": 4,
+    "syntaxId": 16,
     "updatedDate": "2019-04-03T03:14:10",
     "viewUrl": "https://raw.githubusercontent.com/CitizenXVIL/Hosts/master/Optimized_hosts_list.txt"
   },
@@ -15725,7 +15683,7 @@
     "issuesUrl": "https://github.com/CitizenXVIL/Hosts/issues",
     "licenseId": 5,
     "name": "CitizenXVIL YouTube Hosts",
-    "syntaxId": 8,
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/CitizenXVIL/Hosts/master/Youtube%20hosts.txt"
   },
   {
@@ -16291,18 +16249,18 @@
   },
   {
     "id": 1523,
-    "description": "Is a comprehensive hosts list which blocks known ad, exploit, and tracking servers, taken from MVPS, PGL Yoyo, Malware Domain List, hpHosts and AdAway, then merged, sorted and deduped. This list is compatible with all operating systems that make use of a hosts file (obviously this includes Windows, OS X, LiGnux and more). It works great with mobile VPN ad-blocking solutions too. Notably enhanced privacy and security awaits you. This file will be updated once a week, along with a separate IPv6 version.",
+    "description": "Is a comprehensive hosts file which blocks known ad, exploit, and tracking servers, taken from MVPS, PGL Yoyo, Malware Domain List, hpHosts and AdAway, along with some supplementary entries for increased protection, then merged, sorted and deduped. This list is compatible with all operating systems that make use of a hosts file (obviously this includes Windows, OS X, LiGnux and more). It works great with mobile VPN ad-blocking solutions too. Notably enhanced privacy and security awaits you. This file will be updated once a week, along with an IPv6 version, and an experimental version for both IPv4 and IPv6.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "licenseId": 9,
     "name": "Combined Privacy Block Lists HOSTS",
     "publishedDate": "2019-03-11T22:39:55",
-    "syntaxId": 14,
+    "syntaxId": 1,
     "updatedDate": "2019-04-15T08:52:00",
     "viewUrl": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final.hosts"
   },
   {
     "id": 1524,
-    "description": "Is a DAT-format IP block list suitable for use in torrent clients like Halite for Windows. The list is merged from BlueTack levels 1 and 2, then deduped and sorted. This will come in especially handy on public trackers.",
+    "description": "Is a DAT-format IP block list suitable for use in torrent clients like Halite for Windows. The list is merged from BlueTack levels 1 and 2, then deduped and sorted. This will come in especially handy on public trackers. This file will be updated every two weeks.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "licenseId": 4,
     "name": "Combined Privacy Block Lists IPs DAT-format",
@@ -16313,7 +16271,7 @@
   },
   {
     "id": 1525,
-    "description": "Is a P2P-format IP block list suitable for use in torrent clients like qBitTorrent and Transmission under any OS. The list is merged from BlueTack levels 1 and 2.",
+    "description": "Is a P2P-format IP block list suitable for use in torrent clients like qBitTorrent and Transmission under any OS. The list is merged from BlueTack levels 1 and 2, then deduped and sorted. This will also come in especially handy on public trackers. This file will be updated every two weeks.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "licenseId": 4,
     "name": "Combined Privacy Block Lists IPs P2P-format",
@@ -16865,5 +16823,96 @@
     "syntaxId": 1,
     "updatedDate": "2018-03-21T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/biroloter/Mobile-Ad-Hosts/master/hosts"
-  }
+  },
+  {
+    "id": 1567,
+    "description": "EasyList is the primary subscription that removes adverts from web pages in English language.",
+    "descriptionSourceUrl": "https://filters.adtidy.org/extension/ublock/filters/101_optimized.txt",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "EasyList Optimized",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 3,
+    "viewUrl": "https://filters.adtidy.org/extension/ublock/filters/101_optimized.txt"
+  },
+  {
+    "id": 1568,
+    "description": "Filter that enables removing of the ads from websites with English content.",
+    "descriptionSourceUrl": "https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Base Filter Optimized",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 6,
+    "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt"
+  },
+  {
+    "id": 1569,
+    "description": "Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.",
+    "descriptionSourceUrl": "https://filters.adtidy.org/extension/chromium/filters/16_optimized.txt",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard French Filter Optimized",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 6,
+    "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/16_optimized.txt"
+  },
+  {
+    "id": 1570,
+    "description": "EasyList Germany + AdGuard German filter. Filter list that specifically removes ads on websites in German language.",
+    "descriptionSourceUrl": "https://filters.adtidy.org/extension/chromium/filters/6_optimized.txt",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard German Filter Optimized",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 6,
+    "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/6_optimized.txt"
+  },
+  {
+    "id": 1571,
+    "description": "This blocklist only contains compromised / hijacked websites (level 2) which are being abused by cybercriminals to host a ZeuS botnet controller.",
+    "descriptionSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
+    "donateUrl": "https://zeustracker.abuse.ch/faq.php",
+    "emailAddress": "contactme@abuse.ch",
+    "homeUrl": "https://zeustracker.abuse.ch/blocklist.php",
+    "licenseId": 5,
+    "name": "abuse.ch ZeuS Blocklist Hosts File",
+    "syntaxId": 1,
+    "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=hostfile"
+  },
+  {
+    "id": 1572,
+    "description": "This blocklist only contains compromised / hijacked websites (level 2) which are being abused by cybercriminals to host a ZeuS botnet controller.",
+    "descriptionSourceUrl": "https://zeustracker.abuse.ch/blocklist.php",
+    "donateUrl": "https://zeustracker.abuse.ch/faq.php",
+    "emailAddress": "contactme@abuse.ch",
+    "homeUrl": "https://zeustracker.abuse.ch/blocklist.php",
+    "licenseId": 5,
+    "name": "abuse.ch ZeuS Blocklist hosts.deny",
+    "syntaxId": 23,
+    "viewUrl": "https://zeustracker.abuse.ch/blocklist.php?download=hostsdeny"
+  },
+  {
+    "id": 1573,
+    "homeUrl": "https://github.com/qwIvan/privoxy-adfilter",
+    "issuesUrl": "https://github.com/qwIvan/privoxy-adfilter/issues",
+    "name": "Privoxy Adfilter",
+    "syntaxId": 19,
+    "viewUrl": "https://raw.githubusercontent.com/qwIvan/privoxy-adfilter/master/adfilter.action"
+  },
+  {
+    "id": 1574,
+    "description": "Constantly updated hosts file. Good addition for uBlock Origin filters in a browser",
+    "descriptionSourceUrl": "https://github.com/mtxadmin/ublock/issues",
+    "homeUrl": "https://github.com/mtxadmin/ublock/blob/master/docs/hosts_file_en.md",
+    "issuesUrl": "https://github.com/mtxadmin/ublock/issues",
+    "licenseId": 5,
+    "name": "Yet another small hosts file",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt"
+  },  
 ]
