@@ -3,27 +3,29 @@
 
 # init base
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-alpine as runtime
+WORKDIR /app
 ENV ASPNETCORE_URLS "http://*:5000"
 EXPOSE 5000
 ENTRYPOINT ["dotnet", "FilterLists.Web.dll"]
 
 # init build
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine AS build
+WORKDIR /app
 RUN apk add --update nodejs nodejs-npm
 
 # restore
 COPY FilterLists.Web.sln ./
-WORKDIR /src/FilterLists.Web/
+WORKDIR /app/src/FilterLists.Web/
 COPY src/FilterLists.Web/FilterLists.Web.csproj ./
-WORKDIR /
+WORKDIR /app
 RUN dotnet restore
 
 # publish
-WORKDIR /src/FilterLists.Web/
+WORKDIR /app/src/FilterLists.Web/
 COPY src/FilterLists.Web/. ./
 RUN dotnet publish -c Release -o out --no-restore
 
 # run
 FROM runtime as final
-COPY --from=build /src/FilterLists.Web/out ./
+COPY --from=build /app/src/FilterLists.Web/out ./
  
