@@ -28,4 +28,4 @@ RUN dotnet publish -c Release -o out --no-restore
 # run
 FROM runtime as final
 COPY --from=build /app/src/FilterLists.Web/out ./
- 
+VOLUME /app/wwwroot
