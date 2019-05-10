@@ -1,6 +1,6 @@
 version: "3.7"
 
-services:
+#services:
 #  web:
 #    volumes:
 #      - web-static:/app/wwwroot
