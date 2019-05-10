@@ -10,6 +10,9 @@ services:
       - reverse-proxy
     volumes:
       - ./ops/nginx/conf.d:/etc/nginx/conf.d:ro
+    depends_on:
+      - web
+      - api
 
   web:
     image: collinbarrett/filterlists.web:latest
