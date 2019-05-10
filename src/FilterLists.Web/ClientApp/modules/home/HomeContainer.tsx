@@ -37,7 +37,7 @@ export class HomeContainer extends React.Component<{}, IState> {
         this.fetchSoftware();
         this.fetchSyntaxes();
         this.fetchTags();
-        this.fetchRuleCount();
+        // this.fetchRuleCount();
     };
 
     fetchLanguages() {
