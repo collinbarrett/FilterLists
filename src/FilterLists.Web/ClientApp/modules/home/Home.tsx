@@ -6,8 +6,8 @@ const columnVisibilityDefaults: IColumnVisibility[] = [
     { column: "Software", visible: true },
     { column: "Languages", visible: true },
     { column: "Tags", visible: true },
-    { column: "Updated", visible: false },
-    { column: "Rules", visible: false },
+    //{ column: "Updated", visible: false },
+    //{ column: "Rules", visible: false },
     { column: "License", visible: false },
     { column: "Maintainers", visible: false },
     { column: "Subscribe", visible: false }
@@ -18,7 +18,7 @@ interface IProps {
     licenses: ILicense[];
     lists: IList[];
     maintainers: IMaintainer[];
-    ruleCount: number;
+    //ruleCount: number;
     software: ISoftware[];
     syntaxes: ISyntax[];
     tags: ITag[];
@@ -60,7 +60,7 @@ export class Home extends React.Component<IProps, IState> {
 
     render() {
         return <div>
-                   <Oneliner listCount={this.props.lists.length} ruleCount={this.props.ruleCount}/>
+                   <Oneliner listCount={this.props.lists.length}/* ruleCount={this.props.ruleCount}*//>
                    <ListsTable {...this.props} {...this.state}/>
                    {this.renderColumnVisibilityCheckboxes()}
                </div>;

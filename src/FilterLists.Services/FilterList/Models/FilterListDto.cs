@@ -22,11 +22,11 @@ namespace FilterLists.Services.FilterList.Models
         public string Name { get; set; }
         public string PolicyUrl { get; set; }
         public DateTime? PublishedDate { get; set; }
-        public int? RuleCount { get; set; }
+        //public int? RuleCount { get; set; }
         public string SubmissionUrl { get; set; }
         public int? SyntaxId { get; set; }
         public List<int> TagIds { get; set; }
-        public DateTime? UpdatedDate { get; set; }
+        //public DateTime? UpdatedDate { get; set; }
         public string ViewUrl { get; set; }
         public List<string> ViewUrlMirrors { get; set; }
     }

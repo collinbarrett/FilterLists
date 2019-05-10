@@ -19,11 +19,11 @@ interface IProps {
     license: ILicense;
     name: string;
     publishedDate: string;
-    ruleCount: number;
+    //ruleCount: number;
     software: ISoftware[];
     syntax: ISyntax;
     tags: ITag[];
-    updatedDate: string;
+    //updatedDate: string;
 };
 
 export const InfoCard = (props: IProps) =>
@@ -42,12 +42,12 @@ export const InfoCard = (props: IProps) =>
         <Description {...props} url={props.descriptionSourceUrl}/>
         <ul className="list-group list-group-flush">
             <Languages {...props}/>
-            {props.columnVisibility.filter((c: IColumnVisibility) => c.column === "Rules")[0].visible
+            {/*{props.columnVisibility.filter((c: IColumnVisibility) => c.column === "Rules")[0].visible
                  ? null
                  : <RuleCount {...props}/>}
             {props.columnVisibility.filter((c: IColumnVisibility) => c.column === "Updated")[0].visible
                  ? null
-                 : <UpdatedDate {...props}/>}
+                 : <UpdatedDate {...props}/>}*/}
             <PublishedDate date={props.publishedDate}/>
             <Syntax {...props} />
             {props.columnVisibility.filter((c: IColumnVisibility) => c.column === "License")[0].visible

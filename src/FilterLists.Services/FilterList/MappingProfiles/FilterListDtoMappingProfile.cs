@@ -25,12 +25,12 @@ namespace FilterLists.Services.FilterList.MappingProfiles
                     opt => opt.MapFrom(src =>
                         src.FilterListMaintainers
                            .Select(ll => ll.MaintainerId)))
-                .ForMember(dest => dest.RuleCount,
-                    opt => opt.MapFrom(src =>
-                        src.Snapshots
-                           .Where(s => s.WasSuccessful)
-                           .Select(s => (int?)s.SnapshotRules.Count)
-                           .FirstOrDefault()))
+                //.ForMember(dest => dest.RuleCount,
+                //    opt => opt.MapFrom(src =>
+                //        src.Snapshots
+                //           .Where(s => s.WasSuccessful)
+                //           .Select(s => (int?)s.SnapshotRules.Count)
+                //           .FirstOrDefault()))
                 .ForMember(dest => dest.SyntaxId,
                     opt => opt.MapFrom(src =>
                         src.SyntaxId))

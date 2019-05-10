@@ -16,11 +16,11 @@ export interface IListDetails {
     name: string;
     policyUrl: string;
     publishedDate: string;
-    ruleCount: number;
+    //ruleCount: number;
     submissionUrl: string;
     syntax: ISyntax;
     tags: ITag[];
-    updatedDate: string;
+    //updatedDate: string;
     viewUrl: string;
     viewUrlMirrors: string[];
 };

@@ -10,11 +10,11 @@ import {
     License,
     Maintainers,
     Name,
-    RuleCount,
+    //RuleCount,
     Software,
     SubscribeButton,
     Tags,
-    UpdatedDate
+    //UpdatedDate
 } from "./columns";
 import { IListDetails } from "../../components/detailsExpander";
 import { DetailsExpander } from "../../components";
@@ -42,8 +42,8 @@ export const ListsTable = (props: IProps) =>
               Software(props.columnVisibility, props.software),
               Languages(props.columnVisibility, props.languages),
               Tags(props.columnVisibility, props.tags),
-              UpdatedDate(props.columnVisibility),
-              RuleCount(props.columnVisibility),
+              //UpdatedDate(props.columnVisibility),
+              //RuleCount(props.columnVisibility),
               License(props.columnVisibility, props.licenses),
               Maintainers(props.columnVisibility, props.maintainers),
               SubscribeButton(props.columnVisibility),
@@ -94,11 +94,11 @@ const mapListDetails = (props: ICreateListDtoProps): IListDetails =>
     name: props.list.name,
     policyUrl: props.list.policyUrl,
     publishedDate: props.list.publishedDate,
-    ruleCount: props.list.ruleCount,
+    //ruleCount: props.list.ruleCount,
     submissionUrl: props.list.submissionUrl,
     syntax: props.syntaxes.filter((s: ISyntax) => props.list.syntaxId === s.id)[0],
     tags: props.list.tagIds ? props.tags.filter((t: ITag) => props.list.tagIds.indexOf(t.id) > -1) : undefined,
-    updatedDate: props.list.updatedDate,
+    //updatedDate: props.list.updatedDate,
     viewUrl: props.list.viewUrl,
     viewUrlMirrors: props.list.viewUrlMirrors
 } as IListDetails);
