@@ -2118,5 +2118,13 @@
   {
     "filterListId": 1574,
     "languageId": 18
-  }  
+  },
+  {
+    "filterListId": 1242,
+    "languageId": 110
+  },
+  {
+    "filterListId": 1242,
+    "languageId": 167
+  }
 ]
