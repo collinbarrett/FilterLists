@@ -8,11 +8,11 @@ services:
       - "80:80"
     networks:
       - reverse-proxy
-    volumes:
-      - ./ops/nginx/conf.d:/etc/nginx/conf.d:ro
     depends_on:
       - web
       - api
+    volumes:
+      - ./ops/nginx/conf.d:/etc/nginx/conf.d:ro
 
   web:
     image: collinbarrett/filterlists.web:latest
