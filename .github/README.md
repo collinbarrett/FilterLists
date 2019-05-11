@@ -82,7 +82,7 @@ Execute:
 ### Testing changes to the `Web` project
 
 1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.web` container.
-2. Execute `docker-compose up -d -V --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
+2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
 
 ### Debugging
 
