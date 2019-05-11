@@ -33,20 +33,21 @@ const Footer = () =>
         </p>
     </footer>;
 
-const ApiLink = () =>
-    <a href="/api/docs/index.html"
-       title="API Swagger Docs">
-        API
-    </a>;
-
 const HubLink = () =>
-    <a href="https://hub.filterlists.com">
+    <a href="https://hub.filterlists.com"
+       title="Discourse community forum">
         Hub
     </a>;
 
 const GitHubLink = () =>
     <a href="https://github.com/collinbarrett/FilterLists">
         GitHub
+    </a>;
+
+const ApiLink = () =>
+    <a href="/api/docs/index.html"
+       title="API Swagger docs">
+        API
     </a>;
 
 const DonateLink = () =>
