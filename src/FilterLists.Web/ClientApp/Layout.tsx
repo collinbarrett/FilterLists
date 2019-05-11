@@ -29,7 +29,7 @@ const Header = () =>
 const Footer = () =>
     <footer className="row justify-content-center">
         <p className="mt-2 ml-1 mr-1">
-            <ApiLink/> | <GitHubLink/> | <DonateLink/> | By <OwnerLink/>
+            <HubLink/> | <GitHubLink/> | <ApiLink/> | <DonateLink/> | By <OwnerLink/>
         </p>
     </footer>;
 
@@ -37,6 +37,11 @@ const ApiLink = () =>
     <a href="/api/docs/index.html"
        title="API Swagger Docs">
         API
+    </a>;
+
+const HubLink = () =>
+    <a href="https://hub.filterlists.com">
+        Hub
     </a>;
 
 const GitHubLink = () =>
