@@ -10,6 +10,9 @@ services:
       - reverse-proxy
     volumes:
       - ./ops/nginx/conf.d:/etc/nginx/conf.d:ro
+    depends_on:
+      - web
+      - api
 
   web:
     image: collinbarrett/filterlists.web:latest
@@ -20,6 +23,8 @@ services:
       target: final
     networks:
       - reverse-proxy
+    depends_on:
+      - api
 
   api:
     image: collinbarrett/filterlists.api:latest

@@ -1,16 +1,8 @@
 version: "3.7"
 
-services:
-  web:
-    volumes:
-      - web-static:/app/wwwroot
-
 networks:
   # https://github.com/collinbarrett/wp-host-on-containers/blob/master/docker-compose.nginx.yml
   reverse-proxy:
     external:
       name: wp-host_reverse-proxy
-
-volumes:
-    web-static:
-    
+      
