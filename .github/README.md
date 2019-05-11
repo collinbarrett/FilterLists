@@ -1,21 +1,21 @@
-![FilterLists](https://github.com/collinbarrett/FilterLists/blob/master/imgs/logo_filterlists.png)
+<p align="center"><img src="https://github.com/collinbarrett/FilterLists/blob/master/imgs/logo_filterlists.png"></p>
 
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/collinbarrett/FilterLists/blob/master/LICENSE)
-[![BuiltWithDot.Net shield](https://builtwithdot.net/project/125/filterlists/badge)](https://builtwithdot.net/project/125/filterlists)
-[![Beerpay](https://beerpay.io/collinbarrett/FilterLists/badge.svg?style=beer-square)](https://beerpay.io/collinbarrett/FilterLists)
-[![Beerpay](https://beerpay.io/collinbarrett/FilterLists/make-wish.svg?style=flat-square)](https://beerpay.io/collinbarrett/FilterLists?focus=wish)
+<p align="center">FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</p>
 
-[![API](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=API)](https://filterlists.com/api/v1/lists)
-[![Azure DevOps builds](https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/3.svg)](https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=3)
-[![Azure DevOps releases](https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4.svg)](https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=3)
-[![Docker Pulls](https://img.shields.io/docker/pulls/collinbarrett/filterlists.api.svg)](https://hub.docker.com/r/collinbarrett/filterlists.api)
+<p align="center"><a href="https://github.com/collinbarrett/FilterLists/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" /></a>
+<a href="https://builtwithdot.net/project/125/filterlists"><img src="https://builtwithdot.net/project/125/filterlists/badge" alt="BuiltWithDot.Net shield" /></a>
+<a href="https://beerpay.io/collinbarrett/FilterLists"><img src="https://beerpay.io/collinbarrett/FilterLists/badge.svg?style=beer-square" alt="Beerpay" /></a>
+<a href="https://beerpay.io/collinbarrett/FilterLists?focus=wish"><img src="https://beerpay.io/collinbarrett/FilterLists/make-wish.svg?style=flat-square" alt="Beerpay" /></a></p>
 
-[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://filterlists.com/)
-[![Azure DevOps builds](https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/12.svg)](https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=12)
-[![Azure DevOps releases](https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/4/5.svg)](https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=4)
-[![Docker Pulls](https://img.shields.io/docker/pulls/collinbarrett/filterlists.web.svg)](https://hub.docker.com/r/collinbarrett/filterlists.web)
+<p align="center"><a href="https://filterlists.com/api/v1/lists"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=API" alt="API" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=3"><img src="https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/3.svg" alt="Azure DevOps builds" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=3"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4.svg" alt="Azure DevOps releases" /></a>
+<a href="https://hub.docker.com/r/collinbarrett/filterlists.api"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.api.svg" alt="Docker Pulls" /></a></p>
 
-FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.
+<p align="center"><a href="https://filterlists.com/"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=12"><img src="https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/12.svg" alt="Azure DevOps builds" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=4"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/4/5.svg" alt="Azure DevOps releases" /></a>
+<a href="https://hub.docker.com/r/collinbarrett/filterlists.web"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.web.svg" alt="Docker Pulls" /></a></p>
 
 # Background
 
