@@ -6706,5 +6706,21 @@
   {
     "filterListId": 1574,
     "tagId": 29
-  }  
+  },
+  {
+    "filterListId": 1575,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1575,
+    "tagId": 19
+  },
+  {
+    "filterListId": 1576,
+    "tagId": 18
+  },
+  {
+    "filterListId": 1576,
+    "tagId": 27
+  }
 ]
