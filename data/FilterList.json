@@ -4520,7 +4520,7 @@
     "licenseId": 2,
     "name": "All-in-One Customized Adblock List",
     "publishedDate": "2018-02-17T00:00:00",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2019-04-14T19:02:57",
     "viewUrl": "https://raw.githubusercontent.com/hl2guide/All-in-One-Customized-Adblock-List/master/deanoman-adblocklist.txt"
   },
@@ -16914,5 +16914,37 @@
     "name": "Yet another small hosts file",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/mtxadmin/ublock/master/hosts.txt"
-  },  
+  },
+  {
+    "id": 1575,
+    "description": "Do you wish to remove distracting buttons, Amazon Prime features, and display more chat comments at once, all at the same time? Then this list is your dream come true.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Twitch: Even More Pure Viewing Experience",
+    "syntaxId": 21,
+    "publishedDate": "2019-05-11T13:00:00",
+    "updatedDate": "2019-05-11T13:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchEvenMorePureViewingExperience.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TwitchEvenMorePureViewingExperience.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TwitchEvenMorePureViewingExperience.txt"
+  },
+  {
+    "id": 1576,
+    "description": "This list is a proof-of-concept for Nano and uBO only (Not AdGuard), which aims to replace websites' custom cursors with the default OS cursor.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-'Custom cursors' List",
+    "syntaxId": 4,
+    "publishedDate": "2019-05-11T13:00:00",
+    "updatedDate": "2019-05-11T13:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Custom%20cursors'%20List.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Custom%20cursors'%20List.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Custom%20cursors'%20List.txt"
+  }
 ]
