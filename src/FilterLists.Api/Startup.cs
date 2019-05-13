@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using FilterLists.Api.DependencyInjection.Extensions;
+﻿using FilterLists.Api.DependencyInjection.Extensions;
 using FilterLists.Services.DependencyInjection.Extensions;
 using JetBrains.Annotations;
 using Microsoft.AspNetCore.Builder;
@@ -29,22 +28,14 @@ namespace FilterLists.Api
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
-            {
                 app.UseDeveloperExceptionPage();
-            }
             else
-            {
                 app.UseExceptionHandler("/Error");
-                app.UseHsts();
-            }
-
             app.UseForwardedHeaders(new ForwardedHeadersOptions
             {
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
             });
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseCookiePolicy();
             app.UseMvc();
         }
     }
