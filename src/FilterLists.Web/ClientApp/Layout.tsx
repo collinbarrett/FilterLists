@@ -45,8 +45,8 @@ const GitHubLink = () =>
     </a>;
 
 const ApiLink = () =>
-    <a href="/api/docs/index.html"
-       title="API Swagger docs">
+    <a href="/api/v1/lists"
+       title="API lists endpoint">
         API
     </a>;
 
