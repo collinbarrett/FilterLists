@@ -7095,15 +7095,15 @@
   },
   {
     "id": 670,
-    "description": "A version of the Norwegian filter list for Little Snitch. It currently doesn't see much work done on it, as the maintainer does not have a Mac to test it with.",
+    "description": "A version of the Nordic filter list for Little Snitch. It currently doesn't see much work done on it, as the maintainer does not have a Mac to test it with.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 10,
-    "name": "Dandelion Sprout's Norwegian Filters for Tidier Websites (Little Snitch)",
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (Little Snitch)",
     "syntaxId": 18,
-    "updatedDate": "2018-09-30T04:23:50",
+    "updatedDate": "2019-05-02T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules"
@@ -16946,5 +16946,26 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Custom%20cursors'%20List.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Custom%20cursors'%20List.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Custom%20cursors'%20List.txt"
+  },
+  {
+    "id": 1577,
+    "donateUrl": "https://opencollective.com/adnauseam",
+    "homeUrl": "https://github.com/dhowe/uAssets",
+    "issuesUrl": "https://github.com/dhowe/uAssets/issues",
+    "licenseId": 4,
+    "name": "AdNauseam Filters",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/dhowe/uAssets/master/filters/adnauseam.txt"
+  },
+  {
+    "id": 1578,
+    "description": "This is a long list of domains accociated with facebook taken from https://github.com/jmdugan/blocklists",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/fabianmoronzirfas/block-facebook/master/block-facebook.lsrules",
+    "homeUrl": "https://github.com/fabianmoronzirfas/block-facebook",
+    "issuesUrl": "https://github.com/fabianmoronzirfas/block-facebook/issues",
+    "licenseId": 28,
+    "name": "Little Snitch Block Facebook Rule Set",
+    "syntaxId": 18,
+    "viewUrl": "https://raw.githubusercontent.com/fabianmoronzirfas/block-facebook/master/block-facebook.lsrules"
   }
 ]

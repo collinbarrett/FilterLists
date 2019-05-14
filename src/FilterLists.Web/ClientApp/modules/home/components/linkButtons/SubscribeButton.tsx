@@ -30,14 +30,23 @@ if (props.url.indexOf(".tpl") > 0)
 } else if (props.url.indexOf(".lsrules") > 0)
 {
     href = `x-littlesnitch:subscribe-rules?url=${encodeURIComponent(props.url)}`;
+} else if (props.url.indexOf("?hostformat=littlesnitch") > 0)
+{
+    href = `x-littlesnitch:subscribe-rules?url=${encodeURIComponent(props.url)}`;
 } else {
     href = `abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${hrefTitle}`;
 };
+    
+    
+    
     let title;
 if (props.url.indexOf(".tpl") > 0) 
 {
     title = `${titlePrefix}Subscribe to ${props.name} with Internet Explorer's Tracking Protection List feature.`;
 } else if (props.url.indexOf(".lsrules") > 0)
+{
+    title = `${titlePrefix}Subscribe to ${props.name} with Little Snitch's rule group subscription feature.`;
+} else if (props.url.indexOf("?hostformat=littlesnitch") > 0)
 {
     title = `${titlePrefix}Subscribe to ${props.name} with Little Snitch's rule group subscription feature.`;
 } else {
