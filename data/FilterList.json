@@ -16946,5 +16946,26 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Custom%20cursors'%20List.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Custom%20cursors'%20List.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Custom%20cursors'%20List.txt"
+  },
+  {
+    "id": 1577,
+    "donateUrl": "https://opencollective.com/adnauseam",
+    "homeUrl": "https://github.com/dhowe/uAssets",
+    "issuesUrl": "https://github.com/dhowe/uAssets/issues",
+    "licenseId": 4,
+    "name": "AdNauseam Filters",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/dhowe/uAssets/master/filters/adnauseam.txt"
+  },
+  {
+    "id": 1578,
+    "description": "This is a long list of domains accociated with facebook taken from https://github.com/jmdugan/blocklists",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/fabianmoronzirfas/block-facebook/master/block-facebook.lsrules",
+    "homeUrl": "https://github.com/fabianmoronzirfas/block-facebook",
+    "issuesUrl": "https://github.com/fabianmoronzirfas/block-facebook/issues",
+    "licenseId": 28,
+    "name": "Little Snitch Block Facebook Rule Set",
+    "syntaxId": 18,
+    "viewUrl": "https://raw.githubusercontent.com/fabianmoronzirfas/block-facebook/master/block-facebook.lsrules"
   }
 ]
