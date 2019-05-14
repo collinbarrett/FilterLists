@@ -200,5 +200,12 @@
     "homeUrl": "https://github.com/AdguardTeam/AdGuardHome",
     "isAbpSubscribable": false,
     "name": "AdGuard Home"
+  },
+  {
+    "id": 32,
+    "downloadUrl": "https://adnauseam.io/",
+    "homeUrl": "https://adnauseam.io/",
+    "isAbpSubscribable": true,
+    "name": "AdNauseam"
   }
 ]
