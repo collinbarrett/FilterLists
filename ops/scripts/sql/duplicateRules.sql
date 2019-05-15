@@ -1,0 +1,4 @@
+SELECT Raw, COUNT(*) 'Count'
+FROM rules
+GROUP BY Raw COLLATE utf8mb4_bin
+HAVING COUNT > 1;
