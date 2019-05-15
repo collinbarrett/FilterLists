@@ -14,6 +14,8 @@ services:
       - api
     volumes:
       - ./ops/nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./ops/nginx/svr-includes:/etc/nginx/svr-includes:ro
+      - ~/cert:/etc/nginx/cert:ro
 
   web:
     image: collinbarrett/filterlists.web:latest
