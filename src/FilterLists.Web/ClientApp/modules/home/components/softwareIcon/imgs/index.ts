@@ -28,6 +28,7 @@ import img28 from "./28-personalDNSfilter.svg";
 import img29 from "./29-Unbound.png";
 import img30 from "./30-BIND.png";
 import img31 from "./31-AdGuard-Home.png";
+import img32 from "./32-AdNauseam.png";
 
 export {
     img1,
@@ -59,5 +60,6 @@ export {
     img28,
     img29,
     img30,
-    img31
+    img31,
+    img32
     };

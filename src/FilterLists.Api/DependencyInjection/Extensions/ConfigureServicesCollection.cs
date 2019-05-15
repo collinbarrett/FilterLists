@@ -1,13 +1,9 @@
-﻿using System;
-using System.IO;
-using Microsoft.ApplicationInsights.Extensibility.Implementation;
+﻿using Microsoft.ApplicationInsights.Extensibility.Implementation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.PlatformAbstractions;
 using Newtonsoft.Json;
-using Swashbuckle.AspNetCore.Swagger;
 
 namespace FilterLists.Api.DependencyInjection.Extensions
 {
@@ -21,7 +17,6 @@ namespace FilterLists.Api.DependencyInjection.Extensions
             services.AddMvcCustom();
             services.AddRoutingCustom();
             services.AddApiVersioning();
-            services.AddSwaggerGenCustom();
             TelemetryDebugWriter.IsTracingDisabled = true;
         }
 
@@ -43,35 +38,5 @@ namespace FilterLists.Api.DependencyInjection.Extensions
 
         private static void AddRoutingCustom(this IServiceCollection services) =>
             services.AddRouting(opts => opts.LowercaseUrls = true);
-
-        private static void AddSwaggerGenCustom(this IServiceCollection services) =>
-            services.AddSwaggerGen(opts =>
-            {
-                opts.SwaggerDoc("v1",
-                    new Info
-                    {
-                        Title = "FilterLists API",
-                        Version = "v1",
-                        Description =
-                            "An API for FilterLists, the independent, comprehensive directory of all public filter and hosts lists for advertisements, trackers, malware, and annoyances." +
-                            Environment.NewLine +
-                            "Home: https://filterlists.com" +
-                            Environment.NewLine +
-                            "Data Model Docs: https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar",
-                        Contact =
-                            new Contact
-                            {
-                                Url = "https://github.com/collinbarrett/FilterLists/",
-                                Name = "FilterLists - GitHub"
-                            },
-                        License = new License
-                        {
-                            Name = "MIT License",
-                            Url = "https://github.com/collinbarrett/FilterLists/blob/master/LICENSE"
-                        }
-                    });
-                opts.IncludeXmlComments(Path.Combine(PlatformServices.Default.Application.ApplicationBasePath,
-                    "FilterLists.Api.xml"));
-            });
     }
 }

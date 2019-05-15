@@ -35,7 +35,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
             services.TryAddScoped<SyntaxService>();
             services.TryAddScoped<TagService>();
             services.TryAddScoped<RuleService>();
-            services.AddAutoMapper();
+            services.AddAutoMapper(typeof(Service));
         }
 
         public static void AddFilterListsAgentServices(this IServiceCollection services, IConfiguration config)
@@ -48,7 +48,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
             services.TryAddScoped<GitHubService>();
             services.TryAddScoped<SnapshotService>();
             services.TryAddScoped<Logger>();
-            services.AddAutoMapper();
+            services.AddAutoMapper(typeof(Service));
         }
     }
 }
