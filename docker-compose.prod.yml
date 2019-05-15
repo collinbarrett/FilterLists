@@ -1,8 +1,0 @@
-version: "3.7"
-
-networks:
-  # https://github.com/collinbarrett/wp-host-on-containers/blob/master/docker-compose.nginx.yml
-  reverse-proxy:
-    external:
-      name: wp-host_reverse-proxy
-      
