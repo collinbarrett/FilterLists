@@ -16967,5 +16967,31 @@
     "name": "Little Snitch Block Facebook Rule Set",
     "syntaxId": 18,
     "viewUrl": "https://raw.githubusercontent.com/fabianmoronzirfas/block-facebook/master/block-facebook.lsrules"
+  },
+  {
+    "id": 1579,
+    "description": "Originally made as a proof-of-concept to see how few entries that a modern-day adblocker would need to block ads, this list aims for at least 90% of EasyList's coverage with less than 0.1% as many entries.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Extremely Condensed Adblocking List",
+    "syntaxId": 3,
+    "publishedDate": "2019-05-15T00:00:00",
+    "updatedDate": "2019-05-17T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ExtremelyCondensedList.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/ExtremelyCondensedList.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ExtremelyCondensedList.txt"
+  },
+  {
+    "id": 1580,
+    "description": "This is an unofficial adaption to Nano Adblocker only, of certain entries that are otherwise not present in the official adblocker version of I Don't Care About Cookies, but which are part of the extension version's 'common6.js' file.",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 4,
+    "name": "I Don't Care about Cookies Nano expansion",
+    "syntaxId": 12,
+    "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/ThirdPartyPrivileged/IDCACnano.txt"
   }
 ]
