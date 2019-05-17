@@ -715,5 +715,11 @@
     "id": 135,
     "homeUrl": "https://github.com/CitizenXVIL",
     "name": "CitizenXVIL"
+  },
+  {
+    "id": 136,
+    "emailAddress": "author@i-dont-care-about-cookies.eu",
+    "homeUrl": "https://www.i-dont-care-about-cookies.eu/",
+    "name": "Daniel Kladnik"
   }
 ]
