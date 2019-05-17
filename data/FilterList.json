@@ -16989,9 +16989,9 @@
     "description": "This list is a proof-of-concept for Nano and uBO only (Not AdGuard), which aims to replace websites' custom cursors with the default OS cursor.",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 10,
+    "licenseId": 4,
     "name": "I Don't Care about Cookies Nano expansion",
-    "syntaxId": 4,
+    "syntaxId": 12,
     "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/ThirdPartyPrivileged/IDCACnano.txt"
   }
 ]
