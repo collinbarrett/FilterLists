@@ -197,7 +197,7 @@
     "licenseId": 10,
     "name": "Dandelion Sprout's Nordic Filters for Tidier Websites",
     "publishedDate": "2018-05-15T02:39:19",
-    "syntaxId": 3,
+    "syntaxId": 17,
     "updatedDate": "2019-04-08T01:41:02",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianList.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianList.txt",
@@ -16994,5 +16994,37 @@
     "name": "I Don't Care about Cookies Nano expansion",
     "syntaxId": 12,
     "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/ThirdPartyPrivileged/IDCACnano.txt"
+  },
+  {
+    "id": 1581,
+    "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO users should use the regular version instead.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (for AdGuard)",
+    "publishedDate": "2019-05-17T00:00:00",
+    "syntaxId": 6,
+    "updatedDate": "2019-05-17T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuard.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuard.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuard.txt"
+  },
+  {
+    "id": 1582,
+    "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO and AdGuard users should use the other versions instead.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (for AdBlock and Adblock Plus)",
+    "publishedDate": "2019-05-17T00:00:00",
+    "syntaxId": 3,
+    "updatedDate": "2019-05-17T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP.txt"
   }
 ]
