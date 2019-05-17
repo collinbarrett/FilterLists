@@ -16986,7 +16986,7 @@
   },
   {
     "id": 1580,
-    "description": "This list is a proof-of-concept for Nano and uBO only (Not AdGuard), which aims to replace websites' custom cursors with the default OS cursor.",
+    "description": "This is an unofficial adaption to Nano Adblocker only, of certain entries that are otherwise not present in the official adblocker version of I Don't Care About Cookies, but which are part of the extension version's 'common6.js' file.",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 4,
