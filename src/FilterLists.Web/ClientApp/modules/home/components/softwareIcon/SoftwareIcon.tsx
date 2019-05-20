@@ -30,7 +30,9 @@ import {
     img29,
     img30,
     img31,
-    img32
+    img32,
+    img33,
+    img34
 } from "./imgs";
 
 interface IProps {
@@ -82,4 +84,6 @@ const icons: { [id: number]: IIcon; } = {
     30: { image: img30, imageTitle: "BIND" },
     31: { image: img31, imageTitle: "AdGuard Home" },
     32: { image: img32, imageTitle: "AdNauseam" },
+    33: { image: img33, imageTitle: "Legacy Unix derivatives" },
+    34: { image: img34, imageTitle: "Windows command line" },
 };

@@ -29,6 +29,8 @@ import img29 from "./29-Unbound.png";
 import img30 from "./30-BIND.png";
 import img31 from "./31-AdGuard-Home.png";
 import img32 from "./32-AdNauseam.png";
+import img33 from "./33-Legacy-Unix-Derivatives.png";
+import img34 from "./34-Windows-command-line.png";
 
 export {
     img1,
@@ -61,5 +63,7 @@ export {
     img29,
     img30,
     img31,
-    img32
+    img32,
+    img33,
+    img34
     };
