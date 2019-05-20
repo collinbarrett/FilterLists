@@ -207,5 +207,15 @@
     "homeUrl": "https://adnauseam.io/",
     "isAbpSubscribable": true,
     "name": "AdNauseam"
+  },
+  {
+    "id": 33,
+    "isAbpSubscribable": false,
+    "name": "Legacy Unix derivatives"
+  },
+  {
+    "id": 34,
+    "isAbpSubscribable": false,
+    "name": "Windows command line"
   }
 ]
