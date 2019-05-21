@@ -6814,5 +6814,21 @@
   {
     "filterListId": 1589,
     "tagId": 6
+  },
+  {
+    "filterListId": 1590,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1591,
+    "tagId": 15
+  },
+  {
+    "filterListId": 1591,
+    "tagId": 19
+  },
+  {
+    "filterListId": 1592,
+    "tagId": 15
   }
 ]
