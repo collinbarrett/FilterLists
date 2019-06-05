@@ -2578,17 +2578,6 @@
     "viewUrl": "https://ideone.com/plain/K452p"
   },
   {
-    "id": 219,
-    "description": "Prevention behavior tracking by the site administrator.",
-    "descriptionSourceUrl": "https://blogram.net/2010/04/23/adblock/",
-    "homeUrl": "https://blogram.net/2010/04/23/adblock/",
-    "licenseId": 5,
-    "name": "BLOGRAM Analysis Block Filter List for Japan",
-    "syntaxId": 3,
-    "updatedDate": "2014-11-19T00:00:00",
-    "viewUrl": "https://blogram.net/wp-content/uploads/easylist3.txt"
-  },
-  {
     "id": 220,
     "description": "Blocks Korean regional advertisements and trackers.",
     "homeUrl": "https://code.google.com/archive/p/adblock-korea/",
