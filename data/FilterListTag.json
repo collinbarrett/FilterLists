@@ -6397,7 +6397,7 @@
   },
   {
     "filterListId": 1535,
-    "tagId": 15
+    "tagId": 27
   },
   {
     "filterListId": 1536,
@@ -6742,5 +6742,17 @@
   {
     "filterListId": 1592,
     "tagId": 15
+  },
+  {
+    "filterListId": 1593,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1593,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1593,
+    "tagId": 9
   }
 ]
