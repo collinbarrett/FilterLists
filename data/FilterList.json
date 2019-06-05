@@ -13,13 +13,13 @@
   {
     "id": 2,
     "description": "Mute is an AdBlock Plus filter for user comments. In the same way that AdBlock hides ads, AdBlock can use this filter to hide user-generated comments, allowing you to browse the Internet with less stupidity clawing at your eyeballs.",
-    "descriptionSourceUrl": "https://mute.bradconte.com/",
-    "homeUrl": "https://mute.bradconte.com/",
+    "descriptionSourceUrl": "https://github.com/B-Con/mute",
+    "homeUrl": "https://github.com/B-Con/mute",
     "issuesUrl": "https://github.com/B-Con/mute/issues",
     "licenseId": 2,
     "name": "Mute",
     "syntaxId": 3,
-    "viewUrl": "https://mute.bradconte.com/mute.txt"
+    "viewUrl": "https://raw.githubusercontent.com/B-Con/mute/master/mute.txt"
   },
   {
     "id": 3,
