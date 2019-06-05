@@ -3831,18 +3831,6 @@
     "viewUrl": "https://raw.githubusercontent.com/bjornstar/hosts/master/hosts"
   },
   {
-    "id": 326,
-    "description": "Hostfiles for adblocking / privacy reasons.",
-    "descriptionSourceUrl": "https://github.com/monojp/hosts_merge/blob/master/README.md",
-    "homeUrl": "https://github.com/monojp/hosts_merge",
-    "issuesUrl": "https://github.com/monojp/hosts_merge/issues",
-    "licenseId": 5,
-    "name": "Monojp's Hosts",
-    "syntaxId": 2,
-    "updatedDate": "2019-04-13T07:36:10",
-    "viewUrl": "https://hosts.herndl.org/hosts_blacklist.txt"
-  },
-  {
     "id": 327,
     "description": "Removes \"Download Our App\" banners from mobile website versions, for those who prefer their phone web browsers instead of apps.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
