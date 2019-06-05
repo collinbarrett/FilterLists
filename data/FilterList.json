@@ -5572,23 +5572,6 @@
     "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/unified/formats/hosts.txt"
   },
   {
-    "id": 488,
-    "chatUrl": "https://t.me/EnergizedProtection",
-    "description": "Energized Ultimate Social Blocking.",
-    "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
-    "donateUrl": "https://energized.pro/support",
-    "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
-    "homeUrl": "https://energized.pro",
-    "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
-    "name": "Energized Social Protection - Extension",
-    "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 1,
-    "updatedDate": "2018-09-21T04:00:39",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-social-hosts"
-  },
-  {
     "id": 489,
     "chatUrl": "https://t.me/EnergizedProtection",
     "description": "Energized Porn Lite Blocking.",
