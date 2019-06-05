@@ -13,13 +13,13 @@
   {
     "id": 2,
     "description": "Mute is an AdBlock Plus filter for user comments. In the same way that AdBlock hides ads, AdBlock can use this filter to hide user-generated comments, allowing you to browse the Internet with less stupidity clawing at your eyeballs.",
-    "descriptionSourceUrl": "https://mute.bradconte.com/",
-    "homeUrl": "https://mute.bradconte.com/",
+    "descriptionSourceUrl": "https://github.com/B-Con/mute",
+    "homeUrl": "https://github.com/B-Con/mute",
     "issuesUrl": "https://github.com/B-Con/mute/issues",
     "licenseId": 2,
     "name": "Mute",
     "syntaxId": 3,
-    "viewUrl": "https://mute.bradconte.com/mute.txt"
+    "viewUrl": "https://raw.githubusercontent.com/B-Con/mute/master/mute.txt"
   },
   {
     "id": 3,
@@ -2051,21 +2051,6 @@
     "viewUrl": "http://rlwpx.free.fr/WPFF/hmis.7z"
   },
   {
-    "id": 174,
-    "description": "Blockzilla is an optimized and slim list. Light on system resources yet still powerful against ads and trackers.",
-    "descriptionSourceUrl": "https://github.com/zpacman/Blockzilla",
-    "homeUrl": "https://blockzilla.jimdo.com/",
-    "issuesUrl": "https://github.com/zpacman/Blockzilla/issues",
-    "licenseId": 5,
-    "name": "Blockzilla",
-    "publishedDate": "2016-09-14T22:11:37",
-    "syntaxId": 1,
-    "updatedDate": "2019-02-03T09:44:30",
-    "viewUrl": "https://raw.githubusercontent.com/zpacman/Blockzilla/master/Blockzilla.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/zpacman/Blockzilla/master/Blockzilla.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/zpacman/Blockzilla/master/Blockzilla.txt"
-  },
-  {
     "id": 175,
     "description": "Adblock / Adblock plus filter list for blocking cookie notifications.",
     "descriptionSourceUrl": "https://github.com/r4vi/block-the-eu-cookie-shit-list",
@@ -2593,17 +2578,6 @@
     "viewUrl": "https://ideone.com/plain/K452p"
   },
   {
-    "id": 219,
-    "description": "Prevention behavior tracking by the site administrator.",
-    "descriptionSourceUrl": "https://blogram.net/2010/04/23/adblock/",
-    "homeUrl": "https://blogram.net/2010/04/23/adblock/",
-    "licenseId": 5,
-    "name": "BLOGRAM Analysis Block Filter List for Japan",
-    "syntaxId": 3,
-    "updatedDate": "2014-11-19T00:00:00",
-    "viewUrl": "https://blogram.net/wp-content/uploads/easylist3.txt"
-  },
-  {
     "id": 220,
     "description": "Blocks Korean regional advertisements and trackers.",
     "homeUrl": "https://code.google.com/archive/p/adblock-korea/",
@@ -2734,28 +2708,6 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-15T20:23:13",
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt"
-  },
-  {
-    "id": 230,
-    "description": "Block the DL itself of advertising.",
-    "descriptionSourceUrl": "https://blogram.net/2010/04/23/adblock/",
-    "homeUrl": "https://blogram.net/2010/04/23/adblock/",
-    "licenseId": 5,
-    "name": "BLOGRAM Basic Filter List for Japan",
-    "syntaxId": 3,
-    "updatedDate": "2014-12-13T00:00:00",
-    "viewUrl": "https://blogram.net/wp-content/uploads/easylist2.txt"
-  },
-  {
-    "id": 231,
-    "description": "Hide text ads by CSS.",
-    "descriptionSourceUrl": "https://blogram.net/2010/04/23/adblock/",
-    "homeUrl": "https://blogram.net/2010/04/23/adblock/",
-    "licenseId": 5,
-    "name": "BLOGRAM Element Hiding Filter List for Japan",
-    "syntaxId": 3,
-    "updatedDate": "2015-01-10T00:00:00",
-    "viewUrl": "https://blogram.net/wp-content/uploads/easylist1.txt"
   },
   {
     "id": 232,
@@ -3533,17 +3485,6 @@
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch.txt"
   },
   {
-    "id": 296,
-    "description": "For low-spec equipment - Blocks very broadly",
-    "descriptionSourceUrl": "https://blogram.net/2010/04/23/adblock/",
-    "homeUrl": "https://blogram.net/2010/04/23/adblock/",
-    "licenseId": 5,
-    "name": "BLOGRAM Blog Parts Filter List for Japan",
-    "syntaxId": 3,
-    "updatedDate": "2014-11-19T00:00:00",
-    "viewUrl": "https://blogram.net/wp-content/uploads/easylist4.txt"
-  },
-  {
     "id": 297,
     "description": "A list combining EasyList Czech and Slovak and EasyList.",
     "licenseId": 8,
@@ -3888,18 +3829,6 @@
     "syntaxId": 1,
     "updatedDate": "2019-03-11T23:08:11",
     "viewUrl": "https://raw.githubusercontent.com/bjornstar/hosts/master/hosts"
-  },
-  {
-    "id": 326,
-    "description": "Hostfiles for adblocking / privacy reasons.",
-    "descriptionSourceUrl": "https://github.com/monojp/hosts_merge/blob/master/README.md",
-    "homeUrl": "https://github.com/monojp/hosts_merge",
-    "issuesUrl": "https://github.com/monojp/hosts_merge/issues",
-    "licenseId": 5,
-    "name": "Monojp's Hosts",
-    "syntaxId": 2,
-    "updatedDate": "2019-04-13T07:36:10",
-    "viewUrl": "https://hosts.herndl.org/hosts_blacklist.txt"
   },
   {
     "id": 327,
@@ -5643,40 +5572,6 @@
     "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/unified/formats/hosts.txt"
   },
   {
-    "id": 488,
-    "chatUrl": "https://t.me/EnergizedProtection",
-    "description": "Energized Ultimate Social Blocking.",
-    "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
-    "donateUrl": "https://energized.pro/support",
-    "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
-    "homeUrl": "https://energized.pro",
-    "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
-    "name": "Energized Social Protection - Extension",
-    "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 1,
-    "updatedDate": "2018-09-21T04:00:39",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-social-hosts"
-  },
-  {
-    "id": 489,
-    "chatUrl": "https://t.me/EnergizedProtection",
-    "description": "Energized Porn Lite Blocking.",
-    "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
-    "donateUrl": "https://energized.pro/support",
-    "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
-    "homeUrl": "https://energized.pro",
-    "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
-    "name": "Energized Porn Lite Protection - Extension",
-    "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 1,
-    "updatedDate": "2018-09-21T04:16:43",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-porn-hosts"
-  },
-  {
     "id": 490,
     "homeUrl": "https://github.com/CyanideBrother/anti-pr0n",
     "issuesUrl": "https://github.com/CyanideBrother/anti-pr0n/issues",
@@ -7011,16 +6906,6 @@
     "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/filters/social_filters.txt"
   },
   {
-    "id": 662,
-    "homeUrl": "https://github.com/RikoDEV/NoMoreIPLogger-adblock-list",
-    "licenseId": 9,
-    "name": "NoMoreIPLogger List",
-    "publishedDate": "2018-03-17T10:19:16",
-    "syntaxId": 2,
-    "updatedDate": "2018-04-15T06:49:35",
-    "viewUrl": "https://raw.githubusercontent.com/RikoDEV/NoMoreIPLogger-adblock-list/master/list.txt"
-  },
-  {
     "id": 663,
     "homeUrl": "http://nmtrung.com/fmsf-2",
     "issuesUrl": "https://github.com/nmtrung/FMSF-2.0/issues",
@@ -7842,78 +7727,6 @@
     "syntaxId": 3,
     "updatedDate": "2019-03-06T23:00:21",
     "viewUrl": "https://raw.githubusercontent.com/OsborneSystems/Columbia/master/Columbia.txt"
-  },
-  {
-    "id": 737,
-    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
-    "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
-    "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
-    "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
-    "licenseId": 2,
-    "name": "Minimalist Cryptocurrency Filter List",
-    "syntaxId": 4,
-    "updatedDate": "2019-03-27T04:43:09",
-    "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/minimalistcryptocurrencyfilterlist.txt"
-  },
-  {
-    "id": 738,
-    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
-    "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
-    "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
-    "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
-    "licenseId": 2,
-    "name": "Music Filter List",
-    "syntaxId": 4,
-    "updatedDate": "2019-04-16T22:55:12",
-    "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/musicfilterlist.txt"
-  },
-  {
-    "id": 739,
-    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
-    "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
-    "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
-    "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
-    "licenseId": 2,
-    "name": "Resources Filter List",
-    "syntaxId": 4,
-    "updatedDate": "2019-04-16T23:00:11",
-    "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/resourcesfilterlist.txt"
-  },
-  {
-    "id": 740,
-    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
-    "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
-    "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
-    "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
-    "licenseId": 2,
-    "name": "Social Filter List",
-    "syntaxId": 4,
-    "updatedDate": "2019-04-16T23:05:10",
-    "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/socialfilterlist.txt"
-  },
-  {
-    "id": 741,
-    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
-    "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
-    "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
-    "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
-    "licenseId": 2,
-    "name": "Sports Filter List",
-    "syntaxId": 4,
-    "updatedDate": "2019-03-27T04:59:10",
-    "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/sportsfilterlist.txt"
-  },
-  {
-    "id": 742,
-    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
-    "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
-    "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
-    "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
-    "licenseId": 2,
-    "name": "Streaming Filter List",
-    "syntaxId": 4,
-    "updatedDate": "2019-03-27T05:03:09",
-    "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/streamingfilterlist.txt"
   },
   {
     "id": 743,
@@ -9316,40 +9129,6 @@
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Christmas%20carols'%20List.txt"
   },
   {
-    "id": 864,
-    "chatUrl": "https://t.me/EnergizedProtection",
-    "description": "Energized Xtreme Blocking.",
-    "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
-    "donateUrl": "https://energized.pro/support",
-    "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
-    "homeUrl": "https://energized.pro",
-    "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
-    "name": "Energized Xtreme Protection - Extension",
-    "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 1,
-    "updatedDate": "2018-09-21T04:16:43",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-porn-hosts"
-  },
-  {
-    "id": 865,
-    "chatUrl": "https://t.me/EnergizedProtection",
-    "description": "Energized Regional Blocking.",
-    "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
-    "donateUrl": "https://energized.pro/support",
-    "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
-    "homeUrl": "https://energized.pro",
-    "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
-    "name": "Energized Regional Protection - Extension",
-    "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 1,
-    "updatedDate": "2018-09-21T04:16:43",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-porn-hosts"
-  },
-  {
     "id": 866,
     "description": "This aim to block non-formal hosts that serve all Facebook contents and resources from alternative \"Free Basics\" servers that it happen when you're using on mobile data over the carrier that collaborate with Facebook to have THAT service! This list will follow the update after routine check results of dead-hosts.",
     "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/hosts/readme.md",
@@ -9540,16 +9319,6 @@
     "syntaxId": 4,
     "updatedDate": "2019-04-02T00:41:24",
     "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/tamago_filter.txt"
-  },
-  {
-    "id": 880,
-    "emailAddress": "mochifilter@yahoo.co.jp",
-    "homeUrl": "https://pokapoka.shoooter.net/",
-    "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
-    "licenseId": 5,
-    "name": "Yahoo!Japan Filter for Blocking Ads",
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/yahoojapan_wo_tonikaku_filter.txt"
   },
   {
     "id": 881,
@@ -16160,39 +15929,6 @@
     "syntaxId": 8,
     "updatedDate": "2017-07-04T18:55:24",
     "viewUrl": "https://raw.githubusercontent.com/oleksiig/Squid-BlackList/master/denied_ext.conf"
-  },
-  {
-    "id": 1514,
-    "homeUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects",
-    "issuesUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/issues",
-    "licenseId": 2,
-    "name": "mitchellkrogza's Dead Domains",
-    "publishedDate": "2017-09-29T14:15:18",
-    "syntaxId": 8,
-    "updatedDate": "2017-10-05T17:59:50",
-    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/master/DOMAINS-dead.txt"
-  },
-  {
-    "id": 1515,
-    "homeUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects",
-    "issuesUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/issues",
-    "licenseId": 2,
-    "name": "mitchellkrogza's Re-Active Domains",
-    "publishedDate": "2017-09-29T14:15:18",
-    "syntaxId": 8,
-    "updatedDate": "2017-10-03T09:50:12",
-    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/master/DOMAINS-re-active.txt"
-  },
-  {
-    "id": 1516,
-    "homeUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects",
-    "issuesUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/issues",
-    "licenseId": 2,
-    "name": "mitchellkrogza's Whitelisted",
-    "publishedDate": "2017-09-30T07:42:53",
-    "syntaxId": 8,
-    "updatedDate": "2018-04-06T16:09:33",
-    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/master/DOMAINS-whitelist.txt"
   },
   {
     "id": 1517,
