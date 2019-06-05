@@ -7729,18 +7729,6 @@
     "viewUrl": "https://raw.githubusercontent.com/OsborneSystems/Columbia/master/Columbia.txt"
   },
   {
-    "id": 741,
-    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
-    "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
-    "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
-    "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
-    "licenseId": 2,
-    "name": "Sports Filter List",
-    "syntaxId": 4,
-    "updatedDate": "2019-03-27T04:59:10",
-    "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/sportsfilterlist.txt"
-  },
-  {
     "id": 742,
     "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
     "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
