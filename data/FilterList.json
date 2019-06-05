@@ -15931,17 +15931,6 @@
     "viewUrl": "https://raw.githubusercontent.com/oleksiig/Squid-BlackList/master/denied_ext.conf"
   },
   {
-    "id": 1516,
-    "homeUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects",
-    "issuesUrl": "https://github.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/issues",
-    "licenseId": 2,
-    "name": "mitchellkrogza's Whitelisted",
-    "publishedDate": "2017-09-30T07:42:53",
-    "syntaxId": 8,
-    "updatedDate": "2018-04-06T16:09:33",
-    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/CENTRAL-REPO.Dead.Inactive.Whitelisted.Domains.For.Hosts.Projects/master/DOMAINS-whitelist.txt"
-  },
-  {
     "id": 1517,
     "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
     "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
