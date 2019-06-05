@@ -2051,21 +2051,6 @@
     "viewUrl": "http://rlwpx.free.fr/WPFF/hmis.7z"
   },
   {
-    "id": 174,
-    "description": "Blockzilla is an optimized and slim list. Light on system resources yet still powerful against ads and trackers.",
-    "descriptionSourceUrl": "https://github.com/zpacman/Blockzilla",
-    "homeUrl": "https://blockzilla.jimdo.com/",
-    "issuesUrl": "https://github.com/zpacman/Blockzilla/issues",
-    "licenseId": 5,
-    "name": "Blockzilla",
-    "publishedDate": "2016-09-14T22:11:37",
-    "syntaxId": 1,
-    "updatedDate": "2019-02-03T09:44:30",
-    "viewUrl": "https://raw.githubusercontent.com/zpacman/Blockzilla/master/Blockzilla.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/zpacman/Blockzilla/master/Blockzilla.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/zpacman/Blockzilla/master/Blockzilla.txt"
-  },
-  {
     "id": 175,
     "description": "Adblock / Adblock plus filter list for blocking cookie notifications.",
     "descriptionSourceUrl": "https://github.com/r4vi/block-the-eu-cookie-shit-list",
