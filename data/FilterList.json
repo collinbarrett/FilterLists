@@ -6906,16 +6906,6 @@
     "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/filters/social_filters.txt"
   },
   {
-    "id": 662,
-    "homeUrl": "https://github.com/RikoDEV/NoMoreIPLogger-adblock-list",
-    "licenseId": 9,
-    "name": "NoMoreIPLogger List",
-    "publishedDate": "2018-03-17T10:19:16",
-    "syntaxId": 2,
-    "updatedDate": "2018-04-15T06:49:35",
-    "viewUrl": "https://raw.githubusercontent.com/RikoDEV/NoMoreIPLogger-adblock-list/master/list.txt"
-  },
-  {
     "id": 663,
     "homeUrl": "http://nmtrung.com/fmsf-2",
     "issuesUrl": "https://github.com/nmtrung/FMSF-2.0/issues",
