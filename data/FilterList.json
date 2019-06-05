@@ -16932,7 +16932,7 @@
   },
   {
     "id": 1593,
-    "description": "This is a slimmer version of \"Dandelion Sprout's Nordic Filters\" for advanced tech users ONLY! It aims to not whitelist any trackers, but at the cost of some web elements being broken, and the presence of page warnings on aggregate/cashback site links.",
+    "description": "This is a version of \"Dandelion Sprout's Nordic Filters\" for advanced tech users ONLY! It aims to not whitelist any trackers, but at the cost of some web elements being broken, and the presence of page warnings on aggregate/cashback site links.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
