@@ -2174,5 +2174,25 @@
   {
     "filterListId": 1585,
     "languageId": 106
+  },
+  {
+    "filterListId": 1593,
+    "languageId": 44
+  },
+  {
+    "filterListId": 1593,
+    "languageId": 46
+  },
+  {
+    "filterListId": 1593,
+    "languageId": 106
+  },
+  {
+    "filterListId": 1593,
+    "languageId": 137
+  },
+  {
+    "filterListId": 1593,
+    "languageId": 160
   }
 ]
