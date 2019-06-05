@@ -2710,17 +2710,6 @@
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt"
   },
   {
-    "id": 231,
-    "description": "Hide text ads by CSS.",
-    "descriptionSourceUrl": "https://blogram.net/2010/04/23/adblock/",
-    "homeUrl": "https://blogram.net/2010/04/23/adblock/",
-    "licenseId": 5,
-    "name": "BLOGRAM Element Hiding Filter List for Japan",
-    "syntaxId": 3,
-    "updatedDate": "2015-01-10T00:00:00",
-    "viewUrl": "https://blogram.net/wp-content/uploads/easylist1.txt"
-  },
-  {
     "id": 232,
     "description": "Targeting sites with Hoax, propanganda and clickbait (fake sites). Note: List doesn't include harmless spoof/satire sites like theonion.com.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/ryanbr/fanboy-adblock/master/fake-news.txt",
