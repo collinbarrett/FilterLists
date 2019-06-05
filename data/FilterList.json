@@ -3485,17 +3485,6 @@
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch.txt"
   },
   {
-    "id": 296,
-    "description": "For low-spec equipment - Blocks very broadly",
-    "descriptionSourceUrl": "https://blogram.net/2010/04/23/adblock/",
-    "homeUrl": "https://blogram.net/2010/04/23/adblock/",
-    "licenseId": 5,
-    "name": "BLOGRAM Blog Parts Filter List for Japan",
-    "syntaxId": 3,
-    "updatedDate": "2014-11-19T00:00:00",
-    "viewUrl": "https://blogram.net/wp-content/uploads/easylist4.txt"
-  },
-  {
     "id": 297,
     "description": "A list combining EasyList Czech and Slovak and EasyList.",
     "licenseId": 8,
