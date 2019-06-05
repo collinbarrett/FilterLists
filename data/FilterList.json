@@ -2710,17 +2710,6 @@
     "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt"
   },
   {
-    "id": 230,
-    "description": "Block the DL itself of advertising.",
-    "descriptionSourceUrl": "https://blogram.net/2010/04/23/adblock/",
-    "homeUrl": "https://blogram.net/2010/04/23/adblock/",
-    "licenseId": 5,
-    "name": "BLOGRAM Basic Filter List for Japan",
-    "syntaxId": 3,
-    "updatedDate": "2014-12-13T00:00:00",
-    "viewUrl": "https://blogram.net/wp-content/uploads/easylist2.txt"
-  },
-  {
     "id": 231,
     "description": "Hide text ads by CSS.",
     "descriptionSourceUrl": "https://blogram.net/2010/04/23/adblock/",
