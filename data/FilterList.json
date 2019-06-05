@@ -7729,18 +7729,6 @@
     "viewUrl": "https://raw.githubusercontent.com/OsborneSystems/Columbia/master/Columbia.txt"
   },
   {
-    "id": 742,
-    "description": "These are filter lists for uBlock Origin that remove elements from certain websites, making them easier to navigate through without any annoyances.",
-    "descriptionSourceUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin#description",
-    "homeUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin",
-    "issuesUrl": "https://github.com/MrBukLau/filter-lists-for-ublock-origin/issues",
-    "licenseId": 2,
-    "name": "Streaming Filter List",
-    "syntaxId": 4,
-    "updatedDate": "2019-03-27T05:03:09",
-    "viewUrl": "https://raw.githubusercontent.com/MrBukLau/filter-lists-for-ublock-origin/master/filter%20lists/streamingfilterlist.txt"
-  },
-  {
     "id": 743,
     "description": "In this repo I'm keeping all custom filter rules I'm using for the sites I'm typically visit. Some of them are trying to \"mask\" ad or make it \"native\". But this is not what I want to see.",
     "descriptionSourceUrl": "https://github.com/akopachov/uBlock-AK-filter-rules#ublock-filter-rules",
