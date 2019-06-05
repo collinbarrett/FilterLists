@@ -9129,23 +9129,6 @@
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Christmas%20carols'%20List.txt"
   },
   {
-    "id": 865,
-    "chatUrl": "https://t.me/EnergizedProtection",
-    "description": "Energized Regional Blocking.",
-    "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
-    "donateUrl": "https://energized.pro/support",
-    "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
-    "homeUrl": "https://energized.pro",
-    "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
-    "name": "Energized Regional Protection - Extension",
-    "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 1,
-    "updatedDate": "2018-09-21T04:16:43",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/formats/ext-porn-hosts"
-  },
-  {
     "id": 866,
     "description": "This aim to block non-formal hosts that serve all Facebook contents and resources from alternative \"Free Basics\" servers that it happen when you're using on mobile data over the carrier that collaborate with Facebook to have THAT service! This list will follow the update after routine check results of dead-hosts.",
     "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/hosts/readme.md",
@@ -9336,16 +9319,6 @@
     "syntaxId": 4,
     "updatedDate": "2019-04-02T00:41:24",
     "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/tamago_filter.txt"
-  },
-  {
-    "id": 880,
-    "emailAddress": "mochifilter@yahoo.co.jp",
-    "homeUrl": "https://pokapoka.shoooter.net/",
-    "issuesUrl": "https://github.com/eEIi0A5L/adblock_filter/issues",
-    "licenseId": 5,
-    "name": "Yahoo!Japan Filter for Blocking Ads",
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/yahoojapan_wo_tonikaku_filter.txt"
   },
   {
     "id": 881,
