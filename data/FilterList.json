@@ -12312,7 +12312,7 @@
     "description": "The Blocklist to filter Phishing.",
     "homeUrl": "https://phishing.army/",
     "licenseId": 13,
-    "name": "Phishing Army",
+    "name": "Phishing Army Extended",
     "publishedDate": "2017-09-05T08:14:36",
     "syntaxId": 2,
     "updatedDate": "2019-04-16T15:48:12",
@@ -16942,5 +16942,73 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivacy.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivacy.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivacy.txt"
-  }
+  },
+  {
+    "id": 1594,
+    "description": "AntiSocial Blacklist is an extensive collection of potentially malicious domains. We work hard scouring the internet looking for servers that are trying to impersonate common brands and the companies you do business with. Using our data, we then use our cloud platform to protect vulnerable computer users. You may not spot the IDN characters in iCłoud.com or the zero in Micr0Soft.com - But AntiSocial Blacklist will.",
+    "emailAddress": "Contact@TheAntiSocialEngineer.com",
+    "homeUrl": "https://theantisocialengineer.com/blacklist/",
+    "Name": "The AntiSocial Engineer Blacklist",
+    "syntaxid": 2,
+    "viewUrl": "https://theantisocialengineer.com/AntiSocial_Blacklist_Community_V1.txt"
+},
+{
+    "id": 1595,
+    "description": "The Blocklist to filter Phishing.",
+    "homeUrl": "https://phishing.army/",
+    "Name": "Phishing Army",
+    "syntaxid": 2,
+    "viewUrl": "https://phishing.army/download/phishing_army_blocklist.txt",
+    "licenseid": 13
+},
+{
+    "id": 1596,
+    "Name": "De Hakkelaar's Cryptojacking Campaign List",
+    "syntaxid": 2,
+    "viewUrl": "https://dehakkelaar.nl/lists/cryptojacking_campaign.list.txt"
+},
+{
+    "id": 1597,
+    "description": "Introducing the Amazing/Sensational/Remarkable/Revolutionary; #1 Blocklist :)",
+    "donateUrl": "https://paypal.me/sjhgvr",
+    "homeUrl": "https://redd.it/bppug1",
+    "Name": "OISD",
+    "syntaxid": 2,
+    "viewUrl": "https://dbl.oisd.nl/",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dbl.txt",
+    "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/dbl.txt"
+},
+{
+    "id": 1598,
+    "description": "Introducing the Amazing/Sensational/Remarkable/Revolutionary; #1 Blocklist :)",
+    "donateUrl": "https://paypal.me/sjhgvr",
+    "homeUrl": "https://redd.it/bppug1",
+    "Name": "OISD (Hosts)",
+    "syntaxid": 1,
+    "viewUrl": "http://hosts.oisd.nl/",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dblzero.txt",
+    "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/dblzero.txt"
+},
+{
+    "id": 1599,
+    "description": "Introducing the Amazing/Sensational/Remarkable/Revolutionary; #1 Blocklist :)",
+    "donateUrl": "https://paypal.me/sjhgvr",
+    "homeUrl": "https://redd.it/bppug1",
+    "Name": "OISD Mobile",
+    "syntaxid": 2,
+    "viewUrl": "https://dblmobile.oisd.nl/",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dbl2.txt",
+    "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/dbl2.txt"
+},
+{
+    "id": 1600,
+    "description": "Introducing the Amazing/Sensational/Remarkable/Revolutionary; #1 Blocklist :)",
+    "donateUrl": "https://paypal.me/sjhgvr",
+    "homeUrl": "https://redd.it/bppug1",
+    "Name": "OISD Mobile (Hosts)",
+    "syntaxid": 1,
+    "viewUrl": "https://hostsmobile.oisd.nl/",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/hostsmobile.txt",
+    "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/hostsmobile.txt"
+}
 ]
