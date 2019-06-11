@@ -4519,15 +4519,15 @@
   {
     "id": 381,
     "description": "Saving the Internets... one roll at a time.",
-    "descriptionSourceUrl": "http://rickrolldb.com/",
-    "homeUrl": "http://rickrolldb.com/",
+    "descriptionSourceUrl": "https://rickrolldb.com/",
+    "homeUrl": "https://rickrolldb.com/",
     "issuesUrl": "https://github.com/jamiew/rickrolldb/issues",
     "licenseId": 5,
     "name": "Rickroll Blacklist",
-    "submissionUrl": "http://rickrolldb.com/",
+    "submissionUrl": "https://rickrolldb.com/",
     "syntaxId": 3,
     "updatedDate": "2019-03-25T11:34:09",
-    "viewUrl": "http://rickrolldb.com/ricklist.txt"
+    "viewUrl": "https://rickrolldb.com/ricklist.txt"
   },
   {
     "id": 382,
@@ -8408,7 +8408,8 @@
     "name": "NLblock",
     "syntaxId": 3,
     "updatedDate": "2014-12-15T00:00:00",
-    "viewUrl": "http://www.verzijlbergh.com/adblock/nlblock.txt"
+    "viewUrl": "https://www.ergensin.nl/adblock/nlblock.txt",
+    "viewUrlMirror1": "http://www.verzijlbergh.com/adblock/nlblock.txt"
   },
   {
     "id": 810,
@@ -15518,7 +15519,7 @@
     "licenseId": 5,
     "name": "AdHell Standard",
     "syntaxId": 1,
-    "viewUrl": "http://getadhell.com/standard-package.txt"
+    "viewUrl": "https://getadhell.com/standard-package.txt"
   },
   {
     "id": 1472,
@@ -15720,7 +15721,7 @@
     "homeUrl": "http://www.carl.net",
     "licenseId": 11,
     "name": "Carl's Spam List",
-    "viewUrl": "http://www.carl.net/spam/access.txt"
+    "viewUrl": "https://www.carl.net/spam/access.txt"
   },
   {
     "id": 1495,
@@ -15777,12 +15778,12 @@
   },
   {
     "id": 1500,
-    "homeUrl": "http://cybercrime-tracker.net",
+    "homeUrl": "https://cybercrime-tracker.net",
     "licenseId": 5,
     "name": "Cybercrime List",
     "syntaxId": 8,
     "updatedDate": "2019-04-21T04:48:12",
-    "viewUrl": "http://cybercrime-tracker.net/all.php"
+    "viewUrl": "https://cybercrime-tracker.net/all.php"
   },
   {
     "id": 1501,
@@ -15862,7 +15863,7 @@
     "name": "DGA domains",
     "syntaxId": 2,
     "updatedDate": "2019-04-21T05:16:10",
-    "viewUrl": "http://osint.bambenekconsulting.com/feeds/dga-feed.txt"
+    "viewUrl": "https://osint.bambenekconsulting.com/feeds/dga-feed.txt"
   },
   {
     "id": 1508,
@@ -16985,7 +16986,7 @@
     "homeUrl": "https://redd.it/bppug1",
     "Name": "OISD (Hosts)",
     "syntaxid": 1,
-    "viewUrl": "http://hosts.oisd.nl/",
+    "viewUrl": "https://hosts.oisd.nl/",
     "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dblzero.txt",
     "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/dblzero.txt"
 },
@@ -17010,5 +17011,15 @@
     "viewUrl": "https://hostsmobile.oisd.nl/",
     "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/hostsmobile.txt",
     "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/hostsmobile.txt"
+},
+{
+    "id": 1601,
+    "description": "Currently blocking ad serving and malware domains.",
+    "donateUrl": "https://paypal.me/sjhgvr",
+    "homeUrl": "https://github.com/joeylane/hosts",
+    "issuesUrl": "https://github.com/joeylane/hosts/issues",
+    "Name": "Joey Lane's Hosts",
+    "syntaxid": 1,
+    "viewUrl": "https://raw.githubusercontent.com/joeylane/hosts/master/hosts"
 }
 ]
