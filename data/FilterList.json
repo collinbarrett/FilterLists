@@ -17021,5 +17021,14 @@
     "Name": "Joey Lane's Hosts",
     "syntaxid": 1,
     "viewUrl": "https://raw.githubusercontent.com/joeylane/hosts/master/hosts"
+},
+{
+    "id": 1602,
+    "description": "A blocklist for app promotion on Chinese websites",
+    "homeUrl": "https://github.com/HankAviator/app-ads-blocklist-china",
+    "issuesUrl": "https://github.com/HankAviator/app-ads-blocklist-china/issues",
+    "Name": "App ads blocklist China",
+    "syntaxid": 4,
+    "viewUrl": "https://raw.githubusercontent.com/HankAviator/app-ads-blocklist-china/master/app_blocklist.txt"
 }
 ]
