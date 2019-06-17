@@ -17030,5 +17030,18 @@
     "Name": "App ads blocklist China",
     "syntaxid": 4,
     "viewUrl": "https://raw.githubusercontent.com/HankAviator/app-ads-blocklist-china/master/app_blocklist.txt"
+},
+{
+    "id": 1603,
+    "description": "A block list of malicious URLs that are being used for malware distribution. This is a lite version by including online URLs only",
+    "descriptionSourceUrl": "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
+    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "licenseId": 28,
+    "name": "abuse.ch URLhaus Online Malicious URL Blocklist",
+    "syntaxId": 2,
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
+    "viewUrlMirror1": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
+    "viewUrlMirror2": "https://cdn.staticaly.com/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt"
 }
 ]
