@@ -10,7 +10,7 @@ services:
     networks:
       - test-data
     depends_on:
-      mariadb:
+      - mariadb
 
   mariadb:
     image: mariadb:10
