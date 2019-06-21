@@ -200,10 +200,6 @@
     "syntaxId": 9
   },
   {
-    "softwareId": 32,
-    "syntaxId": 9
-  },
-  {
     "softwareId": 16,
     "syntaxId": 10
   },
@@ -214,6 +210,10 @@
   {
     "softwareId": 5,
     "syntaxId": 12
+  },
+  {
+    "softwareId": 32,
+    "syntaxId": 9
   },
   {
     "softwareId": 1,
@@ -280,10 +280,6 @@
     "syntaxId": 17
   },
   {
-    "softwareId": 32,
-    "syntaxId": 17
-  },
-  {
     "softwareId": 20,
     "syntaxId": 18
   },
@@ -294,6 +290,10 @@
   {
     "softwareId": 23,
     "syntaxId": 20
+  },
+  {
+    "softwareId": 32,
+    "syntaxId": 17
   },
   {
     "softwareId": 1,
@@ -320,10 +320,6 @@
     "syntaxId": 22
   },
   {
-    "softwareId": 33,
-    "syntaxId": 23
-  },
-  {
     "softwareId": 29,
     "syntaxId": 24
   },
@@ -334,10 +330,6 @@
   {
     "softwareId": 30,
     "syntaxId": 26
-  },
-  {
-    "softwareId": 34,
-    "syntaxId": 27
   },
   {
     "softwareId": 1,
@@ -370,5 +362,13 @@
   {
     "softwareId": 32,
     "syntaxId": 28
+  },
+  {
+    "softwareId": 33,
+    "syntaxId": 23
+  },
+  {
+    "softwareId": 34,
+    "syntaxId": 27
   }
 ]

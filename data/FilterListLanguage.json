@@ -820,10 +820,6 @@
     "languageId": 44
   },
   {
-    "filterListId": 670,
-    "languageId": 106
-  },
-  {
     "filterListId": 680,
     "languageId": 44
   },
@@ -1968,14 +1964,6 @@
     "languageId": 167
   },
   {
-    "filterListId": 1242,
-    "languageId": 110
-  },
-  {
-    "filterListId": 1242,
-    "languageId": 167
-  },
-  {
     "filterListId": 1279,
     "languageId": 11
   },
@@ -2106,6 +2094,18 @@
   {
     "filterListId": 1574,
     "languageId": 18
+  },
+  {
+    "filterListId": 1242,
+    "languageId": 110
+  },
+  {
+    "filterListId": 1242,
+    "languageId": 167
+  },
+  {
+    "filterListId": 670,
+    "languageId": 106
   },
   {
     "filterListId": 1581,
