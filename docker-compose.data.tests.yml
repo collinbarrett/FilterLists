@@ -10,7 +10,8 @@ services:
     networks:
       - test-data
     depends_on:
-      - mariadb
+      mariadb:
+        condition: service_healthy
 
   mariadb:
     image: mariadb:10
@@ -27,6 +28,11 @@ services:
         "--character-set-server=utf8mb4",
         "--collation-server=utf8mb4_unicode_520_ci"
       ]
+    healthcheck:
+        test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]
+        timeout: 45s
+        interval: 10s
+        retries: 10
 
 networks:
   test-data:
