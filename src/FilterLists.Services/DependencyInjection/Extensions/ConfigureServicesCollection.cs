@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System;
+using AutoMapper;
 using FilterLists.Data;
 using FilterLists.Services.FilterList;
 using FilterLists.Services.GitHub;
@@ -27,7 +28,10 @@ namespace FilterLists.Services.DependencyInjection.Extensions
                         o.UseMySql(config.GetConnectionString("FilterListsConnection"),
                             m =>
                             {
-                                m.EnableRetryOnFailure(5);
+                                m.EnableRetryOnFailure(
+                                    10,
+                                    TimeSpan.FromSeconds(30),
+                                    null);
                                 m.MigrationsAssembly("FilterLists.Api");
                             }));
             services.TryAddScoped<FilterListService>();
@@ -50,7 +54,10 @@ namespace FilterLists.Services.DependencyInjection.Extensions
                         o.UseMySql(config.GetConnectionString("FilterListsConnection"),
                             m =>
                             {
-                                m.EnableRetryOnFailure(5);
+                                m.EnableRetryOnFailure(
+                                    10,
+                                    TimeSpan.FromSeconds(30),
+                                    null);
                                 m.MigrationsAssembly("FilterLists.Api");
                             }));
             services.TryAddScoped<GitHubService>();
