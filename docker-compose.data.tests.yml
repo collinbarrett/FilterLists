@@ -9,6 +9,8 @@ services:
       target: test-data
     networks:
       - test-data
+    volumes:
+      - test-results:/app/tests/FilterLists.Data.Tests/TestResults
     depends_on:
       - mariadb
 
@@ -30,3 +32,6 @@ services:
 
 networks:
   test-data:
+
+volumes:
+  test-results:
