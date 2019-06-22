@@ -35,4 +35,3 @@ networks:
 
 volumes:
   test-data-results:
-    external: true
