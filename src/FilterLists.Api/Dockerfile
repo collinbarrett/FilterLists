@@ -5,8 +5,7 @@
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-alpine as base
 WORKDIR /app
 ENV DataDirectory__Path "data"
-ENV ASPNETCORE_URLS "http://*:5000"
-EXPOSE 5000
+EXPOSE 80
 ENTRYPOINT ["dotnet", "FilterLists.Api.dll"]
 
 # init build
