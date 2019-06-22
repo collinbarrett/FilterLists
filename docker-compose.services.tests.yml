@@ -17,3 +17,4 @@ networks:
   
 volumes:
   test-services-results:
+    external: true
