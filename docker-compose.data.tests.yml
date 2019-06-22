@@ -28,8 +28,8 @@ services:
         "--collation-server=utf8mb4_unicode_520_ci"
       ]
     healthcheck:
-      test: ["CMD", "mysql", "-u", "root", "-proot", "-e", "'status'", "&>", "/dev/null"]
-      timeout: 10s
+      test: ["CMD", "mysql", "-u", "root", "-p", "filterlists", "-e", "'status'", "&>", "/dev/null"]
+      timeout: 5s
 
 networks:
   test-data:
