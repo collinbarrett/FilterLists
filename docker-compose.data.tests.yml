@@ -27,6 +27,10 @@ services:
         "--character-set-server=utf8mb4",
         "--collation-server=utf8mb4_unicode_520_ci"
       ]
+    healthcheck:
+      test: ["CMD", "mysql", "-u", "root", "-proot", "-e", "'status'", "&>", "/dev/null"]
+      timeout: 20s
+      retries: 10
 
 networks:
   test-data:
