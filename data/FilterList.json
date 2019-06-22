@@ -16950,7 +16950,7 @@
     "emailAddress": "Contact@TheAntiSocialEngineer.com",
     "homeUrl": "https://theantisocialengineer.com/blacklist/",
     "Name": "The AntiSocial Engineer Blacklist",
-    "syntaxid": 2,
+    "syntaxId": 2,
     "viewUrl": "https://theantisocialengineer.com/AntiSocial_Blacklist_Community_V1.txt"
 },
 {
@@ -16958,14 +16958,14 @@
     "description": "The Blocklist to filter Phishing.",
     "homeUrl": "https://phishing.army/",
     "Name": "Phishing Army",
-    "syntaxid": 2,
+    "syntaxId": 2,
     "viewUrl": "https://phishing.army/download/phishing_army_blocklist.txt",
-    "licenseid": 13
+    "licenseId": 13
 },
 {
     "id": 1596,
     "Name": "De Hakkelaar's Cryptojacking Campaign List",
-    "syntaxid": 2,
+    "syntaxId": 2,
     "viewUrl": "https://dehakkelaar.nl/lists/cryptojacking_campaign.list.txt"
 },
 {
@@ -16974,7 +16974,7 @@
     "donateUrl": "https://paypal.me/sjhgvr",
     "homeUrl": "https://www.reddit.com/r/pihole/comments/bppug1/introducing_the/",
     "Name": "OISD",
-    "syntaxid": 2,
+    "syntaxId": 2,
     "viewUrl": "https://dbl.oisd.nl/",
     "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dbl.txt",
     "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/dbl.txt"
@@ -16985,7 +16985,7 @@
     "donateUrl": "https://paypal.me/sjhgvr",
     "homeUrl": "https://www.reddit.com/r/pihole/comments/bppug1/introducing_the/",
     "Name": "OISD (Hosts)",
-    "syntaxid": 1,
+    "syntaxId": 1,
     "viewUrl": "https://hosts.oisd.nl/",
     "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dblzero.txt",
     "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/dblzero.txt"
@@ -16996,7 +16996,7 @@
     "donateUrl": "https://paypal.me/sjhgvr",
     "homeUrl": "https://www.reddit.com/r/pihole/comments/bppug1/introducing_the/",
     "Name": "OISD Mobile",
-    "syntaxid": 2,
+    "syntaxId": 2,
     "viewUrl": "https://dblmobile.oisd.nl/",
     "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dbl2.txt",
     "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/dbl2.txt"
@@ -17007,7 +17007,7 @@
     "donateUrl": "https://paypal.me/sjhgvr",
     "homeUrl": "https://www.reddit.com/r/pihole/comments/bppug1/introducing_the/",
     "Name": "OISD Mobile (Hosts)",
-    "syntaxid": 1,
+    "syntaxId": 1,
     "viewUrl": "https://hostsmobile.oisd.nl/",
     "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/hostsmobile.txt",
     "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/hostsmobile.txt"
@@ -17019,7 +17019,7 @@
     "homeUrl": "https://github.com/joeylane/hosts",
     "issuesUrl": "https://github.com/joeylane/hosts/issues",
     "Name": "Joey Lane's Hosts",
-    "syntaxid": 1,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/joeylane/hosts/master/hosts"
 },
 {
@@ -17028,7 +17028,7 @@
     "homeUrl": "https://github.com/HankAviator/app-ads-blocklist-china",
     "issuesUrl": "https://github.com/HankAviator/app-ads-blocklist-china/issues",
     "Name": "App ads blocklist China",
-    "syntaxid": 4,
+    "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/HankAviator/app-ads-blocklist-china/master/app_blocklist.txt"
 },
 {
@@ -17043,5 +17043,59 @@
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
     "viewUrlMirror1": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
     "viewUrlMirror2": "https://cdn.staticaly.com/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt"
+},
+  {
+    "id": 1604,
+    "description": "Have you ever been watching «Pinkie Cooper and the Jet Set Pets» on DailyMotion, but you keep getting distracted by all the trend-based recommendations below the video player? This list will help focus your attention on the video instead.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "DailyMotion Simplicity",
+    "publishedDate": "2019-06-12T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/DailyMotionSimplicity.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/DailyMotionSimplicity.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/DailyMotionSimplicity.txt"
+  },
+  {
+    "id": 1605,
+    "description": "«Powerpuff Girls», especially the 90's-00's seasons, is a cartoon that taught children such values as beating others senseless, extrajudicial violence, vigilante mob beatings, the expendability of entire neighbourhoods, and discrimination against past offenders. If you too are absolutely embarrassed by ever having watched that show, here's a list for you.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-'Powerpuff Girls' List",
+    "publishedDate": "2019-06-22T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPPGList.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPPGList.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPPGList.txt"
+  },
+  {
+    "id": 1606,
+    "description": "Office Online, which is effectively a free lite version of Microsoft Office, was a pretty nice and kind move by Microsoft. However, they seem to think that quick access to Skype from it is essential for project communication, which is less than desirable for those who've moved on to e.g. Discord or MeWe. Here's a list that will make your Office Online experience Skype-free.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-Skype List for Office Online",
+    "publishedDate": "2019-06-22T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Skype%20List.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-Skype%20List.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-Skype%20List.txt"
+  },
+  {
+    "id": 1607,
+    "description": "HostsY generated hosts files",
+    "homeUrl": "https://github.com/Laicure/HostsY_hosts",
+    "issuesUrl": "https://github.com/Laicure/HostsY_hosts/issues",
+    "Name": "HostsY Hosts",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/Laicure/HostsY_hosts/master/shithosts"
 }
 ]

@@ -143,5 +143,10 @@
     "id": 29,
     "description": "Prevents \"How can I help you?\" prompts from popping up",
     "name": "helpprompt"
+  },
+  {
+    "id": 30,
+    "description": "Blocks certain cultural content",
+    "name": "cultural"
   }
 ]
