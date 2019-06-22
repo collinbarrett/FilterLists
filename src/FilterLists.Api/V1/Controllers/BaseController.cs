@@ -9,10 +9,10 @@ namespace FilterLists.Api.V1.Controllers
 {
     [ApiVersion("1.0")]
     [Route("v{version:apiVersion}/[controller]")]
-    [ResponseCache(Duration = 86400)]
+    [ResponseCache(Duration = 30)]
     public abstract class BaseController : Controller
     {
-        private static readonly TimeSpan MemoryCacheExpirationDefault = TimeSpan.FromHours(24);
+        private static readonly TimeSpan MemoryCacheExpirationDefault = TimeSpan.FromSeconds(30);
         protected readonly SeedService SeedService;
         private readonly IMemoryCache memoryCache;
 
