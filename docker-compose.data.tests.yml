@@ -10,7 +10,7 @@ services:
     networks:
       - test-data
     volumes:
-      - test-results:/app/tests/FilterLists.Data.Tests/TestResults
+      - test-data-results:/app/tests/FilterLists.Data.Tests/TestResults
     depends_on:
       - mariadb
 
@@ -34,4 +34,4 @@ networks:
   test-data:
 
 volumes:
-  test-results:
+  test-data-results:
