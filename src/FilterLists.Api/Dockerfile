@@ -30,7 +30,7 @@ RUN dotnet build -c Release --no-restore
 
 # init Data.Tests
 FROM build AS test-data
-ENTRYPOINT ["dotnet", "test"]
+ENTRYPOINT ["dotnet", "test", "--logger:trx"]
 
 # restore Data.Tests
 WORKDIR /app/tests/FilterLists.Data.Tests
@@ -44,7 +44,7 @@ COPY data/. data/
 
 # init Services.Tests
 FROM build AS test-services
-ENTRYPOINT ["dotnet", "test"]
+ENTRYPOINT ["dotnet", "test", "--logger:trx"]
 
 # restore Services.Tests
 WORKDIR /app/tests/FilterLists.Services.Tests
