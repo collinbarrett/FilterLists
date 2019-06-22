@@ -10,6 +10,7 @@
 
 <p align="center">API: <a href="https://filterlists.com/api/v1/lists"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=API" alt="API" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=3"><img src="https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/3.svg" alt="Azure DevOps builds" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_test/analytics?definitionId=3&contextType=build"><img alt="Azure DevOps tests" src="https://img.shields.io/azure-devops/tests/collinbarrett/FilterLists/3.svg"></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=3"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4.svg" alt="Azure DevOps releases" /></a>
 <a href="https://hub.docker.com/r/collinbarrett/filterlists.api"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.api.svg" alt="Docker Pulls" /></a></p>
 

@@ -9,7 +9,12 @@ services:
       target: test-services
     networks:
       - test-services
+    volumes:
+      - test-services-results:/app/tests/FilterLists.Services.Tests/TestResults
 
 networks:
   test-services:
-    
+  
+volumes:
+  test-services-results:
+    external: true
