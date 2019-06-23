@@ -24,11 +24,15 @@
 **/.gitattributes
 **/.github
 **/docker-compose.dcproj
-**/.sln
 **/*.DotSettings*
 **/node_modules
+**/*.md
 LICENSE
 
 # FilterLists custom
-**/images
-**/ops
+FilterLists.sln
+FilterLists.Api.sln
+src/FilterLists.Agent/*
+imgs
+ops
+data/TPLSubscriptionAssistant.html
