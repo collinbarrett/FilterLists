@@ -1,19 +1,34 @@
-.env
+# From default Visual Studio .NET Core template
+**/.dockerignore
+**/.env
 **/.git
-.gitattributes
-.gitignore
-**/.github
+**/.gitignore
 **/.vs
 **/.vscode
-.dockerignore
-docker-compose.yml
-docker-compose.*.yml
-docker-compose.dcproj
+**/*.*proj.user
+**/azds.yaml
+**/charts
 **/bin
 **/obj
+**/Dockerfile
+**/Dockerfile.develop
+**/docker-compose.yml
+**/docker-compose.*.yml
+**/*.dbmdl
+**/*.jfm
+**/secrets.dev.yaml
+**/values.dev.yaml
+**/.toolstarget
+
+# Other common
+**/.gitattributes
+**/.github
+**/docker-compose.dcproj
 **/.sln
+**/*.DotSettings*
 **/node_modules
-*.DotSettings*
 LICENSE
+
+# FilterLists custom
 **/images
 **/ops
