@@ -9,6 +9,7 @@
     <DockerServiceName>filterlists</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
+    <None Include=".env" />
     <None Include="docker-compose.data.tests.yml" />
     <None Include="docker-compose.services.tests.yml" />
     <None Include="docker-compose.vs.debug.yml">
