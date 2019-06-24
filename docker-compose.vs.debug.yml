@@ -1,6 +1,12 @@
 version: "3.7"
 
 services:
+  nginx:
+    ports:
+      - "80:80"
+    volumes:
+      - ./ops/nginx/conf.d.dev:/etc/nginx/conf.d:ro
+
   api:
     build:
       target: build
