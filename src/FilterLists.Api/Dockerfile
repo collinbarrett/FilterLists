@@ -3,10 +3,10 @@
 
 # init base
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-alpine as base
-WORKDIR /app
 EXPOSE 80
 ENTRYPOINT ["dotnet", "FilterLists.Api.dll"]
 COPY data/. data/
+WORKDIR /app
 
 # init build
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine AS build

@@ -8,7 +8,7 @@ namespace FilterLists.Api
 {
     public static class Program
     {
-        private const string DataPath = "data";
+        private const string DataPath = "../data";
 
         public static void Main(string[] args)
         {
