@@ -6,11 +6,3 @@ services:
       - "80:80"
     volumes:
       - ./ops/nginx/conf.d.dev:/etc/nginx/conf.d:ro
-
-  api:
-    build:
-      target: build
-
-  web:
-    build:
-      target: build

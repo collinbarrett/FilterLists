@@ -6,6 +6,7 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-alpine as base
 WORKDIR /app
 EXPOSE 80
 ENTRYPOINT ["dotnet", "FilterLists.Api.dll"]
+COPY data/. data/
 
 # init build
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine AS build
@@ -60,4 +61,3 @@ RUN dotnet publish -c Release -o out --no-restore --no-build
 # final
 FROM base as final
 COPY --from=publish /app/src/FilterLists.Api/out .
-COPY data/. data/
