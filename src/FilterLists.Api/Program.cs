@@ -3,28 +3,29 @@ using FilterLists.Data;
 using FilterLists.Data.Seed.Extensions;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.Api
 {
     public static class Program
     {
+        private const string DataPath = "data";
+
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args)
                 .Build()
                 .MigrateAndSeedDbContext<FilterListsDbContext>((context, service) =>
                 {
-                    var dataPath = service.GetService<IConfiguration>()["DataDirectory:Path"].ToString();
-                    SeedFilterListsDbContext.SeedOrUpdateAsync(context, dataPath).Wait();
+                    SeedFilterListsDbContext.SeedOrUpdateAsync(context, DataPath).Wait();
                 })
                 .Run();
         }
 
-        private static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                   .UseApplicationInsights()
-                   .UseStartup<Startup>();
+        private static IWebHostBuilder CreateWebHostBuilder(string[] args)
+        {
+            return WebHost.CreateDefaultBuilder(args)
+                .UseApplicationInsights()
+                .UseStartup<Startup>();
+        }
     }
 }
