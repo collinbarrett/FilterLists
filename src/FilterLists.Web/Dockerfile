@@ -4,8 +4,7 @@
 # init base
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-alpine as runtime
 WORKDIR /app
-ENV ASPNETCORE_URLS "http://*:5000"
-EXPOSE 5000
+EXPOSE 80
 ENTRYPOINT ["dotnet", "FilterLists.Web.dll"]
 
 # init build
