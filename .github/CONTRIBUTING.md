@@ -21,8 +21,8 @@ We have containerized FilterLists to make it as easy as possible for contributer
 1. Install Docker CE for your computer's operating system. [Docs](https://docs.docker.com/install/)
 2. Clone the FilterLists git repository to your computer. [Docs](https://help.github.com/en/articles/cloning-a-repository)
 3. Navigate to the root directory of your locally cloned FilterLists git repository in a command-line interface.
-4. Execute `docker-compose up`.
-5. Visit the locally running version of FilterLists in a web browser at `http://localhost/`.
+4. Execute `docker-compose up`. (Optionally, include the `-d` flag to launch in [detached mode](https://docs.docker.com/compose/reference/up/).)
+5. After a minute or so, visit the locally running version of FilterLists in a web browser at `http://localhost/`.
 
 ### Testing changes to the data (.json files)
 
@@ -30,7 +30,7 @@ We have containerized FilterLists to make it as easy as possible for contributer
 
 Execute:
 
-`docker-compose -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -f docker-compose.data.tests.yml run api`
+`docker volume create test-data-results && docker-compose -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -f docker-compose.data.tests.yml run api`
 
 #### Manual
 
@@ -42,13 +42,13 @@ Execute:
 
 #### Automated
 
-- For `Services`, execute:
+- To run `FilterLists.Services.Tests`:
 
-  `docker-compose -f docker-compose.services.tests.yml build api && docker-compose -f docker-compose.services.tests.yml run --rm api`
+  `docker volume create test-services-results && docker-compose -f docker-compose.services.tests.yml build api && docker-compose -f docker-compose.services.tests.yml run --rm api`
 
-- For `Data`, execute:
+- To run `FilterLists.Data.Tests`:
 
-  `docker-compose -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -f docker-compose.data.tests.yml run api`
+  `docker volume create test-data-results && docker-compose -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -f docker-compose.data.tests.yml run api`
 
 #### Manual
 
