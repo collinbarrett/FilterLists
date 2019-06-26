@@ -4,7 +4,6 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using RestSharp;
 
 //TODO:  get raw list urls and IDs
 //TODO:  foreach list, download and persist raw list to disk with standardized name and overwriting the previous version
@@ -16,7 +15,6 @@ namespace FilterLists.Agent
 {
     public static class Program
     {
-        private const string FilterListsApiBaseUrl = "https://filterlists.com/api/v1";
         private static IServiceProvider _serviceProvider;
 
         public static async Task Main()
@@ -35,8 +33,9 @@ namespace FilterLists.Agent
             var serviceCollection = new ServiceCollection();
             var containerBuilder = new ContainerBuilder();
 
+            // register Agent services
             serviceCollection.AddMediatR(typeof(Program).Assembly);
-            containerBuilder.Register<IRestClient>(c => new RestClient(FilterListsApiBaseUrl)).SingleInstance();
+            containerBuilder.RegisterType<FilterListsApiClient>().AsImplementedInterfaces().SingleInstance();
 
             containerBuilder.Populate(serviceCollection);
             var container = containerBuilder.Build();
