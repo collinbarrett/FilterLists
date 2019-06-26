@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.Agent
@@ -15,12 +17,13 @@ namespace FilterLists.Agent
 
         private static IServiceProvider _serviceProvider;
 
-        public static void Main()
+        public static async Task Main()
         {
             RegisterServices();
 
-            //var service = _serviceProvider.GetService<IDemoService>();
-            //service.DoSomething();
+            var mediator = _serviceProvider.GetService<IMediator>();
+
+            await mediator.Send(new CaptureLists.Command());
 
             DisposeServices();
         }
@@ -28,8 +31,9 @@ namespace FilterLists.Agent
         private static void RegisterServices()
         {
             var containerBuilder = new ContainerBuilder();
-            //builder.RegisterType<DemoService>().As<IDemoService>();
-            containerBuilder.Populate(new ServiceCollection());
+            var serviceCollection = new ServiceCollection();
+            serviceCollection.AddMediatR(typeof(Program).Assembly);
+            containerBuilder.Populate(serviceCollection);
             var container = containerBuilder.Build();
             _serviceProvider = new AutofacServiceProvider(container);
         }
