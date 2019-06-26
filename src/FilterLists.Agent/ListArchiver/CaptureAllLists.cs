@@ -8,7 +8,7 @@ using RestSharp;
 
 namespace FilterLists.Agent.ListArchiver
 {
-    public class CaptureAllLists
+    public static class CaptureAllLists
     {
         public class Command : IRequest
         {
