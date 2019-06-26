@@ -56,6 +56,13 @@ services:
         "--collation-server=utf8mb4_unicode_520_ci"
       ]
 
+  agent:
+    image: collinbarrett/filterlists.agent:latest
+    build:
+      context: .
+      dockerfile: src/FilterLists.Agent/Dockerfile
+      target: final
+
 networks:
   reverse-proxy:
   api:

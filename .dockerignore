@@ -32,7 +32,6 @@ LICENSE
 # FilterLists custom
 FilterLists.sln
 FilterLists.Api.sln
-src/FilterLists.Agent
 imgs
 ops
 data/TPLSubscriptionAssistant.html
