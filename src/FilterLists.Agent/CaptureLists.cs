@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
 using RestSharp;
@@ -13,16 +14,14 @@ namespace FilterLists.Agent
 
         public class Handler : AsyncRequestHandler<Command>
         {
-            private readonly IRestClient _restClient;
+            private readonly IFilterListsApiClient apiClient;
 
-            public Handler(IRestClient restClient)
-            {
-                _restClient = restClient;
-            }
+            public Handler(IFilterListsApiClient apiClient) => this.apiClient = apiClient;
 
-            protected override Task Handle(Command request, CancellationToken cancellationToken)
+            protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                return Task.CompletedTask;
+                var listsRequest = new RestRequest("lists");
+                var restResponse = await apiClient.ExecuteAsync<IEnumerable<FilterListDto>>(listsRequest);
             }
         }
     }
