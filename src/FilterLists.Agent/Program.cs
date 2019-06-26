@@ -4,17 +4,19 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using RestSharp;
+
+//TODO:  get raw list urls and IDs
+//TODO:  foreach list, download and persist raw list to disk with standardized name and overwriting the previous version
+//TODO:  git add .
+//TODO:  git commit
+//TODO:  foreach list, upsert into MariaDB Rules table https://stackoverflow.com/questions/15271202/mysql-load-data-infile-with-on-duplicate-key-update
 
 namespace FilterLists.Agent
 {
     public static class Program
     {
-        //TODO:  get raw list urls and IDs
-        //TODO:  foreach list, download and persist raw list to disk with standardized name and overwriting the previous version
-        //TODO:  git add .
-        //TODO:  git commit
-        //TODO:  foreach list, upsert into MariaDB Rules table https://stackoverflow.com/questions/15271202/mysql-load-data-infile-with-on-duplicate-key-update
-
+        private const string FilterListsApiBaseUrl = "https://filterlists.com/api/v1";
         private static IServiceProvider _serviceProvider;
 
         public static async Task Main()
@@ -30,9 +32,12 @@ namespace FilterLists.Agent
 
         private static void RegisterServices()
         {
-            var containerBuilder = new ContainerBuilder();
             var serviceCollection = new ServiceCollection();
+            var containerBuilder = new ContainerBuilder();
+
             serviceCollection.AddMediatR(typeof(Program).Assembly);
+            containerBuilder.Register<IRestClient>(c => new RestClient(FilterListsApiBaseUrl)).SingleInstance();
+
             containerBuilder.Populate(serviceCollection);
             var container = containerBuilder.Build();
             _serviceProvider = new AutofacServiceProvider(container);

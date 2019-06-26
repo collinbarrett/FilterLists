@@ -1,6 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
+using RestSharp;
 
 namespace FilterLists.Agent
 {
@@ -12,7 +13,17 @@ namespace FilterLists.Agent
 
         public class Handler : AsyncRequestHandler<Command>
         {
-            protected override Task Handle(Command request, CancellationToken cancellationToken) => Task.CompletedTask;
+            private readonly IRestClient _restClient;
+
+            public Handler(IRestClient restClient)
+            {
+                _restClient = restClient;
+            }
+
+            protected override Task Handle(Command request, CancellationToken cancellationToken)
+            {
+                return Task.CompletedTask;
+            }
         }
     }
 }
