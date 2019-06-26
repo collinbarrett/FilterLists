@@ -17106,5 +17106,263 @@
     "name": "HostsY Hosts",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/Laicure/HostsY_hosts/master/shithosts"
-  }
+  },
+        {
+            "id": 1608,
+            "name": "Unified Hosts (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_base/sb_unified_hosts_base.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1609,
+            "name": "Unified Hosts + Fakenews + Gambling + Porn + Social (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_fakenews-gambling-porn-social/sb_unified_hosts_fakenews-gambling-porn-social.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1610,
+            "name": "Unified Hosts + Fakenews + Gambling + Porn (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_fakenews-gambling-porn/sb_unified_hosts_fakenews-gambling-porn.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1611,
+            "name": "Unified Hosts + Fakenews + Gambling + Social (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_fakenews-gambling-social/sb_unified_hosts_fakenews-gambling-social.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1612,
+            "name": "Unified Hosts + Fakenews + Gambling (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_fakenews-gambling-porn/sb_unified_hosts_fakenews-gambling-porn.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1613,
+            "name": "Unified Hosts + Fakenews + Porn + Social (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_fakenews-porn-social/sb_unified_hosts_fakenews-porn-social.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1614,
+            "name": "Unified Hosts + Fakenews + Porn (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_fakenews-porn/sb_unified_hosts_fakenews-porn.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1615,
+            "name": "Unified Hosts + Fakenews + Social (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_fakenews-social/sb_unified_hosts_fakenews-social.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1616,
+            "name": "Unified Hosts + Fakenews (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_fakenews/sb_unified_hosts_fakenews.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1617,
+            "name": "Unified Hosts + Gambling + Porn + Social (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_gambling-porn-social/sb_unified_hosts_gambling-porn-social.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1618,
+            "name": "Unified Hosts + Gambling + Porn (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_gambling-porn/sb_unified_hosts_gambling-porn.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1619,
+            "name": "Unified Hosts + Gambling + Social (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_gambling-social/sb_unified_hosts_gambling-social.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1620,
+            "name": "Unified Hosts + Gambling (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_gambling/sb_unified_hosts_gambling.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1621,
+            "name": "Unified Hosts + Porn + Social (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_porn-social/sb_unified_hosts_porn-social.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1622,
+            "name": "Unified Hosts + Porn (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_porn/sb_unified_hosts_porn.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1623,
+            "name": "Unified Hosts + Social (Little Snitch)",
+            "description": "This repo provide rule groups for Little Snitch based on unified host list to block ads, malware, fake news and porn",
+            "homeUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups",
+            "issuesUrl": "https://github.com/naveednajam/Little-Snitch---Rule-Groups/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/naveednajam/Little-Snitch---Rule-Groups/master/unified_hosts_social/sb_unified_hosts_social.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1624,
+            "name": "jostyee's Blocklist",
+            "homeUrl": "https://github.com/jostyee/littlesnitch-rules",
+            "issuesUrl": "https://github.com/jostyee/littlesnitch-rules/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/jostyee/littlesnitch-rules/master/blocklist.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1625,
+            "name": "jostyee's Blocklist China",
+            "description": "Personal blocklist for Chinese sites",
+            "homeUrl": "https://github.com/jostyee/littlesnitch-rules",
+            "issuesUrl": "https://github.com/jostyee/littlesnitch-rules/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/jostyee/littlesnitch-rules/master/blocklist-china.lsrules",
+            "licenseId": 4
+        },
+        {
+            "id": 1626,
+            "name": "Browsers",
+            "description": "Rules for Chrome, Firefox, and Safari.",
+            "homeUrl": "https://github.com/bdougherty/little-snitch-rules",
+            "issuesUrl": "https://github.com/bdougherty/little-snitch-rules/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/bdougherty/little-snitch-rules/master/rules/browsers.lsrules",
+            "licenseId": 2
+        },
+        {
+            "id": 1627,
+            "name": "Vietnamese Ad Block by ThuanLe",
+            "description": "Adblock rules for Little Snitch by ThuanLe",
+            "homeUrl": "https://github.com/ldt116/little-snitch-vietnamese-ad-block-rules",
+            "issuesUrl": "https://github.com/ldt116/little-snitch-vietnamese-ad-block-rules/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/ldt116/little-snitch-vietnamese-ad-block-rules/master/vietnamese-ad-block.lsrules"
+        },
+        {
+            "id": 1628,
+            "name": "balupton's Blocklist",
+            "homeUrl": "https://github.com/balupton/littlesnitch-filters",
+            "issuesUrl": "https://github.com/balupton/littlesnitch-filters/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/balupton/littlesnitch-filters/master/blocklist.lsrules",
+            "licenseId": 11
+        },
+        {
+            "id": 1629,
+            "name": "balupton's CDN Whitelist",
+            "homeUrl": "https://github.com/balupton/littlesnitch-filters",
+            "issuesUrl": "https://github.com/balupton/littlesnitch-filters/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/balupton/littlesnitch-filters/master/whitelist-cdn.lsrules",
+            "licenseId": 11
+        },
+        {
+            "id": 1630,
+            "name": "Jay Dorsey's Little Snitch Block List",
+            "description": "A set of rules for Little Snitch (4.1 or higher)",
+            "homeUrl": "https://github.com/jaydorsey/little_snitch_rules",
+            "issuesUrl": "https://github.com/jaydorsey/little_snitch_rules/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/jaydorsey/little_snitch_rules/master/jaydorsey.lsrules"
+        },
+        {
+            "id": 1631,
+            "name": "Block All All",
+            "homeUrl": "https://github.com/newyork10023/Little_Snitch",
+            "issuesUrl": "https://github.com/newyork10023/Little_Snitch/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/newyork10023/Little_Snitch/master/Block_All_All.lsrules"
+        },
+        {
+            "id": 1632,
+            "name": "Kr00lIX's Tracking List",
+            "homeUrl": "https://github.com/Kr00lIX/little-snitch-rules",
+            "issuesUrl": "https://github.com/Kr00lIX/little-snitch-rules/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/Kr00lIX/little-snitch-rules/master/Tracking.lsrules"
+        },
+        {
+            "id": 1633,
+            "name": "Kr00lIX's Sync Limit Rules",
+            "homeUrl": "https://github.com/Kr00lIX/little-snitch-rules",
+            "issuesUrl": "https://github.com/Kr00lIX/little-snitch-rules/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://raw.githubusercontent.com/Kr00lIX/little-snitch-rules/master/SyncLimit.lsrules"
+        },
+        {
+            "id": 1634,
+            "name": "Trackers Top 500",
+            "description": "List of 'trackers' from https://better.fyi/trackers",
+            "homeUrl": "https://gitlab.com/jamujr/lsrg",
+            "issuesUrl": "https://gitlab.com/jamujr/lsrg/issues",
+            "syntaxId": 18,
+            "viewUrl": "https://gitlab.com/jamujr/lsrg/raw/master/trackers-top-500.lsrules"
+        }
 ]
