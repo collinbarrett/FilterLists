@@ -2,10 +2,11 @@
 using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using FilterLists.Agent.Infrastructure;
+using FilterLists.Agent.ListArchiver;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
-//TODO:  get raw list urls and IDs
 //TODO:  foreach list, download and persist raw list to disk with standardized name and overwriting the previous version
 //TODO:  git add .
 //TODO:  git commit
@@ -23,9 +24,9 @@ namespace FilterLists.Agent
 
             var mediator = _serviceProvider.GetService<IMediator>();
 
-            await mediator.Send(new CaptureLists.Command());
+            await mediator.Send(new CaptureAllLists.Command());
 
-            DisposeServices();
+            ((IDisposable) _serviceProvider).Dispose();
         }
 
         private static void RegisterServices()
@@ -40,18 +41,6 @@ namespace FilterLists.Agent
             containerBuilder.Populate(serviceCollection);
             var container = containerBuilder.Build();
             _serviceProvider = new AutofacServiceProvider(container);
-        }
-
-        private static void DisposeServices()
-        {
-            switch (_serviceProvider)
-            {
-                case null:
-                    return;
-                case IDisposable disposableServiceProvider:
-                    disposableServiceProvider.Dispose();
-                    break;
-            }
         }
     }
 }
