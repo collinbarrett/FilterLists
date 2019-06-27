@@ -4,11 +4,11 @@ namespace FilterLists.Agent.ListArchiver.Events
 {
     public class ListReadyForCapture : INotification
     {
-        public ListReadyForCapture(FilterList filterList)
+        public ListReadyForCapture(ListInfo listInfo)
         {
-            FilterList = filterList;
+            ListInfo = listInfo;
         }
 
-        public FilterList FilterList { get; }
+        public ListInfo ListInfo { get; }
     }
 }

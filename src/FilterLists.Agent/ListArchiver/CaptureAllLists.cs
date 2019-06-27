@@ -28,9 +28,9 @@ namespace FilterLists.Agent.ListArchiver
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
                 var listsRequest = new RestRequest("lists");
-                var filterLists = await _apiClient.ExecuteAsync<IEnumerable<FilterList>>(listsRequest);
-                foreach (var filterList in filterLists)
-                    await _mediator.Publish(new ListReadyForCapture(filterList), cancellationToken);
+                var lists = await _apiClient.ExecuteAsync<IEnumerable<ListInfo>>(listsRequest);
+                foreach (var list in lists)
+                    await _mediator.Publish(new ListReadyForCapture(list), cancellationToken);
             }
         }
     }
