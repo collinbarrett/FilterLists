@@ -6,6 +6,35 @@ using System.Threading.Tasks;
 using FilterLists.Agent.Entities;
 using MediatR;
 
+/*
+TODO: support downloading all of the following extensions
+"" (no extension)
+7z
+acl
+action
+all
+aspx
+bat
+blacklist
+conf
+csv
+dat
+deny
+host
+hosts
+ips
+ipset
+json
+list
+lsrules
+netset
+p2p
+php
+tpl
+txt
+zip
+*/
+
 namespace FilterLists.Agent.ListArchiver
 {
     public static class DownloadList
