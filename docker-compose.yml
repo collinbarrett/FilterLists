@@ -62,6 +62,8 @@ services:
       context: .
       dockerfile: src/FilterLists.Agent/Dockerfile
       target: final
+    volumes:
+      - archives:/app/archives
 
 networks:
   reverse-proxy:
@@ -69,3 +71,4 @@ networks:
 
 volumes:
   data:
+  archives:
