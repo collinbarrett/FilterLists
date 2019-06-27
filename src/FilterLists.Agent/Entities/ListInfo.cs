@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FilterLists.Agent
+namespace FilterLists.Agent.Entities
 {
     public class ListInfo
     {

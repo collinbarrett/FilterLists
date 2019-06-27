@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
@@ -36,6 +37,7 @@ namespace FilterLists.Agent
             // register Agent services
             serviceCollection.AddMediatR(typeof(Program).Assembly);
             containerBuilder.RegisterType<FilterListsApiClient>().AsImplementedInterfaces().SingleInstance();
+            containerBuilder.RegisterType<HttpClient>().SingleInstance();
 
             containerBuilder.Populate(serviceCollection);
             var container = containerBuilder.Build();
