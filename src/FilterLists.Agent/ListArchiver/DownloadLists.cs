@@ -29,15 +29,20 @@ namespace FilterLists.Agent.ListArchiver
                 _mediator = mediator;
             }
 
+            // https://stackoverflow.com/a/22492731/2343739
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
                 var downloader = new TransformBlock<ListInfo, Task>(
                     l => _mediator.Send(new DownloadList.Command(l), cancellationToken),
                     new ExecutionDataflowBlockOptions {MaxDegreeOfParallelism = MaxDegreeOfParallelism});
+                var buffer = new BufferBlock<Task>();
+                downloader.LinkTo(buffer);
                 foreach (var list in request.Lists)
                     await downloader.SendAsync(list, cancellationToken);
                 downloader.Complete();
                 await downloader.Completion;
+                if (buffer.TryReceiveAll(out var tasks))
+                    await Task.WhenAll(tasks);
             }
         }
     }
