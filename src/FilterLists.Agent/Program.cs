@@ -7,6 +7,7 @@ using FilterLists.Agent.Infrastructure;
 using FilterLists.Agent.ListArchiver;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace FilterLists.Agent
 {
@@ -30,6 +31,7 @@ namespace FilterLists.Agent
             var containerBuilder = new ContainerBuilder();
 
             // register Agent services
+            serviceCollection.AddLogging(b => b.AddConsole());
             serviceCollection.AddMediatR(typeof(Program).Assembly);
             containerBuilder.RegisterType<FilterListsApiClient>().AsImplementedInterfaces().SingleInstance();
             containerBuilder.RegisterType<HttpClient>().SingleInstance();

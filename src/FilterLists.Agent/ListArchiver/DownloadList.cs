@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using FilterLists.Agent.Entities;
 using FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension;
 using MediatR;
+using Microsoft.Extensions.Logging;
 
 namespace FilterLists.Agent.ListArchiver
 {
@@ -53,10 +54,12 @@ namespace FilterLists.Agent.ListArchiver
                     {".zip", l => throw new NotImplementedException()}
                 };
 
+            private readonly ILogger<Handler> _logger;
             private readonly IMediator _mediator;
 
-            public Handler(IMediator mediator)
+            public Handler(ILogger<Handler> logger, IMediator mediator)
             {
+                _logger = logger;
                 _mediator = mediator;
             }
 
@@ -68,16 +71,19 @@ namespace FilterLists.Agent.ListArchiver
                     if (DownloadRequestsByFileExtension.ContainsKey(extension))
                         await _mediator.Send(DownloadRequestsByFileExtension[extension].Invoke(request.ListInfo),
                             cancellationToken);
-                    //TODO: handle and/or log unrecognized extension
+                    _logger.LogWarning(
+                        $"File extension not recognized for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
                     //TODO:  upsert into MariaDB Rules table https://stackoverflow.com/questions/15271202/mysql-load-data-infile-with-on-duplicate-key-update
                 }
                 catch (NotImplementedException)
                 {
-                    //TODO: log
+                    _logger.LogWarning(
+                        $"File extension not supported for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
                 }
-                catch (ArgumentException)
+                catch (ArgumentException ex)
                 {
-                    //TODO: log
+                    _logger.LogError(ex,
+                        $"Could not determine the file extension for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
                 }
             }
         }

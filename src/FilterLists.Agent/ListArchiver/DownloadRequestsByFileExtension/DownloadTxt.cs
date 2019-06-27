@@ -1,10 +1,10 @@
-﻿using System.Diagnostics;
-using System.IO;
+﻿using System.IO;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Entities;
 using MediatR;
+using Microsoft.Extensions.Logging;
 
 namespace FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension
 {
@@ -23,15 +23,17 @@ namespace FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension
         public class Handler : AsyncRequestHandler<Command>
         {
             private readonly HttpClient _httpClient;
+            private readonly ILogger<Handler> _logger;
 
-            public Handler(HttpClient httpClient)
+            public Handler(ILogger<Handler> logger, HttpClient httpClient)
             {
+                _logger = logger;
                 _httpClient = httpClient;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                Debug.WriteLine($"Downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}...");
+                _logger.LogInformation($"Downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}...");
                 try
                 {
                     using (var result = await _httpClient.GetAsync(request.ListInfo.ViewUrl, cancellationToken))
@@ -45,9 +47,10 @@ namespace FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension
                             }
                     }
                 }
-                catch (HttpRequestException)
+                catch (HttpRequestException ex)
                 {
-                    //TODO: log
+                    _logger.LogError(ex,
+                        $"Error downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
                 }
             }
         }
