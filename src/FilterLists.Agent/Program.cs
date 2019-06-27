@@ -19,7 +19,7 @@ namespace FilterLists.Agent
             RegisterServices();
 
             var mediator = _serviceProvider.GetService<IMediator>();
-            await mediator.Send(new CaptureAllLists.Command());
+            await mediator.Send(new CaptureLists.Command());
 
             ((IDisposable) _serviceProvider).Dispose();
         }

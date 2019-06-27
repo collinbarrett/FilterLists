@@ -27,30 +27,30 @@ namespace FilterLists.Agent.ListArchiver
                 = new Dictionary<string, Func<ListInfo, IRequest>>
                 {
                     {"", l => new DownloadTxt.Command(l)},
-                    {".7z", l => new DownloadTxt.Command(l)},
-                    {".acl", l => new DownloadTxt.Command(l)},
-                    {".action", l => new DownloadTxt.Command(l)},
-                    {".all", l => new DownloadTxt.Command(l)},
-                    {".aspx", l => new DownloadTxt.Command(l)},
-                    {".bat", l => new DownloadTxt.Command(l)},
-                    {".blacklist", l => new DownloadTxt.Command(l)},
-                    {".conf", l => new DownloadTxt.Command(l)},
-                    {".csv", l => new DownloadTxt.Command(l)},
-                    {".dat", l => new DownloadTxt.Command(l)},
-                    {".deny", l => new DownloadTxt.Command(l)},
-                    {".host", l => new DownloadTxt.Command(l)},
-                    {".hosts", l => new DownloadTxt.Command(l)},
-                    {".ips", l => new DownloadTxt.Command(l)},
-                    {".ipset", l => new DownloadTxt.Command(l)},
-                    {".json", l => new DownloadTxt.Command(l)},
-                    {".list", l => new DownloadTxt.Command(l)},
-                    {".lsrules", l => new DownloadTxt.Command(l)},
-                    {".netset", l => new DownloadTxt.Command(l)},
-                    {".p2p", l => new DownloadTxt.Command(l)},
-                    {".php", l => new DownloadTxt.Command(l)},
-                    {".tpl", l => new DownloadTxt.Command(l)},
+                    {".7z", l => throw new NotImplementedException()},
+                    {".acl", l => throw new NotImplementedException()},
+                    {".action", l => throw new NotImplementedException()},
+                    {".all", l => throw new NotImplementedException()},
+                    {".aspx", l => throw new NotImplementedException()},
+                    {".bat", l => throw new NotImplementedException()},
+                    {".blacklist", l => throw new NotImplementedException()},
+                    {".conf", l => throw new NotImplementedException()},
+                    {".csv", l => throw new NotImplementedException()},
+                    {".dat", l => throw new NotImplementedException()},
+                    {".deny", l => throw new NotImplementedException()},
+                    {".host", l => throw new NotImplementedException()},
+                    {".hosts", l => throw new NotImplementedException()},
+                    {".ips", l => throw new NotImplementedException()},
+                    {".ipset", l => throw new NotImplementedException()},
+                    {".json", l => throw new NotImplementedException()},
+                    {".list", l => throw new NotImplementedException()},
+                    {".lsrules", l => throw new NotImplementedException()},
+                    {".netset", l => throw new NotImplementedException()},
+                    {".p2p", l => throw new NotImplementedException()},
+                    {".php", l => throw new NotImplementedException()},
+                    {".tpl", l => throw new NotImplementedException()},
                     {".txt", l => new DownloadTxt.Command(l)},
-                    {".zip", l => new DownloadTxt.Command(l)}
+                    {".zip", l => throw new NotImplementedException()}
                 };
 
             private readonly IMediator _mediator;
@@ -68,7 +68,12 @@ namespace FilterLists.Agent.ListArchiver
                     if (DownloadRequestsByFileExtension.ContainsKey(extension))
                         await _mediator.Send(DownloadRequestsByFileExtension[extension].Invoke(request.ListInfo),
                             cancellationToken);
+                    //TODO: handle and/or log unrecognized extension
                     //TODO:  upsert into MariaDB Rules table https://stackoverflow.com/questions/15271202/mysql-load-data-infile-with-on-duplicate-key-update
+                }
+                catch (NotImplementedException)
+                {
+                    //TODO: log
                 }
                 catch (ArgumentException)
                 {
