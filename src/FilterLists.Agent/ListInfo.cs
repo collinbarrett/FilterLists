@@ -2,7 +2,7 @@
 
 namespace FilterLists.Agent
 {
-    public class FilterList
+    public class ListInfo
     {
         public int Id { get; private set; }
         public Uri ViewUrl { get; private set; }
