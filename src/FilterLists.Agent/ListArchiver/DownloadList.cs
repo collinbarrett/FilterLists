@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Diagnostics;
+using System.IO;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
@@ -7,7 +8,7 @@ using MediatR;
 
 namespace FilterLists.Agent.ListArchiver
 {
-    public static class CaptureList
+    public static class DownloadList
     {
         public class Command : IRequest
         {
@@ -31,6 +32,8 @@ namespace FilterLists.Agent.ListArchiver
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
                 if (Path.GetExtension(request.ListInfo.ViewUrl.AbsolutePath) == ".txt")
+                {
+                    Debug.WriteLine($"Downloading list {request.ListInfo.Id}...");
                     try
                     {
                         using (var result = await _httpClient.GetAsync(request.ListInfo.ViewUrl, cancellationToken))
@@ -47,6 +50,7 @@ namespace FilterLists.Agent.ListArchiver
                     catch (HttpRequestException)
                     {
                     }
+                }
             }
         }
     }

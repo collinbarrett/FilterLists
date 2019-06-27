@@ -8,7 +8,6 @@ using FilterLists.Agent.ListArchiver;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
-//TODO:  foreach list, download and persist raw list to disk with standardized name and overwriting the previous version
 //TODO:  git add .
 //TODO:  git commit
 //TODO:  foreach list, upsert into MariaDB Rules table https://stackoverflow.com/questions/15271202/mysql-load-data-infile-with-on-duplicate-key-update
