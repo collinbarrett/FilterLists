@@ -33,7 +33,6 @@ namespace FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                _logger.LogInformation($"Downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}...");
                 try
                 {
                     using (var result = await _httpClient.GetAsync(request.ListInfo.ViewUrl, cancellationToken))

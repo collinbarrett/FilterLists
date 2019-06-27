@@ -69,10 +69,18 @@ namespace FilterLists.Agent.ListArchiver
                 {
                     var extension = Path.GetExtension(request.ListInfo.ViewUrl.AbsolutePath);
                     if (DownloadRequestsByFileExtension.ContainsKey(extension))
+                    {
+                        _logger.LogInformation(
+                            $"Downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}...");
                         await _mediator.Send(DownloadRequestsByFileExtension[extension].Invoke(request.ListInfo),
                             cancellationToken);
-                    _logger.LogWarning(
-                        $"File extension not recognized for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
+                    }
+                    else
+                    {
+                        _logger.LogWarning(
+                            $"File extension not recognized for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
+                    }
+
                     //TODO:  upsert into MariaDB Rules table https://stackoverflow.com/questions/15271202/mysql-load-data-infile-with-on-duplicate-key-update
                 }
                 catch (NotImplementedException)
