@@ -31,9 +31,10 @@ namespace FilterLists.Agent.ListArchiver
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                if (Path.GetExtension(request.ListInfo.ViewUrl.AbsolutePath) == ".txt")
+                if (!Path.HasExtension(request.ListInfo.ViewUrl.AbsolutePath) ||
+                    Path.GetExtension(request.ListInfo.ViewUrl.AbsolutePath) == ".txt")
                 {
-                    Debug.WriteLine($"Downloading list {request.ListInfo.Id}...");
+                    Debug.WriteLine($"Downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}...");
                     try
                     {
                         using (var result = await _httpClient.GetAsync(request.ListInfo.ViewUrl, cancellationToken))
