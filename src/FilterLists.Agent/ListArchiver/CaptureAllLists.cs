@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Entities;
@@ -29,8 +30,7 @@ namespace FilterLists.Agent.ListArchiver
             {
                 var listsRequest = new RestRequest("lists");
                 var lists = await _apiClient.ExecuteAsync<IEnumerable<ListInfo>>(listsRequest);
-                foreach (var list in lists)
-                    await _mediator.Send(new CaptureList.Command(list), cancellationToken);
+                await Task.WhenAll(lists.Select(l => _mediator.Send(new CaptureList.Command(l), cancellationToken)));
             }
         }
     }

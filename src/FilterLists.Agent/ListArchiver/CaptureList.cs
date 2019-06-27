@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System.IO;
+using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Entities;
@@ -29,6 +30,23 @@ namespace FilterLists.Agent.ListArchiver
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
+                if (Path.GetExtension(request.ListInfo.ViewUrl.AbsolutePath) == ".txt")
+                    try
+                    {
+                        using (var result = await _httpClient.GetAsync(request.ListInfo.ViewUrl, cancellationToken))
+                        {
+                            if (result.IsSuccessStatusCode)
+                                using (Stream output =
+                                    File.OpenWrite(Path.Combine("archives", $"{request.ListInfo.Id}.txt")))
+                                using (var input = await result.Content.ReadAsStreamAsync())
+                                {
+                                    input.CopyTo(output);
+                                }
+                        }
+                    }
+                    catch (HttpRequestException)
+                    {
+                    }
             }
         }
     }
