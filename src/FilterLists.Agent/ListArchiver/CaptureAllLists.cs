@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using FilterLists.Agent.Entities;
 using FilterLists.Agent.Infrastructure;
-using FilterLists.Agent.ListArchiver.Events;
 using MediatR;
 using RestSharp;
 
@@ -30,7 +30,7 @@ namespace FilterLists.Agent.ListArchiver
                 var listsRequest = new RestRequest("lists");
                 var lists = await _apiClient.ExecuteAsync<IEnumerable<ListInfo>>(listsRequest);
                 foreach (var list in lists)
-                    await _mediator.Publish(new ListReadyForCapture(list), cancellationToken);
+                    await _mediator.Send(new CaptureList.Command(list), cancellationToken);
             }
         }
     }
