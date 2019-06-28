@@ -27,6 +27,7 @@ namespace FilterLists.Agent.ListArchiver
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
+                //TODO: git init if repo doesn't exist
                 var lists = await GetListInfo();
                 await _mediator.Send(new DownloadLists.Command(lists), cancellationToken);
                 //TODO: git add .
