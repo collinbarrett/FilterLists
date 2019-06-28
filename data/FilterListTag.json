@@ -7606,5 +7606,17 @@
   {
     "filterListId": 1622,
     "tagId": 11
+  },
+  {
+    "filterListId": 1635,
+    "tagId": 22
+  },
+  {
+    "filterListId": 1636,
+    "tagId": 22
+  },
+  {
+    "filterListId": 1637,
+    "tagId": 4
   }
 ]
