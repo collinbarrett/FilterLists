@@ -36,7 +36,7 @@ namespace FilterLists.Agent.ListArchiver
                     new ExecutionDataflowBlockOptions {MaxDegreeOfParallelism = MaxDegreeOfParallelism}
                 );
                 foreach (var list in request.ListInfo)
-                        await downloader.SendAsync(list, cancellationToken);
+                    await downloader.SendAsync(list, cancellationToken);
                 downloader.Complete();
                 await downloader.Completion;
             }

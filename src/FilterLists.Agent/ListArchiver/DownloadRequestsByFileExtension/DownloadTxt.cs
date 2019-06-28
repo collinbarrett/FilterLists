@@ -38,7 +38,8 @@ namespace FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension
                     if (response.IsSuccessStatusCode)
                         try
                         {
-                            using (Stream output = File.OpenWrite(Path.Combine("archives", $"{request.ListInfo.Id}.txt")))
+                            using (Stream output =
+                                File.OpenWrite(Path.Combine("archives", $"{request.ListInfo.Id}.txt")))
                             using (var input = await response.Content.ReadAsStreamAsync())
                             {
                                 input.CopyTo(output);
@@ -46,7 +47,8 @@ namespace FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension
                         }
                         catch (HttpRequestException ex)
                         {
-                            _logger.LogError(ex, $"Error downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
+                            _logger.LogError(ex,
+                                $"Error downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
                         }
                 }
             }
