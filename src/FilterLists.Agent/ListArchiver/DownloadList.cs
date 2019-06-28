@@ -4,6 +4,7 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Entities;
+using FilterLists.Agent.Entities.Aggregates;
 using FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension;
 using MediatR;
 using Microsoft.Extensions.Logging;
@@ -14,18 +15,18 @@ namespace FilterLists.Agent.ListArchiver
     {
         public class Command : IRequest
         {
-            public Command(ListInfo listInfo)
+            public Command(ListDownload listDownload)
             {
-                ListInfo = listInfo;
+                ListDownload = listDownload;
             }
 
-            public ListInfo ListInfo { get; }
+            public ListDownload ListDownload { get; }
         }
 
         public class Handler : AsyncRequestHandler<Command>
         {
-            private static readonly Dictionary<string, Func<ListInfo, IRequest>> DownloadRequestsByFileExtension
-                = new Dictionary<string, Func<ListInfo, IRequest>>
+            private static readonly Dictionary<string, Func<ListDownload, IRequest>> DownloadRequestsByFileExtension
+                = new Dictionary<string, Func<ListDownload, IRequest>>
                 {
                     {"", l => new DownloadTxt.Command(l)},
                     {".7z", l => throw new NotImplementedException()},
@@ -67,18 +68,18 @@ namespace FilterLists.Agent.ListArchiver
             {
                 try
                 {
-                    var extension = Path.GetExtension(request.ListInfo.ViewUrl.AbsolutePath);
+                    var extension = Path.GetExtension(request.ListDownload.ListInfo.ViewUrl.AbsolutePath);
                     if (DownloadRequestsByFileExtension.ContainsKey(extension))
                     {
                         _logger.LogInformation(
-                            $"Downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}...");
-                        await _mediator.Send(DownloadRequestsByFileExtension[extension].Invoke(request.ListInfo),
+                            $"Downloading list {request.ListDownload.ListInfo.Id} from {request.ListDownload.ListInfo.ViewUrl}...");
+                        await _mediator.Send(DownloadRequestsByFileExtension[extension].Invoke(request.ListDownload),
                             cancellationToken);
                     }
                     else
                     {
                         _logger.LogWarning(
-                            $"File extension not recognized for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
+                            $"File extension not recognized for list {request.ListDownload.ListInfo.Id} from {request.ListDownload.ListInfo.ViewUrl}.");
                     }
 
                     //TODO:  upsert into MariaDB Rules table https://stackoverflow.com/questions/15271202/mysql-load-data-infile-with-on-duplicate-key-update
@@ -86,12 +87,12 @@ namespace FilterLists.Agent.ListArchiver
                 catch (NotImplementedException)
                 {
                     _logger.LogWarning(
-                        $"File extension not supported for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
+                        $"File extension not supported for list {request.ListDownload.ListInfo.Id} from {request.ListDownload.ListInfo.ViewUrl}.");
                 }
                 catch (ArgumentException ex)
                 {
                     _logger.LogError(ex,
-                        $"Could not determine the file extension for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
+                        $"Could not determine the file extension for list {request.ListDownload.ListInfo.Id} from {request.ListDownload.ListInfo.ViewUrl}.");
                 }
             }
         }

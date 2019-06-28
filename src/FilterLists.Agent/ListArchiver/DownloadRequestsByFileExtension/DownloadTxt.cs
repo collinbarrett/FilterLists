@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Entities;
+using FilterLists.Agent.Entities.Aggregates;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
@@ -12,12 +12,12 @@ namespace FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension
     {
         public class Command : IRequest
         {
-            public Command(ListInfo listInfo)
+            public Command(ListDownload listDownload)
             {
-                ListInfo = listInfo;
+                ListDownload = listDownload;
             }
 
-            public ListInfo ListInfo { get; }
+            public ListDownload ListDownload { get; }
         }
 
         public class Handler : AsyncRequestHandler<Command>
@@ -35,21 +35,18 @@ namespace FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension
             {
                 try
                 {
-                    using (var result = await _httpClient.GetAsync(request.ListInfo.ViewUrl, cancellationToken))
-                    {
-                        if (result.IsSuccessStatusCode)
-                            using (Stream output =
-                                File.OpenWrite(Path.Combine("archives", $"{request.ListInfo.Id}.txt")))
-                            using (var input = await result.Content.ReadAsStreamAsync())
-                            {
-                                input.CopyTo(output);
-                            }
-                    }
+                    if (request.ListDownload.HttpResponseMessage.IsSuccessStatusCode)
+                        using (Stream output =
+                            File.OpenWrite(Path.Combine("archives", $"{request.ListDownload.ListInfo.Id}.txt")))
+                        using (var input = await request.ListDownload.HttpResponseMessage.Content.ReadAsStreamAsync())
+                        {
+                            input.CopyTo(output);
+                        }
                 }
                 catch (HttpRequestException ex)
                 {
                     _logger.LogError(ex,
-                        $"Error downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
+                        $"Error downloading list {request.ListDownload.ListInfo.Id} from {request.ListDownload.ListInfo.ViewUrl}.");
                 }
             }
         }
