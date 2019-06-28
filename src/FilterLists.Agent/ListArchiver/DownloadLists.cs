@@ -29,7 +29,6 @@ namespace FilterLists.Agent.ListArchiver
                 _mediator = mediator;
             }
 
-            // https://stackoverflow.com/a/22492731/2343739
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
                 var downloader = new ActionBlock<ListInfo>(
@@ -37,7 +36,7 @@ namespace FilterLists.Agent.ListArchiver
                     new ExecutionDataflowBlockOptions {MaxDegreeOfParallelism = MaxDegreeOfParallelism}
                 );
                 foreach (var list in request.ListInfo)
-                    await downloader.SendAsync(list, cancellationToken);
+                        await downloader.SendAsync(list, cancellationToken);
                 downloader.Complete();
                 await downloader.Completion;
             }
