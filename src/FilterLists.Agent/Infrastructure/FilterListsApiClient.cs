@@ -6,7 +6,7 @@ namespace FilterLists.Agent.Infrastructure
 {
     public interface IFilterListsApiClient
     {
-        Task<TResponse> ExecuteAsync<TResponse>(RestRequest request);
+        Task<TResponse> ExecuteAsync<TResponse>(IRestRequest request);
     }
 
     public class FilterListsApiClient : IFilterListsApiClient
@@ -20,7 +20,7 @@ namespace FilterLists.Agent.Infrastructure
             _restClient = new RestClient(FilterListsApiBaseUrl);
         }
 
-        public async Task<TResponse> ExecuteAsync<TResponse>(RestRequest request)
+        public async Task<TResponse> ExecuteAsync<TResponse>(IRestRequest request)
         {
             var response = await _restClient.ExecuteTaskAsync<TResponse>(request);
             if (response.ErrorException == null)
