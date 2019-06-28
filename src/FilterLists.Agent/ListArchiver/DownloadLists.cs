@@ -21,7 +21,10 @@ namespace FilterLists.Agent.ListArchiver
 
         public class Handler : AsyncRequestHandler<Command>
         {
-            private const int MaxDegreeOfParallelism = 25;
+            //TODO: sort lists and use domain sharding for concurrent downloads 
+            //TODO: manual/auto-tune degrees of parallelism
+            private const int MaxDegreeOfParallelism = 5;
+
             private readonly IMediator _mediator;
 
             public Handler(IMediator mediator)
