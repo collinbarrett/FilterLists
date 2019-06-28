@@ -13,12 +13,12 @@ namespace FilterLists.Agent.ListArchiver
     {
         public class Command : IRequest
         {
-            public Command(IEnumerable<ListInfo> lists)
+            public Command(IEnumerable<ListInfo> listInfo)
             {
-                Lists = lists;
+                ListInfo = listInfo;
             }
 
-            public IEnumerable<ListInfo> Lists { get; }
+            public IEnumerable<ListInfo> ListInfo { get; }
         }
 
         public class Handler : AsyncRequestHandler<Command>
@@ -27,10 +27,10 @@ namespace FilterLists.Agent.ListArchiver
             private readonly HttpClient _httpClient;
             private readonly IMediator _mediator;
 
-            public Handler(IMediator mediator, HttpClient httpClient)
+            public Handler(HttpClient httpClient, IMediator mediator)
             {
-                _mediator = mediator;
                 _httpClient = httpClient;
+                _mediator = mediator;
             }
 
             // https://stackoverflow.com/a/22492731/2343739
@@ -42,11 +42,11 @@ namespace FilterLists.Agent.ListArchiver
                 );
                 var buffer = new BufferBlock<ListDownload>();
                 downloader.LinkTo(buffer);
-                foreach (var list in request.Lists)
+                foreach (var list in request.ListInfo)
                     await downloader.SendAsync(list, cancellationToken);
                 downloader.Complete();
 
-                foreach (var _ in request.Lists)
+                foreach (var _ in request.ListInfo)
                 {
                     var listDownload = await buffer.ReceiveAsync(cancellationToken);
                     await _mediator.Send(new DownloadList.Command(listDownload), cancellationToken);
