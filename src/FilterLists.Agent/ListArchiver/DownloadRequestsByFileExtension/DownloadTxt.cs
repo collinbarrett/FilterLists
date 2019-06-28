@@ -51,6 +51,11 @@ namespace FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension
                     _logger.LogError(ex,
                         $"Error downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
                 }
+                catch (TaskCanceledException ex)
+                {
+                    _logger.LogError(ex,
+                        $"Error downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
+                }
             }
         }
     }
