@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Entities.Aggregates;
+using FilterLists.Agent.Entities;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
@@ -12,12 +12,12 @@ namespace FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension
     {
         public class Command : IRequest
         {
-            public Command(ListDownload listDownload)
+            public Command(ListInfo listInfo)
             {
-                ListDownload = listDownload;
+                ListInfo = listInfo;
             }
 
-            public ListDownload ListDownload { get; }
+            public ListInfo ListInfo { get; }
         }
 
         public class Handler : AsyncRequestHandler<Command>
@@ -25,28 +25,29 @@ namespace FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension
             private readonly HttpClient _httpClient;
             private readonly ILogger<Handler> _logger;
 
-            public Handler(ILogger<Handler> logger, HttpClient httpClient)
+            public Handler(HttpClient httpClient, ILogger<Handler> logger)
             {
-                _logger = logger;
                 _httpClient = httpClient;
+                _logger = logger;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                try
+                using (var response = await _httpClient.GetAsync(request.ListInfo.ViewUrl, cancellationToken))
                 {
-                    if (request.ListDownload.HttpResponseMessage.IsSuccessStatusCode)
-                        using (Stream output =
-                            File.OpenWrite(Path.Combine("archives", $"{request.ListDownload.ListInfo.Id}.txt")))
-                        using (var input = await request.ListDownload.HttpResponseMessage.Content.ReadAsStreamAsync())
+                    if (response.IsSuccessStatusCode)
+                        try
                         {
-                            input.CopyTo(output);
+                            using (Stream output = File.OpenWrite(Path.Combine("archives", $"{request.ListInfo.Id}.txt")))
+                            using (var input = await response.Content.ReadAsStreamAsync())
+                            {
+                                input.CopyTo(output);
+                            }
                         }
-                }
-                catch (HttpRequestException ex)
-                {
-                    _logger.LogError(ex,
-                        $"Error downloading list {request.ListDownload.ListInfo.Id} from {request.ListDownload.ListInfo.ViewUrl}.");
+                        catch (HttpRequestException ex)
+                        {
+                            _logger.LogError(ex, $"Error downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
+                        }
                 }
             }
         }
