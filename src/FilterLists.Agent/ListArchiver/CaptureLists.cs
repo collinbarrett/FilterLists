@@ -18,6 +18,7 @@ namespace FilterLists.Agent.ListArchiver
 
         public class Handler : AsyncRequestHandler<Command>
         {
+            private const string GitRepoDirectory = @"archives";
             private readonly IFilterListsApiClient _apiClient;
             private readonly IMediator _mediator;
 
@@ -29,25 +30,28 @@ namespace FilterLists.Agent.ListArchiver
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                const string workingDirectoryPath = @"archives";
-
                 var lists = await GetListInfo();
                 await _mediator.Send(new DownloadLists.Command(lists), cancellationToken);
-
-
-                using (var repo = new Repository(workingDirectoryPath))
-                {
-                    Commands.Stage(repo, "*");
-                    var author = new Signature("James", "@jugglingnutcase", DateTime.UtcNow);
-                    var committer = author;
-                    var commit = repo.Commit("Here's a commit i made!", author, committer);
-                }
+                CommitDownloadedLists();
             }
 
             private async Task<IEnumerable<ListInfo>> GetListInfo()
             {
                 var listsRequest = new RestRequest("lists");
                 return await _apiClient.ExecuteAsync<IEnumerable<ListInfo>>(listsRequest);
+            }
+
+            private static void CommitDownloadedLists()
+            {
+                if (!Repository.IsValid(GitRepoDirectory))
+                    Repository.Init(GitRepoDirectory);
+                using (var repo = new Repository(GitRepoDirectory))
+                {
+                    Commands.Stage(repo, "*");
+                    var utcNow = DateTime.UtcNow;
+                    var signature = new Signature("FilterLists.Agent", "@filterlists.com", utcNow);
+                    repo.Commit(utcNow.ToShortDateString() + " FilterLists archive by FilterLists.Agent", signature, signature);
+                }
             }
         }
     }
