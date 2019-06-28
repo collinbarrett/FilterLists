@@ -76,11 +76,6 @@ namespace FilterLists.Agent.ListArchiver
                     _logger.LogWarning(
                         $"File extension not supported for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
                 }
-                catch (ArgumentException ex)
-                {
-                    _logger.LogError(ex,
-                        $"Could not determine the file extension for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
-                }
             }
 
             private async Task DownloadByFileExtension(Command request, CancellationToken cancellationToken)
