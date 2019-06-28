@@ -17364,5 +17364,50 @@
             "issuesUrl": "https://gitlab.com/jamujr/lsrg/issues",
             "syntaxId": 18,
             "viewUrl": "https://gitlab.com/jamujr/lsrg/raw/master/trackers-top-500.lsrules"
-        }
+        },
+  {
+    "id": 1635,
+    "description": "This aggregate list currently targets hateful/scamming religious preachers, astrology, and prayer time listings on mainstream websites.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Dandelion Sprout's Anti-'Religious insanity' List",
+    "publishedDate": "2019-06-28T16:00:00",
+    "syntaxId": 17,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Religion%20List.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout's%20Anti-Religion%20List.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout's%20Anti-Religion%20List.txt"
+  },
+  {
+    "id": 1636,
+    "description": "This is a dual-compatibility list for domains-list tools and uBlock Origin, which intends to target and prevent access to groups and individuals that preach things that are either very strange, very hateful, or that promote economical scams.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-'Insane religious preachers' List",
+    "publishedDate": "2019-06-28T16:00:00",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPreacherList.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPreacherList.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPreacherList.txt"
+  },
+  {
+    "id": 1637,
+    "description": "This is a somewhat alternate approach to the usual anti-comment-section lists, as this list only removes those comment sections that are filled with exceptionally bad comments.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 10,
+    "name": "Anti-'Awful comments' List",
+    "publishedDate": "2019-06-28T16:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAwfulCommentsList.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAwfulCommentsList.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAwfulCommentsList.txt"
+  }
 ]
