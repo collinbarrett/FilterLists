@@ -73,11 +73,13 @@ namespace FilterLists.Agent.ListArchiver
                 }
                 catch (NotImplementedException)
                 {
-                    _logger.LogWarning($"File extension not supported for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
+                    _logger.LogWarning(
+                        $"File extension not supported for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
                 }
                 catch (ArgumentException ex)
                 {
-                    _logger.LogError(ex, $"Could not determine the file extension for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
+                    _logger.LogError(ex,
+                        $"Could not determine the file extension for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
                 }
             }
 
@@ -86,12 +88,15 @@ namespace FilterLists.Agent.ListArchiver
                 var extension = Path.GetExtension(request.ListInfo.ViewUrl.AbsolutePath);
                 if (DownloadRequestsByFileExtension.ContainsKey(extension))
                 {
-                    _logger.LogInformation($"Downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}...");
-                    await _mediator.Send(DownloadRequestsByFileExtension[extension].Invoke(request.ListInfo), cancellationToken);
+                    _logger.LogInformation(
+                        $"Downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}...");
+                    await _mediator.Send(DownloadRequestsByFileExtension[extension].Invoke(request.ListInfo),
+                        cancellationToken);
                 }
                 else
                 {
-                    _logger.LogWarning($"File extension not recognized for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
+                    _logger.LogWarning(
+                        $"File extension not recognized for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
                 }
             }
         }
