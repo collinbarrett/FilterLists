@@ -33,23 +33,23 @@ namespace FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                using (var response = await _httpClient.GetAsync(request.ListInfo.ViewUrl, cancellationToken))
+                try
                 {
-                    if (response.IsSuccessStatusCode)
-                        try
-                        {
+                    using (var response = await _httpClient.GetAsync(request.ListInfo.ViewUrl, cancellationToken))
+                    {
+                        if (response.IsSuccessStatusCode)
                             using (Stream output =
                                 File.OpenWrite(Path.Combine("archives", $"{request.ListInfo.Id}.txt")))
                             using (var input = await response.Content.ReadAsStreamAsync())
                             {
                                 input.CopyTo(output);
                             }
-                        }
-                        catch (HttpRequestException ex)
-                        {
-                            _logger.LogError(ex,
-                                $"Error downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
-                        }
+                    }
+                }
+                catch (HttpRequestException ex)
+                {
+                    _logger.LogError(ex,
+                        $"Error downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
                 }
             }
         }
