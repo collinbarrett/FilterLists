@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Entities;
 using FilterLists.Agent.Infrastructure;
+using LibGit2Sharp;
 using MediatR;
 using RestSharp;
 
@@ -27,11 +29,19 @@ namespace FilterLists.Agent.ListArchiver
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                //TODO: git init if repo doesn't exist
+                const string workingDirectoryPath = @"archives";
+
                 var lists = await GetListInfo();
                 await _mediator.Send(new DownloadLists.Command(lists), cancellationToken);
-                //TODO: git add .
-                //TODO: git commit
+
+
+                using (var repo = new Repository(workingDirectoryPath))
+                {
+                    Commands.Stage(repo, "*");
+                    var author = new Signature("James", "@jugglingnutcase", DateTime.UtcNow);
+                    var committer = author;
+                    var commit = repo.Commit("Here's a commit i made!", author, committer);
+                }
             }
 
             private async Task<IEnumerable<ListInfo>> GetListInfo()
