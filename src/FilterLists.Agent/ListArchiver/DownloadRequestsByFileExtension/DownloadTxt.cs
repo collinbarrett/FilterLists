@@ -25,9 +25,9 @@ namespace FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension
             private readonly HttpClient _httpClient;
             private readonly ILogger<Handler> _logger;
 
-            public Handler(HttpClient httpClient, ILogger<Handler> logger)
+            public Handler(AgentHttpClient httpClient, ILogger<Handler> logger)
             {
-                _httpClient = httpClient;
+                _httpClient = httpClient.Client;
                 _logger = logger;
             }
 
