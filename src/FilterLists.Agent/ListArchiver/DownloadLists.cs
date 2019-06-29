@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
@@ -21,10 +22,7 @@ namespace FilterLists.Agent.ListArchiver
 
         public class Handler : AsyncRequestHandler<Command>
         {
-            //TODO: sort lists and use domain sharding for concurrent downloads 
-            //TODO: manual/auto-tune degrees of parallelism
-            private const int MaxDegreeOfParallelism = 5;
-
+            private const int MaxDegreeOfParallelism = 20; //TODO: tune
             private readonly IMediator _mediator;
 
             public Handler(IMediator mediator)
@@ -38,10 +36,21 @@ namespace FilterLists.Agent.ListArchiver
                     async l => await _mediator.Send(new DownloadList.Command(l), cancellationToken),
                     new ExecutionDataflowBlockOptions {MaxDegreeOfParallelism = MaxDegreeOfParallelism}
                 );
-                foreach (var list in request.ListInfo)
+                var orderedListInfo = ShardByHost(request.ListInfo);
+                foreach (var list in orderedListInfo)
                     await downloader.SendAsync(list, cancellationToken);
                 downloader.Complete();
                 await downloader.Completion;
+            }
+
+            //https://keestalkstech.com/2017/10/linq-round-robin-ordering-based-segments/
+            private static IEnumerable<ListInfo> ShardByHost(IEnumerable<ListInfo> listInfo)
+            {
+                return listInfo.GroupBy(l => l.ViewUrl.Host)
+                    .SelectMany((g, gi) => g.Select((l, li) => new {Index = li, GroupIndex = gi, Value = l}))
+                    .OrderBy(u => u.Index)
+                    .ThenBy(u => u.GroupIndex)
+                    .Select(u => u.Value);
             }
         }
     }
