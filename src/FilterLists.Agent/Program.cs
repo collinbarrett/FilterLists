@@ -1,10 +1,12 @@
 ﻿using System;
+using System.IO;
 using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using FilterLists.Agent.Infrastructure;
 using FilterLists.Agent.ListArchiver;
 using MediatR;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
@@ -26,10 +28,16 @@ namespace FilterLists.Agent
 
         private static void RegisterServices()
         {
+            var configuration = GetConfiguration();
             var serviceCollection = new ServiceCollection();
 
             // register Agent services
-            serviceCollection.AddLogging(b => b.AddConsole());
+            //serviceCollection.AddSingleton(configuration);
+            serviceCollection.AddLogging(b =>
+            {
+                b.AddConsole();
+                b.AddApplicationInsights(configuration["ApplicationInsights:InstrumentationKey"]);
+            });
             serviceCollection.AddMediatR(typeof(Program).Assembly);
             serviceCollection.AddHttpClient<AgentHttpClient>();
             serviceCollection.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
@@ -38,6 +46,15 @@ namespace FilterLists.Agent
             containerBuilder.Populate(serviceCollection);
             var container = containerBuilder.Build();
             _serviceProvider = new AutofacServiceProvider(container);
+        }
+
+        private static IConfigurationRoot GetConfiguration()
+        {
+            return new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", true, false)
+                .AddEnvironmentVariables()
+                .Build();
         }
     }
 }
