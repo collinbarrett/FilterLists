@@ -1,5 +1,4 @@
-﻿using Microsoft.ApplicationInsights.Extensibility.Implementation;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,7 +16,6 @@ namespace FilterLists.Api.DependencyInjection.Extensions
             services.AddMvcCustom();
             services.AddRoutingCustom();
             services.AddApiVersioning();
-            TelemetryDebugWriter.IsTracingDisabled = true;
         }
 
         private static void ConfigureCookiePolicy(this IServiceCollection services) =>
