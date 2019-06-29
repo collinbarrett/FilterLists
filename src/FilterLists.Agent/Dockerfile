@@ -4,7 +4,6 @@
 # init base
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-alpine as base
 ENTRYPOINT ["dotnet", "FilterLists.Agent.dll"]
-LABEL do-not-prune
 WORKDIR /app
 
 # init build
