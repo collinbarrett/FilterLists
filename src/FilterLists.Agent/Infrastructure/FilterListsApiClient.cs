@@ -17,7 +17,7 @@ namespace FilterLists.Agent.Infrastructure
 
         public FilterListsApiClient()
         {
-            _restClient = new RestClient(FilterListsApiBaseUrl);
+            _restClient = new RestClient(FilterListsApiBaseUrl) {UserAgent = "FilterLists.Agent"};
         }
 
         public async Task<TResponse> ExecuteAsync<TResponse>(IRestRequest request)
