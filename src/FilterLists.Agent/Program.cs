@@ -51,8 +51,8 @@ namespace FilterLists.Agent
         {
             return new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", true, false)
                 .AddEnvironmentVariables()
+                .AddJsonFile("appsettings.json", true, false)
                 .Build();
         }
     }
