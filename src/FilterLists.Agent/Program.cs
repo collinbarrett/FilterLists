@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Net.Http;
 using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
@@ -28,14 +27,14 @@ namespace FilterLists.Agent
         private static void RegisterServices()
         {
             var serviceCollection = new ServiceCollection();
-            var containerBuilder = new ContainerBuilder();
 
             // register Agent services
             serviceCollection.AddLogging(b => b.AddConsole());
             serviceCollection.AddMediatR(typeof(Program).Assembly);
-            containerBuilder.RegisterType<FilterListsApiClient>().AsImplementedInterfaces().SingleInstance();
-            containerBuilder.RegisterType<HttpClient>().SingleInstance();
+            serviceCollection.AddHttpClient<AgentHttpClient>();
+            serviceCollection.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
 
+            var containerBuilder = new ContainerBuilder();
             containerBuilder.Populate(serviceCollection);
             var container = containerBuilder.Build();
             _serviceProvider = new AutofacServiceProvider(container);
