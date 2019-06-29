@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Entities;
+using FilterLists.Agent.Infrastructure;
 using MediatR;
 using Microsoft.Extensions.Logging;
 

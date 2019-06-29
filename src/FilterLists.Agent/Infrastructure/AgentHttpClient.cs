@@ -1,13 +1,22 @@
 ﻿using System;
 using System.Net.Http;
+using System.Net.Http.Headers;
 
-public class AgentHttpClient
+namespace FilterLists.Agent.Infrastructure
 {
-    public AgentHttpClient(HttpClient client)
+    public class AgentHttpClient
     {
-        Client = client;
-        Client.Timeout = TimeSpan.FromMinutes(10);
-    }
+        public AgentHttpClient(HttpClient client)
+        {
+            client.Timeout = TimeSpan.FromMinutes(10);
 
-    public HttpClient Client { get; }
+            var header = new ProductHeaderValue("FilterLists.Agent");
+            var userAgent = new ProductInfoHeaderValue(header);
+            client.DefaultRequestHeaders.UserAgent.Add(userAgent);
+
+            Client = client;
+        }
+
+        public HttpClient Client { get; }
+    }
 }
