@@ -49,7 +49,7 @@ namespace FilterLists.Agent.ListArchiver
                 {
                     Commands.Stage(repo, "*");
                     var utcNow = DateTime.UtcNow;
-                    var signature = new Signature("FilterLists.Agent", "@filterlists.com", utcNow);
+                    var signature = new Signature("FilterLists.Agent", "noreply@filterlists.com", utcNow);
                     repo.Commit(utcNow.ToShortDateString() + " FilterLists archive by FilterLists.Agent", signature, signature);
                 }
             }
