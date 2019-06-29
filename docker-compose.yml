@@ -64,6 +64,8 @@ services:
       target: final
     volumes:
       - archives:/app/archives
+    environment:
+      ApplicationInsights__InstrumentationKey: ${FILTERLISTS_AGENT_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
 
 networks:
   reverse-proxy:
