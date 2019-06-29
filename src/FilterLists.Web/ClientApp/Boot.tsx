@@ -6,7 +6,7 @@ import * as RoutesModule from "./Routes";
 let routes = RoutesModule.Routes;
 
 const renderApp = () => {
-    const baseUrl = document.getElementsByTagName("base")[0].getAttribute("href")!;
+    const baseUrl = document.getElementsByTagName("base")[0].getAttribute("href");
     ReactDOM.render(
         <AppContainer>
             <BrowserRouter children={ routes } basename={ baseUrl }/>
