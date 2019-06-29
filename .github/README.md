@@ -19,6 +19,11 @@
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=4"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/4/5.svg" alt="Azure DevOps releases" /></a>
 <a href="https://hub.docker.com/r/collinbarrett/filterlists.web"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.web.svg" alt="Docker Pulls" /></a></p>
 
+<p align="center">Agent: 
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=17"><img src="https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/17.svg" alt="Azure DevOps builds" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=6"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/6/7.svg" alt="Azure DevOps releases" /></a>
+<a href="https://hub.docker.com/r/collinbarrett/filterlists.agent"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.agent.svg" alt="Docker Pulls" /></a></p>
+
 # Background
 
 FilterLists helps to protect your privacy and security when using the internet. It provides a comprehensive directory of subscription lists to block advertisements, malware, trackers, and other general annoyances. First, install one of the [software tools](https://github.com/collinbarrett/FilterLists/blob/master/data/Software.json) that supports these lists. Then, you can subscribe to a set of these lists inside of that software. If you need help or have a comment/question, open an [Issue](https://github.com/collinbarrett/FilterLists/issues).
