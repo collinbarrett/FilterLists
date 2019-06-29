@@ -32,7 +32,6 @@ namespace FilterLists.Agent
             var serviceCollection = new ServiceCollection();
 
             // register Agent services
-            //serviceCollection.AddSingleton(configuration);
             serviceCollection.AddLogging(b =>
             {
                 b.AddConsole();
