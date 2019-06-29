@@ -30,30 +30,30 @@ namespace FilterLists.Agent.ListArchiver
                 = new Dictionary<string, Func<ListInfo, IRequest>>
                 {
                     {"", l => new DownloadTxt.Command(l)},
-                    {".7z", l => throw new NotImplementedException()},
-                    {".acl", l => throw new NotImplementedException()},
-                    {".action", l => throw new NotImplementedException()},
-                    {".all", l => throw new NotImplementedException()},
-                    {".aspx", l => throw new NotImplementedException()},
-                    {".bat", l => throw new NotImplementedException()},
-                    {".blacklist", l => throw new NotImplementedException()},
-                    {".conf", l => throw new NotImplementedException()},
-                    {".csv", l => throw new NotImplementedException()},
-                    {".dat", l => throw new NotImplementedException()},
-                    {".deny", l => throw new NotImplementedException()},
-                    {".host", l => throw new NotImplementedException()},
-                    {".hosts", l => throw new NotImplementedException()},
-                    {".ips", l => throw new NotImplementedException()},
-                    {".ipset", l => throw new NotImplementedException()},
-                    {".json", l => throw new NotImplementedException()},
-                    {".list", l => throw new NotImplementedException()},
-                    {".lsrules", l => throw new NotImplementedException()},
-                    {".netset", l => throw new NotImplementedException()},
-                    {".p2p", l => throw new NotImplementedException()},
-                    {".php", l => throw new NotImplementedException()},
-                    {".tpl", l => throw new NotImplementedException()},
-                    {".txt", l => new DownloadTxt.Command(l)},
-                    {".zip", l => throw new NotImplementedException()}
+                    //{".7z", l => throw new NotImplementedException()},
+                    //{".acl", l => throw new NotImplementedException()},
+                    //{".action", l => throw new NotImplementedException()},
+                    //{".all", l => throw new NotImplementedException()},
+                    //{".aspx", l => throw new NotImplementedException()},
+                    //{".bat", l => throw new NotImplementedException()},
+                    //{".blacklist", l => throw new NotImplementedException()},
+                    //{".conf", l => throw new NotImplementedException()},
+                    //{".csv", l => throw new NotImplementedException()},
+                    //{".dat", l => throw new NotImplementedException()},
+                    //{".deny", l => throw new NotImplementedException()},
+                    //{".host", l => throw new NotImplementedException()},
+                    //{".hosts", l => throw new NotImplementedException()},
+                    //{".ips", l => throw new NotImplementedException()},
+                    //{".ipset", l => throw new NotImplementedException()},
+                    //{".json", l => throw new NotImplementedException()},
+                    //{".list", l => throw new NotImplementedException()},
+                    //{".lsrules", l => throw new NotImplementedException()},
+                    //{".netset", l => throw new NotImplementedException()},
+                    //{".p2p", l => throw new NotImplementedException()},
+                    //{".php", l => throw new NotImplementedException()},
+                    //{".tpl", l => throw new NotImplementedException()},
+                    {".txt", l => new DownloadTxt.Command(l)}
+                    //{".zip", l => throw new NotImplementedException()}
                 };
 
             private readonly ILogger<Handler> _logger;
@@ -67,15 +67,7 @@ namespace FilterLists.Agent.ListArchiver
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                try
-                {
-                    await DownloadByFileExtension(request, cancellationToken);
-                }
-                catch (NotImplementedException)
-                {
-                    _logger.LogWarning(
-                        $"File extension not supported for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
-                }
+                await DownloadByFileExtension(request, cancellationToken);
             }
 
             private async Task DownloadByFileExtension(Command request, CancellationToken cancellationToken)
@@ -91,7 +83,7 @@ namespace FilterLists.Agent.ListArchiver
                 else
                 {
                     _logger.LogWarning(
-                        $"File extension not recognized for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
+                        $"File extension not supported for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
                 }
             }
         }
