@@ -1,7 +1,9 @@
 ﻿using System;
+using JetBrains.Annotations;
 
-namespace FilterLists.Agent.Entities
+namespace FilterLists.Agent.Core.Entities
 {
+    [UsedImplicitly]
     public class ListInfo
     {
         public int Id { get; private set; }

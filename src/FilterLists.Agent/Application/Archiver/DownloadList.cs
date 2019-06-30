@@ -4,13 +4,13 @@ using System.IO;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Entities;
-using FilterLists.Agent.Infrastructure;
+using FilterLists.Agent.Core.Entities;
+using FilterLists.Agent.Infrastructure.Clients;
 using MediatR;
 
 //TODO:  upsert into MariaDB Rules table https://stackoverflow.com/questions/15271202/mysql-load-data-infile-with-on-duplicate-key-update
 
-namespace FilterLists.Agent.ListArchiver
+namespace FilterLists.Agent.Application.Archiver
 {
     public static class DownloadList
     {

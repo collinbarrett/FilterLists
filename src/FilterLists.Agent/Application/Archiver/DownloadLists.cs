@@ -3,10 +3,10 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
-using FilterLists.Agent.Entities;
+using FilterLists.Agent.Core.Entities;
 using MediatR;
 
-namespace FilterLists.Agent.ListArchiver
+namespace FilterLists.Agent.Application.Archiver
 {
     public static class DownloadLists
     {
