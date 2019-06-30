@@ -43,8 +43,6 @@ namespace FilterLists.Agent.Features.Archiver
                 await downloader.Completion;
             }
 
-            //https://keestalkstech.com/2017/10/linq-round-robin-ordering-based-segments/
-            //TODO: space out overweighted hosts throughout rather than having them all at the end of the queue
             private static IEnumerable<ListInfo> ShardByHost(IEnumerable<ListInfo> listInfo)
             {
                 return listInfo.GroupBy(l => l.ViewUrl.Host)
