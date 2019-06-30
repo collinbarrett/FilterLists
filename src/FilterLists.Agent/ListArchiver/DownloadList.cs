@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Entities;
-using FilterLists.Agent.ListArchiver.DownloadRequestsByFileExtension;
+using FilterLists.Agent.Infrastructure;
 using MediatR;
-using Microsoft.Extensions.Logging;
 
 //TODO:  upsert into MariaDB Rules table https://stackoverflow.com/questions/15271202/mysql-load-data-infile-with-on-duplicate-key-update
 
@@ -26,43 +26,41 @@ namespace FilterLists.Agent.ListArchiver
 
         public class Handler : AsyncRequestHandler<Command>
         {
-            private static readonly Dictionary<string, Func<ListInfo, IRequest>> DownloadRequestsByFileExtension
-                = new Dictionary<string, Func<ListInfo, IRequest>>
+            private static readonly Dictionary<string, FileType> DownloadRequestsByFileExtension
+                = new Dictionary<string, FileType>
                 {
-                    {"", l => new DownloadTxt.Command(l)},
-                    //{".7z", l => throw new NotImplementedException()},
-                    //{".acl", l => throw new NotImplementedException()},
-                    //{".action", l => throw new NotImplementedException()},
-                    //{".all", l => throw new NotImplementedException()},
-                    //{".aspx", l => throw new NotImplementedException()},
-                    //{".bat", l => throw new NotImplementedException()},
-                    //{".blacklist", l => throw new NotImplementedException()},
-                    //{".conf", l => throw new NotImplementedException()},
-                    //{".csv", l => throw new NotImplementedException()},
-                    //{".dat", l => throw new NotImplementedException()},
-                    //{".deny", l => throw new NotImplementedException()},
-                    //{".host", l => throw new NotImplementedException()},
-                    //{".hosts", l => throw new NotImplementedException()},
-                    //{".ips", l => throw new NotImplementedException()},
-                    //{".ipset", l => throw new NotImplementedException()},
-                    //{".json", l => throw new NotImplementedException()},
-                    //{".list", l => throw new NotImplementedException()},
-                    //{".lsrules", l => throw new NotImplementedException()},
-                    //{".netset", l => throw new NotImplementedException()},
-                    //{".p2p", l => throw new NotImplementedException()},
-                    //{".php", l => throw new NotImplementedException()},
-                    //{".tpl", l => throw new NotImplementedException()},
-                    {".txt", l => new DownloadTxt.Command(l)}
-                    //{".zip", l => throw new NotImplementedException()}
+                    {"", FileType.RawText},
+                    {".7z", FileType.NonForwardOnlyCompressed},
+                    {".acl", FileType.RawText},
+                    {".action", FileType.RawText},
+                    {".all", FileType.RawText},
+                    {".aspx", FileType.RawText},
+                    {".bat", FileType.RawText},
+                    {".blacklist", FileType.RawText},
+                    {".conf", FileType.RawText},
+                    {".csv", FileType.RawText},
+                    {".dat", FileType.RawText},
+                    {".deny", FileType.RawText},
+                    {".host", FileType.RawText},
+                    {".hosts", FileType.RawText},
+                    {".ips", FileType.RawText},
+                    {".ipset", FileType.RawText},
+                    {".json", FileType.RawText},
+                    {".list", FileType.RawText},
+                    {".lsrules", FileType.RawText},
+                    {".netset", FileType.RawText},
+                    {".p2p", FileType.RawText},
+                    {".php", FileType.RawText},
+                    {".tpl", FileType.RawText},
+                    {".txt", FileType.RawText},
+                    {".zip", FileType.ForwardOnlyCompressed}
                 };
 
-            private readonly ILogger<Handler> _logger;
-            private readonly IMediator _mediator;
+            private readonly HttpClient _httpClient;
 
-            public Handler(ILogger<Handler> logger, IMediator mediator)
+            public Handler(AgentHttpClient httpClient)
             {
-                _logger = logger;
-                _mediator = mediator;
+                _httpClient = httpClient.Client;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
@@ -72,18 +70,38 @@ namespace FilterLists.Agent.ListArchiver
 
             private async Task DownloadByFileExtension(Command request, CancellationToken cancellationToken)
             {
-                var extension = Path.GetExtension(request.ListInfo.ViewUrl.AbsolutePath);
-                if (DownloadRequestsByFileExtension.ContainsKey(extension))
+                using (var response = await _httpClient.GetAsync(request.ListInfo.ViewUrl, cancellationToken))
                 {
-                    _logger.LogInformation(
-                        $"Downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}...");
-                    await _mediator.Send(DownloadRequestsByFileExtension[extension].Invoke(request.ListInfo),
-                        cancellationToken);
-                }
-                else
-                {
-                    _logger.LogWarning(
-                        $"File extension not supported for list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}.");
+                    if (response.IsSuccessStatusCode)
+                        using (var input = await response.Content.ReadAsStreamAsync())
+                        {
+                            var sourceExtension = Path.GetExtension(request.ListInfo.ViewUrl.AbsolutePath);
+                            string destinationExtension;
+                            if (string.IsNullOrEmpty(sourceExtension) || sourceExtension == ".zip" ||
+                                sourceExtension == ".7z")
+                                destinationExtension = ".txt";
+                            else
+                                destinationExtension = sourceExtension;
+
+                            using (var output = File.OpenWrite(Path.Combine("archives",
+                                $"{request.ListInfo.Id}{destinationExtension}")))
+                            {
+                                switch (DownloadRequestsByFileExtension[sourceExtension])
+                                {
+                                    case FileType.RawText:
+                                        await input.CopyToAsync(output, cancellationToken);
+                                        break;
+                                    case FileType.ForwardOnlyCompressed:
+                                        await input.CopyToWithCompressedReaderApi(output, cancellationToken);
+                                        break;
+                                    case FileType.NonForwardOnlyCompressed:
+                                        await input.CopyToWithCompressedArchiveApi(output, cancellationToken);
+                                        break;
+                                    default:
+                                        throw new NotImplementedException();
+                                }
+                            }
+                        }
                 }
             }
         }
