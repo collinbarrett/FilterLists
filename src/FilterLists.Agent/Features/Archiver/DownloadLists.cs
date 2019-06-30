@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 using FilterLists.Agent.Core.Entities;
+using FilterLists.Agent.Extensions;
 using MediatR;
 
 namespace FilterLists.Agent.Features.Archiver
@@ -36,20 +36,11 @@ namespace FilterLists.Agent.Features.Archiver
                     async l => await _mediator.Send(new DownloadList.Command(l), cancellationToken),
                     new ExecutionDataflowBlockOptions {MaxDegreeOfParallelism = MaxDegreeOfParallelism}
                 );
-                var orderedListInfo = ShardByHost(request.ListInfo);
-                foreach (var list in orderedListInfo)
-                    await downloader.SendAsync(list, cancellationToken);
+                var orderedListInfo = request.ListInfo.DistributeByHost();
+                foreach (var listInfo in orderedListInfo)
+                    await downloader.SendAsync(listInfo, cancellationToken);
                 downloader.Complete();
                 await downloader.Completion;
-            }
-
-            private static IEnumerable<ListInfo> ShardByHost(IEnumerable<ListInfo> listInfo)
-            {
-                return listInfo.GroupBy(l => l.ViewUrl.Host)
-                    .SelectMany((g, gi) => g.Select((l, i) => new {Index = i, GroupIndex = gi, ListInfo = l}))
-                    .OrderBy(a => a.Index)
-                    .ThenBy(a => a.GroupIndex)
-                    .Select(a => a.ListInfo);
             }
         }
     }
