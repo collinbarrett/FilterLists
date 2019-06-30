@@ -1,4 +1,6 @@
-﻿using FilterLists.Agent.Infrastructure.Clients;
+﻿using FilterLists.Agent.Core.Interfaces;
+using FilterLists.Agent.Infrastructure.Clients;
+using FilterLists.Agent.Infrastructure.Repositories;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -10,22 +12,22 @@ namespace FilterLists.Agent.Extensions
     {
         public static void RegisterAgentServices(this IServiceCollection serviceCollection)
         {
-            var configuration = GetConfiguration();
+            var configurationRoot = BuildConfigurationRoot();
             serviceCollection.AddLogging(b =>
             {
                 b.AddConsole();
-                b.AddApplicationInsights(configuration["ApplicationInsights:InstrumentationKey"] ?? "");
+                b.AddApplicationInsights(configurationRoot["ApplicationInsights:InstrumentationKey"] ?? "");
             });
             serviceCollection.AddMediatR(typeof(Program).Assembly);
             serviceCollection.AddHttpClient<AgentHttpClient>();
+            serviceCollection.AddSingleton<IConfiguration>(configurationRoot);
             serviceCollection.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
+            serviceCollection.AddTransient<IListInfoRepository, ListInfoRepository>();
         }
 
-        private static IConfigurationRoot GetConfiguration()
+        private static IConfigurationRoot BuildConfigurationRoot()
         {
-            return new ConfigurationBuilder()
-                .AddEnvironmentVariables()
-                .Build();
+            return new ConfigurationBuilder().AddEnvironmentVariables().Build();
         }
     }
 }

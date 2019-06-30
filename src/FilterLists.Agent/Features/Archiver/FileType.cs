@@ -1,4 +1,4 @@
-﻿namespace FilterLists.Agent.Application.Archiver
+﻿namespace FilterLists.Agent.Features.Archiver
 {
     public enum FileType
     {

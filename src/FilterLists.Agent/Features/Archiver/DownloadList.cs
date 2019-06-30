@@ -10,7 +10,7 @@ using MediatR;
 
 //TODO:  upsert into MariaDB Rules table https://stackoverflow.com/questions/15271202/mysql-load-data-infile-with-on-duplicate-key-update
 
-namespace FilterLists.Agent.Application.Archiver
+namespace FilterLists.Agent.Features.Archiver
 {
     public static class DownloadList
     {
