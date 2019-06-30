@@ -6,7 +6,7 @@ using System.Threading.Tasks.Dataflow;
 using FilterLists.Agent.Core.Entities;
 using MediatR;
 
-namespace FilterLists.Agent.Application.Archiver
+namespace FilterLists.Agent.Features.Archiver
 {
     public static class DownloadLists
     {
@@ -22,7 +22,7 @@ namespace FilterLists.Agent.Application.Archiver
 
         public class Handler : AsyncRequestHandler<Command>
         {
-            private const int MaxDegreeOfParallelism = 5; //TODO: tune
+            private const int MaxDegreeOfParallelism = 5;
             private readonly IMediator _mediator;
 
             public Handler(IMediator mediator)
@@ -48,7 +48,7 @@ namespace FilterLists.Agent.Application.Archiver
             private static IEnumerable<ListInfo> ShardByHost(IEnumerable<ListInfo> listInfo)
             {
                 return listInfo.GroupBy(l => l.ViewUrl.Host)
-                    .SelectMany((g, gi) => g.Select((l, li) => new {Index = li, GroupIndex = gi, ListInfo = l}))
+                    .SelectMany((g, gi) => g.Select((l, i) => new {Index = i, GroupIndex = gi, ListInfo = l}))
                     .OrderBy(a => a.Index)
                     .ThenBy(a => a.GroupIndex)
                     .Select(a => a.ListInfo);

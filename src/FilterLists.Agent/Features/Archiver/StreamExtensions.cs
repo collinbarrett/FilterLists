@@ -5,7 +5,7 @@ using SharpCompress.Archives;
 using SharpCompress.Archives.SevenZip;
 using SharpCompress.Readers;
 
-namespace FilterLists.Agent.Application.Archiver
+namespace FilterLists.Agent.Features.Archiver
 {
     public static class StreamExtensions
     {

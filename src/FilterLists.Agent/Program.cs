@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
-using FilterLists.Agent.Application.Archiver;
 using FilterLists.Agent.Extensions;
+using FilterLists.Agent.Features.Archiver;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using FilterLists.Agent.Core.Interfaces;
 using MediatR;
 
-namespace FilterLists.Agent.Application.Archiver
+namespace FilterLists.Agent.Features.Archiver
 {
     public static class CaptureLists
     {
@@ -18,15 +18,15 @@ namespace FilterLists.Agent.Application.Archiver
 
             public Handler(IMediator mediator, IListInfoRepository listInfoRepository)
             {
-                _repo = listInfoRepository;
                 _mediator = mediator;
+                _repo = listInfoRepository;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
                 var lists = await _repo.GetAll();
                 await _mediator.Send(new DownloadLists.Command(lists), cancellationToken);
-                await _mediator.Send(new CommitDownloadedLists.Command(), cancellationToken);
+                await _mediator.Send(new CommitLists.Command(), cancellationToken);
             }
         }
     }
