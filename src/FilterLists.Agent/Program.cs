@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using System.Threading.Tasks;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
@@ -35,7 +34,7 @@ namespace FilterLists.Agent
             serviceCollection.AddLogging(b =>
             {
                 b.AddConsole();
-                b.AddApplicationInsights(configuration["ApplicationInsights:InstrumentationKey"]);
+                b.AddApplicationInsights(configuration["ApplicationInsights:InstrumentationKey"] ?? "");
             });
             serviceCollection.AddMediatR(typeof(Program).Assembly);
             serviceCollection.AddHttpClient<AgentHttpClient>();
@@ -50,9 +49,7 @@ namespace FilterLists.Agent
         private static IConfigurationRoot GetConfiguration()
         {
             return new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
                 .AddEnvironmentVariables()
-                .AddJsonFile("appsettings.json", true, false)
                 .Build();
         }
     }
