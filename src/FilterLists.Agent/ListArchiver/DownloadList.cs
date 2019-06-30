@@ -65,11 +65,6 @@ namespace FilterLists.Agent.ListArchiver
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                await DownloadByFileExtension(request, cancellationToken);
-            }
-
-            private async Task DownloadByFileExtension(Command request, CancellationToken cancellationToken)
-            {
                 using (var response = await _httpClient.GetAsync(request.ListInfo.ViewUrl, cancellationToken))
                 {
                     if (response.IsSuccessStatusCode)
@@ -77,14 +72,12 @@ namespace FilterLists.Agent.ListArchiver
                         {
                             var sourceExtension = Path.GetExtension(request.ListInfo.ViewUrl.AbsolutePath);
                             string destinationExtension;
-                            if (string.IsNullOrEmpty(sourceExtension) || sourceExtension == ".zip" ||
-                                sourceExtension == ".7z")
+                            if (string.IsNullOrEmpty(sourceExtension) || sourceExtension == ".zip" || sourceExtension == ".7z")
                                 destinationExtension = ".txt";
                             else
                                 destinationExtension = sourceExtension;
 
-                            using (var output = File.OpenWrite(Path.Combine("archives",
-                                $"{request.ListInfo.Id}{destinationExtension}")))
+                            using (var output = File.OpenWrite(Path.Combine("archives", $"{request.ListInfo.Id}{destinationExtension}")))
                             {
                                 switch (DownloadRequestsByFileExtension[sourceExtension])
                                 {
@@ -95,7 +88,7 @@ namespace FilterLists.Agent.ListArchiver
                                         await input.CopyToWithCompressedReaderApi(output, cancellationToken);
                                         break;
                                     case FileType.NonForwardOnlyCompressed:
-                                        await input.CopyToWithCompressedArchiveApi(output, cancellationToken);
+                                        input.CopyToWithCompressedArchiveApi(output);
                                         break;
                                     default:
                                         throw new NotImplementedException();

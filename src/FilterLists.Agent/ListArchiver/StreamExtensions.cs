@@ -1,9 +1,8 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using SharpCompress.Archives;
-using SharpCompress.Common;
+using SharpCompress.Archives.SevenZip;
 using SharpCompress.Readers;
 
 namespace FilterLists.Agent.ListArchiver
@@ -34,19 +33,14 @@ namespace FilterLists.Agent.ListArchiver
         ///     e.g. 7zip
         ///     https://github.com/adamhathcock/sharpcompress/blob/master/FORMATS.md
         /// </summary>
-        public static async Task CopyToWithCompressedArchiveApi(this Stream input, Stream output,
-            CancellationToken cancellationToken)
+        public static void CopyToWithCompressedArchiveApi(this Stream input, Stream output)
         {
-            //var archive = ArchiveFactory.Open(@"C:\Code\sharpcompress\TestArchives\sharpcompress.zip");
-            //foreach (var entry in archive.Entries)
-            //    if (!entry.IsDirectory)
-            //    {
-            //        Console.WriteLine(entry.Key);
-            //        entry.WriteToDirectory(@"C:\temp",
-            //            new ExtractionOptions {ExtractFullPath = true, Overwrite = true});
-            //    }
-
-            throw new NotImplementedException();
+            using (var archive = SevenZipArchive.Open(input))
+            {
+                foreach (var entry in archive.Entries)
+                    if (!entry.IsDirectory)
+                        entry.WriteTo(output);
+            }
         }
     }
 }
