@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Autofac;
-using Autofac.Extensions.DependencyInjection;
-using FilterLists.Agent.Infrastructure;
-using FilterLists.Agent.ListArchiver;
+using FilterLists.Agent.Application.Archiver;
+using FilterLists.Agent.Extensions;
 using MediatR;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 
 namespace FilterLists.Agent
 {
@@ -17,40 +13,17 @@ namespace FilterLists.Agent
 
         public static async Task Main()
         {
-            RegisterServices();
+            BuildServiceProvider();
 
             var mediator = _serviceProvider.GetService<IMediator>();
             await mediator.Send(new CaptureLists.Command());
-
-            ((IDisposable) _serviceProvider).Dispose();
         }
 
-        private static void RegisterServices()
+        private static void BuildServiceProvider()
         {
-            var configuration = GetConfiguration();
             var serviceCollection = new ServiceCollection();
-
-            // register Agent services
-            serviceCollection.AddLogging(b =>
-            {
-                b.AddConsole();
-                b.AddApplicationInsights(configuration["ApplicationInsights:InstrumentationKey"] ?? "");
-            });
-            serviceCollection.AddMediatR(typeof(Program).Assembly);
-            serviceCollection.AddHttpClient<AgentHttpClient>();
-            serviceCollection.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
-
-            var containerBuilder = new ContainerBuilder();
-            containerBuilder.Populate(serviceCollection);
-            var container = containerBuilder.Build();
-            _serviceProvider = new AutofacServiceProvider(container);
-        }
-
-        private static IConfigurationRoot GetConfiguration()
-        {
-            return new ConfigurationBuilder()
-                .AddEnvironmentVariables()
-                .Build();
+            serviceCollection.RegisterAgentServices();
+            _serviceProvider = serviceCollection.BuildServiceProvider();
         }
     }
 }

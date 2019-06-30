@@ -1,9 +1,9 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Infrastructure;
+using FilterLists.Agent.Core.Interfaces;
 using MediatR;
 
-namespace FilterLists.Agent.ListArchiver
+namespace FilterLists.Agent.Application.Archiver
 {
     public static class CaptureLists
     {
@@ -13,18 +13,18 @@ namespace FilterLists.Agent.ListArchiver
 
         public class Handler : AsyncRequestHandler<Command>
         {
-            private readonly IFilterListsApiClient _apiClient;
             private readonly IMediator _mediator;
+            private readonly IListInfoRepository _repo;
 
-            public Handler(IFilterListsApiClient apiClient, IMediator mediator)
+            public Handler(IMediator mediator, IListInfoRepository listInfoRepository)
             {
-                _apiClient = apiClient;
+                _repo = listInfoRepository;
                 _mediator = mediator;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                var lists = await _apiClient.GetListInfo();
+                var lists = await _repo.GetAll();
                 await _mediator.Send(new DownloadLists.Command(lists), cancellationToken);
                 await _mediator.Send(new CommitDownloadedLists.Command(), cancellationToken);
             }
