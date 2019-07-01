@@ -8,7 +8,7 @@ using FilterLists.Agent.Extensions;
 using FilterLists.Agent.Infrastructure.Clients;
 using MediatR;
 
-namespace FilterLists.Agent.Features.Archiver
+namespace FilterLists.Agent.Features.Lists
 {
     public static class DownloadRawText
     {
