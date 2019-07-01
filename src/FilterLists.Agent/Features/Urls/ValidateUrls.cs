@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 using FilterLists.Agent.Infrastructure.Clients;
 using MediatR;
-using Microsoft.Extensions.Logging;
 
 namespace FilterLists.Agent.Features.Urls
 {
     public static class ValidateUrls
     {
-        public class Command : IRequest<IEnumerable<Uri>>
+        public class Command : IRequest<IEnumerable<UrlValidationResult>>
         {
             public Command(IEnumerable<Uri> urls)
             {
@@ -22,59 +22,61 @@ namespace FilterLists.Agent.Features.Urls
             public IEnumerable<Uri> Urls { get; }
         }
 
-        public class Handler : IRequestHandler<Command, IEnumerable<Uri>>
+        public class Handler : IRequestHandler<Command, IEnumerable<UrlValidationResult>>
         {
             private const int MaxDegreeOfParallelism = 5;
             private readonly HttpClient _httpClient;
-            private readonly ILogger<Handler> _logger;
 
-            public Handler(AgentHttpClient agentHttpClient, ILogger<Handler> logger)
+            public Handler(AgentHttpClient agentHttpClient)
             {
                 _httpClient = agentHttpClient.Client;
-                _logger = logger;
             }
 
-            public async Task<IEnumerable<Uri>> Handle(Command request, CancellationToken cancellationToken)
+            public async Task<IEnumerable<UrlValidationResult>> Handle(Command request,
+                CancellationToken cancellationToken)
             {
                 var validator = BuildValidator(cancellationToken);
-                var brokenUrls = new List<Uri>();
+                var brokenUrls = new List<UrlValidationResult>();
                 foreach (var url in request.Urls)
                     await validator.SendAsync(url, cancellationToken);
                 validator.Complete();
                 while (await validator.OutputAvailableAsync(cancellationToken))
                 {
-                    var (url, result) = await validator.ReceiveAsync(cancellationToken);
-                    if (!result)
-                        brokenUrls.Add(url);
+                    var result = await validator.ReceiveAsync(cancellationToken);
+                    if (!result.IsValid())
+                        brokenUrls.Add(result);
                 }
 
                 await validator.Completion;
                 return brokenUrls;
             }
 
-            private TransformBlock<Uri, (Uri, bool)> BuildValidator(CancellationToken cancellationToken)
+            private TransformBlock<Uri, UrlValidationResult> BuildValidator(CancellationToken cancellationToken)
             {
-                return new TransformBlock<Uri, (Uri, bool)>(
+                return new TransformBlock<Uri, UrlValidationResult>(
                     async u =>
                     {
-                        var errorMessage = $"The following URL is broken: {u}.";
+                        var result = new UrlValidationResult(u);
                         try
                         {
                             var response = await _httpClient.GetAsync(u, cancellationToken);
                             if (response.IsSuccessStatusCode)
-                                return (u, true);
-                            _logger.LogError($"{errorMessage} {response.StatusCode}");
-                            return (u, false);
+                                return result;
+                            if (response.StatusCode == HttpStatusCode.PermanentRedirect ||
+                                response.StatusCode == HttpStatusCode.TemporaryRedirect)
+                                result.SetRedirectsTo(response.Headers.Location);
+                            //TODO: result.SetSupportsHttps();
+                            return result;
                         }
-                        catch (HttpRequestException ex)
+                        catch (HttpRequestException)
                         {
-                            _logger.LogError(ex, errorMessage);
-                            return (u, false);
+                            result.SetBroken();
+                            return result;
                         }
-                        catch (TaskCanceledException ex)
+                        catch (TaskCanceledException)
                         {
-                            _logger.LogError(ex, errorMessage);
-                            return (u, false);
+                            result.SetBroken();
+                            return result;
                         }
                     },
                     new ExecutionDataflowBlockOptions {MaxDegreeOfParallelism = MaxDegreeOfParallelism}
