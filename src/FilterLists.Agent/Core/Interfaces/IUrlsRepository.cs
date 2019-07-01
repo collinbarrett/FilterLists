@@ -6,6 +6,6 @@ namespace FilterLists.Agent.Core.Interfaces
 {
     public interface IUrlsRepository
     {
-        Task<IEnumerable<Uri>> GetAllAsync<TEntityUrls>();
+        Task<IEnumerable<Uri>> GetAllAsync<TModel>();
     }
 }

@@ -18,20 +18,20 @@ namespace FilterLists.Agent.Infrastructure.Repositories
             _apiClient = apiClient;
         }
 
-        public async Task<IEnumerable<Uri>> GetAllAsync<TEntityUrls>()
+        public async Task<IEnumerable<Uri>> GetAllAsync<TModel>()
         {
-            var endpoint = BuildEndpoint<TEntityUrls>();
+            var endpoint = BuildEndpoint<TModel>();
             var request = new RestRequest(endpoint);
-            var response = await _apiClient.ExecuteAsync<IEnumerable<TEntityUrls>>(request);
+            var response = await _apiClient.ExecuteAsync<IEnumerable<TModel>>(request);
             return response.SelectMany(r =>
                     r.GetType().GetProperties().Where(p => p.GetType() == typeof(Uri)).Select(p => (Uri)p.GetValue(r)))
                 .Where(u => u != null);
         }
 
-        private static string BuildEndpoint<TEntityUrls>()
+        private static string BuildEndpoint<TModel>()
         {
             string endpointSuffix;
-            switch (typeof(TEntityUrls).Name)
+            switch (typeof(TModel).Name)
             {
                 case nameof(SyntaxUrls):
                     endpointSuffix = "es";
@@ -44,7 +44,7 @@ namespace FilterLists.Agent.Infrastructure.Repositories
                     break;
             }
 
-            return $"{typeof(TEntityUrls).Name.Replace("Urls", endpointSuffix).ToLowerInvariant()}/seed";
+            return $"{typeof(TModel).Name.Replace("Urls", endpointSuffix).ToLowerInvariant()}/seed";
         }
     }
 }
