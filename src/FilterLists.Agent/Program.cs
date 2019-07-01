@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using FilterLists.Agent.Extensions;
 using FilterLists.Agent.Features.Lists;
+using FilterLists.Agent.Features.Urls;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -16,6 +17,7 @@ namespace FilterLists.Agent
             BuildServiceProvider();
             var mediator = _serviceProvider.GetService<IMediator>();
             await mediator.Send(new CaptureLists.Command());
+            await mediator.Send(new ValidateUrls.Command());
         }
 
         private static void BuildServiceProvider()

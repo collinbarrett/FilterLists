@@ -26,7 +26,7 @@ namespace FilterLists.Agent.Extensions
             services.AddHttpClient<AgentHttpClient>();
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
             services.AddTransient<IListInfoRepository, ListInfoRepository>();
-            services.AddTransient<IEntityUrlsRepository, EntityUrlsRepository>();
+            services.AddTransient<IUrlsRepository, UrlsRepository>();
         }
 
         private static void AddConfiguration(this IServiceCollection services)

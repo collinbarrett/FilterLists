@@ -6,7 +6,6 @@ namespace FilterLists.Agent.Core.Entities
     [UsedImplicitly]
     public class LicenseUrls : IEntityUrls
     {
-        public int Id { get; set; }
         public Uri DescriptionUrl { get; set; }
     }
 }

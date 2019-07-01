@@ -6,7 +6,6 @@ namespace FilterLists.Agent.Core.Entities
     [UsedImplicitly]
     public class ListUrls : IEntityUrls
     {
-        public int Id { get; private set; }
         public Uri ChatUrl { get; private set; }
         public Uri DescriptionSourceUrl { get; private set; }
         public Uri DonateUrl { get; private set; }

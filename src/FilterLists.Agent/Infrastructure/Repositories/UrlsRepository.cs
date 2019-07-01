@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Entities;
 using FilterLists.Agent.Core.Interfaces;
@@ -7,20 +9,22 @@ using RestSharp;
 
 namespace FilterLists.Agent.Infrastructure.Repositories
 {
-    public class EntityUrlsRepository : IEntityUrlsRepository
+    public class UrlsRepository : IUrlsRepository
     {
         private readonly IFilterListsApiClient _apiClient;
 
-        public EntityUrlsRepository(IFilterListsApiClient apiClient)
+        public UrlsRepository(IFilterListsApiClient apiClient)
         {
             _apiClient = apiClient;
         }
 
-        public async Task<IEnumerable<TEntityUrls>> GetAllAsync<TEntityUrls>() where TEntityUrls : IEntityUrls, new()
+        public async Task<IEnumerable<Uri>> GetAllAsync<TEntityUrls>() where TEntityUrls : IEntityUrls, new()
         {
             var endpoint = BuildEndpoint<TEntityUrls>();
             var request = new RestRequest(endpoint);
-            return await _apiClient.ExecuteAsync<IEnumerable<TEntityUrls>>(request);
+            var response = await _apiClient.ExecuteAsync<IEnumerable<TEntityUrls>>(request);
+            return response.SelectMany(r => r.GetType().GetProperties().Select(p => (Uri)p.GetValue(r)))
+                .Where(u => u != null);
         }
 
         private static string BuildEndpoint<TEntityUrls>() where TEntityUrls : IEntityUrls, new()
