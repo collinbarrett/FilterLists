@@ -23,7 +23,8 @@ namespace FilterLists.Agent.Infrastructure.Repositories
             var endpoint = BuildEndpoint<TEntityUrls>();
             var request = new RestRequest(endpoint);
             var response = await _apiClient.ExecuteAsync<IEnumerable<TEntityUrls>>(request);
-            return response.SelectMany(r => r.GetType().GetProperties().Select(p => (Uri)p.GetValue(r)))
+            return response.SelectMany(r =>
+                    r.GetType().GetProperties().Where(p => p.GetType() == typeof(Uri)).Select(p => (Uri)p.GetValue(r)))
                 .Where(u => u != null);
         }
 
