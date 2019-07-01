@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core.Entities;
 using FilterLists.Agent.Core.Interfaces;
 using FilterLists.Agent.Features.Urls.Models;
 using FilterLists.Agent.Infrastructure.Clients;
@@ -19,7 +18,7 @@ namespace FilterLists.Agent.Infrastructure.Repositories
             _apiClient = apiClient;
         }
 
-        public async Task<IEnumerable<Uri>> GetAllAsync<TEntityUrls>() where TEntityUrls : IEntityUrls, new()
+        public async Task<IEnumerable<Uri>> GetAllAsync<TEntityUrls>()
         {
             var endpoint = BuildEndpoint<TEntityUrls>();
             var request = new RestRequest(endpoint);
@@ -28,7 +27,7 @@ namespace FilterLists.Agent.Infrastructure.Repositories
                 .Where(u => u != null);
         }
 
-        private static string BuildEndpoint<TEntityUrls>() where TEntityUrls : IEntityUrls, new()
+        private static string BuildEndpoint<TEntityUrls>()
         {
             string endpointSuffix;
             switch (typeof(TEntityUrls).Name)

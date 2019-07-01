@@ -1,11 +1,10 @@
 ﻿using System;
-using FilterLists.Agent.Core.Entities;
 using JetBrains.Annotations;
 
 namespace FilterLists.Agent.Features.Urls.Models
 {
     [UsedImplicitly]
-    public class ListUrls : IEntityUrls
+    public class ListUrls
     {
         public Uri ChatUrl { get; private set; }
         public Uri DescriptionSourceUrl { get; private set; }
