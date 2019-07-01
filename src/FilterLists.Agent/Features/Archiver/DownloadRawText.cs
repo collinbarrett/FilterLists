@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
@@ -24,6 +25,7 @@ namespace FilterLists.Agent.Features.Archiver
         public class Handler : AsyncRequestHandler<Command>
         {
             private const string RepoDirectory = @"archives";
+            private readonly string[] _extensionsToRewrite = { "", ".aspx", ".p2p", ".php" };
             private readonly HttpClient _httpClient;
 
             public Handler(AgentHttpClient httpClient)
@@ -34,7 +36,7 @@ namespace FilterLists.Agent.Features.Archiver
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
                 var sourceExtension = request.ListInfo.ViewUrl.GetExtension();
-                var destinationExtension = string.IsNullOrEmpty(sourceExtension) ? ".txt" : sourceExtension;
+                var destinationExtension = _extensionsToRewrite.Contains(sourceExtension) ? ".txt" : sourceExtension;
                 var destinationPath = Path.Combine(RepoDirectory, $"{request.ListInfo.Id}{destinationExtension}");
                 using (var response = await _httpClient.GetAsync(request.ListInfo.ViewUrl, cancellationToken))
                 {
