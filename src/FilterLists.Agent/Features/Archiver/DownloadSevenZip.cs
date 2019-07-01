@@ -25,7 +25,7 @@ namespace FilterLists.Agent.Features.Archiver
 
         public class Handler : AsyncRequestHandler<Command>
         {
-            private const string RepoDirectory = @"archives";
+            private const string RepoDirectory = "archives";
             private readonly HttpClient _httpClient;
 
             public Handler(AgentHttpClient httpClient)

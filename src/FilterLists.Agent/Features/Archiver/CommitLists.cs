@@ -12,9 +12,9 @@ namespace FilterLists.Agent.Features.Archiver
 
         public class Handler : RequestHandler<Command>
         {
-            private const string RepoDirectory = @"archives";
-            private const string SignatureName = @"FilterLists.Agent";
-            private const string SignatureEmail = @"noreply@filterlists.com";
+            private const string RepoDirectory = "archives";
+            private const string SignatureName = "FilterLists.Agent";
+            private const string SignatureEmail = "noreply@filterlists.com";
             private const string CommitMessageSuffix = " FilterLists archive by FilterLists.Agent";
 
             protected override void Handle(Command request)
