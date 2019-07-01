@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Entities;
 using FilterLists.Agent.Core.Interfaces;
+using FilterLists.Agent.Features.Urls.Models;
 using FilterLists.Agent.Infrastructure.Clients;
 using RestSharp;
 

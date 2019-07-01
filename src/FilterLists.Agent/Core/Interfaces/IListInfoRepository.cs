@@ -6,6 +6,6 @@ namespace FilterLists.Agent.Core.Interfaces
 {
     public interface IListInfoRepository
     {
-        Task<IEnumerable<ListInfo>> GetAll();
+        Task<IEnumerable<ListInfo>> GetAllAsync();
     }
 }

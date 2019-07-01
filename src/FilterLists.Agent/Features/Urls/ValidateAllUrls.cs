@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core.Entities;
 using FilterLists.Agent.Core.Interfaces;
+using FilterLists.Agent.Features.Urls.Models;
 using MediatR;
 
 namespace FilterLists.Agent.Features.Urls

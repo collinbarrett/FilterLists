@@ -16,7 +16,7 @@ namespace FilterLists.Agent.Infrastructure.Repositories
             _apiClient = apiClient;
         }
 
-        public async Task<IEnumerable<ListInfo>> GetAll()
+        public async Task<IEnumerable<ListInfo>> GetAllAsync()
         {
             var listsRequest = new RestRequest("lists");
             return await _apiClient.ExecuteAsync<IEnumerable<ListInfo>>(listsRequest);
