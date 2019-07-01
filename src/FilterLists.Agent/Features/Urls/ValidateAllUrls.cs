@@ -17,12 +17,12 @@ namespace FilterLists.Agent.Features.Urls
         public class Handler : AsyncRequestHandler<Command>
         {
             private readonly IMediator _mediator;
-            private readonly IUrlsRepository _repo;
+            private readonly IUrlRepository _repo;
 
-            public Handler(IMediator mediator, IUrlsRepository urlsRepository)
+            public Handler(IMediator mediator, IUrlRepository urlRepository)
             {
                 _mediator = mediator;
-                _repo = urlsRepository;
+                _repo = urlRepository;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)

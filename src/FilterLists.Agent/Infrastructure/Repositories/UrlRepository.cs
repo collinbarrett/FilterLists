@@ -10,7 +10,7 @@ using RestSharp;
 
 namespace FilterLists.Agent.Infrastructure.Repositories
 {
-    public class UrlsRepository : IUrlsRepository
+    public class UrlRepository : IUrlRepository
     {
         private static readonly Dictionary<string, string> EntityUrlsEndpoints = new Dictionary<string, string>
         {
@@ -23,7 +23,7 @@ namespace FilterLists.Agent.Infrastructure.Repositories
 
         private readonly IFilterListsApiClient _apiClient;
 
-        public UrlsRepository(IFilterListsApiClient apiClient)
+        public UrlRepository(IFilterListsApiClient apiClient)
         {
             _apiClient = apiClient;
         }
