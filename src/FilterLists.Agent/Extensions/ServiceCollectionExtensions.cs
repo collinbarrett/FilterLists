@@ -35,6 +35,7 @@ namespace FilterLists.Agent.Extensions
                 .AddJsonFile("appsettings.json", true, true)
                 .Build();
             services.Configure<ApplicationInsights>(config.GetSection(nameof(ApplicationInsights)));
+            services.Configure<ConnectionStrings>(config.GetSection(nameof(ConnectionStrings)));
         }
     }
 }
