@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using FilterLists.Agent.Core.Interfaces;
 using MediatR;
 
-namespace FilterLists.Agent.Features.Archiver
+namespace FilterLists.Agent.Features.Lists
 {
     public static class CaptureLists
     {

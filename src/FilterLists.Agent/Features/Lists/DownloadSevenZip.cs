@@ -9,7 +9,7 @@ using SharpCompress.Archives;
 using SharpCompress.Archives.SevenZip;
 using SharpCompress.Common;
 
-namespace FilterLists.Agent.Features.Archiver
+namespace FilterLists.Agent.Features.Lists
 {
     public static class DownloadSevenZip
     {

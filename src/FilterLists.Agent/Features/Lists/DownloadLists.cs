@@ -9,7 +9,7 @@ using FilterLists.Agent.Extensions;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace FilterLists.Agent.Features.Archiver
+namespace FilterLists.Agent.Features.Lists
 {
     public static class DownloadLists
     {

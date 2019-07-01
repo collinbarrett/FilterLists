@@ -2,7 +2,7 @@
 using LibGit2Sharp;
 using MediatR;
 
-namespace FilterLists.Agent.Features.Archiver
+namespace FilterLists.Agent.Features.Lists
 {
     public static class CommitLists
     {
