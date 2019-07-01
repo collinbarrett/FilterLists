@@ -31,7 +31,7 @@ namespace FilterLists.Agent.Features.Archiver
                 = new Dictionary<string, Func<ListInfo, IRequest>>
                 {
                     {"", l => new DownloadRawText.Command(l)},
-                    //{".7z", l => new DownloadRawText.Command(l)},
+                    {".7z", l => new DownloadSevenZip.Command(l)},
                     {".acl", l => new DownloadRawText.Command(l)},
                     {".action", l => new DownloadRawText.Command(l)},
                     {".all", l => new DownloadRawText.Command(l)},
