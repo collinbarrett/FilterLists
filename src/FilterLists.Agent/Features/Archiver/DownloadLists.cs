@@ -53,8 +53,8 @@ namespace FilterLists.Agent.Features.Archiver
                     {".p2p", l => new DownloadRawText.Command(l)},
                     {".php", l => new DownloadRawText.Command(l)},
                     {".tpl", l => new DownloadRawText.Command(l)},
-                    {".txt", l => new DownloadRawText.Command(l)}
-                    //{".zip", l => new DownloadRawText.Command(l)}
+                    {".txt", l => new DownloadRawText.Command(l)},
+                    {".zip", l => new DownloadZip.Command(l)}
                 };
 
             private readonly ILogger<Handler> _logger;
