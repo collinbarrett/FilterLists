@@ -57,10 +57,10 @@ namespace FilterLists.Agent.Features.Archiver
                     //{".zip", l => new DownloadRawText.Command(l)}
                 };
 
-            private readonly ILogger _logger;
+            private readonly ILogger<Handler> _logger;
             private readonly IMediator _mediator;
 
-            public Handler(ILogger logger, IMediator mediator)
+            public Handler(ILogger<Handler> logger, IMediator mediator)
             {
                 _logger = logger;
                 _mediator = mediator;
