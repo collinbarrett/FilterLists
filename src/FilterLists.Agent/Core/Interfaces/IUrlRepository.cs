@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace FilterLists.Agent.Core.Interfaces
 {
-    public interface IUrlsRepository
+    public interface IUrlRepository
     {
         Task<IEnumerable<Uri>> GetAllAsync<TModel>();
     }
