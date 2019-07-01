@@ -1,33 +1,40 @@
-﻿using FilterLists.Agent.Core.Interfaces;
+﻿using FilterLists.Agent.AppSettings;
+using FilterLists.Agent.Core.Interfaces;
 using FilterLists.Agent.Infrastructure.Clients;
 using FilterLists.Agent.Infrastructure.Repositories;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace FilterLists.Agent.Extensions
 {
     public static class ServiceCollectionExtensions
     {
-        public static void RegisterAgentServices(this IServiceCollection serviceCollection)
+        public static void RegisterAgentServices(this IServiceCollection services)
         {
-            var configurationRoot = BuildConfigurationRoot();
-            serviceCollection.AddLogging(b =>
+            services.AddConfiguration();
+            services.AddLogging(b =>
             {
                 b.AddConsole();
-                b.AddApplicationInsights(configurationRoot["ApplicationInsights:InstrumentationKey"] ?? "");
+                var appInsightsKey = b.Services.BuildServiceProvider().GetService<IOptions<ApplicationInsights>>().Value
+                    .InstrumentationKey;
+                b.AddApplicationInsights(appInsightsKey);
             });
-            serviceCollection.AddMediatR(typeof(Program).Assembly);
-            serviceCollection.AddHttpClient<AgentHttpClient>();
-            serviceCollection.AddSingleton<IConfiguration>(configurationRoot);
-            serviceCollection.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
-            serviceCollection.AddTransient<IListInfoRepository, ListInfoRepository>();
+            services.AddMediatR(typeof(Program).Assembly);
+            services.AddHttpClient<AgentHttpClient>();
+            services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
+            services.AddTransient<IListInfoRepository, ListInfoRepository>();
         }
 
-        private static IConfigurationRoot BuildConfigurationRoot()
+        private static void AddConfiguration(this IServiceCollection services)
         {
-            return new ConfigurationBuilder().AddEnvironmentVariables().Build();
+            var config = new ConfigurationBuilder()
+                .AddEnvironmentVariables()
+                .AddJsonFile("appsettings.json", true, true)
+                .Build();
+            services.Configure<ApplicationInsights>(config.GetSection(nameof(ApplicationInsights)));
         }
     }
 }

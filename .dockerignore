@@ -25,6 +25,7 @@
 **/.github
 **/docker-compose.dcproj
 **/*.DotSettings*
+**/appsettings*.json
 **/node_modules
 **/*.md
 LICENSE
