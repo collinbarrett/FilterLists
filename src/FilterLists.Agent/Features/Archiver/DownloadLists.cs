@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 using FilterLists.Agent.Core.Entities;
 using FilterLists.Agent.Extensions;
 using MediatR;
+using Microsoft.Extensions.Logging;
 
 namespace FilterLists.Agent.Features.Archiver
 {
@@ -51,36 +53,55 @@ namespace FilterLists.Agent.Features.Archiver
                     {".p2p", l => new DownloadRawText.Command(l)},
                     {".php", l => new DownloadRawText.Command(l)},
                     {".tpl", l => new DownloadRawText.Command(l)},
-                    {".txt", l => new DownloadRawText.Command(l)},
+                    {".txt", l => new DownloadRawText.Command(l)}
                     //{".zip", l => new DownloadRawText.Command(l)}
                 };
 
+            private readonly ILogger _logger;
             private readonly IMediator _mediator;
 
-            public Handler(IMediator mediator)
+            public Handler(ILogger logger, IMediator mediator)
             {
+                _logger = logger;
                 _mediator = mediator;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                var downloader = new ActionBlock<ListInfo>(
-                    async l =>
-                    {
-                        var extension = l.ViewUrl.GetExtension();
-                        if (CommandsByExtension.ContainsKey(extension))
-                        {
-                            var command = CommandsByExtension[extension].Invoke(l);
-                            await _mediator.Send(command, cancellationToken);
-                        }
-                    },
-                    new ExecutionDataflowBlockOptions {MaxDegreeOfParallelism = MaxDegreeOfParallelism}
-                );
+                var downloader = BuildDownloader(cancellationToken);
                 var orderedListInfo = request.ListInfo.DistributeByHost();
                 foreach (var listInfo in orderedListInfo)
                     await downloader.SendAsync(listInfo, cancellationToken);
                 downloader.Complete();
                 await downloader.Completion;
+            }
+
+            private ActionBlock<ListInfo> BuildDownloader(CancellationToken cancellationToken)
+            {
+                return new ActionBlock<ListInfo>(
+                    async l =>
+                    {
+                        var errorMessage = $"Error downloading list {l.Id} from {l.ViewUrl}.";
+                        try
+                        {
+                            var extension = l.ViewUrl.GetExtension();
+                            if (CommandsByExtension.ContainsKey(extension))
+                            {
+                                var command = CommandsByExtension[extension].Invoke(l);
+                                await _mediator.Send(command, cancellationToken);
+                            }
+                        }
+                        catch (HttpRequestException ex)
+                        {
+                            _logger.LogError(ex, errorMessage);
+                        }
+                        catch (TaskCanceledException ex)
+                        {
+                            _logger.LogError(ex, errorMessage);
+                        }
+                    },
+                    new ExecutionDataflowBlockOptions {MaxDegreeOfParallelism = MaxDegreeOfParallelism}
+                );
             }
         }
     }
