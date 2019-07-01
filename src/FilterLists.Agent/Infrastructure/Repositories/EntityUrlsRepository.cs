@@ -16,26 +16,30 @@ namespace FilterLists.Agent.Infrastructure.Repositories
             _apiClient = apiClient;
         }
 
-        public async Task<IEnumerable<TEntityUrls>> GetAllAsync<TEntityUrls>()
-            where TEntityUrls : IEntityUrls, new()
+        public async Task<IEnumerable<TEntityUrls>> GetAllAsync<TEntityUrls>() where TEntityUrls : IEntityUrls, new()
         {
-            string entityEndpoint;
+            var endpoint = BuildEndpoint<TEntityUrls>();
+            var request = new RestRequest(endpoint);
+            return await _apiClient.ExecuteAsync<IEnumerable<TEntityUrls>>(request);
+        }
+
+        private static string BuildEndpoint<TEntityUrls>() where TEntityUrls : IEntityUrls, new()
+        {
+            string endpointSuffix;
             switch (typeof(TEntityUrls).Name)
             {
                 case nameof(SyntaxUrls):
-                    entityEndpoint = typeof(TEntityUrls).Name.Replace("Urls", "es").ToLowerInvariant();
+                    endpointSuffix = "es";
                     break;
                 case nameof(SoftwareUrls):
-                    entityEndpoint = typeof(TEntityUrls).Name.Replace("Urls", "").ToLowerInvariant();
+                    endpointSuffix = "";
                     break;
                 default:
-                    entityEndpoint = typeof(TEntityUrls).Name.Replace("Urls", "s").ToLowerInvariant();
+                    endpointSuffix = "s";
                     break;
             }
 
-            var endpoint = $"{entityEndpoint}/seed";
-            var request = new RestRequest(endpoint);
-            return await _apiClient.ExecuteAsync<IEnumerable<TEntityUrls>>(request);
+            return $"{typeof(TEntityUrls).Name.Replace("Urls", endpointSuffix).ToLowerInvariant()}/seed";
         }
     }
 }
