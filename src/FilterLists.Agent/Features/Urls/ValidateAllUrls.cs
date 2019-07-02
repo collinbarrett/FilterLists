@@ -56,8 +56,8 @@ namespace FilterLists.Agent.Features.Urls
                     results.Add(new DataFileUrlValidationResults("Syntax.json", syntaxUrlErrors));
 
                 if(results.Any())
-                    await _mediator.Send(new CreateOrUpdateGitHubIssue.Command(results), cancellationToken);
-                //TODO: else, close issue
+                    await _mediator.Send(new CreateOrUpdateUrlValidationIssue.Command(results), cancellationToken);
+                await _mediator.Send(new CloseUrlValidationIssue.Command(), cancellationToken);
             }
         }
     }
