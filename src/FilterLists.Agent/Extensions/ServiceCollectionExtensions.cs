@@ -7,7 +7,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Octokit;
 
 namespace FilterLists.Agent.Extensions
 {
@@ -20,7 +19,7 @@ namespace FilterLists.Agent.Extensions
             services.AddMediatR(typeof(Program).Assembly);
             services.AddHttpClient<AgentHttpClient>();
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
-            services.AddGitHubClient();
+            services.AddSingleton<IAgentGitHubClient, AgentGitHubClient>();
             services.AddTransient<IListInfoRepository, ListInfoRepository>();
             services.AddTransient<IUrlRepository, UrlRepository>();
         }
@@ -46,18 +45,6 @@ namespace FilterLists.Agent.Extensions
                 b.AddConsole();
                 var appInsightsConfig = b.Services.BuildServiceProvider().GetService<IOptions<ApplicationInsights>>();
                 b.AddApplicationInsights(appInsightsConfig.Value.InstrumentationKey);
-            });
-        }
-
-        private static void AddGitHubClient(this IServiceCollection services)
-        {
-            services.AddSingleton<IGitHubClient>(s =>
-            {
-                var gitHubConfig = s.GetService<IOptions<GitHub>>();
-                return new GitHubClient(new ProductHeaderValue(gitHubConfig.Value.ProductHeaderValue))
-                {
-                    Credentials = new Credentials(gitHubConfig.Value.PersonalAccessToken)
-                };
             });
         }
     }
