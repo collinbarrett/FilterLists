@@ -17,7 +17,7 @@ namespace FilterLists.Agent
             BuildServiceProvider();
             var mediator = _serviceProvider.GetService<IMediator>();
             await mediator.Send(new CaptureLists.Command());
-            //await mediator.Send(new ValidateAllUrls.Command());
+            await mediator.Send(new ValidateAllUrls.Command());
         }
 
         private static void BuildServiceProvider()
