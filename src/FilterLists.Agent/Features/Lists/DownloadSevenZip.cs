@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using FilterLists.Agent.Core.Entities;
 using FilterLists.Agent.Infrastructure.Clients;
 using MediatR;
+using Microsoft.Extensions.Logging;
 using SharpCompress.Archives;
 using SharpCompress.Archives.SevenZip;
 using SharpCompress.Common;
@@ -27,10 +28,12 @@ namespace FilterLists.Agent.Features.Lists
         {
             private const string RepoDirectory = "archives";
             private readonly HttpClient _httpClient;
+            private readonly ILogger<Handler> _logger;
 
-            public Handler(AgentHttpClient agentHttpClient)
+            public Handler(AgentHttpClient agentHttpClient, ILogger<Handler> logger)
             {
                 _httpClient = agentHttpClient.Client;
+                _logger = logger;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
@@ -47,6 +50,9 @@ namespace FilterLists.Agent.Features.Lists
                                     entry.WriteToDirectory(destinationDirectoryPath,
                                         new ExtractionOptions {ExtractFullPath = true, Overwrite = true});
                         }
+                    else
+                        _logger.LogError(
+                            $"Error downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}. {response.StatusCode}");
                 }
             }
         }
