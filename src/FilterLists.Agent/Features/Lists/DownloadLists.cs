@@ -90,6 +90,10 @@ namespace FilterLists.Agent.Features.Lists
                                 var command = CommandsByExtension[extension].Invoke(l);
                                 await _mediator.Send(command, cancellationToken);
                             }
+                            else
+                            {
+                                _logger.LogError($"The file extension of list {l.Id} from {l.ViewUrl} is not supported.");
+                            }
                         }
                         catch (HttpRequestException ex)
                         {
