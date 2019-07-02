@@ -7,6 +7,7 @@ using FilterLists.Agent.Core.Entities;
 using FilterLists.Agent.Extensions;
 using FilterLists.Agent.Infrastructure.Clients;
 using MediatR;
+using Microsoft.Extensions.Logging;
 
 namespace FilterLists.Agent.Features.Lists
 {
@@ -25,12 +26,14 @@ namespace FilterLists.Agent.Features.Lists
         public class Handler : AsyncRequestHandler<Command>
         {
             private const string RepoDirectory = "archives";
-            private readonly string[] _extensionsToRewrite = { "", ".aspx", ".p2p", ".php" };
+            private readonly string[] _extensionsToRewrite = {"", ".aspx", ".p2p", ".php"};
             private readonly HttpClient _httpClient;
+            private readonly ILogger<Handler> _logger;
 
-            public Handler(AgentHttpClient agentHttpClient)
+            public Handler(AgentHttpClient agentHttpClient, ILogger<Handler> logger)
             {
                 _httpClient = agentHttpClient.Client;
+                _logger = logger;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
@@ -46,6 +49,9 @@ namespace FilterLists.Agent.Features.Lists
                         {
                             await input.CopyToAsync(output, cancellationToken);
                         }
+                    else
+                        _logger.LogError(
+                            $"Error downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}. {response.StatusCode}");
                 }
             }
         }
