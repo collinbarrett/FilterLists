@@ -28,9 +28,9 @@ namespace FilterLists.Agent.Features.Lists
             private const string RepoDirectory = "archives";
             private readonly HttpClient _httpClient;
 
-            public Handler(AgentHttpClient httpClient)
+            public Handler(AgentHttpClient agentHttpClient)
             {
-                _httpClient = httpClient.Client;
+                _httpClient = agentHttpClient.Client;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
