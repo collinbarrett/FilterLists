@@ -56,7 +56,7 @@ namespace FilterLists.Agent.Extensions
                 var gitHubConfig = s.GetService<IOptions<GitHub>>();
                 return new GitHubClient(new ProductHeaderValue(gitHubConfig.Value.ProductHeaderValue))
                 {
-                    Credentials = new Credentials(gitHubConfig.Value.OauthToken)
+                    Credentials = new Credentials(gitHubConfig.Value.PersonalAccessToken)
                 };
             });
         }

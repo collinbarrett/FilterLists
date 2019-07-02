@@ -66,6 +66,8 @@ services:
       - archives:/app/archives
     environment:
       ApplicationInsights__InstrumentationKey: ${FILTERLISTS_AGENT_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
+      GitHub__ProductHeaderValue: ${FILTERLISTS_AGENT_GITHUB_PRODUCT_HEADER_VALUE}
+      GitHub__PersonalAccessToken: ${FILTERLISTS_AGENT_GITHUB_PERSONAL_ACCESS_TOKEN}
 
 networks:
   reverse-proxy:
