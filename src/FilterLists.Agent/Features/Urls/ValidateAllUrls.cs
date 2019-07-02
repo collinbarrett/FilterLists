@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Interfaces;
-using FilterLists.Agent.Features.Urls.Models.EntityUrlDtos;
+using FilterLists.Agent.Features.Urls.Models.DataFileUrls;
 using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 using MediatR;
 
