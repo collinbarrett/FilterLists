@@ -36,8 +36,7 @@ namespace FilterLists.Agent.Infrastructure.Repositories
             var request = new RestRequest($"{EntityUrlsEndpoints[typeof(TModel).Name]}/seed");
             var response = await _apiClient.ExecuteAsync<IEnumerable<TModel>>(request);
             return response.SelectMany(r =>
-                r.GetType().GetProperties().Where(p => p.GetType() == typeof(Uri) && p.GetValue(r) != null)
-                    .Select(p => (Uri)p.GetValue(r)));
+                r.GetType().GetProperties().Where(p => p.GetValue(r) != null).Select(p => (Uri)p.GetValue(r)));
         }
     }
 }
