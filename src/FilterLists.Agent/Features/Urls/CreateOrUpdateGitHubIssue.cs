@@ -27,16 +27,18 @@ namespace FilterLists.Agent.Features.Urls
             private const string HelpWantedLabel = "help wanted";
             private const string IssueTitle = "Url Validation Errors";
             private readonly IAgentGitHubClient _gitHubClient;
+            private readonly IMediator _mediator;
 
-            public Handler(IAgentGitHubClient agentGitHubClient)
+            public Handler(IAgentGitHubClient agentGitHubClient, IMediator mediator)
             {
                 _gitHubClient = agentGitHubClient;
+                _mediator = mediator;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
                 var issue = await GetOpenIssueOrNull() ?? await CreateBaseIssue();
-                await UpdateIssue(issue);
+                await UpdateIssue(issue, request.DataFileUrlValidationResults, cancellationToken);
             }
 
             private async Task<Issue> GetOpenIssueOrNull()
@@ -56,15 +58,15 @@ namespace FilterLists.Agent.Features.Urls
                 return await _gitHubClient.CreateIssue(newIssue);
             }
 
-            private async Task UpdateIssue(Issue issue)
+            private async Task UpdateIssue(Issue issue,
+                IEnumerable<DataFileUrlValidationResults> dataFileUrlValidationResults,
+                CancellationToken cancellationToken)
             {
                 var updateIssue = issue.ToUpdate();
                 updateIssue.AddLabel(AgentBotLabel);
                 updateIssue.AddLabel(HelpWantedLabel);
-
-                //TODO: set real body from request
-                updateIssue.Body = "Testing update of auto-issue from FilterLists.Agent.";
-
+                updateIssue.Body = await _mediator.Send(new BuildGitHubIssueBody.Command(dataFileUrlValidationResults),
+                    cancellationToken);
                 await _gitHubClient.UpdateIssue(issue.Number, updateIssue);
             }
         }
