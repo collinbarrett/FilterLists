@@ -55,7 +55,7 @@ namespace FilterLists.Agent.Features.Urls
                 if (syntaxUrlErrors.Any())
                     results.Add(new DataFileUrlValidationResults("Syntax.json", syntaxUrlErrors));
 
-                //TODO: create or edit GitHub issue with results
+                await _mediator.Send(new CreateOrUpdateGitHubIssue.Command(results), cancellationToken);
             }
         }
     }
