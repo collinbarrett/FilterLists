@@ -26,7 +26,7 @@ namespace FilterLists.Agent.Features.Urls
             private const string AgentBotLabel = "agent bot";
             private const string HelpWantedLabel = "help wanted";
             private const string DataLabel = "data";
-            private const string IssueTitle = "Url Validation Errors";
+            private const string IssueTitle = "BOT: url validation errors";
             private readonly IAgentGitHubClient _gitHubClient;
             private readonly IMediator _mediator;
 
