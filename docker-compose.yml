@@ -68,6 +68,8 @@ services:
       ApplicationInsights__InstrumentationKey: ${FILTERLISTS_AGENT_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
       GitHub__ProductHeaderValue: ${FILTERLISTS_AGENT_GITHUB_PRODUCT_HEADER_VALUE}
       GitHub__PersonalAccessToken: ${FILTERLISTS_AGENT_GITHUB_PERSONAL_ACCESS_TOKEN}
+      GitHub__RepositoryOwner: ${FILTERLISTS_AGENT_GITHUB_REPOSITORY_OWNER}
+      GitHub__Repository: ${FILTERLISTS_AGENT_GITHUB_REPOSITORY}
 
 networks:
   reverse-proxy:
