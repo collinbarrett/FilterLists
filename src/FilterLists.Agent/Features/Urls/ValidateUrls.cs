@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
+using FilterLists.Agent.Extensions;
 using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 using FilterLists.Agent.Infrastructure.Clients;
 using MediatR;
@@ -60,6 +61,13 @@ namespace FilterLists.Agent.Features.Urls
                     async u =>
                     {
                         var result = new UrlValidationResult(u);
+                        if (!u.IsValidUrl())
+                        {
+                            result.SetBroken();
+                            _logger.LogError($"{u.AbsoluteUri}) is not a valid URL.");
+                            return result;
+                        }
+
                         try
                         {
                             var response = await _httpClient.GetAsync(u, cancellationToken);
