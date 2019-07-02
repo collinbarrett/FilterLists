@@ -28,7 +28,7 @@ namespace FilterLists.Agent.Features.Urls
                 body.Append(IssueHeader);
                 foreach (var fileReults in request.DataFileUrlValidationResults)
                 {
-                    body.Append($"<h1>{fileReults.DataFileName}</h1>");
+                    body.Append($"<h1><a href=\"https://github.com/collinbarrett/FilterLists/blob/master/data/{fileReults.DataFileName}\">{fileReults.DataFileName}</a></h1>");
                     body.Append("<ul>");
                     foreach (var result in fileReults.Results)
                     {
