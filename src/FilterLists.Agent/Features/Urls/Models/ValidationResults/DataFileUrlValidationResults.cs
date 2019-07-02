@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace FilterLists.Agent.Features.Urls
+namespace FilterLists.Agent.Features.Urls.Models.ValidationResults
 {
     public class DataFileUrlValidationResults
     {
