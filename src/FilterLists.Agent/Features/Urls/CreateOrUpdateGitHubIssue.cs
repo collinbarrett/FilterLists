@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 using MediatR;
+using Octokit;
 
 namespace FilterLists.Agent.Features.Urls
 {
@@ -21,6 +22,13 @@ namespace FilterLists.Agent.Features.Urls
 
         public class Handler : AsyncRequestHandler<Command>
         {
+            private readonly IGitHubClient _gitHubClient;
+
+            public Handler(IGitHubClient gitHubClient)
+            {
+                _gitHubClient = gitHubClient;
+            }
+
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
                 throw new NotImplementedException();
