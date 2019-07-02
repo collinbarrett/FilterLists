@@ -3,6 +3,6 @@
     public class GitHub
     {
         public string ProductHeaderValue { get; set; }
-        public string OauthToken { get; set; }
+        public string PersonalAccessToken { get; set; }
     }
 }
