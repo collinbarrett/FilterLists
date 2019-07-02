@@ -28,10 +28,10 @@ namespace FilterLists.Agent.Extensions
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
             services.AddSingleton<IGitHubClient>(s =>
             {
-                var gitHubConfig = s.GetService<GitHub>();
-                var client = new GitHubClient(new ProductHeaderValue(gitHubConfig.ProductHeaderValue))
+                var gitHubConfig = s.GetService<IOptions<GitHub>>();
+                var client = new GitHubClient(new ProductHeaderValue(gitHubConfig.Value.ProductHeaderValue))
                 {
-                    Credentials = new Credentials(gitHubConfig.OauthToken)
+                    Credentials = new Credentials(gitHubConfig.Value.OauthToken)
                 };
                 return client;
             });
