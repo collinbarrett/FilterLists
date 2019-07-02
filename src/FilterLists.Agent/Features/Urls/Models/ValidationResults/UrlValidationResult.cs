@@ -22,17 +22,17 @@ namespace FilterLists.Agent.Features.Urls.Models.ValidationResults
 
         public void SetBroken()
         {
-            Messages.Add("The URL is broken and should maybe be fixed, replaced, or removed.");
+            Messages.Add("This URL is broken and should maybe be fixed, replaced, or removed.");
         }
 
         public void SetSupportsHttps()
         {
-            Messages.Add("The URL is set to `http` but can support and should probably be changed to `https`.");
+            Messages.Add("This URL is set to `http` but can support and should probably be changed to `https`.");
         }
 
         public void SetRedirectsTo(Uri uri)
         {
-            Messages.Add($"The URL redirects and should maybe be changed to `{uri}`.");
+            Messages.Add($"This URL redirects and should maybe be changed to \"{uri}\".");
         }
     }
 }
