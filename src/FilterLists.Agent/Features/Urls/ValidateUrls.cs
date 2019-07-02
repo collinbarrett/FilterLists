@@ -13,7 +13,7 @@ namespace FilterLists.Agent.Features.Urls
 {
     public static class ValidateUrls
     {
-        public class Command : IRequest<IEnumerable<UrlValidationResult>>
+        public class Command : IRequest<List<UrlValidationResult>>
         {
             public Command(IEnumerable<Uri> urls)
             {
@@ -23,7 +23,7 @@ namespace FilterLists.Agent.Features.Urls
             public IEnumerable<Uri> Urls { get; }
         }
 
-        public class Handler : IRequestHandler<Command, IEnumerable<UrlValidationResult>>
+        public class Handler : IRequestHandler<Command, List<UrlValidationResult>>
         {
             private const int MaxDegreeOfParallelism = 5;
             private readonly HttpClient _httpClient;
@@ -33,8 +33,7 @@ namespace FilterLists.Agent.Features.Urls
                 _httpClient = agentHttpClient.Client;
             }
 
-            public async Task<IEnumerable<UrlValidationResult>> Handle(Command request,
-                CancellationToken cancellationToken)
+            public async Task<List<UrlValidationResult>> Handle(Command request, CancellationToken cancellationToken)
             {
                 var validator = BuildValidator(cancellationToken);
                 var brokenUrls = new List<UrlValidationResult>();
