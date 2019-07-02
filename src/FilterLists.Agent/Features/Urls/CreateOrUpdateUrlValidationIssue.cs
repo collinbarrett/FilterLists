@@ -9,7 +9,7 @@ using Octokit;
 
 namespace FilterLists.Agent.Features.Urls
 {
-    public static class CreateOrUpdateGitHubIssue
+    public static class CreateOrUpdateUrlValidationIssue
     {
         public class Command : IRequest
         {
