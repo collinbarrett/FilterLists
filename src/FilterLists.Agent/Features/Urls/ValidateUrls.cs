@@ -8,6 +8,7 @@ using System.Threading.Tasks.Dataflow;
 using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 using FilterLists.Agent.Infrastructure.Clients;
 using MediatR;
+using Microsoft.Extensions.Logging;
 
 namespace FilterLists.Agent.Features.Urls
 {
@@ -27,10 +28,12 @@ namespace FilterLists.Agent.Features.Urls
         {
             private const int MaxDegreeOfParallelism = 5;
             private readonly HttpClient _httpClient;
+            private readonly ILogger<Handler> _logger;
 
-            public Handler(AgentHttpClient agentHttpClient)
+            public Handler(AgentHttpClient agentHttpClient, ILogger<Handler> logger)
             {
                 _httpClient = agentHttpClient.Client;
+                _logger = logger;
             }
 
             public async Task<List<UrlValidationResult>> Handle(Command request, CancellationToken cancellationToken)
@@ -68,16 +71,26 @@ namespace FilterLists.Agent.Features.Urls
                             if (response.IsSuccessStatusCode)
                                 return result;
                             result.SetBroken();
+                            _logger.LogError(
+                                $"Url validation for ({u.AbsoluteUri}) failed with status code: {response.StatusCode}.");
                             return result;
                         }
-                        catch (HttpRequestException)
+                        catch (HttpRequestException ex)
                         {
                             result.SetBroken();
+                            _logger.LogError($"Url validation for ({u.AbsoluteUri}) failed.", ex);
                             return result;
                         }
-                        catch (TaskCanceledException)
+                        catch (TaskCanceledException ex)
                         {
                             result.SetBroken();
+                            _logger.LogError($"Url validation for ({u.AbsoluteUri}) failed.", ex);
+                            return result;
+                        }
+                        catch (InvalidOperationException ex)
+                        {
+                            result.SetBroken();
+                            _logger.LogError($"Url validation for ({u.AbsoluteUri}) failed.", ex);
                             return result;
                         }
                     },
@@ -91,14 +104,25 @@ namespace FilterLists.Agent.Features.Urls
                 try
                 {
                     var response = await _httpClient.GetAsync(httpsUrl, cancellationToken);
+                    if (response.IsSuccessStatusCode)
+                        return true;
+                    _logger.LogError(
+                        $"IsHttpsSupported({httpsUrl.AbsoluteUri}) failed with status code: {response.StatusCode}.");
                     return response.IsSuccessStatusCode;
                 }
-                catch (HttpRequestException)
+                catch (HttpRequestException ex)
                 {
+                    _logger.LogError($"IsHttpsSupported({httpsUrl.AbsoluteUri}) failed.", ex);
                     return false;
                 }
-                catch (TaskCanceledException)
+                catch (TaskCanceledException ex)
                 {
+                    _logger.LogError($"IsHttpsSupported({httpsUrl.AbsoluteUri}) failed.", ex);
+                    return false;
+                }
+                catch (InvalidOperationException ex)
+                {
+                    _logger.LogError($"IsHttpsSupported({httpsUrl.AbsoluteUri}) failed.", ex);
                     return false;
                 }
             }
