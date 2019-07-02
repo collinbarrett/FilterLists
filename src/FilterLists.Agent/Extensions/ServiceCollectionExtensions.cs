@@ -44,6 +44,9 @@ namespace FilterLists.Agent.Extensions
             var config = new ConfigurationBuilder()
                 .AddEnvironmentVariables()
                 .AddJsonFile("appsettings.json", true, true)
+#if DEBUG
+                .AddJsonFile("appsettings.Development.json", true, true)
+#endif
                 .Build();
             services.Configure<ApplicationInsights>(config.GetSection(nameof(ApplicationInsights)));
             services.Configure<ConnectionStrings>(config.GetSection(nameof(ConnectionStrings)));
