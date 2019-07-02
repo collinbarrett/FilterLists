@@ -57,7 +57,8 @@ namespace FilterLists.Agent.Features.Urls
 
                 if(results.Any())
                     await _mediator.Send(new CreateOrUpdateUrlValidationIssue.Command(results), cancellationToken);
-                await _mediator.Send(new CloseUrlValidationIssue.Command(), cancellationToken);
+                else
+                    await _mediator.Send(new CloseUrlValidationIssue.Command(), cancellationToken);
             }
         }
     }
