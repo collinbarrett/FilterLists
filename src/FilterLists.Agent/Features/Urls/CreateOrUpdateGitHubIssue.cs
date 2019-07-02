@@ -25,6 +25,7 @@ namespace FilterLists.Agent.Features.Urls
         {
             private const string AgentBotLabel = "agent bot";
             private const string HelpWantedLabel = "help wanted";
+            private const string DataLabel = "data";
             private const string IssueTitle = "Url Validation Errors";
             private readonly IAgentGitHubClient _gitHubClient;
             private readonly IMediator _mediator;
@@ -63,8 +64,9 @@ namespace FilterLists.Agent.Features.Urls
                 CancellationToken cancellationToken)
             {
                 var updateIssue = issue.ToUpdate();
-                updateIssue.AddLabel(AgentBotLabel);
                 updateIssue.AddLabel(HelpWantedLabel);
+                updateIssue.AddLabel(AgentBotLabel);
+                updateIssue.AddLabel(DataLabel);
                 updateIssue.Body = await _mediator.Send(new BuildGitHubIssueBody.Command(dataFileUrlValidationResults),
                     cancellationToken);
                 await _gitHubClient.UpdateIssue(issue.Number, updateIssue);
