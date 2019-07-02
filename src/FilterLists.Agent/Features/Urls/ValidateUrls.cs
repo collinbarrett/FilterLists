@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
+using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 using FilterLists.Agent.Infrastructure.Clients;
 using MediatR;
 
