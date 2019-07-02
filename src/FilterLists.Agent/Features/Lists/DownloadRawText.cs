@@ -28,9 +28,9 @@ namespace FilterLists.Agent.Features.Lists
             private readonly string[] _extensionsToRewrite = { "", ".aspx", ".p2p", ".php" };
             private readonly HttpClient _httpClient;
 
-            public Handler(AgentHttpClient httpClient)
+            public Handler(AgentHttpClient agentHttpClient)
             {
-                _httpClient = httpClient.Client;
+                _httpClient = agentHttpClient.Client;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
