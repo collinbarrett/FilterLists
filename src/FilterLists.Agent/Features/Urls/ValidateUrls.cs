@@ -64,7 +64,7 @@ namespace FilterLists.Agent.Features.Urls
                         if (!u.IsValidUrl())
                         {
                             result.SetBroken();
-                            _logger.LogError($"{u.AbsoluteUri}) is not a valid URL.");
+                            _logger.LogError($"{u.OriginalString}) is not a valid URL.");
                             return result;
                         }
 
