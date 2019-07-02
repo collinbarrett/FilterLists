@@ -9,6 +9,8 @@ namespace FilterLists.Agent.Infrastructure.Clients
     public interface IAgentGitHubClient
     {
         Task<IReadOnlyList<Issue>> GetAllIssues(RepositoryIssueRequest repositoryIssueRequest);
+        Task<Issue> CreateIssue(NewIssue newIssue);
+        Task<Issue> UpdateIssue(int issueNumber, IssueUpdate updateIssue);
     }
 
     public class AgentGitHubClient : IAgentGitHubClient
@@ -29,6 +31,18 @@ namespace FilterLists.Agent.Infrastructure.Clients
         {
             return await _gitHubClient.Issue.GetAllForRepository(_gitHubOptions.RepositoryOwner,
                 _gitHubOptions.Repository, repositoryIssueRequest);
+        }
+
+        public async Task<Issue> CreateIssue(NewIssue newIssue)
+        {
+            return await _gitHubClient.Issue.Create(_gitHubOptions.RepositoryOwner, _gitHubOptions.Repository,
+                newIssue);
+        }
+
+        public async Task<Issue> UpdateIssue(int issueNumber, IssueUpdate updateIssue)
+        {
+            return await _gitHubClient.Issue.Update(_gitHubOptions.RepositoryOwner, _gitHubOptions.Repository,
+                issueNumber, updateIssue);
         }
     }
 }
