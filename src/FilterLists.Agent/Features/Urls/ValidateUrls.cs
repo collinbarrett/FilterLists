@@ -60,12 +60,14 @@ namespace FilterLists.Agent.Features.Urls
                         try
                         {
                             var response = await _httpClient.GetAsync(u, cancellationToken);
-                            if (response.IsSuccessStatusCode)
-                                return result;
                             if (response.StatusCode == HttpStatusCode.PermanentRedirect ||
                                 response.StatusCode == HttpStatusCode.TemporaryRedirect)
                                 result.SetRedirectsTo(response.Headers.Location);
-                            //TODO: result.SetSupportsHttps();
+                            if (u.Scheme == Uri.UriSchemeHttp && await IsHttpsSupported(u, cancellationToken))
+                                result.SetSupportsHttps();
+                            if (response.IsSuccessStatusCode)
+                                return result;
+                            result.SetBroken();
                             return result;
                         }
                         catch (HttpRequestException)
@@ -81,6 +83,24 @@ namespace FilterLists.Agent.Features.Urls
                     },
                     new ExecutionDataflowBlockOptions {MaxDegreeOfParallelism = MaxDegreeOfParallelism}
                 );
+            }
+
+            private async Task<bool> IsHttpsSupported(Uri url, CancellationToken cancellationToken)
+            {
+                var httpsUrl = new UriBuilder(url.OriginalString) {Scheme = Uri.UriSchemeHttps}.Uri;
+                try
+                {
+                    var response = await _httpClient.GetAsync(httpsUrl, cancellationToken);
+                    return response.IsSuccessStatusCode;
+                }
+                catch (HttpRequestException)
+                {
+                    return false;
+                }
+                catch (TaskCanceledException)
+                {
+                    return false;
+                }
             }
         }
     }
