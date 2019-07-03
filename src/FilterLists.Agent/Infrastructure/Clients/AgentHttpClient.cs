@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using JetBrains.Annotations;
 
 namespace FilterLists.Agent.Infrastructure.Clients
 {
-    [UsedImplicitly]
-    public class AgentHttpClient
+    public interface IAgentHttpClient
+    {
+        HttpClient HttpClient { get; }
+    }
+
+    public class AgentHttpClient : IAgentHttpClient
     {
         public AgentHttpClient(HttpClient client)
         {
@@ -16,9 +19,9 @@ namespace FilterLists.Agent.Infrastructure.Clients
             var userAgent = new ProductInfoHeaderValue(header);
             client.DefaultRequestHeaders.UserAgent.Add(userAgent);
 
-            Client = client;
+            HttpClient = client;
         }
 
-        public HttpClient Client { get; }
+        public HttpClient HttpClient { get; }
     }
 }
