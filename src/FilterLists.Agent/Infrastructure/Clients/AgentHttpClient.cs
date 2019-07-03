@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using JetBrains.Annotations;
 
 namespace FilterLists.Agent.Infrastructure.Clients
 {
@@ -9,6 +10,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
         HttpClient HttpClient { get; }
     }
 
+    [UsedImplicitly]
     public class AgentHttpClient : IAgentHttpClient
     {
         public AgentHttpClient(HttpClient client)
