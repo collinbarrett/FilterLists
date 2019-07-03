@@ -42,7 +42,7 @@ namespace FilterLists.Agent.Features.Urls
             {
                 var validator = BuildValidator(cancellationToken);
                 var brokenUrls = new List<UrlValidationResult>();
-                var distinctUrls = request.Urls.Distinct();
+                var distinctUrls = request.Urls.Distinct().DistributeByHost();
                 foreach (var url in distinctUrls)
                     await validator.SendAsync(url, cancellationToken);
                 validator.Complete();
