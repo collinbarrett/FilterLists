@@ -65,6 +65,7 @@ services:
     volumes:
       - archives:/app/archives
     environment:
+      ConnectionStrings__FilterListsConnection: ${FILTERLISTS_CONNECTION_STRING}
       ApplicationInsights__InstrumentationKey: ${FILTERLISTS_AGENT_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
       GitHub__ProductHeaderValue: ${FILTERLISTS_AGENT_GITHUB_PRODUCT_HEADER_VALUE}
       GitHub__PersonalAccessToken: ${FILTERLISTS_AGENT_GITHUB_PERSONAL_ACCESS_TOKEN}
