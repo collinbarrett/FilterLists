@@ -1,4 +1,5 @@
-﻿using FilterLists.Agent.AppSettings;
+﻿using System.Net.Http;
+using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Core.Interfaces;
 using FilterLists.Agent.Infrastructure.Clients;
 using FilterLists.Agent.Infrastructure.Repositories;
@@ -17,7 +18,11 @@ namespace FilterLists.Agent.Extensions
             services.AddConfiguration();
             services.AddLoggingCustom();
             services.AddMediatR(typeof(Program).Assembly);
-            services.AddHttpClient<AgentHttpClient>();
+            services.AddHttpClient<AgentHttpClient>().ConfigureHttpMessageHandlerBuilder(b =>
+            {
+                b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
+                b.Build();
+            });
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
             services.AddSingleton<IAgentGitHubClient, AgentGitHubClient>();
             services.AddTransient<IListInfoRepository, ListInfoRepository>();
