@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
@@ -77,8 +76,7 @@ namespace FilterLists.Agent.Features.Urls
                                 result.SetSupportsHttps();
                             if (response.IsSuccessStatusCode)
                                 return result;
-                            if (response.StatusCode == HttpStatusCode.PermanentRedirect ||
-                                response.StatusCode == HttpStatusCode.TemporaryRedirect)
+                            if ((int)response.StatusCode >= 300 && (int)response.StatusCode < 400)
                             {
                                 result.SetRedirectsTo(response.Headers.Location);
                             }
