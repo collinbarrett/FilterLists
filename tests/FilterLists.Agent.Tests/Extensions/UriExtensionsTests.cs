@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using FilterLists.Agent.Extensions;
 using Xunit;
 
-namespace FilterLists.Agent.Tests
+namespace FilterLists.Agent.Tests.Extensions
 {
     public class UriExtensionsTests
     {

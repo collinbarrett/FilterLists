@@ -8,64 +8,64 @@ namespace FilterLists.Services.Tests.Extensions
 {
     public class CollectionExtensionsTests
     {
-        private readonly ICollection<string> sut = new Collection<string>();
-        private IEnumerable<string> range;
-        private string item;
-
-        [Fact]
-        public void AddIfNotNullOrEmpty_EmptyString_AddsNothing()
-        {
-            item = "";
-            sut.AddIfNotNullOrEmpty(item);
-            Assert.DoesNotContain(item, sut);
-        }
-
-        [Fact]
-        public void AddIfNotNullOrEmpty_NonNullOrEmptyString_AddsParam()
-        {
-            item = "item";
-            sut.AddIfNotNullOrEmpty(item);
-            Assert.Contains(item, sut);
-        }
+        private readonly ICollection<string> _sut = new Collection<string>();
+        private IEnumerable<string> _range;
+        private string _item;
 
         [Fact]
         public void AddIfNotNullOrEmpty_NullString_AddsNothing()
         {
-            item = null;
-            sut.AddIfNotNullOrEmpty(item);
-            Assert.DoesNotContain(item, sut);
+            _item = null;
+            _sut.AddIfNotNullOrEmpty(_item);
+            Assert.DoesNotContain(_item, _sut);
         }
 
         [Fact]
         public void AddRange_EmptyCollection_AddsNothing()
         {
-            range = new Collection<string>();
-            sut.AddRange(range);
-            Assert.Empty(sut);
+            _range = new Collection<string>();
+            _sut.AddRange(_range);
+            Assert.Empty(_sut);
+        }
+
+        [Fact]
+        public void AddIfNotNullOrEmpty_EmptyString_AddsNothing()
+        {
+            _item = "";
+            _sut.AddIfNotNullOrEmpty(_item);
+            Assert.DoesNotContain(_item, _sut);
+        }
+
+        [Fact]
+        public void AddIfNotNullOrEmpty_NonNullOrEmptyString_AddsParam()
+        {
+            _item = "item";
+            _sut.AddIfNotNullOrEmpty(_item);
+            Assert.Contains(_item, _sut);
         }
 
         [Fact]
         public void AddRange_EmptyList_AddsNothing()
         {
-            range = new List<string>();
-            sut.AddRange(range);
-            Assert.Empty(sut);
+            _range = new List<string>();
+            _sut.AddRange(_range);
+            Assert.Empty(_sut);
         }
 
         [Fact]
         public void AddRange_StringCollection_AddsParam()
         {
-            range = new Collection<string> {"item1", "item2"};
-            sut.AddRange(range);
-            Assert.True(!range.Except(sut).Any());
+            _range = new Collection<string> {"item1", "item2"};
+            _sut.AddRange(_range);
+            Assert.True(!_range.Except(_sut).Any());
         }
 
         [Fact]
         public void AddRange_StringList_AddsParam()
         {
-            range = new List<string> {"item1", "item2"};
-            sut.AddRange(range);
-            Assert.True(!range.Except(sut).Any());
+            _range = new List<string> {"item1", "item2"};
+            _sut.AddRange(_range);
+            Assert.True(!_range.Except(_sut).Any());
         }
     }
 }
