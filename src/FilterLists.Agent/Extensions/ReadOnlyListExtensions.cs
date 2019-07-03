@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace FilterLists.Agent.Extensions
 {
@@ -6,9 +7,9 @@ namespace FilterLists.Agent.Extensions
     {
         public static T FirstOrDefault<T>(this IReadOnlyList<T> list)
         {
-            if (list is null || list.Count == 0)
-                return default;
-            return list[0];
+            if (list is null)
+                throw new ArgumentNullException(nameof(list));
+            return list.Count == 0 ? default : list[0];
         }
     }
 }
