@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  api:
+  agent:
     image: collinbarrett/filterlists.agent:test-agent
     build:
       context: .
