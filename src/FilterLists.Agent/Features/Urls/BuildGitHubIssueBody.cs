@@ -32,7 +32,7 @@ namespace FilterLists.Agent.Features.Urls
                     body.Append("<ul>");
                     foreach (var result in fileReults.Results)
                     {
-                        body.Append($"<li><a href=\"{result.Url.AbsoluteUri}\">{result.Url.AbsoluteUri}</a>");
+                        body.Append($"<li><a href=\"{result.Url.OriginalString}\">{result.Url.OriginalString}</a>");
                         body.Append("<ul>");
                         foreach (var message in result.Messages)
                             body.Append($"<li>{message}</li>");
