@@ -73,16 +73,22 @@ namespace FilterLists.Agent.Features.Urls
                         try
                         {
                             var response = await _httpClient.GetAsync(u, cancellationToken);
-                            if (response.StatusCode == HttpStatusCode.PermanentRedirect ||
-                                response.StatusCode == HttpStatusCode.TemporaryRedirect)
-                                result.SetRedirectsTo(response.Headers.Location);
                             if (u.Scheme == Uri.UriSchemeHttp && await IsHttpsSupported(u, cancellationToken))
                                 result.SetSupportsHttps();
                             if (response.IsSuccessStatusCode)
                                 return result;
-                            result.SetBroken();
-                            _logger.LogError(
-                                $"Url validation for ({u.AbsoluteUri}) failed with status code: {response.StatusCode}.");
+                            if (response.StatusCode == HttpStatusCode.PermanentRedirect ||
+                                response.StatusCode == HttpStatusCode.TemporaryRedirect)
+                            {
+                                result.SetRedirectsTo(response.Headers.Location);
+                            }
+                            else
+                            {
+                                result.SetBroken();
+                                _logger.LogError(
+                                    $"Url validation for ({u.AbsoluteUri}) failed with status code: {response.StatusCode}.");
+                            }
+
                             return result;
                         }
                         catch (HttpRequestException ex)
