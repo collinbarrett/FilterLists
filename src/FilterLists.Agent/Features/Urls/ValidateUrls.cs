@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading;
@@ -41,7 +42,8 @@ namespace FilterLists.Agent.Features.Urls
             {
                 var validator = BuildValidator(cancellationToken);
                 var brokenUrls = new List<UrlValidationResult>();
-                foreach (var url in request.Urls)
+                var distinctUrls = request.Urls.Distinct();
+                foreach (var url in distinctUrls)
                     await validator.SendAsync(url, cancellationToken);
                 validator.Complete();
                 while (await validator.OutputAvailableAsync(cancellationToken))
