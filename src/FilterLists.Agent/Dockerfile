@@ -18,6 +18,19 @@ RUN dotnet restore
 COPY src/FilterLists.Agent/. .
 RUN dotnet build -c Release --no-restore
 
+# init Agent.Tests
+FROM build AS test-agent
+ENTRYPOINT ["dotnet", "test", "--logger:trx"]
+
+# restore Agent.Tests
+WORKDIR /app/tests/FilterLists.Agent.Tests
+COPY tests/FilterLists.Agent.Tests/FilterLists.Agent.Tests.csproj .
+RUN dotnet restore
+
+# build Agent.Tests
+COPY tests/FilterLists.Agent.Tests/. .
+RUN dotnet build -c Release --no-restore
+
 # publish
 FROM build AS publish
 RUN dotnet publish -c Release -o out --no-restore --no-build
