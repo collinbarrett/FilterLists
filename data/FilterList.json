@@ -523,21 +523,21 @@
   {
     "id": 49,
     "description": "Japanese ad servers hosts file.",
-    "forumUrl": "http://potato.2ch.net/test/read.cgi/android/1450730522/",
+    "forumUrl": "https://potato.5ch.net/test/read.cgi/android/1450730522/",
     "homeUrl": "https://sites.google.com/site/hosts2ch/",
     "licenseId": 20,
     "name": "Hosts2ch",
     "syntaxId": 1,
     "updatedDate": "2019-03-23T22:11:10",
-    "viewUrl": "https://sites.google.com/site/hosts2ch/ja"
+    "viewUrl": "https://sites.google.com/site/hosts2ch/ja?attredirects=0"
   },
   {
     "id": 50,
     "description": "We will blacklist domains that fall into any of the following categories: scams/phishing/malware/malvertising/exploits - and other general threats.",
-    "descriptionSourceUrl": "https://www.hexxiumcreations.com/projects/malicious-domain-blocking/",
-    "donateUrl": "https://www.hexxiumcreations.com/donate/",
+    "descriptionSourceUrl": "https://hexxiumcreations.com/projects/malicious-domain-blocking/",
+    "donateUrl": "https://hexxiumcreations.com/donate/",
     "emailAddress": "support@hexxiumcreations.com",
-    "homeUrl": "https://www.hexxiumcreations.com/projects/malicious-domain-blocking/",
+    "homeUrl": "https://hexxiumcreations.com/projects/malicious-domain-blocking/",
     "issuesUrl": "https://github.com/HexxiumCreations/threat-list/issues",
     "licenseId": 5,
     "name": "Hexxium Creations Threat List",
@@ -577,7 +577,7 @@
   {
     "id": 53,
     "description": "Blocks Japanese regional mobile advertisements and trackers.",
-    "homeUrl": "http://gmbk0.tumblr.com/",
+    "homeUrl": "https://gmbk0.tumblr.com/",
     "licenseId": 20,
     "name": "gmbkslist (Hosts)",
     "syntaxId": 1,
@@ -803,14 +803,14 @@
   {
     "id": 71,
     "description": "Get rid of annoying cookie warnings from almost all 'infected' websites!",
-    "descriptionSourceUrl": "https://www.kiboke-studio.hr/i-dont-care-about-cookies/",
+    "descriptionSourceUrl": "https://www.i-dont-care-about-cookies.eu/",
     "emailAddress": "info@kiboke-studio.hr",
-    "homeUrl": "https://www.kiboke-studio.hr/i-dont-care-about-cookies/",
+    "homeUrl": "https://www.i-dont-care-about-cookies.eu/",
     "licenseId": 4,
     "name": "I Don't Care about Cookies",
     "syntaxId": 3,
     "updatedDate": "2019-04-13T07:41:12",
-    "viewUrl": "https://www.kiboke-studio.hr/i-dont-care-about-cookies/abp/"
+    "viewUrl": "https://www.i-dont-care-about-cookies.eu/abp/"
   },
   {
     "id": 72,
@@ -909,8 +909,8 @@
     "syntaxId": 1,
     "updatedDate": "2019-04-11T14:36:07",
     "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/gambling/host",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/gambling/host"
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/alternates/gambling/hosts",
+    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/gambling/hosts"
   },
   {
     "id": 80,
@@ -958,8 +958,8 @@
   {
     "id": 83,
     "description": "This project was built based on Anti-Adblock Killer (by Reek), but is now significantly different. Anti-Adblock Killer Script was completely re-implemented. Anti-Adblock Killer Filter was mostly copied and concatenated to uBlock Protector List.",
-    "descriptionSourceUrl": "https://github.com/jspenguin2017/uBlockProtector",
-    "homeUrl": "https://jspenguin2017.github.io/uBlockProtector",
+    "descriptionSourceUrl": "https://github.com/jspenguin2017/uBlockProtector/",
+    "homeUrl": "https://jspenguin2017.github.io/uBlockProtector/",
     "issuesUrl": "https://github.com/jspenguin2017/uBlockProtector/issues",
     "licenseId": 4,
     "name": "Nano Defender Integration",
@@ -1674,9 +1674,9 @@
   {
     "id": 139,
     "description": "The Spam404 domain blacklist is a regularly updated list of abusive domain names.",
-    "descriptionSourceUrl": "http://www.spam404.com/domain-blacklist.html",
+    "descriptionSourceUrl": "https://www.spam404.com/domain-blacklist.html",
     "emailAddress": "admin@spam404.com",
-    "homeUrl": "http://www.spam404.com/domain-blacklist.html",
+    "homeUrl": "https://www.spam404.com/domain-blacklist.html",
     "issuesUrl": "https://github.com/Spam404/lists/issues",
     "licenseId": 8,
     "name": "Spam404 Domain Blacklist",
@@ -1692,7 +1692,7 @@
     "description": "This filter protects you from online scams. This filter is regularly updated with data collected by Spam404.com.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt",
     "emailAddress": "admin@spam404.com",
-    "homeUrl": "http://www.spam404.com/blog/block-online-scams-with-spam404-and-adblock",
+    "homeUrl": "https://www.spam404.com/blog/block-online-scams-with-spam404-and-adblock",
     "issuesUrl": "https://github.com/Spam404/lists/issues",
     "licenseId": 8,
     "name": "Spam404",
@@ -1768,7 +1768,7 @@
   {
     "id": 148,
     "description": "I make supplemental filters in Adblock Plus to block garbage on webpages not blocked by other lists. I use many regular expressions, a few domain filters, but no CSS filters.",
-    "descriptionSourceUrl": "https://satterly.neocities.org/abp_filters.html",
+    "descriptionSourceUrl": "https://mrsatterly.com/abp_filters.html",
     "homeUrl": "https://mrsatterly.com/abp_filters.html",
     "licenseId": 14,
     "name": "Satterly's Adblock Plus Filters",
@@ -1863,7 +1863,7 @@
   {
     "id": 159,
     "description": "If you do not like numerous «Like» and «Tweet» buttons on all the popular websites on the Internet, subscribe to this filter, and you will not see them anymore.",
-    "descriptionSourceUrl": "https://adguard.com/en/filters.html",
+    "descriptionSourceUrl": "https://kb.adguard.com/general/adguard-ad-filters",
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
@@ -2305,7 +2305,7 @@
     "id": 199,
     "description": "Born from the need to block advertisements on the increasingly popular social network, this module is a great way to complete the protection offered by Adblock Plus and X Files during daily navigation. It may be associated with the main module of the X-Files or third-party lists.",
     "descriptionSourceUrl": "https://github.com/gioxx/xfiles",
-    "donateUrl": "https://paypal.me/gioxx/5",
+    "donateUrl": "https://www.paypal.me/gioxx/5",
     "forumUrl": "https://abpxfiles.uservoice.com/",
     "homeUrl": "https://xfiles.noads.it/",
     "issuesUrl": "https://github.com/gioxx/xfiles/issues",
@@ -2322,7 +2322,7 @@
     "id": 200,
     "description": "The module that serves to protect the user's navigation, seamlessly integrates to subscriptions already installed on your Adblock Plus.",
     "descriptionSourceUrl": "https://github.com/gioxx/xfiles",
-    "donateUrl": "https://paypal.me/gioxx/5",
+    "donateUrl": "https://www.paypal.me/gioxx/5",
     "forumUrl": "https://abpxfiles.uservoice.com/",
     "homeUrl": "https://xfiles.noads.it/",
     "issuesUrl": "https://github.com/gioxx/xfiles/issues",
@@ -2339,7 +2339,7 @@
     "id": 201,
     "description": "Specific for Italian websites but with an eye also to the most visited international, is the main form and the list officially recognized (for Italy), perfectly compatible with AdBlock Plus.",
     "descriptionSourceUrl": "https://github.com/gioxx/xfiles",
-    "donateUrl": "https://paypal.me/gioxx/5",
+    "donateUrl": "https://www.paypal.me/gioxx/5",
     "forumUrl": "https://abpxfiles.uservoice.com/",
     "homeUrl": "https://xfiles.noads.it/",
     "issuesUrl": "https://github.com/gioxx/xfiles/issues",
@@ -2412,7 +2412,7 @@
     "id": 206,
     "description": "The ABP advertising filter is built with the mission of improving the browsing experience for the vietnamese users. ABPVN may not help block all ads, but ABPVN will minimize the appearance of ads on most websites in Vietnam.",
     "descriptionSourceUrl": "https://abpvn.com",
-    "donateUrl": "https://abpvn.com/napthe",
+    "donateUrl": "https://abpvn.com/napthe/",
     "emailAddress": "support@abpvn.com",
     "forumUrl": "http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html",
     "homeUrl": "https://abpvn.com",
@@ -2618,7 +2618,7 @@
     "id": 223,
     "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Presented here filter set was created for Polish internet users. Contains a list of elements of advertising, such as banners or flash animations, the most commonly used on Polish websites.",
-    "descriptionSourceUrl": "https://www.certyficate.it/polski-filtr-adblock/",
+    "descriptionSourceUrl": "https://www.certyficate.it/polski-filtr-adblock-ublock-origin-adblock-plus-nano-adblocker-adguard/",
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "emailAddress": "errors@certyficate.it",
     "homeUrl": "https://www.certyficate.it/",
@@ -2655,7 +2655,7 @@
     "licenseId": 5,
     "name": "AdAway Blocking Hosts File for Japan",
     "syntaxId": 1,
-    "viewUrl": "https://sites.google.com/site/logroid/files/hosts.txt"
+    "viewUrl": "https://sites.google.com/site/logroid/files/hosts.txt?attredirects=0"
   },
   {
     "id": 226,
@@ -3152,7 +3152,8 @@
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "emailAddress": "algimantas@margevicius.lt",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=101",
-    "homeUrl": "https://margevicius.lt/easylist_lithuania/",
+    "homeUrl": "https://github.com/EasyList-Lithuania/easylist_lithuania",
+    "issuesUrl": "https://github.com/EasyList-Lithuania/easylist_lithuania/issues",
     "licenseId": 4,
     "name": "EasyList Lithuania",
     "syntaxId": 3,
@@ -3270,7 +3271,7 @@
     "description": "Corset is a subscription filter to block intruding ads on sites using Korean.",
     "descriptionSourceUrl": "https://code.google.com/archive/p/abp-corset/",
     "emailAddress": "corset@tistory.com",
-    "homeUrl": "http://corset.tistory.com/",
+    "homeUrl": "https://corset.tistory.com/",
     "licenseId": 12,
     "name": "Corset",
     "syntaxId": 3,
@@ -3280,10 +3281,10 @@
   {
     "id": 279,
     "description": "EFF maintains a Privacy Badger \"yellowlist\" of domains for which requests are allowed but Privacy Badger restricts access or availability of objectionable cookies and potentially other objectionable identifiers.",
-    "descriptionSourceUrl": "https://github.com/EFForg/privacybadgerchrome/blob/master/doc/yellowlist-criteria.md",
+    "descriptionSourceUrl": "https://github.com/EFForg/privacybadger/blob/master/doc/yellowlist-criteria.md",
     "donateUrl": "https://supporters.eff.org/donate/support-privacy-badger",
     "homeUrl": "https://www.eff.org/privacybadger",
-    "issuesUrl": "https://github.com/EFForg/privacybadgerfirefox/issues",
+    "issuesUrl": "https://github.com/EFForg/privacybadger/issues",
     "licenseId": 5,
     "name": "Cookie Blocklist",
     "syntaxId": 28,
@@ -3938,9 +3939,9 @@
   },
   {
     "id": 336,
-    "description": "Amazon, Yahoo, Facebook , Twitter etc. It is a file created as a result of verifying and reducing connection failure as much as possible by making the filter mild. We also do not connect to tracking cookies or some malicious sites.",
-    "descriptionSourceUrl": "http://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
-    "homeUrl": "http://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
+    "description": "Amazon, Yahoo, Facebook, Twitter, etc. It is a file created as a result of verifying and reducing connection failure as much as possible by making the filter mild. We also do not connect to tracking cookies or some malicious sites.",
+    "descriptionSourceUrl": "https://cosmonote.blogspot.com/2013/07/adaway-hosts-adfree-windows7-windows8.html",
+    "homeUrl": "https://cosmonote.blogspot.com/2013/07/adaway-hosts-adfree-windows7-windows8.html",
     "licenseId": 5,
     "name": "HOSTS for Windows PC for Japan",
     "syntaxId": 1,
@@ -3964,7 +3965,7 @@
     "descriptionSourceUrl": "https://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
     "homeUrl": "https://cosmonote.blogspot.jp/2013/07/adaway-hosts-adfree-windows7-windows8.html",
     "licenseId": 5,
-    "name": "Japan Ultimate",
+    "name": "Japan Hosts Ultimate",
     "syntaxId": 1,
     "updatedDate": "2014-05-13T00:00:00",
     "viewUrl": "https://sites.google.com/site/cosmonoteshosts/hosts_Ultimate.txt"
@@ -4011,7 +4012,6 @@
     "id": 342,
     "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Blocks banners (paypal, payu, bitcoin and patronite), charity banners, other forms of inclination to support on Polish sites.",
-    "donateUrl": "https://authedmine.com/media/miner.html?key=ZpmDZUFJhHdv1YZHpCHFWhAUQIGa67TV",
     "homeUrl": "https://github.com/KonoromiHimaries/PolishSubFilters",
     "licenseId": 9,
     "name": "Polish Anti-Donate Filters",
@@ -4038,7 +4038,6 @@
     "id": 344,
     "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Blocks internal advertising, paid subscriptions, own stores on Polish sites.",
-    "donateUrl": "https://authedmine.com/media/miner.html?key=ZpmDZUFJhHdv1YZHpCHFWhAUQIGa67TV",
     "homeUrl": "https://github.com/KonoromiHimaries/PolishSubFilters/",
     "licenseId": 9,
     "name": "Polish Internal Filters",
@@ -4397,8 +4396,8 @@
   {
     "id": 371,
     "description": "AFNIL’s intention is to merge third-party lists of known fakenews sites and make them usable for programs that can block.",
-    "descriptionSourceUrl": "https://afnil-antifakenewsinternationallist.github.io/AFNIL/",
-    "homeUrl": "https://afnil-antifakenewsinternationallist.github.io/AFNIL/",
+    "descriptionSourceUrl": "https://afnil-antifakenewsinternationallist.github.io/",
+    "homeUrl": "https://afnil-antifakenewsinternationallist.github.io/",
     "issuesUrl": "https://github.com/AFNIL-AntiFakeNewsInternationalList/AFNIL/issues",
     "licenseId": 4,
     "name": "AFNIL - Anti Fake News International List",
@@ -4544,12 +4543,12 @@
   },
   {
     "id": 383,
-    "chatUrl": "https://discord.gg/013MqTM1p1qm52VcZ",
+    "chatUrl": "https://discordapp.com/invite/013MqTM1p1qm52VcZ",
     "description": "Removes uncovered AD, AD frames, and adblock warnings from specific popular websites",
     "descriptionSourceUrl": "https://austinhuang.me/0131-block-list",
     "donateUrl": "https://austinhuang.me/donate",
     "emailAddress": "im@austinhuang.me",
-    "homeUrl": "https://austinhuang.me/0131-block-list",
+    "homeUrl": "https://austinhuang.me/0131-block-list/",
     "issuesUrl": "https://github.com/austinhuang0131/0131-block-list/issues",
     "licenseId": 8,
     "name": "0131 Block List",
@@ -4680,8 +4679,8 @@
   },
   {
     "id": 396,
-    "homeUrl": "https://jspenguin2017.github.io/uBlockProtector/",
-    "issuesUrl": "https://jspenguin2017.github.io/uBlockProtector/issues",
+    "homeUrl": "https://github.com/NanoAdblocker/NanoFilters",
+    "issuesUrl": "https://github.com/NanoAdblocker/NanoFilters/issues",
     "licenseId": 4,
     "name": "Nano filters",
     "publishedDate": "2017-12-09T03:28:59",
@@ -4691,8 +4690,8 @@
   },
   {
     "id": 397,
-    "homeUrl": "https://jspenguin2017.github.io/uBlockProtector/",
-    "issuesUrl": "https://jspenguin2017.github.io/uBlockProtector/issues",
+    "homeUrl": "https://github.com/NanoAdblocker/NanoFilters",
+    "issuesUrl": "https://github.com/NanoAdblocker/NanoFilters/issues",
     "licenseId": 4,
     "name": "Nano filters - Whitelist",
     "publishedDate": "2017-12-19T18:51:51",
@@ -4702,8 +4701,8 @@
   },
   {
     "id": 398,
-    "homeUrl": "https://jspenguin2017.github.io/uBlockProtector/",
-    "issuesUrl": "https://jspenguin2017.github.io/uBlockProtector/issues",
+    "homeUrl": "https://github.com/NanoAdblocker/NanoFilters",
+    "issuesUrl": "https://github.com/NanoAdblocker/NanoFilters/issues",
     "licenseId": 4,
     "name": "Nano filters - Annoyance",
     "publishedDate": "2017-12-11T15:31:47",
@@ -4880,7 +4879,6 @@
     "id": 421,
     "description": "A host file generated from updated phishing site feeds.",
     "descriptionSourceUrl": "https://gitlab.com/Kurobeats/phishing_hosts#phishing-site-hosts-generator",
-    "donateUrl": "https://kurobeats.xyz/",
     "homeUrl": "https://gitlab.com/Kurobeats/phishing_hosts",
     "issuesUrl": "https://gitlab.com/Kurobeats/phishing_hosts/issues",
     "licenseId": 19,
@@ -5150,7 +5148,7 @@
     "id": 443,
     "description": "To block out ads, mostly tracking services, to prevent data from being collected.",
     "descriptionSourceUrl": "https://www.kowabit.de/blcklst/",
-    "donateUrl": "https://kowabit.de/willkommen/finanzierung-von-kowabit/",
+    "donateUrl": "https://www.kowabit.de/willkommen/finanzierung-von-kowabit/",
     "homeUrl": "https://www.kowabit.de/blcklst/",
     "licenseId": 20,
     "name": "kowabit.de - bl*cklist of death",
@@ -5380,7 +5378,7 @@
     "id": 476,
     "description": "Blocks access to Microsoft domains.",
     "emailAddress": "jmdugan_pubprofile_1522347973@biocontact.org",
-    "homeUrl": "https://github.com/jmdugan/blocklists",
+    "homeUrl": "https://github.com/jmdugan/blockli[sts",
     "issuesUrl": "https://github.com/jmdugan/blocklists/issues",
     "licenseId": 28,
     "name": "jmdugan Blocklists Microsoft",
@@ -5419,7 +5417,7 @@
     "id": 479,
     "emailAddress": "easylist.polish@gmail.com",
     "homeUrl": "https://easylist.to",
-    "issuesUrl": "easylist.polish@gmail.com",
+    "issuesUrl": "https://forums.lanik.us/viewforum.php?f=107",
     "licenseId": 4,
     "name": "EasyList Polish",
     "syntaxId": 3,
@@ -5445,7 +5443,7 @@
     "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
     "donateUrl": "https://energized.pro/support",
     "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
+    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 9,
@@ -5464,7 +5462,7 @@
     "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
     "donateUrl": "https://energized.pro/support",
     "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
+    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 9,
@@ -5483,7 +5481,7 @@
     "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
     "donateUrl": "https://energized.pro/support",
     "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
+    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 9,
@@ -5502,7 +5500,7 @@
     "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
     "donateUrl": "https://energized.pro/support",
     "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
+    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 9,
@@ -5521,7 +5519,7 @@
     "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
     "donateUrl": "https://energized.pro/support",
     "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
+    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 9,
@@ -5540,7 +5538,7 @@
     "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
     "donateUrl": "https://energized.pro/support",
     "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
+    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 9,
@@ -5559,7 +5557,7 @@
     "descriptionSourceUrl": "https://github.com/EnergizedProtection/block",
     "donateUrl": "https://energized.pro/support",
     "emailAddress": "mail@energized.pro",
-    "forumUrl": "http://go.energized.pro/xda",
+    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 9,
@@ -5619,7 +5617,7 @@
   {
     "id": 494,
     "description": "This list of hosts is compiled from server logs on my own servers and forms the basis of the bad referrers domain lists for The Nginx Ultimate Bad Bot Blocker at https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker and the Apache Ultimate Bad Bot Blocker at https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker",
-    "donateUrl": "https://paypal.me/mitchellkrog/",
+    "donateUrl": "https://www.paypal.me/mitchellkrog/",
     "emailAddress": "mitchellkrog@gmail.com",
     "homeUrl": "https://github.com/mitchellkrogza/Badd-Boyz-Hosts",
     "issuesUrl": "https://github.com/mitchellkrogza/Badd-Boyz-Hosts/issues",
@@ -5713,15 +5711,15 @@
   {
     "id": 508,
     "description": "Whitelist of section with promotion of fake science/news. More at: https://github.com/azet12/KAD/issues/649.",
-    "descriptionSourceUrl": "https://github.com/azet12/KAD",
+    "descriptionSourceUrl": "https://github.com/PolishFiltersTeam/KAD",
     "emailAddress": "kadrep@outlook.com",
-    "homeUrl": "https://azet12.github.io/KAD/",
-    "issuesUrl": "https://github.com/azet12/KAD/issues",
+    "homeUrl": "https://kadantiscam.netlify.com/",
+    "issuesUrl": "https://github.com/PolishFiltersTeam/KAD/issues",
     "licenseId": 8,
     "name": "KAD - The Whitelist of the Controversial Pages",
-    "submissionUrl": "https://azet12.github.io/KAD/informacje.html#form1-35",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/azet12/KAD/gh-pages/assets/other/kadfakewhitelist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/azet12/KAD/gh-pages/assets/other/kadfakewhitelist.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/gh-pages/assets/other/kadfakewhitelist.txt"
   },
   {
     "id": 509,
@@ -5934,7 +5932,6 @@
     "descriptionSourceUrl": "https://github.com/andromedarabbit/List-KR",
     "emailAddress": "plaintext@andromedarabbit.net",
     "homeUrl": "https://github.com/andromedarabbit/List-KR",
-    "issuesUrl": "https://github.com/andromedarabbit/List-KR/issues",
     "licenseId": 8,
     "name": "List-KR (andromedarabbit)",
     "publishedDate": "2016-05-13T13:02:19",
@@ -5959,8 +5956,8 @@
     "id": 565,
     "description": "EasyList Lite is new in AdBlock for Microsoft Edge and Mozilla Firefox. It's a subset of EasyList. EasyList Lite includes only the filters that actually block and hide ads on the websites people visit most. This makes it several thousand filters smaller than EasyList, and that enables AdBlock to work faster on those sites.",
     "descriptionSourceUrl": "https://help.getadblock.com/support/solutions/articles/6000142821-what-is-easylist-lite-",
-    "forumUrl": "https://help.getadblock.com/",
-    "homeUrl": "https://help.getadblock.com/",
+    "forumUrl": "https://help.getadblock.com/support/home",
+    "homeUrl": "https://help.getadblock.com/support/home",
     "licenseId": 4,
     "name": "EasyList - Lite",
     "policyUrl": "https://help.getadblock.com/support/solutions/articles/6000142821-what-is-easylist-lite-",
@@ -6556,7 +6553,7 @@
     "description": "Ad server list for use with hosts files to block ads",
     "descriptionSourceUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
     "donateUrl": "https://www.patreon.com/blocklist",
-    "homeUrl": " https://pgl.yoyo.org/adservers",
+    "homeUrl": " https://pgl.yoyo.org/adservers/",
     "licenseId": 5,
     "name": "Peter Lowe's List (Hosts)",
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
@@ -6907,7 +6904,7 @@
   },
   {
     "id": 663,
-    "homeUrl": "http://nmtrung.com/fmsf-2",
+    "homeUrl": "https://nmtrung.com/fmsf-2",
     "issuesUrl": "https://github.com/nmtrung/FMSF-2.0/issues",
     "licenseId": 5,
     "name": "FSMF 2",
@@ -7129,7 +7126,7 @@
   {
     "id": 682,
     "description": "This file will be automatically updated daily and populated with the last 30 days of malicious IP addresses.",
-    "homeUrl": "https://malc0de.com",
+    "homeUrl": "https://malc0de.com/dashboard/",
     "licenseId": 5,
     "name": "Malc0de IP Blacklist",
     "syntaxId": 9,
@@ -7217,7 +7214,7 @@
     "id": 690,
     "description": "A daily updated list of suspicious, snooping, sniffing and hacking attempts from IP addresses against services like SSH, HTTP and Wordpress Hack Attempts",
     "descriptionSourceUrl": "https://github.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses#suspicioussnoopingsniffinghackingipaddresses",
-    "donateUrl": "https://paypal.me/mitchellkrog/",
+    "donateUrl": "https://www.paypal.me/mitchellkrog/",
     "emailAddress": "mitchellkrog@gmail.com",
     "homeUrl": "https://github.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses",
     "issuesUrl": "https://github.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses/issues",
@@ -7232,7 +7229,7 @@
     "id": 691,
     "description": "Lists of the top attacking IP addresses trying to hack or compromise Wordpress web sites. Information is sourced from reports released monthly by Wordfence",
     "descriptionSourceUrl": "https://github.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites#top-attacking-ip-addresses-against-wordpress-sites",
-    "donateUrl": "https://paypal.me/mitchellkrog/",
+    "donateUrl": "https://www.paypal.me/mitchellkrog/",
     "emailAddress": "mitchellkrog@gmail.com",
     "homeUrl": "https://github.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites",
     "issuesUrl": "https://github.com/mitchellkrogza/Top-Attacking-IP-Addresses-Against-Wordpress-Sites/issues",
@@ -7247,7 +7244,7 @@
     "id": 692,
     "description": "This repository contains a list of all web sites I come across that are hacked with malware, ransomware or trojans. Most site owners are unaware their sites have been hacked and are being used to plant malware.",
     "descriptionSourceUrl": "https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites#the-big-list-of-hacked-malware-web-sites",
-    "donateUrl": "https://paypal.me/mitchellkrog/",
+    "donateUrl": "https://www.paypal.me/mitchellkrog/",
     "emailAddress": "mitchellkrog@gmail.com",
     "homeUrl": "https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites",
     "issuesUrl": "https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/issues",
@@ -7260,7 +7257,7 @@
   },
   {
     "id": 693,
-    "donateUrl": "https://paypal.me/mitchellkrog/",
+    "donateUrl": "https://www.paypal.me/mitchellkrog/",
     "emailAddress": "mitchellkrog@gmail.com",
     "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
     "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
@@ -7272,7 +7269,7 @@
   },
   {
     "id": 694,
-    "donateUrl": "https://paypal.me/mitchellkrog/",
+    "donateUrl": "https://www.paypal.me/mitchellkrog/",
     "emailAddress": "mitchellkrog@gmail.com",
     "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
     "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
@@ -7284,7 +7281,7 @@
   },
   {
     "id": 695,
-    "donateUrl": "https://paypal.me/mitchellkrog/",
+    "donateUrl": "https://www.paypal.me/mitchellkrog/",
     "emailAddress": "mitchellkrog@gmail.com",
     "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
     "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
@@ -7510,7 +7507,6 @@
     "description": "The project does not make any profit, only for convenient browsing of some websites for study and research, please comply with local laws.",
     "descriptionSourceUrl": "https://github.com/superliaoyong/hosts#%E9%A1%B9%E7%9B%AE%E4%B8%8D%E5%81%9A%E4%BB%BB%E4%BD%95%E7%9B%88%E5%88%A9%E5%8F%AA%E4%BE%9B%E4%BE%BF%E5%88%A9%E7%9A%84%E6%B5%8F%E8%A7%88%E9%83%A8%E5%88%86%E7%BD%91%E7%AB%99%E4%BB%A5%E5%AD%A6%E4%B9%A0%E7%A0%94%E7%A9%B6%E8%AF%B7%E9%81%B5%E5%AE%88%E5%BD%93%E5%9C%B0%E6%B3%95%E5%BE%8B",
     "homeUrl": "https://github.com/superliaoyong/hosts",
-    "issuesUrl": "https://github.com/superliaoyong/hosts/issues",
     "licenseId": 5,
     "name": "Full Address Hosts File",
     "policyUrl": "https://github.com/superliaoyong/hosts#%E9%A1%B9%E7%9B%AE%E5%BC%80%E6%BA%90%E5%A4%8D%E5%88%B6%E6%97%B6%E6%B3%A8%E6%98%8E%E6%9D%A5%E6%BA%90%E4%BD%86%E7%A6%81%E6%AD%A2%E4%BB%BB%E4%BD%95%E4%BA%BA%E6%88%96%E7%BB%84%E7%BB%87%E9%87%8D%E5%8F%91%E5%B8%83%E5%88%B0%E5%A4%A7%E9%99%86%E7%BD%91%E7%AB%99",
@@ -7530,14 +7526,14 @@
     "publishedDate": "2014-11-18T12:42:33",
     "syntaxId": 14,
     "updatedDate": "2019-03-10T21:11:05",
-    "viewUrl": "https://raw.githubusercontent.com/popcorner/cernet-ipv6-hosts/master/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/popcorner/cernet-ipv6-hosts/hosts/hosts"
   },
   {
     "id": 719,
     "description": "This list allows advertising that directly benefits open source projects by paying for development, paying for operations, or providing direct funding. You can read more at https://ads-for-open-source.readthedocs.io/inclusion.html for details on the criteria for inclusion or to get your project included.",
-    "descriptionSourceUrl": "https://github.com/rtfd/ads-for-opensource#advertising-for-open-source-exception-lists",
-    "homeUrl": "https://github.com/rtfd/ads-for-opensource",
-    "issuesUrl": "https://github.com/rtfd/ads-for-opensource/issues",
+    "descriptionSourceUrl": "https://github.com/readthedocs/ads-for-opensource#advertising-for-open-source-exception-lists",
+    "homeUrl": "https://github.com/readthedocs/ads-for-opensource",
+    "issuesUrl": "https://github.com/readthedocs/ads-for-opensource/issues",
     "licenseId": 2,
     "name": "Open Source Advertising Exception List",
     "syntaxId": 3,
@@ -7629,7 +7625,7 @@
     "updatedDate": "2019-03-21T00:14:46",
     "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/crapblock-annoyances.txt",
     "viewUrlMirror1": "https://crapblock.theel0ja.info/crapblock-annoyances.txt",
-    "viewUrlMirror2": "https://gitlab.com/theel0ja/CrapBlock/raw/master/crapblock-annoyances.txt"
+    "viewUrlMirror2": "https://gitlab.com/theel0ja/crapblock/raw/master/crapblock-annoyances.txt"
   },
   {
     "id": 730,
@@ -7645,7 +7641,7 @@
     "updatedDate": "2018-12-01T18:13:03",
     "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/block-googlefonts.txt",
     "viewUrlMirror1": "https://crapblock.theel0ja.info/block-googlefonts.txt",
-    "viewUrlMirror2": "https://gitlab.com/theel0ja/CrapBlock/raw/master/block-googlefonts.txt"
+    "viewUrlMirror2": "https://gitlab.com/theel0ja/crapblock/raw/master/block-googlefonts.txt"
   },
   {
     "id": 731,
@@ -7663,17 +7659,17 @@
   {
     "id": 732,
     "description": "This is a blocklist (might not be ad specific) for ublock orgin and other blockers... Reason: Out of box nagware/pop up box less internet (also used by me)",
-    "descriptionSourceUrl": "https://github.com/bads-tm/superblock#superblock",
+    "descriptionSourceUrl": "https://github.com/dariusworks/superblock#superblock",
     "donateUrl": "https://bads.team/ultrapage#donate",
     "emailAddress": "hello@bads.team",
-    "homeUrl": "https://github.com/bads-tm/superblock",
-    "issuesUrl": "https://github.com/bads-tm/superblock/issues",
+    "homeUrl": "https://github.com/dariusworks/superblock",
+    "issuesUrl": "https://github.com/dariusworks/superblock/issues",
     "licenseId": 2,
     "name": "BADS.TM Cleaner Sites List All In One",
     "publishedDate": "2017-08-06T17:23:59",
     "syntaxId": 3,
     "updatedDate": "2017-12-23T14:57:42",
-    "viewUrl": "https://raw.githubusercontent.com/bads-tm/superblock/master/cleanersitesAiO.txt"
+    "viewUrl": "https://raw.githubusercontent.com/dariusworks/superblock/master/cleanersitesAiO.txt"
   },
   {
     "id": 733,
@@ -7693,7 +7689,7 @@
     "description": "Filterlist that targeted to use on Gelbooru image board site.",
     "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/filterlist/imageboard/readme.md",
     "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
-    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues/labels/Site%3A%20Gelbooru",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?labels=Site%3A+Gelbooru",
     "licenseId": 13,
     "name": "GelboLube",
     "publishedDate": "2018-09-27T13:46:05",
@@ -7706,7 +7702,7 @@
     "id": 735,
     "description": "Help blocking ads, unnecessary widgets and also prevent anti-adblock cooldown on APKMirror.",
     "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
-    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues/labels/Site%3A%20APKMirror",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?labels=Site%3A+APKMirror",
     "licenseId": 13,
     "name": "Anti APKMirror Ads and Countdown",
     "publishedDate": "2018-09-26T14:26:24",
@@ -7771,8 +7767,8 @@
     "id": 746,
     "description": "By using this extension, you can block ads that you think are annoying while browsing on websites that you like to explore. You can also save internet quota usage or speed up website loading, so you can save time.",
     "descriptionSourceUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/tree/master/uBlock%20Indo#ublock",
-    "homeUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/tree/master/uBlock%20Indo",
-    "issuesUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/tree/master/uBlock%20Indo/issues",
+    "homeUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia",
+    "issuesUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/issues",
     "licenseId": 5,
     "name": "uBlock Indo",
     "syntaxId": 4,
@@ -8017,8 +8013,6 @@
   {
     "id": 770,
     "emailAddress": "magno.biet+adp@gmail.com",
-    "homeUrl": "https://github.com/magnobiet/adblock-plus-list",
-    "issuesUrl": "https://github.com/magnobiet/adblock-plus-list/issues",
     "licenseId": 2,
     "name": "Magno's Adblock List",
     "syntaxId": 3,
@@ -8395,7 +8389,7 @@
   },
   {
     "id": 808,
-    "homeUrl": "https://ajnasz.hu/adblock",
+    "homeUrl": "https://ajnasz.hu/",
     "licenseId": 5,
     "name": "ajnasz's list",
     "syntaxId": 3,
@@ -8766,15 +8760,15 @@
   {
     "id": 838,
     "description": "VBlocker is made by a normal person that surfs the web to see all of the ads that should be blocked and added to VBlocker.",
-    "descriptionSourceUrl": "https://github.com/Just1GamerYT/vblocker_adblockplus-filterlist#why-vblocker",
-    "homeUrl": "https://github.com/Just1GamerYT/vblocker_adblockplus-filterlist",
-    "issuesUrl": "https://github.com/Just1GamerYT/vblocker_adblockplus-filterlist/issues",
+    "descriptionSourceUrl": "https://github.com/SG-Nebula/vblocker_adblockplus-filterlist#why-vblocker",
+    "homeUrl": "https://github.com/SG-Nebula/vblocker_adblockplus-filterlist",
+    "issuesUrl": "https://github.com/SG-Nebula/vblocker_adblockplus-filterlist/issues",
     "licenseId": 7,
     "name": "VBlocker",
     "publishedDate": "2018-06-17T00:59:18",
     "syntaxId": 3,
     "updatedDate": "2018-06-17T00:59:18",
-    "viewUrl": "https://raw.githubusercontent.com/Just1GamerYT/vblocker_adblockplus-filterlist/master/vblocker"
+    "viewUrl": "https://raw.githubusercontent.com/SG-Nebula/vblocker_adblockplus-filterlist/master/vblocker"
   },
   {
     "id": 839,
@@ -9091,7 +9085,6 @@
     "descriptionSourceUrl": "https://github.com/bogachenko/presstheattack",
     "emailAddress": "bogachenkove@gmail.com",
     "homeUrl": "https://github.com/bogachenko/presstheattack",
-    "issuesUrl": "https://github.com/bogachenko/presstheattack/issues",
     "licenseId": 2,
     "name": "Press the Attack",
     "publishedDate": "2018-10-01T13:53:10",
@@ -9102,7 +9095,7 @@
   {
     "id": 862,
     "description": "This filterlist only works for uBlock Origin and other proper forks (I only recommend NanoAdBlocker than others) because it's borrow the strict blocking ability to prevent navigation to specific sites that have unnecessary parameters added to keep track users regardless of privacy settings (DNT, cookies, referer, etc.), the internal strict blocking possibly to reveal real URLs under the warning sign and also divide each parameters to make sure you're going to the legitmate destination, however, you need to make manual text selection to exclude tracking parameters if some sites have multiple parameters and internal strict blocking cannot divide or clean-up target URL properly.",
-    "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/tree/master/filterlist/other/readme.md",
+    "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/filterlist/other/readme.md",
     "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
     "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
     "licenseId": 13,
@@ -13239,7 +13232,7 @@
     "description": "A phishing domains list aiming at blocking scam domains from Steam Store, CS:GO, Dota 2, Team Fortress 2, PUBG and other related scams related to it, based on the wishihab/steamscamsite scam list https://github.com/wishihab/steamscamsite.",
     "descriptionSourceUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsites/blob/master/README.md",
     "emailAddress": "poorpocketsmcnewhold@pm.me",
-    "homeUrl": "https://poorpocketsmcnewhold.github.io/SteamScamSites",
+    "homeUrl": "https://poorpocketsmcnewhold.github.io/SteamScamSites/",
     "issuesUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsites/issues",
     "licenseId": 14,
     "name": "SteamScamSites",
@@ -13474,8 +13467,8 @@
     "publishedDate": "2018-09-27T14:26:13",
     "syntaxId": 4,
     "updatedDate": "2019-04-05T17:22:49",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/other/MiscAnnoynace.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/other/MiscAnnoynace.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/other/MiscAnnoyance.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/other/MiscAnnoyance.txt"
   },
   {
     "id": 1304,
@@ -15341,7 +15334,7 @@
     "descriptionSourceUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsites/blob/master/README.md",
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://poorpocketsmcnewhold.github.io/SteamScamSites",
-    "issuesUrl": "[https://github.com/PoorPocketsMcNewHold/steamscamsites/issues](https://github.com/PoorPocketsMcNewHold/steamscamsites/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)",
+    "issuesUrl": "https://github.com/PoorPocketsMcNewHold/steamscamsites/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 14,
     "name": "SteamScamSites Ashes version",
     "publishedDate": "2019-02-09T12:56:49",
@@ -15556,48 +15549,48 @@
   },
   {
     "id": 1475,
-    "homeUrl": "https://hblock.molinero.xyz/",
+    "homeUrl": "https://hblock.molinero.dev/",
     "licenseId": 5,
     "name": "hBlock Hosts",
     "syntaxId": 1,
     "updatedDate": "2019-04-20T02:21:12",
-    "viewUrl": "https://hblock.molinero.xyz/hosts"
+    "viewUrl": "https://hblock.molinero.dev/hosts"
   },
   {
     "id": 1476,
-    "homeUrl": "https://hblock.molinero.xyz/",
+    "homeUrl": "https://hblock.molinero.dev/",
     "licenseId": 5,
     "name": "hBlock Hosts for Android",
     "syntaxId": 1,
     "updatedDate": "2019-04-20T03:01:12",
-    "viewUrl": "https://hblock.molinero.xyz/hosts_android.zip"
+    "viewUrl": "https://hblock.molinero.dev/hosts_android.zip"
   },
   {
     "id": 1477,
-    "homeUrl": "https://hblock.molinero.xyz/",
+    "homeUrl": "https://hblock.molinero.dev/",
     "licenseId": 5,
     "name": "hBlock Hosts RPZ",
     "syntaxId": 25,
     "updatedDate": "2019-04-20T03:06:13",
-    "viewUrl": "https://hblock.molinero.xyz/hosts_rpz.txt"
+    "viewUrl": "https://hblock.molinero.dev/hosts_rpz.txt"
   },
   {
     "id": 1478,
-    "homeUrl": "https://hblock.molinero.xyz/",
+    "homeUrl": "https://hblock.molinero.dev/",
     "licenseId": 5,
     "name": "hBlock Hosts Unbound",
     "syntaxId": 24,
     "updatedDate": "2019-04-20T03:45:12",
-    "viewUrl": "https://hblock.molinero.xyz/hosts_unbound.conf"
+    "viewUrl": "https://hblock.molinero.dev/hosts_unbound.conf"
   },
   {
     "id": 1479,
-    "homeUrl": "https://hblock.molinero.xyz/",
+    "homeUrl": "https://hblock.molinero.dev/",
     "licenseId": 5,
     "name": "hBlock Hosts DNSMASQ",
     "syntaxId": 20,
     "updatedDate": "2019-04-20T05:32:11",
-    "viewUrl": "https://hblock.molinero.xyz/hosts_dnsmasq.conf"
+    "viewUrl": "https://hblock.molinero.dev/hosts_dnsmasq.conf"
   },
   {
     "id": 1480,
@@ -15620,15 +15613,6 @@
     "syntaxId": 14,
     "updatedDate": "2019-04-19T13:49:25",
     "viewUrl": "https://raw.githubusercontent.com/jawz101/MobileAdTrackers/master/hosts"
-  },
-  {
-    "id": 1482,
-    "description": "Optimized ad domains for your phone.",
-    "licenseId": 5,
-    "name": "Optimized PI Hole HOSTS",
-    "syntaxId": 2,
-    "updatedDate": "2019-04-21T02:43:12",
-    "viewUrl": "https://dbl2.oisd.nl/"
   },
   {
     "id": 1483,
@@ -16165,7 +16149,7 @@
     "licenseId": 4,
     "name": "EasyPrivacy (TPL)",
     "syntaxId": 10,
-    "viewUrl": "https://easylist.to/easylist/easyprivacy.tpl"
+    "viewUrl": "https://easylist-msie.adblockplus.org/easyprivacy.tpl"
   },
   {
     "id": 1538,
@@ -16689,7 +16673,6 @@
     "id": 1577,
     "donateUrl": "https://opencollective.com/adnauseam",
     "homeUrl": "https://github.com/dhowe/uAssets",
-    "issuesUrl": "https://github.com/dhowe/uAssets/issues",
     "licenseId": 4,
     "name": "AdNauseam Filters",
     "syntaxId": 4,
@@ -16776,9 +16759,9 @@
     "publishedDate": "2019-05-19T00:00:00",
     "syntaxId": 19,
     "updatedDate": "2019-05-19T00:00:00",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivoxy.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivoxy.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivoxy.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivoxy.action",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivoxy.action",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivoxy.action"
   },
   {
     "id": 1584,
@@ -16973,7 +16956,7 @@
   {
     "id": 1597,
     "description": "Introducing the Amazing/Sensational/Remarkable/Revolutionary; #1 Blocklist :)",
-    "donateUrl": "https://paypal.me/sjhgvr",
+    "donateUrl": "https://www.paypal.me/sjhgvr",
     "homeUrl": "https://www.reddit.com/r/pihole/comments/bppug1/introducing_the/",
     "licenseId": 5,
     "name": "OISD",
@@ -16985,7 +16968,7 @@
   {
     "id": 1598,
     "description": "Introducing the Amazing/Sensational/Remarkable/Revolutionary; #1 Blocklist :)",
-    "donateUrl": "https://paypal.me/sjhgvr",
+    "donateUrl": "https://www.paypal.me/sjhgvr",
     "homeUrl": "https://www.reddit.com/r/pihole/comments/bppug1/introducing_the/",
     "licenseId": 5,
     "name": "OISD (Hosts)",
@@ -16997,7 +16980,7 @@
   {
     "id": 1599,
     "description": "Introducing the Amazing/Sensational/Remarkable/Revolutionary; #1 Blocklist :)",
-    "donateUrl": "https://paypal.me/sjhgvr",
+    "donateUrl": "https://www.paypal.me/sjhgvr",
     "homeUrl": "https://www.reddit.com/r/pihole/comments/bppug1/introducing_the/",
     "licenseId": 5,
     "name": "OISD Mobile",
@@ -17009,7 +16992,7 @@
   {
     "id": 1600,
     "description": "Introducing the Amazing/Sensational/Remarkable/Revolutionary; #1 Blocklist :)",
-    "donateUrl": "https://paypal.me/sjhgvr",
+    "donateUrl": "https://www.paypal.me/sjhgvr",
     "homeUrl": "https://www.reddit.com/r/pihole/comments/bppug1/introducing_the/",
     "licenseId": 5,
     "name": "OISD Mobile (Hosts)",
@@ -17021,7 +17004,7 @@
   {
     "id": 1601,
     "description": "Currently blocking ad serving and malware domains.",
-    "donateUrl": "https://paypal.me/sjhgvr",
+    "donateUrl": "https://www.paypal.me/sjhgvr",
     "homeUrl": "https://github.com/joeylane/hosts",
     "issuesUrl": "https://github.com/joeylane/hosts/issues",
     "licenseId": 5,
@@ -17409,5 +17392,17 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAwfulCommentsList.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAwfulCommentsList.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAwfulCommentsList.txt"
+  },
+  {
+    "id": 1638,
+    "description": "This file is useful to unblock some websites that blocked by internet positive or so. You can also say it bypass, it's easy to use.",
+    "descriptionSourceUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/tree/master/Windows%20Host",
+    "homeUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia",
+    "issuesUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/issues",
+    "licenseId": 5,
+    "name": "Hakame-kun's Windows Host",
+    "syntaxId": 14,
+    "updatedDate": "2019-04-16T23:19:09",
+    "viewUrl": "https://raw.githubusercontent.com/Hakame-kun/uBlock-Filters-Indonesia/master/Windows%20Host/hosts"
   }
 ]
