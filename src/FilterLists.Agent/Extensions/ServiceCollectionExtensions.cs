@@ -20,7 +20,7 @@ namespace FilterLists.Agent.Extensions
             services.AddConfiguration();
             services.AddLoggingCustom();
             services.AddTransient<Parser>();
-            services.AddMediatR(typeof(Program).Assembly);
+            services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             services.AddAgentHttpClient();
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
             services.AddSingleton<IAgentGitHubClient, AgentGitHubClient>();
@@ -37,12 +37,15 @@ namespace FilterLists.Agent.Extensions
                 .AddJsonFile("appsettings.Development.json", true, true)
 #endif
                 .Build();
-            services.Configure<ApplicationInsightsSettings>(
-                config.GetSection(nameof(ApplicationInsightsSettings).RemoveSettingsSuffix()));
-            services.Configure<ConnectionStringsSettings>(
-                config.GetSection(nameof(ConnectionStringsSettings).RemoveSettingsSuffix()));
-            services.Configure<GitHubSettings>(
-                config.GetSection(nameof(GitHubSettings).RemoveSettingsSuffix()));
+            services.ConfigureCustom<ApplicationInsightsSettings>(config);
+            services.ConfigureCustom<ConnectionStringsSettings>(config);
+            services.ConfigureCustom<GitHubSettings>(config);
+        }
+
+        private static void ConfigureCustom<TSettings>(this IServiceCollection services, IConfiguration configuration)
+            where TSettings : class
+        {
+            services.Configure<TSettings>(configuration.GetSection(typeof(TSettings).Name.RemoveSettingsSuffix()));
         }
 
         private static string RemoveSettingsSuffix(this string section)
