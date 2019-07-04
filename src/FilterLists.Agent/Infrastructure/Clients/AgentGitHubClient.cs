@@ -13,7 +13,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
 
         Task<Issue> CreateIssue(NewIssue newIssue);
 
-        Task<Issue> UpdateIssue(int issueNumber, IssueUpdate updateIssue);
+        Task<Issue> UpdateIssue(int issueNumber, IssueUpdate issueUpdate);
     }
 
     public class AgentGitHubClient : IAgentGitHubClient
@@ -60,12 +60,12 @@ namespace FilterLists.Agent.Infrastructure.Clients
             }
         }
 
-        public async Task<Issue> UpdateIssue(int issueNumber, IssueUpdate updateIssue)
+        public async Task<Issue> UpdateIssue(int issueNumber, IssueUpdate issueUpdate)
         {
             try
             {
                 return await _gitHubClient.Issue.Update(_gitHubOptions.RepositoryOwner, _gitHubOptions.Repository,
-                    issueNumber, updateIssue);
+                    issueNumber, issueUpdate);
             }
             catch (ApiException ex)
             {
