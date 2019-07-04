@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using CommandLine;
 using FilterLists.Agent.Extensions;
 using FilterLists.Agent.Features.Lists;
 using FilterLists.Agent.Features.Urls;
@@ -12,12 +13,21 @@ namespace FilterLists.Agent
     {
         private static IServiceProvider _serviceProvider;
 
-        public static async Task Main()
+        public static async Task Main(string[] args)
         {
             BuildServiceProvider();
+            var parser = _serviceProvider.GetService<Parser>();
             var mediator = _serviceProvider.GetService<IMediator>();
-            await mediator.Send(new CaptureLists.Command());
-            await mediator.Send(new ValidateAllUrls.Command());
+
+            await parser.ParseArguments<Options>(args).MapResult(async o =>
+                {
+                    if (o.CaptureLists)
+                        await mediator.Send(new CaptureLists.Command());
+                    if (o.ValidateUrls)
+                        await mediator.Send(new ValidateAllUrls.Command());
+                },
+                e => Task.FromResult(0)
+            );
         }
 
         private static void BuildServiceProvider()

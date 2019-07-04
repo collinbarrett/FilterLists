@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FilterLists.Agent": {
+      "commandName": "Project",
+      "commandLineArgs": "-c -v"
+    }
+  }
+}

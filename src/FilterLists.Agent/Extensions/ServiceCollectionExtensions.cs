@@ -1,4 +1,5 @@
 ﻿using System.Net.Http;
+using CommandLine;
 using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Core.Interfaces;
 using FilterLists.Agent.Infrastructure.Clients;
@@ -17,6 +18,7 @@ namespace FilterLists.Agent.Extensions
         {
             services.AddConfiguration();
             services.AddLoggingCustom();
+            services.AddTransient<Parser>();
             services.AddMediatR(typeof(Program).Assembly);
             services.AddAgentHttpClient();
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
@@ -39,15 +41,6 @@ namespace FilterLists.Agent.Extensions
             services.Configure<GitHub>(config.GetSection(nameof(GitHub)));
         }
 
-        private static void AddAgentHttpClient(this IServiceCollection services)
-        {
-            services.AddHttpClient<IAgentHttpClient, AgentHttpClient>().ConfigureHttpMessageHandlerBuilder(b =>
-            {
-                b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
-                b.Build();
-            });
-        }
-
         private static void AddLoggingCustom(this IServiceCollection services)
         {
             services.AddLogging(b =>
@@ -55,6 +48,15 @@ namespace FilterLists.Agent.Extensions
                 b.AddConsole();
                 var appInsightsConfig = b.Services.BuildServiceProvider().GetService<IOptions<ApplicationInsights>>();
                 b.AddApplicationInsights(appInsightsConfig.Value.InstrumentationKey);
+            });
+        }
+
+        private static void AddAgentHttpClient(this IServiceCollection services)
+        {
+            services.AddHttpClient<IAgentHttpClient, AgentHttpClient>().ConfigureHttpMessageHandlerBuilder(b =>
+            {
+                b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
+                b.Build();
             });
         }
     }
