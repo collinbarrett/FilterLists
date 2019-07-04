@@ -15,7 +15,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
     {
         public AgentHttpClient(HttpClient client)
         {
-            client.Timeout = TimeSpan.FromMinutes(10);
+            client.Timeout = TimeSpan.FromSeconds(90);
 
             var header = new ProductHeaderValue("FilterLists.Agent");
             var userAgent = new ProductInfoHeaderValue(header);
