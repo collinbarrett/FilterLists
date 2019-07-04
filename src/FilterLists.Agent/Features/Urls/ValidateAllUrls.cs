@@ -41,7 +41,8 @@ namespace FilterLists.Agent.Features.Urls
                     results.Add(new DataFileUrlValidationResults("FilterList.json", listUrlErrors));
 
                 var maintainerUrls = await _repo.GetAllAsync<MaintainerUrls>();
-                var maintainerUrlErrors = await _mediator.Send(new ValidateUrls.Command(maintainerUrls), cancellationToken);
+                var maintainerUrlErrors =
+                    await _mediator.Send(new ValidateUrls.Command(maintainerUrls), cancellationToken);
                 if (maintainerUrlErrors.Any())
                     results.Add(new DataFileUrlValidationResults("Maintainer.json", maintainerUrlErrors));
 
@@ -55,7 +56,7 @@ namespace FilterLists.Agent.Features.Urls
                 if (syntaxUrlErrors.Any())
                     results.Add(new DataFileUrlValidationResults("Syntax.json", syntaxUrlErrors));
 
-                if(results.Any())
+                if (results.Any())
                     await _mediator.Send(new CreateOrUpdateUrlValidationIssue.Command(results), cancellationToken);
                 else
                     await _mediator.Send(new CloseUrlValidationIssue.Command(), cancellationToken);
