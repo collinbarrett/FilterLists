@@ -12,7 +12,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
     public class FilterListsApiClient : IFilterListsApiClient
     {
         private const string FilterListsApiBaseUrl = "https://filterlists.com/api/v1";
-        private const string ExceptionMessage = "Error retrieving response from FilterLists API.";
+        private const string ExceptionMessage = "Error retrieving response from the FilterLists API.";
         private readonly IRestClient _restClient;
 
         public FilterListsApiClient()

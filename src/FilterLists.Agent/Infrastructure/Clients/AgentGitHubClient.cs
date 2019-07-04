@@ -18,6 +18,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
 
     public class AgentGitHubClient : IAgentGitHubClient
     {
+        private const string ExceptionMessageSuffix = " from the GitHub API.";
         private readonly GitHubClient _gitHubClient;
         private readonly GitHub _gitHubOptions;
         private readonly ILogger<AgentGitHubClient> _logger;
@@ -41,7 +42,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
             }
             catch (ApiException ex)
             {
-                _logger.LogError(ex, "Failed getting all Issues from the GitHub API.");
+                _logger.LogError(ex, $"Failed getting all Issues{ExceptionMessageSuffix}");
                 return null;
             }
         }
@@ -55,7 +56,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
             }
             catch (ApiException ex)
             {
-                _logger.LogError(ex, "Failed creating Issue with the GitHub API.");
+                _logger.LogError(ex, $"Failed creating Issue{ExceptionMessageSuffix}");
                 return null;
             }
         }
@@ -69,7 +70,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
             }
             catch (ApiException ex)
             {
-                _logger.LogError(ex, "Failed updating Issue with the GitHub API.");
+                _logger.LogError(ex, $"Failed updating Issue{ExceptionMessageSuffix}");
                 return null;
             }
         }
