@@ -20,16 +20,16 @@ namespace FilterLists.Agent.Infrastructure.Clients
     {
         private const string ExceptionMessageSuffix = " from the GitHub API.";
         private readonly GitHubClient _gitHubClient;
-        private readonly GitHub _gitHubOptions;
+        private readonly GitHubSettings _gitHubSettings;
         private readonly ILogger<AgentGitHubClient> _logger;
 
-        public AgentGitHubClient(IOptions<GitHub> gitHubOptions, ILogger<AgentGitHubClient> logger)
+        public AgentGitHubClient(IOptions<GitHubSettings> gitHubSettings, ILogger<AgentGitHubClient> logger)
         {
-            _gitHubOptions = gitHubOptions.Value;
+            _gitHubSettings = gitHubSettings.Value;
             _logger = logger;
-            _gitHubClient = new GitHubClient(new ProductHeaderValue(_gitHubOptions.ProductHeaderValue))
+            _gitHubClient = new GitHubClient(new ProductHeaderValue(_gitHubSettings.ProductHeaderValue))
             {
-                Credentials = new Credentials(_gitHubOptions.PersonalAccessToken)
+                Credentials = new Credentials(_gitHubSettings.PersonalAccessToken)
             };
         }
 
@@ -37,8 +37,8 @@ namespace FilterLists.Agent.Infrastructure.Clients
         {
             try
             {
-                return await _gitHubClient.Issue.GetAllForRepository(_gitHubOptions.RepositoryOwner,
-                    _gitHubOptions.Repository, repositoryIssueRequest);
+                return await _gitHubClient.Issue.GetAllForRepository(_gitHubSettings.RepositoryOwner,
+                    _gitHubSettings.Repository, repositoryIssueRequest);
             }
             catch (ApiException ex)
             {
@@ -51,7 +51,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
         {
             try
             {
-                return await _gitHubClient.Issue.Create(_gitHubOptions.RepositoryOwner, _gitHubOptions.Repository,
+                return await _gitHubClient.Issue.Create(_gitHubSettings.RepositoryOwner, _gitHubSettings.Repository,
                     newIssue);
             }
             catch (ApiException ex)
@@ -65,7 +65,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
         {
             try
             {
-                return await _gitHubClient.Issue.Update(_gitHubOptions.RepositoryOwner, _gitHubOptions.Repository,
+                return await _gitHubClient.Issue.Update(_gitHubSettings.RepositoryOwner, _gitHubSettings.Repository,
                     issueNumber, issueUpdate);
             }
             catch (ApiException ex)

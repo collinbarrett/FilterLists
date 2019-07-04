@@ -3,7 +3,7 @@
 namespace FilterLists.Agent.AppSettings
 {
     [UsedImplicitly]
-    public class ConnectionStrings
+    public class ConnectionStringsSettings
     {
         public string FilterListsConnection { get; set; }
     }

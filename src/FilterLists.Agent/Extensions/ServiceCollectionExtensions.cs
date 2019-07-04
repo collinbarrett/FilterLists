@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using CommandLine;
 using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Core.Interfaces;
@@ -36,9 +37,17 @@ namespace FilterLists.Agent.Extensions
                 .AddJsonFile("appsettings.Development.json", true, true)
 #endif
                 .Build();
-            services.Configure<ApplicationInsights>(config.GetSection(nameof(ApplicationInsights)));
-            services.Configure<ConnectionStrings>(config.GetSection(nameof(ConnectionStrings)));
-            services.Configure<GitHub>(config.GetSection(nameof(GitHub)));
+            services.Configure<ApplicationInsightsSettings>(
+                config.GetSection(nameof(ApplicationInsightsSettings).RemoveSettingsSuffix()));
+            services.Configure<ConnectionStringsSettings>(
+                config.GetSection(nameof(ConnectionStringsSettings).RemoveSettingsSuffix()));
+            services.Configure<GitHubSettings>(
+                config.GetSection(nameof(GitHubSettings).RemoveSettingsSuffix()));
+        }
+
+        private static string RemoveSettingsSuffix(this string section)
+        {
+            return section.Replace("Settings", "", StringComparison.Ordinal);
         }
 
         private static void AddLoggingCustom(this IServiceCollection services)
@@ -46,7 +55,8 @@ namespace FilterLists.Agent.Extensions
             services.AddLogging(b =>
             {
                 b.AddConsole();
-                var appInsightsConfig = b.Services.BuildServiceProvider().GetService<IOptions<ApplicationInsights>>();
+                var appInsightsConfig = b.Services.BuildServiceProvider()
+                    .GetService<IOptions<ApplicationInsightsSettings>>();
                 b.AddApplicationInsights(appInsightsConfig.Value.InstrumentationKey);
             });
         }

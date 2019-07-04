@@ -1,6 +1,6 @@
 ﻿namespace FilterLists.Agent.AppSettings
 {
-    public class GitHub
+    public class GitHubSettings
     {
         public string ProductHeaderValue { get; set; }
         public string PersonalAccessToken { get; set; }
