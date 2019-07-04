@@ -6,7 +6,6 @@
   },
   {
     "id": 3,
-    "homeUrl": "https://bradconte.com/",
     "name": "Brad Conte",
     "twitterHandle": "bradconte"
   },
@@ -17,7 +16,6 @@
   },
   {
     "id": 5,
-    "homeUrl": "https://www.michaeltrimm.com/",
     "name": "Michael Trimm"
   },
   {
@@ -220,7 +218,7 @@
   },
   {
     "id": 42,
-    "homeUrl": "http://cosmonote.blogspot.jp",
+    "homeUrl": "https://cosmonote.blogspot.com",
     "name": "Cosmonote"
   },
   {
@@ -316,7 +314,7 @@
   {
     "id": 59,
     "emailAddress": "jamie@jamiedubs.com",
-    "homeUrl": "http://tramchase.com/",
+    "homeUrl": "https://jamiedubs.com/",
     "name": "Jamie Wilkinson",
     "twitterHandle": "jamiew"
   },
@@ -391,7 +389,7 @@
   {
     "id": 78,
     "emailAddress": "github@paulbutler.org",
-    "homeUrl": "http://paulbutler.org",
+    "homeUrl": "https://paulbutler.org",
     "name": "Paul Butler",
     "twitterHandle": "paulgb"
   },
@@ -507,7 +505,7 @@
   {
     "id": 98,
     "emailAddress": "easylist.china@gmail.com",
-    "homeUrl": "https://abpchina.org",
+    "homeUrl": "https://abpchina.org/forum",
     "name": "EasyList China"
   },
   {
@@ -522,7 +520,6 @@
   },
   {
     "id": 101,
-    "homeUrl": "https://blogram.net/",
     "name": "BLOGRAM"
   },
   {
@@ -641,7 +638,7 @@
   {
     "id": 122,
     "emailAddress": "dev@oz.nu",
-    "homeUrl": "https://oz.nu/",
+    "homeUrl": "https://github.com/oznu",
     "name": "oznu"
   },
   {
@@ -653,13 +650,13 @@
   {
     "id": 124,
     "emailAddress": "jcb@bambenekconsulting.com",
-    "homeUrl": "http://bambenekconsulting.com",
+    "homeUrl": "https://www.bambenekconsulting.com",
     "name": "John Bambenek"
   },
   {
     "id": 125,
     "emailAddress": "jwspamspy@pobox.com",
-    "homeUrl": "http://www.joewein.de",
+    "homeUrl": "https://joewein.de/",
     "name": "Joe Wein"
   },
   {
