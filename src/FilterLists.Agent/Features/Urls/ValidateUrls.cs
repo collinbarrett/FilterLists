@@ -71,7 +71,8 @@ namespace FilterLists.Agent.Features.Urls
 
                         try
                         {
-                            var response = await _httpClient.GetAsync(u, cancellationToken);
+                            var response = await _httpClient.GetAsync(u, HttpCompletionOption.ResponseHeadersRead,
+                                cancellationToken);
                             if (u.Scheme == Uri.UriSchemeHttp && await IsHttpsSupported(u, cancellationToken))
                                 result.SetSupportsHttps();
                             if (response.IsSuccessStatusCode)
@@ -117,7 +118,8 @@ namespace FilterLists.Agent.Features.Urls
                 var httpsUrl = new UriBuilder(url.OriginalString) {Scheme = Uri.UriSchemeHttps}.Uri;
                 try
                 {
-                    var response = await _httpClient.GetAsync(httpsUrl, cancellationToken);
+                    var response = await _httpClient.GetAsync(httpsUrl, HttpCompletionOption.ResponseHeadersRead,
+                        cancellationToken);
                     if (response.IsSuccessStatusCode)
                         return true;
                     _logger.LogError(
