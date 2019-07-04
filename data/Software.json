@@ -65,7 +65,7 @@
   {
     "id": 11,
     "downloadUrl": "https://github.com/scottlerch/HostsFileEditor/releases",
-    "homeUrl": "https://scottlerch.github.io/HostsFileEditor/",
+    "homeUrl": "https://hostsfileeditor.com/",
     "isAbpSubscribable": false,
     "name": "Hosts File Editor"
   },
@@ -133,7 +133,7 @@
   },
   {
     "id": 22,
-    "downloadUrl": "https://diversion.ch/installation/",
+    "downloadUrl": "https://diversion.ch/diversion/installation.html",
     "homeUrl": "https://diversion.ch/",
     "isAbpSubscribable": false,
     "name": "Diversion"
@@ -175,8 +175,8 @@
   },
   {
     "id": 28,
-    "downloadUrl": "https://zenz-solutions.de/personaldnsfilter",
-    "homeUrl": "https://zenz-solutions.de/personaldnsfilter",
+    "downloadUrl": "https://zenz-solutions.de/personaldnsfilter/",
+    "homeUrl": "https://zenz-solutions.de/personaldnsfilter/",
     "isAbpSubscribable": false,
     "name": "personalDNSfilter"
   },
@@ -189,8 +189,8 @@
   },
   {
     "id": 30,
-    "downloadUrl": "https://www.isc.org/downloads/bind/",
-    "homeUrl": "https://www.isc.org/downloads/bind/",
+    "downloadUrl": "https://www.isc.org/bind/",
+    "homeUrl": "https://www.isc.org/bind/",
     "isAbpSubscribable": false,
     "name": "BIND"
   },
