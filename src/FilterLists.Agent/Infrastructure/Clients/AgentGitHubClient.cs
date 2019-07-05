@@ -43,7 +43,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
             catch (ApiException ex)
             {
                 _logger.LogError(ex, $"Failed getting all Issues{ExceptionMessageSuffix}");
-                return null;
+                return new List<Issue>();
             }
         }
 
@@ -57,7 +57,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
             catch (ApiException ex)
             {
                 _logger.LogError(ex, $"Failed creating Issue{ExceptionMessageSuffix}");
-                return null;
+                return new Issue();
             }
         }
 
@@ -71,7 +71,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
             catch (ApiException ex)
             {
                 _logger.LogError(ex, $"Failed updating Issue{ExceptionMessageSuffix}");
-                return null;
+                return new Issue();
             }
         }
     }
