@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using FilterLists.Agent.Extensions;
 using Xunit;
 
@@ -7,13 +6,6 @@ namespace FilterLists.Agent.Tests.Extensions
 {
     public class ReadOnlyListExtensionsTests
     {
-        [Fact]
-        public void FirstOrDefault_WithNullParameter_ThrowsArgumentNullException()
-        {
-            var list = (IReadOnlyList<int>)null;
-            Assert.Throws<ArgumentNullException>(() => list.FirstOrDefault());
-        }
-
         [Fact]
         public void FirstOrDefault_WithEmptyList_ReturnsDefault()
         {
