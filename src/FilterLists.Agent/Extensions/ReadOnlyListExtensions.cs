@@ -7,9 +7,7 @@ namespace FilterLists.Agent.Extensions
     {
         public static T FirstOrDefault<T>(this IReadOnlyList<T> list)
         {
-            if (list is null)
-                throw new ArgumentNullException(nameof(list));
-            return list.Count == 0 ? default : list[0];
+            return list.Count == 0 ? default! : list[0];
         }
     }
 }
