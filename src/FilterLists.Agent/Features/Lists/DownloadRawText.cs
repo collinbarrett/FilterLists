@@ -4,8 +4,8 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Entities;
+using FilterLists.Agent.Core.Interfaces.Clients;
 using FilterLists.Agent.Extensions;
-using FilterLists.Agent.Infrastructure.Clients;
 using MediatR;
 using Microsoft.Extensions.Logging;
 

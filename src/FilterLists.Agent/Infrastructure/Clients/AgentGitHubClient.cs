@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using FilterLists.Agent.AppSettings;
+using FilterLists.Agent.Core.Interfaces.Clients;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -8,15 +9,6 @@ using Octokit;
 
 namespace FilterLists.Agent.Infrastructure.Clients
 {
-    public interface IAgentGitHubClient
-    {
-        Task<IReadOnlyList<Issue>> GetAllIssues(RepositoryIssueRequest repositoryIssueRequest);
-
-        Task<Issue> CreateIssue(NewIssue newIssue);
-
-        Task<Issue> UpdateIssue(int issueNumber, IssueUpdate issueUpdate);
-    }
-
     public class AgentGitHubClient : IAgentGitHubClient
     {
         private readonly IGitHubClient _gitHubClient;

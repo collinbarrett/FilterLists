@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Entities;
 
-namespace FilterLists.Agent.Core.Interfaces
+namespace FilterLists.Agent.Core.Interfaces.Repositories
 {
     public interface IListInfoRepository
     {

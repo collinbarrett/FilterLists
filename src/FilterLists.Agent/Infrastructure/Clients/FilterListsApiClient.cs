@@ -1,15 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
+using FilterLists.Agent.Core.Interfaces.Clients;
 using Microsoft.Extensions.Localization;
 using RestSharp;
 
 namespace FilterLists.Agent.Infrastructure.Clients
 {
-    public interface IFilterListsApiClient
-    {
-        Task<TResponse> ExecuteAsync<TResponse>(IRestRequest request);
-    }
-
     public class FilterListsApiClient : IFilterListsApiClient
     {
         private const string FilterListsApiBaseUrl = "https://filterlists.com/api/v1";

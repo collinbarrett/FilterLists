@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace FilterLists.Agent.Core.Interfaces
+namespace FilterLists.Agent.Core.Interfaces.Repositories
 {
     public interface IUrlRepository
     {

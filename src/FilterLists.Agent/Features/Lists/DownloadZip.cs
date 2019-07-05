@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Entities;
-using FilterLists.Agent.Infrastructure.Clients;
+using FilterLists.Agent.Core.Interfaces.Clients;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using SharpCompress.Common;

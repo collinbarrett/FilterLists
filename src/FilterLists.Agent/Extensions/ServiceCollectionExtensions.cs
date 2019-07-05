@@ -2,7 +2,8 @@
 using System.Net.Http;
 using CommandLine;
 using FilterLists.Agent.AppSettings;
-using FilterLists.Agent.Core.Interfaces;
+using FilterLists.Agent.Core.Interfaces.Clients;
+using FilterLists.Agent.Core.Interfaces.Repositories;
 using FilterLists.Agent.Infrastructure.Clients;
 using FilterLists.Agent.Infrastructure.Repositories;
 using LibGit2Sharp;

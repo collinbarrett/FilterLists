@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
+using FilterLists.Agent.Core.Interfaces.Clients;
 using FilterLists.Agent.Extensions;
-using FilterLists.Agent.Infrastructure.Clients;
 using MediatR;
 using Octokit;
 

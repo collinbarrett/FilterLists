@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core.Interfaces;
+using FilterLists.Agent.Core.Interfaces.Clients;
+using FilterLists.Agent.Core.Interfaces.Repositories;
 using FilterLists.Agent.Features.Urls.Models.DataFileUrls;
-using FilterLists.Agent.Infrastructure.Clients;
 using Microsoft.Extensions.Localization;
 using RestSharp;
 
