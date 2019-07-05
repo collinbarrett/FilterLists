@@ -2740,14 +2740,6 @@
     "tagId": 21
   },
   {
-    "filterListId": 594,
-    "tagId": 2
-  },
-  {
-    "filterListId": 594,
-    "tagId": 3
-  },
-  {
     "filterListId": 595,
     "tagId": 2
   },
@@ -2761,14 +2753,6 @@
   },
   {
     "filterListId": 596,
-    "tagId": 3
-  },
-  {
-    "filterListId": 597,
-    "tagId": 2
-  },
-  {
-    "filterListId": 597,
     "tagId": 3
   },
   {
@@ -7618,5 +7602,13 @@
   {
     "filterListId": 1638,
     "tagId": 12
+  },
+  {
+    "filterListId": 1639,
+    "tagId": 15
+  },
+  {
+    "filterListId": 1639,
+    "tagId": 19
   }
 ]
