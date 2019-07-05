@@ -91,6 +91,7 @@
     <Rule Id="CA1509" Action="None" />
     <!-- Invalid entry in code metrics rule specification file -->
     <Rule Id="CA1707" Action="Warning" />
+    <!-- https://stackoverflow.com/a/1594049/2343739 -->
     <!-- Identifiers should not contain underscores -->
     <Rule Id="CA1708" Action="None" />
     <!-- Identifiers should differ by more than case -->
