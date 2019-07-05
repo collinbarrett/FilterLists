@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using FilterLists.Agent.AppSettings;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Octokit;
@@ -18,15 +19,17 @@ namespace FilterLists.Agent.Infrastructure.Clients
 
     public class AgentGitHubClient : IAgentGitHubClient
     {
-        private const string ExceptionMessageSuffix = " from the GitHub API.";
         private readonly GitHubClient _gitHubClient;
         private readonly GitHubSettings _gitHubSettings;
+        private readonly IStringLocalizer<AgentGitHubClient> _localizer;
         private readonly ILogger<AgentGitHubClient> _logger;
 
-        public AgentGitHubClient(IOptions<GitHubSettings> gitHubOptions, ILogger<AgentGitHubClient> logger)
+        public AgentGitHubClient(IOptions<GitHubSettings> gitHubOptions, ILogger<AgentGitHubClient> logger,
+            IStringLocalizer<AgentGitHubClient> stringLocalizer)
         {
             _gitHubSettings = gitHubOptions.Value;
             _logger = logger;
+            _localizer = stringLocalizer;
             _gitHubClient = new GitHubClient(new ProductHeaderValue(_gitHubSettings.ProductHeaderValue))
             {
                 Credentials = new Credentials(_gitHubSettings.PersonalAccessToken)
@@ -42,7 +45,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
             }
             catch (ApiException ex)
             {
-                _logger.LogError(ex, $"Failed getting all Issues{ExceptionMessageSuffix}");
+                _logger.LogError(ex, _localizer["Failed getting all Issues from the GitHub API."]);
                 throw;
             }
         }
@@ -56,7 +59,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
             }
             catch (ApiException ex)
             {
-                _logger.LogError(ex, $"Failed creating Issue{ExceptionMessageSuffix}");
+                _logger.LogError(ex, _localizer["Failed creating Issue with the GitHub API."]);
                 throw;
             }
         }
@@ -70,7 +73,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
             }
             catch (ApiException ex)
             {
-                _logger.LogError(ex, $"Failed updating Issue{ExceptionMessageSuffix}");
+                _logger.LogError(ex, _localizer["Failed updating Issue with the GitHub API."]);
                 throw;
             }
         }

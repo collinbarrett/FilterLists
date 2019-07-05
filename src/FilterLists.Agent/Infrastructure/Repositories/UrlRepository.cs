@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using FilterLists.Agent.Core.Interfaces;
 using FilterLists.Agent.Features.Urls.Models.DataFileUrls;
 using FilterLists.Agent.Infrastructure.Clients;
+using Microsoft.Extensions.Localization;
 using RestSharp;
 
 namespace FilterLists.Agent.Infrastructure.Repositories
@@ -22,17 +23,18 @@ namespace FilterLists.Agent.Infrastructure.Repositories
         };
 
         private readonly IFilterListsApiClient _apiClient;
+        private readonly IStringLocalizer<UrlRepository> _localizer;
 
-        public UrlRepository(IFilterListsApiClient apiClient)
+        public UrlRepository(IFilterListsApiClient apiClient, IStringLocalizer<UrlRepository> stringLocalizer)
         {
             _apiClient = apiClient;
+            _localizer = stringLocalizer;
         }
 
         public async Task<IEnumerable<Uri>> GetAllAsync<TModel>()
         {
             if (!EntityUrlsEndpoints.ContainsKey(typeof(TModel).Name))
-                throw new InvalidEnumArgumentException("The type of TModel is not valid.");
-
+                throw new InvalidEnumArgumentException(_localizer["The type of TModel is not valid."]);
             var request = new RestRequest($"{EntityUrlsEndpoints[typeof(TModel).Name]}/seed");
             var response = await _apiClient.ExecuteAsync<IEnumerable<TModel>>(request);
             return response.SelectMany(r =>

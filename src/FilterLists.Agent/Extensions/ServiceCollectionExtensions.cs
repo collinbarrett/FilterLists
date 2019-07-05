@@ -19,6 +19,7 @@ namespace FilterLists.Agent.Extensions
         public static void RegisterAgentServices(this IServiceCollection services)
         {
             services.AddConfiguration();
+            services.AddLocalization();
             services.AddLoggingCustom();
             services.AddTransient<Parser>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
