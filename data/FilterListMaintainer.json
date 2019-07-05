@@ -4550,5 +4550,17 @@
   {
     "filterListId": 1602,
     "maintainerId": 138
+  },
+  {
+    "filterListId": 595,
+    "maintainerId": 139
+  },
+  {
+    "filterListId": 596,
+    "maintainerId": 139
+  },
+  {
+    "filterListId": 1639,
+    "maintainerId": 139
   }
 ]
