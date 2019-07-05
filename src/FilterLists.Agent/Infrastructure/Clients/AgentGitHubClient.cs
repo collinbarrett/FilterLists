@@ -19,21 +19,18 @@ namespace FilterLists.Agent.Infrastructure.Clients
 
     public class AgentGitHubClient : IAgentGitHubClient
     {
-        private readonly GitHubClient _gitHubClient;
+        private readonly IGitHubClient _gitHubClient;
         private readonly GitHubSettings _gitHubSettings;
         private readonly IStringLocalizer<AgentGitHubClient> _localizer;
         private readonly ILogger<AgentGitHubClient> _logger;
 
-        public AgentGitHubClient(IOptions<GitHubSettings> gitHubOptions, ILogger<AgentGitHubClient> logger,
-            IStringLocalizer<AgentGitHubClient> stringLocalizer)
+        public AgentGitHubClient(IGitHubClient gitHubClient, IOptions<GitHubSettings> gitHubOptions,
+            IStringLocalizer<AgentGitHubClient> stringLocalizer, ILogger<AgentGitHubClient> logger)
         {
+            _gitHubClient = gitHubClient;
             _gitHubSettings = gitHubOptions.Value;
-            _logger = logger;
             _localizer = stringLocalizer;
-            _gitHubClient = new GitHubClient(new ProductHeaderValue(_gitHubSettings.ProductHeaderValue))
-            {
-                Credentials = new Credentials(_gitHubSettings.PersonalAccessToken)
-            };
+            _logger = logger;
         }
 
         public async Task<IReadOnlyList<Issue>> GetAllIssues(RepositoryIssueRequest repositoryIssueRequest)

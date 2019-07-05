@@ -11,6 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Octokit;
+using Credentials = Octokit.Credentials;
+using Repository = LibGit2Sharp.Repository;
 
 namespace FilterLists.Agent.Extensions
 {
@@ -25,6 +28,7 @@ namespace FilterLists.Agent.Extensions
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             services.AddAgentHttpClient();
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
+            services.AddGitHubClient();
             services.AddSingleton<IAgentGitHubClient, AgentGitHubClient>();
             services.AddArchiveRepository();
             services.AddTransient<IListInfoRepository, ListInfoRepository>();
@@ -74,6 +78,18 @@ namespace FilterLists.Agent.Extensions
             {
                 b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
                 b.Build();
+            });
+        }
+
+        private static void AddGitHubClient(this IServiceCollection services)
+        {
+            services.AddSingleton<IGitHubClient, GitHubClient>(s =>
+            {
+                var gitHubSettings = s.GetService<IOptions<GitHubSettings>>().Value;
+                return new GitHubClient(new ProductHeaderValue(gitHubSettings.ProductHeaderValue))
+                {
+                    Credentials = new Credentials(gitHubSettings.PersonalAccessToken)
+                };
             });
         }
 
