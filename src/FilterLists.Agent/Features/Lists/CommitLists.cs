@@ -15,25 +15,21 @@ namespace FilterLists.Agent.Features.Lists
         public class Handler : RequestHandler<Command>
         {
             private readonly ArchiveSettings _archiveSettings;
+            private readonly IRepository _repository;
 
-            public Handler(IOptions<ArchiveSettings> archiveSettings)
+            public Handler(IOptions<ArchiveSettings> archiveOptions, IRepository repository)
             {
-                _archiveSettings = archiveSettings.Value;
+                _archiveSettings = archiveOptions.Value;
+                _repository = repository;
             }
 
             protected override void Handle(Command request)
             {
-                if (!Repository.IsValid(_archiveSettings.RepositoryDirectory))
-                    Repository.Init(_archiveSettings.RepositoryDirectory);
-                using (var repo = new Repository(_archiveSettings.RepositoryDirectory))
-                {
-                    Commands.Stage(repo, "*");
-                    var utcNow = DateTime.UtcNow;
-                    var signature = new Signature(_archiveSettings.SignatureName, _archiveSettings.SignatureEmail,
-                        utcNow);
-                    repo.Commit(utcNow.ToShortDateString() + _archiveSettings.CommitMessageSuffix, signature,
-                        signature);
-                }
+                Commands.Stage(_repository, "*");
+                var utcNow = DateTime.UtcNow;
+                var signature = new Signature(_archiveSettings.SignatureName, _archiveSettings.SignatureEmail, utcNow);
+                _repository.Commit(utcNow.ToShortDateString() + _archiveSettings.CommitMessageSuffix, signature,
+                    signature);
             }
         }
     }

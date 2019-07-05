@@ -5,6 +5,7 @@ using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Core.Interfaces;
 using FilterLists.Agent.Infrastructure.Clients;
 using FilterLists.Agent.Infrastructure.Repositories;
+using LibGit2Sharp;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,6 +25,7 @@ namespace FilterLists.Agent.Extensions
             services.AddAgentHttpClient();
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
             services.AddSingleton<IAgentGitHubClient, AgentGitHubClient>();
+            services.AddArchiveRepository();
             services.AddTransient<IListInfoRepository, ListInfoRepository>();
             services.AddTransient<IUrlRepository, UrlRepository>();
         }
@@ -59,9 +61,9 @@ namespace FilterLists.Agent.Extensions
             services.AddLogging(b =>
             {
                 b.AddConsole();
-                var appInsightsConfig = b.Services.BuildServiceProvider()
-                    .GetService<IOptions<ApplicationInsightsSettings>>();
-                b.AddApplicationInsights(appInsightsConfig.Value.InstrumentationKey);
+                var applicationInsightsSettings = b.Services.BuildServiceProvider()
+                    .GetService<IOptions<ApplicationInsightsSettings>>().Value;
+                b.AddApplicationInsights(applicationInsightsSettings.InstrumentationKey);
             });
         }
 
@@ -71,6 +73,17 @@ namespace FilterLists.Agent.Extensions
             {
                 b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
                 b.Build();
+            });
+        }
+
+        private static void AddArchiveRepository(this IServiceCollection services)
+        {
+            services.AddTransient<IRepository, Repository>(s =>
+            {
+                var archiveSettings = s.GetService<IOptions<ArchiveSettings>>().Value;
+                if (!Repository.IsValid(archiveSettings.RepositoryDirectory))
+                    Repository.Init(archiveSettings.RepositoryDirectory);
+                return new Repository(archiveSettings.RepositoryDirectory);
             });
         }
     }

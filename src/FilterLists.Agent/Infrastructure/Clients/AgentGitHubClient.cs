@@ -23,9 +23,9 @@ namespace FilterLists.Agent.Infrastructure.Clients
         private readonly GitHubSettings _gitHubSettings;
         private readonly ILogger<AgentGitHubClient> _logger;
 
-        public AgentGitHubClient(IOptions<GitHubSettings> gitHubSettings, ILogger<AgentGitHubClient> logger)
+        public AgentGitHubClient(IOptions<GitHubSettings> gitHubOptions, ILogger<AgentGitHubClient> logger)
         {
-            _gitHubSettings = gitHubSettings.Value;
+            _gitHubSettings = gitHubOptions.Value;
             _logger = logger;
             _gitHubClient = new GitHubClient(new ProductHeaderValue(_gitHubSettings.ProductHeaderValue))
             {
