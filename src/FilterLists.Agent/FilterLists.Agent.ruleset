@@ -37,7 +37,8 @@
     <!-- Do not catch general exception types -->
     <Rule Id="CA1033" Action="None" />
     <!-- Interface methods should be callable by child types -->
-    <Rule Id="CA1034" Action="Warning" />
+    <Rule Id="CA1034" Action="None" />
+    <!-- https://github.com/jbogard/ContosoUniversity/issues/37 -->
     <!-- Nested types should not be visible -->
     <Rule Id="CA1036" Action="Warning" />
     <!-- Override methods on comparable types -->
