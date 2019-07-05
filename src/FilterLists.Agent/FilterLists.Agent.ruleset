@@ -133,7 +133,7 @@
     <!-- Mark members as static -->
     <Rule Id="CA1823" Action="Warning" />
     <!-- Avoid unused private fields -->
-    <Rule Id="CA2007" Action="Warning" />
+    <Rule Id="CA2007" Action="None" /> <!-- https://stackoverflow.com/a/42058544 -->
     <!-- Consider calling ConfigureAwait on the awaited task -->
     <Rule Id="CA2119" Action="Warning" />
     <!-- Seal methods that satisfy private interfaces -->
