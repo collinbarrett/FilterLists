@@ -6254,56 +6254,30 @@
     "viewUrl": "https://raw.githubusercontent.com/marktron/fakenews/master/fakenews"
   },
   {
-    "id": 594,
+    "id": 595,
     "description": "Collection of Analytics, Ads, and tracking hosts to block.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking.txt",
-    "homeUrl": "https://github.com/lightswitch05/hosts",
+    "descriptionSourceUrl": "https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt",
+    "homeUrl": "https://www.github.developerdan.com/hosts",
     "issuesUrl": "https://github.com/lightswitch05/hosts/issues",
     "licenseId": 18,
     "name": "Ads & Tracking",
-    "publishedDate": "2018-05-10T21:33:02",
-    "syntaxId": 1,
-    "updatedDate": "2019-04-04T13:03:51",
-    "viewUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking.txt"
-  },
-  {
-    "id": 595,
-    "description": "Collection of Analytics, Ads, and tracking hosts to block.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking-extended.txt",
-    "homeUrl": "https://github.com/lightswitch05/hosts",
-    "issuesUrl": "https://github.com/lightswitch05/hosts/issues",
-    "licenseId": 18,
-    "name": "Ads & Tracking Extended",
     "publishedDate": "2018-05-24T14:40:19",
     "syntaxId": 1,
     "updatedDate": "2019-04-04T13:12:12",
-    "viewUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/ads-and-tracking-extended.txt"
+    "viewUrl": "https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt"
   },
   {
     "id": 596,
-    "description": "Collection of Analytics, Ads, and tracking hosts to block.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/tracking-aggressive.txt",
-    "homeUrl": "https://github.com/lightswitch05/hosts",
+    "description": "A very aggressive block list for tracking, geo-targeting, & ads. This list is only recommended for advanced users who do not mind occasional whitelisting.",
+    "descriptionSourceUrl": "https://www.github.developerdan.com/hosts/lists/tracking-aggressive-extended.txt",
+    "homeUrl": "https://www.github.developerdan.com/hosts",
     "issuesUrl": "https://github.com/lightswitch05/hosts/issues",
     "licenseId": 18,
     "name": "Tracking Aggressive",
     "publishedDate": "2018-07-19T11:03:56",
     "syntaxId": 1,
     "updatedDate": "2019-03-13T15:29:12",
-    "viewUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/tracking-aggressive.txt"
-  },
-  {
-    "id": 597,
-    "description": "Collection of Analytics, Ads, and tracking hosts to block.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/tracking-aggressive-extended.txt",
-    "homeUrl": "https://github.com/lightswitch05/hosts",
-    "issuesUrl": "https://github.com/lightswitch05/hosts/issues",
-    "licenseId": 18,
-    "name": "Tracking Aggressive Extended",
-    "publishedDate": "2018-07-19T11:03:56",
-    "syntaxId": 1,
-    "updatedDate": "2019-04-08T04:25:10",
-    "viewUrl": "https://raw.githubusercontent.com/lightswitch05/hosts/master/tracking-aggressive-extended.txt"
+    "viewUrl": "https://www.github.developerdan.com/hosts/lists/tracking-aggressive-extended.txt"
   },
   {
     "id": 598,
@@ -17404,5 +17378,18 @@
     "syntaxId": 14,
     "updatedDate": "2019-04-16T23:19:09",
     "viewUrl": "https://raw.githubusercontent.com/Hakame-kun/uBlock-Filters-Indonesia/master/Windows%20Host/hosts"
+  },
+  {
+    "id": 1639,
+    "description": "Google AMP (Accelerated Mobile Pages) block list.",
+    "descriptionSourceUrl": "https://www.github.developerdan.com/hosts/lists/amp-hosts-extended.txt",
+    "homeUrl": "https://www.github.developerdan.com/hosts",
+    "issuesUrl": "https://github.com/lightswitch05/hosts/issues",
+    "licenseId": 18,
+    "name": "AMP Hosts",
+    "publishedDate": "2018-07-19T11:03:56",
+    "syntaxId": 1,
+    "updatedDate": "2019-03-13T15:29:12",
+    "viewUrl": "https://www.github.developerdan.com/hosts/lists/amp-hosts-extended.txt"
   }
 ]
