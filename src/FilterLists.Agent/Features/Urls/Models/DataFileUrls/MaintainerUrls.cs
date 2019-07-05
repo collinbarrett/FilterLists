@@ -6,6 +6,6 @@ namespace FilterLists.Agent.Features.Urls.Models.DataFileUrls
     [UsedImplicitly]
     public class MaintainerUrls
     {
-        public Uri HomeUrl { get; set; }
+        public Uri HomeUrl { get; [UsedImplicitly] private set; }
     }
 }

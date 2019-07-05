@@ -6,6 +6,6 @@ namespace FilterLists.Agent.Features.Urls.Models.DataFileUrls
     [UsedImplicitly]
     public class SyntaxUrls
     {
-        public Uri DefinitionUrl { get; set; }
+        public Uri DefinitionUrl { get; [UsedImplicitly] private set; }
     }
 }

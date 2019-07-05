@@ -6,6 +6,6 @@ namespace FilterLists.Agent.Features.Urls.Models.DataFileUrls
     [UsedImplicitly]
     public class LicenseUrls
     {
-        public Uri DescriptionUrl { get; set; }
+        public Uri DescriptionUrl { get; [UsedImplicitly] private set; }
     }
 }

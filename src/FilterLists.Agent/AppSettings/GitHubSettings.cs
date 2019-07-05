@@ -1,10 +1,12 @@
-﻿namespace FilterLists.Agent.AppSettings
+﻿using JetBrains.Annotations;
+
+namespace FilterLists.Agent.AppSettings
 {
     public class GitHubSettings
     {
-        public string ProductHeaderValue { get; set; }
-        public string PersonalAccessToken { get; set; }
-        public string RepositoryOwner { get; set; }
-        public string Repository { get; set; }
+        public string ProductHeaderValue { get; [UsedImplicitly] set; }
+        public string PersonalAccessToken { get; [UsedImplicitly] set; }
+        public string RepositoryOwner { get; [UsedImplicitly] set; }
+        public string Repository { get; [UsedImplicitly] set; }
     }
 }
