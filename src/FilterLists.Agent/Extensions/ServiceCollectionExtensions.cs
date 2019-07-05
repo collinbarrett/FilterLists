@@ -22,8 +22,8 @@ namespace FilterLists.Agent.Extensions
         public static void RegisterAgentServices(this IServiceCollection services)
         {
             services.AddConfiguration();
-            services.AddLocalization();
             services.AddLoggingCustom();
+            services.AddLocalization();
             services.AddTransient<Parser>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             services.AddAgentHttpClient();
@@ -53,12 +53,8 @@ namespace FilterLists.Agent.Extensions
         private static void ConfigureCustom<TSettings>(this IServiceCollection services, IConfiguration configuration)
             where TSettings : class
         {
-            services.Configure<TSettings>(configuration.GetSection(typeof(TSettings).Name.RemoveSettingsSuffix()));
-        }
-
-        private static string RemoveSettingsSuffix(this string section)
-        {
-            return section.Replace("Settings", "", StringComparison.Ordinal);
+            services.Configure<TSettings>(
+                configuration.GetSection(typeof(TSettings).Name.Replace("Settings", "", StringComparison.Ordinal)));
         }
 
         private static void AddLoggingCustom(this IServiceCollection services)
