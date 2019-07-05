@@ -183,5 +183,6 @@
   &lt;/TypePattern&gt;&#xD;
 &lt;/Patterns&gt;</s:String>
 	<s:Boolean x:Key="/Default/CodeStyle/Naming/CSharpNaming/ApplyAutoDetectedRules/@EntryValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=appsettings/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/UserDictionary/Words/=downloader/@EntryIndexedValue">True</s:Boolean>
 </wpf:ResourceDictionary>
