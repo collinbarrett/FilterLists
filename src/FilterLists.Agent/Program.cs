@@ -19,10 +19,10 @@ namespace FilterLists.Agent
             var parser = _serviceProvider.GetService<Parser>();
             var mediator = _serviceProvider.GetService<IMediator>();
 
-            await parser.ParseArguments<Options>(args).MapResult(async o =>
+            await parser.ParseArguments<CommandLineOptions>(args).MapResult(async o =>
                 {
-                    if (o.CaptureLists)
-                        await mediator.Send(new CaptureLists.Command());
+                    if (o.ArchiveLists)
+                        await mediator.Send(new ArchiveLists.Command());
                     if (o.ValidateUrls)
                         await mediator.Send(new ValidateAllUrls.Command());
                 },

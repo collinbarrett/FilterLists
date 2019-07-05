@@ -5,7 +5,7 @@ using MediatR;
 
 namespace FilterLists.Agent.Features.Lists
 {
-    public static class CaptureLists
+    public static class ArchiveLists
     {
         public class Command : IRequest
         {

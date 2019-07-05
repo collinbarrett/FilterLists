@@ -35,7 +35,7 @@ services:
     depends_on:
       - mariadb
     environment:
-      ConnectionStrings__FilterListsConnection: ${FILTERLISTS_CONNECTION_STRING}
+      ConnectionStrings__FilterListsConnection: ${API_CONNECTION_STRING}
 
   mariadb:
     image: mariadb:10
@@ -45,10 +45,10 @@ services:
     volumes:
       - data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: ${FILTERLISTS_MYSQL_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${FILTERLISTS_MYSQL_DATABASE}
-      MYSQL_USER: ${FILTERLISTS_MYSQL_USER}
-      MYSQL_PASSWORD: ${FILTERLISTS_MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${API_MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${API_MYSQL_DATABASE}
+      MYSQL_USER: ${API_MYSQL_USER}
+      MYSQL_PASSWORD: ${API_MYSQL_PASSWORD}
     command:
       [
         "mysqld",
@@ -65,12 +65,16 @@ services:
     volumes:
       - archives:/app/archives
     environment:
-      ConnectionStrings__FilterListsConnection: ${FILTERLISTS_CONNECTION_STRING}
-      ApplicationInsights__InstrumentationKey: ${FILTERLISTS_AGENT_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
-      GitHub__ProductHeaderValue: ${FILTERLISTS_AGENT_GITHUB_PRODUCT_HEADER_VALUE}
-      GitHub__PersonalAccessToken: ${FILTERLISTS_AGENT_GITHUB_PERSONAL_ACCESS_TOKEN}
-      GitHub__RepositoryOwner: ${FILTERLISTS_AGENT_GITHUB_REPOSITORY_OWNER}
-      GitHub__Repository: ${FILTERLISTS_AGENT_GITHUB_REPOSITORY}
+      ConnectionString__FilterListsConnection: ${API_CONNECTION_STRING}
+      ApplicationInsights__InstrumentationKey: ${AGENT_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
+      GitHub__ProductHeaderValue: ${AGENT_GITHUB_PRODUCT_HEADER_VALUE}
+      GitHub__PersonalAccessToken: ${AGENT_GITHUB_PERSONAL_ACCESS_TOKEN}
+      GitHub__RepositoryOwner: ${AGENT_GITHUB_REPOSITORY_OWNER}
+      GitHub__Repository: ${AGENT_GITHUB_REPOSITORY}
+      Archive__CommitMessageSuffix: ${AGENT_ARCHIVE_GIT_COMMIT_MESSAGE_SUFFIX}
+      Archive__RepositoryDirectory: ${AGENT_ARCHIVE_GIT_REPOSITORY_DIRECTORY}
+      Archive__SignatureName: ${AGENT_ARCHIVE_GIT_SIGNATURE_NAME}
+      Archive__SignatureEmail: ${AGENT_ARCHIVE_GIT_SIGNATURE_EMAIL}
 
 networks:
   reverse-proxy:

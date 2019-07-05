@@ -38,7 +38,8 @@ namespace FilterLists.Agent.Extensions
 #endif
                 .Build();
             services.ConfigureCustom<ApplicationInsightsSettings>(config);
-            services.ConfigureCustom<ConnectionStringsSettings>(config);
+            services.ConfigureCustom<ArchiveSettings>(config);
+            services.ConfigureCustom<ConnectionStringSettings>(config);
             services.ConfigureCustom<GitHubSettings>(config);
         }
 
