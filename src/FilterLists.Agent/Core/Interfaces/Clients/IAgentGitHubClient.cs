@@ -6,10 +6,10 @@ namespace FilterLists.Agent.Core.Interfaces.Clients
 {
     public interface IAgentGitHubClient
     {
-        Task<IReadOnlyList<Issue>> GetAllIssues(RepositoryIssueRequest repositoryIssueRequest);
+        Task<IReadOnlyList<Issue>> GetAllIssuesAsync(RepositoryIssueRequest repositoryIssueRequest);
 
-        Task<Issue> CreateIssue(NewIssue newIssue);
+        Task<Issue> CreateIssueAsync(NewIssue newIssue);
 
-        Task<Issue> UpdateIssue(int issueNumber, IssueUpdate issueUpdate);
+        Task<Issue> UpdateIssueAsync(int issueNumber, IssueUpdate issueUpdate);
     }
 }

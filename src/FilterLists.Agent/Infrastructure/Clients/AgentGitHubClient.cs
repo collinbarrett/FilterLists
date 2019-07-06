@@ -25,7 +25,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
             _logger = logger;
         }
 
-        public async Task<IReadOnlyList<Issue>> GetAllIssues(RepositoryIssueRequest repositoryIssueRequest)
+        public async Task<IReadOnlyList<Issue>> GetAllIssuesAsync(RepositoryIssueRequest repositoryIssueRequest)
         {
             try
             {
@@ -39,7 +39,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
             }
         }
 
-        public async Task<Issue> CreateIssue(NewIssue newIssue)
+        public async Task<Issue> CreateIssueAsync(NewIssue newIssue)
         {
             try
             {
@@ -53,7 +53,7 @@ namespace FilterLists.Agent.Infrastructure.Clients
             }
         }
 
-        public async Task<Issue> UpdateIssue(int issueNumber, IssueUpdate issueUpdate)
+        public async Task<Issue> UpdateIssueAsync(int issueNumber, IssueUpdate issueUpdate)
         {
             try
             {

@@ -50,13 +50,13 @@ namespace FilterLists.Agent.Features.Urls
                     State = ItemStateFilter.Open,
                     Labels = {AgentBotLabel}
                 };
-                return (await _gitHubClient.GetAllIssues(issueRequest)).FirstOrDefault();
+                return (await _gitHubClient.GetAllIssuesAsync(issueRequest)).FirstOrDefault();
             }
 
             private async Task<Issue> CreateBaseIssue()
             {
                 var newIssue = new NewIssue(IssueTitle);
-                return await _gitHubClient.CreateIssue(newIssue);
+                return await _gitHubClient.CreateIssueAsync(newIssue);
             }
 
             private async Task UpdateIssue(Issue issue,
@@ -69,7 +69,7 @@ namespace FilterLists.Agent.Features.Urls
                 updateIssue.AddLabel(DataLabel);
                 updateIssue.Body = await _mediator.Send(new BuildGitHubIssueBody.Command(dataFileUrlValidationResults),
                     cancellationToken);
-                await _gitHubClient.UpdateIssue(issue.Number, updateIssue);
+                await _gitHubClient.UpdateIssueAsync(issue.Number, updateIssue);
             }
         }
     }

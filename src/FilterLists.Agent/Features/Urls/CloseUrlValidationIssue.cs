@@ -32,7 +32,7 @@ namespace FilterLists.Agent.Features.Urls
                 updateIssue.State = ItemState.Closed;
                 updateIssue.Body = issue.Body +
                                    "<h1>Update:</h1>This issue is being closed since all URLs seem to now be valid.";
-                await _gitHubClient.UpdateIssue(issue.Number, updateIssue);
+                await _gitHubClient.UpdateIssueAsync(issue.Number, updateIssue);
             }
 
             private async Task<Issue> GetOpenIssueOrNull()
@@ -43,7 +43,7 @@ namespace FilterLists.Agent.Features.Urls
                     State = ItemStateFilter.Open,
                     Labels = {AgentBotLabel}
                 };
-                return (await _gitHubClient.GetAllIssues(issueRequest)).FirstOrDefault();
+                return (await _gitHubClient.GetAllIssuesAsync(issueRequest)).FirstOrDefault();
             }
         }
     }
