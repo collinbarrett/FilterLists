@@ -1,25 +1,66 @@
-# https://github.com/alexkaratarakis/gitattributes
-# CSharp + VisualStudio + Web + Common
+# https://gitattributes.io/api/common%2Cweb%2Cvisualstudio%2Ccsharp
 
+
+#common settings that generally should always be used with your language specific settings
 
 # Auto detect text files and perform LF normalization
-# https://www.davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
-*    text=auto
+# https://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
+* text=auto
 
-*.cs text diff=csharp
+#
+# The above will handle all files NOT found below
+#
 
+# Documents
+*.doc	 diff=astextplain
+*.DOC	 diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot  diff=astextplain
+*.DOT  diff=astextplain
+*.pdf  diff=astextplain
+*.PDF	 diff=astextplain
+*.rtf	 diff=astextplain
+*.RTF	 diff=astextplain
+*.md text
+*.adoc text
+*.textile text
+*.mustache text
+*.csv text
+*.tab text
+*.tsv text
+*.sql text
+
+# Graphics
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.tif binary
+*.tiff binary
+*.ico binary
+# SVG treated as an asset (binary) by default. If you want to treat it as text,
+# comment-out the following line and uncomment the line after.
+*.svg binary
+#*.svg text
+*.eps binary
+# Auto detect text files and perform LF normalization
+# https://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
+* text=auto
+
+*.cs     diff=csharp
 
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
-*            text=auto
+* text=auto
 
 ###############################################################################
 # Set the merge driver for project and solution files
 #
 # Merging from the command prompt will add diff markers to the files if there
 # are conflicts (Merging from VS is not affected by the settings below, in VS
-# the diff markers are never inserted). Diff markers may cause the following
+# the diff markers are never inserted). Diff markers may cause the following 
 # file extensions to fail to load in VS. An alternative would be to treat
 # these files as binary and thus will always conflict and require user
 # intervention with every merge. To do so, just comment the entries below and
@@ -62,8 +103,6 @@
 #*.props     merge=binary
 #*.filters   merge=binary
 #*.vcxitems  merge=binary
-
-
 ## GITATTRIBUTES FOR WEB PROJECTS
 #
 # These settings are for any web project.
@@ -75,255 +114,183 @@
 # Note that binary is a macro for -text -diff.
 ######################################################################
 
-# Auto detect
+## AUTO-DETECT
 ##   Handle line endings automatically for files detected as
 ##   text and leave all files detected as binary untouched.
 ##   This will handle all files NOT defined below.
-*                 text=auto
+* text=auto
 
-# Source code
-*.bash            text eol=lf
-*.bat             text eol=crlf
-*.cmd             text eol=crlf
-*.coffee          text
-*.css             text
-*.htm             text diff=html
-*.html            text diff=html
-*.inc             text
-*.ini             text
-*.js              text
-*.json            text
-*.jsx             text
-*.less            text
-*.ls              text
-*.map             text -diff
-*.od              text
-*.onlydata        text
-*.php             text diff=php
-*.pl              text
-*.ps1             text eol=crlf
-*.py              text diff=python
-*.rb              text diff=ruby
-*.sass            text
-*.scm             text
-*.scss            text diff=css
-*.sh              text eol=lf
-*.sql             text
-*.styl            text
-*.tag             text
-*.ts              text
-*.tsx             text
-*.xml             text
-*.xhtml           text diff=html
-
-# Docker
-*.dockerignore    text
-Dockerfile        text
-
-# Documentation
-*.ipynb           text
-*.markdown        text
-*.md              text
-*.mdwn            text
-*.mdown           text
-*.mkd             text
-*.mkdn            text
-*.mdtxt           text
-*.mdtext          text
-*.txt             text
-AUTHORS           text
-CHANGELOG         text
-CHANGES           text
-CONTRIBUTING      text
-COPYING           text
-copyright         text
-*COPYRIGHT*       text
-INSTALL           text
-license           text
-LICENSE           text
-NEWS              text
-readme            text
-*README*          text
-TODO              text
-
-# Templates
-*.dot             text
-*.ejs             text
-*.haml            text
-*.handlebars      text
-*.hbs             text
-*.hbt             text
-*.jade            text
-*.latte           text
-*.mustache        text
-*.njk             text
-*.phtml           text
-*.tmpl            text
-*.tpl             text
-*.twig            text
-*.vue             text
-
-# Linters
-.csslintrc        text
-.eslintrc         text
-.htmlhintrc       text
-.jscsrc           text
-.jshintrc         text
-.jshintignore     text
-.stylelintrc      text
-
-# Configs
-*.bowerrc         text
-*.cnf             text
-*.conf            text
-*.config          text
-.babelrc          text
-.browserslistrc   text
-.editorconfig     text
-.env              text
-.gitattributes    text
-.gitconfig        text
-.htaccess         text
-*.lock            text -diff
-package-lock.json text -diff
-*.npmignore       text
-*.yaml            text
-*.yml             text
-browserslist      text
-Makefile          text
-makefile          text
-
-# Heroku
-Procfile          text
-.slugignore       text
-
-# Graphics
-*.ai              binary
-*.bmp             binary
-*.eps             binary
-*.gif             binary
-*.gifv            binary
-*.ico             binary
-*.jng             binary
-*.jp2             binary
-*.jpg             binary
-*.jpeg            binary
-*.jpx             binary
-*.jxr             binary
-*.pdf             binary
-*.png             binary
-*.psb             binary
-*.psd             binary
-# SVG treated as an asset (binary) by default.
-*.svg             text
-# If you want to treat it as binary,
-# use the following line instead.
-# *.svg           binary
-*.svgz            binary
-*.tif             binary
-*.tiff            binary
-*.wbmp            binary
-*.webp            binary
-
-# Audio
-*.kar             binary
-*.m4a             binary
-*.mid             binary
-*.midi            binary
-*.mp3             binary
-*.ogg             binary
-*.ra              binary
-
-# Video
-*.3gpp            binary
-*.3gp             binary
-*.as              binary
-*.asf             binary
-*.asx             binary
-*.fla             binary
-*.flv             binary
-*.m4v             binary
-*.mng             binary
-*.mov             binary
-*.mp4             binary
-*.mpeg            binary
-*.mpg             binary
-*.ogv             binary
-*.swc             binary
-*.swf             binary
-*.webm            binary
-
-# Archives
-*.7z              binary
-*.gz              binary
-*.jar             binary
-*.rar             binary
-*.tar             binary
-*.zip             binary
-
-# Fonts
-*.ttf             binary
-*.eot             binary
-*.otf             binary
-*.woff            binary
-*.woff2           binary
-
-# Executables
-*.exe             binary
-*.pyc             binary
-
-
-# Common settings that generally should always be used with your language specific settings
-
-# Auto detect text files and perform LF normalization
-# https://www.davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
-*          text=auto
-
-#
-# The above will handle all files NOT found below
-#
-
-# Documents
-*.bibtex   text diff=bibtex
-*.doc	        diff=astextplain
-*.DOC	        diff=astextplain
-*.docx          diff=astextplain
-*.DOCX          diff=astextplain
-*.dot           diff=astextplain
-*.DOT           diff=astextplain
-*.pdf           diff=astextplain
-*.PDF           diff=astextplain
-*.rtf           diff=astextplain
-*.RTF	        diff=astextplain
-*.md       text
-*.tex      text diff=tex
-*.adoc     text
-*.textile  text
-*.mustache text
-*.csv      text
-*.tab      text
-*.tsv      text
+## SOURCE CODE
+*.bat      text eol=crlf
+*.coffee   text
+*.css      text
+*.htm      text
+*.html     text
+*.inc      text
+*.ini      text
+*.js       text
+*.json     text
+*.jsx      text
+*.less     text
+*.od       text
+*.onlydata text
+*.php      text
+*.pl       text
+*.py       text
+*.rb       text
+*.sass     text
+*.scm      text
+*.scss     text
+*.sh       text eol=lf
 *.sql      text
+*.styl     text
+*.tag      text
+*.ts       text
+*.tsx      text
+*.xml      text
+*.xhtml    text
 
-# Graphics
-*.png      binary
-*.jpg      binary
-*.jpeg     binary
-*.gif      binary
-*.tif      binary
-*.tiff     binary
-*.ico      binary
-# SVG treated as an asset (binary) by default.
-*.svg      text
-# If you want to treat it as binary,
-# use the following line instead.
-# *.svg    binary
+## DOCKER
+*.dockerignore    text
+Dockerfile    text
 
-*.eps      binary
+## DOCUMENTATION
+*.markdown   text
+*.md         text
+*.mdwn       text
+*.mdown      text
+*.mkd        text
+*.mkdn       text
+*.mdtxt      text
+*.mdtext     text
+*.txt        text
+AUTHORS      text
+CHANGELOG    text
+CHANGES      text
+CONTRIBUTING text
+COPYING      text
+copyright    text
+*COPYRIGHT*  text
+INSTALL      text
+license      text
+LICENSE      text
+NEWS         text
+readme       text
+*README*     text
+TODO         text
 
-#
-# Exclude files from exporting
-#
+## TEMPLATES
+*.dot        text
+*.ejs        text
+*.haml       text
+*.handlebars text
+*.hbs        text
+*.hbt        text
+*.jade       text
+*.latte      text
+*.mustache   text
+*.njk        text
+*.phtml      text
+*.tmpl       text
+*.tpl        text
+*.twig       text
 
-.gitattributes export-ignore
-.gitignore     export-ignore
+## LINTERS
+.csslintrc    text
+.eslintrc     text
+.htmlhintrc   text
+.jscsrc       text
+.jshintrc     text
+.jshintignore text
+.stylelintrc  text
+
+## CONFIGS
+*.bowerrc      text
+*.cnf          text
+*.conf         text
+*.config       text
+.browserslistrc    text
+.editorconfig  text
+.gitattributes text
+.gitconfig     text
+.htaccess      text
+*.npmignore    text
+*.yaml         text
+*.yml          text
+browserslist   text
+Makefile       text
+makefile       text
+
+## HEROKU
+Procfile    text
+.slugignore text
+
+## GRAPHICS
+*.ai   binary
+*.bmp  binary
+*.eps  binary
+*.gif  binary
+*.ico  binary
+*.jng  binary
+*.jp2  binary
+*.jpg  binary
+*.jpeg binary
+*.jpx  binary
+*.jxr  binary
+*.pdf  binary
+*.png  binary
+*.psb  binary
+*.psd  binary
+*.svg  text
+*.svgz binary
+*.tif  binary
+*.tiff binary
+*.wbmp binary
+*.webp binary
+
+## AUDIO
+*.kar  binary
+*.m4a  binary
+*.mid  binary
+*.midi binary
+*.mp3  binary
+*.ogg  binary
+*.ra   binary
+
+## VIDEO
+*.3gpp binary
+*.3gp  binary
+*.as   binary
+*.asf  binary
+*.asx  binary
+*.fla  binary
+*.flv  binary
+*.m4v  binary
+*.mng  binary
+*.mov  binary
+*.mp4  binary
+*.mpeg binary
+*.mpg  binary
+*.ogv  binary
+*.swc  binary
+*.swf  binary
+*.webm binary
+
+## ARCHIVES
+*.7z  binary
+*.gz  binary
+*.jar binary
+*.rar binary
+*.tar binary
+*.zip binary
+
+## FONTS
+*.ttf   binary
+*.eot   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary
+
+## EXECUTABLES
+*.exe binary
+*.pyc binary
