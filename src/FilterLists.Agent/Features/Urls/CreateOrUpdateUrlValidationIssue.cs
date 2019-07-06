@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core.Interfaces.Clients;
+using FilterLists.Agent.Core.Interfaces.Repositories;
 using FilterLists.Agent.Extensions;
 using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 using MediatR;
@@ -27,12 +27,12 @@ namespace FilterLists.Agent.Features.Urls
             private const string HelpWantedLabel = "help wanted";
             private const string DataLabel = "data";
             private const string IssueTitle = "BOT: url validation errors";
-            private readonly IAgentGitHubClient _gitHubClient;
+            private readonly IGitHubIssuesRepository _repo;
             private readonly IMediator _mediator;
 
-            public Handler(IAgentGitHubClient agentGitHubClient, IMediator mediator)
+            public Handler(IGitHubIssuesRepository gitHubIssuesRepository, IMediator mediator)
             {
-                _gitHubClient = agentGitHubClient;
+                _repo = gitHubIssuesRepository;
                 _mediator = mediator;
             }
 
@@ -50,13 +50,13 @@ namespace FilterLists.Agent.Features.Urls
                     State = ItemStateFilter.Open,
                     Labels = {AgentBotLabel}
                 };
-                return (await _gitHubClient.GetAllIssuesAsync(issueRequest)).FirstOrDefault();
+                return (await _repo.GetAllIssuesAsync(issueRequest)).FirstOrDefault();
             }
 
             private async Task<Issue> CreateBaseIssue()
             {
                 var newIssue = new NewIssue(IssueTitle);
-                return await _gitHubClient.CreateIssueAsync(newIssue);
+                return await _repo.CreateIssueAsync(newIssue);
             }
 
             private async Task UpdateIssue(Issue issue,
@@ -69,7 +69,7 @@ namespace FilterLists.Agent.Features.Urls
                 updateIssue.AddLabel(DataLabel);
                 updateIssue.Body = await _mediator.Send(new BuildGitHubIssueBody.Command(dataFileUrlValidationResults),
                     cancellationToken);
-                await _gitHubClient.UpdateIssueAsync(issue.Number, updateIssue);
+                await _repo.UpdateIssueAsync(issue.Number, updateIssue);
             }
         }
     }

@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core.Interfaces.Clients;
+using FilterLists.Agent.Core.Interfaces.Repositories;
 using FilterLists.Agent.Extensions;
 using MediatR;
 using Octokit;
@@ -16,11 +16,11 @@ namespace FilterLists.Agent.Features.Urls
         public class Handler : AsyncRequestHandler<Command>
         {
             private const string AgentBotLabel = "agent bot";
-            private readonly IAgentGitHubClient _gitHubClient;
+            private readonly IGitHubIssuesRepository _repo;
 
-            public Handler(IAgentGitHubClient agentGitHubClient)
+            public Handler(IGitHubIssuesRepository gitHubIssuesRepository)
             {
-                _gitHubClient = agentGitHubClient;
+                _repo = gitHubIssuesRepository;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
@@ -32,7 +32,7 @@ namespace FilterLists.Agent.Features.Urls
                 updateIssue.State = ItemState.Closed;
                 updateIssue.Body = issue.Body +
                                    "<h1>Update:</h1>This issue is being closed since all URLs seem to now be valid.";
-                await _gitHubClient.UpdateIssueAsync(issue.Number, updateIssue);
+                await _repo.UpdateIssueAsync(issue.Number, updateIssue);
             }
 
             private async Task<Issue> GetOpenIssueOrNull()
@@ -43,7 +43,7 @@ namespace FilterLists.Agent.Features.Urls
                     State = ItemStateFilter.Open,
                     Labels = {AgentBotLabel}
                 };
-                return (await _gitHubClient.GetAllIssuesAsync(issueRequest)).FirstOrDefault();
+                return (await _repo.GetAllIssuesAsync(issueRequest)).FirstOrDefault();
             }
         }
     }

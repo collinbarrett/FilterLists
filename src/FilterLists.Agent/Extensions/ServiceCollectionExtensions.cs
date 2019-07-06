@@ -30,10 +30,10 @@ namespace FilterLists.Agent.Extensions
             services.AddAgentHttpClient();
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
             services.AddGitHubClient();
-            services.AddSingleton<IAgentGitHubClient, AgentGitHubClient>();
             services.AddArchiveRepository();
             services.AddTransient<IListInfoRepository, ListInfoRepository>();
             services.AddTransient<IUrlRepository, UrlRepository>();
+            services.AddTransient<IGitHubIssuesRepository, GitHubIssuesRepository>();
         }
 
         private static void AddConfiguration(this IServiceCollection services)
