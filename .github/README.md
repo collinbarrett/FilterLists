@@ -19,7 +19,7 @@
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=12"><img src="https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/12.svg" alt="Azure DevOps builds" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=4"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/4/5.svg" alt="Azure DevOps releases" /></a>
 <a href="https://hub.docker.com/r/collinbarrett/filterlists.web"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.web.svg" alt="Docker Pulls" /></a>
-<br/>A simple React & TypeScript UI primarily featuring a [react-table](https://www.npmjs.com/package/react-table) instance.</p>
+<br/>A simple React & TypeScript UI primarily featuring a <a href="https://www.npmjs.com/package/react-table">react-table</a> instance.</p>
 
 <p align="center">Agent: 
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=17"><img src="https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/17.svg" alt="Azure DevOps builds" /></a>
