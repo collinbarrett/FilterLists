@@ -133,11 +133,17 @@ The Agent takes the following command line arguments:
 
 ## Disclaimer
 
-FilterLists does not condone or endorse implementing any particular FilterList or blocking any particular advertisement network. Make sure to financially support your favorite sites in some way if you choose to block their advertisements. FilterLists is also in no way officially affiliated with any of the software vendors or list maintainers referenced on this site.
+FilterLists does not condone subscribing to any particular FilterList or blocking any particular advertisement network. Make sure to financially support your favorite sites in some way if you choose to block their advertisements. FilterLists is also in no way officially affiliated with any of the software vendors or list maintainers referenced on this site.
 
 ## Privacy
 
-We respect your privacy. That is the whole point of this site. The only minor data we collect about visitors is what [Cloudflare](https://www.cloudflare.com/analytics/), [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-data-retention-privacy), and [GitHub](https://help.github.com/articles/github-privacy-statement/) capture.
+We respect your privacy. That is the whole point of this site. The only minor data we collect about visitors is what our infrastructure providers collect. These include:
+- [GitHub](https://help.github.com/articles/github-privacy-statement/)
+- [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/security/data-protection?view=azure-devops)
+- [Docker Hub](https://www.docker.com/legal/docker-privacy-policy)
+- [Cloudflare](https://www.cloudflare.com/analytics/)
+- [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-data-retention-privacy)
+- [DigitalOcean](https://www.digitalocean.com/legal/privacy-policy/)
 
 ## Internet Explorer
 
