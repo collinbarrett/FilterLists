@@ -1,3 +1,4 @@
+using System.Threading;
 using FilterLists.Data.Seed.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
@@ -9,6 +10,10 @@ namespace FilterLists.Data.Tests
         [Fact]
         public async void SeedOrUpdateAsync_DoesNotThrowException()
         {
+            //TODO: replace with Polly or similar to optimize time waste
+            // allow time for db to init
+            Thread.Sleep(10000);
+
             const string connString = "Server=mariadb;Database=filterlists;Uid=filterlists;Pwd=filterlists;";
             var options = new DbContextOptionsBuilder<FilterListsDbContext>()
                           .UseMySql(connString, m => m.MigrationsAssembly("FilterLists.Api"))

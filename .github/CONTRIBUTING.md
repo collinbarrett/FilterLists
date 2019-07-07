@@ -30,13 +30,12 @@ We have containerized FilterLists to make it as easy as possible for contributer
 
 Execute:
 
-`docker volume create test-data-results && docker-compose -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -f docker-compose.data.tests.yml run api`
+`docker volume create test-data-results && docker-compose -p test-data -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -p test-data -f docker-compose.data.tests.yml run --rm api`
 
 #### Manual
 
-1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.api` container.
-2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
-3. Verify your changes are properly reflected at `http://localhost/`.
+1. Execute `docker-compose up -d --build api`.
+2. Verify your changes are properly reflected at `http://localhost/`.
 
 ### Testing changes to the `Api`, `Services`, or `Data` projects
 
@@ -44,22 +43,39 @@ Execute:
 
 - To run `FilterLists.Services.Tests`:
 
-  `docker volume create test-services-results && docker-compose -f docker-compose.services.tests.yml build api && docker-compose -f docker-compose.services.tests.yml run --rm api`
+  `docker volume create test-services-results && docker-compose -f docker-compose.services.tests.yml build api && docker-compose -p test-services -f docker-compose.services.tests.yml run --rm api`
 
 - To run `FilterLists.Data.Tests`:
 
-  `docker volume create test-data-results && docker-compose -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -f docker-compose.data.tests.yml run api`
+  `docker volume create test-data-results && docker-compose -p test-data -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -p test-data -f docker-compose.data.tests.yml run --rm api`
 
 #### Manual
 
-1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.api` container.
-2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
-3. Verify your changes are properly reflected at `http://localhost/api`.
+1. Execute `docker-compose up -d --build api`.
+2. Verify your changes are properly reflected at `http://localhost/api`.
 
 ### Testing changes to the `Web` project
 
-1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.web` container.
-2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
+1. Execute `docker-compose up -d --build web`.
+2. Verify your changes are properly reflected at `http://localhost/`.
+
+### Testing changes to the `Agent` project
+
+The Agent takes the following command line arguments:
+
+- `-a` Archive copies of all lists in a git repository.
+- `-c` Validate all URLs in the FilterLists database.
+
+#### Automated
+
+- To run `FilterLists.Agent.Tests`:
+
+  `docker volume create test-agent-results && docker-compose -f docker-compose.agent.tests.yml build agent && docker-compose -p test-agent -f docker-compose.agent.tests.yml run --rm agent`
+
+#### Manual
+
+1. Execute `docker-compose build agent && docker-compose run agent [-c] [-v]` (don't include the square brackets, they indicate optional command line arguments).
+2. Verify your changes are properly reflected in the console logger.
 
 ### Debugging
 

@@ -12,18 +12,21 @@
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=3"><img src="https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/3.svg" alt="Azure DevOps builds" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_test/analytics?definitionId=3&contextType=build"><img alt="Azure DevOps tests" src="https://img.shields.io/azure-devops/tests/collinbarrett/FilterLists/3.svg"></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=3"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4.svg" alt="Azure DevOps releases" /></a>
-<a href="https://hub.docker.com/r/collinbarrett/filterlists.api"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.api.svg" alt="Docker Pulls" /></a></p>
+<a href="https://hub.docker.com/r/collinbarrett/filterlists.api"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.api.svg" alt="Docker Pulls" /></a>
+<br/>An ASP.NET Core API serving data from a MariaDB instance.</p>
 
 <p align="center">Website: <a href="https://filterlists.com/"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=12"><img src="https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/12.svg" alt="Azure DevOps builds" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=4"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/4/5.svg" alt="Azure DevOps releases" /></a>
-<a href="https://hub.docker.com/r/collinbarrett/filterlists.web"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.web.svg" alt="Docker Pulls" /></a></p>
+<a href="https://hub.docker.com/r/collinbarrett/filterlists.web"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.web.svg" alt="Docker Pulls" /></a>
+<br/>A simple React & TypeScript UI primarily featuring a [react-table](https://www.npmjs.com/package/react-table) instance.</p>
 
 <p align="center">Agent: 
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=17"><img src="https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/17.svg" alt="Azure DevOps builds" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_test/analytics?definitionId=17&contextType=build"><img alt="Azure DevOps tests" src="https://img.shields.io/azure-devops/tests/collinbarrett/FilterLists/17.svg"></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=6"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/6/7.svg" alt="Azure DevOps releases" /></a>
-<a href="https://hub.docker.com/r/collinbarrett/filterlists.agent"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.agent.svg" alt="Docker Pulls" /></a></p>
+<a href="https://hub.docker.com/r/collinbarrett/filterlists.agent"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.agent.svg" alt="Docker Pulls" /></a>
+<br/>A .NET Core console application performing crawling, archiving, and URL validation.</p>
 
 # Background
 
@@ -67,13 +70,12 @@ We have containerized FilterLists to make it as easy as possible for contributer
 
 Execute:
 
-`docker volume create test-data-results && docker-compose -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -f docker-compose.data.tests.yml run api`
+`docker volume create test-data-results && docker-compose -p test-data -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -p test-data -f docker-compose.data.tests.yml run --rm api`
 
 #### Manual
 
-1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.api` container.
-2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
-3. Verify your changes are properly reflected at `http://localhost/`.
+1. Execute `docker-compose up -d --build api`.
+2. Verify your changes are properly reflected at `http://localhost/`.
 
 ### Testing changes to the `Api`, `Services`, or `Data` projects
 
@@ -81,22 +83,39 @@ Execute:
 
 - To run `FilterLists.Services.Tests`:
 
-  `docker volume create test-services-results && docker-compose -f docker-compose.services.tests.yml build api && docker-compose -f docker-compose.services.tests.yml run --rm api`
+  `docker volume create test-services-results && docker-compose -f docker-compose.services.tests.yml build api && docker-compose -p test-services -f docker-compose.services.tests.yml run --rm api`
 
 - To run `FilterLists.Data.Tests`:
 
-  `docker volume create test-data-results && docker-compose -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -f docker-compose.data.tests.yml run api`
+  `docker volume create test-data-results && docker-compose -p test-data -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -p test-data -f docker-compose.data.tests.yml run --rm api`
 
 #### Manual
 
-1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.api` container.
-2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
-3. Verify your changes are properly reflected at `http://localhost/api`.
+1. Execute `docker-compose up -d --build api`.
+2. Verify your changes are properly reflected at `http://localhost/api`.
 
 ### Testing changes to the `Web` project
 
-1. Execute `docker container ls` to find the `CONTAINER ID` of the `filterlists.web` container.
-2. Execute `docker-compose up -d --build [CONTAINER ID]` replacing `[CONTAINER ID]` with the hash from step 1.
+1. Execute `docker-compose up -d --build web`.
+2. Verify your changes are properly reflected at `http://localhost/`.
+
+### Testing changes to the `Agent` project
+
+The Agent takes the following command line arguments:
+
+- `-a` Archive copies of all lists in a git repository.
+- `-c` Validate all URLs in the FilterLists database.
+
+#### Automated
+
+- To run `FilterLists.Agent.Tests`:
+
+  `docker volume create test-agent-results && docker-compose -f docker-compose.agent.tests.yml build agent && docker-compose -p test-agent -f docker-compose.agent.tests.yml run --rm agent`
+
+#### Manual
+
+1. Execute `docker-compose build agent && docker-compose run agent [-c] [-v]` (don't include the square brackets, they indicate optional command line arguments).
+2. Verify your changes are properly reflected in the console logger.
 
 ### Debugging
 
