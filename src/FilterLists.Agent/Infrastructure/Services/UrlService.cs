@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using FilterLists.Agent.Core.Interfaces.Clients;
+using FilterLists.Agent.Core.Interfaces.Services;
 using JetBrains.Annotations;
 
-namespace FilterLists.Agent.Infrastructure.Clients
+namespace FilterLists.Agent.Infrastructure.Services
 {
     [UsedImplicitly]
-    public class AgentHttpClientFactory : IAgentHttpClientFactory
+    public class UrlService : IUrlService
     {
-        public AgentHttpClientFactory(HttpClient client)
+        public UrlService(HttpClient client)
         {
             client.Timeout = TimeSpan.FromSeconds(90);
 

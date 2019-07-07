@@ -5,8 +5,10 @@ using CommandLine;
 using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Core.Interfaces.Clients;
 using FilterLists.Agent.Core.Interfaces.Repositories;
+using FilterLists.Agent.Core.Interfaces.Services;
 using FilterLists.Agent.Infrastructure.Clients;
 using FilterLists.Agent.Infrastructure.Repositories;
+using FilterLists.Agent.Infrastructure.Services;
 using LibGit2Sharp;
 using MediatR;
 using Microsoft.Extensions.Configuration;
@@ -30,8 +32,9 @@ namespace FilterLists.Agent.Extensions
             services.AddTransient<Parser>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
-            services.AddAgentHttpClient();
             services.AddGitHubClient();
+            services.AddListService();
+            services.AddUrlService();
             services.AddArchiveRepository();
             services.AddTransient<IListInfoRepository, ListInfoRepository>();
             services.AddTransient<IUrlRepository, UrlRepository>();
@@ -72,19 +75,6 @@ namespace FilterLists.Agent.Extensions
             });
         }
 
-        private static void AddAgentHttpClient(this IServiceCollection services)
-        {
-            services.AddHttpClient<IAgentHttpClientFactory, AgentHttpClientFactory>()
-                .ConfigureHttpMessageHandlerBuilder(b =>
-                {
-                    b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
-                    b.Build();
-                })
-                .AddTransientHttpErrorPolicy(b =>
-                    b.OrResult(r => r.StatusCode == HttpStatusCode.TooManyRequests)
-                        .WaitAndRetryAsync(5, i => i * TimeSpan.FromSeconds(3)));
-        }
-
         private static void AddGitHubClient(this IServiceCollection services)
         {
             services.AddSingleton<IGitHubClient, GitHubClient>(s =>
@@ -95,6 +85,32 @@ namespace FilterLists.Agent.Extensions
                     Credentials = new Credentials(gitHubSettings.PersonalAccessToken)
                 };
             });
+        }
+
+        private static void AddListService(this IServiceCollection services)
+        {
+            services.AddHttpClient<IListService, ListService>()
+                .ConfigureHttpMessageHandlerBuilder(b =>
+                {
+                    b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
+                    b.Build();
+                })
+                .AddTransientHttpErrorPolicy(b =>
+                    b.OrResult(r => r.StatusCode == HttpStatusCode.TooManyRequests)
+                        .WaitAndRetryAsync(5, i => i * TimeSpan.FromSeconds(3)));
+        }
+
+        private static void AddUrlService(this IServiceCollection services)
+        {
+            services.AddHttpClient<IUrlService, UrlService>()
+                .ConfigureHttpMessageHandlerBuilder(b =>
+                {
+                    b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
+                    b.Build();
+                })
+                .AddTransientHttpErrorPolicy(b =>
+                    b.OrResult(r => r.StatusCode == HttpStatusCode.TooManyRequests)
+                        .WaitAndRetryAsync(5, i => i * TimeSpan.FromSeconds(3)));
         }
 
         private static void AddArchiveRepository(this IServiceCollection services)

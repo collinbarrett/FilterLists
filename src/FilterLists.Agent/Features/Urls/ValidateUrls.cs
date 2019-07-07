@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
-using FilterLists.Agent.Core.Interfaces.Clients;
+using FilterLists.Agent.Core.Interfaces.Services;
 using FilterLists.Agent.Extensions;
 using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 using MediatR;
@@ -31,9 +31,9 @@ namespace FilterLists.Agent.Features.Urls
             private readonly HttpClient _httpClient;
             private readonly ILogger<Handler> _logger;
 
-            public Handler(IAgentHttpClientFactory agentHttpClientFactory, ILogger<Handler> logger)
+            public Handler(IUrlService urlService, ILogger<Handler> logger)
             {
-                _httpClient = agentHttpClientFactory.HttpClient;
+                _httpClient = urlService.HttpClient;
                 _logger = logger;
             }
 
