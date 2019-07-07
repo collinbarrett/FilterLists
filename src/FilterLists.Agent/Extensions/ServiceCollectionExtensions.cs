@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Net.Http;
 using CommandLine;
 using FilterLists.Agent.AppSettings;
@@ -13,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Octokit;
+using Polly;
 using Credentials = Octokit.Credentials;
 using Repository = LibGit2Sharp.Repository;
 
@@ -76,7 +78,9 @@ namespace FilterLists.Agent.Extensions
             {
                 b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
                 b.Build();
-            });
+            }).AddTransientHttpErrorPolicy(b =>
+                b.OrResult(r => r.StatusCode == HttpStatusCode.TooManyRequests)
+                    .WaitAndRetryAsync(5, i => i * TimeSpan.FromSeconds(3)));
         }
 
         private static void AddGitHubClient(this IServiceCollection services)
