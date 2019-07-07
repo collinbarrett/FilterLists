@@ -64,6 +64,10 @@ We have containerized FilterLists to make it as easy as possible for contributer
 4. Execute `docker-compose up`. (Optionally, include the `-d` flag to launch in [detached mode](https://docs.docker.com/compose/reference/up/).)
 5. After a minute or so, visit the locally running version of FilterLists in a web browser at `http://localhost/`.
 
+### Configuration
+
+The `appsettings*.json` files are only used when debugging in Visual Studio outside of Docker ([they are not copied into the built runtime images](https://github.com/collinbarrett/FilterLists/blob/59a4e067b35110ebda5d5cf1e3ef96cab2fcbfe5/.dockerignore#L28)). When running any of the projects in containers via Docker/Docker Compose, the configuration is passed in as environment variables configured in the [`.env` file](https://github.com/collinbarrett/FilterLists/blob/master/.env) and the `docker-compose*.yml` files.
+
 ### Testing changes to the data (.json files)
 
 #### Automated
