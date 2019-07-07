@@ -74,13 +74,15 @@ namespace FilterLists.Agent.Extensions
 
         private static void AddAgentHttpClient(this IServiceCollection services)
         {
-            services.AddHttpClient<IAgentHttpClient, AgentHttpClient>().ConfigureHttpMessageHandlerBuilder(b =>
-            {
-                b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
-                b.Build();
-            }).AddTransientHttpErrorPolicy(b =>
-                b.OrResult(r => r.StatusCode == HttpStatusCode.TooManyRequests)
-                    .WaitAndRetryAsync(5, i => i * TimeSpan.FromSeconds(3)));
+            services.AddHttpClient<IAgentHttpClientFactory, AgentHttpClientFactory>()
+                .ConfigureHttpMessageHandlerBuilder(b =>
+                {
+                    b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
+                    b.Build();
+                })
+                .AddTransientHttpErrorPolicy(b =>
+                    b.OrResult(r => r.StatusCode == HttpStatusCode.TooManyRequests)
+                        .WaitAndRetryAsync(5, i => i * TimeSpan.FromSeconds(3)));
         }
 
         private static void AddGitHubClient(this IServiceCollection services)

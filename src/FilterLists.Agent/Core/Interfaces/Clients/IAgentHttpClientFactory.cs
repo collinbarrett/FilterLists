@@ -2,7 +2,7 @@
 
 namespace FilterLists.Agent.Core.Interfaces.Clients
 {
-    public interface IAgentHttpClient
+    public interface IAgentHttpClientFactory
     {
         HttpClient HttpClient { get; }
     }

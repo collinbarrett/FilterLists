@@ -31,9 +31,9 @@ namespace FilterLists.Agent.Features.Urls
             private readonly HttpClient _httpClient;
             private readonly ILogger<Handler> _logger;
 
-            public Handler(IAgentHttpClient agentHttpClient, ILogger<Handler> logger)
+            public Handler(IAgentHttpClientFactory agentHttpClientFactory, ILogger<Handler> logger)
             {
-                _httpClient = agentHttpClient.HttpClient;
+                _httpClient = agentHttpClientFactory.HttpClient;
                 _logger = logger;
             }
 

@@ -7,9 +7,9 @@ using JetBrains.Annotations;
 namespace FilterLists.Agent.Infrastructure.Clients
 {
     [UsedImplicitly]
-    public class AgentHttpClient : IAgentHttpClient
+    public class AgentHttpClientFactory : IAgentHttpClientFactory
     {
-        public AgentHttpClient(HttpClient client)
+        public AgentHttpClientFactory(HttpClient client)
         {
             client.Timeout = TimeSpan.FromSeconds(90);
 
