@@ -137,7 +137,7 @@ FilterLists does not condone subscribing to any particular FilterList or blockin
 
 ## Privacy
 
-We respect your privacy. That is the whole point of this site. The only minor data we collect about visitors is what our infrastructure providers collect. These include:
+We respect your privacy. That is the whole point of this project. The only minor data we collect about visitors is what our infrastructure providers collect. These include:
 - [GitHub](https://help.github.com/articles/github-privacy-statement/)
 - [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/security/data-protection?view=azure-devops)
 - [Docker Hub](https://www.docker.com/legal/docker-privacy-policy)
