@@ -26,7 +26,7 @@ We have containerized FilterLists to make it as easy as possible for contributer
 
 ### Configuration
 
-The `appsettings*.json` files are only used when debugging in Visual Studio outside of Docker ([they are not copied into the built runtime images](https://github.com/collinbarrett/FilterLists/blob/59a4e067b35110ebda5d5cf1e3ef96cab2fcbfe5/.dockerignore#L28)). When running any of the projects in containers via Docker/Docker Compose, the configuration is passed in as environment variables configured in the [`.env` file](https://github.com/collinbarrett/FilterLists/blob/master/.env) and the `docker-compose*.yml` files.
+The `appsettings*.json` files are only used when debugging in Visual Studio outside of Docker ([they are not copied into the built runtime images](https://github.com/collinbarrett/FilterLists/blob/59a4e067b35110ebda5d5cf1e3ef96cab2fcbfe5/.dockerignore#L28)). When running any of the projects in containers via Docker/Docker Compose, the configuration is passed in as environment variables configured in [`.env`](https://github.com/collinbarrett/FilterLists/blob/master/.env) and `docker-compose*.yml` files.
 
 ### Testing changes to the data (.json files)
 
