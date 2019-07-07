@@ -1,21 +1,23 @@
 ﻿using System;
 using System.Threading.Tasks;
+using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Core.Interfaces.Clients;
 using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Options;
 using RestSharp;
 
 namespace FilterLists.Agent.Infrastructure.Clients
 {
     public class FilterListsApiClient : IFilterListsApiClient
     {
-        private const string FilterListsApiBaseUrl = "https://filterlists.com/api/v1";
         private readonly IStringLocalizer<FilterListsApiClient> _localizer;
         private readonly IRestClient _restClient;
 
-        public FilterListsApiClient(IStringLocalizer<FilterListsApiClient> stringLocalizer)
+        public FilterListsApiClient(IStringLocalizer<FilterListsApiClient> stringLocalizer,
+            IOptions<FilterListsApiSettings> filterListsApiOptions)
         {
             _localizer = stringLocalizer;
-            _restClient = new RestClient(FilterListsApiBaseUrl) {UserAgent = "FilterLists.Agent"};
+            _restClient = new RestClient(filterListsApiOptions.Value.BaseUrl) {UserAgent = "FilterLists.Agent"};
         }
 
         public async Task<TResponse> ExecuteAsync<TResponse>(IRestRequest request)

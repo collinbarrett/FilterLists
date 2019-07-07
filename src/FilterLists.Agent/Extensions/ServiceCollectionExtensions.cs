@@ -48,6 +48,7 @@ namespace FilterLists.Agent.Extensions
             services.ConfigureCustom<ApplicationInsightsSettings>(config);
             services.ConfigureCustom<ArchiveSettings>(config);
             services.ConfigureCustom<ConnectionStringSettings>(config);
+            services.ConfigureCustom<FilterListsApiSettings>(config);
             services.ConfigureCustom<GitHubSettings>(config);
         }
 

@@ -65,16 +65,17 @@ services:
     volumes:
       - archives:/app/archives
     environment:
-      ConnectionString__FilterListsConnection: ${API_CONNECTION_STRING}
       ApplicationInsights__InstrumentationKey: ${AGENT_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
+      Archive__RepositoryDirectory: ${AGENT_ARCHIVE_GIT_REPOSITORY_DIRECTORY}
+      Archive__SignatureName: ${AGENT_ARCHIVE_GIT_SIGNATURE_NAME}
+      Archive__SignatureEmail: ${AGENT_ARCHIVE_GIT_SIGNATURE_EMAIL}
+      Archive__CommitMessageSuffix: ${AGENT_ARCHIVE_GIT_COMMIT_MESSAGE_SUFFIX}
+      ConnectionString__FilterListsConnection: ${API_CONNECTION_STRING}
+      FilterListsApi__BaseUrl: ${AGENT_FILTERLISTS_API_BASE_URL}
       GitHub__ProductHeaderValue: ${AGENT_GITHUB_PRODUCT_HEADER_VALUE}
       GitHub__PersonalAccessToken: ${AGENT_GITHUB_PERSONAL_ACCESS_TOKEN}
       GitHub__RepositoryOwner: ${AGENT_GITHUB_REPOSITORY_OWNER}
       GitHub__Repository: ${AGENT_GITHUB_REPOSITORY}
-      Archive__CommitMessageSuffix: ${AGENT_ARCHIVE_GIT_COMMIT_MESSAGE_SUFFIX}
-      Archive__RepositoryDirectory: ${AGENT_ARCHIVE_GIT_REPOSITORY_DIRECTORY}
-      Archive__SignatureName: ${AGENT_ARCHIVE_GIT_SIGNATURE_NAME}
-      Archive__SignatureEmail: ${AGENT_ARCHIVE_GIT_SIGNATURE_EMAIL}
 
 networks:
   reverse-proxy:
