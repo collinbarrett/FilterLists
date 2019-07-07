@@ -27,8 +27,8 @@ namespace FilterLists.Agent.Extensions
             services.AddLocalization();
             services.AddTransient<Parser>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
-            services.AddAgentHttpClient();
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
+            services.AddAgentHttpClient();
             services.AddGitHubClient();
             services.AddArchiveRepository();
             services.AddTransient<IListInfoRepository, ListInfoRepository>();
