@@ -73,7 +73,7 @@ namespace FilterLists.Agent.Extensions
 
         private static void AddApiClient(this IServiceCollection services)
         {
-            services.AddSingleton<IRestClient>(b =>
+            services.AddSingleton<IRestClient, RestClient>(b =>
             {
                 var filterListsApiSettings = b.GetService<IOptions<FilterListsApiSettings>>().Value;
                 return new RestClient(filterListsApiSettings.BaseUrl) {UserAgent = "FilterLists.Agent"};
@@ -107,15 +107,9 @@ namespace FilterLists.Agent.Extensions
 
         private static void AddListRepository(this IServiceCollection services)
         {
-            services.AddHttpClient<IListRepository, ListRepository>()
-                .ConfigureHttpMessageHandlerBuilder(b =>
-                {
-                    b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
-                    b.Build();
-                })
-                .AddTransientHttpErrorPolicy(b =>
-                    b.OrResult(r => r.StatusCode == HttpStatusCode.TooManyRequests)
-                        .WaitAndRetryAsync(5, i => i * TimeSpan.FromSeconds(3)));
+            services.AddHttpClient<IListRepository, ListRepository>().AddTransientHttpErrorPolicy(b =>
+                b.OrResult(r => r.StatusCode == HttpStatusCode.TooManyRequests)
+                    .WaitAndRetryAsync(5, i => i * TimeSpan.FromSeconds(3)));
         }
 
         private static void AddArchiveRepository(this IServiceCollection services)
