@@ -10,7 +10,6 @@ using FilterLists.Agent.Core.Interfaces.Repositories;
 using FilterLists.Agent.Extensions;
 using FilterLists.Agent.Features.Urls.Models.DataFileUrls;
 using FilterLists.Agent.Features.Urls.Models.ValidationResults;
-using FilterLists.Agent.Infrastructure.Clients;
 using JetBrains.Annotations;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
@@ -30,12 +29,12 @@ namespace FilterLists.Agent.Infrastructure.Repositories
             {nameof(SyntaxUrls), "syntaxes"}
         };
 
-        private readonly IFilterListsApiClient _apiClient;
+        private readonly IRestClient _apiClient;
         private readonly HttpClient _httpClient;
         private readonly IStringLocalizer<UrlRepository> _localizer;
         private readonly ILogger<UrlRepository> _logger;
 
-        public UrlRepository(IFilterListsApiClient apiClient, HttpClient httpClient,
+        public UrlRepository(IRestClient apiClient, HttpClient httpClient,
             IStringLocalizer<UrlRepository> stringLocalizer, ILogger<UrlRepository> logger)
         {
             _apiClient = apiClient;
@@ -55,8 +54,11 @@ namespace FilterLists.Agent.Infrastructure.Repositories
             if (!EntityUrlsEndpoints.ContainsKey(typeof(TModel).Name))
                 throw new InvalidEnumArgumentException(_localizer["The type of TModel is not valid."]);
             var request = new RestRequest($"{EntityUrlsEndpoints[typeof(TModel).Name]}/seed");
-            var response = await _apiClient.ExecuteAsync<IEnumerable<TModel>>(request, cancellationToken);
-            return response.SelectMany(r =>
+            var response = await _apiClient.ExecuteTaskAsync<IEnumerable<TModel>>(request, cancellationToken);
+            if (response.ErrorException != null)
+                _logger.LogError(response.ErrorException,
+                    _localizer["Error retrieving response from the FilterLists API."]);
+            return response.Data.SelectMany(r =>
                 r.GetType().GetProperties().Where(p => p.GetValue(r) != null).Select(p => (Uri)p.GetValue(r)));
         }
 
