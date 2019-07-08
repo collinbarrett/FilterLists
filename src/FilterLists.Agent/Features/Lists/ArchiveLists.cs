@@ -24,7 +24,7 @@ namespace FilterLists.Agent.Features.Lists
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                var lists = await _repo.GetAllAsync();
+                var lists = await _repo.GetAllAsync(cancellationToken);
                 await _mediator.Send(new DownloadLists.Command(lists), cancellationToken);
                 await _mediator.Send(new CommitLists.Command(), cancellationToken);
             }

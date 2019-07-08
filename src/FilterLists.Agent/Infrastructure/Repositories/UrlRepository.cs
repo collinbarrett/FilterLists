@@ -50,16 +50,15 @@ namespace FilterLists.Agent.Infrastructure.Repositories
             _logger = logger;
         }
 
-        public async Task<IEnumerable<Uri>> GetAllAsync<TModel>()
+        public async Task<IEnumerable<Uri>> GetAllAsync<TModel>(CancellationToken cancellationToken)
         {
             if (!EntityUrlsEndpoints.ContainsKey(typeof(TModel).Name))
                 throw new InvalidEnumArgumentException(_localizer["The type of TModel is not valid."]);
             var request = new RestRequest($"{EntityUrlsEndpoints[typeof(TModel).Name]}/seed");
-            var response = await _apiClient.ExecuteAsync<IEnumerable<TModel>>(request);
+            var response = await _apiClient.ExecuteAsync<IEnumerable<TModel>>(request, cancellationToken);
             return response.SelectMany(r =>
                 r.GetType().GetProperties().Where(p => p.GetValue(r) != null).Select(p => (Uri)p.GetValue(r)));
         }
-
 
         public async Task<UrlValidationResult> ValidateAsync(Uri u, CancellationToken cancellationToken)
         {

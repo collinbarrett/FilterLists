@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Entities;
 using FilterLists.Agent.Core.Interfaces.Repositories;
@@ -16,10 +17,10 @@ namespace FilterLists.Agent.Infrastructure.Repositories
             _apiClient = apiClient;
         }
 
-        public async Task<IEnumerable<ListInfo>> GetAllAsync()
+        public async Task<IEnumerable<ListInfo>> GetAllAsync(CancellationToken cancellationToken)
         {
             var listsRequest = new RestRequest("lists");
-            return await _apiClient.ExecuteAsync<IEnumerable<ListInfo>>(listsRequest);
+            return await _apiClient.ExecuteAsync<IEnumerable<ListInfo>>(listsRequest, cancellationToken);
         }
     }
 }

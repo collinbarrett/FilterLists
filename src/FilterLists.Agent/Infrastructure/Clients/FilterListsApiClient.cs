@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.AppSettings;
 using Microsoft.Extensions.Localization;
@@ -19,9 +20,9 @@ namespace FilterLists.Agent.Infrastructure.Clients
             _restClient = new RestClient(filterListsApiOptions.Value.BaseUrl) {UserAgent = "FilterLists.Agent"};
         }
 
-        public async Task<TResponse> ExecuteAsync<TResponse>(IRestRequest request)
+        public async Task<TResponse> ExecuteAsync<TResponse>(IRestRequest request, CancellationToken cancellationToken)
         {
-            var response = await _restClient.ExecuteTaskAsync<TResponse>(request);
+            var response = await _restClient.ExecuteTaskAsync<TResponse>(request, cancellationToken);
             if (response.ErrorException == null)
                 return response.Data;
             throw new ApplicationException(_localizer["Error retrieving response from the FilterLists API."],

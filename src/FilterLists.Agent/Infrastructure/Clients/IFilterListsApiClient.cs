@@ -1,10 +1,11 @@
-﻿using System.Threading.Tasks;
+﻿using System.Threading;
+using System.Threading.Tasks;
 using RestSharp;
 
 namespace FilterLists.Agent.Infrastructure.Clients
 {
     public interface IFilterListsApiClient
     {
-        Task<TResponse> ExecuteAsync<TResponse>(IRestRequest request);
+        Task<TResponse> ExecuteAsync<TResponse>(IRestRequest request, CancellationToken cancellationToken);
     }
 }
