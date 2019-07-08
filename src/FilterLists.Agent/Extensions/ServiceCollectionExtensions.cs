@@ -4,10 +4,8 @@ using System.Net.Http;
 using CommandLine;
 using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Core.Interfaces.Repositories;
-using FilterLists.Agent.Core.Interfaces.Services;
 using FilterLists.Agent.Infrastructure.Clients;
 using FilterLists.Agent.Infrastructure.Repositories;
-using FilterLists.Agent.Infrastructure.Services;
 using LibGit2Sharp;
 using MediatR;
 using Microsoft.Extensions.Configuration;
@@ -32,11 +30,10 @@ namespace FilterLists.Agent.Extensions
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
             services.AddGitHubClient();
-            services.AddUrlService();
+            services.AddUrlRepository();
             services.AddListRepository();
             services.AddArchiveRepository();
             services.AddTransient<IListInfoRepository, ListInfoRepository>();
-            services.AddTransient<IUrlRepository, UrlRepository>();
             services.AddTransient<IGitHubIssuesRepository, GitHubIssuesRepository>();
         }
 
@@ -86,9 +83,9 @@ namespace FilterLists.Agent.Extensions
             });
         }
 
-        private static void AddUrlService(this IServiceCollection services)
+        private static void AddUrlRepository(this IServiceCollection services)
         {
-            services.AddHttpClient<IUrlService, UrlService>()
+            services.AddHttpClient<IUrlRepository, UrlRepository>()
                 .ConfigureHttpMessageHandlerBuilder(b =>
                 {
                     b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};

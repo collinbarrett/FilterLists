@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
-using FilterLists.Agent.Core.Interfaces.Services;
+using FilterLists.Agent.Core.Interfaces.Repositories;
 using FilterLists.Agent.Extensions;
 using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 using MediatR;
@@ -26,11 +26,11 @@ namespace FilterLists.Agent.Features.Urls
         public class Handler : IRequestHandler<Command, List<UrlValidationResult>>
         {
             private const int MaxDegreeOfParallelism = 5;
-            private readonly IUrlService _urlService;
+            private readonly IUrlRepository _repo;
 
-            public Handler(IUrlService urlService)
+            public Handler(IUrlRepository urlRepository)
             {
-                _urlService = urlService;
+                _repo = urlRepository;
             }
 
             public async Task<List<UrlValidationResult>> Handle(Command request, CancellationToken cancellationToken)
@@ -55,7 +55,7 @@ namespace FilterLists.Agent.Features.Urls
             private TransformBlock<Uri, UrlValidationResult> BuildValidator(CancellationToken cancellationToken)
             {
                 return new TransformBlock<Uri, UrlValidationResult>(
-                    async u => await _urlService.ValidateAsync(u, cancellationToken),
+                    async u => await _repo.ValidateAsync(u, cancellationToken),
                     new ExecutionDataflowBlockOptions {MaxDegreeOfParallelism = MaxDegreeOfParallelism}
                 );
             }
