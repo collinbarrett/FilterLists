@@ -32,8 +32,8 @@ namespace FilterLists.Agent.Extensions
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
             services.AddGitHubClient();
-            services.AddListService();
             services.AddUrlService();
+            services.AddListRepository();
             services.AddArchiveRepository();
             services.AddTransient<IListInfoRepository, ListInfoRepository>();
             services.AddTransient<IUrlRepository, UrlRepository>();
@@ -86,9 +86,9 @@ namespace FilterLists.Agent.Extensions
             });
         }
 
-        private static void AddListService(this IServiceCollection services)
+        private static void AddUrlService(this IServiceCollection services)
         {
-            services.AddHttpClient<IListService, ListService>()
+            services.AddHttpClient<IUrlService, UrlService>()
                 .ConfigureHttpMessageHandlerBuilder(b =>
                 {
                     b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
@@ -99,9 +99,9 @@ namespace FilterLists.Agent.Extensions
                         .WaitAndRetryAsync(5, i => i * TimeSpan.FromSeconds(3)));
         }
 
-        private static void AddUrlService(this IServiceCollection services)
+        private static void AddListRepository(this IServiceCollection services)
         {
-            services.AddHttpClient<IUrlService, UrlService>()
+            services.AddHttpClient<IListRepository, ListRepository>()
                 .ConfigureHttpMessageHandlerBuilder(b =>
                 {
                     b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};

@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Entities;
-using FilterLists.Agent.Core.Interfaces.Services;
+using FilterLists.Agent.Core.Interfaces.Repositories;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using SharpCompress.Common;
@@ -29,9 +29,9 @@ namespace FilterLists.Agent.Features.Lists
             private readonly HttpClient _httpClient;
             private readonly ILogger<Handler> _logger;
 
-            public Handler(IListService listService, ILogger<Handler> logger)
+            public Handler(IListRepository listRepository, ILogger<Handler> logger)
             {
-                _httpClient = listService.HttpClient;
+                _httpClient = listRepository.HttpClient;
                 _logger = logger;
             }
 

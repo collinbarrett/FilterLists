@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using FilterLists.Agent.Core.Interfaces.Services;
+using FilterLists.Agent.Core.Interfaces.Repositories;
 using JetBrains.Annotations;
 
-namespace FilterLists.Agent.Infrastructure.Services
+namespace FilterLists.Agent.Infrastructure.Repositories
 {
     [UsedImplicitly]
-    public class ListService : IListService
+    public class ListRepository : IListRepository
     {
-        public ListService(HttpClient client)
+        public ListRepository(HttpClient client)
         {
             client.Timeout = TimeSpan.FromSeconds(90);
 
