@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Entities;
-using FilterLists.Agent.Core.Interfaces.Clients;
 using FilterLists.Agent.Core.Interfaces.Repositories;
+using FilterLists.Agent.Infrastructure.Clients;
 using RestSharp;
 
 namespace FilterLists.Agent.Infrastructure.Repositories

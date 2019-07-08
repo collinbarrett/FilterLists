@@ -3,7 +3,6 @@ using System.Net;
 using System.Net.Http;
 using CommandLine;
 using FilterLists.Agent.AppSettings;
-using FilterLists.Agent.Core.Interfaces.Clients;
 using FilterLists.Agent.Core.Interfaces.Repositories;
 using FilterLists.Agent.Core.Interfaces.Services;
 using FilterLists.Agent.Infrastructure.Clients;

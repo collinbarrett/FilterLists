@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
 using FilterLists.Agent.AppSettings;
-using FilterLists.Agent.Core.Interfaces.Clients;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Options;
 using RestSharp;
