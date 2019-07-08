@@ -1,8 +1,8 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.AppSettings;
 using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using RestSharp;
 
@@ -11,12 +11,14 @@ namespace FilterLists.Agent.Infrastructure.Clients
     public class FilterListsApiClient : IFilterListsApiClient
     {
         private readonly IStringLocalizer<FilterListsApiClient> _localizer;
+        private readonly ILogger<FilterListsApiClient> _logger;
         private readonly IRestClient _restClient;
 
         public FilterListsApiClient(IStringLocalizer<FilterListsApiClient> stringLocalizer,
-            IOptions<FilterListsApiSettings> filterListsApiOptions)
+            ILogger<FilterListsApiClient> logger, IOptions<FilterListsApiSettings> filterListsApiOptions)
         {
             _localizer = stringLocalizer;
+            _logger = logger;
             _restClient = new RestClient(filterListsApiOptions.Value.BaseUrl) {UserAgent = "FilterLists.Agent"};
         }
 
@@ -24,9 +26,9 @@ namespace FilterLists.Agent.Infrastructure.Clients
         {
             var response = await _restClient.ExecuteTaskAsync<TResponse>(request, cancellationToken);
             if (response.ErrorException == null)
-                return response.Data;
-            throw new ApplicationException(_localizer["Error retrieving response from the FilterLists API."],
-                response.ErrorException);
+                _logger.LogError(response.ErrorException,
+                    _localizer["Error retrieving response from the FilterLists API."]);
+            return response.Data;
         }
     }
 }
