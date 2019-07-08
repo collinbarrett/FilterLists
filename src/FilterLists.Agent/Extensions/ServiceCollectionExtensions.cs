@@ -4,7 +4,6 @@ using System.Net.Http;
 using CommandLine;
 using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Core.Interfaces.Repositories;
-using FilterLists.Agent.Infrastructure.Clients;
 using FilterLists.Agent.Infrastructure.Repositories;
 using LibGit2Sharp;
 using MediatR;
@@ -14,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Octokit;
 using Polly;
+using RestSharp;
 using Credentials = Octokit.Credentials;
 using Repository = LibGit2Sharp.Repository;
 
@@ -28,7 +28,7 @@ namespace FilterLists.Agent.Extensions
             services.AddLocalization();
             services.AddTransient<Parser>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
-            services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
+            services.AddApiClient();
             services.AddGitHubClient();
             services.AddUrlRepository();
             services.AddListRepository();
@@ -68,6 +68,15 @@ namespace FilterLists.Agent.Extensions
                 var applicationInsightsSettings = b.Services.BuildServiceProvider()
                     .GetService<IOptions<ApplicationInsightsSettings>>().Value;
                 b.AddApplicationInsights(applicationInsightsSettings.InstrumentationKey);
+            });
+        }
+
+        private static void AddApiClient(this IServiceCollection services)
+        {
+            services.AddSingleton<IRestClient>(b =>
+            {
+                var filterListsApiSettings = b.GetService<IOptions<FilterListsApiSettings>>().Value;
+                return new RestClient(filterListsApiSettings.BaseUrl) {UserAgent = "FilterLists.Agent"};
             });
         }
 
