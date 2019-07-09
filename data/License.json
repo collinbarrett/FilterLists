@@ -1,17 +1,16 @@
-﻿[
+[
   {
     "id": 1,
-    "descriptionUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-    "name": "CC BY-NC-ND 4.0",
-    "permissiveAdaptation": false,
-    "permissiveCommercial": false
+    "name": "Public Domain",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
   },
   {
     "id": 2,
-    "descriptionUrl": "https://opensource.org/licenses/MIT",
-    "name": "The MIT License",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
+    "descriptionUrl": "https://en.wikipedia.org/wiki/All_rights_reserved",
+    "name": "All Rights Reserved",
+    "permissiveAdaptation": false,
+    "permissiveCommercial": false
   },
   {
     "id": 3,
@@ -21,77 +20,48 @@
   },
   {
     "id": 4,
-    "descriptionUrl": "https://www.gnu.org/licenses/gpl-3.0.en.html",
-    "name": "GPLv3",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
-  },
-  {
-    "id": 5,
-    "descriptionUrl": "https://en.wikipedia.org/wiki/All_rights_reserved",
-    "name": "All Rights Reserved",
-    "permissiveAdaptation": false,
-    "permissiveCommercial": false
-  },
-  {
-    "id": 6,
-    "descriptionUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
-    "name": "CC BY-NC-SA 3.0",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": false
-  },
-  {
-    "id": 7,
     "name": "Permissive",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
   },
   {
-    "id": 8,
+    "id": 5,
+    "name": "Permissive but non-commercial",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": false
+  },
+  {
+    "id": 10,
+    "descriptionUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "name": "CC0 1.0 Universal",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 11,
+    "descriptionUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "CC BY 4.0",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 12,
+    "descriptionUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "name": "CC BY 3.0",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 13,
     "descriptionUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "name": "CC BY-SA 4.0",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
   },
   {
-    "id": 9,
-    "descriptionUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "name": "CC BY-NC-SA 4.0",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": false
-  },
-  {
-    "id": 10,
-    "descriptionUrl": "https://opensource.org/licenses/BSD-3-Clause",
-    "name": "BSD-3-Clause",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
-  },
-  {
-    "id": 11,
-    "descriptionUrl": "https://unlicense.org/",
-    "name": "The Unlicense",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
-  },
-  {
-    "id": 12,
+    "id": 14,
     "descriptionUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "name": "CC BY-SA 3.0",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
-  },
-  {
-    "id": 13,
-    "descriptionUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
-    "name": "CC BY-NC 4.0",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": false
-  },
-  {
-    "id": 14,
-    "descriptionUrl": "http://www.wtfpl.net/",
-    "name": "Do What The Fuck You Want To Public License (WTFPL)",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
   },
@@ -104,133 +74,219 @@
   },
   {
     "id": 16,
-    "descriptionUrl": "https://creativecommons.org/licenses/by/3.0/",
-    "name": "CC BY 3.0",
-    "permissiveAdaptation": true,
+    "descriptionUrl": "https://creativecommons.org/licenses/by-nd/3.0/",
+    "name": "CC BY-ND 3.0",
+    "permissiveAdaptation": false,
     "permissiveCommercial": true
   },
   {
     "id": 17,
-    "descriptionUrl": "https://opensource.org/licenses/ISC",
-    "name": "ISC",
+    "descriptionUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "name": "CC BY-NC 4.0",
     "permissiveAdaptation": true,
-    "permissiveCommercial": true
+    "permissiveCommercial": false
   },
   {
     "id": 18,
-    "descriptionUrl": "https://www.apache.org/licenses/LICENSE-2.0",
-    "name": "Apache 2.0",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
-  },
-  {
-    "id": 19,
-    "descriptionUrl": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
-    "name": "GPLv2",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
-  },
-  {
-    "id": 20,
-    "name": "Public Domain",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
-  },
-  {
-    "id": 21,
-    "descriptionUrl": "https://osint.bambenekconsulting.com/license.txt",
-    "name": "OSINT",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
-  },
-  {
-    "id": 22,
-    "descriptionUrl": "https://raw.githubusercontent.com/googlehosts/hosts/master/LICENSE",
-    "name": "GoogleHosts",
-    "permissiveAdaptation": false,
-    "permissiveCommercial": false
-  },
-  {
-    "id": 23,
-    "descriptionUrl": "https://dbad-license.org/",
-    "name": "\"Don't Be A Dick\" Public License",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
-  },
-  {
-    "id": 24,
-    "descriptionUrl": "https://creativecommons.org/licenses/by/4.0/",
-    "name": "CC BY 4.0",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
-  },
-  {
-    "id": 25,
-    "descriptionUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
-    "name": "CC BY-NC-SA 2.5",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": false
-  },
-  {
-    "id": 26,
-    "descriptionUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
-    "name": "CC BY-NC-ND 3.0",
-    "permissiveAdaptation": false,
-    "permissiveCommercial": false
-  },
-  {
-    "id": 27,
-    "descriptionUrl": "https://opensource.org/licenses/BSD-2-Clause",
-    "name": "BSD-2-Clause",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
-  },
-  {
-    "id": 28,
-    "descriptionUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "name": "CC0 1.0 Universal",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
-  },
-  {
-    "id": 29,
-    "descriptionUrl": "https://spdx.org/licenses/Beerware.html",
-    "name": "The Beer-Ware License",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
-  },
-  {
-    "id": 30,
-    "descriptionUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
-    "name": "CC BY-SA 2.1 JP",
-    "permissiveAdaptation": true,
-    "permissiveCommercial": true
-  },
-  {
-    "id": 31,
     "descriptionUrl": "https://creativecommons.org/licenses/by-nc/3.0/",
     "name": "CC BY-NC 3.0",
     "permissiveAdaptation": true,
     "permissiveCommercial": false
   },
   {
-    "id": 32,
-    "name": "Permissive but non-commercial",
+    "id": 19,
+    "descriptionUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "name": "CC BY-NC-SA 4.0",
     "permissiveAdaptation": true,
     "permissiveCommercial": false
   },
   {
+    "id": 20,
+    "descriptionUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "name": "CC BY-NC-SA 3.0",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": false
+  },
+  {
+    "id": 21,
+    "descriptionUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "name": "CC BY-NC-ND 4.0",
+    "permissiveAdaptation": false,
+    "permissiveCommercial": false
+  },
+  {
+    "id": 22,
+    "descriptionUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "name": "CC BY-NC-ND 3.0",
+    "permissiveAdaptation": false,
+    "permissiveCommercial": false
+  },
+  {
+    "id": 23,
+    "descriptionUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+    "name": "CC BY-NC-SA 2.5",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": false
+  },
+  {
+    "id": 24,
+    "descriptionUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+    "name": "CC BY-SA 2.1 JP",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 30,
+    "descriptionUrl": "https://www.gnu.org/licenses/gpl-3.0.en.html",
+    "name": "GPLv3",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 31,
+    "descriptionUrl": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+    "name": "GPLv2",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 32,
+    "descriptionUrl": "https://www.gnu.org/licenses/lgpl-3.0.en.html",
+    "name": "Lesser GPL v3",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
     "id": 33,
-    "descriptionUrl": "https://www.mozilla.org/MPL/2.0/",
-    "name": "Mozilla Public License, version 2.0",
+    "descriptionUrl": "https://www.gnu.org/licenses/lgpl-2.1.en.html",
+    "name": "Lesser GPL v2.1",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
   },
   {
     "id": 34,
-    "descriptionUrl": "https://www.gnu.org/licenses/lgpl-3.0.en.html",
-    "name": "Lesser GPL v3",
+    "descriptionUrl": "https://www.gnu.org/licenses/agpl-3.0.en.html",
+    "name": "AGPL v3",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
+  },
+  {
+    "id": 40,
+    "descriptionUrl": "https://opensource.org/licenses/BSD-3-Clause",
+    "name": "BSD-3-Clause",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 41,
+    "descriptionUrl": "https://opensource.org/licenses/BSD-2-Clause",
+    "name": "BSD-2-Clause",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 42,
+    "descriptionUrl": "https://opensource.org/licenses/0BSD",
+    "name": "BSD-0-Clause",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 50,
+    "descriptionUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "name": "Apache 2.0",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 51,
+    "descriptionUrl": "https://www.apache.org/licenses/LICENSE-1.1",
+    "name": "Apache 1.1",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 52,
+    "descriptionUrl": "https://www.apache.org/licenses/LICENSE-1.0",
+    "name": "Apache 1.0",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 60,
+    "descriptionUrl": "https://www.mozilla.org/MPL/2.0/",
+    "name": "Mozilla Public License v2.0",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 61,
+    "descriptionUrl": "https://www.mozilla.org/MPL/1.1/",
+    "name": "Mozilla Public License v1.1",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 62,
+    "descriptionUrl": "https://www.mozilla.org/MPL/1.0/",
+    "name": "Mozilla Public License v1.0",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 70,
+    "descriptionUrl": "https://opensource.org/licenses/MIT",
+    "name": "The MIT License",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 71,
+    "descriptionUrl": "https://unlicense.org/",
+    "name": "The Unlicense",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 72,
+    "descriptionUrl": "http://www.wtfpl.net/",
+    "name": "WTFPL",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 73,
+    "descriptionUrl": "https://opensource.org/licenses/ISC",
+    "name": "ISC",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 74,
+    "descriptionUrl": "https://dbad-license.org/",
+    "name": "\"Don't Be A Dick\" Public License",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 75,
+    "descriptionUrl": "https://spdx.org/licenses/Beerware.html",
+    "name": "The Beer-Ware License",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 100,
+    "descriptionUrl": "https://osint.bambenekconsulting.com/license.txt",
+    "name": "OSINT",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 101,
+    "descriptionUrl": "https://raw.githubusercontent.com/googlehosts/hosts/master/LICENSE",
+    "name": "GoogleHosts",
+    "permissiveAdaptation": false,
+    "permissiveCommercial": false
   }
 ]
