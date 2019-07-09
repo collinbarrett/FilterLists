@@ -3,7 +3,6 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core;
 using FilterLists.Agent.Core.List;
 using FilterLists.Agent.Extensions;
 using MediatR;
