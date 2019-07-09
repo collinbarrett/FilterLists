@@ -17382,5 +17382,210 @@
     "syntaxId": 1,
     "updatedDate": "2019-03-13T15:29:12",
     "viewUrl": "https://www.github.developerdan.com/hosts/lists/amp-hosts-extended.txt"
+  },
+  {
+    "id": 1640,
+    "description": "\"uMatrix Recipes\" is a collection of rules that you can use to fix some popular websites by whitelisting the 3rd-party requests that are critical for the websites to function.",
+    "homeUrl": "https://github.com/kristerkari/umatrix-recipes",
+    "issuesUrl": "https://github.com/kristerkari/umatrix-recipes/issues",
+    "name": "Krister Kari's uMatrix Recipes",
+    "publishedDate": "2017-09-20T00:00:00",
+    "syntaxId": 7,
+    "updatedDate": "2018-03-10T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/kristerkari/umatrix-recipes/master/README.md"
+  },
+  {
+    "id": 1641,
+    "description": "These are rules I've exported from my installation of uMatrix. By publishing them on GitHub, I am releasing them into the public domain.",
+    "descriptionSourceUrl": "https://github.com/L2G/umatrix-rules/blob/master/README.md",
+    "homeUrl": "https://github.com/L2G/umatrix-rules",
+    "issuesUrl": "https://github.com/L2G/umatrix-rules/issues",
+    "name": "L2G's uMatrix Rules",
+    "publishedDate": "2017-03-13T00:00:00",
+    "syntaxId": 7,
+    "licenseId": 20,
+    "updatedDate": "2015-06-04T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/L2G/umatrix-rules/master/my-umatrix-rules.txt"
+  },
+  {
+    "id": 1642,
+    "description": "Another custom recipes for uMatrix. Note that I have a custom default setup and not be same like stock or out-of-box settings, please make sure to look the recipe first and also my default settings before apply. I will not responsible about breakage, both from my default settings and recipes, your need to fix by your own or contact experienced users of uMatrix extension.",
+    "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/ruleset/readme.md",
+    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
+    "licenseId": 13,
+    "name": "Ruleset for Thai sites",
+    "syntaxId": 7,
+    "updatedDate": "2019-03-13T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/ruleset/recipes_th.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/ruleset/recipes_th.txt"
+  },
+  {
+    "id": 1643,
+    "description": "Another custom recipes for uMatrix. Note that I have a custom default setup and not be same like stock or out-of-box settings, please make sure to look the recipe first and also my default settings before apply. I will not responsible about breakage, both from my default settings and recipes, your need to fix by your own or contact experienced users of uMatrix extension.",
+    "descriptionSourceUrl": "https://github.com/kowith337/PersonalFilterListCollection/blob/master/ruleset/readme.md",
+    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
+    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
+    "licenseId": 13,
+    "name": "Kowith's Self Custom Ruleset",
+    "syntaxId": 7,
+    "updatedDate": "2019-03-13T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/ruleset/recipes_custom.txt",
+    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/ruleset/recipes_custom.txt"
+  },
+  {
+    "id": 1644,
+    "homeUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets",
+    "issuesUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets/issues",
+    "name": "migueldemoura's uMatrix Recipes",
+    "syntaxId": 7,
+    "licenseId": 8,
+    "viewUrl": "https://raw.githubusercontent.com/migueldemoura/ublock-umatrix-rulesets/master/uMatrix/recipes"
+  },
+  {
+    "id": 1645,
+    "homeUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets",
+    "issuesUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets/issues",
+    "name": "migueldemoura's Hosts - Ads & Tracking",
+    "syntaxId": 1,
+    "licenseId": 8,
+    "viewUrl": "https://raw.githubusercontent.com/migueldemoura/ublock-umatrix-rulesets/master/Hosts/ads-tracking"
+  },
+  {
+    "id": 1646,
+    "homeUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets",
+    "issuesUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets/issues",
+    "name": "migueldemoura's Hosts - Ads & Tracking - Breaking",
+    "syntaxId": 1,
+    "licenseId": 8,
+    "viewUrl": "https://raw.githubusercontent.com/migueldemoura/ublock-umatrix-rulesets/master/Hosts/ads-tracking-breaking"
+  },
+  {
+    "id": 1647,
+    "homeUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets",
+    "issuesUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets/issues",
+    "name": "migueldemoura's Hosts - Malware",
+    "syntaxId": 1,
+    "licenseId": 8,
+    "viewUrl": "https://raw.githubusercontent.com/migueldemoura/ublock-umatrix-rulesets/master/Hosts/malware"
+  },
+  {
+    "id": 1648,
+    "homeUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets",
+    "issuesUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets/issues",
+    "name": "migueldemoura's uBlock List",
+    "syntaxId": 4,
+    "licenseId": 8,
+    "viewUrl": "https://raw.githubusercontent.com/migueldemoura/ublock-umatrix-rulesets/master/uBlock/list"
+  },
+  {
+    "id": 1649,
+    "homeUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets",
+    "issuesUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets/issues",
+    "name": "migueldemoura's uBlock List - Facebook Groups-Events",
+    "syntaxId": 4,
+    "licenseId": 8,
+    "viewUrl": "https://raw.githubusercontent.com/migueldemoura/ublock-umatrix-rulesets/master/uBlock/facebook/groups-events"
+  },
+  {
+    "id": 1650,
+    "homeUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets",
+    "issuesUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets/issues",
+    "name": "migueldemoura's uBlock List - Facebook Messenger",
+    "syntaxId": 28,
+    "licenseId": 8,
+    "viewUrl": "https://raw.githubusercontent.com/migueldemoura/ublock-umatrix-rulesets/master/uBlock/facebook/messenger"
+  },
+  {
+    "id": 1651,
+    "homeUrl": "https://github.com/themagicteeth/umatrix-recipes",
+    "issuesUrl": "https://github.com/themagicteeth/umatrix-recipes/issues",
+    "name": "thematrixteeth's uMatrix Recipes",
+    "syntaxId": 7,
+    "updatedDate": "2018-03-05T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/themagicteeth/umatrix-recipes/master/recipes.txt"
+  },
+  {
+    "id": 1652,
+    "homeUrl": "https://github.com/dfkt/umatrix-rules",
+    "issuesUrl": "https://github.com/dfkt/umatrix-rules/issues",
+    "name": "dfkt's uMatrix Rules",
+    "syntaxId": 7,
+    "updatedDate": "2016-01-28T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/dfkt/umatrix-rules/master/my-umatrix-rules.txt"
+  },
+  {
+    "id": 1653,
+    "homeUrl": "https://github.com/david1davidson/uMatrixMasterList",
+    "issuesUrl": "https://github.com/david1davidson/uMatrixMasterList/issues",
+    "name": "uMatrix Master List",
+    "syntaxId": 7,
+    "updatedDate": "2016-01-28T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/david1davidson/uMatrixMasterList/master/ruleset.txt"
+  },
+  {
+    "id": 1654,
+    "homeUrl": "https://github.com/TechGeeksIO/umatrix-recipes",
+    "issuesUrl": "https://github.com/TechGeeksIO/umatrix-recipes/issues",
+    "name": "TechGeeks.io uMatrix Recipes - starting",
+    "syntaxId": 7,
+    "licenseId": 34,
+    "updatedDate": "2019-06-01T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/TechGeeksIO/umatrix-recipes/master/main-ruleset.txt"
+  },
+  {
+    "id": 1655,
+    "homeUrl": "https://github.com/TechGeeksIO/umatrix-recipes",
+    "issuesUrl": "https://github.com/TechGeeksIO/umatrix-recipes/issues",
+    "name": "TechGeeks.io uMatrix Recipes - additional rules",
+    "syntaxId": 7,
+    "licenseId": 34,
+    "updatedDate": "2019-06-01T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/TechGeeksIO/umatrix-recipes/master/catalog.txt"
+  },
+  {
+    "id": 1656,
+    "homeUrl": "https://github.com/invasy/umatrix-ruleset",
+    "issuesUrl": "https://github.com/invasy/umatrix-ruleset/issues",
+    "name": "Vasiliy Polyakov's Custom Ruleset Recipes",
+    "syntaxId": 7,
+    "updatedDate": "2019-06-16T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/invasy/umatrix-ruleset/master/ruleset.txt"
+  },
+  {
+    "id": 1657,
+    "homeUrl": "https://github.com/stephengeorgewest/my-umatrix-rules",
+    "issuesUrl": "https://github.com/stephengeorgewest/my-umatrix-rules/issues",
+    "name": "Stephen George West's uMatrix Rules",
+    "syntaxId": 7,
+    "updatedDate": "2016-01-28T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/stephengeorgewest/my-umatrix-rules/master/my-umatrix-rules.txt"
+  },
+  {
+    "id": 1658,
+    "homeUrl": "https://github.com/tranhoangcore/uMatrix-Rules",
+    "issuesUrl": "https://github.com/tranhoangcore/uMatrix-Rules/issues",
+    "name": "Hoang Nguyen's uMatrix Rules",
+    "syntaxId": 7,
+    "updatedDate": "2019-04-13T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/tranhoangcore/uMatrix-Rules/master/my-umatrix-rules.txt"
+  },
+  {
+    "id": 1659,
+    "homeUrl": "https://github.com/dadav/umatrix-rules/",
+    "issuesUrl": "https://github.com/dadav/umatrix-rules/issues",
+    "name": "dadav's uMatrix Rules",
+    "syntaxId": 7,
+    "updatedDate": "2019-04-23T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/dadav/umatrix-rules/master/my-rules.txt"
+  },
+  {
+    "id": 1660,
+    "homeUrl": "https://github.com/bzsparks/uMatrix",
+    "issuesUrl": "https://github.com/bzsparks/uMatrix/issues",
+    "name": "bzspark's uMatrix Rules",
+    "syntaxId": 7,
+    "updatedDate": "2018-06-01T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/dadav/umatrix-rules/master/my-rules.txt"
   }
 ]
