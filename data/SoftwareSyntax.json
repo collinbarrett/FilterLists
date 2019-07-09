@@ -1,374 +1,346 @@
 [
   {
     "softwareId": 1,
-    "syntaxId": 1
-  },
-  {
-    "softwareId": 4,
-    "syntaxId": 1
-  },
-  {
-    "softwareId": 5,
-    "syntaxId": 1
-  },
-  {
-    "softwareId": 7,
-    "syntaxId": 1
-  },
-  {
-    "softwareId": 11,
-    "syntaxId": 1
-  },
-  {
-    "softwareId": 12,
-    "syntaxId": 1
-  },
-  {
-    "softwareId": 14,
-    "syntaxId": 1
-  },
-  {
-    "softwareId": 22,
-    "syntaxId": 1
-  },
-  {
-    "softwareId": 25,
-    "syntaxId": 1
-  },
-  {
-    "softwareId": 26,
-    "syntaxId": 1
-  },
-  {
-    "softwareId": 27,
-    "syntaxId": 1
-  },
-  {
-    "softwareId": 28,
-    "syntaxId": 1
-  },
-  {
-    "softwareId": 31,
-    "syntaxId": 1
-  },
-  {
-    "softwareId": 32,
-    "syntaxId": 1
-  },
-  {
-    "softwareId": 1,
-    "syntaxId": 2
-  },
-  {
-    "softwareId": 5,
-    "syntaxId": 2
-  },
-  {
-    "softwareId": 8,
-    "syntaxId": 2
-  },
-  {
-    "softwareId": 14,
-    "syntaxId": 2
-  },
-  {
-    "softwareId": 17,
-    "syntaxId": 2
-  },
-  {
-    "softwareId": 19,
-    "syntaxId": 2
-  },
-  {
-    "softwareId": 25,
-    "syntaxId": 2
-  },
-  {
-    "softwareId": 27,
-    "syntaxId": 2
-  },
-  {
-    "softwareId": 28,
-    "syntaxId": 2
-  },
-  {
-    "softwareId": 31,
-    "syntaxId": 2
-  },
-  {
-    "softwareId": 32,
-    "syntaxId": 2
-  },
-  {
-    "softwareId": 1,
-    "syntaxId": 3
-  },
-  {
-    "softwareId": 2,
-    "syntaxId": 3
-  },
-  {
-    "softwareId": 3,
-    "syntaxId": 3
-  },
-  {
-    "softwareId": 5,
-    "syntaxId": 3
-  },
-  {
-    "softwareId": 6,
-    "syntaxId": 3
-  },
-  {
-    "softwareId": 24,
-    "syntaxId": 3
-  },
-  {
-    "softwareId": 32,
-    "syntaxId": 3
-  },
-  {
-    "softwareId": 1,
-    "syntaxId": 4
-  },
-  {
-    "softwareId": 3,
-    "syntaxId": 4
-  },
-  {
-    "softwareId": 5,
-    "syntaxId": 4
-  },
-  {
-    "softwareId": 32,
-    "syntaxId": 4
-  },
-  {
-    "softwareId": 1,
-    "syntaxId": 6
-  },
-  {
-    "softwareId": 3,
-    "syntaxId": 6
-  },
-  {
-    "softwareId": 5,
-    "syntaxId": 6
-  },
-  {
-    "softwareId": 32,
-    "syntaxId": 6
-  },
-  {
-    "softwareId": 1,
-    "syntaxId": 7
-  },
-  {
-    "softwareId": 5,
-    "syntaxId": 7
-  },
-  {
-    "softwareId": 25,
-    "syntaxId": 7
-  },
-  {
-    "softwareId": 32,
-    "syntaxId": 7
-  },
-  {
-    "softwareId": 1,
-    "syntaxId": 8
-  },
-  {
-    "softwareId": 5,
-    "syntaxId": 8
-  },
-  {
-    "softwareId": 32,
-    "syntaxId": 8
-  },
-  {
-    "softwareId": 1,
-    "syntaxId": 9
-  },
-  {
-    "softwareId": 5,
-    "syntaxId": 9
-  },
-  {
-    "softwareId": 18,
-    "syntaxId": 9
-  },
-  {
-    "softwareId": 32,
-    "syntaxId": 9
-  },
-  {
-    "softwareId": 16,
     "syntaxId": 10
   },
   {
-    "softwareId": 10,
-    "syntaxId": 11
+    "softwareId": 4,
+    "syntaxId": 10
   },
   {
     "softwareId": 5,
-    "syntaxId": 12
-  },
-  {
-    "softwareId": 1,
-    "syntaxId": 13
-  },
-  {
-    "softwareId": 5,
-    "syntaxId": 13
-  },
-  {
-    "softwareId": 13,
-    "syntaxId": 13
-  },
-  {
-    "softwareId": 32,
-    "syntaxId": 13
+    "syntaxId": 10
   },
   {
     "softwareId": 7,
-    "syntaxId": 14
+    "syntaxId": 10
   },
   {
     "softwareId": 11,
-    "syntaxId": 14
+    "syntaxId": 10
   },
   {
     "softwareId": 12,
-    "syntaxId": 14
+    "syntaxId": 10
+  },
+  {
+    "softwareId": 14,
+    "syntaxId": 10
+  },
+  {
+    "softwareId": 22,
+    "syntaxId": 10
+  },
+  {
+    "softwareId": 25,
+    "syntaxId": 10
+  },
+  {
+    "softwareId": 26,
+    "syntaxId": 10
+  },
+  {
+    "softwareId": 27,
+    "syntaxId": 10
+  },
+  {
+    "softwareId": 28,
+    "syntaxId": 10
   },
   {
     "softwareId": 31,
-    "syntaxId": 14
+    "syntaxId": 10
   },
   {
-    "softwareId": 18,
-    "syntaxId": 15
+    "softwareId": 32,
+    "syntaxId": 10
   },
   {
     "softwareId": 1,
-    "syntaxId": 16
+    "syntaxId": 20
   },
   {
     "softwareId": 5,
-    "syntaxId": 16
+    "syntaxId": 20
+  },
+  {
+    "softwareId": 8,
+    "syntaxId": 20
+  },
+  {
+    "softwareId": 14,
+    "syntaxId": 20
+  },
+  {
+    "softwareId": 17,
+    "syntaxId": 20
   },
   {
     "softwareId": 19,
-    "syntaxId": 16
+    "syntaxId": 20
+  },
+  {
+    "softwareId": 25,
+    "syntaxId": 20
+  },
+  {
+    "softwareId": 27,
+    "syntaxId": 20
+  },
+  {
+    "softwareId": 28,
+    "syntaxId": 20
   },
   {
     "softwareId": 31,
-    "syntaxId": 16
+    "syntaxId": 20
   },
   {
     "softwareId": 32,
-    "syntaxId": 16
-  },
-  {
-    "softwareId": 1,
-    "syntaxId": 17
-  },
-  {
-    "softwareId": 5,
-    "syntaxId": 17
-  },
-  {
-    "softwareId": 32,
-    "syntaxId": 17
-  },
-  {
-    "softwareId": 20,
-    "syntaxId": 18
-  },
-  {
-    "softwareId": 21,
-    "syntaxId": 19
-  },
-  {
-    "softwareId": 23,
     "syntaxId": 20
   },
   {
     "softwareId": 1,
-    "syntaxId": 21
-  },
-  {
-    "softwareId": 5,
-    "syntaxId": 21
-  },
-  {
-    "softwareId": 32,
-    "syntaxId": 21
-  },
-  {
-    "softwareId": 4,
-    "syntaxId": 22
-  },
-  {
-    "softwareId": 26,
-    "syntaxId": 22
-  },
-  {
-    "softwareId": 28,
-    "syntaxId": 22
-  },
-  {
-    "softwareId": 33,
-    "syntaxId": 23
-  },
-  {
-    "softwareId": 29,
-    "syntaxId": 24
-  },
-  {
-    "softwareId": 30,
-    "syntaxId": 25
-  },
-  {
-    "softwareId": 30,
-    "syntaxId": 26
-  },
-  {
-    "softwareId": 34,
-    "syntaxId": 27
-  },
-  {
-    "softwareId": 1,
-    "syntaxId": 28
+    "syntaxId": 2
   },
   {
     "softwareId": 2,
-    "syntaxId": 28
+    "syntaxId": 2
   },
   {
     "softwareId": 3,
-    "syntaxId": 28
+    "syntaxId": 2
   },
   {
     "softwareId": 5,
-    "syntaxId": 28
+    "syntaxId": 2
   },
   {
     "softwareId": 6,
-    "syntaxId": 28
+    "syntaxId": 2
   },
   {
     "softwareId": 24,
-    "syntaxId": 28
-  },
-  {
-    "softwareId": 31,
-    "syntaxId": 28
+    "syntaxId": 2
   },
   {
     "softwareId": 32,
-    "syntaxId": 28
+    "syntaxId": 2
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 4
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 4
+  },
+  {
+    "softwareId": 32,
+    "syntaxId": 4
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 3
+  },
+  {
+    "softwareId": 3,
+    "syntaxId": 3
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 3
+  },
+  {
+    "softwareId": 32,
+    "syntaxId": 3
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 40
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 40
+  },
+  {
+    "softwareId": 25,
+    "syntaxId": 40
+  },
+  {
+    "softwareId": 32,
+    "syntaxId": 40
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 50
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 50
+  },
+  {
+    "softwareId": 32,
+    "syntaxId": 50
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 30
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 30
+  },
+  {
+    "softwareId": 18,
+    "syntaxId": 30
+  },
+  {
+    "softwareId": 32,
+    "syntaxId": 30
+  },
+  {
+    "softwareId": 16,
+    "syntaxId": 51
+  },
+  {
+    "softwareId": 10,
+    "syntaxId": 52
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 5
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 53
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 53
+  },
+  {
+    "softwareId": 13,
+    "syntaxId": 53
+  },
+  {
+    "softwareId": 32,
+    "syntaxId": 53
+  },
+  {
+    "softwareId": 7,
+    "syntaxId": 11
+  },
+  {
+    "softwareId": 11,
+    "syntaxId": 11
+  },
+  {
+    "softwareId": 12,
+    "syntaxId": 11
+  },
+  {
+    "softwareId": 31,
+    "syntaxId": 11
+  },
+  {
+    "softwareId": 18,
+    "syntaxId": 31
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 21
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 21
+  },
+  {
+    "softwareId": 19,
+    "syntaxId": 21
+  },
+  {
+    "softwareId": 31,
+    "syntaxId": 21
+  },
+  {
+    "softwareId": 32,
+    "syntaxId": 21
+  },
+  {
+    "softwareId": 20,
+    "syntaxId": 54
+  },
+  {
+    "softwareId": 21,
+    "syntaxId": 55
+  },
+  {
+    "softwareId": 23,
+    "syntaxId": 56
+  },
+  {
+    "softwareId": 4,
+    "syntaxId": 57
+  },
+  {
+    "softwareId": 26,
+    "syntaxId": 57
+  },
+  {
+    "softwareId": 28,
+    "syntaxId": 57
+  },
+  {
+    "softwareId": 33,
+    "syntaxId": 12
+  },
+  {
+    "softwareId": 29,
+    "syntaxId": 58
+  },
+  {
+    "softwareId": 30,
+    "syntaxId": 59
+  },
+  {
+    "softwareId": 30,
+    "syntaxId": 60
+  },
+  {
+    "softwareId": 34,
+    "syntaxId": 61
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 1
+  },
+  {
+    "softwareId": 2,
+    "syntaxId": 1
+  },
+  {
+    "softwareId": 3,
+    "syntaxId": 1
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 1
+  },
+  {
+    "softwareId": 6,
+    "syntaxId": 1
+  },
+  {
+    "softwareId": 24,
+    "syntaxId": 1
+  },
+  {
+    "softwareId": 31,
+    "syntaxId": 1
+  },
+  {
+    "softwareId": 32,
+    "syntaxId": 1
   }
 ]
