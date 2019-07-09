@@ -15,7 +15,7 @@ using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using RestSharp;
 
-namespace FilterLists.Agent.Infrastructure.Repositories
+namespace FilterLists.Agent.Infrastructure
 {
     [UsedImplicitly]
     public class UrlRepository : IUrlRepository

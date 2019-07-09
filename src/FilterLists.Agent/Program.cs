@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 using CommandLine;
-using FilterLists.Agent.Extensions;
 using FilterLists.Agent.Features.Lists;
 using FilterLists.Agent.Features.Urls;
+using FilterLists.Agent.Infrastructure.DependencyInjection;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 

@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using Octokit;
 
-namespace FilterLists.Agent.Core
+namespace FilterLists.Agent.Core.GitHub
 {
-    public interface IGitHubIssuesRepository
+    public interface IIssuesRepository
     {
         Task<IReadOnlyList<Issue>> GetAllIssuesAsync(RepositoryIssueRequest repositoryIssueRequest);
 

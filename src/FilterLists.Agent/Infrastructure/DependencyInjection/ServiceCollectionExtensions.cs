@@ -4,21 +4,17 @@ using System.Net.Http;
 using CommandLine;
 using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Core;
-using FilterLists.Agent.Core.ListInfo;
-using FilterLists.Agent.Infrastructure.Repositories;
+using FilterLists.Agent.Infrastructure.FilterListsApi;
+using FilterLists.Agent.Infrastructure.GitHub;
 using LibGit2Sharp;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Octokit;
 using Polly;
-using RestSharp;
-using Credentials = Octokit.Credentials;
-using Repository = LibGit2Sharp.Repository;
 
-namespace FilterLists.Agent.Extensions
+namespace FilterLists.Agent.Infrastructure.DependencyInjection
 {
     public static class ServiceCollectionExtensions
     {
@@ -29,13 +25,11 @@ namespace FilterLists.Agent.Extensions
             services.AddLocalization();
             services.AddTransient<Parser>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
-            services.AddApiClient();
-            services.AddGitHubClient();
+            services.AddFilterListsApiResources();
+            services.AddGitHubResources();
             services.AddUrlRepository();
             services.AddListRepository();
             services.AddArchiveRepository();
-            services.AddTransient<IListInfoRepository, ListInfoRepository>();
-            services.AddTransient<IGitHubIssuesRepository, GitHubIssuesRepository>();
         }
 
         private static void AddConfiguration(this IServiceCollection services)
@@ -69,27 +63,6 @@ namespace FilterLists.Agent.Extensions
                 var applicationInsightsSettings = b.Services.BuildServiceProvider()
                     .GetService<IOptions<ApplicationInsightsSettings>>().Value;
                 b.AddApplicationInsights(applicationInsightsSettings.InstrumentationKey);
-            });
-        }
-
-        private static void AddApiClient(this IServiceCollection services)
-        {
-            services.AddSingleton<IRestClient, RestClient>(b =>
-            {
-                var filterListsApiSettings = b.GetService<IOptions<FilterListsApiSettings>>().Value;
-                return new RestClient(filterListsApiSettings.BaseUrl) {UserAgent = "FilterLists.Agent"};
-            });
-        }
-
-        private static void AddGitHubClient(this IServiceCollection services)
-        {
-            services.AddSingleton<IGitHubClient, GitHubClient>(s =>
-            {
-                var gitHubSettings = s.GetService<IOptions<GitHubSettings>>().Value;
-                return new GitHubClient(new ProductHeaderValue(gitHubSettings.ProductHeaderValue))
-                {
-                    Credentials = new Credentials(gitHubSettings.PersonalAccessToken)
-                };
             });
         }
 

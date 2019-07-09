@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core;
+using FilterLists.Agent.Core.GitHub;
 using FilterLists.Agent.Extensions;
 using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 using MediatR;
@@ -27,12 +27,12 @@ namespace FilterLists.Agent.Features.Urls
             private const string HelpWantedLabel = "help wanted";
             private const string DataLabel = "data";
             private const string IssueTitle = "BOT: url validation errors";
-            private readonly IGitHubIssuesRepository _repo;
             private readonly IMediator _mediator;
+            private readonly IIssuesRepository _repo;
 
-            public Handler(IGitHubIssuesRepository gitHubIssuesRepository, IMediator mediator)
+            public Handler(IIssuesRepository issuesRepository, IMediator mediator)
             {
-                _repo = gitHubIssuesRepository;
+                _repo = issuesRepository;
                 _mediator = mediator;
             }
 

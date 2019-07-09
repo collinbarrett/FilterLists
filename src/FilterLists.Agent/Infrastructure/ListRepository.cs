@@ -4,7 +4,7 @@ using System.Net.Http.Headers;
 using FilterLists.Agent.Core;
 using JetBrains.Annotations;
 
-namespace FilterLists.Agent.Infrastructure.Repositories
+namespace FilterLists.Agent.Infrastructure
 {
     [UsedImplicitly]
     public class ListRepository : IListRepository

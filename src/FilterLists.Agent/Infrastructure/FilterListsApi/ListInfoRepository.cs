@@ -6,7 +6,7 @@ using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using RestSharp;
 
-namespace FilterLists.Agent.Infrastructure.Repositories
+namespace FilterLists.Agent.Infrastructure.FilterListsApi
 {
     public class ListInfoRepository : IListInfoRepository
     {

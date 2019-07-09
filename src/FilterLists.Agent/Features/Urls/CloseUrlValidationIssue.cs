@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core;
+using FilterLists.Agent.Core.GitHub;
 using FilterLists.Agent.Extensions;
 using MediatR;
 using Octokit;
@@ -16,11 +16,11 @@ namespace FilterLists.Agent.Features.Urls
         public class Handler : AsyncRequestHandler<Command>
         {
             private const string AgentBotLabel = "agent bot";
-            private readonly IGitHubIssuesRepository _repo;
+            private readonly IIssuesRepository _repo;
 
-            public Handler(IGitHubIssuesRepository gitHubIssuesRepository)
+            public Handler(IIssuesRepository issuesRepository)
             {
-                _repo = gitHubIssuesRepository;
+                _repo = issuesRepository;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)

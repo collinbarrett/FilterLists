@@ -1,23 +1,23 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using FilterLists.Agent.AppSettings;
-using FilterLists.Agent.Core;
+using FilterLists.Agent.Core.GitHub;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Octokit;
 
-namespace FilterLists.Agent.Infrastructure.Repositories
+namespace FilterLists.Agent.Infrastructure.GitHub
 {
-    public class GitHubIssuesRepository : IGitHubIssuesRepository
+    public class IssuesRepository : IIssuesRepository
     {
         private readonly IGitHubClient _gitHubClient;
         private readonly GitHubSettings _gitHubSettings;
-        private readonly IStringLocalizer<GitHubIssuesRepository> _localizer;
-        private readonly ILogger<GitHubIssuesRepository> _logger;
+        private readonly IStringLocalizer<IssuesRepository> _localizer;
+        private readonly ILogger<IssuesRepository> _logger;
 
-        public GitHubIssuesRepository(IGitHubClient gitHubClient, IOptions<GitHubSettings> gitHubOptions,
-            IStringLocalizer<GitHubIssuesRepository> stringLocalizer, ILogger<GitHubIssuesRepository> logger)
+        public IssuesRepository(IGitHubClient gitHubClient, IOptions<GitHubSettings> gitHubOptions,
+            IStringLocalizer<IssuesRepository> stringLocalizer, ILogger<IssuesRepository> logger)
         {
             _gitHubClient = gitHubClient;
             _gitHubSettings = gitHubOptions.Value;
