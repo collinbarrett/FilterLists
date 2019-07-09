@@ -1,123 +1,118 @@
-﻿[
+[
   {
     "id": 1,
-    "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
-    "name": "Hosts (localhost)"
+    "name": "Adblocker syntax, tier 1 (Blocking rules only)"
   },
   {
     "id": 2,
-    "name": "Domains"
+    "definitionUrl": "https://adblockplus.org/filters",
+    "name": "Adblocker syntax, tier 2 (Adblock Plus)"
   },
   {
     "id": 3,
-    "definitionUrl": "https://adblockplus.org/filters",
-    "name": "Adblock Plus"
+    "definitionUrl": "https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters",
+    "name": "Adblocker syntax, tier 3 (AdGuard)"
   },
   {
     "id": 4,
     "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax",
-    "name": "uBlock Origin Static"
+    "name": "Adblocker syntax, tier 4 (uBlock Origin)"
   },
   {
-    "id": 6,
-    "definitionUrl": "https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters",
-    "name": "AdGuard"
-  },
-  {
-    "id": 7,
-    "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide",
-    "name": "uMatrix / uBlock Origin Dynamic"
-  },
-  {
-    "id": 8,
-    "name": "URLs"
-  },
-  {
-    "id": 9,
-    "name": "IPs (Singular or singular+range)"
+    "id": 5,
+    "definitionUrl": "https://github.com/NanoAdblocker/NanoCore/tree/master/notes",
+    "name": "Adblocker syntax, tier 5 (Nano Adblocker)"
   },
   {
     "id": 10,
-    "definitionUrl": "https://blogs.msdn.microsoft.com/ie/2010/12/07/ie9-and-privacy-introducing-tracking-protection/",
-    "name": "Tracking Protection List (IE)"
+    "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
+    "name": "Hosts (localhost)"
   },
   {
     "id": 11,
-    "name": "JavaScript (Non-Safari)"
-  },
-  {
-    "id": 12,
-    "definitionUrl": "https://github.com/NanoAdblocker/NanoCore/tree/master/notes",
-    "name": "Nano Adblocker Static"
-  },
-  {
-    "id": 13,
-    "definitionUrl": "https://github.com/xd4rker/MinerBlock",
-    "name": "MinerBlock"
-  },
-  {
-    "id": 14,
     "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
     "name": "Non-localhost hosts"
   },
   {
-    "id": 15,
-    "name": "IPs (Range-only)"
+    "id": 12,
+    "name": "Unix-format hosts.deny file"
   },
   {
-    "id": 16,
+    "id": 20,
+    "name": "Domains"
+  },
+  {
+    "id": 21,
     "name": "Domains with wildcards"
   },
   {
-    "id": 17,
-    "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#scriptlet-injection",
-    "name": "uBlock Origin scriptlet injection"
+    "id": 30,
+    "name": "IPs (Singular or singular+range)"
   },
   {
-    "id": 18,
+    "id": 31,
+    "name": "IPs (Range-only)"
+  },
+  {
+    "id": 40,
+    "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide",
+    "name": "uMatrix / uBlock Origin Dynamic"
+  },
+  {
+    "id": 41,
+    "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide",
+    "name": "uMatrix ruleset"
+  },
+  {
+    "id": 50,
+    "name": "URLs"
+  },
+  {
+    "id": 51,
+    "definitionUrl": "https://blogs.msdn.microsoft.com/ie/2010/12/07/ie9-and-privacy-introducing-tracking-protection/",
+    "name": "Tracking Protection List (IE)"
+  },
+  {
+    "id": 52,
+    "name": "JavaScript (Non-Safari)"
+  },
+  {
+    "id": 53,
+    "definitionUrl": "https://github.com/xd4rker/MinerBlock",
+    "name": "MinerBlock"
+  },
+  {
+    "id": 54,
     "definitionUrl": "https://help.obdev.at/littlesnitch/#/lsc-rule-group-subscriptions",
     "name": "Little Snitch subscription-style rules"
   },
   {
-    "id": 19,
+    "id": 55,
     "definitionUrl": "https://www.privoxy.org/user-manual/actions-file.html",
     "name": "Privoxy action file"
   },
   {
-    "id": 20,
+    "id": 56,
     "name": "dnsmasq domains list"
   },
   {
-    "id": 21,
-    "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name",
-    "name": "uBlock Origin !#include-tag compilation"
-  },
-  {
-    "id": 22,
+    "id": 57,
     "name": "DNS servers"
   },
   {
-    "id": 23,
-    "name": "Unix-format hosts.deny file"
-  },
-  {
-    "id": 24,
+    "id": 58,
     "name": "Unbound"
   },
   {
-    "id": 25,
+    "id": 59,
     "name": "Response Policy Zones (RPZ)"
   },
   {
-    "id": 26,
+    "id": 60,
     "name": "BIND"
   },
   {
-    "id": 27,
+    "id": 61,
     "name": "Windows command line script"
-  },
-  {
-    "id": 28,
-    "name": "Adblocker-syntax domains"
   }
 ]
