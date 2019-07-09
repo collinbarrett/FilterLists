@@ -4,7 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 
-namespace FilterLists.Agent.Core.Interfaces.Repositories
+namespace FilterLists.Agent.Core
 {
     public interface IUrlRepository
     {

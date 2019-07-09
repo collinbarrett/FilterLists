@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
-using FilterLists.Agent.Core.Interfaces.Repositories;
+using FilterLists.Agent.Core;
 using FilterLists.Agent.Extensions;
 using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 using MediatR;

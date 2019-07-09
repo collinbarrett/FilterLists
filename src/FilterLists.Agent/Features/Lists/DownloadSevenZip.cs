@@ -2,8 +2,8 @@
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core.Entities;
-using FilterLists.Agent.Core.Interfaces.Repositories;
+using FilterLists.Agent.Core;
+using FilterLists.Agent.Core.ListInfo;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using SharpCompress.Archives;

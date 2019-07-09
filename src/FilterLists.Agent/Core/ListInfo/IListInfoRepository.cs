@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core.Entities;
 
-namespace FilterLists.Agent.Core.Interfaces.Repositories
+namespace FilterLists.Agent.Core.ListInfo
 {
     public interface IListInfoRepository
     {

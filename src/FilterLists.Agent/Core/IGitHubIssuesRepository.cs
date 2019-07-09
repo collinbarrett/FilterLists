@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Octokit;
 
-namespace FilterLists.Agent.Core.Interfaces.Repositories
+namespace FilterLists.Agent.Core
 {
     public interface IGitHubIssuesRepository
     {

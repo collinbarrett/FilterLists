@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core.Interfaces.Repositories;
+using FilterLists.Agent.Core.ListInfo;
 using MediatR;
 
 namespace FilterLists.Agent.Features.Lists

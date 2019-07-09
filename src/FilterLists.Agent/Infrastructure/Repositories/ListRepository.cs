@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using FilterLists.Agent.Core.Interfaces.Repositories;
+using FilterLists.Agent.Core;
 using JetBrains.Annotations;
 
 namespace FilterLists.Agent.Infrastructure.Repositories

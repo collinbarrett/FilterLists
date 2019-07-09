@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core.Interfaces.Repositories;
+using FilterLists.Agent.Core;
 using FilterLists.Agent.Features.Urls.Models.DataFileUrls;
 using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 using MediatR;

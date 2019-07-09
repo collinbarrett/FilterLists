@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using FilterLists.Agent.AppSettings;
-using FilterLists.Agent.Core.Interfaces.Repositories;
+using FilterLists.Agent.Core;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;

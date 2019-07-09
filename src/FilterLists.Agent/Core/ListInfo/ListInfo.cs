@@ -1,7 +1,7 @@
 ﻿using System;
 using JetBrains.Annotations;
 
-namespace FilterLists.Agent.Core.Entities
+namespace FilterLists.Agent.Core.ListInfo
 {
     [UsedImplicitly]
     public class ListInfo

@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core.Entities;
-using FilterLists.Agent.Core.Interfaces.Repositories;
+using FilterLists.Agent.Core.ListInfo;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using RestSharp;

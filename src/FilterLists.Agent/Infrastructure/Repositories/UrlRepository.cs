@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core.Interfaces.Repositories;
+using FilterLists.Agent.Core;
 using FilterLists.Agent.Extensions;
 using FilterLists.Agent.Features.Urls.Models.DataFileUrls;
 using FilterLists.Agent.Features.Urls.Models.ValidationResults;

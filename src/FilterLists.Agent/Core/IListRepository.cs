@@ -1,6 +1,6 @@
 ﻿using System.Net.Http;
 
-namespace FilterLists.Agent.Core.Interfaces.Repositories
+namespace FilterLists.Agent.Core
 {
     public interface IListRepository
     {
