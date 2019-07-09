@@ -225,5 +225,12 @@
     "name": "Mozilla Public License, version 2.0",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
+  },
+  {
+    "id": 34,
+    "descriptionUrl": "https://www.gnu.org/licenses/lgpl-3.0.en.html",
+    "name": "Lesser GPL v3",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
   }
 ]
