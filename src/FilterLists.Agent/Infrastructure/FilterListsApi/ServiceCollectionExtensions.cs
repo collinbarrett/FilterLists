@@ -1,5 +1,5 @@
 ﻿using FilterLists.Agent.AppSettings;
-using FilterLists.Agent.Core.ListInfo;
+using FilterLists.Agent.Core.List;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using RestSharp;
@@ -15,7 +15,7 @@ namespace FilterLists.Agent.Infrastructure.FilterListsApi
                 var filterListsApiSettings = b.GetService<IOptions<FilterListsApiSettings>>().Value;
                 return new RestClient(filterListsApiSettings.BaseUrl) {UserAgent = "FilterLists.Agent"};
             });
-            services.AddTransient<IListInfoRepository, ListInfoRepository>();
+            services.AddTransient<IListUrlRepository, ListUrlRepository>();
         }
     }
 }

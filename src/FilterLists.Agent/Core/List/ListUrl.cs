@@ -1,10 +1,10 @@
 ﻿using System;
 using JetBrains.Annotations;
 
-namespace FilterLists.Agent.Core.ListInfo
+namespace FilterLists.Agent.Core.List
 {
     [UsedImplicitly]
-    public class ListInfo
+    public class ListUrl
     {
         public int Id { get; [UsedImplicitly] private set; }
         public Uri ViewUrl { get; [UsedImplicitly] private set; }

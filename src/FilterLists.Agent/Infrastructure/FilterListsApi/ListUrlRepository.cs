@@ -1,31 +1,31 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core.ListInfo;
+using FilterLists.Agent.Core.List;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using RestSharp;
 
 namespace FilterLists.Agent.Infrastructure.FilterListsApi
 {
-    public class ListInfoRepository : IListInfoRepository
+    public class ListUrlRepository : IListUrlRepository
     {
         private readonly IRestClient _apiClient;
-        private readonly IStringLocalizer<ListInfoRepository> _localizer;
-        private readonly ILogger<ListInfoRepository> _logger;
+        private readonly IStringLocalizer<ListUrlRepository> _localizer;
+        private readonly ILogger<ListUrlRepository> _logger;
 
-        public ListInfoRepository(IRestClient apiClient, IStringLocalizer<ListInfoRepository> stringLocalizer,
-            ILogger<ListInfoRepository> logger)
+        public ListUrlRepository(IRestClient apiClient, IStringLocalizer<ListUrlRepository> stringLocalizer,
+            ILogger<ListUrlRepository> logger)
         {
             _apiClient = apiClient;
             _localizer = stringLocalizer;
             _logger = logger;
         }
 
-        public async Task<IEnumerable<ListInfo>> GetAllAsync(CancellationToken cancellationToken)
+        public async Task<IEnumerable<ListUrl>> GetAllAsync(CancellationToken cancellationToken)
         {
             var listsRequest = new RestRequest("lists");
-            var response = await _apiClient.ExecuteTaskAsync<IEnumerable<ListInfo>>(listsRequest, cancellationToken);
+            var response = await _apiClient.ExecuteTaskAsync<IEnumerable<ListUrl>>(listsRequest, cancellationToken);
             if (response.ErrorException != null)
                 _logger.LogError(response.ErrorException,
                     _localizer["Error retrieving response from the FilterLists API."]);

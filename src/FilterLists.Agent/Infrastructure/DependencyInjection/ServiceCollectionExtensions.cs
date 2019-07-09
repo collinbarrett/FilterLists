@@ -4,6 +4,7 @@ using System.Net.Http;
 using CommandLine;
 using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Core;
+using FilterLists.Agent.Core.List;
 using FilterLists.Agent.Infrastructure.FilterListsApi;
 using FilterLists.Agent.Infrastructure.GitHub;
 using LibGit2Sharp;

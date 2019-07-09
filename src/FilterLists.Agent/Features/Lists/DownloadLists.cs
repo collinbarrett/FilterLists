@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
-using FilterLists.Agent.Core.ListInfo;
+using FilterLists.Agent.Core.List;
 using FilterLists.Agent.Extensions;
 using MediatR;
 using Microsoft.Extensions.Logging;
@@ -15,20 +15,20 @@ namespace FilterLists.Agent.Features.Lists
     {
         public class Command : IRequest
         {
-            public Command(IEnumerable<ListInfo> listInfo)
+            public Command(IEnumerable<ListUrl> listInfo)
             {
                 ListInfo = listInfo;
             }
 
-            public IEnumerable<ListInfo> ListInfo { get; }
+            public IEnumerable<ListUrl> ListInfo { get; }
         }
 
         public class Handler : AsyncRequestHandler<Command>
         {
             private const int MaxDegreeOfParallelism = 5;
 
-            private static readonly Dictionary<string, Func<ListInfo, IRequest>> CommandsByExtension
-                = new Dictionary<string, Func<ListInfo, IRequest>>
+            private static readonly Dictionary<string, Func<ListUrl, IRequest>> CommandsByExtension
+                = new Dictionary<string, Func<ListUrl, IRequest>>
                 {
                     {"", l => new DownloadRawText.Command(l)},
                     {".7z", l => new DownloadSevenZip.Command(l)},
@@ -76,9 +76,9 @@ namespace FilterLists.Agent.Features.Lists
                 await downloader.Completion;
             }
 
-            private ActionBlock<ListInfo> BuildDownloader(CancellationToken cancellationToken)
+            private ActionBlock<ListUrl> BuildDownloader(CancellationToken cancellationToken)
             {
-                return new ActionBlock<ListInfo>(
+                return new ActionBlock<ListUrl>(
                     async l =>
                     {
                         var errorMessage = $"Error downloading list {l.Id} from {l.ViewUrl}.";

@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Core.ListInfo;
+using FilterLists.Agent.Core.List;
 using MediatR;
 
 namespace FilterLists.Agent.Features.Lists
@@ -14,12 +14,12 @@ namespace FilterLists.Agent.Features.Lists
         public class Handler : AsyncRequestHandler<Command>
         {
             private readonly IMediator _mediator;
-            private readonly IListInfoRepository _repo;
+            private readonly IListUrlRepository _repo;
 
-            public Handler(IMediator mediator, IListInfoRepository listInfoRepository)
+            public Handler(IMediator mediator, IListUrlRepository listUrlRepository)
             {
                 _mediator = mediator;
-                _repo = listInfoRepository;
+                _repo = listUrlRepository;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)

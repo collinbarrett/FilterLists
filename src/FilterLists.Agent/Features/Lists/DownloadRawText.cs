@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core;
-using FilterLists.Agent.Core.ListInfo;
+using FilterLists.Agent.Core.List;
 using FilterLists.Agent.Extensions;
 using MediatR;
 using Microsoft.Extensions.Logging;
@@ -15,12 +15,12 @@ namespace FilterLists.Agent.Features.Lists
     {
         public class Command : IRequest
         {
-            public Command(ListInfo listInfo)
+            public Command(ListUrl listUrl)
             {
-                ListInfo = listInfo;
+                ListUrl = listUrl;
             }
 
-            public ListInfo ListInfo { get; }
+            public ListUrl ListUrl { get; }
         }
 
         public class Handler : AsyncRequestHandler<Command>
@@ -38,10 +38,10 @@ namespace FilterLists.Agent.Features.Lists
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                var sourceExtension = request.ListInfo.ViewUrl.GetExtension();
+                var sourceExtension = request.ListUrl.ViewUrl.GetExtension();
                 var destinationExtension = _extensionsToRewrite.Contains(sourceExtension) ? ".txt" : sourceExtension;
-                var destinationPath = Path.Combine(RepoDirectory, $"{request.ListInfo.Id}{destinationExtension}");
-                using (var response = await _httpClient.GetAsync(request.ListInfo.ViewUrl, cancellationToken))
+                var destinationPath = Path.Combine(RepoDirectory, $"{request.ListUrl.Id}{destinationExtension}");
+                using (var response = await _httpClient.GetAsync(request.ListUrl.ViewUrl, cancellationToken))
                 {
                     if (response.IsSuccessStatusCode)
                         using (var input = await response.Content.ReadAsStreamAsync())
@@ -51,7 +51,7 @@ namespace FilterLists.Agent.Features.Lists
                         }
                     else
                         _logger.LogError(
-                            $"Error downloading list {request.ListInfo.Id} from {request.ListInfo.ViewUrl}. {response.StatusCode}");
+                            $"Error downloading list {request.ListUrl.Id} from {request.ListUrl.ViewUrl}. {response.StatusCode}");
                 }
             }
         }

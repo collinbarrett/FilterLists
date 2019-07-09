@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Net.Http.Headers;
 using FilterLists.Agent.Core;
+using FilterLists.Agent.Core.List;
 using JetBrains.Annotations;
 
 namespace FilterLists.Agent.Infrastructure

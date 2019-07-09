@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using FilterLists.Agent.Core.ListInfo;
+using FilterLists.Agent.Core.List;
 
 namespace FilterLists.Agent.Extensions
 {
@@ -35,7 +35,7 @@ namespace FilterLists.Agent.Extensions
             return listInfoList.Where(u => !u.IsValidUrl()).Concat(distributedLists);
         }
 
-        public static IEnumerable<ListInfo> DistributeByHost(this IEnumerable<ListInfo> listInfo)
+        public static IEnumerable<ListUrl> DistributeByHost(this IEnumerable<ListUrl> listInfo)
         {
             return listInfo.GroupBy(l => l.ViewUrl.Host)
                 .SelectMany((g, gi) => g.Select((l, i) => new {Index = i, GroupIndex = gi, ListInfo = l}))
