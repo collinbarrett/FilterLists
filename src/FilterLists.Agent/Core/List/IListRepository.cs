@@ -1,10 +1,12 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace FilterLists.Agent.Core.List
 {
     public interface IListRepository
     {
-        //TODO: expose GetList() method rather than HttpClient
-        HttpClient HttpClient { get; }
+        Task<Stream> GetListStreamAsync(Uri url, CancellationToken cancellationToken);
     }
 }
