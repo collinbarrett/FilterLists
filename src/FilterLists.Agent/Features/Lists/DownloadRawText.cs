@@ -34,7 +34,7 @@ namespace FilterLists.Agent.Features.Lists
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
                 var destinationPath = BuildDestinationPath(request);
-                using var input = await _repo.GetListStreamAsync(request.ListUrl.ViewUrl, cancellationToken);
+                using var input = await _repo.GetAsStreamAsync(request.ListUrl.ViewUrl, cancellationToken);
                 using var output = File.OpenWrite(destinationPath);
                 await input.CopyToAsync(output, cancellationToken);
             }

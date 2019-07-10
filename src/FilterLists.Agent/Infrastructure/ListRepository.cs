@@ -27,7 +27,7 @@ namespace FilterLists.Agent.Infrastructure
             _logger = logger;
         }
 
-        public async Task<Stream> GetListStreamAsync(Uri url, CancellationToken cancellationToken)
+        public async Task<Stream> GetAsStreamAsync(Uri url, CancellationToken cancellationToken)
         {
             using var response = await _httpClient.GetAsync(url, cancellationToken);
             if (response.IsSuccessStatusCode)

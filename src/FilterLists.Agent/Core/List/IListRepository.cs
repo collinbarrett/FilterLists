@@ -7,6 +7,6 @@ namespace FilterLists.Agent.Core.List
 {
     public interface IListRepository
     {
-        Task<Stream> GetListStreamAsync(Uri url, CancellationToken cancellationToken);
+        Task<Stream> GetAsStreamAsync(Uri url, CancellationToken cancellationToken);
     }
 }

@@ -33,7 +33,7 @@ namespace FilterLists.Agent.Features.Lists
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
                 var destinationDirectoryPath = Path.Combine(RepoDirectory, $"{request.ListUrl.Id}");
-                using var input = await _repo.GetListStreamAsync(request.ListUrl.ViewUrl, cancellationToken);
+                using var input = await _repo.GetAsStreamAsync(request.ListUrl.ViewUrl, cancellationToken);
                 using var reader = ReaderFactory.Open(input);
                 while (reader.MoveToNextEntry())
                     if (!reader.Entry.IsDirectory)
