@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -74,7 +73,7 @@ namespace FilterLists.Agent.Infrastructure
 
             try
             {
-                var response =
+                using var response =
                     await _httpClient.GetAsync(u, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
                 if (u.Scheme == Uri.UriSchemeHttp && await IsHttpsSupported(u, cancellationToken))
                     result.SetSupportsHttps();
@@ -118,7 +117,7 @@ namespace FilterLists.Agent.Infrastructure
             var httpsUrl = new UriBuilder(url.OriginalString) {Scheme = Uri.UriSchemeHttps}.Uri;
             try
             {
-                var response = await _httpClient.GetAsync(httpsUrl, HttpCompletionOption.ResponseHeadersRead,
+                using var response = await _httpClient.GetAsync(httpsUrl, HttpCompletionOption.ResponseHeadersRead,
                     cancellationToken);
                 if (response.IsSuccessStatusCode)
                     return true;
