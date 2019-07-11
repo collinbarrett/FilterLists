@@ -52,7 +52,7 @@ namespace FilterLists.Agent.Infrastructure
         public async Task<IEnumerable<Uri>> GetAllAsync<TModel>(CancellationToken cancellationToken)
         {
             if (!EntityUrlsEndpoints.ContainsKey(typeof(TModel).Name))
-                throw new InvalidEnumArgumentException(_localizer["The type of TModel is not valid."]);
+                throw new ArgumentException(_localizer["The type of TModel is not valid."]);
             var request = new RestRequest($"{EntityUrlsEndpoints[typeof(TModel).Name]}/seed");
             var response = await _apiClient.ExecuteTaskAsync<IEnumerable<TModel>>(request, cancellationToken);
             if (response.ErrorException != null)
