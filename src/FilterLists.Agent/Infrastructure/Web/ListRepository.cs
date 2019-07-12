@@ -9,7 +9,7 @@ using FilterLists.Agent.Core.List;
 using JetBrains.Annotations;
 using Microsoft.Extensions.Logging;
 
-namespace FilterLists.Agent.Infrastructure
+namespace FilterLists.Agent.Infrastructure.Web
 {
     [UsedImplicitly]
     public class ListRepository : IListRepository

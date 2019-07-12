@@ -4,10 +4,10 @@ using System.Net.Http;
 using CommandLine;
 using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Core;
-using FilterLists.Agent.Core.List;
+using FilterLists.Agent.Infrastructure.Disk;
 using FilterLists.Agent.Infrastructure.FilterListsApi;
 using FilterLists.Agent.Infrastructure.GitHub;
-using LibGit2Sharp;
+using FilterLists.Agent.Infrastructure.Web;
 using MediatR;
 using Microsoft.ApplicationInsights;
 using Microsoft.Extensions.Configuration;
@@ -88,24 +88,6 @@ namespace FilterLists.Agent.Infrastructure.DependencyInjection
                 .AddTransientHttpErrorPolicy(b =>
                     b.OrResult(r => r.StatusCode == HttpStatusCode.TooManyRequests)
                         .WaitAndRetryAsync(5, i => i * TimeSpan.FromSeconds(3)));
-        }
-
-        private static void AddListRepository(this IServiceCollection services)
-        {
-            services.AddHttpClient<IListRepository, ListRepository>().AddTransientHttpErrorPolicy(b =>
-                b.OrResult(r => r.StatusCode == HttpStatusCode.TooManyRequests)
-                    .WaitAndRetryAsync(5, i => i * TimeSpan.FromSeconds(3)));
-        }
-
-        private static void AddArchiveRepository(this IServiceCollection services)
-        {
-            services.AddTransient<IRepository, Repository>(s =>
-            {
-                var archiveSettings = s.GetService<IOptions<ArchiveSettings>>().Value;
-                if (!Repository.IsValid(archiveSettings.RepositoryDirectory))
-                    Repository.Init(archiveSettings.RepositoryDirectory);
-                return new Repository(archiveSettings.RepositoryDirectory);
-            });
         }
     }
 }
