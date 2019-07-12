@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -27,9 +28,10 @@ namespace FilterLists.Agent.Infrastructure
             _logger = logger;
         }
 
+        [SuppressMessage("Microsoft.Reliability", "CA2000:DisposeObjectsBeforeLosingScope")]
         public async Task<Stream> GetAsStreamAsync(Uri url, CancellationToken cancellationToken)
         {
-            using var response = await _httpClient.GetAsync(url, cancellationToken);
+            var response = await _httpClient.GetAsync(url, cancellationToken);
             if (response.IsSuccessStatusCode)
                 return await response.Content.ReadAsStreamAsync();
             _logger.LogError($"Error downloading list from {url}. {response.StatusCode}");
