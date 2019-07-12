@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
+using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Core;
 using FilterLists.Agent.Extensions;
 using FilterLists.Agent.Features.Urls.Models.DataFileUrls;
@@ -12,6 +13,7 @@ using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 using JetBrains.Annotations;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using RestSharp;
 
 namespace FilterLists.Agent.Infrastructure
@@ -33,10 +35,10 @@ namespace FilterLists.Agent.Infrastructure
         private readonly IStringLocalizer<UrlRepository> _localizer;
         private readonly ILogger<UrlRepository> _logger;
 
-        public UrlRepository(IRestClient apiClient, HttpClient httpClient,
+        public UrlRepository(IOptions<FilterListsApiSettings> filterListsApiOptions, HttpClient httpClient,
             IStringLocalizer<UrlRepository> stringLocalizer, ILogger<UrlRepository> logger)
         {
-            _apiClient = apiClient;
+            _apiClient = new RestClient(filterListsApiOptions.Value.BaseUrl) {UserAgent = "FilterLists.Agent"};
 
             httpClient.Timeout = TimeSpan.FromSeconds(90);
             var header = new ProductHeaderValue("FilterLists.Agent");
