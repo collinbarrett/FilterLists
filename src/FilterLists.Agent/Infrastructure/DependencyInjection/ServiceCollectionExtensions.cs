@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Polly;
+using Serilog;
 
 namespace FilterLists.Agent.Infrastructure.DependencyInjection
 {
@@ -60,7 +61,7 @@ namespace FilterLists.Agent.Infrastructure.DependencyInjection
         {
             services.AddLogging(b =>
             {
-                b.AddConsole();
+                b.AddSerilog(new LoggerConfiguration().WriteTo.Console().CreateLogger());
                 var applicationInsightsSettings = b.Services.BuildServiceProvider()
                     .GetService<IOptions<ApplicationInsightsSettings>>().Value;
                 b.AddApplicationInsights(applicationInsightsSettings.InstrumentationKey);
