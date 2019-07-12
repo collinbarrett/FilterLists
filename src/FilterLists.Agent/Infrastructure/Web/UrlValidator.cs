@@ -1,66 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.AppSettings;
-using FilterLists.Agent.Core;
+using FilterLists.Agent.Core.Urls;
 using FilterLists.Agent.Extensions;
-using FilterLists.Agent.Features.Urls.Models.DataFileUrls;
-using FilterLists.Agent.Features.Urls.Models.ValidationResults;
+using FilterLists.Agent.Infrastructure.FilterListsApi;
 using JetBrains.Annotations;
-using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using RestSharp;
 
-namespace FilterLists.Agent.Infrastructure
+namespace FilterLists.Agent.Infrastructure.Web
 {
     [UsedImplicitly]
-    public class UrlRepository : IUrlRepository
+    public class UrlValidator : IUrlValidator
     {
-        private static readonly Dictionary<string, string> EntityUrlsEndpoints = new Dictionary<string, string>
-        {
-            {nameof(LicenseUrls), "licenses"},
-            {nameof(ListUrls), "lists"},
-            {nameof(MaintainerUrls), "maintainers"},
-            {nameof(SoftwareUrls), "software"},
-            {nameof(SyntaxUrls), "syntaxes"}
-        };
-
-        private readonly IRestClient _apiClient;
         private readonly HttpClient _httpClient;
-        private readonly IStringLocalizer<UrlRepository> _localizer;
         private readonly ILogger<UrlRepository> _logger;
 
-        public UrlRepository(IOptions<FilterListsApiSettings> filterListsApiOptions, HttpClient httpClient,
-            IStringLocalizer<UrlRepository> stringLocalizer, ILogger<UrlRepository> logger)
+        public UrlValidator(HttpClient httpClient, ILogger<UrlRepository> logger)
         {
-            _apiClient = new RestClient(filterListsApiOptions.Value.BaseUrl) {UserAgent = "FilterLists.Agent"};
-
             httpClient.Timeout = TimeSpan.FromSeconds(90);
             var header = new ProductHeaderValue("FilterLists.Agent");
             var userAgent = new ProductInfoHeaderValue(header);
             httpClient.DefaultRequestHeaders.UserAgent.Add(userAgent);
             _httpClient = httpClient;
 
-            _localizer = stringLocalizer;
             _logger = logger;
-        }
-
-        public async Task<IEnumerable<Uri>> GetAllAsync<TModel>(CancellationToken cancellationToken)
-        {
-            if (!EntityUrlsEndpoints.ContainsKey(typeof(TModel).Name))
-                throw new ArgumentException(_localizer["The type of TModel is not valid."]);
-            var request = new RestRequest($"{EntityUrlsEndpoints[typeof(TModel).Name]}/seed");
-            var response = await _apiClient.ExecuteTaskAsync<IEnumerable<TModel>>(request, cancellationToken);
-            if (response.ErrorException != null)
-                _logger.LogError(response.ErrorException,
-                    _localizer["Error retrieving response from the FilterLists API."]);
-            return response.Data.SelectMany(r =>
-                r.GetType().GetProperties().Where(p => p.GetValue(r) != null).Select(p => (Uri)p.GetValue(r)));
         }
 
         public async Task<UrlValidationResult> ValidateAsync(Uri u, CancellationToken cancellationToken)

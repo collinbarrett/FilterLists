@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
-using FilterLists.Agent.Core.List;
+using FilterLists.Agent.Core.Lists;
 using FilterLists.Agent.Extensions;
 using MediatR;
 using Microsoft.Extensions.Logging;

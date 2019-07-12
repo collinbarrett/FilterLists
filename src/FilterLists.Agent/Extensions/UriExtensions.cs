@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using FilterLists.Agent.Core.List;
+using FilterLists.Agent.Core.Lists;
 
 namespace FilterLists.Agent.Extensions
 {

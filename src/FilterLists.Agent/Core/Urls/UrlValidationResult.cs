@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace FilterLists.Agent.Features.Urls.Models.ValidationResults
+namespace FilterLists.Agent.Core.Urls
 {
     public class UrlValidationResult
     {

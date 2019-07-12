@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Net;
-using System.Net.Http;
 using CommandLine;
 using FilterLists.Agent.AppSettings;
-using FilterLists.Agent.Core;
 using FilterLists.Agent.Infrastructure.Disk;
 using FilterLists.Agent.Infrastructure.FilterListsApi;
 using FilterLists.Agent.Infrastructure.GitHub;
@@ -13,7 +10,6 @@ using Microsoft.ApplicationInsights;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using Polly;
 using Serilog;
 
 namespace FilterLists.Agent.Infrastructure.DependencyInjection
@@ -27,11 +23,10 @@ namespace FilterLists.Agent.Infrastructure.DependencyInjection
             services.AddLocalization();
             services.AddTransient<Parser>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddDiskResources();
             services.AddFilterListsApiResources();
             services.AddGitHubResources();
-            services.AddUrlRepository();
-            services.AddListRepository();
-            services.AddArchiveRepository();
+            services.AddWebResources();
         }
 
         private static void AddConfiguration(this IServiceCollection services)
@@ -75,19 +70,6 @@ namespace FilterLists.Agent.Infrastructure.DependencyInjection
                     .WriteTo.ApplicationInsights(telemetryClient, TelemetryConverter.Traces)
                     .CreateLogger());
             });
-        }
-
-        private static void AddUrlRepository(this IServiceCollection services)
-        {
-            services.AddHttpClient<IUrlRepository, UrlRepository>()
-                .ConfigureHttpMessageHandlerBuilder(b =>
-                {
-                    b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
-                    b.Build();
-                })
-                .AddTransientHttpErrorPolicy(b =>
-                    b.OrResult(r => r.StatusCode == HttpStatusCode.TooManyRequests)
-                        .WaitAndRetryAsync(5, i => i * TimeSpan.FromSeconds(3)));
         }
     }
 }

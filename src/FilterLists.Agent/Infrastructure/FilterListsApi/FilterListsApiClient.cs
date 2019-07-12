@@ -8,6 +8,11 @@ using RestSharp;
 
 namespace FilterLists.Agent.Infrastructure.FilterListsApi
 {
+    public interface IFilterListsApiClient
+    {
+        Task<TResponse> ExecuteAsync<TResponse>(IRestRequest restRequest, CancellationToken cancellationToken);
+    }
+
     public class FilterListsApiClient : IFilterListsApiClient
     {
         private readonly IStringLocalizer<FilterListsApiClient> _localizer;

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using FilterLists.Agent.Core.Urls;
 
 namespace FilterLists.Agent.Features.Urls.Models.ValidationResults
 {

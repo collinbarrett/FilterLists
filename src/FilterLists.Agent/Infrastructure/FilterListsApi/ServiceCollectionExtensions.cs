@@ -1,4 +1,5 @@
-﻿using FilterLists.Agent.Core.List;
+﻿using FilterLists.Agent.Core.Lists;
+using FilterLists.Agent.Core.Urls;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.Agent.Infrastructure.FilterListsApi
@@ -9,6 +10,7 @@ namespace FilterLists.Agent.Infrastructure.FilterListsApi
         {
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
             services.AddTransient<IListUrlRepository, ListUrlRepository>();
+            services.AddTransient<IUrlRepository, UrlRepository>();
         }
     }
 }

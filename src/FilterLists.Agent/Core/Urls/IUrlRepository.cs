@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 
-namespace FilterLists.Agent.Core
+namespace FilterLists.Agent.Core.Urls
 {
     public interface IUrlRepository
     {
         Task<IEnumerable<Uri>> GetAllAsync<TModel>(CancellationToken cancellationToken);
-
-        Task<UrlValidationResult> ValidateAsync(Uri u, CancellationToken cancellationToken);
     }
 }

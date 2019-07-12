@@ -1,7 +1,7 @@
 ﻿using System;
 using JetBrains.Annotations;
 
-namespace FilterLists.Agent.Core.List
+namespace FilterLists.Agent.Core.Lists
 {
     [UsedImplicitly]
     public class ListUrl
