@@ -33,6 +33,7 @@ namespace FilterLists.Agent.Infrastructure.FilterListsApi
         }
 
         public async Task<IEnumerable<Uri>> GetAllAsync<TModel>(CancellationToken cancellationToken)
+            where TModel : class, new()
         {
             if (!EntityUrlsEndpoints.ContainsKey(typeof(TModel).Name))
                 throw new ArgumentException(_localizer["The type of TModel is not valid."]);

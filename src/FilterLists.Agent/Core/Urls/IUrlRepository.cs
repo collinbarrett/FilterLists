@@ -7,6 +7,6 @@ namespace FilterLists.Agent.Core.Urls
 {
     public interface IUrlRepository
     {
-        Task<IEnumerable<Uri>> GetAllAsync<TModel>(CancellationToken cancellationToken);
+        Task<IEnumerable<Uri>> GetAllAsync<TModel>(CancellationToken cancellationToken) where TModel : class, new();
     }
 }
