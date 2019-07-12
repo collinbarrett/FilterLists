@@ -20,7 +20,7 @@ namespace FilterLists.Agent.Infrastructure.DependencyInjection
 {
     public static class ServiceCollectionExtensions
     {
-        public static void RegisterAgentServices(this IServiceCollection services)
+        public static void ConfigureServices(this IServiceCollection services)
         {
             services.AddConfiguration();
             services.AddLoggingCustom();

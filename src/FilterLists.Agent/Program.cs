@@ -17,10 +17,10 @@ namespace FilterLists.Agent
 
         public static async Task Main(string[] args)
         {
-            BuildServiceProvider();
+            Setup();
+
             var parser = _serviceProvider.GetService<Parser>();
             var mediator = _serviceProvider.GetService<IMediator>();
-
             await parser.ParseArguments<CommandLineOptions>(args).MapResult(async o =>
                 {
                     if (o.ArchiveLists)
@@ -31,17 +31,17 @@ namespace FilterLists.Agent
                 e => Task.FromResult(0)
             );
 
-            FlushApplicationInsights();
+            Teardown();
         }
 
-        private static void BuildServiceProvider()
+        private static void Setup()
         {
             var serviceCollection = new ServiceCollection();
-            serviceCollection.RegisterAgentServices();
+            serviceCollection.ConfigureServices();
             _serviceProvider = serviceCollection.BuildServiceProvider();
         }
 
-        private static void FlushApplicationInsights()
+        private static void Teardown()
         {
             var telemetryClient = _serviceProvider.GetService<TelemetryClient>();
             telemetryClient.Flush();
