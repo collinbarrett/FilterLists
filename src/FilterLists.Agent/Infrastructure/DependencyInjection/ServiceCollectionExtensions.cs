@@ -9,9 +9,9 @@ using FilterLists.Agent.Infrastructure.FilterListsApi;
 using FilterLists.Agent.Infrastructure.GitHub;
 using LibGit2Sharp;
 using MediatR;
+using Microsoft.ApplicationInsights;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Polly;
 using Serilog;
@@ -59,12 +59,21 @@ namespace FilterLists.Agent.Infrastructure.DependencyInjection
 
         private static void AddLoggingCustom(this IServiceCollection services)
         {
+            services.AddSingleton(b =>
+            {
+                var applicationInsightsSettings = b.GetService<IOptions<ApplicationInsightsSettings>>().Value;
+                return new TelemetryClient
+                {
+                    InstrumentationKey = applicationInsightsSettings.InstrumentationKey
+                };
+            });
             services.AddLogging(b =>
             {
-                b.AddSerilog(new LoggerConfiguration().WriteTo.Console().CreateLogger());
-                var applicationInsightsSettings = b.Services.BuildServiceProvider()
-                    .GetService<IOptions<ApplicationInsightsSettings>>().Value;
-                b.AddApplicationInsights(applicationInsightsSettings.InstrumentationKey);
+                var telemetryClient = b.Services.BuildServiceProvider().GetService<TelemetryClient>();
+                b.AddSerilog(new LoggerConfiguration()
+                    .WriteTo.Console()
+                    .WriteTo.ApplicationInsights(telemetryClient, TelemetryConverter.Traces)
+                    .CreateLogger());
             });
         }
 

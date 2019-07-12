@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using CommandLine;
 using FilterLists.Agent.Features.Lists;
 using FilterLists.Agent.Features.Urls;
 using FilterLists.Agent.Infrastructure.DependencyInjection;
 using MediatR;
+using Microsoft.ApplicationInsights;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.Agent
@@ -18,6 +20,7 @@ namespace FilterLists.Agent
             BuildServiceProvider();
             var parser = _serviceProvider.GetService<Parser>();
             var mediator = _serviceProvider.GetService<IMediator>();
+
             await parser.ParseArguments<CommandLineOptions>(args).MapResult(async o =>
                 {
                     if (o.ArchiveLists)
@@ -27,6 +30,8 @@ namespace FilterLists.Agent
                 },
                 e => Task.FromResult(0)
             );
+
+            FlushApplicationInsights();
         }
 
         private static void BuildServiceProvider()
@@ -34,6 +39,13 @@ namespace FilterLists.Agent
             var serviceCollection = new ServiceCollection();
             serviceCollection.RegisterAgentServices();
             _serviceProvider = serviceCollection.BuildServiceProvider();
+        }
+
+        private static void FlushApplicationInsights()
+        {
+            var telemetryClient = _serviceProvider.GetService<TelemetryClient>();
+            telemetryClient.Flush();
+            Thread.Sleep(5000);
         }
     }
 }
