@@ -40,9 +40,7 @@ namespace FilterLists.Agent
 
         private static void Setup()
         {
-            var serviceCollection = new ServiceCollection();
-            serviceCollection.ConfigureServices();
-            _serviceProvider = serviceCollection.BuildServiceProvider();
+            _serviceProvider = ServiceProviderBuilder.Build();
 
             var telemetryConfiguration = _serviceProvider.GetService<TelemetryConfiguration>();
             _quickPulseTelemetryModule = new QuickPulseTelemetryModule();
@@ -52,6 +50,7 @@ namespace FilterLists.Agent
         private static void Teardown()
         {
             _quickPulseTelemetryModule.Dispose();
+
             var telemetryClient = _serviceProvider.GetService<TelemetryClient>();
             telemetryClient.Flush();
             Thread.Sleep(5000);
