@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Urls;
-using FilterLists.Agent.Core.Urls.EntityUrls;
+using FilterLists.Agent.Infrastructure.FilterListsApi.EntityUrls;
 using JetBrains.Annotations;
 using RestSharp;
 

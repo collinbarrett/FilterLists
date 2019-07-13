@@ -1,7 +1,7 @@
 ﻿using System;
 using JetBrains.Annotations;
 
-namespace FilterLists.Agent.Core.Urls.EntityUrls
+namespace FilterLists.Agent.Infrastructure.FilterListsApi.EntityUrls
 {
     [UsedImplicitly]
     public class LicenseUrls
