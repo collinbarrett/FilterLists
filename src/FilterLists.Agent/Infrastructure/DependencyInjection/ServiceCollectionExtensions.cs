@@ -20,7 +20,7 @@ namespace FilterLists.Agent.Infrastructure.DependencyInjection
         public static void ConfigureServices(this IServiceCollection services)
         {
             services.AddConfiguration();
-            services.AddApplicationInsight();
+            services.AddApplicationInsights();
             services.AddLogging();
             services.AddLocalization();
             services.AddTransient<Parser>();

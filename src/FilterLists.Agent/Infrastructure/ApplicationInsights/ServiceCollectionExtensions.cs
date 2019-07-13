@@ -8,7 +8,7 @@ namespace FilterLists.Agent.Infrastructure.ApplicationInsights
 {
     public static class ServiceCollectionExtensions
     {
-        public static void AddApplicationInsight(this IServiceCollection services)
+        public static void AddApplicationInsights(this IServiceCollection services)
         {
             services.AddSingleton(b =>
             {
