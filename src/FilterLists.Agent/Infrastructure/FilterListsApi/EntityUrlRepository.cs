@@ -13,14 +13,14 @@ namespace FilterLists.Agent.Infrastructure.FilterListsApi
     [UsedImplicitly]
     public class EntityUrlRepository : IEntityUrlRepository
     {
-        private static readonly Dictionary<string, (string, FilterListsEntity)> EndpointAndEntityByDto =
-            new Dictionary<string, (string, FilterListsEntity)>
+        private static readonly Dictionary<string, (string, Entity)> EndpointAndEntityByDto =
+            new Dictionary<string, (string, Entity)>
             {
-                {nameof(LicenseUrls), ("licenses", FilterListsEntity.License)},
-                {nameof(ListUrls), ("lists", FilterListsEntity.FilterList)},
-                {nameof(MaintainerUrls), ("maintainers", FilterListsEntity.Maintainer)},
-                {nameof(SoftwareUrls), ("software", FilterListsEntity.Software)},
-                {nameof(SyntaxUrls), ("syntaxes", FilterListsEntity.Syntax)}
+                {nameof(LicenseUrls), ("licenses", Entity.License)},
+                {nameof(ListUrls), ("lists", Entity.FilterList)},
+                {nameof(MaintainerUrls), ("maintainers", Entity.Maintainer)},
+                {nameof(SoftwareUrls), ("software", Entity.Software)},
+                {nameof(SyntaxUrls), ("syntaxes", Entity.Syntax)}
             };
 
         private readonly IFilterListsApiClient _apiClient;
@@ -51,7 +51,7 @@ namespace FilterLists.Agent.Infrastructure.FilterListsApi
                 var id = (int)propertyInfos.First(p => p.Name == nameof(LicenseUrls.Id)).GetValue(e);
                 return propertyInfos.Where(p => p.GetValue(e) != null && p.PropertyType == typeof(Uri)).Select(p =>
                     new EntityUrl(EndpointAndEntityByDto[typeof(TModel).Name].Item2, id, (Uri)p.GetValue(e)));
-            }).GroupBy(e => e.ViewUrl).Select(e => e.First());
+            }).GroupBy(e => e.Url).Select(e => e.First());
         }
     }
 }

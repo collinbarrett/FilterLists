@@ -8,19 +8,19 @@ namespace FilterLists.Agent.Core.Urls
 {
     public class EntityUrl
     {
-        public EntityUrl(FilterListsEntity filterListsEntity, int id, Uri viewUrl)
+        public EntityUrl(Entity entity, int id, Uri url)
         {
-            FilterListsEntity = filterListsEntity;
+            Entity = entity;
             Id = id;
-            ViewUrl = viewUrl;
+            Url = url;
         }
 
-        public FilterListsEntity FilterListsEntity { get; }
+        public Entity Entity { get; }
 
         [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
         public int Id { [UsedImplicitly] get; }
 
-        public Uri ViewUrl { get; }
+        public Uri Url { get; }
 
         public List<string> ValidationMessages { get; } = new List<string>();
 

@@ -28,7 +28,7 @@ namespace FilterLists.Agent.Infrastructure.Web
 
         public async Task<EntityUrl> ValidateAsync(EntityUrl entityUrl, CancellationToken cancellationToken)
         {
-            var url = entityUrl.ViewUrl;
+            var url = entityUrl.Url;
             try
             {
                 using var response =

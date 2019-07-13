@@ -27,7 +27,7 @@ namespace FilterLists.Agent.Features.Urls
             {
                 var body = new StringBuilder();
                 body.Append(IssueHeader);
-                var entityInvalidUrlGroups = request.InvalidEntityUrls.GroupBy(i => i.FilterListsEntity);
+                var entityInvalidUrlGroups = request.InvalidEntityUrls.GroupBy(i => i.Entity);
                 foreach (var entityInvalidUrls in entityInvalidUrlGroups)
                 {
                     body.Append(
@@ -36,7 +36,7 @@ namespace FilterLists.Agent.Features.Urls
                     foreach (var invalidUrl in entityInvalidUrls)
                     {
                         body.Append(
-                            $"<li><a href=\"{invalidUrl.ViewUrl.OriginalString}\">{invalidUrl.ViewUrl.OriginalString}</a>");
+                            $"<li><a href=\"{invalidUrl.Url.OriginalString}\">{invalidUrl.Url.OriginalString}</a>");
                         body.Append("<ul>");
                         foreach (var message in invalidUrl.ValidationMessages)
                             body.Append($"<li>{message}</li>");

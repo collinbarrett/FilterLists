@@ -1,6 +1,6 @@
 ﻿namespace FilterLists.Agent.Core.Urls
 {
-    public enum FilterListsEntity
+    public enum Entity
     {
         License,
         FilterList,
