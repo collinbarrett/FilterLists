@@ -1,5 +1,4 @@
 ﻿using FilterLists.Agent.AppSettings;
-using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.Extensibility;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -21,7 +20,12 @@ namespace FilterLists.Agent.Infrastructure.ApplicationInsights
             services.AddSingleton(b =>
             {
                 var configuration = b.GetService<TelemetryConfiguration>();
-                return new TelemetryClient(configuration);
+                return new AgentTelemetryClient(configuration);
+            });
+            services.AddSingleton(b =>
+            {
+                var telemetryConfiguration = b.GetService<TelemetryConfiguration>();
+                return QuickPulseTelemetryModuleBuilder.Build(telemetryConfiguration);
             });
         }
     }

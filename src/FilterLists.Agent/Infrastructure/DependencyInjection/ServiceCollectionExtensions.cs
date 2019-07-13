@@ -8,7 +8,6 @@ using FilterLists.Agent.Infrastructure.GitHub;
 using FilterLists.Agent.Infrastructure.Polly;
 using FilterLists.Agent.Infrastructure.Web;
 using MediatR;
-using Microsoft.ApplicationInsights;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
@@ -59,7 +58,8 @@ namespace FilterLists.Agent.Infrastructure.DependencyInjection
         {
             services.AddLogging(b =>
             {
-                var telemetryClient = b.Services.BuildServiceProvider().GetService<TelemetryClient>();
+                var telemetryClient = b.Services.BuildServiceProvider().GetService<AgentTelemetryClient>()
+                    .TelemetryClient;
                 b.AddSerilog(new LoggerConfiguration()
                     .WriteTo.Console()
                     .WriteTo.ApplicationInsights(telemetryClient, TelemetryConverter.Traces)
