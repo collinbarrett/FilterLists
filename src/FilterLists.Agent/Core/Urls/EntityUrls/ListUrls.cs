@@ -1,7 +1,7 @@
 ﻿using System;
 using JetBrains.Annotations;
 
-namespace FilterLists.Agent.Features.Urls.Models
+namespace FilterLists.Agent.Core.Urls.EntityUrls
 {
     [UsedImplicitly]
     public class ListUrls
