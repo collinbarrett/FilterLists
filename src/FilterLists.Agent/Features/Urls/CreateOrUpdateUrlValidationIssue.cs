@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.GitHub;
 using FilterLists.Agent.Core.Urls;
-using FilterLists.Agent.Extensions;
 using MediatR;
 using Octokit;
 

@@ -25,7 +25,7 @@ namespace FilterLists.Agent.Infrastructure.GitHub
             _logger = logger;
         }
 
-        public async Task<IReadOnlyList<Issue>> GetAllIssuesAsync(RepositoryIssueRequest repositoryIssueRequest)
+        public async Task<IEnumerable<Issue>> GetAllIssuesAsync(RepositoryIssueRequest repositoryIssueRequest)
         {
             try
             {

@@ -1,7 +1,7 @@
-﻿using System.Threading;
+﻿using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.GitHub;
-using FilterLists.Agent.Extensions;
 using MediatR;
 using Octokit;
 

@@ -6,7 +6,7 @@ namespace FilterLists.Agent.Core.GitHub
 {
     public interface IIssuesRepository
     {
-        Task<IReadOnlyList<Issue>> GetAllIssuesAsync(RepositoryIssueRequest repositoryIssueRequest);
+        Task<IEnumerable<Issue>> GetAllIssuesAsync(RepositoryIssueRequest repositoryIssueRequest);
 
         Task<Issue> CreateIssueAsync(NewIssue newIssue);
 
