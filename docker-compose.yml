@@ -72,6 +72,7 @@ services:
       Archive__CommitMessageSuffix: ${AGENT_ARCHIVE_GIT_COMMIT_MESSAGE_SUFFIX}
       ConnectionString__FilterListsConnection: ${API_CONNECTION_STRING}
       FilterListsApi__BaseUrl: ${AGENT_FILTERLISTS_API_BASE_URL}
+      FilterListsApi__ClientUserAgent: ${AGENT_FILTERLISTS_API_CLIENT_USER_AGENT}
       GitHub__ProductHeaderValue: ${AGENT_GITHUB_PRODUCT_HEADER_VALUE}
       GitHub__PersonalAccessToken: ${AGENT_GITHUB_PERSONAL_ACCESS_TOKEN}
       GitHub__RepositoryOwner: ${AGENT_GITHUB_REPOSITORY_OWNER}

@@ -24,7 +24,12 @@ namespace FilterLists.Agent.Infrastructure.FilterListsApi
         {
             _localizer = stringLocalizer;
             _logger = logger;
-            _restClient = new RestClient(filterListsApiOptions.Value.BaseUrl) {UserAgent = "FilterLists.Agent"};
+
+            var filterListsApiSettings = filterListsApiOptions.Value;
+            _restClient = new RestClient(filterListsApiSettings.BaseUrl)
+            {
+                UserAgent = filterListsApiSettings.ClientUserAgent
+            };
         }
 
         public async Task<TResponse> ExecuteAsync<TResponse>(IRestRequest restRequest,
