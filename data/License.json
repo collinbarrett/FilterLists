@@ -253,5 +253,24 @@
     "name": "Lesser GPL v2.1",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
+  },
+  {
+    "id": 38,
+    "name": "Generic copyfree",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 39,
+    "name": "Generic copyleft",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 40,
+    "descriptionUrl": "https://creativecommons.org/licenses/by/3.0/us/",
+    "name": "CC BY 3.0 US",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
   }
 ]
