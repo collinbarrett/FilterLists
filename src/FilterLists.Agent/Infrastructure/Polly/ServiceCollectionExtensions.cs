@@ -27,7 +27,8 @@ namespace FilterLists.Agent.Infrastructure.Polly
                             var logger = services.BuildServiceProvider().GetService<ILogger<IPolicyRegistry<string>>>();
                             logger.LogInformation("Retrying after 429 TooManyRequests",
                                 response.Result.RequestMessage.RequestUri,
-                                response.Result?.Headers.RetryAfter.Delta.ToString(), retryCount);
+                                response.Result?.Headers.RetryAfter.Delta.ToString(),
+                                retryCount);
                         });
                     });
             registry.Add(nameof(waitAndRetryTooManyRequests), waitAndRetryTooManyRequests);

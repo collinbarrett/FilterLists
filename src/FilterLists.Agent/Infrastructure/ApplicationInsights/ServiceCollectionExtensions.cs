@@ -9,7 +9,7 @@ namespace FilterLists.Agent.Infrastructure.ApplicationInsights
     {
         public static void AddApplicationInsights(this IServiceCollection services)
         {
-            services.AddSingleton(b =>
+            services.AddTransient(b =>
             {
                 var applicationInsightsSettings = b.GetService<IOptions<ApplicationInsightsSettings>>().Value;
                 return new TelemetryConfiguration
@@ -19,8 +19,8 @@ namespace FilterLists.Agent.Infrastructure.ApplicationInsights
             });
             services.AddSingleton(b =>
             {
-                var configuration = b.GetService<TelemetryConfiguration>();
-                return new AgentTelemetryClient(configuration);
+                var telemetryConfiguration = b.GetService<TelemetryConfiguration>();
+                return new AgentTelemetryClient(telemetryConfiguration);
             });
             services.AddSingleton(b =>
             {
