@@ -505,7 +505,7 @@
   {
     "id": 98,
     "emailAddress": "easylist.china@gmail.com",
-    "homeUrl": "https://abpchina.org/forum",
+    "homeUrl": "https://abpchina.org/forum/",
     "name": "EasyList China"
   },
   {
@@ -597,7 +597,7 @@
   },
   {
     "id": 115,
-    "homeUrl": "http://www.stopforumspam.com/",
+    "homeUrl": "https://www.stopforumspam.com/",
     "name": "StopForumSpam.com",
     "twitterHandle": "StopForumSpam"
   },
