@@ -73,30 +73,30 @@ namespace FilterLists.Agent.Infrastructure.Web
 
         private async Task<bool> IsHttpsSupported(Uri url, CancellationToken cancellationToken)
         {
-            var httpsUrl = new UriBuilder(url.OriginalString) {Scheme = Uri.UriSchemeHttps}.Uri;
+            var httpsUrl = new UriBuilder(url.OriginalString) {Scheme = Uri.UriSchemeHttps, Port = -1}.Uri;
             try
             {
                 using var response = await _httpClient.GetAsync(httpsUrl, HttpCompletionOption.ResponseHeadersRead,
                     cancellationToken);
                 if (response.IsSuccessStatusCode)
                     return true;
-                _logger.LogError(
+                _logger.LogInformation(
                     $"IsHttpsSupported({httpsUrl.AbsoluteUri}) failed with status code: {response.StatusCode}.");
                 return response.IsSuccessStatusCode;
             }
             catch (HttpRequestException ex)
             {
-                _logger.LogError($"IsHttpsSupported({httpsUrl.AbsoluteUri}) failed.", ex);
+                _logger.LogInformation($"IsHttpsSupported({httpsUrl.AbsoluteUri}) failed.", ex);
                 return false;
             }
             catch (TaskCanceledException ex)
             {
-                _logger.LogError($"IsHttpsSupported({httpsUrl.AbsoluteUri}) failed.", ex);
+                _logger.LogInformation($"IsHttpsSupported({httpsUrl.AbsoluteUri}) failed.", ex);
                 return false;
             }
             catch (InvalidOperationException ex)
             {
-                _logger.LogError($"IsHttpsSupported({httpsUrl.AbsoluteUri}) failed.", ex);
+                _logger.LogInformation($"IsHttpsSupported({httpsUrl.AbsoluteUri}) failed.", ex);
                 return false;
             }
         }
