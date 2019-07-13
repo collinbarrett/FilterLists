@@ -3,7 +3,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 using FilterLists.Agent.Core.Urls;
-using JetBrains.Annotations;
 using MediatR;
 
 namespace FilterLists.Agent.Features.Urls
@@ -20,7 +19,7 @@ namespace FilterLists.Agent.Features.Urls
             public IEnumerable<EntityUrl> EntityUrls { get; }
         }
 
-        [UsedImplicitly]
+
         public class Handler : IRequestHandler<Command, IEnumerable<EntityUrl>>
         {
             private const int MaxDegreeOfParallelism = 5;

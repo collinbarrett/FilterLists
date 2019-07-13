@@ -2,7 +2,6 @@
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Urls;
-using JetBrains.Annotations;
 using MediatR;
 
 namespace FilterLists.Agent.Features.Urls
@@ -13,7 +12,7 @@ namespace FilterLists.Agent.Features.Urls
         {
         }
 
-        [UsedImplicitly]
+
         public class Handler : AsyncRequestHandler<Command>
         {
             private readonly IMediator _mediator;

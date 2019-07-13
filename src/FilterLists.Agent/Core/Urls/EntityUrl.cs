@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using JetBrains.Annotations;
 
 namespace FilterLists.Agent.Core.Urls
 {
@@ -17,8 +15,7 @@ namespace FilterLists.Agent.Core.Urls
 
         public Entity Entity { get; }
 
-        [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
-        public int Id { [UsedImplicitly] get; }
+        public int Id { get; }
 
         public Uri Url { get; }
 

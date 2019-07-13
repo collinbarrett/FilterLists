@@ -1,9 +1,7 @@
-﻿using JetBrains.Annotations;
-
-namespace FilterLists.Agent.AppSettings
+﻿namespace FilterLists.Agent.AppSettings
 {
     public class ApplicationInsightsSettings
     {
-        public string InstrumentationKey { get; [UsedImplicitly] set; }
+        public string InstrumentationKey { get; set; }
     }
 }

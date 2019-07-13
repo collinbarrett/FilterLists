@@ -6,12 +6,10 @@ using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Lists;
-using JetBrains.Annotations;
 using Microsoft.Extensions.Logging;
 
 namespace FilterLists.Agent.Infrastructure.Web
 {
-    [UsedImplicitly]
     public class ListRepository : IListRepository
     {
         private readonly HttpClient _httpClient;

@@ -5,12 +5,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Urls;
 using FilterLists.Agent.Infrastructure.FilterListsApi.EntityUrls;
-using JetBrains.Annotations;
 using RestSharp;
 
 namespace FilterLists.Agent.Infrastructure.FilterListsApi
 {
-    [UsedImplicitly]
     public class EntityUrlRepository : IEntityUrlRepository
     {
         private static readonly Dictionary<string, (string, Entity)> EndpointAndEntityByDto =

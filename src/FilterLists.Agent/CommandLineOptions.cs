@@ -1,9 +1,7 @@
 ﻿using CommandLine;
-using JetBrains.Annotations;
 
 namespace FilterLists.Agent
 {
-    [UsedImplicitly]
     public class CommandLineOptions
     {
         public CommandLineOptions(bool archiveLists, bool validateUrls)

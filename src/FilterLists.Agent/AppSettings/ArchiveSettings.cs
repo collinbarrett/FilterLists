@@ -1,12 +1,10 @@
-﻿using JetBrains.Annotations;
-
-namespace FilterLists.Agent.AppSettings
+﻿namespace FilterLists.Agent.AppSettings
 {
     public class ArchiveSettings
     {
-        public string CommitMessageSuffix { get; [UsedImplicitly] set; }
-        public string RepositoryDirectory { get; [UsedImplicitly] set; }
-        public string SignatureName { get; [UsedImplicitly] set; }
-        public string SignatureEmail { get; [UsedImplicitly] set; }
+        public string CommitMessageSuffix { get; set; }
+        public string RepositoryDirectory { get; set; }
+        public string SignatureName { get; set; }
+        public string SignatureEmail { get; set; }
     }
 }
