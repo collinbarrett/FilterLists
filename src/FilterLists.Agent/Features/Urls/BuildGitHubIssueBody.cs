@@ -31,7 +31,7 @@ namespace FilterLists.Agent.Features.Urls
                 foreach (var entityInvalidUrls in entityInvalidUrlGroups)
                 {
                     body.Append(
-                        $"<h1><a href=\"https://github.com/collinbarrett/FilterLists/blob/master/data/{nameof(entityInvalidUrls.Key)}\">{nameof(entityInvalidUrls.Key)}</a></h1>");
+                        $"<h1><a href=\"https://github.com/collinbarrett/FilterLists/blob/master/data/{entityInvalidUrls.Key}.json\">{entityInvalidUrls.Key}.json</a></h1>");
                     body.Append("<ul>");
                     foreach (var invalidUrl in entityInvalidUrls)
                     {
