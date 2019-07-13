@@ -13,12 +13,12 @@ namespace FilterLists.Agent.Features.Lists
     {
         public class Command : IRequest
         {
-            public Command(ListUrl listUrl)
+            public Command(ListViewUrl listViewUrl)
             {
-                ListUrl = listUrl;
+                ListViewUrl = listViewUrl;
             }
 
-            public ListUrl ListUrl { get; }
+            public ListViewUrl ListViewUrl { get; }
         }
 
         public class Handler : AsyncRequestHandler<Command>
@@ -33,8 +33,8 @@ namespace FilterLists.Agent.Features.Lists
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                var destinationDirectoryPath = Path.Combine(RepoDirectory, $"{request.ListUrl.Id}");
-                using var input = await _repo.GetAsStreamAsync(request.ListUrl.ViewUrl, cancellationToken);
+                var destinationDirectoryPath = Path.Combine(RepoDirectory, $"{request.ListViewUrl.Id}");
+                using var input = await _repo.GetAsStreamAsync(request.ListViewUrl.ViewUrl, cancellationToken);
                 using var archive = SevenZipArchive.Open(input);
                 foreach (var entry in archive.Entries)
                     if (!entry.IsDirectory)

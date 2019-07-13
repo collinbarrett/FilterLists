@@ -1,28 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 using FilterLists.Agent.Core.Urls;
-using FilterLists.Agent.Extensions;
+using JetBrains.Annotations;
 using MediatR;
 
 namespace FilterLists.Agent.Features.Urls
 {
     public static class ValidateUrls
     {
-        public class Command : IRequest<List<UrlValidationResult>>
+        public class Command : IRequest<IEnumerable<EntityUrl>>
         {
-            public Command(IEnumerable<Uri> urls)
+            public Command(IEnumerable<EntityUrl> entityUrls)
             {
-                Urls = urls;
+                EntityUrls = entityUrls;
             }
 
-            public IEnumerable<Uri> Urls { get; }
+            public IEnumerable<EntityUrl> EntityUrls { get; }
         }
 
-        public class Handler : IRequestHandler<Command, List<UrlValidationResult>>
+        [UsedImplicitly]
+        public class Handler : IRequestHandler<Command, IEnumerable<EntityUrl>>
         {
             private const int MaxDegreeOfParallelism = 5;
             private readonly IUrlValidator _urlValidator;
@@ -32,29 +31,23 @@ namespace FilterLists.Agent.Features.Urls
                 _urlValidator = urlValidator;
             }
 
-            public async Task<List<UrlValidationResult>> Handle(Command request, CancellationToken cancellationToken)
+            public async Task<IEnumerable<EntityUrl>> Handle(Command request, CancellationToken cancellationToken)
             {
                 var validator = BuildValidator(cancellationToken);
-                var brokenUrls = new List<UrlValidationResult>();
-                var distinctUrls = request.Urls.Distinct().DistributeByHost();
-                foreach (var url in distinctUrls)
-                    await validator.SendAsync(url, cancellationToken);
+                foreach (var entityUrl in request.EntityUrls)
+                    await validator.SendAsync(entityUrl, cancellationToken);
                 validator.Complete();
+                var validatedEntityUrls = new List<EntityUrl>();
                 while (await validator.OutputAvailableAsync(cancellationToken))
-                {
-                    var result = await validator.ReceiveAsync(cancellationToken);
-                    if (!result.IsValid())
-                        brokenUrls.Add(result);
-                }
-
+                    validatedEntityUrls.Add(await validator.ReceiveAsync(cancellationToken));
                 await validator.Completion;
-                return brokenUrls;
+                return validatedEntityUrls;
             }
 
-            private TransformBlock<Uri, UrlValidationResult> BuildValidator(CancellationToken cancellationToken)
+            private TransformBlock<EntityUrl, EntityUrl> BuildValidator(CancellationToken cancellationToken)
             {
-                return new TransformBlock<Uri, UrlValidationResult>(
-                    async u => await _urlValidator.ValidateAsync(u, cancellationToken),
+                return new TransformBlock<EntityUrl, EntityUrl>(
+                    e => _urlValidator.ValidateAsync(e, cancellationToken),
                     new ExecutionDataflowBlockOptions {MaxDegreeOfParallelism = MaxDegreeOfParallelism}
                 );
             }

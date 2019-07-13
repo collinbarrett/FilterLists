@@ -1,11 +1,12 @@
 ﻿using System;
 using JetBrains.Annotations;
 
-namespace FilterLists.Agent.Features.Urls.Models.DataFileUrls
+namespace FilterLists.Agent.Features.Urls.Models
 {
     [UsedImplicitly]
     public class ListUrls
     {
+        public int Id { get; [UsedImplicitly] private set; }
         public Uri ChatUrl { get; [UsedImplicitly] private set; }
         public Uri DescriptionSourceUrl { get; [UsedImplicitly] private set; }
         public Uri DonateUrl { get; [UsedImplicitly] private set; }

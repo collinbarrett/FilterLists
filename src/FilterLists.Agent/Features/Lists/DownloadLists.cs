@@ -15,20 +15,20 @@ namespace FilterLists.Agent.Features.Lists
     {
         public class Command : IRequest
         {
-            public Command(IEnumerable<ListUrl> listInfo)
+            public Command(IEnumerable<ListViewUrl> listInfo)
             {
                 ListInfo = listInfo;
             }
 
-            public IEnumerable<ListUrl> ListInfo { get; }
+            public IEnumerable<ListViewUrl> ListInfo { get; }
         }
 
         public class Handler : AsyncRequestHandler<Command>
         {
             private const int MaxDegreeOfParallelism = 5;
 
-            private static readonly Dictionary<string, Func<ListUrl, IRequest>> CommandsByExtension
-                = new Dictionary<string, Func<ListUrl, IRequest>>
+            private static readonly Dictionary<string, Func<ListViewUrl, IRequest>> CommandsByExtension
+                = new Dictionary<string, Func<ListViewUrl, IRequest>>
                 {
                     {"", l => new DownloadRawText.Command(l)},
                     {".7z", l => new DownloadSevenZip.Command(l)},
@@ -69,16 +69,16 @@ namespace FilterLists.Agent.Features.Lists
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
                 var downloader = BuildDownloader(cancellationToken);
-                var orderedListInfo = request.ListInfo.DistributeByHost();
+                var orderedListInfo = request.ListInfo;
                 foreach (var listInfo in orderedListInfo)
                     await downloader.SendAsync(listInfo, cancellationToken);
                 downloader.Complete();
                 await downloader.Completion;
             }
 
-            private ActionBlock<ListUrl> BuildDownloader(CancellationToken cancellationToken)
+            private ActionBlock<ListViewUrl> BuildDownloader(CancellationToken cancellationToken)
             {
-                return new ActionBlock<ListUrl>(
+                return new ActionBlock<ListViewUrl>(
                     async l =>
                     {
                         var errorMessage = $"Error downloading list {l.Id} from {l.ViewUrl}.";

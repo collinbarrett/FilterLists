@@ -6,19 +6,19 @@ using RestSharp;
 
 namespace FilterLists.Agent.Infrastructure.FilterListsApi
 {
-    public class ListUrlRepository : IListUrlRepository
+    public class ListViewUrlRepository : IListViewUrlRepository
     {
         private readonly IFilterListsApiClient _apiClient;
 
-        public ListUrlRepository(IFilterListsApiClient filterListsApiClient)
+        public ListViewUrlRepository(IFilterListsApiClient filterListsApiClient)
         {
             _apiClient = filterListsApiClient;
         }
 
-        public async Task<IEnumerable<ListUrl>> GetAllAsync(CancellationToken cancellationToken)
+        public async Task<IEnumerable<ListViewUrl>> GetAllAsync(CancellationToken cancellationToken)
         {
             var listsRequest = new RestRequest("lists");
-            return await _apiClient.ExecuteAsync<IEnumerable<ListUrl>>(listsRequest, cancellationToken);
+            return await _apiClient.ExecuteAsync<IEnumerable<ListViewUrl>>(listsRequest, cancellationToken);
         }
     }
 }

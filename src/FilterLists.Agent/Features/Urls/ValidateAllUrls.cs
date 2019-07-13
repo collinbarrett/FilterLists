@@ -1,10 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Urls;
-using FilterLists.Agent.Features.Urls.Models.DataFileUrls;
-using FilterLists.Agent.Features.Urls.Models.ValidationResults;
+using JetBrains.Annotations;
 using MediatR;
 
 namespace FilterLists.Agent.Features.Urls
@@ -15,49 +13,26 @@ namespace FilterLists.Agent.Features.Urls
         {
         }
 
+        [UsedImplicitly]
         public class Handler : AsyncRequestHandler<Command>
         {
             private readonly IMediator _mediator;
-            private readonly IUrlRepository _repo;
+            private readonly IEntityUrlRepository _repo;
 
-            public Handler(IMediator mediator, IUrlRepository urlRepository)
+            public Handler(IMediator mediator, IEntityUrlRepository entityUrlRepository)
             {
                 _mediator = mediator;
-                _repo = urlRepository;
+                _repo = entityUrlRepository;
             }
 
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
-                var results = new List<DataFileUrlValidationResults>();
-
-                var licenseUrls = await _repo.GetAllAsync<LicenseUrls>(cancellationToken);
-                var licenseUrlErrors = await _mediator.Send(new ValidateUrls.Command(licenseUrls), cancellationToken);
-                if (licenseUrlErrors.Any())
-                    results.Add(new DataFileUrlValidationResults("License.json", licenseUrlErrors));
-
-                var listUrls = await _repo.GetAllAsync<ListUrls>(cancellationToken);
-                var listUrlErrors = await _mediator.Send(new ValidateUrls.Command(listUrls), cancellationToken);
-                if (listUrlErrors.Any())
-                    results.Add(new DataFileUrlValidationResults("FilterList.json", listUrlErrors));
-
-                var maintainerUrls = await _repo.GetAllAsync<MaintainerUrls>(cancellationToken);
-                var maintainerUrlErrors =
-                    await _mediator.Send(new ValidateUrls.Command(maintainerUrls), cancellationToken);
-                if (maintainerUrlErrors.Any())
-                    results.Add(new DataFileUrlValidationResults("Maintainer.json", maintainerUrlErrors));
-
-                var softwareUrls = await _repo.GetAllAsync<SoftwareUrls>(cancellationToken);
-                var softwareUrlErrors = await _mediator.Send(new ValidateUrls.Command(softwareUrls), cancellationToken);
-                if (softwareUrlErrors.Any())
-                    results.Add(new DataFileUrlValidationResults("Software.json", softwareUrlErrors));
-
-                var syntaxUrls = await _repo.GetAllAsync<SyntaxUrls>(cancellationToken);
-                var syntaxUrlErrors = await _mediator.Send(new ValidateUrls.Command(syntaxUrls), cancellationToken);
-                if (syntaxUrlErrors.Any())
-                    results.Add(new DataFileUrlValidationResults("Syntax.json", syntaxUrlErrors));
-
-                if (results.Any())
-                    await _mediator.Send(new CreateOrUpdateUrlValidationIssue.Command(results), cancellationToken);
+                var entityUrls = await _repo.GetAllAsync(cancellationToken);
+                var validatedEntityUrls = await _mediator.Send(new ValidateUrls.Command(entityUrls), cancellationToken);
+                var invalidEntityUrls = validatedEntityUrls.Where(e => !e.IsValid()).ToList();
+                if (invalidEntityUrls.Any())
+                    await _mediator.Send(new CreateOrUpdateUrlValidationIssue.Command(invalidEntityUrls),
+                        cancellationToken);
                 else
                     await _mediator.Send(new CloseUrlValidationIssue.Command(), cancellationToken);
             }

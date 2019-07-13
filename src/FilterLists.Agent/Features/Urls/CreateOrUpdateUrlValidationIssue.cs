@@ -2,8 +2,8 @@
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.GitHub;
+using FilterLists.Agent.Core.Urls;
 using FilterLists.Agent.Extensions;
-using FilterLists.Agent.Features.Urls.Models.ValidationResults;
 using MediatR;
 using Octokit;
 
@@ -13,12 +13,12 @@ namespace FilterLists.Agent.Features.Urls
     {
         public class Command : IRequest
         {
-            public Command(IEnumerable<DataFileUrlValidationResults> dataFileUrlValidationResults)
+            public Command(IEnumerable<EntityUrl> invalidEntityUrls)
             {
-                DataFileUrlValidationResults = dataFileUrlValidationResults;
+                InvalidEntityUrls = invalidEntityUrls;
             }
 
-            public IEnumerable<DataFileUrlValidationResults> DataFileUrlValidationResults { get; }
+            public IEnumerable<EntityUrl> InvalidEntityUrls { get; }
         }
 
         public class Handler : AsyncRequestHandler<Command>
@@ -39,7 +39,7 @@ namespace FilterLists.Agent.Features.Urls
             protected override async Task Handle(Command request, CancellationToken cancellationToken)
             {
                 var issue = await GetOpenIssueOrNull() ?? await CreateBaseIssue();
-                await UpdateIssue(issue, request.DataFileUrlValidationResults, cancellationToken);
+                await UpdateIssue(issue, request.InvalidEntityUrls, cancellationToken);
             }
 
             private async Task<Issue> GetOpenIssueOrNull()
@@ -59,15 +59,14 @@ namespace FilterLists.Agent.Features.Urls
                 return await _repo.CreateIssueAsync(newIssue);
             }
 
-            private async Task UpdateIssue(Issue issue,
-                IEnumerable<DataFileUrlValidationResults> dataFileUrlValidationResults,
+            private async Task UpdateIssue(Issue issue, IEnumerable<EntityUrl> invalidEntityUrls,
                 CancellationToken cancellationToken)
             {
                 var updateIssue = issue.ToUpdate();
                 updateIssue.AddLabel(HelpWantedLabel);
                 updateIssue.AddLabel(AgentBotLabel);
                 updateIssue.AddLabel(DataLabel);
-                updateIssue.Body = await _mediator.Send(new BuildGitHubIssueBody.Command(dataFileUrlValidationResults),
+                updateIssue.Body = await _mediator.Send(new BuildGitHubIssueBody.Command(invalidEntityUrls),
                     cancellationToken);
                 await _repo.UpdateIssueAsync(issue.Number, updateIssue);
             }

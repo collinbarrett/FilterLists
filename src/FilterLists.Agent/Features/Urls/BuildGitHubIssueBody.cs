@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using FilterLists.Agent.Features.Urls.Models.ValidationResults;
+using FilterLists.Agent.Core.Urls;
 using MediatR;
 
 namespace FilterLists.Agent.Features.Urls
@@ -9,12 +10,12 @@ namespace FilterLists.Agent.Features.Urls
     {
         public class Command : IRequest<string>
         {
-            public Command(IEnumerable<DataFileUrlValidationResults> dataFileUrlValidationResults)
+            public Command(IEnumerable<EntityUrl> invalidEntityUrls)
             {
-                DataFileUrlValidationResults = dataFileUrlValidationResults;
+                InvalidEntityUrls = invalidEntityUrls;
             }
 
-            public IEnumerable<DataFileUrlValidationResults> DataFileUrlValidationResults { get; }
+            public IEnumerable<EntityUrl> InvalidEntityUrls { get; }
         }
 
         public class Handler : RequestHandler<Command, string>
@@ -26,16 +27,18 @@ namespace FilterLists.Agent.Features.Urls
             {
                 var body = new StringBuilder();
                 body.Append(IssueHeader);
-                foreach (var fileReults in request.DataFileUrlValidationResults)
+                var entityInvalidUrlGroups = request.InvalidEntityUrls.GroupBy(i => i.FilterListsEntity);
+                foreach (var entityInvalidUrls in entityInvalidUrlGroups)
                 {
                     body.Append(
-                        $"<h1><a href=\"https://github.com/collinbarrett/FilterLists/blob/master/data/{fileReults.DataFileName}\">{fileReults.DataFileName}</a></h1>");
+                        $"<h1><a href=\"https://github.com/collinbarrett/FilterLists/blob/master/data/{nameof(entityInvalidUrls.Key)}\">{nameof(entityInvalidUrls.Key)}</a></h1>");
                     body.Append("<ul>");
-                    foreach (var result in fileReults.Results)
+                    foreach (var invalidUrl in entityInvalidUrls)
                     {
-                        body.Append($"<li><a href=\"{result.Url.OriginalString}\">{result.Url.OriginalString}</a>");
+                        body.Append(
+                            $"<li><a href=\"{invalidUrl.ViewUrl.OriginalString}\">{invalidUrl.ViewUrl.OriginalString}</a>");
                         body.Append("<ul>");
-                        foreach (var message in result.Messages)
+                        foreach (var message in invalidUrl.ValidationMessages)
                             body.Append($"<li>{message}</li>");
                         body.Append("</ul>");
                         body.Append("</li>");

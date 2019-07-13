@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 
 namespace FilterLists.Agent.Core.Lists
 {
-    public interface IListUrlRepository
+    public interface IListViewUrlRepository
     {
-        Task<IEnumerable<ListUrl>> GetAllAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<ListViewUrl>> GetAllAsync(CancellationToken cancellationToken);
     }
 }

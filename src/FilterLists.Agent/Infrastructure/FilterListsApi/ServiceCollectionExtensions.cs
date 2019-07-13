@@ -9,8 +9,8 @@ namespace FilterLists.Agent.Infrastructure.FilterListsApi
         public static void AddFilterListsApiServices(this IServiceCollection services)
         {
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
-            services.AddTransient<IListUrlRepository, ListUrlRepository>();
-            services.AddTransient<IUrlRepository, UrlRepository>();
+            services.AddTransient<IListViewUrlRepository, ListViewUrlRepository>();
+            services.AddTransient<IEntityUrlRepository, EntityUrlRepository>();
         }
     }
 }

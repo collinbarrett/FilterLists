@@ -4,8 +4,6 @@ using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Agent.Core.Urls;
-using FilterLists.Agent.Extensions;
-using FilterLists.Agent.Infrastructure.FilterListsApi;
 using JetBrains.Annotations;
 using Microsoft.Extensions.Logging;
 
@@ -15,9 +13,9 @@ namespace FilterLists.Agent.Infrastructure.Web
     public class UrlValidator : IUrlValidator
     {
         private readonly HttpClient _httpClient;
-        private readonly ILogger<UrlRepository> _logger;
+        private readonly ILogger<UrlValidator> _logger;
 
-        public UrlValidator(HttpClient httpClient, ILogger<UrlRepository> logger)
+        public UrlValidator(HttpClient httpClient, ILogger<UrlValidator> logger)
         {
             httpClient.Timeout = TimeSpan.FromSeconds(90);
             var header = new ProductHeaderValue("FilterLists.Agent");
@@ -28,55 +26,43 @@ namespace FilterLists.Agent.Infrastructure.Web
             _logger = logger;
         }
 
-        public async Task<UrlValidationResult> ValidateAsync(Uri u, CancellationToken cancellationToken)
+        public async Task<EntityUrl> ValidateAsync(EntityUrl entityUrl, CancellationToken cancellationToken)
         {
-            var result = new UrlValidationResult(u);
-            if (!u.IsValidUrl())
-            {
-                result.SetBroken();
-                _logger.LogError($"{u.OriginalString}) is not a valid URL.");
-                return result;
-            }
-
+            var url = entityUrl.ViewUrl;
             try
             {
                 using var response =
-                    await _httpClient.GetAsync(u, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
-                if (u.Scheme == Uri.UriSchemeHttp && await IsHttpsSupported(u, cancellationToken))
-                    result.SetSupportsHttps();
-                if (response.IsSuccessStatusCode)
-                    return result;
+                    await _httpClient.GetAsync(url, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
+                if (url.Scheme == Uri.UriSchemeHttp && await IsHttpsSupported(url, cancellationToken))
+                    entityUrl.SetSupportsHttps();
                 if ((int)response.StatusCode >= 300 && (int)response.StatusCode < 400)
                 {
-                    result.SetRedirectsTo(response.Headers.Location);
+                    entityUrl.SetRedirectsTo(response.Headers.Location);
                 }
-                else
+                else if (!response.IsSuccessStatusCode)
                 {
-                    result.SetBroken();
+                    entityUrl.SetBroken();
                     _logger.LogError(
-                        $"Url validation for ({u.AbsoluteUri}) failed with status code: {response.StatusCode}.");
+                        $"Url validation for ({url.AbsoluteUri}) failed with status code: {response.StatusCode}.");
                 }
-
-                return result;
             }
             catch (HttpRequestException ex)
             {
-                result.SetBroken();
-                _logger.LogError($"Url validation for ({u.AbsoluteUri}) failed.", ex);
-                return result;
+                entityUrl.SetBroken();
+                _logger.LogError($"Url validation for ({url.AbsoluteUri}) failed.", ex);
             }
             catch (TaskCanceledException ex)
             {
-                result.SetBroken();
-                _logger.LogError($"Url validation for ({u.AbsoluteUri}) failed.", ex);
-                return result;
+                entityUrl.SetBroken();
+                _logger.LogError($"Url validation for ({url.AbsoluteUri}) failed.", ex);
             }
             catch (InvalidOperationException ex)
             {
-                result.SetBroken();
-                _logger.LogError($"Url validation for ({u.AbsoluteUri}) failed.", ex);
-                return result;
+                entityUrl.SetBroken();
+                _logger.LogError($"Url validation for ({url.AbsoluteUri}) failed.", ex);
             }
+
+            return entityUrl;
         }
 
         private async Task<bool> IsHttpsSupported(Uri url, CancellationToken cancellationToken)
