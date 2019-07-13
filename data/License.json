@@ -91,7 +91,7 @@
   {
     "id": 14,
     "descriptionUrl": "http://www.wtfpl.net/",
-    "name": "Do What The Fuck You Want To Public License (WTFPL)",
+    "name": "WTFPL",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
   },
@@ -222,7 +222,7 @@
   {
     "id": 33,
     "descriptionUrl": "https://www.mozilla.org/MPL/2.0/",
-    "name": "Mozilla Public License, version 2.0",
+    "name": "Mozilla Public License v2.0",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
   },
@@ -230,6 +230,27 @@
     "id": 34,
     "descriptionUrl": "https://www.gnu.org/licenses/lgpl-3.0.en.html",
     "name": "Lesser GPL v3",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 35,
+    "descriptionUrl": "https://github.com/DandelionSprout/Dandelicence/blob/master/DandelicenceNewestVersion.md",
+    "name": "Dandelicence",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 36,
+    "descriptionUrl": "https://creativecommons.org/licenses/by-nd/3.0/",
+    "name": "CC BY-ND 3.0",
+    "permissiveAdaptation": false,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 37,
+    "descriptionUrl": "https://www.gnu.org/licenses/lgpl-2.1.en.html",
+    "name": "Lesser GPL v2.1",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
   }
