@@ -33,15 +33,15 @@ namespace FilterLists.Agent.Infrastructure.FilterListsApi
         public async Task<IEnumerable<EntityUrl>> GetAllAsync(CancellationToken cancellationToken)
         {
             return (await Task.WhenAll(
-                    Task.Run(() => GetAllForEntity<LicenseUrls>(cancellationToken), cancellationToken),
-                    Task.Run(() => GetAllForEntity<ListUrls>(cancellationToken), cancellationToken),
-                    Task.Run(() => GetAllForEntity<MaintainerUrls>(cancellationToken), cancellationToken),
-                    Task.Run(() => GetAllForEntity<SoftwareUrls>(cancellationToken), cancellationToken),
-                    Task.Run(() => GetAllForEntity<SyntaxUrls>(cancellationToken), cancellationToken)))
+                    Task.Run(() => GetDistinctForEntity<LicenseUrls>(cancellationToken), cancellationToken),
+                    Task.Run(() => GetDistinctForEntity<ListUrls>(cancellationToken), cancellationToken),
+                    Task.Run(() => GetDistinctForEntity<MaintainerUrls>(cancellationToken), cancellationToken),
+                    Task.Run(() => GetDistinctForEntity<SoftwareUrls>(cancellationToken), cancellationToken),
+                    Task.Run(() => GetDistinctForEntity<SyntaxUrls>(cancellationToken), cancellationToken)))
                 .SelectMany(r => r);
         }
 
-        private async Task<IEnumerable<EntityUrl>> GetAllForEntity<TModel>(CancellationToken cancellationToken)
+        private async Task<IEnumerable<EntityUrl>> GetDistinctForEntity<TModel>(CancellationToken cancellationToken)
         {
             var request = new RestRequest($"{EndpointAndEntityByDto[typeof(TModel).Name].Item1}/seed");
             var response = await _apiClient.ExecuteAsync<IEnumerable<TModel>>(request, cancellationToken);
