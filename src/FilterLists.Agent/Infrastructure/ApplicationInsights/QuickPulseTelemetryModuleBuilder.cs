@@ -3,10 +3,9 @@ using Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.QuickPuls
 
 namespace FilterLists.Agent.Infrastructure.ApplicationInsights
 {
-    public static class QuickPulseTelemetryModuleExtensions
+    public static class QuickPulseTelemetryModuleBuilder
     {
-        public static void InitializeCustom(this QuickPulseTelemetryModule quickPulseTelemetryModule,
-            TelemetryConfiguration telemetryConfiguration)
+        public static QuickPulseTelemetryModule Build(TelemetryConfiguration telemetryConfiguration)
         {
             QuickPulseTelemetryProcessor processor = null;
             telemetryConfiguration.TelemetryProcessorChainBuilder
@@ -16,11 +15,13 @@ namespace FilterLists.Agent.Infrastructure.ApplicationInsights
                     return processor;
                 })
                 .Build();
+            var quickPulseTelemetryModule = new QuickPulseTelemetryModule();
             quickPulseTelemetryModule.Initialize(telemetryConfiguration);
             quickPulseTelemetryModule.RegisterTelemetryProcessor(processor);
             foreach (var telemetryProcessor in telemetryConfiguration.TelemetryProcessors)
                 if (telemetryProcessor is ITelemetryModule telemetryModule)
                     telemetryModule.Initialize(telemetryConfiguration);
+            return quickPulseTelemetryModule;
         }
     }
 }
