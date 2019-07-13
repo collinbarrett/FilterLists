@@ -27,6 +27,14 @@ namespace FilterLists.Agent.Infrastructure.Web
         public async Task<EntityUrl> ValidateAsync(EntityUrl entityUrl, CancellationToken cancellationToken)
         {
             var url = entityUrl.Url;
+            if (!Uri.IsWellFormedUriString(url.OriginalString, UriKind.Absolute))
+            {
+                entityUrl.SetBroken();
+                _logger.LogError(
+                    $"Url validation for ({url.OriginalString}) failed because it appears to be improperly formatted.");
+                return entityUrl;
+            }
+
             try
             {
                 using var response =
