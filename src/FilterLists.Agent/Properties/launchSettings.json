@@ -2,7 +2,7 @@
   "profiles": {
     "FilterLists.Agent": {
       "commandName": "Project",
-      "commandLineArgs": "-a -v"
+      "commandLineArgs": "-v"
     }
   }
 }
