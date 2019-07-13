@@ -7,7 +7,7 @@ namespace FilterLists.Agent.Infrastructure.Disk
 {
     public static class ServiceCollectionExtensions
     {
-        public static void AddDiskResources(this IServiceCollection services)
+        public static void AddDiskServices(this IServiceCollection services)
         {
             services.AddTransient<IRepository, Repository>(s =>
             {

@@ -23,10 +23,10 @@ namespace FilterLists.Agent.Infrastructure.DependencyInjection
             services.AddLocalization();
             services.AddTransient<Parser>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
-            services.AddDiskResources();
-            services.AddFilterListsApiResources();
-            services.AddGitHubResources();
-            services.AddWebResources();
+            services.AddDiskServices();
+            services.AddFilterListsApiServices();
+            services.AddGitHubServices();
+            services.AddWebServices();
         }
 
         private static void AddConfiguration(this IServiceCollection services)

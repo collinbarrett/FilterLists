@@ -10,7 +10,7 @@ namespace FilterLists.Agent.Infrastructure.Web
 {
     public static class ServiceCollectionExtensions
     {
-        public static void AddWebResources(this IServiceCollection services)
+        public static void AddWebServices(this IServiceCollection services)
         {
             services.AddHttpClient<IListRepository, ListRepository>().AddTransientHttpErrorPolicy(b =>
                 b.OrResult(r => r.StatusCode == HttpStatusCode.TooManyRequests)

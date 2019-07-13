@@ -6,7 +6,7 @@ namespace FilterLists.Agent.Infrastructure.FilterListsApi
 {
     public static class ServiceCollectionExtensions
     {
-        public static void AddFilterListsApiResources(this IServiceCollection services)
+        public static void AddFilterListsApiServices(this IServiceCollection services)
         {
             services.AddSingleton<IFilterListsApiClient, FilterListsApiClient>();
             services.AddTransient<IListUrlRepository, ListUrlRepository>();

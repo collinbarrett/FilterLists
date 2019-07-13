@@ -8,7 +8,7 @@ namespace FilterLists.Agent.Infrastructure.GitHub
 {
     public static class ServiceCollectionExtensions
     {
-        public static void AddGitHubResources(this IServiceCollection services)
+        public static void AddGitHubServices(this IServiceCollection services)
         {
             services.AddSingleton<IGitHubClient, GitHubClient>(s =>
             {
