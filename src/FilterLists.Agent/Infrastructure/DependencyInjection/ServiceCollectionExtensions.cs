@@ -4,6 +4,7 @@ using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Infrastructure.Disk;
 using FilterLists.Agent.Infrastructure.FilterListsApi;
 using FilterLists.Agent.Infrastructure.GitHub;
+using FilterLists.Agent.Infrastructure.Polly;
 using FilterLists.Agent.Infrastructure.Web;
 using MediatR;
 using Microsoft.ApplicationInsights;
@@ -23,6 +24,7 @@ namespace FilterLists.Agent.Infrastructure.DependencyInjection
             services.AddLocalization();
             services.AddTransient<Parser>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddPollyPolicyRegistry();
             services.AddDiskServices();
             services.AddFilterListsApiServices();
             services.AddGitHubServices();
