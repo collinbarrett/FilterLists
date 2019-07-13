@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using JetBrains.Annotations;
 
 namespace FilterLists.Agent.Core.Urls
 {
@@ -14,8 +16,12 @@ namespace FilterLists.Agent.Core.Urls
         }
 
         public FilterListsEntity FilterListsEntity { get; }
-        public int Id { get; }
+
+        [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
+        public int Id { [UsedImplicitly] get; }
+
         public Uri ViewUrl { get; }
+
         public List<string> ValidationMessages { get; } = new List<string>();
 
         public bool IsValid()
