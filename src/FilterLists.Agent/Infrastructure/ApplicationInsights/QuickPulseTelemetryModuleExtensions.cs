@@ -5,7 +5,7 @@ namespace FilterLists.Agent.Infrastructure.ApplicationInsights
 {
     public static class QuickPulseTelemetryModuleExtensions
     {
-        public static void InitializeQuickPulseTelemetryModule(this QuickPulseTelemetryModule quickPulseTelemetryModule,
+        public static void InitializeCustom(this QuickPulseTelemetryModule quickPulseTelemetryModule,
             TelemetryConfiguration telemetryConfiguration)
         {
             QuickPulseTelemetryProcessor processor = null;

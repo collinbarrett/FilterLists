@@ -46,7 +46,7 @@ namespace FilterLists.Agent
 
             var telemetryConfiguration = _serviceProvider.GetService<TelemetryConfiguration>();
             _quickPulseTelemetryModule = new QuickPulseTelemetryModule();
-            _quickPulseTelemetryModule.InitializeQuickPulseTelemetryModule(telemetryConfiguration);
+            _quickPulseTelemetryModule.InitializeCustom(telemetryConfiguration);
         }
 
         private static void Teardown()
