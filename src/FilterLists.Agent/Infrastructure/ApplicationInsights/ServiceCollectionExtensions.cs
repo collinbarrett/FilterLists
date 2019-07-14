@@ -16,7 +16,7 @@ namespace FilterLists.Agent.Infrastructure.ApplicationInsights
                 return new QuickPulseTelemetryModuleBuilder(telemetryConfiguration).Build();
             });
 
-            // init never resolved singleton in intermediate ServiceProvider
+            // init never resolved singleton
             services.BuildServiceProvider().GetService<QuickPulseTelemetryModule>();
         }
     }

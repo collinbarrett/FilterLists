@@ -31,15 +31,15 @@ namespace FilterLists.Agent.Infrastructure.DependencyInjection
         public static void ConfigureServices(this IServiceCollection services)
         {
             services.ConfigureSettings();
-            services.AddApplicationInsights(ApplicationInsightsSettings);
             services.AddLogging();
+            services.AddApplicationInsights(ApplicationInsightsSettings);
             services.AddLocalization();
             services.AddTransient<Parser>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             services.AddPollyPolicyRegistry();
-            services.AddDiskServices();
+            services.AddDiskServices(Configuration.GetSettings<ArchiveSettings>());
             services.AddFilterListsApiServices();
-            services.AddGitHubServices();
+            services.AddGitHubServices(Configuration.GetSettings<GitHubSettings>());
             services.AddWebServices();
         }
 
