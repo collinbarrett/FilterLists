@@ -314,8 +314,8 @@
   {
     "id": 31,
     "description": "Contains a list of elements of advertising, such as banners or flash animations, the most commonly used on Polish websites.",
-    "descriptionSourceUrl": "http://niecko.pl/adblock/",
-    "homeUrl": "http://niecko.pl/adblock/",
+    "descriptionSourceUrl": "https://niecko.pl/adblock/",
+    "homeUrl": "https://niecko.pl/adblock/",
     "licenseId": 5,
     "name": "PLgeneral",
     "syntaxId": 3,
@@ -711,7 +711,7 @@
   {
     "id": 64,
     "description": "A list combining Malware Domain List and Spybot.",
-    "licenseId": 5,
+    "licenseId": 12,
     "name": "Jansal's Hosts Light",
     "publishedDate": "2010-12-11T10:54:09",
     "syntaxId": 1,
@@ -723,7 +723,7 @@
   {
     "id": 65,
     "description": "A list combining Malware Domain List, Peter Lowe's List, Spybot, and Spyware Blaster.",
-    "licenseId": 5,
+    "licenseId": 12,
     "name": "Jansal's Hosts",
     "publishedDate": "2010-08-18T14:03:09",
     "syntaxId": 1,
@@ -932,7 +932,7 @@
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/FadeMind/hosts.extras",
     "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "UncheckyAds",
     "publishedDate": "2016-09-29T13:52:34",
     "syntaxId": 1,
@@ -1396,7 +1396,7 @@
     "descriptionSourceUrl": "https://hostsfile.mine.nu/",
     "emailAddress": "wduk10@hotmail.com",
     "homeUrl": "https://hostsfile.mine.nu/",
-    "licenseId": 4,
+    "licenseId": 34,
     "name": "The Hosts File Project Hosts",
     "syntaxId": 1,
     "viewUrl": "https://hostsfile.mine.nu/hosts0.txt"
@@ -1576,7 +1576,7 @@
     "descriptionSourceUrl": "https://adblockplus.org/subscriptions",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
     "homeUrl": "https://code.google.com/archive/p/ruadlist/",
-    "licenseId": 5,
+    "licenseId": 12,
     "name": "RU AdList",
     "syntaxId": 3,
     "updatedDate": "2019-04-14T22:31:12",
@@ -1619,7 +1619,7 @@
     "description": "Blocks advertisements and trackers.",
     "emailAddress": "wduk10@hotmail.com",
     "homeUrl": "https://hostsfile.mine.nu/",
-    "licenseId": 5,
+    "licenseId": 34,
     "name": "The Hosts File Project Adblock Filters",
     "syntaxId": 3,
     "viewUrl": "https://hostsfile.mine.nu/downloads/adblock.txt"
@@ -1747,8 +1747,8 @@
   {
     "id": 146,
     "description": "Adblock Plus for Japan domestic and Japanese correspondence Universal Filter.",
-    "descriptionSourceUrl": "http://web.archive.org/web/20120419124052/http://www.schuzak.jp/other/abp.html",
-    "homeUrl": "http://web.archive.org/web/20120419124052/http://www.schuzak.jp/other/abp.html",
+    "descriptionSourceUrl": "https://web.archive.org/web/20120419124052/http://www.schuzak.jp/other/abp.html",
+    "homeUrl": "https://web.archive.org/web/20120419124052/http://www.schuzak.jp/other/abp.html",
     "licenseId": 30,
     "name": "Schuzak's Universal Filter",
     "syntaxId": 3,
@@ -2580,7 +2580,7 @@
     "id": 220,
     "description": "Blocks Korean regional advertisements and trackers.",
     "homeUrl": "https://code.google.com/archive/p/adblock-korea/",
-    "licenseId": 5,
+    "licenseId": 10,
     "name": "Adblock Korea",
     "syntaxId": 3,
     "updatedDate": "2014-12-01T00:00:00",
@@ -2803,7 +2803,7 @@
     "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/easytest.txt",
     "forumUrl": "https://forums.lanik.us/viewtopic.php?t=8505",
     "homeUrl": "https://forums.lanik.us/viewtopic.php?t=8505",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyTest",
     "syntaxId": 3,
     "updatedDate": "2019-04-08T10:39:12",
@@ -2856,7 +2856,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=23",
     "homeUrl": "https://easylist.to/",
     "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "EasyList Without Rules for Adult Sites",
     "syntaxId": 3,
     "updatedDate": "2019-04-08T11:18:13",
@@ -3284,8 +3284,8 @@
     "donateUrl": "https://supporters.eff.org/donate/support-privacy-badger",
     "homeUrl": "https://www.eff.org/privacybadger",
     "issuesUrl": "https://github.com/EFForg/privacybadger/issues",
-    "licenseId": 5,
-    "name": "Cookie Blocklist",
+    "licenseId": 4,
+    "name": "EFF Cookie Blocklist",
     "syntaxId": 28,
     "updatedDate": "2019-03-03T11:11:11",
     "viewUrl": "https://www.eff.org/files/cookieblocklist.txt"
@@ -4092,7 +4092,7 @@
   {
     "id": 348,
     "homeUrl": "http://vxvault.net/",
-    "licenseId": 5,
+    "licenseId": 39,
     "name": "VXVault",
     "syntaxId": 8,
     "updatedDate": "2019-04-13T13:08:11",
@@ -4520,7 +4520,7 @@
     "descriptionSourceUrl": "https://rickrolldb.com/",
     "homeUrl": "https://rickrolldb.com/",
     "issuesUrl": "https://github.com/jamiew/rickrolldb/issues",
-    "licenseId": 5,
+    "licenseId": 38,
     "name": "Rickroll Blacklist",
     "submissionUrl": "https://rickrolldb.com/",
     "syntaxId": 3,
@@ -5079,7 +5079,7 @@
     "description": "Complementary subscription to EasyList.",
     "descriptionSourceUrl": "https://github.com/easylistbrasil/easylistbrasil/",
     "emailAddress": "easylistbrasil.subscription@gmail.com",
-    "forumUrl": "http://easylistbrasil.freeforums.net",
+    "forumUrl": "https://easylistbrasil.freeforums.net",
     "homeUrl": "https://easylistbrasil.github.io/",
     "issuesUrl": "https://github.com/easylistbrasil/easylistbrasil/issues",
     "licenseId": 8,
@@ -5302,7 +5302,7 @@
     "description": "A firewall blacklist composed from IP lists, providing maximum protection with minimum false positives. Suitable for basic protection on all internet facing servers, routers and firewalls. (includes: bambenek_c2, dshield, feodo, fullbogons, spamhaus_drop, spamhaus_edrop, sslbl, zeus_badips, ransomware_rw)",
     "emailAddress": "costa@tsaousis.gr",
     "homeUrl": "https://iplists.firehol.org/",
-    "licenseId": 5,
+    "licenseId": 19,
     "name": "Firehol Level 1",
     "publishedDate": "2018-10-07T05:30:15",
     "syntaxId": 9,
@@ -5314,7 +5314,7 @@
     "description": "An ipset made from blocklists that track attacks, during  about the last 48 hours. (includes: blocklist_de, dshield_1d, greensnow)",
     "emailAddress": "costa@tsaousis.gr",
     "homeUrl": "https://iplists.firehol.org/",
-    "licenseId": 5,
+    "licenseId": 19,
     "name": "Firehol Level 2",
     "publishedDate": "2018-10-07T05:30:15",
     "syntaxId": 9,
@@ -6323,7 +6323,7 @@
     "description": "A filterlist to prevent sites that know to trick and gain 'Facebook access token' from you that their site offer to boost likes, followers, comments, post shares, etc. while gain access your account to do the same for others.",
     "homeUrl": "https://github.com/kowith337/ThaiAntiTokenSites",
     "issuesUrl": "https://github.com/kowith337/ThaiAntiTokenSites/issues",
-    "licenseId": 5,
+    "licenseId": 13,
     "name": "ThaiAntiTokenSites",
     "publishedDate": "2016-01-04T00:00:00",
     "syntaxId": 4,
@@ -6336,7 +6336,7 @@
     "description": "A hosts file to prevent sites that know to trick and gain 'Facebook access token' from you that their site offer to boost likes, followers, comments, post shares, etc. while gain access your account to do the same for others.",
     "homeUrl": "https://github.com/kowith337/ThaiAntiTokenSites",
     "issuesUrl": "https://github.com/kowith337/ThaiAntiTokenSites/issues",
-    "licenseId": 5,
+    "licenseId": 13,
     "name": "ThaiAntiTokenSites Hosts",
     "publishedDate": "2016-01-04T00:00:00",
     "syntaxId": 1,
@@ -7564,7 +7564,7 @@
     "descriptionSourceUrl": "https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt",
     "homeUrl": "https://github.com/realodix/AdBlockID",
     "issuesUrl": "https://github.com/realodix/AdBlockID/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "AdBlockID",
     "publishedDate": "2017-11-30T11:09:05",
     "syntaxId": 3,
@@ -8429,7 +8429,7 @@
   {
     "id": 815,
     "homeUrl": "https://code.google.com/archive/p/adblocking-openfilter-jp/",
-    "licenseId": 5,
+    "licenseId": 32,
     "name": "Adblocking Open Filter JP",
     "syntaxId": 3,
     "updatedDate": "2012-09-16T00:00:00",
@@ -13381,7 +13381,7 @@
     "description": "Stop Forum Spam is a free service that records reports of spam on forums, blogs and wikis to name a few. All these records are then made available to you search and view but most importantly, to access in an automated way to block suspected spammers before they can get in the front door. Everyone is familiar with more traditional 'solve the word' systems to prevent abuse, Stop Forum Spam is a targeted and specialsed solution to help stop abuse of your website.",
     "forumUrl": "https://www.stopforumspam.com/forum/",
     "homeUrl": "https://www.stopforumspam.com/",
-    "licenseId": 5,
+    "licenseId": 26,
     "name": "StopForumSpam Toxic Domains Whole",
     "syntaxId": 2,
     "updatedDate": "2019-04-11T00:16:11",
@@ -13446,7 +13446,7 @@
   {
     "id": 1305,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Adv Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13458,7 +13458,7 @@
   {
     "id": 1306,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Adv Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13470,7 +13470,7 @@
   {
     "id": 1307,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Aggressive Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13482,7 +13482,7 @@
   {
     "id": 1308,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Aggressive Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13494,7 +13494,7 @@
   {
     "id": 1309,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Alcohol Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13506,7 +13506,7 @@
   {
     "id": 1310,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Alcohol Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13518,7 +13518,7 @@
   {
     "id": 1311,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List AnonVPN Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13530,7 +13530,7 @@
   {
     "id": 1312,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List AnonVPN Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13542,7 +13542,7 @@
   {
     "id": 1313,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Automobile Bikes Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13554,7 +13554,7 @@
   {
     "id": 1314,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Automobile Bikes Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13566,7 +13566,7 @@
   {
     "id": 1315,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Automobile Boats Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13578,7 +13578,7 @@
   {
     "id": 1316,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Automobile Boats Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13590,7 +13590,7 @@
   {
     "id": 1317,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Automobile Cars Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13602,7 +13602,7 @@
   {
     "id": 1318,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Automobile Cars Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13614,7 +13614,7 @@
   {
     "id": 1319,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Automobile Planes Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13626,7 +13626,7 @@
   {
     "id": 1320,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Automobile Planes Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13638,7 +13638,7 @@
   {
     "id": 1321,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Chat Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13650,7 +13650,7 @@
   {
     "id": 1322,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Chat Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13662,7 +13662,7 @@
   {
     "id": 1323,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Costtraps Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13674,7 +13674,7 @@
   {
     "id": 1324,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Costtraps Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13686,7 +13686,7 @@
   {
     "id": 1325,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Dating Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13698,7 +13698,7 @@
   {
     "id": 1326,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Dating Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13710,7 +13710,7 @@
   {
     "id": 1327,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Downloads Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13722,7 +13722,7 @@
   {
     "id": 1328,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Downloads Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13734,7 +13734,7 @@
   {
     "id": 1329,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Drugs Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13746,7 +13746,7 @@
   {
     "id": 1330,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Drugs Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13758,7 +13758,7 @@
   {
     "id": 1331,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Dynamic Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13770,7 +13770,7 @@
   {
     "id": 1332,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Dynamic Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13782,7 +13782,7 @@
   {
     "id": 1333,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Education Schools Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13794,7 +13794,7 @@
   {
     "id": 1334,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Education Schools Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13806,7 +13806,7 @@
   {
     "id": 1335,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Finance Banking Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13818,7 +13818,7 @@
   {
     "id": 1336,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Finance Banking Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13830,7 +13830,7 @@
   {
     "id": 1337,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Finance Insurance Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13842,7 +13842,7 @@
   {
     "id": 1338,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Finance Insurance Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13854,7 +13854,7 @@
   {
     "id": 1339,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Finance Moneylending Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13866,7 +13866,7 @@
   {
     "id": 1340,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Finance Moneylending Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13878,7 +13878,7 @@
   {
     "id": 1341,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Finance Other Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13890,7 +13890,7 @@
   {
     "id": 1342,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Finance Other Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13902,7 +13902,7 @@
   {
     "id": 1343,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Finance Realestate Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13914,7 +13914,7 @@
   {
     "id": 1344,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Finance Realestate Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13926,7 +13926,7 @@
   {
     "id": 1345,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Finance Trading Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13938,7 +13938,7 @@
   {
     "id": 1346,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Finance Trading Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13950,7 +13950,7 @@
   {
     "id": 1347,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Fortunetelling Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13962,7 +13962,7 @@
   {
     "id": 1348,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Fortunetelling Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13974,7 +13974,7 @@
   {
     "id": 1349,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Forum Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13986,7 +13986,7 @@
   {
     "id": 1350,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Forum Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -13998,7 +13998,7 @@
   {
     "id": 1351,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Gamble Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14010,7 +14010,7 @@
   {
     "id": 1352,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Gamble Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14022,7 +14022,7 @@
   {
     "id": 1353,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Government Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14034,7 +14034,7 @@
   {
     "id": 1354,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Government Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14046,7 +14046,7 @@
   {
     "id": 1355,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Hacking Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14058,7 +14058,7 @@
   {
     "id": 1356,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Hacking Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14070,7 +14070,7 @@
   {
     "id": 1357,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Hobby Cooking Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14082,7 +14082,7 @@
   {
     "id": 1358,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Hobby Cooking Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14094,7 +14094,7 @@
   {
     "id": 1359,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Hobby Games-misc Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14106,7 +14106,7 @@
   {
     "id": 1360,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Hobby Games-misc Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14118,7 +14118,7 @@
   {
     "id": 1361,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Hobby Games-online Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14130,7 +14130,7 @@
   {
     "id": 1362,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Hobby Games-online Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14142,7 +14142,7 @@
   {
     "id": 1363,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Hobby Gardening Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14154,7 +14154,7 @@
   {
     "id": 1364,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Hobby Gardening Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14166,7 +14166,7 @@
   {
     "id": 1365,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Hobby Pets Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14178,7 +14178,7 @@
   {
     "id": 1366,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Hobby Pets Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14190,7 +14190,7 @@
   {
     "id": 1367,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Homestyle Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14202,7 +14202,7 @@
   {
     "id": 1368,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Homestyle Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14214,7 +14214,7 @@
   {
     "id": 1369,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Hospitals Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14226,7 +14226,7 @@
   {
     "id": 1370,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Hospitals Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14238,7 +14238,7 @@
   {
     "id": 1371,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Imagehosting Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14250,7 +14250,7 @@
   {
     "id": 1372,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Imagehosting Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14262,7 +14262,7 @@
   {
     "id": 1373,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Isp Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14274,7 +14274,7 @@
   {
     "id": 1374,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Isp Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14286,7 +14286,7 @@
   {
     "id": 1375,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Jobsearch Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14298,7 +14298,7 @@
   {
     "id": 1376,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Jobsearch Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14310,7 +14310,7 @@
   {
     "id": 1377,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Library Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14322,7 +14322,7 @@
   {
     "id": 1378,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Library Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14334,7 +14334,7 @@
   {
     "id": 1379,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Military Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14346,7 +14346,7 @@
   {
     "id": 1380,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Military Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14358,7 +14358,7 @@
   {
     "id": 1381,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Models Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14370,7 +14370,7 @@
   {
     "id": 1382,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Models Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14382,7 +14382,7 @@
   {
     "id": 1383,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Movies Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14394,7 +14394,7 @@
   {
     "id": 1384,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Movies Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14406,7 +14406,7 @@
   {
     "id": 1385,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Music Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14418,7 +14418,7 @@
   {
     "id": 1386,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Music Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14430,7 +14430,7 @@
   {
     "id": 1387,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List News Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14442,7 +14442,7 @@
   {
     "id": 1388,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List News Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14454,7 +14454,7 @@
   {
     "id": 1389,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Podcasts Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14466,7 +14466,7 @@
   {
     "id": 1390,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Podcasts Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14478,7 +14478,7 @@
   {
     "id": 1391,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Politics Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14490,7 +14490,7 @@
   {
     "id": 1392,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Politics Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14502,7 +14502,7 @@
   {
     "id": 1393,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Porn Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14514,7 +14514,7 @@
   {
     "id": 1394,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Porn Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14526,7 +14526,7 @@
   {
     "id": 1395,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Radiotv Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14538,7 +14538,7 @@
   {
     "id": 1396,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Radiotv Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14550,7 +14550,7 @@
   {
     "id": 1397,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Recreation Humor Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14562,7 +14562,7 @@
   {
     "id": 1398,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Recreation Humor Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14574,7 +14574,7 @@
   {
     "id": 1399,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Recreation Martialarts Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14586,7 +14586,7 @@
   {
     "id": 1400,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Recreation Martialarts Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14598,7 +14598,7 @@
   {
     "id": 1401,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Recreation Restaurants Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14610,7 +14610,7 @@
   {
     "id": 1402,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Recreation Restaurants Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14622,7 +14622,7 @@
   {
     "id": 1403,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Recreation Sports Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14634,7 +14634,7 @@
   {
     "id": 1404,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Recreation Sports Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14646,7 +14646,7 @@
   {
     "id": 1405,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Recreation Travel Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14658,7 +14658,7 @@
   {
     "id": 1406,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Recreation Travel Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14670,7 +14670,7 @@
   {
     "id": 1407,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Recreation Wellness Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14682,7 +14682,7 @@
   {
     "id": 1408,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Recreation Wellness Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14694,7 +14694,7 @@
   {
     "id": 1409,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Redirector Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14706,7 +14706,7 @@
   {
     "id": 1410,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Redirector Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14718,7 +14718,7 @@
   {
     "id": 1411,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Religion Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14730,7 +14730,7 @@
   {
     "id": 1412,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Religion Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14742,7 +14742,7 @@
   {
     "id": 1413,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Remotecontrol Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14754,7 +14754,7 @@
   {
     "id": 1414,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Remotecontrol Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14766,7 +14766,7 @@
   {
     "id": 1415,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Ringtones Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14778,7 +14778,7 @@
   {
     "id": 1416,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Ringtones Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14790,7 +14790,7 @@
   {
     "id": 1417,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Science Astronomy Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14802,7 +14802,7 @@
   {
     "id": 1418,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Science Astronomy Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14814,7 +14814,7 @@
   {
     "id": 1419,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Science Chemistry Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14826,7 +14826,7 @@
   {
     "id": 1420,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Science Chemistry Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14838,7 +14838,7 @@
   {
     "id": 1421,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Searchengines Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14850,7 +14850,7 @@
   {
     "id": 1422,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Searchengines Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14862,7 +14862,7 @@
   {
     "id": 1423,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Sex Education Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14874,7 +14874,7 @@
   {
     "id": 1424,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Sex Education Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14886,7 +14886,7 @@
   {
     "id": 1425,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Sex Lingerie Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14898,7 +14898,7 @@
   {
     "id": 1426,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Sex Lingerie Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14910,7 +14910,7 @@
   {
     "id": 1427,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Shopping Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14922,7 +14922,7 @@
   {
     "id": 1428,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Shopping Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14934,7 +14934,7 @@
   {
     "id": 1429,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Socialnet Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14946,7 +14946,7 @@
   {
     "id": 1430,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Socialnet Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14958,7 +14958,7 @@
   {
     "id": 1431,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Spyware Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14970,7 +14970,7 @@
   {
     "id": 1432,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Spyware Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14982,7 +14982,7 @@
   {
     "id": 1433,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Tracker Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -14994,7 +14994,7 @@
   {
     "id": 1434,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Tracker Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15006,7 +15006,7 @@
   {
     "id": 1435,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Program Updates Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15018,7 +15018,7 @@
   {
     "id": 1436,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Program Updates Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15030,7 +15030,7 @@
   {
     "id": 1437,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Urlshortener Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15042,7 +15042,7 @@
   {
     "id": 1438,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Urlshortener Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15054,7 +15054,7 @@
   {
     "id": 1439,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Violence Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15066,7 +15066,7 @@
   {
     "id": 1440,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Violence Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15078,7 +15078,7 @@
   {
     "id": 1441,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Warez Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15090,7 +15090,7 @@
   {
     "id": 1442,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Warez Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15102,7 +15102,7 @@
   {
     "id": 1443,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Weapons Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15114,7 +15114,7 @@
   {
     "id": 1444,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Weapons Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15126,7 +15126,7 @@
   {
     "id": 1445,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Webmail Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15138,7 +15138,7 @@
   {
     "id": 1446,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Webmail Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15150,7 +15150,7 @@
   {
     "id": 1447,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Webphone Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15162,7 +15162,7 @@
   {
     "id": 1448,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Webphone Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15174,7 +15174,7 @@
   {
     "id": 1449,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Webradio Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15186,7 +15186,7 @@
   {
     "id": 1450,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Webradio Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15198,7 +15198,7 @@
   {
     "id": 1451,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Webtv Domains",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15210,7 +15210,7 @@
   {
     "id": 1452,
     "description": "Shalla's Blacklists is a collection of URL lists grouped into several categories intended for the usage with URL filters like SquidGuard or Dansguardian.",
-    "homeUrl": "http://www.shallalist.de/",
+    "homeUrl": "https://www.shallalist.de/",
     "licenseId": 5,
     "name": "Shalla List Webtv Urls",
     "publishedDate": "2018-04-20T21:26:11",
@@ -15467,7 +15467,7 @@
   },
   {
     "id": 1471,
-    "homeUrl": "http://getadhell.com",
+    "homeUrl": "https://getadhell.com",
     "licenseId": 5,
     "name": "AdHell Standard",
     "syntaxId": 1,
@@ -15477,7 +15477,7 @@
     "id": 1472,
     "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Blah DNS Content farm host",
     "publishedDate": "2017-08-15T08:49:00",
     "syntaxId": 2,
@@ -15488,7 +15488,7 @@
     "id": 1473,
     "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Blah DNS Hosts blacklist",
     "publishedDate": "2017-05-01T11:15:41",
     "syntaxId": 2,
@@ -15499,7 +15499,7 @@
     "id": 1474,
     "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Blah DNS Hosts whitelist",
     "publishedDate": "2017-05-01T11:34:49",
     "syntaxId": 2,
@@ -15509,7 +15509,7 @@
   {
     "id": 1475,
     "homeUrl": "https://hblock.molinero.dev/",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "hBlock Hosts",
     "syntaxId": 1,
     "updatedDate": "2019-04-20T02:21:12",
@@ -15518,7 +15518,7 @@
   {
     "id": 1476,
     "homeUrl": "https://hblock.molinero.dev/",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "hBlock Hosts for Android",
     "syntaxId": 1,
     "updatedDate": "2019-04-20T03:01:12",
@@ -15527,7 +15527,7 @@
   {
     "id": 1477,
     "homeUrl": "https://hblock.molinero.dev/",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "hBlock Hosts RPZ",
     "syntaxId": 25,
     "updatedDate": "2019-04-20T03:06:13",
@@ -15536,7 +15536,7 @@
   {
     "id": 1478,
     "homeUrl": "https://hblock.molinero.dev/",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "hBlock Hosts Unbound",
     "syntaxId": 24,
     "updatedDate": "2019-04-20T03:45:12",
@@ -15545,7 +15545,7 @@
   {
     "id": 1479,
     "homeUrl": "https://hblock.molinero.dev/",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "hBlock Hosts DNSMASQ",
     "syntaxId": 20,
     "updatedDate": "2019-04-20T05:32:11",
@@ -15555,7 +15555,7 @@
     "id": 1480,
     "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Blah DNS RPZ Blacklist",
     "publishedDate": "2018-11-01T18:23:42",
     "syntaxId": 25,
@@ -15586,12 +15586,12 @@
   },
   {
     "id": 1484,
-    "homeUrl": "https://tspprs.com/",
+    "homeUrl": "https://blocklist.site/",
     "licenseId": 5,
     "name": "Block List Project: Torrent",
     "syntaxId": 2,
     "updatedDate": "2019-03-09T23:08:18",
-    "viewUrl": "https://tspprs.com/dl/torrent"
+    "viewUrl": "https://blocklist.site/app/dl/torrent"
   },
   {
     "id": 1485,
@@ -15661,7 +15661,7 @@
   },
   {
     "id": 1494,
-    "homeUrl": "http://www.carl.net",
+    "homeUrl": "https://www.carl.net",
     "licenseId": 11,
     "name": "Carl's Spam List",
     "viewUrl": "https://www.carl.net/spam/access.txt"
@@ -15731,7 +15731,7 @@
   {
     "id": 1501,
     "description": "This is a project that provides a pornography URL blacklist",
-    "homeUrl": "https://github.com//joelotz/URL_Blacklist",
+    "homeUrl": "https://github.com/joelotz/URL_Blacklist",
     "licenseId": 5,
     "name": "joelotz URLBlacklist",
     "publishedDate": "2010-03-14T06:34:14",
@@ -16063,7 +16063,7 @@
     "id": 1534,
     "emailAddress": "wduk10@hotmail.com",
     "homeUrl": "https://hostsfile.mine.nu/",
-    "licenseId": 4,
+    "licenseId": 34,
     "name": "The Hosts File Project IPs",
     "syntaxId": 9,
     "updatedDate": "2005-09-24T00:00:00",
@@ -16975,7 +16975,7 @@
     "description": "A blocklist for app promotion on Chinese websites",
     "homeUrl": "https://github.com/HankAviator/app-ads-blocklist-china",
     "issuesUrl": "https://github.com/HankAviator/app-ads-blocklist-china/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "App ads blocklist China",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/HankAviator/app-ads-blocklist-china/master/app_blocklist.txt"
@@ -17279,7 +17279,7 @@
     "id": 1631,
     "homeUrl": "https://github.com/newyork10023/Little_Snitch",
     "issuesUrl": "https://github.com/newyork10023/Little_Snitch/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "Block All All",
     "syntaxId": 18,
     "viewUrl": "https://raw.githubusercontent.com/newyork10023/Little_Snitch/master/Block_All_All.lsrules"
