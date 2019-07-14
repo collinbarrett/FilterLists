@@ -25,10 +25,13 @@ namespace FilterLists.Agent.Infrastructure.DependencyInjection
 #endif
             .Build();
 
+        private static ApplicationInsightsSettings ApplicationInsightsSettings { get; } =
+            Configuration.GetSettings<ApplicationInsightsSettings>();
+
         public static void ConfigureServices(this IServiceCollection services)
         {
             services.ConfigureSettings();
-            services.AddApplicationInsights(Configuration.GetSettings<ApplicationInsightsSettings>());
+            services.AddApplicationInsights(ApplicationInsightsSettings);
             services.AddLogging();
             services.AddLocalization();
             services.AddTransient<Parser>();
@@ -58,7 +61,7 @@ namespace FilterLists.Agent.Infrastructure.DependencyInjection
         {
             services.AddLogging(b =>
             {
-                var instrumentationKey = Configuration.GetSettings<ApplicationInsightsSettings>().InstrumentationKey;
+                var instrumentationKey = ApplicationInsightsSettings.InstrumentationKey;
                 var telemetryClient = new AgentTelemetryClient(instrumentationKey).TelemetryClient;
                 var logger = new LoggerConfiguration()
                     .WriteTo.Console()
