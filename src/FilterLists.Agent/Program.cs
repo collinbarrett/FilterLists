@@ -17,13 +17,16 @@ namespace FilterLists.Agent
         {
             _serviceProvider = ServiceProviderBuilder.Build();
             var parser = _serviceProvider.GetService<Parser>();
-            var mediator = _serviceProvider.GetService<IMediator>();
             await parser.ParseArguments<CommandLineOptions>(args).MapResult(async o =>
                 {
-                    if (o.ArchiveLists)
-                        await mediator.Send(new ArchiveLists.Command());
-                    if (o.ValidateUrls)
-                        await mediator.Send(new ValidateAllUrls.Command());
+                    if (o.Any())
+                    {
+                        var mediator = _serviceProvider.GetService<IMediator>();
+                        if (o.ArchiveLists)
+                            await mediator.Send(new ArchiveLists.Command());
+                        if (o.ValidateUrls)
+                            await mediator.Send(new ValidateAllUrls.Command());
+                    }
                 },
                 e => Task.FromResult(0)
             );

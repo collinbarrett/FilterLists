@@ -15,5 +15,10 @@ namespace FilterLists.Agent
 
         [Option('v', "validate", Required = false, HelpText = "Validate all URLs in the FilterLists database.")]
         public bool ValidateUrls { get; }
+
+        public bool Any()
+        {
+            return ArchiveLists || ValidateUrls;
+        }
     }
 }
