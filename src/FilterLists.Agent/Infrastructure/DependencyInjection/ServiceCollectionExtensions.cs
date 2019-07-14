@@ -8,6 +8,7 @@ using FilterLists.Agent.Infrastructure.GitHub;
 using FilterLists.Agent.Infrastructure.Polly;
 using FilterLists.Agent.Infrastructure.Web;
 using MediatR;
+using Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.QuickPulse;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
@@ -58,8 +59,12 @@ namespace FilterLists.Agent.Infrastructure.DependencyInjection
         {
             services.AddLogging(b =>
             {
-                var telemetryClient = b.Services.BuildServiceProvider().GetService<AgentTelemetryClient>()
-                    .TelemetryClient;
+                var serviceProvider = b.Services.BuildServiceProvider();
+
+                // init never-resolved singleton
+                serviceProvider.GetService<QuickPulseTelemetryModule>();
+
+                var telemetryClient = serviceProvider.GetService<AgentTelemetryClient>().TelemetryClient;
                 b.AddSerilog(new LoggerConfiguration()
                     .WriteTo.Console()
                     .WriteTo.ApplicationInsights(telemetryClient, TelemetryConverter.Traces)
