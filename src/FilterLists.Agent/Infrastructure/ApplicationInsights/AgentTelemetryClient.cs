@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Threading;
 using Microsoft.ApplicationInsights;
-using Microsoft.ApplicationInsights.Extensibility;
 
 namespace FilterLists.Agent.Infrastructure.ApplicationInsights
 {
     public class AgentTelemetryClient : IDisposable
     {
-        public AgentTelemetryClient(TelemetryConfiguration telemetryConfiguration)
+        public AgentTelemetryClient(string instrumentationKey)
         {
-            TelemetryClient = new TelemetryClient(telemetryConfiguration);
+            TelemetryClient = new TelemetryClient {InstrumentationKey = instrumentationKey};
         }
 
         public TelemetryClient TelemetryClient { get; }
