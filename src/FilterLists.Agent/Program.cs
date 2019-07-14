@@ -5,6 +5,7 @@ using FilterLists.Agent.Features.Lists;
 using FilterLists.Agent.Features.Urls;
 using FilterLists.Agent.Infrastructure.DependencyInjection;
 using MediatR;
+using Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.QuickPulse;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.Agent
@@ -16,6 +17,10 @@ namespace FilterLists.Agent
         public static async Task Main(string[] args)
         {
             _serviceProvider = ServiceProviderBuilder.Build();
+
+            // init never-resolved singleton
+            _serviceProvider.GetService<QuickPulseTelemetryModule>();
+
             var parser = _serviceProvider.GetService<Parser>();
             var mediator = _serviceProvider.GetService<IMediator>();
             await parser.ParseArguments<CommandLineOptions>(args).MapResult(async o =>
