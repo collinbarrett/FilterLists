@@ -3,7 +3,9 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
+using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Core.Urls;
+using Microsoft.Extensions.Options;
 
 namespace FilterLists.Agent.Infrastructure.Web
 {
@@ -11,10 +13,10 @@ namespace FilterLists.Agent.Infrastructure.Web
     {
         private readonly HttpClient _httpClient;
 
-        public EntityUrlValidator(HttpClient httpClient)
+        public EntityUrlValidator(HttpClient httpClient, IOptions<FilterListsApiSettings> filterListsApiOptions)
         {
             httpClient.Timeout = TimeSpan.FromSeconds(90);
-            var header = new ProductHeaderValue("FilterLists.Agent");
+            var header = new ProductHeaderValue(filterListsApiOptions.Value.ClientUserAgent);
             var userAgent = new ProductInfoHeaderValue(header);
             httpClient.DefaultRequestHeaders.UserAgent.Add(userAgent);
             _httpClient = httpClient;

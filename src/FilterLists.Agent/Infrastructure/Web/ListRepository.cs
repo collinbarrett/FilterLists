@@ -5,8 +5,10 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
+using FilterLists.Agent.AppSettings;
 using FilterLists.Agent.Core.Lists;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace FilterLists.Agent.Infrastructure.Web
 {
@@ -15,10 +17,11 @@ namespace FilterLists.Agent.Infrastructure.Web
         private readonly HttpClient _httpClient;
         private readonly ILogger<ListRepository> _logger;
 
-        public ListRepository(HttpClient httpClient, ILogger<ListRepository> logger)
+        public ListRepository(HttpClient httpClient, ILogger<ListRepository> logger,
+            IOptions<FilterListsApiSettings> filterListsApiOptions)
         {
             httpClient.Timeout = TimeSpan.FromSeconds(90);
-            var header = new ProductHeaderValue("FilterLists.Agent");
+            var header = new ProductHeaderValue(filterListsApiOptions.Value.ClientUserAgent);
             var userAgent = new ProductInfoHeaderValue(header);
             httpClient.DefaultRequestHeaders.UserAgent.Add(userAgent);
             _httpClient = httpClient;
