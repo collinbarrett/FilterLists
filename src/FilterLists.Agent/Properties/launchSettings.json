@@ -1,5 +1,9 @@
 {
   "profiles": {
+    "Docker": {
+      "commandName": "Docker",
+      "commandLineArgs": "-a -v"
+    },
     "FilterLists.Agent": {
       "commandName": "Project",
       "commandLineArgs": "-a -v"
