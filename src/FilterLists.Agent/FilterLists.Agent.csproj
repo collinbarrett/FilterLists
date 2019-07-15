@@ -17,7 +17,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://filterlists.com/</PackageProjectUrl>
     <ServerGarbageCollection>false</ServerGarbageCollection>
-    <DockerDebuggeeArguments>bin/$(Configuration)/$(TargetFramework)/$(AssemblyName).dll -a -v</DockerDebuggeeArguments>
+    <DockerDebuggeeArguments>--additionalProbingPath /root/.nuget/fallbackpackages2 --additionalProbingPath /root/.nuget/fallbackpackages "bin/$(Configuration)/$(TargetFramework)/$(AssemblyName).dll" -a -v</DockerDebuggeeArguments>
     <DockerDebuggeeProgram>/usr/bin/dotnet</DockerDebuggeeProgram>
   </PropertyGroup>
 
