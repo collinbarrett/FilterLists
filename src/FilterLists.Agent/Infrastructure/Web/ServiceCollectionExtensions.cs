@@ -11,7 +11,7 @@ namespace FilterLists.Agent.Infrastructure.Web
         {
             services.AddHttpClient<IListRepository, ListRepository>()
                 .AddPolicyHandlerFromRegistry("waitAndRetryTooManyRequests");
-            services.AddHttpClient<IUrlValidator, UrlValidator>().ConfigureHttpMessageHandlerBuilder(b =>
+            services.AddHttpClient<IEntityUrlValidator, EntityUrlValidator>().ConfigureHttpMessageHandlerBuilder(b =>
             {
                 b.PrimaryHandler = new HttpClientHandler {AllowAutoRedirect = false};
                 b.Build();

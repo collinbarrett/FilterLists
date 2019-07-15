@@ -23,11 +23,11 @@ namespace FilterLists.Agent.Features.Urls
         public class Handler : IRequestHandler<Command, IEnumerable<EntityUrl>>
         {
             private const int MaxDegreeOfParallelism = 5;
-            private readonly IUrlValidator _urlValidator;
+            private readonly IEntityUrlValidator _entityUrlValidator;
 
-            public Handler(IUrlValidator urlValidator)
+            public Handler(IEntityUrlValidator entityUrlValidator)
             {
-                _urlValidator = urlValidator;
+                _entityUrlValidator = entityUrlValidator;
             }
 
             public async Task<IEnumerable<EntityUrl>> Handle(Command request, CancellationToken cancellationToken)
@@ -46,7 +46,7 @@ namespace FilterLists.Agent.Features.Urls
             private TransformBlock<EntityUrl, EntityUrl> BuildValidator(CancellationToken cancellationToken)
             {
                 return new TransformBlock<EntityUrl, EntityUrl>(
-                    e => _urlValidator.ValidateAsync(e, cancellationToken),
+                    e => _entityUrlValidator.ValidateAsync(e, cancellationToken),
                     new ExecutionDataflowBlockOptions {MaxDegreeOfParallelism = MaxDegreeOfParallelism}
                 );
             }
