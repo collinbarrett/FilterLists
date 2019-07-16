@@ -16,7 +16,7 @@ RUN dotnet restore
 
 # build
 COPY src/FilterLists.Agent/. .
-RUN dotnet build -c Release -r linux-musl-x64 -o out --no-restore
+RUN dotnet build -c Release -r linux-musl-x64 --no-restore
 
 # init Agent.Tests
 FROM build AS test-agent
