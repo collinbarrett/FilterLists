@@ -2,9 +2,9 @@
 # Command: docker build -f src/FilterLists.Api/Dockerfile .
 
 # init base
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-alpine as base
+FROM mcr.microsoft.com/dotnet/core/runtime-deps:2.2-alpine as base
 EXPOSE 80
-ENTRYPOINT ["dotnet", "FilterLists.Api.dll"]
+ENTRYPOINT ["./FilterLists.Api"]
 COPY data/. data/
 WORKDIR /app
 
@@ -25,7 +25,7 @@ COPY src/FilterLists.Data/. FilterLists.Data/
 COPY src/FilterLists.Services/. FilterLists.Services/
 WORKDIR /app/src/FilterLists.Api
 COPY src/FilterLists.Api/. .
-RUN dotnet build -c Release --no-restore
+RUN dotnet build -c Release -r linux-musl-x64 --no-restore
 
 # init Data.Tests
 FROM build AS test-data
@@ -56,7 +56,7 @@ RUN dotnet build -c Release --no-restore
 
 # publish
 FROM build AS publish
-RUN dotnet publish -c Release -o out --no-restore --no-build
+RUN dotnet publish -c Release -r linux-musl-x64 -o out --no-restore --no-build
 
 # final
 FROM base as final

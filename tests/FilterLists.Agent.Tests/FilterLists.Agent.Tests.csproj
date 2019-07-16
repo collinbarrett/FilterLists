@@ -1,20 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
-    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <Authors>Collin M. Barrett</Authors>
     <Company>Collin M. Barrett</Company>
     <Product>FilterLists</Product>
     <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
     <Copyright>Copyright (c) 2019 Collin M. Barrett</Copyright>
     <PackageLicenseUrl>https://github.com/collinbarrett/FilterLists/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://filterlists.com/</PackageProjectUrl>
     <PackageIconUrl>https://github.com/collinbarrett/FilterLists/raw/master/imgs/icon_filterlists.png</PackageIconUrl>
-    <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://filterlists.com/</PackageProjectUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -24,6 +27,10 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <CodeAnalysisRuleSet>FilterLists.Agent.Tests.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\FilterLists.Agent\FilterLists.Agent.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.3" />
@@ -41,10 +48,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\FilterLists.Agent\FilterLists.Agent.csproj" />
   </ItemGroup>
 
 </Project>

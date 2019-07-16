@@ -1,26 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
-    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
     <LangVersion>latest</LangVersion>
-    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+    <RuntimeIdentifier>linux-musl-x64</RuntimeIdentifier>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
     <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
-    <IsPackable>false</IsPackable>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <Authors>Collin M. Barrett</Authors>
+    <Company>Collin M. Barrett</Company>
     <Product>FilterLists</Product>
-    <PackageLicenseUrl>https://github.com/collinbarrett/FilterLists/blob/master/LICENSE</PackageLicenseUrl>
-    <Copyright>Copyright (c) 2019 Collin M. Barrett</Copyright>
     <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
-    <PackageProjectUrl>https://filterlists.com/</PackageProjectUrl>
+    <Copyright>Copyright (c) 2019 Collin M. Barrett</Copyright>
+    <PackageLicenseUrl>https://github.com/collinbarrett/FilterLists/blob/master/LICENSE</PackageLicenseUrl>
     <PackageIconUrl>https://github.com/collinbarrett/FilterLists/raw/master/imgs/icon_filterlists.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
-    <ServerGarbageCollection>false</ServerGarbageCollection>
-    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
+    <PackageProjectUrl>https://filterlists.com/</PackageProjectUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Globalization.Invariant" Value="true" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="2019.1.3" />
@@ -47,7 +52,8 @@
     <Exec Command="node --version" ContinueOnError="true">
       <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
     </Exec>
-    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Error Condition="'$(ErrorCode)' != '0'"
+           Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
     <Message Importance="high" Text="Performing Webpack build..." />
     <Exec Command="npm install" />
     <Exec Command="node node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js" />

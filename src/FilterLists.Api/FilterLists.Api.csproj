@@ -1,25 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
-    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
     <LangVersion>latest</LangVersion>
-    <ApplicationInsightsResourceId>/subscriptions/4bcbdfe1-6c65-4c02-820f-7c0e7ec5614f/resourcegroups/FilterLists/providers/microsoft.insights/components/FilterLists</ApplicationInsightsResourceId>
-    <ApplicationInsightsAnnotationResourceId>/subscriptions/4bcbdfe1-6c65-4c02-820f-7c0e7ec5614f/resourcegroups/FilterLists/providers/microsoft.insights/components/FilterLists</ApplicationInsightsAnnotationResourceId>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+    <RuntimeIdentifier>linux-musl-x64</RuntimeIdentifier>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <Authors>Collin M. Barrett</Authors>
     <Company>Collin M. Barrett</Company>
     <Product>FilterLists</Product>
     <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
     <Copyright>Copyright (c) 2019 Collin M. Barrett</Copyright>
     <PackageLicenseUrl>https://github.com/collinbarrett/FilterLists/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://filterlists.com/</PackageProjectUrl>
     <PackageIconUrl>https://github.com/collinbarrett/FilterLists/raw/master/imgs/icon_filterlists.png</PackageIconUrl>
-    <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
-    <ServerGarbageCollection>false</ServerGarbageCollection>
-    <OutputType>Exe</OutputType>
-    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://filterlists.com/</PackageProjectUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -31,8 +30,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Globalization.Invariant" Value="true" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Migrations\Extensions\" />
     <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FilterLists.Services\FilterLists.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,10 +50,6 @@
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.3" />
     <PackageReference Include="Microsoft.DotNet.Analyzers.Compatibility" Version="0.2.12-alpha" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.11" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\FilterLists.Services\FilterLists.Services.csproj" />
   </ItemGroup>
 
 </Project>

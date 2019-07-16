@@ -7,9 +7,9 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
     <RuntimeIdentifier>linux-musl-x64</RuntimeIdentifier>
-    <ServerGarbageCollection>false</ServerGarbageCollection>
     <DockerDebuggeeArguments>--additionalProbingPath /root/.nuget/fallbackpackages2 --additionalProbingPath /root/.nuget/fallbackpackages "bin/$(Configuration)/$(TargetFramework)/$(AssemblyName).dll" -a -v</DockerDebuggeeArguments>
     <DockerDebuggeeProgram>/usr/bin/dotnet</DockerDebuggeeProgram>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <PropertyGroup>

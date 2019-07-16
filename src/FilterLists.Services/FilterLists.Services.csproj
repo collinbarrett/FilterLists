@@ -1,20 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <LangVersion>latest</LangVersion>
     <TargetFramework>netstandard2.0</TargetFramework>
     <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
-    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <Authors>Collin M. Barrett</Authors>
+    <Company>Collin M. Barrett</Company>
     <Product>FilterLists</Product>
     <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
     <Copyright>Copyright (c) 2019 Collin M. Barrett</Copyright>
     <PackageLicenseUrl>https://github.com/collinbarrett/FilterLists/blob/master/LICENSE</PackageLicenseUrl>
     <PackageIconUrl>https://github.com/collinbarrett/FilterLists/raw/master/imgs/icon_filterlists.png</PackageIconUrl>
-    <PackageProjectUrl>https://filterlists.com/</PackageProjectUrl>
-    <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
-    <ServerGarbageCollection>false</ServerGarbageCollection>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://filterlists.com/</PackageProjectUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Globalization.Invariant" Value="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FilterLists.Data\FilterLists.Data.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="8.1.0" />
@@ -24,10 +35,6 @@
     <PackageReference Include="Microsoft.DotNet.Analyzers.Compatibility" Version="0.2.12-alpha" />
     <PackageReference Include="morelinq" Version="3.1.1" />
     <PackageReference Include="SharpCompress" Version="0.23.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\FilterLists.Data\FilterLists.Data.csproj" />
   </ItemGroup>
 
 </Project>
