@@ -1,11 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
-    <LangVersion>8.0</LangVersion>
-    <Nullable>enable</Nullable>
+    <RuntimeIdentifier>linux-musl-x64</RuntimeIdentifier>
+    <ServerGarbageCollection>false</ServerGarbageCollection>
+    <DockerDebuggeeArguments>--additionalProbingPath /root/.nuget/fallbackpackages2 --additionalProbingPath /root/.nuget/fallbackpackages "bin/$(Configuration)/$(TargetFramework)/$(AssemblyName).dll" -a -v</DockerDebuggeeArguments>
+    <DockerDebuggeeProgram>/usr/bin/dotnet</DockerDebuggeeProgram>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <Authors>Collin M. Barrett</Authors>
     <Company>Collin M. Barrett</Company>
     <Product>FilterLists</Product>
@@ -16,9 +23,6 @@
     <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://filterlists.com/</PackageProjectUrl>
-    <ServerGarbageCollection>false</ServerGarbageCollection>
-    <DockerDebuggeeArguments>--additionalProbingPath /root/.nuget/fallbackpackages2 --additionalProbingPath /root/.nuget/fallbackpackages "bin/$(Configuration)/$(TargetFramework)/$(AssemblyName).dll" -a -v</DockerDebuggeeArguments>
-    <DockerDebuggeeProgram>/usr/bin/dotnet</DockerDebuggeeProgram>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -28,6 +32,10 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <CodeAnalysisRuleSet>FilterLists.Agent.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Globalization.Invariant" Value="true" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="CommandLineParser" Version="2.5.0" />

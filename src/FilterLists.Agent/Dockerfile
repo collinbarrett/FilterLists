@@ -2,8 +2,8 @@
 # Command: docker build -f src/FilterLists.Agent/Dockerfile .
 
 # init base
-FROM mcr.microsoft.com/dotnet/core/runtime:2.2-alpine as base
-ENTRYPOINT ["dotnet", "FilterLists.Agent.dll"]
+FROM mcr.microsoft.com/dotnet/core/runtime-deps:2.2-alpine as base
+ENTRYPOINT ["./FilterLists.Agent"]
 WORKDIR /app
 
 # init build
@@ -16,7 +16,8 @@ RUN dotnet restore
 
 # build
 COPY src/FilterLists.Agent/. .
-RUN dotnet build -c Release --no-restore
+RUN dotnet add package ILLink.Tasks -v 0.1.5-preview-1841731 -s https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
+RUN dotnet build -c Release -r linux-musl-x64 -o out --no-restore
 
 # init Agent.Tests
 FROM build AS test-agent
@@ -33,7 +34,7 @@ RUN dotnet build -c Release --no-restore
 
 # publish
 FROM build AS publish
-RUN dotnet publish -c Release -o out --no-restore --no-build
+RUN dotnet publish -c Release -r linux-musl-x64 -o out --no-restore --no-build
 
 # final
 FROM base as final
