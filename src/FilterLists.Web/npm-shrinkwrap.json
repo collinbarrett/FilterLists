@@ -71,9 +71,9 @@
       }
     },
     "@types/react-table": {
-      "version": "6.7.18",
-      "resolved": "https://registry.npmjs.org/@types/react-table/-/react-table-6.7.18.tgz",
-      "integrity": "sha512-I4vzqZr7KsaFY2pG6ueDIrvUV8YmxfoTFk2TM+1txspTmOunpxFH2eJRXxnGcI/US0wttEnX86NTyxNV6XKHiA==",
+      "version": "6.8.5",
+      "resolved": "https://registry.npmjs.org/@types/react-table/-/react-table-6.8.5.tgz",
+      "integrity": "sha512-ueCsAadG1IwuuAZM+MWf2SoxbccSWweyQa9YG6xGN5cOVK3SayPOJW4MsUHGpY0V/Q+iZWgohpasliiao29O6g==",
       "requires": {
         "@types/react": "*"
       }
