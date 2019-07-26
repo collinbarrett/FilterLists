@@ -250,9 +250,9 @@
       }
     },
     "aspnet-webpack-react": {
-      "version": "3.0.0",
-      "resolved": "https://registry.npmjs.org/aspnet-webpack-react/-/aspnet-webpack-react-3.0.0.tgz",
-      "integrity": "sha1-5dwTG3OreVFTLJewD4po4jcyMQU=",
+      "version": "4.0.0",
+      "resolved": "https://registry.npmjs.org/aspnet-webpack-react/-/aspnet-webpack-react-4.0.0.tgz",
+      "integrity": "sha512-d/ikp0IkjiP6X7DFmdfgg2nrPMVY2baTN6gPI5DsWvX3FfLs38+l2LzP1dtBVzcyjRT2actK/o16KdIfy9bXUQ==",
       "dev": true
     },
     "assert": {
