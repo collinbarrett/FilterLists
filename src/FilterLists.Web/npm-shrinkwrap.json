@@ -60,9 +60,9 @@
       }
     },
     "@types/react-router-dom": {
-      "version": "4.3.1",
-      "resolved": "https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-4.3.1.tgz",
-      "integrity": "sha512-GbztJAScOmQ/7RsQfO4cd55RuH1W4g6V1gDW3j4riLlt+8yxYLqqsiMzmyuXBLzdFmDtX/uU2Bpcm0cmudv44A==",
+      "version": "4.3.4",
+      "resolved": "https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-4.3.4.tgz",
+      "integrity": "sha512-xrwaWHpnxKk/TTRe7pmoGy3E4SyF/ojFqNfFJacw7OLdfLXRvGfk4r/XePVaZNVfeJzL8fcnNilPN7xOdJ/vGw==",
       "dev": true,
       "requires": {
         "@types/history": "*",

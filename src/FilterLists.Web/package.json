@@ -8,7 +8,7 @@
     "@types/react-dom": "^16.0.11",
     "@types/react-hot-loader": "^4.1.0",
     "@types/react-router": "^4.4.2",
-    "@types/react-router-dom": "^4.3.1",
+    "@types/react-router-dom": "^4.3.4",
     "@types/webpack-env": "^1.13.6",
     "aspnet-webpack": "^3.0.0",
     "aspnet-webpack-react": "^3.0.0",
