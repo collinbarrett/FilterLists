@@ -31,7 +31,7 @@
   "dependencies": {
     "@types/react-table": "^6.7.18",
     "moment": "^2.24.0",
-    "popper.js": "^1.14.6",
+    "popper.js": "^1.15.0",
     "react-table": "^6.10.0"
   }
 }
