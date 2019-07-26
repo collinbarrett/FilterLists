@@ -12,7 +12,7 @@
     "@types/webpack-env": "^1.14.0",
     "aspnet-webpack": "^3.0.0",
     "aspnet-webpack-react": "^4.0.0",
-    "awesome-typescript-loader": "^4.0.1",
+    "awesome-typescript-loader": "^5.2.1",
     "bootstrap": "^4.2.1",
     "css-loader": "^0.28.11",
     "event-source-polyfill": "1.0.7",
