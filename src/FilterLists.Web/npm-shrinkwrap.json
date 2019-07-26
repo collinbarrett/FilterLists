@@ -1492,9 +1492,9 @@
       }
     },
     "event-source-polyfill": {
-      "version": "0.0.16",
-      "resolved": "https://registry.npmjs.org/event-source-polyfill/-/event-source-polyfill-0.0.16.tgz",
-      "integrity": "sha512-Krczenbedc60uWwSmWl3BoIY20mXPEtnBmOXFika8/JcGSiY2jcutfdYv4MfkGDS/e1OBkaNzrOm4owUdAnchQ==",
+      "version": "1.0.7",
+      "resolved": "https://registry.npmjs.org/event-source-polyfill/-/event-source-polyfill-1.0.7.tgz",
+      "integrity": "sha512-TPbIjt4c3dlO7WTdsaTdwcxD1jKl+2gGD6dfauEmGqRNtpoB9ith/c4qa+X8XbTV5FsvTrkjepXfamWxntklVA==",
       "dev": true
     },
     "events": {

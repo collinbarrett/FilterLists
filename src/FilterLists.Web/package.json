@@ -15,7 +15,7 @@
     "awesome-typescript-loader": "^4.0.1",
     "bootstrap": "^4.2.1",
     "css-loader": "^0.28.11",
-    "event-source-polyfill": "0.0.16",
+    "event-source-polyfill": "1.0.7",
     "extract-text-webpack-plugin": "^3.0.2",
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.3.1",
