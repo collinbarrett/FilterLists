@@ -50,9 +50,9 @@
       }
     },
     "@types/react-router": {
-      "version": "4.4.2",
-      "resolved": "https://registry.npmjs.org/@types/react-router/-/react-router-4.4.2.tgz",
-      "integrity": "sha512-EkRC1pDzrDwZ0WRCtjuAAmBGuoKyPcnO5r7mzDnMB8E+R05VkDanAF25ONaCLd3TyM13F0bHOpKcQPWYs+gzhg==",
+      "version": "5.0.3",
+      "resolved": "https://registry.npmjs.org/@types/react-router/-/react-router-5.0.3.tgz",
+      "integrity": "sha512-j2Gge5cvxca+5lK9wxovmGPgpVJMwjyu5lTA/Cd6fLGoPq7FXcUE1jFkEdxeyqGGz8VfHYSHCn5Lcn24BzaNKA==",
       "dev": true,
       "requires": {
         "@types/history": "*",
