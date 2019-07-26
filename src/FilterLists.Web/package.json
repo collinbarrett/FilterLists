@@ -9,7 +9,7 @@
     "@types/react-hot-loader": "^4.1.0",
     "@types/react-router": "^4.4.2",
     "@types/react-router-dom": "^4.3.4",
-    "@types/webpack-env": "^1.13.6",
+    "@types/webpack-env": "^1.14.0",
     "aspnet-webpack": "^3.0.0",
     "aspnet-webpack-react": "^3.0.0",
     "awesome-typescript-loader": "^4.0.1",
