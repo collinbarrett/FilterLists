@@ -26,7 +26,7 @@
     "style-loader": "^0.23.1",
     "typescript": "^3.5.3",
     "url-loader": "^1.1.2",
-    "webpack": "^3.11.0"
+    "webpack": "^3.12.0"
   },
   "dependencies": {
     "@types/react-table": "^6.7.18",
