@@ -32,6 +32,6 @@
     "@types/react-table": "^6.7.18",
     "moment": "^2.24.0",
     "popper.js": "^1.14.6",
-    "react-table": "^6.8.6"
+    "react-table": "^6.10.0"
   }
 }
