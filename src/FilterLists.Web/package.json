@@ -13,7 +13,7 @@
     "aspnet-webpack": "^3.0.0",
     "aspnet-webpack-react": "^3.0.0",
     "awesome-typescript-loader": "^4.0.1",
-    "bootstrap": "^4.1.3",
+    "bootstrap": "^4.2.1",
     "css-loader": "^0.28.11",
     "event-source-polyfill": "0.0.16",
     "extract-text-webpack-plugin": "^3.0.2",
