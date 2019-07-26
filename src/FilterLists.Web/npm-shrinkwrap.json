@@ -31,9 +31,9 @@
       }
     },
     "@types/react-dom": {
-      "version": "16.0.11",
-      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-16.0.11.tgz",
-      "integrity": "sha512-x6zUx9/42B5Kl2Vl9HlopV8JF64wLpX3c+Pst9kc1HgzrsH+mkehe/zmHMQTplIrR48H2gpU7ZqurQolYu8XBA==",
+      "version": "16.8.5",
+      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-16.8.5.tgz",
+      "integrity": "sha512-idCEjROZ2cqh29+trmTmZhsBAUNQuYrF92JHKzZ5+aiFM1mlSk3bb23CK7HhYuOY75Apgap5y2jTyHzaM2AJGA==",
       "dev": true,
       "requires": {
         "@types/react": "*"
