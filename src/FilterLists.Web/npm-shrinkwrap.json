@@ -4283,15 +4283,27 @@
       }
     },
     "react-dom": {
-      "version": "16.6.3",
-      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-16.6.3.tgz",
-      "integrity": "sha512-8ugJWRCWLGXy+7PmNh8WJz3g1TaTUt1XyoIcFN+x0Zbkoz+KKdUyx1AQLYJdbFXjuF41Nmjn5+j//rxvhFjgSQ==",
+      "version": "16.8.6",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-16.8.6.tgz",
+      "integrity": "sha512-1nL7PIq9LTL3fthPqwkvr2zY7phIPjYrT0jp4HjyEQrEROnw4dG41VVwi/wfoCneoleqrNX7iAD+pXebJZwrwA==",
       "dev": true,
       "requires": {
         "loose-envify": "^1.1.0",
         "object-assign": "^4.1.1",
         "prop-types": "^15.6.2",
-        "scheduler": "^0.11.2"
+        "scheduler": "^0.13.6"
+      },
+      "dependencies": {
+        "scheduler": {
+          "version": "0.13.6",
+          "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.13.6.tgz",
+          "integrity": "sha512-IWnObHt413ucAYKsD9J1QShUKkbKLQQHdxRyw73sw4FN26iWr3DY/H34xGPe4nmL1DwXyWmSWmMrA9TfQbE/XQ==",
+          "dev": true,
+          "requires": {
+            "loose-envify": "^1.1.0",
+            "object-assign": "^4.1.1"
+          }
+        }
       }
     },
     "react-hot-loader": {
