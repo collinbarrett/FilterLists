@@ -8,7 +8,7 @@ interface IProps {
 
 export const EmailButton = (props: IProps) =>
     props.emailAddress
-    ? <LinkButton href={`mailto:${props.emailAddress}`}
-                  title={`Email ${props.name}.`}
-                  text="Email"/>
-    : null;
+        ? <LinkButton href={`mailto:${props.emailAddress}`}
+            title={`Email ${props.name}.`}
+            text="Email" />
+        : null;

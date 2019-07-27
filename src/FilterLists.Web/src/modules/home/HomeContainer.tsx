@@ -38,7 +38,7 @@ export class HomeContainer extends React.Component<{}, IState> {
     componentDidMount() {
         this.fetchLists();
         this.fetchLanguages();
-        this.fetchLicenses();        
+        this.fetchLicenses();
         this.fetchMaintainers();
         this.fetchSoftware();
         this.fetchSyntaxes();

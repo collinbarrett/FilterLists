@@ -22,4 +22,4 @@ export {
     Syntax,
     Tags,
     UpdatedDate
-    };
+};

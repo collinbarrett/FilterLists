@@ -18,5 +18,5 @@ const sortMethod = (a: string, b: string) =>
 
 const Cell = (name: string) =>
     name
-    ? <h2 className="mb-0">{name}</h2>
-    : null;
+        ? <h2 className="mb-0">{name}</h2>
+        : null;

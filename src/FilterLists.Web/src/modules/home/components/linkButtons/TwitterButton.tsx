@@ -8,7 +8,7 @@ interface IProps {
 
 export const TwitterButton = (props: IProps) =>
     props.twitterHandle
-    ? <LinkButton href={`https://twitter.com/${props.twitterHandle}`}
-                  title={`View ${props.name}'s Twitter profile.`}
-                  text="Twitter"/>
-    : null;
+        ? <LinkButton href={`https://twitter.com/${props.twitterHandle}`}
+            title={`View ${props.name}'s Twitter profile.`}
+            text="Twitter" />
+        : null;

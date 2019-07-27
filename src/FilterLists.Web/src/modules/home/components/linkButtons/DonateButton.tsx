@@ -8,7 +8,7 @@ interface IProps {
 
 export const DonateButton = (props: IProps) =>
     props.url
-    ? <LinkButton href={props.url}
-                  title={`Donate to the maintainer of ${props.name}.`}
-                  text="Donate"/>
-    : null;
+        ? <LinkButton href={props.url}
+            title={`Donate to the maintainer of ${props.name}.`}
+            text="Donate" />
+        : null;

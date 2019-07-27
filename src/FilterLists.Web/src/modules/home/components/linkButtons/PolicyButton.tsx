@@ -8,7 +8,7 @@ interface IProps {
 
 export const PolicyButton = (props: IProps) =>
     props.url
-    ? <LinkButton href={props.url}
-                  title={`View the types of rules that ${props.name} includes.`}
-                  text="Policy"/>
-    : null;
+        ? <LinkButton href={props.url}
+            title={`View the types of rules that ${props.name} includes.`}
+            text="Policy" />
+        : null;

@@ -28,14 +28,14 @@ interface IProps {
 
 export const LinkButtonGroup = (props: IProps) =>
     <div className="col-3 p-0 btn-group-vertical justify-content-start d-flex align-items-end">
-        <SubscribeButtonGroup name={props.name} url={props.viewUrl} urlMirrors={props.viewUrlMirrors}/>
-        <ViewButtonGroup name={props.name} url={props.viewUrl} urlMirrors={props.viewUrlMirrors}/>
-        <HomeButton name={props.name} url={props.homeUrl}/>
-        <PolicyButton name={props.name} url={props.policyUrl}/>
-        <DonateButton name={props.name} url={props.donateUrl}/>
-        <IssuesButton name={props.name} url={props.issuesUrl}/>
-        <ForumButton name={props.name} url={props.forumUrl}/>
-        <ChatButton name={props.name} url={props.chatUrl}/>
-        <SubmitButton name={props.name} url={props.submissionUrl}/>
-        <EmailButton name={props.name} emailAddress={props.emailAddress}/>
+        <SubscribeButtonGroup name={props.name} url={props.viewUrl} urlMirrors={props.viewUrlMirrors} />
+        <ViewButtonGroup name={props.name} url={props.viewUrl} urlMirrors={props.viewUrlMirrors} />
+        <HomeButton name={props.name} url={props.homeUrl} />
+        <PolicyButton name={props.name} url={props.policyUrl} />
+        <DonateButton name={props.name} url={props.donateUrl} />
+        <IssuesButton name={props.name} url={props.issuesUrl} />
+        <ForumButton name={props.name} url={props.forumUrl} />
+        <ChatButton name={props.name} url={props.chatUrl} />
+        <SubmitButton name={props.name} url={props.submissionUrl} />
+        <EmailButton name={props.name} emailAddress={props.emailAddress} />
     </div>;

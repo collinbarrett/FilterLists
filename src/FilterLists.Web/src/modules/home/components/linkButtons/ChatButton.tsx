@@ -8,7 +8,7 @@ interface IProps {
 
 export const ChatButton = (props: IProps) =>
     props.url
-    ? <LinkButton href={props.url}
-                  title={`Enter the chat room for ${props.name}.`}
-                  text="Chat"/>
-    : null;
+        ? <LinkButton href={props.url}
+            title={`Enter the chat room for ${props.name}.`}
+            text="Chat" />
+        : null;

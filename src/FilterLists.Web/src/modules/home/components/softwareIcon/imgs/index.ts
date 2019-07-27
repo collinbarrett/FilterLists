@@ -66,4 +66,4 @@ export {
     img32,
     img33,
     img34
-    };
+};

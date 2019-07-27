@@ -6,20 +6,20 @@ interface IProps {
 
 export const Layout = (props: IProps) =>
     <div className="container">
-        <Header/>
+        <Header />
         <div className="row">
             <div className="w-100">
-                { props.children }
+                {props.children}
             </div>
         </div>
-        <Footer/>
+        <Footer />
     </div>;
 
 const Header = () =>
     <header className="row">
         <h1>
             <a href="./">
-                <img src="logo_filterlists.png" alt="FilterLists" className="img-fluid"/>
+                <img src="logo_filterlists.png" alt="FilterLists" className="img-fluid" />
             </a>
         </h1>
     </header>;
@@ -27,13 +27,13 @@ const Header = () =>
 const Footer = () =>
     <footer className="row justify-content-center">
         <p className="mt-2 ml-1 mr-1">
-            <HubLink/> | <GitHubLink/> | <ApiLink/> | <DonateLink/> | By <OwnerLink/>
+            <HubLink /> | <GitHubLink /> | <ApiLink /> | <DonateLink /> | By <OwnerLink />
         </p>
     </footer>;
 
 const HubLink = () =>
     <a href="https://hub.filterlists.com"
-       title="Discourse community forum">
+        title="Discourse community forum">
         Hub
     </a>;
 
@@ -44,13 +44,13 @@ const GitHubLink = () =>
 
 const ApiLink = () =>
     <a href="/api/v1/lists"
-       title="API lists endpoint">
+        title="API lists endpoint">
         API
     </a>;
 
 const DonateLink = () =>
     <a href="https://beerpay.io/collinbarrett/FilterLists"
-       title="Support with Beerpay">
+        title="Support with Beerpay">
         Donate
     </a>;
 

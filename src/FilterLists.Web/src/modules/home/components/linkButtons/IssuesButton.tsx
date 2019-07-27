@@ -8,7 +8,7 @@ interface IProps {
 
 export const IssuesButton = (props: IProps) =>
     props.url
-    ? <LinkButton href={props.url}
-                  title={`View the GitHub Issues for ${props.name}.`}
-                  text="GH Issues"/>
-    : null;
+        ? <LinkButton href={props.url}
+            title={`View the GitHub Issues for ${props.name}.`}
+            text="GH Issues" />
+        : null;

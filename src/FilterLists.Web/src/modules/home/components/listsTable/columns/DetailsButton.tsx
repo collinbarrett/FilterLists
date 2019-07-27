@@ -15,12 +15,12 @@ export const DetailsButton = {
 const Expander = (props: RowRenderProps) =>
     <div>
         {props.isExpanded
-             ? <button className="btn btn-primary btn-block active fl-btn-link"
-                       title={`Collapse details about ${props.row.name}.`}>
-                   Details
+            ? <button className="btn btn-primary btn-block active fl-btn-link"
+                title={`Collapse details about ${props.row.name}.`}>
+                Details
                </button>
-             : <button className="btn btn-primary btn-block fl-btn-link"
-                       title={`Learn more about ${props.row.name}.`}>
-                   Details
+            : <button className="btn btn-primary btn-block fl-btn-link"
+                title={`Learn more about ${props.row.name}.`}>
+                Details
                </button>}
     </div>;

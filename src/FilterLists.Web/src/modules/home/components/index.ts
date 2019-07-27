@@ -6,4 +6,4 @@ export {
     DetailsExpander,
     ListsTable,
     Oneliner
-    };
+};

@@ -8,7 +8,7 @@ interface IProps {
 
 export const ForumButton = (props: IProps) =>
     props.url
-    ? <LinkButton href={props.url}
-                  title={`View the forum for ${props.name}.`}
-                  text="Forum"/>
-    : null;
+        ? <LinkButton href={props.url}
+            title={`View the forum for ${props.name}.`}
+            text="Forum" />
+        : null;

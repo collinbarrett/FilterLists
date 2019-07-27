@@ -22,4 +22,4 @@ export {
     SubscribeButtonGroup,
     TwitterButton,
     ViewButtonGroup
-    };
+};

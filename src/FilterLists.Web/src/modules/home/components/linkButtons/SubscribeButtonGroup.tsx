@@ -9,11 +9,11 @@ interface IProps {
 
 export const SubscribeButtonGroup = (props: IProps) =>
     props.url
-    ? (props.urlMirrors && props.urlMirrors.length > 0)
-      ? <SubscribeButtonGroupDropdown {...props} urlMirrors={props
-          .urlMirrors}/>
-      : <SubscribeButton {...props}/>
-    : null;
+        ? (props.urlMirrors && props.urlMirrors.length > 0)
+            ? <SubscribeButtonGroupDropdown {...props} urlMirrors={props
+                .urlMirrors} />
+            : <SubscribeButton {...props} />
+        : null;
 
 interface ISubscribeButtonGroupDropdownProps {
     name: string;
@@ -31,22 +31,22 @@ const SubscribeButtonGroupDropdown = (props: ISubscribeButtonGroupDropdownProps)
     }
 
     return <div className="btn-group-vertical dropleft fl-btn-link" role="group">
-               <BtnGroupDropSubscribe/>
-               <div className="dropdown-menu" aria-labelledby="btnGroupDropSubscribe">
-                   <SubscribeButton {...props} text={firstButtonText}/>
-                   {props.urlMirrors.map(
-                       (m: string, i: number) =>
-                       <SubscribeButton {...props} url={m} text={`Mirror ${i + 1 + mirrorIndex}`} key={i}/>)}
-               </div>
-           </div>;
+        <BtnGroupDropSubscribe />
+        <div className="dropdown-menu" aria-labelledby="btnGroupDropSubscribe">
+            <SubscribeButton {...props} text={firstButtonText} />
+            {props.urlMirrors.map(
+                (m: string, i: number) =>
+                    <SubscribeButton {...props} url={m} text={`Mirror ${i + 1 + mirrorIndex}`} key={i} />)}
+        </div>
+    </div>;
 };
 
 const BtnGroupDropSubscribe = () =>
     <button id="btnGroupDropSubscribe"
-            type="button"
-            className="btn btn-primary dropdown-toggle"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false">
+        type="button"
+        className="btn btn-primary dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false">
         Subscribe
     </button>;

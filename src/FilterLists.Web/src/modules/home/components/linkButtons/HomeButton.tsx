@@ -8,7 +8,7 @@ interface IProps {
 
 export const HomeButton = (props: IProps) =>
     props.url
-    ? <LinkButton href={props.url}
-                  title={`View ${props.name}'s homepage.`}
-                  text="Home"/>
-    : null;
+        ? <LinkButton href={props.url}
+            title={`View ${props.name}'s homepage.`}
+            text="Home" />
+        : null;
