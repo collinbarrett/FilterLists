@@ -1,4 +1,5 @@
 import React from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import { BrowserRouter } from "react-router-dom";
 import * as RoutesModule from "./Routes";

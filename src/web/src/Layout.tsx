@@ -1,5 +1,4 @@
 import * as React from "react";
-import "bootstrap";
 
 interface IProps {
     children?: React.ReactNode;
