@@ -2,11 +2,8 @@
 # Command: docker build -f src/FilterLists.Web/Dockerfile .
 
 # init base
-FROM node:alpine as base
-EXPOSE 3000
-WORKDIR /usr/app/
-ENTRYPOINT ["serve", "-s"]
-RUN npm install -g serve
+FROM nginx:alpine as base
+CMD ["nginx", "-g", "daemon off;"]
 
 # init build
 FROM node:alpine as build
@@ -22,4 +19,4 @@ RUN npm run build
 
 # final
 FROM base as final
-COPY --from=build /usr/src/app/build ./
+COPY --from=build /usr/src/app/build /usr/share/nginx/html
