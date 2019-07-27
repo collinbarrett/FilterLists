@@ -1,5 +1,5 @@
 import * as React from "react";
-import "isomorphic-fetch";
+import axios from "axios";
 import { ILanguage } from "./interfaces/ILanguage";
 import { ILicense } from "./interfaces/ILicense";
 import { IList } from "./interfaces/IList";
@@ -36,62 +36,48 @@ export class HomeContainer extends React.Component<{}, IState> {
     }
 
     componentDidMount() {
-        this.fetchLanguages();
-        this.fetchLicenses();
         this.fetchLists();
+        this.fetchLanguages();
+        this.fetchLicenses();        
         this.fetchMaintainers();
         this.fetchSoftware();
         this.fetchSyntaxes();
         this.fetchTags();
-        // this.fetchRuleCount();
     };
 
     fetchLanguages() {
-        fetch("/api/v1/languages")
-            .then(r => r.json() as Promise<ILanguage[]>)
-            .then(p => { this.setState({ languages: p }); });
+        axios.request<ILanguage[]>({ url: "/api/v1/languages" })
+            .then(l => { this.setState({ languages: l.data }); })
     };
 
     fetchLicenses() {
-        fetch("/api/v1/licenses")
-            .then(r => r.json() as Promise<ILicense[]>)
-            .then(p => { this.setState({ licenses: p }); });
+        axios.request<ILicense[]>({ url: "/api/v1/licenses" })
+            .then(l => { this.setState({ licenses: l.data }); })
     };
 
     fetchLists() {
-        fetch("/api/v1/lists")
-            .then(r => r.json() as Promise<IList[]>)
-            .then(p => { this.setState({ lists: p }); });
+        axios.request<IList[]>({ url: "/api/v1/lists" })
+            .then(l => { this.setState({ lists: l.data }); })
     };
 
     fetchMaintainers() {
-        fetch("/api/v1/maintainers")
-            .then(r => r.json() as Promise<IMaintainer[]>)
-            .then(p => { this.setState({ maintainers: p }); });
+        axios.request<IMaintainer[]>({ url: "/api/v1/maintainers" })
+            .then(l => { this.setState({ maintainers: l.data }); })
     };
 
     fetchSoftware() {
-        fetch("/api/v1/software")
-            .then(r => r.json() as Promise<ISoftware[]>)
-            .then(p => { this.setState({ software: p }); });
+        axios.request<ISoftware[]>({ url: "/api/v1/software" })
+            .then(l => { this.setState({ software: l.data }); })
     };
 
     fetchSyntaxes() {
-        fetch("/api/v1/syntaxes")
-            .then(r => r.json() as Promise<ISyntax[]>)
-            .then(p => { this.setState({ syntaxes: p }); });
+        axios.request<ISyntax[]>({ url: "/api/v1/syntaxes" })
+            .then(l => { this.setState({ syntaxes: l.data }); })
     };
 
     fetchTags() {
-        fetch("/api/v1/tags")
-            .then(r => r.json() as Promise<ITag[]>)
-            .then(p => { this.setState({ tags: p }); });
-    };
-
-    fetchRuleCount() {
-        fetch("/api/v1/rules")
-            .then(r => r.json() as Promise<number>)
-            .then(p => { this.setState({ ruleCount: p }); });
+        axios.request<ITag[]>({ url: "/api/v1/tags" })
+            .then(l => { this.setState({ tags: l.data }); })
     };
 
     render() {
