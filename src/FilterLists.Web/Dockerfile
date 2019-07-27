@@ -14,7 +14,7 @@ RUN npm install --only=prod
 
 # build
 COPY src/FilterLists.Web/. ./
-RUN npm run build
+RUN INLINE_RUNTIME_CHUNK=false npm run build
 
 # final
 FROM base as final
