@@ -1,6 +1,12 @@
 import * as React from "react";
 import "isomorphic-fetch";
-import { ILanguage, ILicense, IList, IMaintainer, ISoftware, ISyntax, ITag } from "./interfaces";
+import { ILanguage } from "./interfaces/ILanguage";
+import { ILicense } from "./interfaces/ILicense";
+import { IList } from "./interfaces/IList";
+import { IMaintainer } from "./interfaces/IMaintainer";
+import { ISoftware } from "./interfaces/ISoftware";
+import { ISyntax } from "./interfaces/ISyntax";
+import { ITag } from "./interfaces/ITag";
 import { Home } from "./Home";
 
 interface IState {
@@ -89,6 +95,6 @@ export class HomeContainer extends React.Component<{}, IState> {
     };
 
     render() {
-        return <Home {...this.state}/>;
+        return <Home {...this.state} />;
     };
 };

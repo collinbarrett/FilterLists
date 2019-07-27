@@ -1,4 +1,8 @@
-﻿import { ILanguage, ILicense, IMaintainer, ISyntax, ITag } from "../../interfaces";
+﻿import { ILanguage } from "../interfaces/ILanguage";
+import { ILicense } from "../interfaces/ILicense";
+import { IMaintainer } from "../interfaces/IMaintainer";
+import { ISyntax } from "../interfaces/ISyntax";
+import { ITag } from "../interfaces/ITag";
 
 export interface IListDetails {
     id: number;

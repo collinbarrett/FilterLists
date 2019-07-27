@@ -1,19 +1,20 @@
 import * as React from "react";
 import { Column, Filter } from "react-table";
-import { IColumnVisibility, ILicense } from "../../../interfaces";
+import { IColumnVisibility } from "../../../interfaces/IColumnVisibility";
+import { ILicense } from "../../../interfaces/ILicense";
 
 export const License = (columnVisibility: IColumnVisibility[], licenses: ILicense[]) =>
-({
-    Header: <span title="A legal document governing the use or redistribution of a FilterList.">License</span>,
-    accessor: "licenseId",
-    filterable: true,
-    filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, licenses),
-    Filter: ({ filter, onChange }: any) => Filter({ onChange, filter }, licenses),
-    sortMethod: (a: number, b: number) => sortMethod(a, b, licenses),
-    Cell: (c: any) => Cell(c.value, licenses),
-    width: 75,
-    show: columnVisibility.filter((c: IColumnVisibility) => c.column === "License")[0].visible
-} as Column);
+    ({
+        Header: <span title="A legal document governing the use or redistribution of a FilterList.">License</span>,
+        accessor: "licenseId",
+        filterable: true,
+        filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, licenses),
+        Filter: ({ filter, onChange }: any) => filterLicenses({ onChange, filter }, licenses),
+        sortMethod: (a: number, b: number) => sortMethod(a, b, licenses),
+        Cell: (c: any) => Cell(c.value, licenses),
+        width: 75,
+        show: columnVisibility.filter((c: IColumnVisibility) => c.column === "License")[0].visible
+    } as Column);
 
 const filterMethod = (f: Filter, r: any[], licenses: ILicense[]): boolean => {
     const listLicenseId: number = r[f.id as any];
@@ -27,19 +28,19 @@ const filterMethod = (f: Filter, r: any[], licenses: ILicense[]): boolean => {
     }
 };
 
-const Filter = (props: any, licenses: ILicense[]) =>
+const filterLicenses = (props: any, licenses: ILicense[]) =>
     <select
         onChange={(event: any) => props.onChange(event.target.value)}
         style={{ width: "100%" }}
         value={props.filter ? props.filter.value : "any"}>
         <option value="any">Any</option>
         {licenses.length > 0
-             ? licenses.sort((a, b) => a.name.replace(/['"]+/g, "").localeCompare(b.name.replace(/['"]+/g, ""))).map(
-                 (l: ILicense, i: number) =>
-                 <option value={l.id} key={i}>
-                     {l.name} ({l.filterListIds ? l.filterListIds.length : 0})
+            ? licenses.sort((a, b) => a.name.replace(/['"]+/g, "").localeCompare(b.name.replace(/['"]+/g, ""))).map(
+                (l: ILicense, i: number) =>
+                    <option value={l.id} key={i}>
+                        {l.name} ({l.filterListIds ? l.filterListIds.length : 0})
                  </option>)
-             : null}
+            : null}
     </select>;
 
 const sortMethod = (a: number, b: number, licenses: ILicense[]) => {
@@ -59,10 +60,10 @@ const sortMethod = (a: number, b: number, licenses: ILicense[]) => {
 const Cell = (licenseId: number, licenses: ILicense[]) => {
     const license = licenses.filter((l: ILicense) => licenseId === l.id)[0];
     return license
-               ? <div>
-                     <span title={license.name}>
-                         {license.descriptionUrl ? <a href={license.descriptionUrl}>{license.name}</a> : license.name}
-                     </span>
-                 </div>
-               : null;
+        ? <div>
+            <span title={license.name}>
+                {license.descriptionUrl ? <a href={license.descriptionUrl}>{license.name}</a> : license.name}
+            </span>
+        </div>
+        : null;
 };

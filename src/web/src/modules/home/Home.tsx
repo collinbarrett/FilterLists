@@ -1,5 +1,12 @@
 import * as React from "react";
-import { IColumnVisibility, ILanguage, ILicense, IList, IMaintainer, ISoftware, ISyntax, ITag } from "./interfaces";
+import { IColumnVisibility } from "./interfaces/IColumnVisibility";
+import { ILanguage } from "./interfaces/ILanguage";
+import { ILicense } from "./interfaces/ILicense";
+import { IList } from "./interfaces/IList";
+import { IMaintainer } from "./interfaces/IMaintainer";
+import { ISoftware } from "./interfaces/ISoftware";
+import { ISyntax } from "./interfaces/ISyntax";
+import { ITag } from "./interfaces/ITag";
 import { ListsTable, Oneliner } from "./components";
 
 const columnVisibilityDefaults: IColumnVisibility[] = [
@@ -60,33 +67,33 @@ export class Home extends React.Component<IProps, IState> {
 
     render() {
         return <div>
-                   <Oneliner listCount={this.props.lists.length}/* ruleCount={this.props.ruleCount}*//>
-                   <ListsTable {...this.props} {...this.state}/>
-                   {this.renderColumnVisibilityCheckboxes()}
-               </div>;
+            <Oneliner listCount={this.props.lists.length}/* ruleCount={this.props.ruleCount}*/ />
+            <ListsTable {...this.props} {...this.state} />
+            {this.renderColumnVisibilityCheckboxes()}
+        </div>;
     };
 
     renderColumnVisibilityCheckboxes() {
         return this.props.lists.length > 0
-                   ? <div className="d-none d-md-block text-right">
-                         Visible:&nbsp;&nbsp;{this.state.columnVisibility.map(
-                         (c: IColumnVisibility, i: number) => this.renderColumnVisibilityCheckbox(c, i))}
-                     </div>
-                   : null;
+            ? <div className="d-none d-md-block text-right">
+                Visible:&nbsp;&nbsp;{this.state.columnVisibility.map(
+                    (c: IColumnVisibility, i: number) => this.renderColumnVisibilityCheckbox(c, i))}
+            </div>
+            : null;
     };
 
     renderColumnVisibilityCheckbox(props: IColumnVisibility, key: number) {
         return <div className="form-check form-check-inline" key={key}>
-                   <input className="form-check-input"
-                          type="checkbox"
-                          id={`checkbox${props.column.replace(/\s+/g, "")}`}
-                          defaultChecked={props.visible}
-                          onChange={() => this.checkColumn(props)}/>
-                   <label className="form-check-label"
-                          htmlFor={`checkbox${props.column.replace(/\s+/g, "")}`}>
-                       {props.column}
-                   </label>
-               </div>;
+            <input className="form-check-input"
+                type="checkbox"
+                id={`checkbox${props.column.replace(/\s+/g, "")}`}
+                defaultChecked={props.visible}
+                onChange={() => this.checkColumn(props)} />
+            <label className="form-check-label"
+                htmlFor={`checkbox${props.column.replace(/\s+/g, "")}`}>
+                {props.column}
+            </label>
+        </div>;
     };
 
     checkColumn(props: IColumnVisibility) {

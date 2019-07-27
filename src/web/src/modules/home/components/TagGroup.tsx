@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ITag } from "../interfaces";
+import { ITag } from "../interfaces/ITag";
 import { getContrast } from "../../../utils";
 
 interface IProps {
