@@ -1,3 +1,12 @@
-body, h2, h3, h4, h5, blockquote { font-size: 16px; }
-.container{ max-width:98vw!important;padding-left:7px!important }
-.w-100{ padding-left:7px!important }
+body,
+h2,
+h3,
+h4,
+h5,
+blockquote {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 90vw;
+}
