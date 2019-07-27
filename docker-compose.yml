@@ -18,6 +18,7 @@ services:
     build:
       context: .
       dockerfile: src/web/Dockerfile
+      target: final
     networks:
       - reverse-proxy
 
