@@ -3,7 +3,6 @@
 
 # init base
 FROM nginx:alpine as base
-CMD ["nginx", "-g", "daemon off;"]
 
 # init build
 FROM node:alpine as build
