@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Column, Filter } from "react-table";
-import { IColumnVisibility, ISoftware } from "../../../interfaces";
+import { IColumnVisibility } from "../../../interfaces/IColumnVisibility";
+import { ISoftware } from "../../../interfaces/ISoftware";
 import { SoftwareIcon } from "../../softwareIcon";
 
 export const Software = (columnVisibility: IColumnVisibility[], software: ISoftware[]) => {
@@ -11,7 +12,7 @@ export const Software = (columnVisibility: IColumnVisibility[], software: ISoftw
         accessor: "syntaxId",
         filterable: true,
         filterMethod: (f: Filter, r: any[]) => filterMethod(f, r, softwareSorted),
-        Filter: ({ filter, onChange }: any) => Filter({ onChange, filter }, softwareSorted),
+        Filter: ({ filter, onChange }: any) => filterSoftware({ onChange, filter }, softwareSorted),
         sortMethod: (a: number, b: number) => sortMethod(a, b, softwareSorted),
         Cell: (c: any) => Cell(c.value, software),
         width: 155,
@@ -27,15 +28,15 @@ const filterMethod = (f: Filter, r: any[], software: ISoftware[]): boolean => {
     return isAny || (listSyntaxId ? isMatch : false);
 };
 
-const Filter = (props: any, software: ISoftware[]) =>
+const filterSoftware = (props: any, software: ISoftware[]) =>
     <select
         onChange={(event: any) => props.onChange(event.target.value)}
         style={{ width: "100%" }}
         value={props.filter ? props.filter.value : "any"}>
         <option value="any">Any</option>
         {software.length > 0
-             ? software.map((s: ISoftware, i: number) => <option value={s.id} key={i}>{s.name}</option>)
-             : null}
+            ? software.map((s: ISoftware, i: number) => <option value={s.id} key={i}>{s.name}</option>)
+            : null}
     </select>;
 
 const sortMethod = (a: number, b: number, software: ISoftware[]) => {
@@ -62,13 +63,13 @@ const sortMethod = (a: number, b: number, software: ISoftware[]) => {
 
 const Cell = (listSyntaxId: number, software: ISoftware[]) =>
     listSyntaxId
-    ? <div className="fl-wrap-cell">
-          {software.filter((s: ISoftware) => s.syntaxIds.indexOf(listSyntaxId) > -1)
-              .map((s: ISoftware, i: number) =>
-                  s.homeUrl
-                  ? <a href={s.homeUrl} key={i}>
-                        <SoftwareIcon id={s.id}/>
-                    </a>
-                  : <SoftwareIcon id={s.id} key={i}/>)}
-      </div>
-    : null;
+        ? <div className="fl-wrap-cell">
+            {software.filter((s: ISoftware) => s.syntaxIds.indexOf(listSyntaxId) > -1)
+                .map((s: ISoftware, i: number) =>
+                    s.homeUrl
+                        ? <a href={s.homeUrl} key={i}>
+                            <SoftwareIcon id={s.id} />
+                        </a>
+                        : <SoftwareIcon id={s.id} key={i} />)}
+        </div>
+        : null;

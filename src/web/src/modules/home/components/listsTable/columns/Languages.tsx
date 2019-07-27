@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Column, Filter } from "react-table";
-import { IColumnVisibility, ILanguage } from "../../../interfaces";
+import { IColumnVisibility } from "../../../interfaces/IColumnVisibility";
+import { ILanguage } from "../../../interfaces/ILanguage";
 
 export const Languages = (columnVisibility: IColumnVisibility[], languages: ILanguage[]) => {
     const languagesSorted = languages.sort((a, b) => a.name.localeCompare(b.name));
@@ -9,7 +10,7 @@ export const Languages = (columnVisibility: IColumnVisibility[], languages: ILan
         accessor: "languageIds",
         filterable: true,
         filterMethod: (f: Filter, r: any[]) => filterMethod(f, r),
-        Filter: ({ onChange, filter }: any) => Filter({ onChange, filter }, languagesSorted),
+        Filter: ({ onChange, filter }: any) => filterLanguages({ onChange, filter }, languagesSorted),
         sortMethod: (a: number[], b: number[]) => sortMethod(a, b, languagesSorted),
         Cell: (c: any) => Cell(c.value, languagesSorted),
         style: { whiteSpace: "inherit" },
@@ -21,23 +22,23 @@ export const Languages = (columnVisibility: IColumnVisibility[], languages: ILan
 const filterMethod = (f: Filter, r: any[]): boolean => {
     const listLanguageIds = r[f.id as any];
     return f.value === "any" ||
-    (listLanguageIds
-         ? listLanguageIds.join(",").split(",").includes(f.value)
-         : f.value === "none");
+        (listLanguageIds
+            ? listLanguageIds.join(",").split(",").includes(f.value)
+            : f.value === "none");
 };
 
-const Filter = (props: any, languages: ILanguage[]) =>
+const filterLanguages = (props: any, languages: ILanguage[]) =>
     <select onChange={(event: any) => props.onChange(event.target.value)}
-            style={{ width: "100%" }}
-            value={props.filter ? props.filter.value : "any"}>
+        style={{ width: "100%" }}
+        value={props.filter ? props.filter.value : "any"}>
         <option value="any">Any</option>
         <option value="none">None</option>
         {languages.length > 0
-             ? languages.map((l: ILanguage, i: number) =>
-                 <option value={l.id} key={i}>
-                     {l.name} ({l.filterListIds ? l.filterListIds.length : 0})
+            ? languages.map((l: ILanguage, i: number) =>
+                <option value={l.id} key={i}>
+                    {l.name} ({l.filterListIds ? l.filterListIds.length : 0})
                  </option>)
-             : null}
+            : null}
     </select>;
 
 const sortMethod = (a: number[], b: number[], languages: ILanguage[]) => {
@@ -58,14 +59,14 @@ const sortMethod = (a: number[], b: number[], languages: ILanguage[]) => {
 
 const Cell = (languageIds: number[], languages: ILanguage[]) =>
     languageIds
-    ? <div className="fl-wrap-cell">
-          {languageIds.map((id: number, i: number) => {
-              const language = languages.filter((l: ILanguage) => l.id === id)[0];
-              return <span className="badge badge-secondary"
-                           title={language.name}
-                           key={i}>
-                         {language.iso6391}
-                     </span>;
-          })}
-      </div>
-    : null;
+        ? <div className="fl-wrap-cell">
+            {languageIds.map((id: number, i: number) => {
+                const language = languages.filter((l: ILanguage) => l.id === id)[0];
+                return <span className="badge badge-secondary"
+                    title={language.name}
+                    key={i}>
+                    {language.iso6391}
+                </span>;
+            })}
+        </div>
+        : null;

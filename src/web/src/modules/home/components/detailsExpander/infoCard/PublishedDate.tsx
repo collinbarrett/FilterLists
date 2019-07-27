@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as moment from "moment";
+import moment from 'moment';
 
 interface IProps {
     date: string;
@@ -7,7 +7,7 @@ interface IProps {
 
 export const PublishedDate = (props: IProps) =>
     props.date
-    ? <li className="list-group-item">
-          <p>Published: {moment(props.date).format("l")}</p>
-      </li>
-    : null;
+        ? <li className="list-group-item">
+            <p>Published: {moment(props.date).format("l")}</p>
+        </li>
+        : null;
