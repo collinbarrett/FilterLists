@@ -23,6 +23,7 @@
 # Other common
 **/.gitattributes
 **/.github
+**/.sln
 **/docker-compose.dcproj
 **/*.DotSettings*
 **/appsettings*.json
@@ -31,8 +32,6 @@
 LICENSE
 
 # FilterLists custom
-FilterLists.sln
-FilterLists.Api.sln
 imgs
 ops
 data/TPLSubscriptionAssistant.html

@@ -1,17 +1,25 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "module": "es2015",
-    "moduleResolution": "node",
     "target": "es5",
-    "jsx": "react",
-    "sourceMap": true,
-    "skipDefaultLibCheck": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
-    "types": ["webpack-env"]
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve"
   },
-  "exclude": [
-    "bin",
-    "node_modules"
+  "include": [
+    "src"
   ]
 }
