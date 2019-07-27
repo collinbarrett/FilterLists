@@ -9,7 +9,7 @@ WORKDIR /usr/app/
 
 # install
 COPY src/web/package*.json ./
-RUN npm install -qy --only=prod
+RUN npm install --only=prod
 
 # final
 COPY src/web/. ./
