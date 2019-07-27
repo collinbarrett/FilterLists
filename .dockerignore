@@ -28,6 +28,7 @@
 **/*.DotSettings*
 **/appsettings*.json
 **/node_modules
+**/build
 **/*.md
 LICENSE
 
