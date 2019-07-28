@@ -19,7 +19,7 @@ const Header = () =>
     <header className="row">
         <h1>
             <a href="./">
-                <img src="logo_filterlists.png" alt="FilterLists" className="img-fluid" />
+                <img src="logo_filterlists.png" alt="FilterLists" className="img-fluid" style={{ maxWidth: "60%" }}/>
             </a>
         </h1>
     </header>;
