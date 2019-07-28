@@ -7722,5 +7722,45 @@
   {
     "filterListId": 1296,
     "tagId": 3
+  },
+  {
+    "filterListId": 1666,
+    "tagId": 1
+  },
+  {
+    "filterListId": 1667,
+    "tagId": 1
+  },
+  {
+    "filterListId": 1668,
+    "tagId": 15
+  },
+    {
+    "filterListId": 1669,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1670,
+    "tagId": 2
+  },
+    {
+    "filterListId": 1670,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1671,
+    "tagId": 2
+  },
+    {
+    "filterListId": 1672,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1640,
+    "tagId": 4
+  },
+  {
+    "filterListId": 1640,
+    "tagId": 10
   }
 ]
