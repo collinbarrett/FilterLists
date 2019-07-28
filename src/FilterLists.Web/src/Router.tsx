@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
-import { Home } from "./modules";
 import { BrowserRouter } from "react-router-dom";
+import { Home } from "./modules";
 
 const Routes =
     <Switch>
