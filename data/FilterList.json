@@ -1443,7 +1443,7 @@
     "homeUrl": "https://www.adblock.ro/",
     "issuesUrl": "https://github.com/tcptomato/ROad-Block/issues",
     "licenseId": 5,
-    "name": "ROad-Block",
+    "name": "ROad-Block Light",
     "syntaxId": 3,
     "updatedDate": "2019-04-14T19:40:10",
     "viewUrl": "https://road.adblock.ro/lista.txt",
@@ -17637,5 +17637,78 @@
     "syntaxId": 25,
     "licenseId": 28,
     "viewUrl": "https://urlhaus.abuse.ch/downloads/rpz/"
+  },
+  {
+    "id": 1666,
+    "description": "List of fraudulent French sites. Other related sites.",
+    "homeUrl": "https://github.com/CryptoFR/crypto-scams-fr",
+    "issuesUrl": "https://github.com/CryptoFR/crypto-scams-fr/issues",
+    "name": "CryptoScamsFR Misc",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/CryptoFR/crypto-scams-fr/master/misc.txt"
+  },
+  {
+    "id": 1667,
+    "description": "List of fraudulent French sites. Sites related to cryptocurrencies.",
+    "homeUrl": "https://github.com/CryptoFR/crypto-scams-fr",
+    "issuesUrl": "https://github.com/CryptoFR/crypto-scams-fr/issues",
+    "name": "CryptoScamsFR Websites",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/CryptoFR/crypto-scams-fr/master/websites.txt"
+  },
+  {
+    "id": 1668,
+    "homeUrl": "https://github.com/brasstax/RHEL-StreetPass-Relay",
+    "issuesUrl": "https://github.com/brasstax/RHEL-StreetPass-Relay/issues",
+    "name": "SPOOF-ATTWIFI - Pidora version (dnsmasq portion)",
+    "syntaxId": 20,
+    "updatedDate": "2013-10-20T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/brasstax/RHEL-StreetPass-Relay/master/spoof-attwifi/dnsmasq.conf"
+  },
+  {
+    "id": 1669,
+    "homeUrl": "https://github.com/farrokhi/adblock-iran",
+    "issuesUrl": "https://github.com/farrokhi/adblock-iran/issues",
+    "licenseId": 27,
+    "name": "BSTF (Babak's Strict Trackers Filterlist)",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/farrokhi/adblock-iran/master/additional-trackers.txt",
+    "viewUrlMirror1": "https://rawcdn.githack.com/farrokhi/adblock-iran/master/additional-trackers.txt"
+  },
+  {
+    "id": 1670,
+    "description": "Blocks Korean regional advertisements and trackers.",
+    "homeUrl": "https://github.com/yous/YousList",
+    "issuesUrl": "https://github.com/yous/YousList/issues",
+    "licenseId": 24,
+    "name": "YousList Hosts",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/yous/YousList/master/hosts.txt"
+  },
+  {
+    "id": 1671,
+    "description": "Romanian ad block filtering list.",
+    "descriptionSourceUrl": "https://github.com/tcptomato/ROad-Block",
+    "emailAddress": "contact@adblock.ro",
+    "forumUrl": "https://muut.com/i/adblockro/comments",
+    "homeUrl": "https://www.adblock.ro/",
+    "issuesUrl": "https://github.com/tcptomato/ROad-Block/issues",
+    "licenseId": 5,
+    "name": "ROad-Block",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/tcptomato/ROad-Block/master/road-block-filters.txt"
+  },
+  {
+    "id": 1672,
+    "description": "Romanian ad block filtering list.",
+    "descriptionSourceUrl": "https://github.com/tcptomato/ROad-Block",
+    "emailAddress": "contact@adblock.ro",
+    "forumUrl": "https://muut.com/i/adblockro/comments",
+    "homeUrl": "https://www.adblock.ro/",
+    "issuesUrl": "https://github.com/tcptomato/ROad-Block/issues",
+    "licenseId": 28,
+    "name": "ROad-Kill",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/tcptomato/ROad-Block/master/road-kill-filters.txt"
   }
 ]
