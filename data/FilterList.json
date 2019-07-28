@@ -17658,7 +17658,6 @@
   },
   {
     "id": 1668,
-    "description": "",
     "homeUrl": "https://github.com/brasstax/RHEL-StreetPass-Relay",
     "issuesUrl": "https://github.com/brasstax/RHEL-StreetPass-Relay/issues",
     "name": "SPOOF-ATTWIFI - Pidora version (dnsmasq portion)",
