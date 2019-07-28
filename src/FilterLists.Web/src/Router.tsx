@@ -1,13 +1,14 @@
 import * as React from "react";
-import { Layout } from "./Layout";
 import { Route, Redirect, Switch } from "react-router-dom";
 import { Home } from "./modules";
+import { BrowserRouter } from "react-router-dom";
 
-export const Routes = <Layout>
+const Routes =
     <Switch>
         <Route exact path="/" component={Home} />
         <Route>
             <Redirect to="/" />
         </Route>
-    </Switch>
-</Layout>;
+    </Switch>;
+
+export const Router = () => <BrowserRouter children={Routes} />

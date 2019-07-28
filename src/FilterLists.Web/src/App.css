@@ -1,3 +1,4 @@
+/* use consistent and smaller font size globally */
 body,
 h2,
 h3,
@@ -7,6 +8,7 @@ blockquote {
   font-size: 16px;
 }
 
+/* leave a bit of horizontal padding around the app for cleanliness */
 .container {
   max-width: 90vw;
 }
