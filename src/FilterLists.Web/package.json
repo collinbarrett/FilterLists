@@ -26,7 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:80",
+  "proxy": "https://filterlists.com",
   "eslintConfig": {
     "extends": "react-app"
   },
