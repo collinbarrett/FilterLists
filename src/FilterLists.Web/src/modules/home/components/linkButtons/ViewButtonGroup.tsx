@@ -31,12 +31,12 @@ const ViewButtonGroupDropdown = (props: IViewButtonGroupDropdownProps) => {
     }
 
     return <DropdownButton id="view-dropdown" drop="left" variant="primary" title="View" className="fl-btn-link">
-        <Dropdown.Item >
+        <Dropdown.Item as='span'>
             <ViewButton {...props} text={firstButtonText} />
         </Dropdown.Item>
         {props.urlMirrors.map(
             (m: string, i: number) =>
-                <Dropdown.Item key={i}>
+                <Dropdown.Item key={i} as='span'>
                     <ViewButton {...props} url={m} text={`Mirror ${i + 1 + mirrorIndex}`} />
                 </Dropdown.Item>)}
     </DropdownButton>;

@@ -31,13 +31,13 @@ const SubscribeButtonGroupDropdown = (props: ISubscribeButtonGroupDropdownProps)
         mirrorIndex++;
     }
 
-    return <DropdownButton id="subscribe-dropdown" drop="left" variant="primary" title="Subscribe" className="fl-btn-link">
-        <Dropdown.Item >
+    return <DropdownButton id="subscribe-dropdown" drop="left" variant="primary" title="Subscribe">
+        <Dropdown.Item as='span'>
             <SubscribeButton {...props} text={firstButtonText} />
         </Dropdown.Item>
         {props.urlMirrors.map(
             (m: string, i: number) =>
-                <Dropdown.Item key={i}>
+                <Dropdown.Item key={i} as='span'>
                     <SubscribeButton {...props} url={m} text={`Mirror ${i + 1 + mirrorIndex}`} />
                 </Dropdown.Item>)}
     </DropdownButton>;
