@@ -1,4 +1,5 @@
 import * as React from "react";
+import { ButtonProps } from "react-bootstrap";
 import { LinkButton } from "./LinkButton";
 
 interface IProps {
@@ -8,17 +9,17 @@ interface IProps {
 };
 
 export const SubscribeButton = (props: IProps) => {
-    let buttonClass: string | undefined;
+    let buttonVariant: ButtonProps["variant"];
     let titlePrefix: string;
 
     if (props.url.indexOf(".onion/") > 0) {
-        buttonClass = "btn-success";
+        buttonVariant = "success";
         titlePrefix = "Tor address - ";
     } else if (props.url.indexOf("http://") === 0) {
-        buttonClass = "btn-danger";
+        buttonVariant = "danger";
         titlePrefix = "Not Secure - ";
     } else {
-        buttonClass = undefined;
+        buttonVariant = undefined;
         titlePrefix = "";
     }
 
@@ -48,9 +49,10 @@ export const SubscribeButton = (props: IProps) => {
     };
 
     return props.url
-        ? <LinkButton href={href}
+        ? <LinkButton
+            variant={buttonVariant}
+            href={href}
             title={title}
-            buttonClass={buttonClass}
             text={props.text || "Subscribe"} />
         : null;
 };
