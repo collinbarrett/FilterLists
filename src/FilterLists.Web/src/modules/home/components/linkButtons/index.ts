@@ -6,9 +6,9 @@ import { HomeButton } from "./HomeButton";
 import { IssuesButton } from "./IssuesButton";
 import { PolicyButton } from "./PolicyButton";
 import { SubmitButton } from "./SubmitButton";
-import { SubscribeButtonGroup } from "./SubscribeButtonGroup";
+import { SubscribeButton } from "./SubscribeButton";
 import { TwitterButton } from "./TwitterButton";
-import { ViewButtonGroup } from "./ViewButtonGroup";
+import { ViewButton } from "./ViewButton";
 
 export {
     ChatButton,
@@ -19,7 +19,7 @@ export {
     IssuesButton,
     PolicyButton,
     SubmitButton,
-    SubscribeButtonGroup,
+    SubscribeButton,
     TwitterButton,
-    ViewButtonGroup
+    ViewButton
 };

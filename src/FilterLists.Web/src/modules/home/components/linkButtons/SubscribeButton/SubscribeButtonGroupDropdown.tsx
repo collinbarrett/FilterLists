@@ -5,24 +5,10 @@ import { SubscribeButton } from "./SubscribeButton";
 interface IProps {
     name: string;
     url: string;
-    urlMirrors?: string[];
-};
-
-export const SubscribeButtonGroup = (props: IProps) =>
-    props.url
-        ? (props.urlMirrors && props.urlMirrors.length > 0)
-            ? <SubscribeButtonGroupDropdown {...props} urlMirrors={props
-                .urlMirrors} />
-            : <SubscribeButton {...props} />
-        : null;
-
-interface ISubscribeButtonGroupDropdownProps {
-    name: string;
-    url: string;
     urlMirrors: string[];
 };
 
-const SubscribeButtonGroupDropdown = (props: ISubscribeButtonGroupDropdownProps) => {
+export const SubscribeButtonGroupDropdown = (props: IProps) => {
     let firstButtonText: string = "Original";
     let mirrorIndex: number = 0;
 

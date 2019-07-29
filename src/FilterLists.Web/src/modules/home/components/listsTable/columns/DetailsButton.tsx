@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Column, RowRenderProps } from "react-table";
-import "../../linkButtons/button.css";
 
 export const DetailsButton = {
     Header: <span title="Learn more about the FilterList.">Details</span>,

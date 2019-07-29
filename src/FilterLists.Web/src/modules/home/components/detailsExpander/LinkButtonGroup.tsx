@@ -8,8 +8,8 @@ import {
     IssuesButton,
     PolicyButton,
     SubmitButton,
-    SubscribeButtonGroup,
-    ViewButtonGroup
+    SubscribeButton,
+    ViewButton
 } from "../linkButtons";
 
 interface IProps {
@@ -28,8 +28,8 @@ interface IProps {
 
 export const LinkButtonGroup = (props: IProps) =>
     <div className="col-3 p-0 btn-group-vertical justify-content-start d-flex align-items-end">
-        <SubscribeButtonGroup name={props.name} url={props.viewUrl} urlMirrors={props.viewUrlMirrors} />
-        <ViewButtonGroup name={props.name} url={props.viewUrl} urlMirrors={props.viewUrlMirrors} />
+        <SubscribeButton name={props.name} url={props.viewUrl} urlMirrors={props.viewUrlMirrors} />
+        <ViewButton name={props.name} url={props.viewUrl} urlMirrors={props.viewUrlMirrors} />
         <HomeButton name={props.name} url={props.homeUrl} />
         <PolicyButton name={props.name} url={props.policyUrl} />
         <DonateButton name={props.name} url={props.donateUrl} />

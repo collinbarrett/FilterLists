@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ButtonProps } from "react-bootstrap";
-import { LinkButton } from "./LinkButton";
+import { LinkButton } from "../LinkButton";
 
 interface IProps {
     name: string;
@@ -34,8 +34,6 @@ export const SubscribeButton = (props: IProps) => {
     } else {
         href = `abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${hrefTitle}`;
     };
-
-
 
     let title;
     if (props.url.indexOf(".tpl") > 0) {
