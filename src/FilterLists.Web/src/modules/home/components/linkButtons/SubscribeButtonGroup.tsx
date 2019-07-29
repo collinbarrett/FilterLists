@@ -1,4 +1,5 @@
 import * as React from "react";
+import { DropdownButton, Dropdown } from "react-bootstrap";
 import { SubscribeButton } from "./SubscribeButton";
 
 interface IProps {
@@ -30,23 +31,14 @@ const SubscribeButtonGroupDropdown = (props: ISubscribeButtonGroupDropdownProps)
         mirrorIndex++;
     }
 
-    return <div className="btn-group-vertical dropleft fl-btn-link" role="group">
-        <BtnGroupDropSubscribe />
-        <div className="dropdown-menu" aria-labelledby="btnGroupDropSubscribe">
+    return <DropdownButton id="subscribe-dropdown" drop="left" variant="primary" title="Subscribe" className="fl-btn-link">
+        <Dropdown.Item >
             <SubscribeButton {...props} text={firstButtonText} />
-            {props.urlMirrors.map(
-                (m: string, i: number) =>
-                    <SubscribeButton {...props} url={m} text={`Mirror ${i + 1 + mirrorIndex}`} key={i} />)}
-        </div>
-    </div>;
+        </Dropdown.Item>
+        {props.urlMirrors.map(
+            (m: string, i: number) =>
+                <Dropdown.Item key={i}>
+                    <SubscribeButton {...props} url={m} text={`Mirror ${i + 1 + mirrorIndex}`} />
+                </Dropdown.Item>)}
+    </DropdownButton>;
 };
-
-const BtnGroupDropSubscribe = () =>
-    <button id="btnGroupDropSubscribe"
-        type="button"
-        className="btn btn-primary dropdown-toggle"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false">
-        Subscribe
-    </button>;

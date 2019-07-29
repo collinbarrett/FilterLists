@@ -1,4 +1,5 @@
 import * as React from "react";
+import { DropdownButton, Dropdown } from "react-bootstrap";
 import { ViewButton } from "./ViewButton";
 
 interface IProps {
@@ -29,23 +30,14 @@ const ViewButtonGroupDropdown = (props: IViewButtonGroupDropdownProps) => {
         mirrorIndex++;
     }
 
-    return <div className="btn-group-vertical dropleft fl-btn-link" role="group">
-        <BtnGroupDropView />
-        <div className="dropdown-menu" aria-labelledby="btnGroupDropView">
+    return <DropdownButton id="view-dropdown" drop="left" variant="primary" title="View" className="fl-btn-link">
+        <Dropdown.Item >
             <ViewButton {...props} text={firstButtonText} />
-            {props.urlMirrors.map(
-                (m: string, i: number) =>
-                    <ViewButton {...props} url={m} text={`Mirror ${i + 1 + mirrorIndex}`} key={i} />)}
-        </div>
-    </div>;
+        </Dropdown.Item>
+        {props.urlMirrors.map(
+            (m: string, i: number) =>
+                <Dropdown.Item key={i}>
+                    <ViewButton {...props} url={m} text={`Mirror ${i + 1 + mirrorIndex}`} />
+                </Dropdown.Item>)}
+    </DropdownButton>;
 };
-
-const BtnGroupDropView = () =>
-    <button id="btnGroupDropView"
-        type="button"
-        className="btn btn-primary dropdown-toggle"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false">
-        View
-    </button>;
