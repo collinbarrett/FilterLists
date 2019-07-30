@@ -1,6 +1,6 @@
 import * as React from "react";
 import { IColumnVisibility } from "../../interfaces/IColumnVisibility";
-import { ILanguage } from "../../interfaces/ILanguage";
+import { Language } from "../../interfaces/Language";
 import { ILicense } from "../../interfaces/ILicense";
 import { IList } from "../../interfaces/IList";
 import { IMaintainer } from "../../interfaces/IMaintainer";
@@ -27,7 +27,7 @@ import { IListDetails } from "../IListDetails";
 import { DetailsExpander } from "../../components";
 
 interface Props {
-    languages: ILanguage[];
+    languages: Language[];
     licenses: ILicense[];
     lists: IList[];
     maintainers: IMaintainer[];
@@ -73,7 +73,7 @@ export const ListsTable = (props: Props) =>
 
 interface ICreateListDtoProps {
     list: IList;
-    languages: ILanguage[];
+    languages: Language[];
     licenses: ILicense[];
     maintainers: IMaintainer[];
     syntaxes: ISyntax[];
@@ -92,7 +92,7 @@ const mapListDetails = (props: ICreateListDtoProps): IListDetails =>
         homeUrl: props.list.homeUrl,
         issuesUrl: props.list.issuesUrl,
         languages: props.list.languageIds
-            ? props.languages.filter((l: ILanguage) => props.list.languageIds.indexOf(l.id) > -1)
+            ? props.languages.filter((l: Language) => props.list.languageIds.indexOf(l.id) > -1)
             : undefined,
         license: props.licenses.filter((l: ILicense) => props.list.licenseId === l.id)[0],
         maintainers: props.list.maintainerIds

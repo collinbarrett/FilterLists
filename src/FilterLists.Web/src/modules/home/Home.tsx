@@ -1,6 +1,6 @@
 import * as React from "react";
 import { IColumnVisibility } from "./interfaces/IColumnVisibility";
-import { ILanguage } from "./interfaces/ILanguage";
+import { Language } from "./interfaces/Language";
 import { ILicense } from "./interfaces/ILicense";
 import { IList } from "./interfaces/IList";
 import { IMaintainer } from "./interfaces/IMaintainer";
@@ -21,7 +21,7 @@ const columnVisibilityDefaults: IColumnVisibility[] = [
 ];
 
 interface Props {
-    languages: ILanguage[];
+    languages: Language[];
     licenses: ILicense[];
     lists: IList[];
     maintainers: IMaintainer[];

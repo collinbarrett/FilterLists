@@ -1,8 +1,8 @@
 import * as React from "react";
-import { ILanguage } from "../../../interfaces/ILanguage";
+import { Language } from "../../../interfaces/Language";
 
 interface Props {
-    languages: ILanguage[];
+    languages: Language[];
 };
 
 export const Languages = (props: Props) =>
@@ -11,7 +11,7 @@ export const Languages = (props: Props) =>
             ? <li className="list-group-item">
                 <p className="m-0">Languages:</p>
                 <ul>
-                    {props.languages.map((language: ILanguage, i: number) => <li key={i}>{language.name}</li>)}
+                    {props.languages.map((language: Language, i: number) => <li key={i}>{language.name}</li>)}
                 </ul>
             </li>
             : <li className="list-group-item">

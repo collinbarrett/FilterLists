@@ -1,6 +1,6 @@
 import * as React from "react";
 import axios from "axios";
-import { ILanguage } from "./interfaces/ILanguage";
+import { Language } from "./interfaces/Language";
 import { ILicense } from "./interfaces/ILicense";
 import { IList } from "./interfaces/IList";
 import { IMaintainer } from "./interfaces/IMaintainer";
@@ -10,7 +10,7 @@ import { ITag } from "./interfaces/ITag";
 import { Home } from "./Home";
 
 interface IState {
-    languages: ILanguage[];
+    languages: Language[];
     licenses: ILicense[];
     lists: IList[];
     maintainers: IMaintainer[];
@@ -46,7 +46,7 @@ export class HomeContainer extends React.Component<{}, IState> {
     };
 
     fetchLanguages() {
-        axios.request<ILanguage[]>({ url: "/api/v1/languages" })
+        axios.request<Language[]>({ url: "/api/v1/languages" })
             .then(l => { this.setState({ languages: l.data }); })
     };
 
