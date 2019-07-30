@@ -26,7 +26,7 @@ import {
 import { IListDetails } from "../IListDetails";
 import { DetailsExpander } from "../../components";
 
-interface IProps {
+interface Props {
     languages: ILanguage[];
     licenses: ILicense[];
     lists: IList[];
@@ -38,7 +38,7 @@ interface IProps {
     pageSize: number;
 };
 
-export const ListsTable = (props: IProps) =>
+export const ListsTable = (props: Props) =>
     props.languages.length > 0 && props.lists.length > 0 && props.software.length > 0 && props.tags.length > 0
         ? <ReactTable
             data={props.lists}

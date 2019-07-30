@@ -2,13 +2,13 @@ import * as React from "react";
 import { DropdownButton, Dropdown } from "react-bootstrap";
 import { ViewButton } from "./ViewButton";
 
-interface IProps {
+interface Props {
     name: string;
     url: string;
     urlMirrors: string[];
 };
 
-export const ViewButtonGroupDropdown = (props: IProps) => {
+export const ViewButtonGroupDropdown = (props: Props) => {
     let firstButtonText: string = "Original";
     let mirrorIndex: number = 0;
 

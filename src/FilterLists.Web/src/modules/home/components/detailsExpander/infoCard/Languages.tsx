@@ -1,11 +1,11 @@
 import * as React from "react";
 import { ILanguage } from "../../../interfaces/ILanguage";
 
-interface IProps {
+interface Props {
     languages: ILanguage[];
 };
 
-export const Languages = (props: IProps) =>
+export const Languages = (props: Props) =>
     props.languages && props.languages.length > 0
         ? props.languages.length > 1
             ? <li className="list-group-item">

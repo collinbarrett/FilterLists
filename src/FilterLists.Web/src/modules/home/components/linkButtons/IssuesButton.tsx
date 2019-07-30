@@ -1,12 +1,12 @@
 import * as React from "react";
 import { LinkButton } from "./LinkButton";
 
-interface IProps {
+interface Props {
     name: string;
     url: string;
 };
 
-export const IssuesButton = (props: IProps) =>
+export const IssuesButton = (props: Props) =>
     props.url
         ? <LinkButton href={props.url}
             title={`View the GitHub Issues for ${props.name}.`}

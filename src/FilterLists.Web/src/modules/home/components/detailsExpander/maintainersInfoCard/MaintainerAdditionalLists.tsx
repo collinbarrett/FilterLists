@@ -1,11 +1,11 @@
 import * as React from "react";
 
-//interface IProps {
+//interface Props {
 //    name: string;
 //    additionalLists: IMaintainerAdditionalListDto[];
 //};
 
-export const MaintainerAdditionalLists = (/*props: IProps*/) =>
+export const MaintainerAdditionalLists = (/*props: Props*/) =>
     <div className="col-9">
         { /*props.additionalLists && props.additionalLists.length > 0
                     ? <div>

@@ -2,13 +2,13 @@ import * as React from "react";
 import { DropdownButton, Dropdown } from "react-bootstrap";
 import { SubscribeButton } from "./SubscribeButton";
 
-interface IProps {
+interface Props {
     name: string;
     url: string;
     urlMirrors: string[];
 };
 
-export const SubscribeButtonGroupDropdown = (props: IProps) => {
+export const SubscribeButtonGroupDropdown = (props: Props) => {
     let firstButtonText: string = "Original";
     let mirrorIndex: number = 0;
 

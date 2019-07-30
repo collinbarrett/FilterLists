@@ -15,7 +15,7 @@ import { Syntax } from "./Syntax";
 import { TagGroup } from "../../TagGroup"
 // import { UpdatedDate } from "./UpdatedDate";
 
-interface IProps {
+interface Props {
     columnVisibility: IColumnVisibility[];
     description: string;
     descriptionSourceUrl: string;
@@ -30,7 +30,7 @@ interface IProps {
     //updatedDate: string;
 };
 
-export const InfoCard = (props: IProps) =>
+export const InfoCard = (props: Props) =>
     <div className="col-9">
         {props.columnVisibility.filter((c: IColumnVisibility) => c.column === "Tags")[0].visible
             ? null

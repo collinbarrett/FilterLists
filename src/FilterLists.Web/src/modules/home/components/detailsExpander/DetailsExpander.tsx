@@ -6,13 +6,13 @@ import { InfoCard } from "./infoCard";
 import { LinkButtonGroup } from "./LinkButtonGroup";
 import { MaintainersInfoCard } from "./maintainersInfoCard";
 
-interface IProps {
+interface Props {
     columnVisibility: IColumnVisibility[];
     list: IListDetails;
     software: ISoftware[];
 };
 
-export const DetailsExpander = (props: IProps) =>
+export const DetailsExpander = (props: Props) =>
     <div className="card border-primary">
         <div className="card-body p-2">
             <div className="container m-0">

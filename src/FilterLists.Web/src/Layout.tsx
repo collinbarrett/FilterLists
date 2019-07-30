@@ -1,10 +1,10 @@
 import * as React from "react";
 
-interface IProps {
+interface Props {
     children?: React.ReactNode;
 };
 
-export const Layout = (props: IProps) =>
+export const Layout = (props: Props) =>
     <div className="container">
         <Header />
         <div className="row">

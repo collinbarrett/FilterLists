@@ -12,7 +12,7 @@ import {
     ViewButton
 } from "../linkButtons";
 
-interface IProps {
+interface Props {
     chatUrl: string;
     donateUrl: string;
     emailAddress: string;
@@ -26,7 +26,7 @@ interface IProps {
     viewUrlMirrors: string[];
 };
 
-export const LinkButtonGroup = (props: IProps) =>
+export const LinkButtonGroup = (props: Props) =>
     <div className="col-3 p-0 btn-group-vertical justify-content-start d-flex align-items-end">
         <SubscribeButton name={props.name} url={props.viewUrl} urlMirrors={props.viewUrlMirrors} />
         <ViewButton name={props.name} url={props.viewUrl} urlMirrors={props.viewUrlMirrors} />

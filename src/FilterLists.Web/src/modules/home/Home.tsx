@@ -20,7 +20,7 @@ const columnVisibilityDefaults: IColumnVisibility[] = [
     { column: "Subscribe", visible: false }
 ];
 
-interface IProps {
+interface Props {
     languages: ILanguage[];
     licenses: ILicense[];
     lists: IList[];
@@ -36,8 +36,8 @@ interface IState {
     pageSize: number;
 };
 
-export class Home extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
+export class Home extends React.Component<Props, IState> {
+    constructor(props: Props) {
         super(props);
         this.state = {
             columnVisibility: columnVisibilityDefaults,

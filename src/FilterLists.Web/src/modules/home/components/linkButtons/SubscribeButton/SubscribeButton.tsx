@@ -2,13 +2,13 @@ import * as React from "react";
 import { ButtonProps } from "react-bootstrap";
 import { LinkButton } from "../LinkButton";
 
-interface IProps {
+interface Props {
     name: string;
     url: string;
     text?: string;
 };
 
-export const SubscribeButton = (props: IProps) => {
+export const SubscribeButton = (props: Props) => {
     let buttonVariant: ButtonProps["variant"];
     let titlePrefix: string;
 

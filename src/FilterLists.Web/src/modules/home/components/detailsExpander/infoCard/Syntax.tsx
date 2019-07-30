@@ -1,11 +1,11 @@
 import * as React from "react";
 import { ISyntax } from "../../../interfaces/ISyntax";
 
-interface IProps {
+interface Props {
     syntax: ISyntax;
 };
 
-export const Syntax = (props: IProps) =>
+export const Syntax = (props: Props) =>
     props.syntax
         ? (props.syntax.definitionUrl
             ? <li className="list-group-item">
