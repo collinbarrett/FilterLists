@@ -1,11 +1,11 @@
 import * as React from "react";
 import { ILicense } from "../../../interfaces/ILicense";
 
-interface IProps {
+interface Props {
     license: ILicense;
 };
 
-export const License = (props: IProps) =>
+export const License = (props: Props) =>
     props.license.name
         ? (props.license.descriptionUrl
             ? <li className="list-group-item">

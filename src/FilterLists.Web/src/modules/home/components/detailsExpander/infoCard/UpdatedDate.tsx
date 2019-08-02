@@ -1,11 +1,11 @@
 import * as React from "react";
 import moment from 'moment';
 
-interface IProps {
+interface Props {
     updatedDate: string;
 };
 
-export const UpdatedDate = (props: IProps) =>
+export const UpdatedDate = (props: Props) =>
     props.updatedDate
         ? <li className="list-group-item">
             <p>Updated: {moment(props.updatedDate).isValid()

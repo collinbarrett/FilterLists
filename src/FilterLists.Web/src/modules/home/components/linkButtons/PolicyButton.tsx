@@ -1,12 +1,12 @@
 import * as React from "react";
 import { LinkButton } from "./LinkButton";
 
-interface IProps {
+interface Props {
     name: string;
     url: string;
 };
 
-export const PolicyButton = (props: IProps) =>
+export const PolicyButton = (props: Props) =>
     props.url
         ? <LinkButton href={props.url}
             title={`View the types of rules that ${props.name} includes.`}

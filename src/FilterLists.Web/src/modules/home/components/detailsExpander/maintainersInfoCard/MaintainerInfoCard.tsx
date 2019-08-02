@@ -3,11 +3,11 @@ import { IMaintainer } from "../../../interfaces/IMaintainer";
 import { MaintainerAdditionalLists } from "./MaintainerAdditionalLists";
 import { MaintainerLinkButtonGroup } from "./MaintainerLinkButtonGroup";
 
-interface IProps {
+interface Props {
     maintainer: IMaintainer;
 };
 
-export const MaintainerInfoCard = (props: IProps) =>
+export const MaintainerInfoCard = (props: Props) =>
     props.maintainer.name
         ? <div className="card">
             <div className="card-body">

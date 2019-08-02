@@ -1,12 +1,12 @@
 import * as React from "react";
 import "./description.css";
 
-interface IProps {
+interface Props {
     description: string;
     url: string;
 };
 
-export const Description = (props: IProps) =>
+export const Description = (props: Props) =>
     props.description
         ? <h3 className="card-header fl-description">
             {props.url

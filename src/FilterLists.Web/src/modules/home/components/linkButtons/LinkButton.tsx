@@ -1,18 +1,19 @@
 import * as React from "react";
-import "./button.css";
+import { Button, ButtonProps } from "react-bootstrap";
 
-interface IProps {
+interface Props {
     href: string;
+    variant?: ButtonProps["variant"],
     title?: string;
-    buttonClass?: string;
     text: string;
 };
 
-export const LinkButton = (props: IProps) =>
+export const LinkButton = (props: Props) =>
     props.href
-        ? <a href={props.href}
-            title={props.title}
-            className={`btn ${props.buttonClass || "btn-primary"} fl-btn-link`}>
+        ? <Button
+            href={props.href}
+            variant={props.variant}
+            title={props.title}>
             {props.text}
-        </a>
+        </Button>
         : null;

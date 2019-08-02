@@ -1,4 +1,4 @@
-﻿import { ILanguage } from "../interfaces/ILanguage";
+﻿import { Language } from "../interfaces/Language";
 import { ILicense } from "../interfaces/ILicense";
 import { IMaintainer } from "../interfaces/IMaintainer";
 import { ISyntax } from "../interfaces/ISyntax";
@@ -14,7 +14,7 @@ export interface IListDetails {
     forumUrl: string;
     homeUrl: string;
     issuesUrl: string;
-    languages: ILanguage[];
+    languages: Language[];
     license: ILicense;
     maintainers: IMaintainer[];
     name: string;

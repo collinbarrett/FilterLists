@@ -35,11 +35,11 @@ import {
     img34
 } from "./imgs";
 
-interface IProps {
+interface Props {
     id: number;
 };
 
-export const SoftwareIcon = (props: IProps) =>
+export const SoftwareIcon = (props: Props) =>
     icons[props.id]
         ? <img src={icons[props.id].image}
             height="20"

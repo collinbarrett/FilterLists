@@ -1,13 +1,13 @@
 import * as React from "react";
-import { LinkButton } from "./LinkButton";
+import { LinkButton } from "../LinkButton";
 
-interface IProps {
+interface Props {
     name: string;
     url: string;
     text?: string;
 };
 
-export const ViewButton = (props: IProps) => {
+export const ViewButton = (props: Props) => {
 
     let title;
     if (props.url.indexOf(".onion/") > 0) { title = `Tor address - View ${props.name} in its raw format.`; }

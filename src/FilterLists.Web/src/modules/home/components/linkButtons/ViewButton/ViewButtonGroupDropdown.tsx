@@ -2,26 +2,13 @@ import * as React from "react";
 import { DropdownButton, Dropdown } from "react-bootstrap";
 import { ViewButton } from "./ViewButton";
 
-interface IProps {
-    name: string;
-    url: string;
-    urlMirrors?: string[];
-};
-
-export const ViewButtonGroup = (props: IProps) =>
-    props.url
-        ? (props.urlMirrors && props.urlMirrors.length > 0)
-            ? <ViewButtonGroupDropdown {...props} urlMirrors={props.urlMirrors} />
-            : <ViewButton {...props} />
-        : null;
-
-interface IViewButtonGroupDropdownProps {
+interface Props {
     name: string;
     url: string;
     urlMirrors: string[];
 };
 
-const ViewButtonGroupDropdown = (props: IViewButtonGroupDropdownProps) => {
+export const ViewButtonGroupDropdown = (props: Props) => {
     let firstButtonText: string = "Original";
     let mirrorIndex: number = 0;
 
@@ -30,7 +17,7 @@ const ViewButtonGroupDropdown = (props: IViewButtonGroupDropdownProps) => {
         mirrorIndex++;
     }
 
-    return <DropdownButton id="view-dropdown" drop="left" variant="primary" title="View" className="fl-btn-link">
+    return <DropdownButton id="view-dropdown" drop="left" variant="primary" title="View">
         <Dropdown.Item as='span'>
             <ViewButton {...props} text={firstButtonText} />
         </Dropdown.Item>

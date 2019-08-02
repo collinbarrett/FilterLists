@@ -1,24 +1,25 @@
 import * as React from "react";
-import { LinkButton } from "./LinkButton";
+import { ButtonProps } from "react-bootstrap";
+import { LinkButton } from "../LinkButton";
 
-interface IProps {
+interface Props {
     name: string;
     url: string;
     text?: string;
 };
 
-export const SubscribeButton = (props: IProps) => {
-    let buttonClass: string | undefined;
+export const SubscribeButton = (props: Props) => {
+    let buttonVariant: ButtonProps["variant"];
     let titlePrefix: string;
 
     if (props.url.indexOf(".onion/") > 0) {
-        buttonClass = "btn-success";
+        buttonVariant = "success";
         titlePrefix = "Tor address - ";
     } else if (props.url.indexOf("http://") === 0) {
-        buttonClass = "btn-danger";
+        buttonVariant = "danger";
         titlePrefix = "Not Secure - ";
     } else {
-        buttonClass = undefined;
+        buttonVariant = undefined;
         titlePrefix = "";
     }
 
@@ -34,8 +35,6 @@ export const SubscribeButton = (props: IProps) => {
         href = `abp:subscribe?location=${encodeURIComponent(props.url)}&amp;title=${hrefTitle}`;
     };
 
-
-
     let title;
     if (props.url.indexOf(".tpl") > 0) {
         title = `${titlePrefix}Subscribe to ${props.name} with Internet Explorer's Tracking Protection List feature.`;
@@ -48,9 +47,10 @@ export const SubscribeButton = (props: IProps) => {
     };
 
     return props.url
-        ? <LinkButton href={href}
+        ? <LinkButton
+            variant={buttonVariant}
+            href={href}
             title={title}
-            buttonClass={buttonClass}
             text={props.text || "Subscribe"} />
         : null;
 };

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { IColumnVisibility } from "../../../interfaces/IColumnVisibility";
-import { ILanguage } from "../../../interfaces/ILanguage";
+import { Language } from "../../../interfaces/Language";
 import { ILicense, } from "../../../interfaces/ILicense";
 import { ISoftware, } from "../../../interfaces/ISoftware";
 import { ISyntax, } from "../../../interfaces/ISyntax";
@@ -15,11 +15,11 @@ import { Syntax } from "./Syntax";
 import { TagGroup } from "../../TagGroup"
 // import { UpdatedDate } from "./UpdatedDate";
 
-interface IProps {
+interface Props {
     columnVisibility: IColumnVisibility[];
     description: string;
     descriptionSourceUrl: string;
-    languages: ILanguage[];
+    languages: Language[];
     license: ILicense;
     name: string;
     publishedDate: string;
@@ -30,7 +30,7 @@ interface IProps {
     //updatedDate: string;
 };
 
-export const InfoCard = (props: IProps) =>
+export const InfoCard = (props: Props) =>
     <div className="col-9">
         {props.columnVisibility.filter((c: IColumnVisibility) => c.column === "Tags")[0].visible
             ? null

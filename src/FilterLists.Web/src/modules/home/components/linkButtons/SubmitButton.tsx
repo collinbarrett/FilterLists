@@ -1,12 +1,12 @@
 import * as React from "react";
 import { LinkButton } from "./LinkButton";
 
-interface IProps {
+interface Props {
     name: string;
     url: string;
 };
 
-export const SubmitButton = (props: IProps) =>
+export const SubmitButton = (props: Props) =>
     props.url
         ? <LinkButton href={props.url}
             title={`Submit a new rule to be included in ${props.name}.`}

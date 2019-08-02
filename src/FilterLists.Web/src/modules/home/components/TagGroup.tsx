@@ -2,11 +2,11 @@ import * as React from "react";
 import { ITag } from "../interfaces/ITag";
 import { getContrast } from "../../../utils";
 
-interface IProps {
+interface Props {
     tags: ITag[];
 };
 
-export const TagGroup = (props: IProps) =>
+export const TagGroup = (props: Props) =>
     props.tags && props.tags.length > 0
         ? <div className="fl-wrap-cell">
             {props.tags.map((t: ITag, i: number) => <Tag tag={t} key={i} />)}

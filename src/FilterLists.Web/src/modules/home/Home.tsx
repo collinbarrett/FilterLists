@@ -1,6 +1,6 @@
 import * as React from "react";
 import { IColumnVisibility } from "./interfaces/IColumnVisibility";
-import { ILanguage } from "./interfaces/ILanguage";
+import { Language } from "./interfaces/Language";
 import { ILicense } from "./interfaces/ILicense";
 import { IList } from "./interfaces/IList";
 import { IMaintainer } from "./interfaces/IMaintainer";
@@ -20,8 +20,8 @@ const columnVisibilityDefaults: IColumnVisibility[] = [
     { column: "Subscribe", visible: false }
 ];
 
-interface IProps {
-    languages: ILanguage[];
+interface Props {
+    languages: Language[];
     licenses: ILicense[];
     lists: IList[];
     maintainers: IMaintainer[];
@@ -36,8 +36,8 @@ interface IState {
     pageSize: number;
 };
 
-export class Home extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
+export class Home extends React.Component<Props, IState> {
+    constructor(props: Props) {
         super(props);
         this.state = {
             columnVisibility: columnVisibilityDefaults,

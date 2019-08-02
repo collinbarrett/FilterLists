@@ -1,17 +1,17 @@
 import * as React from "react";
-import { ILanguage } from "../../../interfaces/ILanguage";
+import { Language } from "../../../interfaces/Language";
 
-interface IProps {
-    languages: ILanguage[];
+interface Props {
+    languages: Language[];
 };
 
-export const Languages = (props: IProps) =>
+export const Languages = (props: Props) =>
     props.languages && props.languages.length > 0
         ? props.languages.length > 1
             ? <li className="list-group-item">
                 <p className="m-0">Languages:</p>
                 <ul>
-                    {props.languages.map((language: ILanguage, i: number) => <li key={i}>{language.name}</li>)}
+                    {props.languages.map((language: Language, i: number) => <li key={i}>{language.name}</li>)}
                 </ul>
             </li>
             : <li className="list-group-item">
