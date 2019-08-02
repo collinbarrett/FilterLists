@@ -18433,5 +18433,17 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt"
+  },
+  {
+    "id": 1739,
+    "description": "Hosts file to avoid advertisement display on website.",
+    "descriptionSourceUrl": "https://warui.intaa.net/adhosts/",
+    "homeUrl": "https://warui.intaa.net/adhosts/",
+    "licenseId": 5,
+    "name": "Warui Hosts (Unbound)",
+    "submissionUrl": "https://warui.intaa.net/adhosts/#fh5co-blog-section",
+    "syntaxId": 24,
+    "updatedDate": "2019-04-13T10:00:14",
+    "viewUrl": "https://warui.intaa.net/adhosts/local_zone.conf.txt"
   }
 ]
