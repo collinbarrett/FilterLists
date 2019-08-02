@@ -2306,5 +2306,61 @@
   {
     "filterListId": 1097,
     "languageId": 58
+  },
+  {
+    "filterListId": 1702,
+    "languageId": 141
+  },
+  {
+    "filterListId": 1703,
+    "languageId": 154
+  },
+  {
+    "filterListId": 1704,
+    "languageId": 154
+  },
+  {
+    "filterListId": 1705,
+    "languageId": 99
+  },
+  {
+    "filterListId": 1706,
+    "languageId": 167
+  },
+  {
+    "filterListId": 1707,
+    "languageId": 141
+  },
+  {
+    "filterListId": 1708,
+    "languageId": 141
+  },
+  {
+    "filterListId": 1709,
+    "languageId": 141
+  },
+  {
+    "filterListId": 1712,
+    "languageId": 99
+  },
+  {
+    "filterListId": 1713,
+    "languageId": 99
+  },
+  {
+    "filterListId": 1725,
+    "languageId": 18
+  },
+  {
+    "filterListId": 1725,
+    "languageId": 48
+  },
+  {
+    "filterListId": 1725,
+    "languageId": 122
+  },
+  {
+    "filterListId": 1739,
+    "languageId": 141
   }
 ]

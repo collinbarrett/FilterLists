@@ -3636,7 +3636,7 @@
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
     "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "licenseId": 5,
+    "licenseId": 35,
     "name": "1Hosts",
     "syntaxId": 1,
     "updatedDate": "2019-04-13T02:55:11",
@@ -8371,11 +8371,11 @@
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
     "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "licenseId": 5,
+    "licenseId": 35,
     "name": "1Hosts (Domains)",
     "syntaxId": 2,
     "updatedDate": "2019-04-16T02:23:12",
-    "viewUrl": "https://1hos.cf/complete/list.txt"
+    "viewUrl": "https://1hos.cf/complete.txt"
   },
   {
     "id": 811,
@@ -8383,7 +8383,7 @@
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
     "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "licenseId": 5,
+    "licenseId": 35,
     "name": "1Hosts Mini",
     "syntaxId": 1,
     "updatedDate": "2019-04-16T02:41:12",
@@ -8395,11 +8395,11 @@
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
     "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "licenseId": 5,
+    "licenseId": 35,
     "name": "1Hosts Mini (Domains)",
     "syntaxId": 2,
     "updatedDate": "2019-04-16T02:52:11",
-    "viewUrl": "https://1hos.cf/mini/list.txt"
+    "viewUrl": "https://1hos.cf/mini.txt"
   },
   {
     "id": 813,
@@ -18075,4 +18075,375 @@
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/youtube.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/youtube.txt"
   },
+  {
+    "id": 1701,
+    "name": "ASC DeiG",
+    "syntaxId": 1,
+    "homeUrl": "https://asc.hk/",
+    "viewUrl": "https://asc.hk/adplus.txt"
+},
+{
+    "id": 1702,
+    "name": "NPC 0AM Hosts",
+    "syntaxId": 1,
+    "homeUrl": "https://npc.0am.jp/",
+    "licenseId": 7,
+    "viewUrl": "https://npc.0am.jp/hosts.php?dl=1"
+},
+{
+    "id": 1703,
+    "name": "Synology's pwn",
+    "syntaxId": 28,
+    "homeUrl": "https://in0de.synology.me",
+    "description": "Domain name filters.",
+    "viewUrl": "https://in0de.synology.me/pwn.txt"
+},
+{
+    "id": 1704,
+    "name": "Synology's own",
+    "syntaxId": 2,
+    "homeUrl": "https://in0de.synology.me",
+    "description": "Domain name hosts for Pi-hole.",
+    "viewUrl": "https://in0de.synology.me/own.txt"
+},
+{
+    "id": 1705,
+    "name": "ChinaList 2.0",
+    "syntaxId": 3,
+    "homeUrl": "https://www.yiclear.com/",
+    "viewUrl": "http://tools.yiclear.com/ChinaList2.0.txt"
+},
+{
+    "id": 1706,
+    "name": "GameIndustryDE Hosts",
+    "syntaxId": 1,
+    "homeUrl": "https://gameindustry.de/",
+    "description": "Hosts file for blocking spyware, ads, analytics and tracking on German websites and domains.",
+    "licenseId": 9,
+    "viewUrl": "https://gameindustry.de/files/staedte/hosts"
+},
+{
+    "id": 1707,
+    "name": "hosts-jp Ads",
+    "syntaxId": 1,
+    "homeUrl": "https://github.com/tiuxo/hosts/",
+"issuesUrl": "https://github.com/tiuxo/hosts//issues",
+    "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts.",
+    "licenseId": 24,
+    "viewUrl": "https://raw.githubusercontent.com/tiuxo/hosts/master/ads"
+},
+{
+    "id": 1708,
+    "name": "hosts-jp Porn",
+    "syntaxId": 1,
+    "homeUrl": "https://github.com/tiuxo/hosts/",
+"issuesUrl": "https://github.com/tiuxo/hosts//issues",
+    "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts.",
+    "licenseId": 24,
+    "viewUrl": "https://raw.githubusercontent.com/tiuxo/hosts/master/porn"
+},
+{
+    "id": 1709,
+    "name": "hosts-jp Social",
+    "syntaxId": 1,
+    "homeUrl": "https://github.com/tiuxo/hosts/",
+"issuesUrl": "https://github.com/tiuxo/hosts//issues",
+    "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts.",
+    "licenseId": 24,
+    "viewUrl": "https://raw.githubusercontent.com/tiuxo/hosts/master/social"
+},
+{
+    "id": 1710,
+    "name": "Botvrij IOC List",
+    "syntaxId": 2,
+    "homeUrl": "https://www.botvrij.eu/",
+    "viewUrl": "https://www.botvrij.eu/data/ioclist.hostname.raw"
+},
+{
+    "id": 1711,
+    "name": "Zonefiles Compromised Domains Live",
+    "syntaxId": 2,
+    "homeUrl": "https://zonefiles.io/",
+    "viewUrl": "https://zonefiles.io/f/compromised/domains/live/"
+},
+{
+    "id": 1712,
+    "name": "abc45628 Hosts",
+    "syntaxId": 1,
+    "homeUrl": "https://github.com/abc45628/hosts/",
+"issuesUrl": "https://github.com/abc45628/hosts//issues",
+    "viewUrl": "https://raw.githubusercontent.com/abc45628/hosts/master/hosts"
+},
+{
+    "id": 1713,
+    "name": "Ad Wars Hosts",
+    "syntaxId": 1,
+    "homeUrl": "https://github.com/jdlingyu/ad-wars/",
+"issuesUrl": "https://github.com/jdlingyu/ad-wars//issues",
+    "viewUrl": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts"
+},
+{
+    "id": 1714,
+    "name": "PiHole Lists - Quad9",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/XionKzn/PiHole-Lists/",
+"issuesUrl": "https://github.com/XionKzn/PiHole-Lists//issues",
+    "viewUrl": "https://raw.githubusercontent.com/XionKzn/PiHole-Lists/master/Quad9.txt"
+},
+{
+    "id": 1715,
+    "name": "PiHole Lists - Yahoo Ad Servers",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/XionKzn/PiHole-Lists/",
+"issuesUrl": "https://github.com/XionKzn/PiHole-Lists//issues",
+    "viewUrl": "https://raw.githubusercontent.com/XionKzn/PiHole-Lists/master/Yahoo_Ad_Servers.txt"
+},
+{
+    "id": 1716,
+    "name": "PiHole Lists - Spyware",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/XionKzn/PiHole-Lists/",
+"issuesUrl": "https://github.com/XionKzn/PiHole-Lists//issues",
+    "viewUrl": "https://raw.githubusercontent.com/XionKzn/PiHole-Lists/master/PiHole_HOSTS_Spyware.txt"
+},
+{
+    "id": 1717,
+    "name": "PiHole Lists - Cerber Ransomware",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/XionKzn/PiHole-Lists/",
+"issuesUrl": "https://github.com/XionKzn/PiHole-Lists//issues",
+    "viewUrl": "https://raw.githubusercontent.com/XionKzn/PiHole-Lists/master/Cerber_Ransomware.txt"
+},
+{
+    "id": 1718,
+    "name": "PiHole Lists - Blocklist",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/XionKzn/PiHole-Lists/",
+"issuesUrl": "https://github.com/XionKzn/PiHole-Lists//issues",
+    "viewUrl": "https://raw.githubusercontent.com/XionKzn/PiHole-Lists/master/Blocklist.txt"
+},
+{
+    "id": 1719,
+    "name": "kurzBlock",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/KurzGedanke/kurzBlock/",
+"issuesUrl": "https://github.com/KurzGedanke/kurzBlock//issues",
+    "description": "A personal blocklist curated by KurzGedanke.",
+    "licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/KurzGedanke/kurzBlock/master/kurzBlock.txt",
+    "donateUrl": "https://blog.kurzgedanke.me/donate/"
+},
+{
+    "id": 1720,
+    "name": "Grayware Filterlist",
+    "syntaxId": 4,
+    "homeUrl": "https://github.com/VernonStow/Filterlist/",
+"issuesUrl": "https://github.com/VernonStow/Filterlist//issues",
+    "description": "Blocklist for suspicious websites involved with possible tracking, spam, or malware; meant to supplement mainstream blocklists.",
+    "viewUrl": "https://raw.githubusercontent.com/VernonStow/Filterlist/master/Filterlist.txt"
+},
+{
+    "id": 1721,
+    "name": "iOS Tracker Blocklist",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/jakejarvis/ios-trackers/",
+"issuesUrl": "https://github.com/jakejarvis/ios-trackers//issues",
+    "description": "My personal blocklist of iOS tracking, telemetry, and advertising domains.",
+    "licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/jakejarvis/ios-trackers/master/blocklist.txt"
+},
+{
+    "id": 1722,
+    "name": "Evil Domains",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/hell-sh/Evil-Domains",
+"issuesUrl": "https://github.com/hell-sh/Evil-Domains/issues",
+    "description": "Evil domains for our Collective Hosts File Project that are not present in any other lists.",
+    "licenseId": 11,
+    "viewUrl": "https://raw.githubusercontent.com/hell-sh/Evil-Domains/master/evil-domains.txt"
+},
+{
+    "id": 1723,
+    "name": "I Hate Tracker",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/pirat28/IHateTracker/",
+"issuesUrl": "https://github.com/pirat28/IHateTracker//issues",
+    "description": "Ads and Tracker which other lists may not found",
+    "licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/pirat28/IHateTracker/master/iHateTracker.txt"
+},
+{
+    "id": 1724,
+    "name": "Nolovia Supplemental Bad Host Index blacklist file",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/parseword/nolovia/",
+"issuesUrl": "https://github.com/parseword/nolovia//issues",
+    "viewUrl": "https://raw.githubusercontent.com/parseword/nolovia/master/skel/hosts-nolovia.txt"
+},
+{
+    "id": 1725,
+    "name": "Nolovia state-sponsored malware blacklist file",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/parseword/nolovia/",
+"issuesUrl": "https://github.com/parseword/nolovia//issues",
+    "description": "The following servers have been identified as part of various state-sponsored malware campaigns.",
+    "viewUrl": "https://raw.githubusercontent.com/parseword/nolovia/master/skel/hosts-government-malware.txt"
+},
+{
+    "id": 1726,
+    "name": "DodgySiteBlocker",
+    "syntaxId": 3,
+    "homeUrl": "https://github.com/callmenemo491/DodgySiteBlocker/",
+"issuesUrl": "https://github.com/callmenemo491/DodgySiteBlocker//issues",
+    "description": "This filter disables 'dodgy' sites My Way!",
+    "licenseId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/callmenemo491/DodgySiteBlocker/master/DodgySiteBlocker.txt"
+},
+{
+    "id": 1727,
+    "name": "Magento Malware Skanner - Burner Domains",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/gwillem/magento-malware-scanner/",
+"issuesUrl": "https://github.com/gwillem/magento-malware-scanner//issues",
+    "description": "Burner domains are short-lived domains, registered by criminals (under a phony name). Don't put legitimate domains here, even if they contain malware.",
+    "licenseId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/gwillem/magento-malware-scanner/master/rules/burner-domains.txt"
+},
+{
+    "id": 1728,
+    "name": "Soteria nou's domain list - Ads",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/soteria-nou/domain-list",
+"issuesUrl": "https://github.com/soteria-nou/domain-list/issues",
+    "description": "This repository contains lists of domains that very likely serve ads, analytics scripts, tracking pixels, widgets (webpage plugins), content enrichment (begging for mail subscription, sharing abilities), and represent affiliate or fake webpages. Usually lists get at least a monthly update.",
+    "licenseId": 32,
+    "viewUrl": "https://raw.githubusercontent.com/soteria-nou/domain-list/master/ads.txt"
+},
+{
+    "id": 1729,
+    "name": "Soteria nou's domain list - Affiliates",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/soteria-nou/domain-list",
+"issuesUrl": "https://github.com/soteria-nou/domain-list/issues",
+    "description": "This repository contains lists of domains that very likely serve ads, analytics scripts, tracking pixels, widgets (webpage plugins), content enrichment (begging for mail subscription, sharing abilities), and represent affiliate or fake webpages. Usually lists get at least a monthly update.",
+    "licenseId": 32,
+    "viewUrl": "https://raw.githubusercontent.com/soteria-nou/domain-list/master/affiliate.txt"
+},
+{
+    "id": 1730,
+    "name": "Soteria nou's domain list - Analytics",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/soteria-nou/domain-list",
+"issuesUrl": "https://github.com/soteria-nou/domain-list/issues",
+    "description": "This repository contains lists of domains that very likely serve ads, analytics scripts, tracking pixels, widgets (webpage plugins), content enrichment (begging for mail subscription, sharing abilities), and represent affiliate or fake webpages. Usually lists get at least a monthly update.",
+    "licenseId": 32,
+    "viewUrl": "https://raw.githubusercontent.com/soteria-nou/domain-list/master/analytics.txt"
+},
+{
+    "id": 1731,
+    "name": "Soteria nou's domain list - Enrichments",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/soteria-nou/domain-list",
+"issuesUrl": "https://github.com/soteria-nou/domain-list/issues",
+    "description": "This repository contains lists of domains that very likely serve ads, analytics scripts, tracking pixels, widgets (webpage plugins), content enrichment (begging for mail subscription, sharing abilities), and represent affiliate or fake webpages. Usually lists get at least a monthly update.",
+    "licenseId": 32,
+    "viewUrl": "https://raw.githubusercontent.com/soteria-nou/domain-list/master/enrichments.txt"
+},
+{
+    "id": 1732,
+    "name": "Soteria nou's domain list - Fake sites",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/soteria-nou/domain-list",
+"issuesUrl": "https://github.com/soteria-nou/domain-list/issues",
+    "description": "This repository contains lists of domains that very likely serve ads, analytics scripts, tracking pixels, widgets (webpage plugins), content enrichment (begging for mail subscription, sharing abilities), and represent affiliate or fake webpages. Usually lists get at least a monthly update.",
+    "licenseId": 32,
+    "viewUrl": "https://raw.githubusercontent.com/soteria-nou/domain-list/master/fake.txt"
+},
+{
+    "id": 1733,
+    "name": "Soteria nou's domain list - Widgets",
+    "syntaxId": 2,
+    "homeUrl": "https://github.com/soteria-nou/domain-list",
+"issuesUrl": "https://github.com/soteria-nou/domain-list/issues",
+    "description": "This repository contains lists of domains that very likely serve ads, analytics scripts, tracking pixels, widgets (webpage plugins), content enrichment (begging for mail subscription, sharing abilities), and represent affiliate or fake webpages. Usually lists get at least a monthly update.",
+    "licenseId": 32,
+    "viewUrl": "https://raw.githubusercontent.com/soteria-nou/domain-list/master/widgets.txt"
+},
+  {
+    "id": 1734,
+    "description": "A merged hosts file from a variety of other lists.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "licenseId": 35,
+    "name": "1Hosts Pro",
+    "syntaxId": 2,
+    "viewUrl": "https://1hos.cf/Pro"
+  },
+  {
+    "id": 1735,
+    "description": "A merged hosts file from a variety of other lists.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "licenseId": 35,
+    "name": "1Hosts Pro (Domains)",
+    "syntaxId": 2,
+    "viewUrl": "https://1hos.cf/Pro.txt"
+  },
+  {
+    "id": 1736,
+    "description": "AdGuard Home is one of the tools for the future, or at least it is for those who know how to set up and use a Raspberry Pi. However, its current internal structure discards virtually every $-using block rule (e.g. EasyList), which makes EasyList and similar lists virtually useless in AdGuard Home, despite how many of the entries would be ≥90% as functional without them. So until the AdGuard Home team implements a better way to deal with $ values, here's my intermissional list to work around it.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's AdGuard Home Compilation List",
+    "syntaxId": 28,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList.txt"
+  },
+  {
+    "id": 1737,
+    "description": "Are you pro-metric and are tired of seeing imperial unites all over the English-language parts of the internet? If so, then here's a list for you.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Imperial Units Remover",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Imperial%20Units%20Remover.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Imperial%20Units%20Remover.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Imperial%20Units%20Remover.txt"
+  },
+  {
+    "id": 1738,
+    "description": "Most anti-malware lists are pretty big and can cover a 5- or 6-digit amount of specific domains. But my list hereby claims to remove more than 25% of all known malware sites with just a 2-digit amount of entries. This is mostly done by blocking top-level domains that have become devastatingly abused by spammers, usually because they allowed for free and uncontrolled domain registrations. There's also additional categories that cover unusual malware and phishing domains that very few other lists seem to cover.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's Anti-Malware List (for AdGuard Home)",
+    "syntaxId": 28,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt"
+  },
+  {
+    "id": 1739,
+    "description": "Hosts file to avoid advertisement display on website.",
+    "descriptionSourceUrl": "https://warui.intaa.net/adhosts/",
+    "homeUrl": "https://warui.intaa.net/adhosts/",
+    "licenseId": 5,
+    "name": "Warui Hosts (Unbound)",
+    "submissionUrl": "https://warui.intaa.net/adhosts/#fh5co-blog-section",
+    "syntaxId": 24,
+    "updatedDate": "2019-04-13T10:00:14",
+    "viewUrl": "https://warui.intaa.net/adhosts/local_zone.conf.txt"
+  }
 ]
