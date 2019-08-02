@@ -17711,7 +17711,7 @@
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/tcptomato/ROad-Block/master/road-kill-filters.txt"
   },
-  {
+{
     "id": 1673,
     "description": "Completely block Google and its services .",
     "descriptionSourceUrl": "https://github.com/nickspaargaren/pihole-google",
@@ -17721,7 +17721,7 @@
     "licenseId": 11,
     "name": "pihole-google (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://github.com/nickspaargaren/pihole-google/raw/master/pihole-google.txt"
+    "viewUrl": "https://github.com/nickspaargaren/pihole-google/raw/master/pihole-google.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/pihole-google.txt"
   },
   {
@@ -17734,7 +17734,7 @@
     "licenseId": 11,
     "name": "pihole-google (Hosts)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/google-domains"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/google-domains",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/google-domains"
   },
   {
@@ -17747,7 +17747,7 @@
     "licenseId": 11,
     "name": "pihole-google | Google analytics (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/analyticsparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/analyticsparsed",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/analyticsparsed"
   },
   {
@@ -17760,7 +17760,7 @@
     "licenseId": 11,
     "name": "pihole-google | Google analytics (Hosts)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/analytics.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/analytics.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/analytics.txt"
   },
   {
@@ -17773,7 +17773,7 @@
     "licenseId": 11,
     "name": "pihole-google | Android (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/androidparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/androidparsed",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/androidparsed"
   },
   {
@@ -17786,7 +17786,7 @@
     "licenseId": 11,
     "name": "pihole-google | Android (Hosts)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/android.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/android.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/android.txt"
   },
   {
@@ -17799,7 +17799,7 @@
     "licenseId": 11,
     "name": "pihole-google | Google DNS (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/dnsparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/dnsparsed",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/dnsparsed"
   },
   {
@@ -17812,7 +17812,7 @@
     "licenseId": 11,
     "name": "pihole-google | Google DNS (Hosts)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/dns.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/dns.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/dns.txt"
   },
   {
@@ -17825,7 +17825,7 @@
     "licenseId": 11,
     "name": "pihole-google | Google search (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/domainsparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/domainsparsed",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/domainsparsed"
   },
   {
@@ -17838,7 +17838,7 @@
     "licenseId": 11,
     "name": "pihole-google | Google search (Hosts)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/domains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/domains.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/domains.txt"
   },
   {
@@ -17851,7 +17851,7 @@
     "licenseId": 11,
     "name": "pihole-google | DoubleClick (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/doubleclickparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/doubleclickparsed",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/doubleclickparsed"
   },
   {
@@ -17864,7 +17864,7 @@
     "licenseId": 11,
     "name": "pihole-google | DoubleClick (Hosts)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/doubleclick.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/doubleclick.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/doubleclick.txt"
   },
   {
@@ -17877,7 +17877,7 @@
     "licenseId": 11,
     "name": "pihole-google | Firebase (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/firebaseparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/firebaseparsed",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/firebaseparsed"
   },
   {
@@ -17890,7 +17890,7 @@
     "licenseId": 11,
     "name": "pihole-google | Firebase (Hosts)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/firebase.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/firebase.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/firebase.txt"
   },
   {
@@ -17903,7 +17903,7 @@
     "licenseId": 11,
     "name": "pihole-google | Google fonts (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/fontsparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/fontsparsed",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/fontsparsed"
   },
   {
@@ -17916,7 +17916,7 @@
     "licenseId": 11,
     "name": "pihole-google | Google fonts (Hosts)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/fonts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/fonts.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/fonts.txt"
   },
   {
@@ -17929,7 +17929,7 @@
     "licenseId": 11,
     "name": "pihole-google | General Google domains (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/generalparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/generalparsed",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/generalparsed"
   },
   {
@@ -17942,7 +17942,7 @@
     "licenseId": 11,
     "name": "pihole-google | General Google domains (Hosts)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/general.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/general.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/general.txt"
   },
   {
@@ -17955,7 +17955,7 @@
     "licenseId": 11,
     "name": "pihole-google | Gmail (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/mailparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/mailparsed",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/mailparsed"
   },
   {
@@ -17968,7 +17968,7 @@
     "licenseId": 11,
     "name": "pihole-google | Gmail (Hosts)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/mail.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/mail.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/mail.txt"
   },
   {
@@ -17981,7 +17981,7 @@
     "licenseId": 11,
     "name": "pihole-google | Google products (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/productsparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/productsparsed",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/productsparsed"
   },
   {
@@ -17994,7 +17994,7 @@
     "licenseId": 11,
     "name": "pihole-google | Google products (Hosts)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/products.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/products.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/products.txt"
   },
   {
@@ -18007,7 +18007,7 @@
     "licenseId": 11,
     "name": "pihole-google | Google proxies (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/proxiessparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/proxiessparsed",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/proxiesparsed"
   },
   {
@@ -18020,7 +18020,7 @@
     "licenseId": 11,
     "name": "pihole-google | Google proxies (Hosts)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/proxies.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/proxies.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/proxies.txt"
   },
   {
@@ -18033,7 +18033,7 @@
     "licenseId": 11,
     "name": "pihole-google | Google shorteners (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/shortlinksparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/shortlinksparsed",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/shortlinksparsed"
   },
   {
@@ -18046,7 +18046,7 @@
     "licenseId": 11,
     "name": "pihole-google | Google shorteners (Hosts)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/shortlinks.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/shortlinks.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/shortlinks.txt"
   },
   {
@@ -18059,7 +18059,7 @@
     "licenseId": 11,
     "name": "pihole-google | Youtube (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/youtubeparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/youtubeparsed",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/youtubeparsed"
   },
   {
@@ -18072,7 +18072,7 @@
     "licenseId": 11,
     "name": "pihole-google | Youtube (Hosts)",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/youtube.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/youtube.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/youtube.txt"
-  }
+  },
 ]
