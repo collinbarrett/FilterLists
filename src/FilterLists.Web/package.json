@@ -9,7 +9,6 @@
     "@types/react-dom": "16.8.5",
     "@types/react-router-dom": "^4.3.4",
     "@types/react-table": "^6.8.5",
-    "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "es6-promise": "^4.2.8",
     "moment": "^2.24.0",

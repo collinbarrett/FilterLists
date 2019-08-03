@@ -1,4 +1,3 @@
-import axios from "axios";
 import * as React from "react";
 import { Home } from "./Home";
 import { ILicense } from "./interfaces/ILicense";
@@ -46,38 +45,45 @@ export class HomeContainer extends React.Component<{}, IState> {
     };
 
     fetchLanguages() {
-        axios.request<Language[]>({ url: "/api/v1/languages" })
-            .then(l => { this.setState({ languages: l.data }); })
+        fetch("/api/v1/languages")
+            .then(response => response.json())
+            .then(json => { this.setState({ languages: json }); })
     };
 
     fetchLicenses() {
-        axios.request<ILicense[]>({ url: "/api/v1/licenses" })
-            .then(l => { this.setState({ licenses: l.data }); })
+        fetch("/api/v1/licenses")
+            .then(response => response.json())
+            .then(json => { this.setState({ licenses: json }); })
     };
 
     fetchLists() {
-        axios.request<IList[]>({ url: "/api/v1/lists" })
-            .then(l => { this.setState({ lists: l.data }); })
+        fetch("/api/v1/lists")
+            .then(response => response.json())
+            .then(json => { this.setState({ lists: json }); })
     };
 
     fetchMaintainers() {
-        axios.request<IMaintainer[]>({ url: "/api/v1/maintainers" })
-            .then(l => { this.setState({ maintainers: l.data }); })
+        fetch("/api/v1/maintainers")
+            .then(response => response.json())
+            .then(json => { this.setState({ maintainers: json }); })
     };
 
     fetchSoftware() {
-        axios.request<ISoftware[]>({ url: "/api/v1/software" })
-            .then(l => { this.setState({ software: l.data }); })
+        fetch("/api/v1/software")
+            .then(response => response.json())
+            .then(json => { this.setState({ software: json }); })
     };
 
     fetchSyntaxes() {
-        axios.request<ISyntax[]>({ url: "/api/v1/syntaxes" })
-            .then(l => { this.setState({ syntaxes: l.data }); })
+        fetch("/api/v1/syntaxes")
+            .then(response => response.json())
+            .then(json => { this.setState({ syntaxes: json }); })
     };
 
     fetchTags() {
-        axios.request<ITag[]>({ url: "/api/v1/tags" })
-            .then(l => { this.setState({ tags: l.data }); })
+        fetch("/api/v1/tags")
+            .then(response => response.json())
+            .then(json => { this.setState({ tags: json }); })
     };
 
     render() {
