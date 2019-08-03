@@ -18362,8 +18362,8 @@
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/social/formats/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/social/formats/hosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/social/formats/hosts",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/social/formats/hosts.txt"
   },
   {
     "id": 1741,
@@ -18381,8 +18381,8 @@
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn-lite/formats/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn-lite/formats/hosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/porn-lite/formats/hosts",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/porn-lite/formats/hosts.txt"
   },
   {
     "id": 1742,
@@ -18400,8 +18400,8 @@
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/regional/formats/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/regional/formats/hosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/hosts",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/hosts.txt"
   },
   {
     "id": 1743,
@@ -18529,7 +18529,7 @@
     "name": "Energized Xtreme Extension (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/xtreme/formats/domains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/xtreme/formats/domains.txt"
   },
   {
     "id": 1751,
@@ -18545,7 +18545,7 @@
     "name": "Energized Social Extension (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/social/formats/domains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/social/formats/domains.txt"
   },
   {
     "id": 1752,
@@ -18561,7 +18561,7 @@
     "name": "Energized Porn Lite Extension (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn-lite/formats/domains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/porn-lite/formats/domains.txt"
   },
   {
     "id": 1753,
@@ -18577,7 +18577,7 @@
     "name": "Energized Regional Extension (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/regional/formats/domains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/domains.txt"
   },
   {
     "id": 1754,
@@ -18705,7 +18705,7 @@
     "name": "Energized Xtreme Extension (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/xtreme/formats/filter"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/xtreme/formats/filter"
   },
   {
     "id": 1762,
@@ -18721,7 +18721,7 @@
     "name": "Energized Social Extension (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/social/formats/filter"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/social/formats/filter"
   },
   {
     "id": 1763,
@@ -18737,7 +18737,7 @@
     "name": "Energized Porn Lite Extension (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn-lite/formats/filter"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/porn-lite/formats/filter"
   },
   {
     "id": 1764,
@@ -18753,7 +18753,7 @@
     "name": "Energized Regional Extension (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/regional/formats/filter"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/filter"
   },
   {
     "id": 1765,
@@ -18881,7 +18881,7 @@
     "name": "Energized Xtreme Extension (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/xtreme/formats/dnsmasq.conf"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/xtreme/formats/dnsmasq.conf"
   },
   {
     "id": 1773,
@@ -18897,7 +18897,7 @@
     "name": "Energized Social Extension (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/social/formats/dnsmasq.conf"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/social/formats/dnsmasq.conf"
   },
   {
     "id": 1774,
@@ -18913,7 +18913,7 @@
     "name": "Energized Porn Lite Extension (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn-lite/formats/dnsmasq.conf"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/porn-lite/formats/dnsmasq.conf"
   },
   {
     "id": 1775,
@@ -18929,7 +18929,7 @@
     "name": "Energized Regional Extension (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/regional/formats/dnsmasq.conf"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/dnsmasq.conf"
   },
   {
     "id": 1776,
@@ -19057,7 +19057,7 @@
     "name": "Energized Xtreme Extension (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/xtreme/formats/unbound.conf"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/xtreme/formats/unbound.conf"
   },
   {
     "id": 1784,
@@ -19073,7 +19073,7 @@
     "name": "Energized Social Extension (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/social/formats/unbound.conf"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/social/formats/unbound.conf"
   },
   {
     "id": 1785,
@@ -19089,7 +19089,7 @@
     "name": "Energized Porn Lite Extension (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn-lite/formats/unbound.conf"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/porn-lite/formats/unbound.conf"
   },
   {
     "id": 1786,
@@ -19105,7 +19105,7 @@
     "name": "Energized Regional Extension (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/regional/formats/unbound.conf"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/unbound.conf"
   },
   {
     "id": 1787,
@@ -19233,7 +19233,7 @@
     "name": "Energized Xtreme Extension (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/xtreme/formats/rpz.txt"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/xtreme/formats/rpz.txt"
   },
   {
     "id": 1795,
@@ -19249,7 +19249,7 @@
     "name": "Energized Social Extension (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/social/formats/rpz.txt"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/social/formats/rpz.txt"
   },
   {
     "id": 1796,
@@ -19265,7 +19265,7 @@
     "name": "Energized Porn Lite Extension (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn-lite/formats/rpz.txt"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/porn-lite/formats/rpz.txt"
   },
   {
     "id": 1797,
@@ -19281,7 +19281,7 @@
     "name": "Energized Regional Extension (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/regional/formats/rpz.txt"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/rpz.txt"
   },
   {
     "id": 1798,
@@ -19297,6 +19297,6 @@
     "name": "Energized IP Extension",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 9,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/regional/formats/rpz.txt"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/rpz.txt"
   }
 ]
