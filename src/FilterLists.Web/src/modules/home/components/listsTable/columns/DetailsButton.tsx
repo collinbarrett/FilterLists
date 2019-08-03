@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Button } from "react-bootstrap";
 import { Column, RowRenderProps } from "react-table";
 
 export const DetailsButton = {
@@ -14,12 +15,14 @@ export const DetailsButton = {
 const Expander = (props: RowRenderProps) =>
     <div>
         {props.isExpanded
-            ? <button className="btn btn-primary btn-block active fl-btn-link"
+            ? <Button
+                variant={'primary'}
                 title={`Collapse details about ${props.row.name}.`}>
                 Details
-               </button>
-            : <button className="btn btn-primary btn-block fl-btn-link"
+              </Button>
+            : <Button
+                variant={'primary'}
                 title={`Learn more about ${props.row.name}.`}>
                 Details
-               </button>}
+              </Button>}
     </div>;
