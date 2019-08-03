@@ -9,7 +9,7 @@ interface Props {
 };
 
 export const MaintainerLinkButtonGroup = (props: Props) =>
-    <div className="col-3 p-0 btn-group-vertical justify-content-start d-flex align-items-end" role="group">
+    <div className="btn-group-vertical">
         <HomeButton {...props} url={props.homeUrl} />
         <EmailButton {...props} />
         <TwitterButton {...props} />
