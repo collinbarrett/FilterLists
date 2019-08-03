@@ -1,5 +1,3 @@
 ﻿import { ListsTable } from "./ListsTable";
 
-export {
-    ListsTable,
-};
+export { ListsTable, };

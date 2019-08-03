@@ -1,30 +1,19 @@
 import * as React from "react";
+import ReactTable from "react-table";
+import "react-table/react-table.css";
+import "../../../../utils/loader.css";
+import { DetailsExpander } from "../../components";
 import { IColumnVisibility } from "../../interfaces/IColumnVisibility";
-import { Language } from "../../interfaces/Language";
 import { ILicense } from "../../interfaces/ILicense";
 import { IList } from "../../interfaces/IList";
 import { IMaintainer } from "../../interfaces/IMaintainer";
 import { ISoftware } from "../../interfaces/ISoftware";
 import { ISyntax } from "../../interfaces/ISyntax";
 import { ITag } from "../../interfaces/ITag";
-import "../../../../utils/loader.css";
-import ReactTable from "react-table";
-import "react-table/react-table.css";
-import "./listsTable.css";
-import {
-    DetailsButton,
-    Languages,
-    License,
-    Maintainers,
-    Name,
-    //RuleCount,
-    Software,
-    SubscribeButton,
-    Tags,
-    //UpdatedDate
-} from "./columns";
+import { Language } from "../../interfaces/Language";
 import { IListDetails } from "../IListDetails";
-import { DetailsExpander } from "../../components";
+import { DetailsButton, Languages, License, Maintainers, Name, Software, SubscribeButton, Tags } from "./columns";
+import "./listsTable.css";
 
 interface Props {
     languages: Language[];
@@ -49,8 +38,6 @@ export const ListsTable = (props: Props) =>
                 Software(props.columnVisibility, props.software),
                 Languages(props.columnVisibility, props.languages),
                 Tags(props.columnVisibility, props.tags),
-                //UpdatedDate(props.columnVisibility),
-                //RuleCount(props.columnVisibility),
                 License(props.columnVisibility, props.licenses),
                 Maintainers(props.columnVisibility, props.maintainers),
                 SubscribeButton(props.columnVisibility),
@@ -101,11 +88,9 @@ const mapListDetails = (props: ICreateListDtoProps): IListDetails =>
         name: props.list.name,
         policyUrl: props.list.policyUrl,
         publishedDate: props.list.publishedDate,
-        //ruleCount: props.list.ruleCount,
         submissionUrl: props.list.submissionUrl,
         syntax: props.syntaxes.filter((s: ISyntax) => props.list.syntaxId === s.id)[0],
         tags: props.list.tagIds ? props.tags.filter((t: ITag) => props.list.tagIds.indexOf(t.id) > -1) : undefined,
-        //updatedDate: props.list.updatedDate,
         viewUrl: props.list.viewUrl,
         viewUrlMirrors: props.list.viewUrlMirrors
     } as IListDetails);

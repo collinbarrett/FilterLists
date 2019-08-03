@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Column, Filter } from "react-table";
-import { TagGroup } from "../../TagGroup";
 import { IColumnVisibility } from "../../../interfaces/IColumnVisibility";
 import { ITag } from "../../../interfaces/ITag";
+import { TagGroup } from "../../TagGroup";
 
 export const Tags = (columnVisibility: IColumnVisibility[], tags: ITag[]) => {
     const tagsSorted = tags.sort((a: ITag, b: ITag) => a.name.localeCompare(b.name));

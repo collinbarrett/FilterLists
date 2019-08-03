@@ -1,8 +1,8 @@
-﻿import { Language } from "../interfaces/Language";
-import { ILicense } from "../interfaces/ILicense";
+﻿import { ILicense } from "../interfaces/ILicense";
 import { IMaintainer } from "../interfaces/IMaintainer";
 import { ISyntax } from "../interfaces/ISyntax";
 import { ITag } from "../interfaces/ITag";
+import { Language } from "../interfaces/Language";
 
 export interface IListDetails {
     id: number;
@@ -20,11 +20,9 @@ export interface IListDetails {
     name: string;
     policyUrl: string;
     publishedDate: string;
-    //ruleCount: number;
     submissionUrl: string;
     syntax: ISyntax;
     tags: ITag[];
-    //updatedDate: string;
     viewUrl: string;
     viewUrlMirrors: string[];
 };

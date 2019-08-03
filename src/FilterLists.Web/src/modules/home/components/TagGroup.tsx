@@ -1,6 +1,6 @@
 import * as React from "react";
-import { ITag } from "../interfaces/ITag";
 import { getContrast } from "../../../utils";
+import { ITag } from "../interfaces/ITag";
 
 interface Props {
     tags: ITag[];

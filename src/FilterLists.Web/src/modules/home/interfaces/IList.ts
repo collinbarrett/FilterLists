@@ -14,11 +14,9 @@
     name: string;
     policyUrl: string;
     publishedDate: string;
-    //ruleCount: number;
     submissionUrl: string;
     syntaxId: number;
     tagIds: number[];
-    //updatedDate: string;
     viewUrl: string;
     viewUrlMirrors: string[];
 };

@@ -1,5 +1,3 @@
 ﻿import { SoftwareIcon } from "./SoftwareIcon";
 
-export {
-    SoftwareIcon
-};
+export { SoftwareIcon };

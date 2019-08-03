@@ -1,5 +1,3 @@
 ﻿import { ViewButtonGroup } from "./ViewButtonGroup";
 
-export {
-    ViewButtonGroup as ViewButton
-};
+export { ViewButtonGroup as ViewButton };

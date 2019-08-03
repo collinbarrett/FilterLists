@@ -1,5 +1,5 @@
 import * as React from "react";
-import { DropdownButton, Dropdown } from "react-bootstrap";
+import { Dropdown, DropdownButton } from "react-bootstrap";
 import { SubscribeButton } from "./SubscribeButton";
 
 interface Props {

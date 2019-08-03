@@ -1,20 +1,18 @@
 import * as React from "react";
+import { ListsTable, Oneliner } from "./components";
 import { IColumnVisibility } from "./interfaces/IColumnVisibility";
-import { Language } from "./interfaces/Language";
 import { ILicense } from "./interfaces/ILicense";
 import { IList } from "./interfaces/IList";
 import { IMaintainer } from "./interfaces/IMaintainer";
 import { ISoftware } from "./interfaces/ISoftware";
 import { ISyntax } from "./interfaces/ISyntax";
 import { ITag } from "./interfaces/ITag";
-import { ListsTable, Oneliner } from "./components";
+import { Language } from "./interfaces/Language";
 
 const columnVisibilityDefaults: IColumnVisibility[] = [
     { column: "Software", visible: true },
     { column: "Languages", visible: true },
     { column: "Tags", visible: true },
-    //{ column: "Updated", visible: false },
-    //{ column: "Rules", visible: false },
     { column: "License", visible: false },
     { column: "Maintainers", visible: false },
     { column: "Subscribe", visible: false }
@@ -25,7 +23,6 @@ interface Props {
     licenses: ILicense[];
     lists: IList[];
     maintainers: IMaintainer[];
-    //ruleCount: number;
     software: ISoftware[];
     syntaxes: ISyntax[];
     tags: ITag[];
@@ -67,7 +64,7 @@ export class Home extends React.Component<Props, IState> {
 
     render() {
         return <div>
-            <Oneliner listCount={this.props.lists.length}/* ruleCount={this.props.ruleCount}*/ />
+            <Oneliner listCount={this.props.lists.length} />
             <ListsTable {...this.props} {...this.state} />
             {this.renderColumnVisibilityCheckboxes()}
         </div>;

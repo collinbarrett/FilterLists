@@ -10,16 +10,4 @@ import { SubscribeButton } from "./SubscribeButton";
 import { TwitterButton } from "./TwitterButton";
 import { ViewButton } from "./ViewButton";
 
-export {
-    ChatButton,
-    DonateButton,
-    EmailButton,
-    ForumButton,
-    HomeButton,
-    IssuesButton,
-    PolicyButton,
-    SubmitButton,
-    SubscribeButton,
-    TwitterButton,
-    ViewButton
-};
+export { ChatButton, DonateButton, EmailButton, ForumButton, HomeButton, IssuesButton, PolicyButton, SubmitButton, SubscribeButton, TwitterButton, ViewButton };

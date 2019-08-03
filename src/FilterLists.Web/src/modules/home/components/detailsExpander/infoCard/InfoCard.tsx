@@ -1,19 +1,17 @@
 import * as React from "react";
 import { IColumnVisibility } from "../../../interfaces/IColumnVisibility";
-import { Language } from "../../../interfaces/Language";
-import { ILicense, } from "../../../interfaces/ILicense";
-import { ISoftware, } from "../../../interfaces/ISoftware";
-import { ISyntax, } from "../../../interfaces/ISyntax";
+import { ILicense } from "../../../interfaces/ILicense";
+import { ISoftware } from "../../../interfaces/ISoftware";
+import { ISyntax } from "../../../interfaces/ISyntax";
 import { ITag } from "../../../interfaces/ITag";
+import { Language } from "../../../interfaces/Language";
+import { SoftwareIcon } from "../../softwareIcon";
+import { TagGroup } from "../../TagGroup";
 import { Description } from "./Description";
 import { Languages } from "./Languages";
 import { License } from "./License";
 import { PublishedDate } from "./PublishedDate";
-// import { RuleCount } from "./RuleCount";
-import { SoftwareIcon } from "../../softwareIcon";
 import { Syntax } from "./Syntax";
-import { TagGroup } from "../../TagGroup"
-// import { UpdatedDate } from "./UpdatedDate";
 
 interface Props {
     columnVisibility: IColumnVisibility[];
@@ -23,11 +21,9 @@ interface Props {
     license: ILicense;
     name: string;
     publishedDate: string;
-    //ruleCount: number;
     software: ISoftware[];
     syntax: ISyntax;
     tags: ITag[];
-    //updatedDate: string;
 };
 
 export const InfoCard = (props: Props) =>
@@ -46,12 +42,6 @@ export const InfoCard = (props: Props) =>
         <Description {...props} url={props.descriptionSourceUrl} />
         <ul className="list-group list-group-flush">
             <Languages {...props} />
-            {/*{props.columnVisibility.filter((c: IColumnVisibility) => c.column === "Rules")[0].visible
-                 ? null
-                 : <RuleCount {...props}/>}
-            {props.columnVisibility.filter((c: IColumnVisibility) => c.column === "Updated")[0].visible
-                 ? null
-                 : <UpdatedDate {...props}/>}*/}
             <PublishedDate date={props.publishedDate} />
             <Syntax {...props} />
             {props.columnVisibility.filter((c: IColumnVisibility) => c.column === "License")[0].visible

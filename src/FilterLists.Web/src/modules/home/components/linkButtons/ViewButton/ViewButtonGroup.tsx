@@ -1,6 +1,6 @@
 import * as React from "react";
-import { ViewButtonGroupDropdown } from "./ViewButtonGroupDropdown";
 import { ViewButton } from "./ViewButton";
+import { ViewButtonGroupDropdown } from "./ViewButtonGroupDropdown";
 
 interface Props {
     name: string;

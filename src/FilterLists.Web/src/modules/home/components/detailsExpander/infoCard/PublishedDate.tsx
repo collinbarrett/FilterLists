@@ -1,5 +1,5 @@
-import * as React from "react";
 import moment from 'moment';
+import * as React from "react";
 
 interface Props {
     date: string;

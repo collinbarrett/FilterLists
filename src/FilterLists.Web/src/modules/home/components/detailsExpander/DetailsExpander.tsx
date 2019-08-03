@@ -1,6 +1,6 @@
 import * as React from "react";
-import { ISoftware } from "../../interfaces/ISoftware";
 import { IColumnVisibility } from "../../interfaces/IColumnVisibility";
+import { ISoftware } from "../../interfaces/ISoftware";
 import { IListDetails } from "../IListDetails";
 import { InfoCard } from "./infoCard";
 import { LinkButtonGroup } from "./LinkButtonGroup";

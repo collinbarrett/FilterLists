@@ -1,16 +1,5 @@
 import * as React from "react";
-import {
-    ChatButton,
-    DonateButton,
-    EmailButton,
-    ForumButton,
-    HomeButton,
-    IssuesButton,
-    PolicyButton,
-    SubmitButton,
-    SubscribeButton,
-    ViewButton
-} from "../linkButtons";
+import { ChatButton, DonateButton, EmailButton, ForumButton, HomeButton, IssuesButton, PolicyButton, SubmitButton, SubscribeButton, ViewButton } from "../linkButtons";
 
 interface Props {
     chatUrl: string;

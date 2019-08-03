@@ -1,5 +1,3 @@
 ﻿import { MaintainersInfoCard } from "./MaintainersInfoCard";
 
-export {
-    MaintainersInfoCard
-};
+export { MaintainersInfoCard };

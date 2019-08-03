@@ -1,6 +1,6 @@
+import moment from 'moment';
 import * as React from "react";
 import { Column } from "react-table";
-import moment from 'moment';
 import { IColumnVisibility } from "../../../interfaces/IColumnVisibility";
 
 export const UpdatedDate = (columnVisibility: IColumnVisibility[]) =>

@@ -1,13 +1,13 @@
-import * as React from "react";
 import axios from "axios";
-import { Language } from "./interfaces/Language";
+import * as React from "react";
+import { Home } from "./Home";
 import { ILicense } from "./interfaces/ILicense";
 import { IList } from "./interfaces/IList";
 import { IMaintainer } from "./interfaces/IMaintainer";
 import { ISoftware } from "./interfaces/ISoftware";
 import { ISyntax } from "./interfaces/ISyntax";
 import { ITag } from "./interfaces/ITag";
-import { Home } from "./Home";
+import { Language } from "./interfaces/Language";
 
 interface IState {
     languages: Language[];

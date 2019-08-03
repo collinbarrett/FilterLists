@@ -1,6 +1,6 @@
 import * as React from "react";
-import { SubscribeButtonGroupDropdown } from "./SubscribeButtonGroupDropdown";
 import { SubscribeButton } from "./SubscribeButton";
+import { SubscribeButtonGroupDropdown } from "./SubscribeButtonGroupDropdown";
 
 interface Props {
     name: string;

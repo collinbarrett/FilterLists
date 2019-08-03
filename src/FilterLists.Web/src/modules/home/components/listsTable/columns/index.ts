@@ -10,16 +10,4 @@ import { Syntax } from "./Syntax";
 import { Tags } from "./Tags";
 import { UpdatedDate } from "./UpdatedDate";
 
-export {
-    DetailsButton,
-    Languages,
-    License,
-    Maintainers,
-    Name,
-    RuleCount,
-    Software,
-    SubscribeButton,
-    Syntax,
-    Tags,
-    UpdatedDate
-};
+export { DetailsButton, Languages, License, Maintainers, Name, RuleCount, Software, SubscribeButton, Syntax, Tags, UpdatedDate };
