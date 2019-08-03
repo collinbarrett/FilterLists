@@ -8,8 +8,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Data", "src\Fil
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Services", "src\FilterLists.Services\FilterLists.Services.csproj", "{9F296ECF-97C9-47E6-A794-5AD900ECFE6C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Web", "src\FilterLists.Web\FilterLists.Web.csproj", "{6B3E6765-5B8B-4A23-AD12-7E2BC5F4D2E6}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{8C3C7C63-F5EF-4E4E-B9BF-47F6EA7D2CBD}"
 	ProjectSection(SolutionItems) = preProject
 		data\Dependent.json = data\Dependent.json
