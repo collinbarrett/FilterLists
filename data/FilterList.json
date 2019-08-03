@@ -19297,6 +19297,6 @@
     "name": "Energized IP Extension",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 9,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/rpz.txt"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/ips/formats/list.txt"
   }
 ]
