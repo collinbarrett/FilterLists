@@ -27,7 +27,7 @@ interface Props {
 };
 
 export const InfoCard = (props: Props) =>
-    <div className="col-9">
+    <div className="flex-fill">
         {props.columnVisibility.filter((c: IColumnVisibility) => c.column === "Tags")[0].visible
             ? null
             : <TagGroup tags={props.tags} />}
