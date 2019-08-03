@@ -12,6 +12,7 @@ export const LinkButton = (props: Props) =>
     props.href
         ? <Button
             href={props.href}
+            block={true}
             variant={props.variant}
             title={props.title}>
             {props.text}

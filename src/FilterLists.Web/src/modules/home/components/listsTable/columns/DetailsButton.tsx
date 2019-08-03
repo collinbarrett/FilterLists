@@ -16,11 +16,13 @@ const Expander = (props: RowRenderProps) =>
     <div>
         {props.isExpanded
             ? <Button
+                block={true}
                 variant={'primary'}
                 title={`Collapse details about ${props.row.name}.`}>
                 Details
               </Button>
             : <Button
+                block={true}
                 variant={'primary'}
                 title={`Learn more about ${props.row.name}.`}>
                 Details
