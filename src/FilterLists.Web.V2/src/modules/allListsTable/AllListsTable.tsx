@@ -1,13 +1,7 @@
 import { Table } from 'antd';
 import * as React from "react";
 import { List } from './List';
-
-const columns = [
-    {
-        title: 'Name',
-        dataIndex: 'name',
-    }
-];
+import { columns } from './columns';
 
 interface State {
     data: List[];
