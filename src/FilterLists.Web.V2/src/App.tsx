@@ -1,6 +1,6 @@
+import { Button } from 'antd';
 import React from 'react';
 import './App.css';
-import { Button } from 'antd';
 
 const App: React.FC = () => {
   return (
