@@ -1,28 +1,16 @@
 import { Table } from 'antd';
 import * as React from "react";
+import { List } from './List';
 
 const columns = [
     {
         title: 'Name',
         dataIndex: 'name',
-        sorter: true,
-        render: (name: { first: any; last: any; }) => `${name.first} ${name.last}`,
-        width: '20%',
-    },
-    {
-        title: 'Gender',
-        dataIndex: 'gender',
-        filters: [{ text: 'Male', value: 'male' }, { text: 'Female', value: 'female' }],
-        width: '20%',
-    },
-    {
-        title: 'Email',
-        dataIndex: 'email',
-    },
+    }
 ];
 
 interface State {
-    data: [];
+    data: List[];
     loading: boolean;
 }
 
@@ -39,13 +27,12 @@ export class AllListsTable extends React.Component<{}, State> {
         this.fetch();
     }
 
-    fetch = () => {
+    fetch() {
         this.setState({ loading: true });
-        fetch("https://randomuser.me/api")
+        fetch("/api/v1/lists")
             .then(response => response.json())
             .then(json => {
-                this.setState({ data: json.results });
-                this.setState({ loading: false })
+                this.setState({ data: json, loading: false });
             })
     };
 
@@ -53,6 +40,7 @@ export class AllListsTable extends React.Component<{}, State> {
         return (
             <Table
                 columns={columns}
+                rowKey={record => record.id.toString()}
                 dataSource={this.state.data}
                 loading={this.state.loading}
             />
