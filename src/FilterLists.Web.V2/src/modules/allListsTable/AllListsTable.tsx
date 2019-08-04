@@ -1,7 +1,7 @@
 import { Table } from 'antd';
 import * as React from "react";
+import { columnProps } from './columnProps';
 import { List } from './List';
-import { columns } from './columns';
 
 interface State {
     data: List[];
@@ -34,7 +34,8 @@ export class AllListsTable extends React.Component<{}, State> {
         return (
             <Table
                 size="small"
-                columns={columns}
+                scroll={{ x: 1500 }}
+                columns={columnProps}
                 rowKey={record => record.id.toString()}
                 dataSource={this.state.data}
                 loading={this.state.loading}
