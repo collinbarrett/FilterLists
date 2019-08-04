@@ -1,11 +1,11 @@
-import { Button } from 'antd';
 import React from 'react';
+import { AllListsTable } from './AllListsTable';
 import './App.css';
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Button type="primary">Button</Button>
+      <AllListsTable></AllListsTable>
     </div>
   );
 }
