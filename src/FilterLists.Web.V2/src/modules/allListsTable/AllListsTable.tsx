@@ -33,6 +33,7 @@ export class AllListsTable extends React.Component<{}, State> {
     render() {
         return (
             <Table
+                size="small"
                 columns={columns}
                 rowKey={record => record.id.toString()}
                 dataSource={this.state.data}
