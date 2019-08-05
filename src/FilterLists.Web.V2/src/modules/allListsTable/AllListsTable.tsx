@@ -42,7 +42,7 @@ export class AllListsTable extends React.Component<{}, State> {
           dataIndex={nameof<List>("viewUrl")}
           width={100}
           fixed="right"
-          render={(text: any, record: List, index: number) => <SubscribeButton key={index} url={text} name={record.name} />}
+          render={(text: string, record: List, index: number) => <SubscribeButton key={index} viewUrl={text} name={record.name} />}
         />
       </Table>
     );
