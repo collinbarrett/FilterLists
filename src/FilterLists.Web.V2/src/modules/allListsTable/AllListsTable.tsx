@@ -1,5 +1,6 @@
 import { Table } from 'antd';
 import * as React from "react";
+import { SubscribeButton } from '../../shared/';
 import { nameof } from '../../utils';
 import { List } from './List';
 
@@ -29,8 +30,20 @@ export class AllListsTable extends React.Component<{}, State> {
         loading={this.state.data.length > 0 ? false : true}
         size="middle"
         pagination={{ position: "top", size: "small" }} >
-        <Table.Column<List> title="Name" dataIndex={nameof<List>("name")} width={250} fixed="left" />
-        <Table.Column<List> title="Description" dataIndex={nameof<List>("description")} />
+        <Table.Column<List>
+          title="Name"
+          dataIndex={nameof<List>("name")}
+          width={250}
+          fixed="left" />
+        <Table.Column<List>
+          title="Description"
+          dataIndex={nameof<List>("description")} />
+        <Table.Column<List> title="Subscribe"
+          dataIndex={nameof<List>("viewUrl")}
+          width={100}
+          fixed="right"
+          render={(text: any, record: List, index: number) => <SubscribeButton key={index} url={text} name={record.name} />}
+        />
       </Table>
     );
   }
