@@ -26,8 +26,8 @@ export class AllListsTable extends React.Component<{}, State> {
 
     render() {
         return (
-            <Table<List> dataSource={this.state.data} rowKey={record => record.id.toString()} loading={this.state.loading}>
-                <Table.Column<List> title="Name" dataIndex={nameof<List>("name")} />
+            <Table<List> pagination={{ position: "top" }} dataSource={this.state.data} rowKey={record => record.id.toString()} loading={this.state.loading}>
+                <Table.Column<List> title="Name" dataIndex={nameof<List>("name")} width={250} fixed="left" />
                 <Table.Column<List> title="Description" dataIndex={nameof<List>("description")} />
             </Table>
         );
