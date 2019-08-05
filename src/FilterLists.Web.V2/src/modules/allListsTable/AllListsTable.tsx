@@ -18,17 +18,11 @@ export class AllListsTable extends React.Component<{}, State> {
     }
 
     componentDidMount() {
-        this.fetch();
-    }
-
-    fetch() {
         this.setState({ loading: true });
         fetch("/api/v1/lists")
             .then(response => response.json())
-            .then(json => {
-                this.setState({ data: json, loading: false });
-            })
-    };
+            .then(json => { this.setState({ data: json, loading: false }); })
+    }
 
     render() {
         return (
