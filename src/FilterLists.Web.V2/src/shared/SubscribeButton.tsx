@@ -1,6 +1,6 @@
-import * as React from "react";
 import { Button } from 'antd';
-import { ButtonType, ButtonProps } from "antd/lib/button";
+import { ButtonProps, ButtonType } from "antd/lib/button";
+import * as React from "react";
 
 interface Props {
   name: string;
@@ -13,42 +13,45 @@ export const SubscribeButton = (props: Props) => props.viewUrl
   : null;
 
 function buildButtonProps(props: Props): ButtonProps {
-  let type: ButtonType;
-  let titlePrefix: string;
-
-  if (props.viewUrl.indexOf(".onion/") > 0) {
-    type = "ghost";
-    titlePrefix = "Tor address - ";
-  }
-  else if (props.viewUrl.indexOf("http://") === 0) {
-    type = "danger";
-    titlePrefix = "Not Secure - ";
-  }
-  else {
-    type = "primary";
-    titlePrefix = "";
-  }
+  let type: ButtonType = "primary";
 
   const hrefTitle = `${encodeURIComponent(props.name)}`;
-  let href: string;
-  let title: string;
+  let href: string = `abp:subscribe?location=${encodeURIComponent(props.viewUrl)}&amp;title=${hrefTitle}`;
 
-  if (props.viewUrl.indexOf(".tpl") > 0) {
-    href = `javascript:window.external.msAddTrackingProtectionList('${encodeURIComponent(props.viewUrl)}', '${hrefTitle}')`;
-    title = `${titlePrefix}Subscribe to ${props.name} with Internet Explorer's Tracking Protection List feature.`;
+  let titlePrefix = "";
+  let title: string = "";
+
+  const contains = (match: string) => props.viewUrl.indexOf(match) > 0;
+
+  switch (contains) {
+
+    // HTTP protocols
+    case contains(".onion/").valueOf:
+      type = "ghost";
+      titlePrefix = "Tor address - ";
+      break;
+    case contains("http://").valueOf:
+      type = "danger";
+      titlePrefix = "Not Secure - ";
+      break;
+
+    // Software protocols
+    case contains(".tpl").valueOf:
+      href = `javascript:window.external.msAddTrackingProtectionList('${encodeURIComponent(props.viewUrl)}', '${hrefTitle}')`;
+      title = `${titlePrefix}Subscribe to ${props.name} with Internet Explorer's Tracking Protection List feature.`;
+      break;
+    case contains(".lsrules").valueOf:
+      href = `x-littlesnitch:subscribe-rules?url=${encodeURIComponent(props.viewUrl)}`;
+      title = `${titlePrefix}Subscribe to ${props.name} with Little Snitch's rule group subscription feature.`;
+      break;
+    case contains("?hostformat=littlesnitch").valueOf:
+      href = `x-littlesnitch:subscribe-rules?url=${encodeURIComponent(props.viewUrl)}`;
+      title = `${titlePrefix}Subscribe to ${props.name} with Little Snitch's rule group subscription feature.`;
+      break;
+    default:
+      title = `${titlePrefix}Subscribe to ${props.name} with a browser extension supporting the "abp:" protocol (e.g. uBlock Origin, Adblock Plus).`;
+      break;
   }
-  else if (props.viewUrl.indexOf(".lsrules") > 0) {
-    href = `x-littlesnitch:subscribe-rules?url=${encodeURIComponent(props.viewUrl)}`;
-    title = `${titlePrefix}Subscribe to ${props.name} with Little Snitch's rule group subscription feature.`;
-  }
-  else if (props.viewUrl.indexOf("?hostformat=littlesnitch") > 0) {
-    href = `x-littlesnitch:subscribe-rules?url=${encodeURIComponent(props.viewUrl)}`;
-    title = `${titlePrefix}Subscribe to ${props.name} with Little Snitch's rule group subscription feature.`;
-  }
-  else {
-    href = `abp:subscribe?location=${encodeURIComponent(props.viewUrl)}&amp;title=${hrefTitle}`;
-    title = `${titlePrefix}Subscribe to ${props.name} with a browser extension supporting the "abp:" protocol (e.g. uBlock Origin, Adblock Plus).`;
-  }
-  
+
   return { type, href, title } as ButtonProps
 }
