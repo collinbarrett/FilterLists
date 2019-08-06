@@ -3,3 +3,7 @@
 .ant-dropdown-menu-submenu-title > a {
   color: #fff;
 }
+
+.ant-btn.single {
+  width: 106.81px;
+}

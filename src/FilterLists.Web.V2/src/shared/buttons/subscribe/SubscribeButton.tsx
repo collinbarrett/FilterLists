@@ -18,7 +18,7 @@ export const SubscribeButton = (props: Props): JSX.Element | null =>
     ? <SubscribeButtonDropdown {...props} />
     : props.viewUrl
       ? <div>
-        <Button size="small" {...buildButtonProps(props.name, props.viewUrl)}>Subscribe</Button>
+        <Button className={"single"} size="small" {...buildButtonProps(props.name, props.viewUrl)}>Subscribe</Button>
       </div>
       : null;
 
