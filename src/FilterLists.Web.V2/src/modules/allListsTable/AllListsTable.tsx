@@ -2,6 +2,7 @@ import { Table } from 'antd';
 import * as React from "react";
 import { SubscribeButton } from '../../shared/';
 import { nameof } from '../../utils';
+import './AllListsTable.css';
 import { List } from './List';
 
 interface State {
@@ -34,15 +35,17 @@ export class AllListsTable extends React.Component<{}, State> {
           title="Name"
           dataIndex={nameof<List>("name")}
           width={250}
-          fixed="left" />
+          fixed="left"
+          render={(text: string) => <div>{text}</div>} />
         <Table.Column<List>
           title="Description"
-          dataIndex={nameof<List>("description")} />
+          dataIndex={nameof<List>("description")}
+          render={(text: string) => <div>{text}</div>} />
         <Table.Column<List> title="Subscribe"
           dataIndex={nameof<List>("viewUrl")}
           width={123}
           fixed="right"
-          render={(text: string, record: List, index: number) => <SubscribeButton key={index} viewUrl={text} viewUrlMirrors={record.viewUrlMirrors} name={record.name} />}
+          render={(text: string, record: List, index: number) => <div><SubscribeButton key={index} viewUrl={text} viewUrlMirrors={record.viewUrlMirrors} name={record.name} /></div>}
         />
       </Table>
     );
