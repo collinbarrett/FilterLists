@@ -36,7 +36,7 @@ const SubscribeButtonDropdown = (props: Props): JSX.Element => {
           </Menu.Item>)}
       </Menu>
     }>
-    <span title={buttonProps.title}>Subscribe</span>
+    Subscribe
   </Dropdown.Button>;
 };
 
