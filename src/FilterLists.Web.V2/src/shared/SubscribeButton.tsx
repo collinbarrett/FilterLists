@@ -33,8 +33,8 @@ const SubscribeButtonDropdown = (props: Props): JSX.Element => {
           </Menu.Item>)}
       </Menu>
     }>
-    Subscribe
-    </Dropdown.Button>;
+    <span title={buttonProps.title}>Subscribe</span>
+  </Dropdown.Button>;
 };
 
 const buildButtonProps = (name: string, viewUrl: string): ButtonProps => {
