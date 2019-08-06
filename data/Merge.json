@@ -317,14 +317,6 @@
   },
   {
     "mergeFilterListId": 566,
-    "upstreamFilterListId": 571
-  },
-  {
-    "mergeFilterListId": 566,
-    "upstreamFilterListId": 572
-  },
-  {
-    "mergeFilterListId": 566,
     "upstreamFilterListId": 573
   },
   {
@@ -337,18 +329,6 @@
   },
   {
     "mergeFilterListId": 566,
-    "upstreamFilterListId": 577
-  },
-  {
-    "mergeFilterListId": 566,
-    "upstreamFilterListId": 579
-  },
-  {
-    "mergeFilterListId": 566,
-    "upstreamFilterListId": 582
-  },
-  {
-    "mergeFilterListId": 566,
     "upstreamFilterListId": 583
   },
   {
@@ -358,13 +338,5 @@
   {
     "mergeFilterListId": 566,
     "upstreamFilterListId": 586
-  },
-  {
-    "mergeFilterListId": 566,
-    "upstreamFilterListId": 587
-  },
-  {
-    "mergeFilterListId": 566,
-    "upstreamFilterListId": 588
   }
 ]
