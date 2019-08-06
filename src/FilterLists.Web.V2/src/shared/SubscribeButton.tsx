@@ -17,7 +17,9 @@ export const SubscribeButton = (props: Props): JSX.Element | null =>
   (props.viewUrlMirrors && props.viewUrlMirrors.length > 0)
     ? <SubscribeButtonDropdown {...props} />
     : props.viewUrl
-      ? <Button size="small" {...buildButtonProps(props.name, props.viewUrl)}>Subscribe</Button>
+      ? <div>
+        <Button size="small" {...buildButtonProps(props.name, props.viewUrl)}>Subscribe</Button>
+      </div>
       : null;
 
 const SubscribeButtonDropdown = (props: Props): JSX.Element => {

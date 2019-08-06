@@ -6,7 +6,8 @@ td > div {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-height: 1.5;
-  max-height: 3em;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-height: 1.5; /* fallback */
+  max-height: 3em; /* fallback */
+  min-height: 3em; /* fixed row height */
 }
