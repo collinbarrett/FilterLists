@@ -1,3 +1,3 @@
-import { SubscribeButton } from './SubscribeButton';
+import { SubscribeButton } from './buttons';
 
 export { SubscribeButton }

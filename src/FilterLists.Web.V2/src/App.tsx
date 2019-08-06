@@ -13,12 +13,11 @@ const App: React.FC = () => {
           theme="dark"
           mode="horizontal"
           style={{ lineHeight: '64px' }}
-        >
-        </Menu>
+        />
       </Header>
       <Content style={{ padding: '0 50px' }}>
         <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
-          <AllListsTable></AllListsTable>
+          <AllListsTable />
         </div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>©2019 Collin M. Barrett</Footer>

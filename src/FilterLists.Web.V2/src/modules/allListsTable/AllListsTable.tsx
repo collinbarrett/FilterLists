@@ -1,6 +1,6 @@
 import { Table } from 'antd';
 import * as React from "react";
-import { SubscribeButton } from '../../shared/';
+import { SubscribeButton } from '../../shared';
 import { nameof } from '../../utils';
 import './AllListsTable.css';
 import { List } from './List';
