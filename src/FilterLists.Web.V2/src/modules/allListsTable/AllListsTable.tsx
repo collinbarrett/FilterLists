@@ -9,6 +9,7 @@ interface State {
   data: List[];
   pageSize: number;
   pageSizeOptions: string[];
+  isNarrowWindow: boolean;
 }
 
 export class AllListsTable extends React.Component<{}, State> {
@@ -17,7 +18,8 @@ export class AllListsTable extends React.Component<{}, State> {
     this.state = {
       data: [],
       pageSize: 0,
-      pageSizeOptions: []
+      pageSizeOptions: [],
+      isNarrowWindow: false
     };
     this.updatePageSize = this.updatePageSize.bind(this);
   }
@@ -39,7 +41,8 @@ export class AllListsTable extends React.Component<{}, State> {
     const pageSize = Math.floor((window.innerHeight - 275.5) / 59);
     this.setState({
       pageSize: pageSize,
-      pageSizeOptions: [5, 10, 20, 500, 2000, pageSize].sort((a, b) => a - b).map(String)
+      pageSizeOptions: [5, 10, 20, 500, 2000, pageSize].sort((a, b) => a - b).map(String),
+      isNarrowWindow: window.innerWidth < 576 ? true : false
     });
   }
 
@@ -55,11 +58,12 @@ export class AllListsTable extends React.Component<{}, State> {
           pageSize: this.state.pageSize,
           showSizeChanger: true,
           pageSizeOptions: this.state.pageSizeOptions
-        }} >
+        }}
+        scroll={{ x: this.state.isNarrowWindow ? 576 : 1600 }}>
         <Table.Column<List>
           title="Name"
           dataIndex={nameof<List>("name")}
-          width={250}
+          width={200}
           fixed="left"
           render={(text: string) => <div>{text}</div>} />
         <Table.Column<List>
@@ -69,7 +73,7 @@ export class AllListsTable extends React.Component<{}, State> {
         <Table.Column<List> title="Subscribe"
           dataIndex={nameof<List>("viewUrl")}
           width={123}
-          fixed="right"
+          fixed={this.state.isNarrowWindow ? undefined : "right"}
           render={(text: string, record: List, index: number) =>
             <SubscribeButton key={index} viewUrl={text} viewUrlMirrors={record.viewUrlMirrors} name={record.name} />}
         />
