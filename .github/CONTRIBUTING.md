@@ -8,7 +8,7 @@ Check out the <a href="https://hub.filterlists.com">FilterLists Hub</a>, a place
 
 To submit a new list or update data about an existing list, please submit a pull request to [data](https://github.com/collinbarrett/FilterLists/tree/master/data) in conjunction with the data model described [here](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar). Alternatively, you can [open a new issue](https://github.com/collinbarrett/FilterLists/issues/new) providing information for all of the fields described in the [data model](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar).
 
-While we are generally very open and welcoming of any new or changed lists, a few condition apply (although loosely):
+While we are generally very open and welcoming of any new or changed lists, a few conditions apply (although loosely):
 
 * Adding the smaller text files that make up one complete list, e.g. *[EasyList General Block Popup](https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_general_block_popup.txt)*, is not usually done. We do however do it for the language files of *[ABP Anti-Circumvention Filter List](https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt)*; but due to its often-changing entries, those files should have ≥5 entries that cover ≥3 sites at the time of addition.
 * Since `CHEF-KOCH` has a registered history of behaving aggressively and unfairly towards other filterlist makers and the FilterLists.com community, a case to add any of his lists would have had to be very strong, and mass additions are out of the question.
