@@ -40,7 +40,6 @@ export class AllListsTable extends React.Component<{}, State> {
           dataIndex={nameof<List>("description")} />
         <Table.Column<List> title="Subscribe"
           dataIndex={nameof<List>("viewUrl")}
-          width={100}
           fixed="right"
           render={(text: string, record: List, index: number) => <SubscribeButton key={index} viewUrl={text} viewUrlMirrors={record.viewUrlMirrors} name={record.name} />}
         />

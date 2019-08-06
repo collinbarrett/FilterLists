@@ -1,6 +1,10 @@
-import { Button, Dropdown, Icon, Menu } from 'antd';
+import { Button, Dropdown, Menu } from 'antd';
 import { ButtonProps, ButtonType } from "antd/lib/button";
 import * as React from "react";
+
+//TODO: import DropdownButtonType from antd rather than redefining if they export the type
+//import { DropdownButtonType } from "antd/lib/dropdown";
+declare type DropdownButtonType = 'primary' | 'ghost' | 'dashed';
 
 interface Props {
   name: string;
@@ -12,23 +16,26 @@ export const SubscribeButton = (props: Props): JSX.Element | null =>
   (props.viewUrlMirrors && props.viewUrlMirrors.length > 0)
     ? <SubscribeButtonDropdown {...props} />
     : props.viewUrl
-      ? <Button {...buildButtonProps(props.name, props.viewUrl)}>Subscribe</Button>
+      ? <Button size="small" {...buildButtonProps(props.name, props.viewUrl)}>Subscribe</Button>
       : null;
 
-const SubscribeButtonDropdown = (props: Props): JSX.Element =>
-  <Dropdown overlay={
-    <Menu>
-      {props.viewUrlMirrors.map(
-        (viewUrlMirror: string, i: number) =>
+const SubscribeButtonDropdown = (props: Props): JSX.Element => {
+  var buttonProps = buildButtonProps(props.name, props.viewUrl);
+  //TODO: pass title (ref https://github.com/ant-design/ant-design/issues/18122)
+  return <Dropdown.Button size="small"
+    type={buttonProps.type as DropdownButtonType}
+    href={buttonProps.href}
+    overlay={
+      <Menu>
+        {props.viewUrlMirrors.map((viewUrlMirror: string, i: number) =>
           <Menu.Item key={i}>
-            <Button {...buildButtonProps(props.name, viewUrlMirror)}>{`Mirror ${i}`}</Button>
+            <Button size="small" {...buildButtonProps(props.name, viewUrlMirror)}>{`Mirror ${i + 1}`}</Button>
           </Menu.Item>)}
-    </Menu>
-  }>
-    <Button {...buildButtonProps(props.name, props.viewUrl)}>
-      Subscribe <Icon type="down" />
-    </Button>
-  </Dropdown>;
+      </Menu>
+    }>
+    Subscribe
+    </Dropdown.Button>;
+};
 
 const buildButtonProps = (name: string, viewUrl: string): ButtonProps => {
   let type: ButtonType = "primary";
