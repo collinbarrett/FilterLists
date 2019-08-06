@@ -30,7 +30,12 @@ export class AllListsTable extends React.Component<{}, State> {
         rowKey={record => record.id.toString()}
         loading={this.state.data.length === 0 ? true : false}
         size="small"
-        pagination={{ position: "top", size: "small" }} >
+        pagination={{
+          size: "small",
+          defaultPageSize: 12,
+          showSizeChanger: true,
+          pageSizeOptions: ["6", "12", "2000"]
+        }} >
         <Table.Column<List>
           title="Name"
           dataIndex={nameof<List>("name")}
