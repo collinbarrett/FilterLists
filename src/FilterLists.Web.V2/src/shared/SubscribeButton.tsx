@@ -5,11 +5,10 @@ import * as React from "react";
 interface Props {
   name: string;
   viewUrl: string;
-  text?: string;
 };
 
 export const SubscribeButton = (props: Props) => props.viewUrl
-  ? <Button {...buildButtonProps(props)}>{props.text || "Subscribe"}</Button>
+  ? <Button {...buildButtonProps(props)}>Subscribe</Button>
   : null;
 
 const buildButtonProps = (props: Props) => {
