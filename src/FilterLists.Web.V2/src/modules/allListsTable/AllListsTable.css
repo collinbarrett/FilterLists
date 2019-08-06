@@ -1,7 +1,7 @@
-/* limit table cells from wrapping more than 2 lines */
-/* https://stackoverflow.com/a/13924997/2343739 */
-/* https://stackoverflow.com/a/22042054/2343739 */
 td > div {
+  /* limit table cells from wrapping more than 2 lines */
+  /* https://stackoverflow.com/a/13924997/2343739 */
+  /* https://stackoverflow.com/a/22042054/2343739 */
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -9,5 +9,7 @@ td > div {
   -webkit-line-clamp: 2; /* number of lines to show */
   line-height: 1.5; /* fallback */
   max-height: 3em; /* fallback */
-  min-height: 3em; /* fixed row height */
+
+  /* fixed row height */
+  min-height: 3em;
 }
