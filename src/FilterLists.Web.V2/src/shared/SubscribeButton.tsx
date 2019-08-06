@@ -25,7 +25,7 @@ const buildButtonProps = (props: Props) => {
 
     // HTTP protocols
     case props.viewUrl.includes(".onion/"):
-      type = "ghost";
+      type = "dashed";
       title = defaultTitle("Tor address - ");
       break;
     case props.viewUrl.includes("http://"):
