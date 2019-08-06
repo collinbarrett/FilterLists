@@ -28,7 +28,7 @@ export class AllListsTable extends React.Component<{}, State> {
         dataSource={this.state.data}
         rowKey={record => record.id.toString()}
         loading={this.state.data.length === 0 ? true : false}
-        size="middle"
+        size="small"
         pagination={{ position: "top", size: "small" }} >
         <Table.Column<List>
           title="Name"
