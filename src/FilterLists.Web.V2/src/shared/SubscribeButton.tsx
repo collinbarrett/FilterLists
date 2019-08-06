@@ -1,7 +1,6 @@
 import { Button } from 'antd';
 import { ButtonProps, ButtonType } from "antd/lib/button";
 import * as React from "react";
-import { JSXElement } from '@babel/types';
 
 interface Props {
   name: string;
