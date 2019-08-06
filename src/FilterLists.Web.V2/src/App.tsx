@@ -15,7 +15,7 @@ const App: React.FC = () => {
           style={{ lineHeight: '64px' }}
         />
       </Header>
-      <Content style={{ padding: '0 50px' }}>
+      <Content>
         <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
           <AllListsTable />
         </div>
