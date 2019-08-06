@@ -4,7 +4,7 @@ td > div {
   /* https://stackoverflow.com/a/22042054/2343739 */
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
+  display: -webkit-box !important; /* TODO: refactor out important */
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2; /* number of lines to show */
   line-height: 1.5; /* fallback */
