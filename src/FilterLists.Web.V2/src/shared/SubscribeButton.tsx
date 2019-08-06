@@ -1,17 +1,18 @@
 import { Button } from 'antd';
 import { ButtonProps, ButtonType } from "antd/lib/button";
 import * as React from "react";
+import { JSXElement } from '@babel/types';
 
 interface Props {
   name: string;
   viewUrl: string;
 };
 
-export const SubscribeButton = (props: Props) => props.viewUrl
+export const SubscribeButton = (props: Props): JSX.Element | null => props.viewUrl
   ? <Button {...buildButtonProps(props)}>Subscribe</Button>
   : null;
 
-const buildButtonProps = (props: Props) => {
+const buildButtonProps = (props: Props): ButtonProps => {
   let type: ButtonType = "primary";
 
   const hrefLocation = `${encodeURIComponent(props.viewUrl)}`;
