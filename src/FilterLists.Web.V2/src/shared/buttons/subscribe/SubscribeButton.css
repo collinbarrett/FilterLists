@@ -4,6 +4,7 @@
   color: #fff;
 }
 
+/* make non-dropdown button equivalent width to dropdown */
 .ant-btn.single {
   width: 106.81px;
 }
