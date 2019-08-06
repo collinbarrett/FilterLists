@@ -215,7 +215,7 @@
   },
   {
     "id": 32,
-    "name": "Permissive but non-commercial",
+    "name": "Permissive non-commercial",
     "permissiveAdaptation": true,
     "permissiveCommercial": false
   },
@@ -265,5 +265,12 @@
     "name": "Generic copyleft",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
+  },
+  {
+    "id": 40,
+    "descriptionUrl": "https://pgl.yoyo.org/license/",
+    "name": "McRae General Public License",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": false
   }
 ]
