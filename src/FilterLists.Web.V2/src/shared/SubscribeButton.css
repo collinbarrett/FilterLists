@@ -1,0 +1,5 @@
+/* fix font color on dropdown buttons */
+.ant-dropdown-menu-item > a,
+.ant-dropdown-menu-submenu-title > a {
+  color: #fff;
+}
