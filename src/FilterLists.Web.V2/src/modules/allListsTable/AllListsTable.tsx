@@ -7,20 +7,40 @@ import { List } from './List';
 
 interface State {
   data: List[];
+  pageSize: number;
+  pageSizeOptions: string[];
 }
 
 export class AllListsTable extends React.Component<{}, State> {
   constructor(props: any) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      pageSize: 0,
+      pageSizeOptions: []
     };
+    this.updatePageSize = this.updatePageSize.bind(this);
   }
 
   componentDidMount() {
+    this.updatePageSize();
+    window.addEventListener('resize', this.updatePageSize);
+
     fetch("/api/v1/lists")
       .then(response => response.json())
       .then(json => { this.setState({ data: json }); })
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updatePageSize);
+  }
+
+  updatePageSize() {
+    const pageSize = Math.floor((window.innerHeight - 450) / 42);
+    this.setState({
+      pageSize: pageSize,
+      pageSizeOptions: [5, 10, 20, 500, 2000, pageSize].sort((a, b) => a - b).map(String)
+    });
   }
 
   render() {
@@ -32,9 +52,9 @@ export class AllListsTable extends React.Component<{}, State> {
         size="small"
         pagination={{
           size: "small",
-          defaultPageSize: 12,
+          pageSize: this.state.pageSize,
           showSizeChanger: true,
-          pageSizeOptions: ["6", "12", "2000"]
+          pageSizeOptions: this.state.pageSizeOptions
         }} >
         <Table.Column<List>
           title="Name"
