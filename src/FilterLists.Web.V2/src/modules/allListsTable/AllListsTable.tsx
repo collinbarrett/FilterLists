@@ -70,6 +70,18 @@ export class AllListsTable extends React.Component<{}, State> {
           title="Description"
           dataIndex={nameof<List>("description")}
           render={(text: string) => <div>{text}</div>} />
+        <Table.Column<List>
+          title="Software"
+          dataIndex={nameof<List>("syntaxId")}
+          render={(text: string) => <div>{text}</div>} />
+        <Table.Column<List>
+          title="Languages"
+          dataIndex={nameof<List>("languageIds")}
+          render={(text: string) => <div>{text}</div>} />
+        <Table.Column<List>
+          title="Tags"
+          dataIndex={nameof<List>("tagIds")}
+          render={(text: string) => <div>{text}</div>} />
         <Table.Column<List> title="Subscribe"
           dataIndex={nameof<List>("viewUrl")}
           width={123}
