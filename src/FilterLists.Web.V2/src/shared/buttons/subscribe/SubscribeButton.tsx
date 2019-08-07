@@ -1,7 +1,7 @@
 import { Button, Dropdown, Menu } from 'antd';
 import { ButtonProps, ButtonType } from "antd/lib/button";
 import React from 'react';
-import './SubscribeButton.css';
+import styles from './SubscribeButton.module.css';
 
 //TODO: import DropdownButtonType from antd rather than redefining if they export the type
 //import { DropdownButtonType } from "antd/lib/dropdown";
@@ -17,7 +17,7 @@ export const SubscribeButton = (props: Props): JSX.Element =>
   (props.viewUrlMirrors && props.viewUrlMirrors.length > 0)
     ? <SubscribeButtonDropdown {...props} />
     : <div>
-      <Button className={"single"} size="small" {...buildButtonProps(props.name, props.viewUrl)}>Subscribe</Button>
+      <Button className={styles.single} size="small" {...buildButtonProps(props.name, props.viewUrl)}>Subscribe</Button>
     </div>;
 
 const SubscribeButtonDropdown = (props: Props): JSX.Element => {
@@ -30,7 +30,7 @@ const SubscribeButtonDropdown = (props: Props): JSX.Element => {
       <Menu>
         {props.viewUrlMirrors.map((viewUrlMirror: string, i: number) =>
           <Menu.Item key={i}>
-            <Button size="small" {...buildButtonProps(props.name, viewUrlMirror)}>{`Mirror ${i + 1}`}</Button>
+            <Button className={styles.sub} size="small" {...buildButtonProps(props.name, viewUrlMirror)}>{`Mirror ${i + 1}`}</Button>
           </Menu.Item>)}
       </Menu>
     }>

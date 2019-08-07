@@ -2,7 +2,7 @@ import { Table } from 'antd';
 import React from 'react';
 import { Description, SubscribeButton, TagCloud } from '../../shared';
 import { nameof } from '../../utils';
-import './AllListsTable.css';
+import styles from './AllListsTable.module.css';
 import { List } from './List';
 import { Tag } from './Tag';
 
@@ -78,30 +78,36 @@ export class AllListsTable extends React.Component<{}, State> {
           sorter={(a, b) => a.name.localeCompare(b.name)}
           defaultSortOrder={"ascend"}
           width={200}
+          className={styles.nogrow}
           fixed="left"
           render={(text: string) => <div>{text}</div>} />
         <Table.Column<List>
           title="Description"
           dataIndex={nameof<List>("description")}
+          className={styles.nogrow}
           render={(text: string, record: List) =>
             <Description desriptionSourceUrl={record.descriptionSourceUrl} desription={text} />} />
         <Table.Column<List>
           title="Software"
           dataIndex={nameof<List>("syntaxId")}
+          className={styles.nogrow}
           render={(text: string) => <div>{text}</div>} />
         <Table.Column<List>
           title="Languages"
           dataIndex={nameof<List>("languageIds")}
+          className={styles.nogrow}
           render={(text: string) => <div>{text}</div>} />
         <Table.Column<List>
           title="Tags"
           dataIndex={nameof<List>("tagIds")}
-          width={200}
+          width={275}
+          className={styles.nogrow}
           render={(tagIds: number[]) =>
             tagIds ? <TagCloud tags={this.state.tags.filter((t: Tag) => tagIds.includes(t.id))} /> : null} />
         <Table.Column<List> title="Subscribe"
           dataIndex={nameof<List>("viewUrl")}
           width={123}
+          className={styles.nogrow}
           fixed={this.state.isNarrowWindow ? undefined : "right"}
           render={(text: string, record: List, index: number) =>
             <SubscribeButton key={index} viewUrl={text} viewUrlMirrors={record.viewUrlMirrors} name={record.name} />} />

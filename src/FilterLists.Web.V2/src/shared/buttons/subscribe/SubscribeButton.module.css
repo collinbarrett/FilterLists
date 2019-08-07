@@ -1,10 +1,9 @@
 /* fix font color on dropdown buttons */
-.ant-dropdown-menu-item > a,
-.ant-dropdown-menu-submenu-title > a {
-  color: #fff;
+.sub {
+  color: #fff !important;
 }
 
 /* make non-dropdown button equivalent width to dropdown */
-.ant-btn.single {
+.single {
   width: 106.81px;
 }
