@@ -13,14 +13,12 @@ interface Props {
   viewUrlMirrors: string[];
 };
 
-export const SubscribeButton = (props: Props): JSX.Element | null =>
+export const SubscribeButton = (props: Props): JSX.Element =>
   (props.viewUrlMirrors && props.viewUrlMirrors.length > 0)
     ? <SubscribeButtonDropdown {...props} />
-    : props.viewUrl
-      ? <div>
-        <Button className={"single"} size="small" {...buildButtonProps(props.name, props.viewUrl)}>Subscribe</Button>
-      </div>
-      : null;
+    : <div>
+      <Button className={"single"} size="small" {...buildButtonProps(props.name, props.viewUrl)}>Subscribe</Button>
+    </div>;
 
 const SubscribeButtonDropdown = (props: Props): JSX.Element => {
   var buttonProps = buildButtonProps(props.name, props.viewUrl);
