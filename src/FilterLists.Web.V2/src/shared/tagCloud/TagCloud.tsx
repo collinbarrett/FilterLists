@@ -1,5 +1,6 @@
 import { Tag } from 'antd';
 import * as React from "react";
+import styles from './TagCloud.module.css';
 
 interface TagData {
   description: string;
@@ -12,7 +13,7 @@ interface Props {
 
 export const TagCloud = (props: Props): JSX.Element | null => {
   return props.tags
-    ? <div>
+    ? <div className={styles.grow}>
       {props.tags.map((t: TagData, i: number) =>
         <Tag key={i} title={t.description}>{t.name}</Tag>)}
     </div>
