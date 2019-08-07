@@ -1,6 +1,6 @@
 import { Table } from 'antd';
 import * as React from "react";
-import { SubscribeButton } from '../../shared';
+import { SubscribeButton, Description } from '../../shared';
 import { nameof } from '../../utils';
 import './AllListsTable.css';
 import { List } from './List';
@@ -69,7 +69,7 @@ export class AllListsTable extends React.Component<{}, State> {
         <Table.Column<List>
           title="Description"
           dataIndex={nameof<List>("description")}
-          render={(text: string) => <div>{text}</div>} />
+          render={(text: string, record: List) => <Description desriptionSourceUrl={record.descriptionSourceUrl} desription={text} />} />
         <Table.Column<List>
           title="Software"
           dataIndex={nameof<List>("syntaxId")}
