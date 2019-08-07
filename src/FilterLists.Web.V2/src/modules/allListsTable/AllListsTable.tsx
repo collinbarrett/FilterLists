@@ -96,8 +96,9 @@ export class AllListsTable extends React.Component<{}, State> {
         <Table.Column<List>
           title="Tags"
           dataIndex={nameof<List>("tagIds")}
+          width={200}
           render={(tagIds: number[]) =>
-            <TagCloud tags={this.state.tags.filter((t: Tag) => tagIds.includes(t.id))} />} />
+            tagIds ? <TagCloud tags={this.state.tags.filter((t: Tag) => tagIds.includes(t.id))} /> : null} />
         <Table.Column<List> title="Subscribe"
           dataIndex={nameof<List>("viewUrl")}
           width={123}
