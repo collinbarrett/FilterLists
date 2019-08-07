@@ -1,12 +1,14 @@
 import { Table } from 'antd';
 import * as React from "react";
-import { SubscribeButton, Description } from '../../shared';
+import { Description, SubscribeButton, TagCloud } from '../../shared';
 import { nameof } from '../../utils';
 import './AllListsTable.css';
 import { List } from './List';
+import { Tag } from './Tag';
 
 interface State {
-  data: List[];
+  lists: List[];
+  tags: Tag[];
   pageSize: number;
   pageSizeOptions: string[];
   isNarrowWindow: boolean;
@@ -16,7 +18,8 @@ export class AllListsTable extends React.Component<{}, State> {
   constructor(props: any) {
     super(props);
     this.state = {
-      data: [],
+      lists: [],
+      tags: [],
       pageSize: 0,
       pageSizeOptions: [],
       isNarrowWindow: false
@@ -25,16 +28,25 @@ export class AllListsTable extends React.Component<{}, State> {
   }
 
   componentDidMount() {
+    this.fetchData();
     this.updatePageSize();
     window.addEventListener('resize', this.updatePageSize);
-
-    fetch("/api/v1/lists")
-      .then(response => response.json())
-      .then(json => { this.setState({ data: json }); })
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.updatePageSize);
+  }
+
+  private fetchData() {
+    fetch("/api/v1/lists")
+      .then(response => response.json())
+      .then(json => (json as List[]).sort((a, b) => a.name.localeCompare(b.name)))
+      .then(lists => { this.setState({ lists: lists }); })
+
+    fetch("/api/v1/tags")
+      .then(response => response.json())
+      .then(json => (json as Tag[]).sort((a, b) => a.name.localeCompare(b.name)))
+      .then(tags => { this.setState({ tags: tags }); })
   }
 
   private updatePageSize() {
@@ -49,9 +61,9 @@ export class AllListsTable extends React.Component<{}, State> {
   render() {
     return (
       <Table<List>
-        dataSource={this.state.data}
+        dataSource={this.state.lists}
         rowKey={record => record.id.toString()}
-        loading={this.state.data.length === 0 ? true : false}
+        loading={this.state.lists.length === 0 ? true : false}
         size="small"
         pagination={{
           size: "small",
@@ -84,7 +96,8 @@ export class AllListsTable extends React.Component<{}, State> {
         <Table.Column<List>
           title="Tags"
           dataIndex={nameof<List>("tagIds")}
-          render={(text: string) => <div>{text}</div>} />
+          render={(tagIds: number[]) =>
+            <TagCloud tags={this.state.tags.filter((t: Tag) => tagIds.includes(t.id))} />} />
         <Table.Column<List> title="Subscribe"
           dataIndex={nameof<List>("viewUrl")}
           width={123}
