@@ -1,5 +1,5 @@
 import { Table } from 'antd';
-import * as React from "react";
+import React from 'react';
 import { Description, SubscribeButton, TagCloud } from '../../shared';
 import { nameof } from '../../utils';
 import './AllListsTable.css';

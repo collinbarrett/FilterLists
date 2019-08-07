@@ -1,5 +1,5 @@
 import { Tag } from 'antd';
-import * as React from "react";
+import React from 'react';
 import styles from './TagCloud.module.css';
 
 interface TagData {
