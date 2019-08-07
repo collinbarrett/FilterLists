@@ -63,6 +63,8 @@ export class AllListsTable extends React.Component<{}, State> {
         <Table.Column<List>
           title="Name"
           dataIndex={nameof<List>("name")}
+          sorter={(a, b) => a.name.localeCompare(b.name)}
+          defaultSortOrder={"ascend"}
           width={200}
           fixed="left"
           render={(text: string) => <div>{text}</div>} />
