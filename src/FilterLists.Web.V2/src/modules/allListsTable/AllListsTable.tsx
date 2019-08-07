@@ -69,7 +69,8 @@ export class AllListsTable extends React.Component<{}, State> {
         <Table.Column<List>
           title="Description"
           dataIndex={nameof<List>("description")}
-          render={(text: string, record: List) => <Description desriptionSourceUrl={record.descriptionSourceUrl} desription={text} />} />
+          render={(text: string, record: List) =>
+            <Description desriptionSourceUrl={record.descriptionSourceUrl} desription={text} />} />
         <Table.Column<List>
           title="Software"
           dataIndex={nameof<List>("syntaxId")}
@@ -87,8 +88,7 @@ export class AllListsTable extends React.Component<{}, State> {
           width={123}
           fixed={this.state.isNarrowWindow ? undefined : "right"}
           render={(text: string, record: List, index: number) =>
-            <SubscribeButton key={index} viewUrl={text} viewUrlMirrors={record.viewUrlMirrors} name={record.name} />}
-        />
+            <SubscribeButton key={index} viewUrl={text} viewUrlMirrors={record.viewUrlMirrors} name={record.name} />} />
       </Table>
     );
   }
