@@ -37,7 +37,7 @@ export class AllListsTable extends React.Component<{}, State> {
     window.removeEventListener('resize', this.updatePageSize);
   }
 
-  updatePageSize() {
+  private updatePageSize() {
     const pageSize = Math.floor((window.innerHeight - 275.5) / 59);
     this.setState({
       pageSize: pageSize,
