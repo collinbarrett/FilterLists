@@ -1,5 +1,5 @@
 import * as React from "react";
-import { img1, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img2, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29, img3, img30, img31, img32, img33, img34, img4, img5, img6, img7, img8 } from "./imgs";
+import { img1, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img2, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29, img3, img30, img31, img32, img33, img34, img35, img36, img37, img4, img5, img6, img7, img8 } from "./imgs";
 
 interface Props {
     id: number;
@@ -52,4 +52,7 @@ const icons: { [id: number]: IIcon; } = {
     32: { image: img32, imageTitle: "AdNauseam" },
     33: { image: img33, imageTitle: "Legacy Unix derivatives" },
     34: { image: img34, imageTitle: "Windows command line" },
+    35: { image: img35, imageTitle: "Shadowsocks" },
+    36: { image: img36, imageTitle: "ShadowsocksR" },
+    37: { image: img37, imageTitle: "Shadowrocket" },
 };
