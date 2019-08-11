@@ -31,6 +31,9 @@ import img31 from "./31-AdGuard-Home.png";
 import img32 from "./32-AdNauseam.png";
 import img33 from "./33-Legacy-Unix-Derivatives.png";
 import img34 from "./34-Windows-command-line.png";
+import img35 from "./35-Shadowsocks.png";
+import img36 from "./36-ShadowsocksR.png";
+import img37 from "./37-Shadowrocket.png";
 
-export { img1, img2, img3, img4, img5, img6, img7, img8, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29, img30, img31, img32, img33, img34 };
+export { img1, img2, img3, img4, img5, img6, img7, img8, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36, img37 };
 
