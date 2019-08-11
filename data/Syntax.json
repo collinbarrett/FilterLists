@@ -119,5 +119,9 @@
   {
     "id": 28,
     "name": "Adblocker-syntax domains"
+  },
+  {
+    "id": 29,
+    "name": "Socks5"
   }
 ]
