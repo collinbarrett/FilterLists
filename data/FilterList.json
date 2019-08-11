@@ -19213,5 +19213,142 @@
     "publishedDate": "2018-05-15T09:50:43",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/arabic.txt"
+  },
+{
+"id": 1800,
+"name": "Rixcloud Rules",
+"syntaxId": 29,
+"viewUrl": "https://cdn.rixcloud.io/Quantumult/Rules/Default.conf"
+},
+{
+"id": 1801,
+"name": "Lhie1's Auto Rules",
+"homeUrl": "https://github.com/lhie1/Rules/",
+"issuesUrl": "https://github.com/lhie1/Rules/issues",
+"syntaxId": 29,
+"licenseId": 19,
+"viewUrl": "https://raw.githubusercontent.com/lhie1/Rules/master/Auto/REJECT.conf"
+},
+{
+"id": 1802,
+"name": "SSEncrypt Adblock",
+"homeUrl": "https://github.com/HParis/SSEncrypt/",
+"issuesUrl": "https://github.com/HParis/SSEncrypt/issues",
+"syntaxId": 29,
+"viewUrl": "https://raw.githubusercontent.com/HParis/SSEncrypt/master/adblock-reject.list"
+},
+{
+"id": 1803,
+"name": "Scomper Surge List Reject",
+"homeUrl": "https://github.com/scomper/surge-list/",
+"issuesUrl": "https://github.com/scomper/surge-list/issues",
+"syntaxId": 29,
+"viewUrl": "https://raw.githubusercontent.com/scomper/surge-list/master/reject.list"
+},
+{
+"id": 1804,
+"name": "ConnersHua Advertising Ruleset",
+"homeUrl": "https://github.com/ConnersHua/Profiles/tree/master",
+"issuesUrl": "https://github.com/ConnersHua/Profiles/tree/master/issues",
+"syntaxId": 29,
+"viewUrl": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Advertising.list"
+},
+{
+"id": 1805,
+"name": "ConnersHua Pro Ruleset",
+"homeUrl": "https://github.com/ConnersHua/Profiles/tree/master",
+"issuesUrl": "https://github.com/ConnersHua/Profiles/tree/master/issues",
+"syntaxId": 29,
+"viewUrl": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Pro.conf"
+},
+{
+"id": 1806,
+"name": "BlocklistDE All",
+"description": "The mission is to report any and all attacks to the respective abuse departments of the infected PCs/servers, to ensure that the responsible provider can inform their customer about the infection and disable the attacker. ",
+"homeUrl": "https://www.blocklist.de/en/index.html",
+"syntaxId": 9,
+"viewUrl": "https://lists.blocklist.de/lists/all.txt",
+"donateUrl": "https://flattr.com/@blocklist.de"
+},
+{
+"id": 1807,
+"name": "DangerRulezSK Brute Force Blocker",
+"description": "Its main purpose is to block SSH bruteforce attacks via firewall.",
+"homeUrl": "http://danger.rulez.sk/index.php/bruteforceblocker/",
+"syntaxId": 9,
+"viewUrl": "http://danger.rulez.sk/projects/bruteforceblocker/blist.php"
+},
+{
+"id": 1808,
+"name": "EmergingThreats Compromised IPs",
+"homeUrl": "https://rules.emergingthreats.net/",
+"syntaxId": 9,
+"viewUrl": "https://rules.emergingthreats.net/blockrules/compromised-ips.txt"
+},
+{
+"id": 1809,
+"name": "EmergingThreats Block IPs",
+"homeUrl": "https://rules.emergingthreats.net/",
+"syntaxId": 9,
+"viewUrl": "https://rules.emergingthreats.net/fwrules/emerging-Block-IPs.txt"
+},
+{
+"id": 1810,
+"name": "Greensnow Blocklist",
+"description": "GreenSnow is a team consisting of the best specialists in computer security, we harvest a large number of IPs from different computers located around the world.",
+"homeUrl": "https://greensnow.co/",
+"syntaxId": 9,
+"viewUrl": "https://blocklist.greensnow.co/greensnow.txt"
+},
+{
+"id": 1811,
+"name": "Binary Defense Systems Artillery Threat Intelligence Feed and Banlist Feed",
+"homeUrl": "https://www.binarydefense.com/",
+"syntaxId": 9,
+"licenseId": 32,
+"viewUrl": "https://www.binarydefense.com/banlist.txt"
+},
+{
+"id": 1812,
+"name": "NoThink SSH Blacklist",
+"homeUrl": "https://www.nothink.org/",
+"syntaxId": 9,
+"viewUrl": "https://www.nothink.org/blacklist/blacklist_ssh_all.txt"
+},
+{
+"id": 1813,
+"name": "CINS Army Bad Guys",
+"description": "CINS Army is a way for our company to give back to the community by sharing valuable threat intelligence harvested from our CINS system. The CINS Army list is a subset of the CINS Active Threat Intelligence ruleset, and consists of IP addresses that meet one of two basic criteria: 1) The IP's recent Rogue Packet score factor is very poor, or 2) The IP has tripped a designated number of 'trusted' alerts across a given number of our Sentinels deployed around the world.",
+"homeUrl": "https://cinsscore.com/",
+"syntaxId": 9,
+"viewUrl": "https://cinsscore.com/list/ci-badguys.txt"
+},
+  {
+    "id": 1814,
+    "description": "This list target huge international websites that clutter search engine results with misinformation, unfounded articles, and/or contempt for humanity. While designed for use with «Google Hit Hider by Domain» to remove search results, it can also be used with other domains-list tools if you want more thorough blocking of them.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Remover for Mainstream Tabloid and Alt-Right Sites",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TabloidRemover.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TabloidRemover.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TabloidRemover.txt"
+  },
+  {
+    "id": 1815,
+    "description": "Have you ever been searching for rare PC parts, but a lot the sites you visit refuse to tell you the murderous prices they charge unless you sign up as a member with them? Now you won't feel infuriated by it anymore! While this list is designed for «Google Hit Hider by Domain» to remove search results, it can also be used with other domains-list tools if you want more thorough blocking of them.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'PC component price hiders' List",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPCPriceHiderList.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPCPriceHiderList.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPCPriceHiderList.txt"
   }
 ]
