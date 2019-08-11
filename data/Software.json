@@ -217,5 +217,26 @@
     "id": 34,
     "isAbpSubscribable": false,
     "name": "Windows command line"
+  },
+  {
+    "id": 35,
+    "downloadUrl": "https://shadowsocks.org/en/download/clients.html",
+    "homeUrl": "https://shadowsocks.org/en/index.html",
+    "isAbpSubscribable": false,
+    "name": "Shadowsocks"
+  },
+  {
+    "id": 36,
+    "downloadUrl": "https://github.com/shadowsocksrr/shadowsocksr-csharp/releases",
+    "homeUrl": "https://github.com/shadowsocksrr/shadowsocksr-csharp",
+    "isAbpSubscribable": false,
+    "name": "ShadowsocksR"
+  },
+  {
+    "id": 37,
+    "downloadUrl": "https://apps.apple.com/app/shadowrocket/id932747118",
+    "homeUrl": "https://liguangming.com/Shadowrocket",
+    "isAbpSubscribable": false,
+    "name": "Shadowrocket"
   }
 ]
