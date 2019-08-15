@@ -662,7 +662,7 @@
     "homeUrl": "https://kadantiscam.netlify.com/",
     "issuesUrl": "https://github.com/PolishFiltersTeam/KADhosts/issues",
     "licenseId": 8,
-    "name": "KAD Hosts File",
+    "name": "KADhosts",
     "publishedDate": "2016-11-20T11:41:02",
     "submissionUrl": "https://kadantiscam.netlify.com/#contact",
     "syntaxId": 1,
@@ -4035,18 +4035,17 @@
   },
   {
     "id": 349,
-    "chatUrl": "https://discord.me/polskiefiltry",
-    "description": "Supplement list for Polish Annoyance Filters, only for uBlock & AdGuard.",
-    "descriptionSourceUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
-    "homeUrl": "https://polishannoyancefilters.netlify.com",
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
-    "licenseId": 9,
-    "name": "Polish Annoyance Filters - Supplement for uBlock & AdGuard",
-    "publishedDate": "2017-10-23T00:00:00",
-    "submissionUrl": "https://polishannoyancefilters.netlify.com/issues",
-    "syntaxId": 4,
-    "updatedDate": "2019-04-12T18:00:23",
-    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB_uBlock_AdGuard.txt"
+    "description": "Polish hosts file for blocking scams (without controversial pages => https://github.com/PolishFiltersTeam/KAD/issues/649).",
+    "emailAddress": "polishjarvis@gmail.com",
+    "homeUrl": "https://kadantiscam.netlify.com/",
+    "issuesUrl": "https://github.com/PolishFiltersTeam/KADhosts/issues",
+    "licenseId": 8,
+    "name": "KADHosts (without controversies)",
+    "submissionUrl": "https://kadantiscam.netlify.com/#contact",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt"
   },
   {
     "id": 350,
@@ -5644,15 +5643,15 @@
   },
   {
     "id": 508,
-    "description": "Whitelist of section with promotion of fake science/news. More at: https://github.com/azet12/KAD/issues/649.",
+    "description": "Whitelist of section with promotion of fake science/news. More at: https://github.com/PolishFiltersTeam/KAD/issues/649.",
     "descriptionSourceUrl": "https://github.com/PolishFiltersTeam/KAD",
-    "emailAddress": "kadrep@outlook.com",
+    "emailAddress": "polishjarvis@gmail.com",
     "homeUrl": "https://kadantiscam.netlify.com/",
     "issuesUrl": "https://github.com/PolishFiltersTeam/KAD/issues",
     "licenseId": 8,
     "name": "KAD - The Whitelist of the Controversial Pages",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/azet12/KAD/gh-pages/assets/other/kadfakewhitelist.txt",
+    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/gh-pages/assets/other/kadfakewhitelist.txt",
     "viewUrlMirror1": "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/gh-pages/assets/other/kadfakewhitelist.txt"
   },
   {
@@ -6347,12 +6346,12 @@
   {
     "id": 616,
     "chatUrl": "https://discord.me/polskiefiltry",
-    "description": "Filters that hide and block various other widgets.",
+    "description": "Filters that hide and block various other elements.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt",
     "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
     "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
     "licenseId": 9,
-    "name": "Polish Annoyance Filters - Other Widgets",
+    "name": "Polish Annoyance Filters - Other Elements",
     "publishedDate": "2018-06-30T16:19:08",
     "syntaxId": 3,
     "updatedDate": "2019-04-13T22:00:20",
@@ -19350,5 +19349,30 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPCPriceHiderList.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPCPriceHiderList.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPCPriceHiderList.txt"
+  },
+  {
+    "id": 1816,
+    "description": "Additional regex list blocking scam and phising Polish sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
+    "emailAddress": "polishjarvis@gmail.com",
+    "homeUrl": "https://kadantiscam.netlify.com/",
+    "issuesUrl": "https://github.com/PolishFiltersTeam/KADhosts/issues",
+    "licenseId": 8,
+    "name": "KADhole",
+    "submissionUrl": "https://kadantiscam.netlify.com/#contact",
+    "syntaxId": 30,
+    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhole.txt"
+  },
+  {
+    "id": 1817,
+    "chatUrl": "https://discord.me/polskiefiltry",
+    "description": "Polish regex list for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
+    "donateUrl": "https://patronite.pl/polskiefiltry",
+    "emailAddress": "errors@certyficate.it",
+    "homeUrl": "https://www.certyficate.it/",
+    "issuesUrl": "https://github.com/MajkiIT/polish-ads-filter/issues",
+    "licenseId": 9,
+    "name": "Polish Regex Filters for Pi-hole",
+    "syntaxId": 30,
+    "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/hostfile_regex.txt"
   }
 ]
