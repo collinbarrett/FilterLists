@@ -123,5 +123,10 @@
   {
     "id": 29,
     "name": "Socks5"
+  },
+  {
+    "id": 30,
+    "definitionUrl": "https://docs.pi-hole.net/ftldns/regex/tutorial/",
+    "name": "Pi-hole regular expressions"
   }
 ]
