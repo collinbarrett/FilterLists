@@ -19365,7 +19365,7 @@
   {
     "id": 1817,
     "chatUrl": "https://discord.me/polskiefiltry",
-    "description": "Polish regex list for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
+    "description": "Polish regex list blocking ads and tracking sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "emailAddress": "errors@certyficate.it",
     "homeUrl": "https://www.certyficate.it/",
@@ -19374,5 +19374,14 @@
     "name": "Polish Regex Filters for Pi-hole",
     "syntaxId": 30,
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/hostfile_regex.txt"
+  },
+  {
+    "id": 1818,
+    "description": "Mmotti's regex list blocking ads and tracking sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
+    "homeUrl": "https://github.com/mmotti/pihole-regex",
+    "issuesUrl": "https://github.com/mmotti/pihole-regex/issues",
+    "name": "Mmoti's Regex Filters for Pi-hole",
+    "syntaxId": 30,
+    "viewUrl": "https://raw.githubusercontent.com/mmotti/pihole-regex/master/regex.list"
   }
 ]
