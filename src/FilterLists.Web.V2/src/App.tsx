@@ -1,5 +1,6 @@
 import { Layout, Menu } from 'antd';
 import React from 'react';
+
 import { AllListsTable } from './modules';
 
 const { Header, Content, Footer } = Layout;
@@ -16,7 +17,7 @@ const App: React.FC = () => {
         />
       </Header>
       <Content>
-        <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+        <div style={{ background: '#fff', paddingLeft: 12, paddingTop: 12, paddingRight: 12, minHeight: 280 }}>
           <AllListsTable />
         </div>
       </Content>
