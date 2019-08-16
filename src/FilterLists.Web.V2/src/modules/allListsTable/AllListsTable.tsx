@@ -1,5 +1,6 @@
 import { Table } from 'antd';
 import React from 'react';
+
 import { Description, SubscribeButton, TagCloud } from '../../shared';
 import { nameof } from '../../utils';
 import styles from './AllListsTable.module.css';
@@ -58,6 +59,20 @@ export class AllListsTable extends React.Component<{}, State> {
     });
   }
 
+  private tagSorter = (a: number[], b: number[], tags: Tag[]): number => {
+    return a
+      ? b
+        ? a.length === b.length
+          ? tags.filter((t: Tag) => a.indexOf(t.id) > -1).map((t: Tag) => t.name).join().toLowerCase() > tags.filter((t: Tag) => b.indexOf(t.id) > -1).map((t: Tag) => t.name).join().toLowerCase()
+            ? 1
+            : -1
+          : a.length > b.length
+            ? -1
+            : 1
+        : -1
+      : 1;
+  };
+
   render() {
     return (
       <Table<List>
@@ -100,6 +115,7 @@ export class AllListsTable extends React.Component<{}, State> {
         <Table.Column<List>
           title="Tags"
           dataIndex={nameof<List>("tagIds")}
+          sorter={(a, b) => this.tagSorter(a.tagIds, b.tagIds, this.state.tags)}
           width={275}
           className={styles.nogrow}
           render={(tagIds: number[]) =>
