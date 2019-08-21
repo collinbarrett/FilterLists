@@ -58,7 +58,7 @@
 		<PackageReference Include="Serilog.Extensions.Logging" Version="3.0.0" />
 		<PackageReference Include="Serilog.Sinks.ApplicationInsights" Version="3.0.4" />
 		<PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
-		<PackageReference Include="SharpCompress" Version="0.23.0" />
+		<PackageReference Include="SharpCompress" Version="0.24.0" />
 	</ItemGroup>
 
 	<ItemGroup>
