@@ -31,7 +31,7 @@
 		<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.4" />
 		<PackageReference Include="Microsoft.DotNet.Analyzers.Compatibility" Version="0.2.12-alpha" />
 		<PackageReference Include="morelinq" Version="3.2.0" />
-		<PackageReference Include="SharpCompress" Version="0.23.0" />
+		<PackageReference Include="SharpCompress" Version="0.24.0" />
 	</ItemGroup>
 
 </Project>
