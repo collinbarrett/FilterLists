@@ -7,7 +7,7 @@
     "@types/node": "12.7.2",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
-    "@types/react-router-dom": "^4.3.4",
+    "@types/react-router-dom": "^4.3.5",
     "@types/react-table": "^6.8.5",
     "bootstrap": "^4.3.1",
     "es6-promise": "^4.2.8",
