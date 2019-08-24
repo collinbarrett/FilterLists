@@ -34,10 +34,6 @@ export class AllListsTable extends React.Component<{}, State> {
     window.addEventListener('resize', this.updatePageSize);
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updatePageSize);
-  }
-
   private fetchData() {
     fetch("/api/v1/lists")
       .then(response => response.json())
@@ -59,26 +55,12 @@ export class AllListsTable extends React.Component<{}, State> {
     });
   }
 
-  private tagSorter = (a: number[], b: number[], tags: Tag[]): number => {
-    return a
-      ? b
-        ? a.length === b.length
-          ? tags.filter((t: Tag) => a.indexOf(t.id) > -1).map((t: Tag) => t.name).join().toLowerCase() > tags.filter((t: Tag) => b.indexOf(t.id) > -1).map((t: Tag) => t.name).join().toLowerCase()
-            ? 1
-            : -1
-          : a.length > b.length
-            ? -1
-            : 1
-        : -1
-      : 1;
-  };
-
   render() {
     return (
       <Table<List>
         dataSource={this.state.lists}
         rowKey={record => record.id.toString()}
-        loading={this.state.lists.length === 0 ? true : false}
+        loading={this.state.lists.length ? false : true}
         size="small"
         pagination={{
           size: "small",
@@ -129,5 +111,23 @@ export class AllListsTable extends React.Component<{}, State> {
             <SubscribeButton key={index} viewUrl={text} viewUrlMirrors={record.viewUrlMirrors} name={record.name} />} />
       </Table>
     );
+  }
+
+  private tagSorter = (a: number[], b: number[], tags: Tag[]): number => {
+    return a
+      ? b
+        ? a.length === b.length
+          ? tags.filter((t: Tag) => a.indexOf(t.id) > -1).map((t: Tag) => t.name).join().toLowerCase() > tags.filter((t: Tag) => b.indexOf(t.id) > -1).map((t: Tag) => t.name).join().toLowerCase()
+            ? 1
+            : -1
+          : a.length > b.length
+            ? -1
+            : 1
+        : -1
+      : 1;
+  };
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updatePageSize);
   }
 }
