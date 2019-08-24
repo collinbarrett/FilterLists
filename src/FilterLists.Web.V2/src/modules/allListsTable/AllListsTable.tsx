@@ -76,7 +76,7 @@ export class AllListsTable extends React.Component<{}, State> {
           showSizeChanger: true,
           pageSizeOptions: this.state.pageSizeOptions
         }}
-        scroll={{ x: this.state.isNarrowWindow ? 576 : 1600 }}>
+        scroll={{ x: this.state.isNarrowWindow ? 576 : 1200 }}>
         <Table.Column<List>
           title="Name"
           dataIndex={nameof<List>("name")}
@@ -104,7 +104,9 @@ export class AllListsTable extends React.Component<{}, State> {
           width={125}
           className={styles.nogrow}
           render={(languageIds: number[]) =>
-            languageIds ? <LanguageCloud languages={this.state.languages.filter((l: Language) => languageIds.includes(l.id))} /> : null} />
+            languageIds
+              ? <LanguageCloud languages={this.state.languages.filter((l: Language) => languageIds.includes(l.id))} />
+              : null} />
         <Table.Column<List>
           title="Tags"
           dataIndex={nameof<List>("tagIds")}
@@ -112,7 +114,9 @@ export class AllListsTable extends React.Component<{}, State> {
           width={275}
           className={styles.nogrow}
           render={(tagIds: number[]) =>
-            tagIds ? <TagCloud tags={this.state.tags.filter((t: Tag) => tagIds.includes(t.id))} /> : null} />
+            tagIds
+              ? <TagCloud tags={this.state.tags.filter((t: Tag) => tagIds.includes(t.id))} />
+              : null} />
         <Table.Column<List> title="Subscribe"
           dataIndex={nameof<List>("viewUrl")}
           width={123}
