@@ -21,13 +21,13 @@ export const App: React.FC = () =>
     </Footer>
   </Layout>;
 
-const Logo = () =>
+const Logo = (): JSX.Element =>
   <img src="logo_filterlists.png"
     alt="FilterLists logo"
     height="44px"
     style={{ background: '#fff' }} />;
 
-const CopyrightAuthor = () =>
+const CopyrightAuthor = (): JSX.Element =>
   <span>
     ©{new Date().getFullYear()}&nbsp;
     <a href="https://collinmbarrett.com"
@@ -36,28 +36,28 @@ const CopyrightAuthor = () =>
       Collin M. Barrett</a>
   </span>;
 
-const Community = () =>
+const Community = (): JSX.Element =>
   <a href="https://hub.filterlists.com"
     title="FilterLists Discourse community forum"
     target="_blank" rel="noopener noreferrer">
     Community
     </a>;
 
-const GitHub = () =>
+const GitHub = (): JSX.Element =>
   <a href="https://github.com/collinbarrett/FilterLists"
     title="FilterLists git repository on GitHub"
     target="_blank" rel="noopener noreferrer">
     GitHub
     </a>;
 
-const Api = () =>
+const Api = (): JSX.Element =>
   <a href="/api/v1/lists"
     title="FilterLists API lists endpoint"
     target="_blank" rel="noopener noreferrer">
     API
     </a>;
 
-const Donate = () =>
+const Donate = (): JSX.Element =>
   <a href="https://beerpay.io/collinbarrett/FilterLists"
     title="Donate to FilterLists with Beerpay"
     target="_blank" rel="noopener noreferrer">
