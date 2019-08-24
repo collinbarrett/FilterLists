@@ -9,7 +9,7 @@ const App: React.FC = () => {
   return (
     <Layout>
       <Header>
-        <div className="logo" />
+        <img src="logo_filterlists.png" alt="FilterLists logo" height="44px" style={{ background: '#fff' }} />
         <Menu
           theme="dark"
           mode="horizontal"
