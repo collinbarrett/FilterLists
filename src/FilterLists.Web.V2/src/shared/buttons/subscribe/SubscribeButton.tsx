@@ -22,11 +22,11 @@ export const SubscribeButton = (props: Props): JSX.Element =>
 
 const ButtonDropdown = (props: Props): JSX.Element => {
   var buttonProps = buildButtonProps(props.name, props.viewUrl);
-  //TODO: pass title (ref https://github.com/ant-design/ant-design/issues/18122)
   return <Dropdown.Button size="small"
     placement="bottomRight"
     type={buttonProps.type as DropdownButtonType}
     href={buttonProps.href}
+    title={buttonProps.title}
     overlay={<DropdownOverlay viewUrlMirrors={props.viewUrlMirrors} name={props.name} />}>
     Subscribe
   </Dropdown.Button>;
