@@ -114,8 +114,8 @@ export class AllListsTable extends React.Component<{}, State> {
   }
 
   private tagSorter = (a: number[], b: number[], tags: Tag[]): number => {
-    return a
-      ? b
+    return a && a.length
+      ? b && b.length
         ? a.length === b.length
           ? tags.filter((t: Tag) => a.indexOf(t.id) > -1).map((t: Tag) => t.name).join().toLowerCase() > tags.filter((t: Tag) => b.indexOf(t.id) > -1).map((t: Tag) => t.name).join().toLowerCase()
             ? 1
