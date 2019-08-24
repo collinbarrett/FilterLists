@@ -21,7 +21,7 @@ const App: React.FC = () => {
           <AllListsTable />
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>©2019 Collin M. Barrett</Footer>
+      <Footer style={{ textAlign: 'center' }}>©{(new Date()).getFullYear()} Collin M. Barrett</Footer>
     </Layout>
   );
 }
