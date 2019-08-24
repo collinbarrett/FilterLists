@@ -12,11 +12,10 @@ interface Props {
   tags: TagData[]
 };
 
-export const TagCloud = (props: Props): JSX.Element | null => {
-  return props.tags && props.tags.length
+export const TagCloud = (props: Props): JSX.Element | null =>
+  props.tags && props.tags.length
     ? <div className={styles.grow}>
       {props.tags.map((t: TagData, i: number) =>
         <Tag key={i} title={t.description}>{t.name}</Tag>)}
     </div>
     : null;
-};

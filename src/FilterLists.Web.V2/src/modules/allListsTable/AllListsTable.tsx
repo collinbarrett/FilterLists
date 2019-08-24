@@ -1,14 +1,16 @@
 import { Table } from 'antd';
 import React from 'react';
 
-import { Description, SubscribeButton, TagCloud } from '../../shared';
+import { Description, LanguageCloud, SubscribeButton, TagCloud } from '../../shared';
 import { nameof } from '../../utils';
 import styles from './AllListsTable.module.css';
+import { Language } from './Language';
 import { List } from './List';
 import { Tag } from './Tag';
 
 interface State {
   lists: List[];
+  languages: Language[];
   tags: Tag[];
   pageSize: number;
   pageSizeOptions: string[];
@@ -20,6 +22,7 @@ export class AllListsTable extends React.Component<{}, State> {
     super(props);
     this.state = {
       lists: [],
+      languages: [],
       tags: [],
       pageSize: 0,
       pageSizeOptions: [],
@@ -39,6 +42,11 @@ export class AllListsTable extends React.Component<{}, State> {
       .then(response => response.json())
       .then(json => (json as List[]).sort((a, b) => a.name.localeCompare(b.name)))
       .then(lists => { this.setState({ lists: lists }); })
+
+    fetch("/api/v1/languages")
+      .then(response => response.json())
+      .then(json => (json as Language[]).sort((a, b) => a.name.localeCompare(b.name)))
+      .then(languages => { this.setState({ languages: languages }); })
 
     fetch("/api/v1/tags")
       .then(response => response.json())
@@ -92,12 +100,15 @@ export class AllListsTable extends React.Component<{}, State> {
         <Table.Column<List>
           title="Languages"
           dataIndex={nameof<List>("languageIds")}
+          sorter={(a, b) => arraySorter(a.languageIds, b.languageIds, this.state.languages)}
+          width={125}
           className={styles.nogrow}
-          render={(text: string) => <div>{text}</div>} />
+          render={(languageIds: number[]) =>
+            languageIds ? <LanguageCloud languages={this.state.languages.filter((l: Language) => languageIds.includes(l.id))} /> : null} />
         <Table.Column<List>
           title="Tags"
           dataIndex={nameof<List>("tagIds")}
-          sorter={(a, b) => this.tagSorter(a.tagIds, b.tagIds, this.state.tags)}
+          sorter={(a, b) => arraySorter(a.tagIds, b.tagIds, this.state.tags)}
           width={275}
           className={styles.nogrow}
           render={(tagIds: number[]) =>
@@ -113,20 +124,26 @@ export class AllListsTable extends React.Component<{}, State> {
     );
   }
 
-  private tagSorter = (a: number[], b: number[], tags: Tag[]): number =>
-    a && a.length
-      ? b && b.length
-        ? a.length === b.length
-          ? tags.filter((t: Tag) => a.indexOf(t.id) > -1).map((t: Tag) => t.name).join().toLowerCase() > tags.filter((t: Tag) => b.indexOf(t.id) > -1).map((t: Tag) => t.name).join().toLowerCase()
-            ? 1
-            : -1
-          : a.length > b.length
-            ? -1
-            : 1
-        : -1
-      : 1;
-
   componentWillUnmount() {
     window.removeEventListener('resize', this.updatePageSize);
   }
 }
+
+interface ArraySortableEntity {
+  id: number;
+  name: string;
+}
+
+const arraySorter = (a: number[], b: number[], entities: ArraySortableEntity[]): number =>
+  a && a.length
+    ? b && b.length
+      ? a.length === b.length
+        ? entities.filter((e: ArraySortableEntity) => a.indexOf(e.id) > -1).map((e: ArraySortableEntity) => e.name).join().toLowerCase()
+          > entities.filter((e: ArraySortableEntity) => b.indexOf(e.id) > -1).map((e: ArraySortableEntity) => e.name).join().toLowerCase()
+          ? 1
+          : -1
+        : a.length > b.length
+          ? -1
+          : 1
+      : -1
+    : 1;
