@@ -1,7 +1,7 @@
 import { Layout, Menu } from 'antd';
 import React from 'react';
 
-import { AllListsTable } from './modules';
+import { AllListsTable } from './components';
 
 const { Header, Content, Footer } = Layout;
 

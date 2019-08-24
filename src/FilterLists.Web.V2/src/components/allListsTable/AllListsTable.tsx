@@ -1,12 +1,12 @@
 import { Table } from 'antd';
 import React from 'react';
 
-import { Description, LanguageCloud, SubscribeButton, TagCloud } from '../../shared';
+import { Description, LanguageCloud, ListDetails, TagCloud } from '..';
+import { Language } from '../../interfaces/Language';
+import { List } from '../../interfaces/List';
+import { Tag } from '../../interfaces/Tag';
 import { nameof } from '../../utils';
 import styles from './AllListsTable.module.css';
-import { Language } from './Language';
-import { List } from './List';
-import { Tag } from './Tag';
 
 interface State {
   lists: List[];
@@ -90,8 +90,7 @@ export class AllListsTable extends React.Component<{}, State> {
           title="Description"
           dataIndex={nameof<List>("description")}
           className={styles.nogrow}
-          render={(text: string, record: List) =>
-            <Description desriptionSourceUrl={record.descriptionSourceUrl} desription={text} />} />
+          render={(_text: string, record: List) => <Description {...record} />} />
         <Table.Column<List>
           title="Software"
           dataIndex={nameof<List>("syntaxId")}
@@ -117,13 +116,12 @@ export class AllListsTable extends React.Component<{}, State> {
             tagIds
               ? <TagCloud tags={this.state.tags.filter((t: Tag) => tagIds.includes(t.id))} />
               : null} />
-        <Table.Column<List> title="Subscribe"
+        <Table.Column<List> title="Details"
           dataIndex={nameof<List>("viewUrl")}
           width={123}
           className={styles.nogrow}
           fixed={this.state.isNarrowWindow ? undefined : "right"}
-          render={(text: string, record: List, index: number) =>
-            <SubscribeButton key={index} viewUrl={text} viewUrlMirrors={record.viewUrlMirrors} name={record.name} />} />
+          render={(_text: string, record: List) => <ListDetails list={record} />} />
       </Table>
     );
   }
