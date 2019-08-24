@@ -13,19 +13,21 @@ interface Props {
   viewUrlMirrors: string[];
 };
 
-export const SubscribeButton = (props: Props): JSX.Element =>
-  (props.viewUrlMirrors && props.viewUrlMirrors.length)
+export const SubscribeButton = (props: Props): JSX.Element => {
+  const buttonProps = buildButtonProps(props.name, props.viewUrl);
+  return (props.viewUrlMirrors && props.viewUrlMirrors.length)
     ? <ButtonDropdown {...props} />
     : <div>
-      <Button disabled={buildButtonProps(props.name, props.viewUrl)[1]}
+      <Button disabled={buttonProps[1]}
         className={styles.single} size="small"
-        {...buildButtonProps(props.name, props.viewUrl)[0]}>
+        {...buttonProps[0]}>
         Subscribe
         </Button>
-    </div>;
+    </div>
+};
 
 const ButtonDropdown = (props: Props): JSX.Element => {
-  var buttonProps = buildButtonProps(props.name, props.viewUrl);
+  const buttonProps = buildButtonProps(props.name, props.viewUrl);
   return <Dropdown.Button
     disabled={buttonProps[1]}
     size="small"
@@ -43,17 +45,18 @@ interface DropdownOverlayProps {
   viewUrlMirrors: string[];
 };
 
-const DropdownOverlay = (props: DropdownOverlayProps) =>
+const DropdownOverlay = (props: DropdownOverlayProps): JSX.Element =>
   <Menu>
-    {props.viewUrlMirrors.map((viewUrlMirror: string, i: number) =>
-      <Menu.Item className={styles.sub_li} key={i}>
-        <Button disabled={buildButtonProps(props.name, viewUrlMirror)[1]}
+    {props.viewUrlMirrors.map((viewUrlMirror: string, i: number) => {
+      const buttonProps = buildButtonProps(props.name, viewUrlMirror);
+      return <Menu.Item className={styles.sub_li} key={i}>
+        <Button disabled={buttonProps[1]}
           className={styles.sub_a} size="small"
-          {...buildButtonProps(props.name, viewUrlMirror)[0]}>
+          {...buttonProps[0]}>
           {`Mirror ${i + 1}`}
         </Button>
       </Menu.Item>
-    )}
+    })}
   </Menu>;
 
 const buildButtonProps = (name: string, viewUrl: string): [ButtonProps, boolean] => {
@@ -80,8 +83,6 @@ const buildButtonProps = (name: string, viewUrl: string): [ButtonProps, boolean]
   // Software protocols
   if (viewUrl.includes(".tpl")) {
     disabled = true; // IE not supported by FilterLists
-    // href = `javascript:window.external.msAddTrackingProtectionList('${hrefLocation}', '${hrefTitle}')`;
-    // message = `Subscribe to ${name} with Internet Explorer's Tracking Protection List feature.`;
   }
   if (viewUrl.includes(".lsrules") || viewUrl.includes("?hostformat=littlesnitch")) {
     href = `x-littlesnitch:subscribe-rules?url=${hrefLocation}`;
