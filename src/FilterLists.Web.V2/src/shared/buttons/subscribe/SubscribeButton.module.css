@@ -1,9 +1,14 @@
-/* fix font color on dropdown buttons */
-.sub {
+.sub_li {
+  /* reduce vertical white space around dropdown items */
+  height: 24px !important;
+}
+
+.sub_a {
+  /* fix font color on dropdown buttons */
   color: #fff !important;
 }
 
-/* make non-dropdown button equivalent width to dropdown */
 .single {
+  /* make non-dropdown button equivalent width to dropdown */
   width: 106.81px;
 }

@@ -24,6 +24,7 @@ const ButtonDropdown = (props: Props): JSX.Element => {
   var buttonProps = buildButtonProps(props.name, props.viewUrl);
   //TODO: pass title (ref https://github.com/ant-design/ant-design/issues/18122)
   return <Dropdown.Button size="small"
+    placement="bottomRight"
     type={buttonProps.type as DropdownButtonType}
     href={buttonProps.href}
     overlay={<DropdownOverlay viewUrlMirrors={props.viewUrlMirrors} name={props.name} />}>
@@ -39,8 +40,8 @@ interface DropdownOverlayProps {
 const DropdownOverlay = (props: DropdownOverlayProps) =>
   <Menu>
     {props.viewUrlMirrors.map((viewUrlMirror: string, i: number) =>
-      <Menu.Item key={i}>
-        <Button className={styles.sub} size="small" {...buildButtonProps(props.name, viewUrlMirror)}>{`Mirror ${i + 1}`}</Button>
+      <Menu.Item className={styles.sub_li} key={i}>
+        <Button className={styles.sub_a} size="small" {...buildButtonProps(props.name, viewUrlMirror)}>{`Mirror ${i + 1}`}</Button>
       </Menu.Item>
     )}
   </Menu>;
