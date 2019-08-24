@@ -58,11 +58,11 @@ const buildButtonProps = (name: string, viewUrl: string): ButtonProps => {
   // HTTP protocols
   if (viewUrl.includes(".onion/")) {
     type = "dashed";
-    prefixes.push("Tor");
+    prefixes.push("TOR");
   }
   if (viewUrl.includes("http://")) {
     type = "danger";
-    prefixes.push("Insecure");
+    prefixes.push("INSECURE");
   }
 
   // Software protocols
@@ -75,7 +75,7 @@ const buildButtonProps = (name: string, viewUrl: string): ButtonProps => {
     message = `Subscribe to ${name} with Little Snitch's rule group subscription feature.`;
   }
 
-  const title = `${prefixes.length ? prefixes.join(" | ") : ""}${message}`;
+  const title = `${prefixes.length ? prefixes.join(" | ") + " | " : ""}${message}`;
 
   return { type, href, title }
 }
