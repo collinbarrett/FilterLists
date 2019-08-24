@@ -1,6 +1,7 @@
 import { Button, Dropdown, Menu } from 'antd';
-import { ButtonProps, ButtonType } from "antd/lib/button";
+import { ButtonProps, ButtonType } from 'antd/lib/button';
 import React from 'react';
+
 import styles from './SubscribeButton.module.css';
 
 //TODO: import DropdownButtonType from antd rather than redefining if they export the type

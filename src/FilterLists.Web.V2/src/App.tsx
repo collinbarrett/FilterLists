@@ -5,24 +5,21 @@ import { AllListsTable } from './modules';
 
 const { Header, Content, Footer } = Layout;
 
-const App: React.FC = () => {
-  return (
-    <Layout>
-      <Header>
-        <Logo />
-        <Menu theme="dark" mode="horizontal" style={{ lineHeight: '64px' }} />
-      </Header>
-      <Content>
-        <div style={{ background: '#fff', paddingLeft: 12, paddingTop: 12, paddingRight: 12, minHeight: 280 }}>
-          <AllListsTable />
-        </div>
-      </Content>
-      <Footer style={{ textAlign: 'center' }}>
-        <CopyrightAuthor /> | <Community /> | <GitHub /> | <Api /> | <Donate />
-      </Footer>
-    </Layout>
-  );
-}
+export const App: React.FC = () =>
+  <Layout>
+    <Header>
+      <Logo />
+      <Menu theme="dark" mode="horizontal" style={{ lineHeight: '64px' }} />
+    </Header>
+    <Content>
+      <div style={{ background: '#fff', paddingLeft: 12, paddingTop: 12, paddingRight: 12, minHeight: 280 }}>
+        <AllListsTable />
+      </div>
+    </Content>
+    <Footer style={{ textAlign: 'center' }}>
+      <CopyrightAuthor /> | <Community /> | <GitHub /> | <Api /> | <Donate />
+    </Footer>
+  </Layout>;
 
 const Logo = () =>
   <img src="logo_filterlists.png"
@@ -66,5 +63,3 @@ const Donate = () =>
     target="_blank" rel="noopener noreferrer">
     Donate
     </a>;
-
-export default App;

@@ -1,5 +1,6 @@
 import { Tag } from 'antd';
 import React from 'react';
+
 import styles from './TagCloud.module.css';
 
 interface TagData {
@@ -8,7 +9,7 @@ interface TagData {
 };
 
 interface Props {
-  tags?: TagData[]
+  tags: TagData[]
 };
 
 export const TagCloud = (props: Props): JSX.Element | null => {

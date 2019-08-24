@@ -113,8 +113,8 @@ export class AllListsTable extends React.Component<{}, State> {
     );
   }
 
-  private tagSorter = (a: number[], b: number[], tags: Tag[]): number => {
-    return a && a.length
+  private tagSorter = (a: number[], b: number[], tags: Tag[]): number =>
+    a && a.length
       ? b && b.length
         ? a.length === b.length
           ? tags.filter((t: Tag) => a.indexOf(t.id) > -1).map((t: Tag) => t.name).join().toLowerCase() > tags.filter((t: Tag) => b.indexOf(t.id) > -1).map((t: Tag) => t.name).join().toLowerCase()
@@ -125,7 +125,6 @@ export class AllListsTable extends React.Component<{}, State> {
             : 1
         : -1
       : 1;
-  };
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.updatePageSize);
