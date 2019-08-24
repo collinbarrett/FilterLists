@@ -3,6 +3,7 @@ import React from 'react';
 
 import { Description } from '..';
 import { List } from '../../interfaces/List';
+import { SubscribeButton } from '../buttons';
 
 interface State {
   visible: boolean;
@@ -32,6 +33,7 @@ export class ListDetails extends React.Component<Props, State> {
           visible={this.state.visible}
           onClose={() => this.setState({ visible: false, })}>
           <Description {...this.props.list} />
+          <SubscribeButton {...this.props.list} />
         </Drawer>
       </span>
     )
