@@ -76,50 +76,59 @@ export class AllListsTable extends React.Component<{}, State> {
           showSizeChanger: true,
           pageSizeOptions: this.state.pageSizeOptions
         }}
-        scroll={{ x: this.state.isNarrowWindow ? 576 : 1200 }}>
+        scroll={{ x: this.state.isNarrowWindow ? undefined : 1200 }}>
         <Table.Column<List>
           title="Name"
           dataIndex={nameof<List>("name")}
           sorter={(a, b) => a.name.localeCompare(b.name)}
           defaultSortOrder={"ascend"}
-          width={200}
+          width={this.state.isNarrowWindow ? undefined : 200}
           className={styles.nogrow}
           fixed="left"
           render={(text: string) => <div>{text}</div>} />
+        {this.state.isNarrowWindow
+          ? null
+          : <Table.Column<List>
+            title="Description"
+            dataIndex={nameof<List>("description")}
+            className={styles.nogrow}
+            render={(_text: string, record: List) => <Description {...record} />} />}
+        {this.state.isNarrowWindow
+          ? null
+          : <Table.Column<List>
+            title="Software"
+            dataIndex={nameof<List>("syntaxId")}
+            className={styles.nogrow}
+            render={(text: string) => <div>{text}</div>} />}
+        {this.state.isNarrowWindow
+          ? null
+          : <Table.Column<List>
+            title="Languages"
+            dataIndex={nameof<List>("languageIds")}
+            sorter={(a, b) => arraySorter(a.languageIds, b.languageIds, this.state.languages)}
+            width={125}
+            className={styles.nogrow}
+            render={(languageIds: number[]) =>
+              languageIds
+                ? <LanguageCloud languages={this.state.languages.filter((l: Language) => languageIds.includes(l.id))} />
+                : null} />}
+        {this.state.isNarrowWindow
+          ? null
+          : <Table.Column<List>
+            title="Tags"
+            dataIndex={nameof<List>("tagIds")}
+            sorter={(a, b) => arraySorter(a.tagIds, b.tagIds, this.state.tags)}
+            width={275}
+            className={styles.nogrow}
+            render={(tagIds: number[]) =>
+              tagIds
+                ? <TagCloud tags={this.state.tags.filter((t: Tag) => tagIds.includes(t.id))} />
+                : null} />}
         <Table.Column<List>
-          title="Description"
-          dataIndex={nameof<List>("description")}
-          className={styles.nogrow}
-          render={(_text: string, record: List) => <Description {...record} />} />
-        <Table.Column<List>
-          title="Software"
-          dataIndex={nameof<List>("syntaxId")}
-          className={styles.nogrow}
-          render={(text: string) => <div>{text}</div>} />
-        <Table.Column<List>
-          title="Languages"
-          dataIndex={nameof<List>("languageIds")}
-          sorter={(a, b) => arraySorter(a.languageIds, b.languageIds, this.state.languages)}
-          width={125}
-          className={styles.nogrow}
-          render={(languageIds: number[]) =>
-            languageIds
-              ? <LanguageCloud languages={this.state.languages.filter((l: Language) => languageIds.includes(l.id))} />
-              : null} />
-        <Table.Column<List>
-          title="Tags"
-          dataIndex={nameof<List>("tagIds")}
-          sorter={(a, b) => arraySorter(a.tagIds, b.tagIds, this.state.tags)}
-          width={275}
-          className={styles.nogrow}
-          render={(tagIds: number[]) =>
-            tagIds
-              ? <TagCloud tags={this.state.tags.filter((t: Tag) => tagIds.includes(t.id))} />
-              : null} />
-        <Table.Column<List> title="Details"
+          title="Details"
           dataIndex={nameof<List>("viewUrl")}
           className={styles.nogrow}
-          fixed={this.state.isNarrowWindow ? undefined : "right"}
+          fixed="right"
           render={(_text: string, record: List) => <ListDetails list={record} />} />
       </Table>
     );
