@@ -1,13 +1,13 @@
 import { Layout, Menu } from 'antd';
 import React from 'react';
-import { BrowserRouter, Route, RouteComponentProps, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, RouteComponentProps, Switch } from 'react-router-dom';
 
-import { AllListsTable } from './components';
+import { ListsTable } from './components';
 
 const { Header, Content, Footer } = Layout;
 
 export const App: React.FC = () =>
-  <BrowserRouter>
+  <Router>
     <Layout>
       <Header>
         <Logo />
@@ -16,7 +16,7 @@ export const App: React.FC = () =>
       <Content>
         <div style={{ background: '#fff', paddingLeft: 12, paddingTop: 12, paddingRight: 12, minHeight: 280 }}>
           <Switch>
-            <Route path="/" exact component={AllListsTable} />
+            <Route path="/" component={ListsTable} />
             <Route component={NotFound} />
           </Switch>
         </div>
@@ -25,7 +25,7 @@ export const App: React.FC = () =>
         <CopyrightAuthor /> | <Community /> | <GitHub /> | <Api /> | <Donate />
       </Footer>
     </Layout>
-  </BrowserRouter>;
+  </Router>;
 
 const Logo = (): JSX.Element =>
   <img src={`${process.env.PUBLIC_URL}/logo_filterlists.png`}
