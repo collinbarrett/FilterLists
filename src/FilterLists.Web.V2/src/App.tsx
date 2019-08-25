@@ -28,7 +28,7 @@ export const App: React.FC = () =>
   </BrowserRouter>;
 
 const Logo = (): JSX.Element =>
-  <img src="logo_filterlists.png"
+  <img src={`${process.env.PUBLIC_URL}/logo_filterlists.png`}
     alt="FilterLists logo"
     height="44px"
     style={{ background: '#fff' }} />;
