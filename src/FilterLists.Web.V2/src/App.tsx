@@ -70,7 +70,7 @@ const Donate = (): JSX.Element =>
     Donate
     </a>;
 
-const NotFound = (props: RouteComponentProps) =>
+const NotFound = (props: RouteComponentProps): JSX.Element =>
   <h2>
     404 Not Found: <code>{props.location.pathname}</code>
   </h2>;
