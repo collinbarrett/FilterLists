@@ -58,7 +58,7 @@ export class AllListsTable extends React.Component<{}, State> {
     const pageSize = Math.floor((window.innerHeight - 211.5) / 56);
     this.setState({
       pageSize: pageSize,
-      pageSizeOptions: [5, 10, 20, 500, 2000, pageSize].sort((a, b) => a - b).map(String),
+      pageSizeOptions: [200, 2000, pageSize].sort((a, b) => a - b).map(String),
       isNarrowWindow: window.innerWidth < 576 ? true : false
     });
   }
