@@ -140,7 +140,7 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
         <Route path="/lists/:id" render={props => {
           const list = this.state.lists.find(l => l.id === +props.match.params.id);
           return list
-            ? <ListDetailsDrawer list={list as List} {...props} />
+            ? <ListDetailsDrawer list={list as List} {...props} {...this.state} />
             : <Redirect to={{ pathname: "/", }} />
         }} />
       </span>
