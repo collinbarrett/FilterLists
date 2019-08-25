@@ -1,6 +1,6 @@
 import { Table } from 'antd';
 import React from 'react';
-import { Route, RouteComponentProps } from 'react-router-dom';
+import { Redirect, Route, RouteComponentProps } from 'react-router-dom';
 
 import { Language } from '../../interfaces/Language';
 import { List } from '../../interfaces/List';
@@ -141,7 +141,7 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
           const list = this.state.lists.find(l => l.id === +props.match.params.id);
           return list
             ? <ListDetailsDrawer list={list as List} {...props} />
-            : null //TODO: redirect or 404 for invalid list id
+            : <Redirect to={{ pathname: "/", }} />
         }} />
       </span>
     );
