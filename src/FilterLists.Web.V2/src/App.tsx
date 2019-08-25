@@ -33,6 +33,11 @@ const Logo = (): JSX.Element =>
     height="44px"
     style={{ background: '#fff' }} />;
 
+const NotFound = (props: RouteComponentProps): JSX.Element =>
+  <h2>
+    404 Not Found: <code>{props.location.pathname}</code>
+  </h2>;
+
 const CopyrightAuthor = (): JSX.Element =>
   <span>
     ©{new Date().getFullYear()}&nbsp;
@@ -69,8 +74,3 @@ const Donate = (): JSX.Element =>
     target="_blank" rel="noopener noreferrer">
     Donate
     </a>;
-
-const NotFound = (props: RouteComponentProps): JSX.Element =>
-  <h2>
-    404 Not Found: <code>{props.location.pathname}</code>
-  </h2>;
