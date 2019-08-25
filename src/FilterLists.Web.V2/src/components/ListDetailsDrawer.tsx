@@ -10,11 +10,33 @@ interface Props {
   list: List;
 };
 
-export const ListDetailsDrawer = (props: RouteComponentProps & Props) =>
-  <Drawer
-    visible={true}
-    onClose={() => props.history.push("/")}>
-    <h2>{props.list.name}</h2>
-    <Description {...props.list} />
-    <SubscribeButton {...props.list} />
-  </Drawer>;
+interface State {
+  baseDocumentTitle: string;
+}
+
+export class ListDetailsDrawer extends React.Component<RouteComponentProps & Props, State> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      baseDocumentTitle: document.title
+    };
+  }
+
+  componentDidMount() {
+    document.title = this.props.list.name + " | " + this.state.baseDocumentTitle
+  }
+
+  render() {
+    return <Drawer
+      visible={true}
+      onClose={() => this.props.history.push("/")}>
+      <h2>{this.props.list.name}</h2>
+      <Description {...this.props.list} />
+      <SubscribeButton {...this.props.list} />
+    </Drawer>
+  }
+
+  componentWillUnmount() {
+    document.title = this.state.baseDocumentTitle
+  }
+}
