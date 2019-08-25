@@ -14,6 +14,7 @@ export const ListDetailsDrawer = (props: RouteComponentProps & Props) =>
   <Drawer
     visible={true}
     onClose={() => props.history.push("/")}>
+    <h2>{props.list.name}</h2>
     <Description {...props.list} />
     <SubscribeButton {...props.list} />
   </Drawer>;
