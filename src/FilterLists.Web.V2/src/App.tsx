@@ -1,25 +1,31 @@
 import { Layout, Menu } from 'antd';
 import React from 'react';
+import { BrowserRouter, Route, RouteComponentProps, Switch } from 'react-router-dom';
 
 import { AllListsTable } from './components';
 
 const { Header, Content, Footer } = Layout;
 
 export const App: React.FC = () =>
-  <Layout>
-    <Header>
-      <Logo />
-      <Menu theme="dark" mode="horizontal" style={{ lineHeight: '64px' }} />
-    </Header>
-    <Content>
-      <div style={{ background: '#fff', paddingLeft: 12, paddingTop: 12, paddingRight: 12, minHeight: 280 }}>
-        <AllListsTable />
-      </div>
-    </Content>
-    <Footer style={{ textAlign: 'center' }}>
-      <CopyrightAuthor /> | <Community /> | <GitHub /> | <Api /> | <Donate />
-    </Footer>
-  </Layout>;
+  <BrowserRouter>
+    <Layout>
+      <Header>
+        <Logo />
+        <Menu theme="dark" mode="horizontal" style={{ lineHeight: '64px' }} />
+      </Header>
+      <Content>
+        <div style={{ background: '#fff', paddingLeft: 12, paddingTop: 12, paddingRight: 12, minHeight: 280 }}>
+          <Switch>
+            <Route path="/" exact component={AllListsTable} />
+            <Route component={NotFound} />
+          </Switch>
+        </div>
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>
+        <CopyrightAuthor /> | <Community /> | <GitHub /> | <Api /> | <Donate />
+      </Footer>
+    </Layout>
+  </BrowserRouter>;
 
 const Logo = (): JSX.Element =>
   <img src="logo_filterlists.png"
@@ -63,3 +69,8 @@ const Donate = (): JSX.Element =>
     target="_blank" rel="noopener noreferrer">
     Donate
     </a>;
+
+const NotFound = (props: RouteComponentProps) =>
+  <h2>
+    404 Not Found: <code>{props.location.pathname}</code>
+  </h2>;

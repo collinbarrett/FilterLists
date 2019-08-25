@@ -118,7 +118,6 @@ export class AllListsTable extends React.Component<{}, State> {
               : null} />
         <Table.Column<List> title="Details"
           dataIndex={nameof<List>("viewUrl")}
-          width={123}
           className={styles.nogrow}
           fixed={this.state.isNarrowWindow ? undefined : "right"}
           render={(_text: string, record: List) => <ListDetails list={record} />} />
