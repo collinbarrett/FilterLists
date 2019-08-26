@@ -30,10 +30,6 @@ export class ListDetailsDrawer extends React.Component<RouteComponentProps & Pro
     };
   }
 
-  componentDidMount() {
-    document.title = this.props.list.name + " | " + this.state.baseDocumentTitle
-  }
-
   render() {
     return <Drawer
       visible={true}
@@ -106,6 +102,10 @@ export class ListDetailsDrawer extends React.Component<RouteComponentProps & Pro
             icon="dollar" />}
       </ButtonGroup>
     </Drawer>
+  }
+
+  componentDidUpdate() {
+    document.title = this.props.list.name + " | " + this.state.baseDocumentTitle
   }
 
   componentWillUnmount() {
