@@ -48,6 +48,12 @@ export class ListDetailsDrawer extends React.Component<RouteComponentProps & Pro
       {this.props.list.tagIds
         ? <TagCloud tags={this.props.tags.filter((t: Tag) => this.props.list.tagIds.includes(t.id))} showLabel={true} />
         : null}
+      {this.props.list.publishedDate
+        ? <div>
+          <h3>First Published Date:</h3>
+          {new Date(this.props.list.publishedDate).toDateString()}
+        </div>
+        : null}
       <Divider />
       <ButtonGroup style={{ display: "inherit" }}>
         {this.props.list.viewUrl && <SubscribeButton {...this.props.list} />}
