@@ -12,6 +12,8 @@ export const ListDetailsButton = (props: RouteComponentProps & Props) =>
   <Button
     type="primary"
     icon="info-circle"
-    onClick={() => props.history.push(`/lists/${props.list.id}`)}>
+    onClick={() => props.location.pathname === `/lists/${props.list.id}`
+      ? props.history.push("/")
+      : props.history.push(`/lists/${props.list.id}`)}>
     Details
   </Button>;

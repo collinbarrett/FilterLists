@@ -38,6 +38,8 @@ export class ListDetailsDrawer extends React.Component<RouteComponentProps & Pro
     return <Drawer
       visible={true}
       width={350}
+      placement={"left"}
+      mask={false}
       title={this.props.list.name}
       destroyOnClose={true}
       onClose={() => this.props.history.push("/")}>

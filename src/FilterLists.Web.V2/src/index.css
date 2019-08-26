@@ -5,10 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* hacky fix for table-shift when details drawer is opened */
-  width: calc(100%) !important;
-  overflow: auto !important;
 }
 
 code {
