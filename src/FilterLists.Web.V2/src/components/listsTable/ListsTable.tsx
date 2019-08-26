@@ -141,7 +141,7 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
           const list = this.state.lists.find(l => l.id === +props.match.params.id);
           return list
             ? <ListDetailsDrawer list={list as List} {...props} {...this.state} />
-            : <Redirect to={{ pathname: "/", }} />
+            : this.state.lists && this.state.lists.length && <Redirect to={{ pathname: "/", }} />
         }} />
       </span>
     );
