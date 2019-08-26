@@ -11,6 +11,7 @@ interface Props {
 export const ListDetailsButton = (props: RouteComponentProps & Props) =>
   <Button
     type="primary"
+    icon="info-circle"
     onClick={() => props.history.push(`/lists/${props.list.id}`)}>
     Details
   </Button>;

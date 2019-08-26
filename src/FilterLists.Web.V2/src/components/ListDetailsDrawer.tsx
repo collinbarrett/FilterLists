@@ -1,4 +1,5 @@
-import { Drawer } from 'antd';
+import { Divider, Drawer } from 'antd';
+import ButtonGroup from 'antd/lib/button/button-group';
 import React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
@@ -7,7 +8,8 @@ import { List } from '../interfaces/List';
 import { Tag } from '../interfaces/Tag';
 import { Description } from './Description';
 import { LanguageCloud } from './languageCloud';
-import { SubscribeButton } from './subscribeButton';
+import { LinkButton } from './LinkButton';
+import { SubscribeButton } from './SubscribeButton';
 import { TagCloud } from './tagCloud';
 
 interface Props {
@@ -46,7 +48,55 @@ export class ListDetailsDrawer extends React.Component<RouteComponentProps & Pro
       {this.props.list.tagIds
         ? <TagCloud tags={this.props.tags.filter((t: Tag) => this.props.list.tagIds.includes(t.id))} showLabel={true} />
         : null}
-      <SubscribeButton {...this.props.list} />
+      <Divider />
+      <ButtonGroup style={{ display: "inherit" }}>
+        {this.props.list.viewUrl && <SubscribeButton {...this.props.list} />}
+        {this.props.list.viewUrl &&
+          <LinkButton url={this.props.list.viewUrl}
+            text="View"
+            title={`View ${this.props.list.name} in its raw format`}
+            icon="search" />}
+        {this.props.list.homeUrl &&
+          <LinkButton url={this.props.list.homeUrl}
+            text="Home"
+            title={`View ${this.props.list.name}'s homepage.`}
+            icon="home" />}
+        {this.props.list.policyUrl &&
+          <LinkButton url={this.props.list.policyUrl}
+            text="Policy"
+            title={`View the types of rules that ${this.props.list.name} includes.`}
+            icon="file-exclamation" />}
+        {this.props.list.emailAddress &&
+          <LinkButton url={`mailto:${this.props.list.emailAddress}`}
+            text="Email"
+            title={`Email ${this.props.list.name}.`}
+            icon="mail" />}
+        {this.props.list.issuesUrl &&
+          <LinkButton url={this.props.list.issuesUrl}
+            text="GitHub Issues"
+            title={`View the GitHub Issues for ${this.props.list.name}.`}
+            icon="github" />}
+        {this.props.list.submissionUrl &&
+          <LinkButton url={this.props.list.submissionUrl}
+            text="Submit a Rule"
+            title={`Submit a new rule to be included in ${this.props.list.name}.`}
+            icon="form" />}
+        {this.props.list.forumUrl &&
+          <LinkButton url={this.props.list.forumUrl}
+            text="Forum"
+            title={`View the forum for ${this.props.list.name}.`}
+            icon="team" />}
+        {this.props.list.chatUrl &&
+          <LinkButton url={this.props.list.chatUrl}
+            text="Chat"
+            title={`Enter the chat room for ${this.props.list.name}.`}
+            icon="message" />}
+        {this.props.list.donateUrl &&
+          <LinkButton url={this.props.list.donateUrl}
+            text="Donate"
+            title={`Donate to the maintainer of ${this.props.list.name}.`}
+            icon="dollar" />}
+      </ButtonGroup>
     </Drawer>
   }
 
