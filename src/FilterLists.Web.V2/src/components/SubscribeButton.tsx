@@ -25,7 +25,7 @@ export const SubscribeButton = (props: Props): JSX.Element => {
           block
           icon="import"
           {...buttonProps[0]}>
-          {`Mirror ${i + 1} Subscribe`}
+          {`Subscribe (Mirror ${i + 1})`}
         </Button>
       })}
   </span>
