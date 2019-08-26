@@ -34,7 +34,7 @@ export class ListDetailsDrawer extends React.Component<RouteComponentProps & Pro
     return <Drawer
       visible={true}
       width={350}
-      placement={"left"}
+      placement={"right"}
       mask={false}
       title={this.props.list.name}
       destroyOnClose={true}

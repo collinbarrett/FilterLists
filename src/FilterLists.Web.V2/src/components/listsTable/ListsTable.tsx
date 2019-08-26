@@ -78,11 +78,18 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
           size="small"
           pagination={{
             size: "small",
+            style: { float: "left" },
             pageSize: this.state.pageSize,
             showSizeChanger: true,
             pageSizeOptions: this.state.pageSizeOptions
           }}
           scroll={{ x: this.state.isNarrowWindow ? undefined : 1200 }}>
+          <Table.Column<List>
+            title="Details"
+            dataIndex={nameof<List>("viewUrl")}
+            className={styles.nogrow}
+            fixed="left"
+            render={(_text: string, record: List) => <ListDetailsButton list={record} {...this.props} />} />
           <Table.Column<List>
             title="Name"
             dataIndex={nameof<List>("name")}
@@ -130,12 +137,6 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
                 tagIds
                   ? <TagCloud tags={this.state.tags.filter((t: Tag) => tagIds.includes(t.id))} />
                   : null} />}
-          <Table.Column<List>
-            title="Details"
-            dataIndex={nameof<List>("viewUrl")}
-            className={styles.nogrow}
-            fixed="right"
-            render={(_text: string, record: List) => <ListDetailsButton list={record} {...this.props} />} />
         </Table>
         <Route path="/lists/:id" render={props => {
           const list = this.state.lists.find(l => l.id === +props.match.params.id);
