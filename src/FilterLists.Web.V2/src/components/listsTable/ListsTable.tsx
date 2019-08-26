@@ -8,8 +8,8 @@ import { Tag } from '../../interfaces/Tag';
 import { nameof } from '../../utils';
 import { Description } from '../Description';
 import { LanguageCloud } from '../languageCloud';
-import { ListDetailsButton } from '../ListDetailsButton';
-import { ListDetailsDrawer } from '../ListDetailsDrawer';
+import { ListInfoButton } from '../ListInfoButton';
+import { ListInfoDrawer } from '../ListInfoDrawer';
 import { TagCloud } from '../tagCloud';
 import styles from './ListsTable.module.css';
 
@@ -18,7 +18,6 @@ interface State {
   languages: Language[];
   tags: Tag[];
   pageSize: number;
-  pageSizeOptions: string[];
   isNarrowWindow: boolean;
 }
 
@@ -30,7 +29,6 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
       languages: [],
       tags: [],
       pageSize: 0,
-      pageSizeOptions: [],
       isNarrowWindow: false
     };
     this.updatePageSize = this.updatePageSize.bind(this);
@@ -60,10 +58,8 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
   }
 
   private updatePageSize() {
-    const pageSize = Math.floor((window.innerHeight - 211.5) / 56);
     this.setState({
-      pageSize: pageSize,
-      pageSizeOptions: [pageSize, 200, 2000].sort((a, b) => a - b).map(String),
+      pageSize: Math.floor((window.innerHeight - 211.5) / 56),
       isNarrowWindow: window.innerWidth < 576 ? true : false
     });
   }
@@ -78,18 +74,17 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
           size="small"
           pagination={{
             size: "small",
+            simple: true,
             style: { float: "left" },
-            pageSize: this.state.pageSize,
-            showSizeChanger: true,
-            pageSizeOptions: this.state.pageSizeOptions
+            pageSize: this.state.pageSize
           }}
           scroll={{ x: this.state.isNarrowWindow ? undefined : 1200 }}>
           <Table.Column<List>
-            title="Details"
+            title="Info"
             dataIndex={nameof<List>("viewUrl")}
             className={styles.nogrow}
             fixed="left"
-            render={(_text: string, record: List) => <ListDetailsButton list={record} {...this.props} />} />
+            render={(_text: string, record: List) => <ListInfoButton list={record} {...this.props} />} />
           <Table.Column<List>
             title="Name"
             dataIndex={nameof<List>("name")}
@@ -141,7 +136,7 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
         <Route path="/lists/:id" render={props => {
           const list = this.state.lists.find(l => l.id === +props.match.params.id);
           return list
-            ? <ListDetailsDrawer list={list as List} {...props} {...this.state} />
+            ? <ListInfoDrawer list={list as List} {...props} {...this.state} />
             : this.state.lists && this.state.lists.length && <Redirect to={{ pathname: "/", }} />
         }} />
       </span>

@@ -8,12 +8,12 @@ interface Props {
   list: List;
 };
 
-export const ListDetailsButton = (props: RouteComponentProps & Props) =>
+export const ListInfoButton = (props: RouteComponentProps & Props) =>
   <Button
     type="primary"
     icon="info-circle"
     onClick={() => props.location.pathname === `/lists/${props.list.id}`
       ? props.history.push("/")
-      : props.history.push(`/lists/${props.list.id}`)}>
-    Details
-  </Button>;
+      : props.history.push(`/lists/${props.list.id}`)} >
+    Info
+    </Button>;

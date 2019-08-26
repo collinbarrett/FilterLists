@@ -22,12 +22,16 @@ interface State {
   baseDocumentTitle: string;
 }
 
-export class ListDetailsDrawer extends React.Component<RouteComponentProps & Props, State> {
+export class ListInfoDrawer extends React.Component<RouteComponentProps & Props, State> {
   constructor(props: any) {
     super(props);
     this.state = {
       baseDocumentTitle: document.title
     };
+  }
+
+  componentDidMount() {
+    this.updateTitle();
   }
 
   render() {
@@ -105,7 +109,11 @@ export class ListDetailsDrawer extends React.Component<RouteComponentProps & Pro
   }
 
   componentDidUpdate() {
-    document.title = this.props.list.name + " | " + this.state.baseDocumentTitle
+    this.updateTitle();
+  }
+
+  private updateTitle() {
+    document.title = this.props.list.name + " | " + this.state.baseDocumentTitle;
   }
 
   componentWillUnmount() {
