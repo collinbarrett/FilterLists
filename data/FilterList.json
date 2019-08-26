@@ -19383,5 +19383,18 @@
     "name": "Mmoti's Regex Filters for Pi-hole",
     "syntaxId": 30,
     "viewUrl": "https://raw.githubusercontent.com/mmotti/pihole-regex/master/regex.list"
+  },
+  {
+    "id": 1819,
+    "description": "A programmatically expanded block list for Facebook, Messenger, and Instagram.",
+    "descriptionSourceUrl": "https://www.github.developerdan.com/hosts/lists/facebook-extended.txt",
+    "homeUrl": "https://www.github.developerdan.com/hosts/",
+    "issuesUrl": "https://github.com/lightswitch05/hosts/issues",
+    "licenseId": 18,
+    "name": "Facebook Hosts",
+    "publishedDate": "2019-08-26T19:49:00",
+    "syntaxId": 1,
+    "updatedDate": "2019-08-26T19:49:00",
+    "viewUrl": "https://www.github.developerdan.com/hosts/lists/facebook-extended.txt"
   }
 ]

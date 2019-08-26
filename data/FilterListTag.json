@@ -8990,5 +8990,13 @@
   {
     "filterListId": 1818,
     "tagId": 3
+  },
+  {
+    "filterListId": 1819,
+    "tagId": 15
+  },
+  {
+    "filterListId": 1819,
+    "tagId": 19
   }
 ]
