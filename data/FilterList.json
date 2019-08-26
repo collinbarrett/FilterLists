@@ -19386,7 +19386,7 @@
   },
   {
     "id": 1819,
-    "description": "A programmatically expanded block list for Facebook, Messenger, and Instagram.",
+    "description": "A programmatically expanded block list for Facebook, Messenger, Instagram, and WhatsApp",
     "descriptionSourceUrl": "https://www.github.developerdan.com/hosts/lists/facebook-extended.txt",
     "homeUrl": "https://www.github.developerdan.com/hosts/",
     "issuesUrl": "https://github.com/lightswitch05/hosts/issues",
