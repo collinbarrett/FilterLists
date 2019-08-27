@@ -1,4 +1,4 @@
-import { Button } from 'antd';
+import { Button, Icon } from 'antd';
 import React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
@@ -8,12 +8,14 @@ interface Props {
   list: List;
 };
 
-export const ListInfoButton = (props: RouteComponentProps & Props) =>
-  <Button
+export const ListInfoButton = (props: RouteComponentProps & Props): JSX.Element => {
+  const listPath = `/lists/${props.list.id}`;
+  return <Button
     type="primary"
-    icon="info-circle"
-    onClick={() => props.location.pathname === `/lists/${props.list.id}`
+    title={`View more information about ${props.list.name}.`}
+    onClick={() => props.location.pathname === listPath
       ? props.history.push("/")
-      : props.history.push(`/lists/${props.list.id}`)} >
-    Info
-    </Button>;
+      : props.history.push(listPath)} >
+    <Icon type="info-circle" />
+  </Button>
+};
