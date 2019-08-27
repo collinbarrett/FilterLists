@@ -4,10 +4,12 @@ import React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
 import { Language } from '../interfaces/Language';
+import { License } from '../interfaces/License';
 import { List } from '../interfaces/List';
 import { Tag } from '../interfaces/Tag';
 import { Description } from './Description';
 import { LanguageCloud } from './languageCloud';
+import { LicenseTag } from './LicenseTag';
 import { LinkButton } from './LinkButton';
 import { SubscribeButton } from './SubscribeButton';
 import { TagCloud } from './tagCloud';
@@ -15,6 +17,7 @@ import { TagCloud } from './tagCloud';
 interface Props {
   list: List;
   languages: Language[];
+  license?: License;
   tags: Tag[];
 };
 
@@ -45,10 +48,13 @@ export class ListInfoDrawer extends React.Component<RouteComponentProps & Props,
       onClose={() => this.props.history.push("/")}>
       <Description {...this.props.list} />
       {this.props.list.languageIds
-        ? <LanguageCloud languages={this.props.languages.filter((l: Language) => this.props.list.languageIds.includes(l.id))} showLabel={true} />
+        ? <LanguageCloud languages={this.props.languages} showLabel={true} />
         : null}
       {this.props.list.tagIds
-        ? <TagCloud tags={this.props.tags.filter((t: Tag) => this.props.list.tagIds.includes(t.id))} showLabel={true} />
+        ? <TagCloud tags={this.props.tags} showLabel={true} />
+        : null}
+      {this.props.license
+        ? <LicenseTag license={this.props.license as License} showLabel={true} />
         : null}
       {this.props.list.publishedDate
         ? <div>

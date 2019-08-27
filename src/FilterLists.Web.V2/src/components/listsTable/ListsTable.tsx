@@ -59,10 +59,10 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
       .then(json => (json as Tag[]).sort((a, b) => a.name.localeCompare(b.name)))
       .then(tags => { this.setState({ tags: tags }); })
 
-    // fetch("/api/v1/licenses")
-    //   .then(response => response.json())
-    //   .then(json => (json as License[]).sort((a, b) => a.name.localeCompare(b.name)))
-    //   .then(licenses => { this.setState({ licenses: licenses }); })
+    fetch("/api/v1/licenses")
+      .then(response => response.json())
+      .then(json => (json as License[]).sort((a, b) => a.name.localeCompare(b.name)))
+      .then(licenses => { this.setState({ licenses: licenses }); })
   }
 
   private updatePageSize() {
@@ -144,7 +144,12 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
         <Route path="/lists/:id" render={props => {
           const list = this.state.lists.find(l => l.id === +props.match.params.id);
           return list
-            ? <ListInfoDrawer list={list as List} {...props} {...this.state} />
+            ? <ListInfoDrawer
+              list={list as List}
+              languages={list.languageIds && this.state.languages.filter((l: Language) => list.languageIds.includes(l.id))}
+              license={list.licenseId ? this.state.licenses.find((l: License) => list.licenseId === l.id) : undefined}
+              tags={list.tagIds && this.state.tags.filter((t: Tag) => list.tagIds.includes(t.id))}
+              {...this.props} />
             : this.state.lists && this.state.lists.length && <Redirect to={{ pathname: "/", }} />
         }} />
       </span>
