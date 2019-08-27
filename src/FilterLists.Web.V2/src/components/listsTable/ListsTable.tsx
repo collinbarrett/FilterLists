@@ -3,6 +3,7 @@ import React from 'react';
 import { Redirect, Route, RouteComponentProps } from 'react-router-dom';
 
 import { Language } from '../../interfaces/Language';
+import { License } from '../../interfaces/License';
 import { List } from '../../interfaces/List';
 import { Tag } from '../../interfaces/Tag';
 import { nameof } from '../../utils';
@@ -16,6 +17,7 @@ import styles from './ListsTable.module.css';
 interface State {
   lists: List[];
   languages: Language[];
+  licenses: License[];
   tags: Tag[];
   pageSize: number;
   isNarrowWindow: boolean;
@@ -27,6 +29,7 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
     this.state = {
       lists: [],
       languages: [],
+      licenses: [],
       tags: [],
       pageSize: 0,
       isNarrowWindow: false
@@ -55,6 +58,11 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
       .then(response => response.json())
       .then(json => (json as Tag[]).sort((a, b) => a.name.localeCompare(b.name)))
       .then(tags => { this.setState({ tags: tags }); })
+
+    // fetch("/api/v1/licenses")
+    //   .then(response => response.json())
+    //   .then(json => (json as License[]).sort((a, b) => a.name.localeCompare(b.name)))
+    //   .then(licenses => { this.setState({ licenses: licenses }); })
   }
 
   private updatePageSize() {
