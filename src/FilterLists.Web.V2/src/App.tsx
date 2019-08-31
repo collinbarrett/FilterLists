@@ -53,25 +53,25 @@ const Community = () =>
     title="FilterLists Discourse community forum"
     target="_blank" rel="noopener noreferrer">
     Community
-    </a>;
+  </a>;
 
 const GitHub = () =>
   <a href="https://github.com/collinbarrett/FilterLists"
     title="FilterLists git repository on GitHub"
     target="_blank" rel="noopener noreferrer">
     GitHub
-    </a>;
+  </a>;
 
 const Api = () =>
   <a href="/api/v1/lists"
     title="FilterLists API lists endpoint"
     target="_blank" rel="noopener noreferrer">
     API
-    </a>;
+  </a>;
 
 const Donate = () =>
   <a href="https://beerpay.io/collinbarrett/FilterLists"
     title="Donate to FilterLists with Beerpay"
     target="_blank" rel="noopener noreferrer">
     Donate
-    </a>;
+  </a>;

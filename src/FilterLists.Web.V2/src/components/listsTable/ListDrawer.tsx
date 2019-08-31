@@ -12,7 +12,7 @@ interface Props {
     languages: Language[];
     licenses: License[];
     tags: Tag[];
-}
+};
 
 export const ListDrawer = (props: Props) => {
     const renderDrawer = (rp: RouteComponentProps<any, StaticContext, any>) => {
@@ -24,7 +24,7 @@ export const ListDrawer = (props: Props) => {
                 license={list.licenseId ? props.licenses.find((l: License) => list.licenseId === l.id) : undefined}
                 tags={list.tagIds && props.tags.filter((t: Tag) => list.tagIds.includes(t.id))}
                 {...rp} />
-            : props.lists && props.lists.length && <Redirect to={{ pathname: "/", }} />
+            : props.lists && props.lists.length && <Redirect to={{ pathname: "/", }} />;
     };
-    return <Route path="/lists/:id" render={renderDrawer} />
-}
+    return <Route path="/lists/:id" render={renderDrawer} />;
+};

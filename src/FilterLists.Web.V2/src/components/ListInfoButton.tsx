@@ -10,12 +10,14 @@ interface Props {
 
 export const ListInfoButton = (props: RouteComponentProps & Props) => {
   const listPath = `/lists/${props.list.id}`;
-  return <Button
-    type="primary"
-    title={`View more information about ${props.list.name}.`}
-    onClick={() => props.location.pathname === listPath
-      ? props.history.push("/")
-      : props.history.push(listPath)} >
-    <Icon type="info-circle" />
-  </Button>
+  return (
+    <Button
+      type="primary"
+      title={`View more information about ${props.list.name}.`}
+      onClick={() => props.location.pathname === listPath
+        ? props.history.push("/")
+        : props.history.push(listPath)} >
+      <Icon type="info-circle" />
+    </Button>
+  );
 };

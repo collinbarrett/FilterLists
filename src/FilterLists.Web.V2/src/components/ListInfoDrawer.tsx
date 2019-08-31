@@ -23,15 +23,11 @@ interface Props {
 
 export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
   const [originalTitle] = useState<string>(document.title);
-
   useEffect(() => {
-    const updateTitle = () => {
-      document.title = props.list.name + " | " + originalTitle;
-    }
+    const updateTitle = () => document.title = props.list.name + " | " + originalTitle;
     updateTitle();
-    return () => { document.title = originalTitle; }
+    return () => { document.title = originalTitle; };
   }, [props.list, originalTitle]);
-
   return (
     <Drawer
       visible={true}
@@ -107,5 +103,5 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
             icon="dollar" />}
       </ButtonGroup>
     </Drawer>
-  )
-}
+  );
+};

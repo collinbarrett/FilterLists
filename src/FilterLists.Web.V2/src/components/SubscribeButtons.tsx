@@ -23,7 +23,7 @@ const PrimaryButton = (props: Props) => {
       {...buttonProps[0]}>
       Subscribe
     </Button>
-  )
+  );
 };
 
 const MirrorButtons = (props: Props) =>
@@ -39,7 +39,7 @@ interface MirrorButtonProps {
   index: number;
   viewUrlMirror: string;
   name: string;
-}
+};
 
 const MirrorButton = (props: MirrorButtonProps) => {
   const buttonProps = buildButtonProps(props.name, props.viewUrlMirror);
@@ -52,8 +52,8 @@ const MirrorButton = (props: MirrorButtonProps) => {
       {...buttonProps[0]}>
       {`Subscribe (Mirror ${props.index + 1})`}
     </Button>
-  )
-}
+  );
+};
 
 const buildButtonProps = (name: string, viewUrl: string): [ButtonProps, boolean] => {
   let type: ButtonType = "primary";
@@ -70,22 +70,22 @@ const buildButtonProps = (name: string, viewUrl: string): [ButtonProps, boolean]
   if (viewUrl.includes(".onion/")) {
     type = "dashed";
     prefixes.push("TOR");
-  }
+  };
   if (viewUrl.includes("http://")) {
     type = "danger";
     prefixes.push("INSECURE");
-  }
+  };
 
   // Software protocols
   if (viewUrl.includes(".tpl")) {
     disabled = true; // IE not supported by FilterLists
-  }
+  };
   if (viewUrl.includes(".lsrules") || viewUrl.includes("?hostformat=littlesnitch")) {
     href = `x-littlesnitch:subscribe-rules?url=${hrefLocation}`;
     message = `Subscribe to ${name} with Little Snitch's rule group subscription feature.`;
-  }
+  };
 
   const title = `${prefixes.length ? prefixes.join(" | ") + " | " : ""}${message}`;
 
-  return [{ type, href, title }, disabled]
-}
+  return [{ type, href, title }, disabled];
+};

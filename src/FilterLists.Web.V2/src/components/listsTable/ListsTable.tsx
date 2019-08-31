@@ -20,7 +20,7 @@ interface Props {
     languages: Language[];
     licenses: License[];
     tags: Tag[];
-}
+};
 
 export const ListsTable = (props: RouteComponentProps & Props) => {
     const tablePageSize = useTablePageSizer();
@@ -80,5 +80,5 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                     className={styles.nogrow}
                     render={(tagIds: number[]) => tagIds ? <TagCloud tags={props.tags.filter((t: Tag) => tagIds.includes(t.id))} /> : null} />}
         </Table>
-    )
-}
+    );
+};

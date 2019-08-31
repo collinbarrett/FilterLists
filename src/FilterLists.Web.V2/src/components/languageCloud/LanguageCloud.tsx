@@ -5,8 +5,8 @@ import { Language } from '../../interfaces/Language';
 import styles from './LanguageCloud.module.css';
 
 interface Props {
-  languages: Language[]
-  showLabel?: boolean
+  languages: Language[];
+  showLabel?: boolean;
 };
 
 export const LanguageCloud = (props: Props) =>

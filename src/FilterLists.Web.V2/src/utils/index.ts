@@ -1,3 +1,3 @@
 import { nameof } from './nameof';
 
-export { nameof }
+export { nameof };

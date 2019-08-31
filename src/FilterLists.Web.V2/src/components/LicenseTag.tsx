@@ -23,4 +23,6 @@ const TagContents = (props: Props) =>
     ? <a href={props.license.descriptionUrl} target="_blank" rel="noopener noreferrer">
       {props.license.name}
     </a>
-    : <span>{props.license.name}</span>
+    : <>
+      {props.license.name}
+    </>;

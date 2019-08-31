@@ -5,8 +5,8 @@ import { Tag as TagInterface } from '../../interfaces/Tag';
 import styles from './TagCloud.module.css';
 
 interface Props {
-  tags: TagInterface[]
-  showLabel?: boolean
+  tags: TagInterface[];
+  showLabel?: boolean;
 };
 
 export const TagCloud = (props: Props) =>
