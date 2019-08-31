@@ -10,15 +10,26 @@ interface Props {
 
 export const SubscribeButton = (props: Props) => {
   const buttonProps = buildButtonProps(props.name, props.viewUrl);
-  return <span>
-    <Button disabled={buttonProps[1]}
-      block
-      icon="import"
-      {...buttonProps[0]}>
-      Subscribe
-    </Button>
-    {props.viewUrlMirrors && props.viewUrlMirrors.length &&
-      props.viewUrlMirrors.map((viewUrlMirror: string, i: number) => {
+  return (
+    <>
+      <PrimaryButton {...buttonProps} />
+      <MirrorButtons {...props} />
+    </>
+  )
+};
+
+const PrimaryButton = (props: [ButtonProps, boolean]) =>
+  <Button disabled={props[1]}
+    block
+    icon="import"
+    {...props[0]}>
+    Subscribe
+  </Button>;
+
+const MirrorButtons = (props: Props) =>
+  <>
+    {props.viewUrlMirrors && props.viewUrlMirrors.length
+      ? props.viewUrlMirrors.map((viewUrlMirror: string, i: number) => {
         const buttonProps = buildButtonProps(props.name, viewUrlMirror);
         return <Button key={i}
           disabled={buttonProps[1]}
@@ -27,9 +38,9 @@ export const SubscribeButton = (props: Props) => {
           {...buttonProps[0]}>
           {`Subscribe (Mirror ${i + 1})`}
         </Button>
-      })}
-  </span>
-};
+      })
+      : null}
+  </>;
 
 const buildButtonProps = (name: string, viewUrl: string): [ButtonProps, boolean] => {
   let type: ButtonType = "primary";
