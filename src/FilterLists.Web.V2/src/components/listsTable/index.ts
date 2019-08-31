@@ -1,3 +1,3 @@
-import { ListsTable } from './ListsTable';
+import { ListsTableHoc } from './ListsTableHoc';
 
-export { ListsTable }
+export { ListsTableHoc as ListsTable }
