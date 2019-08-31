@@ -39,13 +39,14 @@ const NotFound = (props: RouteComponentProps) =>
   </h2>;
 
 const CopyrightAuthor = () =>
-  <span>
+  <>
     ©{new Date().getFullYear()}&nbsp;
     <a href="https://collinmbarrett.com"
       title="Collin M. Barrett's Homepage"
       target="_blank" rel="noopener noreferrer">
-      Collin M. Barrett</a>
-  </span>;
+      Collin M. Barrett
+    </a>
+  </>;
 
 const Community = () =>
   <a href="https://hub.filterlists.com"
