@@ -30,7 +30,7 @@ const MirrorButtons = (props: Props) =>
   <>
     {props.viewUrlMirrors && props.viewUrlMirrors.length
       ? props.viewUrlMirrors.map((viewUrlMirror: string, i: number) =>
-        <MirrorButton index={i} viewUrlMirror={viewUrlMirror} name={props.name} />
+        <MirrorButton key={i} index={i} viewUrlMirror={viewUrlMirror} name={props.name} />
       )
       : null}
   </>;
@@ -45,7 +45,6 @@ const MirrorButton = (props: MirrorButtonProps) => {
   const buttonProps = buildButtonProps(props.name, props.viewUrlMirror);
   return (
     <Button
-      key={props.index}
       disabled={buttonProps[1]}
       block
       icon="import"
