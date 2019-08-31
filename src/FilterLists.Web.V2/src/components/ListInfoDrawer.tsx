@@ -1,6 +1,6 @@
 import { Divider, Drawer } from 'antd';
 import ButtonGroup from 'antd/lib/button/button-group';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
 import { Language } from '../interfaces/Language';
@@ -21,108 +21,91 @@ interface Props {
   tags: Tag[];
 };
 
-interface State {
-  baseDocumentTitle: string;
-}
+export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
+  const [originalTitle] = useState<string>(document.title);
 
-export class ListInfoDrawer extends React.Component<RouteComponentProps & Props, State> {
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      baseDocumentTitle: document.title
-    };
-  }
+  useEffect(() => {
+    const updateTitle = () => {
+      document.title = props.list.name + " | " + originalTitle;
+    }
+    updateTitle();
+    return () => { document.title = originalTitle; }
+  }, [props.list, originalTitle]);
 
-  componentDidMount() {
-    this.updateTitle();
-  }
-
-  render() {
-    return <Drawer
+  return (
+    <Drawer
       visible={true}
       width={350}
       placement={"right"}
       mask={false}
-      title={this.props.list.name}
+      title={props.list.name}
       destroyOnClose={true}
-      onClose={() => this.props.history.push("/")}>
-      <Description {...this.props.list} />
-      {this.props.list.languageIds
-        ? <LanguageCloud languages={this.props.languages} showLabel={true} />
+      onClose={() => props.history.push("/")}>
+      <Description {...props.list} />
+      {props.list.languageIds
+        ? <LanguageCloud languages={props.languages} showLabel={true} />
         : null}
-      {this.props.list.tagIds
-        ? <TagCloud tags={this.props.tags} showLabel={true} />
+      {props.list.tagIds
+        ? <TagCloud tags={props.tags} showLabel={true} />
         : null}
-      {this.props.license
-        ? <LicenseTag license={this.props.license as License} showLabel={true} />
+      {props.license
+        ? <LicenseTag license={props.license as License} showLabel={true} />
         : null}
-      {this.props.list.publishedDate
+      {props.list.publishedDate
         ? <div>
           <h3>First Published Date:</h3>
-          {new Date(this.props.list.publishedDate).toDateString()}
+          {new Date(props.list.publishedDate).toDateString()}
         </div>
         : null}
       <Divider />
       <ButtonGroup style={{ display: "inherit" }}>
-        {this.props.list.viewUrl && <SubscribeButtons {...this.props.list} />}
-        {this.props.list.viewUrl &&
-          <LinkButton url={this.props.list.viewUrl}
+        {props.list.viewUrl && <SubscribeButtons {...props.list} />}
+        {props.list.viewUrl &&
+          <LinkButton url={props.list.viewUrl}
             text="View"
-            title={`View ${this.props.list.name} in its raw format`}
+            title={`View ${props.list.name} in its raw format`}
             icon="search" />}
-        {this.props.list.homeUrl &&
-          <LinkButton url={this.props.list.homeUrl}
+        {props.list.homeUrl &&
+          <LinkButton url={props.list.homeUrl}
             text="Home"
-            title={`View ${this.props.list.name}'s homepage.`}
+            title={`View ${props.list.name}'s homepage.`}
             icon="home" />}
-        {this.props.list.policyUrl &&
-          <LinkButton url={this.props.list.policyUrl}
+        {props.list.policyUrl &&
+          <LinkButton url={props.list.policyUrl}
             text="Policy"
-            title={`View the types of rules that ${this.props.list.name} includes.`}
+            title={`View the types of rules that ${props.list.name} includes.`}
             icon="file-exclamation" />}
-        {this.props.list.emailAddress &&
-          <LinkButton url={`mailto:${this.props.list.emailAddress}`}
+        {props.list.emailAddress &&
+          <LinkButton url={`mailto:${props.list.emailAddress}`}
             text="Email"
-            title={`Email ${this.props.list.name}.`}
+            title={`Email ${props.list.name}.`}
             icon="mail" />}
-        {this.props.list.issuesUrl &&
-          <LinkButton url={this.props.list.issuesUrl}
+        {props.list.issuesUrl &&
+          <LinkButton url={props.list.issuesUrl}
             text="GitHub Issues"
-            title={`View the GitHub Issues for ${this.props.list.name}.`}
+            title={`View the GitHub Issues for ${props.list.name}.`}
             icon="github" />}
-        {this.props.list.submissionUrl &&
-          <LinkButton url={this.props.list.submissionUrl}
+        {props.list.submissionUrl &&
+          <LinkButton url={props.list.submissionUrl}
             text="Submit a Rule"
-            title={`Submit a new rule to be included in ${this.props.list.name}.`}
+            title={`Submit a new rule to be included in ${props.list.name}.`}
             icon="form" />}
-        {this.props.list.forumUrl &&
-          <LinkButton url={this.props.list.forumUrl}
+        {props.list.forumUrl &&
+          <LinkButton url={props.list.forumUrl}
             text="Forum"
-            title={`View the forum for ${this.props.list.name}.`}
+            title={`View the forum for ${props.list.name}.`}
             icon="team" />}
-        {this.props.list.chatUrl &&
-          <LinkButton url={this.props.list.chatUrl}
+        {props.list.chatUrl &&
+          <LinkButton url={props.list.chatUrl}
             text="Chat"
-            title={`Enter the chat room for ${this.props.list.name}.`}
+            title={`Enter the chat room for ${props.list.name}.`}
             icon="message" />}
-        {this.props.list.donateUrl &&
-          <LinkButton url={this.props.list.donateUrl}
+        {props.list.donateUrl &&
+          <LinkButton url={props.list.donateUrl}
             text="Donate"
-            title={`Donate to the maintainer of ${this.props.list.name}.`}
+            title={`Donate to the maintainer of ${props.list.name}.`}
             icon="dollar" />}
       </ButtonGroup>
     </Drawer>
-  }
-
-  componentDidUpdate() {
-    this.updateTitle();
-  }
-
-  private updateTitle() {
-    document.title = this.props.list.name + " | " + this.state.baseDocumentTitle;
-  }
-
-  componentWillUnmount() {
-    document.title = this.state.baseDocumentTitle
-  }
+  )
 }
