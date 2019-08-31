@@ -8,39 +8,52 @@ interface Props {
   viewUrlMirrors: string[];
 };
 
-export const SubscribeButton = (props: Props) => {
+export const SubscribeButtons = (props: Props) =>
+  <>
+    <PrimaryButton {...props} />
+    <MirrorButtons {...props} />
+  </>;
+
+const PrimaryButton = (props: Props) => {
   const buttonProps = buildButtonProps(props.name, props.viewUrl);
   return (
-    <>
-      <PrimaryButton {...buttonProps} />
-      <MirrorButtons {...props} />
-    </>
+    <Button disabled={buttonProps[1]}
+      block
+      icon="import"
+      {...buttonProps[0]}>
+      Subscribe
+  </Button>
   )
 };
-
-const PrimaryButton = (props: [ButtonProps, boolean]) =>
-  <Button disabled={props[1]}
-    block
-    icon="import"
-    {...props[0]}>
-    Subscribe
-  </Button>;
 
 const MirrorButtons = (props: Props) =>
   <>
     {props.viewUrlMirrors && props.viewUrlMirrors.length
-      ? props.viewUrlMirrors.map((viewUrlMirror: string, i: number) => {
-        const buttonProps = buildButtonProps(props.name, viewUrlMirror);
-        return <Button key={i}
-          disabled={buttonProps[1]}
-          block
-          icon="import"
-          {...buttonProps[0]}>
-          {`Subscribe (Mirror ${i + 1})`}
-        </Button>
-      })
+      ? props.viewUrlMirrors.map((viewUrlMirror: string, i: number) =>
+        <MirrorButton index={i} viewUrlMirror={viewUrlMirror} name={props.name} />
+      )
       : null}
   </>;
+
+interface MirrorButtonProps {
+  index: number;
+  viewUrlMirror: string;
+  name: string;
+}
+
+const MirrorButton = (props: MirrorButtonProps) => {
+  const buttonProps = buildButtonProps(props.name, props.viewUrlMirror);
+  return (
+    <Button
+      key={props.index}
+      disabled={buttonProps[1]}
+      block
+      icon="import"
+      {...buttonProps[0]}>
+      {`Subscribe (Mirror ${props.index + 1})`}
+    </Button>
+  )
+}
 
 const buildButtonProps = (name: string, viewUrl: string): [ButtonProps, boolean] => {
   let type: ButtonType = "primary";

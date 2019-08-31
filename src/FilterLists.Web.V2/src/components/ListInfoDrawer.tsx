@@ -11,7 +11,7 @@ import { Description } from './Description';
 import { LanguageCloud } from './languageCloud';
 import { LicenseTag } from './LicenseTag';
 import { LinkButton } from './LinkButton';
-import { SubscribeButton } from './SubscribeButton';
+import { SubscribeButtons } from './SubscribeButtons';
 import { TagCloud } from './tagCloud';
 
 interface Props {
@@ -64,7 +64,7 @@ export class ListInfoDrawer extends React.Component<RouteComponentProps & Props,
         : null}
       <Divider />
       <ButtonGroup style={{ display: "inherit" }}>
-        {this.props.list.viewUrl && <SubscribeButton {...this.props.list} />}
+        {this.props.list.viewUrl && <SubscribeButtons {...this.props.list} />}
         {this.props.list.viewUrl &&
           <LinkButton url={this.props.list.viewUrl}
             text="View"
