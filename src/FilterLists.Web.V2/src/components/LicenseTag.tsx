@@ -8,7 +8,7 @@ interface Props {
   showLabel?: boolean
 };
 
-export const LicenseTag = (props: Props): JSX.Element | null =>
+export const LicenseTag = (props: Props) =>
   props.license && props.license.name
     ? <div>
       {props.showLabel && <h3>License:</h3>}
@@ -18,7 +18,7 @@ export const LicenseTag = (props: Props): JSX.Element | null =>
     </div>
     : null;
 
-const TagContents = (props: Props): JSX.Element =>
+const TagContents = (props: Props) =>
   props.license.descriptionUrl
     ? <a href={props.license.descriptionUrl} target="_blank" rel="noopener noreferrer">
       {props.license.name}

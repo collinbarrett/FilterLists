@@ -8,7 +8,7 @@ interface Props {
   viewUrlMirrors: string[];
 };
 
-export const SubscribeButton = (props: Props): JSX.Element => {
+export const SubscribeButton = (props: Props) => {
   const buttonProps = buildButtonProps(props.name, props.viewUrl);
   return <span>
     <Button disabled={buttonProps[1]}

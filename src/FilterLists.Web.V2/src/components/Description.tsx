@@ -5,7 +5,7 @@ interface Props {
   descriptionSourceUrl: string;
 };
 
-export const Description = (props: Props): JSX.Element =>
+export const Description = (props: Props) =>
   props.description
     ? <blockquote cite={props.description}>{props.description}</blockquote>
     : <p>{props.description}</p>;

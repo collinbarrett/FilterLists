@@ -44,25 +44,38 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
   }
 
   private fetchData() {
+    this.fetchLists();
+    this.fetchLanguages();
+    this.fetchTags();
+    this.fetchLicenses();
+  }
+
+  private fetchLists() {
     fetch("/api/v1/lists")
       .then(response => response.json())
       .then(json => (json as List[]).sort((a, b) => a.name.localeCompare(b.name)))
-      .then(lists => { this.setState({ lists: lists }); })
+      .then(lists => { this.setState({ lists: lists }); });
+  }
 
+  private fetchLanguages() {
     fetch("/api/v1/languages")
       .then(response => response.json())
       .then(json => (json as Language[]).sort((a, b) => a.name.localeCompare(b.name)))
-      .then(languages => { this.setState({ languages: languages }); })
+      .then(languages => { this.setState({ languages: languages }); });
+  }
 
+  private fetchTags() {
     fetch("/api/v1/tags")
       .then(response => response.json())
       .then(json => (json as Tag[]).sort((a, b) => a.name.localeCompare(b.name)))
-      .then(tags => { this.setState({ tags: tags }); })
+      .then(tags => { this.setState({ tags: tags }); });
+  }
 
+  private fetchLicenses() {
     fetch("/api/v1/licenses")
       .then(response => response.json())
       .then(json => (json as License[]).sort((a, b) => a.name.localeCompare(b.name)))
-      .then(licenses => { this.setState({ licenses: licenses }); })
+      .then(licenses => { this.setState({ licenses: licenses }); });
   }
 
   private updatePageSize() {
@@ -80,16 +93,11 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
           rowKey={record => record.id.toString()}
           loading={this.state.lists.length ? false : true}
           size="small"
-          pagination={{
-            size: "small",
-            simple: true,
-            style: { float: "left" },
-            pageSize: this.state.pageSize
-          }}
+          pagination={{ size: "small", simple: true, style: { float: "left" }, pageSize: this.state.pageSize }}
           scroll={{ x: this.state.isNarrowWindow ? undefined : 1200 }}>
           <Table.Column<List>
             title="Info"
-            dataIndex={nameof<List>("viewUrl")}
+            dataIndex={nameof<List>("id")}
             className={styles.nogrow}
             fixed="left"
             render={(_text: string, record: List) => <ListInfoButton list={record} {...this.props} />} />
@@ -124,10 +132,7 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
               sorter={(a, b) => arraySorter(a.languageIds, b.languageIds, this.state.languages)}
               width={125}
               className={styles.nogrow}
-              render={(languageIds: number[]) =>
-                languageIds
-                  ? <LanguageCloud languages={this.state.languages.filter((l: Language) => languageIds.includes(l.id))} />
-                  : null} />}
+              render={(languageIds: number[]) => languageIds ? <LanguageCloud languages={this.state.languages.filter((l: Language) => languageIds.includes(l.id))} /> : null} />}
           {this.state.isNarrowWindow
             ? null
             : <Table.Column<List>
@@ -136,10 +141,7 @@ export class ListsTable extends React.Component<RouteComponentProps, State> {
               sorter={(a, b) => arraySorter(a.tagIds, b.tagIds, this.state.tags)}
               width={275}
               className={styles.nogrow}
-              render={(tagIds: number[]) =>
-                tagIds
-                  ? <TagCloud tags={this.state.tags.filter((t: Tag) => tagIds.includes(t.id))} />
-                  : null} />}
+              render={(tagIds: number[]) => tagIds ? <TagCloud tags={this.state.tags.filter((t: Tag) => tagIds.includes(t.id))} /> : null} />}
         </Table>
         <Route path="/lists/:id" render={props => {
           const list = this.state.lists.find(l => l.id === +props.match.params.id);

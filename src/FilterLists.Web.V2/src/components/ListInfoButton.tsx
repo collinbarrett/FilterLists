@@ -8,7 +8,7 @@ interface Props {
   list: List;
 };
 
-export const ListInfoButton = (props: RouteComponentProps & Props): JSX.Element => {
+export const ListInfoButton = (props: RouteComponentProps & Props) => {
   const listPath = `/lists/${props.list.id}`;
   return <Button
     type="primary"

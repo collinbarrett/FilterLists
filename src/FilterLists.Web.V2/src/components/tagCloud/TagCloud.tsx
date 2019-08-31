@@ -9,7 +9,7 @@ interface Props {
   showLabel?: boolean
 };
 
-export const TagCloud = (props: Props): JSX.Element | null =>
+export const TagCloud = (props: Props) =>
   props.tags && props.tags.length
     ? <div className={styles.grow}>
       {props.showLabel && <h3>{`Tag${props.tags.length > 1 ? "s" : ""}:`}</h3>}
