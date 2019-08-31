@@ -8303,7 +8303,7 @@
   },
   {
     "id": 819,
-    "description": "This list is mostly meant to be used on top of \"YouTube: Pure Video Experience\", and it removes even more (number-wise) distracting or uncomfortable things on YouTube.",
+    "description": "This list removes even more (number-wise) distracting or uncomfortable things on YouTube.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeEvenMorePureVideoExperience.txt",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
@@ -19396,5 +19396,109 @@
     "syntaxId": 1,
     "updatedDate": "2019-08-26T19:49:00",
     "viewUrl": "https://www.github.developerdan.com/hosts/lists/facebook-extended.txt"
+  },
+  {
+  "id": 1820,
+  "name": "Bulgarian Host File (Adblock Plus)",
+  "homeUrl": "https://github.com/stilyanmihalev/BulgarianHostFile",
+  "issuesUrl": "https://github.com/stilyanmihalev/BulgarianHostFile/issues",
+  "licenseId": 2,
+  "syntaxId": 28,
+  "viewUrl": "https://raw.githubusercontent.com/stilyanmihalev/BulgarianHostFile/master/file.txt"
+},
+{
+  "id": 1821,
+  "name": "Bulgarian Host File (Hosts)",
+  "homeUrl": "https://github.com/stilyanmihalev/BulgarianHostFile",
+  "issuesUrl": "https://github.com/stilyanmihalev/BulgarianHostFile/issues",
+  "licenseId": 2,
+  "syntaxId": 1,
+  "viewUrl": "https://raw.githubusercontent.com/stilyanmihalev/BulgarianHostFile/master/hosts.txt"
+},
+{
+  "id": 1822,
+  "name": "Cruzit Server Blocklist",
+  "description": "The following list is individual IP Addresses that have attempted to attack our servers. These IP addresses are currently recommended as a DENY, REJECT or BLOCK on your firewalls.",
+  "homeUrl": "https://www.cruzit.com/wbl.php",
+  "syntaxId": 9,
+  "viewUrl": "https://www.cruzit.com/xxwbl2txt.php",
+  "donateUrl": "https://www.cruzit.com/hth.php"
+},
+{
+  "id": 1823,
+  "name": "Unsubscore Blacklist",
+  "syntaxId": 9,
+  "viewUrl": "http://www.unsubscore.com/blacklist.txt"
+},
+{
+  "id": 1824,
+  "name": "MyIP Blacklist",
+  "homeUrl": "https://myip.ms/",
+  "syntaxId": 9,
+  "viewUrl": "https://myip.ms/files/blacklist/general/latest_blacklist.txt",
+  "donateUrl": "bitcoin:1FzxJBxy3fJDv5PLGqbdN9TrQ79LE9UEtB"
+},
+{
+  "id": 1825,
+  "name": "hpHosts PHA (IPs)",
+  "description": "Sites engaged in illegal pharmacy activities.",
+  "syntaxId": 9,
+  "viewUrl": "https://iplists.firehol.org/files/hphosts_pha.ipset"
+},
+{
+  "id": 1826,
+  "name": "hpHosts HJK (IPs)",
+  "description": "Sites engaged in browser hijacking or other forms of hijacking (OS services, bandwidth, DNS, etc.).",
+  "syntaxId": 9,
+  "viewUrl": "https://iplists.firehol.org/files/hphosts_HJK.ipset"
+},
+{
+  "id": 1827,
+  "name": "hpHosts FSA (IPs)",
+  "description": "Sites engaged in the selling or distribution of bogus or fraudulent applications and/or provision of fraudulent services.",
+  "syntaxId": 9,
+  "viewUrl": "https://iplists.firehol.org/files/hphosts_fsa.ipset"
+},
+{
+  "id": 1828,
+  "name": "hpHosts GRM (IPs)",
+  "description": "Sites engaged in astroturfing (otherwise known as grass roots marketing) or spamming.",
+  "syntaxId": 9,
+  "viewUrl": "https://iplists.firehol.org/files/hphosts_grm.ipset"
+},
+{
+  "id": 1829,
+  "name": "hpHosts EXP (IPs)",
+  "description": "Sites engaged in the housing, development or distribution of exploits, including but not limited to exploitation of browser, software (inclusive of website software such as CMS), operating system exploits as well as those engaged in exploits via social engineering.",
+  "syntaxId": 9,
+  "viewUrl": "https://iplists.firehol.org/files/hphosts_exp.ipset"
+},
+{
+  "id": 1830,
+  "name": "hpHosts EMD (IPs)",
+  "description": "Sites engaged in malware distribution.",
+  "syntaxId": 9,
+  "viewUrl": "https://iplists.firehol.org/files/hphosts_emd.ipset"
+},
+{
+  "id": 1831,
+  "name": "hpHosts ATS (IPs)",
+  "description": "This classification is assigned for domains being used for advert or tracking purposes.",
+  "syntaxId": 9,
+  "viewUrl": "https://iplists.firehol.org/files/hphosts_exp.ipset"
+},
+  {
+    "id": 1832,
+    "description": "Pepe the Frog, while beloved by many internet memers, has also become the go-to symbol of many horrendous alt-right movements, culminating in Frenworld and Clown World. If you're worried that people who use him do not have the best intentions, this is how to avoid both him and them.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-Pepe List",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPepeList.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPepeList.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPepeList.txt"
   }
 ]
