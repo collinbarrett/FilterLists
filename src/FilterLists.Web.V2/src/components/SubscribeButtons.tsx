@@ -22,7 +22,7 @@ const PrimaryButton = (props: Props) => {
       icon="import"
       {...buttonProps[0]}>
       Subscribe
-  </Button>
+    </Button>
   )
 };
 
