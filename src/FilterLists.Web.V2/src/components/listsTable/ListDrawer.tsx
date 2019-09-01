@@ -16,7 +16,7 @@ interface Props {
 
 export const ListDrawer = (props: Props) => {
     const renderDrawer = (rp: RouteComponentProps<any, StaticContext, any>) => {
-        const list = props.lists.find(l => l.id === +rp.match.params.id);
+        const list = props.lists.find(l => l.slug === rp.match.params.listSlug);
         return list
             ? <ListInfoDrawer
                 list={list as List}
@@ -26,5 +26,5 @@ export const ListDrawer = (props: Props) => {
                 {...rp} />
             : props.lists && props.lists.length && <Redirect to={{ pathname: "/", }} />;
     };
-    return <Route path="/:id" render={renderDrawer} />;
+    return <Route path="/:listSlug" render={renderDrawer} />;
 };

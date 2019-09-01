@@ -1,6 +1,7 @@
 import { Button, Icon } from 'antd';
 import React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
+import slugify from 'slugify';
 
 import { List } from '../interfaces/List';
 
@@ -9,7 +10,7 @@ interface Props {
 };
 
 export const ListInfoButton = (props: RouteComponentProps & Props) => {
-  const listPath = `/${props.list.id}`;
+  const listPath = `/${slugify(props.list.name)}`;
   return (
     <Button
       type="primary"
