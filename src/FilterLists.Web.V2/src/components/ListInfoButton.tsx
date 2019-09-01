@@ -3,18 +3,16 @@ import React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 import slugify from 'slugify';
 
-import { List } from '../interfaces/List';
-
 interface Props {
-  list: List;
+  listName: string;
 };
 
 export const ListInfoButton = (props: RouteComponentProps & Props) => {
-  const listPath = `/lists/${slugify(props.list.name)}`;
+  const listPath = `/lists/${slugify(props.listName)}`;
   return (
     <Button
       type="primary"
-      title={`View more information about ${props.list.name}.`}
+      title={`View more information about ${props.listName}.`}
       onClick={() => props.location.pathname === listPath
         ? props.history.push("/")
         : props.history.push(listPath)} >

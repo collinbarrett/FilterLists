@@ -23,7 +23,7 @@ export const ListDrawer = (props: Props) => {
             ? <ListInfoDrawer
                 list={list as List}
                 languages={list.languageIds && props.languages.filter((l: Language) => list.languageIds.includes(l.id))}
-                license={list.licenseId ? props.licenses.find((l: License) => list.licenseId === l.id) : undefined}
+                license={(list.licenseId ? props.licenses.find((l: License) => list.licenseId === l.id) : props.licenses.find((l: License) => l.id === 5)) as License}
                 software={list.syntaxId ? props.software.filter((s: Software) => s.syntaxIds.includes(list.syntaxId)) : []}
                 tags={list.tagIds && props.tags.filter((t: Tag) => list.tagIds.includes(t.id))}
                 {...rp} />

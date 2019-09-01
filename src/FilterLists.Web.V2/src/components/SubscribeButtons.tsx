@@ -11,8 +11,13 @@ interface Props {
 export const SubscribeButtons = (props: Props) =>
   props.viewUrl
     ? <>
-      <SubscribeButton name={props.name} viewUrl={props.viewUrl} text="Subscribe" />
-      <MirrorButtons name={props.name} viewUrlMirrors={props.viewUrlMirrors} />
+      <SubscribeButton
+        name={props.name}
+        viewUrl={props.viewUrl}
+        text="Subscribe" />
+      <MirrorButtons
+        name={props.name}
+        viewUrlMirrors={props.viewUrlMirrors} />
     </>
     : null;
 
@@ -25,7 +30,11 @@ const MirrorButtons = (props: MirrorButtonsProps) =>
   <>
     {props.viewUrlMirrors && props.viewUrlMirrors.length
       ? props.viewUrlMirrors.map((viewUrlMirror: string, i: number) =>
-        <SubscribeButton key={i} name={props.name} viewUrl={viewUrlMirror} text={`Subscribe (Mirror ${i + 1})`} />)
+        <SubscribeButton
+          key={i}
+          name={props.name}
+          viewUrl={viewUrlMirror}
+          text={`Subscribe (Mirror ${i + 1})`} />)
       : null}
   </>;
 

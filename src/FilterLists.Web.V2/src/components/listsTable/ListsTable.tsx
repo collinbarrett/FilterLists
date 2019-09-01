@@ -40,7 +40,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 dataIndex={nameof<List>("id")}
                 className={styles.nogrow}
                 fixed="left"
-                render={(_text: string, record: List) => <ListInfoButton list={record} {...props} />} />
+                render={(_text: string, record: List) => <ListInfoButton listName={record.name} {...props} />} />
             <Table.Column<List>
                 title="Name"
                 dataIndex={nameof<List>("name")}

@@ -13,8 +13,19 @@ export const ListsTableHoc = (props: RouteComponentProps) => {
   const tags = useTags();
   return (
     <>
-      <ListsTable lists={lists} languages={languages} licenses={licenses} software={software} tags={tags} {...props} />
-      <ListDrawer lists={lists} languages={languages} licenses={licenses} software={software} tags={tags} />
+      <ListsTable
+        lists={lists}
+        languages={languages}
+        licenses={licenses}
+        software={software}
+        tags={tags}
+        {...props} />
+      <ListDrawer
+        lists={lists}
+        languages={languages}
+        licenses={licenses}
+        software={software}
+        tags={tags} />
     </>
   );
 };

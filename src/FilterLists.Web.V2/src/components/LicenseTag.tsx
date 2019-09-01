@@ -1,28 +1,33 @@
 import { Tag } from 'antd';
 import * as React from 'react';
 
-import { License } from '../interfaces/License';
-
 interface Props {
-  license: License;
+  name: string;
+  descriptionUrl: string;
   showLabel?: boolean
 };
 
 export const LicenseTag = (props: Props) =>
-  props.license && props.license.name
-    ? <div>
+  props.name
+    ? <>
       {props.showLabel && <h3>License:</h3>}
       <Tag>
-        <TagContents {...props} />
+        <TagContents name={props.name} descriptionUrl={props.descriptionUrl} />
       </Tag>
-    </div>
+    </>
     : null;
 
-const TagContents = (props: Props) =>
-  props.license.descriptionUrl
-    ? <a href={props.license.descriptionUrl} target="_blank" rel="noopener noreferrer">
-      {props.license.name}
+interface TagContentsProps {
+  name: string;
+  descriptionUrl: string;
+};
+
+const TagContents = (props: TagContentsProps) =>
+  props.descriptionUrl
+    ? <a href={props.descriptionUrl}
+      target="_blank" rel="noopener noreferrer">
+      {props.name}
     </a>
     : <>
-      {props.license.name}
+      {props.name}
     </>;
