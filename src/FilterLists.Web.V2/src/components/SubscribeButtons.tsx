@@ -9,10 +9,12 @@ interface Props {
 };
 
 export const SubscribeButtons = (props: Props) =>
-  <>
-    <SubscribeButton name={props.name} viewUrl={props.viewUrl} text="Subscribe" />
-    <MirrorButtons name={props.name} viewUrlMirrors={props.viewUrlMirrors} />
-  </>;
+  props.viewUrl
+    ? <>
+      <SubscribeButton name={props.name} viewUrl={props.viewUrl} text="Subscribe" />
+      <MirrorButtons name={props.name} viewUrlMirrors={props.viewUrlMirrors} />
+    </>
+    : null;
 
 interface MirrorButtonsProps {
   name: string;
