@@ -1,5 +1,5 @@
 import { Button } from 'antd';
-import { ButtonProps, ButtonType } from 'antd/lib/button';
+import { ButtonType } from 'antd/lib/button';
 import React from 'react';
 
 interface Props {
@@ -10,28 +10,40 @@ interface Props {
 
 export const SubscribeButtons = (props: Props) =>
   <>
-    <PrimaryButton {...props} />
-    <MirrorButtons {...props} />
+    <PrimaryButton name={props.name} viewUrl={props.viewUrl} />
+    <MirrorButtons name={props.name} viewUrlMirrors={props.viewUrlMirrors} />
   </>;
 
-const PrimaryButton = (props: Props) => {
+interface PrimaryButtonProps {
+  name: string;
+  viewUrl: string;
+};
+
+const PrimaryButton = (props: PrimaryButtonProps) => {
   const buttonProps = buildButtonProps(props.name, props.viewUrl);
   return (
-    <Button disabled={buttonProps[1]}
+    <Button
+      disabled={buttonProps.disabled}
       block
       icon="import"
-      {...buttonProps[0]}>
+      type={buttonProps.type}
+      href={buttonProps.href}
+      title={buttonProps.title}>
       Subscribe
     </Button>
   );
 };
 
-const MirrorButtons = (props: Props) =>
+interface MirrorButtonsProps {
+  name: string;
+  viewUrlMirrors: string[];
+};
+
+const MirrorButtons = (props: MirrorButtonsProps) =>
   <>
     {props.viewUrlMirrors && props.viewUrlMirrors.length
       ? props.viewUrlMirrors.map((viewUrlMirror: string, i: number) =>
-        <MirrorButton key={i} index={i} viewUrlMirror={viewUrlMirror} name={props.name} />
-      )
+        <MirrorButton key={i} index={i} viewUrlMirror={viewUrlMirror} name={props.name} />)
       : null}
   </>;
 
@@ -45,16 +57,18 @@ const MirrorButton = (props: MirrorButtonProps) => {
   const buttonProps = buildButtonProps(props.name, props.viewUrlMirror);
   return (
     <Button
-      disabled={buttonProps[1]}
+      disabled={buttonProps.disabled}
       block
       icon="import"
-      {...buttonProps[0]}>
+      type={buttonProps.type}
+      href={buttonProps.href}
+      title={buttonProps.title}>
       {`Subscribe (Mirror ${props.index + 1})`}
     </Button>
   );
 };
 
-const buildButtonProps = (name: string, viewUrl: string): [ButtonProps, boolean] => {
+const buildButtonProps = (name: string, viewUrl: string) => {
   let type: ButtonType = "primary";
   let disabled: boolean = false;
 
@@ -86,5 +100,5 @@ const buildButtonProps = (name: string, viewUrl: string): [ButtonProps, boolean]
 
   const title = `${prefixes.length ? prefixes.join(" | ") + " | " : ""}${message}`;
 
-  return [{ type, href, title }, disabled];
+  return { disabled, type, href, title };
 };
