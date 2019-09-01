@@ -6,11 +6,13 @@ import { RouteComponentProps } from 'react-router-dom';
 import { Language } from '../interfaces/Language';
 import { License } from '../interfaces/License';
 import { List } from '../interfaces/List';
+import { Software } from '../interfaces/Software';
 import { Tag } from '../interfaces/Tag';
 import { Description } from './Description';
 import { LanguageCloud } from './languageCloud';
 import { LicenseTag } from './LicenseTag';
 import { LinkButton } from './LinkButton';
+import { SoftwareCloud } from './softwareCloud';
 import { SubscribeButtons } from './SubscribeButtons';
 import { TagCloud } from './tagCloud';
 
@@ -18,6 +20,7 @@ interface Props {
   list: List;
   languages: Language[];
   license?: License;
+  software: Software[];
   tags: Tag[];
 };
 
@@ -46,6 +49,9 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
         : null}
       {props.license
         ? <LicenseTag license={props.license as License} showLabel={true} />
+        : null}
+      {props.list.syntaxId
+        ? <SoftwareCloud software={props.software} showLabel={true} />
         : null}
       {props.list.publishedDate
         ? <div>

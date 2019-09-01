@@ -14,7 +14,7 @@ export const ListsTableHoc = (props: RouteComponentProps) => {
   return (
     <>
       <ListsTable lists={lists} languages={languages} licenses={licenses} software={software} tags={tags} {...props} />
-      <ListDrawer lists={lists} languages={languages} licenses={licenses} tags={tags} />
+      <ListDrawer lists={lists} languages={languages} licenses={licenses} software={software} tags={tags} />
     </>
   );
 };
