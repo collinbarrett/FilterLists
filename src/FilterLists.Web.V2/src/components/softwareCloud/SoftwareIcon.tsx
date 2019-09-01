@@ -42,7 +42,8 @@ interface Props {
 
 export const SoftwareIcon = (props: Props) =>
     icons[props.id]
-        ? <img src={icons[props.id].image}
+        ? <img
+            src={icons[props.id].image}
             height="20"
             alt={icons[props.id].imageTitle}
             title={icons[props.id].imageTitle} />
@@ -86,5 +87,5 @@ const icons: { [id: number]: Icon; } = {
     31: { image: img31, imageTitle: "AdGuard Home" },
     32: { image: img32, imageTitle: "AdNauseam" },
     33: { image: img33, imageTitle: "Legacy Unix derivatives" },
-    34: { image: img34, imageTitle: "Windows command line" },
+    34: { image: img34, imageTitle: "Windows command line" }
 };

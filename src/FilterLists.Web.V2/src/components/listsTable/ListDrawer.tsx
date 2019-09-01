@@ -27,7 +27,7 @@ export const ListDrawer = (props: Props) => {
                 software={list.syntaxId ? props.software.filter((s: Software) => s.syntaxIds.includes(list.syntaxId)) : []}
                 tags={list.tagIds && props.tags.filter((t: Tag) => list.tagIds.includes(t.id))}
                 {...rp} />
-            : props.lists && props.lists.length && <Redirect to={{ pathname: "/", }} />;
+            : (props.lists && props.lists.length && <Redirect to={{ pathname: "/", }} />) || null;
     };
     return <Route path="/lists/:listSlug" render={renderDrawer} />;
 };
