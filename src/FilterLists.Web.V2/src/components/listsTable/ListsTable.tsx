@@ -68,7 +68,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                         const bSoftwareIds = getSoftwareIds(b);
                         return arraySorter(aSoftwareIds, bSoftwareIds, props.software);
                     }}
-                    width={140}
+                    width={143}
                     className={styles.nogrow}
                     render={(syntaxId: number) => syntaxId ? <SoftwareCloud software={props.software.filter((s: Software) => s.syntaxIds.includes(syntaxId))} /> : null} />}
             {tablePageSize.isNarrowWindow
