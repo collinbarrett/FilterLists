@@ -1,4 +1,4 @@
-import { Layout, Menu } from 'antd';
+import { Icon, Layout, Menu } from 'antd';
 import React from 'react';
 import { BrowserRouter as Router, Route, RouteComponentProps, Switch } from 'react-router-dom';
 
@@ -22,7 +22,7 @@ export const App: React.FC = () =>
         </div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>
-        <CopyrightAuthor /> | <Community /> | <GitHub /> | <Api /> | <Donate />
+        <CopyrightAuthor /> | <Twitter /> | <Community /> | <GitHub /> | <Api /> | <Donate />
       </Footer>
     </Layout>
   </Router>;
@@ -48,30 +48,37 @@ const CopyrightAuthor = () =>
     </a>
   </>;
 
+const Twitter = () =>
+  <a href="https://twitter.com/FilterLists"
+    title="FilterLists on Twitter"
+    target="_blank" rel="noopener noreferrer">
+    <Icon type="twitter" /> Twitter
+  </a>;
+
 const Community = () =>
   <a href="https://hub.filterlists.com"
     title="FilterLists Discourse community forum"
     target="_blank" rel="noopener noreferrer">
-    Community
+    <Icon type="team" /> Community
   </a>;
 
 const GitHub = () =>
   <a href="https://github.com/collinbarrett/FilterLists"
     title="FilterLists git repository on GitHub"
     target="_blank" rel="noopener noreferrer">
-    GitHub
+    <Icon type="github" /> GitHub
   </a>;
 
 const Api = () =>
   <a href="/api/v1/lists"
     title="FilterLists API lists endpoint"
     target="_blank" rel="noopener noreferrer">
-    API
+    <Icon type="api" /> API
   </a>;
 
 const Donate = () =>
   <a href="https://beerpay.io/collinbarrett/FilterLists"
     title="Donate to FilterLists with Beerpay"
     target="_blank" rel="noopener noreferrer">
-    Donate
+    <Icon type="dollar" /> Donate
   </a>;
