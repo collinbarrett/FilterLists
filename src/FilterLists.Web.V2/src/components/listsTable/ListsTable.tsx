@@ -26,12 +26,13 @@ interface Props {
 };
 
 export const ListsTable = (props: RouteComponentProps & Props) => {
+    const { lists, languages, licenses, software, tags, ...routeComponentProps } = props;
     const tablePageSize = useTablePageSizer();
     return (
         <Table<List>
-            dataSource={props.lists}
+            dataSource={lists}
             rowKey={record => record.id.toString()}
-            loading={props.lists.length ? false : true}
+            loading={lists.length ? false : true}
             size="small"
             pagination={{ size: "small", simple: true, style: { float: "left" }, pageSize: tablePageSize.pageSize }}
             scroll={{ x: tablePageSize.isNarrowWindow ? undefined : 1200 }}>
@@ -40,7 +41,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 dataIndex={nameof<List>("id")}
                 className={styles.nogrow}
                 fixed="left"
-                render={(_text: string, record: List) => <ListInfoButton listName={record.name} {...props} />} />
+                render={(_text: string, record: List) => <ListInfoButton listName={record.name} {...routeComponentProps} />} />
             <Table.Column<List>
                 title="Name"
                 dataIndex={nameof<List>("name")}
@@ -63,32 +64,32 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                     title="Software"
                     dataIndex={nameof<List>("syntaxId")}
                     sorter={(a, b) => {
-                        const getSoftwareIds = (l: List) => props.software.filter((s: Software) => s.syntaxIds.includes(l.syntaxId)).map(s => s.id);
+                        const getSoftwareIds = (l: List) => software.filter((s: Software) => s.syntaxIds.includes(l.syntaxId)).map(s => s.id);
                         const aSoftwareIds = getSoftwareIds(a);
                         const bSoftwareIds = getSoftwareIds(b);
-                        return arraySorter(aSoftwareIds, bSoftwareIds, props.software);
+                        return arraySorter(aSoftwareIds, bSoftwareIds, software);
                     }}
                     width={143}
                     className={styles.nogrow}
-                    render={(syntaxId: number) => syntaxId ? <SoftwareCloud software={props.software.filter((s: Software) => s.syntaxIds.includes(syntaxId))} /> : null} />}
+                    render={(syntaxId: number) => syntaxId ? <SoftwareCloud software={software.filter((s: Software) => s.syntaxIds.includes(syntaxId))} /> : null} />}
             {tablePageSize.isNarrowWindow
                 ? null
                 : <Table.Column<List>
                     title="Languages"
                     dataIndex={nameof<List>("languageIds")}
-                    sorter={(a, b) => arraySorter(a.languageIds, b.languageIds, props.languages)}
+                    sorter={(a, b) => arraySorter(a.languageIds, b.languageIds, languages)}
                     width={125}
                     className={styles.nogrow}
-                    render={(languageIds: number[]) => languageIds ? <LanguageCloud languages={props.languages.filter((l: Language) => languageIds.includes(l.id))} /> : null} />}
+                    render={(languageIds: number[]) => languageIds ? <LanguageCloud languages={languages.filter((l: Language) => languageIds.includes(l.id))} /> : null} />}
             {tablePageSize.isNarrowWindow
                 ? null
                 : <Table.Column<List>
                     title="Tags"
                     dataIndex={nameof<List>("tagIds")}
-                    sorter={(a, b) => arraySorter(a.tagIds, b.tagIds, props.tags)}
+                    sorter={(a, b) => arraySorter(a.tagIds, b.tagIds, tags)}
                     width={275}
                     className={styles.nogrow}
-                    render={(tagIds: number[]) => tagIds ? <TagCloud tags={props.tags.filter((t: Tag) => tagIds.includes(t.id))} /> : null} />}
+                    render={(tagIds: number[]) => tagIds ? <TagCloud tags={tags.filter((t: Tag) => tagIds.includes(t.id))} /> : null} />}
         </Table>
     );
 };
