@@ -10,7 +10,7 @@ interface Props {
 };
 
 export const ListInfoButton = (props: RouteComponentProps & Props) => {
-  const listPath = `/${slugify(props.list.name)}`;
+  const listPath = `/lists/${slugify(props.list.name)}`;
   return (
     <Button
       type="primary"

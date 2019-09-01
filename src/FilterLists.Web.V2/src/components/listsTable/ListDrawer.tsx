@@ -26,5 +26,5 @@ export const ListDrawer = (props: Props) => {
                 {...rp} />
             : props.lists && props.lists.length && <Redirect to={{ pathname: "/", }} />;
     };
-    return <Route path="/:listSlug" render={renderDrawer} />;
+    return <Route path="/lists/:listSlug" render={renderDrawer} />;
 };
