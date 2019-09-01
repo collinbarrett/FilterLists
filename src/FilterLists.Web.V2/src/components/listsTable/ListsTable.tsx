@@ -62,7 +62,13 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 : <Table.Column<List>
                     title="Software"
                     dataIndex={nameof<List>("syntaxId")}
-                    width={160}
+                    sorter={(a, b) => {
+                        const getSoftwareIds = (l: List) => props.software.filter((s: Software) => s.syntaxIds.includes(l.syntaxId)).map(s => s.id);
+                        const aSoftwareIds = getSoftwareIds(a);
+                        const bSoftwareIds = getSoftwareIds(b);
+                        return arraySorter(aSoftwareIds, bSoftwareIds, props.software);
+                    }}
+                    width={140}
                     className={styles.nogrow}
                     render={(syntaxId: number) => syntaxId ? <SoftwareCloud software={props.software.filter((s: Software) => s.syntaxIds.includes(syntaxId))} /> : null} />}
             {tablePageSize.isNarrowWindow
