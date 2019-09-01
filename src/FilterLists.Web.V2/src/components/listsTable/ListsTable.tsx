@@ -6,11 +6,13 @@ import { useTablePageSizer } from '../../hooks';
 import { Language } from '../../interfaces/Language';
 import { License } from '../../interfaces/License';
 import { List } from '../../interfaces/List';
+import { Software } from '../../interfaces/Software';
 import { Tag } from '../../interfaces/Tag';
 import { nameof } from '../../utils';
 import { Description } from '../Description';
 import { LanguageCloud } from '../languageCloud';
 import { ListInfoButton } from '../ListInfoButton';
+import { SoftwareCloud } from '../softwareCloud';
 import { TagCloud } from '../tagCloud';
 import { arraySorter } from './arraySorter';
 import styles from './ListsTable.module.css';
@@ -19,6 +21,7 @@ interface Props {
     lists: List[];
     languages: Language[];
     licenses: License[];
+    software: Software[];
     tags: Tag[];
 };
 
@@ -59,8 +62,9 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 : <Table.Column<List>
                     title="Software"
                     dataIndex={nameof<List>("syntaxId")}
+                    width={160}
                     className={styles.nogrow}
-                    render={(text: string) => <div>{text}</div>} />}
+                    render={(syntaxId: number) => syntaxId ? <SoftwareCloud software={props.software.filter((s: Software) => s.syntaxIds.includes(syntaxId))} /> : null} />}
             {tablePageSize.isNarrowWindow
                 ? null
                 : <Table.Column<List>
