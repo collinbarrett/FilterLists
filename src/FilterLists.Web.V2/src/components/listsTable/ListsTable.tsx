@@ -129,6 +129,13 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                     sorter={(a, b) => arraySorter(a.tagIds, b.tagIds, tags)}
                     width={275}
                     className={styles.nogrow}
+                    filters={tags.map(t => ({
+                        text: <Tag title={t.description}>{t.name}</Tag>,
+                        value: t.id.toString()
+                    }))}
+                    onFilter={(value, record) => record.tagIds
+                        ? record.tagIds.includes(+value)
+                        : false}
                     render={(tagIds: number[]) =>
                         tagIds
                             ? <TagCloud tags={tags.filter((t: TagInterface) => tagIds.includes(t.id))} />
