@@ -1,7 +1,7 @@
 import React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
-import { useLanguages, useLicenses, useLists, useSoftware, useTags } from '../../hooks';
+import { useLanguages, useLicenses, useLists, useSoftware, useSyntaxes, useTags } from '../../hooks';
 import { ListDrawer } from './ListDrawer';
 import { ListsTable } from './ListsTable';
 
@@ -10,6 +10,7 @@ export const ListsTableHoc = (props: RouteComponentProps) => {
   const languages = useLanguages();
   const licenses = useLicenses();
   const software = useSoftware();
+  const syntaxes = useSyntaxes();
   const tags = useTags();
   return (
     <>
@@ -25,6 +26,7 @@ export const ListsTableHoc = (props: RouteComponentProps) => {
         languages={languages}
         licenses={licenses}
         software={software}
+        syntaxes={syntaxes}
         tags={tags} />
     </>
   );

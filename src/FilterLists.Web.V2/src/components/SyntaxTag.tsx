@@ -3,24 +3,24 @@ import * as React from 'react';
 
 interface Props {
   name: string;
-  descriptionUrl: string;
+  definitionUrl: string;
 };
 
-export const LicenseTag = (props: Props) =>
+export const SyntaxTag = (props: Props) =>
   props.name
     ? <>
-      <h3>License:</h3>
+      <h3>Syntax:</h3>
       <Tag>
         <TagContents
           name={props.name}
-          descriptionUrl={props.descriptionUrl} />
+          definitionUrl={props.definitionUrl} />
       </Tag>
     </>
     : null;
 
 const TagContents = (props: Props) =>
-  props.descriptionUrl
-    ? <a href={props.descriptionUrl}
+  props.definitionUrl
+    ? <a href={props.definitionUrl}
       target="_blank"
       rel="noopener noreferrer">
       {props.name}

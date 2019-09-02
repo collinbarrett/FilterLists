@@ -7,6 +7,7 @@ import { Language } from '../interfaces/Language';
 import { License } from '../interfaces/License';
 import { List } from '../interfaces/List';
 import { Software } from '../interfaces/Software';
+import { Syntax } from '../interfaces/Syntax';
 import { Tag } from '../interfaces/Tag';
 import { Description } from './Description';
 import { LanguageCloud } from './languageCloud';
@@ -15,13 +16,15 @@ import { LinkButton } from './LinkButton';
 import { PublishedDate } from './PublishedDate';
 import { SoftwareCloud } from './softwareCloud';
 import { SubscribeButtons } from './SubscribeButtons';
+import { SyntaxTag } from './SyntaxTag';
 import { TagCloud } from './tagCloud';
 
 interface Props {
   list: List;
   languages: Language[];
-  license: License;
+  license: License | undefined;
   software: Software[];
+  syntax: Syntax | undefined;
   tags: Tag[];
 };
 
@@ -50,9 +53,14 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
       <TagCloud
         tags={props.tags}
         showLabel={true} />
-      <LicenseTag
-        name={props.license && props.license.name}
-        descriptionUrl={props.license && props.license.descriptionUrl} />
+      {props.license &&
+        <LicenseTag
+          name={props.license.name}
+          descriptionUrl={props.license.descriptionUrl} />}
+      {props.syntax &&
+        <SyntaxTag
+          name={props.syntax.name}
+          definitionUrl={props.syntax.definitionUrl} />}
       <SoftwareCloud
         software={props.software}
         showLabel={true} />
