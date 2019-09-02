@@ -51,15 +51,12 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
         tags={props.tags}
         showLabel={true} />
       <LicenseTag
-        name={props.license.name}
-        descriptionUrl={props.license.descriptionUrl}
-        showLabel={true} />
+        name={props.license && props.license.name}
+        descriptionUrl={props.license.descriptionUrl} />
       <SoftwareCloud
         software={props.software}
         showLabel={true} />
-      <PublishedDate
-        publishedDate={props.list.publishedDate}
-        showLabel={true} />
+      <PublishedDate publishedDate={props.list.publishedDate} />
       <Divider />
       <ButtonGroup style={{ display: "inherit" }}>
         <SubscribeButtons

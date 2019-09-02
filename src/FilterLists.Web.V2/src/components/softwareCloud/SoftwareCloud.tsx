@@ -15,10 +15,10 @@ export const SoftwareCloud = (props: Props) =>
       {props.showLabel && <h3>{`Software:`}</h3>}
       {props.software.map((s: Software, i: number) =>
         s.homeUrl
-          ? <a
-            key={i}
+          ? <a key={i}
             href={s.homeUrl}
-            target="_blank" rel="noopener noreferrer">
+            target="_blank"
+            rel="noopener noreferrer">
             <SoftwareIcon id={s.id} />
           </a>
           : <SoftwareIcon key={i} id={s.id} />)}

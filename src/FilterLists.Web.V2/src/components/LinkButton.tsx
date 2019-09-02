@@ -19,7 +19,8 @@ export const LinkButton = (props: Props) =>
       block
       style={{ borderLeftColor: "rgb(217, 217, 217)" }} //HACK: override buggy style in antd
       icon={props.icon}
-      target="_blank" rel="noopener noreferrer" >
+      target="_blank"
+      rel="noopener noreferrer" >
       {props.text}
     </Button >
     : null;

@@ -34,14 +34,20 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             rowKey={record => record.id.toString()}
             loading={lists.length ? false : true}
             size="small"
-            pagination={{ size: "small", simple: true, style: { float: "left" }, pageSize: tablePageSize.pageSize }}
+            pagination={{
+                size: "small",
+                simple: true,
+                style: { float: "left" },
+                pageSize: tablePageSize.pageSize
+            }}
             scroll={{ x: tablePageSize.isNarrowWindow ? undefined : 1200 }}>
             <Table.Column<List>
                 title="Info"
                 dataIndex={nameof<List>("id")}
                 className={styles.nogrow}
                 fixed="left"
-                render={(_text: string, record: List) => <ListInfoButton listName={record.name} {...routeComponentProps} />} />
+                render={(_id: number, list: List) =>
+                    <ListInfoButton listName={list.name} {...routeComponentProps} />} />
             <Table.Column<List>
                 title="Name"
                 dataIndex={nameof<List>("name")}
@@ -50,14 +56,18 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 width={tablePageSize.isNarrowWindow ? undefined : 200}
                 className={styles.nogrow}
                 fixed="left"
-                render={(text: string) => <div>{text}</div>} />
+                render={(name: string) =>
+                    <div>{name}</div>} />
             {tablePageSize.isNarrowWindow
                 ? null
                 : <Table.Column<List>
                     title="Description"
                     dataIndex={nameof<List>("description")}
                     className={styles.nogrow}
-                    render={(_text: string, record: List) => <Description {...record} />} />}
+                    render={(description: string, list: List) =>
+                        <Description
+                            description={description}
+                            descriptionSourceUrl={list.descriptionSourceUrl} />} />}
             {tablePageSize.isNarrowWindow
                 ? null
                 : <Table.Column<List>
@@ -65,13 +75,14 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                     dataIndex={nameof<List>("syntaxId")}
                     sorter={(a, b) => {
                         const getSoftwareIds = (l: List) => software.filter((s: Software) => s.syntaxIds.includes(l.syntaxId)).map(s => s.id);
-                        const aSoftwareIds = getSoftwareIds(a);
-                        const bSoftwareIds = getSoftwareIds(b);
-                        return arraySorter(aSoftwareIds, bSoftwareIds, software);
+                        return arraySorter(getSoftwareIds(a), getSoftwareIds(b), software);
                     }}
                     width={143}
                     className={styles.nogrow}
-                    render={(syntaxId: number) => syntaxId ? <SoftwareCloud software={software.filter((s: Software) => s.syntaxIds.includes(syntaxId))} /> : null} />}
+                    render={(syntaxId: number) =>
+                        syntaxId
+                            ? <SoftwareCloud software={software.filter((s: Software) => s.syntaxIds.includes(syntaxId))} />
+                            : null} />}
             {tablePageSize.isNarrowWindow
                 ? null
                 : <Table.Column<List>
@@ -80,7 +91,10 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                     sorter={(a, b) => arraySorter(a.languageIds, b.languageIds, languages)}
                     width={125}
                     className={styles.nogrow}
-                    render={(languageIds: number[]) => languageIds ? <LanguageCloud languages={languages.filter((l: Language) => languageIds.includes(l.id))} /> : null} />}
+                    render={(languageIds: number[]) =>
+                        languageIds
+                            ? <LanguageCloud languages={languages.filter((l: Language) => languageIds.includes(l.id))} />
+                            : null} />}
             {tablePageSize.isNarrowWindow
                 ? null
                 : <Table.Column<List>
@@ -89,7 +103,10 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                     sorter={(a, b) => arraySorter(a.tagIds, b.tagIds, tags)}
                     width={275}
                     className={styles.nogrow}
-                    render={(tagIds: number[]) => tagIds ? <TagCloud tags={tags.filter((t: Tag) => tagIds.includes(t.id))} /> : null} />}
+                    render={(tagIds: number[]) =>
+                        tagIds
+                            ? <TagCloud tags={tags.filter((t: Tag) => tagIds.includes(t.id))} />
+                            : null} />}
         </Table>
     );
 };
