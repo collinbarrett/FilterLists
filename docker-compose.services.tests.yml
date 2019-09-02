@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   api:
-    image: collinbarrett/filterlists.api:test-services
+    image: collinbarrett2/filterlists.api:test-services
     build:
       context: .
       dockerfile: src/FilterLists.Api/Dockerfile
@@ -14,7 +14,7 @@ services:
 
 networks:
   test-services:
-  
+
 volumes:
   test-services-results:
     external: true

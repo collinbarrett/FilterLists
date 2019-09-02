@@ -12,20 +12,20 @@
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=3"><img src="https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/3.svg" alt="Azure DevOps builds" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_test/analytics?definitionId=3&contextType=build"><img alt="Azure DevOps tests" src="https://img.shields.io/azure-devops/tests/collinbarrett/FilterLists/3.svg"></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=3"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4.svg" alt="Azure DevOps releases" /></a>
-<a href="https://hub.docker.com/r/collinbarrett/filterlists.api"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.api.svg" alt="Docker Pulls" /></a>
+<a href="https://hub.docker.com/r/collinbarrett2/filterlists.api"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.api.svg" alt="Docker Pulls" /></a>
 <br/>An ASP.NET Core API CRUD-ing with a MariaDB instance via EF Core.</p>
 
 <p align="center"><b>Website:</b> <a href="https://filterlists.com/"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=12"><img src="https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/12.svg" alt="Azure DevOps builds" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=4"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/4/5.svg" alt="Azure DevOps releases" /></a>
-<a href="https://hub.docker.com/r/collinbarrett/filterlists.web"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.web.svg" alt="Docker Pulls" /></a>
+<a href="https://hub.docker.com/r/collinbarrett2/filterlists.web"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.web.svg" alt="Docker Pulls" /></a>
 <br/>A React & TypeScript UI primarily featuring a <a href="https://www.npmjs.com/package/react-table">react-table</a> instance.</p>
 
 <p align="center"><b>Agent:</b> 
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=17"><img src="https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/17.svg" alt="Azure DevOps builds" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_test/analytics?definitionId=17&contextType=build"><img alt="Azure DevOps tests" src="https://img.shields.io/azure-devops/tests/collinbarrett/FilterLists/17.svg"></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=6"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/6/7.svg" alt="Azure DevOps releases" /></a>
-<a href="https://hub.docker.com/r/collinbarrett/filterlists.agent"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.agent.svg" alt="Docker Pulls" /></a>
+<a href="https://hub.docker.com/r/collinbarrett2/filterlists.agent"><img src="https://img.shields.io/docker/pulls/collinbarrett/filterlists.agent.svg" alt="Docker Pulls" /></a>
 <br/>A .NET Core console application performing crawling, archiving, and URL validation.</p>
 
 # Background
@@ -128,10 +128,10 @@ The Agent takes the following command line arguments:
 
 # Acknowledgements
 
-  - Imre Kristoffer Eilertsen [@DandelionSprout](https://github.com/DandelionSprout) : major contributor
-  - Raymond Hill [@gorhill](https://github.com/gorhill) : uBlock Origin owner, advised on some technical aspects of FilterLists
-  - Andrey Meshkov [@ameshkov](https://github.com/ameshkov) : AdGuard CTO, advised on some technical aspects of FilterLists
-  - [More contributors](https://github.com/collinbarrett/FilterLists/graphs/contributors)
+- Imre Kristoffer Eilertsen [@DandelionSprout](https://github.com/DandelionSprout) : major contributor
+- Raymond Hill [@gorhill](https://github.com/gorhill) : uBlock Origin owner, advised on some technical aspects of FilterLists
+- Andrey Meshkov [@ameshkov](https://github.com/ameshkov) : AdGuard CTO, advised on some technical aspects of FilterLists
+- [More contributors](https://github.com/collinbarrett/FilterLists/graphs/contributors)
 
 # Miscellany
 

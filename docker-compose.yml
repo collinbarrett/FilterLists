@@ -13,7 +13,7 @@ services:
       - ./ops/nginx/svr-includes:/etc/nginx/svr-includes:ro
 
   web:
-    image: collinbarrett/filterlists.web:latest
+    image: collinbarrett2/filterlists.web:latest
     restart: always
     build:
       context: .
@@ -23,7 +23,7 @@ services:
       - reverse-proxy
 
   api:
-    image: collinbarrett/filterlists.api:latest
+    image: collinbarrett2/filterlists.api:latest
     restart: always
     build:
       context: .
@@ -53,11 +53,11 @@ services:
       [
         "mysqld",
         "--character-set-server=utf8mb4",
-        "--collation-server=utf8mb4_unicode_520_ci"
+        "--collation-server=utf8mb4_unicode_520_ci",
       ]
 
   agent:
-    image: collinbarrett/filterlists.agent:latest
+    image: collinbarrett2/filterlists.agent:latest
     build:
       context: .
       dockerfile: src/FilterLists.Agent/Dockerfile

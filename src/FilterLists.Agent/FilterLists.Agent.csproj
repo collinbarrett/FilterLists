@@ -36,7 +36,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="CommandLineParser" Version="2.6.0" />
-		<PackageReference Include="LibGit2Sharp" Version="0.26.0" />
+		<PackageReference Include="LibGit2Sharp" Version="0.26.1" />
 		<PackageReference Include="MediatR" Version="7.0.0" />
 		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
 		<PackageReference Include="Microsoft.ApplicationInsights" Version="2.10.0" />
@@ -51,14 +51,14 @@
 		<PackageReference Include="Microsoft.Extensions.Localization" Version="2.2.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
 		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.2.0" />
-		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.12" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.2" />
 		<PackageReference Include="Octokit" Version="0.32.0" />
 		<PackageReference Include="Polly" Version="7.1.0" />
 		<PackageReference Include="RestSharp" Version="106.6.10" />
-		<PackageReference Include="Serilog.Extensions.Logging" Version="2.0.4" />
-		<PackageReference Include="Serilog.Sinks.ApplicationInsights" Version="3.0.3" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+		<PackageReference Include="Serilog.Sinks.ApplicationInsights" Version="3.0.4" />
 		<PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
-		<PackageReference Include="SharpCompress" Version="0.23.0" />
+		<PackageReference Include="SharpCompress" Version="0.24.0" />
 	</ItemGroup>
 
 	<ItemGroup>

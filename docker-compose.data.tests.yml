@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   api:
-    image: collinbarrett/filterlists.api:test-data
+    image: collinbarrett2/filterlists.api:test-data
     build:
       context: .
       dockerfile: src/FilterLists.Api/Dockerfile
@@ -27,7 +27,7 @@ services:
       [
         "mysqld",
         "--character-set-server=utf8mb4",
-        "--collation-server=utf8mb4_unicode_520_ci"
+        "--collation-server=utf8mb4_unicode_520_ci",
       ]
 
 networks:
