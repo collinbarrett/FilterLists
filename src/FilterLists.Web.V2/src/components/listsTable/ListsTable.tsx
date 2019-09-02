@@ -2,7 +2,7 @@ import { Table } from 'antd';
 import React from 'react';
 import { RouteComponentProps } from 'react-router';
 
-import { useTablePageSizer } from '../../hooks';
+import { useSearchColumnFilter, useTablePageSizer } from '../../hooks';
 import { Language } from '../../interfaces/Language';
 import { License } from '../../interfaces/License';
 import { List } from '../../interfaces/List';
@@ -28,6 +28,8 @@ interface Props {
 export const ListsTable = (props: RouteComponentProps & Props) => {
     const { lists, languages, licenses, software, tags, ...routeComponentProps } = props;
     const tablePageSize = useTablePageSizer();
+    const searchNameColumn = useSearchColumnFilter<List>(nameof<List>("name"));
+    const searchDescriptionColumn = useSearchColumnFilter<List>(nameof<List>("description"));
     return (
         <Table<List>
             dataSource={lists}
@@ -56,6 +58,9 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 width={tablePageSize.isNarrowWindow ? undefined : 200}
                 className={styles.nogrow}
                 fixed="left"
+                filterDropdown={searchNameColumn.filterDropdown}
+                filterIcon={searchNameColumn.filterIcon}
+                onFilter={searchNameColumn.onFilter}
                 render={(name: string) =>
                     <div>{name}</div>} />
             {tablePageSize.isNarrowWindow
@@ -64,6 +69,9 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                     title="Description"
                     dataIndex={nameof<List>("description")}
                     className={styles.nogrow}
+                    filterDropdown={searchDescriptionColumn.filterDropdown}
+                    filterIcon={searchDescriptionColumn.filterIcon}
+                    onFilter={searchDescriptionColumn.onFilter}
                     render={(description: string, list: List) =>
                         <Description
                             description={description}
