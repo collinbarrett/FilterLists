@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   agent:
-    image: collinbarrett/filterlists.agent:test-agent
+    image: collinbarrett2/filterlists.agent:test-agent
     build:
       context: .
       dockerfile: src/FilterLists.Agent/Dockerfile
@@ -14,7 +14,7 @@ services:
 
 networks:
   test-agent:
-  
+
 volumes:
   test-agent-results:
     external: true
