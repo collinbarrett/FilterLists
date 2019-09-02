@@ -1,6 +1,6 @@
 import { Icon, Layout, Menu } from 'antd';
 import React from 'react';
-import { BrowserRouter as Router, Route, RouteComponentProps, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, RouteComponentProps, Switch } from 'react-router-dom';
 
 import { ListsTable } from './components';
 
@@ -28,10 +28,12 @@ export const App: React.FC = () =>
   </Router>;
 
 const Logo = () =>
-  <img src={`${process.env.PUBLIC_URL}/logo_filterlists.png`}
-    alt="FilterLists logo"
-    height="44px"
-    style={{ background: '#fff' }} />;
+  <Link to="/">
+    <img src={`${process.env.PUBLIC_URL}/logo_filterlists.png`}
+      alt="FilterLists logo"
+      height="44px"
+      style={{ background: '#fff' }} />
+  </Link>;
 
 const NotFound = (props: RouteComponentProps) =>
   <h2>
