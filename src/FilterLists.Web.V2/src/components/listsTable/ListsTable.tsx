@@ -12,7 +12,7 @@ import { nameof } from '../../utils';
 import { Description } from '../Description';
 import { LanguageCloud } from '../languageCloud';
 import { ListInfoButton } from '../ListInfoButton';
-import { SoftwareCloud } from '../softwareCloud';
+import { SoftwareCloud, SoftwareIcon } from '../softwareCloud';
 import { TagCloud } from '../tagCloud';
 import { arraySorter } from './arraySorter';
 import styles from './ListsTable.module.css';
@@ -87,6 +87,14 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                     }}
                     width={143}
                     className={styles.nogrow}
+                    filters={software.map(s => ({
+                        text: <>
+                            <SoftwareIcon id={s.id} />&nbsp;
+                            {s.name}
+                        </>,
+                        value: s.name
+                    }))}
+                    onFilter={(value, record) => software.filter((s: Software) => s.name === value).flatMap(s => s.syntaxIds).includes(record.syntaxId)}
                     render={(syntaxId: number) =>
                         syntaxId
                             ? <SoftwareCloud software={software.filter((s: Software) => s.syntaxIds.includes(syntaxId))} />
