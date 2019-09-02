@@ -1,0 +1,21 @@
+.nogrow > * {
+  /* limit table cells from wrapping more than 2 lines */
+  /* https://stackoverflow.com/a/13924997/2343739 */
+  /* https://stackoverflow.com/a/22042054/2343739 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-height: 1.5; /* fallback */
+  max-height: 3em; /* fallback */
+
+  /* fixed row height */
+  min-height: 3em;
+}
+
+.nogrow {
+  /* eliminate top and bottom padding in cells to fit more rows per page */
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}

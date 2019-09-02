@@ -1,0 +1,4 @@
+/* allow for 2nd row's bottom border to not be chopped in AllListsTable */
+.grow {
+  max-height: none !important;
+}

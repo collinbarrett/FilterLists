@@ -1,3 +1,3 @@
-﻿import { getContrast } from "./GetContrast";
+import { nameof } from './nameof';
 
-export { getContrast };
+export { nameof };
