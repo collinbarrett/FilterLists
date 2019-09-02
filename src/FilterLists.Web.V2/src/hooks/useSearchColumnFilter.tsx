@@ -51,10 +51,7 @@ export const useSearchColumnFilter = <T extends {}>(dataIndex: string) => {
             ),
             onFilter: (value, record) => {
                 const searchValue = (record as any)[dataIndex];
-                return searchValue && searchValue
-                    .toString()
-                    .toLowerCase()
-                    .includes(value.toLowerCase())
+                return searchValue && searchValue.toString().toLowerCase().includes(value.toString().toLowerCase())
             }
         })
     }, [dataIndex]);
