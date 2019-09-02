@@ -3,7 +3,7 @@
 
 # init base
 FROM nginx:alpine as base
-# COPY ./src/FilterLists.Web/nginx/conf.d /etc/nginx/conf.d
+COPY ./src/FilterLists.Web/nginx/conf.d /etc/nginx/conf.d
 
 # init build
 FROM node:alpine as build
