@@ -1,4 +1,4 @@
-import { Table } from 'antd';
+import { Table, Tag } from 'antd';
 import React from 'react';
 import { RouteComponentProps } from 'react-router';
 
@@ -7,7 +7,7 @@ import { Language } from '../../interfaces/Language';
 import { License } from '../../interfaces/License';
 import { List } from '../../interfaces/List';
 import { Software } from '../../interfaces/Software';
-import { Tag } from '../../interfaces/Tag';
+import { Tag as TagInterface } from '../../interfaces/Tag';
 import { nameof } from '../../utils';
 import { Description } from '../Description';
 import { LanguageCloud } from '../languageCloud';
@@ -22,7 +22,7 @@ interface Props {
     languages: Language[];
     licenses: License[];
     software: Software[];
-    tags: Tag[];
+    tags: TagInterface[];
 };
 
 export const ListsTable = (props: RouteComponentProps & Props) => {
@@ -107,6 +107,16 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                     sorter={(a, b) => arraySorter(a.languageIds, b.languageIds, languages)}
                     width={125}
                     className={styles.nogrow}
+                    filters={languages.map(l => ({
+                        text: <>
+                            <Tag title={l.name}>{l.iso6391}</Tag>&nbsp;
+                            {l.name}
+                        </>,
+                        value: l.id.toString()
+                    }))}
+                    onFilter={(value, record) => record.languageIds
+                        ? record.languageIds.includes(+value)
+                        : false}
                     render={(languageIds: number[]) =>
                         languageIds
                             ? <LanguageCloud languages={languages.filter((l: Language) => languageIds.includes(l.id))} />
@@ -121,7 +131,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                     className={styles.nogrow}
                     render={(tagIds: number[]) =>
                         tagIds
-                            ? <TagCloud tags={tags.filter((t: Tag) => tagIds.includes(t.id))} />
+                            ? <TagCloud tags={tags.filter((t: TagInterface) => tagIds.includes(t.id))} />
                             : null} />}
         </Table>
     );
