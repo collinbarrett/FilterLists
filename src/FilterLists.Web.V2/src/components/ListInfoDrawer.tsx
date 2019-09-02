@@ -52,7 +52,7 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
         showLabel={true} />
       <LicenseTag
         name={props.license && props.license.name}
-        descriptionUrl={props.license.descriptionUrl} />
+        descriptionUrl={props.license && props.license.descriptionUrl} />
       <SoftwareCloud
         software={props.software}
         showLabel={true} />
