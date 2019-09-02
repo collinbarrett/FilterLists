@@ -25,7 +25,7 @@ export const useSearchColumnFilter = <T extends {}>(dataIndex: string) => {
             filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => (
                 <div style={{ padding: 8 }}>
                     <Input
-                        placeholder={`Search ${dataIndex}`}
+                        placeholder={`Search ${dataIndex.charAt(0).toUpperCase() + dataIndex.slice(1)}`}
                         value={selectedKeys && selectedKeys[0]}
                         onChange={e => setSelectedKeys && setSelectedKeys(e.target.value ? [e.target.value] : [])}
                         onPressEnter={() => handleSearch(confirm)}
@@ -35,20 +35,18 @@ export const useSearchColumnFilter = <T extends {}>(dataIndex: string) => {
                         onClick={() => handleSearch(confirm)}
                         icon="search"
                         size="small"
-                        style={{ width: 90, marginRight: 8 }}                    >
+                        style={{ width: 90, marginRight: 8 }} >
                         Search
                     </Button>
                     <Button
                         onClick={() => handleReset(clearFilters)}
                         size="small"
-                        style={{ width: 90 }}>
+                        style={{ width: 90 }} >
                         Reset
                     </Button>
                 </div>
             ),
-            filterIcon: filtered => (
-                <Icon type="search" style={{ color: filtered ? '#1890ff' : undefined }} />
-            ),
+            filterIcon: filtered => <Icon type="search" style={{ color: filtered ? '#1890ff' : undefined }} />,
             onFilter: (value, record) => {
                 const searchValue = (record as any)[dataIndex];
                 return searchValue && searchValue.toString().toLowerCase().includes(value.toString().toLowerCase())
