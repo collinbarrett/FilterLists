@@ -33,7 +33,10 @@ import {
     img31,
     img32,
     img33,
-    img34
+    img34,
+    img35,
+    img36,
+    img37
 } from './imgs';
 
 interface Props {
@@ -87,5 +90,8 @@ const icons: { [id: number]: Icon; } = {
     31: { image: img31, imageTitle: "AdGuard Home" },
     32: { image: img32, imageTitle: "AdNauseam" },
     33: { image: img33, imageTitle: "Legacy Unix derivatives" },
-    34: { image: img34, imageTitle: "Windows command line" }
+    34: { image: img34, imageTitle: "Windows command line" },
+    35: { image: img35, imageTitle: "Shadowsocks" },
+    36: { image: img36, imageTitle: "ShadowsocksR" },
+    37: { image: img37, imageTitle: "Shadowrocket" }
 };

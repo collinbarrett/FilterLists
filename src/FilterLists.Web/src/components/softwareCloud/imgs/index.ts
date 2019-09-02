@@ -31,6 +31,9 @@ import img31 from './31-AdGuard-Home.png';
 import img32 from './32-AdNauseam.png';
 import img33 from './33-Legacy-Unix-Derivatives.png';
 import img34 from './34-Windows-command-line.png';
+import img35 from './35-Shadowsocks.png';
+import img36 from './36-ShadowsocksR.png';
+import img37 from './37-Shadowrocket.png';
 
 export {
     img01,
@@ -65,5 +68,8 @@ export {
     img31,
     img32,
     img33,
-    img34
+    img34,
+    img35,
+    img36,
+    img37
 };
