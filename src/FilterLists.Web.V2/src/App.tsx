@@ -43,7 +43,8 @@ const CopyrightAuthor = () =>
     ©{new Date().getFullYear()}&nbsp;
     <a href="https://collinmbarrett.com"
       title="Collin M. Barrett's Homepage"
-      target="_blank" rel="noopener noreferrer">
+      target="_blank"
+      rel="noopener noreferrer">
       Collin M. Barrett
     </a>
   </>;
@@ -51,34 +52,39 @@ const CopyrightAuthor = () =>
 const Twitter = () =>
   <a href="https://twitter.com/FilterLists"
     title="FilterLists on Twitter"
-    target="_blank" rel="noopener noreferrer">
+    target="_blank"
+    rel="noopener noreferrer">
     <Icon type="twitter" /> Twitter
   </a>;
 
 const Community = () =>
   <a href="https://hub.filterlists.com"
     title="FilterLists Discourse community forum"
-    target="_blank" rel="noopener noreferrer">
+    target="_blank"
+    rel="noopener noreferrer">
     <Icon type="team" /> Community
   </a>;
 
 const GitHub = () =>
   <a href="https://github.com/collinbarrett/FilterLists"
     title="FilterLists git repository on GitHub"
-    target="_blank" rel="noopener noreferrer">
+    target="_blank"
+    rel="noopener noreferrer">
     <Icon type="github" /> GitHub
   </a>;
 
 const Api = () =>
   <a href="/api/v1/lists"
     title="FilterLists API lists endpoint"
-    target="_blank" rel="noopener noreferrer">
+    target="_blank"
+    rel="noopener noreferrer">
     <Icon type="api" /> API
   </a>;
 
 const Donate = () =>
   <a href="https://beerpay.io/collinbarrett/FilterLists"
     title="Donate to FilterLists with Beerpay"
-    target="_blank" rel="noopener noreferrer">
+    target="_blank"
+    rel="noopener noreferrer">
     <Icon type="dollar" /> Donate
   </a>;
