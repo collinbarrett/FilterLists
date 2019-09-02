@@ -21,6 +21,7 @@ export const LicenseTag = (props: Props) =>
 const TagContents = (props: Props) =>
   props.descriptionUrl
     ? <a href={props.descriptionUrl}
+      title={`View ${props.name}'s homepage.`}
       target="_blank"
       rel="noopener noreferrer">
       {props.name}

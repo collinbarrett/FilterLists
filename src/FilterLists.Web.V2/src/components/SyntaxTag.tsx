@@ -21,6 +21,7 @@ export const SyntaxTag = (props: Props) =>
 const TagContents = (props: Props) =>
   props.definitionUrl
     ? <a href={props.definitionUrl}
+      title={`View ${props.name}'s homepage.`}
       target="_blank"
       rel="noopener noreferrer">
       {props.name}
