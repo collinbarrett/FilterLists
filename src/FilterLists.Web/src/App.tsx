@@ -21,7 +21,7 @@ export const App: React.FC = () =>
           </Switch>
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center', padding: '6px 50px', background: '#fff' }}>
+      <Footer style={{ textAlign: 'center', padding: '6px 50px', background: '#fff', lineHeight: '28px' }}>
         <CopyrightAuthor />
         <Twitter />
         <Community />
