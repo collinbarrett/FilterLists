@@ -30,7 +30,7 @@ export const ListDrawer = (props: Props) => {
                 syntax={list.syntaxId ? props.syntaxes.find(s => s.id === list.syntaxId) : undefined}
                 tags={list.tagIds && props.tags.filter((t: Tag) => list.tagIds.includes(t.id))}
                 {...rp} />
-            : (props.lists && props.lists.length && <Redirect to={{ pathname: "/", }} />) || null;
+            : (props.lists && props.lists.length) ? <Redirect to={{ pathname: "/", }} /> : null;
     };
     return <Route path="/lists/:listSlug" render={renderDrawer} />;
 };
