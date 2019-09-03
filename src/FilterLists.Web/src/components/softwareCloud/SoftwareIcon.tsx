@@ -49,7 +49,7 @@ export const SoftwareIcon = (props: Props) =>
             src={icons[props.id].image}
             height="20"
             alt={icons[props.id].imageTitle}
-            title={`View ${icons[props.id].imageTitle}'s homepage.`} />
+            title={icons[props.id].imageTitle} />
         : null;
 
 interface Icon {
