@@ -1,6 +1,7 @@
 <p align="center"><img src="https://github.com/collinbarrett/FilterLists/blob/master/imgs/logo_filterlists.png"></p>
 
-<p align="center"><a href="https://hub.filterlists.com"><img alt="Discourse status" src="https://img.shields.io/discourse/https/hub.filterlists.com/status.svg"></a>
+<p align="center"><a href="https://twitter.com/FilterLists"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/FilterLists?style=social"></a>
+<a href="https://hub.filterlists.com"><img alt="Discourse status" src="https://img.shields.io/discourse/https/hub.filterlists.com/status.svg"></a>
 <a href="https://github.com/collinbarrett/FilterLists/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/collinbarrett/filterlists.svg"></a>
 <a href="https://builtwithdot.net/project/125/filterlists"><img src="https://builtwithdot.net/project/125/filterlists/badge" alt="BuiltWithDot.Net shield" /></a>
 <a href="https://beerpay.io/collinbarrett/FilterLists"><img src="https://beerpay.io/collinbarrett/FilterLists/badge.svg?style=beer-square" alt="Beerpay" /></a>
