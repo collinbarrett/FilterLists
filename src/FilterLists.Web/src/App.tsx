@@ -1,4 +1,4 @@
-import { Icon, Layout, Menu } from 'antd';
+import { Icon, Layout, Menu, Tag } from 'antd';
 import React from 'react';
 import { BrowserRouter as Router, Link, Route, RouteComponentProps, Switch } from 'react-router-dom';
 
@@ -22,7 +22,12 @@ export const App: React.FC = () =>
         </div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>
-        <CopyrightAuthor /> | <Twitter /> | <Community /> | <GitHub /> | <Api /> | <Donate />
+        <CopyrightAuthor />
+        <Twitter />
+        <Community />
+        <GitHub />
+        <Api />
+        <Donate />
       </Footer>
     </Layout>
   </Router>;
@@ -41,7 +46,7 @@ const NotFound = (props: RouteComponentProps) =>
   </h2>;
 
 const CopyrightAuthor = () =>
-  <>
+  <Tag>
     ©{new Date().getFullYear()}&nbsp;
     <a href="https://collinmbarrett.com"
       title="Collin M. Barrett's Homepage"
@@ -49,44 +54,54 @@ const CopyrightAuthor = () =>
       rel="noopener noreferrer">
       Collin M. Barrett
     </a>
-  </>;
+  </Tag>;
 
 const Twitter = () =>
-  <a href="https://twitter.com/FilterLists"
-    title="FilterLists on Twitter"
-    target="_blank"
-    rel="noopener noreferrer">
-    <Icon type="twitter" /> Twitter
-  </a>;
+  <Tag>
+    <a href="https://twitter.com/FilterLists"
+      title="FilterLists on Twitter"
+      target="_blank"
+      rel="noopener noreferrer">
+      <Icon type="twitter" /> Twitter
+    </a>
+  </Tag>;
 
 const Community = () =>
-  <a href="https://hub.filterlists.com"
-    title="FilterLists Discourse community forum"
-    target="_blank"
-    rel="noopener noreferrer">
-    <Icon type="team" /> Community
-  </a>;
+  <Tag>
+    <a href="https://hub.filterlists.com"
+      title="FilterLists Discourse community forum"
+      target="_blank"
+      rel="noopener noreferrer">
+      <Icon type="team" /> Community
+    </a>
+  </Tag>;
 
 const GitHub = () =>
-  <a href="https://github.com/collinbarrett/FilterLists"
-    title="FilterLists git repository on GitHub"
-    target="_blank"
-    rel="noopener noreferrer">
-    <Icon type="github" /> GitHub
-  </a>;
+  <Tag>
+    <a href="https://github.com/collinbarrett/FilterLists"
+      title="FilterLists git repository on GitHub"
+      target="_blank"
+      rel="noopener noreferrer">
+      <Icon type="github" /> GitHub
+    </a>
+  </Tag>;
 
 const Api = () =>
-  <a href="/api/v1/lists"
-    title="FilterLists API lists endpoint"
-    target="_blank"
-    rel="noopener noreferrer">
-    <Icon type="api" /> API
-  </a>;
+  <Tag>
+    <a href="/api/v1/lists"
+      title="FilterLists API lists endpoint"
+      target="_blank"
+      rel="noopener noreferrer">
+      <Icon type="api" /> API
+    </a>
+  </Tag>;
 
 const Donate = () =>
-  <a href="https://beerpay.io/collinbarrett/FilterLists"
-    title="Donate to FilterLists with Beerpay"
-    target="_blank"
-    rel="noopener noreferrer">
-    <Icon type="dollar" /> Donate
-  </a>;
+  <Tag>
+    <a href="https://beerpay.io/collinbarrett/FilterLists"
+      title="Donate to FilterLists with Beerpay"
+      target="_blank"
+      rel="noopener noreferrer">
+      <Icon type="dollar" /> Donate
+    </a>
+  </Tag>;
