@@ -16,6 +16,6 @@ export const useTablePageSizer = () => {
 };
 
 const calculateSize = () => ({
-    pageSize: Math.floor((window.innerHeight - 211.5) / 56),
+    pageSize: Math.floor((window.innerHeight - 208) / 57),
     isNarrowWindow: window.innerWidth < 576 ? true : false
 });
