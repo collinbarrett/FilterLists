@@ -140,7 +140,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           className={styles.nogrow}
           filters={tags.map(t => ({
             text: <>
-              <Tag title={t.description}>{t.name}</Tag>&nbsp;
+              <Tag title={t.description}>{t.name}</Tag>
               ({visibleLists.filter(l => l.tagIds && l.tagIds.includes(t.id)).length})
             </>,
             value: t.id.toString()
