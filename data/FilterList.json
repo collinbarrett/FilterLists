@@ -4121,7 +4121,7 @@
     "licenseId": 11,
     "name": "HOSTS AdBlock - Anti-Annoyance - ReStyle Annoying Pages",
     "publishedDate": "2018-02-17T00:00:00",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2019-03-22T22:09:46",
     "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts/master/build/hosts_adblock_anti_annoyances_style_inject.txt"
   },
@@ -19500,5 +19500,16 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPepeList.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPepeList.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPepeList.txt"
+  },
+  {
+    "id": 1833,
+    "description": "Dark theme for filterlists.com for uBO & AdGuard",
+    "emailAddress": "hawkeye116477@gmail.com",
+    "homeUrl": "https://github.com/hawkeye116477/FilterListsDarkMode",
+    "issuesUrl": "https://github.com/hawkeye116477/FilterListsDarkMode/issues",
+    "licenseId": 8,
+    "name": "FilterLists Dark Mode",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/hawkeye116477/FilterListsDarkMode/master/DarkFilterLists.txt"
   }
 ]
