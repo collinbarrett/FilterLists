@@ -86,11 +86,12 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
           text="Policy"
           title={`View the types of rules that ${props.list.name} includes.`}
           icon="file-exclamation" />
-        <LinkButton
-          url={`mailto:${props.list.emailAddress}`}
-          text="Email"
-          title={`Email ${props.list.name}.`}
-          icon="mail" />
+        {props.list.emailAddress &&
+          <LinkButton
+            url={`mailto:${props.list.emailAddress}`}
+            text="Email"
+            title={`Email ${props.list.name}.`}
+            icon="mail" />}
         <LinkButton
           url={props.list.issuesUrl}
           text="GitHub Issues"
