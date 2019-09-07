@@ -55,6 +55,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         setVisibleLists(extra.currentDataSource)}>
       <Table.Column<List>
         title="Info"
+        key="Info"
         dataIndex={nameof<List>("id")}
         className={styles.nogrow}
         fixed="left"
@@ -62,6 +63,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           <ListInfoButton listName={list.name} {...routeComponentProps} />} />
       <Table.Column<List>
         title="Name"
+        key="Name"
         dataIndex={nameof<List>("name")}
         sorter={(a, b) => a.name.localeCompare(b.name)}
         defaultSortOrder={"ascend"}
@@ -77,6 +79,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         ? null
         : <Table.Column<List>
           title="Description"
+          key="Description"
           dataIndex={nameof<List>("description")}
           className={styles.nogrow}
           filterDropdown={searchDescriptionColumn.filterDropdown}
@@ -90,6 +93,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         ? null
         : <Table.Column<List>
           title="Software"
+          key="Software"
           dataIndex={nameof<List>("syntaxId")}
           sorter={(a, b) => {
             const getSoftwareIds = (l: List) => software.filter((s: Software) => s.syntaxIds.includes(l.syntaxId)).map(s => s.id);
@@ -114,6 +118,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         ? null
         : <Table.Column<List>
           title="Languages"
+          key="Languages"
           dataIndex={nameof<List>("languageIds")}
           sorter={(a, b) => arraySorter(a.languageIds, b.languageIds, languages)}
           width={125}
@@ -137,6 +142,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         ? null
         : <Table.Column<List>
           title="Tags"
+          key="Tags"
           dataIndex={nameof<List>("tagIds")}
           sorter={(a, b) => arraySorter(a.tagIds, b.tagIds, tags)}
           width={275}
@@ -159,6 +165,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         ? null
         : <Table.Column<List>
           title="Maintainers"
+          key="Maintainers"
           dataIndex={nameof<List>("maintainerIds")}
           sorter={(a, b) => arraySorter(a.maintainerIds, b.maintainerIds, maintainers)}
           width={191}
