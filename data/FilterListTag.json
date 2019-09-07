@@ -9062,5 +9062,25 @@
   {
     "filterListId": 1835,
     "tagId": 9
+  },
+  {
+    "filterListId": 1836,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1836,
+    "tagId": 3
+  },
+  {
+    "filterListId": 1836,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1838,
+    "tagId": 4
+  },
+  {
+    "filterListId": 1839,
+    "tagId": 19
   }
 ]
