@@ -19565,5 +19565,18 @@
     "name": "Don't Push Me",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/caffeinewriter/DontPushMe/master/filterlist.txt"
+  },
+  {
+    "id": 1835,
+    "description": "List containing auto-translated site clones of StackOverflow and other services.",
+    "homeUrl": "https://github.com/Nebula-Mechanica/Anti-AutoTranslation-List",
+    "issuesUrl": "https://github.com/Nebula-Mechanica/Anti-AutoTranslation-List/issues",
+    "licenseId": 11,
+    "name": "Anti-AutoTranslation-List",
+    "publishedDate": "2019-08-29T00:00:00",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/Nebula-Mechanica/Anti-AutoTranslation-List/master/anti-autotranslation-list.txt",
+    "viewUrlMirror1": "https://gitcdn.xyz/repo/Nebula-Mechanica/Anti-AutoTranslation-List/master/anti-autotranslation-list.txt",
+    "viewUrlMirror2": "https://rawcdn.githack.com/Nebula-Mechanica/Anti-AutoTranslation-List/master/anti-autotranslation-list.txt"
   }
 ]
