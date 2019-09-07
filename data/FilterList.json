@@ -19511,5 +19511,16 @@
     "name": "FilterLists Dark Mode",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/hawkeye116477/FilterListsDarkMode/master/DarkFilterLists.txt"
+  },
+  {
+    "id": 1834,
+    "description": "A filter list for those annoying \"Subscribe to our push notifications\" popups.",
+    "homeUrl": "https://github.com/caffeinewriter/DontPushMe",
+    "issuesUrl": "https://github.com/caffeinewriter/DontPushMe/issues",
+    "donateUrl": "https://ko-fi.com/caffeinewriter",
+    "viewUrl": "https://raw.githubusercontent.com/caffeinewriter/DontPushMe/master/filterlist.txt",
+    "name": "Don't Push Me",
+    "syntaxId": 4,
+    "licenseId": 11
   }
 ]
