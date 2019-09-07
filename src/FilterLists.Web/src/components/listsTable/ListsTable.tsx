@@ -7,12 +7,14 @@ import { useSearchColumnFilter, useTablePageSizer } from '../../hooks';
 import { Language } from '../../interfaces/Language';
 import { License } from '../../interfaces/License';
 import { List } from '../../interfaces/List';
+import { Maintainer } from '../../interfaces/Maintainer';
 import { Software } from '../../interfaces/Software';
 import { Tag as TagInterface } from '../../interfaces/Tag';
 import { nameof } from '../../utils';
 import { Description } from '../Description';
 import { LanguageCloud } from '../languageCloud';
 import { ListInfoButton } from '../ListInfoButton';
+import { MaintainerCloud } from '../maintainerCloud';
 import { SoftwareCloud, SoftwareIcon } from '../softwareCloud';
 import { TagCloud } from '../tagCloud';
 import { arraySorter } from './arraySorter';
@@ -22,12 +24,13 @@ interface Props {
   lists: List[];
   languages: Language[];
   licenses: License[];
+  maintainers: Maintainer[];
   software: Software[];
   tags: TagInterface[];
 };
 
 export const ListsTable = (props: RouteComponentProps & Props) => {
-  const { lists, languages, licenses, software, tags, ...routeComponentProps } = props;
+  const { lists, languages, licenses, maintainers, software, tags, ...routeComponentProps } = props;
   const tablePageSize = useTablePageSizer();
   const searchNameColumn = useSearchColumnFilter<List>(nameof<List>("name"));
   const searchDescriptionColumn = useSearchColumnFilter<List>(nameof<List>("description"));
@@ -151,6 +154,28 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           render={(tagIds: number[]) =>
             tagIds
               ? <TagCloud tags={tags.filter((t: TagInterface) => tagIds.includes(t.id))} />
+              : null} />}
+      {tablePageSize.isNarrowWindow
+        ? null
+        : <Table.Column<List>
+          title="Maintainers"
+          dataIndex={nameof<List>("maintainerIds")}
+          sorter={(a, b) => arraySorter(a.maintainerIds, b.maintainerIds, maintainers)}
+          width={191}
+          className={styles.nogrow}
+          filters={maintainers.map(t => ({
+            text: <>
+              <Tag title={t.name}>{t.name}</Tag>
+              ({visibleLists.filter(l => l.maintainerIds && l.maintainerIds.includes(t.id)).length})
+            </>,
+            value: t.id.toString()
+          }))}
+          onFilter={(value, record) => record.maintainerIds
+            ? record.maintainerIds.includes(+value)
+            : false}
+          render={(maintainerIds: number[]) =>
+            maintainerIds
+              ? <MaintainerCloud maintainers={maintainers.filter((t: Maintainer) => maintainerIds.includes(t.id))} />
               : null} />}
     </Table>
   );
