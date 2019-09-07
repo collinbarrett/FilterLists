@@ -16467,16 +16467,6 @@
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ExtremelyCondensedList.txt"
   },
   {
-    "id": 1580,
-    "description": "This is an unofficial adaption to Nano Adblocker only, of certain entries that are otherwise not present in the official adblocker version of I Don't Care About Cookies, but which are part of the extension version's 'common6.js' file.",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 4,
-    "name": "I Don't Care about Cookies Nano expansion",
-    "syntaxId": 12,
-    "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/ThirdPartyPrivileged/IDCACnano.txt"
-  },
-  {
     "id": 1581,
     "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO users should use the regular version instead.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
