@@ -49,7 +49,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         style: { float: "left", margin: "4px 4px" },
         pageSize: tablePageSize.pageSize
       }}
-      scroll={{ x: tablePageSize.isNarrowWindow ? undefined : 1200 }}
+      scroll={{ x: tablePageSize.isNarrowWindow ? undefined : 1400 }}
       onChange={(_pagination: PaginationConfig, _filters: Record<keyof List, string[]>, _sorter: SorterResult<List>, extra: TableCurrentDataSource<List>) =>
         setVisibleLists(extra.currentDataSource)}>
       <Table.Column<List>
