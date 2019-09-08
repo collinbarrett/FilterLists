@@ -9,9 +9,9 @@ const { Header, Content, Footer } = Layout;
 export const App: React.FC = () =>
   <Router>
     <Layout>
-      <Header>
+      <Header style={{ background: '#fff' }}>
         <Logo />
-        <Menu theme="dark" mode="horizontal" style={{ lineHeight: '64px' }} />
+        <Menu mode="horizontal" style={{ lineHeight: '64px' }} />
       </Header>
       <Content>
         <div style={{ background: '#fff', paddingLeft: 12, paddingTop: 12, paddingRight: 12, minHeight: 280 }}>
