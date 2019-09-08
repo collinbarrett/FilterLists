@@ -1,3 +1,5 @@
+import './listsTable.css';
+
 import { Table, Tag } from 'antd';
 import { PaginationConfig, SorterResult, TableCurrentDataSource } from 'antd/lib/table';
 import React, { useEffect, useState } from 'react';
