@@ -27,6 +27,7 @@ export const ListsTableHoc = (props: RouteComponentProps) => {
         lists={lists}
         languages={languages}
         licenses={licenses}
+        maintainers={maintainers}
         software={software}
         syntaxes={syntaxes}
         tags={tags} />

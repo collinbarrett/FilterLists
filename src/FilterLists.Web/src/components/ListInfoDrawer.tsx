@@ -6,6 +6,7 @@ import { RouteComponentProps } from 'react-router-dom';
 import { Language } from '../interfaces/Language';
 import { License } from '../interfaces/License';
 import { List } from '../interfaces/List';
+import { Maintainer } from '../interfaces/Maintainer';
 import { Software } from '../interfaces/Software';
 import { Syntax } from '../interfaces/Syntax';
 import { Tag } from '../interfaces/Tag';
@@ -13,6 +14,7 @@ import { Description } from './Description';
 import { LanguageCloud } from './languageCloud';
 import { LicenseTag } from './LicenseTag';
 import { LinkButton } from './LinkButton';
+import { Maintainers } from './Maintainers';
 import { PublishedDate } from './PublishedDate';
 import { SoftwareCloud } from './softwareCloud';
 import { SubscribeButtons } from './SubscribeButtons';
@@ -23,6 +25,7 @@ interface Props {
   list: List;
   languages: Language[];
   license: License | undefined;
+  maintainers: Maintainer[];
   software: Software[];
   syntax: Syntax | undefined;
   tags: Tag[];
@@ -65,6 +68,7 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
         software={props.software}
         showLabel={true} />
       <PublishedDate publishedDate={props.list.publishedDate} />
+      <Maintainers maintainers={props.maintainers} />
       <Divider />
       <ButtonGroup style={{ display: "inherit" }}>
         <SubscribeButtons
