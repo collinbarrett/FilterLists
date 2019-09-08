@@ -68,9 +68,9 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         dataIndex={nameof<List>("name")}
         sorter={(a, b) => a.name.localeCompare(b.name)}
         defaultSortOrder={"ascend"}
-        width={tablePageSize.isNarrowWindow ? 576 : 200}
+        width={tablePageSize.isNarrowWindow ? undefined : 200}
         className={styles.nogrow}
-        fixed="left"
+        fixed={tablePageSize.isNarrowWindow ? undefined : "left"}
         filterDropdown={searchNameColumn.filterDropdown}
         filterIcon={searchNameColumn.filterIcon}
         onFilter={searchNameColumn.onFilter}
