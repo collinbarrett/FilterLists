@@ -58,8 +58,9 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         title="Info"
         key="Info"
         dataIndex={nameof<List>("id")}
+        width={tablePageSize.isNarrowWindow ? 43 : undefined}
         className={styles.nogrow}
-        fixed="left"
+        fixed={tablePageSize.isNarrowWindow ? undefined : "left"}
         render={(_id: number, list: List) =>
           <ListInfoButton listName={list.name} {...routeComponentProps} />} />
       <Table.Column<List>
