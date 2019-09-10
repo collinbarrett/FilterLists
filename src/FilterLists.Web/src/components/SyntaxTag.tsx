@@ -4,18 +4,19 @@ import * as React from 'react';
 interface Props {
   name: string;
   definitionUrl: string;
+  showLabel?: boolean;
 };
 
 export const SyntaxTag = (props: Props) =>
   props.name
-    ? <>
-      <h3>Syntax:</h3>
+    ? <span>
+      {props.showLabel && <h3>Syntax:</h3>}
       <Tag>
         <TagContents
           name={props.name}
           definitionUrl={props.definitionUrl} />
       </Tag>
-    </>
+    </span>
     : null;
 
 const TagContents = (props: Props) =>

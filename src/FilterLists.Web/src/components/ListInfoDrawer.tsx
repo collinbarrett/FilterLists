@@ -63,7 +63,8 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
       {props.syntax &&
         <SyntaxTag
           name={props.syntax.name}
-          definitionUrl={props.syntax.definitionUrl} />}
+          definitionUrl={props.syntax.definitionUrl}
+          showLabel={true} />}
       <SoftwareCloud
         software={props.software}
         showLabel={true} />

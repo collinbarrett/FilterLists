@@ -11,6 +11,7 @@ import { License } from '../../interfaces/License';
 import { List } from '../../interfaces/List';
 import { Maintainer } from '../../interfaces/Maintainer';
 import { Software } from '../../interfaces/Software';
+import { Syntax } from '../../interfaces/Syntax';
 import { Tag as TagInterface } from '../../interfaces/Tag';
 import { nameof } from '../../utils';
 import { Description } from '../Description';
@@ -18,6 +19,7 @@ import { LanguageCloud } from '../languageCloud';
 import { ListInfoButton } from '../ListInfoButton';
 import { MaintainerCloud } from '../maintainerCloud';
 import { SoftwareCloud, SoftwareIcon } from '../softwareCloud';
+import { SyntaxTag } from '../SyntaxTag';
 import { TagCloud } from '../tagCloud';
 import { arraySorter } from './arraySorter';
 import styles from './ListsTable.module.css';
@@ -28,11 +30,12 @@ interface Props {
   licenses: License[];
   maintainers: Maintainer[];
   software: Software[];
+  syntaxes: Syntax[];
   tags: TagInterface[];
 };
 
 export const ListsTable = (props: RouteComponentProps & Props) => {
-  const { lists, languages, licenses, maintainers, software, tags, ...routeComponentProps } = props;
+  const { lists, languages, licenses, maintainers, software, syntaxes, tags, ...routeComponentProps } = props;
   const tablePageSize = useTablePageSizer();
   const searchNameColumn = useSearchColumnFilter<List>(nameof<List>("name"));
   const searchDescriptionColumn = useSearchColumnFilter<List>(nameof<List>("description"));
@@ -116,6 +119,39 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             syntaxId
               ? <SoftwareCloud software={software.filter((s: Software) => s.syntaxIds.includes(syntaxId))} />
               : null} />}
+      {tablePageSize.isNarrowWindow
+        ? null
+        : <Table.Column<List>
+          title="Syntax"
+          key="Syntax"
+          dataIndex={nameof<List>("syntaxId")}
+          sorter={(a, b) => {
+            const syntaxA = syntaxes.find(s => s.id === a.syntaxId);
+            const syntaxB = syntaxes.find(s => s.id === b.syntaxId);
+            return syntaxA
+              ? syntaxB
+                ? syntaxA.name.localeCompare(syntaxB.name)
+                : -1
+              : 1;
+          }}
+          width={254}
+          className={styles.nogrow}
+          filters={syntaxes.map(s => ({
+            text: <>
+              <SyntaxTag name={s.name} definitionUrl={s.definitionUrl} showLabel={false} />
+              ({visibleLists.filter(l => l.syntaxId && l.syntaxId === s.id).length})
+              </>,
+            value: s.id.toString()
+          }))}
+          onFilter={(value, record) => record.syntaxId
+            ? record.syntaxId.toString() === value
+            : false}
+          render={(syntaxId: number) => {
+            const syntax = syntaxes.find(s => s.id === syntaxId);
+            return syntax
+              ? <SyntaxTag name={syntax.name} definitionUrl={syntax.definitionUrl} />
+              : null
+          }} />}
       {tablePageSize.isNarrowWindow
         ? null
         : <Table.Column<List>

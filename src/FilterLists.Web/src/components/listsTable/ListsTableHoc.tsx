@@ -21,6 +21,7 @@ export const ListsTableHoc = (props: RouteComponentProps) => {
         licenses={licenses}
         maintainers={maintainers}
         software={software}
+        syntaxes={syntaxes}
         tags={tags}
         {...props} />
       <ListDrawer
