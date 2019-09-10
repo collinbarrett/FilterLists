@@ -3,7 +3,7 @@ import * as React from 'react';
 
 interface Props {
   name: string;
-  definitionUrl: string;
+  definitionUrl?: string;
   showLabel?: boolean;
 };
 

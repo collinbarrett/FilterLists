@@ -16,6 +16,7 @@ import { Tag as TagInterface } from '../../interfaces/Tag';
 import { nameof } from '../../utils';
 import { Description } from '../Description';
 import { LanguageCloud } from '../languageCloud';
+import { LicenseTag } from '../LicenseTag';
 import { ListInfoButton } from '../ListInfoButton';
 import { MaintainerCloud } from '../maintainerCloud';
 import { SoftwareCloud, SoftwareIcon } from '../softwareCloud';
@@ -138,7 +139,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           className={styles.nogrow}
           filters={syntaxes.map(s => ({
             text: <>
-              <SyntaxTag name={s.name} definitionUrl={s.definitionUrl} showLabel={false} />
+              <SyntaxTag name={s.name} showLabel={false} />
               ({visibleLists.filter(l => l.syntaxId && l.syntaxId === s.id).length})
               </>,
             value: s.id.toString()
@@ -222,6 +223,39 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             maintainerIds
               ? <MaintainerCloud maintainers={maintainers.filter((t: Maintainer) => maintainerIds.includes(t.id))} />
               : null} />}
+      {tablePageSize.isNarrowWindow
+        ? null
+        : <Table.Column<List>
+          title="License"
+          key="License"
+          dataIndex={nameof<List>("licenseId")}
+          sorter={(a, b) => {
+            const licenseA = licenses.find(s => s.id === a.licenseId);
+            const licenseB = licenses.find(s => s.id === b.licenseId);
+            return licenseA
+              ? licenseB
+                ? licenseA.name.localeCompare(licenseB.name)
+                : -1
+              : 1;
+          }}
+          width={215}
+          className={styles.nogrow}
+          filters={licenses.map(l => ({
+            text: <>
+              <LicenseTag name={l.name} showLabel={false} />
+              ({visibleLists.filter(li => li.licenseId && li.licenseId === l.id).length})
+              </>,
+            value: l.id.toString()
+          }))}
+          onFilter={(value, record) => record.licenseId
+            ? record.licenseId.toString() === value
+            : false}
+          render={(licenseId: number) => {
+            const license = licenses.find(l => l.id === licenseId);
+            return license
+              ? <LicenseTag name={license.name} descriptionUrl={license.descriptionUrl} showLabel={false} />
+              : null
+          }} />}
     </Table>
   );
 };

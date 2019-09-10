@@ -3,19 +3,20 @@ import * as React from 'react';
 
 interface Props {
   name: string;
-  descriptionUrl: string;
+  descriptionUrl?: string;
+  showLabel?: boolean;
 };
 
 export const LicenseTag = (props: Props) =>
   props.name
-    ? <>
-      <h3>License:</h3>
+    ? <span>
+      {props.showLabel && <h3>License:</h3>}
       <Tag>
         <TagContents
           name={props.name}
           descriptionUrl={props.descriptionUrl} />
       </Tag>
-    </>
+    </span>
     : null;
 
 const TagContents = (props: Props) =>

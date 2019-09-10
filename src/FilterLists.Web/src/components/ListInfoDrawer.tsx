@@ -59,7 +59,8 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
       {props.license &&
         <LicenseTag
           name={props.license.name}
-          descriptionUrl={props.license.descriptionUrl} />}
+          descriptionUrl={props.license.descriptionUrl}
+          showLabel={true} />}
       {props.syntax &&
         <SyntaxTag
           name={props.syntax.name}
