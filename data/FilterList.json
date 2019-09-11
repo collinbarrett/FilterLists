@@ -673,7 +673,7 @@
   },
   {
     "id": 61,
-    "description": "A Polish filter that protects against scams such as SMS subscriptions.",
+    "description": "A Polish filters that protects against scams such as SMS subscriptions.",
     "descriptionSourceUrl": "https://github.com/PolishFiltersTeam/KAD",
     "emailAddress": "polishjarvis@gmail.com",
     "homeUrl": "https://kadantiscam.netlify.com/",
@@ -682,7 +682,7 @@
     "name": "KAD - Scams",
     "publishedDate": "2016-04-08T12:11:44",
     "submissionUrl": "https://kadantiscam.netlify.com/#contact",
-    "syntaxId": 28,
+    "syntaxId": 4,
     "updatedDate": "2019-04-12T16:36:07",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/master/KAD.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/PolishFiltersTeam/KAD/master/KAD.txt",
@@ -2487,7 +2487,7 @@
   {
     "id": 216,
     "chatUrl": "https://discord.me/polskiefiltry",
-    "description": "Filters that hide and block social network elements, i.e. widgets, pop-ups and other social elements on Polish websites.",
+    "description": "Filters that hide and block social network elements, i.e. widgets, pop-ups and other social elements on Polish websites. Fanboy's Social Blocking List is required for proper operation.",
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "homeUrl": "https://www.certyficate.it/",
     "issuesUrl": "https://github.com/MajkiIT/polish-ads-filter/issues",
@@ -5652,7 +5652,7 @@
     "issuesUrl": "https://github.com/PolishFiltersTeam/KAD/issues",
     "licenseId": 8,
     "name": "KAD - The Whitelist of the Controversial Pages",
-    "syntaxId": 28,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/gh-pages/assets/other/kadfakewhitelist.txt",
     "viewUrlMirror1": "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/gh-pages/assets/other/kadfakewhitelist.txt"
   },
