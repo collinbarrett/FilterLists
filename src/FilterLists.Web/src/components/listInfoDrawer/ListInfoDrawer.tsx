@@ -16,7 +16,7 @@ import { Description } from '../Description';
 import { LanguageCloud } from '../languageCloud';
 import { LicenseTag } from '../LicenseTag';
 import { LinkButton } from '../LinkButton';
-import { Maintainers } from '../Maintainers';
+import { Maintainers } from '../maintainers';
 import { PublishedDate } from '../PublishedDate';
 import { SoftwareCloud } from '../softwareCloud';
 import { SubscribeButtons } from '../SubscribeButtons';

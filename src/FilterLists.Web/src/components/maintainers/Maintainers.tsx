@@ -1,7 +1,9 @@
+import './maintainers.css';
+
 import { Card, Icon } from 'antd';
 import React from 'react';
 
-import { Maintainer } from '../interfaces/Maintainer';
+import { Maintainer } from '../../interfaces/Maintainer';
 
 interface Props {
   maintainers: Maintainer[];
