@@ -8,7 +8,7 @@ import { Maintainer } from '../../interfaces/Maintainer';
 import { Software } from '../../interfaces/Software';
 import { Syntax } from '../../interfaces/Syntax';
 import { Tag } from '../../interfaces/Tag';
-import { ListInfoDrawer } from '../ListInfoDrawer';
+import { ListInfoDrawer } from '../listInfoDrawer';
 
 interface Props {
   lists: List[];

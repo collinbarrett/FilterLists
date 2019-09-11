@@ -1,25 +1,27 @@
+import './listInfoDrawer.css';
+
 import { Divider, Drawer } from 'antd';
 import ButtonGroup from 'antd/lib/button/button-group';
 import React, { useEffect, useState } from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
-import { Language } from '../interfaces/Language';
-import { License } from '../interfaces/License';
-import { List } from '../interfaces/List';
-import { Maintainer } from '../interfaces/Maintainer';
-import { Software } from '../interfaces/Software';
-import { Syntax } from '../interfaces/Syntax';
-import { Tag } from '../interfaces/Tag';
-import { Description } from './Description';
-import { LanguageCloud } from './languageCloud';
-import { LicenseTag } from './LicenseTag';
-import { LinkButton } from './LinkButton';
-import { Maintainers } from './Maintainers';
-import { PublishedDate } from './PublishedDate';
-import { SoftwareCloud } from './softwareCloud';
-import { SubscribeButtons } from './SubscribeButtons';
-import { SyntaxTag } from './SyntaxTag';
-import { TagCloud } from './tagCloud';
+import { Language } from '../../interfaces/Language';
+import { License } from '../../interfaces/License';
+import { List } from '../../interfaces/List';
+import { Maintainer } from '../../interfaces/Maintainer';
+import { Software } from '../../interfaces/Software';
+import { Syntax } from '../../interfaces/Syntax';
+import { Tag } from '../../interfaces/Tag';
+import { Description } from '../Description';
+import { LanguageCloud } from '../languageCloud';
+import { LicenseTag } from '../LicenseTag';
+import { LinkButton } from '../LinkButton';
+import { Maintainers } from '../Maintainers';
+import { PublishedDate } from '../PublishedDate';
+import { SoftwareCloud } from '../softwareCloud';
+import { SubscribeButtons } from '../SubscribeButtons';
+import { SyntaxTag } from '../SyntaxTag';
+import { TagCloud } from '../tagCloud';
 
 interface Props {
   list: List;
