@@ -296,7 +296,6 @@
   },
   {
     "id": 30,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block pop-ups, widgets, newsletters, push notifications, arrows and other irritating elements on Polish websites (include Polish GDPR-Cookies Filters).",
     "descriptionSourceUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
     "homeUrl": "https://polishannoyancefilters.netlify.com",
@@ -971,7 +970,6 @@
   },
   {
     "id": 84,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "uBlock Origin supplement list for Official Polish Filters for AdBlock, uBlock Origin & AdGuard",
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "emailAddress": "errors@certyficate.it",
@@ -980,6 +978,7 @@
     "licenseId": 9,
     "name": "Official Polish Filters for AdBlock, uBlock Origin & AdGuard - Supplement for uBlock",
     "publishedDate": "2016-08-07T20:10:32",
+    "submissionUrl": "https://www.certyficate.it/kontakt/",
     "syntaxId": 17,
     "updatedDate": "2019-04-08T04:08:54",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt",
@@ -2486,7 +2485,6 @@
   },
   {
     "id": 216,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block social network elements, i.e. widgets, pop-ups and other social elements on Polish websites. Fanboy's Social Blocking List is required for proper operation.",
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "homeUrl": "https://www.certyficate.it/",
@@ -2550,7 +2548,6 @@
   },
   {
     "id": 223,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Presented here filter set was created for Polish internet users. Contains a list of elements of advertising, such as banners or flash animations, the most commonly used on Polish websites.",
     "descriptionSourceUrl": "https://www.certyficate.it/polski-filtr-adblock-ublock-origin-adblock-plus-nano-adblocker-adguard/",
     "donateUrl": "https://patronite.pl/polskiefiltry",
@@ -2560,6 +2557,7 @@
     "licenseId": 9,
     "name": "Official Polish Filters for AdBlock, uBlock Origin & AdGuard",
     "publishedDate": "2015-09-17T09:36:26",
+    "submissionUrl": "https://www.certyficate.it/kontakt/",
     "syntaxId": 3,
     "updatedDate": "2019-04-14T13:00:20",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt",
@@ -2568,7 +2566,6 @@
   },
   {
     "id": 224,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block messages about cookies and GDPR/privacy policy on Polish websites.",
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "homeUrl": "https://www.certyficate.it/",
@@ -3930,7 +3927,6 @@
   },
   {
     "id": 341,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "uBlock Origin & AdGuard supplement list for Polish Social Filters",
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "homeUrl": "https://www.certyficate.it/",
@@ -3944,7 +3940,7 @@
   },
   {
     "id": 342,
-    "chatUrl": "https://discord.me/polskiefiltry",
+    "chatUrl": "https://riot.im/app/#/room/!IPhdjtOfWxVbiddKOo:matrix.org?via=matrix.org",
     "description": "Blocks banners (paypal, payu, bitcoin and patronite), charity banners, other forms of inclination to support on Polish sites.",
     "homeUrl": "https://github.com/KonoromiHimaries/PolishSubFilters",
     "licenseId": 9,
@@ -3956,7 +3952,6 @@
   },
   {
     "id": 343,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "uBlock Origin & AdGuard supplement list for Polish GDPR-Cookies Filters.",
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "homeUrl": "https://www.certyficate.it/",
@@ -3970,7 +3965,7 @@
   },
   {
     "id": 344,
-    "chatUrl": "https://discord.me/polskiefiltry",
+    "chatUrl": "https://riot.im/app/#/room/!IPhdjtOfWxVbiddKOo:matrix.org?via=matrix.org",
     "description": "Blocks internal advertising, paid subscriptions, own stores on Polish sites.",
     "homeUrl": "https://github.com/KonoromiHimaries/PolishSubFilters/",
     "licenseId": 9,
@@ -3982,7 +3977,6 @@
   },
   {
     "id": 345,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "AdGuard supplement list for Official Polish Filters for AdBlock, uBlock Origin & AdGuard",
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "emailAddress": "errors@certyficate.it",
@@ -3991,13 +3985,13 @@
     "licenseId": 9,
     "name": "Official Polish Filters for AdBlock, uBlock Origin & AdGuard - Supplement for AdGuard",
     "publishedDate": "2017-04-25T00:00:00",
+    "submissionUrl": "https://www.certyficate.it/kontakt/",
     "syntaxId": 6,
     "updatedDate": "2019-04-08T06:30:04",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_adguard.txt"
   },
   {
     "id": 346,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Test supplement list for Official Polish Filters for AdBlock, uBlock Origin & AdGuard",
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "homeUrl": "https://www.certyficate.it/",
@@ -4005,13 +3999,13 @@
     "licenseId": 9,
     "name": "Official Polish Filters for AdBlock, uBlock Origin & AdGuard - Test Supplement",
     "publishedDate": "2017-10-29T00:00:00",
+    "submissionUrl": "https://www.certyficate.it/kontakt/",
     "syntaxId": 3,
     "updatedDate": "2017-10-29T19:26:27",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_test.txt"
   },
   {
     "id": 347,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Polish hosts file for use in Pi-hole",
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "emailAddress": "errors@certyficate.it",
@@ -4020,6 +4014,7 @@
     "licenseId": 9,
     "name": "Polish Filters for Pi-hole",
     "publishedDate": "2017-09-11T00:00:00",
+    "submissionUrl": "https://www.certyficate.it/kontakt/",
     "syntaxId": 1,
     "updatedDate": "2019-04-12T01:03:22",
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/hostfile.txt"
@@ -4540,7 +4535,6 @@
   },
   {
     "id": 390,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block RSS sections on Polish websites (supplement for Polish Social Filters).",
     "descriptionSourceUrl": "https://github.com/PolishFiltersTeam/PolishRSSFilters",
     "homeUrl": "https://github.com/PolishFiltersTeam/PolishRSSFilters",
@@ -5652,6 +5646,7 @@
     "issuesUrl": "https://github.com/PolishFiltersTeam/KAD/issues",
     "licenseId": 8,
     "name": "KAD - The Whitelist of the Controversial Pages",
+    "submissionUrl": "https://kadantiscam.netlify.com/#contact",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/gh-pages/assets/other/kadfakewhitelist.txt",
     "viewUrlMirror1": "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/gh-pages/assets/other/kadfakewhitelist.txt"
@@ -6235,7 +6230,6 @@
   },
   {
     "id": 607,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block newsletters (without pop-ups).",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt",
     "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
@@ -6243,13 +6237,13 @@
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Newsletters",
     "publishedDate": "2018-06-27T17:32:02",
+    "submissionUrl": "https://polishannoyancefilters.netlify.com/issues",
     "syntaxId": 3,
     "updatedDate": "2019-04-13T22:00:19",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt"
   },
   {
     "id": 608,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block arrows.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_arrows.txt",
     "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
@@ -6257,13 +6251,13 @@
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Arrows",
     "publishedDate": "2018-06-27T17:32:02",
+    "submissionUrl": "https://polishannoyancefilters.netlify.com/issues",
     "syntaxId": 3,
     "updatedDate": "2019-04-13T22:00:19",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_arrows.txt"
   },
   {
     "id": 609,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block web push notifications.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_push.txt",
     "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
@@ -6271,13 +6265,13 @@
     "licenseId": 9,
     "name": "Polish Annoyances Filters - Web Push Notifications",
     "publishedDate": "2018-06-22T16:42:29",
+    "submissionUrl": "https://polishannoyancefilters.netlify.com/issues",
     "syntaxId": 3,
     "updatedDate": "2019-04-13T14:00:14",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_push.txt"
   },
   {
     "id": 610,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that prevent videos from scrolling.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt",
     "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
@@ -6285,13 +6279,13 @@
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Scrolling Videos",
     "publishedDate": "2018-06-27T17:32:02",
+    "submissionUrl": "https://polishannoyancefilters.netlify.com/issues",
     "syntaxId": 3,
     "updatedDate": "2019-04-07T22:00:14",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt"
   },
   {
     "id": 611,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block in-house ads.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_backgrounds_self-advertising.txt",
     "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
@@ -6299,13 +6293,13 @@
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Backgrounds Containing Self-Advertising",
     "publishedDate": "2018-06-29T19:22:33",
+    "submissionUrl": "https://polishannoyancefilters.netlify.com/issues",
     "syntaxId": 3,
     "updatedDate": "2019-04-05T22:03:16",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_backgrounds_self-advertising.txt"
   },
   {
     "id": 612,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block pop-ups.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_pop-ups.txt",
     "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
@@ -6313,13 +6307,13 @@
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Pop-ups",
     "publishedDate": "2018-06-27T17:32:02",
+    "submissionUrl": "https://polishannoyancefilters.netlify.com/issues",
     "syntaxId": 3,
     "updatedDate": "2019-04-13T22:00:19",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_pop-ups.txt"
   },
   {
     "id": 613,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block contact/feedback widgets.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_contact_feedback_widgets.txt",
     "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
@@ -6327,13 +6321,13 @@
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Contact/Feedback Widgets",
     "publishedDate": "2018-06-30T16:14:48",
+    "submissionUrl": "https://polishannoyancefilters.netlify.com/issues",
     "syntaxId": 3,
     "updatedDate": "2019-04-13T22:00:20",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_contact_feedback_widgets.txt"
   },
   {
     "id": 614,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that remove internal tags that do not match the subject of the article, which are easily accidentally clicked. Inspired by Agora Tag Links Remove extension.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt",
     "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
@@ -6341,13 +6335,13 @@
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Tagged Internal Links",
     "publishedDate": "2018-06-27T17:32:02",
+    "submissionUrl": "https://polishannoyancefilters.netlify.com/issues",
     "syntaxId": 4,
     "updatedDate": "2019-04-05T22:03:16",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt"
   },
   {
     "id": 616,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Filters that hide and block various other elements.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt",
     "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
@@ -6355,6 +6349,7 @@
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Other Elements",
     "publishedDate": "2018-06-30T16:19:08",
+    "submissionUrl": "https://polishannoyancefilters.netlify.com/issues",
     "syntaxId": 3,
     "updatedDate": "2019-04-13T22:00:20",
     "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt"
@@ -19396,7 +19391,6 @@
   },
   {
     "id": 1817,
-    "chatUrl": "https://discord.me/polskiefiltry",
     "description": "Polish regex list blocking ads and tracking sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "emailAddress": "errors@certyficate.it",
@@ -19404,6 +19398,7 @@
     "issuesUrl": "https://github.com/MajkiIT/polish-ads-filter/issues",
     "licenseId": 9,
     "name": "Polish Regex Filters for Pi-hole",
+    "submissionUrl": "https://www.certyficate.it/kontakt/",
     "syntaxId": 30,
     "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/hostfile_regex.txt"
   },
