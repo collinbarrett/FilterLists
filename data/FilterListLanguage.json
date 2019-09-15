@@ -2378,5 +2378,33 @@
   {
     "filterListId": 1821,
     "languageId": 113
+  },
+  {
+    "filterListId": 1840,
+    "languageId": 44
+  },
+  {
+    "filterListId": 1840,
+    "languageId": 106
+  },
+  {
+    "filterListId": 1841,
+    "languageId": 44
+  },
+  {
+    "filterListId": 1841,
+    "languageId": 106
+  },
+  {
+    "filterListId": 1842,
+    "languageId": 44
+  },
+  {
+    "filterListId": 1842,
+    "languageId": 106
+  },
+  {
+    "filterListId": 663,
+    "languageId": 58
   }
 ]
