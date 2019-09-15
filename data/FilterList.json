@@ -1800,7 +1800,7 @@
     "homeUrl": "https://firime.wordpress.com/projects/others/fedlist/",
     "licenseId": 5,
     "name": "Firime (FED) EasyDownload List",
-    "syntaxId": 4,
+    "syntaxId": 3,
     "viewUrl": "https://pastebin.com/raw/r9a5WrZa"
   },
   {
@@ -2135,7 +2135,7 @@
     "licenseId": 14,
     "name": "Anti-PopAds",
     "publishedDate": "2016-10-29T15:08:58",
-    "syntaxId": 4,
+    "syntaxId": 28,
     "updatedDate": "2019-04-15T05:38:38",
     "viewUrl": "https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/Yhonay/antipopads/master/popads.txt",
@@ -4223,7 +4223,7 @@
     "licenseId": 4,
     "name": "CoinBlocker uBO List",
     "publishedDate": "2017-10-12T00:00:00",
-    "syntaxId": 4,
+    "syntaxId": 2,
     "updatedDate": "2019-04-14T17:01:12",
     "viewUrl": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser_UBO.txt"
   },
@@ -8684,22 +8684,6 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchPureViewingExperience.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TwitchPureViewingExperience.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TwitchPureViewingExperience.txt"
-  },
-  {
-    "id": 849,
-    "description": "This list aims to prevent low-quality (or even illegal) forks of more popular adblockers, adblockers that add unnecessary tracking, as well as links to dead filterlists. Currently this list only fully works with AdGuard's paid desktop version, as most other adblockers will refuse to function on a browser's own extension store.",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 35,
-    "name": "List Against Fake or Inoptimal Adblockers",
-    "publishedDate": "2018-10-09T17:04:55",
-    "syntaxId": 3,
-    "updatedDate": "2019-04-02T01:49:15",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ListAgainstFakeOrInoptimalAdblockers.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/ListAgainstFakeOrInoptimalAdblockers.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ListAgainstFakeOrInoptimalAdblockers.txt"
   },
   {
     "id": 850,
@@ -15042,23 +15026,6 @@
     "viewUrl": "https://raw.githubusercontent.com/cbuijs/shallalist/master/webtv/urls"
   },
   {
-    "id": 1453,
-    "description": "This compilation list was made to help resolve two of the most frequent tech complaints on r/assholedesign: Websites that require logging in to browse them, and Android apps with fake notification counters. To that effect, this list embeds two of my other lists that covers either one of those purposes. This list requires using Nano Adblocker or uBlock Origin, the latter of which is also available for Firefox on Android phones, as they're the only adblockers that have full support for list embeddings. Now let's see how many months it'll take before anyone on that subreddit notices the existence of this list...",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ListForRAssholeDesign.txt",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 35,
-    "name": "Dandelion Sprout's List for the Benefit of r/assholedesign",
-    "publishedDate": "2019-01-26T22:17:34",
-    "syntaxId": 21,
-    "updatedDate": "2019-03-16T09:53:55",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ListForRAssholeDesign.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/ListForRAssholeDesign.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ListForRAssholeDesign.txt"
-  },
-  {
     "id": 1454,
     "description": "This list was initially made as a kind gesture to https://github.com/theel0ja, who has been using, recommending, and promoting the lists above. This Nano- and uBO-exclusive list removes all sorts of annoying banners that few other lists take care of, including uncloseable overlays, banners that advertise major browsers, and certain banners that ask if you want to be asked to receive bad browser notifications (It makes sense in context).",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyingBannersAndOverlays.txt",
@@ -16765,7 +16732,7 @@
     "issuesUrl": "https://github.com/HankAviator/app-ads-blocklist-china/issues",
     "licenseId": 4,
     "name": "App ads blocklist China",
-    "syntaxId": 4,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/HankAviator/app-ads-blocklist-china/master/app_blocklist.txt"
   },
   {
@@ -19558,7 +19525,7 @@
     "issuesUrl": "https://github.com/caffeinewriter/DontPushMe/issues",
     "licenseId": 11,
     "name": "Don't Push Me",
-    "syntaxId": 4,
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/caffeinewriter/DontPushMe/master/filterlist.txt"
   },
   {
@@ -19617,5 +19584,53 @@
     "name": "Cybo's Anti Verizon",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti%20Verizon"
+  },
+  {
+    "id": 1840,
+    "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO users should use the regular version instead.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (for AdGuard Home)",
+    "publishedDate": "2019-09-15T00:00:00",
+    "syntaxId": 28,
+    "updatedDate": "2019-09-15T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt"
+  },
+  {
+    "id": 1841,
+    "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO users should use the regular version instead.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (for Pi-Hole)",
+    "publishedDate": "2019-09-15T00:00:00",
+    "syntaxId": 30,
+    "updatedDate": "2019-09-15T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPiHole.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPiHole.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPiHole.txt"
+  },
+  {
+    "id": 1842,
+    "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO users should use the regular version instead.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (for Shadowsocks)",
+    "publishedDate": "2019-09-15T00:00:00",
+    "syntaxId": 29,
+    "updatedDate": "2019-09-15T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersSocks5.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersSocks5.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersSocks5.txt"
   }
 ]
