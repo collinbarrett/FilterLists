@@ -4535,16 +4535,16 @@
   },
   {
     "id": 390,
-    "description": "Filters that hide and block RSS sections on Polish websites (supplement for Polish Social Filters).",
-    "descriptionSourceUrl": "https://github.com/PolishFiltersTeam/PolishRSSFilters",
-    "homeUrl": "https://github.com/PolishFiltersTeam/PolishRSSFilters",
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishRSSFilters/issues",
+    "description": "Filters that hide and block RSS sections and leftovers from hidden newsletters combined with social elements on Polish-language websites (supplement for Polish Social Filters and Polish Annoyance Filters).",
+    "descriptionSourceUrl": "https://github.com/PolishFiltersTeam/PolishAntiAnnoyingSpecialSupplement",
+    "homeUrl": "https://github.com/PolishFiltersTeam/PolishAntiAnnoyingSpecialSupplement",
+    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAntiAnnoyingSpecialSupplement/issues",
     "licenseId": 9,
-    "name": "Polish RSS Filters",
+    "name": "Polish Anti-Annoying Special Supplement",
     "publishedDate": "2018-03-30T00:00:00",
     "syntaxId": 3,
-    "updatedDate": "2019-04-07T23:55:15",
-    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishRSSFilters/master/polish_rss_filters.txt"
+    "updatedDate": "2019-09-17T21:23:00",
+    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAntiAnnoyingSpecialSupplement/master/polish_rss_filters.txt"
   },
   {
     "id": 391,
@@ -12906,7 +12906,7 @@
   },
   {
     "id": 1279,
-    "description": "Oficjalne polskie filtry prywatności",
+    "description": "Polish supplement for EasyPrivacy",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/olegwukr/polish-privacy-filters/master/adblock.txt",
     "homeUrl": "https://github.com/olegwukr/polish-privacy-filters",
     "issuesUrl": "https://github.com/olegwukr/polish-privacy-filters/issues",
