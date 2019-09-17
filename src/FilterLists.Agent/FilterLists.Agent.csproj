@@ -52,7 +52,7 @@
 		<PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
 		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.2.0" />
 		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
-		<PackageReference Include="Octokit" Version="0.33.0" />
+		<PackageReference Include="Octokit" Version="0.34.0" />
 		<PackageReference Include="Polly" Version="7.1.1" />
 		<PackageReference Include="RestSharp" Version="106.6.10" />
 		<PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
