@@ -153,4 +153,4 @@ We respect your privacy. That is the whole point of this project. The only minor
 
 ## Internet Explorer
 
-FilterLists does not support Internet Explorer. To view a smaller, TPL-only archive with subscribable links, right-click on [this link](https://raw.githubusercontent.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html), choose to save it as an HTML file, and open it in Internet Explorer ≥9.
+FilterLists does not support Internet Explorer. To view a smaller, TPL-only archive with subscribable links, visit [this page](https://raw.githack.com/collinbarrett/FilterLists/master/data/TPLSubscriptionAssistant.html).
