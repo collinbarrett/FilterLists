@@ -6,6 +6,6 @@ interface Props {
 };
 
 export const Description = (props: Props) =>
-  props.description
+  props.descriptionSourceUrl
     ? <blockquote cite={props.descriptionSourceUrl}>{props.description}</blockquote>
     : <p>{props.description}</p>;
