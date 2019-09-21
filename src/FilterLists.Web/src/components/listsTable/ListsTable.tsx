@@ -160,7 +160,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           key="Languages"
           dataIndex={nameof<List>("languageIds")}
           sorter={(a, b) => arraySorter(a.languageIds, b.languageIds, languages)}
-          width={125}
+          width={127}
           className={styles.nogrow}
           filters={languages.map(l => ({
             text: <>
