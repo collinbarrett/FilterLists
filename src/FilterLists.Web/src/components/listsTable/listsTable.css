@@ -1,3 +1,7 @@
 .ant-table-header-column > div {
   margin-top: 8px;
 }
+
+tr blockquote {
+  word-break: break-word;
+}
