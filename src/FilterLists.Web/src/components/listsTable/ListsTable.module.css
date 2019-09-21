@@ -12,6 +12,9 @@
 
   /* fixed row height */
   min-height: 3em;
+
+  /* fix left-side truncation of Description column on narrow viewports in Chrome */
+  word-break: break-word;
 }
 
 .nogrow {
