@@ -1,3 +1,3 @@
-import { ListInfoDrawer } from "./ListInfoDrawer";
+import { ListInfoDrawer } from './ListInfoDrawer';
 
 export { ListInfoDrawer };

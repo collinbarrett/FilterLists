@@ -1,3 +1,3 @@
-import { MaintainerCloud } from "./MaintainerCloud";
+import { MaintainerCloud } from './MaintainerCloud';
 
 export { MaintainerCloud };

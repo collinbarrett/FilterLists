@@ -4,4 +4,4 @@ export interface Software {
   isAbpSubscribable: boolean;
   name: string;
   syntaxIds: number[];
-}
+};

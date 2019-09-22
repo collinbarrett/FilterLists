@@ -3,4 +3,4 @@ export interface License {
   descriptionUrl: string;
   filterListIds: number[];
   name: string;
-}
+};

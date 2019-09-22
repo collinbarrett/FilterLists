@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 import {
   img01,
@@ -37,28 +37,27 @@ import {
   img35,
   img36,
   img37
-} from "./imgs";
+} from './imgs';
 
 interface Props {
   id: number;
-}
+};
 
 export const SoftwareIcon = (props: Props) =>
-  icons[props.id] ? (
-    <img
+  icons[props.id]
+    ? <img
       src={icons[props.id].image}
       height="20"
       alt={icons[props.id].imageTitle}
-      title={icons[props.id].imageTitle}
-    />
-  ) : null;
+      title={icons[props.id].imageTitle} />
+    : null;
 
 interface Icon {
   image: any;
   imageTitle: string;
-}
+};
 
-const icons: { [id: number]: Icon } = {
+const icons: { [id: number]: Icon; } = {
   1: { image: img01, imageTitle: "uBlock Origin" },
   2: { image: img02, imageTitle: "Adblock Plus" },
   3: { image: img03, imageTitle: "AdGuard" },

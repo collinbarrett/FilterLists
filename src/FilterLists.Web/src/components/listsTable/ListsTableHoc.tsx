@@ -1,17 +1,9 @@
-import React from "react";
-import { RouteComponentProps } from "react-router-dom";
+import React from 'react';
+import { RouteComponentProps } from 'react-router-dom';
 
-import {
-  useLanguages,
-  useLicenses,
-  useLists,
-  useMaintainers,
-  useSoftware,
-  useSyntaxes,
-  useTags
-} from "../../hooks";
-import { ListDrawer } from "./ListDrawer";
-import { ListsTable } from "./ListsTable";
+import { useLanguages, useLicenses, useLists, useMaintainers, useSoftware, useSyntaxes, useTags } from '../../hooks';
+import { ListDrawer } from './ListDrawer';
+import { ListsTable } from './ListsTable';
 
 export const ListsTableHoc = (props: RouteComponentProps) => {
   const lists = useLists();
@@ -31,8 +23,7 @@ export const ListsTableHoc = (props: RouteComponentProps) => {
         software={software}
         syntaxes={syntaxes}
         tags={tags}
-        {...props}
-      />
+        {...props} />
       <ListDrawer
         lists={lists}
         languages={languages}
@@ -40,8 +31,7 @@ export const ListsTableHoc = (props: RouteComponentProps) => {
         maintainers={maintainers}
         software={software}
         syntaxes={syntaxes}
-        tags={tags}
-      />
+        tags={tags} />
     </>
   );
 };

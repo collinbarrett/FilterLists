@@ -1,3 +1,3 @@
-import { ListsTableHoc } from "./ListsTableHoc";
+import { ListsTableHoc } from './ListsTableHoc';
 
 export { ListsTableHoc as ListsTable };

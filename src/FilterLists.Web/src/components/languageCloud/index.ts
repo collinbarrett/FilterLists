@@ -1,3 +1,3 @@
-import { LanguageCloud } from "./LanguageCloud";
+import { LanguageCloud } from './LanguageCloud';
 
 export { LanguageCloud };
