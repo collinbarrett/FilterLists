@@ -40,8 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-plugin-prettier": "^2.0.1"
-  }
+  "devDependencies": {}
 }
