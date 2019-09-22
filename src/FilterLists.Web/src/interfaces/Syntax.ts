@@ -4,4 +4,4 @@ export interface Syntax {
   filterListIds: number[];
   name: string;
   softwareIds: number[];
-}
+};

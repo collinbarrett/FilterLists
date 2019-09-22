@@ -1,3 +1,3 @@
-import { Maintainers } from "./Maintainers";
+import { Maintainers } from './Maintainers';
 
 export { Maintainers };

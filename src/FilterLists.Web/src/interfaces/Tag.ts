@@ -3,4 +3,4 @@ export interface Tag {
   description: string;
   filterListIds: number[];
   name: string;
-}
+};

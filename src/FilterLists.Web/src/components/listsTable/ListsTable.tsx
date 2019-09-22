@@ -1,33 +1,29 @@
-import "./listsTable.css";
+import './listsTable.css';
 
-import { Table, Tag } from "antd";
-import {
-  PaginationConfig,
-  SorterResult,
-  TableCurrentDataSource
-} from "antd/lib/table";
-import React, { useEffect, useState } from "react";
-import { RouteComponentProps } from "react-router";
+import { Table, Tag } from 'antd';
+import { PaginationConfig, SorterResult, TableCurrentDataSource } from 'antd/lib/table';
+import React, { useEffect, useState } from 'react';
+import { RouteComponentProps } from 'react-router';
 
-import { useSearchColumnFilter, useTablePageSizer } from "../../hooks";
-import { Language } from "../../interfaces/Language";
-import { License } from "../../interfaces/License";
-import { List } from "../../interfaces/List";
-import { Maintainer } from "../../interfaces/Maintainer";
-import { Software } from "../../interfaces/Software";
-import { Syntax } from "../../interfaces/Syntax";
-import { Tag as TagInterface } from "../../interfaces/Tag";
-import { nameof } from "../../utils";
-import { Description } from "../Description";
-import { LanguageCloud } from "../languageCloud";
-import { LicenseTag } from "../LicenseTag";
-import { ListInfoButton } from "../ListInfoButton";
-import { MaintainerCloud } from "../maintainerCloud";
-import { SoftwareCloud, SoftwareIcon } from "../softwareCloud";
-import { SyntaxTag } from "../SyntaxTag";
-import { TagCloud } from "../tagCloud";
-import { arraySorter } from "./arraySorter";
-import styles from "./ListsTable.module.css";
+import { useSearchColumnFilter, useTablePageSizer } from '../../hooks';
+import { Language } from '../../interfaces/Language';
+import { License } from '../../interfaces/License';
+import { List } from '../../interfaces/List';
+import { Maintainer } from '../../interfaces/Maintainer';
+import { Software } from '../../interfaces/Software';
+import { Syntax } from '../../interfaces/Syntax';
+import { Tag as TagInterface } from '../../interfaces/Tag';
+import { nameof } from '../../utils';
+import { Description } from '../Description';
+import { LanguageCloud } from '../languageCloud';
+import { LicenseTag } from '../LicenseTag';
+import { ListInfoButton } from '../ListInfoButton';
+import { MaintainerCloud } from '../maintainerCloud';
+import { SoftwareCloud, SoftwareIcon } from '../softwareCloud';
+import { SyntaxTag } from '../SyntaxTag';
+import { TagCloud } from '../tagCloud';
+import { arraySorter } from './arraySorter';
+import styles from './ListsTable.module.css';
 
 interface Props {
   lists: List[];
@@ -37,24 +33,13 @@ interface Props {
   software: Software[];
   syntaxes: Syntax[];
   tags: TagInterface[];
-}
+};
 
 export const ListsTable = (props: RouteComponentProps & Props) => {
-  const {
-    lists,
-    languages,
-    licenses,
-    maintainers,
-    software,
-    syntaxes,
-    tags,
-    ...routeComponentProps
-  } = props;
+  const { lists, languages, licenses, maintainers, software, syntaxes, tags, ...routeComponentProps } = props;
   const tablePageSize = useTablePageSizer();
   const searchNameColumn = useSearchColumnFilter<List>(nameof<List>("name"));
-  const searchDescriptionColumn = useSearchColumnFilter<List>(
-    nameof<List>("description")
-  );
+  const searchDescriptionColumn = useSearchColumnFilter<List>(nameof<List>("description"));
   const [visibleLists, setVisibleLists] = useState<List[]>(lists);
   useEffect(() => {
     setVisibleLists(lists);
@@ -71,13 +56,8 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         pageSize: tablePageSize.pageSize
       }}
       scroll={{ x: tablePageSize.isNarrowWindow ? undefined : 1892 }}
-      onChange={(
-        _pagination: PaginationConfig,
-        _filters: Record<keyof List, string[]>,
-        _sorter: SorterResult<List>,
-        extra: TableCurrentDataSource<List>
-      ) => setVisibleLists(extra.currentDataSource)}
-    >
+      onChange={(_pagination: PaginationConfig, _filters: Record<keyof List, string[]>, _sorter: SorterResult<List>, extra: TableCurrentDataSource<List>) =>
+        setVisibleLists(extra.currentDataSource)}>
       <Table.Column<List>
         title="Info"
         key="Info"
@@ -85,10 +65,8 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         width={tablePageSize.isNarrowWindow ? 43 : undefined}
         className={styles.nogrow}
         fixed={tablePageSize.isNarrowWindow ? undefined : "left"}
-        render={(_id: number, list: List) => (
-          <ListInfoButton listName={list.name} {...routeComponentProps} />
-        )}
-      />
+        render={(_id: number, list: List) =>
+          <ListInfoButton listName={list.name} {...routeComponentProps} />} />
       <Table.Column<List>
         title="Name"
         key="Name"
@@ -101,10 +79,11 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         filterDropdown={searchNameColumn.filterDropdown}
         filterIcon={searchNameColumn.filterIcon}
         onFilter={searchNameColumn.onFilter}
-        render={(name: string) => <div>{name}</div>}
-      />
-      {tablePageSize.isNarrowWindow ? null : (
-        <Table.Column<List>
+        render={(name: string) =>
+          <div>{name}</div>} />
+      {tablePageSize.isNarrowWindow
+        ? null
+        : <Table.Column<List>
           title="Description"
           key="Description"
           dataIndex={nameof<List>("description")}
@@ -112,63 +91,38 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           filterDropdown={searchDescriptionColumn.filterDropdown}
           filterIcon={searchDescriptionColumn.filterIcon}
           onFilter={searchDescriptionColumn.onFilter}
-          render={(description: string, list: List) => (
+          render={(description: string, list: List) =>
             <Description
               description={description}
-              descriptionSourceUrl={list.descriptionSourceUrl}
-            />
-          )}
-        />
-      )}
-      {tablePageSize.isNarrowWindow ? null : (
-        <Table.Column<List>
+              descriptionSourceUrl={list.descriptionSourceUrl} />} />}
+      {tablePageSize.isNarrowWindow
+        ? null
+        : <Table.Column<List>
           title="Software"
           key="Software"
           dataIndex={nameof<List>("syntaxId")}
           sorter={(a, b) => {
-            const getSoftwareIds = (l: List) =>
-              software
-                .filter((s: Software) => s.syntaxIds.includes(l.syntaxId))
-                .map(s => s.id);
+            const getSoftwareIds = (l: List) => software.filter((s: Software) => s.syntaxIds.includes(l.syntaxId)).map(s => s.id);
             return arraySorter(getSoftwareIds(a), getSoftwareIds(b), software);
           }}
           width={143}
           className={styles.nogrow}
           filters={software.map(s => ({
-            text: (
-              <>
-                <SoftwareIcon id={s.id} />
-                &nbsp;
-                {s.name}&nbsp; (
-                {
-                  visibleLists.filter(
-                    l => s.syntaxIds && s.syntaxIds.includes(l.syntaxId)
-                  ).length
-                }
-                )
-              </>
-            ),
+            text: <>
+              <SoftwareIcon id={s.id} />&nbsp;
+              {s.name}&nbsp;
+              ({visibleLists.filter(l => s.syntaxIds && s.syntaxIds.includes(l.syntaxId)).length})
+              </>,
             value: s.name
           }))}
-          onFilter={(value, record) =>
-            software
-              .filter((s: Software) => s.name === value)
-              .flatMap(s => s.syntaxIds)
-              .includes(record.syntaxId)
-          }
+          onFilter={(value, record) => software.filter((s: Software) => s.name === value).flatMap(s => s.syntaxIds).includes(record.syntaxId)}
           render={(syntaxId: number) =>
-            syntaxId ? (
-              <SoftwareCloud
-                software={software.filter((s: Software) =>
-                  s.syntaxIds.includes(syntaxId)
-                )}
-              />
-            ) : null
-          }
-        />
-      )}
-      {tablePageSize.isNarrowWindow ? null : (
-        <Table.Column<List>
+            syntaxId
+              ? <SoftwareCloud software={software.filter((s: Software) => s.syntaxIds.includes(syntaxId))} />
+              : null} />}
+      {tablePageSize.isNarrowWindow
+        ? null
+        : <Table.Column<List>
           title="Syntax"
           key="Syntax"
           dataIndex={nameof<List>("syntaxId")}
@@ -184,73 +138,48 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           width={254}
           className={styles.nogrow}
           filters={syntaxes.map(s => ({
-            text: (
-              <>
-                <SyntaxTag name={s.name} showLabel={false} />(
-                {
-                  visibleLists.filter(l => l.syntaxId && l.syntaxId === s.id)
-                    .length
-                }
-                )
-              </>
-            ),
+            text: <>
+              <SyntaxTag name={s.name} showLabel={false} />
+              ({visibleLists.filter(l => l.syntaxId && l.syntaxId === s.id).length})
+              </>,
             value: s.id.toString()
           }))}
-          onFilter={(value, record) =>
-            record.syntaxId ? record.syntaxId.toString() === value : false
-          }
+          onFilter={(value, record) => record.syntaxId
+            ? record.syntaxId.toString() === value
+            : false}
           render={(syntaxId: number) => {
             const syntax = syntaxes.find(s => s.id === syntaxId);
-            return syntax ? (
-              <SyntaxTag
-                name={syntax.name}
-                definitionUrl={syntax.definitionUrl}
-              />
-            ) : null;
-          }}
-        />
-      )}
-      {tablePageSize.isNarrowWindow ? null : (
-        <Table.Column<List>
+            return syntax
+              ? <SyntaxTag name={syntax.name} definitionUrl={syntax.definitionUrl} />
+              : null
+          }} />}
+      {tablePageSize.isNarrowWindow
+        ? null
+        : <Table.Column<List>
           title="Languages"
           key="Languages"
           dataIndex={nameof<List>("languageIds")}
-          sorter={(a, b) =>
-            arraySorter(a.languageIds, b.languageIds, languages)
-          }
+          sorter={(a, b) => arraySorter(a.languageIds, b.languageIds, languages)}
           width={129}
           className={styles.nogrow}
           filters={languages.map(l => ({
-            text: (
-              <>
-                <Tag title={l.name}>{l.iso6391}</Tag>&nbsp;
-                {l.name}&nbsp; (
-                {
-                  visibleLists.filter(
-                    li => li.languageIds && li.languageIds.includes(l.id)
-                  ).length
-                }
-                )
-              </>
-            ),
+            text: <>
+              <Tag title={l.name}>{l.iso6391}</Tag>&nbsp;
+              {l.name}&nbsp;
+              ({visibleLists.filter(li => li.languageIds && li.languageIds.includes(l.id)).length})
+            </>,
             value: l.id.toString()
           }))}
-          onFilter={(value, record) =>
-            record.languageIds ? record.languageIds.includes(+value) : false
-          }
+          onFilter={(value, record) => record.languageIds
+            ? record.languageIds.includes(+value)
+            : false}
           render={(languageIds: number[]) =>
-            languageIds ? (
-              <LanguageCloud
-                languages={languages.filter((l: Language) =>
-                  languageIds.includes(l.id)
-                )}
-              />
-            ) : null
-          }
-        />
-      )}
-      {tablePageSize.isNarrowWindow ? null : (
-        <Table.Column<List>
+            languageIds
+              ? <LanguageCloud languages={languages.filter((l: Language) => languageIds.includes(l.id))} />
+              : null} />}
+      {tablePageSize.isNarrowWindow
+        ? null
+        : <Table.Column<List>
           title="Tags"
           key="Tags"
           dataIndex={nameof<List>("tagIds")}
@@ -258,70 +187,45 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           width={275}
           className={styles.nogrow}
           filters={tags.map(t => ({
-            text: (
-              <>
-                <Tag title={t.description}>{t.name}</Tag>(
-                {
-                  visibleLists.filter(l => l.tagIds && l.tagIds.includes(t.id))
-                    .length
-                }
-                )
-              </>
-            ),
+            text: <>
+              <Tag title={t.description}>{t.name}</Tag>
+              ({visibleLists.filter(l => l.tagIds && l.tagIds.includes(t.id)).length})
+            </>,
             value: t.id.toString()
           }))}
-          onFilter={(value, record) =>
-            record.tagIds ? record.tagIds.includes(+value) : false
-          }
+          onFilter={(value, record) => record.tagIds
+            ? record.tagIds.includes(+value)
+            : false}
           render={(tagIds: number[]) =>
-            tagIds ? (
-              <TagCloud
-                tags={tags.filter((t: TagInterface) => tagIds.includes(t.id))}
-              />
-            ) : null
-          }
-        />
-      )}
-      {tablePageSize.isNarrowWindow ? null : (
-        <Table.Column<List>
+            tagIds
+              ? <TagCloud tags={tags.filter((t: TagInterface) => tagIds.includes(t.id))} />
+              : null} />}
+      {tablePageSize.isNarrowWindow
+        ? null
+        : <Table.Column<List>
           title="Maintainers"
           key="Maintainers"
           dataIndex={nameof<List>("maintainerIds")}
-          sorter={(a, b) =>
-            arraySorter(a.maintainerIds, b.maintainerIds, maintainers)
-          }
+          sorter={(a, b) => arraySorter(a.maintainerIds, b.maintainerIds, maintainers)}
           width={191}
           className={styles.nogrow}
           filters={maintainers.map(t => ({
-            text: (
-              <>
-                <Tag title={t.name}>{t.name}</Tag>(
-                {
-                  visibleLists.filter(
-                    l => l.maintainerIds && l.maintainerIds.includes(t.id)
-                  ).length
-                }
-                )
-              </>
-            ),
+            text: <>
+              <Tag title={t.name}>{t.name}</Tag>
+              ({visibleLists.filter(l => l.maintainerIds && l.maintainerIds.includes(t.id)).length})
+            </>,
             value: t.id.toString()
           }))}
-          onFilter={(value, record) =>
-            record.maintainerIds ? record.maintainerIds.includes(+value) : false
-          }
+          onFilter={(value, record) => record.maintainerIds
+            ? record.maintainerIds.includes(+value)
+            : false}
           render={(maintainerIds: number[]) =>
-            maintainerIds ? (
-              <MaintainerCloud
-                maintainers={maintainers.filter((t: Maintainer) =>
-                  maintainerIds.includes(t.id)
-                )}
-              />
-            ) : null
-          }
-        />
-      )}
-      {tablePageSize.isNarrowWindow ? null : (
-        <Table.Column<List>
+            maintainerIds
+              ? <MaintainerCloud maintainers={maintainers.filter((t: Maintainer) => maintainerIds.includes(t.id))} />
+              : null} />}
+      {tablePageSize.isNarrowWindow
+        ? null
+        : <Table.Column<List>
           title="License"
           key="License"
           dataIndex={nameof<List>("licenseId")}
@@ -337,34 +241,21 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           width={215}
           className={styles.nogrow}
           filters={licenses.map(l => ({
-            text: (
-              <>
-                <LicenseTag name={l.name} showLabel={false} />(
-                {
-                  visibleLists.filter(
-                    li => li.licenseId && li.licenseId === l.id
-                  ).length
-                }
-                )
-              </>
-            ),
+            text: <>
+              <LicenseTag name={l.name} showLabel={false} />
+              ({visibleLists.filter(li => li.licenseId && li.licenseId === l.id).length})
+              </>,
             value: l.id.toString()
           }))}
-          onFilter={(value, record) =>
-            record.licenseId ? record.licenseId.toString() === value : false
-          }
+          onFilter={(value, record) => record.licenseId
+            ? record.licenseId.toString() === value
+            : false}
           render={(licenseId: number) => {
             const license = licenses.find(l => l.id === licenseId);
-            return license ? (
-              <LicenseTag
-                name={license.name}
-                descriptionUrl={license.descriptionUrl}
-                showLabel={false}
-              />
-            ) : null;
-          }}
-        />
-      )}
+            return license
+              ? <LicenseTag name={license.name} descriptionUrl={license.descriptionUrl} showLabel={false} />
+              : null
+          }} />}
     </Table>
   );
 };
