@@ -5,4 +5,4 @@ export interface Maintainer {
   homeUrl: string;
   name: string;
   twitterHandle: string;
-};
+}
