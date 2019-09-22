@@ -1,3 +1,3 @@
-import { ListsTable } from './listsTable';
+import { ListsTable } from "./listsTable";
 
 export { ListsTable };
