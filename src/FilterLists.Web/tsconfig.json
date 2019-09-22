@@ -16,5 +16,9 @@
     "jsx": "preserve",
     "noImplicitAny": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "extends": ["tslint-plugin-prettier", "tslint-config-prettier"],
+  "rules": {
+    "prettier": true
+  }
 }
