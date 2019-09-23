@@ -1,9 +1,11 @@
-import { Button, Icon, Input } from 'antd';
-import { FilterDropdownProps } from 'antd/lib/table';
-import React, { useEffect, useState } from 'react';
+import { Button, Icon, Input } from "antd";
+import { FilterDropdownProps } from "antd/lib/table";
+import React, { useEffect, useState } from "react";
 
 interface FilterPropsState<T> {
-  filterDropdown?: React.ReactNode | ((props: FilterDropdownProps) => React.ReactNode);
+  filterDropdown?:
+    | React.ReactNode
+    | ((props: FilterDropdownProps) => React.ReactNode);
   filterIcon?: React.ReactNode | ((filtered: boolean) => React.ReactNode);
   onFilter?: (value: any, record: T) => boolean;
 }
@@ -22,36 +24,59 @@ export const useSearchColumnFilter = <T extends {}>(dataIndex: string) => {
       clearFilters && clearFilters([]);
     };
     setFilterProps({
-      filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => (
+      filterDropdown: ({
+        setSelectedKeys,
+        selectedKeys,
+        confirm,
+        clearFilters
+      }) => (
         <div style={{ padding: 8 }}>
           <Input
-            placeholder={`Search ${dataIndex.charAt(0).toUpperCase() + dataIndex.slice(1)}`}
+            placeholder={`Search ${dataIndex.charAt(0).toUpperCase() +
+              dataIndex.slice(1)}`}
             value={selectedKeys && selectedKeys[0]}
-            onChange={e => setSelectedKeys && setSelectedKeys(e.target.value ? [e.target.value] : [])}
+            onChange={e =>
+              setSelectedKeys &&
+              setSelectedKeys(e.target.value ? [e.target.value] : [])
+            }
             onPressEnter={() => handleSearch(confirm)}
-            style={{ width: 188, marginBottom: 8, display: 'block' }} />
+            style={{ width: 188, marginBottom: 8, display: "block" }}
+          />
           <Button
             type="primary"
             onClick={() => handleSearch(confirm)}
             icon="search"
             size="small"
-            style={{ width: 90, marginRight: 8 }} >
+            style={{ width: 90, marginRight: 8 }}
+          >
             Search
-                    </Button>
+          </Button>
           <Button
             onClick={() => handleReset(clearFilters)}
             size="small"
-            style={{ width: 90 }} >
+            style={{ width: 90 }}
+          >
             Reset
-                    </Button>
+          </Button>
         </div>
       ),
-      filterIcon: filtered => <Icon type="search" style={{ color: filtered ? '#1890ff' : undefined }} />,
+      filterIcon: filtered => (
+        <Icon
+          type="search"
+          style={{ color: filtered ? "#1890ff" : undefined }}
+        />
+      ),
       onFilter: (value, record) => {
         const searchValue = (record as any)[dataIndex];
-        return searchValue && searchValue.toString().toLowerCase().includes(value.toString().toLowerCase())
+        return (
+          searchValue &&
+          searchValue
+            .toString()
+            .toLowerCase()
+            .includes(value.toString().toLowerCase())
+        );
       }
-    })
+    });
   }, [dataIndex]);
   return filterProps;
 };
