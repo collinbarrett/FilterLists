@@ -1,0 +1,13 @@
+trigger:
+  - master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: DockerCompose@0
+    displayName: build
+    inputs:
+      dockerComposeFile: 'docker-compose.yml'
+      additionalDockerComposeFiles: 'docker-compose.prod.yml'
+      dockerComposeCommand: 'build web'
