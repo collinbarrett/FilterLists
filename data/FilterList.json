@@ -3202,12 +3202,12 @@
     "description": "Corset is a subscription filter to block intruding ads on sites using Korean.",
     "descriptionSourceUrl": "https://code.google.com/archive/p/abp-corset/",
     "emailAddress": "corset@tistory.com",
-    "homeUrl": "https://corset.tistory.com/",
+    "homeUrl": "https://github.com/nicedirector/ADBlock",
     "licenseId": 12,
     "name": "Corset",
     "syntaxId": 3,
     "updatedDate": "2011-02-09T00:00:00",
-    "viewUrl": "https://web.archive.org/web/20110212174029if_/http://abp-corset.googlecode.com:80/hg/corset.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nicedirector/ADBlock/master/Adblock_Filter.txt"
   },
   {
     "id": 279,
