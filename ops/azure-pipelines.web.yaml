@@ -17,6 +17,7 @@ steps:
       command: buildAndPush
       repository: collinbarrett/FilterLists
       Dockerfile: src/FilterLists.Web/Dockerfile
+      context: ../
       tags: |
         latest
         $(Build.BuildId)
