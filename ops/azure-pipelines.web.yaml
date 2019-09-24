@@ -2,12 +2,21 @@ trigger:
   - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: "ubuntu-latest"
 
 steps:
-  - task: DockerCompose@0
-    displayName: build
+  - task: Docker@2
+    displayName: login to github package registry
     inputs:
-      dockerComposeFile: 'docker-compose.yml'
-      additionalDockerComposeFiles: 'docker-compose.prod.yml'
-      dockerComposeCommand: 'build web'
+      command: login
+      containerRegistry: "GitHub Docker Package Registry - FilterLists"
+
+  - task: Docker@2
+    displayName: build and push
+    inputs:
+      command: buildAndPush
+      repository: collinbarrett/FilterLists
+      Dockerfile: src/FilterLists.Web/Dockerfile
+      tags: |
+        latest
+        $(Build.BuildId)
