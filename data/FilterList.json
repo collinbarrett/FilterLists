@@ -19632,5 +19632,302 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersSocks5.list",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersSocks5.list",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersSocks5.list"
+  },
+  {
+    "id": 1843,
+    "name": "secretsnow-adfilters",
+    "description": "ad filter list ublock origin",
+    "homeUrl": "https://github.com/secretsnow/secretsnow-adfilters/",
+    "viewUrl": "https://raw.githubusercontent.com/secretsnow/secretsnow-adfilters/master/secretsnow-adfilters.txt",
+    "syntaxId": 3,
+    "licenseId": 28
+},
+{
+    "id": 1844,
+    "name": "motd-adblock",
+    "description": "A simple program made for blocking ads that appear in the MoTD of any Source game (or any other game that also has Pinion, MOTDgd, Unikrn and VPPGamingNetwork appear elsewhere).",
+    "homeUrl": "https://github.com/some-username-here1/motd-adblock/",
+    "viewUrl": "https://raw.githubusercontent.com/some-username-here1/motd-adblock/master/motd-adblock",
+    "syntaxId": 1,
+    "licenseId": 4
+},
+{
+    "id": 1845,
+    "name": "ADP Mobile Filter",
+    "homeUrl": "https://github.com/T4Tea/ADPMobileFilter/",
+    "viewUrl": "https://raw.githubusercontent.com/T4Tea/ADPMobileFilter/master/ADPMobileFilter.txt",
+    "syntaxId": 3
+},
+{
+    "id": 1846,
+    "name": "Macedonian adBlock Filters",
+    "description": "Blocking ads and trackers on various macedonian websites.",
+    "homeUrl": "https://github.com/RandomAdversary/Macedonian-adBlock-Filters",
+    "viewUrl": "https://raw.githubusercontent.com/RandomAdversary/Macedonian-adBlock-Filters/master/Filters",
+    "syntaxId": 3,
+    "licenseId": 2
+},
+{
+    "id": 1847,
+    "name": "nothingblock filter",
+    "description": "nothingblock blocks unnecessary element to have 'nothing more to take away'.",
+    "homeUrl": "https://github.com/dorjmi/nothingblock",
+    "viewUrl": "https://raw.githubusercontent.com/dorjmi/nothingblock/master/filter.txt",
+    "syntaxId": 3,
+    "licenseId": 33
+},
+{
+    "id": 1848,
+    "name": "AdditionalFiltersCN",
+    "description": "Additional Filters for browser extension based adblockers like uBlock Origin, mainly for Chinese mainland internet service, respectively for privacy, advertisement and interruption elements. Including some obvious trackers which could be found&confirmed by novices in network development easily, and should been listed&blocked YEARS ago.",
+    "homeUrl": "https://github.com/Crystal-RainSlide/AdditionalFiltersCN",
+    "viewUrl": "https://raw.githubusercontent.com/Crystal-RainSlide/AdditionalFiltersCN/master/all.txt",
+    "syntaxId": 3
+},
+{
+    "id": 1849,
+    "name": "jCleanList",
+    "description": "Automatic ABP rules.",
+    "homeUrl": "https://github.com/jiayiming/jCleanList/",
+    "viewUrl": "https://raw.githubusercontent.com/jiayiming/jCleanList/master/jCleanList_all.txt",
+    "syntaxId": 3,
+    "licenseId": 2
+},
+{
+    "id": 1850,
+    "name": "QuarkList",
+    "description": "This site specializes in custom filtering rules to supplement official rules and enhance the effectiveness of web ad blocking.",
+    "homeUrl": "https://n2o.io/p/adblock/",
+    "viewUrl": "https://n2o.io/p/adblock/dist/quarklist.txt",
+    "syntaxId": 3,
+    "licenseId": 2
+},
+{
+    "id": 1851,
+    "name": "QuarkHosts",
+    "description": "The hosts file can be used for software ad blocking outside the browser, with fewer rules and a good blocking effect.",
+    "homeUrl": "https://n2o.io/p/adblock/",
+    "viewUrl": "https://n2o.io/p/adblock/dist/hosts",
+    "syntaxId": 1,
+    "licenseId": 2
+},
+{
+    "id": 1852,
+    "name": "Thai Ads Filters",
+    "description": "A filter for uBO that aims to remove regional Thai ads, tracking, scams and badware.",
+    "homeUrl": "https://github.com/adblock-thai/thai-ads-filter",
+    "viewUrl": "https://adblock-thai.github.io/thai-ads-filter/subscription.txt",
+    "syntaxId": 4,
+    "licenseId": 2
+},
+{
+    "id": 1853,
+    "name": "Thai Annoyance Filters",
+    "description": "A filter that aims to remove annoyances and unnecessary bloat.",
+    "homeUrl": "https://github.com/adblock-thai/thai-ads-filter",
+    "viewUrl": "https://adblock-thai.github.io/thai-ads-filter/annoyance.txt",
+    "syntaxId": 4,
+    "licenseId": 2
+},
+{
+    "id": 1854,
+    "name": "Master Inspire",
+    "description": "Custom Ad Filters. Can be used in uBlock Origin.",
+    "homeUrl": "https://github.com/masterinspire/Master-AdRules",
+    "viewUrl": "https://raw.githubusercontent.com/masterinspire/Master-AdRules/master/Master-AdRules.txt",
+    "syntaxId": 4,
+    "licenseId": 13
+},
+{
+    "id": 1855,
+    "name": "LionBlock",
+    "description": "AdBlock filter",
+    "homeUrl": "https://github.com/likelion-adblock/filter/",
+    "viewUrl": "https://raw.githubusercontent.com/likelion-adblock/filter/master/filter.txt",
+    "syntaxId": 6
+},
+{
+    "id": 1856,
+    "name": "nocomments",
+    "description": "This is an Adblock Plus filter list that removes all comment sections from homepages.",
+    "homeUrl": "https://github.com/lutoma/nocomments",
+    "viewUrl": "https://raw.githubusercontent.com/lutoma/nocomments/master/abp.txt",
+    "syntaxId": 3
+},
+{
+    "id": 1857,
+    "name": "Nanj Kakuchou Filter - Supplement Rules",
+    "description": "This is a filter to complement 280blocker by finding advertisements that are not blocked by 280blocker.",
+    "homeUrl": "https://github.com/nanj-adguard2/nanj-kakuchou-filter",
+    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/supplement-rules.txt",
+    "syntaxId": 3,
+    "licenseId": 20
+},
+{
+    "id": 1858,
+    "name": "Nanj Kakuchou Filter - DNS Rules",
+    "description": "DNS rule filters to strengthen ad blocking.",
+    "homeUrl": "https://github.com/nanj-adguard2/nanj-kakuchou-filter",
+    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/DNS-rules.txt",
+    "syntaxId": 28,
+    "licenseId": 20
+},
+{
+    "id": 1859,
+    "name": "Nanj Kakuchou Filter - Paranoid Rules",
+    "description": "This is a filter that eradicates what 280blocker will not support in the future.",
+    "homeUrl": "https://github.com/nanj-adguard2/nanj-kakuchou-filter",
+    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/paranoid-rules.txt",
+    "syntaxId": 3,
+    "licenseId": 20
+},
+{
+    "id": 1860,
+    "name": "Nanj Kaishuu Filter",
+    "description": "This is a filter to fix bugs in AdGuard for Android when using Japanese websites / Japanese apps / 280blocker.",
+    "homeUrl": "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
+    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kaishuu-filter/master/nanj-kaishuu-filter.txt",
+    "syntaxId": 6,
+    "licenseId": 20
+},
+{
+    "id": 1861,
+    "name": "Nanj Kaishuu DNS Filter",
+    "description": "This is a filter to fix bugs in AdGuard for Android when using Japanese websites / Japanese apps / 280blocker.",
+    "homeUrl": "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
+    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kaishuu-filter/master/nanj-kaishuu-dns-filter.txt",
+    "syntaxId": 3,
+    "licenseId": 20
+},
+{
+    "id": 1862,
+    "name": "280blocker for japanese mobile site",
+    "description": "This is a filter to fix bugs in AdGuard for Android when using Japanese websites / Japanese apps / 280blocker.",
+    "homeUrl": "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
+    "viewUrl": "https://280blocker.net/files/280blocker_adblock_nanj.txt",
+    "syntaxId": 3,
+    "licenseId": 1
+},
+{
+    "id": 1863,
+    "name": "280blocker for japanese mobile site - Supplement",
+    "description": "This is a filter to fix bugs in AdGuard for Android when using Japanese websites / Japanese apps / 280blocker.",
+    "homeUrl": "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
+    "viewUrl": "https://280blocker.net/files/280blocker_adblock_nanj_supp.txt",
+    "syntaxId": 3,
+    "licenseId": 1
+},
+{
+    "id": 1864,
+    "name": "Adblock Sinhala",
+    "description": "This is a quick list of Ad-blocking filters for Sri Lankan web sites. Use this to complement Easylist filters.",
+    "homeUrl": "https://github.com/Ayesh/Adblock-Sinhala/",
+    "viewUrl": "https://raw.githubusercontent.com/Ayesh/Adblock-Sinhala/master/filters.txt",
+    "syntaxId": 3,
+    "licenseId": 8
+},
+{
+    "id": 1865,
+    "name": "ABPVN Advanced",
+    "homeUrl": "https://github.com/zonprox/adblock/",
+    "viewUrl": "https://raw.githubusercontent.com/zonprox/adblock/master/abpvnplus.txt",
+    "syntaxId": 3
+},
+{
+    "id": 1866,
+    "name": "Ad Domains Filter List",
+    "description": "A combined list of all the Ad Domains.",
+    "homeUrl": "https://github.com/LanikSJ/ubo-filters",
+    "viewUrl": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/master/filters/combined-filters.txt",
+    "syntaxId": 28,
+    "licenseId": 4
+},
+{
+    "id": 1867,
+    "name": "Lanik's uBO Filter List",
+    "description": "This is just my List of sites I frequently visit.",
+    "homeUrl": "https://github.com/LanikSJ/ubo-filters",
+    "viewUrl": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/master/filters/ubo-filters.txt",
+    "syntaxId": 4,
+    "licenseId": 4
+},
+{
+    "id": 1868,
+    "name": "BlockConvert (Adblockers)",
+    "description": "Malware, advert and tracking blacklist",
+    "homeUrl": "https://github.com/mkb2091/blockconvert",
+    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/adblock.txt",
+    "syntaxId": 3,
+    "licenseId": 4
+},
+{
+    "id": 1869,
+    "name": "BlockConvert (Hosts)",
+    "description": "Malware, advert and tracking blacklist",
+    "homeUrl": "https://github.com/mkb2091/blockconvert",
+    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/hosts.txt",
+    "syntaxId": 1,
+    "licenseId": 4
+},
+{
+    "id": 1870,
+    "name": "BlockConvert (Domains)",
+    "description": "Malware, advert and tracking blacklist",
+    "homeUrl": "https://github.com/mkb2091/blockconvert",
+    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/domains.txt",
+    "syntaxId": 2,
+    "licenseId": 4
+},
+{
+    "id": 1871,
+    "name": "BlockConvert (IPs)",
+    "description": "Malware, advert and tracking blacklist",
+    "homeUrl": "https://github.com/mkb2091/blockconvert",
+    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/ip_blocklist.txt",
+    "syntaxId": 8,
+    "licenseId": 4
+},
+{
+    "id": 1872,
+    "name": "BlockConvert (RPZ)",
+    "description": "Malware, advert and tracking blacklist",
+    "homeUrl": "https://github.com/mkb2091/blockconvert",
+    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/domains.rpz",
+    "syntaxId": 25,
+    "licenseId": 4
+},
+{
+    "id": 1873,
+    "name": "BlockConvert (Whitelist domains)",
+    "description": "Malware, advert and tracking blacklist",
+    "homeUrl": "https://github.com/mkb2091/blockconvert",
+    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/whitelist_domains.txt",
+    "syntaxId": 2,
+    "licenseId": 4
+},
+{
+    "id": 1874,
+    "name": "BlockConvert (Whitelist adblockers)",
+    "description": "Malware, advert and tracking blacklist",
+    "homeUrl": "https://github.com/mkb2091/blockconvert",
+    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/whitelist_adblock.txt",
+    "syntaxId": 3,
+    "licenseId": 4
+},
+  {
+    "id": 1875,
+    "description": "This supplemental list is for those who wish to use Perflyst's list «PiHole Blocklist SmartTV» with AdGuard Home to block banner ads, but who do not have any qualms with TV system updates or app stores.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Update whitelister for «PiHole Blocklist SmartTV»",
+    "publishedDate": "2019-09-24T00:00:00",
+    "syntaxId": 29,
+    "updatedDate": "2019-09-24T00:00:00",
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/SmartTVUpdateWhitelister.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/SmartTVUpdateWhitelister.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/SmartTVUpdateWhitelister.txt"
   }
 ]
