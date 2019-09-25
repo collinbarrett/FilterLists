@@ -20,7 +20,6 @@ steps:
     displayName: push
     inputs:
       containerRegistry: "GitHub Docker Package Registry - FilterLists"
-      repository: "docker.pkg.github.com/collinbarrett/filterlists"
       command: "push"
       tags: |
         latest
