@@ -31,7 +31,7 @@ pool:
 
 steps:
   - task: Docker@2
-    displayName: build
+    displayName: "build"
     inputs:
       containerRegistry: "GitHub Docker Package Registry - FilterLists"
       repository: "collinbarrett/filterlists/filterlists.web"
@@ -43,12 +43,32 @@ steps:
         $(Build.BuildId)
 
   - task: Docker@2
-    displayName: push
+    displayName: "push"
     inputs:
       containerRegistry: "GitHub Docker Package Registry - FilterLists"
       repository: "collinbarrett/filterlists/filterlists.web"
       command: "push"
-      condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
       tags: |
         latest
         $(Build.BuildId)
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
+
+  - task: CopyFiles@2
+    displayName: "stage docker-compose files"
+    inputs:
+      SourceFolder: "$(Build.SourcesDirectory)"
+      Contents: |
+        docker-compose.yml
+        docker-compose.prod.yml
+      TargetFolder: "$(Build.ArtifactStagingDirectory)"
+      CleanTargetFolder: true
+      OverWrite: true
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
+
+  - task: PublishBuildArtifacts@1
+    displayName: "publish docker-compose files"
+    inputs:
+      PathtoPublish: "$(Build.ArtifactStagingDirectory)"
+      ArtifactName: "drop"
+      publishLocation: "Container"
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
