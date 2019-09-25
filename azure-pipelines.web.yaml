@@ -9,7 +9,7 @@ steps:
     displayName: build
     inputs:
       containerRegistry: "GitHub Docker Package Registry - FilterLists"
-      repository: "docker.pkg.github.com/collinbarrett/filterlists"
+      repository: collinbarrett/filterlists
       command: "build"
       Dockerfile: "src/FilterLists.Web/Dockerfile"
       buildContext: "."
@@ -27,7 +27,7 @@ steps:
     displayName: push
     inputs:
       containerRegistry: "GitHub Docker Package Registry - FilterLists"
-      repository: "docker.pkg.github.com/collinbarrett/filterlists"
+      repository: collinbarrett/filterlists
       command: "push"
       tags: |
         latest
