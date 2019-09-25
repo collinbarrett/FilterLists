@@ -6,6 +6,7 @@ pool:
 
 steps:
   - task: Docker@2
+    displayName: login to github package registry
     inputs:
       containerRegistry: "GitHub Docker Package Registry - FilterLists"
       command: login
