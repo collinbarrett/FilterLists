@@ -6,12 +6,6 @@ pool:
 
 steps:
   - task: Docker@2
-    displayName: login to github package registry
-    inputs:
-      containerRegistry: "GitHub Docker Package Registry - FilterLists"
-      command: login
-
-  - task: Docker@2
     displayName: build
     inputs:
       containerRegistry: "GitHub Docker Package Registry - FilterLists"
@@ -22,6 +16,12 @@ steps:
       tags: |
         latest
         $(Build.BuildId)
+
+  - task: Docker@2
+    displayName: login to github package registry
+    inputs:
+      containerRegistry: "GitHub Docker Package Registry - FilterLists"
+      command: login
 
   - task: Docker@2
     displayName: push
