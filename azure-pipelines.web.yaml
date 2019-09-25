@@ -6,7 +6,7 @@ pool:
 
 steps:
   - task: Docker@2
-    displayName: build
+    displayName:     build
     inputs:
       repository: "docker.pkg.github.com/collinbarrett/filterlists"
       command: "build"
