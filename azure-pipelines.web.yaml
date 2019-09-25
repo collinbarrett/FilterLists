@@ -1,5 +1,14 @@
 trigger:
-  - master
+  branches:
+    include: ["web-yaml-build"]
+  paths:
+    include:
+      [
+        "src/FilterLists.Web/*",
+        ".dockerignore",
+        "docker-compose.yml",
+        "docker-compose.prod.yml",
+      ]
 
 pool:
   vmImage: "ubuntu-latest"
