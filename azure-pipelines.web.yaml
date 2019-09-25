@@ -45,6 +45,7 @@ steps:
     inputs:
       containerRegistry: "GitHub Docker Package Registry - FilterLists"
       command: "login"
+      condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
 
   - task: Docker@2
     displayName: push
@@ -52,6 +53,7 @@ steps:
       containerRegistry: "GitHub Docker Package Registry - FilterLists"
       repository: "collinbarrett/filterlists"
       command: "push"
+      condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
       tags: |
         latest
         $(Build.BuildId)
