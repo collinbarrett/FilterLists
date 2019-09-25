@@ -58,4 +58,4 @@ steps:
       condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
       tags: |
         latest
-        $(Build.BuildId)
+        # $(Build.BuildId)
