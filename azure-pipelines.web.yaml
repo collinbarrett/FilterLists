@@ -14,6 +14,8 @@ steps:
   - task: Docker@2
     displayName: build
     inputs:
+      containerRegistry: "GitHub Docker Package Registry - FilterLists"
+      repository: "docker.pkg.github.com/collinbarrett/filterlists"
       command: "build"
       Dockerfile: "src/FilterLists.Web/Dockerfile"
       buildContext: "."
