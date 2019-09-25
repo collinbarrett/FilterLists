@@ -2470,5 +2470,37 @@
   {
     "filterListId": 1864,
     "languageId": 74
+  },
+  {
+    "filterListId": 1876,
+    "languageId": 44
+  },
+  {
+    "filterListId": 1876,
+    "languageId": 106
+  },
+  {
+    "filterListId": 1877,
+    "languageId": 44
+  },
+  {
+    "filterListId": 1877,
+    "languageId": 106
+  },
+  {
+    "filterListId": 1878,
+    "languageId": 44
+  },
+  {
+    "filterListId": 1878,
+    "languageId": 106
+  },
+  {
+    "filterListId": 1879,
+    "languageId": 44
+  },
+  {
+    "filterListId": 1879,
+    "languageId": 106
   }
 ]
