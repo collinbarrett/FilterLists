@@ -41,6 +41,7 @@ steps:
       tags: |
         latest
         $(Build.BuildId)
+      addPipelineData: false
 
   - task: Docker@2
     displayName: "push"
