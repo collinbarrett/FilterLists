@@ -1,6 +1,9 @@
-variables:
-  - name: triggerIncludePaths
-    value:
+trigger:
+  batch: false
+  branches:
+    include: ["master"]
+  paths:
+    include:
       [
         "azure-pipelines.web.yaml",
         "src/FilterLists.Web/*",
@@ -8,22 +11,20 @@ variables:
         "docker-compose.yml",
         "docker-compose.prod.yml",
       ]
-  - name: onSuccessAndMasterCondition
-    value: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
-
-trigger:
-  batch: false
-  branches:
-    include: ["master"]
-  paths:
-    include: ${{ variables.triggerIncludePaths }}
 
 pr:
   autoCancel: false
   branches:
     include: ["master"]
   paths:
-    include: ${{ variables.triggerIncludePaths }}
+    include:
+      [
+        "azure-pipelines.web.yaml",
+        "src/FilterLists.Web/*",
+        ".dockerignore",
+        "docker-compose.yml",
+        "docker-compose.prod.yml",
+      ]
 
 pool:
   vmImage: "ubuntu-latest"
@@ -50,7 +51,7 @@ steps:
       tags: |
         latest
         $(Build.BuildId)
-    condition: ${{ variables.onSuccessAndMasterCondition }}
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
 
   - task: CopyFiles@2
     displayName: "stage docker-compose files"
@@ -62,7 +63,7 @@ steps:
       TargetFolder: "$(Build.ArtifactStagingDirectory)"
       CleanTargetFolder: true
       OverWrite: true
-    condition: ${{ variables.onSuccessAndMasterCondition }}
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
 
   - task: PublishBuildArtifacts@1
     displayName: "publish docker-compose files"
@@ -70,4 +71,4 @@ steps:
       PathtoPublish: "$(Build.ArtifactStagingDirectory)"
       ArtifactName: "drop"
       publishLocation: "Container"
-    condition: ${{ variables.onSuccessAndMasterCondition }}
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
