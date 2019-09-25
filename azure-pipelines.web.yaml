@@ -1,6 +1,19 @@
 trigger:
   branches:
-    include: ["web-yaml-build"]
+    include: ["master"]
+  paths:
+    include:
+      [
+        "src/FilterLists.Web/*",
+        ".dockerignore",
+        "docker-compose.yml",
+        "docker-compose.prod.yml",
+      ]
+
+pr:
+  autoCancel: false
+  branches:
+    include: ["master"]
   paths:
     include:
       [
