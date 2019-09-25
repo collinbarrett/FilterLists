@@ -33,7 +33,6 @@ steps:
   - task: Docker@2
     displayName: build
     inputs:
-      containerRegistry: "GitHub Docker Package Registry - FilterLists"
       repository: "collinbarrett/filterlists/filterlists.web"
       command: "build"
       Dockerfile: "src/FilterLists.Web/Dockerfile"
