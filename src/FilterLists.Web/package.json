@@ -6,7 +6,7 @@
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.5",
     "@types/react": "^16.9.3",
-    "@types/react-dom": "^16.9.0",
+    "@types/react-dom": "^16.9.1",
     "@types/react-router-dom": "^4.3.5",
     "antd": "^3.23.4",
     "babel-plugin-import": "^1.12.2",
