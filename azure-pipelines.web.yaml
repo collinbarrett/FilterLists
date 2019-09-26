@@ -53,6 +53,7 @@ steps:
         latest
         $(Build.BuildId)
     condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
+    enabled: false
 
   - task: CopyFiles@2
     displayName: "stage docker-compose files"
@@ -65,6 +66,7 @@ steps:
       CleanTargetFolder: true
       OverWrite: true
     condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
+    enabled: false
 
   - task: PublishBuildArtifacts@1
     displayName: "publish docker-compose files"
@@ -73,3 +75,4 @@ steps:
       ArtifactName: "drop"
       publishLocation: "Container"
     condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
+    enabled: false
