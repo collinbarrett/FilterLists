@@ -33,7 +33,7 @@ steps:
   - task: Docker@2
     displayName: "build"
     inputs:
-      containerRegistry: "GitHub Docker Package Registry - FilterLists"
+      containerRegistry: "collinbarrett-github-packages"
       repository: "collinbarrett/filterlists/filterlists.web"
       command: "build"
       Dockerfile: "src/FilterLists.Web/Dockerfile"
@@ -46,7 +46,7 @@ steps:
   - task: Docker@2
     displayName: "push"
     inputs:
-      containerRegistry: "GitHub Docker Package Registry - FilterLists"
+      containerRegistry: "collinbarrett-github-packages"
       repository: "collinbarrett/filterlists/filterlists.web"
       command: "push"
       tags: |
