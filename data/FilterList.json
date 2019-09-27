@@ -19976,21 +19976,5 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersForMinerBlock.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersForMinerBlock.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersForMinerBlock.txt"
-  },
-  {
-    "id": 1879,
-    "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO users should use the regular version instead.",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 35,
-    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (IPs)",
-    "publishedDate": "2019-09-25T00:00:00",
-    "syntaxId": 9,
-    "updatedDate": "2019-09-25T00:00:00",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersIPs.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersIPs.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersIPs.txt"
   }
 ]
