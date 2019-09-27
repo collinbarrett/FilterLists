@@ -53,7 +53,7 @@ steps:
         latest
         $(Build.BuildId)
     condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
-    enabled: false
+    enabled: true
 
   - task: CopyFiles@2
     displayName: "stage docker-compose files"
