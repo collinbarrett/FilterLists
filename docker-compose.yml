@@ -1,4 +1,4 @@
-version: '3.7'
+version: "3.7"
 
 services:
   nginx:
@@ -13,7 +13,7 @@ services:
       - ./ops/nginx/svr-includes:/etc/nginx/svr-includes:ro
 
   web:
-    image: docker.pkg.github.com/collinbarrett/FilterLists/filterlists.web:latest
+    image: docker.pkg.github.com/collinbarrett/filterlists/filterlists.web:latest
     restart: always
     build:
       context: .
@@ -23,7 +23,7 @@ services:
       - reverse-proxy
 
   api:
-    image: docker.pkg.github.com/collinbarrett/FilterLists/filterlists.api:latest
+    image: docker.pkg.github.com/collinbarrett/filterlists/filterlists.api:latest
     restart: always
     build:
       context: .
@@ -51,13 +51,13 @@ services:
       MYSQL_PASSWORD: ${API_MYSQL_PASSWORD}
     command:
       [
-        'mysqld',
-        '--character-set-server=utf8mb4',
-        '--collation-server=utf8mb4_unicode_520_ci',
+        "mysqld",
+        "--character-set-server=utf8mb4",
+        "--collation-server=utf8mb4_unicode_520_ci",
       ]
 
   agent:
-    image: docker.pkg.github.com/collinbarrett/FilterLists/filterlists.agent:latest
+    image: docker.pkg.github.com/collinbarrett/filterlists/filterlists.agent:latest
     build:
       context: .
       dockerfile: src/FilterLists.Agent/Dockerfile
