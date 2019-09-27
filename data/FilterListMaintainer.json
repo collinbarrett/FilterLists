@@ -880,10 +880,6 @@
     "maintainerId": 22
   },
   {
-    "filterListId": 1879,
-    "maintainerId": 22
-  },
-  {
     "filterListId": 21,
     "maintainerId": 23
   },
@@ -4829,6 +4825,10 @@
   },
   {
     "filterListId": 1838,
+    "maintainerId": 144
+  },
+  {
+    "filterListId": 1839,
     "maintainerId": 144
   }
 ]
