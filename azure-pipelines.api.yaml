@@ -44,6 +44,96 @@ pool:
   vmImage: "ubuntu-latest"
 
 steps:
+  - task: Docker@2
+    displayName: "create volume test-data-results"
+    inputs:
+      command: volume
+      arguments: "create test-data-results"
+
+  - task: Docker@2
+    displayName: "create volume test-services-results"
+    inputs:
+      command: volume
+      arguments: "create test-services-results"
+
+  - task: DockerCompose@0
+    displayName: "up test-data db"
+    inputs:
+      dockerComposeFile: "docker-compose.data.tests.yml"
+      dockerComposeCommand: "up -d mariadb"
+
+  - task: DockerCompose@0
+    displayName: 'run test-data'
+    inputs:
+      dockerComposeFile: 'docker-compose.data.tests.yml'
+      dockerComposeCommand: 'run api'
+
+  - task: DockerCompose@0
+    displayName: 'run test-services'
+    inputs:
+      dockerComposeFile: 'docker-compose.services.tests.yml'
+      dockerComposeCommand: 'run api'
+
+  - task: Docker@2
+    displayName: 'create container test-data-results'
+    inputs:
+      command: container
+      arguments: 'create --name test-data-results -v test-data-results:/results hello-world'
+    condition: succeededOrFailed()
+
+  - task: Docker@2
+    displayName: 'copy out test-data results'
+    inputs:
+      command: cp
+      arguments: 'test-data-results:/results $(System.DefaultWorkingDirectory)'
+    condition: succeededOrFailed()
+
+  - task: Docker@2
+    displayName: 'create container test-services-results'
+    inputs:
+      command: container
+      arguments: 'create --name test-services-results -v test-services-results:/results hello-world'
+    condition: succeededOrFailed()
+
+  - task: Docker@2
+    displayName: 'copy out test-services results'
+    inputs:
+      command: cp
+      arguments: 'test-services-results:/results $(System.DefaultWorkingDirectory)'
+    condition: succeededOrFailed()
+
+  - task: PublishTestResults@2
+    displayName: 'publish test results'
+    inputs:
+      testResultsFormat: VSTest
+      testResultsFiles: '**/*.trx'
+    condition: succeededOrFailed()
+
+  - task: DockerCompose@0
+    displayName: 'build final'
+    inputs:
+      dockerComposeFile: 'docker-compose.yml'
+      additionalDockerComposeFiles: 'docker-compose.prod.yml'
+      dockerComposeCommand: 'build api'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+  - task: Docker@2
+    displayName: 'tag build number'
+    inputs:
+      command: tag
+      arguments: 'collinbarrett2/filterlists.api:latest collinbarrett2/filterlists.api:$(Build.BuildId)'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+  - task: Docker@2
+    displayName: push
+    inputs:
+      repository: collinbarrett2/filterlists.api
+      command: push
+      tags: |
+      $(Build.BuildId)
+      latest
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
   - task: CopyFiles@2
     displayName: "stage docker-compose files"
     inputs:
