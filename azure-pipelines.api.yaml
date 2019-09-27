@@ -50,12 +50,6 @@ steps:
       command: volume
       arguments: "create test-data-results"
 
-  - task: Docker@2
-    displayName: "create volume test-services-results"
-    inputs:
-      command: volume
-      arguments: "create test-services-results"
-
   - task: DockerCompose@0
     displayName: "up test-data db"
     inputs:
@@ -67,6 +61,12 @@ steps:
     inputs:
       dockerComposeFile: "docker-compose.data.tests.yml"
       dockerComposeCommand: "run api"
+
+  - task: Docker@2
+    displayName: "create volume test-services-results"
+    inputs:
+      command: volume
+      arguments: "create test-services-results"
 
   - task: DockerCompose@0
     displayName: "run test-services"
