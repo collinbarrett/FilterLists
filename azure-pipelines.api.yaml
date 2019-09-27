@@ -47,7 +47,7 @@ steps:
   - task: Docker@2
     displayName: "create volume test-data-results"
     inputs:
-      command: volume
+      command: "volume"
       arguments: "create test-data-results"
 
   - task: DockerCompose@0
@@ -65,7 +65,7 @@ steps:
   - task: Docker@2
     displayName: "create volume test-services-results"
     inputs:
-      command: volume
+      command: "volume"
       arguments: "create test-services-results"
 
   - task: DockerCompose@0
@@ -77,37 +77,37 @@ steps:
   - task: Docker@2
     displayName: "create container test-data-results"
     inputs:
-      command: container
+      command: "container"
       arguments: "create --name test-data-results -v test-data-results:/results hello-world"
-    condition: succeededOrFailed()
+    condition: "succeededOrFailed()"
 
   - task: Docker@2
     displayName: "copy out test-data results"
     inputs:
-      command: cp
+      command: "cp"
       arguments: "test-data-results:/results $(System.DefaultWorkingDirectory)"
-    condition: succeededOrFailed()
+    condition: "succeededOrFailed()"
 
   - task: Docker@2
     displayName: "create container test-services-results"
     inputs:
-      command: container
+      command: "container"
       arguments: "create --name test-services-results -v test-services-results:/results hello-world"
-    condition: succeededOrFailed()
+    condition: "succeededOrFailed()"
 
   - task: Docker@2
     displayName: "copy out test-services results"
     inputs:
-      command: cp
+      command: "cp"
       arguments: "test-services-results:/results $(System.DefaultWorkingDirectory)"
-    condition: succeededOrFailed()
+    condition: "succeededOrFailed()"
 
   - task: PublishTestResults@2
     displayName: "publish test results"
     inputs:
-      testResultsFormat: VSTest
+      testResultsFormat: "VSTest"
       testResultsFiles: "**/*.trx"
-    condition: succeededOrFailed()
+    condition: "succeededOrFailed()"
 
   - task: DockerCompose@0
     displayName: "build final"
@@ -115,24 +115,25 @@ steps:
       dockerComposeFile: "docker-compose.yml"
       additionalDockerComposeFiles: "docker-compose.prod.yml"
       dockerComposeCommand: "build api"
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
 
   - task: Docker@2
     displayName: "tag build number"
     inputs:
-      command: tag
+      command: "tag"
       arguments: "collinbarrett2/filterlists.api:latest collinbarrett2/filterlists.api:$(Build.BuildId)"
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
 
   - task: Docker@2
-    displayName: push
+    displayName: "push"
     inputs:
-      repository: collinbarrett2/filterlists.api
-      command: push
+      containerRegistry: "collinbarrett-github-packages"
+      repository: "collinbarrett/filterlists/filterlists.api"
+      command: "push"
       tags: |
-        $(Build.BuildId)
         latest
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+        $(Build.BuildId)
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
 
   - task: CopyFiles@2
     displayName: "stage docker-compose files"
