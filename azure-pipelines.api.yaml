@@ -1,0 +1,67 @@
+trigger:
+  batch: false
+  branches:
+    include: ["master"]
+  paths:
+    include:
+      [
+        "azure-pipelines.api.yaml",
+        "src/FilterLists.Api/*",
+        "src/FilterLists.Services/*",
+        "src/FilterLists.Data/*",
+        "tests/FilterLists.Services.Tests/*",
+        "tests/FilterLists.Data.Tests/*",
+        ".dockerignore",
+        "docker-compose.yml",
+        "docker-compose.prod.yml",
+        "docker-compose.data.tests.yml",
+        "docker-compose.services.tests.yml",
+        "data/*",
+      ]
+
+pr:
+  autoCancel: false
+  branches:
+    include: ["master"]
+  paths:
+    include:
+      [
+        "azure-pipelines.api.yaml",
+        "src/FilterLists.Api/*",
+        "src/FilterLists.Services/*",
+        "src/FilterLists.Data/*",
+        "tests/FilterLists.Services.Tests/*",
+        "tests/FilterLists.Data.Tests/*",
+        ".dockerignore",
+        "docker-compose.yml",
+        "docker-compose.prod.yml",
+        "docker-compose.data.tests.yml",
+        "docker-compose.services.tests.yml",
+        "data/*",
+      ]
+
+pool:
+  vmImage: "ubuntu-latest"
+
+steps:
+  - task: CopyFiles@2
+    displayName: "stage docker-compose files"
+    inputs:
+      SourceFolder: "$(Build.SourcesDirectory)"
+      Contents: |
+        docker-compose.yml
+        docker-compose.prod.yml
+      TargetFolder: "$(Build.ArtifactStagingDirectory)"
+      CleanTargetFolder: true
+      OverWrite: true
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
+    enabled: false
+
+  - task: PublishBuildArtifacts@1
+    displayName: "publish docker-compose files"
+    inputs:
+      PathtoPublish: "$(Build.ArtifactStagingDirectory)"
+      ArtifactName: "drop"
+      publishLocation: "Container"
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
+    enabled: false
