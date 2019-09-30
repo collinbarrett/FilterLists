@@ -148,7 +148,7 @@ steps:
       CleanTargetFolder: true
       OverWrite: true
     # condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
-    condition: "and(eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
+    condition: "eq(variables['Build.SourceBranch'], 'refs/heads/master')"
 
   - task: PublishBuildArtifacts@1
     displayName: "publish docker-compose files"
