@@ -8802,17 +8802,17 @@
   },
   {
     "id": 858,
-    "description": "A block list of malicious URLs that are being used for malware distribution. Based on the database dump (CSV) of Abuse.sh URLhaus.",
+    "description": "A block list of malicious URLs that are being used for malware distribution. Smaller than the official version with de-duplicated malware domains, while including full malicious URls of popular domains.",
     "descriptionSourceUrl": "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
     "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
     "licenseId": 28,
-    "name": "abuse.ch URLhaus Malicious URL Blocklist (Domains)",
-    "syntaxId": 2,
+    "name": "urlhaus-filter",
+    "syntaxId": 8,
     "updatedDate": "2019-04-05T22:09:10",
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
-    "viewUrlMirror1": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
-    "viewUrlMirror2": "https://cdn.staticaly.com/gl/curben/urlhaus-filter/raw/master/urlhaus-filter.txt"
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
+    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt"
   },
   {
     "id": 859,
@@ -16736,16 +16736,16 @@
   },
   {
     "id": 1603,
-    "description": "A block list of malicious URLs that are being used for malware distribution. This is a lite version by including online URLs only",
+    "description": "A block list of malicious URLs that are being used for malware distribution. This is a lite version by including online URLs only.",
     "descriptionSourceUrl": "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
     "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
     "licenseId": 28,
-    "name": "abuse.ch URLhaus Online Malicious URL Blocklist",
-    "syntaxId": 2,
+    "name": "urlhaus-filter-online",
+    "syntaxId": 8,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
-    "viewUrlMirror1": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
-    "viewUrlMirror2": "https://cdn.staticaly.com/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt"
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
+    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt"
   },
   {
     "id": 1604,
@@ -19976,5 +19976,33 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersForMinerBlock.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersForMinerBlock.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersForMinerBlock.txt"
+  },
+  {
+    "id": 1879,
+    "description": "A block list of malicious hosts that are being used for malware distribution. Smaller than the official version with de-duplicated malware domains",
+    "descriptionSourceUrl": "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
+    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "licenseId": 28,
+    "name": "urlhaus-filter-hosts",
+    "syntaxId": 2,
+    "updatedDate": "2019-10-01T00:00:00",
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt",
+    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt"
+  },
+  {
+    "id": 1880,
+    "description": "A block list of malicious hosts that are being used for malware distribution. This is a lite version by including online hosts only.",
+    "descriptionSourceUrl": "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
+    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "licenseId": 28,
+    "name": "urlhaus-filter-hosts-online",
+    "syntaxId": 2,
+    "updatedDate": "2019-10-01T00:00:00",
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
+    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt"
   }
 ]
