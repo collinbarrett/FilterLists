@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<LangVersion>latest</LangVersion>
-		<TargetFramework>netcoreapp2.2</TargetFramework>
+		<TargetFramework>netcoreapp3.0</TargetFramework>
 		<TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
 	</PropertyGroup>
 

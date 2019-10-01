@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<LangVersion>latest</LangVersion>
-		<TargetFramework>netstandard2.0</TargetFramework>
+		<TargetFramework>netstandard2.1</TargetFramework>
 		<TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
 	</PropertyGroup>
 
