@@ -33,8 +33,8 @@ steps:
   - task: Docker@2
     displayName: "build"
     inputs:
-      containerRegistry: "collinbarrett-github-packages"
-      repository: "collinbarrett/filterlists/filterlists.web"
+      containerRegistry: "collinbarrett2-dockerhub"
+      repository: "collinbarrett2/filterlists.web"
       command: "build"
       Dockerfile: "src/FilterLists.Web/Dockerfile"
       buildContext: "."
@@ -46,8 +46,8 @@ steps:
   - task: Docker@2
     displayName: "push"
     inputs:
-      containerRegistry: "collinbarrett-github-packages"
-      repository: "collinbarrett/filterlists/filterlists.web"
+      containerRegistry: "collinbarrett2-dockerhub"
+      repository: "collinbarrett2/filterlists.web"
       command: "push"
       tags: |
         latest
@@ -64,8 +64,7 @@ steps:
       TargetFolder: "$(Build.ArtifactStagingDirectory)"
       CleanTargetFolder: true
       OverWrite: true
-    # condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
-    condition: "and(succeededOrFailed(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
 
   - task: PublishBuildArtifacts@1
     displayName: "publish docker-compose files"
