@@ -8802,7 +8802,7 @@
   },
   {
     "id": 858,
-    "description": "A block list of malicious URLs that are being used for malware distribution. Smaller than official version de-duplicated malware domains, while including full malicious URls of popular domains.",
+    "description": "A block list of malicious URLs that are being used for malware distribution. Smaller than the official version with de-duplicated malware domains, while including full malicious URls of popular domains.",
     "descriptionSourceUrl": "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
     "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
@@ -19979,7 +19979,7 @@
   },
   {
     "id": 1879,
-    "description": "A block list of malicious hosts that are being used for malware distribution.",
+    "description": "A block list of malicious hosts that are being used for malware distribution. Smaller than the official version with de-duplicated malware domains",
     "descriptionSourceUrl": "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
     "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
