@@ -2,14 +2,14 @@
 # Command: docker build -f src/FilterLists.Api/Dockerfile .
 
 # init base
-FROM mcr.microsoft.com/dotnet/core/runtime-deps:2.2-alpine as base
+FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.0-alpine as base
 EXPOSE 80
 ENTRYPOINT ["./FilterLists.Api"]
 COPY data/. data/
 WORKDIR /app
 
 # init build
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.0-alpine AS build
 
 # restore
 WORKDIR /app/src
