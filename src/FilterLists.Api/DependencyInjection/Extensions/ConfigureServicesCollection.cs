@@ -28,7 +28,7 @@ namespace FilterLists.Api.DependencyInjection.Extensions
         private static void AddMvcCustom(this IServiceCollection services) =>
             services.AddMvc()
                     .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
-                    .AddJsonOptions(opts =>
+                    .AddNewtonsoftJson(opts =>
                     {
                         opts.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
                         opts.SerializerSettings.ContractResolver = new SkipEmptyContractResolver();
