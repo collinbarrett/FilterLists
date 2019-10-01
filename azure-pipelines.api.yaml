@@ -120,8 +120,8 @@ steps:
   - task: Docker@2
     displayName: "tag build number"
     inputs:
-      containerRegistry: "collinbarrett-github-packages"
-      repository: "collinbarrett/filterlists/filterlists.api"
+      containerRegistry: "collinbarrett2-dockerhub"
+      repository: "collinbarrett2/filterlists.api"
       command: "tag"
       arguments: "docker.pkg.github.com/collinbarrett/filterlists/filterlists.api:latest docker.pkg.github.com/collinbarrett/filterlists/filterlists.api:$(Build.BuildId)"
     condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
@@ -129,8 +129,8 @@ steps:
   - task: Docker@2
     displayName: "push"
     inputs:
-      containerRegistry: "collinbarrett-github-packages"
-      repository: "collinbarrett/filterlists/filterlists.api"
+      containerRegistry: "collinbarrett2-dockerhub"
+      repository: "collinbarrett2/filterlists.api"
       command: "push"
       tags: |
         latest
@@ -147,8 +147,7 @@ steps:
       TargetFolder: "$(Build.ArtifactStagingDirectory)"
       CleanTargetFolder: true
       OverWrite: true
-    # condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
-    condition: "and(succeededOrFailed(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
 
   - task: PublishBuildArtifacts@1
     displayName: "publish docker-compose files"
