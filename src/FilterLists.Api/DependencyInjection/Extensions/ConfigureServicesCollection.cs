@@ -13,7 +13,7 @@ namespace FilterLists.Api.DependencyInjection.Extensions
             services.ConfigureCookiePolicy();
             services.AddMemoryCache();
             services.AddResponseCaching();
-            services.AddMvcCustom();
+            services.AddControllersCustom();
             services.AddRoutingCustom();
             services.AddApiVersioning();
         }
@@ -25,7 +25,7 @@ namespace FilterLists.Api.DependencyInjection.Extensions
                 opts.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-        private static void AddMvcCustom(this IServiceCollection services) =>
+        private static void AddControllersCustom(this IServiceCollection services) =>
             services.AddControllers()
                     .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
                     .AddNewtonsoftJson(opts =>
