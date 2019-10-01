@@ -123,7 +123,7 @@ steps:
       containerRegistry: "collinbarrett2-dockerhub"
       repository: "collinbarrett2/filterlists.api"
       command: "tag"
-      arguments: "docker.pkg.github.com/collinbarrett/filterlists/filterlists.api:latest docker.pkg.github.com/collinbarrett/filterlists/filterlists.api:$(Build.BuildId)"
+      arguments: "collinbarrett2/filterlists.api:latest collinbarrett2/filterlists.api:$(Build.BuildId)"
     condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
 
   - task: Docker@2
