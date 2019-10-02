@@ -5,6 +5,7 @@
 		<TargetFramework>netcoreapp3.0</TargetFramework>
 		<PublishTrimmed>true</PublishTrimmed>
 		<PublishReadyToRun>true</PublishReadyToRun>
+		<PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
 		<TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
 		<RuntimeIdentifier>linux-musl-x64</RuntimeIdentifier>
 		<DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
