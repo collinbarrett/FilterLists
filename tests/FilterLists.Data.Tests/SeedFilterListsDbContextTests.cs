@@ -12,7 +12,7 @@ namespace FilterLists.Data.Tests
         {
             //TODO: replace with Polly or similar to optimize time waste
             // allow time for db to init
-            Thread.Sleep(15000);
+            Thread.Sleep(20000);
 
             const string connString = "Server=mariadb;Database=filterlists;Uid=filterlists;Pwd=filterlists;";
             var options = new DbContextOptionsBuilder<FilterListsDbContext>()
