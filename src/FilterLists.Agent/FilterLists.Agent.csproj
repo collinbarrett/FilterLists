@@ -5,6 +5,7 @@
 		<Nullable>enable</Nullable>
 		<PublishTrimmed>true</PublishTrimmed>
 		<OutputType>Exe</OutputType>
+		<RuntimeIdentifier>linux-musl-x64</RuntimeIdentifier>
 		<DockerDebuggeeArguments>--additionalProbingPath /root/.nuget/fallbackpackages2 --additionalProbingPath /root/.nuget/fallbackpackages "bin/$(Configuration)/$(TargetFramework)/$(AssemblyName).dll" -a -v</DockerDebuggeeArguments>
 		<DockerDebuggeeProgram>/usr/bin/dotnet</DockerDebuggeeProgram>
 		<DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
