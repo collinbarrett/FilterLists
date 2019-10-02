@@ -1,0 +1,36 @@
+trigger:
+  batch: false
+  branches:
+    include: ["master"]
+  paths:
+    include:
+      [
+        "azure-pipelines.nginx.yaml",
+        "ops/nginx/*",
+        ".dockerignore",
+        "docker-compose.yml",
+        "docker-compose.prod.yml",
+      ]
+
+pool:
+  vmImage: "ubuntu-latest"
+
+steps:
+  - task: CopyFiles@2
+    displayName: "stage files"
+    inputs:
+      SourceFolder: "$(Build.SourcesDirectory)"
+      Contents: |
+        ops/nginx/**
+        docker-compose.yml
+        docker-compose.prod.yml
+      TargetFolder: "$(Build.ArtifactStagingDirectory)"
+      CleanTargetFolder: true
+      OverWrite: true
+
+  - task: PublishBuildArtifacts@1
+    displayName: "publish files"
+    inputs:
+      PathtoPublish: "$(Build.ArtifactStagingDirectory)"
+      ArtifactName: "drop"
+      publishLocation: "Container"
