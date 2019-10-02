@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   agent:
-    image: docker.pkg.github.com/collinbarrett/filterlists/filterlists.agent:test-agent
+    image: collinbarrett2/filterlists.agent:test-agent
     build:
       context: .
       dockerfile: src/FilterLists.Agent/Dockerfile
