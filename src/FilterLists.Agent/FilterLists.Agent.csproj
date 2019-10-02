@@ -5,6 +5,8 @@
 		<Nullable>enable</Nullable>
 		<OutputType>Exe</OutputType>
 		<TargetFramework>netcoreapp3.0</TargetFramework>
+		<PublishTrimmed>true</PublishTrimmed>
+		<PublishReadyToRun>true</PublishReadyToRun>
 		<TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
 		<RuntimeIdentifier>linux-musl-x64</RuntimeIdentifier>
 		<DockerDebuggeeArguments>--additionalProbingPath /root/.nuget/fallbackpackages2 --additionalProbingPath /root/.nuget/fallbackpackages "bin/$(Configuration)/$(TargetFramework)/$(AssemblyName).dll" -a -v</DockerDebuggeeArguments>
