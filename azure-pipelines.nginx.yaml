@@ -12,6 +12,8 @@ trigger:
         "docker-compose.prod.yml",
       ]
 
+pr: none
+
 pool:
   vmImage: "ubuntu-latest"
 
