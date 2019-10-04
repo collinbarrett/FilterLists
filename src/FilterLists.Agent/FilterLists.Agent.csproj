@@ -42,7 +42,7 @@
 		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
 		<PackageReference Include="Microsoft.ApplicationInsights" Version="2.11.0" />
 		<PackageReference Include="Microsoft.ApplicationInsights.PerfCounterCollector" Version="2.11.0" />
-		<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.5">
+		<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.6">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
