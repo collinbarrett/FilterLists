@@ -7,6 +7,7 @@
 		<PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
 		<RuntimeIdentifier>linux-musl-x64</RuntimeIdentifier>
 		<DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
+		<DockerfileContext>..\..</DockerfileContext>
 	</PropertyGroup>
 
 	<PropertyGroup>
