@@ -8,7 +8,8 @@
 		<RuntimeIdentifier>linux-musl-x64</RuntimeIdentifier>
 		<DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
 		<DockerfileContext>..\..</DockerfileContext>
-	</PropertyGroup>
+    <DockerfileFastModeStage>build</DockerfileFastModeStage>
+  </PropertyGroup>
 
 	<PropertyGroup>
 		<Authors>Collin M. Barrett</Authors>
