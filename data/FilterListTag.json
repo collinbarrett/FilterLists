@@ -9466,5 +9466,13 @@
   {
     "filterListId": 1901,
     "tagId": 30
+  },
+  {
+    "filterListId": 1837,
+    "tagId": 15
+  },
+  {
+    "filterListId": 1710,
+    "tagId": 6
   }
 ]
