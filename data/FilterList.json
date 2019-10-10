@@ -20004,5 +20004,196 @@
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt",
     "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt"
-  }
+  },
+  {
+"id": 1881,
+"name": "pfbng Ads",
+"syntaxId": 2,
+"homeUrl": "https://github.com/angelics/pfbng",
+"issuesUrl": "https://github.com/angelics/pfbng/issues",
+"viewUrl": "https://raw.githubusercontent.com/angelics/pfbng/master/ads/ads-domain-list.txt"
+},
+{
+"id": 1882,
+"name": "Blocktastic Pi-Hole Blocklist",
+"syntaxId": 2,
+"homeUrl": "https://github.com/blocktastic/pihole",
+"issuesUrl": "https://github.com/blocktastic/pihole/issues",
+"viewUrl": "https://raw.githubusercontent.com/blocktastic/pihole/master/blocktastic.txt"
+},
+{
+"id": 1883
+"name": "Broer ICT Blacklist Ads",
+"description": "Ad filter list by Broer ICT",
+"licenseId": 4,
+"syntaxId": 2,
+"homeUrl": "https://github.com/broerict/blacklists",
+"issuesUrl": "https://github.com/broerict/blacklists/issues",
+"viewUrl": "https://raw.githubusercontent.com/broerict/blacklists/master/ads"
+},
+{
+"id": 1884
+"name": "Broer ICT Blacklist Malware",
+"description": "Malware filter list by Broer ICT",
+"licenseId": 4,
+"syntaxId": 2,
+"homeUrl": "https://github.com/broerict/blacklists",
+"issuesUrl": "https://github.com/broerict/blacklists/issues",
+"viewUrl": "https://raw.githubusercontent.com/broerict/blacklists/master/malware"
+},
+{
+"id": 1885
+"name": "Broer ICT Blacklist Phishing",
+"description": "Phishing filter list by Broer ICT",
+"licenseId": 4,
+"syntaxId": 2,
+"homeUrl": "https://github.com/broerict/blacklists",
+"issuesUrl": "https://github.com/broerict/blacklists/issues",
+"viewUrl": "https://raw.githubusercontent.com/broerict/blacklists/master/phishing"
+},
+{
+"id": 1886,
+"name": "Macedonian Pi-hole Blocklist",
+"description": "This is a Pi-hole list to block unwanted domains that serve ads on Macedonian websites."
+"syntaxId": 2
+"homeUrl": "https://github.com/cchevy/macedonian-pi-hole-blocklist",
+"issuesUrl": "https://github.com/cchevy/macedonian-pi-hole-blocklist/issues",
+"viewUrl": "https://raw.githubusercontent.com/cchevy/macedonian-pi-hole-blocklist/master/hosts.txt"
+},
+{
+"id": 1887
+"name": "chrisjudk Hosts",
+"description": "This is a list of hosts I have found to be used for ads, malware, etc.",
+"licenseId": 2,
+"syntaxId": 1
+"homeUrl": "https://github.com/chrisjudk/hosts",
+"issuesUrl": "https://github.com/chrisjudk/hosts/issues",
+"viewUrl": "https://raw.githubusercontent.com/chrisjudk/hosts/master/hosts"
+},
+{
+"id": 1888
+"name": "Custom Hosts Domain Filter for AdGuard",
+"syntaxId": 28,
+"homeUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules",
+"issuesUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules/issues",
+"viewUrl": "https://raw.githubusercontent.com/DavidTai780/AdGuard-Home-Private-Rules/master/hosts.txt"
+},
+{
+"id": 1889
+"name": "Private Ads Block List",
+"syntaxId": 28,
+"homeUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules",
+"issuesUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules/issues",
+"viewUrl": "https://raw.githubusercontent.com/DavidTai780/AdGuard-Home-Private-Rules/master/ads-block.txt"
+},
+{
+"id": 1890,
+"name": "noads.online Switzerland specific filters",
+"licenseId": 35,
+"syntaxId": 3,
+"homeUrl": "https://github.com/deletescape/noads",
+"issuesUrl": "https://github.com/deletescape/noads/issues",
+"viewUrl": "https://raw.githubusercontent.com/deletescape/noads/master/lists/add-switzerland.txt"
+},
+{
+"id": 1891,
+"name": "noads.online anti scumware list",
+"licenseId": 35,
+"syntaxId": 3,
+"homeUrl": "https://github.com/deletescape/noads",
+"issuesUrl": "https://github.com/deletescape/noads/issues",
+"viewUrl": "https://raw.githubusercontent.com/deletescape/noads/master/lists/fo-scumware.txt"
+},
+{
+"id": 1892,
+"name": "noads.online AdGuard Home Megalist",
+"licenseId": 35,
+"syntaxId": 28,
+"homeUrl": "https://github.com/deletescape/noads",
+"issuesUrl": "https://github.com/deletescape/noads/issues",
+"viewUrl": "https://lists.noads.online/lists/compilation.txt"
+},
+{
+"id": 1893,
+"name": "noads.online whitelist",
+"licenseId": 35,
+"syntaxId": 28,
+"homeUrl": "https://github.com/deletescape/noads",
+"issuesUrl": "https://github.com/deletescape/noads/issues",
+"viewUrl": "https://github.com/deletescape/noads/blob/master/lists/unbreak.txt"
+},
+{
+"id": 1894,
+"name": "dex4k Blocklist",
+"description": "This is the "SAFE LIST" tested to not break legitimate functionality for commonly used software",
+"syntaxId": 2,
+"homeUrl": "https://github.com/dex4k/dex4kblocklist",
+"issuesUrl": "https://github.com/dex4k/dex4kblocklist/issues",
+"viewUrl": "https://raw.githubusercontent.com/dex4k/dex4kblocklist/master/dex4kblocklist.txt"
+},
+{
+"id": 1895,
+"name": "dex4k Blocklist Extras",
+"description": "This is a secondary blocklist created as, although I believe the blocking to be legitimate, blocking these domains can break popular apps",
+"syntaxId": 2,
+"homeUrl": "https://github.com/dex4k/dex4kblocklist",
+"issuesUrl": "https://github.com/dex4k/dex4kblocklist/issues",
+"viewUrl": "https://raw.githubusercontent.com/dex4k/dex4kblocklist/master/dex4kblocklistextras.txt"
+},
+{
+"id": 1896,
+"name": "Additional Hosts - Adservers and Trackers",
+"description": "Blocks ads and trackers, and anything inbetween.",
+"licenseId": 2,
+"syntaxId": 2,
+"homeUrl": "https://github.com/DRSDavidSoft/additional-hosts",
+"issuesUrl": "https://github.com/DRSDavidSoft/additional-hosts/issues",
+"viewUrl": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/adservers-and-trackers.txt"
+},
+{
+"id": 1897,
+"name": "Additional Hosts - Unwanted Iranian",
+"description": "Blocks various scams and popups when visiting Iranian websites. E.g. fake Download buttons, Pop-unders, etc",
+"licenseId": 2,
+"syntaxId": 2,
+"homeUrl": "https://github.com/DRSDavidSoft/additional-hosts",
+"issuesUrl": "https://github.com/DRSDavidSoft/additional-hosts/issues",
+"viewUrl": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/unwanted-iranian.txt"
+},
+{
+"id": 1898,
+"name": "Additional Hosts - Activation",
+"description": "Blocks license verification and software activation. This list is intended to prevent products from expiring when they detect an invalid license.",
+"licenseId": 2,
+"syntaxId": 2,
+"homeUrl": "https://github.com/DRSDavidSoft/additional-hosts",
+"issuesUrl": "https://github.com/DRSDavidSoft/additional-hosts/issues",
+"viewUrl": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/unwanted-iranian.txt"
+},
+{
+"id": 1898
+"name": "Manually Spotted Trackers and Other Nuisances",
+"description": "For use in a tool like Pi-hole. Covers manually spotted trackers, marketing bullshit and other nuisances. May be considered a bit aggressive — but not too much. Shouldn't break any sites."
+"licenseId": 11,
+"syntaxId": 2,
+"homeUrl": "https://github.com/herrbischoff/trackers",
+"issuesUrl": "https://github.com/herrbischoff/trackers/issues",
+"viewUrl": "https://raw.githubusercontent.com/herrbischoff/trackers/master/trackers.txt"
+},
+{
+"id": 1899,
+"name": "Ghostery Bugs (dnsmasq)",
+"syntaxId": 20,
+"homeUrl": "https://github.com/javabean/dnsmasq-antispy",
+"issuesUrl": "https://github.com/javabean/dnsmasq-antispy/issues",
+"viewUrl": "https://raw.githubusercontent.com/javabean/dnsmasq-antispy/master/dnsmasq.ghostery_bugs.conf"
+},
+{
+"id": 1900,
+"name": "ZZ Extra Servers Manual"
+"syntaxId": 20,
+"homeUrl": "https://github.com/javabean/dnsmasq-antispy",
+"issuesUrl": "https://github.com/javabean/dnsmasq-antispy/issues",
+"viewUrl": "https://raw.githubusercontent.com/javabean/dnsmasq-antispy/master/dnsmasq.zz-extra-servers-manual.conf"
+}
 ]
