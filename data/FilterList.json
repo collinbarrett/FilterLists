@@ -20022,7 +20022,7 @@
 "viewUrl": "https://raw.githubusercontent.com/blocktastic/pihole/master/blocktastic.txt"
 },
 {
-"id": 1883
+"id": 1883,
 "name": "Broer ICT Blacklist Ads",
 "description": "Ad filter list by Broer ICT",
 "licenseId": 4,
@@ -20032,7 +20032,7 @@
 "viewUrl": "https://raw.githubusercontent.com/broerict/blacklists/master/ads"
 },
 {
-"id": 1884
+"id": 1884,
 "name": "Broer ICT Blacklist Malware",
 "description": "Malware filter list by Broer ICT",
 "licenseId": 4,
@@ -20042,7 +20042,7 @@
 "viewUrl": "https://raw.githubusercontent.com/broerict/blacklists/master/malware"
 },
 {
-"id": 1885
+"id": 1885,
 "name": "Broer ICT Blacklist Phishing",
 "description": "Phishing filter list by Broer ICT",
 "licenseId": 4,
@@ -20055,23 +20055,23 @@
 "id": 1886,
 "name": "Macedonian Pi-hole Blocklist",
 "description": "This is a Pi-hole list to block unwanted domains that serve ads on Macedonian websites."
-"syntaxId": 2
+"syntaxId": 2,
 "homeUrl": "https://github.com/cchevy/macedonian-pi-hole-blocklist",
 "issuesUrl": "https://github.com/cchevy/macedonian-pi-hole-blocklist/issues",
 "viewUrl": "https://raw.githubusercontent.com/cchevy/macedonian-pi-hole-blocklist/master/hosts.txt"
 },
 {
-"id": 1887
+"id": 1887,
 "name": "chrisjudk Hosts",
 "description": "This is a list of hosts I have found to be used for ads, malware, etc.",
 "licenseId": 2,
-"syntaxId": 1
+"syntaxId": 1,
 "homeUrl": "https://github.com/chrisjudk/hosts",
 "issuesUrl": "https://github.com/chrisjudk/hosts/issues",
 "viewUrl": "https://raw.githubusercontent.com/chrisjudk/hosts/master/hosts"
 },
 {
-"id": 1888
+"id": 1888,
 "name": "Custom Hosts Domain Filter for AdGuard",
 "syntaxId": 28,
 "homeUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules",
@@ -20079,7 +20079,7 @@
 "viewUrl": "https://raw.githubusercontent.com/DavidTai780/AdGuard-Home-Private-Rules/master/hosts.txt"
 },
 {
-"id": 1889
+"id": 1889,
 "name": "Private Ads Block List",
 "syntaxId": 28,
 "homeUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules",
@@ -20125,7 +20125,7 @@
 {
 "id": 1894,
 "name": "dex4k Blocklist",
-"description": "This is the "SAFE LIST" tested to not break legitimate functionality for commonly used software",
+"description": "This is the \"SAFE LIST\" tested to not break legitimate functionality for commonly used software",
 "syntaxId": 2,
 "homeUrl": "https://github.com/dex4k/dex4kblocklist",
 "issuesUrl": "https://github.com/dex4k/dex4kblocklist/issues",
@@ -20190,7 +20190,7 @@
 },
 {
 "id": 1900,
-"name": "ZZ Extra Servers Manual"
+"name": "ZZ Extra Servers Manual",
 "syntaxId": 20,
 "homeUrl": "https://github.com/javabean/dnsmasq-antispy",
 "issuesUrl": "https://github.com/javabean/dnsmasq-antispy/issues",
