@@ -20054,7 +20054,7 @@
 {
 "id": 1886,
 "name": "Macedonian Pi-hole Blocklist",
-"description": "This is a Pi-hole list to block unwanted domains that serve ads on Macedonian websites."
+"description": "This is a Pi-hole list to block unwanted domains that serve ads on Macedonian websites.",
 "syntaxId": 2,
 "homeUrl": "https://github.com/cchevy/macedonian-pi-hole-blocklist",
 "issuesUrl": "https://github.com/cchevy/macedonian-pi-hole-blocklist/issues",
@@ -20171,9 +20171,9 @@
 "viewUrl": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/unwanted-iranian.txt"
 },
 {
-"id": 1898
+"id": 1898,
 "name": "Manually Spotted Trackers and Other Nuisances",
-"description": "For use in a tool like Pi-hole. Covers manually spotted trackers, marketing bullshit and other nuisances. May be considered a bit aggressive — but not too much. Shouldn't break any sites."
+"description": "For use in a tool like Pi-hole. Covers manually spotted trackers, marketing bullshit and other nuisances. May be considered a bit aggressive — but not too much. Shouldn't break any sites.",
 "licenseId": 11,
 "syntaxId": 2,
 "homeUrl": "https://github.com/herrbischoff/trackers",
