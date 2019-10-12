@@ -14,11 +14,7 @@
 		<RepositoryType>git</RepositoryType>
 	</PropertyGroup>
 
-	<ItemGroup>
-		<RuntimeHostConfigurationOption Include="System.Globalization.Invariant" Value="true" />
-	</ItemGroup>
-
-	<ItemGroup>
+  <ItemGroup>
 		<ProjectReference Include="..\FilterLists.Data\FilterLists.Data.csproj" />
 	</ItemGroup>
 
