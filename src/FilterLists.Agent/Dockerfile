@@ -2,7 +2,7 @@
 # Command: docker build -f src/FilterLists.Agent/Dockerfile .
 
 # init base
-FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.0-alpine as base
+FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine as base
 ENTRYPOINT ["./FilterLists.Agent"]
 WORKDIR /app
 
