@@ -11,7 +11,7 @@
     "antd": "^3.24.2",
     "babel-plugin-import": "^1.12.2",
     "customize-cra": "^0.8.0",
-    "react": "^16.10.2",
+    "react": "^16.11.0",
     "react-app-rewired": "^2.1.4",
     "react-dom": "^16.10.2",
     "react-router-dom": "^5.1.2",
