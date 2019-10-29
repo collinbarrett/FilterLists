@@ -38,7 +38,7 @@ services:
       ConnectionStrings__FilterListsConnection: ${API_CONNECTION_STRING}
 
   mariadb:
-    image: mariadb:10
+    image: mariadb:latest
     restart: always
     networks:
       - api

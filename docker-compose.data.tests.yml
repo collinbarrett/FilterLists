@@ -15,7 +15,7 @@ services:
       - mariadb
 
   mariadb:
-    image: mariadb:10
+    image: mariadb:latest
     networks:
       - test-data
     environment:
