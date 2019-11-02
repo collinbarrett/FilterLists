@@ -108,6 +108,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           title="Description"
           key="Description"
           dataIndex={nameof<List>("description")}
+          width={423}
           className={styles.nogrow}
           filterDropdown={searchDescriptionColumn.filterDropdown}
           filterIcon={searchDescriptionColumn.filterIcon}
