@@ -70,7 +70,12 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         style: { float: "left", margin: "4px 4px" },
         pageSize: tablePageSize.pageSize
       }}
-      scroll={{ x: tablePageSize.isNarrowWindow ? undefined : 1892 }}
+      scroll={{
+        x:
+          tablePageSize.isNarrowWindow || tablePageSize.isWideWindow
+            ? undefined
+            : 1892
+      }}
       onChange={(
         _pagination: PaginationConfig,
         _filters: Record<keyof List, string[]>,
@@ -108,7 +113,11 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           title="Description"
           key="Description"
           dataIndex={nameof<List>("description")}
-          width={423}
+          width={
+            !tablePageSize.isNarrowWindow && !tablePageSize.isWideWindow
+              ? 423
+              : undefined
+          }
           className={styles.nogrow}
           filterDropdown={searchDescriptionColumn.filterDropdown}
           filterIcon={searchDescriptionColumn.filterIcon}
