@@ -43,7 +43,7 @@
   },
   {
     "id": 11,
-    "name": "JavaScript (Non-Safari)"
+    "name": "Redirector"
   },
   {
     "id": 12,
@@ -128,5 +128,9 @@
     "id": 30,
     "definitionUrl": "https://docs.pi-hole.net/ftldns/regex/tutorial/",
     "name": "Pi-hole regular expressions"
+  },
+  {
+    "id": 31,
+    "name": "URLRedirector"
   }
 ]
