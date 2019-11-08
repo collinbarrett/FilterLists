@@ -238,5 +238,12 @@
     "homeUrl": "https://liguangming.com/Shadowrocket",
     "isAbpSubscribable": false,
     "name": "Shadowrocket"
+  },
+  {
+    "id": 38,
+    "downloadUrl": "https://github.com/fengyc/URLRedirector/#urlredirector",
+    "homeUrl": "https://github.com/fengyc/URLRedirector/",
+    "isAbpSubscribable": false,
+    "name": "URLRedirector"
   }
 ]
