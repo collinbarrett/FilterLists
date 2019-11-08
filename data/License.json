@@ -272,5 +272,26 @@
     "name": "McRae General Public License",
     "permissiveAdaptation": true,
     "permissiveCommercial": false
+  },
+  {
+    "id": 41,
+    "descriptionUrl": "http://www.affero.org/oagpl.html",
+    "name": "AGPLv1",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 42,
+    "descriptionUrl": "http://www.affero.org/agpl2.html",
+    "name": "AGPLv2",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
+  {
+    "id": 43,
+    "descriptionUrl": "https://www.gnu.org/licenses/agpl-3.0.html",
+    "name": "AGPLv3",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
   }
 ]
