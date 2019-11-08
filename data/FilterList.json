@@ -17337,7 +17337,7 @@
     "name": "bzspark's uMatrix Rules",
     "syntaxId": 7,
     "updatedDate": "2018-06-01T00:00:00",
-    "viewUrl": "https://raw.githubusercontent.com/dadav/umatrix-rules/master/my-rules.txt"
+    "viewUrl": "https://raw.githubusercontent.com/bzsparks/uMatrix/master/my-umatrix-rules.txt"
   },
   {
     "id": 1661,
@@ -20451,5 +20451,186 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/GameConsoleAdblockList.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/GameConsoleAdblockList.txt"
+  },
+  {
+  "id": 1931,
+  "viewUrl": "http://www.thedumbterminal.co.uk/files/services/squidblockedsites/blocked.txt",
+  "name": "The Dumb Terminal's Squid blocked sites",
+  "description": "We all hate advertising banners on pages when surfing the web, A proxy such as Squid can used to block these without the need to install any additional software on end users systems. This saves bandwidth as well as protects your privacy from tracking site etc.",
+  "syntaxid": 2,
+  "homeUrl": "https://www.thedumbterminal.co.uk/services/squidblockedsites.html"
+},
+{
+  "id": 1932,
+  "viewUrl": "https://assets.windscribe.com/custom_blocklists/clickbait.txt",
+  "name": "Windscribe Clickbait",
+  "syntaxid": 2
+},
+{
+  "id": 1933,
+  "viewUrl": "https://gitlab.com/dns-firewall/dns/matrix/matrix/raw/master/source/adware/domains.list",
+  "name": "My Privacy DNS Matrix - Adware",
+  "description": "This repository is www.mypdns.org self maintained list of domains that needs to be blocked for various reasons.",
+  "syntaxid": 2,
+  "licenseid": 43,
+  "homeUrl": "https://gitlab.com/my-privacy-dns/matrix/matrix/"
+},
+{
+  "id": 1934,
+  "viewUrl": "https://gitlab.com/dns-firewall/dns/matrix/matrix/raw/master/source/tracking/domains.list",
+  "name": "My Privacy DNS Matrix - Tracking",
+  "description": "This repository is www.mypdns.org self maintained list of domains that needs to be blocked for various reasons.",
+  "syntaxid": 2,
+  "licenseid": 43,
+  "homeUrl": "https://gitlab.com/my-privacy-dns/matrix/matrix/"
+},
+{
+  "id": 1935,
+  "viewUrl": "https://infosec.cert-pa.it/analyze/listdomains.txt",
+  "name": "CERT-PA Domains",
+  "description": "The list contains domains (FQDN) collected over the last seven days by the web application. From any of these domains has been downloaded and analyzed a suspicious binary file.",
+  "syntaxid": 2,
+  "homeUrl": "https://infosec.cert-pa.it/"
+},
+{
+  "id": 1936,
+  "viewUrl": "https://lists.hashdd.com/hashdd/vxvault-urllist/hosts",
+  "name": "VXVault (Domains)",
+  "syntaxid": 2,
+  "homeUrl": "https://hashdd.com/"
+},
+{
+  "id": 1937,
+  "viewUrl": "https://pastebin.com/raw/UP3s7pEB",
+  "name": "fakeinet.com Scam, Fakes and frauds of Internet URL list",
+  "description": "Fake online shops and a lot of other things are collected here.",
+  "syntaxid": 1
+},
+{
+  "id": 1938,
+  "viewUrl": "https://raw.githubusercontent.com/YanFung/Ads/master/Mobile.txt",
+  "name": "Mobile Ads",
+  "syntaxid": 4,
+  "homeUrl": "https://github.com/YanFung/Ads/"
+},
+{
+  "id": 1939,
+  "viewUrl": "https://raw.githubusercontent.com/yhonay/antipopads/master/hosts",
+  "name": "Anti-PopAds (Hosts)",
+  "syntaxid": 1,
+  "licenseid": 14
+},
+{
+  "id": 1940,
+  "viewUrl": "https://repo.andnixsh.com/adblocker/hosts",
+  "name": "Andnixsh's Hosts",
+  "syntaxid": 1,
+  "homeUrl": "https://andnixsh.com/"
+},
+{
+  "id": 1941,
+  "viewUrl": "https://surge.noonme.com/surge.conf",
+  "name": "NoOnMe's List for Surge",
+  "syntaxid": 29
+},
+{
+  "id": 1942,
+  "viewUrl": "https://www.bentasker.co.uk/adblock/autolist.txt",
+  "name": "Ben Tasker's List (Unbound)",
+  "syntaxid": 24,
+  "licenseid": 19
+},
+{
+  "id": 1943,
+  "viewUrl": "https://www.bentasker.co.uk/adblock/adblock_compiled.txt",
+  "name": "Ben Tasker's List (Adblock Plus)",
+  "syntaxid": 28,
+  "licenseid": 19
+},
+{
+  "id": 1944,
+  "viewUrl": "https://www.bentasker.co.uk/adblock/blockeddomains.txt",
+  "name": "Ben Tasker's List (Domains)",
+  "syntaxid": 2,
+  "licenseid": 19,
+  "homeUrl": "https://www.bentasker.co.uk/adblock/"
+},
+{
+  "id": 1945,
+  "viewUrl": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/regex.list",
+  "name": "PiHole Blocklist SmartTV (Regex extension)",
+  "syntaxid": 30,
+  "licenseid": 2,
+  "homeUrl": "https://github.com/Perflyst/PiHoleBlocklist/"
+},
+{
+  "id": 1946,
+  "viewUrl": "https://anonymousposter.gitlab.io/ublockorigin-rules/blockrules.txt",
+  "name": "AnonymousPoster – Andblock Rules",
+  "description": "The one and only rule set applied by AnonymousPoster is this on blockrules.txt in complementary to EasyList.",
+  "syntaxid": 3,
+  "licenseid": 40,
+  "homeUrl": "https://gitlab.com/AnonymousPoster/ublockorigin-rules"
+},
+{
+  "id": 1947,
+  "viewUrl": "https://raw.githubusercontent.com/ivysrono/URLRedirectorRules/master/Directly.json",
+  "name": "Ivysrono's URLRedirector Rules",
+  "description": "Personal rules for URLRedirector.",
+  "syntaxid": 31,
+  "homeUrl": "https://github.com/ivysrono/URLRedirectorRules/"
+},
+{
+  "id": 1948,
+  "viewUrl": "https://raw.githubusercontent.com/fengyc/URLRedirector/master/tools/rules.json",
+  "name": "Fengyc's URLRedirector Rules",
+  "syntaxid": 31
+},
+{
+  "id": 1949,
+  "viewUrl": "https://raw.githubusercontent.com/fengyc/URLRedirector/master/tools/rules_geekzu.json",
+  "name": "Fengyc's URLRedirector Rules - Geekzu",
+  "syntaxid": 31
+},
+  {
+    "id": 1950,
+    "description": "Block advertisements.",
+    "donateUrl": "https://www.patreon.com/blocklist",
+    "emailAddress": "pgl@yoyo.org",
+    "homeUrl": "https://pgl.yoyo.org/adservers/",
+    "licenseId": 40,
+    "name": "Peter Lowe's List (RPZ)",
+    "policyUrl": "https://pgl.yoyo.org/as/policy.php",
+    "syntaxId": 24,
+    "updatedDate": "2019-04-05T21:32:11",
+    "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=rpz&showintro=1&mimetype=plaintext"
+  },
+  {
+    "id": 1951,
+    "description": "This is a list of unusually strange and/or presumed hostile IP addresses that thought it'd be a good idea to port scan or otherwise mistreat my publicly accessible AdGuard Home server, without having anything even close to a good reason for doing so.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's Disallowed Clients for AdGuard Home in Particular",
+    "syntaxId": 9,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuardHomeDisallowedIPs.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AdGuardHomeDisallowedIPs.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdGuardHomeDisallowedIPs.txt"
+  },
+  {
+    "id": 1952,
+    "description": "Twitter is a place full of distractions, strange things, and people you'd want to stay 200km away from at all times. If you wish to focus strictly on the 2% of Twitter that is actually any good nowadays, here's a list for you.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Twitter: Pure Reading Experience",
+    "syntaxId": 28,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitterPureReadingExperience.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TwitterPureReadingExperience.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TwitterPureReadingExperience.txt"
   }
 ]
