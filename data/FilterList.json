@@ -3568,10 +3568,10 @@
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
     "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
     "licenseId": 35,
-    "name": "1Hosts",
+    "name": "1Hosts Complete",
     "syntaxId": 1,
     "updatedDate": "2019-04-13T02:55:11",
-    "viewUrl": "https://1hos.cf/"
+    "viewUrl": "https://1hos.cf/complete/hosts.txt"
   },
   {
     "id": 311,
@@ -8182,10 +8182,10 @@
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
     "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
     "licenseId": 35,
-    "name": "1Hosts (Domains)",
+    "name": "1Hosts Complete (Domains)",
     "syntaxId": 2,
     "updatedDate": "2019-04-16T02:23:12",
-    "viewUrl": "https://1hos.cf/complete.txt"
+    "viewUrl": "https://1hos.cf/complete/domains.txt"
   },
   {
     "id": 811,
@@ -8197,7 +8197,7 @@
     "name": "1Hosts Mini",
     "syntaxId": 1,
     "updatedDate": "2019-04-16T02:41:12",
-    "viewUrl": "https://1hos.cf/mini/"
+    "viewUrl": "https://1hos.cf/mini/hosts.txt"
   },
   {
     "id": 812,
@@ -8209,7 +8209,7 @@
     "name": "1Hosts Mini (Domains)",
     "syntaxId": 2,
     "updatedDate": "2019-04-16T02:52:11",
-    "viewUrl": "https://1hos.cf/mini.txt"
+    "viewUrl": "https://1hos.cf/mini/domains.txt"
   },
   {
     "id": 813,
@@ -13114,7 +13114,7 @@
     "updatedDate": "2019-04-10T23:39:25",
     "viewUrl": "https://gitlab.com/intr0/iVOID.GitLab.io/raw/master/iVOID.hosts",
     "viewUrlMirror1": "https://notabug.org/-intr0/iVOID/raw/master/iVOID.hosts",
-    "viewUrlMirror2": "http://vivmyccb3jdb7yij.onion/intr0/iVOID.GitLab.io/raw/master/iVOID.hosts"
+    "viewUrlMirror2": "http://ip5n52t35zg7oam3ddvkckwrer2lehllk4pvkcfgbc6gqtfejxyrpfqd.onion/iVOID.hosts"
   },
   {
     "id": 1296,
@@ -13129,7 +13129,7 @@
     "updatedDate": "2019-04-10T23:58:11",
     "viewUrl": "https://gitlab.com/intr0/DomainVoider/raw/master/DomainVoider.txt",
     "viewUrlMirror1": "https://notabug.org/-intr0/DomainVoider/raw/master/DomainVoider.txt",
-    "viewUrlMirror2": "http://vivmyccb3jdb7yij.onion/intr0/DomainVoider/raw/master/DomainVoider.txt"
+    "viewUrlMirror2": "http://ip5n52t35zg7oam3ddvkckwrer2lehllk4pvkcfgbc6gqtfejxyrpfqd.onion/DomainVoider.txt"
   },
   {
     "id": 1297,
@@ -17879,7 +17879,7 @@
     "licenseId": 9,
     "name": "GameIndustryDE Hosts",
     "syntaxId": 1,
-    "viewUrl": "https://gameindustry.de/files/staedte/hosts"
+    "viewUrl": "https://www.gameindustry.eu/files/hosts.txt"
   },
   {
     "id": 1707,
@@ -18149,7 +18149,7 @@
     "licenseId": 35,
     "name": "1Hosts Pro",
     "syntaxId": 2,
-    "viewUrl": "https://1hos.cf/Pro"
+    "viewUrl": "https://1hos.cf/Pro/hosts.txt"
   },
   {
     "id": 1735,
@@ -18160,7 +18160,7 @@
     "licenseId": 35,
     "name": "1Hosts Pro (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://1hos.cf/Pro.txt"
+    "viewUrl": "https://1hos.cf/Pro/domains.txt"
   },
   {
     "id": 1736,
@@ -20093,7 +20093,7 @@
 "syntaxId": 28,
 "homeUrl": "https://github.com/deletescape/noads",
 "issuesUrl": "https://github.com/deletescape/noads/issues",
-"viewUrl": "https://github.com/deletescape/noads/blob/master/lists/unbreak.txt"
+"viewUrl": "https://raw.githubusercontent.com/deletescape/noads/master/lists/unbreak.txt"
 },
 {
 "id": 1894,
@@ -20601,7 +20601,7 @@
     "licenseId": 40,
     "name": "Peter Lowe's List (RPZ)",
     "policyUrl": "https://pgl.yoyo.org/as/policy.php",
-    "syntaxId": 24,
+    "syntaxId": 25,
     "updatedDate": "2019-04-05T21:32:11",
     "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=rpz&showintro=1&mimetype=plaintext"
   },
@@ -20632,5 +20632,52 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitterPureReadingExperience.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TwitterPureReadingExperience.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TwitterPureReadingExperience.txt"
+  },
+  {
+    "id": 1953,
+    "description": "A merged hosts file from a variety of other lists.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "licenseId": 35,
+    "name": "1Hosts Complete (Adblock Plus)",
+    "syntaxId": 28,
+    "viewUrl": "https://1hos.cf/complete/adblock.txt"
+  },
+  {
+    "id": 1954,
+    "description": "A merged hosts file from a variety of other lists.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "licenseId": 35,
+    "name": "1Hosts Mini (Adblock Plus)",
+    "syntaxId": 28,
+    "viewUrl": "https://1hos.cf/Pro/adblock.txt"
+  },
+  {
+    "id": 1955,
+    "description": "A merged hosts file from a variety of other lists.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "licenseId": 35,
+    "name": "1Hosts Pro (Adblock Plus)",
+    "syntaxId": 28,
+    "viewUrl": "https://1hos.cf/mini/adblock.txt"
+  },
+  {
+    "id": 1956,
+    "description": "A blocklist to protect users against untrustworthy retail sites.",
+    "descriptionSourceUrl": "https://github.com/durablenapkin/scamblocklist",
+    "homeUrl": "https://github.com/durablenapkin/scamblocklist",
+    "issuesUrl": "https://github.com/durablenapkin/scamblocklist/issues",
+    "submissionUrl": "https://github.com/durablenapkin/scamblocklist/issues/new/choose",
+    "licenseId": 2,
+    "name": "Scam Blocklist",
+    "publishedDate": "2019-10-30T17:27:37",
+    "syntaxId": 1,
+    "updatedDate": "2019-11-01T05:32:39",
+    "viewUrl": "https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/hosts.txt"
   }
 ]
