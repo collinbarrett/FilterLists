@@ -245,5 +245,11 @@
     "homeUrl": "https://github.com/fengyc/URLRedirector/",
     "isAbpSubscribable": false,
     "name": "URLRedirector"
+  },
+  {
+    "id": 39,
+    "homeUrl": "https://www.reddit.com/r/pfBlockerNG/",
+    "isAbpSubscribable": false,
+    "name": "pfBlockerNG"
   }
 ]
