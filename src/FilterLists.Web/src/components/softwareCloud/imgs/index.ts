@@ -34,6 +34,8 @@ import img34 from "./34-Windows-command-line.png";
 import img35 from "./35-Shadowsocks.png";
 import img36 from "./36-ShadowsocksR.png";
 import img37 from "./37-Shadowrocket.png";
+import img38 from "./38-DNSRedirector.png";
+import img39 from "./39-pfBlockerNG.png";
 
 export {
   img01,
@@ -71,5 +73,7 @@ export {
   img34,
   img35,
   img36,
-  img37
+  img37,
+  img38,
+  img39
 };
