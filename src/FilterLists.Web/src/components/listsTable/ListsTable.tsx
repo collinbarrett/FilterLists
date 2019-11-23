@@ -138,7 +138,10 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           sorter={(a, b) => {
             const getSoftwareIds = (l: List) =>
               software
-                .filter((s: Software) => s.syntaxIds.includes(l.syntaxId))
+                .filter(
+                  (s: Software) =>
+                    s.syntaxIds && s.syntaxIds.includes(l.syntaxId)
+                )
                 .map(s => s.id);
             return arraySorter(getSoftwareIds(a), getSoftwareIds(b), software);
           }}
@@ -169,8 +172,8 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           render={(syntaxId: number) =>
             syntaxId ? (
               <SoftwareCloud
-                software={software.filter((s: Software) =>
-                  s.syntaxIds.includes(syntaxId)
+                software={software.filter(
+                  (s: Software) => s.syntaxIds && s.syntaxIds.includes(syntaxId)
                 )}
               />
             ) : null
