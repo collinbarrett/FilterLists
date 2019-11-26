@@ -2542,5 +2542,13 @@
   {
     "filterListId": 1949,
     "languageId": 99
+  },
+  {
+    "filterListId": 1961,
+    "languageId": 48
+  },
+  {
+    "filterListId": 1962,
+    "languageId": 48
   }
 ]
