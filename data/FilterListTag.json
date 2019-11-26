@@ -9778,5 +9778,73 @@
   {
     "filterListId": 1956,
     "tagId": 7
+  },
+  {
+    "filterListId": 1957,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1957,
+    "tagId": 5
+  },
+  {
+    "filterListId": 1958,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1958,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1959,
+    "tagId": 12
+  },
+  {
+    "filterListId": 1960,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1961,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1962,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1963,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1963,
+    "tagId": 6
+  },
+  {
+    "filterListId": 1963,
+    "tagId": 10
+  },
+  {
+    "filterListId": 1964,
+    "tagId": 30
+  },
+  {
+    "filterListId": 1965,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1966,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1966,
+    "tagId": 11
+  },
+  {
+    "filterListId": 1967,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1967,
+    "tagId": 9
   }
 ]
