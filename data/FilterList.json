@@ -16230,7 +16230,7 @@
     "homeUrl": "https://github.com/xorcan/hosts",
     "issuesUrl": "https://github.com/xorcan/hosts/issues",
     "licenseId": 4,
-    "name": "xorcan türk ad-list",
+    "name": "xorcan Türk ad-list (Turkish)",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt"
   },
@@ -20679,5 +20679,117 @@
     "syntaxId": 1,
     "updatedDate": "2019-11-01T05:32:39",
     "viewUrl": "https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/hosts.txt"
+  },
+  {
+  "id": 1957,
+  "viewUrl": "https://raw.githubusercontent.com/Yumire/kiss-filters/master/filters.txt",
+  "name": "Kiss Filters",
+  "description": "A list of filters for use with the various Kiss sites.",
+  "syntaxid": 4,
+  "homeUrl": "https://github.com/Yumire/kiss-filters/"
+  },
+  {
+  "id": 1958,
+  "viewUrl": "https://gitlab.com/Sorrow-San/9anime-adblock-filters/raw/master/9Anime%20filter%20list",
+  "name": "9Anime Filter-list: No Banner Ads",
+  "description": "Filters to fix common issues with 9Anime and block malicious code",
+  "syntaxid": 4,
+  "homeUrl": "https://gitlab.com/Sorrow-San/9anime-adblock-filters/"
+  },
+  {
+  "id": 1959,
+  "viewUrl": "https://raw.githubusercontent.com/RiiConnect24/DNS-Server/master/dns_zones-hosts.txt",
+  "name": "RiiConnect24/Wiimmfi List for Users of AdGuard Home and Pi-Hole",
+  "description": "A hosts file to connect to the third-party DS/Wii online servers hosted by RiiConnect24 and Wiimmfi. Can be used for Nintendo DS games and WiiConnect24. Unfortunately doesn't work for Wii games.",
+  "syntaxid": 14,
+  "homeUrl": "https://github.com/RiiConnect24/DNS-Server/"
+  },
+  {
+  "id": 1960,
+  "viewUrl": "https://www.darklist.de/raw.php",
+  "name": "DarklistDE IP Blacklist",
+  "description": "Darklist.de is an IP blacklist that uses multiple sensors to identify network attacks (e.g. SSH brute force) and spam incidents. All reports are evaluated and in case of too many incidents the responsible IP holder is informed to solve the problem. After reporting an incident as solved the IP is removed from the blacklist.",
+  "syntaxid": 9,
+  "homeUrl": "https://www.darklist.de/"
+  },
+  {
+  "id": 1961,
+  "viewUrl": "https://raw.githubusercontent.com/xorcan/hosts/master/xelement.txt",
+  "name": "xorcan Türk element-ad-list (Turkish)",
+  "syntaxid": 3,
+  "licenseid": 4,
+  "homeUrl": "https://github.com/xorcan/hosts/"
+  },
+  {
+  "id": 1962,
+  "viewUrl": "https://raw.githubusercontent.com/xorcan/hosts/master/xips.txt",
+  "name": "xorcan Türk harmful ip-list (Turkish)",
+  "syntaxid": 9,
+  "licenseid": 4,
+  "homeUrl": "https://github.com/xorcan/hosts/"
+  },
+  {
+  "id": 1963,
+  "viewUrl": "https://gitlab.com/Sorrow-San/9anime-adblock-filters/raw/master_with_banners/9Anime%20filter%20list",
+  "name": "9Anime Filter-list: Banners Allowed",
+  "description": "Filters to fix common issues with 9Anime and block malicious code",
+  "syntaxid": 4,
+  "homeUrl": "https://gitlab.com/Sorrow-San/9anime-adblock-filters/"
+  },
+  {
+    "id": 1964,
+    "description": "Adventure Time is a very popular cartoon made by completely inexperienced art students who disregard young viewers and insert it full of adult morals and completely nonsensical plotlines instead. This list is how to get an arm's length away from it.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'Adventure Time' List",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAdventureTimeList.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAdventureTimeList.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAdventureTimeList.txt"
+  },
+  {
+    "id": 1965,
+    "description": "Do you feel unfairly targeted by relatively non-threatening pastes on «Have I Been Pwned»? Perhaps you once used your E-mail address in the actual goddamn E-mail field on 4chan 7 years ago, or you're part of a large E-mail-based DnD group? Or maybe for any other reason? In that case, this list will make Have I Been Pwned largely ignore any paste results for your E-mail address(es).",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Have I Been Pwned Paste Remover",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/HaveIBeenPwnedPasteRemover.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/HaveIBeenPwnedPasteRemover.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/HaveIBeenPwnedPasteRemover.txt"
+  },
+  {
+    "id": 1966,
+    "description": "PornHub is a site full of distractions and things that you are quite literally not into. If you wish to focus on the things there that you really are into, you can use this list.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "PornHub: Pure Trail Mix Experience",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/PornHubPureTrailMixExperience.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/PornHubPureTrailMixExperience.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/PornHubPureTrailMixExperience.txt"
+  },
+  {
+    "id": 1967,
+    "description": "This is a list to remove the kinds of ads that very few well-established international adblocker lists would want to remove, due to many of them not meeting those lists' strict criteria of what an ad actually is. So that's where this list comes into play.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Ad Removal List for Unusual Ads",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdRemovalListForUnusualAds.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AdRemovalListForUnusualAds.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdRemovalListForUnusualAds.txt"
   }
 ]
