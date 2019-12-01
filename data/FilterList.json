@@ -2880,10 +2880,10 @@
     "homeUrl": "https://easylist.to/",
     "issuesUrl": "https://github.com/easylist/easylist/issues",
     "licenseId": 16,
-    "name": "Fanboy's Cookiemonster List",
+    "name": "EasyList Cookie List",
     "syntaxId": 3,
-    "updatedDate": "2019-04-08T12:37:11",
-    "viewUrl": "https://fanboy.co.nz/fanboy-cookiemonster.txt"
+    "updatedDate": "2019-11-15T11:56:00",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylist-cookie.txt"
   },
   {
     "id": 251,
