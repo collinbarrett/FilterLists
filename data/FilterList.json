@@ -1369,12 +1369,12 @@
   {
     "id": 113,
     "description": "Blocks Japanese regional advertisements and trackers.",
-    "homeUrl": "http://tofukko.r.ribbon.to/abp.html",
+    "homeUrl": "https://github.com/tofukko/filter",
     "licenseId": 5,
     "name": "Tofu Filter",
     "syntaxId": 4,
     "updatedDate": "2019-03-25T09:49:11",
-    "viewUrl": "http://tofukko.r.ribbon.to/Adblock_Plus_list.txt"
+    "viewUrl": "https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt"
   },
   {
     "id": 114,
@@ -2523,12 +2523,12 @@
     "id": 221,
     "description": "Blocks Estonian regional advertisements and trackers.",
     "emailAddress": "adblock@gurud.ee",
-    "homeUrl": "http://gurud.ee/veeb/adblock",
+    "homeUrl": "https://gurud.ee/veeb/adblock",
     "licenseId": 5,
     "name": "Adblock Filters by Gurud.ee",
     "syntaxId": 3,
     "updatedDate": "2018-11-20T04:33:09",
-    "viewUrl": "http://gurud.ee/ab.txt"
+    "viewUrl": "https://gurud.ee/ab.txt"
   },
   {
     "id": 222,
@@ -7072,18 +7072,6 @@
     "viewUrl": "https://hosts.ubuntu101.co.za/domains.list"
   },
   {
-    "id": 695,
-    "donateUrl": "https://www.paypal.me/mitchellkrog/",
-    "emailAddress": "mitchellkrog@gmail.com",
-    "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
-    "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
-    "licenseId": 2,
-    "name": "Ultimate Hosts Blacklist - IPs",
-    "syntaxId": 9,
-    "updatedDate": "2019-04-16T19:46:17",
-    "viewUrl": "https://hosts.ubuntu101.co.za/ips.list"
-  },
-  {
     "id": 696,
     "emailAddress": "me@austinheap.com",
     "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
@@ -7605,102 +7593,102 @@
   },
   {
     "id": 751,
-    "homeUrl": "http://jansal.net/TPL.shtml",
+    "homeUrl": "https://jansal.net/TPL.shtml",
     "licenseId": 5,
     "name": "Rickroll Blacklist (TPL)",
     "syntaxId": 10,
     "updatedDate": "2016-05-09T00:00:00",
-    "viewUrl": "http://jansal.net/tpl/ricklist.tpl"
+    "viewUrl": "https://jansal.net/tpl/ricklist.tpl"
   },
   {
     "id": 752,
-    "homeUrl": "http://jansal.net/TPL.shtml",
+    "homeUrl": "https://jansal.net/TPL.shtml",
     "licenseId": 16,
     "name": "Popup Block List for Adblock Plus Popup Addon",
     "syntaxId": 10,
     "updatedDate": "2011-10-05T00:00:00",
-    "viewUrl": "http://jansal.net/tpl/popup-block.tpl"
+    "viewUrl": "https://jansal.net/tpl/popup-block.tpl"
   },
   {
     "id": 753,
-    "homeUrl": "http://jansal.net/TPL.shtml",
+    "homeUrl": "https://jansal.net/TPL.shtml",
     "licenseId": 2,
     "name": "Prebake TPL",
     "syntaxId": 10,
     "updatedDate": "2016-05-04T00:00:00",
-    "viewUrl": "http://jansal.net/tpl/obtrusive.tpl"
+    "viewUrl": "https://jansal.net/tpl/obtrusive.tpl"
   },
   {
     "id": 754,
-    "homeUrl": "http://jansal.net/TPL.shtml",
+    "homeUrl": "https://jansal.net/TPL.shtml",
     "licenseId": 5,
     "name": "Malware Patrol TPL",
     "syntaxId": 10,
     "updatedDate": "2016-09-05T00:00:00",
-    "viewUrl": "http://jansal.net/tpl/malpatrol.tpl"
+    "viewUrl": "https://jansal.net/tpl/malpatrol.tpl"
   },
   {
     "id": 755,
-    "homeUrl": "http://jansal.net/TPL.shtml",
+    "homeUrl": "https://jansal.net/TPL.shtml",
     "licenseId": 5,
     "name": "Sucuri M",
     "syntaxId": 10,
     "updatedDate": "2013-12-28T00:00:00",
-    "viewUrl": "http://jansal.net/tpl/m.tpl"
+    "viewUrl": "https://jansal.net/tpl/m.tpl"
   },
   {
     "id": 756,
-    "homeUrl": "http://jansal.net/TPL.shtml",
+    "homeUrl": "https://jansal.net/TPL.shtml",
     "licenseId": 8,
     "name": "Latvian List (TPL)",
     "syntaxId": 10,
     "updatedDate": "2016-07-02T00:00:00",
-    "viewUrl": "http://jansal.net/tpl/latvian-list.tpl"
+    "viewUrl": "https://jansal.net/tpl/latvian-list.tpl"
   },
   {
     "id": 757,
-    "homeUrl": "http://jansal.net/TPL.shtml",
+    "homeUrl": "https://jansal.net/TPL.shtml",
     "licenseId": 5,
     "name": "Facebook Connect Opt-Out",
     "syntaxId": 10,
     "updatedDate": "2011-07-14T00:00:00",
-    "viewUrl": "http://jansal.net/tpl/facebook-connect-optout-adblockplusfilter.tpl"
+    "viewUrl": "https://jansal.net/tpl/facebook-connect-optout-adblockplusfilter.tpl"
   },
   {
     "id": 758,
-    "homeUrl": "http://jansal.net/TPL.shtml",
+    "homeUrl": "https://jansal.net/TPL.shtml",
     "licenseId": 5,
     "name": "Adblock Persian List (TPL)",
     "syntaxId": 10,
     "updatedDate": "2016-09-05T00:00:00",
-    "viewUrl": "http://jansal.net/tpl/adblock-persian.tpl"
+    "viewUrl": "https://jansal.net/tpl/adblock-persian.tpl"
   },
   {
     "id": 759,
-    "homeUrl": "http://jansal.net/TPL.shtml",
+    "homeUrl": "https://jansal.net/TPL.shtml",
     "licenseId": 5,
     "name": "Fanboy's IsraelList (TPL)",
     "syntaxId": 10,
     "updatedDate": "2013-08-19T00:00:00",
-    "viewUrl": "http://jansal.net/tpl/IsraelList.tpl"
+    "viewUrl": "https://jansal.net/tpl/IsraelList.tpl"
   },
   {
     "id": 760,
-    "homeUrl": "http://jansal.net/TPL.shtml",
+    "homeUrl": "https://jansal.net/TPL.shtml",
     "licenseId": 16,
     "name": "Adversity - AntiSocial (TPL)",
     "syntaxId": 10,
     "updatedDate": "2013-09-21T00:00:00",
-    "viewUrl": "http://jansal.net/tpl/Adversity/Antisocial.tpl"
+    "viewUrl": "https://jansal.net/tpl/Adversity/Antisocial.tpl"
   },
   {
     "id": 761,
-    "homeUrl": "http://jansal.net/TPL.shtml",
+    "homeUrl": "https://jansal.net/TPL.shtml",
     "licenseId": 16,
     "name": "Adversity (TPL)",
     "syntaxId": 10,
     "updatedDate": "2013-09-24T00:00:00",
-    "viewUrl": "http://jansal.net/tpl/Adversity/Adversity.tpl"
+    "viewUrl": "https://jansal.net/tpl/Adversity/Adversity.tpl"
   },
   {
     "id": 762,
@@ -20791,5 +20779,57 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdRemovalListForUnusualAds.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AdRemovalListForUnusualAds.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdRemovalListForUnusualAds.txt"
+  },
+  {
+    "id": 1968,
+    "description": "Blocks empty leftover boxes.",
+    "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter",
+    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Annoyances Filter - Remains Only",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 6,
+    "viewUrl": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/AnnoyancesFilter/sections/remains.txt"
+  },
+  {
+    "id": 1969,
+    "description": "Blocks page elements that prompt you to accept push notifications in the browser.",
+    "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter",
+    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Annoyances Filter - Push Notifications Only",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 6,
+    "viewUrl": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/AnnoyancesFilter/sections/push-notifications.txt"
+  },
+  {
+    "id": 1970,
+    "description": "Blocks empty leftover boxes.",
+    "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter",
+    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Annoyances Filter - Mobile App Only",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 6,
+    "viewUrl": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/AnnoyancesFilter/sections/mobile-app.txt"
+  },
+  {
+    "id": 1971,
+    "description": "Blocks empty leftover boxes.",
+    "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter",
+    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Annoyances Filter - Anti-Adblock Only",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 6,
+    "viewUrl": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/AnnoyancesFilter/sections/antiadblock.txt"
   }
 ]
