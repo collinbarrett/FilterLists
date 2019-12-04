@@ -7,7 +7,7 @@ ENTRYPOINT ["./FilterLists.Agent"]
 WORKDIR /app
 
 # init build
-FROM mcr.microsoft.com/dotnet/core/sdk:3.0-alpine AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1.100-alpine AS build
 
 # restore
 WORKDIR /app/src/FilterLists.Agent
