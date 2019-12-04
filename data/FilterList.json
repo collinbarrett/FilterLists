@@ -3482,7 +3482,7 @@
     "homeUrl": "https://dshield.org/suspicious_domains.html",
     "licenseId": 25,
     "name": "DShield.org Recommended Block List",
-    "syntaxId": 9,
+    "syntaxId": 15,
     "updatedDate": "2019-04-13T01:58:12",
     "viewUrl": "https://feeds.dshield.org/block.txt"
   },
@@ -4721,7 +4721,7 @@
     "homeUrl": "https://gist.github.com/BBcan177",
     "licenseId": 5,
     "name": "pfBlockerNG - MS-3",
-    "syntaxId": 9,
+    "syntaxId": 32,
     "viewUrl": "https://gist.githubusercontent.com/BBcan177/d7105c242f17f4498f81/raw/201968fa11b1f409d408a129a0774ffedb1560e2/MS-3"
   },
   {
@@ -5234,7 +5234,7 @@
     "licenseId": 19,
     "name": "Firehol Level 1",
     "publishedDate": "2018-10-07T05:30:15",
-    "syntaxId": 9,
+    "syntaxId": 32,
     "updatedDate": "2019-04-14T05:30:16",
     "viewUrl": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level1.netset"
   },
@@ -5246,7 +5246,7 @@
     "licenseId": 19,
     "name": "Firehol Level 2",
     "publishedDate": "2018-10-07T05:30:15",
-    "syntaxId": 9,
+    "syntaxId": 32,
     "updatedDate": "2019-04-14T05:30:16",
     "viewUrl": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level2.netset"
   },
@@ -6210,7 +6210,7 @@
     "licenseId": 2,
     "name": "Firehol Level 3",
     "publishedDate": "2018-10-07T05:30:15",
-    "syntaxId": 9,
+    "syntaxId": 32,
     "updatedDate": "2019-04-07T05:30:15",
     "viewUrl": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level3.netset"
   },
@@ -19155,7 +19155,7 @@
     "licenseId": 9,
     "name": "Energized IP Extension",
     "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 9,
+    "syntaxId": 32,
     "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/ips/formats/list.txt"
   },
   {
@@ -19255,7 +19255,7 @@
     "homeUrl": "https://rules.emergingthreats.net/",
     "licenseId": 5,
     "name": "EmergingThreats Block IPs",
-    "syntaxId": 9,
+    "syntaxId": 32,
     "viewUrl": "https://rules.emergingthreats.net/fwrules/emerging-Block-IPs.txt"
   },
   {
@@ -19409,7 +19409,7 @@
     "homeUrl": "https://myip.ms/",
     "licenseId": 5,
     "name": "MyIP Blacklist",
-    "syntaxId": 9,
+    "syntaxId": 33,
     "viewUrl": "https://myip.ms/files/blacklist/general/latest_blacklist.txt"
   },
   {
@@ -20602,7 +20602,7 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Dandelion Sprout's Disallowed Clients for AdGuard Home in Particular",
-    "syntaxId": 9,
+    "syntaxId": 32,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuardHomeDisallowedIPs.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AdGuardHomeDisallowedIPs.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdGuardHomeDisallowedIPs.txt"
@@ -20697,7 +20697,7 @@
   "viewUrl": "https://www.darklist.de/raw.php",
   "name": "DarklistDE IP Blacklist",
   "description": "Darklist.de is an IP blacklist that uses multiple sensors to identify network attacks (e.g. SSH brute force) and spam incidents. All reports are evaluated and in case of too many incidents the responsible IP holder is informed to solve the problem. After reporting an incident as solved the IP is removed from the blacklist.",
-  "syntaxid": 9,
+  "syntaxid": 32,
   "homeUrl": "https://www.darklist.de/"
   },
   {
@@ -20795,7 +20795,7 @@
   },
   {
     "id": 1969,
-    "description": "Blocks page elements that prompt you to accept push notifications in the browser.",
+    "description": "Rules for blocking push notifications.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter",
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
@@ -20808,7 +20808,7 @@
   },
   {
     "id": 1970,
-    "description": "Blocks empty leftover boxes.",
+    "description": "Banners of mobile apps for the sites.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter",
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
@@ -20821,7 +20821,7 @@
   },
   {
     "id": 1971,
-    "description": "Blocks empty leftover boxes.",
+    "description": "These rules are against all kinds of ad blocking reinjection/circumvention scripts, which does not affect the functioning of site",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter",
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
