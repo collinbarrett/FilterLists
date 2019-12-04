@@ -34,7 +34,7 @@
   },
   {
     "id": 9,
-    "name": "IPs (Singular or singular+range)"
+    "name": "IPs (IPv4)"
   },
   {
     "id": 10,
@@ -62,7 +62,7 @@
   },
   {
     "id": 15,
-    "name": "IPs (Range-only)"
+    "name": "IPs (Start-end-range only)"
   },
   {
     "id": 16,
@@ -132,5 +132,17 @@
   {
     "id": 31,
     "name": "URLRedirector"
+  },
+  {
+    "id": 32,
+    "name": "IPs (IPv4 + CIDR)"
+  },
+  {
+    "id": 33,
+    "name": "IPs (IPv4 + IPv6)"
+  },
+  {
+    "id": 34,
+    "name": "IPs (CIDR only)"
   }
 ]
