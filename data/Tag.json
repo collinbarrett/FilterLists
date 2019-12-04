@@ -148,5 +148,20 @@
     "id": 30,
     "description": "Blocks certain cultural content",
     "name": "cultural"
+  },
+  {
+    "id": 31,
+    "description": "Removes empty boxes that remain after other things were blocked",
+    "name": "ampty-box"
+  },
+  {
+    "id": 32,
+    "description": "Blocks prompts to subscribe to push notifications",
+    "name": "push-notes"
+  },
+  {
+    "id": 33,
+    "description": "Blocks promotions of websites' own mobile apps",
+    "name": "app-download"
   }
 ]
