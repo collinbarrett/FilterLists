@@ -10,7 +10,7 @@ To submit a new list or update data about an existing list, please submit a pull
 
 While we are generally very open and welcoming of any new or changed lists, a few conditions apply (although loosely):
 
-* Adding the smaller text files that make up one complete list, e.g. *[EasyList General Block Popup](https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_general_block_popup.txt)*, is not usually done. We do however do it for the language files of *[ABP Anti-Circumvention Filter List](https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt)*; but due to its often-changing entries, those files should have ≥5 entries that cover ≥3 sites at the time of addition.
+* Adding the smaller text files that make up one complete list, e.g. *[EasyList General Block Popup](https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_general_block_popup.txt)*, is not usually done. It is however something we can do if the smaller files could function as full independent lists, such as the language files of *[ABP Anti-Circumvention Filter List](https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt)*, or certain parts of *[AdGuard Annoyances Filter](https://filters.adtidy.org/extension/chromium/filters/14.txt)*. Such files should have ≥5 entries that cover ≥3 sites at the time of addition.
 * Since `CHEF-KOCH` has a registered history of behaving aggressively and unfairly towards other filterlist makers and the FilterLists.com community, a case to add any of his lists would have had to be very strong, and mass additions are out of the question.
 
 ## Adding or Updating Rules
