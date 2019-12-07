@@ -10,4 +10,4 @@ services:
 
   web:
     build:
-      context: .
+      context: . # hack for https://github.com/docker/compose/issues/4047
