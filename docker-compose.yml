@@ -17,7 +17,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: src/FilterLists.Web/Dockerfile
+      dockerfile: web/Dockerfile
       target: final
     networks:
       - reverse-proxy
