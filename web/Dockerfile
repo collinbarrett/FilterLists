@@ -1,20 +1,20 @@
-# Context: .
-# Command: docker build -f src/FilterLists.Web/Dockerfile .
+# Context: ./web
+# Command: docker build ./web
 
 # init base
 FROM nginx:alpine as base
-COPY ./src/FilterLists.Web/nginx/conf.d /etc/nginx/conf.d
+COPY nginx/conf.d /etc/nginx/conf.d
 
 # init build
 FROM node:alpine as build
 
 # install
 WORKDIR /usr/src/app/
-COPY src/FilterLists.Web/package*.json ./
+COPY package*.json ./
 RUN npm install --only=prod
 
 # build
-COPY src/FilterLists.Web/. ./
+COPY . ./
 RUN INLINE_RUNTIME_CHUNK=false npm run build
 
 # final
