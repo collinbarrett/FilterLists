@@ -16,8 +16,7 @@ services:
     image: collinbarrett2/filterlists.web:latest
     restart: always
     build:
-      context: .
-      dockerfile: web/Dockerfile
+      context: ./web
       target: final
     networks:
       - reverse-proxy
