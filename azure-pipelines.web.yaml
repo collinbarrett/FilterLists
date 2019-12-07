@@ -59,7 +59,6 @@ steps:
       Contents: |
         docker-compose.yml
         docker-compose.prod.yml
-        web # hack for deploy since dc pull and up still check for existence of build context dir
       TargetFolder: "$(Build.ArtifactStagingDirectory)"
       CleanTargetFolder: true
       OverWrite: true

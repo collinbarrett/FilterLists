@@ -7,3 +7,7 @@ services:
     volumes:
       - ./ops/nginx/conf.d:/etc/nginx/conf.d:ro
       - ~/cert:/etc/nginx/cert:ro
+
+  web:
+    build:
+      context: .
