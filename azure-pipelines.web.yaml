@@ -32,7 +32,7 @@ steps:
     displayName: "build"
     inputs:
       containerRegistry: "collinbarrett-github-packages"
-      repository: "collinbarrett/filterlists.web"
+      repository: "collinbarrett/filterlists/filterlists.web"
       command: "build"
       Dockerfile: "web/Dockerfile"
       buildContext: "./web"
@@ -45,7 +45,7 @@ steps:
     displayName: "push"
     inputs:
       containerRegistry: "collinbarrett-github-packages"
-      repository: "collinbarrett/filterlists.web"
+      repository: "collinbarrett/filterlists/filterlists.web"
       command: "push"
       tags: |
         latest
