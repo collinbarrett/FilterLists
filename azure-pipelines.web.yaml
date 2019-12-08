@@ -31,8 +31,8 @@ steps:
   - task: Docker@2
     displayName: "build"
     inputs:
-      containerRegistry: "collinbarrett2-dockerhub"
-      repository: "collinbarrett2/filterlists.web"
+      containerRegistry: "collinbarrett-github-packages"
+      repository: "collinbarrett/filterlists.web"
       command: "build"
       Dockerfile: "web/Dockerfile"
       buildContext: "./web"
@@ -44,8 +44,8 @@ steps:
   - task: Docker@2
     displayName: "push"
     inputs:
-      containerRegistry: "collinbarrett2-dockerhub"
-      repository: "collinbarrett2/filterlists.web"
+      containerRegistry: "collinbarrett-github-packages"
+      repository: "collinbarrett/filterlists.web"
       command: "push"
       tags: |
         latest

@@ -13,7 +13,7 @@ services:
       - ./ops/nginx/svr-includes:/etc/nginx/svr-includes:ro
 
   web:
-    image: collinbarrett2/filterlists.web:latest
+    image: collinbarrett/filterlists.web:latest
     restart: always
     build:
       context: ./web
