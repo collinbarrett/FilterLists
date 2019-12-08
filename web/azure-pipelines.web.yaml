@@ -3,14 +3,14 @@ trigger:
   branches:
     include: ["master"]
   paths:
-    include: ["../docker-compose.yml", "../docker-compose.prod.yml", "."]
+    include: ["../docker-compose.yml", "../docker-compose.prod.yml", "./*"]
 
 pr:
   autoCancel: false
   branches:
     include: ["master"]
   paths:
-    include: ["../docker-compose.yml", "../docker-compose.prod.yml", "."]
+    include: ["../docker-compose.yml", "../docker-compose.prod.yml", "./*"]
 
 pool:
   vmImage: "ubuntu-latest"
