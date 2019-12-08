@@ -3,26 +3,14 @@ trigger:
   branches:
     include: ["master"]
   paths:
-    include:
-      [
-        "azure-pipelines.web.yaml",
-        "docker-compose.yml",
-        "docker-compose.prod.yml",
-        "web/*",
-      ]
+    include: ["../docker-compose.yml", "../docker-compose.prod.yml", "."]
 
 pr:
   autoCancel: false
   branches:
     include: ["master"]
   paths:
-    include:
-      [
-        "azure-pipelines.web.yaml",
-        "docker-compose.yml",
-        "docker-compose.prod.yml",
-        "web/*",
-      ]
+    include: ["../docker-compose.yml", "../docker-compose.prod.yml", "."]
 
 pool:
   vmImage: "ubuntu-latest"
@@ -34,8 +22,7 @@ steps:
       containerRegistry: "collinbarrett2-dockerhub"
       repository: "collinbarrett2/filterlists.web"
       command: "build"
-      Dockerfile: "web/Dockerfile"
-      buildContext: "./web"
+      buildContext: "."
       tags: |
         latest
         $(Build.BuildId)
