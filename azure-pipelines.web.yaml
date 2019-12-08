@@ -31,43 +31,29 @@ steps:
   - task: Docker@2
     displayName: "build"
     inputs:
-      #containerRegistry: "github-package-registry"
-      #repository: "collinbarrett/filterlists/filterlists.web"
+      containerRegistry: "collinbarrett2-dockerhub"
+      repository: "collinbarrett2/filterlists.web"
       command: "build"
       Dockerfile: "web/Dockerfile"
       buildContext: "./web"
-      #tags: |
-      #  latest
-      #  $(Build.BuildId)
+      tags: |
+        latest
+        $(Build.BuildId)
       addPipelineData: false
-
-  - task: Docker@2
-    displayName: "login to GPR"
-    inputs:
-      command: "login"
-      containerRegistry: "github-package-registry"
-    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
 
   - task: Docker@2
     displayName: "push"
     inputs:
-      containerRegistry: "github-package-registry"
-      repository: "collinbarrett/filterlists/filterlists.web"
+      containerRegistry: "collinbarrett2-dockerhub"
+      repository: "collinbarrett2/filterlists.web"
       command: "push"
       tags: |
         latest
         $(Build.BuildId)
     condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
 
-  - task: Docker@2
-    displayName: "logout of GPR"
-    inputs:
-      command: logout
-      containerRegistry: "github-package-registry"
-    condition: "eq(variables['Build.SourceBranch'], 'refs/heads/master')"
-
   - task: CopyFiles@2
-    displayName: "stage compose files"
+    displayName: "stage docker-compose files"
     inputs:
       SourceFolder: "$(Build.SourcesDirectory)"
       Contents: |
@@ -79,7 +65,7 @@ steps:
     condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
 
   - task: PublishBuildArtifacts@1
-    displayName: "publish compose files"
+    displayName: "publish docker-compose files"
     inputs:
       PathtoPublish: "$(Build.ArtifactStagingDirectory)"
       ArtifactName: "drop"
