@@ -31,14 +31,14 @@ steps:
   - task: Docker@2
     displayName: "build"
     inputs:
-      containerRegistry: "github-package-registry"
-      repository: "collinbarrett/filterlists/filterlists.web"
+      #containerRegistry: "github-package-registry"
+      #repository: "collinbarrett/filterlists/filterlists.web"
       command: "build"
       Dockerfile: "web/Dockerfile"
       buildContext: "./web"
-      tags: |
-        latest
-        $(Build.BuildId)
+      #tags: |
+      #  latest
+      #  $(Build.BuildId)
       addPipelineData: false
 
   - task: Docker@2
@@ -46,6 +46,7 @@ steps:
     inputs:
       command: "login"
       containerRegistry: "github-package-registry"
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
 
   - task: Docker@2
     displayName: "push"
@@ -63,9 +64,10 @@ steps:
     inputs:
       command: logout
       containerRegistry: "github-package-registry"
+    condition: "eq(variables['Build.SourceBranch'], 'refs/heads/master')"
 
   - task: CopyFiles@2
-    displayName: "stage docker-compose files"
+    displayName: "stage compose files"
     inputs:
       SourceFolder: "$(Build.SourcesDirectory)"
       Contents: |
@@ -77,7 +79,7 @@ steps:
     condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
 
   - task: PublishBuildArtifacts@1
-    displayName: "publish docker-compose files"
+    displayName: "publish compose files"
     inputs:
       PathtoPublish: "$(Build.ArtifactStagingDirectory)"
       ArtifactName: "drop"
