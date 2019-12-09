@@ -8823,16 +8823,16 @@
   },
   {
     "id": 861,
-    "description": "Filters for ad blocking, tracking, crypto mining, and more!",
-    "descriptionSourceUrl": "https://github.com/bogachenko/presstheattack",
+    "description": "Yet another anti-bullshit filter list.",
+    "descriptionSourceUrl": "https://github.com/bogachenko/filterlist",
     "emailAddress": "bogachenkove@gmail.com",
-    "homeUrl": "https://github.com/bogachenko/presstheattack",
-    "licenseId": 2,
-    "name": "Press the Attack",
+    "homeUrl": "https://github.com/bogachenko/filterlist",
+    "licenseId": 11,
+    "name": "bogachenko's Filter List",
     "publishedDate": "2018-10-01T13:53:10",
     "syntaxId": 4,
     "updatedDate": "2019-04-14T08:53:51",
-    "viewUrl": "https://raw.githubusercontent.com/bogachenko/presstheattack/master/presstheattack.txt"
+    "viewUrl": "https://raw.githubusercontent.com/bogachenko/filterlist/master/filterlist.txt"
   },
   {
     "id": 862,
