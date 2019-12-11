@@ -1,5 +1,5 @@
 # Context: .
-# Command: docker build -f src/FilterLists.Agent/Dockerfile .
+# Command: docker build -f agent/FilterLists.Agent/Dockerfile .
 
 # init base
 FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.0-alpine as base
@@ -11,11 +11,11 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.0-alpine AS build
 
 # restore
 WORKDIR /app/src/FilterLists.Agent
-COPY src/FilterLists.Agent/FilterLists.Agent.csproj .
+COPY agent/FilterLists.Agent/FilterLists.Agent.csproj .
 RUN dotnet restore
 
 # build
-COPY src/FilterLists.Agent/. .
+COPY agent/FilterLists.Agent/. .
 RUN dotnet build -c Release -r linux-musl-x64 --no-restore
 
 # init Agent.Tests
