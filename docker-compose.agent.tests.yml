@@ -5,7 +5,7 @@ services:
     image: collinbarrett2/filterlists.agent:test-agent
     build:
       context: .
-      dockerfile: src/FilterLists.Agent/Dockerfile
+      dockerfile: agent/FilterLists.Agent/Dockerfile
       target: test-agent
     networks:
       - test-agent

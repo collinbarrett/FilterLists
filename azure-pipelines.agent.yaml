@@ -6,8 +6,7 @@ trigger:
     include:
       [
         "azure-pipelines.agent.yaml",
-        "src/FilterLists.Agent/*",
-        "tests/FilterLists.Agent.Tests/*",
+        "agent/*",
         ".dockerignore",
         "docker-compose.yml",
         "docker-compose.prod.yml",
@@ -22,8 +21,7 @@ pr:
     include:
       [
         "azure-pipelines.agent.yaml",
-        "src/FilterLists.Agent/*",
-        "tests/FilterLists.Agent.Tests/*",
+        "agent/*",
         ".dockerignore",
         "docker-compose.yml",
         "docker-compose.prod.yml",

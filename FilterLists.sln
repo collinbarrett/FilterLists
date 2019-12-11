@@ -25,15 +25,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{00CBD1AF-455
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EA11453B-FB14-4F0E-A19B-B8089498F677}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Agent", "src\FilterLists.Agent\FilterLists.Agent.csproj", "{BA14A9D0-174C-4944-85E5-DB7D0DCF4D22}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Data", "src\FilterLists.Data\FilterLists.Data.csproj", "{E604D351-D471-41FD-BA82-BAE12B342B4D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Services", "src\FilterLists.Services\FilterLists.Services.csproj", "{51186C58-1627-4743-B86D-4B355D8A152B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Api", "src\FilterLists.Api\FilterLists.Api.csproj", "{1B8105E2-0721-4DC0-8243-02932A05D98B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Agent.Tests", "tests\FilterLists.Agent.Tests\FilterLists.Agent.Tests.csproj", "{668D27A9-FD28-4F2A-BA4C-37BBAED95617}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Data.Tests", "tests\FilterLists.Data.Tests\FilterLists.Data.Tests.csproj", "{EB65E67D-3C29-4555-8D9B-C90801880F51}"
 EndProject

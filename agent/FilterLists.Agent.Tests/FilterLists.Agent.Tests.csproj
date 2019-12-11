@@ -24,7 +24,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\FilterLists.Agent\FilterLists.Agent.csproj" />
+    <ProjectReference Include="..\FilterLists.Agent\FilterLists.Agent.csproj" />
   </ItemGroup>
 
   <ItemGroup>
