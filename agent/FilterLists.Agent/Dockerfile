@@ -24,11 +24,11 @@ ENTRYPOINT ["dotnet", "test", "--logger:trx"]
 
 # restore Agent.Tests
 WORKDIR /app/tests/FilterLists.Agent.Tests
-COPY tests/FilterLists.Agent.Tests/FilterLists.Agent.Tests.csproj .
+COPY agent/FilterLists.Agent.Tests/FilterLists.Agent.Tests.csproj .
 RUN dotnet restore
 
 # build Agent.Tests
-COPY tests/FilterLists.Agent.Tests/. .
+COPY agent/FilterLists.Agent.Tests/. .
 RUN dotnet build -c Release --no-restore
 
 # publish
