@@ -27,7 +27,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.DotNet.Analyzers.Compatibility" Version="0.2.12-alpha" />
-    <PackageReference Include="morelinq" Version="3.2.0" />
+    <PackageReference Include="morelinq" Version="3.3.1" />
     <PackageReference Include="SharpCompress" Version="0.24.0" />
   </ItemGroup>
 
