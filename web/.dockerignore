@@ -1,2 +1,3 @@
 **/.gitignore
+**/azure-pipelines.yaml
 **/Dockerfile
