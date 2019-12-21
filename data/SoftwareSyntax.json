@@ -220,6 +220,10 @@
     "syntaxId": 9
   },
   {
+    "softwareId": 31,
+    "syntaxId": 9
+  },
+  {
     "softwareId": 32,
     "syntaxId": 9
   },
@@ -436,6 +440,10 @@
     "syntaxId": 32
   },
   {
+    "softwareId": 31,
+    "syntaxId": 32
+  },
+  {
     "softwareId": 32,
     "syntaxId": 32
   },
@@ -456,6 +464,10 @@
     "syntaxId": 33
   },
   {
+    "softwareId": 31,
+    "syntaxId": 33
+  },
+  {
     "softwareId": 32,
     "syntaxId": 33
   },
@@ -465,6 +477,10 @@
   },
   {
     "softwareId": 18,
+    "syntaxId": 34
+  },
+  {
+    "softwareId": 31,
     "syntaxId": 34
   }
 ]
