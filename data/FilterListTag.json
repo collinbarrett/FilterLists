@@ -100,22 +100,6 @@
     "tagId": 10
   },
   {
-    "filterListId": 21,
-    "tagId": 6
-  },
-  {
-    "filterListId": 22,
-    "tagId": 6
-  },
-  {
-    "filterListId": 25,
-    "tagId": 6
-  },
-  {
-    "filterListId": 26,
-    "tagId": 6
-  },
-  {
     "filterListId": 27,
     "tagId": 3
   },
@@ -153,10 +137,6 @@
   },
   {
     "filterListId": 36,
-    "tagId": 6
-  },
-  {
-    "filterListId": 37,
     "tagId": 6
   },
   {
@@ -330,18 +310,6 @@
   {
     "filterListId": 74,
     "tagId": 7
-  },
-  {
-    "filterListId": 75,
-    "tagId": 6
-  },
-  {
-    "filterListId": 76,
-    "tagId": 6
-  },
-  {
-    "filterListId": 77,
-    "tagId": 6
   },
   {
     "filterListId": 78,
@@ -902,50 +870,6 @@
   {
     "filterListId": 119,
     "tagId": 2
-  },
-  {
-    "filterListId": 120,
-    "tagId": 6
-  },
-  {
-    "filterListId": 121,
-    "tagId": 6
-  },
-  {
-    "filterListId": 122,
-    "tagId": 6
-  },
-  {
-    "filterListId": 123,
-    "tagId": 6
-  },
-  {
-    "filterListId": 124,
-    "tagId": 6
-  },
-  {
-    "filterListId": 125,
-    "tagId": 6
-  },
-  {
-    "filterListId": 126,
-    "tagId": 6
-  },
-  {
-    "filterListId": 127,
-    "tagId": 6
-  },
-  {
-    "filterListId": 128,
-    "tagId": 6
-  },
-  {
-    "filterListId": 129,
-    "tagId": 6
-  },
-  {
-    "filterListId": 130,
-    "tagId": 6
   },
   {
     "filterListId": 131,
@@ -2062,14 +1986,6 @@
   {
     "filterListId": 388,
     "tagId": 10
-  },
-  {
-    "filterListId": 389,
-    "tagId": 13
-  },
-  {
-    "filterListId": 389,
-    "tagId": 21
   },
   {
     "filterListId": 390,
@@ -5370,14 +5286,6 @@
   {
     "filterListId": 1245,
     "tagId": 6
-  },
-  {
-    "filterListId": 1246,
-    "tagId": 6
-  },
-  {
-    "filterListId": 1246,
-    "tagId": 32
   },
   {
     "filterListId": 1247,
@@ -9874,5 +9782,61 @@
   {
     "filterListId": 1971,
     "tagId": 5
+  },
+  {
+    "filterListId": 1972,
+    "tagId": 2
+  },
+  {
+    "filterListId": 1973,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1974,
+    "tagId": 9
+  },
+  {
+    "filterListId": 1975,
+    "tagId": 30
+  },
+  {
+    "filterListId": 1976,
+    "tagId": 30
+  },
+  {
+    "filterListId": 1977,
+    "tagId": 30
+  },
+  {
+    "filterListId": 1978,
+    "tagId": 30
+  },
+  {
+    "filterListId": 1979,
+    "tagId": 16
+  },
+  {
+    "filterListId": 1980,
+    "tagId": 16
+  },
+  {
+    "filterListId": 1981,
+    "tagId": 30
+  },
+  {
+    "filterListId": 1982,
+    "tagId": 30
+  },
+  {
+    "filterListId": 1983,
+    "tagId": 11
+  },
+  {
+    "filterListId": 1983,
+    "tagId": 30
+  },
+  {
+    "filterListId": 1984,
+    "tagId": 9
   }
 ]
