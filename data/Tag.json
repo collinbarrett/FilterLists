@@ -152,7 +152,7 @@
   {
     "id": 31,
     "description": "Removes empty boxes that remain after other things were blocked",
-    "name": "ampty-box"
+    "name": "empty-box"
   },
   {
     "id": 32,
