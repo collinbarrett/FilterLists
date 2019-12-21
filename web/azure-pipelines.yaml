@@ -22,8 +22,8 @@ steps:
       containerRegistry: "collinbarrett2-dockerhub"
       repository: "collinbarrett2/filterlists.web"
       command: "build"
-      Dockerfile: "Dockerfile"
-      buildContext: "."
+      Dockerfile: "web/Dockerfile"
+      buildContext: "./web"
       tags: |
         latest
         $(Build.BuildId)
