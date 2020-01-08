@@ -1849,7 +1849,7 @@
     "licenseId": 14,
     "name": "Block the EU Cookie Shit List",
     "publishedDate": "2012-08-02T14:45:38",
-    "syntaxId": 1,
+    "syntaxId": 3,
     "updatedDate": "2018-11-19T18:43:37",
     "viewUrl": "https://raw.githubusercontent.com/r4vi/block-the-eu-cookie-shit-list/master/filterlist.txt",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/r4vi/block-the-eu-cookie-shit-list/master/filterlist.txt",
@@ -2969,7 +2969,7 @@
     "emailAddress": "hosts@someonewhocares.org",
     "homeUrl": "https://someonewhocares.org/hosts/",
     "licenseId": 32,
-    "name": "Dan Pollock's Hosts",
+    "name": "Dan Pollock's Hosts (IPv4)",
     "syntaxId": 1,
     "updatedDate": "2019-04-08T18:18:11",
     "viewUrl": "https://someonewhocares.org/hosts/zero/hosts",
@@ -3362,7 +3362,7 @@
     "name": "1Hosts Complete",
     "syntaxId": 1,
     "updatedDate": "2019-04-13T02:55:11",
-    "viewUrl": "https://1hos.cf/complete/hosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/complete/hosts.txt"
   },
   {
     "id": 311,
@@ -3534,7 +3534,7 @@
     "licenseId": 5,
     "name": "Minimal Hosts Blocker",
     "publishedDate": "2015-01-25T20:21:51",
-    "syntaxId": 1,
+    "syntaxId": 36,
     "updatedDate": "2015-10-17T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/arcetera/Minimal-Hosts-Blocker/master/etc/MinimalHostsBlocker/minimalhosts"
   },
@@ -4301,7 +4301,7 @@
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
-    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (Internet Explorer TPL)",
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (TPL)",
     "syntaxId": 10,
     "updatedDate": "2019-04-14T22:37:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl",
@@ -5407,7 +5407,7 @@
     "homeUrl": "https://easylist.to/",
     "issuesUrl": "https://github.com/easylist/easylist/issues",
     "licenseId": 4,
-    "name": "EasyList TPL",
+    "name": "EasyList (TPL)",
     "syntaxId": 10,
     "updatedDate": "2019-04-08T12:48:11",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylist.tpl"
@@ -6208,7 +6208,7 @@
     "issuesUrl": "https://github.com/TakoYachty/Gift-Card-Killer/issues",
     "licenseId": 5,
     "name": "Untrusted Hosts Blocker",
-    "syntaxId": 1,
+    "syntaxId": 36,
     "viewUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/Untrusted%20Hosts%20Blocker.txt"
   },
   {
@@ -7043,7 +7043,7 @@
     "licenseId": 2,
     "name": "lennylxx IPv6 Hosts",
     "publishedDate": "2014-07-15T12:43:47",
-    "syntaxId": 14,
+    "syntaxId": 37,
     "updatedDate": "2019-01-28T22:55:13",
     "viewUrl": "https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts"
   },
@@ -7069,7 +7069,7 @@
     "licenseId": 5,
     "name": "CERNET IPv6 Hosts",
     "publishedDate": "2014-11-18T12:42:33",
-    "syntaxId": 14,
+    "syntaxId": 37,
     "updatedDate": "2019-03-10T21:11:05",
     "viewUrl": "https://raw.githubusercontent.com/popcorner/cernet-ipv6-hosts/hosts/hosts"
   },
@@ -7949,7 +7949,7 @@
     "name": "1Hosts Complete (Domains)",
     "syntaxId": 2,
     "updatedDate": "2019-04-16T02:23:12",
-    "viewUrl": "https://1hos.cf/complete/domains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/complete/domains.txt"
   },
   {
     "id": 811,
@@ -7961,7 +7961,7 @@
     "name": "1Hosts Mini",
     "syntaxId": 1,
     "updatedDate": "2019-04-16T02:41:12",
-    "viewUrl": "https://1hos.cf/mini/hosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/hosts.txt"
   },
   {
     "id": 812,
@@ -7973,7 +7973,7 @@
     "name": "1Hosts Mini (Domains)",
     "syntaxId": 2,
     "updatedDate": "2019-04-16T02:52:11",
-    "viewUrl": "https://1hos.cf/mini/domains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/domains.txt"
   },
   {
     "id": 813,
@@ -8561,7 +8561,7 @@
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter",
-    "syntaxId": 8,
+    "syntaxId": 2,
     "updatedDate": "2019-04-05T22:09:10",
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
     "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
@@ -11793,7 +11793,7 @@
     "licenseId": 2,
     "name": "TR-PhishingList URL List",
     "publishedDate": "2017-09-05T08:14:36",
-    "syntaxId": 8,
+    "syntaxId": 2,
     "updatedDate": "2019-04-08T11:59:01",
     "viewUrl": "https://raw.githubusercontent.com/HorusTeknoloji/TR-PhishingList/master/url-lists.txt"
   },
@@ -15094,7 +15094,7 @@
     "licenseId": 5,
     "name": "jawz101 MobileAdTrackers",
     "publishedDate": "2018-01-02T05:46:05",
-    "syntaxId": 14,
+    "syntaxId": 1,
     "updatedDate": "2019-04-19T13:49:25",
     "viewUrl": "https://raw.githubusercontent.com/jawz101/MobileAdTrackers/master/hosts"
   },
@@ -15198,7 +15198,7 @@
     "licenseId": 5,
     "name": "tankmohit's AllUnifiedHosts",
     "publishedDate": "2017-09-21T08:36:49",
-    "syntaxId": 14,
+    "syntaxId": 1,
     "updatedDate": "2017-11-05T17:51:04",
     "viewUrl": "https://raw.githubusercontent.com/tankmohit/UnifiedHosts/master/hosts.all"
   },
@@ -15307,7 +15307,7 @@
     "licenseId": 5,
     "name": "ReddestDream MinimalHostsBlockerCB",
     "publishedDate": "2016-08-04T20:17:23",
-    "syntaxId": 1,
+    "syntaxId": 36,
     "updatedDate": "2016-08-04T20:17:23",
     "viewUrl": "https://raw.githubusercontent.com/ReddestDream/reddestdream.github.io/master/Projects/MinimalHostsCB/etc/MinimalHostsBlocker/minimalhosts"
   },
@@ -15318,7 +15318,7 @@
     "licenseId": 5,
     "name": "ReddestDream MinimalHosts",
     "publishedDate": "2016-01-22T05:31:27",
-    "syntaxId": 1,
+    "syntaxId": 36,
     "updatedDate": "2016-08-04T15:12:43",
     "viewUrl": "https://raw.githubusercontent.com/ReddestDream/reddestdream.github.io/master/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts"
   },
@@ -15427,7 +15427,7 @@
     "licenseId": 2,
     "name": "Ultimate Hosts Blacklist Domains",
     "publishedDate": "2019-03-06T01:28:41",
-    "syntaxId": 8,
+    "syntaxId": 2,
     "updatedDate": "2019-04-21T16:04:36",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/domains/domains0.list"
   },
@@ -15870,14 +15870,13 @@
     "descriptionSourceUrl": "https://github.com/gvoze32/unblockhostid#unblockhostid",
     "donateUrl": "https://unblockhostid.github.io/",
     "homeUrl": "https://unblockhostid.github.io/",
-    "issuesUrl": "https://github.com/gvoze32/unblockhostid/issues",
+    "issuesUrl": "https://github.com/gvoze32/bebasid/issues",
     "licenseId": 2,
     "name": "UNBLOCKHOSTID",
-    "policyUrl": "https://github.com/gvoze32/unblockhostid/blob/master/RULES.md",
     "publishedDate": "2017-06-23T13:44:09",
     "syntaxId": 14,
     "updatedDate": "2019-04-15T16:54:10",
-    "viewUrl": "https://raw.githubusercontent.com/gvoze32/unblockhostid/master/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/gvoze32/bebasid/master/releases/hosts"
   },
   {
     "id": 1556,
@@ -15901,7 +15900,7 @@
     "licenseId": 4,
     "name": "DataMaster Android AdBlock Hosts",
     "publishedDate": "2017-09-10T03:35:12",
-    "syntaxId": 1,
+    "syntaxId": 35,
     "updatedDate": "2019-04-14T07:58:22",
     "viewUrl": "https://raw.githubusercontent.com/DataMaster-2501/DataMaster-Android-AdBlock-Hosts/master/hosts"
   },
@@ -16287,7 +16286,7 @@
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
-    "name": "Dandelion Sprout's Anti-Malware List (Internet Explorer TPL)",
+    "name": "Dandelion Sprout's Anti-Malware List (TPL)",
     "publishedDate": "2018-01-04T00:00:00",
     "syntaxId": 10,
     "updatedDate": "2019-04-19T00:21:10",
@@ -16479,7 +16478,7 @@
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter-online",
-    "syntaxId": 8,
+    "syntaxId": 2,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
     "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt"
@@ -16939,7 +16938,7 @@
     "issuesUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets/issues",
     "licenseId": 8,
     "name": "migueldemoura's Hosts - Ads & Tracking",
-    "syntaxId": 1,
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/migueldemoura/ublock-umatrix-rulesets/master/Hosts/ads-tracking"
   },
   {
@@ -16948,7 +16947,7 @@
     "issuesUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets/issues",
     "licenseId": 8,
     "name": "migueldemoura's Hosts - Ads & Tracking - Breaking",
-    "syntaxId": 1,
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/migueldemoura/ublock-umatrix-rulesets/master/Hosts/ads-tracking-breaking"
   },
   {
@@ -16957,7 +16956,7 @@
     "issuesUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets/issues",
     "licenseId": 8,
     "name": "migueldemoura's Hosts - Malware",
-    "syntaxId": 1,
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/migueldemoura/ublock-umatrix-rulesets/master/Hosts/malware"
   },
   {
@@ -17681,7 +17680,7 @@
     "issuesUrl": "https://github.com/abc45628/hosts//issues",
     "licenseId": 5,
     "name": "abc45628 Hosts",
-    "syntaxId": 1,
+    "syntaxId": 36,
     "viewUrl": "https://raw.githubusercontent.com/abc45628/hosts/master/hosts"
   },
   {
@@ -17897,7 +17896,7 @@
     "licenseId": 35,
     "name": "1Hosts Pro",
     "syntaxId": 2,
-    "viewUrl": "https://1hos.cf/Pro/hosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/hosts.txt"
   },
   {
     "id": 1735,
@@ -17908,7 +17907,7 @@
     "licenseId": 35,
     "name": "1Hosts Pro (Domains)",
     "syntaxId": 2,
-    "viewUrl": "https://1hos.cf/Pro/domains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/domains.txt"
   },
   {
     "id": 1736,
@@ -19620,7 +19619,7 @@
     "description": "Malware, advert and tracking blacklist",
     "homeUrl": "https://github.com/mkb2091/blockconvert",
     "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/ip_blocklist.txt",
-    "syntaxId": 8,
+    "syntaxId": 9,
     "licenseId": 4
 },
 {
@@ -20390,7 +20389,7 @@
     "licenseId": 35,
     "name": "1Hosts Complete (Adblock Plus)",
     "syntaxId": 28,
-    "viewUrl": "https://1hos.cf/complete/adblock.txt"
+    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/complete/adblock.txt"
   },
   {
     "id": 1954,
@@ -20401,7 +20400,7 @@
     "licenseId": 35,
     "name": "1Hosts Mini (Adblock Plus)",
     "syntaxId": 28,
-    "viewUrl": "https://1hos.cf/Pro/adblock.txt"
+    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/adblock.txt"
   },
   {
     "id": 1955,
@@ -20412,7 +20411,7 @@
     "licenseId": 35,
     "name": "1Hosts Pro (Adblock Plus)",
     "syntaxId": 28,
-    "viewUrl": "https://1hos.cf/mini/adblock.txt"
+    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/adblock.txt"
   },
   {
     "id": 1956,
