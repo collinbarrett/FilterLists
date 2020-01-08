@@ -64,11 +64,23 @@
     "syntaxId": 2
   },
   {
+    "softwareId": 2,
+    "syntaxId": 2
+  },
+  {
+    "softwareId": 3,
+    "syntaxId": 2
+  },
+  {
     "softwareId": 4,
     "syntaxId": 2
   },
   {
     "softwareId": 5,
+    "syntaxId": 2
+  },
+  {
+    "softwareId": 6,
     "syntaxId": 2
   },
   {
@@ -300,7 +312,19 @@
     "syntaxId": 16
   },
   {
+    "softwareId": 2,
+    "syntaxId": 16
+  },
+  {
+    "softwareId": 3,
+    "syntaxId": 16
+  },
+  {
     "softwareId": 5,
+    "syntaxId": 16
+  },
+  {
+    "softwareId": 6,
     "syntaxId": 16
   },
   {
