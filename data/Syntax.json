@@ -2,7 +2,7 @@
   {
     "id": 1,
     "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
-    "name": "Hosts (localhost)"
+    "name": "Hosts (localhost IPv4)"
   },
   {
     "id": 2,
@@ -58,7 +58,7 @@
   {
     "id": 14,
     "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
-    "name": "Non-localhost hosts"
+    "name": "Non-localhost hosts (IPv4)"
   },
   {
     "id": 15,
@@ -144,5 +144,20 @@
   {
     "id": 34,
     "name": "IPs (CIDR only)"
+  },
+  {
+    "id": 35,
+    "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
+    "name": "Hosts (localhost IPv4 + IPv6)"
+  },
+  {
+    "id": 36,
+    "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
+    "name": "Hosts (localhost IPv6)"
+  },
+  {
+    "id": 37,
+    "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
+    "name": "Non-localhost hosts (IPv6)"
   }
 ]
