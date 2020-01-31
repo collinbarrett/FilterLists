@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/jest": "^25.1.1",
-    "@types/node": "^13.5.3",
+    "@types/node": "^13.7.0",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
     "@types/react-router-dom": "^5.1.3",
