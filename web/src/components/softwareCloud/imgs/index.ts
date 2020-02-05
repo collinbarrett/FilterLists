@@ -36,6 +36,7 @@ import img36 from "./36-ShadowsocksR.png";
 import img37 from "./37-Shadowrocket.png";
 import img38 from "./38-DNSRedirector.png";
 import img39 from "./39-pfBlockerNG.png";
+import img40 from "./40-Opera.png";
 
 export {
   img01,
@@ -75,5 +76,6 @@ export {
   img36,
   img37,
   img38,
-  img39
+  img39,
+  img40
 };
