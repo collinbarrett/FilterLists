@@ -251,5 +251,12 @@
     "homeUrl": "https://www.reddit.com/r/pfBlockerNG/",
     "isAbpSubscribable": false,
     "name": "pfBlockerNG"
+  },
+  {
+    "id": 40,
+    "downloadUrl": "https://www.opera.com/",
+    "homeUrl": "https://www.opera.com/",
+    "isAbpSubscribable": true,
+    "name": "Opera's built-in adblocker"
   }
 ]
