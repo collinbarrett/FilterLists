@@ -5679,7 +5679,7 @@
     "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 4,
     "name": "ABP Anti-Circumvention Filter List",
-    "syntaxId": 3,
+    "syntaxId": 38,
     "updatedDate": "2019-04-13T03:12:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
   },
@@ -5693,7 +5693,7 @@
     "licenseId": 4,
     "name": "ABP Anti-Circumvention Filter List - Chinese Only",
     "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
+    "syntaxId": 38,
     "updatedDate": "2019-02-21T09:32:36",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/chinese.txt"
   },
@@ -5707,7 +5707,7 @@
     "licenseId": 4,
     "name": "ABP Anti-Circumvention Filter List - Czech Only",
     "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
+    "syntaxId": 38,
     "updatedDate": "2019-03-25T21:10:14",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/czech.txt"
   },
@@ -5721,7 +5721,7 @@
     "licenseId": 4,
     "name": "ABP Anti-Circumvention Filter List - English Only",
     "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
+    "syntaxId": 38,
     "updatedDate": "2019-04-12T17:30:59",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/english.txt"
   },
@@ -5735,7 +5735,7 @@
     "licenseId": 4,
     "name": "ABP Anti-Circumvention Filter List - French Only",
     "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
+    "syntaxId": 38,
     "updatedDate": "2019-03-19T07:42:20",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/french.txt"
   },
@@ -5749,7 +5749,7 @@
     "licenseId": 4,
     "name": "ABP Anti-Circumvention Filter List - German Only",
     "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
+    "syntaxId": 38,
     "updatedDate": "2019-04-12T17:24:27",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/german.txt"
   },
@@ -5763,7 +5763,7 @@
     "licenseId": 4,
     "name": "ABP Anti-Circumvention Filter List - Portuguese Only",
     "publishedDate": "2018-08-02T13:07:41",
-    "syntaxId": 3,
+    "syntaxId": 38,
     "updatedDate": "2019-03-25T11:53:01",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/portuguese.txt"
   },
@@ -5777,7 +5777,7 @@
     "licenseId": 4,
     "name": "ABP Anti-Circumvention Filter List - Russian Only",
     "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
+    "syntaxId": 38,
     "updatedDate": "2019-04-12T13:42:21",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/russian.txt"
   },
@@ -5791,7 +5791,7 @@
     "licenseId": 4,
     "name": "ABP Anti-Circumvention Filter List - Spanish Only",
     "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
+    "syntaxId": 38,
     "updatedDate": "2019-03-27T10:11:17",
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/spanish.txt"
   },
@@ -6245,182 +6245,6 @@
     "name": "Samsung SmartTV Domains",
     "syntaxId": 2,
     "viewUrl": "https://v.firebog.net/hosts/static/SamsungSmart.txt"
-  },
-  {
-    "id": 635,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "DOTA Gambling Sites",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Gambling/DOTA%20Gambling%20Sites"
-  },
-  {
-    "id": 636,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "ESports Gambling Sites",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Gambling/ESports%20Gambling%20Sites"
-  },
-  {
-    "id": 637,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "H1Z1 Gambling Sites",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Gambling/H1Z1%20Gambling%20Sites"
-  },
-  {
-    "id": 638,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "LOL Gambling Sites",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Gambling/LOL%20Gambling%20Sites"
-  },
-  {
-    "id": 639,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "DOTA Scam Sites",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/DOTA"
-  },
-  {
-    "id": 640,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Fortnite Scam Sites",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Fortnite%20Scam%20Sites"
-  },
-  {
-    "id": 641,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Last Day on Earth Scam Sites",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Last%20Day%20on%20Earth"
-  },
-  {
-    "id": 642,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "PUBG Scam Sites",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/PUBG"
-  },
-  {
-    "id": 643,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Riot Scam Sites",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Riot%20Scam%20Sites"
-  },
-  {
-    "id": 644,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Roblox Scam Sites",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Roblox%20Scam%20Sites"
-  },
-  {
-    "id": 645,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Steam Scam Sites",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/scam/Steam%20Scam%20Sites"
-  },
-  {
-    "id": 647,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Discord Resources - Account Resellers",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Account%20Resellers"
-  },
-  {
-    "id": 648,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Discord Resources - Booters",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Booters"
-  },
-  {
-    "id": 649,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Discord Resources - Hack Distributors",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Hack%20Distributors"
-  },
-  {
-    "id": 650,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Discord Resources - Harmful",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Harmful"
-  },
-  {
-    "id": 651,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Discord Resources - IP Grabbers",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/IP%20Grabbers"
-  },
-  {
-    "id": 652,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Discord Resources - Malware",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Malware"
-  },
-  {
-    "id": 653,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Discord Resources - Phishing",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Phishing"
-  },
-  {
-    "id": 654,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Discord Resources - Screamers",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Malicious/Screamers"
-  },
-  {
-    "id": 655,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Discord Resources - Invites",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Miscellanious/Invites"
-  },
-  {
-    "id": 656,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Discord Resources - Link Shortners",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Miscellanious/Link%20Shortners"
-  },
-  {
-    "id": 657,
-    "homeUrl": "https://github.com/AegisTeam/Discord-Resources",
-    "licenseId": 5,
-    "name": "Discord Resources - NSFW",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/AegisTeam/Discord-Resources/master/Domain%20Filters/Miscellanious/NSFW"
   },
   {
     "id": 658,
@@ -12490,19 +12314,6 @@
     "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/nomsdata.txt"
   },
   {
-    "id": 1236,
-    "description": "To block ads on YouTube (Not very effective)",
-    "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
-    "homeUrl": "https://github.com/Akamaru/Pi-Hole-Lists",
-    "issuesUrl": "https://github.com/Akamaru/Pi-Hole-Lists/issues",
-    "licenseId": 5,
-    "name": "Pi-Hole-Lists - YouTube",
-    "publishedDate": "2017-07-31T18:43:55",
-    "syntaxId": 2,
-    "updatedDate": "2017-07-31T18:43:55",
-    "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/youtube.txt"
-  },
-  {
     "id": 1237,
     "description": "Block fake jailbreak websites (Domains of The iPhone Wiki)",
     "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
@@ -15831,23 +15642,6 @@
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/RedditTrashRemovalService.txt"
   },
   {
-    "id": 1553,
-    "description": "If you're like me and are pretty sensitive to things that make you lose your appetite and will to live, this list aims to preserve your appetite a bit longer than it'd otherwise have lasted on the internet.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiVomitList.txt",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 35,
-    "name": "Anti-'Vomit-inducing things' List",
-    "publishedDate": "2019-04-01T00:00:00",
-    "syntaxId": 3,
-    "updatedDate": "2019-04-01T13:41:53",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiVomitList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiVomitList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiVomitList.txt"
-  },
-  {
     "id": 1554,
     "description": "So you're sitting there reading a newssite, and then you find big banners that try to tell you the exact points in time you're supposed to pray? If you want to feel less stressed and less like a slave of the clock, then this list is for you.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPrayerTimesList.txt",
@@ -16189,7 +15983,7 @@
     "licenseId": 35,
     "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (for AdBlock and Adblock Plus)",
     "publishedDate": "2019-05-17T00:00:00",
-    "syntaxId": 3,
+    "syntaxId": 38,
     "updatedDate": "2019-05-17T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP.txt",
@@ -18927,7 +18721,7 @@
     "licenseId": 4,
     "name": "ABP Anti-Circumvention Filter List - Arabic Only",
     "publishedDate": "2018-05-15T09:50:43",
-    "syntaxId": 3,
+    "syntaxId": 38,
     "viewUrl": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/arabic.txt"
   },
   {
@@ -19128,24 +18922,6 @@
     "viewUrl": "https://www.github.developerdan.com/hosts/lists/facebook-extended.txt"
   },
   {
-    "id": 1820,
-    "homeUrl": "https://github.com/stilyanmihalev/BulgarianHostFile",
-    "issuesUrl": "https://github.com/stilyanmihalev/BulgarianHostFile/issues",
-    "licenseId": 2,
-    "name": "Bulgarian Host File (Adblock Plus)",
-    "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/stilyanmihalev/BulgarianHostFile/master/file.txt"
-  },
-  {
-    "id": 1821,
-    "homeUrl": "https://github.com/stilyanmihalev/BulgarianHostFile",
-    "issuesUrl": "https://github.com/stilyanmihalev/BulgarianHostFile/issues",
-    "licenseId": 2,
-    "name": "Bulgarian Host File (Hosts)",
-    "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/stilyanmihalev/BulgarianHostFile/master/hosts.txt"
-  },
-  {
     "id": 1822,
     "description": "The following list is individual IP Addresses that have attempted to attack our servers. These IP addresses are currently recommended as a DENY, REJECT or BLOCK on your firewalls.",
     "donateUrl": "https://www.cruzit.com/hth.php",
@@ -19282,21 +19058,10 @@
     "descriptionSourceUrl": "https://github.com/Cybo1927/Hosts",
     "homeUrl": "https://github.com/Cybo1927/Hosts",
     "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
-    "licenseId": 4,
+    "licenseId": 411,
     "name": "Cybo's Hosts",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Hosts"
-  },
-  {
-    "id": 1837,
-    "description": "A blocklist of ads, trackers, malware, and IP grabbers",
-    "descriptionSourceUrl": "https://github.com/Cybo1927/Hosts",
-    "homeUrl": "https://github.com/Cybo1927/Hosts",
-    "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
-    "licenseId": 4,
-    "name": "Cybo's Anti Maps",
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti%20Maps"
   },
   {
     "id": 1838,
@@ -19304,7 +19069,7 @@
     "descriptionSourceUrl": "https://github.com/Cybo1927/Hosts",
     "homeUrl": "https://github.com/Cybo1927/Hosts",
     "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
-    "licenseId": 4,
+    "licenseId": 11,
     "name": "Cybo's Anti Social",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti%20Social"
@@ -19315,7 +19080,7 @@
     "descriptionSourceUrl": "https://github.com/Cybo1927/Hosts",
     "homeUrl": "https://github.com/Cybo1927/Hosts",
     "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
-    "licenseId": 4,
+    "licenseId": 11,
     "name": "Cybo's Anti Verizon",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti%20Verizon"
@@ -19432,18 +19197,9 @@
     "id": 1850,
     "name": "QuarkList",
     "description": "This site specializes in custom filtering rules to supplement official rules and enhance the effectiveness of web ad blocking.",
-    "homeUrl": "https://n2o.io/p/adblock/",
-    "viewUrl": "https://n2o.io/p/adblock/dist/quarklist.txt",
+    "homeUrl": "https://n2o.io/p/quarklist/",
+    "viewUrl": "https://n2o.io/p/quarklist/dist/quarklist.txt",
     "syntaxId": 3,
-    "licenseId": 2
-},
-{
-    "id": 1851,
-    "name": "QuarkHosts",
-    "description": "The hosts file can be used for software ad blocking outside the browser, with fewer rules and a good blocking effect.",
-    "homeUrl": "https://n2o.io/p/adblock/",
-    "viewUrl": "https://n2o.io/p/adblock/dist/hosts",
-    "syntaxId": 1,
     "licenseId": 2
 },
 {
@@ -20400,7 +20156,7 @@
     "licenseId": 35,
     "name": "1Hosts Mini (Adblock Plus)",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/adblock.txt"
+    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/adblock.txt"
   },
   {
     "id": 1955,
@@ -20411,7 +20167,7 @@
     "licenseId": 35,
     "name": "1Hosts Pro (Adblock Plus)",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/adblock.txt"
+    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/adblock.txt"
   },
   {
     "id": 1956,
@@ -20794,5 +20550,196 @@
     "viewUrl": "https://dns-family.adguard.com/dns-query",
     "viewUrlMirror1": "tls://dns-family.adguard.com",
     "viewUrlMirror2": "176.103.130.132"
+  },
+  {
+    "id": 1987,
+    "description": "Twitch is a platform to stream videogames, everyday life, and advertisements disguised as gaming expos. But at least from a traditional standpoint, many Twitch userbase in-jokes have taken forms that would've been considered racist in many other settings, including emotes that are used to accuse black people of being terrorists, women of being whiny, or businessmen game characters of being Jewish. If you wish for a more squeaky-clean experience that simply considers humans to be humans, here's a list for you.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Say No to Racism on Twitch",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/SayNoToRacismOnTwitch.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/SayNoToRacismOnTwitch.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/SayNoToRacismOnTwitch.txt"
+  },
+  {
+    "id": 1988,
+    "description": "This list aims to restore MeWe to its late 2017 state, before public post sharing and the «Pages» function eroded its carefree walled gardens.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "MeWe Happy Time Fun Club",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MeWeHappyTimeFunClub.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/MeWeHappyTimeFunClub.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/MeWeHappyTimeFunClub.txt"
+  },
+  {
+    "id": 1989,
+    "description": "Are you desperate to get some quality time with your brother or dad, who is so much into Pokémon GO that they play it to this day while hacking around from the couch? Here's how to get that quality time back… unless they just switch to 4G instead, in which case you're screwed. May also work against 'Harry Potter: Wizards Unite' and 'Ingress Prime'",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Pokémon No-GO Zone",
+    "syntaxId": 28,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Pok%C3%A9monNoGOZone.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Pok%C3%A9monNoGOZone.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/Pok%C3%A9monNoGOZone.txt"
+  },
+  {
+    "id": 1990,
+    "description": "Are you tired of having to scroll so much on websites, or you want to keep your eyes on more text and content at once? If so, this list will help you a little extra bit with that.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Empty Padding Remover",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EmptyPaddingRemover.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/EmptyPaddingRemover.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/EmptyPaddingRemover.txt"
+  },
+  {
+    "id": 1991,
+    "description": "The font situation on many Japanese websites is kind-of absolutely atrocious. They use super-stiff janky fonts resemblant of Windows 95 or Amiga. And even worse, many of the sites also default to the stiff Japanese fonts' atrocious Latin letter types. Here's how to use the sites in a way that is compatible with the 3rd decade of the 21st century.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Japanese Text Softener",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/JapaneseTextSoftener.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/JapaneseTextSoftener.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/JapaneseTextSoftener.txt"
+  },
+  {
+    "id": 1992,
+    "licenseId": 2,
+    "name": "Prigent Sects",
+    "syntaxId": 2,
+    "viewUrl": "https://dsi.ut-capitole.fr/blacklists/download/sect.tar.gz"
+  },
+  {
+    "id": 1993,
+    "licenseId": 2,
+    "name": "Prigent Astrology",
+    "syntaxId": 2,
+    "viewUrl": "https://dsi.ut-capitole.fr/blacklists/download/astrology.tar.gz"
+  },
+  {
+    "id": 1994,
+    "licenseId": 2,
+    "name": "Prigent Shorteners",
+    "syntaxId": 2,
+    "viewUrl": "https://dsi.ut-capitole.fr/blacklists/download/shortener.tar.gz"
+  },
+  {
+    "id": 1995,
+    "licenseId": 2,
+    "name": "Prigent Gambling",
+    "syntaxId": 2,
+    "viewUrl": "https://block.energized.pro/assets/mirror/ut1-gambling.txt"
+  },
+  {
+    "id": 1996,
+    "description": "This is used to block all .g00. and .g01. crap that domains like msn.com and sportingnews.com use to obfuscate loaded/loading resources",
+    "homeUrl": "https://github.com/Cybo1927/Hosts",
+    "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
+    "licenseId": 11,
+    "name": "Cybo's Anti-g00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti%20g00"
+  },
+  {
+    "id": 1997,
+    "homeUrl": "https://github.com/Cybo1927/Hosts",
+    "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
+    "licenseId": 11,
+    "name": "Cybo's Anti Third Party HTTP",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti%20Third-Party%20HTTP"
+  },
+  {
+    "id": 1998,
+    "description": "Block maps, location analytics, and GPS services",
+    "homeUrl": "https://github.com/Cybo1927/Hosts",
+    "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
+    "licenseId": 11,
+    "name": "Cybo's Anti Location Tracking",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti%20Location%20Tracking"
+  },
+  {
+    "id": 1999,
+    "description": "This is used to block all .g00. and .g01. crap that domains like msn.com and sportingnews.com use to obfuscate loaded/loading resources",
+    "homeUrl": "https://github.com/Cybo1927/Hosts",
+    "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
+    "licenseId": 11,
+    "name": "Cybo's Blackout",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Dark%20Mode/Blackout"
+  },
+  {
+    "id": 2000,
+    "description": "Use this file to prevent your computer from connecting to selected internet hosts. This is an easy and effective way to protect you from many types of spyware, reduces bandwidth use, blocks certain pop-up traps, prevents user tracking by way of \"web bugs\" embedded in spam, provides partial protection to IE from certain web-based exploits and blocks most advertising you would otherwise be subjected to on the internet.",
+    "descriptionSourceUrl": "https://someonewhocares.org/hosts/",
+    "emailAddress": "hosts@someonewhocares.org",
+    "homeUrl": "https://someonewhocares.org/hosts/",
+    "licenseId": 32,
+    "name": "Dan Pollock's Hosts (IPv4 + IPv6)",
+    "syntaxId": 33,
+    "viewUrl": "https://someonewhocares.org/hosts/ipv6/hosts",
+  },
+  {
+    "id": 2001,
+    "description": "A merged hosts file from a variety of other lists.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "licenseId": 35,
+    "name": "1Hosts Complete (dnsmasq)",
+    "syntaxId": 20,
+    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/complete/dnsmasq.conf"
+  },
+  {
+    "id": 2002,
+    "description": "A merged hosts file from a variety of other lists.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "licenseId": 35,
+    "name": "1Hosts Mini (dnsmasq)",
+    "syntaxId": 20,
+    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/dnsmasq.conf"
+  },
+  {
+    "id": 2003,
+    "description": "A merged hosts file from a variety of other lists.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "licenseId": 35,
+    "name": "1Hosts Pro (dnsmasq)",
+    "syntaxId": 20,
+    "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/dnsmasq.conf"
+  },
+  {
+    "id": 2004,
+    "description": "This is believed to be the world's oldest adblock list to still be hosted at its original domain, having last been updated in August 2003 and has rejected submissions ever since.",
+    "homeUrl": "http://www.accs-net.com/hosts/get_hosts.html",
+    "licenseId": 35,
+    "name": "Gorilla Studio Hosts Project",
+    "syntaxId": 1,
+    "updatedDate": "2003-08-31T00:00:00",
+    "viewUrl": "http://www.accs-net.com/hosts/Downloads/hosts127001.zip"
   }
 ]
