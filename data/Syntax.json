@@ -118,6 +118,7 @@
   },
   {
     "id": 28,
+    "definitionUrl": "https://help.eyeo.com/en/adblockplus/how-to-write-filters#basic",
     "name": "Adblocker-syntax domains"
   },
   {
@@ -159,5 +160,9 @@
     "id": 37,
     "definitionUrl": "https://en.wikipedia.org/wiki/Hosts_(file)",
     "name": "Non-localhost hosts (IPv6)"
+  },
+  {
+    "id": 38,
+    "name": "Adblock Plus Advanced"
   }
 ]
