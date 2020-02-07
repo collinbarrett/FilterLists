@@ -20741,5 +20741,204 @@
     "syntaxId": 1,
     "updatedDate": "2003-08-31T00:00:00",
     "viewUrl": "http://www.accs-net.com/hosts/Downloads/hosts127001.zip"
+  },
+  {
+    "id": 2005,
+    "licenseId": 2,
+    "name": "Prigent Cryptojacking",
+    "syntaxId": 2,
+    "viewUrl": "https://block.energized.pro/assets/mirror/ut1-cryptojacking.txt"
+  },
+  {
+    "id": 2006,
+    "licenseId": 2,
+    "name": "Prigent Adult",
+    "syntaxId": 2,
+    "viewUrl": "https://block.energized.pro/assets/mirror/ut1-adult.txt"
+  },
+  {
+    "id": 2007,
+    "licenseId": 2,
+    "name": "Prigent Social Networks",
+    "syntaxId": 2,
+    "viewUrl": "https://block.energized.pro/assets/mirror/ut1-social-networks.txt"
+  },
+  {
+    "id": 2008,
+    "homeUrl": "https://blocklist.site/",
+    "licenseId": 5,
+    "name": "Block List Project: Ads",
+    "syntaxId": 2,
+    "viewUrl": "https://blocklist.site/app/dl/ads"
+  },
+  {
+    "id": 2009,
+    "homeUrl": "https://blocklist.site/",
+    "licenseId": 5,
+    "name": "Block List Project: Crypto",
+    "syntaxId": 2,
+    "viewUrl": "https://blocklist.site/app/dl/crypto"
+  },
+  {
+    "id": 2010,
+    "homeUrl": "https://blocklist.site/",
+    "licenseId": 5,
+    "name": "Block List Project: Ransomware",
+    "syntaxId": 2,
+    "viewUrl": "https://blocklist.site/app/dl/ransomware"
+  },
+  {
+    "id": 2011,
+    "homeUrl": "https://blocklist.site/piracy",
+    "licenseId": 5,
+    "name": "Block List Project: Piracy",
+    "syntaxId": 2,
+    "viewUrl": "https://blocklist.site/app/dl/piracy"
+  },
+  {
+    "id": 2012,
+    "homeUrl": "https://blocklist.site/",
+    "licenseId": 5,
+    "name": "Block List Project: Tracking",
+    "syntaxId": 2,
+    "viewUrl": "https://blocklist.site/app/dl/tracking"
+  },
+  {
+    "id": 2013,
+    "homeUrl": "https://blocklist.site/",
+    "licenseId": 5,
+    "name": "Block List Project: Scams",
+    "syntaxId": 2,
+    "viewUrl": "https://blocklist.site/app/dl/scam"
+  },
+  {
+    "id": 2014,
+    "homeUrl": "https://blocklist.site/",
+    "licenseId": 5,
+    "name": "Block List Project: Gambling",
+    "syntaxId": 2,
+    "viewUrl": "https://blocklist.site/app/dl/gambling"
+  },
+  {
+    "id": 2015,
+    "homeUrl": "https://blocklist.site/",
+    "licenseId": 5,
+    "name": "Block List Project: Phishing",
+    "syntaxId": 2,
+    "viewUrl": "https://blocklist.site/app/dl/phishing"
+  },
+  {
+    "id": 2016,
+    "homeUrl": "https://blocklist.site/",
+    "licenseId": 5,
+    "name": "Block List Project: Spam",
+    "syntaxId": 2,
+    "viewUrl": "https://blocklist.site/app/dl/spam"
+  },
+  {
+    "id": 2017,
+    "homeUrl": "https://blocklist.site/",
+    "licenseId": 5,
+    "name": "Block List Project: Porn",
+    "syntaxId": 2,
+    "viewUrl": "https://blocklist.site/app/dl/porn"
+  },
+  {
+    "id": 2018,
+    "homeUrl": "https://blocklist.site/",
+    "licenseId": 5,
+    "name": "Block List Project: Redirect",
+    "syntaxId": 2,
+    "viewUrl": "https://blocklist.site/app/dl/redirect"
+  },
+  {
+    "id": 2019,
+    "donateUrl": "https://adblockplus.org/en/donate",
+    "emailAddress": "subscriptionlist@adblockplus.org",
+    "homeUrl": "https://facebook.adblockplus.me/",
+    "licenseId": 5,
+    "name": "Facebook Annoyances Blocker",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt"
+  },
+  {
+    "id": 2020,
+    "donateUrl": "https://adblockplus.org/en/donate",
+    "emailAddress": "subscriptionlist@adblockplus.org",
+    "homeUrl": "https://facebook.adblockplus.me/",
+    "licenseId": 5,
+    "name": "Facebook Sidebar Blocker",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt"
+  },
+  {
+    "id": 2021,
+    "donateUrl": "https://adblockplus.org/en/donate",
+    "emailAddress": "subscriptionlist@adblockplus.org",
+    "homeUrl": "https://facebook.adblockplus.me/",
+    "licenseId": 5,
+    "name": "Facebook News Feed Annoyances Blocker",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt"
+  },
+  {
+    "id": 2022,
+    "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
+    "descriptionSourceUrl": "http://ipverse.net/",
+    "homeUrl": "http://ipverse.net/",
+    "name": "IPverse IP address block lists - PR-China IPv4",
+    "syntaxId": 34,
+    "viewUrl": "http://ipverse.net/ipblocks/data/countries/cn.zone"
+  },
+  {
+    "id": 2023,
+    "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
+    "descriptionSourceUrl": "http://ipverse.net/",
+    "homeUrl": "http://ipverse.net/",
+    "name": "IPverse IP address block lists - Russia IPv4",
+    "syntaxId": 34,
+    "viewUrl": "http://ipverse.net/ipblocks/data/countries/ru.zone"
+  },
+  {
+    "id": 2024,
+    "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
+    "descriptionSourceUrl": "http://ipverse.net/",
+    "homeUrl": "http://ipverse.net/",
+    "name": "IPverse IP address block lists - Ukraine IPv4",
+    "syntaxId": 34,
+    "viewUrl": "http://ipverse.net/ipblocks/data/countries/uk.zone"
+  },
+  {
+    "id": 2025,
+    "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
+    "descriptionSourceUrl": "http://ipverse.net/",
+    "homeUrl": "http://ipverse.net/",
+    "name": "IPverse IP address block lists - Romania IPv4",
+    "syntaxId": 34,
+    "viewUrl": "http://ipverse.net/ipblocks/data/countries/ro.zone"
+  },
+  {
+    "id": 2026,
+    "homeUrl": "https://hblock.molinero.dev/",
+    "licenseId": 2,
+    "name": "hBlock Hosts Domains",
+    "syntaxId": 2,
+    "viewUrl": "https://hblock.molinero.dev/hosts_domains.txt"
+  },
+  {
+    "id": 2027,
+    "homeUrl": "https://hblock.molinero.dev/",
+    "licenseId": 2,
+    "name": "hBlock Hosts Adblockers",
+    "syntaxId": 28,
+    "viewUrl": "https://hblock.molinero.dev/hosts_adblock.txt"
+  },
+  {
+    "id": 2028,
+    "homeUrl": "https://blocklist.site/",
+    "licenseId": 5,
+    "name": "Block List Project: Malware",
+    "syntaxId": 2,
+    "viewUrl": "https://blocklist.site/app/dl/malware"
   }
 ]
