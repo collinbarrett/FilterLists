@@ -96,7 +96,7 @@
   },
   {
     "id": 12,
-    "description": "Liste FR is an EasyList affiliated filter list that specifically removes adverts on French language websites.",
+    "description": "Liste FR is an EasyList affiliated filter list that specifically removes adverts on French-language websites.",
     "descriptionSourceUrl": "https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html",
     "emailAddress": "listefr.adblock@gmail.com",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=91",
@@ -20940,5 +20940,41 @@
     "name": "Block List Project: Malware",
     "syntaxId": 2,
     "viewUrl": "https://blocklist.site/app/dl/malware"
+  },
+  {
+    "id": 2029,
+    "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
+    "descriptionSourceUrl": "http://ipverse.net/",
+    "homeUrl": "http://ipverse.net/",
+    "name": "IPverse IP address block lists - PR-China IPv6",
+    "syntaxId": 41,
+    "viewUrl": "http://ipverse.net/ipblocks/data/countries/cn-ipv6.zone"
+  },
+  {
+    "id": 2030,
+    "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
+    "descriptionSourceUrl": "http://ipverse.net/",
+    "homeUrl": "http://ipverse.net/",
+    "name": "IPverse IP address block lists - Russia IPv6",
+    "syntaxId": 41,
+    "viewUrl": "http://ipverse.net/ipblocks/data/countries/ru-ipv6.zone"
+  },
+  {
+    "id": 2031,
+    "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
+    "descriptionSourceUrl": "http://ipverse.net/",
+    "homeUrl": "http://ipverse.net/",
+    "name": "IPverse IP address block lists - Ukraine IPv6",
+    "syntaxId": 41,
+    "viewUrl": "http://ipverse.net/ipblocks/data/countries/ua-ipv6.zone"
+  },
+  {
+    "id": 2032,
+    "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
+    "descriptionSourceUrl": "http://ipverse.net/",
+    "homeUrl": "http://ipverse.net/",
+    "name": "IPverse IP address block lists - Romania IPv6",
+    "syntaxId": 41,
+    "viewUrl": "http://ipverse.net/ipblocks/data/countries/ro-ipv6.zone"
   }
 ]
