@@ -1225,7 +1225,7 @@
   },
   {
     "filterListId": 902,
-    "languageId": 112
+    "languageId": 122
   },
   {
     "filterListId": 905,
@@ -1525,7 +1525,7 @@
   },
   {
     "filterListId": 991,
-    "languageId": 112
+    "languageId": 122
   },
   {
     "filterListId": 994,
@@ -1533,7 +1533,7 @@
   },
   {
     "filterListId": 995,
-    "languageId": 112
+    "languageId": 122
   },
   {
     "filterListId": 996,
@@ -1785,7 +1785,7 @@
   },
   {
     "filterListId": 1083,
-    "languageId": 112
+    "languageId": 122
   },
   {
     "filterListId": 1084,
@@ -2546,5 +2546,25 @@
   {
     "filterListId": 1568,
     "languageId": 110
+  },
+  {
+    "filterListId": 11,
+    "languageId": 122
+  },
+  {
+    "filterListId": 12,
+    "languageId": 122
+  },
+  {
+    "filterListId": 795,
+    "languageId": 122
+  },
+  {
+    "filterListId": 798,
+    "languageId": 122
+  },
+  {
+    "filterListId": 1148,
+    "languageId": 122
   }
 ]
