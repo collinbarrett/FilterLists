@@ -9970,5 +9970,21 @@
   {
     "filterListId": 2028,
     "tagId": 6
+  },
+  {
+    "filterListId": 2029,
+    "tagId": 20
+  },
+  {
+    "filterListId": 2030,
+    "tagId": 20
+  },
+  {
+    "filterListId": 2031,
+    "tagId": 20
+  },
+  {
+    "filterListId": 2032,
+    "tagId": 20
   }
 ]
