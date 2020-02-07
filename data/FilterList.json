@@ -20976,5 +20976,11 @@
     "name": "IPverse IP address block lists - Romania IPv6",
     "syntaxId": 41,
     "viewUrl": "http://ipverse.net/ipblocks/data/countries/ro-ipv6.zone"
+  },
+  {
+    "id": 2033,
+    "name": "Blockzilla (Hosts)",
+    "syntaxId": 1,
+    "viewUrl": "https://block.energized.pro/assets/sources/filter/blockzilla.txt"
   }
 ]
