@@ -34,7 +34,7 @@
   },
   {
     "id": 9,
-    "name": "IPs (IPv4)"
+    "name": "IPs (IPv4; no CIDR)"
   },
   {
     "id": 10,
@@ -136,15 +136,15 @@
   },
   {
     "id": 32,
-    "name": "IPs (IPv4 + CIDR)"
+    "name": "IPs (IPv4; some CIDR)"
   },
   {
     "id": 33,
-    "name": "IPs (IPv4 + IPv6)"
+    "name": "IPs (IPv4 + IPv6; no CIDR)"
   },
   {
     "id": 34,
-    "name": "IPs (CIDR only)"
+    "name": "IPs (IPv4; CIDR only)"
   },
   {
     "id": 35,
@@ -164,5 +164,25 @@
   {
     "id": 38,
     "name": "Adblock Plus Advanced"
+  },
+  {
+    "id": 39,
+    "name": "IPs (IPv6 only; no CIDR)"
+  },
+  {
+    "id": 40,
+    "name": "IPs (IPv6 only; some CIDR)"
+  },
+  {
+    "id": 41,
+    "name": "IPs (IPv6 only; CIDR only)"
+  },
+  {
+    "id": 42,
+    "name": "IPs (IPv4 + IPv6; some CIDR)"
+  },
+  {
+    "id": 43,
+    "name": "IPs (IPv4 + IPv6; CIDR only)"
   }
 ]
