@@ -99,6 +99,6 @@ const icons: { [id: number]: Icon } = {
   36: { image: img36, imageTitle: "ShadowsocksR" },
   37: { image: img37, imageTitle: "Shadowrocket" },
   38: { image: img38, imageTitle: "DNSRedirector" },
-  39: { image: img39, imageTitle: "pfBlockerNG" }
+  39: { image: img39, imageTitle: "pfBlockerNG" },
   40: { image: img39, imageTitle: "Opera's built-in adblocker" }
 };
