@@ -11,11 +11,11 @@ FROM node:alpine as build
 # install
 WORKDIR /usr/src/app/
 COPY package*.json ./
-RUN npm install --only=prod
+RUN npm ci --only=production
 
 # build
-COPY . ./
-RUN INLINE_RUNTIME_CHUNK=false npm run build
+COPY . .
+RUN npm run build
 
 # final
 FROM base as final

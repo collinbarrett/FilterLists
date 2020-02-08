@@ -1,3 +1,4 @@
-**/.gitignore
-**/azure-pipelines.yaml
-**/Dockerfile
+Dockerfile
+.dockerignore
+.gitignore
+azure-pipelines.yaml
