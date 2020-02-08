@@ -49,18 +49,21 @@ steps:
     inputs:
       command: "volume"
       arguments: "create test-data-results"
+    enabled: false
 
   - task: DockerCompose@0
     displayName: "up test-data db"
     inputs:
       dockerComposeFile: "docker-compose.data.tests.yml"
       dockerComposeCommand: "up -d mariadb"
+    enabled: false
 
   - task: DockerCompose@0
     displayName: "run test-data"
     inputs:
       dockerComposeFile: "docker-compose.data.tests.yml"
       dockerComposeCommand: "run api"
+    enabled: false
 
   - task: Docker@2
     displayName: "create volume test-services-results"
@@ -80,6 +83,7 @@ steps:
       command: "container"
       arguments: "create --name test-data-results -v test-data-results:/results hello-world"
     condition: "succeededOrFailed()"
+    enabled: false
 
   - task: Docker@2
     displayName: "copy out test-data results"
@@ -87,6 +91,7 @@ steps:
       command: "cp"
       arguments: "test-data-results:/results $(System.DefaultWorkingDirectory)"
     condition: "succeededOrFailed()"
+    enabled: false
 
   - task: Docker@2
     displayName: "create container test-services-results"
