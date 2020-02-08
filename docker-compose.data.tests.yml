@@ -15,7 +15,8 @@ services:
       - mariadb
 
   mariadb:
-    image: mariadb:latest
+    # on update, also update ServerVersion in FilterLists.Services.DependencyInjection.Extensions.ConfigureServicesCollection
+    image: mariadb:10.4.12
     networks:
       - test-data
     environment:
