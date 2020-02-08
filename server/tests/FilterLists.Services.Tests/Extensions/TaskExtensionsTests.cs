@@ -11,7 +11,7 @@ namespace FilterLists.Services.Tests.Extensions
         private readonly Task sut = Task.Run(() => { Thread.Sleep(TimeSpan.FromSeconds(1)); });
 
         [Fact]
-        public async void TimeoutAfter_TimeToCompleteIsGreaterThanTimeout_ThrowsTimeoutException()
+        public async Task TimeoutAfter_TimeToCompleteIsGreaterThanTimeout_ThrowsTimeoutException()
         {
             var oneTickTimeout = new TimeSpan(1);
             var taskWithTimeout = sut.TimeoutAfter(oneTickTimeout);
@@ -19,7 +19,7 @@ namespace FilterLists.Services.Tests.Extensions
         }
 
         [Fact]
-        public async void TimeoutAfter_TimeToCompleteIsLessThanTimeout_CompletesSuccessfully()
+        public async Task TimeoutAfter_TimeToCompleteIsLessThanTimeout_CompletesSuccessfully()
         {
             var twoSecondTimeout = new TimeSpan(0, 0, 2);
             await sut.TimeoutAfter(twoSecondTimeout);
