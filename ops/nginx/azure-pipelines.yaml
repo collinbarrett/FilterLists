@@ -3,14 +3,7 @@ trigger:
   branches:
     include: ["master"]
   paths:
-    include:
-      [
-        "azure-pipelines.nginx.yaml",
-        "ops/nginx/*",
-        ".dockerignore",
-        "docker-compose.yml",
-        "docker-compose.prod.yml",
-      ]
+    include: ["ops/nginx/*", "docker-compose.yml", "docker-compose.prod.yml"]
 
 pr: none
 
@@ -29,6 +22,7 @@ steps:
       TargetFolder: "$(Build.ArtifactStagingDirectory)"
       CleanTargetFolder: true
       OverWrite: true
+    condition: "eq(variables['Build.SourceBranch'], 'refs/heads/master')"
 
   - task: PublishBuildArtifacts@1
     displayName: "publish files"
@@ -36,3 +30,4 @@ steps:
       PathtoPublish: "$(Build.ArtifactStagingDirectory)"
       ArtifactName: "drop"
       publishLocation: "Container"
+    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
