@@ -3,24 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{75D9CA5B-4092-4015-8984-7C4D5B09F10B}"
-	ProjectSection(SolutionItems) = preProject
-		data\Dependent.json = data\Dependent.json
-		data\FilterList.json = data\FilterList.json
-		data\FilterListLanguage.json = data\FilterListLanguage.json
-		data\FilterListMaintainer.json = data\FilterListMaintainer.json
-		data\FilterListTag.json = data\FilterListTag.json
-		data\Fork.json = data\Fork.json
-		data\Language.json = data\Language.json
-		data\License.json = data\License.json
-		data\Maintainer.json = data\Maintainer.json
-		data\Merge.json = data\Merge.json
-		data\Software.json = data\Software.json
-		data\SoftwareSyntax.json = data\SoftwareSyntax.json
-		data\Syntax.json = data\Syntax.json
-		data\Tag.json = data\Tag.json
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{00CBD1AF-455E-4DF5-AB24-A5C2C18EEB6F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EA11453B-FB14-4F0E-A19B-B8089498F677}"
@@ -38,8 +20,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Data.Tests", "tests\FilterLists.Data.Tests\FilterLists.Data.Tests.csproj", "{EB65E67D-3C29-4555-8D9B-C90801880F51}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Services.Tests", "tests\FilterLists.Services.Tests\FilterLists.Services.Tests.csproj", "{0F419F45-EC3F-409B-95A2-F6AEE21E4041}"
-EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B94A5BCD-3BE3-4FE4-AE48-ADCF904A22A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,10 +55,6 @@ Global
 		{0F419F45-EC3F-409B-95A2-F6AEE21E4041}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F419F45-EC3F-409B-95A2-F6AEE21E4041}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F419F45-EC3F-409B-95A2-F6AEE21E4041}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B94A5BCD-3BE3-4FE4-AE48-ADCF904A22A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B94A5BCD-3BE3-4FE4-AE48-ADCF904A22A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B94A5BCD-3BE3-4FE4-AE48-ADCF904A22A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B94A5BCD-3BE3-4FE4-AE48-ADCF904A22A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

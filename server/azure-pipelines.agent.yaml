@@ -5,10 +5,10 @@ trigger:
   paths:
     include:
       [
-        "azure-pipelines.agent.yaml",
-        "src/FilterLists.Agent/*",
-        "tests/FilterLists.Agent.Tests/*",
-        ".dockerignore",
+        "server/azure-pipelines.agent.yaml",
+        "server/src/FilterLists.Agent/*",
+        "server/tests/FilterLists.Agent.Tests/*",
+        "server/.dockerignore",
         "docker-compose.yml",
         "docker-compose.prod.yml",
         "docker-compose.agent.tests.yml",
@@ -21,10 +21,10 @@ pr:
   paths:
     include:
       [
-        "azure-pipelines.agent.yaml",
-        "src/FilterLists.Agent/*",
-        "tests/FilterLists.Agent.Tests/*",
-        ".dockerignore",
+        "server/azure-pipelines.agent.yaml",
+        "server/src/FilterLists.Agent/*",
+        "server/tests/FilterLists.Agent.Tests/*",
+        "server/.dockerignore",
         "docker-compose.yml",
         "docker-compose.prod.yml",
         "docker-compose.agent.tests.yml",

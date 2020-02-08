@@ -1,5 +1,5 @@
 # Context: .
-# Command: docker build -f src/FilterLists.Api/Dockerfile .
+# Command: docker build -f server/src/FilterLists.Api/Dockerfile .
 
 # init base
 FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.0-alpine as base
@@ -13,18 +13,18 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.0-alpine AS build
 
 # restore
 WORKDIR /app/src
-COPY src/FilterLists.Data/FilterLists.Data.csproj FilterLists.Data/
-COPY src/FilterLists.Services/FilterLists.Services.csproj FilterLists.Services/
+COPY server/src/FilterLists.Data/FilterLists.Data.csproj FilterLists.Data/
+COPY server/src/FilterLists.Services/FilterLists.Services.csproj FilterLists.Services/
 WORKDIR /app/src/FilterLists.Api
-COPY src/FilterLists.Api/FilterLists.Api.csproj .
+COPY server/src/FilterLists.Api/FilterLists.Api.csproj .
 RUN dotnet restore
 
 # build
 WORKDIR /app/src
-COPY src/FilterLists.Data/. FilterLists.Data/
-COPY src/FilterLists.Services/. FilterLists.Services/
+COPY server/src/FilterLists.Data/. FilterLists.Data/
+COPY server/src/FilterLists.Services/. FilterLists.Services/
 WORKDIR /app/src/FilterLists.Api
-COPY src/FilterLists.Api/. .
+COPY server/src/FilterLists.Api/. .
 RUN dotnet build -c Release -r linux-musl-x64 --no-restore
 
 # init Data.Tests
@@ -33,11 +33,11 @@ ENTRYPOINT ["dotnet", "test", "--logger:trx"]
 
 # restore Data.Tests
 WORKDIR /app/tests/FilterLists.Data.Tests
-COPY tests/FilterLists.Data.Tests/FilterLists.Data.Tests.csproj .
+COPY server/tests/FilterLists.Data.Tests/FilterLists.Data.Tests.csproj .
 RUN dotnet restore
 
 # build Data.Tests
-COPY tests/FilterLists.Data.Tests/. .
+COPY server/tests/FilterLists.Data.Tests/. .
 RUN dotnet build -c Release --no-restore
 COPY data/. data/
 
@@ -47,11 +47,11 @@ ENTRYPOINT ["dotnet", "test", "--logger:trx"]
 
 # restore Services.Tests
 WORKDIR /app/tests/FilterLists.Services.Tests
-COPY tests/FilterLists.Services.Tests/FilterLists.Services.Tests.csproj .
+COPY server/tests/FilterLists.Services.Tests/FilterLists.Services.Tests.csproj .
 RUN dotnet restore
 
 # build Services.Tests
-COPY tests/FilterLists.Services.Tests/. .
+COPY server/tests/FilterLists.Services.Tests/. .
 RUN dotnet build -c Release --no-restore
 
 # publish

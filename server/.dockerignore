@@ -1,38 +1,35 @@
 # From default Visual Studio .NET Core template
+**/.classpath
 **/.dockerignore
 **/.env
 **/.git
 **/.gitignore
+**/.project
+**/.settings
+**/.toolstarget
 **/.vs
 **/.vscode
 **/*.*proj.user
-**/azds.yaml
-**/charts
-**/bin
-**/obj
-**/Dockerfile
-**/Dockerfile.develop
-**/docker-compose.yml
-**/docker-compose.*.yml
 **/*.dbmdl
 **/*.jfm
+**/azds.yaml
+**/bin
+**/charts
+**/docker-compose*
+**/Dockerfile*
+**/node_modules
+**/npm-debug.log
+**/obj
 **/secrets.dev.yaml
 **/values.dev.yaml
-**/.toolstarget
+LICENSE
+README.md
 
 # Other common
 **/.gitattributes
 **/.github
 **/.sln
-**/docker-compose.dcproj
 **/*.DotSettings*
 **/appsettings*.json
-**/node_modules
 **/build
 **/*.md
-LICENSE
-
-# FilterLists custom
-imgs
-ops
-data/TPLSubscriptionAssistant.html

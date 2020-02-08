@@ -5,7 +5,7 @@ services:
     image: collinbarrett2/filterlists.api:test-data
     build:
       context: .
-      dockerfile: src/FilterLists.Api/Dockerfile
+      dockerfile: server/src/FilterLists.Api/Dockerfile
       target: test-data
     networks:
       - test-data

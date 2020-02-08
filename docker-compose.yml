@@ -26,7 +26,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: src/FilterLists.Api/Dockerfile
+      dockerfile: server/src/FilterLists.Api/Dockerfile
       target: final
     networks:
       - reverse-proxy
@@ -59,7 +59,7 @@ services:
     image: collinbarrett2/filterlists.agent:latest
     build:
       context: .
-      dockerfile: src/FilterLists.Agent/Dockerfile
+      dockerfile: server/src/FilterLists.Agent/Dockerfile
       target: final
     volumes:
       - archives:/app/archives

@@ -5,13 +5,13 @@ trigger:
   paths:
     include:
       [
-        "azure-pipelines.api.yaml",
-        "src/FilterLists.Api/*",
-        "src/FilterLists.Services/*",
-        "src/FilterLists.Data/*",
-        "tests/FilterLists.Services.Tests/*",
-        "tests/FilterLists.Data.Tests/*",
-        ".dockerignore",
+        "server/azure-pipelines.api.yaml",
+        "server/src/FilterLists.Api/*",
+        "server/src/FilterLists.Services/*",
+        "server/src/FilterLists.Data/*",
+        "server/tests/FilterLists.Services.Tests/*",
+        "server/tests/FilterLists.Data.Tests/*",
+        "server/.dockerignore",
         "docker-compose.yml",
         "docker-compose.prod.yml",
         "docker-compose.data.tests.yml",
@@ -26,13 +26,13 @@ pr:
   paths:
     include:
       [
-        "azure-pipelines.api.yaml",
-        "src/FilterLists.Api/*",
-        "src/FilterLists.Services/*",
-        "src/FilterLists.Data/*",
-        "tests/FilterLists.Services.Tests/*",
-        "tests/FilterLists.Data.Tests/*",
-        ".dockerignore",
+        "server/azure-pipelines.api.yaml",
+        "server/src/FilterLists.Api/*",
+        "server/src/FilterLists.Services/*",
+        "server/src/FilterLists.Data/*",
+        "server/tests/FilterLists.Services.Tests/*",
+        "server/tests/FilterLists.Data.Tests/*",
+        "server/.dockerignore",
         "docker-compose.yml",
         "docker-compose.prod.yml",
         "docker-compose.data.tests.yml",
