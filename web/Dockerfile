@@ -8,6 +8,9 @@ COPY nginx/conf.d /etc/nginx/conf.d
 # init build
 FROM node:alpine as build
 
+# https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md#node-gyp-alpine
+RUN apk add --no-cache python make g++
+
 # install
 WORKDIR /usr/src/app/
 COPY package*.json ./
