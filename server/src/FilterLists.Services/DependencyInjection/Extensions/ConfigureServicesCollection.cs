@@ -23,8 +23,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
         public static void AddFilterListsApiServices(this IServiceCollection services, IConfiguration config)
         {
             services.AddSingleton(c => config);
-            services.AddEntityFrameworkMySql()
-                .AddDbContextPool<FilterListsDbContext>(o =>
+            services.AddDbContextPool<FilterListsDbContext>(o =>
                     o.UseMySql(config.GetConnectionString("FilterListsConnection"),
                         m => m.MigrationsAssembly("FilterLists.Api")
                               .ServerVersion(new ServerVersion(new Version(10, 4, 12), ServerType.MariaDb))));
