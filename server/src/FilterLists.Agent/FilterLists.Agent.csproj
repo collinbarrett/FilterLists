@@ -7,7 +7,7 @@
     <PublishReadyToRun>true</PublishReadyToRun>
     <PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
     <OutputType>Exe</OutputType>
-    <RuntimeIdentifier>linux-musl-x64</RuntimeIdentifier>
+    <RuntimeIdentifiers>win10-x64;linux-musl-x64</RuntimeIdentifiers>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
