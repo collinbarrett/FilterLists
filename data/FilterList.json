@@ -133,9 +133,9 @@
     "id": 16,
     "description": "Filter that enables removing of ads, trackers, and various scripts from websites with Korean content.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/List-KR/List-KR/master/filter.txt",
+    "homeUrl": "https://list-kr.github.io/",
     "licenseId": 8,
     "name": "List-KR",
-    "homeUrl": "https://list-kr.github.io/",
     "publishedDate": "2016-05-13T13:02:19",
     "syntaxId": 6,
     "updatedDate": "2019-12-19T00:00:00",
@@ -17424,7 +17424,7 @@
   },
   {
     "id": 1707,
-    "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts.",
+    "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts.",
     "homeUrl": "https://github.com/tiuxo/hosts/",
     "issuesUrl": "https://github.com/tiuxo/hosts//issues",
     "licenseId": 24,
@@ -17434,7 +17434,7 @@
   },
   {
     "id": 1708,
-    "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts.",
+    "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts.",
     "homeUrl": "https://github.com/tiuxo/hosts/",
     "issuesUrl": "https://github.com/tiuxo/hosts//issues",
     "licenseId": 24,
@@ -17444,7 +17444,7 @@
   },
   {
     "id": 1709,
-    "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts.",
+    "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts.",
     "homeUrl": "https://github.com/tiuxo/hosts/",
     "issuesUrl": "https://github.com/tiuxo/hosts//issues",
     "licenseId": 24,
@@ -17564,7 +17564,7 @@
   },
   {
     "id": 1722,
-    "description": "Evil domains for our Collective Hosts File Project that are not present in any other lists.",
+    "description": "Evil domains for our Collective Hosts File Project that are not present in any other lists.",
     "homeUrl": "https://github.com/hell-sh/Evil-Domains",
     "issuesUrl": "https://github.com/hell-sh/Evil-Domains/issues",
     "licenseId": 11,
@@ -18778,7 +18778,7 @@
   },
   {
     "id": 1806,
-    "description": "The mission is to report any and all attacks to the respective abuse departments of the infected PCs/servers, to ensure that the responsible provider can inform their customer about the infection and disable the attacker. ",
+    "description": "The mission is to report any and all attacks to the respective abuse departments of the infected PCs/servers, to ensure that the responsible provider can inform their customer about the infection and disable the attacker. ",
     "donateUrl": "https://flattr.com/@blocklist.de",
     "homeUrl": "https://www.blocklist.de/en/index.html",
     "licenseId": 5,
@@ -18838,7 +18838,7 @@
   },
   {
     "id": 1813,
-    "description": "CINS Army is a way for our company to give back to the community by sharing valuable threat intelligence harvested from our CINS system. The CINS Army list is a subset of the CINS Active Threat Intelligence ruleset, and consists of IP addresses that meet one of two basic criteria: 1) The IP's recent Rogue Packet score factor is very poor, or 2) The IP has tripped a designated number of 'trusted' alerts across a given number of our Sentinels deployed around the world.",
+    "description": "CINS Army is a way for our company to give back to the community by sharing valuable threat intelligence harvested from our CINS system. The CINS Army list is a subset of the CINS Active Threat Intelligence ruleset, and consists of IP addresses that meet one of two basic criteria: 1) The IP's recent Rogue Packet score factor is very poor, or 2) The IP has tripped a designated number of 'trusted' alerts across a given number of our Sentinels deployed around the world.",
     "homeUrl": "https://cinsscore.com/",
     "licenseId": 5,
     "name": "CINS Army Bad Guys",
@@ -18923,7 +18923,7 @@
   },
   {
     "id": 1822,
-    "description": "The following list is individual IP Addresses that have attempted to attack our servers. These IP addresses are currently recommended as a DENY, REJECT or BLOCK on your firewalls.",
+    "description": "The following list is individual IP Addresses that have attempted to attack our servers. These IP addresses are currently recommended as a DENY, REJECT or BLOCK on your firewalls.",
     "donateUrl": "https://www.cruzit.com/hth.php",
     "homeUrl": "https://www.cruzit.com/wbl.php",
     "licenseId": 5,
@@ -19135,275 +19135,280 @@
   },
   {
     "id": 1843,
-    "name": "secretsnow-adfilters",
     "description": "ad filter list ublock origin",
     "homeUrl": "https://github.com/secretsnow/secretsnow-adfilters/",
-    "viewUrl": "https://raw.githubusercontent.com/secretsnow/secretsnow-adfilters/master/secretsnow-adfilters.txt",
+    "licenseId": 28,
+    "name": "secretsnow-adfilters",
     "syntaxId": 3,
-    "licenseId": 28
+    "viewUrl": "https://raw.githubusercontent.com/secretsnow/secretsnow-adfilters/master/secretsnow-adfilters.txt"
   },
   {
     "id": 1844,
-    "name": "motd-adblock",
     "description": "A simple program made for blocking ads that appear in the MoTD of any Source game (or any other game that also has Pinion, MOTDgd, Unikrn and VPPGamingNetwork appear elsewhere).",
     "homeUrl": "https://github.com/some-username-here1/motd-adblock/",
-    "viewUrl": "https://raw.githubusercontent.com/some-username-here1/motd-adblock/master/motd-adblock",
+    "licenseId": 4,
+    "name": "motd-adblock",
     "syntaxId": 1,
-    "licenseId": 4
+    "viewUrl": "https://raw.githubusercontent.com/some-username-here1/motd-adblock/master/motd-adblock"
   },
   {
     "id": 1845,
-    "name": "ADP Mobile Filter",
     "homeUrl": "https://github.com/T4Tea/ADPMobileFilter/",
-    "viewUrl": "https://raw.githubusercontent.com/T4Tea/ADPMobileFilter/master/ADPMobileFilter.txt",
-    "syntaxId": 3
+    "licenseId": 5,
+    "name": "ADP Mobile Filter",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/T4Tea/ADPMobileFilter/master/ADPMobileFilter.txt"
   },
   {
     "id": 1846,
-    "name": "Macedonian adBlock Filters",
     "description": "Blocking ads and trackers on various macedonian websites.",
     "homeUrl": "https://github.com/RandomAdversary/Macedonian-adBlock-Filters",
-    "viewUrl": "https://raw.githubusercontent.com/RandomAdversary/Macedonian-adBlock-Filters/master/Filters",
+    "licenseId": 2,
+    "name": "Macedonian adBlock Filters",
     "syntaxId": 3,
-    "licenseId": 2
+    "viewUrl": "https://raw.githubusercontent.com/RandomAdversary/Macedonian-adBlock-Filters/master/Filters"
   },
   {
     "id": 1847,
-    "name": "nothingblock filter",
     "description": "nothingblock blocks unnecessary element to have 'nothing more to take away'.",
     "homeUrl": "https://github.com/dorjmi/nothingblock",
-    "viewUrl": "https://raw.githubusercontent.com/dorjmi/nothingblock/master/filter.txt",
+    "licenseId": 33,
+    "name": "nothingblock filter",
     "syntaxId": 3,
-    "licenseId": 33
+    "viewUrl": "https://raw.githubusercontent.com/dorjmi/nothingblock/master/filter.txt"
   },
   {
     "id": 1848,
-    "name": "AdditionalFiltersCN",
-    "description": "Additional Filters for browser extension based adblockers like uBlock Origin, mainly for Chinese mainland internet service, respectively for privacy, advertisement and interruption elements. Including some obvious trackers which could be found&confirmed by novices in network development easily, and should been listed&blocked YEARS ago.",
+    "description": "Additional Filters for browser extension based adblockers like uBlock Origin, mainly for Chinese mainland internet service, respectively for privacy, advertisement and interruption elements. Including some obvious trackers which could be found&confirmed by novices in network development easily, and should been listed&blocked YEARS ago.",
     "homeUrl": "https://github.com/Crystal-RainSlide/AdditionalFiltersCN",
-    "viewUrl": "https://raw.githubusercontent.com/Crystal-RainSlide/AdditionalFiltersCN/master/all.txt",
-    "syntaxId": 3
+    "licenseId": 5,
+    "name": "AdditionalFiltersCN",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Crystal-RainSlide/AdditionalFiltersCN/master/all.txt"
   },
   {
     "id": 1849,
-    "name": "jCleanList",
     "description": "Automatic ABP rules.",
     "homeUrl": "https://github.com/jiayiming/jCleanList/",
-    "viewUrl": "https://raw.githubusercontent.com/jiayiming/jCleanList/master/jCleanList_all.txt",
+    "licenseId": 2,
+    "name": "jCleanList",
     "syntaxId": 3,
-    "licenseId": 2
+    "viewUrl": "https://raw.githubusercontent.com/jiayiming/jCleanList/master/jCleanList_all.txt"
   },
   {
     "id": 1850,
-    "name": "QuarkList",
     "description": "This site specializes in custom filtering rules to supplement official rules and enhance the effectiveness of web ad blocking.",
     "homeUrl": "https://n2o.io/p/quarklist/",
-    "viewUrl": "https://n2o.io/p/quarklist/dist/quarklist.txt",
+    "licenseId": 2,
+    "name": "QuarkList",
     "syntaxId": 3,
-    "licenseId": 2
+    "viewUrl": "https://n2o.io/p/quarklist/dist/quarklist.txt"
   },
   {
     "id": 1852,
-    "name": "Thai Ads Filters",
-    "description": "A filter for uBO that aims to remove regional Thai ads, tracking, scams and badware.",
+    "description": "A filter for uBO that aims to remove regional Thai ads, tracking, scams and badware.",
     "homeUrl": "https://github.com/adblock-thai/thai-ads-filter",
-    "viewUrl": "https://adblock-thai.github.io/thai-ads-filter/subscription.txt",
+    "licenseId": 2,
+    "name": "Thai Ads Filters",
     "syntaxId": 4,
-    "licenseId": 2
+    "viewUrl": "https://adblock-thai.github.io/thai-ads-filter/subscription.txt"
   },
   {
     "id": 1853,
-    "name": "Thai Annoyance Filters",
     "description": "A filter that aims to remove annoyances and unnecessary bloat.",
     "homeUrl": "https://github.com/adblock-thai/thai-ads-filter",
-    "viewUrl": "https://adblock-thai.github.io/thai-ads-filter/annoyance.txt",
+    "licenseId": 2,
+    "name": "Thai Annoyance Filters",
     "syntaxId": 4,
-    "licenseId": 2
+    "viewUrl": "https://adblock-thai.github.io/thai-ads-filter/annoyance.txt"
   },
   {
     "id": 1854,
-    "name": "Master Inspire",
-    "description": "Custom Ad Filters. Can be used in uBlock Origin.",
+    "description": "Custom Ad Filters. Can be used in uBlock Origin.",
     "homeUrl": "https://github.com/masterinspire/Master-AdRules",
-    "viewUrl": "https://raw.githubusercontent.com/masterinspire/Master-AdRules/master/Master-AdRules.txt",
+    "licenseId": 13,
+    "name": "Master Inspire",
     "syntaxId": 4,
-    "licenseId": 13
+    "viewUrl": "https://raw.githubusercontent.com/masterinspire/Master-AdRules/master/Master-AdRules.txt"
   },
   {
     "id": 1855,
-    "name": "LionBlock",
     "description": "AdBlock filter",
     "homeUrl": "https://github.com/likelion-adblock/filter/",
-    "viewUrl": "https://raw.githubusercontent.com/likelion-adblock/filter/master/filter.txt",
-    "syntaxId": 6
+    "licenseId": 5,
+    "name": "LionBlock",
+    "syntaxId": 6,
+    "viewUrl": "https://raw.githubusercontent.com/likelion-adblock/filter/master/filter.txt"
   },
   {
     "id": 1856,
-    "name": "nocomments",
     "description": "This is an Adblock Plus filter list that removes all comment sections from homepages.",
     "homeUrl": "https://github.com/lutoma/nocomments",
-    "viewUrl": "https://raw.githubusercontent.com/lutoma/nocomments/master/abp.txt",
-    "syntaxId": 3
+    "licenseId": 5,
+    "name": "nocomments",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/lutoma/nocomments/master/abp.txt"
   },
   {
     "id": 1857,
-    "name": "Nanj Kakuchou Filter - Supplement Rules",
     "description": "This is a filter to complement 280blocker by finding advertisements that are not blocked by 280blocker.",
     "homeUrl": "https://github.com/nanj-adguard2/nanj-kakuchou-filter",
-    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/supplement-rules.txt",
+    "licenseId": 20,
+    "name": "Nanj Kakuchou Filter - Supplement Rules",
     "syntaxId": 3,
-    "licenseId": 20
+    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/supplement-rules.txt"
   },
   {
     "id": 1858,
-    "name": "Nanj Kakuchou Filter - DNS Rules",
     "description": "DNS rule filters to strengthen ad blocking.",
     "homeUrl": "https://github.com/nanj-adguard2/nanj-kakuchou-filter",
-    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/DNS-rules.txt",
+    "licenseId": 20,
+    "name": "Nanj Kakuchou Filter - DNS Rules",
     "syntaxId": 28,
-    "licenseId": 20
+    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/DNS-rules.txt"
   },
   {
     "id": 1859,
-    "name": "Nanj Kakuchou Filter - Paranoid Rules",
     "description": "This is a filter that eradicates what 280blocker will not support in the future.",
     "homeUrl": "https://github.com/nanj-adguard2/nanj-kakuchou-filter",
-    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/paranoid-rules.txt",
+    "licenseId": 20,
+    "name": "Nanj Kakuchou Filter - Paranoid Rules",
     "syntaxId": 3,
-    "licenseId": 20
+    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/paranoid-rules.txt"
   },
   {
     "id": 1860,
-    "name": "Nanj Kaishuu Filter",
     "description": "This is a filter to fix bugs in AdGuard for Android when using Japanese websites / Japanese apps / 280blocker.",
     "homeUrl": "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
-    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kaishuu-filter/master/nanj-kaishuu-filter.txt",
+    "licenseId": 20,
+    "name": "Nanj Kaishuu Filter",
     "syntaxId": 6,
-    "licenseId": 20
+    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kaishuu-filter/master/nanj-kaishuu-filter.txt"
   },
   {
     "id": 1861,
-    "name": "Nanj Kaishuu DNS Filter",
     "description": "This is a filter to fix bugs in AdGuard for Android when using Japanese websites / Japanese apps / 280blocker.",
     "homeUrl": "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
-    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kaishuu-filter/master/nanj-kaishuu-dns-filter.txt",
+    "licenseId": 20,
+    "name": "Nanj Kaishuu DNS Filter",
     "syntaxId": 3,
-    "licenseId": 20
+    "viewUrl": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kaishuu-filter/master/nanj-kaishuu-dns-filter.txt"
   },
   {
     "id": 1862,
-    "name": "280blocker for japanese mobile site",
     "description": "This is a filter to fix bugs in AdGuard for Android when using Japanese websites / Japanese apps / 280blocker.",
     "homeUrl": "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
-    "viewUrl": "https://280blocker.net/files/280blocker_adblock_nanj.txt",
+    "licenseId": 1,
+    "name": "280blocker for japanese mobile site",
     "syntaxId": 3,
-    "licenseId": 1
+    "viewUrl": "https://280blocker.net/files/280blocker_adblock_nanj.txt"
   },
   {
     "id": 1863,
-    "name": "280blocker for japanese mobile site - Supplement",
     "description": "This is a filter to fix bugs in AdGuard for Android when using Japanese websites / Japanese apps / 280blocker.",
     "homeUrl": "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
-    "viewUrl": "https://280blocker.net/files/280blocker_adblock_nanj_supp.txt",
+    "licenseId": 1,
+    "name": "280blocker for japanese mobile site - Supplement",
     "syntaxId": 3,
-    "licenseId": 1
+    "viewUrl": "https://280blocker.net/files/280blocker_adblock_nanj_supp.txt"
   },
   {
     "id": 1864,
-    "name": "Adblock Sinhala",
     "description": "This is a quick list of Ad-blocking filters for Sri Lankan web sites. Use this to complement Easylist filters.",
     "homeUrl": "https://github.com/Ayesh/Adblock-Sinhala/",
-    "viewUrl": "https://raw.githubusercontent.com/Ayesh/Adblock-Sinhala/master/filters.txt",
+    "licenseId": 8,
+    "name": "Adblock Sinhala",
     "syntaxId": 3,
-    "licenseId": 8
+    "viewUrl": "https://raw.githubusercontent.com/Ayesh/Adblock-Sinhala/master/filters.txt"
   },
   {
     "id": 1865,
-    "name": "ABPVN Advanced",
     "homeUrl": "https://github.com/zonprox/adblock/",
-    "viewUrl": "https://raw.githubusercontent.com/zonprox/adblock/master/abpvnplus.txt",
-    "syntaxId": 3
+    "licenseId": 5,
+    "name": "ABPVN Advanced",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/zonprox/adblock/master/abpvnplus.txt"
   },
   {
     "id": 1866,
-    "name": "Ad Domains Filter List",
     "description": "A combined list of all the Ad Domains.",
     "homeUrl": "https://github.com/LanikSJ/ubo-filters",
-    "viewUrl": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/master/filters/combined-filters.txt",
+    "licenseId": 4,
+    "name": "Ad Domains Filter List",
     "syntaxId": 28,
-    "licenseId": 4
+    "viewUrl": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/master/filters/combined-filters.txt"
   },
   {
     "id": 1867,
-    "name": "Lanik's uBO Filter List",
     "description": "This is just my List of sites I frequently visit.",
     "homeUrl": "https://github.com/LanikSJ/ubo-filters",
-    "viewUrl": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/master/filters/ubo-filters.txt",
+    "licenseId": 4,
+    "name": "Lanik's uBO Filter List",
     "syntaxId": 4,
-    "licenseId": 4
+    "viewUrl": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/master/filters/ubo-filters.txt"
   },
   {
     "id": 1868,
-    "name": "BlockConvert (Adblockers)",
     "description": "Malware, advert and tracking blacklist",
     "homeUrl": "https://github.com/mkb2091/blockconvert",
-    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/adblock.txt",
+    "licenseId": 4,
+    "name": "BlockConvert (Adblockers)",
     "syntaxId": 3,
-    "licenseId": 4
+    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/adblock.txt"
   },
   {
     "id": 1869,
-    "name": "BlockConvert (Hosts)",
     "description": "Malware, advert and tracking blacklist",
     "homeUrl": "https://github.com/mkb2091/blockconvert",
-    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/hosts.txt",
+    "licenseId": 4,
+    "name": "BlockConvert (Hosts)",
     "syntaxId": 1,
-    "licenseId": 4
+    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/hosts.txt"
   },
   {
     "id": 1870,
-    "name": "BlockConvert (Domains)",
     "description": "Malware, advert and tracking blacklist",
     "homeUrl": "https://github.com/mkb2091/blockconvert",
-    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/domains.txt",
+    "licenseId": 4,
+    "name": "BlockConvert (Domains)",
     "syntaxId": 2,
-    "licenseId": 4
+    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/domains.txt"
   },
   {
     "id": 1871,
-    "name": "BlockConvert (IPs)",
     "description": "Malware, advert and tracking blacklist",
     "homeUrl": "https://github.com/mkb2091/blockconvert",
-    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/ip_blocklist.txt",
+    "licenseId": 4,
+    "name": "BlockConvert (IPs)",
     "syntaxId": 9,
-    "licenseId": 4
+    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/ip_blocklist.txt"
   },
   {
     "id": 1872,
-    "name": "BlockConvert (RPZ)",
     "description": "Malware, advert and tracking blacklist",
     "homeUrl": "https://github.com/mkb2091/blockconvert",
-    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/domains.rpz",
+    "licenseId": 4,
+    "name": "BlockConvert (RPZ)",
     "syntaxId": 25,
-    "licenseId": 4
+    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/domains.rpz"
   },
   {
     "id": 1873,
-    "name": "BlockConvert (Whitelist domains)",
     "description": "Malware, advert and tracking blacklist",
     "homeUrl": "https://github.com/mkb2091/blockconvert",
-    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/whitelist_domains.txt",
+    "licenseId": 4,
+    "name": "BlockConvert (Whitelist domains)",
     "syntaxId": 2,
-    "licenseId": 4
+    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/whitelist_domains.txt"
   },
   {
     "id": 1874,
-    "name": "BlockConvert (Whitelist adblockers)",
     "description": "Malware, advert and tracking blacklist",
     "homeUrl": "https://github.com/mkb2091/blockconvert",
-    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/whitelist_adblock.txt",
+    "licenseId": 4,
+    "name": "BlockConvert (Whitelist adblockers)",
     "syntaxId": 3,
-    "licenseId": 4
+    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/whitelist_adblock.txt"
   },
   {
     "id": 1876,
@@ -19483,193 +19488,192 @@
   },
   {
     "id": 1881,
-    "name": "pfbng Ads",
-    "syntaxId": 2,
     "homeUrl": "https://github.com/angelics/pfbng",
     "issuesUrl": "https://github.com/angelics/pfbng/issues",
+    "licenseId": 5,
+    "name": "pfbng Ads",
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/angelics/pfbng/master/ads/ads-domain-list.txt"
   },
   {
     "id": 1882,
-    "name": "Blocktastic Pi-Hole Blocklist",
-    "syntaxId": 2,
     "homeUrl": "https://github.com/blocktastic/pihole",
     "issuesUrl": "https://github.com/blocktastic/pihole/issues",
+    "licenseId": 5,
+    "name": "Blocktastic Pi-Hole Blocklist",
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/blocktastic/pihole/master/blocktastic.txt"
   },
   {
     "id": 1883,
-    "name": "Broer ICT Blacklist Ads",
     "description": "Ad filter list by Broer ICT",
-    "licenseId": 4,
-    "syntaxId": 2,
     "homeUrl": "https://github.com/broerict/blacklists",
     "issuesUrl": "https://github.com/broerict/blacklists/issues",
+    "licenseId": 4,
+    "name": "Broer ICT Blacklist Ads",
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/broerict/blacklists/master/ads"
   },
   {
     "id": 1884,
-    "name": "Broer ICT Blacklist Malware",
     "description": "Malware filter list by Broer ICT",
-    "licenseId": 4,
-    "syntaxId": 2,
     "homeUrl": "https://github.com/broerict/blacklists",
     "issuesUrl": "https://github.com/broerict/blacklists/issues",
+    "licenseId": 4,
+    "name": "Broer ICT Blacklist Malware",
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/broerict/blacklists/master/malware"
   },
   {
     "id": 1885,
-    "name": "Broer ICT Blacklist Phishing",
     "description": "Phishing filter list by Broer ICT",
-    "licenseId": 4,
-    "syntaxId": 2,
     "homeUrl": "https://github.com/broerict/blacklists",
     "issuesUrl": "https://github.com/broerict/blacklists/issues",
+    "licenseId": 4,
+    "name": "Broer ICT Blacklist Phishing",
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/broerict/blacklists/master/phishing"
   },
   {
     "id": 1886,
-    "name": "Macedonian Pi-hole Blocklist",
     "description": "This is a Pi-hole list to block unwanted domains that serve ads on Macedonian websites.",
-    "syntaxId": 2,
     "homeUrl": "https://github.com/cchevy/macedonian-pi-hole-blocklist",
     "issuesUrl": "https://github.com/cchevy/macedonian-pi-hole-blocklist/issues",
+    "licenseId": 5,
+    "name": "Macedonian Pi-hole Blocklist",
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/cchevy/macedonian-pi-hole-blocklist/master/hosts.txt"
   },
   {
     "id": 1887,
-    "name": "chrisjudk Hosts",
     "description": "This is a list of hosts I have found to be used for ads, malware, etc.",
-    "licenseId": 2,
-    "syntaxId": 1,
     "homeUrl": "https://github.com/chrisjudk/hosts",
     "issuesUrl": "https://github.com/chrisjudk/hosts/issues",
+    "licenseId": 2,
+    "name": "chrisjudk Hosts",
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/chrisjudk/hosts/master/hosts"
   },
   {
     "id": 1888,
-    "name": "Custom Hosts Domain Filter for AdGuard",
-    "syntaxId": 28,
     "homeUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules",
     "issuesUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules/issues",
+    "licenseId": 5,
+    "name": "Custom Hosts Domain Filter for AdGuard",
+    "syntaxId": 28,
     "viewUrl": "https://raw.githubusercontent.com/DavidTai780/AdGuard-Home-Private-Rules/master/hosts.txt"
   },
   {
     "id": 1889,
-    "name": "Private Ads Block List",
-    "syntaxId": 28,
     "homeUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules",
     "issuesUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules/issues",
+    "licenseId": 5,
+    "name": "Private Ads Block List",
+    "syntaxId": 28,
     "viewUrl": "https://raw.githubusercontent.com/DavidTai780/AdGuard-Home-Private-Rules/master/ads-block.txt"
   },
   {
     "id": 1890,
-    "name": "noads.online Switzerland specific filters",
-    "licenseId": 35,
-    "syntaxId": 3,
     "homeUrl": "https://github.com/deletescape/noads",
     "issuesUrl": "https://github.com/deletescape/noads/issues",
+    "licenseId": 35,
+    "name": "noads.online Switzerland specific filters",
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/deletescape/noads/master/lists/add-switzerland.txt"
   },
   {
     "id": 1891,
-    "name": "noads.online anti scumware list",
-    "licenseId": 35,
-    "syntaxId": 3,
     "homeUrl": "https://github.com/deletescape/noads",
     "issuesUrl": "https://github.com/deletescape/noads/issues",
+    "licenseId": 35,
+    "name": "noads.online anti scumware list",
+    "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/deletescape/noads/master/lists/fo-scumware.txt"
   },
   {
     "id": 1892,
-    "name": "noads.online AdGuard Home Megalist",
-    "licenseId": 35,
-    "syntaxId": 28,
     "homeUrl": "https://github.com/deletescape/noads",
     "issuesUrl": "https://github.com/deletescape/noads/issues",
+    "licenseId": 35,
+    "name": "noads.online AdGuard Home Megalist",
+    "syntaxId": 28,
     "viewUrl": "https://lists.noads.online/lists/compilation.txt"
   },
   {
     "id": 1893,
-    "name": "noads.online whitelist",
-    "licenseId": 35,
-    "syntaxId": 28,
     "homeUrl": "https://github.com/deletescape/noads",
     "issuesUrl": "https://github.com/deletescape/noads/issues",
+    "licenseId": 35,
+    "name": "noads.online whitelist",
+    "syntaxId": 28,
     "viewUrl": "https://raw.githubusercontent.com/deletescape/noads/master/lists/unbreak.txt"
   },
   {
     "id": 1894,
-    "name": "dex4k Blocklist",
     "description": "This is the \"SAFE LIST\" tested to not break legitimate functionality for commonly used software",
-    "syntaxId": 2,
     "homeUrl": "https://github.com/dex4k/dex4kblocklist",
     "issuesUrl": "https://github.com/dex4k/dex4kblocklist/issues",
+    "licenseId": 5,
+    "name": "dex4k Blocklist",
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/dex4k/dex4kblocklist/master/dex4kblocklist.txt"
   },
   {
     "id": 1895,
-    "name": "dex4k Blocklist Extras",
     "description": "This is a secondary blocklist created as, although I believe the blocking to be legitimate, blocking these domains can break popular apps",
-    "syntaxId": 2,
     "homeUrl": "https://github.com/dex4k/dex4kblocklist",
     "issuesUrl": "https://github.com/dex4k/dex4kblocklist/issues",
+    "licenseId": 5,
+    "name": "dex4k Blocklist Extras",
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/dex4k/dex4kblocklist/master/dex4kblocklistextras.txt"
   },
   {
     "id": 1896,
-    "name": "Additional Hosts - Adservers and Trackers",
     "description": "Blocks ads and trackers, and anything inbetween.",
-    "licenseId": 2,
-    "syntaxId": 2,
     "homeUrl": "https://github.com/DRSDavidSoft/additional-hosts",
     "issuesUrl": "https://github.com/DRSDavidSoft/additional-hosts/issues",
+    "licenseId": 2,
+    "name": "Additional Hosts - Adservers and Trackers",
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/adservers-and-trackers.txt"
   },
   {
     "id": 1897,
-    "name": "Additional Hosts - Unwanted Iranian",
     "description": "Blocks various scams and popups when visiting Iranian websites. E.g. fake Download buttons, Pop-unders, etc",
-    "licenseId": 2,
-    "syntaxId": 2,
     "homeUrl": "https://github.com/DRSDavidSoft/additional-hosts",
     "issuesUrl": "https://github.com/DRSDavidSoft/additional-hosts/issues",
+    "licenseId": 2,
+    "name": "Additional Hosts - Unwanted Iranian",
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/unwanted-iranian.txt"
   },
   {
     "id": 1898,
-    "name": "Additional Hosts - Activation",
-    "description": "Blocks license verification and software activation. This list is intended to prevent products from expiring when they detect an invalid license.",
-    "licenseId": 2,
-    "syntaxId": 2,
-    "homeUrl": "https://github.com/DRSDavidSoft/additional-hosts",
-    "issuesUrl": "https://github.com/DRSDavidSoft/additional-hosts/issues",
-    "viewUrl": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/activation.txt"
-  },
-  {
-    "id": 1898,
-    "name": "Manually Spotted Trackers and Other Nuisances",
     "description": "For use in a tool like Pi-hole. Covers manually spotted trackers, marketing bullshit and other nuisances. May be considered a bit aggressive — but not too much. Shouldn't break any sites.",
-    "licenseId": 11,
-    "syntaxId": 2,
     "homeUrl": "https://github.com/herrbischoff/trackers",
     "issuesUrl": "https://github.com/herrbischoff/trackers/issues",
+    "licenseId": 11,
+    "name": "Manually Spotted Trackers and Other Nuisances",
+    "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/herrbischoff/trackers/master/trackers.txt"
   },
   {
     "id": 1899,
-    "name": "Ghostery Bugs (dnsmasq)",
-    "syntaxId": 20,
     "homeUrl": "https://github.com/javabean/dnsmasq-antispy",
     "issuesUrl": "https://github.com/javabean/dnsmasq-antispy/issues",
+    "licenseId": 5,
+    "name": "Ghostery Bugs (dnsmasq)",
+    "syntaxId": 20,
     "viewUrl": "https://raw.githubusercontent.com/javabean/dnsmasq-antispy/master/dnsmasq.ghostery_bugs.conf"
   },
   {
     "id": 1900,
-    "name": "ZZ Extra Servers Manual",
-    "syntaxId": 20,
     "homeUrl": "https://github.com/javabean/dnsmasq-antispy",
     "issuesUrl": "https://github.com/javabean/dnsmasq-antispy/issues",
+    "licenseId": 5,
+    "name": "ZZ Extra Servers Manual",
+    "syntaxId": 20,
     "viewUrl": "https://raw.githubusercontent.com/javabean/dnsmasq-antispy/master/dnsmasq.zz-extra-servers-manual.conf"
   },
   {
@@ -19688,244 +19692,264 @@
   },
   {
     "id": 1902,
-    "name": "meinhimmel Hosts",
     "description": "These are my own additional annoying domains. For use with StevenBlack, may break randomly.",
-    "syntaxId": 1,
-    "licenseId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/meinhimmel/hosts/master/hosts",
     "homeUrl": "https://github.com/meinhimmel/hosts",
-    "issuesUrl": "https://github.com/meinhimmel/hosts/issues"
+    "issuesUrl": "https://github.com/meinhimmel/hosts/issues",
+    "licenseId": 2,
+    "name": "meinhimmel Hosts",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/meinhimmel/hosts/master/hosts"
   },
   {
     "id": 1903,
-    "name": "mhhakim Pihole Blocklist",
     "description": "Custom blocklist to include in the main list.",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/mhhakim/pihole-blocklist/master/custom-blocklist.txt",
     "homeUrl": "https://github.com/mhhakim/pihole-blocklist",
-    "issuesUrl": "https://github.com/mhhakim/pihole-blocklist/issues"
+    "issuesUrl": "https://github.com/mhhakim/pihole-blocklist/issues",
+    "licenseId": 5,
+    "name": "mhhakim Pihole Blocklist",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/mhhakim/pihole-blocklist/master/custom-blocklist.txt"
   },
   {
     "id": 1904,
+    "homeUrl": "https://github.com/Phentora/AdguardPersonalList",
+    "issuesUrl": "https://github.com/Phentora/AdguardPersonalList/issues",
+    "licenseId": 5,
     "name": "Adguard Personal List",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/Phentora/AdguardPersonalList/master/blocklist.txt",
-    "homeUrl": "https://github.com/Phentora/AdguardPersonalList",
-    "issuesUrl": "https://github.com/Phentora/AdguardPersonalList/issues"
+    "viewUrl": "https://raw.githubusercontent.com/Phentora/AdguardPersonalList/master/blocklist.txt"
   },
   {
     "id": 1905,
-    "name": "Turris Hole Block List",
     "description": "Hi, this is a list of ad, tracking and other shit sources on the Internet. The original intention was to use this list with Pi-hole in LXC container on the Turris Omnia router for Czech users.",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/qxstyles/turris-hole-czech-block-list/master/turris-hole-czech-block-list",
     "homeUrl": "https://github.com/qxstyles/turris-hole-czech-block-list",
-    "issuesUrl": "https://github.com/qxstyles/turris-hole-czech-block-list/issues"
+    "issuesUrl": "https://github.com/qxstyles/turris-hole-czech-block-list/issues",
+    "licenseId": 5,
+    "name": "Turris Hole Block List",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/qxstyles/turris-hole-czech-block-list/master/turris-hole-czech-block-list"
   },
   {
     "id": 1906,
-    "name": "Rhys-H Hosts-List",
     "description": "A public hosts file for blocking known ads, trackers, and malware domains across the internet.",
-    "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/Rhys-H/hosts-list/master/HostsList.txt",
     "homeUrl": "https://github.com/Rhys-H/hosts-list",
-    "issuesUrl": "https://github.com/Rhys-H/hosts-list/issues"
+    "issuesUrl": "https://github.com/Rhys-H/hosts-list/issues",
+    "licenseId": 5,
+    "name": "Rhys-H Hosts-List",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/Rhys-H/hosts-list/master/HostsList.txt"
   },
   {
     "id": 1907,
-    "name": "smed79 BlackList",
     "description": "BlackList of domains hosting advertisements & other nasty purposes.",
-    "syntaxId": 1,
-    "licenseId": 6,
-    "viewUrl": "https://raw.githubusercontent.com/smed79/blacklist/master/hosts.txt",
     "homeUrl": "https://github.com/smed79/blacklist",
-    "issuesUrl": "https://github.com/smed79/blacklist/issues"
+    "issuesUrl": "https://github.com/smed79/blacklist/issues",
+    "licenseId": 6,
+    "name": "smed79 BlackList",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/smed79/blacklist/master/hosts.txt"
   },
   {
     "id": 1908,
-    "name": "Maltrail - Potentially Unwanted Applications",
-    "description": "Maltrail is a malicious traffic detection system, utilizing publicly available (black)lists containing malicious and/or generally suspicious trails, along with static trails compiled from various AV reports and custom user defined lists.",
-    "syntaxId": 2,
-    "licenseId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/suspicious/pua.txt",
+    "description": "Maltrail is a malicious traffic detection system, utilizing publicly available (black)lists containing malicious and/or generally suspicious trails, along with static trails compiled from various AV reports and custom user defined lists.",
     "homeUrl": "https://github.com/stamparm/maltrail",
-    "issuesUrl": "https://github.com/stamparm/maltrail/issues"
+    "issuesUrl": "https://github.com/stamparm/maltrail/issues",
+    "licenseId": 2,
+    "name": "Maltrail - Potentially Unwanted Applications",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/suspicious/pua.txt"
   },
   {
     "id": 1909,
+    "homeUrl": "https://github.com/svetlyobg/svet-custom-domains",
+    "issuesUrl": "https://github.com/svetlyobg/svet-custom-domains/issues",
+    "licenseId": 5,
     "name": "Svet Custom Domains",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/svetlyobg/svet-custom-domains/master/ads-domains",
-    "homeUrl": "https://github.com/svetlyobg/svet-custom-domains",
-    "issuesUrl": "https://github.com/svetlyobg/svet-custom-domains/issues"
+    "viewUrl": "https://raw.githubusercontent.com/svetlyobg/svet-custom-domains/master/ads-domains"
   },
   {
     "id": 1910,
+    "homeUrl": "https://github.com/svetlyobg/svet-custom-domains",
+    "issuesUrl": "https://github.com/svetlyobg/svet-custom-domains/issues",
+    "licenseId": 5,
     "name": "Svet Custom Domains (IPs)",
     "syntaxId": 9,
-    "viewUrl": "https://raw.githubusercontent.com/svetlyobg/svet-custom-domains/master/ads-IPs",
-    "homeUrl": "https://github.com/svetlyobg/svet-custom-domains",
-    "issuesUrl": "https://github.com/svetlyobg/svet-custom-domains/issues"
+    "viewUrl": "https://raw.githubusercontent.com/svetlyobg/svet-custom-domains/master/ads-IPs"
   },
   {
     "id": 1911,
-    "name": "Blacklist Named - Ads",
     "description": "Cycle-jerk antivirus/ad sites",
-    "syntaxId": 26,
-    "viewUrl": "https://raw.githubusercontent.com/tomzuu/blacklist-named/master/ad.sites.conf",
     "homeUrl": "https://github.com/tomzuu/blacklist-named",
-    "issuesUrl": "https://github.com/tomzuu/blacklist-named/issues"
+    "issuesUrl": "https://github.com/tomzuu/blacklist-named/issues",
+    "licenseId": 5,
+    "name": "Blacklist Named - Ads",
+    "syntaxId": 26,
+    "viewUrl": "https://raw.githubusercontent.com/tomzuu/blacklist-named/master/ad.sites.conf"
   },
   {
     "id": 1912,
-    "name": "Blacklist Named - Phishing",
     "description": "Speaks for itself",
-    "syntaxId": 26,
-    "viewUrl": "https://raw.githubusercontent.com/tomzuu/blacklist-named/master/phishing.sites.conf",
     "homeUrl": "https://github.com/tomzuu/blacklist-named",
-    "issuesUrl": "https://github.com/tomzuu/blacklist-named/issues"
+    "issuesUrl": "https://github.com/tomzuu/blacklist-named/issues",
+    "licenseId": 5,
+    "name": "Blacklist Named - Phishing",
+    "syntaxId": 26,
+    "viewUrl": "https://raw.githubusercontent.com/tomzuu/blacklist-named/master/phishing.sites.conf"
   },
   {
     "id": 1913,
-    "name": "Blacklist Named - Pushing",
     "description": "Pushy crappy service advertisers that just won't let it go",
-    "syntaxId": 26,
-    "viewUrl": "https://raw.githubusercontent.com/tomzuu/blacklist-named/master/pushing.sites.conf",
     "homeUrl": "https://github.com/tomzuu/blacklist-named",
-    "issuesUrl": "https://github.com/tomzuu/blacklist-named/issues"
+    "issuesUrl": "https://github.com/tomzuu/blacklist-named/issues",
+    "licenseId": 5,
+    "name": "Blacklist Named - Pushing",
+    "syntaxId": 26,
+    "viewUrl": "https://raw.githubusercontent.com/tomzuu/blacklist-named/master/pushing.sites.conf"
   },
   {
     "id": 1914,
-    "name": "Samsung No Snooping",
     "description": "List below is all domains I've captured that Samsung Smart TVs use to do anything other than watch YouTtube, Netflix, and Google Play. Block all of them for total privacy and no ads. Note the comments.",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/UnbendableStraw/samsungnosnooping/master/README.md",
     "homeUrl": "https://github.com/UnbendableStraw/samsungnosnooping",
-    "issuesUrl": "https://github.com/UnbendableStraw/samsungnosnooping/issues"
+    "issuesUrl": "https://github.com/UnbendableStraw/samsungnosnooping/issues",
+    "licenseId": 5,
+    "name": "Samsung No Snooping",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/UnbendableStraw/samsungnosnooping/master/README.md"
   },
   {
     "id": 1915,
+    "homeUrl": "https://github.com/unchartedsky/adguard-kr",
+    "issuesUrl": "https://github.com/unchartedsky/adguard-kr/issues",
+    "licenseId": 5,
     "name": "AdGuard KR",
     "syntaxId": 6,
-    "viewUrl": "https://raw.githubusercontent.com/unchartedsky/adguard-kr/master/adguard-kr.txt",
-    "homeUrl": "https://github.com/unchartedsky/adguard-kr",
-    "issuesUrl": "https://github.com/unchartedsky/adguard-kr/issues"
+    "viewUrl": "https://raw.githubusercontent.com/unchartedsky/adguard-kr/master/adguard-kr.txt"
   },
   {
     "id": 1916,
-    "name": "xlimit91 Block List for Pi-Hole",
     "description": "Custom block list annoying ads, trackers, scam sites etc. for Pi-hole (DNS Blocking)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/xlimit91/xlimit91-block-list/master/blacklist.txt",
     "homeUrl": "https://github.com/xlimit91/xlimit91-block-list",
-    "issuesUrl": "https://github.com/xlimit91/xlimit91-block-list/issues"
+    "issuesUrl": "https://github.com/xlimit91/xlimit91-block-list/issues",
+    "licenseId": 5,
+    "name": "xlimit91 Block List for Pi-Hole",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/xlimit91/xlimit91-block-list/master/blacklist.txt"
   },
   {
     "id": 1917,
-    "name": "xlimit91 Block List for Pi-Hole (Regex)",
     "description": "Custom block list annoying ads, trackers, scam sites etc. for Pi-hole (DNS Blocking)",
-    "syntaxId": 30,
-    "viewUrl": "https://raw.githubusercontent.com/xlimit91/xlimit91-block-list/master/regex.list",
     "homeUrl": "https://github.com/xlimit91/xlimit91-block-list",
-    "issuesUrl": "https://github.com/xlimit91/xlimit91-block-list/issues"
+    "issuesUrl": "https://github.com/xlimit91/xlimit91-block-list/issues",
+    "licenseId": 5,
+    "name": "xlimit91 Block List for Pi-Hole (Regex)",
+    "syntaxId": 30,
+    "viewUrl": "https://raw.githubusercontent.com/xlimit91/xlimit91-block-list/master/regex.list"
   },
   {
     "id": 1918,
+    "homeUrl": "https://github.com/ZYX2019/host-block-list",
+    "issuesUrl": "https://github.com/ZYX2019/host-block-list/issues",
+    "licenseId": 5,
     "name": "ZYX2019 Host Block List",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/ZYX2019/host-block-list/master/Custom.txt",
-    "homeUrl": "https://github.com/ZYX2019/host-block-list",
-    "issuesUrl": "https://github.com/ZYX2019/host-block-list/issues"
+    "viewUrl": "https://raw.githubusercontent.com/ZYX2019/host-block-list/master/Custom.txt"
   },
   {
     "id": 1919,
-    "name": "BAR-List (Domains)",
     "description": "Blocklist for Ad Redirects",
-    "syntaxId": 2,
-    "licenseId": 4,
-    "viewUrl": "https://raw.githubusercontent.com/zznidar/BAR/master/BAR-list",
     "homeUrl": "https://github.com/zznidar/BAR",
-    "issuesUrl": "https://github.com/zznidar/BAR/issues"
+    "issuesUrl": "https://github.com/zznidar/BAR/issues",
+    "licenseId": 4,
+    "name": "BAR-List (Domains)",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/zznidar/BAR/master/BAR-list"
   },
   {
     "id": 1920,
-    "name": "BAR-List (URLs)",
     "description": "Blocklist for Ad Redirects",
-    "syntaxId": 8,
-    "viewUrl": "https://raw.githubusercontent.com/zznidar/BAR/master/URLs_full",
     "homeUrl": "https://github.com/zznidar/BAR",
-    "issuesUrl": "https://github.com/zznidar/BAR/issues"
+    "issuesUrl": "https://github.com/zznidar/BAR/issues",
+    "licenseId": 5,
+    "name": "BAR-List (URLs)",
+    "syntaxId": 8,
+    "viewUrl": "https://raw.githubusercontent.com/zznidar/BAR/master/URLs_full"
   },
   {
     "id": 1921,
-    "name": "Not Good Pi - Ads and Trackers",
     "description": "Ads and tracking hosts I have seen around the Internet. Some are rare. Some are popular.",
-    "syntaxId": 1,
-    "licenseId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/infinitytec/blocklists/master/ads-and-trackers.txt",
     "homeUrl": "https://github.com/infinitytec/blocklists",
-    "issuesUrl": "https://github.com/infinitytec/blocklists/issues"
+    "issuesUrl": "https://github.com/infinitytec/blocklists/issues",
+    "licenseId": 2,
+    "name": "Not Good Pi - Ads and Trackers",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/infinitytec/blocklists/master/ads-and-trackers.txt"
   },
   {
     "id": 1922,
-    "name": "Not Good Pi - Scams and Phishing",
     "description": "Because they don't deserve your traffic.",
-    "syntaxId": 1,
-    "licenseId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/infinitytec/blocklists/master/scams-and-phishing.txt",
     "homeUrl": "https://github.com/infinitytec/blocklists",
-    "issuesUrl": "https://github.com/infinitytec/blocklists/issues"
+    "issuesUrl": "https://github.com/infinitytec/blocklists/issues",
+    "licenseId": 2,
+    "name": "Not Good Pi - Scams and Phishing",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/infinitytec/blocklists/master/scams-and-phishing.txt"
   },
   {
     "id": 1923,
+    "homeUrl": "https://github.com/chimbori/lite-apps",
+    "issuesUrl": "https://github.com/chimbori/lite-apps/issues",
+    "licenseId": 5,
     "name": "Lite App Manifests - Coin Miners",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/chimbori/lite-apps/master/blocklists/src/Coin%20Miners/UserSuggested.txt",
-    "homeUrl": "https://github.com/chimbori/lite-apps",
-    "issuesUrl": "https://github.com/chimbori/lite-apps/issues"
+    "viewUrl": "https://raw.githubusercontent.com/chimbori/lite-apps/master/blocklists/src/Coin%20Miners/UserSuggested.txt"
   },
   {
     "id": 1924,
+    "homeUrl": "https://github.com/chimbori/lite-apps",
+    "issuesUrl": "https://github.com/chimbori/lite-apps/issues",
+    "licenseId": 5,
     "name": "Lite App Manifests - Paid Content Links",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/chimbori/lite-apps/master/blocklists/src/Adware%20and%20Malware/PaidContentLinks.txt",
-    "homeUrl": "https://github.com/chimbori/lite-apps",
-    "issuesUrl": "https://github.com/chimbori/lite-apps/issues"
+    "viewUrl": "https://raw.githubusercontent.com/chimbori/lite-apps/master/blocklists/src/Adware%20and%20Malware/PaidContentLinks.txt"
   },
   {
     "id": 1925,
+    "homeUrl": "https://github.com/chimbori/lite-apps",
+    "issuesUrl": "https://github.com/chimbori/lite-apps/issues",
+    "licenseId": 5,
     "name": "Lite App Manifests - User Suggested Adware and Malware",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/chimbori/lite-apps/master/blocklists/src/Adware%20and%20Malware/UserSuggested.txt",
-    "homeUrl": "https://github.com/chimbori/lite-apps",
-    "issuesUrl": "https://github.com/chimbori/lite-apps/issues"
+    "viewUrl": "https://raw.githubusercontent.com/chimbori/lite-apps/master/blocklists/src/Adware%20and%20Malware/UserSuggested.txt"
   },
   {
     "id": 1926,
+    "homeUrl": "https://github.com/jackrabbit335/UsefulLinuxShellScripts",
+    "issuesUrl": "https://github.com/jackrabbit335/UsefulLinuxShellScripts/issues",
+    "licenseId": 4,
     "name": "Useful Linux Shell Scripts - Blacklist",
     "syntaxId": 1,
-    "licenseId": 4,
-    "viewUrl": "https://raw.githubusercontent.com/jackrabbit335/UsefulLinuxShellScripts/master/Hosts%20%26%20sourcelist/blacklist.txt",
-    "homeUrl": "https://github.com/jackrabbit335/UsefulLinuxShellScripts",
-    "issuesUrl": "https://github.com/jackrabbit335/UsefulLinuxShellScripts/issues"
+    "viewUrl": "https://raw.githubusercontent.com/jackrabbit335/UsefulLinuxShellScripts/master/Hosts%20%26%20sourcelist/blacklist.txt"
   },
   {
     "id": 1927,
-    "name": "Th3M3 Blocklists - Malware",
     "description": "My custom blocklists for pihole",
-    "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/Th3M3/blocklists/master/malware.list",
     "homeUrl": "https://github.com/Th3M3/blocklists",
-    "issuesUrl": "https://github.com/Th3M3/blocklists/issues"
+    "issuesUrl": "https://github.com/Th3M3/blocklists/issues",
+    "licenseId": 5,
+    "name": "Th3M3 Blocklists - Malware",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/Th3M3/blocklists/master/malware.list"
   },
   {
     "id": 1928,
-    "name": "Th3M3 Blocklists - Tracking & Ads",
     "description": "My custom blocklists for pihole",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/Th3M3/blocklists/master/tracking%26ads.list",
     "homeUrl": "https://github.com/Th3M3/blocklists",
-    "issuesUrl": "https://github.com/Th3M3/blocklists/issues"
+    "issuesUrl": "https://github.com/Th3M3/blocklists/issues",
+    "licenseId": 5,
+    "name": "Th3M3 Blocklists - Tracking & Ads",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/Th3M3/blocklists/master/tracking%26ads.list"
   },
   {
     "id": 1929,
@@ -19957,143 +19981,154 @@
   },
   {
     "id": 1931,
-    "viewUrl": "http://www.thedumbterminal.co.uk/files/services/squidblockedsites/blocked.txt",
+    "description": "We all hate advertising banners on pages when surfing the web, A proxy such as Squid can used to block these without the need to install any additional software on end users systems. This saves bandwidth as well as protects your privacy from tracking site etc.",
+    "homeUrl": "https://www.thedumbterminal.co.uk/services/squidblockedsites.html",
+    "licenseId": 5,
     "name": "The Dumb Terminal's Squid blocked sites",
-    "description": "We all hate advertising banners on pages when surfing the web, A proxy such as Squid can used to block these without the need to install any additional software on end users systems. This saves bandwidth as well as protects your privacy from tracking site etc.",
-    "syntaxid": 2,
-    "homeUrl": "https://www.thedumbterminal.co.uk/services/squidblockedsites.html"
+    "syntaxId": 2,
+    "viewUrl": "http://www.thedumbterminal.co.uk/files/services/squidblockedsites/blocked.txt"
   },
   {
     "id": 1932,
-    "viewUrl": "https://assets.windscribe.com/custom_blocklists/clickbait.txt",
+    "licenseId": 5,
     "name": "Windscribe Clickbait",
-    "syntaxid": 2
+    "syntaxId": 2,
+    "viewUrl": "https://assets.windscribe.com/custom_blocklists/clickbait.txt"
   },
   {
     "id": 1933,
-    "viewUrl": "https://gitlab.com/dns-firewall/dns/matrix/matrix/raw/master/source/adware/domains.list",
-    "name": "My Privacy DNS Matrix - Adware",
     "description": "This repository is www.mypdns.org self maintained list of domains that needs to be blocked for various reasons.",
-    "syntaxid": 2,
-    "licenseid": 43,
-    "homeUrl": "https://gitlab.com/my-privacy-dns/matrix/matrix/"
+    "homeUrl": "https://gitlab.com/my-privacy-dns/matrix/matrix/",
+    "licenseId": 43,
+    "name": "My Privacy DNS Matrix - Adware",
+    "syntaxId": 2,
+    "viewUrl": "https://gitlab.com/dns-firewall/dns/matrix/matrix/raw/master/source/adware/domains.list"
   },
   {
     "id": 1934,
-    "viewUrl": "https://gitlab.com/dns-firewall/dns/matrix/matrix/raw/master/source/tracking/domains.list",
-    "name": "My Privacy DNS Matrix - Tracking",
     "description": "This repository is www.mypdns.org self maintained list of domains that needs to be blocked for various reasons.",
-    "syntaxid": 2,
-    "licenseid": 43,
-    "homeUrl": "https://gitlab.com/my-privacy-dns/matrix/matrix/"
+    "homeUrl": "https://gitlab.com/my-privacy-dns/matrix/matrix/",
+    "licenseId": 43,
+    "name": "My Privacy DNS Matrix - Tracking",
+    "syntaxId": 2,
+    "viewUrl": "https://gitlab.com/dns-firewall/dns/matrix/matrix/raw/master/source/tracking/domains.list"
   },
   {
     "id": 1935,
-    "viewUrl": "https://infosec.cert-pa.it/analyze/listdomains.txt",
-    "name": "CERT-PA Domains",
     "description": "The list contains domains (FQDN) collected over the last seven days by the web application. From any of these domains has been downloaded and analyzed a suspicious binary file.",
-    "syntaxid": 2,
-    "homeUrl": "https://infosec.cert-pa.it/"
+    "homeUrl": "https://infosec.cert-pa.it/",
+    "licenseId": 5,
+    "name": "CERT-PA Domains",
+    "syntaxId": 2,
+    "viewUrl": "https://infosec.cert-pa.it/analyze/listdomains.txt"
   },
   {
     "id": 1936,
-    "viewUrl": "https://lists.hashdd.com/hashdd/vxvault-urllist/hosts",
+    "homeUrl": "https://hashdd.com/",
+    "licenseId": 5,
     "name": "VXVault (Domains)",
-    "syntaxid": 2,
-    "homeUrl": "https://hashdd.com/"
+    "syntaxId": 2,
+    "viewUrl": "https://lists.hashdd.com/hashdd/vxvault-urllist/hosts"
   },
   {
     "id": 1937,
-    "viewUrl": "https://pastebin.com/raw/UP3s7pEB",
-    "name": "fakeinet.com Scam, Fakes and frauds of Internet URL list",
     "description": "Fake online shops and a lot of other things are collected here.",
-    "syntaxid": 1
+    "licenseId": 5,
+    "name": "fakeinet.com Scam, Fakes and frauds of Internet URL list",
+    "syntaxId": 1,
+    "viewUrl": "https://pastebin.com/raw/UP3s7pEB"
   },
   {
     "id": 1938,
-    "viewUrl": "https://raw.githubusercontent.com/YanFung/Ads/master/Mobile.txt",
+    "homeUrl": "https://github.com/YanFung/Ads/",
+    "licenseId": 5,
     "name": "Mobile Ads",
-    "syntaxid": 4,
-    "homeUrl": "https://github.com/YanFung/Ads/"
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/YanFung/Ads/master/Mobile.txt"
   },
   {
     "id": 1939,
-    "viewUrl": "https://raw.githubusercontent.com/yhonay/antipopads/master/hosts",
+    "licenseId": 14,
     "name": "Anti-PopAds (Hosts)",
-    "syntaxid": 1,
-    "licenseid": 14
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/yhonay/antipopads/master/hosts"
   },
   {
     "id": 1940,
-    "viewUrl": "https://repo.andnixsh.com/adblocker/hosts",
+    "homeUrl": "https://andnixsh.com/",
+    "licenseId": 5,
     "name": "Andnixsh's Hosts",
-    "syntaxid": 1,
-    "homeUrl": "https://andnixsh.com/"
+    "syntaxId": 1,
+    "viewUrl": "https://repo.andnixsh.com/adblocker/hosts"
   },
   {
     "id": 1941,
-    "viewUrl": "https://surge.noonme.com/surge.conf",
+    "licenseId": 5,
     "name": "NoOnMe's List for Surge",
-    "syntaxid": 29
+    "syntaxId": 29,
+    "viewUrl": "https://surge.noonme.com/surge.conf"
   },
   {
     "id": 1942,
-    "viewUrl": "https://www.bentasker.co.uk/adblock/autolist.txt",
+    "licenseId": 19,
     "name": "Ben Tasker's List (Unbound)",
-    "syntaxid": 24,
-    "licenseid": 19
+    "syntaxId": 24,
+    "viewUrl": "https://www.bentasker.co.uk/adblock/autolist.txt"
   },
   {
     "id": 1943,
-    "viewUrl": "https://www.bentasker.co.uk/adblock/adblock_compiled.txt",
+    "licenseId": 19,
     "name": "Ben Tasker's List (Adblock Plus)",
-    "syntaxid": 28,
-    "licenseid": 19
+    "syntaxId": 28,
+    "viewUrl": "https://www.bentasker.co.uk/adblock/adblock_compiled.txt"
   },
   {
     "id": 1944,
-    "viewUrl": "https://www.bentasker.co.uk/adblock/blockeddomains.txt",
+    "homeUrl": "https://www.bentasker.co.uk/adblock/",
+    "licenseId": 19,
     "name": "Ben Tasker's List (Domains)",
-    "syntaxid": 2,
-    "licenseid": 19,
-    "homeUrl": "https://www.bentasker.co.uk/adblock/"
+    "syntaxId": 2,
+    "viewUrl": "https://www.bentasker.co.uk/adblock/blockeddomains.txt"
   },
   {
     "id": 1945,
-    "viewUrl": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/regex.list",
+    "homeUrl": "https://github.com/Perflyst/PiHoleBlocklist/",
+    "licenseId": 2,
     "name": "PiHole Blocklist SmartTV (Regex extension)",
-    "syntaxid": 30,
-    "licenseid": 2,
-    "homeUrl": "https://github.com/Perflyst/PiHoleBlocklist/"
+    "syntaxId": 30,
+    "viewUrl": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/regex.list"
   },
   {
     "id": 1946,
-    "viewUrl": "https://anonymousposter.gitlab.io/ublockorigin-rules/blockrules.txt",
-    "name": "AnonymousPoster – Andblock Rules",
     "description": "The one and only rule set applied by AnonymousPoster is this on blockrules.txt in complementary to EasyList.",
-    "syntaxid": 3,
-    "licenseid": 40,
-    "homeUrl": "https://gitlab.com/AnonymousPoster/ublockorigin-rules"
+    "homeUrl": "https://gitlab.com/AnonymousPoster/ublockorigin-rules",
+    "licenseId": 40,
+    "name": "AnonymousPoster – Andblock Rules",
+    "syntaxId": 3,
+    "viewUrl": "https://anonymousposter.gitlab.io/ublockorigin-rules/blockrules.txt"
   },
   {
     "id": 1947,
-    "viewUrl": "https://raw.githubusercontent.com/ivysrono/URLRedirectorRules/master/Directly.json",
-    "name": "Ivysrono's URLRedirector Rules",
     "description": "Personal rules for URLRedirector.",
-    "syntaxid": 31,
-    "homeUrl": "https://github.com/ivysrono/URLRedirectorRules/"
+    "homeUrl": "https://github.com/ivysrono/URLRedirectorRules/",
+    "licenseId": 5,
+    "name": "Ivysrono's URLRedirector Rules",
+    "syntaxId": 31,
+    "viewUrl": "https://raw.githubusercontent.com/ivysrono/URLRedirectorRules/master/Directly.json"
   },
   {
     "id": 1948,
-    "viewUrl": "https://raw.githubusercontent.com/fengyc/URLRedirector/master/tools/rules.json",
+    "licenseId": 5,
     "name": "Fengyc's URLRedirector Rules",
-    "syntaxid": 31
+    "syntaxId": 31,
+    "viewUrl": "https://raw.githubusercontent.com/fengyc/URLRedirector/master/tools/rules.json"
   },
   {
     "id": 1949,
-    "viewUrl": "https://raw.githubusercontent.com/fengyc/URLRedirector/master/tools/rules_geekzu.json",
+    "licenseId": 5,
     "name": "Fengyc's URLRedirector Rules - Geekzu",
-    "syntaxid": 31
+    "syntaxId": 31,
+    "viewUrl": "https://raw.githubusercontent.com/fengyc/URLRedirector/master/tools/rules_geekzu.json"
   },
   {
     "id": 1950,
@@ -20175,69 +20210,74 @@
     "descriptionSourceUrl": "https://github.com/durablenapkin/scamblocklist",
     "homeUrl": "https://github.com/durablenapkin/scamblocklist",
     "issuesUrl": "https://github.com/durablenapkin/scamblocklist/issues",
-    "submissionUrl": "https://github.com/durablenapkin/scamblocklist/issues/new/choose",
     "licenseId": 2,
     "name": "Scam Blocklist",
     "publishedDate": "2019-10-30T17:27:37",
+    "submissionUrl": "https://github.com/durablenapkin/scamblocklist/issues/new/choose",
     "syntaxId": 1,
     "updatedDate": "2019-11-01T05:32:39",
     "viewUrl": "https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/hosts.txt"
   },
   {
     "id": 1957,
-    "viewUrl": "https://raw.githubusercontent.com/Yumire/kiss-filters/master/filters.txt",
-    "name": "Kiss Filters",
     "description": "A list of filters for use with the various Kiss sites.",
-    "syntaxid": 4,
-    "homeUrl": "https://github.com/Yumire/kiss-filters/"
+    "homeUrl": "https://github.com/Yumire/kiss-filters/",
+    "licenseId": 5,
+    "name": "Kiss Filters",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Yumire/kiss-filters/master/filters.txt"
   },
   {
     "id": 1958,
-    "viewUrl": "https://gitlab.com/Sorrow-San/9anime-adblock-filters/raw/master/9Anime%20filter%20list",
-    "name": "9Anime Filter-list: No Banner Ads",
     "description": "Filters to fix common issues with 9Anime and block malicious code",
-    "syntaxid": 4,
-    "homeUrl": "https://gitlab.com/Sorrow-San/9anime-adblock-filters/"
+    "homeUrl": "https://gitlab.com/Sorrow-San/9anime-adblock-filters/",
+    "licenseId": 5,
+    "name": "9Anime Filter-list: No Banner Ads",
+    "syntaxId": 4,
+    "viewUrl": "https://gitlab.com/Sorrow-San/9anime-adblock-filters/raw/master/9Anime%20filter%20list"
   },
   {
     "id": 1959,
-    "viewUrl": "https://raw.githubusercontent.com/RiiConnect24/DNS-Server/master/dns_zones-hosts.txt",
-    "name": "RiiConnect24/Wiimmfi List for Users of AdGuard Home and Pi-Hole",
     "description": "A hosts file to connect to the third-party DS/Wii online servers hosted by RiiConnect24 and Wiimmfi. Can be used for Nintendo DS games and WiiConnect24. Unfortunately doesn't work for Wii games.",
-    "syntaxid": 14,
-    "homeUrl": "https://github.com/RiiConnect24/DNS-Server/"
+    "homeUrl": "https://github.com/RiiConnect24/DNS-Server/",
+    "licenseId": 5,
+    "name": "RiiConnect24/Wiimmfi List for Users of AdGuard Home and Pi-Hole",
+    "syntaxId": 14,
+    "viewUrl": "https://raw.githubusercontent.com/RiiConnect24/DNS-Server/master/dns_zones-hosts.txt"
   },
   {
     "id": 1960,
-    "viewUrl": "https://www.darklist.de/raw.php",
-    "name": "DarklistDE IP Blacklist",
     "description": "Darklist.de is an IP blacklist that uses multiple sensors to identify network attacks (e.g. SSH brute force) and spam incidents. All reports are evaluated and in case of too many incidents the responsible IP holder is informed to solve the problem. After reporting an incident as solved the IP is removed from the blacklist.",
-    "syntaxid": 32,
-    "homeUrl": "https://www.darklist.de/"
+    "homeUrl": "https://www.darklist.de/",
+    "licenseId": 5,
+    "name": "DarklistDE IP Blacklist",
+    "syntaxId": 32,
+    "viewUrl": "https://www.darklist.de/raw.php"
   },
   {
     "id": 1961,
-    "viewUrl": "https://raw.githubusercontent.com/xorcan/hosts/master/xelement.txt",
+    "homeUrl": "https://github.com/xorcan/hosts/",
+    "licenseId": 4,
     "name": "xorcan Türk element-ad-list (Turkish)",
-    "syntaxid": 3,
-    "licenseid": 4,
-    "homeUrl": "https://github.com/xorcan/hosts/"
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/xorcan/hosts/master/xelement.txt"
   },
   {
     "id": 1962,
-    "viewUrl": "https://raw.githubusercontent.com/xorcan/hosts/master/xips.txt",
+    "homeUrl": "https://github.com/xorcan/hosts/",
+    "licenseId": 4,
     "name": "xorcan Türk harmful ip-list (Turkish)",
-    "syntaxid": 9,
-    "licenseid": 4,
-    "homeUrl": "https://github.com/xorcan/hosts/"
+    "syntaxId": 9,
+    "viewUrl": "https://raw.githubusercontent.com/xorcan/hosts/master/xips.txt"
   },
   {
     "id": 1963,
-    "viewUrl": "https://gitlab.com/Sorrow-San/9anime-adblock-filters/raw/master_with_banners/9Anime%20filter%20list",
-    "name": "9Anime Filter-list: Banners Allowed",
     "description": "Filters to fix common issues with 9Anime and block malicious code",
-    "syntaxid": 4,
-    "homeUrl": "https://gitlab.com/Sorrow-San/9anime-adblock-filters/"
+    "homeUrl": "https://gitlab.com/Sorrow-San/9anime-adblock-filters/",
+    "licenseId": 5,
+    "name": "9Anime Filter-list: Banners Allowed",
+    "syntaxId": 4,
+    "viewUrl": "https://gitlab.com/Sorrow-San/9anime-adblock-filters/raw/master_with_banners/9Anime%20filter%20list"
   },
   {
     "id": 1964,
@@ -20532,8 +20572,9 @@
   {
     "id": 1985,
     "description": "AdGuard's official DNS server to remove ads and trackers. Believed to be using \"AdGuard Simplified Domain Names Filter\". Links that didn't fit in the View button URL texts, include 176.103.130.131 — 2a00:5a60::ad1:0ff — 2a00:5a60::ad2:0ff",
-    "homeUrl": "https://adguard.com/adguard-dns/overview.html",
     "emailAddress": "support@adguard.com",
+    "homeUrl": "https://adguard.com/adguard-dns/overview.html",
+    "licenseId": 5,
     "name": "AdGuard DNS — Standard",
     "syntaxId": 21,
     "viewUrl": "https://dns.adguard.com/dns-query",
@@ -20543,8 +20584,9 @@
   {
     "id": 1986,
     "description": "AdGuard's official DNS server to remove ads, trackers, and porn. Believed to be using \"AdGuard Simplified Domain Names Filter\", as well as AdGuard's Safe Search plugin and an unspecified third-party anti-porn list. Links that didn't fit in the View button URL texts, include 176.103.130.134 — 2a00:5a60::bad1:0ff — 2a00:5a60::bad2:0ff",
-    "homeUrl": "https://adguard.com/adguard-dns/overview.html",
     "emailAddress": "support@adguard.com",
+    "homeUrl": "https://adguard.com/adguard-dns/overview.html",
+    "licenseId": 5,
     "name": "AdGuard DNS — Family Protection",
     "syntaxId": 21,
     "viewUrl": "https://dns-family.adguard.com/dns-query",
@@ -20886,6 +20928,7 @@
     "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
     "descriptionSourceUrl": "http://ipverse.net/",
     "homeUrl": "http://ipverse.net/",
+    "licenseId": 5,
     "name": "IPverse IP address block lists - PR-China IPv4",
     "syntaxId": 34,
     "viewUrl": "http://ipverse.net/ipblocks/data/countries/cn.zone"
@@ -20895,6 +20938,7 @@
     "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
     "descriptionSourceUrl": "http://ipverse.net/",
     "homeUrl": "http://ipverse.net/",
+    "licenseId": 5,
     "name": "IPverse IP address block lists - Russia IPv4",
     "syntaxId": 34,
     "viewUrl": "http://ipverse.net/ipblocks/data/countries/ru.zone"
@@ -20904,6 +20948,7 @@
     "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
     "descriptionSourceUrl": "http://ipverse.net/",
     "homeUrl": "http://ipverse.net/",
+    "licenseId": 5,
     "name": "IPverse IP address block lists - Ukraine IPv4",
     "syntaxId": 34,
     "viewUrl": "http://ipverse.net/ipblocks/data/countries/ua.zone"
@@ -20913,6 +20958,7 @@
     "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
     "descriptionSourceUrl": "http://ipverse.net/",
     "homeUrl": "http://ipverse.net/",
+    "licenseId": 5,
     "name": "IPverse IP address block lists - Romania IPv4",
     "syntaxId": 34,
     "viewUrl": "http://ipverse.net/ipblocks/data/countries/ro.zone"
@@ -20946,6 +20992,7 @@
     "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
     "descriptionSourceUrl": "http://ipverse.net/",
     "homeUrl": "http://ipverse.net/",
+    "licenseId": 5,
     "name": "IPverse IP address block lists - PR-China IPv6",
     "syntaxId": 41,
     "viewUrl": "http://ipverse.net/ipblocks/data/countries/cn-ipv6.zone"
@@ -20955,6 +21002,7 @@
     "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
     "descriptionSourceUrl": "http://ipverse.net/",
     "homeUrl": "http://ipverse.net/",
+    "licenseId": 5,
     "name": "IPverse IP address block lists - Russia IPv6",
     "syntaxId": 41,
     "viewUrl": "http://ipverse.net/ipblocks/data/countries/ru-ipv6.zone"
@@ -20964,6 +21012,7 @@
     "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
     "descriptionSourceUrl": "http://ipverse.net/",
     "homeUrl": "http://ipverse.net/",
+    "licenseId": 5,
     "name": "IPverse IP address block lists - Ukraine IPv6",
     "syntaxId": 41,
     "viewUrl": "http://ipverse.net/ipblocks/data/countries/ua-ipv6.zone"
@@ -20973,12 +21022,14 @@
     "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
     "descriptionSourceUrl": "http://ipverse.net/",
     "homeUrl": "http://ipverse.net/",
+    "licenseId": 5,
     "name": "IPverse IP address block lists - Romania IPv6",
     "syntaxId": 41,
     "viewUrl": "http://ipverse.net/ipblocks/data/countries/ro-ipv6.zone"
   },
   {
     "id": 2033,
+    "licenseId": 5,
     "name": "Blockzilla (Hosts)",
     "syntaxId": 1,
     "viewUrl": "https://block.energized.pro/assets/sources/filter/blockzilla.txt"

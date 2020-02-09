@@ -1372,6 +1372,22 @@
     "maintainerId": 46
   },
   {
+    "filterListId": 1968,
+    "maintainerId": 46
+  },
+  {
+    "filterListId": 1969,
+    "maintainerId": 46
+  },
+  {
+    "filterListId": 1970,
+    "maintainerId": 46
+  },
+  {
+    "filterListId": 1971,
+    "maintainerId": 46
+  },
+  {
     "filterListId": 207,
     "maintainerId": 47
   },
@@ -4766,21 +4782,5 @@
   {
     "filterListId": 1839,
     "maintainerId": 144
-  },
-  {
-    "filterListId": 1968,
-    "maintainerId": 46
-  },
-  {
-    "filterListId": 1969,
-    "maintainerId": 46
-  },
-  {
-    "filterListId": 1970,
-    "maintainerId": 46
-  },
-  {
-    "filterListId": 1971,
-    "maintainerId": 46
   }
 ]
