@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
-using Newtonsoft.Json;
 
 namespace FilterLists.Api.DependencyInjection.Extensions
 {
@@ -27,12 +26,7 @@ namespace FilterLists.Api.DependencyInjection.Extensions
 
         private static void AddControllersCustom(this IServiceCollection services) =>
             services.AddControllers()
-                    .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
-                    .AddNewtonsoftJson(opts =>
-                    {
-                        opts.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
-                        opts.SerializerSettings.ContractResolver = new SkipEmptyContractResolver();
-                    });
+                    .SetCompatibilityVersion(CompatibilityVersion.Latest);
 
         private static void AddRoutingCustom(this IServiceCollection services) =>
             services.AddRouting(opts => opts.LowercaseUrls = true);
