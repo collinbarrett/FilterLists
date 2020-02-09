@@ -8,9 +8,8 @@
     <PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
     <OutputType>Exe</OutputType>
     <RuntimeIdentifier>linux-musl-x64</RuntimeIdentifier>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
-    <DockerDebuggeeProgram>/usr/bin/dotnet</DockerDebuggeeProgram>
-    <DockerDebuggeeArguments>--additionalProbingPath /root/.nuget/fallbackpackages2 --additionalProbingPath /root/.nuget/fallbackpackages "bin/$(Configuration)/$(TargetFramework)/$(AssemblyName).dll" -a -v</DockerDebuggeeArguments>
   </PropertyGroup>
 
   <PropertyGroup>

@@ -6,9 +6,8 @@
     <PublishReadyToRun>true</PublishReadyToRun>
     <PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
     <RuntimeIdentifier>linux-musl-x64</RuntimeIdentifier>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
-    <DockerfileContext>..\..</DockerfileContext>
-    <DockerfileFastModeStage>build</DockerfileFastModeStage>
   </PropertyGroup>
 
   <PropertyGroup>

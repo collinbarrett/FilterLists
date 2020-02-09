@@ -1,8 +1,13 @@
 # Context: .
 # Command: docker build -f server/src/FilterLists.Api/Dockerfile .
 
-# init base
-FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine as base
+# init vs debug base
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
+WORKDIR /app
+EXPOSE 80
+
+# init base-prod
+FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine as base-prod
 EXPOSE 80
 ENTRYPOINT ["./FilterLists.Api"]
 COPY data/. data/
@@ -59,5 +64,5 @@ FROM build AS publish
 RUN dotnet publish -c Release -r linux-musl-x64 -o out --no-restore --no-build
 
 # final
-FROM base as final
+FROM base-prod as final
 COPY --from=publish /app/src/FilterLists.Api/out .

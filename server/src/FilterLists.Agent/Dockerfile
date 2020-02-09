@@ -1,8 +1,12 @@
 # Context: .
 # Command: docker build -f server/src/FilterLists.Agent/Dockerfile .
 
-# init base
-FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine as base
+# init vs debug base
+FROM mcr.microsoft.com/dotnet/core/runtime:3.1-buster-slim AS base
+WORKDIR /app
+
+# init base-prod
+FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine as base-prod
 ENTRYPOINT ["./FilterLists.Agent"]
 WORKDIR /app
 
@@ -36,5 +40,5 @@ FROM build AS publish
 RUN dotnet publish -c Release -r linux-musl-x64 -o out --no-restore --no-build
 
 # final
-FROM base as final
+FROM base-prod as final
 COPY --from=publish /app/src/FilterLists.Agent/out .
