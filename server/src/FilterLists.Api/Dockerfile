@@ -1,15 +1,16 @@
 # Context: .
 # Command: docker build -f server/src/FilterLists.Api/Dockerfile .
 
-# init vs debug base
+# init base debug (for VS)
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
-WORKDIR /app
 EXPOSE 80
+COPY data/. data/
+WORKDIR /app
 
 # init base-prod
 FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine as base-prod
-EXPOSE 80
 ENTRYPOINT ["./FilterLists.Api"]
+EXPOSE 80
 COPY data/. data/
 WORKDIR /app
 
