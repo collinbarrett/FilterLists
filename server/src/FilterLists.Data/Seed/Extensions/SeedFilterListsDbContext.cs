@@ -102,7 +102,7 @@ namespace FilterLists.Data.Seed.Extensions
                 return;
             var columns = string.Join(", ", properties.Select(x => x.Name));
             var updates = CreateUpdates(properties);
-            var sql = "INSERT INTO " + entityType.Relational().TableName + " (" + columns + ") VALUES " + values +
+            var sql = "INSERT INTO " + entityType.GetTableName() + " (" + columns + ") VALUES " + values +
                       " ON DUPLICATE KEY UPDATE " + updates;
             await dbContext.Database.ExecuteSqlCommandAsync(sql);
         }

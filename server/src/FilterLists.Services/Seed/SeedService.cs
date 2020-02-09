@@ -24,10 +24,11 @@ namespace FilterLists.Services.Seed
         public async Task<IEnumerable<TSeedDto>> GetAllAsync<TEntity, TSeedDto>(PropertyInfo primarySort,
             PropertyInfo secondarySort)
             where TEntity : class =>
-            await DbContext.Set<TEntity>()
-                           .OrderBy(s => primarySort.GetValue(s, null))
-                           .ThenBy(s => secondarySort.GetValue(s, null))
-                           .ProjectTo<TSeedDto>(MapConfig)
-                           .ToListAsync();
+            (await DbContext.Set<TEntity>().ToListAsync())
+                        .AsQueryable()
+                        .OrderBy(s => primarySort.GetValue(s, null))
+                        .ThenBy(s => secondarySort.GetValue(s, null))
+                        .ProjectTo<TSeedDto>(MapConfig)
+                        .ToList();
     }
 }
