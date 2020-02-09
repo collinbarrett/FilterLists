@@ -25,7 +25,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
             services.AddSingleton(c => config);
             services.AddDbContextPool<FilterListsDbContext>(o =>
                     o.UseMySql(config.GetConnectionString("FilterListsConnection"),
-                        m => m.MigrationsAssembly("FilterLists.Api")
+                        m => m.MigrationsAssembly("FilterLists.Data")
                               .ServerVersion(new ServerVersion(new Version(10, 4, 12), ServerType.MariaDb))));
             services.TryAddScoped<FilterListService>();
             services.TryAddScoped<LanguageService>();
