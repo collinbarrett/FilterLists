@@ -15,7 +15,7 @@ namespace FilterLists.Data.Tests
 
             const string connString = "Server=mariadb;Database=filterlists;Uid=filterlists;Pwd=filterlists;";
             var options = new DbContextOptionsBuilder<FilterListsDbContext>()
-                          .UseMySql(connString, m => m.MigrationsAssembly("FilterLists.Data")
+                          .UseMySql(connString, m => m.MigrationsAssembly(Constants.MigrationsAssembly)
                                                       .ServerVersion(Constants.ServerVersion))
                           .Options;
 

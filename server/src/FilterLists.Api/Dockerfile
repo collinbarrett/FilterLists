@@ -20,6 +20,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine AS build
 # restore
 WORKDIR /app/src
 COPY server/src/FilterLists.Data/FilterLists.Data.csproj FilterLists.Data/
+COPY server/src/FilterLists.Data.Migrations/FilterLists.Data.Migrations.csproj FilterLists.Data.Migrations/
 COPY server/src/FilterLists.Services/FilterLists.Services.csproj FilterLists.Services/
 WORKDIR /app/src/FilterLists.Api
 COPY server/src/FilterLists.Api/FilterLists.Api.csproj .
@@ -28,6 +29,7 @@ RUN dotnet restore
 # build
 WORKDIR /app/src
 COPY server/src/FilterLists.Data/. FilterLists.Data/
+COPY server/src/FilterLists.Data.Migrations/. FilterLists.Data.Migrations/
 COPY server/src/FilterLists.Services/. FilterLists.Services/
 WORKDIR /app/src/FilterLists.Api
 COPY server/src/FilterLists.Api/. .
