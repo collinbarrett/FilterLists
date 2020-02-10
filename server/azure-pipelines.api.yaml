@@ -73,7 +73,8 @@ steps:
   - task: CmdLine@2
     displayName: "test adding migration"
     inputs:
-      script: "dotnet ef add migration TestMigration -p server/src/FilterLists.Data.Migrations -s server/src/FilterLists.Api"
+      workingDirectory: "server/src"
+      script: "dotnet ef migrations add TestMigration -p FilterLists.Data.Migrations -s FilterLists.Api"
 
   - task: DockerCompose@0
     displayName: "run test-data"
