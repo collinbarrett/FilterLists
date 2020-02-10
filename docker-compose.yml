@@ -37,7 +37,7 @@ services:
       ConnectionStrings__FilterListsConnection: ${API_CONNECTION_STRING}
 
   mariadb:
-    # on update, also update ServerVersion in FilterLists.Services.DependencyInjection.Extensions.ConfigureServicesCollection
+    # on update, also update ServerVersion in FilterLists.Data.Constants.ServerVersion
     image: mariadb:10.4.12
     restart: always
     networks:

@@ -12,9 +12,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
-using Pomelo.EntityFrameworkCore.MySql.Storage;
-using System;
 
 namespace FilterLists.Services.DependencyInjection.Extensions
 {
@@ -26,7 +23,7 @@ namespace FilterLists.Services.DependencyInjection.Extensions
             services.AddDbContextPool<FilterListsDbContext>(o =>
                     o.UseMySql(config.GetConnectionString("FilterListsConnection"),
                         m => m.MigrationsAssembly("FilterLists.Data")
-                              .ServerVersion(new ServerVersion(new Version(10, 4, 12), ServerType.MariaDb))));
+                              .ServerVersion(Constants.ServerVersion)));
             services.TryAddScoped<FilterListService>();
             services.TryAddScoped<LanguageService>();
             services.TryAddScoped<LicenseService>();
