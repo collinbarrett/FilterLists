@@ -48,6 +48,12 @@ pool:
   vmImage: "ubuntu-latest"
 
 steps:
+  - task: Docker@2
+    displayName: "create volume test-data-results"
+    inputs:
+      command: "volume"
+      arguments: "create test-data-results"
+
   - task: DockerCompose@0
     displayName: "up test-data db"
     inputs:
@@ -68,12 +74,6 @@ steps:
     displayName: "test adding migration"
     inputs:
       script: "dotnet ef add migration TestMigration"
-
-  - task: Docker@2
-    displayName: "create volume test-data-results"
-    inputs:
-      command: "volume"
-      arguments: "create test-data-results"
 
   - task: DockerCompose@0
     displayName: "run test-data"
