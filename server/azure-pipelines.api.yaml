@@ -48,6 +48,11 @@ pool:
   vmImage: "ubuntu-latest"
 
 steps:
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: "tool"
+      arguments: "install --global dotnet-ef"
+
   - task: Docker@2
     displayName: "create volume test-data-results"
     inputs:
