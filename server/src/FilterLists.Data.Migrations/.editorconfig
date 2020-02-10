@@ -1,5 +1,0 @@
-﻿[*.cs]
-
-# CA1814: Prefer jagged arrays over multidimensional
-# https://github.com/dotnet/efcore/issues/11190#issuecomment-372059600
-dotnet_diagnostic.CA1814.severity = none
