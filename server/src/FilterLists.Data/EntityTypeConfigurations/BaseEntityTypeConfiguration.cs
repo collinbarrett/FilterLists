@@ -1,4 +1,5 @@
 ﻿using FilterLists.Data.Entities;
+using FilterLists.Data.Seed.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -21,6 +22,7 @@ namespace FilterLists.Data.EntityTypeConfigurations
                              .ValueGeneratedOnAddOrUpdate()
                              .IsRequired()
                              .HasDefaultValueSql("current_timestamp() ON UPDATE current_timestamp()");
+            entityTypeBuilder.HasDataJsonFile<TEntity>();
         }
     }
 }
