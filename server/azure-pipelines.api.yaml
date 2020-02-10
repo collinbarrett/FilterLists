@@ -48,6 +48,12 @@ pool:
   vmImage: "ubuntu-latest"
 
 steps:
+  - task: DockerCompose@0
+    displayName: "up test-data db"
+    inputs:
+      dockerComposeFile: "docker-compose.data.tests.yml"
+      dockerComposeCommand: "up -d mariadb"
+
   - task: UseDotNet@2
     displayName: "use latest dotnet sdk"
     inputs:
@@ -58,17 +64,16 @@ steps:
     inputs:
       script: "dotnet tool install -g dotnet-ef"
 
+  - task: CmdLine@2
+    displayName: "test adding migration"
+    inputs:
+      script: "dotnet ef add migration TestMigration"
+
   - task: Docker@2
     displayName: "create volume test-data-results"
     inputs:
       command: "volume"
       arguments: "create test-data-results"
-
-  - task: DockerCompose@0
-    displayName: "up test-data db"
-    inputs:
-      dockerComposeFile: "docker-compose.data.tests.yml"
-      dockerComposeCommand: "up -d mariadb"
 
   - task: DockerCompose@0
     displayName: "run test-data"
