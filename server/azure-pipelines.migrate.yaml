@@ -67,7 +67,7 @@ steps:
   - task: CmdLine@2
     displayName: git config
     inputs:
-      script: git config user.email $(GitHub Email) && git config user.name $(GitHub UserName)
+      script: git config --global user.email $(GitHub Email) && git config --global user.name $(GitHub UserName)
 
   - task: CmdLine@2
     displayName: git add
