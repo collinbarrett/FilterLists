@@ -31,7 +31,7 @@ steps:
 
   - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: add migration
-    workingDirectory: server/src
+    workingDirectory: FilterLists/server/src
 
   - task: DockerCompose@0
     displayName: build test-data
