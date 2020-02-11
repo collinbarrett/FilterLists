@@ -16,7 +16,7 @@ steps:
   - script: |
       git clone $(Build.Repository.Uri) .
       git checkout $(System.PullRequest.SourceBranch)
-    displayName: git checkout source branch
+    displayName: checkout source branch
 
   - task: UseDotNet@2
     displayName: use latest dotnet sdk
@@ -26,6 +26,7 @@ steps:
   - script: dotnet tool install -g dotnet-ef
     displayName: install ef dotnet tool
 
+  # TODO: preserve line breaks in output from 'echo $MIGLIST'
   - bash: |
       MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
       echo $MIGLIST
@@ -89,11 +90,11 @@ steps:
     condition: succeededOrFailed()
 
   - bash: |
-      DIFF=$(git diff)
+      git add .
+      DIFF=$(git diff --cached --numstat | wc -l)
       echo $DIFF
-      if [[ $DIFF == *"3 files changed"* ]]; then
+      if [[ "$DIFF" == 3 ]]; then
         echo "The data change created a meaningful migration. Committing and pushing..."
-        git  add .
         git config --global user.name $GITHUB_USERNAME
         git config --global user.email $GITHUB_EMAIL
         git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
