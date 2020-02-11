@@ -86,8 +86,9 @@ steps:
 
   # TODO: if git diff only has 2 files changed, don't push
   - script: |
-      git config user.email $(GitHub Email)
       git config user.name $(GitHub UserName)
+      git config user.email $(GitHub Email)
+      git config user.password $(GitHub Personal Access Token)
       git diff
       git  add .
       git commit -m "migrate #$(System.PullRequest.PullRequestNumber)"
