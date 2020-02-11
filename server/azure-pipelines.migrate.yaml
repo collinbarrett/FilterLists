@@ -1,0 +1,72 @@
+trigger:
+  batch: false
+  branches:
+    include: ["master"]
+  paths:
+    include: ["server/azure-pipelines.migrate.yaml", "data/*"]
+
+pr:
+  autoCancel: false
+  branches:
+    include: ["master"]
+  paths:
+    include: ["server/azure-pipelines.migrate.yaml", "data/*"]
+
+pool:
+  vmImage: "ubuntu-latest"
+
+steps:
+  - task: Docker@2
+    displayName: "create volume test-data-results"
+    inputs:
+      command: "volume"
+      arguments: "create test-data-results"
+
+  - task: DockerCompose@0
+    displayName: "up test-data db"
+    inputs:
+      dockerComposeFile: "docker-compose.data.tests.yml"
+      dockerComposeCommand: "up -d mariadb"
+
+  - task: UseDotNet@2
+    displayName: "use latest dotnet sdk"
+    inputs:
+      version: 3.x
+
+  - task: CmdLine@2
+    displayName: "install ef dotnet tool"
+    inputs:
+      script: "dotnet tool install -g dotnet-ef"
+
+  - task: CmdLine@2
+    displayName: "add migration"
+    inputs:
+      workingDirectory: "server/src"
+      script: "dotnet ef migrations add $(System.PullRequest.PullRequestId) -p FilterLists.Data.Migrations -s FilterLists.Api"
+
+  - task: DockerCompose@0
+    displayName: "run test-data"
+    inputs:
+      dockerComposeFile: "docker-compose.data.tests.yml"
+      dockerComposeCommand: "run api"
+
+  - task: Docker@2
+    displayName: "create container test-data-results"
+    inputs:
+      command: "container"
+      arguments: "create --name test-data-results -v test-data-results:/results hello-world"
+    condition: "succeededOrFailed()"
+
+  - task: Docker@2
+    displayName: "copy out test-data results"
+    inputs:
+      command: "cp"
+      arguments: "test-data-results:/results $(System.DefaultWorkingDirectory)"
+    condition: "succeededOrFailed()"
+
+  - task: PublishTestResults@2
+    displayName: "publish test results"
+    inputs:
+      testResultsFormat: "VSTest"
+      testResultsFiles: "**/*.trx"
+    condition: "succeededOrFailed()"
