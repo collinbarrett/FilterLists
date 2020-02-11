@@ -54,7 +54,7 @@ steps:
     enabled: false
 
   - task: Docker@2
-    displayName: create container test-data-results
+    displayName: create test results container
     inputs:
       command: container
       arguments: create --name test-data-results -v test-data-results:/results hello-world
@@ -62,7 +62,7 @@ steps:
     enabled: false
 
   - task: Docker@2
-    displayName: copy out test-data results
+    displayName: copy out test results
     inputs:
       command: cp
       arguments: test-data-results:/results $(System.DefaultWorkingDirectory)
@@ -84,5 +84,5 @@ steps:
       git diff
       git  add .
       git commit -m "migrate #$(System.PullRequest.PullRequestNumber)"
-      git push origin HEAD:$(Build.SourceBranch)
-    displayName: git push
+      git push https://$(GitHub Personal Access Token)@$(echo $(Build.Repository.Uri) | cut -c9- | rev) HEAD:$(Build.SourceBranch)
+    displayName: git push migration
