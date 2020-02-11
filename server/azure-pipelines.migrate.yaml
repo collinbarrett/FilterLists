@@ -21,7 +21,7 @@ steps:
     inputs:
       script: dotnet tool install -g dotnet-ef
 
-  # TODO: check if migration already exists called $(System.PullRequest.PullRequestNumber) and remove it
+  # TODO: remove $(System.PullRequest.PullRequestNumber) migration if it already exists
 
   - task: CmdLine@2
     displayName: add migration
@@ -104,4 +104,5 @@ steps:
     inputs:
       displayName: git push
       targetType: "inline"
-      script: "git push -q https://$GITHUBPAT@${$REPOSITORYURI:8} HEAD:$SOURCEBRANCH"
+      script: "git push $REPOSITORYURI HEAD:$SOURCEBRANCH"
+      # script: "git push -q https://$GITHUBPAT@${$REPOSITORYURI:8} HEAD:$SOURCEBRANCH"
