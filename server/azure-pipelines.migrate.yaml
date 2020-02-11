@@ -5,8 +5,7 @@ pr:
   branches:
     include: [master]
   paths:
-    # TODO: rm yaml trigger
-    include: [server/azure-pipelines.migrate.yaml, data/*]
+    include: [data/*]
 
 pool:
   vmImage: ubuntu-latest
@@ -44,35 +43,29 @@ steps:
     displayName: add migration
     workingDirectory: server/src
 
-  # TODO: remove 'enabled: false' from testing
-
   - task: DockerCompose@0
     displayName: build test-data
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: build api
-    enabled: false
 
   - task: Docker@2
     displayName: create volume test-data-results
     inputs:
       command: volume
       arguments: create test-data-results
-    enabled: false
 
   - task: DockerCompose@0
     displayName: up test-data db
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: up -d mariadb
-    enabled: false
 
   - task: DockerCompose@0
     displayName: run test-data
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: run api
-    enabled: false
 
   - task: Docker@2
     displayName: create container test-data-results
@@ -80,7 +73,6 @@ steps:
       command: container
       arguments: create --name test-data-results -v test-data-results:/results hello-world
     condition: succeededOrFailed()
-    enabled: false
 
   - task: Docker@2
     displayName: copy out test-data results
@@ -88,7 +80,6 @@ steps:
       command: cp
       arguments: test-data-results:/results $(System.DefaultWorkingDirectory)
     condition: succeededOrFailed()
-    enabled: false
 
   - task: PublishTestResults@2
     displayName: publish test results
@@ -96,7 +87,6 @@ steps:
       testResultsFormat: VSTest
       testResultsFiles: "**/*.trx"
     condition: succeededOrFailed()
-    enabled: false
 
   - bash: |
       DIFF=$(git diff)
