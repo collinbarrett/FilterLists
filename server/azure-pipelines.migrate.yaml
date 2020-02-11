@@ -82,4 +82,4 @@ steps:
   - task: CmdLine@2
     displayName: git push
     inputs:
-      script: git push
+      script: git push origin HEAD:$(Build.SourceBranch)
