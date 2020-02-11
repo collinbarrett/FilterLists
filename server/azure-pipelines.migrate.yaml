@@ -28,10 +28,15 @@ steps:
     displayName: install ef dotnet tool
 
   # TODO: remove $(System.PullRequest.PullRequestNumber) migration if it already exists
+  - script: |
+      dotnet ef migrations list
+    displayName: remove existing migration for PR
+    workingDirectory: server/src
 
   - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: add migration
     workingDirectory: server/src
+    enabled: false
 
   # TODO: remove 'enabled: false' from testing
 
