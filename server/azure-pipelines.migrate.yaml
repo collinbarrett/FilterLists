@@ -13,7 +13,6 @@ pool:
 steps:
   - checkout: none
 
-  # TODO: limit clone depth to 5
   - script: |
       git clone $(Build.Repository.Uri) .
       git checkout $(System.PullRequest.SourceBranch)
@@ -92,5 +91,5 @@ steps:
       git diff
       git  add .
       git commit -m "migrate #$(System.PullRequest.PullRequestNumber)"
-      git push origin $(Build.SourceBranch)
+      git push origin $(System.PullRequest.SourceBranch)
     displayName: git push migration
