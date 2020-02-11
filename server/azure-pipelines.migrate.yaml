@@ -26,10 +26,9 @@ steps:
   - script: dotnet tool install -g dotnet-ef
     displayName: install ef dotnet tool
 
-  # TODO: preserve line breaks in output from 'echo $MIGLIST'
   - bash: |
       MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
-      echo $MIGLIST
+      echo "$MIGLIST"
       if [[ "$MIGLIST" == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]]
       then
         echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER, removing..."
@@ -93,14 +92,14 @@ steps:
   - bash: |
       git add .
       DIFF=$(git diff --cached --numstat | wc -l)
-      echo $DIFF
+      echo "$DIFF"
       if [[ "$DIFF" == 3 ]]; then
         echo "Committing and pushing migration..."
-        git config --global user.name $GITHUB_NAME
-        git config --global user.email $GITHUB_EMAIL
+        git config --global user.name $GITHUBNAME
+        git config --global user.email $GITHUBEMAIL
         git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
         git config --global credential.helper store
-        echo "https://$GITHUB_PAT:x-oauth-basic@github.com" >> ~/.git-credentials
+        echo "https://$GITHUBPAT:x-oauth-basic@github.com" >> ~/.git-credentials
         git push origin $SYSTEM_PULLREQUEST_SOURCEBRANCH
       else
         echo "Empty migration. Abandoning..."
@@ -108,6 +107,6 @@ steps:
     displayName: git push migration
     workingDirectory: server/src
     env:
-      GITHUB_NAME: $(GitHub.Name)
-      GITHUB_EMAIL: $(GitHub.Email)
-      GITHUB_PAT: $(GitHub.Pat)
+      GitHubName: $(GitHub.Name)
+      GitHubEmail: $(GitHub.Email)
+      GitHubPat: $(GitHub.Pat)
