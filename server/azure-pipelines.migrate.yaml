@@ -11,11 +11,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  - checkout: none
+  # - checkout: none
 
   - script: |
-      git clone $(Build.Repository.Uri)
-      cd FilterLists
       git checkout $(Build.SourceBranch)
     displayName: git checkout source branch
 
