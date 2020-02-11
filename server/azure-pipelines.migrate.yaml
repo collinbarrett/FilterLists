@@ -14,7 +14,7 @@ steps:
   # - checkout: none
 
   - script: |
-      git checkout $(Build.SourceBranch)
+      git switch -
     displayName: git checkout source branch
 
   - task: UseDotNet@2
