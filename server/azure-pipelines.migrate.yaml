@@ -42,7 +42,7 @@ steps:
     displayName: "add migration"
     inputs:
       workingDirectory: "server/src"
-      script: "dotnet ef migrations add $(System.PullRequest.PullRequestId) -p FilterLists.Data.Migrations -s FilterLists.Api"
+      script: dotnet ef migrations add $(System.PullRequest.PullRequestId) -p FilterLists.Data.Migrations -s FilterLists.Api
 
   - task: DockerCompose@0
     displayName: "run test-data"
