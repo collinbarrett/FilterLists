@@ -112,13 +112,11 @@ steps:
       # script: "git push -q https://$GITHUBPAT@${$REPOSITORYURI:8} HEAD:$SOURCEBRANCH"
     enabled: false
 
-  - task: CmdLine@2
-    displayName: git commit
-    inputs:
-      - script: |
-        git config user.email $(GitHub Email)
-        git config user.name $(GitHub UserName)
-        git diff
-        git  add .
-        git commit -m "migrate"
-        git push origin HEAD:$(Build.SourceBranch)
+  - script: |
+      git config user.email $(GitHub Email)
+      git config user.name $(GitHub UserName)
+      git diff
+      git  add .
+      git commit -m "migrate"
+      git push origin HEAD:$(Build.SourceBranch)
+    displayName: git push
