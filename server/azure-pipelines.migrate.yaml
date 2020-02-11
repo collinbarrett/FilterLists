@@ -11,18 +11,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  - task: Docker@2
-    displayName: create volume test-data-results
-    inputs:
-      command: volume
-      arguments: create test-data-results
-
-  - task: DockerCompose@0
-    displayName: up test-data db
-    inputs:
-      dockerComposeFile: docker-compose.data.tests.yml
-      dockerComposeCommand: up -d mariadb
-
   - task: UseDotNet@2
     displayName: use latest dotnet sdk
     inputs:
@@ -46,12 +34,28 @@ steps:
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: build api
+    enabled: false
+
+  - task: Docker@2
+    displayName: create volume test-data-results
+    inputs:
+      command: volume
+      arguments: create test-data-results
+    enabled: false
+
+  - task: DockerCompose@0
+    displayName: up test-data db
+    inputs:
+      dockerComposeFile: docker-compose.data.tests.yml
+      dockerComposeCommand: up -d mariadb
+    enabled: false
 
   - task: DockerCompose@0
     displayName: run test-data
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: run api
+    enabled: false
 
   - task: Docker@2
     displayName: create container test-data-results
@@ -59,6 +63,7 @@ steps:
       command: container
       arguments: create --name test-data-results -v test-data-results:/results hello-world
     condition: succeededOrFailed()
+    enabled: false
 
   - task: Docker@2
     displayName: copy out test-data results
@@ -66,6 +71,7 @@ steps:
       command: cp
       arguments: test-data-results:/results $(System.DefaultWorkingDirectory)
     condition: succeededOrFailed()
+    enabled: false
 
   - task: PublishTestResults@2
     displayName: publish test results
@@ -73,6 +79,7 @@ steps:
       testResultsFormat: VSTest
       testResultsFiles: "**/*.trx"
     condition: succeededOrFailed()
+    enabled: false
 
   - task: CmdLine@2
     displayName: git config
@@ -97,4 +104,4 @@ steps:
     inputs:
       displayName: git push
       targetType: "inline"
-      script: "git push -q https://$GitHubPat@${$RepositoryUri:8} HEAD:$SourceBranch"
+      script: "git push -q https://$GITHUBPAT@${$REPOSITORYURI:8} HEAD:$SOURCEBRANCH"
