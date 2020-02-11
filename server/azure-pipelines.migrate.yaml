@@ -43,6 +43,18 @@ steps:
     displayName: add migration
     workingDirectory: server/src
 
+  # TODO: on empty migration, skip remaining steps without erroring the pipeline
+  - bash: |
+      git add .
+      DIFF=$(git diff --cached --numstat | wc -l)
+      echo "$DIFF"
+      if [[ "$DIFF" == 2 ]]; then
+        echo "Empty migration. Abandoning..."
+        exit 1
+      fi
+    displayName: check for empty migration
+    workingDirectory: server/src
+
   - task: DockerCompose@0
     displayName: build test-data
     inputs:
@@ -88,25 +100,11 @@ steps:
       testResultsFiles: "**/*.trx"
     condition: succeededOrFailed()
 
-  # TODO: test for empty migration sooner
-  - bash: |
-      git add .
-      DIFF=$(git diff --cached --numstat | wc -l)
-      echo "$DIFF"
-      if [[ "$DIFF" == 3 ]]; then
-        echo "Committing and pushing migration..."
-        git config --global user.name $GITHUBNAME
-        git config --global user.email $GITHUBEMAIL
-        git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
-        git config --global credential.helper store
-        echo "https://$GITHUBPAT:x-oauth-basic@github.com" >> ~/.git-credentials
-        git push origin $SYSTEM_PULLREQUEST_SOURCEBRANCH
-      else
-        echo "Empty migration. Abandoning..."
-      fi
+  - script: |
+      git config --global user.name $(GitHub.Name)
+      git config --global user.email $(GitHub.Email)
+      git commit -m "migrate PR #$(System.PullRequest.PullRequestNumber)"
+      git config --global credential.helper store
+      echo "https://$(GitHub.PAT):x-oauth-basic@github.com" >> ~/.git-credentials
+      git push origin $(System.PullRequest.SourceBranch)
     displayName: git push migration
-    workingDirectory: server/src
-    env:
-      GitHubName: $(GitHub.Name)
-      GitHubEmail: $(GitHub.Email)
-      GitHubPat: $(GitHub.Pat)
