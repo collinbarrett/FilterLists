@@ -1,12 +1,5 @@
-trigger:
-  batch: false
-  branches:
-    include: [master]
-  paths:
-    include: [server/azure-pipelines.migrate.yaml, data/*]
-
 pr:
-  autoCancel: false
+  autoCancel: true
   branches:
     include: [master]
   paths:
@@ -74,4 +67,4 @@ steps:
   - task: CmdLine@2
     displayName: git config
     inputs:
-      script: git config user.email \"$(GitHub Email)\" && git config user.name \"$(GitHub UserName)\"
+      script: git config user.email $(GitHub Email) && git config user.name $(GitHub UserName) && git commit -m "migrate" && git push
