@@ -81,7 +81,12 @@ steps:
     inputs:
       script: git commit -m "migrate"
 
-  - task: CmdLine@2
-    displayName: git push
+  - task: Bash@3
+    env:
+      GitHubPat: $(GitHub Personal Access Token)
+      RepositoryUri: $(Build.Repository.Uri)
+      SourceBranch: $(Build.SourceBranch)
     inputs:
-      script: git push -q https://$(GitHub Personal Access Token)@$${$(Build.Repository.Uri):8}} HEAD:$(Build.SourceBranch)
+      displayName: git push
+      targetType: "inline"
+      script: "# echo git push -q https://$GitHubPat@${$RepositoryUri:8} HEAD:$SourceBranch"
