@@ -14,7 +14,7 @@ steps:
   - checkout: none
 
   - script: |
-      git clone $(Build.Repository.Uri)
+      git clone $(Build.Repository.Uri) .
       cd FilterLists
       git checkout $(System.PullRequest.SourceBranch)
     displayName: git checkout source branch
@@ -31,7 +31,7 @@ steps:
 
   - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: add migration
-    workingDirectory: FilterLists/server/src
+    workingDirectory: server/src
 
   - task: DockerCompose@0
     displayName: build test-data
