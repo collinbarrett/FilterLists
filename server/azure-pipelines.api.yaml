@@ -21,7 +21,7 @@ trigger:
       ]
 
 pr:
-  autoCancel: false
+  autoCancel: true
   branches:
     include: [master]
   paths:

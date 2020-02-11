@@ -32,6 +32,8 @@ steps:
     displayName: add migration
     workingDirectory: server/src
 
+  # TODO: remove 'enabled: false' from testing
+
   - task: DockerCompose@0
     displayName: build test-data
     inputs:
@@ -61,7 +63,7 @@ steps:
     enabled: false
 
   - task: Docker@2
-    displayName: create test results container
+  displayName: create container test-data-results
     inputs:
       command: container
       arguments: create --name test-data-results -v test-data-results:/results hello-world
@@ -69,7 +71,7 @@ steps:
     enabled: false
 
   - task: Docker@2
-    displayName: copy out test results
+  displayName: copy out test-data results
     inputs:
       command: cp
       arguments: test-data-results:/results $(System.DefaultWorkingDirectory)
