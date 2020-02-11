@@ -84,5 +84,5 @@ steps:
       git diff
       git  add .
       git commit -m "migrate #$(System.PullRequest.PullRequestNumber)"
-      git push https://$(GitHub Personal Access Token)@${Build.Repository.Uri#"$https://"} HEAD:$(Build.SourceBranch)
+      git push https://$(GitHub Personal Access Token)@$(Build.Repository.Uri) HEAD:$(Build.SourceBranch)
     displayName: git push migration
