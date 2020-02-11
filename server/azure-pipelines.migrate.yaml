@@ -70,3 +70,8 @@ steps:
       testResultsFormat: VSTest
       testResultsFiles: "**/*.trx"
     condition: succeededOrFailed()
+
+  - task: CmdLine@2
+    displayName: git config
+    inputs:
+      script: git config user.email \"$(GitHub Email)\" && git config user.name \"$(GitHub UserName)\"
