@@ -11,10 +11,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  # - checkout: none
+  - checkout: none
 
   - script: |
-      git switch -
+      git clone $(Build.Repository.Uri)
+      cd FilterLists
+      git checkout $(System.PullRequest.SourceBranch)
     displayName: git checkout source branch
 
   - task: UseDotNet@2
