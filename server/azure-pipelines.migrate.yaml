@@ -29,12 +29,13 @@ steps:
 
   - bash: |
       MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
+      echo $MIGLIST
       if [[ "$MIGLIST" == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]]
       then
-        echo "migration already exists for $SYSTEM_PULLREQUEST_PULLREQUESTNUMBER, removing"
-        dotnet ef migrations remove -p FilterLists.Data.Migrations -s FilterLists.Api
+        echo "A migration already exists for $SYSTEM_PULLREQUEST_PULLREQUESTNUMBER, removing..."
+        dotnet ef migrations remove -f -p FilterLists.Data.Migrations -s FilterLists.Api
       else
-        echo "no migration exists yet for $SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
+        echo "No migration exists yet for $SYSTEM_PULLREQUEST_PULLREQUESTNUMBER."
       fi
     displayName: remove existing PR migration (if exists)
     workingDirectory: server/src
