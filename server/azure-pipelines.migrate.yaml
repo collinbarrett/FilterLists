@@ -14,7 +14,7 @@ steps:
   - checkout: none
 
   - script: |
-      git clone $(Build.Repository.Uri) .
+      git clone $(Build.Repository.Uri) . --depth 5
       git checkout $(System.PullRequest.SourceBranch)
     displayName: git checkout source branch
 
