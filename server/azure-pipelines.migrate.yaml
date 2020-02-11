@@ -13,8 +13,9 @@ pool:
 steps:
   - checkout: none
 
+  # TODO: limit clone depth to 5
   - script: |
-      git clone $(Build.Repository.Uri) . --depth 5
+      git clone $(Build.Repository.Uri) .
       git checkout $(System.PullRequest.SourceBranch)
     displayName: git checkout source branch
 
