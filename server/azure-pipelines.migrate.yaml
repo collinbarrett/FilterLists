@@ -32,10 +32,10 @@ steps:
       echo $MIGLIST
       if [[ "$MIGLIST" == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]]
       then
-        echo "A migration already exists for $SYSTEM_PULLREQUEST_PULLREQUESTNUMBER, removing..."
-        dotnet ef migrations remove -f -p FilterLists.Data.Migrations -s FilterLists.Api
+        echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER, removing..."
+        dotnet ef migrations remove -p FilterLists.Data.Migrations -s FilterLists.Api
       else
-        echo "No migration exists yet for $SYSTEM_PULLREQUEST_PULLREQUESTNUMBER."
+        echo "No migration exists yet for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER."
       fi
     displayName: remove existing PR migration (if exists)
     workingDirectory: server/src
@@ -98,14 +98,20 @@ steps:
     condition: succeededOrFailed()
     enabled: false
 
-  # TODO: if git diff only has 2 files changed, don't push
-  - script: |
-      git diff
-      git  add .
-      git config --global user.name $(GitHub UserName)
-      git config --global user.email $(GitHub Email)
-      git commit -m "migrate #$(System.PullRequest.PullRequestNumber)"
-      git config --global credential.helper store
-      echo "https://$(GitHub Personal Access Token):x-oauth-basic@github.com" >> ~/.git-credentials
-      git push origin $(System.PullRequest.SourceBranch)
+  - bash: |
+      DIFF=$(git diff)
+      echo $DIFF
+      if [[ $DIFF == *"3 files changed"* ]]; then
+        echo "The data change created a meaningful migration. Committing and pushing..."
+        git  add .
+        git config --global user.name $GITHUB_USERNAME
+        git config --global user.email $GITHUB_EMAIL
+        git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
+        git config --global credential.helper store
+        echo "https://$GITHUB_PERSONAL_ACCESS_TOKEN:x-oauth-basic@github.com" >> ~/.git-credentials
+        git push origin $SYSTEM_PULLREQUEST_SOURCEBRANCH
+      else
+        echo "No data change detected. Abandoning the migration..."
+      fi
     displayName: git push migration
+    workingDirectory: server/src
