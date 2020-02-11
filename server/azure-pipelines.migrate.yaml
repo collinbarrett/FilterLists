@@ -63,7 +63,7 @@ steps:
     enabled: false
 
   - task: Docker@2
-  displayName: create container test-data-results
+    displayName: create container test-data-results
     inputs:
       command: container
       arguments: create --name test-data-results -v test-data-results:/results hello-world
@@ -71,7 +71,7 @@ steps:
     enabled: false
 
   - task: Docker@2
-  displayName: copy out test-data results
+    displayName: copy out test-data results
     inputs:
       command: cp
       arguments: test-data-results:/results $(System.DefaultWorkingDirectory)
@@ -95,5 +95,5 @@ steps:
       git commit -m "migrate #$(System.PullRequest.PullRequestNumber)"
       git config --global credential.helper store
       echo "https://$(GitHub Personal Access Token):x-oauth-basic@github.com" >> ~/.git-credentials
-      git push origin $(System.PullRequest.SourceBranch)
     displayName: git push migration
+    # TODO: add to end of above: git push origin $(System.PullRequest.SourceBranch)
