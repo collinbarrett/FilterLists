@@ -89,13 +89,13 @@ steps:
       testResultsFiles: "**/*.trx"
     condition: succeededOrFailed()
 
-  # TODO: test for meaningful migration right 'after migrations add'
+  # TODO: test for empty migration sooner
   - bash: |
       git add .
       DIFF=$(git diff --cached --numstat | wc -l)
       echo $DIFF
       if [[ "$DIFF" == 3 ]]; then
-        echo "The data change created a meaningful migration. Committing and pushing..."
+        echo "Committing and pushing migration..."
         git config --global user.name $GITHUB_NAME
         git config --global user.email $GITHUB_EMAIL
         git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
@@ -103,7 +103,7 @@ steps:
         echo "https://$GITHUB_PAT:x-oauth-basic@github.com" >> ~/.git-credentials
         git push origin $SYSTEM_PULLREQUEST_SOURCEBRANCH
       else
-        echo "No data change detected. Abandoning the migration..."
+        echo "Empty migration. Abandoning..."
       fi
     displayName: git push migration
     workingDirectory: server/src
