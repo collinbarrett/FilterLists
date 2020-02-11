@@ -84,4 +84,4 @@ steps:
   - task: CmdLine@2
     displayName: git push
     inputs:
-      script: git push -q https://$(GitHub Personal Access Token)@$(Build.Repository.Uri) HEAD:$(Build.SourceBranch)
+      script: git push -q https://$(GitHub Personal Access Token)@${$(Build.Repository.Uri)#"$https://"} HEAD:$(Build.SourceBranch)
