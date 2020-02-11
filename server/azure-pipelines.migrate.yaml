@@ -65,6 +65,6 @@ steps:
     condition: succeededOrFailed()
 
   - task: CmdLine@2
-    displayName: git config
+    displayName: git push
     inputs:
       script: git config user.email $(GitHub Email) && git config user.name $(GitHub UserName) && git add . && git commit -m "migrate" && git push
