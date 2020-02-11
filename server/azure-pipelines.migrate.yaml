@@ -29,8 +29,8 @@ steps:
 
   # TODO: remove $(System.PullRequest.PullRequestNumber) migration if it already exists
   - script: |
-      dotnet ef migrations list -p FilterLists.Data.Migrations
-    displayName: remove existing migration for PR
+      dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api
+    displayName: remove existing PR migration (if exists)
     workingDirectory: server/src
 
   - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
