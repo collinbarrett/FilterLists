@@ -85,16 +85,19 @@ steps:
     displayName: git config
     inputs:
       script: git config --global user.email $(GitHub Email) && git config --global user.name $(GitHub UserName)
+    enabled: false
 
   - task: CmdLine@2
     displayName: git add
     inputs:
       script: git add .
+    enabled: false
 
   - task: CmdLine@2
     displayName: git commit
     inputs:
       script: git commit -m "migrate"
+    enabled: false
 
   - task: Bash@3
     env:
@@ -104,5 +107,18 @@ steps:
     inputs:
       displayName: git push
       targetType: "inline"
-      script: "git push $REPOSITORYURI HEAD:$SOURCEBRANCH"
+      script: "git push HEAD: HEAD:$SOURCEBRANCH"
+      # script: "git push $REPOSITORYURI HEAD:$SOURCEBRANCH"
       # script: "git push -q https://$GITHUBPAT@${$REPOSITORYURI:8} HEAD:$SOURCEBRANCH"
+    enabled: false
+
+  - task: CmdLine@2
+    displayName: git commit
+    inputs:
+      - script: |
+        git config user.email $(GitHub Email)
+        git config user.name $(GitHub UserName)
+        git diff
+        git  add .
+        git commit -m "migrate"
+        git push origin HEAD:$(Build.SourceBranch)
