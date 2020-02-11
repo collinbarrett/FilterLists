@@ -107,3 +107,7 @@ steps:
       fi
     displayName: git push migration
     workingDirectory: server/src
+    env:
+      GITHUB_NAME: $(GitHub.Name)
+      GITHUB_EMAIL: $(GitHub.Email)
+      GITHUB_PAT: $(GitHub.Pat)
