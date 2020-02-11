@@ -5,6 +5,7 @@ pr:
   branches:
     include: [master]
   paths:
+    # TODO: rm yaml trigger
     include: [server/azure-pipelines.migrate.yaml, data/*]
 
 pool:
