@@ -16,18 +16,14 @@ steps:
     inputs:
       version: 3.x
 
-  - task: CmdLine@2
+  - script: dotnet tool install -g dotnet-ef
     displayName: install ef dotnet tool
-    inputs:
-      script: dotnet tool install -g dotnet-ef
 
   # TODO: remove $(System.PullRequest.PullRequestNumber) migration if it already exists
 
-  - task: CmdLine@2
+  - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: add migration
-    inputs:
-      workingDirectory: server/src
-      script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
+    workingDirectory: server/src
 
   - task: DockerCompose@0
     displayName: build test-data
@@ -81,42 +77,12 @@ steps:
     condition: succeededOrFailed()
     enabled: false
 
-  - task: CmdLine@2
-    displayName: git config
-    inputs:
-      script: git config --global user.email $(GitHub Email) && git config --global user.name $(GitHub UserName)
-    enabled: false
-
-  - task: CmdLine@2
-    displayName: git add
-    inputs:
-      script: git add .
-    enabled: false
-
-  - task: CmdLine@2
-    displayName: git commit
-    inputs:
-      script: git commit -m "migrate"
-    enabled: false
-
-  - task: Bash@3
-    env:
-      GitHubPat: $(GitHub Personal Access Token)
-      RepositoryUri: $(Build.Repository.Uri)
-      SourceBranch: $(Build.SourceBranch)
-    inputs:
-      displayName: git push
-      targetType: "inline"
-      script: "git push HEAD: HEAD:$SOURCEBRANCH"
-      # script: "git push $REPOSITORYURI HEAD:$SOURCEBRANCH"
-      # script: "git push -q https://$GITHUBPAT@${$REPOSITORYURI:8} HEAD:$SOURCEBRANCH"
-    enabled: false
-
+  # TODO: if git diff only has 2 files changed, don't push
   - script: |
       git config user.email $(GitHub Email)
       git config user.name $(GitHub UserName)
       git diff
       git  add .
-      git commit -m "migrate"
+      git commit -m "migrate #$(System.PullRequest.PullRequestNumber)"
       git push origin HEAD:$(Build.SourceBranch)
     displayName: git push
