@@ -29,14 +29,14 @@ steps:
 
   # TODO: remove $(System.PullRequest.PullRequestNumber) migration if it already exists
   - script: |
-      dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api
+      dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api | grep -q $(System.PullRequest.PullRequestNumber) && dotnet ef migrations remove -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: remove existing PR migration (if exists)
     workingDirectory: server/src
 
   - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: add migration
     workingDirectory: server/src
-    enabled: false
+    condition: succeededOrFailed() # TODO: rm
 
   # TODO: remove 'enabled: false' from testing
 
@@ -101,5 +101,5 @@ steps:
       git commit -m "migrate #$(System.PullRequest.PullRequestNumber)"
       git config --global credential.helper store
       echo "https://$(GitHub Personal Access Token):x-oauth-basic@github.com" >> ~/.git-credentials
+      git push origin $(System.PullRequest.SourceBranch)
     displayName: git push migration
-    # TODO: add to end of above: git push origin $(System.PullRequest.SourceBranch)
