@@ -67,4 +67,4 @@ steps:
   - task: CmdLine@2
     displayName: git config
     inputs:
-      script: git config user.email $(GitHub Email) && git config user.name $(GitHub UserName) && git commit -m "migrate" && git push
+      script: git config user.email $(GitHub Email) && git config user.name $(GitHub UserName) && git add . && git commit -m "migrate" && git push
