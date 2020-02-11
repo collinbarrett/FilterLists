@@ -11,6 +11,14 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+  - checkout: none
+
+  - script: |
+      git clone $(Build.Repository.Uri)
+      cd FilterLists
+      git checkout $(Build.SourceBranch)
+    displayName: git checkout source branch
+
   - task: UseDotNet@2
     displayName: use latest dotnet sdk
     inputs:
@@ -84,5 +92,5 @@ steps:
       git diff
       git  add .
       git commit -m "migrate #$(System.PullRequest.PullRequestNumber)"
-      git push https://$(GitHub Personal Access Token)@$(Build.Repository.Uri) HEAD:$(Build.SourceBranch)
+      git push origin $(Build.SourceBranch)
     displayName: git push migration
