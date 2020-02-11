@@ -28,16 +28,15 @@ steps:
     displayName: install ef dotnet tool
 
   - bash: |
-      if dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api | grep -q _$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ; then
+      MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
+      if [[ "$MIGLIST" == *_$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]]
+      then
         dotnet ef migrations remove -p FilterLists.Data.Migrations -s FilterLists.Api
-        echo "match"
-      else
-        echo "no match"
       fi
     displayName: remove existing PR migration (if exists)
     workingDirectory: server/src
 
-  - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
+  - bash: dotnet ef migrations add $SYSTEM_PULLREQUEST_PULLREQUESTNUMBER -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: add migration
     workingDirectory: server/src
 
