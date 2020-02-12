@@ -44,12 +44,9 @@ steps:
     displayName: install ef dotnet tool
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
-  - task: Bash@3
-    inputs:
-      targetType: "inline"
-      script: |
-        git config --global user.name $GITHUB_NAME
-        git config --global user.email $GITHUB_EMAIL
+  - bash: |
+      git config --global user.name $GITHUB_NAME
+      git config --global user.email $GITHUB_EMAIL
     displayName: git config
     env:
       GITHUB_NAME: $(GitHub.Name)
