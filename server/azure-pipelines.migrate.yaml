@@ -1,3 +1,5 @@
+# Adds an Entity Framework Core migration to a pull request that changes data in data/*.json
+
 trigger: none
 
 pr:
