@@ -20,9 +20,7 @@ steps:
       git checkout $(System.PullRequest.SourceBranch)
     displayName: checkout source branch
 
-  # TEMP: rm first line
   - bash: |
-      echo "##vso[task.setvariable variable=aborted;isOutput=true]true"
       LASTMSG=$(git log -n 1 --pretty=format:"%s")
       echo "Last commit message: $LASTMSG"
       if [[ "$LASTMSG" == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
