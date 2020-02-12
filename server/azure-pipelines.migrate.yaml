@@ -67,7 +67,7 @@ steps:
     workingDirectory: server/src
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
-  - script: dotnet ef migrations add "$(System.PullRequest.PullRequestNumber)" -p FilterLists.Data.Migrations -s FilterLists.Api
+  - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: add migration
     workingDirectory: server/src
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
@@ -85,11 +85,9 @@ steps:
     displayName: commit or abandon migration
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
-  - bash: |
+  - script: |
       git config --global credential.helper store
-      echo "https://$GITHUBPAT:x-oauth-basic@github.com" >> ~/.git-credentials
-      git push origin "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
+      echo "https://$(GitHub.PAT):x-oauth-basic@github.com" >> ~/.git-credentials
+      git push origin $(System.PullRequest.SourceBranch)
     displayName: git push
-    env:
-      GitHubPat: $(GitHub.Pat)
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
