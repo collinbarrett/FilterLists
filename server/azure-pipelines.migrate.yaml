@@ -44,10 +44,13 @@ steps:
     displayName: install ef dotnet tool
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
-  - script: |
-      git config --global user.name $(GitHub.Name)
-      git config --global user.email $(GitHub.Email)
+  - bash: |
+      git config --global user.name "$GITHUBNAME"
+      git config --global user.email "$GITHUBEMAIL"
     displayName: git config
+    env:
+      GitHubName: $(GitHub.Name)
+      GitHubEmail: $(GitHub.Email)
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - bash: |
