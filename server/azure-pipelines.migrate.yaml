@@ -60,65 +60,15 @@ steps:
     condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
 
   - bash: |
-      git add .
-      DIFF=$(git diff --cached --numstat | wc -l)
+      DIFF=$(git diff --numstat | wc -l )
       echo "$DIFF files changed"
       if (( $DIFF != 3 )) ; then
-        echo "noop migration. Abandoning..."
+        echo "noop migration. Effective EF migrations change 3 files (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
         echo "##vso[task.setvariable variable=aborted;isOutput=true]true"
       fi
     displayName: abort if noop migration
     name: abortIfNoopMigration
     condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
-
-  - task: DockerCompose@0
-    displayName: build test-data
-    inputs:
-      dockerComposeFile: docker-compose.data.tests.yml
-      dockerComposeCommand: build api
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'))
-
-  - task: Docker@2
-    displayName: create volume test-data-results
-    inputs:
-      command: volume
-      arguments: create test-data-results
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'))
-
-  - task: DockerCompose@0
-    displayName: up test-data db
-    inputs:
-      dockerComposeFile: docker-compose.data.tests.yml
-      dockerComposeCommand: up -d mariadb
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'))
-
-  - task: DockerCompose@0
-    displayName: run test-data
-    inputs:
-      dockerComposeFile: docker-compose.data.tests.yml
-      dockerComposeCommand: run api
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'))
-
-  - task: Docker@2
-    displayName: create container test-data-results
-    inputs:
-      command: container
-      arguments: create --name test-data-results -v test-data-results:/results hello-world
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'), succeededOrFailed())
-
-  - task: Docker@2
-    displayName: copy out test-data results
-    inputs:
-      command: cp
-      arguments: test-data-results:/results $(System.DefaultWorkingDirectory)
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'), succeededOrFailed())
-
-  - task: PublishTestResults@2
-    displayName: publish test results
-    inputs:
-      testResultsFormat: VSTest
-      testResultsFiles: "**/*.trx"
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'), succeededOrFailed())
 
   - script: |
       git commit -m "migrate PR #$(System.PullRequest.PullRequestNumber)"
