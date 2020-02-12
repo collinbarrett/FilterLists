@@ -46,7 +46,7 @@ steps:
     displayName: add migration
     workingDirectory: server/src
 
-  # TODO: on empty migration, skip remaining steps without erroring the pipeline
+  # TODO: on empty migration, skip remaining steps without erroring pipeline
   - bash: |
       git add .
       DIFF=$(git diff --cached --numstat | wc -l)
