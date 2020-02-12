@@ -34,11 +34,11 @@ steps:
     displayName: use latest dotnet sdk
     inputs:
       version: 3.x
-    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - script: dotnet tool install -g dotnet-ef
     displayName: install ef dotnet tool
-    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - bash: |
       MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
@@ -52,12 +52,12 @@ steps:
       fi
     displayName: revert any existing migration for PR
     workingDirectory: server/src
-    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: add migration
     workingDirectory: server/src
-    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - bash: |
       DIFF=$(git diff --numstat | wc -l )
@@ -68,11 +68,11 @@ steps:
         git commit -m "migrate PR #$(System.PullRequest.PullRequestNumber)"
       fi
     displayName: commit or abandon migration
-    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - script: |
       git config --global credential.helper store
       echo "https://$(GitHub.PAT):x-oauth-basic@github.com" >> ~/.git-credentials
       git push origin $(System.PullRequest.SourceBranch)
     displayName: git push
-    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
