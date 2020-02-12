@@ -74,5 +74,5 @@ steps:
       git config --global credential.helper store
       echo "https://$(GitHub.PAT):x-oauth-basic@github.com" >> ~/.git-credentials
       git push origin $(System.PullRequest.SourceBranch)
-    displayName: git push migration
+    displayName: git push
     condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
