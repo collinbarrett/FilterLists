@@ -15,10 +15,10 @@ pool:
 steps:
   - checkout: none
 
-  # TODO: Replace $SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI with fork's URI. https://stackoverflow.com/q/60188806/2343739
-  - bash: |
-      git clone "$SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI" .
-      git checkout "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
+  # TODO: Replace $(System.PullRequest.SourceRepositoryUri) with fork's URI. https://stackoverflow.com/q/60188806/2343739
+  - script: |
+      git clone $(System.PullRequest.SourceRepositoryUri) .
+      git checkout $(System.PullRequest.SourceBranch)
     displayName: checkout source branch
 
   # TODO: Merge latest data/* and server/src/FilterLists.Data.Migrations/* from origin/master.
