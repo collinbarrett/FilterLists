@@ -17,14 +17,9 @@ steps:
 
   # TODO: Replace $SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI with fork's URI. https://stackoverflow.com/q/60188806/2343739
   - bash: |
-      git config --global user.name $GITHUBNAME
-      git config --global user.email $GITHUBEMAIL
       git clone $SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI .
       git checkout $SYSTEM_PULLREQUEST_SOURCEBRANCH
     displayName: checkout source branch
-    env:
-      GitHubName: $(GitHub.Name)
-      GitHubEmail: $(GitHub.Email)
 
   # TODO: Merge latest data/* and server/src/FilterLists.Data.Migrations/* from origin/master.
   # TODO: If data/* and server/src/FilterLists.Data.Migrations/* change in origin/master, re-trigger this Pipeline.
@@ -47,6 +42,15 @@ steps:
 
   - script: dotnet tool install -g dotnet-ef
     displayName: install ef dotnet tool
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+
+  - bash: |
+      git config --global user.name $GITHUBNAME
+      git config --global user.email $GITHUBEMAIL
+    displayName: git config
+    env:
+      GitHubName: $(GitHub.Name)
+      GitHubEmail: $(GitHub.Email)
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - bash: |
