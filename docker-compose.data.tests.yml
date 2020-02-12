@@ -15,7 +15,7 @@ services:
       - mariadb
 
   mariadb:
-    # on update, also update ServerVersion in FilterLists.Services.DependencyInjection.Extensions.ConfigureServicesCollection
+    # on update, also update ServerVersion in FilterLists.Data.Constants.ServerVersion
     image: mariadb:10.4.12
     networks:
       - test-data

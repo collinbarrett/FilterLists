@@ -1,14 +1,8 @@
 # Context: .
 # Command: docker build -f server/src/FilterLists.Api/Dockerfile .
 
-# init base debug (for VS)
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
-EXPOSE 80
-COPY data/. data/
-WORKDIR /app
-
-# init base-prod
-FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine as base-prod
+# init base
+FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine as base
 ENTRYPOINT ["./FilterLists.Api"]
 EXPOSE 80
 WORKDIR /app
@@ -19,6 +13,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine AS build
 # restore
 WORKDIR /app/src
 COPY server/src/FilterLists.Data/FilterLists.Data.csproj FilterLists.Data/
+COPY server/src/FilterLists.Data.Migrations/FilterLists.Data.Migrations.csproj FilterLists.Data.Migrations/
 COPY server/src/FilterLists.Services/FilterLists.Services.csproj FilterLists.Services/
 WORKDIR /app/src/FilterLists.Api
 COPY server/src/FilterLists.Api/FilterLists.Api.csproj .
@@ -27,6 +22,7 @@ RUN dotnet restore
 # build
 WORKDIR /app/src
 COPY server/src/FilterLists.Data/. FilterLists.Data/
+COPY server/src/FilterLists.Data.Migrations/. FilterLists.Data.Migrations/
 COPY server/src/FilterLists.Services/. FilterLists.Services/
 WORKDIR /app/src/FilterLists.Api
 COPY server/src/FilterLists.Api/. .
@@ -64,5 +60,5 @@ FROM build AS publish
 RUN dotnet publish -c Release -r linux-musl-x64 -o out --no-restore --no-build
 
 # final
-FROM base-prod as final
+FROM base as final
 COPY --from=publish /app/src/FilterLists.Api/out .
