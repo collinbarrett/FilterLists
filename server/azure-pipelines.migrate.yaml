@@ -15,6 +15,7 @@ pool:
 steps:
   - checkout: none
 
+  # TODO: Replace $SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI with fork's URI. https://stackoverflow.com/q/60188806/2343739
   - bash: |
       git config --global user.name $GITHUBNAME
       git config --global user.email $GITHUBEMAIL
