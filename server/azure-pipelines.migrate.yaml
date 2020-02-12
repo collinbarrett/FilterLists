@@ -14,12 +14,6 @@ steps:
   - checkout: none
 
   - bash: |
-      echo "SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI: $SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI"
-      echo "BUILD_REPOSITORY_URI: $BUILD_REPOSITORY_URI"
-
-      echo "SYSTEM_PULLREQUEST_SOURCEBRANCH: $SYSTEM_PULLREQUEST_SOURCEBRANCH"
-      echo "BUILD_SOURCEBRANCH: $BUILD_SOURCEBRANCH"
-
       git config --global user.name $GITHUBNAME
       git config --global user.email $GITHUBEMAIL
       git clone $SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI .
@@ -74,6 +68,7 @@ steps:
       if (( $DIFF != 3 )) ; then
         echo "noop migration. Effective EF migrations change 3 files (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
       else
+        git add .
         git commit -m "migrate PR #$(System.PullRequest.PullRequestNumber)"
       fi
     displayName: commit or abandon migration
