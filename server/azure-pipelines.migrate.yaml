@@ -14,6 +14,8 @@ steps:
   - checkout: none
 
   - script: |
+      git config --global user.name "$(GitHub.Name)"
+      git config --global user.email "$(GitHub.Email)"
       git clone $(Build.Repository.Uri) .
       git checkout $(System.PullRequest.SourceBranch)
     displayName: checkout source branch
@@ -49,7 +51,7 @@ steps:
       git add .
       DIFF=$(git diff --cached --numstat | wc -l)
       echo "$DIFF files changed"
-      if (( $DIFF < 3 )) ; then
+      if (( $DIFF != 3 )) ; then
         echo "Empty migration. Abandoning..."
         exit 1
       fi
@@ -102,8 +104,6 @@ steps:
     condition: succeededOrFailed()
 
   - script: |
-      git config --global user.name "$(GitHub.Name)"
-      git config --global user.email "$(GitHub.Email)"
       git commit -m "migrate PR #$(System.PullRequest.PullRequestNumber)"
       git config --global credential.helper store
       echo "https://$(GitHub.PAT):x-oauth-basic@github.com" >> ~/.git-credentials
