@@ -17,7 +17,7 @@ steps:
       git config --global user.name "$(GitHub.Name)"
       git config --global user.email "$(GitHub.Email)"
       git clone $(Build.Repository.Uri) .
-      git checkout $(System.PullRequest.SourceBranch)
+      git checkout $(Build.SourceBranch)
     displayName: checkout source branch
 
   - bash: |
@@ -73,6 +73,6 @@ steps:
   - script: |
       git config --global credential.helper store
       echo "https://$(GitHub.PAT):x-oauth-basic@github.com" >> ~/.git-credentials
-      git push origin $(System.PullRequest.SourceBranch)
+      git push origin $(Build.SourceBranch)
     displayName: git push
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
