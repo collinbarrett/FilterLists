@@ -1,3 +1,5 @@
+# Adds an Entity Framework Core migration to a pull request that changes data in data/*.json
+
 trigger: none
 
 pr:
@@ -5,7 +7,7 @@ pr:
   branches:
     include: [master]
   paths:
-    include: [data/*]
+    include: [data/*, server/src/FilterLists.Data.Migrations/Migrations/*]
 
 pool:
   vmImage: ubuntu-latest
@@ -13,20 +15,19 @@ pool:
 steps:
   - checkout: none
 
-  - bash: |
-      git config --global user.name $GITHUBNAME
-      git config --global user.email $GITHUBEMAIL
-      git clone $SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI .
-      git checkout $SYSTEM_PULLREQUEST_SOURCEBRANCH
+  # TODO: Replace $(System.PullRequest.SourceRepositoryUri) with fork's URI. https://stackoverflow.com/q/60188806/2343739
+  - script: |
+      git clone $(System.PullRequest.SourceRepositoryUri) .
+      git checkout $(System.PullRequest.SourceBranch)
     displayName: checkout source branch
-    env:
-      GitHubName: $(GitHub.Name)
-      GitHubEmail: $(GitHub.Email)
+
+  # TODO: Merge latest data/* and server/src/FilterLists.Data.Migrations/* from origin/master.
+  # TODO: If data/* and server/src/FilterLists.Data.Migrations/* change in origin/master, re-trigger this Pipeline.
 
   - bash: |
       LASTMSG=$(git log -n 1 --pretty=format:"%s")
-      echo "Last commit message: $LASTMSG"
-      if [[ "$LASTMSG" == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
+      echo "Last commit message: \"$LASTMSG\""
+      if [[ $LASTMSG == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
         echo "Just migrated. Exiting..."
         echo "##vso[task.setvariable variable=aborted;isOutput=true]true"
       fi
@@ -44,12 +45,21 @@ steps:
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - bash: |
+      git config --global user.name "$GITHUBNAME"
+      git config --global user.email "$GITHUBEMAIL"
+    displayName: git config
+    env:
+      GITHUBNAME: $(GITHUBNAME)
+      GITHUBEMAIL: $(GITHUBEMAIL)
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+
+  - bash: |
       MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
       echo "$MIGLIST"
-      if [[ "$MIGLIST" == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
+      if [[ $MIGLIST == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
         echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER, reverting..."
         REVERTHASH=$(git log --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" -n 1 --pretty=format:"%H")
-        git revert --no-edit $REVERTHASH
+        git revert --no-edit "$REVERTHASH"
       else
         echo "No migration exists yet for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER."
       fi
@@ -63,13 +73,13 @@ steps:
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - bash: |
-      DIFF=$(git diff --numstat | wc -l )
-      echo "$DIFF files changed"
+      DIFF=$(git status -s | wc -l)
+      echo "$DIFF file(s) changed"
       if (( $DIFF != 3 )) ; then
-        echo "noop migration. Effective EF migrations change 3 files (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
+        echo "No-op migration. Effective EF migrations add/change 3 files total (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
       else
         git add .
-        git commit -m "migrate PR #$(System.PullRequest.PullRequestNumber)"
+        git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
       fi
     displayName: commit or abandon migration
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
@@ -77,8 +87,8 @@ steps:
   - bash: |
       git config --global credential.helper store
       echo "https://$GITHUBPAT:x-oauth-basic@github.com" >> ~/.git-credentials
-      git push origin $SYSTEM_PULLREQUEST_SOURCEBRANCH
+      git push origin "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
     displayName: git push
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
     env:
-      GitHubPat: $(GitHub.Pat)
+      GITHUBPAT: $(GITHUBPAT)
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
