@@ -15,11 +15,24 @@ pool:
 steps:
   - checkout: none
 
+  - bash: |
+      echo $GITHUBNAME
+      echo $(GITHUBNAME)
+      echo $($GITHUBNAME)
+      echo "$GITHUBNAME"
+      echo "$(GITHUBNAME)"
+      echo "$($GITHUBNAME)"
+    displayName: git config
+    env:
+      GITHUBNAME: $(GITHUBNAME)
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+
   # TODO: Replace $(System.PullRequest.SourceRepositoryUri) with fork's URI. https://stackoverflow.com/q/60188806/2343739
   - script: |
       git clone $(System.PullRequest.SourceRepositoryUri) .
       git checkout $(System.PullRequest.SourceBranch)
     displayName: checkout source branch
+    enabled: false
 
   # TODO: Merge latest data/* and server/src/FilterLists.Data.Migrations/* from origin/master.
   # TODO: If data/* and server/src/FilterLists.Data.Migrations/* change in origin/master, re-trigger this Pipeline.
@@ -33,16 +46,19 @@ steps:
       fi
     displayName: abort if just migrated
     name: abortIfJustMigrated
+    enabled: false
 
   - task: UseDotNet@2
     displayName: use latest dotnet sdk
     inputs:
       version: 3.x
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    enabled: false
 
   - script: dotnet tool install -g dotnet-ef
     displayName: install ef dotnet tool
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    enabled: false
 
   - bash: |
       git config --global user.name $GITHUBNAME
@@ -52,6 +68,7 @@ steps:
       GITHUBNAME: $(GITHUBNAME)
       GITHUBEMAIL: $(GITHUBEMAIL)
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    enabled: false
 
   - bash: |
       MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
@@ -66,11 +83,13 @@ steps:
     displayName: revert any existing migration for PR
     workingDirectory: server/src
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    enabled: false
 
   - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: add migration
     workingDirectory: server/src
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    enabled: false
 
   - bash: |
       DIFF=$(git status -s | wc -l)
@@ -83,6 +102,7 @@ steps:
       fi
     displayName: commit or abandon migration
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    enabled: false
 
   - bash: |
       git config --global credential.helper store
@@ -92,3 +112,4 @@ steps:
     env:
       GITHUBPAT: $(GITHUBPAT)
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    enabled: false
