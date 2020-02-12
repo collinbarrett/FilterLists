@@ -11,7 +11,6 @@ WORKDIR /app
 FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine as base-prod
 ENTRYPOINT ["./FilterLists.Api"]
 EXPOSE 80
-COPY data/. data/
 WORKDIR /app
 
 # init build

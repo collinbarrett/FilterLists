@@ -1,0 +1,78 @@
+trigger: none
+
+pr:
+  autoCancel: true
+  branches:
+    include: [master]
+  paths:
+    include: [data/*]
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - checkout: none
+
+  - script: |
+      git config --global user.name "$(GitHub.Name)"
+      git config --global user.email "$(GitHub.Email)"
+      git clone $(Build.Repository.Uri) .
+      git checkout $(System.PullRequest.SourceBranch)
+    displayName: checkout source branch
+
+  - bash: |
+      LASTMSG=$(git log -n 1 --pretty=format:"%s")
+      echo "Last commit message: $LASTMSG"
+      if [[ "$LASTMSG" == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
+        echo "Just migrated. Exiting..."
+        echo "##vso[task.setvariable variable=aborted;isOutput=true]true"
+      fi
+    displayName: abort if just migrated
+    name: abortIfJustMigrated
+
+  - task: UseDotNet@2
+    displayName: use latest dotnet sdk
+    inputs:
+      version: 3.x
+    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
+
+  - script: dotnet tool install -g dotnet-ef
+    displayName: install ef dotnet tool
+    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
+
+  - bash: |
+      MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
+      echo "$MIGLIST"
+      if [[ "$MIGLIST" == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
+        echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER, reverting..."
+        REVERTHASH=$(git log --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" -n 1 --pretty=format:"%H")
+        git revert --no-edit $REVERTHASH
+      else
+        echo "No migration exists yet for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER."
+      fi
+    displayName: revert any existing migration for PR
+    workingDirectory: server/src
+    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
+
+  - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
+    displayName: add migration
+    workingDirectory: server/src
+    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
+
+  - bash: |
+      DIFF=$(git diff --numstat | wc -l )
+      echo "$DIFF files changed"
+      if (( $DIFF != 3 )) ; then
+        echo "noop migration. Effective EF migrations change 3 files (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
+      else
+        git commit -m "migrate PR #$(System.PullRequest.PullRequestNumber)"
+      fi
+    displayName: commit or abandon migration
+    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
+
+  - script: |
+      git config --global credential.helper store
+      echo "https://$(GitHub.PAT):x-oauth-basic@github.com" >> ~/.git-credentials
+      git push origin $(System.PullRequest.SourceBranch)
+    displayName: git push
+    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')

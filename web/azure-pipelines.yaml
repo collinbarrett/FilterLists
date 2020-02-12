@@ -1,61 +1,61 @@
 trigger:
   batch: false
   branches:
-    include: ["master"]
+    include: [master]
   paths:
-    include: ["web/*", "docker-compose.yml", "docker-compose.prod.yml"]
+    include: [web/*, docker-compose.yml, docker-compose.prod.yml]
 
 pr:
   autoCancel: false
   branches:
-    include: ["master"]
+    include: [master]
   paths:
-    include: ["web/*", "docker-compose.yml", "docker-compose.prod.yml"]
+    include: [web/*, docker-compose.yml, docker-compose.prod.yml]
 
 pool:
-  vmImage: "ubuntu-latest"
+  vmImage: ubuntu-latest
 
 steps:
   - task: Docker@2
-    displayName: "build"
+    displayName: build
     inputs:
-      containerRegistry: "collinbarrett2-dockerhub"
-      repository: "collinbarrett2/filterlists.web"
-      command: "build"
-      Dockerfile: "web/Dockerfile"
-      buildContext: "./web"
+      containerRegistry: collinbarrett2-dockerhub
+      repository: collinbarrett2/filterlists.web
+      command: build
+      Dockerfile: web/Dockerfile
+      buildContext: ./web
       tags: |
         latest
         $(Build.BuildId)
       addPipelineData: false
 
   - task: Docker@2
-    displayName: "push"
+    displayName: push
     inputs:
-      containerRegistry: "collinbarrett2-dockerhub"
-      repository: "collinbarrett2/filterlists.web"
-      command: "push"
+      containerRegistry: collinbarrett2-dockerhub
+      repository: collinbarrett2/filterlists.web
+      command: push
       tags: |
         latest
         $(Build.BuildId)
-    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 
   - task: CopyFiles@2
-    displayName: "stage docker-compose files"
+    displayName: stage docker-compose files
     inputs:
-      SourceFolder: "$(Build.SourcesDirectory)"
+      SourceFolder: $(Build.SourcesDirectory)
       Contents: |
         docker-compose.yml
         docker-compose.prod.yml
-      TargetFolder: "$(Build.ArtifactStagingDirectory)"
+      TargetFolder: $(Build.ArtifactStagingDirectory)
       CleanTargetFolder: true
       OverWrite: true
-    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 
   - task: PublishBuildArtifacts@1
-    displayName: "publish docker-compose files"
+    displayName: publish docker-compose files
     inputs:
-      PathtoPublish: "$(Build.ArtifactStagingDirectory)"
-      ArtifactName: "drop"
-      publishLocation: "Container"
-    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
+      PathtoPublish: $(Build.ArtifactStagingDirectory)
+      ArtifactName: drop
+      publishLocation: Container
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
