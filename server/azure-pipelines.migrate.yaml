@@ -45,9 +45,11 @@ steps:
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - bash: |
+      git config --global user.name $GITHUBNAME
       git config --global user.email $GITHUBEMAIL
     displayName: git config
     env:
+      GitHubName: $(GitHub.Name)
       GitHubEmail: $(GitHub.Email)
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
