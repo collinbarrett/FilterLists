@@ -1,33 +1,33 @@
 trigger:
   batch: false
   branches:
-    include: ["master"]
+    include: [master]
   paths:
-    include: ["ops/nginx/*", "docker-compose.yml", "docker-compose.prod.yml"]
+    include: [ops/nginx/*, docker-compose.yml, docker-compose.prod.yml]
 
 pr: none
 
 pool:
-  vmImage: "ubuntu-latest"
+  vmImage: ubuntu-latest
 
 steps:
   - task: CopyFiles@2
-    displayName: "stage files"
+    displayName: stage files
     inputs:
-      SourceFolder: "$(Build.SourcesDirectory)"
+      SourceFolder: $(Build.SourcesDirectory)
       Contents: |
         ops/nginx/**
         docker-compose.yml
         docker-compose.prod.yml
-      TargetFolder: "$(Build.ArtifactStagingDirectory)"
+      TargetFolder: $(Build.ArtifactStagingDirectory)
       CleanTargetFolder: true
       OverWrite: true
-    condition: "eq(variables['Build.SourceBranch'], 'refs/heads/master')"
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
 
   - task: PublishBuildArtifacts@1
-    displayName: "publish files"
+    displayName: publish files
     inputs:
-      PathtoPublish: "$(Build.ArtifactStagingDirectory)"
-      ArtifactName: "drop"
-      publishLocation: "Container"
-    condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
+      PathtoPublish: $(Build.ArtifactStagingDirectory)
+      ArtifactName: drop
+      publishLocation: Container
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
