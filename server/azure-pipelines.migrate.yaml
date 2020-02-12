@@ -31,12 +31,13 @@ steps:
       echo "$MIGLIST"
       if [[ "$MIGLIST" == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]]
       then
-        echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER, removing..."
-        dotnet ef migrations remove -p FilterLists.Data.Migrations -s FilterLists.Api
+        echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER, reverting..."
+        REVERTHASH=$(git log --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" -n 1 --pretty=format:"%H")
+        git revert --no-edit $REVERTHASH
       else
         echo "No migration exists yet for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER."
       fi
-    displayName: remove existing PR migration (if exists)
+    displayName: revert existing PR migration (if exists)
     workingDirectory: server/src
 
   - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
