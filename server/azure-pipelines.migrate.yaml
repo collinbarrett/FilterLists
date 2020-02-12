@@ -72,9 +72,8 @@ steps:
     workingDirectory: server/src
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
-  # TODO: verify DIFF command, should return number of untracked and changes (typically 3 or 2)
   - bash: |
-      DIFF=$(git diff --numstat | wc -l)
+      DIFF=$(git status -s | wc -l)
       echo "$DIFF file(s) changed"
       if (( $DIFF != 3 )) ; then
         echo "noop migration. Effective EF migrations add/change 3 files total (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
