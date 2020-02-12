@@ -20,12 +20,14 @@ steps:
       git checkout $(System.PullRequest.SourceBranch)
     displayName: checkout source branch
 
-  # TODO: on exit, don't fail the pipeline
+  # TEMP: rm first line
   - bash: |
+      echo "##vso[task.setvariable variable=aborted]true"
       LASTMSG=$(git log -n 1 --pretty=format:"%s")
       echo "Last commit message: $LASTMSG"
       if [[ "$LASTMSG" == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
         echo "Just migrated. Exiting..."
+        echo "##vso[task.setvariable variable=aborted]true"
       fi
     displayName: abort if just migrated
 
@@ -33,9 +35,11 @@ steps:
     displayName: use latest dotnet sdk
     inputs:
       version: 3.x
+    condition: ne($(aborted), 'true')
 
   - script: dotnet tool install -g dotnet-ef
     displayName: install ef dotnet tool
+    condition: ne($(aborted), 'true')
 
   - bash: |
       MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
@@ -47,68 +51,74 @@ steps:
       else
         echo "No migration exists yet for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER."
       fi
-    displayName: revert existing PR migration (if exists)
+    displayName: revert any existing migration for PR
     workingDirectory: server/src
+    condition: ne($(aborted), 'true')
 
   - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: add migration
     workingDirectory: server/src
+    condition: ne($(aborted), 'true')
 
-  # TODO: on exit, don't fail the pipeline
   - bash: |
       git add .
       DIFF=$(git diff --cached --numstat | wc -l)
       echo "$DIFF files changed"
       if (( $DIFF != 3 )) ; then
-        echo "Empty migration. Abandoning..."
-        exit 1
+        echo "noop migration. Abandoning..."
+        echo "##vso[task.setvariable variable=aborted]true"
       fi
-    displayName: abort if empty migration
+    displayName: abort if noop migration
+    condition: ne($(aborted), 'true')
 
   - task: DockerCompose@0
     displayName: build test-data
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: build api
+    condition: ne($(aborted), 'true')
 
   - task: Docker@2
     displayName: create volume test-data-results
     inputs:
       command: volume
       arguments: create test-data-results
+    condition: ne($(aborted), 'true')
 
   - task: DockerCompose@0
     displayName: up test-data db
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: up -d mariadb
+    condition: ne($(aborted), 'true')
 
   - task: DockerCompose@0
     displayName: run test-data
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: run api
+    condition: ne($(aborted), 'true')
 
   - task: Docker@2
     displayName: create container test-data-results
     inputs:
       command: container
       arguments: create --name test-data-results -v test-data-results:/results hello-world
-    condition: succeededOrFailed()
+      condition: and(ne($(aborted), 'true'), succeededOrFailed())
 
   - task: Docker@2
     displayName: copy out test-data results
     inputs:
       command: cp
       arguments: test-data-results:/results $(System.DefaultWorkingDirectory)
-    condition: succeededOrFailed()
+      condition: and(ne($(aborted), 'true'), succeededOrFailed())
 
   - task: PublishTestResults@2
     displayName: publish test results
     inputs:
       testResultsFormat: VSTest
       testResultsFiles: "**/*.trx"
-    condition: succeededOrFailed()
+    condition: and(ne($(aborted), 'true'), succeededOrFailed())
 
   - script: |
       git commit -m "migrate PR #$(System.PullRequest.PullRequestNumber)"
@@ -116,3 +126,4 @@ steps:
       echo "https://$(GitHub.PAT):x-oauth-basic@github.com" >> ~/.git-credentials
       git push origin $(System.PullRequest.SourceBranch)
     displayName: git push migration
+    condition: ne($(aborted), 'true')
