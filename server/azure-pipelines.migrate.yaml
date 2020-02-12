@@ -34,7 +34,7 @@ steps:
       if [[ "$MIGLIST" == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]]
       then
         echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER, reverting..."
-        REVERTHASH=$(git log --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" -n 1 --pretty=format:"%H")
+        REVERTHASH=$(git log --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ***NO_CI***" -n 1 --pretty=format:"%H")
         git revert --no-edit $REVERTHASH
       else
         echo "No migration exists yet for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER."
@@ -104,7 +104,7 @@ steps:
     condition: succeededOrFailed()
 
   - script: |
-      git commit -m "migrate PR #$(System.PullRequest.PullRequestNumber)"
+      git commit -m "migrate PR #$(System.PullRequest.PullRequestNumber) ***NO_CI***"
       git config --global credential.helper store
       echo "https://$(GitHub.PAT):x-oauth-basic@github.com" >> ~/.git-credentials
       git push origin $(System.PullRequest.SourceBranch)
