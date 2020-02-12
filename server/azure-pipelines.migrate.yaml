@@ -17,8 +17,8 @@ steps:
 
   # TODO: Replace $SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI with fork's URI. https://stackoverflow.com/q/60188806/2343739
   - bash: |
-      git clone $SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI .
-      git checkout $SYSTEM_PULLREQUEST_SOURCEBRANCH
+      git clone "$SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI" .
+      git checkout "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
     displayName: checkout source branch
 
   # TODO: Merge latest data/* and server/src/FilterLists.Data.Migrations/* from origin/master.
@@ -26,8 +26,8 @@ steps:
 
   - bash: |
       LASTMSG=$(git log -n 1 --pretty=format:"%s")
-      echo "Last commit message: $LASTMSG"
-      if [[ "$LASTMSG" == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
+      echo "Last commit message: \"$LASTMSG\""
+      if [[ $LASTMSG == "migrate PR #\"$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER\"" ]] ; then
         echo "Just migrated. Exiting..."
         echo "##vso[task.setvariable variable=aborted;isOutput=true]true"
       fi
@@ -56,38 +56,38 @@ steps:
   - bash: |
       MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
       echo "$MIGLIST"
-      if [[ "$MIGLIST" == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
-        echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER, reverting..."
-        REVERTHASH=$(git log --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" -n 1 --pretty=format:"%H")
-        git revert --no-edit $REVERTHASH
+      if [[ $MIGLIST == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
+        echo "A migration already exists for PR #\"$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER\", reverting..."
+        REVERTHASH=$(git log --grep="migrate PR #\"$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER\"" -n 1 --pretty=format:"%H")
+        git revert --no-edit "$REVERTHASH"
       else
-        echo "No migration exists yet for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER."
+        echo "No migration exists yet for PR #\"$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER\"."
       fi
     displayName: revert any existing migration for PR
     workingDirectory: server/src
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
-  - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
+  - script: dotnet ef migrations add "$(System.PullRequest.PullRequestNumber)" -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: add migration
     workingDirectory: server/src
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - bash: |
       DIFF=$(git diff --numstat | wc -l )
-      echo "$DIFF files changed"
-      if (( $DIFF != 3 )) ; then
+      echo "\"$DIFF\" files changed"
+      if (( "$DIFF" != 3 )) ; then
         echo "noop migration. Effective EF migrations change 3 files (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
       else
         git add .
-        git commit -m "migrate PR #$(System.PullRequest.PullRequestNumber)"
+        git commit -m "migrate PR #\"$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER\""
       fi
     displayName: commit or abandon migration
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - bash: |
       git config --global credential.helper store
-      echo "https://$GITHUBPAT:x-oauth-basic@github.com" >> ~/.git-credentials
-      git push origin $SYSTEM_PULLREQUEST_SOURCEBRANCH
+      echo "https://\"$GITHUBPAT\":x-oauth-basic@github.com" >> ~/.git-credentials
+      git push origin "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
     displayName: git push
     env:
       GitHubPat: $(GitHub.Pat)
