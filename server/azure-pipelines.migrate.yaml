@@ -77,7 +77,7 @@ steps:
       DIFF=$(git diff --numstat | wc -l)
       echo "$DIFF file(s) changed"
       if (( $DIFF != 3 )) ; then
-        echo "noop migration. Effective EF migrations change 3 files (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
+        echo "noop migration. Effective EF migrations add/change 3 files total (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
       else
         git add .
         git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
