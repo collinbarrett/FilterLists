@@ -16,7 +16,7 @@ steps:
   - bash: |
       git config --global user.name $GITHUBNAME
       git config --global user.email $GITHUBEMAIL
-      git clone $BUILD_REPOSITORY_URI .
+      git clone $SYSTEM_PULLREQUEST_SOURCEREPOSITORYURI .
       git checkout $SYSTEM_PULLREQUEST_SOURCEBRANCH
     displayName: checkout source branch
     env:
