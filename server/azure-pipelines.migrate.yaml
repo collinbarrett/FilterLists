@@ -22,12 +22,12 @@ steps:
 
   # TEMP: rm first line
   - bash: |
-      echo "##vso[task.setvariable variable=aborted]true"
+      echo "##vso[task.setvariable variable=aborted;isOutput=true]true"
       LASTMSG=$(git log -n 1 --pretty=format:"%s")
       echo "Last commit message: $LASTMSG"
       if [[ "$LASTMSG" == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
         echo "Just migrated. Exiting..."
-        echo "##vso[task.setvariable variable=aborted]true"
+        echo "##vso[task.setvariable variable=aborted;isOutput=true]true"
       fi
     displayName: abort if just migrated
     name: abortIfJustMigrated
@@ -67,7 +67,7 @@ steps:
       echo "$DIFF files changed"
       if (( $DIFF != 3 )) ; then
         echo "noop migration. Abandoning..."
-        echo "##vso[task.setvariable variable=aborted]true"
+        echo "##vso[task.setvariable variable=aborted;isOutput=true]true"
       fi
     displayName: abort if noop migration
     name: abortIfNoopMigration
