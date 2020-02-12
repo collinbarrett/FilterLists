@@ -13,12 +13,15 @@ pool:
 steps:
   - checkout: none
 
-  - script: |
-      git config --global user.name "$(GitHub.Name)"
-      git config --global user.email "$(GitHub.Email)"
-      git clone $(Build.Repository.Uri) .
-      git checkout $(System.PullRequest.SourceBranch)
+  - bash: |
+      git config --global user.name $GITHUBNAME
+      git config --global user.email $GITHUBEMAIL
+      git clone $BUILD_REPOSITORY_URI .
+      git checkout $SYSTEM_PULLREQUEST_SOURCEBRANCH
     displayName: checkout source branch
+    env:
+      GitHubName: $(GitHub.Name)
+      GitHubEmail: $(GitHub.Email)
 
   - bash: |
       LASTMSG=$(git log -n 1 --pretty=format:"%s")
@@ -70,9 +73,11 @@ steps:
     displayName: commit or abandon migration
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
-  - script: |
+  - bash: |
       git config --global credential.helper store
-      echo "https://$(GitHub.PAT):x-oauth-basic@github.com" >> ~/.git-credentials
-      git push origin $(System.PullRequest.SourceBranch)
+      echo "https://$GITHUBPAT:x-oauth-basic@github.com" >> ~/.git-credentials
+      git push origin $SYSTEM_PULLREQUEST_SOURCEBRANCH
     displayName: git push
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    env:
+      GitHubPat: $(GitHub.Pat)
