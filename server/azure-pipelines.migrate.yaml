@@ -24,6 +24,7 @@ steps:
   # TODO: Merge latest data/* and server/src/FilterLists.Data.Migrations/* from origin/master.
   # TODO: If data/* and server/src/FilterLists.Data.Migrations/* change in origin/master, re-trigger this Pipeline.
 
+  # TODO: validate author of last commit was $(GITHUBNAME)
   - bash: |
       LASTMSG=$(git log -n 1 --pretty=format:"%s")
       echo "Last commit message: \"$LASTMSG\""
@@ -53,6 +54,7 @@ steps:
       GITHUBEMAIL: $(GITHUBEMAIL)
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
+  # TODO: additionally grep on author of $(GITHUBNAME) when getting $REVERTHASH
   - bash: |
       MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
       echo "$MIGLIST"
