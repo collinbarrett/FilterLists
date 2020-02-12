@@ -45,8 +45,8 @@ steps:
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - bash: |
-      git config --global user.name $(GITHUB_NAME)
-      git config --global user.email $(GITHUB_EMAIL)
+      git config --global user.name $GITHUB_NAME
+      git config --global user.email $GITHUB_EMAIL
     displayName: git config
     env:
       GITHUB_NAME: $(GitHub.Name)
@@ -86,7 +86,7 @@ steps:
 
   - bash: |
       git config --global credential.helper store
-      echo "https://$(GITHUB_PAT):x-oauth-basic@github.com" >> ~/.git-credentials
+      echo "https://$GITHUB_PAT:x-oauth-basic@github.com" >> ~/.git-credentials
       git push origin "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
     displayName: git push
     env:
