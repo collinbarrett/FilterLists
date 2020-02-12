@@ -20,6 +20,15 @@ steps:
       git checkout $(System.PullRequest.SourceBranch)
     displayName: checkout source branch
 
+  # TODO: on exit, don't fail the pipeline
+  - bash: |
+      LASTMSG=$(git log -n 1 --pretty=format:"%s")
+      echo "Last commit message: $LASTMSG"
+      if [[ "$LASTMSG" == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
+        echo "Just migrated. Exiting..."
+      fi
+    displayName: abort if just migrated
+
   - task: UseDotNet@2
     displayName: use latest dotnet sdk
     inputs:
@@ -31,10 +40,9 @@ steps:
   - bash: |
       MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
       echo "$MIGLIST"
-      if [[ "$MIGLIST" == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]]
-      then
+      if [[ "$MIGLIST" == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
         echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER, reverting..."
-        REVERTHASH=$(git log --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ***NO_CI***" -n 1 --pretty=format:"%H")
+        REVERTHASH=$(git log --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" -n 1 --pretty=format:"%H")
         git revert --no-edit $REVERTHASH
       else
         echo "No migration exists yet for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER."
@@ -46,7 +54,7 @@ steps:
     displayName: add migration
     workingDirectory: server/src
 
-  # TODO: on empty migration, skip remaining steps without erroring the pipeline
+  # TODO: on exit, don't fail the pipeline
   - bash: |
       git add .
       DIFF=$(git diff --cached --numstat | wc -l)
@@ -55,8 +63,7 @@ steps:
         echo "Empty migration. Abandoning..."
         exit 1
       fi
-    displayName: check for empty migration
-    workingDirectory: server/src
+    displayName: abort if empty migration
 
   - task: DockerCompose@0
     displayName: build test-data
@@ -104,7 +111,7 @@ steps:
     condition: succeededOrFailed()
 
   - script: |
-      git commit -m "migrate PR #$(System.PullRequest.PullRequestNumber) ***NO_CI***"
+      git commit -m "migrate PR #$(System.PullRequest.PullRequestNumber)"
       git config --global credential.helper store
       echo "https://$(GitHub.PAT):x-oauth-basic@github.com" >> ~/.git-credentials
       git push origin $(System.PullRequest.SourceBranch)
