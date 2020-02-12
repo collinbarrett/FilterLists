@@ -26,6 +26,9 @@ steps:
       GitHubName: $(GitHub.Name)
       GitHubEmail: $(GitHub.Email)
 
+  # TODO: Merge latest data/* and server/src/FilterLists.Data.Migrations/* from origin/master.
+  # TODO: If data/* and server/src/FilterLists.Data.Migrations/* change in origin/master, re-trigger this Pipeline.
+
   - bash: |
       LASTMSG=$(git log -n 1 --pretty=format:"%s")
       echo "Last commit message: $LASTMSG"
