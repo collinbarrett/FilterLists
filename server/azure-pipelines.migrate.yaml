@@ -30,16 +30,17 @@ steps:
         echo "##vso[task.setvariable variable=aborted]true"
       fi
     displayName: abort if just migrated
+    name: abortIfJustMigrated
 
   - task: UseDotNet@2
     displayName: use latest dotnet sdk
     inputs:
       version: 3.x
-    condition: ne($(aborted), 'true')
+    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
 
   - script: dotnet tool install -g dotnet-ef
     displayName: install ef dotnet tool
-    condition: ne($(aborted), 'true')
+    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
 
   - bash: |
       MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
@@ -53,12 +54,12 @@ steps:
       fi
     displayName: revert any existing migration for PR
     workingDirectory: server/src
-    condition: ne($(aborted), 'true')
+    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
 
   - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: add migration
     workingDirectory: server/src
-    condition: ne($(aborted), 'true')
+    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
 
   - bash: |
       git add .
@@ -69,56 +70,57 @@ steps:
         echo "##vso[task.setvariable variable=aborted]true"
       fi
     displayName: abort if noop migration
-    condition: ne($(aborted), 'true')
+    name: abortIfNoopMigration
+    condition: ne(variables['abortIfJustMigrated.aborted'], 'true')
 
   - task: DockerCompose@0
     displayName: build test-data
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: build api
-    condition: ne($(aborted), 'true')
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'))
 
   - task: Docker@2
     displayName: create volume test-data-results
     inputs:
       command: volume
       arguments: create test-data-results
-    condition: ne($(aborted), 'true')
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'))
 
   - task: DockerCompose@0
     displayName: up test-data db
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: up -d mariadb
-    condition: ne($(aborted), 'true')
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'))
 
   - task: DockerCompose@0
     displayName: run test-data
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: run api
-    condition: ne($(aborted), 'true')
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'))
 
   - task: Docker@2
     displayName: create container test-data-results
     inputs:
       command: container
       arguments: create --name test-data-results -v test-data-results:/results hello-world
-      condition: and(ne($(aborted), 'true'), succeededOrFailed())
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'), succeededOrFailed())
 
   - task: Docker@2
     displayName: copy out test-data results
     inputs:
       command: cp
       arguments: test-data-results:/results $(System.DefaultWorkingDirectory)
-      condition: and(ne($(aborted), 'true'), succeededOrFailed())
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'), succeededOrFailed())
 
   - task: PublishTestResults@2
     displayName: publish test results
     inputs:
       testResultsFormat: VSTest
       testResultsFiles: "**/*.trx"
-    condition: and(ne($(aborted), 'true'), succeededOrFailed())
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'), succeededOrFailed())
 
   - script: |
       git commit -m "migrate PR #$(System.PullRequest.PullRequestNumber)"
@@ -126,4 +128,4 @@ steps:
       echo "https://$(GitHub.PAT):x-oauth-basic@github.com" >> ~/.git-credentials
       git push origin $(System.PullRequest.SourceBranch)
     displayName: git push migration
-    condition: ne($(aborted), 'true')
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abortIfNoopMigration.aborted'], 'true'))
