@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "description": "A filter list that blocks mobile advertisements and trackers on Japanese properties",
+    "description": "TEST - A filter list that blocks mobile advertisements and trackers on Japanese properties",
     "homeUrl": "https://280blocker.net",
     "licenseId": 1,
     "name": "280 Blocker",
