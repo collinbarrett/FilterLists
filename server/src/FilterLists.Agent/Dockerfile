@@ -1,5 +1,5 @@
-# Context: .
-# Command: docker build -f server/src/FilterLists.Agent/Dockerfile .
+# Context: ../../
+# Command: docker build -f src/FilterLists.Agent/Dockerfile .
 
 # init base
 FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine as base
@@ -11,11 +11,11 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine AS build
 
 # restore
 WORKDIR /app/src/FilterLists.Agent
-COPY server/src/FilterLists.Agent/FilterLists.Agent.csproj .
+COPY src/FilterLists.Agent/FilterLists.Agent.csproj .
 RUN dotnet restore
 
 # build
-COPY server/src/FilterLists.Agent/. .
+COPY src/FilterLists.Agent/. .
 RUN dotnet build -c Release -r linux-musl-x64 --no-restore
 
 # init Agent.Tests
@@ -24,11 +24,11 @@ ENTRYPOINT ["dotnet", "test", "--logger:trx"]
 
 # restore Agent.Tests
 WORKDIR /app/tests/FilterLists.Agent.Tests
-COPY server/tests/FilterLists.Agent.Tests/FilterLists.Agent.Tests.csproj .
+COPY tests/FilterLists.Agent.Tests/FilterLists.Agent.Tests.csproj .
 RUN dotnet restore
 
 # build Agent.Tests
-COPY server/tests/FilterLists.Agent.Tests/. .
+COPY tests/FilterLists.Agent.Tests/. .
 RUN dotnet build -c Release --no-restore
 
 # publish
