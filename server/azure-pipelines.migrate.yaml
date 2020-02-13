@@ -74,6 +74,8 @@ steps:
     workingDirectory: server/src
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
+  # TODO: Copy/move test-data steps from API Pipeline
+
   - bash: |
       DIFF=$(git status -s | wc -l)
       echo "$DIFF file(s) changed"
