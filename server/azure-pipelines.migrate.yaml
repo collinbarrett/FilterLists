@@ -21,7 +21,7 @@ resources:
       name: DandelionSprout/FilterLists
       endpoint: collinbarrett
       persistCredentials: true
-      ref: $(System.PullRequest.SourceBranch)
+      # ref: $(System.PullRequest.SourceBranch)
 
 steps:
   - checkout: self
