@@ -20,7 +20,6 @@ steps:
   - script: |
       git clone $(System.PullRequest.SourceRepositoryUri) .
       git checkout $(Build.SourceBranch)
-      echo "TEMP: triggering auto build"
     displayName: checkout source branch
 
   # TODO: validate author of last commit was $(GITHUBNAME)
