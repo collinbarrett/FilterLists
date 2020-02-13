@@ -1,6 +1,6 @@
 # Adds an Entity Framework Core migration to a pull request that changes data in data/*.json
 
-# TODO: If data/* and server/src/FilterLists.Data.Migrations/* change in origin/master, re-trigger this Pipeline.
+# TODO: If data/* or server/src/FilterLists.Data.Migrations/* change in origin/master, re-trigger this Pipeline.
 trigger: none
 
 pr:
