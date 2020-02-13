@@ -17,9 +17,7 @@ steps:
   - checkout: none
 
   - bash: |
-      FORKURI=$(curl -X GET https://api.github.com/repos/$BUILD_REPOSITORY_NAME/pulls/$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER | jq '.head.repo.clone_url')
-      FORKURI="${FORKURI%\"}"
-      FORKURI="${FORKURI#\"}"
+      FORKURI=$(curl -X GET https://api.github.com/repos/$BUILD_REPOSITORY_NAME/pulls/$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER | jq -r '.head.repo.clone_url')
       git clone "$FORKURI" .
       git checkout $SYSTEM_PULLREQUEST_SOURCEBRANCH
     displayName: checkout source branch
