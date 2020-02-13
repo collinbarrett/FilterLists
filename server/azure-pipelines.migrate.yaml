@@ -1,5 +1,6 @@
 # Adds an Entity Framework Core migration to a pull request that changes data in data/*.json
 
+# TODO: If data/* and server/src/FilterLists.Data.Migrations/* change in origin/master, re-trigger this Pipeline.
 trigger: none
 
 pr:
@@ -20,9 +21,6 @@ steps:
       git clone $(System.PullRequest.SourceRepositoryUri) .
       git checkout $(System.PullRequest.SourceBranch)
     displayName: checkout source branch
-
-  # TODO: Merge latest data/* and server/src/FilterLists.Data.Migrations/* from origin/master.
-  # TODO: If data/* and server/src/FilterLists.Data.Migrations/* change in origin/master, re-trigger this Pipeline.
 
   # TODO: validate author of last commit was $(GITHUBNAME)
   - bash: |
@@ -68,6 +66,8 @@ steps:
     displayName: revert any existing migration for PR
     workingDirectory: server/src
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+
+  # TODO: Merge latest data/* and server/src/FilterLists.Data.Migrations/* from origin/master.
 
   - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: add migration
