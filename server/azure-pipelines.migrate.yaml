@@ -24,11 +24,7 @@ resources:
       # ref: $(System.PullRequest.SourceBranch)
 
 steps:
-  - checkout: self
-    path: s/origin
-
   - checkout: fork
-    path: s/fork
 
   - script: dir $(Build.SourcesDirectory)
 
