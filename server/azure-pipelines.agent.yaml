@@ -12,7 +12,7 @@ trigger:
         ".dockerignore",
         "docker-compose.yml",
         "docker-compose.prod.yml",
-        "server/docker-compose.agent.tests.yml",
+        "docker-compose.agent.tests.yml",
       ]
 
 pr:
@@ -29,7 +29,7 @@ pr:
         ".dockerignore",
         "docker-compose.yml",
         "docker-compose.prod.yml",
-        "server/docker-compose.agent.tests.yml",
+        "docker-compose.agent.tests.yml",
       ]
 
 pool:
@@ -45,7 +45,7 @@ steps:
   - task: DockerCompose@0
     displayName: "run agent"
     inputs:
-      dockerComposeFile: "server/docker-compose.agent.tests.yml"
+      dockerComposeFile: "docker-compose.agent.tests.yml"
       dockerComposeCommand: "run agent"
 
   - task: Docker@2

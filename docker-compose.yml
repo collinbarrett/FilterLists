@@ -59,8 +59,8 @@ services:
   agent:
     image: collinbarrett2/filterlists.agent:latest
     build:
-      context: ./server
-      dockerfile: src/FilterLists.Agent/Dockerfile
+      context: .
+      dockerfile: server/src/FilterLists.Agent/Dockerfile
       target: final
     volumes:
       - archives:/app/archives
