@@ -13,14 +13,28 @@ pr:
 pool:
   vmImage: ubuntu-latest
 
+resources:
+  repositories:
+    # TODO: pass variable for GitHub username of pull request contributor
+    - repository: fork
+      type: github
+      name: DandelionSprout/FilterLists
+      endpoint: collinbarrett
+      persistCredentials: true
+      ref: $(System.PullRequest.SourceBranch)
+
 steps:
-  - checkout: none
+  - checkout: self
+  - checkout: fork
+
+  - script: dir $(Build.SourcesDirectory)
 
   # TODO: Replace $(System.PullRequest.SourceRepositoryUri) with fork's URI. https://stackoverflow.com/q/60188806/2343739
   - script: |
       git clone $(System.PullRequest.SourceRepositoryUri) .
       git checkout $(System.PullRequest.SourceBranch)
     displayName: checkout source branch
+    enabled: false
 
   # TODO: validate author of last commit was $(GITHUBNAME)
   - bash: |
@@ -32,16 +46,19 @@ steps:
       fi
     displayName: abort if just migrated
     name: abortIfJustMigrated
+    enabled: false
 
   - task: UseDotNet@2
     displayName: use latest dotnet sdk
     inputs:
       version: 3.x
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    enabled: false
 
   - script: dotnet tool install -g dotnet-ef
     displayName: install ef dotnet tool
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    enabled: false
 
   - bash: |
       git config --global user.name "$GITHUBNAME"
@@ -51,6 +68,7 @@ steps:
       GITHUBNAME: $(GITHUBNAME)
       GITHUBEMAIL: $(GITHUBEMAIL)
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    enabled: false
 
   # TODO: additionally grep on author of $(GITHUBNAME) when getting $REVERTHASH
   - bash: |
@@ -66,6 +84,7 @@ steps:
     displayName: revert any existing migration for PR
     workingDirectory: server/src
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    enabled: false
 
   # TODO: Merge latest data/* and server/src/FilterLists.Data.Migrations/* from origin/master.
 
@@ -73,6 +92,7 @@ steps:
     displayName: add migration
     workingDirectory: server/src
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    enabled: false
 
   - bash: |
       DIFF=$(git status -s | wc -l)
@@ -85,6 +105,7 @@ steps:
       fi
     displayName: commit or abandon migration
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    enabled: false
 
   - bash: |
       git config --global credential.helper store
@@ -94,3 +115,4 @@ steps:
     env:
       GITHUBPAT: $(GITHUBPAT)
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    enabled: false
