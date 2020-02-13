@@ -7,8 +7,8 @@ pr:
   autoCancel: true
   branches:
     include: [master]
-  paths:
-    # $include: [data/*, server/src/FilterLists.Data.Migrations/Migrations/*]
+  # paths:
+  # $include: [data/*, server/src/FilterLists.Data.Migrations/Migrations/*]
 
 pool:
   vmImage: ubuntu-latest
