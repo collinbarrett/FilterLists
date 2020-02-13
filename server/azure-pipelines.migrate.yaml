@@ -16,6 +16,7 @@ pool:
 steps:
   - checkout: none
 
+  # TODO: switch to using Azure Pipelines Repository Resource to use GitHub service connection rather than PAT
   - bash: |
       FORKURI=$(curl -X GET "https://api.github.com/repos/$BUILD_REPOSITORY_NAME/pulls/$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" | jq -r '.head.repo.clone_url')
       git clone "$FORKURI" .
