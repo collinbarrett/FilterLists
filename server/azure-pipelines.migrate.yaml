@@ -16,10 +16,12 @@ pool:
 steps:
   - checkout: none
 
+  - bash: "env | sort"
+
   # TODO: Replace $(System.PullRequest.SourceRepositoryUri) with fork's URI. https://stackoverflow.com/q/60188806/2343739
   - script: |
       git clone $(System.PullRequest.SourceRepositoryUri) .
-      git checkout $(Build.SourceBranch)
+      git checkout $(System.PullRequest.SourceBranch)
     displayName: checkout source branch
 
   # TODO: validate author of last commit was $(GITHUBNAME)
@@ -89,7 +91,7 @@ steps:
   - bash: |
       git config --global credential.helper store
       echo "https://$GITHUBPAT:x-oauth-basic@github.com" >> ~/.git-credentials
-      git push
+      git push origin "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
     displayName: git push
     env:
       GITHUBPAT: $(GITHUBPAT)
