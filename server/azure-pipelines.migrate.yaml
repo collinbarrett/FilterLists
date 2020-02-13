@@ -16,8 +16,6 @@ pool:
 steps:
   - checkout: none
 
-  - bash: "env | sort"
-
   # TODO: Replace $(System.PullRequest.SourceRepositoryUri) with fork's URI. https://stackoverflow.com/q/60188806/2343739
   - script: |
       git clone $(System.PullRequest.SourceRepositoryUri) .
