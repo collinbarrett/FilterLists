@@ -16,10 +16,12 @@ pool:
 steps:
   - checkout: none
 
-  # TODO: Replace $(System.PullRequest.SourceRepositoryUri) with fork's URI. https://stackoverflow.com/q/60188806/2343739
-  - script: |
-      git clone $(System.PullRequest.SourceRepositoryUri) .
-      git checkout $(System.PullRequest.SourceBranch)
+  - bash: |
+      FORKURI=$(curl -X GET https://api.github.com/repos/$BUILD_REPOSITORY_NAME/pulls/$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER | jq '.head.repo.clone_url')
+      FORKURI="${FORKURI%\"}"
+      FORKURI="${FORKURI#\"}"
+      git clone "$FORKURI" .
+      git checkout $SYSTEM_PULLREQUEST_SOURCEBRANCH
     displayName: checkout source branch
 
   # TODO: validate author of last commit was $(GITHUBNAME)

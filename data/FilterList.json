@@ -2855,7 +2855,7 @@
     "issuesUrl": "https://github.com/easylist/easylist/issues",
     "licenseId": 16,
     "name": "Fanboy's Enhanced Tracking List",
-    "syntaxId": 28,
+    "syntaxId": 3,
     "updatedDate": "2019-04-08T15:19:10",
     "viewUrl": "https://fanboy.co.nz/enhancedstats.txt"
   },
@@ -3856,7 +3856,7 @@
     "licenseId": 11,
     "name": "HOSTS AdBlock",
     "publishedDate": "2018-02-17T00:00:00",
-    "syntaxId": 2,
+    "syntaxId": 28,
     "updatedDate": "2019-04-04T18:07:25",
     "viewUrl": "https://raw.githubusercontent.com/eladkarako/hosts/master/build/hosts_adblock.txt"
   },
@@ -4433,7 +4433,7 @@
     "description": "Blocks ads, fake sites, shock sites, malware hosts and trackers. This hostfile's aim is not to break any useful websites.",
     "homeUrl": "https://github.com/notracking/hosts-blocklists",
     "issuesUrl": "https://github.com/notracking/hosts-blocklists/issues",
-    "licenseId": 5,
+    "licenseId": 9,
     "name": "notracking - Domains",
     "publishedDate": "2015-12-20T00:23:44",
     "syntaxId": 20,
@@ -4445,7 +4445,7 @@
     "description": "Blocks ads, fake sites, shock sites, malware hosts and trackers. This hostfile's aim is not to break any useful websites.",
     "homeUrl": "https://github.com/notracking/hosts-blocklists",
     "issuesUrl": "https://github.com/notracking/hosts-blocklists/issues",
-    "licenseId": 5,
+    "licenseId": 9,
     "name": "notracking - Hostnames",
     "publishedDate": "2015-12-20T00:23:44",
     "syntaxId": 1,
@@ -7312,21 +7312,21 @@
   },
   {
     "id": 764,
-    "homeUrl": "http://jansal.net/TPL.shtml",
+    "homeUrl": "https://jansal.net/TPL.shtml",
     "licenseId": 16,
-    "name": "Fanboy's Enhanced Tracking List",
+    "name": "Fanboy's Enhanced Tracking List (TPL)",
     "syntaxId": 10,
     "updatedDate": "2016-09-05T00:00:00",
-    "viewUrl": "http://jansal.net/tpl/fanboy/enhancedstats-addon.tpl"
+    "viewUrl": "https://jansal.net/tpl/fanboy/enhancedstats-addon.tpl"
   },
   {
     "id": 765,
-    "homeUrl": "http://jansal.net/TPL.shtml",
+    "homeUrl": "https://jansal.net/TPL.shtml",
     "licenseId": 16,
     "name": "Fanboy's Adblock List (TPL)",
     "syntaxId": 10,
     "updatedDate": "2013-05-17T00:00:00",
-    "viewUrl": "http://jansal.net/tpl/fanboy/fanboy-adult.tpl"
+    "viewUrl": "https://jansal.net/tpl/fanboy/fanboy-adult.tpl"
   },
   {
     "id": 766,
@@ -17029,7 +17029,7 @@
     "issuesUrl": "https://github.com/nickspaargaren/pihole-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 11,
     "name": "pihole-google (Hosts)",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/google-domains",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/google-domains"
   },
@@ -17055,7 +17055,7 @@
     "issuesUrl": "https://github.com/nickspaargaren/pihole-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 11,
     "name": "pihole-google | Google analytics (Hosts)",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/analytics.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/analytics.txt"
   },
@@ -17081,7 +17081,7 @@
     "issuesUrl": "https://github.com/nickspaargaren/pihole-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 11,
     "name": "pihole-google | Android (Hosts)",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/android.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/android.txt"
   },
@@ -17107,7 +17107,7 @@
     "issuesUrl": "https://github.com/nickspaargaren/pihole-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 11,
     "name": "pihole-google | Google DNS (Hosts)",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/dns.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/dns.txt"
   },
@@ -17133,7 +17133,7 @@
     "issuesUrl": "https://github.com/nickspaargaren/pihole-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 11,
     "name": "pihole-google | Google search (Hosts)",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/domains.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/domains.txt"
   },
@@ -17159,7 +17159,7 @@
     "issuesUrl": "https://github.com/nickspaargaren/pihole-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 11,
     "name": "pihole-google | DoubleClick (Hosts)",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/doubleclick.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/doubleclick.txt"
   },
@@ -17185,7 +17185,7 @@
     "issuesUrl": "https://github.com/nickspaargaren/pihole-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 11,
     "name": "pihole-google | Firebase (Hosts)",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/firebase.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/firebase.txt"
   },
@@ -17211,7 +17211,7 @@
     "issuesUrl": "https://github.com/nickspaargaren/pihole-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 11,
     "name": "pihole-google | Google fonts (Hosts)",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/fonts.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/fonts.txt"
   },
@@ -17237,7 +17237,7 @@
     "issuesUrl": "https://github.com/nickspaargaren/pihole-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 11,
     "name": "pihole-google | General Google domains (Hosts)",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/general.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/general.txt"
   },
@@ -17263,7 +17263,7 @@
     "issuesUrl": "https://github.com/nickspaargaren/pihole-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 11,
     "name": "pihole-google | Gmail (Hosts)",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/mail.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/mail.txt"
   },
@@ -17289,7 +17289,7 @@
     "issuesUrl": "https://github.com/nickspaargaren/pihole-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 11,
     "name": "pihole-google | Google products (Hosts)",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/products.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/products.txt"
   },
@@ -17315,7 +17315,7 @@
     "issuesUrl": "https://github.com/nickspaargaren/pihole-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 11,
     "name": "pihole-google | Google proxies (Hosts)",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/proxies.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/proxies.txt"
   },
@@ -17341,7 +17341,7 @@
     "issuesUrl": "https://github.com/nickspaargaren/pihole-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 11,
     "name": "pihole-google | Google shorteners (Hosts)",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/shortlinks.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/shortlinks.txt"
   },
@@ -17367,7 +17367,7 @@
     "issuesUrl": "https://github.com/nickspaargaren/pihole-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 11,
     "name": "pihole-google | Youtube (Hosts)",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/pihole-google/master/categories/youtube.txt",
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/pihole-google/raw/master/categories/youtube.txt"
   },
@@ -17689,7 +17689,7 @@
     "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
     "licenseId": 35,
     "name": "1Hosts Pro",
-    "syntaxId": 2,
+    "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/hosts.txt"
   },
   {
@@ -19564,15 +19564,6 @@
     "viewUrl": "https://raw.githubusercontent.com/DavidTai780/AdGuard-Home-Private-Rules/master/hosts.txt"
   },
   {
-    "id": 1889,
-    "homeUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules",
-    "issuesUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules/issues",
-    "licenseId": 5,
-    "name": "Private Ads Block List",
-    "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/DavidTai780/AdGuard-Home-Private-Rules/master/ads-block.txt"
-  },
-  {
     "id": 1890,
     "homeUrl": "https://github.com/deletescape/noads",
     "issuesUrl": "https://github.com/deletescape/noads/issues",
@@ -20528,20 +20519,6 @@
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/WikiaPureBrowsingExperienceDomains.txt"
   },
   {
-    "id": 1982,
-    "description": "Do you like to browse casually through different Wikia wikis, but are tired of FANDOM promotions, promotions for movies that you don't care about, and narrow article bodies? Then this list will save your day.",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 35,
-    "name": "Wikia: Pure Browsing Experience («Hosts» version)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/WikiaPureBrowsingExperienceDomains.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Other%20domains%20versions/WikiaPureBrowsingExperienceDomains.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/WikiaPureBrowsingExperienceDomains.txt"
-  },
-  {
     "id": 1983,
     "description": "On the internet, quite a lot of erotic art seems to have been made for people with zero self-confidence whatsoever. And for highly inexplicable reasons, a lot of online netizens seem to deeply crave to become the subjects of (or imposing) slavery, abuse, imprisonment, blatant rape, mauling, squishing, critical infections, death, and brutal death, among other things. If you are a sufficiently functional sentient being that you become physically sick from such notions (which you have all rights to get sick for), this list is how to lift yourself above such things.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
@@ -20576,7 +20553,7 @@
     "homeUrl": "https://adguard.com/adguard-dns/overview.html",
     "licenseId": 5,
     "name": "AdGuard DNS — Standard",
-    "syntaxId": 21,
+    "syntaxId": 22,
     "viewUrl": "https://dns.adguard.com/dns-query",
     "viewUrlMirror1": "tls://dns.adguard.com",
     "viewUrlMirror2": "176.103.130.130"
@@ -20588,7 +20565,7 @@
     "homeUrl": "https://adguard.com/adguard-dns/overview.html",
     "licenseId": 5,
     "name": "AdGuard DNS — Family Protection",
-    "syntaxId": 21,
+    "syntaxId": 22,
     "viewUrl": "https://dns-family.adguard.com/dns-query",
     "viewUrlMirror1": "tls://dns-family.adguard.com",
     "viewUrlMirror2": "176.103.130.132"
@@ -21033,5 +21010,141 @@
     "name": "Blockzilla (Hosts)",
     "syntaxId": 1,
     "viewUrl": "https://block.energized.pro/assets/sources/filter/blockzilla.txt"
+  },
+  {
+    "id": 2034,
+    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
+    "homeUrl": "https://easylist.to/",
+    "licenseId": 4,
+    "name": "Fanboy Notifications Blocking List",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-notifications.txt"
+  },
+  {
+    "id": 2035,
+    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
+    "homeUrl": "https://easylist.to/",
+    "licenseId": 4,
+    "name": "Fanboy Notifications Blocking List (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-notifications.tpl"
+  },
+  {
+    "id": 2036,
+    "description": "Blocks ads, fake sites, shock sites, malware hosts and trackers. This hostfile's aim is not to break any useful websites.",
+    "homeUrl": "https://github.com/notracking/hosts-blocklists",
+    "issuesUrl": "https://github.com/notracking/hosts-blocklists/issues",
+    "licenseId": 9,
+    "name": "notracking - Adblocker domains",
+    "syntaxId": 28,
+    "viewUrl": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/adblock/adblock.txt"
+  },
+  {
+    "id": 2037,
+    "description": "Just a normal privacy oriented dns service with a ability to block ads, trackers and also provides uncensored dns! Servers are hosted in Germany. Uses a combination of many, many other lists made by others. Links that didn't fit in the View button URL texts, include 2a01:4f8:1c1c:75b4::1.",
+    "homeUrl": "https://github.com/bhanupratapys/dnswarden",
+    "issuesUrl": "https://github.com/bhanupratapys/dnswarden/issues",
+    "licenseId": 2,
+    "name": "dnswarden Adblocking (DNS)",
+    "syntaxId": 22,
+    "viewUrl": "https://ecs-doh.dnswarden.com/adblock-ecs",
+    "viewUrlMirror1": "tls://adblock-dot.dnswarden.com",
+    "viewUrlMirror2": "116.203.70.156"
+  },
+  {
+    "id": 2038,
+    "description": "Blocklist mainly used for dns servers at dnswarden",
+    "homeUrl": "https://github.com/dnswarden/blocklist/",
+    "issuesUrl": "https://github.com/dnswarden/blocklist/issues",
+    "name": "dnswarden Adblocking (Hosts)",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/dnswarden/blocklist/master/blacklist-formats/hosts"
+  },
+  {
+    "id": 2039,
+    "description": "Blocklist mainly used for dns servers at dnswarden",
+    "homeUrl": "https://github.com/dnswarden/blocklist/",
+    "issuesUrl": "https://github.com/dnswarden/blocklist/issues",
+    "name": "dnswarden Adblocking (Domains)",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/dnswarden/blocklist/master/blacklist-formats/hostnames"
+  },
+  {
+    "id": 2040,
+    "description": "Blocklist mainly used for dns servers at dnswarden",
+    "homeUrl": "https://github.com/dnswarden/blocklist/",
+    "issuesUrl": "https://github.com/dnswarden/blocklist/issues",
+    "name": "dnswarden Adblocking (RPZ)",
+    "syntaxId": 25,
+    "viewUrl": "https://raw.githubusercontent.com/dnswarden/blocklist/master/blacklist-formats/rpz"
+  },
+  {
+    "id": 2041,
+    "description": "This is a slimmer version of \"Dandelion Sprout's Nordic Filters\", intended for users of software tools that doesn't support adblocker syntaxes. It chiefly targets scams and malware on Norwegian or Danish sites, as well as some advert and tracking servers.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (IPv4 «Hosts»)",
+    "syntaxId": 36,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsIPv6.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsIPv6.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsIPv6.txt"
+  },
+  {
+    "id": 2042,
+    "description": "A filter that blocks the thumbnails of users that upload junk or stuff in the wrong categories.",
+    "homeUrl": "https://github.com/lassekongo83/Frellwits-filter-lists",
+    "issuesUrl": "https://github.com/lassekongo83/Frellwits-filter-lists/issues",
+    "licenseId": 4,
+    "name": "deviantJUNKfilter",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/deviantJUNKfilter.txt",
+    "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/deviantJUNKfilter.txt"
+  },
+  {
+    "id": 2043,
+    "description": "anti-AD is currently the highest-hitcount-filtering ad list in Chinese, which achieves accurate ad blocking and privacy protection. Now supports AdGuard Home, dnsmasq, Surge, Pi-Hole and other excellent network tools.",
+    "homeUrl": "https://anti-ad.win/",
+    "issuesUrl": "https://github.com/privacy-protection-tools/anti-AD/issues",
+    "licenseId": 2,
+    "name": "anti-AD (Adblockers)",
+    "syntaxId": 28,
+    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt",
+    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt"
+  },
+  {
+    "id": 2044,
+    "description": "anti-AD is currently the highest-hitcount-filtering ad list in Chinese, which achieves accurate ad blocking and privacy protection. Now supports AdGuard Home, dnsmasq, Surge, Pi-Hole and other excellent network tools.",
+    "homeUrl": "https://anti-ad.win/",
+    "issuesUrl": "https://github.com/privacy-protection-tools/anti-AD/issues",
+    "licenseId": 2,
+    "name": "anti-AD (Domains)",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt",
+    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-domains.txt"
+  },
+  {
+    "id": 2045,
+    "description": "anti-AD is currently the highest-hitcount-filtering ad list in Chinese, which achieves accurate ad blocking and privacy protection. Now supports AdGuard Home, dnsmasq, Surge, Pi-Hole and other excellent network tools.",
+    "homeUrl": "https://anti-ad.win/",
+    "issuesUrl": "https://github.com/privacy-protection-tools/anti-AD/issues",
+    "licenseId": 2,
+    "name": "anti-AD (dnsmasq)",
+    "syntaxId": 20,
+    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf",
+    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/adblock-for-dnsmasq.conf"
+  },
+  {
+    "id": 2046,
+    "description": "anti-AD is currently the highest-hitcount-filtering ad list in Chinese, which achieves accurate ad blocking and privacy protection. Now supports AdGuard Home, dnsmasq, Surge, Pi-Hole and other excellent network tools.",
+    "homeUrl": "https://anti-ad.win/",
+    "issuesUrl": "https://github.com/privacy-protection-tools/anti-AD/issues",
+    "licenseId": 2,
+    "name": "anti-AD (Surge)",
+    "syntaxId": 29,
+    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt",
+    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-surge.txt"
   }
 ]
