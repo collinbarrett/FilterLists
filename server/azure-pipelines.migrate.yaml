@@ -25,10 +25,10 @@ resources:
 
 steps:
   - checkout: self
-    path: origin
+    path: s/origin
 
   - checkout: fork
-    path: fork
+    path: s/fork
 
   - script: dir $(Build.SourcesDirectory)
 
