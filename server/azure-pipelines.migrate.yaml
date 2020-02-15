@@ -86,66 +86,68 @@ steps:
     workingDirectory: server/src
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
+  - bash: |
+      DIFF=$(git status -s | wc -l)
+      echo "$DIFF file(s) changed"
+      if (( $DIFF != 3 )) ; then
+        echo "No-op migration. Effective EF migrations add/change 3 files total (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
+        echo "##vso[task.setvariable variable=abandoned;isOutput=true]true"
+      else
+        git add .
+        git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
+      fi
+    displayName: commit or abandon migration
+    name: abandonNoop
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+
   - task: DockerCompose@0
     displayName: build test-data
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: build api
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abandonNoop.abandoned'], 'true'), succeeded())
 
   - task: Docker@2
     displayName: create volume test-data-results
     inputs:
       command: volume
       arguments: create test-data-results
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abandonNoop.abandoned'], 'true'), succeeded())
 
   - task: DockerCompose@0
     displayName: up test-data db
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: up -d mariadb
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abandonNoop.abandoned'], 'true'), succeeded())
 
   - task: DockerCompose@0
     displayName: run test-data
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: run api
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abandonNoop.abandoned'], 'true'), succeeded())
 
   - task: Docker@2
     displayName: create container test-data-results
     inputs:
       command: container
       arguments: create --name test-data-results -v test-data-results:/results hello-world
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeededOrFailed())
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abandonNoop.abandoned'], 'true'), succeededOrFailed())
 
   - task: Docker@2
     displayName: copy out test-data results
     inputs:
       command: cp
       arguments: test-data-results:/results $(System.DefaultWorkingDirectory)
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeededOrFailed())
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abandonNoop.abandoned'], 'true'), succeededOrFailed())
 
-    - task: PublishTestResults@2
-      displayName: publish test results
-      inputs:
-        testResultsFormat: VSTest
-        testResultsFiles: "**/*.trx"
-      condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeededOrFailed())
-
-  - bash: |
-      DIFF=$(git status -s | wc -l)
-      echo "$DIFF file(s) changed"
-      if (( $DIFF != 3 )) ; then
-        echo "No-op migration. Effective EF migrations add/change 3 files total (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
-      else
-        git add .
-        git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
-      fi
-    displayName: commit or abandon migration
-    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+  - task: PublishTestResults@2
+    displayName: publish test results
+    inputs:
+      testResultsFormat: VSTest
+      testResultsFiles: "**/*.trx"
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), ne(variables['abandonNoop.abandoned'], 'true'), succeededOrFailed())
 
   - bash: |
       git config --global credential.helper store
