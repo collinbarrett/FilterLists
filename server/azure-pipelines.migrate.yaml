@@ -23,16 +23,19 @@ steps:
       git checkout "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
     displayName: checkout source branch
 
-  # TODO: validate author of last commit was $(GITHUBNAME)
   - bash: |
+      LASTAUTHOR=$(git log -n 1 --pretty=format:"%an")
+      echo "Last author: \"$LASTAUTHOR\""
       LASTMSG=$(git log -n 1 --pretty=format:"%s")
       echo "Last commit message: \"$LASTMSG\""
-      if [[ $LASTMSG == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
+      if [[ $LASTAUTHOR == "$GITHUBNAME" ]] && [[ $LASTMSG == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
         echo "Just migrated. Exiting..."
         echo "##vso[task.setvariable variable=aborted;isOutput=true]true"
       fi
     displayName: abort if just migrated
     name: abortIfJustMigrated
+    env:
+      GITHUBNAME: $(GITHUBNAME)
 
   - task: UseDotNet@2
     displayName: use latest dotnet sdk
