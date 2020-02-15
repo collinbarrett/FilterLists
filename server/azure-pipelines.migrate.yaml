@@ -86,7 +86,54 @@ steps:
     workingDirectory: server/src
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
-  # TODO: copy/move test-data steps from API Pipeline
+  - task: DockerCompose@0
+    displayName: build test-data
+    inputs:
+      dockerComposeFile: docker-compose.data.tests.yml
+      dockerComposeCommand: build api
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+
+  - task: Docker@2
+    displayName: create volume test-data-results
+    inputs:
+      command: volume
+      arguments: create test-data-results
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+
+  - task: DockerCompose@0
+    displayName: up test-data db
+    inputs:
+      dockerComposeFile: docker-compose.data.tests.yml
+      dockerComposeCommand: up -d mariadb
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+
+  - task: DockerCompose@0
+    displayName: run test-data
+    inputs:
+      dockerComposeFile: docker-compose.data.tests.yml
+      dockerComposeCommand: run api
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
+
+  - task: Docker@2
+    displayName: create container test-data-results
+    inputs:
+      command: container
+      arguments: create --name test-data-results -v test-data-results:/results hello-world
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeededOrFailed())
+
+  - task: Docker@2
+    displayName: copy out test-data results
+    inputs:
+      command: cp
+      arguments: test-data-results:/results $(System.DefaultWorkingDirectory)
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeededOrFailed())
+
+    - task: PublishTestResults@2
+      displayName: publish test results
+      inputs:
+        testResultsFormat: VSTest
+        testResultsFiles: "**/*.trx"
+      condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeededOrFailed())
 
   - bash: |
       DIFF=$(git status -s | wc -l)
