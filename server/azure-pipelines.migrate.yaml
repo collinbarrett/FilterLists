@@ -25,9 +25,7 @@ steps:
 
   - bash: |
       LASTAUTHOR=$(git log -n 1 --pretty=format:"%an")
-      echo "Last author: \"$LASTAUTHOR\""
       LASTMSG=$(git log -n 1 --pretty=format:"%s")
-      echo "Last commit message: \"$LASTMSG\""
       if [[ $LASTAUTHOR == "$GITHUBNAME" ]] && [[ $LASTMSG == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
         echo "Just migrated. Exiting..."
         echo "##vso[task.setvariable variable=aborted;isOutput=true]true"
@@ -56,19 +54,18 @@ steps:
       GITHUBEMAIL: $(GITHUBEMAIL)
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
-  # TODO: additionally grep on author of $(GITHUBNAME) when getting $REVERTHASH
   - bash: |
       MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
       echo "$MIGLIST"
       if [[ $MIGLIST == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
         echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER, reverting..."
-        REVERTHASH=$(git log --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" -n 1 --pretty=format:"%H")
+        REVERTHASH=$(git log -n 1 --author="$GITHUBNAME" --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" --pretty=format:"%H")
         git revert --no-edit "$REVERTHASH"
-      else
-        echo "No migration exists yet for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER."
       fi
     displayName: revert any existing migration for PR
     workingDirectory: server/src
+    env:
+      GITHUBNAME: $(GITHUBNAME)
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   # TODO: merge latest data/* and server/src/FilterLists.Data.Migrations/* from origin/master.
