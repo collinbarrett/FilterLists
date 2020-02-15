@@ -124,7 +124,7 @@ namespace FilterLists.Api.Migrations
                         new
                         {
                             Id = (short)2,
-                            Description = "TEMP (REMOVE ME) Mute is an AdBlock Plus filter for user comments. In the same way that AdBlock hides ads, AdBlock can use this filter to hide user-generated comments, allowing you to browse the Internet with less stupidity clawing at your eyeballs.",
+                            Description = "Mute is an AdBlock Plus filter for user comments. In the same way that AdBlock hides ads, AdBlock can use this filter to hide user-generated comments, allowing you to browse the Internet with less stupidity clawing at your eyeballs.",
                             DescriptionSourceUrl = "https://github.com/B-Con/mute",
                             HomeUrl = "https://github.com/B-Con/mute",
                             IssuesUrl = "https://github.com/B-Con/mute/issues",
