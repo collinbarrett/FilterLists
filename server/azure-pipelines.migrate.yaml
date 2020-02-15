@@ -1,5 +1,6 @@
 # Adds an Entity Framework Core migration to a pull request that changes data in data/*.json
 
+# TODO: sort/lint JSON and push as a part of this bot work
 # TODO: if data/* or server/src/FilterLists.Data.Migrations/* change in origin/master, re-trigger this Pipeline.
 trigger: none
 
@@ -77,7 +78,9 @@ steps:
         echo "Data changes conflict with upstream master. Aborting..."
         exit 1
       fi
-      git commit -m "merge upstream data"
+      if [[ $(git status -uno --porcelain) ]] ; then
+        git commit -m "merge upstream data"
+      fi
     displayName: merge upstream data
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
