@@ -27,7 +27,7 @@ steps:
       LASTAUTHOR=$(git log -n 1 --pretty=format:"%an")
       LASTMSG=$(git log -n 1 --pretty=format:"%s")
       if [[ $LASTAUTHOR == "$GITHUBNAME" ]] && [[ $LASTMSG == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
-        echo "Just migrated. Exiting..."
+        echo "Just migrated. Aborting..."
         echo "##vso[task.setvariable variable=aborted;isOutput=true]true"
       fi
     displayName: abort if just migrated
@@ -58,7 +58,7 @@ steps:
       MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
       echo "$MIGLIST"
       if [[ $MIGLIST == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
-        echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER, reverting..."
+        echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER. Reverting..."
         REVERTHASH=$(git log -n 1 --author="$GITHUBNAME" --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" --pretty=format:"%H")
         git revert --no-edit "$REVERTHASH"
       fi
@@ -68,7 +68,18 @@ steps:
       GITHUBNAME: $(GITHUBNAME)
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
-  # TODO: merge latest data/* and server/src/FilterLists.Data.Migrations/* from origin/master.
+  - bash: |
+      git remote add upstream git@github.com:collinbarrett/FilterLists.git
+      git fetch upstream
+      git checkout master 'data/*.json' 'server/src/FilterLists.Data.Migrations/*'
+      CONFLICTS=$(git ls-files -u | wc -l)
+      if [ "$CONFLICTS" -gt 0 ] ; then
+        echo "Data changes conflict with upstream master. Aborting..."
+        exit 1
+      fi
+      git commit -m "merge upstream data"
+    displayName: merge upstream data
+    condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
     displayName: add migration
@@ -93,7 +104,7 @@ steps:
       git config --global credential.helper store
       echo "https://$GITHUBPAT:x-oauth-basic@github.com" >> ~/.git-credentials
       git push origin "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
-    displayName: git push
+    displayName: push
     env:
       GITHUBPAT: $(GITHUBPAT)
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
