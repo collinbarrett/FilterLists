@@ -69,7 +69,7 @@ steps:
     condition: and(ne(variables['abortIfJustMigrated.aborted'], 'true'), succeeded())
 
   - bash: |
-      git remote add upstream git@github.com:collinbarrett/FilterLists.git
+      git remote add upstream https://github.com/collinbarrett/FilterLists.git
       git fetch upstream
       git checkout master 'data/*.json' 'server/src/FilterLists.Data.Migrations/*'
       CONFLICTS=$(git ls-files -u | wc -l)
