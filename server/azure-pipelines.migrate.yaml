@@ -1,7 +1,7 @@
 # Adds an Entity Framework Core migration to a pull request that changes data in data/*.json
 
 # TODO: sort/lint JSON
-# TODO: if data/* or server/src/FilterLists.Data.Migrations/* change in origin/master, re-trigger this Pipeline.
+# TODO: if data/* or server/src/FilterLists.Data.Migrations/* change in origin/master, re-trigger this Pipeline
 trigger: none
 
 pr:
@@ -29,6 +29,7 @@ steps:
 
   - task: Bash@3
     displayName: abort if just migrated
+    name: abortJustMigrated
     env:
       GITHUBNAME: $(GITHUBNAME)
     inputs:
@@ -39,21 +40,24 @@ steps:
         if [[ $LASTAUTHOR == "$GITHUBNAME" ]] && [[ $LASTMSG == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
           echo "Just migrated. Aborting..."
         else
-          echo "##vso[task.setvariable variable=required;isOutput=true]true"
+          echo "##vso[task.setvariable variable=aborted;isOutput=true]false"
         fi
 
   - task: UseDotNet@2
     displayName: use latest dotnet sdk
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     inputs:
       version: 3.x
 
   - task: CmdLine@2
     displayName: install ef dotnet tool
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     inputs:
       script: dotnet tool install -g dotnet-ef
 
   - task: Bash@3
     displayName: git config
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     env:
       GITHUBNAME: $(GITHUBNAME)
       GITHUBEMAIL: $(GITHUBEMAIL)
@@ -64,7 +68,8 @@ steps:
         git config --global user.email "$GITHUBEMAIL"
 
   - task: Bash@3
-    displayName: revert any existing migration for PR
+    displayName: revert existing PR migration
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     env:
       GITHUBNAME: $(GITHUBNAME)
     inputs:
@@ -81,6 +86,7 @@ steps:
 
   - task: Bash@3
     displayName: sync with upstream
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     inputs:
       targetType: inline
       script: |
@@ -92,78 +98,86 @@ steps:
           echo "Conflicts with upstream repository. Aborting..."
           exit 1
         fi
-        if [[ $(git status -uno --porcelain) ]] ; then
-          git commit -m "sync with upstream"
-        fi
+      # if [[ $(git status -uno --porcelain) ]] ; then
+      #   git commit -m "sync with upstream"
+      # fi
 
   - task: CmdLine@2
     displayName: add migration
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     inputs:
       workingDirectory: server/src
       script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
 
   - task: Bash@3
-    displayName: commit or abandon migration
+    displayName: commit or abandon no-op migration
+    name: commitOrAbandon
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     inputs:
       targetType: inline
       script: |
         DIFF=$(git status -s | wc -l)
         echo "$DIFF file(s) changed"
         if (( $DIFF != 3 )) ; then
-          echo "No-op migration. Effective EF migrations add/change 3 files total (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
+          echo "No-op migration. Effective EF migrations add/change 3 files (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
         else
           git add .
           git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
-          echo "##vso[task.setvariable variable=added;isOutput=true]true"
+          echo "##vso[task.setvariable variable=committed;isOutput=true]true"
         fi
 
   - task: DockerCompose@0
     displayName: build test-data
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: build api
 
   - task: Docker@2
     displayName: create volume test-data-results
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
     inputs:
       command: volume
       arguments: create test-data-results
 
   - task: DockerCompose@0
     displayName: up test-data db
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: up -d mariadb
 
   - task: DockerCompose@0
     displayName: run test-data
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
       dockerComposeCommand: run api
 
   - task: Docker@2
     displayName: create container test-data-results
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeededOrFailed())
     inputs:
       command: container
       arguments: create --name test-data-results -v test-data-results:/results hello-world
-    condition: succeededOrFailed()
 
   - task: Docker@2
     displayName: copy out test-data results
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeededOrFailed())
     inputs:
       command: cp
       arguments: test-data-results:/results $(System.DefaultWorkingDirectory)
-    condition: succeededOrFailed()
 
   - task: PublishTestResults@2
     displayName: publish test results
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeededOrFailed())
     inputs:
       testResultsFormat: VSTest
       testResultsFiles: "**/*.trx"
-    condition: succeededOrFailed()
 
   - task: Bash@3
     displayName: push
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     env:
       GITHUBPAT: $(GITHUBPAT)
     inputs:
