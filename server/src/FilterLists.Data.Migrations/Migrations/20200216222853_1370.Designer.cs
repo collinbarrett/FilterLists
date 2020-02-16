@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    [Migration("20200216215934_1370")]
+    [Migration("20200216222853_1370")]
     partial class _1370
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
