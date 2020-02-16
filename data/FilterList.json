@@ -12,7 +12,7 @@
   },
   {
     "id": 2,
-    "description": "TEMP Mute is an AdBlock Plus filter for user comments. In the same way that AdBlock hides ads, AdBlock can use this filter to hide user-generated comments, allowing you to browse the Internet with less stupidity clawing at your eyeballs.",
+    "description": "Mute is an AdBlock Plus filter for user comments. In the same way that AdBlock hides ads, AdBlock can use this filter to hide user-generated comments, allowing you to browse the Internet with less stupidity clawing at your eyeballs.",
     "descriptionSourceUrl": "https://github.com/B-Con/mute",
     "homeUrl": "https://github.com/B-Con/mute",
     "issuesUrl": "https://github.com/B-Con/mute/issues",
