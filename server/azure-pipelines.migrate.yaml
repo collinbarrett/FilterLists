@@ -14,184 +14,161 @@ pr:
 pool:
   vmImage: ubuntu-latest
 
-jobs:
-  - job: IsMigrationRequired
-    displayName: is migration required
-    steps:
-      - checkout: none
+steps:
+  - checkout: none
 
-      # TODO: switch to using Azure Pipelines Repository Resource to use GitHub service connection rather than PAT
-      - task: Bash@3
-        displayName: checkout source branch
-        inputs:
-          targetType: inline
-          script: |
-            FORKURI=$(curl -X GET "https://api.github.com/repos/$BUILD_REPOSITORY_NAME/pulls/$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" | jq -r '.head.repo.clone_url')
-            git clone "$FORKURI" .
-            git checkout "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
+  # TODO: switch to using Azure Pipelines Repository Resource to use GitHub service connection rather than PAT
+  - task: Bash@3
+    displayName: checkout source branch
+    inputs:
+      targetType: inline
+      script: |
+        FORKURI=$(curl -X GET "https://api.github.com/repos/$BUILD_REPOSITORY_NAME/pulls/$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" | jq -r '.head.repo.clone_url')
+        git clone "$FORKURI" .
+        git checkout "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
 
-      # - task: Bash@3
-      #   displayName: abort if just migrated
-      #   env:
-      #     GITHUBNAME: $(GITHUBNAME)
-      #   inputs:
-      #     targetType: inline
-      #     script: |
-      #       LASTAUTHOR=$(git log -n 1 --pretty=format:"%an")
-      #       LASTMSG=$(git log -n 1 --pretty=format:"%s")
-      #       if [[ $LASTAUTHOR == "$GITHUBNAME" ]] && [[ $LASTMSG == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER [skip ci]" ]] ; then
-      #         echo "Just migrated. Aborting..."
-      #       else
-      #         echo "##vso[task.setvariable variable=required;isOutput=true]true"
-      #       fi
+  # - task: Bash@3
+  #   displayName: abort if just migrated
+  #   env:
+  #     GITHUBNAME: $(GITHUBNAME)
+  #   inputs:
+  #     targetType: inline
+  #     script: |
+  #       LASTAUTHOR=$(git log -n 1 --pretty=format:"%an")
+  #       LASTMSG=$(git log -n 1 --pretty=format:"%s")
+  #       if [[ $LASTAUTHOR == "$GITHUBNAME" ]] && [[ $LASTMSG == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER [skip ci]" ]] ; then
+  #         echo "Just migrated. Aborting..."
+  #       else
+  #         echo "##vso[task.setvariable variable=required;isOutput=true]true"
+  #       fi
 
-  - job: AddMigration
+  - task: UseDotNet@2
+    displayName: use latest dotnet sdk
+    inputs:
+      version: 3.x
+
+  - task: CmdLine@2
+    displayName: install ef dotnet tool
+    inputs:
+      script: dotnet tool install -g dotnet-ef
+
+  - task: Bash@3
+    displayName: git config
+    env:
+      GITHUBNAME: $(GITHUBNAME)
+      GITHUBEMAIL: $(GITHUBEMAIL)
+    inputs:
+      targetType: inline
+      script: |
+        git config --global user.name "$GITHUBNAME"
+        git config --global user.email "$GITHUBEMAIL"
+
+  - task: Bash@3
+    displayName: revert any existing migration for PR
+    env:
+      GITHUBNAME: $(GITHUBNAME)
+    inputs:
+      targetType: inline
+      workingDirectory: server/src
+      script: |
+        MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
+        echo "$MIGLIST"
+        if [[ $MIGLIST == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
+          echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER. Reverting..."
+          REVERTHASH=$(git log -n 1 --author="$GITHUBNAME" --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER [skip ci]" --pretty=format:"%H")
+          git revert --no-edit "$REVERTHASH"
+        fi
+
+  - task: Bash@3
+    displayName: merge upstream data
+    inputs:
+      targetType: inline
+      script: |
+        git remote add upstream https://github.com/collinbarrett/FilterLists.git
+        git fetch upstream
+        git checkout master 'data/*.json' 'server/src/FilterLists.Data.Migrations/*'
+        CONFLICTS=$(git ls-files -u | wc -l)
+        if [ "$CONFLICTS" -gt 0 ] ; then
+          echo "Data changes conflict with upstream master. Aborting..."
+          exit 1
+        fi
+        if [[ $(git status -uno --porcelain) ]] ; then
+          git commit -m "merge upstream data"
+        fi
+
+  - task: CmdLine@2
     displayName: add migration
-    dependsOn: IsMigrationRequired
-    # condition: and(eq(variables['IsMigrationRequired.required'], 'true'), succeeded())
-    steps:
-      - checkout: none
+    inputs:
+      workingDirectory: server/src
+      script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
 
-      - task: UseDotNet@2
-        displayName: use latest dotnet sdk
-        inputs:
-          version: 3.x
+  - task: Bash@3
+    displayName: commit or abandon migration
+    inputs:
+      targetType: inline
+      script: |
+        DIFF=$(git status -s | wc -l)
+        echo "$DIFF file(s) changed"
+        if (( $DIFF != 3 )) ; then
+          echo "No-op migration. Effective EF migrations add/change 3 files total (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
+        else
+          git add .
+          git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER [skip ci]"
+          echo "##vso[task.setvariable variable=added;isOutput=true]true"
+        fi
 
-      - task: CmdLine@2
-        displayName: install ef dotnet tool
-        inputs:
-          script: dotnet tool install -g dotnet-ef
+  - task: DockerCompose@0
+    displayName: build test-data
+    inputs:
+      dockerComposeFile: docker-compose.data.tests.yml
+      dockerComposeCommand: build api
 
-      - task: Bash@3
-        displayName: git config
-        env:
-          GITHUBNAME: $(GITHUBNAME)
-          GITHUBEMAIL: $(GITHUBEMAIL)
-        inputs:
-          targetType: inline
-          script: |
-            git config --global user.name "$GITHUBNAME"
-            git config --global user.email "$GITHUBEMAIL"
+  - task: Docker@2
+    displayName: create volume test-data-results
+    inputs:
+      command: volume
+      arguments: create test-data-results
 
-      - task: Bash@3
-        displayName: revert any existing migration for PR
-        env:
-          GITHUBNAME: $(GITHUBNAME)
-        inputs:
-          targetType: inline
-          workingDirectory: server/src
-          script: |
-            MIGLIST=$(dotnet ef migrations list -p FilterLists.Data.Migrations -s FilterLists.Api)
-            echo "$MIGLIST"
-            if [[ $MIGLIST == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
-              echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER. Reverting..."
-              REVERTHASH=$(git log -n 1 --author="$GITHUBNAME" --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER [skip ci]" --pretty=format:"%H")
-              git revert --no-edit "$REVERTHASH"
-            fi
+  - task: DockerCompose@0
+    displayName: up test-data db
+    inputs:
+      dockerComposeFile: docker-compose.data.tests.yml
+      dockerComposeCommand: up -d mariadb
 
-      - task: Bash@3
-        displayName: merge upstream data
-        inputs:
-          targetType: inline
-          script: |
-            git remote add upstream https://github.com/collinbarrett/FilterLists.git
-            git fetch upstream
-            git checkout master 'data/*.json' 'server/src/FilterLists.Data.Migrations/*'
-            CONFLICTS=$(git ls-files -u | wc -l)
-            if [ "$CONFLICTS" -gt 0 ] ; then
-              echo "Data changes conflict with upstream master. Aborting..."
-              exit 1
-            fi
-            if [[ $(git status -uno --porcelain) ]] ; then
-              git commit -m "merge upstream data"
-            fi
+  - task: DockerCompose@0
+    displayName: run test-data
+    inputs:
+      dockerComposeFile: docker-compose.data.tests.yml
+      dockerComposeCommand: run api
 
-      - task: CmdLine@2
-        displayName: add migration
-        inputs:
-          workingDirectory: server/src
-          script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Data.Migrations -s FilterLists.Api
+  - task: Docker@2
+    displayName: create container test-data-results
+    inputs:
+      command: container
+      arguments: create --name test-data-results -v test-data-results:/results hello-world
+    condition: succeededOrFailed()
 
-      - task: Bash@3
-        displayName: commit or abandon migration
-        inputs:
-          targetType: inline
-          script: |
-            DIFF=$(git status -s | wc -l)
-            echo "$DIFF file(s) changed"
-            if (( $DIFF != 3 )) ; then
-              echo "No-op migration. Effective EF migrations add/change 3 files total (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
-            else
-              git add .
-              git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER [skip ci]"
-              echo "##vso[task.setvariable variable=added;isOutput=true]true"
-            fi
+  - task: Docker@2
+    displayName: copy out test-data results
+    inputs:
+      command: cp
+      arguments: test-data-results:/results $(System.DefaultWorkingDirectory)
+    condition: succeededOrFailed()
 
-  - job: TestMigration
-    displayName: test migration
-    dependsOn: AddMigration
-    condition: and(eq(variables['AddMigration.added'], 'true'), succeeded())
-    steps:
-      - checkout: none
+  - task: PublishTestResults@2
+    displayName: publish test results
+    inputs:
+      testResultsFormat: VSTest
+      testResultsFiles: "**/*.trx"
+    condition: succeededOrFailed()
 
-      - task: DockerCompose@0
-        displayName: build test-data
-        inputs:
-          dockerComposeFile: docker-compose.data.tests.yml
-          dockerComposeCommand: build api
-
-      - task: Docker@2
-        displayName: create volume test-data-results
-        inputs:
-          command: volume
-          arguments: create test-data-results
-
-      - task: DockerCompose@0
-        displayName: up test-data db
-        inputs:
-          dockerComposeFile: docker-compose.data.tests.yml
-          dockerComposeCommand: up -d mariadb
-
-      - task: DockerCompose@0
-        displayName: run test-data
-        inputs:
-          dockerComposeFile: docker-compose.data.tests.yml
-          dockerComposeCommand: run api
-
-      - task: Docker@2
-        displayName: create container test-data-results
-        inputs:
-          command: container
-          arguments: create --name test-data-results -v test-data-results:/results hello-world
-        condition: succeededOrFailed()
-
-      - task: Docker@2
-        displayName: copy out test-data results
-        inputs:
-          command: cp
-          arguments: test-data-results:/results $(System.DefaultWorkingDirectory)
-        condition: succeededOrFailed()
-
-      - task: PublishTestResults@2
-        displayName: publish test results
-        inputs:
-          testResultsFormat: VSTest
-          testResultsFiles: "**/*.trx"
-        condition: succeededOrFailed()
-
-  - job: Push
+  - task: Bash@3
     displayName: push
-    dependsOn: TestMigration
-    steps:
-      - checkout: none
-
-      - task: Bash@3
-        displayName: push
-        env:
-          GITHUBPAT: $(GITHUBPAT)
-        inputs:
-          targetType: inline
-          script: |
-            git config --global credential.helper store
-            echo "https://$GITHUBPAT:x-oauth-basic@github.com" >> ~/.git-credentials
-            git push origin "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
+    env:
+      GITHUBPAT: $(GITHUBPAT)
+    inputs:
+      targetType: inline
+      script: |
+        git config --global credential.helper store
+        echo "https://$GITHUBPAT:x-oauth-basic@github.com" >> ~/.git-credentials
+        git push origin "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
