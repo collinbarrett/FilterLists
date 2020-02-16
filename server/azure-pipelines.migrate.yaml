@@ -87,6 +87,7 @@ steps:
         git remote add upstream https://github.com/collinbarrett/FilterLists.git
         git fetch upstream
         git checkout master 'data/*.json' 'server/src/FilterLists.Data.Migrations/*'
+        git merge upstream/master
         CONFLICTS=$(git ls-files -u | wc -l)
         if [ "$CONFLICTS" -gt 0 ] ; then
           echo "Data changes conflict with upstream master. Aborting..."
