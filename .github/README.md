@@ -47,7 +47,9 @@ Check out the <a href="https://hub.filterlists.com">FilterLists Hub</a>, a place
 
 ## Adding or Updating Lists
 
-To submit a new list or update data about an existing list, please submit a pull request to [data](https://github.com/collinbarrett/FilterLists/tree/master/data) in conjunction with the data model described [here](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar). Alternatively, you can [open a new issue](https://github.com/collinbarrett/FilterLists/issues/new) providing information for all of the fields described in the [data model](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar).
+To submit a new list or update data about an existing list, please submit a pull request to [data](https://github.com/collinbarrett/FilterLists/tree/master/data) in conjunction with the data model described [here](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar). Once you open the pull request, our [Migrate bot](https://github.com/collinbarrett/FilterLists/blob/master/server/azure-pipelines.migrate.yaml) will create an [Entity Framework Core migration](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli) with your changes and test them. Please ensure to [grant the bot permissions to push to your pull request branch](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork).
+
+Alternatively, you can [open a new issue](https://github.com/collinbarrett/FilterLists/issues/new) providing information for all of the fields described in the [data model](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar).
 
 ## Adding or Updating Rules
 
@@ -67,20 +69,11 @@ We have containerized FilterLists to make it as easy as possible for contributer
 
 ### Configuration
 
-The `appsettings*.json` files are only used when debugging in Visual Studio outside of Docker ([they are not copied into the built runtime images](https://github.com/collinbarrett/FilterLists/blob/59a4e067b35110ebda5d5cf1e3ef96cab2fcbfe5/.dockerignore#L28)). When running any of the projects in containers via Docker/Docker Compose, the configuration is passed in as environment variables configured in [`.env`](https://github.com/collinbarrett/FilterLists/blob/master/.env) and `docker-compose*.yml` files.
+The `appsettings*.json` files are only used when debugging in Visual Studio outside of Docker ([they are not copied into the built runtime images](https://github.com/collinbarrett/FilterLists/blob/e6ac3da26ea44174795fbaa400def14c537c22b8/.dockerignore#L33)). When running any of the projects in containers via Docker/Docker Compose, the configuration is passed in as environment variables configured in [`.env`](https://github.com/collinbarrett/FilterLists/blob/master/.env) and `docker-compose*.yml` files.
 
 ### Testing changes to the data (.json files)
 
-#### Automated
-
-Execute:
-
-`docker volume create test-data-results && docker-compose -p test-data -f docker-compose.data.tests.yml down -v && docker-compose -f docker-compose.data.tests.yml build api && docker-compose -p test-data -f docker-compose.data.tests.yml run --rm api`
-
-#### Manual
-
-1. Execute `docker-compose up -d --build api`.
-2. Verify your changes are properly reflected at `http://localhost/`.
+To validate that your changes to the data are valid and supported by the FilterLists API, just open a pull request and validate that the Migrate bot check is successful. [See Adding or Updating Lists](#adding-or-updating-lists).
 
 ### Testing changes to the `Api`, `Services`, or `Data` projects
 
