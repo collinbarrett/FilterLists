@@ -80,13 +80,12 @@ steps:
         fi
 
   - task: Bash@3
-    displayName: merge upstream data
+    displayName: rebase upstream/master
     inputs:
       targetType: inline
       script: |
         git remote add upstream https://github.com/collinbarrett/FilterLists.git
         git fetch upstream
-        git checkout master 'data/*.json' 'server/src/FilterLists.Data.Migrations/*'
         git rebase upstream/master
         CONFLICTS=$(git ls-files -u | wc -l)
         if [ "$CONFLICTS" -gt 0 ] ; then
