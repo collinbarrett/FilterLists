@@ -27,20 +27,20 @@ steps:
         git clone "$FORKURI" .
         git checkout "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
 
-  # - task: Bash@3
-  #   displayName: abort if just migrated
-  #   env:
-  #     GITHUBNAME: $(GITHUBNAME)
-  #   inputs:
-  #     targetType: inline
-  #     script: |
-  #       LASTAUTHOR=$(git log -n 1 --pretty=format:"%an")
-  #       LASTMSG=$(git log -n 1 --pretty=format:"%s")
-  #       if [[ $LASTAUTHOR == "$GITHUBNAME" ]] && [[ $LASTMSG == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER [skip ci]" ]] ; then
-  #         echo "Just migrated. Aborting..."
-  #       else
-  #         echo "##vso[task.setvariable variable=required;isOutput=true]true"
-  #       fi
+  - task: Bash@3
+    displayName: abort if just migrated
+    env:
+      GITHUBNAME: $(GITHUBNAME)
+    inputs:
+      targetType: inline
+      script: |
+        LASTAUTHOR=$(git log -n 1 --pretty=format:"%an")
+        LASTMSG=$(git log -n 1 --pretty=format:"%s")
+        if [[ $LASTAUTHOR == "$GITHUBNAME" ]] && [[ $LASTMSG == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
+          echo "Just migrated. Aborting..."
+        else
+          echo "##vso[task.setvariable variable=required;isOutput=true]true"
+        fi
 
   - task: UseDotNet@2
     displayName: use latest dotnet sdk
@@ -75,7 +75,7 @@ steps:
         echo "$MIGLIST"
         if [[ $MIGLIST == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
           echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER. Reverting..."
-          REVERTHASH=$(git log -n 1 --author="$GITHUBNAME" --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER [skip ci]" --pretty=format:"%H")
+          REVERTHASH=$(git log -n 1 --author="$GITHUBNAME" --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" --pretty=format:"%H")
           git revert --no-edit "$REVERTHASH"
         fi
 
@@ -86,7 +86,7 @@ steps:
       script: |
         git remote add upstream https://github.com/collinbarrett/FilterLists.git
         git fetch upstream
-        git rebase upstream/master
+        git checkout upstream/master 'data/*.json' 'server/src/FilterLists.Data.Migrations/*'
         CONFLICTS=$(git ls-files -u | wc -l)
         if [ "$CONFLICTS" -gt 0 ] ; then
           echo "Data changes conflict with upstream master. Aborting..."
@@ -113,7 +113,7 @@ steps:
           echo "No-op migration. Effective EF migrations add/change 3 files total (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
         else
           git add .
-          git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER [skip ci]"
+          git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
           echo "##vso[task.setvariable variable=added;isOutput=true]true"
         fi
 
