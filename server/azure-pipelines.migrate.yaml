@@ -29,6 +29,7 @@ jobs:
             git clone "$FORKURI" .
             git checkout "$SYSTEM_PULLREQUEST_SOURCEBRANCH"
 
+      # TODO: possibly eliminate: https://docs.microsoft.com/en-us/azure/devops/pipelines/scripts/git-commands?view=azure-devops&tabs=yaml#how-do-i-avoid-triggering-a-ci-build-when-the-script-pushes
       - task: Bash@3
         displayName: abort if just migrated
         env:
