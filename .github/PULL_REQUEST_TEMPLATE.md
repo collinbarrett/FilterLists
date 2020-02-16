@@ -1,1 +1,0 @@
-Note: If you are updating data, please ensure to [allow changes to a pull request branch created from a fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork).
