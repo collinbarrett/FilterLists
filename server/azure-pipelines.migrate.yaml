@@ -98,9 +98,6 @@ steps:
           echo "Conflicts with upstream repository. Aborting..."
           exit 1
         fi
-      # if [[ $(git status -uno --porcelain) ]] ; then
-      #   git commit -m "sync with upstream"
-      # fi
 
   - task: CmdLine@2
     displayName: add migration
