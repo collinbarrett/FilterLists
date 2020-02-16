@@ -175,6 +175,7 @@ jobs:
 
   - job: Push
     displayName: push
+    dependsOn: TestMigration
     steps:
       - checkout: none
 
