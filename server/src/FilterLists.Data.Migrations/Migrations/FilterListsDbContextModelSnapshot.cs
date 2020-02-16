@@ -112,7 +112,7 @@ namespace FilterLists.Api.Migrations
                         new
                         {
                             Id = (short)1,
-                            Description = "TEMP3 A filter list that blocks mobile advertisements and trackers on Japanese properties",
+                            Description = "A filter list that blocks mobile advertisements and trackers on Japanese properties",
                             HomeUrl = "https://280blocker.net",
                             LicenseId = (short)1,
                             Name = "280 Blocker",
@@ -136,7 +136,7 @@ namespace FilterLists.Api.Migrations
                         new
                         {
                             Id = (short)3,
-                            Description = "THIS IS TEMP (REVERT ME) Hosts file to block advertisements and trackers designed for Android",
+                            Description = "Hosts file to block advertisements and trackers designed for Android",
                             ForumUrl = "https://forum.xda-developers.com/showthread.php?t=1916098",
                             HomeUrl = "https://forum.xda-developers.com/showthread.php?t=1916098",
                             LicenseId = (short)3,
