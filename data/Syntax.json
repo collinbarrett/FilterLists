@@ -184,5 +184,9 @@
   {
     "id": 43,
     "name": "IPs (IPv4 + IPv6; CIDR only)"
+  },
+  {
+    "id": 44,
+    "name": "Powershell PKG file"
   }
 ]
