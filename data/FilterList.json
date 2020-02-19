@@ -21305,16 +21305,6 @@
     "viewUrl": "https://raw.githubusercontent.com/deletescape/noads/master/lists/additional-rules.txt"
   },
   {
-    "id": 2062,
-    "description": "Ads and tracking not found on other lists included in this project",
-    "homeUrl": "https://github.com/deletescape/noads",
-    "issuesUrl": "https://github.com/deletescape/noads/issues",
-    "licenseId": 35,
-    "name": "",
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/deletescape/noads/master/lists/additional-rules.txt"
-  },
-  {
     "id": 2063,
     "homeUrl": "https://nixnet.services/dns/",
     "licenseId": 2,
