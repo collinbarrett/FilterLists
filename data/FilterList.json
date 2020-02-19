@@ -21368,7 +21368,7 @@
   },
   {
     "id": 2070,
-    "description": "I wanted an easy solution to blocking ads and tracking on all my devices and AdGuard DNS didn’t block quite enough for me, so I decided to run my own AdGuard Home server. Sharing is caring, which is why I’ve decided to make my server available for everyone! Links that didn't fit in the Subscribe button URL texts, include 2a03:b0c0:3:d0::5f18:6001"
+    "description": "I wanted an easy solution to blocking ads and tracking on all my devices and AdGuard DNS didn’t block quite enough for me, so I decided to run my own AdGuard Home server. Sharing is caring, which is why I’ve decided to make my server available for everyone! Links that didn't fit in the Subscribe button URL texts, include 2a03:b0c0:3:d0::5f18:6001",
     "homeUrl": "https://deletescape.ch/dns",
     "issuesUrl": "https://github.com/deletescape/noads/issues",
     "licenseId": 35,
