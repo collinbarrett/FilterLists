@@ -19060,7 +19060,7 @@
     "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
     "licenseId": 11,
     "name": "Cybo's Hosts",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Hosts"
   },
   {
@@ -20548,7 +20548,7 @@
   },
   {
     "id": 1985,
-    "description": "AdGuard's official DNS server to remove ads and trackers. Believed to be using \"AdGuard Simplified Domain Names Filter\". Links that didn't fit in the View button URL texts, include 176.103.130.131 — 2a00:5a60::ad1:0ff — 2a00:5a60::ad2:0ff",
+    "description": "AdGuard's official DNS server to remove ads and trackers. Believed to be using \"AdGuard Simplified Domain Names Filter\". Links that didn't fit in the Subscribe button URL texts, include 176.103.130.131 — 2a00:5a60::ad1:0ff — 2a00:5a60::ad2:0ff",
     "emailAddress": "support@adguard.com",
     "homeUrl": "https://adguard.com/adguard-dns/overview.html",
     "licenseId": 5,
@@ -20560,7 +20560,7 @@
   },
   {
     "id": 1986,
-    "description": "AdGuard's official DNS server to remove ads, trackers, and porn. Believed to be using \"AdGuard Simplified Domain Names Filter\", as well as AdGuard's Safe Search plugin and an unspecified third-party anti-porn list. Links that didn't fit in the View button URL texts, include 176.103.130.134 — 2a00:5a60::bad1:0ff — 2a00:5a60::bad2:0ff",
+    "description": "AdGuard's official DNS server to remove ads, trackers, and porn. Believed to be using \"AdGuard Simplified Domain Names Filter\", as well as AdGuard's Safe Search plugin and an unspecified third-party anti-porn list. Links that didn't fit in the Subscribe button URL texts, include 176.103.130.134 — 2a00:5a60::bad1:0ff — 2a00:5a60::bad2:0ff",
     "emailAddress": "support@adguard.com",
     "homeUrl": "https://adguard.com/adguard-dns/overview.html",
     "licenseId": 5,
@@ -21146,5 +21146,277 @@
     "syntaxId": 29,
     "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt",
     "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-surge.txt"
+  },
+  {
+    "id": 2047,
+    "description": "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more. The goal is to enable a security tester to pull this repository onto a new testing box and have access to every type of list that may be needed.",
+    "homeUrl": "https://github.com/danielmiessler/SecLists/",
+    "issuesUrl": "https://github.com/danielmiessler/SecLists/issues",
+    "licenseId": 2,
+    "name": "SecLists - Common Router IPs",
+    "syntaxId": 9,
+    "viewUrl": "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Infrastructure/common-router-ips.txt"
+  },
+  {
+    "id": 2048,
+    "description": "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more. The goal is to enable a security tester to pull this repository onto a new testing box and have access to every type of list that may be needed.",
+    "homeUrl": "https://github.com/danielmiessler/SecLists/",
+    "issuesUrl": "https://github.com/danielmiessler/SecLists/issues",
+    "licenseId": 2,
+    "name": "SecLists - Kaspersky-discovered Careto Domains",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/danielmiessler/SecLists/master/IOCs/kaspersky-careto-domains.txt"
+  },
+  {
+    "id": 2049,
+    "description": "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more. The goal is to enable a security tester to pull this repository onto a new testing box and have access to every type of list that may be needed.",
+    "homeUrl": "https://github.com/danielmiessler/SecLists/",
+    "issuesUrl": "https://github.com/danielmiessler/SecLists/issues",
+    "licenseId": 2,
+    "name": "SecLists - SecLists - Kaspersky-discovered Careto IPs",
+    "syntaxId": 9,
+    "viewUrl": "https://raw.githubusercontent.com/danielmiessler/SecLists/master/IOCs/kaspersky-careto-C2.txt"
+  },
+  {
+    "id": 2050,
+    "description": "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more. The goal is to enable a security tester to pull this repository onto a new testing box and have access to every type of list that may be needed.",
+    "homeUrl": "https://github.com/danielmiessler/SecLists/",
+    "issuesUrl": "https://github.com/danielmiessler/SecLists/issues",
+    "licenseId": 2,
+    "name": "SecLists - ",
+    "syntaxId": 9,
+    "viewUrl": "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Miscellaneous/dns-resolvers.txt"
+  },
+  {
+    "id": 2051,
+    "description": "This list contains every hostname redirecting to a hand-picked list of first-party trackers. It should be safe from false-positives. It also contains all tracking hostnames under company domains, useful for ad blockers that don't support mass regex blocking, while still preventing fallback to third-party trackers. Don't be afraid of the size of the list, as this is due to the nature of first-party trackers: a single tracker generates at least one hostname per client (typically two).",
+    "homeUrl": "https://hostfiles.frogeye.fr/",
+    "issuesUrl": "https://geoffrey.frogeye.fr/",
+    "licenseId": 2,
+    "name": "Frogeye - First-party trackers",
+    "syntaxId": 2,
+    "viewUrl": "https://hostfiles.frogeye.fr/firstparty-trackers.txt"
+  },
+  {
+    "id": 2052,
+    "description": "This list contains every hostname redirecting to a hand-picked list of first-party trackers. It should be safe from false-positives. It also contains all tracking hostnames under company domains, useful for ad blockers that don't support mass regex blocking, while still preventing fallback to third-party trackers. Don't be afraid of the size of the list, as this is due to the nature of first-party trackers: a single tracker generates at least one hostname per client (typically two).",
+    "homeUrl": "https://hostfiles.frogeye.fr/",
+    "issuesUrl": "https://geoffrey.frogeye.fr/",
+    "licenseId": 2,
+    "name": "Frogeye - First-party trackers (Hosts)",
+    "syntaxId": 1,
+    "viewUrl": "https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt"
+  },
+  {
+    "id": 2053,
+    "description": "This is the same list as above, albeit not containing the hostnames under the tracking company domains (e.g. website1.trackercompany.com). This allows for reducing the size of the list for ad-blockers that already block those third-party trackers with their support of regex blocking. Use in conjunction with other block lists used in regex-mode, such as Peter Lowe's",
+    "homeUrl": "https://hostfiles.frogeye.fr/",
+    "issuesUrl": "https://geoffrey.frogeye.fr/",
+    "licenseId": 2,
+    "name": "Frogeye - First-party whole trackers",
+    "syntaxId": 2,
+    "viewUrl": "https://hostfiles.frogeye.fr/firstparty-only-trackers.txt"
+  },
+  {
+    "id": 2054,
+    "description": "This is the same list as above, albeit not containing the hostnames under the tracking company domains (e.g. website1.trackercompany.com). This allows for reducing the size of the list for ad-blockers that already block those third-party trackers with their support of regex blocking. Use in conjunction with other block lists used in regex-mode, such as Peter Lowe's",
+    "homeUrl": "https://hostfiles.frogeye.fr/",
+    "issuesUrl": "https://geoffrey.frogeye.fr/",
+    "licenseId": 2,
+    "name": "Frogeye - First-party whole trackers (Hosts)",
+    "syntaxId": 1,
+    "viewUrl": "https://hostfiles.frogeye.fr/firstparty-only-trackers-hosts.txt"
+  },
+  {
+    "id": 2055,
+    "description": "This is the same list as above, albeit not containing the hostnames under the tracking company domains (e.g. website1.trackercompany.com). This allows for reducing the size of the list for ad-blockers that already block those third-party trackers with their support of regex blocking. Use in conjunction with other block lists used in regex-mode, such as the ones in the previous section.",
+    "homeUrl": "https://hostfiles.frogeye.fr/",
+    "issuesUrl": "https://geoffrey.frogeye.fr/",
+    "licenseId": 2,
+    "name": "Frogeye - Multi-party whole trackers",
+    "syntaxId": 2,
+    "viewUrl": "https://hostfiles.frogeye.fr/multiparty-only-trackers.txt"
+  },
+  {
+    "id": 2056,
+    "description": "This is the same list as above, albeit not containing the hostnames under the tracking company domains (e.g. website1.trackercompany.com). This allows for reducing the size of the list for ad-blockers that already block those third-party trackers with their support of regex blocking. Use in conjunction with other block lists used in regex-mode, such as the ones in the previous section.",
+    "homeUrl": "https://hostfiles.frogeye.fr/",
+    "issuesUrl": "https://geoffrey.frogeye.fr/",
+    "licenseId": 2,
+    "name": "Frogeye - Multi-party whole trackers (Hosts)",
+    "syntaxId": 1,
+    "viewUrl": "https://hostfiles.frogeye.fr/multiparty-only-trackers-hosts.txt"
+  },
+  {
+    "id": 2057,
+    "description": "A list of domains used by tracking companies as CNAME destination when disguising third-party trackers as first-party trackers.",
+    "homeUrl": "https://github.com/nextdns/cname-cloaking-blocklist",
+    "issuesUrl": "https://github.com/nextdns/cname-cloaking-blocklist",
+    "licenseId": 2,
+    "name": "NextDNS CNAME Cloaking Blocklist",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/nextdns/cname-cloaking-blocklist/master/domains"
+  },
+  {
+    "id": 2058,
+    "description": "Blocks BitTorrent websites (+ alternative domains & proxies), clients, trackers and DHT bootstrap nodes.",
+    "homeUrl": "https://github.com/nextdns/bittorrent-blocklist",
+    "issuesUrl": "https://github.com/nextdns/bittorrent-blocklist/issues",
+    "licenseId": 2,
+    "name": "NextDNS BitTorrent Blocklist",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/nextdns/bittorrent-blocklist/master/domains"
+  },
+  {
+    "id": 2059,
+    "homeUrl": "https://gist.github.com/Marfjeh/97f2f049b41b3f09eabcc04004073ae3",
+    "name": "Marjeh Torrent Trackers Host",
+    "syntaxId": 1,
+    "viewUrl": "https://gist.githubusercontent.com/Marfjeh/97f2f049b41b3f09eabcc04004073ae3/raw/58fe3d12c4157b0bda1a2af313809597ea54bb08/torrent-trackers-host"
+  },
+  {
+    "id": 2060,
+    "description": "This is the main hosts file but 0.0.0.0 was replaced with *://*. This was made to help with blocking on archive.org where normal blocking with 0.0.0.0, 127.0.0.1, and || wont get the trackers due to the weird way they use the sites URLs",
+    "homeUrl": "https://github.com/Cybo1927/Hosts",
+    "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
+    "licenseId": 11,
+    "name": "Cybo's Hosts - Extra Format",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Other%20Formats/Extra%20Format"
+  },
+  {
+    "id": 2061,
+    "description": "This List Is Better Than The Other Hosts For DNS Sinkholes And Slow Computers (If Used With An Adblocker)",
+    "homeUrl": "https://github.com/Cybo1927/Hosts",
+    "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
+    "licenseId": 11,
+    "name": "Cybo's Simplified Domains",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Other%20Formats/Simplified%20Domains"
+  },
+  {
+    "id": 2062,
+    "description": "Ads and tracking not found on other lists included in this project",
+    "homeUrl": "https://github.com/deletescape/noads",
+    "issuesUrl": "https://github.com/deletescape/noads/issues",
+    "licenseId": 35,
+    "name": "noads.online additional app specifc rules",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/deletescape/noads/master/lists/additional-rules.txt"
+  },
+  {
+    "id": 2062,
+    "description": "Ads and tracking not found on other lists included in this project",
+    "homeUrl": "https://github.com/deletescape/noads",
+    "issuesUrl": "https://github.com/deletescape/noads/issues",
+    "licenseId": 35,
+    "name": "",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/deletescape/noads/master/lists/additional-rules.txt"
+  },
+  {
+    "id": 2063,
+    "homeUrl": "https://nixnet.services/dns/",
+    "licenseId": 2,
+    "name": "hBlock Hosts Mini",
+    "syntaxId": 1,
+    "viewUrl": "https://nixnet.services/hosts.txt"
+  },
+  {
+    "id": 2064,
+    "homeUrl": "https://nixnet.services/dns/",
+    "licenseId": 24,
+    "name": "hBlock Hosts Mini (DNS)",
+    "syntaxId": 22,
+    "viewUrl": "https://adblock.any.dns.nixnet.xyz/dns-query",
+    "viewUrlMirror1": "tls://198.251.90.89:853",
+    "viewUrlMirror2": "198.251.90.89"
+  },
+  {
+    "id": 2065,
+    "homeUrl": "https://github.com/troysjanda/MyBlockLists/",
+    "issuesUrl": "https://github.com/troysjanda/MyBlockLists/issues",
+    "name": "Xpi Yahoo Complete Filters",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/troysjanda/MyBlockLists/master/yahoocomplete.txt"
+  },
+  {
+    "id": 2066,
+    "homeUrl": "https://nixnet.services/dns/",
+    "licenseId": 24,
+    "name": "hBlock Hosts Mini (DNS)",
+    "syntaxId": 22,
+    "viewUrl": "https://adblock.any.dns.nixnet.xyz/dns-query",
+    "viewUrlMirror1": "tls://198.251.90.89:853",
+    "viewUrlMirror2": "198.251.90.89"
+  },
+  {
+    "id": 2067,
+    "description": "SecureDNS can be used as an Adblocker by using a alternative hostname/address instead. Links that didn't fit in the Subscribe button URL texts, include [2a03:b0c0:0:1010::e9a:3001]:5443",
+    "homeUrl": "https://securedns.eu/#ads",
+    "name": "notracking - DNS",
+    "syntaxId": 22,
+    "viewUrl": "https://ads-doh.securedns.eu/dns-query",
+    "viewUrlMirror1": "tls://ads-dot.securedns.eu",
+    "viewUrlMirror2": "146.185.167.43:5443"
+  },
+  {
+    "id": 2068,
+    "homeUrl": "https://www.powershellgallery.com/packages/Manage-AdBlocksOnDNSServer/",
+    "issuesUrl": "https://github.com/hechz/Powershell/issues",
+    "licenseId": 24,
+    "name": "Peter Lowe's List (PowerShell PKG)",
+    "syntaxId": 44
+  },
+  {
+    "id": 2069,
+    "description": "Peter Lowe's (as of August 2018) colleague Vladimir Pissarev (who is part of the Security team in his company) mentioned to him that he runs a public DNS server that not only blocks ads and trackers, but also malware and viruses as well.",
+    "homeUrl": "https://itsecurity.ee/",
+    "name": "Vladimir Pissarev's DNS Server",
+    "syntaxId": 22,
+    "viewUrl": "91.239.26.140"
+  },
+  {
+    "id": 2070,
+    "description": "I wanted an easy solution to blocking ads and tracking on all my devices and AdGuard DNS didn’t block quite enough for me, so I decided to run my own AdGuard Home server. Sharing is caring, which is why I’ve decided to make my server available for everyone! Links that didn't fit in the Subscribe button URL texts, include 2a03:b0c0:3:d0::5f18:6001"
+    "homeUrl": "https://deletescape.ch/dns",
+    "issuesUrl": "https://github.com/deletescape/noads/issues",
+    "licenseId": 35,
+    "name": "noads.online AdGuard Home Megalist (DNS)",
+    "syntaxId": 22,
+    "viewUrl": "https://dns.noads.online/dns-query",
+    "viewUrlMirror1": "tls://dns.noads.online:853",
+    "viewUrlMirror2": "167.99.241.49"
+  },
+  {
+    "id": 2071,
+    "homeUrl": "https://www.dreamcastlive.net/connection-guide",
+    "name": "Dreamcast Live",
+    "syntaxId": 22,
+    "viewUrl": "46.101.91.123"
+  },
+  {
+    "id": 2072,
+    "description": "Blocks: advertising (web and mobile apps), analytics (web and mobile apps), tracking, malware.",
+    "homeUrl": "https://sebsauvage.net/wiki/doku.php?id=dns-blocklist",
+    "name": "Sebsauvage Hosts",
+    "syntaxId": 1,
+    "viewUrl": "https://sebsauvage.net/hosts/hosts"
+  },
+  {
+    "id": 2073,
+    "description": "Blocks: advertising (web and mobile apps), analytics (web and mobile apps), tracking, malware.",
+    "homeUrl": "https://sebsauvage.net/wiki/doku.php?id=dns-blocklist",
+    "name": "Sebsauvage Hosts (Adblockers)",
+    "syntaxId": 28,
+    "viewUrl": "https://sebsauvage.net/hosts/hosts-adguard"
+  },
+  {
+    "id": 2074,
+    "description": "Blocks: advertising (web and mobile apps), analytics (web and mobile apps), tracking, malware.",
+    "homeUrl": "https://sebsauvage.net/wiki/doku.php?id=dns-blocklist",
+    "name": "Sebsauvage Hosts (Domains)",
+    "syntaxId": 2,
+    "viewUrl": "https://sebsauvage.net/hosts/raw"
   }
 ]
