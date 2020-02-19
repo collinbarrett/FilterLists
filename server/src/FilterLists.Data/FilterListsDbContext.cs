@@ -1,4 +1,5 @@
-﻿using FilterLists.Data.Entities;
+﻿using Ardalis.GuardClauses;
+using FilterLists.Data.Entities;
 using FilterLists.Data.Entities.Junctions;
 using Microsoft.EntityFrameworkCore;
 
@@ -31,6 +32,7 @@ namespace FilterLists.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            Guard.Against.Null(modelBuilder, nameof(modelBuilder));
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(FilterListsDbContext).Assembly);
         }
     }
