@@ -1,4 +1,5 @@
-﻿using FilterLists.Data.Entities;
+﻿using Ardalis.GuardClauses;
+using FilterLists.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -6,21 +7,22 @@ namespace FilterLists.Data.EntityTypeConfigurations
 {
     public class SnapshotTypeConfiguration : BaseEntityTypeConfiguration<Snapshot>
     {
-        public override void Configure(EntityTypeBuilder<Snapshot> entityTypeBuilder)
+        public override void Configure(EntityTypeBuilder<Snapshot> builder)
         {
-            base.Configure(entityTypeBuilder);
-            entityTypeBuilder.ToTable("snapshots");
-            entityTypeBuilder.Property(x => x.Id)
-                             .HasColumnType("MEDIUMINT");
-            entityTypeBuilder.Property(x => x.HttpStatusCode)
-                             .HasColumnType("SMALLINT")
-                             .HasDefaultValueSql("NULL");
-            entityTypeBuilder.Property(x => x.Md5Checksum)
-                             .HasColumnType("BINARY(16)");
-            entityTypeBuilder.Property(x => x.WaybackTimestamp)
-                             .HasColumnType("TIMESTAMP");
-            entityTypeBuilder.Property(x => x.WaybackUrl)
-                             .HasColumnType("TEXT");
+            Guard.Against.Null(builder, nameof(builder));
+            base.Configure(builder);
+            builder.ToTable("snapshots");
+            builder.Property(x => x.Id)
+                .HasColumnType("MEDIUMINT");
+            builder.Property(x => x.HttpStatusCode)
+                .HasColumnType("SMALLINT")
+                .HasDefaultValueSql("NULL");
+            builder.Property(x => x.Md5Checksum)
+                .HasColumnType("BINARY(16)");
+            builder.Property(x => x.WaybackTimestamp)
+                .HasColumnType("TIMESTAMP");
+            builder.Property(x => x.WaybackUrl)
+                .HasColumnType("TEXT");
         }
     }
 }

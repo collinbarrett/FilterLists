@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
 using FilterLists.Data.Entities.Junctions;
-using JetBrains.Annotations;
 
 namespace FilterLists.Data.Entities
 {
-    [UsedImplicitly]
     public class Language : BaseEntity
     {
         public ICollection<FilterListLanguage> FilterListLanguages { get; set; }

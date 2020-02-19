@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using FilterLists.Data.Entities.Junctions;
-using JetBrains.Annotations;
 
 namespace FilterLists.Data.Entities
 {
-    [UsedImplicitly]
     public class FilterList : BaseEntity
     {
         public string ChatUrl { get; set; }
