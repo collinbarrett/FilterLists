@@ -14,15 +14,12 @@ namespace FilterLists.Data.Tests
             Thread.Sleep(20000);
 
             const string connString = "Server=mariadb;Database=filterlists;Uid=filterlists;Pwd=filterlists;";
-            var options = new DbContextOptionsBuilder<FilterListsDbContext>()
-                          .UseMySql(connString, m => m.MigrationsAssembly(Constants.MigrationsAssembly)
-                                                      .ServerVersion(Constants.ServerVersion))
-                          .Options;
+            var options = new DbContextOptionsBuilder<FilterListsDbContext>().UseMySql(connString,
+                    m => m.MigrationsAssembly("FilterLists.Data.Migrations").ServerVersion(Constants.ServerVersion))
+                .Options;
 
-            using (var context = new FilterListsDbContext(options))
-            {
-                context.Database.Migrate();
-            }
+            using var context = new FilterListsDbContext(options);
+            context.Database.Migrate();
         }
     }
 }

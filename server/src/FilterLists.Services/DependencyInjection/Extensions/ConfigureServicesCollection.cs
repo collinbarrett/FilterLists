@@ -21,9 +21,9 @@ namespace FilterLists.Services.DependencyInjection.Extensions
         {
             services.AddSingleton(c => config);
             services.AddDbContextPool<FilterListsDbContext>(o =>
-                    o.UseMySql(config.GetConnectionString("FilterListsConnection"),
-                        m => m.MigrationsAssembly(Constants.MigrationsAssembly)
-                              .ServerVersion(Constants.ServerVersion)));
+                o.UseMySql(config.GetConnectionString("FilterListsConnection"),
+                    m => m.MigrationsAssembly("FilterLists.Data.Migrations")
+                        .ServerVersion(Constants.ServerVersion)));
             services.TryAddScoped<FilterListService>();
             services.TryAddScoped<LanguageService>();
             services.TryAddScoped<LicenseService>();
