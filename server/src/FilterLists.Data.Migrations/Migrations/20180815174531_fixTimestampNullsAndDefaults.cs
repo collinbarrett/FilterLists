@@ -1,12 +1,9 @@
 ﻿using System;
-using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FilterLists.Api.Migrations
 {
-    [UsedImplicitly]
-    // ReSharper disable once InconsistentNaming
     public partial class fixTimestampNullsAndDefaults : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)

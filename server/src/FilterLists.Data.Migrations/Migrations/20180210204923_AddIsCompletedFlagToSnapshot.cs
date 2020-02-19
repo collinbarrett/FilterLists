@@ -1,9 +1,7 @@
-﻿using JetBrains.Annotations;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FilterLists.Api.Migrations
 {
-    [UsedImplicitly]
     public partial class AddIsCompletedFlagToSnapshot : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
