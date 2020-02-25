@@ -112,8 +112,9 @@ steps:
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     inputs:
       targetType: inline
+      workingDirectory: server/src/FilterLists.Data.Migrations
       script: |
-        DIFF=$(git status -s | wc -l)
+        DIFF=$(git status -s -- . | wc -l)
         echo "$DIFF file(s) changed"
         if (( $DIFF != 3 )) ; then
           echo "No-op migration. Effective EF migrations add/change 3 files (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
