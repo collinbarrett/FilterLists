@@ -2160,6 +2160,10 @@
     "languageId": 18
   },
   {
+    "filterListId": 1562,
+    "languageId": 110
+  },  
+  {
     "filterListId": 1563,
     "languageId": 48
   },
@@ -2187,6 +2191,10 @@
     "filterListId": 1574,
     "languageId": 18
   },
+  {
+    "filterListId": 1574,
+    "languageId": 110
+  },  
   {
     "filterListId": 1581,
     "languageId": 44
