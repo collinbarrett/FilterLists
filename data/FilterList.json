@@ -21683,10 +21683,10 @@
   },
   {
     "id": 2105,
-    "description": "The effect is too powerful, use it with caution.
+    "description": "The effect is too powerful, use it with caution.",
     "descriptionSourceUrl": "https://gitee.com/banbendalao/adguard/raw/master/kill-baidu-ad.txt",
     "homeUrl": "https://gitee.com/banbendalao/adguard/",
-    "name": "Baidu Extreme Purification - 百度搜索结果极限净化
+    "name": "Baidu Extreme Purification - 百度搜索结果极限净化",
     "syntaxId": 6,
     "viewUrl": "https://gitee.com/banbendalao/adguard/raw/master/kill-baidu-ad.txt"
   },
@@ -21708,8 +21708,8 @@
   },
   {
     "id": 2108,
-    "name": "OpenSpy PS2",
+    "name": "OpenSpy PS2 (Untested)",
     "syntaxId": 22,
-    "viewUrl": "45.7.228.197",
+    "viewUrl": "198.91.86.63",
   }
 ]
