@@ -12262,19 +12262,6 @@
     "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/appads.txt"
   },
   {
-    "id": 1232,
-    "description": "To block advertising on SmartTVs (HbbTV and co.)",
-    "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
-    "homeUrl": "https://github.com/Akamaru/Pi-Hole-Lists",
-    "issuesUrl": "https://github.com/Akamaru/Pi-Hole-Lists/issues",
-    "licenseId": 5,
-    "name": "Pi-Hole-Lists - SmartTV",
-    "publishedDate": "2017-07-31T18:43:55",
-    "syntaxId": 2,
-    "updatedDate": "2019-03-10T19:52:13",
-    "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/hbbtv.txt"
-  },
-  {
     "id": 1233,
     "description": "To block Adobe Updates (Photoshop & co.)",
     "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
@@ -21408,5 +21395,321 @@
     "name": "Sebsauvage Hosts (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://sebsauvage.net/hosts/raw"
+  },
+  {
+    "id": 2075,
+    "emailAddress": "mail@perflyst.de",
+    "homeUrl": "https://github.com/Perflyst/PiHoleBlocklist",
+    "issuesUrl": "https://github.com/Perflyst/PiHoleBlocklist/issues",
+    "licenseId": 28,
+    "name": "PiHole Blocklist SmartTV (AdGuard Home)",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt"
+  },
+  {
+    "id": 2076,
+    "description": "This will remove cookie and privacy warnings.",
+    "descriptionSourceUrl": "https://fanboy.co.nz/",
+    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
+    "emailAddress": "easylist.subscription@gmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "licenseId": 16,
+    "name": "EasyList Cookie List (TPL)",
+    "syntaxId": 3,
+    "updatedDate": "2019-11-15T11:56:00",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylist-cookie.tpl"
+  },
+  {
+    "id": 2077,
+    "description": "A blocklist to protect users against untrustworthy retail sites.",
+    "descriptionSourceUrl": "https://github.com/durablenapkin/scamblocklist",
+    "homeUrl": "https://github.com/durablenapkin/scamblocklist",
+    "issuesUrl": "https://github.com/durablenapkin/scamblocklist/issues",
+    "licenseId": 2,
+    "name": "Scam Blocklist (Adblockers)",
+    "submissionUrl": "https://github.com/durablenapkin/scamblocklist/issues/new/choose",
+    "syntaxId": 28,
+    "viewUrl": "https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/adguard.txt"
+  },
+  {
+    "id": 2078,
+    "description": "Allows advertising on Read the Docs.",
+    "licenseId": 2,
+    "name": "Read the Docs Advertising Exception List",
+    "syntaxId": 3,
+    "viewUrl": "https://ads-for-open-source.readthedocs.io/en/latest/_static/lists/readthedocs-ads.txt"
+  },
+  {
+    "id": 2079,
+    "description": "AdGuard Social media filter tends to rely too much on cosmetic filters IMHO. This filter consists of network filters only and complements Social media filter.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 28,
+    "name": "AdGuard Social Media Plus",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/adguard-social-plus.txt"
+  },
+  {
+    "id": 2080,
+    "description": "AdGuard Tracking Protection filter is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage. This filter aims to complement that and was extracted from my mobile filters but not identical.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 28,
+    "name": "AdGuard Tracking Protection Plus",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/adguard-tracking-plus.txt"
+  },
+  {
+    "id": 2081,
+    "description": "Inspired by Sable Filter at MeetingLabs, this removes cookie consents. Main focuses are Japanese sites and other high-traffic sites many Japanese people will visit. False-positive prone rules won't be added (e.g. cookielaw.org, uk-cookie-consent plugin).",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 28,
+    "name": "Sabre Filters 2",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt"
+  },
+  {
+    "id": 2082,
+    "description": "This removes blog parts and ranking buttons on Japanese websites.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 28,
+    "name": "Yuki2718's Blog Parts",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt"
+  },
+  {
+    "id": 2083,
+    "description": "Removes ranking buttons on adult sites.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 28,
+    "name": "Yuki2718's Blog Parts Adult",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt"
+  },
+  {
+    "id": 2084,
+    "description": "A whitelist for medium mode of uBlock Origin for English user. The purpose is to help those non-techie, yet security-conscious, people to use the mode. Payment services and mobile sites are out-of-scope. This is not a list I myself use so won't be updated frequently.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 28,
+    "name": "Yuki2718's uBlock Dynamic Rules",
+    "syntaxId": 7,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/ublock-dynamic-rules.txt"
+  },
+  {
+    "id": 2085,
+    "description": "Adds 3 extra entries in addition to ublock-dynamic-rules.txt",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 28,
+    "name": "Yuki2718's uBlock Dynamic Rules Plus",
+    "syntaxId": 7,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/ublock-dynamic-rules-plus.txt"
+  },
+  {
+    "id": 2086,
+    "description": "WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules[^1] and also occasionally cause false-positive. For these reasons I've settled down to AdGuard Social media filter which is relatively small in size and rarely breaks pages; however, it only blocks minimal set of the plugins. This list includes 1) rules for the plugins not on the Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer, and 3) a regex rule focused only on the latest survey scam campaign.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 28,
+    "name": "Yuki2718's uBlock Static Rules",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/ublock-static-rules.txt"
+  },
+  {
+    "id": 2087,
+    "description": "Blocklists based on articles published by security research groups.",
+    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
+    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
+    "name": "Hosts Blocklists — CERT-PA",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/cert-pa.txt"
+  },
+  {
+    "id": 2088,
+    "description": "Blocklists based on articles published by security research groups.",
+    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
+    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
+    "name": "Hosts Blocklists — Checkpoint",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/checkpoint.txt"
+  },
+  {
+    "id": 2089,
+    "description": "Blocklists based on articles published by security research groups.",
+    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
+    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
+    "name": "Hosts Blocklists — Citizen Lab",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/citizenlab.txt"
+  },
+  {
+    "id": 2090,
+    "description": "Blocklists based on articles published by security research groups.",
+    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
+    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
+    "name": "Hosts Blocklists — ESET",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/eset.txt"
+  },
+  {
+    "id": 2091,
+    "description": "Blocklists based on articles published by security research groups.",
+    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
+    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
+    "name": "Hosts Blocklists — Kaspersky",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/kaspersky.txt"
+  },
+  {
+    "id": 2092,
+    "description": "Blocklists based on articles published by security research groups.",
+    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
+    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
+    "name": "Hosts Blocklists — Malware-Traffic-Analysis",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/malware-traffic-analysis.txt"
+  },
+  {
+    "id": 2093,
+    "description": "Blocklists based on articles published by security research groups.",
+    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
+    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
+    "name": "Hosts Blocklists — Unit 42",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/pan-unit42.txt"
+  },
+  {
+    "id": 2094,
+    "description": "Blocklists based on articles published by security research groups.",
+    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
+    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
+    "name": "Hosts Blocklists — Sophos",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/sophos.txt"
+  },
+  {
+    "id": 2095,
+    "description": "Blocklists based on articles published by security research groups.",
+    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
+    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
+    "name": "Hosts Blocklists — Symantec",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/symantec.txt"
+  },
+  {
+    "id": 2096,
+    "description": "Blocklists based on articles published by security research groups.",
+    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
+    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
+    "name": "Hosts Blocklists — TG Soft",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/tgsoft.txt"
+  },
+  {
+    "id": 2097,
+    "description": "Blocklists based on articles published by security research groups.",
+    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
+    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
+    "name": "Hosts Blocklists — Yoroi",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/yoroi.txt"
+  },
+  {
+    "id": 2098,
+    "description": "Blocklists based on articles published by security research groups.",
+    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
+    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
+    "name": "Hosts Blocklists — Zscaler",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/zscaler.txt"
+  },
+  {
+    "id": 2099,
+    "description": "Blocks access to phishing, spam, malware and malicious domains. Our database of malicious domains is updated hourly and considered to be one of the best in the industry. Links that didn't fit in the Subscribe button URL texts, include 2a0d:2a00:2::2",
+    "homeUrl": "https://cleanbrowsing.org/filters#security",
+    "name": "CleanBrowsing Security Filter",
+    "syntaxId": 22,
+    "viewUrl": "185.228.168.9",
+    "viewUrlMirror1": "185.228.169.9",
+    "viewUrlMirror2": "2a0d:2a00:1::2"
+  },
+  {
+    "id": 2100,
+    "description": "This is a minimial blocklist based on the W3Tech annual surveys on most used webtechnology and Cookiebot tracking surveys. In stead of crawling the web analyzing Alexa's TOP 500.000 websites, I looked at the web industry itself, to block the bulk of the mainstream advertising services with the obvious benefit of low maintenance effort (for me) and low performance impact (for your adblocker).",
+    "homeUrl": "https://github.com/Kees1958/WS3_annual_most_used_survey_blocklist",
+    "issuesUrl": "https://github.com/Kees1958/WS3_annual_most_used_survey_blocklist/issues",
+    "name": "Small but effective adblockplus format blocklist based on the (annal) W3tech and Cookiebot surveys ",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Kees1958/WS3_annual_most_used_survey_blocklist/master/Small_but_effective_blocklist.txt"
+  },
+  {
+    "id": 2101,
+    "homeUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules",
+    "issuesUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules/issues",
+    "name": "Custom Hosts Domain Filter for AdGuard Home",
+    "syntaxId": 28,
+    "viewUrl": "https://raw.githubusercontent.com/DavidTai780/AdGuard-Home-Private-Rules/master/hosts.txt"
+  },
+  {
+    "id": 2102,
+    "description": "AdGuard's 'Mobile ad filtering supplementary rules', integrates the rules of Qiumiaojingxi and YanFung, and adds some rules for personal use.",
+    "homeUrl": "https://github.com/loveqqzj/AdGuard",
+    "issuesUrl": "https://github.com/loveqqzj/AdGuard/issues",
+    "name": "Mobile ad filtering supplementary rules - 移动广告过滤补充规则",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/loveqqzj/AdGuard/master/Mobile.txt"
+  },
+  {
+    "id": 2103,
+    "emailAddress": "dg@memeware.net",
+    "homeUrl": "https://github.com/crimsonphobia/etc/",
+    "issuesUrl": "https://github.com/crimsonphobia/etc/issues",
+    "name": "Fake Websites and other garbage",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/crimsonphobia/etc/master/ips"
+  },
+  {
+    "id": 2104,
+    "homeUrl": "https://gitee.com/banbendalao/adguard/",
+    "name": "ADgk Mobile Advertising Rules - adgk手机去广告规则",
+    "syntaxId": 6,
+    "viewUrl": "https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt"
+  },
+  {
+    "id": 2105,
+    "description": "The effect is too powerful, use it with caution.
+    "descriptionSourceUrl": "https://gitee.com/banbendalao/adguard/raw/master/kill-baidu-ad.txt",
+    "homeUrl": "https://gitee.com/banbendalao/adguard/",
+    "name": "Baidu Extreme Purification - 百度搜索结果极限净化
+    "syntaxId": 6,
+    "viewUrl": "https://gitee.com/banbendalao/adguard/raw/master/kill-baidu-ad.txt"
+  },
+  {
+    "id": 2106,
+    "homeUrl": "https://gitee.com/banbendalao/adguard/",
+    "name": "ADgk Mobile Advertising Rules (DNS)",
+    "syntaxId": 22,
+    "viewUrl": "https://dns.adgk.net:4433/dns-query",
+    "viewUrlMirror1": "tls://dns.adgk.net",
+    "viewUrlMirror2": "47.98.48.196"
+  },
+  {
+    "id": 2107,
+    "homeUrl": "https://ps2online.tk/",
+    "name": "PS2 Online",
+    "syntaxId": 22,
+    "viewUrl": "45.7.228.197"
+  },
+  {
+    "id": 2108,
+    "name": "OpenSpy PS2",
+    "syntaxId": 22,
+    "viewUrl": "45.7.228.197",
   }
 ]
