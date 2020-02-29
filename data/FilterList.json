@@ -17393,14 +17393,6 @@
     "viewUrl": "https://in0de.synology.me/own.txt"
   },
   {
-    "id": 1705,
-    "homeUrl": "https://www.yiclear.com/",
-    "licenseId": 5,
-    "name": "ChinaList 2.0",
-    "syntaxId": 3,
-    "viewUrl": "http://tools.yiclear.com/ChinaList2.0.txt"
-  },
-  {
     "id": 1706,
     "description": "Hosts file for blocking spyware, ads, analytics and tracking on German websites and domains.",
     "homeUrl": "https://gameindustry.de/",
@@ -21316,16 +21308,6 @@
     "name": "Xpi Yahoo Complete Filters",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/troysjanda/MyBlockLists/master/yahoocomplete.txt"
-  },
-  {
-    "id": 2066,
-    "homeUrl": "https://nixnet.services/dns/",
-    "licenseId": 24,
-    "name": "hBlock Hosts Mini (DNS)",
-    "syntaxId": 22,
-    "viewUrl": "https://adblock.any.dns.nixnet.xyz/dns-query",
-    "viewUrlMirror1": "tls://198.251.90.89:853",
-    "viewUrlMirror2": "198.251.90.89"
   },
   {
     "id": 2067,
