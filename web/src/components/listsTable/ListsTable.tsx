@@ -145,7 +145,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 .map(s => s.id);
             return arraySorter(getSoftwareIds(a), getSoftwareIds(b), software);
           }}
-          width={143}
+          width={170}
           className={styles.nogrow}
           filters={software.map(s => ({
             text: (
