@@ -2891,11 +2891,12 @@
     "homeUrl": "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
     "issuesUrl": "https://github.com/cjx82630/cjxlist/issues",
     "licenseId": 4,
-    "name": "EasyList Lite China",
+    "name": "CJX's EasyList Lite",
     "publishedDate": "2014-11-13T03:34:41",
     "syntaxId": 3,
     "updatedDate": "2019-03-13T01:45:17",
-    "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt",
+    "viewUrlMirror1": "https://gitee.com/cjx82630/cjxlist/raw/master/cjxlist.txt"
   },
   {
     "id": 269,
@@ -3037,7 +3038,8 @@
     "publishedDate": "2015-02-04T10:34:04",
     "syntaxId": 3,
     "updatedDate": "2019-04-07T13:48:13",
-    "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
+    "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt",
+    "viewUrlMirror1": "https://gitee.com/cjx82630/cjxlist/raw/master/cjx-annoyance.txt"
   },
   {
     "id": 282,
@@ -4603,15 +4605,6 @@
     "syntaxId": 2,
     "updatedDate": "2018-05-10T03:41:32",
     "viewUrl": "https://raw.githubusercontent.com/ligyxy/Blocklist/master/BLOCKLIST"
-  },
-  {
-    "id": 423,
-    "donateUrl": "https://www.malekal.com/dons-pour-malekal-com/",
-    "homeUrl": "https://www.malekal.com",
-    "licenseId": 5,
-    "name": "Malekal's Hosts",
-    "syntaxId": 1,
-    "viewUrl": "https://www.malekal.com/HOSTS_filtre/HOSTS.txt"
   },
   {
     "id": 424,
@@ -20850,36 +20843,6 @@
     "viewUrl": "https://blocklist.site/app/dl/redirect"
   },
   {
-    "id": 2019,
-    "donateUrl": "https://adblockplus.org/en/donate",
-    "emailAddress": "subscriptionlist@adblockplus.org",
-    "homeUrl": "https://facebook.adblockplus.me/",
-    "licenseId": 5,
-    "name": "Facebook Annoyances Blocker",
-    "syntaxId": 3,
-    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt"
-  },
-  {
-    "id": 2020,
-    "donateUrl": "https://adblockplus.org/en/donate",
-    "emailAddress": "subscriptionlist@adblockplus.org",
-    "homeUrl": "https://facebook.adblockplus.me/",
-    "licenseId": 5,
-    "name": "Facebook Sidebar Blocker",
-    "syntaxId": 3,
-    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt"
-  },
-  {
-    "id": 2021,
-    "donateUrl": "https://adblockplus.org/en/donate",
-    "emailAddress": "subscriptionlist@adblockplus.org",
-    "homeUrl": "https://facebook.adblockplus.me/",
-    "licenseId": 5,
-    "name": "Facebook News Feed Annoyances Blocker",
-    "syntaxId": 3,
-    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt"
-  },
-  {
     "id": 2022,
     "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
     "descriptionSourceUrl": "http://ipverse.net/",
@@ -21162,7 +21125,7 @@
     "homeUrl": "https://github.com/danielmiessler/SecLists/",
     "issuesUrl": "https://github.com/danielmiessler/SecLists/issues",
     "licenseId": 2,
-    "name": "SecLists - ",
+    "name": "SecLists - DNS Resolvers",
     "syntaxId": 9,
     "viewUrl": "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Miscellaneous/dns-resolvers.txt"
   },
@@ -21693,5 +21656,75 @@
     "name": "OpenSpy PS2 (Untested)",
     "syntaxId": 22,
     "viewUrl": "198.91.86.63"
-  }
+  },
+  {
+    "id": 2109,
+    "description": "Contains entries from EasyList China, EasyList Lite, CJX's Annoyances List, and some additional entries of my own.",
+    "homeUrl": "https://adf.minggo.eu.org",
+    "name": "halflife's AdFilters",
+    "syntaxId": 3,
+    "viewUrl": "https://gitee.com/halflife/list/raw/master/ad.txt"
+  },
+  {
+    "id": 2110,
+    "homeUrl": "https://gitee.com/anye1998/Adguard-List-of-personal-rules",
+    "name": "anye1998's List of Personal Rules",
+    "syntaxId": 6,
+    "viewUrl": "https://gitee.com/anye1998/Adguard-List-of-personal-rules/blob/master/List-of-personal-rules.txt"
+  },
+  {
+    "id": 2111,
+    "description": "Supplement for \"EasyList China+EasyList\" & \"EasyPrivacy\" & \"CJX's Annoyance List\". Removes Ads, Anti-adblock, Annoyances, Self-promotion & Privacy Protection on Chinese Websites",
+    "emailAddress": "cjxlist@gmail.com",
+    "forumUrl": "https://abpchina.org/forum/forum.php",
+    "homeUrl": "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
+    "issuesUrl": "https://github.com/cjx82630/cjxlist/issues",
+    "licenseId": 16,
+    "name": "CJX's uBlock list",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt",
+    "viewUrlMirror1": "https://gitee.com/cjx82630/cjxlist/raw/master/cjx-ublock.txt"
+  },
+  {
+    "id": 2112,
+    "description": "These are websites who still haven't bothered to implement GDPR after ≥2 years, and who still show themselves as unavailable or even quote-unquote \"\"\"caring\"\"\" about European users, and who therefore can be safely assumed to hate your guts on a personal level, especially (but not limited to) if you're European, and the list can very merrily be used in Google Hit Hider by Domain to prevent disappointment when you think you've found an interesting article search result. Let's name and shame these kinds of sites.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "GDPR 451 List of Mostly American Websites Who Hate Europe and Privacy Rights",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GDPR%20451%20List.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/GDPR%20451%20List.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/GDPR%20451%20List.txt"
+  },
+  {
+    "id": 2113,
+    "description": "A list that make links to certain websites redirect to the proper .onion pages. For example, clicking on links to nytimes.com would instead lead to nytimes3xbfgragh.onion.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Tor Redirector List (URLRedirector)",
+    "syntaxId": 31,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/TorRedirectorList-URLRedirector.json",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Other%20domains%20versions/TorRedirectorList-URLRedirector.json",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/Other%20domains%20versions/TorRedirectorList-URLRedirector.json"
+  },
+  {
+    "id": 2114,
+    "description": "Are you tired of having to scroll so much on websites, or you want to keep your eyes on more text and content at once? If so, this list will help you a little extra bit with that.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Media Player Gradient Remover",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MediaPlayerGradientRemover.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/MediaPlayerGradientRemover.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/MediaPlayerGradientRemover.txt"
+  },
 ]
