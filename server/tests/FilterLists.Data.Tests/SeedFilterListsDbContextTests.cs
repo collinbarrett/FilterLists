@@ -16,7 +16,7 @@ namespace FilterLists.Data.Tests
             const string connString = "Server=mariadb;Database=filterlists;Uid=filterlists;Pwd=filterlists;";
             var options = new DbContextOptionsBuilder<FilterListsDbContext>().UseMySql(connString,
                     m => m.MigrationsAssembly("FilterLists.Data.Migrations").ServerVersion(Constants.ServerVersion))
-                .Options;
+                .EnableSensitiveDataLogging().Options;
 
             using var context = new FilterListsDbContext(options);
             context.Database.Migrate();
