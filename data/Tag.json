@@ -178,10 +178,5 @@
     "id": 36,
     "description": "These lists are known to be so big as to begin to cause loading and processing issues on weaker units, e.g. old phones",
     "name": "≥250K entries"
-  },
-  {
-    "id": 37,
-    "description": "Lists that are designed with phones and tablets in mind",
-    "name": "mobile"
   }
 ]
