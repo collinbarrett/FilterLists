@@ -163,5 +163,25 @@
     "id": 33,
     "description": "Blocks promotions of websites' own mobile apps",
     "name": "app-download"
+  },
+  {
+    "id": 34,
+    "description": "Lists designed for units that are neither PCs or phones, e.g. TVs, game consoles, smart-sticks, etc.",
+    "name": "media-unit"
+  },
+  {
+    "id": 35,
+    "description": "Lists that deal with specific sites or site groups only, without blocking them entirely",
+    "name": "site-specific"
+  },
+  {
+    "id": 36,
+    "description": "These lists are known to be so big as to begin to cause loading and process issues on weaker units, e.g. old phones.",
+    "name": "≥250K entries"
+  },
+  {
+    "id": 37,
+    "description": "Lists that are designed with phones and tablets in mind",
+    "name": "mobile"
   }
 ]
