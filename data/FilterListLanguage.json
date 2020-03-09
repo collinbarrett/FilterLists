@@ -2529,10 +2529,6 @@
   },
   {
     "filterListId": 1918,
-    "languageId": 99
-  },
-  {
-    "filterListId": 1918,
     "languageId": 106
   },
   {
@@ -2686,5 +2682,73 @@
   {
     "filterListId": 2111,
     "languageId": 99
+  },
+  {
+    "filterListId": 2118,
+    "languageId": 154
+  },
+  {
+    "filterListId": 2119,
+    "languageId": 154
+  },
+  {
+    "filterListId": 2120,
+    "languageId": 13
+  },
+    {
+    "filterListId": 2121,
+    "languageId": 13
+  },
+  {
+    "filterListId": 2122,
+    "languageId": 58
+  },
+    {
+    "filterListId": 2123,
+    "languageId": 58
+  },
+  {
+    "filterListId": 2124,
+    "languageId": 179
+  },
+    {
+    "filterListId": 2126,
+    "languageId": 18
+  },
+  {
+    "filterListId": 2127,
+    "languageId": 18
+  },
+    {
+    "filterListId": 2128,
+    "languageId": 18
+  },
+  {
+    "filterListId": 2129,
+    "languageId": 18
+  },
+    {
+    "filterListId": 2130,
+    "languageId": 18
+  },
+  {
+    "filterListId": 2131,
+    "languageId": 18
+  },
+    {
+    "filterListId": 2132,
+    "languageId": 154
+  },
+      {
+    "filterListId": 2133,
+    "languageId": 179
+  },
+  {
+    "filterListId": 2135,
+    "languageId": 177
+  },
+  {
+    "filterListId": 2136,
+    "languageId": 179
   }
 ]
