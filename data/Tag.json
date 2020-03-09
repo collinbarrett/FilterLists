@@ -36,7 +36,7 @@
   },
   {
     "id": 8,
-    "description": "Blocks cookie notices primarily in response to the EU Cookie Law",
+    "description": "Blocks cookie notices primarily in response to the EU Cookie Law and GDPR",
     "name": "cookies"
   },
   {
@@ -56,7 +56,7 @@
   },
   {
     "id": 12,
-    "description": "Redirects traffic through proxies to get around firewalls",
+    "description": "Redirects traffic through proxies to get around firewalls or service shutdowns",
     "name": "proxy"
   },
   {
@@ -176,7 +176,7 @@
   },
   {
     "id": 36,
-    "description": "These lists are known to be so big as to begin to cause loading and process issues on weaker units, e.g. old phones.",
+    "description": "These lists are known to be so big as to begin to cause loading and processing issues on weaker units, e.g. old phones",
     "name": "≥250K entries"
   },
   {
