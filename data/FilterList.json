@@ -4110,7 +4110,7 @@
     "homeUrl": "https://adblock.sk/",
     "issuesUrl": "https://github.com/tomasko126/easylistczechandslovak/issues",
     "licenseId": 8,
-    "name": "EasyList Czech and Slovak - IE",
+    "name": "EasyList Czech and Slovak + EasyList (TPL)",
     "syntaxId": 10,
     "updatedDate": "2019-04-14T18:58:11",
     "viewUrl": "https://easylist-msie.adblockplus.org/easylistczechslovak+easylist.tpl"
@@ -4731,13 +4731,13 @@
   },
   {
     "id": 434,
-    "description": "Are you tired of having to turn off Autoplay on YouTube every time you e.g. go to incognito mode? Are you worried of having to use specific extensions just for that purpose? Then this list is for you. Now also working on phone browsers!",
+    "description": "Are you tired of having to turn off Autoplay on YouTube or other video services every time you e.g. go to incognito mode? Are you worried of having to use specific extensions just for that purpose? Then this list is for you. Now also working on phone browsers!",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
-    "name": "Stop Autoplay on YouTube",
+    "name": "Stop Autoplay on Video Sites",
     "publishedDate": "2018-07-31T18:32:49",
     "syntaxId": 3,
     "updatedDate": "2019-04-13T19:39:29",
@@ -6642,24 +6642,26 @@
   },
   {
     "id": 693,
+    "description": "The Ultimate hosts file for protecting your computer or device against over a million bad web sites. Protect your children and family from gaining access to bad web sites and protect your devices and pc from being infected with Malware or Ransomware. Raw versions in 4 parts can be found at https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/tree/master/hosts",
     "donateUrl": "https://www.paypal.me/mitchellkrog/",
     "emailAddress": "mitchellkrog@gmail.com",
     "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
     "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
     "licenseId": 2,
-    "name": "Ultimate Hosts Blacklist - Hosts",
+    "name": "Ultimate Hosts Blacklist (Hosts)",
     "syntaxId": 1,
     "updatedDate": "2019-04-18T06:14:24",
     "viewUrl": "https://hosts.ubuntu101.co.za/hosts"
   },
   {
     "id": 694,
+    "description": "The Ultimate hosts file for protecting your computer or device against over a million bad web sites. Protect your children and family from gaining access to bad web sites and protect your devices and pc from being infected with Malware or Ransomware. Raw versions in 4 parts can be found at https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/tree/master/domains",
     "donateUrl": "https://www.paypal.me/mitchellkrog/",
     "emailAddress": "mitchellkrog@gmail.com",
     "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
     "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
     "licenseId": 2,
-    "name": "Ultimate Hosts Blacklist - Domains",
+    "name": "Ultimate Hosts Blacklist (Domains)",
     "syntaxId": 2,
     "updatedDate": "2019-04-19T01:06:01",
     "viewUrl": "https://hosts.ubuntu101.co.za/domains.list"
@@ -11872,7 +11874,7 @@
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
     "licenseId": 14,
-    "name": "RU AdList BitBlock (Domains)",
+    "name": "RU AdList: BitBlock (Domains)",
     "publishedDate": "2017-09-05T08:14:36",
     "syntaxId": 2,
     "updatedDate": "2018-05-28T14:02:55",
@@ -11883,7 +11885,7 @@
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
     "licenseId": 14,
-    "name": "RU AdList Counters (Domains)",
+    "name": "RU AdList: Counters (Domains)",
     "publishedDate": "2017-09-05T08:14:36",
     "syntaxId": 2,
     "updatedDate": "2019-02-01T00:40:14",
@@ -11916,7 +11918,7 @@
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
     "licenseId": 14,
-    "name": "SatterlysAdblockPlusFilters (Domains)",
+    "name": "Satterly's Adblock Plus Filters (Domains)",
     "publishedDate": "2017-09-05T08:14:36",
     "syntaxId": 2,
     "updatedDate": "2018-05-28T14:02:55",
@@ -12114,7 +12116,7 @@
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
     "licenseId": 14,
-    "name": "Turk adlist (Domains)",
+    "name": "Turk AdList (Domains)",
     "publishedDate": "2017-09-02T01:07:36",
     "syntaxId": 2,
     "updatedDate": "2019-03-23T00:38:33",
@@ -12191,7 +12193,7 @@
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
     "licenseId": 14,
-    "name": "uAssetsFilters (Domains)",
+    "name": "uBlock Filters (Domains)",
     "publishedDate": "2017-09-05T08:14:36",
     "syntaxId": 2,
     "updatedDate": "2019-04-09T00:38:43",
@@ -12202,7 +12204,7 @@
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
     "licenseId": 14,
-    "name": "uAssetsPrivacy (Domains)",
+    "name": "uBlock Filters - Privacy (Domains)",
     "publishedDate": "2017-09-05T08:14:36",
     "syntaxId": 2,
     "updatedDate": "2018-11-18T00:39:16",
@@ -12213,7 +12215,7 @@
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
     "licenseId": 14,
-    "name": "uAssetsUnbreak (Domains)",
+    "name": "uBlock Filters - Unbreak (Domains)",
     "publishedDate": "2018-04-13T04:01:44",
     "syntaxId": 2,
     "updatedDate": "2018-05-28T14:02:55",
@@ -12666,8 +12668,8 @@
     "publishedDate": "2017-11-11T00:00:00",
     "syntaxId": 28,
     "updatedDate": "2019-04-10T23:58:11",
-    "viewUrl": "https://gitlab.com/intr0/DomainVoider/raw/master/DomainVoider.txt",
-    "viewUrlMirror1": "https://notabug.org/-intr0/DomainVoider/raw/master/DomainVoider.txt",
+    "viewUrl": "https://gitlab.com/intr0/DomainVoider/raw/master/DomainVoider",
+    "viewUrlMirror1": "https://notabug.org/-intr0/DomainVoider/raw/master/DomainVoider",
     "viewUrlMirror2": "http://w2caclgy62idhzyut23ucimqw5tsmfbl4b2iyjzpvngatast2fiqxbyd.onion/domainvoider/DomainVoider.txt"
   },
   {
@@ -14957,7 +14959,7 @@
     "description": "The Ultimate hosts file for protecting your computer or device against over a million bad web sites. Protect your children and family from gaining access to bad web sites and protect your devices and pc from being infected with Malware or Ransomware.",
     "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
     "licenseId": 2,
-    "name": "The Ultimate Daily Hosts Blacklist",
+    "name": "Ultimate Hosts Blacklist Deny - IPs only",
     "publishedDate": "2019-03-02T18:18:31",
     "syntaxId": 23,
     "updatedDate": "2019-04-20T16:04:12",
@@ -15191,57 +15193,27 @@
   },
   {
     "id": 1517,
+    "description": "The Ultimate hosts file for protecting your computer or device against over a million bad web sites. Protect your children and family from gaining access to bad web sites and protect your devices and pc from being infected with Malware or Ransomware.",
     "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
     "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
     "licenseId": 2,
-    "name": "Ultimate Hosts Blacklist IPs",
+    "name": "Ultimate Hosts Blacklist (IPs)",
     "publishedDate": "2019-03-02T18:18:31",
     "syntaxId": 9,
     "updatedDate": "2019-04-20T16:04:12",
     "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/ips/ips0.list"
   },
   {
-    "id": 1518,
-    "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
-    "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
-    "licenseId": 2,
-    "name": "Ultimate Hosts Blacklist",
-    "publishedDate": "2019-03-06T20:04:34",
-    "syntaxId": 1,
-    "updatedDate": "2019-04-21T16:04:36",
-    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/hosts/hosts0"
-  },
-  {
-    "id": 1519,
-    "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
-    "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
-    "licenseId": 2,
-    "name": "Ultimate Hosts Blacklist Domains",
-    "publishedDate": "2019-03-06T01:28:41",
-    "syntaxId": 2,
-    "updatedDate": "2019-04-21T16:04:36",
-    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/domains/domains0.list"
-  },
-  {
     "id": 1520,
+    "description": "The Ultimate hosts file for protecting your computer or device against over a million bad web sites. Protect your children and family from gaining access to bad web sites and protect your devices and pc from being infected with Malware or Ransomware. Raw versions in 4 parts can be found at https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/tree/master/superhosts.deny",
     "homeUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist",
     "issuesUrl": "https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist/issues",
     "licenseId": 2,
-    "name": "Ultimate Hosts Blacklist Superhosts",
+    "name": "Ultimate Hosts Blacklist Deny - Superhosts",
     "publishedDate": "2019-03-06T20:04:34",
     "syntaxId": 23,
     "updatedDate": "2019-04-21T16:04:36",
-    "viewUrl": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/superhosts.deny/superhosts0.deny",
-    "viewUrlMirror1": "https://hosts.ubuntu101.co.za/superhosts.deny"
-  },
-  {
-    "id": 1521,
-    "homeUrl": "https://hosts.ubuntu101.co.za/",
-    "licenseId": 2,
-    "name": "Ultimate Hosts Blacklist Deny",
-    "syntaxId": 23,
-    "updatedDate": "2019-04-05T14:53:19",
-    "viewUrl": "https://hosts.ubuntu101.co.za/hosts.deny"
+    "viewUrl": "https://hosts.ubuntu101.co.za/superhosts.deny"
   },
   {
     "id": 1523,
@@ -21346,9 +21318,9 @@
     "emailAddress": "mail@perflyst.de",
     "homeUrl": "https://github.com/Perflyst/PiHoleBlocklist",
     "issuesUrl": "https://github.com/Perflyst/PiHoleBlocklist/issues",
-    "licenseId": 28,
+    "licenseId": 2,
     "name": "PiHole Blocklist SmartTV (AdGuard Home)",
-    "syntaxId": 2,
+    "syntaxId": 28,
     "viewUrl": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt"
   },
   {
@@ -21589,9 +21561,9 @@
     "description": "This is a minimial blocklist based on the W3Tech annual surveys on most used webtechnology and Cookiebot tracking surveys. In stead of crawling the web analyzing Alexa's TOP 500.000 websites, I looked at the web industry itself, to block the bulk of the mainstream advertising services with the obvious benefit of low maintenance effort (for me) and low performance impact (for your adblocker).",
     "homeUrl": "https://github.com/Kees1958/WS3_annual_most_used_survey_blocklist",
     "issuesUrl": "https://github.com/Kees1958/WS3_annual_most_used_survey_blocklist/issues",
-    "name": "Small but effective adblockplus format blocklist based on the (annal) W3tech and Cookiebot surveys ",
+    "name": "Small but effective adblockplus format blocklist based on the (annal) W3tech and Cookiebot surveys - Top 500",
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/Kees1958/WS3_annual_most_used_survey_blocklist/master/Small_but_effective_blocklist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/Kees1958/WS3_annual_most_used_survey_blocklist/master/Top500"
   },
   {
     "id": 2101,
@@ -21682,7 +21654,7 @@
     "licenseId": 16,
     "name": "CJX's uBlock list",
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt",
+    "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt",
     "viewUrlMirror1": "https://gitee.com/cjx82630/cjxlist/raw/master/cjx-ublock.txt"
   },
   {
@@ -21726,5 +21698,211 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MediaPlayerGradientRemover.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/MediaPlayerGradientRemover.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/MediaPlayerGradientRemover.txt"
+  },
+  {
+    "id": 2115,
+    "homeUrl": "https://github.com/mediumkreation/IndianList",
+    "issuesUrl": "https://github.com/mediumkreation/IndianList/issues",
+    "licenseId": 3,
+    "name": "IndianList + EasyList",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/indianlist+easylist.txt"
+  },
+  {
+    "id": 2117,
+    "homeUrl": "https://github.com/mediumkreation/IndianList",
+    "issuesUrl": "https://github.com/mediumkreation/IndianList/issues",
+    "licenseId": 3,
+    "name": "IndianList + EasyList (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/indianlist+easylist.tpl"
+  },
+  {
+    "id": 2118,
+    "homeUrl": "https://easylist.to/",
+    "licenseId": 3,
+    "name": "KoreanList + EasyList",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/koreanlist+easylist.txt"
+  },
+  {
+    "id": 2119,
+    "homeUrl": "https://easylist.to/",
+    "licenseId": 3,
+    "name": "KoreanList + EasyList (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/koreanlist+easylist.tpl"
+  },
+  {
+    "id": 2120,
+    "emailAddress": "easylist.portuguese@gmail.com",
+    "homeUrl": "https://easylist.to/",
+    "licenseId": 4,
+    "name": "EasyList Portuguese + EasyList",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistportuguese+easylist.txt"
+  },
+  {
+    "id": 2121,
+    "emailAddress": "easylist.portuguese@gmail.com",
+    "homeUrl": "https://easylist.to/",
+    "licenseId": 4,
+    "name": "EasyList Portuguese + EasyList (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistportuguese+easylist.tpl"
+  },
+  {
+    "id": 2122,
+    "description": "The ABP advertising filter is built with the mission of improving the browsing experience for the vietnamese users. ABPVN may not help block all ads, but ABPVN will minimize the appearance of ads on most websites in Vietnam.",
+    "descriptionSourceUrl": "https://abpvn.com",
+    "donateUrl": "https://abpvn.com/donate/",
+    "emailAddress": "support@abpvn.com",
+    "homeUrl": "https://abpvn.com",
+    "licenseId": 5,
+    "name": "ABPVN List + EasyList",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/abpvn+easylist.txt",
+  },
+  {
+    "id": 2123,
+    "description": "The ABP advertising filter is built with the mission of improving the browsing experience for the vietnamese users. ABPVN may not help block all ads, but ABPVN will minimize the appearance of ads on most websites in Vietnam.",
+    "descriptionSourceUrl": "https://abpvn.com",
+    "donateUrl": "https://abpvn.com/donate/",
+    "emailAddress": "support@abpvn.com",
+    "homeUrl": "https://abpvn.com",
+    "licenseId": 5,
+    "name": "ABPVN List + EasyList (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/abpvn+easylist.tpl",
+  },
+  {
+    "id": 2124,
+    "description": "A list combining ABPindo and EasyList.",
+    "licenseId": 4,
+    "name": "ABPindo + EasyList (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/abpindo+easylist.txt"
+  },
+  {
+    "id": 2125,
+    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
+    "descriptionSourceUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt",
+    "emailAddress": "filters+cv@adblockplus.org",
+    "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
+    "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "licenseId": 4,
+    "name": "ABP Anti-Circumvention Filter List (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.tpl"
+  },
+  {
+    "id": 2126,
+    "description": "Russian-only fork of Fanboy's Annoyance List.",
+    "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
+    "homeUrl": "https://code.google.com/archive/p/ruadlist/",
+    "licenseId": 16,
+    "name": "RU AdList: BitBlock (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/bitblock.tpl"
+  },
+  {
+    "id": 2127,
+    "description": "Russian-only fork of Fanboy's Annoyance List.",
+    "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
+    "homeUrl": "https://code.google.com/archive/p/ruadlist/",
+    "licenseId": 16,
+    "name": "RU AdList: BitBlock + Fanboy's Annoyance List",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/bitblockext.txt"
+  },
+  {
+    "id": 2128,
+    "description": "Russian-only fork of Fanboy's Annoyance List.",
+    "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
+    "homeUrl": "https://code.google.com/archive/p/ruadlist/",
+    "licenseId": 16,
+    "name": "RU AdList: BitBlock + Fanboy's Annoyance List (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/bitblockext.tpl"
+  },
+  {
+    "id": 2129,
+    "homeUrl": "https://code.google.com/archive/p/ruadlist/",
+    "licenseId": 12,
+    "name": "RU AntiPron List",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/antinuha.txt"
+  },
+  {
+    "id": 2130,
+    "homeUrl": "https://code.google.com/archive/p/ruadlist/",
+    "licenseId": 12,
+    "name": "RU AntiPron List (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/antinuha.tpl"
+  },
+  {
+    "id": 2131,
+    "description": "Blocks most popular internet statistics counters on sites serving Russia.",
+    "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
+    "homeUrl": "https://code.google.com/archive/p/ruadlist/",
+    "licenseId": 12,
+    "name": "RU AdList: Counters (TPL)",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/cntblock.tpl"
+  },
+  {
+    "id": 2132,
+    "description": "Adblocker list for Korean websites. It will only be occassionally updated, only as a complement to other filters.",
+    "homeUrl": "https://github.com/hdd1013/AdBlockListSubKr/",
+    "issuesUrl": "https://github.com/hdd1013/AdBlockListSubKr/issues",
+    "licenseId": 2,
+    "name": "AdBlockListSubKr",
+    "syntaxId": 6,
+    "viewUrl": "https://raw.githubusercontent.com/hdd1013/AdBlockListSubKr/master/filter.txt"
+  },
+  {
+    "id": 2133,
+    "homeUrl": "https://github.com/dagoll/filters-list/",
+    "issuesUrl": "https://github.com/dagoll/filters-list/issues",
+    "name": "Dagoll's Filters List",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/dagoll/filters-list/master/dagoll-filters-list.txt"
+  },
+  {
+    "id": 2134,
+    "description": "Crunchyroll has begun to show ads that are harder AdBlock for detect, and now we have to wait through ad breaks to watch our favorite anime. This filter list is drafted and maintained by Cardinal System and is intended to detect and block these nasty circumvention ads.",
+    "homeUrl": "https://github.com/TheCardinalSystem/Cruncyroll-Filter-List/",
+    "issuesUrl": "https://github.com/TheCardinalSystem/Cruncyroll-Filter-List/issues",
+    "name": "Crunchyroll Anti-Circumvention filters",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/TheCardinalSystem/Cruncyroll-Filter-List/master/english.txt"
+  },
+  {
+    "id": 2135,
+    "description": "AdBlock List for Hungarian Fake News Domains",
+    "homeUrl": "https://github.com/radokristof/HunFakeNewsAdblockList/",
+    "issuesUrl": "https://github.com/radokristof/HunFakeNewsAdblockList/issues",
+    "name": "Hungarian FakeNews Adblock List",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/radokristof/HunFakeNewsAdblockList/master/hosts"
+  },
+  {
+    "id": 2136,
+    "homeUrl": "https://github.com/dagoll/filters-list/",
+    "issuesUrl": "https://github.com/dagoll/filters-list/issues",
+    "name": "Dagoll's Filters List (uMatrix)",
+    "syntaxId": 7,
+    "viewUrl": "https://raw.githubusercontent.com/dagoll/filters-list/master/dynamic-filtering-rules.txt"
+  },
+  {
+    "id": 2137,
+    "emailAddress": "mail@perflyst.de",
+    "homeUrl": "https://github.com/Perflyst/PiHoleBlocklist",
+    "issuesUrl": "https://github.com/Perflyst/PiHoleBlocklist/issues",
+    "licenseId": 2,
+    "name": "PiHole Blocklist SmartTV - Amazon Fire TV",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt"
   }
 ]
