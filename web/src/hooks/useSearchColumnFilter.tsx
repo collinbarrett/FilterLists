@@ -1,7 +1,7 @@
 import { SearchOutlined } from "@ant-design/icons";
 import { Button, Input } from "antd";
-import { FilterDropdownProps } from "antd/lib/table";
 import React, { useEffect, useState } from "react";
+import { FilterDropdownProps } from "antd/lib/table/interface";
 
 interface FilterPropsState<T> {
   filterDropdown?:
