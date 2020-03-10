@@ -1,4 +1,3 @@
-import { Icon as LegacyIcon } from "@ant-design/compatible";
 import { Button } from "antd";
 import { ButtonType } from "antd/lib/button";
 import React from "react";
@@ -8,7 +7,7 @@ interface Props {
   text: string;
   title?: string;
   type?: ButtonType;
-  icon?: string;
+  icon?: React.ReactNode;
 }
 
 export const LinkButton = (props: Props) =>
@@ -19,7 +18,7 @@ export const LinkButton = (props: Props) =>
       type={props.type || "default"}
       block
       style={{ borderLeftColor: "rgb(217, 217, 217)" }} //HACK: override buggy style in antd
-      icon={<LegacyIcon type={props.icon} />}
+      icon={props.icon}
       target="_blank"
       rel="noopener noreferrer"
     >
