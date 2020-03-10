@@ -1,11 +1,6 @@
 import "./listsTable.css";
 
 import { Table, Tag } from "antd";
-import {
-  PaginationConfig,
-  SorterResult,
-  TableCurrentDataSource
-} from "antd/lib/table";
 import React, { useEffect, useState } from "react";
 import { RouteComponentProps } from "react-router";
 
@@ -28,6 +23,12 @@ import { SyntaxTag } from "../SyntaxTag";
 import { TagCloud } from "../tagCloud";
 import { arraySorter } from "./arraySorter";
 import styles from "./ListsTable.module.css";
+import { PaginationConfig } from "antd/lib/pagination";
+import {
+  SorterResult,
+  TableCurrentDataSource,
+  Key
+} from "antd/lib/table/interface";
 
 interface Props {
   lists: List[];
@@ -78,8 +79,8 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
       }}
       onChange={(
         _pagination: PaginationConfig,
-        _filters: Partial<Record<keyof List, string[]>>,
-        _sorter: SorterResult<List>,
+        _filters: Record<string, Key[] | null>,
+        _sorter: SorterResult<List> | SorterResult<List>[],
         extra: TableCurrentDataSource<List>
       ) => setVisibleLists(extra.currentDataSource)}
     >
