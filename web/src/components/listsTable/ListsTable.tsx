@@ -1,34 +1,34 @@
 import "./listsTable.css";
 
-import { Table, Tag } from "antd";
+import {
+  Key,
+  SorterResult,
+  TableCurrentDataSource
+} from "antd/lib/table/interface";
 import React, { useEffect, useState } from "react";
-import { RouteComponentProps } from "react-router";
-
+import { SoftwareCloud, SoftwareIcon } from "../softwareCloud";
+import { Table, Tag } from "antd";
 import { useSearchColumnFilter, useTablePageSizer } from "../../hooks";
+
+import { Description } from "../Description";
 import { Language } from "../../interfaces/Language";
+import { LanguageCloud } from "../languageCloud";
 import { License } from "../../interfaces/License";
+import { LicenseTag } from "../LicenseTag";
 import { List } from "../../interfaces/List";
+import { ListInfoButton } from "../ListInfoButton";
 import { Maintainer } from "../../interfaces/Maintainer";
+import { MaintainerCloud } from "../maintainerCloud";
+import { PaginationConfig } from "antd/lib/pagination";
+import { RouteComponentProps } from "react-router";
 import { Software } from "../../interfaces/Software";
 import { Syntax } from "../../interfaces/Syntax";
-import { Tag as TagInterface } from "../../interfaces/Tag";
-import { nameof } from "../../utils";
-import { Description } from "../Description";
-import { LanguageCloud } from "../languageCloud";
-import { LicenseTag } from "../LicenseTag";
-import { ListInfoButton } from "../ListInfoButton";
-import { MaintainerCloud } from "../maintainerCloud";
-import { SoftwareCloud, SoftwareIcon } from "../softwareCloud";
 import { SyntaxTag } from "../SyntaxTag";
 import { TagCloud } from "../tagCloud";
+import { Tag as TagInterface } from "../../interfaces/Tag";
 import { arraySorter } from "./arraySorter";
+import { nameof } from "../../utils";
 import styles from "./ListsTable.module.css";
-import { PaginationConfig } from "antd/lib/pagination";
-import {
-  SorterResult,
-  TableCurrentDataSource,
-  Key
-} from "antd/lib/table/interface";
 
 interface Props {
   lists: List[];
@@ -88,7 +88,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         title="Info"
         key="Info"
         dataIndex={nameof<List>("id")}
-        width={tablePageSize.isNarrowWindow ? 43 : undefined}
+        width={62}
         className={styles.nogrow}
         fixed={tablePageSize.isNarrowWindow ? undefined : "left"}
         render={(_id: number, list: List) => (
