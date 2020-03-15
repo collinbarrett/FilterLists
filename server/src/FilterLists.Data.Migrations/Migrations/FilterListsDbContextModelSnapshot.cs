@@ -112,7 +112,7 @@ namespace FilterLists.Api.Migrations
                         new
                         {
                             Id = (short)1,
-                            Description = "TEST A filter list that blocks mobile advertisements and trackers on Japanese properties",
+                            Description = "A filter list that blocks mobile advertisements and trackers on Japanese properties",
                             HomeUrl = "https://280blocker.net",
                             LicenseId = (short)1,
                             Name = "280 Blocker",
