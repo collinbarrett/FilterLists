@@ -24,7 +24,7 @@ steps:
       targetType: inline
       script: |
         FORKURI=$(curl -X GET "https://api.github.com/repos/$BUILD_REPOSITORY_NAME/pulls/$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" | jq -r '.head.repo.clone_url')
-        git clone -b "$SYSTEM_PULLREQUEST_SOURCEBRANCH" --depth 1 "$FORKURI" .
+        git clone --single-branch -b "$SYSTEM_PULLREQUEST_SOURCEBRANCH" "$FORKURI" .
 
   - task: Bash@3
     displayName: abort if just migrated
