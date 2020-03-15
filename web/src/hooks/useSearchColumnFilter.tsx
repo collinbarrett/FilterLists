@@ -1,6 +1,7 @@
-import { Button, Icon, Input } from "antd";
-import { FilterDropdownProps } from "antd/lib/table";
+import { SearchOutlined } from "@ant-design/icons";
+import { Button, Input } from "antd";
 import React, { useEffect, useState } from "react";
+import { FilterDropdownProps } from "antd/lib/table/interface";
 
 interface FilterPropsState<T> {
   filterDropdown?:
@@ -45,7 +46,7 @@ export const useSearchColumnFilter = <T extends {}>(dataIndex: string) => {
           <Button
             type="primary"
             onClick={() => handleSearch(confirm)}
-            icon="search"
+            icon={<SearchOutlined />}
             size="small"
             style={{ width: 90, marginRight: 8 }}
           >
@@ -61,10 +62,7 @@ export const useSearchColumnFilter = <T extends {}>(dataIndex: string) => {
         </div>
       ),
       filterIcon: filtered => (
-        <Icon
-          type="search"
-          style={{ color: filtered ? "#1890ff" : undefined }}
-        />
+        <SearchOutlined style={{ color: filtered ? "#1890ff" : undefined }} />
       ),
       onFilter: (value, record) => {
         const searchValue = (record as any)[dataIndex];

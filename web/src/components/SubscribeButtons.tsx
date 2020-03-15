@@ -1,3 +1,4 @@
+import { ImportOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import { ButtonType } from "antd/lib/button";
 import React from "react";
@@ -52,7 +53,7 @@ const SubscribeButton = (props: SubscribeButtonProps) => {
     <Button
       disabled={buttonProps.disabled}
       block
-      icon="import"
+      icon={<ImportOutlined />}
       type={buttonProps.type}
       href={buttonProps.href}
       title={buttonProps.title}

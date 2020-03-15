@@ -1,4 +1,5 @@
-import { Button, Icon } from "antd";
+import { InfoCircleOutlined } from "@ant-design/icons";
+import { Button } from "antd";
 import React from "react";
 import { RouteComponentProps } from "react-router-dom";
 import slugify from "slugify";
@@ -21,7 +22,7 @@ export const ListInfoButton = (props: RouteComponentProps & Props) => {
           : props.history.push(listPath)
       }
     >
-      <Icon type="info-circle" />
+      <InfoCircleOutlined />
     </Button>
   );
 };

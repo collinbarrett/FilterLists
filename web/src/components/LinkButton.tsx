@@ -7,7 +7,7 @@ interface Props {
   text: string;
   title?: string;
   type?: ButtonType;
-  icon?: string;
+  icon?: React.ReactNode;
 }
 
 export const LinkButton = (props: Props) =>

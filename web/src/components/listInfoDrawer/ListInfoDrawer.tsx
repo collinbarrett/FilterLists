@@ -1,26 +1,37 @@
 import "./listInfoDrawer.css";
 
 import { Divider, Drawer } from "antd";
-import ButtonGroup from "antd/lib/button/button-group";
+import {
+  DollarOutlined,
+  FileExclamationOutlined,
+  FormOutlined,
+  GithubOutlined,
+  HomeOutlined,
+  MailOutlined,
+  MessageOutlined,
+  SearchOutlined,
+  TeamOutlined
+} from "@ant-design/icons";
 import React, { useEffect, useState } from "react";
-import { RouteComponentProps } from "react-router-dom";
 
-import { Language } from "../../interfaces/Language";
-import { License } from "../../interfaces/License";
-import { List } from "../../interfaces/List";
-import { Maintainer } from "../../interfaces/Maintainer";
-import { Software } from "../../interfaces/Software";
-import { Syntax } from "../../interfaces/Syntax";
-import { Tag } from "../../interfaces/Tag";
+import ButtonGroup from "antd/lib/button/button-group";
 import { Description } from "../Description";
+import { Language } from "../../interfaces/Language";
 import { LanguageCloud } from "../languageCloud";
+import { License } from "../../interfaces/License";
 import { LicenseTag } from "../LicenseTag";
 import { LinkButton } from "../LinkButton";
+import { List } from "../../interfaces/List";
+import { Maintainer } from "../../interfaces/Maintainer";
 import { Maintainers } from "../maintainers";
 import { PublishedDate } from "../PublishedDate";
+import { RouteComponentProps } from "react-router-dom";
+import { Software } from "../../interfaces/Software";
 import { SoftwareCloud } from "../softwareCloud";
 import { SubscribeButtons } from "../SubscribeButtons";
+import { Syntax } from "../../interfaces/Syntax";
 import { SyntaxTag } from "../SyntaxTag";
+import { Tag } from "../../interfaces/Tag";
 import { TagCloud } from "../tagCloud";
 
 interface Props {
@@ -87,57 +98,57 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
           url={props.list.viewUrl}
           text="View"
           title={`View ${props.list.name} in its raw format`}
-          icon="search"
+          icon={<SearchOutlined />}
         />
         <LinkButton
           url={props.list.homeUrl}
           text="Home"
           title={`View ${props.list.name}'s homepage.`}
-          icon="home"
+          icon={<HomeOutlined />}
         />
         <LinkButton
           url={props.list.policyUrl}
           text="Policy"
           title={`View the types of rules that ${props.list.name} includes.`}
-          icon="file-exclamation"
+          icon={<FileExclamationOutlined />}
         />
         {props.list.emailAddress && (
           <LinkButton
             url={`mailto:${props.list.emailAddress}`}
             text="Email"
             title={`Email ${props.list.name}.`}
-            icon="mail"
+            icon={<MailOutlined />}
           />
         )}
         <LinkButton
           url={props.list.issuesUrl}
           text="GitHub Issues"
           title={`View the GitHub Issues for ${props.list.name}.`}
-          icon="github"
+          icon={<GithubOutlined />}
         />
         <LinkButton
           url={props.list.submissionUrl}
           text="Submit a Rule"
           title={`Submit a new rule to be included in ${props.list.name}.`}
-          icon="form"
+          icon={<FormOutlined />}
         />
         <LinkButton
           url={props.list.forumUrl}
           text="Forum"
           title={`View the forum for ${props.list.name}.`}
-          icon="team"
+          icon={<TeamOutlined />}
         />
         <LinkButton
           url={props.list.chatUrl}
           text="Chat"
           title={`Enter the chat room for ${props.list.name}.`}
-          icon="message"
+          icon={<MessageOutlined />}
         />
         <LinkButton
           url={props.list.donateUrl}
           text="Donate"
           title={`Donate to the maintainer of ${props.list.name}.`}
-          icon="dollar"
+          icon={<DollarOutlined />}
         />
       </ButtonGroup>
     </Drawer>

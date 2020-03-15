@@ -1,6 +1,8 @@
 import "./maintainers.css";
 
-import { Card, Icon } from "antd";
+import { HomeOutlined, MailOutlined, TwitterOutlined } from "@ant-design/icons";
+
+import { Card } from "antd";
 import React from "react";
 
 import { Maintainer } from "../../interfaces/Maintainer";
@@ -33,7 +35,7 @@ const MaintainerComponent = (props: MaintainerComponentProps) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon type="home" key="home" />
+        <HomeOutlined key="home" />
       </a>
     );
   }
@@ -45,7 +47,7 @@ const MaintainerComponent = (props: MaintainerComponentProps) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon type="mail" key="mail" />
+        <MailOutlined key="mail" />
       </a>
     );
   }
@@ -57,7 +59,7 @@ const MaintainerComponent = (props: MaintainerComponentProps) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon type="twitter" key="twitter" />
+        <TwitterOutlined key="twitter" />
       </a>
     );
   }

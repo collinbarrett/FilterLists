@@ -1,4 +1,11 @@
-import { Icon, Layout, Menu, Tag } from "antd";
+import {
+  ApiOutlined,
+  DollarOutlined,
+  GithubOutlined,
+  TeamOutlined,
+  TwitterOutlined
+} from "@ant-design/icons";
+import { Layout, Menu, Tag } from "antd";
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -93,7 +100,7 @@ const Twitter = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Icon type="twitter" /> Twitter
+      <TwitterOutlined /> Twitter
     </a>
   </Tag>
 );
@@ -106,7 +113,7 @@ const Community = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Icon type="team" /> Community
+      <TeamOutlined /> Community
     </a>
   </Tag>
 );
@@ -119,7 +126,7 @@ const GitHub = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Icon type="github" /> GitHub
+      <GithubOutlined /> GitHub
     </a>
   </Tag>
 );
@@ -132,7 +139,7 @@ const Api = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Icon type="api" /> API
+      <ApiOutlined /> API
     </a>
   </Tag>
 );
@@ -145,7 +152,7 @@ const Donate = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Icon type="dollar" /> Donate
+      <DollarOutlined /> Donate
     </a>
   </Tag>
 );
