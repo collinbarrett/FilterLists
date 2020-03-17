@@ -4010,19 +4010,6 @@
     "viewUrl": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser_UBO.txt"
   },
   {
-    "id": 364,
-    "description": "Advertisements and tracking",
-    "descriptionSourceUrl": "https://www.squidblacklist.org/downloads.html",
-    "emailAddress": "webmaster@squidblacklist.org",
-    "homeUrl": "https://www.squidblacklist.org/",
-    "licenseId": 15,
-    "name": "Squid Blacklist Ad Servers and Trackers",
-    "submissionUrl": "https://www.squidblacklist.org/php/url_submission_form.php",
-    "syntaxId": 2,
-    "updatedDate": "2019-04-14T17:23:13",
-    "viewUrl": "https://www.squidblacklist.org/downloads/dg-ads.acl"
-  },
-  {
     "id": 365,
     "description": "Official Facebook domains",
     "descriptionSourceUrl": "https://www.squidblacklist.org/downloads.html",
