@@ -4202,19 +4202,6 @@
     "viewUrl": "https://rickrolldb.com/ricklist.txt"
   },
   {
-    "id": 382,
-    "description": "Blocks ads/popups/fake thumbs/fake redirections/spam bookmark buttons and more from porn websites",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/WowDude/PornList/master/PornList.txt",
-    "homeUrl": "https://github.com/WowDude/PornList",
-    "issuesUrl": "https://github.com/WowDude/PornList/issues",
-    "licenseId": 16,
-    "name": "PornList",
-    "publishedDate": "2018-03-17T00:00:00",
-    "syntaxId": 4,
-    "updatedDate": "2018-10-24T12:39:14",
-    "viewUrl": "https://raw.githubusercontent.com/WowDude/PornList/master/PornList.txt"
-  },
-  {
     "id": 383,
     "chatUrl": "https://discordapp.com/invite/013MqTM1p1qm52VcZ",
     "description": "Removes uncovered AD, AD frames, and adblock warnings from specific popular websites",
@@ -4791,19 +4778,6 @@
     "name": "Bill Stearns' Hosts",
     "syntaxId": 2,
     "viewUrl": "https://v.firebog.net/hosts/BillStearns.txt"
-  },
-  {
-    "id": 443,
-    "description": "To block out ads, mostly tracking services, to prevent data from being collected.",
-    "descriptionSourceUrl": "https://www.kowabit.de/blcklst/",
-    "donateUrl": "https://www.kowabit.de/willkommen/finanzierung-von-kowabit/",
-    "homeUrl": "https://www.kowabit.de/blcklst/",
-    "licenseId": 20,
-    "name": "Kowabit - bl*cklist of death",
-    "syntaxId": 2,
-    "updatedDate": "2019-01-27T19:45:10",
-    "viewUrl": "https://blocklist.kowabit.de/list.txt",
-    "viewUrlMirror1": "https://v.firebog.net/hosts/Kowabit.txt"
   },
   {
     "id": 444,
