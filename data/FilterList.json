@@ -14550,18 +14550,6 @@
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAmazonListForTwitch.txt"
   },
   {
-    "id": 1462,
-    "description": "Blocks web workers (including mining scripts) everywhere by default and allows them only when needed.",
-    "homeUrl": "https://github.com/adranger/web-workers-whitelist/",
-    "issuesUrl": "https://github.com/adranger/web-workers-whitelist/issues",
-    "licenseId": 28,
-    "name": "Web Workers Whitelist",
-    "publishedDate": "2018-12-06T14:45:35",
-    "syntaxId": 3,
-    "updatedDate": "2019-03-27T01:16:19",
-    "viewUrl": "https://raw.githubusercontent.com/adranger/web-workers-whitelist/master/web-workers-whitelist.txt"
-  },
-  {
     "id": 1463,
     "description": "Personal hosts list for Samsung Knox-based ad blockers.",
     "homeUrl": "https://github.com/CitizenXVIL/Hosts",
