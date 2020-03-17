@@ -18692,14 +18692,6 @@
     "viewUrl": "https://iplists.firehol.org/files/hphosts_pha.ipset"
   },
   {
-    "id": 1826,
-    "description": "Sites engaged in browser hijacking or other forms of hijacking (OS services, bandwidth, DNS, etc.).",
-    "licenseId": 5,
-    "name": "hpHosts HJK (IPs)",
-    "syntaxId": 9,
-    "viewUrl": "https://iplists.firehol.org/files/hphosts_HJK.ipset"
-  },
-  {
     "id": 1827,
     "description": "Sites engaged in the selling or distribution of bogus or fraudulent applications and/or provision of fraudulent services.",
     "licenseId": 5,
