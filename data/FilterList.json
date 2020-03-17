@@ -6490,18 +6490,6 @@
     "viewUrl": "http://www.quero.at/download/adblock-hosts.zip"
   },
   {
-    "id": 688,
-    "emailAddress": "rbrito@ime.usp.br",
-    "homeUrl": "https://github.com/rbrito/easylist-ptbr",
-    "issuesUrl": "https://github.com/rbrito/easylist-ptbr/issues",
-    "licenseId": 16,
-    "name": "EasyList PTBR",
-    "publishedDate": "2011-08-12T01:47:30",
-    "syntaxId": 3,
-    "updatedDate": "2015-11-03T20:57:29",
-    "viewUrl": "https://raw.githubusercontent.com/rbrito/easylist-ptbr/master/adblock-rules.txt"
-  },
-  {
     "id": 689,
     "homeUrl": "https://github.com/xxcriticxx/.pl-host-file",
     "issuesUrl": "https://github.com/xxcriticxx/.pl-host-file/issues",
