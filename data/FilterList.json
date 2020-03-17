@@ -18668,16 +18668,6 @@
     "viewUrl": "https://www.github.developerdan.com/hosts/lists/facebook-extended.txt"
   },
   {
-    "id": 1822,
-    "description": "The following list is individual IP Addresses that have attempted to attack our servers. These IP addresses are currently recommended as a DENY, REJECT or BLOCK on your firewalls.",
-    "donateUrl": "https://www.cruzit.com/hth.php",
-    "homeUrl": "https://www.cruzit.com/wbl.php",
-    "licenseId": 5,
-    "name": "Cruzit Server Blocklist",
-    "syntaxId": 9,
-    "viewUrl": "https://www.cruzit.com/xxwbl2txt.php"
-  },
-  {
     "id": 1823,
     "licenseId": 5,
     "name": "Unsubscore Blacklist",
