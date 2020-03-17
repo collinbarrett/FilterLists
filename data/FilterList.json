@@ -4871,14 +4871,6 @@
     "viewUrl": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/extra.txt"
   },
   {
-    "id": 463,
-    "licenseId": 2,
-    "name": "Prigent Malware",
-    "syntaxId": 2,
-    "updatedDate": "2019-04-15T09:58:10",
-    "viewUrl": "https://v.firebog.net/hosts/Prigent-Malware.txt"
-  },
-  {
     "id": 465,
     "licenseId": 2,
     "name": "Shalla Malware",
