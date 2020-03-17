@@ -18960,15 +18960,6 @@
     "viewUrl": "https://raw.githubusercontent.com/masterinspire/Master-AdRules/master/Master-AdRules.txt"
   },
   {
-    "id": 1855,
-    "description": "AdBlock filter",
-    "homeUrl": "https://github.com/likelion-adblock/filter/",
-    "licenseId": 5,
-    "name": "LionBlock",
-    "syntaxId": 6,
-    "viewUrl": "https://raw.githubusercontent.com/likelion-adblock/filter/master/filter.txt"
-  },
-  {
     "id": 1856,
     "description": "This is an Adblock Plus filter list that removes all comment sections from homepages.",
     "homeUrl": "https://github.com/lutoma/nocomments",
