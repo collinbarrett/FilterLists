@@ -4010,19 +4010,6 @@
     "viewUrl": "https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/list_browser_UBO.txt"
   },
   {
-    "id": 366,
-    "description": "Malicious, hijacked, ransomware, dangerous websites",
-    "descriptionSourceUrl": "https://www.squidblacklist.org/downloads.html",
-    "emailAddress": "webmaster@squidblacklist.org",
-    "homeUrl": "https://www.squidblacklist.org/",
-    "licenseId": 15,
-    "name": "Squid Blacklist Malicious",
-    "submissionUrl": "https://www.squidblacklist.org/php/url_submission_form.php",
-    "syntaxId": 2,
-    "updatedDate": "2019-04-14T17:55:12",
-    "viewUrl": "https://www.squidblacklist.org/downloads/dg-malicious.acl"
-  },
-  {
     "id": 367,
     "description": "uMatrix ruleset unbreaks all Alexa 100 and more at domain level",
     "descriptionSourceUrl": "https://github.com/uMatrix-Rules/uMatrix-Rules-Domain",
