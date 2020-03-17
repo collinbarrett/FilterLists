@@ -19224,16 +19224,6 @@
     "viewUrl": "https://raw.githubusercontent.com/blocktastic/pihole/master/blocktastic.txt"
   },
   {
-    "id": 1884,
-    "description": "Malware filter list by Broer ICT",
-    "homeUrl": "https://github.com/broerict/blacklists",
-    "issuesUrl": "https://github.com/broerict/blacklists/issues",
-    "licenseId": 4,
-    "name": "Broer ICT Blacklist Malware",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/broerict/blacklists/master/malware"
-  },
-  {
     "id": 1885,
     "description": "Phishing filter list by Broer ICT",
     "homeUrl": "https://github.com/broerict/blacklists",
