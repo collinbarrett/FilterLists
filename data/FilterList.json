@@ -18583,14 +18583,6 @@
     "viewUrl": "https://www.binarydefense.com/banlist.txt"
   },
   {
-    "id": 1812,
-    "homeUrl": "https://www.nothink.org/",
-    "licenseId": 5,
-    "name": "NoThink SSH Blacklist",
-    "syntaxId": 9,
-    "viewUrl": "https://www.nothink.org/blacklist/blacklist_ssh_all.txt"
-  },
-  {
     "id": 1813,
     "description": "CINS Army is a way for our company to give back to the community by sharing valuable threat intelligence harvested from our CINS system. The CINS Army list is a subset of the CINS Active Threat Intelligence ruleset, and consists of IP addresses that meet one of two basic criteria: 1) The IP's recent Rogue Packet score factor is very poor, or 2) The IP has tripped a designated number of 'trusted' alerts across a given number of our Sentinels deployed around the world.",
     "homeUrl": "https://cinsscore.com/",
