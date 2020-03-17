@@ -12123,19 +12123,6 @@
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/uBlockFiltersPlus.txt"
   },
   {
-    "id": 1231,
-    "description": "Block ads in apps on iOS and Android",
-    "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
-    "homeUrl": "https://github.com/Akamaru/Pi-Hole-Lists",
-    "issuesUrl": "https://github.com/Akamaru/Pi-Hole-Lists/issues",
-    "licenseId": 5,
-    "name": "Pi-Hole-Lists - App ads",
-    "publishedDate": "2017-07-31T18:43:55",
-    "syntaxId": 2,
-    "updatedDate": "2019-03-06T20:04:52",
-    "viewUrl": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/appads.txt"
-  },
-  {
     "id": 1233,
     "description": "To block Adobe Updates (Photoshop & co.)",
     "descriptionSourceUrl": "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
