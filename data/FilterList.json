@@ -7020,19 +7020,6 @@
     "viewUrl": "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/se_filters.txt"
   },
   {
-    "id": 745,
-    "description": "Korean Media Comment, SNS Share Count, Likes Count, News Reaction Filter",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/KMCF/Korean-Media-Comment/master/filter.txt",
-    "homeUrl": "https://github.com/KMCF/Korean-Media-Comment",
-    "issuesUrl": "https://github.com/KMCF/Korean-Media-Comment/issues",
-    "licenseId": 24,
-    "name": "Korean Media Comment",
-    "publishedDate": "2018-05-23T04:50:04",
-    "syntaxId": 3,
-    "updatedDate": "2018-05-23T04:50:04",
-    "viewUrl": "https://raw.githubusercontent.com/KMCF/Korean-Media-Comment/master/filter.txt"
-  },
-  {
     "id": 746,
     "description": "By using this extension, you can block ads that you think are annoying while browsing on websites that you like to explore. You can also save internet quota usage or speed up website loading, so you can save time.",
     "descriptionSourceUrl": "https://github.com/Hakame-kun/uBlock-Filters-Indonesia/tree/master/uBlock%20Indo#ublock",
