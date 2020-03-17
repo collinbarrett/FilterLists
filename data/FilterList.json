@@ -19224,16 +19224,6 @@
     "viewUrl": "https://raw.githubusercontent.com/blocktastic/pihole/master/blocktastic.txt"
   },
   {
-    "id": 1885,
-    "description": "Phishing filter list by Broer ICT",
-    "homeUrl": "https://github.com/broerict/blacklists",
-    "issuesUrl": "https://github.com/broerict/blacklists/issues",
-    "licenseId": 4,
-    "name": "Broer ICT Blacklist Phishing",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/broerict/blacklists/master/phishing"
-  },
-  {
     "id": 1886,
     "description": "This is a Pi-hole list to block unwanted domains that serve ads on Macedonian websites.",
     "homeUrl": "https://github.com/cchevy/macedonian-pi-hole-blocklist",
