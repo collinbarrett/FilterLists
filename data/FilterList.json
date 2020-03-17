@@ -14646,17 +14646,6 @@
     "viewUrl": "https://getadhell.com/standard-package.txt"
   },
   {
-    "id": 1472,
-    "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
-    "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
-    "licenseId": 2,
-    "name": "Blah DNS Content farm host",
-    "publishedDate": "2017-08-15T08:49:00",
-    "syntaxId": 2,
-    "updatedDate": "2019-02-17T10:31:19",
-    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/contentfarms.host"
-  },
-  {
     "id": 1473,
     "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
