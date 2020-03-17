@@ -19400,16 +19400,6 @@
     "viewUrl": "https://raw.githubusercontent.com/Phentora/AdguardPersonalList/master/blocklist.txt"
   },
   {
-    "id": 1905,
-    "description": "Hi, this is a list of ad, tracking and other shit sources on the Internet. The original intention was to use this list with Pi-hole in LXC container on the Turris Omnia router for Czech users.",
-    "homeUrl": "https://github.com/qxstyles/turris-hole-czech-block-list",
-    "issuesUrl": "https://github.com/qxstyles/turris-hole-czech-block-list/issues",
-    "licenseId": 5,
-    "name": "Turris Hole Block List",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/qxstyles/turris-hole-czech-block-list/master/turris-hole-czech-block-list"
-  },
-  {
     "id": 1906,
     "description": "A public hosts file for blocking known ads, trackers, and malware domains across the internet.",
     "homeUrl": "https://github.com/Rhys-H/hosts-list",
