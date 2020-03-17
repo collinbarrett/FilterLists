@@ -17069,19 +17069,6 @@
     "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/products.txt"
   },
   {
-    "id": 1695,
-    "description": "Completely block Google proxies.",
-    "descriptionSourceUrl": "https://github.com/nickspaargaren/no-google",
-    "emailAddress": "poorpocketsmcnewhold@pm.me",
-    "homeUrl": "https://github.com/nickspaargaren/no-google",
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
-    "licenseId": 11,
-    "name": "No Google | Google proxies (Domains)",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/proxiessparsed",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/proxiesparsed"
-  },
-  {
     "id": 1696,
     "description": "Completely block Google products.",
     "descriptionSourceUrl": "https://github.com/nickspaargaren/no-google",
