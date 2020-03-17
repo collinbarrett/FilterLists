@@ -10352,17 +10352,6 @@
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Rwanda.txt"
   },
   {
-    "id": 1046,
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Pi-hole Parser - Réunion Island",
-    "publishedDate": "2017-08-25T02:08:54",
-    "syntaxId": 2,
-    "updatedDate": "2019-03-12T00:41:09",
-    "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/RéunionIsland.txt"
-  },
-  {
     "id": 1047,
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
