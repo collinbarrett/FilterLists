@@ -1787,6 +1787,17 @@ namespace FilterLists.Api.Migrations
                         },
                         new
                         {
+                            Id = (short)148,
+                            Description = "I make supplemental filters in Adblock Plus to block garbage on webpages not blocked by other lists. I use many regular expressions, a few domain filters, but no CSS filters.",
+                            DescriptionSourceUrl = "https://mrsatterly.com/abp_filters.html",
+                            HomeUrl = "https://mrsatterly.com/abp_filters.html",
+                            LicenseId = (short)14,
+                            Name = "Satterly's Adblock Plus Filters",
+                            SyntaxId = (short)3,
+                            ViewUrl = "https://mrsatterly.com/abp_filters.txt"
+                        },
+                        new
+                        {
                             Id = (short)150,
                             Description = "Blocks most popular internet statistics counters on sites serving Russia.",
                             ForumUrl = "https://forums.lanik.us/viewforum.php?f=102",
@@ -4430,6 +4441,48 @@ namespace FilterLists.Api.Migrations
                         },
                         new
                         {
+                            Id = (short)364,
+                            Description = "Advertisements and tracking",
+                            DescriptionSourceUrl = "https://www.squidblacklist.org/downloads.html",
+                            EmailAddress = "webmaster@squidblacklist.org",
+                            HomeUrl = "https://www.squidblacklist.org/",
+                            LicenseId = (short)15,
+                            Name = "Squid Blacklist Ad Servers and Trackers",
+                            SubmissionUrl = "https://www.squidblacklist.org/php/url_submission_form.php",
+                            SyntaxId = (short)2,
+                            UpdatedDate = new DateTime(2019, 4, 14, 17, 23, 13, 0, DateTimeKind.Unspecified),
+                            ViewUrl = "https://www.squidblacklist.org/downloads/dg-ads.acl"
+                        },
+                        new
+                        {
+                            Id = (short)365,
+                            Description = "Official Facebook domains",
+                            DescriptionSourceUrl = "https://www.squidblacklist.org/downloads.html",
+                            EmailAddress = "webmaster@squidblacklist.org",
+                            HomeUrl = "https://www.squidblacklist.org/",
+                            LicenseId = (short)15,
+                            Name = "Squid Blacklist Facebook",
+                            SubmissionUrl = "https://www.squidblacklist.org/php/url_submission_form.php",
+                            SyntaxId = (short)2,
+                            UpdatedDate = new DateTime(2019, 4, 14, 17, 39, 12, 0, DateTimeKind.Unspecified),
+                            ViewUrl = "https://www.squidblacklist.org/downloads/dg-facebook.acl"
+                        },
+                        new
+                        {
+                            Id = (short)366,
+                            Description = "Malicious, hijacked, ransomware, dangerous websites",
+                            DescriptionSourceUrl = "https://www.squidblacklist.org/downloads.html",
+                            EmailAddress = "webmaster@squidblacklist.org",
+                            HomeUrl = "https://www.squidblacklist.org/",
+                            LicenseId = (short)15,
+                            Name = "Squid Blacklist Malicious",
+                            SubmissionUrl = "https://www.squidblacklist.org/php/url_submission_form.php",
+                            SyntaxId = (short)2,
+                            UpdatedDate = new DateTime(2019, 4, 14, 17, 55, 12, 0, DateTimeKind.Unspecified),
+                            ViewUrl = "https://www.squidblacklist.org/downloads/dg-malicious.acl"
+                        },
+                        new
+                        {
                             Id = (short)367,
                             Description = "uMatrix ruleset unbreaks all Alexa 100 and more at domain level",
                             DescriptionSourceUrl = "https://github.com/uMatrix-Rules/uMatrix-Rules-Domain",
@@ -4551,7 +4604,7 @@ namespace FilterLists.Api.Migrations
                             PublishedDate = new DateTime(2018, 2, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SyntaxId = (short)4,
                             UpdatedDate = new DateTime(2019, 4, 14, 19, 2, 57, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/hl2guide/All-in-One-Customized-Adblock-List/master/aio.txt"
+                            ViewUrl = "https://raw.githubusercontent.com/hl2guide/All-in-One-Customized-Adblock-List/master/deanoman-adblocklist.txt"
                         },
                         new
                         {
@@ -4634,6 +4687,20 @@ namespace FilterLists.Api.Migrations
                             SyntaxId = (short)3,
                             UpdatedDate = new DateTime(2019, 3, 25, 11, 34, 9, 0, DateTimeKind.Unspecified),
                             ViewUrl = "https://rickrolldb.com/ricklist.txt"
+                        },
+                        new
+                        {
+                            Id = (short)382,
+                            Description = "Blocks ads/popups/fake thumbs/fake redirections/spam bookmark buttons and more from porn websites",
+                            DescriptionSourceUrl = "https://raw.githubusercontent.com/WowDude/PornList/master/PornList.txt",
+                            HomeUrl = "https://github.com/WowDude/PornList",
+                            IssuesUrl = "https://github.com/WowDude/PornList/issues",
+                            LicenseId = (short)16,
+                            Name = "PornList",
+                            PublishedDate = new DateTime(2018, 3, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            SyntaxId = (short)4,
+                            UpdatedDate = new DateTime(2018, 10, 24, 12, 39, 14, 0, DateTimeKind.Unspecified),
+                            ViewUrl = "https://raw.githubusercontent.com/WowDude/PornList/master/PornList.txt"
                         },
                         new
                         {
@@ -5262,6 +5329,20 @@ namespace FilterLists.Api.Migrations
                         },
                         new
                         {
+                            Id = (short)443,
+                            Description = "To block out ads, mostly tracking services, to prevent data from being collected.",
+                            DescriptionSourceUrl = "https://www.kowabit.de/blcklst/",
+                            DonateUrl = "https://www.kowabit.de/willkommen/finanzierung-von-kowabit/",
+                            HomeUrl = "https://www.kowabit.de/blcklst/",
+                            LicenseId = (short)20,
+                            Name = "Kowabit - bl*cklist of death",
+                            SyntaxId = (short)2,
+                            UpdatedDate = new DateTime(2019, 1, 27, 19, 45, 10, 0, DateTimeKind.Unspecified),
+                            ViewUrl = "https://blocklist.kowabit.de/list.txt",
+                            ViewUrlMirror1 = "https://v.firebog.net/hosts/Kowabit.txt"
+                        },
+                        new
+                        {
                             Id = (short)444,
                             DonateUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HU4EDJZP2S9QA",
                             HomeUrl = "https://firebog.net/",
@@ -5358,6 +5439,15 @@ namespace FilterLists.Api.Migrations
                             SyntaxId = (short)1,
                             UpdatedDate = new DateTime(2019, 4, 2, 20, 52, 40, 0, DateTimeKind.Unspecified),
                             ViewUrl = "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/extra.txt"
+                        },
+                        new
+                        {
+                            Id = (short)463,
+                            LicenseId = (short)2,
+                            Name = "Prigent Malware",
+                            SyntaxId = (short)2,
+                            UpdatedDate = new DateTime(2019, 4, 15, 9, 58, 10, 0, DateTimeKind.Unspecified),
+                            ViewUrl = "https://v.firebog.net/hosts/Prigent-Malware.txt"
                         },
                         new
                         {
@@ -7107,6 +7197,19 @@ namespace FilterLists.Api.Migrations
                         },
                         new
                         {
+                            Id = (short)688,
+                            EmailAddress = "rbrito@ime.usp.br",
+                            HomeUrl = "https://github.com/rbrito/easylist-ptbr",
+                            IssuesUrl = "https://github.com/rbrito/easylist-ptbr/issues",
+                            LicenseId = (short)16,
+                            Name = "EasyList PTBR",
+                            PublishedDate = new DateTime(2011, 8, 12, 1, 47, 30, 0, DateTimeKind.Unspecified),
+                            SyntaxId = (short)3,
+                            UpdatedDate = new DateTime(2015, 11, 3, 20, 57, 29, 0, DateTimeKind.Unspecified),
+                            ViewUrl = "https://raw.githubusercontent.com/rbrito/easylist-ptbr/master/adblock-rules.txt"
+                        },
+                        new
+                        {
                             Id = (short)689,
                             HomeUrl = "https://github.com/xxcriticxx/.pl-host-file",
                             IssuesUrl = "https://github.com/xxcriticxx/.pl-host-file/issues",
@@ -7678,6 +7781,20 @@ namespace FilterLists.Api.Migrations
                             SyntaxId = (short)4,
                             UpdatedDate = new DateTime(2019, 3, 11, 14, 38, 9, 0, DateTimeKind.Unspecified),
                             ViewUrl = "https://raw.githubusercontent.com/Hunter-Github/the-best-stack-overflow/master/se_filters.txt"
+                        },
+                        new
+                        {
+                            Id = (short)745,
+                            Description = "Korean Media Comment, SNS Share Count, Likes Count, News Reaction Filter",
+                            DescriptionSourceUrl = "https://raw.githubusercontent.com/KMCF/Korean-Media-Comment/master/filter.txt",
+                            HomeUrl = "https://github.com/KMCF/Korean-Media-Comment",
+                            IssuesUrl = "https://github.com/KMCF/Korean-Media-Comment/issues",
+                            LicenseId = (short)24,
+                            Name = "Korean Media Comment",
+                            PublishedDate = new DateTime(2018, 5, 23, 4, 50, 4, 0, DateTimeKind.Unspecified),
+                            SyntaxId = (short)3,
+                            UpdatedDate = new DateTime(2018, 5, 23, 4, 50, 4, 0, DateTimeKind.Unspecified),
+                            ViewUrl = "https://raw.githubusercontent.com/KMCF/Korean-Media-Comment/master/filter.txt"
                         },
                         new
                         {
@@ -9083,13 +9200,15 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)861,
-                            Description = "A black list of malicious domains and trackers.",
+                            Description = "Yet another anti-bullshit filter list.",
                             DescriptionSourceUrl = "https://github.com/bogachenko/filterlist",
                             EmailAddress = "bogachenkove@gmail.com",
                             HomeUrl = "https://github.com/bogachenko/filterlist",
-                            LicenseId = (short)2,
+                            LicenseId = (short)11,
                             Name = "bogachenko's Filter List",
+                            PublishedDate = new DateTime(2018, 10, 1, 13, 53, 10, 0, DateTimeKind.Unspecified),
                             SyntaxId = (short)4,
+                            UpdatedDate = new DateTime(2019, 4, 14, 8, 53, 51, 0, DateTimeKind.Unspecified),
                             ViewUrl = "https://raw.githubusercontent.com/bogachenko/filterlist/master/filterlist.txt"
                         },
                         new
@@ -11306,6 +11425,18 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            Id = (short)1046,
+                            HomeUrl = "https://github.com/deathbybandaid/piholeparser",
+                            IssuesUrl = "https://github.com/deathbybandaid/piholeparser/issues",
+                            LicenseId = (short)14,
+                            Name = "Pi-hole Parser - Réunion Island",
+                            PublishedDate = new DateTime(2017, 8, 25, 2, 8, 54, 0, DateTimeKind.Unspecified),
+                            SyntaxId = (short)2,
+                            UpdatedDate = new DateTime(2019, 3, 12, 0, 41, 9, 0, DateTimeKind.Unspecified),
+                            ViewUrl = "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/RéunionIsland.txt"
+                        },
+                        new
+                        {
                             Id = (short)1047,
                             HomeUrl = "https://github.com/deathbybandaid/piholeparser",
                             IssuesUrl = "https://github.com/deathbybandaid/piholeparser/issues",
@@ -13238,6 +13369,20 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            Id = (short)1231,
+                            Description = "Block ads in apps on iOS and Android",
+                            DescriptionSourceUrl = "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
+                            HomeUrl = "https://github.com/Akamaru/Pi-Hole-Lists",
+                            IssuesUrl = "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+                            LicenseId = (short)5,
+                            Name = "Pi-Hole-Lists - App ads",
+                            PublishedDate = new DateTime(2017, 7, 31, 18, 43, 55, 0, DateTimeKind.Unspecified),
+                            SyntaxId = (short)2,
+                            UpdatedDate = new DateTime(2019, 3, 6, 20, 4, 52, 0, DateTimeKind.Unspecified),
+                            ViewUrl = "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/appads.txt"
+                        },
+                        new
+                        {
                             Id = (short)1233,
                             Description = "To block Adobe Updates (Photoshop & co.)",
                             DescriptionSourceUrl = "https://github.com/Akamaru/Pi-Hole-Lists/blob/master/README.md",
@@ -13615,7 +13760,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             HomeUrl = "https://github.com/DandelionSprout/adfilt",
                             IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
                             LicenseId = (short)35,
-                            Name = "Anti-'Unnecessary notification counters' List",
+                            Name = "Anti-'Fake notification counters' List",
                             PublishedDate = new DateTime(2018, 1, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             SyntaxId = (short)3,
                             UpdatedDate = new DateTime(2019, 3, 3, 3, 39, 10, 0, DateTimeKind.Unspecified),
@@ -15860,6 +16005,19 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            Id = (short)1462,
+                            Description = "Blocks web workers (including mining scripts) everywhere by default and allows them only when needed.",
+                            HomeUrl = "https://github.com/adranger/web-workers-whitelist/",
+                            IssuesUrl = "https://github.com/adranger/web-workers-whitelist/issues",
+                            LicenseId = (short)28,
+                            Name = "Web Workers Whitelist",
+                            PublishedDate = new DateTime(2018, 12, 6, 14, 45, 35, 0, DateTimeKind.Unspecified),
+                            SyntaxId = (short)3,
+                            UpdatedDate = new DateTime(2019, 3, 27, 1, 16, 19, 0, DateTimeKind.Unspecified),
+                            ViewUrl = "https://raw.githubusercontent.com/adranger/web-workers-whitelist/master/web-workers-whitelist.txt"
+                        },
+                        new
+                        {
                             Id = (short)1463,
                             Description = "Personal hosts list for Samsung Knox-based ad blockers.",
                             HomeUrl = "https://github.com/CitizenXVIL/Hosts",
@@ -15962,6 +16120,18 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "AdHell Standard",
                             SyntaxId = (short)1,
                             ViewUrl = "https://getadhell.com/standard-package.txt"
+                        },
+                        new
+                        {
+                            Id = (short)1472,
+                            HomeUrl = "https://github.com/ookangzheng/blahdns/tree/master/hosts",
+                            IssuesUrl = "https://github.com/ookangzheng/blahdns/issues",
+                            LicenseId = (short)2,
+                            Name = "Blah DNS Content farm host",
+                            PublishedDate = new DateTime(2017, 8, 15, 8, 49, 0, 0, DateTimeKind.Unspecified),
+                            SyntaxId = (short)2,
+                            UpdatedDate = new DateTime(2019, 2, 17, 10, 31, 19, 0, DateTimeKind.Unspecified),
+                            ViewUrl = "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/contentfarms.host"
                         },
                         new
                         {
@@ -18091,6 +18261,28 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            Id = (short)1654,
+                            HomeUrl = "https://github.com/TechGeeksIO/umatrix-recipes",
+                            IssuesUrl = "https://github.com/TechGeeksIO/umatrix-recipes/issues",
+                            LicenseId = (short)34,
+                            Name = "TechGeeks.io uMatrix Recipes - starting",
+                            SyntaxId = (short)7,
+                            UpdatedDate = new DateTime(2019, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ViewUrl = "https://raw.githubusercontent.com/TechGeeksIO/umatrix-recipes/master/main-ruleset.txt"
+                        },
+                        new
+                        {
+                            Id = (short)1655,
+                            HomeUrl = "https://github.com/TechGeeksIO/umatrix-recipes",
+                            IssuesUrl = "https://github.com/TechGeeksIO/umatrix-recipes/issues",
+                            LicenseId = (short)34,
+                            Name = "TechGeeks.io uMatrix Recipes - additional rules",
+                            SyntaxId = (short)7,
+                            UpdatedDate = new DateTime(2019, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ViewUrl = "https://raw.githubusercontent.com/TechGeeksIO/umatrix-recipes/master/catalog.txt"
+                        },
+                        new
+                        {
                             Id = (short)1656,
                             HomeUrl = "https://github.com/invasy/umatrix-ruleset",
                             IssuesUrl = "https://github.com/invasy/umatrix-ruleset/issues",
@@ -18590,6 +18782,20 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             SyntaxId = (short)1,
                             ViewUrl = "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/products.txt",
                             ViewUrlMirror2 = "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/products.txt"
+                        },
+                        new
+                        {
+                            Id = (short)1695,
+                            Description = "Completely block Google proxies.",
+                            DescriptionSourceUrl = "https://github.com/nickspaargaren/no-google",
+                            EmailAddress = "poorpocketsmcnewhold@pm.me",
+                            HomeUrl = "https://github.com/nickspaargaren/no-google",
+                            IssuesUrl = "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+                            LicenseId = (short)11,
+                            Name = "No Google | Google proxies (Domains)",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/proxiessparsed",
+                            ViewUrlMirror2 = "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/proxiesparsed"
                         },
                         new
                         {
@@ -20222,6 +20428,15 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            Id = (short)1812,
+                            HomeUrl = "https://www.nothink.org/",
+                            LicenseId = (short)5,
+                            Name = "NoThink SSH Blacklist",
+                            SyntaxId = (short)9,
+                            ViewUrl = "https://www.nothink.org/blacklist/blacklist_ssh_all.txt"
+                        },
+                        new
+                        {
                             Id = (short)1813,
                             Description = "CINS Army is a way for our company to give back to the community by sharing valuable threat intelligence harvested from our CINS system. The CINS Army list is a subset of the CINS Active Threat Intelligence ruleset, and consists of IP addresses that meet one of two basic criteria: 1) The IP's recent Rogue Packet score factor is very poor, or 2) The IP has tripped a designated number of 'trusted' alerts across a given number of our Sentinels deployed around the world.",
                             HomeUrl = "https://cinsscore.com/",
@@ -20349,6 +20564,15 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "hpHosts PHA (IPs)",
                             SyntaxId = (short)9,
                             ViewUrl = "https://iplists.firehol.org/files/hphosts_pha.ipset"
+                        },
+                        new
+                        {
+                            Id = (short)1826,
+                            Description = "Sites engaged in browser hijacking or other forms of hijacking (OS services, bandwidth, DNS, etc.).",
+                            LicenseId = (short)5,
+                            Name = "hpHosts HJK (IPs)",
+                            SyntaxId = (short)9,
+                            ViewUrl = "https://iplists.firehol.org/files/hphosts_HJK.ipset"
                         },
                         new
                         {
@@ -20646,6 +20870,16 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            Id = (short)1855,
+                            Description = "AdBlock filter",
+                            HomeUrl = "https://github.com/likelion-adblock/filter/",
+                            LicenseId = (short)5,
+                            Name = "LionBlock",
+                            SyntaxId = (short)6,
+                            ViewUrl = "https://raw.githubusercontent.com/likelion-adblock/filter/master/filter.txt"
+                        },
+                        new
+                        {
                             Id = (short)1856,
                             Description = "This is an Adblock Plus filter list that removes all comment sections from homepages.",
                             HomeUrl = "https://github.com/lutoma/nocomments",
@@ -20936,6 +21170,39 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            Id = (short)1883,
+                            Description = "Ad filter list by Broer ICT",
+                            HomeUrl = "https://github.com/broerict/blacklists",
+                            IssuesUrl = "https://github.com/broerict/blacklists/issues",
+                            LicenseId = (short)4,
+                            Name = "Broer ICT Blacklist Ads",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/broerict/blacklists/master/ads"
+                        },
+                        new
+                        {
+                            Id = (short)1884,
+                            Description = "Malware filter list by Broer ICT",
+                            HomeUrl = "https://github.com/broerict/blacklists",
+                            IssuesUrl = "https://github.com/broerict/blacklists/issues",
+                            LicenseId = (short)4,
+                            Name = "Broer ICT Blacklist Malware",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/broerict/blacklists/master/malware"
+                        },
+                        new
+                        {
+                            Id = (short)1885,
+                            Description = "Phishing filter list by Broer ICT",
+                            HomeUrl = "https://github.com/broerict/blacklists",
+                            IssuesUrl = "https://github.com/broerict/blacklists/issues",
+                            LicenseId = (short)4,
+                            Name = "Broer ICT Blacklist Phishing",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/broerict/blacklists/master/phishing"
+                        },
+                        new
+                        {
                             Id = (short)1886,
                             Description = "This is a Pi-hole list to block unwanted domains that serve ads on Macedonian websites.",
                             HomeUrl = "https://github.com/cchevy/macedonian-pi-hole-blocklist",
@@ -21127,6 +21394,17 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "Adguard Personal List",
                             SyntaxId = (short)2,
                             ViewUrl = "https://raw.githubusercontent.com/Phentora/AdguardPersonalList/master/blocklist.txt"
+                        },
+                        new
+                        {
+                            Id = (short)1905,
+                            Description = "Hi, this is a list of ad, tracking and other shit sources on the Internet. The original intention was to use this list with Pi-hole in LXC container on the Turris Omnia router for Czech users.",
+                            HomeUrl = "https://github.com/qxstyles/turris-hole-czech-block-list",
+                            IssuesUrl = "https://github.com/qxstyles/turris-hole-czech-block-list/issues",
+                            LicenseId = (short)5,
+                            Name = "Turris Hole Block List",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/qxstyles/turris-hole-czech-block-list/master/turris-hole-czech-block-list"
                         },
                         new
                         {
@@ -22196,6 +22474,17 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "Cybo's Anti Location Tracking",
                             SyntaxId = (short)1,
                             ViewUrl = "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti%20Location%20Tracking"
+                        },
+                        new
+                        {
+                            Id = (short)1999,
+                            Description = "This is used to block all .g00. and .g01. crap that domains like msn.com and sportingnews.com use to obfuscate loaded/loading resources",
+                            HomeUrl = "https://github.com/Cybo1927/Hosts",
+                            IssuesUrl = "https://github.com/Cybo1927/Hosts/issues",
+                            LicenseId = (short)11,
+                            Name = "Cybo's Blackout",
+                            SyntaxId = (short)3,
+                            ViewUrl = "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Dark%20Mode/Blackout"
                         },
                         new
                         {
@@ -23295,7 +23584,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             HomeUrl = "https://gitee.com/anye1998/Adguard-List-of-personal-rules",
                             Name = "anye1998's List of Personal Rules",
                             SyntaxId = (short)6,
-                            ViewUrl = "https://gitee.com/anye1998/Adguard-List-of-personal-rules/raw/master/List-of-personal-rules.txt"
+                            ViewUrl = "https://gitee.com/anye1998/Adguard-List-of-personal-rules/blob/master/List-of-personal-rules.txt"
                         },
                         new
                         {
@@ -24687,6 +24976,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            FilterListId = (short)688,
+                            LanguageId = (short)13
+                        },
+                        new
+                        {
                             FilterListId = (short)689,
                             LanguageId = (short)11
                         },
@@ -24744,6 +25038,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)744,
                             LanguageId = (short)110
+                        },
+                        new
+                        {
+                            FilterListId = (short)745,
+                            LanguageId = (short)154
                         },
                         new
                         {
@@ -25792,6 +26091,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            FilterListId = (short)1046,
+                            LanguageId = (short)163
+                        },
+                        new
+                        {
                             FilterListId = (short)1047,
                             LanguageId = (short)110
                         },
@@ -26709,6 +27013,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)1853,
                             LanguageId = (short)87
+                        },
+                        new
+                        {
+                            FilterListId = (short)1855,
+                            LanguageId = (short)154
                         },
                         new
                         {
@@ -28935,6 +29244,21 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            FilterListId = (short)364,
+                            MaintainerId = (short)50
+                        },
+                        new
+                        {
+                            FilterListId = (short)365,
+                            MaintainerId = (short)50
+                        },
+                        new
+                        {
+                            FilterListId = (short)366,
+                            MaintainerId = (short)50
+                        },
+                        new
+                        {
                             FilterListId = (short)367,
                             MaintainerId = (short)51
                         },
@@ -29232,6 +29556,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)520,
                             MaintainerId = (short)79
+                        },
+                        new
+                        {
+                            FilterListId = (short)443,
+                            MaintainerId = (short)80
                         },
                         new
                         {
@@ -31050,6 +31379,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            FilterListId = (short)1046,
+                            MaintainerId = (short)109
+                        },
+                        new
+                        {
                             FilterListId = (short)1047,
                             MaintainerId = (short)109
                         },
@@ -31857,6 +32191,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)1245,
                             MaintainerId = (short)109
+                        },
+                        new
+                        {
+                            FilterListId = (short)1231,
+                            MaintainerId = (short)110
                         },
                         new
                         {
@@ -32692,6 +33031,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)1296,
                             MaintainerId = (short)117
+                        },
+                        new
+                        {
+                            FilterListId = (short)1472,
+                            MaintainerId = (short)118
                         },
                         new
                         {
@@ -34283,6 +34627,16 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            FilterListId = (short)148,
+                            TagId = (short)2
+                        },
+                        new
+                        {
+                            FilterListId = (short)148,
+                            TagId = (short)4
+                        },
+                        new
+                        {
                             FilterListId = (short)150,
                             TagId = (short)15
                         },
@@ -35428,6 +35782,26 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            FilterListId = (short)364,
+                            TagId = (short)2
+                        },
+                        new
+                        {
+                            FilterListId = (short)364,
+                            TagId = (short)3
+                        },
+                        new
+                        {
+                            FilterListId = (short)365,
+                            TagId = (short)4
+                        },
+                        new
+                        {
+                            FilterListId = (short)366,
+                            TagId = (short)6
+                        },
+                        new
+                        {
                             FilterListId = (short)367,
                             TagId = (short)10
                         },
@@ -35515,6 +35889,16 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)381,
                             TagId = (short)30
+                        },
+                        new
+                        {
+                            FilterListId = (short)382,
+                            TagId = (short)2
+                        },
+                        new
+                        {
+                            FilterListId = (short)382,
+                            TagId = (short)11
                         },
                         new
                         {
@@ -35833,6 +36217,16 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            FilterListId = (short)443,
+                            TagId = (short)2
+                        },
+                        new
+                        {
+                            FilterListId = (short)443,
+                            TagId = (short)3
+                        },
+                        new
+                        {
                             FilterListId = (short)444,
                             TagId = (short)2
                         },
@@ -35870,6 +36264,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)451,
                             TagId = (short)3
+                        },
+                        new
+                        {
+                            FilterListId = (short)463,
+                            TagId = (short)6
                         },
                         new
                         {
@@ -36758,6 +37157,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            FilterListId = (short)688,
+                            TagId = (short)2
+                        },
+                        new
+                        {
                             FilterListId = (short)689,
                             TagId = (short)3
                         },
@@ -37005,6 +37409,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)744,
                             TagId = (short)9
+                        },
+                        new
+                        {
+                            FilterListId = (short)745,
+                            TagId = (short)4
                         },
                         new
                         {
@@ -38633,6 +39042,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            FilterListId = (short)1046,
+                            TagId = (short)6
+                        },
+                        new
+                        {
                             FilterListId = (short)1047,
                             TagId = (short)6
                         },
@@ -39454,6 +39868,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             FilterListId = (short)1230,
+                            TagId = (short)2
+                        },
+                        new
+                        {
+                            FilterListId = (short)1231,
                             TagId = (short)2
                         },
                         new
@@ -40543,6 +40962,16 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            FilterListId = (short)1462,
+                            TagId = (short)1
+                        },
+                        new
+                        {
+                            FilterListId = (short)1462,
+                            TagId = (short)3
+                        },
+                        new
+                        {
                             FilterListId = (short)1463,
                             TagId = (short)1
                         },
@@ -40610,6 +41039,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)1471,
                             TagId = (short)2
+                        },
+                        new
+                        {
+                            FilterListId = (short)1472,
+                            TagId = (short)1
                         },
                         new
                         {
@@ -42378,6 +42812,16 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            FilterListId = (short)1654,
+                            TagId = (short)3
+                        },
+                        new
+                        {
+                            FilterListId = (short)1655,
+                            TagId = (short)3
+                        },
+                        new
+                        {
                             FilterListId = (short)1656,
                             TagId = (short)3
                         },
@@ -42574,6 +43018,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             FilterListId = (short)1694,
+                            TagId = (short)19
+                        },
+                        new
+                        {
+                            FilterListId = (short)1695,
                             TagId = (short)19
                         },
                         new
@@ -43893,6 +44342,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            FilterListId = (short)1812,
+                            TagId = (short)6
+                        },
+                        new
+                        {
                             FilterListId = (short)1813,
                             TagId = (short)6
                         },
@@ -43943,13 +44397,13 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
-                            FilterListId = (short)1822,
-                            TagId = (short)6
+                            FilterListId = (short)1819,
+                            TagId = (short)19
                         },
                         new
                         {
-                            FilterListId = (short)1819,
-                            TagId = (short)19
+                            FilterListId = (short)1822,
+                            TagId = (short)6
                         },
                         new
                         {
@@ -43965,6 +44419,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)1825,
                             TagId = (short)7
+                        },
+                        new
+                        {
+                            FilterListId = (short)1826,
+                            TagId = (short)6
                         },
                         new
                         {
@@ -44130,6 +44589,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)1854,
                             TagId = (short)9
+                        },
+                        new
+                        {
+                            FilterListId = (short)1855,
+                            TagId = (short)2
                         },
                         new
                         {
@@ -44368,6 +44832,21 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            FilterListId = (short)1883,
+                            TagId = (short)2
+                        },
+                        new
+                        {
+                            FilterListId = (short)1884,
+                            TagId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = (short)1885,
+                            TagId = (short)7
+                        },
+                        new
+                        {
                             FilterListId = (short)1886,
                             TagId = (short)2
                         },
@@ -44504,6 +44983,16 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             FilterListId = (short)1904,
+                            TagId = (short)3
+                        },
+                        new
+                        {
+                            FilterListId = (short)1905,
+                            TagId = (short)2
+                        },
+                        new
+                        {
+                            FilterListId = (short)1905,
                             TagId = (short)3
                         },
                         new
@@ -45125,6 +45614,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)1998,
                             TagId = (short)15
+                        },
+                        new
+                        {
+                            FilterListId = (short)1999,
+                            TagId = (short)27
                         },
                         new
                         {
@@ -46891,6 +47385,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             MergeFilterListId = (short)375,
                             UpstreamFilterListId = (short)99
+                        },
+                        new
+                        {
+                            MergeFilterListId = (short)375,
+                            UpstreamFilterListId = (short)148
                         },
                         new
                         {
@@ -50675,6 +51174,13 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             HomeUrl = "https://github.com/ZeroDot1",
                             Name = "ZeroDot1",
                             TwitterHandle = "hobbygrafix"
+                        },
+                        new
+                        {
+                            Id = (short)50,
+                            EmailAddress = "webmaster@squidblacklist.org",
+                            HomeUrl = "https://www.squidblacklist.org/",
+                            Name = "Squid Blacklist"
                         },
                         new
                         {
