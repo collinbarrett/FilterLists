@@ -1556,16 +1556,6 @@
     "viewUrl": "https://adblock.dk/block.csv"
   },
   {
-    "id": 148,
-    "description": "I make supplemental filters in Adblock Plus to block garbage on webpages not blocked by other lists. I use many regular expressions, a few domain filters, but no CSS filters.",
-    "descriptionSourceUrl": "https://mrsatterly.com/abp_filters.html",
-    "homeUrl": "https://mrsatterly.com/abp_filters.html",
-    "licenseId": 14,
-    "name": "Satterly's Adblock Plus Filters",
-    "syntaxId": 3,
-    "viewUrl": "https://mrsatterly.com/abp_filters.txt"
-  },
-  {
     "id": 150,
     "description": "Blocks most popular internet statistics counters on sites serving Russia.",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
