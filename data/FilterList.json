@@ -21652,5 +21652,14 @@
     "name": "PiHole Blocklist SmartTV - Amazon Fire TV",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt"
+  },
+  {
+    "id": 2138,
+    "description": "Romanian Fake-News Block-list (RFNBL)",
+    "homeUrl": "https://github.com/DariusIurca/RFNBL-Romanian-Fake-News-Block-List",
+    "issuesUrl": "https://github.com/DariusIurca/RFNBL-Romanian-Fake-News-Block-List/issues",
+    "name": "Romanian Fake News Block List",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/DariusIurca/RFNBL-Romanian-Fake-News-Block-List/master/RFNBL.txt"
   }
 ]
