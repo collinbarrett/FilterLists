@@ -23597,16 +23597,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "PiHole Blocklist SmartTV - Amazon Fire TV",
                             SyntaxId = (short)2,
                             ViewUrl = "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2138,
-                            Description = "Romanian Fake-News Block-list (RFNBL)",
-                            HomeUrl = "https://github.com/DariusIurca/RFNBL-Romanian-Fake-News-Block-List",
-                            IssuesUrl = "https://github.com/DariusIurca/RFNBL-Romanian-Fake-News-Block-List/issues",
-                            Name = "Romanian Fake News Block List",
-                            SyntaxId = (short)2,
-                            ViewUrl = "https://raw.githubusercontent.com/DariusIurca/RFNBL-Romanian-Fake-News-Block-List/master/RFNBL.txt"
                         });
                 });
 
@@ -27108,11 +27098,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)2136,
                             LanguageId = (short)179
-                        },
-                        new
-                        {
-                            FilterListId = (short)2138,
-                            LanguageId = (short)17
                         });
                 });
 
