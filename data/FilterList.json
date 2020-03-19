@@ -21655,10 +21655,10 @@
   },
   {
     "id": 2138,
-    "description": "Romanian Fake-News Block-list (RFNBL)",
+    "description": "A block-list for Romanian news websites that have misleading information or clickbait.",
     "homeUrl": "https://github.com/DariusIurca/RFNBL-Romanian-Fake-News-Block-List",
     "issuesUrl": "https://github.com/DariusIurca/RFNBL-Romanian-Fake-News-Block-List/issues",
-    "name": "Romanian Fake News Block List",
+    "name": "Romanian Fake-News Block-list (RFNBL)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/DariusIurca/RFNBL-Romanian-Fake-News-Block-List/master/RFNBL.txt"
   }
