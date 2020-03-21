@@ -63,6 +63,6 @@
     "eslint-plugin-prettier": "^3.1.2",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
-    "prettier": "^1.19.1"
+    "prettier": "^2.0.0"
   }
 }
