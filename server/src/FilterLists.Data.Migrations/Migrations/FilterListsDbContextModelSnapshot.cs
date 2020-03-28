@@ -15,7 +15,7 @@ namespace FilterLists.Api.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.3")
+                .HasAnnotation("ProductVersion", "3.1.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("FilterLists.Data.Entities.FilterList", b =>
@@ -275,7 +275,7 @@ namespace FilterLists.Api.Migrations
                             Name = "MVPS HOSTS",
                             SyntaxId = (short)1,
                             UpdatedDate = new DateTime(2019, 3, 18, 11, 51, 10, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://winhelp2002.mvps.org/hosts.txt",
+                            ViewUrl = "http://winhelp2002.mvps.org/hosts.txt",
                             ViewUrlMirror1 = "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/mvps.org/hosts",
                             ViewUrlMirror2 = "https://gitlab.com/StevenBlack/hosts/raw/master/data/mvps.org/hosts"
                         },
@@ -3211,7 +3211,7 @@ namespace FilterLists.Api.Migrations
                             ForumUrl = "https://abpchina.org/forum/forum.php",
                             HomeUrl = "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
                             IssuesUrl = "https://github.com/cjx82630/cjxlist/issues",
-                            LicenseId = (short)34,
+                            LicenseId = (short)4,
                             Name = "CJX's EasyList Lite",
                             PublishedDate = new DateTime(2014, 11, 13, 3, 34, 41, 0, DateTimeKind.Unspecified),
                             SyntaxId = (short)3,
@@ -3366,7 +3366,7 @@ namespace FilterLists.Api.Migrations
                             ForumUrl = "https://abpchina.org/forum/forum.php",
                             HomeUrl = "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
                             IssuesUrl = "https://github.com/cjx82630/cjxlist/issues",
-                            LicenseId = (short)34,
+                            LicenseId = (short)16,
                             Name = "CJX's Annoyance List",
                             PublishedDate = new DateTime(2015, 2, 4, 10, 34, 4, 0, DateTimeKind.Unspecified),
                             SyntaxId = (short)3,
@@ -16421,7 +16421,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Description = "Is a comprehensive hosts file which blocks known ad, exploit, and tracking servers, taken from MVPS, PGL Yoyo, Malware Domain List, hpHosts and AdAway, along with some supplementary entries for increased protection, then merged, sorted and deduped. This list is compatible with all operating systems that make use of a hosts file (obviously this includes Windows, OS X, LiGnux and more). It works great with mobile VPN ad-blocking solutions too. Notably enhanced privacy and security awaits you. This file will be updated once a week, along with an IPv6 version, and an experimental version for both IPv4 and IPv6.",
                             HomeUrl = "https://github.com/bongochong/CombinedPrivacyBlockLists",
                             LicenseId = (short)9,
-                            Name = "Combined Privacy Block Lists HOSTS (IPv4)",
+                            Name = "Combined Privacy Block Lists HOSTS",
                             PublishedDate = new DateTime(2019, 3, 11, 22, 39, 55, 0, DateTimeKind.Unspecified),
                             SyntaxId = (short)1,
                             UpdatedDate = new DateTime(2019, 4, 15, 8, 52, 0, 0, DateTimeKind.Unspecified),
@@ -23319,7 +23319,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             ForumUrl = "https://abpchina.org/forum/forum.php",
                             HomeUrl = "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
                             IssuesUrl = "https://github.com/cjx82630/cjxlist/issues",
-                            LicenseId = (short)34,
+                            LicenseId = (short)16,
                             Name = "CJX's uBlock list",
                             SyntaxId = (short)3,
                             ViewUrl = "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt",
@@ -23618,252 +23618,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "Romanian ad-block extra (ROADBLK-EXTRA)",
                             SyntaxId = (short)28,
                             ViewUrl = "https://raw.githubusercontent.com/DariusIurca/ROADBLK-EXTRA/master/ROADBLK-EXTRA.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2140,
-                            DonateUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXF2HBWCMSZVL",
-                            HomeUrl = "https://github.com/crazy-max/WindowsSpyBlocker",
-                            IssuesUrl = "https://github.com/crazy-max/WindowsSpyBlocker/issues",
-                            LicenseId = (short)2,
-                            Name = "WindowsSpyBlocker Hosts Spy (Domains with wildcards)",
-                            PublishedDate = new DateTime(2018, 6, 2, 20, 9, 11, 0, DateTimeKind.Unspecified),
-                            SyntaxId = (short)16,
-                            UpdatedDate = new DateTime(2019, 3, 2, 3, 26, 23, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/dnscrypt/spy.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2141,
-                            Description = "Blocks Windows updates.",
-                            DonateUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXF2HBWCMSZVL",
-                            HomeUrl = "https://github.com/crazy-max/WindowsSpyBlocker",
-                            IssuesUrl = "https://github.com/crazy-max/WindowsSpyBlocker/issues",
-                            LicenseId = (short)2,
-                            Name = "WindowsSpyBlocker Hosts Update (Domains with wildcards)",
-                            PublishedDate = new DateTime(2018, 6, 2, 20, 9, 11, 0, DateTimeKind.Unspecified),
-                            SyntaxId = (short)16,
-                            UpdatedDate = new DateTime(2019, 3, 2, 3, 26, 23, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/dnscrypt/update.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2142,
-                            DonateUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXF2HBWCMSZVL",
-                            HomeUrl = "https://github.com/crazy-max/WindowsSpyBlocker",
-                            IssuesUrl = "https://github.com/crazy-max/WindowsSpyBlocker/issues",
-                            LicenseId = (short)2,
-                            Name = "WindowsSpyBlocker Hosts Extra (Domains with wildcards)",
-                            PublishedDate = new DateTime(2018, 6, 2, 20, 9, 11, 0, DateTimeKind.Unspecified),
-                            SyntaxId = (short)16,
-                            UpdatedDate = new DateTime(2019, 4, 2, 20, 52, 40, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/dnscrypt/extra.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2143,
-                            DonateUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXF2HBWCMSZVL",
-                            HomeUrl = "https://github.com/crazy-max/WindowsSpyBlocker",
-                            IssuesUrl = "https://github.com/crazy-max/WindowsSpyBlocker/issues",
-                            LicenseId = (short)2,
-                            Name = "WindowsSpyBlocker Hosts Spy (dnsmasq)",
-                            PublishedDate = new DateTime(2018, 6, 2, 20, 9, 11, 0, DateTimeKind.Unspecified),
-                            SyntaxId = (short)20,
-                            UpdatedDate = new DateTime(2019, 3, 2, 3, 26, 23, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/openwrt/spy.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2144,
-                            Description = "Blocks Windows updates.",
-                            DonateUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXF2HBWCMSZVL",
-                            HomeUrl = "https://github.com/crazy-max/WindowsSpyBlocker",
-                            IssuesUrl = "https://github.com/crazy-max/WindowsSpyBlocker/issues",
-                            LicenseId = (short)2,
-                            Name = "WindowsSpyBlocker Hosts Update (dnsmasq)",
-                            PublishedDate = new DateTime(2018, 6, 2, 20, 9, 11, 0, DateTimeKind.Unspecified),
-                            SyntaxId = (short)20,
-                            UpdatedDate = new DateTime(2019, 3, 2, 3, 26, 23, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/openwrt/update.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2145,
-                            DonateUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXF2HBWCMSZVL",
-                            HomeUrl = "https://github.com/crazy-max/WindowsSpyBlocker",
-                            IssuesUrl = "https://github.com/crazy-max/WindowsSpyBlocker/issues",
-                            LicenseId = (short)2,
-                            Name = "WindowsSpyBlocker Hosts Extra (dnsmasq)",
-                            PublishedDate = new DateTime(2018, 6, 2, 20, 9, 11, 0, DateTimeKind.Unspecified),
-                            SyntaxId = (short)20,
-                            UpdatedDate = new DateTime(2019, 4, 2, 20, 52, 40, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/openwrt/extra.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2146,
-                            DonateUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXF2HBWCMSZVL",
-                            HomeUrl = "https://github.com/crazy-max/WindowsSpyBlocker",
-                            IssuesUrl = "https://github.com/crazy-max/WindowsSpyBlocker/issues",
-                            LicenseId = (short)2,
-                            Name = "WindowsSpyBlocker Hosts Spy (IPs)",
-                            PublishedDate = new DateTime(2018, 6, 2, 20, 9, 11, 0, DateTimeKind.Unspecified),
-                            SyntaxId = (short)45,
-                            UpdatedDate = new DateTime(2019, 3, 2, 3, 26, 23, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/firewall/spy.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2147,
-                            Description = "Blocks Windows updates.",
-                            DonateUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXF2HBWCMSZVL",
-                            HomeUrl = "https://github.com/crazy-max/WindowsSpyBlocker",
-                            IssuesUrl = "https://github.com/crazy-max/WindowsSpyBlocker/issues",
-                            LicenseId = (short)2,
-                            Name = "WindowsSpyBlocker Hosts Update (IPs)",
-                            PublishedDate = new DateTime(2018, 6, 2, 20, 9, 11, 0, DateTimeKind.Unspecified),
-                            SyntaxId = (short)45,
-                            UpdatedDate = new DateTime(2019, 3, 2, 3, 26, 23, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/firewall/update.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2148,
-                            DonateUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CXF2HBWCMSZVL",
-                            HomeUrl = "https://github.com/crazy-max/WindowsSpyBlocker",
-                            IssuesUrl = "https://github.com/crazy-max/WindowsSpyBlocker/issues",
-                            LicenseId = (short)2,
-                            Name = "WindowsSpyBlocker Hosts Extra (IPs)",
-                            PublishedDate = new DateTime(2018, 6, 2, 20, 9, 11, 0, DateTimeKind.Unspecified),
-                            SyntaxId = (short)45,
-                            UpdatedDate = new DateTime(2019, 4, 2, 20, 52, 40, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/firewall/extra.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2149,
-                            EmailAddress = "easylist.polish@gmail.com",
-                            HomeUrl = "https://easylist.to",
-                            IssuesUrl = "https://forums.lanik.us/viewforum.php?f=107",
-                            LicenseId = (short)4,
-                            Name = "EasyList Polish + EasyList",
-                            SyntaxId = (short)3,
-                            UpdatedDate = new DateTime(2019, 4, 15, 11, 28, 11, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://easylist-downloads.adblockplus.org/easylistpolish+easylist.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2150,
-                            EmailAddress = "easylist.polish@gmail.com",
-                            HomeUrl = "https://easylist.to",
-                            IssuesUrl = "https://forums.lanik.us/viewforum.php?f=107",
-                            LicenseId = (short)4,
-                            Name = "EasyList Polish + EasyList (TPL)",
-                            SyntaxId = (short)3,
-                            UpdatedDate = new DateTime(2019, 4, 15, 11, 28, 11, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://easylist-downloads.adblockplus.org/easylistpolish+easylist.tpl"
-                        },
-                        new
-                        {
-                            Id = (short)2151,
-                            Description = "Is a comprehensive hosts file which blocks known ad, exploit, and tracking servers, taken from MVPS, PGL Yoyo, Malware Domain List, hpHosts and AdAway, along with some supplementary entries for increased protection, then merged, sorted and deduped. This list is compatible with all operating systems that make use of a hosts file (obviously this includes Windows, OS X, LiGnux and more). It works great with mobile VPN ad-blocking solutions too. Notably enhanced privacy and security awaits you. This file will be updated once a week, along with an IPv6 version, and an experimental version for both IPv4 and IPv6.",
-                            HomeUrl = "https://github.com/bongochong/CombinedPrivacyBlockLists",
-                            LicenseId = (short)9,
-                            Name = "Combined Privacy Block Lists HOSTS (IPv6)",
-                            PublishedDate = new DateTime(2019, 3, 11, 22, 39, 55, 0, DateTimeKind.Unspecified),
-                            SyntaxId = (short)39,
-                            UpdatedDate = new DateTime(2019, 4, 15, 8, 52, 0, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final-IPv6.hosts"
-                        },
-                        new
-                        {
-                            Id = (short)2152,
-                            Description = "Is a comprehensive hosts file which blocks known ad, exploit, and tracking servers, taken from MVPS, PGL Yoyo, Malware Domain List, hpHosts and AdAway, along with some supplementary entries for increased protection, then merged, sorted and deduped. This list is compatible with all operating systems that make use of a hosts file (obviously this includes Windows, OS X, LiGnux and more). It works great with mobile VPN ad-blocking solutions too. Notably enhanced privacy and security awaits you. This file will be updated once a week, along with an IPv6 version, and an experimental version for both IPv4 and IPv6.",
-                            HomeUrl = "https://github.com/bongochong/CombinedPrivacyBlockLists",
-                            LicenseId = (short)9,
-                            Name = "Combined Privacy Block Lists HOSTS (IPv4 + IPv6)",
-                            PublishedDate = new DateTime(2019, 3, 11, 22, 39, 55, 0, DateTimeKind.Unspecified),
-                            SyntaxId = (short)33,
-                            UpdatedDate = new DateTime(2019, 4, 15, 8, 52, 0, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final-Dual.hosts"
-                        },
-                        new
-                        {
-                            Id = (short)2153,
-                            HomeUrl = "https://github.com/tomzuu/blacklist-named",
-                            IssuesUrl = "https://github.com/tomzuu/blacklist-named/issues",
-                            LicenseId = (short)7,
-                            Name = "Malware Domain List (dnsmasq)",
-                            SyntaxId = (short)20,
-                            ViewUrl = "https://raw.githubusercontent.com/tomzuu/blacklist-named/master/malwaredomainlist.conf"
-                        },
-                        new
-                        {
-                            Id = (short)2154,
-                            HomeUrl = "https://github.com/tomzuu/blacklist-named",
-                            IssuesUrl = "https://github.com/tomzuu/blacklist-named/issues",
-                            LicenseId = (short)7,
-                            Name = "DNS-BH Malware Domains (dnsmasq)",
-                            SyntaxId = (short)20,
-                            ViewUrl = "https://raw.githubusercontent.com/tomzuu/blacklist-named/master/cedia_justdomains.conf"
-                        },
-                        new
-                        {
-                            Id = (short)2155,
-                            Description = "Introducing the Amazing/Sensational/Remarkable/Revolutionary; #1 Blocklist :)",
-                            DonateUrl = "https://www.paypal.me/sjhgvr",
-                            HomeUrl = "https://www.reddit.com/r/pihole/comments/bppug1/introducing_the/",
-                            LicenseId = (short)5,
-                            Name = "OISD (Adblocker domains)",
-                            SyntaxId = (short)2,
-                            ViewUrl = "https://abp.oisd.nl/",
-                            ViewUrlMirror1 = "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/abp.txt",
-                            ViewUrlMirror2 = "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/abp.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2156,
-                            Description = "One of many possible ways for malware to try to enter your computers and phones, is through substituting some US Latin letters with lookalike letters from other alphabets and scripts. For instance, most humans can't easily tell A and А apart (except when using certain fonts), but computers can instantly tell the former is Latin and the latter is Cyrillic, and adresses with them are treated as different. However, ALL use of non-US letters in URLs will be treated as 'xn--[random letters]' by HTML-based tools, making it relatively easy to block, which this list will do for you.",
-                            DonateUrl = "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-                            EmailAddress = "imreeil42@gmail.com",
-                            HomeUrl = "https://github.com/DandelionSprout/adfilt",
-                            IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
-                            LicenseId = (short)35,
-                            Name = "IDN Homograph Attack Protection - Complete Blockage",
-                            SyntaxId = (short)28,
-                            ViewUrl = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Special%20security%20lists/IDNHomographProtectionTotal.txt",
-                            ViewUrlMirror1 = "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Special%20security%20lists/IDNHomographProtectionTotal.txt",
-                            ViewUrlMirror2 = "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/IDNHomographProtectionTotal.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2157,
-                            Description = "One of many possible ways for malware to try to enter your computers and phones, is through substituting some US Latin letters with lookalike letters from other alphabets and scripts. For instance, most humans can't easily tell A and А apart (except when using certain fonts), but computers can instantly tell the former is Latin and the latter is Cyrillic, and adresses with them are treated as different. However, ALL use of non-US letters in URLs will be treated as 'xn--[random letters]' by HTML-based tools, making it relatively easy to block, which this list will do for you.",
-                            DonateUrl = "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-                            EmailAddress = "imreeil42@gmail.com",
-                            HomeUrl = "https://github.com/DandelionSprout/adfilt",
-                            IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
-                            LicenseId = (short)35,
-                            Name = "IDN Homograph Attack Protection - Does Not Block Non-Latin TLDs",
-                            SyntaxId = (short)28,
-                            ViewUrl = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Special%20security%20lists/IDNHomographProtection-USLatinTLDsOnly.txt",
-                            ViewUrlMirror1 = "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Special%20security%20lists/IDNHomographProtection-USLatinTLDsOnly.txt",
-                            ViewUrlMirror2 = "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/IDNHomographProtection-USLatinTLDsOnly.txt.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2158,
-                            Description = "You'd think that a country's biggest national newspaper would stick to news and newspaper stuff, and not try to offer escort services, massage services, sex toys, sex models, pinup models, sex party stories, big asses, masochism with Nazi overtones, pornstars, porn videos, porn sites, Playboy models, swinger clubs, brothels, or strip clubs. Ekstra Bladet didn't catch that memo. So here's a list that'll keep that site focused on actual newspaper content.",
-                            DonateUrl = "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-                            EmailAddress = "imreeil42@gmail.com",
-                            HomeUrl = "https://github.com/DandelionSprout/adfilt",
-                            IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
-                            LicenseId = (short)35,
-                            Name = "Ekstra Bladet Erotic Content Remover",
-                            SyntaxId = (short)3,
-                            ViewUrl = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EkstraBladetEroticContentRemover.txt",
-                            ViewUrlMirror1 = "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/EkstraBladetEroticContentRemover.txt",
-                            ViewUrlMirror2 = "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/EkstraBladetEroticContentRemover.txt"
                         });
                 });
 
@@ -27375,21 +27129,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)2139,
                             LanguageId = (short)17
-                        },
-                        new
-                        {
-                            FilterListId = (short)2149,
-                            LanguageId = (short)11
-                        },
-                        new
-                        {
-                            FilterListId = (short)2150,
-                            LanguageId = (short)11
-                        },
-                        new
-                        {
-                            FilterListId = (short)2158,
-                            LanguageId = (short)106
                         });
                 });
 
@@ -28667,21 +28406,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             FilterListId = (short)2114,
-                            MaintainerId = (short)22
-                        },
-                        new
-                        {
-                            FilterListId = (short)2156,
-                            MaintainerId = (short)22
-                        },
-                        new
-                        {
-                            FilterListId = (short)2157,
-                            MaintainerId = (short)22
-                        },
-                        new
-                        {
-                            FilterListId = (short)2158,
                             MaintainerId = (short)22
                         },
                         new
@@ -46861,131 +46585,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)2139,
                             TagId = (short)2
-                        },
-                        new
-                        {
-                            FilterListId = (short)2140,
-                            TagId = (short)3
-                        },
-                        new
-                        {
-                            FilterListId = (short)2143,
-                            TagId = (short)3
-                        },
-                        new
-                        {
-                            FilterListId = (short)2146,
-                            TagId = (short)3
-                        },
-                        new
-                        {
-                            FilterListId = (short)2141,
-                            TagId = (short)26
-                        },
-                        new
-                        {
-                            FilterListId = (short)2144,
-                            TagId = (short)26
-                        },
-                        new
-                        {
-                            FilterListId = (short)2147,
-                            TagId = (short)26
-                        },
-                        new
-                        {
-                            FilterListId = (short)2142,
-                            TagId = (short)19
-                        },
-                        new
-                        {
-                            FilterListId = (short)2145,
-                            TagId = (short)19
-                        },
-                        new
-                        {
-                            FilterListId = (short)2148,
-                            TagId = (short)19
-                        },
-                        new
-                        {
-                            FilterListId = (short)2149,
-                            TagId = (short)2
-                        },
-                        new
-                        {
-                            FilterListId = (short)2150,
-                            TagId = (short)2
-                        },
-                        new
-                        {
-                            FilterListId = (short)2151,
-                            TagId = (short)2
-                        },
-                        new
-                        {
-                            FilterListId = (short)2151,
-                            TagId = (short)3
-                        },
-                        new
-                        {
-                            FilterListId = (short)2151,
-                            TagId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = (short)2152,
-                            TagId = (short)2
-                        },
-                        new
-                        {
-                            FilterListId = (short)2152,
-                            TagId = (short)3
-                        },
-                        new
-                        {
-                            FilterListId = (short)2152,
-                            TagId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = (short)2155,
-                            TagId = (short)2
-                        },
-                        new
-                        {
-                            FilterListId = (short)2155,
-                            TagId = (short)3
-                        },
-                        new
-                        {
-                            FilterListId = (short)2155,
-                            TagId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = (short)2153,
-                            TagId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = (short)2154,
-                            TagId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = (short)2156,
-                            TagId = (short)7
-                        },
-                        new
-                        {
-                            FilterListId = (short)2157,
-                            TagId = (short)7
-                        },
-                        new
-                        {
-                            FilterListId = (short)2158,
-                            TagId = (short)11
                         });
                 });
 
@@ -52408,11 +52007,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             Id = (short)44,
                             Name = "PowerShell PKG file"
-                        },
-                        new
-                        {
-                            Id = (short)45,
-                            Name = "IPs (IPv4; some start-end-range)"
                         });
                 });
 
