@@ -24,7 +24,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.DotNet.Analyzers.Compatibility" Version="0.2.12-alpha" />
     <PackageReference Include="morelinq" Version="3.3.2" />
-    <PackageReference Include="SharpCompress" Version="0.24.0" />
+    <PackageReference Include="SharpCompress" Version="0.25.0" />
   </ItemGroup>
 
   <ItemGroup>
