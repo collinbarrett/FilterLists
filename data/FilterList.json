@@ -21898,5 +21898,15 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EkstraBladetEroticContentRemover.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/EkstraBladetEroticContentRemover.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/EkstraBladetEroticContentRemover.txt"
+  },
+  {
+    "id": 2159,
+    "description": "Malware, phishing and scam domain block list. This is a bleeding-edge list fed by the tens of scam emails coming to my inbox every day, and will serve as a temporary countermeasure until these domains are added to Safe Browsing.",
+    "emailAddress": "marcos@orca.pet",
+    "homeUrl": "https://orca.pet/notonmyshift/",
+    "licenseId": 14,
+    "name": "Not on my shift",
+    "syntaxId": 2,
+    "viewUrl": "https://orca.pet/notonmyshift/domains.txt"
   }
 ]
