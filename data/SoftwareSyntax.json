@@ -742,5 +742,25 @@
   {
     "softwareId": 39,
     "syntaxId": 45
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 46
+  },
+  {
+    "softwareId": 3,
+    "syntaxId": 46
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 46
+  },
+  {
+    "softwareId": 31,
+    "syntaxId": 46
+  },
+  {
+    "softwareId": 32,
+    "syntaxId": 46
   }
 ]
