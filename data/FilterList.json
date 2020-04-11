@@ -360,88 +360,6 @@
     "viewUrl": "https://notabug.org/latvian-list/adblock-latvian/raw/master/lists/latvian-list.txt"
   },
   {
-    "id": 40,
-    "description": "Sites engaged in the use of misleading marketing tactics.",
-    "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
-    "forumUrl": "https://forum.hosts-file.net/",
-    "homeUrl": "https://hosts-file.net/",
-    "licenseId": 5,
-    "name": "hpHosts MMT",
-    "syntaxId": 1,
-    "updatedDate": "2019-01-14T13:03:12",
-    "viewUrl": "https://hosts-file.net/mmt.txt"
-  },
-  {
-    "id": 41,
-    "description": "Sites engaged in browser hijacking or other forms of hijacking (OS services, bandwidth, DNS, etc.).",
-    "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
-    "forumUrl": "https://forum.hosts-file.net/",
-    "homeUrl": "https://hosts-file.net/",
-    "licenseId": 5,
-    "name": "hpHosts HJK",
-    "syntaxId": 1,
-    "updatedDate": "2018-11-04T05:16:09",
-    "viewUrl": "https://hosts-file.net/hjk.txt"
-  },
-  {
-    "id": 42,
-    "description": "Special classification for persons caught spamming the hpHosts forums.",
-    "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
-    "forumUrl": "https://forum.hosts-file.net/",
-    "homeUrl": "https://hosts-file.net/",
-    "licenseId": 5,
-    "name": "hpHosts HFS",
-    "syntaxId": 1,
-    "viewUrl": "https://hosts-file.net/hfs.txt"
-  },
-  {
-    "id": 43,
-    "description": "Sites engaged in astroturfing (otherwise known as grass roots marketing) or spamming.",
-    "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
-    "forumUrl": "https://forum.hosts-file.net/",
-    "homeUrl": "https://hosts-file.net/",
-    "licenseId": 5,
-    "name": "hpHosts GRM",
-    "syntaxId": 1,
-    "updatedDate": "2018-11-18T10:43:09",
-    "viewUrl": "https://hosts-file.net/grm.txt"
-  },
-  {
-    "id": 44,
-    "description": "Sites engaged in the selling or distribution of bogus or fraudulent applications and/or provision of fraudulent services.",
-    "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
-    "forumUrl": "https://forum.hosts-file.net/",
-    "homeUrl": "https://hosts-file.net/",
-    "licenseId": 5,
-    "name": "hpHosts FSA",
-    "syntaxId": 1,
-    "updatedDate": "2019-04-08T22:37:13",
-    "viewUrl": "https://hosts-file.net/fsa.txt"
-  },
-  {
-    "id": 45,
-    "description": "Sites engaged in the housing, development or distribution of exploits, including but not limited to exploitation of browser, software (inclusive of website software such as CMS), operating system exploits aswell as those engaged in exploits via social engineering.",
-    "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
-    "forumUrl": "https://forum.hosts-file.net/",
-    "homeUrl": "https://hosts-file.net/",
-    "licenseId": 5,
-    "name": "hpHosts EXP",
-    "syntaxId": 1,
-    "viewUrl": "https://hosts-file.net/exp.txt"
-  },
-  {
-    "id": 46,
-    "description": "Sites engaged in malware distribution.",
-    "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
-    "forumUrl": "https://forum.hosts-file.net/",
-    "homeUrl": "https://hosts-file.net/",
-    "licenseId": 5,
-    "name": "hpHosts EMD",
-    "syntaxId": 1,
-    "updatedDate": "2019-04-12T23:58:10",
-    "viewUrl": "https://hosts-file.net/emd.txt"
-  },
-  {
     "id": 47,
     "description": "This classification is assigned for domains being used for advert or tracking purposes.",
     "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
@@ -451,17 +369,7 @@
     "name": "hpHosts ATS",
     "syntaxId": 1,
     "updatedDate": "2019-03-08T18:54:09",
-    "viewUrl": "https://hosts-file.net/ad_servers.txt"
-  },
-  {
-    "id": 48,
-    "description": "hpHosts is a community managed and maintained hosts file that allows an additional layer of protection against access to ad, tracking and malicious websites.",
-    "descriptionSourceUrl": "https://hosts-file.net/",
-    "homeUrl": "https://hosts-file.net/",
-    "licenseId": 5,
-    "name": "hpHosts",
-    "syntaxId": 1,
-    "viewUrl": "https://hosts-file.net/download/hosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/NanoMeow/UltimateMirror/master/archive/hphosts.txt"
   },
   {
     "id": 49,
@@ -539,18 +447,6 @@
     "viewUrl": "https://web.archive.org/web/20160221140034if_/http://adblock.gjtech.net/?format=unix-hosts"
   },
   {
-    "id": 55,
-    "description": "The following hosts were added to hpHosts AFTER the last full release.",
-    "descriptionSourceUrl": "https://hosts-file.net/hphosts-partial.txt",
-    "forumUrl": "https://forum.hosts-file.net/",
-    "homeUrl": "https://hosts-file.net/",
-    "licenseId": 5,
-    "name": "hpHosts Partial",
-    "syntaxId": 1,
-    "updatedDate": "2019-04-13T03:17:11",
-    "viewUrl": "https://hosts-file.net/hphosts-partial.txt"
-  },
-  {
     "id": 56,
     "description": "A list combining Latvian List and EasyList.",
     "licenseId": 8,
@@ -558,30 +454,6 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-13T06:04:10",
     "viewUrl": "https://easylist-downloads.adblockplus.org/latvianlist+easylist.txt"
-  },
-  {
-    "id": 57,
-    "description": "Sites engaged in illegal pharmacy activities.",
-    "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
-    "forumUrl": "https://forum.hosts-file.net/",
-    "homeUrl": "https://hosts-file.net/",
-    "licenseId": 5,
-    "name": "hpHosts PHA",
-    "syntaxId": 1,
-    "updatedDate": "2019-04-13T06:29:09",
-    "viewUrl": "https://hosts-file.net/pha.txt"
-  },
-  {
-    "id": 58,
-    "description": "Sites engaged in the distribution of Potentially Unwanted Programs.",
-    "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
-    "forumUrl": "https://forum.hosts-file.net/",
-    "homeUrl": "https://hosts-file.net/",
-    "licenseId": 5,
-    "name": "hpHosts PUP",
-    "syntaxId": 1,
-    "updatedDate": "2019-04-13T06:35:10",
-    "viewUrl": "https://hosts-file.net/pup.txt"
   },
   {
     "id": 59,
@@ -769,30 +641,6 @@
     "viewUrl": "https://raw.githubusercontent.com/hufilter/hufilter/master/hufilter.txt",
     "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-hufilter.git/blob_plain/refs/heads/master:/hufilter.txt",
     "viewUrlMirror2": "https://gitcdn.xyz/repo/hufilter/hufilter/master/hufilter.txt"
-  },
-  {
-    "id": 73,
-    "description": "Sites engaged in the selling, distribution or provision of warez (including but not limited to keygens, serials etc), where such provisions do not contain malware.",
-    "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
-    "forumUrl": "https://forum.hosts-file.net/",
-    "homeUrl": "https://hosts-file.net/",
-    "licenseId": 5,
-    "name": "hpHosts WRZ",
-    "syntaxId": 1,
-    "updatedDate": "2018-12-03T05:09:11",
-    "viewUrl": "https://hosts-file.net/wrz.txt"
-  },
-  {
-    "id": 74,
-    "description": "Sites engaged in Phishing.",
-    "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
-    "forumUrl": "https://forum.hosts-file.net/",
-    "homeUrl": "https://hosts-file.net/",
-    "licenseId": 5,
-    "name": "hpHosts PSH",
-    "syntaxId": 1,
-    "updatedDate": "2019-04-13T08:10:12",
-    "viewUrl": "https://hosts-file.net/psh.txt"
   },
   {
     "id": 78,
@@ -3034,13 +2882,13 @@
   {
     "id": 282,
     "description": "CAMELEON is a free system that helps Internet users or administrators to blocks web-adverts.",
-    "descriptionSourceUrl": "http://sysctl.org/cameleon/",
+    "descriptionSourceUrl": "https://sysctl.org/cameleon/",
     "emailAddress": "philippe@sysctl.org",
-    "homeUrl": "http://sysctl.org/cameleon/",
+    "homeUrl": "https://sysctl.org/cameleon/",
     "licenseId": 5,
     "name": "CAMELEON Hosts",
     "syntaxId": 1,
-    "viewUrl": "http://sysctl.org/cameleon/hosts"
+    "viewUrl": "https://sysctl.org/cameleon/hosts"
   },
   {
     "id": 283,
@@ -3072,7 +2920,7 @@
     "homeUrl": "https://www.malwaredomains.com/",
     "licenseId": 5,
     "name": "DNS-BH Dynamic DNS",
-    "syntaxId": 2,
+    "syntaxId": 4,
     "viewUrl": "https://mirror1.malwaredomains.com/files/dynamic_dns.txt",
     "viewUrlMirror1": "https://mirror.cedia.org.ec/malwaredomains/dynamic_dns.txt"
   },
@@ -3113,8 +2961,7 @@
     "syntaxId": 2,
     "updatedDate": "2018-12-10T06:07:14",
     "viewUrl": "https://mirror1.malwaredomains.com/files/immortal_domains.txt",
-    "viewUrlMirror1": "http://mirror2.malwaredomains.com/files/immortal_domains.txt",
-    "viewUrlMirror2": "https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt"
+    "viewUrlMirror1": "https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt"
   },
   {
     "id": 289,
@@ -4763,7 +4610,7 @@
   },
   {
     "id": 441,
-    "description": "Personal Blocklist by WaLLy3K (https://firebog.net/about).  Content added to this list has been manually verified, and usually updated every two weeks.",
+    "description": "Personal Blocklist by WaLLy3K (https://firebog.net/about). Content added to this list has been manually verified, and usually updated every two weeks.",
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HU4EDJZP2S9QA",
     "homeUrl": "https://firebog.net/",
     "licenseId": 13,
@@ -4778,16 +4625,6 @@
     "name": "Bill Stearns' Hosts",
     "syntaxId": 2,
     "viewUrl": "https://v.firebog.net/hosts/BillStearns.txt"
-  },
-  {
-    "id": 444,
-    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HU4EDJZP2S9QA",
-    "homeUrl": "https://firebog.net/",
-    "licenseId": 2,
-    "name": "EasyList (Hosts)",
-    "syntaxId": 2,
-    "updatedDate": "2019-04-15T08:22:11",
-    "viewUrl": "https://v.firebog.net/hosts/Easylist.txt"
   },
   {
     "id": 445,
@@ -15618,7 +15455,7 @@
   },
   {
     "id": 1567,
-    "description": "EasyList is the primary subscription that removes adverts from web pages in English language.",
+    "description": "EasyList is the primary subscription that removes adverts from web pages in English language. The Optimized version is based on opt-in telemetry by AdGuard, is light on memory and comments, and gets below iOS/Safari filter limits.",
     "descriptionSourceUrl": "https://filters.adtidy.org/extension/ublock/filters/101_optimized.txt",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
@@ -15630,7 +15467,7 @@
   },
   {
     "id": 1568,
-    "description": "Filter that enables removing of the ads from websites with English content.",
+    "description": "Filter that enables removing of the ads from websites with English content. The Optimized version is based on opt-in telemetry, is light on memory and comments, and gets below iOS/Safari filter limits.",
     "descriptionSourceUrl": "https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
@@ -15642,7 +15479,7 @@
   },
   {
     "id": 1569,
-    "description": "Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language.",
+    "description": "Liste FR + AdGuard French filter. Filter list that specifically removes ads on websites in French language. The Optimized version is based on opt-in telemetry, is light on memory and comments, and gets below iOS/Safari filter limits.",
     "descriptionSourceUrl": "https://filters.adtidy.org/extension/chromium/filters/16_optimized.txt",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
@@ -15654,7 +15491,7 @@
   },
   {
     "id": 1570,
-    "description": "EasyList Germany + AdGuard German filter. Filter list that specifically removes ads on websites in German language.",
+    "description": "EasyList Germany + AdGuard German filter. Filter list that specifically removes ads on websites in German language. The Optimized version is based on opt-in telemetry, is light on memory and comments, and gets below iOS/Safari filter limits.",
     "descriptionSourceUrl": "https://filters.adtidy.org/extension/chromium/filters/6_optimized.txt",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
@@ -20447,7 +20284,6 @@
     "id": 2004,
     "description": "This is believed to be the world's oldest adblock list to still be hosted at its original domain, having last been updated in August 2003 and has rejected submissions ever since.",
     "homeUrl": "http://www.accs-net.com/hosts/get_hosts.html",
-    "licenseId": 35,
     "name": "Gorilla Studio Hosts Project",
     "syntaxId": 1,
     "updatedDate": "2003-08-31T00:00:00",
@@ -20700,18 +20536,6 @@
     "name": "notracking - Adblocker domains",
     "syntaxId": 28,
     "viewUrl": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/adblock/adblock.txt"
-  },
-  {
-    "id": 2037,
-    "description": "Just a normal privacy oriented dns service with a ability to block ads, trackers and also provides uncensored dns! Servers are hosted in Germany. Uses a combination of many, many other lists made by others. Links that didn't fit in the View button URL texts, include 2a01:4f8:1c1c:75b4::1.",
-    "homeUrl": "https://github.com/bhanupratapys/dnswarden",
-    "issuesUrl": "https://github.com/bhanupratapys/dnswarden/issues",
-    "licenseId": 2,
-    "name": "dnswarden Adblocking (DNS)",
-    "syntaxId": 22,
-    "viewUrl": "https://ecs-doh.dnswarden.com/adblock-ecs",
-    "viewUrlMirror1": "tls://adblock-dot.dnswarden.com",
-    "viewUrlMirror2": "116.203.70.156"
   },
   {
     "id": 2038,
@@ -21908,5 +21732,53 @@
     "name": "Not on my shift",
     "syntaxId": 2,
     "viewUrl": "https://orca.pet/notonmyshift/domains.txt"
+  },
+  {
+    "id": 2160,
+    "description": "These list continents only ip that have been activated less than 3 days ago.",
+    "descriptionSourceUrl": "https://bl.isx.fr/",
+    "emailAddress": "business@isx.fr",
+    "homeUrl": "https://bl.isx.fr/",
+    "name": "ISX Solutions Blocklist",
+    "syntaxId": 9,
+    "viewUrl": "https://bl.isx.fr/raw"
+  },
+  {
+    "id": 2161,
+    "description": "There are always pros and cons to use whitelists. I started with Pihole, but now I have AdGuard Home. Overblocking is not a permanent solution either. That's why I started to create a whitelist for AdGuard Home. My thanks also go to anudeep/ND whose whitelist I used as the basis for mine. Cheers! If you have remaks or wishes please feel free to contact me.",
+    "descriptionSourceUrl": "https://github.com/hg1978/AdGuard-Home-Whitelist/README.md",
+    "homeUrl": "https://github.com/hg1978/AdGuard-Home-Whitelist",
+    "issuesUrl": "https://github.com/hg1978/AdGuard-Home-Whitelist/issues",
+    "licenseId": 2,
+    "name": "hg1978's AdGuard Home Whitelist",
+    "syntaxId": 46,
+    "viewUrl": "https://raw.githubusercontent.com/hg1978/AdGuard-Home-Whitelist/master/whitelist.txt"
+  },
+  {
+  "id": 2162,
+"description": "List containing fake local journals from a state-backed disinformation operation.",
+"descriptionSourceUrl": "https://github.com/MassMove/AttackVectors/",
+"homeUrl": "https://github.com/MassMove/AttackVectors/",
+"issuesUrl": "https://github.com/MassMove/AttackVectors/issues",
+"submissionUrl": "https://github.com/MassMove/AttackVectors/issues/new",
+"licenseId": 2,
+"name": "Fake-Local-Journals-List",
+"publishedDate": "2020-04-02T00:00:00",
+"syntaxId": 2,
+"viewUrl": "https://raw.githubusercontent.com/MassMove/AttackVectors/master/LocalJournals/fake-local-journals-list.txt"
+},
+{
+    "id": 2163,
+    "description": "There's simply too many Undertale and Deltarune songs, remixes, and mashups on SoundCloud. Sometimes a list doesn't really need any more reasons to exist than that.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Undertale Remover for SoundCloud",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/UndertaleRemoverForSoundCloud.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/UndertaleRemoverForSoundCloud.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/UndertaleRemoverForSoundCloud.txt"
   }
 ]
