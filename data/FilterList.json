@@ -18911,6 +18911,7 @@
   {
     "id": 1866,
     "description": "A combined list of all the Ad Domains.",
+    "donateUrl": "https://www.patreon.com/laniksj/overview",
     "homeUrl": "https://github.com/LanikSJ/ubo-filters",
     "licenseId": 4,
     "name": "Ad Domains Filter List",
@@ -18920,6 +18921,7 @@
   {
     "id": 1867,
     "description": "This is just my List of sites I frequently visit.",
+    "donateUrl": "https://www.patreon.com/laniksj/overview",
     "homeUrl": "https://github.com/LanikSJ/ubo-filters",
     "licenseId": 4,
     "name": "Lanik's uBO Filter List",
