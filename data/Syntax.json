@@ -192,5 +192,9 @@
   {
     "id": 45,
     "name": "IPs (IPv4; some start-end-range)"
+  },
+  {
+    "id": 46,
+    "name": "'$important' and '$empty' domains only"
   }
 ]
