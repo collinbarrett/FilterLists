@@ -759,5 +759,24 @@
     "homeUrl": "https://github.com/DariusIurca",
     "name": "DariusIurca",
     "twitterHandle": "dariusiurca"
+  },
+  {
+    "id": 146,
+    "emailAddress": "geoffrey+website@frogeye.fr",
+    "homeUrl": "https://geoffrey.frogeye.fr/",
+    "name": "Geoffrey Frogeye",
+    "twitterHandle": "GeoffreyFrogeye"
+  },
+  {
+    "id": 147,
+    "homeUrl": "https://github.com/LanikSJ",
+    "name": "LanikSJ"
+  },
+  {
+    "id": 148,
+    "emailAddress": "me@deletescape.ch",
+    "homeUrl": "https://deletescape.ch/",
+    "name": "deletescape",
+    "twitterHandle": "deletescape"
   }
 ]
