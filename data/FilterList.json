@@ -21782,5 +21782,31 @@
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/UndertaleRemoverForSoundCloud.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/UndertaleRemoverForSoundCloud.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/UndertaleRemoverForSoundCloud.txt"
+  },
+  {
+    "id": 2164,
+    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
+    "descriptionSourceUrl": "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
+    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "licenseId": 28,
+    "name": "urlhaus-filter (dnsmasq)",
+    "syntaxId": 20,
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf",
+    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf"
+  },
+  {
+    "id": 2165,
+    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
+    "descriptionSourceUrl": "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
+    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "licenseId": 28,
+    "name": "urlhaus-filter (Online Domains - dnsmasq)",
+    "syntaxId": 20,
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf",
+    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf"
   }
 ]
