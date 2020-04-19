@@ -4,14 +4,16 @@ using FilterLists.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    partial class FilterListsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200419033218_1545")]
+    partial class _1545
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -8859,13 +8861,13 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)858,
-                            Description = "A blocklist of malicious URLs that are being used for malware distribution.",
+                            Description = "A block list of malicious URLs that are being used for malware distribution. Smaller than the official version with de-duplicated malware domains, while including full malicious URls of popular domains.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/urlhaus-filter",
                             IssuesUrl = "https://gitlab.com/curben/urlhaus-filter/issues",
                             LicenseId = (short)28,
                             Name = "urlhaus-filter",
-                            SyntaxId = (short)8,
+                            SyntaxId = (short)2,
                             UpdatedDate = new DateTime(2019, 4, 5, 22, 9, 10, 0, DateTimeKind.Unspecified),
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
                             ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
@@ -17318,13 +17320,13 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)1603,
-                            Description = "A blocklist of malicious URLs that are being used for malware distribution.",
+                            Description = "A block list of malicious URLs that are being used for malware distribution. This is a lite version by including online URLs only.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/urlhaus-filter",
                             IssuesUrl = "https://gitlab.com/curben/urlhaus-filter/issues",
                             LicenseId = (short)28,
-                            Name = "urlhaus-filter (Online)",
-                            SyntaxId = (short)8,
+                            Name = "urlhaus-filter-online",
+                            SyntaxId = (short)2,
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
                             ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt"
@@ -20726,12 +20728,12 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)1879,
-                            Description = "A blocklist of malicious URLs that are being used for malware distribution.",
+                            Description = "A block list of malicious hosts that are being used for malware distribution. Smaller than the official version with de-duplicated malware domains",
                             DescriptionSourceUrl = "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/urlhaus-filter",
                             IssuesUrl = "https://gitlab.com/curben/urlhaus-filter/issues",
                             LicenseId = (short)28,
-                            Name = "urlhaus-filter (Domains)",
+                            Name = "urlhaus-filter-hosts",
                             SyntaxId = (short)2,
                             UpdatedDate = new DateTime(2019, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt",
@@ -20741,12 +20743,12 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)1880,
-                            Description = "A blocklist of malicious URLs that are being used for malware distribution.",
+                            Description = "A block list of malicious hosts that are being used for malware distribution. This is a lite version by including online hosts only.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/urlhaus-filter",
                             IssuesUrl = "https://gitlab.com/curben/urlhaus-filter/issues",
                             LicenseId = (short)28,
-                            Name = "urlhaus-filter (Online Domains)",
+                            Name = "urlhaus-filter-hosts-online",
                             SyntaxId = (short)2,
                             UpdatedDate = new DateTime(2019, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt",
@@ -23738,34 +23740,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             ViewUrl = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/UndertaleRemoverForSoundCloud.txt",
                             ViewUrlMirror1 = "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/UndertaleRemoverForSoundCloud.txt",
                             ViewUrlMirror2 = "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/UndertaleRemoverForSoundCloud.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2164,
-                            Description = "A blocklist of malicious URLs that are being used for malware distribution.",
-                            DescriptionSourceUrl = "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
-                            HomeUrl = "https://gitlab.com/curben/urlhaus-filter",
-                            IssuesUrl = "https://gitlab.com/curben/urlhaus-filter/issues",
-                            LicenseId = (short)28,
-                            Name = "urlhaus-filter (dnsmasq)",
-                            SyntaxId = (short)20,
-                            ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf",
-                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf",
-                            ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf"
-                        },
-                        new
-                        {
-                            Id = (short)2165,
-                            Description = "A blocklist of malicious URLs that are being used for malware distribution.",
-                            DescriptionSourceUrl = "https://gitlab.com/curben/urlhaus-filter/blob/master/README.md",
-                            HomeUrl = "https://gitlab.com/curben/urlhaus-filter",
-                            IssuesUrl = "https://gitlab.com/curben/urlhaus-filter/issues",
-                            LicenseId = (short)28,
-                            Name = "urlhaus-filter (Online Domains - dnsmasq)",
-                            SyntaxId = (short)20,
-                            ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf",
-                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf",
-                            ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf"
                         });
                 });
 
@@ -44631,16 +44605,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
-                            FilterListId = (short)1879,
-                            TagId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = (short)1880,
-                            TagId = (short)6
-                        },
-                        new
-                        {
                             FilterListId = (short)1881,
                             TagId = (short)2
                         },
@@ -46953,16 +46917,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)2163,
                             TagId = (short)15
-                        },
-                        new
-                        {
-                            FilterListId = (short)2164,
-                            TagId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = (short)2165,
-                            TagId = (short)6
                         });
                 });
 
