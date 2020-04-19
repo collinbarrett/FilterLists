@@ -21657,18 +21657,18 @@
     "id": 2153,
     "homeUrl": "https://github.com/tomzuu/blacklist-named",
     "issuesUrl": "https://github.com/tomzuu/blacklist-named/issues",
-    "licenseId": 7,
-    "name": "Malware Domain List (dnsmasq)",
-    "syntaxId": 20,
+    "licenseId": 5,
+    "name": "Blacklist Named - Malware",
+    "syntaxId": 26,
     "viewUrl": "https://raw.githubusercontent.com/tomzuu/blacklist-named/master/malwaredomainlist.conf"
   },
   {
     "id": 2154,
     "homeUrl": "https://github.com/tomzuu/blacklist-named",
     "issuesUrl": "https://github.com/tomzuu/blacklist-named/issues",
-    "licenseId": 7,
-    "name": "DNS-BH Malware Domains (dnsmasq)",
-    "syntaxId": 20,
+    "licenseId": 5,
+    "name": "Blacklist Named - DNS-BH Malware Domains",
+    "syntaxId": 26,
     "viewUrl": "https://raw.githubusercontent.com/tomzuu/blacklist-named/master/cedia_justdomains.conf"
   },
   {
