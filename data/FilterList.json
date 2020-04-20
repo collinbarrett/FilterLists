@@ -21757,19 +21757,19 @@
     "viewUrl": "https://raw.githubusercontent.com/hg1978/AdGuard-Home-Whitelist/master/whitelist.txt"
   },
   {
-  "id": 2162,
-"description": "List containing fake local journals from a state-backed disinformation operation.",
-"descriptionSourceUrl": "https://github.com/MassMove/AttackVectors/",
-"homeUrl": "https://github.com/MassMove/AttackVectors/",
-"issuesUrl": "https://github.com/MassMove/AttackVectors/issues",
-"submissionUrl": "https://github.com/MassMove/AttackVectors/issues/new",
-"licenseId": 2,
-"name": "Fake-Local-Journals-List",
-"publishedDate": "2020-04-02T00:00:00",
-"syntaxId": 2,
-"viewUrl": "https://raw.githubusercontent.com/MassMove/AttackVectors/master/LocalJournals/fake-local-journals-list.txt"
-},
-{
+    "id": 2162,
+    "description": "List containing fake local journals from a state-backed disinformation operation.",
+    "descriptionSourceUrl": "https://github.com/MassMove/AttackVectors/",
+    "homeUrl": "https://github.com/MassMove/AttackVectors/",
+    "issuesUrl": "https://github.com/MassMove/AttackVectors/issues",
+    "submissionUrl": "https://github.com/MassMove/AttackVectors/issues/new",
+    "licenseId": 2,
+    "name": "Fake-Local-Journals-List",
+    "publishedDate": "2020-04-02T00:00:00",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/MassMove/AttackVectors/master/LocalJournals/fake-local-journals-list.txt"
+  },
+  {
     "id": 2163,
     "description": "There's simply too many Undertale and Deltarune songs, remixes, and mashups on SoundCloud. Sometimes a list doesn't really need any more reasons to exist than that.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
