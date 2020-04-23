@@ -37,7 +37,7 @@ import img37 from "./37-Shadowrocket.png";
 import img38 from "./38-DNSRedirector.png";
 import img39 from "./39-pfBlockerNG.png";
 import img40 from "./40-Opera.png";
-import img40 from "./41-Surge.png";
+import img41 from "./41-Surge.png";
 
 export {
   img01,
