@@ -76,7 +76,7 @@
   {
     "id": 18,
     "definitionUrl": "https://help.obdev.at/littlesnitch/lsc-rule-group-subscriptions",
-    "name": "Little Snitch subscription-style rules"
+    "name": "Little Snitch subscription rules"
   },
   {
     "id": 19,
@@ -90,7 +90,7 @@
   {
     "id": 21,
     "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name",
-    "name": "uBlock Origin !#include-tag compilation"
+    "name": "!#include compilation"
   },
   {
     "id": 22,
@@ -195,6 +195,6 @@
   },
   {
     "id": 46,
-    "name": "''$important'' and ''$empty'' domains only"
+    "name": "''$important''/''$empty'' only"
   }
 ]
