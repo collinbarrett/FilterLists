@@ -362,14 +362,13 @@
   {
     "id": 47,
     "description": "This classification is assigned for domains being used for advert or tracking purposes.",
-    "descriptionSourceUrl": "https://hosts-file.net/?s=classifications",
     "forumUrl": "https://forum.hosts-file.net/",
-    "homeUrl": "https://hosts-file.net/",
     "licenseId": 5,
     "name": "hpHosts ATS",
     "syntaxId": 1,
     "updatedDate": "2019-03-08T18:54:09",
-    "viewUrl": "https://raw.githubusercontent.com/NanoMeow/UltimateMirror/master/archive/hphosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/NanoMeow/UltimateMirror/master/archive/hphosts.txt",
+    "viewUrlMirror1": "https://v.firebog.net/hosts/static/HPHosts/HostsAdServers.txt"
   },
   {
     "id": 49,
@@ -3409,14 +3408,14 @@
   {
     "id": 329,
     "description": "A hosts file for Chinese websites.",
-    "homeUrl": "https://github.com/vokins/yhosts",
-    "issuesUrl": "https://github.com/vokins/yhosts/issues",
+    "homeUrl": "https://github.com/VeleSila/yhosts",
+    "issuesUrl": "https://github.com/VeleSila/yhosts/issues",
     "licenseId": 1,
     "name": "Yhosts",
     "publishedDate": "2016-01-12T12:53:17",
     "syntaxId": 1,
     "updatedDate": "2019-04-11T02:19:59",
-    "viewUrl": "https://raw.githubusercontent.com/vokins/yhosts/master/hosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt"
   },
   {
     "id": 330,
@@ -21014,111 +21013,12 @@
   },
   {
     "id": 2087,
-    "description": "Blocklists based on articles published by security research groups.",
-    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
-    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
-    "name": "Hosts Blocklists — CERT-PA",
+    "description": "Blocklist based on articles published by security research groups.",
+    "homeUrl": "https://github.com/scafroglia93/blocklists/",
+    "issuesUrl": "https://github.com/scafroglia93/blocklists/issues",
+    "name": "scafroglia93's Hosts Blocklists",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/cert-pa.txt"
-  },
-  {
-    "id": 2088,
-    "description": "Blocklists based on articles published by security research groups.",
-    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
-    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
-    "name": "Hosts Blocklists — Checkpoint",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/checkpoint.txt"
-  },
-  {
-    "id": 2089,
-    "description": "Blocklists based on articles published by security research groups.",
-    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
-    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
-    "name": "Hosts Blocklists — Citizen Lab",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/citizenlab.txt"
-  },
-  {
-    "id": 2090,
-    "description": "Blocklists based on articles published by security research groups.",
-    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
-    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
-    "name": "Hosts Blocklists — ESET",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/eset.txt"
-  },
-  {
-    "id": 2091,
-    "description": "Blocklists based on articles published by security research groups.",
-    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
-    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
-    "name": "Hosts Blocklists — Kaspersky",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/kaspersky.txt"
-  },
-  {
-    "id": 2092,
-    "description": "Blocklists based on articles published by security research groups.",
-    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
-    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
-    "name": "Hosts Blocklists — Malware-Traffic-Analysis",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/malware-traffic-analysis.txt"
-  },
-  {
-    "id": 2093,
-    "description": "Blocklists based on articles published by security research groups.",
-    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
-    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
-    "name": "Hosts Blocklists — Unit 42",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/pan-unit42.txt"
-  },
-  {
-    "id": 2094,
-    "description": "Blocklists based on articles published by security research groups.",
-    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
-    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
-    "name": "Hosts Blocklists — Sophos",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/sophos.txt"
-  },
-  {
-    "id": 2095,
-    "description": "Blocklists based on articles published by security research groups.",
-    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
-    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
-    "name": "Hosts Blocklists — Symantec",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/symantec.txt"
-  },
-  {
-    "id": 2096,
-    "description": "Blocklists based on articles published by security research groups.",
-    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
-    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
-    "name": "Hosts Blocklists — TG Soft",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/tgsoft.txt"
-  },
-  {
-    "id": 2097,
-    "description": "Blocklists based on articles published by security research groups.",
-    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
-    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
-    "name": "Hosts Blocklists — Yoroi",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/yoroi.txt"
-  },
-  {
-    "id": 2098,
-    "description": "Blocklists based on articles published by security research groups.",
-    "homeUrl": "https://github.com/scafroglia93/hosts-blocklists/",
-    "issuesUrl": "https://github.com/scafroglia93/hosts-blocklists/issues",
-    "name": "Hosts Blocklists — Zscaler",
-    "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/zscaler.txt"
+    "viewUrl": "https://raw.githubusercontent.com/scafroglia93/blocklists/master/blocklists-main.txt"
   },
   {
     "id": 2099,
@@ -21886,5 +21786,121 @@
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf",
     "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf"
+  },
+  {
+    "id": 2172,
+    "description": "Sites engaged in spreading malware",
+    "licenseId": 5,
+    "name": "hpHosts EMD",
+    "syntaxId": 1,
+    "viewUrl": "https://v.firebog.net/hosts/static/HPHosts/Hostsemd.txt"
+  },
+  {
+    "id": 2173,
+    "description": "Sites engaged in the housing, development or distribution of exploits, including but not limited to exploitation of browser, software (inclusive of website software such as CMS), operating system exploits aswell as those engaged in exploits via social engineering.",
+    "licenseId": 5,
+    "name": "hpHosts EXP",
+    "syntaxId": 1,
+    "viewUrl": "https://v.firebog.net/hosts/static/HPHosts/Hostsexp.txt"
+  },
+  {
+    "id": 2174,
+    "description": "Sites engaged in astroturfing (otherwise known as grass roots marketing) or spamming",
+    "licenseId": 5,
+    "name": "hpHosts GRM",
+    "syntaxId": 1,
+    "viewUrl": "https://v.firebog.net/hosts/static/HPHosts/Hostsgrm.txt"
+  },
+  {
+    "id": 2175,
+    "description": "Sites engaged in the selling or distribution of bogus or fraudulent applications and/or provision of fraudulent services.",
+    "licenseId": 5,
+    "name": "hpHosts FSA",
+    "syntaxId": 1,
+    "viewUrl": "https://v.firebog.net/hosts/static/HPHosts/Hostsfsa.txt"
+  },
+  {
+    "id": 2176,
+    "description": "Sites engaged in the use of misleading marketing tactics",
+    "licenseId": 5,
+    "name": "hpHosts MMT",
+    "syntaxId": 1,
+    "viewUrl": "https://v.firebog.net/hosts/static/HPHosts/Hostsmmt.txt"
+  },
+  {
+    "id": 2177,
+    "description": "Sites engaged in illegal pharmacy activities",
+    "licenseId": 5,
+    "name": "hpHosts PHA",
+    "syntaxId": 1,
+    "viewUrl": "https://v.firebog.net/hosts/static/HPHosts/Hostspha.txt"
+  },
+  {
+    "id": 2178,
+    "description": "Sites engaged in Phishing",
+    "licenseId": 5,
+    "name": "hpHosts PSH",
+    "syntaxId": 1,
+    "viewUrl": "https://v.firebog.net/hosts/static/HPHosts/Hostspsh.txt"
+  },
+  {
+    "id": 2179,
+    "description": "This is an Adblock Latitude filter subscription list; it blocks ads and some trackers.",
+    "descriptionSourceUrl": "https://github.com/wolfbeast/lunarblocklist#lunar-blocklist",
+    "homeUrl": "https://github.com/wolfbeast/lunarblocklist",
+    "issuesUrl": "https://github.com/wolfbeast/lunarblocklist/issues",
+    "licenseId": 2,
+    "name": "Lunar Blocklist",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/wolfbeast/lunarblocklist/master/list/lunar-blocklist.txt",
+    "viewUrlMirror1": "https://blocklist.palemoon.org/ABL/lunar-blocklist.txt"
+  },
+  {
+    "id": 2180,
+    "homeUrl": "https://mirai.security.gives/",
+    "licenseId": 2,
+    "name": "Mirai Tracker",
+    "syntaxId": 9,
+    "viewUrl": "https://mirai.security.gives/data/ip_list.txt"
+  },
+  {
+    "id": 2181,
+    "description": "Maltrail is a malicious traffic detection system, utilizing publicly available (black)lists containing malicious and/or generally suspicious trails, along with static trails compiled from various AV reports and custom user defined lists.",
+    "homeUrl": "https://github.com/stamparm/maltrail",
+    "issuesUrl": "https://github.com/stamparm/maltrail/issues",
+    "licenseId": 2,
+    "name": "Maltrail - Crypto Mining",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/suspicious/crypto_mining.txt"
+  },
+  {
+    "id": 2182,
+    "description": "Maltrail is a malicious traffic detection system, utilizing publicly available (black)lists containing malicious and/or generally suspicious trails, along with static trails compiled from various AV reports and custom user defined lists.",
+    "homeUrl": "https://github.com/stamparm/maltrail",
+    "issuesUrl": "https://github.com/stamparm/maltrail/issues",
+    "licenseId": 2,
+    "name": "Maltrail - Dynamic Domains",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/suspicious/dynamic_domain.txt"
+  },
+  {
+    "id": 2183,
+    "description": "Maltrail is a malicious traffic detection system, utilizing publicly available (black)lists containing malicious and/or generally suspicious trails, along with static trails compiled from various AV reports and custom user defined lists.",
+    "homeUrl": "https://github.com/stamparm/maltrail",
+    "issuesUrl": "https://github.com/stamparm/maltrail/issues",
+    "licenseId": 2,
+    "name": "Maltrail - Rogue DNS",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/suspicious/rogue_dns.txt"
+  },
+  {
+    "id": 2184,
+    "description": "Maltrail is a malicious traffic detection system, utilizing publicly available (black)lists containing malicious and/or generally suspicious trails, along with static trails compiled from various AV reports and custom user defined lists.",
+    "homeUrl": "https://github.com/stamparm/maltrail",
+    "issuesUrl": "https://github.com/stamparm/maltrail/issues",
+    "licenseId": 2,
+    "name": "Maltrail - MagentoCore",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/malicious/magentocore.txt"
   }
 ]
