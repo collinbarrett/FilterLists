@@ -500,13 +500,14 @@ namespace FilterLists.Api.Migrations
                         {
                             Id = (short)47,
                             Description = "This classification is assigned for domains being used for advert or tracking purposes.",
+                            DescriptionSourceUrl = "https://hosts-file.net/?s=classifications",
                             ForumUrl = "https://forum.hosts-file.net/",
+                            HomeUrl = "https://hosts-file.net/",
                             LicenseId = (short)5,
                             Name = "hpHosts ATS",
                             SyntaxId = (short)1,
                             UpdatedDate = new DateTime(2019, 3, 8, 18, 54, 9, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/NanoMeow/UltimateMirror/master/archive/hphosts.txt",
-                            ViewUrlMirror1 = "https://v.firebog.net/hosts/static/HPHosts/HostsAdServers.txt"
+                            ViewUrl = "https://raw.githubusercontent.com/NanoMeow/UltimateMirror/master/archive/hphosts.txt"
                         },
                         new
                         {
@@ -3781,14 +3782,14 @@ namespace FilterLists.Api.Migrations
                         {
                             Id = (short)329,
                             Description = "A hosts file for Chinese websites.",
-                            HomeUrl = "https://github.com/VeleSila/yhosts",
-                            IssuesUrl = "https://github.com/VeleSila/yhosts/issues",
+                            HomeUrl = "https://github.com/vokins/yhosts",
+                            IssuesUrl = "https://github.com/vokins/yhosts/issues",
                             LicenseId = (short)1,
                             Name = "Yhosts",
                             PublishedDate = new DateTime(2016, 1, 12, 12, 53, 17, 0, DateTimeKind.Unspecified),
                             SyntaxId = (short)1,
                             UpdatedDate = new DateTime(2019, 4, 11, 2, 19, 59, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt"
+                            ViewUrl = "https://raw.githubusercontent.com/vokins/yhosts/master/hosts.txt"
                         },
                         new
                         {
@@ -22894,12 +22895,122 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)2087,
-                            Description = "Blocklist based on articles published by security research groups.",
-                            HomeUrl = "https://github.com/scafroglia93/blocklists/",
-                            IssuesUrl = "https://github.com/scafroglia93/blocklists/issues",
-                            Name = "scafroglia93's Hosts Blocklists",
+                            Description = "Blocklists based on articles published by security research groups.",
+                            HomeUrl = "https://github.com/scafroglia93/hosts-blocklists/",
+                            IssuesUrl = "https://github.com/scafroglia93/hosts-blocklists/issues",
+                            Name = "Hosts Blocklists — CERT-PA",
                             SyntaxId = (short)2,
-                            ViewUrl = "https://raw.githubusercontent.com/scafroglia93/blocklists/master/blocklists-main.txt"
+                            ViewUrl = "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/cert-pa.txt"
+                        },
+                        new
+                        {
+                            Id = (short)2088,
+                            Description = "Blocklists based on articles published by security research groups.",
+                            HomeUrl = "https://github.com/scafroglia93/hosts-blocklists/",
+                            IssuesUrl = "https://github.com/scafroglia93/hosts-blocklists/issues",
+                            Name = "Hosts Blocklists — Checkpoint",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/checkpoint.txt"
+                        },
+                        new
+                        {
+                            Id = (short)2089,
+                            Description = "Blocklists based on articles published by security research groups.",
+                            HomeUrl = "https://github.com/scafroglia93/hosts-blocklists/",
+                            IssuesUrl = "https://github.com/scafroglia93/hosts-blocklists/issues",
+                            Name = "Hosts Blocklists — Citizen Lab",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/citizenlab.txt"
+                        },
+                        new
+                        {
+                            Id = (short)2090,
+                            Description = "Blocklists based on articles published by security research groups.",
+                            HomeUrl = "https://github.com/scafroglia93/hosts-blocklists/",
+                            IssuesUrl = "https://github.com/scafroglia93/hosts-blocklists/issues",
+                            Name = "Hosts Blocklists — ESET",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/eset.txt"
+                        },
+                        new
+                        {
+                            Id = (short)2091,
+                            Description = "Blocklists based on articles published by security research groups.",
+                            HomeUrl = "https://github.com/scafroglia93/hosts-blocklists/",
+                            IssuesUrl = "https://github.com/scafroglia93/hosts-blocklists/issues",
+                            Name = "Hosts Blocklists — Kaspersky",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/kaspersky.txt"
+                        },
+                        new
+                        {
+                            Id = (short)2092,
+                            Description = "Blocklists based on articles published by security research groups.",
+                            HomeUrl = "https://github.com/scafroglia93/hosts-blocklists/",
+                            IssuesUrl = "https://github.com/scafroglia93/hosts-blocklists/issues",
+                            Name = "Hosts Blocklists — Malware-Traffic-Analysis",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/malware-traffic-analysis.txt"
+                        },
+                        new
+                        {
+                            Id = (short)2093,
+                            Description = "Blocklists based on articles published by security research groups.",
+                            HomeUrl = "https://github.com/scafroglia93/hosts-blocklists/",
+                            IssuesUrl = "https://github.com/scafroglia93/hosts-blocklists/issues",
+                            Name = "Hosts Blocklists — Unit 42",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/pan-unit42.txt"
+                        },
+                        new
+                        {
+                            Id = (short)2094,
+                            Description = "Blocklists based on articles published by security research groups.",
+                            HomeUrl = "https://github.com/scafroglia93/hosts-blocklists/",
+                            IssuesUrl = "https://github.com/scafroglia93/hosts-blocklists/issues",
+                            Name = "Hosts Blocklists — Sophos",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/sophos.txt"
+                        },
+                        new
+                        {
+                            Id = (short)2095,
+                            Description = "Blocklists based on articles published by security research groups.",
+                            HomeUrl = "https://github.com/scafroglia93/hosts-blocklists/",
+                            IssuesUrl = "https://github.com/scafroglia93/hosts-blocklists/issues",
+                            Name = "Hosts Blocklists — Symantec",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/symantec.txt"
+                        },
+                        new
+                        {
+                            Id = (short)2096,
+                            Description = "Blocklists based on articles published by security research groups.",
+                            HomeUrl = "https://github.com/scafroglia93/hosts-blocklists/",
+                            IssuesUrl = "https://github.com/scafroglia93/hosts-blocklists/issues",
+                            Name = "Hosts Blocklists — TG Soft",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/tgsoft.txt"
+                        },
+                        new
+                        {
+                            Id = (short)2097,
+                            Description = "Blocklists based on articles published by security research groups.",
+                            HomeUrl = "https://github.com/scafroglia93/hosts-blocklists/",
+                            IssuesUrl = "https://github.com/scafroglia93/hosts-blocklists/issues",
+                            Name = "Hosts Blocklists — Yoroi",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/yoroi.txt"
+                        },
+                        new
+                        {
+                            Id = (short)2098,
+                            Description = "Blocklists based on articles published by security research groups.",
+                            HomeUrl = "https://github.com/scafroglia93/hosts-blocklists/",
+                            IssuesUrl = "https://github.com/scafroglia93/hosts-blocklists/issues",
+                            Name = "Hosts Blocklists — Zscaler",
+                            SyntaxId = (short)2,
+                            ViewUrl = "https://raw.githubusercontent.com/scafroglia93/hosts-blocklists/master/zscaler.txt"
                         },
                         new
                         {
@@ -23739,135 +23850,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf",
                             ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf"
-                        },
-                        new
-                        {
-                            Id = (short)2172,
-                            Description = "Sites engaged in spreading malware",
-                            LicenseId = (short)5,
-                            Name = "hpHosts EMD",
-                            SyntaxId = (short)1,
-                            ViewUrl = "https://v.firebog.net/hosts/static/HPHosts/Hostsemd.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2173,
-                            Description = "Sites engaged in the housing, development or distribution of exploits, including but not limited to exploitation of browser, software (inclusive of website software such as CMS), operating system exploits aswell as those engaged in exploits via social engineering.",
-                            LicenseId = (short)5,
-                            Name = "hpHosts EXP",
-                            SyntaxId = (short)1,
-                            ViewUrl = "https://v.firebog.net/hosts/static/HPHosts/Hostsexp.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2174,
-                            Description = "Sites engaged in astroturfing (otherwise known as grass roots marketing) or spamming",
-                            LicenseId = (short)5,
-                            Name = "hpHosts GRM",
-                            SyntaxId = (short)1,
-                            ViewUrl = "https://v.firebog.net/hosts/static/HPHosts/Hostsgrm.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2175,
-                            Description = "Sites engaged in the selling or distribution of bogus or fraudulent applications and/or provision of fraudulent services.",
-                            LicenseId = (short)5,
-                            Name = "hpHosts FSA",
-                            SyntaxId = (short)1,
-                            ViewUrl = "https://v.firebog.net/hosts/static/HPHosts/Hostsfsa.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2176,
-                            Description = "Sites engaged in the use of misleading marketing tactics",
-                            LicenseId = (short)5,
-                            Name = "hpHosts MMT",
-                            SyntaxId = (short)1,
-                            ViewUrl = "https://v.firebog.net/hosts/static/HPHosts/Hostsmmt.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2177,
-                            Description = "Sites engaged in illegal pharmacy activities",
-                            LicenseId = (short)5,
-                            Name = "hpHosts PHA",
-                            SyntaxId = (short)1,
-                            ViewUrl = "https://v.firebog.net/hosts/static/HPHosts/Hostspha.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2178,
-                            Description = "Sites engaged in Phishing",
-                            LicenseId = (short)5,
-                            Name = "hpHosts PSH",
-                            SyntaxId = (short)1,
-                            ViewUrl = "https://v.firebog.net/hosts/static/HPHosts/Hostspsh.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2179,
-                            Description = "This is an Adblock Latitude filter subscription list; it blocks ads and some trackers.",
-                            DescriptionSourceUrl = "https://github.com/wolfbeast/lunarblocklist#lunar-blocklist",
-                            HomeUrl = "https://github.com/wolfbeast/lunarblocklist",
-                            IssuesUrl = "https://github.com/wolfbeast/lunarblocklist/issues",
-                            LicenseId = (short)2,
-                            Name = "Lunar Blocklist",
-                            SyntaxId = (short)3,
-                            ViewUrl = "https://raw.githubusercontent.com/wolfbeast/lunarblocklist/master/list/lunar-blocklist.txt",
-                            ViewUrlMirror1 = "https://blocklist.palemoon.org/ABL/lunar-blocklist.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2180,
-                            HomeUrl = "https://mirai.security.gives/",
-                            LicenseId = (short)2,
-                            Name = "Mirai Tracker",
-                            SyntaxId = (short)9,
-                            ViewUrl = "https://mirai.security.gives/data/ip_list.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2181,
-                            Description = "Maltrail is a malicious traffic detection system, utilizing publicly available (black)lists containing malicious and/or generally suspicious trails, along with static trails compiled from various AV reports and custom user defined lists.",
-                            HomeUrl = "https://github.com/stamparm/maltrail",
-                            IssuesUrl = "https://github.com/stamparm/maltrail/issues",
-                            LicenseId = (short)2,
-                            Name = "Maltrail - Crypto Mining",
-                            SyntaxId = (short)2,
-                            ViewUrl = "https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/suspicious/crypto_mining.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2182,
-                            Description = "Maltrail is a malicious traffic detection system, utilizing publicly available (black)lists containing malicious and/or generally suspicious trails, along with static trails compiled from various AV reports and custom user defined lists.",
-                            HomeUrl = "https://github.com/stamparm/maltrail",
-                            IssuesUrl = "https://github.com/stamparm/maltrail/issues",
-                            LicenseId = (short)2,
-                            Name = "Maltrail - Dynamic Domains",
-                            SyntaxId = (short)2,
-                            ViewUrl = "https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/suspicious/dynamic_domain.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2183,
-                            Description = "Maltrail is a malicious traffic detection system, utilizing publicly available (black)lists containing malicious and/or generally suspicious trails, along with static trails compiled from various AV reports and custom user defined lists.",
-                            HomeUrl = "https://github.com/stamparm/maltrail",
-                            IssuesUrl = "https://github.com/stamparm/maltrail/issues",
-                            LicenseId = (short)2,
-                            Name = "Maltrail - Rogue DNS",
-                            SyntaxId = (short)2,
-                            ViewUrl = "https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/suspicious/rogue_dns.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2184,
-                            Description = "Maltrail is a malicious traffic detection system, utilizing publicly available (black)lists containing malicious and/or generally suspicious trails, along with static trails compiled from various AV reports and custom user defined lists.",
-                            HomeUrl = "https://github.com/stamparm/maltrail",
-                            IssuesUrl = "https://github.com/stamparm/maltrail/issues",
-                            LicenseId = (short)2,
-                            Name = "Maltrail - MagentoCore",
-                            SyntaxId = (short)4,
-                            ViewUrl = "https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/malicious/magentocore.txt"
                         });
                 });
 
@@ -28972,6 +28954,11 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)325,
                             MaintainerId = (short)35
+                        },
+                        new
+                        {
+                            FilterListId = (short)329,
+                            MaintainerId = (short)37
                         },
                         new
                         {
@@ -35374,7 +35361,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             FilterListId = (short)285,
-                            TagId = (short)37
+                            TagId = (short)14
                         },
                         new
                         {
@@ -40229,12 +40216,12 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             FilterListId = (short)1331,
-                            TagId = (short)37
+                            TagId = (short)15
                         },
                         new
                         {
                             FilterListId = (short)1332,
-                            TagId = (short)37
+                            TagId = (short)15
                         },
                         new
                         {
@@ -46133,6 +46120,61 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
+                            FilterListId = (short)2088,
+                            TagId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = (short)2089,
+                            TagId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = (short)2090,
+                            TagId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = (short)2091,
+                            TagId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = (short)2092,
+                            TagId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = (short)2093,
+                            TagId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = (short)2094,
+                            TagId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = (short)2095,
+                            TagId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = (short)2096,
+                            TagId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = (short)2097,
+                            TagId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = (short)2098,
+                            TagId = (short)6
+                        },
+                        new
+                        {
                             FilterListId = (short)2099,
                             TagId = (short)6
                         },
@@ -47035,76 +47077,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)2171,
                             TagId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = (short)2182,
-                            TagId = (short)37
-                        },
-                        new
-                        {
-                            FilterListId = (short)2172,
-                            TagId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = (short)2173,
-                            TagId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = (short)2174,
-                            TagId = (short)21
-                        },
-                        new
-                        {
-                            FilterListId = (short)2175,
-                            TagId = (short)7
-                        },
-                        new
-                        {
-                            FilterListId = (short)2176,
-                            TagId = (short)7
-                        },
-                        new
-                        {
-                            FilterListId = (short)2177,
-                            TagId = (short)7
-                        },
-                        new
-                        {
-                            FilterListId = (short)2178,
-                            TagId = (short)7
-                        },
-                        new
-                        {
-                            FilterListId = (short)2179,
-                            TagId = (short)2
-                        },
-                        new
-                        {
-                            FilterListId = (short)2179,
-                            TagId = (short)3
-                        },
-                        new
-                        {
-                            FilterListId = (short)2180,
-                            TagId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = (short)2181,
-                            TagId = (short)1
-                        },
-                        new
-                        {
-                            FilterListId = (short)2183,
-                            TagId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = (short)2184,
-                            TagId = (short)7
                         });
                 });
 
@@ -48152,11 +48124,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         },
                         new
                         {
-                            SyntaxId = (short)29,
-                            SoftwareId = (short)41
-                        },
-                        new
-                        {
                             SyntaxId = (short)30,
                             SoftwareId = (short)14
                         },
@@ -48309,11 +48276,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             SyntaxId = (short)35,
                             SoftwareId = (short)39
-                        },
-                        new
-                        {
-                            SyntaxId = (short)36,
-                            SoftwareId = (short)1
                         },
                         new
                         {
@@ -52338,14 +52300,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             HomeUrl = "https://www.opera.com/",
                             IsAbpSubscribable = true,
                             Name = "Opera's built-in adblocker"
-                        },
-                        new
-                        {
-                            Id = (short)41,
-                            DownloadUrl = "https://nssurge.com/mac/v3/Surge-latest.zip",
-                            HomeUrl = "https://nssurge.com/",
-                            IsAbpSubscribable = false,
-                            Name = "Surge"
                         });
                 });
 
@@ -52474,7 +52428,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             Id = (short)18,
                             DefinitionUrl = "https://help.obdev.at/littlesnitch/lsc-rule-group-subscriptions",
-                            Name = "Little Snitch subscription rules"
+                            Name = "Little Snitch subscription-style rules"
                         },
                         new
                         {
@@ -52491,7 +52445,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             Id = (short)21,
                             DefinitionUrl = "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name",
-                            Name = "!#include compilation"
+                            Name = "uBlock Origin !#include-tag compilation"
                         },
                         new
                         {
@@ -52621,7 +52575,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)46,
-                            Name = "''$important''/''$empty'' only"
+                            Name = "''$important'' and ''$empty'' domains only"
                         });
                 });
 
@@ -52871,12 +52825,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Id = (short)36,
                             Description = "These lists are known to be so big as to begin to cause loading and processing issues on weaker units, e.g. old phones",
                             Name = "≥250K entries"
-                        },
-                        new
-                        {
-                            Id = (short)37,
-                            Description = "Blocks Dynamic DNS (DDNS) address providers and hosts",
-                            Name = "dynamic-domains"
                         });
                 });
 
