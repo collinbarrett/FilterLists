@@ -258,5 +258,12 @@
     "homeUrl": "https://www.opera.com/",
     "isAbpSubscribable": true,
     "name": "Opera's built-in adblocker"
+  },
+  {
+    "id": 41,
+    "downloadUrl": "https://nssurge.com/mac/v3/Surge-latest.zip",
+    "homeUrl": "https://nssurge.com/",
+    "isAbpSubscribable": false,
+    "name": "Surge"
   }
 ]
