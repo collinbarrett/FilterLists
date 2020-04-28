@@ -43,7 +43,6 @@ const MirrorButtons = (props: MirrorButtonsProps) => (
           <SubscribeButton
             key={`GitCDN`}
             name={props.name}
-            viewUrl={viewUrl}
             text={`Subscribe (GitCDN)`}
           />
         ))
