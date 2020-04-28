@@ -107,7 +107,7 @@ const buildButtonProps = (name: string, viewUrl: string) => {
     message = `Subscribe to ${name} with Little Snitch's rule group subscription feature.`;
   }
   
-  if (key.includes("GitCDN")) {
+  if (text.includes("GitCDN")) {
     viewUrl.replace("https://raw.githubusercontent.com/", "https://gitcdn.xyz/repo/")
   }
 
