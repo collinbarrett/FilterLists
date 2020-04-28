@@ -109,7 +109,6 @@ const buildButtonProps = (name: string, viewUrl: string) => {
   if (key.includes("GitCDN")) {
     viewUrl.replace("https://raw.githubusercontent.com/", "https://gitcdn.xyz/repo/")
   }
-  )
 
   const title = `${
     prefixes.length ? prefixes.join(" | ") + " | " : ""
