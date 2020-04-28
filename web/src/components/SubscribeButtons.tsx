@@ -39,7 +39,7 @@ const MirrorButtons = (props: MirrorButtonsProps) => (
         ))
       : null}
     {props.viewUrlMirrors && props.viewUrlMirrors.length
-      ? props.viewUrl => (
+      ? props.viewUrl : (
           <SubscribeButton
             key={`GitCDN`}
             name={props.name}
