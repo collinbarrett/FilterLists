@@ -24,6 +24,7 @@ export const SubscribeButtons = (props: Props) =>
 interface MirrorButtonsProps {
   name: string;
   viewUrlMirrors: string[];
+  viewUrl: string;
 }
 
 const MirrorButtons = (props: MirrorButtonsProps) => (
