@@ -38,6 +38,16 @@ const MirrorButtons = (props: MirrorButtonsProps) => (
           />
         ))
       : null}
+    {props.viewUrlMirrors && props.viewUrlMirrors.length
+      ? props.viewUrlMirrors.map((viewUrlMirror: string, i: number) => (
+          <SubscribeButton
+            key={`GitCDN`}
+            name={props.name}
+            viewUrl={viewUrl}
+            text={`Subscribe (GitCDN)`}
+          />
+        ))
+      : null}
   </>
 );
 
@@ -95,6 +105,12 @@ const buildButtonProps = (name: string, viewUrl: string) => {
     href = `x-littlesnitch:subscribe-rules?url=${hrefLocation}`;
     message = `Subscribe to ${name} with Little Snitch's rule group subscription feature.`;
   }
+  
+  if (
+    key.includes("GitCDN") {
+    viewUrl.replace("https://raw.githubusercontent.com/", "https://gitcdn.xyz/repo/")
+  }
+  )
 
   const title = `${
     prefixes.length ? prefixes.join(" | ") + " | " : ""
