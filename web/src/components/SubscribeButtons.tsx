@@ -17,7 +17,7 @@ export const SubscribeButtons = (props: Props) =>
         viewUrl={props.viewUrl}
         text="Subscribe"
       />
-      <MirrorButtons name={props.name} viewUrlMirrors={props.viewUrlMirrors} />
+      <MirrorButtons name={props.name} viewUrlMirrors={props.viewUrlMirrors} viewUrl={props.viewUrl} />
     </>
   ) : null;
 
