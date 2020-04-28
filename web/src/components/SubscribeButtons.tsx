@@ -46,7 +46,7 @@ const MirrorButtons = (props: MirrorButtonsProps) => (
             viewUrl={props.viewUrl}
             text={`Subscribe (GitCDN)`}
           />
-        }))
+        )
       : null}
   </>
 );
