@@ -20573,7 +20573,7 @@
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
-    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (IPv4 «Hosts»)",
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (IPv6 «Hosts»)",
     "syntaxId": 36,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsIPv6.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsIPv6.txt",
@@ -22026,7 +22026,7 @@
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YMFSMT9MW2Y6Q",
     "homeUrl": "https://github.com/bambenek/block-doh",
     "issuesUrl": "https://github.com/bambenek/block-doh/issues",
-    "licenseId": CC BY 4.0
+    "licenseId": 24,
     "name": "block-doh (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/bambenek/block-doh/master/doh-hosts.txt"
@@ -22037,9 +22037,9 @@
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YMFSMT9MW2Y6Q",
     "homeUrl": "https://github.com/bambenek/block-doh",
     "issuesUrl": "https://github.com/bambenek/block-doh/issues",
-    "licenseId": CC BY 4.0
+    "licenseId": 24,
     "name": "block-doh (IPv4 IPs)",
-    "syntaxId": ,
+    "syntaxId": 9,
     "viewUrl": "https://raw.githubusercontent.com/bambenek/block-doh/master/doh-ipv4.txt"
   },
   {
@@ -22048,14 +22048,14 @@
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YMFSMT9MW2Y6Q",
     "homeUrl": "https://github.com/bambenek/block-doh",
     "issuesUrl": "https://github.com/bambenek/block-doh/issues",
-    "licenseId": CC BY 4.0
+    "licenseId": 24,
     "name": "block-doh (IPv6 IPs)",
-    "syntaxId": ,
+    "syntaxId": 39,
     "viewUrl": "https://raw.githubusercontent.com/bambenek/block-doh/master/doh-ipv6.txt"
   },
   {
     "id": 2198,
-    "description": "AZORult is one of the most used botnets in 2019, its main purpose is to steal credentials (which puts it in the category of \"stealer\" malware). Like most of botnets, AZORult need a web panel called \"Command & Control\" (Also called C&C, C2, panel) to operate. AZORult Tracker is a C&C Tracker which focuses on this malware panel (versions 3.2 and 3.3.1, which are the most common). The main purpose of the Tracker is to reference AZORult C&C panels and to track them through time. These data can be useful for threat hunting, threat intelligence, threat streams... To display these results, AZORult Tracker offers both a website and an API for more specific searches.",
+    "description": "AZORult is one of the most used botnets in 2019, its main purpose is to steal credentials (which puts it in the category of \"stealer\" malware). Like most of botnets, AZORult need a web panel called \"Command & Control\" (Also called C&C, C2, panel) to operate. AZORult Tracker is a C&C Tracker which focuses on this malware panel (versions 3.2 and 3.3.1, which are the most common). The main purpose of the Tracker is to reference AZORult C&C panels and to track them through time. These data can be useful for threat hunting, threat intelligence, threat streams… To display these results, AZORult Tracker offers both a website and an API for more specific searches.",
     "descriptionSourceUrl": "https://azorult-tracker.net/about",
     "emailAddress": "azorult-tracker@protonmail.com",
     "homeUrl": "https://azorult-tracker.net/",
