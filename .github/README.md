@@ -4,6 +4,7 @@
 <a href="https://hub.filterlists.com"><img alt="Discourse status" src="https://img.shields.io/discourse/https/hub.filterlists.com/status.svg"></a>
 <a href="https://github.com/collinbarrett/FilterLists/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/collinbarrett/filterlists.svg"></a>
 <a href="https://builtwithdot.net/project/125/filterlists"><img src="https://builtwithdot.net/project/125/filterlists/badge" alt="BuiltWithDot.Net shield" /></a>
+<a title="MadeWithReactJs.com Shield" href="https://madewithreactjs.com/p/filterlists/shield-link"> <img src="https://madewithreactjs.com/storage/repo-shields/2335-shield.svg"/></a>
 
 <p align="center">FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</p>
 
