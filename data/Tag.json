@@ -176,12 +176,17 @@
   },
   {
     "id": 36,
-    "description": "These lists are known to be so big as to begin to cause loading and processing issues on weaker units, e.g. old phones",
+    "description": "Lists known to be so big as to begin to cause loading/processing issues on weaker units, e.g. old phones",
     "name": "≥250K entries"
   },
   {
     "id": 37,
     "description": "Blocks Dynamic DNS (DDNS) address providers and hosts",
     "name": "dynamic-domains"
+  },
+  {
+    "id": 38,
+    "description": "Pre-stable lists where maintainers are extra interested in feedback",
+    "name": "beta"
   }
 ]
