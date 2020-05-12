@@ -778,5 +778,38 @@
     "homeUrl": "https://deletescape.ch/",
     "name": "deletescape",
     "twitterHandle": "deletescape"
+  },
+  {
+    "id": 149,
+    "homeUrl": "https://github.com/InnoScorpio",
+    "name": "InnoScorpio"
+  },
+  {
+    "id": 150,
+    "homeUrl": "https://github.com/Yuki2718",
+    "name": "Yuki2718"
+  },
+  {
+    "id": 151,
+    "homeUrl": "https://nou.si/",
+    "name": "Soteria nou"
+  },
+  {
+    "id": 152,
+    "emailAddress": "daniel@danielmiessler.com",
+    "homeUrl": "https://danielmiessler.com/",
+    "name": "Daniel Miessler",
+    "twitterHandle": "danielmiessler"
+  },
+  {
+    "id": 153,
+    "emailAddress": "fabrice.prigent@ut-capitole.fr",
+    "homeUrl": "https://dsi.ut-capitole.fr/blacklists/",
+    "name": "Fabrice Prigent"
+  },
+  {
+    "id": 154,
+    "homeUrl": "https://blocklist.site/",
+    "name": "Block Lists Project"
   }
 ]
