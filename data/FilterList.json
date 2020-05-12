@@ -22368,7 +22368,7 @@
     "licenseId": 11,
     "name": "AdGuard Adblocker Extension Bypass Mitigation List",
     "syntaxId": 6,
-    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/Adguard/Adblocker_Extension_Bypass_Mitigation.txt",
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/Adguard/Adblocker_Extension_Bypass_Mitigation.txt"
   },
   {
     "id": 2222,
@@ -22378,7 +22378,7 @@
     "licenseId": 11,
     "name": "Adguard for iOS, Android, and Windows Bypass Mitigation List",
     "syntaxId": 6,
-    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/Adguard/iOS_AND_WIN_Bypass_Mitigation.txt",
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/Adguard/iOS_AND_WIN_Bypass_Mitigation.txt"
   },
   {
     "id": 2223,
@@ -22388,7 +22388,7 @@
     "licenseId": 11,
     "name": "uBlock Origin Bypass Mitigation List",
     "syntaxId": 4,
-    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/uBlock%20Origin/Attribute%20Tracking%20%26%20Bypass_Mitigation.txt",
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/uBlock%20Origin/Attribute%20Tracking%20%26%20Bypass_Mitigation.txt"
   },
   {
     "id": 2224,
@@ -22398,7 +22398,7 @@
     "licenseId": 11,
     "name": "Behind-the-Scene Mitigation for uBlock Origin",
     "syntaxId": 7,
-    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/uBlock%20Origin/Behind-The-Scene_Mitigation.txt",
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/uBlock%20Origin/Behind-The-Scene_Mitigation.txt"
   },
   {
     "id": 2225,
@@ -22408,7 +22408,7 @@
     "licenseId": 11,
     "name": "Behind-the-Scene and Bypass Mitigation for uMatrix",
     "syntaxId": 7,
-    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/uMatrix/Behind-The-Scene%20%26%20Bypass%20Mitigation.txt",
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/uMatrix/Behind-The-Scene%20%26%20Bypass%20Mitigation.txt"
   },
   {
     "id": 2226,
@@ -22418,7 +22418,7 @@
     "licenseId": 11,
     "name": "Android File Types Firewall HTTP-Only for Adguard",
     "syntaxId": 6,
-    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Android/Adguard/AG_AND-HTTP_Only.txt",
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Android/Adguard/AG_AND-HTTP_Only.txt"
   },
   {
     "id": 2227,
@@ -22428,7 +22428,7 @@
     "licenseId": 11,
     "name": "Android File Types Firewall HTTP-Only for uBlock Origin",
     "syntaxId": 4,
-    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Android/uBlock%20Origin/uBO_AND-HTTP-Only.txt",
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Android/uBlock%20Origin/uBO_AND-HTTP-Only.txt"
   },
   {
     "id": 2228,
@@ -22438,7 +22438,7 @@
     "licenseId": 11,
     "name": "Windows Files Types Firewall HTTP-Only for Adguard",
     "syntaxId": 6,
-    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Windows/Adguard/AG_WIN-HTTP_Only.txt",
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Windows/Adguard/AG_WIN-HTTP_Only.txt"
   },
   {
     "id": 2229,
@@ -22448,6 +22448,6 @@
     "licenseId": 11,
     "name": "Windows File Types Firewall HTTP-Only for uBlock Origin",
     "syntaxId": 4,
-    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Windows/uBlock%20Origin/uBO_WIN-HTTP-Only.txt",
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Windows/uBlock%20Origin/uBO_WIN-HTTP-Only.txt"
   }
 ]
