@@ -906,12 +906,13 @@
     "descriptionSourceUrl": "https://youtube.adblockplus.me/",
     "donateUrl": "https://adblockplus.org/en/donate",
     "emailAddress": "subscriptionlist@adblockplus.org",
-    "homeUrl": "https://youtube.adblockplus.me/",
+    "homeUrl": "https://hg.adblockplus.org/youtubefilters/",
     "licenseId": 5,
     "name": "YouTube: Pure Video Experience",
     "syntaxId": 3,
-    "updatedDate": "2019-04-14T14:54:11",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt"
+    "updatedDate": "2017-09-25T00:00:00",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt",
+    "viewUrlMirror1": "https://hg.adblockplus.org/youtubefilters/raw-file/default/yt_annoyances_full.txt"
   },
   {
     "id": 98,
@@ -919,12 +920,13 @@
     "descriptionSourceUrl": "https://youtube.adblockplus.me/",
     "donateUrl": "https://adblockplus.org/en/donate",
     "emailAddress": "subscriptionlist@adblockplus.org",
-    "homeUrl": "https://youtube.adblockplus.me/",
+    "homeUrl": "https://hg.adblockplus.org/youtubefilters/",
     "licenseId": 5,
     "name": "YouTube: Other Annoyances",
     "syntaxId": 3,
-    "updatedDate": "2019-04-14T15:00:11",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt"
+    "updatedDate": "2017-09-25T00:00:00",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt",
+    "viewUrlMirror1": "https://hg.adblockplus.org/youtubefilters/raw-file/default/yt_annoyances_other.txt"
   },
   {
     "id": 99,
@@ -1624,7 +1626,8 @@
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 28,
     "updatedDate": "2019-04-15T06:34:10",
-    "viewUrl": "https://filters.adtidy.org/windows/filters/15.txt"
+    "viewUrl": "https://filters.adtidy.org/windows/filters/15.txt",
+    "viewUrlMirror1": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
   },
   {
     "id": 169,
@@ -2261,12 +2264,13 @@
     "descriptionSourceUrl": "https://youtube.adblockplus.me/",
     "donateUrl": "https://adblockplus.org/en/donate",
     "emailAddress": "subscriptionlist@adblockplus.org",
-    "homeUrl": "https://youtube.adblockplus.me/",
+    "homeUrl": "https://hg.adblockplus.org/youtubefilters/",
     "licenseId": 5,
     "name": "YouTube: Remove Comments",
     "syntaxId": 3,
     "updatedDate": "2019-04-15T20:23:13",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt",
+    "viewUrlMirror1": "https://hg.adblockplus.org/youtubefilters/raw-file/default/yt_annoyances_comments.txt"
   },
   {
     "id": 232,
@@ -2289,12 +2293,13 @@
     "descriptionSourceUrl": "https://facebook.adblockplus.me/",
     "donateUrl": "https://adblockplus.org/en/donate",
     "emailAddress": "subscriptionlist@adblockplus.org",
-    "homeUrl": "https://facebook.adblockplus.me/",
+    "homeUrl": "https://hg.adblockplus.org/facebookfilters/",
     "licenseId": 5,
     "name": "Facebook Sidebar Blocker",
     "syntaxId": 3,
-    "updatedDate": "2019-04-08T08:52:10",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt"
+    "updatedDate": "2017-12-12T00:00:00",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt",
+    "viewUrlMirror1": "https://hg.adblockplus.org/facebookfilters/raw-file/default/fb_annoyances_sidebar.txt"
   },
   {
     "id": 234,
@@ -2316,12 +2321,13 @@
     "descriptionSourceUrl": "https://facebook.adblockplus.me/",
     "donateUrl": "https://adblockplus.org/en/donate",
     "emailAddress": "subscriptionlist@adblockplus.org",
-    "homeUrl": "https://facebook.adblockplus.me/",
+    "homeUrl": "https://hg.adblockplus.org/facebookfilters/",
     "licenseId": 5,
     "name": "Facebook News Feed Annoyances Blocker",
     "syntaxId": 3,
-    "updatedDate": "2019-04-08T10:11:10",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt"
+    "updatedDate": "2017-12-12T00:00:00",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt",
+    "viewUrlMirror1": "https://hg.adblockplus.org/facebookfilters/raw-file/default/fb_annoyances_newsfeed.txt"
   },
   {
     "id": 236,
@@ -2329,12 +2335,13 @@
     "descriptionSourceUrl": "https://facebook.adblockplus.me/",
     "donateUrl": "https://adblockplus.org/en/donate",
     "emailAddress": "subscriptionlist@adblockplus.org",
-    "homeUrl": "https://facebook.adblockplus.me/",
+    "homeUrl": "https://hg.adblockplus.org/facebookfilters/",
     "licenseId": 5,
     "name": "Facebook Annoyances Blocker",
     "syntaxId": 3,
-    "updatedDate": "2019-04-08T10:21:10",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt"
+    "updatedDate": "2017-12-12T00:00:00",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt",
+    "viewUrlMirror1": "https://hg.adblockplus.org/facebookfilters/raw-file/default/fb_annoyances_full.txt"
   },
   {
     "id": 237,
@@ -3159,12 +3166,13 @@
     "descriptionSourceUrl": "https://youtube.adblockplus.me/",
     "donateUrl": "https://adblockplus.org/en/donate",
     "emailAddress": "subscriptionlist@adblockplus.org",
-    "homeUrl": "https://youtube.adblockplus.me/",
+    "homeUrl": "https://hg.adblockplus.org/youtubefilters/",
     "licenseId": 5,
     "name": "YouTube: Remove Youtube Suggestions",
     "syntaxId": 3,
     "updatedDate": "2019-04-13T02:19:10",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt",
+    "viewUrlMirror1": "https://hg.adblockplus.org/youtubefilters/raw-file/default/yt_annoyances_suggestions.txt"
   },
   {
     "id": 307,
@@ -7239,7 +7247,7 @@
   {
     "id": 786,
     "homeUrl": "https://code.google.com/archive/p/liste-ar-adblock/",
-    "licenseId": 12,
+    "licenseId": 6,
     "name": "Liste AR + Liste FR + EasyList (TPL)",
     "syntaxId": 10,
     "updatedDate": "2019-04-05T22:47:12",
@@ -20637,6 +20645,7 @@
   {
     "id": 2047,
     "description": "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more. The goal is to enable a security tester to pull this repository onto a new testing box and have access to every type of list that may be needed.",
+    "donateUrl": "https://github.com/sponsors/danielmiessler",
     "homeUrl": "https://github.com/danielmiessler/SecLists/",
     "issuesUrl": "https://github.com/danielmiessler/SecLists/issues",
     "licenseId": 2,
@@ -20647,6 +20656,7 @@
   {
     "id": 2048,
     "description": "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more. The goal is to enable a security tester to pull this repository onto a new testing box and have access to every type of list that may be needed.",
+    "donateUrl": "https://github.com/sponsors/danielmiessler",
     "homeUrl": "https://github.com/danielmiessler/SecLists/",
     "issuesUrl": "https://github.com/danielmiessler/SecLists/issues",
     "licenseId": 2,
@@ -20657,6 +20667,7 @@
   {
     "id": 2049,
     "description": "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more. The goal is to enable a security tester to pull this repository onto a new testing box and have access to every type of list that may be needed.",
+    "donateUrl": "https://github.com/sponsors/danielmiessler",
     "homeUrl": "https://github.com/danielmiessler/SecLists/",
     "issuesUrl": "https://github.com/danielmiessler/SecLists/issues",
     "licenseId": 2,
@@ -20667,6 +20678,7 @@
   {
     "id": 2050,
     "description": "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more. The goal is to enable a security tester to pull this repository onto a new testing box and have access to every type of list that may be needed.",
+    "donateUrl": "https://github.com/sponsors/danielmiessler",
     "homeUrl": "https://github.com/danielmiessler/SecLists/",
     "issuesUrl": "https://github.com/danielmiessler/SecLists/issues",
     "licenseId": 2,
@@ -22286,5 +22298,156 @@
     "syntaxId": 4,
     "updatedDate": "2019-04-05T21:43:12",
     "viewUrl": "https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt"
+  },
+  {
+    "id": 2215,
+    "homeUrl": "https://github.com/stamparm/aux",
+    "issuesUrl": "https://github.com/stamparm/aux/issues",
+    "name": "Maltrail - Malware Domains",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/stamparm/aux/master/maltrail-malware-domains.txt"
+  },
+  {
+    "id": 2216,
+    "homeUrl": "https://infosharing.cybersaiyan.it/",
+    "issuesUrl": "https://github.com/CyberSaiyanIT/InfoSharing",
+    "forumUrl": "https://t.me/joinchat/Av4DDFjVkRC60YH_Lq-WVw",
+    "name": "Info Sharing Project by Cyber Saiyan - CS Pi-hole",
+    "syntaxId": 2,
+    "viewUrl": "https://infosharing.cybersaiyan.it/feeds/CS-PIHOLE"
+  },
+  {
+    "id": 2217,
+    "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses. Level 4 covers domains that show up in at least 4 of the source lists.",
+    "homeUrl": "https://github.com/stamparm/ipsum/",
+    "issuesUrl": "https://github.com/stamparm/ipsum/issues",
+    "name": "IPsum Level 4",
+    "licenseId": 20,
+    "syntaxId": 9,
+    "viewUrl": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/4.txt"
+  },
+  {
+    "id": 2218,
+    "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses. Level 5 covers domains that show up in at least 5 of the source lists.",
+    "homeUrl": "https://github.com/stamparm/ipsum/",
+    "issuesUrl": "https://github.com/stamparm/ipsum/issues",
+    "name": "IPsum Level 5",
+    "licenseId": 20,
+    "syntaxId": 9,
+    "viewUrl": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/5.txt"
+  },
+  {
+    "id": 2219,
+    "description": "IPsum is a threat intelligence feed based on 30+ different publicly available lists of suspicious and/or malicious IP addresses. All lists are automatically retrieved and parsed on a daily (24h) basis and the final result is pushed to this repository. List is made of IP addresses together with a total number of (black)list occurrence (for each). Greater the number, lesser the chance of false positive detection and/or dropping in (inbound) monitored traffic. Also, list is sorted from most (problematic) to least occurent IP addresses. Level 6 covers domains that show up in at least 6 of the source lists.",
+    "homeUrl": "https://github.com/stamparm/ipsum/",
+    "issuesUrl": "https://github.com/stamparm/ipsum/issues",
+    "name": "IPsum Level 6",
+    "licenseId": 20,
+    "syntaxId": 9,
+    "viewUrl": "https://raw.githubusercontent.com/stamparm/ipsum/master/levels/6.txt"
+  },
+  {
+    "id": 2220,
+    "description": "Normal weebery is already over-obsessive and uncreative enough already (i.e. idol projects), but this subcategory of weebery goes far and beyond anything similar in terms of undeserved attention from fans. This list will help you get back on shore and away from all those boat girls that are unlawfully occupying the internet.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'Anthro combat-equipment gacha waifu' List",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAnthroCombatWaifuList.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAnthroCombatWaifuList.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/AntiAnthroCombatWaifuList.txt"
+  },
+  {
+    "id": 2221,
+    "description": "Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing Adguard Adblocker Extension.",
+    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
+    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
+    "licenseId": 11,
+    "name": "AdGuard Adblocker Extension Bypass Mitigation List",
+    "syntaxId": 6,
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/Adguard/Adblocker_Extension_Bypass_Mitigation.txt",
+  },
+  {
+    "id": 2222,
+    "description": "Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing Adguard software for iOS, Android, and Windows.",
+    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
+    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
+    "licenseId": 11,
+    "name": "Adguard for iOS, Android, and Windows Bypass Mitigation List",
+    "syntaxId": 6,
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/Adguard/iOS_AND_WIN_Bypass_Mitigation.txt",
+  },
+  {
+    "id": 2223,
+    "description": "Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing uBlock Origin or Nano Adblocker.",
+    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
+    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
+    "licenseId": 11,
+    "name": "uBlock Origin Bypass Mitigation List",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/uBlock%20Origin/Attribute%20Tracking%20%26%20Bypass_Mitigation.txt",
+  },
+  {
+    "id": 2224,
+    "description": "Behind-the-scene network requests are network requests which uBlock or uMatrix cannot associate with a specific tab in your browser. These can be abused by extensions in your web browser or made by web pages using navigator.sendBeacon(), hyperlink auditing, etc. ",
+    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
+    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
+    "licenseId": 11,
+    "name": "Behind-the-Scene Mitigation for uBlock Origin",
+    "syntaxId": 7,
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/uBlock%20Origin/Behind-The-Scene_Mitigation.txt",
+  },
+  {
+    "id": 2225,
+    "description": "Behind-the-scene network requests are network requests which uBlock or uMatrix cannot associate with a specific tab in your browser. These can be abused by extensions in your web browser or made by web pages using navigator.sendBeacon(), hyperlink auditing, etc. Block CSP reports and pings in uMatrix.",
+    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
+    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
+    "licenseId": 11,
+    "name": "Behind-the-Scene and Bypass Mitigation for uMatrix",
+    "syntaxId": 7,
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/uMatrix/Behind-The-Scene%20%26%20Bypass%20Mitigation.txt",
+  },
+  {
+    "id": 2226,
+    "description": "Block dangerous Android file extensions from HTTP-only traffic to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for Adguard.",
+    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
+    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
+    "licenseId": 11,
+    "name": "Android File Types Firewall HTTP-Only for Adguard",
+    "syntaxId": 6,
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Android/Adguard/AG_AND-HTTP_Only.txt",
+  },
+  {
+    "id": 2227,
+    "description": "Block dangerous Android file extensions from HTTP-only traffic to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for uBlock Origin or Nano Defender.",
+    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
+    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
+    "licenseId": 11,
+    "name": "Android File Types Firewall HTTP-Only for uBlock Origin",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Android/uBlock%20Origin/uBO_AND-HTTP-Only.txt",
+  },
+  {
+    "id": 2228,
+    "description": "Block dangerous Windows file extensions from HTTP-only traffic to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for Adguard.",
+    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
+    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
+    "licenseId": 11,
+    "name": "Windows Files Types Firewall HTTP-Only for Adguard",
+    "syntaxId": 6,
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Windows/Adguard/AG_WIN-HTTP_Only.txt",
+  },
+  {
+    "id": 2229,
+    "description": "Block dangerous Windows file extensions from HTTP-Only traffic to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for uBlock Origin or Nano Defender.",
+    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
+    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
+    "licenseId": 11,
+    "name": "Windows File Types Firewall HTTP-Only for uBlock Origin",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Windows/uBlock%20Origin/uBO_WIN-HTTP-Only.txt",
   }
 ]
