@@ -80,7 +80,7 @@ const buildButtonProps = (name: string, viewUrl: string) => {
     prefixes.push("TOR");
   }
   if (viewUrl.includes("http://")) {
-    type = "danger";
+    type = "dashed";
     prefixes.push("INSECURE");
   }
 
