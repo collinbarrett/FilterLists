@@ -19,6 +19,7 @@
     "licenseId": 2,
     "name": "Mute",
     "syntaxId": 3,
+    "updatedDate": "2015-04-27T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/B-Con/mute/master/mute.txt"
   },
   {
@@ -1164,6 +1165,7 @@
     "id": 116,
     "description": "This is a complementary list for RoList with annoyances that are not necessarly banners.",
     "descriptionSourceUrl": "https://www.zoso.ro/pages/rolist2.txt",
+    "donateUrl": "https://www.patreon.com/zosoro/overview",
     "emailAddress": "mail@zoso.ro",
     "homeUrl": "https://www.zoso.ro/rolist/",
     "licenseId": 5,
@@ -1175,6 +1177,7 @@
   {
     "id": 117,
     "description": "A list combining ROList and EasyList.",
+    "donateUrl": "https://www.patreon.com/zosoro/overview",
     "licenseId": 5,
     "name": "ROList + EasyList",
     "syntaxId": 3,
@@ -1185,6 +1188,7 @@
     "id": 118,
     "description": "Romanian supplement for EasyList.",
     "descriptionSourceUrl": "https://adblockplus.org/subscriptions",
+    "donateUrl": "https://www.patreon.com/zosoro/overview",
     "emailAddress": "mail@zoso.ro",
     "homeUrl": "https://www.zoso.ro/rolist/",
     "licenseId": 5,
@@ -1201,7 +1205,7 @@
     "forumUrl": "https://muut.com/i/adblockro/comments",
     "homeUrl": "https://www.adblock.ro/",
     "issuesUrl": "https://github.com/tcptomato/ROad-Block/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "ROad-Block Light",
     "syntaxId": 3,
     "updatedDate": "2019-04-14T19:40:10",
@@ -1391,6 +1395,7 @@
     "licenseId": 30,
     "name": "Schuzak's Universal Filter",
     "syntaxId": 3,
+    "updatedDate": "2012-11-06T00:00:00",
     "viewUrl": "https://web.archive.org/web/20121106002043if_/http://www.schuzak.jp:80/other/abp.conf"
   },
   {
@@ -1402,7 +1407,8 @@
     "licenseId": 5,
     "name": "Schack's Adblock Plus List",
     "syntaxId": 3,
-    "viewUrl": "https://adblock.dk/block.csv"
+    "viewUrl": "https://adblock.dk/block.csv",
+    "viewUrlMirror1": "https://adblock.schack.dk/block.txt"
   },
   {
     "id": 150,
@@ -1743,6 +1749,7 @@
     "licenseId": 19,
     "name": "BadHosts",
     "syntaxId": 1,
+    "updatedDate": "2018-04-20T00:00:00",
     "viewUrl": "https://www.hostsfile.org/Downloads/hosts.txt"
   },
   {
@@ -2032,7 +2039,7 @@
     "donateUrl": "https://abpvn.com/donate/",
     "emailAddress": "support@abpvn.com",
     "homeUrl": "https://abpvn.com",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "ABPVN List",
     "publishedDate": "2016-07-10T08:55:52",
     "syntaxId": 3,
@@ -2217,6 +2224,7 @@
     "licenseId": 5,
     "name": "AdAway Blocking Hosts File for Japan",
     "syntaxId": 1,
+    "updatedDate": "2017-08-22T00:00:00",
     "viewUrl": "https://sites.google.com/site/logroid/files/hosts.txt?attredirects=0"
   },
   {
@@ -2623,7 +2631,7 @@
     "forumUrl": "https://forums.lanik.us/",
     "homeUrl": "https://easylist.to/",
     "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "Fanboy's Social Blocking List",
     "syntaxId": 3,
     "updatedDate": "2019-04-08T14:44:12",
@@ -2894,6 +2902,7 @@
     "licenseId": 5,
     "name": "CAMELEON Hosts",
     "syntaxId": 1,
+    "updatedDate": "2018-03-17T00:00:00",
     "viewUrl": "https://sysctl.org/cameleon/hosts"
   },
   {
@@ -5660,7 +5669,7 @@
     "emailAddress": "support@abpvn.com",
     "forumUrl": "http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html",
     "homeUrl": "https://abpvn.com/",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "ABPVN Hosts",
     "syntaxId": 1,
     "updatedDate": "2019-04-13T12:25:12",
@@ -5673,7 +5682,7 @@
     "emailAddress": "support@abpvn.com",
     "forumUrl": "http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html",
     "homeUrl": "https://abpvn.com/",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "ABPVN List - No Element Hide",
     "publishedDate": "2016-10-26T10:06:22",
     "syntaxId": 28,
@@ -5903,6 +5912,7 @@
     "licenseId": 5,
     "name": "Mandiant APT1 Report Appendix D",
     "syntaxId": 2,
+    "updatedDate": "2014-04-25T00:00:00",
     "viewUrl": "https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt",
     "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Mandiant-APT1-Report.txt"
   },
@@ -5942,19 +5952,6 @@
     "viewUrl": "https://raw.githubusercontent.com/tyzbit/hosts/master/data/tyzbit/hosts"
   },
   {
-    "id": 627,
-    "description": "This is a list to prevent those fake survey gift card / fradulent websites that seem to replicate itself. Hopefully, this prevents a majority of them.",
-    "descriptionSourceUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/giftcardkiller.txt",
-    "homeUrl": "https://github.com/TakoYachty/Gift-Card-Killer",
-    "issuesUrl": "https://github.com/TakoYachty/Gift-Card-Killer/issues",
-    "licenseId": 5,
-    "name": "Gift Card Killer",
-    "publishedDate": "2017-05-26T05:28:16",
-    "syntaxId": 1,
-    "updatedDate": "2017-07-09T18:21:12",
-    "viewUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/giftcardkiller.txt"
-  },
-  {
     "id": 628,
     "description": "Say goodbye to ads, spies, tracking and untrusted hosts.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/Untrusted%20Hosts%20Blocker.txt",
@@ -5964,15 +5961,6 @@
     "name": "Untrusted Hosts Blocker",
     "syntaxId": 36,
     "viewUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/Untrusted%20Hosts%20Blocker.txt"
-  },
-  {
-    "id": 629,
-    "homeUrl": "https://github.com/TakoYachty/Gift-Card-Killer",
-    "issuesUrl": "https://github.com/TakoYachty/Gift-Card-Killer/issues",
-    "licenseId": 5,
-    "name": "Thieus Hosts Spotify",
-    "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/Thieus%20Hosts%20Spotify.txt"
   },
   {
     "id": 630,
@@ -5986,6 +5974,7 @@
     "id": 631,
     "licenseId": 5,
     "name": "Prigent Phishing",
+    "licenseId": 2,
     "syntaxId": 2,
     "updatedDate": "2019-04-14T13:48:11",
     "viewUrl": "https://v.firebog.net/hosts/Prigent-Phishing.txt",
@@ -6709,7 +6698,8 @@
     "publishedDate": "2018-05-18T03:24:19",
     "syntaxId": 3,
     "updatedDate": "2018-11-12T04:04:43",
-    "viewUrl": "https://raw.githubusercontent.com/whtsky/abp-rules/master/rules.txt"
+    "viewUrl": "https://raw.githubusercontent.com/whtsky/abp-rules/master/rules.txt",
+    "viewUrlMirror1": "https://abp.tt.codes/rules.txt"
   },
   {
     "id": 728,
@@ -6997,7 +6987,7 @@
   {
     "id": 759,
     "homeUrl": "https://jansal.net/TPL.shtml",
-    "licenseId": 5,
+    "licenseId": 12,
     "name": "Fanboy's IsraelList (TPL)",
     "syntaxId": 10,
     "updatedDate": "2013-08-19T00:00:00",
@@ -7216,6 +7206,7 @@
   },
   {
     "id": 783,
+    "donateUrl": "https://www.patreon.com/zosoro/overview",
     "emailAddress": "mail@zoso.ro",
     "homeUrl": "https://www.zoso.ro/rolist/",
     "licenseId": 5,
@@ -15515,6 +15506,7 @@
     "licenseId": 5,
     "name": "Privoxy Adfilter",
     "syntaxId": 19,
+    "updatedDate": "2017-09-28T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/qwIvan/privoxy-adfilter/master/adfilter.action"
   },
   {
@@ -16463,7 +16455,7 @@
     "id": 1657,
     "homeUrl": "https://github.com/stephengeorgewest/my-umatrix-rules",
     "issuesUrl": "https://github.com/stephengeorgewest/my-umatrix-rules/issues",
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Stephen George West's uMatrix Rules",
     "syntaxId": 7,
     "updatedDate": "2016-01-28T00:00:00",
@@ -16608,7 +16600,7 @@
     "forumUrl": "https://muut.com/i/adblockro/comments",
     "homeUrl": "https://www.adblock.ro/",
     "issuesUrl": "https://github.com/tcptomato/ROad-Block/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "ROad-Block",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/tcptomato/ROad-Block/master/road-block-filters.txt"
@@ -16621,7 +16613,7 @@
     "forumUrl": "https://muut.com/i/adblockro/comments",
     "homeUrl": "https://www.adblock.ro/",
     "issuesUrl": "https://github.com/tcptomato/ROad-Block/issues",
-    "licenseId": 28,
+    "licenseId": 2,
     "name": "ROad-Kill",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/tcptomato/ROad-Block/master/road-kill-filters.txt"
@@ -18373,7 +18365,7 @@
     "id": 1804,
     "homeUrl": "https://github.com/ConnersHua/Profiles/tree/master",
     "issuesUrl": "https://github.com/ConnersHua/Profiles/tree/master/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "ConnersHua Advertising Ruleset",
     "syntaxId": 29,
     "viewUrl": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Advertising.list"
@@ -18382,7 +18374,7 @@
     "id": 1805,
     "homeUrl": "https://github.com/ConnersHua/Profiles/tree/master",
     "issuesUrl": "https://github.com/ConnersHua/Profiles/tree/master/issues",
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "ConnersHua Pro Ruleset",
     "syntaxId": 29,
     "viewUrl": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Pro.conf"
@@ -19119,7 +19111,7 @@
     "licenseId": 5,
     "name": "Custom Hosts Domain Filter for AdGuard",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/DavidTai780/AdGuard-Home-Private-Rules/master/hosts.txt"
+    "viewUrl": "https://agh.lite.dcod.ml/hosts.php"
   },
   {
     "id": 1890,
@@ -19409,7 +19401,7 @@
     "description": "Blocklist for Ad Redirects",
     "homeUrl": "https://github.com/zznidar/BAR",
     "issuesUrl": "https://github.com/zznidar/BAR/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "BAR-List (URLs)",
     "syntaxId": 8,
     "viewUrl": "https://raw.githubusercontent.com/zznidar/BAR/master/URLs_full"
@@ -19657,14 +19649,14 @@
   },
   {
     "id": 1948,
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Fengyc's URLRedirector Rules",
     "syntaxId": 31,
     "viewUrl": "https://raw.githubusercontent.com/fengyc/URLRedirector/master/tools/rules.json"
   },
   {
     "id": 1949,
-    "licenseId": 5,
+    "licenseId": 2,
     "name": "Fengyc's URLRedirector Rules - Geekzu",
     "syntaxId": 31,
     "viewUrl": "https://raw.githubusercontent.com/fengyc/URLRedirector/master/tools/rules_geekzu.json"
@@ -21244,7 +21236,7 @@
     "donateUrl": "https://abpvn.com/donate/",
     "emailAddress": "support@abpvn.com",
     "homeUrl": "https://abpvn.com",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "ABPVN List + EasyList",
     "syntaxId": 3,
     "viewUrl": "https://easylist-downloads.adblockplus.org/abpvn+easylist.txt"
@@ -21256,7 +21248,7 @@
     "donateUrl": "https://abpvn.com/donate/",
     "emailAddress": "support@abpvn.com",
     "homeUrl": "https://abpvn.com",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "ABPVN List + EasyList (TPL)",
     "syntaxId": 10,
     "viewUrl": "https://easylist-downloads.adblockplus.org/abpvn+easylist.tpl"
@@ -22449,5 +22441,521 @@
     "name": "Windows File Types Firewall HTTP-Only for uBlock Origin",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Windows/uBlock%20Origin/uBO_WIN-HTTP-Only.txt"
+  },
+  {
+    "id": 2230,
+    "description": "ABPindo is an affiliated filter list written by hermawan that specifically removes adverts on Indonesian language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "ABPindo (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/abpindo-minified.txt"
+  },
+  {
+    "id": 2231,
+    "description": "The ABP advertising filter is built with the mission of improving the browsing experience for the vietnamese users. ABPVN may not help block all ads, but ABPVN will minimize the appearance of ads on most websites in Vietnam. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "donateUrl": "https://abpvn.com/donate/",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "ABPVN List (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn.txt"
+  },
+  {
+    "id": 2232,
+    "description": "Russian supplement for EasyList. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 12,
+    "name": "RU AdList (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/ruadlist-minified.txt"
+  },
+  {
+    "id": 2233,
+    "description": "On this page you can find updated lists to block unwanted content in your favorite browser. With their help, the pesky ads that some sites terrorizing customers will be hidden. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "Bulgarian List (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/bulgarian_list-minified.txt"
+  },
+  {
+    "id": 2234,
+    "description": "EasyList is the primary filter list that removes most adverts from international web pages, including unwanted frames, images, and objects. It is the most popular list used by many ad blockers and forms the basis of over a dozen combination and supplementary filter lists. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylist-minified.txt"
+  },
+  {
+    "id": 2235,
+    "description": "Chinese supplement for the EasyList filters. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList China (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina-minified.txt"
+  },
+  {
+    "id": 2236,
+    "description": "Official filter list file used for blocking ads on Czech and Slovak websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 8,
+    "name": "EasyList Czech and Slovak (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistczechandslovak-minified.txt"
+  },
+  {
+    "id": 2237,
+    "description": "EasyList Dutch is an EasyList-affiliated filter list written by the EasyList author Famlam that specifically removes adverts on Dutch language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList Dutch (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch-minified.txt"
+  },
+  {
+    "id": 2238,
+    "description": "EasyList Germany is a filter list written by the EasyList authors MonztA, Famlam, and Khrin that specifically removes adverts on German language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList Germany (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany-minified.txt"
+  },
+  {
+    "id": 2239,
+    "description": "EasyList Italy is a filter list written by the EasyList author Khrin that specifically removes adverts on Italian language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList Italy (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly-minified.txt"
+  },
+  {
+    "id": 2240,
+    "description": "EasyList Lithuania is an affiliated filter list written by gymka that specifically removes adverts on Lithuanian language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList Lithuania (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistlithuania-minified.txt"
+  },
+  {
+    "id": 2241,
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList Polish (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistpolish-minified.txt"
+  },
+  {
+    "id": 2242,
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList Portuguese (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistportuguese-minified.txt"
+  },
+  {
+    "id": 2243,
+    "description": "Spanish supplement for EasyList. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList Spanish (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistspanish-minified.txt"
+  },
+  {
+    "id": 2244,
+    "description": "EasyPrivacy is an optional supplementary filter list that completely removes all forms of tracking from the internet, including web bugs, tracking scripts and information collectors, thereby protecting your personal data. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyPrivacy (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist.to/easylist/easyprivacy-minified.txt"
+  },
+  {
+    "id": 2245,
+    "description": "Hide and block social content, social widgets, social scripts and social icons. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "Fanboy's Social Blocking List (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-social-minified.txt"
+  },
+  {
+    "id": 2246,
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 3,
+    "name": "IndianList (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/indianlist-minified.txt"
+  },
+  {
+    "id": 2247,
+    "description": "EasyList Hebrew is an EasyList affiliated filter list written by BsT that specifically removes adverts on Hebrew language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 7,
+    "name": "EasyList Hebrew (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/israellist-minified.txt"
+  },
+  {
+    "id": 2248,
+    "description": "Latvian List is an affiliated filter list written by anonymous74100 that specifically removes adverts on Latvian language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 8,
+    "name": "Latvian List (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/latvianlist-minified.txt"
+  },
+  {
+    "id": 2249,
+    "description": "Liste AR is an EasyList affiliated filter list that specifically removes adverts on Arabic language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 6,
+    "name": "Liste AR (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/liste_ar-minified.txt"
+  },
+  {
+    "id": 2250,
+    "description": "Liste FR is an EasyList affiliated filter list that specifically removes adverts on French-language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 6,
+    "name": "Liste FR (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/liste_fr-minified.txt"
+  },
+  {
+    "id": 2251,
+    "description": "Romanian supplement for EasyList. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 5,
+    "name": "ROList (Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 3,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/rolist-minified.txt"
+  },
+  {
+    "id": 2252,
+    "description": "A list combining EasyList China and EasyList. This list features additional entries from the Adblock Plus team, seemingly to meet Adblock Plus list inclusion requirements.",
+    "licenseId": 4,
+    "name": "EasyList China + EasyList (compliance)",
+    "publishedDate": "2017-10-17T12:56:33",
+    "syntaxId": 3,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina+easylistchina_compliance+easylist.txt"
+  },
+  {
+    "id": 2253,
+    "description": "ABPindo is an affiliated filter list written by hermawan that specifically removes adverts on Indonesian language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "ABPindo (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/abpindo-minified.tpl"
+  },
+  {
+    "id": 2254,
+    "description": "The ABP advertising filter is built with the mission of improving the browsing experience for the vietnamese users. ABPVN may not help block all ads, but ABPVN will minimize the appearance of ads on most websites in Vietnam. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "donateUrl": "https://abpvn.com/donate/",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "ABPVN List (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn.tpl"
+  },
+  {
+    "id": 2255,
+    "description": "Russian supplement for EasyList. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 12,
+    "name": "RU AdList (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/ruadlist-minified.tpl"
+  },
+  {
+    "id": 2256,
+    "description": "On this page you can find updated lists to block unwanted content in your favorite browser. With their help, the pesky ads that some sites terrorizing customers will be hidden. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "Bulgarian List (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/bulgarian_list-minified.tpl"
+  },
+  {
+    "id": 2257,
+    "description": "EasyList is the primary filter list that removes most adverts from international web pages, including unwanted frames, images, and objects. It is the most popular list used by many ad blockers and forms the basis of over a dozen combination and supplementary filter lists. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylist-minified.tpl"
+  },
+  {
+    "id": 2258,
+    "description": "Chinese supplement for the EasyList filters. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList China (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina-minified.tpl"
+  },
+  {
+    "id": 2259,
+    "description": "Official filter list file used for blocking ads on Czech and Slovak websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 8,
+    "name": "EasyList Czech and Slovak (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistczechandslovak-minified.tpl"
+  },
+  {
+    "id": 2260,
+    "description": "EasyList Dutch is an EasyList-affiliated filter list written by the EasyList author Famlam that specifically removes adverts on Dutch language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList Dutch (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistdutch-minified.tpl"
+  },
+  {
+    "id": 2261,
+    "description": "EasyList Germany is a filter list written by the EasyList authors MonztA, Famlam, and Khrin that specifically removes adverts on German language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList Germany (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany-minified.tpl"
+  },
+  {
+    "id": 2262,
+    "description": "EasyList Italy is a filter list written by the EasyList author Khrin that specifically removes adverts on Italian language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList Italy (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistitaly-minified.tpl"
+  },
+  {
+    "id": 2263,
+    "description": "EasyList Lithuania is an affiliated filter list written by gymka that specifically removes adverts on Lithuanian language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList Lithuania (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistlithuania-minified.tpl"
+  },
+  {
+    "id": 2264,
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList Polish (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistpolish-minified.tpl"
+  },
+  {
+    "id": 2265,
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList Portuguese (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistportuguese-minified.tpl"
+  },
+  {
+    "id": 2266,
+    "description": "Spanish supplement for EasyList. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyList Spanish (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistspanish-minified.tpl"
+  },
+  {
+    "id": 2267,
+    "description": "EasyPrivacy is an optional supplementary filter list that completely removes all forms of tracking from the internet, including web bugs, tracking scripts and information collectors, thereby protecting your personal data. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "EasyPrivacy (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist.to/easylist/easyprivacy-minified.tpl"
+  },
+  {
+    "id": 2268,
+    "description": "Hide and block social content, social widgets, social scripts and social icons. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 4,
+    "name": "Fanboy's Social Blocking List (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-social-minified.tpl"
+  },
+  {
+    "id": 2269,
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 3,
+    "name": "IndianList (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/indianlist-minified.tpl"
+  },
+  {
+    "id": 2270,
+    "description": "EasyList Hebrew is an EasyList affiliated filter list written by BsT that specifically removes adverts on Hebrew language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 7,
+    "name": "EasyList Hebrew (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/israellist-minified.tpl"
+  },
+  {
+    "id": 2271,
+    "description": "Latvian List is an affiliated filter list written by anonymous74100 that specifically removes adverts on Latvian language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 8,
+    "name": "Latvian List (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/latvianlist-minified.tpl"
+  },
+  {
+    "id": 2272,
+    "description": "Liste AR is an EasyList affiliated filter list that specifically removes adverts on Arabic language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 6,
+    "name": "Liste AR (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/liste_ar-minified.tpl"
+  },
+  {
+    "id": 2273,
+    "description": "Liste FR is an EasyList affiliated filter list that specifically removes adverts on French-language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 6,
+    "name": "Liste FR (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/liste_fr-minified.tpl"
+  },
+  {
+    "id": 2274,
+    "description": "Romanian supplement for EasyList. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
+    "licenseId": 5,
+    "name": "ROList (TPL Minified)",
+    "publishedDate": "2017-06-09T13:17:30",
+    "syntaxId": 10,
+    "updatedDate": "2019-08-18T07:04:32",
+    "viewUrl": "https://easylist-downloads.adblockplus.org/rolist-minified.tpl"
+  },
+  {
+    "id": 2275,
+    "description": "A list combining EasyList China and EasyList. This list features additional entries from the Adblock Plus team, seemingly to meet Adblock Plus list inclusion requirements.",
+    "licenseId": 4,
+    "name": "EasyList China + EasyList (TPL; compliance)",
+    "publishedDate": "2017-10-17T12:56:33",
+    "syntaxId": 10,
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistchina+easylistchina_compliance+easylist.tpl"
+  },
+  {
+    "id": 2276,
+    "homeUrl": "https://www.adtchrome.com/",
+    "name": "ADT ChinaList",
+    "syntaxId": 3,
+    "viewUrl": "https://sub.adtchrome.com/adt-chinalist-easylist.txt"
+  },
+  {
+    "id": 2277,
+    "description": "Say goodbye to ads, spies, tracking and untrusted hosts.",
+    "descriptionSourceUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/Mega%20Untrusted%20Hosts%20Blocker.txt",
+    "homeUrl": "https://github.com/TakoYachty/Gift-Card-Killer",
+    "issuesUrl": "https://github.com/TakoYachty/Gift-Card-Killer/issues",
+    "licenseId": 5,
+    "name": " Mega Untrusted Hosts Blocker",
+    "syntaxId": 36,
+    "viewUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/Mega%20Untrusted%20Hosts%20Blocker.txt"
   }
 ]
