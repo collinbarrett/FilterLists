@@ -265,5 +265,12 @@
     "homeUrl": "https://nssurge.com/",
     "isAbpSubscribable": false,
     "name": "Surge"
+  },
+  {
+    "id": 42,
+    "downloadUrl": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/latest",
+    "homeUrl": "https://github.com/DNSCrypt/dnscrypt-proxy",
+    "isAbpSubscribable": false,
+    "name": "dnscrypt-proxy"
   }
 ]
