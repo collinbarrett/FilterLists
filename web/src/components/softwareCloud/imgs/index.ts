@@ -38,6 +38,7 @@ import img38 from "./38-DNSRedirector.png";
 import img39 from "./39-pfBlockerNG.png";
 import img40 from "./40-Opera.png";
 import img41 from "./41-Surge.png";
+import img42 from "./42-dnscrypt-proxy.png";
 
 export {
   img01,
@@ -79,5 +80,6 @@ export {
   img38,
   img39,
   img40,
-  img41
+  img41,
+  img42
 };
