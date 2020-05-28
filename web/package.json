@@ -13,7 +13,7 @@
     "@types/react-router-dom": "^5.1.5",
     "antd": "^4.2.2",
     "babel-plugin-import": "^1.13.0",
-    "customize-cra": "^0.9.1",
+    "customize-cra": "^1.0.0",
     "react": "^16.13.1",
     "react-app-rewired": "^2.1.6",
     "react-dom": "^16.13.1",
