@@ -25013,20 +25013,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "Mega Untrusted Hosts Blocker",
                             SyntaxId = (short)36,
                             ViewUrl = "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/Mega%20Untrusted%20Hosts%20Blocker.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2278,
-                            Description = "Block fake onlineshops, malicious streaming platforms and other fraudulent agencies. List taken from watchlist-internet.at",
-                            DescriptionSourceUrl = "https://www.watchlist-internet.at/ueber-uns/",
-                            HomeUrl = "https://github.com/stonecrusher/filterlists-pihole",
-                            IssuesUrl = "https://github.com/stonecrusher/filterlists-pihole/issues",
-                            LicenseId = (short)9,
-                            Name = "Watchlist Internet",
-                            PublishedDate = new DateTime(2019, 12, 11, 18, 43, 58, 0, DateTimeKind.Unspecified),
-                            SyntaxId = (short)2,
-                            UpdatedDate = new DateTime(2020, 5, 30, 20, 7, 50, 0, DateTimeKind.Unspecified),
-                            ViewUrl = "https://raw.githubusercontent.com/stonecrusher/filterlists-pihole/master/watchlist-internet-ph.txt"
                         });
                 });
 
@@ -28838,11 +28824,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)2274,
                             LanguageId = (short)17
-                        },
-                        new
-                        {
-                            FilterListId = (short)2278,
-                            LanguageId = (short)167
                         });
                 });
 
