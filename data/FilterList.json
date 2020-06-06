@@ -22957,5 +22957,18 @@
     "name": "Mega Untrusted Hosts Blocker",
     "syntaxId": 36,
     "viewUrl": "https://raw.githubusercontent.com/TakoYachty/Gift-Card-Killer/master/Mega%20Untrusted%20Hosts%20Blocker.txt"
+  },
+  {
+    "id": 2278,
+    "description": "Block fake onlineshops, malicious streaming platforms and other fraudulent agencies. List taken from watchlist-internet.at",
+    "descriptionSourceUrl": "https://www.watchlist-internet.at/ueber-uns/",
+    "homeUrl": "https://github.com/stonecrusher/filterlists-pihole",
+    "issuesUrl": "https://github.com/stonecrusher/filterlists-pihole/issues",
+    "licenseId": 9,
+    "name": "Watchlist Internet",
+    "publishedDate": "2019-12-11T18:43:58",
+    "syntaxId": 2,
+    "updatedDate": "2020-05-30T20:07:50",
+    "viewUrl": "https://raw.githubusercontent.com/stonecrusher/filterlists-pihole/master/watchlist-internet-ph.txt"
   }
 ]
