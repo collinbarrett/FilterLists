@@ -2,7 +2,7 @@
 # Command: docker build -f server/src/FilterLists.Api/Dockerfile .
 
 # init base
-FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1.4-alpine as base
+FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1.5-alpine as base
 ENTRYPOINT ["./FilterLists.Api"]
 EXPOSE 80
 WORKDIR /app
