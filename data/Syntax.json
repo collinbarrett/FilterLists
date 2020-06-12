@@ -196,5 +196,9 @@
   {
     "id": 46,
     "name": "''$important''/''$empty'' only"
+  },
+  {
+    "id": 47,
+    "name": "Adblocker-syntax domains w/o ABP tag"
   }
 ]
