@@ -23094,5 +23094,5 @@
     "name": "dnsmasq-china-list Accelerated Domains",
     "syntaxId": 20,
     "viewUrl": "https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf"
-  },
+  }
 ]
