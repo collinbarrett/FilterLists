@@ -774,5 +774,37 @@
   {
     "softwareId": 32,
     "syntaxId": 46
+  },
+  {
+    "softwareId": 1,
+    "syntaxId": 47
+  },
+  {
+    "softwareId": 3,
+    "syntaxId": 47
+  },
+  {
+    "softwareId": 5,
+    "syntaxId": 47
+  },
+  {
+    "softwareId": 24,
+    "syntaxId": 47
+  },
+  {
+    "softwareId": 31,
+    "syntaxId": 47
+  },
+  {
+    "softwareId": 32,
+    "syntaxId": 47
+  },
+  {
+    "softwareId": 39,
+    "syntaxId": 47
+  },
+  {
+    "softwareId": 40,
+    "syntaxId": 47
   }
 ]
