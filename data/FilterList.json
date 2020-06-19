@@ -23273,26 +23273,6 @@
 "viewUrl": "https://managedsentinel.com/downloads/covid19_ipaddresses.txt"
 },
 {
-  "id": 2307,
-  "description": "While the world is struggling to contain the devastating effects of the COVID-19 virus, there are an increasing number of malicious actors attempting to take advantage of it and attack organizations using the desire for information about this virus. At Managed Sentinel, we decided to create and maintain a list of IoCs (IP addresses, domains, URL and hashes) related to COVID-19 malware and update it on regular basis.",
-  "descriptionSourceUrl": "https://github.com/sophoslabs/covid-iocs/blob/master/README.md",
-"homeUrl": "https://www.managedsentinel.com/2020/03/27/azure-sentinel-covid-19-alerts-and-iocs/",
-"syntaxId": 8,
-"licenseId": 5,
-"name": "COVID-19 Indicators of Compromise and Azure Sentinel Alerts (URLs)",
-"viewUrl": "https://managedsentinel.com/downloads/covid19_url.txt"
-},
-{
-  "id": 2308,
-  "description": "While the world is struggling to contain the devastating effects of the COVID-19 virus, there are an increasing number of malicious actors attempting to take advantage of it and attack organizations using the desire for information about this virus. At Managed Sentinel, we decided to create and maintain a list of IoCs (IP addresses, domains, URL and hashes) related to COVID-19 malware and update it on regular basis.",
-  "descriptionSourceUrl": "https://github.com/sophoslabs/covid-iocs/blob/master/README.md",
-"homeUrl": "https://www.managedsentinel.com/2020/03/27/azure-sentinel-covid-19-alerts-and-iocs/",
-"syntaxId": 9,
-"licenseId": 5,
-"name": "COVID-19 Indicators of Compromise and Azure Sentinel Alerts (IPs)",
-"viewUrl": "https://managedsentinel.com/downloads/covid19_ipaddresses.txt"
-},
-{
   "id": 2309,
   "description": "REScure is an independent threat intelligence project which we undertook to enhance our understanding of distributed systems, their integration, the nature of threat intelligence and how to efficiently collect, store, consume, distribute it.",
 "homeUrl": "https://rescure.fruxlabs.com/",
@@ -23376,5 +23356,15 @@
     "name": "Combined Privacy Block Lists Optimized Windows HOSTS (CIDR)",
     "syntaxId": 34,
     "viewUrl": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/combined-flat.cidr"
-  }
+  },
+  {
+  "id": 2318,
+  "description": "While the world is struggling to contain the devastating effects of the COVID-19 virus, there are an increasing number of malicious actors attempting to take advantage of it and attack organizations using the desire for information about this virus. At Managed Sentinel, we decided to create and maintain a list of IoCs (IP addresses, domains, URL and hashes) related to COVID-19 malware and update it on regular basis.",
+  "descriptionSourceUrl": "https://github.com/sophoslabs/covid-iocs/blob/master/README.md",
+"homeUrl": "https://www.managedsentinel.com/2020/03/27/azure-sentinel-covid-19-alerts-and-iocs/",
+"syntaxId": 8,
+"licenseId": 5,
+"name": "COVID-19 Indicators of Compromise and Azure Sentinel Alerts (URLs)",
+"viewUrl": "https://managedsentinel.com/downloads/covid19_url.txt"
+}
 ]
