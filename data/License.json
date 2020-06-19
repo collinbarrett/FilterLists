@@ -275,14 +275,14 @@
   },
   {
     "id": 41,
-    "descriptionUrl": "http://www.affero.org/oagpl.html",
+    "descriptionUrl": "https://directory.fsf.org/wiki/License:AGPL-1.0",
     "name": "AGPLv1",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
   },
   {
     "id": 42,
-    "descriptionUrl": "http://www.affero.org/agpl2.html",
+    "descriptionUrl": "https://www.vicidial.com/?page_id=260",
     "name": "AGPLv2",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
@@ -293,5 +293,12 @@
     "name": "AGPLv3",
     "permissiveAdaptation": true,
     "permissiveCommercial": true
-  }
+  },
+  {
+    "id": 42,
+    "descriptionUrl": "https://opensource.org/licenses/CPAL-1.0",
+    "name": "CPAL-1.0",
+    "permissiveAdaptation": true,
+    "permissiveCommercial": true
+  },
 ]
