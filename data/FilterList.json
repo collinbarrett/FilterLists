@@ -23366,5 +23366,16 @@
 "licenseId": 5,
 "name": "COVID-19 Indicators of Compromise and Azure Sentinel Alerts (URLs)",
 "viewUrl": "https://managedsentinel.com/downloads/covid19_url.txt"
+},
+{
+    "id": 2319,
+    "description": "A list of advertising, analytics, various tracking, potential malware, and so on aimed at mobile users. Aimed primarily at the Pi Hole but also tested on AdAway and DNS66.",
+    "homeUrl": "https://ftpihole.com",
+    "syntaxId": 2,
+    "licenseId": 7,
+    "viewUrl": "https://ftpihole.s3.eu-west-2.amazonaws.com/blocklists/smartphone-ads-tracking.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/ftpmorph/ftpihole/master/blocklists/smartphone-ads-tracking.txt",
+    "name": "FTPiHole Smartphone Ads and Trackers Blocklist",
+    "issuesUrl": "https://github.com/ftpmorph/ftpihole/issues"
 }
 ]
