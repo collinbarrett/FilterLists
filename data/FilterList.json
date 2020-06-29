@@ -23377,5 +23377,16 @@
     "viewUrlMirror1": "https://raw.githubusercontent.com/ftpmorph/ftpihole/master/blocklists/smartphone-ads-tracking.txt",
     "name": "FTPiHole Smartphone Ads and Trackers Blocklist",
     "issuesUrl": "https://github.com/ftpmorph/ftpihole/issues"
+},
+{
+    "id": 2320,
+    "description": "A list for blocking the ads and tracking built into the stock MIUI ROMs of Xiaomi smartphones. Please note that as this list blocks connections to most MIUI servers to achieve that goal, Mi Cloud and similar services may be broken. Google services will continue to work fine and I have specifically ensured that OTAs are not blocked (if OTAs break, please open an issue on GitHub with as much detail as possible). Tested to work on Pi Hole, AdAway, and DNS66. Should work on all domain list based blockers.",
+    "homeUrl": "https://ftpihole.com",
+    "syntaxId": 2,
+    "licenseId": 7,
+    "viewUrl": "https://ftpihole.s3.eu-west-2.amazonaws.com/blocklists/xiaomi-ads-tracking.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/ftpmorph/ftpihole/master/blocklists/xiaomi-ads-tracking.txt",
+    "name": "FTPiHole Xiaomi MIUI Ads and Trackers Blocklist",
+    "issuesUrl": "https://github.com/ftpmorph/ftpihole/issues"
 }
 ]
