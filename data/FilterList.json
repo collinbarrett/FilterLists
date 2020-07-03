@@ -4913,14 +4913,13 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Spark Protection",
     "publishedDate": "2018-10-12T13:30:18",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/spark/formats/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/spark/formats/hosts.txt"
+    "viewUrl": "https://block.energized.pro/spark/formats/hosts.txt"
   },
   {
     "id": 482,
@@ -4932,14 +4931,13 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Blu Go Protection",
     "publishedDate": "2018-10-12T13:30:18",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/bluGo/formats/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/bluGo/formats/hosts.txt"
+    "viewUrlMirror1": "https://block.energized.pro/bluGo/formats/hosts.txt"
   },
   {
     "id": 483,
@@ -4951,14 +4949,13 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Blu Protection",
     "publishedDate": "2018-10-12T13:30:18",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/blu/formats/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/blu/formats/hosts.txt"
+    "viewUrl": "https://block.energized.pro/blu/formats/hosts.txt"
   },
   {
     "id": 484,
@@ -4970,14 +4967,13 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Basic Protection",
     "publishedDate": "2018-10-12T13:30:18",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/basic/formats/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/basic/formats/hosts.txt"
+    "viewUrl": "https://block.energized.pro/basic/formats/hosts.txt"
   },
   {
     "id": 485,
@@ -4989,14 +4985,13 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Porn Protection",
     "publishedDate": "2018-10-08T06:24:46",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn/formats/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn/formats/hosts.txt"
+    "viewUrl": "https://block.energized.pro/porn/formats/hosts.txt"
   },
   {
     "id": 486,
@@ -5008,14 +5003,13 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Ultimate Protection",
     "publishedDate": "2018-10-08T06:24:46",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/ultimate/formats/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/ultimate/formats/hosts.txt"
+    "viewUrl": "https://block.energized.pro/ultimate/formats/hosts.txt"
   },
   {
     "id": 487,
@@ -5027,14 +5021,13 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Unified Protection",
     "publishedDate": "2018-10-08T06:24:46",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/unified/formats/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/unified/formats/hosts.txt"
+    "viewUrl": "https://block.energized.pro/unified/formats/hosts.txt"
   },
   {
     "id": 490,
@@ -14445,12 +14438,12 @@
     "description": "Privacy protection at its best.",
     "homeUrl": "https://github.com/EnergizedProtection/block",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Xtreme Extension",
     "publishedDate": "2019-03-01T15:10:25",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/xtreme/formats/hosts"
+    "viewUrl": "https://block.energized.pro/extensions/xtreme/formats/hosts.txt"
   },
   {
     "id": 1471,
@@ -15857,16 +15850,6 @@
     "name": "Joey Lane's Hosts",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/joeylane/hosts/master/hosts"
-  },
-  {
-    "id": 1602,
-    "description": "A blocklist for app promotion on Chinese websites",
-    "homeUrl": "https://github.com/HankAviator/app-ads-blocklist-china",
-    "issuesUrl": "https://github.com/HankAviator/app-ads-blocklist-china/issues",
-    "licenseId": 4,
-    "name": "App ads blocklist China",
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/HankAviator/app-ads-blocklist-china/master/app_blocklist.txt"
   },
   {
     "id": 1603,
@@ -17344,14 +17327,13 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Social Extension",
     "publishedDate": "2018-10-08T06:24:46",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/social/formats/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/social/formats/hosts.txt"
+    "viewUrl": "https://block.energized.pro/extensions/social/formats/hosts.txt"
   },
   {
     "id": 1741,
@@ -17363,14 +17345,13 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Porn Lite Extension",
     "publishedDate": "2018-10-08T06:24:46",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/porn-lite/formats/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/porn-lite/formats/hosts.txt"
+    "viewUrl": "https://block.energized.pro/extensions/porn-lite/formats/hosts.txt"
   },
   {
     "id": 1742,
@@ -17382,14 +17363,13 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Regional Extension",
     "publishedDate": "2018-10-08T06:24:46",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/hosts.txt"
+    "viewUrl": "https://block.energized.pro/extensions/regional/formats/hosts.txt"
   },
   {
     "id": 1743,
@@ -17401,11 +17381,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Spark Protection (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/spark/formats/domains.txt"
+    "viewUrl": "https://block.energized.pro/spark/formats/domains.txt"
   },
   {
     "id": 1744,
@@ -17417,11 +17397,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Blu Go Protection (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/bluGo/formats/domains.txt"
+    "viewUrl": "https://block.energized.pro/bluGo/formats/domains.txt"
   },
   {
     "id": 1745,
@@ -17433,11 +17413,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Blu Protection (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/blu/formats/domains.txt"
+    "viewUrl": "https://block.energized.pro/blu/formats/domains.txt"
   },
   {
     "id": 1746,
@@ -17449,11 +17429,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Basic Protection (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/basic/formats/domains.txt"
+    "viewUrl": "https://block.energized.pro/basic/formats/domains.txt"
   },
   {
     "id": 1747,
@@ -17465,11 +17445,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Porn Protection (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn/formats/domains.txt"
+    "viewUrl": "https://block.energized.pro/porn/formats/domains.txt"
   },
   {
     "id": 1748,
@@ -17481,11 +17461,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Ultimate Protection (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/ultimate/formats/domains.txt"
+    "viewUrl": "https://block.energized.pro/ultimate/formats/domains.txt"
   },
   {
     "id": 1749,
@@ -17497,11 +17477,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Unified Protection (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/unified/formats/domains.txt"
+    "viewUrl": "https://block.energized.pro/unified/formats/domains.txt"
   },
   {
     "id": 1750,
@@ -17513,11 +17493,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Xtreme Extension (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/xtreme/formats/domains.txt"
+    "viewUrl": "https://block.energized.pro/extensions/xtreme/formats/domains.txt"
   },
   {
     "id": 1751,
@@ -17529,11 +17509,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Social Extension (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/social/formats/domains.txt"
+    "viewUrl": "https://block.energized.pro/extensions/social/formats/domains.txt"
   },
   {
     "id": 1752,
@@ -17545,11 +17525,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Porn Lite Extension (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/porn-lite/formats/domains.txt"
+    "viewUrl": "https://block.energized.pro/extensions/porn-lite/formats/domains.txt"
   },
   {
     "id": 1753,
@@ -17561,11 +17541,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Regional Extension (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/domains.txt"
+    "viewUrl": "https://block.energized.pro/extensions/regional/formats/domains.txt"
   },
   {
     "id": 1754,
@@ -17577,11 +17557,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Spark Protection (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/spark/formats/filter"
+    "viewUrl": "https://block.energized.pro/spark/formats/filter"
   },
   {
     "id": 1755,
@@ -17593,11 +17573,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Blu Go Protection (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/bluGo/formats/filter"
+    "viewUrl": "https://block.energized.pro/bluGo/formats/filter"
   },
   {
     "id": 1756,
@@ -17609,11 +17589,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Blu Protection (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/blu/formats/filter"
+    "viewUrl": "https://block.energized.pro/blu/formats/filter"
   },
   {
     "id": 1757,
@@ -17625,11 +17605,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Basic Protection (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/basic/formats/filter"
+    "viewUrl": "https://block.energized.pro/basic/formats/filter"
   },
   {
     "id": 1758,
@@ -17641,11 +17621,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Porn Protection (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn/formats/filter"
+    "viewUrl": "https://block.energized.pro/porn/formats/filter"
   },
   {
     "id": 1759,
@@ -17657,11 +17637,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Ultimate Protection (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/ultimate/formats/filter"
+    "viewUrl": "https://block.energized.pro/ultimate/formats/filter"
   },
   {
     "id": 1760,
@@ -17673,11 +17653,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Unified Protection (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/unified/formats/filter"
+    "viewUrl": "https://block.energized.pro/unified/formats/filter"
   },
   {
     "id": 1761,
@@ -17689,11 +17669,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Xtreme Extension (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/xtreme/formats/filter"
+    "viewUrl": "https://block.energized.pro/extensions/xtreme/formats/filter"
   },
   {
     "id": 1762,
@@ -17705,11 +17685,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Social Extension (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/social/formats/filter"
+    "viewUrl": "https://block.energized.pro/extensions/social/formats/filter"
   },
   {
     "id": 1763,
@@ -17721,11 +17701,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Porn Lite Extension (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/porn-lite/formats/filter"
+    "viewUrl": "https://block.energized.pro/extensions/porn-lite/formats/filter"
   },
   {
     "id": 1764,
@@ -17737,11 +17717,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Regional Extension (Adblock Plus)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 28,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/filter"
+    "viewUrl": "https://block.energized.pro/extensions/regional/formats/filter"
   },
   {
     "id": 1765,
@@ -17753,11 +17733,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Spark Protection (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/spark/formats/dnsmasq.conf"
+    "viewUrl": "https://block.energized.pro/spark/formats/dnsmasq.conf"
   },
   {
     "id": 1766,
@@ -17769,11 +17749,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Blu Go Protection (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/bluGo/formats/dnsmasq.conf"
+    "viewUrl": "https://block.energized.pro/bluGo/formats/dnsmasq.conf"
   },
   {
     "id": 1767,
@@ -17785,11 +17765,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Blu Protection (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/blu/formats/dnsmasq.conf"
+    "viewUrl": "https://block.energized.pro/blu/formats/dnsmasq.conf"
   },
   {
     "id": 1768,
@@ -17801,11 +17781,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Basic Protection (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/basic/formats/dnsmasq.conf"
+    "viewUrl": "https://block.energized.pro/basic/formats/dnsmasq.conf"
   },
   {
     "id": 1769,
@@ -17817,11 +17797,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Porn Protection (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn/formats/dnsmasq.conf"
+    "viewUrl": "https://block.energized.pro/porn/formats/dnsmasq.conf"
   },
   {
     "id": 1770,
@@ -17833,11 +17813,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Ultimate Protection (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/ultimate/formats/dnsmasq.conf"
+    "viewUrl": "https://block.energized.pro/ultimate/formats/dnsmasq.conf"
   },
   {
     "id": 1771,
@@ -17849,11 +17829,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Unified Protection (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/unified/formats/dnsmasq.conf"
+    "viewUrl": "https://block.energized.pro/unified/formats/dnsmasq.conf"
   },
   {
     "id": 1772,
@@ -17865,11 +17845,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Xtreme Extension (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/xtreme/formats/dnsmasq.conf"
+    "viewUrl": "https://block.energized.pro/extensions/xtreme/formats/dnsmasq.conf"
   },
   {
     "id": 1773,
@@ -17881,11 +17861,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Social Extension (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/social/formats/dnsmasq.conf"
+    "viewUrl": "https://block.energized.pro/extensions/social/formats/dnsmasq.conf"
   },
   {
     "id": 1774,
@@ -17897,11 +17877,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Porn Lite Extension (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/porn-lite/formats/dnsmasq.conf"
+    "viewUrl": "https://block.energized.pro/extensions/porn-lite/formats/dnsmasq.conf"
   },
   {
     "id": 1775,
@@ -17913,11 +17893,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Regional Extension (dnsmasq)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 20,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/dnsmasq.conf"
+    "viewUrl": "https://block.energized.pro/extensions/regional/formats/dnsmasq.conf"
   },
   {
     "id": 1776,
@@ -17929,11 +17909,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Spark Protection (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/spark/formats/unbound.conf"
+    "viewUrl": "https://block.energized.pro/spark/formats/unbound.conf"
   },
   {
     "id": 1777,
@@ -17945,11 +17925,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Blu Go Protection (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/bluGo/formats/unbound.conf"
+    "viewUrl": "https://block.energized.pro/bluGo/formats/unbound.conf"
   },
   {
     "id": 1778,
@@ -17961,11 +17941,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Blu Protection (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/blu/formats/unbound.conf"
+    "viewUrl": "https://block.energized.pro/blu/formats/unbound.conf"
   },
   {
     "id": 1779,
@@ -17977,11 +17957,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Basic Protection (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/basic/formats/unbound.conf"
+    "viewUrl": "https://block.energized.pro/basic/formats/unbound.conf"
   },
   {
     "id": 1780,
@@ -17993,11 +17973,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Porn Protection (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn/formats/unbound.conf"
+    "viewUrl": "https://block.energized.pro/porn/formats/unbound.conf"
   },
   {
     "id": 1781,
@@ -18009,11 +17989,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Ultimate Protection (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/ultimate/formats/unbound.conf"
+    "viewUrl": "https://block.energized.pro/ultimate/formats/unbound.conf"
   },
   {
     "id": 1782,
@@ -18025,11 +18005,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Unified Protection (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/unified/formats/unbound.conf"
+    "viewUrl": "https://block.energized.pro/unified/formats/unbound.conf"
   },
   {
     "id": 1783,
@@ -18041,11 +18021,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Xtreme Extension (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/xtreme/formats/unbound.conf"
+    "viewUrl": "https://block.energized.pro/extensions/xtreme/formats/unbound.conf"
   },
   {
     "id": 1784,
@@ -18057,11 +18037,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Social Extension (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/social/formats/unbound.conf"
+    "viewUrl": "https://block.energized.pro/extensions/social/formats/unbound.conf"
   },
   {
     "id": 1785,
@@ -18073,11 +18053,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Porn Lite Extension (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/porn-lite/formats/unbound.conf"
+    "viewUrl": "https://block.energized.pro/extensions/porn-lite/formats/unbound.conf"
   },
   {
     "id": 1786,
@@ -18089,11 +18069,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Regional Extension (Unbound)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 24,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/unbound.conf"
+    "viewUrl": "https://block.energized.pro/extensions/regional/formats/unbound.conf"
   },
   {
     "id": 1787,
@@ -18105,11 +18085,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Spark Protection (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/spark/formats/rpz.txt"
+    "viewUrl": "https://block.energized.pro/spark/formats/rpz.txt"
   },
   {
     "id": 1788,
@@ -18121,11 +18101,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Blu Go Protection (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/bluGo/formats/rpz.txt"
+    "viewUrl": "https://block.energized.pro/bluGo/formats/rpz.txt"
   },
   {
     "id": 1789,
@@ -18137,11 +18117,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Blu Protection (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/blu/formats/rpz.txt"
+    "viewUrl": "https://block.energized.pro/blu/formats/rpz.txt"
   },
   {
     "id": 1790,
@@ -18153,11 +18133,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Basic Protection (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/basic/formats/rpz.txt"
+    "viewUrl": "https://block.energized.pro/basic/formats/rpz.txt"
   },
   {
     "id": 1791,
@@ -18169,11 +18149,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Porn Protection (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/porn/formats/rpz.txt"
+    "viewUrl": "https://block.energized.pro/porn/formats/rpz.txt"
   },
   {
     "id": 1792,
@@ -18185,11 +18165,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Ultimate Protection (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/ultimate/formats/rpz.txt"
+    "viewUrl": "https://block.energized.pro/ultimate/formats/rpz.txt"
   },
   {
     "id": 1793,
@@ -18201,11 +18181,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Unified Protection (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/unified/formats/rpz.txt"
+    "viewUrl": "https://block.energized.pro/unified/formats/rpz.txt"
   },
   {
     "id": 1794,
@@ -18217,11 +18197,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Xtreme Extension (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/xtreme/formats/rpz.txt"
+    "viewUrl": "https://block.energized.pro/extensions/xtreme/formats/rpz.txt"
   },
   {
     "id": 1795,
@@ -18233,11 +18213,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Social Extension (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/social/formats/rpz.txt"
+    "viewUrl": "https://block.energized.pro/extensions/social/formats/rpz.txt"
   },
   {
     "id": 1796,
@@ -18249,11 +18229,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Porn Lite Extension (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/porn-lite/formats/rpz.txt"
+    "viewUrl": "https://block.energized.pro/extensions/porn-lite/formats/rpz.txt"
   },
   {
     "id": 1797,
@@ -18265,11 +18245,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized Regional Extension (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/rpz.txt"
+    "viewUrl": "https://block.energized.pro/extensions/regional/formats/rpz.txt"
   },
   {
     "id": 1798,
@@ -18281,11 +18261,11 @@
     "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
     "homeUrl": "https://energized.pro",
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
-    "licenseId": 9,
+    "licenseId": 2,
     "name": "Energized IP Extension",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 32,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/ips/formats/list.txt"
+    "viewUrl": "https://block.energized.pro/extensions/ips/formats/list.txt"
   },
   {
     "id": 1799,
@@ -22689,7 +22669,7 @@
     "publishedDate": "2017-06-09T13:17:30",
     "syntaxId": 10,
     "updatedDate": "2019-08-18T07:04:32",
-    "viewUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn.tpl"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/abpvn-minified.tpl"
   },
   {
     "id": 2255,
@@ -23033,18 +23013,18 @@
   },
   {
     "id": 2286,
-    "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO and AdGuard users should use the other versions instead.",
+    "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO, AdGuard and AdBlock users should use the other versions instead.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
-    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (for Adblock Plus with Eyeo compliance)",
+    "name": "Dandelion Sprout's West Nordic filters for tidier websites (for Adblock Plus with ABP inclusion compliance)",
     "publishedDate": "2020-05-28T00:00:00",
     "syntaxId": 38,
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Eyeo.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Eyeo.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Eyeo.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Inclusion.txt",
+    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Inclusion.txt",
+    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Inclusion.txt"
   },
   {
     "id": 2287,
@@ -23388,5 +23368,29 @@
     "viewUrlMirror1": "https://raw.githubusercontent.com/ftpmorph/ftpihole/master/blocklists/xiaomi-ads-tracking.txt",
     "name": "FTPiHole Xiaomi MIUI Ads and Trackers Blocklist",
     "issuesUrl": "https://github.com/ftpmorph/ftpihole/issues"
-}
+},
+{
+    "id": 2321,
+    "description": "EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.",
+    "descriptionSourceUrl": "https://filters.adtidy.org/extension/chromium/filters/224.txt",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Chinese Filter (AdGuard for Chromium)",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 6,
+    "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/224.txt"
+  },
+  {
+    "id": 2322,
+    "description": "EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.",
+    "descriptionSourceUrl": "https://filters.adtidy.org/extension/ublock/filters/224.txt",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Chinese Filter (AdGuard for Chromium)",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 4,
+    "viewUrl": "https://filters.adtidy.org/extension/ublock/filters/224.txt"
+  },
 ]
