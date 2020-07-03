@@ -188,5 +188,10 @@
     "id": 38,
     "description": "Pre-stable lists where maintainers are extra interested in feedback",
     "name": "beta"
+  },
+  {
+    "id": 39,
+    "description": "Replaces file and page sources to make them load faster",
+    "name": "cdn-replacer"
   }
 ]
