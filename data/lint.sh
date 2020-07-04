@@ -35,3 +35,6 @@ mv Software.tmp Software.json
 
 jq -S ".|=sort_by(.syntaxId, .softwareId)" SoftwareSyntax.json > SoftwareSyntax.tmp
 mv SoftwareSyntax.tmp SoftwareSyntax.json
+
+jq -S ".|=sort_by(.id)" Syntax.json > Syntax.tmp
+mv Syntax.tmp Syntax.json
