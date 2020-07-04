@@ -32,3 +32,6 @@ mv Merge.tmp Merge.json
 
 jq -S ".|=sort_by(.id)" Software.json > Software.tmp
 mv Software.tmp Software.json
+
+jq -S ".|=sort_by(.syntaxId, .softwareId)" SoftwareSyntax.json > SoftwareSyntax.tmp
+mv SoftwareSyntax.tmp SoftwareSyntax.json
