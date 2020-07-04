@@ -8,3 +8,6 @@ mv FilterList.tmp FilterList.json
 
 jq -S ".|=sort_by(.filterListId, .languageId)" FilterListLanguage.json > FilterListLanguage.tmp
 mv FilterListLanguage.tmp FilterListLanguage.json
+
+jq -S ".|=sort_by(.maintainerId, .filterListId)" FilterListMaintainer.json > FilterListMaintainer.tmp
+mv FilterListMaintainer.tmp FilterListMaintainer.json
