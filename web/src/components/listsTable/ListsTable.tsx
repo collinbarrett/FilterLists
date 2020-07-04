@@ -19,7 +19,6 @@ import { List } from "../../interfaces/List";
 import { ListInfoButton } from "../ListInfoButton";
 import { Maintainer } from "../../interfaces/Maintainer";
 import { MaintainerCloud } from "../maintainerCloud";
-import { PaginationConfig } from "antd/lib/pagination";
 import { RouteComponentProps } from "react-router";
 import { Software } from "../../interfaces/Software";
 import { Syntax } from "../../interfaces/Syntax";
@@ -29,6 +28,7 @@ import { Tag as TagInterface } from "../../interfaces/Tag";
 import { arraySorter } from "./arraySorter";
 import { nameof } from "../../utils";
 import styles from "./ListsTable.module.css";
+import { TablePaginationConfig } from "antd/lib/table";
 
 interface Props {
   lists: List[];
@@ -78,7 +78,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             : 1892,
       }}
       onChange={(
-        _pagination: PaginationConfig,
+        _pagination: TablePaginationConfig,
         _filters: Record<string, Key[] | null>,
         _sorter: SorterResult<List> | SorterResult<List>[],
         extra: TableCurrentDataSource<List>
