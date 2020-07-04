@@ -114,6 +114,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           title="Description"
           key="Description"
           dataIndex={nameof<List>("description")}
+          sorter={(a, b) => a.description.localeCompare(b.description)}
           width={
             !tablePageSize.isNarrowWindow && !tablePageSize.isWideWindow
               ? 423
