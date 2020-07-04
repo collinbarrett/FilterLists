@@ -147,8 +147,8 @@ const Api = () => (
 const Donate = () => (
   <Tag>
     <a
-      href="https://beerpay.io/collinbarrett/FilterLists"
-      title="Donate to FilterLists with Beerpay"
+      href="https://github.com/sponsors/collinbarrett"
+      title="Sponsor Collin Barrett on GitHub"
       target="_blank"
       rel="noopener noreferrer"
     >
