@@ -14,3 +14,6 @@ mv FilterListMaintainer.tmp FilterListMaintainer.json
 
 jq -S ".|=sort_by(.filterListId, .tagId)" FilterListTag.json > FilterListTag.tmp
 mv FilterListTag.tmp FilterListTag.json
+
+jq -S ".|=sort_by(.upstreamFilterListId, .forkFilterListId)" Fork.json > Fork.tmp
+mv Fork.tmp Fork.json
