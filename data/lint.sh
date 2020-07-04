@@ -17,3 +17,6 @@ mv FilterListTag.tmp FilterListTag.json
 
 jq -S ".|=sort_by(.upstreamFilterListId, .forkFilterListId)" Fork.json > Fork.tmp
 mv Fork.tmp Fork.json
+
+jq -S ".|=sort_by(.id)" Language.json > Language.tmp
+mv Language.tmp Language.json
