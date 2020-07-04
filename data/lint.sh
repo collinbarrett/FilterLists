@@ -23,3 +23,6 @@ mv Language.tmp Language.json
 
 jq -S ".|=sort_by(.id)" License.json > License.tmp
 mv License.tmp License.json
+
+jq -S ".|=sort_by(.id)" Maintainer.json > Maintainer.tmp
+mv Maintainer.tmp Maintainer.json
