@@ -3,7 +3,7 @@ import {
   DollarOutlined,
   GithubOutlined,
   TeamOutlined,
-  TwitterOutlined
+  TwitterOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu, Tag } from "antd";
 import React from "react";
@@ -12,7 +12,7 @@ import {
   Link,
   Route,
   RouteComponentProps,
-  Switch
+  Switch,
 } from "react-router-dom";
 
 import { ListsTable } from "./components";
@@ -33,7 +33,7 @@ export const App: React.FC = () => (
             paddingLeft: 12,
             paddingTop: 12,
             paddingRight: 12,
-            minHeight: 280
+            minHeight: 280,
           }}
         >
           <Switch>
@@ -47,7 +47,7 @@ export const App: React.FC = () => (
           textAlign: "center",
           padding: "6px 50px",
           background: "#fff",
-          lineHeight: "28px"
+          lineHeight: "28px",
         }}
       >
         <CopyrightAuthor />

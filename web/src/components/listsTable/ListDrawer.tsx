@@ -3,7 +3,7 @@ import {
   Redirect,
   Route,
   RouteComponentProps,
-  StaticContext
+  StaticContext,
 } from "react-router";
 
 import { Language } from "../../interfaces/Language";
@@ -27,7 +27,7 @@ interface Props {
 
 export const ListDrawer = (props: Props) => {
   const renderDrawer = (rp: RouteComponentProps<any, StaticContext, any>) => {
-    const list = props.lists.find(l => l.slug === rp.match.params.listSlug);
+    const list = props.lists.find((l) => l.slug === rp.match.params.listSlug);
     return list ? (
       <ListInfoDrawer
         list={list as List}
@@ -57,7 +57,7 @@ export const ListDrawer = (props: Props) => {
         }
         syntax={
           list.syntaxId
-            ? props.syntaxes.find(s => s.id === list.syntaxId)
+            ? props.syntaxes.find((s) => s.id === list.syntaxId)
             : undefined
         }
         tags={

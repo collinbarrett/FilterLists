@@ -10,7 +10,7 @@ import {
   MailOutlined,
   MessageOutlined,
   SearchOutlined,
-  TeamOutlined
+  TeamOutlined,
 } from "@ant-design/icons";
 import React, { useEffect, useState } from "react";
 

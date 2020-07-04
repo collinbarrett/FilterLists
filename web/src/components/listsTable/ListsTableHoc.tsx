@@ -8,7 +8,7 @@ import {
   useMaintainers,
   useSoftware,
   useSyntaxes,
-  useTags
+  useTags,
 } from "../../hooks";
 import { ListDrawer } from "./ListDrawer";
 import { ListsTable } from "./ListsTable";

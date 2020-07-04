@@ -81,5 +81,5 @@ export {
   img39,
   img40,
   img41,
-  img42
+  img42,
 };

@@ -3,7 +3,7 @@ import "./listsTable.css";
 import {
   Key,
   SorterResult,
-  TableCurrentDataSource
+  TableCurrentDataSource,
 } from "antd/lib/table/interface";
 import React, { useEffect, useState } from "react";
 import { SoftwareCloud, SoftwareIcon } from "../softwareCloud";
@@ -63,19 +63,19 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
   return (
     <Table<List>
       dataSource={lists}
-      rowKey={record => record.id.toString()}
+      rowKey={(record) => record.id.toString()}
       loading={lists.length ? false : true}
       size="small"
       pagination={{
         simple: true,
         style: { float: "left", margin: "4px 4px" },
-        pageSize: tablePageSize.pageSize
+        pageSize: tablePageSize.pageSize,
       }}
       scroll={{
         x:
           tablePageSize.isNarrowWindow || tablePageSize.isWideWindow
             ? undefined
-            : 1892
+            : 1892,
       }}
       onChange={(
         _pagination: PaginationConfig,
@@ -143,12 +143,12 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                   (s: Software) =>
                     s.syntaxIds && s.syntaxIds.includes(l.syntaxId)
                 )
-                .map(s => s.id);
+                .map((s) => s.id);
             return arraySorter(getSoftwareIds(a), getSoftwareIds(b), software);
           }}
           width={170}
           className={styles.nogrow}
-          filters={software.map(s => ({
+          filters={software.map((s) => ({
             text: (
               <>
                 <SoftwareIcon id={s.id} />
@@ -156,18 +156,18 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 {s.name}&nbsp; (
                 {
                   visibleLists.filter(
-                    l => s.syntaxIds && s.syntaxIds.includes(l.syntaxId)
+                    (l) => s.syntaxIds && s.syntaxIds.includes(l.syntaxId)
                   ).length
                 }
                 )
               </>
             ),
-            value: s.name
+            value: s.name,
           }))}
           onFilter={(value, record) =>
             software
               .filter((s: Software) => s.name === value)
-              .flatMap(s => s.syntaxIds)
+              .flatMap((s) => s.syntaxIds)
               .includes(record.syntaxId)
           }
           render={(syntaxId: number) =>
@@ -187,8 +187,8 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           key="Syntax"
           dataIndex={nameof<List>("syntaxId")}
           sorter={(a, b) => {
-            const syntaxA = syntaxes.find(s => s.id === a.syntaxId);
-            const syntaxB = syntaxes.find(s => s.id === b.syntaxId);
+            const syntaxA = syntaxes.find((s) => s.id === a.syntaxId);
+            const syntaxB = syntaxes.find((s) => s.id === b.syntaxId);
             return syntaxA
               ? syntaxB
                 ? syntaxA.name.localeCompare(syntaxB.name)
@@ -197,24 +197,24 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           }}
           width={254}
           className={styles.nogrow}
-          filters={syntaxes.map(s => ({
+          filters={syntaxes.map((s) => ({
             text: (
               <>
                 <SyntaxTag name={s.name} showLabel={false} />(
                 {
-                  visibleLists.filter(l => l.syntaxId && l.syntaxId === s.id)
+                  visibleLists.filter((l) => l.syntaxId && l.syntaxId === s.id)
                     .length
                 }
                 )
               </>
             ),
-            value: s.id.toString()
+            value: s.id.toString(),
           }))}
           onFilter={(value, record) =>
             record.syntaxId ? record.syntaxId.toString() === value : false
           }
           render={(syntaxId: number) => {
-            const syntax = syntaxes.find(s => s.id === syntaxId);
+            const syntax = syntaxes.find((s) => s.id === syntaxId);
             return syntax ? (
               <SyntaxTag
                 name={syntax.name}
@@ -234,20 +234,20 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           }
           width={129}
           className={styles.nogrow}
-          filters={languages.map(l => ({
+          filters={languages.map((l) => ({
             text: (
               <>
                 <Tag title={l.name}>{l.iso6391}</Tag>&nbsp;
                 {l.name}&nbsp; (
                 {
                   visibleLists.filter(
-                    li => li.languageIds && li.languageIds.includes(l.id)
+                    (li) => li.languageIds && li.languageIds.includes(l.id)
                   ).length
                 }
                 )
               </>
             ),
-            value: l.id.toString()
+            value: l.id.toString(),
           }))}
           onFilter={(value, record) =>
             record.languageIds ? record.languageIds.includes(+value) : false
@@ -271,18 +271,19 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           sorter={(a, b) => arraySorter(a.tagIds, b.tagIds, tags)}
           width={275}
           className={styles.nogrow}
-          filters={tags.map(t => ({
+          filters={tags.map((t) => ({
             text: (
               <>
                 <Tag title={t.description}>{t.name}</Tag>(
                 {
-                  visibleLists.filter(l => l.tagIds && l.tagIds.includes(t.id))
-                    .length
+                  visibleLists.filter(
+                    (l) => l.tagIds && l.tagIds.includes(t.id)
+                  ).length
                 }
                 )
               </>
             ),
-            value: t.id.toString()
+            value: t.id.toString(),
           }))}
           onFilter={(value, record) =>
             record.tagIds ? record.tagIds.includes(+value) : false
@@ -306,19 +307,19 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           }
           width={191}
           className={styles.nogrow}
-          filters={maintainers.map(t => ({
+          filters={maintainers.map((t) => ({
             text: (
               <>
                 <Tag title={t.name}>{t.name}</Tag>(
                 {
                   visibleLists.filter(
-                    l => l.maintainerIds && l.maintainerIds.includes(t.id)
+                    (l) => l.maintainerIds && l.maintainerIds.includes(t.id)
                   ).length
                 }
                 )
               </>
             ),
-            value: t.id.toString()
+            value: t.id.toString(),
           }))}
           onFilter={(value, record) =>
             record.maintainerIds ? record.maintainerIds.includes(+value) : false
@@ -340,8 +341,8 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           key="License"
           dataIndex={nameof<List>("licenseId")}
           sorter={(a, b) => {
-            const licenseA = licenses.find(s => s.id === a.licenseId);
-            const licenseB = licenses.find(s => s.id === b.licenseId);
+            const licenseA = licenses.find((s) => s.id === a.licenseId);
+            const licenseB = licenses.find((s) => s.id === b.licenseId);
             return licenseA
               ? licenseB
                 ? licenseA.name.localeCompare(licenseB.name)
@@ -350,25 +351,25 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           }}
           width={215}
           className={styles.nogrow}
-          filters={licenses.map(l => ({
+          filters={licenses.map((l) => ({
             text: (
               <>
                 <LicenseTag name={l.name} showLabel={false} />(
                 {
                   visibleLists.filter(
-                    li => li.licenseId && li.licenseId === l.id
+                    (li) => li.licenseId && li.licenseId === l.id
                   ).length
                 }
                 )
               </>
             ),
-            value: l.id.toString()
+            value: l.id.toString(),
           }))}
           onFilter={(value, record) =>
             record.licenseId ? record.licenseId.toString() === value : false
           }
           render={(licenseId: number) => {
-            const license = licenses.find(l => l.id === licenseId);
+            const license = licenses.find((l) => l.id === licenseId);
             return license ? (
               <LicenseTag
                 name={license.name}

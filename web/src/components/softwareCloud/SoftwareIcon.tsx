@@ -41,7 +41,7 @@ import {
   img39,
   img40,
   img41,
-  img42
+  img42,
 } from "./imgs";
 
 interface Props {
@@ -104,5 +104,5 @@ const icons: { [id: number]: Icon } = {
   39: { image: img39, imageTitle: "pfBlockerNG" },
   40: { image: img40, imageTitle: "Opera's built-in adblocker" },
   41: { image: img41, imageTitle: "Surge" },
-  42: { image: img42, imageTitle: "dnscrypt-proxy" }
+  42: { image: img42, imageTitle: "dnscrypt-proxy" },
 };

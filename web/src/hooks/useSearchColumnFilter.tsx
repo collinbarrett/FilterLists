@@ -15,7 +15,7 @@ export const useSearchColumnFilter = <T extends {}>(dataIndex: string) => {
   const [filterProps, setFilterProps] = useState<FilterPropsState<T>>({
     filterDropdown: undefined,
     filterIcon: undefined,
-    onFilter: undefined
+    onFilter: undefined,
   });
   useEffect(() => {
     const handleSearch = (confirm?: () => void) => {
@@ -29,14 +29,15 @@ export const useSearchColumnFilter = <T extends {}>(dataIndex: string) => {
         setSelectedKeys,
         selectedKeys,
         confirm,
-        clearFilters
+        clearFilters,
       }) => (
         <div style={{ padding: 8 }}>
           <Input
-            placeholder={`Search ${dataIndex.charAt(0).toUpperCase() +
-              dataIndex.slice(1)}`}
+            placeholder={`Search ${
+              dataIndex.charAt(0).toUpperCase() + dataIndex.slice(1)
+            }`}
             value={selectedKeys && selectedKeys[0]}
-            onChange={e =>
+            onChange={(e) =>
               setSelectedKeys &&
               setSelectedKeys(e.target.value ? [e.target.value] : [])
             }
@@ -61,7 +62,7 @@ export const useSearchColumnFilter = <T extends {}>(dataIndex: string) => {
           </Button>
         </div>
       ),
-      filterIcon: filtered => (
+      filterIcon: (filtered) => (
         <SearchOutlined style={{ color: filtered ? "#1890ff" : undefined }} />
       ),
       onFilter: (value, record) => {
@@ -73,7 +74,7 @@ export const useSearchColumnFilter = <T extends {}>(dataIndex: string) => {
             .toLowerCase()
             .includes(value.toString().toLowerCase())
         );
-      }
+      },
     });
   }, [dataIndex]);
   return filterProps;

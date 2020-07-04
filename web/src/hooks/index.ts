@@ -17,5 +17,5 @@ export {
   useSoftware,
   useSyntaxes,
   useTablePageSizer,
-  useTags
+  useTags,
 };
