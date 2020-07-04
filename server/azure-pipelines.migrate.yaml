@@ -1,6 +1,5 @@
 # Adds an Entity Framework Core migration to a pull request that changes data in data/*.json
 
-# TODO: sort/lint JSON
 # TODO: if data/* or server/src/FilterLists.Data.Migrations/* change in origin/master, re-trigger this Pipeline
 trigger: none
 
@@ -36,7 +35,7 @@ steps:
       script: |
         LASTAUTHOR=$(git log -n 1 --pretty=format:"%an")
         LASTMSG=$(git log -n 1 --pretty=format:"%s")
-        if [[ $LASTAUTHOR == "$GITHUBNAME" ]] && [[ $LASTMSG == "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
+        if [[ $LASTAUTHOR == "$GITHUBNAME" ]] && [[ $LASTMSG == "feat(data): migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" ]] ; then
           echo "Just migrated. Aborting..."
         else
           echo "##vso[task.setvariable variable=aborted;isOutput=true]false"
@@ -79,7 +78,7 @@ steps:
         echo "$MIGLIST"
         if [[ $MIGLIST == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
           echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER. Reverting..."
-          REVERTHASH=$(git log -n 1 --author="$GITHUBNAME" --grep="migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" --pretty=format:"%H")
+          REVERTHASH=$(git log -n 1 --author="$GITHUBNAME" --grep="feat(data): migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" --pretty=format:"%H")
           git revert --no-edit "$REVERTHASH"
         fi
 
@@ -119,7 +118,7 @@ steps:
           echo "No-op migration. Effective EF migrations add/change 3 files (.Designer.cs, .cs, and *ModelSnapshot.cs). Abandoning..."
         else
           git add .
-          git commit -m "migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
+          git commit -m "feat(data): migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
           echo "##vso[task.setvariable variable=committed;isOutput=true]true"
         fi
 
