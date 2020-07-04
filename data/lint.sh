@@ -26,3 +26,6 @@ mv License.tmp License.json
 
 jq -S ".|=sort_by(.id)" Maintainer.json > Maintainer.tmp
 mv Maintainer.tmp Maintainer.json
+
+jq -S ".|=sort_by(.mergeFilterListId, .upstreamFilterListId)" Merge.json > Merge.tmp
+mv Merge.tmp Merge.json
