@@ -38,3 +38,6 @@ mv SoftwareSyntax.tmp SoftwareSyntax.json
 
 jq -S ".|=sort_by(.id)" Syntax.json > Syntax.tmp
 mv Syntax.tmp Syntax.json
+
+jq -S ".|=sort_by(.id)" Tag.json > Tag.tmp
+mv Tag.tmp Tag.json
