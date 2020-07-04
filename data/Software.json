@@ -1,210 +1,210 @@
 [
   {
-    "id": 1,
     "downloadUrl": "https://github.com/gorhill/uBlock#installation",
     "homeUrl": "https://github.com/gorhill/uBlock",
+    "id": 1,
     "isAbpSubscribable": true,
     "name": "uBlock Origin"
   },
   {
-    "id": 2,
     "downloadUrl": "https://adblockplus.org/",
     "homeUrl": "https://adblockplus.org/",
+    "id": 2,
     "isAbpSubscribable": true,
     "name": "Adblock Plus"
   },
   {
-    "id": 3,
     "downloadUrl": "https://adguard.com/en/download.html",
     "homeUrl": "https://adguard.com/",
+    "id": 3,
     "isAbpSubscribable": true,
     "name": "AdGuard"
   },
   {
-    "id": 4,
     "downloadUrl": "https://f-droid.org/packages/org.jak_linux.dns66/",
     "homeUrl": "https://github.com/julian-klode/dns66",
+    "id": 4,
     "isAbpSubscribable": false,
     "name": "DNS66"
   },
   {
-    "id": 5,
     "downloadUrl": "https://github.com/NanoAdblocker/NanoCore#nano-adblocker-core",
     "homeUrl": "https://github.com/NanoAdblocker/NanoCore",
+    "id": 5,
     "isAbpSubscribable": true,
     "name": "Nano Adblocker"
   },
   {
-    "id": 6,
     "downloadUrl": "https://getadblock.com/",
     "homeUrl": "https://getadblock.com/",
+    "id": 6,
     "isAbpSubscribable": true,
     "name": "AdBlock"
   },
   {
-    "id": 7,
     "downloadUrl": "https://f-droid.org/packages/org.adaway/",
     "homeUrl": "https://adaway.org/",
+    "id": 7,
     "isAbpSubscribable": false,
     "name": "AdAway"
   },
   {
-    "id": 8,
     "downloadUrl": "https://addons.mozilla.org/firefox/addon/personal-blocklist/",
     "homeUrl": "https://addons.mozilla.org/firefox/addon/personal-blocklist/",
+    "id": 8,
     "isAbpSubscribable": false,
     "name": "Personal Blocklist for Firefox"
   },
   {
-    "id": 10,
     "downloadUrl": "http://einaregilsson.com/redirector/",
     "homeUrl": "http://einaregilsson.com/redirector/",
+    "id": 10,
     "isAbpSubscribable": false,
     "name": "Redirector"
   },
   {
-    "id": 11,
     "downloadUrl": "https://github.com/scottlerch/HostsFileEditor/releases",
     "homeUrl": "https://hostsfileeditor.com/",
+    "id": 11,
     "isAbpSubscribable": false,
     "name": "Hosts File Editor"
   },
   {
-    "id": 12,
     "downloadUrl": "https://github.com/2ndalpha/gasmask/releases",
     "homeUrl": "https://github.com/2ndalpha/gasmask",
+    "id": 12,
     "isAbpSubscribable": false,
     "name": "Gas Mask"
   },
   {
-    "id": 13,
     "downloadUrl": "https://github.com/xd4rker/MinerBlock/releases",
     "homeUrl": "https://github.com/xd4rker/MinerBlock",
+    "id": 13,
     "isAbpSubscribable": false,
     "name": "MinerBlock"
   },
   {
-    "id": 14,
     "downloadUrl": "https://pi-hole.net/",
     "homeUrl": "https://pi-hole.net/",
+    "id": 14,
     "isAbpSubscribable": false,
     "name": "Pi-hole"
   },
   {
-    "id": 16,
     "downloadUrl": "https://support.microsoft.com/en-gb/help/18520/download-internet-explorer-11-offline-installer",
     "homeUrl": "https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/hh273399(v=vs.85)",
+    "id": 16,
     "isAbpSubscribable": false,
     "name": "Internet Explorer (TPL)"
   },
   {
-    "id": 17,
     "downloadUrl": "https://greasyfork.org/scripts/1682-google-hit-hider-by-domain-search-filter-block-sites",
     "homeUrl": "https://www.jeffersonscher.com/gm/google-hit-hider/",
+    "id": 17,
     "isAbpSubscribable": false,
     "name": "Google Hit Hider by Domain"
   },
   {
-    "id": 18,
     "downloadUrl": "https://firehol.org/installing/",
     "homeUrl": "https://firehol.org/",
+    "id": 18,
     "isAbpSubscribable": false,
     "name": "FireHOL"
   },
   {
-    "id": 19,
     "homeUrl": "https://www.samsungknox.com",
+    "id": 19,
     "isAbpSubscribable": false,
     "name": "Samsung Knox"
   },
   {
-    "id": 20,
     "downloadUrl": "https://www.obdev.at/products/littlesnitch/download.html",
     "homeUrl": "https://www.obdev.at/products/littlesnitch/index.html",
+    "id": 20,
     "isAbpSubscribable": false,
     "name": "Little Snitch"
   },
   {
-    "id": 21,
     "downloadUrl": "https://www.privoxy.org/sf-download-mirror/",
     "homeUrl": "https://www.privoxy.org/",
+    "id": 21,
     "isAbpSubscribable": false,
     "name": "Privoxy"
   },
   {
-    "id": 22,
     "downloadUrl": "https://diversion.ch/diversion/installation.html",
     "homeUrl": "https://diversion.ch/",
+    "id": 22,
     "isAbpSubscribable": false,
     "name": "Diversion"
   },
   {
-    "id": 23,
     "downloadUrl": "http://www.thekelleys.org.uk/dnsmasq/",
     "homeUrl": "http://www.thekelleys.org.uk/dnsmasq/doc.html",
+    "id": 23,
     "isAbpSubscribable": false,
     "name": "dnsmasq"
   },
   {
-    "id": 24,
     "downloadUrl": "https://www.slimjet.com/en/dlpage.php",
     "homeUrl": "https://www.slimjet.com",
+    "id": 24,
     "isAbpSubscribable": true,
     "name": "Slimjet"
   },
   {
-    "id": 25,
     "downloadUrl": "https://github.com/gorhill/uMatrix#umatrix",
     "homeUrl": "https://github.com/gorhill/uMatrix",
+    "id": 25,
     "isAbpSubscribable": true,
     "name": "uMatrix"
   },
   {
-    "id": 26,
     "downloadUrl": "https://f-droid.org/packages/org.blokada.alarm/",
     "homeUrl": "https://blokada.org",
+    "id": 26,
     "isAbpSubscribable": false,
     "name": "Blokada"
   },
   {
-    "id": 27,
     "downloadUrl": "https://github.com/henrypp/hostsmgr/releases",
     "homeUrl": "https://www.henrypp.org/product/hostsmgr",
+    "id": 27,
     "isAbpSubscribable": false,
     "name": "hostsmgr"
   },
   {
-    "id": 28,
     "downloadUrl": "https://zenz-solutions.de/personaldnsfilter/",
     "homeUrl": "https://zenz-solutions.de/personaldnsfilter/",
+    "id": 28,
     "isAbpSubscribable": false,
     "name": "personalDNSfilter"
   },
   {
-    "id": 29,
     "downloadUrl": "https://nlnetlabs.nl/projects/unbound/download/",
     "homeUrl": "https://nlnetlabs.nl/projects/unbound/about/",
+    "id": 29,
     "isAbpSubscribable": false,
     "name": "Unbound"
   },
   {
-    "id": 30,
     "downloadUrl": "https://www.isc.org/bind/",
     "homeUrl": "https://www.isc.org/bind/",
+    "id": 30,
     "isAbpSubscribable": false,
     "name": "BIND"
   },
   {
-    "id": 31,
     "downloadUrl": "https://github.com/AdguardTeam/AdGuardHome/releases",
     "homeUrl": "https://github.com/AdguardTeam/AdGuardHome",
+    "id": 31,
     "isAbpSubscribable": false,
     "name": "AdGuard Home"
   },
   {
-    "id": 32,
     "downloadUrl": "https://adnauseam.io/",
     "homeUrl": "https://adnauseam.io/",
+    "id": 32,
     "isAbpSubscribable": true,
     "name": "AdNauseam"
   },
@@ -219,57 +219,57 @@
     "name": "Windows command line"
   },
   {
-    "id": 35,
     "downloadUrl": "https://shadowsocks.org/en/download/clients.html",
     "homeUrl": "https://shadowsocks.org/en/index.html",
+    "id": 35,
     "isAbpSubscribable": false,
     "name": "Shadowsocks"
   },
   {
-    "id": 36,
     "downloadUrl": "https://github.com/shadowsocksrr/shadowsocksr-csharp/releases",
     "homeUrl": "https://github.com/shadowsocksrr/shadowsocksr-csharp",
+    "id": 36,
     "isAbpSubscribable": false,
     "name": "ShadowsocksR"
   },
   {
-    "id": 37,
     "downloadUrl": "https://apps.apple.com/app/shadowrocket/id932747118",
     "homeUrl": "https://liguangming.com/Shadowrocket",
+    "id": 37,
     "isAbpSubscribable": false,
     "name": "Shadowrocket"
   },
   {
-    "id": 38,
     "downloadUrl": "https://github.com/fengyc/URLRedirector/#urlredirector",
     "homeUrl": "https://github.com/fengyc/URLRedirector/",
+    "id": 38,
     "isAbpSubscribable": false,
     "name": "URLRedirector"
   },
   {
-    "id": 39,
     "homeUrl": "https://www.reddit.com/r/pfBlockerNG/",
+    "id": 39,
     "isAbpSubscribable": false,
     "name": "pfBlockerNG"
   },
   {
-    "id": 40,
     "downloadUrl": "https://www.opera.com/",
     "homeUrl": "https://www.opera.com/",
+    "id": 40,
     "isAbpSubscribable": true,
     "name": "Opera's built-in adblocker"
   },
   {
-    "id": 41,
     "downloadUrl": "https://nssurge.com/mac/v3/Surge-latest.zip",
     "homeUrl": "https://nssurge.com/",
+    "id": 41,
     "isAbpSubscribable": false,
     "name": "Surge"
   },
   {
-    "id": 42,
     "downloadUrl": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/latest",
     "homeUrl": "https://github.com/DNSCrypt/dnscrypt-proxy",
+    "id": 42,
     "isAbpSubscribable": false,
     "name": "dnscrypt-proxy"
   }
