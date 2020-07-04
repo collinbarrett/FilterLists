@@ -41,17 +41,11 @@ steps:
           echo "##vso[task.setvariable variable=aborted;isOutput=true]false"
         fi
 
-  - task: UseDotNet@2
-    displayName: use latest dotnet sdk
+  - task: ShellScript@2
+    displayName: lint json
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     inputs:
-      version: 3.x
-
-  - task: CmdLine@2
-    displayName: install ef dotnet tool
-    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
-    inputs:
-      script: dotnet tool install -g dotnet-ef
+      scriptPath: data/lint.sh
 
   - task: Bash@3
     displayName: git config
@@ -64,6 +58,33 @@ steps:
       script: |
         git config --global user.name "$GITHUBNAME"
         git config --global user.email "$GITHUBEMAIL"
+
+  - task: Bash@3
+    displayName: commit lint results
+    name: commitLint
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
+    inputs:
+      targetType: inline
+      workingDirectory: data
+      script: |
+        DIFF=$(git status -s -- . | wc -l)
+        echo "$DIFF file(s) required linting"
+        if (( $DIFF > 0 )) ; then
+          git add .
+          git commit -m "refactor(data): lint PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
+        fi
+
+  - task: UseDotNet@2
+    displayName: use latest dotnet sdk
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
+    inputs:
+      version: 3.x
+
+  - task: CmdLine@2
+    displayName: install ef dotnet tool
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
+    inputs:
+      script: dotnet tool install -g dotnet-ef
 
   - task: Bash@3
     displayName: revert existing PR migration
