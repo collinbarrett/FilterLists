@@ -20,3 +20,6 @@ mv Fork.tmp Fork.json
 
 jq -S ".|=sort_by(.id)" Language.json > Language.tmp
 mv Language.tmp Language.json
+
+jq -S ".|=sort_by(.id)" License.json > License.tmp
+mv License.tmp License.json
