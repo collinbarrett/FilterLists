@@ -29,3 +29,6 @@ mv Maintainer.tmp Maintainer.json
 
 jq -S ".|=sort_by(.mergeFilterListId, .upstreamFilterListId)" Merge.json > Merge.tmp
 mv Merge.tmp Merge.json
+
+jq -S ".|=sort_by(.id)" Software.json > Software.tmp
+mv Software.tmp Software.json
