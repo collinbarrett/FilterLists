@@ -11,6 +11,6 @@ services:
     build:
       dockerfile: server/src/FilterLists.Api/debug.Dockerfile
 
-  agent:
-    build:
-      dockerfile: server/src/FilterLists.Agent/debug.Dockerfile
+#  agent:
+#    build:
+#      dockerfile: server/src/FilterLists.Agent/debug.Dockerfile

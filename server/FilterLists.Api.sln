@@ -7,23 +7,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{00CBD1AF-455
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EA11453B-FB14-4F0E-A19B-B8089498F677}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Agent", "src\FilterLists.Agent\FilterLists.Agent.csproj", "{BA14A9D0-174C-4944-85E5-DB7D0DCF4D22}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Data", "src\FilterLists.Data\FilterLists.Data.csproj", "{E604D351-D471-41FD-BA82-BAE12B342B4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Data.Migrations", "src\FilterLists.Data.Migrations\FilterLists.Data.Migrations.csproj", "{312A8819-5CAB-4F43-B182-50CAD5D8FEF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Data.Migrations", "src\FilterLists.Data.Migrations\FilterLists.Data.Migrations.csproj", "{312A8819-5CAB-4F43-B182-50CAD5D8FEF9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Services", "src\FilterLists.Services\FilterLists.Services.csproj", "{51186C58-1627-4743-B86D-4B355D8A152B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Api", "src\FilterLists.Api\FilterLists.Api.csproj", "{1B8105E2-0721-4DC0-8243-02932A05D98B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Agent.Tests", "tests\FilterLists.Agent.Tests\FilterLists.Agent.Tests.csproj", "{668D27A9-FD28-4F2A-BA4C-37BBAED95617}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Data.Tests", "tests\FilterLists.Data.Tests\FilterLists.Data.Tests.csproj", "{EB65E67D-3C29-4555-8D9B-C90801880F51}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Services.Tests", "tests\FilterLists.Services.Tests\FilterLists.Services.Tests.csproj", "{0F419F45-EC3F-409B-95A2-F6AEE21E4041}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "..\docker-compose.dcproj", "{26883901-339A-44CF-8894-45F6A3A5EBAB}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose.web", "..\docker-compose.web.dcproj", "{26883901-339A-44CF-8894-45F6A3A5EBAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +27,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BA14A9D0-174C-4944-85E5-DB7D0DCF4D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA14A9D0-174C-4944-85E5-DB7D0DCF4D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA14A9D0-174C-4944-85E5-DB7D0DCF4D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA14A9D0-174C-4944-85E5-DB7D0DCF4D22}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E604D351-D471-41FD-BA82-BAE12B342B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E604D351-D471-41FD-BA82-BAE12B342B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E604D351-D471-41FD-BA82-BAE12B342B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E604D351-D471-41FD-BA82-BAE12B342B4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{312A8819-5CAB-4F43-B182-50CAD5D8FEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312A8819-5CAB-4F43-B182-50CAD5D8FEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312A8819-5CAB-4F43-B182-50CAD5D8FEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312A8819-5CAB-4F43-B182-50CAD5D8FEF9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{51186C58-1627-4743-B86D-4B355D8A152B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{51186C58-1627-4743-B86D-4B355D8A152B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51186C58-1627-4743-B86D-4B355D8A152B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,14 +43,6 @@ Global
 		{1B8105E2-0721-4DC0-8243-02932A05D98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B8105E2-0721-4DC0-8243-02932A05D98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B8105E2-0721-4DC0-8243-02932A05D98B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{312A8819-5CAB-4F43-B182-50CAD5D8FEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{312A8819-5CAB-4F43-B182-50CAD5D8FEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{312A8819-5CAB-4F43-B182-50CAD5D8FEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{312A8819-5CAB-4F43-B182-50CAD5D8FEF9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{668D27A9-FD28-4F2A-BA4C-37BBAED95617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{668D27A9-FD28-4F2A-BA4C-37BBAED95617}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{668D27A9-FD28-4F2A-BA4C-37BBAED95617}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{668D27A9-FD28-4F2A-BA4C-37BBAED95617}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EB65E67D-3C29-4555-8D9B-C90801880F51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EB65E67D-3C29-4555-8D9B-C90801880F51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB65E67D-3C29-4555-8D9B-C90801880F51}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -72,12 +60,10 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{BA14A9D0-174C-4944-85E5-DB7D0DCF4D22} = {00CBD1AF-455E-4DF5-AB24-A5C2C18EEB6F}
 		{E604D351-D471-41FD-BA82-BAE12B342B4D} = {00CBD1AF-455E-4DF5-AB24-A5C2C18EEB6F}
+		{312A8819-5CAB-4F43-B182-50CAD5D8FEF9} = {00CBD1AF-455E-4DF5-AB24-A5C2C18EEB6F}
 		{51186C58-1627-4743-B86D-4B355D8A152B} = {00CBD1AF-455E-4DF5-AB24-A5C2C18EEB6F}
 		{1B8105E2-0721-4DC0-8243-02932A05D98B} = {00CBD1AF-455E-4DF5-AB24-A5C2C18EEB6F}
-		{312A8819-5CAB-4F43-B182-50CAD5D8FEF9} = {00CBD1AF-455E-4DF5-AB24-A5C2C18EEB6F}
-		{668D27A9-FD28-4F2A-BA4C-37BBAED95617} = {EA11453B-FB14-4F0E-A19B-B8089498F677}
 		{EB65E67D-3C29-4555-8D9B-C90801880F51} = {EA11453B-FB14-4F0E-A19B-B8089498F677}
 		{0F419F45-EC3F-409B-95A2-F6AEE21E4041} = {EA11453B-FB14-4F0E-A19B-B8089498F677}
 	EndGlobalSection
