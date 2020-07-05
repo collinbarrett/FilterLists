@@ -56,27 +56,27 @@ services:
         "--collation-server=utf8mb4_unicode_520_ci",
       ]
 
-#  agent:
-#    image: collinbarrett2/filterlists.agent:latest
-#    build:
-#      context: .
-#      dockerfile: server/src/FilterLists.Agent/Dockerfile
-#      target: final
-#    volumes:
-#      - archives:/app/archives
-#    environment:
-#      ApplicationInsights__InstrumentationKey: ${AGENT_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
-#      Archive__RepositoryDirectory: ${AGENT_ARCHIVE_GIT_REPOSITORY_DIRECTORY}
-#      Archive__SignatureName: ${AGENT_ARCHIVE_GIT_SIGNATURE_NAME}
-#      Archive__SignatureEmail: ${AGENT_ARCHIVE_GIT_SIGNATURE_EMAIL}
-#      Archive__CommitMessageSuffix: ${AGENT_ARCHIVE_GIT_COMMIT_MESSAGE_SUFFIX}
-#      ConnectionString__FilterListsConnection: ${API_CONNECTION_STRING}
-#      FilterListsApi__BaseUrl: ${AGENT_FILTERLISTS_API_BASE_URL}
-#      FilterListsApi__ClientUserAgent: ${AGENT_FILTERLISTS_API_CLIENT_USER_AGENT}
-#      GitHub__ProductHeaderValue: ${AGENT_GITHUB_PRODUCT_HEADER_VALUE}
-#      GitHub__PersonalAccessToken: ${AGENT_GITHUB_PERSONAL_ACCESS_TOKEN}
-#      GitHub__RepositoryOwner: ${AGENT_GITHUB_REPOSITORY_OWNER}
-#      GitHub__Repository: ${AGENT_GITHUB_REPOSITORY}
+  agent:
+    image: collinbarrett2/filterlists.agent:latest
+    build:
+      context: .
+      dockerfile: server/src/FilterLists.Agent/Dockerfile
+      target: final
+    volumes:
+      - archives:/app/archives
+    environment:
+      ApplicationInsights__InstrumentationKey: ${AGENT_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
+      Archive__RepositoryDirectory: ${AGENT_ARCHIVE_GIT_REPOSITORY_DIRECTORY}
+      Archive__SignatureName: ${AGENT_ARCHIVE_GIT_SIGNATURE_NAME}
+      Archive__SignatureEmail: ${AGENT_ARCHIVE_GIT_SIGNATURE_EMAIL}
+      Archive__CommitMessageSuffix: ${AGENT_ARCHIVE_GIT_COMMIT_MESSAGE_SUFFIX}
+      ConnectionString__FilterListsConnection: ${API_CONNECTION_STRING}
+      FilterListsApi__BaseUrl: ${AGENT_FILTERLISTS_API_BASE_URL}
+      FilterListsApi__ClientUserAgent: ${AGENT_FILTERLISTS_API_CLIENT_USER_AGENT}
+      GitHub__ProductHeaderValue: ${AGENT_GITHUB_PRODUCT_HEADER_VALUE}
+      GitHub__PersonalAccessToken: ${AGENT_GITHUB_PERSONAL_ACCESS_TOKEN}
+      GitHub__RepositoryOwner: ${AGENT_GITHUB_REPOSITORY_OWNER}
+      GitHub__Repository: ${AGENT_GITHUB_REPOSITORY}
 
 networks:
   reverse-proxy:
@@ -84,4 +84,4 @@ networks:
 
 volumes:
   data:
-#  archives:
+  archives:
