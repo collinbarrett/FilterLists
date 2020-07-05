@@ -4,8 +4,9 @@ using FilterLists.Data.Entities.Junctions;
 
 namespace FilterLists.Data.Entities
 {
-    public class FilterList : BaseEntity
+    public class FilterList : BaseEntity, IDeleteSoftly
     {
+        public bool? IsDeleted { get; set; }
         public string ChatUrl { get; set; }
         public ICollection<Dependent> DependentFilterLists { get; set; }
         public ICollection<Dependent> DependencyFilterLists { get; set; }
