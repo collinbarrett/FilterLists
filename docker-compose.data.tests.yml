@@ -16,7 +16,7 @@ services:
 
   mariadb:
     # on update, also update ServerVersion in FilterLists.Data.Constants.ServerVersion
-    image: mariadb:10.4.12
+    image: mariadb:10.5.4
     networks:
       - test-data
     environment:
