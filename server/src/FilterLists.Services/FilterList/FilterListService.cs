@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -15,14 +16,20 @@ namespace FilterLists.Services.FilterList
         {
         }
 
-        public async Task<IEnumerable<FilterListDto>> GetAllAsync() =>
-            await DbContext.FilterLists
-                           .ProjectTo<FilterListDto>(MapConfig)
-                           .ToListAsync();
+        public async Task<IEnumerable<FilterListDto>> GetAllAsync()
+        {
+            return await DbContext.FilterLists
+                .Where(fl => fl.IsDeleted != true)
+                .ProjectTo<FilterListDto>(MapConfig)
+                .ToListAsync();
+        }
 
-        public async Task<FilterListDto> GetByIdAsync(int id) =>
-            await DbContext.FilterLists
-                           .ProjectTo<FilterListDto>(MapConfig)
-                           .FirstOrDefaultAsync(l => l.Id == id);
+        public async Task<FilterListDto> GetByIdAsync(int id)
+        {
+            return await DbContext.FilterLists
+                .Where(fl => fl.IsDeleted != true)
+                .ProjectTo<FilterListDto>(MapConfig)
+                .FirstOrDefaultAsync(l => l.Id == id);
+        }
     }
 }
