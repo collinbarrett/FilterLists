@@ -15,7 +15,7 @@ trigger:
         server/**/.editorconfig,
         .dockerignore,
         docker-compose.yml,
-        docker-compose.prod.yml,
+        docker-compose.web.prod.yml,
         docker-compose.data.tests.yml,
         docker-compose.services.tests.yml,
       ]
@@ -37,7 +37,7 @@ pr:
         server/**/.editorconfig,
         .dockerignore,
         docker-compose.yml,
-        docker-compose.prod.yml,
+        docker-compose.web.prod.yml,
         docker-compose.data.tests.yml,
         docker-compose.services.tests.yml,
       ]
@@ -62,7 +62,7 @@ steps:
     displayName: up test-data db
     inputs:
       dockerComposeFile: docker-compose.data.tests.yml
-      dockerComposeCommand: up -d mariadb
+      dockerComposeCommand: up -d db
 
   - task: DockerCompose@0
     displayName: run test-data
@@ -127,7 +127,7 @@ steps:
     displayName: build final
     inputs:
       dockerComposeFile: docker-compose.yml
-      additionalDockerComposeFiles: docker-compose.prod.yml
+      additionalDockerComposeFiles: docker-compose.web.prod.yml
       dockerComposeCommand: build api
     condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 
@@ -157,7 +157,7 @@ steps:
       SourceFolder: $(Build.SourcesDirectory)
       Contents: |
         docker-compose.yml
-        docker-compose.prod.yml
+        docker-compose.web.prod.yml
       TargetFolder: $(Build.ArtifactStagingDirectory)
       CleanTargetFolder: true
       OverWrite: true

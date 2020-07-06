@@ -6,11 +6,7 @@ services:
       - "80:80"
     volumes:
       - ./ops/nginx/conf.d.dev:/etc/nginx/conf.d:ro
-      
+
   api:
     build:
       dockerfile: server/src/FilterLists.Api/debug.Dockerfile
-
-  agent:
-    build:
-      dockerfile: server/src/FilterLists.Agent/debug.Dockerfile

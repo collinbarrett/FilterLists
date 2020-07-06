@@ -12,9 +12,9 @@ services:
     volumes:
       - test-data-results:/app/tests/FilterLists.Data.Tests/TestResults
     depends_on:
-      - mariadb
+      - db
 
-  mariadb:
+  db:
     # on update, also update ServerVersion in FilterLists.Data.Constants.ServerVersion
     image: mariadb:10.5.4
     networks:

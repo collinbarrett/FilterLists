@@ -1,0 +1,53 @@
+version: "3.7"
+
+services:
+  agent:
+    image: collinbarrett2/filterlists.agent:latest
+    build:
+      context: .
+      dockerfile: src/FilterLists.Agent/Dockerfile
+      target: final
+    networks:
+      - db
+    volumes:
+      - archives:/app/archives
+    environment:
+      ApplicationInsights__InstrumentationKey: ${AGENT_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
+      Archive__RepositoryDirectory: ${AGENT_ARCHIVE_GIT_REPOSITORY_DIRECTORY}
+      Archive__SignatureName: ${AGENT_ARCHIVE_GIT_SIGNATURE_NAME}
+      Archive__SignatureEmail: ${AGENT_ARCHIVE_GIT_SIGNATURE_EMAIL}
+      Archive__CommitMessageSuffix: ${AGENT_ARCHIVE_GIT_COMMIT_MESSAGE_SUFFIX}
+      ConnectionString__FilterListsConnection: ${API_CONNECTION_STRING}
+      FilterListsApi__BaseUrl: ${AGENT_FILTERLISTS_API_BASE_URL}
+      FilterListsApi__ClientUserAgent: ${AGENT_FILTERLISTS_API_CLIENT_USER_AGENT}
+      GitHub__ProductHeaderValue: ${AGENT_GITHUB_PRODUCT_HEADER_VALUE}
+      GitHub__PersonalAccessToken: ${AGENT_GITHUB_PERSONAL_ACCESS_TOKEN}
+      GitHub__RepositoryOwner: ${AGENT_GITHUB_REPOSITORY_OWNER}
+      GitHub__Repository: ${AGENT_GITHUB_REPOSITORY}
+
+  db:
+    # on update, also update ServerVersion in FilterLists.Data.Constants.ServerVersion
+    image: mariadb:10.5.4
+    restart: always
+    networks:
+      - db
+    volumes:
+      - data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${API_MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${API_MYSQL_DATABASE}
+      MYSQL_USER: ${API_MYSQL_USER}
+      MYSQL_PASSWORD: ${API_MYSQL_PASSWORD}
+    command:
+      [
+        "mysqld",
+        "--character-set-server=utf8mb4",
+        "--collation-server=utf8mb4_unicode_520_ci",
+      ]
+
+networks:
+  db:
+
+volumes:
+  data:
+  archives:
