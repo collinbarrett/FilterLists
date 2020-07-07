@@ -8079,7 +8079,7 @@
     "syntaxId": 4,
     "updatedDate": "2019-04-05T22:09:10",
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter.txt",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt"
   },
   {
@@ -15857,7 +15857,7 @@
     "name": "urlhaus-filter (Online)",
     "syntaxId": 8,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-online.txt",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt"
   },
   {
@@ -18998,7 +18998,7 @@
     "syntaxId": 2,
     "updatedDate": "2019-10-01T00:00:00",
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-domains.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-domains.txt",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains.txt"
   },
   {
@@ -19012,7 +19012,7 @@
     "syntaxId": 2,
     "updatedDate": "2019-10-01T00:00:00",
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains-online.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-domains-online.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-domains-online.txt",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains-online.txt"
   },
   {
@@ -21651,7 +21651,7 @@
     "name": "urlhaus-filter (dnsmasq)",
     "syntaxId": 20,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-dnsmasq.conf",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf"
   },
   {
@@ -21664,7 +21664,7 @@
     "name": "urlhaus-filter (Online Domains - dnsmasq)",
     "syntaxId": 20,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-dnsmasq-online.conf",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf"
   },
   {
@@ -21677,7 +21677,7 @@
     "name": "urlhaus-filter (hosts)",
     "syntaxId": 1,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-hosts.txt",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt"
   },
   {
@@ -21690,7 +21690,7 @@
     "name": "urlhaus-filter (Online hosts)",
     "syntaxId": 1,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-hosts-online.txt",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt"
   },
   {
@@ -21703,7 +21703,7 @@
     "name": "urlhaus-filter (BIND)",
     "syntaxId": 26,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-bind.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-bind.conf",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind.conf"
   },
   {
@@ -21716,7 +21716,7 @@
     "name": "urlhaus-filter (Online Domains - BIND)",
     "syntaxId": 26,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind-online.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-bind-online.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-bind-online.conf",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind-online.conf"
   },
   {
@@ -21729,7 +21729,7 @@
     "name": "urlhaus-filter (Unbound)",
     "syntaxId": 24,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-unbound.conf",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound.conf"
   },
   {
@@ -21742,7 +21742,7 @@
     "name": "urlhaus-filter (Online Domains - Unbound)",
     "syntaxId": 24,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-unbound-online.conf",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf"
   },
   {
