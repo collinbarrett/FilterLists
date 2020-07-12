@@ -4,14 +4,16 @@ using FilterLists.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    partial class FilterListsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200708104022_1751")]
+    partial class _1751
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21078,10 +21080,10 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             Id = (short)1921,
                             Description = "Ads and tracking hosts I have seen around the Internet. Some are rare. Some are popular.",
-                            HomeUrl = "https://infinitytec.github.io/blocklists/blocklists.html",
+                            HomeUrl = "https://github.com/infinitytec/blocklists",
                             IssuesUrl = "https://github.com/infinitytec/blocklists/issues",
                             LicenseId = (short)2,
-                            Name = "infinitytec's blocklists - Ads and Trackers",
+                            Name = "Not Good Pi - Ads and Trackers",
                             SyntaxId = (short)1,
                             ViewUrl = "https://raw.githubusercontent.com/infinitytec/blocklists/master/ads-and-trackers.txt"
                         },
@@ -21089,10 +21091,10 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             Id = (short)1922,
                             Description = "Because they don't deserve your traffic.",
-                            HomeUrl = "https://infinitytec.github.io/blocklists/blocklists.html",
+                            HomeUrl = "https://github.com/infinitytec/blocklists",
                             IssuesUrl = "https://github.com/infinitytec/blocklists/issues",
                             LicenseId = (short)2,
-                            Name = "infinitytec's blocklists - Scams and Phishing",
+                            Name = "Not Good Pi - Scams and Phishing",
                             SyntaxId = (short)1,
                             ViewUrl = "https://raw.githubusercontent.com/infinitytec/blocklists/master/scams-and-phishing.txt"
                         },
@@ -25576,39 +25578,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             ViewUrl = "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-unbound.conf",
                             ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter-unbound.conf",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-unbound.conf"
-                        },
-                        new
-                        {
-                            Id = (short)2329,
-                            Description = "Ads and ad sections in websites.",
-                            HomeUrl = "https://infinitytec.github.io/blocklists/blocklists.html",
-                            IssuesUrl = "https://github.com/infinitytec/blocklists/issues",
-                            LicenseId = (short)2,
-                            Name = "infinitytec's blocklists - Adfilters",
-                            SyntaxId = (short)4,
-                            ViewUrl = "https://raw.githubusercontent.com/infinitytec/blocklists/master/adfilters.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2330,
-                            Description = "Annoyances such as cookie banners.",
-                            HomeUrl = "https://infinitytec.github.io/blocklists/blocklists.html",
-                            IssuesUrl = "https://github.com/infinitytec/blocklists/issues",
-                            LicenseId = (short)2,
-                            Name = "infinitytec's blocklists - Annoyances",
-                            SyntaxId = (short)4,
-                            ViewUrl = "https://github.com/infinitytec/blocklists/raw/master/annoyances.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2331,
-                            Description = "Antivax sites and other medical misinformation.",
-                            HomeUrl = "https://infinitytec.github.io/blocklists/blocklists.html",
-                            IssuesUrl = "https://github.com/infinitytec/blocklists/issues",
-                            LicenseId = (short)2,
-                            Name = "infinitytec's blocklists - Medical pseudoscience",
-                            SyntaxId = (short)4,
-                            ViewUrl = "https://github.com/infinitytec/blocklists/raw/master/medicalpseudoscience.txt"
                         });
                 });
 
@@ -29695,21 +29664,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)2322,
                             LanguageId = (short)99
-                        },
-                        new
-                        {
-                            FilterListId = (short)2329,
-                            LanguageId = (short)110
-                        },
-                        new
-                        {
-                            FilterListId = (short)2330,
-                            LanguageId = (short)110
-                        },
-                        new
-                        {
-                            FilterListId = (short)2331,
-                            LanguageId = (short)110
                         });
                 });
 
@@ -51041,26 +50995,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             FilterListId = (short)2328,
                             TagId = (short)7
-                        },
-                        new
-                        {
-                            FilterListId = (short)2329,
-                            TagId = (short)2
-                        },
-                        new
-                        {
-                            FilterListId = (short)2329,
-                            TagId = (short)31
-                        },
-                        new
-                        {
-                            FilterListId = (short)2330,
-                            TagId = (short)9
-                        },
-                        new
-                        {
-                            FilterListId = (short)2331,
-                            TagId = (short)15
                         });
                 });
 
