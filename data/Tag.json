@@ -193,5 +193,15 @@
     "description": "Replaces file and page sources to make them load faster",
     "id": 39,
     "name": "cdn-replacer"
+  },
+  {
+    "description": "Bypasses paywalls on websites",
+    "id": 40,
+    "name": "paywall"
+  },
+  {
+    "description": "Cleans up anime viewing websites to make them easier to use",
+    "id": 41,
+    "name": "anime"
   }
 ]
