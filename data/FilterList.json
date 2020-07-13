@@ -23393,7 +23393,7 @@
     "viewUrl": "https://filters.adtidy.org/extension/ublock/filters/224.txt"
   },
   {
-    "description": "A blocklist of phishing websites. Based on PhishTank.",
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
     "descriptionSourceUrl": "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
     "homeUrl": "https://gitlab.com/curben/phishing-filter",
     "id": 2323,
@@ -23406,7 +23406,7 @@
     "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter.txt"
   },
   {
-    "description": "A blocklist of phishing websites. Based on PhishTank.",
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
     "descriptionSourceUrl": "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
     "homeUrl": "https://gitlab.com/curben/phishing-filter",
     "id": 2324,
@@ -23419,7 +23419,7 @@
     "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-domains.txt"
   },
   {
-    "description": "A blocklist of phishing websites. Based on PhishTank.",
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
     "descriptionSourceUrl": "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
     "homeUrl": "https://gitlab.com/curben/phishing-filter",
     "id": 2325,
@@ -23432,7 +23432,7 @@
     "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-dnsmasq.conf"
   },
   {
-    "description": "A blocklist of phishing websites. Based on PhishTank.",
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
     "descriptionSourceUrl": "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
     "homeUrl": "https://gitlab.com/curben/phishing-filter",
     "id": 2326,
@@ -23445,7 +23445,7 @@
     "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-hosts.txt"
   },
   {
-    "description": "A blocklist of phishing websites. Based on PhishTank.",
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
     "descriptionSourceUrl": "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
     "homeUrl": "https://gitlab.com/curben/phishing-filter",
     "id": 2327,
@@ -23459,7 +23459,7 @@
     "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-bind.conf"
   },
   {
-    "description": "A blocklist of phishing websites. Based on PhishTank.",
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
     "descriptionSourceUrl": "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
     "homeUrl": "https://gitlab.com/curben/phishing-filter",
     "id": 2328,
