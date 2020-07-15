@@ -200,5 +200,9 @@
   {
     "id": 47,
     "name": "Adblocker-syntax domains w/o ABP tag"
+  },
+  {
+    "id": 48,
+    "name": "Domains with ABP tag"
   }
 ]

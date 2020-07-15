@@ -4,7 +4,7 @@
     "homeUrl": "https://280blocker.net",
     "id": 1,
     "licenseId": 1,
-    "name": "280 Blocker",
+    "name": "280blocker for japanese mobile site",
     "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLScNeZhFrFZt9GhIVGdThGz7oyepcNRKuOi5PJDnsC-awxTeOQ/viewform",
     "syntaxId": 3,
     "updatedDate": "2019-04-08T14:29:09",
@@ -144,10 +144,10 @@
   },
   {
     "description": "Block ads, banners, 3rd party Cookies, 3rd party page counters, web bugs, and even most hijackers and possibly unwanted programs.",
-    "descriptionSourceUrl": "http://winhelp2002.mvps.org/hosts.htm",
+    "descriptionSourceUrl": "https://winhelp2002.mvps.org/hosts.htm",
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UNHL2VY85PB8N",
     "emailAddress": "winhelp2002@gmail.com",
-    "homeUrl": "http://winhelp2002.mvps.org/",
+    "homeUrl": "https://winhelp2002.mvps.org/",
     "id": 17,
     "licenseId": 9,
     "name": "MVPS HOSTS",
@@ -1233,7 +1233,7 @@
     "id": 132,
     "licenseId": 5,
     "name": "RU AdList [Old]",
-    "syntaxId": 3,
+    "syntaxId": 4,
     "updatedDate": "2008-05-18T00:00:00",
     "viewUrl": "http://denis-ovs.narod.ru/adblock.txt"
   },
@@ -1980,6 +1980,7 @@
     "description": "Blocks Japanese regional advertisements and trackers.",
     "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
     "id": 202,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/k2jp/abp-japanese-filters/issues",
     "licenseId": 4,
     "name": "ABP Japanese Paranoid Filters",
@@ -1994,6 +1995,7 @@
     "description": "Blocks Japanese regional advertisements and trackers.",
     "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
     "id": 203,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/k2jp/abp-japanese-filters/issues",
     "licenseId": 4,
     "name": "ABP Japanese Filters",
@@ -2008,6 +2010,7 @@
     "description": "Blocks irritating elements on Japanese regional webpages.",
     "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
     "id": 204,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/k2jp/abp-japanese-filters/issues",
     "licenseId": 4,
     "name": "ABP Japanese Element-hiding Filters",
@@ -2022,6 +2025,7 @@
     "description": "Blocks Japanese regional social network advertisements and trackers.",
     "homeUrl": "https://github.com/k2jp/abp-japanese-filters",
     "id": 205,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/k2jp/abp-japanese-filters/issues",
     "licenseId": 4,
     "name": "ABP Japanese 3rd Party SNS Filters",
@@ -5657,7 +5661,6 @@
     "description": "Android host file - Adaway",
     "descriptionSourceUrl": "https://abpvn.com/android/abpvn.txt",
     "emailAddress": "support@abpvn.com",
-    "forumUrl": "http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html",
     "homeUrl": "https://abpvn.com/",
     "id": 599,
     "licenseId": 4,
@@ -5670,7 +5673,6 @@
     "description": "The ABP advertising filter is built with the mission of improving the browsing experience for the Vietnamese users. ABPVN may not help block all ads, but ABPVN will minimize the appearance of ads on most websites in Vietnam.",
     "descriptionSourceUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn_noelemhide.txt",
     "emailAddress": "support@abpvn.com",
-    "forumUrl": "http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html",
     "homeUrl": "https://abpvn.com/",
     "id": 600,
     "licenseId": 4,
@@ -8076,10 +8078,10 @@
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter",
-    "syntaxId": 8,
+    "syntaxId": 4,
     "updatedDate": "2019-04-05T22:09:10",
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter.txt",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt"
   },
   {
@@ -15857,7 +15859,7 @@
     "name": "urlhaus-filter (Online)",
     "syntaxId": 8,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-online.txt",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt"
   },
   {
@@ -16204,7 +16206,7 @@
     "licenseId": 35,
     "name": "Anti-'Insane religious preachers' List",
     "publishedDate": "2019-06-28T16:00:00",
-    "syntaxId": 2,
+    "syntaxId": 48,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPreacherList.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPreacherList.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPreacherList.txt"
@@ -18398,7 +18400,7 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Remover for Mainstream Tabloid and Alt-Right Sites",
-    "syntaxId": 2,
+    "syntaxId": 48,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TabloidRemover.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TabloidRemover.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TabloidRemover.txt"
@@ -18412,7 +18414,7 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Anti-'PC component price hiders' List",
-    "syntaxId": 2,
+    "syntaxId": 48,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPCPriceHiderList.txt",
     "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPCPriceHiderList.txt",
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPCPriceHiderList.txt"
@@ -18826,7 +18828,7 @@
     "homeUrl": "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
     "id": 1862,
     "licenseId": 1,
-    "name": "280blocker for japanese mobile site",
+    "name": "280blocker + Nanj Kakuchou",
     "syntaxId": 3,
     "viewUrl": "https://280blocker.net/files/280blocker_adblock_nanj.txt"
   },
@@ -18835,7 +18837,7 @@
     "homeUrl": "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
     "id": 1863,
     "licenseId": 1,
-    "name": "280blocker for japanese mobile site - Supplement",
+    "name": "280blocker + Nanj Kakuchou - Supplement Rules",
     "syntaxId": 3,
     "viewUrl": "https://280blocker.net/files/280blocker_adblock_nanj_supp.txt"
   },
@@ -18998,7 +19000,7 @@
     "syntaxId": 2,
     "updatedDate": "2019-10-01T00:00:00",
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-domains.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-domains.txt",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains.txt"
   },
   {
@@ -19012,7 +19014,7 @@
     "syntaxId": 2,
     "updatedDate": "2019-10-01T00:00:00",
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains-online.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-domains-online.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-domains-online.txt",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains-online.txt"
   },
   {
@@ -19357,21 +19359,21 @@
   },
   {
     "description": "Ads and tracking hosts I have seen around the Internet. Some are rare. Some are popular.",
-    "homeUrl": "https://github.com/infinitytec/blocklists",
+    "homeUrl": "https://infinitytec.github.io/blocklists/blocklists.html",
     "id": 1921,
     "issuesUrl": "https://github.com/infinitytec/blocklists/issues",
     "licenseId": 2,
-    "name": "Not Good Pi - Ads and Trackers",
+    "name": "infinitytec's blocklists - Ads and Trackers",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/infinitytec/blocklists/master/ads-and-trackers.txt"
   },
   {
     "description": "Because they don't deserve your traffic.",
-    "homeUrl": "https://github.com/infinitytec/blocklists",
+    "homeUrl": "https://infinitytec.github.io/blocklists/blocklists.html",
     "id": 1922,
     "issuesUrl": "https://github.com/infinitytec/blocklists/issues",
     "licenseId": 2,
-    "name": "Not Good Pi - Scams and Phishing",
+    "name": "infinitytec's blocklists - Scams and Phishing",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/infinitytec/blocklists/master/scams-and-phishing.txt"
   },
@@ -21653,7 +21655,7 @@
     "name": "urlhaus-filter (dnsmasq)",
     "syntaxId": 20,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-dnsmasq.conf",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf"
   },
   {
@@ -21666,7 +21668,7 @@
     "name": "urlhaus-filter (Online Domains - dnsmasq)",
     "syntaxId": 20,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-dnsmasq-online.conf",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf"
   },
   {
@@ -21679,7 +21681,7 @@
     "name": "urlhaus-filter (hosts)",
     "syntaxId": 1,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-hosts.txt",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt"
   },
   {
@@ -21692,7 +21694,7 @@
     "name": "urlhaus-filter (Online hosts)",
     "syntaxId": 1,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-hosts-online.txt",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt"
   },
   {
@@ -21705,7 +21707,7 @@
     "name": "urlhaus-filter (BIND)",
     "syntaxId": 26,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-bind.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-bind.conf",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind.conf"
   },
   {
@@ -21718,7 +21720,7 @@
     "name": "urlhaus-filter (Online Domains - BIND)",
     "syntaxId": 26,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind-online.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-bind-online.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-bind-online.conf",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind-online.conf"
   },
   {
@@ -21731,7 +21733,7 @@
     "name": "urlhaus-filter (Unbound)",
     "syntaxId": 24,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-unbound.conf",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound.conf"
   },
   {
@@ -21744,7 +21746,7 @@
     "name": "urlhaus-filter (Online Domains - Unbound)",
     "syntaxId": 24,
     "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-unbound-online.conf",
     "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf"
   },
   {
@@ -23391,5 +23393,194 @@
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 4,
     "viewUrl": "https://filters.adtidy.org/extension/ublock/filters/224.txt"
+  },
+  {
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+    "descriptionSourceUrl": "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
+    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "id": 2323,
+    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "licenseId": 28,
+    "name": "phishing-filter",
+    "syntaxId": 4,
+    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter.txt",
+    "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter.txt"
+  },
+  {
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+    "descriptionSourceUrl": "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
+    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "id": 2324,
+    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "licenseId": 28,
+    "name": "phishing-filter (Domains)",
+    "syntaxId": 2,
+    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/phishing-filter-domains.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/phishing-filter/master/phishing-filter-domains.txt",
+    "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-domains.txt"
+  },
+  {
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+    "descriptionSourceUrl": "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
+    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "id": 2325,
+    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "licenseId": 28,
+    "name": "phishing-filter (dnsmasq)",
+    "syntaxId": 20,
+    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-dnsmasq.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter-dnsmasq.conf",
+    "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-dnsmasq.conf"
+  },
+  {
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+    "descriptionSourceUrl": "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
+    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "id": 2326,
+    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "licenseId": 28,
+    "name": "phishing-filter (hosts)",
+    "syntaxId": 1,
+    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-hosts.txt",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter-hosts.txt",
+    "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-hosts.txt"
+  },
+  {
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+    "descriptionSourceUrl": "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
+    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "id": 2327,
+    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "licenseId": 28,
+    "name": "phishing-filter (BIND)",
+    "syntaxId": 26,
+    "updatedDate": "2019-04-05T22:09:10",
+    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-bind.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter-bind.conf",
+    "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-bind.conf"
+  },
+  {
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+    "descriptionSourceUrl": "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
+    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "id": 2328,
+    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "licenseId": 28,
+    "name": "phishing-filter (Unbound)",
+    "syntaxId": 24,
+    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-unbound.conf",
+    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter-unbound.conf",
+    "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-unbound.conf"
+  },
+  {
+    "description": "Ads and ad sections in websites.",
+    "homeUrl": "https://infinitytec.github.io/blocklists/blocklists.html",
+    "id": 2329,
+    "issuesUrl": "https://github.com/infinitytec/blocklists/issues",
+    "licenseId": 2,
+    "name": "infinitytec's blocklists - Adfilters",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/infinitytec/blocklists/master/adfilters.txt"
+  },
+  {
+    "description": "Annoyances such as cookie banners.",
+    "homeUrl": "https://infinitytec.github.io/blocklists/blocklists.html",
+    "id": 2330,
+    "issuesUrl": "https://github.com/infinitytec/blocklists/issues",
+    "licenseId": 2,
+    "name": "infinitytec's blocklists - Annoyances",
+    "syntaxId": 4,
+    "viewUrl": "https://github.com/infinitytec/blocklists/raw/master/annoyances.txt"
+  },
+  {
+    "description": "Antivax sites and other medical misinformation.",
+    "homeUrl": "https://infinitytec.github.io/blocklists/blocklists.html",
+    "id": 2331,
+    "issuesUrl": "https://github.com/infinitytec/blocklists/issues",
+    "licenseId": 2,
+    "name": "infinitytec's blocklists - Medical pseudoscience",
+    "syntaxId": 4,
+    "viewUrl": "https://github.com/infinitytec/blocklists/raw/master/medicalpseudoscience.txt"
+  },
+  {
+    "description": "Includes MAL-Sync UI\nCosmetic filters for MAL-Sync’s supported sites\nFilters for some ads found on the said supported sites\nIncludes Blur Preview Thumbnails filters\nOther hotfixes for Anime and Manga sites",
+    "descriptionSourceUrl": "https://github.com/Karmesinrot/Anifiltrs/blob/master/README.md",
+    "homeUrl": "https://github.com/Karmesinrot/Anifiltrs",
+    "id": 2332,
+    "issuesUrl": "https://github.com/Karmesinrot/Anifiltrs/issues",
+    "licenseId": 4,
+    "name": "Anifiltrs",
+    "syntaxId": 21,
+    "viewUrl": "https://raw.githubusercontent.com/Karmesinrot/Anifiltrs/master/Anifltrs.txt"
+  },
+  {
+    "description": "Filters for unbreaking favicons and images on lolamtisch’s MAL-Sync miniMal iframe\nAllow MAL-Sync Extension’s episode release check on Chrome",
+    "descriptionSourceUrl": "https://github.com/Karmesinrot/Anifiltrs/blob/master/README.md",
+    "homeUrl": "https://github.com/Karmesinrot/Anifiltrs",
+    "id": 2333,
+    "issuesUrl": "https://github.com/Karmesinrot/Anifiltrs/issues",
+    "licenseId": 4,
+    "name": "Anifiltrs — MAL-Sync UI",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/Karmesinrot/Anifiltrs/master/MAL-Sync%20UI.txt"
+  },
+  {
+    "description": "Additional filters for sites unsupported by MAL-Sync",
+    "descriptionSourceUrl": "https://github.com/Karmesinrot/Anifiltrs/blob/master/README.md",
+    "homeUrl": "https://github.com/Karmesinrot/Anifiltrs",
+    "id": 2334,
+    "issuesUrl": "https://github.com/Karmesinrot/Anifiltrs/issues",
+    "licenseId": 4,
+    "name": "Anifiltrs — Extra",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Karmesinrot/Anifiltrs/master/Anifiltrs%20Main/Anifiltrs%20extra-main.txt"
+  },
+  {
+    "description": "Main body for Anifiltrs",
+    "homeUrl": "https://github.com/Karmesinrot/Anifiltrs",
+    "id": 2335,
+    "issuesUrl": "https://github.com/Karmesinrot/Anifiltrs/issues",
+    "licenseId": 4,
+    "name": "Anifiltrs — Main",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Karmesinrot/Anifiltrs/master/Anifiltrs%20Main/Anifiltrs%20main.txt"
+  },
+  {
+    "description": "Anifiltrs but without Blur Preview Thumbnails",
+    "homeUrl": "https://github.com/Karmesinrot/Anifiltrs",
+    "id": 2336,
+    "issuesUrl": "https://github.com/Karmesinrot/Anifiltrs/issues",
+    "licenseId": 4,
+    "name": "Anifiltrs — Skeletonise",
+    "syntaxId": 21,
+    "viewUrl": "https://raw.githubusercontent.com/Karmesinrot/Anifiltrs/master/Anifiltrs%20%E2%80%94%20skeletonise.txt"
+  },
+  {
+    "description": "Anifiltrs/Extra without Blur Preview Thumbnails",
+    "homeUrl": "https://github.com/Karmesinrot/Anifiltrs",
+    "id": 2337,
+    "issuesUrl": "https://github.com/Karmesinrot/Anifiltrs/issues",
+    "licenseId": 4,
+    "name": "Anifiltrs — Skeletonise + Extra",
+    "syntaxId": 21,
+    "viewUrl": "https://raw.githubusercontent.com/Karmesinrot/Anifiltrs/master/Anifiltrs%20%E2%80%94%20skeletonise%20extra.txt"
+  },
+  {
+    "homeUrl": "https://github.com/L33Tech/uLists",
+    "id": 2338,
+    "issuesUrl": "https://github.com/L33Tech/uLists/issues",
+    "name": "L33T's All-In-One Blocklist by L33Tech",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/L33Tech/uLists/master/Lists/L33TAIO.uBl"
+  },
+  {
+    "description": "Please see https://stopmodreposts.org/. All credit to above site!",
+    "homeUrl": "https://github.com/L33Tech/uLists",
+    "id": 2339,
+    "issuesUrl": "https://github.com/L33Tech/uLists/issues",
+    "name": "StopModReposts for uBlock Orgin by L33Tech",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/L33Tech/uLists/master/Forks/StopModReposts.uBl"
   }
 ]

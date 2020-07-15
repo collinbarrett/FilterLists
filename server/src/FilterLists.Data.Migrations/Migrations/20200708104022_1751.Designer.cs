@@ -4,14 +4,16 @@ using FilterLists.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    partial class FilterListsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200708104022_1751")]
+    partial class _1751
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -118,7 +120,7 @@ namespace FilterLists.Api.Migrations
                             Description = "A filter list that blocks mobile advertisements and trackers on Japanese properties",
                             HomeUrl = "https://280blocker.net",
                             LicenseId = (short)1,
-                            Name = "280blocker for japanese mobile site",
+                            Name = "280 Blocker",
                             SubmissionUrl = "https://docs.google.com/forms/d/e/1FAIpQLScNeZhFrFZt9GhIVGdThGz7oyepcNRKuOi5PJDnsC-awxTeOQ/viewform",
                             SyntaxId = (short)3,
                             UpdatedDate = new DateTime(2019, 4, 8, 14, 29, 9, 0, DateTimeKind.Unspecified),
@@ -271,10 +273,10 @@ namespace FilterLists.Api.Migrations
                         {
                             Id = (short)17,
                             Description = "Block ads, banners, 3rd party Cookies, 3rd party page counters, web bugs, and even most hijackers and possibly unwanted programs.",
-                            DescriptionSourceUrl = "https://winhelp2002.mvps.org/hosts.htm",
+                            DescriptionSourceUrl = "http://winhelp2002.mvps.org/hosts.htm",
                             DonateUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UNHL2VY85PB8N",
                             EmailAddress = "winhelp2002@gmail.com",
-                            HomeUrl = "https://winhelp2002.mvps.org/",
+                            HomeUrl = "http://winhelp2002.mvps.org/",
                             LicenseId = (short)9,
                             Name = "MVPS HOSTS",
                             SyntaxId = (short)1,
@@ -1438,7 +1440,7 @@ namespace FilterLists.Api.Migrations
                             HomeUrl = "http://denis-ovs.narod.ru/",
                             LicenseId = (short)5,
                             Name = "RU AdList [Old]",
-                            SyntaxId = (short)4,
+                            SyntaxId = (short)3,
                             UpdatedDate = new DateTime(2008, 5, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ViewUrl = "http://denis-ovs.narod.ru/adblock.txt"
                         },
@@ -2243,7 +2245,6 @@ namespace FilterLists.Api.Migrations
                             Id = (short)202,
                             Description = "Blocks Japanese regional advertisements and trackers.",
                             HomeUrl = "https://github.com/k2jp/abp-japanese-filters",
-                            IsDeleted = true,
                             IssuesUrl = "https://github.com/k2jp/abp-japanese-filters/issues",
                             LicenseId = (short)4,
                             Name = "ABP Japanese Paranoid Filters",
@@ -2259,7 +2260,6 @@ namespace FilterLists.Api.Migrations
                             Id = (short)203,
                             Description = "Blocks Japanese regional advertisements and trackers.",
                             HomeUrl = "https://github.com/k2jp/abp-japanese-filters",
-                            IsDeleted = true,
                             IssuesUrl = "https://github.com/k2jp/abp-japanese-filters/issues",
                             LicenseId = (short)4,
                             Name = "ABP Japanese Filters",
@@ -2275,7 +2275,6 @@ namespace FilterLists.Api.Migrations
                             Id = (short)204,
                             Description = "Blocks irritating elements on Japanese regional webpages.",
                             HomeUrl = "https://github.com/k2jp/abp-japanese-filters",
-                            IsDeleted = true,
                             IssuesUrl = "https://github.com/k2jp/abp-japanese-filters/issues",
                             LicenseId = (short)4,
                             Name = "ABP Japanese Element-hiding Filters",
@@ -2291,7 +2290,6 @@ namespace FilterLists.Api.Migrations
                             Id = (short)205,
                             Description = "Blocks Japanese regional social network advertisements and trackers.",
                             HomeUrl = "https://github.com/k2jp/abp-japanese-filters",
-                            IsDeleted = true,
                             IssuesUrl = "https://github.com/k2jp/abp-japanese-filters/issues",
                             LicenseId = (short)4,
                             Name = "ABP Japanese 3rd Party SNS Filters",
@@ -6211,6 +6209,7 @@ namespace FilterLists.Api.Migrations
                             Description = "Android host file - Adaway",
                             DescriptionSourceUrl = "https://abpvn.com/android/abpvn.txt",
                             EmailAddress = "support@abpvn.com",
+                            ForumUrl = "http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html",
                             HomeUrl = "https://abpvn.com/",
                             LicenseId = (short)4,
                             Name = "ABPVN Hosts",
@@ -6224,6 +6223,7 @@ namespace FilterLists.Api.Migrations
                             Description = "The ABP advertising filter is built with the mission of improving the browsing experience for the Vietnamese users. ABPVN may not help block all ads, but ABPVN will minimize the appearance of ads on most websites in Vietnam.",
                             DescriptionSourceUrl = "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn_noelemhide.txt",
                             EmailAddress = "support@abpvn.com",
+                            ForumUrl = "http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html",
                             HomeUrl = "https://abpvn.com/",
                             LicenseId = (short)4,
                             Name = "ABPVN List - No Element Hide",
@@ -8836,7 +8836,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             SyntaxId = (short)4,
                             UpdatedDate = new DateTime(2019, 4, 5, 22, 9, 10, 0, DateTimeKind.Unspecified),
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
-                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter.txt",
+                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt"
                         },
                         new
@@ -17277,7 +17277,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "urlhaus-filter (Online)",
                             SyntaxId = (short)8,
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
-                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-online.txt",
+                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt"
                         },
                         new
@@ -17657,7 +17657,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             LicenseId = (short)35,
                             Name = "Anti-'Insane religious preachers' List",
                             PublishedDate = new DateTime(2019, 6, 28, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            SyntaxId = (short)48,
+                            SyntaxId = (short)2,
                             ViewUrl = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPreacherList.txt",
                             ViewUrlMirror1 = "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPreacherList.txt",
                             ViewUrlMirror2 = "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPreacherList.txt"
@@ -20025,7 +20025,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
                             LicenseId = (short)35,
                             Name = "Remover for Mainstream Tabloid and Alt-Right Sites",
-                            SyntaxId = (short)48,
+                            SyntaxId = (short)2,
                             ViewUrl = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TabloidRemover.txt",
                             ViewUrlMirror1 = "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TabloidRemover.txt",
                             ViewUrlMirror2 = "https://gitlab.com/DandelionSprout/adfilt/raw/master/TabloidRemover.txt"
@@ -20040,7 +20040,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
                             LicenseId = (short)35,
                             Name = "Anti-'PC component price hiders' List",
-                            SyntaxId = (short)48,
+                            SyntaxId = (short)2,
                             ViewUrl = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPCPriceHiderList.txt",
                             ViewUrlMirror1 = "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPCPriceHiderList.txt",
                             ViewUrlMirror2 = "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPCPriceHiderList.txt"
@@ -20495,7 +20495,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Description = "This is a filter to fix bugs in AdGuard for Android when using Japanese websites / Japanese apps / 280blocker.",
                             HomeUrl = "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
                             LicenseId = (short)1,
-                            Name = "280blocker + Nanj Kakuchou",
+                            Name = "280blocker for japanese mobile site",
                             SyntaxId = (short)3,
                             ViewUrl = "https://280blocker.net/files/280blocker_adblock_nanj.txt"
                         },
@@ -20505,7 +20505,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Description = "This is a filter to fix bugs in AdGuard for Android when using Japanese websites / Japanese apps / 280blocker.",
                             HomeUrl = "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
                             LicenseId = (short)1,
-                            Name = "280blocker + Nanj Kakuchou - Supplement Rules",
+                            Name = "280blocker for japanese mobile site - Supplement",
                             SyntaxId = (short)3,
                             ViewUrl = "https://280blocker.net/files/280blocker_adblock_nanj_supp.txt"
                         },
@@ -20683,7 +20683,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             SyntaxId = (short)2,
                             UpdatedDate = new DateTime(2019, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains.txt",
-                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-domains.txt",
+                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-domains.txt",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains.txt"
                         },
                         new
@@ -20698,7 +20698,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             SyntaxId = (short)2,
                             UpdatedDate = new DateTime(2019, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains-online.txt",
-                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-domains-online.txt",
+                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-domains-online.txt",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains-online.txt"
                         },
                         new
@@ -21080,10 +21080,10 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             Id = (short)1921,
                             Description = "Ads and tracking hosts I have seen around the Internet. Some are rare. Some are popular.",
-                            HomeUrl = "https://infinitytec.github.io/blocklists/blocklists.html",
+                            HomeUrl = "https://github.com/infinitytec/blocklists",
                             IssuesUrl = "https://github.com/infinitytec/blocklists/issues",
                             LicenseId = (short)2,
-                            Name = "infinitytec's blocklists - Ads and Trackers",
+                            Name = "Not Good Pi - Ads and Trackers",
                             SyntaxId = (short)1,
                             ViewUrl = "https://raw.githubusercontent.com/infinitytec/blocklists/master/ads-and-trackers.txt"
                         },
@@ -21091,10 +21091,10 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         {
                             Id = (short)1922,
                             Description = "Because they don't deserve your traffic.",
-                            HomeUrl = "https://infinitytec.github.io/blocklists/blocklists.html",
+                            HomeUrl = "https://github.com/infinitytec/blocklists",
                             IssuesUrl = "https://github.com/infinitytec/blocklists/issues",
                             LicenseId = (short)2,
-                            Name = "infinitytec's blocklists - Scams and Phishing",
+                            Name = "Not Good Pi - Scams and Phishing",
                             SyntaxId = (short)1,
                             ViewUrl = "https://raw.githubusercontent.com/infinitytec/blocklists/master/scams-and-phishing.txt"
                         },
@@ -23597,7 +23597,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "urlhaus-filter (dnsmasq)",
                             SyntaxId = (short)20,
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf",
-                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-dnsmasq.conf",
+                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf"
                         },
                         new
@@ -23611,7 +23611,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "urlhaus-filter (Online Domains - dnsmasq)",
                             SyntaxId = (short)20,
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf",
-                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-dnsmasq-online.conf",
+                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf"
                         },
                         new
@@ -23625,7 +23625,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "urlhaus-filter (hosts)",
                             SyntaxId = (short)1,
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt",
-                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-hosts.txt",
+                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt"
                         },
                         new
@@ -23639,7 +23639,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "urlhaus-filter (Online hosts)",
                             SyntaxId = (short)1,
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt",
-                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-hosts-online.txt",
+                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt"
                         },
                         new
@@ -23653,7 +23653,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "urlhaus-filter (BIND)",
                             SyntaxId = (short)26,
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind.conf",
-                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-bind.conf",
+                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-bind.conf",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind.conf"
                         },
                         new
@@ -23667,7 +23667,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "urlhaus-filter (Online Domains - BIND)",
                             SyntaxId = (short)26,
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind-online.conf",
-                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-bind-online.conf",
+                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-bind-online.conf",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind-online.conf"
                         },
                         new
@@ -23681,7 +23681,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "urlhaus-filter (Unbound)",
                             SyntaxId = (short)24,
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound.conf",
-                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-unbound.conf",
+                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound.conf",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound.conf"
                         },
                         new
@@ -23695,7 +23695,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             Name = "urlhaus-filter (Online Domains - Unbound)",
                             SyntaxId = (short)24,
                             ViewUrl = "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf",
-                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-unbound-online.conf",
+                            ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf"
                         },
                         new
@@ -25497,7 +25497,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)2323,
-                            Description = "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+                            Description = "A blocklist of phishing websites. Based on PhishTank.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/phishing-filter",
                             IssuesUrl = "https://gitlab.com/curben/phishing-filter/issues",
@@ -25511,7 +25511,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)2324,
-                            Description = "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+                            Description = "A blocklist of phishing websites. Based on PhishTank.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/phishing-filter",
                             IssuesUrl = "https://gitlab.com/curben/phishing-filter/issues",
@@ -25525,7 +25525,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)2325,
-                            Description = "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+                            Description = "A blocklist of phishing websites. Based on PhishTank.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/phishing-filter",
                             IssuesUrl = "https://gitlab.com/curben/phishing-filter/issues",
@@ -25539,7 +25539,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)2326,
-                            Description = "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+                            Description = "A blocklist of phishing websites. Based on PhishTank.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/phishing-filter",
                             IssuesUrl = "https://gitlab.com/curben/phishing-filter/issues",
@@ -25553,7 +25553,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)2327,
-                            Description = "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+                            Description = "A blocklist of phishing websites. Based on PhishTank.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/phishing-filter",
                             IssuesUrl = "https://gitlab.com/curben/phishing-filter/issues",
@@ -25568,7 +25568,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)2328,
-                            Description = "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+                            Description = "A blocklist of phishing websites. Based on PhishTank.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/phishing-filter",
                             IssuesUrl = "https://gitlab.com/curben/phishing-filter/issues",
@@ -25578,132 +25578,6 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                             ViewUrl = "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-unbound.conf",
                             ViewUrlMirror1 = "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter-unbound.conf",
                             ViewUrlMirror2 = "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-unbound.conf"
-                        },
-                        new
-                        {
-                            Id = (short)2329,
-                            Description = "Ads and ad sections in websites.",
-                            HomeUrl = "https://infinitytec.github.io/blocklists/blocklists.html",
-                            IssuesUrl = "https://github.com/infinitytec/blocklists/issues",
-                            LicenseId = (short)2,
-                            Name = "infinitytec's blocklists - Adfilters",
-                            SyntaxId = (short)4,
-                            ViewUrl = "https://raw.githubusercontent.com/infinitytec/blocklists/master/adfilters.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2330,
-                            Description = "Annoyances such as cookie banners.",
-                            HomeUrl = "https://infinitytec.github.io/blocklists/blocklists.html",
-                            IssuesUrl = "https://github.com/infinitytec/blocklists/issues",
-                            LicenseId = (short)2,
-                            Name = "infinitytec's blocklists - Annoyances",
-                            SyntaxId = (short)4,
-                            ViewUrl = "https://github.com/infinitytec/blocklists/raw/master/annoyances.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2331,
-                            Description = "Antivax sites and other medical misinformation.",
-                            HomeUrl = "https://infinitytec.github.io/blocklists/blocklists.html",
-                            IssuesUrl = "https://github.com/infinitytec/blocklists/issues",
-                            LicenseId = (short)2,
-                            Name = "infinitytec's blocklists - Medical pseudoscience",
-                            SyntaxId = (short)4,
-                            ViewUrl = "https://github.com/infinitytec/blocklists/raw/master/medicalpseudoscience.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2332,
-                            Description = @"Includes MAL-Sync UI
-Cosmetic filters for MAL-Sync’s supported sites
-Filters for some ads found on the said supported sites
-Includes Blur Preview Thumbnails filters
-Other hotfixes for Anime and Manga sites",
-                            DescriptionSourceUrl = "https://github.com/Karmesinrot/Anifiltrs/blob/master/README.md",
-                            HomeUrl = "https://github.com/Karmesinrot/Anifiltrs",
-                            IssuesUrl = "https://github.com/Karmesinrot/Anifiltrs/issues",
-                            LicenseId = (short)4,
-                            Name = "Anifiltrs",
-                            SyntaxId = (short)21,
-                            ViewUrl = "https://raw.githubusercontent.com/Karmesinrot/Anifiltrs/master/Anifltrs.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2333,
-                            Description = @"Filters for unbreaking favicons and images on lolamtisch’s MAL-Sync miniMal iframe
-Allow MAL-Sync Extension’s episode release check on Chrome",
-                            DescriptionSourceUrl = "https://github.com/Karmesinrot/Anifiltrs/blob/master/README.md",
-                            HomeUrl = "https://github.com/Karmesinrot/Anifiltrs",
-                            IssuesUrl = "https://github.com/Karmesinrot/Anifiltrs/issues",
-                            LicenseId = (short)4,
-                            Name = "Anifiltrs — MAL-Sync UI",
-                            SyntaxId = (short)3,
-                            ViewUrl = "https://raw.githubusercontent.com/Karmesinrot/Anifiltrs/master/MAL-Sync%20UI.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2334,
-                            Description = "Additional filters for sites unsupported by MAL-Sync",
-                            DescriptionSourceUrl = "https://github.com/Karmesinrot/Anifiltrs/blob/master/README.md",
-                            HomeUrl = "https://github.com/Karmesinrot/Anifiltrs",
-                            IssuesUrl = "https://github.com/Karmesinrot/Anifiltrs/issues",
-                            LicenseId = (short)4,
-                            Name = "Anifiltrs — Extra",
-                            SyntaxId = (short)4,
-                            ViewUrl = "https://raw.githubusercontent.com/Karmesinrot/Anifiltrs/master/Anifiltrs%20Main/Anifiltrs%20extra-main.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2335,
-                            Description = "Main body for Anifiltrs",
-                            HomeUrl = "https://github.com/Karmesinrot/Anifiltrs",
-                            IssuesUrl = "https://github.com/Karmesinrot/Anifiltrs/issues",
-                            LicenseId = (short)4,
-                            Name = "Anifiltrs — Main",
-                            SyntaxId = (short)4,
-                            ViewUrl = "https://raw.githubusercontent.com/Karmesinrot/Anifiltrs/master/Anifiltrs%20Main/Anifiltrs%20main.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2336,
-                            Description = "Anifiltrs but without Blur Preview Thumbnails",
-                            HomeUrl = "https://github.com/Karmesinrot/Anifiltrs",
-                            IssuesUrl = "https://github.com/Karmesinrot/Anifiltrs/issues",
-                            LicenseId = (short)4,
-                            Name = "Anifiltrs — Skeletonise",
-                            SyntaxId = (short)21,
-                            ViewUrl = "https://raw.githubusercontent.com/Karmesinrot/Anifiltrs/master/Anifiltrs%20%E2%80%94%20skeletonise.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2337,
-                            Description = "Anifiltrs/Extra without Blur Preview Thumbnails",
-                            HomeUrl = "https://github.com/Karmesinrot/Anifiltrs",
-                            IssuesUrl = "https://github.com/Karmesinrot/Anifiltrs/issues",
-                            LicenseId = (short)4,
-                            Name = "Anifiltrs — Skeletonise + Extra",
-                            SyntaxId = (short)21,
-                            ViewUrl = "https://raw.githubusercontent.com/Karmesinrot/Anifiltrs/master/Anifiltrs%20%E2%80%94%20skeletonise%20extra.txt"
-                        },
-                        new
-                        {
-                            Id = (short)2338,
-                            HomeUrl = "https://github.com/L33Tech/uLists",
-                            IssuesUrl = "https://github.com/L33Tech/uLists/issues",
-                            Name = "L33T's All-In-One Blocklist by L33Tech",
-                            SyntaxId = (short)4,
-                            ViewUrl = "https://raw.githubusercontent.com/L33Tech/uLists/master/Lists/L33TAIO.uBl"
-                        },
-                        new
-                        {
-                            Id = (short)2339,
-                            Description = "Please see https://stopmodreposts.org/. All credit to above site!",
-                            HomeUrl = "https://github.com/L33Tech/uLists",
-                            IssuesUrl = "https://github.com/L33Tech/uLists/issues",
-                            Name = "StopModReposts for uBlock Orgin by L33Tech",
-                            SyntaxId = (short)2,
-                            ViewUrl = "https://raw.githubusercontent.com/L33Tech/uLists/master/Forks/StopModReposts.uBl"
                         });
                 });
 
@@ -29790,21 +29664,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             FilterListId = (short)2322,
                             LanguageId = (short)99
-                        },
-                        new
-                        {
-                            FilterListId = (short)2329,
-                            LanguageId = (short)110
-                        },
-                        new
-                        {
-                            FilterListId = (short)2330,
-                            LanguageId = (short)110
-                        },
-                        new
-                        {
-                            FilterListId = (short)2331,
-                            LanguageId = (short)110
                         });
                 });
 
@@ -38279,11 +38138,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         },
                         new
                         {
-                            FilterListId = (short)245,
-                            TagId = (short)41
-                        },
-                        new
-                        {
                             FilterListId = (short)246,
                             TagId = (short)2
                         },
@@ -38351,11 +38205,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             FilterListId = (short)255,
                             TagId = (short)3
-                        },
-                        new
-                        {
-                            FilterListId = (short)255,
-                            TagId = (short)40
                         },
                         new
                         {
@@ -38449,18 +38298,8 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         },
                         new
                         {
-                            FilterListId = (short)265,
-                            TagId = (short)40
-                        },
-                        new
-                        {
                             FilterListId = (short)266,
                             TagId = (short)3
-                        },
-                        new
-                        {
-                            FilterListId = (short)266,
-                            TagId = (short)40
                         },
                         new
                         {
@@ -39151,11 +38990,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             FilterListId = (short)392,
                             TagId = (short)16
-                        },
-                        new
-                        {
-                            FilterListId = (short)392,
-                            TagId = (short)40
                         },
                         new
                         {
@@ -40714,11 +40548,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         },
                         new
                         {
-                            FilterListId = (short)764,
-                            TagId = (short)40
-                        },
-                        new
-                        {
                             FilterListId = (short)765,
                             TagId = (short)2
                         },
@@ -41091,11 +40920,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             FilterListId = (short)825,
                             TagId = (short)16
-                        },
-                        new
-                        {
-                            FilterListId = (short)825,
-                            TagId = (short)40
                         },
                         new
                         {
@@ -48849,11 +48673,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         },
                         new
                         {
-                            FilterListId = (short)1957,
-                            TagId = (short)41
-                        },
-                        new
-                        {
                             FilterListId = (short)1958,
                             TagId = (short)2
                         },
@@ -48866,11 +48685,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             FilterListId = (short)1958,
                             TagId = (short)35
-                        },
-                        new
-                        {
-                            FilterListId = (short)1958,
-                            TagId = (short)41
                         },
                         new
                         {
@@ -48916,11 +48730,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             FilterListId = (short)1963,
                             TagId = (short)35
-                        },
-                        new
-                        {
-                            FilterListId = (short)1963,
-                            TagId = (short)41
                         },
                         new
                         {
@@ -49024,18 +48833,8 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         },
                         new
                         {
-                            FilterListId = (short)1979,
-                            TagId = (short)40
-                        },
-                        new
-                        {
                             FilterListId = (short)1980,
                             TagId = (short)16
-                        },
-                        new
-                        {
-                            FilterListId = (short)1980,
-                            TagId = (short)40
                         },
                         new
                         {
@@ -49991,11 +49790,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             FilterListId = (short)2134,
                             TagId = (short)35
-                        },
-                        new
-                        {
-                            FilterListId = (short)2134,
-                            TagId = (short)41
                         },
                         new
                         {
@@ -50965,7 +50759,7 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             FilterListId = (short)2290,
-                            TagId = (short)40
+                            TagId = (short)9
                         },
                         new
                         {
@@ -51200,81 +50994,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             FilterListId = (short)2328,
-                            TagId = (short)7
-                        },
-                        new
-                        {
-                            FilterListId = (short)2329,
-                            TagId = (short)2
-                        },
-                        new
-                        {
-                            FilterListId = (short)2329,
-                            TagId = (short)31
-                        },
-                        new
-                        {
-                            FilterListId = (short)2330,
-                            TagId = (short)9
-                        },
-                        new
-                        {
-                            FilterListId = (short)2331,
-                            TagId = (short)15
-                        },
-                        new
-                        {
-                            FilterListId = (short)2332,
-                            TagId = (short)41
-                        },
-                        new
-                        {
-                            FilterListId = (short)2333,
-                            TagId = (short)41
-                        },
-                        new
-                        {
-                            FilterListId = (short)2334,
-                            TagId = (short)41
-                        },
-                        new
-                        {
-                            FilterListId = (short)2335,
-                            TagId = (short)41
-                        },
-                        new
-                        {
-                            FilterListId = (short)2336,
-                            TagId = (short)41
-                        },
-                        new
-                        {
-                            FilterListId = (short)2337,
-                            TagId = (short)41
-                        },
-                        new
-                        {
-                            FilterListId = (short)2338,
-                            TagId = (short)3
-                        },
-                        new
-                        {
-                            FilterListId = (short)2338,
-                            TagId = (short)4
-                        },
-                        new
-                        {
-                            FilterListId = (short)2338,
-                            TagId = (short)19
-                        },
-                        new
-                        {
-                            FilterListId = (short)2338,
-                            TagId = (short)23
-                        },
-                        new
-                        {
-                            FilterListId = (short)2339,
                             TagId = (short)7
                         });
                 });
@@ -52770,101 +52489,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             SyntaxId = (short)47,
                             SoftwareId = (short)40
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)1
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)2
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)3
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)4
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)5
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)6
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)8
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)14
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)17
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)19
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)22
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)25
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)26
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)27
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)28
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)31
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)32
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)39
-                        },
-                        new
-                        {
-                            SyntaxId = (short)48,
-                            SoftwareId = (short)42
                         });
                 });
 
@@ -57010,11 +56634,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             Id = (short)47,
                             Name = "Adblocker-syntax domains w/o ABP tag"
-                        },
-                        new
-                        {
-                            Id = (short)48,
-                            Name = "Domains with ABP tag"
                         });
                 });
 
@@ -57282,18 +56901,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                             Id = (short)39,
                             Description = "Replaces file and page sources to make them load faster",
                             Name = "cdn-replacer"
-                        },
-                        new
-                        {
-                            Id = (short)40,
-                            Description = "Bypasses paywalls on websites",
-                            Name = "paywall"
-                        },
-                        new
-                        {
-                            Id = (short)41,
-                            Description = "Cleans up anime viewing websites to make them easier to use",
-                            Name = "anime"
                         });
                 });
 

@@ -4,14 +4,16 @@ using FilterLists.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    partial class FilterListsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200713003239_1762")]
+    partial class _1762
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25497,7 +25499,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)2323,
-                            Description = "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+                            Description = "A blocklist of phishing websites. Based on PhishTank.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/phishing-filter",
                             IssuesUrl = "https://gitlab.com/curben/phishing-filter/issues",
@@ -25511,7 +25513,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)2324,
-                            Description = "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+                            Description = "A blocklist of phishing websites. Based on PhishTank.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/phishing-filter",
                             IssuesUrl = "https://gitlab.com/curben/phishing-filter/issues",
@@ -25525,7 +25527,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)2325,
-                            Description = "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+                            Description = "A blocklist of phishing websites. Based on PhishTank.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/phishing-filter",
                             IssuesUrl = "https://gitlab.com/curben/phishing-filter/issues",
@@ -25539,7 +25541,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)2326,
-                            Description = "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+                            Description = "A blocklist of phishing websites. Based on PhishTank.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/phishing-filter",
                             IssuesUrl = "https://gitlab.com/curben/phishing-filter/issues",
@@ -25553,7 +25555,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)2327,
-                            Description = "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+                            Description = "A blocklist of phishing websites. Based on PhishTank.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/phishing-filter",
                             IssuesUrl = "https://gitlab.com/curben/phishing-filter/issues",
@@ -25568,7 +25570,7 @@ Me, an intellectual: Creates these pink themes that look colourful, that are eas
                         new
                         {
                             Id = (short)2328,
-                            Description = "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+                            Description = "A blocklist of phishing websites. Based on PhishTank.",
                             DescriptionSourceUrl = "https://gitlab.com/curben/phishing-filter/blob/master/README.md",
                             HomeUrl = "https://gitlab.com/curben/phishing-filter",
                             IssuesUrl = "https://gitlab.com/curben/phishing-filter/issues",
