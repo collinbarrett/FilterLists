@@ -20770,9 +20770,11 @@
     "viewUrlMirror2": "198.251.90.89"
   },
   {
+    "description": "Filter list for Yahoo.com. This list will remove ads, tracking, beacons, and other annoyances for a better Yahoo experience.",
     "homeUrl": "https://github.com/troysjanda/MyBlockLists/",
     "id": 2065,
     "issuesUrl": "https://github.com/troysjanda/MyBlockLists/issues",
+    "licenseId": 4,
     "name": "Xpi Yahoo Complete Filters",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/troysjanda/MyBlockLists/master/yahoocomplete.txt"
