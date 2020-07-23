@@ -20898,27 +20898,27 @@
     "homeUrl": "https://github.com/Yuki2718/adblock",
     "id": 2079,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 28,
+    "licenseId": 8,
     "name": "AdGuard Social Media Plus",
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/adguard-social-plus.txt"
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt"
   },
   {
-    "description": "AdGuard Tracking Protection filter is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage. This filter aims to complement that and was extracted from my mobile filters but not identical.",
+    "description": "AdGuard Tracking Protection filter is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage which this filter aims to complement.",
     "homeUrl": "https://github.com/Yuki2718/adblock",
     "id": 2080,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 28,
+    "licenseId": 8,
     "name": "AdGuard Tracking Protection Plus",
     "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/adguard-tracking-plus.txt"
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt"
   },
   {
     "description": "Inspired by Sable Filter at MeetingLabs, this removes cookie consents. Main focuses are Japanese sites and other high-traffic sites many Japanese people will visit. False-positive prone rules won't be added (e.g. cookielaw.org, uk-cookie-consent plugin).",
     "homeUrl": "https://github.com/Yuki2718/adblock",
     "id": 2081,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 28,
+    "licenseId": 8,
     "name": "Sabre Filters 2",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt"
@@ -20928,7 +20928,7 @@
     "homeUrl": "https://github.com/Yuki2718/adblock",
     "id": 2082,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 28,
+    "licenseId": 8,
     "name": "Yuki2718's Blog Parts",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt"
@@ -20938,40 +20938,40 @@
     "homeUrl": "https://github.com/Yuki2718/adblock",
     "id": 2083,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 28,
+    "licenseId": 8,
     "name": "Yuki2718's Blog Parts Adult",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt"
   },
   {
-    "description": "A whitelist for medium mode of uBlock Origin for English user. The purpose is to help those non-techie, yet security-conscious, people to use the mode. Payment services and mobile sites are out-of-scope. This is not a list I myself use so won't be updated frequently.",
+    "description": "This is to counter unnecessary or too generic allowlists which were not addressed or won't be addressed by the maintainer. Only for advanced user as it can cause problems.",
     "homeUrl": "https://github.com/Yuki2718/adblock",
     "id": 2084,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 28,
-    "name": "Yuki2718's uBlock Dynamic Rules",
-    "syntaxId": 7,
-    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/ublock-dynamic-rules.txt"
+    "licenseId": 8,
+    "name": "Yuki2718's uBlock Anti-allowlist",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/anti-allowlist.txt"
   },
   {
-    "description": "Adds 3 extra entries in addition to ublock-dynamic-rules.txt",
+    "description": "A whitelist for medium mode of uBlock Origin for English user. The purpose is to help those non-techie, yet security-conscious, people to use the mode. Payment services and mobile sites are out-of-scope. This is not a list I myself use so won't be updated frequently.",
     "homeUrl": "https://github.com/Yuki2718/adblock",
     "id": 2085,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 28,
-    "name": "Yuki2718's uBlock Dynamic Rules Plus",
+    "licenseId": 8,
+    "name": "Yuki2718's uBlock Dynamic Rules",
     "syntaxId": 7,
-    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/ublock-dynamic-rules-plus.txt"
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules.txt"
   },
   {
     "description": "WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules[^1] and also occasionally cause false-positive. For these reasons I've settled down to AdGuard Social media filter which is relatively small in size and rarely breaks pages; however, it only blocks minimal set of the plugins. This list includes 1) rules for the plugins not on the Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer, and 3) a regex rule focused only on the latest survey scam campaign.",
     "homeUrl": "https://github.com/Yuki2718/adblock",
     "id": 2086,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 28,
+    "licenseId": 8,
     "name": "Yuki2718's uBlock Static Rules",
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/ublock-static-rules.txt"
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/static-rules.txt"
   },
   {
     "description": "Blocklist based on articles published by security research groups.",
@@ -20981,6 +20981,36 @@
     "name": "scafroglia93's Hosts Blocklists",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/scafroglia93/blocklists/master/blocklists-main.txt"
+  },
+  {
+    "description": "It's a mobile version of Yuki2718's uBlock Dynamic Rules.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "id": 2088,
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 8,
+    "name": "Yuki2718's uBlock Dynamic Rules for mobile",
+    "syntaxId": 7,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules-mob.txt"
+  },
+  {
+    "description": "Ignore generic cosmetic filters is recommended if you want better performance without sacrificing security or privacy. However, you'll notice ugly layout of many websites once you enabled this option. This filter mitigates this on English sites by removing placeholders left as a result of disabling generic cosmetic filters.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "id": 2089,
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 8,
+    "name": "Placeholder Hider with no generic hiding",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider.txt"
+  },
+  {
+    "description": "It's a mobile version of Placeholder Hider with no generic hiding.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "id": 2090,
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 8,
+    "name": "Placeholder Hider with no generic hiding for mobile",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-mob.txt"
   },
   {
     "description": "Blocks access to phishing, spam, malware and malicious domains. Our database of malicious domains is updated hourly and considered to be one of the best in the industry. Links that didn't fit in the Subscribe button URL texts, include 2a0d:2a00:2::2",
