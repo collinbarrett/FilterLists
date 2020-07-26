@@ -16955,21 +16955,21 @@
     "description": "Domain name filters.",
     "homeUrl": "https://in0de.synology.me",
     "id": 1703,
+    "isDeleted": true,
     "licenseId": 5,
     "name": "Synology's pwn",
     "syntaxId": 28,
-    "viewUrl": "https://in0de.synology.me/pwn.txt",
-    "isDeleted": true
+    "viewUrl": "https://in0de.synology.me/pwn.txt"
   },
   {
     "description": "Domain name hosts for Pi-hole.",
     "homeUrl": "https://in0de.synology.me",
     "id": 1704,
+    "isDeleted": true,
     "licenseId": 5,
     "name": "Synology's own",
     "syntaxId": 2,
-    "viewUrl": "https://in0de.synology.me/own.txt",
-    "isDeleted": true
+    "viewUrl": "https://in0de.synology.me/own.txt"
   },
   {
     "description": "Hosts file for blocking spyware, ads, analytics and tracking on German websites and domains.",
@@ -21104,8 +21104,8 @@
   },
   {
     "homeUrl": "https://github.com/banbendalao/ADgk",
-    "issuesUrl": "https://github.com/banbendalao/ADgk/issues",
     "id": 2104,
+    "issuesUrl": "https://github.com/banbendalao/ADgk/issues",
     "name": "ADgk Mobile Advertising Rules - adgk手机去广告规则",
     "syntaxId": 6,
     "viewUrl": "https://raw.githubusercontent.com/banbendalao/ADgk/master/adgk.txt",
@@ -21116,8 +21116,8 @@
     "description": "The effect is too powerful, use it with caution.",
     "descriptionSourceUrl": "https://gitee.com/banbendalao/adguard/raw/master/kill-baidu-ad.txt",
     "homeUrl": "https://github.com/banbendalao/ADgk",
-    "issuesUrl": "https://github.com/banbendalao/ADgk/issues",
     "id": 2105,
+    "issuesUrl": "https://github.com/banbendalao/ADgk/issues",
     "name": "Baidu Extreme Purification - 百度搜索结果极限净化",
     "syntaxId": 6,
     "viewUrl": "https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt",
@@ -21126,8 +21126,8 @@
   },
   {
     "homeUrl": "https://github.com/banbendalao/ADgk",
-    "issuesUrl": "https://github.com/banbendalao/ADgk/issues",
     "id": 2106,
+    "issuesUrl": "https://github.com/banbendalao/ADgk/issues",
     "name": "ADgk Mobile Advertising Rules (DNS)",
     "syntaxId": 22,
     "viewUrl": "https://dns.adgk.net:4433/dns-query",
