@@ -42,7 +42,7 @@ import {
   img40,
   img41,
   img42,
-  img43
+  img43,
 } from "./imgs";
 
 interface Props {
