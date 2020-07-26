@@ -204,5 +204,9 @@
   {
     "id": 48,
     "name": "Domains with ABP tag"
+  },
+  {
+    "id": 49,
+    "name": "SmartDNS"
   }
 ]
