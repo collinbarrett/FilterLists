@@ -20925,7 +20925,7 @@
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
     "name": "Sabre Filters 2",
-    "syntaxId": 3,
+    "syntaxId": 6,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt"
   },
   {
@@ -21016,6 +21016,46 @@
     "name": "Placeholder Hider with no generic hiding for mobile",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-mob.txt"
+  },
+  {
+    "description": "The most comprehensive, block-first, and efficient Japanese list for uBlock Origin that removes ads and analytics on desktop, designed for advanced user.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "id": 2091,
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 8,
+    "name": "uBlock Japanese filters - Paranoid",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt"
+  },
+  {
+    "description": "This can be added to uBlock Japanese filters for enhanced blocking. Use at your own risk.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "id": 2092,
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 8,
+    "name": "uBlock Japanese filters",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt"
+  },
+  {
+    "description": "Removes share buttons mainly on Japanese sites.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "id": 2093,
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 8,
+    "name": "uBlock Japanese filters - Social",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt"
+  },
+  {
+    "description": "Removes annoyances mainly on Japanese sites.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "id": 2094,
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 8,
+    "name": "uBlock Japanese filters - Annoyances",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt"
   },
   {
     "description": "Blocks access to phishing, spam, malware and malicious domains. Our database of malicious domains is updated hourly and considered to be one of the best in the industry. Links that didn't fit in the Subscribe button URL texts, include 2a0d:2a00:2::2",
