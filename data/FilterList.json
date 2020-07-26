@@ -16959,7 +16959,7 @@
     "name": "Synology's pwn",
     "syntaxId": 28,
     "viewUrl": "https://in0de.synology.me/pwn.txt",
-    "isDeleted": true,
+    "isDeleted": true
   },
   {
     "description": "Domain name hosts for Pi-hole.",
@@ -16969,7 +16969,7 @@
     "name": "Synology's own",
     "syntaxId": 2,
     "viewUrl": "https://in0de.synology.me/own.txt",
-    "isDeleted": true,
+    "isDeleted": true
   },
   {
     "description": "Hosts file for blocking spyware, ads, analytics and tracking on German websites and domains.",
