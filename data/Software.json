@@ -272,5 +272,12 @@
     "id": 42,
     "isAbpSubscribable": false,
     "name": "dnscrypt-proxy"
+  },
+  {
+    "downloadUrl": "https://github.com/pymumu/smartdns/releases",
+    "homeUrl": "https://github.com/pymumu/smartdns",
+    "id": 43,
+    "isAbpSubscribable": false,
+    "name": "SmartDNS"
   }
 ]
