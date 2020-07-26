@@ -1622,13 +1622,13 @@
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/8.txt"
   },
   {
-    "description": "A filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by AdGuard DNS servers to block ads.",
+    "description": "A filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, regional AdGuard lists, EasyList, EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by AdGuard DNS servers to block ads.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#simplified-domain-names-filter",
     "homeUrl": "https://github.com/AdguardTeam/AdguardDNS",
     "id": 168,
     "issuesUrl": "https://github.com/AdguardTeam/AdguardDNS/issues",
     "licenseId": 12,
-    "name": "AdGuard Simplified Domain Names Filter",
+    "name": "AdGuard DNS Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 47,
     "updatedDate": "2019-04-15T06:34:10",
@@ -5958,7 +5958,7 @@
   {
     "id": 630,
     "licenseId": 5,
-    "name": "AdGuard Simplified Domain Names Filter (Domains)",
+    "name": "AdGuard DNS Filter (Domains)",
     "syntaxId": 2,
     "updatedDate": "2019-04-14T13:38:10",
     "viewUrl": "https://v.firebog.net/hosts/AdguardDNS.txt"
@@ -6078,7 +6078,7 @@
     "id": 667,
     "issuesUrl": "https://github.com/r-a-y/mobile-hosts/issues",
     "licenseId": 4,
-    "name": "AdGuard Simplified Domain Names Filter (Hosts)",
+    "name": "AdGuard DNS Filter (Hosts)",
     "publishedDate": "2017-11-21T23:40:34",
     "syntaxId": 1,
     "updatedDate": "2019-04-07T00:37:44",
@@ -15253,18 +15253,17 @@
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPrayerTimesList.txt"
   },
   {
-    "description": "This script can help you bypass all website content that is blocked by Indonesia's «Positive Internet» campaign through the hosts file.",
+    "description": "BEBASID can help open web pages that are blocked by the Indonesian government by using the hosts file.",
     "descriptionSourceUrl": "https://github.com/gvoze32/unblockhostid#unblockhostid",
-    "donateUrl": "https://unblockhostid.github.io/",
-    "homeUrl": "https://unblockhostid.github.io/",
+    "donateUrl": "https://github.com/bebasid/bebasid/#donasi-kami",
+    "homeUrl": "https://github.com/bebasid/bebasid/",
     "id": 1555,
-    "issuesUrl": "https://github.com/gvoze32/bebasid/issues",
+    "issuesUrl": "https://github.com/bebasid/bebasid//issues",
     "licenseId": 2,
-    "name": "UNBLOCKHOSTID",
+    "name": "BEBASID",
     "publishedDate": "2017-06-23T13:44:09",
     "syntaxId": 14,
-    "updatedDate": "2019-04-15T16:54:10",
-    "viewUrl": "https://raw.githubusercontent.com/gvoze32/bebasid/master/releases/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/bebasid/bebasid/master/releases/hosts"
   },
   {
     "description": "Prevent Game of Thrones spoilers",
@@ -16959,7 +16958,8 @@
     "licenseId": 5,
     "name": "Synology's pwn",
     "syntaxId": 28,
-    "viewUrl": "https://in0de.synology.me/pwn.txt"
+    "viewUrl": "https://in0de.synology.me/pwn.txt",
+    "isDeleted": true,
   },
   {
     "description": "Domain name hosts for Pi-hole.",
@@ -16968,7 +16968,8 @@
     "licenseId": 5,
     "name": "Synology's own",
     "syntaxId": 2,
-    "viewUrl": "https://in0de.synology.me/own.txt"
+    "viewUrl": "https://in0de.synology.me/own.txt",
+    "isDeleted": true,
   },
   {
     "description": "Hosts file for blocking spyware, ads, analytics and tracking on German websites and domains.",
@@ -20040,7 +20041,7 @@
     "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ImgurPureImageryExperience.txt"
   },
   {
-    "description": "AdGuard's official DNS server to remove ads and trackers. Believed to be using \"AdGuard Simplified Domain Names Filter\". Links that didn't fit in the Subscribe button URL texts, include 176.103.130.131 — 2a00:5a60::ad1:0ff — 2a00:5a60::ad2:0ff",
+    "description": "AdGuard's official DNS server to remove ads and trackers. Believed to be using \"AdGuard DNS Filter\". Links that didn't fit in the Subscribe button URL texts, include 176.103.130.131 — 2a00:5a60::ad1:0ff — 2a00:5a60::ad2:0ff",
     "emailAddress": "support@adguard.com",
     "homeUrl": "https://adguard.com/adguard-dns/overview.html",
     "id": 1985,
@@ -20052,7 +20053,7 @@
     "viewUrlMirror2": "176.103.130.130"
   },
   {
-    "description": "AdGuard's official DNS server to remove ads, trackers, and porn. Believed to be using \"AdGuard Simplified Domain Names Filter\", as well as AdGuard's Safe Search plugin and an unspecified third-party anti-porn list. Links that didn't fit in the Subscribe button URL texts, include 176.103.130.134 — 2a00:5a60::bad1:0ff — 2a00:5a60::bad2:0ff",
+    "description": "AdGuard's official DNS server to remove ads, trackers, and porn. Believed to be using \"AdGuard DNS Filter\", as well as AdGuard's Safe Search and anti-porn serverside lookups. Links that didn't fit in the Subscribe button URL texts, include 176.103.130.134 — 2a00:5a60::bad1:0ff — 2a00:5a60::bad2:0ff",
     "emailAddress": "support@adguard.com",
     "homeUrl": "https://adguard.com/adguard-dns/overview.html",
     "id": 1986,
@@ -20548,47 +20549,51 @@
   },
   {
     "description": "anti-AD is currently the highest-hitcount-filtering ad list in Chinese, which achieves accurate ad blocking and privacy protection. Now supports AdGuard Home, dnsmasq, Surge, Pi-Hole and other excellent network tools.",
-    "homeUrl": "https://anti-ad.win/",
+    "homeUrl": "https://anti-ad.net/",
     "id": 2043,
     "issuesUrl": "https://github.com/privacy-protection-tools/anti-AD/issues",
     "licenseId": 2,
     "name": "anti-AD (Adblockers)",
     "syntaxId": 47,
     "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt",
-    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt"
+    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt",
+    "viewUrlMirror2": "https://anti-ad.net/easylist.txt"
   },
   {
     "description": "anti-AD is currently the highest-hitcount-filtering ad list in Chinese, which achieves accurate ad blocking and privacy protection. Now supports AdGuard Home, dnsmasq, Surge, Pi-Hole and other excellent network tools.",
-    "homeUrl": "https://anti-ad.win/",
+    "homeUrl": "https://anti-ad.net/",
     "id": 2044,
     "issuesUrl": "https://github.com/privacy-protection-tools/anti-AD/issues",
     "licenseId": 2,
     "name": "anti-AD (Domains)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt",
-    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-domains.txt"
+    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-domains.txt",
+    "viewUrlMirror2": "https://anti-ad.net/domains.txt"
   },
   {
     "description": "anti-AD is currently the highest-hitcount-filtering ad list in Chinese, which achieves accurate ad blocking and privacy protection. Now supports AdGuard Home, dnsmasq, Surge, Pi-Hole and other excellent network tools.",
-    "homeUrl": "https://anti-ad.win/",
+    "homeUrl": "https://anti-ad.net/",
     "id": 2045,
     "issuesUrl": "https://github.com/privacy-protection-tools/anti-AD/issues",
     "licenseId": 2,
     "name": "anti-AD (dnsmasq)",
     "syntaxId": 20,
     "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf",
-    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/adblock-for-dnsmasq.conf"
+    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/adblock-for-dnsmasq.conf",
+    "viewUrlMirror2": "https://anti-ad.net/anti-ad-for-dnsmasq.conf"
   },
   {
     "description": "anti-AD is currently the highest-hitcount-filtering ad list in Chinese, which achieves accurate ad blocking and privacy protection. Now supports AdGuard Home, dnsmasq, Surge, Pi-Hole and other excellent network tools.",
-    "homeUrl": "https://anti-ad.win/",
+    "homeUrl": "https://anti-ad.net/",
     "id": 2046,
     "issuesUrl": "https://github.com/privacy-protection-tools/anti-AD/issues",
     "licenseId": 2,
     "name": "anti-AD (Surge)",
     "syntaxId": 29,
     "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt",
-    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-surge.txt"
+    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-surge.txt",
+    "viewUrlMirror2": "https://anti-ad.net/surge.txt"
   },
   {
     "description": "SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more. The goal is to enable a security tester to pull this repository onto a new testing box and have access to every type of list that may be needed.",
@@ -21098,23 +21103,30 @@
     "viewUrl": "https://raw.githubusercontent.com/crimsonphobia/etc/master/ips"
   },
   {
-    "homeUrl": "https://gitee.com/banbendalao/adguard/",
+    "homeUrl": "https://github.com/banbendalao/ADgk",
+    "issuesUrl": "https://github.com/banbendalao/ADgk/issues",
     "id": 2104,
     "name": "ADgk Mobile Advertising Rules - adgk手机去广告规则",
     "syntaxId": 6,
-    "viewUrl": "https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt"
+    "viewUrl": "https://raw.githubusercontent.com/banbendalao/ADgk/master/adgk.txt",
+    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/banbendalao/ADgk@latest/adgk.txt",
+    "viewUrlMirror2": "https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/adgk.txt"
   },
   {
     "description": "The effect is too powerful, use it with caution.",
     "descriptionSourceUrl": "https://gitee.com/banbendalao/adguard/raw/master/kill-baidu-ad.txt",
-    "homeUrl": "https://gitee.com/banbendalao/adguard/",
+    "homeUrl": "https://github.com/banbendalao/ADgk",
+    "issuesUrl": "https://github.com/banbendalao/ADgk/issues",
     "id": 2105,
     "name": "Baidu Extreme Purification - 百度搜索结果极限净化",
     "syntaxId": 6,
-    "viewUrl": "https://gitee.com/banbendalao/adguard/raw/master/kill-baidu-ad.txt"
+    "viewUrl": "https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt",
+    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/banbendalao/ADgk@latest/kill-baidu-ad.txt",
+    "viewUrlMirror2": "https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/kill-baidu-ad.txt"
   },
   {
-    "homeUrl": "https://gitee.com/banbendalao/adguard/",
+    "homeUrl": "https://github.com/banbendalao/ADgk",
+    "issuesUrl": "https://github.com/banbendalao/ADgk/issues",
     "id": 2106,
     "name": "ADgk Mobile Advertising Rules (DNS)",
     "syntaxId": 22,
@@ -21123,7 +21135,7 @@
     "viewUrlMirror2": "47.98.48.196"
   },
   {
-    "homeUrl": "https://ps2online.tk/",
+    "homeUrl": "https://ps2online.com/",
     "id": 2107,
     "name": "PS2 Online",
     "syntaxId": 22,
@@ -23652,5 +23664,25 @@
     "name": "StopModReposts for uBlock Orgin by L33Tech",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/L33Tech/uLists/master/Forks/StopModReposts.uBl"
+  },
+  {
+    "description": "anti-AD is currently the highest-hitcount-filtering ad list in Chinese, which achieves accurate ad blocking and privacy protection. Now supports AdGuard Home, dnsmasq, Surge, Pi-Hole and other excellent network tools.",
+    "homeUrl": "https://anti-ad.net/",
+    "id": 2340,
+    "issuesUrl": "https://github.com/privacy-protection-tools/anti-AD/issues",
+    "licenseId": 2,
+    "name": "anti-AD (SmartDNS)",
+    "syntaxId": 49,
+    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-smartdns.conf",
+    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-smartdns.conf",
+    "viewUrlMirror2": "https://anti-ad.net/anti-ad-for-smartdns.conf"
+  },
+  {
+    "description": "This server currently provides online multiplayer support for a variety of PS2/PC games.",
+    "homeUrl": "http://bobzent.info/",
+    "id": 2341,
+    "name": "Bobz Entertainment",
+    "syntaxId": 22,
+    "viewUrl": "66.66.23.98"
   }
 ]
