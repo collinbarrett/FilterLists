@@ -21023,7 +21023,7 @@
     "id": 2091,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
-    "name": "uBlock Japanese filters - Paranoid",
+    "name": "Yuki's uBlock Japanese filters",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt"
   },
@@ -21033,7 +21033,7 @@
     "id": 2092,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
-    "name": "uBlock Japanese filters",
+    "name": "Yuki's uBlock Japanese filters - Paranoid",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt"
   },
@@ -21043,7 +21043,7 @@
     "id": 2093,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
-    "name": "uBlock Japanese filters - Social",
+    "name": "Yuki's uBlock Japanese filters - Social",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt"
   },
@@ -21053,7 +21053,7 @@
     "id": 2094,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
-    "name": "uBlock Japanese filters - Annoyances",
+    "name": "Yuki's uBlock Japanese filters - Annoyances",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt"
   },
