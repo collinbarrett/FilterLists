@@ -20934,7 +20934,7 @@
     "id": 2082,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
-    "name": "Yuki2718's Blog Parts",
+    "name": "Yuki's Blog Parts",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt"
   },
@@ -20944,7 +20944,7 @@
     "id": 2083,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
-    "name": "Yuki2718's Blog Parts Adult",
+    "name": "Yuki's Blog Parts Adult",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt"
   },
@@ -20954,7 +20954,7 @@
     "id": 2084,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
-    "name": "Yuki2718's uBlock Anti-allowlist",
+    "name": "Yuki's uBlock Anti-allowlist",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/anti-allowlist.txt"
   },
@@ -20964,7 +20964,7 @@
     "id": 2085,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
-    "name": "Yuki2718's uBlock Dynamic Rules",
+    "name": "Yuki's uBlock Dynamic Rules",
     "syntaxId": 7,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules.txt"
   },
@@ -20974,7 +20974,7 @@
     "id": 2086,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
-    "name": "Yuki2718's uBlock Static Rules",
+    "name": "Yuki's uBlock Static Rules",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/static-rules.txt"
   },
@@ -20993,7 +20993,7 @@
     "id": 2088,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
-    "name": "Yuki2718's uBlock Dynamic Rules for mobile",
+    "name": "Yuki's uBlock Dynamic Rules for mobile",
     "syntaxId": 7,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules-mob.txt"
   },
