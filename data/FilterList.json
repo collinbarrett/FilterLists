@@ -200,8 +200,7 @@
     "syntaxId": 17,
     "updatedDate": "2019-04-08T01:41:02",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianList.txt"
   },
   {
     "description": "A text file with filters to aid in blocking online trackers, for use in a blocker such as uBlock Origin.",
@@ -434,7 +433,6 @@
     "syntaxId": 1,
     "updatedDate": "2018-10-04T03:04:09",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist%20(Hosts).txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/gmbkslist%20(Hosts).txt",
     "viewUrlMirror2": "https://gitcdn.xyz/repo/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist%20(Hosts).txt"
   },
   {
@@ -1624,16 +1622,15 @@
   {
     "description": "A filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, regional AdGuard lists, EasyList, EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by AdGuard DNS servers to block ads.",
     "descriptionSourceUrl": "https://kb.adguard.com/en/general/adguard-ad-filters#simplified-domain-names-filter",
-    "homeUrl": "https://github.com/AdguardTeam/AdguardDNS",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardSDNS",
     "id": 168,
-    "issuesUrl": "https://github.com/AdguardTeam/AdguardDNS/issues",
-    "licenseId": 12,
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardSDNS/issues",
+    "licenseId": 4,
     "name": "AdGuard DNS Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 47,
     "updatedDate": "2019-04-15T06:34:10",
-    "viewUrl": "https://filters.adtidy.org/windows/filters/15.txt",
-    "viewUrlMirror1": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
+    "viewUrl": "https://filters.adtidy.org/windows/filters/15.txt"
   },
   {
     "description": "Blocks irritating elements on webpages, including cookie notices, third-party widgets and in-page popups (Doesn’t include social media widgets and buttons, to block them you can still use Social media filter separately). It was inspired by Fanboy Annoyances List, but doesn’t duplicate it, so you can use them both together.",
@@ -1763,7 +1760,6 @@
     "updatedDate": "2009-10-18T00:00:00",
     "viewUrl": "http://git.sourceforge.jp/view?p=ayucat-list/ayucat-list.git;a=blob_plain;f=ayucat-list.txt;hb=b254c74c132832a3ade7b9d42c2ef8d3dd59fdb9",
     "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Ayucat%20Powerful%20List.txt",
-    "viewUrlMirror2": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Ayucat%20Powerful%20List.txt"
   },
   {
     "description": "Blocks shady, annoying pop-under ads from the infamous PopAds ad network.",
@@ -2325,7 +2321,6 @@
     "updatedDate": "2010-05-18T00:00:00",
     "viewUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt",
     "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Facebook%20Privacy%20List.txt",
-    "viewUrlMirror2": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Facebook%20Privacy%20List.txt"
   },
   {
     "description": "Block only news feed annoyances.",
@@ -2842,7 +2837,6 @@
     "updatedDate": "2014-08-16T00:00:00",
     "viewUrl": "http://adblock.dajbych.net/adblock.txt",
     "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Czech%20Filters%20for%20Adblock%20Plus",
-    "viewUrlMirror2": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Czech%20Filters%20for%20Adblock%20Plus"
   },
   {
     "description": "Corset is a subscription filter to block intruding ads on sites using Korean.",
@@ -3422,8 +3416,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-13T07:46:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/stayingonbrowser/Staying%20On%20The%20Phone%20Browser",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser"
   },
   {
     "description": "A hosts file for Chinese websites.",
@@ -4096,8 +4089,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-14T22:21:11",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Username%20Hider%20for%20Compilation%20Creators.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Username%20Hider%20for%20Compilation%20Creators.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Username%20Hider%20for%20Compilation%20Creators.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Username%20Hider%20for%20Compilation%20Creators.txt"
   },
   {
     "description": "Removes ads, affiliation ads, and empty boxes on Nordic sites to produce a cleaner browser experience. Meant to be used on top of general filters. The quality of the current TPL conversion is so-so, so don't expect perfect results.",
@@ -4111,8 +4103,7 @@
     "syntaxId": 10,
     "updatedDate": "2019-04-14T22:37:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl"
   },
   {
     "description": "Filters that hide and block RSS sections and leftovers from hidden newsletters combined with social elements on Polish-language websites (supplement for Polish Social Filters and Polish Annoyance Filters).",
@@ -4140,8 +4131,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-02-24T16:16:37",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/IHateOverpromotedGames.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/IHateOverpromotedGames.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/IHateOverpromotedGames.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/IHateOverpromotedGames.txt"
   },
   {
     "description": "Intends to make it easier to browse various websites without being forced by various nag-windows to log in.",
@@ -4156,8 +4146,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-14T22:38:07",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/BrowseWebsitesWithoutLoggingIn.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/BrowseWebsitesWithoutLoggingIn.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/BrowseWebsitesWithoutLoggingIn.txt"
   },
   {
     "description": "A list that shows off and makes use of Einar Egilsson's Redirector extension, in order to accomplish things that no adblock tool could've achieved. Examples include turning 32-bit Windows program installation links into 64-bit ones, making Disney's US websites accessible from other countries, turning mobile Wikipedia links into desktop ones, changing Reddit/YouTube UIs into their old ones, and making image resolutions on some sites larger, among many other things.",
@@ -4172,8 +4161,7 @@
     "syntaxId": 11,
     "updatedDate": "2019-04-14T23:37:13",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json"
   },
   {
     "description": "This is a whitelist for DNSlock & PiHole which unblocks some of the popular domains which were wrongly listed and blocked by hosts file from various sources.",
@@ -4485,8 +4473,7 @@
     "syntaxId": 1,
     "updatedDate": "2019-02-24T14:41:09",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/AdawayHosts",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts"
   },
   {
     "description": "Have you ever felt bothered by how many websites still think that everyone are using narrow monitors? Well, here's how to stretch them out like a piece of gum!",
@@ -4500,8 +4487,7 @@
     "syntaxId": 4,
     "updatedDate": "2019-04-15T07:16:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Website%20Stretcher.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout%27s%20Website%20Stretcher.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout%27s%20Website%20Stretcher.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout%27s%20Website%20Stretcher.txt"
   },
   {
     "description": "Do you feel that Friendship is Magic has overstayed its welcome? Here's a list that'll let you keep more of a distance to it.",
@@ -4515,8 +4501,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-15T07:26:11",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-F%D1%96%D0%9C%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-F%D1%96%D0%9C%20List.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-F%D1%96%D0%9C%20List.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-F%D1%96%D0%9C%20List.txt"
   },
   {
     "description": "Are you tired of being told by others what you should watch, specifically the hipsters that run rampant on IMDB? Here's a way to let you feel more peaceful with your truly own opinions.",
@@ -4530,8 +4515,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-15T07:32:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-IMDB%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-IMDB%20List.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-IMDB%20List.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-IMDB%20List.txt"
   },
   {
     "description": "Are you tired of having to turn off Autoplay on YouTube or other video services every time you e.g. go to incognito mode? Are you worried of having to use specific extensions just for that purpose? Then this list is for you. Now also working on phone browsers!",
@@ -4546,8 +4530,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-13T19:39:29",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/StopAutoplayOnYouTube.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/StopAutoplayOnYouTube.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/StopAutoplayOnYouTube.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/StopAutoplayOnYouTube.txt"
   },
   {
     "description": "A redirector list for Chinese users.",
@@ -5127,8 +5110,7 @@
     "name": "Adblock List Template (Beginner)",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt"
   },
   {
     "description": "This serves as a template and guidance for people who want to learn how to make their own adblock lists. This template contains all conventionally used tags; the 'Beginner' version is easier to deal with.",
@@ -5142,8 +5124,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-02-17T20:24:09",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt"
   },
   {
     "description": "Allow nonintrusive advertising without third-party tracking",
@@ -5720,8 +5701,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-08T08:58:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Elsagate%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-Elsagate%20List.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-Elsagate%20List.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-Elsagate%20List.txt"
   },
   {
     "description": "IPs used by forum spammers (last 30 days)",
@@ -6114,8 +6094,7 @@
     "syntaxId": 18,
     "updatedDate": "2019-05-02T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules"
   },
   {
     "description": "This rule group demonstrates the subscription of a blocklist. It's for demo purposes only. It lets you try out the subscription procedure and the available configuration options. You can rename the group, enable/disable either individual rules or the entire group, specify the update interval, and more.",
@@ -6235,8 +6214,7 @@
     "syntaxId": 2,
     "updatedDate": "2019-02-23T15:45:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt"
   },
   {
     "description": "An IP list of domains serving malware",
@@ -7375,7 +7353,6 @@
     "syntaxId": 3,
     "updatedDate": "2019-01-29T00:25:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Liste%20DZ.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Liste%20DZ.txt"
   },
   {
     "description": "General icelandic ad and blocking subscription",
@@ -7388,7 +7365,6 @@
     "syntaxId": 3,
     "updatedDate": "2014-03-11T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Snaevar87's%20Icelandic%20filter.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Snaevar87%27s%20Icelandic%20filter.txt"
   },
   {
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/TamilFriends%20List.txt",
@@ -7401,7 +7377,6 @@
     "syntaxId": 3,
     "updatedDate": "2010-07-30T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/TamilFriends%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/TamilFriends%20List.txt"
   },
   {
     "description": "A combined version of the filterlist RU AdList against advertising, and an experimental list of cosmetic CSS style fixes. At the moment it only works normally in uBlock Origin.",
@@ -7515,7 +7490,6 @@
     "syntaxId": 3,
     "updatedDate": "2018-10-02T19:32:03",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/gmbkslist.txt"
   },
   {
     "homeUrl": "https://code.google.com/archive/p/adblocking-openfilter-jp/",
@@ -7525,7 +7499,6 @@
     "syntaxId": 3,
     "updatedDate": "2012-09-16T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Adblocking%20Open%20Filter%20JP",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AncientLibrary/Adblocking%20Open%20Filter%20JP"
   },
   {
     "description": "Do you already have a favourite browser or PDF reader? Are you tired of seeing \"Try out [some browser] now!\" on some websites? Then this is a list is for you!",
@@ -7540,8 +7513,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-03-03T04:37:09",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt"
   },
   {
     "description": "This file is in hosts file format and works best when used in for example pi-hole, routers, etc. It aims to reduce your exposure to ads, tracking, scams & badware, and occasionally some annoyances on (mostly) Swedish websites. As always with hosts file, use at your own risk and make sure that you know what you're doing. This is not as powerful as the filter list for uBO.",
@@ -7581,8 +7553,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-03-20T12:11:34",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeEvenMorePureVideoExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/YouTubeEvenMorePureVideoExperience.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/YouTubeEvenMorePureVideoExperience.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/YouTubeEvenMorePureVideoExperience.txt"
   },
   {
     "homeUrl": "https://github.com/uBlockOrigin/uAssets",
@@ -7951,8 +7922,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-03-25T16:36:59",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchPureViewingExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TwitchPureViewingExperience.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TwitchPureViewingExperience.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TwitchPureViewingExperience.txt"
   },
   {
     "description": "This list is mostly made for Pixiv, which is an East Asian artsite, whose on-average art quality wipes the floor with DeviantArt. It also allows porn of many types. Pressure on \"many\". So say that you're looking for imagery of consensual and pleasurable sex, and then you stumble across a crying Daniel Tiger wearing a corset being strapped to a bench in a diaper? Now such scenarios won't occur nearly as often as they did before!",
@@ -7968,8 +7938,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-02T23:58:26",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAbusePorn.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAbusePorn.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAbusePorn.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAbusePorn.txt"
   },
   {
     "description": "Do you like to browse casually through different Wikia wikis, but are tired of FANDOM promotions, promotions for movies that you don't care about, and narrow article bodies? Then this list will save your day.",
@@ -7985,8 +7954,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-02-24T16:35:36",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WikiaPureBrowsingExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/WikiaPureBrowsingExperience.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WikiaPureBrowsingExperience.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WikiaPureBrowsingExperience.txt"
   },
   {
     "description": "This list combines \"YouTube: Even More Pure Video Experience\", \"Stop Autoplay For YouTube\", and \"Anti-Elsagate List\". It only works with blockers that support the !#include tag, such as uBO, Nano, and AdGuard.",
@@ -8002,8 +7970,7 @@
     "syntaxId": 21,
     "updatedDate": "2018-10-12T18:43:20",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeYetEvenMorePureVideoExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/YouTubeYetEvenMorePureVideoExperience.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/YouTubeYetEvenMorePureVideoExperience.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/YouTubeYetEvenMorePureVideoExperience.txt"
   },
   {
     "description": "This list combines \"YouTube: Even More Pure Video Experience\", \"Stop Autoplay For YouTube\", \"Anti-Elsagate List\", \"Wikia: Pure Browsing Experience\", \"Twitch: Pure Viewing Experience\", and \"Know Your Meme: Pure Browsing Experience\". It only works with blockers that support the !#include tag, such as uBO and Nano.",
@@ -8019,8 +7986,7 @@
     "syntaxId": 21,
     "updatedDate": "2019-01-30T04:38:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/VeryThoroughWebsiteCleaner.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/VeryThoroughWebsiteCleaner.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/VeryThoroughWebsiteCleaner.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/VeryThoroughWebsiteCleaner.txt"
   },
   {
     "description": "Internetizens: Fights to the death over their obsession with light/dark themes.\nMe, an intellectual: Creates these pink themes that look colourful, that are easy on the eye, and which helps make your life that little bit more fun.",
@@ -8035,8 +8001,7 @@
     "syntaxId": 4,
     "updatedDate": "2019-04-08T02:30:13",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MeWe%20Pink%20Theme.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/MeWe%20Pink%20Theme.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/MeWe%20Pink%20Theme.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/MeWe%20Pink%20Theme.txt"
   },
   {
     "description": "I am of the firm belief that LED bulbs are the future. They use ⅒ of the wattage, lasts 10 times longer, can be found in a plethora of colours and strengths, and doesn't roast your hands if you touch it. A lot of people have however not got the memo. So if you want to discreetly lead them onto the path of buying LED bulbs, deploy this list on their computers and hope that they don't notice.",
@@ -8051,8 +8016,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-03-17T23:58:09",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Pro-LED%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Pro-LED%20List.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Pro-LED%20List.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Pro-LED%20List.txt"
   },
   {
     "description": "A list that makes use of Einar Egilsson's Redirector extension, in order to make links to certain websites redirect to the proper .onion pages. For example, clicking on links to nytimes.com would instead lead to nytimes3xbfgragh.onion.",
@@ -8067,8 +8031,7 @@
     "syntaxId": 11,
     "updatedDate": "2019-04-08T02:36:11",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json"
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
@@ -8097,8 +8060,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-08T09:57:13",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Futa%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-Futa%20List.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-Futa%20List.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-Futa%20List.txt"
   },
   {
     "description": "This repository contains some custom ad- and content-blocking rules I use to make life online easier (or just nicer to look at). Most of the content blocked here deals with sites I or my contributors regularly visit.",
@@ -8152,8 +8114,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-08T10:28:11",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Christmas%20carols'%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Christmas%20carols'%20List.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Christmas%20carols'%20List.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Christmas%20carols'%20List.txt"
   },
   {
     "description": "This aim to block non-formal hosts that serve all Facebook contents and resources from alternative \"Free Basics\" servers that it happen when you're using on mobile data over the carrier that collaborate with Facebook to have THAT service! This list will follow the update after routine check results of dead-hosts.",
@@ -12089,8 +12050,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-03-08T17:07:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Battle%20Royale'%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Battle%20Royale'%20List.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Battle%20Royale'%20List.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Battle%20Royale'%20List.txt"
   },
   {
     "description": "A filterlist that use in \"Better\" app on the iOS devices (iPhone, iPad, MacOS)",
@@ -12234,8 +12194,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-02-24T16:18:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/KnowYourMemePureBrowsingExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/KnowYourMemePureBrowsingExperience.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/KnowYourMemePureBrowsingExperience.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/KnowYourMemePureBrowsingExperience.txt"
   },
   {
     "description": "Most anti-malware lists are pretty big and can cover a 5- or 6-digit amount of specific domains. But my list hereby claims to remove more than 25% of all known malware sites with just a 2-digit amount of entries. This is mostly done by blocking top-level domains that have become devastatingly abused by spammers, usually because they allowed for free and uncontrolled domain registrations. There's also additional categories that cover unusual malware and phishing domains that very few other lists seem to cover.",
@@ -12251,8 +12210,7 @@
     "syntaxId": 17,
     "updatedDate": "2019-04-19T00:21:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout's%20Anti-Malware%20List.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt"
   },
   {
     "description": "Are you just trying to casually browse through some comedy and art accounts on Twitter, and have grown really, really tired and worn out by seeing trashy posts and accounts made by tweeters who physically can't stop babbling about politics, especially American politics? Then this list will probably save your life.",
@@ -12268,8 +12226,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-05T21:58:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Twitter%20De-Politificator.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Twitter%20De-Politificator.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Twitter%20De-Politificator.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Twitter%20De-Politificator.txt"
   },
   {
     "description": "Having something display a permanent fake notification counter, to make the users think that they've received a notification when they haven't, takes quite a bit of scumminess on the maker's behalf to pull off. Here's how to filter them out of sight.",
@@ -12285,8 +12242,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-03-03T03:39:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt"
   },
   {
     "description": "This serves as a template and guidance for people who want to learn how to make their own «hosts» files, or how to make them optimalised for uBlock Origin. This template contains all conventionally used tags, with added notes on how they differ from the tags that are used in adblock lists.",
@@ -12300,8 +12256,7 @@
     "publishedDate": "2018-01-10T00:00:00",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt"
   },
   {
     "emailAddress": "elias.ojala+github@kapsi.fi",
@@ -14240,8 +14195,7 @@
     "syntaxId": 21,
     "updatedDate": "2019-01-28T17:43:41",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyingBannersAndOverlays.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AnnoyingBannersAndOverlays.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AnnoyingBannersAndOverlays.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AnnoyingBannersAndOverlays.txt"
   },
   {
     "description": "Having initially been made in a failed bid to get a 2nd list of mine included in uBlock Origin, it remains online for collection count purposes.",
@@ -14257,8 +14211,7 @@
     "syntaxId": 21,
     "updatedDate": "2019-02-10T08:37:20",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AnnoyancesList",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AnnoyancesList"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AnnoyancesList"
   },
   {
     "description": "This list aims to achieve pretty broad (if not overly broad) coverage of social sharing buttons, with perhaps 1/50th~1/100th as many entries as what the biggest anti-'social button' lists out there have.",
@@ -14274,8 +14227,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-08T11:32:18",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/SocialShareList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/SocialShareList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/SocialShareList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/SocialShareList.txt"
   },
   {
     "description": "The SteamScamSites domains list, but without comments or dead/down domains ! A lighter version, called the Ashes version.",
@@ -14318,8 +14270,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-01T01:45:23",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAstrologyList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAstrologyList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAstrologyList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAstrologyList.txt"
   },
   {
     "description": "Most of us who are able to read this description, likely have some old relatives who get very easily confused about even the most basic of PC stuff. This list, if implemented on their PCs alongside uBlock Origin, can help you help them stay more safe from old people's tech mistakes, giving you fewer strange help requests from them as well.",
@@ -14335,8 +14286,7 @@
     "syntaxId": 21,
     "updatedDate": "2019-02-24T16:23:23",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ListForOldPeople.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/ListForOldPeople.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ListForOldPeople.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ListForOldPeople.txt"
   },
   {
     "description": "Are you tired of having to look at all the buttons and links with which Amazon promote their account and payment services while you're watching a good stream (i.e. Vinesauce)? Now you won't have to look at all those buttons anymore!",
@@ -14352,8 +14302,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-02-27T19:25:55",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAmazonListForTwitch.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAmazonListForTwitch.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAmazonListForTwitch.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAmazonListForTwitch.txt"
   },
   {
     "description": "Personal hosts list for Samsung Knox-based ad blockers.",
@@ -15020,8 +14969,7 @@
     "syntaxId": 4,
     "updatedDate": "2019-03-27T04:04:06",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WordPressTranslatorAssistant.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/WordPressTranslatorAssistant.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WordPressTranslatorAssistant.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WordPressTranslatorAssistant.txt"
   },
   {
     "description": "A general ad & tracking domain blocklist for pihole.",
@@ -15198,8 +15146,7 @@
     "syntaxId": 4,
     "updatedDate": "2019-03-29T17:54:49",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WebsiteStretcherVertical.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/WebsiteStretcherVertical.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WebsiteStretcherVertical.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WebsiteStretcherVertical.txt"
   },
   {
     "description": "Do you have a huge high-resolution monitor, and are feeling bothered by how websites still think that everyone are using 768-1080px monitors? Well, here's how to stretch them out like a piece of gum!",
@@ -15215,8 +15162,7 @@
     "syntaxId": 21,
     "updatedDate": "2019-03-29T10:37:31",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WebsiteStretcher4K.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/WebsiteStretcher4K.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WebsiteStretcher4K.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WebsiteStretcher4K.txt"
   },
   {
     "description": "Reddit can have some good places and posts, but unfortunately 95% of it is also a large pile of echo chambers whose only equivalent is 8chan. So if you only browse Reddit for its humouristical and artistical subreddits, this list will massively help you focus on those things.",
@@ -15232,8 +15178,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-17T03:53:52",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RedditTrashRemovalService.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/RedditTrashRemovalService.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/RedditTrashRemovalService.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/RedditTrashRemovalService.txt"
   },
   {
     "description": "So you're sitting there reading a newssite, and then you find big banners that try to tell you the exact points in time you're supposed to pray? If you want to feel less stressed and less like a slave of the clock, then this list is for you.",
@@ -15249,8 +15194,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-01T18:42:07",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPrayerTimesList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPrayerTimesList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPrayerTimesList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPrayerTimesList.txt"
   },
   {
     "description": "BEBASID can help open web pages that are blocked by the Indonesian government by using the hosts file.",
@@ -15382,8 +15326,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-21T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiCelebBirthList",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiCelebBirthList",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiCelebBirthList"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiCelebBirthList"
   },
   {
     "description": "While it was admirable that places like GOG, Humble Bundle, and Steam began selling movies and books, their categories for such quickly became a dumping ground for useless indie filler. No one needs three book bundles a month about how to write JavaScript, nor do they need a cashgrab \"documentary\" about bronies. This list is for those who once again want to reclaim such stores in the name of videogames.",
@@ -15399,8 +15342,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-21T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GamestoreMovieRemover.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/GamestoreMovieRemover.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/GamestoreMovieRemover.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/GamestoreMovieRemover.txt"
   },
   {
     "description": "This ad blocker list aims to block mobile ads which includes in-app ads.",
@@ -15496,8 +15438,7 @@
     "syntaxId": 21,
     "updatedDate": "2019-05-11T13:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchEvenMorePureViewingExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TwitchEvenMorePureViewingExperience.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TwitchEvenMorePureViewingExperience.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TwitchEvenMorePureViewingExperience.txt"
   },
   {
     "description": "This list is a proof-of-concept for Nano and uBO only (Not AdGuard), which aims to replace websites' custom cursors with the default OS cursor.",
@@ -15512,8 +15453,7 @@
     "syntaxId": 4,
     "updatedDate": "2019-05-11T13:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Custom%20cursors'%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Custom%20cursors'%20List.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Custom%20cursors'%20List.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Custom%20cursors'%20List.txt"
   },
   {
     "donateUrl": "https://opencollective.com/adnauseam",
@@ -15548,8 +15488,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-05-17T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ExtremelyCondensedList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/ExtremelyCondensedList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ExtremelyCondensedList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ExtremelyCondensedList.txt"
   },
   {
     "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO users should use the regular version instead.",
@@ -15564,8 +15503,7 @@
     "syntaxId": 6,
     "updatedDate": "2019-05-17T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuard.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuard.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuard.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuard.txt"
   },
   {
     "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO and AdGuard users should use the other versions instead.",
@@ -15580,8 +15518,7 @@
     "syntaxId": 38,
     "updatedDate": "2019-05-17T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP.txt"
   },
   {
     "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters.",
@@ -15596,8 +15533,7 @@
     "syntaxId": 19,
     "updatedDate": "2019-05-19T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivoxy.action",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivoxy.action",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivoxy.action"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivoxy.action"
   },
   {
     "description": "This is a slimmer version of \"Dandelion Sprout's Nordic Filters\", intended for users of software tools that doesn't support adblocker syntaxes. It chiefly targets scams and malware on Norwegian or Danish sites, as well as some advert and tracking servers.",
@@ -15612,8 +15548,7 @@
     "syntaxId": 20,
     "updatedDate": "2019-05-19T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersDnsmasq.conf",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersDnsmasq.conf",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersDnsmasq.conf"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersDnsmasq.conf"
   },
   {
     "description": "This is a slimmer version of \"Dandelion Sprout's Nordic Filters\", intended for users of software tools that doesn't support adblocker syntaxes. It chiefly targets scams and malware on Norwegian or Danish sites, as well as some advert and tracking servers.",
@@ -15628,8 +15563,7 @@
     "syntaxId": 23,
     "updatedDate": "2019-05-19T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsDeny.deny",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsDeny.deny",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsDeny.deny"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsDeny.deny"
   },
   {
     "description": "Most anti-malware lists are pretty big and can cover a 5- or 6-digit amount of specific domains. But my list hereby claims to remove more than 25% of all known malware sites with just a 2-digit amount of entries. This is mostly done by blocking top-level domains that have become devastatingly abused by spammers, usually because they allowed for free and uncontrolled domain registrations. There's also additional categories that cover unusual malware and phishing domains that very few other lists seem to cover.",
@@ -15645,8 +15579,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-19T00:21:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareABP.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Alternate%20versions%20Anti-Malware%20List/AntiMalwareABP.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareABP.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareABP.txt"
   },
   {
     "description": "Most anti-malware lists are pretty big and can cover a 5- or 6-digit amount of specific domains. But my list hereby claims to remove more than 25% of all known malware sites with just a 2-digit amount of entries. This is mostly done by blocking top-level domains that have become devastatingly abused by spammers, usually because they allowed for free and uncontrolled domain registrations. There's also additional categories that cover unusual malware and phishing domains that very few other lists seem to cover.",
@@ -15662,8 +15595,7 @@
     "syntaxId": 6,
     "updatedDate": "2019-04-19T00:21:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuard.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuard.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuard.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuard.txt"
   },
   {
     "description": "There's categories that cover unusual malware and phishing domains that very few other lists seem to cover.",
@@ -15679,8 +15611,7 @@
     "syntaxId": 10,
     "updatedDate": "2019-04-19T00:21:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareTPL.tpl",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Alternate%20versions%20Anti-Malware%20List/AntiMalwareTPL.tpl",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareTPL.tpl"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareTPL.tpl"
   },
   {
     "description": "Most anti-malware lists are pretty big and can cover a 5- or 6-digit amount of specific domains. But my list hereby claims to remove more than 25% of all known malware sites with just a 2-digit amount of entries. This is mostly done by blocking top-level domains that have become devastatingly abused by spammers, usually because they allowed for free and uncontrolled domain registrations. There's also additional categories that cover unusual malware and phishing domains that very few other lists seem to cover.",
@@ -15696,8 +15627,7 @@
     "syntaxId": 19,
     "updatedDate": "2019-04-19T00:21:10",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwarePrivoxy.action",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Alternate%20versions%20Anti-Malware%20List/AntiMalwarePrivoxy.action",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwarePrivoxy.action"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwarePrivoxy.action"
   },
   {
     "description": "There's categories that cover unusual malware and phishing domains that very few other lists seem to cover.",
@@ -15712,8 +15642,7 @@
     "syntaxId": 1,
     "updatedDate": "2019-04-21T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt"
   },
   {
     "description": "Are you a non-user of Hangouts, and are tired of seeing the uncloseable Hangouts section on Gmail, and various Hangouts buttons and pages? Then this is the list for you.",
@@ -15728,8 +15657,7 @@
     "syntaxId": 3,
     "updatedDate": "2019-04-21T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Google%20Hangouts'%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-'Google%20Hangouts'%20List.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Google%20Hangouts'%20List.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Google%20Hangouts'%20List.txt"
   },
   {
     "description": "So you're browsing Reddit or Twitch, and you're seeing an interesting info link? Well… about that link… this list will turn links to the biggest YouTube uploads of Rick Astley's «Never Gonna Give You Up» into a bright red colour, thus helping you steer clear of being rickrolled.",
@@ -15744,8 +15672,7 @@
     "syntaxId": 17,
     "updatedDate": "2019-04-21T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RickrollLinkIdentifier.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/RickrollLinkIdentifier.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/RickrollLinkIdentifier.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/RickrollLinkIdentifier.txt"
   },
   {
     "description": "This is a version of \"Dandelion Sprout's Nordic Filters\" for advanced tech users ONLY! It aims to not whitelist any trackers, but at the cost of some web elements being broken, and the presence of page warnings on aggregate/cashback site links.",
@@ -15760,8 +15687,7 @@
     "syntaxId": 4,
     "updatedDate": "2019-06-05T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivacy.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivacy.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivacy.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivacy.txt"
   },
   {
     "description": "AntiSocial Blacklist is an extensive collection of potentially malicious domains. We work hard scouring the internet looking for servers that are trying to impersonate common brands and the companies you do business with. Using our data, we then use our cloud platform to protect vulnerable computer users. You may not spot the IDN characters in iCłoud.com or the zero in Micr0Soft.com - But AntiSocial Blacklist will.",
@@ -15873,8 +15799,7 @@
     "publishedDate": "2019-06-12T00:00:00",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/DailyMotionSimplicity.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/DailyMotionSimplicity.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/DailyMotionSimplicity.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/DailyMotionSimplicity.txt"
   },
   {
     "description": "«Powerpuff Girls», especially the 90's-00's seasons, is a cartoon that taught children such values as beating others senseless, extrajudicial violence, vigilante mob beatings, the expendability of entire neighbourhoods, and discrimination against past offenders. If you too are absolutely embarrassed by ever having watched that show, here's a list for you.",
@@ -15888,8 +15813,7 @@
     "publishedDate": "2019-06-22T00:00:00",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPPGList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPPGList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPPGList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPPGList.txt"
   },
   {
     "description": "Office Online, which is effectively a free lite version of Microsoft Office, was a pretty nice and kind move by Microsoft. However, they seem to think that quick access to Skype from it is essential for project communication, which is less than desirable for those who've moved on to e.g. Discord or MeWe. Here's a list that will make your Office Online experience Skype-free.",
@@ -15903,8 +15827,7 @@
     "publishedDate": "2019-06-22T00:00:00",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Skype%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Anti-Skype%20List.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-Skype%20List.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-Skype%20List.txt"
   },
   {
     "description": "HostsY generated hosts files",
@@ -16192,8 +16115,7 @@
     "publishedDate": "2019-06-28T16:00:00",
     "syntaxId": 17,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Religion%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Dandelion%20Sprout's%20Anti-Religion%20List.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout's%20Anti-Religion%20List.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout's%20Anti-Religion%20List.txt"
   },
   {
     "description": "This is a dual-compatibility list for domains-list tools and uBlock Origin, which intends to target and prevent access to groups and individuals that preach things that are either very strange, very hateful, or that promote economical scams.",
@@ -16207,8 +16129,7 @@
     "publishedDate": "2019-06-28T16:00:00",
     "syntaxId": 48,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPreacherList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPreacherList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPreacherList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPreacherList.txt"
   },
   {
     "description": "This is a somewhat alternate approach to the usual anti-comment-section lists, as this list only removes those comment sections that are filled with exceptionally bad comments.",
@@ -16222,8 +16143,7 @@
     "publishedDate": "2019-06-28T16:00:00",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAwfulCommentsList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAwfulCommentsList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAwfulCommentsList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAwfulCommentsList.txt"
   },
   {
     "description": "This file is useful to unblock some websites that blocked by internet positive or so. You can also say it bypass, it's easy to use.",
@@ -17272,8 +17192,7 @@
     "name": "Dandelion Sprout's AdGuard Home Compilation List",
     "syntaxId": 28,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList.txt"
   },
   {
     "description": "Are you pro-metric and are tired of seeing imperial unites all over the English-language parts of the internet? If so, then here's a list for you.",
@@ -17286,8 +17205,7 @@
     "name": "Imperial Units Remover",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Imperial%20Units%20Remover.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Imperial%20Units%20Remover.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Imperial%20Units%20Remover.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Imperial%20Units%20Remover.txt"
   },
   {
     "description": "Most anti-malware lists are pretty big and can cover a 5- or 6-digit amount of specific domains. But my list hereby claims to remove more than 25% of all known malware sites with just a 2-digit amount of entries. This is mostly done by blocking top-level domains that have become devastatingly abused by spammers, usually because they allowed for free and uncontrolled domain registrations. There's also additional categories that cover unusual malware and phishing domains that very few other lists seem to cover.",
@@ -17301,8 +17219,7 @@
     "name": "Dandelion Sprout's Anti-Malware List (for AdGuard Home)",
     "syntaxId": 28,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt"
   },
   {
     "description": "Hosts file to avoid advertisement display on website.",
@@ -18403,8 +18320,7 @@
     "name": "Remover for Mainstream Tabloid and Alt-Right Sites",
     "syntaxId": 48,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TabloidRemover.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TabloidRemover.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TabloidRemover.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TabloidRemover.txt"
   },
   {
     "description": "Have you ever been searching for rare PC parts, but a lot the sites you visit refuse to tell you the murderous prices they charge unless you sign up as a member with them? Now you won't feel infuriated by it anymore! While this list is designed for «Google Hit Hider by Domain» to remove search results, it can also be used with other domains-list tools if you want more thorough blocking of them.",
@@ -18417,8 +18333,7 @@
     "name": "Anti-'PC component price hiders' List",
     "syntaxId": 48,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPCPriceHiderList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPCPriceHiderList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPCPriceHiderList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPCPriceHiderList.txt"
   },
   {
     "description": "Additional regex list blocking scam and phising Polish sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
@@ -18553,8 +18468,7 @@
     "name": "Anti-Pepe List",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPepeList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiPepeList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPepeList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPepeList.txt"
   },
   {
     "description": "Dark theme for filterlists.com for uBO & AdGuard",
@@ -18637,8 +18551,7 @@
     "syntaxId": 28,
     "updatedDate": "2019-09-15T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt"
   },
   {
     "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO users should use the regular version instead.",
@@ -18653,8 +18566,7 @@
     "syntaxId": 30,
     "updatedDate": "2019-09-15T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPiHole.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPiHole.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPiHole.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPiHole.txt"
   },
   {
     "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO users should use the regular version instead.",
@@ -18669,8 +18581,7 @@
     "syntaxId": 29,
     "updatedDate": "2019-09-15T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersSocks5.list",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersSocks5.list",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersSocks5.list"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersSocks5.list"
   },
   {
     "description": "ad filter list ublock origin",
@@ -18955,8 +18866,7 @@
     "syntaxId": 25,
     "updatedDate": "2019-09-25T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersRPZ.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersRPZ.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersRPZ.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersRPZ.txt"
   },
   {
     "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO users should use the regular version instead.",
@@ -18971,8 +18881,7 @@
     "syntaxId": 24,
     "updatedDate": "2019-09-25T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersUnbound.conf",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersUnbound.conf",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersUnbound.conf"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersUnbound.conf"
   },
   {
     "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO users should use the regular version instead. Note: This list does not actually block any mining-related stuff.",
@@ -18987,8 +18896,7 @@
     "syntaxId": 13,
     "updatedDate": "2019-09-25T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersForMinerBlock.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersForMinerBlock.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersForMinerBlock.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersForMinerBlock.txt"
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
@@ -19180,8 +19088,7 @@
     "name": "Anti-'Cartoon Hipster' List",
     "syntaxId": 21,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiCartoonHipsterList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiCartoonHipsterList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiCartoonHipsterList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiCartoonHipsterList.txt"
   },
   {
     "description": "These are my own additional annoying domains. For use with StevenBlack, may break randomly.",
@@ -19445,8 +19352,7 @@
     "name": "Dandelion Sprout's Norwegian Fan Translations for Untranslatable Websites",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianFanTranslations.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianFanTranslations.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianFanTranslations.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianFanTranslations.txt"
   },
   {
     "description": "Much like there's now lists for AdGuard Home and Pi-hole to block ads on smart-TVs, here's an attempt from me at doing the same for videogame consoles with AdGuard Home. Enjoy.",
@@ -19459,8 +19365,7 @@
     "name": "Game Console Adblock List",
     "syntaxId": 28,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/GameConsoleAdblockList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/GameConsoleAdblockList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/GameConsoleAdblockList.txt"
   },
   {
     "description": "We all hate advertising banners on pages when surfing the web, A proxy such as Squid can used to block these without the need to install any additional software on end users systems. This saves bandwidth as well as protects your privacy from tracking site etc.",
@@ -19639,8 +19544,7 @@
     "name": "Dandelion Sprout's Disallowed Clients for AdGuard Home in Particular",
     "syntaxId": 32,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuardHomeDisallowedIPs.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AdGuardHomeDisallowedIPs.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdGuardHomeDisallowedIPs.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdGuardHomeDisallowedIPs.txt"
   },
   {
     "description": "Twitter is a place full of distractions, strange things, and people you'd want to stay 200km away from at all times. If you wish to focus strictly on the 2% of Twitter that is actually any good nowadays, here's a list for you.",
@@ -19653,8 +19557,7 @@
     "name": "Twitter: Pure Reading Experience",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitterPureReadingExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/TwitterPureReadingExperience.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TwitterPureReadingExperience.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TwitterPureReadingExperience.txt"
   },
   {
     "description": "A merged hosts file from a variety of other lists.",
@@ -19775,8 +19678,7 @@
     "name": "Anti-'Adventure Time' List",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAdventureTimeList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAdventureTimeList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAdventureTimeList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAdventureTimeList.txt"
   },
   {
     "description": "Do you feel unfairly targeted by relatively non-threatening pastes on «Have I Been Pwned»? Perhaps you once used your E-mail address in the actual goddamn E-mail field on 4chan 7 years ago, or you're part of a large E-mail-based DnD group? Or maybe for any other reason? In that case, this list will make Have I Been Pwned largely ignore any paste results for your E-mail address(es).",
@@ -19789,8 +19691,7 @@
     "name": "Have I Been Pwned Paste Remover",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/HaveIBeenPwnedPasteRemover.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/HaveIBeenPwnedPasteRemover.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/HaveIBeenPwnedPasteRemover.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/HaveIBeenPwnedPasteRemover.txt"
   },
   {
     "description": "PornHub is a site full of distractions and things that you are quite literally not into. If you wish to focus on the things there that you really are into, you can use this list.",
@@ -19803,8 +19704,7 @@
     "name": "PornHub: Pure Trail Mix Experience",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/PornHubPureTrailMixExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/PornHubPureTrailMixExperience.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/PornHubPureTrailMixExperience.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/PornHubPureTrailMixExperience.txt"
   },
   {
     "description": "This is a list to remove the kinds of ads that very few well-established international adblocker lists would want to remove, due to many of them not meeting those lists' strict criteria of what an ad actually is. So that's where this list comes into play.",
@@ -19817,8 +19717,7 @@
     "name": "Ad Removal List for Unusual Ads",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdRemovalListForUnusualAds.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AdRemovalListForUnusualAds.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdRemovalListForUnusualAds.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdRemovalListForUnusualAds.txt"
   },
   {
     "description": "Blocks empty leftover boxes.",
@@ -19883,8 +19782,7 @@
     "name": "IP Entries from Adblock Lists",
     "syntaxId": 32,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationListIPs.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationListIPs.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationListIPs.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationListIPs.txt"
   },
   {
     "description": "As someone who lives in Norway, which is not an Amazon core country, I became increasingly annoyed at how they hid away shipping fees from me, and even more annoyed when they barred third-party sellers from shipping abroad. Thus I deleted my Amazon account in protest, and to this day I refuse to make a new one.",
@@ -19897,8 +19795,7 @@
     "name": "Anti-Amazon List for Twitch (Domains version)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiAmazonListForTwitchDomains.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Other%20domains%20versions/AntiAmazonListForTwitchDomains.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiAmazonListForTwitchDomains.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiAmazonListForTwitchDomains.txt"
   },
   {
     "description": "As someone who lives in Norway, which is not an Amazon core country, I became increasingly annoyed at how they hid away shipping fees from me, and even more annoyed when they barred third-party sellers from shipping abroad. Thus I deleted my Amazon account in protest, and to this day I refuse to make a new one.",
@@ -19911,8 +19808,7 @@
     "name": "Anti-Amazon List for Twitch («Hosts» version)",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiAmazonListForTwitchHosts.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Other%20domains%20versions/AntiAmazonListForTwitchHosts.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiAmazonListForTwitchHosts.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiAmazonListForTwitchHosts.txt"
   },
   {
     "description": "Do you feel that Friendship is Magic overstayed its welcome? Here's a list that'll let you keep more of a distance to it.",
@@ -19925,8 +19821,7 @@
     "name": "Anti-FіМ list (Domains version)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiF%25D1%2596%25D0%259C%2520ListDomains.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Other%20domains%20versions/AntiF%25D1%2596%25D0%259C%2520ListDomains.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiF%25D1%2596%25D0%259C%2520ListDomains.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiF%25D1%2596%25D0%259C%2520ListDomains.txt"
   },
   {
     "description": "A lot of trashy \"reviewers\" and \"forums\" seem to have an extremely unhealthy fascination with trashing the same few cartoons over and over for no reason other than group pressure, making a lot of the internet a pretty unhealthy place to discuss and research cartoons on. Here's how to get away from such places.",
@@ -19939,8 +19834,7 @@
     "name": "Anti-'Hivemind cartoon trashing' List",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiHivemindCartoonTrashingList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiHivemindCartoonTrashingList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiHivemindCartoonTrashingList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiHivemindCartoonTrashingList.txt"
   },
   {
     "description": "A lot of trashy \"reviewers\" and \"forums\" seem to have an extremely unhealthy fascination with trashing the same few cartoons over and over for no reason other than group pressure, making a lot of the internet a pretty unhealthy place to discuss and research cartoons on. Here's how to get away from such places.",
@@ -19953,8 +19847,7 @@
     "name": "Anti-'Hivemind cartoon trashing' List (Domains version)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiHivemindCartoonTrashingListDomains.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Other%20domains%20versions/AntiHivemindCartoonTrashingListDomains.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiHivemindCartoonTrashingListDomains.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiHivemindCartoonTrashingListDomains.txt"
   },
   {
     "description": "Steven Universe is a cartoon about a Mary Sue boy tagging along with racist xenophobic aliens to fight other racist xenophobic aliens for no good reason, all of whom are also bad parental figures. Here's a list to get a breather break from it.",
@@ -19967,8 +19860,7 @@
     "name": "Anti-'Steven Universe' List (Domains version)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiStevenUniverseListDomains.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Other%20domains%20versions/AntiStevenUniverseListDomains.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiStevenUniverseListDomains.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiStevenUniverseListDomains.txt"
   },
   {
     "description": "Are you tired of being nagged on by websites, that say \"Log in to read more\"? With this list, you'll be much less nagged on from now own.",
@@ -19981,8 +19873,7 @@
     "name": "Browse websites without logging in (for AdGuard Home)",
     "syntaxId": 47,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInAGH.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInAGH.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInAGH.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInAGH.txt"
   },
   {
     "description": "Are you tired of being nagged on by websites, that say \"Log in to read more\"? With this list, you'll be much less nagged on from now own.",
@@ -19995,8 +19886,7 @@
     "name": "Browse websites without logging in (Domains version)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInDomains.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInDomains.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInDomains.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInDomains.txt"
   },
   {
     "description": "Do you like to browse casually through different Wikia wikis, but are tired of FANDOM promotions, promotions for movies that you don't care about, and narrow article bodies? Then this list will save your day.",
@@ -20009,8 +19899,7 @@
     "name": "Wikia: Pure Browsing Experience (Domains version)",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/WikiaPureBrowsingExperienceDomains.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Other%20domains%20versions/WikiaPureBrowsingExperienceDomains.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/WikiaPureBrowsingExperienceDomains.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/WikiaPureBrowsingExperienceDomains.txt"
   },
   {
     "description": "On the internet, quite a lot of erotic art seems to have been made for people with zero self-confidence whatsoever. And for highly inexplicable reasons, a lot of online netizens seem to deeply crave to become the subjects of (or imposing) slavery, abuse, imprisonment, blatant rape, mauling, squishing, critical infections, death, and brutal death, among other things. If you are a sufficiently functional sentient being that you become physically sick from such notions (which you have all rights to get sick for), this list is how to lift yourself above such things.",
@@ -20023,8 +19912,7 @@
     "name": "Anti-'Overly submissive erotica' List",
     "syntaxId": 21,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiSubmissiveEroticaList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiSubmissiveEroticaList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiSubmissiveEroticaList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiSubmissiveEroticaList.txt"
   },
   {
     "description": "Imgur is an image uploading site that tries far, far too hard to be a meme site. Here's a list that will revert it back to being an image uploading site again.",
@@ -20037,8 +19925,7 @@
     "name": "Imgur: Pure Imagery Experience",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ImgurPureImageryExperience.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/ImgurPureImageryExperience.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ImgurPureImageryExperience.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ImgurPureImageryExperience.txt"
   },
   {
     "description": "AdGuard's official DNS server to remove ads and trackers. Believed to be using \"AdGuard DNS Filter\". Links that didn't fit in the Subscribe button URL texts, include 176.103.130.131 — 2a00:5a60::ad1:0ff — 2a00:5a60::ad2:0ff",
@@ -20075,8 +19962,7 @@
     "name": "Say No to Racism on Twitch",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/SayNoToRacismOnTwitch.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/SayNoToRacismOnTwitch.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/SayNoToRacismOnTwitch.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/SayNoToRacismOnTwitch.txt"
   },
   {
     "description": "This list aims to restore MeWe to its late 2017 state, before public post sharing and the «Pages» function eroded its carefree walled gardens.",
@@ -20089,8 +19975,7 @@
     "name": "MeWe Happy Time Fun Club",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MeWeHappyTimeFunClub.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/MeWeHappyTimeFunClub.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/MeWeHappyTimeFunClub.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/MeWeHappyTimeFunClub.txt"
   },
   {
     "description": "Are you desperate to get some quality time with your brother or dad, who is so much into Pokémon GO that they play it to this day while hacking around from the couch? Here's how to get that quality time back… unless they just switch to 4G instead, in which case you're screwed. May also work against 'Harry Potter: Wizards Unite' and 'Ingress Prime'",
@@ -20103,8 +19988,7 @@
     "name": "Pokémon No-GO Zone",
     "syntaxId": 47,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Pok%C3%A9monNoGOZone.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Pok%C3%A9monNoGOZone.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/Pok%C3%A9monNoGOZone.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/Pok%C3%A9monNoGOZone.txt"
   },
   {
     "description": "Are you tired of having to scroll so much on websites, or you want to keep your eyes on more text and content at once? If so, this list will help you a little extra bit with that.",
@@ -20117,8 +20001,7 @@
     "name": "Empty Padding Remover",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EmptyPaddingRemover.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/EmptyPaddingRemover.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/EmptyPaddingRemover.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/EmptyPaddingRemover.txt"
   },
   {
     "description": "The font situation on many Japanese websites is kind-of absolutely atrocious. They use super-stiff janky fonts resemblant of Windows 95 or Amiga. And even worse, many of the sites also default to the stiff Japanese fonts' atrocious Latin letter types. Here's how to use the sites in a way that is compatible with the 3rd decade of the 21st century.",
@@ -20131,8 +20014,7 @@
     "name": "Japanese Text Softener",
     "syntaxId": 4,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/JapaneseTextSoftener.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/JapaneseTextSoftener.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/JapaneseTextSoftener.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/JapaneseTextSoftener.txt"
   },
   {
     "id": 1992,
@@ -20533,8 +20415,7 @@
     "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (IPv6 «Hosts»)",
     "syntaxId": 36,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsIPv6.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsIPv6.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsIPv6.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsIPv6.txt"
   },
   {
     "description": "A filter that blocks the thumbnails of users that upload junk or stuff in the wrong categories.",
@@ -21186,8 +21067,7 @@
     "name": "GDPR 451 List of Mostly American Websites Who Hate Europe and Privacy Rights",
     "syntaxId": 2,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GDPR%20451%20List.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/GDPR%20451%20List.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/GDPR%20451%20List.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/GDPR%20451%20List.txt"
   },
   {
     "description": "A list that make links to certain websites redirect to the proper .onion pages. For example, clicking on links to nytimes.com would instead lead to nytimes3xbfgragh.onion.",
@@ -21200,8 +21080,7 @@
     "name": "Tor Redirector List (URLRedirector)",
     "syntaxId": 31,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/TorRedirectorList-URLRedirector.json",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Other%20domains%20versions/TorRedirectorList-URLRedirector.json",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/Other%20domains%20versions/TorRedirectorList-URLRedirector.json"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/Other%20domains%20versions/TorRedirectorList-URLRedirector.json"
   },
   {
     "description": "Are you tired of having to scroll so much on websites, or you want to keep your eyes on more text and content at once? If so, this list will help you a little extra bit with that.",
@@ -21214,8 +21093,7 @@
     "name": "Media Player Gradient Remover",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MediaPlayerGradientRemover.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/MediaPlayerGradientRemover.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/MediaPlayerGradientRemover.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/MediaPlayerGradientRemover.txt"
   },
   {
     "homeUrl": "https://github.com/mediumkreation/IndianList",
@@ -21638,8 +21516,7 @@
     "name": "IDN Homograph Attack Protection - Complete Blockage",
     "syntaxId": 28,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Special%20security%20lists/IDNHomographProtectionTotal.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Special%20security%20lists/IDNHomographProtectionTotal.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/IDNHomographProtectionTotal.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/IDNHomographProtectionTotal.txt"
   },
   {
     "description": "One of many possible ways for malware to try to enter your computers and phones, is through substituting some US Latin letters with lookalike letters from other alphabets and scripts. For instance, most humans can't easily tell A and А apart (except when using certain fonts), but computers can instantly tell the former is Latin and the latter is Cyrillic, and adresses with them are treated as different. However, ALL use of non-US letters in URLs will be treated as 'xn--[random letters]' by HTML-based tools, making it relatively easy to block, which this list will do for you.",
@@ -21652,8 +21529,7 @@
     "name": "IDN Homograph Attack Protection - Does Not Block Non-Latin TLDs",
     "syntaxId": 28,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Special%20security%20lists/IDNHomographProtection-USLatinTLDsOnly.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/Special%20security%20lists/IDNHomographProtection-USLatinTLDsOnly.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/IDNHomographProtection-USLatinTLDsOnly.txt.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/IDNHomographProtection-USLatinTLDsOnly.txt.txt"
   },
   {
     "description": "You'd think that a country's biggest national newspaper would stick to news and newspaper stuff, and not try to offer escort services, massage services, sex toys, sex models, pinup models, sex party stories, big asses, masochism with Nazi overtones, pornstars, porn videos, porn sites, Playboy models, swinger clubs, brothels, or strip clubs. Ekstra Bladet didn't catch that memo. So here's a list that'll keep that site focused on actual newspaper content.",
@@ -21666,8 +21542,7 @@
     "name": "Ekstra Bladet Erotic Content Remover",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EkstraBladetEroticContentRemover.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/EkstraBladetEroticContentRemover.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/EkstraBladetEroticContentRemover.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/EkstraBladetEroticContentRemover.txt"
   },
   {
     "description": "Malware, phishing and scam domain block list. This is a bleeding-edge list fed by the tens of scam emails coming to my inbox every day, and will serve as a temporary countermeasure until these domains are added to Safe Browsing.",
@@ -21724,8 +21599,7 @@
     "name": "Undertale Remover for SoundCloud",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/UndertaleRemoverForSoundCloud.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/UndertaleRemoverForSoundCloud.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/UndertaleRemoverForSoundCloud.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/UndertaleRemoverForSoundCloud.txt"
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
@@ -22389,8 +22263,7 @@
     "name": "Anti-'Anthro combat-equipment gacha waifu' List",
     "syntaxId": 3,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAnthroCombatWaifuList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiAnthroCombatWaifuList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/AntiAnthroCombatWaifuList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/AntiAnthroCombatWaifuList.txt"
   },
   {
     "description": "Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing Adguard Adblocker Extension.",
@@ -23106,8 +22979,7 @@
     "publishedDate": "2020-05-28T00:00:00",
     "syntaxId": 38,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Inclusion.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Inclusion.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Inclusion.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Inclusion.txt"
   },
   {
     "description": "I have been of the ideas that humans should respect each other, help each other and base their activities on actual facts. Sadly, several hundred million internetizens out there did not catch that memo. This list aims to remove such disruptive, hateful and bewilderingly aggressive factors from certain crucial parts of the internet.",
@@ -23121,8 +22993,7 @@
     "publishedDate": "2020-05-31T00:00:00",
     "syntaxId": 21,
     "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiRacismList.txt",
-    "viewUrlMirror1": "https://repo.or.cz/FilterMirrorRepo.git/blob_plain/refs/heads/master:/AntiRacismList.txt",
-    "viewUrlMirror2": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiRacismList.txt"
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiRacismList.txt"
   },
   {
     "description": "Block access to 3p local LAN resourcess, experimental, incomplete.",
@@ -23684,5 +23555,37 @@
     "name": "Bobz Entertainment",
     "syntaxId": 22,
     "viewUrl": "66.66.23.98"
+  },
+  {
+    "description": "One of AdGuard DNS Filter's many source files. This one contains entries for domains not covered by any of its other source lists.",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardSDNS",
+    "id": 2342,
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardSDNS/issues",
+    "licenseId": 4,
+    "name": "AdGuard DNS Filter - Additional rules",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 47,
+    "viewUrl": "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt"
+  },
+  {
+    "description": "One of AdGuard DNS Filter's many source files. This one contains whitelistings added by AdGuard themselves.",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardSDNS",
+    "id": 2343,
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardSDNS/issues",
+    "licenseId": 4,
+    "name": "AdGuard DNS Filter - Exception rules",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
+    "syntaxId": 47,
+    "viewUrl": "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exceptions.txt"
+  },
+  {
+    "description": "EFF generates this whitelist by scanning the Tranco list of one million domains to see if a compliant Do Not Track policy is posted at /.well-known/dnt-policy.txt on each. EFF has no way of verifying whether the domain actually complies with the policy. The whitelist is updated with each scan.",
+    "emailAddress": "dnt-policy@eff.org",
+    "homeUrl": "https://www.eff.org/dnt-policy",
+    "id": 2344,
+    "licenseId": 16,
+    "name": "EFF DNT Policy Whitelist",
+    "syntaxId": 4,
+    "viewUrl": "https://www.eff.org/files/effdntlist.txt"
   }
 ]
