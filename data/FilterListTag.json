@@ -11734,5 +11734,17 @@
   {
     "filterListId": 2341,
     "tagId": 12
+  },
+  {
+    "filterListId": 2342,
+    "tagId": 3
+  },
+  {
+    "filterListId": 2343,
+    "tagId": 10
+  },
+  {
+    "filterListId": 2344,
+    "tagId": 10
   }
 ]
