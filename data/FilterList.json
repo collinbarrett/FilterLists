@@ -2320,7 +2320,7 @@
     "syntaxId": 28,
     "updatedDate": "2010-05-18T00:00:00",
     "viewUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Facebook%20Privacy%20List.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Facebook%20Privacy%20List.txt"
   },
   {
     "description": "Block only news feed annoyances.",
@@ -2836,7 +2836,7 @@
     "syntaxId": 3,
     "updatedDate": "2014-08-16T00:00:00",
     "viewUrl": "http://adblock.dajbych.net/adblock.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Czech%20Filters%20for%20Adblock%20Plus",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Czech%20Filters%20for%20Adblock%20Plus"
   },
   {
     "description": "Corset is a subscription filter to block intruding ads on sites using Korean.",
@@ -7352,7 +7352,7 @@
     "name": "Liste DZ",
     "syntaxId": 3,
     "updatedDate": "2019-01-29T00:25:10",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Liste%20DZ.txt",
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Liste%20DZ.txt"
   },
   {
     "description": "General icelandic ad and blocking subscription",
@@ -7364,7 +7364,7 @@
     "name": "Snaevar87's Icelandic filter",
     "syntaxId": 3,
     "updatedDate": "2014-03-11T00:00:00",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Snaevar87's%20Icelandic%20filter.txt",
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Snaevar87's%20Icelandic%20filter.txt"
   },
   {
     "descriptionSourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/TamilFriends%20List.txt",
@@ -7376,7 +7376,7 @@
     "name": "TamilFriends List",
     "syntaxId": 3,
     "updatedDate": "2010-07-30T00:00:00",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/TamilFriends%20List.txt",
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/TamilFriends%20List.txt"
   },
   {
     "description": "A combined version of the filterlist RU AdList against advertising, and an experimental list of cosmetic CSS style fixes. At the moment it only works normally in uBlock Origin.",
@@ -7489,7 +7489,7 @@
     "publishedDate": "2018-10-02T19:32:03",
     "syntaxId": 3,
     "updatedDate": "2018-10-02T19:32:03",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist.txt",
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist.txt"
   },
   {
     "homeUrl": "https://code.google.com/archive/p/adblocking-openfilter-jp/",
@@ -7498,7 +7498,7 @@
     "name": "Adblocking Open Filter JP",
     "syntaxId": 3,
     "updatedDate": "2012-09-16T00:00:00",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Adblocking%20Open%20Filter%20JP",
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Adblocking%20Open%20Filter%20JP"
   },
   {
     "description": "Do you already have a favourite browser or PDF reader? Are you tired of seeing \"Try out [some browser] now!\" on some websites? Then this is a list is for you!",
