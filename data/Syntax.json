@@ -214,6 +214,7 @@
     "name": "Domains for whitelisting"
   },
   {
+    "definitionUrl": "https://github.com/gorhill/uMatrix/wiki/Ruleset-recipes",
     "id": 51,
     "name": "uMatrix ruleset recipe"
   },
