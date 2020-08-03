@@ -3345,7 +3345,7 @@
     "licenseId": 2,
     "name": "Commonly Whitelisted Domains",
     "publishedDate": "2018-02-22T18:09:03",
-    "syntaxId": 2,
+    "syntaxId": 50,
     "updatedDate": "2019-01-16T08:28:38",
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt"
   },
@@ -3359,7 +3359,7 @@
     "licenseId": 2,
     "name": "Commonly Whitelisted Domains (Referral Sites)",
     "publishedDate": "2018-02-22T18:09:38",
-    "syntaxId": 2,
+    "syntaxId": 50,
     "updatedDate": "2019-01-29T15:36:43",
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt"
   },
@@ -3373,7 +3373,7 @@
     "licenseId": 2,
     "name": "Commonly Whitelisted Domains (Optional)",
     "publishedDate": "2018-02-22T18:10:09",
-    "syntaxId": 2,
+    "syntaxId": 50,
     "updatedDate": "2019-01-29T15:28:11",
     "viewUrl": "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt"
   },
@@ -4171,7 +4171,7 @@
     "licenseId": 7,
     "name": "DNSlock-PiHole-whitelist",
     "publishedDate": "2018-03-11T00:00:00",
-    "syntaxId": 2,
+    "syntaxId": 50,
     "updatedDate": "2019-03-15T04:50:51",
     "viewUrl": "https://raw.githubusercontent.com/raghavdua1995/DNSlock-PiHole-whitelist/master/whitelist.list"
   },
@@ -7562,7 +7562,7 @@
     "licenseId": 4,
     "name": "uMatrix - Rulesets for English websites",
     "publishedDate": "2018-01-29T19:26:53",
-    "syntaxId": 7,
+    "syntaxId": 51,
     "updatedDate": "2018-10-28T22:23:38",
     "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/recipes/recipes_en.txt"
   },
@@ -16203,7 +16203,7 @@
     "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
     "licenseId": 13,
     "name": "Ruleset for Thai sites",
-    "syntaxId": 7,
+    "syntaxId": 51,
     "updatedDate": "2019-03-13T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/ruleset/recipes_th.txt",
     "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/ruleset/recipes_th.txt"
@@ -16216,7 +16216,7 @@
     "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues",
     "licenseId": 13,
     "name": "Kowith's Self Custom Ruleset",
-    "syntaxId": 7,
+    "syntaxId": 51,
     "updatedDate": "2019-03-13T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/ruleset/recipes_custom.txt",
     "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/ruleset/recipes_custom.txt"
@@ -16227,7 +16227,7 @@
     "issuesUrl": "https://github.com/migueldemoura/ublock-umatrix-rulesets/issues",
     "licenseId": 8,
     "name": "migueldemoura's uMatrix Recipes",
-    "syntaxId": 7,
+    "syntaxId": 51,
     "viewUrl": "https://raw.githubusercontent.com/migueldemoura/ublock-umatrix-rulesets/master/uMatrix/recipes"
   },
   {
@@ -16289,8 +16289,8 @@
     "id": 1651,
     "issuesUrl": "https://github.com/themagicteeth/umatrix-recipes/issues",
     "licenseId": 5,
-    "name": "thematrixteeth's uMatrix Recipes",
-    "syntaxId": 7,
+    "name": "themagicteeth's uMatrix Recipes",
+    "syntaxId": 51,
     "updatedDate": "2018-03-05T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/themagicteeth/umatrix-recipes/master/recipes.txt"
   },
@@ -16320,7 +16320,7 @@
     "issuesUrl": "https://github.com/invasy/umatrix-ruleset/issues",
     "licenseId": 5,
     "name": "Vasiliy Polyakov's Custom Ruleset Recipes",
-    "syntaxId": 7,
+    "syntaxId": 51,
     "updatedDate": "2019-06-16T00:00:00",
     "viewUrl": "https://raw.githubusercontent.com/invasy/umatrix-ruleset/master/ruleset.txt"
   },
@@ -17474,9 +17474,9 @@
     "id": 1754,
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 2,
-    "name": "Energized Spark Protection (Adblock Plus)",
+    "name": "Energized Spark Protection (Adblockers)",
     "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 28,
+    "syntaxId": 47,
     "viewUrl": "https://block.energized.pro/spark/formats/filter"
   },
   {
@@ -17490,9 +17490,9 @@
     "id": 1755,
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 2,
-    "name": "Energized Blu Go Protection (Adblock Plus)",
+    "name": "Energized Blu Go Protection (Adblockers)",
     "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 28,
+    "syntaxId": 47,
     "viewUrl": "https://block.energized.pro/bluGo/formats/filter"
   },
   {
@@ -17506,9 +17506,9 @@
     "id": 1756,
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 2,
-    "name": "Energized Blu Protection (Adblock Plus)",
+    "name": "Energized Blu Protection (Adblockers)",
     "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 28,
+    "syntaxId": 47,
     "viewUrl": "https://block.energized.pro/blu/formats/filter"
   },
   {
@@ -17522,9 +17522,9 @@
     "id": 1757,
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 2,
-    "name": "Energized Basic Protection (Adblock Plus)",
+    "name": "Energized Basic Protection (Adblockers)",
     "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 28,
+    "syntaxId": 47,
     "viewUrl": "https://block.energized.pro/basic/formats/filter"
   },
   {
@@ -17538,9 +17538,9 @@
     "id": 1758,
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 2,
-    "name": "Energized Porn Protection (Adblock Plus)",
+    "name": "Energized Porn Protection (Adblockers)",
     "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 28,
+    "syntaxId": 47,
     "viewUrl": "https://block.energized.pro/porn/formats/filter"
   },
   {
@@ -17554,9 +17554,9 @@
     "id": 1759,
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 2,
-    "name": "Energized Ultimate Protection (Adblock Plus)",
+    "name": "Energized Ultimate Protection (Adblockers)",
     "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 28,
+    "syntaxId": 47,
     "viewUrl": "https://block.energized.pro/ultimate/formats/filter"
   },
   {
@@ -17570,9 +17570,9 @@
     "id": 1760,
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 2,
-    "name": "Energized Unified Protection (Adblock Plus)",
+    "name": "Energized Unified Protection (Adblockers)",
     "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 28,
+    "syntaxId": 47,
     "viewUrl": "https://block.energized.pro/unified/formats/filter"
   },
   {
@@ -17586,9 +17586,9 @@
     "id": 1761,
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 2,
-    "name": "Energized Xtreme Extension (Adblock Plus)",
+    "name": "Energized Xtreme Extension (Adblockers)",
     "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 28,
+    "syntaxId": 47,
     "viewUrl": "https://block.energized.pro/extensions/xtreme/formats/filter"
   },
   {
@@ -17602,9 +17602,9 @@
     "id": 1762,
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 2,
-    "name": "Energized Social Extension (Adblock Plus)",
+    "name": "Energized Social Extension (Adblockers)",
     "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 28,
+    "syntaxId": 47,
     "viewUrl": "https://block.energized.pro/extensions/social/formats/filter"
   },
   {
@@ -17618,9 +17618,9 @@
     "id": 1763,
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 2,
-    "name": "Energized Porn Lite Extension (Adblock Plus)",
+    "name": "Energized Porn Lite Extension (Adblockers)",
     "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 28,
+    "syntaxId": 47,
     "viewUrl": "https://block.energized.pro/extensions/porn-lite/formats/filter"
   },
   {
@@ -17634,9 +17634,9 @@
     "id": 1764,
     "issuesUrl": "https://github.com/EnergizedProtection/block/issues",
     "licenseId": 2,
-    "name": "Energized Regional Extension (Adblock Plus)",
+    "name": "Energized Regional Extension (Adblockers)",
     "submissionUrl": "https://app.energized.pro",
-    "syntaxId": 28,
+    "syntaxId": 47,
     "viewUrl": "https://block.energized.pro/extensions/regional/formats/filter"
   },
   {
@@ -18841,17 +18841,8 @@
     "id": 1873,
     "licenseId": 4,
     "name": "BlockConvert (Whitelist domains)",
-    "syntaxId": 2,
+    "syntaxId": 50,
     "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/whitelist_domains.txt"
-  },
-  {
-    "description": "Malware, advert and tracking blacklist",
-    "homeUrl": "https://github.com/mkb2091/blockconvert",
-    "id": 1874,
-    "licenseId": 4,
-    "name": "BlockConvert (Whitelist adblockers)",
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/whitelist_adblock.txt"
   },
   {
     "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO users should use the regular version instead.",
@@ -19468,7 +19459,7 @@
   {
     "id": 1943,
     "licenseId": 19,
-    "name": "B Tasker (Adblock Plus)",
+    "name": "B Tasker (Adblockers)",
     "syntaxId": 28,
     "viewUrl": "https://www.bentasker.co.uk/adblock/adblock_compiled.txt"
   },
@@ -19566,7 +19557,7 @@
     "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
     "id": 1953,
     "licenseId": 35,
-    "name": "1Hosts Complete (Adblock Plus)",
+    "name": "1Hosts Complete (Adblockers)",
     "syntaxId": 28,
     "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/complete/adblock.txt"
   },
@@ -19577,7 +19568,7 @@
     "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
     "id": 1954,
     "licenseId": 35,
-    "name": "1Hosts Mini (Adblock Plus)",
+    "name": "1Hosts Mini (Adblockers)",
     "syntaxId": 28,
     "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/adblock.txt"
   },
@@ -19588,7 +19579,7 @@
     "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
     "id": 1955,
     "licenseId": 35,
-    "name": "1Hosts Pro (Adblock Plus)",
+    "name": "1Hosts Pro (Adblockers)",
     "syntaxId": 28,
     "viewUrl": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/adblock.txt"
   },
@@ -23587,5 +23578,127 @@
     "name": "EFF DNT Policy Whitelist",
     "syntaxId": 4,
     "viewUrl": "https://www.eff.org/files/effdntlist.txt"
+  },
+  {
+    "chatUrl": "https://t.me/EnergizedProtection",
+    "description": "This repository is basically a collection of whitelisted domains that are being used in Energized Protection block to keep the legit domains unblocked. Obviously without compromising privacy and security!",
+    "descriptionSourceUrl": "https://github.com/EnergizedProtection/unblock#energized-protection---unblock-",
+    "donateUrl": "https://energized.pro/support",
+    "emailAddress": "mail@energized.pro",
+    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
+    "homeUrl": "https://energized.pro",
+    "id": 2345,
+    "issuesUrl": "https://github.com/EnergizedProtection/unblock/issues",
+    "licenseId": 2,
+    "name": "Energized Protection - Unblock (Adblockers)",
+    "submissionUrl": "https://app.energized.pro",
+    "syntaxId": 47,
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/filter"
+  },
+  {
+    "chatUrl": "https://t.me/EnergizedProtection",
+    "description": "This repository is basically a collection of whitelisted domains that are being used in Energized Protection block to keep the legit domains unblocked. Obviously without compromising privacy and security!",
+    "descriptionSourceUrl": "https://github.com/EnergizedProtection/unblock#energized-protection---unblock-",
+    "donateUrl": "https://energized.pro/support",
+    "emailAddress": "mail@energized.pro",
+    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
+    "homeUrl": "https://energized.pro",
+    "id": 2346,
+    "issuesUrl": "https://github.com/EnergizedProtection/unblock/issues",
+    "licenseId": 2,
+    "name": "Energized Protection - Unblock (Domains)",
+    "submissionUrl": "https://app.energized.pro",
+    "syntaxId": 50,
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/domains.txt"
+  },
+  {
+    "chatUrl": "https://t.me/EnergizedProtection",
+    "description": "This repository is basically a collection of whitelisted domains that are being used in Energized Protection block to keep the legit domains unblocked. Obviously without compromising privacy and security!",
+    "descriptionSourceUrl": "https://github.com/EnergizedProtection/unblock#energized-protection---unblock-",
+    "donateUrl": "https://energized.pro/support",
+    "emailAddress": "mail@energized.pro",
+    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
+    "homeUrl": "https://energized.pro",
+    "id": 2347,
+    "issuesUrl": "https://github.com/EnergizedProtection/unblock/issues",
+    "licenseId": 2,
+    "name": "Energized Protection - Unblock (dnsmasq IPv4)",
+    "submissionUrl": "https://app.energized.pro",
+    "syntaxId": 20,
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/dnsmasq.conf"
+  },
+  {
+    "chatUrl": "https://t.me/EnergizedProtection",
+    "description": "This repository is basically a collection of whitelisted domains that are being used in Energized Protection block to keep the legit domains unblocked. Obviously without compromising privacy and security!",
+    "descriptionSourceUrl": "https://github.com/EnergizedProtection/unblock#energized-protection---unblock-",
+    "donateUrl": "https://energized.pro/support",
+    "emailAddress": "mail@energized.pro",
+    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
+    "homeUrl": "https://energized.pro",
+    "id": 2348,
+    "issuesUrl": "https://github.com/EnergizedProtection/unblock/issues",
+    "licenseId": 2,
+    "name": "Energized Protection - Unblock (dnsmasq IPv6)",
+    "submissionUrl": "https://app.energized.pro",
+    "syntaxId": 20,
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/dnsmasq-ipv6.conf"
+  },
+  {
+    "chatUrl": "https://t.me/EnergizedProtection",
+    "description": "This repository is basically a collection of whitelisted domains that are being used in Energized Protection block to keep the legit domains unblocked. Obviously without compromising privacy and security!",
+    "descriptionSourceUrl": "https://github.com/EnergizedProtection/unblock#energized-protection---unblock-",
+    "donateUrl": "https://energized.pro/support",
+    "emailAddress": "mail@energized.pro",
+    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
+    "homeUrl": "https://energized.pro",
+    "id": 2349,
+    "issuesUrl": "https://github.com/EnergizedProtection/unblock/issues",
+    "licenseId": 2,
+    "name": "Energized Protection - Unblock (Unbound)",
+    "submissionUrl": "https://app.energized.pro",
+    "syntaxId": 24,
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/unbound.conf"
+  },
+  {
+    "chatUrl": "https://t.me/EnergizedProtection",
+    "description": "This repository is basically a collection of whitelisted domains that are being used in Energized Protection block to keep the legit domains unblocked. Obviously without compromising privacy and security!",
+    "descriptionSourceUrl": "https://github.com/EnergizedProtection/unblock#energized-protection---unblock-",
+    "donateUrl": "https://energized.pro/support",
+    "emailAddress": "mail@energized.pro",
+    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
+    "homeUrl": "https://energized.pro",
+    "id": 2350,
+    "issuesUrl": "https://github.com/EnergizedProtection/unblock/issues",
+    "licenseId": 2,
+    "name": "Energized Protection - Unblock (RPZ)",
+    "submissionUrl": "https://app.energized.pro",
+    "syntaxId": 24,
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/unbound.conf"
+  },
+  {
+    "chatUrl": "https://t.me/EnergizedProtection",
+    "description": "This repository is basically a collection of whitelisted domains that are being used in Energized Protection block to keep the legit domains unblocked. Obviously without compromising privacy and security!",
+    "descriptionSourceUrl": "https://github.com/EnergizedProtection/unblock#energized-protection---unblock-",
+    "donateUrl": "https://energized.pro/support",
+    "emailAddress": "mail@energized.pro",
+    "forumUrl": "https://forum.xda-developers.com/android/software-hacking/energized-protection-ad-porn-malware-t3803773",
+    "homeUrl": "https://energized.pro",
+    "id": 2351,
+    "issuesUrl": "https://github.com/EnergizedProtection/unblock/issues",
+    "licenseId": 2,
+    "name": "Energized Protection - Unblock (personalDNSfilter)",
+    "submissionUrl": "https://app.energized.pro",
+    "syntaxId": 52,
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/pdnsf.txt"
+  },
+  {
+    "emailAddress": "admin@smartadblock.co.uk",
+    "forumUrl": "https://www.reddit.com/r/SmartAdBlock/",
+    "homeUrl": "https://www.smartadblock.co.uk/",
+    "id": 2352,
+    "licenseId": 4,
+    "name": "SmartAdBlock Filter",
+    "syntaxId": 6,
+    "viewUrl": "https://www.smartadblock.co.uk/filters/sabfilter.txt"
   }
 ]
