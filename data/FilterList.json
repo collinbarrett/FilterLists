@@ -23673,7 +23673,7 @@
     "name": "Energized Protection - Unblock (RPZ)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 25,
-    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/unbound.conf"
+    "viewUrl": "https://raw.githubusercontent.com/EnergizedProtection/unblock/master/basic/formats/rpz.txt"
   },
   {
     "chatUrl": "https://t.me/EnergizedProtection",
