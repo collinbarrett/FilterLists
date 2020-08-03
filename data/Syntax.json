@@ -26,7 +26,7 @@
   {
     "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide",
     "id": 7,
-    "name": "uMatrix / uBlock Origin Dynamic"
+    "name": "uMatrix/uBO lined dynamic rules"
   },
   {
     "id": 8,
@@ -208,5 +208,17 @@
   {
     "id": 49,
     "name": "SmartDNS"
+  },
+  {
+    "id": 50,
+    "name": "Domains for whitelisting"
+  },
+  {
+    "id": 51,
+    "name": "uMatrix ruleset recipe"
+  },
+  {
+    "id": 52,
+    "name": "personalDNSfilter whitelisting"
   }
 ]
