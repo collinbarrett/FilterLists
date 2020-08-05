@@ -221,5 +221,10 @@
   {
     "id": 52,
     "name": "personalDNSfilter whitelisting"
+  },
+  {
+    "definitionUrl": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide",
+    "id": 53,
+    "name": "uBO lined dynamic rules w/ noop"
   }
 ]
