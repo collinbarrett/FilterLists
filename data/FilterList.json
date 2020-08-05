@@ -12335,8 +12335,8 @@
     "licenseId": 2,
     "name": "NeoHosts Basic",
     "syntaxId": 1,
-    "updatedDate": "2019-03-21T02:50:10",
-    "viewUrl": "https://hosts.nfz.moe/basic/hosts"
+    "viewUrl": "https://hosts.nfz.moe/basic/hosts",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/neoFelhz/neohosts/gh-pages/basic/hosts"
   },
   {
     "description": "Stop Forum Spam is a free service that records reports of spam on forums, blogs and wikis to name a few. All these records are then made available to you search and view but most importantly, to access in an automated way to block suspected spammers before they can get in the front door. Everyone is familiar with more traditional 'solve the word' systems to prevent abuse, Stop Forum Spam is a targeted and specialsed solution to help stop abuse of your website.",
@@ -15202,7 +15202,7 @@
     "donateUrl": "https://github.com/bebasid/bebasid/#donasi-kami",
     "homeUrl": "https://github.com/bebasid/bebasid/",
     "id": 1555,
-    "issuesUrl": "https://github.com/bebasid/bebasid//issues",
+    "issuesUrl": "https://github.com/bebasid/bebasid/issues",
     "licenseId": 2,
     "name": "BEBASID",
     "publishedDate": "2017-06-23T13:44:09",
@@ -16904,7 +16904,7 @@
     "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts.",
     "homeUrl": "https://github.com/tiuxo/hosts/",
     "id": 1707,
-    "issuesUrl": "https://github.com/tiuxo/hosts//issues",
+    "issuesUrl": "https://github.com/tiuxo/hosts/issues",
     "licenseId": 24,
     "name": "hosts-jp Ads",
     "syntaxId": 1,
@@ -16914,7 +16914,7 @@
     "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts.",
     "homeUrl": "https://github.com/tiuxo/hosts/",
     "id": 1708,
-    "issuesUrl": "https://github.com/tiuxo/hosts//issues",
+    "issuesUrl": "https://github.com/tiuxo/hosts/issues",
     "licenseId": 24,
     "name": "hosts-jp Porn",
     "syntaxId": 1,
@@ -16924,7 +16924,7 @@
     "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts.",
     "homeUrl": "https://github.com/tiuxo/hosts/",
     "id": 1709,
-    "issuesUrl": "https://github.com/tiuxo/hosts//issues",
+    "issuesUrl": "https://github.com/tiuxo/hosts/issues",
     "licenseId": 24,
     "name": "hosts-jp Social",
     "syntaxId": 1,
@@ -16949,7 +16949,7 @@
   {
     "homeUrl": "https://github.com/abc45628/hosts/",
     "id": 1712,
-    "issuesUrl": "https://github.com/abc45628/hosts//issues",
+    "issuesUrl": "https://github.com/abc45628/hosts/issues",
     "licenseId": 5,
     "name": "abc45628 Hosts",
     "syntaxId": 36,
@@ -16958,16 +16958,16 @@
   {
     "homeUrl": "https://github.com/jdlingyu/ad-wars/",
     "id": 1713,
-    "issuesUrl": "https://github.com/jdlingyu/ad-wars//issues",
+    "issuesUrl": "https://github.com/jdlingyu/ad-wars/issues",
     "licenseId": 5,
-    "name": "Ad Wars Hosts",
+    "name": "Ad Wars (Hosts)",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts"
   },
   {
     "homeUrl": "https://github.com/XionKzn/PiHole-Lists/",
     "id": 1714,
-    "issuesUrl": "https://github.com/XionKzn/PiHole-Lists//issues",
+    "issuesUrl": "https://github.com/XionKzn/PiHole-Lists/issues",
     "licenseId": 5,
     "name": "PiHole Lists - Quad9",
     "syntaxId": 2,
@@ -16976,7 +16976,7 @@
   {
     "homeUrl": "https://github.com/XionKzn/PiHole-Lists/",
     "id": 1715,
-    "issuesUrl": "https://github.com/XionKzn/PiHole-Lists//issues",
+    "issuesUrl": "https://github.com/XionKzn/PiHole-Lists/issues",
     "licenseId": 5,
     "name": "PiHole Lists - Yahoo Ad Servers",
     "syntaxId": 2,
@@ -16985,7 +16985,7 @@
   {
     "homeUrl": "https://github.com/XionKzn/PiHole-Lists/",
     "id": 1716,
-    "issuesUrl": "https://github.com/XionKzn/PiHole-Lists//issues",
+    "issuesUrl": "https://github.com/XionKzn/PiHole-Lists/issues",
     "licenseId": 5,
     "name": "PiHole Lists - Spyware",
     "syntaxId": 2,
@@ -16994,7 +16994,7 @@
   {
     "homeUrl": "https://github.com/XionKzn/PiHole-Lists/",
     "id": 1717,
-    "issuesUrl": "https://github.com/XionKzn/PiHole-Lists//issues",
+    "issuesUrl": "https://github.com/XionKzn/PiHole-Lists/issues",
     "licenseId": 5,
     "name": "PiHole Lists - Cerber Ransomware",
     "syntaxId": 2,
@@ -17003,7 +17003,7 @@
   {
     "homeUrl": "https://github.com/XionKzn/PiHole-Lists/",
     "id": 1718,
-    "issuesUrl": "https://github.com/XionKzn/PiHole-Lists//issues",
+    "issuesUrl": "https://github.com/XionKzn/PiHole-Lists/issues",
     "licenseId": 5,
     "name": "PiHole Lists - Blocklist",
     "syntaxId": 2,
@@ -17014,7 +17014,7 @@
     "donateUrl": "https://blog.kurzgedanke.me/donate/",
     "homeUrl": "https://github.com/KurzGedanke/kurzBlock/",
     "id": 1719,
-    "issuesUrl": "https://github.com/KurzGedanke/kurzBlock//issues",
+    "issuesUrl": "https://github.com/KurzGedanke/kurzBlock/issues",
     "licenseId": 2,
     "name": "kurzBlock",
     "syntaxId": 2,
@@ -17024,7 +17024,7 @@
     "description": "Blocklist for suspicious websites involved with possible tracking, spam, or malware; meant to supplement mainstream blocklists.",
     "homeUrl": "https://github.com/VernonStow/Filterlist/",
     "id": 1720,
-    "issuesUrl": "https://github.com/VernonStow/Filterlist//issues",
+    "issuesUrl": "https://github.com/VernonStow/Filterlist/issues",
     "licenseId": 5,
     "name": "Grayware Filterlist",
     "syntaxId": 4,
@@ -17034,7 +17034,7 @@
     "description": "My personal blocklist of iOS tracking, telemetry, and advertising domains.",
     "homeUrl": "https://github.com/jakejarvis/ios-trackers/",
     "id": 1721,
-    "issuesUrl": "https://github.com/jakejarvis/ios-trackers//issues",
+    "issuesUrl": "https://github.com/jakejarvis/ios-trackers/issues",
     "licenseId": 2,
     "name": "iOS Tracker Blocklist",
     "syntaxId": 2,
@@ -17054,7 +17054,7 @@
     "description": "Ads and Tracker which other lists may not found",
     "homeUrl": "https://github.com/pirat28/IHateTracker/",
     "id": 1723,
-    "issuesUrl": "https://github.com/pirat28/IHateTracker//issues",
+    "issuesUrl": "https://github.com/pirat28/IHateTracker/issues",
     "licenseId": 2,
     "name": "I Hate Tracker",
     "syntaxId": 2,
@@ -17063,7 +17063,7 @@
   {
     "homeUrl": "https://github.com/parseword/nolovia/",
     "id": 1724,
-    "issuesUrl": "https://github.com/parseword/nolovia//issues",
+    "issuesUrl": "https://github.com/parseword/nolovia/issues",
     "licenseId": 5,
     "name": "Nolovia Supplemental Bad Host Index blacklist file",
     "syntaxId": 2,
@@ -17073,7 +17073,7 @@
     "description": "The following servers have been identified as part of various state-sponsored malware campaigns.",
     "homeUrl": "https://github.com/parseword/nolovia/",
     "id": 1725,
-    "issuesUrl": "https://github.com/parseword/nolovia//issues",
+    "issuesUrl": "https://github.com/parseword/nolovia/issues",
     "licenseId": 5,
     "name": "Nolovia state-sponsored malware blacklist file",
     "syntaxId": 2,
@@ -17083,7 +17083,7 @@
     "description": "This filter disables 'dodgy' sites My Way!",
     "homeUrl": "https://github.com/callmenemo491/DodgySiteBlocker/",
     "id": 1726,
-    "issuesUrl": "https://github.com/callmenemo491/DodgySiteBlocker//issues",
+    "issuesUrl": "https://github.com/callmenemo491/DodgySiteBlocker/issues",
     "licenseId": 2,
     "name": "DodgySiteBlocker",
     "syntaxId": 3,
@@ -17093,7 +17093,7 @@
     "description": "Burner domains are short-lived domains, registered by criminals (under a phony name). Don't put legitimate domains here, even if they contain malware.",
     "homeUrl": "https://github.com/gwillem/magento-malware-scanner/",
     "id": 1727,
-    "issuesUrl": "https://github.com/gwillem/magento-malware-scanner//issues",
+    "issuesUrl": "https://github.com/gwillem/magento-malware-scanner/issues",
     "licenseId": 4,
     "name": "Magento Malware Skanner - Burner Domains",
     "syntaxId": 2,
@@ -20837,7 +20837,7 @@
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
     "name": "Yuki's uBlock Dynamic Rules",
-    "syntaxId": 7,
+    "syntaxId": 53,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules.txt"
   },
   {
@@ -20866,7 +20866,7 @@
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
     "name": "Yuki's uBlock Dynamic Rules for mobile",
-    "syntaxId": 7,
+    "syntaxId": 53,
     "viewUrl": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules-mob.txt"
   },
   {
@@ -20980,9 +20980,9 @@
     "issuesUrl": "https://github.com/banbendalao/ADgk/issues",
     "name": "ADgk Mobile Advertising Rules - adgk手机去广告规则",
     "syntaxId": 6,
-    "viewUrl": "https://raw.githubusercontent.com/banbendalao/ADgk/master/adgk.txt",
-    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/banbendalao/ADgk@latest/adgk.txt",
-    "viewUrlMirror2": "https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/adgk.txt"
+    "viewUrl": "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt",
+    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/banbendalao/ADgk@latest/ADgk.txt",
+    "viewUrlMirror2": "https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/ADgk.txt"
   },
   {
     "description": "The effect is too powerful, use it with caution.",
@@ -21025,7 +21025,8 @@
     "id": 2109,
     "name": "halflife's AdFilters",
     "syntaxId": 3,
-    "viewUrl": "https://gitee.com/halflife/list/raw/master/ad.txt"
+    "viewUrl": "https://gitee.com/halflife/list/raw/master/ad.txt",
+    "viewUrlMirror1": "https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt"
   },
   {
     "homeUrl": "https://gitee.com/anye1998/Adguard-List-of-personal-rules",
@@ -21278,8 +21279,8 @@
     "homeUrl": "https://github.com/dagoll/filters-list/",
     "id": 2136,
     "issuesUrl": "https://github.com/dagoll/filters-list/issues",
-    "name": "Dagoll's Filters List (uMatrix)",
-    "syntaxId": 7,
+    "name": "Dagoll's Filters List (Dynamic)",
+    "syntaxId": 53,
     "viewUrl": "https://raw.githubusercontent.com/dagoll/filters-list/master/dynamic-filtering-rules.txt"
   },
   {
@@ -23700,5 +23701,147 @@
     "name": "SmartAdBlock Filter",
     "syntaxId": 6,
     "viewUrl": "https://www.smartadblock.co.uk/filters/sabfilter.txt"
+  },
+  {
+    "homeUrl": "https://github.com/jdlingyu/ad-wars/",
+    "id": 2353,
+    "issuesUrl": "https://github.com/jdlingyu/ad-wars/issues",
+    "licenseId": 5,
+    "name": "Ad Wars (Domains)",
+    "syntaxId": 16,
+    "viewUrl": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/sha_ad_hosts"
+  },
+  {
+    "description": "This branch serves the whitelist list which is used by the Ultimate Hosts Blacklist Project.",
+    "donateUrl": "https://www.paypal.me/mitchellkrog/",
+    "emailAddress": "mitchellkrog@gmail.com",
+    "homeUrl": "https://github.com/Ultimate-Hosts-Blacklist/whitelist",
+    "id": 2354,
+    "issuesUrl": "https://github.com/Ultimate-Hosts-Blacklist/whitelist/issues",
+    "licenseId": 2,
+    "name": "Ultimate Hosts Blacklist (Whitelist)",
+    "syntaxId": 50,
+    "viewUrl": "https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/whitelist/master/domains.list"
+  },
+  {
+    "homeUrl": "https://github.com/notracking/hosts-blocklists-scripts",
+    "id": 2355,
+    "issuesUrl": "https://github.com/notracking/hosts-blocklists-scripts/issues",
+    "licenseId": 9,
+    "name": "notracking - Whitelist",
+    "syntaxId": 50,
+    "viewUrl": "https://raw.githubusercontent.com/notracking/hosts-blocklists-scripts/master/hostnames.whitelist.txt"
+  },
+  {
+    "description": "Self-Customized AdBlockList Focusing on DNS hijacking and AdBlock.",
+    "emailAddress": "me@licolnlee.icu",
+    "homeUrl": "https://github.com/Licolnlee/AdBlockList/",
+    "id": 2356,
+    "issuesUrl": "https://github.com/Licolnlee/AdBlockList/issues",
+    "licenseId": 2,
+    "name": "AdBlockList",
+    "syntaxId": 28,
+    "viewUrl": "https://raw.githubusercontent.com/Licolnlee/AdBlockList/master/AdBlock",
+    "viewUrlMirror1": "https://licolnlee.icu/AdBlockList/AdBlock"
+  },
+  {
+    "description": "Self-Customized AdBlockList Focusing on DNS hijacking and AdBlock.",
+    "emailAddress": "me@licolnlee.icu",
+    "homeUrl": "https://github.com/Licolnlee/AdBlockList/",
+    "id": 2357,
+    "issuesUrl": "https://github.com/Licolnlee/AdBlockList/issues",
+    "licenseId": 2,
+    "name": "AdBlockList Lite",
+    "syntaxId": 28,
+    "viewUrl": "https://raw.githubusercontent.com/Licolnlee/AdBlockList/master/AdBlockLite",
+    "viewUrlMirror1": "https://licolnlee.icu/AdBlockList/AdBlockLite"
+  },
+  {
+    "description": "Self-Customized AdBlockList Focusing on DNS hijacking and AdBlock.",
+    "emailAddress": "me@licolnlee.icu",
+    "homeUrl": "https://github.com/Licolnlee/AdBlockList/",
+    "id": 2358,
+    "issuesUrl": "https://github.com/Licolnlee/AdBlockList/issues",
+    "licenseId": 2,
+    "name": "AdBlockList (Domains)",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/Licolnlee/AdBlockList/master/AdList",
+    "viewUrlMirror1": "https://licolnlee.icu/AdBlockList/AdList"
+  },
+  {
+    "description": "Self-Customized AdBlockList Focusing on DNS hijacking and AdBlock.",
+    "emailAddress": "me@licolnlee.icu",
+    "homeUrl": "https://github.com/Licolnlee/AdBlockList/",
+    "id": 2359,
+    "issuesUrl": "https://github.com/Licolnlee/AdBlockList/issues",
+    "licenseId": 2,
+    "name": "AdBlockList Lite (Domains)",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/Licolnlee/AdBlockList/master/AdListLite",
+    "viewUrlMirror1": "https://licolnlee.icu/AdBlockList/AdListLite"
+  },
+  {
+    "description": "Self-Customized AdBlockList Focusing on DNS hijacking and AdBlock.",
+    "emailAddress": "me@licolnlee.icu",
+    "homeUrl": "https://github.com/Licolnlee/AdBlockList/",
+    "id": 2360,
+    "issuesUrl": "https://github.com/Licolnlee/AdBlockList/issues",
+    "licenseId": 2,
+    "name": "AdBlockList (Hosts)",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/Licolnlee/AdBlockList/master/AdBlock-dnsmasq",
+    "viewUrlMirror1": "https://licolnlee.icu/AdBlockList/AdBlock-dnsmasq"
+  },
+  {
+    "description": "Self-Customized AdBlockList Focusing on DNS hijacking and AdBlock.",
+    "emailAddress": "me@licolnlee.icu",
+    "homeUrl": "https://github.com/Licolnlee/AdBlockList/",
+    "id": 2361,
+    "issuesUrl": "https://github.com/Licolnlee/AdBlockList/issues",
+    "licenseId": 2,
+    "name": "AdBlockList Lite (Hosts)",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/Licolnlee/AdBlockList/master/AdBlockLite-dnsmasq",
+    "viewUrlMirror1": "https://licolnlee.icu/AdBlockList/AdBlockListe-dnsmasq"
+  },
+  {
+    "description": "Self-Customized AdBlockList Focusing on DNS hijacking and AdBlock.",
+    "emailAddress": "me@licolnlee.icu",
+    "homeUrl": "https://github.com/Licolnlee/AdBlockList/",
+    "id": 2362,
+    "issuesUrl": "https://github.com/Licolnlee/AdBlockList/issues",
+    "licenseId": 2,
+    "name": "AdBlockList Allowlist",
+    "syntaxId": 47,
+    "viewUrl": "https://raw.githubusercontent.com/Licolnlee/AdBlockList/master/AdAllowlist",
+    "viewUrlMirror1": "https://licolnlee.icu/AdBlockList/AdAllowlist"
+  },
+  {
+    "description": "This is a ad-block-rule maintained by XBrowser official.",
+    "donateUrl": "https://en.xbext.com/",
+    "homeUrl": "https://github.com/examplecode/ad-rules-for-xbrowser",
+    "id": 2363,
+    "issuesUrl": "https://github.com/examplecode/ad-rules-for-xbrowser/issues",
+    "name": "Ad Rules for XBrowser",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/examplecode/ad-rules-for-xbrowser/master/core-rule-cn.txt"
+  },
+  {
+    "description": "neohosts didn't have any of my sites on it, so I made a few additions. It's mainly for fiction sites, but is not limited to fiction sites.",
+    "emailAddress": "hi.pinglin@gmail.com",
+    "homeUrl": "https://github.com/ilpl/ad-hosts/",
+    "id": 2364,
+    "issuesUrl": "https://github.com/ilpl/ad-hosts/issues",
+    "name": "ilpl's Ad Hosts",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts"
+  },
+  {
+    "homeUrl": "https://gitee.com/damengzhudamengzhu/guanggaoguolv/",
+    "id": 2365,
+    "issuesUrl": "https://gitee.com/damengzhudamengzhu/guanggaoguolv/issues",
+    "name": "jiekouAD",
+    "syntaxId": 4,
+    "viewUrl": "https://gitee.com/damengzhudamengzhu/guanggaoguolv/raw/master/jiekouAD.txt"
   }
 ]
