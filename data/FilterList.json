@@ -23848,7 +23848,7 @@
     "viewUrl": "https://gitee.com/damengzhudamengzhu/guanggaoguolv/raw/master/jiekouAD.txt"
   },
   {
-    "description": "Some PR-Chinese filterlist makers apparently decided to block Falun Gong websites in their anti-ad lists for reasons that had absolutely nothing to do with ads, tracking or malware, and despite the sites already being megablocked within their country. So if you live abroad, and use any of the lists mentioned below, this list is for you.",
+    "description": "Some PR-Chinese filterlist makers apparently decided to block Falun Gong websites in their anti-ad lists for reasons that had absolutely nothing to do with ads, tracking or malware, and despite the sites already being megablocked within their country. So if you live abroad, and use any of the affected lists, this list is for you.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
@@ -23871,7 +23871,7 @@
     "viewUrl": "https://blokada.org/blocklists/ddgtrackerradar/standard/hosts.txt"
   },
   {
-    "description": "The V2Ray routing rules file is an enhanced version that replaces the official V2Ray geoip.dat and geosite.dat rules files. It's built automatically every day at 06:00 CST using GitHub Actions to keep your rules up to date.",
+    "description": "The V2Ray routing rules file is an enhanced version that replaces the official V2Ray geoip.dat and geosite.dat rules files. It's built automatically every day at 06:00 China Standard Time using GitHub Actions to keep your rules up to date.",
     "homeUrl": "https://github.com/Loyalsoldier/v2ray-rules-dat/",
     "id": 2368,
     "issuesUrl": "https://github.com/Loyalsoldier/v2ray-rules-dat/issues",
