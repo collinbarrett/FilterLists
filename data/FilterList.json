@@ -17301,7 +17301,8 @@
     "name": "Energized Spark Protection (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://block.energized.pro/spark/formats/domains.txt"
+    "viewUrl": "https://block.energized.pro/spark/formats/domains.txt",
+    "viewUrlMirror1": "https://blokada.org/mirror/v5/energized/spark/hosts.txt"
   },
   {
     "chatUrl": "https://t.me/EnergizedProtection",
@@ -17461,7 +17462,8 @@
     "name": "Energized Regional Extension (Domains)",
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 2,
-    "viewUrl": "https://block.energized.pro/extensions/regional/formats/domains.txt"
+    "viewUrl": "https://block.energized.pro/extensions/regional/formats/domains.txt",
+    "viewUrlMirror1": "https://blokada.org/mirror/v5/energized/regional/hosts.txt"
   },
   {
     "chatUrl": "https://t.me/EnergizedProtection",
@@ -23844,5 +23846,78 @@
     "name": "jiekouAD",
     "syntaxId": 4,
     "viewUrl": "https://gitee.com/damengzhudamengzhu/guanggaoguolv/raw/master/jiekouAD.txt"
+  },
+  {
+    "description": "Some PR-Chinese filterlist makers apparently decided to block Falun Gong websites in their anti-ad lists for reasons that had absolutely nothing to do with ads, tracking or malware, and despite the sites already being megablocked within their country. So if you live abroad, and use any of the lists mentioned below, this list is for you.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2366,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Falukorv List",
+    "publishedDate": "2020-08-10T00:00:00",
+    "syntaxId": 28,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/FalukorvList.txt",
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/FalukorvList.txt"
+  },
+  {
+    "description": "This host file is based on DuckDuckGo Tracker Radar.",
+    "homeUrl": "https://go.blokada.org/ddgtrackerradar",
+    "id": 2367,
+    "licenseId": 9,
+    "name": "DuckDuckGo Tracker Radar",
+    "syntaxId": 2,
+    "viewUrl": "https://blokada.org/blocklists/ddgtrackerradar/standard/hosts.txt"
+  },
+  {
+    "description": "The V2Ray routing rules file is an enhanced version that replaces the official V2Ray geoip.dat and geosite.dat rules files. It's built automatically every day at 06:00 CST using GitHub Actions to keep your rules up to date.",
+    "homeUrl": "https://github.com/Loyalsoldier/v2ray-rules-dat/",
+    "id": 2368,
+    "issuesUrl": "https://github.com/Loyalsoldier/v2ray-rules-dat/issues",
+    "licenseId": 4,
+    "name": "Loyalsoldier's V2Ray Rules",
+    "syntaxId": 2,
+    "viewUrl": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/reject-list.txt"
+  },
+  {
+    "description": "This list aims to remove Twitter thread comments that promote K-pop, that are in threads whose OPs have absolutely nothing whatsoever to do with K-pop (e.g. Struggle Tweets, Poorly Aged Things).",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2369,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'K-pop spammers on Twitter' List",
+    "publishedDate": "2020-08-10T00:00:00",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiKpopSpammersTwitter.txt",
+    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiKpopSpammersTwitter.txt"
+  },
+  {
+    "description": "Hosts file, used to block some pop-up ads and casino ads. Feedback is welcome!",
+    "homeUrl": "https://github.com/Goooler/1024_hosts/",
+    "id": 2370,
+    "issuesUrl": "https://github.com/Goooler/1024_hosts/issues",
+    "licenseId": 18,
+    "name": "1024 Hosts",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts"
+  },
+  {
+    "homeUrl": "https://github.com/adbyby/xwhyc-rules/",
+    "id": 2371,
+    "issuesUrl": "https://github.com/adbyby/xwhyc-rules/issues",
+    "name": "XWHYC Rules",
+    "syntaxId": 4,
+    "viewUrl": "https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt"
+  },
+  {
+    "homeUrl": "https://anti-ad.net/",
+    "id": 2372,
+    "issuesUrl": "https://github.com/privacy-protection-tools/dead-horse/issues",
+    "name": "anti-AD (Whitelist)",
+    "syntaxId": 50,
+    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt"
   }
 ]
