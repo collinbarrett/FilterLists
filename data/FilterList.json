@@ -1302,13 +1302,13 @@
     "descriptionSourceUrl": "https://github.com/StevenBlack/hosts",
     "homeUrl": "https://github.com/FadeMind/hosts.extras",
     "id": 138,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
     "licenseId": 2,
     "name": "StreamingAds",
     "publishedDate": "2018-03-24T16:22:11",
     "syntaxId": 1,
     "updatedDate": "2019-01-27T09:46:09",
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/StreamingAds/hosts",
     "viewUrlMirror1": "https://gitcdn.xyz/repo/FadeMind/hosts.extras/master/StreamingAds/hosts",
     "viewUrlMirror2": "https://gitcdn.link/repo/FadeMind/hosts.extras/master/StreamingAds/hosts"
@@ -3581,12 +3581,12 @@
     "description": "Blocks banners (paypal, payu, bitcoin and patronite), charity banners, other forms of inclination to support on Polish sites.",
     "homeUrl": "https://github.com/KonoromiHimaries/PolishSubFilters",
     "id": 342,
+    "isDeleted": true,
     "licenseId": 9,
     "name": "Polish Anti-Donate Filters",
     "publishedDate": "2018-01-06T00:00:00",
     "syntaxId": 4,
     "updatedDate": "2019-03-06T20:19:55",
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/KonoromiHimaries/PolishSubFilters/master/internal-filters/anti-donate-filters/anty-donacje.txt"
   },
   {
@@ -3607,12 +3607,12 @@
     "description": "Blocks internal advertising, paid subscriptions, own stores on Polish sites.",
     "homeUrl": "https://github.com/KonoromiHimaries/PolishSubFilters/",
     "id": 344,
+    "isDeleted": true,
     "licenseId": 9,
     "name": "Polish Internal Filters",
     "publishedDate": "2018-01-26T00:00:00",
     "syntaxId": 4,
     "updatedDate": "2019-03-29T17:17:55",
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/KonoromiHimaries/PolishSubFilters/master/internal-filters/wewnetrzne.txt"
   },
   {
@@ -6724,13 +6724,13 @@
     "emailAddress": "hello@bads.team",
     "homeUrl": "https://github.com/dariusworks/superblock",
     "id": 732,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/dariusworks/superblock/issues",
     "licenseId": 2,
     "name": "BADS.TM Cleaner Sites List All In One",
     "publishedDate": "2017-08-06T17:23:59",
     "syntaxId": 3,
     "updatedDate": "2017-12-23T14:57:42",
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/dariusworks/superblock/master/cleanersitesAiO.txt"
   },
   {
@@ -7784,13 +7784,13 @@
     "descriptionSourceUrl": "https://github.com/SG-Nebula/vblocker_adblockplus-filterlist#why-vblocker",
     "homeUrl": "https://github.com/SG-Nebula/vblocker_adblockplus-filterlist",
     "id": 838,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/SG-Nebula/vblocker_adblockplus-filterlist/issues",
     "licenseId": 7,
     "name": "VBlocker",
     "publishedDate": "2018-06-17T00:59:18",
     "syntaxId": 3,
     "updatedDate": "2018-06-17T00:59:18",
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/SG-Nebula/vblocker_adblockplus-filterlist/master/vblocker"
   },
   {
@@ -10980,13 +10980,13 @@
   {
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
     "id": 1125,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
     "licenseId": 14,
     "name": "Bad JAV Sites (Domains)",
     "publishedDate": "2017-09-02T01:07:36",
     "syntaxId": 2,
     "updatedDate": "2018-05-28T14:02:55",
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Bad-JAV-Sites.txt"
   },
   {
@@ -14881,13 +14881,13 @@
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "id": 1528,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
     "licenseId": 40,
     "name": "AdGuard Base Filter without EasyList (AdGuard for Chromium)",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy",
     "syntaxId": 6,
     "updatedDate": "2019-04-05T21:43:12",
-    "isDeleted": true,
     "viewUrl": "https://filters.adtidy.org/extension/chromium/filters/2_without_easylist.txt"
   },
   {
@@ -16383,24 +16383,24 @@
     "description": "Blocks annoyances on web pages including cookie notices, modals and other useless elements",
     "homeUrl": "https://github.com/Strappazzon/filterlists",
     "id": 1662,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/Strappazzon/filterlists/issues",
     "licenseId": 2,
     "name": "Strappazzon's Annoyances filter list",
     "syntaxId": 4,
     "updatedDate": "2019-07-12T00:00:00",
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/Strappazzon/filterlists/master/Filterlists/Annoyances.txt"
   },
   {
     "description": "Fixes what my current subscriptions broke",
     "homeUrl": "https://github.com/Strappazzon/filterlists",
     "id": 1663,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/Strappazzon/filterlists/issues",
     "licenseId": 2,
     "name": "Strappazzon's Unbreak",
     "syntaxId": 4,
     "updatedDate": "2019-07-12T00:00:00",
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/Strappazzon/filterlists/master/Filterlists/Unbreak.txt"
   },
   {
@@ -18252,11 +18252,11 @@
   {
     "homeUrl": "https://github.com/ConnersHua/Profiles/tree/master",
     "id": 1805,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/ConnersHua/Profiles/tree/master/issues",
     "licenseId": 2,
     "name": "ConnersHua Pro Ruleset",
     "syntaxId": 29,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Shadow/Pro.conf"
   },
   {
@@ -19015,22 +19015,22 @@
     "description": "This is the \"SAFE LIST\" tested to not break legitimate functionality for commonly used software",
     "homeUrl": "https://github.com/dex4k/dex4kblocklist",
     "id": 1894,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/dex4k/dex4kblocklist/issues",
     "licenseId": 5,
     "name": "dex4k Blocklist",
     "syntaxId": 2,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/dex4k/dex4kblocklist/master/dex4kblocklist.txt"
   },
   {
     "description": "This is a secondary blocklist created as, although I believe the blocking to be legitimate, blocking these domains can break popular apps",
     "homeUrl": "https://github.com/dex4k/dex4kblocklist",
     "id": 1895,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/dex4k/dex4kblocklist/issues",
     "licenseId": 5,
     "name": "dex4k Blocklist Extras",
     "syntaxId": 2,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/dex4k/dex4kblocklist/master/dex4kblocklistextras.txt"
   },
   {
@@ -20219,10 +20219,10 @@
   {
     "homeUrl": "https://blocklist.site/",
     "id": 2016,
+    "isDeleted": true,
     "licenseId": 5,
     "name": "Block List Project: Spam",
     "syntaxId": 2,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/blocklistproject/Lists/master/spam.txt"
   },
   {
@@ -20347,10 +20347,10 @@
   },
   {
     "id": 2033,
+    "isDeleted": true,
     "licenseId": 5,
     "name": "Blockzilla (Hosts)",
     "syntaxId": 1,
-    "isDeleted": true,
     "viewUrl": "https://block.energized.pro/assets/sources/filter/blockzilla.txt"
   },
   {
@@ -20427,11 +20427,11 @@
     "description": "A filter that blocks the thumbnails of users that upload junk or stuff in the wrong categories.",
     "homeUrl": "https://github.com/lassekongo83/Frellwits-filter-lists",
     "id": 2042,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/lassekongo83/Frellwits-filter-lists/issues",
     "licenseId": 4,
     "name": "deviantJUNKfilter",
     "syntaxId": 3,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/deviantJUNKfilter.txt",
     "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/deviantJUNKfilter.txt"
   },
@@ -20628,11 +20628,11 @@
     "description": "This List Is Better Than The Other Hosts For DNS Sinkholes And Slow Computers (If Used With An Adblocker)",
     "homeUrl": "https://github.com/Cybo1927/Hosts",
     "id": 2061,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
     "licenseId": 11,
     "name": "Cybo's Simplified Domains",
     "syntaxId": 4,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Other%20Formats/Simplified%20Domains"
   },
   {
@@ -22278,99 +22278,99 @@
     "description": "Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing Adguard Adblocker Extension.",
     "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
     "id": 2221,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
     "licenseId": 11,
     "name": "AdGuard Adblocker Extension Bypass Mitigation List",
     "syntaxId": 6,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/Adguard/Adblocker_Extension_Bypass_Mitigation.txt"
   },
   {
     "description": "Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing Adguard software for iOS, Android, and Windows.",
     "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
     "id": 2222,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
     "licenseId": 11,
     "name": "AdGuard for iOS, Android, and Windows Bypass Mitigation List",
     "syntaxId": 6,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/Adguard/iOS_AND_WIN_Bypass_Mitigation.txt"
   },
   {
     "description": "Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing uBlock Origin or Nano Adblocker.",
     "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
     "id": 2223,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
     "licenseId": 11,
     "name": "uBlock Origin Bypass Mitigation List",
     "syntaxId": 4,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/uBlock%20Origin/Attribute%20Tracking%20%26%20Bypass_Mitigation.txt"
   },
   {
     "description": "Behind-the-scene network requests are network requests which uBlock or uMatrix cannot associate with a specific tab in your browser. These can be abused by extensions in your web browser or made by web pages using navigator.sendBeacon(), hyperlink auditing, etc. ",
     "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
     "id": 2224,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
     "licenseId": 11,
     "name": "Behind-the-Scene Mitigation for uBlock Origin",
     "syntaxId": 7,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/uBlock%20Origin/Behind-The-Scene_Mitigation.txt"
   },
   {
     "description": "Behind-the-scene network requests are network requests which uBlock or uMatrix cannot associate with a specific tab in your browser. These can be abused by extensions in your web browser or made by web pages using navigator.sendBeacon(), hyperlink auditing, etc. Block CSP reports and pings in uMatrix.",
     "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
     "id": 2225,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
     "licenseId": 11,
     "name": "Behind-the-Scene and Bypass Mitigation for uMatrix",
     "syntaxId": 7,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/uMatrix/Behind-The-Scene%20%26%20Bypass%20Mitigation.txt"
   },
   {
     "description": "Block dangerous Android file extensions from HTTP-only traffic to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for Adguard.",
     "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
     "id": 2226,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
     "licenseId": 11,
     "name": "Android File Types Firewall HTTP-Only for Adguard",
     "syntaxId": 6,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Android/Adguard/AG_AND-HTTP_Only.txt"
   },
   {
     "description": "Block dangerous Android file extensions from HTTP-only traffic to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for uBlock Origin or Nano Defender.",
     "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
     "id": 2227,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
     "licenseId": 11,
     "name": "Android File Types Firewall HTTP-Only for uBlock Origin",
     "syntaxId": 4,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Android/uBlock%20Origin/uBO_AND-HTTP-Only.txt"
   },
   {
     "description": "Block dangerous Windows file extensions from HTTP-only traffic to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for Adguard.",
     "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
     "id": 2228,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
     "licenseId": 11,
     "name": "Windows Files Types Firewall HTTP-Only for Adguard",
     "syntaxId": 6,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Windows/Adguard/AG_WIN-HTTP_Only.txt"
   },
   {
     "description": "Block dangerous Windows file extensions from HTTP-Only traffic to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for uBlock Origin or Nano Defender.",
     "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
     "id": 2229,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
     "licenseId": 11,
     "name": "Windows File Types Firewall HTTP-Only for uBlock Origin",
     "syntaxId": 4,
-    "isDeleted": true,
     "viewUrl": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/File_Types_Firewall/Windows/uBlock%20Origin/uBO_WIN-HTTP-Only.txt"
   },
   {
@@ -22692,12 +22692,12 @@
     "description": "Official filter list file used for blocking ads on Czech and Slovak websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
     "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
     "id": 2259,
+    "isDeleted": true,
     "licenseId": 8,
     "name": "EasyList Czech and Slovak (TPL Minified)",
     "publishedDate": "2017-06-09T13:17:30",
     "syntaxId": 10,
     "updatedDate": "2019-08-18T07:04:32",
-    "isDeleted": true,
     "viewUrl": "https://easylist-downloads.adblockplus.org/easylistczechandslovak-minified.tpl"
   },
   {
@@ -22834,12 +22834,12 @@
     "description": "Liste AR is an EasyList affiliated filter list that specifically removes adverts on Arabic language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
     "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
     "id": 2272,
+    "isDeleted": true,
     "licenseId": 6,
     "name": "Liste AR (TPL Minified)",
     "publishedDate": "2017-06-09T13:17:30",
     "syntaxId": 10,
     "updatedDate": "2019-08-18T07:04:32",
-    "isDeleted": true,
     "viewUrl": "https://easylist-downloads.adblockplus.org/liste_ar-minified.tpl"
   },
   {
