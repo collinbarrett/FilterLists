@@ -2833,7 +2833,7 @@
     "name": "Czech Filters for AdBlock",
     "syntaxId": 3,
     "updatedDate": "2014-08-16T00:00:00",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Czech%20Filters%20for%20Adblock%20Plus"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Czech%20Filters%20for%20Adblock%20Plus"
   },
   {
     "description": "Corset is a subscription filter to block intruding ads on sites using Korean.",
