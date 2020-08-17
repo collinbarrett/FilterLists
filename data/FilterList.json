@@ -1716,14 +1716,14 @@
   {
     "description": "BarbBlock is a content blocking list with standalone browser extensions for Chrome and Firefox. It blacklists sites which have used DMCA takedowns to force removal from other content blocking lists. Such takedowns are categorically invalid, but they can be effective at intimidating small open-source projects into compliance.",
     "descriptionSourceUrl": "https://github.com/paulgb/BarbBlock/blob/master/README.md",
-    "homeUrl": "https://ssl.bblck.me/",
+    "homeUrl": "https://paulgb.github.io/BarbBlock/",
     "id": 177,
     "issuesUrl": "https://github.com/paulgb/BarbBlock/issues",
     "licenseId": 2,
     "name": "BarbBlock Hosts",
     "syntaxId": 1,
     "updatedDate": "2018-12-16T01:31:11",
-    "viewUrl": "https://ssl.bblck.me/blacklists/hosts-file.txt"
+    "viewUrl": "https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt"
   },
   {
     "description": "This is a list for blocking advertisements on the banki.ru site that are not blocked by \"conventional\" lists.",
@@ -5231,19 +5231,19 @@
   {
     "description": "BarbBlock is a content blocking list with standalone browser extensions for Chrome and Firefox. It blacklists sites which have used DMCA takedowns to force removal from other content blocking lists. Such takedowns are categorically invalid, but they can be effective at intimidating small open-source projects into compliance.",
     "descriptionSourceUrl": "https://github.com/paulgb/BarbBlock/blob/master/README.md",
-    "homeUrl": "https://ssl.bblck.me/",
+    "homeUrl": "https://paulgb.github.io/BarbBlock/",
     "id": 515,
     "issuesUrl": "https://github.com/paulgb/BarbBlock/issues",
     "licenseId": 2,
     "name": "BarbBlock uBlock Origin",
     "syntaxId": 4,
     "updatedDate": "2019-01-14T08:45:10",
-    "viewUrl": "https://ssl.bblck.me/blacklists/ublock-origin.txt"
+    "viewUrl": "https://paulgb.github.io/BarbBlock/blacklists/ublock-origin.txt"
   },
   {
     "description": "BarbBlock is a content blocking list with standalone browser extensions for Chrome and Firefox. It blacklists sites which have used DMCA takedowns to force removal from other content blocking lists. Such takedowns are categorically invalid, but they can be effective at intimidating small open-source projects into compliance.",
     "descriptionSourceUrl": "https://github.com/paulgb/BarbBlock/blob/master/README.md",
-    "homeUrl": "https://ssl.bblck.me/",
+    "homeUrl": "https://paulgb.github.io/BarbBlock/",
     "id": 516,
     "issuesUrl": "https://github.com/paulgb/BarbBlock/issues",
     "licenseId": 2,
@@ -5251,19 +5251,19 @@
     "publishedDate": "2017-08-14T09:11:43",
     "syntaxId": 2,
     "updatedDate": "2019-01-14T08:50:10",
-    "viewUrl": "https://raw.githubusercontent.com/paulgb/BarbBlock/master/blacklists/domain-list.txt"
+    "viewUrl": "https://paulgb.github.io/BarbBlock/blacklists/domain-list.txt"
   },
   {
     "description": "BarbBlock is a content blocking list with standalone browser extensions for Chrome and Firefox. It blacklists sites which have used DMCA takedowns to force removal from other content blocking lists. Such takedowns are categorically invalid, but they can be effective at intimidating small open-source projects into compliance.",
     "descriptionSourceUrl": "https://github.com/paulgb/BarbBlock/blob/master/README.md",
-    "homeUrl": "https://ssl.bblck.me/",
+    "homeUrl": "https://paulgb.github.io/BarbBlock/",
     "id": 517,
     "issuesUrl": "https://github.com/paulgb/BarbBlock/issues",
     "licenseId": 2,
     "name": "BarbBlock Adblock Plus",
     "syntaxId": 3,
     "updatedDate": "2019-01-14T08:57:09",
-    "viewUrl": "https://ssl.bblck.me/blacklists/adblock-plus.txt"
+    "viewUrl": "https://paulgb.github.io/BarbBlock/blacklists/adblock-plus.txt"
   },
   {
     "description": "This list consists of Low Level Sensitivity website URLs",
