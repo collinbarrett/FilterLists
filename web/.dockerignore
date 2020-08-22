@@ -1,5 +1,0 @@
-Dockerfile
-.dockerignore
-.gitignore
-azure-pipelines.yaml
-node_modules

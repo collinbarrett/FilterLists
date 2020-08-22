@@ -1,2 +1,0 @@
-# FilterLists Capture Snapshots
-*/1 * * * * nice -n 19 /usr/bin/flock -n /tmp/filterlistsagent.lockfile /var/www/filterlists/FilterLists.Agent > /dev/null 2>&1
