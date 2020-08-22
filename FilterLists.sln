@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Directory.Infra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Directory.Infrastructure.Migrations", "directory\src\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj", "{4F7D51FE-A1F3-4473-A8C3-D57EBDD8E60E}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8F04C802-830B-4B6D-8D53-5D2A87B4223D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{4F7D51FE-A1F3-4473-A8C3-D57EBDD8E60E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F7D51FE-A1F3-4473-A8C3-D57EBDD8E60E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F7D51FE-A1F3-4473-A8C3-D57EBDD8E60E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F04C802-830B-4B6D-8D53-5D2A87B4223D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F04C802-830B-4B6D-8D53-5D2A87B4223D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F04C802-830B-4B6D-8D53-5D2A87B4223D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F04C802-830B-4B6D-8D53-5D2A87B4223D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
