@@ -2,6 +2,6 @@
 {
     public interface IHaveSurrogateKey
     {
-        ushort Id { get; set; }
+        ushort Id { get; }
     }
 }
