@@ -26,7 +26,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
             throw new InvalidOperationException("This context is read-only.");
         }
 
-        public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = new CancellationToken())
+        public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess,
+            CancellationToken cancellationToken = default)
         {
             throw new InvalidOperationException("This context is read-only.");
         }
@@ -35,13 +36,19 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
         {
             _ = modelBuilder ?? throw new ArgumentNullException(nameof(modelBuilder));
 
-            //TODO: figure out why this extension doesn't load configs
             modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
 
+            // TODO: rm explicit below once ApplyConfigurationsFromAssembly() works properly
             modelBuilder.ApplyConfiguration(new DependentTypeConfiguration<Dependent>());
             modelBuilder.ApplyConfiguration(new FilterListLanguageTypeConfiguration<FilterListLanguage>());
+            modelBuilder.ApplyConfiguration(new FilterListMaintainerTypeConfiguration<FilterListMaintainer>());
+            modelBuilder.ApplyConfiguration(new FilterListSyntaxTypeConfiguration<FilterListSyntax>());
+            modelBuilder.ApplyConfiguration(new FilterListTagTypeConfiguration<FilterListTag>());
             modelBuilder.ApplyConfiguration(new ForkTypeConfiguration<Fork>());
+            modelBuilder.ApplyConfiguration(new LanguageTypeConfiguration<Language>());
             modelBuilder.ApplyConfiguration(new MergeTypeConfiguration<Merge>());
+            modelBuilder.ApplyConfiguration(new SoftwareSyntaxTypeConfiguration<SoftwareSyntax>());
+            modelBuilder.ApplyConfiguration(new ViewUrlPartialTypeConfiguration<ViewUrlPartial>());
         }
     }
 }
