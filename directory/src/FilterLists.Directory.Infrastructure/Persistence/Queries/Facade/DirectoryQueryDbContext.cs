@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Mappings;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +20,16 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
         public DbSet<Software> Software => Set<Software>();
         public DbSet<Syntax> Syntaxes => Set<Syntax>();
         public DbSet<Tag> Tags => Set<Tag>();
+
+        public override int SaveChanges(bool acceptAllChangesOnSuccess)
+        {
+            throw new InvalidOperationException("This context is read-only.");
+        }
+
+        public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = new CancellationToken())
+        {
+            throw new InvalidOperationException("This context is read-only.");
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
