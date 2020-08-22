@@ -1,7 +1,7 @@
 ﻿namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Contracts
 {
-    public interface ISurrogateKey
+    internal interface IHaveSurrogateKey
     {
-        long Id { get; set; }
+        ushort Id { get; set; }
     }
 }
