@@ -6,10 +6,10 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class License : IHaveSurrogateKey
     {
-        public ushort Id { get; }
-        public string Name { get; } = null!;
-        public string? GitHubKey { get; }
-        public Uri? Url { get; }
-        public ICollection<FilterList> FilterLists { get; } = new HashSet<FilterList>();
+        public ushort Id { get; private set; }
+        public string Name { get; private set; } = null!;
+        public string? GitHubKey { get; private set; }
+        public Uri? Url { get; private set; }
+        public ICollection<FilterList> FilterLists { get; private set; } = new HashSet<FilterList>();
     }
 }

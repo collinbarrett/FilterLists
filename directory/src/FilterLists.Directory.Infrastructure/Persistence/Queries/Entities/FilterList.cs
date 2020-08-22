@@ -6,31 +6,31 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class FilterList : IHaveSurrogateKey
     {
-        public ushort Id { get; }
-        public string Name { get; } = null!;
-        public string? Description { get; }
-        public License? License { get; }
-        public ICollection<FilterListSyntax> FilterListSyntaxes { get; } = new HashSet<FilterListSyntax>();
-        public ICollection<FilterListLanguage> FilterListLanguages { get; } = new HashSet<FilterListLanguage>();
-        public ICollection<FilterListTag> FilterListTags { get; } = new HashSet<FilterListTag>();
-        public Uri ViewUrl { get; } = null!;
-        public ICollection<ViewUrlPartial> ViewUrlPartials { get; } = new HashSet<ViewUrlPartial>();
-        public ICollection<ViewUrlMirror> ViewUrlMirrors { get; } = new HashSet<ViewUrlMirror>();
-        public Uri? HomeUrl { get; }
-        public Uri? OnionUrl { get; }
-        public Uri? PolicyUrl { get; }
-        public Uri? SubmissionUrl { get; }
-        public Uri? IssuesUrl { get; }
-        public Uri? ForumUrl { get; }
-        public Uri? ChatUrl { get; }
-        public string? EmailAddress { get; }
-        public Uri? DonateUrl { get; }
-        public ICollection<FilterListMaintainer> FilterListMaintainers { get; } = new HashSet<FilterListMaintainer>();
-        public ICollection<Fork> UpstreamFilterLists { get; } = new HashSet<Fork>();
-        public ICollection<Fork> ForkFilterLists { get; } = new HashSet<Fork>();
-        public ICollection<Merge> IncludedInFilterLists { get; } = new HashSet<Merge>();
-        public ICollection<Merge> IncludesFilterLists { get; } = new HashSet<Merge>();
-        public ICollection<Dependent> DependencyFilterLists { get; } = new HashSet<Dependent>();
-        public ICollection<Dependent> DependentFilterLists { get; } = new HashSet<Dependent>();
+        public ushort Id { get; private set; }
+        public string Name { get; private set; } = null!;
+        public string? Description { get; private set; }
+        public License? License { get; private set; }
+        public ICollection<FilterListSyntax> FilterListSyntaxes { get; private set; } = new HashSet<FilterListSyntax>();
+        public ICollection<FilterListLanguage> FilterListLanguages { get; private set; } = new HashSet<FilterListLanguage>();
+        public ICollection<FilterListTag> FilterListTags { get; private set; } = new HashSet<FilterListTag>();
+        public Uri ViewUrl { get; private set; } = null!;
+        public ICollection<ViewUrlPartial> ViewUrlPartials { get; private set; } = new HashSet<ViewUrlPartial>();
+        public ICollection<ViewUrlMirror> ViewUrlMirrors { get; private set; } = new HashSet<ViewUrlMirror>();
+        public Uri? HomeUrl { get; private set; }
+        public Uri? OnionUrl { get; private set; }
+        public Uri? PolicyUrl { get; private set; }
+        public Uri? SubmissionUrl { get; private set; }
+        public Uri? IssuesUrl { get; private set; }
+        public Uri? ForumUrl { get; private set; }
+        public Uri? ChatUrl { get; private set; }
+        public string? EmailAddress { get; private set; }
+        public Uri? DonateUrl { get; private set; }
+        public ICollection<FilterListMaintainer> FilterListMaintainers { get; private set; } = new HashSet<FilterListMaintainer>();
+        public ICollection<Fork> UpstreamFilterLists { get; private set; } = new HashSet<Fork>();
+        public ICollection<Fork> ForkFilterLists { get; private set; } = new HashSet<Fork>();
+        public ICollection<Merge> IncludedInFilterLists { get; private set; } = new HashSet<Merge>();
+        public ICollection<Merge> IncludesFilterLists { get; private set; } = new HashSet<Merge>();
+        public ICollection<Dependent> DependencyFilterLists { get; private set; } = new HashSet<Dependent>();
+        public ICollection<Dependent> DependentFilterLists { get; private set; } = new HashSet<Dependent>();
     }
 }

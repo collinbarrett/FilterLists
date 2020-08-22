@@ -2,7 +2,7 @@
 {
     public class FilterListMaintainer
     {
-        public FilterList FilterList { get; } = null!;
-        public Maintainer Maintainer { get; } = null!;
+        public FilterList FilterList { get; private set; } = null!;
+        public Maintainer Maintainer { get; private set; } = null!;
     }
 }

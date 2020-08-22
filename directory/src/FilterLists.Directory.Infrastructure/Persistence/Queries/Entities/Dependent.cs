@@ -2,7 +2,7 @@
 {
     public class Dependent
     {
-        public FilterList DependencyFilterList { get; } = null!;
-        public FilterList DependentFilterList { get; } = null!;
+        public FilterList DependencyFilterList { get; private set; } = null!;
+        public FilterList DependentFilterList { get; private set; } = null!;
     }
 }
