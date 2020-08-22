@@ -14,8 +14,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Mappings
 
             const string filterListId = nameof(FilterListSyntax.FilterList) + "Id";
             const string syntaxId = nameof(FilterListSyntax.Syntax) + "Id";
-            builder.Property<ushort>(filterListId);
-            builder.Property<ushort>(syntaxId);
+            builder.Property<int>(filterListId);
+            builder.Property<int>(syntaxId);
             builder.HasKey(filterListId, syntaxId);
         }
     }

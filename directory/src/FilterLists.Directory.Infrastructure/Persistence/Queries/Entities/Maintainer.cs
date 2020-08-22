@@ -6,7 +6,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class Maintainer : IHaveSurrogateKey
     {
-        public ushort Id { get; private set; }
+        public int Id { get; private set; }
         public string Name { get; private set; } = null!;
         public Uri? Url { get; private set; }
         public string? EmailAddress { get; private set; }

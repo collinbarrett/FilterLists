@@ -14,8 +14,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Mappings
 
             const string dependencyFilterListId = nameof(Dependent.DependencyFilterList) + "Id";
             const string dependentFilterListId = nameof(Dependent.DependentFilterList) + "Id";
-            builder.Property<ushort>(dependencyFilterListId);
-            builder.Property<ushort>(dependentFilterListId);
+            builder.Property<int>(dependencyFilterListId);
+            builder.Property<int>(dependentFilterListId);
             builder.HasKey(dependencyFilterListId, dependentFilterListId);
             builder.HasOne(d => d.DependencyFilterList)
                 .WithMany(f => (IEnumerable<TEntity>)f.DependencyFilterLists)
