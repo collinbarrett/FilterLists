@@ -488,6 +488,14 @@
     "maintainerId": 7
   },
   {
+    "filterListId": 2377,
+    "maintainerId": 7
+  },
+  {
+    "filterListId": 2378,
+    "maintainerId": 7
+  },
+  {
     "filterListId": 6,
     "maintainerId": 8
   },
@@ -1233,6 +1241,14 @@
   },
   {
     "filterListId": 2369,
+    "maintainerId": 22
+  },
+  {
+    "filterListId": 2377,
+    "maintainerId": 22
+  },
+  {
+    "filterListId": 2378,
     "maintainerId": 22
   },
   {
@@ -5172,6 +5188,10 @@
     "maintainerId": 144
   },
   {
+    "filterListId": 2391,
+    "maintainerId": 144
+  },
+  {
     "filterListId": 2138,
     "maintainerId": 145
   },
@@ -5510,25 +5530,5 @@
   {
     "filterListId": 2320,
     "maintainerId": 156
-  },
-  {
-    "filterListId": 2377,
-    "maintainerId": 7
-  },
-    {
-    "filterListId": 2377,
-    "maintainerId": 22
-  },
-  {
-    "filterListId": 2378,
-    "maintainerId": 7
-  },
-    {
-    "filterListId": 2378,
-    "maintainerId": 22
-  },
-  {
-    "filterListId": 2391,
-    "maintainerId": 144
   }
 ]

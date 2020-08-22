@@ -14403,8 +14403,8 @@
     "viewUrl": "https://getadhell.com/standard-package.txt"
   },
   {
-    "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "donateUrl": "https://github.com/ookangzheng/blahdns/blob/master/README.md",
+    "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "id": 1473,
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
     "licenseId": 2,
@@ -14416,8 +14416,8 @@
     "viewUrlMirror1": "https://oooo.b-cdn.net/blahdns/adsblock.txt"
   },
   {
-    "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "donateUrl": "https://github.com/ookangzheng/blahdns/blob/master/README.md",
+    "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "id": 1474,
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
     "licenseId": 2,
@@ -14473,8 +14473,8 @@
     "viewUrl": "https://hblock.molinero.dev/hosts_dnsmasq.conf"
   },
   {
-    "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "donateUrl": "https://github.com/ookangzheng/blahdns/blob/master/README.md",
+    "homeUrl": "https://github.com/ookangzheng/blahdns/tree/master/hosts",
     "id": 1480,
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
     "licenseId": 2,
@@ -24023,8 +24023,8 @@
   },
   {
     "description": "A small hobby ads block dns project with doh, dot, dnscrypt support. Links that didn't fit in the Subscribe button URL texts, include 45.32.55.94 — 159.69.198.101 — 2a01:4f9:c010:43ce::1 — 2001:19f0:7001:3259:5400:02ff:fe71:0bc9 — 2a01:4f8:1c1c:6b4b::1, all of which also support TLS.",
-    "homeUrl": "https://blahdns.com/",
     "donateUrl": "https://github.com/ookangzheng/blahdns/blob/master/README.md",
+    "homeUrl": "https://blahdns.com/",
     "id": 2379,
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
     "name": "BlahDNS",
