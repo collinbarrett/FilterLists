@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries
 {
-    internal class DirectoryQueryDbContext : DbContext
+    public class DirectoryQueryDbContext : DbContext
     {
         public DbSet<FilterList> FilterLists { get; set; }
         public DbSet<Language> Languages { get; set; }

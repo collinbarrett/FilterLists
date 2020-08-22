@@ -6,26 +6,26 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries
 {
-    internal class DirectoryQueryFacade : IQueryDirectory, IAsyncDisposable
+    public class DirectoryQueryFacade : IQueryDirectory, IAsyncDisposable
     {
-        private readonly DirectoryQueryDbContext _db;
+        private readonly DirectoryQueryDbContext _dbContext;
 
         public DirectoryQueryFacade()
         {
-            _db = new DirectoryQueryDbContext();
+            _dbContext = new DirectoryQueryDbContext();
         }
 
         public async ValueTask DisposeAsync()
         {
-            await _db.DisposeAsync();
+            await _dbContext.DisposeAsync();
         }
 
-        public IQueryable<FilterList> FilterLists => _db.FilterLists.AsNoTracking();
-        public IQueryable<Language> Languages => _db.Languages.AsNoTracking();
-        public IQueryable<License> Licenses => _db.Licenses.AsNoTracking();
-        public IQueryable<Maintainer> Maintainers => _db.Maintainers.AsNoTracking();
-        public IQueryable<Software> Software => _db.Software.AsNoTracking();
-        public IQueryable<Syntax> Syntaxes => _db.Syntaxes.AsNoTracking();
-        public IQueryable<Tag> Tags => _db.Tags.AsNoTracking();
+        public IQueryable<FilterList> FilterLists => _dbContext.FilterLists.AsNoTracking();
+        public IQueryable<Language> Languages => _dbContext.Languages.AsNoTracking();
+        public IQueryable<License> Licenses => _dbContext.Licenses.AsNoTracking();
+        public IQueryable<Maintainer> Maintainers => _dbContext.Maintainers.AsNoTracking();
+        public IQueryable<Software> Software => _dbContext.Software.AsNoTracking();
+        public IQueryable<Syntax> Syntaxes => _dbContext.Syntaxes.AsNoTracking();
+        public IQueryable<Tag> Tags => _dbContext.Tags.AsNoTracking();
     }
 }
