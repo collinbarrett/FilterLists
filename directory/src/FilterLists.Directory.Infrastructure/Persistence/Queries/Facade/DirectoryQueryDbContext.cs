@@ -3,8 +3,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
 {
-    public class DirectoryQueryDbContext : DbContext
+    internal class DirectoryQueryDbContext : DbContext
     {
+        public DirectoryQueryDbContext(DbContextOptions<DirectoryQueryDbContext> options) : base(options)
+        {
+        }
+
         public DbSet<FilterList> FilterLists => Set<FilterList>();
         public DbSet<Language> Languages => Set<Language>();
         public DbSet<License> Licenses => Set<License>();
