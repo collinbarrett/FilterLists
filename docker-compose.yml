@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3.8'
 
 services:
   filterlists.directory.api:
@@ -6,3 +6,15 @@ services:
     build:
       context: .
       dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile
+    depends_on:
+      - filterlists.directory.db
+    environment:
+      ConnectionStrings__DirectoryConnection: ${DIRECTORY_CONNECTION_STRING}
+
+  filterlists.directory.db:
+    image: postgres:alpine
+    restart: always
+    environment:
+      POSTGRES_USER: ${DIRECTORY_DB_USER}
+      POSTGRES_PASSWORD: ${DIRECTORY_DB_PASSWORD}
+      POSTGRES_DB: ${DIRECTORY_DB_DATABASE}

@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
 {
-    public class DirectoryQueryFacade : IQueryDirectory, IAsyncDisposable
+    internal class DirectoryQueryFacade : IQueryDirectory, IAsyncDisposable
     {
         private readonly DirectoryQueryDbContext _dbContext;
 
-        public DirectoryQueryFacade()
+        public DirectoryQueryFacade(DirectoryQueryDbContext dbContext)
         {
-            _dbContext = new DirectoryQueryDbContext();
+            _dbContext = dbContext;
         }
 
         public async ValueTask DisposeAsync()
