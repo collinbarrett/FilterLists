@@ -7,10 +7,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["FilterLists.Directory.Api/FilterLists.Directory.Api.csproj", "FilterLists.Directory.Api/"]
-RUN dotnet restore "FilterLists.Directory.Api/FilterLists.Directory.Api.csproj"
+COPY ["directory/src/FilterLists.Directory.Api/FilterLists.Directory.Api.csproj", "directory/src/FilterLists.Directory.Api/"]
+RUN dotnet restore "directory/src/FilterLists.Directory.Api/FilterLists.Directory.Api.csproj"
 COPY . .
-WORKDIR "/src/FilterLists.Directory.Api"
+WORKDIR "/src/directory/src/FilterLists.Directory.Api"
 RUN dotnet build "FilterLists.Directory.Api.csproj" -c Release -o /app/build
 
 FROM build AS publish
