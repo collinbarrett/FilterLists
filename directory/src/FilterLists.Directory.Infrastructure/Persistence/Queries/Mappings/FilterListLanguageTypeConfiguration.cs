@@ -14,8 +14,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Mappings
 
             const string filterListId = nameof(FilterListLanguage.FilterList) + "Id";
             const string languageId = nameof(FilterListLanguage.Language) + "Id";
-            builder.Property<ushort>(filterListId);
-            builder.Property<ushort>(languageId);
+            builder.Property<int>(filterListId);
+            builder.Property<int>(languageId);
             builder.HasKey(filterListId, languageId);
         }
     }

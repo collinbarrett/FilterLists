@@ -2,6 +2,6 @@
 {
     internal interface IHaveSurrogateKey
     {
-        ushort Id { get; }
+        int Id { get; }
     }
 }

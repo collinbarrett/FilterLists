@@ -6,7 +6,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class Syntax : IHaveSurrogateKey
     {
-        public ushort Id { get; private set; }
+        public int Id { get; private set; }
         public string Name { get; private set; } = null!;
         public string? Description { get; private set; }
         public Uri? Url { get; private set; }

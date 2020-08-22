@@ -14,8 +14,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Mappings
 
             const string filterListId = nameof(FilterListTag.FilterList) + "Id";
             const string tagId = nameof(FilterListTag.Tag) + "Id";
-            builder.Property<ushort>(filterListId);
-            builder.Property<ushort>(tagId);
+            builder.Property<int>(filterListId);
+            builder.Property<int>(tagId);
             builder.HasKey(filterListId, tagId);
         }
     }

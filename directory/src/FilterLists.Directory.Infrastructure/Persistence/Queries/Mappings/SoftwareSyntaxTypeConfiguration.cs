@@ -14,8 +14,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Mappings
 
             const string softwareId = nameof(SoftwareSyntax.Software) + "Id";
             const string syntaxId = nameof(SoftwareSyntax.Syntax) + "Id";
-            builder.Property<ushort>(softwareId);
-            builder.Property<ushort>(syntaxId);
+            builder.Property<int>(softwareId);
+            builder.Property<int>(syntaxId);
             builder.HasKey(softwareId, syntaxId);
         }
     }

@@ -14,8 +14,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Mappings
 
             const string filterListId = nameof(FilterListMaintainer.FilterList) + "Id";
             const string maintainerId = nameof(FilterListMaintainer.Maintainer) + "Id";
-            builder.Property<ushort>(filterListId);
-            builder.Property<ushort>(maintainerId);
+            builder.Property<int>(filterListId);
+            builder.Property<int>(maintainerId);
             builder.HasKey(filterListId, maintainerId);
         }
     }

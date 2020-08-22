@@ -14,8 +14,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Mappings
 
             const string upstreamFilterListId = nameof(Fork.UpstreamFilterList) + "Id";
             const string forkFilterListId = nameof(Fork.ForkFilterList) + "Id";
-            builder.Property<ushort>(upstreamFilterListId);
-            builder.Property<ushort>(forkFilterListId);
+            builder.Property<int>(upstreamFilterListId);
+            builder.Property<int>(forkFilterListId);
             builder.HasKey(upstreamFilterListId, forkFilterListId);
             builder.HasOne(f => f.UpstreamFilterList)
                 .WithMany(f => (IEnumerable<TEntity>)f.UpstreamFilterLists)

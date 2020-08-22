@@ -14,8 +14,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Mappings
 
             const string includedInFilterListId = nameof(Merge.IncludedInFilterList) + "Id";
             const string includesFilterListId = nameof(Merge.IncludesFilterList) + "Id";
-            builder.Property<ushort>(includedInFilterListId);
-            builder.Property<ushort>(includesFilterListId);
+            builder.Property<int>(includedInFilterListId);
+            builder.Property<int>(includesFilterListId);
             builder.HasKey(includedInFilterListId, includesFilterListId);
             builder.HasOne(m => m.IncludedInFilterList)
                 .WithMany(f => (IEnumerable<TEntity>)f.IncludedInFilterLists)

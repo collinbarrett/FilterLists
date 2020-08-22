@@ -13,7 +13,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Mappings
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 
             const string filterListId = nameof(ViewUrlPartial.FilterList) + "Id";
-            builder.Property<ushort>(filterListId);
+            builder.Property<int>(filterListId);
             builder.HasKey(filterListId, nameof(ViewUrlPartial.Position));
         }
     }
