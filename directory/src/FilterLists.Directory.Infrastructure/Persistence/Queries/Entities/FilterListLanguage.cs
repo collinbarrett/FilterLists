@@ -2,7 +2,7 @@
 {
     public class FilterListLanguage
     {
-        public FilterList FilterList { get; set; }
-        public Language Language { get; set; }
+        public FilterList FilterList { get; } = null!;
+        public Language Language { get; } = null!;
     }
 }

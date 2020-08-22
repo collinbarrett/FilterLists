@@ -2,7 +2,7 @@
 {
     public class SoftwareSyntax
     {
-        public Software Software { get; set; }
-        public Syntax Syntax { get; set; }
+        public Software Software { get; } = null!;
+        public Syntax Syntax { get; } = null!;
     }
 }

@@ -2,7 +2,7 @@
 {
     public class FilterListTag
     {
-        public FilterList FilterList { get; set; }
-        public Tag Tag { get; set; }
+        public FilterList FilterList { get; } = null!;
+        public Tag Tag { get; } = null!;
     }
 }
