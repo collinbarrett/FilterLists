@@ -2,7 +2,7 @@
 {
     public class FilterListSyntax
     {
-        public FilterList FilterList { get; set; }
-        public Syntax Syntax { get; set; }
+        public FilterList FilterList { get; } = null!;
+        public Syntax Syntax { get; } = null!;
     }
 }

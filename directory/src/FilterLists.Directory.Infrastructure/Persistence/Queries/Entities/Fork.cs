@@ -2,7 +2,7 @@
 {
     public class Fork
     {
-        public FilterList UpstreamFilterList { get; set; }
-        public FilterList ForkFilterList { get; set; }
+        public FilterList UpstreamFilterList { get; } = null!;
+        public FilterList ForkFilterList { get; } = null!;
     }
 }

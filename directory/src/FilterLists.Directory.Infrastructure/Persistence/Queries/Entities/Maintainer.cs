@@ -6,11 +6,11 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class Maintainer : IHaveSurrogateKey
     {
-        public ushort Id { get; set; }
-        public string Name { get; set; }
-        public Uri Url { get; set; }
-        public string EmailAddress { get; set; }
-        public string TwitterHandle { get; set; }
-        public ICollection<FilterListMaintainer> FilterListMaintainers { get; set; }
+        public ushort Id { get; }
+        public string Name { get; } = null!;
+        public Uri? Url { get; }
+        public string? EmailAddress { get; }
+        public string? TwitterHandle { get; }
+        public ICollection<FilterListMaintainer> FilterListMaintainers { get; } = new HashSet<FilterListMaintainer>();
     }
 }

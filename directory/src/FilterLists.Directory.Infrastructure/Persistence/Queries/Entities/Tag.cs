@@ -5,9 +5,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class Tag : IHaveSurrogateKey
     {
-        public ushort Id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public ICollection<FilterListTag> FilterListTags { get; set; }
+        public ushort Id { get; }
+        public string Name { get; } = null!;
+        public string? Description { get; }
+        public ICollection<FilterListTag> FilterListTags { get; } = new HashSet<FilterListTag>();
     }
 }

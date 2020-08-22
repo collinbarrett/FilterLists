@@ -2,7 +2,7 @@
 {
     public class Merge
     {
-        public FilterList IncludedInFilterList { get; set; }
-        public FilterList IncludesFilterList { get; set; }
+        public FilterList IncludedInFilterList { get; } = null!;
+        public FilterList IncludesFilterList { get; } = null!;
     }
 }
