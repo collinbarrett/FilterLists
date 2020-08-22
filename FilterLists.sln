@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Api", "directory\src\FilterLists.Directory.Api\FilterLists.Directory.Api.csproj", "{FE50F471-7DC0-44AB-8DAB-2909E3207FF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directory", "Directory", "{AE5D6471-1B6E-4B06-A313-34EF81F35342}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE50F471-7DC0-44AB-8DAB-2909E3207FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE50F471-7DC0-44AB-8DAB-2909E3207FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE50F471-7DC0-44AB-8DAB-2909E3207FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE50F471-7DC0-44AB-8DAB-2909E3207FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FE50F471-7DC0-44AB-8DAB-2909E3207FF9} = {AE5D6471-1B6E-4B06-A313-34EF81F35342}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {758B57EF-7505-4BE2-90A2-E2DE2EC32909}
+	EndGlobalSection
+EndGlobal
