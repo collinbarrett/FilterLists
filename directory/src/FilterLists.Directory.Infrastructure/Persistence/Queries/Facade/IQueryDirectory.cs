@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-namespace FilterLists.Directory.Infrastructure.Persistence.Queries
+namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
 {
     public interface IQueryDirectory
     {
