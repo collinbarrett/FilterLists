@@ -1,4 +1,6 @@
-﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
+﻿using System;
+using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
+using FilterLists.Directory.Infrastructure.Persistence.Queries.Mappings;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
@@ -16,5 +18,18 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
         public DbSet<Software> Software => Set<Software>();
         public DbSet<Syntax> Syntaxes => Set<Syntax>();
         public DbSet<Tag> Tags => Set<Tag>();
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            _ = modelBuilder ?? throw new ArgumentNullException(nameof(modelBuilder));
+
+            //TODO: figure out why this extension doesn't load configs
+            modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
+
+            modelBuilder.ApplyConfiguration(new DependentTypeConfiguration<Dependent>());
+            modelBuilder.ApplyConfiguration(new FilterListLanguageTypeConfiguration<FilterListLanguage>());
+            modelBuilder.ApplyConfiguration(new ForkTypeConfiguration<Fork>());
+            modelBuilder.ApplyConfiguration(new MergeTypeConfiguration<Merge>());
+        }
     }
 }
