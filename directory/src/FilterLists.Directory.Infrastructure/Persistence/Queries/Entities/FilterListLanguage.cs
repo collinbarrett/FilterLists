@@ -18,9 +18,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 
             const string filterListId = nameof(FilterListLanguage.FilterList) + "Id";
-            const string languageId = nameof(FilterListLanguage.Language) + "Id";
+            const string languageId = nameof(Language) + nameof(Language.Iso6391);
             builder.Property<int>(filterListId);
-            builder.Property<int>(languageId);
+            builder.Property<string>(languageId);
             builder.HasKey(filterListId, languageId);
         }
     }
