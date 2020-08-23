@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
 {
-    internal class DirectoryQueryDbContext : DbContext
+    internal class QueryDbContext : DbContext
     {
-        public DirectoryQueryDbContext(DbContextOptions<DirectoryQueryDbContext> options) : base(options)
+        public QueryDbContext(DbContextOptions<QueryDbContext> options) : base(options)
         {
         }
 
