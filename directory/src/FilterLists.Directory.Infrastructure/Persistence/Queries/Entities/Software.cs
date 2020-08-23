@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
+    [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class Software
     {
         public string Name { get; private set; } = null!;
@@ -15,9 +17,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public IReadOnlyCollection<SoftwareSyntax> SoftwareSyntaxes { get; private set; } = new HashSet<SoftwareSyntax>();
     }
 
-    internal class SoftwareTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : Software
+    internal class SoftwareTypeConfiguration : IEntityTypeConfiguration<Software>
     {
-        public virtual void Configure(EntityTypeBuilder<TEntity> builder)
+        public virtual void Configure(EntityTypeBuilder<Software> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 

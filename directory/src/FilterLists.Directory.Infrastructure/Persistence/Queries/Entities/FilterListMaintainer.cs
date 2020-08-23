@@ -1,19 +1,20 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
+    [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class FilterListMaintainer
     {
         public FilterList FilterList { get; private set; } = null!;
         public Maintainer Maintainer { get; private set; } = null!;
     }
 
-    internal class FilterListMaintainerTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity>
-        where TEntity : FilterListMaintainer
+    internal class FilterListMaintainerTypeConfiguration : IEntityTypeConfiguration<FilterListMaintainer>
     {
-        public virtual void Configure(EntityTypeBuilder<TEntity> builder)
+        public virtual void Configure(EntityTypeBuilder<FilterListMaintainer> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 

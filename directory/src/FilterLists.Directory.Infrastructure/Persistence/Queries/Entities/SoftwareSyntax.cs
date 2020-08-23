@@ -1,19 +1,20 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
+    [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class SoftwareSyntax
     {
         public Software Software { get; private set; } = null!;
         public Syntax Syntax { get; private set; } = null!;
     }
 
-    internal class SoftwareSyntaxTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity>
-        where TEntity : SoftwareSyntax
+    internal class SoftwareSyntaxTypeConfiguration : IEntityTypeConfiguration<SoftwareSyntax>
     {
-        public virtual void Configure(EntityTypeBuilder<TEntity> builder)
+        public virtual void Configure(EntityTypeBuilder<SoftwareSyntax> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 
