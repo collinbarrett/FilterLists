@@ -10,8 +10,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public string Name { get; private set; } = null!;
         public string? Description { get; private set; }
         public Uri? Url { get; private set; }
-        public ICollection<FilterListSyntax> FilterListSyntaxes { get; private set; } = new HashSet<FilterListSyntax>();
-        public ICollection<SoftwareSyntax> SoftwareSyntaxes { get; private set; } = new HashSet<SoftwareSyntax>();
+        public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; private set; } = new HashSet<FilterListSyntax>();
+        public IReadOnlyCollection<SoftwareSyntax> SoftwareSyntaxes { get; private set; } = new HashSet<SoftwareSyntax>();
     }
 
     internal class SyntaxTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : Syntax

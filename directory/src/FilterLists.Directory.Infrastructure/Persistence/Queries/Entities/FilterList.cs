@@ -10,12 +10,12 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public string Name { get; private set; } = null!;
         public string? Description { get; private set; }
         public License? License { get; private set; }
-        public ICollection<FilterListSyntax> FilterListSyntaxes { get; private set; } = new HashSet<FilterListSyntax>();
-        public ICollection<FilterListLanguage> FilterListLanguages { get; private set; } = new HashSet<FilterListLanguage>();
-        public ICollection<FilterListTag> FilterListTags { get; private set; } = new HashSet<FilterListTag>();
+        public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; private set; } = new HashSet<FilterListSyntax>();
+        public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; private set; } = new HashSet<FilterListLanguage>();
+        public IReadOnlyCollection<FilterListTag> FilterListTags { get; private set; } = new HashSet<FilterListTag>();
         public Uri ViewUrl { get; private set; } = null!;
-        public ICollection<ViewUrlPartial> ViewUrlPartials { get; private set; } = new HashSet<ViewUrlPartial>();
-        public ICollection<ViewUrlMirror> ViewUrlMirrors { get; private set; } = new HashSet<ViewUrlMirror>();
+        public IReadOnlyCollection<ViewUrlPartial> ViewUrlPartials { get; private set; } = new HashSet<ViewUrlPartial>();
+        public IReadOnlyCollection<ViewUrlMirror> ViewUrlMirrors { get; private set; } = new HashSet<ViewUrlMirror>();
         public Uri? HomeUrl { get; private set; }
         public Uri? OnionUrl { get; private set; }
         public Uri? PolicyUrl { get; private set; }
@@ -25,13 +25,13 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public Uri? ChatUrl { get; private set; }
         public string? EmailAddress { get; private set; }
         public Uri? DonateUrl { get; private set; }
-        public ICollection<FilterListMaintainer> FilterListMaintainers { get; private set; } = new HashSet<FilterListMaintainer>();
-        public ICollection<Fork> UpstreamFilterLists { get; private set; } = new HashSet<Fork>();
-        public ICollection<Fork> ForkFilterLists { get; private set; } = new HashSet<Fork>();
-        public ICollection<Merge> IncludedInFilterLists { get; private set; } = new HashSet<Merge>();
-        public ICollection<Merge> IncludesFilterLists { get; private set; } = new HashSet<Merge>();
-        public ICollection<Dependent> DependencyFilterLists { get; private set; } = new HashSet<Dependent>();
-        public ICollection<Dependent> DependentFilterLists { get; private set; } = new HashSet<Dependent>();
+        public IReadOnlyCollection<FilterListMaintainer> FilterListMaintainers { get; private set; } = new HashSet<FilterListMaintainer>();
+        public IReadOnlyCollection<Fork> UpstreamFilterLists { get; private set; } = new HashSet<Fork>();
+        public IReadOnlyCollection<Fork> ForkFilterLists { get; private set; } = new HashSet<Fork>();
+        public IReadOnlyCollection<Merge> IncludedInFilterLists { get; private set; } = new HashSet<Merge>();
+        public IReadOnlyCollection<Merge> IncludesFilterLists { get; private set; } = new HashSet<Merge>();
+        public IReadOnlyCollection<Dependent> DependencyFilterLists { get; private set; } = new HashSet<Dependent>();
+        public IReadOnlyCollection<Dependent> DependentFilterLists { get; private set; } = new HashSet<Dependent>();
     }
 
     internal class FilterListTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : FilterList
