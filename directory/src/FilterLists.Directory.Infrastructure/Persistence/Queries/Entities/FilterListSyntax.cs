@@ -17,6 +17,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<FilterListSyntax> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
+            
+            builder.ToTable(nameof(FilterListSyntax) + "es");
 
             const string filterListId = nameof(FilterListSyntax.FilterList) + "Id";
             const string syntaxId = nameof(FilterListSyntax.Syntax) + "Id";

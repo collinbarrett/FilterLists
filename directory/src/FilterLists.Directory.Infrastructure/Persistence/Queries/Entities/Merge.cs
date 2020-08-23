@@ -18,6 +18,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 
+            builder.ToTable(nameof(Merge) + "s");
+
             const string includedInFilterListId = nameof(Merge.IncludedInFilterList) + "Id";
             const string includesFilterListId = nameof(Merge.IncludesFilterList) + "Id";
             builder.Property<int>(includedInFilterListId);
