@@ -1,5 +1,4 @@
-using FilterLists.Directory.Infrastructure.Persistence.Queries;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Facade;
+using FilterLists.Directory.Application;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -20,16 +19,14 @@ namespace FilterLists.Directory.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.RegisterQueryFacade(Configuration);
+            services.AddApplicationServices(Configuration);
         }
 
         public static void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
-            app.UseHttpsRedirection();
             app.UseRouting();
-            app.UseAuthorization();
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }

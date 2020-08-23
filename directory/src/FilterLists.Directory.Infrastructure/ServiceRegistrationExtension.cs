@@ -1,12 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Facade;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
+namespace FilterLists.Directory.Infrastructure
 {
-    public static class QueryFacadeExtension
+    public static class ServiceRegistrationExtension
     {
-        public static void RegisterQueryFacade(this IServiceCollection services, IConfiguration configuration)
+        public static void AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContextPool<QueryDbContext>(o =>
                 o.UseNpgsql(configuration.GetConnectionString("DirectoryConnection")));
