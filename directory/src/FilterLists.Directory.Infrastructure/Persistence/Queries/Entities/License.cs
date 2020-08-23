@@ -10,7 +10,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public string Name { get; private set; } = null!;
         public string? GitHubKey { get; private set; }
         public Uri? Url { get; private set; }
-        public ICollection<FilterList> FilterLists { get; private set; } = new HashSet<FilterList>();
+        public IReadOnlyCollection<FilterList> FilterLists { get; private set; } = new HashSet<FilterList>();
     }
 
     internal class LicenseTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : License
