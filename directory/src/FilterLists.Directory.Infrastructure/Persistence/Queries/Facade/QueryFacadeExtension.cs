@@ -8,9 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
     {
         public static void RegisterQueryFacade(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContextPool<DirectoryQueryDbContext>(o =>
+            services.AddDbContextPool<QueryDbContext>(o =>
                 o.UseNpgsql(configuration.GetConnectionString("DirectoryConnection")));
-            services.AddScoped<IQueryDirectory, DirectoryQueryFacade>();
+            services.AddScoped<IQueryDirectory, QueryFacade>();
         }
     }
 }

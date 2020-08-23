@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
 {
-    internal class DirectoryQueryFacade : IQueryDirectory, IAsyncDisposable
+    internal class QueryFacade : IQueryDirectory, IAsyncDisposable
     {
-        private readonly DirectoryQueryDbContext _dbContext;
+        private readonly QueryDbContext _dbContext;
 
-        public DirectoryQueryFacade(DirectoryQueryDbContext dbContext)
+        public QueryFacade(QueryDbContext dbContext)
         {
             _dbContext = dbContext;
         }
