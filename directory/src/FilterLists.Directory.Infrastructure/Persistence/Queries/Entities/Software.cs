@@ -1,17 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Contracts;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
-    public class Software : IHaveSurrogateKey
+    public class Software
     {
-        public int Id { get; private set; }
-        public string Name { get; private set; } = null!;
+        public string Name { get; } = null!;
         public string? Description { get; private set; }
         public Uri? HomeUrl { get; private set; }
         public Uri? DownloadUrl { get; private set; }
         public bool SupportsAbpUrlScheme { get; private set; }
-        public ICollection<SoftwareSyntax> SoftwareSyntaxes { get; private set; } = new HashSet<SoftwareSyntax>();
+        public ICollection<SoftwareSyntax> SoftwareSyntaxes { get; } = new HashSet<SoftwareSyntax>();
+    }
+
+    internal class SoftwareTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : Software
+    {
+        public virtual void Configure(EntityTypeBuilder<TEntity> builder)
+        {
+            _ = builder ?? throw new ArgumentNullException(nameof(builder));
+
+            const string softwareId = "Id";
+            builder.Property<int>(softwareId);
+            builder.HasKey(softwareId);
+        }
     }
 }

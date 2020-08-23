@@ -1,16 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Contracts;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
-    public class Syntax : IHaveSurrogateKey
+    public class Syntax
     {
-        public int Id { get; private set; }
-        public string Name { get; private set; } = null!;
+        public string Name { get; } = null!;
         public string? Description { get; private set; }
         public Uri? Url { get; private set; }
-        public ICollection<FilterListSyntax> FilterListSyntaxes { get; private set; } = new HashSet<FilterListSyntax>();
-        public ICollection<SoftwareSyntax> SoftwareSyntaxes { get; private set; } = new HashSet<SoftwareSyntax>();
+        public ICollection<FilterListSyntax> FilterListSyntaxes { get; } = new HashSet<FilterListSyntax>();
+        public ICollection<SoftwareSyntax> SoftwareSyntaxes { get; } = new HashSet<SoftwareSyntax>();
+    }
+
+    internal class SyntaxTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : Syntax
+    {
+        public virtual void Configure(EntityTypeBuilder<TEntity> builder)
+        {
+            _ = builder ?? throw new ArgumentNullException(nameof(builder));
+
+            const string syntaxId = "Id";
+            builder.Property<int>(syntaxId);
+            builder.HasKey(syntaxId);
+        }
     }
 }
