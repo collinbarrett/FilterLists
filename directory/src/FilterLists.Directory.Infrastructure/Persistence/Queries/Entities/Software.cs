@@ -7,12 +7,12 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class Software
     {
-        public string Name { get; } = null!;
+        public string Name { get; private set; } = null!;
         public string? Description { get; private set; }
         public Uri? HomeUrl { get; private set; }
         public Uri? DownloadUrl { get; private set; }
         public bool SupportsAbpUrlScheme { get; private set; }
-        public ICollection<SoftwareSyntax> SoftwareSyntaxes { get; } = new HashSet<SoftwareSyntax>();
+        public ICollection<SoftwareSyntax> SoftwareSyntaxes { get; private set; } = new HashSet<SoftwareSyntax>();
     }
 
     internal class SoftwareTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : Software

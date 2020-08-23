@@ -7,11 +7,11 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class Maintainer
     {
-        public string Name { get; } = null!;
+        public string Name { get; private set; } = null!;
         public Uri? Url { get; private set; }
         public string? EmailAddress { get; private set; }
         public string? TwitterHandle { get; private set; }
-        public ICollection<FilterListMaintainer> FilterListMaintainers { get; } = new HashSet<FilterListMaintainer>();
+        public ICollection<FilterListMaintainer> FilterListMaintainers { get; private set; } = new HashSet<FilterListMaintainer>();
     }
 
     internal class MaintainerTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : Maintainer

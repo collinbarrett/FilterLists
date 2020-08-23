@@ -6,8 +6,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class ViewUrlMirror
     {
-        public FilterList FilterList { get; } = null!;
-        public Uri Url { get; } = null!;
+        public FilterList FilterList { get; private set; } = null!;
+        public Uri Url { get; private set; } = null!;
     }
 
     internal class ViewUrlMirrorTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity>
