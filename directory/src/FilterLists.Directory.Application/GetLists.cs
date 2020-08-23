@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Facade;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,9 +16,9 @@ namespace FilterLists.Directory.Application
 
         public class Handler : IRequestHandler<Query, IEnumerable<FilterList>>
         {
-            private readonly IQueryDirectory _context;
+            private readonly IQueryContext _context;
 
-            public Handler(IQueryDirectory context)
+            public Handler(IQueryContext context)
             {
                 _context = context;
             }

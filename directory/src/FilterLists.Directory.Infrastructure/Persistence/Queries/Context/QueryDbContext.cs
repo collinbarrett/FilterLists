@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
+namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context
 {
     internal class QueryDbContext : DbContext
     {

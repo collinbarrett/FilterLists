@@ -4,13 +4,13 @@ using System.Threading.Tasks;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
+namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context
 {
-    internal class QueryFacade : IQueryDirectory, IAsyncDisposable
+    internal class QueryContext : IQueryContext, IAsyncDisposable
     {
         private readonly QueryDbContext _dbContext;
 
-        public QueryFacade(QueryDbContext dbContext)
+        public QueryContext(QueryDbContext dbContext)
         {
             _dbContext = dbContext;
         }

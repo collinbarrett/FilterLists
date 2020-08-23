@@ -1,4 +1,4 @@
-﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Facade;
+﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,7 +11,7 @@ namespace FilterLists.Directory.Infrastructure
         {
             services.AddDbContextPool<QueryDbContext>(o =>
                 o.UseNpgsql(configuration.GetConnectionString("DirectoryConnection")));
-            services.AddScoped<IQueryDirectory, QueryFacade>();
+            services.AddScoped<IQueryContext, QueryContext>();
         }
     }
 }
