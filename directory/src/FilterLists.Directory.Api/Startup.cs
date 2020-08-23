@@ -7,7 +7,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace FilterLists.Directory.Api
 {
-#pragma warning disable CA1812  
+#pragma warning disable CA1812
     internal class Startup
 #pragma warning restore CA1812
     {
@@ -29,7 +29,7 @@ namespace FilterLists.Directory.Api
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
             app.UseRouting();
-            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            app.UseEndpoints(e => { e.MapControllers(); });
         }
     }
 }
