@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
+namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context
 {
-    public interface IQueryDirectory
+    public interface IQueryContext
     {
         IQueryable<FilterList> FilterLists { get; }
         IQueryable<Language> Languages { get; }
