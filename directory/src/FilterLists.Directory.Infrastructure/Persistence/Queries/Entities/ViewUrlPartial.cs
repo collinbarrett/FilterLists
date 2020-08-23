@@ -19,6 +19,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 
+            builder.ToTable(nameof(ViewUrlPartial) + "s");
+
             const string filterListId = nameof(ViewUrlPartial.FilterList) + "Id";
             builder.Property<int>(filterListId);
             builder.HasKey(filterListId, nameof(ViewUrlPartial.Position));

@@ -18,6 +18,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 
+            builder.ToTable(nameof(Fork) + "s");
+
             const string upstreamFilterListId = nameof(Fork.UpstreamFilterList) + "Id";
             const string forkFilterListId = nameof(Fork.ForkFilterList) + "Id";
             builder.Property<int>(upstreamFilterListId);

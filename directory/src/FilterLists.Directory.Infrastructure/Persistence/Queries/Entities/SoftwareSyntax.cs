@@ -18,6 +18,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 
+            builder.ToTable(nameof(SoftwareSyntax) + "es");
+
             const string softwareId = nameof(SoftwareSyntax.Software) + "Id";
             const string syntaxId = nameof(SoftwareSyntax.Syntax) + "Id";
             builder.Property<int>(softwareId);

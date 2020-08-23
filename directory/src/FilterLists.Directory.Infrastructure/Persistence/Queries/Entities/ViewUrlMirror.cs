@@ -18,6 +18,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 
+            builder.ToTable(nameof(ViewUrlMirror) + "s");
+
             const string viewUrlMirrorId = "Id";
             builder.Property<int>(viewUrlMirrorId);
             builder.HasKey(viewUrlMirrorId);

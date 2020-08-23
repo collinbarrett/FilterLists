@@ -18,6 +18,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 
+            builder.ToTable(nameof(FilterListTag) + "s");
+
             const string filterListId = nameof(FilterListTag.FilterList) + "Id";
             const string tagId = nameof(FilterListTag.Tag) + "Id";
             builder.Property<int>(filterListId);

@@ -18,6 +18,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 
+            builder.ToTable(nameof(FilterListLanguage) + "s");
+
             const string filterListId = nameof(FilterListLanguage.FilterList) + "Id";
             const string languageId = nameof(Language) + nameof(Language.Iso6391);
             builder.Property<int>(filterListId);
