@@ -1,22 +1,36 @@
-#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-alpine AS base
+# init base
+FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine AS base
 WORKDIR /app
 EXPOSE 80
-EXPOSE 443
+ENTRYPOINT ./FilterLists.Directory.Api
 
+# init build
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine AS build
+
+# restore
 WORKDIR /src
-COPY ["directory/src/FilterLists.Directory.Api/FilterLists.Directory.Api.csproj", "directory/src/FilterLists.Directory.Api/"]
-RUN dotnet restore "directory/src/FilterLists.Directory.Api/FilterLists.Directory.Api.csproj"
-COPY . .
-WORKDIR "/src/directory/src/FilterLists.Directory.Api"
-RUN dotnet build "FilterLists.Directory.Api.csproj" -c Release -o /app/build
+COPY src/FilterLists.Directory.Domain/FilterLists.Directory.Domain.csproj FilterLists.Directory.Domain/
+COPY src/FilterLists.Directory.Application/FilterLists.Directory.Application.csproj FilterLists.Directory.Application/
+COPY src/FilterLists.Directory.Infrastructure.Migrations/FilterLists.Directory.Infrastructure.Migrations.csproj FilterLists.Directory.Infrastructure.Migrations/
+COPY src/FilterLists.Directory.Infrastructure/FilterLists.Directory.Infrastructure.csproj FilterLists.Directory.Infrastructure/
+WORKDIR /src/FilterLists.Directory.Api
+COPY src/FilterLists.Directory.Api/FilterLists.Directory.Api.csproj .
+RUN dotnet restore
 
+# build
+WORKDIR /src
+COPY src/FilterLists.Directory.Domain/. FilterLists.Directory.Domain/
+COPY src/FilterLists.Directory.Application/. FilterLists.Directory.Application/
+COPY src/FilterLists.Directory.Infrastructure.Migrations/. FilterLists.Directory.Infrastructure.Migrations/
+COPY src/FilterLists.Directory.Infrastructure/. FilterLists.Directory.Infrastructure/
+WORKDIR /src/FilterLists.Directory.Api
+COPY src/FilterLists.Directory.Api/. .
+RUN dotnet build --no-restore -c Release
+
+# publish
 FROM build AS publish
-RUN dotnet publish "FilterLists.Directory.Api.csproj" -c Release -o /app/publish
+RUN dotnet publish --no-build -c Release -o /app/publish -r linux-musl-x64 -p:PublishSingleFile=true
 
+# package final
 FROM base AS final
-WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "FilterLists.Directory.Api.dll"]
