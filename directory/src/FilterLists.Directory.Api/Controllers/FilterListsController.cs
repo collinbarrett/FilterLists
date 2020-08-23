@@ -2,7 +2,6 @@
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Directory.Application;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,7 +19,7 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<FilterList>> Get(CancellationToken cancellationToken)
+        public async Task<IEnumerable<GetLists.FilterListViewModel>> Get(CancellationToken cancellationToken)
         {
             return await _mediator.Send(new GetLists.Query(), cancellationToken);
         }

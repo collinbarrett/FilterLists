@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,11 +10,11 @@ namespace FilterLists.Directory.Application
 {
     public static class GetLists
     {
-        public class Query : IRequest<IEnumerable<FilterList>>
+        public class Query : IRequest<IEnumerable<FilterListViewModel>>
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<FilterList>>
+        public class Handler : IRequestHandler<Query, IEnumerable<FilterListViewModel>>
         {
             private readonly IQueryContext _context;
 
@@ -23,10 +23,23 @@ namespace FilterLists.Directory.Application
                 _context = context;
             }
 
-            public async Task<IEnumerable<FilterList>> Handle(Query request, CancellationToken cancellationToken)
+            public async Task<IEnumerable<FilterListViewModel>> Handle(Query request,
+                CancellationToken cancellationToken)
             {
-                return await _context.FilterLists.ToListAsync(cancellationToken);
+                return await _context.FilterLists
+                    .Select(fl => new FilterListViewModel(fl.Name))
+                    .ToListAsync(cancellationToken);
             }
+        }
+
+        public class FilterListViewModel
+        {
+            public FilterListViewModel(string name)
+            {
+                Name = name;
+            }
+
+            public string Name { get; }
         }
     }
 }
