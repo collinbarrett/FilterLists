@@ -36,25 +36,6 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Facade
             _ = modelBuilder ?? throw new ArgumentNullException(nameof(modelBuilder));
 
             modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
-
-            // TODO: rm explicit below once ApplyConfigurationsFromAssembly() works properly
-            modelBuilder.ApplyConfiguration(new DependentTypeConfiguration<Dependent>());
-            modelBuilder.ApplyConfiguration(new FilterListTypeConfiguration<FilterList>());
-            modelBuilder.ApplyConfiguration(new FilterListLanguageTypeConfiguration<FilterListLanguage>());
-            modelBuilder.ApplyConfiguration(new FilterListMaintainerTypeConfiguration<FilterListMaintainer>());
-            modelBuilder.ApplyConfiguration(new FilterListSyntaxTypeConfiguration<FilterListSyntax>());
-            modelBuilder.ApplyConfiguration(new FilterListTagTypeConfiguration<FilterListTag>());
-            modelBuilder.ApplyConfiguration(new ForkTypeConfiguration<Fork>());
-            modelBuilder.ApplyConfiguration(new LanguageTypeConfiguration<Language>());
-            modelBuilder.ApplyConfiguration(new LicenseTypeConfiguration<License>());
-            modelBuilder.ApplyConfiguration(new MaintainerTypeConfiguration<Maintainer>());
-            modelBuilder.ApplyConfiguration(new MergeTypeConfiguration<Merge>());
-            modelBuilder.ApplyConfiguration(new SoftwareTypeConfiguration<Software>());
-            modelBuilder.ApplyConfiguration(new SoftwareSyntaxTypeConfiguration<SoftwareSyntax>());
-            modelBuilder.ApplyConfiguration(new SyntaxTypeConfiguration<Syntax>());
-            modelBuilder.ApplyConfiguration(new TagTypeConfiguration<Tag>());
-            modelBuilder.ApplyConfiguration(new ViewUrlMirrorTypeConfiguration<ViewUrlMirror>());
-            modelBuilder.ApplyConfiguration(new ViewUrlPartialTypeConfiguration<ViewUrlPartial>());
         }
     }
 }

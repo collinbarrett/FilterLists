@@ -1,19 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
+    [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class Dependent
     {
         public FilterList DependencyFilterList { get; private set; } = null!;
         public FilterList DependentFilterList { get; private set; } = null!;
     }
 
-    internal class DependentTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : Dependent
+    internal class DependentTypeConfiguration : IEntityTypeConfiguration<Dependent>
     {
-        public virtual void Configure(EntityTypeBuilder<TEntity> builder)
+        public virtual void Configure(EntityTypeBuilder<Dependent> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 
@@ -23,10 +24,10 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
             builder.Property<int>(dependentFilterListId);
             builder.HasKey(dependencyFilterListId, dependentFilterListId);
             builder.HasOne(d => d.DependencyFilterList)
-                .WithMany(f => (IEnumerable<TEntity>)f.DependencyFilterLists)
+                .WithMany(f => f.DependencyFilterLists)
                 .HasForeignKey(dependencyFilterListId);
             builder.HasOne(d => d.DependentFilterList)
-                .WithMany(f => (IEnumerable<TEntity>)f.DependentFilterLists)
+                .WithMany(f => f.DependentFilterLists)
                 .HasForeignKey(dependentFilterListId);
         }
     }

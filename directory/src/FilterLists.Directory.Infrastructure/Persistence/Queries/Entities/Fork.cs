@@ -1,19 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
+    [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class Fork
     {
         public FilterList UpstreamFilterList { get; private set; } = null!;
         public FilterList ForkFilterList { get; private set; } = null!;
     }
 
-    internal class ForkTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : Fork
+    internal class ForkTypeConfiguration : IEntityTypeConfiguration<Fork>
     {
-        public virtual void Configure(EntityTypeBuilder<TEntity> builder)
+        public virtual void Configure(EntityTypeBuilder<Fork> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 
@@ -23,10 +24,10 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
             builder.Property<int>(forkFilterListId);
             builder.HasKey(upstreamFilterListId, forkFilterListId);
             builder.HasOne(f => f.UpstreamFilterList)
-                .WithMany(f => (IEnumerable<TEntity>)f.UpstreamFilterLists)
+                .WithMany(f => f.UpstreamFilterLists)
                 .HasForeignKey(upstreamFilterListId);
             builder.HasOne(f => f.ForkFilterList)
-                .WithMany(f => (IEnumerable<TEntity>)f.ForkFilterLists)
+                .WithMany(f => f.ForkFilterLists)
                 .HasForeignKey(forkFilterListId);
         }
     }

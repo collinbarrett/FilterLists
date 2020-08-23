@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
+    [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class FilterList
     {
         public string Name { get; private set; } = null!;
@@ -34,9 +36,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public IReadOnlyCollection<Dependent> DependentFilterLists { get; private set; } = new HashSet<Dependent>();
     }
 
-    internal class FilterListTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : FilterList
+    internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList>
     {
-        public virtual void Configure(EntityTypeBuilder<TEntity> builder)
+        public virtual void Configure(EntityTypeBuilder<FilterList> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 

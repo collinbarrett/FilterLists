@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
+    [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class ViewUrlPartial
     {
         public FilterList FilterList { get; private set; } = null!;
@@ -11,10 +13,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public Uri Url { get; private set; } = null!;
     }
 
-    internal class ViewUrlPartialTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity>
-        where TEntity : ViewUrlPartial
+    internal class ViewUrlPartialTypeConfiguration : IEntityTypeConfiguration<ViewUrlPartial>
     {
-        public virtual void Configure(EntityTypeBuilder<TEntity> builder)
+        public virtual void Configure(EntityTypeBuilder<ViewUrlPartial> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 

@@ -1,19 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
+    [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class Merge
     {
         public FilterList IncludedInFilterList { get; private set; } = null!;
         public FilterList IncludesFilterList { get; private set; } = null!;
     }
 
-    internal class MergeTypeConfiguration<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : Merge
+    internal class MergeTypeConfiguration : IEntityTypeConfiguration<Merge>
     {
-        public virtual void Configure(EntityTypeBuilder<TEntity> builder)
+        public virtual void Configure(EntityTypeBuilder<Merge> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 
@@ -23,10 +24,10 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
             builder.Property<int>(includesFilterListId);
             builder.HasKey(includedInFilterListId, includesFilterListId);
             builder.HasOne(m => m.IncludedInFilterList)
-                .WithMany(f => (IEnumerable<TEntity>)f.IncludedInFilterLists)
+                .WithMany(f => f.IncludedInFilterLists)
                 .HasForeignKey(includedInFilterListId);
             builder.HasOne(m => m.IncludesFilterList)
-                .WithMany(f => (IEnumerable<TEntity>)f.IncludesFilterLists)
+                .WithMany(f => f.IncludesFilterLists)
                 .HasForeignKey(includesFilterListId);
         }
     }
