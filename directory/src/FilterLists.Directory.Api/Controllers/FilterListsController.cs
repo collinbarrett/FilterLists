@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using FilterLists.Directory.Application;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Facade;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Api.Controllers
 {
@@ -12,17 +12,17 @@ namespace FilterLists.Directory.Api.Controllers
     [Route("lists")]
     public class FilterListsController : ControllerBase
     {
-        private readonly IQueryDirectory _queryContext;
+        private readonly IMediator _mediator;
 
-        public FilterListsController(IQueryDirectory queryContext)
+        public FilterListsController(IMediator mediator)
         {
-            _queryContext = queryContext;
+            _mediator = mediator;
         }
 
         [HttpGet]
         public async Task<IEnumerable<FilterList>> Get(CancellationToken cancellationToken)
         {
-            return await _queryContext.FilterLists.ToListAsync(cancellationToken);
+            return await _mediator.Send(new GetLists.Query(), cancellationToken);
         }
     }
 }
