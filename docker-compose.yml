@@ -4,8 +4,8 @@ services:
   filterlists.directory.api:
     image: ${DOCKER_REGISTRY-}filterlistsdirectoryapi
     build:
-      context: .
-      dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile
+      context: ./directory
+      dockerfile: src/FilterLists.Directory.Api/Dockerfile
     depends_on:
       - filterlists.directory.db
     environment:
