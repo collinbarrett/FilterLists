@@ -10,9 +10,9 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine AS build
 # restore
 WORKDIR /src
 COPY src/FilterLists.Directory.Domain/FilterLists.Directory.Domain.csproj FilterLists.Directory.Domain/
-COPY src/FilterLists.Directory.Application/FilterLists.Directory.Application.csproj FilterLists.Directory.Application/
-COPY src/FilterLists.Directory.Infrastructure.Migrations/FilterLists.Directory.Infrastructure.Migrations.csproj FilterLists.Directory.Infrastructure.Migrations/
 COPY src/FilterLists.Directory.Infrastructure/FilterLists.Directory.Infrastructure.csproj FilterLists.Directory.Infrastructure/
+COPY src/FilterLists.Directory.Infrastructure.Migrations/FilterLists.Directory.Infrastructure.Migrations.csproj FilterLists.Directory.Infrastructure.Migrations/
+COPY src/FilterLists.Directory.Application/FilterLists.Directory.Application.csproj FilterLists.Directory.Application/
 WORKDIR /src/FilterLists.Directory.Api
 COPY src/FilterLists.Directory.Api/FilterLists.Directory.Api.csproj .
 RUN dotnet restore
@@ -20,9 +20,9 @@ RUN dotnet restore
 # build
 WORKDIR /src
 COPY src/FilterLists.Directory.Domain/. FilterLists.Directory.Domain/
-COPY src/FilterLists.Directory.Application/. FilterLists.Directory.Application/
-COPY src/FilterLists.Directory.Infrastructure.Migrations/. FilterLists.Directory.Infrastructure.Migrations/
 COPY src/FilterLists.Directory.Infrastructure/. FilterLists.Directory.Infrastructure/
+COPY src/FilterLists.Directory.Infrastructure.Migrations/. FilterLists.Directory.Infrastructure.Migrations/
+COPY src/FilterLists.Directory.Application/. FilterLists.Directory.Application/
 WORKDIR /src/FilterLists.Directory.Api
 COPY src/FilterLists.Directory.Api/. .
 RUN dotnet publish --no-restore -c Release -o /app/publish -r linux-musl-x64 -p:PublishSingleFile=true
