@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context
 {
-    internal class QueryDbContext : DbContext
+    public class QueryDbContext : DbContext
     {
         public QueryDbContext(DbContextOptions<QueryDbContext> options) : base(options)
         {
