@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   filterlists.directory.api:
-    image: ${DOCKER_REGISTRY-}filterlistsdirectoryapi
+    image: ${DOCKER_REGISTRY-}filterlists_directory_api
     build:
       context: ./directory
       dockerfile: src/FilterLists.Directory.Api/Dockerfile
