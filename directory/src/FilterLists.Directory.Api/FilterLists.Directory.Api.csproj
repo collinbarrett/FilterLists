@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <PublishTrimmed>true</PublishTrimmed>
     <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
     <RuntimeIdentifiers>linux-musl-x64;win10-x64</RuntimeIdentifiers>
   </PropertyGroup>
 
