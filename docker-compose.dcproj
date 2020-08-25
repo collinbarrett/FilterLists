@@ -5,7 +5,7 @@
     <DockerTargetOS>Linux</DockerTargetOS>
     <ProjectGuid>8f04c802-830b-4b6d-8d53-5d2a87b4223d</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
-    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/lists</DockerServiceUrl>
+    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/v1/lists</DockerServiceUrl>
     <DockerServiceName>filterlists</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
