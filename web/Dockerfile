@@ -15,7 +15,8 @@ RUN npm ci --only=production
 
 # init build
 FROM node:alpine as build
-COPY --from=install node_modules .
+WORKDIR /usr/src/app/
+COPY --from=install /usr/src/app/node_modules ./node_modules
 
 # build
 COPY . .
