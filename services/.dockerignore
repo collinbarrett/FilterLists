@@ -1,3 +1,5 @@
+# https://github.com/microsoft/vscode-docker/blob/master/src/configureWorkspace/configUtils.ts#L147
+
 **/.classpath
 **/.dockerignore
 **/.env
@@ -21,5 +23,4 @@
 **/obj
 **/secrets.dev.yaml
 **/values.dev.yaml
-LICENSE
 README.md
