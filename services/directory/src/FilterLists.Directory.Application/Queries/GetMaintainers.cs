@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -43,9 +42,7 @@ namespace FilterLists.Directory.Application.Queries
         {
             public MaintainerViewModelProfile()
             {
-                CreateMap<Maintainer, MaintainerViewModel>()
-                    .ForMember(m => m.FilterListIds,
-                        o => o.MapFrom(m => m.FilterListMaintainers.Select(flm => flm.FilterListId)));
+                CreateMap<Maintainer, MaintainerViewModel>();
             }
         }
 
