@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
-    [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class Merge
     {
         public int IncludedInFilterListId { get; set; }

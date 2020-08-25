@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
-    [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class License
     {
         public int Id { get; private set; }
