@@ -3,22 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Api", "services\directory\src\FilterLists.Directory.Api\FilterLists.Directory.Api.csproj", "{FE50F471-7DC0-44AB-8DAB-2909E3207FF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Api", "directory\src\FilterLists.Directory.Api\FilterLists.Directory.Api.csproj", "{FE50F471-7DC0-44AB-8DAB-2909E3207FF9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directory", "Directory", "{AE5D6471-1B6E-4B06-A313-34EF81F35342}"
 	ProjectSection(SolutionItems) = preProject
-		services\directory\.dockerignore = services\directory\.dockerignore
+		directory\.dockerignore = directory\.dockerignore
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Domain", "services\directory\src\FilterLists.Directory.Domain\FilterLists.Directory.Domain.csproj", "{05496C09-DA31-4543-9EC4-D56BCADBB027}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Domain", "directory\src\FilterLists.Directory.Domain\FilterLists.Directory.Domain.csproj", "{05496C09-DA31-4543-9EC4-D56BCADBB027}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Application", "services\directory\src\FilterLists.Directory.Application\FilterLists.Directory.Application.csproj", "{CB1BCB34-C2A1-4E94-A90E-359FB4720B96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Application", "directory\src\FilterLists.Directory.Application\FilterLists.Directory.Application.csproj", "{CB1BCB34-C2A1-4E94-A90E-359FB4720B96}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure", "services\directory\src\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj", "{74C798F8-892A-40F2-8D2E-395E83853771}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure", "directory\src\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj", "{74C798F8-892A-40F2-8D2E-395E83853771}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure.Migrations", "services\directory\src\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj", "{4F7D51FE-A1F3-4473-A8C3-D57EBDD8E60E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure.Migrations", "directory\src\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj", "{4F7D51FE-A1F3-4473-A8C3-D57EBDD8E60E}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8F04C802-830B-4B6D-8D53-5D2A87B4223D}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "..\docker-compose.dcproj", "{8F04C802-830B-4B6D-8D53-5D2A87B4223D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A534ED99-43A6-4CD2-9288-BD35F82F4E88}"
 	ProjectSection(SolutionItems) = preProject
