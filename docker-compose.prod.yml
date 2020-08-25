@@ -1,0 +1,15 @@
+# overrides for production deployment
+
+version: "3.8"
+
+services:
+  filterlists.reverse_proxy:
+    ports:
+      - "443:443"
+    volumes:
+      - ./reverse-proxy/conf.d:/etc/nginx/conf.d:ro
+      - ~/cert:/etc/nginx/cert:ro
+
+  filterlists.web:
+    build:
+      context: . # hack for https://github.com/docker/compose/issues/4047
