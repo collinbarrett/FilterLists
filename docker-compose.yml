@@ -20,8 +20,6 @@ services:
       - directory
     depends_on:
       - directory.db
-    volumes:
-      - directory.db:/var/lib/postgresql/data
     environment:
       ConnectionStrings__DirectoryConnection: ${DIRECTORY_CONNECTION_STRING}
 
@@ -29,6 +27,8 @@ services:
     image: postgres:alpine
     networks:
       - directory
+    volumes:
+      - directory.db:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: ${DIRECTORY_DB_USER}
       POSTGRES_PASSWORD: ${DIRECTORY_DB_PASSWORD}
