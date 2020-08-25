@@ -1,6 +1,6 @@
 # init base
 FROM nginx:alpine as base
-COPY reverse-proxy/conf.d /etc/nginx/conf.d
+COPY server/conf.d /etc/nginx/conf.d
 
 # init install
 FROM node:alpine as install
