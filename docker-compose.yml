@@ -14,7 +14,7 @@ services:
   filterlists.directory.web:
     image: ${DOCKER_REGISTRY-}filterlists_directory_web
     build:
-      context: ./directory/web
+      context: ./web
     networks:
       - reverse_proxy
     depends_on:
@@ -23,8 +23,8 @@ services:
   filterlists.directory.api:
     image: ${DOCKER_REGISTRY-}filterlists_directory_api
     build:
-      context: ./directory/api
-      dockerfile: src/FilterLists.Directory.Api/Dockerfile
+      context: ./services
+      dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile
     networks:
       - reverse_proxy
       - directory.api
