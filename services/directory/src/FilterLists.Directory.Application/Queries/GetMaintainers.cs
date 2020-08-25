@@ -45,7 +45,7 @@ namespace FilterLists.Directory.Application.Queries
             {
                 CreateMap<Maintainer, MaintainerViewModel>()
                     .ForMember(m => m.FilterListIds,
-                        o => o.MapFrom(m => m.FilterListMaintainers.Select(fl => fl.FilterList.Id)));
+                        o => o.MapFrom(m => m.FilterListMaintainers.Select(flm => flm.FilterListId)));
             }
         }
 
