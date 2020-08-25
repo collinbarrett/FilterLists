@@ -6,7 +6,7 @@
     <ProjectGuid>8f04c802-830b-4b6d-8d53-5d2a87b4223d</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/lists</DockerServiceUrl>
-    <DockerServiceName>filterlists.directory.api</DockerServiceName>
+    <DockerServiceName>filterlists</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include=".env" />
