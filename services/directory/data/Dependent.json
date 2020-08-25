@@ -1,0 +1,30 @@
+[
+  {
+    "dependencyFilterListId": 301,
+    "dependentFilterListId": 344
+  },
+  {
+    "dependencyFilterListId": 479,
+    "dependentFilterListId": 344
+  },
+  {
+    "dependencyFilterListId": 97,
+    "dependentFilterListId": 819
+  },
+  {
+    "dependencyFilterListId": 97,
+    "dependentFilterListId": 852
+  },
+  {
+    "dependencyFilterListId": 97,
+    "dependentFilterListId": 853
+  },
+  {
+    "dependencyFilterListId": 60,
+    "dependentFilterListId": 1816
+  },
+  {
+    "dependencyFilterListId": 347,
+    "dependentFilterListId": 1817
+  }
+]

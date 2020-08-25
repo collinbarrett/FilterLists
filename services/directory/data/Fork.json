@@ -1,0 +1,54 @@
+[
+  {
+    "forkFilterListId": 350,
+    "upstreamFilterListId": 12
+  },
+  {
+    "forkFilterListId": 563,
+    "upstreamFilterListId": 16
+  },
+  {
+    "forkFilterListId": 16,
+    "upstreamFilterListId": 59
+  },
+  {
+    "forkFilterListId": 16,
+    "upstreamFilterListId": 99
+  },
+  {
+    "forkFilterListId": 158,
+    "upstreamFilterListId": 258
+  },
+  {
+    "forkFilterListId": 163,
+    "upstreamFilterListId": 262
+  },
+  {
+    "forkFilterListId": 16,
+    "upstreamFilterListId": 278
+  },
+  {
+    "forkFilterListId": 164,
+    "upstreamFilterListId": 293
+  },
+  {
+    "forkFilterListId": 167,
+    "upstreamFilterListId": 295
+  },
+  {
+    "forkFilterListId": 166,
+    "upstreamFilterListId": 301
+  },
+  {
+    "forkFilterListId": 565,
+    "upstreamFilterListId": 301
+  },
+  {
+    "forkFilterListId": 312,
+    "upstreamFilterListId": 311
+  },
+  {
+    "forkFilterListId": 313,
+    "upstreamFilterListId": 311
+  }
+]
