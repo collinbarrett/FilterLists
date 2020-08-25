@@ -6,7 +6,7 @@ using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace FilterLists.Directory.Application
+namespace FilterLists.Directory.Application.Queries
 {
     public static class GetLists
     {
