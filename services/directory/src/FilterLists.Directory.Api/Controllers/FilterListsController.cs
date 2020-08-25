@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Directory.Application;
+using FilterLists.Directory.Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
