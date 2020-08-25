@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -23,30 +24,42 @@ namespace FilterLists.Directory.Application.Queries
                 _context = context;
             }
 
-            public async Task<IEnumerable<ListViewModel>> Handle(Query request,
+            public async Task<IEnumerable<ListViewModel>> Handle(
+                Query request,
                 CancellationToken cancellationToken)
             {
                 return await _context.FilterLists
                     .Select(fl => new ListViewModel
                     {
-                        Id = default,
+                        Id = fl.Id,
                         Name = fl.Name,
                         Description = fl.Description,
-                        LicenseId = default,
-                        SyntaxId = default,
-                        LanguageIds = default,
-                        TagIds = default,
-                        ViewUrl = default,
-                        ViewUrlMirrors = default,
-                        HomeUrl = default,
-                        PolicyUrl = default,
-                        SubmissionUrl = default,
-                        IssuesUrl = default,
-                        ForumUrl = default,
-                        ChatUrl = default,
-                        EmailAddress = default,
-                        DonateUrl = default,
-                        MaintainerIds = default
+                        LicenseId = fl.License == null
+                            ? default
+                            : fl.License.Id,
+                        SyntaxId = fl.FilterListSyntaxes.Any()
+                            ? fl.FilterListSyntaxes.First().Syntax.Id
+                            : default,
+                        LanguageIds = fl.FilterListLanguages.Select(fll => fll.Language.Iso6391),
+                        TagIds = fl.FilterListTags.Select(flt => flt.Tag.Id),
+                        ViewUrl = fl.SegmentViewUrls.Any()
+                            ? fl.SegmentViewUrls.OrderBy(s => s.Position).First().Url
+                            : default,
+                        ViewUrlMirrors = fl.SegmentViewUrls.Any()
+                            ? fl.SegmentViewUrls.OrderBy(s => s.Position)
+                                .First()
+                                .SegmentViewUrlMirrors
+                                .Select(m => m.Url)
+                            : default,
+                        HomeUrl = fl.HomeUrl,
+                        PolicyUrl = fl.PolicyUrl,
+                        SubmissionUrl = fl.SubmissionUrl,
+                        IssuesUrl = fl.IssuesUrl,
+                        ForumUrl = fl.ForumUrl,
+                        ChatUrl = fl.ChatUrl,
+                        EmailAddress = fl.EmailAddress,
+                        DonateUrl = fl.DonateUrl,
+                        MaintainerIds = fl.FilterListMaintainers.Select(flm => flm.Maintainer.Id)
                     })
                     .ToListAsync(cancellationToken);
             }
@@ -55,23 +68,23 @@ namespace FilterLists.Directory.Application.Queries
         public class ListViewModel
         {
             public int Id { get; set; }
-            public string Name { get; set; }
+            public string Name { get; set; } = null!;
             public string? Description { get; set; }
             public int? LicenseId { get; set; }
             public int? SyntaxId { get; set; }
-            public IEnumerable<int> LanguageIds { get; set; }
-            public IEnumerable<int> TagIds { get; set; }
-            public string ViewUrl { get; set; }
-            public IEnumerable<string> ViewUrlMirrors { get; set; }
-            public string HomeUrl { get; set; }
-            public string PolicyUrl { get; set; }
-            public string SubmissionUrl { get; set; }
-            public string IssuesUrl { get; set; }
-            public string ForumUrl { get; set; }
-            public string ChatUrl { get; set; }
-            public string EmailAddress { get; set; }
-            public string DonateUrl { get; set; }
-            public IEnumerable<int> MaintainerIds { get; set; }
+            public IEnumerable<string>? LanguageIds { get; set; }
+            public IEnumerable<int>? TagIds { get; set; }
+            public Uri? ViewUrl { get; set; }
+            public IEnumerable<Uri>? ViewUrlMirrors { get; set; }
+            public Uri? HomeUrl { get; set; }
+            public Uri? PolicyUrl { get; set; }
+            public Uri? SubmissionUrl { get; set; }
+            public Uri? IssuesUrl { get; set; }
+            public Uri? ForumUrl { get; set; }
+            public Uri? ChatUrl { get; set; }
+            public string? EmailAddress { get; set; }
+            public Uri? DonateUrl { get; set; }
+            public IEnumerable<int>? MaintainerIds { get; set; }
         }
     }
 }
