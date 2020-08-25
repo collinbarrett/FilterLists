@@ -15,9 +15,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; private set; } = new HashSet<FilterListSyntax>();
         public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; private set; } = new HashSet<FilterListLanguage>();
         public IReadOnlyCollection<FilterListTag> FilterListTags { get; private set; } = new HashSet<FilterListTag>();
-        public Uri ViewUrl { get; private set; } = null!;
-        public IReadOnlyCollection<ViewUrlPartial> ViewUrlPartials { get; private set; } = new HashSet<ViewUrlPartial>();
-        public IReadOnlyCollection<ViewUrlMirror> ViewUrlMirrors { get; private set; } = new HashSet<ViewUrlMirror>();
+        public IReadOnlyCollection<SegmentViewUrl> SegmentViewUrls { get; private set; } = new HashSet<SegmentViewUrl>();
         public Uri? HomeUrl { get; private set; }
         public Uri? OnionUrl { get; private set; }
         public Uri? PolicyUrl { get; private set; }

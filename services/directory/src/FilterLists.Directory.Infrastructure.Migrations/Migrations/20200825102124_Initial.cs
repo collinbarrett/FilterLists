@@ -105,7 +105,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     Name = table.Column<string>(nullable: false),
                     Description = table.Column<string>(nullable: true),
                     LicenseId = table.Column<int>(nullable: true),
-                    ViewUrl = table.Column<string>(nullable: false),
                     HomeUrl = table.Column<string>(nullable: true),
                     OnionUrl = table.Column<string>(nullable: true),
                     PolicyUrl = table.Column<string>(nullable: true),
@@ -320,19 +319,20 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ViewUrlMirrors",
+                name: "SegmentViewUrls",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     FilterListId = table.Column<int>(nullable: false),
+                    Position = table.Column<int>(nullable: false),
                     Url = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ViewUrlMirrors", x => x.Id);
+                    table.PrimaryKey("PK_SegmentViewUrls", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ViewUrlMirrors_FilterLists_FilterListId",
+                        name: "FK_SegmentViewUrls_FilterLists_FilterListId",
                         column: x => x.FilterListId,
                         principalTable: "FilterLists",
                         principalColumn: "Id",
@@ -340,20 +340,21 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ViewUrlPartials",
+                name: "SegmentViewUrlMirrors",
                 columns: table => new
                 {
-                    Position = table.Column<int>(nullable: false),
-                    FilterListId = table.Column<int>(nullable: false),
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    SegmentViewUrlId = table.Column<int>(nullable: false),
                     Url = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ViewUrlPartials", x => new { x.FilterListId, x.Position });
+                    table.PrimaryKey("PK_SegmentViewUrlMirrors", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ViewUrlPartials_FilterLists_FilterListId",
-                        column: x => x.FilterListId,
-                        principalTable: "FilterLists",
+                        name: "FK_SegmentViewUrlMirrors_SegmentViewUrls_SegmentViewUrlId",
+                        column: x => x.SegmentViewUrlId,
+                        principalTable: "SegmentViewUrls",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -399,14 +400,20 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 column: "IncludesFilterListId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_SegmentViewUrlMirrors_SegmentViewUrlId",
+                table: "SegmentViewUrlMirrors",
+                column: "SegmentViewUrlId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SegmentViewUrls_FilterListId_Position",
+                table: "SegmentViewUrls",
+                columns: new[] { "FilterListId", "Position" },
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_SoftwareSyntaxes_SyntaxId",
                 table: "SoftwareSyntaxes",
                 column: "SyntaxId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_ViewUrlMirrors_FilterListId",
-                table: "ViewUrlMirrors",
-                column: "FilterListId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -433,13 +440,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "Merges");
 
             migrationBuilder.DropTable(
+                name: "SegmentViewUrlMirrors");
+
+            migrationBuilder.DropTable(
                 name: "SoftwareSyntaxes");
-
-            migrationBuilder.DropTable(
-                name: "ViewUrlMirrors");
-
-            migrationBuilder.DropTable(
-                name: "ViewUrlPartials");
 
             migrationBuilder.DropTable(
                 name: "Languages");
@@ -449,6 +453,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             migrationBuilder.DropTable(
                 name: "Tags");
+
+            migrationBuilder.DropTable(
+                name: "SegmentViewUrls");
 
             migrationBuilder.DropTable(
                 name: "Software");
