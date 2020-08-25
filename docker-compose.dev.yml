@@ -1,4 +1,4 @@
-# overrides for production deployment
+# overrides for local development (outside of Visual Studio)
 
 version: "3.8"
 
@@ -6,7 +6,7 @@ services:
   reverse_proxy:
     image: nginx:alpine
     ports:
-      - "443:443"
+      - "80:80"
     networks:
       - reverse_proxy
     depends_on:
@@ -14,9 +14,4 @@ services:
       - directory.api
     volumes:
       - ./reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
-      - ./reverse-proxy/conf.d:/etc/nginx/conf.d:ro
-      - ~/cert:/etc/nginx/cert:ro
-
-  web:
-    build:
-      context: . # hack for https://github.com/docker/compose/issues/4047
+      - ./reverse-proxy/conf.d.dev:/etc/nginx/conf.d:ro

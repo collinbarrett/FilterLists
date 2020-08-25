@@ -1,16 +1,16 @@
 version: "3.8"
 
 services:
-  filterlists.web:
+  web:
     image: ${DOCKER_REGISTRY-}filterlists_web
     build:
       context: ./web
     networks:
       - reverse_proxy
     depends_on:
-      - filterlists.directory.api
+      - directory.api
 
-  filterlists.directory.api:
+  directory.api:
     image: ${DOCKER_REGISTRY-}filterlists_directory_api
     build:
       context: ./services
@@ -19,13 +19,13 @@ services:
       - reverse_proxy
       - directory
     depends_on:
-      - filterlists.directory.db
+      - directory.db
     volumes:
       - directory.db:/var/lib/postgresql/data
     environment:
       ConnectionStrings__DirectoryConnection: ${DIRECTORY_CONNECTION_STRING}
 
-  filterlists.directory.db:
+  directory.db:
     image: postgres:alpine
     networks:
       - directory
