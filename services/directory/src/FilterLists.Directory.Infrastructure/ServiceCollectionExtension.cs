@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.Directory.Infrastructure
 {
-    public static class ServiceRegistrationExtension
+    public static class ServiceCollectionExtension
     {
         public static void AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {

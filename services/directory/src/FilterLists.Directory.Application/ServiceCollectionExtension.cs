@@ -5,11 +5,11 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.Directory.Application
 {
-    public static class ServicesRegistrationExtension
+    public static class ServiceCollectionExtension
     {
         public static void AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddMediatR(typeof(ServicesRegistrationExtension).Assembly);
+            services.AddMediatR(typeof(ServiceCollectionExtension).Assembly);
             services.AddInfrastructureServices(configuration);
         }
     }
