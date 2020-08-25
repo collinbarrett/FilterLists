@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -11,13 +10,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Application.Queries
 {
-    public static class GetLicenses
+    public static class GetTags
     {
-        public class Query : IRequest<IEnumerable<LicenseViewModel>>
+        public class Query : IRequest<IEnumerable<TagViewModel>>
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<LicenseViewModel>>
+        public class Handler : IRequestHandler<Query, IEnumerable<TagViewModel>>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -28,30 +27,29 @@ namespace FilterLists.Directory.Application.Queries
                 _mapper = mapper;
             }
 
-            public async Task<IEnumerable<LicenseViewModel>> Handle(
+            public async Task<IEnumerable<TagViewModel>> Handle(
                 Query request,
                 CancellationToken cancellationToken)
             {
-                return await _context.Licenses
-                    .ProjectTo<LicenseViewModel>(_mapper.ConfigurationProvider)
+                return await _context.Tags
+                    .ProjectTo<TagViewModel>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
         }
 
-        public class LicenseViewModelProfile : Profile
+        public class TagViewModelProfile : Profile
         {
-            public LicenseViewModelProfile()
+            public TagViewModelProfile()
             {
-                CreateMap<License, LicenseViewModel>();
+                CreateMap<Tag, TagViewModel>();
             }
         }
 
-        public class LicenseViewModel
+        public class TagViewModel
         {
             public int Id { get; private set; }
             public string Name { get; private set; } = null!;
-            public string? GitHubKey { get; private set; }
-            public Uri? Url { get; private set; }
+            public string? Description { get; private set; }
             public IEnumerable<int>? FilterListIds { get; private set; }
         }
     }

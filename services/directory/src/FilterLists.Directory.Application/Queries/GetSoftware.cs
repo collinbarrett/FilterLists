@@ -11,13 +11,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Application.Queries
 {
-    public static class GetLicenses
+    public static class GetSoftware
     {
-        public class Query : IRequest<IEnumerable<LicenseViewModel>>
+        public class Query : IRequest<IEnumerable<SoftwareViewModel>>
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<LicenseViewModel>>
+        public class Handler : IRequestHandler<Query, IEnumerable<SoftwareViewModel>>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -28,31 +28,33 @@ namespace FilterLists.Directory.Application.Queries
                 _mapper = mapper;
             }
 
-            public async Task<IEnumerable<LicenseViewModel>> Handle(
+            public async Task<IEnumerable<SoftwareViewModel>> Handle(
                 Query request,
                 CancellationToken cancellationToken)
             {
-                return await _context.Licenses
-                    .ProjectTo<LicenseViewModel>(_mapper.ConfigurationProvider)
+                return await _context.Software
+                    .ProjectTo<SoftwareViewModel>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
         }
 
-        public class LicenseViewModelProfile : Profile
+        public class SoftwareViewModelProfile : Profile
         {
-            public LicenseViewModelProfile()
+            public SoftwareViewModelProfile()
             {
-                CreateMap<License, LicenseViewModel>();
+                CreateMap<Software, SoftwareViewModel>();
             }
         }
 
-        public class LicenseViewModel
+        public class SoftwareViewModel
         {
             public int Id { get; private set; }
             public string Name { get; private set; } = null!;
-            public string? GitHubKey { get; private set; }
-            public Uri? Url { get; private set; }
-            public IEnumerable<int>? FilterListIds { get; private set; }
+            public string? Description { get; private set; }
+            public Uri? HomeUrl { get; private set; }
+            public Uri? DownloadUrl { get; private set; }
+            public bool SupportsAbpUrlScheme { get; private set; }
+            public IEnumerable<int>? SyntaxIds { get; private set; }
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -11,13 +10,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Application.Queries
 {
-    public static class GetLicenses
+    public static class GetLanguages
     {
-        public class Query : IRequest<IEnumerable<LicenseViewModel>>
+        public class Query : IRequest<IEnumerable<LanguageViewModel>>
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<LicenseViewModel>>
+        public class Handler : IRequestHandler<Query, IEnumerable<LanguageViewModel>>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -28,12 +27,12 @@ namespace FilterLists.Directory.Application.Queries
                 _mapper = mapper;
             }
 
-            public async Task<IEnumerable<LicenseViewModel>> Handle(
+            public async Task<IEnumerable<LanguageViewModel>> Handle(
                 Query request,
                 CancellationToken cancellationToken)
             {
-                return await _context.Licenses
-                    .ProjectTo<LicenseViewModel>(_mapper.ConfigurationProvider)
+                return await _context.Languages
+                    .ProjectTo<LanguageViewModel>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
         }
@@ -42,16 +41,14 @@ namespace FilterLists.Directory.Application.Queries
         {
             public LicenseViewModelProfile()
             {
-                CreateMap<License, LicenseViewModel>();
+                CreateMap<Language, LanguageViewModel>();
             }
         }
 
-        public class LicenseViewModel
+        public class LanguageViewModel
         {
-            public int Id { get; private set; }
+            public string Iso6391 { get; private set; } = null!;
             public string Name { get; private set; } = null!;
-            public string? GitHubKey { get; private set; }
-            public Uri? Url { get; private set; }
             public IEnumerable<int>? FilterListIds { get; private set; }
         }
     }

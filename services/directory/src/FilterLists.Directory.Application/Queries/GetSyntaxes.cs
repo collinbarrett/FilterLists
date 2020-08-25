@@ -11,13 +11,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Application.Queries
 {
-    public static class GetLicenses
+    public static class GetSyntaxes
     {
-        public class Query : IRequest<IEnumerable<LicenseViewModel>>
+        public class Query : IRequest<IEnumerable<SyntaxViewModel>>
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<LicenseViewModel>>
+        public class Handler : IRequestHandler<Query, IEnumerable<SyntaxViewModel>>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -28,31 +28,32 @@ namespace FilterLists.Directory.Application.Queries
                 _mapper = mapper;
             }
 
-            public async Task<IEnumerable<LicenseViewModel>> Handle(
+            public async Task<IEnumerable<SyntaxViewModel>> Handle(
                 Query request,
                 CancellationToken cancellationToken)
             {
-                return await _context.Licenses
-                    .ProjectTo<LicenseViewModel>(_mapper.ConfigurationProvider)
+                return await _context.Syntaxes
+                    .ProjectTo<SyntaxViewModel>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
         }
 
-        public class LicenseViewModelProfile : Profile
+        public class SyntaxViewModelProfile : Profile
         {
-            public LicenseViewModelProfile()
+            public SyntaxViewModelProfile()
             {
-                CreateMap<License, LicenseViewModel>();
+                CreateMap<Syntax, SyntaxViewModel>();
             }
         }
 
-        public class LicenseViewModel
+        public class SyntaxViewModel
         {
             public int Id { get; private set; }
             public string Name { get; private set; } = null!;
-            public string? GitHubKey { get; private set; }
+            public string? Description { get; private set; }
             public Uri? Url { get; private set; }
             public IEnumerable<int>? FilterListIds { get; private set; }
+            public IEnumerable<int>? SoftwareIds { get; private set; }
         }
     }
 }
