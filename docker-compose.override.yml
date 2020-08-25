@@ -1,11 +1,17 @@
+# overrides for Visual Studio development
+
 version: "3.8"
 
 services:
+  filterlists.reverse_proxy:
+    ports:
+      - "80:80"
+    volumes:
+      - ./reverse-proxy/conf.d.dev:/etc/nginx/conf.d:ro
+
   filterlists.directory.api:
     build:
-      dockerfile: src/FilterLists.Directory.Api/debug.Dockerfile
+      dockerfile: directory/src/FilterLists.Directory.Api/debug.Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
-    ports:
-      - "80"
