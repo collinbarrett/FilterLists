@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
+using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,10 +20,12 @@ namespace FilterLists.Directory.Application.Queries
         public class Handler : IRequestHandler<Query, IEnumerable<ListViewModel>>
         {
             private readonly IQueryContext _context;
+            private readonly IMapper _mapper;
 
-            public Handler(IQueryContext context)
+            public Handler(IQueryContext context, IMapper mapper)
             {
                 _context = context;
+                _mapper = mapper;
             }
 
             public async Task<IEnumerable<ListViewModel>> Handle(
@@ -29,62 +33,47 @@ namespace FilterLists.Directory.Application.Queries
                 CancellationToken cancellationToken)
             {
                 return await _context.FilterLists
-                    .Select(fl => new ListViewModel
-                    {
-                        Id = fl.Id,
-                        Name = fl.Name,
-                        Description = fl.Description,
-                        LicenseId = fl.License == null
-                            ? default
-                            : fl.License.Id,
-                        SyntaxId = fl.FilterListSyntaxes.Any()
-                            ? fl.FilterListSyntaxes.First().Syntax.Id
-                            : default,
-                        LanguageIds = fl.FilterListLanguages.Select(fll => fll.Language.Iso6391),
-                        TagIds = fl.FilterListTags.Select(flt => flt.Tag.Id),
-                        ViewUrl = fl.SegmentViewUrls.Any()
-                            ? fl.SegmentViewUrls.OrderBy(s => s.Position).First().Url
-                            : default,
-                        ViewUrlMirrors = fl.SegmentViewUrls.Any()
-                            ? fl.SegmentViewUrls.OrderBy(s => s.Position)
-                                .First()
-                                .SegmentViewUrlMirrors
-                                .Select(m => m.Url)
-                            : default,
-                        HomeUrl = fl.HomeUrl,
-                        PolicyUrl = fl.PolicyUrl,
-                        SubmissionUrl = fl.SubmissionUrl,
-                        IssuesUrl = fl.IssuesUrl,
-                        ForumUrl = fl.ForumUrl,
-                        ChatUrl = fl.ChatUrl,
-                        EmailAddress = fl.EmailAddress,
-                        DonateUrl = fl.DonateUrl,
-                        MaintainerIds = fl.FilterListMaintainers.Select(flm => flm.Maintainer.Id)
-                    })
+                    .ProjectTo<ListViewModel>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
+            }
+        }
+
+        public class ListViewModelProfile : Profile
+        {
+            public ListViewModelProfile()
+            {
+                CreateMap<FilterList, ListViewModel>();
             }
         }
 
         public class ListViewModel
         {
-            public int Id { get; set; }
-            public string Name { get; set; } = null!;
-            public string? Description { get; set; }
-            public int? LicenseId { get; set; }
-            public int? SyntaxId { get; set; }
-            public IEnumerable<string>? LanguageIds { get; set; }
-            public IEnumerable<int>? TagIds { get; set; }
-            public Uri? ViewUrl { get; set; }
-            public IEnumerable<Uri>? ViewUrlMirrors { get; set; }
-            public Uri? HomeUrl { get; set; }
-            public Uri? PolicyUrl { get; set; }
-            public Uri? SubmissionUrl { get; set; }
-            public Uri? IssuesUrl { get; set; }
-            public Uri? ForumUrl { get; set; }
-            public Uri? ChatUrl { get; set; }
-            public string? EmailAddress { get; set; }
-            public Uri? DonateUrl { get; set; }
-            public IEnumerable<int>? MaintainerIds { get; set; }
+            public int Id { get; private set; }
+            public string Name { get; private set; } = null!;
+            public string? Description { get; private set; }
+            public int? LicenseId { get; private set; }
+            public IEnumerable<int>? SyntaxIds { get; private set; }
+            public IEnumerable<string>? LanguageIso6391s { get; private set; }
+
+            public IEnumerable<int>? TagIds { get; private set; }
+
+            //public IEnumerable<SegmentViewUrl>? SegmentViewUrls { get; private set; }
+            public Uri? HomeUrl { get; private set; }
+            public Uri? OnionUrl { get; private set; }
+            public Uri? PolicyUrl { get; private set; }
+            public Uri? SubmissionUrl { get; private set; }
+            public Uri? IssuesUrl { get; private set; }
+            public Uri? ForumUrl { get; private set; }
+            public Uri? ChatUrl { get; private set; }
+            public string? EmailAddress { get; private set; }
+            public Uri? DonateUrl { get; private set; }
+            public IEnumerable<int>? MaintainerIds { get; private set; }
+            public IEnumerable<int>? UpstreamFilterListIds { get; private set; }
+            public IEnumerable<int>? ForkFilterListIds { get; private set; }
+            public IEnumerable<int>? IncludedInFilterListIds { get; private set; }
+            public IEnumerable<int>? IncludesFilterListIds { get; private set; }
+            public IEnumerable<int>? DependencyFilterListIds { get; private set; }
+            public IEnumerable<int>? DependentFilterListIds { get; private set; }
         }
     }
 }
