@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class FilterList
     {
+        public int Id { get; private set; }
         public string Name { get; private set; } = null!;
         public string? Description { get; private set; }
         public License? License { get; private set; }
@@ -32,17 +31,5 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public IReadOnlyCollection<Merge> IncludesFilterLists { get; private set; } = new HashSet<Merge>();
         public IReadOnlyCollection<Dependent> DependencyFilterLists { get; private set; } = new HashSet<Dependent>();
         public IReadOnlyCollection<Dependent> DependentFilterLists { get; private set; } = new HashSet<Dependent>();
-    }
-
-    internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList>
-    {
-        public virtual void Configure(EntityTypeBuilder<FilterList> builder)
-        {
-            _ = builder ?? throw new ArgumentNullException(nameof(builder));
-
-            const string filterListId = "Id";
-            builder.Property<int>(filterListId);
-            builder.HasKey(filterListId);
-        }
     }
 }
