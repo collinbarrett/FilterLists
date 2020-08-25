@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
@@ -32,5 +34,28 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public IReadOnlyCollection<Merge> IncludesFilterLists { get; private set; } = new HashSet<Merge>();
         public IReadOnlyCollection<Dependent> DependencyFilterLists { get; private set; } = new HashSet<Dependent>();
         public IReadOnlyCollection<Dependent> DependentFilterLists { get; private set; } = new HashSet<Dependent>();
+    }
+
+    internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList>
+    {
+        public virtual void Configure(EntityTypeBuilder<FilterList> builder)
+        {
+            _ = builder ?? throw new ArgumentNullException(nameof(builder));
+
+            builder.OwnsMany(fl => fl.SegmentViewUrls,
+                o =>
+                {
+                    o.ToTable(nameof(SegmentViewUrl) + "s");
+                    o.HasKey("Id");
+                    o.HasIndex(nameof(FilterList) + "Id", nameof(SegmentViewUrl.Position)).IsUnique();
+                    o.OwnsMany(p => p.SegmentViewUrlMirrors,
+                        m =>
+                        {
+                            m.ToTable(nameof(SegmentViewUrlMirror) + "s");
+                            m.Property<int>("Id");
+                            m.HasKey("Id");
+                        });
+                });
+        }
     }
 }

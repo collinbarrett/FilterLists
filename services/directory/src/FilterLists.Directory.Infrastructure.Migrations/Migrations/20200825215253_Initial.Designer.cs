@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20200825210326_Initial")]
+    [Migration("20200825215253_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -238,52 +238,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.ToTable("Merges");
                 });
 
-            modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.SegmentViewUrl", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<int>("FilterListId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("Position")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Url")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("FilterListId", "Position")
-                        .IsUnique();
-
-                    b.ToTable("SegmentViewUrls");
-                });
-
-            modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.SegmentViewUrlMirror", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<int>("SegmentViewUrlId")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Url")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("SegmentViewUrlId");
-
-                    b.ToTable("SegmentViewUrlMirrors");
-                });
-
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Software", b =>
                 {
                     b.Property<int>("Id")
@@ -388,6 +342,58 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.License", "License")
                         .WithMany("FilterLists")
                         .HasForeignKey("LicenseId");
+
+                    b.OwnsMany("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.SegmentViewUrl", "SegmentViewUrls", b1 =>
+                        {
+                            b1.Property<int>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("integer")
+                                .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                            b1.Property<int>("FilterListId")
+                                .HasColumnType("integer");
+
+                            b1.Property<int>("Position")
+                                .HasColumnType("integer");
+
+                            b1.Property<string>("Url")
+                                .IsRequired()
+                                .HasColumnType("text");
+
+                            b1.HasKey("Id");
+
+                            b1.HasIndex("FilterListId", "Position")
+                                .IsUnique();
+
+                            b1.ToTable("SegmentViewUrls");
+
+                            b1.WithOwner("FilterList")
+                                .HasForeignKey("FilterListId");
+
+                            b1.OwnsMany("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.SegmentViewUrlMirror", "SegmentViewUrlMirrors", b2 =>
+                                {
+                                    b2.Property<int>("Id")
+                                        .ValueGeneratedOnAdd()
+                                        .HasColumnType("integer")
+                                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                                    b2.Property<int>("SegmentViewUrlId")
+                                        .HasColumnType("integer");
+
+                                    b2.Property<string>("Url")
+                                        .IsRequired()
+                                        .HasColumnType("text");
+
+                                    b2.HasKey("Id");
+
+                                    b2.HasIndex("SegmentViewUrlId");
+
+                                    b2.ToTable("SegmentViewUrlMirrors");
+
+                                    b2.WithOwner("SegmentViewUrl")
+                                        .HasForeignKey("SegmentViewUrlId");
+                                });
+                        });
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListLanguage", b =>
@@ -476,24 +482,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "IncludesFilterList")
                         .WithMany("IncludedInFilterLists")
                         .HasForeignKey("IncludesFilterListId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.SegmentViewUrl", b =>
-                {
-                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "FilterList")
-                        .WithMany("SegmentViewUrls")
-                        .HasForeignKey("FilterListId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.SegmentViewUrlMirror", b =>
-                {
-                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.SegmentViewUrl", "SegmentViewUrl")
-                        .WithMany("SegmentViewUrlMirrors")
-                        .HasForeignKey("SegmentViewUrlId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
