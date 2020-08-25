@@ -8,7 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class FilterListMaintainer
     {
+        public int FilterListId { get; private set; }
         public FilterList FilterList { get; private set; } = null!;
+        public int MaintainerId { get; private set; }
         public Maintainer Maintainer { get; private set; } = null!;
     }
 
@@ -20,11 +22,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 
             builder.ToTable(nameof(FilterListMaintainer) + "s");
 
-            const string filterListId = nameof(FilterListMaintainer.FilterList) + "Id";
-            const string maintainerId = nameof(FilterListMaintainer.Maintainer) + "Id";
-            builder.Property<int>(filterListId);
-            builder.Property<int>(maintainerId);
-            builder.HasKey(filterListId, maintainerId);
+            builder.HasKey(flm => new {flm.FilterListId, flm.MaintainerId});
         }
     }
 }

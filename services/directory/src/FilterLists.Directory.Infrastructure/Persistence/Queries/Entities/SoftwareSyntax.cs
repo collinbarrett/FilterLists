@@ -8,7 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class SoftwareSyntax
     {
+        public int SoftwareId { get; private set; }
         public Software Software { get; private set; } = null!;
+        public int SyntaxId { get; private set; }
         public Syntax Syntax { get; private set; } = null!;
     }
 
@@ -20,11 +22,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 
             builder.ToTable(nameof(SoftwareSyntax) + "es");
 
-            const string softwareId = nameof(SoftwareSyntax.Software) + "Id";
-            const string syntaxId = nameof(SoftwareSyntax.Syntax) + "Id";
-            builder.Property<int>(softwareId);
-            builder.Property<int>(syntaxId);
-            builder.HasKey(softwareId, syntaxId);
+            builder.HasKey(ss => new {ss.SoftwareId, ss.SyntaxId});
         }
     }
 }

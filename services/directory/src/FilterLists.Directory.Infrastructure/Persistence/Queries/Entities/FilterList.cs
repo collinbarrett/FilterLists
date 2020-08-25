@@ -10,6 +10,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public int Id { get; private set; }
         public string Name { get; private set; } = null!;
         public string? Description { get; private set; }
+        public int? LicenseId { get; private set; }
         public License? License { get; private set; }
         public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; private set; } = new HashSet<FilterListSyntax>();
         public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; private set; } = new HashSet<FilterListLanguage>();

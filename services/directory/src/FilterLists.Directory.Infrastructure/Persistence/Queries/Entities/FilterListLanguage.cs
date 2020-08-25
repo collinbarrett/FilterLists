@@ -8,7 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class FilterListLanguage
     {
+        public int FilterListId { get; private set; }
         public FilterList FilterList { get; private set; } = null!;
+        public string LanguageIso6391 { get; private set; } = null!;
         public Language Language { get; private set; } = null!;
     }
 
@@ -20,11 +22,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 
             builder.ToTable(nameof(FilterListLanguage) + "s");
 
-            const string filterListId = nameof(FilterListLanguage.FilterList) + "Id";
-            const string languageId = nameof(Language) + nameof(Language.Iso6391);
-            builder.Property<int>(filterListId);
-            builder.Property<string>(languageId);
-            builder.HasKey(filterListId, languageId);
+            builder.HasKey(fll => new {fll.FilterListId, fll.LanguageIso6391});
         }
     }
 }

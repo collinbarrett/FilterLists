@@ -8,7 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class Merge
     {
+        public int IncludedInFilterListId { get; set; }
         public FilterList IncludedInFilterList { get; private set; } = null!;
+        public int IncludesFilterListId { get; set; }
         public FilterList IncludesFilterList { get; private set; } = null!;
     }
 
@@ -20,17 +22,13 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 
             builder.ToTable(nameof(Merge) + "s");
 
-            const string includedInFilterListId = nameof(Merge.IncludedInFilterList) + "Id";
-            const string includesFilterListId = nameof(Merge.IncludesFilterList) + "Id";
-            builder.Property<int>(includedInFilterListId);
-            builder.Property<int>(includesFilterListId);
-            builder.HasKey(includedInFilterListId, includesFilterListId);
+            builder.HasKey(m => new {m.IncludedInFilterListId, m.IncludesFilterListId});
             builder.HasOne(m => m.IncludedInFilterList)
-                .WithMany(f => f.IncludedInFilterLists)
-                .HasForeignKey(includedInFilterListId);
+                .WithMany(fl => fl.IncludesFilterLists)
+                .HasForeignKey(m => m.IncludedInFilterListId);
             builder.HasOne(m => m.IncludesFilterList)
-                .WithMany(f => f.IncludesFilterLists)
-                .HasForeignKey(includesFilterListId);
+                .WithMany(fl => fl.IncludedInFilterLists)
+                .HasForeignKey(m => m.IncludesFilterListId);
         }
     }
 }
