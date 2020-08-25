@@ -1,10 +1,10 @@
-version: '3.8'
+version: "3.8"
 
 services:
   filterlists.directory.api:
     image: ${DOCKER_REGISTRY-}filterlists_directory_api
     build:
-      context: ./directory
+      context: ./directory/api
       dockerfile: src/FilterLists.Directory.Api/Dockerfile
     depends_on:
       - filterlists.directory.db
