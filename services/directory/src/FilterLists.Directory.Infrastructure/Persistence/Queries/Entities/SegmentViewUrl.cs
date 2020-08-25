@@ -9,6 +9,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class SegmentViewUrl
     {
+        public int Id { get; private set; }
+        public int FilterListId { get; set; }
         public FilterList FilterList { get; private set; } = null!;
         public int Position { get; private set; }
         public Uri Url { get; private set; } = null!;
@@ -23,11 +25,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 
             builder.ToTable(nameof(SegmentViewUrl) + "s");
 
-            const string segmentViewUrlId = "Id";
-            builder.Property<int>(segmentViewUrlId);
-            builder.HasKey(segmentViewUrlId);
-
-            builder.HasIndex(nameof(FilterList) + "Id", nameof(SegmentViewUrl.Position))
+            builder.HasIndex(s => new {s.FilterListId, s.Position})
                 .IsUnique();
         }
     }

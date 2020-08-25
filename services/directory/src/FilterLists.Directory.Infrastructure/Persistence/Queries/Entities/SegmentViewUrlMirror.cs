@@ -8,6 +8,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class SegmentViewUrlMirror
     {
+        public int Id { get; private set; }
+        public int SegmentViewUrlId { get; private set; }
         public SegmentViewUrl SegmentViewUrl { get; private set; } = null!;
         public Uri Url { get; private set; } = null!;
     }
@@ -19,10 +21,6 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
 
             builder.ToTable(nameof(SegmentViewUrlMirror) + "s");
-
-            const string segmentViewUrlMirrorId = "Id";
-            builder.Property<int>(segmentViewUrlMirrorId);
-            builder.HasKey(segmentViewUrlMirrorId);
         }
     }
 }

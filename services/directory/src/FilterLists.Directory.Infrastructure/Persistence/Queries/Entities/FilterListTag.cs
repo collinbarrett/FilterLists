@@ -8,7 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class FilterListTag
     {
+        public int FilterListId { get; private set; }
         public FilterList FilterList { get; private set; } = null!;
+        public int TagId { get; private set; }
         public Tag Tag { get; private set; } = null!;
     }
 
@@ -20,11 +22,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 
             builder.ToTable(nameof(FilterListTag) + "s");
 
-            const string filterListId = nameof(FilterListTag.FilterList) + "Id";
-            const string tagId = nameof(FilterListTag.Tag) + "Id";
-            builder.Property<int>(filterListId);
-            builder.Property<int>(tagId);
-            builder.HasKey(filterListId, tagId);
+            builder.HasKey(flt => new {flt.FilterListId, flt.TagId});
         }
     }
 }

@@ -369,13 +369,13 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Dependent", b =>
                 {
                     b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "DependencyFilterList")
-                        .WithMany("DependencyFilterLists")
+                        .WithMany("DependentFilterLists")
                         .HasForeignKey("DependencyFilterListId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "DependentFilterList")
-                        .WithMany("DependentFilterLists")
+                        .WithMany("DependencyFilterLists")
                         .HasForeignKey("DependentFilterListId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -451,13 +451,13 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Fork", b =>
                 {
                     b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "ForkFilterList")
-                        .WithMany("ForkFilterLists")
+                        .WithMany("UpstreamFilterLists")
                         .HasForeignKey("ForkFilterListId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "UpstreamFilterList")
-                        .WithMany("UpstreamFilterLists")
+                        .WithMany("ForkFilterLists")
                         .HasForeignKey("UpstreamFilterListId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -466,13 +466,13 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Merge", b =>
                 {
                     b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "IncludedInFilterList")
-                        .WithMany("IncludedInFilterLists")
+                        .WithMany("IncludesFilterLists")
                         .HasForeignKey("IncludedInFilterListId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "IncludesFilterList")
-                        .WithMany("IncludesFilterLists")
+                        .WithMany("IncludedInFilterLists")
                         .HasForeignKey("IncludesFilterListId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

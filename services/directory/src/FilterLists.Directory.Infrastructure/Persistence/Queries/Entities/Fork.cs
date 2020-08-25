@@ -8,7 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class Fork
     {
+        public int UpstreamFilterListId { get; private set; }
         public FilterList UpstreamFilterList { get; private set; } = null!;
+        public int ForkFilterListId { get; private set; }
         public FilterList ForkFilterList { get; private set; } = null!;
     }
 
@@ -20,17 +22,13 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 
             builder.ToTable(nameof(Fork) + "s");
 
-            const string upstreamFilterListId = nameof(Fork.UpstreamFilterList) + "Id";
-            const string forkFilterListId = nameof(Fork.ForkFilterList) + "Id";
-            builder.Property<int>(upstreamFilterListId);
-            builder.Property<int>(forkFilterListId);
-            builder.HasKey(upstreamFilterListId, forkFilterListId);
+            builder.HasKey(f => new {f.UpstreamFilterListId, f.ForkFilterListId});
             builder.HasOne(f => f.UpstreamFilterList)
-                .WithMany(f => f.UpstreamFilterLists)
-                .HasForeignKey(upstreamFilterListId);
+                .WithMany(fl => fl.ForkFilterLists)
+                .HasForeignKey(f => f.UpstreamFilterListId);
             builder.HasOne(f => f.ForkFilterList)
-                .WithMany(f => f.ForkFilterLists)
-                .HasForeignKey(forkFilterListId);
+                .WithMany(fl => fl.UpstreamFilterLists)
+                .HasForeignKey(f => f.ForkFilterListId);
         }
     }
 }

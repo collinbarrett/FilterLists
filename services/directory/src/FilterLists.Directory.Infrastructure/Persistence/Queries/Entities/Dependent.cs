@@ -8,7 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class Dependent
     {
+        public int DependencyFilterListId { get; private set; }
         public FilterList DependencyFilterList { get; private set; } = null!;
+        public int DependentFilterListId { get; private set; }
         public FilterList DependentFilterList { get; private set; } = null!;
     }
 
@@ -20,17 +22,13 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 
             builder.ToTable(nameof(Dependent) + "s");
 
-            const string dependencyFilterListId = nameof(Dependent.DependencyFilterList) + "Id";
-            const string dependentFilterListId = nameof(Dependent.DependentFilterList) + "Id";
-            builder.Property<int>(dependencyFilterListId);
-            builder.Property<int>(dependentFilterListId);
-            builder.HasKey(dependencyFilterListId, dependentFilterListId);
+            builder.HasKey(d => new {d.DependencyFilterListId, d.DependentFilterListId});
             builder.HasOne(d => d.DependencyFilterList)
-                .WithMany(f => f.DependencyFilterLists)
-                .HasForeignKey(dependencyFilterListId);
+                .WithMany(fl => fl.DependentFilterLists)
+                .HasForeignKey(d => d.DependencyFilterListId);
             builder.HasOne(d => d.DependentFilterList)
-                .WithMany(f => f.DependentFilterLists)
-                .HasForeignKey(dependentFilterListId);
+                .WithMany(fl => fl.DependencyFilterLists)
+                .HasForeignKey(d => d.DependentFilterListId);
         }
     }
 }
