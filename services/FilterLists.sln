@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Api", "directory\src\FilterLists.Directory.Api\FilterLists.Directory.Api.csproj", "{FE50F471-7DC0-44AB-8DAB-2909E3207FF9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directory", "Directory", "{AE5D6471-1B6E-4B06-A313-34EF81F35342}"
-	ProjectSection(SolutionItems) = preProject
-		directory\.dockerignore = directory\.dockerignore
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Domain", "directory\src\FilterLists.Directory.Domain\FilterLists.Directory.Domain.csproj", "{05496C09-DA31-4543-9EC4-D56BCADBB027}"
 EndProject
@@ -22,6 +19,7 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "..\docker
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A534ED99-43A6-4CD2-9288-BD35F82F4E88}"
 	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
 		FilterLists.sln.DotSettings = FilterLists.sln.DotSettings
 	EndProjectSection
 EndProject
