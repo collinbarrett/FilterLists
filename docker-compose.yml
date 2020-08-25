@@ -6,13 +6,13 @@ services:
     networks:
       - reverse_proxy
     depends_on:
-      - filterlists.directory.web
+      - filterlists.web
       - filterlists.directory.api
     volumes:
       - ./reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
 
-  filterlists.directory.web:
-    image: ${DOCKER_REGISTRY-}filterlists_directory_web
+  filterlists.web:
+    image: ${DOCKER_REGISTRY-}filterlists_web
     build:
       context: ./web
     networks:
@@ -27,7 +27,7 @@ services:
       dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile
     networks:
       - reverse_proxy
-      - directory.api
+      - directory
     depends_on:
       - filterlists.directory.db
     volumes:
@@ -38,7 +38,7 @@ services:
   filterlists.directory.db:
     image: postgres:alpine
     networks:
-      - directory.api
+      - directory
     environment:
       POSTGRES_USER: ${DIRECTORY_DB_USER}
       POSTGRES_PASSWORD: ${DIRECTORY_DB_PASSWORD}
@@ -46,7 +46,7 @@ services:
 
 networks:
   reverse_proxy:
-  directory.api:
+  directory:
 
 volumes:
   directory.db:
