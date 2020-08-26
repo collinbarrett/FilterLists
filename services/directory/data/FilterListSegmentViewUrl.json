@@ -17,9 +17,7 @@
   {
     "filterListId": 4,
     "id": "4",
-    "viewUrl": "https://raw.githubusercontent.com/michaeltrimm/hosts-blocking/master/_hosts.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/michaeltrimm/hosts-blocking/master/_hosts.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/michaeltrimm/hosts-blocking/master/_hosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/michaeltrimm/hosts-blocking/master/_hosts.txt"
   },
   {
     "filterListId": 5,
@@ -29,9 +27,7 @@
   {
     "filterListId": 6,
     "id": "6",
-    "viewUrl": "https://raw.githubusercontent.com/mayve/private-adblock-filters/master/Adblock_List.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/mayve/private-adblock-filters/master/Adblock_List.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/mayve/private-adblock-filters/master/Adblock_List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/mayve/private-adblock-filters/master/Adblock_List.txt"
   },
   {
     "filterListId": 10,
@@ -66,57 +62,42 @@
   {
     "filterListId": 17,
     "id": "13",
-    "viewUrl": "https://winhelp2002.mvps.org/hosts.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/mvps.org/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/data/mvps.org/hosts"
+    "viewUrl": "https://winhelp2002.mvps.org/hosts.txt"
   },
   {
     "filterListId": 18,
     "id": "14",
-    "viewUrl": "https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/taylr/linkedinsanity/master/linkedinsanity.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/taylr/linkedinsanity/master/linkedinsanity.txt"
+    "viewUrl": "https://raw.githubusercontent.com/taylr/linkedinsanity/master/linkedinsanity.txt"
   },
   {
     "filterListId": 19,
     "id": "15",
-    "viewUrl": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
+    "viewUrl": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
   },
   {
     "filterListId": 20,
     "id": "16",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianList.txt"
   },
   {
     "filterListId": 27,
     "id": "17",
-    "viewUrl": "https://raw.githubusercontent.com/metaphoricgiraffe/tracking-filters/master/trackingfilters.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/metaphoricgiraffe/tracking-filters/master/trackingfilters.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/metaphoricgiraffe/tracking-filters/master/trackingfilters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/metaphoricgiraffe/tracking-filters/master/trackingfilters.txt"
   },
   {
     "filterListId": 28,
     "id": "18",
-    "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/quiet.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/liamja/Prebake/master/quiet.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/liamja/Prebake/master/quiet.txt"
+    "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/quiet.txt"
   },
   {
     "filterListId": 29,
     "id": "19",
-    "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/obtrusive.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/liamja/Prebake/master/obtrusive.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/liamja/Prebake/master/obtrusive.txt"
+    "viewUrl": "https://raw.githubusercontent.com/liamja/Prebake/master/obtrusive.txt"
   },
   {
     "filterListId": 30,
     "id": "20",
-    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt"
+    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt"
   },
   {
     "filterListId": 31,
@@ -131,9 +112,7 @@
   {
     "filterListId": 33,
     "id": "23",
-    "viewUrl": "https://raw.githubusercontent.com/LordBadmintonofYorkshire/Overlay-Blocker/master/blocklist.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/LordBadmintonofYorkshire/Overlay-Blocker/master/blocklist.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/LordBadmintonofYorkshire/Overlay-Blocker/master/blocklist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/LordBadmintonofYorkshire/Overlay-Blocker/master/blocklist.txt"
   },
   {
     "filterListId": 34,
@@ -143,16 +122,12 @@
   {
     "filterListId": 36,
     "id": "25",
-    "viewUrl": "https://raw.githubusercontent.com/genediazjr/nopelist/master/nopelist.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/genediazjr/nopelist/master/nopelist.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/genediazjr/nopelist/master/nopelist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/genediazjr/nopelist/master/nopelist.txt"
   },
   {
     "filterListId": 38,
     "id": "26",
-    "viewUrl": "https://raw.githubusercontent.com/Rpsl/adblock-leadgenerator-list/master/list/list.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/Rpsl/adblock-leadgenerator-list/master/list/list.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/Rpsl/adblock-leadgenerator-list/master/list/list.txt"
+    "viewUrl": "https://raw.githubusercontent.com/Rpsl/adblock-leadgenerator-list/master/list/list.txt"
   },
   {
     "filterListId": 39,
@@ -162,8 +137,7 @@
   {
     "filterListId": 47,
     "id": "28",
-    "viewUrl": "https://raw.githubusercontent.com/NanoMeow/UltimateMirror/master/archive/hphosts.txt",
-    "viewUrlMirror1": "https://v.firebog.net/hosts/static/HPHosts/HostsAdServers.txt"
+    "viewUrl": "https://raw.githubusercontent.com/NanoMeow/UltimateMirror/master/archive/hphosts.txt"
   },
   {
     "filterListId": 49,
@@ -173,16 +147,12 @@
   {
     "filterListId": 50,
     "id": "30",
-    "viewUrl": "https://raw.githubusercontent.com/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/HexxiumCreations/threat-list/gh-pages/hexxiumthreatlist.txt"
   },
   {
     "filterListId": 51,
     "id": "31",
-    "viewUrl": "https://raw.githubusercontent.com/kargig/greek-adblockplus-filter/master/void-gr-filters.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/kargig/greek-adblockplus-filter/master/void-gr-filters.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/kargig/greek-adblockplus-filter/master/void-gr-filters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kargig/greek-adblockplus-filter/master/void-gr-filters.txt"
   },
   {
     "filterListId": 52,
@@ -192,8 +162,7 @@
   {
     "filterListId": 53,
     "id": "33",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist%20(Hosts).txt",
-    "viewUrlMirror2": "https://gitcdn.xyz/repo/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist%20(Hosts).txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/gmbkslist%20(Hosts).txt"
   },
   {
     "filterListId": 54,
@@ -208,23 +177,17 @@
   {
     "filterListId": 59,
     "id": "36",
-    "viewUrl": "https://raw.githubusercontent.com/gfmaster/adblock-korea-contrib/master/filter.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/gfmaster/adblock-korea-contrib/master/filter.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/gfmaster/adblock-korea-contrib/master/filter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/gfmaster/adblock-korea-contrib/master/filter.txt"
   },
   {
     "filterListId": 60,
     "id": "37",
-    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/PolishFiltersTeam/KADhosts/master/KADhosts.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt"
   },
   {
     "filterListId": 61,
     "id": "38",
-    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/master/KAD.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/PolishFiltersTeam/KAD/master/KAD.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/PolishFiltersTeam/KAD/master/KAD.txt"
+    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/master/KAD.txt"
   },
   {
     "filterListId": 62,
@@ -239,16 +202,12 @@
   {
     "filterListId": 64,
     "id": "41",
-    "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hostslt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/lewisje/jansal/master/adblock/hostslt",
-    "viewUrlMirror2": "https://gitcdn.link/repo/lewisje/jansal/master/adblock/hostslt"
+    "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hostslt"
   },
   {
     "filterListId": 65,
     "id": "42",
-    "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hosts",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/lewisje/jansal/master/adblock/hosts",
-    "viewUrlMirror2": "https://gitcdn.link/repo/lewisje/jansal/master/adblock/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/lewisje/jansal/master/adblock/hosts"
   },
   {
     "filterListId": 66,
@@ -258,16 +217,12 @@
   {
     "filterListId": 67,
     "id": "44",
-    "viewUrl": "https://raw.githubusercontent.com/piperun/iploggerfilter/master/filterlist",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/piperun/iploggerfilter/master/filterlist",
-    "viewUrlMirror2": "https://gitcdn.link/repo/piperun/iploggerfilter/master/filterlist"
+    "viewUrl": "https://raw.githubusercontent.com/piperun/iploggerfilter/master/filterlist"
   },
   {
     "filterListId": 68,
     "id": "45",
-    "viewUrl": "https://raw.githubusercontent.com/ilyakatz/adblock_filters/master/inpage_popups.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/ilyakatz/adblock_filters/master/inpage_popups.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/ilyakatz/adblock_filters/master/inpage_popups.txt"
+    "viewUrl": "https://raw.githubusercontent.com/ilyakatz/adblock_filters/master/inpage_popups.txt"
   },
   {
     "filterListId": 69,
@@ -277,9 +232,7 @@
   {
     "filterListId": 70,
     "id": "47",
-    "viewUrl": "https://raw.githubusercontent.com/Rudloff/adblock-imokwithcookies/master/filters.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/Rudloff/adblock-imokwithcookies/master/filters.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/Rudloff/adblock-imokwithcookies/master/filters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/Rudloff/adblock-imokwithcookies/master/filters.txt"
   },
   {
     "filterListId": 71,
@@ -289,113 +242,82 @@
   {
     "filterListId": 72,
     "id": "49",
-    "viewUrl": "https://raw.githubusercontent.com/hufilter/hufilter/master/hufilter.txt",
-    "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-hufilter.git/blob_plain/refs/heads/master:/hufilter.txt",
-    "viewUrlMirror2": "https://gitcdn.xyz/repo/hufilter/hufilter/master/hufilter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/hufilter/hufilter/master/hufilter.txt"
   },
   {
     "filterListId": 78,
     "id": "50",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/gambling-porn/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/gambling-porn/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn/hosts"
   },
   {
     "filterListId": 79,
     "id": "51",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/gambling/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/gambling/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts"
   },
   {
     "filterListId": 80,
     "id": "52",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
   },
   {
     "filterListId": 81,
     "id": "53",
-    "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/UncheckyAds/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/data/UncheckyAds/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts"
   },
   {
     "filterListId": 82,
     "id": "54",
-    "viewUrl": "https://raw.githubusercontent.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlock-user/uBO-Personal-Filters/master/uPF.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt"
+    "viewUrl": "https://raw.githubusercontent.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt"
   },
   {
     "filterListId": 83,
     "id": "55",
-    "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt",
-    "viewUrlMirror1": "https://rawcdn.githack.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt"
+    "viewUrl": "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt"
   },
   {
     "filterListId": 84,
     "id": "56",
-    "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt"
+    "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock_ublock.txt"
   },
   {
     "filterListId": 85,
     "id": "57",
-    "viewUrl": "https://raw.githubusercontent.com/IDKwhattoputhere/uBlock-Filters-Plus/master/uBlock-Filters-Plus.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/IDKwhattoputhere/uBlock-Filters-Plus/master/uBlock-Filters-Plus.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/IDKwhattoputhere/uBlock-Filters-Plus/master/uBlock-Filters-Plus.txt"
+    "viewUrl": "https://raw.githubusercontent.com/IDKwhattoputhere/uBlock-Filters-Plus/master/uBlock-Filters-Plus.txt"
   },
   {
     "filterListId": 86,
     "id": "58",
-    "viewUrl": "https://raw.githubusercontent.com/byaka/ublock-antiskimming-list/master/build/data.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/byaka/ublock-antiskimming-list/master/build/data.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/byaka/ublock-antiskimming-list/master/build/data.txt"
+    "viewUrl": "https://raw.githubusercontent.com/byaka/ublock-antiskimming-list/master/build/data.txt"
   },
   {
     "filterListId": 87,
     "id": "59",
-    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlockOrigin/uAssets/master/filters/unbreak.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/unbreak.txt"
+    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt"
   },
   {
     "filterListId": 88,
     "id": "60",
-    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlockOrigin/uAssets/master/filters/privacy.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/privacy.txt"
+    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt"
   },
   {
     "filterListId": 89,
     "id": "61",
-    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlockOrigin/uAssets/master/filters/filters.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/filters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt"
   },
   {
     "filterListId": 90,
     "id": "62",
-    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlockOrigin/uAssets/master/filters/experimental.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/experimental.txt"
+    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt"
   },
   {
     "filterListId": 91,
     "id": "63",
-    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/uBlockOrigin/uAssets/master/filters/badware.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/badware.txt"
+    "viewUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt"
   },
   {
     "filterListId": 93,
     "id": "64",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/gambling-porn-social/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/gambling-porn-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts"
   },
   {
     "filterListId": 94,
@@ -405,126 +327,92 @@
   {
     "filterListId": 95,
     "id": "66",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/gambling-social/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/gambling-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts"
   },
   {
     "filterListId": 96,
     "id": "67",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-social/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/porn-social/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/porn-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-social/hosts"
   },
   {
     "filterListId": 97,
     "id": "68",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt",
-    "viewUrlMirror1": "https://hg.adblockplus.org/youtubefilters/raw-file/default/yt_annoyances_full.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt"
   },
   {
     "filterListId": 98,
     "id": "69",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt",
-    "viewUrlMirror1": "https://hg.adblockplus.org/youtubefilters/raw-file/default/yt_annoyances_other.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_other.txt"
   },
   {
     "filterListId": 99,
     "id": "70",
-    "viewUrl": "https://raw.githubusercontent.com/yous/YousList/master/youslist.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/yous/YousList/master/youslist.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/yous/YousList/master/youslist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/yous/YousList/master/youslist.txt"
   },
   {
     "filterListId": 100,
     "id": "71",
-    "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/wiltteri/subscriptions/master/wiltteri-reborn.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/wiltteri/subscriptions/master/wiltteri-reborn.txt"
+    "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.txt"
   },
   {
     "filterListId": 101,
     "id": "72",
-    "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/wiltteri/subscriptions/master/wiltteri.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/wiltteri/subscriptions/master/wiltteri.txt"
+    "viewUrl": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri.txt"
   },
   {
     "filterListId": 102,
     "id": "73",
-    "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/yourduskquibbles/webannoyances/master/ultralist.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/yourduskquibbles/webannoyances/master/ultralist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/yourduskquibbles/webannoyances/master/ultralist.txt"
   },
   {
     "filterListId": 103,
     "id": "74",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/fakenews-gambling-porn-social/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/fakenews-gambling-porn-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts"
   },
   {
     "filterListId": 104,
     "id": "75",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn-social/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/fakenews-porn-social/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/fakenews-porn-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn-social/hosts"
   },
   {
     "filterListId": 105,
     "id": "76",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/fakenews-gambling-social/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/fakenews-gambling-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-social/hosts"
   },
   {
     "filterListId": 106,
     "id": "77",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/fakenews-gambling-porn/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/fakenews-gambling-porn/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts"
   },
   {
     "filterListId": 107,
     "id": "78",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/fakenews-social/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/fakenews-social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-social/hosts"
   },
   {
     "filterListId": 108,
     "id": "79",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/fakenews-porn/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/fakenews-porn/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-porn/hosts"
   },
   {
     "filterListId": 109,
     "id": "80",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/fakenews-gambling/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/fakenews-gambling/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts"
   },
   {
     "filterListId": 110,
     "id": "81",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/fakenews/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/fakenews/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews/hosts"
   },
   {
     "filterListId": 111,
     "id": "82",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/social/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/social/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts"
   },
   {
     "filterListId": 112,
     "id": "83",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts",
-    "viewUrlMirror1": "http://sbc.io/hosts/alternates/porn/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/alternates/porn/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts"
   },
   {
     "filterListId": 113,
@@ -534,9 +422,7 @@
   {
     "filterListId": 114,
     "id": "85",
-    "viewUrl": "https://raw.githubusercontent.com/thoughtconverge/abf/master/abf.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/thoughtconverge/abf/master/abf.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/thoughtconverge/abf/master/abf.txt"
+    "viewUrl": "https://raw.githubusercontent.com/thoughtconverge/abf/master/abf.txt"
   },
   {
     "filterListId": 115,
@@ -561,9 +447,7 @@
   {
     "filterListId": 119,
     "id": "90",
-    "viewUrl": "https://road.adblock.ro/lista.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/tcptomato/ROad-Block/master/road-block-filters-light.txt",
-    "viewUrlMirror2": "https://gitcdn.xyz/repo/tcptomato/ROad-Block/master/road-block-filters-light.txt"
+    "viewUrl": "https://road.adblock.ro/lista.txt"
   },
   {
     "filterListId": 131,
@@ -593,37 +477,27 @@
   {
     "filterListId": 136,
     "id": "96",
-    "viewUrl": "https://raw.githubusercontent.com/betterwebleon/slovenian-list/master/filters.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/betterwebleon/slovenian-list/master/filters.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/betterwebleon/slovenian-list/master/filters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/betterwebleon/slovenian-list/master/filters.txt"
   },
   {
     "filterListId": 137,
     "id": "97",
-    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/StevenBlack/hosts/master/data/StevenBlack/hosts",
-    "viewUrlMirror2": "https://gitlab.com/StevenBlack/hosts/raw/master/data/StevenBlack/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts"
   },
   {
     "filterListId": 138,
     "id": "98",
-    "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/StreamingAds/hosts",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/FadeMind/hosts.extras/master/StreamingAds/hosts",
-    "viewUrlMirror2": "https://gitcdn.link/repo/FadeMind/hosts.extras/master/StreamingAds/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/StreamingAds/hosts"
   },
   {
     "filterListId": 139,
     "id": "99",
-    "viewUrl": "https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/Spam404/lists/master/main-blacklist.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/Spam404/lists/master/main-blacklist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt"
   },
   {
     "filterListId": 140,
     "id": "100",
-    "viewUrl": "https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/Spam404/lists/master/adblock-list.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/Spam404/lists/master/adblock-list.txt"
+    "viewUrl": "https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt"
   },
   {
     "filterListId": 141,
@@ -658,8 +532,7 @@
   {
     "filterListId": 147,
     "id": "107",
-    "viewUrl": "https://adblock.dk/block.csv",
-    "viewUrlMirror1": "https://adblock.schack.dk/block.txt"
+    "viewUrl": "https://adblock.dk/block.csv"
   },
   {
     "filterListId": 150,
@@ -769,16 +642,12 @@
   {
     "filterListId": 175,
     "id": "129",
-    "viewUrl": "https://raw.githubusercontent.com/r4vi/block-the-eu-cookie-shit-list/master/filterlist.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/r4vi/block-the-eu-cookie-shit-list/master/filterlist.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/r4vi/block-the-eu-cookie-shit-list/master/filterlist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/r4vi/block-the-eu-cookie-shit-list/master/filterlist.txt"
   },
   {
     "filterListId": 176,
     "id": "130",
-    "viewUrl": "https://raw.githubusercontent.com/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt"
   },
   {
     "filterListId": 177,
@@ -788,9 +657,7 @@
   {
     "filterListId": 178,
     "id": "132",
-    "viewUrl": "https://raw.githubusercontent.com/rebelion76/bankiru_plus_adblock_list/master/bankiru_plus.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/rebelion76/bankiru_plus_adblock_list/master/bankiru_plus.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/rebelion76/bankiru_plus_adblock_list/master/bankiru_plus.txt"
+    "viewUrl": "https://raw.githubusercontent.com/rebelion76/bankiru_plus_adblock_list/master/bankiru_plus.txt"
   },
   {
     "filterListId": 179,
@@ -800,15 +667,12 @@
   {
     "filterListId": 181,
     "id": "134",
-    "viewUrl": "http://git.sourceforge.jp/view?p=ayucat-list/ayucat-list.git;a=blob_plain;f=ayucat-list.txt;hb=b254c74c132832a3ade7b9d42c2ef8d3dd59fdb9",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Ayucat%20Powerful%20List.txt"
+    "viewUrl": "http://git.sourceforge.jp/view?p=ayucat-list/ayucat-list.git;a=blob_plain;f=ayucat-list.txt;hb=b254c74c132832a3ade7b9d42c2ef8d3dd59fdb9"
   },
   {
     "filterListId": 183,
     "id": "135",
-    "viewUrl": "https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/Yhonay/antipopads/master/popads.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/Yhonay/antipopads/master/popads.txt"
+    "viewUrl": "https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt"
   },
   {
     "filterListId": 184,
@@ -823,14 +687,12 @@
   {
     "filterListId": 186,
     "id": "138",
-    "viewUrl": "http://rlwpx.free.fr/WPFF/hrsk.7z",
-    "viewUrlMirror1": "https://v.firebog.net/hosts/Airelle-hrsk.txt"
+    "viewUrl": "http://rlwpx.free.fr/WPFF/hrsk.7z"
   },
   {
     "filterListId": 187,
     "id": "139",
-    "viewUrl": "http://rlwpx.free.fr/WPFF/htrc.7z",
-    "viewUrlMirror1": "https://v.firebog.net/hosts/Airelle-trc.txt"
+    "viewUrl": "http://rlwpx.free.fr/WPFF/htrc.7z"
   },
   {
     "filterListId": 188,
@@ -845,23 +707,17 @@
   {
     "filterListId": 190,
     "id": "142",
-    "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/FadeMind/hosts.extras/master/add.Spam/hosts",
-    "viewUrlMirror2": "https://gitcdn.link/repo/FadeMind/hosts.extras/master/add.Spam/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts"
   },
   {
     "filterListId": 191,
     "id": "143",
-    "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/FadeMind/hosts.extras/master/add.Risk/hosts",
-    "viewUrlMirror2": "https://gitcdn.link/repo/FadeMind/hosts.extras/master/add.Risk/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts"
   },
   {
     "filterListId": 192,
     "id": "144",
-    "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Dead/hosts",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/FadeMind/hosts.extras/master/add.Dead/hosts",
-    "viewUrlMirror2": "https://gitcdn.link/repo/FadeMind/hosts.extras/master/add.Dead/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Dead/hosts"
   },
   {
     "filterListId": 197,
@@ -871,86 +727,62 @@
   {
     "filterListId": 198,
     "id": "146",
-    "viewUrl": "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/heradhis/indonesianadblockrules/master/subscriptions/abpindo.txt",
-    "viewUrlMirror2": "https://gitcdn.xyz/repo/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt"
+    "viewUrl": "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt"
   },
   {
     "filterListId": 199,
     "id": "147",
-    "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/facebook.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/gioxx/xfiles/master/facebook.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/gioxx/xfiles/master/facebook.txt"
+    "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/facebook.txt"
   },
   {
     "filterListId": 200,
     "id": "148",
-    "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/siteblock.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/gioxx/xfiles/master/siteblock.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/gioxx/xfiles/master/siteblock.txt"
+    "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/siteblock.txt"
   },
   {
     "filterListId": 201,
     "id": "149",
-    "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/filtri.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/gioxx/xfiles/master/filtri.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/gioxx/xfiles/master/filtri.txt"
+    "viewUrl": "https://raw.githubusercontent.com/gioxx/xfiles/master/filtri.txt"
   },
   {
     "filterListId": 202,
     "id": "150",
-    "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_paranoid.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/k2jp/abp-japanese-filters/master/abpjf_paranoid.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/k2jp/abp-japanese-filters/master/abpjf_paranoid.txt"
+    "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_paranoid.txt"
   },
   {
     "filterListId": 203,
     "id": "151",
-    "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/k2jp/abp-japanese-filters/master/abpjf.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/k2jp/abp-japanese-filters/master/abpjf.txt"
+    "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf.txt"
   },
   {
     "filterListId": 204,
     "id": "152",
-    "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_element_hiding.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/k2jp/abp-japanese-filters/master/abpjf_element_hiding.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/k2jp/abp-japanese-filters/master/abpjf_element_hiding.txt"
+    "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_element_hiding.txt"
   },
   {
     "filterListId": 205,
     "id": "153",
-    "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_3rd_party_sns.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/k2jp/abp-japanese-filters/master/abpjf_3rd_party_sns.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/k2jp/abp-japanese-filters/master/abpjf_3rd_party_sns.txt"
+    "viewUrl": "https://raw.githubusercontent.com/k2jp/abp-japanese-filters/master/abpjf_3rd_party_sns.txt"
   },
   {
     "filterListId": 206,
     "id": "154",
-    "viewUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/abpvn/abpvn/master/filter/abpvn.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/abpvn/abpvn/master/filter/abpvn.txt"
+    "viewUrl": "https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn.txt"
   },
   {
     "filterListId": 207,
     "id": "155",
-    "viewUrl": "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt"
   },
   {
     "filterListId": 212,
     "id": "156",
-    "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/FadeMind/hosts.extras/master/add.2o7Net/hosts",
-    "viewUrlMirror2": "https://gitcdn.link/repo/FadeMind/hosts.extras/master/add.2o7Net/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts"
   },
   {
     "filterListId": 213,
     "id": "157",
-    "viewUrl": "https://raw.githubusercontent.com/kbinani/adblock-youtube-ads/master/signed.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/kbinani/adblock-youtube-ads/master/signed.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/kbinani/adblock-youtube-ads/master/signed.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kbinani/adblock-youtube-ads/master/signed.txt"
   },
   {
     "filterListId": 214,
@@ -960,16 +792,12 @@
   {
     "filterListId": 215,
     "id": "159",
-    "viewUrl": "https://raw.githubusercontent.com/adblockpolska/Adblock_PL_List/master/adblock_polska.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/adblockpolska/Adblock_PL_List/master/adblock_polska.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/adblockpolska/Adblock_PL_List/master/adblock_polska.txt"
+    "viewUrl": "https://raw.githubusercontent.com/adblockpolska/Adblock_PL_List/master/adblock_polska.txt"
   },
   {
     "filterListId": 216,
     "id": "160",
-    "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/adblock_social_filters/adblock_social_list.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/MajkiIT/polish-ads-filter/master/adblock_social_filters/adblock_social_list.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/MajkiIT/polish-ads-filter/master/adblock_social_filters/adblock_social_list.txt"
+    "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/adblock_social_filters/adblock_social_list.txt"
   },
   {
     "filterListId": 217,
@@ -989,23 +817,17 @@
   {
     "filterListId": 222,
     "id": "164",
-    "viewUrl": "https://raw.githubusercontent.com/SlashArash/adblockfa/master/adblockfa.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/SlashArash/adblockfa/master/adblockfa.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/SlashArash/adblockfa/master/adblockfa.txt"
+    "viewUrl": "https://raw.githubusercontent.com/SlashArash/adblockfa/master/adblockfa.txt"
   },
   {
     "filterListId": 223,
     "id": "165",
-    "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt"
+    "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-adblock-filters/adblock.txt"
   },
   {
     "filterListId": 224,
     "id": "166",
-    "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/cookies_filters/adblock_cookies.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/MajkiIT/polish-ads-filter/master/cookies_filters/adblock_cookies.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/MajkiIT/polish-ads-filter/master/cookies_filters/adblock_cookies.txt"
+    "viewUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/cookies_filters/adblock_cookies.txt"
   },
   {
     "filterListId": 225,
@@ -1025,14 +847,12 @@
   {
     "filterListId": 228,
     "id": "170",
-    "viewUrl": "https://raw.githubusercontent.com/farrokhi/adblock-iran/master/filter.txt",
-    "viewUrlMirror1": "https://rawcdn.githack.com/farrokhi/adblock-iran/master/filter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/farrokhi/adblock-iran/master/filter.txt"
   },
   {
     "filterListId": 229,
     "id": "171",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt",
-    "viewUrlMirror1": "https://hg.adblockplus.org/youtubefilters/raw-file/default/yt_annoyances_comments.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_comments.txt"
   },
   {
     "filterListId": 232,
@@ -1042,26 +862,22 @@
   {
     "filterListId": 233,
     "id": "173",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt",
-    "viewUrlMirror1": "https://hg.adblockplus.org/facebookfilters/raw-file/default/fb_annoyances_sidebar.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_sidebar.txt"
   },
   {
     "filterListId": 234,
     "id": "174",
-    "viewUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AncientLibrary/Facebook%20Privacy%20List.txt"
+    "viewUrl": "http://www.squirrelconspiracy.net/abp/facebook-privacy-list.txt"
   },
   {
     "filterListId": 235,
     "id": "175",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt",
-    "viewUrlMirror1": "https://hg.adblockplus.org/facebookfilters/raw-file/default/fb_annoyances_newsfeed.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_newsfeed.txt"
   },
   {
     "filterListId": 236,
     "id": "176",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt",
-    "viewUrlMirror1": "https://hg.adblockplus.org/facebookfilters/raw-file/default/fb_annoyances_full.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fb_annoyances_full.txt"
   },
   {
     "filterListId": 237,
@@ -1091,9 +907,7 @@
   {
     "filterListId": 242,
     "id": "182",
-    "viewUrl": "https://easylist.to/easylist/easyprivacy.txt",
-    "viewUrlMirror1": "https://fanboy.co.nz/easyprivacy.txt",
-    "viewUrlMirror2": "https://easylist-downloads.adblockplus.org/easyprivacy.txt"
+    "viewUrl": "https://easylist.to/easylist/easyprivacy.txt"
   },
   {
     "filterListId": 243,
@@ -1118,9 +932,7 @@
   {
     "filterListId": 247,
     "id": "187",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt",
-    "viewUrlMirror1": "https://fanboy.co.nz/fanboy-annoyance.txt",
-    "viewUrlMirror2": "https://easylist.to/easylist/fanboy-annoyance.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt"
   },
   {
     "filterListId": 248,
@@ -1140,8 +952,7 @@
   {
     "filterListId": 251,
     "id": "191",
-    "viewUrl": "http://abp.mozilla-hispano.org/nauscopio/filtros.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/filtros.txt"
+    "viewUrl": "http://abp.mozilla-hispano.org/nauscopio/filtros.txt"
   },
   {
     "filterListId": 252,
@@ -1181,8 +992,7 @@
   {
     "filterListId": 259,
     "id": "199",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-social.txt",
-    "viewUrlMirror1": "https://fanboy.co.nz/fanboy-social.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/fanboy-social.txt"
   },
   {
     "filterListId": 260,
@@ -1227,8 +1037,7 @@
   {
     "filterListId": 268,
     "id": "208",
-    "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt",
-    "viewUrlMirror1": "https://gitee.com/cjx82630/cjxlist/raw/master/cjxlist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt"
   },
   {
     "filterListId": 269,
@@ -1263,8 +1072,7 @@
   {
     "filterListId": 276,
     "id": "215",
-    "viewUrl": "https://someonewhocares.org/hosts/zero/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/someonewhocares.org/hosts"
+    "viewUrl": "https://someonewhocares.org/hosts/zero/hosts"
   },
   {
     "filterListId": 277,
@@ -1289,8 +1097,7 @@
   {
     "filterListId": 281,
     "id": "220",
-    "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt",
-    "viewUrlMirror1": "https://gitee.com/cjx82630/cjxlist/raw/master/cjx-annoyance.txt"
+    "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt"
   },
   {
     "filterListId": 282,
@@ -1310,8 +1117,7 @@
   {
     "filterListId": 285,
     "id": "224",
-    "viewUrl": "https://mirror1.malwaredomains.com/files/dynamic_dns.txt",
-    "viewUrlMirror1": "https://mirror.cedia.org.ec/malwaredomains/dynamic_dns.txt"
+    "viewUrl": "https://mirror1.malwaredomains.com/files/dynamic_dns.txt"
   },
   {
     "filterListId": 286,
@@ -1321,14 +1127,12 @@
   {
     "filterListId": 287,
     "id": "226",
-    "viewUrl": "https://mirror1.malwaredomains.com/files/justdomains",
-    "viewUrlMirror1": "https://mirror.cedia.org.ec/malwaredomains/justdomains"
+    "viewUrl": "https://mirror1.malwaredomains.com/files/justdomains"
   },
   {
     "filterListId": 288,
     "id": "227",
-    "viewUrl": "https://mirror1.malwaredomains.com/files/immortal_domains.txt",
-    "viewUrlMirror1": "https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt"
+    "viewUrl": "https://mirror1.malwaredomains.com/files/immortal_domains.txt"
   },
   {
     "filterListId": 289,
@@ -1353,8 +1157,7 @@
   {
     "filterListId": 293,
     "id": "232",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany.txt",
-    "viewUrlMirror1": "https://easylist.to/easylistgermany/easylistgermany.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/easylistgermany.txt"
   },
   {
     "filterListId": 294,
@@ -1389,9 +1192,7 @@
   {
     "filterListId": 301,
     "id": "239",
-    "viewUrl": "https://easylist.to/easylist/easylist.txt",
-    "viewUrlMirror1": "https://fanboy.co.nz/easylist.txt",
-    "viewUrlMirror2": "https://easylist-downloads.adblockplus.org/easylist.txt"
+    "viewUrl": "https://easylist.to/easylist/easylist.txt"
   },
   {
     "filterListId": 302,
@@ -1416,8 +1217,7 @@
   {
     "filterListId": 306,
     "id": "244",
-    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt",
-    "viewUrlMirror1": "https://hg.adblockplus.org/youtubefilters/raw-file/default/yt_annoyances_suggestions.txt"
+    "viewUrl": "https://easylist-downloads.adblockplus.org/yt_annoyances_suggestions.txt"
   },
   {
     "filterListId": 307,
@@ -1507,8 +1307,7 @@
   {
     "filterListId": 327,
     "id": "262",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/stayingonbrowser/Staying%20On%20The%20Phone%20Browser"
   },
   {
     "filterListId": 329,
@@ -1518,14 +1317,12 @@
   {
     "filterListId": 330,
     "id": "264",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiConsentHosts/master/ThaiConsentHosts.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/ThaiConsentHosts/raw/master/ThaiConsentHosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiConsentHosts/master/ThaiConsentHosts.txt"
   },
   {
     "filterListId": 331,
     "id": "265",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/master/ThaiParanoid.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/ThaiParanoidBlock/raw/master/ThaiParanoid.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/master/ThaiParanoid.txt"
   },
   {
     "filterListId": 332,
@@ -1615,9 +1412,7 @@
   {
     "filterListId": 349,
     "id": "283",
-    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt"
+    "viewUrl": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt"
   },
   {
     "filterListId": 350,
@@ -1767,14 +1562,12 @@
   {
     "filterListId": 385,
     "id": "313",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Username%20Hider%20for%20Compilation%20Creators.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Username%20Hider%20for%20Compilation%20Creators.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Username%20Hider%20for%20Compilation%20Creators.txt"
   },
   {
     "filterListId": 388,
     "id": "314",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltre.tpl"
   },
   {
     "filterListId": 390,
@@ -1784,20 +1577,17 @@
   {
     "filterListId": 391,
     "id": "316",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/IHateOverpromotedGames.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/IHateOverpromotedGames.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/IHateOverpromotedGames.txt"
   },
   {
     "filterListId": 392,
     "id": "317",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/BrowseWebsitesWithoutLoggingIn.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt"
   },
   {
     "filterListId": 393,
     "id": "318",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/DandelionSproutRedirectorList.json"
   },
   {
     "filterListId": 395,
@@ -1822,8 +1612,7 @@
   {
     "filterListId": 399,
     "id": "323",
-    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Filter.txt",
-    "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/Frellwits-Swedish-Filter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Filter.txt"
   },
   {
     "filterListId": 400,
@@ -1838,8 +1627,7 @@
   {
     "filterListId": 403,
     "id": "326",
-    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/emoji-filter.txt",
-    "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/emoji-filter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/emoji-filter.txt"
   },
   {
     "filterListId": 405,
@@ -1939,44 +1727,37 @@
   {
     "filterListId": 430,
     "id": "346",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts"
   },
   {
     "filterListId": 431,
     "id": "347",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Website%20Stretcher.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout%27s%20Website%20Stretcher.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Website%20Stretcher.txt"
   },
   {
     "filterListId": 432,
     "id": "348",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-F%D1%96%D0%9C%20List.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-F%D1%96%D0%9C%20List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-F%D1%96%D0%9C%20List.txt"
   },
   {
     "filterListId": 433,
     "id": "349",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-IMDB%20List.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-IMDB%20List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-IMDB%20List.txt"
   },
   {
     "filterListId": 434,
     "id": "350",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/StopAutoplayOnYouTube.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/StopAutoplayOnYouTube.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/StopAutoplayOnYouTube.txt"
   },
   {
     "filterListId": 435,
     "id": "351",
-    "viewUrl": "https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts",
-    "viewUrlMirror1": "https://git.qvq.network/googlehosts/hosts/raw/master/hosts-files/hosts"
+    "viewUrl": "https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts"
   },
   {
     "filterListId": 436,
     "id": "352",
-    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/i-dont-want-your-app.txt",
-    "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/i-dont-want-your-app.txt"
+    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/i-dont-want-your-app.txt"
   },
   {
     "filterListId": 437,
@@ -2046,8 +1827,7 @@
   {
     "filterListId": 465,
     "id": "366",
-    "viewUrl": "https://v.firebog.net/hosts/Shalla-mal.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Shalla-Malicious.txt"
+    "viewUrl": "https://v.firebog.net/hosts/Shalla-mal.txt"
   },
   {
     "filterListId": 467,
@@ -2127,7 +1907,7 @@
   {
     "filterListId": 482,
     "id": "382",
-    "viewUrlMirror1": "https://block.energized.pro/bluGo/formats/hosts.txt"
+    "viewUrl": null
   },
   {
     "filterListId": 483,
@@ -2192,14 +1972,12 @@
   {
     "filterListId": 504,
     "id": "395",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Beginner-.txt"
   },
   {
     "filterListId": 505,
     "id": "396",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Novice-.txt"
   },
   {
     "filterListId": 506,
@@ -2264,8 +2042,7 @@
   {
     "filterListId": 519,
     "id": "409",
-    "viewUrl": "https://www.dshield.org/feeds/suspiciousdomains_Medium.txt",
-    "viewUrlMirror1": "https://isc.sans.edu/feeds/suspiciousdomains_Medium.txt"
+    "viewUrl": "https://www.dshield.org/feeds/suspiciousdomains_Medium.txt"
   },
   {
     "filterListId": 520,
@@ -2285,14 +2062,12 @@
   {
     "filterListId": 525,
     "id": "413",
-    "viewUrl": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Chad-Mayfield-Porn-Blocklist-Light.txt"
+    "viewUrl": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list"
   },
   {
     "filterListId": 526,
     "id": "414",
-    "viewUrl": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Chad-Mayfield-Porn-Blocklist-Heavy.txt"
+    "viewUrl": "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list"
   },
   {
     "filterListId": 562,
@@ -2412,20 +2187,17 @@
   {
     "filterListId": 601,
     "id": "438",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiAntiTokenSites/master/AntiPumpSites.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/ThaiAntiTokenSites/raw/master/AntiPumpSites.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiAntiTokenSites/master/AntiPumpSites.txt"
   },
   {
     "filterListId": 602,
     "id": "439",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiAntiTokenSites/master/AntiPumpSites_hosts.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/ThaiAntiTokenSites/raw/master/AntiPumpSites_hosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiAntiTokenSites/master/AntiPumpSites_hosts.txt"
   },
   {
     "filterListId": 603,
     "id": "440",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Elsagate%20List.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-Elsagate%20List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Elsagate%20List.txt"
   },
   {
     "filterListId": 604,
@@ -2490,14 +2262,12 @@
   {
     "filterListId": 617,
     "id": "453",
-    "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/StevenBlack/hosts/master/data/yoyo.org/hosts"
+    "viewUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext"
   },
   {
     "filterListId": 618,
     "id": "454",
-    "viewUrl": "https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Mandiant-APT1-Report.txt"
+    "viewUrl": "https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt"
   },
   {
     "filterListId": 619,
@@ -2527,8 +2297,7 @@
   {
     "filterListId": 631,
     "id": "460",
-    "viewUrl": "https://v.firebog.net/hosts/Prigent-Phishing.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Prigent-Phishing.txt"
+    "viewUrl": "https://v.firebog.net/hosts/Prigent-Phishing.txt"
   },
   {
     "filterListId": 632,
@@ -2593,8 +2362,7 @@
   {
     "filterListId": 670,
     "id": "473",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/LittleSnitchNorwegianList.lsrules"
   },
   {
     "filterListId": 671,
@@ -2644,8 +2412,7 @@
   {
     "filterListId": 680,
     "id": "483",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt"
   },
   {
     "filterListId": 681,
@@ -2670,8 +2437,7 @@
   {
     "filterListId": 685,
     "id": "488",
-    "viewUrl": "https://mirror1.malwaredomains.com/files/domains.hosts",
-    "viewUrlMirror1": "https://mirror.cedia.org.ec/malwaredomains/domains.hosts"
+    "viewUrl": "https://mirror1.malwaredomains.com/files/domains.hosts"
   },
   {
     "filterListId": 686,
@@ -2776,8 +2542,7 @@
   {
     "filterListId": 710,
     "id": "509",
-    "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/tyzbit.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Tyzbit.txt"
+    "viewUrl": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/tyzbit.txt"
   },
   {
     "filterListId": 711,
@@ -2842,8 +2607,7 @@
   {
     "filterListId": 726,
     "id": "522",
-    "viewUrl": "https://raw.githubusercontent.com/whtsky/abp-rules/master/rules.txt",
-    "viewUrlMirror1": "https://abp.tt.codes/rules.txt"
+    "viewUrl": "https://raw.githubusercontent.com/whtsky/abp-rules/master/rules.txt"
   },
   {
     "filterListId": 728,
@@ -2853,16 +2617,12 @@
   {
     "filterListId": 729,
     "id": "524",
-    "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/crapblock-annoyances.txt",
-    "viewUrlMirror1": "https://crapblock.theel0ja.info/crapblock-annoyances.txt",
-    "viewUrlMirror2": "https://gitlab.com/theel0ja/crapblock/raw/master/crapblock-annoyances.txt"
+    "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/crapblock-annoyances.txt"
   },
   {
     "filterListId": 730,
     "id": "525",
-    "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/block-googlefonts.txt",
-    "viewUrlMirror1": "https://crapblock.theel0ja.info/block-googlefonts.txt",
-    "viewUrlMirror2": "https://gitlab.com/theel0ja/crapblock/raw/master/block-googlefonts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/theel0ja/CrapBlock/master/block-googlefonts.txt"
   },
   {
     "filterListId": 731,
@@ -2877,14 +2637,12 @@
   {
     "filterListId": 734,
     "id": "528",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/imageboard/GelboLube.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/imageboard/GelboLube.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/imageboard/GelboLube.txt"
   },
   {
     "filterListId": 735,
     "id": "529",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/specific/AntiAPKMirrorCountdown.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/specific/AntiAPKMirrorCountdown.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/specific/AntiAPKMirrorCountdown.txt"
   },
   {
     "filterListId": 736,
@@ -2909,8 +2667,7 @@
   {
     "filterListId": 747,
     "id": "534",
-    "viewUrl": "https://raw.githubusercontent.com/nimasaj/uBOPa/master/uBOPa.txt",
-    "viewUrlMirror1": "https://mynext.pro/uBOPa.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nimasaj/uBOPa/master/uBOPa.txt"
   },
   {
     "filterListId": 748,
@@ -3210,8 +2967,7 @@
   {
     "filterListId": 809,
     "id": "594",
-    "viewUrl": "https://www.ergensin.nl/adblock/nlblock.txt",
-    "viewUrlMirror1": "http://www.verzijlbergh.com/adblock/nlblock.txt"
+    "viewUrl": "https://www.ergensin.nl/adblock/nlblock.txt"
   },
   {
     "filterListId": 810,
@@ -3246,14 +3002,12 @@
   {
     "filterListId": 816,
     "id": "601",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/I%20Don't%20Want%20to%20Download%20Your%20Browser.txt"
   },
   {
     "filterListId": 817,
     "id": "602",
-    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt",
-    "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/Frellwits-Swedish-Hosts-File.txt"
+    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt"
   },
   {
     "filterListId": 818,
@@ -3263,8 +3017,7 @@
   {
     "filterListId": 819,
     "id": "604",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeEvenMorePureVideoExperience.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/YouTubeEvenMorePureVideoExperience.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeEvenMorePureVideoExperience.txt"
   },
   {
     "filterListId": 820,
@@ -3384,26 +3137,22 @@
   {
     "filterListId": 843,
     "id": "628",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookZuckestionKiller.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/facebook/FacebookZuckestionKiller.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookZuckestionKiller.txt"
   },
   {
     "filterListId": 844,
     "id": "629",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookCommands.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/facebook/FacebookCommands.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/facebook/FacebookCommands.txt"
   },
   {
     "filterListId": 845,
     "id": "630",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_google_adservice_id.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/hosts_google_adservice_id.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_google_adservice_id.txt"
   },
   {
     "filterListId": 846,
     "id": "631",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/maximum/ThaiParanoid.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/ThaiParanoidBlock/raw/maximum/ThaiParanoid.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/ThaiParanoidBlock/maximum/ThaiParanoid.txt"
   },
   {
     "filterListId": 847,
@@ -3413,70 +3162,57 @@
   {
     "filterListId": 848,
     "id": "633",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchPureViewingExperience.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TwitchPureViewingExperience.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchPureViewingExperience.txt"
   },
   {
     "filterListId": 850,
     "id": "634",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAbusePorn.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAbusePorn.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAbusePorn.txt"
   },
   {
     "filterListId": 851,
     "id": "635",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WikiaPureBrowsingExperience.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WikiaPureBrowsingExperience.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WikiaPureBrowsingExperience.txt"
   },
   {
     "filterListId": 852,
     "id": "636",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeYetEvenMorePureVideoExperience.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/YouTubeYetEvenMorePureVideoExperience.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeYetEvenMorePureVideoExperience.txt"
   },
   {
     "filterListId": 853,
     "id": "637",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/VeryThoroughWebsiteCleaner.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/VeryThoroughWebsiteCleaner.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/VeryThoroughWebsiteCleaner.txt"
   },
   {
     "filterListId": 855,
     "id": "638",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MeWe%20Pink%20Theme.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/MeWe%20Pink%20Theme.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MeWe%20Pink%20Theme.txt"
   },
   {
     "filterListId": 856,
     "id": "639",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Pro-LED%20List.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Pro-LED%20List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Pro-LED%20List.txt"
   },
   {
     "filterListId": 857,
     "id": "640",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json"
   },
   {
     "filterListId": 858,
     "id": "641",
-    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter.txt",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt"
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt"
   },
   {
     "filterListId": 859,
     "id": "642",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Futa%20List.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-Futa%20List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Futa%20List.txt"
   },
   {
     "filterListId": 860,
     "id": "643",
-    "viewUrl": "https://bitbucket.org/nicktabick/adblock-rules/raw/master/nt-adblock.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/nicktabick/adblock-rules/master/nt-adblock.txt",
-    "viewUrlMirror2": "https://gitlab.com/nicktabick/adblock-rules/raw/master/nt-adblock.txt"
+    "viewUrl": "https://bitbucket.org/nicktabick/adblock-rules/raw/master/nt-adblock.txt"
   },
   {
     "filterListId": 861,
@@ -3486,26 +3222,22 @@
   {
     "filterListId": 862,
     "id": "645",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/other/SurvivedTrackingLinkWarning.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/other/SurvivedTrackingLinkWarning.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/other/SurvivedTrackingLinkWarning.txt"
   },
   {
     "filterListId": 863,
     "id": "646",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Christmas%20carols'%20List.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Christmas%20carols'%20List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Christmas%20carols'%20List.txt"
   },
   {
     "filterListId": 866,
     "id": "647",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_facebook0.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/hosts_facebook0.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_facebook0.txt"
   },
   {
     "filterListId": 867,
     "id": "648",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/static/hosts_facebook0_noregionsv.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/static/hosts_facebook0_noregionsv.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/static/hosts_facebook0_noregionsv.txt"
   },
   {
     "filterListId": 868,
@@ -5255,8 +4987,7 @@
   {
     "filterListId": 1247,
     "id": "998",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Battle%20Royale'%20List.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Battle%20Royale'%20List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Battle%20Royale'%20List.txt"
   },
   {
     "filterListId": 1278,
@@ -5306,38 +5037,32 @@
   {
     "filterListId": 1288,
     "id": "1008",
-    "viewUrl": "https://raw.githubusercontent.com/NanoAdblockerLab/NanoContrib/master/dist/placeholder-buster.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/NanoAdblockerLab/NanoContrib/master/dist/placeholder-buster.txt"
+    "viewUrl": "https://raw.githubusercontent.com/NanoAdblockerLab/NanoContrib/master/dist/placeholder-buster.txt"
   },
   {
     "filterListId": 1289,
     "id": "1009",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/KnowYourMemePureBrowsingExperience.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/KnowYourMemePureBrowsingExperience.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/KnowYourMemePureBrowsingExperience.txt"
   },
   {
     "filterListId": 1290,
     "id": "1010",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Malware%20List.txt"
   },
   {
     "filterListId": 1291,
     "id": "1011",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Twitter%20De-Politificator.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Twitter%20De-Politificator.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Twitter%20De-Politificator.txt"
   },
   {
     "filterListId": 1292,
     "id": "1012",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Android%20Scum%20Class%20—%20Fake%20notification%20counters.txt"
   },
   {
     "filterListId": 1293,
     "id": "1013",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Adblock%20list%20templates/Adblock%20list%20template%20-Hosts%20and%20uBlock%20Origin-.txt"
   },
   {
     "filterListId": 1294,
@@ -5347,16 +5072,12 @@
   {
     "filterListId": 1295,
     "id": "1015",
-    "viewUrl": "https://gitlab.com/intr0/iVOID.GitLab.io/raw/master/iVOID.hosts",
-    "viewUrlMirror1": "https://notabug.org/-intr0/iVOID/raw/master/iVOID.hosts",
-    "viewUrlMirror2": "http://w2caclgy62idhzyut23ucimqw5tsmfbl4b2iyjzpvngatast2fiqxbyd.onion/ivoid/iVOID.hosts"
+    "viewUrl": "https://gitlab.com/intr0/iVOID.GitLab.io/raw/master/iVOID.hosts"
   },
   {
     "filterListId": 1296,
     "id": "1016",
-    "viewUrl": "https://gitlab.com/intr0/DomainVoider/raw/master/DomainVoider",
-    "viewUrlMirror1": "https://notabug.org/-intr0/DomainVoider/raw/master/DomainVoider",
-    "viewUrlMirror2": "http://w2caclgy62idhzyut23ucimqw5tsmfbl4b2iyjzpvngatast2fiqxbyd.onion/domainvoider/DomainVoider.txt"
+    "viewUrl": "https://gitlab.com/intr0/DomainVoider/raw/master/DomainVoider"
   },
   {
     "filterListId": 1297,
@@ -5371,8 +5092,7 @@
   {
     "filterListId": 1299,
     "id": "1019",
-    "viewUrl": "https://hosts.nfz.moe/basic/hosts",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/neoFelhz/neohosts/gh-pages/basic/hosts"
+    "viewUrl": "https://hosts.nfz.moe/basic/hosts"
   },
   {
     "filterListId": 1300,
@@ -5382,26 +5102,22 @@
   {
     "filterListId": 1301,
     "id": "1021",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/test/hosts_facebook0.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/test/hosts_facebook0.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/test/hosts_facebook0.txt"
   },
   {
     "filterListId": 1302,
     "id": "1022",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_leftover.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/hosts_leftover.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/hosts_leftover.txt"
   },
   {
     "filterListId": 1303,
     "id": "1023",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/other/MiscAnnoyance.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/other/MiscAnnoyance.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/other/MiscAnnoyance.txt"
   },
   {
     "filterListId": 1304,
     "id": "1024",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/ubo-css/iHateCircles.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/filterlist/ubo-css/iHateCircles.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/filterlist/ubo-css/iHateCircles.txt"
   },
   {
     "filterListId": 1305,
@@ -6146,20 +5862,17 @@
   {
     "filterListId": 1454,
     "id": "1173",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyingBannersAndOverlays.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AnnoyingBannersAndOverlays.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyingBannersAndOverlays.txt"
   },
   {
     "filterListId": 1455,
     "id": "1174",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AnnoyancesList"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList"
   },
   {
     "filterListId": 1456,
     "id": "1175",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/SocialShareList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/SocialShareList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/SocialShareList.txt"
   },
   {
     "filterListId": 1457,
@@ -6174,20 +5887,17 @@
   {
     "filterListId": 1459,
     "id": "1178",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAstrologyList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAstrologyList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAstrologyList.txt"
   },
   {
     "filterListId": 1460,
     "id": "1179",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ListForOldPeople.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ListForOldPeople.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ListForOldPeople.txt"
   },
   {
     "filterListId": 1461,
     "id": "1180",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAmazonListForTwitch.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAmazonListForTwitch.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAmazonListForTwitch.txt"
   },
   {
     "filterListId": 1463,
@@ -6237,8 +5947,7 @@
   {
     "filterListId": 1473,
     "id": "1190",
-    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/blacklist.txt",
-    "viewUrlMirror1": "https://oooo.b-cdn.net/blahdns/adsblock.txt"
+    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/blacklist.txt"
   },
   {
     "filterListId": 1474,
@@ -6493,8 +6202,7 @@
   {
     "filterListId": 1535,
     "id": "1241",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WordPressTranslatorAssistant.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WordPressTranslatorAssistant.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WordPressTranslatorAssistant.txt"
   },
   {
     "filterListId": 1536,
@@ -6569,26 +6277,22 @@
   {
     "filterListId": 1550,
     "id": "1256",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WebsiteStretcherVertical.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WebsiteStretcherVertical.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WebsiteStretcherVertical.txt"
   },
   {
     "filterListId": 1551,
     "id": "1257",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WebsiteStretcher4K.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/WebsiteStretcher4K.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/WebsiteStretcher4K.txt"
   },
   {
     "filterListId": 1552,
     "id": "1258",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RedditTrashRemovalService.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/RedditTrashRemovalService.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RedditTrashRemovalService.txt"
   },
   {
     "filterListId": 1554,
     "id": "1259",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPrayerTimesList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPrayerTimesList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPrayerTimesList.txt"
   },
   {
     "filterListId": 1555,
@@ -6638,14 +6342,12 @@
   {
     "filterListId": 1564,
     "id": "1269",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiCelebBirthList",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiCelebBirthList"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiCelebBirthList"
   },
   {
     "filterListId": 1565,
     "id": "1270",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GamestoreMovieRemover.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/GamestoreMovieRemover.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GamestoreMovieRemover.txt"
   },
   {
     "filterListId": 1566,
@@ -6685,14 +6387,12 @@
   {
     "filterListId": 1575,
     "id": "1278",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchEvenMorePureViewingExperience.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TwitchEvenMorePureViewingExperience.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitchEvenMorePureViewingExperience.txt"
   },
   {
     "filterListId": 1576,
     "id": "1279",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Custom%20cursors'%20List.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Custom%20cursors'%20List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Custom%20cursors'%20List.txt"
   },
   {
     "filterListId": 1577,
@@ -6707,86 +6407,72 @@
   {
     "filterListId": 1579,
     "id": "1282",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ExtremelyCondensedList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ExtremelyCondensedList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ExtremelyCondensedList.txt"
   },
   {
     "filterListId": 1581,
     "id": "1283",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuard.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuard.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuard.txt"
   },
   {
     "filterListId": 1582,
     "id": "1284",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP.txt"
   },
   {
     "filterListId": 1583,
     "id": "1285",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivoxy.action",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivoxy.action"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivoxy.action"
   },
   {
     "filterListId": 1584,
     "id": "1286",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersDnsmasq.conf",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersDnsmasq.conf"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersDnsmasq.conf"
   },
   {
     "filterListId": 1585,
     "id": "1287",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsDeny.deny",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsDeny.deny"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsDeny.deny"
   },
   {
     "filterListId": 1586,
     "id": "1288",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareABP.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareABP.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareABP.txt"
   },
   {
     "filterListId": 1587,
     "id": "1289",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuard.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuard.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuard.txt"
   },
   {
     "filterListId": 1588,
     "id": "1290",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareTPL.tpl",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareTPL.tpl"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareTPL.tpl"
   },
   {
     "filterListId": 1589,
     "id": "1291",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwarePrivoxy.action",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwarePrivoxy.action"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwarePrivoxy.action"
   },
   {
     "filterListId": 1590,
     "id": "1292",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt"
   },
   {
     "filterListId": 1591,
     "id": "1293",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Google%20Hangouts'%20List.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-'Google%20Hangouts'%20List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-'Google%20Hangouts'%20List.txt"
   },
   {
     "filterListId": 1592,
     "id": "1294",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RickrollLinkIdentifier.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/RickrollLinkIdentifier.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RickrollLinkIdentifier.txt"
   },
   {
     "filterListId": 1593,
     "id": "1295",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivacy.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivacy.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPrivacy.txt"
   },
   {
     "filterListId": 1594,
@@ -6806,30 +6492,22 @@
   {
     "filterListId": 1597,
     "id": "1299",
-    "viewUrl": "https://dbl.oisd.nl/",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dbl.txt",
-    "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/dbl.txt"
+    "viewUrl": "https://dbl.oisd.nl/"
   },
   {
     "filterListId": 1598,
     "id": "1300",
-    "viewUrl": "https://hosts.oisd.nl/",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/hosts.txt",
-    "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/hosts.txt"
+    "viewUrl": "https://hosts.oisd.nl/"
   },
   {
     "filterListId": 1599,
     "id": "1301",
-    "viewUrl": "https://dblmobile.oisd.nl/",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dbl_light.txt",
-    "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/dbl_light.txt"
+    "viewUrl": "https://dblmobile.oisd.nl/"
   },
   {
     "filterListId": 1600,
     "id": "1302",
-    "viewUrl": "https://hostsmobile.oisd.nl/",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/hosts_light.txt",
-    "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/hosts_light.txt"
+    "viewUrl": "https://hostsmobile.oisd.nl/"
   },
   {
     "filterListId": 1601,
@@ -6839,27 +6517,22 @@
   {
     "filterListId": 1603,
     "id": "1304",
-    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-online.txt",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt"
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt"
   },
   {
     "filterListId": 1604,
     "id": "1305",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/DailyMotionSimplicity.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/DailyMotionSimplicity.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/DailyMotionSimplicity.txt"
   },
   {
     "filterListId": 1605,
     "id": "1306",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPPGList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPPGList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPPGList.txt"
   },
   {
     "filterListId": 1606,
     "id": "1307",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Skype%20List.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Anti-Skype%20List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Anti-Skype%20List.txt"
   },
   {
     "filterListId": 1607,
@@ -7004,20 +6677,17 @@
   {
     "filterListId": 1635,
     "id": "1336",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Religion%20List.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout's%20Anti-Religion%20List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Religion%20List.txt"
   },
   {
     "filterListId": 1636,
     "id": "1337",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPreacherList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPreacherList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPreacherList.txt"
   },
   {
     "filterListId": 1637,
     "id": "1338",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAwfulCommentsList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAwfulCommentsList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAwfulCommentsList.txt"
   },
   {
     "filterListId": 1638,
@@ -7042,14 +6712,12 @@
   {
     "filterListId": 1642,
     "id": "1343",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/ruleset/recipes_th.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/ruleset/recipes_th.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/ruleset/recipes_th.txt"
   },
   {
     "filterListId": 1643,
     "id": "1344",
-    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/ruleset/recipes_custom.txt",
-    "viewUrlMirror1": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/ruleset/recipes_custom.txt"
+    "viewUrl": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/ruleset/recipes_custom.txt"
   },
   {
     "filterListId": 1644,
@@ -7169,8 +6837,7 @@
   {
     "filterListId": 1669,
     "id": "1368",
-    "viewUrl": "https://raw.githubusercontent.com/farrokhi/adblock-iran/master/additional-trackers.txt",
-    "viewUrlMirror1": "https://rawcdn.githack.com/farrokhi/adblock-iran/master/additional-trackers.txt"
+    "viewUrl": "https://raw.githubusercontent.com/farrokhi/adblock-iran/master/additional-trackers.txt"
   },
   {
     "filterListId": 1670,
@@ -7190,170 +6857,142 @@
   {
     "filterListId": 1673,
     "id": "1372",
-    "viewUrl": "https://github.com/nickspaargaren/no-google/raw/master/pihole-google.txt",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/pihole-google.txt"
+    "viewUrl": "https://github.com/nickspaargaren/no-google/raw/master/pihole-google.txt"
   },
   {
     "filterListId": 1674,
     "id": "1373",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/google-domains",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/google-domains"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/google-domains"
   },
   {
     "filterListId": 1675,
     "id": "1374",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/analyticsparsed",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/analyticsparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/analyticsparsed"
   },
   {
     "filterListId": 1676,
     "id": "1375",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/analytics.txt",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/analytics.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/analytics.txt"
   },
   {
     "filterListId": 1677,
     "id": "1376",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/androidparsed",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/androidparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/androidparsed"
   },
   {
     "filterListId": 1678,
     "id": "1377",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/android.txt",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/android.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/android.txt"
   },
   {
     "filterListId": 1679,
     "id": "1378",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/dnsparsed",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/dnsparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/dnsparsed"
   },
   {
     "filterListId": 1680,
     "id": "1379",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/dns.txt",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/dns.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/dns.txt"
   },
   {
     "filterListId": 1681,
     "id": "1380",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/domainsparsed",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/domainsparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/domainsparsed"
   },
   {
     "filterListId": 1682,
     "id": "1381",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/domains.txt",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/domains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/domains.txt"
   },
   {
     "filterListId": 1683,
     "id": "1382",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/doubleclickparsed",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/doubleclickparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/doubleclickparsed"
   },
   {
     "filterListId": 1684,
     "id": "1383",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/doubleclick.txt",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/doubleclick.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/doubleclick.txt"
   },
   {
     "filterListId": 1685,
     "id": "1384",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/firebaseparsed",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/firebaseparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/firebaseparsed"
   },
   {
     "filterListId": 1686,
     "id": "1385",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/firebase.txt",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/firebase.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/firebase.txt"
   },
   {
     "filterListId": 1687,
     "id": "1386",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/fontsparsed",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/fontsparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/fontsparsed"
   },
   {
     "filterListId": 1688,
     "id": "1387",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/fonts.txt",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/fonts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/fonts.txt"
   },
   {
     "filterListId": 1689,
     "id": "1388",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/generalparsed",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/generalparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/generalparsed"
   },
   {
     "filterListId": 1690,
     "id": "1389",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/general.txt",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/general.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/general.txt"
   },
   {
     "filterListId": 1691,
     "id": "1390",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/mailparsed",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/mailparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/mailparsed"
   },
   {
     "filterListId": 1692,
     "id": "1391",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/mail.txt",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/mail.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/mail.txt"
   },
   {
     "filterListId": 1693,
     "id": "1392",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/productsparsed",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/productsparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/productsparsed"
   },
   {
     "filterListId": 1694,
     "id": "1393",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/products.txt",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/products.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/products.txt"
   },
   {
     "filterListId": 1695,
     "id": "1394",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/proxiesparsed",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/proxiesparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/proxiesparsed"
   },
   {
     "filterListId": 1696,
     "id": "1395",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/proxies.txt",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/proxies.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/proxies.txt"
   },
   {
     "filterListId": 1697,
     "id": "1396",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/shortlinksparsed",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/shortlinksparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/shortlinksparsed"
   },
   {
     "filterListId": 1698,
     "id": "1397",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/shortlinks.txt",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/shortlinks.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/shortlinks.txt"
   },
   {
     "filterListId": 1699,
     "id": "1398",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/youtubeparsed",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/youtubeparsed"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/youtubeparsed"
   },
   {
     "filterListId": 1700,
     "id": "1399",
-    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/youtube.txt",
-    "viewUrlMirror2": "https://framagit.org/PoorPocketsMcNewHold/no-google/raw/master/categories/youtube.txt"
+    "viewUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/youtube.txt"
   },
   {
     "filterListId": 1701,
@@ -7528,20 +7167,17 @@
   {
     "filterListId": 1736,
     "id": "1434",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList.txt"
   },
   {
     "filterListId": 1737,
     "id": "1435",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Imperial%20Units%20Remover.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Imperial%20Units%20Remover.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Imperial%20Units%20Remover.txt"
   },
   {
     "filterListId": 1738,
     "id": "1436",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt"
   },
   {
     "filterListId": 1739,
@@ -7566,8 +7202,7 @@
   {
     "filterListId": 1743,
     "id": "1441",
-    "viewUrl": "https://block.energized.pro/spark/formats/domains.txt",
-    "viewUrlMirror1": "https://blokada.org/mirror/v5/energized/spark/hosts.txt"
+    "viewUrl": "https://block.energized.pro/spark/formats/domains.txt"
   },
   {
     "filterListId": 1744,
@@ -7577,14 +7212,12 @@
   {
     "filterListId": 1745,
     "id": "1443",
-    "viewUrl": "https://block.energized.pro/blu/formats/domains.txt",
-    "viewUrlMirror1": "https://blokada.org/mirror/v5/energized/blu/hosts.txt"
+    "viewUrl": "https://block.energized.pro/blu/formats/domains.txt"
   },
   {
     "filterListId": 1746,
     "id": "1444",
-    "viewUrl": "https://block.energized.pro/basic/formats/domains.txt",
-    "viewUrlMirror1": "https://blokada.org/mirror/v5/energized/basic/hosts.txt"
+    "viewUrl": "https://block.energized.pro/basic/formats/domains.txt"
   },
   {
     "filterListId": 1747,
@@ -7619,8 +7252,7 @@
   {
     "filterListId": 1753,
     "id": "1451",
-    "viewUrl": "https://block.energized.pro/extensions/regional/formats/domains.txt",
-    "viewUrlMirror1": "https://blokada.org/mirror/v5/energized/regional/hosts.txt"
+    "viewUrl": "https://block.energized.pro/extensions/regional/formats/domains.txt"
   },
   {
     "filterListId": 1754,
@@ -7920,14 +7552,12 @@
   {
     "filterListId": 1814,
     "id": "1511",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TabloidRemover.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TabloidRemover.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TabloidRemover.txt"
   },
   {
     "filterListId": 1815,
     "id": "1512",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPCPriceHiderList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPCPriceHiderList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPCPriceHiderList.txt"
   },
   {
     "filterListId": 1816,
@@ -7997,8 +7627,7 @@
   {
     "filterListId": 1832,
     "id": "1526",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPepeList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPepeList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPepeList.txt"
   },
   {
     "filterListId": 1833,
@@ -8013,9 +7642,7 @@
   {
     "filterListId": 1835,
     "id": "1529",
-    "viewUrl": "https://raw.githubusercontent.com/Nebula-Mechanica/Anti-AutoTranslation-List/master/anti-autotranslation-list.txt",
-    "viewUrlMirror1": "https://gitcdn.xyz/repo/Nebula-Mechanica/Anti-AutoTranslation-List/master/anti-autotranslation-list.txt",
-    "viewUrlMirror2": "https://rawcdn.githack.com/Nebula-Mechanica/Anti-AutoTranslation-List/master/anti-autotranslation-list.txt"
+    "viewUrl": "https://raw.githubusercontent.com/Nebula-Mechanica/Anti-AutoTranslation-List/master/anti-autotranslation-list.txt"
   },
   {
     "filterListId": 1836,
@@ -8035,20 +7662,17 @@
   {
     "filterListId": 1840,
     "id": "1533",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt"
   },
   {
     "filterListId": 1841,
     "id": "1534",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPiHole.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPiHole.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersPiHole.txt"
   },
   {
     "filterListId": 1842,
     "id": "1535",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersSocks5.list",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersSocks5.list"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersSocks5.list"
   },
   {
     "filterListId": 1843,
@@ -8198,34 +7822,27 @@
   {
     "filterListId": 1876,
     "id": "1565",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersRPZ.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersRPZ.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersRPZ.txt"
   },
   {
     "filterListId": 1877,
     "id": "1566",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersUnbound.conf",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersUnbound.conf"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersUnbound.conf"
   },
   {
     "filterListId": 1878,
     "id": "1567",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersForMinerBlock.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersForMinerBlock.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersForMinerBlock.txt"
   },
   {
     "filterListId": 1879,
     "id": "1568",
-    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-domains.txt",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains.txt"
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains.txt"
   },
   {
     "filterListId": 1880,
     "id": "1569",
-    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains-online.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-domains-online.txt",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains-online.txt"
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains-online.txt"
   },
   {
     "filterListId": 1881,
@@ -8310,8 +7927,7 @@
   {
     "filterListId": 1901,
     "id": "1586",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiCartoonHipsterList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiCartoonHipsterList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiCartoonHipsterList.txt"
   },
   {
     "filterListId": 1902,
@@ -8446,14 +8062,12 @@
   {
     "filterListId": 1929,
     "id": "1613",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianFanTranslations.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianFanTranslations.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianFanTranslations.txt"
   },
   {
     "filterListId": 1930,
     "id": "1614",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/GameConsoleAdblockList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt"
   },
   {
     "filterListId": 1931,
@@ -8558,14 +8172,12 @@
   {
     "filterListId": 1951,
     "id": "1635",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuardHomeDisallowedIPs.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdGuardHomeDisallowedIPs.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuardHomeDisallowedIPs.txt"
   },
   {
     "filterListId": 1952,
     "id": "1636",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitterPureReadingExperience.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TwitterPureReadingExperience.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TwitterPureReadingExperience.txt"
   },
   {
     "filterListId": 1953,
@@ -8625,26 +8237,22 @@
   {
     "filterListId": 1964,
     "id": "1648",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAdventureTimeList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAdventureTimeList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAdventureTimeList.txt"
   },
   {
     "filterListId": 1965,
     "id": "1649",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/HaveIBeenPwnedPasteRemover.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/HaveIBeenPwnedPasteRemover.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/HaveIBeenPwnedPasteRemover.txt"
   },
   {
     "filterListId": 1966,
     "id": "1650",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/PornHubPureTrailMixExperience.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/PornHubPureTrailMixExperience.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/PornHubPureTrailMixExperience.txt"
   },
   {
     "filterListId": 1967,
     "id": "1651",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdRemovalListForUnusualAds.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdRemovalListForUnusualAds.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdRemovalListForUnusualAds.txt"
   },
   {
     "filterListId": 1968,
@@ -8669,118 +8277,97 @@
   {
     "filterListId": 1972,
     "id": "1656",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationListIPs.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationListIPs.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationListIPs.txt"
   },
   {
     "filterListId": 1973,
     "id": "1657",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiAmazonListForTwitchDomains.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiAmazonListForTwitchDomains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiAmazonListForTwitchDomains.txt"
   },
   {
     "filterListId": 1974,
     "id": "1658",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiAmazonListForTwitchHosts.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiAmazonListForTwitchHosts.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiAmazonListForTwitchHosts.txt"
   },
   {
     "filterListId": 1975,
     "id": "1659",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiF%25D1%2596%25D0%259C%2520ListDomains.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiF%25D1%2596%25D0%259C%2520ListDomains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiF%25D1%2596%25D0%259C%2520ListDomains.txt"
   },
   {
     "filterListId": 1976,
     "id": "1660",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiHivemindCartoonTrashingList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiHivemindCartoonTrashingList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiHivemindCartoonTrashingList.txt"
   },
   {
     "filterListId": 1977,
     "id": "1661",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiHivemindCartoonTrashingListDomains.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiHivemindCartoonTrashingListDomains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiHivemindCartoonTrashingListDomains.txt"
   },
   {
     "filterListId": 1978,
     "id": "1662",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiStevenUniverseListDomains.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/AntiStevenUniverseListDomains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/AntiStevenUniverseListDomains.txt"
   },
   {
     "filterListId": 1979,
     "id": "1663",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInAGH.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInAGH.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInAGH.txt"
   },
   {
     "filterListId": 1980,
     "id": "1664",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInDomains.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInDomains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/BrowseWebsitesWithoutLoggingInDomains.txt"
   },
   {
     "filterListId": 1981,
     "id": "1665",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/WikiaPureBrowsingExperienceDomains.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/WikiaPureBrowsingExperienceDomains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/WikiaPureBrowsingExperienceDomains.txt"
   },
   {
     "filterListId": 1983,
     "id": "1666",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiSubmissiveEroticaList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiSubmissiveEroticaList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiSubmissiveEroticaList.txt"
   },
   {
     "filterListId": 1984,
     "id": "1667",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ImgurPureImageryExperience.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/ImgurPureImageryExperience.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ImgurPureImageryExperience.txt"
   },
   {
     "filterListId": 1985,
     "id": "1668",
-    "viewUrl": "https://dns.adguard.com/dns-query",
-    "viewUrlMirror1": "tls://dns.adguard.com",
-    "viewUrlMirror2": "176.103.130.130"
+    "viewUrl": "https://dns.adguard.com/dns-query"
   },
   {
     "filterListId": 1986,
     "id": "1669",
-    "viewUrl": "https://dns-family.adguard.com/dns-query",
-    "viewUrlMirror1": "tls://dns-family.adguard.com",
-    "viewUrlMirror2": "176.103.130.132"
+    "viewUrl": "https://dns-family.adguard.com/dns-query"
   },
   {
     "filterListId": 1987,
     "id": "1670",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/SayNoToRacismOnTwitch.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/SayNoToRacismOnTwitch.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/SayNoToRacismOnTwitch.txt"
   },
   {
     "filterListId": 1988,
     "id": "1671",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MeWeHappyTimeFunClub.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/MeWeHappyTimeFunClub.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MeWeHappyTimeFunClub.txt"
   },
   {
     "filterListId": 1989,
     "id": "1672",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Pok%C3%A9monNoGOZone.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Pok%C3%A9monNoGOZone.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Pok%C3%A9monNoGOZone.txt"
   },
   {
     "filterListId": 1990,
     "id": "1673",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EmptyPaddingRemover.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/EmptyPaddingRemover.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EmptyPaddingRemover.txt"
   },
   {
     "filterListId": 1991,
     "id": "1674",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/JapaneseTextSoftener.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/JapaneseTextSoftener.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/JapaneseTextSoftener.txt"
   },
   {
     "filterListId": 1992,
@@ -9005,42 +8592,32 @@
   {
     "filterListId": 2041,
     "id": "1719",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsIPv6.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsIPv6.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsIPv6.txt"
   },
   {
     "filterListId": 2042,
     "id": "1720",
-    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/deviantJUNKfilter.txt",
-    "viewUrlMirror1": "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/deviantJUNKfilter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/deviantJUNKfilter.txt"
   },
   {
     "filterListId": 2043,
     "id": "1721",
-    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt",
-    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt",
-    "viewUrlMirror2": "https://anti-ad.net/easylist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt"
   },
   {
     "filterListId": 2044,
     "id": "1722",
-    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt",
-    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-domains.txt",
-    "viewUrlMirror2": "https://anti-ad.net/domains.txt"
+    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt"
   },
   {
     "filterListId": 2045,
     "id": "1723",
-    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf",
-    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/adblock-for-dnsmasq.conf",
-    "viewUrlMirror2": "https://anti-ad.net/anti-ad-for-dnsmasq.conf"
+    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf"
   },
   {
     "filterListId": 2046,
     "id": "1724",
-    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt",
-    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-surge.txt",
-    "viewUrlMirror2": "https://anti-ad.net/surge.txt"
+    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt"
   },
   {
     "filterListId": 2047,
@@ -9130,9 +8707,7 @@
   {
     "filterListId": 2064,
     "id": "1742",
-    "viewUrl": "https://adblock.any.dns.nixnet.xyz/dns-query",
-    "viewUrlMirror1": "tls://198.251.90.89:853",
-    "viewUrlMirror2": "198.251.90.89"
+    "viewUrl": "https://adblock.any.dns.nixnet.xyz/dns-query"
   },
   {
     "filterListId": 2065,
@@ -9142,13 +8717,12 @@
   {
     "filterListId": 2067,
     "id": "1744",
-    "viewUrl": "https://ads-doh.securedns.eu/dns-query",
-    "viewUrlMirror1": "tls://ads-dot.securedns.eu",
-    "viewUrlMirror2": "146.185.167.43:5443"
+    "viewUrl": "https://ads-doh.securedns.eu/dns-query"
   },
   {
     "filterListId": 2068,
-    "id": "1745"
+    "id": "1745",
+    "viewUrl": null
   },
   {
     "filterListId": 2069,
@@ -9158,9 +8732,7 @@
   {
     "filterListId": 2070,
     "id": "1747",
-    "viewUrl": "https://dns.noads.online/dns-query",
-    "viewUrlMirror1": "tls://dns.noads.online:853",
-    "viewUrlMirror2": "167.99.241.49"
+    "viewUrl": "https://dns.noads.online/dns-query"
   },
   {
     "filterListId": 2071,
@@ -9290,9 +8862,7 @@
   {
     "filterListId": 2099,
     "id": "1773",
-    "viewUrl": "185.228.168.9",
-    "viewUrlMirror1": "185.228.169.9",
-    "viewUrlMirror2": "2a0d:2a00:1::2"
+    "viewUrl": "185.228.168.9"
   },
   {
     "filterListId": 2100,
@@ -9317,23 +8887,17 @@
   {
     "filterListId": 2104,
     "id": "1778",
-    "viewUrl": "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt",
-    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/banbendalao/ADgk@latest/ADgk.txt",
-    "viewUrlMirror2": "https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/ADgk.txt"
+    "viewUrl": "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt"
   },
   {
     "filterListId": 2105,
     "id": "1779",
-    "viewUrl": "https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt",
-    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/banbendalao/ADgk@latest/kill-baidu-ad.txt",
-    "viewUrlMirror2": "https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/kill-baidu-ad.txt"
+    "viewUrl": "https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt"
   },
   {
     "filterListId": 2106,
     "id": "1780",
-    "viewUrl": "https://dns.adgk.net:4433/dns-query",
-    "viewUrlMirror1": "tls://dns.adgk.net",
-    "viewUrlMirror2": "47.98.48.196"
+    "viewUrl": "https://dns.adgk.net:4433/dns-query"
   },
   {
     "filterListId": 2107,
@@ -9348,8 +8912,7 @@
   {
     "filterListId": 2109,
     "id": "1783",
-    "viewUrl": "https://gitee.com/halflife/list/raw/master/ad.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt"
+    "viewUrl": "https://gitee.com/halflife/list/raw/master/ad.txt"
   },
   {
     "filterListId": 2110,
@@ -9359,26 +8922,22 @@
   {
     "filterListId": 2111,
     "id": "1785",
-    "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt",
-    "viewUrlMirror1": "https://gitee.com/cjx82630/cjxlist/raw/master/cjx-ublock.txt"
+    "viewUrl": "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt"
   },
   {
     "filterListId": 2112,
     "id": "1786",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GDPR%20451%20List.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/GDPR%20451%20List.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GDPR%20451%20List.txt"
   },
   {
     "filterListId": 2113,
     "id": "1787",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/TorRedirectorList-URLRedirector.json",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Other%20domains%20versions/TorRedirectorList-URLRedirector.json"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/TorRedirectorList-URLRedirector.json"
   },
   {
     "filterListId": 2114,
     "id": "1788",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MediaPlayerGradientRemover.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/MediaPlayerGradientRemover.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/MediaPlayerGradientRemover.txt"
   },
   {
     "filterListId": 2115,
@@ -9578,27 +9137,22 @@
   {
     "filterListId": 2155,
     "id": "1828",
-    "viewUrl": "https://abp.oisd.nl/",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/abp.txt",
-    "viewUrlMirror2": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/abp.txt"
+    "viewUrl": "https://abp.oisd.nl/"
   },
   {
     "filterListId": 2156,
     "id": "1829",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Special%20security%20lists/IDNHomographProtectionTotal.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/IDNHomographProtectionTotal.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Special%20security%20lists/IDNHomographProtectionTotal.txt"
   },
   {
     "filterListId": 2157,
     "id": "1830",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Special%20security%20lists/IDNHomographProtection-USLatinTLDsOnly.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/IDNHomographProtection-USLatinTLDsOnly.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Special%20security%20lists/IDNHomographProtection-USLatinTLDsOnly.txt"
   },
   {
     "filterListId": 2158,
     "id": "1831",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EkstraBladetEroticContentRemover.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/EkstraBladetEroticContentRemover.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EkstraBladetEroticContentRemover.txt"
   },
   {
     "filterListId": 2159,
@@ -9623,64 +9177,47 @@
   {
     "filterListId": 2163,
     "id": "1836",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/UndertaleRemoverForSoundCloud.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/UndertaleRemoverForSoundCloud.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/UndertaleRemoverForSoundCloud.txt"
   },
   {
     "filterListId": 2164,
     "id": "1837",
-    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-dnsmasq.conf",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf"
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf"
   },
   {
     "filterListId": 2165,
     "id": "1838",
-    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-dnsmasq-online.conf",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf"
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf"
   },
   {
     "filterListId": 2166,
     "id": "1839",
-    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-hosts.txt",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt"
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt"
   },
   {
     "filterListId": 2167,
     "id": "1840",
-    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-hosts-online.txt",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt"
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt"
   },
   {
     "filterListId": 2168,
     "id": "1841",
-    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-bind.conf",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind.conf"
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind.conf"
   },
   {
     "filterListId": 2169,
     "id": "1842",
-    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind-online.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-bind-online.conf",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind-online.conf"
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind-online.conf"
   },
   {
     "filterListId": 2170,
     "id": "1843",
-    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-unbound.conf",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound.conf"
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound.conf"
   },
   {
     "filterListId": 2171,
     "id": "1844",
-    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-unbound-online.conf",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf"
+    "viewUrl": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf"
   },
   {
     "filterListId": 2172,
@@ -9720,8 +9257,7 @@
   {
     "filterListId": 2179,
     "id": "1852",
-    "viewUrl": "https://raw.githubusercontent.com/wolfbeast/lunarblocklist/master/list/lunar-blocklist.txt",
-    "viewUrlMirror1": "https://blocklist.palemoon.org/ABL/lunar-blocklist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/wolfbeast/lunarblocklist/master/list/lunar-blocklist.txt"
   },
   {
     "filterListId": 2180,
@@ -9926,8 +9462,7 @@
   {
     "filterListId": 2220,
     "id": "1893",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAnthroCombatWaifuList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAnthroCombatWaifuList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAnthroCombatWaifuList.txt"
   },
   {
     "filterListId": 2221,
@@ -10222,20 +9757,17 @@
   {
     "filterListId": 2279,
     "id": "1952",
-    "viewUrl": "https://badmojr.github.io/1Hosts/complete/wildcards.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/badmojr/1Hosts/master/complete/wildcards.txt"
+    "viewUrl": "https://badmojr.github.io/1Hosts/complete/wildcards.txt"
   },
   {
     "filterListId": 2280,
     "id": "1953",
-    "viewUrl": "https://badmojr.github.io/1Hosts/mini/wildcards.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/wildcards.txt"
+    "viewUrl": "https://badmojr.github.io/1Hosts/mini/wildcards.txt"
   },
   {
     "filterListId": 2281,
     "id": "1954",
-    "viewUrl": "https://badmojr.github.io/1Hosts/Pro/wildcards.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/wildcards.txt"
+    "viewUrl": "https://badmojr.github.io/1Hosts/Pro/wildcards.txt"
   },
   {
     "filterListId": 2282,
@@ -10260,14 +9792,12 @@
   {
     "filterListId": 2286,
     "id": "1959",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Inclusion.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Inclusion.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersABP-Inclusion.txt"
   },
   {
     "filterListId": 2287,
     "id": "1960",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiRacismList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiRacismList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiRacismList.txt"
   },
   {
     "filterListId": 2288,
@@ -10342,8 +9872,7 @@
   {
     "filterListId": 2302,
     "id": "1975",
-    "viewUrl": "https://raw.githubusercontent.com/d43m0nhLInt3r/socialblocklists/master/Skype/skypeblocklist.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/evpne/socialblocklists/master/Skype/skypeblocklist.txt"
+    "viewUrl": "https://raw.githubusercontent.com/d43m0nhLInt3r/socialblocklists/master/Skype/skypeblocklist.txt"
   },
   {
     "filterListId": 2303,
@@ -10388,8 +9917,7 @@
   {
     "filterListId": 2311,
     "id": "1984",
-    "viewUrl": "https://rescure.fruxlabs.com/covid.txt",
-    "viewUrlMirror1": "https://kriskintel.com/ktip_corona.txt"
+    "viewUrl": "https://rescure.fruxlabs.com/covid.txt"
   },
   {
     "filterListId": 2312,
@@ -10429,14 +9957,12 @@
   {
     "filterListId": 2319,
     "id": "1992",
-    "viewUrl": "https://ftpihole.s3.eu-west-2.amazonaws.com/blocklists/smartphone-ads-tracking.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/ftpmorph/ftpihole/master/blocklists/smartphone-ads-tracking.txt"
+    "viewUrl": "https://ftpihole.s3.eu-west-2.amazonaws.com/blocklists/smartphone-ads-tracking.txt"
   },
   {
     "filterListId": 2320,
     "id": "1993",
-    "viewUrl": "https://ftpihole.s3.eu-west-2.amazonaws.com/blocklists/xiaomi-ads-tracking.txt",
-    "viewUrlMirror1": "https://raw.githubusercontent.com/ftpmorph/ftpihole/master/blocklists/xiaomi-ads-tracking.txt"
+    "viewUrl": "https://ftpihole.s3.eu-west-2.amazonaws.com/blocklists/xiaomi-ads-tracking.txt"
   },
   {
     "filterListId": 2321,
@@ -10451,44 +9977,32 @@
   {
     "filterListId": 2323,
     "id": "1996",
-    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter.txt",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter.txt"
+    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter.txt"
   },
   {
     "filterListId": 2324,
     "id": "1997",
-    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-domains.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/phishing-filter/master/phishing-filter-domains.txt",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-domains.txt"
+    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-domains.txt"
   },
   {
     "filterListId": 2325,
     "id": "1998",
-    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-dnsmasq.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter-dnsmasq.conf",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-dnsmasq.conf"
+    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-dnsmasq.conf"
   },
   {
     "filterListId": 2326,
     "id": "1999",
-    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-hosts.txt",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter-hosts.txt",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-hosts.txt"
+    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-hosts.txt"
   },
   {
     "filterListId": 2327,
     "id": "2000",
-    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-bind.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter-bind.conf",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-bind.conf"
+    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-bind.conf"
   },
   {
     "filterListId": 2328,
     "id": "2001",
-    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-unbound.conf",
-    "viewUrlMirror1": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter-unbound.conf",
-    "viewUrlMirror2": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-unbound.conf"
+    "viewUrl": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-unbound.conf"
   },
   {
     "filterListId": 2329,
@@ -10548,9 +10062,7 @@
   {
     "filterListId": 2340,
     "id": "2013",
-    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-smartdns.conf",
-    "viewUrlMirror1": "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-smartdns.conf",
-    "viewUrlMirror2": "https://anti-ad.net/anti-ad-for-smartdns.conf"
+    "viewUrl": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-smartdns.conf"
   },
   {
     "filterListId": 2341,
@@ -10680,8 +10192,7 @@
   {
     "filterListId": 2366,
     "id": "2039",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/FalukorvList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/FalukorvList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/FalukorvList.txt"
   },
   {
     "filterListId": 2367,
@@ -10696,8 +10207,7 @@
   {
     "filterListId": 2369,
     "id": "2042",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiKpopSpammersTwitter.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiKpopSpammersTwitter.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiKpopSpammersTwitter.txt"
   },
   {
     "filterListId": 2370,
@@ -10717,26 +10227,22 @@
   {
     "filterListId": 2373,
     "id": "2046",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAdoptablesList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAdoptablesList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAdoptablesList.txt"
   },
   {
     "filterListId": 2374,
     "id": "2047",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianCashbackAssistantReborn.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianCashbackAssistantReborn.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianCashbackAssistantReborn.txt"
   },
   {
     "filterListId": 2375,
     "id": "2048",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiNonNewsList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiNonNewsList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiNonNewsList.txt"
   },
   {
     "filterListId": 2376,
     "id": "2049",
-    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiBadCapitalismList.txt",
-    "viewUrlMirror1": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiBadCapitalismList.txt"
+    "viewUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiBadCapitalismList.txt"
   },
   {
     "filterListId": 2377,
@@ -10751,51 +10257,42 @@
   {
     "filterListId": 2379,
     "id": "2052",
-    "viewUrl": "https://doh1.blahdns.com/dns-query",
-    "viewUrlMirror1": "tls://95.216.212.177:853",
-    "viewUrlMirror2": "95.216.212.177"
+    "viewUrl": "https://doh1.blahdns.com/dns-query"
   },
   {
     "filterListId": 2380,
     "id": "2053",
-    "viewUrl": "https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/surge.conf",
-    "viewUrlMirror1": "https://git.qvq.network/googlehosts/hosts/raw/master/hosts-files/surge.conf"
+    "viewUrl": "https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/surge.conf"
   },
   {
     "filterListId": 2381,
     "id": "2054",
-    "viewUrl": "https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/dnsmasq.conf",
-    "viewUrlMirror1": "https://git.qvq.network/googlehosts/hosts/raw/master/hosts-files/dnsmasq.conf"
+    "viewUrl": "https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/dnsmasq.conf"
   },
   {
     "filterListId": 2382,
     "id": "2055",
-    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/abp_light.txt",
-    "viewUrlMirror1": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/abp_light.txt"
+    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/abp_light.txt"
   },
   {
     "filterListId": 2383,
     "id": "2056",
-    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dblw.txt",
-    "viewUrlMirror1": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/dblw.txt"
+    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dblw.txt"
   },
   {
     "filterListId": 2384,
     "id": "2057",
-    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dblw_light.txt",
-    "viewUrlMirror1": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/dblw_light.txt"
+    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dblw_light.txt"
   },
   {
     "filterListId": 2385,
     "id": "2058",
-    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dnsmasq.txt",
-    "viewUrlMirror1": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/dnsmasq.txt"
+    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dnsmasq.txt"
   },
   {
     "filterListId": 2386,
     "id": "2059",
-    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dnsmasq_light.txt",
-    "viewUrlMirror1": "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/dnsmasq_light.txt"
+    "viewUrl": "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dnsmasq_light.txt"
   },
   {
     "filterListId": 2387,
@@ -10830,22 +10327,16 @@
   {
     "filterListId": 2393,
     "id": "2066",
-    "viewUrl": "https://security.cloudflare-dns.com/dns-query",
-    "viewUrlMirror1": "1.1.1.2",
-    "viewUrlMirror2": "1.0.0.2"
+    "viewUrl": "https://security.cloudflare-dns.com/dns-query"
   },
   {
     "filterListId": 2394,
     "id": "2067",
-    "viewUrl": "https://family.cloudflare-dns.com/dns-query",
-    "viewUrlMirror1": "1.1.1.3",
-    "viewUrlMirror2": "1.0.0.3"
+    "viewUrl": "https://family.cloudflare-dns.com/dns-query"
   },
   {
     "filterListId": 2395,
     "id": "2068",
-    "viewUrl": "156.154.70.2",
-    "viewUrlMirror1": "156.154.71.2",
-    "viewUrlMirror2": "2610:a1:1018::2"
+    "viewUrl": "156.154.70.2"
   }
 ]
