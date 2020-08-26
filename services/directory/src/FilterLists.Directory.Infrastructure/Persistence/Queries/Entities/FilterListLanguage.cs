@@ -8,7 +8,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     {
         public int FilterListId { get; private set; }
         public FilterList FilterList { get; private set; } = null!;
-        public string LanguageIso6391 { get; private set; } = null!;
+        public string Iso6391 { get; private set; } = null!;
         public Language Language { get; private set; } = null!;
     }
 
@@ -18,7 +18,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
             builder.ToTable(nameof(FilterListLanguage) + "s");
-            builder.HasKey(fll => new {fll.FilterListId, fll.LanguageIso6391});
+            builder.HasKey(fll => new {fll.FilterListId, fll.Iso6391});
             builder.HasDataJsonFile<FilterListLanguage>();
         }
     }

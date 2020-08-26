@@ -179,11 +179,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: table => new
                 {
                     FilterListId = table.Column<int>(nullable: false),
-                    LanguageIso6391 = table.Column<string>(nullable: false)
+                    Iso6391 = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_FilterListLanguages", x => new { x.FilterListId, x.LanguageIso6391 });
+                    table.PrimaryKey("PK_FilterListLanguages", x => new { x.FilterListId, x.Iso6391 });
                     table.ForeignKey(
                         name: "FK_FilterListLanguages_FilterLists_FilterListId",
                         column: x => x.FilterListId,
@@ -191,8 +191,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_FilterListLanguages_Languages_LanguageIso6391",
-                        column: x => x.LanguageIso6391,
+                        name: "FK_FilterListLanguages_Languages_Iso6391",
+                        column: x => x.Iso6391,
                         principalTable: "Languages",
                         principalColumn: "Iso6391",
                         onDelete: ReferentialAction.Cascade);
@@ -365,9 +365,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 column: "DependentFilterListId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_FilterListLanguages_LanguageIso6391",
+                name: "IX_FilterListLanguages_Iso6391",
                 table: "FilterListLanguages",
-                column: "LanguageIso6391");
+                column: "Iso6391");
 
             migrationBuilder.CreateIndex(
                 name: "IX_FilterListMaintainers_MaintainerId",

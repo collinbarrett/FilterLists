@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20200825215253_Initial")]
+    [Migration("20200826190733_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -92,12 +92,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.Property<int>("FilterListId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("LanguageIso6391")
+                    b.Property<string>("Iso6391")
                         .HasColumnType("text");
 
-                    b.HasKey("FilterListId", "LanguageIso6391");
+                    b.HasKey("FilterListId", "Iso6391");
 
-                    b.HasIndex("LanguageIso6391");
+                    b.HasIndex("Iso6391");
 
                     b.ToTable("FilterListLanguages");
                 });
@@ -406,7 +406,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
                     b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Language", "Language")
                         .WithMany("FilterListLanguages")
-                        .HasForeignKey("LanguageIso6391")
+                        .HasForeignKey("Iso6391")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
