@@ -30,6 +30,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{8F419098-3
 		directory\data\FilterListLanguage.json = directory\data\FilterListLanguage.json
 		directory\data\FilterListMaintainer.json = directory\data\FilterListMaintainer.json
 		directory\data\FilterListSegmentViewUrl.json = directory\data\FilterListSegmentViewUrl.json
+		directory\data\FilterListSegmentViewUrlMirror.json = directory\data\FilterListSegmentViewUrlMirror.json
 		directory\data\FilterListSyntax.json = directory\data\FilterListSyntax.json
 		directory\data\FilterListTag.json = directory\data\FilterListTag.json
 		directory\data\Fork.json = directory\data\Fork.json
