@@ -17,10 +17,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<SoftwareSyntax> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
-
             builder.ToTable(nameof(SoftwareSyntax) + "es");
-
             builder.HasKey(ss => new {ss.SoftwareId, ss.SyntaxId});
+            builder.HasDataJsonFile<SoftwareSyntax>();
         }
     }
 }

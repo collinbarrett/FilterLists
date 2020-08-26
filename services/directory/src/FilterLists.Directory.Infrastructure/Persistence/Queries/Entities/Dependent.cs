@@ -17,9 +17,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<Dependent> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
-
             builder.ToTable(nameof(Dependent) + "s");
-
             builder.HasKey(d => new {d.DependencyFilterListId, d.DependentFilterListId});
             builder.HasOne(d => d.DependencyFilterList)
                 .WithMany(fl => fl.DependentFilterLists)
@@ -27,6 +25,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
             builder.HasOne(d => d.DependentFilterList)
                 .WithMany(fl => fl.DependencyFilterLists)
                 .HasForeignKey(d => d.DependentFilterListId);
+            builder.HasDataJsonFile<Dependent>();
         }
     }
 }

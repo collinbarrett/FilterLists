@@ -17,8 +17,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<Language> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
-
             builder.HasKey(l => l.Iso6391);
+            builder.HasDataJsonFile<Language>();
         }
     }
 }
