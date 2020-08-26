@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20200826190733_Initial")]
+    [Migration("20200826221237_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -343,7 +343,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         .WithMany("FilterLists")
                         .HasForeignKey("LicenseId");
 
-                    b.OwnsMany("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.SegmentViewUrl", "SegmentViewUrls", b1 =>
+                    b.OwnsMany("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListSegmentViewUrl", "SegmentViewUrls", b1 =>
                         {
                             b1.Property<int>("Id")
                                 .ValueGeneratedOnAdd()
@@ -365,12 +365,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             b1.HasIndex("FilterListId", "Position")
                                 .IsUnique();
 
-                            b1.ToTable("SegmentViewUrls");
+                            b1.ToTable("FilterListSegmentViewUrls");
 
                             b1.WithOwner("FilterList")
                                 .HasForeignKey("FilterListId");
 
-                            b1.OwnsMany("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.SegmentViewUrlMirror", "SegmentViewUrlMirrors", b2 =>
+                            b1.OwnsMany("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListSegmentViewUrlMirror", "Mirrors", b2 =>
                                 {
                                     b2.Property<int>("Id")
                                         .ValueGeneratedOnAdd()
@@ -388,7 +388,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
                                     b2.HasIndex("SegmentViewUrlId");
 
-                                    b2.ToTable("SegmentViewUrlMirrors");
+                                    b2.ToTable("FilterListSegmentViewUrlMirrors");
 
                                     b2.WithOwner("SegmentViewUrl")
                                         .HasForeignKey("SegmentViewUrlId");
