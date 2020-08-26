@@ -90,12 +90,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.Property<int>("FilterListId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("LanguageIso6391")
+                    b.Property<string>("Iso6391")
                         .HasColumnType("text");
 
-                    b.HasKey("FilterListId", "LanguageIso6391");
+                    b.HasKey("FilterListId", "Iso6391");
 
-                    b.HasIndex("LanguageIso6391");
+                    b.HasIndex("Iso6391");
 
                     b.ToTable("FilterListLanguages");
                 });
@@ -404,7 +404,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
                     b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Language", "Language")
                         .WithMany("FilterListLanguages")
-                        .HasForeignKey("LanguageIso6391")
+                        .HasForeignKey("Iso6391")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
