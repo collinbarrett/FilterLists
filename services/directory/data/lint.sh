@@ -1,7 +1,7 @@
 #!/bin/bash
 # Sorts json files by FilterLists conventions documented in Wiki.
 
-jq -S ".|=sort_by(.dependentFilterListId, .dependencyFilterListId)" Dependent.json > Dependent.tmp
+jq -S ".|=sort_by(.dependencyFilterListId, .dependentFilterListId)" Dependent.json > Dependent.tmp
 mv Dependent.tmp Dependent.json
 
 jq -S ".|=sort_by(.id)" FilterList.json > FilterList.tmp
@@ -10,10 +10,10 @@ mv FilterList.tmp FilterList.json
 jq -S ".|=sort_by(.filterListId, .iso6391)" FilterListLanguage.json > FilterListLanguage.tmp
 mv FilterListLanguage.tmp FilterListLanguage.json
 
-jq -S ".|=sort_by(.maintainerId, .filterListId)" FilterListMaintainer.json > FilterListMaintainer.tmp
+jq -S ".|=sort_by(.filterListId, .maintainerId)" FilterListMaintainer.json > FilterListMaintainer.tmp
 mv FilterListMaintainer.tmp FilterListMaintainer.json
 
-jq -S ".|=sort_by(.filterListId, .id)" FilterListSegmentViewUrl.json > FilterListSegmentViewUrl.tmp
+jq -S ".|=sort_by(.filterListId, .position)" FilterListSegmentViewUrl.json > FilterListSegmentViewUrl.tmp
 mv FilterListSegmentViewUrl.tmp FilterListSegmentViewUrl.json
 
 jq -S ".|=sort_by(.segmentViewUrlId, .id)" FilterListSegmentViewUrlMirror.json > FilterListSegmentViewUrlMirror.tmp
@@ -43,7 +43,7 @@ mv Merge.tmp Merge.json
 jq -S ".|=sort_by(.id)" Software.json > Software.tmp
 mv Software.tmp Software.json
 
-jq -S ".|=sort_by(.syntaxId, .softwareId)" SoftwareSyntax.json > SoftwareSyntax.tmp
+jq -S ".|=sort_by(.softwareId, .syntaxId)" SoftwareSyntax.json > SoftwareSyntax.tmp
 mv SoftwareSyntax.tmp SoftwareSyntax.json
 
 jq -S ".|=sort_by(.id)" Syntax.json > Syntax.tmp
