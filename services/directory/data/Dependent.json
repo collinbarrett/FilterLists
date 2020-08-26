@@ -1,11 +1,7 @@
 [
   {
-    "dependencyFilterListId": 301,
-    "dependentFilterListId": 344
-  },
-  {
-    "dependencyFilterListId": 479,
-    "dependentFilterListId": 344
+    "dependencyFilterListId": 60,
+    "dependentFilterListId": 1816
   },
   {
     "dependencyFilterListId": 97,
@@ -20,11 +16,15 @@
     "dependentFilterListId": 853
   },
   {
-    "dependencyFilterListId": 60,
-    "dependentFilterListId": 1816
+    "dependencyFilterListId": 301,
+    "dependentFilterListId": 344
   },
   {
     "dependencyFilterListId": 347,
     "dependentFilterListId": 1817
+  },
+  {
+    "dependencyFilterListId": 479,
+    "dependentFilterListId": 344
   }
 ]
