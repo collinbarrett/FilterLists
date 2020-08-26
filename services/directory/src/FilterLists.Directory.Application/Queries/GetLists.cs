@@ -54,9 +54,7 @@ namespace FilterLists.Directory.Application.Queries
             public int? LicenseId { get; private set; }
             public IEnumerable<int>? SyntaxIds { get; private set; }
             public IEnumerable<string>? LanguageIso6391s { get; private set; }
-
             public IEnumerable<int>? TagIds { get; private set; }
-
             //public IEnumerable<SegmentViewUrl>? SegmentViewUrls { get; private set; }
             public Uri? HomeUrl { get; private set; }
             public Uri? OnionUrl { get; private set; }
