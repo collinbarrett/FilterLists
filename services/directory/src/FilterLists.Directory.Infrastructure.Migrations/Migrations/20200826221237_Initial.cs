@@ -223,6 +223,27 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "FilterListSegmentViewUrls",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    FilterListId = table.Column<int>(nullable: false),
+                    Position = table.Column<int>(nullable: false),
+                    Url = table.Column<string>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FilterListSegmentViewUrls", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_FilterListSegmentViewUrls_FilterLists_FilterListId",
+                        column: x => x.FilterListId,
+                        principalTable: "FilterLists",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "FilterListSyntaxes",
                 columns: table => new
                 {
@@ -319,28 +340,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "SegmentViewUrls",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    FilterListId = table.Column<int>(nullable: false),
-                    Position = table.Column<int>(nullable: false),
-                    Url = table.Column<string>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_SegmentViewUrls", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_SegmentViewUrls_FilterLists_FilterListId",
-                        column: x => x.FilterListId,
-                        principalTable: "FilterLists",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "SegmentViewUrlMirrors",
+                name: "FilterListSegmentViewUrlMirrors",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -350,11 +350,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_SegmentViewUrlMirrors", x => x.Id);
+                    table.PrimaryKey("PK_FilterListSegmentViewUrlMirrors", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_SegmentViewUrlMirrors_SegmentViewUrls_SegmentViewUrlId",
+                        name: "FK_FilterListSegmentViewUrlMirrors_FilterListSegmentViewUrls_S~",
                         column: x => x.SegmentViewUrlId,
-                        principalTable: "SegmentViewUrls",
+                        principalTable: "FilterListSegmentViewUrls",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -380,6 +380,17 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 column: "LicenseId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_FilterListSegmentViewUrlMirrors_SegmentViewUrlId",
+                table: "FilterListSegmentViewUrlMirrors",
+                column: "SegmentViewUrlId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_FilterListSegmentViewUrls_FilterListId_Position",
+                table: "FilterListSegmentViewUrls",
+                columns: new[] { "FilterListId", "Position" },
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_FilterListSyntaxes_SyntaxId",
                 table: "FilterListSyntaxes",
                 column: "SyntaxId");
@@ -400,17 +411,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 column: "IncludesFilterListId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_SegmentViewUrlMirrors_SegmentViewUrlId",
-                table: "SegmentViewUrlMirrors",
-                column: "SegmentViewUrlId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_SegmentViewUrls_FilterListId_Position",
-                table: "SegmentViewUrls",
-                columns: new[] { "FilterListId", "Position" },
-                unique: true);
-
-            migrationBuilder.CreateIndex(
                 name: "IX_SoftwareSyntaxes_SyntaxId",
                 table: "SoftwareSyntaxes",
                 column: "SyntaxId");
@@ -428,6 +428,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "FilterListMaintainers");
 
             migrationBuilder.DropTable(
+                name: "FilterListSegmentViewUrlMirrors");
+
+            migrationBuilder.DropTable(
                 name: "FilterListSyntaxes");
 
             migrationBuilder.DropTable(
@@ -440,9 +443,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "Merges");
 
             migrationBuilder.DropTable(
-                name: "SegmentViewUrlMirrors");
-
-            migrationBuilder.DropTable(
                 name: "SoftwareSyntaxes");
 
             migrationBuilder.DropTable(
@@ -452,10 +452,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "Maintainers");
 
             migrationBuilder.DropTable(
-                name: "Tags");
+                name: "FilterListSegmentViewUrls");
 
             migrationBuilder.DropTable(
-                name: "SegmentViewUrls");
+                name: "Tags");
 
             migrationBuilder.DropTable(
                 name: "Software");

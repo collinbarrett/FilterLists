@@ -15,7 +15,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; private set; } = new HashSet<FilterListSyntax>();
         public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; private set; } = new HashSet<FilterListLanguage>();
         public IReadOnlyCollection<FilterListTag> FilterListTags { get; private set; } = new HashSet<FilterListTag>();
-        public IReadOnlyCollection<SegmentViewUrl> SegmentViewUrls { get; private set; } = new HashSet<SegmentViewUrl>();
+        public IReadOnlyCollection<FilterListSegmentViewUrl> SegmentViewUrls { get; private set; } = new HashSet<FilterListSegmentViewUrl>();
         public Uri? HomeUrl { get; private set; }
         public Uri? OnionUrl { get; private set; }
         public Uri? PolicyUrl { get; private set; }
@@ -42,19 +42,19 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
             builder.OwnsMany(fl => fl.SegmentViewUrls,
                     o =>
                     {
-                        o.ToTable(nameof(SegmentViewUrl) + "s");
+                        o.ToTable(nameof(FilterListSegmentViewUrl) + "s");
                         o.HasKey("Id");
-                        o.HasIndex(nameof(FilterList) + "Id", nameof(SegmentViewUrl.Position)).IsUnique();
-                        o.OwnsMany(p => p.SegmentViewUrlMirrors,
+                        o.HasIndex(nameof(FilterList) + "Id", nameof(FilterListSegmentViewUrl.Position)).IsUnique();
+                        o.OwnsMany(p => p.Mirrors,
                                 m =>
                                 {
-                                    m.ToTable(nameof(SegmentViewUrlMirror) + "s");
+                                    m.ToTable(nameof(FilterListSegmentViewUrlMirror) + "s");
                                     m.Property<int>("Id");
                                     m.HasKey("Id");
                                 })
-                            .HasDataJsonFile<SegmentViewUrlMirror>();
+                            .HasDataJsonFile<FilterListSegmentViewUrlMirror>();
                     })
-                .HasDataJsonFile<SegmentViewUrl>();
+                .HasDataJsonFile<FilterListSegmentViewUrl>();
             builder.HasDataJsonFile<FilterList>();
         }
     }
