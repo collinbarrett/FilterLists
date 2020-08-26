@@ -17,9 +17,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<Fork> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
-
             builder.ToTable(nameof(Fork) + "s");
-
             builder.HasKey(f => new {f.UpstreamFilterListId, f.ForkFilterListId});
             builder.HasOne(f => f.UpstreamFilterList)
                 .WithMany(fl => fl.ForkFilterLists)
@@ -27,6 +25,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
             builder.HasOne(f => f.ForkFilterList)
                 .WithMany(fl => fl.UpstreamFilterLists)
                 .HasForeignKey(f => f.ForkFilterListId);
+            builder.HasDataJsonFile<Fork>();
         }
     }
 }

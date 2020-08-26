@@ -23,6 +23,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		FilterLists.sln.DotSettings = FilterLists.sln.DotSettings
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{8F419098-3EEB-4B4B-99A8-70555FA93DAF}"
+	ProjectSection(SolutionItems) = preProject
+		directory\data\Dependent.json = directory\data\Dependent.json
+		directory\data\FilterList.json = directory\data\FilterList.json
+		directory\data\FilterListLanguage.json = directory\data\FilterListLanguage.json
+		directory\data\FilterListMaintainer.json = directory\data\FilterListMaintainer.json
+		directory\data\FilterListTag.json = directory\data\FilterListTag.json
+		directory\data\Fork.json = directory\data\Fork.json
+		directory\data\Language.json = directory\data\Language.json
+		directory\data\License.json = directory\data\License.json
+		directory\data\Maintainer.json = directory\data\Maintainer.json
+		directory\data\Merge.json = directory\data\Merge.json
+		directory\data\Software.json = directory\data\Software.json
+		directory\data\SoftwareSyntax.json = directory\data\SoftwareSyntax.json
+		directory\data\Syntax.json = directory\data\Syntax.json
+		directory\data\Tag.json = directory\data\Tag.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +81,7 @@ Global
 		{CB1BCB34-C2A1-4E94-A90E-359FB4720B96} = {AE5D6471-1B6E-4B06-A313-34EF81F35342}
 		{74C798F8-892A-40F2-8D2E-395E83853771} = {AE5D6471-1B6E-4B06-A313-34EF81F35342}
 		{4F7D51FE-A1F3-4473-A8C3-D57EBDD8E60E} = {AE5D6471-1B6E-4B06-A313-34EF81F35342}
+		{8F419098-3EEB-4B4B-99A8-70555FA93DAF} = {AE5D6471-1B6E-4B06-A313-34EF81F35342}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {758B57EF-7505-4BE2-90A2-E2DE2EC32909}

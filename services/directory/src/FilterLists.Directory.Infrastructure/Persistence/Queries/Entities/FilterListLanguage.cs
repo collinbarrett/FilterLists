@@ -17,10 +17,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<FilterListLanguage> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
-
             builder.ToTable(nameof(FilterListLanguage) + "s");
-
             builder.HasKey(fll => new {fll.FilterListId, fll.LanguageIso6391});
+            builder.HasDataJsonFile<FilterListLanguage>();
         }
     }
 }

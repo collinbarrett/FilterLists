@@ -17,10 +17,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<FilterListMaintainer> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
-
             builder.ToTable(nameof(FilterListMaintainer) + "s");
-
             builder.HasKey(flm => new {flm.FilterListId, flm.MaintainerId});
+            builder.HasDataJsonFile<FilterListMaintainer>();
         }
     }
 }

@@ -17,10 +17,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<FilterListTag> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
-
             builder.ToTable(nameof(FilterListTag) + "s");
-
             builder.HasKey(flt => new {flt.FilterListId, flt.TagId});
+            builder.HasDataJsonFile<FilterListTag>();
         }
     }
 }

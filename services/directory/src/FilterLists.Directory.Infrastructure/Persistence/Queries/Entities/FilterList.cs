@@ -39,21 +39,23 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<FilterList> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
-
             builder.OwnsMany(fl => fl.SegmentViewUrls,
-                o =>
-                {
-                    o.ToTable(nameof(SegmentViewUrl) + "s");
-                    o.HasKey("Id");
-                    o.HasIndex(nameof(FilterList) + "Id", nameof(SegmentViewUrl.Position)).IsUnique();
-                    o.OwnsMany(p => p.SegmentViewUrlMirrors,
-                        m =>
-                        {
-                            m.ToTable(nameof(SegmentViewUrlMirror) + "s");
-                            m.Property<int>("Id");
-                            m.HasKey("Id");
-                        });
-                });
+                    o =>
+                    {
+                        o.ToTable(nameof(SegmentViewUrl) + "s");
+                        o.HasKey("Id");
+                        o.HasIndex(nameof(FilterList) + "Id", nameof(SegmentViewUrl.Position)).IsUnique();
+                        o.OwnsMany(p => p.SegmentViewUrlMirrors,
+                                m =>
+                                {
+                                    m.ToTable(nameof(SegmentViewUrlMirror) + "s");
+                                    m.Property<int>("Id");
+                                    m.HasKey("Id");
+                                })
+                            .HasDataJsonFile<SegmentViewUrlMirror>();
+                    })
+                .HasDataJsonFile<SegmentViewUrl>();
+            builder.HasDataJsonFile<FilterList>();
         }
     }
 }
