@@ -24,7 +24,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence
 
         private static IEnumerable<TEntity> GetEntities<TEntity>()
         {
-            var path = Path.Combine("../../../data", $"{typeof(TEntity).Name}.json");
+            var path = Path.Combine("../../data", $"{typeof(TEntity).Name}.json");
             if (!File.Exists(path)) return new HashSet<TEntity>();
 
             var entitiesJson = File.ReadAllText(path);
