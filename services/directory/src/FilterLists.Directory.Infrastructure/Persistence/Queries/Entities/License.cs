@@ -10,7 +10,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public int Id { get; set; }
         public string Name { get; set; } = null!;
         public string? GitHubKey { get; set; }
-        public string? Url { get; set; }
+        public Uri? Url { get; set; }
         public IReadOnlyCollection<FilterList> FilterLists { get; private set; } = new HashSet<FilterList>();
     }
 
