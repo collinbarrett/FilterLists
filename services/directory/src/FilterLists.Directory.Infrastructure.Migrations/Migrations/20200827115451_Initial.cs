@@ -276,8 +276,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    SegmentNumber = table.Column<int>(nullable: false),
-                    Primariness = table.Column<int>(nullable: false),
+                    SegmentNumber = table.Column<int>(nullable: false, defaultValue: 1),
+                    Primariness = table.Column<int>(nullable: false, defaultValue: 1),
                     Url = table.Column<string>(nullable: false),
                     FilterListId = table.Column<int>(nullable: false)
                 },

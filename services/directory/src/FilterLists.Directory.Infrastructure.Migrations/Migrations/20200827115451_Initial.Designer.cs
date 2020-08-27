@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20200827114853_Initial")]
+    [Migration("20200827115451_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -354,10 +354,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                 .HasColumnType("integer");
 
                             b1.Property<int>("Primariness")
-                                .HasColumnType("integer");
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("integer")
+                                .HasDefaultValue(1);
 
                             b1.Property<int>("SegmentNumber")
-                                .HasColumnType("integer");
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("integer")
+                                .HasDefaultValue(1);
 
                             b1.Property<string>("Url")
                                 .IsRequired()
