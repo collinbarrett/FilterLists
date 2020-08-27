@@ -17,15 +17,15 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; private set; } = new HashSet<FilterListLanguage>();
         public IReadOnlyCollection<FilterListTag> FilterListTags { get; private set; } = new HashSet<FilterListTag>();
         public IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; private set; } = new HashSet<FilterListViewUrl>();
-        public Uri? HomeUrl { get; set; }
-        public Uri? OnionUrl { get; set; }
-        public Uri? PolicyUrl { get; set; }
-        public Uri? SubmissionUrl { get; set; }
-        public Uri? IssuesUrl { get; set; }
-        public Uri? ForumUrl { get; set; }
-        public Uri? ChatUrl { get; set; }
+        public string? HomeUrl { get; set; }
+        public string? OnionUrl { get; set; }
+        public string? PolicyUrl { get; set; }
+        public string? SubmissionUrl { get; set; }
+        public string? IssuesUrl { get; set; }
+        public string? ForumUrl { get; set; }
+        public string? ChatUrl { get; set; }
         public string? EmailAddress { get; set; }
-        public Uri? DonateUrl { get; set; }
+        public string? DonateUrl { get; set; }
         public IReadOnlyCollection<FilterListMaintainer> FilterListMaintainers { get; private set; } = new HashSet<FilterListMaintainer>();
         public IReadOnlyCollection<Fork> UpstreamFilterLists { get; private set; } = new HashSet<Fork>();
         public IReadOnlyCollection<Fork> ForkFilterLists { get; private set; } = new HashSet<Fork>();

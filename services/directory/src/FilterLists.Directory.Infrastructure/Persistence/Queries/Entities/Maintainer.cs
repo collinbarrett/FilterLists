@@ -9,7 +9,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; } = null!;
-        public Uri? Url { get; set; }
+        public string? Url { get; set; }
         public string? EmailAddress { get; set; }
         public string? TwitterHandle { get; set; }
         public IReadOnlyCollection<FilterListMaintainer> FilterListMaintainers { get; private set; } = new HashSet<FilterListMaintainer>();
