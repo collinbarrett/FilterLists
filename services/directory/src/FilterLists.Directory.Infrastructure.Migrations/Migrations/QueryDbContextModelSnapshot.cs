@@ -352,10 +352,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                 .HasColumnType("integer");
 
                             b1.Property<int>("Primariness")
-                                .HasColumnType("integer");
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("integer")
+                                .HasDefaultValue(1);
 
                             b1.Property<int>("SegmentNumber")
-                                .HasColumnType("integer");
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("integer")
+                                .HasDefaultValue(1);
 
                             b1.Property<string>("Url")
                                 .IsRequired()

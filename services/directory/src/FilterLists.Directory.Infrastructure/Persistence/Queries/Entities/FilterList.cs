@@ -48,6 +48,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
                         o.HasKey(id);
                         const string filterListId = nameof(FilterList) + id;
                         o.Property<int>(filterListId);
+                        o.Property(u => u.SegmentNumber).HasDefaultValue(1);
+                        o.Property(u => u.Primariness).HasDefaultValue(1);
                         o.HasIndex(
                                 filterListId,
                                 nameof(FilterListViewUrl.SegmentNumber),
