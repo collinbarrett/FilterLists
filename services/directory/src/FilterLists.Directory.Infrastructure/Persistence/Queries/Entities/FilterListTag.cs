@@ -6,9 +6,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class FilterListTag
     {
-        public int FilterListId { get; private set; }
+        public int FilterListId { get; set; }
         public FilterList FilterList { get; private set; } = null!;
-        public int TagId { get; private set; }
+        public int TagId { get; set; }
         public Tag Tag { get; private set; } = null!;
     }
 

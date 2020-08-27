@@ -7,12 +7,12 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class Software
     {
-        public int Id { get; private set; }
-        public string Name { get; private set; } = null!;
-        public string? Description { get; private set; }
-        public Uri? HomeUrl { get; private set; }
-        public Uri? DownloadUrl { get; private set; }
-        public bool SupportsAbpUrlScheme { get; private set; }
+        public int Id { get; set; }
+        public string Name { get; set; } = null!;
+        public string? Description { get; set; }
+        public Uri? HomeUrl { get; set; }
+        public Uri? DownloadUrl { get; set; }
+        public bool SupportsAbpUrlScheme { get; set; }
         public IReadOnlyCollection<SoftwareSyntax> SoftwareSyntaxes { get; private set; } = new HashSet<SoftwareSyntax>();
     }
 

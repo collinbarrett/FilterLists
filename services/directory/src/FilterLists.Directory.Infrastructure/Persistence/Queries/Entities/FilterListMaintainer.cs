@@ -6,9 +6,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class FilterListMaintainer
     {
-        public int FilterListId { get; private set; }
+        public int FilterListId { get; set; }
         public FilterList FilterList { get; private set; } = null!;
-        public int MaintainerId { get; private set; }
+        public int MaintainerId { get; set; }
         public Maintainer Maintainer { get; private set; } = null!;
     }
 
