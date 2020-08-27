@@ -15,7 +15,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; private set; } = new HashSet<FilterListSyntax>();
         public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; private set; } = new HashSet<FilterListLanguage>();
         public IReadOnlyCollection<FilterListTag> FilterListTags { get; private set; } = new HashSet<FilterListTag>();
-        public IReadOnlyCollection<FilterListSegmentViewUrl> SegmentViewUrls { get; private set; } = new HashSet<FilterListSegmentViewUrl>();
+        public IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; private set; } = new HashSet<FilterListViewUrl>();
         public Uri? HomeUrl { get; private set; }
         public Uri? OnionUrl { get; private set; }
         public Uri? PolicyUrl { get; private set; }
@@ -39,33 +39,22 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<FilterList> builder)
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
-            builder.OwnsMany(fl => fl.SegmentViewUrls,
-                    o1 =>
+            builder.OwnsMany(fl => fl.ViewUrls,
+                    o =>
                     {
-                        o1.ToTable(nameof(FilterListSegmentViewUrl) + "s");
-                        const string filterListId = nameof(FilterList) + "Id";
-                        o1.HasKey(filterListId, nameof(FilterListSegmentViewUrl.Position));
-                        o1.Property(u => u.Position).ValueGeneratedNever();
-                        o1.OwnsMany(u => u.Mirrors,
-                                o2 =>
-                                {
-                                    o2.ToTable(nameof(FilterListSegmentViewUrlMirror) + "s");
-                                    const string segmentViewUrlFilterListId =
-                                        nameof(FilterListSegmentViewUrlMirror.SegmentViewUrl) + filterListId;
-                                    const string segmentViewUrlPosition =
-                                        nameof(FilterListSegmentViewUrlMirror.SegmentViewUrl) +
-                                        nameof(FilterListSegmentViewUrlMirror.Position);
-                                    o2.Property<int>(segmentViewUrlFilterListId);
-                                    o2.Property<int>(segmentViewUrlPosition);
-                                    o2.Property(m => m.Position).ValueGeneratedNever();
-                                    o2.HasKey(
-                                        segmentViewUrlFilterListId,
-                                        segmentViewUrlPosition,
-                                        nameof(FilterListSegmentViewUrlMirror.Position));
-                                })
-                            .HasDataJsonFile<FilterListSegmentViewUrlMirror>();
+                        o.ToTable(nameof(FilterListViewUrl) + "s");
+                        const string id = "Id";
+                        o.Property<int>(id);
+                        o.HasKey(id);
+                        const string filterListId = nameof(FilterList) + id;
+                        o.Property<int>(filterListId);
+                        o.HasIndex(
+                                filterListId,
+                                nameof(FilterListViewUrl.SegmentNumber),
+                                nameof(FilterListViewUrl.Primariness))
+                            .IsUnique();
                     })
-                .HasDataJsonFile<FilterListSegmentViewUrl>();
+                .HasDataJsonFile<FilterListViewUrl>();
             builder.HasDataJsonFile<FilterList>();
         }
     }
