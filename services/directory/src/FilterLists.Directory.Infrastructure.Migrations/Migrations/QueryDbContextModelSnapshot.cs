@@ -343,11 +343,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
                     b.OwnsMany("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListSegmentViewUrl", "SegmentViewUrls", b1 =>
                         {
-                            b1.Property<int>("Id")
-                                .ValueGeneratedOnAdd()
-                                .HasColumnType("integer")
-                                .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
                             b1.Property<int>("FilterListId")
                                 .HasColumnType("integer");
 
@@ -358,10 +353,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                 .IsRequired()
                                 .HasColumnType("text");
 
-                            b1.HasKey("Id");
-
-                            b1.HasIndex("FilterListId", "Position")
-                                .IsUnique();
+                            b1.HasKey("FilterListId", "Position");
 
                             b1.ToTable("FilterListSegmentViewUrls");
 
@@ -370,26 +362,25 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
                             b1.OwnsMany("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListSegmentViewUrlMirror", "Mirrors", b2 =>
                                 {
-                                    b2.Property<int>("Id")
-                                        .ValueGeneratedOnAdd()
-                                        .HasColumnType("integer")
-                                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+                                    b2.Property<int>("SegmentViewUrlFilterListId")
+                                        .HasColumnType("integer");
 
-                                    b2.Property<int>("SegmentViewUrlId")
+                                    b2.Property<int>("SegmentViewUrlPosition")
+                                        .HasColumnType("integer");
+
+                                    b2.Property<int>("Position")
                                         .HasColumnType("integer");
 
                                     b2.Property<string>("Url")
                                         .IsRequired()
                                         .HasColumnType("text");
 
-                                    b2.HasKey("Id");
-
-                                    b2.HasIndex("SegmentViewUrlId");
+                                    b2.HasKey("SegmentViewUrlFilterListId", "SegmentViewUrlPosition", "Position");
 
                                     b2.ToTable("FilterListSegmentViewUrlMirrors");
 
                                     b2.WithOwner("SegmentViewUrl")
-                                        .HasForeignKey("SegmentViewUrlId");
+                                        .HasForeignKey("SegmentViewUrlFilterListId", "SegmentViewUrlPosition");
                                 });
                         });
                 });
