@@ -91,7 +91,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("Iso6391")
-                        .HasColumnType("text");
+                        .HasColumnType("character varying(2)");
 
                     b.HasKey("FilterListId", "Iso6391");
 
@@ -163,7 +163,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Language", b =>
                 {
                     b.Property<string>("Iso6391")
-                        .HasColumnType("text");
+                        .HasColumnType("character(2)")
+                        .IsFixedLength(true)
+                        .HasMaxLength(2);
 
                     b.Property<string>("Name")
                         .IsRequired()
