@@ -6,9 +6,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class Fork
     {
-        public int UpstreamFilterListId { get; private set; }
+        public int UpstreamFilterListId { get; set; }
         public FilterList UpstreamFilterList { get; private set; } = null!;
-        public int ForkFilterListId { get; private set; }
+        public int ForkFilterListId { get; set; }
         public FilterList ForkFilterList { get; private set; } = null!;
     }
 

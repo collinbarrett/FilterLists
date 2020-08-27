@@ -6,9 +6,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class Dependent
     {
-        public int DependencyFilterListId { get; private set; }
+        public int DependencyFilterListId { get; set; }
         public FilterList DependencyFilterList { get; private set; } = null!;
-        public int DependentFilterListId { get; private set; }
+        public int DependentFilterListId { get; set; }
         public FilterList DependentFilterList { get; private set; } = null!;
     }
 

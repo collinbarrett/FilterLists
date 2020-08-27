@@ -7,24 +7,25 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class FilterList
     {
-        public int Id { get; private set; }
-        public string Name { get; private set; } = null!;
-        public string? Description { get; private set; }
-        public int? LicenseId { get; private set; }
-        public License? License { get; private set; }
+        // TODO: use private setters on all entity props after System.Text.Json supports seeding in net5.0
+        public int Id { get; set; }
+        public string Name { get; set; } = null!;
+        public string? Description { get; set; }
+        public int? LicenseId { get; set; }
+        public License? License { get; set; }
         public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; private set; } = new HashSet<FilterListSyntax>();
         public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; private set; } = new HashSet<FilterListLanguage>();
         public IReadOnlyCollection<FilterListTag> FilterListTags { get; private set; } = new HashSet<FilterListTag>();
         public IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; private set; } = new HashSet<FilterListViewUrl>();
-        public Uri? HomeUrl { get; private set; }
-        public Uri? OnionUrl { get; private set; }
-        public Uri? PolicyUrl { get; private set; }
-        public Uri? SubmissionUrl { get; private set; }
-        public Uri? IssuesUrl { get; private set; }
-        public Uri? ForumUrl { get; private set; }
-        public Uri? ChatUrl { get; private set; }
-        public string? EmailAddress { get; private set; }
-        public Uri? DonateUrl { get; private set; }
+        public Uri? HomeUrl { get; set; }
+        public Uri? OnionUrl { get; set; }
+        public Uri? PolicyUrl { get; set; }
+        public Uri? SubmissionUrl { get; set; }
+        public Uri? IssuesUrl { get; set; }
+        public Uri? ForumUrl { get; set; }
+        public Uri? ChatUrl { get; set; }
+        public string? EmailAddress { get; set; }
+        public Uri? DonateUrl { get; set; }
         public IReadOnlyCollection<FilterListMaintainer> FilterListMaintainers { get; private set; } = new HashSet<FilterListMaintainer>();
         public IReadOnlyCollection<Fork> UpstreamFilterLists { get; private set; } = new HashSet<Fork>();
         public IReadOnlyCollection<Fork> ForkFilterLists { get; private set; } = new HashSet<Fork>();
