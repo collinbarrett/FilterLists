@@ -18,6 +18,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
             builder.HasKey(l => l.Iso6391);
+            builder.Property(l => l.Iso6391)
+                .IsFixedLength()
+                .HasMaxLength(2);
             builder.HasDataJsonFile<Language>();
         }
     }

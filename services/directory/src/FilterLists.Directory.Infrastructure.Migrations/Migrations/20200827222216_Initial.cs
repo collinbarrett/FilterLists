@@ -11,7 +11,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "Languages",
                 columns: table => new
                 {
-                    Iso6391 = table.Column<string>(nullable: false),
+                    Iso6391 = table.Column<string>(fixedLength: true, maxLength: 2, nullable: false),
                     Name = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
