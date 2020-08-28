@@ -4922,7 +4922,7 @@
     "submissionUrl": "https://app.energized.pro",
     "syntaxId": 1,
     "updatedDate": "2019-04-01T18:12:54",
-    "viewUrlMirror1": "https://block.energized.pro/bluGo/formats/hosts.txt"
+    "viewUrl": "https://block.energized.pro/bluGo/formats/hosts.txt"
   },
   {
     "chatUrl": "https://t.me/EnergizedProtection",
@@ -20692,7 +20692,8 @@
     "issuesUrl": "https://github.com/hechz/Powershell/issues",
     "licenseId": 24,
     "name": "Peter Lowe's List (PowerShell PKG)",
-    "syntaxId": 44
+    "syntaxId": 44,
+    "viewUrl": "https://www.powershellgallery.com/packages/Manage-AdBlocksOnDNSServer/"
   },
   {
     "description": "Peter Lowe's (as of August 2018) colleague Vladimir Pissarev (who is part of the Security team in his company) mentioned to him that he runs a public DNS server that not only blocks ads and trackers, but also malware and viruses as well.",
