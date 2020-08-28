@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -33,6 +34,7 @@ namespace FilterLists.Directory.Application.Queries
                 CancellationToken cancellationToken)
             {
                 return await _context.Maintainers
+                    .OrderBy(m => m.Id)
                     .ProjectTo<MaintainerViewModel>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
@@ -42,7 +44,10 @@ namespace FilterLists.Directory.Application.Queries
         {
             public MaintainerViewModelProfile()
             {
-                CreateMap<Maintainer, MaintainerViewModel>();
+                CreateMap<Maintainer, MaintainerViewModel>()
+                    .ForMember(m => m.FilterListIds,
+                        o => o.MapFrom(m =>
+                            m.FilterListMaintainers.Select(flm => flm.FilterListId).OrderBy(flid => flid)));
             }
         }
 
