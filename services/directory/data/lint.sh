@@ -13,11 +13,8 @@ mv FilterListLanguage.tmp FilterListLanguage.json
 jq -S ".|=sort_by(.filterListId, .maintainerId)" FilterListMaintainer.json > FilterListMaintainer.tmp
 mv FilterListMaintainer.tmp FilterListMaintainer.json
 
-jq -S ".|=sort_by(.filterListId, .position)" FilterListSegmentViewUrl.json > FilterListSegmentViewUrl.tmp
-mv FilterListSegmentViewUrl.tmp FilterListSegmentViewUrl.json
-
-jq -S ".|=sort_by(.segmentViewUrlId, .id)" FilterListSegmentViewUrlMirror.json > FilterListSegmentViewUrlMirror.tmp
-mv FilterListSegmentViewUrlMirror.tmp FilterListSegmentViewUrlMirror.json
+jq -S ".|=sort_by(.filterListId, .segmentNumber, .primariness)" FilterListViewUrl.json > FilterListViewUrl.tmp
+mv FilterListViewUrl.tmp FilterListViewUrl.json
 
 jq -S ".|=sort_by(.filterListId, .syntaxId)" FilterListSyntax.json > FilterListSyntax.tmp
 mv FilterListSyntax.tmp FilterListSyntax.json
