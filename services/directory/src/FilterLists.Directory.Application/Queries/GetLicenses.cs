@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -33,6 +34,7 @@ namespace FilterLists.Directory.Application.Queries
                 CancellationToken cancellationToken)
             {
                 return await _context.Licenses
+                    .OrderBy(l => l.Id)
                     .ProjectTo<LicenseViewModel>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
@@ -42,7 +44,10 @@ namespace FilterLists.Directory.Application.Queries
         {
             public LicenseViewModelProfile()
             {
-                CreateMap<License, LicenseViewModel>();
+                CreateMap<License, LicenseViewModel>()
+                    .ForMember(l => l.FilterListIds,
+                        o => o.MapFrom(l =>
+                            l.FilterLists.Select(fl => fl.Id).OrderBy(flid => flid)));
             }
         }
 
@@ -50,8 +55,10 @@ namespace FilterLists.Directory.Application.Queries
         {
             public int Id { get; private set; }
             public string Name { get; private set; } = null!;
-            public string? GitHubKey { get; private set; }
             public Uri? Url { get; private set; }
+            public bool PermitsModification { get; private set; }
+            public bool PermitsDistribution { get; private set; }
+            public bool PermitsCommercialUse { get; private set; }
             public IEnumerable<int>? FilterListIds { get; private set; }
         }
     }
