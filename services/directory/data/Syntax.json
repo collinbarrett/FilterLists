@@ -1,32 +1,32 @@
 [
   {
-    "url": "https://en.wikipedia.org/wiki/Hosts_(file)",
     "id": 1,
-    "name": "Hosts (localhost IPv4)"
+    "name": "Hosts (localhost IPv4)",
+    "url": "https://en.wikipedia.org/wiki/Hosts_(file)"
   },
   {
     "id": 2,
     "name": "Domains"
   },
   {
-    "url": "https://adblockplus.org/filters",
     "id": 3,
-    "name": "Adblock Plus"
+    "name": "Adblock Plus",
+    "url": "https://adblockplus.org/filters"
   },
   {
-    "url": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax",
     "id": 4,
-    "name": "uBlock Origin Static"
+    "name": "uBlock Origin Static",
+    "url": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax"
   },
   {
-    "url": "https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters",
     "id": 6,
-    "name": "AdGuard"
+    "name": "AdGuard",
+    "url": "https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters"
   },
   {
-    "url": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide",
     "id": 7,
-    "name": "uMatrix/uBO lined dynamic rules"
+    "name": "uMatrix/uBO lined dynamic rules",
+    "url": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide"
   },
   {
     "id": 8,
@@ -37,28 +37,28 @@
     "name": "IPs (IPv4; no CIDR)"
   },
   {
-    "url": "https://blogs.msdn.microsoft.com/ie/2010/12/07/ie9-and-privacy-introducing-tracking-protection/",
     "id": 10,
-    "name": "Tracking Protection List (IE)"
+    "name": "Tracking Protection List (IE)",
+    "url": "https://blogs.msdn.microsoft.com/ie/2010/12/07/ie9-and-privacy-introducing-tracking-protection/"
   },
   {
     "id": 11,
     "name": "Redirector"
   },
   {
-    "url": "https://github.com/NanoAdblocker/NanoCore/tree/master/notes",
     "id": 12,
-    "name": "Nano Adblocker Static"
+    "name": "Nano Adblocker Static",
+    "url": "https://github.com/NanoAdblocker/NanoCore/tree/master/notes"
   },
   {
-    "url": "https://github.com/xd4rker/MinerBlock",
     "id": 13,
-    "name": "MinerBlock"
+    "name": "MinerBlock",
+    "url": "https://github.com/xd4rker/MinerBlock"
   },
   {
-    "url": "https://en.wikipedia.org/wiki/Hosts_(file)",
     "id": 14,
-    "name": "Non-localhost hosts (IPv4)"
+    "name": "Non-localhost hosts (IPv4)",
+    "url": "https://en.wikipedia.org/wiki/Hosts_(file)"
   },
   {
     "id": 15,
@@ -69,28 +69,28 @@
     "name": "Domains with wildcards"
   },
   {
-    "url": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#scriptlet-injection",
     "id": 17,
-    "name": "uBlock Origin scriptlet injection"
+    "name": "uBlock Origin scriptlet injection",
+    "url": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#scriptlet-injection"
   },
   {
-    "url": "https://help.obdev.at/littlesnitch/lsc-rule-group-subscriptions",
     "id": 18,
-    "name": "Little Snitch subscription rules"
+    "name": "Little Snitch subscription rules",
+    "url": "https://help.obdev.at/littlesnitch/lsc-rule-group-subscriptions"
   },
   {
-    "url": "https://www.privoxy.org/user-manual/actions-file.html",
     "id": 19,
-    "name": "Privoxy action file"
+    "name": "Privoxy action file",
+    "url": "https://www.privoxy.org/user-manual/actions-file.html"
   },
   {
     "id": 20,
     "name": "dnsmasq domains list"
   },
   {
-    "url": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name",
     "id": 21,
-    "name": "!#include compilation"
+    "name": "!#include compilation",
+    "url": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name"
   },
   {
     "id": 22,
@@ -117,18 +117,18 @@
     "name": "Windows command line script"
   },
   {
-    "url": "https://help.eyeo.com/en/adblockplus/how-to-write-filters#basic",
     "id": 28,
-    "name": "Adblocker-syntax domains"
+    "name": "Adblocker-syntax domains",
+    "url": "https://help.eyeo.com/en/adblockplus/how-to-write-filters#basic"
   },
   {
     "id": 29,
     "name": "Socks5"
   },
   {
-    "url": "https://docs.pi-hole.net/ftldns/regex/tutorial/",
     "id": 30,
-    "name": "Pi-hole RegEx"
+    "name": "Pi-hole RegEx",
+    "url": "https://docs.pi-hole.net/ftldns/regex/tutorial/"
   },
   {
     "id": 31,
@@ -147,19 +147,19 @@
     "name": "IPs (IPv4; CIDR only)"
   },
   {
-    "url": "https://en.wikipedia.org/wiki/Hosts_(file)",
     "id": 35,
-    "name": "Hosts (localhost IPv4 + IPv6)"
+    "name": "Hosts (localhost IPv4 + IPv6)",
+    "url": "https://en.wikipedia.org/wiki/Hosts_(file)"
   },
   {
-    "url": "https://en.wikipedia.org/wiki/Hosts_(file)",
     "id": 36,
-    "name": "Hosts (localhost IPv6)"
+    "name": "Hosts (localhost IPv6)",
+    "url": "https://en.wikipedia.org/wiki/Hosts_(file)"
   },
   {
-    "url": "https://en.wikipedia.org/wiki/Hosts_(file)",
     "id": 37,
-    "name": "Non-localhost hosts (IPv6)"
+    "name": "Non-localhost hosts (IPv6)",
+    "url": "https://en.wikipedia.org/wiki/Hosts_(file)"
   },
   {
     "id": 38,
@@ -214,17 +214,17 @@
     "name": "Domains for whitelisting"
   },
   {
-    "url": "https://github.com/gorhill/uMatrix/wiki/Ruleset-recipes",
     "id": 51,
-    "name": "uMatrix ruleset recipe"
+    "name": "uMatrix ruleset recipe",
+    "url": "https://github.com/gorhill/uMatrix/wiki/Ruleset-recipes"
   },
   {
     "id": 52,
     "name": "personalDNSfilter whitelisting"
   },
   {
-    "url": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide",
     "id": 53,
-    "name": "uBO lined dynamic rules w/ noop"
+    "name": "uBO lined dynamic rules w/ noop",
+    "url": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide"
   }
 ]
