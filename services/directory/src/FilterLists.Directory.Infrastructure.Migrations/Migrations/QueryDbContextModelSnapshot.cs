@@ -353,15 +353,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             b1.Property<int>("FilterListId")
                                 .HasColumnType("integer");
 
-                            b1.Property<int>("Primariness")
+                            b1.Property<short>("Primariness")
                                 .ValueGeneratedOnAdd()
-                                .HasColumnType("integer")
-                                .HasDefaultValue(1);
+                                .HasColumnType("smallint")
+                                .HasDefaultValue((short)1);
 
-                            b1.Property<int>("SegmentNumber")
+                            b1.Property<short>("SegmentNumber")
                                 .ValueGeneratedOnAdd()
-                                .HasColumnType("integer")
-                                .HasDefaultValue(1);
+                                .HasColumnType("smallint")
+                                .HasDefaultValue((short)1);
 
                             b1.Property<string>("Url")
                                 .IsRequired()
