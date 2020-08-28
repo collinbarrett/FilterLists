@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20200828005349_Initial")]
+    [Migration("20200828014014_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -217,12 +217,18 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<string>("GitHubKey")
-                        .HasColumnType("text");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<bool>("PermitsCommercialUse")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("PermitsDistribution")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("PermitsModification")
+                        .HasColumnType("boolean");
 
                     b.Property<string>("Url")
                         .HasColumnType("text");

@@ -26,8 +26,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(nullable: false),
-                    GitHubKey = table.Column<string>(nullable: true),
-                    Url = table.Column<string>(nullable: true)
+                    Url = table.Column<string>(nullable: true),
+                    PermitsModification = table.Column<bool>(nullable: false),
+                    PermitsDistribution = table.Column<bool>(nullable: false),
+                    PermitsCommercialUse = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {

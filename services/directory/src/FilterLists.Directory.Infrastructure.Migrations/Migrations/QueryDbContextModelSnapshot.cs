@@ -215,12 +215,18 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<string>("GitHubKey")
-                        .HasColumnType("text");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<bool>("PermitsCommercialUse")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("PermitsDistribution")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("PermitsModification")
+                        .HasColumnType("boolean");
 
                     b.Property<string>("Url")
                         .HasColumnType("text");
