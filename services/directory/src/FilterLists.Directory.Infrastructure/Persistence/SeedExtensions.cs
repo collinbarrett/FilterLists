@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence
@@ -12,10 +11,6 @@ namespace FilterLists.Directory.Infrastructure.Persistence
         public static void HasDataJsonFile<TEntity>(this EntityTypeBuilder entityTypeBuilder)
         {
             _ = entityTypeBuilder ?? throw new ArgumentNullException(nameof(entityTypeBuilder));
-
-            // TODO: fix seeding FilterListViewUrl
-            if (typeof(TEntity).Name == nameof(FilterListViewUrl))
-                return;
 
             var path = Path.Combine("../../data", $"{typeof(TEntity).Name}.json");
             if (!File.Exists(path)) return;
