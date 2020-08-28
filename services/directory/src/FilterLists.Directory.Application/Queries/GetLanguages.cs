@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -32,6 +33,8 @@ namespace FilterLists.Directory.Application.Queries
                 CancellationToken cancellationToken)
             {
                 return await _context.Languages
+                    .Where(l => l.FilterListLanguages.Any())
+                    .OrderBy(l => l.Iso6391)
                     .ProjectTo<LanguageViewModel>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
@@ -41,7 +44,10 @@ namespace FilterLists.Directory.Application.Queries
         {
             public LicenseViewModelProfile()
             {
-                CreateMap<Language, LanguageViewModel>();
+                CreateMap<Language, LanguageViewModel>()
+                    .ForMember(l => l.FilterListIds,
+                        o => o.MapFrom(l =>
+                            l.FilterListLanguages.Select(fll => fll.FilterListId).OrderBy(flid => flid)));
             }
         }
 
