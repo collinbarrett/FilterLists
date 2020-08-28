@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -33,6 +34,7 @@ namespace FilterLists.Directory.Application.Queries
                 CancellationToken cancellationToken)
             {
                 return await _context.Software
+                    .OrderBy(s => s.Id)
                     .ProjectTo<SoftwareViewModel>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
@@ -42,7 +44,10 @@ namespace FilterLists.Directory.Application.Queries
         {
             public SoftwareViewModelProfile()
             {
-                CreateMap<Software, SoftwareViewModel>();
+                CreateMap<Software, SoftwareViewModel>()
+                    .ForMember(s => s.SyntaxIds,
+                        o => o.MapFrom(s =>
+                            s.SoftwareSyntaxes.Select(ss => ss.SyntaxId).OrderBy(sid => sid)));
             }
         }
 
