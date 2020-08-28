@@ -2,11 +2,28 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
+using System.Threading.Tasks;
+using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace FilterLists.Directory.Infrastructure.Persistence
 {
-    internal static class SeedExtensions
+    public static class SeedExtension
+    {
+        public static async Task MigrateAsync(this IHost host)
+        {
+            _ = host ?? throw new ArgumentNullException(nameof(host));
+
+            using var scope = host.Services.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<QueryDbContext>();
+            await db.Database.MigrateAsync();
+        }
+    }
+
+    internal static class SeedConfigurationExtension
     {
         public static void HasDataJsonFile<TEntity>(this EntityTypeBuilder entityTypeBuilder)
         {
