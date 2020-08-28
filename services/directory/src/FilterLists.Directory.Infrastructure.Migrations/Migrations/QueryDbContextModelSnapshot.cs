@@ -145,6 +145,38 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.ToTable("FilterListTags");
                 });
 
+            modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListViewUrl", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<int>("FilterListId")
+                        .HasColumnType("integer");
+
+                    b.Property<short>("Primariness")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("smallint")
+                        .HasDefaultValue((short)1);
+
+                    b.Property<short>("SegmentNumber")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("smallint")
+                        .HasDefaultValue((short)1);
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FilterListId", "SegmentNumber", "Primariness")
+                        .IsUnique();
+
+                    b.ToTable("FilterListViewUrls");
+                });
+
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Fork", b =>
                 {
                     b.Property<int>("UpstreamFilterListId")
@@ -342,41 +374,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.License", "License")
                         .WithMany("FilterLists")
                         .HasForeignKey("LicenseId");
-
-                    b.OwnsMany("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListViewUrl", "ViewUrls", b1 =>
-                        {
-                            b1.Property<int>("Id")
-                                .ValueGeneratedOnAdd()
-                                .HasColumnType("integer")
-                                .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                            b1.Property<int>("FilterListId")
-                                .HasColumnType("integer");
-
-                            b1.Property<short>("Primariness")
-                                .ValueGeneratedOnAdd()
-                                .HasColumnType("smallint")
-                                .HasDefaultValue((short)1);
-
-                            b1.Property<short>("SegmentNumber")
-                                .ValueGeneratedOnAdd()
-                                .HasColumnType("smallint")
-                                .HasDefaultValue((short)1);
-
-                            b1.Property<string>("Url")
-                                .IsRequired()
-                                .HasColumnType("text");
-
-                            b1.HasKey("Id");
-
-                            b1.HasIndex("FilterListId", "SegmentNumber", "Primariness")
-                                .IsUnique();
-
-                            b1.ToTable("FilterListViewUrls");
-
-                            b1.WithOwner()
-                                .HasForeignKey("FilterListId");
-                        });
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListLanguage", b =>
@@ -435,6 +432,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Tag", "Tag")
                         .WithMany("FilterListTags")
                         .HasForeignKey("TagId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListViewUrl", b =>
+                {
+                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "FilterList")
+                        .WithMany("ViewUrls")
+                        .HasForeignKey("FilterListId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
