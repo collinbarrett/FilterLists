@@ -18,7 +18,8 @@ namespace FilterLists.Directory.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers()
+                .AddJsonOptions(o => o.JsonSerializerOptions.IgnoreNullValues = true);
             services.AddApplicationServices(Configuration);
         }
 
