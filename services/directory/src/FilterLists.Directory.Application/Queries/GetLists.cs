@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -33,6 +34,7 @@ namespace FilterLists.Directory.Application.Queries
                 CancellationToken cancellationToken)
             {
                 return await _context.FilterLists
+                    .OrderBy(fl => fl.Id)
                     .ProjectTo<ListViewModel>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
@@ -42,7 +44,37 @@ namespace FilterLists.Directory.Application.Queries
         {
             public ListViewModelProfile()
             {
-                CreateMap<FilterList, ListViewModel>();
+                CreateMap<FilterList, ListViewModel>()
+                    .ForMember(fl => fl.SyntaxIds,
+                        o => o.MapFrom(fl =>
+                            fl.FilterListSyntaxes.Select(fls => fls.SyntaxId).OrderBy(sid => sid)))
+                    .ForMember(fl => fl.LanguageIso6391s,
+                        o => o.MapFrom(fl =>
+                            fl.FilterListLanguages.Select(fls => fls.Iso6391).OrderBy(i => i)))
+                    .ForMember(fl => fl.TagIds,
+                        o => o.MapFrom(fl =>
+                            fl.FilterListTags.Select(flt => flt.TagId).OrderBy(tid => tid)))
+                    .ForMember(fl => fl.MaintainerIds,
+                        o => o.MapFrom(fl =>
+                            fl.FilterListMaintainers.Select(flm => flm.MaintainerId).OrderBy(mid => mid)))
+                    .ForMember(fl => fl.UpstreamFilterListIds,
+                        o => o.MapFrom(fl =>
+                            fl.UpstreamFilterLists.Select(ufl => ufl.UpstreamFilterListId).OrderBy(flid => flid)))
+                    .ForMember(fl => fl.ForkFilterListIds,
+                        o => o.MapFrom(fl =>
+                            fl.ForkFilterLists.Select(ffl => ffl.ForkFilterListId).OrderBy(flid => flid)))
+                    .ForMember(fl => fl.IncludedInFilterListIds,
+                        o => o.MapFrom(fl =>
+                            fl.IncludedInFilterLists.Select(iifl => iifl.IncludedInFilterListId).OrderBy(flid => flid)))
+                    .ForMember(fl => fl.IncludesFilterListIds,
+                        o => o.MapFrom(fl =>
+                            fl.IncludesFilterLists.Select(ifl => ifl.IncludesFilterListId).OrderBy(flid => flid)))
+                    .ForMember(fl => fl.DependencyFilterListIds,
+                        o => o.MapFrom(fl =>
+                            fl.DependencyFilterLists.Select(dfl => dfl.DependencyFilterListId).OrderBy(flid => flid)))
+                    .ForMember(fl => fl.DependentFilterListIds,
+                        o => o.MapFrom(fl =>
+                            fl.DependentFilterLists.Select(dfl => dfl.DependentFilterListId).OrderBy(flid => flid)));
             }
         }
 
@@ -55,7 +87,7 @@ namespace FilterLists.Directory.Application.Queries
             public IEnumerable<int>? SyntaxIds { get; private set; }
             public IEnumerable<string>? LanguageIso6391s { get; private set; }
             public IEnumerable<int>? TagIds { get; private set; }
-            //public IEnumerable<SegmentViewUrl>? SegmentViewUrls { get; private set; }
+            //public IEnumerable<FilterListViewUrl>? SegmentViewUrls { get; private set; }
             public Uri? HomeUrl { get; private set; }
             public Uri? OnionUrl { get; private set; }
             public Uri? PolicyUrl { get; private set; }
