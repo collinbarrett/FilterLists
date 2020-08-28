@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -32,6 +33,7 @@ namespace FilterLists.Directory.Application.Queries
                 CancellationToken cancellationToken)
             {
                 return await _context.Tags
+                    .OrderBy(t => t.Id)
                     .ProjectTo<TagViewModel>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
@@ -41,7 +43,10 @@ namespace FilterLists.Directory.Application.Queries
         {
             public TagViewModelProfile()
             {
-                CreateMap<Tag, TagViewModel>();
+                CreateMap<Tag, TagViewModel>()
+                    .ForMember(t => t.FilterListIds,
+                        o => o.MapFrom(t =>
+                            t.FilterListTags.Select(flt => flt.FilterListId).OrderBy(flid => flid)));
             }
         }
 
