@@ -24,7 +24,6 @@ import { LinkButton } from "../LinkButton";
 import { List } from "../../interfaces/List";
 import { Maintainer } from "../../interfaces/Maintainer";
 import { Maintainers } from "../maintainers";
-import { PublishedDate } from "../PublishedDate";
 import { RouteComponentProps } from "react-router-dom";
 import { Software } from "../../interfaces/Software";
 import { SoftwareCloud } from "../softwareCloud";
@@ -85,7 +84,6 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
         />
       )}
       <SoftwareCloud software={props.software} showLabel={true} />
-      <PublishedDate publishedDate={props.list.publishedDate} />
       <Maintainers maintainers={props.maintainers} />
       <Divider />
       <ButtonGroup style={{ display: "inherit" }}>
