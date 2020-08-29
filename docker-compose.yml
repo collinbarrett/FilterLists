@@ -7,20 +7,9 @@ services:
     networks:
       - reverse_proxy
     depends_on:
-      - web
       - directory.api
     volumes:
       - ./reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
-
-  web:
-    image: ${DOCKER_REGISTRY-}filterlists_web
-    restart: always
-    build:
-      context: ./web
-    networks:
-      - reverse_proxy
-    depends_on:
-      - directory.api
 
   directory.api:
     image: ${DOCKER_REGISTRY-}filterlists_directory_api

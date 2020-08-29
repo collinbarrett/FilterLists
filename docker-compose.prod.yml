@@ -6,6 +6,18 @@ services:
   reverse_proxy:
     ports:
       - "443:443"
+    depends_on:
+      - web
     volumes:
       - ./reverse-proxy/conf.d:/etc/nginx/conf.d:ro
       - ~/cert:/etc/nginx/cert:ro
+
+  web:
+    image: ${DOCKER_REGISTRY-}filterlists_web
+    restart: always
+    build:
+      context: ./web
+    networks:
+      - reverse_proxy
+    depends_on:
+      - directory.api
