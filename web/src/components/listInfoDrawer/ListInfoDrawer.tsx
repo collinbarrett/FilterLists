@@ -63,10 +63,7 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
       destroyOnClose={true}
       onClose={() => props.history.push("/")}
     >
-      <Description
-        description={props.list.description}
-        descriptionSourceUrl={props.list.descriptionSourceUrl}
-      />
+      <Description description={props.list.description} />
       <LanguageCloud languages={props.languages} showLabel={true} />
       <TagCloud tags={props.tags} showLabel={true} />
       {props.license && (
