@@ -1,7 +1,9 @@
 export interface Software {
   id: number;
-  homeUrl: string;
-  isAbpSubscribable: boolean;
   name: string;
+  description: string;
+  homeUrl: string;
+  downloadUrl: string;
+  supportsAbpUrlScheme: boolean;
   syntaxIds: number[];
 }

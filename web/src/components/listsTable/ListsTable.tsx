@@ -217,10 +217,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           render={(syntaxId: number) => {
             const syntax = syntaxes.find((s) => s.id === syntaxId);
             return syntax ? (
-              <SyntaxTag
-                name={syntax.name}
-                definitionUrl={syntax.definitionUrl}
-              />
+              <SyntaxTag name={syntax.name} definitionUrl={syntax.url} />
             ) : null;
           }}
         />
@@ -231,7 +228,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           key="Languages"
           dataIndex={nameof<List>("languageIds")}
           sorter={(a, b) =>
-            arraySorter(a.languageIds, b.languageIds, languages)
+            arraySorter(a.languageIso6391s, b.languageIso6391s, languages)
           }
           width={129}
           className={styles.nogrow}
@@ -242,7 +239,8 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 {l.name}&nbsp; (
                 {
                   visibleLists.filter(
-                    (li) => li.languageIds && li.languageIds.includes(l.id)
+                    (li) =>
+                      li.languageIso6391s && li.languageIso6391s.includes(l.id)
                   ).length
                 }
                 )
@@ -251,7 +249,9 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             value: l.id.toString(),
           }))}
           onFilter={(value, record) =>
-            record.languageIds ? record.languageIds.includes(+value) : false
+            record.languageIso6391s
+              ? record.languageIso6391s.includes(+value)
+              : false
           }
           render={(languageIds: number[]) =>
             languageIds ? (
