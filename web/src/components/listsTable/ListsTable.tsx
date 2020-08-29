@@ -374,7 +374,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             return license ? (
               <LicenseTag
                 name={license.name}
-                descriptionUrl={license.descriptionUrl}
+                url={license.url}
                 showLabel={false}
               />
             ) : null;
