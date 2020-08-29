@@ -14,7 +14,7 @@ services:
     build:
       dockerfile: Dockerfile.dev
     volumes:
-      - .:/app
+      - .:/app:ro
       - /app/node_modules
     environment:
       - CHOKIDAR_USEPOLLING=true

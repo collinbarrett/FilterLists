@@ -9,7 +9,7 @@ FROM node:alpine as build
 RUN apk add --no-cache python make g++
 
 # install
-WORKDIR /usr/src/app/
+WORKDIR /app
 COPY package*.json ./
 RUN npm ci --only=production
 
@@ -19,4 +19,4 @@ RUN npm run build
 
 # final
 FROM base as final
-COPY --from=build /usr/src/app/build /usr/share/nginx/html
+COPY --from=build /app/build /usr/share/nginx/html

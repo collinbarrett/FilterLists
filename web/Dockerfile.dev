@@ -3,8 +3,7 @@ FROM node:alpine
 ENV PATH /app/node_modules/.bin:$PATH
 
 # install
-RUN npm install react-scripts -g
-WORKDIR /usr/src/app/
+WORKDIR /app
 COPY package*.json ./
 RUN npm i
 
