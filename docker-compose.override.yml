@@ -1,4 +1,4 @@
-# overrides for Visual Studio development
+# overrides for development
 
 version: "3.8"
 
@@ -9,6 +9,7 @@ services:
       - "80:80"
     volumes:
       - ./reverse-proxy/conf.d.dev:/etc/nginx/conf.d:ro
+    command: ["nginx-debug", "-g", "daemon off;"]
 
   directory.api:
     build:
