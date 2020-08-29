@@ -14,10 +14,10 @@ services:
     build:
       dockerfile: Dockerfile.dev
     volumes:
-      - .:/app:ro
-      - /app/node_modules
+      - ./web/src:/app/src:ro
     environment:
       - CHOKIDAR_USEPOLLING=true
+    stdin_open: true
 
   directory.api:
     build:

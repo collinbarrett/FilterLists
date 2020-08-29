@@ -1,12 +1,15 @@
 # init
 FROM node:alpine
 ENV PATH /app/node_modules/.bin:$PATH
+EXPOSE 3000
 
 # install
 WORKDIR /app
+COPY public/. public/
+COPY config-overrides.js ./
+COPY tsconfig.json ./
 COPY package*.json ./
 RUN npm i
 
 # start
-COPY . ./
 CMD ["npm", "start"]
