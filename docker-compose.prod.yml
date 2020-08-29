@@ -4,7 +4,6 @@ version: "3.8"
 
 services:
   reverse_proxy:
-    image: nginx:alpine
     ports:
       - "443:443"
     volumes:
