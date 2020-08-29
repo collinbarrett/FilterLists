@@ -12,10 +12,10 @@ export const MaintainerCloud = (props: Props) =>
   props.maintainers && props.maintainers.length ? (
     <div className={styles.grow}>
       {props.maintainers.map((m: Maintainer, i: number) =>
-        m.url ? (
+        m.homeUrl ? (
           <Tag key={i}>
             <a
-              href={m.url}
+              href={m.homeUrl}
               title={`View ${m.name}'s homepage.`}
               target="_blank"
               rel="noopener noreferrer"

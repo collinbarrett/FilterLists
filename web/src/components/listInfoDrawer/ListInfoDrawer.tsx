@@ -80,7 +80,7 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
       {props.syntax && (
         <SyntaxTag
           name={props.syntax.name}
-          definitionUrl={props.syntax.url}
+          definitionUrl={props.syntax.definitionUrl}
           showLabel={true}
         />
       )}

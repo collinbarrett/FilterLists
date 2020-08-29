@@ -1,8 +1,7 @@
 export interface Syntax {
   id: number;
-  name: string;
-  description: string;
-  url: string;
+  definitionUrl: string;
   filterListIds: number[];
+  name: string;
   softwareIds: number[];
 }
