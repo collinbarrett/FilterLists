@@ -28,7 +28,7 @@
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://filterlists.com",
+  "proxy": "http://localhost:80",
   "eslintConfig": {
     "extends": [
       "react-app",

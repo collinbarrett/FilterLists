@@ -10,15 +10,6 @@ services:
       - ./reverse-proxy/conf.d.dev:/etc/nginx/conf.d:ro
     command: ["nginx-debug", "-g", "daemon off;"]
 
-  web:
-    build:
-      dockerfile: Dockerfile.dev
-    volumes:
-      - ./web/src:/app/src:ro
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-    stdin_open: true
-
   directory.api:
     build:
       dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile.dev
