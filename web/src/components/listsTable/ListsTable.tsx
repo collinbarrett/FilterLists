@@ -125,14 +125,11 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           filterIcon={searchDescriptionColumn.filterIcon}
           onFilter={searchDescriptionColumn.onFilter}
           render={(description: string, list: List) => (
-            <Description
-              description={description}
-              descriptionSourceUrl={list.descriptionSourceUrl}
-            />
+            <Description description={description} />
           )}
         />
       )}
-      {tablePageSize.isNarrowWindow ? null : (
+      {/* {tablePageSize.isNarrowWindow ? null : (
         <Table.Column<List>
           title="Software"
           key="Software"
@@ -181,8 +178,8 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             ) : null
           }
         />
-      )}
-      {tablePageSize.isNarrowWindow ? null : (
+      )} */}
+      {/* {tablePageSize.isNarrowWindow ? null : (
         <Table.Column<List>
           title="Syntax"
           key="Syntax"
@@ -221,8 +218,8 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             ) : null;
           }}
         />
-      )}
-      {tablePageSize.isNarrowWindow ? null : (
+      )} */}
+      {/* {tablePageSize.isNarrowWindow ? null : (
         <Table.Column<List>
           title="Languages"
           key="Languages"
@@ -263,7 +260,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             ) : null
           }
         />
-      )}
+      )} */}
       {tablePageSize.isNarrowWindow ? null : (
         <Table.Column<List>
           title="Tags"

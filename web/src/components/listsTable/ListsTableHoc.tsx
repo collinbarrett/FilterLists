@@ -33,7 +33,7 @@ export const ListsTableHoc = (props: RouteComponentProps) => {
         tags={tags}
         {...props}
       />
-      <ListDrawer
+      {/* <ListDrawer
         lists={lists}
         languages={languages}
         licenses={licenses}
@@ -41,7 +41,7 @@ export const ListsTableHoc = (props: RouteComponentProps) => {
         software={software}
         syntaxes={syntaxes}
         tags={tags}
-      />
+      /> */}
     </>
   );
 };
