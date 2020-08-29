@@ -3,6 +3,7 @@ version: "3.8"
 services:
   reverse_proxy:
     image: nginx:alpine
+    restart: always
     networks:
       - reverse_proxy
     depends_on:
@@ -13,6 +14,7 @@ services:
 
   web:
     image: ${DOCKER_REGISTRY-}filterlists_web
+    restart: always
     build:
       context: ./web
     networks:
@@ -22,6 +24,7 @@ services:
 
   directory.api:
     image: ${DOCKER_REGISTRY-}filterlists_directory_api
+    restart: always
     build:
       context: ./services
       dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile
@@ -37,6 +40,7 @@ services:
 
   directory.db:
     image: postgres:alpine
+    restart: always
     networks:
       - directory
     volumes:
