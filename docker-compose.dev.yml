@@ -7,11 +7,8 @@ services:
     image: nginx:alpine
     ports:
       - "80:80"
-    networks:
-      - reverse_proxy
-    depends_on:
-      - web
-      - directory.api
     volumes:
-      - ./reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
       - ./reverse-proxy/conf.d.dev:/etc/nginx/conf.d:ro
+      
+  directory.db:
+    command: ["postgres", "-c", "log_statement=all"]

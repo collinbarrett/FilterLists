@@ -1,6 +1,16 @@
 version: "3.8"
 
 services:
+  reverse_proxy:
+    image: nginx:alpine
+    networks:
+      - reverse_proxy
+    depends_on:
+      - web
+      - directory.api
+    volumes:
+      - ./reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
+
   web:
     image: ${DOCKER_REGISTRY-}filterlists_web
     build:
