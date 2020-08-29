@@ -1,6 +1,7 @@
 import { useLanguages } from "./useLanguages";
 import { useLicenses } from "./useLicenses";
 import { useLists } from "./useLists";
+import { useListDetails } from "./useListDetails";
 import { useMaintainers } from "./useMaintainers";
 import { useSearchColumnFilter } from "./useSearchColumnFilter";
 import { useSoftware } from "./useSoftware";
@@ -12,6 +13,7 @@ export {
   useLanguages,
   useLicenses,
   useLists,
+  useListDetails,
   useMaintainers,
   useSearchColumnFilter,
   useSoftware,
