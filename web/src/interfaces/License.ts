@@ -1,9 +1,6 @@
 export interface License {
   id: number;
-  name: string;
-  url: string;
-  permitsModification: boolean;
-  permitsDistribution: boolean;
-  permitsCommercialUse: boolean;
+  descriptionUrl: string;
   filterListIds: number[];
+  name: string;
 }
