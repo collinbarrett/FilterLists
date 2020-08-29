@@ -24,7 +24,6 @@ services:
       dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile.dev
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://+:80
 
   directory.db:
     command: ["postgres", "-c", "log_statement=all"]

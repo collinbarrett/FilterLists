@@ -32,6 +32,8 @@ services:
       - directory.db
     environment:
       ConnectionStrings__DirectoryConnection: ${DIRECTORY_CONNECTION_STRING}
+    environment:
+      - ASPNETCORE_URLS=http://+:80
 
   directory.db:
     image: postgres:alpine
