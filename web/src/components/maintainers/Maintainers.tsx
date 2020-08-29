@@ -27,10 +27,10 @@ interface MaintainerComponentProps {
 
 const MaintainerComponent = (props: MaintainerComponentProps) => {
   let actions = [];
-  if (props.maintainer.homeUrl) {
+  if (props.maintainer.url) {
     actions.push(
       <a
-        href={props.maintainer.homeUrl}
+        href={props.maintainer.url}
         title={`View ${props.maintainer.name}'s homepage.`}
         target="_blank"
         rel="noopener noreferrer"
