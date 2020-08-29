@@ -22,5 +22,11 @@ namespace FilterLists.Directory.Api.Controllers
         {
             return Ok(await _mediator.Send(new GetLists.Query(), cancellationToken));
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetDetails(int id, CancellationToken cancellationToken)
+        {
+            return Ok(await _mediator.Send(new GetListDetails.Query(id), cancellationToken));
+        }
     }
 }
