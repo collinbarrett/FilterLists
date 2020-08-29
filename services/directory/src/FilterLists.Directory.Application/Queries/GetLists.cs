@@ -54,6 +54,9 @@ namespace FilterLists.Directory.Application.Queries
                     .ForMember(fl => fl.TagIds,
                         o => o.MapFrom(fl =>
                             fl.FilterListTags.Select(flt => flt.TagId).OrderBy(tid => tid)))
+                    .ForMember(fl => fl.ViewUrls,
+                        o => o.MapFrom(fl =>
+                            fl.ViewUrls.OrderBy(u => u.SegmentNumber).ThenBy(u => u.Primariness)))
                     .ForMember(fl => fl.MaintainerIds,
                         o => o.MapFrom(fl =>
                             fl.FilterListMaintainers.Select(flm => flm.MaintainerId).OrderBy(mid => mid)))
@@ -78,6 +81,14 @@ namespace FilterLists.Directory.Application.Queries
             }
         }
 
+        public class ViewUrlViewModelProfile : Profile
+        {
+            public ViewUrlViewModelProfile()
+            {
+                CreateMap<FilterListViewUrl, ViewUrlViewModel>();
+            }
+        }
+
         public class ListViewModel
         {
             public int Id { get; private set; }
@@ -87,7 +98,7 @@ namespace FilterLists.Directory.Application.Queries
             public IEnumerable<int>? SyntaxIds { get; private set; }
             public IEnumerable<string>? LanguageIso6391s { get; private set; }
             public IEnumerable<int>? TagIds { get; private set; }
-            //public IEnumerable<FilterListViewUrl>? SegmentViewUrls { get; private set; }
+            public IEnumerable<ViewUrlViewModel>? ViewUrls { get; private set; }
             public Uri? HomeUrl { get; private set; }
             public Uri? OnionUrl { get; private set; }
             public Uri? PolicyUrl { get; private set; }
@@ -104,6 +115,13 @@ namespace FilterLists.Directory.Application.Queries
             public IEnumerable<int>? IncludesFilterListIds { get; private set; }
             public IEnumerable<int>? DependencyFilterListIds { get; private set; }
             public IEnumerable<int>? DependentFilterListIds { get; private set; }
+        }
+
+        public class ViewUrlViewModel
+        {
+            public short SegmentNumber { get; private set; }
+            public short Primariness { get; private set; }
+            public Uri Url { get; private set; } = null!;
         }
     }
 }
