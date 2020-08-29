@@ -24,7 +24,7 @@ COPY directory/src/FilterLists.Directory.Infrastructure.Migrations/. FilterLists
 COPY directory/src/FilterLists.Directory.Application/. FilterLists.Directory.Application/
 WORKDIR /src/FilterLists.Directory.Api
 COPY directory/src/FilterLists.Directory.Api/. .
-RUN dotnet publish --no-restore -c Release -o /app/publish -r linux-musl-x64 -p:PublishSingleFile=true
+RUN dotnet publish -c Release --no-restore -o /app/publish -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r linux-musl-x64
 
 # package final
 FROM base AS final
