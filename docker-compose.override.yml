@@ -3,11 +3,16 @@
 version: "3.8"
 
 services:
+  reverse_proxy:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./reverse-proxy/conf.d.dev:/etc/nginx/conf.d:ro
+
   directory.api:
     build:
       dockerfile: directory/src/FilterLists.Directory.Api/debug.Dockerfile
-    ports:
-      - "80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80

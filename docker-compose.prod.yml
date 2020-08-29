@@ -7,16 +7,6 @@ services:
     image: nginx:alpine
     ports:
       - "443:443"
-    networks:
-      - reverse_proxy
-    depends_on:
-      - web
-      - directory.api
     volumes:
-      - ./reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
       - ./reverse-proxy/conf.d:/etc/nginx/conf.d:ro
       - ~/cert:/etc/nginx/cert:ro
-
-  web:
-    build:
-      context: . # hack for https://github.com/docker/compose/issues/4047
