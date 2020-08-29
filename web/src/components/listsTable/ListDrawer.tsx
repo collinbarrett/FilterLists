@@ -32,9 +32,9 @@ export const ListDrawer = (props: Props) => {
       <ListInfoDrawer
         list={list as List}
         languages={
-          list.languageIds &&
+          list.languageIso6391s &&
           props.languages.filter((l: Language) =>
-            list.languageIds.includes(l.id)
+            list.languageIso6391s.includes(l.id)
           )
         }
         license={
