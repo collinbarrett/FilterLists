@@ -12,7 +12,7 @@ services:
 
   web:
     build:
-      dockerfile: debug.Dockerfile
+      dockerfile: Dockerfile.dev
     volumes:
       - .:/app
       - /app/node_modules
@@ -21,7 +21,7 @@ services:
 
   directory.api:
     build:
-      dockerfile: directory/src/FilterLists.Directory.Api/debug.Dockerfile
+      dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile.dev
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80

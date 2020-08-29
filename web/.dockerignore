@@ -1,5 +1,4 @@
-**/Dockerfile
-**/debug.Dockerfile
+**/Dockerfile*
 **/.dockerignore
 **/.gitignore
 **/azure-pipelines.yaml
