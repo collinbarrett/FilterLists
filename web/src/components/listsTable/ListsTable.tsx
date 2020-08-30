@@ -129,17 +129,18 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           )}
         />
       )}
-      {/* {tablePageSize.isNarrowWindow ? null : (
+      {tablePageSize.isNarrowWindow ? null : (
         <Table.Column<List>
           title="Software"
           key="Software"
-          dataIndex={nameof<List>("syntaxId")}
+          dataIndex={nameof<List>("syntaxIds")}
           sorter={(a, b) => {
             const getSoftwareIds = (l: List) =>
               software
                 .filter(
                   (s: Software) =>
-                    s.syntaxIds && s.syntaxIds.includes(l.syntaxId)
+                    s.syntaxIds &&
+                    s.syntaxIds.some((i) => l.syntaxIds.includes(i))
                 )
                 .map((s) => s.id);
             return arraySorter(getSoftwareIds(a), getSoftwareIds(b), software);
@@ -154,7 +155,9 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 {s.name}&nbsp; (
                 {
                   visibleLists.filter(
-                    (l) => s.syntaxIds && s.syntaxIds.includes(l.syntaxId)
+                    (l) =>
+                      s.syntaxIds &&
+                      s.syntaxIds.some((i) => l.syntaxIds.includes(i))
                   ).length
                 }
                 )
@@ -166,19 +169,21 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             software
               .filter((s: Software) => s.name === value)
               .flatMap((s) => s.syntaxIds)
-              .includes(record.syntaxId)
+              .some((i) => record.syntaxIds.includes(i))
           }
-          render={(syntaxId: number) =>
-            syntaxId ? (
+          render={(syntaxIds: number[]) =>
+            syntaxIds ? (
               <SoftwareCloud
                 software={software.filter(
-                  (s: Software) => s.syntaxIds && s.syntaxIds.includes(syntaxId)
+                  (s: Software) =>
+                    s.syntaxIds &&
+                    s.syntaxIds.some((i) => syntaxIds.includes(i))
                 )}
               />
             ) : null
           }
         />
-      )} */}
+      )}
       {/* {tablePageSize.isNarrowWindow ? null : (
         <Table.Column<List>
           title="Syntax"
