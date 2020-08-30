@@ -189,15 +189,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           title="Syntaxes"
           key="Syntaxes"
           dataIndex={nameof<List>("syntaxIds")}
-          // sorter={(a, b) => {
-          //   const syntaxA = syntaxes.find((s) => s.id === a.syntaxIds);
-          //   const syntaxB = syntaxes.find((s) => s.id === b.syntaxIds);
-          //   return syntaxA
-          //     ? syntaxB
-          //       ? syntaxA.name.localeCompare(syntaxB.name)
-          //       : -1
-          //     : 1;
-          // }}
+          sorter={(a, b) => arraySorter(a.syntaxIds, b.syntaxIds, syntaxes)}
           width={254}
           className={styles.nogrow}
           // filters={syntaxes.map((s) => ({
