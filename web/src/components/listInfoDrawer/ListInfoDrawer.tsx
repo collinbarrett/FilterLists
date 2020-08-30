@@ -24,40 +24,40 @@ import { RouteComponentProps } from "react-router-dom";
 import { SoftwareCloud } from "../softwareCloud";
 import { SubscribeButtons } from "../SubscribeButtons";
 import { TagCloud } from "../tagCloud";
-import {
-  useListDetails,
-  useLanguages,
-  useLicenses,
-  useMaintainers,
-  useSoftware,
-  useSyntaxes,
-  useTags,
-} from "../../hooks";
+import { useListDetails } from "../../hooks";
 import { SyntaxCloud } from "../syntaxCloud";
+import { Tag } from "../../interfaces/Tag";
+import { License } from "../../interfaces/License";
+import { Maintainer } from "../../interfaces/Maintainer";
+import { Software } from "../../interfaces/Software";
+import { Syntax } from "../../interfaces/Syntax";
+import { Language } from "../../interfaces/Language";
 
 interface Props {
   listId: number;
+  languages: Language[];
+  licenses: License[];
+  maintainers: Maintainer[];
+  software: Software[];
+  syntaxes: Syntax[];
+  tags: Tag[];
 }
 
 export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
   const list = useListDetails(props.listId);
-  const languages = useLanguages();
-  const licenses = useLicenses();
-  const maintainers = useMaintainers();
-  const software = useSoftware();
-  const syntaxes = useSyntaxes();
-  const tags = useTags();
 
-  const listLanguage = languages.filter((l) =>
+  const listLanguage = props.languages.filter((l) =>
     list?.languageIso6391s.includes(l.iso6391)
   );
-  const listTags = tags.filter((t) => list?.tagIds.includes(t.id));
-  const listLicense = licenses.find((l) => l.id === list?.id);
-  const listSyntaxes = syntaxes.filter((s) => list?.syntaxIds.includes(s.id));
-  const listSoftware = software.filter((s) =>
+  const listTags = props.tags.filter((t) => list?.tagIds.includes(t.id));
+  const listLicense = props.licenses.find((l) => l.id === list?.id);
+  const listSyntaxes = props.syntaxes.filter((s) =>
+    list?.syntaxIds.includes(s.id)
+  );
+  const listSoftware = props.software.filter((s) =>
     s.syntaxIds.some((sid) => list?.syntaxIds.includes(sid))
   );
-  const listMaintainers = maintainers.filter((m) =>
+  const listMaintainers = props.maintainers.filter((m) =>
     list?.maintainerIds.includes(m.id)
   );
 
