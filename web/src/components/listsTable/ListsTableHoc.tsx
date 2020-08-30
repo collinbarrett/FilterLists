@@ -33,15 +33,7 @@ export const ListsTableHoc = (props: RouteComponentProps) => {
         tags={tags}
         {...props}
       />
-      {/* <ListDrawer
-        lists={lists}
-        languages={languages}
-        licenses={licenses}
-        maintainers={maintainers}
-        software={software}
-        syntaxes={syntaxes}
-        tags={tags}
-      /> */}
+      <ListDrawer lists={lists} />
     </>
   );
 };

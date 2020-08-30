@@ -4,9 +4,9 @@
   description: string;
   licenseId: number;
   syntaxIds: number[];
-  languageIso6391s: number[];
+  languageIso6391s: string[];
   tagIds: number[];
-  viewUrls: unknown[];
+  viewUrls: ViewUrl[];
   homeUrl: string;
   onionUrl: string;
   policyUrl: string;
@@ -23,4 +23,10 @@
   includesFilterListIds: number[];
   dependencyFilterListIds: number[];
   dependentFilterListIds: number[];
+}
+
+export interface ViewUrl {
+  segmentNumber: number;
+  primariness: number;
+  url: string;
 }

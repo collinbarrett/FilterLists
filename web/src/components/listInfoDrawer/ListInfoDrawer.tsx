@@ -23,7 +23,6 @@ import { Maintainers } from "../maintainers";
 import { RouteComponentProps } from "react-router-dom";
 import { SoftwareCloud } from "../softwareCloud";
 import { SubscribeButtons } from "../SubscribeButtons";
-import { SyntaxTag } from "../SyntaxTag";
 import { TagCloud } from "../tagCloud";
 import {
   useListDetails,
@@ -34,6 +33,7 @@ import {
   useSyntaxes,
   useTags,
 } from "../../hooks";
+import { SyntaxCloud } from "../syntaxCloud";
 
 interface Props {
   listId: number;
@@ -47,6 +47,20 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
   const software = useSoftware();
   const syntaxes = useSyntaxes();
   const tags = useTags();
+
+  const listLanguage = languages.filter((l) =>
+    list?.languageIso6391s.includes(l.iso6391)
+  );
+  const listTags = tags.filter((t) => list?.tagIds.includes(t.id));
+  const listLicense = licenses.find((l) => l.id === list?.id);
+  const listSyntaxes = syntaxes.filter((s) => list?.syntaxIds.includes(s.id));
+  const listSoftware = software.filter((s) =>
+    s.syntaxIds.some((sid) => list?.syntaxIds.includes(sid))
+  );
+  const listMaintainers = maintainers.filter((m) =>
+    list?.maintainerIds.includes(m.id)
+  );
+
   const [originalTitle] = useState<string>(document.title);
   useEffect(() => {
     const updateTitle = () =>
@@ -56,6 +70,9 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
       document.title = originalTitle;
     };
   }, [list, originalTitle, list?.name]);
+  const viewUrl = list?.viewUrls.find(
+    (u) => u.primariness === 1 && u.segmentNumber === 1
+  )?.url;
   return list ? (
     <Drawer
       visible={true}
@@ -67,37 +84,35 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
       onClose={() => props.history.push("/")}
     >
       <Description description={list.description} />
-      <LanguageCloud languages={languages} showLabel={true} />
-      <TagCloud tags={tags} showLabel={true} />
-      {/* {list.license && (
+      <LanguageCloud languages={listLanguage} showLabel={true} />
+      <TagCloud tags={listTags} showLabel={true} />
+      {listLicense && (
         <LicenseTag
-          name={list.license.name}
-          url={list.license.url}
+          name={listLicense.name}
+          url={listLicense.url}
           showLabel={true}
         />
       )}
-      {list.syntax && (
-        <SyntaxTag
-          name={list.syntax.name}
-          definitionUrl={list.syntax.url}
-          showLabel={true}
-        />
-      )} */}
-      <SoftwareCloud software={software} showLabel={true} />
-      <Maintainers maintainers={maintainers} />
+      {listSyntaxes && <SyntaxCloud syntaxes={listSyntaxes} showLabel={true} />}
+      <SoftwareCloud software={listSoftware} showLabel={true} />
+      <Maintainers maintainers={listMaintainers} />
       <Divider />
       <ButtonGroup style={{ display: "inherit" }}>
-        {/* <SubscribeButtons
-          name={list.name}
-          viewUrl={list.viewUrl}
-          viewUrlMirrors={list.viewUrlMirrors}
-        />
-        <LinkButton
-          url={list.viewUrl}
-          text="View"
-          title={`View ${list.name} in its raw format`}
-          icon={<SearchOutlined />}
-        /> */}
+        {viewUrl && (
+          <SubscribeButtons
+            name={list.name}
+            viewUrl={viewUrl}
+            viewUrlMirrors={[]}
+          />
+        )}
+        {viewUrl && (
+          <LinkButton
+            url={viewUrl}
+            text="View"
+            title={`View ${list.name} in its raw format`}
+            icon={<SearchOutlined />}
+          />
+        )}
         <LinkButton
           url={list.homeUrl}
           text="Home"
