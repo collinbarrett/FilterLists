@@ -29,6 +29,7 @@ import { arraySorter } from "./arraySorter";
 import { nameof } from "../../utils";
 import styles from "./ListsTable.module.css";
 import { TablePaginationConfig } from "antd/lib/table";
+import { SyntaxTag } from "../SyntaxTag";
 
 interface Props {
   lists: List[];
@@ -192,20 +193,22 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           sorter={(a, b) => arraySorter(a.syntaxIds, b.syntaxIds, syntaxes)}
           width={254}
           className={styles.nogrow}
-          // filters={syntaxes.map((s) => ({
-          //   text: (
-          //     <>
-          //       <SyntaxTag name={s.name} showLabel={false} />(
-          //       {
-          //         visibleLists.filter(
-          //           (l) => l.syntaxIds && l.syntaxIds === s.id
-          //         ).length
-          //       }
-          //       )
-          //     </>
-          //   ),
-          //   value: s.id.toString(),
-          // }))}
+          filters={syntaxes.map((s) => ({
+            text: (
+              <>
+                <SyntaxTag name={s.name} showLabel={false} />
+                &nbsp;
+                {s.name}&nbsp; (
+                {
+                  visibleLists.filter(
+                    (li) => li.syntaxIds && li.syntaxIds.includes(s.id)
+                  ).length
+                }
+                )
+              </>
+            ),
+            value: s.id.toString(),
+          }))}
           onFilter={(value, record) =>
             record.syntaxIds ? record.syntaxIds.toString() === value : false
           }
