@@ -219,14 +219,14 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           }}
         />
       )} */}
-      {/* {tablePageSize.isNarrowWindow ? null : (
+      {tablePageSize.isNarrowWindow ? null : (
         <Table.Column<List>
           title="Languages"
           key="Languages"
-          dataIndex={nameof<List>("languageIds")}
-          sorter={(a, b) =>
-            arraySorter(a.languageIso6391s, b.languageIso6391s, languages)
-          }
+          dataIndex={nameof<List>("languageIso6391s")}
+          // sorter={(a, b) =>
+          //   arraySorter(a.languageIso6391s, b.languageIso6391s, languages)
+          // }
           width={129}
           className={styles.nogrow}
           filters={languages.map((l) => ({
@@ -237,30 +237,31 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 {
                   visibleLists.filter(
                     (li) =>
-                      li.languageIso6391s && li.languageIso6391s.includes(l.id)
+                      li.languageIso6391s &&
+                      li.languageIso6391s.includes(l.iso6391)
                   ).length
                 }
                 )
               </>
             ),
-            value: l.id.toString(),
+            value: l.iso6391.toString(),
           }))}
           onFilter={(value, record) =>
             record.languageIso6391s
-              ? record.languageIso6391s.includes(+value)
+              ? record.languageIso6391s.includes(value as string)
               : false
           }
-          render={(languageIds: number[]) =>
+          render={(languageIds: string[]) =>
             languageIds ? (
               <LanguageCloud
                 languages={languages.filter((l: Language) =>
-                  languageIds.includes(l.id)
+                  languageIds.includes(l.iso6391)
                 )}
               />
             ) : null
           }
         />
-      )} */}
+      )}
       {tablePageSize.isNarrowWindow ? null : (
         <Table.Column<List>
           title="Tags"
