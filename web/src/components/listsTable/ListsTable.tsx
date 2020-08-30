@@ -13,6 +13,7 @@ import { useSearchColumnFilter, useTablePageSizer } from "../../hooks";
 import { Description } from "../Description";
 import { Language } from "../../interfaces/Language";
 import { LanguageCloud } from "../languageCloud";
+import { SyntaxCloud } from "../syntaxCloud";
 import { License } from "../../interfaces/License";
 import { LicenseTag } from "../LicenseTag";
 import { List } from "../../interfaces/List";
@@ -22,7 +23,6 @@ import { MaintainerCloud } from "../maintainerCloud";
 import { RouteComponentProps } from "react-router";
 import { Software } from "../../interfaces/Software";
 import { Syntax } from "../../interfaces/Syntax";
-import { SyntaxTag } from "../SyntaxTag";
 import { TagCloud } from "../tagCloud";
 import { Tag as TagInterface } from "../../interfaces/Tag";
 import { arraySorter } from "./arraySorter";
@@ -184,46 +184,50 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           }
         />
       )}
-      {/* {tablePageSize.isNarrowWindow ? null : (
+      {tablePageSize.isNarrowWindow ? null : (
         <Table.Column<List>
-          title="Syntax"
-          key="Syntax"
-          dataIndex={nameof<List>("syntaxId")}
-          sorter={(a, b) => {
-            const syntaxA = syntaxes.find((s) => s.id === a.syntaxId);
-            const syntaxB = syntaxes.find((s) => s.id === b.syntaxId);
-            return syntaxA
-              ? syntaxB
-                ? syntaxA.name.localeCompare(syntaxB.name)
-                : -1
-              : 1;
-          }}
+          title="Syntaxes"
+          key="Syntaxes"
+          dataIndex={nameof<List>("syntaxIds")}
+          // sorter={(a, b) => {
+          //   const syntaxA = syntaxes.find((s) => s.id === a.syntaxIds);
+          //   const syntaxB = syntaxes.find((s) => s.id === b.syntaxIds);
+          //   return syntaxA
+          //     ? syntaxB
+          //       ? syntaxA.name.localeCompare(syntaxB.name)
+          //       : -1
+          //     : 1;
+          // }}
           width={254}
           className={styles.nogrow}
-          filters={syntaxes.map((s) => ({
-            text: (
-              <>
-                <SyntaxTag name={s.name} showLabel={false} />(
-                {
-                  visibleLists.filter((l) => l.syntaxId && l.syntaxId === s.id)
-                    .length
-                }
-                )
-              </>
-            ),
-            value: s.id.toString(),
-          }))}
+          // filters={syntaxes.map((s) => ({
+          //   text: (
+          //     <>
+          //       <SyntaxTag name={s.name} showLabel={false} />(
+          //       {
+          //         visibleLists.filter(
+          //           (l) => l.syntaxIds && l.syntaxIds === s.id
+          //         ).length
+          //       }
+          //       )
+          //     </>
+          //   ),
+          //   value: s.id.toString(),
+          // }))}
           onFilter={(value, record) =>
-            record.syntaxId ? record.syntaxId.toString() === value : false
+            record.syntaxIds ? record.syntaxIds.toString() === value : false
           }
-          render={(syntaxId: number) => {
-            const syntax = syntaxes.find((s) => s.id === syntaxId);
-            return syntax ? (
-              <SyntaxTag name={syntax.name} definitionUrl={syntax.url} />
-            ) : null;
-          }}
+          render={(syntaxIds: number[]) =>
+            syntaxIds ? (
+              <SyntaxCloud
+                syntaxes={syntaxes.filter((s: Syntax) =>
+                  syntaxIds.includes(s.id)
+                )}
+              />
+            ) : null
+          }
         />
-      )} */}
+      )}
       {tablePageSize.isNarrowWindow ? null : (
         <Table.Column<List>
           title="Languages"
