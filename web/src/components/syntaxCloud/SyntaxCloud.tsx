@@ -16,7 +16,7 @@ export const SyntaxCloud = (props: Props) =>
         <h3>{`Syntax${props.syntaxes.length > 1 ? "es" : ""}:`}</h3>
       )}
       {props.syntaxes.map((s: Syntax, i: number) => (
-        <SyntaxTag name={s.name} definitionUrl={s.url} />
+        <SyntaxTag key={i} name={s.name} definitionUrl={s.url} />
       ))}
     </div>
   ) : null;
