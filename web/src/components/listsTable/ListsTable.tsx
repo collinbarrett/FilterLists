@@ -25,7 +25,7 @@ import { Software } from "../../interfaces/Software";
 import { Syntax } from "../../interfaces/Syntax";
 import { TagCloud } from "../tagCloud";
 import { Tag as TagInterface } from "../../interfaces/Tag";
-import { arraySorter } from "./arraySorter";
+import { arraySorter, languageArraySorter } from "./arraySorter";
 import { nameof } from "../../utils";
 import styles from "./ListsTable.module.css";
 import { TablePaginationConfig } from "antd/lib/table";
@@ -228,9 +228,13 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           title="Languages"
           key="Languages"
           dataIndex={nameof<List>("languageIso6391s")}
-          // sorter={(a, b) =>
-          //   arraySorter(a.languageIso6391s, b.languageIso6391s, languages)
-          // }
+          sorter={(a, b) =>
+            languageArraySorter(
+              a.languageIso6391s,
+              b.languageIso6391s,
+              languages
+            )
+          }
           width={129}
           className={styles.nogrow}
           filters={languages.map((l) => ({
