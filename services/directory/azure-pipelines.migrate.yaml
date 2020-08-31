@@ -145,54 +145,54 @@ steps:
           echo "##vso[task.setvariable variable=committed;isOutput=true]true"
         fi
 
-  # - task: DockerCompose@0
-  #   displayName: build test-data
-  #   condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
-  #   inputs:
-  #     dockerComposeFile: docker-compose.data.tests.yml
-  #     dockerComposeCommand: build api
+  - task: DockerCompose@0
+    displayName: build test-migrations
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
+    inputs:
+      dockerComposeFile: docker-compose.migrations.tests.yml
+      dockerComposeCommand: build directory.infrastructure.migrations.tests
 
-  # - task: Docker@2
-  #   displayName: create volume test-data-results
-  #   condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
-  #   inputs:
-  #     command: volume
-  #     arguments: create test-data-results
+  - task: Docker@2
+    displayName: create volume test-migrations-results
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
+    inputs:
+      command: volume
+      arguments: create test-migrations-results
 
-  # - task: DockerCompose@0
-  #   displayName: up test-data db
-  #   condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
-  #   inputs:
-  #     dockerComposeFile: docker-compose.data.tests.yml
-  #     dockerComposeCommand: up -d mariadb
+  - task: DockerCompose@0
+    displayName: up test-migrations db
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
+    inputs:
+      dockerComposeFile: docker-compose.migrations.tests.yml
+      dockerComposeCommand: up -d directory.db
 
-  # - task: DockerCompose@0
-  #   displayName: run test-data
-  #   condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
-  #   inputs:
-  #     dockerComposeFile: docker-compose.data.tests.yml
-  #     dockerComposeCommand: run api
+  - task: DockerCompose@0
+    displayName: run test-migrations
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
+    inputs:
+      dockerComposeFile: docker-compose.migrations.tests.yml
+      dockerComposeCommand: run directory.infrastructure.migrations.tests
 
-  # - task: Docker@2
-  #   displayName: create container test-data-results
-  #   condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeededOrFailed())
-  #   inputs:
-  #     command: container
-  #     arguments: create --name test-data-results -v test-data-results:/results hello-world
+  - task: Docker@2
+    displayName: create container test-migrations-results
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeededOrFailed())
+    inputs:
+      command: container
+      arguments: create --name test-migrations-results -v test-migrations-results:/results hello-world
 
-  # - task: Docker@2
-  #   displayName: copy out test-data results
-  #   condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeededOrFailed())
-  #   inputs:
-  #     command: cp
-  #     arguments: test-data-results:/results $(System.DefaultWorkingDirectory)
+  - task: Docker@2
+    displayName: copy out test-migrations results
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeededOrFailed())
+    inputs:
+      command: cp
+      arguments: test-migrations-results:/results $(System.DefaultWorkingDirectory)
 
-  # - task: PublishTestResults@2
-  #   displayName: publish test results
-  #   condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeededOrFailed())
-  #   inputs:
-  #     testResultsFormat: VSTest
-  #     testResultsFiles: "**/*.trx"
+  - task: PublishTestResults@2
+    displayName: publish test results
+    condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeededOrFailed())
+    inputs:
+      testResultsFormat: VSTest
+      testResultsFiles: "**/*.trx"
 
   - task: Bash@3
     displayName: push
