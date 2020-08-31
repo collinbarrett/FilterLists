@@ -12,7 +12,7 @@ services:
       - ./reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
 
   directory.api:
-    image: ${DOCKER_REGISTRY-}filterlists_directory_api
+    image: filterlists-directory-api
     restart: always
     build:
       context: ./services
