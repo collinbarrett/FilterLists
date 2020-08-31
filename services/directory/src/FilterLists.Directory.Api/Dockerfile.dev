@@ -6,7 +6,7 @@ EXPOSE 80
 # init build
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine AS build
 
-# restore
+# restore API
 WORKDIR /src
 COPY directory/src/FilterLists.Directory.Domain/FilterLists.Directory.Domain.csproj FilterLists.Directory.Domain/
 COPY directory/src/FilterLists.Directory.Infrastructure/FilterLists.Directory.Infrastructure.csproj FilterLists.Directory.Infrastructure/
@@ -16,7 +16,7 @@ WORKDIR /src/FilterLists.Directory.Api
 COPY directory/src/FilterLists.Directory.Api/FilterLists.Directory.Api.csproj .
 RUN dotnet restore
 
-# build
+# build API
 WORKDIR /src
 COPY directory/src/FilterLists.Directory.Domain/. FilterLists.Directory.Domain/
 COPY directory/src/FilterLists.Directory.Infrastructure/. FilterLists.Directory.Infrastructure/
@@ -25,6 +25,19 @@ COPY directory/src/FilterLists.Directory.Application/. FilterLists.Directory.App
 WORKDIR /src/FilterLists.Directory.Api
 COPY directory/src/FilterLists.Directory.Api/. .
 RUN dotnet publish --no-restore -o /app/publish -r linux-musl-x64
+
+# init Infrastructure.Migrations.Tests
+FROM build AS test-migrations
+ENTRYPOINT ["dotnet", "test", "--logger:trx"]
+
+# restore Infrastructure.Migrations.Tests
+WORKDIR /src/FilterLists.Directory.Infrastructure.Migrations.Tests
+COPY directory/tests/FilterLists.Directory.Infrastructure.Migrations.Tests/FilterLists.Directory.Infrastructure.Migrations.Tests.csproj .
+RUN dotnet restore
+
+# build Infrastructure.Migrations.Tests
+COPY directory/tests/FilterLists.Directory.Infrastructure.Migrations.Tests/. .
+RUN dotnet build --no-restore  -r linux-musl-x64
 
 # package final
 FROM base AS final
