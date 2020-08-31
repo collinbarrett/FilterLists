@@ -13,7 +13,7 @@ services:
       - ~/cert:/etc/nginx/cert:ro
 
   web:
-    image: ${DOCKER_REGISTRY-}filterlists_web
+    image: filterlists-web
     restart: always
     build:
       context: ./web

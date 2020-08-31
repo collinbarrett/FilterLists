@@ -1,0 +1,84 @@
+trigger:
+  batch: false
+  branches:
+    include: [master]
+  paths:
+    include:
+      [
+        services/directory/azure-pipelines.api.yaml,
+        services/directory/src/FilterLists.Directory.Domain/*,
+        services/directory/src/FilterLists.Directory.Infrastructure/*,
+        services/directory/src/FilterLists.Directory.Infrastructure.Migrations/*,
+        services/directory/src/FilterLists.Directory.Data.Application/*,
+        services/directory/src/FilterLists.Directory.Data.Api/*,
+        docker-compose.yml,
+        docker-compose.prod.yml,
+      ]
+
+pr:
+  autoCancel: false
+  branches:
+    include: [master]
+  paths:
+    include:
+      [
+        services/directory/azure-pipelines.api.yaml,
+        services/directory/src/FilterLists.Directory.Domain/*,
+        services/directory/src/FilterLists.Directory.Infrastructure/*,
+        services/directory/src/FilterLists.Directory.Infrastructure.Migrations/*,
+        services/directory/src/FilterLists.Directory.Data.Application/*,
+        services/directory/src/FilterLists.Directory.Data.Api/*,
+        docker-compose.yml,
+        docker-compose.prod.yml,
+      ]
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - task: DockerCompose@0
+    displayName: build
+    inputs:
+      dockerComposeFile: docker-compose.yml
+      additionalDockerComposeFiles: docker-compose.prod.yml
+      dockerComposeCommand: build directory.api
+
+  - task: Docker@2
+    displayName: tag build number
+    inputs:
+      containerRegistry: collinbarrett-dockerhub
+      repository: collinbarrett/filterlists-directory-api
+      command: tag
+      arguments: collinbarrett/filterlists-directory-api:latest collinbarrett/filterlists-directory-api:$(Build.BuildId)
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+  - task: Docker@2
+    displayName: push
+    inputs:
+      containerRegistry: collinbarrett-dockerhub
+      repository: collinbarrett/filterlists-directory-api
+      command: push
+      tags: |
+        latest
+        $(Build.BuildId)
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+  - task: CopyFiles@2
+    displayName: stage docker-compose files
+    inputs:
+      SourceFolder: $(Build.SourcesDirectory)
+      Contents: |
+        docker-compose.yml
+        docker-compose.prod.yml
+      TargetFolder: $(Build.ArtifactStagingDirectory)
+      CleanTargetFolder: true
+      OverWrite: true
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+  - task: PublishBuildArtifacts@1
+    displayName: publish docker-compose files
+    inputs:
+      PathtoPublish: $(Build.ArtifactStagingDirectory)
+      ArtifactName: drop
+      publishLocation: Container
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
