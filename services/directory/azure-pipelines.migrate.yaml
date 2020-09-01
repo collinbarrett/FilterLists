@@ -148,7 +148,7 @@ steps:
   - task: CmdLine@2
     displayName: enable docker BuildKit
     inputs:
-      script: COMPOSE_DOCKER_CLI_BUILD=1
+      script: COMPOSE_DOCKER_CLI_BUILD=1 && DOCKER_BUILDKIT=1
 
   - task: DockerCompose@0
     displayName: build test-migrations
