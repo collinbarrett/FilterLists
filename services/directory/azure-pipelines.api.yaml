@@ -40,6 +40,9 @@ variables:
   DOCKER_BUILDKIT: 1
 
 steps:
+  - checkout: self
+    fetchDepth: 1
+
   - task: DockerCompose@0
     displayName: build
     inputs:

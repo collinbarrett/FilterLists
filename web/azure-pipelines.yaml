@@ -20,6 +20,9 @@ variables:
   DOCKER_BUILDKIT: 1
 
 steps:
+  - checkout: self
+    fetchDepth: 1
+
   - task: Docker@2
     displayName: build
     inputs:
