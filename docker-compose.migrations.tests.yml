@@ -3,13 +3,13 @@ version: "3.8"
 services:
   directory.infrastructure.migrations.tests:
     build:
-      context: .
-      dockerfile: src/FilterLists.Directory.Api/Dockerfile
+      context: ./services
+      dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile
       target: test-migrations
     networks:
       - test-migrations
     volumes:
-      - test-migrations-results:/app/tests/FilterLists.infrastructure.Migrations.Tests/TestResults
+      - test-migrations-results:/app/tests/FilterLists.Infrastructure.Migrations.Tests/TestResults
     depends_on:
       - directory.db
 
