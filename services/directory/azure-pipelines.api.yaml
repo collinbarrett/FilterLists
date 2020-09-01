@@ -35,12 +35,10 @@ pr:
 pool:
   vmImage: ubuntu-latest
 
-steps:
-  - task: CmdLine@2
-    displayName: enable docker BuildKit
-    inputs:
-      script: COMPOSE_DOCKER_CLI_BUILD=1 && DOCKER_BUILDKIT=1
+variables:
+  DOCKER_BUILDKIT: 1
 
+steps:
   - task: DockerCompose@0
     displayName: build
     inputs:

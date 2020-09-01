@@ -16,6 +16,9 @@ pr:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  DOCKER_BUILDKIT: 1
+
 steps:
   - checkout: none
 
@@ -144,11 +147,6 @@ steps:
           git commit -m "feat(data): migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER"
           echo "##vso[task.setvariable variable=committed;isOutput=true]true"
         fi
-
-  - task: CmdLine@2
-    displayName: enable docker BuildKit
-    inputs:
-      script: COMPOSE_DOCKER_CLI_BUILD=1 && DOCKER_BUILDKIT=1
 
   - task: DockerCompose@0
     displayName: build test-migrations
