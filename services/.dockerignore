@@ -24,3 +24,10 @@
 **/secrets.dev.yaml
 **/values.dev.yaml
 README.md
+
+
+# FilterLists Services custom ignores
+
+**/azure-pipelines*.yaml
+**/*.sln
+**/*.sln.DotSettings
