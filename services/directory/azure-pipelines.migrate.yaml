@@ -101,7 +101,7 @@ steps:
       targetType: inline
       workingDirectory: services/directory/src
       script: |
-        MIGLIST=$(dotnet ef migrations list -p FilterLists.Infrastructure.Migrations -s FilterLists.Directory.Api)
+        MIGLIST=$(dotnet ef migrations list -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api)
         echo "$MIGLIST"
         if [[ $MIGLIST == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
           echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER. Reverting..."
@@ -129,7 +129,7 @@ steps:
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     inputs:
       workingDirectory: services/directory/src
-      script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Infrastructure.Migrations -s FilterLists.Directory.Api
+      script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api
 
   - task: Bash@3
     displayName: commit or abandon no-op migration
