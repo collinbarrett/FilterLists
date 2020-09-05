@@ -40,6 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj" />
     <ProjectReference Include="..\..\src\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj" />
   </ItemGroup>
 
