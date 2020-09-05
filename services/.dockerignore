@@ -31,3 +31,4 @@ README.md
 **/azure-pipelines*.yaml
 **/*.sln
 **/*.sln.DotSettings
+directory/data/*
