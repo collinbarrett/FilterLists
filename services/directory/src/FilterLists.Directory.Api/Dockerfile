@@ -31,13 +31,13 @@ FROM build AS test-migrations
 ENTRYPOINT ["dotnet", "test", "--logger:trx"]
 
 # restore Infrastructure.Migrations.Tests
-WORKDIR /src/FilterLists.Directory.Infrastructure.Migrations.Tests
+WORKDIR /tests/FilterLists.Directory.Infrastructure.Migrations.Tests
 COPY directory/tests/FilterLists.Directory.Infrastructure.Migrations.Tests/FilterLists.Directory.Infrastructure.Migrations.Tests.csproj .
 RUN dotnet restore
 
 # build Infrastructure.Migrations.Tests
 COPY directory/tests/FilterLists.Directory.Infrastructure.Migrations.Tests/. .
-RUN dotnet build -c Release --no-restore  -r linux-musl-x64
+RUN dotnet build -c Release --no-restore -r linux-musl-x64
 
 # package final
 FROM base AS final
