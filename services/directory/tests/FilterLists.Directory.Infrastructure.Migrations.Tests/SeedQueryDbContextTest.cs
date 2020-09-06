@@ -16,7 +16,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Tests
                 // allow time for db to init
                 Thread.Sleep(20000);
 
-                const string connString = "Server=directory.db;Database=filterlists;Uid=filterlists;Pwd=filterlists;";
+                const string connString = "Server=directory-migrations-tests-db;Database=filterlists;Uid=filterlists;Pwd=filterlists;";
                 var options = new DbContextOptionsBuilder<QueryDbContext>()
                     .UseNpgsql(connString, m => m.MigrationsAssembly("FilterLists.Directory.Infrastructure.Migrations"))
                     .EnableSensitiveDataLogging()
