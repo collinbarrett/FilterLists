@@ -5,7 +5,7 @@ services:
     build:
       context: ./services
       dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile
-      target: migrations-tests
+      target: test-migrations
     networks:
       - directory-migrations-tests
     volumes:
