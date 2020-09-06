@@ -13,7 +13,7 @@ services:
       - ~/cert:/etc/nginx/cert:ro
 
   web:
-    image: filterlists-web
+    image: ghcr.io/collinbarrett/filterlists-web
     restart: always
     build:
       context: ./web
