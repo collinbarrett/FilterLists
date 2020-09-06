@@ -6,8 +6,6 @@ services:
       context: ./services
       dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile
       target: test-migrations
-    networks:
-      - directory-migrations-tests
     volumes:
       - directory-migrations-tests-results:/app/tests/FilterLists.Infrastructure.Migrations.Tests/TestResults
     depends_on:
@@ -15,15 +13,10 @@ services:
 
   directory-migrations-tests-db:
     image: postgres:alpine
-    networks:
-      - directory-migrations-tests
     environment:
       POSTGRES_USER: ${DIRECTORY_DB_USER}
       POSTGRES_PASSWORD: ${DIRECTORY_DB_PASSWORD}
       POSTGRES_DB: ${DIRECTORY_DB_DATABASE}
-
-networks:
-  directory-migrations-tests:
 
 volumes:
   directory-migrations-tests-results:

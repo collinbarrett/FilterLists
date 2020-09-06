@@ -153,11 +153,11 @@ steps:
       dockerComposeCommand: build directory-migrations-tests
 
   - task: Docker@2
-    displayName: create volume test-migrations-results
+    displayName: create volume directory-migrations-tests-results
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
     inputs:
       command: volume
-      arguments: create test-migrations-results
+      arguments: create directory-migrations-tests-results
 
   - task: DockerCompose@0
     displayName: up test-migrations db
