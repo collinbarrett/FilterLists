@@ -48,7 +48,7 @@ steps:
     inputs:
       dockerComposeFile: docker-compose.yml
       additionalDockerComposeFiles: docker-compose.prod.yml
-      dockerComposeCommand: build directory.api
+      dockerComposeCommand: build directory-api
 
   - task: Docker@2
     displayName: tag build number
