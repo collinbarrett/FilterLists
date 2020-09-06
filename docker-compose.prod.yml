@@ -1,6 +1,6 @@
 # overrides for production deployment
 
-version: "3.8"
+version: "3.7"
 
 services:
   reverse-proxy:
