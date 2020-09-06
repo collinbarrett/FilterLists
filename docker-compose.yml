@@ -12,7 +12,7 @@ services:
       - ./reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
 
   directory-api:
-    image: 	ghcr.io/collinbarrett/filterlists-directory-api
+    image: ghcr.io/collinbarrett/filterlists-directory-api
     restart: always
     build:
       context: ./services
