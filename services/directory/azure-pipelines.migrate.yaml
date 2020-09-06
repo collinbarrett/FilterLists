@@ -7,11 +7,7 @@ pr:
   branches:
     include: [master]
   paths:
-    include:
-      [
-        services/directory/data/*,
-        services/directory/src/FilterLists.Directory.Infrastructure.Migrations/Migrations/*,
-      ]
+    include: [services/directory/data/*]
 
 pool:
   vmImage: ubuntu-latest

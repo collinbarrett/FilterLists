@@ -3,18 +3,18 @@
 version: "3.8"
 
 services:
-  reverse_proxy:
+  reverse-proxy:
     ports:
       - "80:80"
     volumes:
       - ./reverse-proxy/conf.d.dev:/etc/nginx/conf.d:ro
     command: ["nginx-debug", "-g", "daemon off;"]
 
-  directory.api:
+  directory-api:
     build:
       dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile.dev
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
 
-  directory.db:
+  directory-db:
     command: ["postgres", "-c", "log_statement=all"]

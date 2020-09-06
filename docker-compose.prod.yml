@@ -3,7 +3,7 @@
 version: "3.8"
 
 services:
-  reverse_proxy:
+  reverse-proxy:
     ports:
       - "443:443"
     depends_on:
@@ -18,6 +18,6 @@ services:
     build:
       context: ./web
     networks:
-      - reverse_proxy
+      - reverse-proxy
     depends_on:
-      - directory.api
+      - directory-api

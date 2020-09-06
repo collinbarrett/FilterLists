@@ -1,47 +1,47 @@
 version: "3.8"
 
 services:
-  reverse_proxy:
+  reverse-proxy:
     image: nginx:alpine
     restart: always
     networks:
-      - reverse_proxy
+      - reverse-proxy
     depends_on:
-      - directory.api
+      - directory-api
     volumes:
       - ./reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
 
-  directory.api:
+  directory-api:
     image: filterlists-directory-api
     restart: always
     build:
       context: ./services
       dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile
     networks:
-      - reverse_proxy
+      - reverse-proxy
       - directory
     depends_on:
-      - directory.db
+      - directory-db
     environment:
       ConnectionStrings__DirectoryConnection: ${DIRECTORY_CONNECTION_STRING}
     environment:
       - ASPNETCORE_URLS=http://+:80
 
-  directory.db:
+  directory-db:
     image: postgres:alpine
     restart: always
     networks:
       - directory
     volumes:
-      - directory.db:/var/lib/postgresql/data
+      - directory-db:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: ${DIRECTORY_DB_USER}
       POSTGRES_PASSWORD: ${DIRECTORY_DB_PASSWORD}
       POSTGRES_DB: ${DIRECTORY_DB_DATABASE}
 
 networks:
-  reverse_proxy:
+  reverse-proxy:
   directory:
 
 volumes:
-  directory.db:
+  directory-db:
