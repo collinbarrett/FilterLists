@@ -53,7 +53,7 @@ steps:
   - task: Docker@2
     displayName: tag build number
     inputs:
-      containerRegistry: collinbarrett-dockerhub
+      containerRegistry: github-container-registry
       repository: collinbarrett/filterlists-directory-api
       command: tag
       arguments: collinbarrett/filterlists-directory-api:latest collinbarrett/filterlists-directory-api:$(Build.BuildId)
@@ -62,7 +62,7 @@ steps:
   - task: Docker@2
     displayName: push
     inputs:
-      containerRegistry: collinbarrett-dockerhub
+      containerRegistry: github-container-registry
       repository: collinbarrett/filterlists-directory-api
       command: push
       tags: |

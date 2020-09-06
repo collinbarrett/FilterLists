@@ -26,7 +26,7 @@ steps:
   - task: Docker@2
     displayName: build
     inputs:
-      containerRegistry: collinbarrett-dockerhub
+      containerRegistry: github-container-registry
       repository: collinbarrett/filterlists-web
       command: build
       Dockerfile: web/Dockerfile
@@ -39,7 +39,7 @@ steps:
   - task: Docker@2
     displayName: push
     inputs:
-      containerRegistry: collinbarrett-dockerhub
+      containerRegistry: github-container-registry
       repository: collinbarrett/filterlists-web
       command: push
       tags: |
