@@ -1,30 +1,30 @@
 version: "3.8"
 
 services:
-  directory.infrastructure.migrations.tests:
+  directory-migrations-tests:
     build:
       context: ./services
       dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile
-      target: test-migrations
+      target: migrations-tests
     networks:
-      - test-migrations
+      - directory-migrations-tests
     volumes:
-      - test-migrations-results:/app/tests/FilterLists.Infrastructure.Migrations.Tests/TestResults
+      - directory-migrations-tests-results:/app/tests/FilterLists.Infrastructure.Migrations.Tests/TestResults
     depends_on:
-      - directory.db
+      - directory-migrations-tests-db
 
-  directory.db:
+  directory-migrations-tests-db:
     image: postgres:alpine
     networks:
-      - test-migrations
+      - directory-migrations-tests
     environment:
       POSTGRES_USER: ${DIRECTORY_DB_USER}
       POSTGRES_PASSWORD: ${DIRECTORY_DB_PASSWORD}
       POSTGRES_DB: ${DIRECTORY_DB_DATABASE}
 
 networks:
-  test-migrations:
+  directory-migrations-tests:
 
 volumes:
-  test-migrations-results:
+  directory-migrations-tests-results:
     external: true
