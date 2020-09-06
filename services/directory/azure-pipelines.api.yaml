@@ -43,21 +43,18 @@ steps:
   - checkout: self
     fetchDepth: 1
 
-  - task: DockerCompose@0
-    displayName: build
-    inputs:
-      dockerComposeFile: docker-compose.yml
-      additionalDockerComposeFiles: docker-compose.prod.yml
-      dockerComposeCommand: build directory-api
-
   - task: Docker@2
-    displayName: tag build number
+    displayName: build
     inputs:
       containerRegistry: github-container-registry
       repository: collinbarrett/filterlists-directory-api
-      command: tag
-      arguments: collinbarrett/filterlists-directory-api:latest collinbarrett/filterlists-directory-api:$(Build.BuildId)
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+      command: build
+      Dockerfile: services/directory/src/FilterLists.Directory.Api/Dockerfile
+      buildContext: ./services
+      tags: |
+        latest
+        $(Build.BuildId)
+      addPipelineData: false
 
   - task: Docker@2
     displayName: push
