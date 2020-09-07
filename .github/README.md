@@ -8,18 +8,22 @@
 
 <p align="center">FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</p>
 
-<p align="center"><b>Website:</b> <a href="https://filterlists.com/"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website" /></a>
-<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=18"><img src="https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/18.svg" alt="Azure DevOps builds" /></a>
-<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=4"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/4/5.svg" alt="Azure DevOps releases" /></a>
-<a href="https://hub.docker.com/r/collinbarrett2/filterlists.web"><img src="https://img.shields.io/docker/pulls/collinbarrett2/filterlists.web.svg" alt="Docker Pulls" /></a>
-<br/>A React & TypeScript UI built with <a href="https://ant.design/">Ant Design</a>.</p>
+<p align="center"><b>Website:</b> <a href="https://filterlists.com/"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=Website" alt="Website" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=18"><img src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Web?branchName=master" alt="FilterLists Web - Azure DevOps builds" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=4"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/4/5.svg" alt="FilterLists Web - Azure DevOps releases" /></a>
+<a href="https://github.com/users/collinbarrett/packages/container/filterlists-web"><img src="https://img.shields.io/badge/docker%20image-filterlists--web-blue" alt="FilterLists Web - Docker Image" /></a>
+<br/>A React & TypeScript UI built with Ant Design.</p>
 
-<p align="center"><b>API:</b> <a href="https://filterlists.com/api/v1/lists"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=API" alt="API" /></a>
-<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=19"><img src="https://img.shields.io/azure-devops/build/collinbarrett/FilterLists/19.svg" alt="Azure DevOps builds" /></a>
-<a href="https://dev.azure.com/collinbarrett/FilterLists/_test/analytics?definitionId=19&contextType=build"><img alt="Azure DevOps tests" src="https://img.shields.io/azure-devops/tests/collinbarrett/FilterLists/19.svg"></a>
-<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=3"><img src="https://img.shields.io/azure-devops/release/collinbarrett/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4.svg" alt="Azure DevOps releases" /></a>
-<a href="https://hub.docker.com/r/collinbarrett2/filterlists.api"><img src="https://img.shields.io/docker/pulls/collinbarrett2/filterlists.api.svg" alt="Docker Pulls" /></a>
-<br/>An ASP.NET Core API CRUD-ing with a MariaDB instance via EF Core.</p>
+<p align="center"><b>Directory API:</b> <a href="https://filterlists.com/api/v1/lists"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=Directory API" alt="Directory API" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=27"><img src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Directory%20API?branchName=master" alt="FilterLists Directory API - Azure DevOps builds" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=3"><img src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4" alt="FilterLists Directory API - Azure DevOps releases" /></a>
+<a href="https://github.com/users/collinbarrett/packages/container/filterlists-directory-api"><img src="https://img.shields.io/badge/docker%20image-filterlists--directory--api-blue" alt="FilterLists Directory API - Docker Image" /></a>
+<br/>An ASP.NET Core API CRUD-ing with a Postgres instance via EF Core.</p>
+
+<p align="center"><b>Reverse Proxy:</b>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=21"><img src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Reverse%20Proxy?branchName=master" alt="FilterLists Reverse Proxy - Azure DevOps builds" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=5"><img src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/5/6" alt="FilterLists Reverse Proxy - Azure DevOps releases" /></a>
+<br/>An NGINX instance forwarding requests to the respective services above.</p>
 
 # Background
 
