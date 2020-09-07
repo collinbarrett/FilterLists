@@ -136,7 +136,7 @@ const GitHub = () => (
 const Api = () => (
   <Tag>
     <a
-      href="/api/v1/lists"
+      href="/api/lists"
       title="FilterLists API lists endpoint"
       target="_blank"
       rel="noopener noreferrer"

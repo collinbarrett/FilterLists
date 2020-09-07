@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace FilterLists.Directory.Api.Controllers
 {
     [ApiController]
-    [Route("v1/[controller]")]
+    [Route("[controller]")]
     public class SyntaxesController : ControllerBase
     {
         private readonly IMediator _mediator;
