@@ -15,8 +15,6 @@ services:
   web:
     image: ghcr.io/collinbarrett/filterlists-web
     restart: always
-    build:
-      context: ./web
     networks:
       - reverse-proxy
     depends_on:
