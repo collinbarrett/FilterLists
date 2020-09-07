@@ -13,6 +13,7 @@ trigger:
         services/directory/src/FilterLists.Directory.Data.Api/*,
         docker-compose.yml,
         docker-compose.prod.yml,
+        docker-compose.prod.build.yml,
       ]
 
 pr:
@@ -30,6 +31,7 @@ pr:
         services/directory/src/FilterLists.Directory.Data.Api/*,
         docker-compose.yml,
         docker-compose.prod.yml,
+        docker-compose.prod.build.yml,
       ]
 
 pool:

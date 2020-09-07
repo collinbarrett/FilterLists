@@ -4,6 +4,11 @@
 version: "3.7"
 
 services:
+  directory-api:
+    build:
+      context: ./services
+      dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile
+
   web:
     build:
       context: ./web

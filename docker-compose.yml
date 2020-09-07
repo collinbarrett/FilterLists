@@ -14,9 +14,6 @@ services:
   directory-api:
     image: ghcr.io/collinbarrett/filterlists-directory-api
     restart: always
-    build:
-      context: ./services
-      dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile
     networks:
       - reverse-proxy
       - directory
