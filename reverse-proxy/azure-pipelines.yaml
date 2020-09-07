@@ -11,6 +11,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+  - checkout: self
+    fetchDepth: 1
+
   - task: CopyFiles@2
     displayName: stage files
     inputs:
