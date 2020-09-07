@@ -1752,12 +1752,6 @@
     "url": "https://gitcdn.xyz/repo/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt"
   },
   {
-    "filterListId": 198,
-    "id": 2580,
-    "primariness": 4,
-    "url": "https://gitlab.com/ABPindo/indonesianadblockrules/raw/master/subscriptions/abpindo.txt"
-  },
-  {
     "filterListId": 199,
     "id": 293,
     "primariness": 1,
@@ -15478,5 +15472,11 @@
     "id": 2579,
     "primariness": 3,
     "url": "2610:a1:1018::2"
+  },
+  {
+    "filterListId": 198,
+    "id": 2580,
+    "primariness": 4,
+    "url": "https://gitlab.com/ABPindo/indonesianadblockrules/raw/master/subscriptions/abpindo.txt"
   }
 ]
