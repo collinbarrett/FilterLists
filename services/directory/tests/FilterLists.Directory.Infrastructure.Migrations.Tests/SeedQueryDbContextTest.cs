@@ -14,7 +14,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Tests
             var exception = await Record.ExceptionAsync(async () =>
             {
                 // allow time for db to init
-                Thread.Sleep(10000);
+                Thread.Sleep(5000);
 
                 const string connString = "Server=directory-db;Database=filterlists;Uid=filterlists;Pwd=filterlists;";
                 var options = new DbContextOptionsBuilder<QueryDbContext>()
