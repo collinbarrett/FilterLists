@@ -55,6 +55,7 @@ export const App: React.FC = () => (
         <Community />
         <GitHub />
         <Api />
+        <Tpl />
         <Donate />
       </Footer>
     </Layout>
@@ -141,6 +142,15 @@ const Api = () => (
     >
       <ApiOutlined /> API
     </a>
+  </Tag>
+);
+
+const Tpl = () => (
+  <Tag>
+    <a
+      href="/tpl.html"
+      title="FilterLists Tracking Protection Lists (TPL) for Internet Explorer"
+    ></a>
   </Tag>
 );
 
