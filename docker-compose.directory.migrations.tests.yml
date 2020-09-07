@@ -9,9 +9,9 @@ services:
     volumes:
       - directory-migrations-tests-results:/app/tests/FilterLists.Infrastructure.Migrations.Tests/TestResults
     depends_on:
-      - directory-migrations-tests-db
+      - directory-db
 
-  directory-migrations-tests-db:
+  directory-db:
     image: postgres:alpine
     environment:
       POSTGRES_USER: ${DIRECTORY_DB_USER}
