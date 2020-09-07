@@ -17,6 +17,9 @@
     <None Include="docker-compose.prod.yml">
       <DependentUpon>docker-compose.yml</DependentUpon>
     </None>
+    <None Include="docker-compose.prod.build.yml">
+      <DependentUpon>docker-compose.prod.yml</DependentUpon>
+    </None>
     <None Include="docker-compose.yml" />
   </ItemGroup>
 </Project>
