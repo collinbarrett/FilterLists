@@ -19,7 +19,7 @@ mv FilterListSyntax.tmp FilterListSyntax.json
 jq -S ".|=sort_by(.filterListId, .tagId)" FilterListTag.json > FilterListTag.tmp
 mv FilterListTag.tmp FilterListTag.json
 
-jq -S ".|=sort_by(.filterListId, .segmentNumber, .primariness)" FilterListViewUrl.json > FilterListViewUrl.tmp
+jq -S ".|=sort_by(.id)" FilterListViewUrl.json > FilterListViewUrl.tmp
 mv FilterListViewUrl.tmp FilterListViewUrl.json
 
 jq -S ".|=sort_by(.upstreamFilterListId, .forkFilterListId)" Fork.json > Fork.tmp
