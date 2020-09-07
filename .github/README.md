@@ -14,7 +14,7 @@
 <a href="https://github.com/users/collinbarrett/packages/container/filterlists-web"><img src="https://img.shields.io/badge/docker%20image-filterlists--web-blue" alt="FilterLists Web - Docker Image" /></a>
 <br/>A React & TypeScript UI built with Ant Design.</p>
 
-<p align="center"><b>Directory API:</b> <a href="https://filterlists.com/api/v1/lists"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=Directory API" alt="Directory API" /></a>
+<p align="center"><b>Directory API:</b> <a href="https://filterlists.com/api/lists"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=Directory API" alt="Directory API" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=27"><img src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Directory%20API?branchName=master" alt="FilterLists Directory API - Azure DevOps builds" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=3"><img src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4" alt="FilterLists Directory API - Azure DevOps releases" /></a>
 <a href="https://github.com/users/collinbarrett/packages/container/filterlists-directory-api"><img src="https://img.shields.io/badge/docker%20image-filterlists--directory--api-blue" alt="FilterLists Directory API - Docker Image" /></a>
