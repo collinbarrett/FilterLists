@@ -3,26 +3,14 @@ trigger:
   branches:
     include: [master]
   paths:
-    include:
-      [
-        web/*,
-        docker-compose.yml,
-        docker-compose.prod.yml,
-        docker-compose.prod.build.yml,
-      ]
+    include: [web/*, docker-compose.yml, docker-compose.prod.yml]
 
 pr:
   autoCancel: false
   branches:
     include: [master]
   paths:
-    include:
-      [
-        web/*,
-        docker-compose.yml,
-        docker-compose.prod.yml,
-        docker-compose.prod.build.yml,
-      ]
+    include: [web/*, docker-compose.yml, docker-compose.prod.yml]
 
 pool:
   vmImage: ubuntu-latest
