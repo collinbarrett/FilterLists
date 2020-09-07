@@ -2,12 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+
+    <!-- For IE <= 9 -->
     <!--[if IE]>
-      <meta
-        http-equiv="REFRESH"
-        content="0; url=https://filterlists.com/tpl.html"
-      />
+      <script type="text/javascript">
+        window.location = "https://filterlists.com/tpl.html";
+      </script>
     <![endif]-->
+
+    <!-- For IE > 9 -->
+    <script type="text/javascript">
+      if (window.navigator.msPointerEnabled) {
+        window.location = "https://filterlists.com/tpl.html";
+      }
+    </script>
+
     <link
       rel="shortcut icon"
       href="https://filterlists.com/icon_filterlists.png"
