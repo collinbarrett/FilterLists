@@ -150,7 +150,9 @@ const Tpl = () => (
     <a
       href="/tpl.html"
       title="FilterLists Tracking Protection Lists (TPL) for Internet Explorer"
-    ></a>
+    >
+      TPL (IE)
+    </a>
   </Tag>
 );
 
