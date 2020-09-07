@@ -174,18 +174,18 @@ steps:
       dockerComposeCommand: run directory-migrations-tests
 
   - task: Docker@2
-    displayName: create container test-migrations-results
+    displayName: create container directory-migrations-tests-results
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeededOrFailed())
     inputs:
       command: container
-      arguments: create --name test-migrations-results -v test-migrations-results:/results hello-world
+      arguments: create --name directory-migrations-tests-results -v directory-migrations-tests-results:/results hello-world
 
   - task: Docker@2
     displayName: copy out test-migrations results
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeededOrFailed())
     inputs:
       command: cp
-      arguments: test-migrations-results:/results $(System.DefaultWorkingDirectory)
+      arguments: directory-migrations-tests-results:/results $(System.DefaultWorkingDirectory)
 
   - task: PublishTestResults@2
     displayName: publish test results
