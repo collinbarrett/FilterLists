@@ -19,7 +19,8 @@ steps:
     inputs:
       SourceFolder: $(Build.SourcesDirectory)
       Contents: |
-        reverse-proxy/*
+        reverse-proxy/svr-includes/*
+        reverse-proxy/conf.d/*
         docker-compose.yml
         docker-compose.prod.yml
       TargetFolder: $(Build.ArtifactStagingDirectory)
