@@ -164,7 +164,7 @@ steps:
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
     inputs:
       dockerComposeFile: docker-compose.directory.migrations.tests.yml
-      dockerComposeCommand: up -d directory-migrations-tests-db
+      dockerComposeCommand: up -d directory-db
 
   - task: DockerCompose@0
     displayName: run test-migrations
