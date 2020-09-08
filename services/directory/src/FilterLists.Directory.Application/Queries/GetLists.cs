@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -48,7 +47,7 @@ namespace FilterLists.Directory.Application.Queries
                     .ForMember(fl => fl.SyntaxIds,
                         o => o.MapFrom(fl =>
                             fl.FilterListSyntaxes.Select(fls => fls.SyntaxId).OrderBy(sid => sid)))
-                    .ForMember(fl => fl.LanguageIso6391s,
+                    .ForMember(fl => fl.Iso6391s,
                         o => o.MapFrom(fl =>
                             fl.FilterListLanguages.Select(fls => fls.Iso6391).OrderBy(i => i)))
                     .ForMember(fl => fl.TagIds,
@@ -67,7 +66,7 @@ namespace FilterLists.Directory.Application.Queries
             public string? Description { get; private set; }
             public int? LicenseId { get; private set; }
             public IEnumerable<int>? SyntaxIds { get; private set; }
-            public IEnumerable<string>? LanguageIso6391s { get; private set; }
+            public IEnumerable<string>? Iso6391s { get; private set; }
             public IEnumerable<int>? TagIds { get; private set; }
             public IEnumerable<int>? MaintainerIds { get; private set; }
         }

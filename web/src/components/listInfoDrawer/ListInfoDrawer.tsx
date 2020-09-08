@@ -47,7 +47,7 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
   const list = useListDetails(props.listId);
 
   const listLanguage = props.languages.filter((l) =>
-    list?.languageIso6391s.includes(l.iso6391)
+    list?.iso6391s.includes(l.iso6391)
   );
   const listTags = props.tags.filter((t) => list?.tagIds.includes(t.id));
   const listLicense = props.licenses.find((l) => l.id === list?.id);
