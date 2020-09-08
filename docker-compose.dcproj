@@ -9,7 +9,7 @@
     <DockerServiceName>filterlists</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
-    <None Include=".env.directory" />
+    <None Include=".env" />
     <None Include="docker-compose.directory.migrations.tests.yml" />
     <None Include="docker-compose.override.yml">
       <DependentUpon>docker-compose.yml</DependentUpon>

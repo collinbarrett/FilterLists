@@ -10,8 +10,8 @@ namespace FilterLists.Directory.Api
     {
         public static void AddSwaggerGen(this IServiceCollection services)
         {
-            services.AddSwaggerGen(c =>
-                c.SwaggerDoc("v1", new OpenApiInfo
+            services.AddSwaggerGen(o =>
+                o.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "FilterLists Directory API",
                     Description =
@@ -45,11 +45,11 @@ namespace FilterLists.Directory.Api
 #endif
                 });
             });
-            app.UseSwaggerUI(c =>
+            app.UseSwaggerUI(o =>
             {
-                c.SwaggerEndpoint("v1/swagger.json", "FilterLists Directory API V1");
-                c.DocumentTitle = "FilterLists Directory API";
-                c.RoutePrefix = string.Empty;
+                o.SwaggerEndpoint("v1/swagger.json", "FilterLists Directory API V1");
+                o.DocumentTitle = "FilterLists Directory API";
+                o.RoutePrefix = string.Empty;
             });
         }
     }

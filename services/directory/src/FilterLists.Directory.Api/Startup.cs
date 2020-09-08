@@ -18,6 +18,7 @@ namespace FilterLists.Directory.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRouting(o => o.LowercaseUrls = true);
             services.AddControllers()
                 .AddJsonOptions(o => o.JsonSerializerOptions.IgnoreNullValues = true);
             services.AddSwaggerGen();
@@ -29,7 +30,7 @@ namespace FilterLists.Directory.Api
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
             app.UseRouting();
-            app.UseEndpoints(e => { e.MapControllers(); });
+            app.UseEndpoints(e => e.MapControllers());
             app.UseSwagger();
         }
     }
