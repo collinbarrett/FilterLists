@@ -1,0 +1,56 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/services/directory/src/FilterLists.Directory.Api"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: docker
+  directory: "/services/directory/src/FilterLists.Directory.Api"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: nuget
+  directory: "/services/directory/tests/FilterLists.Directory.Infrastructure.Migrations.Tests"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: nuget
+  directory: "/services/directory/src/FilterLists.Directory.Infrastructure.Migrations"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: nuget
+  directory: "/services/directory/src/FilterLists.Directory.Infrastructure"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: nuget
+  directory: "/services/directory/src/FilterLists.Directory.Application"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: nuget
+  directory: "/services/directory/src/FilterLists.Directory.Domain"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: docker
+  directory: "/web"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: npm
+  directory: "/web"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 99
