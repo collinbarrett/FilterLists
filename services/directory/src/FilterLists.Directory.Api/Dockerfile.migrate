@@ -1,5 +1,5 @@
 # init test-migrations
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine AS test-migrations
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1.401-alpine AS test-migrations
 ENTRYPOINT ["dotnet", "test", "--logger:trx"]
 
 # restore
