@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
@@ -32,7 +33,14 @@ namespace FilterLists.Directory.Api
 
         public static void UseSwagger(this IApplicationBuilder app)
         {
-            app.UseSwagger(o => o.RouteTemplate = "{documentName}/swagger.json");
+            app.UseSwagger(o =>
+            {
+                o.RouteTemplate = "{documentName}/swagger.json";
+                o.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.Servers = new List<OpenApiServer>
+                {
+                    new OpenApiServer {Url = $"{httpReq.Scheme}://{httpReq.Host.Value}/api"}
+                });
+            });
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("v1/swagger.json", "FilterLists Directory API V1");
