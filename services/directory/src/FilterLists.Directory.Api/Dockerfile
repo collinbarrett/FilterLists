@@ -1,10 +1,10 @@
 # init base
-FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine AS base
+FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1.7-alpine AS base
 WORKDIR /app
 EXPOSE 80
 
 # init build
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1.401-alpine AS build
 
 # restore API
 WORKDIR /src
