@@ -1,5 +1,4 @@
 version: 2
-
 updates:
   - package-ecosystem: nuget
     directory: "/services/archival/src/FilterLists.Archival
