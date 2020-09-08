@@ -20,8 +20,8 @@ namespace FilterLists.Directory.Api
                     //TermsOfService = "",
                     Contact = new OpenApiContact
                     {
-                        Name = "Collin M. Barrett",
-                        Url = new Uri("https://collinmbarrett.com/contact/")
+                        Name = "FilterLists",
+                        Url = new Uri("https://filterlists.com")
                     },
                     License = new OpenApiLicense
                     {
