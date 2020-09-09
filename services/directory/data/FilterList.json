@@ -9401,7 +9401,7 @@
   {
     "homeUrl": "https://blocklist.site/",
     "id": 1484,
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Block List Project: Torrent"
   },
   {
@@ -13609,68 +13609,68 @@
   {
     "homeUrl": "https://blocklist.site/",
     "id": 2008,
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Block List Project: Ads"
   },
   {
     "homeUrl": "https://blocklist.site/",
     "id": 2009,
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Block List Project: Crypto"
   },
   {
     "homeUrl": "https://blocklist.site/",
     "id": 2010,
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Block List Project: Ransomware"
   },
   {
     "homeUrl": "https://blocklist.site/piracy",
     "id": 2011,
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Block List Project: Piracy"
   },
   {
     "homeUrl": "https://blocklist.site/",
     "id": 2012,
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Block List Project: Tracking"
   },
   {
     "homeUrl": "https://blocklist.site/",
     "id": 2013,
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Block List Project: Scams"
   },
   {
     "homeUrl": "https://blocklist.site/",
     "id": 2014,
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Block List Project: Gambling"
   },
   {
     "homeUrl": "https://blocklist.site/",
     "id": 2015,
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Block List Project: Phishing"
   },
   {
     "homeUrl": "https://blocklist.site/",
     "id": 2016,
     "isDeleted": true,
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Block List Project: Spam"
   },
   {
     "homeUrl": "https://blocklist.site/",
     "id": 2017,
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Block List Project: Porn"
   },
   {
     "homeUrl": "https://blocklist.site/",
     "id": 2018,
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Block List Project: Redirect"
   },
   {
@@ -13716,7 +13716,7 @@
   {
     "homeUrl": "https://blocklist.site/",
     "id": 2028,
-    "licenseId": 5,
+    "licenseId": 11,
     "name": "Block List Project: Malware"
   },
   {
