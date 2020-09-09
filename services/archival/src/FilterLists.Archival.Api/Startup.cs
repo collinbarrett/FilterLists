@@ -1,3 +1,4 @@
+using FilterLists.Archival.Application;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,6 +10,7 @@ namespace FilterLists.Archival.Api
     {
         public static void ConfigureServices(IServiceCollection services)
         {
+            services.AddApplicationServices();
         }
 
         public static void Configure(IApplicationBuilder app, IWebHostEnvironment env)
