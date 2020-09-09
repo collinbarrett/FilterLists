@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace FilterLists.Archival
+namespace FilterLists.Archival.Api
 {
     public static class Program
     {

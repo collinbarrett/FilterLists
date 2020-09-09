@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace FilterLists.Archival
+namespace FilterLists.Archival.Api
 {
     public class Startup
     {

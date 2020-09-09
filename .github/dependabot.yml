@@ -1,13 +1,13 @@
 version: 2
 updates:
 - package-ecosystem: nuget
-  directory: "/services/archival/src/FilterLists.Archival"
+  directory: "/services/archival/src/FilterLists.Archival.Api"
   schedule:
     interval: daily
     time: "11:00"
   open-pull-requests-limit: 99
 - package-ecosystem: docker
-  directory: "/services/archival/src/FilterLists.Archival"
+  directory: "/services/archival/src/FilterLists.Archival.Api"
   schedule:
     interval: daily
     time: "11:00"
