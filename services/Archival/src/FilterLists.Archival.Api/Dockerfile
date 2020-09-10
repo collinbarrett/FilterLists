@@ -8,19 +8,19 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1.401-alpine AS build
 # restore API
 WORKDIR /app
 COPY SharedKernel/src/FilterLists.SharedKernel.Logging/FilterLists.SharedKernel.Logging.csproj SharedKernel/src/FilterLists.SharedKernel.Logging/
-COPY archival/src/FilterLists.Archival.Infrastructure/FilterLists.Archival.Infrastructure.csproj archival/src/FilterLists.Archival.Infrastructure/
-COPY archival/src/FilterLists.Archival.Application/FilterLists.Archival.Application.csproj archival/src/FilterLists.Archival.Application/
-WORKDIR /app/archival/src/FilterLists.Archival.Api
-COPY archival/src/FilterLists.Archival.Api/FilterLists.Archival.Api.csproj .
+COPY Archival/src/FilterLists.Archival.Infrastructure/FilterLists.Archival.Infrastructure.csproj Archival/src/FilterLists.Archival.Infrastructure/
+COPY Archival/src/FilterLists.Archival.Application/FilterLists.Archival.Application.csproj Archival/src/FilterLists.Archival.Application/
+WORKDIR /app/Archival/src/FilterLists.Archival.Api
+COPY Archival/src/FilterLists.Archival.Api/FilterLists.Archival.Api.csproj .
 RUN dotnet restore
 
 # build API
 WORKDIR /app
 COPY SharedKernel/src/FilterLists.SharedKernel.Logging/. SharedKernel/src/FilterLists.SharedKernel.Logging/
-COPY archival/src/FilterLists.Archival.Infrastructure/. archival/src/FilterLists.Archival.Infrastructure/
-COPY archival/src/FilterLists.Archival.Application/. archival/src/FilterLists.Archival.Application/
-WORKDIR /app/archival/src/FilterLists.Archival.Api
-COPY archival/src/FilterLists.Archival.Api/. .
+COPY Archival/src/FilterLists.Archival.Infrastructure/. Archival/src/FilterLists.Archival.Infrastructure/
+COPY Archival/src/FilterLists.Archival.Application/. Archival/src/FilterLists.Archival.Application/
+WORKDIR /app/Archival/src/FilterLists.Archival.Api
+COPY Archival/src/FilterLists.Archival.Api/. .
 RUN dotnet publish -c Release --no-restore -o /app/publish -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r linux-musl-x64
 
 # package final

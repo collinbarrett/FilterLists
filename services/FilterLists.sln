@@ -52,11 +52,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infra
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archival", "Archival", "{5E52FEF9-9605-4ACB-8A42-A20E06331599}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Api", "archival\src\FilterLists.Archival.Api\FilterLists.Archival.Api.csproj", "{F625C241-0501-4AEB-8B82-609C93EE6B7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Api", "Archival\src\FilterLists.Archival.Api\FilterLists.Archival.Api.csproj", "{F625C241-0501-4AEB-8B82-609C93EE6B7D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Application", "archival\src\FilterLists.Archival.Application\FilterLists.Archival.Application.csproj", "{11669839-E666-477B-A1B6-276041AD3768}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Application", "Archival\src\FilterLists.Archival.Application\FilterLists.Archival.Application.csproj", "{11669839-E666-477B-A1B6-276041AD3768}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Infrastructure", "archival\src\FilterLists.Archival.Infrastructure\FilterLists.Archival.Infrastructure.csproj", "{A0B77015-E8C4-41D3-B63D-BF818026298C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Infrastructure", "Archival\src\FilterLists.Archival.Infrastructure\FilterLists.Archival.Infrastructure.csproj", "{A0B77015-E8C4-41D3-B63D-BF818026298C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernel", "SharedKernel", "{59197818-6C72-4A3C-A595-49F3D7D2EB18}"
 EndProject
