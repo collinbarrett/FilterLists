@@ -1,12 +1,19 @@
 ﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
+using FilterLists.SharedKernel.Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace FilterLists.Directory.Infrastructure
 {
-    public static class ServiceCollectionExtension
+    public static class ConfigurationExtensions
     {
+        public static IHostBuilder UseInfrastructure(this IHostBuilder hostBuilder)
+        {
+            return hostBuilder.UseLogging();
+        }
+
         public static void AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContextPool<QueryDbContext>(o =>

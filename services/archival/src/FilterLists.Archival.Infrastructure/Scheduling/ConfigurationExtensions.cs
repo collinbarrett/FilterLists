@@ -6,7 +6,7 @@ using StackExchange.Redis;
 
 namespace FilterLists.Archival.Infrastructure.Scheduling
 {
-    internal static class ServiceCollectionExtension
+    internal static class ConfigurationExtensions
     {
         private static ConnectionMultiplexer _redis = null!;
 

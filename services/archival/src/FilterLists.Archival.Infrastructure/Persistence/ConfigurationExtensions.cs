@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.Archival.Infrastructure.Persistence
 {
-    internal static class ServiceCollectionExtension
+    internal static class ConfigurationExtensions
     {
         public static void AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
         {
