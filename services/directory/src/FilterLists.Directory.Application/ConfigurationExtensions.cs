@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using FilterLists.Directory.Infrastructure;
 using MediatR;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -19,6 +20,11 @@ namespace FilterLists.Directory.Application
             services.AddMediatR(typeof(ConfigurationExtensions).Assembly);
             services.AddAutoMapper(typeof(ConfigurationExtensions));
             services.AddInfrastructureServices(configuration);
+        }
+
+        public static void UseApplication(this IApplicationBuilder app)
+        {
+            app.UseInfrastructure();
         }
     }
 }

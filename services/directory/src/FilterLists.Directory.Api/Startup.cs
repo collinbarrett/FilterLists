@@ -27,6 +27,7 @@ namespace FilterLists.Directory.Api
 
         public static void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseApplication();
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
             app.UseRouting();

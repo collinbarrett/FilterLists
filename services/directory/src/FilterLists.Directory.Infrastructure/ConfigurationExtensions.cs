@@ -1,5 +1,6 @@
 ﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using FilterLists.SharedKernel.Logging;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,6 +23,11 @@ namespace FilterLists.Directory.Infrastructure
                     po => po.MigrationsAssembly("FilterLists.Directory.Infrastructure.Migrations"));
             });
             services.AddScoped<IQueryContext, QueryContext>();
+        }
+
+        public static void UseInfrastructure(this IApplicationBuilder app)
+        {
+            app.UseLogging();
         }
     }
 }

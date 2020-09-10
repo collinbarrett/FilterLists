@@ -8,6 +8,7 @@ namespace FilterLists.SharedKernel.Logging
         public static LoggerConfiguration LoggerConfiguration = new LoggerConfiguration()
             .MinimumLevel.Debug()
             .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+            .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
             .Enrich.FromLogContext()
             .WriteTo.Console();
     }

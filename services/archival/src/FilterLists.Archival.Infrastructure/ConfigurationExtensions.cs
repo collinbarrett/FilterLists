@@ -26,6 +26,7 @@ namespace FilterLists.Archival.Infrastructure
 
         public static void UseInfrastructure(this IApplicationBuilder app)
         {
+            app.UseLogging();
             app.UseScheduling();
         }
     }
