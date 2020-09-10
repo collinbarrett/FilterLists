@@ -5,9 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.Archival.Infrastructure.Persistence
 {
-    public static class ServiceCollectionExtension
+    internal static class ServiceCollectionExtension
     {
-        internal static void AddGitServices(this IServiceCollection services, IConfiguration configuration)
+        public static void AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.Configure<GitOptions>(configuration.GetSection(GitOptions.Key));
             services.AddTransient<IRepository, Repository>(_ =>
@@ -20,6 +20,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
 
                 return new Repository(gitOptions.RepositoryDirectory);
             });
+            services.AddTransient<IArchiveFile, GitFileArchiver>();
         }
     }
 }

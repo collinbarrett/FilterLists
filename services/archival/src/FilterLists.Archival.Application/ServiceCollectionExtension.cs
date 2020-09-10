@@ -1,5 +1,6 @@
 ﻿using FilterLists.Archival.Infrastructure;
 using MediatR;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,6 +12,11 @@ namespace FilterLists.Archival.Application
         {
             services.AddMediatR(typeof(ServiceCollectionExtension).Assembly);
             services.AddInfrastructureServices(configuration);
+        }
+
+        public static void UseApplication(this IApplicationBuilder app)
+        {
+            app.UseInfrastructure();
         }
     }
 }

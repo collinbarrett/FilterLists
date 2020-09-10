@@ -1,5 +1,7 @@
 ﻿using System;
 using FilterLists.Archival.Infrastructure.Persistence;
+using FilterLists.Archival.Infrastructure.Scheduling;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,8 +13,13 @@ namespace FilterLists.Archival.Infrastructure
         {
             _ = configuration ?? throw new ArgumentNullException(nameof(configuration));
 
-            services.AddGitServices(configuration);
-            services.AddTransient<IArchiveFile, GitFileArchiver>();
+            services.AddPersistenceServices(configuration);
+            services.AddSchedulingServices(configuration);
+        }
+
+        public static void UseInfrastructure(this IApplicationBuilder app)
+        {
+            app.UseScheduling();
         }
     }
 }
