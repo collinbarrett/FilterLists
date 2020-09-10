@@ -11,6 +11,26 @@ services:
     volumes:
       - ./reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
 
+  archival-api:
+    image: ghcr.io/collinbarrett/filterlists-archival-api
+    restart: always
+    networks:
+      - archival
+    depends_on:
+      - archival-scheduling-db
+      - directory-api
+    environment:
+      ConnectionStrings__SchedulingConnection: ${ARCHIVAL_REDIS_CONNECTION_STRING}
+
+  archival-scheduling-db:
+    image: redis:alpine
+    restart: always
+    networks:
+      - archival
+    volumes:
+      - archival-scheduling-db:/data
+    entrypoint: ["redis-server", "--appendonly", "yes"]
+
   directory-api:
     image: ghcr.io/collinbarrett/filterlists-directory-api
     restart: always
@@ -36,7 +56,9 @@ services:
 
 networks:
   reverse-proxy:
+  archival:
   directory:
 
 volumes:
+  archival-scheduling-db:
   directory-db:
