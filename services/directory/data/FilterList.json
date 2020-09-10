@@ -3380,9 +3380,9 @@
   },
   {
     "description": "A filter list that blocks ads, trackers, and more.",
-    "isDeleted": true,
     "homeUrl": "https://github.com/SkeletalDemise/Skeletal-Blocker",
     "id": 514,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/SkeletalDemise/Skeletal-Blocker/issues",
     "licenseId": 4,
     "name": "Skeletal Blocker"
@@ -5063,7 +5063,6 @@
   },
   {
     "description": "VBlocker is made by a normal person that surfs the web to see all of the ads that should be blocked and added to VBlocker.",
-    "isDeleted": true,
     "homeUrl": "https://github.com/SG-Nebula/vblocker_adblockplus-filterlist",
     "id": 838,
     "isDeleted": true,
