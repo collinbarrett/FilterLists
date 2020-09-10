@@ -20,6 +20,7 @@ services:
       - archival-scheduling-db
       - directory-api
     environment:
+      ApplicationInsights__InstrumentationKey: ${ARCHIVAL_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
       ConnectionStrings__SchedulingConnection: ${ARCHIVAL_REDIS_CONNECTION_STRING}
 
   archival-scheduling-db:
@@ -40,6 +41,7 @@ services:
     depends_on:
       - directory-db
     environment:
+      ApplicationInsights__InstrumentationKey: ${DIRECTORY_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
       ConnectionStrings__DirectoryConnection: ${DIRECTORY_CONNECTION_STRING}
 
   directory-db:

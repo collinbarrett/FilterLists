@@ -20,6 +20,7 @@ namespace FilterLists.Archival.Infrastructure
         {
             _ = configuration ?? throw new ArgumentNullException(nameof(configuration));
 
+            services.AddSharedKernelLogging();
             services.AddPersistenceServices(configuration);
             services.AddSchedulingServices(configuration);
         }
