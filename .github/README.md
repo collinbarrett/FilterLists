@@ -81,6 +81,7 @@ We respect your privacy. That is the whole point of this project. The only minor
 
 - [GitHub](https://help.github.com/articles/github-privacy-statement/)
 - [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/security/data-protection?view=azure-devops)
+- [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/data-retention-privacy)
 - [DigitalOcean](https://www.digitalocean.com/legal/privacy-policy/)
 - [Cloudflare](https://www.cloudflare.com/analytics/)
 
