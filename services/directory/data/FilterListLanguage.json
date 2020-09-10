@@ -3622,5 +3622,17 @@
   {
     "filterListId": 2391,
     "iso6391": "ja"
+  },
+  {
+    "filterListId": 2403,
+    "iso6391": "no"
+  },
+  {
+    "filterListId": 2403,
+    "iso6391": "da"
+  },
+  {
+    "filterListId": 2405,
+    "iso6391": "sv"
   }
 ]
