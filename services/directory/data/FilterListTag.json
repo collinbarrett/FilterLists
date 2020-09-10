@@ -12146,5 +12146,53 @@
   {
     "filterListId": 2395,
     "tagId": 6
+  },
+  {
+    "filterListId": 2396,
+    "tagId": 10
+  },
+  {
+    "filterListId": 2397,
+    "tagId": 10
+  },
+  {
+    "filterListId": 2398,
+    "tagId": 10
+  },
+  {
+    "filterListId": 2399,
+    "tagId": 10
+  },
+  {
+    "filterListId": 2400,
+    "tagId": 10
+  },
+  {
+    "filterListId": 2401,
+    "tagId": 10
+  },
+  {
+    "filterListId": 2402,
+    "tagId": 10
+  },
+  {
+    "filterListId": 2403,
+    "tagId": 10
+  },
+  {
+    "filterListId": 2404,
+    "tagId": 15
+  },
+  {
+    "filterListId": 2405,
+    "tagId": 2
+  },
+  {
+    "filterListId": 2405,
+    "tagId": 3
+  },
+  {
+    "filterListId": 2406,
+    "tagId": 15
   }
 ]
