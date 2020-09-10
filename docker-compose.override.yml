@@ -13,14 +13,14 @@ services:
   archival-api:
     build:
       context: ./services
-      dockerfile: Archival/src/FilterLists.Archival.Api/Dockerfile.dev
+      dockerfile: Archival/FilterLists.Archival.Api/Dockerfile.dev
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
 
   directory-api:
     build:
       context: ./services
-      dockerfile: Directory/src/FilterLists.Directory.Api/Dockerfile.dev
+      dockerfile: Directory/FilterLists.Directory.Api/Dockerfile.dev
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
 

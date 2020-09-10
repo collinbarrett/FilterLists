@@ -131,7 +131,7 @@ steps:
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     inputs:
       targetType: inline
-      workingDirectory: services/Directory/src/FilterLists.Directory.Infrastructure.Migrations
+      workingDirectory: services/Directory/FilterLists.Directory.Infrastructure.Migrations
       script: |
         DIFF=$(git status -s -- . | wc -l)
         echo "$DIFF file(s) changed"

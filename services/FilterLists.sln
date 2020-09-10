@@ -48,7 +48,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{8F419098-3
 		Directory\data\Tag.json = Directory\data\Tag.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure.Migrations.Tests", "Directory\tests\FilterLists.Directory.Infrastructure.Migrations.Tests\FilterLists.Directory.Infrastructure.Migrations.Tests.csproj", "{8B07EF04-5516-40BB-B21B-CEC6F90EC631}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure.Migrations.Tests", "Directory\FilterLists.Directory.Infrastructure.Migrations.Tests\FilterLists.Directory.Infrastructure.Migrations.Tests.csproj", "{8B07EF04-5516-40BB-B21B-CEC6F90EC631}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archival", "Archival", "{5E52FEF9-9605-4ACB-8A42-A20E06331599}"
 EndProject

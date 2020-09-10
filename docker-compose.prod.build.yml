@@ -7,12 +7,12 @@ services:
   archival-api:
     build:
       context: ./services
-      dockerfile: Archival/src/FilterLists.Archival.Api/Dockerfile
+      dockerfile: Archival/FilterLists.Archival.Api/Dockerfile
 
   directory-api:
     build:
       context: ./services
-      dockerfile: Directory/src/FilterLists.Directory.Api/Dockerfile
+      dockerfile: Directory/FilterLists.Directory.Api/Dockerfile
 
   web:
     build:

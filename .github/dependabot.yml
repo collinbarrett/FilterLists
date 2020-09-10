@@ -1,73 +1,73 @@
 version: 2
 updates:
 - package-ecosystem: nuget
-  directory: "/services/SharedKernel/src/FilterLists.SharedKernel.Logging"
+  directory: "/services/SharedKernel/FilterLists.SharedKernel.Logging"
   schedule:
     interval: daily
     time: "11:00"
   open-pull-requests-limit: 99
 - package-ecosystem: docker
-  directory: "/services/Archival/src/FilterLists.Archival.Api"
+  directory: "/services/Archival/FilterLists.Archival.Api"
   schedule:
     interval: daily
     time: "11:00"
   open-pull-requests-limit: 99
 - package-ecosystem: nuget
-  directory: "/services/Archival/src/FilterLists.Archival.Api"
+  directory: "/services/Archival/FilterLists.Archival.Api"
   schedule:
     interval: daily
     time: "11:00"
   open-pull-requests-limit: 99
 - package-ecosystem: nuget
-  directory: "/services/Archival/src/FilterLists.Archival.Application"
+  directory: "/services/Archival/FilterLists.Archival.Application"
   schedule:
     interval: daily
     time: "11:00"
   open-pull-requests-limit: 99
 - package-ecosystem: nuget
-  directory: "/services/Archival/src/FilterLists.Archival.Infrastructure"
+  directory: "/services/Archival/FilterLists.Archival.Infrastructure"
   schedule:
     interval: daily
     time: "11:00"
   open-pull-requests-limit: 99
 - package-ecosystem: docker
-  directory: "/services/Directory/src/FilterLists.Directory.Api"
+  directory: "/services/Directory/FilterLists.Directory.Api"
   schedule:
     interval: daily
     time: "11:00"
   open-pull-requests-limit: 99
 - package-ecosystem: nuget
-  directory: "/services/Directory/src/FilterLists.Directory.Api"
+  directory: "/services/Directory/FilterLists.Directory.Api"
   schedule:
     interval: daily
     time: "11:00"
   open-pull-requests-limit: 99
 - package-ecosystem: nuget
-  directory: "/services/Directory/src/FilterLists.Directory.Infrastructure.Migrations"
+  directory: "/services/Directory/FilterLists.Directory.Infrastructure.Migrations"
   schedule:
     interval: daily
     time: "11:00"
   open-pull-requests-limit: 99
 - package-ecosystem: nuget
-  directory: "/services/Directory/src/FilterLists.Directory.Infrastructure"
+  directory: "/services/Directory/FilterLists.Directory.Infrastructure"
   schedule:
     interval: daily
     time: "11:00"
   open-pull-requests-limit: 99
 - package-ecosystem: nuget
-  directory: "/services/Directory/src/FilterLists.Directory.Application"
+  directory: "/services/Directory/FilterLists.Directory.Application"
   schedule:
     interval: daily
     time: "11:00"
   open-pull-requests-limit: 99
 - package-ecosystem: nuget
-  directory: "/services/Directory/src/FilterLists.Directory.Domain"
+  directory: "/services/Directory/FilterLists.Directory.Domain"
   schedule:
     interval: daily
     time: "11:00"
   open-pull-requests-limit: 99
 - package-ecosystem: nuget
-  directory: "/services/Directory/tests/FilterLists.Directory.Infrastructure.Migrations.Tests"
+  directory: "/services/Directory/FilterLists.Directory.Infrastructure.Migrations.Tests"
   schedule:
     interval: daily
     time: "11:00"

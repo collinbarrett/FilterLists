@@ -4,10 +4,10 @@ services:
   directory-migrations-tests:
     build:
       context: ./services
-      dockerfile: Directory/src/FilterLists.Directory.Api/Dockerfile.migrate
+      dockerfile: Directory/FilterLists.Directory.Api/Dockerfile.migrate
       target: test-migrations
     volumes:
-      - directory-migrations-tests-results:/tests/FilterLists.Directory.Infrastructure.Migrations.Tests/TestResults
+      - directory-migrations-tests-results:/FilterLists.Directory.Infrastructure.Migrations.Tests/TestResults
     depends_on:
       - directory-db
     environment:

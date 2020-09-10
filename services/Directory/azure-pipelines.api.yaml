@@ -6,11 +6,11 @@ trigger:
     include:
       [
         services/Directory/azure-pipelines.api.yaml,
-        services/Directory/src/FilterLists.Directory.Domain/*,
-        services/Directory/src/FilterLists.Directory.Infrastructure/*,
-        services/Directory/src/FilterLists.Directory.Infrastructure.Migrations/*,
-        services/Directory/src/FilterLists.Directory.Application/*,
-        services/Directory/src/FilterLists.Directory.Api/*,
+        services/Directory/FilterLists.Directory.Domain/*,
+        services/Directory/FilterLists.Directory.Infrastructure/*,
+        services/Directory/FilterLists.Directory.Infrastructure.Migrations/*,
+        services/Directory/FilterLists.Directory.Application/*,
+        services/Directory/FilterLists.Directory.Api/*,
         docker-compose.yml,
         docker-compose.prod.yml,
         .env,
@@ -25,11 +25,11 @@ pr:
     include:
       [
         services/Directory/azure-pipelines.api.yaml,
-        services/Directory/src/FilterLists.Directory.Domain/*,
-        services/Directory/src/FilterLists.Directory.Infrastructure/*,
-        services/Directory/src/FilterLists.Directory.Infrastructure.Migrations/*,
-        services/Directory/src/FilterLists.Directory.Application/*,
-        services/Directory/src/FilterLists.Directory.Api/*,
+        services/Directory/FilterLists.Directory.Domain/*,
+        services/Directory/FilterLists.Directory.Infrastructure/*,
+        services/Directory/FilterLists.Directory.Infrastructure.Migrations/*,
+        services/Directory/FilterLists.Directory.Application/*,
+        services/Directory/FilterLists.Directory.Api/*,
         docker-compose.yml,
         docker-compose.prod.yml,
         .env,
@@ -53,7 +53,7 @@ steps:
       containerRegistry: github-container-registry
       repository: collinbarrett/filterlists-directory-api
       command: build
-      Dockerfile: services/Directory/src/FilterLists.Directory.Api/Dockerfile
+      Dockerfile: services/Directory/FilterLists.Directory.Api/Dockerfile
       buildContext: ./services
       tags: |
         latest
