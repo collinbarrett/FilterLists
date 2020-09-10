@@ -10,11 +10,8 @@ namespace FilterLists.Archival.Api
     {
         public static async Task Main(string[] args)
         {
-            await TryRunWithLoggingAsync(async () =>
-            {
-                var host = CreateHostBuilder(args).Build();
-                await host.RunAsync();
-            });
+            var host = CreateHostBuilder(args).Build();
+            await host.TryRunWithLoggingAsync();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args)

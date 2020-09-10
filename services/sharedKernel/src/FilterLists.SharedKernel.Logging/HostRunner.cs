@@ -1,19 +1,32 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Microsoft.ApplicationInsights;
+using Microsoft.Extensions.Hosting;
 using Serilog;
 
 namespace FilterLists.SharedKernel.Logging
 {
     public static class HostRunner
     {
-        public static async Task<int> TryRunWithLoggingAsync(Func<Task> runHostAsync)
+        public static async Task<int> TryRunWithLoggingAsync(this IHost host, Func<Task>? runPreHostAsync = default)
         {
-            Log.Logger = Configuration.LoggerConfiguration.CreateLogger();
+            _ = host ?? throw new ArgumentNullException(nameof(host));
+
+            var telemetryClient = (TelemetryClient)host.Services.GetService(typeof(TelemetryClient));
+            Log.Logger = ConfigurationBuilder.BaseLoggerConfiguration
+                .WriteToApplicationInsights(telemetryClient)
+                .CreateLogger();
 
             try
             {
-                Log.Information("Starting host");
-                await runHostAsync();
+                if (runPreHostAsync != null)
+                {
+                    Log.Information("Initializing pre-host");
+                    await runPreHostAsync();
+                }
+
+                Log.Information("Initializing host");
+                await host.RunAsync();
                 return 0;
             }
             catch (Exception ex)

@@ -11,12 +11,8 @@ namespace FilterLists.Directory.Api
     {
         public static async Task Main(string[] args)
         {
-            await TryRunWithLoggingAsync(async () =>
-            {
-                var host = CreateHostBuilder(args).Build();
-                await host.MigrateAsync();
-                await host.RunAsync();
-            });
+            var host = CreateHostBuilder(args).Build();
+            await host.TryRunWithLoggingAsync(async () => await host.MigrateAsync());
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args)
