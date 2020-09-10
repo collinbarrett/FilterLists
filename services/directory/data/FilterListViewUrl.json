@@ -14757,13 +14757,13 @@
     "filterListId": 2313,
     "id": 2460,
     "primariness": 1,
-    "url": "https://kriskintel.com/ktip_domain_blacklist.txt"
+    "url": "https://kriskintel.com/feeds/ktip_domain_blacklist.txt"
   },
   {
     "filterListId": 2314,
     "id": 2461,
     "primariness": 1,
-    "url": "https://kriskintel.com/ktip_domain_blacklist.txt"
+    "url": "https://kriskintel.com/feeds/ktip_malicious_Ips.txt"
   },
   {
     "filterListId": 2315,
@@ -15478,5 +15478,47 @@
     "id": 2580,
     "primariness": 4,
     "url": "https://gitlab.com/ABPindo/indonesianadblockrules/raw/master/subscriptions/abpindo.txt"
+  },
+  {
+    "filterListId": 2396,
+    "id": 2581,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/banks.txt"
+  },
+  {
+    "filterListId": 2397,
+    "id": 2582,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/sensitive.txt"
+  },
+  {
+    "filterListId": 2398,
+    "id": 2583,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/issues.txt"
+  },
+  {
+    "filterListId": 2399,
+    "id": 2584,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/windows.txt"
+  },
+  {
+    "filterListId": 2400,
+    "id": 2585,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/mac.txt"
+  },
+  {
+    "filterListId": 2401,
+    "id": 2586,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/android.txt"
+  },
+  {
+    "filterListId": 2402,
+    "id": 2587,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/firefox.txt"
   }
 ]
