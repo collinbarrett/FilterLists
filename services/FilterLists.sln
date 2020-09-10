@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Api", "Directory\src\FilterLists.Directory.Api\FilterLists.Directory.Api.csproj", "{FE50F471-7DC0-44AB-8DAB-2909E3207FF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Api", "Directory\FilterLists.Directory.Api\FilterLists.Directory.Api.csproj", "{FE50F471-7DC0-44AB-8DAB-2909E3207FF9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directory", "Directory", "{AE5D6471-1B6E-4B06-A313-34EF81F35342}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directory", "Directory", "{
 		Directory\azure-pipelines.migrate.yaml = Directory\azure-pipelines.migrate.yaml
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Domain", "Directory\src\FilterLists.Directory.Domain\FilterLists.Directory.Domain.csproj", "{05496C09-DA31-4543-9EC4-D56BCADBB027}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Domain", "Directory\FilterLists.Directory.Domain\FilterLists.Directory.Domain.csproj", "{05496C09-DA31-4543-9EC4-D56BCADBB027}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Application", "Directory\src\FilterLists.Directory.Application\FilterLists.Directory.Application.csproj", "{CB1BCB34-C2A1-4E94-A90E-359FB4720B96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Application", "Directory\FilterLists.Directory.Application\FilterLists.Directory.Application.csproj", "{CB1BCB34-C2A1-4E94-A90E-359FB4720B96}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure", "Directory\src\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj", "{74C798F8-892A-40F2-8D2E-395E83853771}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure", "Directory\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj", "{74C798F8-892A-40F2-8D2E-395E83853771}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure.Migrations", "Directory\src\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj", "{4F7D51FE-A1F3-4473-A8C3-D57EBDD8E60E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure.Migrations", "Directory\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj", "{4F7D51FE-A1F3-4473-A8C3-D57EBDD8E60E}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "..\docker-compose.dcproj", "{8F04C802-830B-4B6D-8D53-5D2A87B4223D}"
 EndProject
@@ -52,15 +52,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infra
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archival", "Archival", "{5E52FEF9-9605-4ACB-8A42-A20E06331599}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Api", "Archival\src\FilterLists.Archival.Api\FilterLists.Archival.Api.csproj", "{F625C241-0501-4AEB-8B82-609C93EE6B7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Api", "Archival\FilterLists.Archival.Api\FilterLists.Archival.Api.csproj", "{F625C241-0501-4AEB-8B82-609C93EE6B7D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Application", "Archival\src\FilterLists.Archival.Application\FilterLists.Archival.Application.csproj", "{11669839-E666-477B-A1B6-276041AD3768}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Application", "Archival\FilterLists.Archival.Application\FilterLists.Archival.Application.csproj", "{11669839-E666-477B-A1B6-276041AD3768}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Infrastructure", "Archival\src\FilterLists.Archival.Infrastructure\FilterLists.Archival.Infrastructure.csproj", "{A0B77015-E8C4-41D3-B63D-BF818026298C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Infrastructure", "Archival\FilterLists.Archival.Infrastructure\FilterLists.Archival.Infrastructure.csproj", "{A0B77015-E8C4-41D3-B63D-BF818026298C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernel", "SharedKernel", "{59197818-6C72-4A3C-A595-49F3D7D2EB18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.SharedKernel.Logging", "SharedKernel\src\FilterLists.SharedKernel.Logging\FilterLists.SharedKernel.Logging.csproj", "{5485F55E-DFED-4DA0-8A00-220B081FAC96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.SharedKernel.Logging", "SharedKernel\FilterLists.SharedKernel.Logging\FilterLists.SharedKernel.Logging.csproj", "{5485F55E-DFED-4DA0-8A00-220B081FAC96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
