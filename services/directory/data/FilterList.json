@@ -16623,5 +16623,45 @@
     "id": 2402,
     "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
     "name": "Adguard HTTPS Exclusions: Firefox"
+  },
+  {
+    "description": "This is a slimmer version of \"Dandelion Sprout's Nordic Filters\", intended for users of software tools that doesn't support adblocker syntaxes. It chiefly targets scams and malware on Norwegian or Danish sites, as well as some advert and tracking servers.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2403,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (Domains whitelist)"
+  },
+  {
+    "description": "Do you feel that bacon and pork tastes really icky and sourly greasy, yet half of all things you'll find in restaurants have pork in them, and there's 30 different terms for pork to keep track of to avoid unpleasant surprises? If so, then this list has saved your taste buds and stomach.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2404,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'Pork meat on restaurant menus' List"
+  },
+  {
+    "description": "This list removes advertising and tracking on Swedish-language websites. It is very closely connected to \"Frellwit's Swedish Filters\", but has been modified to remove entries that are against the rules for inclusion in Adblock Plus (such as anti-anti-adblocking, cookie notifications, newsletters, etc.), and increase compatibility with ABP's syntax, since Frellwit's list does not offer official user support for ABP users. The plan is to synchronise with his list roughly once a month, and that the ABP team add both permanent and temporary fixes in the meantime.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/Swedish-List-for-Adblock-Plus",
+    "id": 2405,
+    "issuesUrl": "https://github.com/DandelionSprout/Swedish-List-for-Adblock-Plus/issues",
+    "licenseId": 4,
+    "name": "Swedish List for Adblock Plus"
+  },
+  {
+    "description": "This is primarily designed for users of AdGuard for Android, who wish to use its DNS server function with no local DNS filter lists, while not having to see the \"No filters enabled. Enable some.\" notice each and every time they enter the DNS settings. It contains 1 entry, for a dummy domain which will by all feasible earmarks never become registered at any point in human history.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2406,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dummy List to Avoid 'No lists turned on' Warnings"
   }
 ]
