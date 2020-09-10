@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using FilterLists.Directory.Infrastructure.Migrations.Migrations;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
@@ -13,7 +14,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Tests
         {
             var exception = await Record.ExceptionAsync(async () =>
             {
-                const string connString = "Server=directory-db;Database=filterlists;Uid=filterlists;Pwd=filterlists;";
+                var connString = Environment.GetEnvironmentVariable("ConnectionStrings__DirectoryConnection") ??
+                                 throw new Exception();
                 var options = new DbContextOptionsBuilder<QueryDbContext>()
                     .UseNpgsql(connString, m => m.MigrationsAssembly(typeof(Initial).Assembly.GetName().Name))
                     .EnableSensitiveDataLogging()

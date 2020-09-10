@@ -10,6 +10,8 @@ services:
       - directory-migrations-tests-results:/tests/FilterLists.Directory.Infrastructure.Migrations.Tests/TestResults
     depends_on:
       - directory-db
+    environment:
+      ConnectionStrings__DirectoryConnection: ${DIRECTORY_CONNECTION_STRING}
 
   directory-db:
     image: postgres:alpine
