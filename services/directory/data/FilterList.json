@@ -16567,5 +16567,61 @@
     "homeUrl": "https://www.publicdns.neustar/",
     "id": 2395,
     "name": "neustar UltraDNS Public - Threat Protection"
+  },
+  {
+    "description": "By default, AdGuard doesn't filter websites of financial services and websites with important personal data. This repo contains the list of excluded websites.",
+    "forumUrl": "https://forum.adguard.com/index.php",
+    "homeUrl": "https://github.com/AdguardTeam/HttpsExclusions",
+    "id": 2396,
+    "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
+    "name": "Adguard HTTPS Exclusions: Banks and financial services"
+  },
+  {
+    "description": "By default, AdGuard doesn't filter websites of financial services and websites with important personal data. This repo contains the list of excluded websites.",
+    "forumUrl": "https://forum.adguard.com/index.php",
+    "homeUrl": "https://github.com/AdguardTeam/HttpsExclusions",
+    "id": 2397,
+    "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
+    "name": "Adguard HTTPS Exclusions: Other services with sensitive personal information"
+  },
+  {
+    "description": "By default, AdGuard doesn't filter websites of financial services and websites with important personal data. This repo contains the list of excluded websites.",
+    "forumUrl": "https://forum.adguard.com/index.php",
+    "homeUrl": "https://github.com/AdguardTeam/HttpsExclusions",
+    "id": 2398,
+    "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
+    "name": "Adguard HTTPS Exclusions: Necessary to resolve specific issues"
+  },
+  {
+    "description": "By default, AdGuard doesn't filter websites of financial services and websites with important personal data. This repo contains the list of excluded websites.",
+    "forumUrl": "https://forum.adguard.com/index.php",
+    "homeUrl": "https://github.com/AdguardTeam/HttpsExclusions",
+    "id": 2399,
+    "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
+    "name": "Adguard HTTPS Exclusions: Windows"
+  },
+  {
+    "description": "By default, AdGuard doesn't filter websites of financial services and websites with important personal data. This repo contains the list of excluded websites.",
+    "forumUrl": "https://forum.adguard.com/index.php",
+    "homeUrl": "https://github.com/AdguardTeam/HttpsExclusions",
+    "id": 2400,
+    "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
+    "name": "Adguard HTTPS Exclusions: macOS"
+  },
+  {
+    "description": "By default, AdGuard doesn't filter websites of financial services and websites with important personal data. This repo contains the list of excluded websites.",
+    "forumUrl": "https://forum.adguard.com/index.php",
+    "homeUrl": "https://github.com/AdguardTeam/HttpsExclusions",
+    "id": 2401,
+    "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
+    "name": "Adguard HTTPS Exclusions: Android"
+  },
+  {
+    "description": "By default, AdGuard doesn't filter websites of financial services and websites with important personal data. This repo contains the list of excluded websites.",
+    "forumUrl": "https://forum.adguard.com/index.php",
+    "homeUrl": "https://github.com/AdguardTeam/HttpsExclusions",
+    "id": 2402,
+    "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
+    "name": "Adguard HTTPS Exclusions: Firefox"
   }
 ]
