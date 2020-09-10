@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Serilog;
-using Serilog.Events;
 
 namespace FilterLists.SharedKernel.Logging
 {
@@ -9,12 +8,7 @@ namespace FilterLists.SharedKernel.Logging
     {
         public static async Task<int> TryRunWithLoggingAsync(Func<Task> runHostAsync)
         {
-            Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Debug()
-                .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
-                .Enrich.FromLogContext()
-                .WriteTo.Console()
-                .CreateLogger();
+            Log.Logger = Configuration.LoggerConfiguration.CreateLogger();
 
             try
             {
