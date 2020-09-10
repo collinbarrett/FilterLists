@@ -4,7 +4,7 @@ services:
   directory-migrations-tests:
     build:
       context: ./services
-      dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile.migrate
+      dockerfile: Directory/src/FilterLists.Directory.Api/Dockerfile.migrate
       target: test-migrations
     volumes:
       - directory-migrations-tests-results:/tests/FilterLists.Directory.Infrastructure.Migrations.Tests/TestResults

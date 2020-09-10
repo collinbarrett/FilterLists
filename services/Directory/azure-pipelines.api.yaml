@@ -5,15 +5,15 @@ trigger:
   paths:
     include:
       [
-        services/directory/azure-pipelines.api.yaml,
-        services/directory/src/FilterLists.Directory.Domain/*,
-        services/directory/src/FilterLists.Directory.Infrastructure/*,
-        services/directory/src/FilterLists.Directory.Infrastructure.Migrations/*,
-        services/directory/src/FilterLists.Directory.Application/*,
-        services/directory/src/FilterLists.Directory.Api/*,
+        services/Directory/azure-pipelines.api.yaml,
+        services/Directory/src/FilterLists.Directory.Domain/*,
+        services/Directory/src/FilterLists.Directory.Infrastructure/*,
+        services/Directory/src/FilterLists.Directory.Infrastructure.Migrations/*,
+        services/Directory/src/FilterLists.Directory.Application/*,
+        services/Directory/src/FilterLists.Directory.Api/*,
         docker-compose.yml,
         docker-compose.prod.yml,
-        .env.directory,
+        .env,
         .dockerignore,
       ]
 
@@ -24,15 +24,15 @@ pr:
   paths:
     include:
       [
-        services/directory/azure-pipelines.api.yaml,
-        services/directory/src/FilterLists.Directory.Domain/*,
-        services/directory/src/FilterLists.Directory.Infrastructure/*,
-        services/directory/src/FilterLists.Directory.Infrastructure.Migrations/*,
-        services/directory/src/FilterLists.Directory.Application/*,
-        services/directory/src/FilterLists.Directory.Api/*,
+        services/Directory/azure-pipelines.api.yaml,
+        services/Directory/src/FilterLists.Directory.Domain/*,
+        services/Directory/src/FilterLists.Directory.Infrastructure/*,
+        services/Directory/src/FilterLists.Directory.Infrastructure.Migrations/*,
+        services/Directory/src/FilterLists.Directory.Application/*,
+        services/Directory/src/FilterLists.Directory.Api/*,
         docker-compose.yml,
         docker-compose.prod.yml,
-        .env.directory,
+        .env,
         .dockerignore,
       ]
 
@@ -53,7 +53,7 @@ steps:
       containerRegistry: github-container-registry
       repository: collinbarrett/filterlists-directory-api
       command: build
-      Dockerfile: services/directory/src/FilterLists.Directory.Api/Dockerfile
+      Dockerfile: services/Directory/src/FilterLists.Directory.Api/Dockerfile
       buildContext: ./services
       tags: |
         latest

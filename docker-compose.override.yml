@@ -20,7 +20,7 @@ services:
   directory-api:
     build:
       context: ./services
-      dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile.dev
+      dockerfile: Directory/src/FilterLists.Directory.Api/Dockerfile.dev
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
 

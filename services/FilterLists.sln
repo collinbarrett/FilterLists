@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Api", "directory\src\FilterLists.Directory.Api\FilterLists.Directory.Api.csproj", "{FE50F471-7DC0-44AB-8DAB-2909E3207FF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Api", "Directory\src\FilterLists.Directory.Api\FilterLists.Directory.Api.csproj", "{FE50F471-7DC0-44AB-8DAB-2909E3207FF9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directory", "Directory", "{AE5D6471-1B6E-4B06-A313-34EF81F35342}"
 	ProjectSection(SolutionItems) = preProject
-		directory\azure-pipelines.api.yaml = directory\azure-pipelines.api.yaml
-		directory\azure-pipelines.migrate.yaml = directory\azure-pipelines.migrate.yaml
+		Directory\azure-pipelines.api.yaml = Directory\azure-pipelines.api.yaml
+		Directory\azure-pipelines.migrate.yaml = Directory\azure-pipelines.migrate.yaml
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Domain", "directory\src\FilterLists.Directory.Domain\FilterLists.Directory.Domain.csproj", "{05496C09-DA31-4543-9EC4-D56BCADBB027}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Domain", "Directory\src\FilterLists.Directory.Domain\FilterLists.Directory.Domain.csproj", "{05496C09-DA31-4543-9EC4-D56BCADBB027}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Application", "directory\src\FilterLists.Directory.Application\FilterLists.Directory.Application.csproj", "{CB1BCB34-C2A1-4E94-A90E-359FB4720B96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Application", "Directory\src\FilterLists.Directory.Application\FilterLists.Directory.Application.csproj", "{CB1BCB34-C2A1-4E94-A90E-359FB4720B96}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure", "directory\src\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj", "{74C798F8-892A-40F2-8D2E-395E83853771}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure", "Directory\src\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj", "{74C798F8-892A-40F2-8D2E-395E83853771}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure.Migrations", "directory\src\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj", "{4F7D51FE-A1F3-4473-A8C3-D57EBDD8E60E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure.Migrations", "Directory\src\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj", "{4F7D51FE-A1F3-4473-A8C3-D57EBDD8E60E}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "..\docker-compose.dcproj", "{8F04C802-830B-4B6D-8D53-5D2A87B4223D}"
 EndProject
@@ -30,25 +30,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{8F419098-3EEB-4B4B-99A8-70555FA93DAF}"
 	ProjectSection(SolutionItems) = preProject
-		directory\data\Dependent.json = directory\data\Dependent.json
-		directory\data\FilterList.json = directory\data\FilterList.json
-		directory\data\FilterListLanguage.json = directory\data\FilterListLanguage.json
-		directory\data\FilterListMaintainer.json = directory\data\FilterListMaintainer.json
-		directory\data\FilterListSyntax.json = directory\data\FilterListSyntax.json
-		directory\data\FilterListTag.json = directory\data\FilterListTag.json
-		directory\data\FilterListViewUrl.json = directory\data\FilterListViewUrl.json
-		directory\data\Fork.json = directory\data\Fork.json
-		directory\data\Language.json = directory\data\Language.json
-		directory\data\License.json = directory\data\License.json
-		directory\data\Maintainer.json = directory\data\Maintainer.json
-		directory\data\Merge.json = directory\data\Merge.json
-		directory\data\Software.json = directory\data\Software.json
-		directory\data\SoftwareSyntax.json = directory\data\SoftwareSyntax.json
-		directory\data\Syntax.json = directory\data\Syntax.json
-		directory\data\Tag.json = directory\data\Tag.json
+		Directory\data\Dependent.json = Directory\data\Dependent.json
+		Directory\data\FilterList.json = Directory\data\FilterList.json
+		Directory\data\FilterListLanguage.json = Directory\data\FilterListLanguage.json
+		Directory\data\FilterListMaintainer.json = Directory\data\FilterListMaintainer.json
+		Directory\data\FilterListSyntax.json = Directory\data\FilterListSyntax.json
+		Directory\data\FilterListTag.json = Directory\data\FilterListTag.json
+		Directory\data\FilterListViewUrl.json = Directory\data\FilterListViewUrl.json
+		Directory\data\Fork.json = Directory\data\Fork.json
+		Directory\data\Language.json = Directory\data\Language.json
+		Directory\data\License.json = Directory\data\License.json
+		Directory\data\Maintainer.json = Directory\data\Maintainer.json
+		Directory\data\Merge.json = Directory\data\Merge.json
+		Directory\data\Software.json = Directory\data\Software.json
+		Directory\data\SoftwareSyntax.json = Directory\data\SoftwareSyntax.json
+		Directory\data\Syntax.json = Directory\data\Syntax.json
+		Directory\data\Tag.json = Directory\data\Tag.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure.Migrations.Tests", "directory\tests\FilterLists.Directory.Infrastructure.Migrations.Tests\FilterLists.Directory.Infrastructure.Migrations.Tests.csproj", "{8B07EF04-5516-40BB-B21B-CEC6F90EC631}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure.Migrations.Tests", "Directory\tests\FilterLists.Directory.Infrastructure.Migrations.Tests\FilterLists.Directory.Infrastructure.Migrations.Tests.csproj", "{8B07EF04-5516-40BB-B21B-CEC6F90EC631}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archival", "Archival", "{5E52FEF9-9605-4ACB-8A42-A20E06331599}"
 EndProject

@@ -12,7 +12,7 @@ services:
   directory-api:
     build:
       context: ./services
-      dockerfile: directory/src/FilterLists.Directory.Api/Dockerfile
+      dockerfile: Directory/src/FilterLists.Directory.Api/Dockerfile
 
   web:
     build:
