@@ -40,6 +40,7 @@ import img40 from "./40-Opera.png";
 import img41 from "./41-Surge.png";
 import img42 from "./42-dnscrypt-proxy.png";
 import img43 from "./43-SmartDNS.png";
+import img44 from "./44-AdGuard-for-WindowsMac.svg";
 
 export {
   img01,
@@ -83,5 +84,6 @@ export {
   img40,
   img41,
   img42,
-  img43
+  img43,
+  img44,
 };
