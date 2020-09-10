@@ -1953,7 +1953,7 @@
     "filterListId": 214,
     "id": 326,
     "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
+    "url": "https://easylist-msie.adblockplus.org/antiadblockfilters.txt"
   },
   {
     "filterListId": 215,
@@ -3867,7 +3867,7 @@
     "filterListId": 566,
     "id": 645,
     "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
+    "url": "https://easylist-msie.adblockplus.org/abp-filters-anti-cv.txt"
   },
   {
     "filterListId": 569,
@@ -15562,5 +15562,17 @@
     "id": 2594,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/DandelionSprout/Swedish-List-for-Adblock-Plus/main/Swedish%20List%20for%20Adblock%20Plus.txt"
+  },
+  {
+    "filterListId": 214,
+    "id": 2595,
+    "primariness": 2,
+    "url": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
+  },
+{
+    "filterListId": 566,
+    "id": 2596,
+    "primariness": 2,
+    "url": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
   }
 ]
