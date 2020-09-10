@@ -1,6 +1,6 @@
 ﻿namespace FilterLists.Archival.Infrastructure.Options
 {
-    public class GitOptions
+    internal class GitOptions
     {
         public const string Key = nameof(Key);
 
