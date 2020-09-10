@@ -279,5 +279,12 @@
     "id": 43,
     "name": "SmartDNS",
     "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://adguard.com/en/download.html",
+    "homeUrl": "https://adguard.com/",
+    "id": 44,
+    "name": "AdGuard for Windows/macOS",
+    "supportsAbpUrlScheme": true
   }
 ]
