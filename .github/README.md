@@ -47,6 +47,8 @@ To submit a new list or update data about an existing list, please submit a pull
 
 Alternatively, you can [open a new issue](https://github.com/collinbarrett/FilterLists/issues/new) providing information for all of the fields described in the [data model](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar).
 
+Information about tracking protection lists (TPL) for Internet Explorer (☠) are maintained [here](https://github.com/collinbarrett/FilterLists/blob/master/web/public/tpl.html) outside of the standard data model and viewed [here](https://filterlists.com/tpl.html).
+
 ## Adding or Updating Rules
 
 FilterLists does not maintain any of these lists. It serves only as a discovery tool to direct users to lists that they may want to use. If you want to request addition, modification, or removal of a rule from a list, you will need to contact the maintainers of that list directly. FilterLists provides a variety of ways you can get in contact with the maintainers to do so.
@@ -84,7 +86,3 @@ We respect your privacy. That is the whole point of this project. The only minor
 - [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/data-retention-privacy)
 - [DigitalOcean](https://www.digitalocean.com/legal/privacy-policy/)
 - [Cloudflare](https://www.cloudflare.com/analytics/)
-
-## Internet Explorer
-
-FilterLists does not support Internet Explorer. See [this page](https://filterlists.com/tpl.html) for a small archive of Tracking Protection Lists for Internet Explorer.
