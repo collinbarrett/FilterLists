@@ -43,6 +43,7 @@ import {
   img41,
   img42,
   img43,
+  img44,
 } from "./imgs";
 
 interface Props {
@@ -107,4 +108,5 @@ const icons: { [id: number]: Icon } = {
   41: { image: img41, imageTitle: "Surge" },
   42: { image: img42, imageTitle: "dnscrypt-proxy" },
   43: { image: img43, imageTitle: "SmartDNS" },
+  44: { image: img44, imageTitle: "AdGuard for Windows/macOS" },
 };
