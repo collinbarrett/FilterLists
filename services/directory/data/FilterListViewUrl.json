@@ -11601,13 +11601,13 @@
     "filterListId": 1866,
     "id": 1934,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/master/filters/combined-filters.txt"
+    "url": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/main/filters/combined-filters.txt"
   },
   {
     "filterListId": 1867,
     "id": 1935,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/master/filters/ubo-filters.txt"
+    "url": "https://raw.githubusercontent.com/LanikSJ/ubo-filters/main/filters/ubo-filters.txt"
   },
   {
     "filterListId": 1868,
