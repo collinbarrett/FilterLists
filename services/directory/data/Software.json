@@ -17,7 +17,7 @@
     "downloadUrl": "https://adguard.com/en/download.html",
     "homeUrl": "https://adguard.com/",
     "id": 3,
-    "name": "AdGuard",
+    "name": "AdGuard (free versions)",
     "supportsAbpUrlScheme": true
   },
   {
@@ -285,6 +285,13 @@
     "homeUrl": "https://adguard.com/",
     "id": 44,
     "name": "AdGuard for Windows/macOS",
+    "supportsAbpUrlScheme": true
+  },
+  {
+    "downloadUrl": "https://adguard.com/en/download.html",
+    "homeUrl": "https://adguard.com/",
+    "id": 45,
+    "name": "AdGuard for Android",
     "supportsAbpUrlScheme": true
   }
 ]
