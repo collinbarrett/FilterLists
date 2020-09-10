@@ -41,7 +41,7 @@ import img41 from "./41-Surge.png";
 import img42 from "./42-dnscrypt-proxy.png";
 import img43 from "./43-SmartDNS.png";
 import img44 from "./44-AdGuard-for-WindowsMac.svg";
-import img45 from "./45-AdGuard-for-WindowsMac.svg";
+import img45 from "./45-AdGuard-for-Android.svg";
 
 export {
   img01,
