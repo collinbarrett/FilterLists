@@ -15520,5 +15520,47 @@
     "id": 2587,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/firefox.txt"
+  },
+  {
+    "filterListId": 2403,
+    "id": 2588,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersDomainsAllowlist.txt"
+  },
+  {
+    "filterListId": 2403,
+    "id": 2589,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersDomainsAllowlist.txt"
+  },
+  {
+    "filterListId": 2404,
+    "id": 2590,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPorkMeatOnRestaurantMenusList.txt"
+  },
+  {
+    "filterListId": 2404,
+    "id": 2591,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPorkMeatOnRestaurantMenusList.txt"
+  },
+  {
+    "filterListId": 2406,
+    "id": 2592,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Special%20security%20lists/DummyList.txt"
+  },
+  {
+    "filterListId": 2406,
+    "id": 2593,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special%20security%20lists/DummyList.txt"
+  },
+  {
+    "filterListId": 2405,
+    "id": 2594,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/Swedish-List-for-Adblock-Plus/main/Swedish%20List%20for%20Adblock%20Plus.txt"
   }
 ]
