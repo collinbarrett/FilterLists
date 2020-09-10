@@ -7,7 +7,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1.401-alpine AS build
 
 # restore API
 WORKDIR /app
-COPY sharedKernel/src/FilterLists.SharedKernel.Logging/FilterLists.SharedKernel.Logging.csproj sharedKernel/src/FilterLists.SharedKernel.Logging/
+COPY SharedKernel/src/FilterLists.SharedKernel.Logging/FilterLists.SharedKernel.Logging.csproj SharedKernel/src/FilterLists.SharedKernel.Logging/
 COPY archival/src/FilterLists.Archival.Infrastructure/FilterLists.Archival.Infrastructure.csproj archival/src/FilterLists.Archival.Infrastructure/
 COPY archival/src/FilterLists.Archival.Application/FilterLists.Archival.Application.csproj archival/src/FilterLists.Archival.Application/
 WORKDIR /app/archival/src/FilterLists.Archival.Api
@@ -16,7 +16,7 @@ RUN dotnet restore
 
 # build API
 WORKDIR /app
-COPY sharedKernel/src/FilterLists.SharedKernel.Logging/. sharedKernel/src/FilterLists.SharedKernel.Logging/
+COPY SharedKernel/src/FilterLists.SharedKernel.Logging/. SharedKernel/src/FilterLists.SharedKernel.Logging/
 COPY archival/src/FilterLists.Archival.Infrastructure/. archival/src/FilterLists.Archival.Infrastructure/
 COPY archival/src/FilterLists.Archival.Application/. archival/src/FilterLists.Archival.Application/
 WORKDIR /app/archival/src/FilterLists.Archival.Api

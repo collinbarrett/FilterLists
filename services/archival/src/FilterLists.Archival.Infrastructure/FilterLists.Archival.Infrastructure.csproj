@@ -39,7 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\sharedKernel\src\FilterLists.SharedKernel.Logging\FilterLists.SharedKernel.Logging.csproj" />
+    <ProjectReference Include="..\..\..\SharedKernel\src\FilterLists.SharedKernel.Logging\FilterLists.SharedKernel.Logging.csproj" />
   </ItemGroup>
 
 </Project>

@@ -8,7 +8,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1.401-alpine AS build
 
 # restore API
 WORKDIR /app
-COPY sharedKernel/src/FilterLists.SharedKernel.Logging/FilterLists.SharedKernel.Logging.csproj sharedKernel/src/FilterLists.SharedKernel.Logging/
+COPY SharedKernel/src/FilterLists.SharedKernel.Logging/FilterLists.SharedKernel.Logging.csproj SharedKernel/src/FilterLists.SharedKernel.Logging/
 COPY directory/src/FilterLists.Directory.Domain/FilterLists.Directory.Domain.csproj directory/src/FilterLists.Directory.Domain/
 COPY directory/src/FilterLists.Directory.Infrastructure/FilterLists.Directory.Infrastructure.csproj directory/src/FilterLists.Directory.Infrastructure/
 COPY directory/src/FilterLists.Directory.Infrastructure.Migrations/FilterLists.Directory.Infrastructure.Migrations.csproj directory/src/FilterLists.Directory.Infrastructure.Migrations/
@@ -19,7 +19,7 @@ RUN dotnet restore
 
 # build API
 WORKDIR /app
-COPY sharedKernel/src/FilterLists.SharedKernel.Logging/. sharedKernel/src/FilterLists.SharedKernel.Logging/
+COPY SharedKernel/src/FilterLists.SharedKernel.Logging/. SharedKernel/src/FilterLists.SharedKernel.Logging/
 COPY directory/src/FilterLists.Directory.Domain/. directory/src/FilterLists.Directory.Domain/
 COPY directory/src/FilterLists.Directory.Infrastructure/. directory/src/FilterLists.Directory.Infrastructure/
 COPY directory/src/FilterLists.Directory.Infrastructure.Migrations/. directory/src/FilterLists.Directory.Infrastructure.Migrations/
