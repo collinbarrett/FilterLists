@@ -44,6 +44,7 @@ import {
   img42,
   img43,
   img44,
+  img45,
 } from "./imgs";
 
 interface Props {
@@ -68,7 +69,7 @@ interface Icon {
 const icons: { [id: number]: Icon } = {
   1: { image: img01, imageTitle: "uBlock Origin" },
   2: { image: img02, imageTitle: "Adblock Plus" },
-  3: { image: img03, imageTitle: "AdGuard" },
+  3: { image: img03, imageTitle: "AdGuard (free versions)" },
   4: { image: img04, imageTitle: "DNS66" },
   5: { image: img05, imageTitle: "Nano Adblocker" },
   6: { image: img06, imageTitle: "AdBlock" },
@@ -109,4 +110,5 @@ const icons: { [id: number]: Icon } = {
   42: { image: img42, imageTitle: "dnscrypt-proxy" },
   43: { image: img43, imageTitle: "SmartDNS" },
   44: { image: img44, imageTitle: "AdGuard for Windows/macOS" },
+  45: { image: img45, imageTitle: "AdGuard for Android" },
 };
