@@ -18731,113 +18731,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                             Description = "Protects against malicious domains for security purposes. Links that didn't fit in the Subscribe button URL texts, include 2610:a1:1019::2",
                             HomeUrl = "https://www.publicdns.neustar/",
                             Name = "neustar UltraDNS Public - Threat Protection"
-                        },
-                        new
-                        {
-                            Id = 2396,
-                            Description = "By default, AdGuard doesn't filter websites of financial services and websites with important personal data. This repo contains the list of excluded websites.",
-                            ForumUrl = "https://forum.adguard.com/index.php",
-                            HomeUrl = "https://github.com/AdguardTeam/HttpsExclusions",
-                            IssuesUrl = "https://github.com/AdguardTeam/HttpsExclusions/issues",
-                            Name = "Adguard HTTPS Exclusions: Banks and financial services"
-                        },
-                        new
-                        {
-                            Id = 2397,
-                            Description = "By default, AdGuard doesn't filter websites of financial services and websites with important personal data. This repo contains the list of excluded websites.",
-                            ForumUrl = "https://forum.adguard.com/index.php",
-                            HomeUrl = "https://github.com/AdguardTeam/HttpsExclusions",
-                            IssuesUrl = "https://github.com/AdguardTeam/HttpsExclusions/issues",
-                            Name = "Adguard HTTPS Exclusions: Other services with sensitive personal information"
-                        },
-                        new
-                        {
-                            Id = 2398,
-                            Description = "By default, AdGuard doesn't filter websites of financial services and websites with important personal data. This repo contains the list of excluded websites.",
-                            ForumUrl = "https://forum.adguard.com/index.php",
-                            HomeUrl = "https://github.com/AdguardTeam/HttpsExclusions",
-                            IssuesUrl = "https://github.com/AdguardTeam/HttpsExclusions/issues",
-                            Name = "Adguard HTTPS Exclusions: Necessary to resolve specific issues"
-                        },
-                        new
-                        {
-                            Id = 2399,
-                            Description = "By default, AdGuard doesn't filter websites of financial services and websites with important personal data. This repo contains the list of excluded websites.",
-                            ForumUrl = "https://forum.adguard.com/index.php",
-                            HomeUrl = "https://github.com/AdguardTeam/HttpsExclusions",
-                            IssuesUrl = "https://github.com/AdguardTeam/HttpsExclusions/issues",
-                            Name = "Adguard HTTPS Exclusions: Windows"
-                        },
-                        new
-                        {
-                            Id = 2400,
-                            Description = "By default, AdGuard doesn't filter websites of financial services and websites with important personal data. This repo contains the list of excluded websites.",
-                            ForumUrl = "https://forum.adguard.com/index.php",
-                            HomeUrl = "https://github.com/AdguardTeam/HttpsExclusions",
-                            IssuesUrl = "https://github.com/AdguardTeam/HttpsExclusions/issues",
-                            Name = "Adguard HTTPS Exclusions: macOS"
-                        },
-                        new
-                        {
-                            Id = 2401,
-                            Description = "By default, AdGuard doesn't filter websites of financial services and websites with important personal data. This repo contains the list of excluded websites.",
-                            ForumUrl = "https://forum.adguard.com/index.php",
-                            HomeUrl = "https://github.com/AdguardTeam/HttpsExclusions",
-                            IssuesUrl = "https://github.com/AdguardTeam/HttpsExclusions/issues",
-                            Name = "Adguard HTTPS Exclusions: Android"
-                        },
-                        new
-                        {
-                            Id = 2402,
-                            Description = "By default, AdGuard doesn't filter websites of financial services and websites with important personal data. This repo contains the list of excluded websites.",
-                            ForumUrl = "https://forum.adguard.com/index.php",
-                            HomeUrl = "https://github.com/AdguardTeam/HttpsExclusions",
-                            IssuesUrl = "https://github.com/AdguardTeam/HttpsExclusions/issues",
-                            Name = "Adguard HTTPS Exclusions: Firefox"
-                        },
-                        new
-                        {
-                            Id = 2403,
-                            Description = "This is a slimmer version of \"Dandelion Sprout's Nordic Filters\", intended for users of software tools that doesn't support adblocker syntaxes. It chiefly targets scams and malware on Norwegian or Danish sites, as well as some advert and tracking servers.",
-                            DonateUrl = "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-                            EmailAddress = "imreeil42@gmail.com",
-                            HomeUrl = "https://github.com/DandelionSprout/adfilt",
-                            IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
-                            LicenseId = 35,
-                            Name = "Dandelion Sprout's Nordic Filters for Tidier Websites (Domains whitelist)"
-                        },
-                        new
-                        {
-                            Id = 2404,
-                            Description = "Do you feel that bacon and pork tastes really icky and sourly greasy, yet half of all things you'll find in restaurants have pork in them, and there's 30 different terms for pork to keep track of to avoid unpleasant surprises? If so, then this list has saved your taste buds and stomach.",
-                            DonateUrl = "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-                            EmailAddress = "imreeil42@gmail.com",
-                            HomeUrl = "https://github.com/DandelionSprout/adfilt",
-                            IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
-                            LicenseId = 35,
-                            Name = "Anti-'Pork meat on restaurant menus' List"
-                        },
-                        new
-                        {
-                            Id = 2405,
-                            Description = "This list removes advertising and tracking on Swedish-language websites. It is very closely connected to \"Frellwit's Swedish Filters\", but has been modified to remove entries that are against the rules for inclusion in Adblock Plus (such as anti-anti-adblocking, cookie notifications, newsletters, etc.), and increase compatibility with ABP's syntax, since Frellwit's list does not offer official user support for ABP users. The plan is to synchronise with his list roughly once a month, and that the ABP team add both permanent and temporary fixes in the meantime.",
-                            DonateUrl = "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-                            EmailAddress = "imreeil42@gmail.com",
-                            HomeUrl = "https://github.com/DandelionSprout/Swedish-List-for-Adblock-Plus",
-                            IssuesUrl = "https://github.com/DandelionSprout/Swedish-List-for-Adblock-Plus/issues",
-                            LicenseId = 4,
-                            Name = "Swedish List for Adblock Plus"
-                        },
-                        new
-                        {
-                            Id = 2406,
-                            Description = "This is primarily designed for users of AdGuard for Android, who wish to use its DNS server function with no local DNS filter lists, while not having to see the \"No filters enabled. Enable some.\" notice each and every time they enter the DNS settings. It contains 1 entry, for a dummy domain which will by all feasible earmarks never become registered at any point in human history.",
-                            DonateUrl = "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-                            EmailAddress = "imreeil42@gmail.com",
-                            HomeUrl = "https://github.com/DandelionSprout/adfilt",
-                            IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
-                            LicenseId = 35,
-                            Name = "Dummy List to Avoid 'No lists turned on' Warnings"
                         });
                 });
 
@@ -23385,21 +23278,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             FilterListId = 2391,
                             Iso6391 = "ja"
-                        },
-                        new
-                        {
-                            FilterListId = 2403,
-                            Iso6391 = "da"
-                        },
-                        new
-                        {
-                            FilterListId = 2403,
-                            Iso6391 = "no"
-                        },
-                        new
-                        {
-                            FilterListId = 2405,
-                            Iso6391 = "sv"
                         });
                 });
 
@@ -30310,26 +30188,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         },
                         new
                         {
-                            FilterListId = 2373,
-                            MaintainerId = 22
-                        },
-                        new
-                        {
-                            FilterListId = 2374,
-                            MaintainerId = 22
-                        },
-                        new
-                        {
-                            FilterListId = 2375,
-                            MaintainerId = 22
-                        },
-                        new
-                        {
-                            FilterListId = 2376,
-                            MaintainerId = 22
-                        },
-                        new
-                        {
                             FilterListId = 2377,
                             MaintainerId = 7
                         },
@@ -30352,41 +30210,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             FilterListId = 2391,
                             MaintainerId = 144
-                        },
-                        new
-                        {
-                            FilterListId = 2396,
-                            MaintainerId = 46
-                        },
-                        new
-                        {
-                            FilterListId = 2397,
-                            MaintainerId = 46
-                        },
-                        new
-                        {
-                            FilterListId = 2398,
-                            MaintainerId = 46
-                        },
-                        new
-                        {
-                            FilterListId = 2399,
-                            MaintainerId = 46
-                        },
-                        new
-                        {
-                            FilterListId = 2400,
-                            MaintainerId = 46
-                        },
-                        new
-                        {
-                            FilterListId = 2401,
-                            MaintainerId = 46
-                        },
-                        new
-                        {
-                            FilterListId = 2402,
-                            MaintainerId = 46
                         });
                 });
 
@@ -32819,21 +32642,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             FilterListId = 680,
                             SyntaxId = 2
-                        },
-                        new
-                        {
-                            FilterListId = 680,
-                            SyntaxId = 9
-                        },
-                        new
-                        {
-                            FilterListId = 680,
-                            SyntaxId = 16
-                        },
-                        new
-                        {
-                            FilterListId = 680,
-                            SyntaxId = 39
                         },
                         new
                         {
@@ -36708,12 +36516,7 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             FilterListId = 1557,
-                            SyntaxId = 1
-                        },
-                        new
-                        {
-                            FilterListId = 1557,
-                            SyntaxId = 36
+                            SyntaxId = 35
                         },
                         new
                         {
@@ -37998,12 +37801,7 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             FilterListId = 1824,
-                            SyntaxId = 9
-                        },
-                        new
-                        {
-                            FilterListId = 1824,
-                            SyntaxId = 39
+                            SyntaxId = 33
                         },
                         new
                         {
@@ -38818,12 +38616,7 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             FilterListId = 2000,
-                            SyntaxId = 1
-                        },
-                        new
-                        {
-                            FilterListId = 2000,
-                            SyntaxId = 36
+                            SyntaxId = 35
                         },
                         new
                         {
@@ -39538,12 +39331,7 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             FilterListId = 2152,
-                            SyntaxId = 1
-                        },
-                        new
-                        {
-                            FilterListId = 2152,
-                            SyntaxId = 36
+                            SyntaxId = 35
                         },
                         new
                         {
@@ -40353,7 +40141,7 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             FilterListId = 2314,
-                            SyntaxId = 9
+                            SyntaxId = 2
                         },
                         new
                         {
@@ -40363,12 +40151,7 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             FilterListId = 2316,
-                            SyntaxId = 1
-                        },
-                        new
-                        {
-                            FilterListId = 2316,
-                            SyntaxId = 36
+                            SyntaxId = 35
                         },
                         new
                         {
@@ -40764,61 +40547,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             FilterListId = 2395,
                             SyntaxId = 22
-                        },
-                        new
-                        {
-                            FilterListId = 2396,
-                            SyntaxId = 50
-                        },
-                        new
-                        {
-                            FilterListId = 2397,
-                            SyntaxId = 50
-                        },
-                        new
-                        {
-                            FilterListId = 2398,
-                            SyntaxId = 50
-                        },
-                        new
-                        {
-                            FilterListId = 2399,
-                            SyntaxId = 50
-                        },
-                        new
-                        {
-                            FilterListId = 2400,
-                            SyntaxId = 50
-                        },
-                        new
-                        {
-                            FilterListId = 2401,
-                            SyntaxId = 50
-                        },
-                        new
-                        {
-                            FilterListId = 2402,
-                            SyntaxId = 50
-                        },
-                        new
-                        {
-                            FilterListId = 2403,
-                            SyntaxId = 50
-                        },
-                        new
-                        {
-                            FilterListId = 2404,
-                            SyntaxId = 3
-                        },
-                        new
-                        {
-                            FilterListId = 2405,
-                            SyntaxId = 38
-                        },
-                        new
-                        {
-                            FilterListId = 2406,
-                            SyntaxId = 28
                         });
                 });
 
@@ -56021,66 +55749,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             FilterListId = 2395,
                             TagId = 6
-                        },
-                        new
-                        {
-                            FilterListId = 2396,
-                            TagId = 10
-                        },
-                        new
-                        {
-                            FilterListId = 2397,
-                            TagId = 10
-                        },
-                        new
-                        {
-                            FilterListId = 2398,
-                            TagId = 10
-                        },
-                        new
-                        {
-                            FilterListId = 2399,
-                            TagId = 10
-                        },
-                        new
-                        {
-                            FilterListId = 2400,
-                            TagId = 10
-                        },
-                        new
-                        {
-                            FilterListId = 2401,
-                            TagId = 10
-                        },
-                        new
-                        {
-                            FilterListId = 2402,
-                            TagId = 10
-                        },
-                        new
-                        {
-                            FilterListId = 2403,
-                            TagId = 10
-                        },
-                        new
-                        {
-                            FilterListId = 2404,
-                            TagId = 15
-                        },
-                        new
-                        {
-                            FilterListId = 2405,
-                            TagId = 2
-                        },
-                        new
-                        {
-                            FilterListId = 2405,
-                            TagId = 3
-                        },
-                        new
-                        {
-                            FilterListId = 2406,
-                            TagId = 15
                         });
                 });
 
@@ -58722,7 +58390,7 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                             FilterListId = 214,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://easylist-msie.adblockplus.org/antiadblockfilters.txt"
+                            Url = "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
                         },
                         new
                         {
@@ -61274,7 +60942,7 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                             FilterListId = 566,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://easylist-msie.adblockplus.org/abp-filters-anti-cv.txt"
+                            Url = "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
                         },
                         new
                         {
@@ -71586,7 +71254,7 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                             FilterListId = 1866,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/LanikSJ/ubo-filters/main/filters/combined-filters.txt"
+                            Url = "https://raw.githubusercontent.com/LanikSJ/ubo-filters/master/filters/combined-filters.txt"
                         },
                         new
                         {
@@ -71594,7 +71262,7 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                             FilterListId = 1867,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/LanikSJ/ubo-filters/main/filters/ubo-filters.txt"
+                            Url = "https://raw.githubusercontent.com/LanikSJ/ubo-filters/master/filters/ubo-filters.txt"
                         },
                         new
                         {
@@ -75794,7 +75462,7 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                             FilterListId = 2313,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://kriskintel.com/feeds/ktip_domain_blacklist.txt"
+                            Url = "https://kriskintel.com/ktip_domain_blacklist.txt"
                         },
                         new
                         {
@@ -75802,7 +75470,7 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                             FilterListId = 2314,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://kriskintel.com/feeds/ktip_malicious_Ips.txt"
+                            Url = "https://kriskintel.com/ktip_domain_blacklist.txt"
                         },
                         new
                         {
@@ -76755,134 +76423,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                             Primariness = (short)4,
                             SegmentNumber = (short)0,
                             Url = "https://gitlab.com/ABPindo/indonesianadblockrules/raw/master/subscriptions/abpindo.txt"
-                        },
-                        new
-                        {
-                            Id = 2581,
-                            FilterListId = 2396,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/banks.txt"
-                        },
-                        new
-                        {
-                            Id = 2582,
-                            FilterListId = 2397,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/sensitive.txt"
-                        },
-                        new
-                        {
-                            Id = 2583,
-                            FilterListId = 2398,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/issues.txt"
-                        },
-                        new
-                        {
-                            Id = 2584,
-                            FilterListId = 2399,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/windows.txt"
-                        },
-                        new
-                        {
-                            Id = 2585,
-                            FilterListId = 2400,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/mac.txt"
-                        },
-                        new
-                        {
-                            Id = 2586,
-                            FilterListId = 2401,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/android.txt"
-                        },
-                        new
-                        {
-                            Id = 2587,
-                            FilterListId = 2402,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/AdguardTeam/HttpsExclusions/master/exclusions/firefox.txt"
-                        },
-                        new
-                        {
-                            Id = 2588,
-                            FilterListId = 2403,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList alternate versions/NordicFiltersDomainsAllowlist.txt"
-                        },
-                        new
-                        {
-                            Id = 2589,
-                            FilterListId = 2403,
-                            Primariness = (short)2,
-                            SegmentNumber = (short)0,
-                            Url = "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList alternate versions/NordicFiltersDomainsAllowlist.txt"
-                        },
-                        new
-                        {
-                            Id = 2590,
-                            FilterListId = 2404,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPorkMeatOnRestaurantMenusList.txt"
-                        },
-                        new
-                        {
-                            Id = 2591,
-                            FilterListId = 2404,
-                            Primariness = (short)2,
-                            SegmentNumber = (short)0,
-                            Url = "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPorkMeatOnRestaurantMenusList.txt"
-                        },
-                        new
-                        {
-                            Id = 2592,
-                            FilterListId = 2406,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Special security lists/DummyList.txt"
-                        },
-                        new
-                        {
-                            Id = 2593,
-                            FilterListId = 2406,
-                            Primariness = (short)2,
-                            SegmentNumber = (short)0,
-                            Url = "https://gitlab.com/DandelionSprout/adfilt/raw/master/Special security lists/DummyList.txt"
-                        },
-                        new
-                        {
-                            Id = 2594,
-                            FilterListId = 2405,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/DandelionSprout/Swedish-List-for-Adblock-Plus/main/Swedish List for Adblock Plus.txt"
-                        },
-                        new
-                        {
-                            Id = 2595,
-                            FilterListId = 214,
-                            Primariness = (short)2,
-                            SegmentNumber = (short)0,
-                            Url = "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
-                        },
-                        new
-                        {
-                            Id = 2596,
-                            FilterListId = 566,
-                            Primariness = (short)2,
-                            SegmentNumber = (short)0,
-                            Url = "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
                         });
                 });
 
@@ -79705,7 +79245,7 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                             Id = 3,
                             DownloadUrl = "https://adguard.com/en/download.html",
                             HomeUrl = "https://adguard.com/",
-                            Name = "AdGuard (free versions)",
+                            Name = "AdGuard",
                             SupportsAbpUrlScheme = true
                         },
                         new
@@ -80005,22 +79545,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                             HomeUrl = "https://github.com/pymumu/smartdns",
                             Name = "SmartDNS",
                             SupportsAbpUrlScheme = false
-                        },
-                        new
-                        {
-                            Id = 44,
-                            DownloadUrl = "https://adguard.com/en/download.html",
-                            HomeUrl = "https://adguard.com/",
-                            Name = "AdGuard for Windows/macOS",
-                            SupportsAbpUrlScheme = true
-                        },
-                        new
-                        {
-                            Id = 45,
-                            DownloadUrl = "https://adguard.com/en/download.html",
-                            HomeUrl = "https://adguard.com/",
-                            Name = "AdGuard for Android",
-                            SupportsAbpUrlScheme = true
                         });
                 });
 
@@ -80112,6 +79636,16 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             SoftwareId = 1,
+                            SyntaxId = 33
+                        },
+                        new
+                        {
+                            SoftwareId = 1,
+                            SyntaxId = 35
+                        },
+                        new
+                        {
+                            SoftwareId = 1,
                             SyntaxId = 36
                         },
                         new
@@ -80123,6 +79657,11 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             SoftwareId = 1,
                             SyntaxId = 40
+                        },
+                        new
+                        {
+                            SoftwareId = 1,
+                            SyntaxId = 42
                         },
                         new
                         {
@@ -80202,6 +79741,11 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             SoftwareId = 3,
+                            SyntaxId = 22
+                        },
+                        new
+                        {
+                            SoftwareId = 3,
                             SyntaxId = 28
                         },
                         new
@@ -80233,6 +79777,11 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             SoftwareId = 4,
                             SyntaxId = 22
+                        },
+                        new
+                        {
+                            SoftwareId = 4,
+                            SyntaxId = 35
                         },
                         new
                         {
@@ -80322,6 +79871,16 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             SoftwareId = 5,
+                            SyntaxId = 33
+                        },
+                        new
+                        {
+                            SoftwareId = 5,
+                            SyntaxId = 35
+                        },
+                        new
+                        {
+                            SoftwareId = 5,
                             SyntaxId = 36
                         },
                         new
@@ -80333,6 +79892,11 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             SoftwareId = 5,
                             SyntaxId = 40
+                        },
+                        new
+                        {
+                            SoftwareId = 5,
+                            SyntaxId = 42
                         },
                         new
                         {
@@ -80392,6 +79956,11 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             SoftwareId = 7,
+                            SyntaxId = 35
+                        },
+                        new
+                        {
+                            SoftwareId = 7,
                             SyntaxId = 36
                         },
                         new
@@ -80427,6 +79996,11 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             SoftwareId = 11,
+                            SyntaxId = 35
+                        },
+                        new
+                        {
+                            SoftwareId = 11,
                             SyntaxId = 36
                         },
                         new
@@ -80443,6 +80017,11 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             SoftwareId = 12,
                             SyntaxId = 14
+                        },
+                        new
+                        {
+                            SoftwareId = 12,
+                            SyntaxId = 35
                         },
                         new
                         {
@@ -80478,6 +80057,11 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             SoftwareId = 14,
                             SyntaxId = 30
+                        },
+                        new
+                        {
+                            SoftwareId = 14,
+                            SyntaxId = 35
                         },
                         new
                         {
@@ -80527,6 +80111,11 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             SoftwareId = 18,
+                            SyntaxId = 33
+                        },
+                        new
+                        {
+                            SoftwareId = 18,
                             SyntaxId = 34
                         },
                         new
@@ -80543,6 +80132,16 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             SoftwareId = 18,
                             SyntaxId = 41
+                        },
+                        new
+                        {
+                            SoftwareId = 18,
+                            SyntaxId = 42
+                        },
+                        new
+                        {
+                            SoftwareId = 18,
+                            SyntaxId = 43
                         },
                         new
                         {
@@ -80583,6 +80182,11 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             SoftwareId = 22,
                             SyntaxId = 2
+                        },
+                        new
+                        {
+                            SoftwareId = 22,
+                            SyntaxId = 35
                         },
                         new
                         {
@@ -80632,6 +80236,11 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             SoftwareId = 25,
+                            SyntaxId = 35
+                        },
+                        new
+                        {
+                            SoftwareId = 25,
                             SyntaxId = 48
                         },
                         new
@@ -80662,6 +80271,11 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             SoftwareId = 26,
+                            SyntaxId = 35
+                        },
+                        new
+                        {
+                            SoftwareId = 26,
                             SyntaxId = 48
                         },
                         new
@@ -80678,6 +80292,11 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             SoftwareId = 27,
                             SyntaxId = 2
+                        },
+                        new
+                        {
+                            SoftwareId = 27,
+                            SyntaxId = 35
                         },
                         new
                         {
@@ -80703,6 +80322,11 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             SoftwareId = 28,
                             SyntaxId = 22
+                        },
+                        new
+                        {
+                            SoftwareId = 28,
+                            SyntaxId = 35
                         },
                         new
                         {
@@ -80772,7 +80396,17 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             SoftwareId = 31,
+                            SyntaxId = 33
+                        },
+                        new
+                        {
+                            SoftwareId = 31,
                             SyntaxId = 34
+                        },
+                        new
+                        {
+                            SoftwareId = 31,
+                            SyntaxId = 35
                         },
                         new
                         {
@@ -80798,6 +80432,16 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             SoftwareId = 31,
                             SyntaxId = 41
+                        },
+                        new
+                        {
+                            SoftwareId = 31,
+                            SyntaxId = 42
+                        },
+                        new
+                        {
+                            SoftwareId = 31,
+                            SyntaxId = 43
                         },
                         new
                         {
@@ -80897,12 +80541,27 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             SoftwareId = 32,
+                            SyntaxId = 33
+                        },
+                        new
+                        {
+                            SoftwareId = 32,
+                            SyntaxId = 35
+                        },
+                        new
+                        {
+                            SoftwareId = 32,
                             SyntaxId = 39
                         },
                         new
                         {
                             SoftwareId = 32,
                             SyntaxId = 40
+                        },
+                        new
+                        {
+                            SoftwareId = 32,
+                            SyntaxId = 42
                         },
                         new
                         {
@@ -80997,7 +80656,17 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         new
                         {
                             SoftwareId = 39,
+                            SyntaxId = 33
+                        },
+                        new
+                        {
+                            SoftwareId = 39,
                             SyntaxId = 34
+                        },
+                        new
+                        {
+                            SoftwareId = 39,
+                            SyntaxId = 35
                         },
                         new
                         {
@@ -81013,6 +80682,16 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             SoftwareId = 39,
                             SyntaxId = 41
+                        },
+                        new
+                        {
+                            SoftwareId = 39,
+                            SyntaxId = 42
+                        },
+                        new
+                        {
+                            SoftwareId = 39,
+                            SyntaxId = 43
                         },
                         new
                         {
@@ -81068,141 +80747,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             SoftwareId = 43,
                             SyntaxId = 49
-                        },
-                        new
-                        {
-                            SoftwareId = 44,
-                            SyntaxId = 2
-                        },
-                        new
-                        {
-                            SoftwareId = 44,
-                            SyntaxId = 3
-                        },
-                        new
-                        {
-                            SoftwareId = 44,
-                            SyntaxId = 4
-                        },
-                        new
-                        {
-                            SoftwareId = 44,
-                            SyntaxId = 6
-                        },
-                        new
-                        {
-                            SoftwareId = 44,
-                            SyntaxId = 8
-                        },
-                        new
-                        {
-                            SoftwareId = 44,
-                            SyntaxId = 16
-                        },
-                        new
-                        {
-                            SoftwareId = 44,
-                            SyntaxId = 22
-                        },
-                        new
-                        {
-                            SoftwareId = 44,
-                            SyntaxId = 28
-                        },
-                        new
-                        {
-                            SoftwareId = 44,
-                            SyntaxId = 46
-                        },
-                        new
-                        {
-                            SoftwareId = 44,
-                            SyntaxId = 47
-                        },
-                        new
-                        {
-                            SoftwareId = 44,
-                            SyntaxId = 48
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 1
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 2
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 3
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 4
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 6
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 8
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 14
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 16
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 22
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 28
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 36
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 37
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 46
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 47
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 48
-                        },
-                        new
-                        {
-                            SoftwareId = 45,
-                            SyntaxId = 50
                         });
                 });
 
@@ -81400,8 +80944,19 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         },
                         new
                         {
+                            Id = 33,
+                            Name = "IPs (IPv4 + IPv6; no CIDR)"
+                        },
+                        new
+                        {
                             Id = 34,
                             Name = "IPs (IPv4; CIDR only)"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Name = "Hosts (localhost IPv4 + IPv6)",
+                            Url = "https://en.wikipedia.org/wiki/Hosts_(file)"
                         },
                         new
                         {
@@ -81434,6 +80989,16 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                         {
                             Id = 41,
                             Name = "IPs (IPv6 only; CIDR only)"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Name = "IPs (IPv4 + IPv6; some CIDR)"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Name = "IPs (IPv4 + IPv6; CIDR only)"
                         },
                         new
                         {
