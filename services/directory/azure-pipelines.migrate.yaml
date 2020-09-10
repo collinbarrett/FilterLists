@@ -91,8 +91,6 @@ steps:
   - task: Bash@3
     displayName: revert existing PR migration
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
-    env:
-      GITHUBNAME: $(GITHUBNAME)
     inputs:
       targetType: inline
       workingDirectory: services/directory/src
@@ -101,7 +99,7 @@ steps:
         echo "$MIGLIST"
         if [[ $MIGLIST == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
           echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER. Reverting..."
-          REVERTHASH=$(git log -n 1 --author="$GITHUBNAME" --grep="feat(data): migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" --pretty=format:"%H")
+          REVERTHASH=$(git log -n 1 --grep="feat(data): migrate PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER" --pretty=format:"%H")
           git revert --no-edit "$REVERTHASH"
         fi
 
