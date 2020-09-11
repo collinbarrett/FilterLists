@@ -19,6 +19,8 @@ services:
     depends_on:
       - archival-scheduling-db
       - directory-api
+    volumes:
+      - archival-application-insights:/app/application-insights
     environment:
       ApplicationInsights__InstrumentationKey: ${ARCHIVAL_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
       ConnectionStrings__SchedulingConnection: ${ARCHIVAL_REDIS_CONNECTION_STRING}
@@ -40,6 +42,8 @@ services:
       - directory
     depends_on:
       - directory-db
+    volumes:
+      - directory-application-insights:/app/application-insights
     environment:
       ApplicationInsights__InstrumentationKey: ${DIRECTORY_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
       ConnectionStrings__DirectoryConnection: ${DIRECTORY_CONNECTION_STRING}
@@ -62,5 +66,7 @@ networks:
   directory:
 
 volumes:
+  archival-application-insights:
   archival-scheduling-db:
+  directory-application-insights:
   directory-db:
