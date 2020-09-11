@@ -40,8 +40,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj" />
-    <ProjectReference Include="..\..\src\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj" />
+    <ProjectReference Include="..\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj" />
+    <ProjectReference Include="..\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
