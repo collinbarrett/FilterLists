@@ -197,8 +197,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             text: (
               <>
                 <SyntaxTag name={s.name} showLabel={false} />
-                &nbsp;
-                {s.name}&nbsp; (
+                &nbsp;(
                 {
                   visibleLists.filter(
                     (li) => li.syntaxIds && li.syntaxIds.includes(s.id)
@@ -229,11 +228,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           key="Languages"
           dataIndex={nameof<List>("iso6391s")}
           sorter={(a, b) =>
-            languageArraySorter(
-              a.iso6391s,
-              b.iso6391s,
-              languages
-            )
+            languageArraySorter(a.iso6391s, b.iso6391s, languages)
           }
           width={129}
           className={styles.nogrow}
@@ -244,9 +239,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 {l.name}&nbsp; (
                 {
                   visibleLists.filter(
-                    (li) =>
-                      li.iso6391s &&
-                      li.iso6391s.includes(l.iso6391)
+                    (li) => li.iso6391s && li.iso6391s.includes(l.iso6391)
                   ).length
                 }
                 )
@@ -255,9 +248,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             value: l.iso6391.toString(),
           }))}
           onFilter={(value, record) =>
-            record.iso6391s
-              ? record.iso6391s.includes(value as string)
-              : false
+            record.iso6391s ? record.iso6391s.includes(value as string) : false
           }
           render={(languageIds: string[]) =>
             languageIds ? (
