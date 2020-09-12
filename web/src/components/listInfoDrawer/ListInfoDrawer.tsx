@@ -6,6 +6,7 @@ import {
   FileExclamationOutlined,
   FormOutlined,
   GithubOutlined,
+  GlobalOutlined,
   HomeOutlined,
   MailOutlined,
   MessageOutlined,
@@ -119,6 +120,12 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
           text="Home"
           title={`View ${list.name}'s homepage.`}
           icon={<HomeOutlined />}
+        />
+        <LinkButton
+          url={list.onionUrl}
+          text="Onion (Tor)"
+          title={`View ${list.name}'s onion/tor homepage.`}
+          icon={<GlobalOutlined />}
         />
         <LinkButton
           url={list.policyUrl}
