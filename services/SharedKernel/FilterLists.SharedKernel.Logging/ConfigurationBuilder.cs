@@ -1,5 +1,4 @@
 ﻿using Microsoft.ApplicationInsights;
-using Microsoft.ApplicationInsights.Extensibility;
 using Serilog;
 using Serilog.Events;
 
@@ -17,12 +16,9 @@ namespace FilterLists.SharedKernel.Logging
 
         public static LoggerConfiguration WriteToApplicationInsights(
             this LoggerConfiguration loggerConfiguration,
-            TelemetryClient? telemetryClient = default)
+            TelemetryClient telemetryClient)
         {
-            var telemetryConverter = TelemetryConverter.Traces;
-            return telemetryClient != null
-                ? loggerConfiguration.WriteTo.ApplicationInsights(telemetryClient, telemetryConverter)
-                : loggerConfiguration.WriteTo.ApplicationInsights(TelemetryConfiguration.Active, telemetryConverter);
+            return loggerConfiguration.WriteTo.ApplicationInsights(telemetryClient, TelemetryConverter.Traces);
         }
     }
 }
