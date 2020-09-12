@@ -11,8 +11,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public int Id { get; set; }
         public string Name { get; set; } = null!;
         public string? Description { get; set; }
-        public int? LicenseId { get; set; }
-        public License? License { get; set; }
+        public int LicenseId { get; set; }
+        public License License { get; set; } = null!;
         public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; private set; } = new HashSet<FilterListSyntax>();
         public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; private set; } = new HashSet<FilterListLanguage>();
         public IReadOnlyCollection<FilterListTag> FilterListTags { get; private set; } = new HashSet<FilterListTag>();
@@ -41,6 +41,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         {
             _ = builder ?? throw new ArgumentNullException(nameof(builder));
             builder.HasDataJsonFile<FilterList>();
+            builder.Property(fl => fl.LicenseId).HasDefaultValue(5);
         }
     }
 }
