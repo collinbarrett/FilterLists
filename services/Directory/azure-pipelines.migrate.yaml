@@ -15,6 +15,7 @@ pool:
 variables:
   COMPOSE_DOCKER_CLI_BUILD: 1
   DOCKER_BUILDKIT: 1
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
 
 steps:
   - checkout: none
