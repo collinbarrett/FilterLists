@@ -50,7 +50,7 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
     list?.iso6391s.includes(l.iso6391)
   );
   const listTags = props.tags.filter((t) => list?.tagIds.includes(t.id));
-  const listLicense = props.licenses.find((l) => l.id === list?.id);
+  const listLicense = props.licenses.find((l) => l.id === list?.licenseId);
   const listSyntaxes = props.syntaxes.filter((s) =>
     list?.syntaxIds.includes(s.id)
   );
