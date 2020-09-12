@@ -137,7 +137,7 @@ const Api = () => (
   <Tag>
     <a
       href="/api"
-      title="FilterLists API lists endpoint"
+      title="FilterLists API"
       target="_blank"
       rel="noopener noreferrer"
     >
