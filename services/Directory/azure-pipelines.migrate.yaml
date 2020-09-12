@@ -15,6 +15,7 @@ pool:
 variables:
   COMPOSE_DOCKER_CLI_BUILD: 1
   DOCKER_BUILDKIT: 1
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
 
 steps:
   - checkout: none
@@ -93,7 +94,7 @@ steps:
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     inputs:
       targetType: inline
-      workingDirectory: services/Directory/src
+      workingDirectory: services/Directory
       script: |
         MIGLIST=$(dotnet ef migrations list -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api)
         echo "$MIGLIST"
@@ -122,7 +123,7 @@ steps:
     displayName: add migration
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     inputs:
-      workingDirectory: services/Directory/src
+      workingDirectory: services/Directory
       script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api
 
   - task: Bash@3
