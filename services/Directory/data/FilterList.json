@@ -16664,5 +16664,109 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Dummy List to Avoid 'No lists turned on' Warnings"
+  },
+  {
+    "description": "The Adblock Warning Removal List specifically removes obtrusive messages and warnings targeted to users who use an adblocker.",
+    "emailAddress": "easylist@protonmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "id": 2407,
+    "licenseId": 4,
+    "name": "Adblock Warning Removal List - English Only"
+  },
+  {
+    "description": "The Adblock Warning Removal List specifically removes obtrusive messages and warnings targeted to users who use an adblocker.",
+    "emailAddress": "easylist@protonmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "id": 2408,
+    "licenseId": 4,
+    "name": "Adblock Warning Removal List - International + French"
+  },
+  {
+    "description": "The Adblock Warning Removal List specifically removes obtrusive messages and warnings targeted to users who use an adblocker.",
+    "emailAddress": "easylist@protonmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "id": 2409,
+    "licenseId": 4,
+    "name": "Adblock Warning Removal List - Russian Only"
+  },
+  {
+    "description": "Christmas is a sad, sad time of the year, where everyone eat bleached fish, get drunk at company parties, wear ugly T-shirts, invite aggressive relatives, stuff the living room full of candles, listen to Whitney Houston, set up lame dollhouse exhibitions, and watch badly dubbed Eastern Bloc movies. And the snow that is everywhere on many websites during that time isn't helping on anyone's mood either. So here's a list to remove the snow from those websites.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2410,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'Snow marketing' List"
+  },
+  {
+    "emailAddress": "i@pexcn.me"
+    "homeUrl": "https://github.com/pexcn/daily",
+    "id": 2411,
+    "issuesUrl": "https://github.com/pexcn/daily/issues",
+    "licenseId": 4,
+    "name": "pexcn Adlist"
+  },
+  {
+    "emailAddress": "i@pexcn.me",
+    "homeUrl": "https://github.com/pexcn/daily",
+    "id": 2412,
+    "issuesUrl": "https://github.com/pexcn/daily/issues",
+    "licenseId": 4,
+    "name": "pexcn Adlist (dnsmasq)"
+  },
+  {
+    "emailAddress": "i@pexcn.me",
+    "homeUrl": "https://github.com/pexcn/daily",
+    "id": 2413,
+    "issuesUrl": "https://github.com/pexcn/daily/issues",
+    "licenseId": 4,
+    "name": "pexcn GFWlist"
+  },
+  {
+    "emailAddress": "i@pexcn.me",
+    "homeUrl": "https://github.com/pexcn/daily",
+    "id": 2414,
+    "issuesUrl": "https://github.com/pexcn/daily/issues",
+    "licenseId": 4,
+    "name": "pexcn China Whitelist"
+  },
+  {
+    "description": "A list of torrent trackers.",
+    "emailAddress": "i@pexcn.me",
+    "homeUrl": "https://github.com/pexcn/daily",
+    "id": 2415,
+    "issuesUrl": "https://github.com/pexcn/daily/issues",
+    "licenseId": 4,
+    "name": "pexcn Trackerlist"
+  },
+  {
+    "emailAddress": "i@pexcn.me",
+    "homeUrl": "https://github.com/pexcn/daily",
+    "id": 2416,
+    "issuesUrl": "https://github.com/pexcn/daily/issues",
+    "licenseId": 4,
+    "name": "pexcn uBlacklist"
+  },
+  {
+    "description": "Contains all known PR-Chinese IP address ranges.",
+    "emailAddress": "i@pexcn.me",
+    "homeUrl": "https://github.com/pexcn/daily",
+    "id": 2417,
+    "issuesUrl": "https://github.com/pexcn/daily/issues",
+    "licenseId": 4,
+    "name": "Chinaroute (IPv4)"
+  },
+  {
+    "description": "Contains all known PR-Chinese IP address ranges.",
+    "emailAddress": "i@pexcn.me",
+    "homeUrl": "https://github.com/pexcn/daily",
+    "id": 2418,
+    "issuesUrl": "https://github.com/pexcn/daily/issues",
+    "licenseId": 4,
+    "name": "Chinaroute (IPv6)"
   }
 ]
