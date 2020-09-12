@@ -2,7 +2,7 @@ import {
   ApiOutlined,
   DollarOutlined,
   GithubOutlined,
-  GlobalOutlined,
+  IeOutlined,
   TeamOutlined,
   TwitterOutlined,
 } from "@ant-design/icons";
@@ -152,7 +152,7 @@ const Tpl = () => (
       href="/tpl.html"
       title="FilterLists Tracking Protection Lists (TPL) for Internet Explorer"
     >
-      <GlobalOutlined /> TPL (IE)
+      <IeOutlined /> TPL (IE)
     </a>
   </Tag>
 );
