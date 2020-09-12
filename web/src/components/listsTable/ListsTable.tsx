@@ -206,10 +206,12 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 )
               </>
             ),
-            value: s.id.toString(),
+            value: s.id,
           }))}
           onFilter={(value, record) =>
-            record.syntaxIds ? record.syntaxIds.toString() === value : false
+            record.syntaxIds
+              ? record.syntaxIds.includes(value as number)
+              : false
           }
           render={(syntaxIds: number[]) =>
             syntaxIds ? (
