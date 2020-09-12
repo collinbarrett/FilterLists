@@ -50,6 +50,7 @@ namespace FilterLists.Directory.Api
                 o.SwaggerEndpoint("v1/swagger.json", "FilterLists Directory API V1");
                 o.DocumentTitle = "FilterLists Directory API";
                 o.RoutePrefix = string.Empty;
+                o.EnableDeepLinking();
             });
         }
     }
