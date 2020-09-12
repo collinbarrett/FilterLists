@@ -834,7 +834,7 @@
   {
     "filterListId": 269,
     "syntaxId": 3
-  }, 
+  },
   {
     "filterListId": 270,
     "syntaxId": 4
@@ -4908,12 +4908,12 @@
     "syntaxId": 36
   },
   {
-    "filterListId": 1506,
-    "syntaxId": 36
-  },
-  {
     "filterListId": 1505,
     "syntaxId": 54
+  },
+  {
+    "filterListId": 1506,
+    "syntaxId": 36
   },
   {
     "filterListId": 1506,
@@ -7348,20 +7348,20 @@
     "syntaxId": 4
   },
   {
-    "filterListId": 2147,
-    "syntaxId": 4
-  },
-  {
-    "filterListId": 2148,
-    "syntaxId": 4
-  },
-  {
     "filterListId": 2146,
     "syntaxId": 15
   },
   {
     "filterListId": 2147,
+    "syntaxId": 4
+  },
+  {
+    "filterListId": 2147,
     "syntaxId": 15
+  },
+  {
+    "filterListId": 2148,
+    "syntaxId": 4
   },
   {
     "filterListId": 2148,
