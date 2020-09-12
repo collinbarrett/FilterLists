@@ -62,6 +62,7 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
   );
 
   const [originalTitle] = useState<string>(document.title);
+  const listName = list?.name;
   useEffect(() => {
     const updateTitle = () =>
       (document.title = list?.name + " | " + originalTitle);
@@ -69,7 +70,7 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
     return () => {
       document.title = originalTitle;
     };
-  }, [list, originalTitle, list?.name]);
+  }, [list, originalTitle, listName]);
   const viewUrl = list?.viewUrls.find(
     (u) => u.primariness === 1 && u.segmentNumber === 1
   )?.url;
