@@ -15574,5 +15574,77 @@
     "id": 2596,
     "primariness": 2,
     "url": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
+  },
+  {
+    "filterListId": 2407,
+    "id": 2597,
+    "primariness": 1,
+    "url": "https://hg.adblockplus.org/antiadblockfilters/raw-file/tip/antiadblockfilters/antiadblock_english.txt"
+  },
+  {
+    "filterListId": 2408,
+    "id": 2598,
+    "primariness": 1,
+    "url": "https://hg.adblockplus.org/antiadblockfilters/raw-file/tip/antiadblockfilters/antiadblock_french.txt"
+  },
+  {
+    "filterListId": 2409,
+    "id": 2599,
+    "primariness": 1,
+    "url": "https://hg.adblockplus.org/antiadblockfilters/raw-file/tip/antiadblockfilters/antiadblock_russian.txt"
+  },
+  {
+    "filterListId": 2410,
+    "id": 2600,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiSnowMarketingList.txt"
+  },
+  {
+    "filterListId": 2411,
+    "id": 2601,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/pexcn/daily/gh-pages/adlist/adlist.txt"
+  },
+  {
+    "filterListId": 2412,
+    "id": 2602,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/pexcn/daily/gh-pages/adblock/adblock.conf"
+  },
+  {
+    "filterListId": 2413,
+    "id": 2603,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/pexcn/daily/gh-pages/shadowrocket/gfwlist.conf"
+  },
+  {
+    "filterListId": 2414,
+    "id": 2604,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/pexcn/daily/gh-pages/shadowrocket/whitelist.conf"
+  },
+  {
+    "filterListId": 2415,
+    "id": 2605,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/pexcn/daily/gh-pages/trackerlist/trackerlist.txt"
+  },
+  {
+    "filterListId": 2416,
+    "id": 2606,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/pexcn/daily/gh-pages/ublacklist/ublacklist.txt"
+  },
+  {
+    "filterListId": 2417,
+    "id": 2607,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/pexcn/daily/gh-pages/chnroute/chnroute.txt"
+  },
+  {
+    "filterListId": 2418,
+    "id": 2608,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/pexcn/daily/gh-pages/chnroute/chnroute-v6.txt"
   }
 ]
