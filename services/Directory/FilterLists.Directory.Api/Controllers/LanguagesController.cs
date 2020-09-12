@@ -1,4 +1,6 @@
-﻿using System.Threading;
+﻿using System.Collections.Generic;
+using System.Net;
+using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Directory.Application.Queries;
 using MediatR;
@@ -18,6 +20,7 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<GetLanguages.LanguageViewModel>), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> Get(CancellationToken cancellationToken)
         {
             return Ok(await _mediator.Send(new GetLanguages.Query(), cancellationToken));

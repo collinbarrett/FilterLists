@@ -21,7 +21,7 @@ namespace FilterLists.Directory.Api
             services.AddRouting(o => o.LowercaseUrls = true);
             services.AddControllers()
                 .AddJsonOptions(o => o.JsonSerializerOptions.IgnoreNullValues = true);
-            services.AddSwaggerGen();
+            services.AddSwaggerGen(o => o.CustomSchemaIds(type => type.ToString()));
             services.AddApplicationServices(Configuration);
         }
 
