@@ -7,7 +7,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class FilterList
     {
-        // TODO: use private setters on all entity props after System.Text.Json supports seeding in net5.0
+        // TODO: use private setters on all entity/vm props after System.Text.Json support
         public int Id { get; set; }
         public string Name { get; set; } = null!;
         public string? Description { get; set; }
