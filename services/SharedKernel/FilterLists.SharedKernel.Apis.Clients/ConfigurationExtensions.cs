@@ -9,7 +9,7 @@ namespace FilterLists.SharedKernel.Apis.Clients
         public static void AddApiClients(this IServiceCollection services)
         {
             services.AddRefitClient<IDirectoryApi>()
-                .ConfigureHttpClient(c => c.BaseAddress = new Uri("http://directory-api/api"));
+                .ConfigureHttpClient(c => c.BaseAddress = new Uri("http://directory-api"));
         }
     }
 }
