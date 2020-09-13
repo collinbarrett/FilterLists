@@ -1,5 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using RestSharp;
+﻿using FilterLists.SharedKernel.Apis.Clients.Directory;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace FilterLists.SharedKernel.Apis.Clients
 {
@@ -7,7 +7,7 @@ namespace FilterLists.SharedKernel.Apis.Clients
     {
         public static void AddApiClients(this IServiceCollection services)
         {
-            services.AddTransient<IRestClient, RestClient>();
+            services.AddHttpClient<IDirectoryApiClient, DirectoryApiApiClient>();
         }
     }
 }
