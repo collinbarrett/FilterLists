@@ -25,7 +25,9 @@ namespace FilterLists.Archival.Api
         {
             app.UseApplication();
             if (env.IsDevelopment())
+            {
                 app.UseDeveloperExceptionPage();
+            }
         }
     }
 }

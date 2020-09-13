@@ -30,7 +30,10 @@ namespace FilterLists.Directory.Api
         {
             app.UseApplication();
             if (env.IsDevelopment())
+            {
                 app.UseDeveloperExceptionPage();
+            }
+
             app.UseRouting();
             app.UseEndpoints(e => e.MapControllers());
             app.UseSwagger();
