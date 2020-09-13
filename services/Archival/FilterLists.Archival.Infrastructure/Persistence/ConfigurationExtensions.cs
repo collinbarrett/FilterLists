@@ -16,7 +16,9 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                 configuration.GetSection(GitOptions.Key).Bind(gitOptions);
 
                 if (!Repository.IsValid(gitOptions.RepositoryDirectory))
+                {
                     Repository.Init(gitOptions.RepositoryDirectory);
+                }
 
                 return new Repository(gitOptions.RepositoryDirectory);
             });

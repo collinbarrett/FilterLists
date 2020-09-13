@@ -54,8 +54,13 @@ namespace FilterLists.Archival.Infrastructure.Persistence
         public void Dispose()
         {
             foreach (var file in _filePaths)
+            {
                 if (File.Exists(file))
+                {
                     File.Delete(file);
+                }
+            }
+
             _repository.CheckoutPaths("HEAD", _filePaths);
         }
     }

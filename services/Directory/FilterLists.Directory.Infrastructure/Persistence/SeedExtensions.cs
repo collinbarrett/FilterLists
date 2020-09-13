@@ -30,13 +30,14 @@ namespace FilterLists.Directory.Infrastructure.Persistence
             _ = entityTypeBuilder ?? throw new ArgumentNullException(nameof(entityTypeBuilder));
 
             var path = Path.Combine("../data", $"{typeof(TEntity).Name}.json");
-            if (!File.Exists(path)) return;
+            if (!File.Exists(path))
+            {
+                return;
+            }
 
             var entitiesJson = File.ReadAllText(path);
-            var entities = JsonSerializer.Deserialize<IEnumerable<TEntity>>(entitiesJson, new JsonSerializerOptions
-            {
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-            });
+            var entities = JsonSerializer.Deserialize<IEnumerable<TEntity>>(entitiesJson,
+                new JsonSerializerOptions {PropertyNamingPolicy = JsonNamingPolicy.CamelCase});
 
             entityTypeBuilder.HasData((IEnumerable<object>)entities);
         }

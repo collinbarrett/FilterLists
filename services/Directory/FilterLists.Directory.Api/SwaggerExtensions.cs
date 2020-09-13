@@ -18,11 +18,7 @@ namespace FilterLists.Directory.Api
                         "FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.",
                     Version = "v1",
                     //TermsOfService = "",
-                    Contact = new OpenApiContact
-                    {
-                        Name = "FilterLists",
-                        Url = new Uri("https://filterlists.com")
-                    },
+                    Contact = new OpenApiContact {Name = "FilterLists", Url = new Uri("https://filterlists.com")},
                     License = new OpenApiLicense
                     {
                         Name = "MIT License",

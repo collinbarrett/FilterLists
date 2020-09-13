@@ -25,7 +25,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context
             throw new InvalidOperationException("This context is read-only.");
         }
 
-        public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess,
+        public override Task<int> SaveChangesAsync(
+            bool acceptAllChangesOnSuccess,
             CancellationToken cancellationToken = default)
         {
             throw new InvalidOperationException("This context is read-only.");
