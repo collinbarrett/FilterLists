@@ -26,9 +26,9 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             string filePath,
             CancellationToken cancellationToken = default)
         {
+            _filePaths.Add(filePath);
             await using var output = File.OpenWrite(filePath);
             await fileContents.CopyToAsync(output, cancellationToken);
-            _filePaths.Add(filePath);
         }
 
         public void Commit()
