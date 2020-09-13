@@ -20,7 +20,7 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(IEnumerable<GetMaintainers.MaintainerViewModel>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(IEnumerable<GetMaintainers.MaintainerVm>), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> Get(CancellationToken cancellationToken)
         {
             return Ok(await _mediator.Send(new GetMaintainers.Query(), cancellationToken));

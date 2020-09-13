@@ -14,11 +14,11 @@ namespace FilterLists.Directory.Application.Queries
 {
     public static class GetSoftware
     {
-        public class Query : IRequest<IEnumerable<SoftwareViewModel>>
+        public class Query : IRequest<IEnumerable<SoftwareVm>>
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<SoftwareViewModel>>
+        public class Handler : IRequestHandler<Query, IEnumerable<SoftwareVm>>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -29,29 +29,29 @@ namespace FilterLists.Directory.Application.Queries
                 _mapper = mapper;
             }
 
-            public async Task<IEnumerable<SoftwareViewModel>> Handle(
+            public async Task<IEnumerable<SoftwareVm>> Handle(
                 Query request,
                 CancellationToken cancellationToken)
             {
                 return await _context.Software
                     .OrderBy(s => s.Id)
-                    .ProjectTo<SoftwareViewModel>(_mapper.ConfigurationProvider)
+                    .ProjectTo<SoftwareVm>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
         }
 
-        public class SoftwareViewModelProfile : Profile
+        public class SoftwareVmProfile : Profile
         {
-            public SoftwareViewModelProfile()
+            public SoftwareVmProfile()
             {
-                CreateMap<Software, SoftwareViewModel>()
+                CreateMap<Software, SoftwareVm>()
                     .ForMember(s => s.SyntaxIds,
                         o => o.MapFrom(s =>
                             s.SoftwareSyntaxes.Select(ss => ss.SyntaxId).OrderBy(sid => sid)));
             }
         }
 
-        public class SoftwareViewModel
+        public class SoftwareVm
         {
             public int Id { get; private set; }
             public string Name { get; private set; } = null!;

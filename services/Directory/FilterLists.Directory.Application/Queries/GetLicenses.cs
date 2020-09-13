@@ -14,11 +14,11 @@ namespace FilterLists.Directory.Application.Queries
 {
     public static class GetLicenses
     {
-        public class Query : IRequest<IEnumerable<LicenseViewModel>>
+        public class Query : IRequest<IEnumerable<LicenseVm>>
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<LicenseViewModel>>
+        public class Handler : IRequestHandler<Query, IEnumerable<LicenseVm>>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -29,29 +29,29 @@ namespace FilterLists.Directory.Application.Queries
                 _mapper = mapper;
             }
 
-            public async Task<IEnumerable<LicenseViewModel>> Handle(
+            public async Task<IEnumerable<LicenseVm>> Handle(
                 Query request,
                 CancellationToken cancellationToken)
             {
                 return await _context.Licenses
                     .OrderBy(l => l.Id)
-                    .ProjectTo<LicenseViewModel>(_mapper.ConfigurationProvider)
+                    .ProjectTo<LicenseVm>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
         }
 
-        public class LicenseViewModelProfile : Profile
+        public class LicenseVmProfile : Profile
         {
-            public LicenseViewModelProfile()
+            public LicenseVmProfile()
             {
-                CreateMap<License, LicenseViewModel>()
+                CreateMap<License, LicenseVm>()
                     .ForMember(l => l.FilterListIds,
                         o => o.MapFrom(l =>
                             l.FilterLists.Select(fl => fl.Id).OrderBy(flid => flid)));
             }
         }
 
-        public class LicenseViewModel
+        public class LicenseVm
         {
             public int Id { get; private set; }
             public string Name { get; private set; } = null!;

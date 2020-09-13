@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
@@ -9,7 +9,7 @@
   <PropertyGroup>
     <Authors>Collin M. Barrett</Authors>
     <Company>FilterLists</Company>
-    <Product>FilterLists Directory</Product>
+    <Product>FilterLists Shared Kernel API Clients</Product>
     <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
     <Copyright>Copyright (c) 2020 Collin M. Barrett</Copyright>
     <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
@@ -17,11 +17,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <NoWarn>1701;1702;CA1812;CA2007</NoWarn>
+    <NoWarn>1701;1702;CA2007</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <NoWarn>CA1812;CA2007</NoWarn>
+    <NoWarn>CA2007</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,14 +29,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.8" />
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.8" />
+    <PackageReference Include="RestSharp" Version="106.11.4" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SharedKernel\FilterLists.SharedKernel.Apis.Contracts\FilterLists.SharedKernel.Apis.Contracts.csproj" />
-    <ProjectReference Include="..\..\SharedKernel\FilterLists.SharedKernel.Logging\FilterLists.SharedKernel.Logging.csproj" />
-    <ProjectReference Include="..\FilterLists.Directory.Domain\FilterLists.Directory.Domain.csproj" />
+    <ProjectReference Include="..\FilterLists.SharedKernel.Apis.Contracts\FilterLists.SharedKernel.Apis.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

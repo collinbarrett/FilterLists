@@ -14,11 +14,11 @@ namespace FilterLists.Directory.Application.Queries
 {
     public static class GetSyntaxes
     {
-        public class Query : IRequest<IEnumerable<SyntaxViewModel>>
+        public class Query : IRequest<IEnumerable<SyntaxVm>>
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<SyntaxViewModel>>
+        public class Handler : IRequestHandler<Query, IEnumerable<SyntaxVm>>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -29,22 +29,22 @@ namespace FilterLists.Directory.Application.Queries
                 _mapper = mapper;
             }
 
-            public async Task<IEnumerable<SyntaxViewModel>> Handle(
+            public async Task<IEnumerable<SyntaxVm>> Handle(
                 Query request,
                 CancellationToken cancellationToken)
             {
                 return await _context.Syntaxes
                     .OrderBy(s => s.Id)
-                    .ProjectTo<SyntaxViewModel>(_mapper.ConfigurationProvider)
+                    .ProjectTo<SyntaxVm>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
         }
 
-        public class SyntaxViewModelProfile : Profile
+        public class SyntaxVmProfile : Profile
         {
-            public SyntaxViewModelProfile()
+            public SyntaxVmProfile()
             {
-                CreateMap<Syntax, SyntaxViewModel>()
+                CreateMap<Syntax, SyntaxVm>()
                     .ForMember(s => s.FilterListIds,
                         o => o.MapFrom(s =>
                             s.FilterListSyntaxes.Select(sls => sls.FilterListId).OrderBy(flid => flid)))
@@ -54,7 +54,7 @@ namespace FilterLists.Directory.Application.Queries
             }
         }
 
-        public class SyntaxViewModel
+        public class SyntaxVm
         {
             public int Id { get; private set; }
             public string Name { get; private set; } = null!;

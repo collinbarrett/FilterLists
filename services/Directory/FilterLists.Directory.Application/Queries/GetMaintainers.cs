@@ -14,11 +14,11 @@ namespace FilterLists.Directory.Application.Queries
 {
     public static class GetMaintainers
     {
-        public class Query : IRequest<IEnumerable<MaintainerViewModel>>
+        public class Query : IRequest<IEnumerable<MaintainerVm>>
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<MaintainerViewModel>>
+        public class Handler : IRequestHandler<Query, IEnumerable<MaintainerVm>>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -29,29 +29,29 @@ namespace FilterLists.Directory.Application.Queries
                 _mapper = mapper;
             }
 
-            public async Task<IEnumerable<MaintainerViewModel>> Handle(
+            public async Task<IEnumerable<MaintainerVm>> Handle(
                 Query request,
                 CancellationToken cancellationToken)
             {
                 return await _context.Maintainers
                     .OrderBy(m => m.Id)
-                    .ProjectTo<MaintainerViewModel>(_mapper.ConfigurationProvider)
+                    .ProjectTo<MaintainerVm>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
         }
 
-        public class MaintainerViewModelProfile : Profile
+        public class MaintainerVmProfile : Profile
         {
-            public MaintainerViewModelProfile()
+            public MaintainerVmProfile()
             {
-                CreateMap<Maintainer, MaintainerViewModel>()
+                CreateMap<Maintainer, MaintainerVm>()
                     .ForMember(m => m.FilterListIds,
                         o => o.MapFrom(m =>
                             m.FilterListMaintainers.Select(flm => flm.FilterListId).OrderBy(flid => flid)));
             }
         }
 
-        public class MaintainerViewModel
+        public class MaintainerVm
         {
             public int Id { get; private set; }
             public string Name { get; private set; } = null!;

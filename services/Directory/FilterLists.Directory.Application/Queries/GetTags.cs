@@ -13,11 +13,11 @@ namespace FilterLists.Directory.Application.Queries
 {
     public static class GetTags
     {
-        public class Query : IRequest<IEnumerable<TagViewModel>>
+        public class Query : IRequest<IEnumerable<TagVm>>
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<TagViewModel>>
+        public class Handler : IRequestHandler<Query, IEnumerable<TagVm>>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -28,29 +28,29 @@ namespace FilterLists.Directory.Application.Queries
                 _mapper = mapper;
             }
 
-            public async Task<IEnumerable<TagViewModel>> Handle(
+            public async Task<IEnumerable<TagVm>> Handle(
                 Query request,
                 CancellationToken cancellationToken)
             {
                 return await _context.Tags
                     .OrderBy(t => t.Id)
-                    .ProjectTo<TagViewModel>(_mapper.ConfigurationProvider)
+                    .ProjectTo<TagVm>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
         }
 
-        public class TagViewModelProfile : Profile
+        public class TagVmProfile : Profile
         {
-            public TagViewModelProfile()
+            public TagVmProfile()
             {
-                CreateMap<Tag, TagViewModel>()
+                CreateMap<Tag, TagVm>()
                     .ForMember(t => t.FilterListIds,
                         o => o.MapFrom(t =>
                             t.FilterListTags.Select(flt => flt.FilterListId).OrderBy(flid => flid)));
             }
         }
 
-        public class TagViewModel
+        public class TagVm
         {
             public int Id { get; private set; }
             public string Name { get; private set; } = null!;

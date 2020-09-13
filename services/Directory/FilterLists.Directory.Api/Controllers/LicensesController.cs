@@ -20,7 +20,7 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(IEnumerable<GetLicenses.LicenseViewModel>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(IEnumerable<GetLicenses.LicenseVm>), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> Get(CancellationToken cancellationToken)
         {
             return Ok(await _mediator.Send(new GetLicenses.Query(), cancellationToken));

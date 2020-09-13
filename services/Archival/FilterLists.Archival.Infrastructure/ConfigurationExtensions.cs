@@ -1,6 +1,7 @@
 ﻿using System;
 using FilterLists.Archival.Infrastructure.Persistence;
 using FilterLists.Archival.Infrastructure.Scheduling;
+using FilterLists.SharedKernel.Apis.Clients;
 using FilterLists.SharedKernel.Logging;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
@@ -21,8 +22,9 @@ namespace FilterLists.Archival.Infrastructure
             _ = configuration ?? throw new ArgumentNullException(nameof(configuration));
 
             services.AddSharedKernelLogging();
-            services.AddPersistenceServices(configuration);
             services.AddSchedulingServices(configuration);
+            services.AddApiClients();
+            services.AddPersistenceServices(configuration);
         }
 
         public static void UseInfrastructure(this IApplicationBuilder app)

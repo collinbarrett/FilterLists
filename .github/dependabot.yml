@@ -1,6 +1,18 @@
 version: 2
 updates:
 - package-ecosystem: nuget
+  directory: "/services/SharedKernel/FilterLists.SharedKernel.Apis.Clients"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: nuget
+  directory: "/services/SharedKernel/FilterLists.SharedKernel.Apis.Contracts"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 99
+- package-ecosystem: nuget
   directory: "/services/SharedKernel/FilterLists.SharedKernel.Logging"
   schedule:
     interval: daily

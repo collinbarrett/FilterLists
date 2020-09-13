@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
+using FilterLists.SharedKernel.Apis.Contracts.Directory;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,7 +13,7 @@ namespace FilterLists.Directory.Application.Queries
 {
     public static class GetListDetails
     {
-        public class Query : IRequest<ListViewModel>
+        public class Query : IRequest<ListDetailsVm>
         {
             public Query(int id)
             {
@@ -24,7 +23,7 @@ namespace FilterLists.Directory.Application.Queries
             public int Id { get; }
         }
 
-        public class Handler : IRequestHandler<Query, ListViewModel>
+        public class Handler : IRequestHandler<Query, ListDetailsVm>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -35,21 +34,21 @@ namespace FilterLists.Directory.Application.Queries
                 _mapper = mapper;
             }
 
-            public async Task<ListViewModel> Handle(
+            public async Task<ListDetailsVm> Handle(
                 Query request,
                 CancellationToken cancellationToken)
             {
                 return await _context.FilterLists
-                    .ProjectTo<ListViewModel>(_mapper.ConfigurationProvider)
+                    .ProjectTo<ListDetailsVm>(_mapper.ConfigurationProvider)
                     .SingleOrDefaultAsync(fl => fl.Id == request.Id, cancellationToken);
             }
         }
 
-        public class ListViewModelProfile : Profile
+        public class ListDetailsVmProfile : Profile
         {
-            public ListViewModelProfile()
+            public ListDetailsVmProfile()
             {
-                CreateMap<FilterList, ListViewModel>()
+                CreateMap<FilterList, ListDetailsVm>()
                     .ForMember(fl => fl.SyntaxIds,
                         o => o.MapFrom(fl =>
                             fl.FilterListSyntaxes.Select(fls => fls.SyntaxId).OrderBy(sid => sid)))
@@ -86,47 +85,12 @@ namespace FilterLists.Directory.Application.Queries
             }
         }
 
-        public class ViewUrlViewModelProfile : Profile
+        public class ListDetailsViewUrlVmProfile : Profile
         {
-            public ViewUrlViewModelProfile()
+            public ListDetailsViewUrlVmProfile()
             {
-                CreateMap<FilterListViewUrl, ViewUrlViewModel>();
+                CreateMap<FilterListViewUrl, ListDetailsViewUrlVm>();
             }
-        }
-
-        public class ListViewModel
-        {
-            public int Id { get; private set; }
-            public string Name { get; private set; } = null!;
-            public string? Description { get; private set; }
-            public int? LicenseId { get; private set; }
-            public IEnumerable<int>? SyntaxIds { get; private set; }
-            public IEnumerable<string>? Iso6391s { get; private set; }
-            public IEnumerable<int>? TagIds { get; private set; }
-            public IEnumerable<ViewUrlViewModel>? ViewUrls { get; private set; }
-            public Uri? HomeUrl { get; private set; }
-            public Uri? OnionUrl { get; private set; }
-            public Uri? PolicyUrl { get; private set; }
-            public Uri? SubmissionUrl { get; private set; }
-            public Uri? IssuesUrl { get; private set; }
-            public Uri? ForumUrl { get; private set; }
-            public Uri? ChatUrl { get; private set; }
-            public string? EmailAddress { get; private set; }
-            public Uri? DonateUrl { get; private set; }
-            public IEnumerable<int>? MaintainerIds { get; private set; }
-            public IEnumerable<int>? UpstreamFilterListIds { get; private set; }
-            public IEnumerable<int>? ForkFilterListIds { get; private set; }
-            public IEnumerable<int>? IncludedInFilterListIds { get; private set; }
-            public IEnumerable<int>? IncludesFilterListIds { get; private set; }
-            public IEnumerable<int>? DependencyFilterListIds { get; private set; }
-            public IEnumerable<int>? DependentFilterListIds { get; private set; }
-        }
-
-        public class ViewUrlViewModel
-        {
-            public short SegmentNumber { get; private set; }
-            public short Primariness { get; private set; }
-            public Uri Url { get; private set; } = null!;
         }
     }
 }

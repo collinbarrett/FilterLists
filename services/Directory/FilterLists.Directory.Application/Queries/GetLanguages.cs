@@ -13,11 +13,11 @@ namespace FilterLists.Directory.Application.Queries
 {
     public static class GetLanguages
     {
-        public class Query : IRequest<IEnumerable<LanguageViewModel>>
+        public class Query : IRequest<IEnumerable<LanguageVm>>
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<LanguageViewModel>>
+        public class Handler : IRequestHandler<Query, IEnumerable<LanguageVm>>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -28,30 +28,30 @@ namespace FilterLists.Directory.Application.Queries
                 _mapper = mapper;
             }
 
-            public async Task<IEnumerable<LanguageViewModel>> Handle(
+            public async Task<IEnumerable<LanguageVm>> Handle(
                 Query request,
                 CancellationToken cancellationToken)
             {
                 return await _context.Languages
                     .Where(l => l.FilterListLanguages.Any())
                     .OrderBy(l => l.Iso6391)
-                    .ProjectTo<LanguageViewModel>(_mapper.ConfigurationProvider)
+                    .ProjectTo<LanguageVm>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
         }
 
-        public class LicenseViewModelProfile : Profile
+        public class LanguageVmProfile : Profile
         {
-            public LicenseViewModelProfile()
+            public LanguageVmProfile()
             {
-                CreateMap<Language, LanguageViewModel>()
+                CreateMap<Language, LanguageVm>()
                     .ForMember(l => l.FilterListIds,
                         o => o.MapFrom(l =>
                             l.FilterListLanguages.Select(fll => fll.FilterListId).OrderBy(flid => flid)));
             }
         }
 
-        public class LanguageViewModel
+        public class LanguageVm
         {
             public string Iso6391 { get; private set; } = null!;
             public string Name { get; private set; } = null!;

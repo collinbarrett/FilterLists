@@ -13,11 +13,11 @@ namespace FilterLists.Directory.Application.Queries
 {
     public static class GetLists
     {
-        public class Query : IRequest<IEnumerable<ListViewModel>>
+        public class Query : IRequest<IEnumerable<ListVm>>
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<ListViewModel>>
+        public class Handler : IRequestHandler<Query, IEnumerable<ListVm>>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -28,22 +28,22 @@ namespace FilterLists.Directory.Application.Queries
                 _mapper = mapper;
             }
 
-            public async Task<IEnumerable<ListViewModel>> Handle(
+            public async Task<IEnumerable<ListVm>> Handle(
                 Query request,
                 CancellationToken cancellationToken)
             {
                 return await _context.FilterLists
                     .OrderBy(fl => fl.Id)
-                    .ProjectTo<ListViewModel>(_mapper.ConfigurationProvider)
+                    .ProjectTo<ListVm>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
             }
         }
 
-        public class ListViewModelProfile : Profile
+        public class ListVmProfile : Profile
         {
-            public ListViewModelProfile()
+            public ListVmProfile()
             {
-                CreateMap<FilterList, ListViewModel>()
+                CreateMap<FilterList, ListVm>()
                     .ForMember(fl => fl.SyntaxIds,
                         o => o.MapFrom(fl =>
                             fl.FilterListSyntaxes.Select(fls => fls.SyntaxId).OrderBy(sid => sid)))
@@ -59,7 +59,7 @@ namespace FilterLists.Directory.Application.Queries
             }
         }
 
-        public class ListViewModel
+        public class ListVm
         {
             public int Id { get; private set; }
             public string Name { get; private set; } = null!;

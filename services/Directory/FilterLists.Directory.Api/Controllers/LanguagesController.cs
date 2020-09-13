@@ -20,7 +20,7 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(IEnumerable<GetLanguages.LanguageViewModel>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(IEnumerable<GetLanguages.LanguageVm>), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> Get(CancellationToken cancellationToken)
         {
             return Ok(await _mediator.Send(new GetLanguages.Query(), cancellationToken));

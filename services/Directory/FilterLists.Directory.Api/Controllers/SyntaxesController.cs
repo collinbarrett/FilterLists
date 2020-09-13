@@ -20,7 +20,7 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(IEnumerable<GetSyntaxes.SyntaxViewModel>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(IEnumerable<GetSyntaxes.SyntaxVm>), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> Get(CancellationToken cancellationToken)
         {
             return Ok(await _mediator.Send(new GetSyntaxes.Query(), cancellationToken));
