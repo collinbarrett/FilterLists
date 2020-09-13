@@ -6,7 +6,7 @@ using Refit;
 
 namespace FilterLists.SharedKernel.Apis.Clients
 {
-    public interface IDirectoryApiClient
+    public interface IDirectoryApi
     {
         [Get("/lists")]
         Task<IEnumerable<ListVm>> GetListsAsync(CancellationToken cancellationToken = default);
