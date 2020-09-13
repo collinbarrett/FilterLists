@@ -1,5 +1,6 @@
-﻿using FilterLists.SharedKernel.Apis.Clients.Directory;
+﻿using System;
 using Microsoft.Extensions.DependencyInjection;
+using Refit;
 
 namespace FilterLists.SharedKernel.Apis.Clients
 {
@@ -7,7 +8,8 @@ namespace FilterLists.SharedKernel.Apis.Clients
     {
         public static void AddApiClients(this IServiceCollection services)
         {
-            services.AddHttpClient<IDirectoryApiClient, DirectoryApiApiClient>();
+            services.AddRefitClient<IDirectoryApiClient>()
+                .ConfigureHttpClient(c => c.BaseAddress = new Uri("http://directory-api/api"));
         }
     }
 }
