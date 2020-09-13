@@ -3,15 +3,17 @@ using System;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    partial class QueryDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200912205118_1966")]
+    partial class _1966
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -77284,102 +77286,6 @@ Allow MAL-Sync Extension’s episode release check on Chrome",
                             Primariness = (short)2,
                             SegmentNumber = (short)0,
                             Url = "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt"
-                        },
-                        new
-                        {
-                            Id = 2597,
-                            FilterListId = 2407,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://hg.adblockplus.org/antiadblockfilters/raw-file/tip/antiadblockfilters/antiadblock_english.txt"
-                        },
-                        new
-                        {
-                            Id = 2598,
-                            FilterListId = 2408,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://hg.adblockplus.org/antiadblockfilters/raw-file/tip/antiadblockfilters/antiadblock_french.txt"
-                        },
-                        new
-                        {
-                            Id = 2599,
-                            FilterListId = 2409,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://hg.adblockplus.org/antiadblockfilters/raw-file/tip/antiadblockfilters/antiadblock_russian.txt"
-                        },
-                        new
-                        {
-                            Id = 2600,
-                            FilterListId = 2410,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiSnowMarketingList.txt"
-                        },
-                        new
-                        {
-                            Id = 2601,
-                            FilterListId = 2411,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/pexcn/daily/gh-pages/adlist/adlist.txt"
-                        },
-                        new
-                        {
-                            Id = 2602,
-                            FilterListId = 2412,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/pexcn/daily/gh-pages/adblock/adblock.conf"
-                        },
-                        new
-                        {
-                            Id = 2603,
-                            FilterListId = 2413,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/pexcn/daily/gh-pages/shadowrocket/gfwlist.conf"
-                        },
-                        new
-                        {
-                            Id = 2604,
-                            FilterListId = 2414,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/pexcn/daily/gh-pages/shadowrocket/whitelist.conf"
-                        },
-                        new
-                        {
-                            Id = 2605,
-                            FilterListId = 2415,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/pexcn/daily/gh-pages/trackerlist/trackerlist.txt"
-                        },
-                        new
-                        {
-                            Id = 2606,
-                            FilterListId = 2416,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/pexcn/daily/gh-pages/ublacklist/ublacklist.txt"
-                        },
-                        new
-                        {
-                            Id = 2607,
-                            FilterListId = 2417,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/pexcn/daily/gh-pages/chnroute/chnroute.txt"
-                        },
-                        new
-                        {
-                            Id = 2608,
-                            FilterListId = 2418,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/pexcn/daily/gh-pages/chnroute/chnroute-v6.txt"
                         });
                 });
 

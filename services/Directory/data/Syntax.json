@@ -34,7 +34,7 @@
   },
   {
     "id": 9,
-    "name": "IPs (IPv4; no CIDR)"
+    "name": "IPs (IPv4)"
   },
   {
     "id": 10,
@@ -62,7 +62,7 @@
   },
   {
     "id": 15,
-    "name": "IPs (Start-end-range only)"
+    "name": "IPs (Start-end-range)"
   },
   {
     "id": 16,
@@ -135,12 +135,8 @@
     "name": "URLRedirector"
   },
   {
-    "id": 32,
-    "name": "IPs (IPv4; some CIDR)"
-  },
-  {
     "id": 34,
-    "name": "IPs (IPv4; CIDR only)"
+    "name": "CIDRs (IPv4)"
   },
   {
     "id": 36,
@@ -158,23 +154,15 @@
   },
   {
     "id": 39,
-    "name": "IPs (IPv6 only; no CIDR)"
-  },
-  {
-    "id": 40,
-    "name": "IPs (IPv6 only; some CIDR)"
+    "name": "IPs (IPv6)"
   },
   {
     "id": 41,
-    "name": "IPs (IPv6 only; CIDR only)"
+    "name": "CIDRs (IPv6)"
   },
   {
     "id": 44,
     "name": "PowerShell PKG file"
-  },
-  {
-    "id": 45,
-    "name": "IPs (IPv4; some start-end-range)"
   },
   {
     "id": 46,
@@ -209,5 +197,10 @@
     "id": 53,
     "name": "uBO lined dynamic rules w/ noop",
     "url": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide"
+  },
+  {
+    "id": 54,
+    "name": "Hosts (0)",
+    "url": "https://en.wikipedia.org/wiki/Hosts_(file)"
   }
 ]
