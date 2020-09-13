@@ -12,7 +12,7 @@ pool:
 
 steps:
   - checkout: self
-    fetchDepth: 1
+    fetchDepth: 100
 
   - task: CopyFiles@2
     displayName: stage files
