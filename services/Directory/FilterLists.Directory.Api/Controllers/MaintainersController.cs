@@ -5,25 +5,27 @@ using System.Threading.Tasks;
 using FilterLists.Directory.Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Directory.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class MaintainersController : ControllerBase
+    public class MaintainersController : BaseController
     {
         private readonly IMediator _mediator;
 
-        public MaintainersController(IMediator mediator)
+        public MaintainersController(IMemoryCache cache, IMediator mediator) : base(cache)
         {
             _mediator = mediator;
         }
 
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<GetMaintainers.MaintainerVm>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
         public async Task<IActionResult> Get(CancellationToken cancellationToken)
         {
-            return Ok(await _mediator.Send(new GetMaintainers.Query(), cancellationToken));
+            return await CacheGetOrCreateAsync(() => _mediator.Send(new GetMaintainers.Query(), cancellationToken));
         }
     }
 }

@@ -18,6 +18,7 @@ namespace FilterLists.Directory.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMemoryCache();
             services.AddRouting(o => o.LowercaseUrls = true);
             services.AddControllers()
                 .AddJsonOptions(o => o.JsonSerializerOptions.IgnoreNullValues = true);
