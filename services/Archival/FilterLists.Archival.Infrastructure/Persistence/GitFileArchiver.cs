@@ -5,6 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Archival.Infrastructure.Options;
 using LibGit2Sharp;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
 namespace FilterLists.Archival.Infrastructure.Persistence
@@ -12,11 +13,16 @@ namespace FilterLists.Archival.Infrastructure.Persistence
     internal class GitFileArchiver : IArchiveFiles
     {
         private readonly IList<string> _filePaths = new List<string>();
+        private readonly ILogger<GitFileArchiver> _logger;
         private readonly GitOptions _options;
         private readonly IRepository _repository;
 
-        public GitFileArchiver(IOptions<GitOptions> gitOptions, IRepository gitRepository)
+        public GitFileArchiver(
+            ILogger<GitFileArchiver> logger,
+            IOptions<GitOptions> gitOptions,
+            IRepository gitRepository)
         {
+            _logger = logger;
             _options = gitOptions.Value;
             _repository = gitRepository;
         }
@@ -26,9 +32,13 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             string filePath,
             CancellationToken cancellationToken = default)
         {
+            _logger.LogInformation($"Archiving {filePath}");
+
             _filePaths.Add(filePath);
             await using var output = File.OpenWrite(filePath);
             await fileContents.CopyToAsync(output, cancellationToken);
+
+            _logger.LogInformation($"Archived {filePath}");
         }
 
         public void Commit()
@@ -37,6 +47,8 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             var signature = new Signature(_options.UserName, _options.UserEmail, DateTime.UtcNow);
             var message = $"feat(archives): archive {_filePaths.Count} files{Environment.NewLine}{string.Join(Environment.NewLine, _filePaths)}";
             _repository.Commit(message, signature, signature);
+
+            _logger.LogInformation($"Committed {string.Join(",", _filePaths)}");
         }
 
         public void Dispose()
