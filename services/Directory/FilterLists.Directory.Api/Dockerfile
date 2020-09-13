@@ -22,6 +22,7 @@ RUN dotnet restore
 
 # build API
 WORKDIR /app
+COPY /.editorconfig .
 COPY SharedKernel/FilterLists.SharedKernel.Apis.Contracts/. SharedKernel/FilterLists.SharedKernel.Apis.Contracts/
 COPY SharedKernel/FilterLists.SharedKernel.Logging/. SharedKernel/FilterLists.SharedKernel.Logging/
 COPY Directory/FilterLists.Directory.Domain/. Directory/FilterLists.Directory.Domain/
