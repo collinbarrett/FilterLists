@@ -24,6 +24,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A534ED99-43A6-4CD2-9288-BD35F82F4E88}"
 	ProjectSection(SolutionItems) = preProject
 		.dockerignore = .dockerignore
+		.editorconfig = .editorconfig
 		..\.github\dependabot.yml = ..\.github\dependabot.yml
 		FilterLists.sln.DotSettings = FilterLists.sln.DotSettings
 	EndProjectSection
@@ -62,7 +63,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernel", "SharedKerne
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.SharedKernel.Logging", "SharedKernel\FilterLists.SharedKernel.Logging\FilterLists.SharedKernel.Logging.csproj", "{5485F55E-DFED-4DA0-8A00-220B081FAC96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.SharedKernel.Apis.Contracts", "SharedKernel\FilterLists.SharedKernel.Apis.Contracts\FilterLists.SharedKernel.Apis.Contracts.csproj", "{D8B65709-B68E-42D6-8500-68EE309177D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.SharedKernel.Apis.Contracts", "SharedKernel\FilterLists.SharedKernel.Apis.Contracts\FilterLists.SharedKernel.Apis.Contracts.csproj", "{D8B65709-B68E-42D6-8500-68EE309177D5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.SharedKernel.Apis.Clients", "SharedKernel\FilterLists.SharedKernel.Apis.Clients\FilterLists.SharedKernel.Apis.Clients.csproj", "{FF6F3D83-A96C-412C-BAFF-63BA89ADD31F}"
 EndProject
