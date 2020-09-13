@@ -7,7 +7,9 @@ using Microsoft.Extensions.Hosting;
 
 namespace FilterLists.Archival.Api
 {
+#pragma warning disable CA1812
     internal class Startup
+#pragma warning disable CA1812
     {
         public Startup(IConfiguration configuration)
         {
