@@ -6,6 +6,7 @@ using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
+using FilterLists.SharedKernel.Apis.Contracts.Directory;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -57,18 +58,6 @@ namespace FilterLists.Directory.Application.Queries
                         o => o.MapFrom(fl =>
                             fl.FilterListMaintainers.Select(flm => flm.MaintainerId).OrderBy(mid => mid)));
             }
-        }
-
-        public class ListVm
-        {
-            public int Id { get; private set; }
-            public string Name { get; private set; } = null!;
-            public string? Description { get; private set; }
-            public int? LicenseId { get; private set; }
-            public IEnumerable<int>? SyntaxIds { get; private set; }
-            public IEnumerable<string>? Iso6391s { get; private set; }
-            public IEnumerable<int>? TagIds { get; private set; }
-            public IEnumerable<int>? MaintainerIds { get; private set; }
         }
     }
 }

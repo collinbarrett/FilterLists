@@ -22,7 +22,7 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(IEnumerable<GetLists.ListVm>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(IEnumerable<ListVm>), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         public async Task<IActionResult> Get(CancellationToken cancellationToken)
         {
