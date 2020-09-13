@@ -32,7 +32,7 @@ namespace FilterLists.SharedKernel.Logging
             catch (Exception ex)
             {
                 Log.Fatal(ex, "Host terminated unexpectedly");
-                return 1;
+                throw;
             }
             finally
             {
