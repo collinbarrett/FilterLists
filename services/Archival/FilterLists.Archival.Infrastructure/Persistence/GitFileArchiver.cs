@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
@@ -8,8 +9,9 @@ using Microsoft.Extensions.Options;
 
 namespace FilterLists.Archival.Infrastructure.Persistence
 {
-    internal class GitFileArchiver : IArchiveFile
+    internal class GitFileArchiver : IArchiveFiles
     {
+        private readonly IList<string> _filePaths = new List<string>();
         private readonly GitOptions _options;
         private readonly IRepository _repository;
 
@@ -21,22 +23,28 @@ namespace FilterLists.Archival.Infrastructure.Persistence
 
         public async Task ArchiveFileAsync(
             Stream fileContents,
-            string fileName,
+            string filePath,
             CancellationToken cancellationToken = default)
         {
-            await using var output = File.OpenWrite(fileName);
+            await using var output = File.OpenWrite(filePath);
             await fileContents.CopyToAsync(output, cancellationToken);
-            if (!cancellationToken.IsCancellationRequested)
-                Commit(fileName);
+            _filePaths.Add(filePath);
         }
 
-        private void Commit(string fileName)
+        public void Commit()
         {
-            Commands.Stage(_repository, fileName);
-            var utcNow = DateTime.UtcNow;
-            var signature = new Signature(_options.UserName, _options.UserEmail, utcNow);
-            var message = $"archive {fileName}";
+            Commands.Stage(_repository, _filePaths);
+            var signature = new Signature(_options.UserName, _options.UserEmail, DateTime.UtcNow);
+            var message = $"feat(archives): archive {_filePaths.Count} files{Environment.NewLine}{string.Join(Environment.NewLine, _filePaths)}";
             _repository.Commit(message, signature, signature);
+        }
+
+        public void Dispose()
+        {
+            foreach (var file in _filePaths)
+                if (File.Exists(file))
+                    File.Delete(file);
+            _repository.CheckoutPaths("HEAD", _filePaths);
         }
     }
 }
