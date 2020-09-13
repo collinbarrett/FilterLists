@@ -7,3 +7,8 @@ indent_style = space
 # Xml files
 [*.xml]
 indent_size = 2
+
+# Code quality analysis
+[*.cs]
+dotnet_diagnostic.CA1812.severity = suggestion
+dotnet_diagnostic.CA2007.severity = none
