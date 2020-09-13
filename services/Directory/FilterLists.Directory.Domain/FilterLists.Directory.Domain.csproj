@@ -1,34 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <LangVersion>latest</LangVersion>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
 
-  <PropertyGroup>
-    <Authors>Collin M. Barrett</Authors>
-    <Company>FilterLists</Company>
-    <Product>FilterLists Directory</Product>
-    <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
-    <Copyright>Copyright (c) 2020 Collin M. Barrett</Copyright>
-    <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
-    <PackageProjectUrl>https://filterlists.com</PackageProjectUrl>
-  </PropertyGroup>
+    <PropertyGroup>
+        <Authors>Collin M. Barrett</Authors>
+        <Company>FilterLists</Company>
+        <Product>FilterLists Directory</Product>
+        <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
+        <Copyright>Copyright (c) 2020 Collin M. Barrett</Copyright>
+        <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
+        <PackageProjectUrl>https://filterlists.com</PackageProjectUrl>
+    </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <NoWarn>1701;1702;CA1812;CA2007</NoWarn>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <NoWarn>CA1812;CA2007</NoWarn>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
 
 </Project>

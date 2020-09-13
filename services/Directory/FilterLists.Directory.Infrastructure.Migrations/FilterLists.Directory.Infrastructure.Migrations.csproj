@@ -1,35 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <LangVersion>latest</LangVersion>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
 
-  <PropertyGroup>
-    <Authors>Collin M. Barrett</Authors>
-    <Company>FilterLists</Company>
-    <Product>FilterLists Directory</Product>
-    <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
-    <Copyright>Copyright (c) 2020 Collin M. Barrett</Copyright>
-    <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
-    <PackageProjectUrl>https://filterlists.com</PackageProjectUrl>
-  </PropertyGroup>
+    <PropertyGroup>
+        <Authors>Collin M. Barrett</Authors>
+        <Company>FilterLists</Company>
+        <Product>FilterLists Directory</Product>
+        <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
+        <Copyright>Copyright (c) 2020 Collin M. Barrett</Copyright>
+        <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
+        <PackageProjectUrl>https://filterlists.com</PackageProjectUrl>
+    </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <NoWarn>1701;1702;CS8625</NoWarn>
-  </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj" />
+    </ItemGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <NoWarn>CS8625</NoWarn>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Migrations\" />
+    </ItemGroup>
 
 </Project>

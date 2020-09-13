@@ -1,47 +1,40 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <LangVersion>latest</LangVersion>
-    <Nullable>enable</Nullable>
-    <IsPackable>false</IsPackable>
-    <RuntimeIdentifiers>linux-musl-x64;win10-x64</RuntimeIdentifiers>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <IsPackable>false</IsPackable>
+        <RuntimeIdentifiers>linux-musl-x64;win10-x64</RuntimeIdentifiers>
+    </PropertyGroup>
 
-  <PropertyGroup>
-    <Authors>Collin M. Barrett</Authors>
-    <Company>FilterLists</Company>
-    <Product>FilterLists Directory</Product>
-    <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
-    <Copyright>Copyright (c) 2020 Collin M. Barrett</Copyright>
-    <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
-    <PackageProjectUrl>https://filterlists.com</PackageProjectUrl>
-  </PropertyGroup>
+    <PropertyGroup>
+        <Authors>Collin M. Barrett</Authors>
+        <Company>FilterLists</Company>
+        <Product>FilterLists Directory</Product>
+        <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
+        <Copyright>Copyright (c) 2020 Collin M. Barrett</Copyright>
+        <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
+        <PackageProjectUrl>https://filterlists.com</PackageProjectUrl>
+    </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <NoWarn>CA1707;CA2007</NoWarn>
-  </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+        <PackageReference Include="xunit" Version="2.4.1" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <NoWarn>CA1707;CA2007</NoWarn>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
-    <PackageReference Include="xunit" Version="2.4.1" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj" />
-    <ProjectReference Include="..\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference
+            Include="..\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj" />
+        <ProjectReference Include="..\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj" />
+    </ItemGroup>
 
 </Project>

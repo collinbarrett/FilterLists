@@ -30,7 +30,7 @@ COPY Directory/FilterLists.Directory.Infrastructure.Migrations/. Directory/Filte
 COPY Directory/FilterLists.Directory.Application/. Directory/FilterLists.Directory.Application/
 WORKDIR /app/Directory/FilterLists.Directory.Api
 COPY Directory/FilterLists.Directory.Api/. .
-RUN dotnet publish -c Release --no-restore -o /app/publish -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r linux-musl-x64
+RUN dotnet publish -c Release --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r linux-musl-x64
 
 # package final
 FROM base AS final

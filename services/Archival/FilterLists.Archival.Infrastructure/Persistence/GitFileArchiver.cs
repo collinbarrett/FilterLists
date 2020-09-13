@@ -10,9 +10,7 @@ using Microsoft.Extensions.Options;
 
 namespace FilterLists.Archival.Infrastructure.Persistence
 {
-#pragma warning disable CA1812
     internal class GitFileArchiver : IArchiveFiles
-#pragma warning restore CA1812
     {
         private readonly IList<string> _filePaths = new List<string>();
         private readonly ILogger<GitFileArchiver> _logger;
