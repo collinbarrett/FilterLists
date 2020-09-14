@@ -1,4 +1,5 @@
-﻿using Hangfire;
+﻿using System;
+using Hangfire;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
@@ -23,7 +24,7 @@ namespace FilterLists.Archival.Infrastructure.Scheduling
 
         public static void UseScheduling(this IApplicationBuilder app)
         {
-            app.UseHangfireServer();
+            app.UseHangfireServer(new BackgroundJobServerOptions {WorkerCount = Environment.ProcessorCount * 1});
         }
     }
 }
