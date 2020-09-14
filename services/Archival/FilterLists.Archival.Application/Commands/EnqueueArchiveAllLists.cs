@@ -15,12 +15,10 @@ namespace FilterLists.Archival.Application.Commands
         public class Handler : IRequestHandler<Command, Unit>
         {
             private readonly IDirectoryApi _directory;
-            private readonly IMediator _mediator;
 
-            public Handler(IDirectoryApi directory, IMediator mediator)
+            public Handler(IDirectoryApi directory)
             {
                 _directory = directory;
-                _mediator = mediator;
             }
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
