@@ -33,9 +33,7 @@ namespace FilterLists.Archival.Application
         private static void ScheduleArchival(this IApplicationBuilder app)
         {
             _ = app ?? throw new ArgumentNullException(nameof(app));
-
-            var mediator = (IMediator)app.ApplicationServices.GetService(typeof(IMediator));
-            mediator.AddOrUpdateRecurringJob(new EnqueueArchiveAllLists.Command(), Cron.Daily);
+            new EnqueueArchiveAllLists.Command().AddOrUpdateRecurringJob(Cron.Daily);
         }
     }
 }

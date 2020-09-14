@@ -6,17 +6,14 @@ using Newtonsoft.Json;
 namespace FilterLists.Archival.Infrastructure.Scheduling
 {
     /// <remarks>https://codeopinion.com/background-commands-mediatr-hangfire/</remarks>
-    public static class MediatorExtensions
+    public static class RequestExtensions
     {
-        public static void EnqueueBackgroundJob(this IMediator _, IRequest request)
+        public static void EnqueueBackgroundJob(this IRequest request)
         {
             BackgroundJob.Enqueue<HangfireMediator>(m => m.Send(request));
         }
 
-        public static void AddOrUpdateRecurringJob(
-            this IMediator _,
-            IRequest request,
-            Func<string> cronExpression)
+        public static void AddOrUpdateRecurringJob(this IRequest request, Func<string> cronExpression)
         {
             RecurringJob.AddOrUpdate<HangfireMediator>(m => m.Send(request), cronExpression);
         }
