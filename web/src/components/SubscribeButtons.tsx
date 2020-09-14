@@ -69,7 +69,7 @@ const buildButtonProps = (name: string, viewUrl: string) => {
 
   const hrefLocation = `${encodeURIComponent(viewUrl)}`;
   const hrefTitle = `${encodeURIComponent(name)}`;
-  let href = `abp:subscribe?location=${hrefLocation}&amp;title=${hrefTitle}`;
+  let href = `abp:subscribe?location=${hrefLocation}&title=${hrefTitle}`;
 
   let prefixes: string[] = [];
   let message = `Subscribe to ${name} with a browser extension supporting the "abp:" protocol (e.g. uBlock Origin, Adblock Plus).`;
