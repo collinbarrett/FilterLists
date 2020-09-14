@@ -13,7 +13,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
     internal class GitFileArchiver : IArchiveFiles
     {
         private readonly IList<string> _filePaths = new List<string>();
-        private readonly ILogger<GitFileArchiver> _logger;
+        private readonly ILogger _logger;
         private readonly GitOptions _options;
         private readonly IRepository _repository;
 
