@@ -2,7 +2,7 @@
 {
     internal class GitOptions
     {
-        public const string Key = nameof(Key);
+        public const string Key = "Git";
 
         public string RepositoryDirectory { get; set; } = null!;
         public string UserName { get; set; } = null!;

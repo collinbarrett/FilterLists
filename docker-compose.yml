@@ -22,9 +22,13 @@ services:
       - directory-api
     volumes:
       - archival-application-insights:/app/application-insights
+      - archival-archives:/app/${ARCHIVAL_GIT_REPOSITORY_DIRECTORY}
     environment:
       ApplicationInsights__InstrumentationKey: ${ARCHIVAL_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
       ConnectionStrings__SchedulingConnection: ${ARCHIVAL_REDIS_CONNECTION_STRING}
+      Git__RepositoryDirectory: ${ARCHIVAL_GIT_REPOSITORY_DIRECTORY}
+      Git__UserName: ${ARCHIVAL_GIT_USER_NAME}
+      Git__UserEmail: ${ARCHIVAL_GIT_USER_EMAIL}
 
   archival-scheduling-db:
     image: redis:alpine
@@ -69,5 +73,6 @@ networks:
 volumes:
   archival-application-insights:
   archival-scheduling-db:
+  archival-archives:
   directory-application-insights:
   directory-db:
