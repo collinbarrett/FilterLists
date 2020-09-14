@@ -6,22 +6,38 @@ using Newtonsoft.Json;
 namespace FilterLists.Archival.Infrastructure.Scheduling
 {
     /// <remarks>https://codeopinion.com/background-commands-mediatr-hangfire/</remarks>
+    public static class MediatorExtensions
+    {
+        public static void EnqueueBackgroundJob(this IMediator _, IRequest request)
+        {
+            BackgroundJob.Enqueue<HangfireMediator>(m => m.Send(request));
+        }
+
+        public static void AddOrUpdateRecurringJob(
+            this IMediator _,
+            IRequest request,
+            Func<string> cronExpression)
+        {
+            RecurringJob.AddOrUpdate<HangfireMediator>(m => m.Send(request), cronExpression);
+        }
+    }
+
     internal static class HangfireExtension
     {
         public static IGlobalConfiguration UseMediatR(this IGlobalConfiguration config, IMediator mediator)
         {
-            config.UseActivator(new MediatRJobActivator(mediator));
+            config.UseActivator(new MediatorJobActivator(mediator));
             GlobalConfiguration.Configuration.UseSerializerSettings(
                 new JsonSerializerSettings {TypeNameHandling = TypeNameHandling.Objects});
             return config;
         }
     }
 
-    internal class MediatRJobActivator : JobActivator
+    internal class MediatorJobActivator : JobActivator
     {
         private readonly IMediator _mediator;
 
-        public MediatRJobActivator(IMediator mediator)
+        public MediatorJobActivator(IMediator mediator)
         {
             _mediator = mediator;
         }
@@ -41,17 +57,9 @@ namespace FilterLists.Archival.Infrastructure.Scheduling
             _mediator = mediator;
         }
 
-        public void SendCommand(IRequest request)
+        public void Send(IRequest request)
         {
             _mediator.Send(request);
-        }
-    }
-
-    public static class MediatRExtension
-    {
-        public static void Enqueue(this IMediator mediator, IRequest request)
-        {
-            BackgroundJob.Enqueue<HangfireMediator>(m => m.SendCommand(request));
         }
     }
 }

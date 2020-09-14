@@ -28,7 +28,7 @@ namespace FilterLists.Archival.Application.Commands
                 var lists = await _directory.GetListsAsync(cancellationToken);
                 foreach (var list in lists)
                 {
-                    _mediator.Enqueue(new ArchiveList.Command(list.Id));
+                    _mediator.EnqueueBackgroundJob(new ArchiveList.Command(list.Id));
                 }
 
                 return Unit.Value;

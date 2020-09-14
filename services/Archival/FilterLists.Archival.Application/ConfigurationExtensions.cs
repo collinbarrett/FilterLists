@@ -1,4 +1,8 @@
-﻿using FilterLists.Archival.Infrastructure;
+﻿using System;
+using FilterLists.Archival.Application.Commands;
+using FilterLists.Archival.Infrastructure;
+using FilterLists.Archival.Infrastructure.Scheduling;
+using Hangfire;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
@@ -23,6 +27,15 @@ namespace FilterLists.Archival.Application
         public static void UseApplication(this IApplicationBuilder app)
         {
             app.UseInfrastructure();
+            app.ScheduleArchival();
+        }
+
+        private static void ScheduleArchival(this IApplicationBuilder app)
+        {
+            _ = app ?? throw new ArgumentNullException(nameof(app));
+
+            var mediator = (IMediator)app.ApplicationServices.GetService(typeof(IMediator));
+            mediator.AddOrUpdateRecurringJob(new EnqueueArchiveAllLists.Command(), Cron.Daily);
         }
     }
 }
