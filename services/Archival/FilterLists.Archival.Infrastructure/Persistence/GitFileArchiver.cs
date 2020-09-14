@@ -53,6 +53,12 @@ namespace FilterLists.Archival.Infrastructure.Persistence
 
         public void Dispose()
         {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
             foreach (var file in _filePaths)
             {
                 if (File.Exists(file))
