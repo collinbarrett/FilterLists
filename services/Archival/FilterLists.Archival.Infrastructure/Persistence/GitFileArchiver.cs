@@ -10,7 +10,7 @@ using Microsoft.Extensions.Options;
 
 namespace FilterLists.Archival.Infrastructure.Persistence
 {
-    internal class GitFileArchiver : IArchiveFiles
+    internal sealed class GitFileArchiver : IArchiveFiles
     {
         private readonly IList<string> _filePaths = new List<string>();
         private readonly ILogger _logger;
@@ -52,12 +52,6 @@ namespace FilterLists.Archival.Infrastructure.Persistence
         }
 
         public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-
-        protected virtual void Dispose(bool disposing)
         {
             foreach (var file in _filePaths)
             {
