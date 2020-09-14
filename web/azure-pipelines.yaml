@@ -21,7 +21,7 @@ variables:
 
 steps:
   - checkout: self
-    fetchDepth: 100
+    fetchDepth: 2
 
   - task: Docker@2
     displayName: build
