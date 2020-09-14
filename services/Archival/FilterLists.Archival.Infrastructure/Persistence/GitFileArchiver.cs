@@ -32,13 +32,13 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             string filePath,
             CancellationToken cancellationToken = default)
         {
-            _logger.LogInformation($"Archiving {filePath}");
+            _logger.LogInformation("Archiving {filePath}", filePath);
 
             _filePaths.Add(filePath);
             await using var output = File.OpenWrite(filePath);
             await fileContents.CopyToAsync(output, cancellationToken);
 
-            _logger.LogInformation($"Archived {filePath}");
+            _logger.LogInformation("Archived {filePath}", filePath);
         }
 
         public void Commit()
@@ -48,7 +48,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             var message = $"feat(archives): archive {_filePaths.Count} files{Environment.NewLine}{string.Join(Environment.NewLine, _filePaths)}";
             _repository.Commit(message, signature, signature);
 
-            _logger.LogInformation($"Committed {string.Join(",", _filePaths)}");
+            _logger.LogInformation("Committed {filePaths}", string.Join(",", _filePaths));
         }
 
         public void Dispose()
