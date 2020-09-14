@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using Hangfire;
 using MediatR;
 using Newtonsoft.Json;
@@ -10,12 +11,14 @@ namespace FilterLists.Archival.Infrastructure.Scheduling
     {
         public static void EnqueueBackgroundJob(this IRequest request)
         {
-            BackgroundJob.Enqueue<HangfireMediator>(m => m.Send(request));
+            // Hangfire replaces CancellationToken at runtime with its own. We just need any in the signature.
+            // https://docs.hangfire.io/en/latest/background-methods/using-cancellation-tokens.html#cancellationtoken
+            BackgroundJob.Enqueue<HangfireMediator>(m => m.Send(request, CancellationToken.None));
         }
 
         public static void AddOrUpdateRecurringJob(this IRequest request, Func<string> cronExpression)
         {
-            RecurringJob.AddOrUpdate<HangfireMediator>(m => m.Send(request), cronExpression);
+            RecurringJob.AddOrUpdate<HangfireMediator>(m => m.Send(request, CancellationToken.None), cronExpression);
         }
     }
 
@@ -54,9 +57,9 @@ namespace FilterLists.Archival.Infrastructure.Scheduling
             _mediator = mediator;
         }
 
-        public void Send(IRequest request)
+        public void Send(IRequest request, CancellationToken cancellationToken)
         {
-            _mediator.Send(request);
+            _mediator.Send(request, cancellationToken);
         }
     }
 }
