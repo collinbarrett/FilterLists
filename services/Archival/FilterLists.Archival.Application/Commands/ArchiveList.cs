@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.SharedKernel.Apis.Clients;
 using MediatR;
@@ -28,7 +29,9 @@ namespace FilterLists.Archival.Application.Commands
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-                var listDetails = await _directory.GetListDetailsAsync(5, cancellationToken);
+                _ = request ?? throw new ArgumentNullException(nameof(request));
+
+                var listDetails = await _directory.GetListDetailsAsync(request.ListId, cancellationToken);
 
                 // TODO: archive
 
