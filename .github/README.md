@@ -20,6 +20,11 @@
 <a href="https://github.com/users/collinbarrett/packages/container/filterlists-directory-api"><img src="https://img.shields.io/badge/docker%20image-filterlists--directory--api-blue" alt="FilterLists Directory API - Docker Image" /></a>
 <br/>An ASP.NET Core API CRUD-ing with a Postgres instance via EF Core.</p>
 
+<p align="center"><b>Archival API 🚧:</b>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=29"><img src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Archival%20API?branchName=master" alt="FilterLists Archival API - Azure DevOps builds" /></a>
+<a href="https://github.com/users/collinbarrett/packages/container/filterlists-archival-api"><img src="https://img.shields.io/badge/docker%20image-filterlists--archival--api-blue" alt="FilterLists Archival API - Docker Image" /></a>
+<br/>A .NET Core app archiving copies of FilterLists for mirrors and future analysis.</p>
+
 <p align="center"><b>Reverse Proxy:</b>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=21"><img src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Reverse%20Proxy?branchName=master" alt="FilterLists Reverse Proxy - Azure DevOps builds" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=5"><img src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/5/6" alt="FilterLists Reverse Proxy - Azure DevOps releases" /></a>
