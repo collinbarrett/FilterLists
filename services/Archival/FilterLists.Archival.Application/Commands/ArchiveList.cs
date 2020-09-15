@@ -54,7 +54,7 @@ namespace FilterLists.Archival.Application.Commands
                     var archiveTasks = new List<Task>();
                     foreach (var segment in segments)
                     {
-                        Stream? contents = default; // TODO: fetch list file stream
+                        Stream contents = null!; // TODO: fetch list file stream
                         var path = Path.Combine(
                             listDetails.Id.ToString(CultureInfo.InvariantCulture),
                             segment.SegmentNumber.ToString(CultureInfo.InvariantCulture));
