@@ -67,6 +67,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.SharedKernel.Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.SharedKernel.Apis.Clients", "SharedKernel\FilterLists.SharedKernel.Apis.Clients\FilterLists.SharedKernel.Apis.Clients.csproj", "{FF6F3D83-A96C-412C-BAFF-63BA89ADD31F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.SharedKernel.SeedWork", "SharedKernel\FilterLists.SharedKernel.SeedWork\FilterLists.SharedKernel.SeedWork.csproj", "{FE809E6A-CEC4-4944-A69B-690C30776631}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{FF6F3D83-A96C-412C-BAFF-63BA89ADD31F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF6F3D83-A96C-412C-BAFF-63BA89ADD31F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF6F3D83-A96C-412C-BAFF-63BA89ADD31F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE809E6A-CEC4-4944-A69B-690C30776631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE809E6A-CEC4-4944-A69B-690C30776631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE809E6A-CEC4-4944-A69B-690C30776631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE809E6A-CEC4-4944-A69B-690C30776631}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -143,6 +149,7 @@ Global
 		{5485F55E-DFED-4DA0-8A00-220B081FAC96} = {59197818-6C72-4A3C-A595-49F3D7D2EB18}
 		{D8B65709-B68E-42D6-8500-68EE309177D5} = {59197818-6C72-4A3C-A595-49F3D7D2EB18}
 		{FF6F3D83-A96C-412C-BAFF-63BA89ADD31F} = {59197818-6C72-4A3C-A595-49F3D7D2EB18}
+		{FE809E6A-CEC4-4944-A69B-690C30776631} = {59197818-6C72-4A3C-A595-49F3D7D2EB18}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {758B57EF-7505-4BE2-90A2-E2DE2EC32909}

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FilterLists.Archival.Infrastructure.Persistence
+namespace FilterLists.SharedKernel.SeedWork
 {
     public interface IUnitOfWork : IDisposable
     {
