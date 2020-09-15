@@ -1,6 +1,9 @@
-﻿using Microsoft.ApplicationInsights.Channel;
+﻿using System;
+using FilterLists.SharedKernel.Logging.Options;
+using Microsoft.ApplicationInsights.Channel;
 using Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
@@ -14,9 +17,16 @@ namespace FilterLists.SharedKernel.Logging
             return hostBuilder.UseSerilog();
         }
 
-        public static void AddSharedKernelLogging(this IServiceCollection services)
+        public static void AddSharedKernelLogging(this IServiceCollection services, IConfiguration configuration)
         {
-            using var serverTelemetryChannel = new ServerTelemetryChannel {StorageFolder = "application-insights"};
+            _ = configuration ?? throw new ArgumentNullException(nameof(configuration));
+
+            using var serverTelemetryChannel = new ServerTelemetryChannel
+            {
+                StorageFolder = configuration.GetSection(ApplicationInsightsOptions.Key)
+                    .Get<ApplicationInsightsOptions>()
+                    .ServerTelemetryChannelStoragePath
+            };
             services.AddSingleton(typeof(ITelemetryChannel), serverTelemetryChannel);
             services.AddApplicationInsightsTelemetry();
         }

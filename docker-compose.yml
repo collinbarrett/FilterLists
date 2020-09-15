@@ -21,12 +21,13 @@ services:
       - archival-scheduling-db
       - directory-api
     volumes:
-      - archival-application-insights:/app/application-insights
-      - archival-archives:/app/${ARCHIVAL_GIT_REPOSITORY_DIRECTORY}
+      - archival-application-insights:/app/${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
+      - archival-archives:/app/${ARCHIVAL_GIT_REPOSITORY_PATH}
     environment:
+      ApplicationInsights__ServerTelemetryChannelStoragePath: ${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
       ApplicationInsights__InstrumentationKey: ${ARCHIVAL_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
       ConnectionStrings__SchedulingConnection: ${ARCHIVAL_REDIS_CONNECTION_STRING}
-      Git__RepositoryDirectory: ${ARCHIVAL_GIT_REPOSITORY_DIRECTORY}
+      Git__RepositoryPath: ${ARCHIVAL_GIT_REPOSITORY_PATH}
       Git__UserName: ${ARCHIVAL_GIT_USER_NAME}
       Git__UserEmail: ${ARCHIVAL_GIT_USER_EMAIL}
 
@@ -48,8 +49,9 @@ services:
     depends_on:
       - directory-db
     volumes:
-      - directory-application-insights:/app/application-insights
+      - directory-application-insights:/app/${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
     environment:
+      ApplicationInsights__ServerTelemetryChannelStoragePath: ${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
       ApplicationInsights__InstrumentationKey: ${DIRECTORY_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
       ConnectionStrings__DirectoryConnection: ${DIRECTORY_CONNECTION_STRING}
 

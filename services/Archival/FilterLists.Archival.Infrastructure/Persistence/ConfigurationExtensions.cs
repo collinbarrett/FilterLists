@@ -15,12 +15,12 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                 var gitOptions = new GitOptions();
                 configuration.GetSection(GitOptions.Key).Bind(gitOptions);
 
-                if (!Repository.IsValid(gitOptions.RepositoryDirectory))
+                if (!Repository.IsValid(gitOptions.RepositoryPath))
                 {
-                    Repository.Init(gitOptions.RepositoryDirectory);
+                    Repository.Init(gitOptions.RepositoryPath);
                 }
 
-                return new Repository(gitOptions.RepositoryDirectory);
+                return new Repository(gitOptions.RepositoryPath);
             });
             services.AddTransient<IArchiveFiles, GitFileArchiver>();
         }

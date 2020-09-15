@@ -17,7 +17,7 @@ namespace FilterLists.Directory.Infrastructure
 
         public static void AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddSharedKernelLogging();
+            services.AddSharedKernelLogging(configuration);
             services.AddDbContextPool<QueryDbContext>(o =>
             {
                 o.UseNpgsql(configuration.GetConnectionString("DirectoryConnection"),
