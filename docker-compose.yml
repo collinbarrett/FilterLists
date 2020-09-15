@@ -27,6 +27,7 @@ services:
       ApplicationInsights__ServerTelemetryChannelStoragePath: ${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
       ApplicationInsights__InstrumentationKey: ${ARCHIVAL_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
       ConnectionStrings__SchedulingConnection: ${ARCHIVAL_REDIS_CONNECTION_STRING}
+      Api__DirectoryHost: ${DIRECTORY_HOST}
       Git__RepositoryPath: ${ARCHIVAL_GIT_REPOSITORY_PATH}
       Git__UserName: ${ARCHIVAL_GIT_USER_NAME}
       Git__UserEmail: ${ARCHIVAL_GIT_USER_EMAIL}
@@ -44,8 +45,10 @@ services:
     image: ghcr.io/collinbarrett/filterlists-directory-api
     restart: always
     networks:
-      - reverse-proxy
-      - directory
+      reverse-proxy:
+        aliases:
+          - ${DIRECTORY_HOST}
+      directory:
     depends_on:
       - directory-db
     volumes:

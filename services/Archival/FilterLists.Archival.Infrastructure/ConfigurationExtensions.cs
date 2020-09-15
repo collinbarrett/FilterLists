@@ -23,7 +23,7 @@ namespace FilterLists.Archival.Infrastructure
 
             services.AddSharedKernelLogging(configuration);
             services.AddSchedulingServices(configuration);
-            services.AddApiClients();
+            services.AddApiClients(configuration);
             services.AddPersistenceServices(configuration);
         }
 
