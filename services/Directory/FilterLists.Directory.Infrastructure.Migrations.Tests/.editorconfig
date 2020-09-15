@@ -1,5 +1,4 @@
 # To learn more about .editorconfig see https://aka.ms/editorconfigdocs
 
-# Code quality analysis
 [*.cs]
 dotnet_diagnostic.CA1707.severity = suggestion

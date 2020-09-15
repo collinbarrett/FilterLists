@@ -1,4 +1,5 @@
 # To learn more about .editorconfig see https://aka.ms/editorconfigdocs
+
 ###############################
 # Core EditorConfig Options   #
 ###############################
@@ -124,7 +125,7 @@ csharp_preserve_single_line_blocks = true
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 
 
-# Code quality analysis
+# FilterLists Services custom pairs
 [*.cs]
 dotnet_diagnostic.CA1812.severity = suggestion
 dotnet_diagnostic.CA2007.severity = none
