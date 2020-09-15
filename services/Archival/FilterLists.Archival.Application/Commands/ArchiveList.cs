@@ -43,7 +43,11 @@ namespace FilterLists.Archival.Application.Commands
                 _logger.LogDebug("Archiving list {ListId}", request.ListId);
 
                 var listDetails = await _directory.GetListDetailsAsync(request.ListId, cancellationToken);
-                var segments = listDetails.ViewUrls?.GroupBy(u => u.SegmentNumber).ToList();
+                var segments = listDetails.ViewUrls?
+                    .GroupBy(u => u.SegmentNumber)
+                    .Select(g => g.OrderBy(u => u.Primariness))
+                    .First()
+                    .ToList();
 
                 if (segments != null)
                 {
@@ -53,14 +57,14 @@ namespace FilterLists.Archival.Application.Commands
                         Stream? contents = default; // TODO: fetch list file stream
                         var path = Path.Combine(
                             listDetails.Id.ToString(CultureInfo.InvariantCulture),
-                            segment.Key.ToString(CultureInfo.InvariantCulture));
-                        _logger.LogDebug("Archiving segment {SegmentNumber} of list {ListId}", segment.Key, request.ListId);
+                            segment.SegmentNumber.ToString(CultureInfo.InvariantCulture));
+                        _logger.LogDebug("Archiving segment {SegmentNumber} of list {ListId}", segment.SegmentNumber, request.ListId);
                         archiveTasks.Add(_archiver.ArchiveFileAsync(contents, path, cancellationToken));
                     }
 
                     await Task.WhenAll(archiveTasks);
                     _archiver.Commit();
-                    _logger.LogDebug("Archived segments {@SegmentNumbers} of list {ListId}", segments.Select(s => s.Key), request.ListId);
+                    _logger.LogDebug("Archived segments {@SegmentNumbers} of list {ListId}", segments.Select(s => s.SegmentNumber), request.ListId);
                 }
                 else
                 {
