@@ -12,9 +12,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             services.Configure<GitOptions>(configuration.GetSection(GitOptions.Key));
             services.AddTransient<IRepository, Repository>(_ =>
             {
-                var gitOptions = new GitOptions();
-                configuration.GetSection(GitOptions.Key).Bind(gitOptions);
-
+                var gitOptions = configuration.GetSection(GitOptions.Key).Get<GitOptions>();
                 if (!Repository.IsValid(gitOptions.RepositoryPath))
                 {
                     Repository.Init(gitOptions.RepositoryPath);
