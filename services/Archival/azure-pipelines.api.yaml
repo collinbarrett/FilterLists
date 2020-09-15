@@ -1,0 +1,96 @@
+trigger:
+  batch: false
+  branches:
+    include: [master]
+  paths:
+    include:
+      [
+        services/Archival/azure-pipelines.api.yaml,
+        services/SharedKernel/FilterLists.SharedKernel.Apis.Contracts/*,
+        services/SharedKernel/FilterLists.SharedKernel.Apis.Clients/*,
+        services/SharedKernel/FilterLists.SharedKernel.Logging/*,
+        services/SharedKernel/FilterLists.SharedKernel.SeedWork/*,
+        services/Archival/FilterLists.Archival.Infrastructure/*,
+        services/Archival/FilterLists.Archival.Application/*,
+        services/Archival/FilterLists.Archival.Api/*,
+        docker-compose.yml,
+        docker-compose.prod.yml,
+        .env,
+        .dockerignore,
+      ]
+
+pr:
+  autoCancel: false
+  branches:
+    include: [master]
+  paths:
+    include:
+      [
+        services/Archival/azure-pipelines.api.yaml,
+        services/SharedKernel/FilterLists.SharedKernel.Apis.Contracts/*,
+        services/SharedKernel/FilterLists.SharedKernel.Apis.Clients/*,
+        services/SharedKernel/FilterLists.SharedKernel.Logging/*,
+        services/SharedKernel/FilterLists.SharedKernel.SeedWork/*,
+        services/Archival/FilterLists.Archival.Infrastructure/*,
+        services/Archival/FilterLists.Archival.Application/*,
+        services/Archival/FilterLists.Archival.Api/*,
+        docker-compose.yml,
+        docker-compose.prod.yml,
+        .env,
+        .dockerignore,
+      ]
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  COMPOSE_DOCKER_CLI_BUILD: 1
+  DOCKER_BUILDKIT: 1
+
+steps:
+  - checkout: self
+    fetchDepth: 2
+
+  - task: Docker@2
+    displayName: build
+    inputs:
+      containerRegistry: github-container-registry
+      repository: collinbarrett/filterlists-archival-api
+      command: build
+      Dockerfile: services/Archival/FilterLists.Archival.Api/Dockerfile
+      buildContext: ./services
+      tags: |
+        latest
+        $(Build.BuildId)
+      addPipelineData: false
+
+  - task: Docker@2
+    displayName: push
+    inputs:
+      containerRegistry: github-container-registry
+      repository: collinbarrett/filterlists-archival-api
+      command: push
+      tags: |
+        latest
+        $(Build.BuildId)
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+  - task: CopyFiles@2
+    displayName: stage docker-compose files
+    inputs:
+      SourceFolder: $(Build.SourcesDirectory)
+      Contents: |
+        docker-compose.yml
+        docker-compose.prod.yml
+      TargetFolder: $(Build.ArtifactStagingDirectory)
+      CleanTargetFolder: true
+      OverWrite: true
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+
+  - task: PublishBuildArtifacts@1
+    displayName: publish docker-compose files
+    inputs:
+      PathtoPublish: $(Build.ArtifactStagingDirectory)
+      ArtifactName: drop
+      publishLocation: Container
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))

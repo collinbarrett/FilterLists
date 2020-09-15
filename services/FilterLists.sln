@@ -52,6 +52,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure.Migrations.Tests", "Directory\FilterLists.Directory.Infrastructure.Migrations.Tests\FilterLists.Directory.Infrastructure.Migrations.Tests.csproj", "{8B07EF04-5516-40BB-B21B-CEC6F90EC631}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archival", "Archival", "{5E52FEF9-9605-4ACB-8A42-A20E06331599}"
+	ProjectSection(SolutionItems) = preProject
+		Archival\azure-pipelines.api.yaml = Archival\azure-pipelines.api.yaml
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Api", "Archival\FilterLists.Archival.Api\FilterLists.Archival.Api.csproj", "{F625C241-0501-4AEB-8B82-609C93EE6B7D}"
 EndProject
@@ -67,7 +70,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.SharedKernel.Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.SharedKernel.Apis.Clients", "SharedKernel\FilterLists.SharedKernel.Apis.Clients\FilterLists.SharedKernel.Apis.Clients.csproj", "{FF6F3D83-A96C-412C-BAFF-63BA89ADD31F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.SharedKernel.SeedWork", "SharedKernel\FilterLists.SharedKernel.SeedWork\FilterLists.SharedKernel.SeedWork.csproj", "{FE809E6A-CEC4-4944-A69B-690C30776631}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.SharedKernel.SeedWork", "SharedKernel\FilterLists.SharedKernel.SeedWork\FilterLists.SharedKernel.SeedWork.csproj", "{FE809E6A-CEC4-4944-A69B-690C30776631}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
