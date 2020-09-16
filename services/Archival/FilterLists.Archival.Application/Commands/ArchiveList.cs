@@ -26,11 +26,11 @@ namespace FilterLists.Archival.Application.Commands
 
         public class Handler : IRequestHandler<Command, Unit>
         {
-            private readonly IArchiveFiles _archiver;
+            private readonly IFileArchiver _archiver;
             private readonly IDirectoryApi _directory;
             private readonly ILogger _logger;
 
-            public Handler(IArchiveFiles archiver, IDirectoryApi directory, ILogger<Handler> logger)
+            public Handler(IFileArchiver archiver, IDirectoryApi directory, ILogger<Handler> logger)
             {
                 _archiver = archiver;
                 _directory = directory;

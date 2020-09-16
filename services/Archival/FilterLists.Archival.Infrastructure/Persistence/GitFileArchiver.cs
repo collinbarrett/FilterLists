@@ -10,7 +10,7 @@ using Microsoft.Extensions.Options;
 
 namespace FilterLists.Archival.Infrastructure.Persistence
 {
-    internal sealed class GitFileArchiver : IArchiveFiles
+    internal sealed class GitFileArchiver : IFileArchiver
     {
         private readonly IList<string> _filePaths = new List<string>();
         private readonly ILogger _logger;

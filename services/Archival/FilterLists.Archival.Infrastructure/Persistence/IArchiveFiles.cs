@@ -5,7 +5,7 @@ using FilterLists.SharedKernel.SeedWork;
 
 namespace FilterLists.Archival.Infrastructure.Persistence
 {
-    public interface IArchiveFiles : IUnitOfWork
+    public interface IFileArchiver : IUnitOfWork
     {
         Task ArchiveFileAsync(
             Stream fileContents,
