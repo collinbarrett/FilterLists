@@ -11,18 +11,18 @@
 <p align="center"><b>Website:</b> <a href="https://filterlists.com/"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=Website" alt="Website" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=18"><img src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Web?branchName=master" alt="FilterLists Web - Azure DevOps builds" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=4"><img src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/4/5" alt="FilterLists Web - Azure DevOps releases" /></a>
-<a href="https://github.com/users/collinbarrett/packages/container/filterlists-web"><img src="https://img.shields.io/badge/docker%20image-filterlists--web-blue" alt="FilterLists Web - Docker Image" /></a>
+<a href="https://github.com/users/collinbarrett/packages/container/package/filterlists-web"><img src="https://img.shields.io/badge/docker%20image-filterlists--web-blue" alt="FilterLists Web - Docker Image" /></a>
 <br/>A React & TypeScript UI built with Ant Design.</p>
 
 <p align="center"><b>Directory API:</b> <a href="https://filterlists.com/api"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=Directory%20API" alt="Directory API" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=27"><img src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Directory%20API?branchName=master" alt="FilterLists Directory API - Azure DevOps builds" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=3"><img src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4" alt="FilterLists Directory API - Azure DevOps releases" /></a>
-<a href="https://github.com/users/collinbarrett/packages/container/filterlists-directory-api"><img src="https://img.shields.io/badge/docker%20image-filterlists--directory--api-blue" alt="FilterLists Directory API - Docker Image" /></a>
+<a href="https://github.com/users/collinbarrett/packages/container/package/filterlists-directory-api"><img src="https://img.shields.io/badge/docker%20image-filterlists--directory--api-blue" alt="FilterLists Directory API - Docker Image" /></a>
 <br/>An ASP.NET Core API CRUD-ing with a Postgres instance via EF Core.</p>
 
 <p align="center"><b>Archival API 🚧:</b>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=29"><img src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Archival%20API?branchName=master" alt="FilterLists Archival API - Azure DevOps builds" /></a>
-<a href="https://github.com/users/collinbarrett/packages/container/filterlists-archival-api"><img src="https://img.shields.io/badge/docker%20image-filterlists--archival--api-blue" alt="FilterLists Archival API - Docker Image" /></a>
+<a href="https://github.com/users/collinbarrett/packages/container/package/filterlists-archival-api"><img src="https://img.shields.io/badge/docker%20image-filterlists--archival--api-blue" alt="FilterLists Archival API - Docker Image" /></a>
 <br/>A .NET Core app archiving copies of FilterLists for mirrors and future analysis.</p>
 
 <p align="center"><b>Reverse Proxy:</b>
