@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Archival.Infrastructure.Options;
+using FilterLists.Archival.Infrastructure.Persistence.FileWriteStrategies;
 using LibGit2Sharp;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -12,56 +14,68 @@ namespace FilterLists.Archival.Infrastructure.Persistence
 {
     internal sealed class GitFileArchiver : IFileArchiver
     {
-        private readonly IList<string> _filePaths = new List<string>();
         private readonly ILogger _logger;
         private readonly GitOptions _options;
-        private readonly IRepository _repository;
+        private readonly IRepository _repo;
+        private readonly ICollection<FileInfo> _writtenFiles = new HashSet<FileInfo>();
 
         public GitFileArchiver(
             ILogger<GitFileArchiver> logger,
             IOptions<GitOptions> gitOptions,
-            IRepository gitRepository)
+            IRepository repository)
         {
             _logger = logger;
             _options = gitOptions.Value;
-            _repository = gitRepository;
+            _repo = repository;
         }
 
         public async Task ArchiveFileAsync(
-            Stream fileContents,
-            string filePath,
+            IFileToArchive file,
             CancellationToken cancellationToken = default)
         {
-            _logger.LogDebug("Writing {FilePath}", filePath);
+            var strategy = file.GetStrategy<IFileWriteStrategy>();
+            if (strategy is default(IFileWriteStrategy))
+            {
+                _logger.LogWarning(
+                    "No write strategy found for {Filename}. Skipping",
+                    file.Target.Name);
+            }
+            else
+            {
+                _logger.LogDebug(
+                    "Writing {Filename} with strategy {FileWriteStrategy}",
+                    file.Target.Name,
+                    strategy.GetType().Name);
 
-            _filePaths.Add(filePath);
-            await using var output = File.OpenWrite(filePath);
-            await fileContents.CopyToAsync(output, cancellationToken);
+                _writtenFiles.Add(file.Target);
+                await strategy.WriteAsync(file, cancellationToken);
 
-            _logger.LogDebug("Finished writing {FilePath}", filePath);
+                _logger.LogDebug("Finished writing {Filename}", file.Target.Name);
+            }
         }
 
         public void Commit()
         {
-            Commands.Stage(_repository, _filePaths);
+            var filenames = _writtenFiles.Select(f => f.Name).ToList();
+            Commands.Stage(_repo, filenames);
             var signature = new Signature(_options.UserName, _options.UserEmail, DateTime.UtcNow);
-            var message = $"feat(archives): archive {_filePaths.Count} files{Environment.NewLine}{string.Join(Environment.NewLine, _filePaths)}";
-            _repository.Commit(message, signature, signature);
+            var message =  $"feat(archives): archive {filenames.Count} files{Environment.NewLine}{string.Join(Environment.NewLine, filenames)}";
+            _repo.Commit(message, signature, signature);
 
-            _logger.LogDebug("Committed {@FilePaths}", _filePaths);
+            _logger.LogDebug("Committed {@Filenames}", filenames);
         }
 
         public void Dispose()
         {
-            foreach (var file in _filePaths)
+            foreach (var file in _writtenFiles)
             {
-                if (File.Exists(file))
+                if (File.Exists(file.Name))
                 {
-                    File.Delete(file);
+                    File.Delete(file.Name);
                 }
             }
 
-            _repository.CheckoutPaths("HEAD", _filePaths);
+            _repo.CheckoutPaths("HEAD", _writtenFiles.Select(f => f.Name));
         }
     }
 }

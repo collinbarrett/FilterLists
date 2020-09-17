@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
+using FilterLists.Archival.Application.Models;
 using FilterLists.Archival.Infrastructure.Persistence;
 using FilterLists.SharedKernel.Apis.Clients;
+using FilterLists.SharedKernel.Apis.Contracts.Directory;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
@@ -28,12 +30,18 @@ namespace FilterLists.Archival.Application.Commands
         {
             private readonly IFileArchiver _archiver;
             private readonly IDirectoryApi _directory;
+            private readonly HttpClient _httpClient;
             private readonly ILogger _logger;
 
-            public Handler(IFileArchiver archiver, IDirectoryApi directory, ILogger<Handler> logger)
+            public Handler(
+                IFileArchiver archiver,
+                IDirectoryApi directory,
+                IHttpClientFactory httpClientFactory,
+                ILogger<Handler> logger)
             {
                 _archiver = archiver;
                 _directory = directory;
+                _httpClient = httpClientFactory.CreateClient();
                 _logger = logger;
             }
 
@@ -42,36 +50,48 @@ namespace FilterLists.Archival.Application.Commands
                 _ = request ?? throw new ArgumentNullException(nameof(request));
                 _logger.LogDebug("Archiving list {ListId}", request.ListId);
 
-                var listDetails = await _directory.GetListDetailsAsync(request.ListId, cancellationToken);
-                var segments = listDetails.ViewUrls?
-                    .GroupBy(u => u.SegmentNumber)
-                    .Select(g => g.OrderBy(u => u.Primariness))
-                    .First()
-                    .ToList();
-
-                if (segments != null)
+                var segments = await GetSegmentsAsync(request.ListId, cancellationToken);
+                if (segments.Count > 0)
                 {
-                    var archiveTasks = new List<Task>();
-                    foreach (var segment in segments)
-                    {
-                        Stream contents = null!; // TODO: fetch list file stream
-                        var path = Path.Combine(
-                            listDetails.Id.ToString(CultureInfo.InvariantCulture),
-                            segment.SegmentNumber.ToString(CultureInfo.InvariantCulture));
-                        _logger.LogDebug("Archiving segment {SegmentNumber} of list {ListId}", segment.SegmentNumber, request.ListId);
-                        archiveTasks.Add(_archiver.ArchiveFileAsync(contents, path, cancellationToken));
-                    }
-
-                    await Task.WhenAll(archiveTasks);
+                    var fetchTasks = segments.Select(s => FetchStreamAsync(s.Url, cancellationToken));
+                    var streams = await Task.WhenAll(fetchTasks);
+                    var target = new FileInfo(Uri.UnescapeDataString(segments.First().Url.Segments.Last()));
+                    await _archiver.ArchiveFileAsync(new FileToArchive(target, streams), cancellationToken);
                     _archiver.Commit();
-                    _logger.LogDebug("Archived segments {@SegmentNumbers} of list {ListId}", segments.Select(s => s.SegmentNumber), request.ListId);
+
+                    _logger.LogDebug(
+                        "Archived segments {@SegmentNumbers} of list {ListId}",
+                        segments.Select(s => s.SegmentNumber),
+                        request.ListId);
                 }
                 else
                 {
-                    _logger.LogDebug("List {ListId} has no view URLs to archive", request.ListId);
+                    _logger.LogInformation("List {ListId} has no view URLs to archive", request.ListId);
                 }
 
                 return Unit.Value;
+            }
+
+            private async Task<List<ListDetailsViewUrlVm>> GetSegmentsAsync(
+                int listId,
+                CancellationToken cancellationToken)
+            {
+                var listDetails = await _directory.GetListDetailsAsync(listId, cancellationToken);
+                return listDetails.ViewUrls?
+                           .GroupBy(u => u.SegmentNumber)
+                           .Select(g => g.OrderBy(u => u.Primariness))
+                           .FirstOrDefault()
+                           ?.ToList() ??
+                       new List<ListDetailsViewUrlVm>();
+            }
+
+            private async Task<Stream> FetchStreamAsync(
+                Uri url,
+                CancellationToken cancellationToken)
+            {
+                using var response = await _httpClient.GetAsync(url, cancellationToken);
+                response.EnsureSuccessStatusCode();
+                return await response.Content.ReadAsStreamAsync();
             }
         }
     }
