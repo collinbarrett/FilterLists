@@ -55,6 +55,8 @@ namespace FilterLists.Archival.Application.Commands
                 {
                     var fetchTasks = segments.Select(s => FetchStreamAsync(s.Url, cancellationToken));
                     var streams = await Task.WhenAll(fetchTasks);
+
+                    // TODO: add ".txt" to no extension source names
                     var target = new FileInfo(Uri.UnescapeDataString(segments.First().Url.Segments.Last()));
                     await _archiver.ArchiveFileAsync(new FileToArchive(target, streams), cancellationToken);
                     _archiver.Commit();
