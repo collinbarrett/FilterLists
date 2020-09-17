@@ -10,6 +10,7 @@ namespace FilterLists.SharedKernel.Apis.Clients
     {
         public static void AddApiClients(this IServiceCollection services, IConfiguration configuration)
         {
+            // TODO: add Polly for resiliency
             // TODO: use SystemTextJsonContentSerializer() once less feature-limited
             services.AddRefitClient<IDirectoryApi>()
                 .ConfigureHttpClient(c =>

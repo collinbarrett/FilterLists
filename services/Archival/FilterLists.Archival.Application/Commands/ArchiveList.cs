@@ -92,6 +92,7 @@ namespace FilterLists.Archival.Application.Commands
                     var readTasks = new List<Task<Stream>>();
                     foreach (var segment in segments)
                     {
+                        // TODO: add Polly for resiliency
                         var response = await _httpClient.GetAsync(segment.Url, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
                         responses.Add(response);
                         response.EnsureSuccessStatusCode();
