@@ -102,7 +102,7 @@ namespace FilterLists.Archival.Application.Commands
                     var streams = await Task.WhenAll(readTasks);
 
                     // TODO: prefix fileName with listId
-                    // TODO: add ".txt" sources with no extension
+                    // TODO: add ".txt" for sources with no extension
                     var fileName = Uri.UnescapeDataString(segments.First().Url.Segments.Last());
                     var target = new FileInfo(fileName);
                     await _archiver.ArchiveFileAsync(new FileToArchive(target, streams), cancellationToken);
