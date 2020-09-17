@@ -5400,24 +5400,6 @@
     "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout-s%20Redirector%20Assistant%20List/TorRedirectorList.json"
   },
   {
-    "filterListId": 858,
-    "id": 901,
-    "primariness": 1,
-    "url": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt"
-  },
-  {
-    "filterListId": 858,
-    "id": 902,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter.txt"
-  },
-  {
-    "filterListId": 858,
-    "id": 903,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter.txt"
-  },
-  {
     "filterListId": 859,
     "id": 904,
     "primariness": 1,
@@ -11682,24 +11664,6 @@
     "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersForMinerBlock.txt"
   },
   {
-    "filterListId": 1879,
-    "id": 1948,
-    "primariness": 1,
-    "url": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains.txt"
-  },
-  {
-    "filterListId": 1879,
-    "id": 1949,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-domains.txt"
-  },
-  {
-    "filterListId": 1879,
-    "id": 1950,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains.txt"
-  },
-  {
     "filterListId": 1880,
     "id": 1951,
     "primariness": 1,
@@ -13710,24 +13674,6 @@
     "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/UndertaleRemoverForSoundCloud.txt"
   },
   {
-    "filterListId": 2164,
-    "id": 2286,
-    "primariness": 1,
-    "url": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf"
-  },
-  {
-    "filterListId": 2164,
-    "id": 2287,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-dnsmasq.conf"
-  },
-  {
-    "filterListId": 2164,
-    "id": 2288,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq.conf"
-  },
-  {
     "filterListId": 2165,
     "id": 2289,
     "primariness": 1,
@@ -13744,24 +13690,6 @@
     "id": 2291,
     "primariness": 3,
     "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf"
-  },
-  {
-    "filterListId": 2166,
-    "id": 2292,
-    "primariness": 1,
-    "url": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt"
-  },
-  {
-    "filterListId": 2166,
-    "id": 2293,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-hosts.txt"
-  },
-  {
-    "filterListId": 2166,
-    "id": 2294,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts.txt"
   },
   {
     "filterListId": 2167,
@@ -13782,24 +13710,6 @@
     "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt"
   },
   {
-    "filterListId": 2168,
-    "id": 2298,
-    "primariness": 1,
-    "url": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind.conf"
-  },
-  {
-    "filterListId": 2168,
-    "id": 2299,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-bind.conf"
-  },
-  {
-    "filterListId": 2168,
-    "id": 2300,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind.conf"
-  },
-  {
     "filterListId": 2169,
     "id": 2301,
     "primariness": 1,
@@ -13816,24 +13726,6 @@
     "id": 2303,
     "primariness": 3,
     "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind-online.conf"
-  },
-  {
-    "filterListId": 2170,
-    "id": 2304,
-    "primariness": 1,
-    "url": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound.conf"
-  },
-  {
-    "filterListId": 2170,
-    "id": 2305,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-unbound.conf"
-  },
-  {
-    "filterListId": 2170,
-    "id": 2306,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound.conf"
   },
   {
     "filterListId": 2171,
