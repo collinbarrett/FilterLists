@@ -16768,5 +16768,29 @@
     "issuesUrl": "https://github.com/pexcn/daily/issues",
     "licenseId": 4,
     "name": "Chinaroute (IPv6)"
+  },
+  {
+    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
+    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "id": 2419,
+    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "licenseId": 28,
+    "name": "urlhaus-filter (AdGuard Home)"
+  },
+  {
+    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
+    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "id": 2420,
+    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "licenseId": 28,
+    "name": "urlhaus-filter (AdGuard)"
+  },
+  {
+    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
+    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "id": 2421,
+    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "licenseId": 28,
+    "name": "urlhaus-filter (Vivaldi)"
   }
 ]
