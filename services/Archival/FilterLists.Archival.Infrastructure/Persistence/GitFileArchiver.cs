@@ -37,13 +37,13 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             if (strategy is default(IFileWriteStrategy))
             {
                 _logger.LogWarning(
-                    "No write strategy found for {Filename}. Skipping",
+                    "No write strategy found for {FileName}. Skipping",
                     file.Target.Name);
             }
             else
             {
                 _logger.LogDebug(
-                    "Writing {Filename} with strategy {FileWriteStrategy}",
+                    "Writing {FileName} with strategy {FileWriteStrategy}",
                     file.Target.Name,
                     strategy.GetType().Name);
 
@@ -52,19 +52,19 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                 // TODO: write to _options.RepositoryPath
                 await strategy.WriteAsync(file, cancellationToken);
 
-                _logger.LogDebug("Finished writing {Filename}", file.Target.Name);
+                _logger.LogDebug("Finished writing {FileName}", file.Target.Name);
             }
         }
 
         public void Commit()
         {
-            var filenames = _writtenFiles.Select(f => f.Name).ToList();
-            Commands.Stage(_repo, filenames);
+            var fileNames = _writtenFiles.Select(f => f.Name).ToList();
+            Commands.Stage(_repo, fileNames);
             var signature = new Signature(_options.UserName, _options.UserEmail, DateTime.UtcNow);
-            var message =  $"feat(archives): archive {filenames.Count} files{Environment.NewLine}{string.Join(Environment.NewLine, filenames)}";
+            var message =  $"feat(archives): archive {fileNames.Count} files{Environment.NewLine}{string.Join(Environment.NewLine, fileNames)}";
             _repo.Commit(message, signature, signature);
 
-            _logger.LogDebug("Committed {@Filenames}", filenames);
+            _logger.LogDebug("Committed {@FileNames}", fileNames);
         }
 
         public void Dispose()
