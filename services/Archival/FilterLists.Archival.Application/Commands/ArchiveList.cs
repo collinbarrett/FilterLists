@@ -93,7 +93,12 @@ namespace FilterLists.Archival.Application.Commands
             {
                 using var response = await _httpClient.GetAsync(url, cancellationToken);
                 response.EnsureSuccessStatusCode();
-                return await response.Content.ReadAsStreamAsync();
+                var sourceStream = await response.Content.ReadAsStreamAsync();
+
+                // TODO: verify efficiency. buffered to MemoryStream because Stream from HttpClient is disposed prematurely
+                var targetStream = new MemoryStream();
+                await sourceStream.CopyToAsync(targetStream, cancellationToken);
+                return targetStream;
             }
         }
     }
