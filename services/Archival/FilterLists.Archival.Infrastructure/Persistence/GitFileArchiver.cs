@@ -48,6 +48,8 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                     strategy.GetType().Name);
 
                 _writtenFiles.Add(file.Target);
+
+                // TODO: write to _options.RepositoryPath
                 await strategy.WriteAsync(file, cancellationToken);
 
                 _logger.LogDebug("Finished writing {Filename}", file.Target.Name);

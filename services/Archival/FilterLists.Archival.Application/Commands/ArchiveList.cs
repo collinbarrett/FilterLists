@@ -53,12 +53,7 @@ namespace FilterLists.Archival.Application.Commands
                 var segments = await GetSegmentsAsync(request.ListId, cancellationToken);
                 if (segments.Count > 0)
                 {
-                    var fetchTasks = segments.Select(s => FetchStreamAsync(s.Url, cancellationToken));
-                    var streams = await Task.WhenAll(fetchTasks);
-
-                    // TODO: add ".txt" to no extension source names
-                    var target = new FileInfo(Uri.UnescapeDataString(segments.First().Url.Segments.Last()));
-                    await _archiver.ArchiveFileAsync(new FileToArchive(target, streams), cancellationToken);
+                    await DownloadSegments(segments, cancellationToken);
                     _archiver.Commit();
 
                     _logger.LogDebug(
@@ -68,7 +63,7 @@ namespace FilterLists.Archival.Application.Commands
                 }
                 else
                 {
-                    _logger.LogInformation("List {ListId} has no view URLs to archive", request.ListId);
+                    _logger.LogInformation("List {ListId} has no URLs to archive", request.ListId);
                 }
 
                 return Unit.Value;
@@ -87,18 +82,37 @@ namespace FilterLists.Archival.Application.Commands
                        new List<ListDetailsViewUrlVm>();
             }
 
-            private async Task<Stream> FetchStreamAsync(
-                Uri url,
+            private async Task DownloadSegments(
+                IReadOnlyCollection<ListDetailsViewUrlVm> segments,
                 CancellationToken cancellationToken)
             {
-                using var response = await _httpClient.GetAsync(url, cancellationToken);
-                response.EnsureSuccessStatusCode();
-                var sourceStream = await response.Content.ReadAsStreamAsync();
+                var responses = new List<HttpResponseMessage>();
+                try
+                {
+                    var readTasks = new List<Task<Stream>>();
+                    foreach (var segment in segments)
+                    {
+                        var response = await _httpClient.GetAsync(segment.Url, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
+                        responses.Add(response);
+                        response.EnsureSuccessStatusCode();
+                        readTasks.Add(response.Content.ReadAsStreamAsync());
+                    }
 
-                // TODO: verify efficiency. buffered to MemoryStream because Stream from HttpClient is disposed prematurely
-                var targetStream = new MemoryStream();
-                await sourceStream.CopyToAsync(targetStream, cancellationToken);
-                return targetStream;
+                    var streams = await Task.WhenAll(readTasks);
+
+                    // TODO: prefix fileName with listId
+                    // TODO: add ".txt" sources with no extension
+                    var fileName = Uri.UnescapeDataString(segments.First().Url.Segments.Last());
+                    var target = new FileInfo(fileName);
+                    await _archiver.ArchiveFileAsync(new FileToArchive(target, streams), cancellationToken);
+                }
+                finally
+                {
+                    foreach (var response in responses)
+                    {
+                        response.Dispose();
+                    }
+                }
             }
         }
     }
