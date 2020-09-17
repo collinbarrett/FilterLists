@@ -2600,10 +2600,6 @@
     "syntaxId": 11
   },
   {
-    "filterListId": 858,
-    "syntaxId": 4
-  },
-  {
     "filterListId": 859,
     "syntaxId": 3
   },
@@ -6316,10 +6312,6 @@
     "syntaxId": 13
   },
   {
-    "filterListId": 1879,
-    "syntaxId": 2
-  },
-  {
     "filterListId": 1880,
     "syntaxId": 2
   },
@@ -7432,32 +7424,16 @@
     "syntaxId": 3
   },
   {
-    "filterListId": 2164,
-    "syntaxId": 20
-  },
-  {
     "filterListId": 2165,
     "syntaxId": 20
-  },
-  {
-    "filterListId": 2166,
-    "syntaxId": 1
   },
   {
     "filterListId": 2167,
     "syntaxId": 1
   },
   {
-    "filterListId": 2168,
-    "syntaxId": 26
-  },
-  {
     "filterListId": 2169,
     "syntaxId": 26
-  },
-  {
-    "filterListId": 2170,
-    "syntaxId": 24
   },
   {
     "filterListId": 2171,
@@ -8458,5 +8434,17 @@
   {
     "filterListId": 2418,
     "syntaxId": 41
+  },
+  {
+    "filterListId": 2419,
+    "syntaxId": 47
+  },
+  {
+    "filterListId": 2420,
+    "syntaxId": 6
+  },
+  {
+    "filterListId": 2421,
+    "syntaxId": 6
   }
 ]

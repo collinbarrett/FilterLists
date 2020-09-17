@@ -5223,14 +5223,6 @@
     "name": "Tor Redirector List"
   },
   {
-    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
-    "id": 858,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
-    "licenseId": 28,
-    "name": "urlhaus-filter"
-  },
-  {
     "description": "It seems to me that a common thought process on porn sites are \"Hey, do you know what would've made this cute woman even sexier? I know. We should give her a dick!\". Well, not anymore, thanks to this list.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
@@ -10268,7 +10260,7 @@
     "id": 1603,
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
     "licenseId": 28,
-    "name": "urlhaus-filter (Online)"
+    "name": "urlhaus-filter"
   },
   {
     "description": "Have you ever been watching «Pinkie Cooper and the Jet Set Pets» on DailyMotion, but you keep getting distracted by all the trend-based recommendations below the video player? This list will help focus your attention on the video instead.",
@@ -12650,18 +12642,10 @@
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
     "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
-    "id": 1879,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
-    "licenseId": 28,
-    "name": "urlhaus-filter (Domains)"
-  },
-  {
-    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
     "id": 1880,
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
     "licenseId": 28,
-    "name": "urlhaus-filter (Online Domains)"
+    "name": "urlhaus-filter (Domains)"
   },
   {
     "homeUrl": "https://github.com/angelics/pfbng",
@@ -14707,7 +14691,7 @@
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
     "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
-    "id": 2164,
+    "id": 2165,
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (dnsmasq)"
@@ -14715,15 +14699,7 @@
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
     "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
-    "id": 2165,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
-    "licenseId": 28,
-    "name": "urlhaus-filter (Online Domains - dnsmasq)"
-  },
-  {
-    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
-    "id": 2166,
+    "id": 2167,
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (hosts)"
@@ -14731,15 +14707,7 @@
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
     "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
-    "id": 2167,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
-    "licenseId": 28,
-    "name": "urlhaus-filter (Online hosts)"
-  },
-  {
-    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
-    "id": 2168,
+    "id": 2169,
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (BIND)"
@@ -14747,26 +14715,10 @@
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
     "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
-    "id": 2169,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
-    "licenseId": 28,
-    "name": "urlhaus-filter (Online Domains - BIND)"
-  },
-  {
-    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
-    "id": 2170,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
-    "licenseId": 28,
-    "name": "urlhaus-filter (Unbound)"
-  },
-  {
-    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
     "id": 2171,
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
     "licenseId": 28,
-    "name": "urlhaus-filter (Online Domains - Unbound)"
+    "name": "urlhaus-filter (Unbound)"
   },
   {
     "description": "Sites engaged in spreading malware",
@@ -16768,5 +16720,29 @@
     "issuesUrl": "https://github.com/pexcn/daily/issues",
     "licenseId": 4,
     "name": "Chinaroute (IPv6)"
+  },
+  {
+    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
+    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "id": 2419,
+    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "licenseId": 28,
+    "name": "urlhaus-filter (AdGuard Home)"
+  },
+  {
+    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
+    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "id": 2420,
+    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "licenseId": 28,
+    "name": "urlhaus-filter (AdGuard)"
+  },
+  {
+    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
+    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "id": 2421,
+    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "licenseId": 28,
+    "name": "urlhaus-filter (Vivaldi)"
   }
 ]
