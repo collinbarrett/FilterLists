@@ -15646,5 +15646,23 @@
     "id": 2608,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/pexcn/daily/gh-pages/chnroute/chnroute-v6.txt"
+  },
+  {
+    "filterListId": 2419,
+    "id": 2609,
+    "primariness": 1,
+    "url": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-agh-online.txt"
+  },
+  {
+    "filterListId": 2420,
+    "id": 2610,
+    "primariness": 1,
+    "url": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-ag-online.txt"
+  },
+  {
+    "filterListId": 2421,
+    "id": 2611,
+    "primariness": 1,
+    "url": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-vivaldi-online.txt"
   }
 ]
