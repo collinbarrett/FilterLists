@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Archival.Application.Models;
+using FilterLists.Archival.Infrastructure.Clients;
 using FilterLists.Archival.Infrastructure.Persistence;
 using FilterLists.SharedKernel.Apis.Clients;
 using FilterLists.SharedKernel.Apis.Contracts.Directory;
@@ -29,19 +29,19 @@ namespace FilterLists.Archival.Application.Commands
         public class Handler : IRequestHandler<Command, Unit>
         {
             private readonly IFileArchiver _archiver;
+            private readonly IFileClient _client;
             private readonly IDirectoryApi _directory;
-            private readonly HttpClient _httpClient;
             private readonly ILogger _logger;
 
             public Handler(
                 IFileArchiver archiver,
+                IFileClient fileClient,
                 IDirectoryApi directory,
-                IHttpClientFactory httpClientFactory,
                 ILogger<Handler> logger)
             {
                 _archiver = archiver;
+                _client = fileClient;
                 _directory = directory;
-                _httpClient = httpClientFactory.CreateClient();
                 _logger = logger;
             }
 
@@ -86,34 +86,20 @@ namespace FilterLists.Archival.Application.Commands
                 IReadOnlyCollection<ListDetailsViewUrlVm> segments,
                 CancellationToken cancellationToken)
             {
-                var responses = new List<HttpResponseMessage>();
-                try
+                var downloads = new List<Task<Stream>>();
+                foreach (var segment in segments)
                 {
-                    var readTasks = new List<Task<Stream>>();
-                    foreach (var segment in segments)
-                    {
-                        // TODO: add Polly for resiliency
-                        var response = await _httpClient.GetAsync(segment.Url, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
-                        responses.Add(response);
-                        response.EnsureSuccessStatusCode();
-                        readTasks.Add(response.Content.ReadAsStreamAsync());
-                    }
-
-                    var streams = await Task.WhenAll(readTasks);
-
-                    // TODO: prefix fileName with listId
-                    // TODO: add ".txt" for sources with no extension
-                    var fileName = Uri.UnescapeDataString(segments.First().Url.Segments.Last());
-                    var target = new FileInfo(fileName);
-                    await _archiver.ArchiveFileAsync(new FileToArchive(target, streams), cancellationToken);
+                    downloads.Add(_client.DownloadFileAsync(segment.Url, cancellationToken));
                 }
-                finally
-                {
-                    foreach (var response in responses)
-                    {
-                        response.Dispose();
-                    }
-                }
+
+                var streams = await Task.WhenAll(downloads);
+
+                // TODO: prefix fileName with listId
+                // TODO: add ".txt" for sources with no extension
+                var fileName = Uri.UnescapeDataString(segments.First().Url.Segments.Last());
+                var target = new FileInfo(fileName);
+                var file = new FileToArchive(target, streams);
+                await _archiver.ArchiveFileAsync(file, cancellationToken);
             }
         }
     }

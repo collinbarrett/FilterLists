@@ -1,4 +1,5 @@
 ﻿using System;
+using FilterLists.Archival.Infrastructure.Clients;
 using FilterLists.Archival.Infrastructure.Persistence;
 using FilterLists.Archival.Infrastructure.Scheduling;
 using FilterLists.SharedKernel.Apis.Clients;
@@ -24,6 +25,7 @@ namespace FilterLists.Archival.Infrastructure
             services.AddSharedKernelLogging(configuration);
             services.AddSchedulingServices(configuration);
             services.AddApiClients(configuration);
+            services.AddClients();
             services.AddPersistenceServices(configuration);
         }
 
