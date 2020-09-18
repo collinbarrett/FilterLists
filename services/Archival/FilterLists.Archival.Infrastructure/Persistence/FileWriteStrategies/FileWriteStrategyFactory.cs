@@ -13,7 +13,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence.FileWriteStrategies
                 .GetTypes()
                 .FirstOrDefault(t =>
                     typeof(TFileWriteStrategy).IsAssignableFrom(t) &&
-                    string.Equals(t.Name, file.Target.Extension.TrimStart('.'), StringComparison.OrdinalIgnoreCase));
+                    string.Equals(t.Name, file.SourceExtension.TrimStart('.'), StringComparison.OrdinalIgnoreCase));
             return strategyType is default(Type)
                 ? default
                 : (TFileWriteStrategy)Activator.CreateInstance(strategyType);

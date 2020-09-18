@@ -50,15 +50,16 @@ namespace FilterLists.Archival.Application.Commands
                 _ = request ?? throw new ArgumentNullException(nameof(request));
                 _logger.LogDebug("Archiving list {ListId}", request.ListId);
 
-                var segments = await GetSegmentsAsync(request.ListId, cancellationToken);
-                if (segments.Count > 0)
+                var segmentUrls = await GetSegmentUrlsAsync(request.ListId, cancellationToken);
+                if (segmentUrls.Count > 0)
                 {
-                    await DownloadSegments(segments, cancellationToken);
+                    var file = await GetFileAsync(request.ListId, segmentUrls, cancellationToken);
+                    await _archiver.ArchiveFileAsync(file, cancellationToken);
                     _archiver.Commit();
 
                     _logger.LogDebug(
                         "Archived segments {@SegmentNumbers} of list {ListId}",
-                        segments.Select(s => s.SegmentNumber),
+                        segmentUrls.Select(s => s.SegmentNumber),
                         request.ListId);
                 }
                 else
@@ -69,7 +70,7 @@ namespace FilterLists.Archival.Application.Commands
                 return Unit.Value;
             }
 
-            private async Task<List<ListDetailsViewUrlVm>> GetSegmentsAsync(
+            private async Task<List<ListDetailsViewUrlVm>> GetSegmentUrlsAsync(
                 int listId,
                 CancellationToken cancellationToken)
             {
@@ -82,24 +83,30 @@ namespace FilterLists.Archival.Application.Commands
                        new List<ListDetailsViewUrlVm>();
             }
 
-            private async Task DownloadSegments(
-                IReadOnlyCollection<ListDetailsViewUrlVm> segments,
+            private async Task<FileToArchive> GetFileAsync(
+                int listId,
+                IReadOnlyCollection<ListDetailsViewUrlVm> segmentUrls,
+                CancellationToken cancellationToken)
+            {
+                var contentsAsync = GetContentsAsync(segmentUrls, cancellationToken);
+                var sourceFileName = Uri.UnescapeDataString(segmentUrls.First().Url.Segments.Last());
+                var sourceExtension = Path.GetExtension(sourceFileName);
+                var target = new FileInfo($"{listId}.txt");
+                return new FileToArchive(sourceExtension, await contentsAsync, target);
+            }
+
+            // TODO: IAsyncEnumerable?
+            private async Task<IEnumerable<Stream>> GetContentsAsync(
+                IEnumerable<ListDetailsViewUrlVm> segmentUrls,
                 CancellationToken cancellationToken)
             {
                 var downloads = new List<Task<Stream>>();
-                foreach (var segment in segments)
+                foreach (var segment in segmentUrls)
                 {
                     downloads.Add(_client.DownloadFileAsync(segment.Url, cancellationToken));
                 }
 
-                var streams = await Task.WhenAll(downloads);
-
-                // TODO: prefix fileName with listId
-                // TODO: add ".txt" for sources with no extension
-                var fileName = Uri.UnescapeDataString(segments.First().Url.Segments.Last());
-                var target = new FileInfo(fileName);
-                var file = new FileToArchive(target, streams);
-                await _archiver.ArchiveFileAsync(file, cancellationToken);
+                return await Task.WhenAll(downloads);
             }
         }
     }

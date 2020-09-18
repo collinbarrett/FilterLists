@@ -6,13 +6,15 @@ namespace FilterLists.Archival.Application.Models
 {
     internal class FileToArchive : IFileToArchive
     {
-        public FileToArchive(FileInfo target, IEnumerable<Stream> contents)
+        public FileToArchive(string sourceExtension, IEnumerable<Stream> contents, FileInfo target)
         {
-            Target = target;
+            SourceExtension = sourceExtension;
             Contents = contents;
+            Target = target;
         }
 
-        public FileInfo Target { get; }
+        public string SourceExtension { get; }
         public IEnumerable<Stream> Contents { get; }
+        public FileInfo Target { get; }
     }
 }
