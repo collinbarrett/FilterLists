@@ -31,29 +31,36 @@ namespace FilterLists.Archival.Infrastructure.Persistence
 
         public async Task ArchiveFileAsync(
             IFileToArchive file,
-            CancellationToken cancellationToken = default)
+            CancellationToken cancellationToken)
         {
-            var strategy = file.GetStrategy<IFileWriteStrategy>();
-            if (strategy is default(IFileWriteStrategy))
+            var textStreams = new List<Stream>();
+            await foreach (var segment in file.Segments.WithCancellation(cancellationToken))
             {
-                _logger.LogWarning(
-                    "No write strategy found for {FileName}. Skipping",
-                    file.Target.Name);
+                var strategy = segment.GetStrategy<IFileStreamConversionStrategy>();
+                if (strategy is default(IFileStreamConversionStrategy))
+                {
+                    _logger.LogWarning(
+                        "No file stream conversion strategy found for extension {Extension} in target {Target}. Skipping file",
+                        segment.SourceExtension,
+                        file.Target);
+                    break;
+                }
+
+                textStreams.Add(strategy.Convert(segment, cancellationToken));
             }
-            else
+
+            _logger.LogDebug("Writing {FileName}", file.Target.Name);
+
+            _writtenFiles.Add(file.Target);
+
+            // TODO: write to _options.RepositoryPath
+            await using var target = file.Target.OpenWrite();
+            foreach (var textStream in textStreams)
             {
-                _logger.LogDebug(
-                    "Writing {FileName} with strategy {FileWriteStrategy}",
-                    file.Target.Name,
-                    strategy.GetType().Name);
-
-                _writtenFiles.Add(file.Target);
-
-                // TODO: write to _options.RepositoryPath
-                await strategy.WriteAsync(file, cancellationToken);
-
-                _logger.LogDebug("Finished writing {FileName}", file.Target.Name);
+                await textStream.CopyToAsync(target, cancellationToken);
             }
+
+            _logger.LogDebug("Finished writing {FileName}", file.Target.Name);
         }
 
         public void Commit()
@@ -61,7 +68,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             var fileNames = _writtenFiles.Select(f => f.Name).ToList();
             Commands.Stage(_repo, fileNames);
             var signature = new Signature(_options.UserName, _options.UserEmail, DateTime.UtcNow);
-            var message =  $"feat(archives): archive {fileNames.Count} files{Environment.NewLine}{string.Join(Environment.NewLine, fileNames)}";
+            var message = $"feat(archives): archive {fileNames.Count} files{Environment.NewLine}{string.Join(Environment.NewLine, fileNames)}";
             _repo.Commit(message, signature, signature);
 
             _logger.LogDebug("Committed {@FileNames}", fileNames);

@@ -5,9 +5,13 @@ namespace FilterLists.Archival.Infrastructure.Persistence
 {
     public interface IFileToArchive
     {
-        // for now, assume all source segments have same extension
-        string SourceExtension { get; }
-        IEnumerable<Stream> Contents { get; }
+        IAsyncEnumerable<IFileToArchiveSegment> Segments { get; }
         FileInfo Target { get; }
+    }
+
+    public interface IFileToArchiveSegment
+    {
+        string SourceExtension { get; }
+        Stream Contents { get; }
     }
 }

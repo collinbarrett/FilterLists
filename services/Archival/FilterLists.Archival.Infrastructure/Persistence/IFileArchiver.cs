@@ -8,6 +8,6 @@ namespace FilterLists.Archival.Infrastructure.Persistence
     {
         Task ArchiveFileAsync(
             IFileToArchive file,
-            CancellationToken cancellationToken = default);
+            CancellationToken cancellationToken);
     }
 }

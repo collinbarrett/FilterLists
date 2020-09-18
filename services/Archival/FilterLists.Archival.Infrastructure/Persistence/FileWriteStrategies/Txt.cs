@@ -1,20 +1,16 @@
 ﻿using System;
+using System.IO;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace FilterLists.Archival.Infrastructure.Persistence.FileWriteStrategies
 {
-    public class Txt : IFileWriteStrategy
+    public class Txt : IFileStreamConversionStrategy
     {
-        public async Task WriteAsync(IFileToArchive file, CancellationToken cancellationToken = default)
+        public Stream Convert(IFileToArchiveSegment segment, CancellationToken cancellationToken)
         {
-            _ = file ?? throw new ArgumentNullException(nameof(file));
+            _ = segment ?? throw new ArgumentNullException(nameof(segment));
 
-            await using var target = file.Target.OpenWrite();
-            foreach (var source in file.Contents)
-            {
-                await source.CopyToAsync(target, cancellationToken);
-            }
+            return segment.Contents;
         }
     }
 }
