@@ -2,7 +2,6 @@
 using FilterLists.Archival.Application.Commands;
 using FilterLists.Archival.Infrastructure;
 using FilterLists.Archival.Infrastructure.Scheduling;
-using Hangfire;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
@@ -37,7 +36,7 @@ namespace FilterLists.Archival.Application
 #if DEBUG
             new EnqueueArchiveAllLists.Command().EnqueueBackgroundJob();
 #else
-            new EnqueueArchiveAllLists.Command().AddOrUpdateRecurringJob(Cron.Daily);
+            new EnqueueArchiveAllLists.Command().AddOrUpdateRecurringJob(Hangfire.Cron.Daily);
 #endif
         }
     }
