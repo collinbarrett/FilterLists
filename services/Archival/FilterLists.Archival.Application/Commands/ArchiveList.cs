@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -90,7 +91,7 @@ namespace FilterLists.Archival.Application.Commands
                 CancellationToken cancellationToken)
             {
                 var segmentsAsync = GetSegmentsAsync(segmentUrls, cancellationToken);
-                var target = new FileInfo($"{listId}.txt");
+                var target = new FileInfo($"{listId.ToString(CultureInfo.InvariantCulture).PadLeft(5, '0')}.txt");
                 return new FileToArchive(segmentsAsync, target);
             }
 
@@ -98,7 +99,7 @@ namespace FilterLists.Archival.Application.Commands
                 IEnumerable<ListDetailsViewUrlVm> segmentUrls,
                 [EnumeratorCancellation] CancellationToken cancellationToken)
             {
-                foreach (var segment in segmentUrls)
+                foreach (var segment in segmentUrls) 
                 {
                     var sourceFileName = Uri.UnescapeDataString(segment.Url.Segments.Last());
                     var sourceExtension = Path.GetExtension(sourceFileName);
