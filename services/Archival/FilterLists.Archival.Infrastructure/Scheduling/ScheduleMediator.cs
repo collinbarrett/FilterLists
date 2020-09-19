@@ -16,6 +16,11 @@ namespace FilterLists.Archival.Infrastructure.Scheduling
             BackgroundJob.Enqueue<HangfireMediator>(m => m.Send(request, CancellationToken.None));
         }
 
+        public static void ScheduleBackgroundJob(this IRequest request, TimeSpan delay)
+        {
+            BackgroundJob.Schedule<HangfireMediator>(m => m.Send(request, CancellationToken.None), delay);
+        }
+
         public static void AddOrUpdateRecurringJob(this IRequest request, Func<string> cronExpression)
         {
             RecurringJob.AddOrUpdate<HangfireMediator>(m => m.Send(request, CancellationToken.None), cronExpression);
