@@ -15556,5 +15556,23 @@
     "id": 2611,
     "primariness": 1,
     "url": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-vivaldi-online.txt"
+  },
+  {
+    "filterListId": 2422,
+    "id": 2612,
+    "primariness": 1,
+    "url": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-agh.txt"
+  },
+  {
+    "filterListId": 2423,
+    "id": 2613,
+    "primariness": 1,
+    "url": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-ag.txt"
+  },
+  {
+    "filterListId": 2424,
+    "id": 2614,
+    "primariness": 1,
+    "url": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-vivaldi.txt"
   }
 ]

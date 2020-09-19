@@ -16744,5 +16744,29 @@
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (Vivaldi)"
+  },
+  {
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "id": 2422,
+    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "licenseId": 8,
+    "name": "phishing-filter (AdGuard Home)"
+  },
+  {
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "id": 2423,
+    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "licenseId": 8,
+    "name": "phishing-filter (AdGuard)"
+  },
+  {
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "id": 2424,
+    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "licenseId": 8,
+    "name": "phishing-filter (Vivaldi)"
   }
 ]
