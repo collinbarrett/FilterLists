@@ -25,9 +25,8 @@ namespace FilterLists.Archival.Application.Commands
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-                var lists = await _directory.GetListsAsync(cancellationToken);
                 var r = new Random();
-                foreach (var list in lists.OrderBy(_ => r.Next()))
+                foreach (var list in (await _directory.GetListsAsync(cancellationToken)).OrderBy(_ => r.Next()))
                 {
                     new ArchiveList.Command(list.Id).EnqueueBackgroundJob();
                 }
