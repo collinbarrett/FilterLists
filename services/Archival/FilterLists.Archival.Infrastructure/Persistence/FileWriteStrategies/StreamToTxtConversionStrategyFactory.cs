@@ -4,20 +4,19 @@ using System.Reflection;
 
 namespace FilterLists.Archival.Infrastructure.Persistence.FileWriteStrategies
 {
-    internal static class FileStreamConversionStrategyFactory
+    internal static class StreamToTxtConversionStrategyFactory
     {
-        public static TFileStreamConversionStrategy? GetStrategy<TFileStreamConversionStrategy>(
-            this IFileToArchiveSegment segment)
-            where TFileStreamConversionStrategy : class, IFileStreamConversionStrategy
+        public static TStreamToTxtConversionStrategy? GetStrategy<TStreamToTxtConversionStrategy>(
+            this IFileSegment segment) where TStreamToTxtConversionStrategy : class, IStreamToTxtConversionStrategy
         {
             var strategyType = Assembly.GetExecutingAssembly()
                 .GetTypes()
                 .FirstOrDefault(t =>
-                    typeof(TFileStreamConversionStrategy).IsAssignableFrom(t) &&
+                    typeof(TStreamToTxtConversionStrategy).IsAssignableFrom(t) &&
                     string.Equals(t.Name, segment.SourceExtension.TrimStart('.'), StringComparison.OrdinalIgnoreCase));
             return strategyType is default(Type)
                 ? default
-                : (TFileStreamConversionStrategy)Activator.CreateInstance(strategyType);
+                : (TStreamToTxtConversionStrategy)Activator.CreateInstance(strategyType);
         }
     }
 }

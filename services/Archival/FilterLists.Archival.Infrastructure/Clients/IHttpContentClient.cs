@@ -7,17 +7,22 @@ using System.Threading.Tasks;
 
 namespace FilterLists.Archival.Infrastructure.Clients
 {
-    internal sealed class FileClient : IFileClient
+    public interface IHttpContentClient : IDisposable
+    {
+        Task<Stream> GetContentAsync(Uri url, CancellationToken cancellationToken);
+    }
+
+    internal sealed class HttpContentClient : IHttpContentClient
     {
         private readonly HttpClient _httpClient;
         private readonly ICollection<HttpResponseMessage> _httpResponseMessages = new List<HttpResponseMessage>();
 
-        public FileClient(HttpClient httpClient)
+        public HttpContentClient(HttpClient httpClient)
         {
             _httpClient = httpClient;
         }
 
-        public async Task<Stream> DownloadFileAsync(Uri url, CancellationToken cancellationToken)
+        public async Task<Stream> GetContentAsync(Uri url, CancellationToken cancellationToken)
         {
             var response = await _httpClient.GetAsync(url, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
             _httpResponseMessages.Add(response);
@@ -31,8 +36,6 @@ namespace FilterLists.Archival.Infrastructure.Clients
             {
                 message.Dispose();
             }
-
-            _httpClient.Dispose();
         }
     }
 }

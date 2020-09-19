@@ -6,21 +6,27 @@ using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Archival.Infrastructure.Options;
 using FilterLists.Archival.Infrastructure.Persistence.FileWriteStrategies;
+using FilterLists.SharedKernel.SeedWork;
 using LibGit2Sharp;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
 namespace FilterLists.Archival.Infrastructure.Persistence
 {
-    internal sealed class GitFileArchiver : IFileArchiver
+    public interface ITxtFileRepository : IUnitOfWork
+    {
+        Task AddFileAsync(IFile file, CancellationToken cancellationToken);
+    }
+
+    internal sealed class GitTxtFileRepository : ITxtFileRepository
     {
         private readonly ILogger _logger;
         private readonly GitOptions _options;
         private readonly IRepository _repo;
         private readonly ICollection<FileInfo> _writtenFiles = new HashSet<FileInfo>();
 
-        public GitFileArchiver(
-            ILogger<GitFileArchiver> logger,
+        public GitTxtFileRepository(
+            ILogger<GitTxtFileRepository> logger,
             IOptions<GitOptions> gitOptions,
             IRepository repository)
         {
@@ -29,32 +35,29 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             _repo = repository;
         }
 
-        public async Task ArchiveFileAsync(
-            IFileToArchive file,
-            CancellationToken cancellationToken)
+        public async Task AddFileAsync(IFile file, CancellationToken cancellationToken)
         {
             var textStreams = new List<Stream>();
             await foreach (var segment in file.Segments.WithCancellation(cancellationToken))
             {
-                var strategy = segment.GetStrategy<IFileStreamConversionStrategy>();
-                if (strategy is default(IFileStreamConversionStrategy))
+                var strategy = segment.GetStrategy<IStreamToTxtConversionStrategy>();
+                if (strategy is default(IStreamToTxtConversionStrategy))
                 {
                     _logger.LogWarning(
-                        "No file stream conversion strategy found for extension {Extension} for target {Target}. Skipping file",
+                        "No stream to txt conversion strategy found for extension {Extension} for target {Target}. Skipping file",
                         segment.SourceExtension,
-                        file.Target.Name);
+                        file.TargetFileName);
                     return;
                 }
 
                 textStreams.Add(strategy.Convert(segment, cancellationToken));
             }
 
-            _logger.LogDebug("Writing {FileName}", file.Target.Name);
+            _logger.LogDebug("Writing {FileName}", file.TargetFileName);
 
-            _writtenFiles.Add(file.Target);
-
-            // TODO: write to _options.RepositoryPath
-            await using var target = file.Target.OpenWrite();
+            var fileInfo = new FileInfo(Path.Combine(_options.RepositoryPath, file.TargetFileName));
+            _writtenFiles.Add(fileInfo);
+            await using var target = fileInfo.OpenWrite();
 
             // TODO: validate multi-segment lists are concatenated correctly and in order
             foreach (var textStream in textStreams)
@@ -62,14 +65,14 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                 await textStream.CopyToAsync(target, cancellationToken);
             }
 
-            _logger.LogDebug("Finished writing {FileName}", file.Target.Name);
+            _logger.LogDebug("Finished writing {FileName}", file.TargetFileName);
         }
 
         public void Commit()
         {
             var fileNames = _writtenFiles.Select(f => f.Name).ToList();
             var signature = new Signature(_options.UserName, _options.UserEmail, DateTime.UtcNow);
-            var message = $"feat(archives): archive {fileNames.Count} files{Environment.NewLine}{string.Join(Environment.NewLine, fileNames)}";
+            var message = $"feat(archives): archive {fileNames.Count} file(s){Environment.NewLine}{string.Join(Environment.NewLine, fileNames)}";
             Commands.Stage(_repo, fileNames);
             _repo.Commit(message, signature, signature);
 

@@ -8,7 +8,7 @@ namespace FilterLists.Archival.Infrastructure.Clients
     {
         public static void AddClients(this IServiceCollection services)
         {
-            services.AddHttpClient<IFileClient, FileClient>()
+            services.AddHttpClient<IHttpContentClient, HttpContentClient>()
                 .AddTransientHttpErrorPolicy(b => b.WaitAndRetryAsync(new[]
                 {
                     TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(5), TimeSpan.FromSeconds(10)

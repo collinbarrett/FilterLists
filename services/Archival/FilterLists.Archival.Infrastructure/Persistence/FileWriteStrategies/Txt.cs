@@ -4,13 +4,13 @@ using System.Threading;
 
 namespace FilterLists.Archival.Infrastructure.Persistence.FileWriteStrategies
 {
-    public class Txt : IFileStreamConversionStrategy
+    public class Txt : IStreamToTxtConversionStrategy
     {
-        public Stream Convert(IFileToArchiveSegment segment, CancellationToken cancellationToken)
+        public Stream Convert(IFileSegment fileSegment, CancellationToken cancellationToken)
         {
-            _ = segment ?? throw new ArgumentNullException(nameof(segment));
+            _ = fileSegment ?? throw new ArgumentNullException(nameof(fileSegment));
 
-            return segment.Contents;
+            return fileSegment.Contents;
         }
     }
 }

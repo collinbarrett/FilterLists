@@ -3,13 +3,13 @@ using System.IO;
 
 namespace FilterLists.Archival.Infrastructure.Persistence
 {
-    public interface IFileToArchive
+    public interface IFile
     {
-        IAsyncEnumerable<IFileToArchiveSegment> Segments { get; }
-        FileInfo Target { get; }
+        IAsyncEnumerable<IFileSegment> Segments { get; }
+        string TargetFileName { get; }
     }
 
-    public interface IFileToArchiveSegment
+    public interface IFileSegment
     {
         string SourceExtension { get; }
         Stream Contents { get; }

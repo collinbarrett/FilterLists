@@ -4,21 +4,21 @@ using FilterLists.Archival.Infrastructure.Persistence;
 
 namespace FilterLists.Archival.Application.Models
 {
-    internal class FileToArchive : IFileToArchive
+    internal class File : IFile
     {
-        public FileToArchive(IAsyncEnumerable<IFileToArchiveSegment> segments, FileInfo target)
+        public File(IAsyncEnumerable<IFileSegment> segments, string targetFileName)
         {
             Segments = segments;
-            Target = target;
+            TargetFileName = targetFileName;
         }
 
-        public IAsyncEnumerable<IFileToArchiveSegment> Segments { get; }
-        public FileInfo Target { get; }
+        public IAsyncEnumerable<IFileSegment> Segments { get; }
+        public string TargetFileName { get; }
     }
 
-    internal class FileToArchiveSegment : IFileToArchiveSegment
+    internal class FileSegment : IFileSegment
     {
-        public FileToArchiveSegment(string sourceExtension, Stream contents)
+        public FileSegment(string sourceExtension, Stream contents)
         {
             SourceExtension = sourceExtension;
             Contents = contents;
