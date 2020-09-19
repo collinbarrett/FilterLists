@@ -43,7 +43,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                         "No file stream conversion strategy found for extension {Extension} in target {Target}. Skipping file",
                         segment.SourceExtension,
                         file.Target);
-                    break;
+                    return;
                 }
 
                 textStreams.Add(strategy.Convert(segment, cancellationToken));
