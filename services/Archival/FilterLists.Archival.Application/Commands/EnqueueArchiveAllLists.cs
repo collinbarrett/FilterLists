@@ -29,15 +29,18 @@ namespace FilterLists.Archival.Application.Commands
                 var lists = (await _directory.GetListsAsync(cancellationToken)).OrderBy(_ => r.Next()).ToList();
 
                 int numToArchive;
+                TimeSpan spacing;
 #if DEBUG
                 numToArchive = 25;
+                spacing = TimeSpan.FromSeconds(2.5);
 #else
                 numToArchive = lists.Count;
+                spacing = TimeSpan.FromSeconds((double)86400 / lists.Count);
 #endif
 
                 for (var i = 0; i < numToArchive; i++)
                 {
-                    new ArchiveList.Command(lists[i].Id).EnqueueBackgroundJob();
+                    new ArchiveList.Command(lists[i].Id).ScheduleBackgroundJob(i * spacing);
                 }
 
                 return Unit.Value;
