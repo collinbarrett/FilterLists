@@ -78,9 +78,7 @@ namespace FilterLists.Archival.Application.Commands
             {
                 var listDetails = await _directory.GetListDetailsAsync(listId, cancellationToken);
                 return listDetails.ViewUrls?
-                           .GroupBy(u => u.SegmentNumber)
-                           .Select(g => g.OrderBy(u => u.Primariness))
-                           .FirstOrDefault()
+                           .GroupBy(u => u.SegmentNumber, (_, g) => g.OrderBy(e => e.Primariness).First())
                            ?.ToList() ??
                        new List<ListDetailsViewUrlVm>();
             }
