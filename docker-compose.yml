@@ -19,7 +19,6 @@ services:
       - archival
     depends_on:
       - archival-scheduling-db
-      - directory-api
     volumes:
       - archival-application-insights:/app/${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
       - archival-archives:/app/${ARCHIVAL_GIT_REPOSITORY_PATH}
