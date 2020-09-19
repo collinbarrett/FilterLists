@@ -24,8 +24,7 @@ namespace FilterLists.Archival.Infrastructure.Scheduling
 
         public static void UseScheduling(this IApplicationBuilder app)
         {
-            // TODO: re-evaluate git in parallel
-            app.UseHangfireServer(new BackgroundJobServerOptions {WorkerCount = 1});
+            app.UseHangfireServer(new BackgroundJobServerOptions {WorkerCount = Environment.ProcessorCount});
         }
     }
 }

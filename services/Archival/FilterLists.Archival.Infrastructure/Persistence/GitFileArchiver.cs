@@ -68,9 +68,9 @@ namespace FilterLists.Archival.Infrastructure.Persistence
         public void Commit()
         {
             var fileNames = _writtenFiles.Select(f => f.Name).ToList();
-            Commands.Stage(_repo, fileNames);
             var signature = new Signature(_options.UserName, _options.UserEmail, DateTime.UtcNow);
             var message = $"feat(archives): archive {fileNames.Count} files{Environment.NewLine}{string.Join(Environment.NewLine, fileNames)}";
+            Commands.Stage(_repo, fileNames);
             _repo.Commit(message, signature, signature);
 
             _logger.LogDebug("Committed {@FileNames}", fileNames);
