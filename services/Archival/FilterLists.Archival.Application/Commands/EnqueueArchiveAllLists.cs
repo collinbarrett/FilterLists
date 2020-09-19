@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using FilterLists.Archival.Infrastructure.Scheduling;
 using FilterLists.SharedKernel.Apis.Clients;
 using MediatR;
+using Microsoft.Extensions.Logging;
 
 namespace FilterLists.Archival.Application.Commands
 {
@@ -17,10 +18,12 @@ namespace FilterLists.Archival.Application.Commands
         public class Handler : IRequestHandler<Command, Unit>
         {
             private readonly IDirectoryApi _directory;
+            private readonly ILogger _logger;
 
-            public Handler(IDirectoryApi directory)
+            public Handler(IDirectoryApi directory, ILogger<Handler> logger)
             {
                 _directory = directory;
+                _logger = logger;
             }
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
@@ -28,17 +31,18 @@ namespace FilterLists.Archival.Application.Commands
                 var r = new Random();
                 var lists = (await _directory.GetListsAsync(cancellationToken)).OrderBy(_ => r.Next()).ToList();
 
-                int numToArchive;
+                int archiveCount;
                 TimeSpan spacing;
 #if DEBUG
-                numToArchive = 25;
+                archiveCount = 25;
                 spacing = TimeSpan.FromSeconds(2.5);
 #else
-                numToArchive = lists.Count;
+                archiveCount = lists.Count;
                 spacing = TimeSpan.FromSeconds((double)86400 / lists.Count);
+                _logger.LogDebug("Enqueuing archival of {ArchiveCount} lists spaced {Spacing} seconds apart.", archiveCount, spacing.Seconds);
 #endif
 
-                for (var i = 0; i < numToArchive; i++)
+                for (var i = 0; i < archiveCount; i++)
                 {
                     new ArchiveList.Command(lists[i].Id).ScheduleBackgroundJob(i * spacing);
                 }
