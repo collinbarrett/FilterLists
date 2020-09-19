@@ -39,8 +39,9 @@ namespace FilterLists.Archival.Application.Commands
 #else
                 archiveCount = lists.Count;
                 spacing = TimeSpan.FromSeconds((double)86400 / lists.Count);
-                _logger.LogDebug("Enqueuing archival of {ArchiveCount} lists spaced {Spacing} seconds apart.", archiveCount, spacing.Seconds);
 #endif
+
+                _logger.LogDebug("Enqueuing archival of {ArchiveCount} lists spaced {Spacing} seconds apart.", archiveCount, spacing.Seconds);
 
                 for (var i = 0; i < archiveCount; i++)
                 {
