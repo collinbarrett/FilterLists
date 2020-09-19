@@ -40,9 +40,9 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                 if (strategy is default(IFileStreamConversionStrategy))
                 {
                     _logger.LogWarning(
-                        "No file stream conversion strategy found for extension {Extension} in target {Target}. Skipping file",
+                        "No file stream conversion strategy found for extension {Extension} for target {Target}. Skipping file",
                         segment.SourceExtension,
-                        file.Target);
+                        file.Target.Name);
                     return;
                 }
 
