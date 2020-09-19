@@ -26,9 +26,18 @@ namespace FilterLists.Archival.Application.Commands
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
                 var r = new Random();
-                foreach (var list in (await _directory.GetListsAsync(cancellationToken)).OrderBy(_ => r.Next()))
+                var lists = (await _directory.GetListsAsync(cancellationToken)).OrderBy(_ => r.Next()).ToList();
+
+                int numToArchive;
+#if DEBUG
+                numToArchive = 25;
+#else
+                numToArchive = lists.Count;
+#endif
+
+                for (var i = 0; i < numToArchive; i++)
                 {
-                    new ArchiveList.Command(list.Id).EnqueueBackgroundJob();
+                    new ArchiveList.Command(lists[i].Id).EnqueueBackgroundJob();
                 }
 
                 return Unit.Value;

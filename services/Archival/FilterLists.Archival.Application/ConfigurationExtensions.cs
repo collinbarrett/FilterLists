@@ -33,7 +33,12 @@ namespace FilterLists.Archival.Application
         private static void ScheduleArchival(this IApplicationBuilder app)
         {
             _ = app ?? throw new ArgumentNullException(nameof(app));
+
+#if DEBUG
+            new EnqueueArchiveAllLists.Command().EnqueueBackgroundJob();
+#else
             new EnqueueArchiveAllLists.Command().AddOrUpdateRecurringJob(Cron.Daily);
+#endif
         }
     }
 }
