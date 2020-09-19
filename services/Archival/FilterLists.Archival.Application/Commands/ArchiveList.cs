@@ -97,7 +97,6 @@ namespace FilterLists.Archival.Application.Commands
                 IEnumerable<ListDetailsViewUrlVm> segmentUrls,
                 [EnumeratorCancellation] CancellationToken cancellationToken)
             {
-                // TODO: validate multi-segment lists are archived correctly
                 foreach (var segment in segmentUrls)
                 {
                     var sourceFileName = Uri.UnescapeDataString(segment.Url.Segments.Last());

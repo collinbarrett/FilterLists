@@ -55,6 +55,8 @@ namespace FilterLists.Archival.Infrastructure.Persistence
 
             // TODO: write to _options.RepositoryPath
             await using var target = file.Target.OpenWrite();
+
+            // TODO: validate multi-segment lists are archived correctly
             foreach (var textStream in textStreams)
             {
                 await textStream.CopyToAsync(target, cancellationToken);
