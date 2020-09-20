@@ -17,7 +17,7 @@
 
 <p align="center"><b>Directory API:</b>
 <a href="https://filterlists.com/api"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=Directory%20API" alt="Directory API" /></a>
-<img alt="Swagger Validator" src="https://img.shields.io/swagger/valid/3.0?specUrl=https%3A%2F%2Ffilterlists.com%2Fapi%2Fv1%2Fswagger.json">
+<a href="https://filterlists.com/api/v1/swagger.json"><img alt="Swagger Validator" src="https://img.shields.io/swagger/valid/3.0?specUrl=https%3A%2F%2Ffilterlists.com%2Fapi%2Fv1%2Fswagger.json" alt="Directory API Swagger" ></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=27"><img src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Directory%20API?branchName=master" alt="FilterLists Directory API - Azure DevOps builds" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=3"><img src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4" alt="FilterLists Directory API - Azure DevOps releases" /></a>
 <a href="https://github.com/users/collinbarrett/packages/container/package/filterlists-directory-api"><img src="https://img.shields.io/badge/docker%20image-filterlists--directory--api-blue" alt="FilterLists Directory API - Docker Image" /></a>
