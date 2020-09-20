@@ -22,7 +22,11 @@ const { Header, Content, Footer } = Layout;
 
 export const App: React.FC = () => (
   <Router>
-    <Layout>
+    <Layout
+      style={{
+        background: "#fff",
+      }}
+    >
       <Header style={{ background: "#fff" }}>
         <Logo />
         <Menu mode="horizontal" style={{ lineHeight: "64px" }} />
