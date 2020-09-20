@@ -22,19 +22,14 @@ const { Header, Content, Footer } = Layout;
 
 export const App: React.FC = () => (
   <Router>
-    <Layout
-      style={{
-        background: "#fff",
-      }}
-    >
-      <Header style={{ background: "#fff" }}>
+    <Layout>
+      <Header>
         <Logo />
         <Menu mode="horizontal" style={{ lineHeight: "64px" }} />
       </Header>
       <Content>
         <div
           style={{
-            background: "#fff",
             paddingLeft: 12,
             paddingTop: 12,
             paddingRight: 12,
@@ -51,7 +46,6 @@ export const App: React.FC = () => (
         style={{
           textAlign: "center",
           padding: "6px 50px",
-          background: "#fff",
           lineHeight: "28px",
         }}
       >
@@ -73,7 +67,6 @@ const Logo = () => (
       src={`${process.env.PUBLIC_URL}/logo_filterlists.png`}
       alt="FilterLists logo"
       height="44px"
-      style={{ background: "#fff" }}
     />
   </Link>
 );

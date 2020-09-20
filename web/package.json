@@ -50,6 +50,8 @@
   "devDependencies": {
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
     "prettier": "^2.1.2"
   }
 }
