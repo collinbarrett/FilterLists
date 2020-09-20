@@ -30,4 +30,8 @@
         <ProjectReference Include="..\FilterLists.Archival.Application\FilterLists.Archival.Application.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+        <TrimmerRootAssembly Include="mscorlib" />
+    </ItemGroup>
+
 </Project>
