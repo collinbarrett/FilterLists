@@ -15,8 +15,12 @@ export const SubscribeButtons = (props: Props) =>
         name={props.name}
         viewUrl={props.viewUrls[0]}
         text="Subscribe"
+        isPrimary={true}
       />
-      <MirrorButtons name={props.name} viewUrlMirrors={props.viewUrls.slice(1)} />
+      <MirrorButtons
+        name={props.name}
+        viewUrlMirrors={props.viewUrls.slice(1)}
+      />
     </>
   ) : null;
 
@@ -34,6 +38,7 @@ const MirrorButtons = (props: MirrorButtonsProps) => (
             name={props.name}
             viewUrl={viewUrlMirror}
             text={`Subscribe (Mirror ${i + 1})`}
+            isPrimary={false}
           />
         ))
       : null}
@@ -44,10 +49,15 @@ interface SubscribeButtonProps {
   name: string;
   viewUrl: string;
   text: string;
+  isPrimary: boolean;
 }
 
 const SubscribeButton = (props: SubscribeButtonProps) => {
-  const buttonProps = buildButtonProps(props.name, props.viewUrl);
+  const buttonProps = buildButtonProps(
+    props.name,
+    props.viewUrl,
+    props.isPrimary
+  );
   return (
     <Button
       disabled={buttonProps.disabled}
@@ -62,8 +72,12 @@ const SubscribeButton = (props: SubscribeButtonProps) => {
   );
 };
 
-const buildButtonProps = (name: string, viewUrl: string) => {
-  let type: ButtonType = "primary";
+const buildButtonProps = (
+  name: string,
+  viewUrl: string,
+  isPrimary: boolean
+) => {
+  let type: ButtonType = isPrimary ? "primary" : "default";
   let disabled: boolean = false;
 
   const hrefLocation = `${encodeURIComponent(viewUrl)}`;

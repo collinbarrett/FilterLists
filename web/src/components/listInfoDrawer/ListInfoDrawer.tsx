@@ -10,7 +10,6 @@ import {
   HomeOutlined,
   MailOutlined,
   MessageOutlined,
-  SearchOutlined,
   TeamOutlined,
 } from "@ant-design/icons";
 import React, { useEffect, useState } from "react";
@@ -20,6 +19,7 @@ import { Description } from "../Description";
 import { LanguageCloud } from "../languageCloud";
 import { LicenseTag } from "../LicenseTag";
 import { LinkButton } from "../LinkButton";
+import { ViewButtons } from "../ViewButtons";
 import { Maintainers } from "../maintainers";
 import { RouteComponentProps } from "react-router-dom";
 import { SoftwareCloud } from "../softwareCloud";
@@ -73,7 +73,7 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
     };
   }, [list, originalTitle, listName]);
   const viewUrlModels = list?.viewUrls.filter((u) => u.segmentNumber === 1);
-  const viewUrls = viewUrlModels == null ? [] : viewUrlModels.map(u => u.url);
+  const viewUrls = viewUrlModels == null ? [] : viewUrlModels.map((u) => u.url);
   return list ? (
     <Drawer
       visible={true}
@@ -100,18 +100,10 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
       <Divider />
       <ButtonGroup style={{ display: "inherit" }}>
         {viewUrls.length && (
-          <SubscribeButtons
-            name={list.name}
-            viewUrls={viewUrls}
-          />
+          <SubscribeButtons name={list.name} viewUrls={viewUrls} />
         )}
-        {viewUrlModels && (
-          <LinkButton
-            url={viewUrls[0]}
-            text="View"
-            title={`View ${list.name} in its raw format`}
-            icon={<SearchOutlined />}
-          />
+        {viewUrls.length && (
+          <ViewButtons name={list.name} viewUrls={viewUrls} />
         )}
         <LinkButton
           url={list.homeUrl}
