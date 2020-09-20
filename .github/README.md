@@ -1,39 +1,40 @@
 <p align="center"><img src="https://github.com/collinbarrett/FilterLists/blob/master/imgs/logo_filterlists.png"></p>
 
 <p align="center">
-<a href="https://twitter.com/FilterLists"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/FilterLists?style=social"></a>
-<a href="https://hub.filterlists.com"><img alt="Discourse status" src="https://img.shields.io/discourse/https/hub.filterlists.com/status.svg"></a>
 <a href="https://github.com/collinbarrett/FilterLists/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/collinbarrett/filterlists.svg"></a>
-<a href="https://builtwithdot.net/project/125/filterlists"><img alt="BuiltWithDot.Net shield" src="https://builtwithdot.net/project/125/filterlists/badge" /></a>
-<a href="https://madewithreactjs.com/p/filterlists/shield-link"><img alt="MadeWithReactJS.com shield" src="https://madewithreactjs.com/storage/repo-shields/2335-shield.svg"/></a>
+<a href="https://twitter.com/FilterLists"><img alt="Twitter" src="https://img.shields.io/twitter/follow/FilterLists?style=social"></a>
+<a href="https://hub.filterlists.com"><img alt="Discourse" src="https://img.shields.io/discourse/https/hub.filterlists.com/status.svg"></a>
+<a href="https://builtwithdot.net/project/125/filterlists"><img alt="BuiltWithDot.net" src="https://builtwithdot.net/project/125/filterlists/badge" /></a>
+<a href="https://madewithreactjs.com/p/filterlists/shield-link"><img alt="MadeWithReactJS.com" src="https://madewithreactjs.com/storage/repo-shields/2335-shield.svg"/></a>
 <br/>FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</p>
 
 <p align="center"><b>Website:</b>
 <a href="https://filterlists.com/"><img alt="Website" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=Website" /></a>
-<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=18"><img alt="FilterLists Web - Azure DevOps builds" src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Web?branchName=master" /></a>
-<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=4"><img alt="FilterLists Web - Azure DevOps releases" src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/4/5" /></a>
-<a href="https://github.com/users/collinbarrett/packages/container/package/filterlists-web"><img alt="FilterLists Web - Docker Image" src="https://img.shields.io/badge/docker%20image-filterlists--web-blue" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=18"><img alt="Azure DevOps builds" src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Web?branchName=master" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=4"><img alt="Azure DevOps releases" src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/4/5" /></a>
+<a href="https://github.com/users/collinbarrett/packages/container/package/filterlists-web"><img alt="Docker Image" src="https://img.shields.io/badge/docker%20image-filterlists--web-blue" /></a>
 <br/>A React & TypeScript UI built with Ant Design.</p>
 
 <p align="center"><b>Directory API:</b>
-<a href="https://filterlists.com/api"><img alt="Directory API" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=Directory%20API" /></a>
-<a href="https://filterlists.com/api/v1/swagger.json"><img alt="Directory API Swagger" src="https://img.shields.io/swagger/valid/3.0?specUrl=https%3A%2F%2Ffilterlists.com%2Fapi%2Fv1%2Fswagger.json" ></a>
-<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=27"><img alt="FilterLists Directory API - Azure DevOps builds" src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Directory%20API?branchName=master" /></a>
-<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=3"><img alt="FilterLists Directory API - Azure DevOps releases" src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4" /></a>
-<a href="https://github.com/users/collinbarrett/packages/container/package/filterlists-directory-api"><img alt="FilterLists Directory API - Docker Image" src="https://img.shields.io/badge/docker%20image-filterlists--directory--api-blue" /></a>
+<a href="https://filterlists.com/api"><img alt="Swagger UI" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=Directory%20API" /></a>
+<a href="https://filterlists.com/api/v1/swagger.json"><img alt="OpenAPI Specification" src="https://img.shields.io/swagger/valid/3.0?specUrl=https%3A%2F%2Ffilterlists.com%2Fapi%2Fv1%2Fswagger.json" ></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=27"><img alt="Azure DevOps builds" src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Directory%20API?branchName=master" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=3"><img alt="Azure DevOps releases" src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4" /></a>
+<a href="https://github.com/users/collinbarrett/packages/container/package/filterlists-directory-api"><img alt="Docker Image" src="https://img.shields.io/badge/docker%20image-filterlists--directory--api-blue" /></a>
 <br/>An ASP.NET Core API CRUD-ing with a Postgres instance via EF Core.</p>
 
 <p align="center"><b>Archival API:</b>
-<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=29"><img alt="FilterLists Archival API - Azure DevOps builds" src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Archival%20API?branchName=master" /></a>
-<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=7"><img alt="FilterLists Archival API - Azure DevOps releases" src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/7/8" /></a>
-<a href="https://github.com/users/collinbarrett/packages/container/package/filterlists-archival-api"><img alt="FilterLists Archival API - Docker Image" src="https://img.shields.io/badge/docker%20image-filterlists--archival--api-blue" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=29"><img alt="Azure DevOps builds" src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Archival%20API?branchName=master" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=7"><img alt="Azure DevOps releases" src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/7/8" /></a>
+<a href="https://github.com/users/collinbarrett/packages/container/package/filterlists-archival-api"><img alt="Docker Image" src="https://img.shields.io/badge/docker%20image-filterlists--archival--api-blue" /></a>
 <br/>A .NET Core app archiving copies of FilterLists for mirrors and future analysis.</p>
 
 <p align="center"><b>Reverse Proxy:</b>
-<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=21"><img alt="FilterLists Reverse Proxy - Azure DevOps builds" src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Reverse%20Proxy?branchName=master" /></a>
-<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=5"><img alt="FilterLists Reverse Proxy - Azure DevOps releases" src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/5/6" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=21"><img alt="Azure DevOps builds" src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Reverse%20Proxy?branchName=master" /></a>
+<a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=5"><img alt="Azure DevOps releases" src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/5/6" /></a>
 <a href="https://observatory.mozilla.org/analyze/filterlists.com"><img alt="Mozilla HTTP Observatory Grade" src="https://img.shields.io/mozilla-observatory/grade/filterlists.com?publish"></a>
-<img alt="Chromium HSTS preload" src="https://img.shields.io/hsts/preload/filterlists.com">
+<a href="https://securityheaders.com/?q=https%3A%2F%2Ffilterlists.com"><img alt="Security Headers" src="https://img.shields.io/security-headers?url=https%3A%2F%2Ffilterlists.com"></a>
+<a href="https://hstspreload.org/?domain=filterlists.com"><img alt="Chromium HSTS preload" src="https://img.shields.io/hsts/preload/filterlists.com"></a>
 <br/>An NGINX instance forwarding requests to the respective services above.</p>
 
 # Background
