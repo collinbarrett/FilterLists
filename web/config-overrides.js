@@ -13,7 +13,7 @@ module.exports = override(
       modifyVars: {
         ...getThemeVariables({
           dark: true,
-          // compact: true,
+          compact: true,
         }),
       },
     },

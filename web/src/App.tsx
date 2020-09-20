@@ -6,7 +6,7 @@ import {
   TeamOutlined,
   TwitterOutlined,
 } from "@ant-design/icons";
-import { Layout, Menu, Tag } from "antd";
+import { Layout, Tag } from "antd";
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -25,14 +25,12 @@ export const App: React.FC = () => (
     <Layout>
       <Header style={{ background: "#000" }}>
         <Logo />
-        <Menu mode="horizontal" style={{ lineHeight: "64px" }} />
       </Header>
       <Content>
         <div
           style={{
-            paddingLeft: 12,
-            paddingTop: 12,
-            paddingRight: 12,
+            paddingLeft: 4,
+            paddingRight: 4,
             minHeight: 280,
           }}
         >
@@ -45,8 +43,6 @@ export const App: React.FC = () => (
       <Footer
         style={{
           textAlign: "center",
-          padding: "6px 50px",
-          lineHeight: "28px",
         }}
       >
         <CopyrightAuthor />

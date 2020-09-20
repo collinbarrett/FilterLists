@@ -1,5 +1,3 @@
-import "./listsTable.css";
-
 import {
   Key,
   SorterResult,
