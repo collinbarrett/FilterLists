@@ -30,7 +30,8 @@ COPY Archival/FilterLists.Archival.Infrastructure/. Archival/FilterLists.Archiva
 COPY Archival/FilterLists.Archival.Application/. Archival/FilterLists.Archival.Application/
 WORKDIR /app/Archival/FilterLists.Archival.Api
 COPY Archival/FilterLists.Archival.Api/. .
-RUN dotnet publish -c Release --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r linux-musl-x64
+#RUN dotnet publish -c Release --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r linux-musl-x64
+RUN dotnet publish -c Release --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -p:PublishReadyToRun=true -p:PublishSingleFile=true -r linux-musl-x64
 
 # package final
 FROM base AS final
