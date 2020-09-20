@@ -72,9 +72,8 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
       document.title = originalTitle;
     };
   }, [list, originalTitle, listName]);
-  const viewUrl = list?.viewUrls.find(
-    (u) => u.primariness === 1 && u.segmentNumber === 1
-  )?.url;
+  const viewUrlModels = list?.viewUrls.filter((u) => u.segmentNumber === 1);
+  const viewUrls = viewUrlModels == null ? [] : viewUrlModels.map(u => u.url);
   return list ? (
     <Drawer
       visible={true}
@@ -100,16 +99,15 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
       <Maintainers maintainers={listMaintainers} />
       <Divider />
       <ButtonGroup style={{ display: "inherit" }}>
-        {viewUrl && (
+        {viewUrls.length && (
           <SubscribeButtons
             name={list.name}
-            viewUrl={viewUrl}
-            viewUrlMirrors={[]}
+            viewUrls={viewUrls}
           />
         )}
-        {viewUrl && (
+        {viewUrlModels && (
           <LinkButton
-            url={viewUrl}
+            url={viewUrls[0]}
             text="View"
             title={`View ${list.name} in its raw format`}
             icon={<SearchOutlined />}

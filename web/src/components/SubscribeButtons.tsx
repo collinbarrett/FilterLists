@@ -5,25 +5,24 @@ import React from "react";
 
 interface Props {
   name: string;
-  viewUrl: string;
-  viewUrlMirrors: string[];
+  viewUrls: string[];
 }
 
 export const SubscribeButtons = (props: Props) =>
-  props.viewUrl ? (
+  props.viewUrls.length ? (
     <>
       <SubscribeButton
         name={props.name}
-        viewUrl={props.viewUrl}
+        viewUrl={props.viewUrls[0]}
         text="Subscribe"
       />
-      <MirrorButtons name={props.name} viewUrlMirrors={props.viewUrlMirrors} />
+      <MirrorButtons name={props.name} viewUrlMirrors={props.viewUrls.slice(1)} />
     </>
   ) : null;
 
 interface MirrorButtonsProps {
   name: string;
-  viewUrlMirrors: string[];
+  viewUrlMirrors: string[] | undefined;
 }
 
 const MirrorButtons = (props: MirrorButtonsProps) => (
