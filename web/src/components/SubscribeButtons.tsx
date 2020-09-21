@@ -60,7 +60,7 @@ const SubscribeButton = (props: SubscribeButtonProps) => {
   );
   return (
     <Button
-      disabled={buttonProps.disabled}
+      hidden={buttonProps.disabled}
       block
       icon={<ImportOutlined />}
       type={buttonProps.type}
@@ -78,7 +78,7 @@ const buildButtonProps = (
   isPrimary: boolean
 ) => {
   let type: ButtonType = isPrimary ? "primary" : "default";
-  let disabled: boolean = false;
+  let hidden: boolean = false;
 
   const hrefLocation = `${encodeURIComponent(viewUrl)}`;
   const hrefTitle = `${encodeURIComponent(name)}`;
@@ -99,7 +99,8 @@ const buildButtonProps = (
 
   // Software protocols
   if (viewUrl.includes(".tpl")) {
-    disabled = true; // IE not supported by FilterLists
+    href = `https://filterlists.com/tpl.html`;
+    message = `Subscribe via FilterList's TPL page.`;
   }
   if (
     viewUrl.includes(".lsrules") ||
@@ -109,9 +110,18 @@ const buildButtonProps = (
     message = `Subscribe to ${name} with Little Snitch's rule group subscription feature.`;
   }
 
+  // Formats
+  if (
+    viewUrl.includes(".zip") ||
+    viewUrl.includes(".7z") ||
+    viewUrl.includes(".tar.gz")
+  ) {
+    hidden = true; // no known software supports subscribing to compressed lists
+  }
+
   const title = `${
     prefixes.length ? prefixes.join(" | ") + " | " : ""
   }${message}`;
 
-  return { disabled, type, href, title };
+  return { disabled: hidden, type, href, title };
 };
