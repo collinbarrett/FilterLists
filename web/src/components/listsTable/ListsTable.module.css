@@ -21,4 +21,7 @@
   /* eliminate top and bottom padding in cells to fit more rows per page */
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+
+  /* override td.ant-table-column-sort making fixed columns transparent */
+  background: rgb(20, 20, 20) !important;
 }
