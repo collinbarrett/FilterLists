@@ -7683,13 +7683,13 @@
     "filterListId": 1291,
     "id": 1284,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Twitter%20De-Politificator.txt"
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/Twitter%20De-Politificator.txt"
   },
   {
     "filterListId": 1291,
     "id": 1285,
     "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Twitter%20De-Politificator.txt"
+    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Sensitive%20lists/Twitter%20De-Politificator.txt"
   },
   {
     "filterListId": 1292,
@@ -8775,13 +8775,13 @@
     "filterListId": 1459,
     "id": 1466,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiAstrologyList.txt"
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/AntiAstrologyList.txt"
   },
   {
     "filterListId": 1459,
     "id": 1467,
     "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiAstrologyList.txt"
+    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Sensitive%20lists/AntiAstrologyList.txt"
   },
   {
     "filterListId": 1460,
@@ -9309,13 +9309,13 @@
     "filterListId": 1554,
     "id": 1555,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPrayerTimesList.txt"
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/AntiPrayerTimesList.txt"
   },
   {
     "filterListId": 1554,
     "id": 1556,
     "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPrayerTimesList.txt"
+    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Sensitive%20lists/AntiPrayerTimesList.txt"
   },
   {
     "filterListId": 1555,
@@ -9963,25 +9963,25 @@
     "filterListId": 1635,
     "id": 1664,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion%20Sprout's%20Anti-Religion%20List.txt"
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/Dandelion%20Sprout's%20Anti-Religion%20List.txt"
   },
   {
     "filterListId": 1635,
     "id": 1665,
     "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Dandelion%20Sprout's%20Anti-Religion%20List.txt"
+    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Sensitive%20lists/Dandelion%20Sprout's%20Anti-Religion%20List.txt"
   },
   {
     "filterListId": 1636,
     "id": 1666,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiPreacherList.txt"
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/AntiPreacherList.txt"
   },
   {
     "filterListId": 1636,
     "id": 1667,
     "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiPreacherList.txt"
+    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Sensitive%20lists/AntiPreacherList.txt"
   },
   {
     "filterListId": 1637,
@@ -11259,13 +11259,13 @@
     "filterListId": 1814,
     "id": 1880,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/TabloidRemover.txt"
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/TabloidRemover.txt"
   },
   {
     "filterListId": 1814,
     "id": 1881,
     "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/TabloidRemover.txt"
+    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Sensitive%20lists/TabloidRemover.txt"
   },
   {
     "filterListId": 1815,
@@ -12435,13 +12435,13 @@
     "filterListId": 1987,
     "id": 2079,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/SayNoToRacismOnTwitch.txt"
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/SayNoToRacismOnTwitch.txt"
   },
   {
     "filterListId": 1987,
     "id": 2080,
     "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/SayNoToRacismOnTwitch.txt"
+    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Sensitive%20lists/SayNoToRacismOnTwitch.txt"
   },
   {
     "filterListId": 1988,
@@ -13629,13 +13629,13 @@
     "filterListId": 2158,
     "id": 2278,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/EkstraBladetEroticContentRemover.txt"
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/EkstraBladetEroticContentRemover.txt"
   },
   {
     "filterListId": 2158,
     "id": 2279,
     "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/EkstraBladetEroticContentRemover.txt"
+    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/Sensitive%20lists/EkstraBladetEroticContentRemover.txt"
   },
   {
     "filterListId": 2159,
@@ -15574,5 +15574,41 @@
     "id": 2614,
     "primariness": 1,
     "url": "https://gitlab.com/curben/phishing-filter/raw/master/dist/phishing-filter-vivaldi.txt"
+  }
+  {
+    "filterListId": 1985,
+    "id": 2615,
+    "primariness": 4,
+    "url": "176.103.130.131"
+  },
+  {
+    "filterListId": 1985,
+    "id": 2616,
+    "primariness": 5,
+    "url": "2a00:5a60::ad1:0ff"
+  },
+  {
+    "filterListId": 1985,
+    "id": 2617,
+    "primariness": 6,
+    "url": "2a00:5a60::ad2:0ff"
+  },
+  {
+    "filterListId": 1986,
+    "id": 2618,
+    "primariness": 1,
+    "url": "176.103.130.134"
+  },
+  {
+    "filterListId": 1986,
+    "id": 2619,
+    "primariness": 1,
+    "url": "2a00:5a60::bad1:0ff"
+  },
+  {
+    "filterListId": 1986,
+    "id": 2620,
+    "primariness": 1,
+    "url": "2a00:5a60::bad2:0ff"
   }
 ]
