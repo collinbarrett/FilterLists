@@ -13426,7 +13426,7 @@
     "name": "Imgur: Pure Imagery Experience"
   },
   {
-    "description": "AdGuard's official DNS server to remove ads and trackers. Believed to be using \"AdGuard DNS Filter\". Links that didn't fit in the Subscribe button URL texts, include 176.103.130.131 — 2a00:5a60::ad1:0ff — 2a00:5a60::ad2:0ff",
+    "description": "AdGuard's official DNS server to remove ads and trackers. Believed to be using \"AdGuard DNS Filter\".",
     "emailAddress": "support@adguard.com",
     "homeUrl": "https://adguard.com/adguard-dns/overview.html",
     "id": 1985,
@@ -13434,7 +13434,7 @@
     "name": "AdGuard DNS — Standard"
   },
   {
-    "description": "AdGuard's official DNS server to remove ads, trackers, and porn. Believed to be using \"AdGuard DNS Filter\", as well as AdGuard's Safe Search and anti-porn serverside lookups. Links that didn't fit in the Subscribe button URL texts, include 176.103.130.134 — 2a00:5a60::bad1:0ff — 2a00:5a60::bad2:0ff",
+    "description": "AdGuard's official DNS server to remove ads, trackers, and porn. Believed to be using \"AdGuard DNS Filter\", as well as AdGuard's Safe Search and anti-porn serverside lookups.",
     "emailAddress": "support@adguard.com",
     "homeUrl": "https://adguard.com/adguard-dns/overview.html",
     "id": 1986,
