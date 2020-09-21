@@ -19,7 +19,7 @@ export const useTablePageSizer = () => {
 const calculateSize = () => ({
   pageSize:
     window.innerWidth < 576
-      ? Math.floor((window.innerHeight - 220) / 37)
+      ? Math.floor((window.innerHeight - 205) / 37)
       : Math.floor((window.innerHeight - 150) / 49),
   isNarrowWindow: window.innerWidth < 576 ? true : false,
   isWideWindow: window.innerWidth > 1918 ? true : false,
