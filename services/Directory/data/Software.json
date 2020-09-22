@@ -149,6 +149,7 @@
     "downloadUrl": "https://www.slimjet.com/en/dlpage.php",
     "homeUrl": "https://www.slimjet.com",
     "id": 24,
+    "isDeleted": true,
     "name": "Slimjet",
     "supportsAbpUrlScheme": true
   },
