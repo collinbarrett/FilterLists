@@ -2,6 +2,7 @@
 FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1.7-alpine AS base
 LABEL org.opencontainers.image.description="filterlists.com | github.com/collinbarrett/filterlists | A .NET Core app archiving copies of FilterLists for mirrors and future analysis."
 WORKDIR /app
+EXPOSE 80
 
 # init build
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1.401-alpine AS build

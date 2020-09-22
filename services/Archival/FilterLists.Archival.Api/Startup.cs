@@ -1,4 +1,6 @@
-using FilterLists.Archival.Application;
+﻿using FilterLists.Archival.Application;
+using FilterLists.Archival.Infrastructure.Scheduling;
+using Hangfire;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -18,6 +20,9 @@ namespace FilterLists.Archival.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRouting(o => o.LowercaseUrls = true);
+            services.AddControllers()
+                .AddJsonOptions(o => o.JsonSerializerOptions.IgnoreNullValues = true);
             services.AddApplicationServices(Configuration);
         }
 
@@ -28,6 +33,19 @@ namespace FilterLists.Archival.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseStaticFiles();
+            app.UseRouting();
+            app.UseEndpoints(e =>
+            {
+                e.MapControllers();
+                e.MapHangfireDashboard(new DashboardOptions
+                {
+                    PrefixPath = "/api/archival/",
+                    Authorization = new[] {new DashboardAuthorizationFilter()},
+                    IsReadOnlyFunc = _ => true
+                });
+            });
         }
     }
 }
