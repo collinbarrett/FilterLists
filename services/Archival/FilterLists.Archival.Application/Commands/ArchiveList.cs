@@ -51,7 +51,7 @@ namespace FilterLists.Archival.Application.Commands
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
                 _ = request ?? throw new ArgumentNullException(nameof(request));
-                _logger.LogDebug("Archiving list {ListId}", request.ListId);
+                _logger.LogInformation("Archiving list {ListId}", request.ListId);
 
                 var segmentUrls = (await GetSegmentUrlsAsync(request.ListId, cancellationToken)).ToList();
                 if (segmentUrls.Count > 0)
@@ -60,7 +60,7 @@ namespace FilterLists.Archival.Application.Commands
                     await _repo.AddFileAsync(file, cancellationToken);
                     _repo.Commit();
 
-                    _logger.LogDebug(
+                    _logger.LogInformation(
                         "Archived segment(s) {@SegmentNumbers} of list {ListId}",
                         segmentUrls.Select(s => s.SegmentNumber),
                         request.ListId);

@@ -53,7 +53,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                 textStreams.Add(strategy.Convert(segment, cancellationToken));
             }
 
-            _logger.LogDebug("Writing {FileName}", file.TargetFileName);
+            _logger.LogInformation("Writing {FileName}", file.TargetFileName);
 
             var fileInfo = new FileInfo(Path.Combine(_options.RepositoryPath, file.TargetFileName));
             _writtenFiles.Add(fileInfo);
@@ -65,7 +65,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                 await textStream.CopyToAsync(target, cancellationToken);
             }
 
-            _logger.LogDebug("Finished writing {FileName}", file.TargetFileName);
+            _logger.LogInformation("Finished writing {FileName}", file.TargetFileName);
         }
 
         public void Commit()
@@ -76,7 +76,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             Commands.Stage(_repo, fileNames);
             _repo.Commit(message, signature, signature);
 
-            _logger.LogDebug("Committed {@FileNames}", fileNames);
+            _logger.LogInformation("Committed {@FileNames}", fileNames);
         }
 
         public void Dispose()
