@@ -41,7 +41,7 @@ namespace FilterLists.Archival.Api
                 e.MapControllers();
                 e.MapHangfireDashboard(new DashboardOptions
                 {
-                    PrefixPath = "/api/archival/",
+                    PrefixPath = "/api/archival",
                     Authorization = new[] {new DashboardAuthorizationFilter()},
                     IsReadOnlyFunc = _ => true
                 });
