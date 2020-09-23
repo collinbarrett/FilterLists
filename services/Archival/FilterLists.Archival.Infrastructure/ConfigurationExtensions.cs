@@ -1,5 +1,6 @@
 ﻿using System;
 using FilterLists.Archival.Infrastructure.Clients;
+using FilterLists.Archival.Infrastructure.Logging;
 using FilterLists.Archival.Infrastructure.Persistence;
 using FilterLists.Archival.Infrastructure.Scheduling;
 using FilterLists.SharedKernel.Apis.Clients;
@@ -22,7 +23,7 @@ namespace FilterLists.Archival.Infrastructure
         {
             _ = configuration ?? throw new ArgumentNullException(nameof(configuration));
 
-            services.AddSharedKernelLogging(configuration);
+            services.AddArchivalLogging(configuration);
             services.AddSchedulingServices(configuration);
             services.AddApiClients(configuration);
             services.AddClients();
@@ -31,7 +32,7 @@ namespace FilterLists.Archival.Infrastructure
 
         public static void UseInfrastructure(this IApplicationBuilder app)
         {
-            app.UseLogging();
+            app.UseArchivalLogging();
             app.UseScheduling();
         }
     }
