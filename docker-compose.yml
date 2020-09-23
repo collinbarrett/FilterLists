@@ -20,10 +20,8 @@ services:
     depends_on:
       - archival-scheduling-db
     volumes:
-      - archival-application-insights:/app/${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
       - archival-archives:/app/${ARCHIVAL_GIT_REPOSITORY_PATH}
     environment:
-      ApplicationInsights__ServerTelemetryChannelStoragePath: ${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
       ApplicationInsights__InstrumentationKey: ${ARCHIVAL_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
       ConnectionStrings__SchedulingConnection: ${ARCHIVAL_REDIS_CONNECTION_STRING}
       Api__DirectoryHost: ${DIRECTORY_HOST}
@@ -50,10 +48,7 @@ services:
       directory:
     depends_on:
       - directory-db
-    volumes:
-      - directory-application-insights:/app/${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
     environment:
-      ApplicationInsights__ServerTelemetryChannelStoragePath: ${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
       ApplicationInsights__InstrumentationKey: ${DIRECTORY_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
       ConnectionStrings__DirectoryConnection: ${DIRECTORY_CONNECTION_STRING}
 
@@ -75,8 +70,6 @@ networks:
   directory:
 
 volumes:
-  archival-application-insights:
   archival-scheduling-db:
   archival-archives:
-  directory-application-insights:
   directory-db:

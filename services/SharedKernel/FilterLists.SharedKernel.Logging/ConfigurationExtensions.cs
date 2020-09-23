@@ -1,7 +1,4 @@
 ﻿using System;
-using FilterLists.SharedKernel.Logging.Options;
-using Microsoft.ApplicationInsights.Channel;
-using Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,13 +18,6 @@ namespace FilterLists.SharedKernel.Logging
         {
             _ = configuration ?? throw new ArgumentNullException(nameof(configuration));
 
-            using var serverTelemetryChannel = new ServerTelemetryChannel
-            {
-                StorageFolder = configuration.GetSection(ApplicationInsightsOptions.Key)
-                    .Get<ApplicationInsightsOptions>()
-                    .ServerTelemetryChannelStoragePath
-            };
-            services.AddSingleton(typeof(ITelemetryChannel), serverTelemetryChannel);
             services.AddApplicationInsightsTelemetry();
         }
 
