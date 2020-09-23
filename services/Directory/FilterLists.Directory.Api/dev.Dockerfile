@@ -4,7 +4,7 @@ WORKDIR /app
 EXPOSE 80
 
 # init build
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1.401-alpine AS build
 ENV DOTNET_CLI_TELEMETRY_OPTOUT=true
 
 # restore API
