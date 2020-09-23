@@ -1,11 +1,11 @@
 # init base
-FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine AS base
+FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine3.12 AS base
 LABEL org.opencontainers.image.description="filterlists.com | github.com/collinbarrett/filterlists | A .NET Core app archiving copies of FilterLists for mirrors and future analysis."
 WORKDIR /app
 EXPOSE 80
 
 # init build
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine3.12 AS build
 ENV DOTNET_CLI_TELEMETRY_OPTOUT=true
 
 # restore API
@@ -31,7 +31,7 @@ COPY Archival/FilterLists.Archival.Infrastructure/. Archival/FilterLists.Archiva
 COPY Archival/FilterLists.Archival.Application/. Archival/FilterLists.Archival.Application/
 WORKDIR /app/Archival/FilterLists.Archival.Api
 COPY Archival/FilterLists.Archival.Api/. .
-RUN dotnet publish -c Release --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -p:DebugType=None -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r linux-musl-x64
+RUN dotnet publish -c Release --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -p:DebugType=None -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r alpine.3.12-x64
 
 # package final
 FROM base AS final
