@@ -1,6 +1,4 @@
-﻿using FilterLists.Directory.Application;
-using Microsoft.ApplicationInsights.Extensibility;
-using Microsoft.ApplicationInsights.Extensibility.Implementation.Tracing;
+using FilterLists.Directory.Application;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -26,16 +24,6 @@ namespace FilterLists.Directory.Api
                 .AddJsonOptions(o => o.JsonSerializerOptions.IgnoreNullValues = true);
             services.AddSwaggerGen(o => o.CustomSchemaIds(type => type.ToString()));
             services.AddApplicationServices(Configuration);
-
-            // TODO: rm after debugging complete
-            // https://docs.microsoft.com/en-us/azure/azure-monitor/app/asp-net-troubleshoot-no-data#net-core
-            services.AddSingleton<ITelemetryModule, FileDiagnosticsTelemetryModule>();
-            services.ConfigureTelemetryModule<FileDiagnosticsTelemetryModule>((module, _) =>
-            {
-                module.LogFilePath = "";
-                module.LogFileName = "appInsightsLog.txt";
-                module.Severity = "Verbose";
-            });
         }
 
         public static void Configure(IApplicationBuilder app, IWebHostEnvironment env)
