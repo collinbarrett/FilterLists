@@ -7,7 +7,6 @@ trigger:
       [
         services/Archival/azure-pipelines.api.yaml,
         services/SharedKernel/FilterLists.SharedKernel.Logging/*,
-        services/SharedKernel/FilterLists.SharedKernel.SeedWork/*,
         services/Directory/FilterLists.Directory.Api.Contracts/*,
         services/Archival/FilterLists.Archival.Infrastructure/*,
         services/Archival/FilterLists.Archival.Application/*,
@@ -27,7 +26,6 @@ pr:
       [
         services/Archival/azure-pipelines.api.yaml,
         services/SharedKernel/FilterLists.SharedKernel.Logging/*,
-        services/SharedKernel/FilterLists.SharedKernel.SeedWork/*,
         services/Directory/FilterLists.Directory.Api.Contracts/*,
         services/Archival/FilterLists.Archival.Infrastructure/*,
         services/Archival/FilterLists.Archival.Application/*,
