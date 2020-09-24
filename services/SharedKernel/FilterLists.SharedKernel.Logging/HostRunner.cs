@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Microsoft.ApplicationInsights;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 
@@ -12,10 +11,7 @@ namespace FilterLists.SharedKernel.Logging
         {
             _ = host ?? throw new ArgumentNullException(nameof(host));
 
-            var telemetryClient = (TelemetryClient)host.Services.GetService(typeof(TelemetryClient));
-            Log.Logger = ConfigurationBuilder.BaseLoggerConfiguration
-                .WriteToApplicationInsights(telemetryClient)
-                .CreateLogger();
+            Log.Logger = ConfigurationBuilder.BaseLoggerConfiguration.CreateLogger();
 
             try
             {
