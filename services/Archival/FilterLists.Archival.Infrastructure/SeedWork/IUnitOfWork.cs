@@ -2,7 +2,7 @@
 
 namespace FilterLists.Archival.Infrastructure.SeedWork
 {
-    public interface IUnitOfWork : IDisposable
+    internal interface IUnitOfWork : IDisposable
     {
         void Commit();
     }
