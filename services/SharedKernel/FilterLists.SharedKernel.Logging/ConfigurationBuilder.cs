@@ -11,7 +11,6 @@ namespace FilterLists.SharedKernel.Logging
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
                 .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
                 .Enrich.FromLogContext()
-                .WriteTo.Console()
-                .WriteTo.ApplicationInsights(TelemetryConverter.Traces);
+                .WriteTo.Console();
     }
 }
