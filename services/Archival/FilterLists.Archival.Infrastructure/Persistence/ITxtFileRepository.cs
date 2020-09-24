@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Archival.Infrastructure.Options;
 using FilterLists.Archival.Infrastructure.Persistence.FileWriteStrategies;
-using FilterLists.SharedKernel.SeedWork;
+using FilterLists.Archival.Infrastructure.SeedWork;
 using LibGit2Sharp;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
