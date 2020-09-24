@@ -8,7 +8,7 @@ namespace FilterLists.SharedKernel.Logging
 {
     public static class HostRunner
     {
-        public static async Task<int> TryRunWithLoggingAsync(this IHost host, Func<Task>? runPreHostAsync = default)
+        public static async Task TryRunWithLoggingAsync(this IHost host, Func<Task>? runPreHostAsync = default)
         {
             _ = host ?? throw new ArgumentNullException(nameof(host));
 
@@ -27,7 +27,6 @@ namespace FilterLists.SharedKernel.Logging
 
                 Log.Information("Initializing host");
                 await host.RunAsync();
-                return 0;
             }
             catch (Exception ex)
             {
