@@ -6,12 +6,11 @@ trigger:
     include:
       [
         services/Directory/azure-pipelines.api.yaml,
-        services/SharedKernel/FilterLists.SharedKernel.Apis.Contracts/*,
         services/SharedKernel/FilterLists.SharedKernel.Logging/*,
-        services/Directory/FilterLists.Directory.Domain/*,
         services/Directory/FilterLists.Directory.Infrastructure/*,
         services/Directory/FilterLists.Directory.Infrastructure.Migrations/*,
-        services/Directory/FilterLists.Directory.Application/*,
+        services/Directory/FilterLists.Directory.Api.Contracts/*,
+        services/Directory/FilterLists.Directory.Application/*,        
         services/Directory/FilterLists.Directory.Api/*,
         docker-compose.yml,
         docker-compose.prod.yml,
@@ -27,12 +26,11 @@ pr:
     include:
       [
         services/Directory/azure-pipelines.api.yaml,
-        services/SharedKernel/FilterLists.SharedKernel.Apis.Contracts/*,
         services/SharedKernel/FilterLists.SharedKernel.Logging/*,
-        services/Directory/FilterLists.Directory.Domain/*,
         services/Directory/FilterLists.Directory.Infrastructure/*,
         services/Directory/FilterLists.Directory.Infrastructure.Migrations/*,
-        services/Directory/FilterLists.Directory.Application/*,
+        services/Directory/FilterLists.Directory.Api.Contracts/*,
+        services/Directory/FilterLists.Directory.Application/*,        
         services/Directory/FilterLists.Directory.Api/*,
         docker-compose.yml,
         docker-compose.prod.yml,

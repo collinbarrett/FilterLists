@@ -1,15 +1,15 @@
 ﻿using System;
-using FilterLists.SharedKernel.Apis.Clients.Options;
+using FilterLists.Directory.Api.Contracts.Options;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Polly;
 using Refit;
 
-namespace FilterLists.SharedKernel.Apis.Clients
+namespace FilterLists.Directory.Api.Contracts
 {
     public static class ConfigurationExtensions
     {
-        public static void AddApiClients(this IServiceCollection services, IConfiguration configuration)
+        public static void AddDirectoryApiClient(this IServiceCollection services, IConfiguration configuration)
         {
             // TODO: use SystemTextJsonContentSerializer() once less feature-limited
             services.AddRefitClient<IDirectoryApi>()

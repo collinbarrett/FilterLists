@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Archival.Infrastructure.Scheduling;
-using FilterLists.SharedKernel.Apis.Clients;
+using FilterLists.Directory.Api.Contracts;
 using MediatR;
 using Microsoft.Extensions.Logging;
 

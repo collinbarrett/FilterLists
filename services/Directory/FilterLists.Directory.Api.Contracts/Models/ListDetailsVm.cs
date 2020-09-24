@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FilterLists.SharedKernel.Apis.Contracts.Directory
+namespace FilterLists.Directory.Api.Contracts.Models
 {
     public class ListDetailsVm
     {

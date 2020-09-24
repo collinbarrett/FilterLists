@@ -6,10 +6,9 @@ trigger:
     include:
       [
         services/Archival/azure-pipelines.api.yaml,
-        services/SharedKernel/FilterLists.SharedKernel.Apis.Contracts/*,
-        services/SharedKernel/FilterLists.SharedKernel.Apis.Clients/*,
         services/SharedKernel/FilterLists.SharedKernel.Logging/*,
         services/SharedKernel/FilterLists.SharedKernel.SeedWork/*,
+        services/Directory/FilterLists.Directory.Api.Contracts/*,
         services/Archival/FilterLists.Archival.Infrastructure/*,
         services/Archival/FilterLists.Archival.Application/*,
         services/Archival/FilterLists.Archival.Api/*,
@@ -27,10 +26,9 @@ pr:
     include:
       [
         services/Archival/azure-pipelines.api.yaml,
-        services/SharedKernel/FilterLists.SharedKernel.Apis.Contracts/*,
-        services/SharedKernel/FilterLists.SharedKernel.Apis.Clients/*,
         services/SharedKernel/FilterLists.SharedKernel.Logging/*,
         services/SharedKernel/FilterLists.SharedKernel.SeedWork/*,
+        services/Directory/FilterLists.Directory.Api.Contracts/*,
         services/Archival/FilterLists.Archival.Infrastructure/*,
         services/Archival/FilterLists.Archival.Application/*,
         services/Archival/FilterLists.Archival.Api/*,

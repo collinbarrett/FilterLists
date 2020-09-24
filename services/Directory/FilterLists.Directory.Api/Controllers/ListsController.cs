@@ -2,8 +2,8 @@
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using FilterLists.Directory.Api.Contracts.Models;
 using FilterLists.Directory.Application.Queries;
-using FilterLists.SharedKernel.Apis.Contracts.Directory;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;

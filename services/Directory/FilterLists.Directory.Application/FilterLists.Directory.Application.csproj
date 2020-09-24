@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FilterLists.Directory.Domain\FilterLists.Directory.Domain.csproj" />
+    <ProjectReference Include="..\FilterLists.Directory.Api.Contracts\FilterLists.Directory.Api.Contracts.csproj" />
     <ProjectReference Include="..\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj" />
   </ItemGroup>
 

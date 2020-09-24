@@ -1,4 +1,4 @@
-﻿namespace FilterLists.SharedKernel.Apis.Clients.Options
+﻿namespace FilterLists.Directory.Api.Contracts.Options
 {
     internal class ApiOptions
     {

@@ -29,7 +29,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\SharedKernel\FilterLists.SharedKernel.Apis.Clients\FilterLists.SharedKernel.Apis.Clients.csproj" />
+        <ProjectReference Include="..\..\Directory\FilterLists.Directory.Api.Contracts\FilterLists.Directory.Api.Contracts.csproj" />
         <ProjectReference Include="..\..\SharedKernel\FilterLists.SharedKernel.Logging\FilterLists.SharedKernel.Logging.csproj" />
         <ProjectReference Include="..\..\SharedKernel\FilterLists.SharedKernel.SeedWork\FilterLists.SharedKernel.SeedWork.csproj" />
     </ItemGroup>

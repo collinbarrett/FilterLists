@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.SharedKernel.Apis.Contracts.Directory;
+using FilterLists.Directory.Api.Contracts.Models;
 using Refit;
 
-namespace FilterLists.SharedKernel.Apis.Clients
+namespace FilterLists.Directory.Api.Contracts
 {
     public interface IDirectoryApi
     {

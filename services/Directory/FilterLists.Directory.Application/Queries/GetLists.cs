@@ -4,9 +4,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
+using FilterLists.Directory.Api.Contracts.Models;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
-using FilterLists.SharedKernel.Apis.Contracts.Directory;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
