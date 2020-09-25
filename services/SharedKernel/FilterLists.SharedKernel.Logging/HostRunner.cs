@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Microsoft.ApplicationInsights;
-using Microsoft.ApplicationInsights.Extensibility;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
@@ -18,16 +17,13 @@ namespace FilterLists.SharedKernel.Logging
                 .WriteTo.Conditional(
                     _ => host.Services.GetService<IHostEnvironment>().IsProduction(),
                     c => c.ApplicationInsights(
-                        host.Services.GetRequiredService<TelemetryConfiguration>(),
+                        ((IConfiguration)host.Services.GetService(typeof(IConfiguration)))[
+                            "ApplicationInsights:InstrumentationKey"],
                         TelemetryConverter.Traces))
                 .CreateLogger();
 
             try
             {
-                // TODO: rm, for debugging
-                var client = host.Services.GetService<TelemetryClient>();
-                Log.Warning("Application Insights Instrumentation Key: {InstrumentationKey}", client.InstrumentationKey);
-
                 if (runPreHostAsync != null)
                 {
                     Log.Information("Initializing pre-host");
