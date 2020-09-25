@@ -33,7 +33,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\FilterLists.Directory.Application\FilterLists.Directory.Application.csproj" />
-        <ProjectReference Include="..\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj" />
     </ItemGroup>
 
 </Project>
