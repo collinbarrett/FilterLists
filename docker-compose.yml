@@ -24,7 +24,7 @@ services:
       - archival-archives:/app/${ARCHIVAL_GIT_REPOSITORY_PATH}
     environment:
       ApplicationInsights__ServerTelemetryChannelStoragePath: ${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
-      ApplicationInsights__InstrumentationKey: ${ARCHIVAL_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
+      APPINSIGHTS_INSTRUMENTATIONKEY: ${ARCHIVAL_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
       ConnectionStrings__SchedulingConnection: ${ARCHIVAL_REDIS_CONNECTION_STRING}
       Api__DirectoryHost: ${DIRECTORY_HOST}
       Git__RepositoryPath: ${ARCHIVAL_GIT_REPOSITORY_PATH}
@@ -54,7 +54,7 @@ services:
       - directory-application-insights:/app/${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
     environment:
       ApplicationInsights__ServerTelemetryChannelStoragePath: ${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
-      ApplicationInsights__InstrumentationKey: ${DIRECTORY_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
+      APPINSIGHTS_INSTRUMENTATIONKEY: ${DIRECTORY_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
       ConnectionStrings__DirectoryConnection: ${DIRECTORY_CONNECTION_STRING}
 
   directory-db:
