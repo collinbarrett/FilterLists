@@ -23,8 +23,8 @@ services:
       - archival-application-insights:/app/${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
       - archival-archives:/app/${ARCHIVAL_GIT_REPOSITORY_PATH}
     environment:
-      ApplicationInsights__ServerTelemetryChannelStoragePath: ${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
       APPINSIGHTS_INSTRUMENTATIONKEY: ${ARCHIVAL_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
+      ApplicationInsights__ServerTelemetryChannelStoragePath: ${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}      
       ConnectionStrings__SchedulingConnection: ${ARCHIVAL_REDIS_CONNECTION_STRING}
       Api__DirectoryHost: ${DIRECTORY_HOST}
       Git__RepositoryPath: ${ARCHIVAL_GIT_REPOSITORY_PATH}
@@ -53,8 +53,8 @@ services:
     volumes:
       - directory-application-insights:/app/${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
     environment:
-      ApplicationInsights__ServerTelemetryChannelStoragePath: ${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
       APPINSIGHTS_INSTRUMENTATIONKEY: ${DIRECTORY_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
+      ApplicationInsights__ServerTelemetryChannelStoragePath: ${APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}      
       ConnectionStrings__DirectoryConnection: ${DIRECTORY_CONNECTION_STRING}
 
   directory-db:
