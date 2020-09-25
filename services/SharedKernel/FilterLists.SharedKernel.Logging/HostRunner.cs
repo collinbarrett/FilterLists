@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Microsoft.ApplicationInsights.Extensibility;
+using Microsoft.ApplicationInsights;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
@@ -13,14 +13,11 @@ namespace FilterLists.SharedKernel.Logging
         {
             _ = host ?? throw new ArgumentNullException(nameof(host));
 
+            var telemetryClient = (TelemetryClient)host.Services.GetService(typeof(TelemetryClient));
             Log.Logger = ConfigurationBuilder.BaseLoggerConfiguration
                 .WriteTo.Conditional(
                     _ => host.Services.GetService<IHostEnvironment>().IsProduction(),
-                    c => c.ApplicationInsights(
-#pragma warning disable CS0618
-                        TelemetryConfiguration.Active,
-#pragma warning restore CS0618
-                        TelemetryConverter.Traces))
+                    c => c.ApplicationInsights(telemetryClient, TelemetryConverter.Traces))
                 .CreateLogger();
 
             try

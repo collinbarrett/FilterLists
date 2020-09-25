@@ -1,9 +1,9 @@
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using FilterLists.Directory.Application;
 using FilterLists.Directory.Infrastructure.Persistence;
+using FilterLists.SharedKernel.Logging;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using static FilterLists.SharedKernel.Logging.HostRunner;
 
 namespace FilterLists.Directory.Api
 {
@@ -18,8 +18,8 @@ namespace FilterLists.Directory.Api
         public static IHostBuilder CreateHostBuilder(string[] args)
         {
             return Host.CreateDefaultBuilder(args)
-                .UseApplication()
-                .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>());
+                .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>())
+                .UseApplication();
         }
     }
 }
