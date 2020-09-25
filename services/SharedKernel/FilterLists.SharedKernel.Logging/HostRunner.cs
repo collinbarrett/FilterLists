@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.Extensibility;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,10 +23,6 @@ namespace FilterLists.SharedKernel.Logging
 
             try
             {
-                // TODO: rm, for debugging
-                var client = host.Services.GetService<TelemetryClient>();
-                Log.Warning("Application Insights Instrumentation Key: {InstrumentationKey}", client.InstrumentationKey);
-
                 if (runPreHostAsync != null)
                 {
                     Log.Information("Initializing pre-host");
