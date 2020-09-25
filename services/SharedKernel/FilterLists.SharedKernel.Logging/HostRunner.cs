@@ -17,7 +17,9 @@ namespace FilterLists.SharedKernel.Logging
                 .WriteTo.Conditional(
                     _ => host.Services.GetService<IHostEnvironment>().IsProduction(),
                     c => c.ApplicationInsights(
-                        host.Services.GetRequiredService<TelemetryConfiguration>(),
+#pragma warning disable CS0618
+                        TelemetryConfiguration.Active,
+#pragma warning restore CS0618
                         TelemetryConverter.Traces))
                 .CreateLogger();
 
