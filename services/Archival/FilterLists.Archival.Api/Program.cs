@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using FilterLists.Archival.Application;
+using FilterLists.SharedKernel.Logging;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using static FilterLists.SharedKernel.Logging.HostRunner;
 
 namespace FilterLists.Archival.Api
 {
