@@ -21,13 +21,13 @@ namespace FilterLists.SharedKernel.Logging
         {
             _ = configuration ?? throw new ArgumentNullException(nameof(configuration));
 
-            using var serverTelemetryChannel = new ServerTelemetryChannel
-            {
-                StorageFolder = configuration.GetSection(ApplicationInsightsOptions.Key)
-                    .Get<ApplicationInsightsOptions>()
-                    .ServerTelemetryChannelStoragePath
-            };
-            services.AddSingleton(typeof(ITelemetryChannel), serverTelemetryChannel);
+            //using var serverTelemetryChannel = new ServerTelemetryChannel
+            //{
+            //    StorageFolder = configuration.GetSection(ApplicationInsightsOptions.Key)
+            //        .Get<ApplicationInsightsOptions>()
+            //        .ServerTelemetryChannelStoragePath
+            //};
+            //services.AddSingleton(typeof(ITelemetryChannel), serverTelemetryChannel);
             services.AddApplicationInsightsTelemetry();
         }
 
