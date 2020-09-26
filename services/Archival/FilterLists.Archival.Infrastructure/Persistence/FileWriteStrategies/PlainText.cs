@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace FilterLists.Archival.Infrastructure.Persistence.FileWriteStrategies
 {
-    public class Txt : IStreamToTxtConversionStrategy
+    public class PlainText : IStreamToPlainTextConversionStrategy
     {
         public Stream Convert(IFileSegment fileSegment, CancellationToken cancellationToken)
         {

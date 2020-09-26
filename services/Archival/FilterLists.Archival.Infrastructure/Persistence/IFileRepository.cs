@@ -40,8 +40,8 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             var textStreams = new List<Stream>();
             await foreach (var segment in file.Segments.WithCancellation(cancellationToken))
             {
-                var strategy = segment.GetStrategy<IStreamToTxtConversionStrategy>();
-                if (strategy is default(IStreamToTxtConversionStrategy))
+                var strategy = segment.GetStrategy<IStreamToPlainTextConversionStrategy>();
+                if (strategy is default(IStreamToPlainTextConversionStrategy))
                 {
                     _logger.LogWarning(
                         "No stream to txt conversion strategy found for extension {Extension} for target {Target}. Skipping file",
