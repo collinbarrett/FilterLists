@@ -34,18 +34,18 @@ namespace FilterLists.Archival.Application.Commands
             private readonly IHttpContentClient _client;
             private readonly IDirectoryApi _directory;
             private readonly ILogger _logger;
-            private readonly ITxtFileRepository _repo;
+            private readonly IFileRepository _repo;
 
             public Handler(
                 IHttpContentClient httpContentClient,
                 IDirectoryApi directoryApi,
                 ILogger<Handler> logger,
-                ITxtFileRepository txtFileRepository)
+                IFileRepository fileRepository)
             {
                 _client = httpContentClient;
                 _directory = directoryApi;
                 _logger = logger;
-                _repo = txtFileRepository;
+                _repo = fileRepository;
             }
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
@@ -67,7 +67,7 @@ namespace FilterLists.Archival.Application.Commands
                 }
                 else
                 {
-                    _logger.LogInformation("List {ListId} has no URLs to archive", request.ListId);
+                    _logger.LogWarning("List {ListId} has no URLs to archive", request.ListId);
                 }
 
                 return Unit.Value;
@@ -89,7 +89,7 @@ namespace FilterLists.Archival.Application.Commands
                 CancellationToken cancellationToken)
             {
                 var segmentsAsync = GetSegmentsAsync(segmentUrls, cancellationToken);
-                var target = $"{listId.ToString(CultureInfo.InvariantCulture).PadLeft(5, '0')}.txt";
+                var target = listId.ToString(CultureInfo.InvariantCulture).PadLeft(5, '0');
                 return new File(segmentsAsync, target);
             }
 

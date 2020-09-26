@@ -20,7 +20,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
 
                 return new Repository(gitOptions.RepositoryPath);
             });
-            services.AddTransient<ITxtFileRepository, GitTxtFileRepository>();
+            services.AddTransient<IFileRepository, GitFileRepository>();
         }
     }
 }

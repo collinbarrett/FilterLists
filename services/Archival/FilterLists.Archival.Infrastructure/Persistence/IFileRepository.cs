@@ -13,20 +13,20 @@ using Microsoft.Extensions.Options;
 
 namespace FilterLists.Archival.Infrastructure.Persistence
 {
-    public interface ITxtFileRepository : IUnitOfWork
+    public interface IFileRepository : IUnitOfWork
     {
         Task AddFileAsync(IFile file, CancellationToken cancellationToken);
     }
 
-    internal sealed class GitTxtFileRepository : ITxtFileRepository
+    internal sealed class GitFileRepository : IFileRepository
     {
         private readonly ILogger _logger;
         private readonly GitOptions _options;
         private readonly IRepository _repo;
         private readonly ICollection<FileInfo> _writtenFiles = new HashSet<FileInfo>();
 
-        public GitTxtFileRepository(
-            ILogger<GitTxtFileRepository> logger,
+        public GitFileRepository(
+            ILogger<GitFileRepository> logger,
             IOptions<GitOptions> gitOptions,
             IRepository repository)
         {
@@ -70,13 +70,20 @@ namespace FilterLists.Archival.Infrastructure.Persistence
 
         public void Commit()
         {
-            var fileNames = _writtenFiles.Select(f => f.Name).ToList();
-            var signature = new Signature(_options.UserName, _options.UserEmail, DateTime.UtcNow);
-            var message = $"feat(archives): archive {fileNames.Count} file(s){Environment.NewLine}{string.Join(Environment.NewLine, fileNames)}";
-            Commands.Stage(_repo, fileNames);
-            _repo.Commit(message, signature, signature);
+            if (_writtenFiles.Count > 0)
+            {
+                var fileNames = _writtenFiles.Select(f => f.Name).ToList();
+                var signature = new Signature(_options.UserName, _options.UserEmail, DateTime.UtcNow);
+                var message = $"feat(archives): archive {fileNames.Count} file(s){Environment.NewLine}{string.Join(Environment.NewLine, fileNames)}";
+                Commands.Stage(_repo, fileNames);
+                _repo.Commit(message, signature, signature);
 
-            _logger.LogInformation("Committed {@FileNames}", fileNames);
+                _logger.LogInformation("Committed {@FileNames}", fileNames);
+            }
+            else
+            {
+                _logger.LogInformation("No written files to commit");
+            }
         }
 
         public void Dispose()

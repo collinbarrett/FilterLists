@@ -16,7 +16,7 @@ namespace FilterLists.Archival.Infrastructure.Clients
     internal sealed class HttpContentClient : IHttpContentClient
     {
         private readonly HttpClient _httpClient;
-        private readonly ICollection<HttpResponseMessage> _httpResponseMessages = new List<HttpResponseMessage>();
+        private readonly ICollection<HttpResponseMessage> _httpResponseMessages = new HashSet<HttpResponseMessage>();
         private readonly ILogger _logger;
 
         public HttpContentClient(HttpClient httpClient, ILogger<HttpContentClient> logger)
