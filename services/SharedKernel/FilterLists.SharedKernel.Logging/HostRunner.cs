@@ -17,7 +17,7 @@ namespace FilterLists.SharedKernel.Logging
                 .WriteTo.Conditional(
                     _ => host.Services.GetService<IHostEnvironment>().IsProduction(),
                     c => c.ApplicationInsights(
-                        TelemetryConfiguration.CreateDefault(),
+                        host.Services.GetRequiredService<TelemetryConfiguration>(),
                         TelemetryConverter.Traces))
                 .CreateLogger();
 
