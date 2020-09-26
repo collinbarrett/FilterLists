@@ -6,6 +6,9 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Directory.Api.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
+    [Produces("application/json")]
     public abstract class BaseController : ControllerBase
     {
         private readonly IMemoryCache _cache;

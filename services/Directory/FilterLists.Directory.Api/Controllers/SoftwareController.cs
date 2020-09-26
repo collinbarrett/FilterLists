@@ -9,8 +9,6 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Directory.Api.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
     public class SoftwareController : BaseController
     {
         private readonly IMediator _mediator;
