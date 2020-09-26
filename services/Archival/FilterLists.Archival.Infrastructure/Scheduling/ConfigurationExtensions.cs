@@ -1,6 +1,5 @@
 ﻿using System;
 using Hangfire;
-using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,11 +14,7 @@ namespace FilterLists.Archival.Infrastructure.Scheduling
         public static void AddSchedulingServices(this IServiceCollection services, IConfiguration configuration)
         {
             _redis = ConnectionMultiplexer.Connect(configuration.GetConnectionString("SchedulingConnection"));
-            services.AddHangfire((provider, globalConfiguration) =>
-            {
-                var mediator = provider.GetService<IMediator>();
-                globalConfiguration.UseRedisStorage(_redis).UseMediatR(mediator);
-            });
+            services.AddHangfire((_, globalConfiguration) => globalConfiguration.UseRedisStorage(_redis).UseMediatR());
         }
 
         public static void UseScheduling(this IApplicationBuilder app)
