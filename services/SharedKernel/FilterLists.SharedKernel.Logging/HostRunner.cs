@@ -14,11 +14,9 @@ namespace FilterLists.SharedKernel.Logging
             _ = host ?? throw new ArgumentNullException(nameof(host));
 
             Log.Logger = ConfigurationBuilder.BaseLoggerConfiguration
-                .WriteTo.Conditional(
-                    _ => host.Services.GetService<IHostEnvironment>().IsProduction(),
-                    c => c.ApplicationInsights(
-                        host.Services.GetRequiredService<TelemetryConfiguration>(),
-                        TelemetryConverter.Traces))
+                .WriteTo.ApplicationInsights(
+                    host.Services.GetRequiredService<TelemetryConfiguration>(),
+                    TelemetryConverter.Traces)
                 .CreateLogger();
 
             try
