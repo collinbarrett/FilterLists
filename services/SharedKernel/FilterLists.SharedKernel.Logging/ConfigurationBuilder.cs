@@ -1,4 +1,5 @@
-﻿using Serilog;
+﻿using Microsoft.ApplicationInsights;
+using Serilog;
 using Serilog.Events;
 
 namespace FilterLists.SharedKernel.Logging
@@ -12,5 +13,12 @@ namespace FilterLists.SharedKernel.Logging
                 .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
                 .Enrich.FromLogContext()
                 .WriteTo.Console();
+
+        public static LoggerConfiguration WriteToApplicationInsights(
+            this LoggerConfiguration loggerConfiguration,
+            TelemetryClient telemetryClient)
+        {
+            return loggerConfiguration.WriteTo.ApplicationInsights(telemetryClient, TelemetryConverter.Traces);
+        }
     }
 }

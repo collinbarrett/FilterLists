@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Microsoft.ApplicationInsights.Extensibility;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.ApplicationInsights;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 
@@ -9,16 +8,13 @@ namespace FilterLists.SharedKernel.Logging
 {
     public static class HostRunner
     {
-        public static async Task TryRunWithLoggingAsync(this IHost host, Func<Task>? runPreHostAsync = default)
+        public static async Task<int> TryRunWithLoggingAsync(this IHost host, Func<Task>? runPreHostAsync = default)
         {
             _ = host ?? throw new ArgumentNullException(nameof(host));
 
+            var telemetryClient = (TelemetryClient)host.Services.GetService(typeof(TelemetryClient));
             Log.Logger = ConfigurationBuilder.BaseLoggerConfiguration
-                .WriteTo.Conditional(
-                    _ => host.Services.GetService<IHostEnvironment>().IsProduction(),
-                    c => c.ApplicationInsights(
-                        host.Services.GetRequiredService<TelemetryConfiguration>(),
-                        TelemetryConverter.Traces))
+                .WriteToApplicationInsights(telemetryClient)
                 .CreateLogger();
 
             try
@@ -31,6 +27,7 @@ namespace FilterLists.SharedKernel.Logging
 
                 Log.Information("Initializing host");
                 await host.RunAsync();
+                return 0;
             }
             catch (Exception ex)
             {
