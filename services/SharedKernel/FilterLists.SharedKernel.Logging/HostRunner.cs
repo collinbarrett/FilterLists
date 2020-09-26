@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Microsoft.ApplicationInsights.Extensibility;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
@@ -14,7 +13,13 @@ namespace FilterLists.SharedKernel.Logging
         {
             _ = host ?? throw new ArgumentNullException(nameof(host));
 
-            InitializeLogger(host);
+            Log.Logger = ConfigurationBuilder.BaseLoggerConfiguration
+                .WriteTo.Conditional(
+                    _ => host.Services.GetService<IHostEnvironment>().IsProduction(),
+                    c => c.ApplicationInsights(
+                        TelemetryConfiguration.CreateDefault(),
+                        TelemetryConverter.Traces))
+                .CreateLogger();
 
             try
             {
@@ -36,24 +41,6 @@ namespace FilterLists.SharedKernel.Logging
             {
                 Log.CloseAndFlush();
             }
-        }
-
-        private static void InitializeLogger(IHost host)
-        {
-            var hostEnvironment = host.Services.GetRequiredService<IHostEnvironment>();
-            Log.Logger = ConfigurationBuilder.BaseLoggerConfiguration
-                .ReadFrom.Configuration(host.Services.GetRequiredService<IConfiguration>())
-                .Enrich.WithProperty("Application", hostEnvironment.ApplicationName)
-                .Enrich.WithProperty("Environment", hostEnvironment.EnvironmentName)
-                .WriteTo.Conditional(
-                    _ => !hostEnvironment.IsProduction(),
-                    sc => sc.Console().WriteTo.Debug())
-                .WriteTo.Conditional(
-                    _ => hostEnvironment.IsProduction(),
-                    sc => sc.ApplicationInsights(
-                        host.Services.GetRequiredService<TelemetryConfiguration>(),
-                        TelemetryConverter.Traces))
-                .CreateLogger();
         }
     }
 }
