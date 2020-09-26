@@ -53,19 +53,22 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                 textStreams.Add(strategy.Convert(segment, cancellationToken));
             }
 
-            _logger.LogInformation("Writing {FileName}", file.TargetFileName);
-
-            var fileInfo = new FileInfo(Path.Combine(_options.RepositoryPath, file.TargetFileName));
-            _writtenFiles.Add(fileInfo);
-            await using var target = fileInfo.OpenWrite();
-
-            // TODO: validate multi-segment lists are concatenated correctly and in order
-            foreach (var textStream in textStreams)
+            if (textStreams.Count > 0)
             {
-                await textStream.CopyToAsync(target, cancellationToken);
-            }
+                _logger.LogInformation("Writing {FileName}", file.TargetFileName);
 
-            _logger.LogInformation("Finished writing {FileName}", file.TargetFileName);
+                var fileInfo = new FileInfo(Path.Combine(_options.RepositoryPath, file.TargetFileName));
+                _writtenFiles.Add(fileInfo);
+                await using var target = fileInfo.OpenWrite();
+
+                // TODO: validate multi-segment lists are concatenated correctly and in order
+                foreach (var textStream in textStreams)
+                {
+                    await textStream.CopyToAsync(target, cancellationToken);
+                }
+
+                _logger.LogInformation("Finished writing {FileName}", file.TargetFileName);
+            }
         }
 
         public void Commit()

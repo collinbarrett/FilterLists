@@ -101,9 +101,11 @@ namespace FilterLists.Archival.Application.Commands
                 {
                     var sourceFileName = Uri.UnescapeDataString(segment.Url.Segments.Last());
                     var sourceExtension = Path.GetExtension(sourceFileName);
-                    yield return new FileSegment(
-                        sourceExtension,
-                        await _client.GetContentAsync(segment.Url, cancellationToken));
+                    var contentAsync = await _client.GetContentAsync(segment.Url, cancellationToken);
+                    if (contentAsync != Stream.Null)
+                    {
+                        yield return new FileSegment(sourceExtension, contentAsync);
+                    }
                 }
             }
         }
