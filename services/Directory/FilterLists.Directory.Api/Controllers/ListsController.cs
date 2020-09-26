@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Directory.Api.Contracts.Models;
 using FilterLists.Directory.Application.Queries;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 
@@ -22,19 +22,20 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(IEnumerable<ListVm>), (int)HttpStatusCode.OK)]
-        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType(typeof(IEnumerable<ListVm>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Get(CancellationToken cancellationToken)
         {
             return await CacheGetOrCreateAsync(() => _mediator.Send(new GetLists.Query(), cancellationToken));
         }
 
         [HttpGet("{id}")]
-        [ProducesResponseType(typeof(ListDetailsVm), (int)HttpStatusCode.OK)]
-        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType(typeof(ListDetailsVm), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetDetails(int id, CancellationToken cancellationToken)
         {
-            return await CacheGetOrCreateAsync(() => _mediator.Send(new GetListDetails.Query(id), cancellationToken), id);
+            return await CacheGetOrCreateAsync(() => _mediator.Send(new GetListDetails.Query(id), cancellationToken),
+                id);
         }
     }
 }
