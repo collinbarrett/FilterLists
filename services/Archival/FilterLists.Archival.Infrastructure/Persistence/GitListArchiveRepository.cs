@@ -32,7 +32,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
 
         public async Task AddAsync(ListArchive listArchive, CancellationToken cancellationToken)
         {
-            int segmentCount = 0;
+            var segmentNumber = 1;
             await foreach (var segment in listArchive.Segments.WithCancellation(cancellationToken))
             {
                 var strategy = segment.GetStrategy<IStreamToPlainTextConversionStrategy>();
@@ -45,14 +45,9 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                     return;
                 }
 
-                string targetExtension;
-                if (segment.Extension.IsPlainText)
+                var fileInfo = GetTargetFile(listArchive.TargetFileName, segmentNumber, segment.Extension);
+                if (fileInfo is default(FileInfo))
                 {
-                    targetExtension = segment.Extension.IsMeaningfulToConsumer ? segment.Extension.Value : ".txt";
-                }
-                else
-                {
-                    // TODO: implement
                     _logger.LogWarning(
                         "Writing from non-plain text extension {Extension} for target {Target} not yet supported. Skipping list",
                         segment.Extension,
@@ -60,8 +55,6 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                     return;
                 }
 
-                var targetFileName = listArchive.TargetFileName + (segmentCount == 0 ? string.Empty : $"-{segmentCount}") + targetExtension;
-                var fileInfo = new FileInfo(Path.Combine(_options.RepositoryPath, targetFileName));
                 _writtenFiles.Add(fileInfo);
 
                 _logger.LogInformation("Writing {FileName}", fileInfo.Name);
@@ -71,7 +64,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
 
                 _logger.LogInformation("Finished writing {FileName}", fileInfo.Name);
 
-                segmentCount++;
+                segmentNumber++;
             }
         }
 
@@ -104,6 +97,25 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             }
 
             _repo.CheckoutPaths("HEAD", _writtenFiles.Select(f => f.Name));
+        }
+
+        private FileInfo? GetTargetFile(string baseTargetFileName, int segmentNumber, ListFileExtension extension)
+        {
+            string targetExtension;
+            if (extension.IsPlainText)
+            {
+                targetExtension = extension.IsMeaningfulToConsumer ? extension.Value : ".txt";
+            }
+            else
+            {
+                // TODO: implement
+                return default;
+            }
+
+            var targetFileName = baseTargetFileName +
+                                 (segmentNumber == 1 ? string.Empty : $"-{segmentNumber}") +
+                                 targetExtension;
+            return new FileInfo(Path.Combine(_options.RepositoryPath, targetFileName));
         }
     }
 }
