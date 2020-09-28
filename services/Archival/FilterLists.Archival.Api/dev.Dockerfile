@@ -11,6 +11,7 @@ ENV DOTNET_CLI_TELEMETRY_OPTOUT=true
 WORKDIR /app
 COPY SharedKernel/FilterLists.SharedKernel.Logging/FilterLists.SharedKernel.Logging.csproj SharedKernel/FilterLists.SharedKernel.Logging/
 COPY Directory/FilterLists.Directory.Api.Contracts/FilterLists.Directory.Api.Contracts.csproj Directory/FilterLists.Directory.Api.Contracts/
+COPY Archival/FilterLists.Archival.Domain/FilterLists.Archival.Domain.csproj Archival/FilterLists.Archival.Domain/
 COPY Archival/FilterLists.Archival.Infrastructure/FilterLists.Archival.Infrastructure.csproj Archival/FilterLists.Archival.Infrastructure/
 COPY Archival/FilterLists.Archival.Application/FilterLists.Archival.Application.csproj Archival/FilterLists.Archival.Application/
 WORKDIR /app/Archival/FilterLists.Archival.Api
@@ -22,6 +23,7 @@ WORKDIR /app
 COPY /.editorconfig .
 COPY SharedKernel/FilterLists.SharedKernel.Logging/. SharedKernel/FilterLists.SharedKernel.Logging/
 COPY Directory/FilterLists.Directory.Api.Contracts/. Directory/FilterLists.Directory.Api.Contracts/
+COPY Archival/FilterLists.Archival.Domain/. Archival/FilterLists.Archival.Domain/
 COPY Archival/FilterLists.Archival.Infrastructure/. Archival/FilterLists.Archival.Infrastructure/
 COPY Archival/FilterLists.Archival.Application/. Archival/FilterLists.Archival.Application/
 WORKDIR /app/Archival/FilterLists.Archival.Api

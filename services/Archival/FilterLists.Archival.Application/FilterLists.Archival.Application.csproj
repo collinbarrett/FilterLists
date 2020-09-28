@@ -24,6 +24,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\FilterLists.Archival.Domain\FilterLists.Archival.Domain.csproj" />
         <ProjectReference Include="..\FilterLists.Archival.Infrastructure\FilterLists.Archival.Infrastructure.csproj" />
     </ItemGroup>
 
