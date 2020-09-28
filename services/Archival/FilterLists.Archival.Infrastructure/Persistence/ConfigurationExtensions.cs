@@ -1,4 +1,5 @@
-﻿using FilterLists.Archival.Infrastructure.Options;
+﻿using FilterLists.Archival.Domain.Lists;
+using FilterLists.Archival.Infrastructure.Options;
 using LibGit2Sharp;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,7 +21,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
 
                 return new Repository(gitOptions.RepositoryPath);
             });
-            services.AddTransient<IFileRepository, GitFileRepository>();
+            services.AddTransient<IListArchiveRepository, GitListArchiveRepository>();
         }
     }
 }

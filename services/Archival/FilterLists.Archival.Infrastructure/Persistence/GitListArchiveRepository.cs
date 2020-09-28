@@ -4,29 +4,24 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using FilterLists.Archival.Domain.Lists;
 using FilterLists.Archival.Infrastructure.Options;
 using FilterLists.Archival.Infrastructure.Persistence.FileWriteStrategies;
-using FilterLists.Archival.Infrastructure.SeedWork;
 using LibGit2Sharp;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
 namespace FilterLists.Archival.Infrastructure.Persistence
 {
-    public interface IFileRepository : IUnitOfWork
-    {
-        Task AddFileAsync(IFile file, CancellationToken cancellationToken);
-    }
-
-    internal sealed class GitFileRepository : IFileRepository
+    internal sealed class GitListArchiveRepository : IListArchiveRepository
     {
         private readonly ILogger _logger;
         private readonly GitOptions _options;
         private readonly IRepository _repo;
         private readonly ICollection<FileInfo> _writtenFiles = new HashSet<FileInfo>();
 
-        public GitFileRepository(
-            ILogger<GitFileRepository> logger,
+        public GitListArchiveRepository(
+            ILogger<GitListArchiveRepository> logger,
             IOptions<GitOptions> gitOptions,
             IRepository repository)
         {
@@ -35,39 +30,48 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             _repo = repository;
         }
 
-        public async Task AddFileAsync(IFile file, CancellationToken cancellationToken)
+        public async Task AddAsync(ListArchive listArchive, CancellationToken cancellationToken)
         {
-            var textStreams = new List<Stream>();
-            await foreach (var segment in file.Segments.WithCancellation(cancellationToken))
+            int segmentCount = 0;
+            await foreach (var segment in listArchive.Segments.WithCancellation(cancellationToken))
             {
                 var strategy = segment.GetStrategy<IStreamToPlainTextConversionStrategy>();
                 if (strategy is default(IStreamToPlainTextConversionStrategy))
                 {
                     _logger.LogWarning(
-                        "No stream to txt conversion strategy found for extension {Extension} for target {Target}. Skipping file",
-                        segment.SourceExtension,
-                        file.TargetFileName);
+                        "No stream to plain text conversion strategy found for extension {Extension} for target {Target}. Skipping list",
+                        segment.Extension,
+                        listArchive.TargetFileName);
                     return;
                 }
 
-                textStreams.Add(strategy.Convert(segment, cancellationToken));
-            }
-
-            if (textStreams.Count > 0)
-            {
-                _logger.LogInformation("Writing {FileName}", file.TargetFileName);
-
-                var fileInfo = new FileInfo(Path.Combine(_options.RepositoryPath, file.TargetFileName));
-                _writtenFiles.Add(fileInfo);
-                await using var target = fileInfo.OpenWrite();
-
-                // TODO: validate multi-segment lists are concatenated correctly and in order
-                foreach (var textStream in textStreams)
+                string targetExtension;
+                if (segment.Extension.IsPlainText)
                 {
-                    await textStream.CopyToAsync(target, cancellationToken);
+                    targetExtension = segment.Extension.IsMeaningfulToConsumer ? segment.Extension.Value : ".txt";
+                }
+                else
+                {
+                    // TODO: implement
+                    _logger.LogWarning(
+                        "Writing from non-plain text extension {Extension} for target {Target} not yet supported. Skipping list",
+                        segment.Extension,
+                        listArchive.TargetFileName);
+                    return;
                 }
 
-                _logger.LogInformation("Finished writing {FileName}", file.TargetFileName);
+                var targetFileName = listArchive.TargetFileName + (segmentCount == 0 ? string.Empty : $"-{segmentCount}") + targetExtension;
+                var fileInfo = new FileInfo(Path.Combine(_options.RepositoryPath, targetFileName));
+                _writtenFiles.Add(fileInfo);
+
+                _logger.LogInformation("Writing {FileName}", fileInfo.Name);
+
+                await using var target = fileInfo.OpenWrite();
+                await segment.Content.CopyToAsync(target, cancellationToken);
+
+                _logger.LogInformation("Finished writing {FileName}", fileInfo.Name);
+
+                segmentCount++;
             }
         }
 

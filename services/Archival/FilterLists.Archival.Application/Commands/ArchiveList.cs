@@ -6,14 +6,12 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Archival.Application.Models;
+using FilterLists.Archival.Domain.Lists;
 using FilterLists.Archival.Infrastructure.Clients;
-using FilterLists.Archival.Infrastructure.Persistence;
 using FilterLists.Directory.Api.Contracts;
 using FilterLists.Directory.Api.Contracts.Models;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using File = FilterLists.Archival.Application.Models.File;
 
 namespace FilterLists.Archival.Application.Commands
 {
@@ -34,18 +32,18 @@ namespace FilterLists.Archival.Application.Commands
             private readonly IHttpContentClient _client;
             private readonly IDirectoryApi _directory;
             private readonly ILogger _logger;
-            private readonly IFileRepository _repo;
+            private readonly IListArchiveRepository _repo;
 
             public Handler(
                 IHttpContentClient httpContentClient,
                 IDirectoryApi directoryApi,
                 ILogger<Handler> logger,
-                IFileRepository fileRepository)
+                IListArchiveRepository listArchiveRepository)
             {
                 _client = httpContentClient;
                 _directory = directoryApi;
                 _logger = logger;
-                _repo = fileRepository;
+                _repo = listArchiveRepository;
             }
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
@@ -56,8 +54,8 @@ namespace FilterLists.Archival.Application.Commands
                 var segmentUrls = (await GetSegmentUrlsAsync(request.ListId, cancellationToken)).ToList();
                 if (segmentUrls.Count > 0)
                 {
-                    var file = GetFileToArchive(request.ListId, segmentUrls, cancellationToken);
-                    await _repo.AddFileAsync(file, cancellationToken);
+                    var list = GetList(request.ListId, segmentUrls, cancellationToken);
+                    await _repo.AddAsync(list, cancellationToken);
                     _repo.Commit();
 
                     _logger.LogInformation(
@@ -83,28 +81,26 @@ namespace FilterLists.Archival.Application.Commands
                        new List<ListDetailsViewUrlVm>();
             }
 
-            private IFile GetFileToArchive(
+            private ListArchive GetList(
                 int listId,
                 IEnumerable<ListDetailsViewUrlVm> segmentUrls,
                 CancellationToken cancellationToken)
             {
                 var segmentsAsync = GetSegmentsAsync(segmentUrls, cancellationToken);
                 var target = listId.ToString(CultureInfo.InvariantCulture).PadLeft(5, '0');
-                return new File(segmentsAsync, target);
+                return new ListArchive(segmentsAsync, target);
             }
 
-            private async IAsyncEnumerable<IFileSegment> GetSegmentsAsync(
+            private async IAsyncEnumerable<ListArchiveSegment> GetSegmentsAsync(
                 IEnumerable<ListDetailsViewUrlVm> segmentUrls,
                 [EnumeratorCancellation] CancellationToken cancellationToken)
             {
                 foreach (var segment in segmentUrls)
                 {
-                    var sourceFileName = Uri.UnescapeDataString(segment.Url.Segments.Last());
-                    var sourceExtension = Path.GetExtension(sourceFileName);
                     var contentAsync = await _client.GetContentAsync(segment.Url, cancellationToken);
                     if (contentAsync != Stream.Null)
                     {
-                        yield return new FileSegment(sourceExtension, contentAsync);
+                        yield return new ListArchiveSegment(segment.Url, contentAsync);
                     }
                 }
             }
