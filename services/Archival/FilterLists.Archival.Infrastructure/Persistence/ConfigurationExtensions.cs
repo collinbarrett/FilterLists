@@ -1,4 +1,5 @@
-﻿using FilterLists.Archival.Domain.Lists;
+﻿using System.Linq;
+using FilterLists.Archival.Domain.Lists;
 using FilterLists.Archival.Infrastructure.Options;
 using LibGit2Sharp;
 using Microsoft.Extensions.Configuration;
@@ -14,7 +15,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             services.AddTransient<IRepository, Repository>(_ =>
             {
                 var gitOptions = configuration.GetSection(GitOptions.Key).Get<GitOptions>();
-                if (!Repository.IsValid(gitOptions.RepositoryPath))
+                if (!System.IO.Directory.EnumerateFileSystemEntries(gitOptions.RepositoryPath).Any())
                 {
                     Repository.Init(gitOptions.RepositoryPath);
                 }
