@@ -60,7 +60,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                 _logger.LogInformation("Writing {FileName}", fileInfo.Name);
 
                 await using var target = fileInfo.OpenWrite();
-                await segment.Content.CopyToAsync(target, cancellationToken);
+                await strategy.Convert(segment, cancellationToken).CopyToAsync(target, cancellationToken);
 
                 _logger.LogInformation("Finished writing {FileName}", fileInfo.Name);
 

@@ -25,10 +25,10 @@ namespace FilterLists.Archival.Application
         public static void UseApplication(this IApplicationBuilder app)
         {
             app.UseInfrastructure();
-            app.ScheduleArchival();
+            ScheduleArchival();
         }
 
-        private static void ScheduleArchival(this IApplicationBuilder app)
+        private static void ScheduleArchival()
         {
 #if DEBUG
             new EnqueueArchiveAllLists.Command().EnqueueBackgroundJob();

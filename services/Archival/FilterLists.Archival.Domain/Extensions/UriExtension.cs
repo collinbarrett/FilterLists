@@ -3,7 +3,7 @@ using System.IO;
 
 namespace FilterLists.Archival.Domain.Extensions
 {
-    public static class UriExtension
+    internal static class UriExtension
     {
         private static readonly Uri DummyBaseUri = new Uri("http://localhost");
 

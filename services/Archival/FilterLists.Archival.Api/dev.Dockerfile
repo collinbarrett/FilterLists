@@ -1,7 +1,6 @@
 # init base for Visual Studio debugging
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-alpine3.12 AS base
 WORKDIR /app
-EXPOSE 80
 
 # init build
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine3.12 AS build
