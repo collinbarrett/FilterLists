@@ -1,0 +1,20 @@
+﻿using System;
+using System.IO;
+
+namespace FilterLists.Archival.Domain.Extensions
+{
+    public static class UriExtension
+    {
+        private static readonly Uri DummyBaseUri = new Uri("http://localhost");
+
+        public static string GetFileExtension(this Uri uri)
+        {
+            if (!uri.IsAbsoluteUri)
+            {
+                uri = new Uri(DummyBaseUri, uri);
+            }
+
+            return Path.GetExtension(uri.LocalPath);
+        }
+    }
+}

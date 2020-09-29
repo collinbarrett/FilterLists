@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+using FilterLists.Archival.Domain.Extensions;
 using FilterLists.Archival.Domain.SeedWork;
 
 namespace FilterLists.Archival.Domain.Lists
@@ -56,16 +55,7 @@ namespace FilterLists.Archival.Domain.Lists
 
         public static ListFileExtension FromUri(Uri uri)
         {
-            _ = uri ?? throw new ArgumentNullException(nameof(uri));
-
-            if (!uri.IsAbsoluteUri)
-            {
-                // TODO: implement
-                throw new NotImplementedException();
-            }
-
-            var extension = Path.GetExtension(Uri.UnescapeDataString(uri.Segments.Last()));
-            return new ListFileExtension(extension);
+            return new ListFileExtension(uri.GetFileExtension());
         }
 
         protected override IEnumerable<object> GetEqualityComponents()
