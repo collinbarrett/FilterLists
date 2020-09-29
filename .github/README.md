@@ -59,7 +59,7 @@ To submit a new list or update data about an existing list, please submit a pull
 
 Alternatively, you can [open a new issue](https://github.com/collinbarrett/FilterLists/issues/new) providing information for all of the fields described in the [data model](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar).
 
-Information about tracking protection lists (TPL) for Internet Explorer (☠) are maintained [here](https://github.com/collinbarrett/FilterLists/blob/master/web/public/tpl.html) outside of the standard data model and viewed [here](https://filterlists.com/tpl.html).
+Note: Since the primary FilterLists.com site does not support Internet Explorer, we also have a separate page for tracking protection lists (TPL) [here](https://github.com/collinbarrett/FilterLists/blob/master/web/public/tpl.html) and viewed [here](https://filterlists.com/tpl.html).
 
 ## Adding or Updating Rules
 
