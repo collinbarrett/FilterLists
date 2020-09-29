@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
@@ -16,7 +15,6 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     {
         public virtual void Configure(EntityTypeBuilder<Dependent> builder)
         {
-            _ = builder ?? throw new ArgumentNullException(nameof(builder));
             builder.ToTable(nameof(Dependent) + "s");
             builder.HasKey(d => new {d.DependencyFilterListId, d.DependentFilterListId});
             builder.HasOne(d => d.DependencyFilterList)

@@ -18,7 +18,6 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     {
         public virtual void Configure(EntityTypeBuilder<FilterListViewUrl> builder)
         {
-            _ = builder ?? throw new ArgumentNullException(nameof(builder));
             builder.ToTable(nameof(FilterListViewUrl) + "s");
             builder.Property(u => u.SegmentNumber).HasDefaultValue(1);
             builder.Property(u => u.Primariness).HasDefaultValue(1);

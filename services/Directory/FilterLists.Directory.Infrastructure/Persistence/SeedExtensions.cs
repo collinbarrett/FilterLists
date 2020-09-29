@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -15,8 +14,6 @@ namespace FilterLists.Directory.Infrastructure.Persistence
     {
         public static async Task MigrateAsync(this IHost host)
         {
-            _ = host ?? throw new ArgumentNullException(nameof(host));
-
             using var scope = host.Services.CreateScope();
             var db = scope.ServiceProvider.GetRequiredService<QueryDbContext>();
             await db.Database.MigrateAsync();
@@ -27,8 +24,6 @@ namespace FilterLists.Directory.Infrastructure.Persistence
     {
         public static void HasDataJsonFile<TEntity>(this EntityTypeBuilder entityTypeBuilder)
         {
-            _ = entityTypeBuilder ?? throw new ArgumentNullException(nameof(entityTypeBuilder));
-
             var path = Path.Combine("../data", $"{typeof(TEntity).Name}.json");
             if (!File.Exists(path))
             {

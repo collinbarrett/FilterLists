@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
@@ -16,7 +15,6 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     {
         public virtual void Configure(EntityTypeBuilder<Fork> builder)
         {
-            _ = builder ?? throw new ArgumentNullException(nameof(builder));
             builder.ToTable(nameof(Fork) + "s");
             builder.HasKey(f => new {f.UpstreamFilterListId, f.ForkFilterListId});
             builder.HasOne(f => f.UpstreamFilterList)

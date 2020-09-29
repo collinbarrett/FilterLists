@@ -1,5 +1,4 @@
-﻿using System;
-using FilterLists.Archival.Application.Commands;
+﻿using FilterLists.Archival.Application.Commands;
 using FilterLists.Archival.Infrastructure;
 using FilterLists.Archival.Infrastructure.Scheduling;
 using MediatR;
@@ -31,8 +30,6 @@ namespace FilterLists.Archival.Application
 
         private static void ScheduleArchival(this IApplicationBuilder app)
         {
-            _ = app ?? throw new ArgumentNullException(nameof(app));
-
 #if DEBUG
             new EnqueueArchiveAllLists.Command().EnqueueBackgroundJob();
 #else

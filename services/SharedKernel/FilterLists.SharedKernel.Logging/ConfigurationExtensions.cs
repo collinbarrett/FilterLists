@@ -1,5 +1,4 @@
-﻿using System;
-using FilterLists.SharedKernel.Logging.Options;
+﻿using FilterLists.SharedKernel.Logging.Options;
 using Microsoft.ApplicationInsights.Channel;
 using Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel;
 using Microsoft.AspNetCore.Builder;
@@ -19,8 +18,6 @@ namespace FilterLists.SharedKernel.Logging
 
         public static void AddSharedKernelLogging(this IServiceCollection services, IConfiguration configuration)
         {
-            _ = configuration ?? throw new ArgumentNullException(nameof(configuration));
-
             using var serverTelemetryChannel = new ServerTelemetryChannel
             {
                 StorageFolder = configuration.GetSection(ApplicationInsightsOptions.Key)

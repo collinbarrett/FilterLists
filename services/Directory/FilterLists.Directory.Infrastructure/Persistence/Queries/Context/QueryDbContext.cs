@@ -34,8 +34,6 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            _ = modelBuilder ?? throw new ArgumentNullException(nameof(modelBuilder));
-
             modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
         }
     }

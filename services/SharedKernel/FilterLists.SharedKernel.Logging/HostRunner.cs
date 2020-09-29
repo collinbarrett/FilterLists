@@ -11,8 +11,6 @@ namespace FilterLists.SharedKernel.Logging
     {
         public static async Task TryRunWithLoggingAsync(this IHost host, Func<Task>? runPreHostAsync = default)
         {
-            _ = host ?? throw new ArgumentNullException(nameof(host));
-
             Log.Logger = ConfigurationBuilder.BaseLoggerConfiguration
                 .WriteTo.ApplicationInsights(
                     host.Services.GetRequiredService<TelemetryConfiguration>(),

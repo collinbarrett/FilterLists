@@ -1,5 +1,4 @@
-﻿using System;
-using FilterLists.Archival.Infrastructure.Clients;
+﻿using FilterLists.Archival.Infrastructure.Clients;
 using FilterLists.Archival.Infrastructure.Persistence;
 using FilterLists.Archival.Infrastructure.Scheduling;
 using FilterLists.Directory.Api.Contracts;
@@ -20,8 +19,6 @@ namespace FilterLists.Archival.Infrastructure
 
         public static void AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
-            _ = configuration ?? throw new ArgumentNullException(nameof(configuration));
-
             services.AddSharedKernelLogging(configuration);
             services.AddSchedulingServices(configuration);
             services.AddDirectoryApiClient(configuration);

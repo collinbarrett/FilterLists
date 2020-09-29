@@ -127,5 +127,6 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 # FilterLists Services custom pairs
 [*.cs]
+dotnet_diagnostic.CA1062.severity = suggestion
 dotnet_diagnostic.CA1812.severity = suggestion
 dotnet_diagnostic.CA2007.severity = none

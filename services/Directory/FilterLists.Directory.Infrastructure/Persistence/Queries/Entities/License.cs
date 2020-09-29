@@ -20,7 +20,6 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     {
         public virtual void Configure(EntityTypeBuilder<License> builder)
         {
-            _ = builder ?? throw new ArgumentNullException(nameof(builder));
             builder.HasDataJsonFile<License>();
         }
     }

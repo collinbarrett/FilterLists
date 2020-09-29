@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -48,7 +47,6 @@ namespace FilterLists.Archival.Application.Commands
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-                _ = request ?? throw new ArgumentNullException(nameof(request));
                 _logger.LogInformation("Archiving list {ListId}", request.ListId);
 
                 var segmentUrls = (await GetSegmentUrlsAsync(request.ListId, cancellationToken)).ToList();

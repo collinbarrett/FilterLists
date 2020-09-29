@@ -19,7 +19,6 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     {
         public virtual void Configure(EntityTypeBuilder<Syntax> builder)
         {
-            _ = builder ?? throw new ArgumentNullException(nameof(builder));
             builder.HasDataJsonFile<Syntax>();
         }
     }

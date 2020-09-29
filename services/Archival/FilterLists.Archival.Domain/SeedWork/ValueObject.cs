@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace FilterLists.Archival.Domain.SeedWork
@@ -8,8 +7,6 @@ namespace FilterLists.Archival.Domain.SeedWork
     {
         protected static bool EqualOperator(ValueObject left, ValueObject right)
         {
-            _ = left ?? throw new ArgumentNullException(nameof(left));
-
             return left.Equals(right);
         }
 
