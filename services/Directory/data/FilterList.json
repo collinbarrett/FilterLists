@@ -16768,5 +16768,15 @@
     "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (Vivaldi)"
+  },
+  {
+    "description": "AdGuard Home is one of the tools for the future, or at least it is for those who know how to set up and use a Raspberry Pi. However, its current internal structure discards virtually every $-using block rule, which makes various major lists virtually useless in AdGuard Home, despite how many of the entries would be ≥90% as functional without them. So until the AdGuard Home team implements a better way to deal with $ values, here's my intermissional list to work around it.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2425,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's AdGuard Home Compilation List - Web Push Notifications"
   }
 ]
