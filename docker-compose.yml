@@ -11,6 +11,17 @@ services:
     volumes:
       - ./reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
 
+  api-docs:
+    image: swaggerapi/swagger-ui:latest
+    restart: always
+    networks:
+      - reverse-proxy
+    depends_on:
+      - directory-api
+    environment:
+      URLS: ${API_DOCS_URLS}
+      URLS_PRIMARY_NAME: ${API_DOCS_URLS_PRIMARY_NAME}
+
   archival-api:
     image: ghcr.io/collinbarrett/filterlists-archival-api
     restart: always
