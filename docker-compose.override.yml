@@ -5,7 +5,7 @@ version: "3.7"
 services:
   reverse-proxy:
     ports:
-      - "${REVERSE_PROXY_HOST_PORT_HTTP}:80"
+      - "8080:80"
     volumes:
       - ./reverse-proxy/conf.d.dev:/etc/nginx/conf.d:ro
     command: ["nginx-debug", "-g", "daemon off;"]
