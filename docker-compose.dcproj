@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include=".env" />
+    <None Include="directory-db.env" />
     <None Include="directory-api.env" />
     <None Include="archival-api.env" />
     <None Include="api-docs.env" />

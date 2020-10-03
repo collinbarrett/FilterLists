@@ -71,10 +71,8 @@ services:
       - directory
     volumes:
       - directory-db:/var/lib/postgresql/data
-    environment:
-      POSTGRES_USER: ${DIRECTORY_DB_USER}
-      POSTGRES_PASSWORD: ${DIRECTORY_DB_PASSWORD}
-      POSTGRES_DB: ${DIRECTORY_DB_DATABASE}
+    env_file:
+      - directory-db.env
 
 networks:
   reverse-proxy:
