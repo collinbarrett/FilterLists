@@ -1,4 +1,4 @@
-using FilterLists.Directory.Application;
+﻿using FilterLists.Directory.Application;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,7 +22,7 @@ namespace FilterLists.Directory.Api
             services.AddRouting(o => o.LowercaseUrls = true);
             services.AddControllers()
                 .AddJsonOptions(o => o.JsonSerializerOptions.IgnoreNullValues = true);
-            services.AddSwaggerGen(o => o.CustomSchemaIds(type => type.ToString()));
+            services.AddSwaggerGen();
             services.AddApplicationServices(Configuration);
         }
 
