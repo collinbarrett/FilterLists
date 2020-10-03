@@ -38,9 +38,9 @@ namespace FilterLists.Directory.Api
                 o.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.Servers = new List<OpenApiServer>
                 {
 #if DEBUG
-                    new OpenApiServer {Url = $"{httpReq.Scheme}://{httpReq.Host.Value}/api"}
+                    new OpenApiServer {Url = $"{httpReq.Scheme}://{httpReq.Host.Value}/api/directory"}
 #else
-                    new OpenApiServer {Url = $"https://{httpReq.Host.Value}/api"}
+                    new OpenApiServer {Url = $"https://{httpReq.Host.Value}/api/directory"}
 #endif
                 });
             });
