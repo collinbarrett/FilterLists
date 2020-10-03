@@ -31,14 +31,12 @@ services:
     volumes:
       - archival-application-insights:/app/${ARCHIVAL_APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
       - archival-archives:/app/${ARCHIVAL_GIT_REPOSITORY_PATH}
+    env_file:
+      - archival-api.env
     environment:
       ApplicationInsights__ServerTelemetryChannelStoragePath: ${ARCHIVAL_APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
-      ApplicationInsights__InstrumentationKey: ${ARCHIVAL_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
-      ConnectionStrings__SchedulingConnection: ${ARCHIVAL_REDIS_CONNECTION_STRING}
       Api__DirectoryHost: ${DIRECTORY_HOST}
       Git__RepositoryPath: ${ARCHIVAL_GIT_REPOSITORY_PATH}
-      Git__UserName: ${ARCHIVAL_GIT_USER_NAME}
-      Git__UserEmail: ${ARCHIVAL_GIT_USER_EMAIL}
 
   archival-scheduling-db:
     image: redis:alpine
