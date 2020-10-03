@@ -25,6 +25,7 @@ services:
     image: ghcr.io/collinbarrett/filterlists-archival-api
     restart: always
     networks:
+      - reverse-proxy
       - archival
     depends_on:
       - archival-scheduling-db
