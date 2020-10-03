@@ -12,7 +12,7 @@ services:
       - ./reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
 
   api-docs:
-    image: swaggerapi/swagger-ui:latest
+    image: swaggerapi/swagger-ui:v3.35.0
     restart: always
     networks:
       - reverse-proxy
