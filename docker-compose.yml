@@ -59,10 +59,10 @@ services:
       - directory-db
     volumes:
       - directory-application-insights:/app/${DIRECTORY_APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
+    env_file:
+      - directory-api.env
     environment:
       ApplicationInsights__ServerTelemetryChannelStoragePath: ${DIRECTORY_APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
-      ApplicationInsights__InstrumentationKey: ${DIRECTORY_APPLICATION_INSIGHTS_INSTRUMENTATION_KEY}
-      ConnectionStrings__DirectoryConnection: ${DIRECTORY_CONNECTION_STRING}
 
   directory-db:
     image: postgres:alpine

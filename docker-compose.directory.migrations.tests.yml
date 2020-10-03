@@ -12,8 +12,8 @@ services:
       - directory-migrations-tests-results:/FilterLists.Directory.Infrastructure.Migrations.Tests/TestResults
     depends_on:
       - directory-db
-    environment:
-      ConnectionStrings__DirectoryConnection: ${DIRECTORY_CONNECTION_STRING}
+    env_file:
+      - directory-api.env
 
   directory-db:
     image: postgres:alpine
