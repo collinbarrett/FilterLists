@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +11,7 @@ namespace FilterLists.Directory.Api
         public static void AddSwaggerGen(this IServiceCollection services)
         {
             services.AddSwaggerGen(o =>
+            {
                 o.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "FilterLists Directory API",
@@ -24,7 +25,9 @@ namespace FilterLists.Directory.Api
                         Name = "MIT License",
                         Url = new Uri("https://github.com/collinbarrett/FilterLists/blob/master/LICENSE")
                     }
-                }));
+                });
+                o.CustomSchemaIds(type => type.ToString());
+            });
         }
 
         public static void UseSwagger(this IApplicationBuilder app)
@@ -40,13 +43,6 @@ namespace FilterLists.Directory.Api
                     new OpenApiServer {Url = $"https://{httpReq.Host.Value}/api"}
 #endif
                 });
-            });
-            app.UseSwaggerUI(o =>
-            {
-                o.SwaggerEndpoint("v1/swagger.json", "FilterLists Directory API V1");
-                o.DocumentTitle = "FilterLists Directory API";
-                o.RoutePrefix = string.Empty;
-                o.EnableDeepLinking();
             });
         }
     }
