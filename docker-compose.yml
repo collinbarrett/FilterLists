@@ -18,9 +18,8 @@ services:
       - reverse-proxy
     depends_on:
       - directory-api
-    environment:
-      URLS: ${API_DOCS_URLS}
-      URLS_PRIMARY_NAME: ${API_DOCS_URLS_PRIMARY_NAME}
+    env_file:
+      - api-docs.env
 
   archival-api:
     image: ghcr.io/collinbarrett/filterlists-archival-api
