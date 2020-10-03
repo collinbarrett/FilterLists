@@ -1,0 +1,35 @@
+trigger:
+  batch: false
+  branches:
+    include: [master]
+  paths:
+    include: [docker-compose.yml, docker-compose.prod.yml]
+
+pr: none
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - checkout: self
+    fetchDepth: 2
+
+  - task: CopyFiles@2
+    displayName: stage files
+    inputs:
+      SourceFolder: $(Build.SourcesDirectory)
+      Contents: |
+        docker-compose.yml
+        docker-compose.prod.yml
+      TargetFolder: $(Build.ArtifactStagingDirectory)
+      CleanTargetFolder: true
+      OverWrite: true
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
+
+  - task: PublishBuildArtifacts@1
+    displayName: publish files
+    inputs:
+      PathtoPublish: $(Build.ArtifactStagingDirectory)
+      ArtifactName: drop
+      publishLocation: Container
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
