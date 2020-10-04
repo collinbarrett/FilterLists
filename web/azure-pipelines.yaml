@@ -60,10 +60,10 @@ steps:
   - task: CopyFiles@2
     displayName: stage docker-compose files
     inputs:
-      SourceFolder: $(Build.SourcesDirectory)
+      SourceFolder: $(Build.SourcesDirectory)/docker-compose
       Contents: |
-        docker-compose/docker-compose.yml
-        docker-compose/docker-compose.prod.yml
+        docker-compose.yml
+        docker-compose.prod.yml
       TargetFolder: $(Build.ArtifactStagingDirectory)
       CleanTargetFolder: true
       OverWrite: true

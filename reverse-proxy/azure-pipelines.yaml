@@ -20,16 +20,25 @@ steps:
     fetchDepth: 2
 
   - task: CopyFiles@2
-    displayName: stage files
+    displayName: stage reverse-proxy config files
     inputs:
       SourceFolder: $(Build.SourcesDirectory)
       Contents: |
         reverse-proxy/svr-includes/*
         reverse-proxy/conf.d/*
-        docker-compose/docker-compose.yml
-        docker-compose/docker-compose.prod.yml
       TargetFolder: $(Build.ArtifactStagingDirectory)
       CleanTargetFolder: true
+      OverWrite: true
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
+
+  - task: CopyFiles@2
+    displayName: stage docker-compose files
+    inputs:
+      SourceFolder: $(Build.SourcesDirectory)/docker-compose
+      Contents: |
+        docker-compose.yml
+        docker-compose.prod.yml
+      TargetFolder: $(Build.ArtifactStagingDirectory)
       OverWrite: true
     condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
 
