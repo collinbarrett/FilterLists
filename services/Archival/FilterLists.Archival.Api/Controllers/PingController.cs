@@ -8,6 +8,10 @@ namespace FilterLists.Archival.Api.Controllers
     [Produces("application/json")]
     public class PingController : ControllerBase
     {
+        /// <summary>
+        /// A sample endpoint.
+        /// </summary>
+        /// <returns>Pong.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
 #pragma warning disable CA1822 // Mark members as static

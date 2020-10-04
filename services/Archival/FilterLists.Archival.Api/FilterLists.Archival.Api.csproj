@@ -4,6 +4,7 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>
         <RuntimeIdentifiers>alpine.3.12-x64;win10-x64</RuntimeIdentifiers>
     </PropertyGroup>
