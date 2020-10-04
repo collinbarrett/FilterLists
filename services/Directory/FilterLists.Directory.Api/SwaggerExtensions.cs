@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
@@ -25,6 +27,10 @@ namespace FilterLists.Directory.Api
                         Url = new Uri("https://github.com/collinbarrett/FilterLists/blob/master/LICENSE")
                     }
                 });
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                o.IncludeXmlComments(xmlPath);
             });
         }
 

@@ -18,6 +18,11 @@ namespace FilterLists.Directory.Api.Controllers
             _mediator = mediator;
         }
 
+        /// <summary>
+        /// Gets the tags of FilterLists.
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token.</param>
+        /// <returns>The tags of FilterLists.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<GetTags.TagVm>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

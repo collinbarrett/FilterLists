@@ -18,6 +18,11 @@ namespace FilterLists.Directory.Api.Controllers
             _mediator = mediator;
         }
 
+        /// <summary>
+        /// Gets the maintainers of FilterLists.
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token.</param>
+        /// <returns>The maintainers of FilterLists.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<GetMaintainers.MaintainerVm>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

@@ -18,6 +18,11 @@ namespace FilterLists.Directory.Api.Controllers
             _mediator = mediator;
         }
 
+        /// <summary>
+        /// Gets the software that subscribes to FilterLists.
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token.</param>
+        /// <returns>The software that subscribes to FilterLists.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<GetSoftware.SoftwareVm>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

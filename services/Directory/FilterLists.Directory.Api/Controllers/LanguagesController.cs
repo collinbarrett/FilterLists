@@ -18,6 +18,11 @@ namespace FilterLists.Directory.Api.Controllers
             _mediator = mediator;
         }
 
+        /// <summary>
+        /// Gets the languages targeted by FilterLists.
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token.</param>
+        /// <returns>The languages targeted by FilterLists.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<GetLanguages.LanguageVm>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

@@ -1,0 +1,4 @@
+# To learn more about .editorconfig see https://aka.ms/editorconfigdocs
+
+[*.cs]
+dotnet_diagnostic.CS1591.severity = suggestion

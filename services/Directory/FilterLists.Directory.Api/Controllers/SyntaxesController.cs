@@ -18,6 +18,11 @@ namespace FilterLists.Directory.Api.Controllers
             _mediator = mediator;
         }
 
+        /// <summary>
+        /// Gets the syntaxes of FilterLists.
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token.</param>
+        /// <returns>The syntaxes of FilterLists.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<GetSyntaxes.SyntaxVm>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
