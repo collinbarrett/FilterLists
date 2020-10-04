@@ -17,7 +17,7 @@ trigger:
         docker-compose/docker-compose.prod.yml,
         docker-compose/.env,
         docker-compose/directory-db.env,
-        docker-compose/directory-api.env        
+        docker-compose/directory-api.env
       ]
 
 pr:
@@ -39,7 +39,7 @@ pr:
         docker-compose/docker-compose.prod.yml,
         docker-compose/.env,
         docker-compose/directory-db.env,
-        docker-compose/directory-api.env        
+        docker-compose/directory-api.env
       ]
 
 pool:

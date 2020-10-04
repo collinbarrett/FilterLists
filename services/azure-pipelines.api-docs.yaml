@@ -6,7 +6,8 @@ trigger:
     include:
       [
         docker-compose/docker-compose.yml,
-        docker-compose/docker-compose.prod.yml
+        docker-compose/docker-compose.prod.yml,
+        docker-compose/archival-api.env
       ]
 
 pr: none
