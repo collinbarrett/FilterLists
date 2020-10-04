@@ -16778,5 +16778,12 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Dandelion Sprout's AdGuard Home Compilation List - Web Push Notifications"
+  },
+  {
+    "description": "A blocklist of QAnon, conspiracy, fascist and fake news web sites.",
+    "homeUrl": "https://github.com/rimu/no-qanon",
+    "id": 2426,
+    "issuesUrl": "https://github.com/rimu/no-qanon/issues",
+    "name": "QAnon conspiracy nazi blocklist"
   }
 ]
