@@ -3,7 +3,11 @@ trigger:
   branches:
     include: [master]
   paths:
-    include: [docker-compose.yml, docker-compose.prod.yml]
+    include:
+      [
+        docker-compose/docker-compose.yml,
+        docker-compose/docker-compose.prod.yml
+      ]
 
 pr: none
 
@@ -19,8 +23,8 @@ steps:
     inputs:
       SourceFolder: $(Build.SourcesDirectory)
       Contents: |
-        docker-compose.yml
-        docker-compose.prod.yml
+        docker-compose/docker-compose.yml
+        docker-compose/docker-compose.prod.yml
       TargetFolder: $(Build.ArtifactStagingDirectory)
       CleanTargetFolder: true
       OverWrite: true

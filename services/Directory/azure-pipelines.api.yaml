@@ -12,12 +12,12 @@ trigger:
         services/Directory/FilterLists.Directory.Api.Contracts/*,
         services/Directory/FilterLists.Directory.Application/*,        
         services/Directory/FilterLists.Directory.Api/*,
-        docker-compose.yml,
-        docker-compose.prod.yml,
-        .env,
-        directory-db.env,
-        directory-api.env,
-        .dockerignore,
+        services/.dockerignore,
+        docker-compose/docker-compose.yml,
+        docker-compose/docker-compose.prod.yml,
+        docker-compose/.env,
+        docker-compose/directory-db.env,
+        docker-compose/directory-api.env        
       ]
 
 pr:
@@ -34,12 +34,12 @@ pr:
         services/Directory/FilterLists.Directory.Api.Contracts/*,
         services/Directory/FilterLists.Directory.Application/*,        
         services/Directory/FilterLists.Directory.Api/*,
-        docker-compose.yml,
-        docker-compose.prod.yml,
-        .env,
-        directory-db.env,
-        directory-api.env,
-        .dockerignore,
+        services/.dockerignore,
+        docker-compose/docker-compose.yml,
+        docker-compose/docker-compose.prod.yml,
+        docker-compose/.env,
+        docker-compose/directory-db.env,
+        docker-compose/directory-api.env        
       ]
 
 pool:
@@ -82,8 +82,8 @@ steps:
     inputs:
       SourceFolder: $(Build.SourcesDirectory)
       Contents: |
-        docker-compose.yml
-        docker-compose.prod.yml
+        docker-compose/docker-compose.yml
+        docker-compose/docker-compose.prod.yml
       TargetFolder: $(Build.ArtifactStagingDirectory)
       CleanTargetFolder: true
       OverWrite: true

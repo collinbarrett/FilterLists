@@ -9,7 +9,7 @@ services:
     depends_on:
       - web
     volumes:
-      - ./reverse-proxy/conf.d:/etc/nginx/conf.d:ro
+      - ../reverse-proxy/conf.d:/etc/nginx/conf.d:ro
       - ~/cert:/etc/nginx/cert:ro
 
   web:

@@ -9,7 +9,7 @@ services:
     depends_on:
       - directory-api
     volumes:
-      - ./reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
+      - ../reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
 
   api-docs:
     image: swaggerapi/swagger-ui:latest

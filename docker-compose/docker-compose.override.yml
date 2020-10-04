@@ -7,19 +7,19 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./reverse-proxy/conf.d.dev:/etc/nginx/conf.d:ro
+      - ../reverse-proxy/conf.d.dev:/etc/nginx/conf.d:ro
     command: ["nginx-debug", "-g", "daemon off;"]
 
   archival-api:
     build:
-      context: ./services
+      context: ../services
       dockerfile: Archival/FilterLists.Archival.Api/dev.Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
 
   directory-api:
     build:
-      context: ./services
+      context: ../services
       dockerfile: Directory/FilterLists.Directory.Api/dev.Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Development

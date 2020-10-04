@@ -3,7 +3,12 @@ trigger:
   branches:
     include: [master]
   paths:
-    include: [reverse-proxy/*, docker-compose.yml, docker-compose.prod.yml]
+    include:
+      [
+        reverse-proxy/*,
+        docker-compose/docker-compose.yml,
+        docker-compose/docker-compose.prod.yml
+      ]
 
 pr: none
 
@@ -21,8 +26,8 @@ steps:
       Contents: |
         reverse-proxy/svr-includes/*
         reverse-proxy/conf.d/*
-        docker-compose.yml
-        docker-compose.prod.yml
+        docker-compose/docker-compose.yml
+        docker-compose/docker-compose.prod.yml
       TargetFolder: $(Build.ArtifactStagingDirectory)
       CleanTargetFolder: true
       OverWrite: true

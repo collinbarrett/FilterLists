@@ -6,14 +6,14 @@ version: "3.7"
 services:
   archival-api:
     build:
-      context: ./services
+      context: ../services
       dockerfile: Archival/FilterLists.Archival.Api/Dockerfile
 
   directory-api:
     build:
-      context: ./services
+      context: ../services
       dockerfile: Directory/FilterLists.Directory.Api/Dockerfile
 
   web:
     build:
-      context: ./web
+      context: ../web

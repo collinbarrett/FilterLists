@@ -12,11 +12,11 @@ trigger:
         services/Archival/FilterLists.Archival.Infrastructure/*,
         services/Archival/FilterLists.Archival.Application/*,
         services/Archival/FilterLists.Archival.Api/*,
-        docker-compose.yml,
-        docker-compose.prod.yml,
-        .env,
-        archival-api.env,
-        .dockerignore,
+        services/.dockerignore,
+        docker-compose/docker-compose.yml,
+        docker-compose/docker-compose.prod.yml,
+        docker-compose/.env,
+        docker-compose/archival-api.env        
       ]
 
 pr:
@@ -33,11 +33,11 @@ pr:
         services/Archival/FilterLists.Archival.Infrastructure/*,
         services/Archival/FilterLists.Archival.Application/*,
         services/Archival/FilterLists.Archival.Api/*,
-        docker-compose.yml,
-        docker-compose.prod.yml,
-        .env,
-        archival-api.env,
-        .dockerignore,
+        services/.dockerignore,
+        docker-compose/docker-compose.yml,
+        docker-compose/docker-compose.prod.yml,
+        docker-compose/.env,
+        docker-compose/archival-api.env        
       ]
 
 pool:
@@ -80,8 +80,8 @@ steps:
     inputs:
       SourceFolder: $(Build.SourcesDirectory)
       Contents: |
-        docker-compose.yml
-        docker-compose.prod.yml
+        docker-compose/docker-compose.yml
+        docker-compose/docker-compose.prod.yml
       TargetFolder: $(Build.ArtifactStagingDirectory)
       CleanTargetFolder: true
       OverWrite: true
