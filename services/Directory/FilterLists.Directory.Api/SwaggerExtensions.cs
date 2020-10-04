@@ -15,8 +15,7 @@ namespace FilterLists.Directory.Api
                 o.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "FilterLists Directory API",
-                    Description =
-                        "FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.",
+                    Description = "An ASP.NET Core API serving the core FilterList information.",
                     Version = "v1",
                     //TermsOfService = "",
                     Contact = new OpenApiContact {Name = "FilterLists", Url = new Uri("https://filterlists.com")},

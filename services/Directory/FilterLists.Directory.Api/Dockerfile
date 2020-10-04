@@ -1,6 +1,6 @@
 # init base
 FROM mcr.microsoft.com/dotnet/core/runtime-deps:3.1-alpine AS base
-LABEL org.opencontainers.image.description="filterlists.com | github.com/collinbarrett/filterlists | An ASP.NET Core API CRUD-ing with a Postgres instance via EF Core."
+LABEL org.opencontainers.image.description="filterlists.com | github.com/collinbarrett/filterlists | An ASP.NET Core API serving the core FilterList information."
 WORKDIR /app
 EXPOSE 80
 
