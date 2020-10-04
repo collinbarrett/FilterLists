@@ -18,6 +18,10 @@ namespace FilterLists.Archival.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRouting(o => o.LowercaseUrls = true);
+            services.AddControllers()
+                .AddJsonOptions(o => o.JsonSerializerOptions.IgnoreNullValues = true);
+            services.AddSwaggerGen();
             services.AddApplicationServices(Configuration);
         }
 
@@ -28,6 +32,10 @@ namespace FilterLists.Archival.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseRouting();
+            app.UseEndpoints(e => e.MapControllers());
+            app.UseSwagger();
         }
     }
 }

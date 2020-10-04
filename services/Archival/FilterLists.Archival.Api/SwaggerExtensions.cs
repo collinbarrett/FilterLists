@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
-namespace FilterLists.Directory.Api
+namespace FilterLists.Archival.Api
 {
     internal static class SwaggerExtensions
     {
@@ -14,7 +14,7 @@ namespace FilterLists.Directory.Api
             {
                 o.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "FilterLists Directory API",
+                    Title = "FilterLists Archival API",
                     Description =
                         "FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.",
                     Version = "v1",
@@ -37,9 +37,9 @@ namespace FilterLists.Directory.Api
                 o.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.Servers = new List<OpenApiServer>
                 {
 #if DEBUG
-                    new OpenApiServer {Url = $"{httpReq.Scheme}://{httpReq.Host.Value}:8080/api/directory"}
+                    new OpenApiServer {Url = $"{httpReq.Scheme}://{httpReq.Host.Value}:8080/api/archival"}
 #else
-                    new OpenApiServer {Url = $"https://{httpReq.Host.Value}/api/directory"}
+                    new OpenApiServer {Url = $"https://{httpReq.Host.Value}/api/archival"}
 #endif
                 });
             });
