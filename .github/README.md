@@ -17,7 +17,7 @@
 <br/>A React & TypeScript UI built with Ant Design.</p>
 
 <p align="center"><b>Directory API:</b>
-<a href="https://filterlists.com/api/directory/lists"><img alt="Swagger UI" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=Directory%20API" /></a>
+<a href="https://filterlists.com/api"><img alt="Swagger UI" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=Directory%20API" /></a>
 <a href="https://filterlists.com/api/directory/v1/swagger.json"><img alt="OpenAPI Specification" src="https://img.shields.io/swagger/valid/3.0?specUrl=https%3A%2F%2Ffilterlists.com%2Fapi%2Fdirectory%2Fv1%2Fswagger.json" ></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=27"><img alt="Azure DevOps builds" src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Directory%20API?branchName=master" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=3"><img alt="Azure DevOps releases" src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4" /></a>
