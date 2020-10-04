@@ -3,6 +3,7 @@
 <p align="center">
 <a href="https://twitter.com/FilterLists"><img alt="Twitter" src="https://img.shields.io/twitter/follow/FilterLists?style=social"></a>
 <a href="https://hub.filterlists.com"><img alt="Discourse" src="https://img.shields.io/discourse/https/hub.filterlists.com/status.svg"></a>
+<a href="https://filterlists.com/api"><img alt="Swagger UI" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=API%20Docs" /></a>
 <a href="https://github.com/collinbarrett/FilterLists/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/collinbarrett/filterlists.svg"></a>
 <a href="https://builtwithdot.net/project/125/filterlists"><img alt="BuiltWithDot.net" src="https://builtwithdot.net/project/125/filterlists/badge" /></a>
 <a href="https://madewithreactjs.com/p/filterlists/shield-link"><img alt="MadeWithReactJS.com" src="https://madewithreactjs.com/storage/repo-shields/2335-shield.svg"/></a>
@@ -15,12 +16,8 @@
 <a href="https://github.com/users/collinbarrett/packages/container/package/filterlists-web"><img alt="Docker Image" src="https://img.shields.io/badge/docker%20image-web-blue" /></a>
 <br/>A React & TypeScript UI built with Ant Design.</p>
 
-<p align="center"><b>API:</b>
-<a href="https://filterlists.com/api"><img alt="Swagger UI" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=API%20Docs" /></a>
-</p>
-
 <p align="center"><b>Directory API:</b>
-<a href="https://filterlists.com/api/directory/languages"><img alt="Swagger UI" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=Directory%20API" /></a>
+<a href="https://filterlists.com/api/directory/lists"><img alt="Swagger UI" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=Directory%20API" /></a>
 <a href="https://filterlists.com/api/directory/v1/swagger.json"><img alt="OpenAPI Specification" src="https://img.shields.io/swagger/valid/3.0?specUrl=https%3A%2F%2Ffilterlists.com%2Fapi%2Fdirectory%2Fv1%2Fswagger.json" ></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=27"><img alt="Azure DevOps builds" src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Directory%20API?branchName=master" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=3"><img alt="Azure DevOps releases" src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/3/4" /></a>
