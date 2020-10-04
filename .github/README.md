@@ -28,7 +28,7 @@
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=29"><img alt="Azure DevOps builds" src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Archival%20API?branchName=master" /></a>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_release?definitionId=7"><img alt="Azure DevOps releases" src="https://vsrm.dev.azure.com/collinbarrett/_apis/public/Release/badge/b06a3d5c-459e-4789-9735-0f5969006fe8/7/8" /></a>
 <a href="https://github.com/users/collinbarrett/packages/container/package/filterlists-archival-api"><img alt="Docker Image" src="https://img.shields.io/badge/docker%20image-archival--api-blue" /></a>
-<br/>A .NET Core app archiving copies of FilterLists for mirrors and future analysis.</p>
+<br/>An ASP.NET Core app archiving and serving copies of FilterLists for mirrors and analysis.</p>
 
 <p align="center"><b>Reverse Proxy:</b>
 <a href="https://dev.azure.com/collinbarrett/FilterLists/_build/latest?definitionId=21"><img alt="Azure DevOps builds" src="https://dev.azure.com/collinbarrett/FilterLists/_apis/build/status/Reverse%20Proxy?branchName=master" /></a>
