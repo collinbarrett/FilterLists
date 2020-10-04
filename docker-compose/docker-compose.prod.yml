@@ -10,7 +10,7 @@ services:
       - web
     volumes:
       - ./reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
-      - ../reverse-proxy/conf.d:/etc/nginx/conf.d:ro
+      - ./reverse-proxy/conf.d:/etc/nginx/conf.d:ro
       - ~/cert:/etc/nginx/cert:ro
 
   web:
