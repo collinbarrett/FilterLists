@@ -77,7 +77,7 @@ We have containerized FilterLists to make it as easy as possible for contributer
 1. Install Docker CE for your computer's operating system. [Docs](https://docs.docker.com/install/)
 2. Clone the FilterLists git repository to your computer. [Docs](https://help.github.com/en/articles/cloning-a-repository)
 3. Navigate to the root directory of your locally cloned FilterLists git repository in a command-line interface.
-4. TBD...
+4. [TBD...](https://github.com/collinbarrett/FilterLists/issues/1998)
 
 # Acknowledgements
 
