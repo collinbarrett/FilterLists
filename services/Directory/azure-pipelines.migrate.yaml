@@ -148,7 +148,7 @@ steps:
     displayName: build test-migrations
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
     inputs:
-      dockerComposeFile: docker-compose.directory.migrations.tests.yml
+      dockerComposeFile: ./docker-compose/docker-compose.directory.migrations.tests.yml
       dockerComposeCommand: build directory-migrations-tests
 
   - task: Docker@2
@@ -162,14 +162,14 @@ steps:
     displayName: up test-migrations db
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
     inputs:
-      dockerComposeFile: docker-compose.directory.migrations.tests.yml
+      dockerComposeFile: ./docker-compose/docker-compose.directory.migrations.tests.yml
       dockerComposeCommand: up -d directory-db
 
   - task: DockerCompose@0
     displayName: run test-migrations
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), eq(variables['commitOrAbandon.committed'], 'true'), succeeded())
     inputs:
-      dockerComposeFile: docker-compose.directory.migrations.tests.yml
+      dockerComposeFile: ./docker-compose/docker-compose.directory.migrations.tests.yml
       dockerComposeCommand: run directory-migrations-tests
 
   - task: Docker@2
