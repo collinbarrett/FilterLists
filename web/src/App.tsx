@@ -37,7 +37,7 @@ export const App: React.FC = () => (
           <Switch>
             <Route exact path="/" component={ListsTable} />
             <Route path="/lists/*" component={ListsTable} />
-            <Route path="*" component={NotFound} status={404} />
+            <Route path="*" component={NotFound} />
           </Switch>
         </div>
       </Content>
