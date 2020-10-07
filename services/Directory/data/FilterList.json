@@ -16785,5 +16785,24 @@
     "id": 2426,
     "issuesUrl": "https://github.com/rimu/no-qanon/issues",
     "name": "QAnon conspiracy nazi blocklist"
+  },
+  {
+    "description": "One of AdGuard DNS Filter's many source files. This one contains exclusions added by AdGuard themselves.",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardSDNSFilter",
+    "id": 2427,
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardSDNSFilter/issues",
+    "licenseId": 4,
+    "name": "AdGuard DNS Filter - Exclusions",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
+  },
+  {
+    "description": "So, perhaps you're someone who take your gaming library and hobby pretty seriously, and who feel revolted by pay-to-win, blatant knockoffs, and very violent apps disguised as kids apps? In that case, this list is everything you could dream of.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2428,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'Gacha and Knockoff Games' List"
   }
 ]
