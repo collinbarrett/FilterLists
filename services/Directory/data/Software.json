@@ -28,13 +28,6 @@
     "supportsAbpUrlScheme": false
   },
   {
-    "downloadUrl": "https://github.com/NanoAdblocker/NanoCore#nano-adblocker-core",
-    "homeUrl": "https://github.com/NanoAdblocker/NanoCore",
-    "id": 5,
-    "name": "Nano Adblocker",
-    "supportsAbpUrlScheme": true
-  },
-  {
     "downloadUrl": "https://getadblock.com/",
     "homeUrl": "https://getadblock.com/",
     "id": 6,
@@ -289,10 +282,17 @@
     "supportsAbpUrlScheme": true
   },
   {
-    "downloadUrl": "https://adguard.com/en/download.html",
-    "homeUrl": "https://adguard.com/",
+    "downloadUrl": "https://adguard.com/adguard-android/overview.html",
+    "homeUrl": "https://adguard.com/adguard-android/overview.html",
     "id": 45,
     "name": "AdGuard for Android",
+    "supportsAbpUrlScheme": true
+  },
+  {
+    "downloadUrl": "https://vivaldi.com/",
+    "homeUrl": "https://vivaldi.com/",
+    "id": 46,
+    "name": "Vivaldi's Privacy settings",
     "supportsAbpUrlScheme": true
   }
 ]
