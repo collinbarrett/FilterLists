@@ -45,6 +45,7 @@ import {
   img43,
   img44,
   img45,
+  img46,
 } from "./imgs";
 
 interface Props {
@@ -111,4 +112,5 @@ const icons: { [id: number]: Icon } = {
   43: { image: img43, imageTitle: "SmartDNS" },
   44: { image: img44, imageTitle: "AdGuard for Windows/macOS" },
   45: { image: img45, imageTitle: "AdGuard for Android" },
+  46: { image: img46, imageTitle: "Vivaldi's Privacy settings" },
 };
