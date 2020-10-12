@@ -49,8 +49,8 @@
     "supportsAbpUrlScheme": false
   },
   {
-    "downloadUrl": "http://einaregilsson.com/redirector/",
-    "homeUrl": "http://einaregilsson.com/redirector/",
+    "downloadUrl": "https://einaregilsson.com/redirector/",
+    "homeUrl": "https://einaregilsson.com/redirector/",
     "id": 10,
     "name": "Redirector",
     "supportsAbpUrlScheme": false
@@ -137,14 +137,6 @@
     "id": 23,
     "name": "dnsmasq",
     "supportsAbpUrlScheme": false
-  },
-  {
-    "downloadUrl": "https://www.slimjet.com/en/dlpage.php",
-    "homeUrl": "https://www.slimjet.com",
-    "id": 24,
-    "isDeleted": true,
-    "name": "Slimjet",
-    "supportsAbpUrlScheme": true
   },
   {
     "downloadUrl": "https://github.com/gorhill/uMatrix#umatrix",
