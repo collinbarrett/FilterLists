@@ -12,7 +12,7 @@
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.6",
     "antd": "^4.6.6",
-    "babel-plugin-import": "^1.13.0",
+    "babel-plugin-import": "^1.13.1",
     "customize-cra": "^1.0.0",
     "less": "^3.12.2",
     "less-loader": "^7.0.1",
