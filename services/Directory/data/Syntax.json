@@ -46,11 +46,6 @@
     "name": "Redirector"
   },
   {
-    "id": 12,
-    "name": "Nano Adblocker Static",
-    "url": "https://github.com/NanoAdblocker/NanoCore/tree/master/notes"
-  },
-  {
     "id": 13,
     "name": "MinerBlock",
     "url": "https://github.com/xd4rker/MinerBlock"
