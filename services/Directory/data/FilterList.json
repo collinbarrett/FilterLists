@@ -16829,7 +16829,7 @@
     "name": "Team Cymru Fullbogons (IPv4)"
   },
   {
-    "description": "IPv6 \“fullbogons\”, all IPv6 prefixes that have not been allocated to RIRs and that have not been assigned by RIRs to ISPs, end-users, etc.",
+    "description": "IPv6 “fullbogons”, all IPv6 prefixes that have not been allocated to RIRs and that have not been assigned by RIRs to ISPs, end-users, etc.",
     "emailAddress": "sales@cymru.com",
     "homeUrl": "https://team-cymru.com/community-services/bogon-reference/bogon-reference-http/",
     "id": 2432,
