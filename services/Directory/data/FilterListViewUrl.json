@@ -15646,5 +15646,41 @@
     "id": 2626,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/rimu/no-qanon/master/etc_hosts.txt"
+  },
+  {
+    "filterListId": 2429,
+    "id": 2627,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/rimu/no-qanon/master/etc_hosts.txt.ipv6"
+  },
+  {
+    "filterListId": 2430,
+    "id": 2628,
+    "primariness": 1,
+    "url": "https://www.team-cymru.org/Services/Bogons/bogon-bn-agg.txt"
+  },
+  {
+    "filterListId": 2431,
+    "id": 2629,
+    "primariness": 1,
+    "url": "https://www.team-cymru.org/Services/Bogons/fullbogons-ipv4.txt"
+  },
+  {
+    "filterListId": 2432,
+    "id": 2630,
+    "primariness": 1,
+    "url": "https://www.team-cymru.org/Services/Bogons/fullbogons-ipv6.txt"
+  },
+  {
+    "filterListId": 2433,
+    "id": 2631,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFilters-uMatrixSupplement.txt"
+  },
+  {
+    "filterListId": 2433,
+    "id": 2632,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFilters-uMatrixSupplement.txt"
   }
 ]
