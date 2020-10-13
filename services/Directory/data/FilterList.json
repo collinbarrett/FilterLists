@@ -16804,5 +16804,46 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Anti-'Gacha and Knockoff Games' List"
+  },
+  {
+    "description": "A blocklist of QAnon, conspiracy, fascist and fake news web sites.",
+    "homeUrl": "https://github.com/rimu/no-qanon",
+    "id": 2429,
+    "issuesUrl": "https://github.com/rimu/no-qanon/issues",
+    "name": "QAnon conspiracy nazi blocklist (IPv6)"
+  },
+  {
+    "description": "This is the list of bit notation bogons, aggregated, in text format. Updated as IANA allocations and special prefix reservations are made.",
+    "emailAddress": "sales@cymru.com",
+    "homeUrl": "https://team-cymru.com/community-services/bogon-reference/bogon-reference-http/",
+    "id": 2430,
+    "licenseId": 5,
+    "name": "Team Cymru Bogons"
+  },
+  {
+    "description": "The traditional bogon prefixes, plus prefixes that have been allocated to RIRs but not yet assigned by those RIRs to ISPs, end-users, etc.",
+    "emailAddress": "sales@cymru.com",
+    "homeUrl": "https://team-cymru.com/community-services/bogon-reference/bogon-reference-http/",
+    "id": 2431,
+    "licenseId": 5,
+    "name": "Team Cymru Fullbogons (IPv4)"
+  },
+  {
+    "description": "IPv6 \“fullbogons\”, all IPv6 prefixes that have not been allocated to RIRs and that have not been assigned by RIRs to ISPs, end-users, etc.",
+    "emailAddress": "sales@cymru.com",
+    "homeUrl": "https://team-cymru.com/community-services/bogon-reference/bogon-reference-http/",
+    "id": 2432,
+    "licenseId": 5,
+    "name": "Team Cymru Fullbogons (IPv6)"
+  },
+  {
+    "description": "This is a slimmer version of \"Dandelion Sprout's Nordic Filters\", intended for users of software tools that doesn't support adblocker syntaxes. It chiefly targets scams and malware on Norwegian or Danish sites, as well as some advert and tracking servers.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2433,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (uMatrix rules to use together with the Domains version)"
   }
 ]
