@@ -18,7 +18,7 @@
     "less-loader": "^7.0.2",
     "react": "^16.14.0",
     "react-app-rewired": "^2.1.6",
-    "react-dom": "^16.13.1",
+    "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
     "slugify": "^1.4.5",
