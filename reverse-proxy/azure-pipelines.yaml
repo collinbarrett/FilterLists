@@ -17,7 +17,7 @@ pool:
 
 steps:
   - checkout: self
-    fetchDepth: 2
+    fetchDepth: 5
 
   - task: CopyFiles@2
     displayName: stage reverse-proxy config files
