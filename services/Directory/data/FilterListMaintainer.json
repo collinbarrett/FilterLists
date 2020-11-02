@@ -840,16 +840,8 @@
     "maintainerId": 32
   },
   {
-    "filterListId": 342,
-    "maintainerId": 70
-  },
-  {
     "filterListId": 343,
     "maintainerId": 32
-  },
-  {
-    "filterListId": 344,
-    "maintainerId": 70
   },
   {
     "filterListId": 345,
@@ -1206,10 +1198,6 @@
   {
     "filterListId": 507,
     "maintainerId": 7
-  },
-  {
-    "filterListId": 508,
-    "maintainerId": 34
   },
   {
     "filterListId": 509,

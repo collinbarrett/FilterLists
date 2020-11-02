@@ -1108,15 +1108,7 @@
     "syntaxId": 4
   },
   {
-    "filterListId": 342,
-    "syntaxId": 4
-  },
-  {
     "filterListId": 343,
-    "syntaxId": 4
-  },
-  {
-    "filterListId": 344,
     "syntaxId": 4
   },
   {
@@ -1614,10 +1606,6 @@
   {
     "filterListId": 507,
     "syntaxId": 10
-  },
-  {
-    "filterListId": 508,
-    "syntaxId": 3
   },
   {
     "filterListId": 509,

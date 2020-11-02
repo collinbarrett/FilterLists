@@ -2868,22 +2868,10 @@
     "url": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/adblock_social_filters/social_filters_uB_AG.txt"
   },
   {
-    "filterListId": 342,
-    "id": 479,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/KonoromiHimaries/PolishSubFilters/master/internal-filters/anti-donate-filters/anty-donacje.txt"
-  },
-  {
     "filterListId": 343,
     "id": 480,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/cookies_filters/cookies_uB_AG.txt"
-  },
-  {
-    "filterListId": 344,
-    "id": 481,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/KonoromiHimaries/PolishSubFilters/master/internal-filters/wewnetrzne.txt"
   },
   {
     "filterListId": 345,
@@ -3724,12 +3712,6 @@
     "id": 621,
     "primariness": 1,
     "url": "https://easylist-msie.adblockplus.org/easylist.tpl"
-  },
-  {
-    "filterListId": 508,
-    "id": 622,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/gh-pages/assets/other/kadfakewhitelist.txt"
   },
   {
     "filterListId": 509,

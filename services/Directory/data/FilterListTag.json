@@ -1792,16 +1792,8 @@
     "tagId": 4
   },
   {
-    "filterListId": 342,
-    "tagId": 15
-  },
-  {
     "filterListId": 343,
     "tagId": 8
-  },
-  {
-    "filterListId": 344,
-    "tagId": 9
   },
   {
     "filterListId": 345,
@@ -2514,10 +2506,6 @@
   {
     "filterListId": 507,
     "tagId": 2
-  },
-  {
-    "filterListId": 508,
-    "tagId": 10
   },
   {
     "filterListId": 509,
