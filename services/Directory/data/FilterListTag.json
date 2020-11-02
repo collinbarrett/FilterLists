@@ -201,7 +201,15 @@
   },
   {
     "filterListId": 60,
+    "tagId": 6
+  },
+  {
+    "filterListId": 60,
     "tagId": 7
+  },
+  {
+    "filterListId": 61,
+    "tagId": 6
   },
   {
     "filterListId": 61,
@@ -3050,6 +3058,10 @@
   {
     "filterListId": 703,
     "tagId": 6
+  },
+  {
+    "filterListId": 703,
+    "tagId": 7
   },
   {
     "filterListId": 704,
@@ -8930,6 +8942,10 @@
   {
     "filterListId": 1815,
     "tagId": 15
+  },
+  {
+    "filterListId": 1816,
+    "tagId": 6
   },
   {
     "filterListId": 1816,
