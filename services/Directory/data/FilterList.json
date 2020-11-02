@@ -2275,15 +2275,6 @@
     "name": "Polish Social Filters - Supplement for uBlock & AdGuard"
   },
   {
-    "chatUrl": "https://riot.im/app/#/room/!IPhdjtOfWxVbiddKOo:matrix.org?via=matrix.org",
-    "description": "Blocks banners (paypal, payu, bitcoin and patronite), charity banners, other forms of inclination to support on Polish sites.",
-    "homeUrl": "https://github.com/KonoromiHimaries/PolishSubFilters",
-    "id": 342,
-    "isDeleted": true,
-    "licenseId": 9,
-    "name": "Polish Anti-Donate Filters"
-  },
-  {
     "description": "uBlock Origin & AdGuard supplement list for Polish GDPR-Cookies Filters.",
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "homeUrl": "https://www.certyficate.it/",
@@ -2291,15 +2282,6 @@
     "issuesUrl": "https://github.com/MajkiIT/polish-ads-filter/issues",
     "licenseId": 9,
     "name": "Polish GDPR-Cookies Filters - Supplement for uBlock & AdGuard"
-  },
-  {
-    "chatUrl": "https://riot.im/app/#/room/!IPhdjtOfWxVbiddKOo:matrix.org?via=matrix.org",
-    "description": "Blocks internal advertising, paid subscriptions, own stores on Polish sites.",
-    "homeUrl": "https://github.com/KonoromiHimaries/PolishSubFilters/",
-    "id": 344,
-    "isDeleted": true,
-    "licenseId": 9,
-    "name": "Polish Internal Filters"
   },
   {
     "description": "AdGuard supplement list for Official Polish Filters for AdBlock, uBlock Origin & AdGuard",
@@ -2340,7 +2322,7 @@
     "name": "VXVault"
   },
   {
-    "description": "Polish hosts file for blocking scams (without controversial pages => https://github.com/PolishFiltersTeam/KAD/issues/649).",
+    "description": "Polish hosts file for blocking scams. This list is currently same as KADhosts (both are now without controversies) and will reach EOL by the end of 2020, so it's recommended that you migrate to KADhosts.",
     "emailAddress": "polishjarvis@gmail.com",
     "homeUrl": "https://kadantiscam.netlify.com/",
     "id": 349,
@@ -3336,16 +3318,6 @@
     "name": "EasyList (TPL)"
   },
   {
-    "description": "Whitelist of section with promotion of fake science/news. More at: https://github.com/PolishFiltersTeam/KAD/issues/649.",
-    "emailAddress": "polishjarvis@gmail.com",
-    "homeUrl": "https://kadantiscam.netlify.com/",
-    "id": 508,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/KAD/issues",
-    "licenseId": 8,
-    "name": "KAD - The Whitelist of the Controversial Pages",
-    "submissionUrl": "https://kadantiscam.netlify.com/#contact"
-  },
-  {
     "description": "Filters for blocking all the clickbait that surrounds articles and tries to drag you into a never-ending binge.",
     "homeUrl": "https://github.com/endolith/clickbait",
     "id": 509,
@@ -4179,11 +4151,14 @@
     "name": "EasyList (Domains)"
   },
   {
-    "emailAddress": "me@austinheap.com",
-    "homeUrl": "https://github.com/austinheap/sophos-xg-block-lists",
+    "description": "A Polish filters that protects against scams such as SMS subscriptions.",
+    "emailAddress": "polishjarvis@gmail.com",
+    "homeUrl": "https://kadantiscam.netlify.com/",
     "id": 703,
-    "licenseId": 2,
-    "name": "KAD Hosts File (Domains)"
+    "issuesUrl": "https://github.com/PolishFiltersTeam/KADhosts/issues",
+    "licenseId": 8,
+    "name": "KADomains",
+    "submissionUrl": "https://kadantiscam.netlify.com/#contact"
   },
   {
     "emailAddress": "me@austinheap.com",
