@@ -290,7 +290,7 @@
     "name": "Korean Adblock List"
   },
   {
-    "description": "Polish hosts file for blocking scams (Experimental).",
+    "description": "Polish hosts list that protects against various types of scams and fraud, such as SMS subscriptions, viruses and fake online stores.",
     "emailAddress": "polishjarvis@gmail.com",
     "homeUrl": "https://kadantiscam.netlify.com/",
     "id": 60,
@@ -300,7 +300,7 @@
     "submissionUrl": "https://kadantiscam.netlify.com/#contact"
   },
   {
-    "description": "A Polish filters that protects against scams such as SMS subscriptions.",
+    "description": "A Polish filters that protects against various types of scams and fraud, such as SMS subscriptions, viruses and fake online stores.",
     "emailAddress": "polishjarvis@gmail.com",
     "homeUrl": "https://kadantiscam.netlify.com/",
     "id": 61,
@@ -4151,7 +4151,7 @@
     "name": "EasyList (Domains)"
   },
   {
-    "description": "A Polish filters that protects against scams such as SMS subscriptions.",
+    "description": "A Polish domains list that protects against various types of scams and fraud, such as SMS subscriptions, viruses and fake online stores.",
     "emailAddress": "polishjarvis@gmail.com",
     "homeUrl": "https://kadantiscam.netlify.com/",
     "id": 703,
@@ -12199,7 +12199,7 @@
     "name": "Anti-'PC component price hiders' List"
   },
   {
-    "description": "Additional regex list blocking scam and phising Polish sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
+    "description": "Additional regex list blocking scam and phishing Polish sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
     "emailAddress": "polishjarvis@gmail.com",
     "homeUrl": "https://kadantiscam.netlify.com/",
     "id": 1816,
