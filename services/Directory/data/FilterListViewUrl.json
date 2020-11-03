@@ -4401,7 +4401,7 @@
     "filterListId": 703,
     "id": 737,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/kadhosts.txt"
+    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADomains.txt"
   },
   {
     "filterListId": 704,
