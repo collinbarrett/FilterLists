@@ -15,7 +15,7 @@
     "babel-plugin-import": "^1.13.1",
     "customize-cra": "^1.0.0",
     "less": "^3.12.2",
-    "less-loader": "^7.0.2",
+    "less-loader": "^7.1.0",
     "react": "^16.14.0",
     "react-app-rewired": "^2.1.6",
     "react-dom": "^16.14.0",
