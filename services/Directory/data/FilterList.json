@@ -16820,5 +16820,35 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (uMatrix rules to use together with the Domains version)"
+  },
+  {
+    "description": "In a world dominated by bit.ly, ad.fly, and several thousand other malware injectors, this list reduces the length of URLs in a much more legitimate and transparent manner. Essentially, it automatically removes unnecessary $/& values from the URLs, making them easier to copy from the URL bar and pasting elsewhere as links. Enjoy.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2434,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Actually Legitimate URL Shortener Tool"
+  },
+  {
+    "description": "This is a slimmer version of \"Dandelion Sprout's Nordic Filters\", intended for users of software tools that doesn't support adblocker syntaxes. It chiefly targets scams and malware on Norwegian or Danish sites, as well as some advert and tracking servers.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2435,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's Serbo-Croatian filters"
+  },
+  {
+    "description": "In contrast to the more curated webstores Epic Store and GOG.com, Steam has for some years now been stuffed full of very-low-effort \"games\" (Mostly visual novels) whose entire 10€ production budget was spent on catgirls in bikinis looking at you meekly. If you are not interested in catgirls in bikinis looking at you meekly, but want to focus more on videogames, then this list is for you.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2436,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'Weeb boob games on Steam' List"
   }
 ]
