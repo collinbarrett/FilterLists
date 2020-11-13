@@ -15664,5 +15664,41 @@
     "id": 2632,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFilters-uMatrixSupplement.txt"
+  },
+  {
+    "filterListId": 2434,
+    "id": 2633,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
+  },
+  {
+    "filterListId": 2434,
+    "id": 2634,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/LegitimateURLShortener.txt"
+  },
+  {
+    "filterListId": 2435,
+    "id": 2635,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/SerboCroatianList.txt"
+  },
+  {
+    "filterListId": 2435,
+    "id": 2636,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/SerboCroatianList.txt"
+  },
+  {
+    "filterListId": 2436,
+    "id": 2637,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/AntiWeebBoobGamesList.txt"
+  },
+  {
+    "filterListId": 2436,
+    "id": 2638,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/Sensitive%20lists/AntiWeebBoobGamesList.txt"
   }
 ]
