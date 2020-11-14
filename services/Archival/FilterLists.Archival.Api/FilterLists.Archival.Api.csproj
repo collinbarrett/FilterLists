@@ -2,7 +2,6 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
-        <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PublishReadyToRunShowWarnings>true</PublishReadyToRunShowWarnings>

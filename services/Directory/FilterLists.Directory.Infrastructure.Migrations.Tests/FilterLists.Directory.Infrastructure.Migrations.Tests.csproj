@@ -2,7 +2,6 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
-        <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
         <IsPackable>false</IsPackable>
         <RuntimeIdentifiers>linux-musl-x64;win10-x64</RuntimeIdentifiers>
