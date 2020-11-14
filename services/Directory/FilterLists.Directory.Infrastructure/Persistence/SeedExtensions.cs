@@ -34,7 +34,10 @@ namespace FilterLists.Directory.Infrastructure.Persistence
             var entities = JsonSerializer.Deserialize<IEnumerable<TEntity>>(entitiesJson,
                 new JsonSerializerOptions {PropertyNamingPolicy = JsonNamingPolicy.CamelCase});
 
-            entityTypeBuilder.HasData((IEnumerable<object>)entities);
+            if (entities != null)
+            {
+                entityTypeBuilder.HasData((IEnumerable<object>)entities);
+            }
         }
     }
 }
