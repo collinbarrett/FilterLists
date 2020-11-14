@@ -17,13 +17,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.1">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
-    </ItemGroup>
-
-    <ItemGroup>
         <ProjectReference Include="..\FilterLists.Archival.Domain\FilterLists.Archival.Domain.csproj" />
         <ProjectReference Include="..\FilterLists.Archival.Infrastructure\FilterLists.Archival.Infrastructure.csproj" />
     </ItemGroup>
