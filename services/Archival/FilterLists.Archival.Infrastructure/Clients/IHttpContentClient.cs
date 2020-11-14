@@ -33,7 +33,7 @@ namespace FilterLists.Archival.Infrastructure.Clients
             try
             {
                 response.EnsureSuccessStatusCode();
-                return await response.Content.ReadAsStreamAsync();
+                return await response.Content.ReadAsStreamAsync(cancellationToken);
             }
             catch (HttpRequestException ex)
             {
