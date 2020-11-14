@@ -29,7 +29,7 @@ COPY Directory/FilterLists.Directory.Api.Contracts/. Directory/FilterLists.Direc
 COPY Directory/FilterLists.Directory.Application/. Directory/FilterLists.Directory.Application/
 WORKDIR /app/Directory/FilterLists.Directory.Api
 COPY Directory/FilterLists.Directory.Api/. .
-RUN dotnet publish -c Release --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -p:DebugType=None -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r linux-musl-x64
+RUN dotnet publish -c Release --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -r linux-musl-x64 --self-contained true -p:PublishSingleFile=true -p:PublishTrimmed=True -p:PublishReadyToRun=true
 
 # package final
 FROM base AS final

@@ -29,7 +29,7 @@ COPY Archival/FilterLists.Archival.Infrastructure/. Archival/FilterLists.Archiva
 COPY Archival/FilterLists.Archival.Application/. Archival/FilterLists.Archival.Application/
 WORKDIR /app/Archival/FilterLists.Archival.Api
 COPY Archival/FilterLists.Archival.Api/. .
-RUN dotnet publish -c Release --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -p:DebugType=None -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -r alpine.3.12-x64
+RUN dotnet publish -c Release --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -r alpine.3.12-x64 --self-contained true -p:PublishSingleFile=true -p:PublishTrimmed=True -p:PublishReadyToRun=true
 
 # package final
 FROM base AS final
