@@ -1,9 +1,9 @@
 # init base for Visual Studio debugging
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-alpine3.12 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:5.0-alpine3.12 AS base
 WORKDIR /app
 
 # init build
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine3.12 AS build
+FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine3.12 AS build
 ENV DOTNET_CLI_TELEMETRY_OPTOUT=true
 
 # restore API
