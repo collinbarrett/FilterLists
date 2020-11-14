@@ -41,7 +41,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                     _logger.LogWarning(
                         "No stream to plain text conversion strategy found for extension {Extension} for target {Target}. Skipping list",
                         segment.Extension,
-                        listArchive.TargetFileName);
+                        listArchive.TargetFileName.Value);
                     return;
                 }
 
@@ -51,7 +51,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                     _logger.LogWarning(
                         "Writing from non-plain text extension {Extension} for target {Target} not yet supported. Skipping list",
                         segment.Extension,
-                        listArchive.TargetFileName);
+                        listArchive.TargetFileName.Value);
                     return;
                 }
 
@@ -99,7 +99,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             _repo.CheckoutPaths("HEAD", _writtenFiles.Select(f => f.Name));
         }
 
-        private FileInfo? GetTargetFile(string baseTargetFileName, int segmentNumber, ListFileExtension extension)
+        private FileInfo? GetTargetFile(ListFileName baseTargetFileName, int segmentNumber, ListFileExtension extension)
         {
             string targetExtension;
             if (extension.IsPlainText)
@@ -112,7 +112,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                 return default;
             }
 
-            var targetFileName = baseTargetFileName +
+            var targetFileName = baseTargetFileName.Value +
                                  (segmentNumber == 1 ? string.Empty : $"-{segmentNumber}") +
                                  targetExtension;
             return new FileInfo(Path.Combine(_options.RepositoryPath, targetFileName));

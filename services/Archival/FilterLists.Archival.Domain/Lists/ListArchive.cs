@@ -4,13 +4,13 @@ namespace FilterLists.Archival.Domain.Lists
 {
     public class ListArchive
     {
-        public ListArchive(IAsyncEnumerable<ListArchiveSegment> segments, string targetFileName)
+        public ListArchive(IAsyncEnumerable<ListArchiveSegment> segments, ListFileName targetFileName)
         {
             Segments = segments;
             TargetFileName = targetFileName;
         }
 
         public IAsyncEnumerable<ListArchiveSegment> Segments { get; }
-        public string TargetFileName { get; }
+        public ListFileName TargetFileName { get; }
     }
 }

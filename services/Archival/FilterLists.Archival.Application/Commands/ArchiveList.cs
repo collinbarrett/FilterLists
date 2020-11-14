@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -85,7 +84,7 @@ namespace FilterLists.Archival.Application.Commands
                 CancellationToken cancellationToken)
             {
                 var segmentsAsync = GetSegmentsAsync(segmentUrls, cancellationToken);
-                var target = listId.ToString(CultureInfo.InvariantCulture).PadLeft(5, '0');
+                var target = new ListFileName(listId);
                 return new ListArchive(segmentsAsync, target);
             }
 
