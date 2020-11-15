@@ -25,6 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 		..\.github\dependabot.yml = ..\.github\dependabot.yml
 		FilterLists.sln.DotSettings = FilterLists.sln.DotSettings
+		global.json = global.json
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{8F419098-3EEB-4B4B-99A8-70555FA93DAF}"
@@ -66,7 +67,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.SharedKernel.Lo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Api.Contracts", "Directory\FilterLists.Directory.Api.Contracts\FilterLists.Directory.Api.Contracts.csproj", "{4D3D2508-CCC6-4C0B-B5E4-734DD5EC588F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Archival.Domain", "Archival\FilterLists.Archival.Domain\FilterLists.Archival.Domain.csproj", "{6402E81A-75C2-422F-933B-AAC1ED8C4128}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Domain", "Archival\FilterLists.Archival.Domain\FilterLists.Archival.Domain.csproj", "{6402E81A-75C2-422F-933B-AAC1ED8C4128}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
