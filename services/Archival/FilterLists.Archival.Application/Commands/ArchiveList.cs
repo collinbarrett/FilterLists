@@ -94,10 +94,10 @@ namespace FilterLists.Archival.Application.Commands
             {
                 foreach (var segment in segmentUrls)
                 {
-                    var contentAsync = await _client.GetContentAsync(segment.Url, cancellationToken);
-                    if (contentAsync != Stream.Null)
+                    var content = await _client.GetContentAsync(segment.Url, cancellationToken);
+                    if (content != Stream.Null)
                     {
-                        yield return new ListArchiveSegment(segment.Url, contentAsync);
+                        yield return new ListArchiveSegment(segment.Url, content);
                     }
                 }
             }
