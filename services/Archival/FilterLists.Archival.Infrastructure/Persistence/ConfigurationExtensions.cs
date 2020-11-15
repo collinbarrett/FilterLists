@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using FilterLists.Archival.Domain.Lists;
+using FilterLists.Archival.Domain.ListArchives;
 using FilterLists.Archival.Infrastructure.Options;
 using LibGit2Sharp;
 using Microsoft.Extensions.Configuration;

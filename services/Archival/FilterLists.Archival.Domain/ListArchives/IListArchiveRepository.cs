@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using FilterLists.Archival.Domain.SeedWork;
 
-namespace FilterLists.Archival.Domain.Lists
+namespace FilterLists.Archival.Domain.ListArchives
 {
     public interface IListArchiveRepository : IUnitOfWork
     {

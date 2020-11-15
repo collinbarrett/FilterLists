@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace FilterLists.Archival.Domain.Lists
+namespace FilterLists.Archival.Domain.ListArchives
 {
     public class ListArchive
     {

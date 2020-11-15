@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Archival.Domain.Lists;
+using FilterLists.Archival.Domain.ListArchives;
 using FilterLists.Archival.Infrastructure.Clients;
 using FilterLists.Directory.Api.Contracts;
 using FilterLists.Directory.Api.Contracts.Models;

@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using FilterLists.Archival.Domain.Lists;
+using FilterLists.Archival.Domain.ListArchives;
 using FilterLists.Archival.Infrastructure.Options;
 using FilterLists.Archival.Infrastructure.Persistence.FileWriteStrategies;
 using LibGit2Sharp;

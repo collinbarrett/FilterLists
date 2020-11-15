@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using FilterLists.Archival.Domain.Extensions;
 using FilterLists.Archival.Domain.SeedWork;
 
-namespace FilterLists.Archival.Domain.Lists
+namespace FilterLists.Archival.Domain.ListArchives
 {
     public sealed class ListFileExtension : ValueObject
     {

@@ -2,7 +2,7 @@
 using System.Globalization;
 using FilterLists.Archival.Domain.SeedWork;
 
-namespace FilterLists.Archival.Domain.Lists
+namespace FilterLists.Archival.Domain.ListArchives
 {
     public sealed class ListFileName : ValueObject
     {
