@@ -3,42 +3,58 @@ using System.Linq;
 
 namespace FilterLists.Archival.Domain.SeedWork
 {
+    /// <remarks>https://enterprisecraftsmanship.com/posts/value-object-better-implementation/</remarks>
     public abstract class ValueObject
     {
-        protected static bool EqualOperator(ValueObject left, ValueObject right)
-        {
-            return left.Equals(right);
-        }
-
-        protected static bool NotEqualOperator(ValueObject left, ValueObject right)
-        {
-            return !EqualOperator(left, right);
-        }
-
         protected abstract IEnumerable<object> GetEqualityComponents();
 
         public override bool Equals(object? obj)
         {
-            if (obj is null)
+            if (obj == null)
             {
                 return false;
             }
 
-            if (obj.GetType() != GetType())
+            if (GetType() != obj.GetType())
             {
                 return false;
             }
 
-            var other = (ValueObject)obj;
+            var valueObject = (ValueObject)obj;
 
-            return GetEqualityComponents().SequenceEqual(other.GetEqualityComponents());
+            return GetEqualityComponents().SequenceEqual(valueObject.GetEqualityComponents());
         }
 
         public override int GetHashCode()
         {
             return GetEqualityComponents()
-                .Select(x => x?.GetHashCode() ?? 0)
-                .Aggregate((x, y) => x ^ y);
+                .Aggregate(1, (current, obj) =>
+                {
+                    unchecked
+                    {
+                        return (current * 23) + (obj?.GetHashCode() ?? 0);
+                    }
+                });
+        }
+
+        public static bool operator ==(ValueObject? a, ValueObject? b)
+        {
+            if (ReferenceEquals(a, null) && ReferenceEquals(b, null))
+            {
+                return true;
+            }
+
+            if (ReferenceEquals(a, null) || ReferenceEquals(b, null))
+            {
+                return false;
+            }
+
+            return a.Equals(b);
+        }
+
+        public static bool operator !=(ValueObject? a, ValueObject? b)
+        {
+            return !(a == b);
         }
     }
 }
