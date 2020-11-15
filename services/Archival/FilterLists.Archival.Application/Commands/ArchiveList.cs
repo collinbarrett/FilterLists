@@ -84,8 +84,7 @@ namespace FilterLists.Archival.Application.Commands
                 CancellationToken cancellationToken)
             {
                 var segmentsAsync = GetSegmentsAsync(segmentUrls, cancellationToken);
-                var target = new ListFileName(listId);
-                return new ListArchive(segmentsAsync, target);
+                return new ListArchive(listId, segmentsAsync);
             }
 
             private async IAsyncEnumerable<ListArchiveSegment> GetSegmentsAsync(

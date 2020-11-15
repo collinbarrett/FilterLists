@@ -12,6 +12,7 @@ namespace FilterLists.Archival.Domain.ListArchives
         }
 
         public ListFileExtension Extension { get; }
+
         public Stream Content { get; }
     }
 }

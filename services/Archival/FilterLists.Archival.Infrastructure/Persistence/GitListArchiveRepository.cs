@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading;
@@ -39,19 +40,19 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                 if (strategy is default(IStreamToPlainTextConversionStrategy))
                 {
                     _logger.LogWarning(
-                        "No stream to plain text conversion strategy found for extension {Extension} for target {Target}. Skipping list",
+                        "No stream to plain text conversion strategy found for extension {Extension} for list {ListId}. Skipping list",
                         segment.Extension,
-                        listArchive.TargetFileName.Value);
+                        listArchive.Id);
                     return;
                 }
 
-                var fileInfo = GetTargetFile(listArchive.TargetFileName, segmentNumber, segment.Extension);
+                var fileInfo = GetTargetFile(listArchive.Id, segmentNumber, segment.Extension);
                 if (fileInfo is default(FileInfo))
                 {
                     _logger.LogWarning(
-                        "Writing from non-plain text extension {Extension} for target {Target} not yet supported. Skipping list",
+                        "Writing from non-plain text extension {Extension} for list {ListId} not yet supported. Skipping list",
                         segment.Extension,
-                        listArchive.TargetFileName.Value);
+                        listArchive.Id);
                     return;
                 }
 
@@ -99,7 +100,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             _repo.CheckoutPaths("HEAD", _writtenFiles.Select(f => f.Name));
         }
 
-        private FileInfo? GetTargetFile(ListFileName baseTargetFileName, int segmentNumber, ListFileExtension extension)
+        private FileInfo? GetTargetFile(int listId, int segmentNumber, ListFileExtension extension)
         {
             string targetExtension;
             if (extension.IsPlainText)
@@ -112,10 +113,15 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                 return default;
             }
 
-            var targetFileName = baseTargetFileName.Value +
+            var targetFileName = GetTargetFileNamePrefix(listId) +
                                  (segmentNumber == 1 ? string.Empty : $"-{segmentNumber}") +
                                  targetExtension;
             return new FileInfo(Path.Combine(_options.RepositoryPath, targetFileName));
+        }
+
+        private static string GetTargetFileNamePrefix(int listId)
+        {
+            return listId.ToString(CultureInfo.InvariantCulture).PadLeft(5, '0');
         }
     }
 }
