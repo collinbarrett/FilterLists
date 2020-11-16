@@ -47,10 +47,10 @@ namespace FilterLists.Directory.Application.Queries
                 CreateMap<Syntax, SyntaxVm>()
                     .ForMember(s => s.FilterListIds,
                         o => o.MapFrom(s =>
-                            s.FilterListSyntaxes.Select(sls => sls.FilterListId).OrderBy(flid => flid)))
+                            s.FilterListSyntaxes.Select(sls => sls.FilterListId).OrderBy(flid => flid).AsEnumerable()))
                     .ForMember(s => s.SoftwareIds,
                         o => o.MapFrom(s =>
-                            s.SoftwareSyntaxes.Select(ss => ss.SoftwareId).OrderBy(sid => sid)));
+                            s.SoftwareSyntaxes.Select(ss => ss.SoftwareId).OrderBy(sid => sid).AsEnumerable()));
             }
         }
 

@@ -47,16 +47,16 @@ namespace FilterLists.Directory.Application.Queries
                 CreateMap<FilterList, ListVm>()
                     .ForMember(fl => fl.SyntaxIds,
                         o => o.MapFrom(fl =>
-                            fl.FilterListSyntaxes.Select(fls => fls.SyntaxId).OrderBy(sid => sid)))
+                            fl.FilterListSyntaxes.Select(fls => fls.SyntaxId).OrderBy(sid => sid).AsEnumerable()))
                     .ForMember(fl => fl.Iso6391s,
                         o => o.MapFrom(fl =>
-                            fl.FilterListLanguages.Select(fls => fls.Iso6391).OrderBy(i => i)))
+                            fl.FilterListLanguages.Select(fls => fls.Iso6391).OrderBy(i => i).AsEnumerable()))
                     .ForMember(fl => fl.TagIds,
                         o => o.MapFrom(fl =>
-                            fl.FilterListTags.Select(flt => flt.TagId).OrderBy(tid => tid)))
+                            fl.FilterListTags.Select(flt => flt.TagId).OrderBy(tid => tid).AsEnumerable()))
                     .ForMember(fl => fl.MaintainerIds,
                         o => o.MapFrom(fl =>
-                            fl.FilterListMaintainers.Select(flm => flm.MaintainerId).OrderBy(mid => mid)));
+                            fl.FilterListMaintainers.Select(flm => flm.MaintainerId).OrderBy(mid => mid).AsEnumerable()));
             }
         }
     }

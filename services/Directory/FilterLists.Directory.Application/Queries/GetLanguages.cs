@@ -47,7 +47,7 @@ namespace FilterLists.Directory.Application.Queries
                 CreateMap<Language, LanguageVm>()
                     .ForMember(l => l.FilterListIds,
                         o => o.MapFrom(l =>
-                            l.FilterListLanguages.Select(fll => fll.FilterListId).OrderBy(flid => flid)));
+                            l.FilterListLanguages.Select(fll => fll.FilterListId).OrderBy(flid => flid).AsEnumerable()));
             }
         }
 

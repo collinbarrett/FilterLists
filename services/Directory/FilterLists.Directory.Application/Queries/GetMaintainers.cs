@@ -47,7 +47,7 @@ namespace FilterLists.Directory.Application.Queries
                 CreateMap<Maintainer, MaintainerVm>()
                     .ForMember(m => m.FilterListIds,
                         o => o.MapFrom(m =>
-                            m.FilterListMaintainers.Select(flm => flm.FilterListId).OrderBy(flid => flid)));
+                            m.FilterListMaintainers.Select(flm => flm.FilterListId).OrderBy(flid => flid).AsEnumerable()));
             }
         }
 
