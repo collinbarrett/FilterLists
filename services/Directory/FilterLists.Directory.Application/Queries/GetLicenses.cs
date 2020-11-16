@@ -47,7 +47,7 @@ namespace FilterLists.Directory.Application.Queries
                 CreateMap<License, LicenseVm>()
                     .ForMember(l => l.FilterListIds,
                         o => o.MapFrom(l =>
-                            l.FilterLists.Select(fl => fl.Id).OrderBy(flid => flid)));
+                            l.FilterLists.Select(fl => fl.Id).OrderBy(flid => flid).AsEnumerable()));
             }
         }
 

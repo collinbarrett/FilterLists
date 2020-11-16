@@ -47,7 +47,7 @@ namespace FilterLists.Directory.Application.Queries
                 CreateMap<Software, SoftwareVm>()
                     .ForMember(s => s.SyntaxIds,
                         o => o.MapFrom(s =>
-                            s.SoftwareSyntaxes.Select(ss => ss.SyntaxId).OrderBy(sid => sid)));
+                            s.SoftwareSyntaxes.Select(ss => ss.SyntaxId).OrderBy(sid => sid).AsEnumerable()));
             }
         }
 

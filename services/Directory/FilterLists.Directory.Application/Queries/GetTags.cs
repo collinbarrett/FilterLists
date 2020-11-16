@@ -46,7 +46,7 @@ namespace FilterLists.Directory.Application.Queries
                 CreateMap<Tag, TagVm>()
                     .ForMember(t => t.FilterListIds,
                         o => o.MapFrom(t =>
-                            t.FilterListTags.Select(flt => flt.FilterListId).OrderBy(flid => flid)));
+                            t.FilterListTags.Select(flt => flt.FilterListId).OrderBy(flid => flid).AsEnumerable()));
             }
         }
 
