@@ -11,7 +11,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.6",
-    "antd": "^4.8.6",
+    "antd": "^4.9.0",
     "babel-plugin-import": "^1.13.3",
     "customize-cra": "^1.0.0",
     "eslint-config-prettier": "^6.15.0",
