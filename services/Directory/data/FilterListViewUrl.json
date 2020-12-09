@@ -15700,5 +15700,11 @@
     "id": 2638,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/Sensitive%20lists/AntiWeebBoobGamesList.txt"
+  },
+  {
+    "filterListId": 2437,
+    "id": 2639,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-online.tpl"
   }
 ]

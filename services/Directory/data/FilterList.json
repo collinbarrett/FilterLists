@@ -16850,5 +16850,13 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Anti-'Weeb boob games on Steam' List"
+  },
+  {
+    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
+    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "id": 2437,
+    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "licenseId": 28,
+    "name": "urlhaus-filter (IE)"
   }
 ]
