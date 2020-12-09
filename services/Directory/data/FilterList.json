@@ -16858,5 +16858,13 @@
     "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (IE)"
+  },
+  {
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "id": 2438,
+    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "licenseId": 8,
+    "name": "phishing-filter (IE)"
   }
 ]
