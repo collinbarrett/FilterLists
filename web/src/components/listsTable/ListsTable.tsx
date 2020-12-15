@@ -78,7 +78,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
       }}
       onChange={(
         _pagination: TablePaginationConfig,
-        _filters: Record<string, Key[] | null>,
+        _filters: Record<string, (Key | boolean)[] | null>,
         _sorter: SorterResult<List> | SorterResult<List>[],
         extra: TableCurrentDataSource<List>
       ) => setVisibleLists(extra.currentDataSource)}
