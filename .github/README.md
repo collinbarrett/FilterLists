@@ -2,7 +2,6 @@
 
 <p align="center">
 <a href="https://twitter.com/FilterLists"><img alt="Twitter" src="https://img.shields.io/twitter/follow/FilterLists?style=social"></a>
-<a href="https://hub.filterlists.com"><img alt="Discourse" src="https://img.shields.io/discourse/https/hub.filterlists.com/status.svg"></a>
 <a href="https://filterlists.com/api"><img alt="Swagger UI" src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=API%20Docs" /></a>
 <a href="https://github.com/collinbarrett/FilterLists/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/collinbarrett/filterlists.svg"></a>
 <a href="https://builtwithdot.net/project/125/filterlists"><img alt="BuiltWithDot.net" src="https://builtwithdot.net/project/125/filterlists/badge" /></a>
@@ -49,12 +48,6 @@ Using a software firewall or adblocker has become a key tool in protecting one's
 Typical adblockers run as an extension in popular web browsers. As we browse the internet, they compare HTTP requests to their list of hosts and filters to selectively block advertisements, trackers, and malware. This filtering helps to protect the surfer's privacy, prevents [malvertising attacks](http://www.wired.com/insights/2014/11/malvertising-is-cybercriminals-latest-sweet-spot/ "Why Malvertising Is Cybercriminals' Latest Sweet Spot - Wired"), and [reduces bandwidth requirements](http://venturebeat.com/2015/07/08/blocking-ads-can-cut-network-traffic-25-to-40-study-shows/ "Blocking Ads Can Cut Network Traffic 25% to 40%, Study Shows - VentureBeat"). Thousands of contributors work hard to maintain these FilterLists for anyone to use. Locating and selecting these lists, however, has not historically been very easy. This project was launched in 2015 to solve that problem.
 
 # Contributing
-
-## Community
-
-<a href="https://hub.filterlists.com"><img alt="Discourse posts" src="https://img.shields.io/discourse/https/hub.filterlists.com/posts.svg"></a>
-
-Check out the <a href="https://hub.filterlists.com">FilterLists Hub</a>, a forum for discussing how to write rules, maintain FilterLists, and chat about the state of the adblocking community.
 
 ## Adding or Updating Lists
 

@@ -50,7 +50,6 @@ export const App: React.FC = () => (
       >
         <CopyrightAuthor />
         <Twitter />
-        <Community />
         <GitHub />
         <Api />
         <Tpl />
@@ -99,19 +98,6 @@ const Twitter = () => (
       rel="noopener noreferrer"
     >
       <TwitterOutlined /> Twitter
-    </a>
-  </Tag>
-);
-
-const Community = () => (
-  <Tag>
-    <a
-      href="https://hub.filterlists.com"
-      title="FilterLists Discourse community forum"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <TeamOutlined /> Community
     </a>
   </Tag>
 );
