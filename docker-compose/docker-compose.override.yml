@@ -8,6 +8,7 @@ services:
       - "8080:80"
     volumes:
       - ../reverse-proxy/svr-includes:/etc/nginx/svr-includes:ro
+      - ../reverse-proxy/loc-includes:/etc/nginx/loc-includes:ro
       - ../reverse-proxy/conf.d.dev:/etc/nginx/conf.d:ro
     command: ["nginx-debug", "-g", "daemon off;"]
 
