@@ -24,8 +24,8 @@ steps:
     inputs:
       SourceFolder: $(Build.SourcesDirectory)
       Contents: |
-        reverse-proxy/svr-includes/*
-        reverse-proxy/loc-includes/*
+        reverse-proxy/server-includes/*
+        reverse-proxy/location-includes/*
         reverse-proxy/conf.d/*
       TargetFolder: $(Build.ArtifactStagingDirectory)
       CleanTargetFolder: true
