@@ -7,7 +7,7 @@ trigger:
       [
         web/*,
         docker-compose/docker-compose.yml,
-        docker-compose/docker-compose.prod.yml
+        docker-compose/docker-compose.prod.yml,
       ]
 
 pr:
@@ -19,7 +19,7 @@ pr:
       [
         web/*,
         docker-compose/docker-compose.yml,
-        docker-compose/docker-compose.prod.yml
+        docker-compose/docker-compose.prod.yml,
       ]
 
 pool:
