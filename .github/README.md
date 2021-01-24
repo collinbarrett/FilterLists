@@ -44,7 +44,7 @@ To submit a new list or update data about an existing list, please submit a pull
 
 Alternatively, you can [open a new issue](https://github.com/collinbarrett/FilterLists/issues/new) providing information for all of the fields described in the [data model](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar).
 
-In the future, we hope to have an easier form UI to submit updates. Follow [this issue](https://github.com/collinbarrett/FilterLists/issues?page=1&q=is%3Aissue+is%3Aopen) for any progress on that feature.
+In the future, we hope to have an easier form UI to submit updates. Follow [this issue](https://github.com/collinbarrett/FilterLists/issues/372) for any progress on that feature.
 
 Note: Since the primary FilterLists.com site does not support Internet Explorer, we also have a separate page for tracking protection lists (TPL) [here](https://github.com/collinbarrett/FilterLists/blob/master/web/public/tpl.html) and viewed [here](https://filterlists.com/tpl.html).
 
