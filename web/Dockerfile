@@ -16,7 +16,7 @@ RUN npm ci --only=production
 
 # build
 COPY . ./
-RUN npm run build
+RUN INLINE_RUNTIME_CHUNK=false npm run build
 
 # final
 FROM base as final
