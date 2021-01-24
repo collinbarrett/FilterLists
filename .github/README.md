@@ -7,6 +7,20 @@
 <a href="https://madewithreactjs.com/p/filterlists/shield-link"><img alt="MadeWithReactJS.com" src="https://madewithreactjs.com/storage/repo-shields/2335-shield.svg"/></a>
 <br/>FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</p>
 
+# Table of Contents
+
+- [Background](#background)
+- [Services](#services)
+- [Contributing](#contributing)
+  - [Adding or Updating Lists](#adding-or-updating-lists)
+  - [Adding or Updating Rules](#adding-or-updating-rules)
+  - [Building and Running Locally](#building-and-running-locally)
+    - [Up and Running](#up-and-running)
+- [Acknowledgements](#acknowledgements)
+- [Miscellany](#miscellany)
+  - [Disclaimer](#disclaimer)
+  - [Privacy](#privacy)
+
 # Background
 
 FilterLists helps to protect your privacy and security when using the internet. It provides a comprehensive directory of subscription lists to block advertisements, malware, trackers, and other general annoyances. First, install one of the software tools that supports these lists. Then you can subscribe to a set of these lists inside of that software. If you need help or have a comment/question, start a [Discussion](https://github.com/collinbarrett/FilterLists/discussions).
