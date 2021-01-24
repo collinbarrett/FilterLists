@@ -14,7 +14,6 @@
   - [Adding or Updating Lists](#adding-or-updating-lists)
   - [Adding or Updating Rules](#adding-or-updating-rules)
   - [Building and Running Locally](#building-and-running-locally)
-    - [Up and Running](#up-and-running)
 - [Acknowledgements](#acknowledgements)
 - [Miscellany](#miscellany)
   - [Disclaimer](#disclaimer)
@@ -54,8 +53,6 @@ FilterLists does not maintain any of these lists. It serves only as a discovery 
 ## Building and Running Locally
 
 We have containerized FilterLists to make it as easy as possible for contributers to get the project up and running locally.
-
-### Up and Running
 
 1. Install Docker CE for your computer's operating system. [Docs](https://docs.docker.com/install/)
 2. Clone the FilterLists git repository to your computer. [Docs](https://help.github.com/en/articles/cloning-a-repository)
