@@ -1,7 +1,10 @@
 import { SearchOutlined } from "@ant-design/icons";
 import { Button, Input } from "antd";
 import React, { useEffect, useState } from "react";
-import { FilterDropdownProps } from "antd/lib/table/interface";
+import {
+  FilterConfirmProps,
+  FilterDropdownProps,
+} from "antd/lib/table/interface";
 
 interface FilterPropsState<T> {
   filterDropdown?:
@@ -18,8 +21,8 @@ export const useSearchColumnFilter = <T extends {}>(dataIndex: string) => {
     onFilter: undefined,
   });
   useEffect(() => {
-    const handleSearch = (confirm?: () => void) => {
-      confirm && confirm();
+    const handleSearch = (confirm?: (param: FilterConfirmProps) => void) => {
+      confirm && confirm({ closeDropdown: true });
     };
     const handleReset = (clearFilters?: (selectedKeys: string[]) => void) => {
       clearFilters && clearFilters([]);
