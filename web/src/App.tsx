@@ -3,7 +3,6 @@ import {
   DollarOutlined,
   GithubOutlined,
   IeOutlined,
-  TeamOutlined,
   TwitterOutlined,
 } from "@ant-design/icons";
 import { Layout, Tag } from "antd";
