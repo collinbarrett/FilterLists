@@ -77,7 +77,14 @@ namespace FilterLists.Archival.Infrastructure.Persistence
                 var signature = new Signature(_options.UserName, _options.UserEmail, DateTime.UtcNow);
                 var message = $"feat(archives): archive {fileNames.Count} file(s){Environment.NewLine}{string.Join(Environment.NewLine, fileNames)}";
                 Commands.Stage(_repo, fileNames);
-                _repo.Commit(message, signature, signature);
+                try
+                {
+                    _repo.Commit(message, signature, signature);
+                }
+                catch (EmptyCommitException ex)
+                {
+                    _logger.LogInformation(ex, "No changes to commit for {@FileNames}", fileNames);
+                }
 
                 _logger.LogInformation("Committed {@FileNames}", fileNames);
             }
