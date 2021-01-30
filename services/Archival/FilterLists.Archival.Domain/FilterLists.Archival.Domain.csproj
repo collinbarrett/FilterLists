@@ -10,7 +10,7 @@
         <Company>FilterLists</Company>
         <Product>FilterLists Archival</Product>
         <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
-        <Copyright>Copyright (c) 2020 Collin M. Barrett</Copyright>
+        <Copyright>Copyright (c) 2021 Collin M. Barrett</Copyright>
         <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
         <PackageProjectUrl>https://filterlists.com</PackageProjectUrl>
     </PropertyGroup>
