@@ -1,8 +1,8 @@
 ﻿export interface List {
   id: number;
   name: string;
-  description: string;
-  licenseId: number;
+  description?: string;
+  licenseId?: number;
   syntaxIds: number[];
   iso6391s: string[];
   tagIds: number[];

@@ -1,6 +1,6 @@
 export interface Tag {
   id: number;
   name: string;
-  description: string;
+  description?: string;
   filterListIds: number[];
 }
