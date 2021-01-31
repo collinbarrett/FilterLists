@@ -1,3 +1,6 @@
 # Visual Studio (container tools?) creates artifacts at repo root for some reason
 bin
 obj
+
+# https://github.com/facebook/create-react-app/issues/10161
+*.eslintcache
