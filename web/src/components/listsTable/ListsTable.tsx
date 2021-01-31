@@ -123,7 +123,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           filterDropdown={searchDescriptionColumn.filterDropdown}
           filterIcon={searchDescriptionColumn.filterIcon}
           onFilter={searchDescriptionColumn.onFilter}
-          render={(description: string, list: List) => (
+          render={(description: string) => (
             <Description description={description} />
           )}
         />
