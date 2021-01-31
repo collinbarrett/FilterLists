@@ -56,10 +56,16 @@ FilterLists does not maintain any of these lists. It serves only as a discovery 
 
 We have containerized FilterLists to make it as easy as possible for contributers to get the project up and running locally.
 
-1. Install Docker CE for your computer's operating system. [Docs](https://docs.docker.com/install/)
-2. Clone the FilterLists git repository to your computer. [Docs](https://help.github.com/en/articles/cloning-a-repository)
-3. Navigate to the root directory of your locally cloned FilterLists git repository in a command-line interface.
-4. [TBD...](https://github.com/collinbarrett/FilterLists/issues/1998)
+1. Install Docker CE. [Docs](https://docs.docker.com/install/)
+2. Install the current version of Node.js. [Docs](https://nodejs.org/en/download/current/)
+3. Clone the FilterLists git repository to your computer. [Docs](https://help.github.com/en/articles/cloning-a-repository)
+4. Navigate to the root directory of your locally cloned FilterLists git repository in a command-line interface.
+5. Start the API services:<br>
+`docker-compose -f docker-compose/docker-compose.yml -f docker-compose/docker-compose.override.yml up -d`<br>
+You can then view the API docs and execute API calls here: http://localhost:8080/api/
+6. Start the Directory web app:<br>
+`npm i --cwd web && npm start --prefix web`<br>
+You can then view the Directory web app calling your local instance of the Directory API here: http://localhost:3000
 
 # Acknowledgements
 
