@@ -3,7 +3,7 @@ import { ButtonType } from "antd/lib/button";
 import React from "react";
 
 interface Props {
-  url: string;
+  url?: string;
   text: string;
   title?: string;
   type?: ButtonType;
