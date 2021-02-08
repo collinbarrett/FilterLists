@@ -15713,25 +15713,25 @@
     "primariness": 1,
     "url": "https://curben.gitlab.io/phishing-filter-mirror/phishing-filter.tpl"
   },
-   {
+  {
     "filterListId": 2439,
     "id": 2641,
     "primariness": 1,
     "url": "https://github.com/arapurayil/aBL/raw/master/lists/general/filter_list.txt"
   },
-   {
+  {
     "filterListId": 2440,
     "id": 2642,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/arapurayil/aBL/master/lists/social/filter_list.txt"
   },
-   {
+  {
     "filterListId": 2441,
     "id": 2643,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/arapurayil/aBL/master/lists/porn_gambling_snuff/filter_list.txt"
   },
-   {
+  {
     "filterListId": 2442,
     "id": 2644,
     "primariness": 1,
