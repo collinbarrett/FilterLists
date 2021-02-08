@@ -16924,7 +16924,7 @@
   {
     "description": "A proof of concept that no media paywall is impenetrable, and some of the existing content protection solutions are hopelessly inadequate.",
     "homeUrl": "https://github.com/acnapyx/paywall-remover",
-    "emailAddress": "asparuh@unleaslab.com"
+    "emailAddress": "asparuh@unleaslab.com",
     "id": 2445,
     "issuesUrl": "https://github.com/acnapyx/paywall-remover/issues",
     "licenseId": 8,
