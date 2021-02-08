@@ -12958,6 +12958,7 @@
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "id": 1929,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Dandelion Sprout's Norwegian Fan Translations for Untranslatable Websites"
@@ -13226,6 +13227,7 @@
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "id": 1966,
+    "isDeleted": true,
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "PornHub: Pure Trail Mix Experience"
@@ -16898,5 +16900,101 @@
     "issuesUrl": "https://github.com/arapurayil/aBL/issues",
     "licenseId": 4,
     "name": "aBL - Addon - Regional"
-  }
+  },
+  {
+    "description": "The article at https://www.ghacks.net/2021/01/22/favicons-may-be-used-to-track-users/ probably explains this list better than anything I could've written myself.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2443,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-Favicon List"
+  },
+  {
+    "description": "There's also additional categories that cover unusual malware and phishing domains that very few other lists seem to cover.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2444,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's Anti-Malware List (Domains)"
+  },
+  {
+    "description": "A proof of concept that no media paywall is impenetrable, and some of the existing content protection solutions are hopelessly inadequate.",
+    "homeUrl": "https://github.com/acnapyx/paywall-remover",
+    "emailAddress": "asparuh@unleaslab.com"
+    "id": 2445,
+    "issuesUrl": "https://github.com/acnapyx/paywall-remover/issues",
+    "licenseId": 8,
+    "name": "Paywall Remover"
+  },
+  {
+    "description": "We also offer an endpoint that blocks a crowdsourced list (https://dns.hostux.net/en/adslist.txt) of known advertisement and tracking domains.",
+    "emailAddress": "contact@hostux.net",
+    "homeUrl": "https://dns.hostux.net/en/",
+    "id": 2446,
+    "name": "Hostux - Blocking Ads and Trackers"
+  },
+  {
+    "description": "Block Apple advertising on Apple devices.",
+    "homeUrl": "https://github.com/arman68/noappleads",
+    "id": 2447,
+    "issuesUrl": "https://github.com/arman68/noappleads/issues",
+    "name": "No Apple ads"
+  },
+  {
+    "homeUrl": "https://github.com/vavavr00m/lists",
+    "id": 2448,
+    "issuesUrl": "https://github.com/vavavr00m/lists/issues",
+    "licenseId": 11,
+    "name": "vavavr00m's lists - Google Translate"
+  },
+  {
+    "homeUrl": "https://github.com/vavavr00m/lists",
+    "id": 2449,
+    "issuesUrl": "https://github.com/vavavr00m/lists/issues",
+    "licenseId": 11,
+    "name": "vavavr00m's lists - Phorm"
+  },
+  {
+    "description": "I created this project as a way to optimize adware protection of my router TPLINK 1043 with Openwrt. It's an excellent router, but has very little available memory (8MB) and a median processor (400MHz). I noticed that the articles and tutorials on ad-blocking does not take into account the optimization of hosts and domains. (…) But these lists are variations of websites that create random subdomains, interfering with the blocking efficiency. Only one domain, 302br.net has +17,000 registered subdomains in lists. So I first tried to treat (sub)domains within the router, (…) and impacted the performance of the navigation here at home, (…). This takes ~2Mb on the router. After grouping, my list has about 27,000 hosts. (…)",
+    "descriptionSourceUrl": "https://github.com/jmhenrique/adblock/blob/master/README.md",
+    "homeUrl": "https://github.com/jmhenrique/adblock",
+    "id": 2450,
+    "issuesUrl": "https://github.com/jmhenrique/adblock/issues",
+    "licenseId": 11,
+    "name": "Adblock by Jm (Hosts)"
+  },
+  {
+    "description": "I created this project as a way to optimize adware protection of my router TPLINK 1043 with Openwrt. It's an excellent router, but has very little available memory (8MB) and a median processor (400MHz). I noticed that the articles and tutorials on ad-blocking does not take into account the optimization of hosts and domains. (…) But these lists are variations of websites that create random subdomains, interfering with the blocking efficiency. Only one domain, 302br.net has +17,000 registered subdomains in lists. So I first tried to treat (sub)domains within the router, (…) and impacted the performance of the navigation here at home, (…). This takes ~2Mb on the router. After grouping, my list has about 27,000 hosts. (…)",
+    "descriptionSourceUrl": "https://github.com/jmhenrique/adblock/blob/master/README.md",
+    "homeUrl": "https://github.com/jmhenrique/adblock",
+    "id": 2451,
+    "issuesUrl": "https://github.com/jmhenrique/adblock/issues",
+    "licenseId": 11,
+    "name": "Adblock by Jm (dnsmasq supplement)"
+  },
+  {
+    "homeUrl": "https://github.com/jbunner/adblock",
+    "id": 2452,
+    "issuesUrl": "https://github.com/jbunner/adblock/issues",
+    "licenseId": 4,
+    "name": "jbunner's Adblock - Roblox"
+  },
+  {
+    "homeUrl": "https://github.com/jbunner/adblock",
+    "id": 2453,
+    "issuesUrl": "https://github.com/jbunner/adblock/issues",
+    "licenseId": 4,
+    "name": "jbunner's Adblock - Microsoft Teams"
+  },
+  {
+    "homeUrl": "https://github.com/jbunner/adblock",
+    "id": 2454,
+    "issuesUrl": "https://github.com/jbunner/adblock/issues",
+    "licenseId": 4,
+    "name": "jbunner's Adblock - ScratchMit"
+  },
 ]
