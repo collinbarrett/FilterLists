@@ -16968,15 +16968,6 @@
     "name": "Adblock by Jm (Hosts)"
   },
   {
-    "description": "I created this project as a way to optimize adware protection of my router TPLINK 1043 with Openwrt. It's an excellent router, but has very little available memory (8MB) and a median processor (400MHz). I noticed that the articles and tutorials on ad-blocking does not take into account the optimization of hosts and domains. (…) But these lists are variations of websites that create random subdomains, interfering with the blocking efficiency. Only one domain, 302br.net has +17,000 registered subdomains in lists. So I first tried to treat (sub)domains within the router, (…) and impacted the performance of the navigation here at home, (…). This takes ~2Mb on the router. After grouping, my list has about 27,000 hosts. (…)",
-    "descriptionSourceUrl": "https://github.com/jmhenrique/adblock/blob/master/README.md",
-    "homeUrl": "https://github.com/jmhenrique/adblock",
-    "id": 2451,
-    "issuesUrl": "https://github.com/jmhenrique/adblock/issues",
-    "licenseId": 11,
-    "name": "Adblock by Jm (dnsmasq supplement)"
-  },
-  {
     "homeUrl": "https://github.com/jbunner/adblock",
     "id": 2452,
     "issuesUrl": "https://github.com/jbunner/adblock/issues",
