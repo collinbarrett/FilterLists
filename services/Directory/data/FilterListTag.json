@@ -12346,5 +12346,53 @@
   {
     "filterListId": 2438,
     "tagId": 7
+  },
+  {
+    "filterListId": 2439,
+    "tagId": 1
+  },
+  {
+    "filterListId": 2439,
+    "tagId": 2
+  },
+  {
+    "filterListId": 2439,
+    "tagId": 3
+  },
+  {
+    "filterListId": 2439,
+    "tagId": 6
+  },
+  {
+    "filterListId": 2439,
+    "tagId": 7
+  },
+  {
+    "filterListId": 2439,
+    "tagId": 9
+  },
+  {
+    "filterListId": 2439,
+    "tagId": 20
+  },
+  {
+    "filterListId": 2440,
+    "tagId": 4
+  },
+  {
+    "filterListId": 2441,
+    "tagId": 11
+  },
+  {
+    "filterListId": 2441,
+    "tagId": 15
+  },
+  {
+    "filterListId": 2441,
+    "tagId": 17
+  },
+  {
+    "filterListId": 2442,
+    "tagId": 2
   }
 ]

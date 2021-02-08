@@ -16866,5 +16866,37 @@
     "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (IE)"
+  },
+  {
+    "description": "A filter list optimized for DNS level blocking of ads, analytics, crypto-jacking and other such threats/nuisances.",
+    "homeUrl": "https://github.com/arapurayil/aBL/",
+    "id": 2439,
+    "issuesUrl": "https://github.com/arapurayil/aBL/issues",
+    "licenseId": 4,
+    "name": "aBL - General"
+  },
+  {
+    "description": "Blocks social media. Should only be used with aBL - General List",
+    "homeUrl": "https://github.com/arapurayil/aBL/",
+    "id": 2440,
+    "issuesUrl": "https://github.com/arapurayil/aBL/issues",
+    "licenseId": 4,
+    "name": "aBL - Addon - Social Media"
+  },
+  {
+    "description": "Blocks porn, gambling, and snuff. Should only be used with aBL - General List",
+    "homeUrl": "https://github.com/arapurayil/aBL/",
+    "id": 2441,
+    "issuesUrl": "https://github.com/arapurayil/aBL/issues",
+    "licenseId": 4,
+    "name": "aBL - Addon - Porn, Gambling, Snuff"
+  },
+  {
+    "description": "Blocks region/language specific domains. Should only be used with aBL - General List",
+    "homeUrl": "https://github.com/arapurayil/aBL/",
+    "id": 2442,
+    "issuesUrl": "https://github.com/arapurayil/aBL/issues",
+    "licenseId": 4,
+    "name": "aBL - Addon - Regional"
   }
 ]
