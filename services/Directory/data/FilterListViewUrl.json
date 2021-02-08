@@ -15736,5 +15736,83 @@
     "id": 2644,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/arapurayil/aBL/master/lists/regional/filter_list.txt"
+  },
+  {
+    "filterListId": 2443,
+    "id": 2645,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Special%20security%20lists/AntiFaviconList.txt"
+  },
+  {
+    "filterListId": 2443,
+    "id": 2646,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/Special%20security%20lists/AntiFaviconList.txt"
+  },
+  {
+    "filterListId": 2444,
+    "id": 2647,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt"
+  },
+  {
+    "filterListId": 2444,
+    "id": 2648,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt"
+  },
+  {
+    "filterListId": 2445,
+    "id": 2649,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/acnapyx/paywall-remover/master/paywall-remover-list.txt"
+  },
+  {
+    "filterListId": 2446,
+    "id": 2650,
+    "primariness": 1,
+    "url": "https://dns.hostux.net/ads"
+  },
+  {
+    "filterListId": 2447,
+    "id": 2651,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/arman68/noappleads/main/adguard-blocklist.txt"
+  },
+  {
+    "filterListId": 2448,
+    "id": 2652,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/vavavr00m/lists/main/hosts/googletranslate"
+  },
+  {
+    "filterListId": 2449,
+    "id": 2653,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/vavavr00m/lists/main/hosts/phorm"
+  },
+  {
+    "filterListId": 2450,
+    "id": 2654,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/jmhenrique/adblock/master/etc/adblock_hosts"
+  },
+  {
+    "filterListId": 2452,
+    "id": 2656,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/jbunner/adblock/master/a-roblox.txt"
+  },
+  {
+    "filterListId": 2453,
+    "id": 2657,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/jbunner/adblock/master/a-msteams.txt"
+  },
+  {
+    "filterListId": 2454,
+    "id": 2658,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/jbunner/adblock/master/a-scratch.txt"
   }
 ]
