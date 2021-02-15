@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^12.7.1",
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.28",
-    "@types/react": "^17.0.1",
+    "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
     "@types/react-router-dom": "^5.1.7",
     "antd": "^4.12.3",
