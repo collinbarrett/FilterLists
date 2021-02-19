@@ -11577,37 +11577,37 @@
     "filterListId": 1868,
     "id": 1936,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/adblock.txt"
+    "url": "https://mkb2091.github.io/blockconvert/output/adblock.txt"
   },
   {
     "filterListId": 1869,
     "id": 1937,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/hosts.txt"
+    "url": "https://mkb2091.github.io/blockconvert/output/hosts.txt"
   },
   {
     "filterListId": 1870,
     "id": 1938,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/domains.txt"
+    "url": "https://mkb2091.github.io/blockconvert/output/domains.txt"
   },
   {
     "filterListId": 1871,
     "id": 1939,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/ip_blocklist.txt"
+    "url": "https://mkb2091.github.io/blockconvert/output/ip_blocklist.txt"
   },
   {
     "filterListId": 1872,
     "id": 1940,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/domains.rpz"
+    "url": "https://mkb2091.github.io/blockconvert/output/domains.rpz"
   },
   {
     "filterListId": 1873,
     "id": 1941,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/whitelist_domains.txt"
+    "url": "https://mkb2091.github.io/blockconvert/output/whitelist_domains.txt"
   },
   {
     "filterListId": 1876,
