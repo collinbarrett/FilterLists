@@ -15753,13 +15753,13 @@
     "filterListId": 2444,
     "id": 2647,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt"
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareDomains.txt"
   },
   {
     "filterListId": 2444,
     "id": 2648,
     "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt"
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareDomains.txt"
   },
   {
     "filterListId": 2445,
