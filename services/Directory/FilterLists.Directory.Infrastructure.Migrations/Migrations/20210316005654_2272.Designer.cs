@@ -3,15 +3,17 @@ using System;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    partial class QueryDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210316005654_2272")]
+    partial class _2272
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -206,7 +208,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             EmailAddress = "listefr.adblock@gmail.com",
                             ForumUrl = "https://forums.lanik.us/viewforum.php?f=91",
                             HomeUrl = "https://forums.lanik.us/viewforum.php?f=91",
-                            IssuesUrl = "https://github.com/easylist/listefr/issues",
                             LicenseId = 6,
                             Name = "Liste FR"
                         },
@@ -224,7 +225,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             EmailAddress = "liste.ar.adblock@gmail.com",
                             ForumUrl = "https://forums.lanik.us/viewforum.php?f=98",
                             HomeUrl = "https://code.google.com/archive/p/liste-ar-adblock/",
-                            IssuesUrl = "https://github.com/easylist/listear/issues",
                             LicenseId = 6,
                             Name = "Liste AR"
                         },
@@ -932,7 +932,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Description = "Russian supplement for EasyList.",
                             ForumUrl = "https://forums.lanik.us/viewforum.php?f=102",
                             HomeUrl = "https://code.google.com/archive/p/ruadlist/",
-                            IssuesUrl = "https://github.com/easylist/ruadlist/issues",
                             LicenseId = 12,
                             Name = "RU AdList"
                         },
@@ -1841,7 +1840,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             EmailAddress = "easylist.spanish@gmail.com",
                             ForumUrl = "https://forums.lanik.us/viewforum.php?f=103",
                             HomeUrl = "https://easylist.to/",
-                            IssuesUrl = "https://github.com/easylist/easylistspanish/issues",
                             LicenseId = 4,
                             Name = "EasyList Spanish"
                         },
@@ -2237,7 +2235,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             EmailAddress = "easylistitaly@gmail.com",
                             ForumUrl = "https://forums.lanik.us/viewforum.php?f=96",
                             HomeUrl = "https://easylist.to/",
-                            IssuesUrl = "https://github.com/easylist/easylistitaly/issues",
                             LicenseId = 4,
                             Name = "EasyList Italy"
                         },
@@ -2290,7 +2287,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             EmailAddress = "fam.lam@live.nl",
                             ForumUrl = "https://forums.lanik.us/viewforum.php?f=100",
                             HomeUrl = "https://easylist.to/",
-                            IssuesUrl = "https://github.com/easylist/easylistdutch/issues",
                             LicenseId = 4,
                             Name = "EasyList Dutch"
                         },
@@ -2324,7 +2320,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             EmailAddress = "easylist.china@gmail.com",
                             ForumUrl = "https://abpchina.org/forum/forum.php",
                             HomeUrl = "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
-                            IssuesUrl = "https://github.com/easylist/easylistchina",
                             LicenseId = 4,
                             Name = "EasyList China"
                         },
@@ -5498,7 +5493,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Description = "A combined version of the filterlist RU AdList against advertising, and an experimental list of cosmetic CSS style fixes. At the moment it only works normally in uBlock Origin.",
                             ForumUrl = "https://forums.lanik.us/viewforum.php?f=102",
                             HomeUrl = "https://forums.lanik.us/viewforum.php?f=102",
-                            IssuesUrl = "https://github.com/easylist/ruadlist/issues",
                             LicenseId = 16,
                             Name = "RU AdList + CSS Fixes"
                         },
@@ -5507,7 +5501,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 806,
                             EmailAddress = "easylist.portuguese@gmail.com",
                             HomeUrl = "https://easylist.to/",
-                            IssuesUrl = "https://github.com/easylist/easylistportuguese/issues",
                             LicenseId = 4,
                             Name = "EasyList Portuguese"
                         },
@@ -10990,7 +10983,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 1529,
                             HomeUrl = "https://easylist.to/",
-                            IssuesUrl = "https://github.com/easylist/KoreanList/issues",
                             LicenseId = 3,
                             Name = "KoreanList"
                         },
@@ -11122,7 +11114,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 1543,
                             ForumUrl = "https://forums.lanik.us/",
                             HomeUrl = "https://easylist.to/",
-                            IssuesUrl = "https://github.com/easylist/KoreanList/issues",
+                            IssuesUrl = "https://github.com/easylist/easylist/issues",
                             LicenseId = 4,
                             Name = "KoreanList (TPL)"
                         },
@@ -11131,7 +11123,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 1544,
                             ForumUrl = "https://forums.lanik.us/",
                             HomeUrl = "https://easylist.to/",
-                            IssuesUrl = "https://github.com/easylist/easylistportuguese/issues",
+                            IssuesUrl = "https://github.com/easylist/easylist/issues",
                             LicenseId = 4,
                             Name = "EasyList Portuguese (TPL)"
                         },
@@ -11156,6 +11148,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 1547,
                             ForumUrl = "https://forums.lanik.us/",
                             HomeUrl = "https://easylist.to/",
+                            IssuesUrl = "https://github.com/easylist/easylist/issues",
                             LicenseId = 4,
                             Name = "IndianList (TPL)"
                         },
@@ -19199,149 +19192,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/jbunner/adblock/issues",
                             LicenseId = 4,
                             Name = "jbunner's Adblock - ScratchMit"
-                        },
-                        new
-                        {
-                            Id = 2455,
-                            Description = "After 1½ years of trial setups and tinkering until March 2021, I now offer my DNS server to be used by the public! That being said, there are a considerable number of drawbacks with it that means that it should NOT be used in setups where uptime, privacy, or impartiality is important; read the homepage Readme before using it.",
-                            DonateUrl = "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-                            EmailAddress = "imreeil42@gmail.com",
-                            HomeUrl = "https://github.com/DandelionSprout/adfilt/blob/master/Dandelion Sprout's Official DNS Server/README.md",
-                            IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
-                            LicenseId = 35,
-                            Name = "Dandelion Sprout's Official DNS Server"
-                        },
-                        new
-                        {
-                            Id = 2456,
-                            Description = "The easiest way to get rid of annoying online consultants is to block access to them at the lowest level, i.e. via a hosts file. This keeps the browser free of extensions and ensures reliable blocking on all fronts.",
-                            EmailAddress = "pafnuty10@gmail.com",
-                            HomeUrl = "https://github.com/pafnuty/onlineConsultantBlocker",
-                            IssuesUrl = "https://github.com/pafnuty/onlineConsultantBlocker/issues",
-                            LicenseId = 2,
-                            Name = "Online Consultant Blocker"
-                        },
-                        new
-                        {
-                            Id = 2457,
-                            HomeUrl = "https://github.com/catsxp/adblock-lists",
-                            IssuesUrl = "https://github.com/catsxp/adblock-lists/issues",
-                            Name = "catsxp Unbreak"
-                        },
-                        new
-                        {
-                            Id = 2458,
-                            Description = "The default uBlock Origin lists block most ads and tracking. Web Annoyances Ultralist blocks most floating items. This list is for the few ads and annoyances that these two lists don't cover. Our goal is to block everything annoying. Anything that disrupts the normal reading flow of the page. Anything that tries to influence the reader to do something unnecessary.",
-                            HomeUrl = "https://github.com/RedDragonWebDesign/block-everything",
-                            IssuesUrl = "https://github.com/RedDragonWebDesign/block-everything/issues",
-                            Name = "Block Everything!"
-                        },
-                        new
-                        {
-                            Id = 2459,
-                            Description = "The list of trackers that disguise the real trackers by using CNAME records.",
-                            HomeUrl = "https://github.com/AdguardTeam/cname-trackers",
-                            IssuesUrl = "https://github.com/AdguardTeam/cname-trackers/issues",
-                            LicenseId = 2,
-                            Name = "AdGuard CNAME disguised trackers list"
-                        },
-                        new
-                        {
-                            Id = 2460,
-                            Description = "The list of trackers that disguise the real trackers by using CNAME records.",
-                            HomeUrl = "https://github.com/AdguardTeam/cname-trackers",
-                            IssuesUrl = "https://github.com/AdguardTeam/cname-trackers/issues",
-                            LicenseId = 2,
-                            Name = "AdGuard CNAME disguised trackers list (Domains)"
-                        },
-                        new
-                        {
-                            Id = 2461,
-                            Description = "The list of trackers that are often disguised using CNAME. This list is supposed to be used only by Software capable of scanning CNAME records.",
-                            HomeUrl = "https://github.com/AdguardTeam/cname-trackers",
-                            IssuesUrl = "https://github.com/AdguardTeam/cname-trackers/issues",
-                            LicenseId = 2,
-                            Name = "AdGuard CNAME original trackers list"
-                        },
-                        new
-                        {
-                            Id = 2462,
-                            Description = "Eliminates trashy videos, channels, and features from the user's feeds, so that the experience is more enjoyable.",
-                            HomeUrl = "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/",
-                            IssuesUrl = "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/issues",
-                            Name = "Anti-Trash YouTube"
-                        },
-                        new
-                        {
-                            Id = 2463,
-                            Description = "Eliminates trash content from new reddit, while not infringing the view of the user, so that the experience is more enjoyable. ",
-                            HomeUrl = "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/",
-                            IssuesUrl = "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/issues",
-                            Name = "Anti-Trash New Reddit"
-                        },
-                        new
-                        {
-                            Id = 2464,
-                            Description = "Eliminates trash content from old reddit, while not infringing the view of the user, so that the experience is more enjoyable.",
-                            HomeUrl = "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/",
-                            IssuesUrl = "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/issues",
-                            Name = "Anti-Trash Old Reddit"
-                        },
-                        new
-                        {
-                            Id = 2465,
-                            Description = "Blocks scam sites and remove them from search recommendations to increase the user's security.",
-                            HomeUrl = "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/",
-                            IssuesUrl = "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/issues",
-                            Name = "Anti-Scam Internet"
-                        },
-                        new
-                        {
-                            Id = 2466,
-                            Description = "An adblocker ruleset for Taiwan.",
-                            DonateUrl = "https://p.ecpay.com.tw/B32C0",
-                            ForumUrl = "https://t.me/adguard_tw",
-                            HomeUrl = "https://github.com/FutaGuard/FutaFilter",
-                            IssuesUrl = "https://github.com/FutaGuard/FutaFilter/issues",
-                            Name = "FutaFilter"
-                        },
-                        new
-                        {
-                            Id = 2467,
-                            Description = "An adblocker ruleset for Taiwan.",
-                            DonateUrl = "https://p.ecpay.com.tw/B32C0",
-                            ForumUrl = "https://t.me/adguard_tw",
-                            HomeUrl = "https://github.com/FutaGuard/FutaFilter",
-                            IssuesUrl = "https://github.com/FutaGuard/FutaFilter/issues",
-                            Name = "FutaHosts"
-                        },
-                        new
-                        {
-                            Id = 2468,
-                            Description = "An adblocker ruleset for Taiwan.",
-                            DonateUrl = "https://p.ecpay.com.tw/B32C0",
-                            ForumUrl = "https://t.me/adguard_tw",
-                            HomeUrl = "https://github.com/FutaGuard/FutaFilter",
-                            IssuesUrl = "https://github.com/FutaGuard/FutaFilter/issues",
-                            Name = "FutaHosts Nofarm"
-                        },
-                        new
-                        {
-                            Id = 2469,
-                            DonateUrl = "https://p.ecpay.com.tw/B32C0",
-                            ForumUrl = "https://t.me/adguard_tw",
-                            HomeUrl = "https://github.com/FutaGuard/FutaFilter",
-                            IssuesUrl = "https://github.com/FutaGuard/FutaFilter/issues",
-                            Name = "FutaFilter removeparam"
-                        },
-                        new
-                        {
-                            Id = 2470,
-                            Description = "A filter to scrub sites and services related to Rupert Murdoch and News Corp from the web",
-                            HomeUrl = "https://github.com/twcau/AdblockRules/",
-                            IssuesUrl = "https://github.com/twcau/AdblockRules/issues",
-                            LicenseId = 28,
-                            Name = "MurdochList"
                         });
                 });
 
@@ -24093,31 +23943,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2442,
-                            Iso6391 = "en"
-                        },
-                        new
-                        {
-                            FilterListId = 2456,
-                            Iso6391 = "ru"
-                        },
-                        new
-                        {
-                            FilterListId = 2466,
-                            Iso6391 = "zh"
-                        },
-                        new
-                        {
-                            FilterListId = 2467,
-                            Iso6391 = "zh"
-                        },
-                        new
-                        {
-                            FilterListId = 2468,
-                            Iso6391 = "zh"
-                        },
-                        new
-                        {
-                            FilterListId = 2470,
                             Iso6391 = "en"
                         });
                 });
@@ -31176,26 +31001,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2444,
                             MaintainerId = 22
-                        },
-                        new
-                        {
-                            FilterListId = 2455,
-                            MaintainerId = 22
-                        },
-                        new
-                        {
-                            FilterListId = 2459,
-                            MaintainerId = 46
-                        },
-                        new
-                        {
-                            FilterListId = 2460,
-                            MaintainerId = 46
-                        },
-                        new
-                        {
-                            FilterListId = 2461,
-                            MaintainerId = 46
                         });
                 });
 
@@ -41832,7 +41637,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2434,
-                            SyntaxId = 6
+                            SyntaxId = 55
                         },
                         new
                         {
@@ -41928,91 +41733,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2454,
                             SyntaxId = 2
-                        },
-                        new
-                        {
-                            FilterListId = 2455,
-                            SyntaxId = 22
-                        },
-                        new
-                        {
-                            FilterListId = 2456,
-                            SyntaxId = 28
-                        },
-                        new
-                        {
-                            FilterListId = 2457,
-                            SyntaxId = 4
-                        },
-                        new
-                        {
-                            FilterListId = 2458,
-                            SyntaxId = 4
-                        },
-                        new
-                        {
-                            FilterListId = 2459,
-                            SyntaxId = 47
-                        },
-                        new
-                        {
-                            FilterListId = 2460,
-                            SyntaxId = 2
-                        },
-                        new
-                        {
-                            FilterListId = 2461,
-                            SyntaxId = 47
-                        },
-                        new
-                        {
-                            FilterListId = 2462,
-                            SyntaxId = 4
-                        },
-                        new
-                        {
-                            FilterListId = 2463,
-                            SyntaxId = 4
-                        },
-                        new
-                        {
-                            FilterListId = 2464,
-                            SyntaxId = 4
-                        },
-                        new
-                        {
-                            FilterListId = 2465,
-                            SyntaxId = 2
-                        },
-                        new
-                        {
-                            FilterListId = 2465,
-                            SyntaxId = 4
-                        },
-                        new
-                        {
-                            FilterListId = 2466,
-                            SyntaxId = 6
-                        },
-                        new
-                        {
-                            FilterListId = 2467,
-                            SyntaxId = 47
-                        },
-                        new
-                        {
-                            FilterListId = 2468,
-                            SyntaxId = 47
-                        },
-                        new
-                        {
-                            FilterListId = 2469,
-                            SyntaxId = 6
-                        },
-                        new
-                        {
-                            FilterListId = 2470,
-                            SyntaxId = 47
                         });
                 });
 
@@ -57600,181 +57320,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2454,
                             TagId = 30
-                        },
-                        new
-                        {
-                            FilterListId = 2455,
-                            TagId = 2
-                        },
-                        new
-                        {
-                            FilterListId = 2455,
-                            TagId = 6
-                        },
-                        new
-                        {
-                            FilterListId = 2455,
-                            TagId = 7
-                        },
-                        new
-                        {
-                            FilterListId = 2455,
-                            TagId = 8
-                        },
-                        new
-                        {
-                            FilterListId = 2455,
-                            TagId = 15
-                        },
-                        new
-                        {
-                            FilterListId = 2455,
-                            TagId = 22
-                        },
-                        new
-                        {
-                            FilterListId = 2455,
-                            TagId = 25
-                        },
-                        new
-                        {
-                            FilterListId = 2455,
-                            TagId = 30
-                        },
-                        new
-                        {
-                            FilterListId = 2455,
-                            TagId = 32
-                        },
-                        new
-                        {
-                            FilterListId = 2455,
-                            TagId = 34
-                        },
-                        new
-                        {
-                            FilterListId = 2456,
-                            TagId = 29
-                        },
-                        new
-                        {
-                            FilterListId = 2457,
-                            TagId = 5
-                        },
-                        new
-                        {
-                            FilterListId = 2457,
-                            TagId = 10
-                        },
-                        new
-                        {
-                            FilterListId = 2458,
-                            TagId = 9
-                        },
-                        new
-                        {
-                            FilterListId = 2458,
-                            TagId = 40
-                        },
-                        new
-                        {
-                            FilterListId = 2459,
-                            TagId = 3
-                        },
-                        new
-                        {
-                            FilterListId = 2460,
-                            TagId = 3
-                        },
-                        new
-                        {
-                            FilterListId = 2461,
-                            TagId = 3
-                        },
-                        new
-                        {
-                            FilterListId = 2462,
-                            TagId = 9
-                        },
-                        new
-                        {
-                            FilterListId = 2462,
-                            TagId = 11
-                        },
-                        new
-                        {
-                            FilterListId = 2462,
-                            TagId = 30
-                        },
-                        new
-                        {
-                            FilterListId = 2462,
-                            TagId = 35
-                        },
-                        new
-                        {
-                            FilterListId = 2463,
-                            TagId = 9
-                        },
-                        new
-                        {
-                            FilterListId = 2463,
-                            TagId = 30
-                        },
-                        new
-                        {
-                            FilterListId = 2463,
-                            TagId = 35
-                        },
-                        new
-                        {
-                            FilterListId = 2464,
-                            TagId = 9
-                        },
-                        new
-                        {
-                            FilterListId = 2464,
-                            TagId = 30
-                        },
-                        new
-                        {
-                            FilterListId = 2464,
-                            TagId = 35
-                        },
-                        new
-                        {
-                            FilterListId = 2465,
-                            TagId = 7
-                        },
-                        new
-                        {
-                            FilterListId = 2466,
-                            TagId = 2
-                        },
-                        new
-                        {
-                            FilterListId = 2467,
-                            TagId = 2
-                        },
-                        new
-                        {
-                            FilterListId = 2468,
-                            TagId = 2
-                        },
-                        new
-                        {
-                            FilterListId = 2469,
-                            TagId = 3
-                        },
-                        new
-                        {
-                            FilterListId = 2470,
-                            TagId = 19
-                        },
-                        new
-                        {
-                            FilterListId = 2470,
-                            TagId = 21
                         });
                 });
 
@@ -78808,7 +78353,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 2444,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate versions Anti-Malware List/AntiMalwareDomains.txt"
+                            Url = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList alternate versions/DandelionSproutsNorskeFiltreDomains.txt"
                         },
                         new
                         {
@@ -78816,7 +78361,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 2444,
                             Primariness = (short)2,
                             SegmentNumber = (short)0,
-                            Url = "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/Alternate versions Anti-Malware List/AntiMalwareDomains.txt"
+                            Url = "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/NorwegianExperimentalList alternate versions/DandelionSproutsNorskeFiltreDomains.txt"
                         },
                         new
                         {
@@ -78889,166 +78434,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
                             Url = "https://raw.githubusercontent.com/jbunner/adblock/master/a-scratch.txt"
-                        },
-                        new
-                        {
-                            Id = 2659,
-                            FilterListId = 2455,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://dandelionsprout.asuscomm.com:2501/dns-query"
-                        },
-                        new
-                        {
-                            Id = 2660,
-                            FilterListId = 2455,
-                            Primariness = (short)2,
-                            SegmentNumber = (short)0,
-                            Url = "tls://dandelionsprout.asuscomm.com:853/"
-                        },
-                        new
-                        {
-                            Id = 2661,
-                            FilterListId = 2456,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/pafnuty/onlineConsultantBlocker/master/online-consultant.txt"
-                        },
-                        new
-                        {
-                            Id = 2662,
-                            FilterListId = 2457,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/catsxp/adblock-lists/master/catsxp-unbreak.txt"
-                        },
-                        new
-                        {
-                            Id = 2663,
-                            FilterListId = 2458,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/RedDragonWebDesign/block-everything/master/block-everything.txt"
-                        },
-                        new
-                        {
-                            Id = 2664,
-                            FilterListId = 2459,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt"
-                        },
-                        new
-                        {
-                            Id = 2665,
-                            FilterListId = 2460,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers_justdomains.txt"
-                        },
-                        new
-                        {
-                            Id = 2666,
-                            FilterListId = 2461,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_original_trackers.txt"
-                        },
-                        new
-                        {
-                            Id = 2667,
-                            FilterListId = 2462,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/master/anti_trash_youtube.txt"
-                        },
-                        new
-                        {
-                            Id = 2668,
-                            FilterListId = 2463,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/master/anti_trash_new_reddit.txt"
-                        },
-                        new
-                        {
-                            Id = 2669,
-                            FilterListId = 2464,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/master/anti_trash_old_reddit.txt"
-                        },
-                        new
-                        {
-                            Id = 2670,
-                            FilterListId = 2465,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/master/anti_scam_internet.txt"
-                        },
-                        new
-                        {
-                            Id = 2671,
-                            FilterListId = 2466,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://filter.futa.gg/filter.txt"
-                        },
-                        new
-                        {
-                            Id = 2672,
-                            FilterListId = 2466,
-                            Primariness = (short)2,
-                            SegmentNumber = (short)0,
-                            Url = "https://filter.futa.app/filter.txt"
-                        },
-                        new
-                        {
-                            Id = 2673,
-                            FilterListId = 2467,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://filter.futa.gg/hosts.txt"
-                        },
-                        new
-                        {
-                            Id = 2674,
-                            FilterListId = 2467,
-                            Primariness = (short)2,
-                            SegmentNumber = (short)0,
-                            Url = "https://filter.futa.app/hosts.txt"
-                        },
-                        new
-                        {
-                            Id = 2675,
-                            FilterListId = 2468,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://filter.futa.gg/nofarm_hosts.txt"
-                        },
-                        new
-                        {
-                            Id = 2676,
-                            FilterListId = 2468,
-                            Primariness = (short)2,
-                            SegmentNumber = (short)0,
-                            Url = "https://filter.futa.app/nofarm_hosts.txt"
-                        },
-                        new
-                        {
-                            Id = 2677,
-                            FilterListId = 2469,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FutaGuard/FutaFilter/master/removeparam.txt"
-                        },
-                        new
-                        {
-                            Id = 2678,
-                            FilterListId = 2470,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/twcau/AdblockRules/master/MurdochList"
                         });
                 });
 
