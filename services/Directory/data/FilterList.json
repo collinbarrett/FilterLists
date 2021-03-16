@@ -68,8 +68,8 @@
     "emailAddress": "listefr.adblock@gmail.com",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=91",
     "homeUrl": "https://forums.lanik.us/viewforum.php?f=91",
-    "issuesUrl": "https://github.com/easylist/listefr/issues",
     "id": 12,
+    "issuesUrl": "https://github.com/easylist/listefr/issues",
     "licenseId": 6,
     "name": "Liste FR"
   },
@@ -84,8 +84,8 @@
     "emailAddress": "liste.ar.adblock@gmail.com",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=98",
     "homeUrl": "https://code.google.com/archive/p/liste-ar-adblock/",
-    "issuesUrl": "https://github.com/easylist/listear/issues",
     "id": 14,
+    "issuesUrl": "https://github.com/easylist/listear/issues",
     "licenseId": 6,
     "name": "Liste AR"
   },
@@ -712,8 +712,8 @@
     "description": "Russian supplement for EasyList.",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
     "homeUrl": "https://code.google.com/archive/p/ruadlist/",
-    "issuesUrl": "https://github.com/easylist/ruadlist/issues",
     "id": 131,
+    "issuesUrl": "https://github.com/easylist/ruadlist/issues",
     "licenseId": 12,
     "name": "RU AdList"
   },
@@ -1531,8 +1531,8 @@
     "emailAddress": "easylist.spanish@gmail.com",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=103",
     "homeUrl": "https://easylist.to/",
-    "issuesUrl": "https://github.com/easylist/easylistspanish/issues",
     "id": 246,
+    "issuesUrl": "https://github.com/easylist/easylistspanish/issues",
     "licenseId": 4,
     "name": "EasyList Spanish"
   },
@@ -1885,8 +1885,8 @@
     "emailAddress": "easylistitaly@gmail.com",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=96",
     "homeUrl": "https://easylist.to/",
-    "issuesUrl": "https://github.com/easylist/easylistitaly/issues",
     "id": 289,
+    "issuesUrl": "https://github.com/easylist/easylistitaly/issues",
     "licenseId": 4,
     "name": "EasyList Italy"
   },
@@ -1932,8 +1932,8 @@
     "emailAddress": "fam.lam@live.nl",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=100",
     "homeUrl": "https://easylist.to/",
-    "issuesUrl": "https://github.com/easylist/easylistdutch/issues",
     "id": 295,
+    "issuesUrl": "https://github.com/easylist/easylistdutch/issues",
     "licenseId": 4,
     "name": "EasyList Dutch"
   },
@@ -1962,8 +1962,8 @@
     "emailAddress": "easylist.china@gmail.com",
     "forumUrl": "https://abpchina.org/forum/forum.php",
     "homeUrl": "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
-    "issuesUrl": "https://github.com/easylist/easylistchina",
     "id": 300,
+    "issuesUrl": "https://github.com/easylist/easylistchina",
     "licenseId": 4,
     "name": "EasyList China"
   },
@@ -4789,16 +4789,16 @@
     "description": "A combined version of the filterlist RU AdList against advertising, and an experimental list of cosmetic CSS style fixes. At the moment it only works normally in uBlock Origin.",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
     "homeUrl": "https://forums.lanik.us/viewforum.php?f=102",
-    "issuesUrl": "https://github.com/easylist/ruadlist/issues",
     "id": 805,
+    "issuesUrl": "https://github.com/easylist/ruadlist/issues",
     "licenseId": 16,
     "name": "RU AdList + CSS Fixes"
   },
   {
     "emailAddress": "easylist.portuguese@gmail.com",
     "homeUrl": "https://easylist.to/",
-    "issuesUrl": "https://github.com/easylist/easylistportuguese/issues",
     "id": 806,
+    "issuesUrl": "https://github.com/easylist/easylistportuguese/issues",
     "licenseId": 4,
     "name": "EasyList Portuguese"
   },
@@ -9640,8 +9640,8 @@
   },
   {
     "homeUrl": "https://easylist.to/",
-    "issuesUrl": "https://github.com/easylist/KoreanList/issues",
     "id": 1529,
+    "issuesUrl": "https://github.com/easylist/KoreanList/issues",
     "licenseId": 3,
     "name": "KoreanList"
   },
@@ -17084,8 +17084,8 @@
   {
     "description": "An adblocker ruleset for Taiwan.",
     "donateUrl": "https://p.ecpay.com.tw/B32C0",
-    "homeUrl": "https://github.com/FutaGuard/FutaFilter",
     "forumUrl": "https://t.me/adguard_tw",
+    "homeUrl": "https://github.com/FutaGuard/FutaFilter",
     "id": 2466,
     "issuesUrl": "https://github.com/FutaGuard/FutaFilter/issues",
     "name": "FutaFilter"
@@ -17093,8 +17093,8 @@
   {
     "description": "An adblocker ruleset for Taiwan.",
     "donateUrl": "https://p.ecpay.com.tw/B32C0",
-    "homeUrl": "https://github.com/FutaGuard/FutaFilter",
     "forumUrl": "https://t.me/adguard_tw",
+    "homeUrl": "https://github.com/FutaGuard/FutaFilter",
     "id": 2467,
     "issuesUrl": "https://github.com/FutaGuard/FutaFilter/issues",
     "name": "FutaHosts"
@@ -17102,26 +17102,26 @@
   {
     "description": "An adblocker ruleset for Taiwan.",
     "donateUrl": "https://p.ecpay.com.tw/B32C0",
-    "homeUrl": "https://github.com/FutaGuard/FutaFilter",
     "forumUrl": "https://t.me/adguard_tw",
+    "homeUrl": "https://github.com/FutaGuard/FutaFilter",
     "id": 2468,
     "issuesUrl": "https://github.com/FutaGuard/FutaFilter/issues",
     "name": "FutaHosts Nofarm"
   },
   {
     "donateUrl": "https://p.ecpay.com.tw/B32C0",
-    "homeUrl": "https://github.com/FutaGuard/FutaFilter",
     "forumUrl": "https://t.me/adguard_tw",
+    "homeUrl": "https://github.com/FutaGuard/FutaFilter",
     "id": 2469,
     "issuesUrl": "https://github.com/FutaGuard/FutaFilter/issues",
     "name": "FutaFilter removeparam"
   },
   {
+    "description": "A filter to scrub sites and services related to Rupert Murdoch and News Corp from the web",
+    "homeUrl": "https://github.com/twcau/AdblockRules/",
     "id": 2470,
-"name": "MurdochList",
-"description": "A filter to scrub sites and services related to Rupert Murdoch and News Corp from the web",
-"licenseId": 28,
-"homeUrl": "https://github.com/twcau/AdblockRules/",
-"issuesUrl": "https://github.com/twcau/AdblockRules/issues"
+    "issuesUrl": "https://github.com/twcau/AdblockRules/issues",
+    "licenseId": 28,
+    "name": "MurdochList"
   }
 ]
