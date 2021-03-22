@@ -15747,13 +15747,13 @@
     "filterListId": 2444,
     "id": 2647,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt"
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareDomains.txt"
   },
   {
     "filterListId": 2444,
     "id": 2648,
     "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/NorwegianExperimentalList%20alternate%20versions/DandelionSproutsNorskeFiltreDomains.txt"
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareDomains.txt"
   },
   {
     "filterListId": 2445,
@@ -15808,5 +15808,125 @@
     "id": 2658,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/jbunner/adblock/master/a-scratch.txt"
+  },
+  {
+    "filterListId": 2455,
+    "id": 2659,
+    "primariness": 1,
+    "url": "https://dandelionsprout.asuscomm.com:2501/dns-query"
+  },
+  {
+    "filterListId": 2455,
+    "id": 2660,
+    "primariness": 2,
+    "url": "tls://dandelionsprout.asuscomm.com:853"
+  },
+  {
+    "filterListId": 2456,
+    "id": 2661,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/pafnuty/onlineConsultantBlocker/master/online-consultant.txt"
+  },
+  {
+    "filterListId": 2457,
+    "id": 2662,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/catsxp/adblock-lists/master/catsxp-unbreak.txt"
+  },
+  {
+    "filterListId": 2458,
+    "id": 2663,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/RedDragonWebDesign/block-everything/master/block-everything.txt"
+  },
+  {
+    "filterListId": 2459,
+    "id": 2664,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt"
+  },
+  {
+    "filterListId": 2460,
+    "id": 2665,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers_justdomains.txt"
+  },
+  {
+    "filterListId": 2461,
+    "id": 2666,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_original_trackers.txt"
+  },
+  {
+    "filterListId": 2462,
+    "id": 2667,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/master/anti_trash_youtube.txt"
+  },
+  {
+    "filterListId": 2463,
+    "id": 2668,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/master/anti_trash_new_reddit.txt"
+  },
+  {
+    "filterListId": 2464,
+    "id": 2669,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/master/anti_trash_old_reddit.txt"
+  },
+  {
+    "filterListId": 2465,
+    "id": 2670,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/master/anti_scam_internet.txt"
+  },
+  {
+    "filterListId": 2466,
+    "id": 2671,
+    "primariness": 1,
+    "url": "https://filter.futa.gg/filter.txt"
+  },
+  {
+    "filterListId": 2466,
+    "id": 2672,
+    "primariness": 2,
+    "url": "https://filter.futa.app/filter.txt"
+  },
+  {
+    "filterListId": 2467,
+    "id": 2673,
+    "primariness": 1,
+    "url": "https://filter.futa.gg/hosts.txt"
+  },
+  {
+    "filterListId": 2467,
+    "id": 2674,
+    "primariness": 2,
+    "url": "https://filter.futa.app/hosts.txt"
+  },
+  {
+    "filterListId": 2468,
+    "id": 2675,
+    "primariness": 1,
+    "url": "https://filter.futa.gg/nofarm_hosts.txt"
+  },
+  {
+    "filterListId": 2468,
+    "id": 2676,
+    "primariness": 2,
+    "url": "https://filter.futa.app/nofarm_hosts.txt"
+  },
+  {
+    "filterListId": 2469,
+    "id": 2677,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/FutaGuard/FutaFilter/master/removeparam.txt"
+  },
+  {
+    "filterListId": 2470,
+    "id": 2678,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/twcau/AdblockRules/master/MurdochList"
   }
 ]
