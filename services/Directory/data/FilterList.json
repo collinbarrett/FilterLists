@@ -69,6 +69,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=91",
     "homeUrl": "https://forums.lanik.us/viewforum.php?f=91",
     "id": 12,
+    "issuesUrl": "https://github.com/easylist/listefr/issues",
     "licenseId": 6,
     "name": "Liste FR"
   },
@@ -84,6 +85,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=98",
     "homeUrl": "https://code.google.com/archive/p/liste-ar-adblock/",
     "id": 14,
+    "issuesUrl": "https://github.com/easylist/listear/issues",
     "licenseId": 6,
     "name": "Liste AR"
   },
@@ -711,6 +713,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
     "homeUrl": "https://code.google.com/archive/p/ruadlist/",
     "id": 131,
+    "issuesUrl": "https://github.com/easylist/ruadlist/issues",
     "licenseId": 12,
     "name": "RU AdList"
   },
@@ -1529,6 +1532,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=103",
     "homeUrl": "https://easylist.to/",
     "id": 246,
+    "issuesUrl": "https://github.com/easylist/easylistspanish/issues",
     "licenseId": 4,
     "name": "EasyList Spanish"
   },
@@ -1882,6 +1886,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=96",
     "homeUrl": "https://easylist.to/",
     "id": 289,
+    "issuesUrl": "https://github.com/easylist/easylistitaly/issues",
     "licenseId": 4,
     "name": "EasyList Italy"
   },
@@ -1928,6 +1933,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=100",
     "homeUrl": "https://easylist.to/",
     "id": 295,
+    "issuesUrl": "https://github.com/easylist/easylistdutch/issues",
     "licenseId": 4,
     "name": "EasyList Dutch"
   },
@@ -1957,6 +1963,7 @@
     "forumUrl": "https://abpchina.org/forum/forum.php",
     "homeUrl": "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
     "id": 300,
+    "issuesUrl": "https://github.com/easylist/easylistchina",
     "licenseId": 4,
     "name": "EasyList China"
   },
@@ -4783,6 +4790,7 @@
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
     "homeUrl": "https://forums.lanik.us/viewforum.php?f=102",
     "id": 805,
+    "issuesUrl": "https://github.com/easylist/ruadlist/issues",
     "licenseId": 16,
     "name": "RU AdList + CSS Fixes"
   },
@@ -4790,6 +4798,7 @@
     "emailAddress": "easylist.portuguese@gmail.com",
     "homeUrl": "https://easylist.to/",
     "id": 806,
+    "issuesUrl": "https://github.com/easylist/easylistportuguese/issues",
     "licenseId": 4,
     "name": "EasyList Portuguese"
   },
@@ -9632,6 +9641,7 @@
   {
     "homeUrl": "https://easylist.to/",
     "id": 1529,
+    "issuesUrl": "https://github.com/easylist/KoreanList/issues",
     "licenseId": 3,
     "name": "KoreanList"
   },
@@ -9749,7 +9759,7 @@
     "forumUrl": "https://forums.lanik.us/",
     "homeUrl": "https://easylist.to/",
     "id": 1543,
-    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "issuesUrl": "https://github.com/easylist/KoreanList/issues",
     "licenseId": 4,
     "name": "KoreanList (TPL)"
   },
@@ -9757,7 +9767,7 @@
     "forumUrl": "https://forums.lanik.us/",
     "homeUrl": "https://easylist.to/",
     "id": 1544,
-    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "issuesUrl": "https://github.com/easylist/easylistportuguese/issues",
     "licenseId": 4,
     "name": "EasyList Portuguese (TPL)"
   },
@@ -9779,7 +9789,6 @@
     "forumUrl": "https://forums.lanik.us/",
     "homeUrl": "https://easylist.to/",
     "id": 1547,
-    "issuesUrl": "https://github.com/easylist/easylist/issues",
     "licenseId": 4,
     "name": "IndianList (TPL)"
   },
@@ -16981,5 +16990,132 @@
     "issuesUrl": "https://github.com/jbunner/adblock/issues",
     "licenseId": 4,
     "name": "jbunner's Adblock - ScratchMit"
+  },
+  {
+    "description": "After 1½ years of trial setups and tinkering until March 2021, I now offer my DNS server to be used by the public! That being said, there are a considerable number of drawbacks with it that means that it should NOT be used in setups where uptime, privacy, or impartiality is important; read the homepage Readme before using it.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt/blob/master/Dandelion%20Sprout's%20Official%20DNS%20Server/README.md",
+    "id": 2455,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's Official DNS Server"
+  },
+  {
+    "description": "The easiest way to get rid of annoying online consultants is to block access to them at the lowest level, i.e. via a hosts file. This keeps the browser free of extensions and ensures reliable blocking on all fronts.",
+    "emailAddress": "pafnuty10@gmail.com",
+    "homeUrl": "https://github.com/pafnuty/onlineConsultantBlocker",
+    "id": 2456,
+    "issuesUrl": "https://github.com/pafnuty/onlineConsultantBlocker/issues",
+    "licenseId": 2,
+    "name": "Online Consultant Blocker"
+  },
+  {
+    "homeUrl": "https://github.com/catsxp/adblock-lists",
+    "id": 2457,
+    "issuesUrl": "https://github.com/catsxp/adblock-lists/issues",
+    "name": "catsxp Unbreak"
+  },
+  {
+    "description": "The default uBlock Origin lists block most ads and tracking. Web Annoyances Ultralist blocks most floating items. This list is for the few ads and annoyances that these two lists don't cover. Our goal is to block everything annoying. Anything that disrupts the normal reading flow of the page. Anything that tries to influence the reader to do something unnecessary.",
+    "homeUrl": "https://github.com/RedDragonWebDesign/block-everything",
+    "id": 2458,
+    "issuesUrl": "https://github.com/RedDragonWebDesign/block-everything/issues",
+    "name": "Block Everything!"
+  },
+  {
+    "description": "The list of trackers that disguise the real trackers by using CNAME records.",
+    "homeUrl": "https://github.com/AdguardTeam/cname-trackers",
+    "id": 2459,
+    "issuesUrl": "https://github.com/AdguardTeam/cname-trackers/issues",
+    "licenseId": 2,
+    "name": "AdGuard CNAME disguised trackers list"
+  },
+  {
+    "description": "The list of trackers that disguise the real trackers by using CNAME records.",
+    "homeUrl": "https://github.com/AdguardTeam/cname-trackers",
+    "id": 2460,
+    "issuesUrl": "https://github.com/AdguardTeam/cname-trackers/issues",
+    "licenseId": 2,
+    "name": "AdGuard CNAME disguised trackers list (Domains)"
+  },
+  {
+    "description": "The list of trackers that are often disguised using CNAME. This list is supposed to be used only by Software capable of scanning CNAME records.",
+    "homeUrl": "https://github.com/AdguardTeam/cname-trackers",
+    "id": 2461,
+    "issuesUrl": "https://github.com/AdguardTeam/cname-trackers/issues",
+    "licenseId": 2,
+    "name": "AdGuard CNAME original trackers list"
+  },
+  {
+    "description": "Eliminates trashy videos, channels, and features from the user's feeds, so that the experience is more enjoyable.",
+    "homeUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/",
+    "id": 2462,
+    "issuesUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/issues",
+    "name": "Anti-Trash YouTube"
+  },
+  {
+    "description": "Eliminates trash content from new reddit, while not infringing the view of the user, so that the experience is more enjoyable. ",
+    "homeUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/",
+    "id": 2463,
+    "issuesUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/issues",
+    "name": "Anti-Trash New Reddit"
+  },
+  {
+    "description": "Eliminates trash content from old reddit, while not infringing the view of the user, so that the experience is more enjoyable.",
+    "homeUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/",
+    "id": 2464,
+    "issuesUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/issues",
+    "name": "Anti-Trash Old Reddit"
+  },
+  {
+    "description": "Blocks scam sites and remove them from search recommendations to increase the user's security.",
+    "homeUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/",
+    "id": 2465,
+    "issuesUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/issues",
+    "name": "Anti-Scam Internet"
+  },
+  {
+    "description": "An adblocker ruleset for Taiwan.",
+    "donateUrl": "https://p.ecpay.com.tw/B32C0",
+    "forumUrl": "https://t.me/adguard_tw",
+    "homeUrl": "https://github.com/FutaGuard/FutaFilter",
+    "id": 2466,
+    "issuesUrl": "https://github.com/FutaGuard/FutaFilter/issues",
+    "name": "FutaFilter"
+  },
+  {
+    "description": "An adblocker ruleset for Taiwan.",
+    "donateUrl": "https://p.ecpay.com.tw/B32C0",
+    "forumUrl": "https://t.me/adguard_tw",
+    "homeUrl": "https://github.com/FutaGuard/FutaFilter",
+    "id": 2467,
+    "issuesUrl": "https://github.com/FutaGuard/FutaFilter/issues",
+    "name": "FutaHosts"
+  },
+  {
+    "description": "An adblocker ruleset for Taiwan.",
+    "donateUrl": "https://p.ecpay.com.tw/B32C0",
+    "forumUrl": "https://t.me/adguard_tw",
+    "homeUrl": "https://github.com/FutaGuard/FutaFilter",
+    "id": 2468,
+    "issuesUrl": "https://github.com/FutaGuard/FutaFilter/issues",
+    "name": "FutaHosts Nofarm"
+  },
+  {
+    "donateUrl": "https://p.ecpay.com.tw/B32C0",
+    "forumUrl": "https://t.me/adguard_tw",
+    "homeUrl": "https://github.com/FutaGuard/FutaFilter",
+    "id": 2469,
+    "issuesUrl": "https://github.com/FutaGuard/FutaFilter/issues",
+    "name": "FutaFilter removeparam"
+  },
+  {
+    "description": "A filter to scrub sites and services related to Rupert Murdoch and News Corp from the web",
+    "homeUrl": "https://github.com/twcau/AdblockRules/",
+    "id": 2470,
+    "issuesUrl": "https://github.com/twcau/AdblockRules/issues",
+    "licenseId": 28,
+    "name": "MurdochList"
   }
 ]

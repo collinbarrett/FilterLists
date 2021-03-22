@@ -3,15 +3,17 @@ using System;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    partial class QueryDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210316005442_2271")]
+    partial class _2271
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -18386,6 +18388,13 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/ilpl/ad-hosts/issues",
                             LicenseId = 4,
                             Name = "ilpl's Ad Hosts"
+                        },
+                        new
+                        {
+                            Id = 2365,
+                            HomeUrl = "https://gitee.com/damengzhudamengzhu/guanggaoguolv/",
+                            IssuesUrl = "https://gitee.com/damengzhudamengzhu/guanggaoguolv/issues",
+                            Name = "jiekouAD"
                         },
                         new
                         {
@@ -73808,7 +73817,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 1938,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/YanFung/Ads/master/Mobile"
+                            Url = "https://raw.githubusercontent.com/YanFung/Ads/master/Mobile.txt"
                         },
                         new
                         {
@@ -77857,6 +77866,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
                             Url = "https://raw.githubusercontent.com/ilpl/ad-hosts/master/hosts"
+                        },
+                        new
+                        {
+                            Id = 2528,
+                            FilterListId = 2365,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://gitee.com/damengzhudamengzhu/guanggaoguolv/raw/master/jiekouAD.txt"
                         },
                         new
                         {
