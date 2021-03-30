@@ -17117,5 +17117,13 @@
     "issuesUrl": "https://github.com/twcau/AdblockRules/issues",
     "licenseId": 28,
     "name": "MurdochList"
+  },
+  {
+    "description": "My own Dutch supplement for the Easylist filters",
+    "homeUrl": "https://github.com/BPower0036/AdBlockFilters/",
+    "id": 2471,
+    "issuesUrl": "https://github.com/BPower0036/AdBlockFilters/issues",
+    "licenseId": 4,
+    "name": "EasyDutch",
   }
 ]
