@@ -15928,5 +15928,11 @@
     "id": 2678,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/twcau/AdblockRules/master/MurdochList"
+  },
+  {
+    "filterListId": 2471,
+    "id": 2679,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/BPower0036/AdBlockFilters/main/easydutch"
   }
 ]
