@@ -15934,5 +15934,17 @@
     "id": 2679,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/BPower0036/AdBlockFilters/main/easydutch"
+  },
+  {
+    "filterListId": 2472,
+    "id": 2680,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-rpz-online.conf"
+  },
+  {
+    "filterListId": 2473,
+    "id": 2681,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-rpz.conf"
   }
 ]
