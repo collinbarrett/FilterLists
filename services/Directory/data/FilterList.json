@@ -17142,4 +17142,12 @@
     "licenseId": 8,
     "name": "phishing-filter (RPZ)"
   }
+  {
+    "description": "A list specifically for OISD",
+    "homeUrl": "https://github.com/beerisgood/beer_blocklist",
+    "id": 2474,
+    "issuesUrl": "https://github.com/beerisgood/beer_blocklist/issues",
+    "licenseId": 5,
+    "name": "beer_blocklist"
+  }
 ]
