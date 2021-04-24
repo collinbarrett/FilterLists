@@ -17141,7 +17141,7 @@
     "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (RPZ)"
-  }
+  },
   {
     "description": "A list specifically for OISD",
     "homeUrl": "https://github.com/beerisgood/beer_blocklist",
