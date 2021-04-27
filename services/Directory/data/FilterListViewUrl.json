@@ -15952,5 +15952,11 @@
     "id": 2683,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blogroll.txt"
+  },
+  {
+    "filterListId": 2475,
+    "id": 2684,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hirorpt/filters/main/fix.txt"
   }
 ]
