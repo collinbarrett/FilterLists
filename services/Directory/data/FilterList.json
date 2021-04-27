@@ -17157,5 +17157,13 @@
     "issuesUrl": "https://github.com/beerisgood/beer_blocklist/issues",
     "licenseId": 5,
     "name": "beer_blocklist"
+  },
+  {
+    "description": "This allowlist fixes incorrect blocking by standard filters such as EasyList, mainly on Japanese websites. It is based largely on Yuki's uBlock Japanese filters.",
+    "homeUrl": "https://github.com/hirorpt/filters",
+    "id": 2475,
+    "issuesUrl": "https://github.com/hirorpt/filters/issues",
+    "licenseId": 28, 
+    "name" : "Konayuki filters"
   }
 ]
