@@ -13158,12 +13158,6 @@
     "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt"
   },
   {
-    "filterListId": 2096,
-    "id": 2202,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blogroll.txt"
-  },
-  {
     "filterListId": 2099,
     "id": 2203,
     "primariness": 1,
@@ -15952,5 +15946,11 @@
     "id": 2681,
     "primariness": 1,
     "url": "https://curben.gitlab.io/malware-filter/phishing-filter-rpz.conf"
+  },
+  {
+    "filterListId": 2096,
+    "id": 2683,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blogroll.txt"
   }
 ]
