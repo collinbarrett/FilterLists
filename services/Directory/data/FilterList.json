@@ -14182,12 +14182,20 @@
     "name": "Yuki's uBlock Japanese filters - Annoyances"
   },
   {
-    "description": "Enhance anti-scam capability of 280blocker for Japanese mobile site (ABP format) by utilizing advanced capability of AdGuard/uBlock Origin.",
+    "description": "Enhance anti-scam capability of 280blocker adblock filter by utilizing advanced capability of AdGuard/uBlock Origin.",
     "homeUrl": "https://github.com/Yuki2718/adblock",
     "id": 2095,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 28,
-    "name": "Anti-scam enhancer for 280blocker ABP format list"
+    "name": "Anti-scam enhancer for 280blocker adblock filter"
+  },
+  {
+    "description": "Removes blogroll (feed-style mutual links) on Japanese sites. Included in Yuki's uBlock Japanese filters - Annoyances",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "id": 2096,
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 28,
+    "name": "Yuki's Blogroll filters"
   },
   {
     "description": "Blocks access to phishing, spam, malware and malicious domains. Our database of malicious domains is updated hourly and considered to be one of the best in the industry. Links that didn't fit in the Subscribe button URL texts, include 2a0d:2a00:2::2",
