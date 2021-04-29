@@ -12601,7 +12601,11 @@
   },
   {
     "filterListId": 2471,
-    "tagId": 2,5
+    "tagId": 2
+  },
+  {
+    "filterListId": 2471,
+    "tagId": 5
   },
   {
     "filterListId": 2472,
