@@ -17127,7 +17127,7 @@
     "name": "MurdochList"
   },
   {
-    "description": "My own Dutch supplement for the Easylist filters",
+    "description": "Dutch supplement for the Easylist filters to use with uBlock Origin",
     "homeUrl": "https://github.com/BPower0036/AdBlockFilters/",
     "id": 2471,
     "issuesUrl": "https://github.com/BPower0036/AdBlockFilters/issues",
