@@ -17165,5 +17165,117 @@
     "issuesUrl": "https://github.com/hirorpt/filters/issues",
     "licenseId": 28,
     "name": "Konayuki filters"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2476,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2477,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter (Domains)"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2478,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter (dnsmasq)"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2479,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter (Hosts)"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2480,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter (BIND)"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2481,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter (Unbound)"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2482,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter (AdGuard Home)"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2483,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter (AdGuard)"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2484,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter (Vivaldi)"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2485,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter (IE)"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2486,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter (RPZ)"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2487,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter (Snort 2)"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2488,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter (Snort 3)"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2489,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter (Suricata)"
   }
 ]

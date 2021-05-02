@@ -15958,5 +15958,89 @@
     "id": 2684,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/hirorpt/filters/main/fix.txt"
+  },
+  {
+    "filterListId": 2476,
+    "id": 2685,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/pup-filter.txt"
+  },
+  {
+    "filterListId": 2477,
+    "id": 2686,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/pup-filter-domains.txt"
+  },
+  {
+    "filterListId": 2478,
+    "id": 2687,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/pup-filter-dnsmasq.conf"
+  },
+  {
+    "filterListId": 2479,
+    "id": 2688,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/pup-filter-hosts.txt"
+  },
+  {
+    "filterListId": 2480,
+    "id": 2689,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/pup-filter-bind.conf"
+  },
+  {
+    "filterListId": 2481,
+    "id": 2690,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/pup-filter-unbound.conf"
+  },
+  {
+    "filterListId": 2482,
+    "id": 2691,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/pup-filter-agh.txt"
+  },
+  {
+    "filterListId": 2483,
+    "id": 2692,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/pup-filter-ag.txt"
+  },
+  {
+    "filterListId": 2484,
+    "id": 2693,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/pup-filter-vivaldi.txt"
+  },
+  {
+    "filterListId": 2485,
+    "id": 2694,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/pup-filter.tpl"
+  },
+  {
+    "filterListId": 2486,
+    "id": 2695,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/pup-filter-rpz.conf"
+  },
+  {
+    "filterListId": 2487,
+    "id": 2696,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/pup-filter-snort2.rules"
+  },
+  {
+    "filterListId": 2488,
+    "id": 2697,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/pup-filter-snort3.rules"
+  },
+  {
+    "filterListId": 2489,
+    "id": 2698,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/pup-filter-suricata.conf"
   }
 ]
