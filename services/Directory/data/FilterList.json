@@ -14198,6 +14198,22 @@
     "name": "Yuki's Blogroll filters"
   },
   {
+    "description": "Removes annoyances which only some user, not everyone, want to remove mainly on Japanese sites.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "id": 2097,
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 8,
+    "name": "Yuki's uBlock Japanese filters - Annoyances+"
+  },
+  {
+    "description": "Enhances anti anti-adblock capability of AdGuard by generic filters. Works on AdGuard for Windows, AdGuard for Android, AdGuard for Mac, and AdGuard Browser Extensions but not for AdGuard for Safari, AdGuard for iOS, and AdGuard Contents Blocker. This list also mitigates malicious popups often seen on porn sites, pirate sites, and/or short links.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "id": 2098,
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 4,
+    "name": "Anti Anti-adblock Enhancer for AdGuard"
+  },
+  {
     "description": "Blocks access to phishing, spam, malware and malicious domains. Our database of malicious domains is updated hourly and considered to be one of the best in the industry. Links that didn't fit in the Subscribe button URL texts, include 2a0d:2a00:2::2",
     "homeUrl": "https://cleanbrowsing.org/filters#security",
     "id": 2099,
