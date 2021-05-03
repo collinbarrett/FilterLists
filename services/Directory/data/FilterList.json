@@ -17342,21 +17342,12 @@
     "licenseId": 8,
     "name": "phishing-filter (Suricata)"
   },
-
   {
-
-"description": "Personal Filters to remove World Wide Web Annoyances for a better experience.",
-
-"homeUrl": "https://raw.githubusercontent.com/troysjanda/MyBlockLists/master/UBOXPI",
-
-"id": 2496,
-
-"licenseId": 4,
-
-"name": "XPI's Filter List",
-
-"submissionUrl": "https://github.com/troysjanda/MyBlockLists/issues"
-
-}
-
+    "description": "Personal Filters to remove World Wide Web Annoyances for a better experience.",
+    "homeUrl": "https://raw.githubusercontent.com/troysjanda/MyBlockLists/master/UBOXPI",
+    "id": 2496,
+    "licenseId": 4,
+    "name": "XPI's Filter List",
+    "submissionUrl": "https://github.com/troysjanda/MyBlockLists/issues"
+  }
 ]
