@@ -17345,6 +17345,7 @@
   {
     "description": "Personal Filters to remove World Wide Web Annoyances for a better experience.",
     "homeUrl": "https://raw.githubusercontent.com/troysjanda/MyBlockLists/master/UBOXPI",
+    "emailAddress": "xpilist@troyjanda.com",
     "id": 2496,
     "licenseId": 4,
     "name": "XPI's Filter List",
