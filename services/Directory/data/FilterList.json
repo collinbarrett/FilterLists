@@ -14203,7 +14203,7 @@
     "id": 2097,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
-    "name": "Yuki's uBlock Japanese filters - Annoyances+"
+    "name": "Yuki's uBlock Japanese filters - Annoyances Plus"
   },
   {
     "description": "Enhances anti anti-adblock capability of AdGuard by generic filters. Works on AdGuard for Windows, AdGuard for Android, AdGuard for Mac, and AdGuard Browser Extensions but not for AdGuard for Safari, AdGuard for iOS, and AdGuard Contents Blocker. This list also mitigates malicious popups often seen on porn sites, pirate sites, and/or short links.",
