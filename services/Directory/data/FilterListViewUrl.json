@@ -16080,14 +16080,20 @@
     "url": "https://curben.gitlab.io/malware-filter/phishing-filter-suricata.rules"
   },
   {
-    "filterListId": 2097,
+    "filterListId": 2496,
     "id": 2705,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/troysjanda/MyBlockLists/master/UBOXPI"
+  },
+  {
+    "filterListId": 2097,
+    "id": 2706,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt"
   },
   {
     "filterListId": 2098,
-    "id": 2706,
+    "id": 2707,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt"
   }
