@@ -16090,5 +16090,11 @@
     "id": 2707,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt"
-  }
+  },
+  {
+    "filterListId": 2497,
+    "id": 2705,
+    "primariness": 1,
+    "url": "https://filters.adtidy.org/windows/filters/17.txt"
+  }  
 ]
