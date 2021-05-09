@@ -4371,12 +4371,12 @@
     "name": "Anti APKMirror Ads and Countdown"
   },
   {
-    "description": "A systematic Internet filter halting analytics.",
+    "description": "The complete catalog for your content blocker!",
     "homeUrl": "https://github.com/OsborneSystems/Columbia",
     "id": 736,
     "issuesUrl": "https://github.com/OsborneSystems/Columbia/issues",
-    "licenseId": 5,
-    "name": "Columbia Analytica"
+    "licenseId": 2,
+    "name": "Columbia by Osborne"
   },
   {
     "description": "In this repo I'm keeping all custom filter rules I'm using for the sites I'm typically visit. Some of them are trying to \"mask\" ad or make it \"native\". But this is not what I want to see.",
