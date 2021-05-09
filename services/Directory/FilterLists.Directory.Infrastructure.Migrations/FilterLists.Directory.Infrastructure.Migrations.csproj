@@ -19,8 +19,4 @@
         <ProjectReference Include="..\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-        <Folder Include="Migrations\" />
-    </ItemGroup>
-
 </Project>
