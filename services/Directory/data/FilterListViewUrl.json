@@ -14058,12 +14058,6 @@
     "url": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/uBlock%20Origin/Behind-The-Scene_Mitigation.txt"
   },
   {
-    "filterListId": 2225,
-    "id": 2365,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/Enforcement/uMatrix/Behind-The-Scene%20%26%20Bypass%20Mitigation.txt"
-  },
-  {
     "filterListId": 2226,
     "id": 2366,
     "primariness": 1,
