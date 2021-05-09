@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using FilterLists.Directory.Infrastructure.Migrations.Migrations;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
@@ -16,7 +17,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Tests
                 var connString = Environment.GetEnvironmentVariable("ConnectionStrings__DirectoryConnection") ??
                                  throw new Exception();
                 var options = new DbContextOptionsBuilder<QueryDbContext>()
-                    .UseNpgsql(connString, m => m.MigrationsAssembly("FilterLists.Directory.Infrastructure.Migrations.Migrations"))
+                    .UseNpgsql(connString, m => m.MigrationsAssembly(typeof(Initial).Assembly.GetName().Name))
                     .EnableSensitiveDataLogging()
                     .Options;
                 await using var context = new QueryDbContext(options);
