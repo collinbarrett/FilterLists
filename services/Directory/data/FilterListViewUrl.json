@@ -16096,5 +16096,101 @@
     "id": 2708,
     "primariness": 1,
     "url": "https://filters.adtidy.org/windows/filters/17.txt"
+  },
+  {
+    "filterListId": 2498,
+    "id": 2709,
+    "primariness": 1,
+    "url": "https://www.joinhoney.com/whitelist/honey-smart-shopping.txt"
+  },
+  {
+    "filterListId": 2499,
+    "id": 2710,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/furkun/Anti-IP-Grabber-Hosts/main/hosts"
+  },
+  {
+    "filterListId": 2500,
+    "id": 2711,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/Cinnamon-Unltd/Anti-Kpop-Spammers-Filterlist-for-Twitter/main/AntiKPopSpammersFilterlistTwitter.txt"
+  },
+  {
+    "filterListId": 2501,
+    "id": 2712,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt"
+  },
+  {
+    "filterListId": 2502,
+    "id": 2713,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/no-cmyk/Search-Engine-Spam-Domains-Blocklist/master/blocklist.txt"
+  },
+  {
+    "filterListId": 2503,
+    "id": 2714,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/SecOps-Institute/Tor-IP-Addresses/master/tor-nodes.lst"
+  },
+  {
+    "filterListId": 2504,
+    "id": 2715,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/SecOps-Institute/Tor-IP-Addresses/master/tor-exit-nodes.lst"
+  },
+  {
+    "filterListId": 2505,
+    "id": 2716,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/SecOps-Institute/SpamhausIPLists/master/drop.txt"
+  },
+  {
+    "filterListId": 2506,
+    "id": 2717,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/SecOps-Institute/SpamhausIPLists/master/drop_ipv6.txt"
+  },
+  {
+    "filterListId": 2507,
+    "id": 2718,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/SecOps-Institute/SpamhausIPLists/master/edrop.txt"
+  },
+  {
+    "filterListId": 2508,
+    "id": 2719,
+    "primariness": 1,
+    "url": "http://ipverse.net/ipblocks/data/countries/nl.zone"
+  },
+  {
+    "filterListId": 2509,
+    "id": 2720,
+    "primariness": 1,
+    "url": "http://ipverse.net/ipblocks/data/countries/nl-ipv6.zone"
+  },
+  {
+    "filterListId": 2510,
+    "id": 2721,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/autinerd/anti-axelspringer-hosts/master/ios-adguard.txt"
+  },
+  {
+    "filterListId": 2511,
+    "id": 2721,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/autinerd/anti-axelspringer-hosts/master/axelspringer-hosts"
+  },
+  {
+    "filterListId": 2512,
+    "id": 2722,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener-AffiliateTagAllowlist.txt"
+  },
+  {
+    "filterListId": 2512,
+    "id": 2723,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/LegitimateURLShortener-AffiliateTagAllowlist.txt"
   }
 ]
