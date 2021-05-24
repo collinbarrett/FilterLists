@@ -16177,19 +16177,19 @@
   },
   {
     "filterListId": 2511,
-    "id": 2721,
+    "id": 2722,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/autinerd/anti-axelspringer-hosts/master/axelspringer-hosts"
   },
   {
     "filterListId": 2512,
-    "id": 2722,
+    "id": 2723,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener-AffiliateTagAllowlist.txt"
   },
   {
     "filterListId": 2512,
-    "id": 2723,
+    "id": 2724,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/LegitimateURLShortener-AffiliateTagAllowlist.txt"
   }
