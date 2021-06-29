@@ -16,7 +16,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Hangfire.AspNetCore" Version="1.7.23" />
+        <PackageReference Include="Hangfire.AspNetCore" Version="1.7.24" />
         <PackageReference Include="HangFire.Redis.StackExchange" Version="1.8.4" />
         <PackageReference Include="LibGit2Sharp" Version="0.26.2" />
         <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
