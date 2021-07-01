@@ -7488,60 +7488,6 @@
     "url": "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/uBlockFiltersPlus.txt"
   },
   {
-    "filterListId": 1233,
-    "id": 1255,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/adobeblock.txt"
-  },
-  {
-    "filterListId": 1234,
-    "id": 1256,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/nintendoblock.txt"
-  },
-  {
-    "filterListId": 1235,
-    "id": 1257,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/nomsdata.txt"
-  },
-  {
-    "filterListId": 1237,
-    "id": 1258,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/jbfake.txt"
-  },
-  {
-    "filterListId": 1238,
-    "id": 1259,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/gamefake.txt"
-  },
-  {
-    "filterListId": 1239,
-    "id": 1260,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/fakenewsde.txt"
-  },
-  {
-    "filterListId": 1240,
-    "id": 1261,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/cryptomine.txt"
-  },
-  {
-    "filterListId": 1241,
-    "id": 1262,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/other.txt"
-  },
-  {
-    "filterListId": 1242,
-    "id": 1263,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Akamaru/Adblock-Filterliste/master/filterlist.txt"
-  },
-  {
     "filterListId": 1243,
     "id": 1264,
     "primariness": 1,
