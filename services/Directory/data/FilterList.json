@@ -17148,5 +17148,21 @@
     "name": "Extension-based Malware and Data-Sucking Search Engine hosts file",
     "syntaxId": 1,
     "viewUrl": "https://raw.githubusercontent.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/main/list.txt"
+  },
+  {
+    "description":"Block malware, phishing, and scams for a more secure browser",
+    "licenseId":28,
+    "homeUrl":"https://github.com/iam-py-test/my_filters_001",
+    "issuesUrl":"https://github.com/iam-py-test/my_filters_001/issues",
+    "id":2537,
+    "name":"Malicious website blocklist"
+    
+  },
+  {
+    "description":"Block malware, phishing, and scams for a more secure browser (HOSTS version - not for uBlock Origin)",
+    "licenseId":28,
+    "homeUrl":"https://github.com/iam-py-test/my_filters_001",
+    "id":2538,
+    "name":"Malicious website blocklist (HOSTS)"
   }
 ]
