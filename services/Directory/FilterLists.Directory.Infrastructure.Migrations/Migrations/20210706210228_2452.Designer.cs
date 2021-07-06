@@ -3,15 +3,17 @@ using System;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    partial class QueryDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210706210228_2452")]
+    partial class _2452
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -8752,6 +8754,86 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/deathbybandaid/piholeparser/issues",
                             LicenseId = 14,
                             Name = "uBlockFiltersPlus (Domains)"
+                        },
+                        new
+                        {
+                            Id = 1233,
+                            Description = "To block Adobe Updates (Photoshop & co.)",
+                            HomeUrl = "https://github.com/Akamaru/Pi-Hole-Lists",
+                            IssuesUrl = "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+                            LicenseId = 5,
+                            Name = "Pi-Hole-Lists - Adobe updates"
+                        },
+                        new
+                        {
+                            Id = 1234,
+                            Description = "To block Nintendo system updates (3DS / Wii U / Switch)",
+                            HomeUrl = "https://github.com/Akamaru/Pi-Hole-Lists",
+                            IssuesUrl = "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+                            LicenseId = 5,
+                            Name = "Pi-Hole-Lists - Nintendo updates"
+                        },
+                        new
+                        {
+                            Id = 1235,
+                            Description = "To block tracking and information that Windows collects",
+                            HomeUrl = "https://github.com/Akamaru/Pi-Hole-Lists",
+                            IssuesUrl = "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+                            LicenseId = 5,
+                            Name = "Pi-Hole-Lists - Windows tracking"
+                        },
+                        new
+                        {
+                            Id = 1237,
+                            Description = "Block fake jailbreak websites (Domains of The iPhone Wiki)",
+                            HomeUrl = "https://github.com/Akamaru/Pi-Hole-Lists",
+                            IssuesUrl = "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+                            LicenseId = 5,
+                            Name = "Pi-Hole-Lists - Fake jailbreak sites"
+                        },
+                        new
+                        {
+                            Id = 1238,
+                            Description = "To block fake gaming websites (fake emulators, etc.)",
+                            HomeUrl = "https://github.com/Akamaru/Pi-Hole-Lists",
+                            IssuesUrl = "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+                            LicenseId = 5,
+                            Name = "Pi-Hole-Lists - Fake game sites"
+                        },
+                        new
+                        {
+                            Id = 1239,
+                            Description = "To block German fake news websites",
+                            HomeUrl = "https://github.com/Akamaru/Pi-Hole-Lists",
+                            IssuesUrl = "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+                            LicenseId = 5,
+                            Name = "Pi-Hole-Lists - German fake news"
+                        },
+                        new
+                        {
+                            Id = 1240,
+                            Description = "To block cryptomining",
+                            HomeUrl = "https://github.com/Akamaru/Pi-Hole-Lists",
+                            IssuesUrl = "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+                            LicenseId = 5,
+                            Name = "Pi-Hole-Lists - Cryptomining"
+                        },
+                        new
+                        {
+                            Id = 1241,
+                            Description = "To block other things that I could not assign anywhere",
+                            HomeUrl = "https://github.com/Akamaru/Pi-Hole-Lists",
+                            IssuesUrl = "https://github.com/Akamaru/Pi-Hole-Lists/issues",
+                            LicenseId = 5,
+                            Name = "Pi-Hole-Lists - Other"
+                        },
+                        new
+                        {
+                            Id = 1242,
+                            HomeUrl = "https://github.com/Akamaru/Adblock-Filterliste",
+                            IssuesUrl = "https://github.com/Akamaru/Adblock-Filterliste/issues",
+                            LicenseId = 33,
+                            Name = "Aka's Filter Liste"
                         },
                         new
                         {
@@ -22480,6 +22562,21 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1239,
+                            Iso6391 = "de"
+                        },
+                        new
+                        {
+                            FilterListId = 1242,
+                            Iso6391 = "de"
+                        },
+                        new
+                        {
+                            FilterListId = 1242,
+                            Iso6391 = "en"
+                        },
+                        new
+                        {
                             FilterListId = 1279,
                             Iso6391 = "pl"
                         },
@@ -28349,6 +28446,51 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 1230,
                             MaintainerId = 109
+                        },
+                        new
+                        {
+                            FilterListId = 1233,
+                            MaintainerId = 110
+                        },
+                        new
+                        {
+                            FilterListId = 1234,
+                            MaintainerId = 110
+                        },
+                        new
+                        {
+                            FilterListId = 1235,
+                            MaintainerId = 110
+                        },
+                        new
+                        {
+                            FilterListId = 1237,
+                            MaintainerId = 110
+                        },
+                        new
+                        {
+                            FilterListId = 1238,
+                            MaintainerId = 110
+                        },
+                        new
+                        {
+                            FilterListId = 1239,
+                            MaintainerId = 110
+                        },
+                        new
+                        {
+                            FilterListId = 1240,
+                            MaintainerId = 110
+                        },
+                        new
+                        {
+                            FilterListId = 1241,
+                            MaintainerId = 110
+                        },
+                        new
+                        {
+                            FilterListId = 1242,
+                            MaintainerId = 110
                         },
                         new
                         {
@@ -36711,6 +36853,51 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 1230,
                             SyntaxId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 1233,
+                            SyntaxId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 1234,
+                            SyntaxId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 1235,
+                            SyntaxId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 1237,
+                            SyntaxId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 1238,
+                            SyntaxId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 1239,
+                            SyntaxId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 1240,
+                            SyntaxId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 1241,
+                            SyntaxId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 1242,
+                            SyntaxId = 3
                         },
                         new
                         {
@@ -49202,6 +49389,51 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 1230,
+                            TagId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 1233,
+                            TagId = 26
+                        },
+                        new
+                        {
+                            FilterListId = 1234,
+                            TagId = 26
+                        },
+                        new
+                        {
+                            FilterListId = 1235,
+                            TagId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 1237,
+                            TagId = 7
+                        },
+                        new
+                        {
+                            FilterListId = 1238,
+                            TagId = 6
+                        },
+                        new
+                        {
+                            FilterListId = 1239,
+                            TagId = 21
+                        },
+                        new
+                        {
+                            FilterListId = 1240,
+                            TagId = 1
+                        },
+                        new
+                        {
+                            FilterListId = 1241,
+                            TagId = 9
+                        },
+                        new
+                        {
+                            FilterListId = 1242,
                             TagId = 2
                         },
                         new
@@ -68661,6 +68893,78 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
                             Url = "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/uBlockFiltersPlus.txt"
+                        },
+                        new
+                        {
+                            Id = 1255,
+                            FilterListId = 1233,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/adobeblock.txt"
+                        },
+                        new
+                        {
+                            Id = 1256,
+                            FilterListId = 1234,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/nintendoblock.txt"
+                        },
+                        new
+                        {
+                            Id = 1257,
+                            FilterListId = 1235,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/nomsdata.txt"
+                        },
+                        new
+                        {
+                            Id = 1258,
+                            FilterListId = 1237,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/jbfake.txt"
+                        },
+                        new
+                        {
+                            Id = 1259,
+                            FilterListId = 1238,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/gamefake.txt"
+                        },
+                        new
+                        {
+                            Id = 1260,
+                            FilterListId = 1239,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/fakenewsde.txt"
+                        },
+                        new
+                        {
+                            Id = 1261,
+                            FilterListId = 1240,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/cryptomine.txt"
+                        },
+                        new
+                        {
+                            Id = 1262,
+                            FilterListId = 1241,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/Akamaru/Pi-Hole-Lists/master/other.txt"
+                        },
+                        new
+                        {
+                            Id = 1263,
+                            FilterListId = 1242,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/Akamaru/Adblock-Filterliste/master/filterlist.txt"
                         },
                         new
                         {
