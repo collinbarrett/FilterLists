@@ -17390,5 +17390,13 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/discussions/163",
     "licenseId": 35,
     "name": "Actually Legitimate URL Shortener Tool - Affiliate tag allowlist"
-  }
+  },
+  {
+    "description": "Blocks copycat, scam and fake domains that imitate other well-known websites, for various reasons.",
+    "homeUrl": "https://github.com/DRSDavidSoft/additional-hosts",
+    "id": 2513,
+    "issuesUrl": "https://github.com/DRSDavidSoft/additional-hosts/issues",
+    "licenseId": 2,
+    "name": "Additional Hosts - Fake domains"
+  },
 ]
