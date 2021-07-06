@@ -16192,5 +16192,11 @@
     "id": 2724,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/LegitimateURLShortener-AffiliateTagAllowlist.txt"
-  }
+  },
+  {
+    "filterListId": 2513,
+    "id": 2725,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/fake-domains.txt"
+  },
 ]
