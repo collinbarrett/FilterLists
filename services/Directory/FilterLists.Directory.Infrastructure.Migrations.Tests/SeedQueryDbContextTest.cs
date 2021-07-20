@@ -11,7 +11,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Tests
         [Fact]
         public void Migrate_DoesNotThrowException()
         {
-            var exception = Record.Exception(() =>
+            try
             {
                 var connString = Environment.GetEnvironmentVariable("ConnectionStrings__DirectoryConnection") ??
                                  throw new Exception();
@@ -21,8 +21,13 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Tests
                     .Options;
                 using var context = new QueryDbContext(options);
                 context.Database.Migrate();
-            });
-            Assert.Null(exception);
+            }
+            catch (Exception)
+            {
+                Assert.True(false);
+            }
+
+            Assert.True(true);
         }
     }
 }
