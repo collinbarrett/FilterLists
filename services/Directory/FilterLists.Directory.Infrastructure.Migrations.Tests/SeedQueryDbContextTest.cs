@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Tasks;
 using FilterLists.Directory.Infrastructure.Migrations.Migrations;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
@@ -10,9 +9,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Tests
     public class SeedQueryDbContextTest
     {
         [Fact]
-        public async Task Migrate_DoesNotThrowException()
+        public void Migrate_DoesNotThrowException()
         {
-            var exception = await Record.ExceptionAsync(async () =>
+            var exception = Record.Exception(() =>
             {
                 var connString = Environment.GetEnvironmentVariable("ConnectionStrings__DirectoryConnection") ??
                                  throw new Exception();
@@ -20,8 +19,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Tests
                     .UseNpgsql(connString, m => m.MigrationsAssembly(typeof(Initial).Assembly.GetName().Name))
                     .EnableSensitiveDataLogging()
                     .Options;
-                await using var context = new QueryDbContext(options);
-                await context.Database.MigrateAsync();
+                using var context = new QueryDbContext(options);
+                context.Database.Migrate();
             });
             Assert.Null(exception);
         }
