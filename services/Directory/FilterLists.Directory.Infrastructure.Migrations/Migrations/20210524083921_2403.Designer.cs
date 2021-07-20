@@ -3,15 +3,17 @@ using System;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    partial class QueryDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210524083921_2403")]
+    partial class _2403
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -127,6 +129,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.ToTable("FilterLists");
 
                     b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "A filter list that blocks mobile advertisements and trackers on Japanese properties",
+                            HomeUrl = "https://280blocker.net/",
+                            LicenseId = 1,
+                            Name = "280blocker for japanese mobile site",
+                            SubmissionUrl = "https://docs.google.com/forms/d/e/1FAIpQLScNeZhFrFZt9GhIVGdThGz7oyepcNRKuOi5PJDnsC-awxTeOQ/viewform"
+                        },
                         new
                         {
                             Id = 2,

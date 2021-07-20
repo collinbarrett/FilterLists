@@ -16848,7 +16848,7 @@
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "id": 2434,
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/discussions/163",
     "licenseId": 35,
     "name": "Actually Legitimate URL Shortener Tool"
   },
@@ -17352,5 +17352,106 @@
     "licenseId": 12,
     "name": "AdGuard URL Tracking filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
+  },
+  {
+    "homeUrl": "https://www.joinhoney.com/",
+    "id": 2498,
+    "name": "Honey Smart Shopping"
+  },
+  {
+    "description": "Protect your IP address and some personal data with the hosts file.",
+    "homeUrl": "https://github.com/furkun/ProtectorHosts",
+    "id": 2499,
+    "name": "Anti-IP-Grabber-Hosts"
+  },
+  {
+    "description": "This list is a fork of DandelionSprout's AntiKpopSpammersTwitter updated with more K-pop artists, bands and related stuff.",
+    "homeUrl": "https://github.com/Cinnamon-Unltd/Anti-Kpop-Spammers-Filterlist-for-Twitter",
+    "id": 2500,
+    "licenseId": 35,
+    "name": "Anti-K-pop spammers on Twitter Fork List"
+  },
+  {
+    "description": "A list of free, public, forward proxy servers. UPDATED DAILY!",
+    "homeUrl": "https://github.com/clarketm/proxy-list/",
+    "id": 2501,
+    "licenseId": 2,
+    "name": "proxy-list"
+  },
+  {
+    "description": "A regularly maintained blocklist to filter out spam and junk domains from search engines results.",
+    "homeUrl": "https://github.com/no-cmyk/Search-Engine-Spam-Blocklist",
+    "id": 2502,
+    "name": "Search Engine Spam Blocklist"
+  },
+  {
+    "description": "An IP Addresses list of Tor Nodes",
+    "donateUrl": "https://paypal.me/secopssolutions",
+    "homeUrl": "https://amisafe.secops.in/",
+    "id": 2503,
+    "name": "Tor IP Addresses - All nodes"
+  },
+  {
+    "description": "An IP Addresses list of Tor Exit Nodes",
+    "donateUrl": "https://paypal.me/secopssolutions",
+    "homeUrl": "https://amisafe.secops.in/",
+    "id": 2504,
+    "name": "Tor IP Addresses - Exit nodes"
+  },
+  {
+    "description": "The DROP list will not include any IP address space under the control of any legitimate network - even if being used by \"the spammers from hell\". DROP will only include netblocks allocated directly by an established Regional Internet Registry (RIR) or National Internet Registry (NIR) such as ARIN, RIPE, AFRINIC, APNIC, LACNIC or KRNIC or direct RIR allocations.",
+    "donateUrl": "https://paypal.me/secopssolutions",
+    "homeUrl": "https://www.spamhaus.org/drop/",
+    "id": 2505,
+    "licenseId": 7,
+    "name": "Spamhaus Don't Route Or Peer List (DROP)"
+  },
+  {
+    "description": "The DROPv6 list includes IPv6 ranges allocated to spammers or cyber criminals. DROPv6 will only include IPv6 netblocks allocated directly by an established Regional Internet Registry (RIR) or National Internet Registry (NIR) such as ARIN, RIPE, AFRINIC, APNIC, LACNIC or KRNIC or direct RIR allocations.",
+    "donateUrl": "https://paypal.me/secopssolutions",
+    "homeUrl": "https://www.spamhaus.org/drop/",
+    "id": 2506,
+    "licenseId": 7,
+    "name": "Spamhaus IPv6 DROP List (DROPv6)"
+  },
+  {
+    "description": "EDROP is an extension of the DROP list that includes suballocated netblocks controlled by spammers or cyber criminals. EDROP is meant to be used in addition to the direct allocations on the DROP list.",
+    "donateUrl": "https://paypal.me/secopssolutions",
+    "homeUrl": "https://www.spamhaus.org/drop/",
+    "id": 2507,
+    "licenseId": 7,
+    "name": "Spamhaus Extended DROP List (EDROP)"
+  },
+  {
+    "homeUrl": "http://ipverse.net/",
+    "id": 2508,
+    "name": "IPverse IP address block lists - Netherlands IPv4"
+  },
+  {
+    "homeUrl": "http://ipverse.net/",
+    "id": 2509,
+    "name": "IPverse IP address block lists - Netherlands IPv6"
+  },
+  {
+    "description": "This file blocks all connections to sites which are from Axel Springer Verlag or have a connection with them.",
+    "homeUrl": "https://github.com/autinerd/anti-axelspringer-hosts/",
+    "id": 2510,
+    "name": "Anti Axel Springer hosts file (Domains)"
+  },
+  {
+    "description": "This file blocks all connections to sites which are from Axel Springer Verlag or have a connection with them.",
+    "homeUrl": "https://github.com/autinerd/anti-axelspringer-hosts/",
+    "id": 2511,
+    "name": "Anti Axel Springer hosts file"
+  },
+  {
+    "description": "Opt-in allowlist for users of «Actually Legitimate URL Shortener Tool», to at least attempt to re-allow monetary affiliate support tags.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2512,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/discussions/163",
+    "licenseId": 35,
+    "name": "Actually Legitimate URL Shortener Tool - Affiliate tag allowlist"
   }
 ]
