@@ -10,7 +10,7 @@
     "@types/node": "^16.3.3",
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.9",
-    "@types/react-router-dom": "^5.1.7",
+    "@types/react-router-dom": "^5.1.8",
     "antd": "^4.16.8",
     "babel-plugin-import": "^1.13.3",
     "customize-cra": "^1.0.0",
