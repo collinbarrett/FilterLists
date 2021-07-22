@@ -17143,8 +17143,8 @@
     "id": 2536,
     "syntaxId": 1,
     "donateUrl": "https://paypal.me/ArcticCircleSystem",
-    "homeUrl": "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/"
-    "issuesUrl": "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/issues/"
+    "homeUrl": "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/",
+    "issuesUrl": "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/issues/",
     "emailAddress": "ArcticCircleSystem@gmail.com",
     "viewUrl": "https://raw.githubusercontent.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/main/list.txt",
     "name": "Extension-based Malware and Data-Sucking Search Engine hosts file"
