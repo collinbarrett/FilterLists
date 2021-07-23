@@ -17461,5 +17461,16 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/discussions/163",
     "licenseId": 35,
     "name": "Actually Legitimate URL Shortener Tool - Affiliate tag allowlist"
+  },
+  {
+    "description": "Hosts file for blocking sites by known malware authors, including those browser-hijacking extensions, as well as those sketchy data-sucking no-name search engines that those companies work with. Also if you donate please ignore the fact that our deadname is on the page.",
+    "donateUrl": "https://paypal.me/ArcticCircleSystem",
+    "emailAddress": "ArcticCircleSystem@gmail.com",
+    "homeUrl": "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/",
+    "id": 2513,
+    "issuesUrl": "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/issues/",
+    "name": "Extension-based Malware and Data-Sucking Search Engine hosts file",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/main/list.txt"
   }
 ]
