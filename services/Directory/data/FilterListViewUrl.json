@@ -16192,5 +16192,15 @@
     "id": 2724,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/LegitimateURLShortener-AffiliateTagAllowlist.txt"
+  },
+  {
+    "filterListId": 2513,
+    "id": 2725,
+    "url": "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/antimalware.txt"
+  },
+  {
+    "filterListId": 2514,
+    "id": 2726,
+    "url": "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/Alternative%20list%20formats/antimalware_hosts.txt"
   }
 ]

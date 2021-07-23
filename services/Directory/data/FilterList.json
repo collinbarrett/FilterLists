@@ -17461,5 +17461,20 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/discussions/163",
     "licenseId": 35,
     "name": "Actually Legitimate URL Shortener Tool - Affiliate tag allowlist"
+  },
+  {
+    "description": "Block malware, phishing, and scams for a more secure browser",
+    "homeUrl": "https://github.com/iam-py-test/my_filters_001",
+    "id": 2513,
+    "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues",
+    "licenseId": 28,
+    "name": "Malicious website blocklist"
+  },
+  {
+    "description": "Block malware, phishing, and scams for a more secure browser (HOSTS version - not for uBlock Origin)",
+    "homeUrl": "https://github.com/iam-py-test/my_filters_001",
+    "id": 2514,
+    "licenseId": 28,
+    "name": "Malicious website blocklist (HOSTS)"
   }
 ]
