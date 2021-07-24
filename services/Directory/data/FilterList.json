@@ -17398,5 +17398,45 @@
     "issuesUrl": "https://github.com/DRSDavidSoft/additional-hosts/issues",
     "licenseId": 2,
     "name": "Additional Hosts - Fake domains"
+  },
+  {
+    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
+    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "id": 2514,
+    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "licenseId": 28,
+    "name": "urlhaus-filter (dnscrypt-proxy names)"
+  },
+  {
+    "description": "A blocklist of malicious URLs that are being used for malware distribution.",
+    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "id": 2515,
+    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "licenseId": 28,
+    "name": "urlhaus-filter (dnscrypt-proxy IPs)"
+  },
+  {
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "id": 2516,
+    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "licenseId": 8,
+    "name": "phishing-filter (dnscrypt-proxy names)"
+  },
+  {
+    "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
+    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "id": 2517,
+    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "licenseId": 8,
+    "name": "phishing-filter (dnscrypt-proxy IPs)"
+  },
+  {
+    "description": "A block of websites that host potentially unwanted programs",
+    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "id": 2518,
+    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "licenseId": 3,
+    "name": "pup-filter (dnscrypt-proxy names)"
   }
 ]
