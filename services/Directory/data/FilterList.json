@@ -17073,12 +17073,12 @@
   },
   {
     "description": "Dutch supplement for the Easylist filters to use with uBlock Origin",
+    "donateUrl": "https://www.paypal.com/donate?hosted_button_id=M4D2NPZX5NS4C",
     "homeUrl": "https://github.com/BPower0036/AdBlockFilters/",
     "id": 2471,
     "issuesUrl": "https://github.com/BPower0036/AdBlockFilters/issues",
     "licenseId": 4,
-    "name": "EasyDutch",
-    "donateUrl": "https://www.paypal.com/donate?hosted_button_id=M4D2NPZX5NS4C"
+    "name": "EasyDutch"
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
