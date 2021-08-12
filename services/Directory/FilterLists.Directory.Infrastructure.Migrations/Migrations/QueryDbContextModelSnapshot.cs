@@ -19294,7 +19294,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2471,
                             Description = "Dutch supplement for the Easylist filters to use with uBlock Origin",
-                            DonateUrl = "https://www.paypal.com/donate?hosted_button_id=M4D2NPZX5NS4C",
                             HomeUrl = "https://github.com/BPower0036/AdBlockFilters/",
                             IssuesUrl = "https://github.com/BPower0036/AdBlockFilters/issues",
                             LicenseId = 4,
