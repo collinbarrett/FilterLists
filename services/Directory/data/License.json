@@ -1,0 +1,348 @@
+[
+  {
+    "id": 1,
+    "name": "CC BY-NC-ND 4.0",
+    "permitsCommercialUse": false,
+    "permitsDistribution": false,
+    "permitsModification": false,
+    "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  },
+  {
+    "id": 2,
+    "name": "The MIT License",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://opensource.org/licenses/MIT"
+  },
+  {
+    "id": 3,
+    "name": "Restricted",
+    "permitsCommercialUse": false,
+    "permitsDistribution": false,
+    "permitsModification": false
+  },
+  {
+    "id": 4,
+    "name": "GPLv3",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://www.gnu.org/licenses/gpl-3.0.en.html"
+  },
+  {
+    "id": 5,
+    "name": "All Rights Reserved",
+    "permitsCommercialUse": false,
+    "permitsDistribution": false,
+    "permitsModification": false,
+    "url": "https://en.wikipedia.org/wiki/All_rights_reserved"
+  },
+  {
+    "id": 6,
+    "name": "CC BY-NC-SA 3.0",
+    "permitsCommercialUse": false,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+  },
+  {
+    "id": 7,
+    "name": "Permissive",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true
+  },
+  {
+    "id": 8,
+    "name": "CC BY-SA 4.0",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "id": 9,
+    "name": "CC BY-NC-SA 4.0",
+    "permitsCommercialUse": false,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  },
+  {
+    "id": 10,
+    "name": "BSD-3-Clause",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://opensource.org/licenses/BSD-3-Clause"
+  },
+  {
+    "id": 11,
+    "name": "The Unlicense",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://unlicense.org/"
+  },
+  {
+    "id": 12,
+    "name": "CC BY-SA 3.0",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "id": 13,
+    "name": "CC BY-NC 4.0",
+    "permitsCommercialUse": false,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://creativecommons.org/licenses/by-nc/4.0/"
+  },
+  {
+    "id": 14,
+    "name": "WTFPL",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "http://www.wtfpl.net/"
+  },
+  {
+    "id": 15,
+    "name": "CC BY-ND 4.0",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": false,
+    "url": "https://creativecommons.org/licenses/by-nd/4.0/"
+  },
+  {
+    "id": 16,
+    "name": "CC BY 3.0",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  {
+    "id": 17,
+    "name": "ISC",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://opensource.org/licenses/ISC"
+  },
+  {
+    "id": 18,
+    "name": "Apache 2.0",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
+  {
+    "id": 19,
+    "name": "GPLv2",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+  },
+  {
+    "id": 20,
+    "name": "Public Domain",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true
+  },
+  {
+    "id": 21,
+    "name": "OSINT",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://osint.bambenekconsulting.com/license.txt"
+  },
+  {
+    "id": 22,
+    "name": "GoogleHosts",
+    "permitsCommercialUse": false,
+    "permitsDistribution": false,
+    "permitsModification": false,
+    "url": "https://raw.githubusercontent.com/googlehosts/hosts/master/LICENSE"
+  },
+  {
+    "id": 23,
+    "name": "\"Don't Be A Dick\" Public License",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://dbad-license.org/"
+  },
+  {
+    "id": 24,
+    "name": "CC BY 4.0",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": 25,
+    "name": "CC BY-NC-SA 2.5",
+    "permitsCommercialUse": false,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+  },
+  {
+    "id": 26,
+    "name": "CC BY-NC-ND 3.0",
+    "permitsCommercialUse": false,
+    "permitsDistribution": false,
+    "permitsModification": false,
+    "url": "https://creativecommons.org/licenses/by-nc-nd/3.0/"
+  },
+  {
+    "id": 27,
+    "name": "BSD-2-Clause",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://opensource.org/licenses/BSD-2-Clause"
+  },
+  {
+    "id": 28,
+    "name": "CC0 1.0 Universal",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  {
+    "id": 29,
+    "name": "The Beer-Ware License",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://spdx.org/licenses/Beerware.html"
+  },
+  {
+    "id": 30,
+    "name": "CC BY-SA 2.1 JP",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
+  },
+  {
+    "id": 31,
+    "name": "CC BY-NC 3.0",
+    "permitsCommercialUse": false,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://creativecommons.org/licenses/by-nc/3.0/"
+  },
+  {
+    "id": 32,
+    "name": "Permissive non-commercial",
+    "permitsCommercialUse": false,
+    "permitsDistribution": false,
+    "permitsModification": true
+  },
+  {
+    "id": 33,
+    "name": "Mozilla Public License v2.0",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://www.mozilla.org/MPL/2.0/"
+  },
+  {
+    "id": 34,
+    "name": "Lesser GPL v3",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://www.gnu.org/licenses/lgpl-3.0.en.html"
+  },
+  {
+    "id": 35,
+    "name": "Dandelicence",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://github.com/DandelionSprout/Dandelicence/blob/master/DandelicenceNewestVersion.md"
+  },
+  {
+    "id": 36,
+    "name": "CC BY-ND 3.0",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": false,
+    "url": "https://creativecommons.org/licenses/by-nd/3.0/"
+  },
+  {
+    "id": 37,
+    "name": "Lesser GPL v2.1",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html"
+  },
+  {
+    "id": 38,
+    "name": "Generic copyfree",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true
+  },
+  {
+    "id": 39,
+    "name": "Generic copyleft",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true
+  },
+  {
+    "id": 40,
+    "name": "McRae General Public License",
+    "permitsCommercialUse": false,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://pgl.yoyo.org/license/"
+  },
+  {
+    "id": 41,
+    "name": "AGPLv1",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://directory.fsf.org/wiki/License:AGPL-1.0"
+  },
+  {
+    "id": 42,
+    "name": "AGPLv2",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://www.vicidial.com/?page_id=260"
+  },
+  {
+    "id": 43,
+    "name": "AGPLv3",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://www.gnu.org/licenses/agpl-3.0.html"
+  },
+  {
+    "id": 44,
+    "name": "CPAL-1.0",
+    "permitsCommercialUse": true,
+    "permitsDistribution": false,
+    "permitsModification": true,
+    "url": "https://opensource.org/licenses/CPAL-1.0"
+  }
+]
