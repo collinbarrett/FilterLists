@@ -16180,5 +16180,11 @@
     "id": 2731,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
-  }
+  },
+  {
+    "filterListId": 2471,
+    "id": 2732,
+    "primariness": 2,
+    "url": "https://gitlab.com/BPower0036/AdBlockFilters/-/raw/main/easydutch.txt"
+  },
 ]
