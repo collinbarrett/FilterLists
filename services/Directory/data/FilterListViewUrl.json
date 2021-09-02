@@ -1,11 +1,5 @@
 [
   {
-    "filterListId": 1,
-    "id": 1,
-    "primariness": 1,
-    "url": "https://280blocker.net/files/280blocker_adblock.txt"
-  },
-  {
     "filterListId": 2,
     "id": 2,
     "primariness": 1,
@@ -8850,12 +8844,6 @@
     "url": "https://raw.githubusercontent.com/jawz101/MobileAdTrackers/master/hosts"
   },
   {
-    "filterListId": 1483,
-    "id": 1491,
-    "primariness": 1,
-    "url": "https://280blocker.net/files/280blocker_domain.txt"
-  },
-  {
     "filterListId": 1484,
     "id": 1492,
     "primariness": 1,
@@ -11454,48 +11442,6 @@
     "url": "https://raw.githubusercontent.com/lutoma/nocomments/master/abp.txt"
   },
   {
-    "filterListId": 1857,
-    "id": 1925,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/supplement-rules.txt"
-  },
-  {
-    "filterListId": 1858,
-    "id": 1926,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/DNS-rules.txt"
-  },
-  {
-    "filterListId": 1859,
-    "id": 1927,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/paranoid-rules.txt"
-  },
-  {
-    "filterListId": 1860,
-    "id": 1928,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kaishuu-filter/master/nanj-kaishuu-filter.txt"
-  },
-  {
-    "filterListId": 1861,
-    "id": 1929,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/nanj-adguard2/nanj-kaishuu-filter/master/nanj-kaishuu-dns-filter.txt"
-  },
-  {
-    "filterListId": 1862,
-    "id": 1930,
-    "primariness": 1,
-    "url": "https://280blocker.net/files/280blocker_adblock_nanj.txt"
-  },
-  {
-    "filterListId": 1863,
-    "id": 1931,
-    "primariness": 1,
-    "url": "https://280blocker.net/files/280blocker_adblock_nanj_supp.txt"
-  },
-  {
     "filterListId": 1864,
     "id": 1932,
     "primariness": 1,
@@ -13098,12 +13044,6 @@
     "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt"
   },
   {
-    "filterListId": 2095,
-    "id": 2202,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt"
-  },
-  {
     "filterListId": 2099,
     "id": 2203,
     "primariness": 1,
@@ -14356,12 +14296,6 @@
     "id": 2424,
     "primariness": 2,
     "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/wildcards.txt"
-  },
-  {
-    "filterListId": 2282,
-    "id": 2425,
-    "primariness": 1,
-    "url": "https://280blocker.net/files/280blocker_domain_ag.txt"
   },
   {
     "filterListId": 2283,
