@@ -1,13 +1,5 @@
 [
   {
-    "description": "A filter list that blocks mobile advertisements and trackers on Japanese properties",
-    "homeUrl": "https://280blocker.net",
-    "id": 1,
-    "licenseId": 1,
-    "name": "280blocker for japanese mobile site",
-    "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLScNeZhFrFZt9GhIVGdThGz7oyepcNRKuOi5PJDnsC-awxTeOQ/viewform"
-  },
-  {
     "description": "Mute is an AdBlock Plus filter for user comments. In the same way that AdBlock hides ads, AdBlock can use this filter to hide user-generated comments, allowing you to browse the Internet with less stupidity clawing at your eyeballs.",
     "homeUrl": "https://github.com/B-Con/mute",
     "id": 2,
@@ -9297,14 +9289,6 @@
     "name": "jawz101 MobileAdTrackers"
   },
   {
-    "description": "A filter list that blocks mobile advertisements and trackers on Japanese properties",
-    "homeUrl": "https://280blocker.net",
-    "id": 1483,
-    "licenseId": 1,
-    "name": "280blocker adblock domain lists",
-    "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLScNeZhFrFZt9GhIVGdThGz7oyepcNRKuOi5PJDnsC-awxTeOQ/viewform"
-  },
-  {
     "homeUrl": "https://blocklist.site/",
     "id": 1484,
     "licenseId": 11,
@@ -12403,55 +12387,6 @@
     "name": "nocomments"
   },
   {
-    "description": "This is a filter to complement 280blocker by finding advertisements that are not blocked by 280blocker.",
-    "homeUrl": "https://github.com/nanj-adguard2/nanj-kakuchou-filter",
-    "id": 1857,
-    "licenseId": 20,
-    "name": "Nanj Kakuchou Filter - Supplement Rules"
-  },
-  {
-    "description": "DNS rule filters to strengthen ad blocking.",
-    "homeUrl": "https://github.com/nanj-adguard2/nanj-kakuchou-filter",
-    "id": 1858,
-    "licenseId": 20,
-    "name": "Nanj Kakuchou Filter - DNS Rules"
-  },
-  {
-    "description": "This is a filter that eradicates what 280blocker will not support in the future.",
-    "homeUrl": "https://github.com/nanj-adguard2/nanj-kakuchou-filter",
-    "id": 1859,
-    "licenseId": 20,
-    "name": "Nanj Kakuchou Filter - Paranoid Rules"
-  },
-  {
-    "description": "This is a filter to fix bugs in AdGuard for Android when using Japanese websites / Japanese apps / 280blocker.",
-    "homeUrl": "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
-    "id": 1860,
-    "licenseId": 20,
-    "name": "Nanj Kaishuu Filter"
-  },
-  {
-    "description": "This is a filter to fix bugs in AdGuard for Android when using Japanese websites / Japanese apps / 280blocker.",
-    "homeUrl": "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
-    "id": 1861,
-    "licenseId": 20,
-    "name": "Nanj Kaishuu DNS Filter"
-  },
-  {
-    "description": "This is a filter to fix bugs in AdGuard for Android when using Japanese websites / Japanese apps / 280blocker.",
-    "homeUrl": "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
-    "id": 1862,
-    "licenseId": 1,
-    "name": "280blocker + Nanj Kakuchou"
-  },
-  {
-    "description": "This is a filter to fix bugs in AdGuard for Android when using Japanese websites / Japanese apps / 280blocker.",
-    "homeUrl": "https://github.com/nanj-adguard2/nanj-kaishuu-filter",
-    "id": 1863,
-    "licenseId": 1,
-    "name": "280blocker + Nanj Kakuchou - Supplement Rules"
-  },
-  {
     "description": "This is a quick list of Ad-blocking filters for Sri Lankan web sites. Use this to complement Easylist filters.",
     "homeUrl": "https://github.com/Ayesh/Adblock-Sinhala/",
     "id": 1864,
@@ -14111,14 +14046,6 @@
     "name": "Yuki's uBlock Japanese filters - Annoyances"
   },
   {
-    "description": "Enhance anti-scam capability of 280blocker adblock filter by utilizing advanced capability of AdGuard/uBlock Origin.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2095,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 28,
-    "name": "Anti-scam enhancer for 280blocker adblock filter"
-  },
-  {
     "description": "Removes blogroll (feed-style mutual links) on Japanese sites. Included in Yuki's uBlock Japanese filters - Annoyances",
     "homeUrl": "https://github.com/Yuki2718/adblock",
     "id": 2096,
@@ -15527,14 +15454,6 @@
     "id": 2281,
     "licenseId": 35,
     "name": "1Hosts Pro (Domains with wildcards)"
-  },
-  {
-    "description": "A filter list that blocks mobile advertisements and trackers on Japanese properties",
-    "homeUrl": "https://280blocker.net",
-    "id": 2282,
-    "licenseId": 1,
-    "name": "280blocker adblock domain lists (AdGuard)",
-    "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLScNeZhFrFZt9GhIVGdThGz7oyepcNRKuOi5PJDnsC-awxTeOQ/viewform"
   },
   {
     "description": "Goodbye Ads is designed for Unix-like systems (such as Android), gets a list of domains that serve ads, tracking scripts and malware from multiple reputable sources and creates a hosts file that prevents your system from connecting to them.",

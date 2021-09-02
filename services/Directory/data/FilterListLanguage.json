@@ -1,9 +1,5 @@
 [
   {
-    "filterListId": 1,
-    "iso6391": "ja"
-  },
-  {
     "filterListId": 6,
     "iso6391": "ja"
   },
@@ -2280,10 +2276,6 @@
     "iso6391": "zh"
   },
   {
-    "filterListId": 1483,
-    "iso6391": "ja"
-  },
-  {
     "filterListId": 1528,
     "iso6391": "az"
   },
@@ -2736,34 +2728,6 @@
     "iso6391": "th"
   },
   {
-    "filterListId": 1857,
-    "iso6391": "ja"
-  },
-  {
-    "filterListId": 1858,
-    "iso6391": "ja"
-  },
-  {
-    "filterListId": 1859,
-    "iso6391": "ja"
-  },
-  {
-    "filterListId": 1860,
-    "iso6391": "ja"
-  },
-  {
-    "filterListId": 1861,
-    "iso6391": "ja"
-  },
-  {
-    "filterListId": 1862,
-    "iso6391": "ja"
-  },
-  {
-    "filterListId": 1863,
-    "iso6391": "ja"
-  },
-  {
     "filterListId": 1864,
     "iso6391": "si"
   },
@@ -2969,10 +2933,6 @@
   },
   {
     "filterListId": 2094,
-    "iso6391": "ja"
-  },
-  {
-    "filterListId": 2095,
     "iso6391": "ja"
   },
   {
@@ -3534,10 +3494,6 @@
   {
     "filterListId": 2278,
     "iso6391": "de"
-  },
-  {
-    "filterListId": 2282,
-    "iso6391": "ja"
   },
   {
     "filterListId": 2286,
