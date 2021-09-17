@@ -1,5 +1,9 @@
 [
   {
+    "filterListId": 1,
+    "maintainerId": 150
+  },
+  {
     "filterListId": 2,
     "maintainerId": 3
   },
