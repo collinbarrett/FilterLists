@@ -1,5 +1,13 @@
 [
   {
+    "description": "Add this if you use Yuki's uBlock Japanese filters with uBlock Origin on Firefox for Mobile.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "id": 1,
+    "licenseId": 8,
+    "name": "Yuki's uBlock Japanese filters - Mobile",
+    "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLScNeZhFrFZt9GhIVGdThGz7oyepcNRKuOi5PJDnsC-awxTeOQ/viewform"
+  },
+  {
     "description": "Mute is an AdBlock Plus filter for user comments. In the same way that AdBlock hides ads, AdBlock can use this filter to hide user-generated comments, allowing you to browse the Internet with less stupidity clawing at your eyeballs.",
     "homeUrl": "https://github.com/B-Con/mute",
     "id": 2,
@@ -13940,7 +13948,7 @@
     "id": 2081,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
-    "name": "Sabre Filters 2"
+    "name": "Yuki's Cookie Dialogue filters"
   },
   {
     "description": "This removes blog parts and ranking buttons on Japanese websites.",
