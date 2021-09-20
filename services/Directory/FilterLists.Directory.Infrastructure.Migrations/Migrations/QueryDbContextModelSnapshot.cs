@@ -16,7 +16,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 63)
-                .HasAnnotation("ProductVersion", "5.0.10")
+                .HasAnnotation("ProductVersion", "5.0.7")
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Dependent", b =>
@@ -127,15 +127,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.ToTable("FilterLists");
 
                     b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Description = "Add this if you use Yuki's uBlock Japanese filters with uBlock Origin on Firefox for Mobile.",
-                            HomeUrl = "https://github.com/Yuki2718/adblock",
-                            IssuesUrl = "https://github.com/Yuki2718/adblock/issues",
-                            LicenseId = 8,
-                            Name = "Yuki's uBlock Japanese filters - Mobile"
-                        },
                         new
                         {
                             Id = 2,
@@ -15789,7 +15780,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             HomeUrl = "https://github.com/Yuki2718/adblock",
                             IssuesUrl = "https://github.com/Yuki2718/adblock/issues",
                             LicenseId = 8,
-                            Name = "Yuki's Cookie Dialogue filters"
+                            Name = "Sabre Filters 2"
                         },
                         new
                         {
@@ -19776,11 +19767,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.ToTable("FilterListLanguages");
 
                     b.HasData(
-                        new
-                        {
-                            FilterListId = 1,
-                            Iso6391 = "ja"
-                        },
                         new
                         {
                             FilterListId = 6,
@@ -24513,11 +24499,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.ToTable("FilterListMaintainers");
 
                     b.HasData(
-                        new
-                        {
-                            FilterListId = 1,
-                            MaintainerId = 150
-                        },
                         new
                         {
                             FilterListId = 2,
@@ -31855,11 +31836,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.ToTable("FilterListSyntaxes");
 
                     b.HasData(
-                        new
-                        {
-                            FilterListId = 1,
-                            SyntaxId = 4
-                        },
                         new
                         {
                             FilterListId = 2,
@@ -42887,11 +42863,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.ToTable("FilterListTags");
 
                     b.HasData(
-                        new
-                        {
-                            FilterListId = 2,
-                            TagId = 2
-                        },
                         new
                         {
                             FilterListId = 2,
@@ -58921,14 +58892,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.ToTable("FilterListViewUrls");
 
                     b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            FilterListId = 1,
-                            Primariness = (short)1,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-mob.txt"
-                        },
                         new
                         {
                             Id = 2,
