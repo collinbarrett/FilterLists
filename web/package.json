@@ -16,7 +16,7 @@
     "customize-cra": "^1.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.1",
-    "less": "^4.1.1",
+    "less": "^4.1.2",
     "less-loader": "^7.3.0",
     "prettier": "^2.4.1",
     "react": "^17.0.2",
