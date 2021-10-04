@@ -17485,5 +17485,13 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Dandelion Sprout's and other adblocker lists' IPs"
+  },
+  {
+    "description": "Never enter the rabbit hole again - Blocks all video suggestions and distractions on YouTube, leaves Likes and Comments on",
+    "donateUrl": "https://ko-fi.com/hadig",
+    "homeUrl": "https://github.com/hadig/Focus-for-Youtube",
+    "id": 2535,
+    "issuesUrl": "https://github.com/hadig/Focus-for-Youtube/issues",
+    "name": "Focus for Youtube"
   }
 ]
