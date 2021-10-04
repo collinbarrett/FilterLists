@@ -16234,5 +16234,11 @@
     "id": 2750,
     "primariness": 4,
     "url": "https://downloads.vivaldi.com/easylist/easylist-current.txt"
+  },
+  {
+    "filterListId": 2535,
+    "id": 2751,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hadig/Focus-for-Youtube/master/focus4yt.txt"
   }
 ]
