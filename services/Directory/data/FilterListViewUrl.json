@@ -219,19 +219,19 @@
     "filterListId": 30,
     "id": 37,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PPB.txt"
   },
   {
     "filterListId": 30,
     "id": 38,
     "primariness": 2,
-    "url": "https://gitcdn.xyz/repo/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt"
+    "url": "https://gitcdn.xyz/repo/FiltersHeroes/PolishAnnoyanceFilters/master/PPB.txt"
   },
   {
     "filterListId": 30,
     "id": 39,
     "primariness": 3,
-    "url": "https://rawcdn.githack.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt"
+    "url": "https://rawcdn.githack.com/FiltersHeroes/PolishAnnoyanceFilters/master/PPB.txt"
   },
   {
     "filterListId": 31,
@@ -417,37 +417,37 @@
     "filterListId": 60,
     "id": 70,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/KADhosts/master/KADhosts.txt"
   },
   {
     "filterListId": 60,
     "id": 71,
     "primariness": 2,
-    "url": "https://gitcdn.xyz/repo/PolishFiltersTeam/KADhosts/master/KADhosts.txt"
+    "url": "https://gitcdn.xyz/repo/FiltersHeroes/KADhosts/master/KADhosts.txt"
   },
   {
     "filterListId": 60,
     "id": 72,
     "primariness": 3,
-    "url": "https://rawcdn.githack.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt"
+    "url": "https://rawcdn.githack.com/FiltersHeroes/KADhosts/master/KADhosts.txt"
   },
   {
     "filterListId": 61,
     "id": 73,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/master/KAD.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/KAD/master/KAD.txt"
   },
   {
     "filterListId": 61,
     "id": 74,
     "primariness": 2,
-    "url": "https://gitcdn.xyz/repo/PolishFiltersTeam/KAD/master/KAD.txt"
+    "url": "https://gitcdn.xyz/repo/FiltersHeroes/KAD/master/KAD.txt"
   },
   {
     "filterListId": 61,
     "id": 75,
     "primariness": 3,
-    "url": "https://rawcdn.githack.com/PolishFiltersTeam/KAD/master/KAD.txt"
+    "url": "https://rawcdn.githack.com/FiltersHeroes/KAD/master/KAD.txt"
   },
   {
     "filterListId": 62,
@@ -2901,19 +2901,19 @@
     "filterListId": 349,
     "id": 486,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/KADhosts/master/KADhosts_without_controversies.txt"
   },
   {
     "filterListId": 349,
     "id": 487,
     "primariness": 2,
-    "url": "https://gitcdn.xyz/repo/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt"
+    "url": "https://gitcdn.xyz/repo/FiltersHeroes/KADhosts/master/KADhosts_without_controversies.txt"
   },
   {
     "filterListId": 349,
     "id": 488,
     "primariness": 3,
-    "url": "https://rawcdn.githack.com/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt"
+    "url": "https://rawcdn.githack.com/FiltersHeroes/KADhosts/master/KADhosts_without_controversies.txt"
   },
   {
     "filterListId": 350,
@@ -3117,7 +3117,7 @@
     "filterListId": 390,
     "id": 522,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAntiAnnoyingSpecialSupplement/master/polish_rss_filters.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/PolishAntiAnnoyingSpecialSupplement/master/polish_rss_filters.txt"
   },
   {
     "filterListId": 391,
@@ -4017,55 +4017,55 @@
     "filterListId": 607,
     "id": 673,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_newsletters.txt"
   },
   {
     "filterListId": 608,
     "id": 674,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_arrows.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_arrows.txt"
   },
   {
     "filterListId": 609,
     "id": 675,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_push.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_push.txt"
   },
   {
     "filterListId": 610,
     "id": 676,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt"
   },
   {
     "filterListId": 611,
     "id": 677,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_backgrounds_self-advertising.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_backgrounds_self-advertising.txt"
   },
   {
     "filterListId": 612,
     "id": 678,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_pop-ups.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_pop-ups.txt"
   },
   {
     "filterListId": 613,
     "id": 679,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_contact_feedback_widgets.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_contact_feedback_widgets.txt"
   },
   {
     "filterListId": 614,
     "id": 680,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt"
   },
   {
     "filterListId": 616,
     "id": 681,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_other_widgets.txt"
   },
   {
     "filterListId": 617,
@@ -4401,7 +4401,7 @@
     "filterListId": 703,
     "id": 737,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADomains.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/KADhosts/master/KADomains.txt"
   },
   {
     "filterListId": 704,
@@ -11205,7 +11205,7 @@
     "filterListId": 1816,
     "id": 1884,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhole.txt"
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/KADhosts/master/KADhole.txt"
   },
   {
     "filterListId": 1817,

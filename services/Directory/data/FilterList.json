@@ -161,7 +161,7 @@
     "description": "Filters that hide and block pop-ups, widgets, newsletters, push notifications, arrows and other irritating elements on Polish websites (include Polish GDPR-Cookies Filters).",
     "homeUrl": "https://polishannoyancefilters.netlify.com",
     "id": 30,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
     "licenseId": 9,
     "name": "Polish Annoyance Filters",
     "submissionUrl": "https://polishannoyancefilters.netlify.com/issues"
@@ -296,7 +296,7 @@
     "emailAddress": "polishjarvis@gmail.com",
     "homeUrl": "https://kadantiscam.netlify.com/",
     "id": 60,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/KADhosts/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/KADhosts/issues",
     "licenseId": 8,
     "name": "KADhosts",
     "submissionUrl": "https://kadantiscam.netlify.com/#contact"
@@ -306,7 +306,7 @@
     "emailAddress": "polishjarvis@gmail.com",
     "homeUrl": "https://kadantiscam.netlify.com/",
     "id": 61,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/KAD/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/KAD/issues",
     "licenseId": 8,
     "name": "KAD - Scams",
     "submissionUrl": "https://kadantiscam.netlify.com/#contact"
@@ -2333,7 +2333,7 @@
     "emailAddress": "polishjarvis@gmail.com",
     "homeUrl": "https://kadantiscam.netlify.com/",
     "id": 349,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/KADhosts/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/KADhosts/issues",
     "licenseId": 8,
     "name": "KADHosts (without controversies)",
     "submissionUrl": "https://kadantiscam.netlify.com/#contact"
@@ -2615,9 +2615,9 @@
   },
   {
     "description": "Filters that hide and block RSS sections and leftovers from hidden newsletters combined with social elements on Polish-language websites (supplement for Polish Social Filters and Polish Annoyance Filters).",
-    "homeUrl": "https://github.com/PolishFiltersTeam/PolishAntiAnnoyingSpecialSupplement",
+    "homeUrl": "https://github.com/FiltersHeroes/PolishAntiAnnoyingSpecialSupplement",
     "id": 390,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAntiAnnoyingSpecialSupplement/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/PolishAntiAnnoyingSpecialSupplement/issues",
     "licenseId": 9,
     "name": "Polish Anti-Annoying Special Supplement"
   },
@@ -3696,81 +3696,81 @@
   },
   {
     "description": "Filters that hide and block newsletters (without pop-ups).",
-    "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+    "homeUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
     "id": 607,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Newsletters",
     "submissionUrl": "https://polishannoyancefilters.netlify.com/issues"
   },
   {
     "description": "Filters that hide and block arrows.",
-    "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+    "homeUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
     "id": 608,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Arrows",
     "submissionUrl": "https://polishannoyancefilters.netlify.com/issues"
   },
   {
     "description": "Filters that hide and block web push notifications.",
-    "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+    "homeUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
     "id": 609,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
     "licenseId": 9,
     "name": "Polish Annoyances Filters - Web Push Notifications",
     "submissionUrl": "https://polishannoyancefilters.netlify.com/issues"
   },
   {
     "description": "Filters that prevent videos from scrolling.",
-    "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+    "homeUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
     "id": 610,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Scrolling Videos",
     "submissionUrl": "https://polishannoyancefilters.netlify.com/issues"
   },
   {
     "description": "Filters that hide and block in-house ads.",
-    "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+    "homeUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
     "id": 611,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Backgrounds Containing Self-Advertising",
     "submissionUrl": "https://polishannoyancefilters.netlify.com/issues"
   },
   {
     "description": "Filters that hide and block pop-ups.",
-    "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+    "homeUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
     "id": 612,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Pop-ups",
     "submissionUrl": "https://polishannoyancefilters.netlify.com/issues"
   },
   {
     "description": "Filters that hide and block contact/feedback widgets.",
-    "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+    "homeUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
     "id": 613,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Contact/Feedback Widgets",
     "submissionUrl": "https://polishannoyancefilters.netlify.com/issues"
   },
   {
     "description": "Filters that remove internal tags that do not match the subject of the article, which are easily accidentally clicked. Inspired by Agora Tag Links Remove extension.",
-    "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+    "homeUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
     "id": 614,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Tagged Internal Links",
     "submissionUrl": "https://polishannoyancefilters.netlify.com/issues"
   },
   {
     "description": "Filters that hide and block various other elements.",
-    "homeUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+    "homeUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
     "id": 616,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
     "licenseId": 9,
     "name": "Polish Annoyance Filters - Other Elements",
     "submissionUrl": "https://polishannoyancefilters.netlify.com/issues"
@@ -4162,7 +4162,7 @@
     "emailAddress": "polishjarvis@gmail.com",
     "homeUrl": "https://kadantiscam.netlify.com/",
     "id": 703,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/KADhosts/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/KADhosts/issues",
     "licenseId": 8,
     "name": "KADomains",
     "submissionUrl": "https://kadantiscam.netlify.com/#contact"
@@ -12129,17 +12129,17 @@
     "name": "Anti-'PC component price hiders' List"
   },
   {
-    "description": "Additional regex list blocking scam and phishing Polish sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
+    "description": "Additional regex list blocking scam and phishing Polish sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/FiltersHeroes/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
     "emailAddress": "polishjarvis@gmail.com",
     "homeUrl": "https://kadantiscam.netlify.com/",
     "id": 1816,
-    "issuesUrl": "https://github.com/PolishFiltersTeam/KADhosts/issues",
+    "issuesUrl": "https://github.com/FiltersHeroes/KADhosts/issues",
     "licenseId": 8,
     "name": "KADhole",
     "submissionUrl": "https://kadantiscam.netlify.com/#contact"
   },
   {
-    "description": "Polish regex list blocking ads and tracking sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
+    "description": "Polish regex list blocking ads and tracking sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/FiltersHeroes/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
     "donateUrl": "https://patronite.pl/polskiefiltry",
     "emailAddress": "errors@certyficate.it",
     "homeUrl": "https://www.certyficate.it/",
@@ -12150,7 +12150,7 @@
     "submissionUrl": "https://www.certyficate.it/kontakt/"
   },
   {
-    "description": "Mmotti's regex list blocking ads and tracking sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
+    "description": "Mmotti's regex list blocking ads and tracking sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/FiltersHeroes/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
     "homeUrl": "https://github.com/mmotti/pihole-regex",
     "id": 1818,
     "issuesUrl": "https://github.com/mmotti/pihole-regex/issues",
