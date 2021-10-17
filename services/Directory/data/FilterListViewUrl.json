@@ -798,24 +798,6 @@
     "url": "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/filters.txt"
   },
   {
-    "filterListId": 90,
-    "id": 134,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt"
-  },
-  {
-    "filterListId": 90,
-    "id": 135,
-    "primariness": 2,
-    "url": "https://gitcdn.xyz/repo/uBlockOrigin/uAssets/master/filters/experimental.txt"
-  },
-  {
-    "filterListId": 90,
-    "id": 136,
-    "primariness": 3,
-    "url": "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/experimental.txt"
-  },
-  {
     "filterListId": 91,
     "id": 137,
     "primariness": 1,
@@ -1300,24 +1282,6 @@
     "id": 217,
     "primariness": 3,
     "url": "https://gitlab.com/StevenBlack/hosts/raw/master/data/StevenBlack/hosts"
-  },
-  {
-    "filterListId": 138,
-    "id": 218,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/StreamingAds/hosts"
-  },
-  {
-    "filterListId": 138,
-    "id": 219,
-    "primariness": 2,
-    "url": "https://gitcdn.xyz/repo/FadeMind/hosts.extras/master/StreamingAds/hosts"
-  },
-  {
-    "filterListId": 138,
-    "id": 220,
-    "primariness": 3,
-    "url": "https://gitcdn.link/repo/FadeMind/hosts.extras/master/StreamingAds/hosts"
   },
   {
     "filterListId": 139,
@@ -2400,18 +2364,6 @@
     "url": "https://easylist-downloads.adblockplus.org/easylistitaly+easylist.txt"
   },
   {
-    "filterListId": 270,
-    "id": 401,
-    "primariness": 1,
-    "url": "https://mirror1.malwaredomains.com/files/bulk_registrars.txt"
-  },
-  {
-    "filterListId": 271,
-    "id": 402,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt"
-  },
-  {
     "filterListId": 272,
     "id": 403,
     "primariness": 1,
@@ -2506,24 +2458,6 @@
     "id": 418,
     "primariness": 2,
     "url": "https://mirror.cedia.org.ec/malwaredomains/dynamic_dns.txt"
-  },
-  {
-    "filterListId": 286,
-    "id": 419,
-    "primariness": 1,
-    "url": "https://mirror1.malwaredomains.com/files/freewebhosts.txt"
-  },
-  {
-    "filterListId": 287,
-    "id": 420,
-    "primariness": 1,
-    "url": "https://mirror1.malwaredomains.com/files/justdomains"
-  },
-  {
-    "filterListId": 287,
-    "id": 421,
-    "primariness": 2,
-    "url": "https://mirror.cedia.org.ec/malwaredomains/justdomains"
   },
   {
     "filterListId": 288,
@@ -2632,18 +2566,6 @@
     "id": 439,
     "primariness": 1,
     "url": "https://feeds.dshield.org/block.txt"
-  },
-  {
-    "filterListId": 303,
-    "id": 440,
-    "primariness": 1,
-    "url": "https://mirror1.malwaredomains.com/files/url_shorteners.txt"
-  },
-  {
-    "filterListId": 304,
-    "id": 441,
-    "primariness": 1,
-    "url": "https://mirror1.malwaredomains.com/files/Skype-resolvers.txt"
   },
   {
     "filterListId": 305,
@@ -4308,18 +4230,6 @@
     "url": "http://www.urlvir.com/export-hosts/"
   },
   {
-    "filterListId": 685,
-    "id": 722,
-    "primariness": 1,
-    "url": "https://mirror1.malwaredomains.com/files/domains.hosts"
-  },
-  {
-    "filterListId": 685,
-    "id": 723,
-    "primariness": 2,
-    "url": "https://mirror.cedia.org.ec/malwaredomains/domains.hosts"
-  },
-  {
     "filterListId": 686,
     "id": 724,
     "primariness": 1,
@@ -4470,12 +4380,6 @@
     "url": "https://raw.githubusercontent.com/highsea/Hosts/master/host-include-appale/hosts"
   },
   {
-    "filterListId": 716,
-    "id": 749,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts"
-  },
-  {
     "filterListId": 717,
     "id": 750,
     "primariness": 1,
@@ -4582,12 +4486,6 @@
     "id": 767,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/NeeEoo/AdBlockNeeEoo/master/List.txt"
-  },
-  {
-    "filterListId": 732,
-    "id": 768,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/dariusworks/superblock/master/cleanersitesAiO.txt"
   },
   {
     "filterListId": 734,
@@ -5094,12 +4992,6 @@
     "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/YouTubeEvenMorePureVideoExperience.txt"
   },
   {
-    "filterListId": 820,
-    "id": 853,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/recipes/recipes_en.txt"
-  },
-  {
     "filterListId": 821,
     "id": 854,
     "primariness": 1,
@@ -5452,18 +5344,6 @@
     "id": 915,
     "primariness": 2,
     "url": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/hosts_facebook0.txt"
-  },
-  {
-    "filterListId": 867,
-    "id": 916,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/static/hosts_facebook0_noregionsv.txt"
-  },
-  {
-    "filterListId": 867,
-    "id": 917,
-    "primariness": 2,
-    "url": "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/static/hosts_facebook0_noregionsv.txt"
   },
   {
     "filterListId": 868,
@@ -8814,12 +8694,6 @@
     "url": "https://hblock.molinero.dev/hosts"
   },
   {
-    "filterListId": 1476,
-    "id": 1485,
-    "primariness": 1,
-    "url": "https://hblock.molinero.dev/hosts_android.zip"
-  },
-  {
     "filterListId": 1477,
     "id": 1486,
     "primariness": 1,
@@ -8842,12 +8716,6 @@
     "id": 1489,
     "primariness": 1,
     "url": "https://oooo.b-cdn.net/blahdns/rpz.txt"
-  },
-  {
-    "filterListId": 1481,
-    "id": 1490,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/jawz101/MobileAdTrackers/master/hosts"
   },
   {
     "filterListId": 1484,
@@ -9054,12 +8922,6 @@
     "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=bindconfig&showintro=1&mimetype=plaintext"
   },
   {
-    "filterListId": 1528,
-    "id": 1526,
-    "primariness": 1,
-    "url": "https://filters.adtidy.org/extension/chromium/filters/2_without_easylist.txt"
-  },
-  {
     "filterListId": 1529,
     "id": 1527,
     "primariness": 1,
@@ -9142,12 +9004,6 @@
     "id": 1540,
     "primariness": 1,
     "url": "https://easylist-downloads.adblockplus.org/exceptionrules.tpl"
-  },
-  {
-    "filterListId": 1542,
-    "id": 1541,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/adwarefilters.tpl"
   },
   {
     "filterListId": 1543,
@@ -9288,12 +9144,6 @@
     "url": "https://raw.githubusercontent.com/mtxadmin/ublock/master/it"
   },
   {
-    "filterListId": 1563,
-    "id": 1565,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt"
-  },
-  {
     "filterListId": 1564,
     "id": 1566,
     "primariness": 1,
@@ -9304,18 +9154,6 @@
     "id": 1567,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiCelebBirthList"
-  },
-  {
-    "filterListId": 1565,
-    "id": 1568,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GamestoreMovieRemover.txt"
-  },
-  {
-    "filterListId": 1565,
-    "id": 1569,
-    "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/GamestoreMovieRemover.txt"
   },
   {
     "filterListId": 1566,
@@ -10614,12 +10452,6 @@
     "url": "https://raw.githubusercontent.com/parseword/nolovia/master/skel/hosts-government-malware.txt"
   },
   {
-    "filterListId": 1726,
-    "id": 1786,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/callmenemo491/DodgySiteBlocker/master/DodgySiteBlocker.txt"
-  },
-  {
     "filterListId": 1727,
     "id": 1787,
     "primariness": 1,
@@ -11232,12 +11064,6 @@
     "url": "https://www.cruzit.com/xxwbl2txt.php"
   },
   {
-    "filterListId": 1823,
-    "id": 1889,
-    "primariness": 1,
-    "url": "http://www.unsubscore.com/blacklist.txt"
-  },
-  {
     "filterListId": 1824,
     "id": 1890,
     "primariness": 1,
@@ -11332,12 +11158,6 @@
     "id": 1905,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti%20Social"
-  },
-  {
-    "filterListId": 1839,
-    "id": 1906,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti%20Verizon"
   },
   {
     "filterListId": 1840,
@@ -11826,18 +11646,6 @@
     "url": "https://raw.githubusercontent.com/Th3M3/blocklists/master/tracking%26ads.list"
   },
   {
-    "filterListId": 1929,
-    "id": 1998,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianFanTranslations.txt"
-  },
-  {
-    "filterListId": 1929,
-    "id": 1999,
-    "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianFanTranslations.txt"
-  },
-  {
     "filterListId": 1930,
     "id": 2000,
     "primariness": 1,
@@ -11878,12 +11686,6 @@
     "id": 2006,
     "primariness": 1,
     "url": "https://infosec.cert-pa.it/analyze/listdomains.txt"
-  },
-  {
-    "filterListId": 1936,
-    "id": 2007,
-    "primariness": 1,
-    "url": "https://lists.hashdd.com/hashdd/vxvault-urllist/hosts"
   },
   {
     "filterListId": 1937,
@@ -12042,18 +11844,6 @@
     "url": "https://www.darklist.de/raw.php"
   },
   {
-    "filterListId": 1961,
-    "id": 2034,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/xorcan/hosts/master/xelement.txt"
-  },
-  {
-    "filterListId": 1962,
-    "id": 2035,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/xorcan/hosts/master/xips.txt"
-  },
-  {
     "filterListId": 1963,
     "id": 2036,
     "primariness": 1,
@@ -12082,18 +11872,6 @@
     "id": 2040,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/HaveIBeenPwnedPasteRemover.txt"
-  },
-  {
-    "filterListId": 1966,
-    "id": 2041,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/PornHubPureTrailMixExperience.txt"
-  },
-  {
-    "filterListId": 1966,
-    "id": 2042,
-    "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/PornHubPureTrailMixExperience.txt"
   },
   {
     "filterListId": 1967,
@@ -12402,12 +12180,6 @@
     "url": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti%20g00"
   },
   {
-    "filterListId": 1997,
-    "id": 2094,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti%20Third-Party%20HTTP"
-  },
-  {
     "filterListId": 1998,
     "id": 2095,
     "primariness": 1,
@@ -12510,12 +12282,6 @@
     "url": "https://raw.githubusercontent.com/blocklistproject/Lists/master/phishing.txt"
   },
   {
-    "filterListId": 2016,
-    "id": 2112,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/blocklistproject/Lists/master/spam.txt"
-  },
-  {
     "filterListId": 2017,
     "id": 2113,
     "primariness": 1,
@@ -12594,12 +12360,6 @@
     "url": "http://ipverse.net/ipblocks/data/countries/ro-ipv6.zone"
   },
   {
-    "filterListId": 2033,
-    "id": 2126,
-    "primariness": 1,
-    "url": "https://block.energized.pro/assets/sources/filter/blockzilla.txt"
-  },
-  {
     "filterListId": 2034,
     "id": 2127,
     "primariness": 1,
@@ -12646,18 +12406,6 @@
     "id": 2134,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersHostsIPv6.txt"
-  },
-  {
-    "filterListId": 2042,
-    "id": 2135,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/deviantJUNKfilter.txt"
-  },
-  {
-    "filterListId": 2042,
-    "id": 2136,
-    "primariness": 2,
-    "url": "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/deviantJUNKfilter.txt"
   },
   {
     "filterListId": 2043,
@@ -12934,12 +12682,6 @@
     "id": 2182,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt"
-  },
-  {
-    "filterListId": 2076,
-    "id": 2183,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylist-cookie.tpl"
   },
   {
     "filterListId": 2077,
@@ -13662,18 +13404,6 @@
     "url": "https://v.firebog.net/hosts/static/HPHosts/Hostspsh.txt"
   },
   {
-    "filterListId": 2179,
-    "id": 2317,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/wolfbeast/lunarblocklist/master/list/lunar-blocklist.txt"
-  },
-  {
-    "filterListId": 2179,
-    "id": 2318,
-    "primariness": 2,
-    "url": "https://blocklist.palemoon.org/ABL/lunar-blocklist.txt"
-  },
-  {
     "filterListId": 2180,
     "id": 2319,
     "primariness": 1,
@@ -14088,12 +13818,6 @@
     "url": "https://easylist-downloads.adblockplus.org/latvianlist-minified.txt"
   },
   {
-    "filterListId": 2249,
-    "id": 2389,
-    "primariness": 1,
-    "url": "https://hg.adblockplus.org/customfilterlists/raw-file/default/liste_ar-minified.txt"
-  },
-  {
     "filterListId": 2250,
     "id": 2390,
     "primariness": 1,
@@ -14146,12 +13870,6 @@
     "id": 2398,
     "primariness": 1,
     "url": "https://easylist-downloads.adblockplus.org/easylistchina-minified.tpl"
-  },
-  {
-    "filterListId": 2259,
-    "id": 2399,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylistczechandslovak-minified.tpl"
   },
   {
     "filterListId": 2260,
@@ -14394,12 +14112,6 @@
     "url": "https://raw.githubusercontent.com/hl2guide/DNS-Sinkhole-Lists-A2/master/typosquatting_blocklist.txt"
   },
   {
-    "filterListId": 2296,
-    "id": 2441,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt"
-  },
-  {
     "filterListId": 2297,
     "id": 2442,
     "primariness": 1,
@@ -14500,12 +14212,6 @@
     "id": 2458,
     "primariness": 2,
     "url": "https://kriskintel.com/ktip_corona.txt"
-  },
-  {
-    "filterListId": 2312,
-    "id": 2459,
-    "primariness": 1,
-    "url": "https://kriskintel.com/ktip_maze.txt"
   },
   {
     "filterListId": 2313,
@@ -15154,12 +14860,6 @@
     "id": 2568,
     "primariness": 1,
     "url": "http://blacklists.ntop.org/blacklist-ip.txt"
-  },
-  {
-    "filterListId": 2391,
-    "id": 2569,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti%20Nightcore"
   },
   {
     "filterListId": 2392,
