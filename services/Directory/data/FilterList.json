@@ -489,14 +489,6 @@
     "name": "uAssets Filters"
   },
   {
-    "description": "These filters are experimental and may cause breakage. They are being evaluated/fine-tuned for inclusion in the default set of filters.",
-    "homeUrl": "https://github.com/uBlockOrigin/uAssets",
-    "id": 90,
-    "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
-    "licenseId": 4,
-    "name": "uAssets Experimental"
-  },
-  {
     "description": "To block sites known for delivering adware/crapware. For sites documented to put users at risk of installing adware/crapware etc. The purpose is to at least ensure a user is warned of the risks ahead.",
     "homeUrl": "https://github.com/uBlockOrigin/uAssets",
     "id": 91,
@@ -765,15 +757,6 @@
     "issuesUrl": "https://github.com/StevenBlack/hosts/issues",
     "licenseId": 2,
     "name": "Steven Black's Hosts"
-  },
-  {
-    "description": "Streaming services ads sources",
-    "homeUrl": "https://github.com/FadeMind/hosts.extras",
-    "id": 138,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/FadeMind/hosts.extras/issues",
-    "licenseId": 2,
-    "name": "StreamingAds"
   },
   {
     "description": "The Spam404 domain blacklist is a regularly updated list of abusive domain names.",
@@ -1733,24 +1716,6 @@
     "name": "EasyList Italy + EasyList"
   },
   {
-    "description": "This is a list of free/bulk domain registration services, who register 2nd level domains for free or almost free.",
-    "donateUrl": "https://www.malwaredomains.com/?page_id=675",
-    "emailAddress": "malwaredomains@gmail.com",
-    "homeUrl": "https://www.malwaredomains.com/",
-    "id": 270,
-    "licenseId": 5,
-    "name": "DNS-BH Bulk Registrars"
-  },
-  {
-    "description": "This is a list of malware domains generated from malwaredomains.com data.",
-    "donateUrl": "https://www.malwaredomains.com/?page_id=675",
-    "emailAddress": "malwaredomains@gmail.com",
-    "homeUrl": "https://www.malwaredomains.com/",
-    "id": 271,
-    "licenseId": 5,
-    "name": "DNS-BH Adblock Plus Malware Domains Full"
-  },
-  {
     "description": "Blocks trackers.",
     "emailAddress": "support@disconnect.me",
     "homeUrl": "https://disconnect.me/trackerprotection",
@@ -1852,24 +1817,6 @@
     "id": 285,
     "licenseId": 5,
     "name": "DNS-BH Dynamic DNS"
-  },
-  {
-    "description": "This is a list of free web hosting services.",
-    "donateUrl": "https://www.malwaredomains.com/?page_id=675",
-    "emailAddress": "malwaredomains@gmail.com",
-    "homeUrl": "https://www.malwaredomains.com/",
-    "id": 286,
-    "licenseId": 5,
-    "name": "DNS-BH Free Web Hosts"
-  },
-  {
-    "description": "This is a list of malware domains.",
-    "donateUrl": "https://www.malwaredomains.com/?page_id=675",
-    "emailAddress": "malwaredomains@gmail.com",
-    "homeUrl": "https://www.malwaredomains.com/",
-    "id": 287,
-    "licenseId": 5,
-    "name": "DNS-BH Malware Domains"
   },
   {
     "description": "This is a list of long-lived, \"immortal,\" malware domains.",
@@ -1984,24 +1931,6 @@
     "id": 302,
     "licenseId": 25,
     "name": "DShield.org Recommended Block List"
-  },
-  {
-    "description": "This is a list of URL shorteners.",
-    "donateUrl": "https://www.malwaredomains.com/?page_id=675",
-    "emailAddress": "malwaredomains@gmail.com",
-    "homeUrl": "https://www.malwaredomains.com/",
-    "id": 303,
-    "licenseId": 5,
-    "name": "DNS-BH URL Shorteners"
-  },
-  {
-    "description": "A list of Skype resolvers.",
-    "donateUrl": "https://www.malwaredomains.com/?page_id=675",
-    "emailAddress": "malwaredomains@gmail.com",
-    "homeUrl": "https://www.malwaredomains.com/",
-    "id": 304,
-    "licenseId": 5,
-    "name": "DNS-BH Skype Resolvers"
   },
   {
     "description": "Official filter list file used for blocking ads on Czech and Slovak websites.",
@@ -4041,15 +3970,6 @@
     "name": "URLVir Active Malicious Hosts"
   },
   {
-    "description": "This is a list of malware domains.",
-    "donateUrl": "https://www.malwaredomains.com/?page_id=675",
-    "emailAddress": "malwaredomains@gmail.com",
-    "homeUrl": "https://www.malwaredomains.com/",
-    "id": 685,
-    "licenseId": 5,
-    "name": "DNS-BH Malware Domains (Hosts)"
-  },
-  {
     "donateUrl": "https://help.getadblock.com/support/solutions/articles/6000087900-where-can-i-pay-for-adblock-",
     "homeUrl": "https://getadblock.com/",
     "id": 686,
@@ -4239,13 +4159,6 @@
     "name": "High Sea Hosts"
   },
   {
-    "homeUrl": "https://github.com/lennylxx/ipv6-hosts",
-    "id": 716,
-    "issuesUrl": "https://github.com/lennylxx/ipv6-hosts/issues",
-    "licenseId": 2,
-    "name": "lennylxx IPv6 Hosts"
-  },
-  {
     "description": "The project does not make any profit, only for convenient browsing of some websites for study and research, please comply with local laws.",
     "homeUrl": "https://github.com/superliaoyong/hosts",
     "id": 717,
@@ -4342,17 +4255,6 @@
     "issuesUrl": "https://github.com/NeeEoo/AdBlockNeeEoo/issues",
     "licenseId": 5,
     "name": "AdBlockNeeEoo"
-  },
-  {
-    "description": "This is a blocklist (might not be ad specific) for ublock orgin and other blockers... Reason: Out of box nagware/pop up box less internet (also used by me)",
-    "donateUrl": "https://bads.team/ultrapage#donate",
-    "emailAddress": "hello@bads.team",
-    "homeUrl": "https://github.com/dariusworks/superblock",
-    "id": 732,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/dariusworks/superblock/issues",
-    "licenseId": 2,
-    "name": "BADS.TM Cleaner Sites List All In One"
   },
   {
     "description": "Filterlist that targeted to use on Gelbooru image board site.",
@@ -4906,13 +4808,6 @@
     "name": "YouTube: Even More Pure Video Experience"
   },
   {
-    "homeUrl": "https://github.com/uBlockOrigin/uAssets",
-    "id": 820,
-    "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
-    "licenseId": 4,
-    "name": "uMatrix - Rulesets for English websites"
-  },
-  {
     "emailAddress": "support@brave.com",
     "homeUrl": "https://github.com/brave/adblock-lists",
     "id": 821,
@@ -5258,14 +5153,6 @@
     "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?q=label%3A%22Hosts+File%22",
     "licenseId": 13,
     "name": "Facebook Zero Hosts Block"
-  },
-  {
-    "description": "This aim to block non-formal hosts that serve all Facebook contents and resources from alternative \"Free Basics\" servers that it happen when you're using on mobile data over the carrier that collaborate with Facebook to have THAT service! The static version will list related sites of Facebook under Free Baiscs (include internet.org) and regional CDN that begin with z-m- (scontent, static, video).",
-    "homeUrl": "https://github.com/kowith337/PersonalFilterListCollection",
-    "id": 867,
-    "issuesUrl": "https://github.com/kowith337/PersonalFilterListCollection/issues?q=label%3A%22Hosts+File%22",
-    "licenseId": 13,
-    "name": "Facebook Zero Hosts Block (Static)"
   },
   {
     "description": "Advertisement blocking.",
@@ -9253,18 +9140,6 @@
   },
   {
     "homeUrl": "https://hblock.molinero.dev/",
-    "id": 1475,
-    "licenseId": 2,
-    "name": "hBlock Hosts"
-  },
-  {
-    "homeUrl": "https://hblock.molinero.dev/",
-    "id": 1476,
-    "licenseId": 2,
-    "name": "hBlock Hosts for Android"
-  },
-  {
-    "homeUrl": "https://hblock.molinero.dev/",
     "id": 1477,
     "licenseId": 2,
     "name": "hBlock Hosts RPZ"
@@ -9288,13 +9163,6 @@
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
     "licenseId": 2,
     "name": "BlahDNS Blacklist (RPZ)"
-  },
-  {
-    "homeUrl": "https://github.com/jawz101/MobileAdTrackers",
-    "id": 1481,
-    "issuesUrl": "https://github.com/jawz101/MobileAdTrackers/issues",
-    "licenseId": 5,
-    "name": "jawz101 MobileAdTrackers"
   },
   {
     "homeUrl": "https://blocklist.site/",
@@ -9549,17 +9417,6 @@
     "policyUrl": "https://pgl.yoyo.org/as/policy.php"
   },
   {
-    "description": "Filter that enables removing of the ads from websites with English content or content in languages that lack separate AdGuard lists.",
-    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
-    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
-    "id": 1528,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
-    "licenseId": 40,
-    "name": "AdGuard Base Filter without EasyList (AdGuard for Chromium)",
-    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
-  },
-  {
     "homeUrl": "https://easylist.to/",
     "id": 1529,
     "issuesUrl": "https://github.com/easylist/KoreanList/issues",
@@ -9666,15 +9523,6 @@
     "issuesUrl": "https://github.com/easylist/easylist/issues",
     "licenseId": 4,
     "name": "Acceptable Ads (TPL)"
-  },
-  {
-    "emailAddress": "easylist@protonmail.com",
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 1542,
-    "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 4,
-    "name": "Adware Filters (TPL)"
   },
   {
     "forumUrl": "https://forums.lanik.us/",
@@ -9837,14 +9685,6 @@
     "name": "Yet another small uBlock filter list"
   },
   {
-    "description": "Hosts file for annoying ads",
-    "homeUrl": "https://github.com/xorcan/hosts",
-    "id": 1563,
-    "issuesUrl": "https://github.com/xorcan/hosts/issues",
-    "licenseId": 4,
-    "name": "xorcan Türk ad-list (Turkish)"
-  },
-  {
     "description": "We hear so much talk about \"fake news\" nowadays, but we never hear any talk about non-news, such as C-tier celebrities either expecting offspring or giving birth to such. This list will aid in removing such kinds of non-news.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
@@ -9853,16 +9693,6 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Anti-'Newsstories about celebs giving birth' List"
-  },
-  {
-    "description": "While it was admirable that places like GOG, Humble Bundle, and Steam began selling movies and books, their categories for such quickly became a dumping ground for useless indie filler. No one needs three book bundles a month about how to write JavaScript, nor do they need a cashgrab \"documentary\" about bronies. This list is for those who once again want to reclaim such stores in the name of videogames.",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "id": 1565,
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 35,
-    "name": "List for removing movies and books from videogame storefronts"
   },
   {
     "description": "This ad blocker list aims to block mobile ads which includes in-app ads.",
@@ -11125,14 +10955,6 @@
     "name": "Nolovia state-sponsored malware blacklist file"
   },
   {
-    "description": "This filter disables 'dodgy' sites My Way!",
-    "homeUrl": "https://github.com/callmenemo491/DodgySiteBlocker/",
-    "id": 1726,
-    "issuesUrl": "https://github.com/callmenemo491/DodgySiteBlocker/issues",
-    "licenseId": 2,
-    "name": "DodgySiteBlocker"
-  },
-  {
     "description": "Burner domains are short-lived domains, registered by criminals (under a phony name). Don't put legitimate domains here, even if they contain malware.",
     "homeUrl": "https://github.com/gwillem/magento-malware-scanner/",
     "id": 1727,
@@ -12166,19 +11988,6 @@
     "name": "Facebook Hosts"
   },
   {
-    "description": "The following list is individual IP Addresses that have attempted to attack our servers. These IP addresses are currently recommended as a DENY, REJECT or BLOCK on your firewalls.",
-    "donateUrl": "https://www.cruzit.com/hth.php",
-    "homeUrl": "https://www.cruzit.com/wbl.php",
-    "id": 1822,
-    "licenseId": 5,
-    "name": "Cruzit Server Blocklist"
-  },
-  {
-    "id": 1823,
-    "licenseId": 5,
-    "name": "Unsubscore Blacklist"
-  },
-  {
     "donateUrl": "bitcoin:1FzxJBxy3fJDv5PLGqbdN9TrQ79LE9UEtB",
     "homeUrl": "https://myip.ms/",
     "id": 1824,
@@ -12272,14 +12081,6 @@
     "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
     "licenseId": 11,
     "name": "Cybo's Anti Social"
-  },
-  {
-    "description": "A blocklist of ads, trackers, malware, and IP grabbers",
-    "homeUrl": "https://github.com/Cybo1927/Hosts",
-    "id": 1839,
-    "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
-    "licenseId": 11,
-    "name": "Cybo's Anti Verizon"
   },
   {
     "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO users should use the regular version instead.",
@@ -12834,17 +12635,6 @@
     "name": "Th3M3 Blocklists - Tracking & Ads"
   },
   {
-    "description": "I have a pretty long resumé when it comes to translating programs, apps, and websites; but what could be done with websites that don't accept uncommisioned translations or even any translations at all? The solution is of course to create an ungodly nightmare of a CSS style list for uBO and AdGuard, that uses a meticulously surrealistic CSS workaround to replace parts of existing site objects with new objects!",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "id": 1929,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 35,
-    "name": "Dandelion Sprout's Norwegian Fan Translations for Untranslatable Websites"
-  },
-  {
     "description": "Much like there's now lists for AdGuard Home and Pi-hole to block ads on smart-TVs, here's an attempt from me at doing the same for videogame consoles with AdGuard Home. Enjoy.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
@@ -12879,19 +12669,6 @@
     "id": 1934,
     "licenseId": 43,
     "name": "My Privacy DNS Matrix - Tracking"
-  },
-  {
-    "description": "The list contains domains (FQDN) collected over the last seven days by the web application. From any of these domains has been downloaded and analyzed a suspicious binary file.",
-    "homeUrl": "https://infosec.cert-pa.it/",
-    "id": 1935,
-    "licenseId": 5,
-    "name": "CERT-PA Domains"
-  },
-  {
-    "homeUrl": "https://hashdd.com/",
-    "id": 1936,
-    "licenseId": 5,
-    "name": "VXVault (Domains)"
   },
   {
     "description": "Fake online shops and a lot of other things are collected here.",
@@ -13057,25 +12834,6 @@
     "name": "RiiConnect24/Wiimmfi List for Users of AdGuard Home and Pi-Hole"
   },
   {
-    "description": "Darklist.de is an IP blacklist that uses multiple sensors to identify network attacks (e.g. SSH brute force) and spam incidents. All reports are evaluated and in case of too many incidents the responsible IP holder is informed to solve the problem. After reporting an incident as solved the IP is removed from the blacklist.",
-    "homeUrl": "https://www.darklist.de/",
-    "id": 1960,
-    "licenseId": 5,
-    "name": "DarklistDE IP Blacklist"
-  },
-  {
-    "homeUrl": "https://github.com/xorcan/hosts/",
-    "id": 1961,
-    "licenseId": 4,
-    "name": "xorcan Türk element-ad-list (Turkish)"
-  },
-  {
-    "homeUrl": "https://github.com/xorcan/hosts/",
-    "id": 1962,
-    "licenseId": 4,
-    "name": "xorcan Türk harmful ip-list (Turkish)"
-  },
-  {
     "description": "Filters to fix common issues with 9Anime and block malicious code",
     "homeUrl": "https://gitlab.com/Sorrow-San/9anime-adblock-filters/",
     "id": 1963,
@@ -13101,17 +12859,6 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Have I Been Pwned Paste Remover"
-  },
-  {
-    "description": "PornHub is a site full of distractions and things that you are quite literally not into. If you wish to focus on the things there that you really are into, you can use this list.",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "emailAddress": "imreeil42@gmail.com",
-    "homeUrl": "https://github.com/DandelionSprout/adfilt",
-    "id": 1966,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
-    "licenseId": 35,
-    "name": "PornHub: Pure Trail Mix Experience"
   },
   {
     "description": "This is a list to remove the kinds of ads that very few well-established international adblocker lists would want to remove, due to many of them not meeting those lists' strict criteria of what an ad actually is. So that's where this list comes into play.",
@@ -13378,13 +13125,6 @@
     "name": "Cybo's Anti-g00"
   },
   {
-    "homeUrl": "https://github.com/Cybo1927/Hosts",
-    "id": 1997,
-    "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
-    "licenseId": 11,
-    "name": "Cybo's Anti Third Party HTTP"
-  },
-  {
     "description": "Block maps, location analytics, and GPS services",
     "homeUrl": "https://github.com/Cybo1927/Hosts",
     "id": 1998,
@@ -13493,19 +13233,6 @@
   },
   {
     "homeUrl": "https://blocklist.site/",
-    "id": 2015,
-    "licenseId": 11,
-    "name": "Block List Project: Phishing"
-  },
-  {
-    "homeUrl": "https://blocklist.site/",
-    "id": 2016,
-    "isDeleted": true,
-    "licenseId": 11,
-    "name": "Block List Project: Spam"
-  },
-  {
-    "homeUrl": "https://blocklist.site/",
     "id": 2017,
     "licenseId": 11,
     "name": "Block List Project: Porn"
@@ -13584,19 +13311,6 @@
     "name": "IPverse IP address block lists - Ukraine IPv6"
   },
   {
-    "description": "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
-    "homeUrl": "http://ipverse.net/",
-    "id": 2032,
-    "licenseId": 5,
-    "name": "IPverse IP address block lists - Romania IPv6"
-  },
-  {
-    "id": 2033,
-    "isDeleted": true,
-    "licenseId": 5,
-    "name": "Blockzilla (Hosts)"
-  },
-  {
     "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
     "emailAddress": "easylist@protonmail.com",
     "homeUrl": "https://easylist.to/",
@@ -13650,15 +13364,6 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (IPv6 «Hosts»)"
-  },
-  {
-    "description": "A filter that blocks the thumbnails of users that upload junk or stuff in the wrong categories.",
-    "homeUrl": "https://github.com/lassekongo83/Frellwits-filter-lists",
-    "id": 2042,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/lassekongo83/Frellwits-filter-lists/issues",
-    "licenseId": 4,
-    "name": "deviantJUNKfilter"
   },
   {
     "description": "anti-AD is currently the highest-hitcount-filtering ad list in Chinese, which achieves accurate ad blocking and privacy protection. Now supports AdGuard Home, dnsmasq, Surge, Pi-Hole and other excellent network tools.",
@@ -13899,17 +13604,6 @@
     "issuesUrl": "https://github.com/Perflyst/PiHoleBlocklist/issues",
     "licenseId": 2,
     "name": "PiHole Blocklist SmartTV (AdGuard Home)"
-  },
-  {
-    "description": "This will remove cookie and privacy warnings.",
-    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
-    "emailAddress": "easylist@protonmail.com",
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 2076,
-    "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 16,
-    "name": "EasyList Cookie List (TPL)"
   },
   {
     "description": "A blocklist to protect users against untrustworthy retail sites.",
@@ -14631,20 +14325,6 @@
     "name": "hpHosts PHA"
   },
   {
-    "description": "Sites engaged in Phishing",
-    "id": 2178,
-    "licenseId": 5,
-    "name": "hpHosts PSH"
-  },
-  {
-    "description": "This is an Adblock Latitude filter subscription list; it blocks ads and some trackers.",
-    "homeUrl": "https://github.com/wolfbeast/lunarblocklist",
-    "id": 2179,
-    "issuesUrl": "https://github.com/wolfbeast/lunarblocklist/issues",
-    "licenseId": 2,
-    "name": "Lunar Blocklist"
-  },
-  {
     "homeUrl": "https://mirai.security.gives/",
     "id": 2180,
     "licenseId": 2,
@@ -15228,13 +14908,6 @@
     "name": "Latvian List (Minified)"
   },
   {
-    "description": "Liste AR is an EasyList affiliated filter list that specifically removes adverts on Arabic language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2249,
-    "licenseId": 6,
-    "name": "Liste AR (Minified)"
-  },
-  {
     "description": "Liste FR is an EasyList affiliated filter list that specifically removes adverts on French-language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
     "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
     "id": 2250,
@@ -15296,14 +14969,6 @@
     "id": 2258,
     "licenseId": 4,
     "name": "EasyList China (TPL Minified)"
-  },
-  {
-    "description": "Official filter list file used for blocking ads on Czech and Slovak websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2259,
-    "isDeleted": true,
-    "licenseId": 8,
-    "name": "EasyList Czech and Slovak (TPL Minified)"
   },
   {
     "description": "EasyList Dutch is an EasyList-affiliated filter list written by the EasyList author Famlam that specifically removes adverts on Dutch language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
@@ -15574,13 +15239,6 @@
     "name": "Typosquatting Blocklist"
   },
   {
-    "description": "For use with Adblock by Futuremind",
-    "homeUrl": "https://github.com/BlackJack8/iOSAdblockList/",
-    "id": 2296,
-    "issuesUrl": "https://github.com/BlackJack8/iOSAdblockList/issues",
-    "name": "Host-List for iOS ad blockers (Hosts)"
-  },
-  {
     "description": "For use with AdGuard Pro",
     "homeUrl": "https://github.com/BlackJack8/iOSAdblockList/",
     "id": 2297,
@@ -15686,14 +15344,6 @@
     "id": 2311,
     "licenseId": 5,
     "name": "The REScure Cyber Threat Intelligence Feed Project (beta) COVID-19 Malicious Domain"
-  },
-  {
-    "description": "REScure is an independent threat intelligence project which we undertook to enhance our understanding of distributed systems, their integration, the nature of threat intelligence and how to efficiently collect, store, consume, distribute it.",
-    "emailAddress": "hello@theprohack.com",
-    "homeUrl": "https://rescure.fruxlabs.com/",
-    "id": 2312,
-    "licenseId": 5,
-    "name": "The REScure Cyber Threat Intelligence Feed Project (beta) Maze Ransomware"
   },
   {
     "description": "List of malicious domains being leveraged by malware/malicious actors.",
@@ -16339,20 +15989,6 @@
     "id": 2389,
     "licenseId": 5,
     "name": "ntop Blacklists - Adblocking"
-  },
-  {
-    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L6CV86VX9V5QN",
-    "homeUrl": "https://www.ntop.org/",
-    "id": 2390,
-    "licenseId": 5,
-    "name": "ntop Blacklists - IP Blacklist"
-  },
-  {
-    "homeUrl": "https://github.com/Cybo1927/Hosts",
-    "id": 2391,
-    "issuesUrl": "https://github.com/Cybo1927/Hosts/issues",
-    "licenseId": 11,
-    "name": "Cybo's Anti Nightcore"
   },
   {
     "description": "Blocks Hungarian regional advertisements and trackers.",
