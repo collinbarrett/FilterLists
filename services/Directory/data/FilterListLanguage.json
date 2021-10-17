@@ -2280,14 +2280,6 @@
     "iso6391": "zh"
   },
   {
-    "filterListId": 1528,
-    "iso6391": "az"
-  },
-  {
-    "filterListId": 1528,
-    "iso6391": "en"
-  },
-  {
     "filterListId": 1529,
     "iso6391": "ko"
   },
@@ -2386,10 +2378,6 @@
   {
     "filterListId": 1562,
     "iso6391": "ru"
-  },
-  {
-    "filterListId": 1563,
-    "iso6391": "tr"
   },
   {
     "filterListId": 1566,
@@ -2812,10 +2800,6 @@
     "iso6391": "zh"
   },
   {
-    "filterListId": 1929,
-    "iso6391": "no"
-  },
-  {
     "filterListId": 1932,
     "iso6391": "en"
   },
@@ -2838,14 +2822,6 @@
   {
     "filterListId": 1949,
     "iso6391": "zh"
-  },
-  {
-    "filterListId": 1961,
-    "iso6391": "tr"
-  },
-  {
-    "filterListId": 1962,
-    "iso6391": "tr"
   },
   {
     "filterListId": 2041,
@@ -3348,10 +3324,6 @@
     "iso6391": "lv"
   },
   {
-    "filterListId": 2249,
-    "iso6391": "ar"
-  },
-  {
     "filterListId": 2250,
     "iso6391": "ar"
   },
@@ -3398,10 +3370,6 @@
   {
     "filterListId": 2258,
     "iso6391": "zh"
-  },
-  {
-    "filterListId": 2259,
-    "iso6391": "sk"
   },
   {
     "filterListId": 2260,
@@ -3670,10 +3638,6 @@
   {
     "filterListId": 2381,
     "iso6391": "zh"
-  },
-  {
-    "filterListId": 2391,
-    "iso6391": "ja"
   },
   {
     "filterListId": 2403,
