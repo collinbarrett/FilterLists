@@ -244,10 +244,6 @@
     "syntaxId": 4
   },
   {
-    "filterListId": 90,
-    "syntaxId": 4
-  },
-  {
     "filterListId": 91,
     "syntaxId": 4
   },
@@ -385,10 +381,6 @@
   },
   {
     "filterListId": 137,
-    "syntaxId": 1
-  },
-  {
-    "filterListId": 138,
     "syntaxId": 1
   },
   {
@@ -836,18 +828,6 @@
     "syntaxId": 3
   },
   {
-    "filterListId": 270,
-    "syntaxId": 4
-  },
-  {
-    "filterListId": 270,
-    "syntaxId": 16
-  },
-  {
-    "filterListId": 271,
-    "syntaxId": 28
-  },
-  {
     "filterListId": 272,
     "syntaxId": 2
   },
@@ -898,14 +878,6 @@
   {
     "filterListId": 285,
     "syntaxId": 4
-  },
-  {
-    "filterListId": 286,
-    "syntaxId": 2
-  },
-  {
-    "filterListId": 287,
-    "syntaxId": 2
   },
   {
     "filterListId": 288,
@@ -962,14 +934,6 @@
   {
     "filterListId": 302,
     "syntaxId": 15
-  },
-  {
-    "filterListId": 303,
-    "syntaxId": 2
-  },
-  {
-    "filterListId": 304,
-    "syntaxId": 2
   },
   {
     "filterListId": 305,
@@ -1980,10 +1944,6 @@
     "syntaxId": 2
   },
   {
-    "filterListId": 685,
-    "syntaxId": 1
-  },
-  {
     "filterListId": 686,
     "syntaxId": 3
   },
@@ -2080,10 +2040,6 @@
     "syntaxId": 14
   },
   {
-    "filterListId": 716,
-    "syntaxId": 37
-  },
-  {
     "filterListId": 717,
     "syntaxId": 14
   },
@@ -2133,10 +2089,6 @@
   },
   {
     "filterListId": 731,
-    "syntaxId": 3
-  },
-  {
-    "filterListId": 732,
     "syntaxId": 3
   },
   {
@@ -2448,10 +2400,6 @@
     "syntaxId": 3
   },
   {
-    "filterListId": 820,
-    "syntaxId": 51
-  },
-  {
     "filterListId": 821,
     "syntaxId": 47
   },
@@ -2613,10 +2561,6 @@
   },
   {
     "filterListId": 866,
-    "syntaxId": 1
-  },
-  {
-    "filterListId": 867,
     "syntaxId": 1
   },
   {
@@ -4760,10 +4704,6 @@
     "syntaxId": 1
   },
   {
-    "filterListId": 1476,
-    "syntaxId": 1
-  },
-  {
     "filterListId": 1477,
     "syntaxId": 25
   },
@@ -4778,10 +4718,6 @@
   {
     "filterListId": 1480,
     "syntaxId": 25
-  },
-  {
-    "filterListId": 1481,
-    "syntaxId": 1
   },
   {
     "filterListId": 1484,
@@ -4912,10 +4848,6 @@
     "syntaxId": 26
   },
   {
-    "filterListId": 1528,
-    "syntaxId": 6
-  },
-  {
     "filterListId": 1529,
     "syntaxId": 3
   },
@@ -4965,10 +4897,6 @@
   },
   {
     "filterListId": 1541,
-    "syntaxId": 10
-  },
-  {
-    "filterListId": 1542,
     "syntaxId": 10
   },
   {
@@ -5052,15 +4980,7 @@
     "syntaxId": 21
   },
   {
-    "filterListId": 1563,
-    "syntaxId": 1
-  },
-  {
     "filterListId": 1564,
-    "syntaxId": 3
-  },
-  {
-    "filterListId": 1565,
     "syntaxId": 3
   },
   {
@@ -5676,10 +5596,6 @@
     "syntaxId": 2
   },
   {
-    "filterListId": 1726,
-    "syntaxId": 3
-  },
-  {
     "filterListId": 1727,
     "syntaxId": 2
   },
@@ -6060,10 +5976,6 @@
     "syntaxId": 9
   },
   {
-    "filterListId": 1823,
-    "syntaxId": 9
-  },
-  {
     "filterListId": 1824,
     "syntaxId": 9
   },
@@ -6118,10 +6030,6 @@
   {
     "filterListId": 1838,
     "syntaxId": 3
-  },
-  {
-    "filterListId": 1839,
-    "syntaxId": 1
   },
   {
     "filterListId": 1840,
@@ -6412,10 +6320,6 @@
     "syntaxId": 2
   },
   {
-    "filterListId": 1929,
-    "syntaxId": 4
-  },
-  {
     "filterListId": 1930,
     "syntaxId": 28
   },
@@ -6437,10 +6341,6 @@
   },
   {
     "filterListId": 1935,
-    "syntaxId": 2
-  },
-  {
-    "filterListId": 1936,
     "syntaxId": 2
   },
   {
@@ -6556,14 +6456,6 @@
     "syntaxId": 34
   },
   {
-    "filterListId": 1961,
-    "syntaxId": 3
-  },
-  {
-    "filterListId": 1962,
-    "syntaxId": 9
-  },
-  {
     "filterListId": 1963,
     "syntaxId": 4
   },
@@ -6573,10 +6465,6 @@
   },
   {
     "filterListId": 1965,
-    "syntaxId": 3
-  },
-  {
-    "filterListId": 1966,
     "syntaxId": 3
   },
   {
@@ -6704,10 +6592,6 @@
     "syntaxId": 3
   },
   {
-    "filterListId": 1997,
-    "syntaxId": 4
-  },
-  {
     "filterListId": 1998,
     "syntaxId": 1
   },
@@ -6780,10 +6664,6 @@
     "syntaxId": 2
   },
   {
-    "filterListId": 2016,
-    "syntaxId": 2
-  },
-  {
     "filterListId": 2017,
     "syntaxId": 2
   },
@@ -6836,10 +6716,6 @@
     "syntaxId": 41
   },
   {
-    "filterListId": 2033,
-    "syntaxId": 1
-  },
-  {
     "filterListId": 2034,
     "syntaxId": 3
   },
@@ -6866,10 +6742,6 @@
   {
     "filterListId": 2041,
     "syntaxId": 36
-  },
-  {
-    "filterListId": 2042,
-    "syntaxId": 3
   },
   {
     "filterListId": 2043,
@@ -6998,10 +6870,6 @@
   {
     "filterListId": 2075,
     "syntaxId": 47
-  },
-  {
-    "filterListId": 2076,
-    "syntaxId": 3
   },
   {
     "filterListId": 2077,
@@ -7404,10 +7272,6 @@
     "syntaxId": 1
   },
   {
-    "filterListId": 2179,
-    "syntaxId": 3
-  },
-  {
     "filterListId": 2180,
     "syntaxId": 9
   },
@@ -7684,10 +7548,6 @@
     "syntaxId": 3
   },
   {
-    "filterListId": 2249,
-    "syntaxId": 3
-  },
-  {
     "filterListId": 2250,
     "syntaxId": 3
   },
@@ -7721,10 +7581,6 @@
   },
   {
     "filterListId": 2258,
-    "syntaxId": 10
-  },
-  {
-    "filterListId": 2259,
     "syntaxId": 10
   },
   {
@@ -7872,10 +7728,6 @@
     "syntaxId": 2
   },
   {
-    "filterListId": 2296,
-    "syntaxId": 1
-  },
-  {
     "filterListId": 2297,
     "syntaxId": 2
   },
@@ -7933,10 +7785,6 @@
   },
   {
     "filterListId": 2311,
-    "syntaxId": 2
-  },
-  {
-    "filterListId": 2312,
     "syntaxId": 2
   },
   {
@@ -8250,10 +8098,6 @@
   {
     "filterListId": 2390,
     "syntaxId": 9
-  },
-  {
-    "filterListId": 2391,
-    "syntaxId": 4
   },
   {
     "filterListId": 2392,
