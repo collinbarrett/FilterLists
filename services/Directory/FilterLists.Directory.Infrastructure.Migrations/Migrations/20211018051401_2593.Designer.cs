@@ -3,15 +3,17 @@ using System;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    partial class QueryDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211018051401_2593")]
+    partial class _2593
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -309,7 +311,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 30,
                             Description = "Filters that hide and block pop-ups, widgets, newsletters, push notifications, arrows and other irritating elements on Polish websites (include Polish GDPR-Cookies Filters).",
                             HomeUrl = "https://polishannoyancefilters.netlify.com/",
-                            IssuesUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
                             LicenseId = 9,
                             Name = "Polish Annoyance Filters",
                             SubmissionUrl = "https://polishannoyancefilters.netlify.com/issues"
@@ -461,7 +463,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Description = "Polish hosts list that protects against various types of scams and fraud, such as SMS subscriptions, viruses and fake online stores.",
                             EmailAddress = "polishjarvis@gmail.com",
                             HomeUrl = "https://kadantiscam.netlify.com/",
-                            IssuesUrl = "https://github.com/FiltersHeroes/KADhosts/issues",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/KADhosts/issues",
                             LicenseId = 8,
                             Name = "KADhosts",
                             SubmissionUrl = "https://kadantiscam.netlify.com/#contact"
@@ -472,7 +474,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Description = "A Polish filters that protects against various types of scams and fraud, such as SMS subscriptions, viruses and fake online stores.",
                             EmailAddress = "polishjarvis@gmail.com",
                             HomeUrl = "https://kadantiscam.netlify.com/",
-                            IssuesUrl = "https://github.com/FiltersHeroes/KAD/issues",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/KAD/issues",
                             LicenseId = 8,
                             Name = "KAD - Scams",
                             SubmissionUrl = "https://kadantiscam.netlify.com/#contact"
@@ -2659,7 +2661,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Description = "Polish hosts file for blocking scams. This list is currently same as KADhosts (both are now without controversies) and will reach EOL by the end of 2020, so it's recommended that you migrate to KADhosts.",
                             EmailAddress = "polishjarvis@gmail.com",
                             HomeUrl = "https://kadantiscam.netlify.com/",
-                            IssuesUrl = "https://github.com/FiltersHeroes/KADhosts/issues",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/KADhosts/issues",
                             LicenseId = 8,
                             Name = "KADHosts (without controversies)",
                             SubmissionUrl = "https://kadantiscam.netlify.com/#contact"
@@ -2974,8 +2976,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 390,
                             Description = "Filters that hide and block RSS sections and leftovers from hidden newsletters combined with social elements on Polish-language websites (supplement for Polish Social Filters and Polish Annoyance Filters).",
-                            HomeUrl = "https://github.com/FiltersHeroes/PolishAntiAnnoyingSpecialSupplement",
-                            IssuesUrl = "https://github.com/FiltersHeroes/PolishAntiAnnoyingSpecialSupplement/issues",
+                            HomeUrl = "https://github.com/PolishFiltersTeam/PolishAntiAnnoyingSpecialSupplement",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/PolishAntiAnnoyingSpecialSupplement/issues",
                             LicenseId = 9,
                             Name = "Polish Anti-Annoying Special Supplement"
                         },
@@ -4182,8 +4184,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 607,
                             Description = "Filters that hide and block newsletters (without pop-ups).",
-                            HomeUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
-                            IssuesUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
+                            HomeUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
                             LicenseId = 9,
                             Name = "Polish Annoyance Filters - Newsletters",
                             SubmissionUrl = "https://polishannoyancefilters.netlify.com/issues"
@@ -4192,8 +4194,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 608,
                             Description = "Filters that hide and block arrows.",
-                            HomeUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
-                            IssuesUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
+                            HomeUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
                             LicenseId = 9,
                             Name = "Polish Annoyance Filters - Arrows",
                             SubmissionUrl = "https://polishannoyancefilters.netlify.com/issues"
@@ -4202,8 +4204,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 609,
                             Description = "Filters that hide and block web push notifications.",
-                            HomeUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
-                            IssuesUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
+                            HomeUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
                             LicenseId = 9,
                             Name = "Polish Annoyances Filters - Web Push Notifications",
                             SubmissionUrl = "https://polishannoyancefilters.netlify.com/issues"
@@ -4212,8 +4214,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 610,
                             Description = "Filters that prevent videos from scrolling.",
-                            HomeUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
-                            IssuesUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
+                            HomeUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
                             LicenseId = 9,
                             Name = "Polish Annoyance Filters - Scrolling Videos",
                             SubmissionUrl = "https://polishannoyancefilters.netlify.com/issues"
@@ -4222,8 +4224,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 611,
                             Description = "Filters that hide and block in-house ads.",
-                            HomeUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
-                            IssuesUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
+                            HomeUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
                             LicenseId = 9,
                             Name = "Polish Annoyance Filters - Backgrounds Containing Self-Advertising",
                             SubmissionUrl = "https://polishannoyancefilters.netlify.com/issues"
@@ -4232,8 +4234,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 612,
                             Description = "Filters that hide and block pop-ups.",
-                            HomeUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
-                            IssuesUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
+                            HomeUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
                             LicenseId = 9,
                             Name = "Polish Annoyance Filters - Pop-ups",
                             SubmissionUrl = "https://polishannoyancefilters.netlify.com/issues"
@@ -4242,8 +4244,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 613,
                             Description = "Filters that hide and block contact/feedback widgets.",
-                            HomeUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
-                            IssuesUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
+                            HomeUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
                             LicenseId = 9,
                             Name = "Polish Annoyance Filters - Contact/Feedback Widgets",
                             SubmissionUrl = "https://polishannoyancefilters.netlify.com/issues"
@@ -4252,8 +4254,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 614,
                             Description = "Filters that remove internal tags that do not match the subject of the article, which are easily accidentally clicked. Inspired by Agora Tag Links Remove extension.",
-                            HomeUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
-                            IssuesUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
+                            HomeUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
                             LicenseId = 9,
                             Name = "Polish Annoyance Filters - Tagged Internal Links",
                             SubmissionUrl = "https://polishannoyancefilters.netlify.com/issues"
@@ -4262,8 +4264,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 616,
                             Description = "Filters that hide and block various other elements.",
-                            HomeUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters",
-                            IssuesUrl = "https://github.com/FiltersHeroes/PolishAnnoyanceFilters/issues",
+                            HomeUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues",
                             LicenseId = 9,
                             Name = "Polish Annoyance Filters - Other Elements",
                             SubmissionUrl = "https://polishannoyancefilters.netlify.com/issues"
@@ -4695,7 +4697,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Description = "A Polish domains list that protects against various types of scams and fraud, such as SMS subscriptions, viruses and fake online stores.",
                             EmailAddress = "polishjarvis@gmail.com",
                             HomeUrl = "https://kadantiscam.netlify.com/",
-                            IssuesUrl = "https://github.com/FiltersHeroes/KADhosts/issues",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/KADhosts/issues",
                             LicenseId = 8,
                             Name = "KADomains",
                             SubmissionUrl = "https://kadantiscam.netlify.com/#contact"
@@ -13546,10 +13548,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             Id = 1816,
-                            Description = "Additional regex list blocking scam and phishing Polish sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/FiltersHeroes/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
+                            Description = "Additional regex list blocking scam and phishing Polish sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
                             EmailAddress = "polishjarvis@gmail.com",
                             HomeUrl = "https://kadantiscam.netlify.com/",
-                            IssuesUrl = "https://github.com/FiltersHeroes/KADhosts/issues",
+                            IssuesUrl = "https://github.com/PolishFiltersTeam/KADhosts/issues",
                             LicenseId = 8,
                             Name = "KADhole",
                             SubmissionUrl = "https://kadantiscam.netlify.com/#contact"
@@ -13557,7 +13559,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             Id = 1817,
-                            Description = "Polish regex list blocking ads and tracking sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/FiltersHeroes/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
+                            Description = "Polish regex list blocking ads and tracking sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
                             DonateUrl = "https://patronite.pl/polskiefiltry",
                             EmailAddress = "errors@certyficate.it",
                             HomeUrl = "https://www.certyficate.it/",
@@ -13569,7 +13571,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             Id = 1818,
-                            Description = "Mmotti's regex list blocking ads and tracking sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/FiltersHeroes/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
+                            Description = "Mmotti's regex list blocking ads and tracking sites for Pi-hole. To install it, you can manually add entries to regex.list file or use Regex Lists Installer for Pi-hole (more at https://github.com/PolishFiltersTeam/ScriptsPlayground/blob/master/Readme_RLI_for_Pi-hole.md).",
                             HomeUrl = "https://github.com/mmotti/pihole-regex",
                             IssuesUrl = "https://github.com/mmotti/pihole-regex/issues",
                             LicenseId = 5,
@@ -58267,7 +58269,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 30,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PPB.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt"
                         },
                         new
                         {
@@ -58275,7 +58277,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 30,
                             Primariness = (short)2,
                             SegmentNumber = (short)0,
-                            Url = "https://gitcdn.xyz/repo/FiltersHeroes/PolishAnnoyanceFilters/master/PPB.txt"
+                            Url = "https://gitcdn.xyz/repo/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt"
                         },
                         new
                         {
@@ -58283,7 +58285,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 30,
                             Primariness = (short)3,
                             SegmentNumber = (short)0,
-                            Url = "https://rawcdn.githack.com/FiltersHeroes/PolishAnnoyanceFilters/master/PPB.txt"
+                            Url = "https://rawcdn.githack.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PPB.txt"
                         },
                         new
                         {
@@ -58531,7 +58533,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 60,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/KADhosts/master/KADhosts.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt"
                         },
                         new
                         {
@@ -58539,7 +58541,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 60,
                             Primariness = (short)2,
                             SegmentNumber = (short)0,
-                            Url = "https://gitcdn.xyz/repo/FiltersHeroes/KADhosts/master/KADhosts.txt"
+                            Url = "https://gitcdn.xyz/repo/PolishFiltersTeam/KADhosts/master/KADhosts.txt"
                         },
                         new
                         {
@@ -58547,7 +58549,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 60,
                             Primariness = (short)3,
                             SegmentNumber = (short)0,
-                            Url = "https://rawcdn.githack.com/FiltersHeroes/KADhosts/master/KADhosts.txt"
+                            Url = "https://rawcdn.githack.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt"
                         },
                         new
                         {
@@ -58555,7 +58557,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 61,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/KAD/master/KAD.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/KAD/master/KAD.txt"
                         },
                         new
                         {
@@ -58563,7 +58565,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 61,
                             Primariness = (short)2,
                             SegmentNumber = (short)0,
-                            Url = "https://gitcdn.xyz/repo/FiltersHeroes/KAD/master/KAD.txt"
+                            Url = "https://gitcdn.xyz/repo/PolishFiltersTeam/KAD/master/KAD.txt"
                         },
                         new
                         {
@@ -58571,7 +58573,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 61,
                             Primariness = (short)3,
                             SegmentNumber = (short)0,
-                            Url = "https://rawcdn.githack.com/FiltersHeroes/KAD/master/KAD.txt"
+                            Url = "https://rawcdn.githack.com/PolishFiltersTeam/KAD/master/KAD.txt"
                         },
                         new
                         {
@@ -61739,7 +61741,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 349,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/KADhosts/master/KADhosts_without_controversies.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt"
                         },
                         new
                         {
@@ -61747,7 +61749,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 349,
                             Primariness = (short)2,
                             SegmentNumber = (short)0,
-                            Url = "https://gitcdn.xyz/repo/FiltersHeroes/KADhosts/master/KADhosts_without_controversies.txt"
+                            Url = "https://gitcdn.xyz/repo/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt"
                         },
                         new
                         {
@@ -61755,7 +61757,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 349,
                             Primariness = (short)3,
                             SegmentNumber = (short)0,
-                            Url = "https://rawcdn.githack.com/FiltersHeroes/KADhosts/master/KADhosts_without_controversies.txt"
+                            Url = "https://rawcdn.githack.com/PolishFiltersTeam/KADhosts/master/KADhosts_without_controversies.txt"
                         },
                         new
                         {
@@ -62027,7 +62029,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 390,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/PolishAntiAnnoyingSpecialSupplement/master/polish_rss_filters.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAntiAnnoyingSpecialSupplement/master/polish_rss_filters.txt"
                         },
                         new
                         {
@@ -63227,7 +63229,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 607,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_newsletters.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_newsletters.txt"
                         },
                         new
                         {
@@ -63235,7 +63237,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 608,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_arrows.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_arrows.txt"
                         },
                         new
                         {
@@ -63243,7 +63245,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 609,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_push.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_push.txt"
                         },
                         new
                         {
@@ -63251,7 +63253,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 610,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_scrolling_videos.txt"
                         },
                         new
                         {
@@ -63259,7 +63261,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 611,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_backgrounds_self-advertising.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_backgrounds_self-advertising.txt"
                         },
                         new
                         {
@@ -63267,7 +63269,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 612,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_pop-ups.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_pop-ups.txt"
                         },
                         new
                         {
@@ -63275,7 +63277,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 613,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_contact_feedback_widgets.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_contact_feedback_widgets.txt"
                         },
                         new
                         {
@@ -63283,7 +63285,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 614,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_tagged_internal_links.txt"
                         },
                         new
                         {
@@ -63291,7 +63293,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 616,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/PolishAnnoyanceFilters/master/PAF_other_widgets.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/PolishAnnoyanceFilters/master/PAF_other_widgets.txt"
                         },
                         new
                         {
@@ -63723,7 +63725,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 703,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/KADhosts/master/KADomains.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADomains.txt"
                         },
                         new
                         {
@@ -72691,7 +72693,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             FilterListId = 1816,
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/FiltersHeroes/KADhosts/master/KADhole.txt"
+                            Url = "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhole.txt"
                         },
                         new
                         {
@@ -80887,8 +80889,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 34,
                             EmailAddress = "polishjarvis@gmail.com",
-                            Name = "Filters Heroes",
-                            Url = "https://github.com/FiltersHeroes/"
+                            Name = "Polish Filters Team",
+                            Url = "https://github.com/PolishFiltersTeam/"
                         },
                         new
                         {
