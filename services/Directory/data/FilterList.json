@@ -14325,6 +14325,14 @@
     "name": "hpHosts PHA"
   },
   {
+    "description": "This is an Adblock Latitude filter subscription list; it blocks ads and some trackers.",
+    "homeUrl": "https://repo.palemoon.org/Moonchild/lunarblocklist",
+    "id": 2179,
+    "issuesUrl": "https://repo.palemoon.org/Moonchild/lunarblocklist/issues",
+    "licenseId": 2,
+    "name": "Lunar Blocklist"
+  },
+  {
     "homeUrl": "https://mirai.security.gives/",
     "id": 2180,
     "licenseId": 2,
