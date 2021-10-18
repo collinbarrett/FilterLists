@@ -13404,6 +13404,12 @@
     "url": "https://v.firebog.net/hosts/static/HPHosts/Hostspsh.txt"
   },
   {
+    "filterListId": 2179,
+    "id": 2318,
+    "primariness": 1,
+    "url": "https://blocklist.palemoon.org/ABL/lunar-blocklist.txt"
+  },
+  {
     "filterListId": 2180,
     "id": 2319,
     "primariness": 1,
