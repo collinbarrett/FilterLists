@@ -679,6 +679,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 90,
+                            Description = "These filters are experimental and may cause breakage. They are being evaluated/fine-tuned for inclusion in the default set of filters.",
+                            HomeUrl = "https://github.com/uBlockOrigin/uAssets",
+                            IssuesUrl = "https://github.com/uBlockOrigin/uAssets/issues",
+                            LicenseId = 4,
+                            Name = "uAssets Experimental"
+                        },
+                        new
+                        {
                             Id = 91,
                             Description = "To block sites known for delivering adware/crapware. For sites documented to put users at risk of installing adware/crapware etc. The purpose is to at least ensure a user is warned of the risks ahead.",
                             HomeUrl = "https://github.com/uBlockOrigin/uAssets",
@@ -981,6 +990,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/StevenBlack/hosts/issues",
                             LicenseId = 2,
                             Name = "Steven Black's Hosts"
+                        },
+                        new
+                        {
+                            Id = 138,
+                            Description = "Streaming services ads sources",
+                            HomeUrl = "https://github.com/FadeMind/hosts.extras",
+                            IssuesUrl = "https://github.com/FadeMind/hosts.extras/issues",
+                            LicenseId = 2,
+                            Name = "StreamingAds"
                         },
                         new
                         {
@@ -2048,6 +2066,26 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 270,
+                            Description = "This is a list of free/bulk domain registration services, who register 2nd level domains for free or almost free.",
+                            DonateUrl = "https://www.malwaredomains.com/?page_id=675",
+                            EmailAddress = "malwaredomains@gmail.com",
+                            HomeUrl = "https://www.malwaredomains.com/",
+                            LicenseId = 5,
+                            Name = "DNS-BH Bulk Registrars"
+                        },
+                        new
+                        {
+                            Id = 271,
+                            Description = "This is a list of malware domains generated from malwaredomains.com data.",
+                            DonateUrl = "https://www.malwaredomains.com/?page_id=675",
+                            EmailAddress = "malwaredomains@gmail.com",
+                            HomeUrl = "https://www.malwaredomains.com/",
+                            LicenseId = 5,
+                            Name = "DNS-BH Adblock Plus Malware Domains Full"
+                        },
+                        new
+                        {
                             Id = 272,
                             Description = "Blocks trackers.",
                             EmailAddress = "support@disconnect.me",
@@ -2161,6 +2199,26 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             HomeUrl = "https://www.malwaredomains.com/",
                             LicenseId = 5,
                             Name = "DNS-BH Dynamic DNS"
+                        },
+                        new
+                        {
+                            Id = 286,
+                            Description = "This is a list of free web hosting services.",
+                            DonateUrl = "https://www.malwaredomains.com/?page_id=675",
+                            EmailAddress = "malwaredomains@gmail.com",
+                            HomeUrl = "https://www.malwaredomains.com/",
+                            LicenseId = 5,
+                            Name = "DNS-BH Free Web Hosts"
+                        },
+                        new
+                        {
+                            Id = 287,
+                            Description = "This is a list of malware domains.",
+                            DonateUrl = "https://www.malwaredomains.com/?page_id=675",
+                            EmailAddress = "malwaredomains@gmail.com",
+                            HomeUrl = "https://www.malwaredomains.com/",
+                            LicenseId = 5,
+                            Name = "DNS-BH Malware Domains"
                         },
                         new
                         {
@@ -2289,6 +2347,26 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             HomeUrl = "https://dshield.org/suspicious_domains.html",
                             LicenseId = 25,
                             Name = "DShield.org Recommended Block List"
+                        },
+                        new
+                        {
+                            Id = 303,
+                            Description = "This is a list of URL shorteners.",
+                            DonateUrl = "https://www.malwaredomains.com/?page_id=675",
+                            EmailAddress = "malwaredomains@gmail.com",
+                            HomeUrl = "https://www.malwaredomains.com/",
+                            LicenseId = 5,
+                            Name = "DNS-BH URL Shorteners"
+                        },
+                        new
+                        {
+                            Id = 304,
+                            Description = "A list of Skype resolvers.",
+                            DonateUrl = "https://www.malwaredomains.com/?page_id=675",
+                            EmailAddress = "malwaredomains@gmail.com",
+                            HomeUrl = "https://www.malwaredomains.com/",
+                            LicenseId = 5,
+                            Name = "DNS-BH Skype Resolvers"
                         },
                         new
                         {
@@ -4570,6 +4648,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 685,
+                            Description = "This is a list of malware domains.",
+                            DonateUrl = "https://www.malwaredomains.com/?page_id=675",
+                            EmailAddress = "malwaredomains@gmail.com",
+                            HomeUrl = "https://www.malwaredomains.com/",
+                            LicenseId = 5,
+                            Name = "DNS-BH Malware Domains (Hosts)"
+                        },
+                        new
+                        {
                             Id = 686,
                             DonateUrl = "https://help.getadblock.com/support/solutions/articles/6000087900-where-can-i-pay-for-adblock-",
                             HomeUrl = "https://getadblock.com/",
@@ -4783,6 +4871,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 716,
+                            HomeUrl = "https://github.com/lennylxx/ipv6-hosts",
+                            IssuesUrl = "https://github.com/lennylxx/ipv6-hosts/issues",
+                            LicenseId = 2,
+                            Name = "lennylxx IPv6 Hosts"
+                        },
+                        new
+                        {
                             Id = 717,
                             Description = "The project does not make any profit, only for convenient browsing of some websites for study and research, please comply with local laws.",
                             HomeUrl = "https://github.com/superliaoyong/hosts",
@@ -4891,6 +4987,17 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/NeeEoo/AdBlockNeeEoo/issues",
                             LicenseId = 5,
                             Name = "AdBlockNeeEoo"
+                        },
+                        new
+                        {
+                            Id = 732,
+                            Description = "This is a blocklist (might not be ad specific) for ublock orgin and other blockers... Reason: Out of box nagware/pop up box less internet (also used by me)",
+                            DonateUrl = "https://bads.team/ultrapage#donate",
+                            EmailAddress = "hello@bads.team",
+                            HomeUrl = "https://github.com/dariusworks/superblock",
+                            IssuesUrl = "https://github.com/dariusworks/superblock/issues",
+                            LicenseId = 2,
+                            Name = "BADS.TM Cleaner Sites List All In One"
                         },
                         new
                         {
@@ -5522,6 +5629,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 820,
+                            HomeUrl = "https://github.com/uBlockOrigin/uAssets",
+                            IssuesUrl = "https://github.com/uBlockOrigin/uAssets/issues",
+                            LicenseId = 4,
+                            Name = "uMatrix - Rulesets for English websites"
+                        },
+                        new
+                        {
                             Id = 821,
                             EmailAddress = "support@brave.com",
                             HomeUrl = "https://github.com/brave/adblock-lists",
@@ -5906,6 +6021,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/kowith337/PersonalFilterListCollection/issues?q=label%3A\"Hosts+File\"",
                             LicenseId = 13,
                             Name = "Facebook Zero Hosts Block"
+                        },
+                        new
+                        {
+                            Id = 867,
+                            Description = "This aim to block non-formal hosts that serve all Facebook contents and resources from alternative \"Free Basics\" servers that it happen when you're using on mobile data over the carrier that collaborate with Facebook to have THAT service! The static version will list related sites of Facebook under Free Baiscs (include internet.org) and regional CDN that begin with z-m- (scontent, static, video).",
+                            HomeUrl = "https://github.com/kowith337/PersonalFilterListCollection",
+                            IssuesUrl = "https://github.com/kowith337/PersonalFilterListCollection/issues?q=label%3A\"Hosts+File\"",
+                            LicenseId = 13,
+                            Name = "Facebook Zero Hosts Block (Static)"
                         },
                         new
                         {
@@ -10426,6 +10550,20 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 1475,
+                            HomeUrl = "https://hblock.molinero.dev/",
+                            LicenseId = 2,
+                            Name = "hBlock Hosts"
+                        },
+                        new
+                        {
+                            Id = 1476,
+                            HomeUrl = "https://hblock.molinero.dev/",
+                            LicenseId = 2,
+                            Name = "hBlock Hosts for Android"
+                        },
+                        new
+                        {
                             Id = 1477,
                             HomeUrl = "https://hblock.molinero.dev/",
                             LicenseId = 2,
@@ -10453,6 +10591,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/ookangzheng/blahdns/issues",
                             LicenseId = 2,
                             Name = "BlahDNS Blacklist (RPZ)"
+                        },
+                        new
+                        {
+                            Id = 1481,
+                            HomeUrl = "https://github.com/jawz101/MobileAdTrackers",
+                            IssuesUrl = "https://github.com/jawz101/MobileAdTrackers/issues",
+                            LicenseId = 5,
+                            Name = "jawz101 MobileAdTrackers"
                         },
                         new
                         {
@@ -10742,6 +10888,17 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 1528,
+                            Description = "Filter that enables removing of the ads from websites with English content or content in languages that lack separate AdGuard lists.",
+                            ForumUrl = "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+                            HomeUrl = "https://github.com/AdguardTeam/AdguardFilters",
+                            IssuesUrl = "https://github.com/AdguardTeam/AdguardFilters/issues",
+                            LicenseId = 40,
+                            Name = "AdGuard Base Filter without EasyList (AdGuard for Chromium)",
+                            PolicyUrl = "https://kb.adguard.com/en/general/adguard-filter-policy"
+                        },
+                        new
+                        {
                             Id = 1529,
                             HomeUrl = "https://easylist.to/",
                             IssuesUrl = "https://github.com/easylist/KoreanList/issues",
@@ -10860,6 +11017,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/easylist/easylist/issues",
                             LicenseId = 4,
                             Name = "Acceptable Ads (TPL)"
+                        },
+                        new
+                        {
+                            Id = 1542,
+                            EmailAddress = "easylist@protonmail.com",
+                            ForumUrl = "https://forums.lanik.us/",
+                            HomeUrl = "https://easylist.to/",
+                            IssuesUrl = "https://github.com/easylist/easylist/issues",
+                            LicenseId = 4,
+                            Name = "Adware Filters (TPL)"
                         },
                         new
                         {
@@ -11042,6 +11209,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 1563,
+                            Description = "Hosts file for annoying ads",
+                            HomeUrl = "https://github.com/xorcan/hosts",
+                            IssuesUrl = "https://github.com/xorcan/hosts/issues",
+                            LicenseId = 4,
+                            Name = "xorcan Türk ad-list (Turkish)"
+                        },
+                        new
+                        {
                             Id = 1564,
                             Description = "We hear so much talk about \"fake news\" nowadays, but we never hear any talk about non-news, such as C-tier celebrities either expecting offspring or giving birth to such. This list will aid in removing such kinds of non-news.",
                             DonateUrl = "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
@@ -11050,6 +11226,17 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
                             LicenseId = 35,
                             Name = "Anti-'Newsstories about celebs giving birth' List"
+                        },
+                        new
+                        {
+                            Id = 1565,
+                            Description = "While it was admirable that places like GOG, Humble Bundle, and Steam began selling movies and books, their categories for such quickly became a dumping ground for useless indie filler. No one needs three book bundles a month about how to write JavaScript, nor do they need a cashgrab \"documentary\" about bronies. This list is for those who once again want to reclaim such stores in the name of videogames.",
+                            DonateUrl = "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+                            EmailAddress = "imreeil42@gmail.com",
+                            HomeUrl = "https://github.com/DandelionSprout/adfilt",
+                            IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
+                            LicenseId = 35,
+                            Name = "List for removing movies and books from videogame storefronts"
                         },
                         new
                         {
@@ -12462,6 +12649,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 1726,
+                            Description = "This filter disables 'dodgy' sites My Way!",
+                            HomeUrl = "https://github.com/callmenemo491/DodgySiteBlocker/",
+                            IssuesUrl = "https://github.com/callmenemo491/DodgySiteBlocker/issues",
+                            LicenseId = 2,
+                            Name = "DodgySiteBlocker"
+                        },
+                        new
+                        {
                             Id = 1727,
                             Description = "Burner domains are short-lived domains, registered by criminals (under a phony name). Don't put legitimate domains here, even if they contain malware.",
                             HomeUrl = "https://github.com/gwillem/magento-malware-scanner/",
@@ -13586,6 +13782,21 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 1822,
+                            Description = "The following list is individual IP Addresses that have attempted to attack our servers. These IP addresses are currently recommended as a DENY, REJECT or BLOCK on your firewalls.",
+                            DonateUrl = "https://www.cruzit.com/hth.php",
+                            HomeUrl = "https://www.cruzit.com/wbl.php",
+                            LicenseId = 5,
+                            Name = "Cruzit Server Blocklist"
+                        },
+                        new
+                        {
+                            Id = 1823,
+                            LicenseId = 5,
+                            Name = "Unsubscore Blacklist"
+                        },
+                        new
+                        {
                             Id = 1824,
                             DonateUrl = "bitcoin:1FzxJBxy3fJDv5PLGqbdN9TrQ79LE9UEtB",
                             HomeUrl = "https://myip.ms/",
@@ -13691,6 +13902,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/Cybo1927/Hosts/issues",
                             LicenseId = 11,
                             Name = "Cybo's Anti Social"
+                        },
+                        new
+                        {
+                            Id = 1839,
+                            Description = "A blocklist of ads, trackers, malware, and IP grabbers",
+                            HomeUrl = "https://github.com/Cybo1927/Hosts",
+                            IssuesUrl = "https://github.com/Cybo1927/Hosts/issues",
+                            LicenseId = 11,
+                            Name = "Cybo's Anti Verizon"
                         },
                         new
                         {
@@ -14316,6 +14536,17 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 1929,
+                            Description = "I have a pretty long resumé when it comes to translating programs, apps, and websites; but what could be done with websites that don't accept uncommisioned translations or even any translations at all? The solution is of course to create an ungodly nightmare of a CSS style list for uBO and AdGuard, that uses a meticulously surrealistic CSS workaround to replace parts of existing site objects with new objects!",
+                            DonateUrl = "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+                            EmailAddress = "imreeil42@gmail.com",
+                            HomeUrl = "https://github.com/DandelionSprout/adfilt",
+                            IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
+                            LicenseId = 35,
+                            Name = "Dandelion Sprout's Norwegian Fan Translations for Untranslatable Websites"
+                        },
+                        new
+                        {
                             Id = 1930,
                             Description = "Much like there's now lists for AdGuard Home and Pi-hole to block ads on smart-TVs, here's an attempt from me at doing the same for videogame consoles with AdGuard Home. Enjoy.",
                             DonateUrl = "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
@@ -14354,6 +14585,21 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             HomeUrl = "https://gitlab.com/my-privacy-dns/matrix/matrix/",
                             LicenseId = 43,
                             Name = "My Privacy DNS Matrix - Tracking"
+                        },
+                        new
+                        {
+                            Id = 1935,
+                            Description = "The list contains domains (FQDN) collected over the last seven days by the web application. From any of these domains has been downloaded and analyzed a suspicious binary file.",
+                            HomeUrl = "https://infosec.cert-pa.it/",
+                            LicenseId = 5,
+                            Name = "CERT-PA Domains"
+                        },
+                        new
+                        {
+                            Id = 1936,
+                            HomeUrl = "https://hashdd.com/",
+                            LicenseId = 5,
+                            Name = "VXVault (Domains)"
                         },
                         new
                         {
@@ -14543,6 +14789,28 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 1960,
+                            Description = "Darklist.de is an IP blacklist that uses multiple sensors to identify network attacks (e.g. SSH brute force) and spam incidents. All reports are evaluated and in case of too many incidents the responsible IP holder is informed to solve the problem. After reporting an incident as solved the IP is removed from the blacklist.",
+                            HomeUrl = "https://www.darklist.de/",
+                            LicenseId = 5,
+                            Name = "DarklistDE IP Blacklist"
+                        },
+                        new
+                        {
+                            Id = 1961,
+                            HomeUrl = "https://github.com/xorcan/hosts/",
+                            LicenseId = 4,
+                            Name = "xorcan Türk element-ad-list (Turkish)"
+                        },
+                        new
+                        {
+                            Id = 1962,
+                            HomeUrl = "https://github.com/xorcan/hosts/",
+                            LicenseId = 4,
+                            Name = "xorcan Türk harmful ip-list (Turkish)"
+                        },
+                        new
+                        {
                             Id = 1963,
                             Description = "Filters to fix common issues with 9Anime and block malicious code",
                             HomeUrl = "https://gitlab.com/Sorrow-San/9anime-adblock-filters/",
@@ -14570,6 +14838,17 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
                             LicenseId = 35,
                             Name = "Have I Been Pwned Paste Remover"
+                        },
+                        new
+                        {
+                            Id = 1966,
+                            Description = "PornHub is a site full of distractions and things that you are quite literally not into. If you wish to focus on the things there that you really are into, you can use this list.",
+                            DonateUrl = "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+                            EmailAddress = "imreeil42@gmail.com",
+                            HomeUrl = "https://github.com/DandelionSprout/adfilt",
+                            IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
+                            LicenseId = 35,
+                            Name = "PornHub: Pure Trail Mix Experience"
                         },
                         new
                         {
@@ -14866,6 +15145,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 1997,
+                            HomeUrl = "https://github.com/Cybo1927/Hosts",
+                            IssuesUrl = "https://github.com/Cybo1927/Hosts/issues",
+                            LicenseId = 11,
+                            Name = "Cybo's Anti Third Party HTTP"
+                        },
+                        new
+                        {
                             Id = 1998,
                             Description = "Block maps, location analytics, and GPS services",
                             HomeUrl = "https://github.com/Cybo1927/Hosts",
@@ -14989,6 +15276,20 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 2015,
+                            HomeUrl = "https://blocklist.site/",
+                            LicenseId = 11,
+                            Name = "Block List Project: Phishing"
+                        },
+                        new
+                        {
+                            Id = 2016,
+                            HomeUrl = "https://blocklist.site/",
+                            LicenseId = 11,
+                            Name = "Block List Project: Spam"
+                        },
+                        new
+                        {
                             Id = 2017,
                             HomeUrl = "https://blocklist.site/",
                             LicenseId = 11,
@@ -15080,6 +15381,20 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 2032,
+                            Description = "The address block lists are aggregated by country. What this means is that if for instance IP address blocks 192.168.0.100/24 and 192.168.0.101/24 are allocated/assigned to the same country, we will merge them into a single 192.168.0.100/23. That's why our lists may appear smaller in size when compared to other IP address block lists when in fact they are just highly optimized to not waste memory in your router.",
+                            HomeUrl = "http://ipverse.net/",
+                            LicenseId = 5,
+                            Name = "IPverse IP address block lists - Romania IPv6"
+                        },
+                        new
+                        {
+                            Id = 2033,
+                            LicenseId = 5,
+                            Name = "Blockzilla (Hosts)"
+                        },
+                        new
+                        {
                             Id = 2034,
                             DonateUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
                             EmailAddress = "easylist@protonmail.com",
@@ -15139,6 +15454,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/DandelionSprout/adfilt/issues",
                             LicenseId = 35,
                             Name = "Dandelion Sprout's Nordic Filters for Tidier Websites (IPv6 «Hosts»)"
+                        },
+                        new
+                        {
+                            Id = 2042,
+                            Description = "A filter that blocks the thumbnails of users that upload junk or stuff in the wrong categories.",
+                            HomeUrl = "https://github.com/lassekongo83/Frellwits-filter-lists",
+                            IssuesUrl = "https://github.com/lassekongo83/Frellwits-filter-lists/issues",
+                            LicenseId = 4,
+                            Name = "deviantJUNKfilter"
                         },
                         new
                         {
@@ -15410,6 +15734,18 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/Perflyst/PiHoleBlocklist/issues",
                             LicenseId = 2,
                             Name = "PiHole Blocklist SmartTV (AdGuard Home)"
+                        },
+                        new
+                        {
+                            Id = 2076,
+                            Description = "This will remove cookie and privacy warnings.",
+                            DonateUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
+                            EmailAddress = "easylist@protonmail.com",
+                            ForumUrl = "https://forums.lanik.us/",
+                            HomeUrl = "https://easylist.to/",
+                            IssuesUrl = "https://github.com/easylist/easylist/issues",
+                            LicenseId = 16,
+                            Name = "EasyList Cookie List (TPL)"
                         },
                         new
                         {
@@ -16227,6 +16563,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 2178,
+                            Description = "Sites engaged in Phishing",
+                            LicenseId = 5,
+                            Name = "hpHosts PSH"
+                        },
+                        new
+                        {
+                            Id = 2179,
+                            Description = "This is an Adblock Latitude filter subscription list; it blocks ads and some trackers.",
+                            HomeUrl = "https://github.com/wolfbeast/lunarblocklist",
+                            IssuesUrl = "https://github.com/wolfbeast/lunarblocklist/issues",
+                            LicenseId = 2,
+                            Name = "Lunar Blocklist"
+                        },
+                        new
+                        {
                             Id = 2180,
                             HomeUrl = "https://mirai.security.gives/",
                             LicenseId = 2,
@@ -16870,6 +17222,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 2249,
+                            Description = "Liste AR is an EasyList affiliated filter list that specifically removes adverts on Arabic language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+                            HomeUrl = "https://hg.adblockplus.org/customfilterlists/file/default",
+                            LicenseId = 6,
+                            Name = "Liste AR (Minified)"
+                        },
+                        new
+                        {
                             Id = 2250,
                             Description = "Liste FR is an EasyList affiliated filter list that specifically removes adverts on French-language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
                             HomeUrl = "https://hg.adblockplus.org/customfilterlists/file/default",
@@ -16939,6 +17299,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             HomeUrl = "https://hg.adblockplus.org/customfilterlists/file/default",
                             LicenseId = 4,
                             Name = "EasyList China (TPL Minified)"
+                        },
+                        new
+                        {
+                            Id = 2259,
+                            Description = "Official filter list file used for blocking ads on Czech and Slovak websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
+                            HomeUrl = "https://hg.adblockplus.org/customfilterlists/file/default",
+                            LicenseId = 8,
+                            Name = "EasyList Czech and Slovak (TPL Minified)"
                         },
                         new
                         {
@@ -17244,6 +17612,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 2296,
+                            Description = "For use with Adblock by Futuremind",
+                            HomeUrl = "https://github.com/BlackJack8/iOSAdblockList/",
+                            IssuesUrl = "https://github.com/BlackJack8/iOSAdblockList/issues",
+                            Name = "Host-List for iOS ad blockers (Hosts)"
+                        },
+                        new
+                        {
                             Id = 2297,
                             Description = "For use with AdGuard Pro",
                             HomeUrl = "https://github.com/BlackJack8/iOSAdblockList/",
@@ -17363,6 +17739,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             HomeUrl = "https://rescure.fruxlabs.com/",
                             LicenseId = 5,
                             Name = "The REScure Cyber Threat Intelligence Feed Project (beta) COVID-19 Malicious Domain"
+                        },
+                        new
+                        {
+                            Id = 2312,
+                            Description = "REScure is an independent threat intelligence project which we undertook to enhance our understanding of distributed systems, their integration, the nature of threat intelligence and how to efficiently collect, store, consume, distribute it.",
+                            EmailAddress = "hello@theprohack.com",
+                            HomeUrl = "https://rescure.fruxlabs.com/",
+                            LicenseId = 5,
+                            Name = "The REScure Cyber Threat Intelligence Feed Project (beta) Maze Ransomware"
                         },
                         new
                         {
@@ -18084,6 +18469,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             HomeUrl = "https://www.ntop.org/",
                             LicenseId = 5,
                             Name = "ntop Blacklists - Adblocking"
+                        },
+                        new
+                        {
+                            Id = 2390,
+                            DonateUrl = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L6CV86VX9V5QN",
+                            HomeUrl = "https://www.ntop.org/",
+                            LicenseId = 5,
+                            Name = "ntop Blacklists - IP Blacklist"
+                        },
+                        new
+                        {
+                            Id = 2391,
+                            HomeUrl = "https://github.com/Cybo1927/Hosts",
+                            IssuesUrl = "https://github.com/Cybo1927/Hosts/issues",
+                            LicenseId = 11,
+                            Name = "Cybo's Anti Nightcore"
                         },
                         new
                         {
@@ -22236,6 +22637,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1528,
+                            Iso6391 = "az"
+                        },
+                        new
+                        {
+                            FilterListId = 1528,
+                            Iso6391 = "en"
+                        },
+                        new
+                        {
                             FilterListId = 1529,
                             Iso6391 = "ko"
                         },
@@ -22358,6 +22769,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 1562,
                             Iso6391 = "ru"
+                        },
+                        new
+                        {
+                            FilterListId = 1563,
+                            Iso6391 = "tr"
                         },
                         new
                         {
@@ -22886,6 +23302,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1929,
+                            Iso6391 = "no"
+                        },
+                        new
+                        {
                             FilterListId = 1932,
                             Iso6391 = "en"
                         },
@@ -22913,6 +23334,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 1949,
                             Iso6391 = "zh"
+                        },
+                        new
+                        {
+                            FilterListId = 1961,
+                            Iso6391 = "tr"
+                        },
+                        new
+                        {
+                            FilterListId = 1962,
+                            Iso6391 = "tr"
                         },
                         new
                         {
@@ -23541,6 +23972,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 2249,
+                            Iso6391 = "ar"
+                        },
+                        new
+                        {
                             FilterListId = 2250,
                             Iso6391 = "ar"
                         },
@@ -23598,6 +24034,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2258,
                             Iso6391 = "zh"
+                        },
+                        new
+                        {
+                            FilterListId = 2259,
+                            Iso6391 = "sk"
                         },
                         new
                         {
@@ -23933,6 +24374,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2381,
                             Iso6391 = "zh"
+                        },
+                        new
+                        {
+                            FilterListId = 2391,
+                            Iso6391 = "ja"
                         },
                         new
                         {
@@ -24279,6 +24725,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 89,
+                            MaintainerId = 57
+                        },
+                        new
+                        {
+                            FilterListId = 90,
                             MaintainerId = 57
                         },
                         new
@@ -24818,6 +25269,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 270,
+                            MaintainerId = 88
+                        },
+                        new
+                        {
+                            FilterListId = 271,
+                            MaintainerId = 88
+                        },
+                        new
+                        {
                             FilterListId = 272,
                             MaintainerId = 45
                         },
@@ -24849,6 +25310,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 285,
+                            MaintainerId = 88
+                        },
+                        new
+                        {
+                            FilterListId = 286,
+                            MaintainerId = 88
+                        },
+                        new
+                        {
+                            FilterListId = 287,
                             MaintainerId = 88
                         },
                         new
@@ -24930,6 +25401,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 302,
                             MaintainerId = 79
+                        },
+                        new
+                        {
+                            FilterListId = 303,
+                            MaintainerId = 88
+                        },
+                        new
+                        {
+                            FilterListId = 304,
+                            MaintainerId = 88
                         },
                         new
                         {
@@ -25848,6 +26329,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 685,
+                            MaintainerId = 88
+                        },
+                        new
+                        {
                             FilterListId = 686,
                             MaintainerId = 82
                         },
@@ -26148,6 +26634,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 820,
+                            MaintainerId = 57
+                        },
+                        new
+                        {
                             FilterListId = 842,
                             MaintainerId = 91
                         },
@@ -26239,6 +26730,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 866,
+                            MaintainerId = 38
+                        },
+                        new
+                        {
+                            FilterListId = 867,
                             MaintainerId = 38
                         },
                         new
@@ -28858,6 +29354,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1476,
+                            MaintainerId = 119
+                        },
+                        new
+                        {
                             FilterListId = 1477,
                             MaintainerId = 119
                         },
@@ -29013,6 +29514,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1528,
+                            MaintainerId = 46
+                        },
+                        new
+                        {
                             FilterListId = 1529,
                             MaintainerId = 7
                         },
@@ -29064,6 +29570,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 1541,
+                            MaintainerId = 7
+                        },
+                        new
+                        {
+                            FilterListId = 1542,
                             MaintainerId = 7
                         },
                         new
@@ -29124,6 +29635,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 1564,
+                            MaintainerId = 22
+                        },
+                        new
+                        {
+                            FilterListId = 1565,
                             MaintainerId = 22
                         },
                         new
@@ -29698,6 +30214,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1839,
+                            MaintainerId = 144
+                        },
+                        new
+                        {
                             FilterListId = 1840,
                             MaintainerId = 22
                         },
@@ -29778,6 +30299,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1929,
+                            MaintainerId = 22
+                        },
+                        new
+                        {
                             FilterListId = 1930,
                             MaintainerId = 22
                         },
@@ -29819,6 +30345,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 1965,
+                            MaintainerId = 22
+                        },
+                        new
+                        {
+                            FilterListId = 1966,
                             MaintainerId = 22
                         },
                         new
@@ -29958,6 +30489,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1997,
+                            MaintainerId = 144
+                        },
+                        new
+                        {
                             FilterListId = 1998,
                             MaintainerId = 144
                         },
@@ -30033,6 +30569,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 2016,
+                            MaintainerId = 154
+                        },
+                        new
+                        {
                             FilterListId = 2017,
                             MaintainerId = 154
                         },
@@ -30055,6 +30596,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2041,
                             MaintainerId = 22
+                        },
+                        new
+                        {
+                            FilterListId = 2042,
+                            MaintainerId = 64
                         },
                         new
                         {
@@ -30653,6 +31199,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 2249,
+                            MaintainerId = 6
+                        },
+                        new
+                        {
                             FilterListId = 2250,
                             MaintainerId = 6
                         },
@@ -30694,6 +31245,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2258,
+                            MaintainerId = 6
+                        },
+                        new
+                        {
+                            FilterListId = 2259,
                             MaintainerId = 6
                         },
                         new
@@ -30900,6 +31456,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2378,
                             MaintainerId = 22
+                        },
+                        new
+                        {
+                            FilterListId = 2391,
+                            MaintainerId = 144
                         },
                         new
                         {
@@ -31615,6 +32176,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 90,
+                            SyntaxId = 4
+                        },
+                        new
+                        {
                             FilterListId = 91,
                             SyntaxId = 4
                         },
@@ -31786,6 +32352,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 137,
+                            SyntaxId = 1
+                        },
+                        new
+                        {
+                            FilterListId = 138,
                             SyntaxId = 1
                         },
                         new
@@ -32345,6 +32916,21 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 270,
+                            SyntaxId = 4
+                        },
+                        new
+                        {
+                            FilterListId = 270,
+                            SyntaxId = 16
+                        },
+                        new
+                        {
+                            FilterListId = 271,
+                            SyntaxId = 28
+                        },
+                        new
+                        {
                             FilterListId = 272,
                             SyntaxId = 2
                         },
@@ -32407,6 +32993,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 285,
                             SyntaxId = 4
+                        },
+                        new
+                        {
+                            FilterListId = 286,
+                            SyntaxId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 287,
+                            SyntaxId = 2
                         },
                         new
                         {
@@ -32477,6 +33073,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 302,
                             SyntaxId = 15
+                        },
+                        new
+                        {
+                            FilterListId = 303,
+                            SyntaxId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 304,
+                            SyntaxId = 2
                         },
                         new
                         {
@@ -33740,6 +34346,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 685,
+                            SyntaxId = 1
+                        },
+                        new
+                        {
                             FilterListId = 686,
                             SyntaxId = 3
                         },
@@ -33860,6 +34471,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 716,
+                            SyntaxId = 37
+                        },
+                        new
+                        {
                             FilterListId = 717,
                             SyntaxId = 14
                         },
@@ -33921,6 +34537,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 731,
+                            SyntaxId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 732,
                             SyntaxId = 3
                         },
                         new
@@ -34310,6 +34931,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 820,
+                            SyntaxId = 51
+                        },
+                        new
+                        {
                             FilterListId = 821,
                             SyntaxId = 47
                         },
@@ -34511,6 +35137,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 866,
+                            SyntaxId = 1
+                        },
+                        new
+                        {
+                            FilterListId = 867,
                             SyntaxId = 1
                         },
                         new
@@ -37190,6 +37821,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1476,
+                            SyntaxId = 1
+                        },
+                        new
+                        {
                             FilterListId = 1477,
                             SyntaxId = 25
                         },
@@ -37207,6 +37843,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 1480,
                             SyntaxId = 25
+                        },
+                        new
+                        {
+                            FilterListId = 1481,
+                            SyntaxId = 1
                         },
                         new
                         {
@@ -37370,6 +38011,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1528,
+                            SyntaxId = 6
+                        },
+                        new
+                        {
                             FilterListId = 1529,
                             SyntaxId = 3
                         },
@@ -37431,6 +38077,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 1541,
+                            SyntaxId = 10
+                        },
+                        new
+                        {
+                            FilterListId = 1542,
                             SyntaxId = 10
                         },
                         new
@@ -37535,7 +38186,17 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1563,
+                            SyntaxId = 1
+                        },
+                        new
+                        {
                             FilterListId = 1564,
+                            SyntaxId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 1565,
                             SyntaxId = 3
                         },
                         new
@@ -38305,6 +38966,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1726,
+                            SyntaxId = 3
+                        },
+                        new
+                        {
                             FilterListId = 1727,
                             SyntaxId = 2
                         },
@@ -38780,6 +39446,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1823,
+                            SyntaxId = 9
+                        },
+                        new
+                        {
                             FilterListId = 1824,
                             SyntaxId = 9
                         },
@@ -38847,6 +39518,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 1838,
                             SyntaxId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 1839,
+                            SyntaxId = 1
                         },
                         new
                         {
@@ -39210,6 +39886,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1929,
+                            SyntaxId = 4
+                        },
+                        new
+                        {
                             FilterListId = 1930,
                             SyntaxId = 28
                         },
@@ -39236,6 +39917,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 1935,
+                            SyntaxId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 1936,
                             SyntaxId = 2
                         },
                         new
@@ -39380,6 +40066,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1961,
+                            SyntaxId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 1962,
+                            SyntaxId = 9
+                        },
+                        new
+                        {
                             FilterListId = 1963,
                             SyntaxId = 4
                         },
@@ -39391,6 +40087,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 1965,
+                            SyntaxId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 1966,
                             SyntaxId = 3
                         },
                         new
@@ -39550,6 +40251,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1997,
+                            SyntaxId = 4
+                        },
+                        new
+                        {
                             FilterListId = 1998,
                             SyntaxId = 1
                         },
@@ -39640,6 +40346,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 2016,
+                            SyntaxId = 2
+                        },
+                        new
+                        {
                             FilterListId = 2017,
                             SyntaxId = 2
                         },
@@ -39705,6 +40416,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 2033,
+                            SyntaxId = 1
+                        },
+                        new
+                        {
                             FilterListId = 2034,
                             SyntaxId = 3
                         },
@@ -39737,6 +40453,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2041,
                             SyntaxId = 36
+                        },
+                        new
+                        {
+                            FilterListId = 2042,
+                            SyntaxId = 3
                         },
                         new
                         {
@@ -39897,6 +40618,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2075,
                             SyntaxId = 47
+                        },
+                        new
+                        {
+                            FilterListId = 2076,
+                            SyntaxId = 3
                         },
                         new
                         {
@@ -40400,6 +41126,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 2179,
+                            SyntaxId = 3
+                        },
+                        new
+                        {
                             FilterListId = 2180,
                             SyntaxId = 9
                         },
@@ -40745,6 +41476,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 2249,
+                            SyntaxId = 3
+                        },
+                        new
+                        {
                             FilterListId = 2250,
                             SyntaxId = 3
                         },
@@ -40786,6 +41522,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2258,
+                            SyntaxId = 10
+                        },
+                        new
+                        {
+                            FilterListId = 2259,
                             SyntaxId = 10
                         },
                         new
@@ -40970,6 +41711,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 2296,
+                            SyntaxId = 1
+                        },
+                        new
+                        {
                             FilterListId = 2297,
                             SyntaxId = 2
                         },
@@ -41041,6 +41787,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2311,
+                            SyntaxId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 2312,
                             SyntaxId = 2
                         },
                         new
@@ -41432,6 +42183,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2390,
                             SyntaxId = 9
+                        },
+                        new
+                        {
+                            FilterListId = 2391,
+                            SyntaxId = 4
                         },
                         new
                         {
@@ -42607,6 +43363,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 90,
+                            TagId = 2
+                        },
+                        new
+                        {
                             FilterListId = 91,
                             TagId = 6
                         },
@@ -43218,6 +43979,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 137,
+                            TagId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 138,
                             TagId = 2
                         },
                         new
@@ -43967,6 +44733,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 270,
+                            TagId = 14
+                        },
+                        new
+                        {
+                            FilterListId = 271,
+                            TagId = 6
+                        },
+                        new
+                        {
                             FilterListId = 272,
                             TagId = 3
                         },
@@ -44042,6 +44818,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 286,
+                            TagId = 14
+                        },
+                        new
+                        {
+                            FilterListId = 287,
+                            TagId = 6
+                        },
+                        new
+                        {
                             FilterListId = 288,
                             TagId = 6
                         },
@@ -44109,6 +44895,21 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 302,
                             TagId = 6
+                        },
+                        new
+                        {
+                            FilterListId = 303,
+                            TagId = 14
+                        },
+                        new
+                        {
+                            FilterListId = 303,
+                            TagId = 23
+                        },
+                        new
+                        {
+                            FilterListId = 304,
+                            TagId = 3
                         },
                         new
                         {
@@ -45807,6 +46608,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 685,
+                            TagId = 6
+                        },
+                        new
+                        {
                             FilterListId = 686,
                             TagId = 10
                         },
@@ -45957,6 +46763,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 716,
+                            TagId = 12
+                        },
+                        new
+                        {
                             FilterListId = 717,
                             TagId = 12
                         },
@@ -46024,6 +46835,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 731,
                             TagId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 732,
+                            TagId = 9
                         },
                         new
                         {
@@ -46502,6 +47318,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 820,
+                            TagId = 3
+                        },
+                        new
+                        {
                             FilterListId = 821,
                             TagId = 2
                         },
@@ -46823,6 +47644,26 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 866,
+                            TagId = 35
+                        },
+                        new
+                        {
+                            FilterListId = 867,
+                            TagId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 867,
+                            TagId = 4
+                        },
+                        new
+                        {
+                            FilterListId = 867,
+                            TagId = 19
+                        },
+                        new
+                        {
+                            FilterListId = 867,
                             TagId = 35
                         },
                         new
@@ -49727,6 +50568,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1476,
+                            TagId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 1476,
+                            TagId = 4
+                        },
+                        new
+                        {
                             FilterListId = 1477,
                             TagId = 3
                         },
@@ -49754,6 +50605,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 1480,
                             TagId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 1481,
+                            TagId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 1481,
+                            TagId = 4
                         },
                         new
                         {
@@ -50022,6 +50883,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1528,
+                            TagId = 2
+                        },
+                        new
+                        {
                             FilterListId = 1529,
                             TagId = 2
                         },
@@ -50114,6 +50980,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 1541,
                             TagId = 10
+                        },
+                        new
+                        {
+                            FilterListId = 1542,
+                            TagId = 2
                         },
                         new
                         {
@@ -50257,8 +51128,18 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1563,
+                            TagId = 2
+                        },
+                        new
+                        {
                             FilterListId = 1564,
                             TagId = 21
+                        },
+                        new
+                        {
+                            FilterListId = 1565,
+                            TagId = 30
                         },
                         new
                         {
@@ -51837,6 +52718,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1726,
+                            TagId = 6
+                        },
+                        new
+                        {
                             FilterListId = 1727,
                             TagId = 6
                         },
@@ -53162,6 +54048,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1823,
+                            TagId = 6
+                        },
+                        new
+                        {
                             FilterListId = 1824,
                             TagId = 6
                         },
@@ -53244,6 +54135,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 1838,
                             TagId = 4
+                        },
+                        new
+                        {
+                            FilterListId = 1839,
+                            TagId = 19
                         },
                         new
                         {
@@ -53867,6 +54763,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1929,
+                            TagId = 15
+                        },
+                        new
+                        {
                             FilterListId = 1930,
                             TagId = 2
                         },
@@ -53903,6 +54804,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 1935,
+                            TagId = 6
+                        },
+                        new
+                        {
+                            FilterListId = 1936,
                             TagId = 6
                         },
                         new
@@ -54152,6 +55058,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1961,
+                            TagId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 1962,
+                            TagId = 6
+                        },
+                        new
+                        {
                             FilterListId = 1963,
                             TagId = 2
                         },
@@ -54184,6 +55100,21 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 1965,
                             TagId = 9
+                        },
+                        new
+                        {
+                            FilterListId = 1966,
+                            TagId = 9
+                        },
+                        new
+                        {
+                            FilterListId = 1966,
+                            TagId = 11
+                        },
+                        new
+                        {
+                            FilterListId = 1966,
+                            TagId = 35
                         },
                         new
                         {
@@ -54387,6 +55318,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 1997,
+                            TagId = 15
+                        },
+                        new
+                        {
                             FilterListId = 1998,
                             TagId = 15
                         },
@@ -54527,6 +55463,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 2016,
+                            TagId = 6
+                        },
+                        new
+                        {
                             FilterListId = 2017,
                             TagId = 11
                         },
@@ -54599,6 +55540,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2032,
                             TagId = 20
+                        },
+                        new
+                        {
+                            FilterListId = 2033,
+                            TagId = 2
                         },
                         new
                         {
@@ -54974,6 +55920,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2075,
                             TagId = 34
+                        },
+                        new
+                        {
+                            FilterListId = 2076,
+                            TagId = 8
                         },
                         new
                         {
@@ -55542,6 +56493,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 2179,
+                            TagId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 2179,
+                            TagId = 3
+                        },
+                        new
+                        {
                             FilterListId = 2180,
                             TagId = 6
                         },
@@ -55897,6 +56858,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 2249,
+                            TagId = 2
+                        },
+                        new
+                        {
                             FilterListId = 2250,
                             TagId = 2
                         },
@@ -55938,6 +56904,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2258,
+                            TagId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 2259,
                             TagId = 2
                         },
                         new
@@ -56227,6 +57198,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 2296,
+                            TagId = 2
+                        },
+                        new
+                        {
                             FilterListId = 2297,
                             TagId = 2
                         },
@@ -56299,6 +57275,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2311,
                             TagId = 7
+                        },
+                        new
+                        {
+                            FilterListId = 2312,
+                            TagId = 6
                         },
                         new
                         {
@@ -56964,6 +57945,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2390,
                             TagId = 6
+                        },
+                        new
+                        {
+                            FilterListId = 2391,
+                            TagId = 30
                         },
                         new
                         {
@@ -59015,6 +60001,30 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 134,
+                            FilterListId = 90,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt"
+                        },
+                        new
+                        {
+                            Id = 135,
+                            FilterListId = 90,
+                            Primariness = (short)2,
+                            SegmentNumber = (short)0,
+                            Url = "https://gitcdn.xyz/repo/uBlockOrigin/uAssets/master/filters/experimental.txt"
+                        },
+                        new
+                        {
+                            Id = 136,
+                            FilterListId = 90,
+                            Primariness = (short)3,
+                            SegmentNumber = (short)0,
+                            Url = "https://rawcdn.githack.com/uBlockOrigin/uAssets/master/filters/experimental.txt"
+                        },
+                        new
+                        {
                             Id = 137,
                             FilterListId = 91,
                             Primariness = (short)1,
@@ -59660,6 +60670,30 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)3,
                             SegmentNumber = (short)0,
                             Url = "https://gitlab.com/StevenBlack/hosts/raw/master/data/StevenBlack/hosts"
+                        },
+                        new
+                        {
+                            Id = 218,
+                            FilterListId = 138,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/StreamingAds/hosts"
+                        },
+                        new
+                        {
+                            Id = 219,
+                            FilterListId = 138,
+                            Primariness = (short)2,
+                            SegmentNumber = (short)0,
+                            Url = "https://gitcdn.xyz/repo/FadeMind/hosts.extras/master/StreamingAds/hosts"
+                        },
+                        new
+                        {
+                            Id = 220,
+                            FilterListId = 138,
+                            Primariness = (short)3,
+                            SegmentNumber = (short)0,
+                            Url = "https://gitcdn.link/repo/FadeMind/hosts.extras/master/StreamingAds/hosts"
                         },
                         new
                         {
@@ -61103,6 +62137,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 401,
+                            FilterListId = 270,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://mirror1.malwaredomains.com/files/bulk_registrars.txt"
+                        },
+                        new
+                        {
+                            Id = 402,
+                            FilterListId = 271,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://easylist-downloads.adblockplus.org/malwaredomains_full.txt"
+                        },
+                        new
+                        {
                             Id = 403,
                             FilterListId = 272,
                             Primariness = (short)1,
@@ -61228,6 +62278,30 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)2,
                             SegmentNumber = (short)0,
                             Url = "https://mirror.cedia.org.ec/malwaredomains/dynamic_dns.txt"
+                        },
+                        new
+                        {
+                            Id = 419,
+                            FilterListId = 286,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://mirror1.malwaredomains.com/files/freewebhosts.txt"
+                        },
+                        new
+                        {
+                            Id = 420,
+                            FilterListId = 287,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://mirror1.malwaredomains.com/files/justdomains"
+                        },
+                        new
+                        {
+                            Id = 421,
+                            FilterListId = 287,
+                            Primariness = (short)2,
+                            SegmentNumber = (short)0,
+                            Url = "https://mirror.cedia.org.ec/malwaredomains/justdomains"
                         },
                         new
                         {
@@ -61372,6 +62446,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
                             Url = "https://feeds.dshield.org/block.txt"
+                        },
+                        new
+                        {
+                            Id = 440,
+                            FilterListId = 303,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://mirror1.malwaredomains.com/files/url_shorteners.txt"
+                        },
+                        new
+                        {
+                            Id = 441,
+                            FilterListId = 304,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://mirror1.malwaredomains.com/files/Skype-resolvers.txt"
                         },
                         new
                         {
@@ -63591,6 +64681,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 722,
+                            FilterListId = 685,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://mirror1.malwaredomains.com/files/domains.hosts"
+                        },
+                        new
+                        {
+                            Id = 723,
+                            FilterListId = 685,
+                            Primariness = (short)2,
+                            SegmentNumber = (short)0,
+                            Url = "https://mirror.cedia.org.ec/malwaredomains/domains.hosts"
+                        },
+                        new
+                        {
                             Id = 724,
                             FilterListId = 686,
                             Primariness = (short)1,
@@ -63791,6 +64897,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 749,
+                            FilterListId = 716,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts"
+                        },
+                        new
+                        {
                             Id = 750,
                             FilterListId = 717,
                             Primariness = (short)1,
@@ -63932,6 +65046,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
                             Url = "https://raw.githubusercontent.com/NeeEoo/AdBlockNeeEoo/master/List.txt"
+                        },
+                        new
+                        {
+                            Id = 768,
+                            FilterListId = 732,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/dariusworks/superblock/master/cleanersitesAiO.txt"
                         },
                         new
                         {
@@ -64607,6 +65729,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 853,
+                            FilterListId = 820,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/recipes/recipes_en.txt"
+                        },
+                        new
+                        {
                             Id = 854,
                             FilterListId = 821,
                             Primariness = (short)1,
@@ -65076,6 +66206,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)2,
                             SegmentNumber = (short)0,
                             Url = "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/hosts_facebook0.txt"
+                        },
+                        new
+                        {
+                            Id = 916,
+                            FilterListId = 867,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/kowith337/PersonalFilterListCollection/master/hosts/static/hosts_facebook0_noregionsv.txt"
+                        },
+                        new
+                        {
+                            Id = 917,
+                            FilterListId = 867,
+                            Primariness = (short)2,
+                            SegmentNumber = (short)0,
+                            Url = "https://gitlab.com/kowith337/PersonalFilterListCollection/raw/master/hosts/static/hosts_facebook0_noregionsv.txt"
                         },
                         new
                         {
@@ -69543,6 +70689,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 1485,
+                            FilterListId = 1476,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://hblock.molinero.dev/hosts_android.zip"
+                        },
+                        new
+                        {
                             Id = 1486,
                             FilterListId = 1477,
                             Primariness = (short)1,
@@ -69572,6 +70726,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
                             Url = "https://oooo.b-cdn.net/blahdns/rpz.txt"
+                        },
+                        new
+                        {
+                            Id = 1490,
+                            FilterListId = 1481,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/jawz101/MobileAdTrackers/master/hosts"
                         },
                         new
                         {
@@ -69847,6 +71009,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 1526,
+                            FilterListId = 1528,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://filters.adtidy.org/extension/chromium/filters/2_without_easylist.txt"
+                        },
+                        new
+                        {
                             Id = 1527,
                             FilterListId = 1529,
                             Primariness = (short)1,
@@ -69956,6 +71126,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
                             Url = "https://easylist-downloads.adblockplus.org/exceptionrules.tpl"
+                        },
+                        new
+                        {
+                            Id = 1541,
+                            FilterListId = 1542,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://easylist-downloads.adblockplus.org/adwarefilters.tpl"
                         },
                         new
                         {
@@ -70143,6 +71321,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 1565,
+                            FilterListId = 1563,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/xorcan/hosts/master/xhosts.txt"
+                        },
+                        new
+                        {
                             Id = 1566,
                             FilterListId = 1564,
                             Primariness = (short)1,
@@ -70156,6 +71342,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)2,
                             SegmentNumber = (short)0,
                             Url = "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiCelebBirthList"
+                        },
+                        new
+                        {
+                            Id = 1568,
+                            FilterListId = 1565,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GamestoreMovieRemover.txt"
+                        },
+                        new
+                        {
+                            Id = 1569,
+                            FilterListId = 1565,
+                            Primariness = (short)2,
+                            SegmentNumber = (short)0,
+                            Url = "https://gitlab.com/DandelionSprout/adfilt/raw/master/GamestoreMovieRemover.txt"
                         },
                         new
                         {
@@ -71887,6 +73089,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 1786,
+                            FilterListId = 1726,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/callmenemo491/DodgySiteBlocker/master/DodgySiteBlocker.txt"
+                        },
+                        new
+                        {
                             Id = 1787,
                             FilterListId = 1727,
                             Primariness = (short)1,
@@ -72703,6 +73913,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 1889,
+                            FilterListId = 1823,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "http://www.unsubscore.com/blacklist.txt"
+                        },
+                        new
+                        {
                             Id = 1890,
                             FilterListId = 1824,
                             Primariness = (short)1,
@@ -72828,6 +74046,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
                             Url = "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti Social"
+                        },
+                        new
+                        {
+                            Id = 1906,
+                            FilterListId = 1839,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti Verizon"
                         },
                         new
                         {
@@ -73479,6 +74705,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 1998,
+                            FilterListId = 1929,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianFanTranslations.txt"
+                        },
+                        new
+                        {
+                            Id = 1999,
+                            FilterListId = 1929,
+                            Primariness = (short)2,
+                            SegmentNumber = (short)0,
+                            Url = "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianFanTranslations.txt"
+                        },
+                        new
+                        {
                             Id = 2000,
                             FilterListId = 1930,
                             Primariness = (short)1,
@@ -73532,6 +74774,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
                             Url = "https://infosec.cert-pa.it/analyze/listdomains.txt"
+                        },
+                        new
+                        {
+                            Id = 2007,
+                            FilterListId = 1936,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://lists.hashdd.com/hashdd/vxvault-urllist/hosts"
                         },
                         new
                         {
@@ -73743,6 +74993,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 2034,
+                            FilterListId = 1961,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/xorcan/hosts/master/xelement.txt"
+                        },
+                        new
+                        {
+                            Id = 2035,
+                            FilterListId = 1962,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/xorcan/hosts/master/xips.txt"
+                        },
+                        new
+                        {
                             Id = 2036,
                             FilterListId = 1963,
                             Primariness = (short)1,
@@ -73780,6 +75046,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)2,
                             SegmentNumber = (short)0,
                             Url = "https://gitlab.com/DandelionSprout/adfilt/raw/master/HaveIBeenPwnedPasteRemover.txt"
+                        },
+                        new
+                        {
+                            Id = 2041,
+                            FilterListId = 1966,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/PornHubPureTrailMixExperience.txt"
+                        },
+                        new
+                        {
+                            Id = 2042,
+                            FilterListId = 1966,
+                            Primariness = (short)2,
+                            SegmentNumber = (short)0,
+                            Url = "https://gitlab.com/DandelionSprout/adfilt/raw/master/PornHubPureTrailMixExperience.txt"
                         },
                         new
                         {
@@ -74191,6 +75473,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 2094,
+                            FilterListId = 1997,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti Third-Party HTTP"
+                        },
+                        new
+                        {
                             Id = 2095,
                             FilterListId = 1998,
                             Primariness = (short)1,
@@ -74327,6 +75617,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 2112,
+                            FilterListId = 2016,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/blocklistproject/Lists/master/spam.txt"
+                        },
+                        new
+                        {
                             Id = 2113,
                             FilterListId = 2017,
                             Primariness = (short)1,
@@ -74431,6 +75729,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 2126,
+                            FilterListId = 2033,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://block.energized.pro/assets/sources/filter/blockzilla.txt"
+                        },
+                        new
+                        {
                             Id = 2127,
                             FilterListId = 2034,
                             Primariness = (short)1,
@@ -74492,6 +75798,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)2,
                             SegmentNumber = (short)0,
                             Url = "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList alternate versions/NordicFiltersHostsIPv6.txt"
+                        },
+                        new
+                        {
+                            Id = 2135,
+                            FilterListId = 2042,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/deviantJUNKfilter.txt"
+                        },
+                        new
+                        {
+                            Id = 2136,
+                            FilterListId = 2042,
+                            Primariness = (short)2,
+                            SegmentNumber = (short)0,
+                            Url = "https://repo.or.cz/Adblock-list-backups-Frellwits-filter-lists.git/blob_plain/refs/heads/master:/deviantJUNKfilter.txt"
                         },
                         new
                         {
@@ -74860,6 +76182,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
                             Url = "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt"
+                        },
+                        new
+                        {
+                            Id = 2183,
+                            FilterListId = 2076,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://easylist-downloads.adblockplus.org/easylist-cookie.tpl"
                         },
                         new
                         {
@@ -75823,6 +77153,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 2317,
+                            FilterListId = 2179,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/wolfbeast/lunarblocklist/master/list/lunar-blocklist.txt"
+                        },
+                        new
+                        {
+                            Id = 2318,
+                            FilterListId = 2179,
+                            Primariness = (short)2,
+                            SegmentNumber = (short)0,
+                            Url = "https://blocklist.palemoon.org/ABL/lunar-blocklist.txt"
+                        },
+                        new
+                        {
                             Id = 2319,
                             FilterListId = 2180,
                             Primariness = (short)1,
@@ -76375,6 +77721,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 2389,
+                            FilterListId = 2249,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://hg.adblockplus.org/customfilterlists/raw-file/default/liste_ar-minified.txt"
+                        },
+                        new
+                        {
                             Id = 2390,
                             FilterListId = 2250,
                             Primariness = (short)1,
@@ -76444,6 +77798,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
                             Url = "https://easylist-downloads.adblockplus.org/easylistchina-minified.tpl"
+                        },
+                        new
+                        {
+                            Id = 2399,
+                            FilterListId = 2259,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://easylist-downloads.adblockplus.org/easylistczechandslovak-minified.tpl"
                         },
                         new
                         {
@@ -76767,6 +78129,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            Id = 2441,
+                            FilterListId = 2296,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt"
+                        },
+                        new
+                        {
                             Id = 2442,
                             FilterListId = 2297,
                             Primariness = (short)1,
@@ -76900,6 +78270,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)2,
                             SegmentNumber = (short)0,
                             Url = "https://kriskintel.com/ktip_corona.txt"
+                        },
+                        new
+                        {
+                            Id = 2459,
+                            FilterListId = 2312,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://kriskintel.com/ktip_maze.txt"
                         },
                         new
                         {
@@ -77764,6 +79142,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)1,
                             SegmentNumber = (short)0,
                             Url = "http://blacklists.ntop.org/blacklist-ip.txt"
+                        },
+                        new
+                        {
+                            Id = 2569,
+                            FilterListId = 2391,
+                            Primariness = (short)1,
+                            SegmentNumber = (short)0,
+                            Url = "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Anti/Anti Nightcore"
                         },
                         new
                         {
