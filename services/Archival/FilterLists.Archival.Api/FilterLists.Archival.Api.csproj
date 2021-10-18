@@ -25,7 +25,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
-        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.2" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.3" />
     </ItemGroup>
 
     <ItemGroup>
