@@ -3,15 +3,17 @@ using System;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    partial class QueryDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211021215844_2605")]
+    partial class _2605
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -79299,14 +79301,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)0,
                             SegmentNumber = (short)0,
                             Url = "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/Alternative list formats/antimalware_hosts.txt"
-                        },
-                        new
-                        {
-                            Id = 2754,
-                            FilterListId = 2536,
-                            Primariness = (short)0,
-                            SegmentNumber = (short)0,
-                            Url = "https://raw.githubusercontent.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/main/list.txt"
                         });
                 });
 
