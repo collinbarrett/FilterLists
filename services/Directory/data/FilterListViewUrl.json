@@ -15948,13 +15948,13 @@
     "url": "https://raw.githubusercontent.com/hadig/Focus-for-Youtube/master/focus4yt.txt"
   },
   {
-  "filterListId":2537,
-  "id":2752,
-  "url":"https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/antimalware.txt"
+    "filterListId": 2537,
+    "id": 2752,
+    "url": "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/antimalware.txt"
   },
   {
-  "filterListId":2538,
-  "id":2753,
-  "url":"https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/Alternative%20list%20formats/antimalware_hosts.txt"
+    "filterListId": 2538,
+    "id": 2753,
+    "url": "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/Alternative%20list%20formats/antimalware_hosts.txt"
   }
 ]
