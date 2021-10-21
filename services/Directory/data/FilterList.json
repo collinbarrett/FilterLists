@@ -17140,14 +17140,13 @@
   },
   {
     "description": "Hosts file for blocking sites by known malware authors, including those browser-hijacking extensions, as well as those sketchy data-sucking no-name search engines that those companies work with. Also if you donate please ignore the fact that our deadname is on the page.",
-    "id": 2536,
-    "syntaxId": 1,
     "donateUrl": "https://paypal.me/ArcticCircleSystem",
-    "homeUrl": "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/",
-    "issuesUrl": "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/issues/",
     "emailAddress": "ArcticCircleSystem@gmail.com",
-    "viewUrl": "https://raw.githubusercontent.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/main/list.txt",
-    "name": "Extension-based Malware and Data-Sucking Search Engine hosts file"
-   
+    "homeUrl": "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/",
+    "id": 2536,
+    "issuesUrl": "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/issues/",
+    "name": "Extension-based Malware and Data-Sucking Search Engine hosts file",
+    "syntaxId": 1,
+    "viewUrl": "https://raw.githubusercontent.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/main/list.txt"
   }
 ]
