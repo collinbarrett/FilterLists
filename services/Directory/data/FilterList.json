@@ -17146,8 +17146,7 @@
     "id": 2536,
     "issuesUrl": "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/issues/",
     "name": "Extension-based Malware and Data-Sucking Search Engine hosts file",
-    "syntaxId": 1,
-    "viewUrl": "https://raw.githubusercontent.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/main/list.txt"
+    "syntaxId": 1
   },
   {
     "description": "Block malware, phishing, and scams for a more secure browser",

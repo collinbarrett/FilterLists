@@ -15956,5 +15956,10 @@
     "filterListId": 2538,
     "id": 2753,
     "url": "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/Alternative%20list%20formats/antimalware_hosts.txt"
+  },
+  {
+    "filterListId": 2536,
+    "id": 2754,
+    "url": "https://raw.githubusercontent.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/main/list.txt"
   }
 ]
