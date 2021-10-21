@@ -15758,11 +15758,13 @@
   {
     "filterListId": 2537,
     "id": 2752,
+    "primariness": 1,
     "url": "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/antimalware.txt"
   },
   {
     "filterListId": 2538,
     "id": 2753,
+    "primariness": 1,
     "url": "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/Alternative%20list%20formats/antimalware_hosts.txt"
   },
   {
@@ -15775,5 +15777,17 @@
     "id": 2755,
     "primariness": 3,
     "url": "https://iam-py-test.github.io/mirrors/LegitimateURLShortener.txt"
+  },
+  {
+    "filterListId": 2539,
+    "id": 2755,
+    "primariness": 2,
+    "url": "https://iam-py-test.github.io/my_filters_001/antimalware.txt"
+  },
+  {
+    "filterListId": 2540,
+    "id": 2756,
+    "primariness": 2,
+    "url": "https://iam-py-test.github.io/my_filters_001/Alternative%20list%20formats/antimalware_hosts.txt"
   }
 ]
