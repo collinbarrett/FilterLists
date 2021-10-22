@@ -3287,15 +3287,6 @@
     "name": "Andromeda uBlock List"
   },
   {
-    "description": "A filter list that blocks ads, trackers, and more.",
-    "homeUrl": "https://github.com/SkeletalDemise/Skeletal-Blocker",
-    "id": 514,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/SkeletalDemise/Skeletal-Blocker/issues",
-    "licenseId": 4,
-    "name": "Skeletal Blocker"
-  },
-  {
     "description": "BarbBlock is a content blocking list with standalone browser extensions for Chrome and Firefox. It blacklists sites which have used DMCA takedowns to force removal from other content blocking lists. Such takedowns are categorically invalid, but they can be effective at intimidating small open-source projects into compliance.",
     "homeUrl": "https://paulgb.github.io/BarbBlock/",
     "id": 515,
@@ -4939,15 +4930,6 @@
     "issuesUrl": "https://github.com/duskwuff/syndicationblock/issues",
     "licenseId": 28,
     "name": "SyndicationBlock"
-  },
-  {
-    "description": "VBlocker is made by a normal person that surfs the web to see all of the ads that should be blocked and added to VBlocker.",
-    "homeUrl": "https://github.com/SG-Nebula/vblocker_adblockplus-filterlist",
-    "id": 838,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/SG-Nebula/vblocker_adblockplus-filterlist/issues",
-    "licenseId": 7,
-    "name": "VBlocker"
   },
   {
     "description": "A filter list for Adblock Plus for remove \"Go to up\" buttons",
@@ -6957,14 +6939,6 @@
     "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
     "licenseId": 14,
     "name": "BLOGRAM Basic Filter List for Japan (Domains)"
-  },
-  {
-    "homeUrl": "https://github.com/deathbybandaid/piholeparser",
-    "id": 1125,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/deathbybandaid/piholeparser/issues",
-    "licenseId": 14,
-    "name": "Bad JAV Sites (Domains)"
   },
   {
     "homeUrl": "https://github.com/deathbybandaid/piholeparser",
@@ -9344,14 +9318,6 @@
     "name": "Fail2Ban WebExploits"
   },
   {
-    "description": "This is a community list with a blacklist of IP addresses.",
-    "homeUrl": "https://www.badips.com/",
-    "id": 1512,
-    "issuesUrl": "https://www.badips.com/documentation#3",
-    "licenseId": 2,
-    "name": "BadIPs"
-  },
-  {
     "description": "Black list for Squid proxy.",
     "homeUrl": "https://github.com/oleksiig/Squid-BlackList/",
     "id": 1513,
@@ -10435,24 +10401,6 @@
     "issuesUrl": "https://github.com/Strappazzon/teleme7ry/issues",
     "licenseId": 2,
     "name": "Strappazzon's Tracking list for Windows 7"
-  },
-  {
-    "description": "Blocks annoyances on web pages including cookie notices, modals and other useless elements",
-    "homeUrl": "https://github.com/Strappazzon/filterlists",
-    "id": 1662,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/Strappazzon/filterlists/issues",
-    "licenseId": 2,
-    "name": "Strappazzon's Annoyances filter list"
-  },
-  {
-    "description": "Fixes what my current subscriptions broke",
-    "homeUrl": "https://github.com/Strappazzon/filterlists",
-    "id": 1663,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/Strappazzon/filterlists/issues",
-    "licenseId": 2,
-    "name": "Strappazzon's Unbreak"
   },
   {
     "description": "URLhaus is a project from abuse.ch with the goal of sharing malicious URLs that are being used for malware distribution.",
@@ -11855,33 +11803,11 @@
     "name": "Lhie1's Auto Rules"
   },
   {
-    "homeUrl": "https://github.com/HParis/SSEncrypt/",
-    "id": 1802,
-    "issuesUrl": "https://github.com/HParis/SSEncrypt/issues",
-    "licenseId": 5,
-    "name": "SSEncrypt Adblock"
-  },
-  {
     "homeUrl": "https://github.com/scomper/surge-list/",
     "id": 1803,
     "issuesUrl": "https://github.com/scomper/surge-list/issues",
     "licenseId": 5,
     "name": "Scomper Surge List Reject"
-  },
-  {
-    "homeUrl": "https://github.com/ConnersHua/Profiles/tree/master",
-    "id": 1804,
-    "issuesUrl": "https://github.com/ConnersHua/Profiles/tree/master/issues",
-    "licenseId": 2,
-    "name": "ConnersHua Advertising Ruleset"
-  },
-  {
-    "homeUrl": "https://github.com/ConnersHua/Profiles/tree/master",
-    "id": 1805,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/ConnersHua/Profiles/tree/master/issues",
-    "licenseId": 2,
-    "name": "ConnersHua Pro Ruleset"
   },
   {
     "description": "The mission is to report any and all attacks to the respective abuse departments of the infected PCs/servers, to ensure that the responsible provider can inform their customer about the infection and disable the attacker. ",
@@ -12370,24 +12296,6 @@
     "name": "noads.online whitelist"
   },
   {
-    "description": "This is the \"SAFE LIST\" tested to not break legitimate functionality for commonly used software",
-    "homeUrl": "https://github.com/dex4k/dex4kblocklist",
-    "id": 1894,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/dex4k/dex4kblocklist/issues",
-    "licenseId": 5,
-    "name": "dex4k Blocklist"
-  },
-  {
-    "description": "This is a secondary blocklist created as, although I believe the blocking to be legitimate, blocking these domains can break popular apps",
-    "homeUrl": "https://github.com/dex4k/dex4kblocklist",
-    "id": 1895,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/dex4k/dex4kblocklist/issues",
-    "licenseId": 5,
-    "name": "dex4k Blocklist Extras"
-  },
-  {
     "description": "Blocks ads and trackers, and anything inbetween.",
     "homeUrl": "https://github.com/DRSDavidSoft/additional-hosts",
     "id": 1896,
@@ -12591,27 +12499,6 @@
     "name": "infinitytec's blocklists - Scams and Phishing"
   },
   {
-    "homeUrl": "https://github.com/chimbori/lite-apps",
-    "id": 1923,
-    "issuesUrl": "https://github.com/chimbori/lite-apps/issues",
-    "licenseId": 5,
-    "name": "Lite App Manifests - Coin Miners"
-  },
-  {
-    "homeUrl": "https://github.com/chimbori/lite-apps",
-    "id": 1924,
-    "issuesUrl": "https://github.com/chimbori/lite-apps/issues",
-    "licenseId": 5,
-    "name": "Lite App Manifests - Paid Content Links"
-  },
-  {
-    "homeUrl": "https://github.com/chimbori/lite-apps",
-    "id": 1925,
-    "issuesUrl": "https://github.com/chimbori/lite-apps/issues",
-    "licenseId": 5,
-    "name": "Lite App Manifests - User Suggested Adware and Malware"
-  },
-  {
     "homeUrl": "https://github.com/jackrabbit335/UsefulLinuxShellScripts",
     "id": 1926,
     "issuesUrl": "https://github.com/jackrabbit335/UsefulLinuxShellScripts/issues",
@@ -12728,13 +12615,6 @@
     "id": 1946,
     "licenseId": 40,
     "name": "AnonymousPoster – Andblock Rules"
-  },
-  {
-    "description": "Personal rules for URLRedirector.",
-    "homeUrl": "https://github.com/ivysrono/URLRedirectorRules/",
-    "id": 1947,
-    "licenseId": 5,
-    "name": "Ivysrono's URLRedirector Rules"
   },
   {
     "id": 1948,
@@ -14701,87 +14581,6 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Anti-'Anthro combat-equipment gacha waifu' List"
-  },
-  {
-    "description": "Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing Adguard Adblocker Extension.",
-    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
-    "id": 2221,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
-    "licenseId": 11,
-    "name": "AdGuard Adblocker Extension Bypass Mitigation List"
-  },
-  {
-    "description": "Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing Adguard software for iOS, Android, and Windows.",
-    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
-    "id": 2222,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
-    "licenseId": 11,
-    "name": "AdGuard for iOS, Android, and Windows Bypass Mitigation List"
-  },
-  {
-    "description": "Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing uBlock Origin or Nano Adblocker.",
-    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
-    "id": 2223,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
-    "licenseId": 11,
-    "name": "uBlock Origin Bypass Mitigation List"
-  },
-  {
-    "description": "Behind-the-scene network requests are network requests which uBlock or uMatrix cannot associate with a specific tab in your browser. These can be abused by extensions in your web browser or made by web pages using navigator.sendBeacon(), hyperlink auditing, etc. ",
-    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
-    "id": 2224,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
-    "licenseId": 11,
-    "name": "Behind-the-Scene Mitigation for uBlock Origin"
-  },
-  {
-    "description": "Behind-the-scene network requests are network requests which uBlock or uMatrix cannot associate with a specific tab in your browser. These can be abused by extensions in your web browser or made by web pages using navigator.sendBeacon(), hyperlink auditing, etc. Block CSP reports and pings in uMatrix.",
-    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
-    "id": 2225,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
-    "licenseId": 11,
-    "name": "Behind-the-Scene and Bypass Mitigation for uMatrix"
-  },
-  {
-    "description": "Block dangerous Android file extensions from HTTP-only traffic to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for Adguard.",
-    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
-    "id": 2226,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
-    "licenseId": 11,
-    "name": "Android File Types Firewall HTTP-Only for Adguard"
-  },
-  {
-    "description": "Block dangerous Android file extensions from HTTP-only traffic to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for uBlock Origin or Nano Defender.",
-    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
-    "id": 2227,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
-    "licenseId": 11,
-    "name": "Android File Types Firewall HTTP-Only for uBlock Origin"
-  },
-  {
-    "description": "Block dangerous Windows file extensions from HTTP-only traffic to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for Adguard.",
-    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
-    "id": 2228,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
-    "licenseId": 11,
-    "name": "Windows Files Types Firewall HTTP-Only for Adguard"
-  },
-  {
-    "description": "Block dangerous Windows file extensions from HTTP-Only traffic to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for uBlock Origin or Nano Defender.",
-    "homeUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters",
-    "id": 2229,
-    "isDeleted": true,
-    "issuesUrl": "https://github.com/InnoScorpio/Public_Adblock_Filters/issues",
-    "licenseId": 11,
-    "name": "Windows File Types Firewall HTTP-Only for uBlock Origin"
   },
   {
     "description": "ABPindo is an affiliated filter list written by hermawan that specifically removes adverts on Indonesian language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
