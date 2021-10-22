@@ -1588,10 +1588,6 @@
     "syntaxId": 4
   },
   {
-    "filterListId": 514,
-    "syntaxId": 4
-  },
-  {
     "filterListId": 515,
     "syntaxId": 47
   },
@@ -2465,10 +2461,6 @@
   },
   {
     "filterListId": 837,
-    "syntaxId": 3
-  },
-  {
-    "filterListId": 838,
     "syntaxId": 3
   },
   {
@@ -3577,10 +3569,6 @@
   },
   {
     "filterListId": 1124,
-    "syntaxId": 2
-  },
-  {
-    "filterListId": 1125,
     "syntaxId": 2
   },
   {
@@ -5344,14 +5332,6 @@
     "syntaxId": 2
   },
   {
-    "filterListId": 1662,
-    "syntaxId": 4
-  },
-  {
-    "filterListId": 1663,
-    "syntaxId": 4
-  },
-  {
     "filterListId": 1664,
     "syntaxId": 8
   },
@@ -5900,19 +5880,7 @@
     "syntaxId": 29
   },
   {
-    "filterListId": 1802,
-    "syntaxId": 29
-  },
-  {
     "filterListId": 1803,
-    "syntaxId": 29
-  },
-  {
-    "filterListId": 1804,
-    "syntaxId": 29
-  },
-  {
-    "filterListId": 1805,
     "syntaxId": 29
   },
   {
@@ -6184,14 +6152,6 @@
     "syntaxId": 47
   },
   {
-    "filterListId": 1894,
-    "syntaxId": 2
-  },
-  {
-    "filterListId": 1895,
-    "syntaxId": 2
-  },
-  {
     "filterListId": 1896,
     "syntaxId": 2
   },
@@ -6296,18 +6256,6 @@
     "syntaxId": 1
   },
   {
-    "filterListId": 1923,
-    "syntaxId": 2
-  },
-  {
-    "filterListId": 1924,
-    "syntaxId": 2
-  },
-  {
-    "filterListId": 1925,
-    "syntaxId": 2
-  },
-  {
     "filterListId": 1926,
     "syntaxId": 1
   },
@@ -6382,10 +6330,6 @@
   {
     "filterListId": 1946,
     "syntaxId": 3
-  },
-  {
-    "filterListId": 1947,
-    "syntaxId": 31
   },
   {
     "filterListId": 1948,
@@ -7438,42 +7382,6 @@
   {
     "filterListId": 2220,
     "syntaxId": 3
-  },
-  {
-    "filterListId": 2221,
-    "syntaxId": 6
-  },
-  {
-    "filterListId": 2222,
-    "syntaxId": 6
-  },
-  {
-    "filterListId": 2223,
-    "syntaxId": 4
-  },
-  {
-    "filterListId": 2224,
-    "syntaxId": 7
-  },
-  {
-    "filterListId": 2225,
-    "syntaxId": 7
-  },
-  {
-    "filterListId": 2226,
-    "syntaxId": 6
-  },
-  {
-    "filterListId": 2227,
-    "syntaxId": 4
-  },
-  {
-    "filterListId": 2228,
-    "syntaxId": 6
-  },
-  {
-    "filterListId": 2229,
-    "syntaxId": 4
   },
   {
     "filterListId": 2230,
