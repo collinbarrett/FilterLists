@@ -16958,6 +16958,7 @@
   {
     "description": "Block malware, phishing, and scams for a more secure browser (HOSTS version - not for uBlock Origin)",
     "homeUrl": "https://github.com/iam-py-test/my_filters_001",
+    "issuesUrl":"https://github.com/iam-py-test/my_filters_001/issues/",
     "id": 2538,
     "licenseId": 28,
     "name": "Malicious website blocklist (HOSTS)"
