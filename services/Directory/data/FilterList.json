@@ -16962,5 +16962,24 @@
     "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues/",
     "licenseId": 28,
     "name": "Malicious website blocklist (HOSTS)"
+  },
+  {
+    "description": "The family filter for AdGuard Home",
+    "descriptionSourceUrl": "https://ammnt.app/filter.txt",
+    "homeUrl": "https://ammnt.app",
+    "id": 2539,
+    "issuesUrl": "https://github.com/AmmoniteFilter/AmmoniteFilter/issues",
+    "licenseId": 4,
+    "name": "AmmoniteFilter",
+    "emailAddress": "contact@ammnt.app"
+  },
+  {
+    "description": "The security filter for AdGuard Home",
+    "homeUrl": "https://ammnt.app",
+    "id": 2540,
+    "issuesUrl": "https://github.com/AmmoniteFilter/TrilobiteFilter/issues",
+    "licenseId": 4,
+    "name": "TrilobiteFilter",
+    "emailAddress": "contact@ammnt.app"
   }
 ]
