@@ -8616,12 +8616,6 @@
     "url": "https://raw.githubusercontent.com/ookangzheng/blahdns/master/hosts/whitelist.txt"
   },
   {
-    "filterListId": 1475,
-    "id": 1484,
-    "primariness": 1,
-    "url": "https://hblock.molinero.dev/hosts"
-  },
-  {
     "filterListId": 1477,
     "id": 1486,
     "primariness": 1,
@@ -10950,12 +10944,6 @@
     "url": "https://www.github.developerdan.com/hosts/lists/facebook-extended.txt"
   },
   {
-    "filterListId": 1822,
-    "id": 1888,
-    "primariness": 1,
-    "url": "https://www.cruzit.com/xxwbl2txt.php"
-  },
-  {
     "filterListId": 1824,
     "id": 1890,
     "primariness": 1,
@@ -11544,12 +11532,6 @@
     "url": "https://gitlab.com/dns-firewall/dns/matrix/matrix/raw/master/source/tracking/domains.list"
   },
   {
-    "filterListId": 1935,
-    "id": 2006,
-    "primariness": 1,
-    "url": "https://infosec.cert-pa.it/analyze/listdomains.txt"
-  },
-  {
     "filterListId": 1937,
     "id": 2008,
     "primariness": 1,
@@ -11692,12 +11674,6 @@
     "id": 2032,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/RiiConnect24/DNS-Server/master/dns_zones-hosts.txt"
-  },
-  {
-    "filterListId": 1960,
-    "id": 2033,
-    "primariness": 1,
-    "url": "https://www.darklist.de/raw.php"
   },
   {
     "filterListId": 1963,
@@ -12132,12 +12108,6 @@
     "url": "https://raw.githubusercontent.com/blocklistproject/Lists/master/gambling.txt"
   },
   {
-    "filterListId": 2015,
-    "id": 2111,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/blocklistproject/Lists/master/phishing.txt"
-  },
-  {
     "filterListId": 2017,
     "id": 2113,
     "primariness": 1,
@@ -12208,12 +12178,6 @@
     "id": 2124,
     "primariness": 1,
     "url": "http://ipverse.net/ipblocks/data/countries/ua-ipv6.zone"
-  },
-  {
-    "filterListId": 2032,
-    "id": 2125,
-    "primariness": 1,
-    "url": "http://ipverse.net/ipblocks/data/countries/ro-ipv6.zone"
   },
   {
     "filterListId": 2034,
@@ -13252,12 +13216,6 @@
     "id": 2315,
     "primariness": 1,
     "url": "https://v.firebog.net/hosts/static/HPHosts/Hostspha.txt"
-  },
-  {
-    "filterListId": 2178,
-    "id": 2316,
-    "primariness": 1,
-    "url": "https://v.firebog.net/hosts/static/HPHosts/Hostspsh.txt"
   },
   {
     "filterListId": 2179,
@@ -14668,12 +14626,6 @@
     "id": 2567,
     "primariness": 1,
     "url": "http://blacklists.ntop.org/adblocker-hostnames.txt"
-  },
-  {
-    "filterListId": 2390,
-    "id": 2568,
-    "primariness": 1,
-    "url": "http://blacklists.ntop.org/blacklist-ip.txt"
   },
   {
     "filterListId": 2392,
