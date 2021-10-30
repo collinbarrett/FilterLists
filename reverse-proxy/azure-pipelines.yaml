@@ -20,16 +20,24 @@ steps:
     fetchDepth: 5
 
   - task: CopyFiles@2
-    displayName: stage files
+    displayName: stage config files
     inputs:
       Contents: |
-        docker-compose/docker-compose.yml
-        docker-compose/docker-compose.prod.yml
         reverse-proxy/server-includes/*
         reverse-proxy/location-includes/*
         reverse-proxy/conf.d/*
       TargetFolder: $(Build.ArtifactStagingDirectory)
     condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
+
+  - task: CopyFiles@2
+    displayName: stage docker-compose files
+    inputs:
+      SourceFolder: $(Build.SourcesDirectory)/docker-compose
+      Contents: |
+        docker-compose.yml
+        docker-compose.prod.yml
+      TargetFolder: $(Build.ArtifactStagingDirectory)
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 
   - task: PublishBuildArtifacts@1
     displayName: publish files
