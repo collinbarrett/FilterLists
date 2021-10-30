@@ -1,6 +1,6 @@
 # for integration testing directory migrations
 
-version: "3.8"
+version: "3.7"
 
 services:
   directory-migrations-tests:

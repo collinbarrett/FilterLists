@@ -1,7 +1,7 @@
 # overrides for production build
 # https://github.com/docker/compose/issues/4047
 
-version: "3.8"
+version: "3.7"
 
 services:
   archival-api:
