@@ -11,6 +11,8 @@ services:
       - ./reverse-proxy/location-includes:/etc/nginx/location-includes:ro
       - ./reverse-proxy/conf.d:/etc/nginx/conf.d:ro
       - ~/cert:/etc/nginx/cert:ro
+    depends_on:
+      - web
 
   web:
     image: ghcr.io/collinbarrett/filterlists-web

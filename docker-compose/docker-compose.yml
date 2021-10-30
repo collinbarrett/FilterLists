@@ -6,6 +6,10 @@ services:
     restart: on-failure:3
     networks:
       - reverse-proxy
+    depends_on:
+      - api-docs
+      - archival-api
+      - directory-api
 
   api-docs:
     image: swaggerapi/swagger-ui:latest
@@ -13,6 +17,7 @@ services:
     networks:
       - reverse-proxy
     depends_on:
+      - archival-api
       - directory-api
     env_file:
       - api-docs.env
