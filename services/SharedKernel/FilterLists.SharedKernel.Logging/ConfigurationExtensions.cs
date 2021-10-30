@@ -1,5 +1,6 @@
 ﻿using FilterLists.SharedKernel.Logging.Options;
 using Microsoft.ApplicationInsights.Channel;
+using Microsoft.ApplicationInsights.Extensibility.Implementation;
 using Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
@@ -25,6 +26,7 @@ namespace FilterLists.SharedKernel.Logging
                     .ServerTelemetryChannelStoragePath
             };
             services.AddSingleton(typeof(ITelemetryChannel), serverTelemetryChannel);
+            TelemetryDebugWriter.IsTracingDisabled = true;
             services.AddApplicationInsightsTelemetry();
         }
 
