@@ -34,7 +34,7 @@ namespace FilterLists.Archival.Application.Commands
                 int archiveCount;
                 TimeSpan spacing;
 #if DEBUG
-                archiveCount = 25;
+                archiveCount = 0;
                 spacing = TimeSpan.FromSeconds(5);
 #else
                 archiveCount = 0;
