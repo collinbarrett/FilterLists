@@ -4,41 +4,27 @@ updates:
   directory: "/services/Archival/FilterLists.Archival.Api"
   schedule:
     interval: daily
-    time: "11:00"
-  open-pull-requests-limit: 99
 - package-ecosystem: nuget
   directory: "/services/Archival/FilterLists.Archival.Api"
   schedule:
     interval: daily
-    time: "11:00"
-  open-pull-requests-limit: 99
 - package-ecosystem: docker
   directory: "/services/Directory/FilterLists.Directory.Api"
   schedule:
     interval: daily
-    time: "11:00"
-  open-pull-requests-limit: 99
 - package-ecosystem: nuget
   directory: "/services/Directory/FilterLists.Directory.Api"
   schedule:
     interval: daily
-    time: "11:00"
-  open-pull-requests-limit: 99
 - package-ecosystem: nuget
   directory: "/services/Directory/FilterLists.Directory.Infrastructure.Migrations.Tests"
   schedule:
     interval: daily
-    time: "11:00"
-  open-pull-requests-limit: 99
 - package-ecosystem: docker
   directory: "/web"
   schedule:
     interval: daily
-    time: "11:00"
-  open-pull-requests-limit: 99
 - package-ecosystem: npm
   directory: "/web"
   schedule:
     interval: daily
-    time: "11:00"
-  open-pull-requests-limit: 99
