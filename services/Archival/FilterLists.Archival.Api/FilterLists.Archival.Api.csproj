@@ -17,6 +17,9 @@
         <Copyright>Copyright (c) 2021 Collin M. Barrett</Copyright>
         <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
         <PackageProjectUrl>https://filterlists.com</PackageProjectUrl>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <DockerfileContext>..\..</DockerfileContext>
+        <DockerComposeProjectPath>..\..\..\docker-compose\docker-compose.dcproj</DockerComposeProjectPath>
     </PropertyGroup>
 
     <ItemGroup>
