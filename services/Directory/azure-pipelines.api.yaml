@@ -10,14 +10,15 @@ trigger:
         services/Directory/FilterLists.Directory.Infrastructure/*,
         services/Directory/FilterLists.Directory.Infrastructure.Migrations/*,
         services/Directory/FilterLists.Directory.Api.Contracts/*,
-        services/Directory/FilterLists.Directory.Application/*,        
+        services/Directory/FilterLists.Directory.Application/*,
         services/Directory/FilterLists.Directory.Api/*,
         services/.dockerignore,
         docker-compose/docker-compose.yml,
         docker-compose/docker-compose.prod.yml,
+        docker-compose/docker-compose.prod.build.yml,
         docker-compose/.env,
         docker-compose/directory-db.env,
-        docker-compose/directory-api.env
+        docker-compose/directory-api.env,
       ]
 
 pr:
@@ -32,22 +33,19 @@ pr:
         services/Directory/FilterLists.Directory.Infrastructure/*,
         services/Directory/FilterLists.Directory.Infrastructure.Migrations/*,
         services/Directory/FilterLists.Directory.Api.Contracts/*,
-        services/Directory/FilterLists.Directory.Application/*,        
+        services/Directory/FilterLists.Directory.Application/*,
         services/Directory/FilterLists.Directory.Api/*,
         services/.dockerignore,
         docker-compose/docker-compose.yml,
         docker-compose/docker-compose.prod.yml,
+        docker-compose/docker-compose.prod.build.yml,
         docker-compose/.env,
         docker-compose/directory-db.env,
-        docker-compose/directory-api.env
+        docker-compose/directory-api.env,
       ]
 
 pool:
   vmImage: ubuntu-latest
-
-variables:
-  COMPOSE_DOCKER_CLI_BUILD: 1
-  DOCKER_BUILDKIT: 1
 
 steps:
   - checkout: self
@@ -64,7 +62,8 @@ steps:
       tags: |
         latest
         $(Build.BuildId)
-      addPipelineData: false
+    env:
+      DOCKER_BUILDKIT: 1
 
   - task: Docker@2
     displayName: push
@@ -75,18 +74,17 @@ steps:
       tags: |
         latest
         $(Build.BuildId)
+    env:
+      DOCKER_BUILDKIT: 1
     condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 
   - task: CopyFiles@2
     displayName: stage docker-compose files
     inputs:
-      SourceFolder: $(Build.SourcesDirectory)/docker-compose
       Contents: |
-        docker-compose.yml
-        docker-compose.prod.yml
+        docker-compose/docker-compose.yml
+        docker-compose/docker-compose.prod.yml
       TargetFolder: $(Build.ArtifactStagingDirectory)
-      CleanTargetFolder: true
-      OverWrite: true
     condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 
   - task: PublishBuildArtifacts@1

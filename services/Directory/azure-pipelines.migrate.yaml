@@ -13,8 +13,6 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  COMPOSE_DOCKER_CLI_BUILD: 1
-  DOCKER_BUILDKIT: 1
   DOTNET_CLI_TELEMETRY_OPTOUT: true
 
 steps:
@@ -150,6 +148,8 @@ steps:
     inputs:
       dockerComposeFile: ./docker-compose/docker-compose.directory.migrations.tests.yml
       dockerComposeCommand: build directory-migrations-tests
+    env:
+      COMPOSE_DOCKER_CLI_BUILD: 1
 
   - task: Docker@2
     displayName: create volume directory-migrations-tests-results
@@ -157,6 +157,8 @@ steps:
     inputs:
       command: volume
       arguments: create directory-migrations-tests-results
+    env:
+      DOCKER_BUILDKIT: 1
 
   - task: DockerCompose@0
     displayName: up test-migrations db
@@ -164,6 +166,8 @@ steps:
     inputs:
       dockerComposeFile: ./docker-compose/docker-compose.directory.migrations.tests.yml
       dockerComposeCommand: up -d directory-db
+    env:
+      COMPOSE_DOCKER_CLI_BUILD: 1
 
   - task: DockerCompose@0
     displayName: run test-migrations
@@ -171,6 +175,8 @@ steps:
     inputs:
       dockerComposeFile: ./docker-compose/docker-compose.directory.migrations.tests.yml
       dockerComposeCommand: run directory-migrations-tests
+    env:
+      COMPOSE_DOCKER_CLI_BUILD: 1
 
   - task: Docker@2
     displayName: create container directory-migrations-tests-results
@@ -178,6 +184,8 @@ steps:
     inputs:
       command: container
       arguments: create --name directory-migrations-tests-results -v directory-migrations-tests-results:/results hello-world
+    env:
+      DOCKER_BUILDKIT: 1
 
   - task: Docker@2
     displayName: copy out test-migrations results
@@ -185,6 +193,8 @@ steps:
     inputs:
       command: cp
       arguments: directory-migrations-tests-results:/results $(System.DefaultWorkingDirectory)
+    env:
+      DOCKER_BUILDKIT: 1
 
   - task: PublishTestResults@2
     displayName: publish test results
