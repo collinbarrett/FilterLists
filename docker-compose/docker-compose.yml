@@ -6,8 +6,6 @@ services:
     restart: always
     networks:
       - reverse-proxy
-    depends_on:
-      - directory-api
 
   api-docs:
     image: swaggerapi/swagger-ui:latest
