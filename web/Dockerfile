@@ -4,7 +4,9 @@ LABEL org.opencontainers.image.description="filterlists.com | github.com/collinb
 COPY server/conf.d /etc/nginx/conf.d
 
 # init build
-FROM node:alpine as build
+# https://github.com/facebook/create-react-app/issues/11565
+# FROM node:alpine as build
+FROM node:lts-alpine3.14 as build
 
 # https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md#node-gyp-alpine
 RUN apk add --no-cache python3 make g++
