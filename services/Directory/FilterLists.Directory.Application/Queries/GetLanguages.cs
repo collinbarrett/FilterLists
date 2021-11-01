@@ -33,7 +33,9 @@ namespace FilterLists.Directory.Application.Queries
                 CancellationToken cancellationToken)
             {
                 return await _context.Languages
+#pragma warning disable RCS1080 // Use 'Count/Length' property instead of 'Any' method.
                     .Where(l => l.FilterListLanguages.Any())
+#pragma warning restore RCS1080 // Use 'Count/Length' property instead of 'Any' method.
                     .OrderBy(l => l.Iso6391)
                     .ProjectTo<LanguageVm>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
