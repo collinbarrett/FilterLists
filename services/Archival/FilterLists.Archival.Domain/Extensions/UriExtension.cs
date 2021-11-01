@@ -5,7 +5,7 @@ namespace FilterLists.Archival.Domain.Extensions
 {
     internal static class UriExtension
     {
-        private static readonly Uri DummyBaseUri = new Uri("http://localhost");
+        private static readonly Uri DummyBaseUri = new("http://localhost");
 
         public static string GetFileExtension(this Uri uri)
         {

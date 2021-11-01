@@ -14,9 +14,7 @@ namespace FilterLists.Archival.Api.Controllers
         /// <returns>Pong.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
-#pragma warning disable CA1822 // Mark members as static
         public ActionResult<string> Ping()
-#pragma warning restore CA1822 // Mark members as static
         {
             return "pong";
         }
