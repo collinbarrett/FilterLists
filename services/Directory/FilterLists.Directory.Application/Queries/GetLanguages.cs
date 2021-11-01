@@ -33,7 +33,7 @@ namespace FilterLists.Directory.Application.Queries
                 CancellationToken cancellationToken)
             {
                 return await _context.Languages
-                    .Where(l => l.FilterListLanguages.Count > 0)
+                    .Where(l => l.FilterListLanguages.Any())
                     .OrderBy(l => l.Iso6391)
                     .ProjectTo<LanguageVm>(_mapper.ConfigurationProvider)
                     .ToListAsync(cancellationToken);
@@ -54,9 +54,9 @@ namespace FilterLists.Directory.Application.Queries
 
         public class LanguageVm
         {
-            public string Iso6391 { get; } = null!;
-            public string Name { get; } = null!;
-            public IEnumerable<int>? FilterListIds { get; }
+            public string Iso6391 { get; private set; } = null!;
+            public string Name { get; private set; } = null!;
+            public IEnumerable<int>? FilterListIds { get; private set; }
         }
     }
 }

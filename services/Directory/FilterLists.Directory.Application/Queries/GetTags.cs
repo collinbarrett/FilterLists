@@ -52,10 +52,10 @@ namespace FilterLists.Directory.Application.Queries
 
         public class TagVm
         {
-            public int Id { get; }
-            public string Name { get; } = null!;
-            public string? Description { get; }
-            public IEnumerable<int>? FilterListIds { get; }
+            public int Id { get; private set; }
+            public string Name { get; private set; } = null!;
+            public string? Description { get; private set; }
+            public IEnumerable<int>? FilterListIds { get; private set; }
         }
     }
 }
