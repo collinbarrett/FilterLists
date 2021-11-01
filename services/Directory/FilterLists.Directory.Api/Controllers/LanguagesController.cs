@@ -19,7 +19,7 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         /// <summary>
-        /// Gets the languages targeted by FilterLists.
+        ///     Gets the languages targeted by FilterLists.
         /// </summary>
         /// <param name="cancellationToken">The cancellation token.</param>
         /// <returns>The languages targeted by FilterLists.</returns>

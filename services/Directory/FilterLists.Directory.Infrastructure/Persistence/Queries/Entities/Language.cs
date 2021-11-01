@@ -8,7 +8,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     {
         public string Iso6391 { get; set; } = null!;
         public string Name { get; set; } = null!;
-        public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; private set; } = new HashSet<FilterListLanguage>();
+        public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; } = new HashSet<FilterListLanguage>();
     }
 
     internal class LanguageTypeConfiguration : IEntityTypeConfiguration<Language>

@@ -56,7 +56,8 @@ namespace FilterLists.Directory.Application.Queries
                             fl.FilterListTags.Select(flt => flt.TagId).OrderBy(tid => tid).AsEnumerable()))
                     .ForMember(fl => fl.MaintainerIds,
                         o => o.MapFrom(fl =>
-                            fl.FilterListMaintainers.Select(flm => flm.MaintainerId).OrderBy(mid => mid).AsEnumerable()));
+                            fl.FilterListMaintainers.Select(flm => flm.MaintainerId).OrderBy(mid => mid)
+                                .AsEnumerable()));
             }
         }
     }

@@ -6,9 +6,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     public class FilterListLanguage
     {
         public int FilterListId { get; set; }
-        public FilterList FilterList { get; private set; } = null!;
+        public FilterList FilterList { get; } = null!;
         public string Iso6391 { get; set; } = null!;
-        public Language Language { get; private set; } = null!;
+        public Language Language { get; } = null!;
     }
 
     internal class FilterListLanguageTypeConfiguration : IEntityTypeConfiguration<FilterListLanguage>
@@ -16,7 +16,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<FilterListLanguage> builder)
         {
             builder.ToTable(nameof(FilterListLanguage) + "s");
-            builder.HasKey(fll => new {fll.FilterListId, fll.Iso6391});
+            builder.HasKey(fll => new { fll.FilterListId, fll.Iso6391 });
             builder.HasDataJsonFile<FilterListLanguage>();
         }
     }

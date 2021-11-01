@@ -31,7 +31,7 @@ namespace FilterLists.Directory.Api.Controllers
                 entry.AbsoluteExpirationRelativeToNow = absoluteExpirationRelativeToNow;
                 return actionAsync();
             });
-            return result is null ? NotFound() : (IActionResult)Ok(result);
+            return result is null ? NotFound() : Ok(result);
         }
     }
 }

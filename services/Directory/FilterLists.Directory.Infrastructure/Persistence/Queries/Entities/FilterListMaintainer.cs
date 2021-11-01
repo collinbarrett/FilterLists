@@ -6,9 +6,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     public class FilterListMaintainer
     {
         public int FilterListId { get; set; }
-        public FilterList FilterList { get; private set; } = null!;
+        public FilterList FilterList { get; } = null!;
         public int MaintainerId { get; set; }
-        public Maintainer Maintainer { get; private set; } = null!;
+        public Maintainer Maintainer { get; } = null!;
     }
 
     internal class FilterListMaintainerTypeConfiguration : IEntityTypeConfiguration<FilterListMaintainer>
@@ -16,7 +16,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<FilterListMaintainer> builder)
         {
             builder.ToTable(nameof(FilterListMaintainer) + "s");
-            builder.HasKey(flm => new {flm.FilterListId, flm.MaintainerId});
+            builder.HasKey(flm => new { flm.FilterListId, flm.MaintainerId });
             builder.HasDataJsonFile<FilterListMaintainer>();
         }
     }

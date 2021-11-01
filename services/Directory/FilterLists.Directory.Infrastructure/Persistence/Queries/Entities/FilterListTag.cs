@@ -6,9 +6,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     public class FilterListTag
     {
         public int FilterListId { get; set; }
-        public FilterList FilterList { get; private set; } = null!;
+        public FilterList FilterList { get; } = null!;
         public int TagId { get; set; }
-        public Tag Tag { get; private set; } = null!;
+        public Tag Tag { get; } = null!;
     }
 
     internal class FilterListTagTypeConfiguration : IEntityTypeConfiguration<FilterListTag>
@@ -16,7 +16,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<FilterListTag> builder)
         {
             builder.ToTable(nameof(FilterListTag) + "s");
-            builder.HasKey(flt => new {flt.FilterListId, flt.TagId});
+            builder.HasKey(flt => new { flt.FilterListId, flt.TagId });
             builder.HasDataJsonFile<FilterListTag>();
         }
     }

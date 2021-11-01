@@ -6,9 +6,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     public class Dependent
     {
         public int DependencyFilterListId { get; set; }
-        public FilterList DependencyFilterList { get; private set; } = null!;
+        public FilterList DependencyFilterList { get; } = null!;
         public int DependentFilterListId { get; set; }
-        public FilterList DependentFilterList { get; private set; } = null!;
+        public FilterList DependentFilterList { get; } = null!;
     }
 
     internal class DependentTypeConfiguration : IEntityTypeConfiguration<Dependent>
@@ -16,7 +16,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<Dependent> builder)
         {
             builder.ToTable(nameof(Dependent) + "s");
-            builder.HasKey(d => new {d.DependencyFilterListId, d.DependentFilterListId});
+            builder.HasKey(d => new { d.DependencyFilterListId, d.DependentFilterListId });
             builder.HasOne(d => d.DependencyFilterList)
                 .WithMany(fl => fl.DependentFilterLists)
                 .HasForeignKey(d => d.DependencyFilterListId);

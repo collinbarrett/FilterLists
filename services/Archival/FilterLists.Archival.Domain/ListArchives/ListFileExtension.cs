@@ -10,36 +10,36 @@ namespace FilterLists.Archival.Domain.ListArchives
         private static readonly IDictionary<string, (bool IsPlainText, bool IsMeaningfulToConsumer)> Info =
             new Dictionary<string, (bool, bool)>
             {
-                {string.Empty, (true, false)},
-                {".txt", (true, false)},
-                {".7z", (false, false)},
-                {".action", (true, true)}, // Privoxy
-                {".all", (true, false)},
-                {".aspx", (true, false)},
-                {".bat", (true, true)},
-                {".blacklist", (true, false)},
-                {".cidr", (true, true)},
-                {".conf", (true, true)}, // dnsmasq / Unbound / BIND
-                {".csv", (true, true)},
-                {".dat", (true, true)}, // Halite for Windows
-                {".deny", (true, true)},
-                {".gz", (false, false)},
-                {".hosts", (true, true)},
-                {".ips", (true, false)},
-                {".ipset", (true, true)}, // Firehol
-                {".json", (true, true)},
-                {".list", (true, false)},
-                {".lsrules", (true, true)}, // Little Snitch
-                {".md", (true, true)},
-                {".netset", (true, true)}, // Firehol
-                {".p2p", (true, true)}, // Peer Guardian
-                {".php", (true, false)},
-                {".raw", (true, false)},
-                {".rpz", (true, true)}, // Response Policy Zone
-                {".tpl", (true, true)}, // Internet Explorer
-                {".uBl", (true, false)},
-                {".zip", (false, false)},
-                {".zone", (true, false)}
+                { string.Empty, (true, false) },
+                { ".txt", (true, false) },
+                { ".7z", (false, false) },
+                { ".action", (true, true) }, // Privoxy
+                { ".all", (true, false) },
+                { ".aspx", (true, false) },
+                { ".bat", (true, true) },
+                { ".blacklist", (true, false) },
+                { ".cidr", (true, true) },
+                { ".conf", (true, true) }, // dnsmasq / Unbound / BIND
+                { ".csv", (true, true) },
+                { ".dat", (true, true) }, // Halite for Windows
+                { ".deny", (true, true) },
+                { ".gz", (false, false) },
+                { ".hosts", (true, true) },
+                { ".ips", (true, false) },
+                { ".ipset", (true, true) }, // Firehol
+                { ".json", (true, true) },
+                { ".list", (true, false) },
+                { ".lsrules", (true, true) }, // Little Snitch
+                { ".md", (true, true) },
+                { ".netset", (true, true) }, // Firehol
+                { ".p2p", (true, true) }, // Peer Guardian
+                { ".php", (true, false) },
+                { ".raw", (true, false) },
+                { ".rpz", (true, true) }, // Response Policy Zone
+                { ".tpl", (true, true) }, // Internet Explorer
+                { ".uBl", (true, false) },
+                { ".zip", (false, false) },
+                { ".zone", (true, false) }
             };
 
         private ListFileExtension(string value)
@@ -60,7 +60,7 @@ namespace FilterLists.Archival.Domain.ListArchives
 
         protected override IEnumerable<object> GetEqualityComponents()
         {
-            return new[] {Value};
+            return new[] { Value };
         }
     }
 }

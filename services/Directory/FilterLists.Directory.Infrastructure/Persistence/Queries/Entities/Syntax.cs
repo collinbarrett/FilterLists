@@ -11,8 +11,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public string Name { get; set; } = null!;
         public string? Description { get; set; }
         public Uri? Url { get; set; }
-        public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; private set; } = new HashSet<FilterListSyntax>();
-        public IReadOnlyCollection<SoftwareSyntax> SoftwareSyntaxes { get; private set; } = new HashSet<SoftwareSyntax>();
+        public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; } = new HashSet<FilterListSyntax>();
+        public IReadOnlyCollection<SoftwareSyntax> SoftwareSyntaxes { get; } = new HashSet<SoftwareSyntax>();
     }
 
     internal class SyntaxTypeConfiguration : IEntityTypeConfiguration<Syntax>

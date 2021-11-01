@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using FilterLists.Directory.Infrastructure;
+﻿using FilterLists.Directory.Infrastructure;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;

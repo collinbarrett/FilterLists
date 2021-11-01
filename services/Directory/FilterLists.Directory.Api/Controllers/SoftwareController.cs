@@ -19,7 +19,7 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         /// <summary>
-        /// Gets the software that subscribes to FilterLists.
+        ///     Gets the software that subscribes to FilterLists.
         /// </summary>
         /// <param name="cancellationToken">The cancellation token.</param>
         /// <returns>The software that subscribes to FilterLists.</returns>

@@ -13,10 +13,10 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public string? Description { get; set; }
         public int? LicenseId { get; set; }
         public License? License { get; set; }
-        public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; private set; } = new HashSet<FilterListSyntax>();
-        public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; private set; } = new HashSet<FilterListLanguage>();
-        public IReadOnlyCollection<FilterListTag> FilterListTags { get; private set; } = new HashSet<FilterListTag>();
-        public IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; private set; } = new HashSet<FilterListViewUrl>();
+        public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; } = new HashSet<FilterListSyntax>();
+        public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; } = new HashSet<FilterListLanguage>();
+        public IReadOnlyCollection<FilterListTag> FilterListTags { get; } = new HashSet<FilterListTag>();
+        public IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; } = new HashSet<FilterListViewUrl>();
         public Uri? HomeUrl { get; set; }
         public Uri? OnionUrl { get; set; }
         public Uri? PolicyUrl { get; set; }
@@ -26,13 +26,16 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public Uri? ChatUrl { get; set; }
         public string? EmailAddress { get; set; }
         public Uri? DonateUrl { get; set; }
-        public IReadOnlyCollection<FilterListMaintainer> FilterListMaintainers { get; private set; } = new HashSet<FilterListMaintainer>();
-        public IReadOnlyCollection<Fork> UpstreamFilterLists { get; private set; } = new HashSet<Fork>();
-        public IReadOnlyCollection<Fork> ForkFilterLists { get; private set; } = new HashSet<Fork>();
-        public IReadOnlyCollection<Merge> IncludedInFilterLists { get; private set; } = new HashSet<Merge>();
-        public IReadOnlyCollection<Merge> IncludesFilterLists { get; private set; } = new HashSet<Merge>();
-        public IReadOnlyCollection<Dependent> DependencyFilterLists { get; private set; } = new HashSet<Dependent>();
-        public IReadOnlyCollection<Dependent> DependentFilterLists { get; private set; } = new HashSet<Dependent>();
+
+        public IReadOnlyCollection<FilterListMaintainer> FilterListMaintainers { get; } =
+            new HashSet<FilterListMaintainer>();
+
+        public IReadOnlyCollection<Fork> UpstreamFilterLists { get; } = new HashSet<Fork>();
+        public IReadOnlyCollection<Fork> ForkFilterLists { get; } = new HashSet<Fork>();
+        public IReadOnlyCollection<Merge> IncludedInFilterLists { get; } = new HashSet<Merge>();
+        public IReadOnlyCollection<Merge> IncludesFilterLists { get; } = new HashSet<Merge>();
+        public IReadOnlyCollection<Dependent> DependencyFilterLists { get; } = new HashSet<Dependent>();
+        public IReadOnlyCollection<Dependent> DependentFilterLists { get; } = new HashSet<Dependent>();
     }
 
     internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList>

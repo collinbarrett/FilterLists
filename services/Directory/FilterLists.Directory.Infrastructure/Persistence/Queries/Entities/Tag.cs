@@ -9,7 +9,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public int Id { get; set; }
         public string Name { get; set; } = null!;
         public string? Description { get; set; }
-        public IReadOnlyCollection<FilterListTag> FilterListTags { get; private set; } = new HashSet<FilterListTag>();
+        public IReadOnlyCollection<FilterListTag> FilterListTags { get; } = new HashSet<FilterListTag>();
     }
 
     internal class TagTypeConfiguration : IEntityTypeConfiguration<Tag>

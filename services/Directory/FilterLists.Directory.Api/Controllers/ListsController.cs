@@ -20,7 +20,7 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         /// <summary>
-        /// Gets the FilterLists..
+        ///     Gets the FilterLists..
         /// </summary>
         /// <param name="cancellationToken">The cancellation token.</param>
         /// <returns>The FilterLists.</returns>
@@ -33,7 +33,7 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         /// <summary>
-        /// Gets the details of the FilterList.
+        ///     Gets the details of the FilterList.
         /// </summary>
         /// <param name="id">The identifier of the FilterList.</param>
         /// <param name="cancellationToken">The cancellation token.</param>
@@ -43,7 +43,8 @@ namespace FilterLists.Directory.Api.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetDetails(int id, CancellationToken cancellationToken)
         {
-            return await CacheGetOrCreateAsync(() => _mediator.Send(new GetListDetails.Query(id), cancellationToken), id);
+            return await CacheGetOrCreateAsync(() => _mediator.Send(new GetListDetails.Query(id), cancellationToken),
+                id);
         }
     }
 }

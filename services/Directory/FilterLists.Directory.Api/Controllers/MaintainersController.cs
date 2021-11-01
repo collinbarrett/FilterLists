@@ -19,7 +19,7 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         /// <summary>
-        /// Gets the maintainers of FilterLists.
+        ///     Gets the maintainers of FilterLists.
         /// </summary>
         /// <param name="cancellationToken">The cancellation token.</param>
         /// <returns>The maintainers of FilterLists.</returns>

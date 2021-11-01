@@ -13,7 +13,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public Uri? HomeUrl { get; set; }
         public Uri? DownloadUrl { get; set; }
         public bool SupportsAbpUrlScheme { get; set; }
-        public IReadOnlyCollection<SoftwareSyntax> SoftwareSyntaxes { get; private set; } = new HashSet<SoftwareSyntax>();
+        public IReadOnlyCollection<SoftwareSyntax> SoftwareSyntaxes { get; } = new HashSet<SoftwareSyntax>();
     }
 
     internal class SoftwareTypeConfiguration : IEntityTypeConfiguration<Software>

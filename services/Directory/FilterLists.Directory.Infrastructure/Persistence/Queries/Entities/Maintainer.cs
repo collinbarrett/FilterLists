@@ -12,7 +12,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public Uri? Url { get; set; }
         public string? EmailAddress { get; set; }
         public string? TwitterHandle { get; set; }
-        public IReadOnlyCollection<FilterListMaintainer> FilterListMaintainers { get; private set; } = new HashSet<FilterListMaintainer>();
+
+        public IReadOnlyCollection<FilterListMaintainer> FilterListMaintainers { get; } =
+            new HashSet<FilterListMaintainer>();
     }
 
     internal class MaintainerTypeConfiguration : IEntityTypeConfiguration<Maintainer>

@@ -19,7 +19,7 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         /// <summary>
-        /// Gets the tags of FilterLists.
+        ///     Gets the tags of FilterLists.
         /// </summary>
         /// <param name="cancellationToken">The cancellation token.</param>
         /// <returns>The tags of FilterLists.</returns>

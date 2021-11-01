@@ -19,7 +19,7 @@ namespace FilterLists.Directory.Api.Controllers
         }
 
         /// <summary>
-        /// Gets the licenses applied to FilterLists.
+        ///     Gets the licenses applied to FilterLists.
         /// </summary>
         /// <param name="cancellationToken">The cancellation token.</param>
         /// <returns>The licenses applied to FilterLists.</returns>

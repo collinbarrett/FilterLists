@@ -17,10 +17,11 @@ namespace FilterLists.Archival.Api
                 o.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "FilterLists Archival API",
-                    Description = "An ASP.NET Core API archiving and serving copies of FilterLists for mirrors and analysis.",
+                    Description =
+                        "An ASP.NET Core API archiving and serving copies of FilterLists for mirrors and analysis.",
                     Version = "v1",
                     //TermsOfService = "",
-                    Contact = new OpenApiContact {Name = "FilterLists", Url = new Uri("https://filterlists.com")},
+                    Contact = new OpenApiContact { Name = "FilterLists", Url = new Uri("https://filterlists.com") },
                     License = new OpenApiLicense
                     {
                         Name = "MIT License",
@@ -42,9 +43,9 @@ namespace FilterLists.Archival.Api
                 o.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.Servers = new List<OpenApiServer>
                 {
 #if DEBUG
-                    new OpenApiServer {Url = $"{httpReq.Scheme}://{httpReq.Host.Value}:8080/api/archival"}
+                    new() { Url = $"{httpReq.Scheme}://{httpReq.Host.Value}:8080/api/archival" }
 #else
-                    new OpenApiServer {Url = $"https://{httpReq.Host.Value}/api/archival"}
+                    new() { Url = $"https://{httpReq.Host.Value}/api/archival" }
 #endif
                 });
             });

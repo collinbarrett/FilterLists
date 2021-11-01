@@ -63,25 +63,32 @@ namespace FilterLists.Directory.Application.Queries
                             fl.ViewUrls.OrderBy(u => u.SegmentNumber).ThenBy(u => u.Primariness).AsEnumerable()))
                     .ForMember(fl => fl.MaintainerIds,
                         o => o.MapFrom(fl =>
-                            fl.FilterListMaintainers.Select(flm => flm.MaintainerId).OrderBy(mid => mid).AsEnumerable()))
+                            fl.FilterListMaintainers.Select(flm => flm.MaintainerId).OrderBy(mid => mid)
+                                .AsEnumerable()))
                     .ForMember(fl => fl.UpstreamFilterListIds,
                         o => o.MapFrom(fl =>
-                            fl.UpstreamFilterLists.Select(ufl => ufl.UpstreamFilterListId).OrderBy(flid => flid).AsEnumerable()))
+                            fl.UpstreamFilterLists.Select(ufl => ufl.UpstreamFilterListId).OrderBy(flid => flid)
+                                .AsEnumerable()))
                     .ForMember(fl => fl.ForkFilterListIds,
                         o => o.MapFrom(fl =>
-                            fl.ForkFilterLists.Select(ffl => ffl.ForkFilterListId).OrderBy(flid => flid).AsEnumerable()))
+                            fl.ForkFilterLists.Select(ffl => ffl.ForkFilterListId).OrderBy(flid => flid)
+                                .AsEnumerable()))
                     .ForMember(fl => fl.IncludedInFilterListIds,
                         o => o.MapFrom(fl =>
-                            fl.IncludedInFilterLists.Select(iifl => iifl.IncludedInFilterListId).OrderBy(flid => flid).AsEnumerable()))
+                            fl.IncludedInFilterLists.Select(iifl => iifl.IncludedInFilterListId).OrderBy(flid => flid)
+                                .AsEnumerable()))
                     .ForMember(fl => fl.IncludesFilterListIds,
                         o => o.MapFrom(fl =>
-                            fl.IncludesFilterLists.Select(ifl => ifl.IncludesFilterListId).OrderBy(flid => flid).AsEnumerable()))
+                            fl.IncludesFilterLists.Select(ifl => ifl.IncludesFilterListId).OrderBy(flid => flid)
+                                .AsEnumerable()))
                     .ForMember(fl => fl.DependencyFilterListIds,
                         o => o.MapFrom(fl =>
-                            fl.DependencyFilterLists.Select(dfl => dfl.DependencyFilterListId).OrderBy(flid => flid).AsEnumerable()))
+                            fl.DependencyFilterLists.Select(dfl => dfl.DependencyFilterListId).OrderBy(flid => flid)
+                                .AsEnumerable()))
                     .ForMember(fl => fl.DependentFilterListIds,
                         o => o.MapFrom(fl =>
-                            fl.DependentFilterLists.Select(dfl => dfl.DependentFilterListId).OrderBy(flid => flid).AsEnumerable()));
+                            fl.DependentFilterLists.Select(dfl => dfl.DependentFilterListId).OrderBy(flid => flid)
+                                .AsEnumerable()));
             }
         }
 

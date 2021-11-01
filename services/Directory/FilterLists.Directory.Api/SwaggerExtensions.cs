@@ -20,7 +20,7 @@ namespace FilterLists.Directory.Api
                     Description = "An ASP.NET Core API serving the core FilterList information.",
                     Version = "v1",
                     //TermsOfService = "",
-                    Contact = new OpenApiContact {Name = "FilterLists", Url = new Uri("https://filterlists.com")},
+                    Contact = new OpenApiContact { Name = "FilterLists", Url = new Uri("https://filterlists.com") },
                     License = new OpenApiLicense
                     {
                         Name = "MIT License",
@@ -42,9 +42,9 @@ namespace FilterLists.Directory.Api
                 o.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.Servers = new List<OpenApiServer>
                 {
 #if DEBUG
-                    new OpenApiServer {Url = $"{httpReq.Scheme}://{httpReq.Host.Value}:8080/api/directory"}
+                    new() { Url = $"{httpReq.Scheme}://{httpReq.Host.Value}:8080/api/directory" }
 #else
-                    new OpenApiServer {Url = $"https://{httpReq.Host.Value}/api/directory"}
+                    new() { Url = $"https://{httpReq.Host.Value}/api/directory" }
 #endif
                 });
             });

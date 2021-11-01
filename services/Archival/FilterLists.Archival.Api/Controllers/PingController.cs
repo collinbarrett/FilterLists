@@ -9,7 +9,7 @@ namespace FilterLists.Archival.Api.Controllers
     public class PingController : ControllerBase
     {
         /// <summary>
-        /// A sample endpoint.
+        ///     A sample endpoint.
         /// </summary>
         /// <returns>Pong.</returns>
         [HttpGet]

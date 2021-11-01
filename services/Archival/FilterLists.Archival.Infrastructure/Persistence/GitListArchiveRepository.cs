@@ -75,7 +75,8 @@ namespace FilterLists.Archival.Infrastructure.Persistence
             {
                 var fileNames = _writtenFiles.Select(f => f.Name).ToList();
                 var signature = new Signature(_options.UserName, _options.UserEmail, DateTime.UtcNow);
-                var message = $"feat(archives): archive {fileNames.Count} file(s){Environment.NewLine}{string.Join(Environment.NewLine, fileNames)}";
+                var message =
+                    $"feat(archives): archive {fileNames.Count} file(s){Environment.NewLine}{string.Join(Environment.NewLine, fileNames)}";
                 Commands.Stage(_repo, fileNames);
                 try
                 {

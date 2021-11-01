@@ -1,27 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
-        <Nullable>enable</Nullable>
-    </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
 
-    <PropertyGroup>
-        <Authors>Collin M. Barrett</Authors>
-        <Company>FilterLists</Company>
-        <Product>FilterLists Directory</Product>
-        <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
-        <Copyright>Copyright (c) 2021 Collin M. Barrett</Copyright>
-        <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
-        <PackageProjectUrl>https://filterlists.com</PackageProjectUrl>
-    </PropertyGroup>
+  <PropertyGroup>
+    <Authors>Collin M. Barrett</Authors>
+    <Company>FilterLists</Company>
+    <Product>FilterLists Directory</Product>
+    <Description>The independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</Description>
+    <Copyright>Copyright (c) 2021 Collin M. Barrett</Copyright>
+    <RepositoryUrl>https://github.com/collinbarrett/FilterLists</RepositoryUrl>
+    <PackageProjectUrl>https://filterlists.com</PackageProjectUrl>
+  </PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
-        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
-    </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
+  </ItemGroup>
 
-    <ItemGroup>
-        <ProjectReference Include="..\..\SharedKernel\FilterLists.SharedKernel.Logging\FilterLists.SharedKernel.Logging.csproj" />
-    </ItemGroup>
+  <ItemGroup>
+    <ProjectReference
+      Include="..\..\SharedKernel\FilterLists.SharedKernel.Logging\FilterLists.SharedKernel.Logging.csproj" />
+  </ItemGroup>
 
 </Project>

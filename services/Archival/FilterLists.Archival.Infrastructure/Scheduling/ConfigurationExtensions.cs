@@ -19,7 +19,7 @@ namespace FilterLists.Archival.Infrastructure.Scheduling
 
         public static void UseScheduling(this IApplicationBuilder app)
         {
-            app.UseHangfireServer(new BackgroundJobServerOptions {WorkerCount = Environment.ProcessorCount});
+            app.UseHangfireServer(new BackgroundJobServerOptions { WorkerCount = Environment.ProcessorCount });
         }
     }
 }

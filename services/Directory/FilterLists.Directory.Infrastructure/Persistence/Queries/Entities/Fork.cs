@@ -6,9 +6,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     public class Fork
     {
         public int UpstreamFilterListId { get; set; }
-        public FilterList UpstreamFilterList { get; private set; } = null!;
+        public FilterList UpstreamFilterList { get; } = null!;
         public int ForkFilterListId { get; set; }
-        public FilterList ForkFilterList { get; private set; } = null!;
+        public FilterList ForkFilterList { get; } = null!;
     }
 
     internal class ForkTypeConfiguration : IEntityTypeConfiguration<Fork>
@@ -16,7 +16,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<Fork> builder)
         {
             builder.ToTable(nameof(Fork) + "s");
-            builder.HasKey(f => new {f.UpstreamFilterListId, f.ForkFilterListId});
+            builder.HasKey(f => new { f.UpstreamFilterListId, f.ForkFilterListId });
             builder.HasOne(f => f.UpstreamFilterList)
                 .WithMany(fl => fl.ForkFilterLists)
                 .HasForeignKey(f => f.UpstreamFilterListId);

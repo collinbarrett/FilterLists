@@ -35,7 +35,7 @@ namespace FilterLists.Archival.Application
             JobStorage.Current?.GetMonitoringApi()?.PurgeJobs();
             new EnqueueArchiveAllLists.Command().EnqueueBackgroundJob();
 #else
-            new EnqueueArchiveAllLists.Command().AddOrUpdateRecurringJob(Hangfire.Cron.Daily);
+            new EnqueueArchiveAllLists.Command().AddOrUpdateRecurringJob(Cron.Daily);
 #endif
         }
     }

@@ -6,9 +6,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
     public class SoftwareSyntax
     {
         public int SoftwareId { get; set; }
-        public Software Software { get; private set; } = null!;
+        public Software Software { get; } = null!;
         public int SyntaxId { get; set; }
-        public Syntax Syntax { get; private set; } = null!;
+        public Syntax Syntax { get; } = null!;
     }
 
     internal class SoftwareSyntaxTypeConfiguration : IEntityTypeConfiguration<SoftwareSyntax>
@@ -16,7 +16,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public virtual void Configure(EntityTypeBuilder<SoftwareSyntax> builder)
         {
             builder.ToTable(nameof(SoftwareSyntax) + "es");
-            builder.HasKey(ss => new {ss.SoftwareId, ss.SyntaxId});
+            builder.HasKey(ss => new { ss.SoftwareId, ss.SyntaxId });
             builder.HasDataJsonFile<SoftwareSyntax>();
         }
     }

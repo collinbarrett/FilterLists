@@ -21,7 +21,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
             builder.ToTable(nameof(FilterListViewUrl) + "s");
             builder.Property(u => u.SegmentNumber).HasDefaultValue(1);
             builder.Property(u => u.Primariness).HasDefaultValue(1);
-            builder.HasIndex(u => new {u.FilterListId, u.SegmentNumber, u.Primariness}).IsUnique();
+            builder.HasIndex(u => new { u.FilterListId, u.SegmentNumber, u.Primariness }).IsUnique();
             builder.HasDataJsonFile<FilterListViewUrl>();
         }
     }

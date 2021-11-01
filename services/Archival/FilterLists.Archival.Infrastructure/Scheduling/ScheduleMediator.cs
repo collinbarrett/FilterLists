@@ -32,7 +32,7 @@ namespace FilterLists.Archival.Infrastructure.Scheduling
         {
             /// https://codeopinion.com/background-commands-mediatr-hangfire/
             GlobalConfiguration.Configuration.UseSerializerSettings(
-                new JsonSerializerSettings {TypeNameHandling = TypeNameHandling.Objects});
+                new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Objects });
             return globalConfiguration;
         }
     }

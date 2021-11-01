@@ -13,7 +13,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
         public bool PermitsModification { get; set; }
         public bool PermitsDistribution { get; set; }
         public bool PermitsCommercialUse { get; set; }
-        public IReadOnlyCollection<FilterList> FilterLists { get; private set; } = new HashSet<FilterList>();
+        public IReadOnlyCollection<FilterList> FilterLists { get; } = new HashSet<FilterList>();
     }
 
     internal class LicenseTypeConfiguration : IEntityTypeConfiguration<License>

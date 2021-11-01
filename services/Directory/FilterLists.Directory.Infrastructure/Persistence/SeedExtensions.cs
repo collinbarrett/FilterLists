@@ -32,7 +32,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence
 
             var entitiesJson = File.ReadAllText(path);
             var entities = JsonSerializer.Deserialize<IEnumerable<TEntity>>(entitiesJson,
-                new JsonSerializerOptions {PropertyNamingPolicy = JsonNamingPolicy.CamelCase});
+                new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
 
             if (entities != null)
             {
