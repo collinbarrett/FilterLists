@@ -53,13 +53,13 @@ namespace FilterLists.Directory.Application.Queries
 
         public class SoftwareVm
         {
-            public int Id { get; private set; }
-            public string Name { get; private set; } = null!;
-            public string? Description { get; private set; }
-            public Uri? HomeUrl { get; private set; }
-            public Uri? DownloadUrl { get; private set; }
-            public bool SupportsAbpUrlScheme { get; private set; }
-            public IEnumerable<int>? SyntaxIds { get; private set; }
+            public int Id { get; }
+            public string Name { get; } = null!;
+            public string? Description { get; }
+            public Uri? HomeUrl { get; }
+            public Uri? DownloadUrl { get; }
+            public bool SupportsAbpUrlScheme { get; }
+            public IEnumerable<int>? SyntaxIds { get; }
         }
     }
 }
