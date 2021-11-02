@@ -53,13 +53,13 @@ namespace FilterLists.Directory.Application.Queries
 
         public class LicenseVm
         {
-            public int Id { get; private set; }
-            public string Name { get; private set; } = null!;
-            public Uri? Url { get; private set; }
-            public bool PermitsModification { get; private set; }
-            public bool PermitsDistribution { get; private set; }
-            public bool PermitsCommercialUse { get; private set; }
-            public IEnumerable<int>? FilterListIds { get; private set; }
+            public int Id { get; init; }
+            public string Name { get; init; } = null!;
+            public Uri? Url { get; init; }
+            public bool PermitsModification { get; init; }
+            public bool PermitsDistribution { get; init; }
+            public bool PermitsCommercialUse { get; init; }
+            public IEnumerable<int>? FilterListIds { get; init; }
         }
     }
 }

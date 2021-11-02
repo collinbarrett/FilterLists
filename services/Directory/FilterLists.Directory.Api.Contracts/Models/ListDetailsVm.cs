@@ -5,36 +5,36 @@ namespace FilterLists.Directory.Api.Contracts.Models
 {
     public class ListDetailsVm
     {
-        public int Id { get; private set; }
-        public string Name { get; private set; } = null!;
-        public string? Description { get; private set; }
-        public int? LicenseId { get; private set; }
-        public IEnumerable<int>? SyntaxIds { get; private set; }
-        public IEnumerable<string>? Iso6391s { get; private set; }
-        public IEnumerable<int>? TagIds { get; private set; }
-        public IEnumerable<ViewUrlVm>? ViewUrls { get; private set; }
-        public Uri? HomeUrl { get; private set; }
-        public Uri? OnionUrl { get; private set; }
-        public Uri? PolicyUrl { get; private set; }
-        public Uri? SubmissionUrl { get; private set; }
-        public Uri? IssuesUrl { get; private set; }
-        public Uri? ForumUrl { get; private set; }
-        public Uri? ChatUrl { get; private set; }
-        public string? EmailAddress { get; private set; }
-        public Uri? DonateUrl { get; private set; }
-        public IEnumerable<int>? MaintainerIds { get; private set; }
-        public IEnumerable<int>? UpstreamFilterListIds { get; private set; }
-        public IEnumerable<int>? ForkFilterListIds { get; private set; }
-        public IEnumerable<int>? IncludedInFilterListIds { get; private set; }
-        public IEnumerable<int>? IncludesFilterListIds { get; private set; }
-        public IEnumerable<int>? DependencyFilterListIds { get; private set; }
-        public IEnumerable<int>? DependentFilterListIds { get; private set; }
+        public int Id { get; init; }
+        public string Name { get; init; } = null!;
+        public string? Description { get; init; }
+        public int? LicenseId { get; init; }
+        public IEnumerable<int>? SyntaxIds { get; init; }
+        public IEnumerable<string>? Iso6391s { get; init; }
+        public IEnumerable<int>? TagIds { get; init; }
+        public IEnumerable<ViewUrlVm>? ViewUrls { get; init; }
+        public Uri? HomeUrl { get; init; }
+        public Uri? OnionUrl { get; init; }
+        public Uri? PolicyUrl { get; init; }
+        public Uri? SubmissionUrl { get; init; }
+        public Uri? IssuesUrl { get; init; }
+        public Uri? ForumUrl { get; init; }
+        public Uri? ChatUrl { get; init; }
+        public string? EmailAddress { get; init; }
+        public Uri? DonateUrl { get; init; }
+        public IEnumerable<int>? MaintainerIds { get; init; }
+        public IEnumerable<int>? UpstreamFilterListIds { get; init; }
+        public IEnumerable<int>? ForkFilterListIds { get; init; }
+        public IEnumerable<int>? IncludedInFilterListIds { get; init; }
+        public IEnumerable<int>? IncludesFilterListIds { get; init; }
+        public IEnumerable<int>? DependencyFilterListIds { get; init; }
+        public IEnumerable<int>? DependentFilterListIds { get; init; }
 
         public class ViewUrlVm
         {
-            public short SegmentNumber { get; private set; }
-            public short Primariness { get; private set; }
-            public Uri Url { get; private set; } = null!;
+            public short SegmentNumber { get; init; }
+            public short Primariness { get; init; }
+            public Uri Url { get; init; } = null!;
         }
     }
 }

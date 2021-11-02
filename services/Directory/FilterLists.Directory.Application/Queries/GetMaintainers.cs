@@ -54,12 +54,12 @@ namespace FilterLists.Directory.Application.Queries
 
         public class MaintainerVm
         {
-            public int Id { get; private set; }
-            public string Name { get; private set; } = null!;
-            public Uri? Url { get; private set; }
-            public string? EmailAddress { get; private set; }
-            public string? TwitterHandle { get; private set; }
-            public IEnumerable<int>? FilterListIds { get; private set; }
+            public int Id { get; init; }
+            public string Name { get; init; } = null!;
+            public Uri? Url { get; init; }
+            public string? EmailAddress { get; init; }
+            public string? TwitterHandle { get; init; }
+            public IEnumerable<int>? FilterListIds { get; init; }
         }
     }
 }

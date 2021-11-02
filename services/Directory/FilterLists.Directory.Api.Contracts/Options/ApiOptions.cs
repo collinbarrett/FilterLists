@@ -4,6 +4,6 @@
     {
         public const string Key = "Api";
 
-        public string DirectoryHost { get; set; } = null!;
+        public string DirectoryHost { get; init; } = null!;
     }
 }

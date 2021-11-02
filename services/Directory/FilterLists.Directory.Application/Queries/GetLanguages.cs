@@ -54,9 +54,9 @@ namespace FilterLists.Directory.Application.Queries
 
         public class LanguageVm
         {
-            public string Iso6391 { get; private set; } = null!;
-            public string Name { get; private set; } = null!;
-            public IEnumerable<int>? FilterListIds { get; private set; }
+            public string Iso6391 { get; init; } = null!;
+            public string Name { get; init; } = null!;
+            public IEnumerable<int>? FilterListIds { get; init; }
         }
     }
 }

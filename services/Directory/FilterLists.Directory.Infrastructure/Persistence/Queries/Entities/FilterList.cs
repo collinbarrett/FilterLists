@@ -7,24 +7,24 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class FilterList
     {
-        public int Id { get; private set; }
-        public string Name { get; private set; } = null!;
-        public string? Description { get; private set; }
-        public int? LicenseId { get; private set; }
+        public int Id { get; init; }
+        public string Name { get; init; } = null!;
+        public string? Description { get; init; }
+        public int? LicenseId { get; init; }
         public License? License { get; }
         public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; } = new HashSet<FilterListSyntax>();
         public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; } = new HashSet<FilterListLanguage>();
         public IReadOnlyCollection<FilterListTag> FilterListTags { get; } = new HashSet<FilterListTag>();
         public IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; } = new HashSet<FilterListViewUrl>();
-        public Uri? HomeUrl { get; private set; }
-        public Uri? OnionUrl { get; private set; }
-        public Uri? PolicyUrl { get; private set; }
-        public Uri? SubmissionUrl { get; private set; }
-        public Uri? IssuesUrl { get; private set; }
-        public Uri? ForumUrl { get; private set; }
-        public Uri? ChatUrl { get; private set; }
-        public string? EmailAddress { get; private set; }
-        public Uri? DonateUrl { get; private set; }
+        public Uri? HomeUrl { get; init; }
+        public Uri? OnionUrl { get; init; }
+        public Uri? PolicyUrl { get; init; }
+        public Uri? SubmissionUrl { get; init; }
+        public Uri? IssuesUrl { get; init; }
+        public Uri? ForumUrl { get; init; }
+        public Uri? ChatUrl { get; init; }
+        public string? EmailAddress { get; init; }
+        public Uri? DonateUrl { get; init; }
         public IReadOnlyCollection<FilterListMaintainer> FilterListMaintainers { get; } = new HashSet<FilterListMaintainer>();
         public IReadOnlyCollection<Fork> UpstreamFilterLists { get; } = new HashSet<Fork>();
         public IReadOnlyCollection<Fork> ForkFilterLists { get; } = new HashSet<Fork>();

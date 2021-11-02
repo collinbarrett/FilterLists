@@ -56,12 +56,12 @@ namespace FilterLists.Directory.Application.Queries
 
         public class SyntaxVm
         {
-            public int Id { get; private set; }
-            public string Name { get; private set; } = null!;
-            public string? Description { get; private set; }
-            public Uri? Url { get; private set; }
-            public IEnumerable<int>? FilterListIds { get; private set; }
-            public IEnumerable<int>? SoftwareIds { get; private set; }
+            public int Id { get; init; }
+            public string Name { get; init; } = null!;
+            public string? Description { get; init; }
+            public Uri? Url { get; init; }
+            public IEnumerable<int>? FilterListIds { get; init; }
+            public IEnumerable<int>? SoftwareIds { get; init; }
         }
     }
 }

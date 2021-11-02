@@ -7,10 +7,10 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
     public class Syntax
     {
-        public int Id { get; private set; }
-        public string Name { get; private set; } = null!;
-        public string? Description { get; private set; }
-        public Uri? Url { get; private set; }
+        public int Id { get; init; }
+        public string Name { get; init; } = null!;
+        public string? Description { get; init; }
+        public Uri? Url { get; init; }
         public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; } = new HashSet<FilterListSyntax>();
         public IReadOnlyCollection<SoftwareSyntax> SoftwareSyntaxes { get; } = new HashSet<SoftwareSyntax>();
     }

@@ -4,8 +4,8 @@
     {
         public const string Key = "Git";
 
-        public string RepositoryPath { get; set; } = null!;
-        public string UserName { get; set; } = null!;
-        public string UserEmail { get; set; } = null!;
+        public string RepositoryPath { get; init; } = null!;
+        public string UserName { get; init; } = null!;
+        public string UserEmail { get; init; } = null!;
     }
 }
