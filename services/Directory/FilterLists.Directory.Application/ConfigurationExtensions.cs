@@ -17,7 +17,7 @@ namespace FilterLists.Directory.Application
         public static void AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddMediatR(typeof(ConfigurationExtensions).Assembly);
-            services.AddAutoMapper(typeof(ConfigurationExtensions));
+            services.AddAutoMapper(typeof(ConfigurationExtensions).Assembly);
             services.AddInfrastructureServices(configuration);
         }
 
