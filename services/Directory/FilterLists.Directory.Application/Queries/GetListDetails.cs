@@ -90,7 +90,7 @@ namespace FilterLists.Directory.Application.Queries
                             fl.DependentFilterLists.Select(dfl => dfl.DependentFilterListId).OrderBy(flid => flid)
                                 .AsEnumerable()));
 
-                CreateMap<FilterListViewUrl, ListDetailsViewUrlVm>();
+                CreateMap<FilterListViewUrl, ListDetailsVm.ViewUrlVm>();
             }
         }
     }

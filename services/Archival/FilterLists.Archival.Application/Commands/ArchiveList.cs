@@ -68,19 +68,19 @@ namespace FilterLists.Archival.Application.Commands
                 return Unit.Value;
             }
 
-            private async Task<IEnumerable<ListDetailsViewUrlVm>> GetSegmentUrlsAsync(
+            private async Task<IEnumerable<ListDetailsVm.ViewUrlVm>> GetSegmentUrlsAsync(
                 int listId,
                 CancellationToken cancellationToken)
             {
                 var listDetails = await _directory.GetListDetailsAsync(listId, cancellationToken);
                 return listDetails.ViewUrls?
                            .GroupBy(u => u.SegmentNumber, (_, ue) => ue.OrderBy(u => u.Primariness).First()) ??
-                       new List<ListDetailsViewUrlVm>();
+                       new List<ListDetailsVm.ViewUrlVm>();
             }
 
             private ListArchive GetList(
                 int listId,
-                IEnumerable<ListDetailsViewUrlVm> segmentUrls,
+                IEnumerable<ListDetailsVm.ViewUrlVm> segmentUrls,
                 CancellationToken cancellationToken)
             {
                 var segmentsAsync = GetSegmentsAsync(segmentUrls, cancellationToken);
@@ -88,7 +88,7 @@ namespace FilterLists.Archival.Application.Commands
             }
 
             private async IAsyncEnumerable<ListArchiveSegment> GetSegmentsAsync(
-                IEnumerable<ListDetailsViewUrlVm> segmentUrls,
+                IEnumerable<ListDetailsVm.ViewUrlVm> segmentUrls,
                 [EnumeratorCancellation] CancellationToken cancellationToken)
             {
                 foreach (var segment in segmentUrls)

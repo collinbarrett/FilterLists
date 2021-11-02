@@ -12,7 +12,7 @@ namespace FilterLists.Directory.Api.Contracts.Models
         public IEnumerable<int>? SyntaxIds { get; set; }
         public IEnumerable<string>? Iso6391s { get; set; }
         public IEnumerable<int>? TagIds { get; set; }
-        public IEnumerable<ListDetailsViewUrlVm>? ViewUrls { get; set; }
+        public IEnumerable<ViewUrlVm>? ViewUrls { get; set; }
         public Uri? HomeUrl { get; set; }
         public Uri? OnionUrl { get; set; }
         public Uri? PolicyUrl { get; set; }
@@ -29,12 +29,12 @@ namespace FilterLists.Directory.Api.Contracts.Models
         public IEnumerable<int>? IncludesFilterListIds { get; set; }
         public IEnumerable<int>? DependencyFilterListIds { get; set; }
         public IEnumerable<int>? DependentFilterListIds { get; set; }
-    }
 
-    public class ListDetailsViewUrlVm
-    {
-        public short SegmentNumber { get; set; }
-        public short Primariness { get; set; }
-        public Uri Url { get; set; } = null!;
+        public class ViewUrlVm
+        {
+            public short SegmentNumber { get; set; }
+            public short Primariness { get; set; }
+            public Uri Url { get; set; } = null!;
+        }
     }
 }
