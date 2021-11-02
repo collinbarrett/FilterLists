@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
-    [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Local")]
-    [SuppressMessage("ReSharper", "ReplaceAutoPropertyWithComputedProperty")]
-    [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class FilterListViewUrl
     {
         public int Id { get; private set; }

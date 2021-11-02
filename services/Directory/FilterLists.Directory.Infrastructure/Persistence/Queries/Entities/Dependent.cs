@@ -1,13 +1,8 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-[assembly: SuppressMessage("Design", "RCS1170", Justification = "EF Core: Properties without setters are not mapped by convention.", Scope = "NamespaceAndDescendants", Target = "~N:FilterLists.Directory.Infrastructure.Persistence.Queries.Entities")]
-[assembly: SuppressMessage("CodeQuality", "IDE0079:Remove unnecessary suppression", Justification = "ReSharper false positives.", Scope = "NamespaceAndDescendants", Target = "~N:FilterLists.Directory.Infrastructure.Persistence.Queries.Entities")]
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
-    [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Local")]
-    [SuppressMessage("ReSharper", "ReplaceAutoPropertyWithComputedProperty")]
     public class Dependent
     {
         public int DependencyFilterListId { get; private set; }
