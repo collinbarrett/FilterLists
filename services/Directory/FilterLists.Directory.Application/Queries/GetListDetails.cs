@@ -89,13 +89,7 @@ namespace FilterLists.Directory.Application.Queries
                         o => o.MapFrom(fl =>
                             fl.DependentFilterLists.Select(dfl => dfl.DependentFilterListId).OrderBy(flid => flid)
                                 .AsEnumerable()));
-            }
-        }
 
-        public class ListDetailsViewUrlVmProfile : Profile
-        {
-            public ListDetailsViewUrlVmProfile()
-            {
                 CreateMap<FilterListViewUrl, ListDetailsViewUrlVm>();
             }
         }
