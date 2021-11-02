@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace FilterLists.Directory.Api.Contracts.Models
 {
@@ -11,6 +12,7 @@ namespace FilterLists.Directory.Api.Contracts.Models
         public IEnumerable<int>? SyntaxIds { get; init; }
         public IEnumerable<string>? Iso6391s { get; init; }
         public IEnumerable<int>? TagIds { get; init; }
+        public Uri? PrimaryViewUrl { get; init; }
         public IEnumerable<int>? MaintainerIds { get; init; }
     }
 }

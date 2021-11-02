@@ -54,6 +54,10 @@ namespace FilterLists.Directory.Application.Queries
                     .ForMember(fl => fl.TagIds,
                         o => o.MapFrom(fl =>
                             fl.FilterListTags.Select(flt => flt.TagId).OrderBy(tid => tid).AsEnumerable()))
+                    .ForMember(fl => fl.PrimaryViewUrl,
+                        o => o.MapFrom(fl =>
+                            fl.ViewUrls.OrderBy(u => u.SegmentNumber).ThenBy(u => u.Primariness).Select(u => u.Url)
+                                .FirstOrDefault()))
                     .ForMember(fl => fl.MaintainerIds,
                         o => o.MapFrom(fl =>
                             fl.FilterListMaintainers.Select(flm => flm.MaintainerId).OrderBy(mid => mid)
