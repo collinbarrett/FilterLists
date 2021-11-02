@@ -41,11 +41,7 @@ namespace FilterLists.Directory.Api
                 o.RouteTemplate = "{documentName}/swagger.json";
                 o.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.Servers = new List<OpenApiServer>
                 {
-#if DEBUG
-                    new() { Url = $"{httpReq.Scheme}://{httpReq.Host.Value}:8080/api/directory" }
-#else
-                    new() { Url = $"https://{httpReq.Host.Value}/api/directory" }
-#endif
+                    new() { Url = $"{httpReq.Scheme}://{httpReq.Host.Value}/api/directory" }
                 });
             });
         }

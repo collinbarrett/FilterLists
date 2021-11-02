@@ -42,11 +42,7 @@ namespace FilterLists.Archival.Api
                 o.RouteTemplate = "{documentName}/swagger.json";
                 o.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.Servers = new List<OpenApiServer>
                 {
-#if DEBUG
-                    new() { Url = $"{httpReq.Scheme}://{httpReq.Host.Value}:8080/api/archival" }
-#else
-                    new() { Url = $"https://{httpReq.Host.Value}/api/archival" }
-#endif
+                    new() { Url = $"{httpReq.Scheme}://{httpReq.Host.Value}/api/archival" }
                 });
             });
         }
