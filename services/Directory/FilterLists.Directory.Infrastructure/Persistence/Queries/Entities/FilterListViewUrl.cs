@@ -1,17 +1,21 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
+    [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Local")]
+    [SuppressMessage("ReSharper", "ReplaceAutoPropertyWithComputedProperty")]
+    [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class FilterListViewUrl
     {
-        public int Id { get; set; }
-        public int FilterListId { get; set; }
-        public FilterList FilterList { get; set; } = null!;
-        public short SegmentNumber { get; set; }
-        public short Primariness { get; set; }
-        public Uri Url { get; set; } = null!;
+        public int Id { get; private set; }
+        public int FilterListId { get; private set; }
+        public FilterList FilterList { get; } = null!;
+        public short SegmentNumber { get; private set; }
+        public short Primariness { get; private set; }
+        public Uri Url { get; private set; } = null!;
     }
 
     internal class FilterListViewUrlConfiguration : IEntityTypeConfiguration<FilterListViewUrl>

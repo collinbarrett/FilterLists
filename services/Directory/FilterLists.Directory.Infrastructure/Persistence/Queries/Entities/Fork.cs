@@ -1,13 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
+    [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Local")]
+    [SuppressMessage("ReSharper", "ReplaceAutoPropertyWithComputedProperty")]
     public class Fork
     {
-        public int UpstreamFilterListId { get; set; }
+        public int UpstreamFilterListId { get; private set; }
         public FilterList UpstreamFilterList { get; } = null!;
-        public int ForkFilterListId { get; set; }
+        public int ForkFilterListId { get; private set; }
         public FilterList ForkFilterList { get; } = null!;
     }
 

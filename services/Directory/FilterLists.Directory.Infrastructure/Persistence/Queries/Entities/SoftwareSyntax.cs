@@ -1,13 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
+    [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Local")]
+    [SuppressMessage("ReSharper", "ReplaceAutoPropertyWithComputedProperty")]
     public class SoftwareSyntax
     {
-        public int SoftwareId { get; set; }
+        public int SoftwareId { get; private set; }
         public Software Software { get; } = null!;
-        public int SyntaxId { get; set; }
+        public int SyntaxId { get; private set; }
         public Syntax Syntax { get; } = null!;
     }
 

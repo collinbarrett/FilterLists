@@ -1,13 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
+    [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Local")]
+    [SuppressMessage("ReSharper", "ReplaceAutoPropertyWithComputedProperty")]
+    [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Local")]
     public class FilterListLanguage
     {
-        public int FilterListId { get; set; }
+        public int FilterListId { get; private set; }
         public FilterList FilterList { get; } = null!;
-        public string Iso6391 { get; set; } = null!;
+        public string Iso6391 { get; private set; } = null!;
         public Language Language { get; } = null!;
     }
 

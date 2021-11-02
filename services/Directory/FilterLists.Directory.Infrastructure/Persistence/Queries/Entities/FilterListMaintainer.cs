@@ -1,13 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
+    [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Local")]
+    [SuppressMessage("ReSharper", "ReplaceAutoPropertyWithComputedProperty")]
     public class FilterListMaintainer
     {
-        public int FilterListId { get; set; }
+        public int FilterListId { get; private set; }
         public FilterList FilterList { get; } = null!;
-        public int MaintainerId { get; set; }
+        public int MaintainerId { get; private set; }
         public Maintainer Maintainer { get; } = null!;
     }
 

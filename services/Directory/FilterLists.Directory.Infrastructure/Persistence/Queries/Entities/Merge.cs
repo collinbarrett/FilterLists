@@ -1,13 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities
 {
+    [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Local")]
+    [SuppressMessage("ReSharper", "ReplaceAutoPropertyWithComputedProperty")]
     public class Merge
     {
-        public int IncludedInFilterListId { get; set; }
+        public int IncludedInFilterListId { get; private set; }
         public FilterList IncludedInFilterList { get; } = null!;
-        public int IncludesFilterListId { get; set; }
+        public int IncludesFilterListId { get; private set; }
         public FilterList IncludesFilterList { get; } = null!;
     }
 
