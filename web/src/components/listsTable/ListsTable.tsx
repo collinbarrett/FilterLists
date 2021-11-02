@@ -67,8 +67,8 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
       size="small"
       pagination={{
         simple: true,
-        style: { float: "left", margin: "4px 4px" },
         pageSize: tablePageSize.pageSize,
+        position: ["bottomLeft"],
       }}
       scroll={{
         x:
