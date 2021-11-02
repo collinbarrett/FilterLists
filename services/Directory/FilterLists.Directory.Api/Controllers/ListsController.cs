@@ -26,7 +26,6 @@ namespace FilterLists.Directory.Api.Controllers
         /// <returns>The FilterLists.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<ListVm>), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Get(CancellationToken cancellationToken)
         {
             return await CacheGetOrCreateAsync(() => _mediator.Send(new GetLists.Query(), cancellationToken));

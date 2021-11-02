@@ -25,7 +25,6 @@ namespace FilterLists.Directory.Api.Controllers
         /// <returns>The syntaxes of FilterLists.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<GetSyntaxes.SyntaxVm>), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Get(CancellationToken cancellationToken)
         {
             return await CacheGetOrCreateAsync(() => _mediator.Send(new GetSyntaxes.Query(), cancellationToken));

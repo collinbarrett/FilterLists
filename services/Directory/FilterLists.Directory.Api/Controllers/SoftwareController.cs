@@ -25,7 +25,6 @@ namespace FilterLists.Directory.Api.Controllers
         /// <returns>The software that subscribes to FilterLists.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<GetSoftware.SoftwareVm>), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Get(CancellationToken cancellationToken)
         {
             return await CacheGetOrCreateAsync(() => _mediator.Send(new GetSoftware.Query(), cancellationToken));

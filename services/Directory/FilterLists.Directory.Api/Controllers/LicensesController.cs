@@ -25,7 +25,6 @@ namespace FilterLists.Directory.Api.Controllers
         /// <returns>The licenses applied to FilterLists.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<GetLicenses.LicenseVm>), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Get(CancellationToken cancellationToken)
         {
             return await CacheGetOrCreateAsync(() => _mediator.Send(new GetLicenses.Query(), cancellationToken));
