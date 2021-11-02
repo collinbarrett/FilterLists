@@ -17,7 +17,7 @@ namespace FilterLists.Directory.Application.Queries
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<LanguageVm>>
+        internal class Handler : IRequestHandler<Query, IEnumerable<LanguageVm>>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -40,7 +40,7 @@ namespace FilterLists.Directory.Application.Queries
             }
         }
 
-        public class LanguageVmProfile : Profile
+        internal class LanguageVmProfile : Profile
         {
             public LanguageVmProfile()
             {

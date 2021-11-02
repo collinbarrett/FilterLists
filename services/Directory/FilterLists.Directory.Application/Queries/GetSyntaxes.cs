@@ -18,7 +18,7 @@ namespace FilterLists.Directory.Application.Queries
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<SyntaxVm>>
+        internal class Handler : IRequestHandler<Query, IEnumerable<SyntaxVm>>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -40,7 +40,7 @@ namespace FilterLists.Directory.Application.Queries
             }
         }
 
-        public class SyntaxVmProfile : Profile
+        internal class SyntaxVmProfile : Profile
         {
             public SyntaxVmProfile()
             {

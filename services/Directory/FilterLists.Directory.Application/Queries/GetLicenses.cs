@@ -18,7 +18,7 @@ namespace FilterLists.Directory.Application.Queries
         {
         }
 
-        public class Handler : IRequestHandler<Query, IEnumerable<LicenseVm>>
+        internal class Handler : IRequestHandler<Query, IEnumerable<LicenseVm>>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -40,7 +40,7 @@ namespace FilterLists.Directory.Application.Queries
             }
         }
 
-        public class LicenseVmProfile : Profile
+        internal class LicenseVmProfile : Profile
         {
             public LicenseVmProfile()
             {

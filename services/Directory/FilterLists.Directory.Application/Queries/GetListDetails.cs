@@ -23,7 +23,7 @@ namespace FilterLists.Directory.Application.Queries
             public int Id { get; }
         }
 
-        public class Handler : IRequestHandler<Query, ListDetailsVm>
+        internal class Handler : IRequestHandler<Query, ListDetailsVm>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -44,7 +44,7 @@ namespace FilterLists.Directory.Application.Queries
             }
         }
 
-        public class ListDetailsVmProfile : Profile
+        internal class ListDetailsVmProfile : Profile
         {
             public ListDetailsVmProfile()
             {
