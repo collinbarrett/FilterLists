@@ -25,9 +25,9 @@ namespace FilterLists.Directory.Api.Controllers
         /// <returns>The syntaxes of FilterLists.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<GetSyntaxes.SyntaxVm>), StatusCodes.Status200OK)]
-        public async Task<IActionResult> Get(CancellationToken cancellationToken)
+        public Task<IActionResult> Get(CancellationToken cancellationToken)
         {
-            return await CacheGetOrCreateAsync(() => _mediator.Send(new GetSyntaxes.Query(), cancellationToken));
+            return CacheGetOrCreateAsync(() => _mediator.Send(new GetSyntaxes.Query(), cancellationToken));
         }
     }
 }

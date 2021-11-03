@@ -25,9 +25,9 @@ namespace FilterLists.Directory.Api.Controllers
         /// <returns>The languages targeted by FilterLists.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<GetLanguages.LanguageVm>), StatusCodes.Status200OK)]
-        public async Task<IActionResult> Get(CancellationToken cancellationToken)
+        public Task<IActionResult> Get(CancellationToken cancellationToken)
         {
-            return await CacheGetOrCreateAsync(() => _mediator.Send(new GetLanguages.Query(), cancellationToken));
+            return CacheGetOrCreateAsync(() => _mediator.Send(new GetLanguages.Query(), cancellationToken));
         }
     }
 }

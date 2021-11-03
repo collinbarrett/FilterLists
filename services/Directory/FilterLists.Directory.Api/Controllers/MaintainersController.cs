@@ -25,9 +25,9 @@ namespace FilterLists.Directory.Api.Controllers
         /// <returns>The maintainers of FilterLists.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<GetMaintainers.MaintainerVm>), StatusCodes.Status200OK)]
-        public async Task<IActionResult> Get(CancellationToken cancellationToken)
+        public Task<IActionResult> Get(CancellationToken cancellationToken)
         {
-            return await CacheGetOrCreateAsync(() => _mediator.Send(new GetMaintainers.Query(), cancellationToken));
+            return CacheGetOrCreateAsync(() => _mediator.Send(new GetMaintainers.Query(), cancellationToken));
         }
     }
 }
