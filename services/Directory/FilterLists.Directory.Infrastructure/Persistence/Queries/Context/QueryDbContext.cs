@@ -1,14 +1,22 @@
 ﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 
 public class QueryDbContext : DbContext
 {
+    static QueryDbContext()
+    {
+        NpgsqlConnection.GlobalTypeMapper.MapEnum<ChangeType>();
+        NpgsqlConnection.GlobalTypeMapper.MapEnum<AggregateRoot>();
+    }
+
     public QueryDbContext(DbContextOptions<QueryDbContext> options) : base(options)
     {
     }
 
+    public DbSet<Change> Changes => Set<Change>();
     public DbSet<FilterList> FilterLists => Set<FilterList>();
     public DbSet<Language> Languages => Set<Language>();
     public DbSet<License> Licenses => Set<License>();
@@ -32,5 +40,7 @@ public class QueryDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
+        modelBuilder.HasPostgresEnum<ChangeType>();
+        modelBuilder.HasPostgresEnum<AggregateRoot>();
     }
 }

@@ -22,6 +22,7 @@ internal sealed class QueryContext : IQueryContext, IAsyncDisposable, IDisposabl
         _dbContext.Dispose();
     }
 
+    public IQueryable<Change> Changes => _dbContext.Changes.AsNoTracking();
     public IQueryable<FilterList> FilterLists => _dbContext.FilterLists.AsNoTracking();
     public IQueryable<Language> Languages => _dbContext.Languages.AsNoTracking();
     public IQueryable<License> Licenses => _dbContext.Licenses.AsNoTracking();

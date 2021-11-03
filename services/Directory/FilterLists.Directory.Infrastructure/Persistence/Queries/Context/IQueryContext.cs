@@ -4,6 +4,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 
 public interface IQueryContext
 {
+    IQueryable<Change> Changes { get; }
     IQueryable<FilterList> FilterLists { get; }
     IQueryable<Language> Languages { get; }
     IQueryable<License> Licenses { get; }
