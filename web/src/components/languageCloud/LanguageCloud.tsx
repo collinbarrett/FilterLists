@@ -1,6 +1,4 @@
 import { Tag } from "antd";
-import React from "react";
-
 import { Language } from "../../interfaces/Language";
 import styles from "./LanguageCloud.module.css";
 

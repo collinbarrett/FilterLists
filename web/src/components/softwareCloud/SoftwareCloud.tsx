@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Software } from "../../interfaces/Software";
 import styles from "./SoftwareCloud.module.css";
 import { SoftwareIcon } from "./SoftwareIcon";

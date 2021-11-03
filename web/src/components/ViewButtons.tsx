@@ -1,4 +1,3 @@
-import React from "react";
 import { LinkButton } from "./LinkButton";
 import { SearchOutlined } from "@ant-design/icons";
 

@@ -1,5 +1,4 @@
 import "./listInfoDrawer.css";
-
 import { Divider, Drawer } from "antd";
 import {
   DollarOutlined,
@@ -12,8 +11,7 @@ import {
   MessageOutlined,
   TeamOutlined,
 } from "@ant-design/icons";
-import React, { useEffect, useState } from "react";
-
+import { useEffect, useState } from "react";
 import ButtonGroup from "antd/lib/button/button-group";
 import { Description } from "../Description";
 import { LanguageCloud } from "../languageCloud";

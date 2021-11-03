@@ -1,7 +1,6 @@
 import { ImportOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import { ButtonType } from "antd/lib/button";
-import React from "react";
 
 interface Props {
   name: string;

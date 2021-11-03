@@ -1,9 +1,7 @@
 import { InfoCircleOutlined } from "@ant-design/icons";
 import { Button } from "antd";
-import React from "react";
 import { RouteComponentProps } from "react-router-dom";
 import slugify from "slugify";
-
 import { SlugifyOptions } from "../constants";
 
 interface Props {

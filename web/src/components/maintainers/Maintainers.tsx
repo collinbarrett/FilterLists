@@ -1,10 +1,6 @@
 import "./maintainers.css";
-
 import { HomeOutlined, MailOutlined, TwitterOutlined } from "@ant-design/icons";
-
 import { Card } from "antd";
-import React from "react";
-
 import { Maintainer } from "../../interfaces/Maintainer";
 
 interface Props {

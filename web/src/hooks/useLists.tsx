@@ -1,5 +1,4 @@
 import slugify from "slugify";
-
 import { SlugifyOptions } from "../constants";
 import { List } from "../interfaces/List";
 import { useApiData } from "./useApiData";

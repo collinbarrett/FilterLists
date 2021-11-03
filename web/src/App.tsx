@@ -6,7 +6,6 @@ import {
   TwitterOutlined,
 } from "@ant-design/icons";
 import { Layout, Tag } from "antd";
-import React from "react";
 import {
   BrowserRouter as Router,
   Link,
@@ -14,7 +13,6 @@ import {
   RouteComponentProps,
   Switch,
 } from "react-router-dom";
-
 import { ListsTable } from "./components";
 
 const { Header, Content, Footer } = Layout;

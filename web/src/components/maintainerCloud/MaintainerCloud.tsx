@@ -1,6 +1,4 @@
 import { Tag } from "antd";
-import React from "react";
-
 import { Maintainer } from "../../interfaces/Maintainer";
 import styles from "./MaintainerCloud.module.css";
 

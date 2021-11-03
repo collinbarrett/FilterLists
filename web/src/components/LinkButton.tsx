@@ -1,6 +1,5 @@
 import { Button } from "antd";
 import { ButtonType } from "antd/lib/button";
-import React from "react";
 
 interface Props {
   url?: string;

@@ -1,11 +1,9 @@
-import React from "react";
 import {
   Redirect,
   Route,
   RouteComponentProps,
   StaticContext,
 } from "react-router";
-
 import { List } from "../../interfaces/List";
 import { ListInfoDrawer } from "../listInfoDrawer";
 import { Language } from "../../interfaces/Language";

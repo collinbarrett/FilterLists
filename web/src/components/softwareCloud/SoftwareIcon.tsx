@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import {
   img01,
   img02,

@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Syntax } from "../../interfaces/Syntax";
 import { SyntaxTag } from "../SyntaxTag";
 import styles from "./SyntaxCloud.module.css";
