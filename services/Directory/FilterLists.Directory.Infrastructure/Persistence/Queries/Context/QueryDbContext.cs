@@ -1,6 +1,8 @@
-﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
+﻿using FilterLists.Directory.Domain.Aggregates.Changes;
+using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 using Microsoft.EntityFrameworkCore;
 using Npgsql;
+using Change = FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Change;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 
@@ -39,7 +41,8 @@ public class QueryDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
+        modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly,
+            type => type.Namespace == typeof(FilterListTypeConfiguration).Namespace);
         modelBuilder.HasPostgresEnum<ChangeType>();
         modelBuilder.HasPostgresEnum<AggregateRoot>();
     }

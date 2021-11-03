@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using FilterLists.Directory.Domain.Aggregates.Changes;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -15,24 +16,6 @@ public class Change
     public DateTime? AppliedAt { get; init; }
     public DateTime? RejectedAt { get; init; }
     public string? RejectedReason { get; init; }
-}
-
-public enum ChangeType
-{
-    Insert,
-    Update,
-    Delete
-}
-
-public enum AggregateRoot
-{
-    FilterList,
-    Language,
-    License,
-    Maintainer,
-    Software,
-    Syntax,
-    Tag
 }
 
 internal class UpdateConfiguration : IEntityTypeConfiguration<Change>

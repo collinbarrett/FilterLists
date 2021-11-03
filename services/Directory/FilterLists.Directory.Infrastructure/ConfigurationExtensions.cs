@@ -1,4 +1,5 @@
 ﻿using FilterLists.Directory.Infrastructure.Persistence.Commands.Context;
+using FilterLists.Directory.Infrastructure.Persistence.Commands.Repositories;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using FilterLists.SharedKernel.Logging;
 using Microsoft.AspNetCore.Builder;
@@ -34,8 +35,22 @@ public static class ConfigurationExtensions
                 ;
 #endif
         });
+        services.AddDbContextPool<CommandDbContext>(o =>
+        {
+            o.UseNpgsql(configuration.GetConnectionString("DirectoryConnection"))
+#if DEBUG
+                .LogTo(Console.WriteLine, LogLevel.Information);
+            o.EnableSensitiveDataLogging();
+#else
+                ;
+#endif
+        });
         services.AddScoped<IQueryContext, QueryContext>();
-        services.AddScoped<ICommandContext, CommandContext>();
+        services.AddScoped<ICommandContext, CommandDbContext>();
+        services.Scan(s => s.FromAssembliesOf(typeof(ConfigurationExtensions))
+            .AddClasses(f => f.InNamespaceOf<ChangeRepository>(), false)
+            .AsImplementedInterfaces()
+            .WithScopedLifetime());
     }
 
     public static void UseInfrastructure(this IApplicationBuilder app)
