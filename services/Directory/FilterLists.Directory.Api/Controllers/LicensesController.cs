@@ -25,9 +25,9 @@ namespace FilterLists.Directory.Api.Controllers
         /// <returns>The licenses applied to FilterLists.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<GetLicenses.LicenseVm>), StatusCodes.Status200OK)]
-        public async Task<IActionResult> Get(CancellationToken cancellationToken)
+        public Task<IActionResult> Get(CancellationToken cancellationToken)
         {
-            return await CacheGetOrCreateAsync(() => _mediator.Send(new GetLicenses.Query(), cancellationToken));
+            return CacheGetOrCreateAsync(() => _mediator.Send(new GetLicenses.Query(), cancellationToken));
         }
     }
 }

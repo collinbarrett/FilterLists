@@ -26,9 +26,9 @@ namespace FilterLists.Directory.Api.Controllers
         /// <returns>The FilterLists.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<ListVm>), StatusCodes.Status200OK)]
-        public async Task<IActionResult> Get(CancellationToken cancellationToken)
+        public Task<IActionResult> Get(CancellationToken cancellationToken)
         {
-            return await CacheGetOrCreateAsync(() => _mediator.Send(new GetLists.Query(), cancellationToken));
+            return CacheGetOrCreateAsync(() => _mediator.Send(new GetLists.Query(), cancellationToken));
         }
 
         /// <summary>
@@ -37,13 +37,12 @@ namespace FilterLists.Directory.Api.Controllers
         /// <param name="id">The identifier of the FilterList.</param>
         /// <param name="cancellationToken">The cancellation token.</param>
         /// <returns>The details of the FilterList.</returns>
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         [ProducesResponseType(typeof(ListDetailsVm), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> GetDetails(int id, CancellationToken cancellationToken)
+        public Task<IActionResult> GetDetails(int id, CancellationToken cancellationToken)
         {
-            return await CacheGetOrCreateAsync(() => _mediator.Send(new GetListDetails.Query(id), cancellationToken),
-                id);
+            return CacheGetOrCreateAsync(() => _mediator.Send(new GetListDetails.Query(id), cancellationToken), id);
         }
     }
 }
