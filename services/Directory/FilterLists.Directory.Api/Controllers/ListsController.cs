@@ -1,4 +1,5 @@
 ﻿using FilterLists.Directory.Api.Contracts.Models;
+using FilterLists.Directory.Application.Commands;
 using FilterLists.Directory.Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -16,7 +17,7 @@ public class ListsController : BaseController
     }
 
     /// <summary>
-    ///     Gets the FilterLists..
+    ///     Gets the FilterLists.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>The FilterLists.</returns>
@@ -25,6 +26,18 @@ public class ListsController : BaseController
     public Task<IActionResult> Get(CancellationToken cancellationToken)
     {
         return CacheGetOrCreateAsync(() => _mediator.Send(new GetLists.Query(), cancellationToken));
+    }
+
+    /// <summary>
+    ///     Creates the FilterList.
+    /// </summary>
+    /// <param name="command">The command.</param>
+    /// <param name="cancellationToken">The cancellation token.</param>
+    [HttpPost]
+    [ProducesResponseType(typeof(CreateList.Response), StatusCodes.Status200OK)]
+    public async Task<IActionResult> Create(CreateList.Command command, CancellationToken cancellationToken)
+    {
+        return Ok(await _mediator.Send(command, cancellationToken));
     }
 
     /// <summary>
