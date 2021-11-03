@@ -122,7 +122,7 @@ steps:
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     inputs:
       workingDirectory: services/Directory
-      script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api
+      script: dotnet ef migrations add $(System.PullRequest.PullRequestNumber) -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api --context QueryDbContext
 
   - task: Bash@3
     displayName: commit or abandon no-op migration

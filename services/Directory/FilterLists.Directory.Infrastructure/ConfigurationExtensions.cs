@@ -1,4 +1,5 @@
-﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
+﻿using FilterLists.Directory.Infrastructure.Persistence.Commands.Context;
+using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using FilterLists.SharedKernel.Logging;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
@@ -34,6 +35,7 @@ public static class ConfigurationExtensions
 #endif
         });
         services.AddScoped<IQueryContext, QueryContext>();
+        services.AddScoped<ICommandContext, CommandContext>();
     }
 
     public static void UseInfrastructure(this IApplicationBuilder app)
