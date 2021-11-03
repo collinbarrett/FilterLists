@@ -69,6 +69,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Api.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Domain", "Archival\FilterLists.Archival.Domain\FilterLists.Archival.Domain.csproj", "{6402E81A-75C2-422F-933B-AAC1ED8C4128}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Domain", "Directory\FilterLists.Directory.Domain\FilterLists.Directory.Domain.csproj", "{EE844873-71D7-4B9D-93BF-DF65B9E4770D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{6402E81A-75C2-422F-933B-AAC1ED8C4128}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6402E81A-75C2-422F-933B-AAC1ED8C4128}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6402E81A-75C2-422F-933B-AAC1ED8C4128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE844873-71D7-4B9D-93BF-DF65B9E4770D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE844873-71D7-4B9D-93BF-DF65B9E4770D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE844873-71D7-4B9D-93BF-DF65B9E4770D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE844873-71D7-4B9D-93BF-DF65B9E4770D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +146,7 @@ Global
 		{5485F55E-DFED-4DA0-8A00-220B081FAC96} = {59197818-6C72-4A3C-A595-49F3D7D2EB18}
 		{4D3D2508-CCC6-4C0B-B5E4-734DD5EC588F} = {AE5D6471-1B6E-4B06-A313-34EF81F35342}
 		{6402E81A-75C2-422F-933B-AAC1ED8C4128} = {5E52FEF9-9605-4ACB-8A42-A20E06331599}
+		{EE844873-71D7-4B9D-93BF-DF65B9E4770D} = {AE5D6471-1B6E-4B06-A313-34EF81F35342}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {758B57EF-7505-4BE2-90A2-E2DE2EC32909}

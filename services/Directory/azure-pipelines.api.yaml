@@ -7,6 +7,7 @@ trigger:
       [
         services/Directory/azure-pipelines.api.yaml,
         services/SharedKernel/FilterLists.SharedKernel.Logging/*,
+        services/Directory/FilterLists.Directory.Domain/*,
         services/Directory/FilterLists.Directory.Infrastructure/*,
         services/Directory/FilterLists.Directory.Infrastructure.Migrations/*,
         services/Directory/FilterLists.Directory.Api.Contracts/*,
@@ -31,6 +32,7 @@ pr:
       [
         services/Directory/azure-pipelines.api.yaml,
         services/SharedKernel/FilterLists.SharedKernel.Logging/*,
+        services/Directory/FilterLists.Directory.Domain/*,
         services/Directory/FilterLists.Directory.Infrastructure/*,
         services/Directory/FilterLists.Directory.Infrastructure.Migrations/*,
         services/Directory/FilterLists.Directory.Api.Contracts/*,

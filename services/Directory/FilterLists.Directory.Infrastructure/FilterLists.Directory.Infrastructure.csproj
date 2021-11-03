@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\SharedKernel\FilterLists.SharedKernel.Logging\FilterLists.SharedKernel.Logging.csproj" />
+    <ProjectReference Include="..\FilterLists.Directory.Domain\FilterLists.Directory.Domain.csproj" />
   </ItemGroup>
 
 </Project>
