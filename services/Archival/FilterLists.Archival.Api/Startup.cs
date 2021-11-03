@@ -19,8 +19,7 @@ namespace FilterLists.Archival.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRouting(o => o.LowercaseUrls = true);
-            services.AddControllers()
-                .AddJsonOptions(o => o.JsonSerializerOptions.IgnoreNullValues = true);
+            services.AddControllers().AddJsonOptions(o => o.JsonSerializerOptions.IgnoreNullValues = true);
             services.AddSwaggerGen();
             services.AddApplicationServices(Configuration);
         }
@@ -28,11 +27,7 @@ namespace FilterLists.Archival.Api
         public static void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseApplication();
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
+            app.UseExceptionHandler(env.IsDevelopment() ? "/error-local-development" : "/error");
             app.UseRouting();
             app.UseEndpoints(e => e.MapControllers());
             app.UseSwagger();
