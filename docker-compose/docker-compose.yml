@@ -3,7 +3,7 @@ version: "3.7"
 services:
   reverse-proxy:
     image: nginx:alpine
-    restart: on-failure:3
+    restart: always
     networks:
       - reverse-proxy
     depends_on:
@@ -13,7 +13,7 @@ services:
 
   api-docs:
     image: swaggerapi/swagger-ui:latest
-    restart: on-failure:3
+    restart: always
     networks:
       - reverse-proxy
     depends_on:
@@ -24,7 +24,7 @@ services:
 
   archival-api:
     image: ghcr.io/collinbarrett/filterlists-archival-api
-    restart: on-failure:3
+    restart: always
     networks:
       - reverse-proxy
       - archival
@@ -42,7 +42,7 @@ services:
 
   archival-scheduling-db:
     image: redis:alpine
-    restart: on-failure:3
+    restart: always
     networks:
       - archival
     volumes:
@@ -51,7 +51,7 @@ services:
 
   directory-api:
     image: ghcr.io/collinbarrett/filterlists-directory-api
-    restart: on-failure:3
+    restart: always
     networks:
       reverse-proxy:
         aliases:
@@ -68,7 +68,7 @@ services:
 
   directory-db:
     image: postgres:alpine
-    restart: on-failure:3
+    restart: always
     networks:
       - directory
     volumes:
