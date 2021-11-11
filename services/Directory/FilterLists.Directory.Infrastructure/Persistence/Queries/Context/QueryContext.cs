@@ -12,9 +12,9 @@ internal class QueryContext : IQueryContext, IAsyncDisposable
         _dbContext = dbContext;
     }
 
-    public async ValueTask DisposeAsync()
+    public ValueTask DisposeAsync()
     {
-        await _dbContext.DisposeAsync();
+        return _dbContext.DisposeAsync();
     }
 
     public IQueryable<FilterList> FilterLists => _dbContext.FilterLists.AsNoTracking();

@@ -7,10 +7,10 @@ namespace FilterLists.Directory.Api;
 public static class Program
 {
     // TODO: migrate to new hosting model https://docs.microsoft.com/en-us/aspnet/core/migration/50-to-60?view=aspnetcore-6.0&tabs=visual-studio#new-hosting-model
-    public static async Task Main(string[] args)
+    public static Task Main(string[] args)
     {
         var host = CreateHostBuilder(args).Build();
-        await host.TryRunWithLoggingAsync(async () => await host.MigrateAsync());
+        return host.TryRunWithLoggingAsync(() => host.MigrateAsync());
     }
 
     public static IHostBuilder CreateHostBuilder(string[] args)
