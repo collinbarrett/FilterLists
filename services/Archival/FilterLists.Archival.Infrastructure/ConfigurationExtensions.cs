@@ -29,6 +29,5 @@ public static class ConfigurationExtensions
     public static void UseInfrastructure(this IApplicationBuilder app)
     {
         app.UseLogging();
-        app.UseScheduling();
     }
 }

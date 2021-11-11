@@ -1,5 +1,4 @@
 ﻿using Hangfire;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using StackExchange.Redis;
@@ -14,10 +13,6 @@ internal static class ConfigurationExtensions
     {
         _redis = ConnectionMultiplexer.Connect(configuration.GetConnectionString("SchedulingConnection"));
         services.AddHangfire((_, globalConfiguration) => globalConfiguration.UseRedisStorage(_redis).UseMediatR());
-    }
-
-    public static void UseScheduling(this IApplicationBuilder app)
-    {
-        app.UseHangfireServer(new BackgroundJobServerOptions { WorkerCount = Environment.ProcessorCount });
+        services.AddHangfireServer(o => o.WorkerCount = Environment.ProcessorCount);
     }
 }
