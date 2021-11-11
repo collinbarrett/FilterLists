@@ -13,7 +13,7 @@ namespace FilterLists.Directory.Application.Queries
 {
     public static class GetListDetails
     {
-        public class Query : IRequest<ListDetailsVm>
+        public class Query : IRequest<ListDetailsVm?>
         {
             public Query(int id)
             {
@@ -23,7 +23,7 @@ namespace FilterLists.Directory.Application.Queries
             public int Id { get; }
         }
 
-        internal class Handler : IRequestHandler<Query, ListDetailsVm>
+        internal class Handler : IRequestHandler<Query, ListDetailsVm?>
         {
             private readonly IQueryContext _context;
             private readonly IMapper _mapper;
@@ -34,7 +34,7 @@ namespace FilterLists.Directory.Application.Queries
                 _mapper = mapper;
             }
 
-            public async Task<ListDetailsVm> Handle(
+            public async Task<ListDetailsVm?> Handle(
                 Query request,
                 CancellationToken cancellationToken)
             {
