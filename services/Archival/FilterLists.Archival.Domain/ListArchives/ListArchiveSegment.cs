@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-
-namespace FilterLists.Archival.Domain.ListArchives
+﻿namespace FilterLists.Archival.Domain.ListArchives
 {
     public class ListArchiveSegment
     {

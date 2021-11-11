@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace FilterLists.Directory.Api.Contracts.Models
+﻿namespace FilterLists.Directory.Api.Contracts.Models
 {
     public class ListDetailsVm
     {

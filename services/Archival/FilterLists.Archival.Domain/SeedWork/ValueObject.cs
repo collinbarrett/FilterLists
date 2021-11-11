@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
-namespace FilterLists.Archival.Domain.SeedWork
+﻿namespace FilterLists.Archival.Domain.SeedWork
 {
     /// <remarks>https://enterprisecraftsmanship.com/posts/value-object-better-implementation/</remarks>
     public abstract class ValueObject

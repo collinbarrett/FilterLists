@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FilterLists.Archival.Domain.SeedWork
+﻿namespace FilterLists.Archival.Domain.SeedWork
 {
     public interface IUnitOfWork : IDisposable
     {

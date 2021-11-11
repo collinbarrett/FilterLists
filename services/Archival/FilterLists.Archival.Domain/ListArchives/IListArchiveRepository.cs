@@ -1,6 +1,4 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using FilterLists.Archival.Domain.SeedWork;
+﻿using FilterLists.Archival.Domain.SeedWork;
 
 namespace FilterLists.Archival.Domain.ListArchives
 {
