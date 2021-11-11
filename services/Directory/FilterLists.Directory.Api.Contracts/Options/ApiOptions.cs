@@ -1,9 +1,8 @@
-﻿namespace FilterLists.Directory.Api.Contracts.Options
-{
-    internal class ApiOptions
-    {
-        public const string Key = "Api";
+﻿namespace FilterLists.Directory.Api.Contracts.Options;
 
-        public string DirectoryHost { get; init; } = null!;
-    }
+internal class ApiOptions
+{
+    public const string Key = "Api";
+
+    public string DirectoryHost { get; init; } = null!;
 }

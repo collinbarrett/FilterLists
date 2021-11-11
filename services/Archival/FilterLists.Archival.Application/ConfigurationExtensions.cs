@@ -8,35 +8,34 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace FilterLists.Archival.Application
+namespace FilterLists.Archival.Application;
+
+public static class ConfigurationExtensions
 {
-    public static class ConfigurationExtensions
+    public static IHostBuilder UseApplication(this IHostBuilder hostBuilder)
     {
-        public static IHostBuilder UseApplication(this IHostBuilder hostBuilder)
-        {
-            return hostBuilder.UseInfrastructure();
-        }
+        return hostBuilder.UseInfrastructure();
+    }
 
-        public static void AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
-        {
-            services.AddMediatR(typeof(ConfigurationExtensions).Assembly);
-            services.AddInfrastructureServices(configuration);
-        }
+    public static void AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
+    {
+        services.AddMediatR(typeof(ConfigurationExtensions).Assembly);
+        services.AddInfrastructureServices(configuration);
+    }
 
-        public static void UseApplication(this IApplicationBuilder app)
-        {
-            app.UseInfrastructure();
-            ScheduleArchival();
-        }
+    public static void UseApplication(this IApplicationBuilder app)
+    {
+        app.UseInfrastructure();
+        ScheduleArchival();
+    }
 
-        private static void ScheduleArchival()
-        {
+    private static void ScheduleArchival()
+    {
 #if DEBUG
-            JobStorage.Current?.GetMonitoringApi()?.PurgeJobs();
-            new EnqueueArchiveAllLists.Command().EnqueueBackgroundJob();
+        JobStorage.Current?.GetMonitoringApi()?.PurgeJobs();
+        new EnqueueArchiveAllLists.Command().EnqueueBackgroundJob();
 #else
             new EnqueueArchiveAllLists.Command().AddOrUpdateRecurringJob(Cron.Daily);
 #endif
-        }
     }
 }

@@ -1,9 +1,8 @@
 ﻿using FilterLists.Archival.Domain.ListArchives;
 
-namespace FilterLists.Archival.Infrastructure.Persistence.FileWriteStrategies
+namespace FilterLists.Archival.Infrastructure.Persistence.FileWriteStrategies;
+
+internal interface IStreamToPlainTextConversionStrategy
 {
-    internal interface IStreamToPlainTextConversionStrategy
-    {
-        Stream Convert(ListArchiveSegment listArchiveSegment, CancellationToken cancellationToken);
-    }
+    Stream Convert(ListArchiveSegment listArchiveSegment, CancellationToken cancellationToken);
 }

@@ -1,7 +1,6 @@
-﻿namespace FilterLists.Archival.Domain.SeedWork
+﻿namespace FilterLists.Archival.Domain.SeedWork;
+
+public interface IUnitOfWork : IDisposable
 {
-    public interface IUnitOfWork : IDisposable
-    {
-        void Commit();
-    }
+    void Commit();
 }

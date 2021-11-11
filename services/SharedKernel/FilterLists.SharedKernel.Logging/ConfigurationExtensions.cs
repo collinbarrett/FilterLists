@@ -8,31 +8,30 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 
-namespace FilterLists.SharedKernel.Logging
+namespace FilterLists.SharedKernel.Logging;
+
+public static class ConfigurationExtensions
 {
-    public static class ConfigurationExtensions
+    public static IHostBuilder UseLogging(this IHostBuilder hostBuilder)
     {
-        public static IHostBuilder UseLogging(this IHostBuilder hostBuilder)
-        {
-            return hostBuilder.UseSerilog();
-        }
+        return hostBuilder.UseSerilog();
+    }
 
-        public static void AddSharedKernelLogging(this IServiceCollection services, IConfiguration configuration)
+    public static void AddSharedKernelLogging(this IServiceCollection services, IConfiguration configuration)
+    {
+        using var serverTelemetryChannel = new ServerTelemetryChannel
         {
-            using var serverTelemetryChannel = new ServerTelemetryChannel
-            {
-                StorageFolder = configuration.GetSection(ApplicationInsightsOptions.Key)
-                    .Get<ApplicationInsightsOptions>()
-                    .ServerTelemetryChannelStoragePath
-            };
-            services.AddSingleton(typeof(ITelemetryChannel), serverTelemetryChannel);
-            TelemetryDebugWriter.IsTracingDisabled = true;
-            services.AddApplicationInsightsTelemetry();
-        }
+            StorageFolder = configuration.GetSection(ApplicationInsightsOptions.Key)
+                .Get<ApplicationInsightsOptions>()
+                .ServerTelemetryChannelStoragePath
+        };
+        services.AddSingleton(typeof(ITelemetryChannel), serverTelemetryChannel);
+        TelemetryDebugWriter.IsTracingDisabled = true;
+        services.AddApplicationInsightsTelemetry();
+    }
 
-        public static void UseLogging(this IApplicationBuilder app)
-        {
-            app.UseSerilogRequestLogging();
-        }
+    public static void UseLogging(this IApplicationBuilder app)
+    {
+        app.UseSerilogRequestLogging();
     }
 }

@@ -139,3 +139,6 @@ dotnet_diagnostic.CS1591.severity = silent
 
 #https://github.com/JosefPihrt/Roslynator/blob/master/docs/Options.md
 roslynator.RCS1090.invert = true
+
+#https://github.com/SonarSource/sonar-dotnet/issues/4731
+dotnet_diagnostic.S3903.severity = silent

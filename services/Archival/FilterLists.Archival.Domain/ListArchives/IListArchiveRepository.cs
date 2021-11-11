@@ -1,9 +1,8 @@
 ﻿using FilterLists.Archival.Domain.SeedWork;
 
-namespace FilterLists.Archival.Domain.ListArchives
+namespace FilterLists.Archival.Domain.ListArchives;
+
+public interface IListArchiveRepository : IUnitOfWork
 {
-    public interface IListArchiveRepository : IUnitOfWork
-    {
-        Task AddAsync(ListArchive listArchive, CancellationToken cancellationToken);
-    }
+    Task AddAsync(ListArchive listArchive, CancellationToken cancellationToken);
 }
