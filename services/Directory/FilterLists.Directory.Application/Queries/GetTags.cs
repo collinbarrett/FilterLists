@@ -9,11 +9,11 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetTags
 {
-    public class Query : IRequest<IEnumerable<TagVm>>
+    public class Query : IRequest<List<TagVm>>
     {
     }
 
-    internal class Handler : IRequestHandler<Query, IEnumerable<TagVm>>
+    internal class Handler : IRequestHandler<Query, List<TagVm>>
     {
         private readonly IQueryContext _context;
         private readonly IMapper _mapper;
@@ -24,11 +24,11 @@ public static class GetTags
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<TagVm>> Handle(
+        public Task<List<TagVm>> Handle(
             Query request,
             CancellationToken cancellationToken)
         {
-            return await _context.Tags
+            return _context.Tags
                 .OrderBy(t => t.Id)
                 .ProjectTo<TagVm>(_mapper.ConfigurationProvider)
                 .ToListAsync(cancellationToken);

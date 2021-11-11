@@ -31,11 +31,11 @@ public static class GetListDetails
             _mapper = mapper;
         }
 
-        public async Task<ListDetailsVm?> Handle(
+        public Task<ListDetailsVm?> Handle(
             Query request,
             CancellationToken cancellationToken)
         {
-            return await _context.FilterLists
+            return _context.FilterLists
                 .ProjectTo<ListDetailsVm>(_mapper.ConfigurationProvider)
                 .SingleOrDefaultAsync(fl => fl.Id == request.Id, cancellationToken);
         }

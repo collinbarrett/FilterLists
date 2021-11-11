@@ -9,11 +9,11 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetSyntaxes
 {
-    public class Query : IRequest<IEnumerable<SyntaxVm>>
+    public class Query : IRequest<List<SyntaxVm>>
     {
     }
 
-    internal class Handler : IRequestHandler<Query, IEnumerable<SyntaxVm>>
+    internal class Handler : IRequestHandler<Query, List<SyntaxVm>>
     {
         private readonly IQueryContext _context;
         private readonly IMapper _mapper;
@@ -24,11 +24,11 @@ public static class GetSyntaxes
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<SyntaxVm>> Handle(
+        public Task<List<SyntaxVm>> Handle(
             Query request,
             CancellationToken cancellationToken)
         {
-            return await _context.Syntaxes
+            return _context.Syntaxes
                 .OrderBy(s => s.Id)
                 .ProjectTo<SyntaxVm>(_mapper.ConfigurationProvider)
                 .ToListAsync(cancellationToken);

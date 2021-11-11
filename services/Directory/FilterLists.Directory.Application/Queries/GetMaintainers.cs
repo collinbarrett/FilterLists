@@ -9,11 +9,11 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetMaintainers
 {
-    public class Query : IRequest<IEnumerable<MaintainerVm>>
+    public class Query : IRequest<List<MaintainerVm>>
     {
     }
 
-    internal class Handler : IRequestHandler<Query, IEnumerable<MaintainerVm>>
+    internal class Handler : IRequestHandler<Query, List<MaintainerVm>>
     {
         private readonly IQueryContext _context;
         private readonly IMapper _mapper;
@@ -24,11 +24,11 @@ public static class GetMaintainers
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<MaintainerVm>> Handle(
+        public Task<List<MaintainerVm>> Handle(
             Query request,
             CancellationToken cancellationToken)
         {
-            return await _context.Maintainers
+            return _context.Maintainers
                 .OrderBy(m => m.Id)
                 .ProjectTo<MaintainerVm>(_mapper.ConfigurationProvider)
                 .ToListAsync(cancellationToken);

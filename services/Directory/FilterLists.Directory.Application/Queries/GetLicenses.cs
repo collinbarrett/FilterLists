@@ -9,11 +9,11 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetLicenses
 {
-    public class Query : IRequest<IEnumerable<LicenseVm>>
+    public class Query : IRequest<List<LicenseVm>>
     {
     }
 
-    internal class Handler : IRequestHandler<Query, IEnumerable<LicenseVm>>
+    internal class Handler : IRequestHandler<Query, List<LicenseVm>>
     {
         private readonly IQueryContext _context;
         private readonly IMapper _mapper;
@@ -24,11 +24,11 @@ public static class GetLicenses
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<LicenseVm>> Handle(
+        public Task<List<LicenseVm>> Handle(
             Query request,
             CancellationToken cancellationToken)
         {
-            return await _context.Licenses
+            return _context.Licenses
                 .OrderBy(l => l.Id)
                 .ProjectTo<LicenseVm>(_mapper.ConfigurationProvider)
                 .ToListAsync(cancellationToken);

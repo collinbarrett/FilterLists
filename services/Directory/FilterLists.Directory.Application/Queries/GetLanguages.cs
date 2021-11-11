@@ -9,11 +9,11 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetLanguages
 {
-    public class Query : IRequest<IEnumerable<LanguageVm>>
+    public class Query : IRequest<List<LanguageVm>>
     {
     }
 
-    internal class Handler : IRequestHandler<Query, IEnumerable<LanguageVm>>
+    internal class Handler : IRequestHandler<Query, List<LanguageVm>>
     {
         private readonly IQueryContext _context;
         private readonly IMapper _mapper;
@@ -24,11 +24,11 @@ public static class GetLanguages
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<LanguageVm>> Handle(
+        public Task<List<LanguageVm>> Handle(
             Query request,
             CancellationToken cancellationToken)
         {
-            return await _context.Languages
+            return _context.Languages
                 .Where(l => l.FilterListLanguages.Any())
                 .OrderBy(l => l.Iso6391)
                 .ProjectTo<LanguageVm>(_mapper.ConfigurationProvider)
