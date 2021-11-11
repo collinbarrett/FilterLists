@@ -29,7 +29,9 @@ COPY Archival/FilterLists.Archival.Infrastructure/. Archival/FilterLists.Archiva
 COPY Archival/FilterLists.Archival.Application/. Archival/FilterLists.Archival.Application/
 WORKDIR /app/Archival/FilterLists.Archival.Api
 COPY Archival/FilterLists.Archival.Api/. .
-RUN dotnet publish -c Release -p:DebugType=None --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -r linux-musl-x64 --self-contained true -p:PublishSingleFile=true -p:PublishTrimmed=True -p:PublishReadyToRun=true
+
+# TODO: enable PublishTrimmed in csproj file
+RUN dotnet publish -c Release -p:DebugType=None --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -r linux-musl-x64 --self-contained true -p:PublishSingleFile=true -p:PublishReadyToRun=true
 
 # package final
 FROM base AS final
