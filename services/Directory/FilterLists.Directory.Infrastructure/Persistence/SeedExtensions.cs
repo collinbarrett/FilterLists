@@ -5,36 +5,35 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace FilterLists.Directory.Infrastructure.Persistence
+namespace FilterLists.Directory.Infrastructure.Persistence;
+
+public static class SeedExtension
 {
-    public static class SeedExtension
+    public static async Task MigrateAsync(this IHost host)
     {
-        public static async Task MigrateAsync(this IHost host)
-        {
-            using var scope = host.Services.CreateScope();
-            var db = scope.ServiceProvider.GetRequiredService<QueryDbContext>();
-            await db.Database.MigrateAsync();
-        }
+        using var scope = host.Services.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<QueryDbContext>();
+        await db.Database.MigrateAsync();
     }
+}
 
-    internal static class SeedConfigurationExtension
+internal static class SeedConfigurationExtension
+{
+    public static void HasDataJsonFile<TEntity>(this EntityTypeBuilder entityTypeBuilder)
     {
-        public static void HasDataJsonFile<TEntity>(this EntityTypeBuilder entityTypeBuilder)
+        var path = Path.Combine("../data", $"{typeof(TEntity).Name}.json");
+        if (!File.Exists(path))
         {
-            var path = Path.Combine("../data", $"{typeof(TEntity).Name}.json");
-            if (!File.Exists(path))
-            {
-                return;
-            }
+            return;
+        }
 
-            var entitiesJson = File.ReadAllText(path);
-            var entities = JsonSerializer.Deserialize<IEnumerable<TEntity>>(entitiesJson,
-                new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
+        var entitiesJson = File.ReadAllText(path);
+        var entities = JsonSerializer.Deserialize<IEnumerable<TEntity>>(entitiesJson,
+            new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
 
-            if (entities != null)
-            {
-                entityTypeBuilder.HasData((IEnumerable<object>)entities);
-            }
+        if (entities != null)
+        {
+            entityTypeBuilder.HasData((IEnumerable<object>)entities);
         }
     }
 }

@@ -8,28 +8,27 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace FilterLists.Archival.Infrastructure
+namespace FilterLists.Archival.Infrastructure;
+
+public static class ConfigurationExtensions
 {
-    public static class ConfigurationExtensions
+    public static IHostBuilder UseInfrastructure(this IHostBuilder hostBuilder)
     {
-        public static IHostBuilder UseInfrastructure(this IHostBuilder hostBuilder)
-        {
-            return hostBuilder.UseLogging();
-        }
+        return hostBuilder.UseLogging();
+    }
 
-        public static void AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
-        {
-            services.AddSharedKernelLogging(configuration);
-            services.AddSchedulingServices(configuration);
-            services.AddDirectoryApiClient(configuration);
-            services.AddClients();
-            services.AddPersistenceServices(configuration);
-        }
+    public static void AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
+    {
+        services.AddSharedKernelLogging(configuration);
+        services.AddSchedulingServices(configuration);
+        services.AddDirectoryApiClient(configuration);
+        services.AddClients();
+        services.AddPersistenceServices(configuration);
+    }
 
-        public static void UseInfrastructure(this IApplicationBuilder app)
-        {
-            app.UseLogging();
-            app.UseScheduling();
-        }
+    public static void UseInfrastructure(this IApplicationBuilder app)
+    {
+        app.UseLogging();
+        app.UseScheduling();
     }
 }
