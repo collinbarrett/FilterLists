@@ -1,4 +1,5 @@
-﻿using FilterLists.Archival.Application;
+﻿using System.Text.Json.Serialization;
+using FilterLists.Archival.Application;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -19,7 +20,8 @@ namespace FilterLists.Archival.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRouting(o => o.LowercaseUrls = true);
-            services.AddControllers().AddJsonOptions(o => o.JsonSerializerOptions.IgnoreNullValues = true);
+            services.AddControllers().AddJsonOptions(o =>
+                o.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull);
             services.AddSwaggerGen();
             services.AddApplicationServices(Configuration);
         }
