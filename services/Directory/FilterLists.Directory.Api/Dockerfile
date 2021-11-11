@@ -31,7 +31,8 @@ WORKDIR /app/Directory/FilterLists.Directory.Api
 COPY Directory/FilterLists.Directory.Api/. .
 
 # TODO: enable PublishTrimmed in csproj file
-RUN dotnet publish -c Release -p:DebugType=None --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -r linux-musl-x64 --self-contained true -p:PublishSingleFile=true -p:PublishReadyToRun=true
+# TODO: enable PublishReadyToRun
+RUN dotnet publish -c Release -p:DebugType=None --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -r linux-musl-x64 --self-contained true -p:PublishSingleFile=true
 
 # package final
 FROM base AS final
