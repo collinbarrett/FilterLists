@@ -1,8 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using FilterLists.Archival.Infrastructure.Scheduling;
+﻿using FilterLists.Archival.Infrastructure.Scheduling;
 using FilterLists.Directory.Api.Contracts;
 using MediatR;
 using Microsoft.Extensions.Logging;

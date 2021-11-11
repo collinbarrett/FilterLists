@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using FilterLists.Archival.Domain.Extensions;
+﻿using FilterLists.Archival.Domain.Extensions;
 using FilterLists.Archival.Domain.SeedWork;
 
 namespace FilterLists.Archival.Domain.ListArchives

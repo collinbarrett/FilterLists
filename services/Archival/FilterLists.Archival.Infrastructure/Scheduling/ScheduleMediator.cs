@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading;
-using Hangfire;
+﻿using Hangfire;
 using MediatR;
 using Newtonsoft.Json;
 

@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using FilterLists.Directory.Api.Contracts.Models;
+﻿using FilterLists.Directory.Api.Contracts.Models;
 using Refit;
 
 namespace FilterLists.Directory.Api.Contracts

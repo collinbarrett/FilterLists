@@ -1,6 +1,4 @@
-﻿using System.IO;
-using System.Threading;
-using FilterLists.Archival.Domain.ListArchives;
+﻿using FilterLists.Archival.Domain.ListArchives;
 
 namespace FilterLists.Archival.Infrastructure.Persistence.FileWriteStrategies
 {

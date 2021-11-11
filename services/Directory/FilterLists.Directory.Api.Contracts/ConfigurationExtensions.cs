@@ -1,5 +1,4 @@
-﻿using System;
-using FilterLists.Directory.Api.Contracts.Options;
+﻿using FilterLists.Directory.Api.Contracts.Options;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Polly;

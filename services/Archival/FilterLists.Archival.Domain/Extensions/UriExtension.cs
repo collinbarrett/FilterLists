@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-
-namespace FilterLists.Archival.Domain.Extensions
+﻿namespace FilterLists.Archival.Domain.Extensions
 {
     internal static class UriExtension
     {

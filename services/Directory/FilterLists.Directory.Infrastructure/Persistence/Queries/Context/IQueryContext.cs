@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
+﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context
 {

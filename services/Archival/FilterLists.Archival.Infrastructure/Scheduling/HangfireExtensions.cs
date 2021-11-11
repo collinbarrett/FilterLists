@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Hangfire;
+﻿using Hangfire;
 using Hangfire.Storage;
 
 namespace FilterLists.Archival.Infrastructure.Scheduling

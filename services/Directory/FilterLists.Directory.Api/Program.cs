@@ -1,9 +1,6 @@
-﻿using System.Threading.Tasks;
-using FilterLists.Directory.Application;
+﻿using FilterLists.Directory.Application;
 using FilterLists.Directory.Infrastructure.Persistence;
 using FilterLists.SharedKernel.Logging;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
 
 namespace FilterLists.Directory.Api
 {

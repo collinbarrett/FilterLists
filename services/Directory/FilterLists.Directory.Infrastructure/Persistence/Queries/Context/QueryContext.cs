@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
+﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using FilterLists.Directory.Infrastructure.Migrations.Migrations;
+﻿using FilterLists.Directory.Infrastructure.Migrations.Migrations;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
