@@ -32,7 +32,7 @@ COPY Archival/FilterLists.Archival.Api/. .
 
 # TODO: enable PublishTrimmed in csproj file
 # TODO: enable PublishReadyToRun
-RUN dotnet publish -c Release -p:DebugType=None --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -r linux-musl-x64 --self-contained true -p:PublishSingleFile=true
+RUN dotnet publish -c Release -p:DebugType=None -p:DebugSymbols=false --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -r linux-musl-x64 --self-contained true -p:PublishSingleFile=true
 
 # package final
 FROM base AS final
