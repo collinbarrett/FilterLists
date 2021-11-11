@@ -1,4 +1,5 @@
-﻿using FilterLists.Directory.Application;
+﻿using System.Text.Json.Serialization;
+using FilterLists.Directory.Application;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -20,7 +21,8 @@ namespace FilterLists.Directory.Api
         {
             services.AddMemoryCache();
             services.AddRouting(o => o.LowercaseUrls = true);
-            services.AddControllers().AddJsonOptions(o => o.JsonSerializerOptions.IgnoreNullValues = true);
+            services.AddControllers().AddJsonOptions(o =>
+                o.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull);
             services.AddSwaggerGen();
             services.AddApplicationServices(Configuration);
         }
