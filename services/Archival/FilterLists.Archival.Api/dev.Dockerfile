@@ -1,9 +1,9 @@
 # init base for Visual Studio debugging
-FROM mcr.microsoft.com/dotnet/aspnet:5.0-alpine3.12 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine AS base
 WORKDIR /app
 
 # init build
-FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine3.12 AS build
+FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine AS build
 ENV DOTNET_CLI_TELEMETRY_OPTOUT=true
 
 # restore API
@@ -27,7 +27,7 @@ COPY Archival/FilterLists.Archival.Infrastructure/. Archival/FilterLists.Archiva
 COPY Archival/FilterLists.Archival.Application/. Archival/FilterLists.Archival.Application/
 WORKDIR /app/Archival/FilterLists.Archival.Api
 COPY Archival/FilterLists.Archival.Api/. .
-RUN dotnet publish --no-restore -o /app/publish -r alpine.3.12-x64
+RUN dotnet publish --no-restore -o /app/publish -r linux-musl-x64
 
 # package final
 FROM base AS final
