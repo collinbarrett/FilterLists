@@ -19,7 +19,7 @@ namespace FilterLists.Directory.Api.Controllers
             }
 
             var context = HttpContext.Features.Get<IExceptionHandlerFeature>();
-            return Problem(context.Error.StackTrace, title: context.Error.Message);
+            return Problem(context?.Error.StackTrace, title: context?.Error.Message);
         }
 
         [Route("/error")]
