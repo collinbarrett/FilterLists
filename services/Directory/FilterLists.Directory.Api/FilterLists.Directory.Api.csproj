@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.10">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -37,8 +37,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FilterLists.Directory.Application\FilterLists.Directory.Application.csproj" />
-    <ProjectReference
-      Include="..\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj" />
+    <ProjectReference Include="..\FilterLists.Directory.Infrastructure.Migrations\FilterLists.Directory.Infrastructure.Migrations.csproj" />
   </ItemGroup>
 
 </Project>
