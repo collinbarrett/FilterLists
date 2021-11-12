@@ -1,6 +1,6 @@
 ﻿namespace FilterLists.Archival.Domain.ListArchives;
 
-public class ListArchiveSegment
+public record ListArchiveSegment
 {
     public ListArchiveSegment(Uri sourceUri, Stream content)
     {
