@@ -1,6 +1,6 @@
 ﻿namespace FilterLists.Archival.Infrastructure.Options;
 
-internal class GitOptions
+internal record GitOptions
 {
     public const string Key = "Git";
 

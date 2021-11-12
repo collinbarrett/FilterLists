@@ -1,6 +1,6 @@
 ﻿namespace FilterLists.Directory.Api.Contracts.Options;
 
-internal class ApiOptions
+internal record ApiOptions
 {
     public const string Key = "Api";
 
