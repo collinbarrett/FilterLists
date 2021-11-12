@@ -1,6 +1,6 @@
 ﻿namespace FilterLists.SharedKernel.Logging.Options;
 
-internal class ApplicationInsightsOptions
+internal record ApplicationInsightsOptions
 {
     public const string Key = "ApplicationInsights";
 
