@@ -8,7 +8,7 @@ namespace FilterLists.Archival.Infrastructure.Persistence;
 
 internal static class ConfigurationExtensions
 {
-    public static void AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
+    public static void AddPersistence(this IServiceCollection services, IConfiguration configuration)
     {
         services.Configure<GitOptions>(configuration.GetSection(GitOptions.Key));
         services.AddTransient<IRepository, Repository>(_ =>

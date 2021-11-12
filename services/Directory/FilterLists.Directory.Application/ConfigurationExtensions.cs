@@ -9,16 +9,16 @@ namespace FilterLists.Directory.Application;
 
 public static class ConfigurationExtensions
 {
-    public static IHostBuilder UseApplication(this IHostBuilder hostBuilder)
+    public static IHostBuilder ConfigureApplication(this IHostBuilder hostBuilder)
     {
-        return hostBuilder.UseInfrastructure();
+        return hostBuilder.ConfigureInfrastructure();
     }
 
-    public static void AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
+    public static void AddApplication(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddMediatR(typeof(ConfigurationExtensions).Assembly);
         services.AddAutoMapper(typeof(ConfigurationExtensions).Assembly);
-        services.AddInfrastructureServices(configuration);
+        services.AddInfrastructure(configuration);
     }
 
     public static void UseApplication(this IApplicationBuilder app)

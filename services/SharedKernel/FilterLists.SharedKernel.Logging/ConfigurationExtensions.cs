@@ -12,7 +12,7 @@ namespace FilterLists.SharedKernel.Logging;
 
 public static class ConfigurationExtensions
 {
-    public static IHostBuilder UseLogging(this IHostBuilder hostBuilder)
+    public static IHostBuilder ConfigureLogging(this IHostBuilder hostBuilder)
     {
         return hostBuilder.UseSerilog();
     }
