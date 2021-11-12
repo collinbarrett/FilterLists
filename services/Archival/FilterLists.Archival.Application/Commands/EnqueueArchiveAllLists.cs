@@ -7,11 +7,9 @@ namespace FilterLists.Archival.Application.Commands;
 
 public static class EnqueueArchiveAllLists
 {
-    public class Command : IRequest
-    {
-    }
+    public record Command : IRequest;
 
-    public class Handler : IRequestHandler<Command, Unit>
+    internal class Handler : IRequestHandler<Command, Unit>
     {
         private readonly IDirectoryApi _directory;
         private readonly ILogger _logger;

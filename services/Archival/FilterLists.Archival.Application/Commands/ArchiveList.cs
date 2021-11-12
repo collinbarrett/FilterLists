@@ -10,17 +10,9 @@ namespace FilterLists.Archival.Application.Commands;
 
 public static class ArchiveList
 {
-    public class Command : IRequest
-    {
-        public Command(int listId)
-        {
-            ListId = listId;
-        }
+    public record Command(int ListId) : IRequest;
 
-        public int ListId { get; }
-    }
-
-    public class Handler : IRequestHandler<Command, Unit>
+    internal class Handler : IRequestHandler<Command, Unit>
     {
         private readonly IHttpContentClient _client;
         private readonly IDirectoryApi _directory;
