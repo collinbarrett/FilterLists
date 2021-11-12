@@ -1,22 +1,25 @@
-﻿using FilterLists.Directory.Application;
+﻿using System.Text.Json.Serialization;
+using FilterLists.Directory.Api;
+using FilterLists.Directory.Application;
 using FilterLists.Directory.Infrastructure.Persistence;
 using FilterLists.SharedKernel.Logging;
 
-namespace FilterLists.Directory.Api;
+var builder = WebApplication.CreateBuilder(args);
 
-public static class Program
-{
-    // TODO: migrate to new hosting model https://docs.microsoft.com/en-us/aspnet/core/migration/50-to-60?view=aspnetcore-6.0&tabs=visual-studio#new-hosting-model
-    public static Task Main(string[] args)
-    {
-        var host = CreateHostBuilder(args).Build();
-        return host.TryRunWithLoggingAsync(() => host.MigrateAsync());
-    }
+builder.Host.ConfigureApplication();
+builder.Services.AddMemoryCache();
+builder.Services.Configure<RouteOptions>(options => options.LowercaseUrls = true);
+builder.Services.AddControllers()
+    .AddJsonOptions(o => o.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull);
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddApplication(builder.Configuration);
 
-    public static IHostBuilder CreateHostBuilder(string[] args)
-    {
-        return Host.CreateDefaultBuilder(args)
-            .UseApplication()
-            .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>());
-    }
-}
+var app = builder.Build();
+
+app.UseApplication();
+app.UseExceptionHandler(app.Environment.IsDevelopment() ? "/error-local-development" : "/error");
+app.UseSwagger();
+app.MapControllers();
+
+await app.TryRunWithLoggingAsync(() => app.MigrateAsync());

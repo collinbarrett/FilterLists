@@ -9,7 +9,7 @@ internal static class ConfigurationExtensions
 {
     private static ConnectionMultiplexer _redis = null!;
 
-    public static void AddSchedulingServices(this IServiceCollection services, IConfiguration configuration)
+    public static void AddScheduling(this IServiceCollection services, IConfiguration configuration)
     {
         _redis = ConnectionMultiplexer.Connect(configuration.GetConnectionString("SchedulingConnection"));
         services.AddHangfire((_, globalConfiguration) => globalConfiguration.UseRedisStorage(_redis).UseMediatR());

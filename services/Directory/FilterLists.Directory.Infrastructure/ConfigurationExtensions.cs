@@ -13,12 +13,12 @@ namespace FilterLists.Directory.Infrastructure;
 
 public static class ConfigurationExtensions
 {
-    public static IHostBuilder UseInfrastructure(this IHostBuilder hostBuilder)
+    public static IHostBuilder ConfigureInfrastructure(this IHostBuilder hostBuilder)
     {
-        return hostBuilder.UseLogging();
+        return hostBuilder.ConfigureLogging();
     }
 
-    public static void AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
+    public static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddSharedKernelLogging(configuration);
         services.AddDbContextPool<QueryDbContext>(o =>
