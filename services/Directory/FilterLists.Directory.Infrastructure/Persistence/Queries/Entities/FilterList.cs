@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public class FilterList
+public record FilterList
 {
     public int Id { get; init; }
     public string Name { get; init; } = null!;
