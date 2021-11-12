@@ -5,6 +5,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+#if DEBUG
+using Microsoft.Extensions.Logging;
+#endif
 
 namespace FilterLists.Directory.Infrastructure;
 
@@ -21,7 +24,13 @@ public static class ConfigurationExtensions
         services.AddDbContextPool<QueryDbContext>(o =>
         {
             o.UseNpgsql(configuration.GetConnectionString("DirectoryConnection"),
-                po => po.MigrationsAssembly("FilterLists.Directory.Infrastructure.Migrations"));
+                    po => po.MigrationsAssembly("FilterLists.Directory.Infrastructure.Migrations"))
+#if DEBUG
+                .LogTo(Console.WriteLine, LogLevel.Information);
+            o.EnableSensitiveDataLogging();
+#else
+                ;
+#endif
         });
         services.AddScoped<IQueryContext, QueryContext>();
     }
