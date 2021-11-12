@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public class Fork
+public record Fork
 {
     public int UpstreamFilterListId { get; init; }
     public FilterList UpstreamFilterList { get; } = null!;

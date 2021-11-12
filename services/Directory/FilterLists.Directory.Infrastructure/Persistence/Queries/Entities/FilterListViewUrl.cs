@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public class FilterListViewUrl
+public record FilterListViewUrl
 {
     public int Id { get; init; }
     public int FilterListId { get; init; }

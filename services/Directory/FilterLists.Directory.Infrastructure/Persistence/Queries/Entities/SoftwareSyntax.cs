@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public class SoftwareSyntax
+public record SoftwareSyntax
 {
     public int SoftwareId { get; init; }
     public Software Software { get; } = null!;
