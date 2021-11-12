@@ -1,6 +1,6 @@
 ﻿namespace FilterLists.Directory.Api.Contracts.Models;
 
-public class ListDetailsVm
+public record ListDetailsVm
 {
     public int Id { get; init; }
     public string Name { get; init; } = null!;
@@ -27,7 +27,7 @@ public class ListDetailsVm
     public IEnumerable<int>? DependencyFilterListIds { get; init; }
     public IEnumerable<int>? DependentFilterListIds { get; init; }
 
-    public class ViewUrlVm
+    public record ViewUrlVm
     {
         public short SegmentNumber { get; init; }
         public short Primariness { get; init; }

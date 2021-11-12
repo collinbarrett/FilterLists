@@ -9,9 +9,7 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetMaintainers
 {
-    public class Query : IRequest<List<MaintainerVm>>
-    {
-    }
+    public record Query : IRequest<List<MaintainerVm>>;
 
     internal class Handler : IRequestHandler<Query, List<MaintainerVm>>
     {
@@ -47,7 +45,7 @@ public static class GetMaintainers
         }
     }
 
-    public class MaintainerVm
+    public record MaintainerVm
     {
         public int Id { get; init; }
         public string Name { get; init; } = null!;

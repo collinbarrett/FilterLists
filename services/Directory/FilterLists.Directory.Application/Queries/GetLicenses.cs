@@ -9,9 +9,7 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetLicenses
 {
-    public class Query : IRequest<List<LicenseVm>>
-    {
-    }
+    public record Query : IRequest<List<LicenseVm>>;
 
     internal class Handler : IRequestHandler<Query, List<LicenseVm>>
     {
@@ -46,7 +44,7 @@ public static class GetLicenses
         }
     }
 
-    public class LicenseVm
+    public record LicenseVm
     {
         public int Id { get; init; }
         public string Name { get; init; } = null!;

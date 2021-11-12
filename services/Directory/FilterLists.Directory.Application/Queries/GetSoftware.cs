@@ -9,9 +9,7 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetSoftware
 {
-    public class Query : IRequest<List<SoftwareVm>>
-    {
-    }
+    public record Query : IRequest<List<SoftwareVm>>;
 
     internal class Handler : IRequestHandler<Query, List<SoftwareVm>>
     {
@@ -46,7 +44,7 @@ public static class GetSoftware
         }
     }
 
-    public class SoftwareVm
+    public record SoftwareVm
     {
         public int Id { get; init; }
         public string Name { get; init; } = null!;

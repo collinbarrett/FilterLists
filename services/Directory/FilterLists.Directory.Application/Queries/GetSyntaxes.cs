@@ -9,9 +9,7 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetSyntaxes
 {
-    public class Query : IRequest<List<SyntaxVm>>
-    {
-    }
+    public record Query : IRequest<List<SyntaxVm>>;
 
     internal class Handler : IRequestHandler<Query, List<SyntaxVm>>
     {
@@ -49,7 +47,7 @@ public static class GetSyntaxes
         }
     }
 
-    public class SyntaxVm
+    public record SyntaxVm
     {
         public int Id { get; init; }
         public string Name { get; init; } = null!;
