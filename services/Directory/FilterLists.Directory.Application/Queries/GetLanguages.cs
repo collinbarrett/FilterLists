@@ -9,9 +9,7 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetLanguages
 {
-    public class Query : IRequest<List<LanguageVm>>
-    {
-    }
+    public record Query : IRequest<List<LanguageVm>>;
 
     internal class Handler : IRequestHandler<Query, List<LanguageVm>>
     {
@@ -48,7 +46,7 @@ public static class GetLanguages
         }
     }
 
-    public class LanguageVm
+    public record LanguageVm
     {
         public string Iso6391 { get; init; } = null!;
         public string Name { get; init; } = null!;

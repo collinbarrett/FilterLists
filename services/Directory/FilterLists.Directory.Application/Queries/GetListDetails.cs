@@ -10,15 +10,7 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetListDetails
 {
-    public class Query : IRequest<ListDetailsVm?>
-    {
-        public Query(int id)
-        {
-            Id = id;
-        }
-
-        public int Id { get; }
-    }
+    public record Query(int Id) : IRequest<ListDetailsVm?>;
 
     internal class Handler : IRequestHandler<Query, ListDetailsVm?>
     {

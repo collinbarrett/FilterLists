@@ -10,9 +10,7 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetLists
 {
-    public class Query : IRequest<List<ListVm>>
-    {
-    }
+    public record Query : IRequest<List<ListVm>>;
 
     internal class Handler : IRequestHandler<Query, List<ListVm>>
     {

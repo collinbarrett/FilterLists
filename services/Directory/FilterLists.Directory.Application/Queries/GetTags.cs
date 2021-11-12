@@ -9,9 +9,7 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetTags
 {
-    public class Query : IRequest<List<TagVm>>
-    {
-    }
+    public record Query : IRequest<List<TagVm>>;
 
     internal class Handler : IRequestHandler<Query, List<TagVm>>
     {
@@ -46,7 +44,7 @@ public static class GetTags
         }
     }
 
-    public class TagVm
+    public record TagVm
     {
         public int Id { get; init; }
         public string Name { get; init; } = null!;

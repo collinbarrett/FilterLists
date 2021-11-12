@@ -1,6 +1,6 @@
 ﻿namespace FilterLists.Directory.Api.Contracts.Models;
 
-public class ListVm
+public record ListVm
 {
     public int Id { get; init; }
     public string Name { get; init; } = null!;
