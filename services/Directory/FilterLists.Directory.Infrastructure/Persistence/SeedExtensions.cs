@@ -9,11 +9,11 @@ namespace FilterLists.Directory.Infrastructure.Persistence;
 
 public static class SeedExtension
 {
-    public static Task MigrateAsync(this IHost host)
+    public static async Task MigrateAsync(this IHost host)
     {
         using var scope = host.Services.CreateScope();
         var db = scope.ServiceProvider.GetRequiredService<QueryDbContext>();
-        return db.Database.MigrateAsync();
+        await db.Database.MigrateAsync();
     }
 }
 
