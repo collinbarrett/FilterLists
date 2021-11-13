@@ -13,15 +13,11 @@ internal class ValidatorPipelineBehavior<TRequest, TResponse> : IPipelineBehavio
         _validators = validators;
     }
 
-    public Task<TResponse> Handle(TRequest request,
+    public async Task<TResponse> Handle(TRequest request,
         CancellationToken cancellationToken,
         RequestHandlerDelegate<TResponse> next)
     {
-        foreach (var validator in _validators)
-        {
-            validator.ValidateAndThrow(request);
-        }
-
-        return next();
+        await Task.WhenAll(_validators.Select(v => v.ValidateAndThrowAsync(request, cancellationToken)));
+        return await next();
     }
 }
