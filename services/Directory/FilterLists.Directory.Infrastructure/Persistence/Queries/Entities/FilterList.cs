@@ -29,6 +29,7 @@ public record FilterList : AggregateRoot
     public IEnumerable<Merge> IncludesFilterLists { get; init; } = new HashSet<Merge>();
     public IEnumerable<Dependent> DependencyFilterLists { get; init; } = new HashSet<Dependent>();
     public IEnumerable<Dependent> DependentFilterLists { get; init; } = new HashSet<Dependent>();
+    public IEnumerable<Change> Changes { get; init; } = new HashSet<Change>();
 }
 
 internal class FilterListTypeConfiguration : AggregateRootTypeConfiguration<FilterList>

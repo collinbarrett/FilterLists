@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using FilterLists.Directory.Domain.Aggregates.Licenses;
 
 namespace FilterLists.Directory.Domain.Aggregates.Changes;
 
@@ -8,20 +9,26 @@ public class Change
     {
     }
 
-    public Change(ChangeType type, AggregateRoot aggregateRoot, int aggregateRootId, JsonDocument? aggregate)
+    public Change(ChangeType type)
     {
         Type = type;
-        AggregateRoot = aggregateRoot;
-        AggregateRootId = aggregateRootId;
-        Aggregate = aggregate;
     }
 
-    public ChangeType Type { get; private init; }
-    public AggregateRoot AggregateRoot { get; private init; }
-    public int AggregateRootId { get; private init; }
-    public JsonDocument? Aggregate { get; private init; }
-    public DateTime CreatedAt { get; private init; }
-    public DateTime? AppliedAt { get; private init; }
-    public DateTime? RejectedAt { get; private init; }
-    public string? RejectedReason { get; private init; }
+    public ChangeType Type { get; init; }
+    public JsonDocument? AggregateBefore { get; init; }
+    public JsonDocument? AggregateAfter { get; init; }
+
+    public DateTime CreatedAt { get; init; }
+    public string? CreatedReason { get; init; }
+    public DateTime? AppliedAt { get; init; }
+    public DateTime? RejectedAt { get; init; }
+    public string? RejectedReason { get; init; }
+
+    public FilterList? FilterList { get; init; }
+    //public Language? Language { get; }
+    public License? License { get; init; }
+    //public Maintainer? Maintainer { get; }
+    //public Software? Software { get; }
+    //public Syntax? Syntax { get; }
+    //public Tag? Tag { get; }
 }
