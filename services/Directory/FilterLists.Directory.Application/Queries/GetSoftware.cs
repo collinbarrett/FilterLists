@@ -39,8 +39,7 @@ public static class GetSoftware
         {
             CreateMap<Software, SoftwareVm>()
                 .ForMember(s => s.SyntaxIds,
-                    o => o.MapFrom(s =>
-                        s.SoftwareSyntaxes.Select(ss => ss.SyntaxId).OrderBy(sid => sid).AsEnumerable()));
+                    o => o.MapFrom(s => s.SoftwareSyntaxes.OrderBy(ss => ss.SyntaxId).Select(ss => ss.SyntaxId)));
         }
     }
 

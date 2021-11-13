@@ -38,11 +38,9 @@ public static class GetLanguages
     {
         public LanguageVmProfile()
         {
-            CreateMap<Language, LanguageVm>()
-                .ForMember(l => l.FilterListIds,
-                    o => o.MapFrom(l =>
-                        l.FilterListLanguages.Select(fll => fll.FilterListId).OrderBy(flid => flid)
-                            .AsEnumerable()));
+            CreateMap<Language, LanguageVm>().ForMember(l => l.FilterListIds,
+                o => o.MapFrom(l =>
+                    l.FilterListLanguages.OrderBy(fll => fll.FilterListId).Select(fll => fll.FilterListId)));
         }
     }
 
