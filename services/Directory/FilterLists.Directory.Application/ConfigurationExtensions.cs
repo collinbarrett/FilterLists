@@ -1,4 +1,5 @@
 ﻿using FilterLists.Directory.Infrastructure;
+using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
@@ -17,6 +18,8 @@ public static class ConfigurationExtensions
     public static void AddApplication(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddMediatR(typeof(ConfigurationExtensions).Assembly);
+        services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidatorPipelineBehavior<,>));
+        services.AddValidatorsFromAssembly(typeof(ConfigurationExtensions).Assembly, includeInternalTypes: true);
         services.AddAutoMapper(typeof(ConfigurationExtensions).Assembly);
         services.AddInfrastructure(configuration);
     }

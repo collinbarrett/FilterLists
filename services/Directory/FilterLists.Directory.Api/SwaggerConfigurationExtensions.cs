@@ -3,7 +3,7 @@ using Microsoft.OpenApi.Models;
 
 namespace FilterLists.Directory.Api;
 
-internal static class SwaggerExtensions
+internal static class SwaggerConfigurationExtensions
 {
     public static void AddSwaggerGen(this IServiceCollection services)
     {

@@ -3,6 +3,7 @@ using AutoMapper.QueryableExtensions;
 using FilterLists.Directory.Api.Contracts.Models;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
+using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,6 +12,15 @@ namespace FilterLists.Directory.Application.Queries;
 public static class GetListDetails
 {
     public record Query(int Id) : IRequest<ListDetailsVm?>;
+
+    internal class Validator : AbstractValidator<Query>
+    {
+        public Validator()
+        {
+            RuleFor(q => q.Id)
+                .GreaterThanOrEqualTo(0);
+        }
+    }
 
     internal class Handler : IRequestHandler<Query, ListDetailsVm?>
     {
