@@ -40,10 +40,10 @@ public static class GetSyntaxes
             CreateMap<Syntax, SyntaxVm>()
                 .ForMember(s => s.FilterListIds,
                     o => o.MapFrom(s =>
-                        s.FilterListSyntaxes.Select(sls => sls.FilterListId).OrderBy(flid => flid).AsEnumerable()))
+                        s.FilterListSyntaxes.OrderBy(fls => fls.FilterListId).Select(sls => sls.FilterListId)))
                 .ForMember(s => s.SoftwareIds,
                     o => o.MapFrom(s =>
-                        s.SoftwareSyntaxes.Select(ss => ss.SoftwareId).OrderBy(sid => sid).AsEnumerable()));
+                        s.SoftwareSyntaxes.OrderBy(ss => ss.SoftwareId).Select(ss => ss.SoftwareId)));
         }
     }
 

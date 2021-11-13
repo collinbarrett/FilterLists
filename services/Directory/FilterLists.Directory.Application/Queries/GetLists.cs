@@ -41,21 +41,20 @@ public static class GetLists
             CreateMap<FilterList, ListVm>()
                 .ForMember(fl => fl.SyntaxIds,
                     o => o.MapFrom(fl =>
-                        fl.FilterListSyntaxes.Select(fls => fls.SyntaxId).OrderBy(sid => sid).AsEnumerable()))
+                        fl.FilterListSyntaxes.OrderBy(fls => fls.SyntaxId).Select(fls => fls.SyntaxId)))
                 .ForMember(fl => fl.Iso6391s,
                     o => o.MapFrom(fl =>
-                        fl.FilterListLanguages.Select(fls => fls.Iso6391).OrderBy(i => i).AsEnumerable()))
+                        fl.FilterListLanguages.OrderBy(fll => fll.Iso6391).Select(fll => fll.Iso6391)))
                 .ForMember(fl => fl.TagIds,
                     o => o.MapFrom(fl =>
-                        fl.FilterListTags.Select(flt => flt.TagId).OrderBy(tid => tid).AsEnumerable()))
+                        fl.FilterListTags.OrderBy(flt => flt.TagId).Select(flt => flt.TagId)))
                 .ForMember(fl => fl.PrimaryViewUrl,
                     o => o.MapFrom(fl =>
                         fl.ViewUrls.OrderBy(u => u.SegmentNumber).ThenBy(u => u.Primariness).Select(u => u.Url)
                             .FirstOrDefault()))
                 .ForMember(fl => fl.MaintainerIds,
                     o => o.MapFrom(fl =>
-                        fl.FilterListMaintainers.Select(flm => flm.MaintainerId).OrderBy(mid => mid)
-                            .AsEnumerable()));
+                        fl.FilterListMaintainers.OrderBy(flm => flm.MaintainerId).Select(flm => flm.MaintainerId)));
         }
     }
 }

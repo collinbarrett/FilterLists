@@ -40,7 +40,7 @@ public static class GetTags
             CreateMap<Tag, TagVm>()
                 .ForMember(t => t.FilterListIds,
                     o => o.MapFrom(t =>
-                        t.FilterListTags.Select(flt => flt.FilterListId).OrderBy(flid => flid).AsEnumerable()));
+                        t.FilterListTags.OrderBy(flt => flt.FilterListId).Select(flt => flt.FilterListId)));
         }
     }
 

@@ -32,8 +32,9 @@ public static class ConfigurationExtensions
     private static void ScheduleArchival()
     {
 #if DEBUG
-        JobStorage.Current?.GetMonitoringApi()?.PurgeJobs();
-        new EnqueueArchiveAllLists.Command().EnqueueBackgroundJob();
+        // TODO: fix InvalidOperationException and re-enable
+        //JobStorage.Current?.GetMonitoringApi()?.PurgeJobs();
+        //new EnqueueArchiveAllLists.Command().EnqueueBackgroundJob();
 #else
             new EnqueueArchiveAllLists.Command().AddOrUpdateRecurringJob(Cron.Daily);
 #endif

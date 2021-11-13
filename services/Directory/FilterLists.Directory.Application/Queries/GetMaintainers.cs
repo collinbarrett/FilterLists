@@ -40,8 +40,7 @@ public static class GetMaintainers
             CreateMap<Maintainer, MaintainerVm>()
                 .ForMember(m => m.FilterListIds,
                     o => o.MapFrom(m =>
-                        m.FilterListMaintainers.Select(flm => flm.FilterListId).OrderBy(flid => flid)
-                            .AsEnumerable()));
+                        m.FilterListMaintainers.OrderBy(flm => flm.FilterListId).Select(flm => flm.FilterListId)));
         }
     }
 

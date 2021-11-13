@@ -37,10 +37,8 @@ public static class GetLicenses
     {
         public LicenseVmProfile()
         {
-            CreateMap<License, LicenseVm>()
-                .ForMember(l => l.FilterListIds,
-                    o => o.MapFrom(l =>
-                        l.FilterLists.Select(fl => fl.Id).OrderBy(flid => flid).AsEnumerable()));
+            CreateMap<License, LicenseVm>().ForMember(l => l.FilterListIds,
+                o => o.MapFrom(l => l.FilterLists.OrderBy(fl => fl.Id).Select(fl => fl.Id)));
         }
     }
 
