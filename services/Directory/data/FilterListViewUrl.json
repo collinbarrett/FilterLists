@@ -15913,7 +15913,7 @@
   {
     "filterListId": 2556,
     "id": 2787,
-    "primariness": 2,
+    "primariness": 3,
     "url": "https://codeberg.org/rusty-snake/firefox-config/src/branch/main/assets/uBlockOrigin:queryprune.txt"
   }
 ]
