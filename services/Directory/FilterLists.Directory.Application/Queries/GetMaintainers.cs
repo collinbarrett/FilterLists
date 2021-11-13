@@ -52,6 +52,6 @@ public static class GetMaintainers
         public Uri? Url { get; init; }
         public string? EmailAddress { get; init; }
         public string? TwitterHandle { get; init; }
-        public IEnumerable<int>? FilterListIds { get; init; }
+        public IReadOnlyCollection<int> FilterListIds { get; init; } = new HashSet<int>();
     }
 }

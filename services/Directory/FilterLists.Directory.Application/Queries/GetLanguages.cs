@@ -50,6 +50,6 @@ public static class GetLanguages
     {
         public string Iso6391 { get; init; } = null!;
         public string Name { get; init; } = null!;
-        public IEnumerable<int>? FilterListIds { get; init; }
+        public IReadOnlyCollection<int> FilterListIds { get; init; } = new HashSet<int>();
     }
 }

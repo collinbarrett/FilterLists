@@ -52,6 +52,6 @@ public static class GetSoftware
         public Uri? HomeUrl { get; init; }
         public Uri? DownloadUrl { get; init; }
         public bool SupportsAbpUrlScheme { get; init; }
-        public IEnumerable<int>? SyntaxIds { get; init; }
+        public IReadOnlyCollection<int> SyntaxIds { get; init; } = new HashSet<int>();
     }
 }

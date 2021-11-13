@@ -6,10 +6,10 @@ public record ListDetailsVm
     public string Name { get; init; } = null!;
     public string? Description { get; init; }
     public int? LicenseId { get; init; }
-    public IEnumerable<int>? SyntaxIds { get; init; }
-    public IEnumerable<string>? Iso6391s { get; init; }
-    public IEnumerable<int>? TagIds { get; init; }
-    public IEnumerable<ViewUrlVm>? ViewUrls { get; init; }
+    public IReadOnlyCollection<int> SyntaxIds { get; init; } = new HashSet<int>();
+    public IReadOnlyCollection<string> Iso6391s { get; init; } = new HashSet<string>();
+    public IReadOnlyCollection<int> TagIds { get; init; } = new HashSet<int>();
+    public IReadOnlyCollection<ViewUrlVm> ViewUrls { get; init; } = new HashSet<ViewUrlVm>();
     public Uri? HomeUrl { get; init; }
     public Uri? OnionUrl { get; init; }
     public Uri? PolicyUrl { get; init; }
@@ -19,13 +19,13 @@ public record ListDetailsVm
     public Uri? ChatUrl { get; init; }
     public string? EmailAddress { get; init; }
     public Uri? DonateUrl { get; init; }
-    public IEnumerable<int>? MaintainerIds { get; init; }
-    public IEnumerable<int>? UpstreamFilterListIds { get; init; }
-    public IEnumerable<int>? ForkFilterListIds { get; init; }
-    public IEnumerable<int>? IncludedInFilterListIds { get; init; }
-    public IEnumerable<int>? IncludesFilterListIds { get; init; }
-    public IEnumerable<int>? DependencyFilterListIds { get; init; }
-    public IEnumerable<int>? DependentFilterListIds { get; init; }
+    public IReadOnlyCollection<int> MaintainerIds { get; init; } = new HashSet<int>();
+    public IReadOnlyCollection<int> UpstreamFilterListIds { get; init; } = new HashSet<int>();
+    public IReadOnlyCollection<int> ForkFilterListIds { get; init; } = new HashSet<int>();
+    public IReadOnlyCollection<int> IncludedInFilterListIds { get; init; } = new HashSet<int>();
+    public IReadOnlyCollection<int> IncludesFilterListIds { get; init; } = new HashSet<int>();
+    public IReadOnlyCollection<int> DependencyFilterListIds { get; init; } = new HashSet<int>();
+    public IReadOnlyCollection<int> DependentFilterListIds { get; init; } = new HashSet<int>();
 
     public record ViewUrlVm
     {
