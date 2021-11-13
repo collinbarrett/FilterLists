@@ -1,4 +1,5 @@
-﻿using FilterLists.Directory.Domain.Aggregates;
+﻿using FilterLists.Directory.Domain.Aggregates.Changes;
+using FilterLists.Directory.Domain.Aggregates.FilterLists;
 using FilterLists.Directory.Domain.Aggregates.Licenses;
 using FilterLists.Directory.Infrastructure.Persistence.Commands.EntityTypeConfigurations;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,7 @@ internal class CommandDbContext : DbContext, ICommandContext
     {
     }
 
+    public DbSet<Change> Changes => Set<Change>();
     public DbSet<FilterList> FilterLists => Set<FilterList>();
     public DbSet<License> Licenses => Set<License>();
 

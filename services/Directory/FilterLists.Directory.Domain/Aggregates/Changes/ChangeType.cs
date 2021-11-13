@@ -2,7 +2,7 @@
 
 public enum ChangeType
 {
-    Insert,
+    Create,
     Update,
     Delete
 }

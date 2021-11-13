@@ -11,8 +11,8 @@ public record Change
     public ChangeType Type { get; init; }
     public JsonDocument? AggregateBefore { get; init; }
     public JsonDocument? AggregateAfter { get; init; }
-    public DateTime CreatedAt { get; init; }
-    public string? CreatedReason { get; init; }
+    public string? Reason { get; init; }
+    public DateTime SubmittedAt { get; init; }
     public DateTime? AppliedAt { get; init; }
     public DateTime? RejectedAt { get; init; }
     public string? RejectedReason { get; init; }
@@ -36,7 +36,5 @@ internal class UpdateConfiguration : IEntityTypeConfiguration<Change>
 {
     public virtual void Configure(EntityTypeBuilder<Change> builder)
     {
-        builder.Property(c => c.CreatedAt)
-            .HasDefaultValueSql("now()");
     }
 }

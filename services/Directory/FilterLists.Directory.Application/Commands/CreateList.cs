@@ -1,6 +1,6 @@
-﻿using FilterLists.Directory.Domain.Aggregates;
-using FilterLists.Directory.Domain.Aggregates.Changes;
-using FilterLists.Directory.Domain.Aggregates.Licenses;
+﻿using FilterLists.Directory.Domain.Aggregates.Changes;
+using FilterLists.Directory.Domain.Aggregates.FilterLists;
+using FilterLists.Directory.Infrastructure.Persistence.Commands.Context;
 using FluentValidation;
 using MediatR;
 
@@ -9,6 +9,7 @@ namespace FilterLists.Directory.Application.Commands;
 public static class CreateList
 {
     public record Command(string Name,
+        ICollection<FilterListViewUrl> ViewUrls,
         string? Description = default,
         int? LicenseId = default,
         Uri? HomeUrl = default,
@@ -19,7 +20,8 @@ public static class CreateList
         Uri? ForumUrl = default,
         Uri? ChatUrl = default,
         string? EmailAddress = default,
-        Uri? DonateUrl = default) : IRequest<Response>;
+        Uri? DonateUrl = default,
+        string? ChangeReason = default) : IRequest<Response>;
 
     internal class Validator : AbstractValidator<Command>
     {
@@ -33,24 +35,23 @@ public static class CreateList
 
     internal class Handler : IRequestHandler<Command, Response>
     {
-        private readonly IChangeRepository _changeRepo;
-        private readonly ILicenseRepository _licenseRepo;
+        private readonly ICommandContext _commandContext;
 
-        public Handler(IChangeRepository changeRepo, ILicenseRepository licenseRepo)
+        public Handler(ICommandContext commandContext)
         {
-            _changeRepo = changeRepo;
-            _licenseRepo = licenseRepo;
+            _commandContext = commandContext;
         }
 
         public async Task<Response> Handle(Command request, CancellationToken cancellationToken)
         {
             var license = request.LicenseId != null
-                ? await _licenseRepo.GetByIdAsync(request.LicenseId.Value, cancellationToken) ??
-                  throw new ArgumentException($"LicenseId {request.LicenseId} not found.",
-                      nameof(request.LicenseId))
-                : null;
+                ? await _commandContext.Licenses.FindAsync(new object[] { request.LicenseId.Value },
+                    cancellationToken) ?? throw new ArgumentException($"LicenseId {request.LicenseId} not found.",
+                    nameof(request.LicenseId))
+                : default;
 
-            var filterList = new FilterList(request.Name,
+            var filterList = FilterList.Create(
+                request.Name,
                 request.Description,
                 license,
                 request.HomeUrl,
@@ -61,14 +62,16 @@ public static class CreateList
                 request.ForumUrl,
                 request.ChatUrl,
                 request.EmailAddress,
-                request.DonateUrl);
+                request.DonateUrl,
+                request.ViewUrls);
+            _commandContext.FilterLists.Add(filterList);
 
-            //Change change = null;
+            var change = Change.CreateFilterList(filterList, request.ChangeReason);
+            _commandContext.Changes.Add(change);
 
-            //await _changeRepo.AddAsync(change, cancellationToken);
-            //return new Response();
+            await _commandContext.SaveChangesAsync(cancellationToken);
 
-            throw new NotImplementedException();
+            return new Response();
         }
     }
 
