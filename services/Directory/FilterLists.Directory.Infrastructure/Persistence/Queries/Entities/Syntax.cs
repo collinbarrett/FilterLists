@@ -9,6 +9,7 @@ public record Syntax : AggregateRoot
     public Uri? Url { get; init; }
     public IEnumerable<FilterListSyntax> FilterListSyntaxes { get; init; } = new HashSet<FilterListSyntax>();
     public IEnumerable<SoftwareSyntax> SoftwareSyntaxes { get; init; } = new HashSet<SoftwareSyntax>();
+    public IEnumerable<Change> Changes { get; init; } = new HashSet<Change>();
 }
 
 internal class SyntaxTypeConfiguration : AggregateRootTypeConfiguration<Syntax>

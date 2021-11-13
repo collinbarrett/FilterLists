@@ -8,6 +8,7 @@ public record Language : AggregateRoot
     public string Iso6391 { get; init; } = null!;
     public string Name { get; init; } = null!;
     public IEnumerable<FilterListLanguage> FilterListLanguages { get; init; } = new HashSet<FilterListLanguage>();
+    public IEnumerable<Change> Changes { get; init; } = new HashSet<Change>();
 }
 
 internal class LanguageTypeConfiguration : AggregateRootTypeConfiguration<Language>

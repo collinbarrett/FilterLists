@@ -9,6 +9,7 @@ public record Maintainer : AggregateRoot
     public string? EmailAddress { get; init; }
     public string? TwitterHandle { get; init; }
     public IEnumerable<FilterListMaintainer> FilterListMaintainers { get; init; } = new HashSet<FilterListMaintainer>();
+    public IEnumerable<Change> Changes { get; init; } = new HashSet<Change>();
 }
 
 internal class MaintainerTypeConfiguration : AggregateRootTypeConfiguration<Maintainer>

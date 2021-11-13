@@ -11,7 +11,6 @@ public class QueryDbContext : DbContext
     static QueryDbContext()
     {
         NpgsqlConnection.GlobalTypeMapper.MapEnum<ChangeType>();
-        NpgsqlConnection.GlobalTypeMapper.MapEnum<AggregateRoot>();
     }
 
     public QueryDbContext(DbContextOptions<QueryDbContext> options) : base(options)
@@ -44,6 +43,5 @@ public class QueryDbContext : DbContext
         modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly,
             type => type.Namespace == typeof(FilterListTypeConfiguration).Namespace);
         modelBuilder.HasPostgresEnum<ChangeType>();
-        modelBuilder.HasPostgresEnum<AggregateRoot>();
     }
 }
