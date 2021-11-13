@@ -11864,7 +11864,7 @@
     "id": 1814,
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
-    "name": "Remover for Mainstream Tabloid and Alt-Right Sites"
+    "name": "Remover for Mainstream Tabloid, Alt-Right and Antivaxx Sites"
   },
   {
     "description": "Have you ever been searching for rare PC parts, but a lot the sites you visit refuse to tell you the murderous prices they charge unless you sign up as a member with them? Now you won't feel infuriated by it anymore! While this list is designed for «Google Hit Hider by Domain» to remove search results, it can also be used with other domains-list tools if you want more thorough blocking of them.",
@@ -16989,5 +16989,172 @@
     "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues/",
     "licenseId": 28,
     "name": "Malicious website blocklist (Domains)"
+  },
+  {
+    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "id": 2542,
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Annoyances Filter - Subscriptions and Newsletters Only",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
+  },
+  {
+    "description": "HackerList is a RBL list of IP addresses that have attempted to hack my servers.",
+    "emailAddress": "soren@smallbusinesstech.net",
+    "homeUrl": "https://www.smallbusinesstech.net/pfblocker-lists/",
+    "id": 2543,
+    "licenseId": 4,
+    "name": "HackerList"
+  },
+  {
+    "description": "SpamList is a RBL list of IP addresses that have sent my email server spam that made it through my other spam filtering. It works well when combined with SpamAssassin on the mail server.",
+    "emailAddress": "soren@smallbusinesstech.net",
+    "homeUrl": "https://www.smallbusinesstech.net/pfblocker-lists/",
+    "id": 2544,
+    "licenseId": 4,
+    "name": "SpamList"
+  },
+  {
+    "description": "Whitelisted domains (and their subdomains) when enabling Privacy -> Allow Affiliate & Tracking Links.",
+    "homeUrl": "https://github.com/nextdns/metadata",
+    "id": 2545,
+    "issuesUrl": "https://github.com/nextdns/metadata/issues",
+    "name": "NextDNS BitTorrent Website Blocklist"
+  },
+  {
+    "description": "It turns out, if your device has bloated softwares (i.e. Apps that comes pre-installed and you can't remove them unless you root your device), you're forced into keeping those services running. Manufacturers like Huawei have stopped providing bootloader unlock codes thereby not allowing you to root your device. So, the best solution is to setup a local proxy server that blocks the connection.",
+    "emailAddress": "bhattdeep38@gmail.com",
+    "homeUrl": "https://github.com/deep-bhatt/huawei-block-list",
+    "id": 2546,
+    "licenseId": 2,
+    "name": "Huawei Block List"
+  },
+  {
+    "description": "Throw away email addresses (burner emails) are great for single use signups where you would like the content but rather not give up your email. I'm okay with people using burner email addresses to get my free content, I just need to be able to filter them out of my list so it doesn't drive up bounces and hurt deliverability. Please send a PR with any new ones you find.",
+    "emailAddress": "wes@wesbos.com",
+    "homeUrl": "https://github.com/wesbos/burner-email-providers",
+    "id": 2547,
+    "issuesUrl": "https://github.com/wesbos/burner-email-providers/issues",
+    "licenseId": 2,
+    "name": "A list of burner email providers"
+  },
+  {
+    "description": "List of IoCs being utilized by Ransomwares.",
+    "homeUrl": "https://kriskintel.com/",
+    "id": 2548,
+    "name": "Krisk Intel - KTIP Ransomware Feeds"
+  },
+  {
+    "homeUrl": "https://github.com/brijrajparmar27/host-sources",
+    "id": 2549,
+    "name": "Hosts for DNS Level Blockers - Adult"
+  },
+  {
+    "emailAddress": "zelo72@dismail.de",
+    "homeUrl": "https://github.com/Zelo72/adguard",
+    "id": 2550,
+    "licenseId": 11,
+    "name": "Zelo72's Referral Whitelist"
+  },
+  {
+    "homeUrl": "https://github.com/stamparm/maltrail",
+    "id": 2551,
+    "issuesUrl": "https://github.com/stamparm/maltrail/issues",
+    "licenseId": 2,
+    "name": "Maltrail - I2P"
+  },
+  {
+    "homeUrl": "https://github.com/stamparm/maltrail",
+    "id": 2552,
+    "issuesUrl": "https://github.com/stamparm/maltrail/issues",
+    "licenseId": 2,
+    "name": "Maltrail - IP info"
+  },
+  {
+    "homeUrl": "https://github.com/stamparm/maltrail",
+    "id": 2553,
+    "issuesUrl": "https://github.com/stamparm/maltrail/issues",
+    "licenseId": 2,
+    "name": "Maltrail - Parking sites"
+  },
+  {
+    "description": "In the early 2010's, it was common for Windows games to be hardcoded to require connections to first-party servers to work properly. To no one's surprise besides the game publishers, this began causing problems later on when the servers shut down, with games stuttering, freezing, or failing to start. This list implements community fixes to make those games playable and non-stuttering again.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2554,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "List for preventing games from freezing when pinging dead servers"
+  },
+  {
+    "description": "This list target international websites that clutter Mastodon public timelines and userfeeds with misinformation, unfounded articles, and/or contempt for humanity.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2555,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Remover for Mainstream Tabloid, Alt-Right and Antivaxx Sites - Mastodon"
+  },
+  {
+    "description": "This list target international websites that clutter Mastodon public timelines and userfeeds with misinformation, unfounded articles, and/or contempt for humanity.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2556,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 34,
+    "name": "ClearURLs for uBlock Origin"
+  },
+  {
+    "description": "Blocklist based on articles published by security research groups.",
+    "homeUrl": "https://github.com/scafroglia93/blocklists/",
+    "id": 2557,
+    "issuesUrl": "https://github.com/scafroglia93/blocklists/issues",
+    "name": "scafroglia93's Hosts Blocklists - Malware traffic"
+  },
+  {
+    "description": "This is just a blocklist for Pi-Hole that I maintain for me personally. You can subscribe to it if you want, but I give no guarantee it doesn't break anything you need, indeed it does break some stuff, like Google Plus, but they are all things that I don't use anyway. Again, these are things I want to block on my own networks.",
+    "homeUrl": "https://github.com/Knuschberkeks/Knuschberblock/",
+    "id": 2558,
+    "licenseId": 2,
+    "name": "Knuschberblock"
+  },
+  {
+    "emailAddress": "huzunluartemis@tuta.io",
+    "homeUrl": "https://github.com/HuzunluArtemis/TurkishAdblockList",
+    "id": 2559,
+    "licenseId": 4,
+    "name": "HuzunluArtemis Turkish host adlist"
+  },
+  {
+    "emailAddress": "huzunluartemis@tuta.io",
+    "homeUrl": "https://github.com/HuzunluArtemis/TurkishAdblockList",
+    "id": 2560,
+    "licenseId": 4,
+    "name": "HuzunluArtemis Turkish elemental adlist"
+  },
+  {
+    "emailAddress": "huzunluartemis@tuta.io",
+    "homeUrl": "https://github.com/HuzunluArtemis/TurkishAdblockList",
+    "id": 2561,
+    "licenseId": 4,
+    "name": "HuzunluArtemis Turkish Bad IPlist"
+  },
+  {
+    "description": "Unofficial stores (Aptoide, Apkpure, GetJar...); Cracked & modded APK sources; Fake & unofficial websites; Malvertising & harmful websites; Closed source apps outside trusted stores (Lucky Patcher, YouTube Vanced...)",
+    "homeUrl": "https://github.com/furkun/AndroidSecurityHosts",
+    "id": 2562,
+    "licenseId": 2,
+    "name": "Android Security Hosts (Hosts)"
+  },
+  {
+    "description": "Unofficial stores (Aptoide, Apkpure, GetJar...); Cracked & modded APK sources; Fake & unofficial websites; Malvertising & harmful websites; Closed source apps outside trusted stores (Lucky Patcher, YouTube Vanced...)",
+    "homeUrl": "https://github.com/furkun/AndroidSecurityHosts",
+    "id": 2563,
+    "licenseId": 2,
+    "name": "Android Security Hosts (Domains)"
   }
 ]
