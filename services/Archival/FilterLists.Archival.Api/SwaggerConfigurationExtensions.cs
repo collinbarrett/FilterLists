@@ -3,12 +3,14 @@ using Microsoft.OpenApi.Models;
 
 namespace FilterLists.Archival.Api;
 
-internal static class SwaggerExtensions
+internal static class SwaggerConfigurationExtensions
 {
     public static void AddSwaggerGen(this IServiceCollection services)
     {
         services.AddSwaggerGen(o =>
         {
+            o.SupportNonNullableReferenceTypes();
+
             o.SwaggerDoc("v1", new OpenApiInfo
             {
                 Title = "FilterLists Archival API",
@@ -25,8 +27,7 @@ internal static class SwaggerExtensions
             });
 
             var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-            var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-            o.IncludeXmlComments(xmlPath);
+            o.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFile));
         });
     }
 

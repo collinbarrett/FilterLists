@@ -1,6 +1,7 @@
 ﻿using System.Text.Json.Serialization;
 using FilterLists.Archival.Application;
 using FilterLists.SharedKernel.Logging;
+using FilterLists.Archival.Api;
 
 var builder = WebApplication.CreateBuilder(args);
 

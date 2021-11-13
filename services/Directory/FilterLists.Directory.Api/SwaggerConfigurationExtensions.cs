@@ -9,6 +9,8 @@ internal static class SwaggerConfigurationExtensions
     {
         services.AddSwaggerGen(o =>
         {
+            o.SupportNonNullableReferenceTypes();
+
             o.SwaggerDoc("v1",
                 new OpenApiInfo
                 {
