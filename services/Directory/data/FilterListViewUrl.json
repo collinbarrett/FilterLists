@@ -2197,14 +2197,8 @@
   },
   {
     "filterListId": 251,
-    "id": 379,
-    "primariness": 1,
-    "url": "http://abp.mozilla-hispano.org/nauscopio/filtros.txt"
-  },
-  {
-    "filterListId": 251,
     "id": 380,
-    "primariness": 2,
+    "primariness": 1,
     "url": "https://raw.githubusercontent.com/mozillahispano/nauscopio-filtros/master/filtros.txt"
   },
   {
@@ -11511,7 +11505,7 @@
     "filterListId": 1931,
     "id": 2002,
     "primariness": 1,
-    "url": "http://www.thedumbterminal.co.uk/files/services/squidblockedsites/blocked.txt"
+    "url": "https://www.thedumbterminal.co.uk/files/services/squidblockedsites/blocked.txt"
   },
   {
     "filterListId": 1932,
@@ -15765,5 +15759,155 @@
     "id": 2761,
     "primariness": 2,
     "url": "https://iam-py-test.github.io/my_filters_001/Alternative%20list%20formats/antimalware_domains.txt"
+  },
+  {
+    "filterListId": 2542,
+    "id": 2762,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/AnnoyancesFilter/sections/subscriptions.txt"
+  },
+  {
+    "filterListId": 2543,
+    "id": 2763,
+    "primariness": 1,
+    "url": "https://pfblockerlists.smallbusinesstech.net/hackerlist.txt"
+  },
+  {
+    "filterListId": 2544,
+    "id": 2764,
+    "primariness": 1,
+    "url": "https://pfblockerlists.smallbusinesstech.net/spamlist.txt"
+  },
+  {
+    "filterListId": 2545,
+    "id": 2765,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/nextdns/metadata/master/privacy/affiliate-tracking-domains"
+  },
+  {
+    "filterListId": 2546,
+    "id": 2766,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/deep-bhatt/huawei-block-list/master/huawei-block-host.txt"
+  },
+  {
+    "filterListId": 2547,
+    "id": 2767,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/wesbos/burner-email-providers/master/emails.txt"
+  },
+  {
+    "filterListId": 2548,
+    "id": 2768,
+    "primariness": 1,
+    "url": "https://kriskintel.com/feeds/ktip_ransomware_feeds.txt"
+  },
+  {
+    "filterListId": 2549,
+    "id": 2769,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/brijrajparmar27/host-sources/master/Porn/hosts"
+  },
+  {
+    "filterListId": 2550,
+    "id": 2770,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/Zelo72/adguard/main/whitelist.referral.adguard"
+  },
+  {
+    "filterListId": 2551,
+    "id": 2771,
+    "primariness": 1,
+    "url": "https://github.com/stamparm/maltrail/blob/master/trails/static/suspicious/i2p.txt"
+  },
+  {
+    "filterListId": 2552,
+    "id": 2772,
+    "primariness": 1,
+    "url": "https://github.com/stamparm/maltrail/blob/master/trails/static/suspicious/ipinfo.txt"
+  },
+  {
+    "filterListId": 2553,
+    "id": 2773,
+    "primariness": 1,
+    "url": "https://github.com/stamparm/maltrail/blob/master/trails/static/suspicious/parking_site.txt"
+  },
+  {
+    "filterListId": 2554,
+    "id": 2774,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/DeadServerGamePingList.txt"
+  },
+  {
+    "filterListId": 2554,
+    "id": 2775,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/DeadServerGamePingList.txt"
+  },
+  {
+    "filterListId": 2555,
+    "id": 2776,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/TabloidRemover-MastodonCategoryForImports.csv"
+  },
+  {
+    "filterListId": 2555,
+    "id": 2777,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/Sensitive%20lists/TabloidRemover-MastodonCategoryForImports.csv"
+  },
+  {
+    "filterListId": 2556,
+    "id": 2778,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt"
+  },
+  {
+    "filterListId": 2556,
+    "id": 2779,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt"
+  },
+  {
+    "filterListId": 2557,
+    "id": 2780,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/scafroglia93/blocklists/master/blocklists-malware-traffic.txt"
+  },
+  {
+    "filterListId": 2558,
+    "id": 2781,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/Knuschberkeks/Knuschberblock/main/Knuschberblock.txt"
+  },
+  {
+    "filterListId": 2559,
+    "id": 2782,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/huzunluartemis/TurkishAdblockList/main/src/HostsList.txt"
+  },
+  {
+    "filterListId": 2560,
+    "id": 2783,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/huzunluartemis/TurkishAdblockList/main/src/ElementalList.txt"
+  },
+  {
+    "filterListId": 2561,
+    "id": 2784,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/huzunluartemis/TurkishAdblockList/main/src/BadIpList.txt"
+  },
+  {
+    "filterListId": 2562,
+    "id": 2785,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/furkun/AndroidSecurityHosts/main/hosts"
+  },
+  {
+    "filterListId": 2563,
+    "id": 2786,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/furkun/AndroidSecurityHosts/main/domains.txt"
   }
 ]
