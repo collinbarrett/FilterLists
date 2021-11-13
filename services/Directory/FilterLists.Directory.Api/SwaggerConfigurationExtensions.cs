@@ -9,23 +9,29 @@ internal static class SwaggerConfigurationExtensions
     {
         services.AddSwaggerGen(o =>
         {
-            o.SwaggerDoc("v1", new OpenApiInfo
-            {
-                Title = "FilterLists Directory API",
-                Description = "An ASP.NET Core API serving the core FilterList information.",
-                Version = "v1",
-                //TermsOfService = "",
-                Contact = new OpenApiContact { Name = "FilterLists", Url = new Uri("https://filterlists.com") },
-                License = new OpenApiLicense
+            o.SwaggerDoc("v1",
+                new OpenApiInfo
                 {
-                    Name = "MIT License",
-                    Url = new Uri("https://github.com/collinbarrett/FilterLists/blob/master/LICENSE")
-                }
-            });
+                    Title = "FilterLists Directory API",
+                    Description = "An ASP.NET Core API serving the core FilterList information.",
+                    Version = "v1",
+                    //TermsOfService = "",
+                    Contact = new OpenApiContact { Name = "FilterLists", Url = new Uri("https://filterlists.com") },
+                    License = new OpenApiLicense
+                    {
+                        Name = "MIT License",
+                        Url = new Uri("https://github.com/collinbarrett/FilterLists/blob/master/LICENSE")
+                    }
+                });
 
-            var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-            var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-            o.IncludeXmlComments(xmlPath);
+            var apiXmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+            o.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, apiXmlFile));
+
+            var apiContractsXmlFile = $"{typeof(Contracts.ConfigurationExtensions).Assembly.GetName().Name}.xml";
+            o.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, apiContractsXmlFile));
+
+            var applicationXmlFile = $"{typeof(Application.ConfigurationExtensions).Assembly.GetName().Name}.xml";
+            o.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, applicationXmlFile));
         });
     }
 
