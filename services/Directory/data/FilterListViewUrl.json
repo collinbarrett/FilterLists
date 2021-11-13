@@ -15909,5 +15909,11 @@
     "id": 2786,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/furkun/AndroidSecurityHosts/main/domains.txt"
+  },
+  {
+    "filterListId": 2556,
+    "id": 2780,
+    "primariness": 2,
+    "url": "https://codeberg.org/rusty-snake/firefox-config/src/branch/main/assets/uBlockOrigin:queryprune.txt"
   }
 ]
