@@ -1,4 +1,4 @@
-﻿using FilterLists.Directory.Domain.Aggregates;
+﻿using FilterLists.Directory.Domain.Aggregates.FilterLists;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
