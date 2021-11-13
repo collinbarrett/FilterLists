@@ -16948,7 +16948,7 @@
     "syntaxId": 1
   },
   {
-    "description": "Block malware, phishing, and scams for a more secure browser",
+    "description": "Block malware, phishing, and scams for a more secure computer",
     "homeUrl": "https://github.com/iam-py-test/my_filters_001",
     "id": 2537,
     "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues",
@@ -16956,7 +16956,7 @@
     "name": "Malicious website blocklist"
   },
   {
-    "description": "Block malware, phishing, and scams for a more secure browser (HOSTS version - not for uBlock Origin)",
+    "description": "Block malware, phishing, and scams for a more secure computer (HOSTS version - not for uBlock Origin)",
     "homeUrl": "https://github.com/iam-py-test/my_filters_001",
     "id": 2538,
     "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues/",
@@ -16981,5 +16981,13 @@
     "issuesUrl": "https://github.com/AmmoniteFilter/TrilobiteFilter/issues",
     "licenseId": 4,
     "name": "TrilobiteFilter"
+  },
+  {
+    "description": "Block malware, phishing, and scams for a more secure computer (Domains version)",
+    "homeUrl": "https://github.com/iam-py-test/my_filters_001",
+    "id": 2541,
+    "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues/",
+    "licenseId": 28,
+    "name": "Malicious website blocklist (Domains)"
   }
 ]
