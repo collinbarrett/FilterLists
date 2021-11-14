@@ -17159,22 +17159,22 @@
   },
   {
     "description": "Filters that accept cookies/GDPR/privacy policy on Polish websites.",
+    "emailAddress": "contact-project+filtersheroes-pccassets-30920945-issue-@incoming.gitlab.com",
+    "forumUrl": "https://www.reddit.com/r/PolishCookieConsent",
     "homeUrl": "https://github.com/FiltersHeroes/PCCassets",
     "id": 2564,
     "issuesUrl": "https://github.com/FiltersHeroes/PCCassets/issues",
     "licenseId": 33,
-    "name": "Polish Cookie Database",
-    "forumUrl": "https://www.reddit.com/r/PolishCookieConsent",
-    "emailAddress": "contact-project+filtersheroes-pccassets-30920945-issue-@incoming.gitlab.com"
+    "name": "Polish Cookie Database"
   },
   {
     "description": "Filters that accept cookies/GDPR/privacy policy on European websites (based on I don't care about cookies).",
+    "emailAddress": "contact-project+filtersheroes-pccassets-30920945-issue-@incoming.gitlab.com",
+    "forumUrl": "https://www.reddit.com/r/PolishCookieConsent",
     "homeUrl": "https://github.com/FiltersHeroes/PCCassets",
     "id": 2565,
     "issuesUrl": "https://github.com/FiltersHeroes/PCCassets/issues",
     "licenseId": 4,
-    "name": "European Cookie Database",
-    "forumUrl": "https://www.reddit.com/r/PolishCookieConsent",
-    "emailAddress": "contact-project+filtersheroes-pccassets-30920945-issue-@incoming.gitlab.com"
+    "name": "European Cookie Database"
   }
 ]

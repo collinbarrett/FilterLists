@@ -288,9 +288,9 @@
     "supportsAbpUrlScheme": true
   },
   {
+    "description": "Automatically accepts cookie policy/GDPR on websites.",
     "downloadUrl": "https://github.com/FiltersHeroes/PolishCookieConsent/#how-to-install-it",
     "homeUrl": "https://github.com/FiltersHeroes/PolishCookieConsent",
-    "description": "Automatically accepts cookie policy/GDPR on websites.",
     "id": 47,
     "name": "Polish Cookie Consent",
     "supportsAbpUrlScheme": false
