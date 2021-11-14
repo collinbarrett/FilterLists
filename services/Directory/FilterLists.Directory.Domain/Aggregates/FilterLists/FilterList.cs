@@ -2,7 +2,7 @@
 
 namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
 
-public class FilterList
+public class FilterList : IAggregate
 {
     private FilterList()
     {
@@ -40,7 +40,7 @@ public class FilterList
         if (viewUrls.Count == 0)
         {
             // TODO: create and handle DomainExceptions
-            throw new ArgumentException("At lest one view URL is required", nameof(viewUrls));
+            throw new ArgumentException("At lest one view URL is required.", nameof(viewUrls));
         }
 
         return new FilterList

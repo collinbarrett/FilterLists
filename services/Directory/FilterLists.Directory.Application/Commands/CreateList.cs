@@ -64,10 +64,10 @@ public static class CreateList
                 request.EmailAddress,
                 request.DonateUrl,
                 request.ViewUrls);
-            _commandContext.FilterLists.Add(filterList);
+            //_commandContext.FilterLists.Add(filterList);
 
-            var change = Change.CreateFilterList(filterList, request.ChangeReason);
-            _commandContext.Changes.Add(change);
+            var change = FilterListChange.Create(filterList, request.ChangeReason);
+            _commandContext.FilterListChanges.Add(change);
 
             await _commandContext.SaveChangesAsync(cancellationToken);
 
