@@ -43,6 +43,7 @@ import img43 from "./43-SmartDNS.png";
 import img44 from "./44-AdGuard-for-WindowsMac.svg";
 import img45 from "./45-AdGuard-for-Android.svg";
 import img46 from "./46-Vivaldi.svg";
+import img47 from "./47-PolishCookieConsent.png";
 
 export {
   img01,
@@ -90,4 +91,5 @@ export {
   img44,
   img45,
   img46,
+  img47,
 };

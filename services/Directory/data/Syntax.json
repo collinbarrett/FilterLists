@@ -202,5 +202,10 @@
     "id": 55,
     "name": "AdGuard Superadvanced only",
     "url": "https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters"
+  },
+  {
+    "id": 56,
+    "name": "Polish Cookie Consent",
+    "url": "https://polishannoyancefilters.netlify.app/en/PolishCookieConsent/syntax/"
   }
 ]
