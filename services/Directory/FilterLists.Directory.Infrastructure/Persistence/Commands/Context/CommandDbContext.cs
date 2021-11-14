@@ -12,7 +12,7 @@ internal class CommandDbContext : DbContext, ICommandContext
     {
     }
 
-    public DbSet<Change> Changes => Set<Change>();
+    public DbSet<FilterListChange> FilterListChanges => Set<FilterListChange>();
     public DbSet<FilterList> FilterLists => Set<FilterList>();
     public DbSet<License> Licenses => Set<License>();
 

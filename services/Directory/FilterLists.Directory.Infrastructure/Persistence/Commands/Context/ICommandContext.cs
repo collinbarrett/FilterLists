@@ -7,7 +7,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Commands.Context;
 
 public interface ICommandContext
 {
-    DbSet<Change> Changes { get; }
+    DbSet<FilterListChange> FilterListChanges { get; }
     DbSet<FilterList> FilterLists { get; }
     DbSet<License> Licenses { get; }
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
