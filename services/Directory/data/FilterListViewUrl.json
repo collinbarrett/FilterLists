@@ -15915,5 +15915,65 @@
     "id": 2787,
     "primariness": 3,
     "url": "https://codeberg.org/rusty-snake/firefox-config/src/branch/main/assets/uBlockOrigin:queryprune.txt"
+  },
+  {
+    "filterListId": 2564,
+    "id": 2788,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/PCCassets/main/plCDB.txt"
+  },
+  {
+    "filterListId": 2564,
+    "id": 2789,
+    "primariness": 2,
+    "url": "https://cdn.jsdelivr.net/gh/FiltersHeroes/PCCassets@main/plCDB.txt"
+  },
+  {
+    "filterListId": 2564,
+    "id": 2790,
+    "primariness": 3,
+    "url": "https://combinatronics.io/FiltersHeroes/PCCassets/main/plCDB.txt"
+  },
+  {
+    "filterListId": 2564,
+    "id": 2791,
+    "primariness": 4,
+    "url": "https://cdn.statically.io/gh/FiltersHeroes/PCCassets/main/plCDB.txt"
+  },
+  {
+    "filterListId": 2564,
+    "id": 2792,
+    "primariness": 5,
+    "url": "https://filtersheroes.gitlab.io/AssetsMirror/plCDB.txt"
+  },
+  {
+    "filterListId": 2565,
+    "id": 2793,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/FiltersHeroes/PCCassets/main/euCDB.txt"
+  },
+  {
+    "filterListId": 2565,
+    "id": 2794,
+    "primariness": 2,
+    "url": "https://cdn.jsdelivr.net/gh/FiltersHeroes/PCCassets@main/euCDB.txt"
+  },
+  {
+    "filterListId": 2565,
+    "id": 2795,
+    "primariness": 3,
+    "url": "https://combinatronics.io/FiltersHeroes/PCCassets/main/euCDB.txt"
+  },
+  {
+    "filterListId": 2565,
+    "id": 2796,
+    "primariness": 4,
+    "url": "https://cdn.statically.io/gh/FiltersHeroes/PCCassets/main/euCDB.txt"
+  },
+  {
+    "filterListId": 2565,
+    "id": 2797,
+    "primariness": 5,
+    "url": "https://filtersheroes.gitlab.io/AssetsMirror/euCDB.txt"
   }
 ]
