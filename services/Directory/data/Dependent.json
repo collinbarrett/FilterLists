@@ -16,6 +16,10 @@
     "dependentFilterListId": 853
   },
   {
+    "dependencyFilterListId": 224,
+    "dependentFilterListId": 2564
+  },
+  {
     "dependencyFilterListId": 347,
     "dependentFilterListId": 1817
   },
@@ -30,9 +34,5 @@
   {
     "dependencyFilterListId": 2439,
     "dependentFilterListId": 2442
-  },
-  {
-    "dependencyFilterListId": 224,
-    "dependentFilterListId": 2564
   }
 ]
