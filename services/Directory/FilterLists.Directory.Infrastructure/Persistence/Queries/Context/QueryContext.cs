@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 
-internal class QueryContext : IQueryContext, IAsyncDisposable
+internal class QueryContext : IQueryContext, IAsyncDisposable, IDisposable
 {
     private readonly QueryDbContext _dbContext;
 
@@ -15,6 +15,11 @@ internal class QueryContext : IQueryContext, IAsyncDisposable
     public ValueTask DisposeAsync()
     {
         return _dbContext.DisposeAsync();
+    }
+
+    void IDisposable.Dispose()
+    {
+        _dbContext.Dispose();
     }
 
     public IQueryable<FilterList> FilterLists => _dbContext.FilterLists.AsNoTracking();
