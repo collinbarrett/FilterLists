@@ -25,6 +25,7 @@ public static class ConfigurationExtensions
         {
             o.UseNpgsql(configuration.GetConnectionString("DirectoryConnection"),
                     po => po.MigrationsAssembly("FilterLists.Directory.Infrastructure.Migrations"))
+                .UseSnakeCaseNamingConvention()
 #if DEBUG
                 .LogTo(Console.WriteLine, LogLevel.Information);
             o.EnableSensitiveDataLogging();
