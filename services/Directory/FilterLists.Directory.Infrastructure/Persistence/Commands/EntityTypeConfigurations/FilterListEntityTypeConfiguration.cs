@@ -9,5 +9,7 @@ internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList
     public virtual void Configure(EntityTypeBuilder<FilterList> builder)
     {
         builder.Property<int>(nameof(Queries.Entities.FilterList.Id));
+        builder.Navigation(f => f.Changes).AutoInclude();
+        builder.Navigation(f => f.ViewUrls).AutoInclude();
     }
 }

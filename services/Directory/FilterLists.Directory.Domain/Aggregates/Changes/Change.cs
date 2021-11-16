@@ -2,15 +2,15 @@
 
 public abstract class Change
 {
-    public string? Reason { get; init; }
-    public DateTime SubmittedAt { get; init; } = DateTime.UtcNow;
-    public DateTime? AppliedAt { get; private set; }
+    public string? Reason { get; protected init; }
+    public DateTime SubmittedAt { get; } = DateTime.UtcNow;
+    public DateTime? ApprovedAt { get; private set; }
     public DateTime? RejectedAt { get; private set; }
     public string? RejectedReason { get; private set; }
 
     public void Approve()
     {
-        AppliedAt = DateTime.UtcNow;
+        ApprovedAt = DateTime.UtcNow;
     }
 
     public void Reject(string? reason)

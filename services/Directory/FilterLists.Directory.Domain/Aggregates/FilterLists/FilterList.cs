@@ -1,9 +1,12 @@
-﻿using FilterLists.Directory.Domain.Aggregates.Licenses;
+﻿using FilterLists.Directory.Domain.Aggregates.Changes;
+using FilterLists.Directory.Domain.Aggregates.Licenses;
 
 namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
 
-public class FilterList : IAggregate
+public sealed class FilterList : AggregateRoot, IRequireChangeApproval<FilterListChange>
 {
+    private readonly ICollection<FilterListChange> _changes = new HashSet<FilterListChange>();
+
     private FilterList()
     {
     }
@@ -20,7 +23,13 @@ public class FilterList : IAggregate
     public Uri? ChatUrl { get; private init; }
     public string? EmailAddress { get; private init; }
     public Uri? DonateUrl { get; private init; }
-    public IEnumerable<FilterListViewUrl> ViewUrls { get; init; } = new HashSet<FilterListViewUrl>();
+    public IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; private init; } = new HashSet<FilterListViewUrl>();
+
+    public IReadOnlyCollection<FilterListChange> Changes
+    {
+        get => (IReadOnlyCollection<FilterListChange>)_changes;
+        init => _changes = (ICollection<FilterListChange>)value;
+    }
 
     public static FilterList Create(
         string name,
@@ -35,11 +44,11 @@ public class FilterList : IAggregate
         Uri? chatUrl,
         string? emailAddress,
         Uri? donateUrl,
-        ICollection<FilterListViewUrl> viewUrls)
+        ICollection<FilterListViewUrl> viewUrls,
+        string? createReason)
     {
         if (viewUrls.Count == 0)
         {
-            // TODO: create and handle DomainExceptions
             throw new ArgumentException("At lest one view URL is required.", nameof(viewUrls));
         }
 
@@ -57,7 +66,8 @@ public class FilterList : IAggregate
             ChatUrl = chatUrl,
             EmailAddress = emailAddress,
             DonateUrl = donateUrl,
-            ViewUrls = viewUrls
+            ViewUrls = (IReadOnlyCollection<FilterListViewUrl>)viewUrls,
+            Changes = new HashSet<FilterListChange>(new[] { FilterListChange.Create(createReason) })
         };
     }
 }

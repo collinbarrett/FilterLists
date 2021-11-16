@@ -1,5 +1,4 @@
-﻿using FilterLists.Directory.Domain.Aggregates.Changes;
-using FilterLists.Directory.Domain.Aggregates.FilterLists;
+﻿using FilterLists.Directory.Domain.Aggregates.FilterLists;
 using FilterLists.Directory.Infrastructure.Persistence.Commands.Context;
 using FluentValidation;
 using MediatR;
@@ -63,11 +62,9 @@ public static class CreateList
                 request.ChatUrl,
                 request.EmailAddress,
                 request.DonateUrl,
-                request.ViewUrls);
-            //_commandContext.FilterLists.Add(filterList);
-
-            var change = FilterListChange.Create(filterList, request.ChangeReason);
-            _commandContext.FilterListChanges.Add(change);
+                request.ViewUrls,
+                request.ChangeReason);
+            _commandContext.FilterLists.Add(filterList);
 
             await _commandContext.SaveChangesAsync(cancellationToken);
 
