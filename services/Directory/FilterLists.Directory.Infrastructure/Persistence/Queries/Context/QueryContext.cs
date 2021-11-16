@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 
-internal class QueryContext : IQueryContext, IAsyncDisposable, IDisposable
+internal sealed class QueryContext : IQueryContext, IAsyncDisposable, IDisposable
 {
     private readonly QueryDbContext _dbContext;
 
