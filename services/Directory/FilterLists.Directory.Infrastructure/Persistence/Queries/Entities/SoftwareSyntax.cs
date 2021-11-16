@@ -5,9 +5,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record SoftwareSyntax
 {
-    public int SoftwareId { get; init; }
+    public int SoftwareId { get; private init; }
     public Software Software { get; } = null!;
-    public int SyntaxId { get; init; }
+    public int SyntaxId { get; private init; }
     public Syntax Syntax { get; } = null!;
 }
 

@@ -5,12 +5,12 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record FilterListViewUrl
 {
-    public int Id { get; init; }
-    public int FilterListId { get; init; }
+    public int Id { get; private init; }
+    public int FilterListId { get; private init; }
     public FilterList FilterList { get; } = null!;
-    public short SegmentNumber { get; init; }
-    public short Primariness { get; init; }
-    public Uri Url { get; init; } = null!;
+    public short SegmentNumber { get; private init; }
+    public short Primariness { get; private init; }
+    public Uri Url { get; private init; } = null!;
 }
 
 internal class FilterListViewUrlConfiguration : IEntityTypeConfiguration<FilterListViewUrl>

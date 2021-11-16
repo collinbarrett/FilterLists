@@ -5,12 +5,12 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record Software
 {
-    public int Id { get; init; }
-    public string Name { get; init; } = null!;
-    public string? Description { get; init; }
-    public Uri? HomeUrl { get; init; }
-    public Uri? DownloadUrl { get; init; }
-    public bool SupportsAbpUrlScheme { get; init; }
+    public int Id { get; private init; }
+    public string Name { get; private init; } = null!;
+    public string? Description { get; private init; }
+    public Uri? HomeUrl { get; private init; }
+    public Uri? DownloadUrl { get; private init; }
+    public bool SupportsAbpUrlScheme { get; private init; }
     public IReadOnlyCollection<SoftwareSyntax> SoftwareSyntaxes { get; } = new HashSet<SoftwareSyntax>();
 }
 

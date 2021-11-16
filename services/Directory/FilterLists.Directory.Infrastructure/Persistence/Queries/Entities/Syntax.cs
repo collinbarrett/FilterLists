@@ -5,10 +5,10 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record Syntax
 {
-    public int Id { get; init; }
-    public string Name { get; init; } = null!;
-    public string? Description { get; init; }
-    public Uri? Url { get; init; }
+    public int Id { get; private init; }
+    public string Name { get; private init; } = null!;
+    public string? Description { get; private init; }
+    public Uri? Url { get; private init; }
     public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; } = new HashSet<FilterListSyntax>();
     public IReadOnlyCollection<SoftwareSyntax> SoftwareSyntaxes { get; } = new HashSet<SoftwareSyntax>();
 }

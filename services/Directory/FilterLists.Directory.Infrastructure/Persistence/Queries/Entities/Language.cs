@@ -5,8 +5,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record Language
 {
-    public string Iso6391 { get; init; } = null!;
-    public string Name { get; init; } = null!;
+    public string Iso6391 { get; private init; } = null!;
+    public string Name { get; private init; } = null!;
     public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; } = new HashSet<FilterListLanguage>();
 }
 
