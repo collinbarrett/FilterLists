@@ -1,4 +1,6 @@
-﻿using System.Text.Json;
+﻿using System.Globalization;
+using System.Text.Json;
+using EFCore.NamingConventions.Internal;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -14,6 +16,7 @@ public record Change
     public string? RejectedReason { get; private init; }
     public JsonDocument? AggregateBefore { get; private init; }
     public JsonDocument? AggregateAfter { get; private init; }
+    public string? AggregateType { get; private init; }
     public int? FilterListId { get; private init; }
     public FilterList? FilterList { get; }
     public string? LanguageIso6391 { get; private init; }
@@ -30,9 +33,39 @@ public record Change
     public Tag? Tag { get; }
 }
 
+internal enum AggregateType
+{
+    FilterList,
+    Language,
+    License,
+    Maintainer,
+    Software,
+    Syntax,
+    Tag
+}
+
 internal class UpdateConfiguration : IEntityTypeConfiguration<Change>
 {
     public virtual void Configure(EntityTypeBuilder<Change> builder)
     {
+        builder
+            .Property(c => c.AggregateType)
+            .HasComputedColumnSql(BuildComputedAggregateTypeSql(), true);
+
+        static string BuildComputedAggregateTypeSql()
+        {
+            var nameRewriter = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
+            return $@"
+                CASE 
+                    WHEN {nameRewriter.RewriteName(nameof(Change.FilterListId))} IS NOT NULL THEN '{AggregateType.FilterList}'
+                    WHEN {nameRewriter.RewriteName(nameof(Change.LanguageIso6391))} IS NOT NULL THEN '{AggregateType.Language}'
+                    WHEN {nameRewriter.RewriteName(nameof(Change.LicenseId))} IS NOT NULL THEN '{AggregateType.License}'
+                    WHEN {nameRewriter.RewriteName(nameof(Change.MaintainerId))} IS NOT NULL THEN '{AggregateType.Maintainer}'
+                    WHEN {nameRewriter.RewriteName(nameof(Change.SoftwareId))} IS NOT NULL THEN '{AggregateType.Software}'
+                    WHEN {nameRewriter.RewriteName(nameof(Change.SyntaxId))} IS NOT NULL THEN '{AggregateType.Syntax}'
+                    WHEN {nameRewriter.RewriteName(nameof(Change.TagId))} IS NOT NULL THEN '{AggregateType.Tag}'
+                    ELSE NULL
+                END";
+        }
     }
 }

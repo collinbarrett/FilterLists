@@ -37,6 +37,7 @@ public static class ConfigurationExtensions
         services.AddDbContextPool<CommandDbContext>(o =>
         {
             o.UseNpgsql(configuration.GetConnectionString("DirectoryConnection"))
+                .UseSnakeCaseNamingConvention()
 #if DEBUG
                 .LogTo(Console.WriteLine, LogLevel.Information);
             o.EnableSensitiveDataLogging();
