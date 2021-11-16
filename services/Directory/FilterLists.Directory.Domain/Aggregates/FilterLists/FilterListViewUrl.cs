@@ -1,8 +1,10 @@
 ﻿namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
 
-public class FilterListViewUrl
+public sealed class FilterListViewUrl
 {
-    public short SegmentNumber { get; init; }
-    public short Primariness { get; init; }
-    public Uri Url { get; init; } = null!;
+    private FilterListViewUrl() { }
+
+    public short SegmentNumber { get; private init; }
+    public short Primariness { get; private init; }
+    public Uri Url { get; private init; } = null!;
 }
