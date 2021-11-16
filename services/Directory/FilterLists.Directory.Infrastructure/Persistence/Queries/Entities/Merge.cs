@@ -5,9 +5,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record Merge
 {
-    public int IncludedInFilterListId { get; private init; }
+    public int IncludedInFilterListId { get; init; }
     public FilterList IncludedInFilterList { get; } = null!;
-    public int IncludesFilterListId { get; private init; }
+    public int IncludesFilterListId { get; init; }
     public FilterList IncludesFilterList { get; } = null!;
 }
 

@@ -5,9 +5,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record FilterListLanguage
 {
-    public int FilterListId { get; private init; }
+    public int FilterListId { get; init; }
     public FilterList FilterList { get; } = null!;
-    public string Iso6391 { get; private init; } = null!;
+    public string Iso6391 { get; init; } = null!;
     public Language Language { get; } = null!;
 }
 
