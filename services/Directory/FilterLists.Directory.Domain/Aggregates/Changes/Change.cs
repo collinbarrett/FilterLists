@@ -3,7 +3,7 @@
 public abstract class Change
 {
     public string? Reason { get; protected init; }
-    public DateTime SubmittedAt { get; } = DateTime.UtcNow;
+    public DateTime SubmittedAt { get; protected init; } = DateTime.UtcNow;
     public DateTime? ApprovedAt { get; private set; }
     public DateTime? RejectedAt { get; private set; }
     public string? RejectedReason { get; private set; }
