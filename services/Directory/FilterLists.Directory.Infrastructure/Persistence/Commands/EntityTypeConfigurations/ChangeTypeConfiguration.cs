@@ -13,6 +13,8 @@ internal class ChangeTypeConfiguration : IEntityTypeConfiguration<Change>
     {
         // TODO: register and resolve INameRewriter
         var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
+
+        builder.ToTable($"{nr.RewriteName(nameof(Change))}s");
         builder.Property<int>(nameof(Queries.Entities.Change.Id));
 
         // TODO: TDiscriminator should really be AggregateType rather than string but needs name rewriting
