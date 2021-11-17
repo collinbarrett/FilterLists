@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Npgsql;
 
 namespace FilterLists.Directory.Infrastructure.Persistence;
 
@@ -15,6 +16,9 @@ public static class SeedExtension
         using var scope = host.Services.CreateScope();
         var db = scope.ServiceProvider.GetRequiredService<QueryDbContext>();
         await db.Database.MigrateAsync();
+        await using var conn = (NpgsqlConnection)db.Database.GetDbConnection();
+        await conn.OpenAsync();
+        conn.ReloadTypes();
     }
 }
 
