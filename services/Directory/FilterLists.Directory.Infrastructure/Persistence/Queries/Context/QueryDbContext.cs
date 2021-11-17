@@ -1,10 +1,17 @@
-﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
+﻿using FilterLists.Directory.Domain.Aggregates;
+using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 
 public class QueryDbContext : DbContext
 {
+    static QueryDbContext()
+    {
+        NpgsqlConnection.GlobalTypeMapper.MapEnum<AggregateType>();
+    }
+
     public QueryDbContext(DbContextOptions<QueryDbContext> options) : base(options)
     {
     }
@@ -34,5 +41,6 @@ public class QueryDbContext : DbContext
     {
         modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly,
             type => type.Namespace == typeof(FilterListTypeConfiguration).Namespace);
+        modelBuilder.HasPostgresEnum<AggregateType>();
     }
 }
