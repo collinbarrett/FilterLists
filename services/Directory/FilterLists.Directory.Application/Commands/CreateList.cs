@@ -8,7 +8,7 @@ namespace FilterLists.Directory.Application.Commands;
 public static class CreateList
 {
     public record Command(string Name,
-        ICollection<FilterListViewUrl> ViewUrls,
+        IEnumerable<FilterListViewUrl> ViewUrls,
         string? Description = default,
         int? LicenseId = default,
         Uri? HomeUrl = default,
@@ -21,6 +21,8 @@ public static class CreateList
         string? EmailAddress = default,
         Uri? DonateUrl = default,
         string? ChangeReason = default) : IRequest<Response>;
+
+    public record FilterListViewUrl(short SegmentNumber, short Primariness, Uri Url);
 
     internal class Validator : AbstractValidator<Command>
     {
@@ -62,7 +64,7 @@ public static class CreateList
                 request.ChatUrl,
                 request.EmailAddress,
                 request.DonateUrl,
-                request.ViewUrls,
+                request.ViewUrls.Select(u => (u.SegmentNumber, u.Primariness, u.Url)),
                 request.ChangeReason);
             _commandContext.FilterLists.Add(filterList);
 

@@ -28,7 +28,7 @@ public sealed class FilterList : AggregateRoot, IRequireChangeApproval<FilterLis
     public IReadOnlyCollection<FilterListChange> Changes
     {
         get => (IReadOnlyCollection<FilterListChange>)_changes;
-        init => _changes = (ICollection<FilterListChange>)value;
+        private init => _changes = (ICollection<FilterListChange>)value;
     }
 
     public static FilterList Create(
@@ -44,10 +44,11 @@ public sealed class FilterList : AggregateRoot, IRequireChangeApproval<FilterLis
         Uri? chatUrl,
         string? emailAddress,
         Uri? donateUrl,
-        ICollection<FilterListViewUrl> viewUrls,
+        IEnumerable<(short SegmentNumber, short Primariness, Uri Url)> viewUrls,
         string? createReason)
     {
-        if (viewUrls.Count == 0)
+        var urls = viewUrls.Select(u => FilterListViewUrl.Create(u.SegmentNumber, u.Primariness, u.Url)).ToList();
+        if (urls.Count == 0)
         {
             throw new ArgumentException("At lest one view URL is required.", nameof(viewUrls));
         }
@@ -66,7 +67,7 @@ public sealed class FilterList : AggregateRoot, IRequireChangeApproval<FilterLis
             ChatUrl = chatUrl,
             EmailAddress = emailAddress,
             DonateUrl = donateUrl,
-            ViewUrls = (IReadOnlyCollection<FilterListViewUrl>)viewUrls,
+            ViewUrls = urls,
             Changes = new HashSet<FilterListChange>(new[] { FilterListChange.Create(createReason) })
         };
     }
