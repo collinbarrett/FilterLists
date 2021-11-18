@@ -20,7 +20,7 @@ internal class SoftwareSyntaxTypeConfiguration : IEntityTypeConfiguration<Softwa
         // TODO: register and resolve INameRewriter
         var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
 
-        builder.ToTable($"{nr.RewriteName(nameof(SoftwareSyntax))}s");
+        builder.ToTable($"{nr.RewriteName(nameof(SoftwareSyntax))}es");
         builder.HasKey(ss => new { ss.SoftwareId, ss.SyntaxId });
         builder.HasDataJsonFile<SoftwareSyntax>();
     }
