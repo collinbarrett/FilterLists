@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-using System.Text.Json;
-using EFCore.NamingConventions.Internal;
+﻿using System.Text.Json;
 using FilterLists.Directory.Domain.Aggregates;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -17,7 +15,7 @@ public record Change
     public string? RejectedReason { get; private init; }
     public JsonDocument? AggregateBefore { get; private init; }
     public JsonDocument? AggregateAfter { get; private init; }
-    public AggregateType? AggregateType { get; private init; }
+    public AggregateType AggregateType { get; private init; }
     public int? FilterListId { get; private init; }
     public FilterList? FilterList { get; }
     public string? LanguageIso6391 { get; private init; }
@@ -40,29 +38,9 @@ internal class UpdateConfiguration : IEntityTypeConfiguration<Change>
     {
         builder.Property(c => c.SubmittedAt)
             .HasDefaultValueSql("CURRENT_TIMESTAMP");
-        builder
-            .Property(c => c.AggregateType)
-            .HasComputedColumnSql(BuildComputedAggregateTypeSql(), true);
         builder.HasOne(c => c.Language)
             .WithMany(l => l.Changes)
             .HasForeignKey(c => c.LanguageIso6391)
             .HasConstraintName("fk_changes_languages_language_iso6391");
-
-        static string BuildComputedAggregateTypeSql()
-        {
-            // TODO: register and resolve INameRewriter
-            var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
-            return $@"
-                CASE 
-                    WHEN {nr.RewriteName(nameof(Change.FilterListId))} IS NOT NULL THEN '{nr.RewriteName(nameof(AggregateType.FilterList))}'::{nr.RewriteName(nameof(AggregateType))}
-                    WHEN {nr.RewriteName(nameof(Change.LanguageIso6391))} IS NOT NULL THEN '{nr.RewriteName(nameof(AggregateType.Language))}'::{nr.RewriteName(nameof(AggregateType))}
-                    WHEN {nr.RewriteName(nameof(Change.LicenseId))} IS NOT NULL THEN '{nr.RewriteName(nameof(AggregateType.License))}'::{nr.RewriteName(nameof(AggregateType))}
-                    WHEN {nr.RewriteName(nameof(Change.MaintainerId))} IS NOT NULL THEN '{nr.RewriteName(nameof(AggregateType.Maintainer))}'::{nr.RewriteName(nameof(AggregateType))}
-                    WHEN {nr.RewriteName(nameof(Change.SoftwareId))} IS NOT NULL THEN '{nr.RewriteName(nameof(AggregateType.Software))}'::{nr.RewriteName(nameof(AggregateType))}
-                    WHEN {nr.RewriteName(nameof(Change.SyntaxId))} IS NOT NULL THEN '{nr.RewriteName(nameof(AggregateType.Syntax))}'::{nr.RewriteName(nameof(AggregateType))}
-                    WHEN {nr.RewriteName(nameof(Change.TagId))} IS NOT NULL THEN '{nr.RewriteName(nameof(AggregateType.Tag))}'::{nr.RewriteName(nameof(AggregateType))}
-                    ELSE NULL
-                END";
-        }
     }
 }
