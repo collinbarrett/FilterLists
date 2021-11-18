@@ -1,6 +1,6 @@
 ﻿namespace FilterLists.Directory.Domain.Aggregates.Changes;
 
-public interface IChange<TAggregate> where TAggregate : AggregateRoot
+public interface IChange<out TAggregate> where TAggregate : AggregateRoot
 {
     TAggregate? Current { get; }
     TAggregate? Before { get; }
