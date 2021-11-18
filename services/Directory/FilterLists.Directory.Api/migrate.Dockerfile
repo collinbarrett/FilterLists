@@ -25,4 +25,4 @@ COPY Directory/FilterLists.Directory.Application/. Directory/FilterLists.Directo
 COPY Directory/FilterLists.Directory.Api/. Directory/FilterLists.Directory.Api/
 WORKDIR /app/Directory/FilterLists.Directory.Infrastructure.Migrations.Tests
 COPY Directory/FilterLists.Directory.Infrastructure.Migrations.Tests/. .
-RUN dotnet build -c Release --no-restore -r linux-musl-x64
+RUN dotnet build -c Release --no-restore -p:TreatWarningsAsErrors=true -r linux-musl-x64 --self-contained true
