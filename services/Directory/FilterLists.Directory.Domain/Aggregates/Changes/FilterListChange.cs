@@ -8,9 +8,9 @@ public sealed class FilterListChange : Change, IChange<FilterList>
     {
     }
 
-    public FilterList? Current { get; init; }
-    public FilterList? Before { get; init; }
-    public FilterList? After { get; init; }
+    public FilterList? Current { get; private init; }
+    public FilterList? Before { get; private init; }
+    public FilterList? After { get; private init; }
 
     public static FilterListChange Create(string? reason)
     {
