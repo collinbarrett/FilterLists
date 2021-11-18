@@ -36,6 +36,8 @@ internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList
 {
     public virtual void Configure(EntityTypeBuilder<FilterList> builder)
     {
+        builder.HasIndex(f => f.Name)
+            .IsUnique();
         builder.HasDataJsonFile<FilterList>();
     }
 }

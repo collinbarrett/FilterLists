@@ -18,6 +18,8 @@ internal class LanguageTypeConfiguration : IEntityTypeConfiguration<Language>
         builder.Property(l => l.Iso6391)
             .IsFixedLength()
             .HasMaxLength(2);
+        builder.HasIndex(l => l.Name)
+            .IsUnique();
         builder.HasDataJsonFile<Language>();
     }
 }

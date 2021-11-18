@@ -18,9 +18,12 @@ internal class FilterListViewUrlConfiguration : IEntityTypeConfiguration<FilterL
     public virtual void Configure(EntityTypeBuilder<FilterListViewUrl> builder)
     {
         builder.ToTable(nameof(FilterListViewUrl) + "s");
-        builder.Property(u => u.SegmentNumber).HasDefaultValue(1);
-        builder.Property(u => u.Primariness).HasDefaultValue(1);
-        builder.HasIndex(u => new { u.FilterListId, u.SegmentNumber, u.Primariness }).IsUnique();
+        builder.Property(u => u.SegmentNumber)
+            .HasDefaultValue(1);
+        builder.Property(u => u.Primariness)
+            .HasDefaultValue(1);
+        builder.HasIndex(u => new { u.FilterListId, u.SegmentNumber, u.Primariness })
+            .IsUnique();
         builder.HasDataJsonFile<FilterListViewUrl>();
     }
 }

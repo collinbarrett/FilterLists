@@ -18,6 +18,8 @@ internal class LicenseTypeConfiguration : IEntityTypeConfiguration<License>
 {
     public virtual void Configure(EntityTypeBuilder<License> builder)
     {
+        builder.HasIndex(l => l.Name)
+            .IsUnique();
         builder.HasDataJsonFile<License>();
     }
 }

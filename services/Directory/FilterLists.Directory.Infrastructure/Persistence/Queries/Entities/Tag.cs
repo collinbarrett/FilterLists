@@ -15,6 +15,8 @@ internal class TagTypeConfiguration : IEntityTypeConfiguration<Tag>
 {
     public virtual void Configure(EntityTypeBuilder<Tag> builder)
     {
+        builder.HasIndex(t => t.Name)
+            .IsUnique();
         builder.HasDataJsonFile<Tag>();
     }
 }
