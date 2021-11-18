@@ -20,6 +20,8 @@ internal class SoftwareTypeConfiguration : IEntityTypeConfiguration<Software>
     {
         builder.HasIndex(s => s.Name)
             .IsUnique();
+        builder.Property(s => s.SupportsAbpUrlScheme)
+            .HasDefaultValue(false);
         builder.HasDataJsonFile<Software>();
     }
 }
