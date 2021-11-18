@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Globalization;
+using EFCore.NamingConventions.Internal;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
@@ -15,7 +17,10 @@ internal class DependentTypeConfiguration : IEntityTypeConfiguration<Dependent>
 {
     public virtual void Configure(EntityTypeBuilder<Dependent> builder)
     {
-        builder.ToTable(nameof(Dependent) + "s");
+        // TODO: register and resolve INameRewriter
+        var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
+
+        builder.ToTable($"{nr.RewriteName(nameof(Dependent))}s");
         builder.HasKey(d => new { d.DependencyFilterListId, d.DependentFilterListId });
         builder.HasOne(d => d.DependencyFilterList)
             .WithMany(fl => fl.DependentFilterLists)

@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Globalization;
+using EFCore.NamingConventions.Internal;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
@@ -15,7 +17,10 @@ internal class ForkTypeConfiguration : IEntityTypeConfiguration<Fork>
 {
     public virtual void Configure(EntityTypeBuilder<Fork> builder)
     {
-        builder.ToTable(nameof(Fork) + "s");
+        // TODO: register and resolve INameRewriter
+        var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
+
+        builder.ToTable($"{nr.RewriteName(nameof(Fork))}s");
         builder.HasKey(f => new { f.UpstreamFilterListId, f.ForkFilterListId });
         builder.HasOne(f => f.UpstreamFilterList)
             .WithMany(fl => fl.ForkFilterLists)

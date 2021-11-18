@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Globalization;
+using EFCore.NamingConventions.Internal;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
@@ -15,7 +17,10 @@ internal class FilterListMaintainerTypeConfiguration : IEntityTypeConfiguration<
 {
     public virtual void Configure(EntityTypeBuilder<FilterListMaintainer> builder)
     {
-        builder.ToTable(nameof(FilterListMaintainer) + "s");
+        // TODO: register and resolve INameRewriter
+        var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
+
+        builder.ToTable($"{nr.RewriteName(nameof(FilterListMaintainer))}s");
         builder.HasKey(flm => new { flm.FilterListId, flm.MaintainerId });
         builder.HasDataJsonFile<FilterListMaintainer>();
     }

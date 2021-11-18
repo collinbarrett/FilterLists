@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Globalization;
+using EFCore.NamingConventions.Internal;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
@@ -15,7 +17,10 @@ internal class SoftwareSyntaxTypeConfiguration : IEntityTypeConfiguration<Softwa
 {
     public virtual void Configure(EntityTypeBuilder<SoftwareSyntax> builder)
     {
-        builder.ToTable(nameof(SoftwareSyntax) + "es");
+        // TODO: register and resolve INameRewriter
+        var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
+
+        builder.ToTable($"{nr.RewriteName(nameof(SoftwareSyntax))}s");
         builder.HasKey(ss => new { ss.SoftwareId, ss.SyntaxId });
         builder.HasDataJsonFile<SoftwareSyntax>();
     }

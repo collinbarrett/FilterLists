@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Globalization;
+using EFCore.NamingConventions.Internal;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
@@ -15,7 +17,10 @@ internal class MergeTypeConfiguration : IEntityTypeConfiguration<Merge>
 {
     public virtual void Configure(EntityTypeBuilder<Merge> builder)
     {
-        builder.ToTable(nameof(Merge) + "s");
+        // TODO: register and resolve INameRewriter
+        var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
+
+        builder.ToTable($"{nr.RewriteName(nameof(Merge))}s");
         builder.HasKey(m => new { m.IncludedInFilterListId, m.IncludesFilterListId });
         builder.HasOne(m => m.IncludedInFilterList)
             .WithMany(fl => fl.IncludesFilterLists)

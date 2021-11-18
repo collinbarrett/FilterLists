@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Globalization;
+using EFCore.NamingConventions.Internal;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
@@ -15,7 +17,10 @@ internal class FilterListLanguageTypeConfiguration : IEntityTypeConfiguration<Fi
 {
     public virtual void Configure(EntityTypeBuilder<FilterListLanguage> builder)
     {
-        builder.ToTable(nameof(FilterListLanguage) + "s");
+        // TODO: register and resolve INameRewriter
+        var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
+
+        builder.ToTable($"{nr.RewriteName(nameof(FilterListLanguage))}s");
         builder.HasKey(fll => new { fll.FilterListId, fll.Iso6391 });
         builder.HasDataJsonFile<FilterListLanguage>();
     }
