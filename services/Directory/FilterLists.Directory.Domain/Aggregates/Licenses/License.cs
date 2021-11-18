@@ -9,4 +9,20 @@ public sealed class License
     public bool PermitsModification { get; private init; }
     public bool PermitsDistribution { get; private init; }
     public bool PermitsCommercialUse { get; private init; }
+
+    public static License Create(string name,
+        Uri? url,
+        bool permitsModification,
+        bool permitsDistribution,
+        bool permitsCommercialUse)
+    {
+        return new License
+        {
+            Name = name,
+            Url = url,
+            PermitsModification = permitsModification,
+            PermitsDistribution = permitsDistribution,
+            PermitsCommercialUse = permitsCommercialUse
+        };
+    }
 }
