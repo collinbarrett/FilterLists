@@ -1,4 +1,6 @@
-﻿using FilterLists.Directory.Domain.Aggregates.FilterLists;
+﻿using System.Globalization;
+using EFCore.NamingConventions.Internal;
+using FilterLists.Directory.Domain.Aggregates.FilterLists;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -8,7 +10,10 @@ internal class FilterListViewUrlTypeConfiguration : IEntityTypeConfiguration<Fil
 {
     public virtual void Configure(EntityTypeBuilder<FilterListViewUrl> builder)
     {
-        builder.ToTable(nameof(FilterListViewUrl) + "s");
+        // TODO: register and resolve INameRewriter
+        var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
+
+        builder.ToTable($"{nr.RewriteName(nameof(Queries.Entities.FilterListViewUrl))}s");
         builder.Property<int>(nameof(Queries.Entities.FilterListViewUrl.Id));
     }
 }
