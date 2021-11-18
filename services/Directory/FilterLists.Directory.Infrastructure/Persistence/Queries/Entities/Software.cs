@@ -18,6 +18,8 @@ internal class SoftwareTypeConfiguration : IEntityTypeConfiguration<Software>
 {
     public virtual void Configure(EntityTypeBuilder<Software> builder)
     {
+        builder.HasIndex(s => s.Name)
+            .IsUnique();
         builder.HasDataJsonFile<Software>();
     }
 }

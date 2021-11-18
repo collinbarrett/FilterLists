@@ -17,6 +17,8 @@ internal class SyntaxTypeConfiguration : IEntityTypeConfiguration<Syntax>
 {
     public virtual void Configure(EntityTypeBuilder<Syntax> builder)
     {
+        builder.HasIndex(s => s.Name)
+            .IsUnique();
         builder.HasDataJsonFile<Syntax>();
     }
 }

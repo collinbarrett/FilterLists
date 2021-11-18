@@ -17,6 +17,8 @@ internal class MaintainerTypeConfiguration : IEntityTypeConfiguration<Maintainer
 {
     public virtual void Configure(EntityTypeBuilder<Maintainer> builder)
     {
+        builder.HasIndex(m => m.Name)
+            .IsUnique();
         builder.HasDataJsonFile<Maintainer>();
     }
 }
