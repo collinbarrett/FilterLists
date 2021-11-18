@@ -38,6 +38,8 @@ internal class UpdateConfiguration : IEntityTypeConfiguration<Change>
 {
     public virtual void Configure(EntityTypeBuilder<Change> builder)
     {
+        builder.Property(c => c.SubmittedAt)
+            .HasDefaultValueSql("CURRENT_TIMESTAMP");
         builder
             .Property(c => c.AggregateType)
             .HasComputedColumnSql(BuildComputedAggregateTypeSql(), true);

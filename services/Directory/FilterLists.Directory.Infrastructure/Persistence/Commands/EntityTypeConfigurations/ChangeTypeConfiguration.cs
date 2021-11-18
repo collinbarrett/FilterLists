@@ -14,10 +14,10 @@ internal class ChangeTypeConfiguration : IEntityTypeConfiguration<Change>
         // TODO: register and resolve INameRewriter
         var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
 
-        builder.Property<int>(nameof(Queries.Entities.Change.Id));
-
         // TODO: TDiscriminator should really be AggregateType rather than string but needs name rewriting
         builder.HasDiscriminator<string>(nr.RewriteName(nameof(Queries.Entities.Change.AggregateType)))
             .HasValue<FilterListChange>(nr.RewriteName(nameof(AggregateType.FilterList)));
+
+        builder.Property<int>(nameof(Queries.Entities.Change.Id));
     }
 }
