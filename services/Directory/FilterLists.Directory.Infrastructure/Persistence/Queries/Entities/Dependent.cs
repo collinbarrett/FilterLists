@@ -24,10 +24,12 @@ internal class DependentTypeConfiguration : IEntityTypeConfiguration<Dependent>
         builder.HasKey(d => new { d.DependencyFilterListId, d.DependentFilterListId });
         builder.HasOne(d => d.DependencyFilterList)
             .WithMany(fl => fl.DependentFilterLists)
-            .HasForeignKey(d => d.DependencyFilterListId);
+            .HasForeignKey(d => d.DependencyFilterListId)
+            .HasConstraintName("fk_dependents_filter_lists_dependency_filter_list_id");
         builder.HasOne(d => d.DependentFilterList)
             .WithMany(fl => fl.DependencyFilterLists)
-            .HasForeignKey(d => d.DependentFilterListId);
+            .HasForeignKey(d => d.DependentFilterListId)
+            .HasConstraintName("fk_dependents_filter_lists_dependent_filter_list_id");
         builder.HasDataJsonFile<Dependent>();
     }
 }

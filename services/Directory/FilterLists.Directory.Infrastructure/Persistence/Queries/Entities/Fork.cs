@@ -24,10 +24,12 @@ internal class ForkTypeConfiguration : IEntityTypeConfiguration<Fork>
         builder.HasKey(f => new { f.UpstreamFilterListId, f.ForkFilterListId });
         builder.HasOne(f => f.UpstreamFilterList)
             .WithMany(fl => fl.ForkFilterLists)
-            .HasForeignKey(f => f.UpstreamFilterListId);
+            .HasForeignKey(f => f.UpstreamFilterListId)
+            .HasConstraintName("fk_forks_filter_lists_upstream_filter_list_id");
         builder.HasOne(f => f.ForkFilterList)
             .WithMany(fl => fl.UpstreamFilterLists)
-            .HasForeignKey(f => f.ForkFilterListId);
+            .HasForeignKey(f => f.ForkFilterListId)
+            .HasConstraintName("fk_forks_filter_lists_fork_filter_list_id");
         builder.HasDataJsonFile<Fork>();
     }
 }
