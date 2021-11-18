@@ -2,7 +2,7 @@
 
 public interface IChange<TAggregate> where TAggregate : AggregateRoot
 {
-    TAggregate? Current { get; init; }
-    TAggregate? Before { get; init; }
-    TAggregate? After { get; init; }
+    TAggregate? Current { get; }
+    TAggregate? Before { get; }
+    TAggregate? After { get; }
 }
