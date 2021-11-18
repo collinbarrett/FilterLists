@@ -22,6 +22,13 @@ internal class FilterListLanguageTypeConfiguration : IEntityTypeConfiguration<Fi
 
         builder.ToTable($"{nr.RewriteName(nameof(FilterListLanguage))}s");
         builder.HasKey(fll => new { fll.FilterListId, fll.Iso6391 });
+
+        // TODO: why does the convention-generated ConstraintName end w/'language_temp_id' (fk_filter_list_languages_languages_language_temp_id)
+        builder.HasOne(fll => fll.Language)
+            .WithMany(l => l.FilterListLanguages)
+            .HasForeignKey(fll => fll.Iso6391)
+            .HasConstraintName("fk_filter_list_languages_languages_iso6391");
+
         builder.HasDataJsonFile<FilterListLanguage>();
     }
 }
