@@ -24,10 +24,12 @@ internal class MergeTypeConfiguration : IEntityTypeConfiguration<Merge>
         builder.HasKey(m => new { m.IncludedInFilterListId, m.IncludesFilterListId });
         builder.HasOne(m => m.IncludedInFilterList)
             .WithMany(fl => fl.IncludesFilterLists)
-            .HasForeignKey(m => m.IncludedInFilterListId);
+            .HasForeignKey(m => m.IncludedInFilterListId)
+            .HasConstraintName("fk_merges_filter_lists_included_in_filter_list_id");
         builder.HasOne(m => m.IncludesFilterList)
             .WithMany(fl => fl.IncludedInFilterLists)
-            .HasForeignKey(m => m.IncludesFilterListId);
+            .HasForeignKey(m => m.IncludesFilterListId)
+            .HasConstraintName("fk_merges_filter_lists_includes_filter_list_id");
         builder.HasDataJsonFile<Merge>();
     }
 }
