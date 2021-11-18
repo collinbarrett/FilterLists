@@ -20,6 +20,12 @@ internal class LicenseTypeConfiguration : IEntityTypeConfiguration<License>
     {
         builder.HasIndex(l => l.Name)
             .IsUnique();
+        builder.Property(l => l.PermitsModification)
+            .HasDefaultValue(false);
+        builder.Property(l => l.PermitsDistribution)
+            .HasDefaultValue(false);
+        builder.Property(l => l.PermitsCommercialUse)
+            .HasDefaultValue(false);
         builder.HasDataJsonFile<License>();
     }
 }
