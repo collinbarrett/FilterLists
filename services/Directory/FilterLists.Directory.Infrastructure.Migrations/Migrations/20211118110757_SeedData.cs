@@ -496,7 +496,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 152, "daniel@danielmiessler.com", "Daniel Miessler", "danielmiessler", "https://danielmiessler.com/" },
                     { 153, "fabrice.prigent@ut-capitole.fr", "Fabrice Prigent", null, "https://dsi.ut-capitole.fr/blacklists/" },
                     { 154, null, "Block Lists Project", null, "https://blocklist.site/" },
-                    { 155, null, "Chongo Bong", null, "https://github.com/bongochong" },
                     { 156, null, "FTPiHole", null, "https://www.ftpihole.com/" },
                     { 157, "dev@arapurayil.com", "arapurayil", null, "https://github.com/arapurayil/" },
                     { 158, null, "Ming Di Leom", null, "https://mdleom.com/" },
@@ -5299,11 +5298,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 1517, 121 },
                     { 1520, 121 },
                     { 1523, 126 },
-                    { 1523, 155 },
                     { 1524, 126 },
-                    { 1524, 155 },
                     { 1525, 126 },
-                    { 1525, 155 },
                     { 1526, 91 },
                     { 1527, 91 },
                     { 1529, 7 },
@@ -5394,7 +5390,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 1760, 84 },
                     { 1761, 84 },
                     { 1762, 84 },
-                    { 1763, 84 }
+                    { 1763, 84 },
+                    { 1764, 84 },
+                    { 1765, 84 },
+                    { 1766, 84 }
                 });
 
             migrationBuilder.InsertData(
@@ -5402,9 +5401,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: new[] { "FilterListId", "MaintainerId" },
                 values: new object[,]
                 {
-                    { 1764, 84 },
-                    { 1765, 84 },
-                    { 1766, 84 },
                     { 1767, 84 },
                     { 1768, 84 },
                     { 1769, 84 },
@@ -5573,8 +5569,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 2146, 105 },
                     { 2147, 105 },
                     { 2148, 105 },
-                    { 2151, 155 },
-                    { 2152, 155 },
+                    { 2151, 126 },
+                    { 2152, 126 },
                     { 2156, 22 },
                     { 2157, 22 },
                     { 2158, 22 },
@@ -5656,9 +5652,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 2275, 6 },
                     { 2286, 22 },
                     { 2287, 22 },
-                    { 2315, 155 },
-                    { 2316, 155 },
-                    { 2317, 155 },
+                    { 2315, 126 },
+                    { 2316, 126 },
+                    { 2317, 126 },
                     { 2319, 156 },
                     { 2320, 156 },
                     { 2323, 158 },
@@ -6408,7 +6404,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 863, 3 },
                     { 866, 1 },
                     { 868, 4 },
-                    { 869, 4 }
+                    { 869, 4 },
+                    { 870, 3 },
+                    { 871, 4 },
+                    { 872, 3 }
                 });
 
             migrationBuilder.InsertData(
@@ -6416,9 +6415,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: new[] { "FilterListId", "SyntaxId" },
                 values: new object[,]
                 {
-                    { 870, 3 },
-                    { 871, 4 },
-                    { 872, 3 },
                     { 873, 3 },
                     { 874, 3 },
                     { 875, 3 },
@@ -7415,7 +7411,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 2006, 2 },
                     { 2007, 2 },
                     { 2008, 2 },
-                    { 2009, 2 }
+                    { 2009, 2 },
+                    { 2010, 2 },
+                    { 2011, 2 },
+                    { 2012, 2 }
                 });
 
             migrationBuilder.InsertData(
@@ -7423,9 +7422,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: new[] { "FilterListId", "SyntaxId" },
                 values: new object[,]
                 {
-                    { 2010, 2 },
-                    { 2011, 2 },
-                    { 2012, 2 },
                     { 2013, 2 },
                     { 2014, 2 },
                     { 2017, 2 },
@@ -8429,7 +8425,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 479, 2 },
                     { 480, 2 },
                     { 481, 2 },
-                    { 481, 3 }
+                    { 481, 3 },
+                    { 481, 6 },
+                    { 482, 1 },
+                    { 482, 2 }
                 });
 
             migrationBuilder.InsertData(
@@ -8437,9 +8436,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: new[] { "FilterListId", "TagId" },
                 values: new object[,]
                 {
-                    { 481, 6 },
-                    { 482, 1 },
-                    { 482, 2 },
                     { 482, 3 },
                     { 482, 6 },
                     { 483, 1 },
@@ -9436,7 +9432,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 1527, 3 },
                     { 1529, 2 },
                     { 1530, 29 },
-                    { 1531, 2 }
+                    { 1531, 2 },
+                    { 1531, 6 },
+                    { 1532, 3 },
+                    { 1532, 6 }
                 });
 
             migrationBuilder.InsertData(
@@ -9444,9 +9443,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: new[] { "FilterListId", "TagId" },
                 values: new object[,]
                 {
-                    { 1531, 6 },
-                    { 1532, 3 },
-                    { 1532, 6 },
                     { 1532, 7 },
                     { 1533, 2 },
                     { 1534, 2 },
@@ -10443,7 +10439,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 2150, 2 },
                     { 2151, 2 },
                     { 2151, 3 },
-                    { 2151, 6 }
+                    { 2151, 6 },
+                    { 2151, 7 },
+                    { 2152, 2 },
+                    { 2152, 3 }
                 });
 
             migrationBuilder.InsertData(
@@ -10451,9 +10450,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: new[] { "FilterListId", "TagId" },
                 values: new object[,]
                 {
-                    { 2151, 7 },
-                    { 2152, 2 },
-                    { 2152, 3 },
                     { 2152, 6 },
                     { 2152, 7 },
                     { 2153, 6 },
@@ -11457,7 +11453,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 574, 439, (short)1, "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt" },
                     { 575, 440, (short)1, "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt" },
                     { 576, 441, (short)1, "https://v.firebog.net/hosts/static/w3kbl.txt" },
-                    { 577, 442, (short)1, "https://v.firebog.net/hosts/BillStearns.txt" }
+                    { 577, 442, (short)1, "https://v.firebog.net/hosts/BillStearns.txt" },
+                    { 578, 445, (short)1, "https://v.firebog.net/hosts/Easyprivacy.txt" },
+                    { 579, 446, (short)1, "https://v.firebog.net/hosts/Prigent-Ads.txt" },
+                    { 580, 447, (short)1, "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt" }
                 });
 
             migrationBuilder.InsertData(
@@ -11465,9 +11464,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: new[] { "Id", "FilterListId", "Primariness", "Url" },
                 values: new object[,]
                 {
-                    { 578, 445, (short)1, "https://v.firebog.net/hosts/Easyprivacy.txt" },
-                    { 579, 446, (short)1, "https://v.firebog.net/hosts/Prigent-Ads.txt" },
-                    { 580, 447, (short)1, "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt" },
                     { 581, 448, (short)1, "https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt" },
                     { 582, 449, (short)1, "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt" },
                     { 583, 450, (short)1, "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/update.txt" },
@@ -12464,7 +12460,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 1607, 1592, (short)1, "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/RickrollLinkIdentifier.txt" },
                     { 1608, 1592, (short)2, "https://gitlab.com/DandelionSprout/adfilt/raw/master/RickrollLinkIdentifier.txt" },
                     { 1609, 1593, (short)1, "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList alternate versions/NordicFiltersPrivacy.txt" },
-                    { 1610, 1593, (short)2, "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList alternate versions/NordicFiltersPrivacy.txt" }
+                    { 1610, 1593, (short)2, "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList alternate versions/NordicFiltersPrivacy.txt" },
+                    { 1611, 1594, (short)1, "https://theantisocialengineer.com/AntiSocial_Blacklist_Community_V1.txt" },
+                    { 1612, 1595, (short)1, "https://phishing.army/download/phishing_army_blocklist.txt" },
+                    { 1613, 1596, (short)1, "https://dehakkelaar.nl/lists/cryptojacking_campaign.list.txt" }
                 });
 
             migrationBuilder.InsertData(
@@ -12472,9 +12471,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: new[] { "Id", "FilterListId", "Primariness", "Url" },
                 values: new object[,]
                 {
-                    { 1611, 1594, (short)1, "https://theantisocialengineer.com/AntiSocial_Blacklist_Community_V1.txt" },
-                    { 1612, 1595, (short)1, "https://phishing.army/download/phishing_army_blocklist.txt" },
-                    { 1613, 1596, (short)1, "https://dehakkelaar.nl/lists/cryptojacking_campaign.list.txt" },
                     { 1614, 1597, (short)1, "https://dbl.oisd.nl/" },
                     { 1615, 1597, (short)2, "https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dbl.txt" },
                     { 1616, 1597, (short)3, "https://gitlab.com/ookangzheng/dbl-oisd-nl/raw/master/dbl.txt" },
@@ -13478,7 +13474,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 563, 16 },
                     { 16, 59 },
                     { 16, 99 },
-                    { 158, 258 }
+                    { 158, 258 },
+                    { 163, 262 },
+                    { 16, 278 },
+                    { 164, 293 }
                 });
 
             migrationBuilder.InsertData(
@@ -13486,9 +13485,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: new[] { "ForkFilterListId", "UpstreamFilterListId" },
                 values: new object[,]
                 {
-                    { 163, 262 },
-                    { 16, 278 },
-                    { 164, 293 },
                     { 167, 295 },
                     { 166, 301 },
                     { 565, 301 },
@@ -23184,27 +23180,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListMaintainers",
                 keyColumns: new[] { "FilterListId", "MaintainerId" },
-                keyValues: new object[] { 1523, 155 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListMaintainers",
-                keyColumns: new[] { "FilterListId", "MaintainerId" },
                 keyValues: new object[] { 1524, 126 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListMaintainers",
                 keyColumns: new[] { "FilterListId", "MaintainerId" },
-                keyValues: new object[] { 1524, 155 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListMaintainers",
-                keyColumns: new[] { "FilterListId", "MaintainerId" },
                 keyValues: new object[] { 1525, 126 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListMaintainers",
-                keyColumns: new[] { "FilterListId", "MaintainerId" },
-                keyValues: new object[] { 1525, 155 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListMaintainers",
@@ -24524,12 +24505,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListMaintainers",
                 keyColumns: new[] { "FilterListId", "MaintainerId" },
-                keyValues: new object[] { 2151, 155 });
+                keyValues: new object[] { 2151, 126 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListMaintainers",
                 keyColumns: new[] { "FilterListId", "MaintainerId" },
-                keyValues: new object[] { 2152, 155 });
+                keyValues: new object[] { 2152, 126 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListMaintainers",
@@ -24939,17 +24920,17 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListMaintainers",
                 keyColumns: new[] { "FilterListId", "MaintainerId" },
-                keyValues: new object[] { 2315, 155 });
+                keyValues: new object[] { 2315, 126 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListMaintainers",
                 keyColumns: new[] { "FilterListId", "MaintainerId" },
-                keyValues: new object[] { 2316, 155 });
+                keyValues: new object[] { 2316, 126 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListMaintainers",
                 keyColumns: new[] { "FilterListId", "MaintainerId" },
-                keyValues: new object[] { 2317, 155 });
+                keyValues: new object[] { 2317, 126 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListMaintainers",
@@ -79220,11 +79201,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 table: "Maintainers",
                 keyColumn: "Id",
                 keyValue: 154);
-
-            migrationBuilder.DeleteData(
-                table: "Maintainers",
-                keyColumn: "Id",
-                keyValue: 155);
 
             migrationBuilder.DeleteData(
                 table: "Maintainers",

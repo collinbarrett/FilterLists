@@ -29049,28 +29049,13 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
-                            FilterListId = 1523,
-                            MaintainerId = 155
-                        },
-                        new
-                        {
                             FilterListId = 1524,
                             MaintainerId = 126
                         },
                         new
                         {
-                            FilterListId = 1524,
-                            MaintainerId = 155
-                        },
-                        new
-                        {
                             FilterListId = 1525,
                             MaintainerId = 126
-                        },
-                        new
-                        {
-                            FilterListId = 1525,
-                            MaintainerId = 155
                         },
                         new
                         {
@@ -30390,12 +30375,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2151,
-                            MaintainerId = 155
+                            MaintainerId = 126
                         },
                         new
                         {
                             FilterListId = 2152,
-                            MaintainerId = 155
+                            MaintainerId = 126
                         },
                         new
                         {
@@ -30805,17 +30790,17 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2315,
-                            MaintainerId = 155
+                            MaintainerId = 126
                         },
                         new
                         {
                             FilterListId = 2316,
-                            MaintainerId = 155
+                            MaintainerId = 126
                         },
                         new
                         {
                             FilterListId = 2317,
-                            MaintainerId = 155
+                            MaintainerId = 126
                         },
                         new
                         {
@@ -81749,12 +81734,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 154,
                             Name = "Block Lists Project",
                             Url = "https://blocklist.site/"
-                        },
-                        new
-                        {
-                            Id = 155,
-                            Name = "Chongo Bong",
-                            Url = "https://github.com/bongochong"
                         },
                         new
                         {
