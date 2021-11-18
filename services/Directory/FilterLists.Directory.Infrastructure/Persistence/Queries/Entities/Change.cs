@@ -43,6 +43,10 @@ internal class UpdateConfiguration : IEntityTypeConfiguration<Change>
         builder
             .Property(c => c.AggregateType)
             .HasComputedColumnSql(BuildComputedAggregateTypeSql(), true);
+        builder.HasOne(c => c.Language)
+            .WithMany(l => l.Changes)
+            .HasForeignKey(c => c.LanguageIso6391)
+            .HasConstraintName("fk_changes_languages_language_iso6391");
 
         static string BuildComputedAggregateTypeSql()
         {
