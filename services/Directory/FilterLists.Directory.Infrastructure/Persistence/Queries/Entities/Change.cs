@@ -13,8 +13,8 @@ public record Change
     public DateTime? ApprovedAt { get; private init; }
     public DateTime? RejectedAt { get; private init; }
     public string? RejectedReason { get; private init; }
-    public JsonDocument? AggregateBefore { get; private init; }
-    public JsonDocument? AggregateAfter { get; private init; }
+    public JsonDocument? Before { get; private init; }
+    public JsonDocument? After { get; private init; }
     public AggregateType AggregateType { get; private init; }
     public int? FilterListId { get; private init; }
     public FilterList? FilterList { get; }
