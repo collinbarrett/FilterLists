@@ -13219,6 +13219,7 @@
     "homeUrl": "https://github.com/dnswarden/blocklist/",
     "id": 2038,
     "issuesUrl": "https://github.com/dnswarden/blocklist/issues",
+    "licenseId": 5,
     "name": "dnswarden Adblocking (Hosts)"
   },
   {
@@ -13226,6 +13227,7 @@
     "homeUrl": "https://github.com/dnswarden/blocklist/",
     "id": 2039,
     "issuesUrl": "https://github.com/dnswarden/blocklist/issues",
+    "licenseId": 5,
     "name": "dnswarden Adblocking (Domains)"
   },
   {
@@ -13233,6 +13235,7 @@
     "homeUrl": "https://github.com/dnswarden/blocklist/",
     "id": 2040,
     "issuesUrl": "https://github.com/dnswarden/blocklist/issues",
+    "licenseId": 5,
     "name": "dnswarden Adblocking (RPZ)"
   },
   {
@@ -13380,6 +13383,7 @@
   {
     "homeUrl": "https://gist.github.com/Marfjeh/97f2f049b41b3f09eabcc04004073ae3",
     "id": 2059,
+    "licenseId": 5,
     "name": "Marjeh Torrent Trackers Host"
   },
   {
@@ -13431,6 +13435,7 @@
     "description": "SecureDNS can be used as an Adblocker by using a alternative hostname/address instead. Links that didn't fit in the Subscribe button URL texts, include [2a03:b0c0:0:1010::e9a:3001]:5443",
     "homeUrl": "https://securedns.eu/#ads",
     "id": 2067,
+    "licenseId": 5,
     "name": "notracking - DNS"
   },
   {
@@ -13444,6 +13449,7 @@
     "description": "Peter Lowe's (as of August 2018) colleague Vladimir Pissarev (who is part of the Security team in his company) mentioned to him that he runs a public DNS server that not only blocks ads and trackers, but also malware and viruses as well.",
     "homeUrl": "https://itsecurity.ee/",
     "id": 2069,
+    "licenseId": 5,
     "name": "Vladimir Pissarev's DNS Server"
   },
   {
@@ -13457,24 +13463,28 @@
   {
     "homeUrl": "https://www.dreamcastlive.net/connection-guide",
     "id": 2071,
+    "licenseId": 5,
     "name": "Dreamcast Live"
   },
   {
     "description": "Blocks: advertising (web and mobile apps), analytics (web and mobile apps), tracking, malware.",
     "homeUrl": "https://sebsauvage.net/wiki/doku.php?id=dns-blocklist",
     "id": 2072,
+    "licenseId": 5,
     "name": "Sebsauvage Hosts"
   },
   {
     "description": "Blocks: advertising (web and mobile apps), analytics (web and mobile apps), tracking, malware.",
     "homeUrl": "https://sebsauvage.net/wiki/doku.php?id=dns-blocklist",
     "id": 2073,
+    "licenseId": 5,
     "name": "Sebsauvage Hosts (Adblockers)"
   },
   {
     "description": "Blocks: advertising (web and mobile apps), analytics (web and mobile apps), tracking, malware.",
     "homeUrl": "https://sebsauvage.net/wiki/doku.php?id=dns-blocklist",
     "id": 2074,
+    "licenseId": 5,
     "name": "Sebsauvage Hosts (Domains)"
   },
   {
@@ -13569,6 +13579,7 @@
     "homeUrl": "https://github.com/scafroglia93/blocklists/",
     "id": 2087,
     "issuesUrl": "https://github.com/scafroglia93/blocklists/issues",
+    "licenseId": 5,
     "name": "scafroglia93's Hosts Blocklists"
   },
   {
@@ -13655,6 +13666,7 @@
     "description": "Blocks access to phishing, spam, malware and malicious domains. Our database of malicious domains is updated hourly and considered to be one of the best in the industry. Links that didn't fit in the Subscribe button URL texts, include 2a0d:2a00:2::2",
     "homeUrl": "https://cleanbrowsing.org/filters#security",
     "id": 2099,
+    "licenseId": 5,
     "name": "CleanBrowsing Security Filter"
   },
   {
@@ -13662,12 +13674,14 @@
     "homeUrl": "https://github.com/Kees1958/WS3_annual_most_used_survey_blocklist",
     "id": 2100,
     "issuesUrl": "https://github.com/Kees1958/WS3_annual_most_used_survey_blocklist/issues",
+    "licenseId": 5,
     "name": "Small but effective adblockplus format blocklist based on the (annal) W3tech and Cookiebot surveys - Top 500"
   },
   {
     "homeUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules",
     "id": 2101,
     "issuesUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules/issues",
+    "licenseId": 5,
     "name": "Custom Hosts Domain Filter for AdGuard Home"
   },
   {
@@ -13675,6 +13689,7 @@
     "homeUrl": "https://github.com/loveqqzj/AdGuard",
     "id": 2102,
     "issuesUrl": "https://github.com/loveqqzj/AdGuard/issues",
+    "licenseId": 5,
     "name": "Mobile ad filtering supplementary rules - 移动广告过滤补充规则"
   },
   {
@@ -13682,12 +13697,14 @@
     "homeUrl": "https://github.com/crimsonphobia/etc/",
     "id": 2103,
     "issuesUrl": "https://github.com/crimsonphobia/etc/issues",
+    "licenseId": 5,
     "name": "Fake Websites and other garbage"
   },
   {
     "homeUrl": "https://github.com/banbendalao/ADgk",
     "id": 2104,
     "issuesUrl": "https://github.com/banbendalao/ADgk/issues",
+    "licenseId": 5,
     "name": "ADgk Mobile Advertising Rules - adgk手机去广告规则"
   },
   {
@@ -13695,32 +13712,38 @@
     "homeUrl": "https://github.com/banbendalao/ADgk",
     "id": 2105,
     "issuesUrl": "https://github.com/banbendalao/ADgk/issues",
+    "licenseId": 5,
     "name": "Baidu Extreme Purification - 百度搜索结果极限净化"
   },
   {
     "homeUrl": "https://github.com/banbendalao/ADgk",
     "id": 2106,
     "issuesUrl": "https://github.com/banbendalao/ADgk/issues",
+    "licenseId": 5,
     "name": "ADgk Mobile Advertising Rules (DNS)"
   },
   {
     "homeUrl": "https://ps2online.com/",
     "id": 2107,
+    "licenseId": 5,
     "name": "PS2 Online"
   },
   {
     "id": 2108,
+    "licenseId": 5,
     "name": "OpenSpy PS2 (Untested)"
   },
   {
     "description": "Contains entries from EasyList China, EasyList Lite, CJX's Annoyances List, and some additional entries of my own.",
     "homeUrl": "https://adf.minggo.eu.org",
     "id": 2109,
+    "licenseId": 5,
     "name": "halflife's AdFilters"
   },
   {
     "homeUrl": "https://gitee.com/anye1998/Adguard-List-of-personal-rules",
     "id": 2110,
+    "licenseId": 5,
     "name": "anye1998's List of Personal Rules"
   },
   {
@@ -13892,6 +13915,7 @@
     "homeUrl": "https://github.com/dagoll/filters-list/",
     "id": 2133,
     "issuesUrl": "https://github.com/dagoll/filters-list/issues",
+    "licenseId": 5,
     "name": "Dagoll's Filters List"
   },
   {
@@ -13899,6 +13923,7 @@
     "homeUrl": "https://github.com/TheCardinalSystem/Cruncyroll-Filter-List/",
     "id": 2134,
     "issuesUrl": "https://github.com/TheCardinalSystem/Cruncyroll-Filter-List/issues",
+    "licenseId": 5,
     "name": "Crunchyroll Anti-Circumvention filters"
   },
   {
@@ -13906,12 +13931,14 @@
     "homeUrl": "https://github.com/radokristof/HunFakeNewsAdblockList/",
     "id": 2135,
     "issuesUrl": "https://github.com/radokristof/HunFakeNewsAdblockList/issues",
+    "licenseId": 5,
     "name": "Hungarian FakeNews Adblock List"
   },
   {
     "homeUrl": "https://github.com/dagoll/filters-list/",
     "id": 2136,
     "issuesUrl": "https://github.com/dagoll/filters-list/issues",
+    "licenseId": 5,
     "name": "Dagoll's Filters List (Dynamic)"
   },
   {
@@ -13927,6 +13954,7 @@
     "homeUrl": "https://github.com/DariusIurca/RFNBL-Romanian-Fake-News-Block-List",
     "id": 2138,
     "issuesUrl": "https://github.com/DariusIurca/RFNBL-Romanian-Fake-News-Block-List/issues",
+    "licenseId": 5,
     "name": "Romanian Fake-News Block-list (RFNBL)"
   },
   {
@@ -14107,6 +14135,7 @@
     "emailAddress": "business@isx.fr",
     "homeUrl": "https://bl.isx.fr/",
     "id": 2160,
+    "licenseId": 5,
     "name": "ISX Solutions Blocklist"
   },
   {
@@ -14373,6 +14402,7 @@
     "emailAddress": "azorult-tracker@protonmail.com",
     "homeUrl": "https://azorult-tracker.net/",
     "id": 2198,
+    "licenseId": 5,
     "name": "AZORult Tracker"
   },
   {
@@ -14539,6 +14569,7 @@
     "homeUrl": "https://github.com/stamparm/aux",
     "id": 2215,
     "issuesUrl": "https://github.com/stamparm/aux/issues",
+    "licenseId": 5,
     "name": "Maltrail - Malware Domains"
   },
   {
@@ -14546,6 +14577,7 @@
     "homeUrl": "https://infosharing.cybersaiyan.it/",
     "id": 2216,
     "issuesUrl": "https://github.com/CyberSaiyanIT/InfoSharing",
+    "licenseId": 5,
     "name": "Info Sharing Project by Cyber Saiyan - CS Pi-hole"
   },
   {
@@ -14890,6 +14922,7 @@
   {
     "homeUrl": "https://www.adtchrome.com/",
     "id": 2276,
+    "licenseId": 5,
     "name": "ADT ChinaList"
   },
   {
@@ -15050,6 +15083,7 @@
     "homeUrl": "https://github.com/BlackJack8/iOSAdblockList/",
     "id": 2297,
     "issuesUrl": "https://github.com/BlackJack8/iOSAdblockList/issues",
+    "licenseId": 5,
     "name": "Host-List for iOS ad blockers (Domains)"
   },
   {
@@ -15057,18 +15091,21 @@
     "homeUrl": "https://github.com/PebbleOG/pihole-regex/",
     "id": 2298,
     "issuesUrl": "https://github.com/PebbleOG/pihole-regex/issues",
+    "licenseId": 5,
     "name": "PebbleOG Pi-hole RegEx"
   },
   {
     "homeUrl": "https://github.com/anthony-wang/PiHoleBlocklist/",
     "id": 2299,
     "issuesUrl": "https://github.com/anthony-wang/PiHoleBlocklist/issues",
+    "licenseId": 5,
     "name": "PiHoleBlocklist - RegEx"
   },
   {
     "homeUrl": "https://github.com/anthony-wang/PiHoleBlocklist/",
     "id": 2300,
     "issuesUrl": "https://github.com/anthony-wang/PiHoleBlocklist/issues",
+    "licenseId": 5,
     "name": "PiHoleBlocklist - Xiaomi 1"
   },
   {
@@ -15076,6 +15113,7 @@
     "homeUrl": "https://github.com/revolveruk30/pihole_regex/",
     "id": 2301,
     "issuesUrl": "https://github.com/revolveruk30/pihole_regex/issues",
+    "licenseId": 5,
     "name": "revolveruk30's Regex Filters for Pi-hole"
   },
   {
@@ -15091,6 +15129,7 @@
     "homeUrl": "https://github.com/stamparm/blackbook/socialblocklists",
     "id": 2303,
     "issuesUrl": "https://github.com/stamparm/blackbook/socialblocklists/issues",
+    "licenseId": 5,
     "name": "blackbook"
   },
   {
@@ -15098,6 +15137,7 @@
     "emailAddress": "feedback@cyberthreatcoalition.org",
     "homeUrl": "https://www.cyberthreatcoalition.org/",
     "id": 2304,
+    "licenseId": 5,
     "name": "COVID19 Cyber Threat Coalition blocklist"
   },
   {
@@ -15105,6 +15145,7 @@
     "homeUrl": "https://github.com/sophoslabs/covid-iocs/",
     "id": 2305,
     "issuesUrl": "https://github.com/sophoslabs/covid-iocs/issues",
+    "licenseId": 5,
     "name": "covid-iocs - Malicious"
   },
   {
@@ -15112,6 +15153,7 @@
     "homeUrl": "https://github.com/sophoslabs/covid-iocs/",
     "id": 2306,
     "issuesUrl": "https://github.com/sophoslabs/covid-iocs/issues",
+    "licenseId": 5,
     "name": "covid-iocs - Malware"
   },
   {
@@ -15156,12 +15198,14 @@
     "description": "List of malicious domains being leveraged by malware/malicious actors.",
     "homeUrl": "https://kriskintel.com/",
     "id": 2313,
+    "licenseId": 5,
     "name": "Krisk Intel - Malicious Domains"
   },
   {
     "description": "List of IPs being leveraged by malware/malicious actors.",
     "homeUrl": "https://kriskintel.com/",
     "id": 2314,
+    "licenseId": 5,
     "name": "Krisk Intel - Malicious IP List"
   },
   {
@@ -15350,6 +15394,7 @@
     "homeUrl": "https://github.com/L33Tech/uLists",
     "id": 2338,
     "issuesUrl": "https://github.com/L33Tech/uLists/issues",
+    "licenseId": 5,
     "name": "L33T's All-In-One Blocklist by L33Tech"
   },
   {
@@ -15357,6 +15402,7 @@
     "homeUrl": "https://github.com/L33Tech/uLists",
     "id": 2339,
     "issuesUrl": "https://github.com/L33Tech/uLists/issues",
+    "licenseId": 5,
     "name": "StopModReposts for uBlock Orgin by L33Tech"
   },
   {
@@ -15371,6 +15417,7 @@
     "description": "This server currently provides online multiplayer support for a variety of PS2/PC games.",
     "homeUrl": "http://bobzent.info/",
     "id": 2341,
+    "licenseId": 5,
     "name": "Bobz Entertainment"
   },
   {
@@ -15591,6 +15638,7 @@
     "homeUrl": "https://github.com/examplecode/ad-rules-for-xbrowser",
     "id": 2363,
     "issuesUrl": "https://github.com/examplecode/ad-rules-for-xbrowser/issues",
+    "licenseId": 5,
     "name": "Ad Rules for XBrowser"
   },
   {
@@ -15649,12 +15697,14 @@
     "homeUrl": "https://github.com/adbyby/xwhyc-rules/",
     "id": 2371,
     "issuesUrl": "https://github.com/adbyby/xwhyc-rules/issues",
+    "licenseId": 5,
     "name": "XWHYC Rules"
   },
   {
     "homeUrl": "https://anti-ad.net/",
     "id": 2372,
     "issuesUrl": "https://github.com/privacy-protection-tools/dead-horse/issues",
+    "licenseId": 5,
     "name": "anti-AD (Whitelist)"
   },
   {
@@ -15717,6 +15767,7 @@
     "homeUrl": "https://blahdns.com/",
     "id": 2379,
     "issuesUrl": "https://github.com/ookangzheng/blahdns/issues",
+    "licenseId": 5,
     "name": "BlahDNS"
   },
   {
@@ -15810,18 +15861,21 @@
     "description": "Attackers often hide harmful code in sites and emails that seem normal. These attacks can put your family’s private information in the wrong hands. 1.1.1.1 for Families adds a layer of malware protection to your home Wi-Fi, automatically blocking access to known malicious sites. Links that didn't fit in the Subscribe button URL texts, include 2606:4700:4700::1112 — 2606:4700:4700::1002",
     "homeUrl": "https://1.1.1.1/family/",
     "id": 2393,
+    "licenseId": 5,
     "name": "Cloudflare DNS - Malware Blocking"
   },
   {
     "description": "Attackers often hide harmful code in sites and emails that seem normal. These attacks can put your family’s private information in the wrong hands. 1.1.1.1 for Families adds a layer of malware protection to your home Wi-Fi, automatically blocking access to known malicious sites. Links that didn't fit in the Subscribe button URL texts, include 2606:4700:4700::1113 — 2606:4700:4700::1003",
     "homeUrl": "https://1.1.1.1/family/",
     "id": 2394,
+    "licenseId": 5,
     "name": "Cloudflare DNS - Malware and Adult Content Blocking"
   },
   {
     "description": "Protects against malicious domains for security purposes. Links that didn't fit in the Subscribe button URL texts, include 2610:a1:1019::2",
     "homeUrl": "https://www.publicdns.neustar/",
     "id": 2395,
+    "licenseId": 5,
     "name": "neustar UltraDNS Public - Threat Protection"
   },
   {
@@ -15830,6 +15884,7 @@
     "homeUrl": "https://github.com/AdguardTeam/HttpsExclusions",
     "id": 2396,
     "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
+    "licenseId": 5,
     "name": "Adguard HTTPS Exclusions: Banks and financial services"
   },
   {
@@ -15838,6 +15893,7 @@
     "homeUrl": "https://github.com/AdguardTeam/HttpsExclusions",
     "id": 2397,
     "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
+    "licenseId": 5,
     "name": "Adguard HTTPS Exclusions: Other services with sensitive personal information"
   },
   {
@@ -15846,6 +15902,7 @@
     "homeUrl": "https://github.com/AdguardTeam/HttpsExclusions",
     "id": 2398,
     "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
+    "licenseId": 5,
     "name": "Adguard HTTPS Exclusions: Necessary to resolve specific issues"
   },
   {
@@ -15854,6 +15911,7 @@
     "homeUrl": "https://github.com/AdguardTeam/HttpsExclusions",
     "id": 2399,
     "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
+    "licenseId": 5,
     "name": "Adguard HTTPS Exclusions: Windows"
   },
   {
@@ -15862,6 +15920,7 @@
     "homeUrl": "https://github.com/AdguardTeam/HttpsExclusions",
     "id": 2400,
     "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
+    "licenseId": 5,
     "name": "Adguard HTTPS Exclusions: macOS"
   },
   {
@@ -15870,6 +15929,7 @@
     "homeUrl": "https://github.com/AdguardTeam/HttpsExclusions",
     "id": 2401,
     "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
+    "licenseId": 5,
     "name": "Adguard HTTPS Exclusions: Android"
   },
   {
@@ -15878,6 +15938,7 @@
     "homeUrl": "https://github.com/AdguardTeam/HttpsExclusions",
     "id": 2402,
     "issuesUrl": "https://github.com/AdguardTeam/HttpsExclusions/issues",
+    "licenseId": 5,
     "name": "Adguard HTTPS Exclusions: Firefox"
   },
   {
@@ -16087,6 +16148,7 @@
     "homeUrl": "https://github.com/rimu/no-qanon",
     "id": 2426,
     "issuesUrl": "https://github.com/rimu/no-qanon/issues",
+    "licenseId": 5,
     "name": "QAnon conspiracy nazi blocklist"
   },
   {
@@ -16113,6 +16175,7 @@
     "homeUrl": "https://github.com/rimu/no-qanon",
     "id": 2429,
     "issuesUrl": "https://github.com/rimu/no-qanon/issues",
+    "licenseId": 5,
     "name": "QAnon conspiracy nazi blocklist (IPv6)"
   },
   {
@@ -16261,6 +16324,7 @@
     "emailAddress": "contact@hostux.net",
     "homeUrl": "https://dns.hostux.net/en/",
     "id": 2446,
+    "licenseId": 5,
     "name": "Hostux - Blocking Ads and Trackers"
   },
   {
@@ -16268,6 +16332,7 @@
     "homeUrl": "https://github.com/arman68/noappleads",
     "id": 2447,
     "issuesUrl": "https://github.com/arman68/noappleads/issues",
+    "licenseId": 5,
     "name": "No Apple ads"
   },
   {
@@ -16337,6 +16402,7 @@
     "homeUrl": "https://github.com/catsxp/adblock-lists",
     "id": 2457,
     "issuesUrl": "https://github.com/catsxp/adblock-lists/issues",
+    "licenseId": 5,
     "name": "catsxp Unbreak"
   },
   {
@@ -16344,6 +16410,7 @@
     "homeUrl": "https://github.com/RedDragonWebDesign/block-everything",
     "id": 2458,
     "issuesUrl": "https://github.com/RedDragonWebDesign/block-everything/issues",
+    "licenseId": 5,
     "name": "Block Everything!"
   },
   {
@@ -16375,6 +16442,7 @@
     "homeUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/",
     "id": 2462,
     "issuesUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/issues",
+    "licenseId": 5,
     "name": "Anti-Trash YouTube"
   },
   {
@@ -16382,6 +16450,7 @@
     "homeUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/",
     "id": 2463,
     "issuesUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/issues",
+    "licenseId": 5,
     "name": "Anti-Trash New Reddit"
   },
   {
@@ -16389,6 +16458,7 @@
     "homeUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/",
     "id": 2464,
     "issuesUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/issues",
+    "licenseId": 5,
     "name": "Anti-Trash Old Reddit"
   },
   {
@@ -16396,6 +16466,7 @@
     "homeUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/",
     "id": 2465,
     "issuesUrl": "https://github.com/WhyIsEvery4thYearAlwaysBad/anti-cancer-filter-lists/issues",
+    "licenseId": 5,
     "name": "Anti-Scam Internet"
   },
   {
@@ -16405,6 +16476,7 @@
     "homeUrl": "https://github.com/FutaGuard/FutaFilter",
     "id": 2466,
     "issuesUrl": "https://github.com/FutaGuard/FutaFilter/issues",
+    "licenseId": 5,
     "name": "FutaFilter"
   },
   {
@@ -16414,6 +16486,7 @@
     "homeUrl": "https://github.com/FutaGuard/FutaFilter",
     "id": 2467,
     "issuesUrl": "https://github.com/FutaGuard/FutaFilter/issues",
+    "licenseId": 5,
     "name": "FutaHosts"
   },
   {
@@ -16423,6 +16496,7 @@
     "homeUrl": "https://github.com/FutaGuard/FutaFilter",
     "id": 2468,
     "issuesUrl": "https://github.com/FutaGuard/FutaFilter/issues",
+    "licenseId": 5,
     "name": "FutaHosts Nofarm"
   },
   {
@@ -16431,6 +16505,7 @@
     "homeUrl": "https://github.com/FutaGuard/FutaFilter",
     "id": 2469,
     "issuesUrl": "https://github.com/FutaGuard/FutaFilter/issues",
+    "licenseId": 5,
     "name": "FutaFilter removeparam"
   },
   {
@@ -16664,12 +16739,14 @@
   {
     "homeUrl": "https://www.joinhoney.com/",
     "id": 2498,
+    "licenseId": 5,
     "name": "Honey Smart Shopping"
   },
   {
     "description": "Protect your IP address and some personal data with the hosts file.",
     "homeUrl": "https://github.com/furkun/ProtectorHosts",
     "id": 2499,
+    "licenseId": 5,
     "name": "Anti-IP-Grabber-Hosts"
   },
   {
@@ -16690,6 +16767,7 @@
     "description": "A regularly maintained blocklist to filter out spam and junk domains from search engines results.",
     "homeUrl": "https://github.com/no-cmyk/Search-Engine-Spam-Blocklist",
     "id": 2502,
+    "licenseId": 5,
     "name": "Search Engine Spam Blocklist"
   },
   {
@@ -16697,6 +16775,7 @@
     "donateUrl": "https://paypal.me/secopssolutions",
     "homeUrl": "https://amisafe.secops.in/",
     "id": 2503,
+    "licenseId": 5,
     "name": "Tor IP Addresses - All nodes"
   },
   {
@@ -16704,6 +16783,7 @@
     "donateUrl": "https://paypal.me/secopssolutions",
     "homeUrl": "https://amisafe.secops.in/",
     "id": 2504,
+    "licenseId": 5,
     "name": "Tor IP Addresses - Exit nodes"
   },
   {
@@ -16733,23 +16813,27 @@
   {
     "homeUrl": "http://ipverse.net/",
     "id": 2508,
+    "licenseId": 5,
     "name": "IPverse IP address block lists - Netherlands IPv4"
   },
   {
     "homeUrl": "http://ipverse.net/",
     "id": 2509,
+    "licenseId": 5,
     "name": "IPverse IP address block lists - Netherlands IPv6"
   },
   {
     "description": "This file blocks all connections to sites which are from Axel Springer Verlag or have a connection with them.",
     "homeUrl": "https://github.com/autinerd/anti-axelspringer-hosts/",
     "id": 2510,
+    "licenseId": 5,
     "name": "Anti Axel Springer hosts file (Domains)"
   },
   {
     "description": "This file blocks all connections to sites which are from Axel Springer Verlag or have a connection with them.",
     "homeUrl": "https://github.com/autinerd/anti-axelspringer-hosts/",
     "id": 2511,
+    "licenseId": 5,
     "name": "Anti Axel Springer hosts file"
   },
   {
@@ -16840,11 +16924,13 @@
   {
     "homeUrl": "https://git.bubblev.org/bubblev/bubble-filter-lists/",
     "id": 2522,
+    "licenseId": 5,
     "name": "Bubble Filter Lists - Ads and Trackers"
   },
   {
     "homeUrl": "https://git.bubblev.org/bubblev/bubble-filter-lists/",
     "id": 2523,
+    "licenseId": 5,
     "name": "Bubble Filter Lists - US News"
   },
   {
@@ -16874,6 +16960,7 @@
     "description": "Eliminate Spotify Advertisements + Complete Server List",
     "homeUrl": "https://gist.github.com/opus-x/3e673a9d5db2a214df05929a4eee6a57",
     "id": 2527,
+    "licenseId": 5,
     "name": "Eliminate Spotify Ads"
   },
   {
@@ -16886,6 +16973,7 @@
     "description": "This repository contains indicators of compromise extracted from some of Amnesty International's technical investigations in targeted threats against human rights defenders.",
     "homeUrl": "https://github.com/AmnestyTech/investigations",
     "id": 2529,
+    "licenseId": 5,
     "name": "AmnestyTech Investigations - NSO 18th of July 2021"
   },
   {
@@ -16935,6 +17023,7 @@
     "homeUrl": "https://github.com/hadig/Focus-for-Youtube",
     "id": 2535,
     "issuesUrl": "https://github.com/hadig/Focus-for-Youtube/issues",
+    "licenseId": 5,
     "name": "Focus for Youtube"
   },
   {
@@ -16944,6 +17033,7 @@
     "homeUrl": "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/",
     "id": 2536,
     "issuesUrl": "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/issues/",
+    "licenseId": 5,
     "name": "Extension-based Malware and Data-Sucking Search Engine hosts file",
     "syntaxId": 1
   },
@@ -17020,6 +17110,7 @@
     "homeUrl": "https://github.com/nextdns/metadata",
     "id": 2545,
     "issuesUrl": "https://github.com/nextdns/metadata/issues",
+    "licenseId": 5,
     "name": "NextDNS Affiliate Tracking Domains"
   },
   {
@@ -17043,11 +17134,13 @@
     "description": "List of IoCs being utilized by Ransomwares.",
     "homeUrl": "https://kriskintel.com/",
     "id": 2548,
+    "licenseId": 5,
     "name": "Krisk Intel - KTIP Ransomware Feeds"
   },
   {
     "homeUrl": "https://github.com/brijrajparmar27/host-sources",
     "id": 2549,
+    "licenseId": 5,
     "name": "Hosts for DNS Level Blockers - Adult"
   },
   {
@@ -17113,6 +17206,7 @@
     "homeUrl": "https://github.com/scafroglia93/blocklists/",
     "id": 2557,
     "issuesUrl": "https://github.com/scafroglia93/blocklists/issues",
+    "licenseId": 5,
     "name": "scafroglia93's Hosts Blocklists - Malware traffic"
   },
   {
