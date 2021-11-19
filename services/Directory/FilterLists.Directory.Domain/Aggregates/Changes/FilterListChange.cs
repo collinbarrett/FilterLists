@@ -12,9 +12,9 @@ public sealed class FilterListChange : Change, IChange<FilterList>
     public FilterList? Before { get; private init; }
     public FilterList? After { get; private init; }
 
-    public static FilterListChange Create(string? reason)
+    public static FilterListChange Create(FilterList filterList, string? reason)
     {
-        return new FilterListChange { Reason = reason };
+        return new FilterListChange { After = filterList, Reason = reason };
     }
 
     public static FilterListChange Update(FilterList before, FilterList after, string? reason)

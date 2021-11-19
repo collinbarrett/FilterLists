@@ -5,7 +5,7 @@ namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
 
 public sealed class FilterList : AggregateRoot, IRequireChangeApproval<FilterListChange>
 {
-    private readonly ICollection<FilterListChange> _changes = new HashSet<FilterListChange>();
+    private ICollection<FilterListChange> _changes = new HashSet<FilterListChange>();
 
     private FilterList()
     {
@@ -24,12 +24,7 @@ public sealed class FilterList : AggregateRoot, IRequireChangeApproval<FilterLis
     public string? EmailAddress { get; private init; }
     public Uri? DonateUrl { get; private init; }
     public IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; private init; } = new HashSet<FilterListViewUrl>();
-
-    public IReadOnlyCollection<FilterListChange> Changes
-    {
-        get => (IReadOnlyCollection<FilterListChange>)_changes;
-        private init => _changes = (ICollection<FilterListChange>)value;
-    }
+    public IReadOnlyCollection<FilterListChange> Changes => (IReadOnlyCollection<FilterListChange>)_changes;
 
     public static FilterList Create(
         string name,
@@ -47,13 +42,14 @@ public sealed class FilterList : AggregateRoot, IRequireChangeApproval<FilterLis
         IEnumerable<(short SegmentNumber, short Primariness, Uri Url)> viewUrls,
         string? createReason)
     {
-        var urls = viewUrls.Select(u => FilterListViewUrl.Create(u.SegmentNumber, u.Primariness, u.Url)).ToList();
+        var urls = viewUrls.Select(u => FilterListViewUrl.Create(u.SegmentNumber, u.Primariness, u.Url))
+            .ToList();
         if (urls.Count == 0)
         {
             throw new ArgumentException("At lest one view URL is required.", nameof(viewUrls));
         }
 
-        return new FilterList
+        var list = new FilterList
         {
             Name = name,
             Description = description,
@@ -67,8 +63,9 @@ public sealed class FilterList : AggregateRoot, IRequireChangeApproval<FilterLis
             ChatUrl = chatUrl,
             EmailAddress = emailAddress,
             DonateUrl = donateUrl,
-            ViewUrls = urls,
-            Changes = new HashSet<FilterListChange>(new[] { FilterListChange.Create(createReason) })
+            ViewUrls = urls
         };
+        list._changes = new HashSet<FilterListChange>(new[] { FilterListChange.Create(list, createReason) });
+        return list;
     }
 }
