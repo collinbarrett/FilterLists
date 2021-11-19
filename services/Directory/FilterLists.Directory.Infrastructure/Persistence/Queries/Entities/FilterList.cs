@@ -40,6 +40,9 @@ internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList
             .IsUnique();
         builder.Property(f => f.LicenseId)
             .HasDefaultValue(5);
+        builder.HasOne(f => f.License)
+            .WithMany(l => l.FilterLists)
+            .OnDelete(DeleteBehavior.Restrict);
         builder.HasDataJsonFile<FilterList>();
     }
 }
