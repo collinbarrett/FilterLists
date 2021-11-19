@@ -8,8 +8,8 @@ public record FilterList
     public int Id { get; init; }
     public string Name { get; init; } = null!;
     public string? Description { get; init; }
-    public int? LicenseId { get; init; }
-    public License? License { get; }
+    public int LicenseId { get; init; }
+    public License License { get; } = null!;
     public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; } = new HashSet<FilterListSyntax>();
     public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; } = new HashSet<FilterListLanguage>();
     public IReadOnlyCollection<FilterListTag> FilterListTags { get; } = new HashSet<FilterListTag>();
@@ -38,6 +38,8 @@ internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList
     {
         builder.HasIndex(f => f.Name)
             .IsUnique();
+        builder.Property(f => f.LicenseId)
+            .HasDefaultValue(5);
         builder.HasDataJsonFile<FilterList>();
     }
 }
