@@ -108,7 +108,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
                     description = table.Column<string>(type: "text", nullable: true),
-                    license_id = table.Column<int>(type: "integer", nullable: true),
+                    license_id = table.Column<int>(type: "integer", nullable: false, defaultValue: 5),
                     home_url = table.Column<string>(type: "text", nullable: true),
                     onion_url = table.Column<string>(type: "text", nullable: true),
                     policy_url = table.Column<string>(type: "text", nullable: true),
@@ -126,7 +126,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         name: "fk_filter_lists_licenses_license_id",
                         column: x => x.license_id,
                         principalTable: "licenses",
-                        principalColumn: "id");
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
