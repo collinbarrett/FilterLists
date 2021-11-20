@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record FilterList
+public record FilterList : AggregateRoot
 {
     public int Id { get; init; }
     public string Name { get; init; } = null!;
@@ -32,9 +32,9 @@ public record FilterList
     public IReadOnlyCollection<Dependent> DependentFilterLists { get; } = new HashSet<Dependent>();
 }
 
-internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList>
+internal class FilterListTypeConfiguration : AggregateRootTypeConfiguration<FilterList>
 {
-    public virtual void Configure(EntityTypeBuilder<FilterList> builder)
+    public override void Configure(EntityTypeBuilder<FilterList> builder)
     {
         builder.HasIndex(f => f.Name)
             .IsUnique();
@@ -44,5 +44,6 @@ internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList
             .WithMany(l => l.FilterLists)
             .OnDelete(DeleteBehavior.Restrict);
         builder.HasDataJsonFile<FilterList>();
+        base.Configure(builder);
     }
 }

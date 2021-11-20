@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record License
+public record License : AggregateRoot
 {
     public int Id { get; init; }
     public string Name { get; init; } = null!;
@@ -14,9 +14,9 @@ public record License
     public IReadOnlyCollection<FilterList> FilterLists { get; } = new HashSet<FilterList>();
 }
 
-internal class LicenseTypeConfiguration : IEntityTypeConfiguration<License>
+internal class LicenseTypeConfiguration : AggregateRootTypeConfiguration<License>
 {
-    public virtual void Configure(EntityTypeBuilder<License> builder)
+    public override void Configure(EntityTypeBuilder<License> builder)
     {
         builder.HasIndex(l => l.Name)
             .IsUnique();
@@ -27,5 +27,6 @@ internal class LicenseTypeConfiguration : IEntityTypeConfiguration<License>
         builder.Property(l => l.PermitsCommercialUse)
             .HasDefaultValue(false);
         builder.HasDataJsonFile<License>();
+        base.Configure(builder);
     }
 }
