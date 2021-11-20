@@ -16,5 +16,6 @@ internal abstract class AggregateRootTypeConfiguration<TAggregateRoot> : IEntity
         builder.Property(e => e.IsApproved)
             .IsRequired()
             .HasDefaultValue(true); // legacy json data approved via GitHub PR
+        builder.HasQueryFilter(e => e.IsApproved == true);
     }
 }

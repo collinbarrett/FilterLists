@@ -22,6 +22,7 @@ internal class FilterListSyntaxTypeConfiguration : IEntityTypeConfiguration<Filt
 
         builder.ToTable($"{nr.RewriteName(nameof(FilterListSyntax))}es");
         builder.HasKey(fls => new { fls.FilterListId, fls.SyntaxId });
+        builder.HasQueryFilter(fls => fls.FilterList.IsApproved == true && fls.Syntax.IsApproved == true);
         builder.HasDataJsonFile<FilterListSyntax>();
     }
 }

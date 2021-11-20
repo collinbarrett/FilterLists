@@ -30,6 +30,7 @@ internal class ForkTypeConfiguration : IEntityTypeConfiguration<Fork>
             .WithMany(fl => fl.UpstreamFilterLists)
             .HasForeignKey(f => f.ForkFilterListId)
             .HasConstraintName("fk_forks_filter_lists_fork_filter_list_id");
+        builder.HasQueryFilter(f => f.UpstreamFilterList.IsApproved == true && f.ForkFilterList.IsApproved == true);
         builder.HasDataJsonFile<Fork>();
     }
 }
