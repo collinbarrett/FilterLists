@@ -9,11 +9,11 @@ public record FilterList : AggregateRoot
     public string Name { get; init; } = null!;
     public string? Description { get; init; }
     public int LicenseId { get; init; }
-    public License License { get; } = null!;
-    public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; } = new HashSet<FilterListSyntax>();
-    public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; } = new HashSet<FilterListLanguage>();
-    public IReadOnlyCollection<FilterListTag> FilterListTags { get; } = new HashSet<FilterListTag>();
-    public IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; } = new HashSet<FilterListViewUrl>();
+    public License License { get; init; } = null!;
+    public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; init; } = new HashSet<FilterListSyntax>();
+    public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; init; } = new HashSet<FilterListLanguage>();
+    public IReadOnlyCollection<FilterListTag> FilterListTags { get; init; } = new HashSet<FilterListTag>();
+    public IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; init; } = new HashSet<FilterListViewUrl>();
     public Uri? HomeUrl { get; init; }
     public Uri? OnionUrl { get; init; }
     public Uri? PolicyUrl { get; init; }
@@ -23,13 +23,13 @@ public record FilterList : AggregateRoot
     public Uri? ChatUrl { get; init; }
     public string? EmailAddress { get; init; }
     public Uri? DonateUrl { get; init; }
-    public IReadOnlyCollection<FilterListMaintainer> FilterListMaintainers { get; } = new HashSet<FilterListMaintainer>();
-    public IReadOnlyCollection<Fork> UpstreamFilterLists { get; } = new HashSet<Fork>();
-    public IReadOnlyCollection<Fork> ForkFilterLists { get; } = new HashSet<Fork>();
-    public IReadOnlyCollection<Merge> IncludedInFilterLists { get; } = new HashSet<Merge>();
-    public IReadOnlyCollection<Merge> IncludesFilterLists { get; } = new HashSet<Merge>();
-    public IReadOnlyCollection<Dependent> DependencyFilterLists { get; } = new HashSet<Dependent>();
-    public IReadOnlyCollection<Dependent> DependentFilterLists { get; } = new HashSet<Dependent>();
+    public IReadOnlyCollection<FilterListMaintainer> FilterListMaintainers { get; init; } = new HashSet<FilterListMaintainer>();
+    public IReadOnlyCollection<Fork> UpstreamFilterLists { get; init; } = new HashSet<Fork>();
+    public IReadOnlyCollection<Fork> ForkFilterLists { get; init; } = new HashSet<Fork>();
+    public IReadOnlyCollection<Merge> IncludedInFilterLists { get; init; } = new HashSet<Merge>();
+    public IReadOnlyCollection<Merge> IncludesFilterLists { get; init; } = new HashSet<Merge>();
+    public IReadOnlyCollection<Dependent> DependencyFilterLists { get; init; } = new HashSet<Dependent>();
+    public IReadOnlyCollection<Dependent> DependentFilterLists { get; init; } = new HashSet<Dependent>();
 }
 
 internal class FilterListTypeConfiguration : AggregateRootTypeConfiguration<FilterList>

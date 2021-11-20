@@ -7,7 +7,7 @@ public record Language : AggregateRoot
 {
     public string Iso6391 { get; init; } = null!;
     public string Name { get; init; } = null!;
-    public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; } = new HashSet<FilterListLanguage>();
+    public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; init; } = new HashSet<FilterListLanguage>();
 }
 
 internal class LanguageTypeConfiguration : AggregateRootTypeConfiguration<Language>

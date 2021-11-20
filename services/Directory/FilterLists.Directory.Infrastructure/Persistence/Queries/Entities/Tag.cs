@@ -8,7 +8,7 @@ public record Tag : AggregateRoot
     public int Id { get; init; }
     public string Name { get; init; } = null!;
     public string? Description { get; init; }
-    public IReadOnlyCollection<FilterListTag> FilterListTags { get; } = new HashSet<FilterListTag>();
+    public IReadOnlyCollection<FilterListTag> FilterListTags { get; init; } = new HashSet<FilterListTag>();
 }
 
 internal class TagTypeConfiguration : AggregateRootTypeConfiguration<Tag>

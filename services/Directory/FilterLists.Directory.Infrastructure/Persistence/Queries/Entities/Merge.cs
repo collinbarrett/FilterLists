@@ -8,9 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 public record Merge
 {
     public int IncludedInFilterListId { get; init; }
-    public FilterList IncludedInFilterList { get; } = null!;
+    public FilterList IncludedInFilterList { get; init; } = null!;
     public int IncludesFilterListId { get; init; }
-    public FilterList IncludesFilterList { get; } = null!;
+    public FilterList IncludesFilterList { get; init; } = null!;
 }
 
 internal class MergeTypeConfiguration : IEntityTypeConfiguration<Merge>

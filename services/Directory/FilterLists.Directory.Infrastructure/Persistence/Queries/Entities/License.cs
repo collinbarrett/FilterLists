@@ -11,7 +11,7 @@ public record License : AggregateRoot
     public bool PermitsModification { get; init; }
     public bool PermitsDistribution { get; init; }
     public bool PermitsCommercialUse { get; init; }
-    public IReadOnlyCollection<FilterList> FilterLists { get; } = new HashSet<FilterList>();
+    public IReadOnlyCollection<FilterList> FilterLists { get; init; } = new HashSet<FilterList>();
 }
 
 internal class LicenseTypeConfiguration : AggregateRootTypeConfiguration<License>
