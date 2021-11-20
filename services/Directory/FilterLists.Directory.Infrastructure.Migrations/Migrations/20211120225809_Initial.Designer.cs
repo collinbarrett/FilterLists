@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20211119110803_Initial")]
+    [Migration("20211120225809_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -74,6 +74,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.Property<string>("HomeUrl")
                         .HasColumnType("text")
                         .HasColumnName("home_url");
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("boolean")
+                        .HasColumnName("is_approved");
 
                     b.Property<string>("IssuesUrl")
                         .HasColumnType("text")
@@ -258,6 +262,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         .HasColumnName("iso6391")
                         .IsFixedLength();
 
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("boolean")
+                        .HasColumnName("is_approved");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text")
@@ -281,6 +289,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         .HasColumnName("id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("boolean")
+                        .HasColumnName("is_approved");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -331,6 +343,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.Property<string>("EmailAddress")
                         .HasColumnType("text")
                         .HasColumnName("email_address");
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("boolean")
+                        .HasColumnName("is_approved");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -395,6 +411,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         .HasColumnType("text")
                         .HasColumnName("home_url");
 
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("boolean")
+                        .HasColumnName("is_approved");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text")
@@ -448,6 +468,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         .HasColumnType("text")
                         .HasColumnName("description");
 
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("boolean")
+                        .HasColumnName("is_approved");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text")
@@ -479,6 +503,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("text")
                         .HasColumnName("description");
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("boolean")
+                        .HasColumnName("is_approved");
 
                     b.Property<string>("Name")
                         .IsRequired()

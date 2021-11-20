@@ -14,7 +14,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: table => new
                 {
                     iso6391 = table.Column<string>(type: "character(2)", fixedLength: true, maxLength: 2, nullable: false),
-                    name = table.Column<string>(type: "text", nullable: false)
+                    name = table.Column<string>(type: "text", nullable: false),
+                    is_approved = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -31,7 +32,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     url = table.Column<string>(type: "text", nullable: true),
                     permits_modification = table.Column<bool>(type: "boolean", nullable: false, defaultValue: false),
                     permits_distribution = table.Column<bool>(type: "boolean", nullable: false, defaultValue: false),
-                    permits_commercial_use = table.Column<bool>(type: "boolean", nullable: false, defaultValue: false)
+                    permits_commercial_use = table.Column<bool>(type: "boolean", nullable: false, defaultValue: false),
+                    is_approved = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -47,7 +49,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     name = table.Column<string>(type: "text", nullable: false),
                     url = table.Column<string>(type: "text", nullable: true),
                     email_address = table.Column<string>(type: "text", nullable: true),
-                    twitter_handle = table.Column<string>(type: "text", nullable: true)
+                    twitter_handle = table.Column<string>(type: "text", nullable: true),
+                    is_approved = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -64,7 +67,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     description = table.Column<string>(type: "text", nullable: true),
                     home_url = table.Column<string>(type: "text", nullable: true),
                     download_url = table.Column<string>(type: "text", nullable: true),
-                    supports_abp_url_scheme = table.Column<bool>(type: "boolean", nullable: false, defaultValue: false)
+                    supports_abp_url_scheme = table.Column<bool>(type: "boolean", nullable: false, defaultValue: false),
+                    is_approved = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -79,7 +83,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
                     description = table.Column<string>(type: "text", nullable: true),
-                    url = table.Column<string>(type: "text", nullable: true)
+                    url = table.Column<string>(type: "text", nullable: true),
+                    is_approved = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -93,7 +98,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
-                    description = table.Column<string>(type: "text", nullable: true)
+                    description = table.Column<string>(type: "text", nullable: true),
+                    is_approved = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -117,7 +123,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     forum_url = table.Column<string>(type: "text", nullable: true),
                     chat_url = table.Column<string>(type: "text", nullable: true),
                     email_address = table.Column<string>(type: "text", nullable: true),
-                    donate_url = table.Column<string>(type: "text", nullable: true)
+                    donate_url = table.Column<string>(type: "text", nullable: true),
+                    is_approved = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
                 {
