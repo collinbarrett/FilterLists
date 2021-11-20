@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record Maintainer
+public record Maintainer : AggregateRoot
 {
     public int Id { get; init; }
     public string Name { get; init; } = null!;
@@ -13,12 +13,13 @@ public record Maintainer
     public IReadOnlyCollection<FilterListMaintainer> FilterListMaintainers { get; } = new HashSet<FilterListMaintainer>();
 }
 
-internal class MaintainerTypeConfiguration : IEntityTypeConfiguration<Maintainer>
+internal class MaintainerTypeConfiguration : AggregateRootTypeConfiguration<Maintainer>
 {
-    public virtual void Configure(EntityTypeBuilder<Maintainer> builder)
+    public override void Configure(EntityTypeBuilder<Maintainer> builder)
     {
         builder.HasIndex(m => m.Name)
             .IsUnique();
         builder.HasDataJsonFile<Maintainer>();
+        base.Configure(builder);
     }
 }
