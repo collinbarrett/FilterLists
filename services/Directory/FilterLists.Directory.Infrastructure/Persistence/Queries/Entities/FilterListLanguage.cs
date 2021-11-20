@@ -8,9 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 public record FilterListLanguage
 {
     public int FilterListId { get; init; }
-    public FilterList FilterList { get; } = null!;
+    public FilterList FilterList { get; init; } = null!;
     public string Iso6391 { get; init; } = null!;
-    public Language Language { get; } = null!;
+    public Language Language { get; init; } = null!;
 }
 
 internal class FilterListLanguageTypeConfiguration : IEntityTypeConfiguration<FilterListLanguage>

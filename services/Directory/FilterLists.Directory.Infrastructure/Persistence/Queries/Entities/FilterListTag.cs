@@ -8,9 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 public record FilterListTag
 {
     public int FilterListId { get; init; }
-    public FilterList FilterList { get; } = null!;
+    public FilterList FilterList { get; init; } = null!;
     public int TagId { get; init; }
-    public Tag Tag { get; } = null!;
+    public Tag Tag { get; init; } = null!;
 }
 
 internal class FilterListTagTypeConfiguration : IEntityTypeConfiguration<FilterListTag>

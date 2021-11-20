@@ -5,7 +5,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public abstract record AggregateRoot
 {
-    // TODO: change 'set' to 'private init' when no longer seeding from json
+    // TODO: change 'set' to 'init' when no longer seeding from json
     public bool IsApproved { get; set; }
 }
 

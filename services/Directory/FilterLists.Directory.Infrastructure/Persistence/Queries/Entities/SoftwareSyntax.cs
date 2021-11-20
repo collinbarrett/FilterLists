@@ -8,9 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 public record SoftwareSyntax
 {
     public int SoftwareId { get; init; }
-    public Software Software { get; } = null!;
+    public Software Software { get; init; } = null!;
     public int SyntaxId { get; init; }
-    public Syntax Syntax { get; } = null!;
+    public Syntax Syntax { get; init; } = null!;
 }
 
 internal class SoftwareSyntaxTypeConfiguration : IEntityTypeConfiguration<SoftwareSyntax>

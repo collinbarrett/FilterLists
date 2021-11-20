@@ -11,7 +11,7 @@ public record Software : AggregateRoot
     public Uri? HomeUrl { get; init; }
     public Uri? DownloadUrl { get; init; }
     public bool SupportsAbpUrlScheme { get; init; }
-    public IReadOnlyCollection<SoftwareSyntax> SoftwareSyntaxes { get; } = new HashSet<SoftwareSyntax>();
+    public IReadOnlyCollection<SoftwareSyntax> SoftwareSyntaxes { get; init; } = new HashSet<SoftwareSyntax>();
 }
 
 internal class SoftwareTypeConfiguration : AggregateRootTypeConfiguration<Software>
