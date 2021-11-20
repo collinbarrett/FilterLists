@@ -19,7 +19,7 @@ internal class MaintainerTypeConfiguration : AggregateRootTypeConfiguration<Main
     {
         builder.HasIndex(m => m.Name)
             .IsUnique();
-        builder.HasDataJsonFile<Maintainer>();
+        builder.HasDataJsonFileAggregate<Maintainer>();
         base.Configure(builder);
     }
 }

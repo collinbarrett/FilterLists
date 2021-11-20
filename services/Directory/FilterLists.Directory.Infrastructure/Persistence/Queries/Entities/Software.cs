@@ -22,7 +22,7 @@ internal class SoftwareTypeConfiguration : AggregateRootTypeConfiguration<Softwa
             .IsUnique();
         builder.Property(s => s.SupportsAbpUrlScheme)
             .HasDefaultValue(false);
-        builder.HasDataJsonFile<Software>();
+        builder.HasDataJsonFileAggregate<Software>();
         base.Configure(builder);
     }
 }

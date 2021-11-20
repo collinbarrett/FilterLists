@@ -30,7 +30,7 @@ internal class DependentTypeConfiguration : IEntityTypeConfiguration<Dependent>
             .WithMany(fl => fl.DependencyFilterLists)
             .HasForeignKey(d => d.DependentFilterListId)
             .HasConstraintName("fk_dependents_filter_lists_dependent_filter_list_id");
-        builder.HasQueryFilter(d => d.DependencyFilterList.IsApproved == true && d.DependentFilterList.IsApproved == true);
+        builder.HasQueryFilter(d => d.DependencyFilterList.IsApproved && d.DependentFilterList.IsApproved);
         builder.HasDataJsonFile<Dependent>();
     }
 }

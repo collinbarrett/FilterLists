@@ -22,7 +22,7 @@ internal class FilterListMaintainerTypeConfiguration : IEntityTypeConfiguration<
 
         builder.ToTable($"{nr.RewriteName(nameof(FilterListMaintainer))}s");
         builder.HasKey(flm => new { flm.FilterListId, flm.MaintainerId });
-        builder.HasQueryFilter(flm => flm.FilterList.IsApproved == true && flm.Maintainer.IsApproved == true);
+        builder.HasQueryFilter(flm => flm.FilterList.IsApproved && flm.Maintainer.IsApproved);
         builder.HasDataJsonFile<FilterListMaintainer>();
     }
 }

@@ -43,7 +43,7 @@ internal class FilterListTypeConfiguration : AggregateRootTypeConfiguration<Filt
         builder.HasOne(f => f.License)
             .WithMany(l => l.FilterLists)
             .OnDelete(DeleteBehavior.Restrict);
-        builder.HasDataJsonFile<FilterList>();
+        builder.HasDataJsonFileAggregate<FilterList>();
         base.Configure(builder);
     }
 }
