@@ -1,7 +1,9 @@
 ﻿using FilterLists.Directory.Domain.Aggregates.FilterLists;
+using FilterLists.Directory.Domain.Aggregates.Licenses;
 using FilterLists.Directory.Infrastructure.Persistence.Commands.Context;
 using FluentValidation;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Application.Commands;
 
@@ -20,7 +22,7 @@ public static class CreateList
         Uri? ChatUrl = default,
         string? EmailAddress = default,
         Uri? DonateUrl = default,
-        string? ChangeReason = default) : IRequest<Response>;
+        string? CreateReason = default) : IRequest<Response>;
 
     public record FilterListViewUrl(short SegmentNumber, short Primariness, Uri Url);
 
@@ -45,11 +47,14 @@ public static class CreateList
 
         public async Task<Response> Handle(Command request, CancellationToken cancellationToken)
         {
+            // TODO: push applying domain rule of specified or default license into domain layer?
             var license = request.LicenseId != null
-                ? await _commandContext.Licenses.FindAsync(new object[] { request.LicenseId.Value },
-                    cancellationToken) ?? throw new ArgumentException($"LicenseId {request.LicenseId} not found.",
-                    nameof(request.LicenseId))
-                : default;
+                ? await _commandContext.Licenses
+                      .FindAsync(new object[] { request.LicenseId.Value }, cancellationToken)
+                  ?? throw new ArgumentException($"LicenseId {request.LicenseId} not found.", nameof(request.LicenseId))
+                : await _commandContext.Licenses
+                    .WhereIsDefaultForFilterList()
+                    .SingleAsync(cancellationToken);
 
             var filterList = FilterList.Create(
                 request.Name,
@@ -65,7 +70,7 @@ public static class CreateList
                 request.EmailAddress,
                 request.DonateUrl,
                 request.ViewUrls.Select(u => (u.SegmentNumber, u.Primariness, u.Url)),
-                request.ChangeReason);
+                request.CreateReason);
             _commandContext.FilterLists.Add(filterList);
 
             await _commandContext.SaveChangesAsync(cancellationToken);

@@ -4,8 +4,6 @@ public sealed class License
 {
     private License() { }
 
-    public static int DefaultAllRightsReservedId => 5;
-
     public string Name { get; private init; } = null!;
     public Uri? Url { get; private init; }
     public bool PermitsModification { get; private init; }

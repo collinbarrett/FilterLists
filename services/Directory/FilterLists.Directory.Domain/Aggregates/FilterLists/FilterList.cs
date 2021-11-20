@@ -6,7 +6,6 @@ namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
 public sealed class FilterList : AggregateRoot, IRequireChangeApproval<FilterListChange>
 {
     private ICollection<FilterListChange> _changes = new HashSet<FilterListChange>();
-    private int _licenseId;
 
     private FilterList()
     {
@@ -14,7 +13,7 @@ public sealed class FilterList : AggregateRoot, IRequireChangeApproval<FilterLis
 
     public string Name { get; private init; } = null!;
     public string? Description { get; private init; }
-    public License License { get; private set; } = null!;
+    public License License { get; private init; } = null!;
     public Uri? HomeUrl { get; private init; }
     public Uri? OnionUrl { get; private init; }
     public Uri? PolicyUrl { get; private init; }
@@ -30,7 +29,7 @@ public sealed class FilterList : AggregateRoot, IRequireChangeApproval<FilterLis
     public static FilterList Create(
         string name,
         string? description,
-        License? license,
+        License license,
         Uri? homeUrl,
         Uri? onionUrl,
         Uri? policyUrl,
@@ -54,6 +53,7 @@ public sealed class FilterList : AggregateRoot, IRequireChangeApproval<FilterLis
         {
             Name = name,
             Description = description,
+            License = license,
             HomeUrl = homeUrl,
             OnionUrl = onionUrl,
             PolicyUrl = policyUrl,
@@ -65,17 +65,6 @@ public sealed class FilterList : AggregateRoot, IRequireChangeApproval<FilterLis
             DonateUrl = donateUrl,
             ViewUrls = urls
         };
-
-        // TODO: resolve temporary inconsistent state between nav prop (default null) and ID field (default 0) between creation and adding to DbContext
-        if (license is not null)
-        {
-            list.License = license;
-        }
-        else
-        {
-            list._licenseId = License.DefaultAllRightsReservedId;
-        }
-
         list._changes = new HashSet<FilterListChange>(new[] { FilterListChange.Create(list, createReason) });
         return list;
     }
