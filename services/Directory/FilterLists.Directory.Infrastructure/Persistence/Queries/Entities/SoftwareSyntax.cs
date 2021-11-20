@@ -22,6 +22,7 @@ internal class SoftwareSyntaxTypeConfiguration : IEntityTypeConfiguration<Softwa
 
         builder.ToTable($"{nr.RewriteName(nameof(SoftwareSyntax))}es");
         builder.HasKey(ss => new { ss.SoftwareId, ss.SyntaxId });
+        builder.HasQueryFilter(ss => ss.Software.IsApproved == true && ss.Syntax.IsApproved == true);
         builder.HasDataJsonFile<SoftwareSyntax>();
     }
 }

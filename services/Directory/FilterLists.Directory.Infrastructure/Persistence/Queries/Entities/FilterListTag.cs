@@ -22,6 +22,7 @@ internal class FilterListTagTypeConfiguration : IEntityTypeConfiguration<FilterL
 
         builder.ToTable($"{nr.RewriteName(nameof(FilterListTag))}s");
         builder.HasKey(flt => new { flt.FilterListId, flt.TagId });
+        builder.HasQueryFilter(flt => flt.FilterList.IsApproved == true && flt.Tag.IsApproved == true);
         builder.HasDataJsonFile<FilterListTag>();
     }
 }

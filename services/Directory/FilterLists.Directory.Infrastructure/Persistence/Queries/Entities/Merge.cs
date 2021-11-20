@@ -30,6 +30,7 @@ internal class MergeTypeConfiguration : IEntityTypeConfiguration<Merge>
             .WithMany(fl => fl.IncludedInFilterLists)
             .HasForeignKey(m => m.IncludesFilterListId)
             .HasConstraintName("fk_merges_filter_lists_includes_filter_list_id");
+        builder.HasQueryFilter(m => m.IncludedInFilterList.IsApproved == true && m.IncludesFilterList.IsApproved == true);
         builder.HasDataJsonFile<Merge>();
     }
 }
