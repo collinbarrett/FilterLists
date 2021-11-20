@@ -10,13 +10,9 @@ internal class FilterListChangeTypeConfiguration : IEntityTypeConfiguration<Filt
     public virtual void Configure(EntityTypeBuilder<FilterListChange> builder)
     {
         builder.Property<int>(nameof(Change.FilterListId));
-        builder.HasOne(c => c.Current)
-            .WithMany(f => f.Changes)
-            .HasForeignKey(nameof(Change.FilterListId));
-
-        // TODO: share by configuring IChange<TAggregate>
-        // TODO: serialize/deserialize json via value converter
-        builder.Ignore(c => c.Before);
-        builder.Ignore(c => c.After);
+        builder.Property(c => c.Before)
+            .HasColumnType("jsonb");
+        builder.Property(c => c.After)
+            .HasColumnType("jsonb");
     }
 }

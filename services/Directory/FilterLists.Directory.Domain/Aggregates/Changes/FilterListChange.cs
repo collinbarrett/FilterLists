@@ -2,15 +2,12 @@
 
 namespace FilterLists.Directory.Domain.Aggregates.Changes;
 
-public sealed class FilterListChange : Change, IChange<FilterList>
+public sealed class FilterListChange : Change, IChange<FilterListCore>
 {
-    private FilterListChange()
-    {
-    }
+    private FilterListChange() { }
 
-    public FilterList? Current { get; private init; }
-    public FilterList? Before { get; private init; }
-    public FilterList? After { get; private init; }
+    public FilterListCore? Before { get; private init; }
+    public FilterListCore? After { get; private init; }
 
     public static FilterListChange Create(FilterList filterList, string? reason)
     {

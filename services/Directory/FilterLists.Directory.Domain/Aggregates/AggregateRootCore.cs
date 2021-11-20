@@ -1,5 +1,5 @@
 ﻿namespace FilterLists.Directory.Domain.Aggregates;
 
-public abstract class AggregateRoot
+public abstract class AggregateRootCore
 {
 }
