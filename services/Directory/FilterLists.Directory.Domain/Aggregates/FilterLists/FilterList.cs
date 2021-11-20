@@ -3,31 +3,25 @@ using FilterLists.Directory.Domain.Aggregates.Licenses;
 
 namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
 
-public class FilterListCore : AggregateRootCore
-{
-    protected FilterListCore() { }
-
-    public string Name { get; protected init; } = null!;
-    public string? Description { get; protected init; }
-    public License License { get; protected init; } = null!;
-    public Uri? HomeUrl { get; protected init; }
-    public Uri? OnionUrl { get; protected init; }
-    public Uri? PolicyUrl { get; protected init; }
-    public Uri? SubmissionUrl { get; protected init; }
-    public Uri? IssuesUrl { get; protected init; }
-    public Uri? ForumUrl { get; protected init; }
-    public Uri? ChatUrl { get; protected init; }
-    public string? EmailAddress { get; protected init; }
-    public Uri? DonateUrl { get; protected init; }
-    public IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; protected init; } = new HashSet<FilterListViewUrl>();
-}
-
-public sealed class FilterList : FilterListCore, IRequireChangeApproval<FilterListChange>
+public sealed class FilterList : IRequireChangeApproval<FilterListChange>
 {
     private ICollection<FilterListChange> _changes = new HashSet<FilterListChange>();
 
     private FilterList() { }
 
+    public string Name { get; private init; } = null!;
+    public string? Description { get; private init; }
+    public License License { get; private init; } = null!;
+    public Uri? HomeUrl { get; private init; }
+    public Uri? OnionUrl { get; private init; }
+    public Uri? PolicyUrl { get; private init; }
+    public Uri? SubmissionUrl { get; private init; }
+    public Uri? IssuesUrl { get; private init; }
+    public Uri? ForumUrl { get; private init; }
+    public Uri? ChatUrl { get; private init; }
+    public string? EmailAddress { get; private init; }
+    public Uri? DonateUrl { get; private init; }
+    public IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; private init; } = new HashSet<FilterListViewUrl>();
     public IReadOnlyCollection<FilterListChange> Changes => (IReadOnlyCollection<FilterListChange>)_changes;
 
     public static FilterList Create(
