@@ -16,9 +16,11 @@ public static class SeedExtension
         using var scope = host.Services.CreateScope();
         var db = scope.ServiceProvider.GetRequiredService<QueryDbContext>();
         await db.Database.MigrateAsync();
-        await using var conn = (NpgsqlConnection)db.Database.GetDbConnection();
-        await conn.OpenAsync();
-        conn.ReloadTypes();
+
+        // TODO: sometimes throws System.ObjectDisposedException, but sometimes needed for https://www.npgsql.org/efcore/mapping/enum.html#creating-your-database-enum
+        //await using var conn = (NpgsqlConnection)db.Database.GetDbConnection();
+        //await conn.OpenAsync();
+        //conn.ReloadTypes();
     }
 }
 
