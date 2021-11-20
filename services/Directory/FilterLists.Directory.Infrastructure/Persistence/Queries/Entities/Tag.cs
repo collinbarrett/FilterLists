@@ -17,7 +17,7 @@ internal class TagTypeConfiguration : AggregateRootTypeConfiguration<Tag>
     {
         builder.HasIndex(t => t.Name)
             .IsUnique();
-        builder.HasDataJsonFile<Tag>();
+        builder.HasDataJsonFileAggregate<Tag>();
         base.Configure(builder);
     }
 }

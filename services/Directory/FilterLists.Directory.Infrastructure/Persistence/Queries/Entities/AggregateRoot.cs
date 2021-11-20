@@ -5,7 +5,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public abstract record AggregateRoot
 {
-    public bool? IsApproved { get; private init; }
+    // TODO: change 'set' to 'private init' when no longer seeding from json
+    public bool IsApproved { get; set; }
 }
 
 internal abstract class AggregateRootTypeConfiguration<TAggregateRoot> : IEntityTypeConfiguration<TAggregateRoot>
@@ -13,9 +14,6 @@ internal abstract class AggregateRootTypeConfiguration<TAggregateRoot> : IEntity
 {
     public virtual void Configure(EntityTypeBuilder<TAggregateRoot> builder)
     {
-        builder.Property(e => e.IsApproved)
-            .IsRequired()
-            .HasDefaultValue(true); // legacy json data approved via GitHub PR
-        builder.HasQueryFilter(e => e.IsApproved == true);
+        builder.HasQueryFilter(e => e.IsApproved);
     }
 }

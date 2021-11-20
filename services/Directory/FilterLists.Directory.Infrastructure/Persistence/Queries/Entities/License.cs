@@ -26,7 +26,7 @@ internal class LicenseTypeConfiguration : AggregateRootTypeConfiguration<License
             .HasDefaultValue(false);
         builder.Property(l => l.PermitsCommercialUse)
             .HasDefaultValue(false);
-        builder.HasDataJsonFile<License>();
+        builder.HasDataJsonFileAggregate<License>();
         base.Configure(builder);
     }
 }

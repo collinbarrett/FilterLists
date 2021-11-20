@@ -19,7 +19,7 @@ internal class SyntaxTypeConfiguration : AggregateRootTypeConfiguration<Syntax>
     {
         builder.HasIndex(s => s.Name)
             .IsUnique();
-        builder.HasDataJsonFile<Syntax>();
+        builder.HasDataJsonFileAggregate<Syntax>();
         base.Configure(builder);
     }
 }

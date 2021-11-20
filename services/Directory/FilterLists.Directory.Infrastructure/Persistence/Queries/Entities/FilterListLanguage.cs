@@ -26,7 +26,7 @@ internal class FilterListLanguageTypeConfiguration : IEntityTypeConfiguration<Fi
             .WithMany(l => l.FilterListLanguages)
             .HasForeignKey(fll => fll.Iso6391)
             .HasConstraintName("fk_filter_list_languages_languages_iso6391");
-        builder.HasQueryFilter(fll => fll.FilterList.IsApproved == true && fll.Language.IsApproved == true);
+        builder.HasQueryFilter(fll => fll.FilterList.IsApproved && fll.Language.IsApproved);
         builder.HasDataJsonFile<FilterListLanguage>();
     }
 }

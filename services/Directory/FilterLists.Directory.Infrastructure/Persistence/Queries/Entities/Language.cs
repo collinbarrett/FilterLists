@@ -20,7 +20,7 @@ internal class LanguageTypeConfiguration : AggregateRootTypeConfiguration<Langua
             .HasMaxLength(2);
         builder.HasIndex(l => l.Name)
             .IsUnique();
-        builder.HasDataJsonFile<Language>();
+        builder.HasDataJsonFileAggregate<Language>();
         base.Configure(builder);
     }
 }
