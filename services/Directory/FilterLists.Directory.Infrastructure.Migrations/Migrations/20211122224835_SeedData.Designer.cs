@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20211120230148_SeedData")]
+    [Migration("20211122224835_SeedData")]
     partial class SeedData
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -87058,7 +87058,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListLanguage", b =>
                 {
-                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", null)
+                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "FilterList")
                         .WithMany("FilterListLanguages")
                         .HasForeignKey("FilterListId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -87072,68 +87072,84 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         .IsRequired()
                         .HasConstraintName("fk_filter_list_languages_languages_iso6391");
 
+                    b.Navigation("FilterList");
+
                     b.Navigation("Language");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListMaintainer", b =>
                 {
-                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", null)
+                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "FilterList")
                         .WithMany("FilterListMaintainers")
                         .HasForeignKey("FilterListId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_filter_list_maintainers_filter_lists_filter_list_id");
 
-                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Maintainer", null)
+                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Maintainer", "Maintainer")
                         .WithMany("FilterListMaintainers")
                         .HasForeignKey("MaintainerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_filter_list_maintainers_maintainers_maintainer_id");
+
+                    b.Navigation("FilterList");
+
+                    b.Navigation("Maintainer");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListSyntax", b =>
                 {
-                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", null)
+                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "FilterList")
                         .WithMany("FilterListSyntaxes")
                         .HasForeignKey("FilterListId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_filter_list_syntaxes_filter_lists_filter_list_id");
 
-                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Syntax", null)
+                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Syntax", "Syntax")
                         .WithMany("FilterListSyntaxes")
                         .HasForeignKey("SyntaxId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_filter_list_syntaxes_syntaxes_syntax_id");
+
+                    b.Navigation("FilterList");
+
+                    b.Navigation("Syntax");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListTag", b =>
                 {
-                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", null)
+                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "FilterList")
                         .WithMany("FilterListTags")
                         .HasForeignKey("FilterListId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_filter_list_tags_filter_lists_filter_list_id");
 
-                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Tag", null)
+                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Tag", "Tag")
                         .WithMany("FilterListTags")
                         .HasForeignKey("TagId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_filter_list_tags_tags_tag_id");
+
+                    b.Navigation("FilterList");
+
+                    b.Navigation("Tag");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListViewUrl", b =>
                 {
-                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", null)
+                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "FilterList")
                         .WithMany("ViewUrls")
                         .HasForeignKey("FilterListId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_filter_list_view_urls_filter_lists_filter_list_id");
+
+                    b.Navigation("FilterList");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Fork", b =>
@@ -87180,19 +87196,23 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.SoftwareSyntax", b =>
                 {
-                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Software", null)
+                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Software", "Software")
                         .WithMany("SoftwareSyntaxes")
                         .HasForeignKey("SoftwareId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_software_syntaxes_software_software_id");
 
-                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Syntax", null)
+                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Syntax", "Syntax")
                         .WithMany("SoftwareSyntaxes")
                         .HasForeignKey("SyntaxId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_software_syntaxes_syntaxes_syntax_id");
+
+                    b.Navigation("Software");
+
+                    b.Navigation("Syntax");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", b =>

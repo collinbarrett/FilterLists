@@ -29,6 +29,7 @@ internal class FilterListViewUrlConfiguration : IEntityTypeConfiguration<FilterL
             .HasDefaultValue(1);
         builder.HasIndex(u => new { u.FilterListId, u.SegmentNumber, u.Primariness })
             .IsUnique();
+        builder.HasQueryFilter(u => u.FilterList.IsApproved);
         builder.HasDataJsonFile<FilterListViewUrl>();
     }
 }
