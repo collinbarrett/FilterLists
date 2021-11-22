@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
-body > #root > section {
-  height: 100vh;
+td.ant-table-cell > * {
+  height: 40px;
+  overflow: hidden;
+}
+
+td.ant-table-column-sort {
+  background: rgb(20, 20, 20);
 }

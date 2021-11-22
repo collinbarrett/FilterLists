@@ -41,7 +41,7 @@ export const App: React.FC = () => (
       <Footer
         style={{
           textAlign: "center",
-          padding: "0px 0px 24px",
+          padding: "24px 0px 24px",
           lineHeight: "24px",
         }}
       >

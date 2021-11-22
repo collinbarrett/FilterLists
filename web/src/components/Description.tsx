@@ -2,5 +2,4 @@ interface Props {
   description?: string;
 }
 
-export const Description = (props: Props) =>
-  props.description ? <p>{props.description}</p> : null;
+export const Description = (props: Props) => <p>{props.description}</p>;

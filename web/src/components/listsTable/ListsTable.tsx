@@ -24,7 +24,6 @@ import { TagCloud } from "../tagCloud";
 import { Tag as TagInterface } from "../../interfaces/Tag";
 import { arraySorter, languageArraySorter } from "./arraySorter";
 import { nameof } from "../../utils";
-import styles from "./ListsTable.module.css";
 import { TablePaginationConfig } from "antd/lib/table";
 import { SyntaxTag } from "../SyntaxTag";
 
@@ -67,7 +66,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
       pagination={{
         simple: true,
         pageSize: tablePageSize.pageSize,
-        position: ["bottomLeft"],
+        position: ["topRight"],
       }}
       scroll={{
         x:
@@ -87,7 +86,6 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         key="Info"
         dataIndex={nameof<List>("id")}
         width={62}
-        className={styles.nogrow}
         fixed={tablePageSize.isNarrowWindow ? undefined : "left"}
         render={(_id: number, list: List) => (
           <ListInfoButton listName={list.name} {...routeComponentProps} />
@@ -100,7 +98,6 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         sorter={(a, b) => a.name.localeCompare(b.name)}
         defaultSortOrder={"ascend"}
         width={tablePageSize.isNarrowWindow ? undefined : 200}
-        className={styles.nogrow}
         fixed={tablePageSize.isNarrowWindow ? undefined : "left"}
         filterDropdown={searchNameColumn.filterDropdown}
         filterIcon={searchNameColumn.filterIcon}
@@ -124,7 +121,6 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
               ? 423
               : undefined
           }
-          className={styles.nogrow}
           filterDropdown={searchDescriptionColumn.filterDropdown}
           filterIcon={searchDescriptionColumn.filterIcon}
           onFilter={searchDescriptionColumn.onFilter}
@@ -150,7 +146,6 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             return arraySorter(getSoftwareIds(a), getSoftwareIds(b), software);
           }}
           width={170}
-          className={styles.nogrow}
           filters={software.map((s) => ({
             text: (
               <>
@@ -195,7 +190,6 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           dataIndex={nameof<List>("syntaxIds")}
           sorter={(a, b) => arraySorter(a.syntaxIds, b.syntaxIds, syntaxes)}
           width={254}
-          className={styles.nogrow}
           filters={syntaxes.map((s) => ({
             text: (
               <>
@@ -236,7 +230,6 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             languageArraySorter(a.iso6391s, b.iso6391s, languages)
           }
           width={129}
-          className={styles.nogrow}
           filters={languages.map((l) => ({
             text: (
               <>
@@ -273,7 +266,6 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
           dataIndex={nameof<List>("tagIds")}
           sorter={(a, b) => arraySorter(a.tagIds, b.tagIds, tags)}
           width={275}
-          className={styles.nogrow}
           filters={tags.map((t) => ({
             text: (
               <>
@@ -309,7 +301,6 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             arraySorter(a.maintainerIds, b.maintainerIds, maintainers)
           }
           width={191}
-          className={styles.nogrow}
           filters={maintainers.map((t) => ({
             text: (
               <>
@@ -353,7 +344,6 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
               : 1;
           }}
           width={215}
-          className={styles.nogrow}
           filters={licenses.map((l) => ({
             text: (
               <>
