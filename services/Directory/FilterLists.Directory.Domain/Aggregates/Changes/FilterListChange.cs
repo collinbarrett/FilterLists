@@ -2,9 +2,9 @@
 
 namespace FilterLists.Directory.Domain.Aggregates.Changes;
 
-public sealed class FilterListChange : Change, IChangeAggregate<FilterListRecord>
+public class FilterListChange : Change, IChangeAggregate<FilterListRecord>
 {
-    private FilterListChange() { }
+    protected FilterListChange() { }
 
     public FilterListRecord? Before { get; private init; }
     public FilterListRecord? After { get; private init; }

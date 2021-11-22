@@ -38,6 +38,7 @@ public static class ConfigurationExtensions
         {
             o.UseNpgsql(configuration.GetConnectionString("DirectoryConnection"))
                 .UseSnakeCaseNamingConvention()
+                .UseLazyLoadingProxies()
 #if DEBUG
                 .LogTo(Console.WriteLine, LogLevel.Information);
             o.EnableSensitiveDataLogging();
