@@ -56,7 +56,7 @@ public static class CreateList
                     .WhereIsDefaultForFilterList()
                     .SingleAsync(cancellationToken);
 
-            var filterList = FilterList.Create(
+            var filterList = FilterList.CreatePendingApproval(
                 request.Name,
                 request.Description,
                 license,

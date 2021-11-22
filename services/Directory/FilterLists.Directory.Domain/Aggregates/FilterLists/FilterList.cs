@@ -23,8 +23,9 @@ public class FilterList : IRequireChangeApproval<FilterListChange>
     public string? EmailAddress { get; private init; }
     public Uri? DonateUrl { get; private init; }
     public virtual IReadOnlyCollection<FilterListChange> Changes => (IReadOnlyCollection<FilterListChange>)_changes;
+    public bool IsApproved { get; private init; }
 
-    public static FilterList Create(
+    public static FilterList CreatePendingApproval(
         string name,
         string? description,
         License license,
@@ -61,7 +62,8 @@ public class FilterList : IRequireChangeApproval<FilterListChange>
             ChatUrl = chatUrl,
             EmailAddress = emailAddress,
             DonateUrl = donateUrl,
-            ViewUrls = urls
+            ViewUrls = urls,
+            IsApproved = false
         };
         list._changes = new HashSet<FilterListChange>(new[] { FilterListChange.Create(list, createReason) });
         return list;
