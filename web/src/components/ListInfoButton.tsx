@@ -12,6 +12,7 @@ export const ListInfoButton = (props: RouteComponentProps & Props) => {
   const listPath = `/lists/${slugify(props.listName, SlugifyOptions)}`;
   return (
     <Button
+      style={{ marginLeft: "10px" }}
       type="primary"
       title={`View more information about ${props.listName}.`}
       onClick={() =>
