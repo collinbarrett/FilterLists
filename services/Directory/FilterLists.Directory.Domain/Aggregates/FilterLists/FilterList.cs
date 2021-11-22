@@ -12,6 +12,7 @@ public class FilterList : IRequireChangeApproval<FilterListChange>
     public string Name { get; private init; } = null!;
     public string? Description { get; private init; }
     public virtual License License { get; private init; } = null!;
+    public virtual IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; private init; } = new HashSet<FilterListViewUrl>();
     public Uri? HomeUrl { get; private init; }
     public Uri? OnionUrl { get; private init; }
     public Uri? PolicyUrl { get; private init; }
@@ -21,13 +22,13 @@ public class FilterList : IRequireChangeApproval<FilterListChange>
     public Uri? ChatUrl { get; private init; }
     public string? EmailAddress { get; private init; }
     public Uri? DonateUrl { get; private init; }
-    public virtual IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; private init; } = new HashSet<FilterListViewUrl>();
     public virtual IReadOnlyCollection<FilterListChange> Changes => (IReadOnlyCollection<FilterListChange>)_changes;
 
     public static FilterList Create(
         string name,
         string? description,
         License license,
+        IEnumerable<(short SegmentNumber, short Primariness, Uri Url)> viewUrls,
         Uri? homeUrl,
         Uri? onionUrl,
         Uri? policyUrl,
@@ -37,7 +38,6 @@ public class FilterList : IRequireChangeApproval<FilterListChange>
         Uri? chatUrl,
         string? emailAddress,
         Uri? donateUrl,
-        IEnumerable<(short SegmentNumber, short Primariness, Uri Url)> viewUrls,
         string? createReason)
     {
         var urls = viewUrls.Select(u => FilterListViewUrl.Create(u.SegmentNumber, u.Primariness, u.Url))

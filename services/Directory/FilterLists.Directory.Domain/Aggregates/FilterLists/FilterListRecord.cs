@@ -6,6 +6,7 @@ public record FilterListRecord(
     string Name,
     string? Description,
     License License,
+    IReadOnlyCollection<FilterListViewUrl> ViewUrls,
     Uri? HomeUrl,
     Uri? OnionUrl,
     Uri? PolicyUrl,
@@ -14,8 +15,8 @@ public record FilterListRecord(
     Uri? ForumUrl,
     Uri? ChatUrl,
     string? EmailAddress,
-    Uri? DonateUrl,
-    IReadOnlyCollection<FilterListViewUrl> ViewUrls)
+    Uri? DonateUrl
+)
 {
     public static FilterListRecord FromFilterList(FilterList filterList)
     {
@@ -23,6 +24,7 @@ public record FilterListRecord(
             filterList.Name,
             filterList.Description,
             filterList.License,
+            filterList.ViewUrls,
             filterList.HomeUrl,
             filterList.OnionUrl,
             filterList.PolicyUrl,
@@ -31,7 +33,7 @@ public record FilterListRecord(
             filterList.ForumUrl,
             filterList.ChatUrl,
             filterList.EmailAddress,
-            filterList.DonateUrl,
-            filterList.ViewUrls);
+            filterList.DonateUrl
+        );
     }
 }

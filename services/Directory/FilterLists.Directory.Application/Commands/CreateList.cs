@@ -60,6 +60,7 @@ public static class CreateList
                 request.Name,
                 request.Description,
                 license,
+                request.ViewUrls.Select(u => (u.SegmentNumber, u.Primariness, u.Url)),
                 request.HomeUrl,
                 request.OnionUrl,
                 request.PolicyUrl,
@@ -69,7 +70,6 @@ public static class CreateList
                 request.ChatUrl,
                 request.EmailAddress,
                 request.DonateUrl,
-                request.ViewUrls.Select(u => (u.SegmentNumber, u.Primariness, u.Url)),
                 request.CreateReason);
             _commandContext.FilterLists.Add(filterList);
 
