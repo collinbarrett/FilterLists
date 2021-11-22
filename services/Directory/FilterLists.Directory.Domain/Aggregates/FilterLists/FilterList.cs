@@ -3,15 +3,15 @@ using FilterLists.Directory.Domain.Aggregates.Licenses;
 
 namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
 
-public sealed class FilterList : IRequireChangeApproval<FilterListChange>
+public class FilterList : IRequireChangeApproval<FilterListChange>
 {
     private ICollection<FilterListChange> _changes = new HashSet<FilterListChange>();
 
-    private FilterList() { }
+    protected FilterList() { }
 
     public string Name { get; private init; } = null!;
     public string? Description { get; private init; }
-    public License License { get; private init; } = null!;
+    public virtual License License { get; private init; } = null!;
     public Uri? HomeUrl { get; private init; }
     public Uri? OnionUrl { get; private init; }
     public Uri? PolicyUrl { get; private init; }
@@ -21,8 +21,8 @@ public sealed class FilterList : IRequireChangeApproval<FilterListChange>
     public Uri? ChatUrl { get; private init; }
     public string? EmailAddress { get; private init; }
     public Uri? DonateUrl { get; private init; }
-    public IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; private init; } = new HashSet<FilterListViewUrl>();
-    public IReadOnlyCollection<FilterListChange> Changes => (IReadOnlyCollection<FilterListChange>)_changes;
+    public virtual IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; private init; } = new HashSet<FilterListViewUrl>();
+    public virtual IReadOnlyCollection<FilterListChange> Changes => (IReadOnlyCollection<FilterListChange>)_changes;
 
     public static FilterList Create(
         string name,

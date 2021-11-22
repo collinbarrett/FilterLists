@@ -1,8 +1,8 @@
 ﻿namespace FilterLists.Directory.Domain.Aggregates.Licenses;
 
-public sealed class License
+public class License
 {
-    private License() { }
+    protected License() { }
 
     public string Name { get; private init; } = null!;
     public Uri? Url { get; private init; }
