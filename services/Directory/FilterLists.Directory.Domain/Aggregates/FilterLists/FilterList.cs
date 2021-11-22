@@ -48,6 +48,14 @@ public class FilterList : IRequireChangeApproval<FilterListChange>
             throw new ArgumentException("At lest one view URL is required.", nameof(viewUrls));
         }
 
+        if (urls.GroupBy(u => new { u.SegmentNumber, u.Primariness })
+            .Any(g => g.Count() > 1))
+        {
+            throw new ArgumentException(
+                "The segment number and primariness pair must be unique for each view URL.",
+                nameof(viewUrls));
+        }
+
         var list = new FilterList
         {
             Name = name,
