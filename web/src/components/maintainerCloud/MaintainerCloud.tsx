@@ -1,6 +1,5 @@
 import { Tag } from "antd";
 import { Maintainer } from "../../interfaces/Maintainer";
-import styles from "./MaintainerCloud.module.css";
 
 interface Props {
   maintainers: Maintainer[];
@@ -8,7 +7,7 @@ interface Props {
 
 export const MaintainerCloud = (props: Props) =>
   props.maintainers && props.maintainers.length ? (
-    <div className={styles.grow}>
+    <div>
       {props.maintainers.map((m: Maintainer, i: number) =>
         m.url ? (
           <Tag key={i}>

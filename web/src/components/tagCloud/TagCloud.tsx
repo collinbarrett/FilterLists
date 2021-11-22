@@ -1,6 +1,5 @@
 import { Tag } from "antd";
 import { Tag as TagInterface } from "../../interfaces/Tag";
-import styles from "./TagCloud.module.css";
 
 interface Props {
   tags: TagInterface[];
@@ -9,7 +8,7 @@ interface Props {
 
 export const TagCloud = (props: Props) =>
   props.tags && props.tags.length ? (
-    <div className={styles.grow}>
+    <div>
       {props.showLabel && <h3>{`Tag${props.tags.length > 1 ? "s" : ""}:`}</h3>}
       {props.tags.map((t: TagInterface, i: number) => (
         <Tag key={i} title={t.description}>

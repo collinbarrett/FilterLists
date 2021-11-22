@@ -13,10 +13,18 @@ code {
 }
 
 td.ant-table-cell > * {
-  height: 40px;
+  height: 42px;
   overflow: hidden;
+}
+
+td.ant-table-cell {
+  padding: 2px 4px 4px 2px;
 }
 
 td.ant-table-column-sort {
   background: rgb(20, 20, 20);
+}
+
+.ant-tag {
+  margin: 0px 8px 2px 0px;
 }

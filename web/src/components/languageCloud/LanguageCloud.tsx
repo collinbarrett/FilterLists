@@ -1,6 +1,5 @@
 import { Tag } from "antd";
 import { Language } from "../../interfaces/Language";
-import styles from "./LanguageCloud.module.css";
 
 interface Props {
   languages: Language[];
@@ -9,7 +8,7 @@ interface Props {
 
 export const LanguageCloud = (props: Props) =>
   props.languages && props.languages.length ? (
-    <div className={styles.grow}>
+    <div>
       {props.showLabel && (
         <h3>{`Language${props.languages.length > 1 ? "s" : ""}:`}</h3>
       )}

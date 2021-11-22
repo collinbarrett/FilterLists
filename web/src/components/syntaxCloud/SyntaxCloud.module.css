@@ -1,7 +1,0 @@
-.grow {
-  /* allow for 2nd row's tags' bottom border to not be chopped in AllListsTable */
-  max-height: none !important;
-
-  /* leave vertical gap between rows of tags */
-  line-height: 28px;
-}

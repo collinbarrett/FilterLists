@@ -1,6 +1,5 @@
 import { Syntax } from "../../interfaces/Syntax";
 import { SyntaxTag } from "../SyntaxTag";
-import styles from "./SyntaxCloud.module.css";
 
 interface Props {
   syntaxes: Syntax[];
@@ -9,7 +8,7 @@ interface Props {
 
 export const SyntaxCloud = (props: Props) =>
   props.syntaxes && props.syntaxes.length ? (
-    <div className={styles.grow}>
+    <div>
       {props.showLabel && (
         <h3>{`Syntax${props.syntaxes.length > 1 ? "es" : ""}:`}</h3>
       )}
