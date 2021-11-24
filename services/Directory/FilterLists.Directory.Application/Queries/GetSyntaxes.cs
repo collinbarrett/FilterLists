@@ -53,7 +53,7 @@ public static class GetSyntaxes
         public string Name { get; init; } = null!;
         public string? Description { get; init; }
         public Uri? Url { get; init; }
-        public IReadOnlyCollection<int> FilterListIds { get; init; } = new HashSet<int>();
-        public IReadOnlyCollection<int> SoftwareIds { get; init; } = new HashSet<int>();
+        public IEnumerable<int> FilterListIds { get; init; } = new HashSet<int>();
+        public IEnumerable<int> SoftwareIds { get; init; } = new HashSet<int>();
     }
 }

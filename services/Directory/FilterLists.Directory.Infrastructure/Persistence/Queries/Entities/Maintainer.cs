@@ -10,7 +10,7 @@ public record Maintainer : AggregateRoot
     public Uri? Url { get; init; }
     public string? EmailAddress { get; init; }
     public string? TwitterHandle { get; init; }
-    public IReadOnlyCollection<FilterListMaintainer> FilterListMaintainers { get; init; } = new HashSet<FilterListMaintainer>();
+    public IEnumerable<FilterListMaintainer> FilterListMaintainers { get; init; } = new HashSet<FilterListMaintainer>();
 }
 
 internal class MaintainerTypeConfiguration : AggregateRootTypeConfiguration<Maintainer>

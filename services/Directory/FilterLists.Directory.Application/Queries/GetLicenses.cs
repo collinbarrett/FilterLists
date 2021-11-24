@@ -50,6 +50,6 @@ public static class GetLicenses
         public bool PermitsModification { get; init; }
         public bool PermitsDistribution { get; init; }
         public bool PermitsCommercialUse { get; init; }
-        public IReadOnlyCollection<int> FilterListIds { get; init; } = new HashSet<int>();
+        public IEnumerable<int> FilterListIds { get; init; } = new HashSet<int>();
     }
 }

@@ -9,8 +9,8 @@ public record Syntax : AggregateRoot
     public string Name { get; init; } = null!;
     public string? Description { get; init; }
     public Uri? Url { get; init; }
-    public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; init; } = new HashSet<FilterListSyntax>();
-    public IReadOnlyCollection<SoftwareSyntax> SoftwareSyntaxes { get; init; } = new HashSet<SoftwareSyntax>();
+    public IEnumerable<FilterListSyntax> FilterListSyntaxes { get; init; } = new HashSet<FilterListSyntax>();
+    public IEnumerable<SoftwareSyntax> SoftwareSyntaxes { get; init; } = new HashSet<SoftwareSyntax>();
 }
 
 internal class SyntaxTypeConfiguration : AggregateRootTypeConfiguration<Syntax>

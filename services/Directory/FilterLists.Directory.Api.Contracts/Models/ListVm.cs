@@ -6,9 +6,9 @@ public record ListVm
     public string Name { get; init; } = null!;
     public string? Description { get; init; }
     public int? LicenseId { get; init; }
-    public IReadOnlyCollection<int> SyntaxIds { get; init; } = new HashSet<int>();
-    public IReadOnlyCollection<string> Iso6391s { get; init; } = new HashSet<string>();
-    public IReadOnlyCollection<int> TagIds { get; init; } = new HashSet<int>();
+    public IEnumerable<int> SyntaxIds { get; init; } = new HashSet<int>();
+    public IEnumerable<string> Iso6391s { get; init; } = new HashSet<string>();
+    public IEnumerable<int> TagIds { get; init; } = new HashSet<int>();
     public Uri? PrimaryViewUrl { get; init; }
-    public IReadOnlyCollection<int> MaintainerIds { get; init; } = new HashSet<int>();
+    public IEnumerable<int> MaintainerIds { get; init; } = new HashSet<int>();
 }

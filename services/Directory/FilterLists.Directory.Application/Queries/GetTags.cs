@@ -49,6 +49,6 @@ public static class GetTags
         public int Id { get; init; }
         public string Name { get; init; } = null!;
         public string? Description { get; init; }
-        public IReadOnlyCollection<int> FilterListIds { get; init; } = new HashSet<int>();
+        public IEnumerable<int> FilterListIds { get; init; } = new HashSet<int>();
     }
 }

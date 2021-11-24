@@ -10,10 +10,10 @@ public record FilterList : AggregateRoot
     public string? Description { get; init; }
     public int LicenseId { get; init; }
     public License License { get; init; } = null!;
-    public IReadOnlyCollection<FilterListSyntax> FilterListSyntaxes { get; init; } = new HashSet<FilterListSyntax>();
-    public IReadOnlyCollection<FilterListLanguage> FilterListLanguages { get; init; } = new HashSet<FilterListLanguage>();
-    public IReadOnlyCollection<FilterListTag> FilterListTags { get; init; } = new HashSet<FilterListTag>();
-    public IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; init; } = new HashSet<FilterListViewUrl>();
+    public IEnumerable<FilterListSyntax> FilterListSyntaxes { get; init; } = new HashSet<FilterListSyntax>();
+    public IEnumerable<FilterListLanguage> FilterListLanguages { get; init; } = new HashSet<FilterListLanguage>();
+    public IEnumerable<FilterListTag> FilterListTags { get; init; } = new HashSet<FilterListTag>();
+    public IEnumerable<FilterListViewUrl> ViewUrls { get; init; } = new HashSet<FilterListViewUrl>();
     public Uri? HomeUrl { get; init; }
     public Uri? OnionUrl { get; init; }
     public Uri? PolicyUrl { get; init; }
@@ -23,13 +23,13 @@ public record FilterList : AggregateRoot
     public Uri? ChatUrl { get; init; }
     public string? EmailAddress { get; init; }
     public Uri? DonateUrl { get; init; }
-    public IReadOnlyCollection<FilterListMaintainer> FilterListMaintainers { get; init; } = new HashSet<FilterListMaintainer>();
-    public IReadOnlyCollection<Fork> UpstreamFilterLists { get; init; } = new HashSet<Fork>();
-    public IReadOnlyCollection<Fork> ForkFilterLists { get; init; } = new HashSet<Fork>();
-    public IReadOnlyCollection<Merge> IncludedInFilterLists { get; init; } = new HashSet<Merge>();
-    public IReadOnlyCollection<Merge> IncludesFilterLists { get; init; } = new HashSet<Merge>();
-    public IReadOnlyCollection<Dependent> DependencyFilterLists { get; init; } = new HashSet<Dependent>();
-    public IReadOnlyCollection<Dependent> DependentFilterLists { get; init; } = new HashSet<Dependent>();
+    public IEnumerable<FilterListMaintainer> FilterListMaintainers { get; init; } = new HashSet<FilterListMaintainer>();
+    public IEnumerable<Fork> UpstreamFilterLists { get; init; } = new HashSet<Fork>();
+    public IEnumerable<Fork> ForkFilterLists { get; init; } = new HashSet<Fork>();
+    public IEnumerable<Merge> IncludedInFilterLists { get; init; } = new HashSet<Merge>();
+    public IEnumerable<Merge> IncludesFilterLists { get; init; } = new HashSet<Merge>();
+    public IEnumerable<Dependent> DependencyFilterLists { get; init; } = new HashSet<Dependent>();
+    public IEnumerable<Dependent> DependentFilterLists { get; init; } = new HashSet<Dependent>();
 }
 
 internal class FilterListTypeConfiguration : AggregateRootTypeConfiguration<FilterList>
