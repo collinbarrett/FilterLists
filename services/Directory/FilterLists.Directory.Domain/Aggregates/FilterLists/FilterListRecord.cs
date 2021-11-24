@@ -6,7 +6,7 @@ public record FilterListRecord(
     string Name,
     string? Description,
     License License,
-    IReadOnlyCollection<FilterListViewUrl> ViewUrls,
+    IEnumerable<FilterListViewUrl> ViewUrls,
     Uri? HomeUrl,
     Uri? OnionUrl,
     Uri? PolicyUrl,

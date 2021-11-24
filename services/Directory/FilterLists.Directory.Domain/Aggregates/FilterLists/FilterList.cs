@@ -5,14 +5,12 @@ namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
 
 public class FilterList : IRequireChangeApproval<FilterListChange>
 {
-    private ICollection<FilterListChange> _changes = new HashSet<FilterListChange>();
-
     protected FilterList() { }
 
     public string Name { get; private init; } = null!;
     public string? Description { get; private init; }
     public virtual License License { get; private init; } = null!;
-    public virtual IReadOnlyCollection<FilterListViewUrl> ViewUrls { get; private init; } = new HashSet<FilterListViewUrl>();
+    public virtual IEnumerable<FilterListViewUrl> ViewUrls { get; private init; } = new HashSet<FilterListViewUrl>();
     public Uri? HomeUrl { get; private init; }
     public Uri? OnionUrl { get; private init; }
     public Uri? PolicyUrl { get; private init; }
@@ -22,7 +20,7 @@ public class FilterList : IRequireChangeApproval<FilterListChange>
     public Uri? ChatUrl { get; private init; }
     public string? EmailAddress { get; private init; }
     public Uri? DonateUrl { get; private init; }
-    public virtual IReadOnlyCollection<FilterListChange> Changes => (IReadOnlyCollection<FilterListChange>)_changes;
+    public virtual IEnumerable<FilterListChange> Changes { get; private set; } = new HashSet<FilterListChange>();
     public bool IsApproved { get; private init; }
 
     public static FilterList CreatePendingApproval(
@@ -73,7 +71,7 @@ public class FilterList : IRequireChangeApproval<FilterListChange>
             ViewUrls = urls,
             IsApproved = false
         };
-        list._changes = new HashSet<FilterListChange>(new[] { FilterListChange.Create(list, createReason) });
+        list.Changes = new HashSet<FilterListChange>(new[] { FilterListChange.Create(list, createReason) });
         return list;
     }
 }
