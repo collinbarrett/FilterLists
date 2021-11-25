@@ -1,6 +1,8 @@
-﻿namespace FilterLists.Archival.Domain.SeedWork;
+﻿namespace FilterLists.SharedKernel.Domain.SeedWork;
 
-/// <remarks>https://enterprisecraftsmanship.com/posts/value-object-better-implementation/</remarks>
+/// <summary>
+/// https://enterprisecraftsmanship.com/posts/value-object-better-implementation/
+/// </summary>
 public abstract class ValueObject
 {
     protected abstract IEnumerable<object> GetEqualityComponents();
