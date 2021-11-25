@@ -16,4 +16,8 @@
     <PackageProjectUrl>https://filterlists.com</PackageProjectUrl>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\SharedKernel\FilterLists.SharedKernel.Domain.SeedWork\FilterLists.SharedKernel.Domain.SeedWork.csproj" />
+  </ItemGroup>
+
 </Project>

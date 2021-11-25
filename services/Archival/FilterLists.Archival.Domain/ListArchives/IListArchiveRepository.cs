@@ -1,4 +1,4 @@
-﻿using FilterLists.Archival.Domain.SeedWork;
+﻿using FilterLists.SharedKernel.Domain.SeedWork;
 
 namespace FilterLists.Archival.Domain.ListArchives;
 

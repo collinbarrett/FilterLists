@@ -1,4 +1,4 @@
-﻿namespace FilterLists.Archival.Domain.SeedWork;
+﻿namespace FilterLists.SharedKernel.Domain.SeedWork;
 
 public interface IUnitOfWork : IDisposable
 {
