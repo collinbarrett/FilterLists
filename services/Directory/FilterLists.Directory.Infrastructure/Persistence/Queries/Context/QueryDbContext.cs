@@ -12,9 +12,7 @@ public class QueryDbContext : DbContext
         NpgsqlConnection.GlobalTypeMapper.MapEnum<AggregateType>();
     }
 
-    public QueryDbContext(DbContextOptions<QueryDbContext> options) : base(options)
-    {
-    }
+    public QueryDbContext(DbContextOptions<QueryDbContext> options) : base(options) { }
 
     public DbSet<Change> Changes => Set<Change>();
     public DbSet<FilterList> FilterLists => Set<FilterList>();
@@ -39,7 +37,8 @@ public class QueryDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly,
+        modelBuilder.ApplyConfigurationsFromAssembly(
+            GetType().Assembly,
             type => type.Namespace == typeof(FilterListTypeConfiguration).Namespace);
         modelBuilder.HasPostgresEnum<AggregateType>();
     }

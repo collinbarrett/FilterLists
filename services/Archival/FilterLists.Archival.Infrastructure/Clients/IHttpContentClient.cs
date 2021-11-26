@@ -16,7 +16,8 @@ internal sealed class HttpContentClient : IHttpContentClient
     public HttpContentClient(HttpClient httpClient, ILogger<HttpContentClient> logger)
     {
         _httpClient = httpClient;
-        _httpClient.DefaultRequestHeaders.Add("User-Agent",
+        _httpClient.DefaultRequestHeaders.Add(
+            "User-Agent",
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36");
         _logger = logger;
     }

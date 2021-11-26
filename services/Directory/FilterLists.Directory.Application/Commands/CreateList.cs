@@ -9,7 +9,8 @@ namespace FilterLists.Directory.Application.Commands;
 
 public static class CreateList
 {
-    public record Command(string Name,
+    public record Command(
+        string Name,
         IEnumerable<FilterListViewUrl> ViewUrls,
         string? Description = default,
         long? LicenseId = default,
@@ -79,7 +80,5 @@ public static class CreateList
         }
     }
 
-    public record Response
-    {
-    }
+    public record Response { }
 }

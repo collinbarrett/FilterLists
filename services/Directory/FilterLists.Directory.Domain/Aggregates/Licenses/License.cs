@@ -12,7 +12,8 @@ public class License : Entity
     public bool PermitsDistribution { get; private init; }
     public bool PermitsCommercialUse { get; private init; }
 
-    public static License Create(string name,
+    public static License Create(
+        string name,
         Uri? url,
         bool permitsModification,
         bool permitsDistribution,

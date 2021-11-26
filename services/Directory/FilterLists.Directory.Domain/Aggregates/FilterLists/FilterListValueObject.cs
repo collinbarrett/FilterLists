@@ -43,10 +43,11 @@ public class FilterListValueObject : ValueObject
         yield return Name;
         yield return Description;
         yield return LicenseId;
-        foreach (long viewUrlId in ViewUrlIds)
+        foreach (var viewUrlId in ViewUrlIds)
         {
             yield return viewUrlId;
         }
+
         yield return HomeUrl;
         yield return OnionUrl;
         yield return PolicyUrl;

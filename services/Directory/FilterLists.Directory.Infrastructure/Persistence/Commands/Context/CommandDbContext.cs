@@ -14,16 +14,15 @@ internal class CommandDbContext : DbContext, ICommandContext
         NpgsqlConnection.GlobalTypeMapper.MapEnum<AggregateType>();
     }
 
-    public CommandDbContext(DbContextOptions<CommandDbContext> options) : base(options)
-    {
-    }
+    public CommandDbContext(DbContextOptions<CommandDbContext> options) : base(options) { }
 
     public DbSet<FilterList> FilterLists => Set<FilterList>();
     public DbSet<License> Licenses => Set<License>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly,
+        modelBuilder.ApplyConfigurationsFromAssembly(
+            GetType().Assembly,
             type => type.Namespace == typeof(FilterListTypeConfiguration).Namespace);
         modelBuilder.HasPostgresEnum<AggregateType>();
     }
