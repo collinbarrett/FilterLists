@@ -13,7 +13,8 @@ internal class ValidatorPipelineBehavior<TRequest, TResponse> : IPipelineBehavio
         _validators = validators;
     }
 
-    public async Task<TResponse> Handle(TRequest request,
+    public async Task<TResponse> Handle(
+        TRequest request,
         CancellationToken cancellationToken,
         RequestHandlerDelegate<TResponse> next)
     {
