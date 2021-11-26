@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20211122224814_Initial")]
+    [Migration("20211126172625_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,12 +25,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Dependent", b =>
                 {
-                    b.Property<int>("DependencyFilterListId")
-                        .HasColumnType("integer")
+                    b.Property<long>("DependencyFilterListId")
+                        .HasColumnType("bigint")
                         .HasColumnName("dependency_filter_list_id");
 
-                    b.Property<int>("DependentFilterListId")
-                        .HasColumnType("integer")
+                    b.Property<long>("DependentFilterListId")
+                        .HasColumnType("bigint")
                         .HasColumnName("dependent_filter_list_id");
 
                     b.HasKey("DependencyFilterListId", "DependentFilterListId")
@@ -44,12 +44,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
+                        .HasColumnType("bigint")
                         .HasColumnName("id");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
                     b.Property<string>("ChatUrl")
                         .HasColumnType("text")
@@ -83,10 +83,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         .HasColumnType("text")
                         .HasColumnName("issues_url");
 
-                    b.Property<int>("LicenseId")
+                    b.Property<long>("LicenseId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasDefaultValue(5)
+                        .HasColumnType("bigint")
+                        .HasDefaultValue(5L)
                         .HasColumnName("license_id");
 
                     b.Property<string>("Name")
@@ -121,31 +121,31 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListLanguage", b =>
                 {
-                    b.Property<int>("FilterListId")
-                        .HasColumnType("integer")
+                    b.Property<long>("FilterListId")
+                        .HasColumnType("bigint")
                         .HasColumnName("filter_list_id");
 
-                    b.Property<string>("Iso6391")
-                        .HasColumnType("character(2)")
-                        .HasColumnName("iso6391");
+                    b.Property<long>("LanguageId")
+                        .HasColumnType("bigint")
+                        .HasColumnName("language_id");
 
-                    b.HasKey("FilterListId", "Iso6391")
+                    b.HasKey("FilterListId", "LanguageId")
                         .HasName("pk_filter_list_languages");
 
-                    b.HasIndex("Iso6391")
-                        .HasDatabaseName("ix_filter_list_languages_iso6391");
+                    b.HasIndex("LanguageId")
+                        .HasDatabaseName("ix_filter_list_languages_language_id");
 
                     b.ToTable("filter_list_languages", (string)null);
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListMaintainer", b =>
                 {
-                    b.Property<int>("FilterListId")
-                        .HasColumnType("integer")
+                    b.Property<long>("FilterListId")
+                        .HasColumnType("bigint")
                         .HasColumnName("filter_list_id");
 
-                    b.Property<int>("MaintainerId")
-                        .HasColumnType("integer")
+                    b.Property<long>("MaintainerId")
+                        .HasColumnType("bigint")
                         .HasColumnName("maintainer_id");
 
                     b.HasKey("FilterListId", "MaintainerId")
@@ -159,12 +159,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListSyntax", b =>
                 {
-                    b.Property<int>("FilterListId")
-                        .HasColumnType("integer")
+                    b.Property<long>("FilterListId")
+                        .HasColumnType("bigint")
                         .HasColumnName("filter_list_id");
 
-                    b.Property<int>("SyntaxId")
-                        .HasColumnType("integer")
+                    b.Property<long>("SyntaxId")
+                        .HasColumnType("bigint")
                         .HasColumnName("syntax_id");
 
                     b.HasKey("FilterListId", "SyntaxId")
@@ -178,12 +178,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListTag", b =>
                 {
-                    b.Property<int>("FilterListId")
-                        .HasColumnType("integer")
+                    b.Property<long>("FilterListId")
+                        .HasColumnType("bigint")
                         .HasColumnName("filter_list_id");
 
-                    b.Property<int>("TagId")
-                        .HasColumnType("integer")
+                    b.Property<long>("TagId")
+                        .HasColumnType("bigint")
                         .HasColumnName("tag_id");
 
                     b.HasKey("FilterListId", "TagId")
@@ -197,15 +197,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListViewUrl", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
+                        .HasColumnType("bigint")
                         .HasColumnName("id");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
-                    b.Property<int>("FilterListId")
-                        .HasColumnType("integer")
+                    b.Property<long>("FilterListId")
+                        .HasColumnType("bigint")
                         .HasColumnName("filter_list_id");
 
                     b.Property<short>("Primariness")
@@ -237,12 +237,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Fork", b =>
                 {
-                    b.Property<int>("UpstreamFilterListId")
-                        .HasColumnType("integer")
+                    b.Property<long>("UpstreamFilterListId")
+                        .HasColumnType("bigint")
                         .HasColumnName("upstream_filter_list_id");
 
-                    b.Property<int>("ForkFilterListId")
-                        .HasColumnType("integer")
+                    b.Property<long>("ForkFilterListId")
+                        .HasColumnType("bigint")
                         .HasColumnName("fork_filter_list_id");
 
                     b.HasKey("UpstreamFilterListId", "ForkFilterListId")
@@ -256,23 +256,35 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Language", b =>
                 {
-                    b.Property<string>("Iso6391")
-                        .HasMaxLength(2)
-                        .HasColumnType("character(2)")
-                        .HasColumnName("iso6391")
-                        .IsFixedLength();
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
                     b.Property<bool>("IsApproved")
                         .HasColumnType("boolean")
                         .HasColumnName("is_approved");
+
+                    b.Property<string>("Iso6391")
+                        .IsRequired()
+                        .HasMaxLength(2)
+                        .HasColumnType("character(2)")
+                        .HasColumnName("iso6391")
+                        .IsFixedLength();
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("name");
 
-                    b.HasKey("Iso6391")
+                    b.HasKey("Id")
                         .HasName("pk_languages");
+
+                    b.HasIndex("Iso6391")
+                        .IsUnique()
+                        .HasDatabaseName("ix_languages_iso6391");
 
                     b.HasIndex("Name")
                         .IsUnique()
@@ -283,12 +295,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.License", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
+                        .HasColumnType("bigint")
                         .HasColumnName("id");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
                     b.Property<bool>("IsApproved")
                         .HasColumnType("boolean")
@@ -333,12 +345,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Maintainer", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
+                        .HasColumnType("bigint")
                         .HasColumnName("id");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
                     b.Property<string>("EmailAddress")
                         .HasColumnType("text")
@@ -373,12 +385,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Merge", b =>
                 {
-                    b.Property<int>("IncludedInFilterListId")
-                        .HasColumnType("integer")
+                    b.Property<long>("IncludedInFilterListId")
+                        .HasColumnType("bigint")
                         .HasColumnName("included_in_filter_list_id");
 
-                    b.Property<int>("IncludesFilterListId")
-                        .HasColumnType("integer")
+                    b.Property<long>("IncludesFilterListId")
+                        .HasColumnType("bigint")
                         .HasColumnName("includes_filter_list_id");
 
                     b.HasKey("IncludedInFilterListId", "IncludesFilterListId")
@@ -392,12 +404,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Software", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
+                        .HasColumnType("bigint")
                         .HasColumnName("id");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
                     b.Property<string>("Description")
                         .HasColumnType("text")
@@ -438,12 +450,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.SoftwareSyntax", b =>
                 {
-                    b.Property<int>("SoftwareId")
-                        .HasColumnType("integer")
+                    b.Property<long>("SoftwareId")
+                        .HasColumnType("bigint")
                         .HasColumnName("software_id");
 
-                    b.Property<int>("SyntaxId")
-                        .HasColumnType("integer")
+                    b.Property<long>("SyntaxId")
+                        .HasColumnType("bigint")
                         .HasColumnName("syntax_id");
 
                     b.HasKey("SoftwareId", "SyntaxId")
@@ -457,12 +469,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Syntax", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
+                        .HasColumnType("bigint")
                         .HasColumnName("id");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
                     b.Property<string>("Description")
                         .HasColumnType("text")
@@ -493,12 +505,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Tag", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
+                        .HasColumnType("bigint")
                         .HasColumnName("id");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
                     b.Property<string>("Description")
                         .HasColumnType("text")
@@ -567,10 +579,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
                     b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Language", "Language")
                         .WithMany("FilterListLanguages")
-                        .HasForeignKey("Iso6391")
+                        .HasForeignKey("LanguageId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("fk_filter_list_languages_languages_iso6391");
+                        .HasConstraintName("fk_filter_list_languages_languages_language_id");
 
                     b.Navigation("FilterList");
 
