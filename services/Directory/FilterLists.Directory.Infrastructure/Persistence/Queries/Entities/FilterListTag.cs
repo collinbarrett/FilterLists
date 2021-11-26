@@ -7,9 +7,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record FilterListTag
 {
-    public int FilterListId { get; init; }
+    public long FilterListId { get; init; }
     public FilterList FilterList { get; init; } = null!;
-    public int TagId { get; init; }
+    public long TagId { get; init; }
     public Tag Tag { get; init; } = null!;
 }
 

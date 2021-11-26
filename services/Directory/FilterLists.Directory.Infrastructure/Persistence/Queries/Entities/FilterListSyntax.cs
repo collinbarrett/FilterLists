@@ -7,9 +7,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record FilterListSyntax
 {
-    public int FilterListId { get; init; }
+    public long FilterListId { get; init; }
     public FilterList FilterList { get; init; } = null!;
-    public int SyntaxId { get; init; }
+    public long SyntaxId { get; init; }
     public Syntax Syntax { get; init; } = null!;
 }
 

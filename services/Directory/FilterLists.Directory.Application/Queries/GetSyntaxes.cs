@@ -49,11 +49,11 @@ public static class GetSyntaxes
 
     public record SyntaxVm
     {
-        public int Id { get; init; }
+        public long Id { get; init; }
         public string Name { get; init; } = null!;
         public string? Description { get; init; }
         public Uri? Url { get; init; }
-        public IEnumerable<int> FilterListIds { get; init; } = new HashSet<int>();
-        public IEnumerable<int> SoftwareIds { get; init; } = new HashSet<int>();
+        public IEnumerable<long> FilterListIds { get; init; } = new HashSet<long>();
+        public IEnumerable<long> SoftwareIds { get; init; } = new HashSet<long>();
     }
 }

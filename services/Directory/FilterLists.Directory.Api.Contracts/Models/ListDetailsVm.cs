@@ -2,13 +2,13 @@
 
 public record ListDetailsVm
 {
-    public int Id { get; init; }
+    public long Id { get; init; }
     public string Name { get; init; } = null!;
     public string? Description { get; init; }
-    public int? LicenseId { get; init; }
-    public IEnumerable<int> SyntaxIds { get; init; } = new HashSet<int>();
-    public IEnumerable<string> Iso6391s { get; init; } = new HashSet<string>();
-    public IEnumerable<int> TagIds { get; init; } = new HashSet<int>();
+    public long? LicenseId { get; init; }
+    public IEnumerable<long> SyntaxIds { get; init; } = new HashSet<long>();
+    public IEnumerable<long> LanguageIds { get; init; } = new HashSet<long>();
+    public IEnumerable<long> TagIds { get; init; } = new HashSet<long>();
     public IEnumerable<ViewUrlVm> ViewUrls { get; init; } = new HashSet<ViewUrlVm>();
     public Uri? HomeUrl { get; init; }
     public Uri? OnionUrl { get; init; }
@@ -19,13 +19,13 @@ public record ListDetailsVm
     public Uri? ChatUrl { get; init; }
     public string? EmailAddress { get; init; }
     public Uri? DonateUrl { get; init; }
-    public IEnumerable<int> MaintainerIds { get; init; } = new HashSet<int>();
-    public IEnumerable<int> UpstreamFilterListIds { get; init; } = new HashSet<int>();
-    public IEnumerable<int> ForkFilterListIds { get; init; } = new HashSet<int>();
-    public IEnumerable<int> IncludedInFilterListIds { get; init; } = new HashSet<int>();
-    public IEnumerable<int> IncludesFilterListIds { get; init; } = new HashSet<int>();
-    public IEnumerable<int> DependencyFilterListIds { get; init; } = new HashSet<int>();
-    public IEnumerable<int> DependentFilterListIds { get; init; } = new HashSet<int>();
+    public IEnumerable<long> MaintainerIds { get; init; } = new HashSet<long>();
+    public IEnumerable<long> UpstreamFilterListIds { get; init; } = new HashSet<long>();
+    public IEnumerable<long> ForkFilterListIds { get; init; } = new HashSet<long>();
+    public IEnumerable<long> IncludedInFilterListIds { get; init; } = new HashSet<long>();
+    public IEnumerable<long> IncludesFilterListIds { get; init; } = new HashSet<long>();
+    public IEnumerable<long> DependencyFilterListIds { get; init; } = new HashSet<long>();
+    public IEnumerable<long> DependentFilterListIds { get; init; } = new HashSet<long>();
 
     public record ViewUrlVm
     {

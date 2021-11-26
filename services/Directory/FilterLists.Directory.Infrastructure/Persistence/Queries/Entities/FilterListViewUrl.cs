@@ -7,8 +7,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record FilterListViewUrl
 {
-    public int Id { get; init; }
-    public int FilterListId { get; init; }
+    public long Id { get; init; }
+    public long FilterListId { get; init; }
     public FilterList FilterList { get; init; } = null!;
     public short SegmentNumber { get; init; }
     public short Primariness { get; init; }

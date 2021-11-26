@@ -42,9 +42,9 @@ public static class GetLists
                 .ForMember(fl => fl.SyntaxIds,
                     o => o.MapFrom(fl =>
                         fl.FilterListSyntaxes.OrderBy(fls => fls.SyntaxId).Select(fls => fls.SyntaxId)))
-                .ForMember(fl => fl.Iso6391s,
+                .ForMember(fl => fl.LanguageIds,
                     o => o.MapFrom(fl =>
-                        fl.FilterListLanguages.OrderBy(fll => fll.Iso6391).Select(fll => fll.Iso6391)))
+                        fl.FilterListLanguages.OrderBy(fll => fll.LanguageId).Select(fll => fll.LanguageId)))
                 .ForMember(fl => fl.TagIds,
                     o => o.MapFrom(fl =>
                         fl.FilterListTags.OrderBy(flt => flt.TagId).Select(flt => flt.TagId)))

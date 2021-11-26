@@ -102,7 +102,7 @@ internal sealed class GitListArchiveRepository : IListArchiveRepository
         _repo.CheckoutPaths("HEAD", _writtenFiles.Select(f => f.Name));
     }
 
-    private FileInfo? GetTargetFile(int listId, int segmentNumber, ListFileExtension extension)
+    private FileInfo? GetTargetFile(long listId, int segmentNumber, ListFileExtension extension)
     {
         string targetExtension;
         if (extension.IsPlainText)
@@ -121,7 +121,7 @@ internal sealed class GitListArchiveRepository : IListArchiveRepository
         return new FileInfo(Path.Combine(_options.RepositoryPath, targetFileName));
     }
 
-    private static string GetTargetFileNamePrefix(int listId)
+    private static string GetTargetFileNamePrefix(long listId)
     {
         return listId.ToString(CultureInfo.InvariantCulture).PadLeft(5, '0');
     }

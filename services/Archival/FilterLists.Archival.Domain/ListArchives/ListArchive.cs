@@ -1,3 +1,3 @@
 ﻿namespace FilterLists.Archival.Domain.ListArchives;
 
-public record ListArchive(int Id, IAsyncEnumerable<ListArchiveSegment> Segments);
+public record ListArchive(long Id, IAsyncEnumerable<ListArchiveSegment> Segments);

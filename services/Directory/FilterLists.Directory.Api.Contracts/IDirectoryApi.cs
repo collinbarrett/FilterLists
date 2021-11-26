@@ -9,5 +9,5 @@ public interface IDirectoryApi
     Task<IEnumerable<ListVm>> GetListsAsync(CancellationToken cancellationToken);
 
     [Get("/lists/{id}")]
-    Task<ListDetailsVm> GetListDetailsAsync(int id, CancellationToken cancellationToken);
+    Task<ListDetailsVm> GetListDetailsAsync(long id, CancellationToken cancellationToken);
 }

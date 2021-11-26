@@ -7,9 +7,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record FilterListLanguage
 {
-    public int FilterListId { get; init; }
+    public long FilterListId { get; init; }
     public FilterList FilterList { get; init; } = null!;
-    public string Iso6391 { get; init; } = null!;
+    public long LanguageId { get; init; }
     public Language Language { get; init; } = null!;
 }
 
@@ -21,11 +21,7 @@ internal class FilterListLanguageTypeConfiguration : IEntityTypeConfiguration<Fi
         var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
 
         builder.ToTable($"{nr.RewriteName(nameof(FilterListLanguage))}s");
-        builder.HasKey(fll => new { fll.FilterListId, fll.Iso6391 });
-        builder.HasOne(fll => fll.Language)
-            .WithMany(l => l.FilterListLanguages)
-            .HasForeignKey(fll => fll.Iso6391)
-            .HasConstraintName("fk_filter_list_languages_languages_iso6391");
+        builder.HasKey(fll => new { fll.FilterListId, fll.LanguageId });
         builder.HasQueryFilter(fll => fll.FilterList.IsApproved && fll.Language.IsApproved);
         builder.HasDataJsonFile<FilterListLanguage>();
     }
