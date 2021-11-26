@@ -1,9 +1,10 @@
 ﻿using FilterLists.Directory.Domain.Aggregates.Changes;
 using FilterLists.Directory.Domain.Aggregates.Licenses;
+using FilterLists.SharedKernel.Domain.SeedWork;
 
 namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
 
-public class FilterList : IRequireChangeApproval<FilterListChange>
+public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
 {
     protected FilterList() { }
 

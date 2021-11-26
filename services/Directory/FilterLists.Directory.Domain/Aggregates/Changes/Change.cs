@@ -1,6 +1,8 @@
-﻿namespace FilterLists.Directory.Domain.Aggregates.Changes;
+﻿using FilterLists.SharedKernel.Domain.SeedWork;
 
-public abstract class Change
+namespace FilterLists.Directory.Domain.Aggregates.Changes;
+
+public abstract class Change : Entity
 {
     public string? Reason { get; protected init; }
     public DateTime SubmittedAt { get; protected init; } = DateTime.UtcNow;
