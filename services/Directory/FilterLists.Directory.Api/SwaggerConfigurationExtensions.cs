@@ -26,6 +26,9 @@ internal static class SwaggerConfigurationExtensions
                     }
                 });
 
+            // Swagger UI struggles with lookups of nested types represented by concatenated '+'
+            o.CustomSchemaIds(t => t.FullName?.Replace("+", "."));
+
             var apiXmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
             o.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, apiXmlFile));
 

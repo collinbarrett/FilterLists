@@ -9,11 +9,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Application.Queries;
 
-public static class GetChanges
+public static class GetChange
 {
-    public record Query : IRequest<List<ChangeVm>>;
+    public record Query(long Id) : IRequest<ChangeVm?>;
 
-    internal class Handler : IRequestHandler<Query, List<ChangeVm>>
+    internal class Handler : IRequestHandler<Query, ChangeVm?>
     {
         private readonly IQueryContext _context;
         private readonly IMapper _mapper;
@@ -24,13 +24,12 @@ public static class GetChanges
             _mapper = mapper;
         }
 
-        public Task<List<ChangeVm>> Handle(Query request, CancellationToken cancellationToken)
+        public Task<ChangeVm?> Handle(Query request, CancellationToken cancellationToken)
         {
             return _context.Changes
-                .Where(c => c.ApprovedAt == null && c.RejectedAt == null)
-                .OrderBy(c => c.SubmittedAt)
+                .Where(c => c.Id == request.Id)
                 .ProjectTo<ChangeVm>(_mapper.ConfigurationProvider)
-                .ToListAsync(cancellationToken);
+                .SingleOrDefaultAsync(cancellationToken);
         }
     }
 
