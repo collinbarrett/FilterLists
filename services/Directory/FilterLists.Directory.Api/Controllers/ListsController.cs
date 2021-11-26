@@ -28,6 +28,8 @@ public class ListsController : BaseController
         return CacheGetOrCreateAsync(() => _mediator.Send(new GetLists.Query(), cancellationToken));
     }
 
+#if DEBUG
+
     /// <summary>
     ///     Creates the FilterList.
     /// </summary>
@@ -43,6 +45,8 @@ public class ListsController : BaseController
             nameof(ChangesController).Replace("Controller", string.Empty),
             new { id = response.ChangeId });
     }
+
+#endif
 
     /// <summary>
     ///     Gets the details of the FilterList.

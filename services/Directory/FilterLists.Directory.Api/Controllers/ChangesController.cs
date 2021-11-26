@@ -1,4 +1,6 @@
-﻿using FilterLists.Directory.Application.Queries;
+﻿#if DEBUG
+
+using FilterLists.Directory.Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
@@ -40,3 +42,5 @@ public class ChangesController : BaseController
         return CacheGetOrCreateAsync(() => _mediator.Send(new GetChange.Query(id), cancellationToken), id);
     }
 }
+
+#endif
