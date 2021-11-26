@@ -13,20 +13,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "languages",
                 columns: table => new
                 {
+                    id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     iso6391 = table.Column<string>(type: "character(2)", fixedLength: true, maxLength: 2, nullable: false),
                     name = table.Column<string>(type: "text", nullable: false),
                     is_approved = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_languages", x => x.iso6391);
+                    table.PrimaryKey("pk_languages", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "licenses",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "integer", nullable: false)
+                    id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
                     url = table.Column<string>(type: "text", nullable: true),
@@ -44,7 +46,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "maintainers",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "integer", nullable: false)
+                    id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
                     url = table.Column<string>(type: "text", nullable: true),
@@ -61,7 +63,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "software",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "integer", nullable: false)
+                    id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
                     description = table.Column<string>(type: "text", nullable: true),
@@ -79,7 +81,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "syntaxes",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "integer", nullable: false)
+                    id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
                     description = table.Column<string>(type: "text", nullable: true),
@@ -95,7 +97,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "tags",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "integer", nullable: false)
+                    id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
                     description = table.Column<string>(type: "text", nullable: true),
@@ -110,11 +112,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "filter_lists",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "integer", nullable: false)
+                    id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
                     description = table.Column<string>(type: "text", nullable: true),
-                    license_id = table.Column<int>(type: "integer", nullable: false, defaultValue: 5),
+                    license_id = table.Column<long>(type: "bigint", nullable: false, defaultValue: 5L),
                     home_url = table.Column<string>(type: "text", nullable: true),
                     onion_url = table.Column<string>(type: "text", nullable: true),
                     policy_url = table.Column<string>(type: "text", nullable: true),
@@ -141,8 +143,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "software_syntaxes",
                 columns: table => new
                 {
-                    software_id = table.Column<int>(type: "integer", nullable: false),
-                    syntax_id = table.Column<int>(type: "integer", nullable: false)
+                    software_id = table.Column<long>(type: "bigint", nullable: false),
+                    syntax_id = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -165,8 +167,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "dependents",
                 columns: table => new
                 {
-                    dependency_filter_list_id = table.Column<int>(type: "integer", nullable: false),
-                    dependent_filter_list_id = table.Column<int>(type: "integer", nullable: false)
+                    dependency_filter_list_id = table.Column<long>(type: "bigint", nullable: false),
+                    dependent_filter_list_id = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -189,12 +191,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "filter_list_languages",
                 columns: table => new
                 {
-                    filter_list_id = table.Column<int>(type: "integer", nullable: false),
-                    iso6391 = table.Column<string>(type: "character(2)", nullable: false)
+                    filter_list_id = table.Column<long>(type: "bigint", nullable: false),
+                    language_id = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_filter_list_languages", x => new { x.filter_list_id, x.iso6391 });
+                    table.PrimaryKey("pk_filter_list_languages", x => new { x.filter_list_id, x.language_id });
                     table.ForeignKey(
                         name: "fk_filter_list_languages_filter_lists_filter_list_id",
                         column: x => x.filter_list_id,
@@ -202,10 +204,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "fk_filter_list_languages_languages_iso6391",
-                        column: x => x.iso6391,
+                        name: "fk_filter_list_languages_languages_language_id",
+                        column: x => x.language_id,
                         principalTable: "languages",
-                        principalColumn: "iso6391",
+                        principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -213,8 +215,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "filter_list_maintainers",
                 columns: table => new
                 {
-                    filter_list_id = table.Column<int>(type: "integer", nullable: false),
-                    maintainer_id = table.Column<int>(type: "integer", nullable: false)
+                    filter_list_id = table.Column<long>(type: "bigint", nullable: false),
+                    maintainer_id = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -237,8 +239,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "filter_list_syntaxes",
                 columns: table => new
                 {
-                    filter_list_id = table.Column<int>(type: "integer", nullable: false),
-                    syntax_id = table.Column<int>(type: "integer", nullable: false)
+                    filter_list_id = table.Column<long>(type: "bigint", nullable: false),
+                    syntax_id = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -261,8 +263,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "filter_list_tags",
                 columns: table => new
                 {
-                    filter_list_id = table.Column<int>(type: "integer", nullable: false),
-                    tag_id = table.Column<int>(type: "integer", nullable: false)
+                    filter_list_id = table.Column<long>(type: "bigint", nullable: false),
+                    tag_id = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -285,9 +287,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "filter_list_view_urls",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "integer", nullable: false)
+                    id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    filter_list_id = table.Column<int>(type: "integer", nullable: false),
+                    filter_list_id = table.Column<long>(type: "bigint", nullable: false),
                     segment_number = table.Column<short>(type: "smallint", nullable: false, defaultValue: (short)1),
                     primariness = table.Column<short>(type: "smallint", nullable: false, defaultValue: (short)1),
                     url = table.Column<string>(type: "text", nullable: false)
@@ -307,8 +309,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "forks",
                 columns: table => new
                 {
-                    upstream_filter_list_id = table.Column<int>(type: "integer", nullable: false),
-                    fork_filter_list_id = table.Column<int>(type: "integer", nullable: false)
+                    upstream_filter_list_id = table.Column<long>(type: "bigint", nullable: false),
+                    fork_filter_list_id = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -331,8 +333,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "merges",
                 columns: table => new
                 {
-                    included_in_filter_list_id = table.Column<int>(type: "integer", nullable: false),
-                    includes_filter_list_id = table.Column<int>(type: "integer", nullable: false)
+                    included_in_filter_list_id = table.Column<long>(type: "bigint", nullable: false),
+                    includes_filter_list_id = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -357,9 +359,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 column: "dependent_filter_list_id");
 
             migrationBuilder.CreateIndex(
-                name: "ix_filter_list_languages_iso6391",
+                name: "ix_filter_list_languages_language_id",
                 table: "filter_list_languages",
-                column: "iso6391");
+                column: "language_id");
 
             migrationBuilder.CreateIndex(
                 name: "ix_filter_list_maintainers_maintainer_id",
@@ -397,6 +399,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "ix_forks_fork_filter_list_id",
                 table: "forks",
                 column: "fork_filter_list_id");
+
+            migrationBuilder.CreateIndex(
+                name: "ix_languages_iso6391",
+                table: "languages",
+                column: "iso6391",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "ix_languages_name",
