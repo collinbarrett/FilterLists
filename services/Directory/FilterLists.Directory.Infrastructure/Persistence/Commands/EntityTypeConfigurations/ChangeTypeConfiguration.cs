@@ -17,6 +17,6 @@ internal class ChangeTypeConfiguration : IEntityTypeConfiguration<Change>
         builder.ToTable($"{nr.RewriteName(nameof(Change))}s");
         builder.HasDiscriminator<AggregateType>(nr.RewriteName(nameof(Queries.Entities.Change.AggregateType)))
             .HasValue<FilterListChange>(AggregateType.FilterList);
-        builder.Property<int>(nameof(Queries.Entities.Change.Id));
+        builder.Property<long>(nameof(Queries.Entities.Change.Id));
     }
 }
