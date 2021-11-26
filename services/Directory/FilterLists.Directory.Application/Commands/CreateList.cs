@@ -31,7 +31,7 @@ public static class CreateList
         public Validator()
         {
             RuleFor(c => c.LicenseId)
-                .GreaterThanOrEqualTo(0)
+                .GreaterThan(0)
                 .When(c => c.LicenseId != null);
         }
     }
