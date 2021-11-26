@@ -20,10 +20,9 @@ public class ChangesController : BaseController
     /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>The changes.</returns>
     [HttpGet]
-    //[ProducesResponseType(typeof(IEnumerable<GetChanges.ChangesVm>), StatusCodes.Status200OK)]
-    public async Task<IActionResult> Get(CancellationToken cancellationToken)
+    [ProducesResponseType(typeof(List<GetChanges.ChangesVm>), StatusCodes.Status200OK)]
+    public Task<IActionResult> Get(CancellationToken cancellationToken)
     {
-        return Ok(await _mediator.Send(new GetChanges.Query(), cancellationToken));
-        //return CacheGetOrCreateAsync(() => _mediator.Send(new GetChanges.Query(), cancellationToken));
+        return CacheGetOrCreateAsync(() => _mediator.Send(new GetChanges.Query(), cancellationToken));
     }
 }
