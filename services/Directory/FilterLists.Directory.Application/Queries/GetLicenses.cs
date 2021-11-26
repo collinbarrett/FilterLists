@@ -44,12 +44,12 @@ public static class GetLicenses
 
     public record LicenseVm
     {
-        public int Id { get; init; }
+        public long Id { get; init; }
         public string Name { get; init; } = null!;
         public Uri? Url { get; init; }
         public bool PermitsModification { get; init; }
         public bool PermitsDistribution { get; init; }
         public bool PermitsCommercialUse { get; init; }
-        public IEnumerable<int> FilterListIds { get; init; } = new HashSet<int>();
+        public IEnumerable<long> FilterListIds { get; init; } = new HashSet<long>();
     }
 }

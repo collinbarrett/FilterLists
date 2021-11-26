@@ -5,7 +5,6 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record License : AggregateRoot
 {
-    public int Id { get; init; }
     public string Name { get; init; } = null!;
     public Uri? Url { get; init; }
     public bool PermitsModification { get; init; }

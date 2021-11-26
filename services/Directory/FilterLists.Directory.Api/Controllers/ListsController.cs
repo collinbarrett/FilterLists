@@ -33,10 +33,10 @@ public class ListsController : BaseController
     /// <param name="id">The identifier of the FilterList.</param>
     /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>The details of the FilterList.</returns>
-    [HttpGet("{id:int}")]
+    [HttpGet("{id:long}")]
     [ProducesResponseType(typeof(ListDetailsVm), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public Task<IActionResult> GetDetails(int id, CancellationToken cancellationToken)
+    public Task<IActionResult> GetDetails(long id, CancellationToken cancellationToken)
     {
         return CacheGetOrCreateAsync(() => _mediator.Send(new GetListDetails.Query(id), cancellationToken), id);
     }

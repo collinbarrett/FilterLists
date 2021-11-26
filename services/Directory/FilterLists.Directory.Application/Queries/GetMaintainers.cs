@@ -46,11 +46,11 @@ public static class GetMaintainers
 
     public record MaintainerVm
     {
-        public int Id { get; init; }
+        public long Id { get; init; }
         public string Name { get; init; } = null!;
         public Uri? Url { get; init; }
         public string? EmailAddress { get; init; }
         public string? TwitterHandle { get; init; }
-        public IEnumerable<int> FilterListIds { get; init; } = new HashSet<int>();
+        public IEnumerable<long> FilterListIds { get; init; } = new HashSet<long>();
     }
 }

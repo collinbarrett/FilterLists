@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public abstract record AggregateRoot
+public abstract record AggregateRoot : Entity
 {
     // TODO: change 'set' to 'init' when no longer seeding from json
     public bool IsApproved { get; set; }

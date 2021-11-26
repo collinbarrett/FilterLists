@@ -7,9 +7,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record Fork
 {
-    public int UpstreamFilterListId { get; init; }
+    public long UpstreamFilterListId { get; init; }
     public FilterList UpstreamFilterList { get; init; } = null!;
-    public int ForkFilterListId { get; init; }
+    public long ForkFilterListId { get; init; }
     public FilterList ForkFilterList { get; init; } = null!;
 }
 

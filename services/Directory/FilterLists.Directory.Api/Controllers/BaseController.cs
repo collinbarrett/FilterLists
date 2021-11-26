@@ -19,7 +19,7 @@ public abstract class BaseController : ControllerBase
     /// <remarks>https://stackoverflow.com/a/52506210/2343739</remarks>
     protected async Task<IActionResult> CacheGetOrCreateAsync<TResponse>(
         Func<Task<TResponse>> actionAsync,
-        int? keySuffix = default,
+        long? keySuffix = default,
         TimeSpan? absoluteExpirationRelativeToNow = default,
         [CallerMemberName] string key = default!)
     {

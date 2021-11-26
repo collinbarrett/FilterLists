@@ -45,12 +45,12 @@ public static class GetSoftware
 
     public record SoftwareVm
     {
-        public int Id { get; init; }
+        public long Id { get; init; }
         public string Name { get; init; } = null!;
         public string? Description { get; init; }
         public Uri? HomeUrl { get; init; }
         public Uri? DownloadUrl { get; init; }
         public bool SupportsAbpUrlScheme { get; init; }
-        public IEnumerable<int> SyntaxIds { get; init; } = new HashSet<int>();
+        public IEnumerable<long> SyntaxIds { get; init; } = new HashSet<long>();
     }
 }

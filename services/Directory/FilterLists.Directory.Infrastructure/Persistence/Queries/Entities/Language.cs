@@ -14,10 +14,11 @@ internal class LanguageTypeConfiguration : AggregateRootTypeConfiguration<Langua
 {
     public override void Configure(EntityTypeBuilder<Language> builder)
     {
-        builder.HasKey(l => l.Iso6391);
         builder.Property(l => l.Iso6391)
             .IsFixedLength()
             .HasMaxLength(2);
+        builder.HasIndex(l => l.Iso6391)
+            .IsUnique();
         builder.HasIndex(l => l.Name)
             .IsUnique();
         builder.HasDataJsonFileAggregate<Language>();

@@ -10,7 +10,7 @@ namespace FilterLists.Archival.Application.Commands;
 
 public static class ArchiveList
 {
-    public record Command(int ListId) : IRequest;
+    public record Command(long ListId) : IRequest;
 
     internal class Handler : IRequestHandler<Command, Unit>
     {
@@ -56,7 +56,7 @@ public static class ArchiveList
         }
 
         private async Task<IEnumerable<ListDetailsVm.ViewUrlVm>> GetSegmentUrlsAsync(
-            int listId,
+            long listId,
             CancellationToken cancellationToken)
         {
             var listDetails = await _directory.GetListDetailsAsync(listId, cancellationToken);
@@ -66,7 +66,7 @@ public static class ArchiveList
         }
 
         private ListArchive GetList(
-            int listId,
+            long listId,
             IEnumerable<ListDetailsVm.ViewUrlVm> segmentUrls,
             CancellationToken cancellationToken)
         {
