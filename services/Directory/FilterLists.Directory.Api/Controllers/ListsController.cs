@@ -34,10 +34,14 @@ public class ListsController : BaseController
     /// <param name="command">The command.</param>
     /// <param name="cancellationToken">The cancellation token.</param>
     [HttpPost]
-    [ProducesResponseType(typeof(CreateList.Response), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(CreateList.Response), StatusCodes.Status202Accepted)]
     public async Task<IActionResult> Create(CreateList.Command command, CancellationToken cancellationToken)
     {
-        return Ok(await _mediator.Send(command, cancellationToken));
+        var response = await _mediator.Send(command, cancellationToken);
+        return AcceptedAtAction(
+            nameof(ChangesController.GetDetails),
+            nameof(ChangesController).Replace("Controller", string.Empty),
+            new { id = response.ChangeId });
     }
 
     /// <summary>

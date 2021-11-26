@@ -76,9 +76,9 @@ public static class CreateList
 
             await _commandContext.SaveChangesAsync(cancellationToken);
 
-            return new Response();
+            return new Response(filterList.Changes.Single().Id);
         }
     }
 
-    public record Response { }
+    public record Response(long ChangeId) { }
 }
