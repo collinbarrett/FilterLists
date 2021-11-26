@@ -26,5 +26,10 @@ app.UseExceptionHandler(app.Environment.IsDevelopment() ? "/error-local-developm
 app.UseProblemDetails();
 app.UseSwagger();
 app.MapControllers();
+app.Use(async (context, next) =>
+{
+    context.Request.PathBase = "/api/directory";
+    await next.Invoke();
+});
 
 await app.TryRunWithLoggingAsync(() => app.MigrateAsync());
