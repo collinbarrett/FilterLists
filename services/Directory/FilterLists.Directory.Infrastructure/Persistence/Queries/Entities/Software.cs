@@ -5,7 +5,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record Software : AggregateRoot
 {
-    public string Name { get; init; } = null!;
+    public string Name { get; init; } = default!;
     public string? Description { get; init; }
     public Uri? HomeUrl { get; init; }
     public Uri? DownloadUrl { get; init; }

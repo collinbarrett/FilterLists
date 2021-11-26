@@ -4,7 +4,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record Maintainer : AggregateRoot
 {
-    public string Name { get; init; } = null!;
+    public string Name { get; init; } = default!;
     public Uri? Url { get; init; }
     public string? EmailAddress { get; init; }
     public string? TwitterHandle { get; init; }

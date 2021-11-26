@@ -4,5 +4,5 @@ internal record ApplicationInsightsOptions
 {
     public const string Key = "ApplicationInsights";
 
-    public string ServerTelemetryChannelStoragePath { get; init; } = null!;
+    public string ServerTelemetryChannelStoragePath { get; init; } = default!;
 }

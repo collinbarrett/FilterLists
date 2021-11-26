@@ -6,7 +6,7 @@ public class License : Entity
 {
     protected License() { }
 
-    public string Name { get; private init; } = null!;
+    public string Name { get; private init; } = default!;
     public Uri? Url { get; private init; }
     public bool PermitsModification { get; private init; }
     public bool PermitsDistribution { get; private init; }

@@ -4,7 +4,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record Tag : AggregateRoot
 {
-    public string Name { get; init; } = null!;
+    public string Name { get; init; } = default!;
     public string? Description { get; init; }
     public IEnumerable<FilterListTag> FilterListTags { get; init; } = new HashSet<FilterListTag>();
     public IEnumerable<Change> Changes { get; init; } = new HashSet<Change>();

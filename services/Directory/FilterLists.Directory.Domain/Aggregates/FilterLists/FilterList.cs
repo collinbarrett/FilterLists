@@ -8,9 +8,9 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
 {
     protected FilterList() { }
 
-    public string Name { get; private init; } = null!;
+    public string Name { get; private init; } = default!;
     public string? Description { get; private init; }
-    public virtual License License { get; private init; } = null!;
+    public virtual License License { get; private init; } = default!;
     public virtual IEnumerable<FilterListViewUrl> ViewUrls { get; private init; } = new HashSet<FilterListViewUrl>();
     public Uri? HomeUrl { get; private init; }
     public Uri? OnionUrl { get; private init; }

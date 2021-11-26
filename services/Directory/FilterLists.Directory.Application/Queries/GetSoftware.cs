@@ -46,7 +46,7 @@ public static class GetSoftware
     public record SoftwareVm
     {
         public long Id { get; init; }
-        public string Name { get; init; } = null!;
+        public string Name { get; init; } = default!;
         public string? Description { get; init; }
         public Uri? HomeUrl { get; init; }
         public Uri? DownloadUrl { get; init; }

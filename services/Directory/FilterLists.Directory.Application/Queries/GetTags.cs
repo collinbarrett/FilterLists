@@ -47,7 +47,7 @@ public static class GetTags
     public record TagVm
     {
         public long Id { get; init; }
-        public string Name { get; init; } = null!;
+        public string Name { get; init; } = default!;
         public string? Description { get; init; }
         public IEnumerable<long> FilterListIds { get; init; } = new HashSet<long>();
     }

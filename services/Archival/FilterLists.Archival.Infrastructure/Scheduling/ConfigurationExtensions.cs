@@ -7,7 +7,7 @@ namespace FilterLists.Archival.Infrastructure.Scheduling;
 
 internal static class ConfigurationExtensions
 {
-    private static ConnectionMultiplexer _redis = null!;
+    private static ConnectionMultiplexer _redis = default!;
 
     public static void AddScheduling(this IServiceCollection services, IConfiguration configuration)
     {

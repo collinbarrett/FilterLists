@@ -3,7 +3,7 @@
 public record ListDetailsVm
 {
     public long Id { get; init; }
-    public string Name { get; init; } = null!;
+    public string Name { get; init; } = default!;
     public string? Description { get; init; }
     public long? LicenseId { get; init; }
     public IEnumerable<long> SyntaxIds { get; init; } = new HashSet<long>();
@@ -31,6 +31,6 @@ public record ListDetailsVm
     {
         public short SegmentNumber { get; init; }
         public short Primariness { get; init; }
-        public Uri Url { get; init; } = null!;
+        public Uri Url { get; init; } = default!;
     }
 }

@@ -50,7 +50,7 @@ public static class GetSyntaxes
     public record SyntaxVm
     {
         public long Id { get; init; }
-        public string Name { get; init; } = null!;
+        public string Name { get; init; } = default!;
         public string? Description { get; init; }
         public Uri? Url { get; init; }
         public IEnumerable<long> FilterListIds { get; init; } = new HashSet<long>();

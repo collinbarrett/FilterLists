@@ -47,7 +47,7 @@ public static class GetMaintainers
     public record MaintainerVm
     {
         public long Id { get; init; }
-        public string Name { get; init; } = null!;
+        public string Name { get; init; } = default!;
         public Uri? Url { get; init; }
         public string? EmailAddress { get; init; }
         public string? TwitterHandle { get; init; }

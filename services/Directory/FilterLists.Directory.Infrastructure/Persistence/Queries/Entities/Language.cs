@@ -5,8 +5,8 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record Language : AggregateRoot
 {
-    public string Iso6391 { get; init; } = null!;
-    public string Name { get; init; } = null!;
+    public string Iso6391 { get; init; } = default!;
+    public string Name { get; init; } = default!;
     public IEnumerable<FilterListLanguage> FilterListLanguages { get; init; } = new HashSet<FilterListLanguage>();
     public IEnumerable<Change> Changes { get; init; } = new HashSet<Change>();
 }
