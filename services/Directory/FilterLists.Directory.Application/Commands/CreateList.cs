@@ -12,7 +12,7 @@ public static class CreateList
     public record Command(string Name,
         IEnumerable<FilterListViewUrl> ViewUrls,
         string? Description = default,
-        int? LicenseId = default,
+        long? LicenseId = default,
         Uri? HomeUrl = default,
         Uri? OnionUrl = default,
         Uri? PolicyUrl = default,

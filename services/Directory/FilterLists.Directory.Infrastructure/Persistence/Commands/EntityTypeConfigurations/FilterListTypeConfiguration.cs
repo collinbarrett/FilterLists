@@ -9,7 +9,7 @@ internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList
 {
     public virtual void Configure(EntityTypeBuilder<FilterList> builder)
     {
-        builder.Property<int>(nameof(Queries.Entities.FilterList.Id));
+        builder.Property<long>(nameof(Queries.Entities.FilterList.Id));
         builder.HasMany(c => c.Changes)
             .WithOne()
             .HasForeignKey(nameof(Change.FilterListId));

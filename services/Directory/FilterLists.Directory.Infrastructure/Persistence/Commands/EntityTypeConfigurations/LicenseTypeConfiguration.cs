@@ -8,6 +8,6 @@ internal class LicenseTypeConfiguration : IEntityTypeConfiguration<License>
 {
     public virtual void Configure(EntityTypeBuilder<License> builder)
     {
-        builder.Property<int>(nameof(Queries.Entities.License.Id));
+        builder.Property<long>(nameof(Queries.Entities.License.Id));
     }
 }

@@ -9,7 +9,7 @@ internal class FilterListChangeTypeConfiguration : IEntityTypeConfiguration<Filt
 {
     public virtual void Configure(EntityTypeBuilder<FilterListChange> builder)
     {
-        builder.Property<int>(nameof(Change.FilterListId));
+        builder.Property<long>(nameof(Change.FilterListId));
         builder.Property(c => c.Before)
             .HasColumnType("jsonb");
         builder.Property(c => c.After)
