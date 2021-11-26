@@ -1,7 +1,9 @@
-﻿namespace FilterLists.Directory.Domain.Aggregates.Changes;
+﻿using FilterLists.SharedKernel.Domain.SeedWork;
 
-public interface IChangeAggregate<out TAggregateRecord>
+namespace FilterLists.Directory.Domain.Aggregates.Changes;
+
+public interface IChangeAggregate<out TAggregateValueObject> where TAggregateValueObject : ValueObject
 {
-    TAggregateRecord? Before { get; }
-    TAggregateRecord? After { get; }
+    TAggregateValueObject? Before { get; }
+    TAggregateValueObject? After { get; }
 }
