@@ -19,5 +19,10 @@ app.UseApplication();
 app.UseExceptionHandler(app.Environment.IsDevelopment() ? "/error-local-development" : "/error");
 app.UseSwagger();
 app.MapControllers();
+app.Use(async (context, next) =>
+{
+    context.Request.PathBase = "/api/archival";
+    await next.Invoke();
+});
 
 await app.TryRunWithLoggingAsync();

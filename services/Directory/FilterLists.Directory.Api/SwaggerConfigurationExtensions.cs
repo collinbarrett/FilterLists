@@ -11,7 +11,8 @@ internal static class SwaggerConfigurationExtensions
         {
             o.SupportNonNullableReferenceTypes();
 
-            o.SwaggerDoc("v1",
+            o.SwaggerDoc(
+                "v1",
                 new OpenApiInfo
                 {
                     Title = "FilterLists Directory API",

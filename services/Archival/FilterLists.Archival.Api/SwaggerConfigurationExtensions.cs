@@ -11,23 +11,30 @@ internal static class SwaggerConfigurationExtensions
         {
             o.SupportNonNullableReferenceTypes();
 
-            o.SwaggerDoc("v1", new OpenApiInfo
-            {
-                Title = "FilterLists Archival API",
-                Description =
-                    "An ASP.NET Core API archiving and serving copies of FilterLists for mirrors and analysis.",
-                Version = "v1",
-                //TermsOfService = "",
-                Contact = new OpenApiContact { Name = "FilterLists", Url = new Uri("https://filterlists.com") },
-                License = new OpenApiLicense
+            o.SwaggerDoc(
+                "v1",
+                new OpenApiInfo
                 {
-                    Name = "MIT License",
-                    Url = new Uri("https://github.com/collinbarrett/FilterLists/blob/master/LICENSE")
-                }
-            });
+                    Title = "FilterLists Archival API",
+                    Description = "An ASP.NET Core API archiving and serving copies of FilterLists for mirrors and analysis.",
+                    Version = "v1",
+                    //TermsOfService = "",
+                    Contact = new OpenApiContact { Name = "FilterLists", Url = new Uri("https://filterlists.com") },
+                    License = new OpenApiLicense
+                    {
+                        Name = "MIT License",
+                        Url = new Uri("https://github.com/collinbarrett/FilterLists/blob/master/LICENSE")
+                    }
+                });
 
-            var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-            o.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFile));
+            // Swagger UI struggles with lookups of nested types represented by concatenated '+'
+            o.CustomSchemaIds(t => t.FullName?.Replace("+", "."));
+
+            var apiXmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+            o.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, apiXmlFile));
+
+            var applicationXmlFile = $"{typeof(Application.ConfigurationExtensions).Assembly.GetName().Name}.xml";
+            o.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, applicationXmlFile));
         });
     }
 
