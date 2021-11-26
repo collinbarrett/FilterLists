@@ -22,7 +22,7 @@ import { Software } from "../../interfaces/Software";
 import { Syntax } from "../../interfaces/Syntax";
 import { TagCloud } from "../tagCloud";
 import { Tag as TagInterface } from "../../interfaces/Tag";
-import { arraySorter, languageArraySorter } from "./arraySorter";
+import { arraySorter } from "./arraySorter";
 import { nameof } from "../../utils";
 import { TablePaginationConfig } from "antd/lib/table";
 import { SyntaxTag } from "../SyntaxTag";
@@ -225,9 +225,9 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         <Table.Column<List>
           title="Languages"
           key="Languages"
-          dataIndex={nameof<List>("iso6391s")}
+          dataIndex={nameof<List>("languageIds")}
           sorter={(a, b) =>
-            languageArraySorter(a.iso6391s, b.iso6391s, languages)
+            arraySorter(a.languageIds, b.languageIds, languages)
           }
           width={129}
           filters={languages.map((l) => ({
@@ -237,22 +237,24 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 {l.name}&nbsp; (
                 {
                   visibleLists.filter(
-                    (li) => li.iso6391s && li.iso6391s.includes(l.iso6391)
+                    (li) => li.languageIds && li.languageIds.includes(l.id)
                   ).length
                 }
                 )
               </>
             ),
-            value: l.iso6391.toString(),
+            value: l.id,
           }))}
           onFilter={(value, record) =>
-            record.iso6391s ? record.iso6391s.includes(value as string) : false
+            record.languageIds
+              ? record.languageIds.includes(value as number)
+              : false
           }
-          render={(languageIds: string[]) =>
+          render={(languageIds: number[]) =>
             languageIds ? (
               <LanguageCloud
                 languages={languages.filter((l: Language) =>
-                  languageIds.includes(l.iso6391)
+                  languageIds.includes(l.id)
                 )}
               />
             ) : null

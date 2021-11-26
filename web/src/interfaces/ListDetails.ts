@@ -4,7 +4,7 @@
   description?: string;
   licenseId?: number;
   syntaxIds: number[];
-  iso6391s: string[];
+  languageIds: number[];
   tagIds: number[];
   viewUrls: ViewUrl[];
   homeUrl?: string;
