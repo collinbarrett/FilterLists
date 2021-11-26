@@ -47,8 +47,8 @@ public static class GetLanguages
     public record LanguageVm
     {
         public long Id { get; init; }
-        public string Iso6391 { get; init; } = null!;
-        public string Name { get; init; } = null!;
+        public string Iso6391 { get; init; } = default!;
+        public string Name { get; init; } = default!;
         public IEnumerable<long> FilterListIds { get; init; } = new HashSet<long>();
     }
 }

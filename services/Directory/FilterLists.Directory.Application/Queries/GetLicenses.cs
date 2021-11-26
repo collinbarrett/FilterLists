@@ -45,7 +45,7 @@ public static class GetLicenses
     public record LicenseVm
     {
         public long Id { get; init; }
-        public string Name { get; init; } = null!;
+        public string Name { get; init; } = default!;
         public Uri? Url { get; init; }
         public bool PermitsModification { get; init; }
         public bool PermitsDistribution { get; init; }

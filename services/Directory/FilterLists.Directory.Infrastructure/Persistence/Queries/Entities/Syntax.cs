@@ -4,7 +4,7 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record Syntax : AggregateRoot
 {
-    public string Name { get; init; } = null!;
+    public string Name { get; init; } = default!;
     public string? Description { get; init; }
     public Uri? Url { get; init; }
     public IEnumerable<FilterListSyntax> FilterListSyntaxes { get; init; } = new HashSet<FilterListSyntax>();

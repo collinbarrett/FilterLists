@@ -8,9 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 public record FilterListMaintainer
 {
     public long FilterListId { get; init; }
-    public FilterList FilterList { get; init; } = null!;
+    public FilterList FilterList { get; init; } = default!;
     public long MaintainerId { get; init; }
-    public Maintainer Maintainer { get; init; } = null!;
+    public Maintainer Maintainer { get; init; } = default!;
 }
 
 internal class FilterListMaintainerTypeConfiguration : IEntityTypeConfiguration<FilterListMaintainer>

@@ -4,5 +4,5 @@ internal record ApiOptions
 {
     public const string Key = "Api";
 
-    public string DirectoryHost { get; init; } = null!;
+    public string DirectoryHost { get; init; } = default!;
 }

@@ -8,9 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 public record Fork
 {
     public long UpstreamFilterListId { get; init; }
-    public FilterList UpstreamFilterList { get; init; } = null!;
+    public FilterList UpstreamFilterList { get; init; } = default!;
     public long ForkFilterListId { get; init; }
-    public FilterList ForkFilterList { get; init; } = null!;
+    public FilterList ForkFilterList { get; init; } = default!;
 }
 
 internal class ForkTypeConfiguration : IEntityTypeConfiguration<Fork>

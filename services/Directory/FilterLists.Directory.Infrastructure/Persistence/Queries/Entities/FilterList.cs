@@ -5,10 +5,10 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record FilterList : AggregateRoot
 {
-    public string Name { get; init; } = null!;
+    public string Name { get; init; } = default!;
     public string? Description { get; init; }
     public long LicenseId { get; init; }
-    public License License { get; init; } = null!;
+    public License License { get; init; } = default!;
     public IEnumerable<FilterListSyntax> FilterListSyntaxes { get; init; } = new HashSet<FilterListSyntax>();
     public IEnumerable<FilterListLanguage> FilterListLanguages { get; init; } = new HashSet<FilterListLanguage>();
     public IEnumerable<FilterListTag> FilterListTags { get; init; } = new HashSet<FilterListTag>();

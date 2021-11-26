@@ -8,9 +8,9 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 public record Dependent
 {
     public long DependencyFilterListId { get; init; }
-    public FilterList DependencyFilterList { get; init; } = null!;
+    public FilterList DependencyFilterList { get; init; } = default!;
     public long DependentFilterListId { get; init; }
-    public FilterList DependentFilterList { get; init; } = null!;
+    public FilterList DependentFilterList { get; init; } = default!;
 }
 
 internal class DependentTypeConfiguration : IEntityTypeConfiguration<Dependent>
