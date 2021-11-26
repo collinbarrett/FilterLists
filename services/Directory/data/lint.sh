@@ -7,7 +7,7 @@ mv Dependent.tmp Dependent.json
 jq -S ".|=sort_by(.id)" FilterList.json > FilterList.tmp
 mv FilterList.tmp FilterList.json
 
-jq -S ".|=sort_by(.filterListId, .iso6391)" FilterListLanguage.json > FilterListLanguage.tmp
+jq -S ".|=sort_by(.filterListId, .languageId)" FilterListLanguage.json > FilterListLanguage.tmp
 mv FilterListLanguage.tmp FilterListLanguage.json
 
 jq -S ".|=sort_by(.filterListId, .maintainerId)" FilterListMaintainer.json > FilterListMaintainer.tmp
