@@ -1,6 +1,8 @@
-﻿namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
+﻿using FilterLists.SharedKernel.Domain.SeedWork;
 
-public class FilterListViewUrl
+namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
+
+public class FilterListViewUrl : Entity
 {
     protected FilterListViewUrl() { }
 

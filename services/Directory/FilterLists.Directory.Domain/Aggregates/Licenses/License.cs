@@ -1,6 +1,8 @@
-﻿namespace FilterLists.Directory.Domain.Aggregates.Licenses;
+﻿using FilterLists.SharedKernel.Domain.SeedWork;
 
-public class License
+namespace FilterLists.Directory.Domain.Aggregates.Licenses;
+
+public class License : Entity
 {
     protected License() { }
 
