@@ -95,7 +95,7 @@ public static class GetChange
         /// <summary>
         ///     The snapshot of the entity after this change.
         /// </summary>
-        /// <example>{"Name":"EasyList2","ChatUrl":null,"HomeUrl":"https://easylist.to/","ForumUrl":"https://forums.lanik.us/viewforum.php?f=23","OnionUrl":null,"DonateUrl":null,"IssuesUrl":"https://github.com/easylist/easylist/issues","LicenseId":4,"PolicyUrl":null,"ViewUrlIds":[0],"Description":"EasyList is the primary filter list that removes most adverts from international web pages, including unwanted frames, images, and objects. It is the most popular list used by many ad blockers and forms the basis of over a dozen combination and supplementary filter lists.","EmailAddress":"easylist@protonmail.com","SubmissionUrl":null}</example>
+        /// <example>{"Name":"EasyList","ChatUrl":null,"HomeUrl":"https://easylist.to/","ForumUrl":"https://forums.lanik.us/viewforum.php?f=23","OnionUrl":null,"DonateUrl":null,"IssuesUrl":"https://github.com/easylist/easylist/issues","LicenseId":4,"PolicyUrl":null,"ViewUrlIds":[0],"Description":"EasyList is the primary filter list that removes most adverts from international web pages, including unwanted frames, images, and objects. It is the most popular list used by many ad blockers and forms the basis of over a dozen combination and supplementary filter lists.","EmailAddress":"easylist@protonmail.com","SubmissionUrl":null}</example>
         public JsonDocument? After { get; private init; }
 
         /// <summary>
