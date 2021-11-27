@@ -17,11 +17,7 @@ public record ListDetailsVm
     /// <summary>
     ///     The brief description in English (preferably quoted from the project).
     /// </summary>
-    /// <example>
-    ///     EasyList is the primary filter list that removes most adverts from international web pages, including unwanted
-    ///     frames, images, and objects. It is the most popular list used by many ad blockers and forms the basis of over a
-    ///     dozen combination and supplementary filter lists.
-    /// </example>
+    /// <example>EasyList is the primary filter list that removes most adverts from international web pages, including unwanted frames, images, and objects. It is the most popular list used by many ad blockers and forms the basis of over a dozen combination and supplementary filter lists.</example>
     public string? Description { get; init; }
 
     /// <summary>
