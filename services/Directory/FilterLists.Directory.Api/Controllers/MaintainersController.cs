@@ -15,10 +15,10 @@ public class MaintainersController : BaseController
     }
 
     /// <summary>
-    ///     Gets the maintainers of FilterLists.
+    ///     Gets the maintainers of the FilterLists.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>The maintainers of FilterLists.</returns>
+    /// <returns>The maintainers of the FilterLists.</returns>
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<GetMaintainers.MaintainerVm>), StatusCodes.Status200OK)]
     public Task<IActionResult> Get(CancellationToken cancellationToken)

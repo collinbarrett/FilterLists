@@ -15,10 +15,10 @@ public class TagsController : BaseController
     }
 
     /// <summary>
-    ///     Gets the tags of FilterLists.
+    ///     Gets the tags of the FilterLists.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>The tags of FilterLists.</returns>
+    /// <returns>The tags of the FilterLists.</returns>
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<GetTags.TagVm>), StatusCodes.Status200OK)]
     public Task<IActionResult> Get(CancellationToken cancellationToken)

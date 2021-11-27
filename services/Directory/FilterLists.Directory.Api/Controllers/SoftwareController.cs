@@ -15,10 +15,10 @@ public class SoftwareController : BaseController
     }
 
     /// <summary>
-    ///     Gets the software that subscribes to FilterLists.
+    ///     Gets the software that subscribes to the FilterLists.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>The software that subscribes to FilterLists.</returns>
+    /// <returns>The software that subscribes to the FilterLists.</returns>
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<GetSoftware.SoftwareVm>), StatusCodes.Status200OK)]
     public Task<IActionResult> Get(CancellationToken cancellationToken)

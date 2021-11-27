@@ -17,7 +17,7 @@ public class ChangesController : BaseController
     }
 
     /// <summary>
-    ///     Gets the changes.
+    ///     ALPHA: Gets the changes to the FilterLists database pending approval.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>The changes.</returns>
@@ -29,7 +29,7 @@ public class ChangesController : BaseController
     }
 
     /// <summary>
-    ///     Gets the change.
+    ///     ALPHA: Gets the change to the FilterLists database.
     /// </summary>
     /// <param name="id">The identifier of the change.</param>
     /// <param name="cancellationToken">The cancellation token.</param>

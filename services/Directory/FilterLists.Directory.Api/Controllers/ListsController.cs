@@ -31,7 +31,7 @@ public class ListsController : BaseController
 #if DEBUG
 
     /// <summary>
-    ///     Creates the FilterList.
+    ///     ALPHA: Creates the FilterList pending moderator approval.
     /// </summary>
     /// <param name="command">The command.</param>
     /// <param name="cancellationToken">The cancellation token.</param>

@@ -15,10 +15,10 @@ public class LicensesController : BaseController
     }
 
     /// <summary>
-    ///     Gets the licenses applied to FilterLists.
+    ///     Gets the licenses applied to the FilterLists.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>The licenses applied to FilterLists.</returns>
+    /// <returns>The licenses applied to the FilterLists.</returns>
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<GetLicenses.LicenseVm>), StatusCodes.Status200OK)]
     public Task<IActionResult> Get(CancellationToken cancellationToken)

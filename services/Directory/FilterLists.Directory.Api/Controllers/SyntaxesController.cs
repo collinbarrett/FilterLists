@@ -15,10 +15,10 @@ public class SyntaxesController : BaseController
     }
 
     /// <summary>
-    ///     Gets the syntaxes of FilterLists.
+    ///     Gets the syntaxes of the FilterLists.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>The syntaxes of FilterLists.</returns>
+    /// <returns>The syntaxes of the FilterLists.</returns>
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<GetSyntaxes.SyntaxVm>), StatusCodes.Status200OK)]
     public Task<IActionResult> Get(CancellationToken cancellationToken)

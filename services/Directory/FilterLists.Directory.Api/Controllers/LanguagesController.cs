@@ -15,10 +15,10 @@ public class LanguagesController : BaseController
     }
 
     /// <summary>
-    ///     Gets the languages targeted by FilterLists.
+    ///     Gets the languages targeted by the FilterLists.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>The languages targeted by FilterLists.</returns>
+    /// <returns>The languages targeted by the FilterLists.</returns>
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<GetLanguages.LanguageVm>), StatusCodes.Status200OK)]
     public Task<IActionResult> Get(CancellationToken cancellationToken)
