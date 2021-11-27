@@ -39,7 +39,7 @@ public class ChangesController : BaseController
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public Task<IActionResult> GetDetails(long id, CancellationToken cancellationToken)
     {
-        return CacheGetOrCreateAsync(() => _mediator.Send(new GetChange.Query(id), cancellationToken), id);
+        return CacheGetOrCreateAsync(() => _mediator.Send(new GetChange.Query { Id = id }, cancellationToken), id);
     }
 }
 
