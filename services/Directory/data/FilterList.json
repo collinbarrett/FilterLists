@@ -16904,13 +16904,13 @@
     "name": "Dutch Filter List"
   },
   {
-    "description": "Dynamic rules for uBlock Origin for 3p-frame unblocking only",
+    "description": "Medium mode for uBlock Origin when blocking 3p-frames and 3p-scripts",
     "donateUrl": "https://www.paypal.com/donate?hosted_button_id=M4D2NPZX5NS4C",
     "homeUrl": "https://github.com/BPower0036/AdBlockFilters/",
     "id": 2520,
     "issuesUrl": "https://github.com/BPower0036/AdBlockFilters/issues",
     "licenseId": 4,
-    "name": "Dynamic rules (uBo)"
+    "name": "Dynamic rules for uBo's medium mode"
   },
   {
     "description": "Personal filter list (My filters)",
