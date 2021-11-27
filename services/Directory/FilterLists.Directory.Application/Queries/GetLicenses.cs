@@ -44,12 +44,46 @@ public static class GetLicenses
 
     public record LicenseVm
     {
-        public long Id { get; init; }
-        public string Name { get; init; } = default!;
-        public Uri? Url { get; init; }
-        public bool PermitsModification { get; init; }
-        public bool PermitsDistribution { get; init; }
-        public bool PermitsCommercialUse { get; init; }
-        public IEnumerable<long> FilterListIds { get; init; } = new HashSet<long>();
+        /// <summary>
+        ///     The identifier.
+        /// </summary>
+        /// <example>5</example>
+        public long Id { get; private init; }
+
+        /// <summary>
+        ///     The name.
+        /// </summary>
+        /// <example>All Rights Reserved</example>
+        public string Name { get; private init; } = default!;
+
+        /// <summary>
+        ///     The URL of the home page.
+        /// </summary>
+        /// <example>https://en.wikipedia.org/wiki/All_rights_reserved</example>
+        public Uri? Url { get; private init; }
+
+        /// <summary>
+        ///     If the License permits modification.
+        /// </summary>
+        /// <example>false</example>
+        public bool PermitsModification { get; private init; }
+
+        /// <summary>
+        ///     If the License permits distribution.
+        /// </summary>
+        /// <example>false</example>
+        public bool PermitsDistribution { get; private init; }
+
+        /// <summary>
+        ///     If the License permits commercial use.
+        /// </summary>
+        /// <example>false</example>
+        public bool PermitsCommercialUse { get; private init; }
+
+        /// <summary>
+        ///     The identifiers of the FilterLists released under this License.
+        /// </summary>
+        /// <example>[ 6, 31 ]</example>
+        public IEnumerable<long> FilterListIds { get; private init; } = new HashSet<long>();
     }
 }
