@@ -1,4 +1,5 @@
-﻿using FilterLists.Directory.Domain.Aggregates.FilterLists;
+﻿using System.ComponentModel;
+using FilterLists.Directory.Domain.Aggregates.FilterLists;
 using FilterLists.Directory.Domain.Aggregates.Licenses;
 using FilterLists.Directory.Infrastructure.Persistence.Commands.Context;
 using FluentValidation;
@@ -10,22 +11,25 @@ namespace FilterLists.Directory.Application.Commands;
 public static class CreateList
 {
     public record Command(
-        string Name,
+        [property: DefaultValue("EasyList")] string Name,
         IEnumerable<FilterListViewUrl> ViewUrls,
-        string? Description = default,
-        long? LicenseId = default,
-        Uri? HomeUrl = default,
-        Uri? OnionUrl = default,
-        Uri? PolicyUrl = default,
-        Uri? SubmissionUrl = default,
-        Uri? IssuesUrl = default,
-        Uri? ForumUrl = default,
-        Uri? ChatUrl = default,
-        string? EmailAddress = default,
-        Uri? DonateUrl = default,
-        string? CreateReason = default) : IRequest<Response>;
+        [property: DefaultValue("EasyList is the primary filter list that removes most adverts from international web pages, including unwanted frames, images, and objects. It is the most popular list used by many ad blockers and forms the basis of over a dozen combination and supplementary filter lists.")] string? Description = default,
+        [property: DefaultValue(4)] long? LicenseId = default,
+        [property: DefaultValue("https://easylist.to/")] Uri? HomeUrl = default,
+        [property: DefaultValue(default(Uri))] Uri? OnionUrl = default,
+        [property: DefaultValue(default(Uri))] Uri? PolicyUrl = default,
+        [property: DefaultValue(default(Uri))] Uri? SubmissionUrl = default,
+        [property: DefaultValue("https://github.com/easylist/easylist/issues")] Uri? IssuesUrl = default,
+        [property: DefaultValue("https://forums.lanik.us/viewforum.php?f=23")] Uri? ForumUrl = default,
+        [property: DefaultValue(default(Uri))] Uri? ChatUrl = default,
+        [property: DefaultValue("easylist@protonmail.com")] string? EmailAddress = default,
+        [property: DefaultValue(default(Uri))] Uri? DonateUrl = default,
+        [property: DefaultValue("Adding EasyList because I did not see it on FilterLists.com yet.")] string? CreateReason = default) : IRequest<Response>;
 
-    public record FilterListViewUrl(short SegmentNumber, short Primariness, Uri Url);
+    public record FilterListViewUrl(
+        [property: DefaultValue(1)] short SegmentNumber,
+        [property: DefaultValue(1)] short Primariness,
+        [property: DefaultValue("https://easylist.to/easylist/easylist.txt")] Uri Url);
 
     internal class Validator : AbstractValidator<Command>
     {
