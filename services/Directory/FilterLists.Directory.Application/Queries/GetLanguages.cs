@@ -53,13 +53,13 @@ public static class GetLanguages
         public long Id { get; private init; }
 
         /// <summary>
-        /// The ISO 639-1 code.
+        /// The unique ISO 639-1 code.
         /// </summary>
         /// <example>en</example>
         public string Iso6391 { get; private init; } = default!;
 
         /// <summary>
-        /// The ISO name.
+        /// The unique ISO name.
         /// </summary>
         /// <example>English</example>
         public string Name { get; private init; } = default!;

@@ -11,14 +11,21 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetListDetails
 {
-    public record Query(long Id) : IRequest<ListDetailsVm?>;
+    public record Query : IRequest<ListDetailsVm?>
+    {
+        /// <summary>
+        ///     The identifier.
+        /// </summary>
+        /// <example>301</example>
+        public long Id { get; init; }
+    }
 
     internal class Validator : AbstractValidator<Query>
     {
         public Validator()
         {
             RuleFor(q => q.Id)
-                .GreaterThanOrEqualTo(0);
+                .GreaterThan(0);
         }
     }
 

@@ -59,6 +59,6 @@ public class ListsController : BaseController
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public Task<IActionResult> GetDetails(long id, CancellationToken cancellationToken)
     {
-        return CacheGetOrCreateAsync(() => _mediator.Send(new GetListDetails.Query(id), cancellationToken), id);
+        return CacheGetOrCreateAsync(() => _mediator.Send(new GetListDetails.Query { Id = id }, cancellationToken), id);
     }
 }

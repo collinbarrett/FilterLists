@@ -51,7 +51,7 @@ public static class GetLicenses
         public long Id { get; private init; }
 
         /// <summary>
-        ///     The name.
+        ///     The unique name.
         /// </summary>
         /// <example>All Rights Reserved</example>
         public string Name { get; private init; } = default!;
