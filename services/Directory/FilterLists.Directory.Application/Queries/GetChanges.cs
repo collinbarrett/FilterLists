@@ -45,7 +45,7 @@ public static class GetChanges
     public record ChangeVm
     {
         /// <summary>
-        ///     The identifier of the change.
+        ///     The identifier.
         /// </summary>
         /// <example>99</example>
         public long Id { get; private init; }

@@ -14,7 +14,7 @@ public static class GetChange
     public record Query : IRequest<ChangeVm?>
     {
         /// <summary>
-        ///     The identifier of the change.
+        ///     The identifier.
         /// </summary>
         /// <example>99</example>
         public long Id { get; init; }
@@ -51,7 +51,7 @@ public static class GetChange
     public record ChangeVm
     {
         /// <summary>
-        ///     The identifier of the change.
+        ///     The identifier.
         /// </summary>
         /// <example>99</example>
         public long Id { get; private init; }
