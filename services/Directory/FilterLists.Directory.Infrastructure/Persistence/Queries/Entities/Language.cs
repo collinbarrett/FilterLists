@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record Language : AggregateRoot
+public record Language : EntityRequiringApproval
 {
     public string Iso6391 { get; init; } = default!;
     public string Name { get; init; } = default!;
@@ -11,7 +11,7 @@ public record Language : AggregateRoot
     public IEnumerable<Change> Changes { get; init; } = new HashSet<Change>();
 }
 
-internal class LanguageTypeConfiguration : AggregateRootTypeConfiguration<Language>
+internal class LanguageTypeConfiguration : EntityRequiringApprovalTypeConfiguration<Language>
 {
     public override void Configure(EntityTypeBuilder<Language> builder)
     {
@@ -22,7 +22,7 @@ internal class LanguageTypeConfiguration : AggregateRootTypeConfiguration<Langua
             .IsUnique();
         builder.HasIndex(l => l.Name)
             .IsUnique();
-        builder.HasDataJsonFileAggregate<Language>();
+        builder.HasDataJsonFileEntityRequiringApproval<Language>();
         base.Configure(builder);
     }
 }

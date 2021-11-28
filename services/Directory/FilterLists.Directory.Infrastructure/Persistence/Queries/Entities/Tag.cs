@@ -2,7 +2,7 @@
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record Tag : AggregateRoot
+public record Tag : EntityRequiringApproval
 {
     public string Name { get; init; } = default!;
     public string? Description { get; init; }
@@ -10,13 +10,13 @@ public record Tag : AggregateRoot
     public IEnumerable<Change> Changes { get; init; } = new HashSet<Change>();
 }
 
-internal class TagTypeConfiguration : AggregateRootTypeConfiguration<Tag>
+internal class TagTypeConfiguration : EntityRequiringApprovalTypeConfiguration<Tag>
 {
     public override void Configure(EntityTypeBuilder<Tag> builder)
     {
         builder.HasIndex(t => t.Name)
             .IsUnique();
-        builder.HasDataJsonFileAggregate<Tag>();
+        builder.HasDataJsonFileEntityRequiringApproval<Tag>();
         base.Configure(builder);
     }
 }

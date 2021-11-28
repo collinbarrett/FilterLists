@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record FilterList : AggregateRoot
+public record FilterList : EntityRequiringApproval
 {
     public string Name { get; init; } = default!;
     public string? Description { get; init; }
@@ -32,7 +32,7 @@ public record FilterList : AggregateRoot
     public IEnumerable<Change> Changes { get; init; } = new HashSet<Change>();
 }
 
-internal class FilterListTypeConfiguration : AggregateRootTypeConfiguration<FilterList>
+internal class FilterListTypeConfiguration : EntityRequiringApprovalTypeConfiguration<FilterList>
 {
     public override void Configure(EntityTypeBuilder<FilterList> builder)
     {

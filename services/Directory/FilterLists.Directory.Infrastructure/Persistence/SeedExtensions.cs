@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Npgsql;
 
 namespace FilterLists.Directory.Infrastructure.Persistence;
 
@@ -26,8 +25,8 @@ public static class SeedExtension
 
 internal static class SeedConfigurationExtension
 {
-    public static void HasDataJsonFileAggregate<TEntity>(this EntityTypeBuilder entityTypeBuilder)
-        where TEntity : AggregateRoot
+    public static void HasDataJsonFileEntityRequiringApproval<TEntity>(this EntityTypeBuilder entityTypeBuilder)
+        where TEntity : EntityRequiringApproval
     {
         var entities = Deserialize<TEntity>();
         if (entities.Count == 0)
@@ -66,12 +65,14 @@ internal static class SeedConfigurationExtension
         }
 
         var entitiesJson = File.ReadAllText(path);
-        var entities = JsonSerializer.Deserialize<IEnumerable<TEntity>>(entitiesJson,
+        var entities = JsonSerializer.Deserialize<IEnumerable<TEntity>>(
+            entitiesJson,
             new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
         return entities is null ? new List<TEntity>() : entities.ToList();
     }
 
-    private static void Approve<TAggregateRoot>(this TAggregateRoot entity) where TAggregateRoot : AggregateRoot
+    private static void Approve<TEntityRequiringApproval>(this TEntityRequiringApproval entity)
+        where TEntityRequiringApproval : EntityRequiringApproval
     {
         entity.IsApproved = true;
     }

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record Software : AggregateRoot
+public record Software : EntityRequiringApproval
 {
     public string Name { get; init; } = default!;
     public string? Description { get; init; }
@@ -14,7 +14,7 @@ public record Software : AggregateRoot
     public IEnumerable<Change> Changes { get; init; } = new HashSet<Change>();
 }
 
-internal class SoftwareTypeConfiguration : AggregateRootTypeConfiguration<Software>
+internal class SoftwareTypeConfiguration : EntityRequiringApprovalTypeConfiguration<Software>
 {
     public override void Configure(EntityTypeBuilder<Software> builder)
     {
@@ -22,7 +22,7 @@ internal class SoftwareTypeConfiguration : AggregateRootTypeConfiguration<Softwa
             .IsUnique();
         builder.Property(s => s.SupportsAbpUrlScheme)
             .HasDefaultValue(false);
-        builder.HasDataJsonFileAggregate<Software>();
+        builder.HasDataJsonFileEntityRequiringApproval<Software>();
         base.Configure(builder);
     }
 }

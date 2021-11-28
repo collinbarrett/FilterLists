@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record License : AggregateRoot
+public record License : EntityRequiringApproval
 {
     public string Name { get; init; } = default!;
     public Uri? Url { get; init; }
@@ -14,7 +14,7 @@ public record License : AggregateRoot
     public IEnumerable<Change> Changes { get; init; } = new HashSet<Change>();
 }
 
-internal class LicenseTypeConfiguration : AggregateRootTypeConfiguration<License>
+internal class LicenseTypeConfiguration : EntityRequiringApprovalTypeConfiguration<License>
 {
     public override void Configure(EntityTypeBuilder<License> builder)
     {
@@ -26,7 +26,7 @@ internal class LicenseTypeConfiguration : AggregateRootTypeConfiguration<License
             .HasDefaultValue(false);
         builder.Property(l => l.PermitsCommercialUse)
             .HasDefaultValue(false);
-        builder.HasDataJsonFileAggregate<License>();
+        builder.HasDataJsonFileEntityRequiringApproval<License>();
         base.Configure(builder);
     }
 }

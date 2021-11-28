@@ -3,16 +3,16 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public abstract record AggregateRoot : Entity
+public abstract record EntityRequiringApproval : Entity
 {
     // TODO: change 'set' to 'init' when no longer seeding from json
     public bool IsApproved { get; set; }
 }
 
-internal abstract class AggregateRootTypeConfiguration<TAggregateRoot> : IEntityTypeConfiguration<TAggregateRoot>
-    where TAggregateRoot : AggregateRoot
+internal abstract class EntityRequiringApprovalTypeConfiguration<TEntityRequiringApproval>
+    : IEntityTypeConfiguration<TEntityRequiringApproval> where TEntityRequiringApproval : EntityRequiringApproval
 {
-    public virtual void Configure(EntityTypeBuilder<TAggregateRoot> builder)
+    public virtual void Configure(EntityTypeBuilder<TEntityRequiringApproval> builder)
     {
         builder.HasQueryFilter(e => e.IsApproved);
     }

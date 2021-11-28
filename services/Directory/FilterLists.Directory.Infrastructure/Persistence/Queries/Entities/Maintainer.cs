@@ -2,7 +2,7 @@
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record Maintainer : AggregateRoot
+public record Maintainer : EntityRequiringApproval
 {
     public string Name { get; init; } = default!;
     public Uri? Url { get; init; }
@@ -12,13 +12,13 @@ public record Maintainer : AggregateRoot
     public IEnumerable<Change> Changes { get; init; } = new HashSet<Change>();
 }
 
-internal class MaintainerTypeConfiguration : AggregateRootTypeConfiguration<Maintainer>
+internal class MaintainerTypeConfiguration : EntityRequiringApprovalTypeConfiguration<Maintainer>
 {
     public override void Configure(EntityTypeBuilder<Maintainer> builder)
     {
         builder.HasIndex(m => m.Name)
             .IsUnique();
-        builder.HasDataJsonFileAggregate<Maintainer>();
+        builder.HasDataJsonFileEntityRequiringApproval<Maintainer>();
         base.Configure(builder);
     }
 }
