@@ -1,16 +1,15 @@
 ﻿using FilterLists.Directory.Domain.Aggregates.FilterLists;
 using FilterLists.SharedKernel.Domain.SeedWork;
 
-namespace FilterLists.Directory.Domain.Aggregates.Licenses;
+namespace FilterLists.Directory.Domain.Aggregates.Syntaxes;
 
-public class License : Entity
+public class Syntax : Entity
 {
-    protected License() { }
+    protected Syntax() { }
 
     public string Name { get; private init; } = default!;
+    public string? Description { get; private init; }
     public Uri? Url { get; private init; }
-    public bool PermitsModification { get; private init; }
-    public bool PermitsDistribution { get; private init; }
-    public bool PermitsCommercialUse { get; private init; }
     public virtual IEnumerable<FilterList> FilterLists { get; private init; } = new HashSet<FilterList>();
+    public virtual IEnumerable<Software.Software> Software { get; private init; } = new HashSet<Software.Software>();
 }

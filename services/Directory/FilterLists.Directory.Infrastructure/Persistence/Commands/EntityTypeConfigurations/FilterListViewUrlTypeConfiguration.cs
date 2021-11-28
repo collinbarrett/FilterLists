@@ -14,6 +14,5 @@ internal class FilterListViewUrlTypeConfiguration : IEntityTypeConfiguration<Fil
         var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
 
         builder.ToTable($"{nr.RewriteName(nameof(Queries.Entities.FilterListViewUrl))}s");
-        builder.Property<long>(nameof(Queries.Entities.FilterListViewUrl.Id));
     }
 }

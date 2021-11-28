@@ -1,6 +1,6 @@
-﻿using FilterLists.Directory.Domain.Aggregates.FilterLists;
+﻿using FilterLists.Directory.Domain.Changes;
 
-namespace FilterLists.Directory.Domain.Aggregates.Changes;
+namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
 
 public class FilterListChange : Change, IChangeAggregate<FilterListValueObject>
 {

@@ -1,5 +1,9 @@
-﻿using FilterLists.Directory.Domain.Aggregates.Changes;
+﻿using FilterLists.Directory.Domain.Aggregates.Languages;
 using FilterLists.Directory.Domain.Aggregates.Licenses;
+using FilterLists.Directory.Domain.Aggregates.Maintainers;
+using FilterLists.Directory.Domain.Aggregates.Syntaxes;
+using FilterLists.Directory.Domain.Aggregates.Tags;
+using FilterLists.Directory.Domain.Changes;
 using FilterLists.SharedKernel.Domain.SeedWork;
 
 namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
@@ -11,6 +15,9 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
     public string Name { get; private init; } = default!;
     public string? Description { get; private init; }
     public virtual License License { get; private init; } = default!;
+    public virtual IEnumerable<Syntax> Syntaxes { get; private init; } = new HashSet<Syntax>();
+    public virtual IEnumerable<Language> Languages { get; private init; } = new HashSet<Language>();
+    public virtual IEnumerable<Tag> Tags { get; private init; } = new HashSet<Tag>();
     public virtual IEnumerable<FilterListViewUrl> ViewUrls { get; private init; } = new HashSet<FilterListViewUrl>();
     public Uri? HomeUrl { get; private init; }
     public Uri? OnionUrl { get; private init; }
@@ -21,6 +28,13 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
     public Uri? ChatUrl { get; private init; }
     public string? EmailAddress { get; private init; }
     public Uri? DonateUrl { get; private init; }
+    public virtual IEnumerable<Maintainer> Maintainers { get; private init; } = new HashSet<Maintainer>();
+    public virtual IEnumerable<FilterList> UpstreamFilterLists { get; private init; } = new HashSet<FilterList>();
+    public virtual IEnumerable<FilterList> ForkFilterLists { get; private init; } = new HashSet<FilterList>();
+    public virtual IEnumerable<FilterList> IncludedInFilterLists { get; private init; } = new HashSet<FilterList>();
+    public virtual IEnumerable<FilterList> IncludesFilterLists { get; private init; } = new HashSet<FilterList>();
+    public virtual IEnumerable<FilterList> DependencyFilterLists { get; private init; } = new HashSet<FilterList>();
+    public virtual IEnumerable<FilterList> DependentFilterLists { get; private init; } = new HashSet<FilterList>();
     public virtual IEnumerable<FilterListChange> Changes { get; private set; } = new HashSet<FilterListChange>();
     public bool IsApproved { get; private init; }
 

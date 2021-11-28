@@ -1,7 +1,8 @@
 ﻿using System.Globalization;
 using EFCore.NamingConventions.Internal;
 using FilterLists.Directory.Domain.Aggregates;
-using FilterLists.Directory.Domain.Aggregates.Changes;
+using FilterLists.Directory.Domain.Aggregates.FilterLists;
+using FilterLists.Directory.Domain.Changes;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -17,6 +18,5 @@ internal class ChangeTypeConfiguration : IEntityTypeConfiguration<Change>
         builder.ToTable($"{nr.RewriteName(nameof(Change))}s");
         builder.HasDiscriminator<AggregateType>(nr.RewriteName(nameof(Queries.Entities.Change.AggregateType)))
             .HasValue<FilterListChange>(AggregateType.FilterList);
-        builder.Property<long>(nameof(Queries.Entities.Change.Id));
     }
 }

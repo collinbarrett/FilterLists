@@ -1,4 +1,4 @@
-﻿namespace FilterLists.Directory.Domain.Aggregates.Changes;
+﻿namespace FilterLists.Directory.Domain.Changes;
 
 public interface IRequireChangeApproval<out TChange> where TChange : Change
 {

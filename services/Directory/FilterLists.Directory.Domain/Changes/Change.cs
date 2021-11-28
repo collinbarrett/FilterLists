@@ -1,6 +1,6 @@
 ﻿using FilterLists.SharedKernel.Domain.SeedWork;
 
-namespace FilterLists.Directory.Domain.Aggregates.Changes;
+namespace FilterLists.Directory.Domain.Changes;
 
 public abstract class Change : Entity
 {

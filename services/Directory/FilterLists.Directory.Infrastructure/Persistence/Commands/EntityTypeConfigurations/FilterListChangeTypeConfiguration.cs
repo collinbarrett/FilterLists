@@ -1,4 +1,4 @@
-﻿using FilterLists.Directory.Domain.Aggregates.Changes;
+﻿using FilterLists.Directory.Domain.Aggregates.FilterLists;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Change = FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Change;
