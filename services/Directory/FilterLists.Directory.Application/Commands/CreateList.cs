@@ -1,5 +1,9 @@
 ﻿using FilterLists.Directory.Domain.Aggregates.FilterLists;
+using FilterLists.Directory.Domain.Aggregates.Languages;
 using FilterLists.Directory.Domain.Aggregates.Licenses;
+using FilterLists.Directory.Domain.Aggregates.Maintainers;
+using FilterLists.Directory.Domain.Aggregates.Syntaxes;
+using FilterLists.Directory.Domain.Aggregates.Tags;
 using FilterLists.Directory.Infrastructure.Persistence.Commands.Context;
 using FluentValidation;
 using MediatR;
@@ -146,10 +150,14 @@ public static class CreateList
                     .WhereIsDefaultForFilterList()
                     .SingleAsync(cancellationToken);
 
+            // TODO: accept IDs and fetch additional related aggregates
             var filterList = FilterList.CreatePendingApproval(
                 request.Name,
                 request.Description,
                 license,
+                new HashSet<Syntax>(),
+                new HashSet<Language>(),
+                new HashSet<Tag>(),
                 request.ViewUrls.Select(u => (u.SegmentNumber, u.Primariness, u.Url)),
                 request.HomeUrl,
                 request.OnionUrl,
@@ -160,6 +168,13 @@ public static class CreateList
                 request.ChatUrl,
                 request.EmailAddress,
                 request.DonateUrl,
+                new HashSet<Maintainer>(),
+                new HashSet<FilterList>(),
+                new HashSet<FilterList>(),
+                new HashSet<FilterList>(),
+                new HashSet<FilterList>(),
+                new HashSet<FilterList>(),
+                new HashSet<FilterList>(),
                 request.CreateReason);
             _commandContext.FilterLists.Add(filterList);
 
@@ -167,9 +182,7 @@ public static class CreateList
 
             return new Response
             {
-                ChangeId =
-                    filterList.Changes.Single()
-                        .Id
+                ChangeId = filterList.Changes.Select(c => c.Id).Single()
             };
         }
     }

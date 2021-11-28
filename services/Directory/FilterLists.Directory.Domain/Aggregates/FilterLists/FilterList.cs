@@ -42,6 +42,9 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
         string name,
         string? description,
         License license,
+        IEnumerable<Syntax> syntaxes,
+        IEnumerable<Language> languages,
+        IEnumerable<Tag> tags,
         IEnumerable<(short SegmentNumber, short Primariness, Uri Url)> viewUrls,
         Uri? homeUrl,
         Uri? onionUrl,
@@ -52,21 +55,47 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
         Uri? chatUrl,
         string? emailAddress,
         Uri? donateUrl,
+        IEnumerable<Maintainer> maintainers,
+        IEnumerable<FilterList> upstreamFilterLists,
+        IEnumerable<FilterList> forkFilterLists,
+        IEnumerable<FilterList> includedInFilterLists,
+        IEnumerable<FilterList> includesFilterLists,
+        IEnumerable<FilterList> dependencyFilterLists,
+        IEnumerable<FilterList> dependentFilterLists,
         string? createReason)
     {
-        var urls = viewUrls.Select(u => FilterListViewUrl.Create(u.SegmentNumber, u.Primariness, u.Url))
+        var urls = viewUrls.DistinctBy(u => new { u.SegmentNumber, u.Primariness, u.Url })
+            .Select(u => FilterListViewUrl.Create(u.SegmentNumber, u.Primariness, u.Url))
             .ToList();
         if (urls.Count == 0)
         {
             throw new ArgumentException("At lest one view URL is required.", nameof(viewUrls));
         }
 
-        if (urls.GroupBy(u => new { u.SegmentNumber, u.Primariness })
-            .Any(g => g.Count() > 1))
+        if (urls.GroupBy(u => new { u.SegmentNumber, u.Primariness }).Any(g => g.Count() > 1))
         {
-            throw new ArgumentException(
-                "The segment number and primariness pair must be unique for each view URL.",
-                nameof(viewUrls));
+            throw new ArgumentException("The segment number and primariness pair must be unique for each view URL.", nameof(viewUrls));
+        }
+
+        var upstreamFilterListsSet = new HashSet<FilterList>(upstreamFilterLists);
+        var forkFilterListsSet = new HashSet<FilterList>(forkFilterLists);
+        if (upstreamFilterListsSet.Intersect(forkFilterListsSet).Any())
+        {
+            throw new ArgumentException("A FilterList cannot be both an Upstream and a Fork of the same FilterList.");
+        }
+
+        var includedInFilterListsSet = new HashSet<FilterList>(includedInFilterLists);
+        var includesFilterListSet = new HashSet<FilterList>(includesFilterLists);
+        if (includedInFilterListsSet.Intersect(includesFilterListSet).Any())
+        {
+            throw new ArgumentException("A FilterList cannot be both included in and including of the same FilterList.");
+        }
+
+        var dependencyFilterListSet = new HashSet<FilterList>(dependencyFilterLists);
+        var dependentFilterListSet = new HashSet<FilterList>(dependentFilterLists);
+        if (dependencyFilterListSet.Intersect(dependentFilterListSet).Any())
+        {
+            throw new ArgumentException("A FilterList cannot be both a dependency of and dependent upon the same FilterList.");
         }
 
         var list = new FilterList
@@ -74,6 +103,10 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
             Name = name,
             Description = description,
             License = license,
+            Syntaxes = new HashSet<Syntax>(syntaxes),
+            Languages = new HashSet<Language>(languages),
+            Tags = new HashSet<Tag>(tags),
+            ViewUrls = urls,
             HomeUrl = homeUrl,
             OnionUrl = onionUrl,
             PolicyUrl = policyUrl,
@@ -83,7 +116,13 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
             ChatUrl = chatUrl,
             EmailAddress = emailAddress,
             DonateUrl = donateUrl,
-            ViewUrls = urls,
+            Maintainers = new HashSet<Maintainer>(maintainers),
+            UpstreamFilterLists = upstreamFilterListsSet,
+            ForkFilterLists = forkFilterListsSet,
+            IncludedInFilterLists = includedInFilterListsSet,
+            IncludesFilterLists = includesFilterListSet,
+            DependencyFilterLists = dependencyFilterListSet,
+            DependentFilterLists = dependentFilterListSet,
             IsApproved = false
         };
         list.Changes = new HashSet<FilterListChange>(new[] { FilterListChange.Create(list, createReason) });
