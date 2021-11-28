@@ -43,7 +43,7 @@ internal class FilterListTypeConfiguration : EntityRequiringApprovalTypeConfigur
         builder.HasOne(f => f.License)
             .WithMany(l => l.FilterLists)
             .OnDelete(DeleteBehavior.Restrict);
-        builder.HasDataJsonFileAggregate<FilterList>();
+        builder.HasDataJsonFileEntityRequiringApproval<FilterList>();
         base.Configure(builder);
     }
 }
