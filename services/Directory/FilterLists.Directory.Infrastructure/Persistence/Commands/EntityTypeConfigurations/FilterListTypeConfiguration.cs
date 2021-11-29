@@ -14,15 +14,27 @@ internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList
         // TODO: register and resolve INameRewriter
         var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
 
+        builder.HasMany(f => f.Syntaxes)
+            .WithMany(s => s.FilterLists)
+            .UsingEntity(e => e.ToTable($"{nr.RewriteName(nameof(FilterListSyntax))}es"));
+        builder.HasMany(f => f.Languages)
+            .WithMany(l => l.FilterLists)
+            .UsingEntity(e => e.ToTable($"{nr.RewriteName(nameof(FilterListLanguage))}s"));
+        builder.HasMany(f => f.Tags)
+            .WithMany(t => t.FilterLists)
+            .UsingEntity(e => e.ToTable($"{nr.RewriteName(nameof(FilterListTag))}s"));
+        builder.HasMany(f => f.Maintainers)
+            .WithMany(m => m.FilterLists)
+            .UsingEntity(e => e.ToTable($"{nr.RewriteName(nameof(FilterListMaintainer))}s"));
         builder.HasMany(f => f.UpstreamFilterLists)
             .WithMany(f => f.ForkFilterLists)
-            .UsingEntity(f => f.ToTable($"{nr.RewriteName(nameof(Fork))}s"));
+            .UsingEntity(e => e.ToTable($"{nr.RewriteName(nameof(Fork))}s"));
         builder.HasMany(f => f.IncludedInFilterLists)
             .WithMany(f => f.IncludesFilterLists)
-            .UsingEntity(f => f.ToTable($"{nr.RewriteName(nameof(Merge))}s"));
+            .UsingEntity(e => e.ToTable($"{nr.RewriteName(nameof(Merge))}s"));
         builder.HasMany(f => f.DependencyFilterLists)
             .WithMany(f => f.DependentFilterLists)
-            .UsingEntity(f => f.ToTable($"{nr.RewriteName(nameof(Dependent))}s"));
+            .UsingEntity(e => e.ToTable($"{nr.RewriteName(nameof(Dependent))}s"));
         builder.HasMany(f => f.Changes)
             .WithOne()
             .HasForeignKey(nameof(Change.FilterListId));

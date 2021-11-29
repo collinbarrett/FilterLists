@@ -22,11 +22,6 @@ public static class CreateList
         public string Name { get; init; } = default!;
 
         /// <summary>
-        ///     The view URLs.
-        /// </summary>
-        public IEnumerable<FilterListViewUrl> ViewUrls { get; init; } = new HashSet<FilterListViewUrl>();
-
-        /// <summary>
         ///     The brief description in English (preferably quoted from the project).
         /// </summary>
         /// <example>EasyList is the primary filter list that removes most adverts from international web pages, including unwanted frames, images, and objects. It is the most popular list used by many ad blockers and forms the basis of over a dozen combination and supplementary filter lists.</example>
@@ -37,6 +32,29 @@ public static class CreateList
         /// </summary>
         /// <example>4</example>
         public long? LicenseId { get; init; }
+
+        /// <summary>
+        ///     The identifiers of the Syntaxes implemented by this FilterList.
+        /// </summary>
+        /// <example>[ 3 ]</example>
+        public IEnumerable<long> SyntaxIds { get; init; } = new HashSet<long>();
+
+        /// <summary>
+        ///     The identifiers of the Languages targeted by this FilterList.
+        /// </summary>
+        /// <example>[ 37 ]</example>
+        public IEnumerable<long> LanguageIds { get; init; } = new HashSet<long>();
+
+        /// <summary>
+        ///     The identifiers of the Tags applied to this FilterList.
+        /// </summary>
+        /// <example>[ 2 ]</example>
+        public IEnumerable<long> TagIds { get; init; } = new HashSet<long>();
+
+        /// <summary>
+        ///     The view URLs.
+        /// </summary>
+        public IEnumerable<FilterListViewUrl> ViewUrls { get; init; } = new HashSet<FilterListViewUrl>();
 
         /// <summary>
         ///     The URL of the home page.
@@ -91,6 +109,48 @@ public static class CreateList
         /// </summary>
         /// <example>null</example>
         public Uri? DonateUrl { get; init; }
+
+        /// <summary>
+        ///     The identifiers of the Maintainers of this FilterList.
+        /// </summary>
+        /// <example>[ 7 ]</example>
+        public IEnumerable<long> MaintainerIds { get; init; } = new HashSet<long>();
+
+        /// <summary>
+        ///     The identifiers of the FilterLists from which this FilterList was forked.
+        /// </summary>
+        /// <example>[]</example>
+        public IEnumerable<long> UpstreamFilterListIds { get; init; } = new HashSet<long>();
+
+        /// <summary>
+        ///     The identifiers of the FilterLists that have been forked from this FilterList.
+        /// </summary>
+        /// <example>[ 166, 565 ]</example>
+        public IEnumerable<long> ForkFilterListIds { get; init; } = new HashSet<long>();
+
+        /// <summary>
+        ///     The identifiers of the FilterLists that include this FilterList.
+        /// </summary>
+        /// <example>[]</example>
+        public IEnumerable<long> IncludedInFilterListIds { get; init; } = new HashSet<long>();
+
+        /// <summary>
+        ///     The identifiers of the FilterLists that this FilterList includes.
+        /// </summary>
+        /// <example>[ 11, 13, 168 ]</example>
+        public IEnumerable<long> IncludesFilterListIds { get; init; } = new HashSet<long>();
+
+        /// <summary>
+        ///     The identifiers of the FilterLists that this FilterList depends upon.
+        /// </summary>
+        /// <example>[]</example>
+        public IEnumerable<long> DependencyFilterListIds { get; init; } = new HashSet<long>();
+
+        /// <summary>
+        ///     The identifiers of the FilterLists dependent upon this FilterList.
+        /// </summary>
+        /// <example>[]</example>
+        public IEnumerable<long> DependentFilterListIds { get; init; } = new HashSet<long>();
 
         /// <summary>
         ///     The reason that the FilterList is being added to FilterLists.
@@ -150,14 +210,90 @@ public static class CreateList
                     .WhereIsDefaultForFilterList()
                     .SingleAsync(cancellationToken);
 
-            // TODO: accept IDs and fetch additional related aggregates
+            var syntaxes = request.SyntaxIds.Any()
+                ? await _commandContext.Syntaxes
+                    .Where(s => request.SyntaxIds.Contains(s.Id))
+                    .ToListAsync(cancellationToken)
+                : new List<Syntax>();
+            if (request.SyntaxIds.Any(sid => !syntaxes.Select(s => s.Id).Contains(sid)))
+            {
+                throw new ArgumentException("One or more SyntaxIds not found.", nameof(request.SyntaxIds));
+            }
+
+            var languages = request.LanguageIds.Any()
+                ? await _commandContext.Languages
+                    .Where(l => request.LanguageIds.Contains(l.Id))
+                    .ToListAsync(cancellationToken)
+                : new List<Language>();
+            if (request.LanguageIds.Any(lid => !languages.Select(l => l.Id).Contains(lid)))
+            {
+                throw new ArgumentException("One or more LanguageIds not found.", nameof(request.LanguageIds));
+            }
+
+            var tags = request.TagIds.Any()
+                ? await _commandContext.Tags
+                    .Where(t => request.TagIds.Contains(t.Id))
+                    .ToListAsync(cancellationToken)
+                : new List<Tag>();
+            if (request.TagIds.Any(tig => !tags.Select(t => t.Id).Contains(tig)))
+            {
+                throw new ArgumentException("One or more TagIds not found.", nameof(request.TagIds));
+            }
+
+            var maintainers = request.MaintainerIds.Any()
+                ? await _commandContext.Maintainers
+                    .Where(m => request.MaintainerIds.Contains(m.Id))
+                    .ToListAsync(cancellationToken)
+                : new List<Maintainer>();
+            if (request.MaintainerIds.Any(mid => !maintainers.Select(m => m.Id).Contains(mid)))
+            {
+                throw new ArgumentException("One or more MaintainerIds not found.", nameof(request.MaintainerIds));
+            }
+
+            var relatedFilterListIds = request.UpstreamFilterListIds
+                .Concat(request.ForkFilterListIds)
+                .Concat(request.IncludedInFilterListIds)
+                .Concat(request.IncludesFilterListIds)
+                .Concat(request.DependencyFilterListIds)
+                .Concat(request.DependentFilterListIds)
+                .ToList();
+            var relatedFilterLists = relatedFilterListIds.Count > 0
+                ? await _commandContext.FilterLists
+                    .Where(f => relatedFilterListIds.Contains(f.Id))
+                    .ToListAsync(cancellationToken)
+                : new List<FilterList>();
+            if (request.UpstreamFilterListIds.Any(fid => !relatedFilterLists.Select(f => f.Id).Contains(fid)))
+            {
+                throw new ArgumentException("One or more UpstreamFilterListIds not found.", nameof(request.UpstreamFilterListIds));
+            }
+            if (request.ForkFilterListIds.Any(fid => !relatedFilterLists.Select(f => f.Id).Contains(fid)))
+            {
+                throw new ArgumentException("One or more ForkFilterListIds not found.", nameof(request.UpstreamFilterListIds));
+            }
+            if (request.IncludedInFilterListIds.Any(fid => !relatedFilterLists.Select(f => f.Id).Contains(fid)))
+            {
+                throw new ArgumentException("One or more IncludedInFilterListIds not found.", nameof(request.UpstreamFilterListIds));
+            }
+            if (request.IncludesFilterListIds.Any(fid => !relatedFilterLists.Select(f => f.Id).Contains(fid)))
+            {
+                throw new ArgumentException("One or more IncludesFilterListIds not found.", nameof(request.UpstreamFilterListIds));
+            }
+            if (request.DependencyFilterListIds.Any(fid => !relatedFilterLists.Select(f => f.Id).Contains(fid)))
+            {
+                throw new ArgumentException("One or more DependencyFilterListIds not found.", nameof(request.UpstreamFilterListIds));
+            }
+            if (request.DependentFilterListIds.Any(fid => !relatedFilterLists.Select(f => f.Id).Contains(fid)))
+            {
+                throw new ArgumentException("One or more DependentFilterListIds not found.", nameof(request.UpstreamFilterListIds));
+            }
+
             var filterList = FilterList.CreatePendingApproval(
                 request.Name,
                 request.Description,
                 license,
-                new HashSet<Syntax>(),
-                new HashSet<Language>(),
-                new HashSet<Tag>(),
+                syntaxes,
+                languages,
+                tags,
                 request.ViewUrls.Select(u => (u.SegmentNumber, u.Primariness, u.Url)),
                 request.HomeUrl,
                 request.OnionUrl,
@@ -168,13 +304,13 @@ public static class CreateList
                 request.ChatUrl,
                 request.EmailAddress,
                 request.DonateUrl,
-                new HashSet<Maintainer>(),
-                new HashSet<FilterList>(),
-                new HashSet<FilterList>(),
-                new HashSet<FilterList>(),
-                new HashSet<FilterList>(),
-                new HashSet<FilterList>(),
-                new HashSet<FilterList>(),
+                maintainers,
+                relatedFilterLists.Where(f => request.UpstreamFilterListIds.Contains(f.Id)),
+                relatedFilterLists.Where(f => request.ForkFilterListIds.Contains(f.Id)),
+                relatedFilterLists.Where(f => request.IncludedInFilterListIds.Contains(f.Id)),
+                relatedFilterLists.Where(f => request.IncludesFilterListIds.Contains(f.Id)),
+                relatedFilterLists.Where(f => request.DependencyFilterListIds.Contains(f.Id)),
+                relatedFilterLists.Where(f => request.DependentFilterListIds.Contains(f.Id)),
                 request.CreateReason);
             _commandContext.FilterLists.Add(filterList);
 
