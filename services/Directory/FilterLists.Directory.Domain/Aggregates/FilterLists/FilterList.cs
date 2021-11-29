@@ -77,16 +77,16 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
             throw new ArgumentException("The segment number and primariness pair must be unique for each view URL.", nameof(viewUrls));
         }
 
-        var upstreamFilterListsSet = new HashSet<FilterList>(upstreamFilterLists);
-        var forkFilterListsSet = new HashSet<FilterList>(forkFilterLists);
-        if (upstreamFilterListsSet.Intersect(forkFilterListsSet).Any())
+        var upstreamFilterListSet = new HashSet<FilterList>(upstreamFilterLists);
+        var forkFilterListSet = new HashSet<FilterList>(forkFilterLists);
+        if (upstreamFilterListSet.Intersect(forkFilterListSet).Any())
         {
             throw new ArgumentException("A FilterList cannot be both an Upstream and a Fork of the same FilterList.");
         }
 
-        var includedInFilterListsSet = new HashSet<FilterList>(includedInFilterLists);
+        var includedInFilterListSet = new HashSet<FilterList>(includedInFilterLists);
         var includesFilterListSet = new HashSet<FilterList>(includesFilterLists);
-        if (includedInFilterListsSet.Intersect(includesFilterListSet).Any())
+        if (includedInFilterListSet.Intersect(includesFilterListSet).Any())
         {
             throw new ArgumentException("A FilterList cannot be both included in and including of the same FilterList.");
         }
@@ -117,9 +117,9 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
             EmailAddress = emailAddress,
             DonateUrl = donateUrl,
             Maintainers = new HashSet<Maintainer>(maintainers),
-            UpstreamFilterLists = upstreamFilterListsSet,
-            ForkFilterLists = forkFilterListsSet,
-            IncludedInFilterLists = includedInFilterListsSet,
+            UpstreamFilterLists = upstreamFilterListSet,
+            ForkFilterLists = forkFilterListSet,
+            IncludedInFilterLists = includedInFilterListSet,
             IncludesFilterLists = includesFilterListSet,
             DependencyFilterLists = dependencyFilterListSet,
             DependentFilterLists = dependentFilterListSet,
