@@ -268,23 +268,23 @@ public static class CreateList
             }
             if (request.ForkFilterListIds.Any(fid => !relatedFilterLists.Select(f => f.Id).Contains(fid)))
             {
-                throw new ArgumentException("One or more ForkFilterListIds not found.", nameof(request.UpstreamFilterListIds));
+                throw new ArgumentException("One or more ForkFilterListIds not found.", nameof(request.ForkFilterListIds));
             }
             if (request.IncludedInFilterListIds.Any(fid => !relatedFilterLists.Select(f => f.Id).Contains(fid)))
             {
-                throw new ArgumentException("One or more IncludedInFilterListIds not found.", nameof(request.UpstreamFilterListIds));
+                throw new ArgumentException("One or more IncludedInFilterListIds not found.", nameof(request.IncludedInFilterListIds));
             }
             if (request.IncludesFilterListIds.Any(fid => !relatedFilterLists.Select(f => f.Id).Contains(fid)))
             {
-                throw new ArgumentException("One or more IncludesFilterListIds not found.", nameof(request.UpstreamFilterListIds));
+                throw new ArgumentException("One or more IncludesFilterListIds not found.", nameof(request.IncludesFilterListIds));
             }
             if (request.DependencyFilterListIds.Any(fid => !relatedFilterLists.Select(f => f.Id).Contains(fid)))
             {
-                throw new ArgumentException("One or more DependencyFilterListIds not found.", nameof(request.UpstreamFilterListIds));
+                throw new ArgumentException("One or more DependencyFilterListIds not found.", nameof(request.DependencyFilterListIds));
             }
             if (request.DependentFilterListIds.Any(fid => !relatedFilterLists.Select(f => f.Id).Contains(fid)))
             {
-                throw new ArgumentException("One or more DependentFilterListIds not found.", nameof(request.UpstreamFilterListIds));
+                throw new ArgumentException("One or more DependentFilterListIds not found.", nameof(request.DependentFilterListIds));
             }
 
             var filterList = FilterList.CreatePendingApproval(
