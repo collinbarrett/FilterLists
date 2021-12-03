@@ -15975,5 +15975,89 @@
     "id": 2797,
     "primariness": 5,
     "url": "https://filtersheroes.gitlab.io/AssetsMirror/euCDB.txt"
+  },
+  {
+    "filterListId": 2471,
+    "id": 2798,
+    "primariness": 3,
+    "url": "https://combinatronics.io/BPower0036/AdBlockFilters/main/easydutch.txt"
+  },
+  {
+    "filterListId": 2471,
+    "id": 2799,
+    "primariness": 4,
+    "url": "https://cdn.statically.io/gh/BPower0036/AdBlockFilters/main/easydutch.txt"
+  },
+  {
+    "filterListId": 2471,
+    "id": 2800,
+    "primariness": 5,
+    "url": "https://cdn.statically.io/gl/BPower0036/AdBlockFilters/main/easydutch.txt"
+  },
+  {
+    "filterListId": 2471,
+    "id": 2801,
+    "primariness": 6,
+    "url": "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockFilters@main/easydutch.txt"
+  },
+  {
+    "filterListId": 2520,
+    "id": 2802,
+    "primariness": 2,
+    "url": "https://gitlab.com/BPower0036/AdBlockFilters/-/raw/main/dynamic%20rules"
+  },
+  {
+    "filterListId": 2520,
+    "id": 2803,
+    "primariness": 3,
+    "url": "https://combinatronics.io/BPower0036/AdBlockfilters/main/dynamic%20rules"
+  },
+  {
+    "filterListId": 2520,
+    "id": 2804,
+    "primariness": 4,
+    "url": "https://cdn.statically.io/gh/BPower0036/AdBlockfilters/main/dynamic%20rules"
+  },
+  {
+    "filterListId": 2520,
+    "id": 2805,
+    "primariness": 5,
+    "url": "https://cdn.statically.io/gl/BPower0036/AdBlockFilters/main/dynamic%20rules"
+  },
+  {
+    "filterListId": 2520,
+    "id": 2806,
+    "primariness": 6,
+    "url": "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockfilters@main/dynamic%20rules"
+  },
+  {
+    "filterListId": 2521,
+    "id": 2807,
+    "primariness": 2,
+    "url": "https://gitlab.com/BPower0036/AdBlockFilters/-/raw/main/my%20filters"
+  },
+  {
+    "filterListId": 2521,
+    "id": 2808,
+    "primariness": 3,
+    "url": "https://combinatronics.io/BPower0036/AdBlockfilters/main/my%20filters"
+  },
+  {
+    "filterListId": 2521,
+    "id": 2809,
+    "primariness": 4,
+    "url": "https://cdn.statically.io/gh/BPower0036/AdBlockfilters/main/my%20filters"
+  },
+  {
+    "filterListId": 2521,
+    "id": 2810,
+    "primariness": 5,
+    "url": "https://cdn.statically.io/gl/BPower0036/AdBlockFilters/main/my%20filters"
+  },
+  {
+    "filterListId": 2521,
+    "id": 2811,
+    "primariness": 6,
+    "url": "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockfilters@main/my%20filters"
   }
 ]
