@@ -60,37 +60,43 @@ internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList
                 });
         builder.HasMany(f => f.UpstreamFilterLists)
             .WithMany(f => f.ForkFilterLists)
-            .UsingEntity(
+            .UsingEntity<Dictionary<string, object>>(
                 nameof(Fork),
-                e =>
-                {
-                    e.ToTable($"{nr.RewriteName(nameof(Fork))}s");
-                    e.Property<long>(nameof(Fork.UpstreamFilterListId));
-                    e.Property<long>(nameof(Fork.ForkFilterListId));
-                    e.HasKey(nameof(Fork.UpstreamFilterListId), nameof(Fork.ForkFilterListId));
-                });
+                rj => rj
+                    .HasOne<FilterList>()
+                    .WithMany()
+                    .HasForeignKey(nameof(Fork.UpstreamFilterListId)),
+                lj => lj
+                    .HasOne<FilterList>()
+                    .WithMany()
+                    .HasForeignKey(nameof(Fork.ForkFilterListId)),
+                e => e.ToTable($"{nr.RewriteName(nameof(Fork))}s"));
         builder.HasMany(f => f.IncludedInFilterLists)
             .WithMany(f => f.IncludesFilterLists)
-            .UsingEntity(
+            .UsingEntity<Dictionary<string, object>>(
                 nameof(Merge),
-                e =>
-                {
-                    e.ToTable($"{nr.RewriteName(nameof(Merge))}s");
-                    e.Property<long>(nameof(Merge.IncludedInFilterListId));
-                    e.Property<long>(nameof(Merge.IncludesFilterListId));
-                    e.HasKey(nameof(Merge.IncludedInFilterListId), nameof(Merge.IncludesFilterListId));
-                });
+                rj => rj
+                    .HasOne<FilterList>()
+                    .WithMany()
+                    .HasForeignKey(nameof(Merge.IncludedInFilterListId)),
+                lj => lj
+                    .HasOne<FilterList>()
+                    .WithMany()
+                    .HasForeignKey(nameof(Merge.IncludesFilterListId)),
+                e => e.ToTable($"{nr.RewriteName(nameof(Merge))}s"));
         builder.HasMany(f => f.DependencyFilterLists)
             .WithMany(f => f.DependentFilterLists)
-            .UsingEntity(
+            .UsingEntity<Dictionary<string, object>>(
                 nameof(Dependent),
-                e =>
-                {
-                    e.ToTable($"{nr.RewriteName(nameof(Dependent))}s");
-                    e.Property<long>(nameof(Dependent.DependencyFilterListId));
-                    e.Property<long>(nameof(Dependent.DependentFilterListId));
-                    e.HasKey(nameof(Dependent.DependencyFilterListId), nameof(Dependent.DependentFilterListId));
-                });
+                rj => rj
+                    .HasOne<FilterList>()
+                    .WithMany()
+                    .HasForeignKey(nameof(Dependent.DependencyFilterListId)),
+                lj => lj
+                    .HasOne<FilterList>()
+                    .WithMany()
+                    .HasForeignKey(nameof(Dependent.DependentFilterListId)),
+                e => e.ToTable($"{nr.RewriteName(nameof(Dependent))}s"));
         builder.HasMany(f => f.Changes)
             .WithOne()
             .HasForeignKey(nameof(Change.FilterListId));
