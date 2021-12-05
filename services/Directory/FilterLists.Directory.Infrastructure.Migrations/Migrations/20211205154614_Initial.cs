@@ -364,7 +364,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_filter_list_view_urls", x => x.id);
+                    table.PrimaryKey("pk_filter_list_view_urls", x => new { x.filter_list_id, x.id });
                     table.ForeignKey(
                         name: "fk_filter_list_view_urls_filter_lists_filter_list_id",
                         column: x => x.filter_list_id,

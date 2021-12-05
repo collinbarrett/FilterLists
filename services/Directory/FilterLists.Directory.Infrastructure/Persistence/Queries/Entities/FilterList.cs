@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Globalization;
+using EFCore.NamingConventions.Internal;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
@@ -36,6 +38,9 @@ internal class FilterListTypeConfiguration : EntityRequiringApprovalTypeConfigur
 {
     public override void Configure(EntityTypeBuilder<FilterList> builder)
     {
+        // TODO: register and resolve INameRewriter
+        var nr = new SnakeCaseNameRewriter(CultureInfo.InvariantCulture);
+
         builder.HasIndex(f => f.Name)
             .IsUnique();
         builder.Property(f => f.LicenseId)
@@ -43,6 +48,19 @@ internal class FilterListTypeConfiguration : EntityRequiringApprovalTypeConfigur
         builder.HasOne(f => f.License)
             .WithMany(l => l.FilterLists)
             .OnDelete(DeleteBehavior.Restrict);
+        builder.OwnsMany(
+            f => f.ViewUrls,
+            b =>
+            {
+                b.ToTable($"{nr.RewriteName(nameof(FilterListViewUrl))}s");
+                b.Property(u => u.SegmentNumber)
+                    .HasDefaultValue(1);
+                b.Property(u => u.Primariness)
+                    .HasDefaultValue(1);
+                b.HasIndex(u => new { u.FilterListId, u.SegmentNumber, u.Primariness })
+                    .IsUnique();
+                b.HasDataJsonFile<FilterListViewUrl>();
+            });
         builder.HasDataJsonFileEntityRequiringApproval<FilterList>();
         base.Configure(builder);
     }

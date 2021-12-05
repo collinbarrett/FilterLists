@@ -14,7 +14,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20211205104001_Initial")]
+    [Migration("20211205154614_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -295,46 +295,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         .HasDatabaseName("ix_filter_list_tags_tag_id");
 
                     b.ToTable("filter_list_tags", (string)null);
-                });
-
-            modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListViewUrl", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasColumnName("id");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
-
-                    b.Property<long>("FilterListId")
-                        .HasColumnType("bigint")
-                        .HasColumnName("filter_list_id");
-
-                    b.Property<short>("Primariness")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("smallint")
-                        .HasDefaultValue((short)1)
-                        .HasColumnName("primariness");
-
-                    b.Property<short>("SegmentNumber")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("smallint")
-                        .HasDefaultValue((short)1)
-                        .HasColumnName("segment_number");
-
-                    b.Property<string>("Url")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("url");
-
-                    b.HasKey("Id")
-                        .HasName("pk_filter_list_view_urls");
-
-                    b.HasIndex("FilterListId", "SegmentNumber", "Primariness")
-                        .IsUnique()
-                        .HasDatabaseName("ix_filter_list_view_urls_filter_list_id_segment_number_primari");
-
-                    b.ToTable("filter_list_view_urls", (string)null);
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Fork", b =>
@@ -705,7 +665,55 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         .IsRequired()
                         .HasConstraintName("fk_filter_lists_licenses_license_id");
 
+                    b.OwnsMany("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListViewUrl", "ViewUrls", b1 =>
+                        {
+                            b1.Property<long>("FilterListId")
+                                .HasColumnType("bigint")
+                                .HasColumnName("filter_list_id");
+
+                            b1.Property<long>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("bigint")
+                                .HasColumnName("id");
+
+                            NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b1.Property<long>("Id"));
+
+                            b1.Property<short>("Primariness")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("smallint")
+                                .HasDefaultValue((short)1)
+                                .HasColumnName("primariness");
+
+                            b1.Property<short>("SegmentNumber")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("smallint")
+                                .HasDefaultValue((short)1)
+                                .HasColumnName("segment_number");
+
+                            b1.Property<string>("Url")
+                                .IsRequired()
+                                .HasColumnType("text")
+                                .HasColumnName("url");
+
+                            b1.HasKey("FilterListId", "Id")
+                                .HasName("pk_filter_list_view_urls");
+
+                            b1.HasIndex("FilterListId", "SegmentNumber", "Primariness")
+                                .IsUnique()
+                                .HasDatabaseName("ix_filter_list_view_urls_filter_list_id_segment_number_primari");
+
+                            b1.ToTable("filter_list_view_urls", (string)null);
+
+                            b1.WithOwner("FilterList")
+                                .HasForeignKey("FilterListId")
+                                .HasConstraintName("fk_filter_list_view_urls_filter_lists_filter_list_id");
+
+                            b1.Navigation("FilterList");
+                        });
+
                     b.Navigation("License");
+
+                    b.Navigation("ViewUrls");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListLanguage", b =>
@@ -790,18 +798,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.Navigation("FilterList");
 
                     b.Navigation("Tag");
-                });
-
-            modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListViewUrl", b =>
-                {
-                    b.HasOne("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterList", "FilterList")
-                        .WithMany("ViewUrls")
-                        .HasForeignKey("FilterListId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_filter_list_view_urls_filter_lists_filter_list_id");
-
-                    b.Navigation("FilterList");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Fork", b =>
@@ -890,8 +886,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.Navigation("IncludesFilterLists");
 
                     b.Navigation("UpstreamFilterLists");
-
-                    b.Navigation("ViewUrls");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Language", b =>

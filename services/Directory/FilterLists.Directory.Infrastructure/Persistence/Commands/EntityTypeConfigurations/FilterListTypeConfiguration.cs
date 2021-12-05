@@ -47,6 +47,23 @@ internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList
                     e.Property<long>(nameof(FilterListTag.TagId));
                     e.HasKey(nameof(FilterListTag.FilterListId), nameof(FilterListTag.TagId));
                 });
+        builder.OwnsMany(
+            f => f.ViewUrls,
+            b =>
+            {
+                b.ToTable($"{nr.RewriteName(nameof(FilterListViewUrl))}s");
+                b.Property(u => u.SegmentNumber)
+                    .HasDefaultValue(1);
+                b.Property(u => u.Primariness)
+                    .HasDefaultValue(1);
+                b.HasIndex(
+                        nameof(FilterListViewUrl.FilterListId),
+                        nameof(FilterListViewUrl.SegmentNumber),
+                        nameof(FilterListViewUrl.Primariness))
+                    .IsUnique();
+            });
+        builder.Navigation(f => f.ViewUrls)
+            .AutoInclude();
         builder.HasMany(f => f.Maintainers)
             .WithMany(m => m.FilterLists)
             .UsingEntity(
@@ -101,8 +118,6 @@ internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList
             .WithOne()
             .HasForeignKey(nameof(Change.FilterListId));
         builder.Navigation(f => f.Changes)
-            .AutoInclude();
-        builder.Navigation(f => f.ViewUrls)
             .AutoInclude();
     }
 }

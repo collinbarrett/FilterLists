@@ -53,6 +53,17 @@ internal static class SeedConfigurationExtension
         entityTypeBuilder.HasData(entities);
     }
 
+    public static void HasDataJsonFile<TEntity>(this OwnedNavigationBuilder ownedNavigationBuilder) where TEntity : class
+    {
+        var entities = Deserialize<TEntity>();
+        if (entities.Count == 0)
+        {
+            return;
+        }
+
+        ownedNavigationBuilder.HasData(entities);
+    }
+
     private static List<TEntity> Deserialize<TEntity>()
     {
         // uncomment to short-circuit HasData() when adding a migration
