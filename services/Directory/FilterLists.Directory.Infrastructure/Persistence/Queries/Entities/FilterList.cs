@@ -53,6 +53,8 @@ internal class FilterListTypeConfiguration : EntityRequiringApprovalTypeConfigur
             b =>
             {
                 b.ToTable($"{nr.RewriteName(nameof(FilterListViewUrl))}s");
+                b.Property(u => u.Id)
+                    .UseHiLo($"EntityFrameworkHiLoSequence-{nameof(FilterListViewUrl)}");
                 b.Property(u => u.SegmentNumber)
                     .HasDefaultValue(1);
                 b.Property(u => u.Primariness)

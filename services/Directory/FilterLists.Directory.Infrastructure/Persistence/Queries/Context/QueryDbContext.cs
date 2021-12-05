@@ -37,6 +37,9 @@ public class QueryDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.HasSequence($"EntityFrameworkHiLoSequence-{nameof(FilterListViewUrl)}")
+            .StartsAt(3000)
+            .IncrementsBy(3);
         modelBuilder.ApplyConfigurationsFromAssembly(
             GetType().Assembly,
             type => type.Namespace == typeof(FilterListTypeConfiguration).Namespace);

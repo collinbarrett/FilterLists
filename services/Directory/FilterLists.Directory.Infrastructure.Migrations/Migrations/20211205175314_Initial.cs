@@ -15,6 +15,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             migrationBuilder.AlterDatabase()
                 .Annotation("Npgsql:Enum:aggregate_type", "filter_list,language,license,maintainer,software,syntax,tag");
 
+            migrationBuilder.CreateSequence(
+                name: "EntityFrameworkHiLoSequence-FilterListViewUrl",
+                startValue: 3000L,
+                incrementBy: 3);
+
             migrationBuilder.CreateTable(
                 name: "languages",
                 columns: table => new
@@ -355,8 +360,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "filter_list_view_urls",
                 columns: table => new
                 {
-                    id = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    id = table.Column<long>(type: "bigint", nullable: false),
                     filter_list_id = table.Column<long>(type: "bigint", nullable: false),
                     segment_number = table.Column<short>(type: "smallint", nullable: false, defaultValue: (short)1),
                     primariness = table.Column<short>(type: "smallint", nullable: false, defaultValue: (short)1),
@@ -608,6 +612,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             migrationBuilder.DropTable(
                 name: "licenses");
+
+            migrationBuilder.DropSequence(
+                name: "EntityFrameworkHiLoSequence-FilterListViewUrl");
         }
     }
 }

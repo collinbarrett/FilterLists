@@ -25,6 +25,10 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             NpgsqlModelBuilderExtensions.HasPostgresEnum(modelBuilder, "aggregate_type", new[] { "filter_list", "language", "license", "maintainer", "software", "syntax", "tag" });
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.HasSequence("EntityFrameworkHiLoSequence-FilterListViewUrl")
+                .StartsAt(3000L)
+                .IncrementsBy(3);
+
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Change", b =>
                 {
                     b.Property<long>("Id")
@@ -66048,7 +66052,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                 .HasColumnType("bigint")
                                 .HasColumnName("id");
 
-                            NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b1.Property<long>("Id"));
+                            NpgsqlPropertyBuilderExtensions.UseHiLo(b1.Property<long>("Id"), "EntityFrameworkHiLoSequence-FilterListViewUrl");
 
                             b1.Property<short>("Primariness")
                                 .ValueGeneratedOnAdd()
