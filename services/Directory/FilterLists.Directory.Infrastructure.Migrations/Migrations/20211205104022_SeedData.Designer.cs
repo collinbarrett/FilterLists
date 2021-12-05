@@ -14,8 +14,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20211127110938_2696")]
-    partial class _2696
+    [Migration("20211205104022_SeedData")]
+    partial class SeedData
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -81717,6 +81717,118 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Primariness = (short)5,
                             SegmentNumber = (short)0,
                             Url = "https://filtersheroes.gitlab.io/AssetsMirror/euCDB.txt"
+                        },
+                        new
+                        {
+                            Id = 2798L,
+                            FilterListId = 2471L,
+                            Primariness = (short)3,
+                            SegmentNumber = (short)0,
+                            Url = "https://combinatronics.io/BPower0036/AdBlockFilters/main/easydutch.txt"
+                        },
+                        new
+                        {
+                            Id = 2799L,
+                            FilterListId = 2471L,
+                            Primariness = (short)4,
+                            SegmentNumber = (short)0,
+                            Url = "https://cdn.statically.io/gh/BPower0036/AdBlockFilters/main/easydutch.txt"
+                        },
+                        new
+                        {
+                            Id = 2800L,
+                            FilterListId = 2471L,
+                            Primariness = (short)5,
+                            SegmentNumber = (short)0,
+                            Url = "https://cdn.statically.io/gl/BPower0036/AdBlockFilters/main/easydutch.txt"
+                        },
+                        new
+                        {
+                            Id = 2801L,
+                            FilterListId = 2471L,
+                            Primariness = (short)6,
+                            SegmentNumber = (short)0,
+                            Url = "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockFilters@main/easydutch.txt"
+                        },
+                        new
+                        {
+                            Id = 2802L,
+                            FilterListId = 2520L,
+                            Primariness = (short)2,
+                            SegmentNumber = (short)0,
+                            Url = "https://gitlab.com/BPower0036/AdBlockFilters/-/raw/main/dynamic rules"
+                        },
+                        new
+                        {
+                            Id = 2803L,
+                            FilterListId = 2520L,
+                            Primariness = (short)3,
+                            SegmentNumber = (short)0,
+                            Url = "https://combinatronics.io/BPower0036/AdBlockfilters/main/dynamic rules"
+                        },
+                        new
+                        {
+                            Id = 2804L,
+                            FilterListId = 2520L,
+                            Primariness = (short)4,
+                            SegmentNumber = (short)0,
+                            Url = "https://cdn.statically.io/gh/BPower0036/AdBlockfilters/main/dynamic rules"
+                        },
+                        new
+                        {
+                            Id = 2805L,
+                            FilterListId = 2520L,
+                            Primariness = (short)5,
+                            SegmentNumber = (short)0,
+                            Url = "https://cdn.statically.io/gl/BPower0036/AdBlockFilters/main/dynamic rules"
+                        },
+                        new
+                        {
+                            Id = 2806L,
+                            FilterListId = 2520L,
+                            Primariness = (short)6,
+                            SegmentNumber = (short)0,
+                            Url = "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockfilters@main/dynamic rules"
+                        },
+                        new
+                        {
+                            Id = 2807L,
+                            FilterListId = 2521L,
+                            Primariness = (short)2,
+                            SegmentNumber = (short)0,
+                            Url = "https://gitlab.com/BPower0036/AdBlockFilters/-/raw/main/my filters"
+                        },
+                        new
+                        {
+                            Id = 2808L,
+                            FilterListId = 2521L,
+                            Primariness = (short)3,
+                            SegmentNumber = (short)0,
+                            Url = "https://combinatronics.io/BPower0036/AdBlockfilters/main/my filters"
+                        },
+                        new
+                        {
+                            Id = 2809L,
+                            FilterListId = 2521L,
+                            Primariness = (short)4,
+                            SegmentNumber = (short)0,
+                            Url = "https://cdn.statically.io/gh/BPower0036/AdBlockfilters/main/my filters"
+                        },
+                        new
+                        {
+                            Id = 2810L,
+                            FilterListId = 2521L,
+                            Primariness = (short)5,
+                            SegmentNumber = (short)0,
+                            Url = "https://cdn.statically.io/gl/BPower0036/AdBlockFilters/main/my filters"
+                        },
+                        new
+                        {
+                            Id = 2811L,
+                            FilterListId = 2521L,
+                            Primariness = (short)6,
+                            SegmentNumber = (short)0,
+                            Url = "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockfilters@main/my filters"
                         });
                 });
 

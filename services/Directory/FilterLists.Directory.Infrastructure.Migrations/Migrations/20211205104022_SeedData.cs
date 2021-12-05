@@ -2850,7 +2850,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 2517L, null, "A blocklist of phishing websites. Based on PhishTank and OpenPhish.", null, null, null, "https://gitlab.com/curben/phishing-filter", true, "https://gitlab.com/curben/phishing-filter/issues", 8L, "phishing-filter (dnscrypt-proxy IPs)", null, null, null },
                     { 2518L, null, "A block of websites that host potentially unwanted programs", null, null, null, "https://gitlab.com/curben/pup-filter", true, "https://gitlab.com/curben/pup-filter/issues", 3L, "pup-filter (dnscrypt-proxy names)", null, null, null },
                     { 2519L, null, "A supplement for EasyList and EasyPrivacy on Dutch domains including anti-adblock", "https://www.paypal.com/donate?hosted_button_id=8BBT5V55TGVXW", null, null, "https://github.com/JohnyP36/Personal-List", true, "https://github.com/JohnyP36/Personal-List/issues", 4L, "Dutch Filter List", null, null, null },
-                    { 2520L, null, "Dynamic rules for uBlock Origin for 3p-frame unblocking only", "https://www.paypal.com/donate?hosted_button_id=M4D2NPZX5NS4C", null, null, "https://github.com/BPower0036/AdBlockFilters/", true, "https://github.com/BPower0036/AdBlockFilters/issues", 4L, "Dynamic rules (uBo)", null, null, null },
+                    { 2520L, null, "Medium mode for uBlock Origin when blocking 3p-frames and 3p-scripts", "https://www.paypal.com/donate?hosted_button_id=M4D2NPZX5NS4C", null, null, "https://github.com/BPower0036/AdBlockFilters/", true, "https://github.com/BPower0036/AdBlockFilters/issues", 4L, "Dynamic rules for uBo's medium mode", null, null, null },
                     { 2521L, null, "Personal filter list (My filters)", "https://www.paypal.com/donate?hosted_button_id=M4D2NPZX5NS4C", null, null, "https://github.com/BPower0036/AdBlockFilters/", true, "https://github.com/BPower0036/AdBlockFilters/issues", 4L, "Personal filter list (My filters) (uBo)", null, null, null },
                     { 2522L, null, null, null, null, null, "https://git.bubblev.org/bubblev/bubble-filter-lists/", true, null, 5L, "Bubble Filter Lists - Ads and Trackers", null, null, null },
                     { 2523L, null, null, null, null, null, "https://git.bubblev.org/bubblev/bubble-filter-lists/", true, null, 5L, "Bubble Filter Lists - US News", null, null, null },
@@ -13602,7 +13602,21 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 2794L, 2565L, (short)2, "https://cdn.jsdelivr.net/gh/FiltersHeroes/PCCassets@main/euCDB.txt" },
                     { 2795L, 2565L, (short)3, "https://combinatronics.io/FiltersHeroes/PCCassets/main/euCDB.txt" },
                     { 2796L, 2565L, (short)4, "https://cdn.statically.io/gh/FiltersHeroes/PCCassets/main/euCDB.txt" },
-                    { 2797L, 2565L, (short)5, "https://filtersheroes.gitlab.io/AssetsMirror/euCDB.txt" }
+                    { 2797L, 2565L, (short)5, "https://filtersheroes.gitlab.io/AssetsMirror/euCDB.txt" },
+                    { 2798L, 2471L, (short)3, "https://combinatronics.io/BPower0036/AdBlockFilters/main/easydutch.txt" },
+                    { 2799L, 2471L, (short)4, "https://cdn.statically.io/gh/BPower0036/AdBlockFilters/main/easydutch.txt" },
+                    { 2800L, 2471L, (short)5, "https://cdn.statically.io/gl/BPower0036/AdBlockFilters/main/easydutch.txt" },
+                    { 2801L, 2471L, (short)6, "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockFilters@main/easydutch.txt" },
+                    { 2802L, 2520L, (short)2, "https://gitlab.com/BPower0036/AdBlockFilters/-/raw/main/dynamic rules" },
+                    { 2803L, 2520L, (short)3, "https://combinatronics.io/BPower0036/AdBlockfilters/main/dynamic rules" },
+                    { 2804L, 2520L, (short)4, "https://cdn.statically.io/gh/BPower0036/AdBlockfilters/main/dynamic rules" },
+                    { 2805L, 2520L, (short)5, "https://cdn.statically.io/gl/BPower0036/AdBlockFilters/main/dynamic rules" },
+                    { 2806L, 2520L, (short)6, "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockfilters@main/dynamic rules" },
+                    { 2807L, 2521L, (short)2, "https://gitlab.com/BPower0036/AdBlockFilters/-/raw/main/my filters" },
+                    { 2808L, 2521L, (short)3, "https://combinatronics.io/BPower0036/AdBlockfilters/main/my filters" },
+                    { 2809L, 2521L, (short)4, "https://cdn.statically.io/gh/BPower0036/AdBlockfilters/main/my filters" },
+                    { 2810L, 2521L, (short)5, "https://cdn.statically.io/gl/BPower0036/AdBlockFilters/main/my filters" },
+                    { 2811L, 2521L, (short)6, "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockfilters@main/my filters" }
                 });
 
             migrationBuilder.InsertData(
@@ -65534,6 +65548,76 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 table: "filter_list_view_urls",
                 keyColumn: "id",
                 keyValue: 2797L);
+
+            migrationBuilder.DeleteData(
+                table: "filter_list_view_urls",
+                keyColumn: "id",
+                keyValue: 2798L);
+
+            migrationBuilder.DeleteData(
+                table: "filter_list_view_urls",
+                keyColumn: "id",
+                keyValue: 2799L);
+
+            migrationBuilder.DeleteData(
+                table: "filter_list_view_urls",
+                keyColumn: "id",
+                keyValue: 2800L);
+
+            migrationBuilder.DeleteData(
+                table: "filter_list_view_urls",
+                keyColumn: "id",
+                keyValue: 2801L);
+
+            migrationBuilder.DeleteData(
+                table: "filter_list_view_urls",
+                keyColumn: "id",
+                keyValue: 2802L);
+
+            migrationBuilder.DeleteData(
+                table: "filter_list_view_urls",
+                keyColumn: "id",
+                keyValue: 2803L);
+
+            migrationBuilder.DeleteData(
+                table: "filter_list_view_urls",
+                keyColumn: "id",
+                keyValue: 2804L);
+
+            migrationBuilder.DeleteData(
+                table: "filter_list_view_urls",
+                keyColumn: "id",
+                keyValue: 2805L);
+
+            migrationBuilder.DeleteData(
+                table: "filter_list_view_urls",
+                keyColumn: "id",
+                keyValue: 2806L);
+
+            migrationBuilder.DeleteData(
+                table: "filter_list_view_urls",
+                keyColumn: "id",
+                keyValue: 2807L);
+
+            migrationBuilder.DeleteData(
+                table: "filter_list_view_urls",
+                keyColumn: "id",
+                keyValue: 2808L);
+
+            migrationBuilder.DeleteData(
+                table: "filter_list_view_urls",
+                keyColumn: "id",
+                keyValue: 2809L);
+
+            migrationBuilder.DeleteData(
+                table: "filter_list_view_urls",
+                keyColumn: "id",
+                keyValue: 2810L);
+
+            migrationBuilder.DeleteData(
+                table: "filter_list_view_urls",
+                keyColumn: "id",
+                keyValue: 2811L);
 
             migrationBuilder.DeleteData(
                 table: "filter_lists",
