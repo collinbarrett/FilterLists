@@ -10,15 +10,49 @@ namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
 
 public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
 {
+    private readonly ICollection<FilterListChange> _changes = new HashSet<FilterListChange>();
+    private readonly ICollection<FilterList> _dependencyFilterLists = new HashSet<FilterList>();
+    private readonly ICollection<FilterList> _dependentFilterLists = new HashSet<FilterList>();
+    private readonly ICollection<FilterList> _forkFilterLists = new HashSet<FilterList>();
+    private readonly ICollection<FilterList> _includedInFilterLists = new HashSet<FilterList>();
+    private readonly ICollection<FilterList> _includesFilterLists = new HashSet<FilterList>();
+    private readonly ICollection<Language> _languages = new HashSet<Language>();
+    private readonly ICollection<Maintainer> _maintainers = new HashSet<Maintainer>();
+    private readonly ICollection<Syntax> _syntaxes = new HashSet<Syntax>();
+    private readonly ICollection<Tag> _tags = new HashSet<Tag>();
+    private readonly ICollection<FilterList> _upstreamFilterLists = new HashSet<FilterList>();
+    private readonly ICollection<FilterListViewUrl> _viewUrls = new HashSet<FilterListViewUrl>();
+
     protected FilterList() { }
 
     public string Name { get; private init; } = default!;
     public string? Description { get; private init; }
     public virtual License License { get; private init; } = default!;
-    public virtual IEnumerable<Syntax> Syntaxes { get; private init; } = new HashSet<Syntax>();
-    public virtual IEnumerable<Language> Languages { get; private init; } = new HashSet<Language>();
-    public virtual IEnumerable<Tag> Tags { get; private init; } = new HashSet<Tag>();
-    public virtual IEnumerable<FilterListViewUrl> ViewUrls { get; private init; } = new HashSet<FilterListViewUrl>();
+
+    public virtual IEnumerable<Syntax> Syntaxes
+    {
+        get => _syntaxes;
+        private init => _syntaxes = new HashSet<Syntax>(value);
+    }
+
+    public virtual IEnumerable<Language> Languages
+    {
+        get => _languages;
+        private init => _languages = new HashSet<Language>(value);
+    }
+
+    public virtual IEnumerable<Tag> Tags
+    {
+        get => _tags;
+        private init => _tags = new HashSet<Tag>(value);
+    }
+
+    public virtual IEnumerable<FilterListViewUrl> ViewUrls
+    {
+        get => _viewUrls;
+        private init => _viewUrls = new HashSet<FilterListViewUrl>(value);
+    }
+
     public Uri? HomeUrl { get; private init; }
     public Uri? OnionUrl { get; private init; }
     public Uri? PolicyUrl { get; private init; }
@@ -28,14 +62,50 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
     public Uri? ChatUrl { get; private init; }
     public string? EmailAddress { get; private init; }
     public Uri? DonateUrl { get; private init; }
-    public virtual IEnumerable<Maintainer> Maintainers { get; private init; } = new HashSet<Maintainer>();
-    public virtual IEnumerable<FilterList> UpstreamFilterLists { get; private init; } = new HashSet<FilterList>();
-    public virtual IEnumerable<FilterList> ForkFilterLists { get; private init; } = new HashSet<FilterList>();
-    public virtual IEnumerable<FilterList> IncludedInFilterLists { get; private init; } = new HashSet<FilterList>();
-    public virtual IEnumerable<FilterList> IncludesFilterLists { get; private init; } = new HashSet<FilterList>();
-    public virtual IEnumerable<FilterList> DependencyFilterLists { get; private init; } = new HashSet<FilterList>();
-    public virtual IEnumerable<FilterList> DependentFilterLists { get; private init; } = new HashSet<FilterList>();
-    public virtual IEnumerable<FilterListChange> Changes { get; private set; } = new HashSet<FilterListChange>();
+
+    public virtual IEnumerable<Maintainer> Maintainers
+    {
+        get => _maintainers;
+        private init => _maintainers = new HashSet<Maintainer>(value);
+    }
+
+    public virtual IEnumerable<FilterList> UpstreamFilterLists
+    {
+        get => _upstreamFilterLists;
+        private init => _upstreamFilterLists = new HashSet<FilterList>(value);
+    }
+
+    public virtual IEnumerable<FilterList> ForkFilterLists
+    {
+        get => _forkFilterLists;
+        private init => _forkFilterLists = new HashSet<FilterList>(value);
+    }
+
+    public virtual IEnumerable<FilterList> IncludedInFilterLists
+    {
+        get => _includedInFilterLists;
+        private init => _includedInFilterLists = new HashSet<FilterList>(value);
+    }
+
+    public virtual IEnumerable<FilterList> IncludesFilterLists
+    {
+        get => _includesFilterLists;
+        private init => _includesFilterLists = new HashSet<FilterList>(value);
+    }
+
+    public virtual IEnumerable<FilterList> DependencyFilterLists
+    {
+        get => _dependencyFilterLists;
+        private init => _dependencyFilterLists = new HashSet<FilterList>(value);
+    }
+
+    public virtual IEnumerable<FilterList> DependentFilterLists
+    {
+        get => _dependentFilterLists;
+        private init => _dependentFilterLists = new HashSet<FilterList>(value);
+    }
+
+    public virtual IEnumerable<FilterListChange> Changes => _changes;
     public bool IsApproved { get; private init; }
 
     public static FilterList CreatePendingApproval(
@@ -103,9 +173,9 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
             Name = name,
             Description = description,
             License = license,
-            Syntaxes = new HashSet<Syntax>(syntaxes),
-            Languages = new HashSet<Language>(languages),
-            Tags = new HashSet<Tag>(tags),
+            Syntaxes = syntaxes,
+            Languages = languages,
+            Tags = tags,
             ViewUrls = urls,
             HomeUrl = homeUrl,
             OnionUrl = onionUrl,
@@ -116,7 +186,7 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
             ChatUrl = chatUrl,
             EmailAddress = emailAddress,
             DonateUrl = donateUrl,
-            Maintainers = new HashSet<Maintainer>(maintainers),
+            Maintainers = maintainers,
             UpstreamFilterLists = upstreamFilterListSet,
             ForkFilterLists = forkFilterListSet,
             IncludedInFilterLists = includedInFilterListSet,
@@ -125,7 +195,7 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
             DependentFilterLists = dependentFilterListSet,
             IsApproved = false
         };
-        list.Changes = new HashSet<FilterListChange>(new[] { FilterListChange.Create(list, createReason) });
+        list._changes.Add(FilterListChange.Create(list, createReason));
         return list;
     }
 }
