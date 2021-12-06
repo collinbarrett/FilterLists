@@ -182,11 +182,30 @@ public static class CreateList
 
     internal class Validator : AbstractValidator<Command>
     {
-        public Validator()
+        public Validator(IValidator<Uri?> urlValidator)
         {
             RuleFor(c => c.LicenseId)
                 .GreaterThan(0)
                 .When(c => c.LicenseId != null);
+            RuleForEach(c => c.ViewUrls.Select(u => u.Url))
+                .SetValidator(urlValidator)
+                .OverridePropertyName(nameof(Command.ViewUrls));
+            RuleFor(c => c.HomeUrl)
+                .SetValidator(urlValidator);
+            RuleFor(c => c.OnionUrl)
+                .SetValidator(urlValidator);
+            RuleFor(c => c.PolicyUrl)
+                .SetValidator(urlValidator);
+            RuleFor(c => c.SubmissionUrl)
+                .SetValidator(urlValidator);
+            RuleFor(c => c.IssuesUrl)
+                .SetValidator(urlValidator);
+            RuleFor(c => c.ForumUrl)
+                .SetValidator(urlValidator);
+            RuleFor(c => c.ChatUrl)
+                .SetValidator(urlValidator);
+            RuleFor(c => c.DonateUrl)
+                .SetValidator(urlValidator);
         }
     }
 
