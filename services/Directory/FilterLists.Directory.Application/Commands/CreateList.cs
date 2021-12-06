@@ -182,11 +182,19 @@ public static class CreateList
 
     internal class Validator : AbstractValidator<Command>
     {
-        public Validator(IValidator<Uri?> urlValidator)
+        public Validator(IValidator<long?> entityIdValidator, IValidator<Uri?> urlValidator)
         {
             RuleFor(c => c.LicenseId)
-                .GreaterThan(0)
-                .When(c => c.LicenseId != null);
+                .SetValidator(entityIdValidator);
+            RuleForEach(c => c.SyntaxIds.Select(id => (long?)id))
+                .SetValidator(entityIdValidator)
+                .OverridePropertyName(nameof(Command.SyntaxIds));
+            RuleForEach(c => c.LanguageIds.Select(id => (long?)id))
+                .SetValidator(entityIdValidator)
+                .OverridePropertyName(nameof(Command.LanguageIds));
+            RuleForEach(c => c.TagIds.Select(id => (long?)id))
+                .SetValidator(entityIdValidator)
+                .OverridePropertyName(nameof(Command.TagIds));
             RuleForEach(c => c.ViewUrls.Select(u => u.Url))
                 .SetValidator(urlValidator)
                 .OverridePropertyName(nameof(Command.ViewUrls));
@@ -206,6 +214,27 @@ public static class CreateList
                 .SetValidator(urlValidator);
             RuleFor(c => c.DonateUrl)
                 .SetValidator(urlValidator);
+            RuleForEach(c => c.MaintainerIds.Select(id => (long?)id))
+                .SetValidator(entityIdValidator)
+                .OverridePropertyName(nameof(Command.MaintainerIds));
+            RuleForEach(c => c.UpstreamFilterListIds.Select(id => (long?)id))
+                .SetValidator(entityIdValidator)
+                .OverridePropertyName(nameof(Command.UpstreamFilterListIds));
+            RuleForEach(c => c.ForkFilterListIds.Select(id => (long?)id))
+                .SetValidator(entityIdValidator)
+                .OverridePropertyName(nameof(Command.ForkFilterListIds));
+            RuleForEach(c => c.IncludedInFilterListIds.Select(id => (long?)id))
+                .SetValidator(entityIdValidator)
+                .OverridePropertyName(nameof(Command.IncludedInFilterListIds));
+            RuleForEach(c => c.IncludesFilterListIds.Select(id => (long?)id))
+                .SetValidator(entityIdValidator)
+                .OverridePropertyName(nameof(Command.IncludesFilterListIds));
+            RuleForEach(c => c.DependencyFilterListIds.Select(id => (long?)id))
+                .SetValidator(entityIdValidator)
+                .OverridePropertyName(nameof(Command.DependencyFilterListIds));
+            RuleForEach(c => c.DependentFilterListIds.Select(id => (long?)id))
+                .SetValidator(entityIdValidator)
+                .OverridePropertyName(nameof(Command.DependentFilterListIds));
         }
     }
 
