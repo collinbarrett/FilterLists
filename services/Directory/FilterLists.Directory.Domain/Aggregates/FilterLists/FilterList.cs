@@ -4,6 +4,7 @@ using FilterLists.Directory.Domain.Aggregates.Maintainers;
 using FilterLists.Directory.Domain.Aggregates.Syntaxes;
 using FilterLists.Directory.Domain.Aggregates.Tags;
 using FilterLists.Directory.Domain.Changes;
+using FilterLists.Directory.Domain.ValueObjects;
 using FilterLists.SharedKernel.Domain.SeedWork;
 
 namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
@@ -54,7 +55,7 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
     }
 
     public Uri? HomeUrl { get; private init; }
-    public Uri? OnionUrl { get; private init; }
+    public OnionUrl? OnionUrl { get; private init; }
     public Uri? PolicyUrl { get; private init; }
     public Uri? SubmissionUrl { get; private init; }
     public Uri? IssuesUrl { get; private init; }
@@ -178,7 +179,7 @@ public class FilterList : Entity, IRequireChangeApproval<FilterListChange>
             Tags = tags,
             ViewUrls = urls,
             HomeUrl = homeUrl,
-            OnionUrl = onionUrl,
+            OnionUrl = onionUrl is null ? default : new OnionUrl(onionUrl),
             PolicyUrl = policyUrl,
             SubmissionUrl = submissionUrl,
             IssuesUrl = issuesUrl,

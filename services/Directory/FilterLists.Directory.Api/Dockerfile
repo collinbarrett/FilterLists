@@ -33,12 +33,32 @@ COPY Directory/FilterLists.Directory.Api.Contracts/. Directory/FilterLists.Direc
 COPY Directory/FilterLists.Directory.Application/. Directory/FilterLists.Directory.Application/
 WORKDIR /app/Directory/FilterLists.Directory.Api
 COPY Directory/FilterLists.Directory.Api/. .
+RUN dotnet build -c Release -p:DebugType=None -p:DebugSymbols=false --no-restore -p:TreatWarningsAsErrors=true -r linux-musl-x64 --self-contained true -p:PublishSingleFile=true
 
+# init test
+FROM build AS test
+
+# restore API tests
+WORKDIR /app/Directory/FilterLists.Directory.Domain.Tests
+COPY Directory/FilterLists.Directory.Domain.Tests/FilterLists.Directory.Domain.Tests.csproj .
+RUN dotnet restore
+
+# build API tests
+COPY Directory/FilterLists.Directory.Domain.Tests/. Directory/FilterLists.Directory.Domain.Tests/
+RUN dotnet build -c Release --no-restore -p:TreatWarningsAsErrors=true
+
+# test API
+RUN dotnet test -c Release --no-build
+
+# init publish
+FROM build AS publish
+
+# publish API
 # TODO: enable PublishTrimmed in csproj file
 # TODO: enable PublishReadyToRun
-RUN dotnet publish -c Release -p:DebugType=None -p:DebugSymbols=false --no-restore -o /app/publish -p:TreatWarningsAsErrors=true -r linux-musl-x64 --self-contained true -p:PublishSingleFile=true
+RUN dotnet publish -c Release -p:DebugType=None -p:DebugSymbols=false --no-build -o /app/publish -p:TreatWarningsAsErrors=true -r linux-musl-x64 --self-contained true -p:PublishSingleFile=true
 
 # package final
 FROM base AS final
-COPY --from=build /app/publish .
+COPY --from=publish /app/publish .
 ENTRYPOINT ./FilterLists.Directory.Api

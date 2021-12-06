@@ -1,4 +1,5 @@
-﻿using FilterLists.SharedKernel.Domain.SeedWork;
+﻿using FilterLists.Directory.Domain.ValueObjects;
+using FilterLists.SharedKernel.Domain.SeedWork;
 
 namespace FilterLists.Directory.Domain.Aggregates.FilterLists;
 
@@ -12,7 +13,7 @@ public class FilterListValueObject : ValueObject
     public IEnumerable<long> TagIds { get; private init; } = new HashSet<long>();
     public IEnumerable<long> ViewUrlIds { get; private init; } = new HashSet<long>();
     public Uri? HomeUrl { get; private init; }
-    public Uri? OnionUrl { get; private init; }
+    public OnionUrl? OnionUrl { get; private init; }
     public Uri? PolicyUrl { get; private init; }
     public Uri? SubmissionUrl { get; private init; }
     public Uri? IssuesUrl { get; private init; }

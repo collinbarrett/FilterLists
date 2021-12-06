@@ -8,6 +8,7 @@ trigger:
         services/Directory/azure-pipelines.api.yaml,
         services/SharedKernel/FilterLists.SharedKernel.Logging/*,
         services/Directory/FilterLists.Directory.Domain/*,
+        services/Directory/FilterLists.Directory.Domain.Tests/*,
         services/Directory/FilterLists.Directory.Infrastructure/*,
         services/Directory/FilterLists.Directory.Infrastructure.Migrations/*,
         services/Directory/FilterLists.Directory.Api.Contracts/*,
@@ -33,6 +34,7 @@ pr:
         services/Directory/azure-pipelines.api.yaml,
         services/SharedKernel/FilterLists.SharedKernel.Logging/*,
         services/Directory/FilterLists.Directory.Domain/*,
+        services/Directory/FilterLists.Directory.Domain.Tests/*,
         services/Directory/FilterLists.Directory.Infrastructure/*,
         services/Directory/FilterLists.Directory.Infrastructure.Migrations/*,
         services/Directory/FilterLists.Directory.Api.Contracts/*,
@@ -51,12 +53,28 @@ pr:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  DOCKER_BUILDKIT: 1
+
 steps:
   - checkout: self
     fetchDepth: 5
 
   - task: Docker@2
-    displayName: build
+    displayName: test
+    inputs:
+      containerRegistry: github-container-registry
+      repository: collinbarrett/filterlists-directory-api
+      command: build
+      Dockerfile: services/Directory/FilterLists.Directory.Api/Dockerfile
+      buildContext: ./services
+      arguments: --target test
+      tags: |
+        latest
+        $(Build.BuildId)
+
+  - task: Docker@2
+    displayName: publish
     inputs:
       containerRegistry: github-container-registry
       repository: collinbarrett/filterlists-directory-api
@@ -66,8 +84,6 @@ steps:
       tags: |
         latest
         $(Build.BuildId)
-    env:
-      DOCKER_BUILDKIT: 1
 
   - task: Docker@2
     displayName: push
@@ -78,8 +94,6 @@ steps:
       tags: |
         latest
         $(Build.BuildId)
-    env:
-      DOCKER_BUILDKIT: 1
     condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 
   - task: CopyFiles@2
