@@ -197,7 +197,13 @@ public static class CreateList
                 .OverridePropertyName(nameof(Command.TagIds));
             RuleForEach(c => c.ViewUrls.Select(u => u.Url))
                 .SetValidator(urlValidator)
-                .OverridePropertyName(nameof(Command.ViewUrls));
+                .OverridePropertyName(nameof(Command.ViewUrls) + "." + nameof(FilterListViewUrl.Url));
+            RuleForEach(c => c.ViewUrls.Select(u => u.SegmentNumber))
+                .GreaterThan((short)0)
+                .OverridePropertyName(nameof(Command.ViewUrls) + "." + nameof(FilterListViewUrl.SegmentNumber));
+            RuleForEach(c => c.ViewUrls.Select(u => u.Primariness))
+                .GreaterThan((short)0)
+                .OverridePropertyName(nameof(Command.ViewUrls) + "." + nameof(FilterListViewUrl.Primariness));
             RuleFor(c => c.HomeUrl)
                 .SetValidator(urlValidator);
             RuleFor(c => c.OnionUrl)
