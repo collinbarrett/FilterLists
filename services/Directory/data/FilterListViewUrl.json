@@ -16059,5 +16059,17 @@
     "id": 2811,
     "primariness": 6,
     "url": "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockfilters@main/my%20filters"
+  },
+  {
+    "filterListId": 2519,
+    "id": 2812,
+    "primariness": 2,
+    "url": "https://www.combinatronics.com/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
+  },
+  {
+    "filterListId": 2519,
+    "id": 2813,
+    "primariness": 3,
+    "url": "https://cdn.statically.io/gh/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
   }
 ]
