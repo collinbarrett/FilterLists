@@ -12516,12 +12516,6 @@
     "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt"
   },
   {
-    "filterListId": 2080,
-    "id": 2187,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt"
-  },
-  {
     "filterListId": 2081,
     "id": 2188,
     "primariness": 1,
@@ -12534,12 +12528,6 @@
     "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt"
   },
   {
-    "filterListId": 2083,
-    "id": 2190,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt"
-  },
-  {
     "filterListId": 2084,
     "id": 2191,
     "primariness": 1,
@@ -12550,12 +12538,6 @@
     "id": 2192,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules.txt"
-  },
-  {
-    "filterListId": 2086,
-    "id": 2193,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/static-rules.txt"
   },
   {
     "filterListId": 2087,
@@ -12574,12 +12556,6 @@
     "id": 2196,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider.txt"
-  },
-  {
-    "filterListId": 2090,
-    "id": 2197,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-mob.txt"
   },
   {
     "filterListId": 2091,
@@ -12604,6 +12580,12 @@
     "id": 2201,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt"
+  },
+  {
+    "filterListId": 2095,
+    "id": 2202,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt"
   },
   {
     "filterListId": 2099,
