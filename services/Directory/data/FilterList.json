@@ -13519,14 +13519,6 @@
     "name": "AdGuard Social Media Plus"
   },
   {
-    "description": "AdGuard Tracking Protection filter is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage which this filter aims to complement.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2080,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "AdGuard Tracking Protection Plus"
-  },
-  {
     "description": "Inspired by Sable Filter at MeetingLabs, this removes cookie consents. Main focuses are Japanese sites and other high-traffic sites many Japanese people will visit. False-positive prone rules won't be added (e.g. cookielaw.org, uk-cookie-consent plugin).",
     "homeUrl": "https://github.com/Yuki2718/adblock",
     "id": 2081,
@@ -13543,14 +13535,6 @@
     "name": "Yuki's Blog Parts"
   },
   {
-    "description": "Removes ranking buttons on adult sites.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2083,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "Yuki's Blog Parts Adult"
-  },
-  {
     "description": "This is to counter unnecessary or too generic allowlists which were not addressed or won't be addressed by the maintainer. Only for advanced user as it can cause problems.",
     "homeUrl": "https://github.com/Yuki2718/adblock",
     "id": 2084,
@@ -13565,14 +13549,6 @@
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
     "name": "Yuki's uBlock Dynamic Rules"
-  },
-  {
-    "description": "WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules[^1] and also occasionally cause false-positive. For these reasons I've settled down to AdGuard Social media filter which is relatively small in size and rarely breaks pages; however, it only blocks minimal set of the plugins. This list includes 1) rules for the plugins not on the Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer, and 3) a regex rule focused only on the latest survey scam campaign.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2086,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "Yuki's uBlock Static Rules"
   },
   {
     "description": "Blocklist based on articles published by security research groups.",
@@ -13597,14 +13573,6 @@
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
     "name": "Placeholder Hider with no generic hiding"
-  },
-  {
-    "description": "It's a mobile version of Placeholder Hider with no generic hiding.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2090,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "Placeholder Hider with no generic hiding for mobile"
   },
   {
     "description": "The most comprehensive, block-first, and efficient Japanese list for uBlock Origin that removes ads and analytics on desktop, designed for advanced user.",
@@ -13637,6 +13605,14 @@
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
     "licenseId": 8,
     "name": "Yuki's uBlock Japanese filters - Annoyances"
+  },
+  {
+    "description": "Enhance anti-scam capability of 280blocker adblock filter by utilizing advanced capability of AdGuard/uBlock Origin.",
+    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "id": 2095,
+    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "licenseId": 28,
+    "name": "Anti-scam enhancer for 280blocker adblock filter"
   },
   {
     "description": "Removes blogroll (feed-style mutual links) on Japanese sites. Included in Yuki's uBlock Japanese filters - Annoyances",
