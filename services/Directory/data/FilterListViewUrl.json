@@ -9414,18 +9414,6 @@
     "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-online.txt"
   },
   {
-    "filterListId": 1603,
-    "id": 1628,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-online.txt"
-  },
-  {
-    "filterListId": 1603,
-    "id": 1629,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt"
-  },
-  {
     "filterListId": 1604,
     "id": 1630,
     "primariness": 1,
@@ -11242,18 +11230,6 @@
     "id": 1951,
     "primariness": 1,
     "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-domains-online.txt"
-  },
-  {
-    "filterListId": 1880,
-    "id": 1952,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-domains-online.txt"
-  },
-  {
-    "filterListId": 1880,
-    "id": 1953,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-domains-online.txt"
   },
   {
     "filterListId": 1881,
@@ -13092,34 +13068,10 @@
     "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-dnsmasq-online.conf"
   },
   {
-    "filterListId": 2165,
-    "id": 2290,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-dnsmasq-online.conf"
-  },
-  {
-    "filterListId": 2165,
-    "id": 2291,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-dnsmasq-online.conf"
-  },
-  {
     "filterListId": 2167,
     "id": 2295,
     "primariness": 1,
     "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-hosts-online.txt"
-  },
-  {
-    "filterListId": 2167,
-    "id": 2296,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-hosts-online.txt"
-  },
-  {
-    "filterListId": 2167,
-    "id": 2297,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-hosts-online.txt"
   },
   {
     "filterListId": 2169,
@@ -13128,34 +13080,10 @@
     "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-bind-online.conf"
   },
   {
-    "filterListId": 2169,
-    "id": 2302,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-bind-online.conf"
-  },
-  {
-    "filterListId": 2169,
-    "id": 2303,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-bind-online.conf"
-  },
-  {
     "filterListId": 2171,
     "id": 2307,
     "primariness": 1,
     "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-unbound-online.conf"
-  },
-  {
-    "filterListId": 2171,
-    "id": 2308,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/urlhaus-filter/master/urlhaus-filter-unbound-online.conf"
-  },
-  {
-    "filterListId": 2171,
-    "id": 2309,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/urlhaus-filter/raw/master/urlhaus-filter-unbound-online.conf"
   },
   {
     "filterListId": 2172,
@@ -14040,34 +13968,10 @@
     "url": "https://curben.gitlab.io/malware-filter/phishing-filter.txt"
   },
   {
-    "filterListId": 2323,
-    "id": 2473,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter.txt"
-  },
-  {
-    "filterListId": 2323,
-    "id": 2474,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter.txt"
-  },
-  {
     "filterListId": 2324,
     "id": 2475,
     "primariness": 1,
     "url": "https://curben.gitlab.io/malware-filter/phishing-filter-domains.txt"
-  },
-  {
-    "filterListId": 2324,
-    "id": 2476,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/phishing-filter/master/phishing-filter-domains.txt"
-  },
-  {
-    "filterListId": 2324,
-    "id": 2477,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-domains.txt"
   },
   {
     "filterListId": 2325,
@@ -14076,34 +13980,10 @@
     "url": "https://curben.gitlab.io/malware-filter/phishing-filter-dnsmasq.conf"
   },
   {
-    "filterListId": 2325,
-    "id": 2479,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter-dnsmasq.conf"
-  },
-  {
-    "filterListId": 2325,
-    "id": 2480,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-dnsmasq.conf"
-  },
-  {
     "filterListId": 2326,
     "id": 2481,
     "primariness": 1,
     "url": "https://curben.gitlab.io/malware-filter/phishing-filter-hosts.txt"
-  },
-  {
-    "filterListId": 2326,
-    "id": 2482,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter-hosts.txt"
-  },
-  {
-    "filterListId": 2326,
-    "id": 2483,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-hosts.txt"
   },
   {
     "filterListId": 2327,
@@ -14112,34 +13992,10 @@
     "url": "https://curben.gitlab.io/malware-filter/phishing-filter-bind.conf"
   },
   {
-    "filterListId": 2327,
-    "id": 2485,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter-bind.conf"
-  },
-  {
-    "filterListId": 2327,
-    "id": 2486,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-bind.conf"
-  },
-  {
     "filterListId": 2328,
     "id": 2487,
     "primariness": 1,
     "url": "https://curben.gitlab.io/malware-filter/phishing-filter-unbound.conf"
-  },
-  {
-    "filterListId": 2328,
-    "id": 2488,
-    "primariness": 2,
-    "url": "https://cdn.statically.io/gl/curben/phishing-filter/master/dist/phishing-filter-unbound.conf"
-  },
-  {
-    "filterListId": 2328,
-    "id": 2489,
-    "primariness": 3,
-    "url": "https://glcdn.githack.com/curben/phishing-filter/raw/master/dist/phishing-filter-unbound.conf"
   },
   {
     "filterListId": 2329,
