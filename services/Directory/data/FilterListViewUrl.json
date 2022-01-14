@@ -15111,7 +15111,7 @@
     "filterListId": 2471,
     "id": 2679,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/BPower0036/AdBlockFilters/main/easydutch.txt"
+    "url": "https://raw.githubusercontent.com/EasyDutch-uBO/EasyDutch/main/EasyDutch.txt"
   },
   {
     "filterListId": 2472,
@@ -15423,7 +15423,7 @@
     "filterListId": 2471,
     "id": 2732,
     "primariness": 2,
-    "url": "https://gitlab.com/BPower0036/AdBlockFilters/-/raw/main/easydutch.txt"
+    "url": "https://gitlab.com/BPower0036/EasyDutch/-/raw/main/EasyDutch.txt"
   },
   {
     "filterListId": 2520,
@@ -15818,25 +15818,25 @@
     "filterListId": 2471,
     "id": 2798,
     "primariness": 3,
-    "url": "https://combinatronics.io/BPower0036/AdBlockFilters/main/easydutch.txt"
+    "url": "https://combinatronics.io/EasyDutch-uBO/EasyDutch/main/EasyDutch.txt"
   },
   {
     "filterListId": 2471,
     "id": 2799,
     "primariness": 4,
-    "url": "https://cdn.statically.io/gh/BPower0036/AdBlockFilters/main/easydutch.txt"
+    "url": "https://cdn.statically.io/gh/EasyDutch-uBO/EasyDutch/main/EasyDutch.txt"
   },
   {
     "filterListId": 2471,
     "id": 2800,
     "primariness": 5,
-    "url": "https://cdn.statically.io/gl/BPower0036/AdBlockFilters/main/easydutch.txt"
+    "url": "https://cdn.statically.io/gl/BPower0036/EasyDutch/-/raw/main/EasyDutch.txt"
   },
   {
     "filterListId": 2471,
     "id": 2801,
     "primariness": 6,
-    "url": "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockFilters@main/easydutch.txt"
+    "url": "https://cdn.jsdelivr.net/gh/EasyDutch-uBO/EasyDutch/@main/EasyDutch.txt"
   },
   {
     "filterListId": 2520,
