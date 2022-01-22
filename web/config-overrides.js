@@ -1,5 +1,10 @@
 const { getThemeVariables } = require("antd/dist/theme");
-const { override, fixBabelImports, addLessLoader } = require("customize-cra");
+const {
+  override,
+  fixBabelImports,
+  addLessLoader,
+  adjustStyleLoaders,
+} = require("customize-cra");
 
 module.exports = override(
   fixBabelImports("import", {
@@ -17,5 +22,9 @@ module.exports = override(
         }),
       },
     },
+  }),
+  adjustStyleLoaders(({ use: [, , postcss] }) => {
+    const postcssOptions = postcss.options;
+    postcss.options = { postcssOptions };
   })
 );
