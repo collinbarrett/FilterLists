@@ -90,10 +90,10 @@
     "name": "Liste AR"
   },
   {
-    "description": "Filter that enables removing of ads, trackers, and various scripts from websites with Korean content.",
+    "description": "Filter that enables removing of ads and anti-adblock scripts from websites with Korean content.",
     "homeUrl": "https://list-kr.github.io/",
     "id": 16,
-    "licenseId": 8,
+    "licenseId": 4,
     "name": "List-KR"
   },
   {
