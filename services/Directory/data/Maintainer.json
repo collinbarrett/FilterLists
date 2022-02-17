@@ -75,8 +75,8 @@
   },
   {
     "id": 18,
-    "name": "SlowMemory",
-    "url": "https://github.com/SlowMemory"
+    "name": "RAIDEN",
+    "url": "https://github.com/Raiden-Ei"
   },
   {
     "id": 19,
@@ -861,5 +861,11 @@
     "id": 166,
     "name": "ammnt",
     "url": "https://github.com/ammnt"
+  },
+  {
+    "id": 167,
+    "name": "PiQuark6046",
+    "url": "https://github.com/piquark6046",
+    "emailAddress": "piquark6046@protonmail.com"
   }
 ]
