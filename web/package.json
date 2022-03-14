@@ -16,7 +16,7 @@
     "customize-cra": "^1.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "http-proxy-middleware": "^2.0.3",
+    "http-proxy-middleware": "^2.0.4",
     "less": "^4.1.2",
     "less-loader": "^7.3.0",
     "prettier": "^2.5.1",
