@@ -17246,5 +17246,20 @@
     "issuesUrl": "https://github.com/FiltersHeroes/PCCassets/issues",
     "licenseId": 4,
     "name": "European Cookie Database"
+  },
+  {
+    "description": "Porn Records Blacklisting. Porn Records from My Privacy DNS is among the best maintained projects and one of them with the lowest FP's as all records are veryfied by a human before committed to the lists. We do also have a Browser add-on for simple committing new domains",
+    "donateUrl": "https://ko-fi.com/X8X37FUGU",
+    "emailAddress": "incoming+my-privacy-dns-porn-records-2-dmptefj25u6tlslz82c3oolb9-issue@noreply.mypdns.org",
+    "chatUrl": "https://matrix.to/#/#porn-records:anontier.nl",
+    "homeUrl": "https://mypdns.org/my-privacy-dns/porn-records",
+    "viewUrlMirror1": "https://github.com/porn-records/Porn-Records",
+    "viewUrlMirror2": "https://gitlab.com/MypDNS/porn-records",
+    "id": 2566,
+    "issuesUrl": "https://mypdns.org/my-privacy-dns/porn-records/-/issues",
+    "licenseId": 13,
+    "name": "My Privacy DNS - Porn Records Blacklist",
+    "policyUrl": "https://mypdns.org/my-privacy-dns/porn-records/-/blob/master/README.md",
+    "submissionUrl": "https://mypdns.org/my-privacy-dns/porn-records/-/issues"
   }
 ]
