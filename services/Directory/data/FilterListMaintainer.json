@@ -5745,11 +5745,18 @@
   },
   {
     "filterListId": 2566,
-    "maintainerId": [
-      "168",
-      "169",
-      "170",
-      "171"
-    ]
+    "maintainerId": 168
+  },
+  {
+    "filterListId": 2566,
+    "maintainerId": 169
+  },
+  {
+    "filterListId": 2566,
+    "maintainerId": 170
+  },
+  {
+    "filterListId": 2566,
+    "maintainerId": 171
   }
 ]
