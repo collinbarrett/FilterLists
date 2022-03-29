@@ -16049,5 +16049,10 @@
     "primariness": 4,
     "segmentNumber": 5,
     "url": "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/snuff.list"
+  },
+  {
+    "filterListId": 2567,
+    "id": 2834,
+    "url": "https://github.com/List-KR/List-KR/raw/master/filter-uBO.txt"
   }
 ]

@@ -17261,5 +17261,12 @@
     "submissionUrl": "https://mypdns.org/my-privacy-dns/porn-records/-/issues",
     "viewUrlMirror1": "https://github.com/porn-records/Porn-Records",
     "viewUrlMirror2": "https://gitlab.com/MypDNS/porn-records"
+  },
+  {
+    "description": "Filter that enables removing of ads and anti-adblock scripts from websites with Korean content.",
+    "homeUrl": "https://github.com/List-KR/List-KR",
+    "id": 2567,
+    "licenseId": 4,
+    "name": "List-KR uBO"
   }
 ]
