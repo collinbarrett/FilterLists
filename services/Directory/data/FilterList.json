@@ -91,7 +91,7 @@
   },
   {
     "description": "Filter that enables removing of ads and anti-adblock scripts from websites with Korean content.",
-    "homeUrl": "https://list-kr.github.io/",
+    "homeUrl": "https://github.com/List-KR/List-KR",
     "id": 16,
     "licenseId": 4,
     "name": "List-KR"
