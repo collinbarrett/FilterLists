@@ -94,7 +94,8 @@
     "homeUrl": "https://github.com/List-KR/List-KR",
     "id": 16,
     "licenseId": 4,
-    "name": "List-KR"
+    "name": "List-KR",
+    "issuesUrl": "https://github.com/List-KR/List-KR/issues"
   },
   {
     "description": "Block ads, banners, 3rd party Cookies, 3rd party page counters, web bugs, and even most hijackers and possibly unwanted programs.",
@@ -17267,6 +17268,7 @@
     "homeUrl": "https://github.com/List-KR/List-KR",
     "id": 2567,
     "licenseId": 4,
-    "name": "List-KR uBO"
+    "name": "List-KR uBO",
+    "issuesUrl": "https://github.com/List-KR/List-KR/issues"
   }
 ]
