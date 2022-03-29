@@ -74,6 +74,7 @@
     "url": "https://forums.lanik.us/memberlist.php?mode=viewprofile&u=1400"
   },
   {
+    "emailAddress": "ei@mgi.sh",
     "id": 18,
     "name": "RAIDEN",
     "url": "https://github.com/Raiden-Ei"
@@ -887,5 +888,17 @@
     "id": 171,
     "name": "Titom",
     "url": "https://mypdns.org/Titomrock21"
+  },
+  {
+    "emailAddress": "seia@outlook.kr",
+    "id": 172,
+    "name": "seia-soto",
+    "url": "https://github.com/seia-soto"
+  },
+  {
+    "emailAddress": "green1052@protonmail.ch",
+    "id": 173,
+    "name": "green1052",
+    "url": "https://github.com/green1052"
   }
 ]
