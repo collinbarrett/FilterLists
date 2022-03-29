@@ -93,9 +93,9 @@
     "description": "Filter that enables removing of ads and anti-adblock scripts from websites with Korean content.",
     "homeUrl": "https://github.com/List-KR/List-KR",
     "id": 16,
+    "issuesUrl": "https://github.com/List-KR/List-KR/issues",
     "licenseId": 4,
-    "name": "List-KR",
-    "issuesUrl": "https://github.com/List-KR/List-KR/issues"
+    "name": "List-KR"
   },
   {
     "description": "Block ads, banners, 3rd party Cookies, 3rd party page counters, web bugs, and even most hijackers and possibly unwanted programs.",
@@ -17267,8 +17267,8 @@
     "description": "Filter that enables removing of ads and anti-adblock scripts from websites with Korean content.",
     "homeUrl": "https://github.com/List-KR/List-KR",
     "id": 2567,
+    "issuesUrl": "https://github.com/List-KR/List-KR/issues",
     "licenseId": 4,
-    "name": "List-KR uBO",
-    "issuesUrl": "https://github.com/List-KR/List-KR/issues"
+    "name": "List-KR uBO"
   }
 ]
