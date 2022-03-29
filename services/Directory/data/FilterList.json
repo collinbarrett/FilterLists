@@ -16494,10 +16494,10 @@
   },
   {
     "description": "Dutch supplement for the Easylist filters to use with uBlock Origin",
-    "donateUrl": "https://www.paypal.com/donate?hosted_button_id=M4D2NPZX5NS4C",
-    "homeUrl": "https://github.com/BPower0036/AdBlockFilters/",
+    "donateUrl": "https://www.paypal.com/donate/?hosted_button_id=NRARDMBBMV3LC",
+    "homeUrl": "https://github.com/EasyDutch-uBO/EasyDutch/",
     "id": 2471,
-    "issuesUrl": "https://github.com/BPower0036/AdBlockFilters/issues",
+    "issuesUrl": "https://github.com/EasyDutch-uBO/EasyDutch/issues",
     "licenseId": 4,
     "name": "EasyDutch"
   },
@@ -16881,7 +16881,7 @@
   },
   {
     "description": "Medium mode for uBlock Origin when blocking 3p-frames and 3p-scripts",
-    "donateUrl": "https://www.paypal.com/donate?hosted_button_id=M4D2NPZX5NS4C",
+    "donateUrl": "https://www.paypal.com/donate/?hosted_button_id=NRARDMBBMV3LC",
     "homeUrl": "https://github.com/BPower0036/AdBlockFilters/",
     "id": 2520,
     "issuesUrl": "https://github.com/BPower0036/AdBlockFilters/issues",
@@ -16890,7 +16890,7 @@
   },
   {
     "description": "Personal filter list (My filters)",
-    "donateUrl": "https://www.paypal.com/donate?hosted_button_id=M4D2NPZX5NS4C",
+    "donateUrl": "https://www.paypal.com/donate/?hosted_button_id=NRARDMBBMV3LC",
     "homeUrl": "https://github.com/BPower0036/AdBlockFilters/",
     "id": 2521,
     "issuesUrl": "https://github.com/BPower0036/AdBlockFilters/issues",
