@@ -1703,8 +1703,7 @@
   {
     "description": "This is a lite version of EasyList. Only for Simplified Chinese language websites.",
     "emailAddress": "cjxlist@gmail.com",
-    "forumUrl": "https://abpchina.org/forum/forum.php",
-    "homeUrl": "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
+    "homeUrl": "https://github.com/cjx82630/cjxlist/",
     "id": 268,
     "issuesUrl": "https://github.com/cjx82630/cjxlist/issues",
     "licenseId": 34,
@@ -1781,8 +1780,7 @@
   {
     "description": "Removes annoyances, self-promotion and privacy protection on Chinese websites.",
     "emailAddress": "cjxlist@gmail.com",
-    "forumUrl": "https://abpchina.org/forum/forum.php",
-    "homeUrl": "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
+    "homeUrl": "https://github.com/cjx82630/cjxlist/",
     "id": 281,
     "issuesUrl": "https://github.com/cjx82630/cjxlist/issues",
     "licenseId": 34,
@@ -1908,10 +1906,9 @@
   {
     "description": "Chinese supplement for the EasyList filters.",
     "emailAddress": "easylist.china@gmail.com",
-    "forumUrl": "https://abpchina.org/forum/forum.php",
-    "homeUrl": "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
+    "homeUrl": "https://github.com/easylist/easylistchina",
     "id": 300,
-    "issuesUrl": "https://github.com/easylist/easylistchina",
+    "issuesUrl": "https://github.com/easylist/easylistchina/issues",
     "licenseId": 4,
     "name": "EasyList China"
   },
@@ -13726,8 +13723,7 @@
   {
     "description": "Supplement for \"EasyList China+EasyList\" & \"EasyPrivacy\" & \"CJX's Annoyance List\". Removes Ads, Anti-adblock, Annoyances, Self-promotion & Privacy Protection on Chinese Websites",
     "emailAddress": "cjxlist@gmail.com",
-    "forumUrl": "https://abpchina.org/forum/forum.php",
-    "homeUrl": "https://abpchina.org/forum/forum.php?mod=viewthread&tid=29667",
+    "homeUrl": "https://github.com/cjx82630/cjxlist",
     "id": 2111,
     "issuesUrl": "https://github.com/cjx82630/cjxlist/issues",
     "licenseId": 34,
