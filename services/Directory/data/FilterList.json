@@ -17266,5 +17266,85 @@
     "issuesUrl": "https://github.com/List-KR/List-KR/issues",
     "licenseId": 4,
     "name": "List-KR uBO"
+  },
+  {
+    "description": "A blocklist of malicious domains targeting Vietnamese users.",
+    "homeUrl": "https://gitlab.com/curben/vn-badsite-filter",
+    "id": 2568,
+    "issuesUrl": "https://gitlab.com/curben/vn-badsite-filter/issues",
+    "licenseId": 28,
+    "name": "vn-badsite-filter"
+  },
+  {
+    "description": "A blocklist of malicious domains targeting Vietnamese users.",
+    "homeUrl": "https://gitlab.com/curben/vn-badsite-filter",
+    "id": 2569,
+    "issuesUrl": "https://gitlab.com/curben/vn-badsite-filter/issues",
+    "licenseId": 28,
+    "name": "vn-badsite-filter (Domains)"
+  },
+  {
+    "description": "A blocklist of malicious domains targeting Vietnamese users.",
+    "homeUrl": "https://gitlab.com/curben/vn-badsite-filter",
+    "id": 2570,
+    "issuesUrl": "https://gitlab.com/curben/vn-badsite-filter/issues",
+    "licenseId": 28,
+    "name": "vn-badsite-filter (dnsmasq)"
+  },
+  {
+    "description": "A blocklist of malicious domains targeting Vietnamese users.",
+    "homeUrl": "https://gitlab.com/curben/vn-badsite-filter",
+    "id": 2571,
+    "issuesUrl": "https://gitlab.com/curben/vn-badsite-filter/issues",
+    "licenseId": 28,
+    "name": "vn-badsite-filter (hosts)"
+  },
+  {
+    "description": "A blocklist of malicious domains targeting Vietnamese users.",
+    "homeUrl": "https://gitlab.com/curben/vn-badsite-filter",
+    "id": 2572,
+    "issuesUrl": "https://gitlab.com/curben/vn-badsite-filter/issues",
+    "licenseId": 28,
+    "name": "vn-badsite-filter (BIND)"
+  },
+  {
+    "description": "A blocklist of malicious domains targeting Vietnamese users.",
+    "homeUrl": "https://gitlab.com/curben/vn-badsite-filter",
+    "id": 2573,
+    "issuesUrl": "https://gitlab.com/curben/vn-badsite-filter/issues",
+    "licenseId": 28,
+    "name": "vn-badsite-filter (Unbound)"
+  },
+  {
+    "description": "A blocklist of malicious domains targeting Vietnamese users.",
+    "homeUrl": "https://gitlab.com/curben/vn-badsite-filter",
+    "id": 2574,
+    "issuesUrl": "https://gitlab.com/curben/vn-badsite-filter/issues",
+    "licenseId": 28,
+    "name": "vn-badsite-filter (AdGuard Home)"
+  },
+  {
+    "description": "A blocklist of malicious domains targeting Vietnamese users.",
+    "homeUrl": "https://gitlab.com/curben/vn-badsite-filter",
+    "id": 2575,
+    "issuesUrl": "https://gitlab.com/curben/vn-badsite-filter/issues",
+    "licenseId": 28,
+    "name": "vn-badsite-filter (AdGuard)"
+  },
+  {
+    "description": "A blocklist of malicious domains targeting Vietnamese users.",
+    "homeUrl": "https://gitlab.com/curben/vn-badsite-filter",
+    "id": 2576,
+    "issuesUrl": "https://gitlab.com/curben/vn-badsite-filter/issues",
+    "licenseId": 28,
+    "name": "vn-badsite-filter (Vivaldi)"
+  },
+  {
+    "description": "A blocklist of malicious domains targeting Vietnamese users.",
+    "homeUrl": "https://gitlab.com/curben/vn-badsite-filter",
+    "id": 2577,
+    "issuesUrl": "https://gitlab.com/curben/vn-badsite-filter/issues",
+    "licenseId": 28,
+    "name": "vn-badsite-filter (IE)"
   }
 ]
