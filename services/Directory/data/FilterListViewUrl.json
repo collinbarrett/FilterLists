@@ -16054,5 +16054,65 @@
     "filterListId": 2567,
     "id": 2834,
     "url": "https://github.com/List-KR/List-KR/raw/master/filter-uBO.txt"
+  },
+  {
+    "filterListId": 2568,
+    "id": 2835,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/vn-badsite-filter.txt"
+  },
+  {
+    "filterListId": 2569,
+    "id": 2836,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/vn-badsite-filter-domains.txt"
+  },
+  {
+    "filterListId": 2570,
+    "id": 2836,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/vn-badsite-filter-dnsmasq.conf"
+  },
+  {
+    "filterListId": 2571,
+    "id": 2837,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/vn-badsite-filter-hosts.txt"
+  },
+  {
+    "filterListId": 2572,
+    "id": 2838,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/vn-badsite-filter-bind.conf"
+  },
+  {
+    "filterListId": 2573,
+    "id": 2839,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/vn-badsite-filter-unbound.conf"
+  },
+  {
+    "filterListId": 2574,
+    "id": 2840,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/vn-badsite-filter-agh.txt"
+  },
+  {
+    "filterListId": 2575,
+    "id": 2841,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/vn-badsite-filter-ag.txt"
+  },
+  {
+    "filterListId": 2576,
+    "id": 2842,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/vn-badsite-filter-vivaldi.txt"
+  },
+  {
+    "filterListId": 2577,
+    "id": 2842,
+    "primariness": 1,
+    "url": "https://curben.gitlab.io/malware-filter/vn-badsite-filter.tpl"
   }
 ]
