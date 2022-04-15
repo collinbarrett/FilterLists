@@ -17443,5 +17443,12 @@
     "licenseId": 5,
     "name": "ThreatShare",
     "submissionUrl": "https://threatshare.io/submit/"
+  },
+  {
+    "description": "Websites deemed by the Bank of Lithuania to be used for conducting fraudulent activities and money scams.",
+    "homeUrl": "https://www.lb.lt/en/illegalwww",
+    "id": 2590,
+    "licenseId": 5,
+    "name": "Bank of Lithuania Illegal websites"
   }
 ]
