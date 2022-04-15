@@ -16138,5 +16138,11 @@
     "id": 2846,
     "primariness": 1,
     "url": "https://github.com/elliotwutingfeng/Inversion-DNSBL-Blocklists/blob/main/Google_ipv4.txt?raw=true"
+  },
+  {
+    "filterListId": 2582,
+    "id": 2847,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DevShubam/Whitelist/master/whitelist.txt"
   }
 ]
