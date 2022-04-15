@@ -207,5 +207,10 @@
     "id": 56,
     "name": "Polish Cookie Consent",
     "url": "https://polishannoyancefilters.netlify.app/en/PolishCookieConsent/syntax/"
+  },
+  {
+    "id": 57,
+    "name": "CSV",
+    "url": "https://en.wikipedia.org/wiki/Comma-separated_values"
   }
 ]

@@ -16156,5 +16156,11 @@
     "id": 2849,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/ThePirateNerd/Anti-Q/main/Anti-Q.txt"
+  },
+  {
+    "filterListId": 2585,
+    "id": 2850,
+    "primariness": 1,
+    "url": "https://blocklist.net.ua/blocklist.csv"
   }
 ]

@@ -17402,5 +17402,13 @@
     "issuesUrl": "https://github.com/ThePirateNerd/Anti-Q/issues",
     "licenseId": 5,
     "name": "Anti-Q"
+  },
+  {
+    "description": "The BlockList project was created to become protection against negative influence of the harmful and potentially dangerous events on the Internet.",
+    "emailAddress": "office@blocklist.net.ua",
+    "homeUrl": "https://blocklist.net.ua/",
+    "id": 2585,
+    "licenseId": 5,
+    "name": "BlockListNetUA"
   }
 ]
