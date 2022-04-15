@@ -16120,5 +16120,23 @@
     "id": 2843,
     "primariness": 1,
     "url": "https://github.com/elliotwutingfeng/SyncthingRelayServerIPs/blob/main/ips.txt?raw=1"
+  },
+  {
+    "filterListId": 2579,
+    "id": 2844,
+    "primariness": 1,
+    "url": "https://github.com/elliotwutingfeng/Inversion-DNSBL-Blocklists/blob/main/Google_hostnames_light.txt?raw=true"
+  },
+  {
+    "filterListId": 2580,
+    "id": 2845,
+    "primariness": 1,
+    "url": "https://github.com/elliotwutingfeng/Inversion-DNSBL-Blocklists/blob/main/Google_hostnames.txt?raw=true"
+  },
+  {
+    "filterListId": 2581,
+    "id": 2846,
+    "primariness": 1,
+    "url": "https://github.com/elliotwutingfeng/Inversion-DNSBL-Blocklists/blob/main/Google_ipv4.txt?raw=true"
   }
 ]
