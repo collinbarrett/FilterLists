@@ -16150,5 +16150,11 @@
     "id": 2848,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/sioxe823/Project-RnJlRUhL/main/chinese_gov_forced_install.txt"
+  },
+  {
+    "filterListId": 2584,
+    "id": 2849,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ThePirateNerd/Anti-Q/main/Anti-Q.txt"
   }
 ]
