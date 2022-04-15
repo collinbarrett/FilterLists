@@ -16168,5 +16168,11 @@
     "id": 2851,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/twcau/AdblockRules/master/CytroxList"
+  },
+  {
+    "filterListId": 2587,
+    "id": 2852,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/pihole-google-unbound.conf"
   }
 ]
