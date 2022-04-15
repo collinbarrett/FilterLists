@@ -16114,5 +16114,11 @@
     "id": 2842,
     "primariness": 1,
     "url": "https://curben.gitlab.io/malware-filter/vn-badsite-filter.tpl"
+  },
+  {
+    "filterListId": 2578,
+    "id": 2843,
+    "primariness": 1,
+    "url": "https://github.com/elliotwutingfeng/SyncthingRelayServerIPs/blob/main/ips.txt?raw=1"
   }
 ]
