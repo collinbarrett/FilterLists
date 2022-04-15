@@ -16162,5 +16162,11 @@
     "id": 2850,
     "primariness": 1,
     "url": "https://blocklist.net.ua/blocklist.csv"
+  },
+  {
+    "filterListId": 2586,
+    "id": 2851,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/twcau/AdblockRules/master/CytroxList"
   }
 ]

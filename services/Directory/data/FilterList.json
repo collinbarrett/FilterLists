@@ -17410,5 +17410,13 @@
     "id": 2585,
     "licenseId": 5,
     "name": "BlockListNetUA"
+  },
+  {
+    "name": "CytroxList",
+    "description": "stops traffic associated with domains known to be from the surveillance-for-hire firm Cytrox and related entities",
+    "licenseId": 28,
+    "id": 2586,
+    "homeUrl": "https://github.com/twcau/AdblockRules/",
+    "issuesUrl": "https://github.com/twcau/AdblockRules/issues"
   }
 ]
