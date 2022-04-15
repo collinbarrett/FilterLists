@@ -5,7 +5,7 @@ trigger: none
 pr:
   autoCancel: true
   branches:
-    include: [master]
+    include: [main]
   paths:
     include: [services/Directory/data/*]
 
@@ -110,7 +110,7 @@ steps:
       script: |
         git remote add upstream https://github.com/collinbarrett/FilterLists.git
         git fetch upstream
-        git merge upstream/master
+        git merge upstream/main
         CONFLICTS=$(git ls-files -u | wc -l)
         if [ "$CONFLICTS" -gt 0 ] ; then
           echo "Conflicts with upstream repository. Aborting..."

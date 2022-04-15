@@ -1,7 +1,7 @@
 trigger:
   batch: false
   branches:
-    include: [master]
+    include: [main]
   paths:
     include:
       [
@@ -26,7 +26,7 @@ trigger:
 pr:
   autoCancel: false
   branches:
-    include: [master]
+    include: [main]
   paths:
     include:
       [
@@ -80,7 +80,7 @@ steps:
         $(Build.BuildId)
     env:
       DOCKER_BUILDKIT: 1
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
 
   - task: CopyFiles@2
     displayName: stage docker-compose files
@@ -90,7 +90,7 @@ steps:
         docker-compose.yml
         docker-compose.prod.yml
       TargetFolder: $(Build.ArtifactStagingDirectory)
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
 
   - task: PublishBuildArtifacts@1
     displayName: publish docker-compose files
@@ -98,4 +98,4 @@ steps:
       PathtoPublish: $(Build.ArtifactStagingDirectory)
       ArtifactName: drop
       publishLocation: Container
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
