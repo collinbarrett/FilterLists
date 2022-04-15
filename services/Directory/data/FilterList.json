@@ -13649,7 +13649,7 @@
     "id": 2100,
     "issuesUrl": "https://github.com/Kees1958/WS3_annual_most_used_survey_blocklist/issues",
     "licenseId": 5,
-    "name": "Small but effective adblockplus format blocklist based on the (annal) W3tech and Cookiebot surveys - Top 500"
+    "name": "EU US most prevalent ads & trackers ABP format for uBlockOrigin and Adguard."
   },
   {
     "homeUrl": "https://github.com/DavidTai780/AdGuard-Home-Private-Rules",
