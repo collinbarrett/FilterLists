@@ -17435,5 +17435,13 @@
     "issuesUrl": "https://github.com/gnxsecurity/gnx-threat-intelligence/issues",
     "licenseId": 5,
     "name": "gnX Threat Intelligence"
+  },
+  {
+    "description": "ThreatShare is an advanced threat tracker that publicly tracks command & control servers for malware. The tracker is powered by Sentinel, an automated intelligence platform built to supply ThreatShare with a constant stream of control panels. Threat intelligence can be submitted through the site and will then be displayed to our users. This service is non profit and has been created to expose cybercriminals to the public along with providing researchers with a steady stream of threat intelligence.",
+    "homeUrl": "https://threatshare.io/",
+    "id": 2589,
+    "licenseId": 5,
+    "name": "ThreatShare",
+    "submissionUrl": "https://threatshare.io/submit/"
   }
 ]
