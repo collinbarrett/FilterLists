@@ -17427,5 +17427,13 @@
     "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google (Unbound)"
+  },
+  {
+    "description": "gnX threat intelligence feed contains a blacklist of IP addresses that have crossed a threshold indicating malicious intent and/or potential IOC [indicator of compromise] activity. Because of the criteria standards and threat list sanitiation process, we significantly reduce the potential of false positives. Can be used as a standalone blocklist or to agument your existing threat intelligence.",
+    "homeUrl": "https://github.com/gnxsecurity/gnx-threat-intelligence",
+    "id": 2588,
+    "issuesUrl": "https://github.com/gnxsecurity/gnx-threat-intelligence/issues",
+    "licenseId": 5,
+    "name": "gnX Threat Intelligence"
   }
 ]

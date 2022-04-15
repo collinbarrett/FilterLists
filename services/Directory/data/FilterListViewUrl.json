@@ -16174,5 +16174,11 @@
     "id": 2852,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/pihole-google-unbound.conf"
+  },
+  {
+    "filterListId": 2588,
+    "id": 2853,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/gnxsecurity/gnx-threat-intelligence/master/latest-blacklist.raw"
   }
 ]
