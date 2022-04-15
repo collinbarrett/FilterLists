@@ -10473,20 +10473,20 @@
     "name": "ROad-Kill"
   },
   {
-    "description": "Completely block Google and its services .",
+    "description": "Completely block Google and its services.",
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1673,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google (Domains)"
   },
   {
-    "description": "Completely block Google and its services .",
+    "description": "Completely block Google and its services.",
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1674,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google (Hosts)"
   },
@@ -10495,7 +10495,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1675,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Google analytics (Domains)"
   },
@@ -10504,7 +10504,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1676,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Google analytics (Hosts)"
   },
@@ -10513,7 +10513,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1677,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Android (Domains)"
   },
@@ -10522,7 +10522,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1678,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Android (Hosts)"
   },
@@ -10531,7 +10531,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1679,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Google DNS (Domains)"
   },
@@ -10540,7 +10540,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1680,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Google DNS (Hosts)"
   },
@@ -10549,7 +10549,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1681,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Google search (Domains)"
   },
@@ -10558,7 +10558,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1682,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Google search (Hosts)"
   },
@@ -10567,7 +10567,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1683,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | DoubleClick (Domains)"
   },
@@ -10576,7 +10576,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1684,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "no-google | DoubleClick (Hosts)"
   },
@@ -10585,7 +10585,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1685,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Firebase (Domains)"
   },
@@ -10594,7 +10594,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1686,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Firebase (Hosts)"
   },
@@ -10603,7 +10603,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1687,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Google fonts (Domains)"
   },
@@ -10612,7 +10612,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1688,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Google fonts (Hosts)"
   },
@@ -10621,7 +10621,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1689,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "no-google | General Google domains (Domains)"
   },
@@ -10630,7 +10630,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1690,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | General Google domains (Hosts)"
   },
@@ -10639,7 +10639,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1691,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Gmail (Domains)"
   },
@@ -10648,7 +10648,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1692,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Gmail (Hosts)"
   },
@@ -10657,7 +10657,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1693,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Google products (Domains)"
   },
@@ -10666,7 +10666,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1694,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Google products (Hosts)"
   },
@@ -10675,7 +10675,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1695,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Google proxies (Domains)"
   },
@@ -10684,7 +10684,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1696,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google| Google proxies (Hosts)"
   },
@@ -10693,7 +10693,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1697,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Google shorteners (Domains)"
   },
@@ -10702,7 +10702,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1698,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Google shorteners (Hosts)"
   },
@@ -10711,7 +10711,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1699,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Youtube (Domains)"
   },
@@ -10720,7 +10720,7 @@
     "emailAddress": "poorpocketsmcnewhold@pm.me",
     "homeUrl": "https://github.com/nickspaargaren/no-google",
     "id": 1700,
-    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
     "licenseId": 11,
     "name": "No Google | Youtube (Hosts)"
   },
@@ -17418,5 +17418,14 @@
     "issuesUrl": "https://github.com/twcau/AdblockRules/issues",
     "licenseId": 28,
     "name": "CytroxList"
+  },
+  {
+    "description": "Completely block Google and its services.",
+    "emailAddress": "poorpocketsmcnewhold@pm.me",
+    "homeUrl": "https://github.com/nickspaargaren/no-google",
+    "id": 2587,
+    "issuesUrl": "https://github.com/nickspaargaren/no-google/issues",
+    "licenseId": 11,
+    "name": "No Google (Unbound)"
   }
 ]
