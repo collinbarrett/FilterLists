@@ -16180,5 +16180,11 @@
     "id": 2853,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/gnxsecurity/gnx-threat-intelligence/master/latest-blacklist.raw"
+  },
+  {
+    "filterListId": 2589,
+    "id": 2854,
+    "primariness": 1,
+    "url": "https://threatshare.io/feed"
   }
 ]
