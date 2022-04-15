@@ -17394,5 +17394,13 @@
     "issuesUrl": "https://github.com/sioxe823/Project-RnJlRUhL/issues",
     "licenseId": 5,
     "name": "Project RnJlRUhL"
+  },
+  {
+    "description": "My home made anti Qanon list.",
+    "homeUrl": "https://github.com/ThePirateNerd/Anti-Q",
+    "id": 2584,
+    "issuesUrl": "https://github.com/ThePirateNerd/Anti-Q/issues",
+    "licenseId": 5,
+    "name": "Anti-Q"
   }
 ]
