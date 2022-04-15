@@ -17346,5 +17346,13 @@
     "issuesUrl": "https://gitlab.com/curben/vn-badsite-filter/issues",
     "licenseId": 28,
     "name": "vn-badsite-filter (IE)"
+  },
+  {
+    "description": "Machine-readable .txt allowlist of Syncthing Relay Server IP Addresses, updated every hour.",
+    "homeUrl": "https://github.com/elliotwutingfeng/SyncthingRelayServerIPs",
+    "id": 2578,
+    "issuesUrl": "https://github.com/elliotwutingfeng/SyncthingRelayServerIPs/issues",
+    "licenseId": 10,
+    "name": "Syncthing Relay Server IPs"
   }
 ]

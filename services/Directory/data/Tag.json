@@ -47,7 +47,7 @@
   {
     "description": "Unblocks categorical resources",
     "id": 10,
-    "name": "whitelist"
+    "name": "allowlist"
   },
   {
     "description": "Blocks adult, NSFW, pornographic, etc. resources",
