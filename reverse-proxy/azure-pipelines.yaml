@@ -1,7 +1,7 @@
 trigger:
   batch: false
   branches:
-    include: [master]
+    include: [main]
   paths:
     include:
       [
@@ -27,7 +27,7 @@ steps:
         reverse-proxy/location-includes/*
         reverse-proxy/conf.d/*
       TargetFolder: $(Build.ArtifactStagingDirectory)
-    condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
 
   - task: CopyFiles@2
     displayName: stage docker-compose files
@@ -37,7 +37,7 @@ steps:
         docker-compose.yml
         docker-compose.prod.yml
       TargetFolder: $(Build.ArtifactStagingDirectory)
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
 
   - task: PublishBuildArtifacts@1
     displayName: publish files
@@ -45,4 +45,4 @@ steps:
       PathtoPublish: $(Build.ArtifactStagingDirectory)
       ArtifactName: drop
       publishLocation: Container
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))

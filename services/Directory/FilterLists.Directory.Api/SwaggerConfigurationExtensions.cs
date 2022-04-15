@@ -23,7 +23,7 @@ internal static class SwaggerConfigurationExtensions
                     License = new OpenApiLicense
                     {
                         Name = "MIT License",
-                        Url = new Uri("https://github.com/collinbarrett/FilterLists/blob/master/LICENSE")
+                        Url = new Uri("https://github.com/collinbarrett/FilterLists/blob/main/LICENSE")
                     }
                 });
 

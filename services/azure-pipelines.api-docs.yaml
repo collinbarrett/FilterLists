@@ -1,7 +1,7 @@
 trigger:
   batch: false
   branches:
-    include: [master]
+    include: [main]
   paths:
     include: [docker-compose/docker-compose.yml]
 
@@ -22,7 +22,7 @@ steps:
         docker-compose.yml
         docker-compose.prod.yml
       TargetFolder: $(Build.ArtifactStagingDirectory)
-    condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
 
   - task: PublishBuildArtifacts@1
     displayName: publish docker-compose files
@@ -30,4 +30,4 @@ steps:
       PathtoPublish: $(Build.ArtifactStagingDirectory)
       ArtifactName: drop
       publishLocation: Container
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
