@@ -16186,5 +16186,11 @@
     "id": 2854,
     "primariness": 1,
     "url": "https://threatshare.io/feed"
+  },
+  {
+    "filterListId": 2590,
+    "id": 2855,
+    "primariness": 1,
+    "url": "https://www.lb.lt/en/illegalwww?export=csv"
   }
 ]
