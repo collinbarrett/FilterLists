@@ -23,9 +23,16 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: '6.0.x'
+      - name: Publish API
+        working-directory: ./api
+        run: dotnet publish -c Release -r win-x86 -p:PublishReadyToRun=true --no-self-contained
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -36,8 +43,9 @@ jobs:
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: '/web' # App source code path
-          api_location: '/api' # Api source code path - optional
           output_location: '/dist/apps/web' # Built app content directory - optional
+          skip_api_build: true
+          api_location: '/api/bin/Release/net6.0/win-x86/publish'
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:

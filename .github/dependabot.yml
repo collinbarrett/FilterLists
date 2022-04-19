@@ -5,3 +5,8 @@ updates:
     schedule:
       interval: daily
     target-branch: 'vNext'
+  - package-ecosystem: nuget
+    directory: '/api'
+    schedule:
+      interval: daily
+    target-branch: 'vNext'
