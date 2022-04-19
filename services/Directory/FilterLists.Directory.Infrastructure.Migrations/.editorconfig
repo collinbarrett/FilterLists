@@ -1,4 +1,0 @@
-# To learn more about .editorconfig see https://aka.ms/editorconfigdocs
-
-[*.cs]
-dotnet_diagnostic.CS8625.severity = silent
