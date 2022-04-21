@@ -34,6 +34,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Lint nx workspace
+        run: npx nx workspace-lint
+
+      - name: Check format
+        run: npx nx format:check --all
+
+      - name: Lint
+        run: npx nx lint
+
+      - name: Test
+        run: npx nx test --ci --code-coverage
+
       - name: Build
         run: npx nx build
 
@@ -50,6 +62,9 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     name: Build API
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./api
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -62,7 +77,6 @@ jobs:
           dotnet-version: '6.0.x'
 
       - name: Publish
-        working-directory: ./api
         run: dotnet publish -c Release -r win-x86 -p:PublishReadyToRun=true --no-self-contained
 
       - name: Upload artifacts
@@ -87,7 +101,6 @@ jobs:
           action: 'upload'
           skip_app_build: true
           app_location: '/web-artifacts'
-          # output_location: '/web-artifacts'
           skip_api_build: true
           api_location: '/api-artifacts'
 
