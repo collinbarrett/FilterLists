@@ -6,17 +6,24 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
 
-namespace FilterLists.Api;
+namespace FilterLists.Api.FilterLists;
 
-public static class GetLists
+public class GetFilterLists
 {
+    private readonly IFilterListRepository _repo;
+
+    public GetFilterLists(IFilterListRepository repo)
+    {
+        _repo = repo;
+    }
+
     [FunctionName("GetLists")]
-    public static async Task<IActionResult> Run(
+    public async Task<IActionResult> Run(
         [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "lists")]
         HttpRequest req,
         ILogger log,
         CancellationToken cancellationToken)
     {
-        return new OkObjectResult(new { Lists = new[] { new { Name = "EasyList" } } });
+        return new OkObjectResult(await _repo.GetListsAsync(cancellationToken));
     }
 }

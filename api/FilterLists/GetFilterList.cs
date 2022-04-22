@@ -6,11 +6,11 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
 
-namespace FilterLists.Api;
+namespace FilterLists.Api.FilterLists;
 
-public static class GetList
+public static class GetFilterList
 {
-    [FunctionName("GetList")]
+    [FunctionName("GetFilterList")]
     public static async Task<IActionResult> Run(
         [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "lists/{id:int}")]
         HttpRequest req,
