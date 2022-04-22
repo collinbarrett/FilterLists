@@ -26,7 +26,7 @@ jobs:
     defaults:
       run:
         working-directory: ./web
-    name: Start web nx agents
+    name: Start web nx agent
     strategy:
       matrix:
         agent: [1, 2, 3]
@@ -82,9 +82,11 @@ jobs:
         run: npx nx-cloud stop-all-agents
 
       - name: Copy SWA config to artifacts
+        if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action == 'closed')
         run: cp staticwebapp.config.json dist/apps/web/
 
       - name: Upload artifacts
+        if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action == 'closed')
         uses: actions/upload-artifact@v3
         with:
           name: web-artifacts
@@ -110,6 +112,7 @@ jobs:
         run: dotnet publish -c Release -r win-x86 -p:PublishReadyToRun=true --no-self-contained
 
       - name: Upload artifacts
+        if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action == 'closed')
         uses: actions/upload-artifact@v3
         with:
           name: api-artifacts
@@ -117,6 +120,7 @@ jobs:
 
   deploy_swa:
     needs: [build_web, build_api]
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action == 'closed')
     name: Deploy SWA
     runs-on: ubuntu-latest
     steps:
