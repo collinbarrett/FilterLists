@@ -17,7 +17,29 @@ on:
       - api/**
       - .github/workflows/filterlists-web-azure-static-web-app.yml
 
+env:
+  NX_CLOUD_DISTRIBUTED_EXECUTION: true
+
 jobs:
+  start_web_nx_agents:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./web
+    name: Start web nx agent
+    strategy:
+      matrix:
+        agent: [1, 2, 3]
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Start nx agent ${{ matrix.agent }}
+        run: npx nx-cloud start-agent
+
   build_web:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     name: Build web
@@ -29,25 +51,35 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
-          fetch-depth: 2
+          fetch-depth: 0
+
+      - name: Derive SHAs for base and head for `nx affected` commands
+        uses: nrwl/nx-set-shas@v2
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Start nx cloud ci run
+        run: npx nx-cloud start-ci-run
 
       - name: Lint nx workspace
         run: npx nx workspace-lint
 
       - name: Check format
-        run: npx nx format:check --all
+        run: npx nx format:check
 
       - name: Lint
-        run: npx nx lint
-
-      - name: Test
-        run: npx nx test --ci --code-coverage
+        run: npx nx affected:lint --parallel=3
 
       - name: Build
-        run: npx nx build
+        run: npx nx run web:build --parallel=3
+        # run: npx nx affected:build --parallel=3
+
+      - name: Test
+        run: npx nx affected:test --parallel=3 --ci --code-coverage
+
+      - name: Stop nx cloud agents
+        run: npx nx-cloud stop-all-agents
 
       - name: Copy SWA config to artifacts
         run: cp staticwebapp.config.json dist/apps/web/
@@ -68,8 +100,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
 
       - name: Setup dotnet
         uses: actions/setup-dotnet@v2
