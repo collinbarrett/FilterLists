@@ -22,11 +22,12 @@ env:
 
 jobs:
   start_web_nx_agents:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    name: Start web nx agent
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: ./web
-    name: Start web nx agent
     strategy:
       matrix:
         agent: [1, 2, 3]
