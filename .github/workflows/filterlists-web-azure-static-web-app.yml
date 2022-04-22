@@ -134,6 +134,9 @@ jobs:
           skip_api_build: true
           api_location: '/api-artifacts'
 
+          # dependabot (and possibly other non-Contributors?) don't have the secret on their PR workflow run
+          skip_deploy_on_missing_secrets: true
+
   close_pull_request:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     name: Remove SWA staging for PR
