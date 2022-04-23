@@ -8,7 +8,7 @@ namespace FilterLists.Api.FilterLists;
 
 public interface IFilterListRepository
 {
-    Task<IEnumerable<FilterList>> GetListsAsync(CancellationToken cancellationToken);
+    ValueTask<IEnumerable<FilterList>> GetListsAsync(CancellationToken cancellationToken);
 }
 
 public class FilterListRepository : IFilterListRepository
@@ -20,7 +20,7 @@ public class FilterListRepository : IFilterListRepository
         _tableClient = tableServiceClient.GetTableClient("filterlists");
     }
 
-    public async Task<IEnumerable<FilterList>> GetListsAsync(CancellationToken cancellationToken)
+    public async ValueTask<IEnumerable<FilterList>> GetListsAsync(CancellationToken cancellationToken)
     {
         return await _tableClient.QueryAsync<FilterList>(cancellationToken: cancellationToken)
             .ToListAsync(cancellationToken);

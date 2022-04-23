@@ -13,10 +13,10 @@ public class Startup : FunctionsStartup
 {
     public override void Configure(IFunctionsHostBuilder builder)
     {
-        builder.Services.AddAzureClients(azureClientFactoryBuilder =>
+        builder.Services.AddAzureClients(azClientBuilder =>
         {
             var connectionString = Environment.GetEnvironmentVariable("FilterListsStappApiStorage");
-            azureClientFactoryBuilder.AddTableServiceClient(connectionString);
+            azClientBuilder.AddTableServiceClient(connectionString);
         });
         builder.Services.AddScoped<IFilterListRepository, FilterListRepository>();
     }
