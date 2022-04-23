@@ -33,7 +33,7 @@
     "@angular/compiler-cli": "~13.3.0",
     "@angular/language-service": "~13.3.0",
     "@nrwl/cli": "13.10.2",
-    "@nrwl/cypress": "13.10.2",
+    "@nrwl/cypress": "14.0.2",
     "@nrwl/eslint-plugin-nx": "13.10.2",
     "@nrwl/jest": "13.10.2",
     "@nrwl/linter": "13.10.2",
