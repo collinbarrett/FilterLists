@@ -17,7 +17,7 @@ public class GetFilterLists
         _repo = repo;
     }
 
-    [FunctionName("GetLists")]
+    [FunctionName("GetFilterLists")]
     public async Task<IActionResult> Run(
         [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "lists")]
         HttpRequest req,
