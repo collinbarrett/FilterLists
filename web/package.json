@@ -17,7 +17,7 @@
     "@angular/core": "~13.3.0",
     "@angular/forms": "~13.3.0",
     "@angular/platform-browser": "~13.3.4",
-    "@angular/platform-browser-dynamic": "~13.3.0",
+    "@angular/platform-browser-dynamic": "~13.3.4",
     "@angular/router": "~13.3.0",
     "@nrwl/angular": "14.0.1",
     "rxjs": "~7.5.5",
