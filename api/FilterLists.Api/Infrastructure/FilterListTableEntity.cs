@@ -1,10 +1,8 @@
-using System;
-using Azure;
 using Azure.Data.Tables;
 
 namespace FilterLists.Api.Infrastructure;
 
-public interface FilterListTableEntity : ITableEntity
+public interface IFilterListTableEntity : ITableEntity
 {
     //public string Name { get; init; } = default!; // RowKey
     public long Id { get; init; }
@@ -60,9 +58,4 @@ public interface FilterListTableEntity : ITableEntity
     public string? IncludesFilterListName { get; init; }
     public string? DependencyFilterListName { get; init; }
     public string? DependentFilterListName { get; init; }
-
-    public string PartitionKey { get; set; }
-    public string RowKey { get; set; }
-    public DateTimeOffset? Timestamp { get; set; }
-    public ETag ETag { get; set; }
 }

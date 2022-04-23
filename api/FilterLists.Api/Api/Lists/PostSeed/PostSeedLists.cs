@@ -73,41 +73,41 @@ public class PostSeedLists
             //        .Contains(softwareSyntaxes.Where(ss => ss.SoftwareId == s.Id).Select(ss => ss.SyntaxId)));
             var values = new Dictionary<string, object?>
             {
-                { nameof(FilterListTableEntity.PartitionKey), "filterlist" },
-                { nameof(FilterListTableEntity.RowKey), rowKey },
-                { nameof(FilterListTableEntity.Id), l.Id },
-                { nameof(FilterListTableEntity.Description), l.Description },
-                { nameof(FilterListTableEntity.HomeUrl), l.HomeUrl },
-                { nameof(FilterListTableEntity.OnionUrl), l.OnionUrl },
-                { nameof(FilterListTableEntity.PolicyUrl), l.PolicyUrl },
-                { nameof(FilterListTableEntity.SubmissionUrl), l.SubmissionUrl },
-                { nameof(FilterListTableEntity.IssuesUrl), l.IssuesUrl },
-                { nameof(FilterListTableEntity.ForumUrl), l.ForumUrl },
-                { nameof(FilterListTableEntity.ChatUrl), l.ChatUrl },
-                { nameof(FilterListTableEntity.EmailAddress), l.EmailAddress },
-                { nameof(FilterListTableEntity.DonateUrl), l.DonateUrl },
-                { nameof(FilterListTableEntity.LicenseId), listLicense.Id },
-                { nameof(FilterListTableEntity.LicenseName), listLicense.Name },
-                { nameof(FilterListTableEntity.LicenseUrl), listLicense.Url },
-                { nameof(FilterListTableEntity.LicensePermitsModification), listLicense.PermitsModification },
-                { nameof(FilterListTableEntity.LicensePermitsDistribution), listLicense.PermitsDistribution },
-                { nameof(FilterListTableEntity.LicensePermitsCommercialUse), listLicense.PermitsCommercialUse }
+                { nameof(IFilterListTableEntity.PartitionKey), "filterlist" },
+                { nameof(IFilterListTableEntity.RowKey), rowKey },
+                { nameof(IFilterListTableEntity.Id), l.Id },
+                { nameof(IFilterListTableEntity.Description), l.Description },
+                { nameof(IFilterListTableEntity.HomeUrl), l.HomeUrl },
+                { nameof(IFilterListTableEntity.OnionUrl), l.OnionUrl },
+                { nameof(IFilterListTableEntity.PolicyUrl), l.PolicyUrl },
+                { nameof(IFilterListTableEntity.SubmissionUrl), l.SubmissionUrl },
+                { nameof(IFilterListTableEntity.IssuesUrl), l.IssuesUrl },
+                { nameof(IFilterListTableEntity.ForumUrl), l.ForumUrl },
+                { nameof(IFilterListTableEntity.ChatUrl), l.ChatUrl },
+                { nameof(IFilterListTableEntity.EmailAddress), l.EmailAddress },
+                { nameof(IFilterListTableEntity.DonateUrl), l.DonateUrl },
+                { nameof(IFilterListTableEntity.LicenseId), listLicense.Id },
+                { nameof(IFilterListTableEntity.LicenseName), listLicense.Name },
+                { nameof(IFilterListTableEntity.LicenseUrl), listLicense.Url },
+                { nameof(IFilterListTableEntity.LicensePermitsModification), listLicense.PermitsModification },
+                { nameof(IFilterListTableEntity.LicensePermitsDistribution), listLicense.PermitsDistribution },
+                { nameof(IFilterListTableEntity.LicensePermitsCommercialUse), listLicense.PermitsCommercialUse }
             };
 
             for (var i = 0; i < listViewUrls.Count; i++)
             {
-                values.Add($"{nameof(FilterListTableEntity.ViewUrlSegmentNumber)}{i + 1}",
+                values.Add($"{nameof(IFilterListTableEntity.ViewUrlSegmentNumber)}{i + 1}",
                     listViewUrls[i].SegmentNumber);
-                values.Add($"{nameof(FilterListTableEntity.ViewUrlPrimariness)}{i + 1}", listViewUrls[i].Primariness);
-                values.Add($"{nameof(FilterListTableEntity.ViewUrl)}{i + 1}", listViewUrls[i].Url);
+                values.Add($"{nameof(IFilterListTableEntity.ViewUrlPrimariness)}{i + 1}", listViewUrls[i].Primariness);
+                values.Add($"{nameof(IFilterListTableEntity.ViewUrl)}{i + 1}", listViewUrls[i].Url);
             }
 
             for (var i = 0; i < listSyntaxes.Count; i++)
             {
-                values.Add($"{nameof(FilterListTableEntity.SyntaxId)}{i + 1}", listSyntaxes[i].Id);
-                values.Add($"{nameof(FilterListTableEntity.SyntaxName)}{i + 1}", listSyntaxes[i].Name);
-                values.Add($"{nameof(FilterListTableEntity.SyntaxDescription)}{i + 1}", listSyntaxes[i].Description);
-                values.Add($"{nameof(FilterListTableEntity.SyntaxUrl)}{i + 1}", listSyntaxes[i].Url);
+                values.Add($"{nameof(IFilterListTableEntity.SyntaxId)}{i + 1}", listSyntaxes[i].Id);
+                values.Add($"{nameof(IFilterListTableEntity.SyntaxName)}{i + 1}", listSyntaxes[i].Name);
+                values.Add($"{nameof(IFilterListTableEntity.SyntaxDescription)}{i + 1}", listSyntaxes[i].Description);
+                values.Add($"{nameof(IFilterListTableEntity.SyntaxUrl)}{i + 1}", listSyntaxes[i].Url);
             }
 
             return new TableEntity(values);
