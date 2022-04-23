@@ -108,13 +108,13 @@ jobs:
           dotnet-version: '6.0.x'
 
       - name: Publish
-        run: dotnet publish -c Release -r win-x86 -p:PublishReadyToRun=true --no-self-contained
+        run: dotnet publish FilterLists.Api/FilterLists.Api.csproj -c Release -r win-x86 -p:PublishReadyToRun=true --no-self-contained
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
           name: api-artifacts
-          path: api/bin/Release/net6.0/win-x86/publish/*
+          path: api/FilterLists.Api/bin/Release/net6.0/win-x86/publish/*
 
   deploy_swa:
     needs: [build_web, build_api]
