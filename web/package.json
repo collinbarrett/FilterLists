@@ -21,7 +21,7 @@
     "@angular/router": "~13.3.0",
     "@nrwl/angular": "14.0.1",
     "rxjs": "~7.5.5",
-    "tslib": "^2.0.0",
+    "tslib": "^2.4.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
