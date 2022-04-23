@@ -5,8 +5,6 @@ VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Api", "FilterLists.Api\FilterLists.Api.csproj", "{A4F84784-2278-4E75-9D06-C4290AA4DC2E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Seed", "FilterLists.Seed\FilterLists.Seed.csproj", "{1C3AACB7-CF3E-41D0-90F5-547EA7537ED0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{A4F84784-2278-4E75-9D06-C4290AA4DC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4F84784-2278-4E75-9D06-C4290AA4DC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4F84784-2278-4E75-9D06-C4290AA4DC2E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1C3AACB7-CF3E-41D0-90F5-547EA7537ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1C3AACB7-CF3E-41D0-90F5-547EA7537ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1C3AACB7-CF3E-41D0-90F5-547EA7537ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1C3AACB7-CF3E-41D0-90F5-547EA7537ED0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

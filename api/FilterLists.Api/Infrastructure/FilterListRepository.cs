@@ -2,8 +2,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using Azure.Data.Tables;
+using FilterLists.Api.Api.Lists.GetSummaries.Response;
 
-namespace FilterLists.Api.FilterLists;
+namespace FilterLists.Api.Infrastructure;
 
 public class FilterListRepository : IFilterListRepository
 {
@@ -18,8 +19,8 @@ public class FilterListRepository : IFilterListRepository
         CancellationToken token)
     {
         return _tableClient.QueryAsync<TableEntity>(
-                select: new[] { nameof(TableEntity.PartitionKey) },
+                select: new[] { nameof(TableEntity.RowKey) },
                 cancellationToken: token)
-            .Select(te => new FilterListSummaryMobile { Name = te.PartitionKey });
+            .Select(te => new FilterListSummaryMobile { Name = te.RowKey });
     }
 }

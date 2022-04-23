@@ -1,6 +1,7 @@
 using System;
 using FilterLists.Api;
-using FilterLists.Api.FilterLists;
+using FilterLists.Api.Infrastructure;
+using FluentValidation;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,5 +20,6 @@ public class Startup : FunctionsStartup
             azClientBuilder.AddTableServiceClient(connectionString);
         });
         builder.Services.AddScoped<IFilterListRepository, FilterListRepository>();
+        builder.Services.AddValidatorsFromAssemblyContaining<Startup>();
     }
 }

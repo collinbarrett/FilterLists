@@ -1,30 +1,33 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using FilterLists.Api.Infrastructure;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
 
-namespace FilterLists.Api.FilterLists;
+namespace FilterLists.Api.Api.Lists.GetSummaries;
 
-public class GetFilterLists
+public class GetListSummaries
 {
     private readonly IFilterListRepository _repo;
 
-    public GetFilterLists(IFilterListRepository repo)
+    public GetListSummaries(IFilterListRepository repo)
     {
         _repo = repo;
     }
 
-    [FunctionName("GetFilterLists")]
+    [FunctionName(nameof(GetListSummaries))]
     public async Task<IActionResult> Run(
         [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "lists")]
         HttpRequest req,
         ILogger log,
         CancellationToken token)
     {
+        // TODO: page response?
+
         // TODO: stream results https://github.com/Azure/Azure-Functions/issues/1414
         var models = await _repo.GetFilterListSummaryMobilesAsync(token).ToListAsync(token);
 

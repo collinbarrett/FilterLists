@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace FilterLists.Seed.Models;
+﻿namespace FilterLists.Api.Api.Lists.Put.Request;
 
 public record License
 {
+    public long Id { get; init; }
     public string Name { get; init; } = default!;
-    public Uri? Url { get; init; }
+    public string? Url { get; init; }
     public bool PermitsModification { get; init; }
     public bool PermitsDistribution { get; init; }
     public bool PermitsCommercialUse { get; init; }
-    public IEnumerable<FilterList> FilterLists { get; init; } = new HashSet<FilterList>();
 }
