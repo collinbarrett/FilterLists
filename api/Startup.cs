@@ -13,6 +13,7 @@ public class Startup : FunctionsStartup
 {
     public override void Configure(IFunctionsHostBuilder builder)
     {
+        builder.Services.AddHttpClient();
         builder.Services.AddAzureClients(azClientBuilder =>
         {
             var connectionString = Environment.GetEnvironmentVariable("FilterListsStappApiStorage");
