@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using Azure.Data.Tables;
@@ -20,6 +21,10 @@ namespace FilterLists.Seed;
 public class SeedFilterLists
 {
     private const string SeedDataDir = "../../../../../../FilterLists/services/Directory/data/";
+
+    // https://stackoverflow.com/a/37749583/2343739
+    private static readonly Regex DisallowedCharsInTableKeys = new(@"[\\\\#%+/?\u0000-\u001F\u007F-\u009F]");
+
     private readonly TableServiceClient _tableServiceClient;
 
     public SeedFilterLists(TableServiceClient tableServiceClient)
@@ -51,8 +56,11 @@ public class SeedFilterLists
                             ? value?.ToString()
                             : value;
                     });
-            var rowKeyValue = listProperties.GetValueOrDefault(nameof(TableEntity.PartitionKey));
+            var rowKeyValue = listProperties.GetValueOrDefault(nameof(TableEntity.PartitionKey))!.ToString()!;
+            if (DisallowedCharsInTableKeys.IsMatch(rowKeyValue))
+                throw new ArgumentException("Invalid key name", rowKeyValue);
             listProperties.Add(nameof(TableEntity.RowKey), rowKeyValue);
+
             return new TableEntity(listProperties);
         });
 
