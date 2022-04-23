@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -22,8 +23,11 @@ public class GetFilterLists
         [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "lists")]
         HttpRequest req,
         ILogger log,
-        CancellationToken cancellationToken)
+        CancellationToken token)
     {
-        return new OkObjectResult(await _repo.GetListsAsync(cancellationToken));
+        // TODO: stream results https://github.com/Azure/Azure-Functions/issues/1414
+        var models = await _repo.GetFilterListSummaryMobilesAsync(token).ToListAsync(token);
+
+        return new OkObjectResult(models);
     }
 }

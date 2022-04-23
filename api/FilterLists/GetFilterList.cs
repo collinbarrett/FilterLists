@@ -15,8 +15,9 @@ public static class GetFilterList
         [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "lists/{id:int}")]
         HttpRequest req,
         ILogger log,
-        CancellationToken cancellationToken)
+        CancellationToken token)
     {
-        return new OkObjectResult(new { Name = "EasyList" });
+        var model = new { Name = "EasyList" };
+        return await Task.FromResult(new OkObjectResult(model));
     }
 }
