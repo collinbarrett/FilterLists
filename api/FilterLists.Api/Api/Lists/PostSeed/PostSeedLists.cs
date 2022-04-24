@@ -73,9 +73,11 @@ public class PostSeedLists
                         .Select(fls => fls.SyntaxId)
                         .Contains(s.Id))
                 .ToList();
-            //var listSoftware = software.Where(s =>
-            //    listSyntaxes.Select(ls => ls.Id).ToList()
-            //        .Contains(softwareSyntaxes.Where(ss => ss.SoftwareId == s.Id).Select(ss => ss.SyntaxId)));
+            var listSoftware = software.Where(s =>
+                    softwareSyntaxes.Where(ss => listSyntaxes.Select(ls => ls.Id).Contains(ss.SyntaxId))
+                        .Select(ss => ss.SoftwareId)
+                        .Contains(s.Id))
+                .ToList();
             var listLanguageIso6391s = languages.Where(la =>
                     filterListLanguages.Where(fll => fll.FilterListId == list.Id)
                         .Select(fll => fll.LanguageId)
@@ -160,7 +162,6 @@ public class PostSeedLists
                 values.Add($"{nameof(IFilterListTableEntity.ViewUrl)}{indexerSuffix}", listViewUrls[i].Url);
             }
 
-
             for (var i = 0; i < listSyntaxes.Count; i++)
             {
                 var indexSuffix = ToIndexSuffix(i);
@@ -168,6 +169,17 @@ public class PostSeedLists
                 values.Add($"{nameof(IFilterListTableEntity.SyntaxName)}{indexSuffix}", listSyntaxes[i].Name);
                 values.Add($"{nameof(IFilterListTableEntity.SyntaxDescription)}{indexSuffix}", listSyntaxes[i].Description);
                 values.Add($"{nameof(IFilterListTableEntity.SyntaxUrl)}{indexSuffix}", listSyntaxes[i].Url);
+            }
+
+            for (var i = 0; i < listSoftware.Count; i++)
+            {
+                var indexSuffix = ToIndexSuffix(i);
+                values.Add($"{nameof(IFilterListTableEntity.SoftwareId)}{indexSuffix}", listSoftware[i].Id);
+                values.Add($"{nameof(IFilterListTableEntity.SoftwareName)}{indexSuffix}", listSoftware[i].Name);
+                values.Add($"{nameof(IFilterListTableEntity.SoftwareDescription)}{indexSuffix}", listSoftware[i].Description);
+                values.Add($"{nameof(IFilterListTableEntity.SoftwareHomeUrl)}{indexSuffix}", listSoftware[i].HomeUrl);
+                values.Add($"{nameof(IFilterListTableEntity.SoftwareDownloadUrl)}{indexSuffix}", listSoftware[i].DownloadUrl);
+                values.Add($"{nameof(IFilterListTableEntity.SoftwareSupportsAbpUrlScheme)}{indexSuffix}", listSoftware[i].SupportsAbpUrlScheme);
             }
 
             for (var i = 0; i < listLanguageIso6391s.Count; i++)
