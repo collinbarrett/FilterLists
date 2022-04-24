@@ -80,6 +80,7 @@ public class PostSeedLists
                     filterListLanguages.Where(fll => fll.FilterListId == list.Id)
                         .Select(fll => fll.LanguageId)
                         .Contains(la.Id))
+                .Select(la => la.Name)
                 .ToList();
             var listMaintainers = maintainers.Where(m =>
                     filterListMaintainers.Where(flm => flm.FilterListId == list.Id)
@@ -90,6 +91,42 @@ public class PostSeedLists
                     filterListTags.Where(flt => flt.FilterListId == list.Id)
                         .Select(flt => flt.TagId)
                         .Contains(t.Id))
+                .ToList();
+            var listUpstreamListNames = filterLists.Where(fl =>
+                    forks.Where(fo => fo.ForkFilterListId == list.Id)
+                        .Select(fo => fo.UpstreamFilterListId)
+                        .Contains(fl.Id))
+                .Select(fo => fo.Name)
+                .ToList();
+            var listForkListNames = filterLists.Where(fl =>
+                    forks.Where(fo => fo.UpstreamFilterListId == list.Id)
+                        .Select(fo => fo.ForkFilterListId)
+                        .Contains(fl.Id))
+                .Select(fo => fo.Name)
+                .ToList();
+            var listIncludedInListNames = filterLists.Where(fl =>
+                    merges.Where(m => m.IncludesFilterListId == list.Id)
+                        .Select(m => m.IncludedInFilterListId)
+                        .Contains(fl.Id))
+                .Select(m => m.Name)
+                .ToList();
+            var listIncludesListNames = filterLists.Where(fl =>
+                    merges.Where(m => m.IncludedInFilterListId == list.Id)
+                        .Select(m => m.IncludesFilterListId)
+                        .Contains(fl.Id))
+                .Select(m => m.Name)
+                .ToList();
+            var listDependencyListNames = filterLists.Where(fl =>
+                    dependents.Where(d => d.DependentFilterListId == list.Id)
+                        .Select(d => d.DependencyFilterListId)
+                        .Contains(fl.Id))
+                .Select(d => d.Name)
+                .ToList();
+            var listDependentListNames = filterLists.Where(fl =>
+                    dependents.Where(d => d.DependencyFilterListId == list.Id)
+                        .Select(d => d.DependentFilterListId)
+                        .Contains(fl.Id))
+                .Select(d => d.Name)
                 .ToList();
 
             var values = new Dictionary<string, object?>
@@ -136,7 +173,7 @@ public class PostSeedLists
             for (var i = 0; i < listLanguageIso6391s.Count; i++)
             {
                 var indexSuffix = ToIndexSuffix(i);
-                values.Add($"{nameof(IFilterListTableEntity.LanguageIso6391)}{indexSuffix}", listLanguageIso6391s[i].Iso6391);
+                values.Add($"{nameof(IFilterListTableEntity.LanguageIso6391)}{indexSuffix}", listLanguageIso6391s[i]);
             }
 
             for (var i = 0; i < listMaintainers.Count; i++)
@@ -155,6 +192,42 @@ public class PostSeedLists
                 values.Add($"{nameof(IFilterListTableEntity.TagId)}{indexSuffix}", listTags[i].Id);
                 values.Add($"{nameof(IFilterListTableEntity.TagName)}{indexSuffix}", listTags[i].Name);
                 values.Add($"{nameof(IFilterListTableEntity.TagDescription)}{indexSuffix}", listTags[i].Description);
+            }
+
+            for (var i = 0; i < listUpstreamListNames.Count; i++)
+            {
+                var indexSuffix = ToIndexSuffix(i);
+                values.Add($"{nameof(IFilterListTableEntity.UpstreamFilterListName)}{indexSuffix}", listUpstreamListNames[i]);
+            }
+
+            for (var i = 0; i < listForkListNames.Count; i++)
+            {
+                var indexSuffix = ToIndexSuffix(i);
+                values.Add($"{nameof(IFilterListTableEntity.ForkFilterListName)}{indexSuffix}", listForkListNames[i]);
+            }
+
+            for (var i = 0; i < listIncludedInListNames.Count; i++)
+            {
+                var indexSuffix = ToIndexSuffix(i);
+                values.Add($"{nameof(IFilterListTableEntity.IncludedInFilterListName)}{indexSuffix}", listIncludedInListNames[i]);
+            }
+
+            for (var i = 0; i < listIncludesListNames.Count; i++)
+            {
+                var indexSuffix = ToIndexSuffix(i);
+                values.Add($"{nameof(IFilterListTableEntity.IncludesFilterListName)}{indexSuffix}", listIncludesListNames[i]);
+            }
+
+            for (var i = 0; i < listDependencyListNames.Count; i++)
+            {
+                var indexSuffix = ToIndexSuffix(i);
+                values.Add($"{nameof(IFilterListTableEntity.DependencyFilterListName)}{indexSuffix}", listDependencyListNames[i]);
+            }
+
+            for (var i = 0; i < listDependentListNames.Count; i++)
+            {
+                var indexSuffix = ToIndexSuffix(i);
+                values.Add($"{nameof(IFilterListTableEntity.DependentFilterListName)}{indexSuffix}", listDependentListNames[i]);
             }
 
             static string ToIndexSuffix(int i)
@@ -180,8 +253,7 @@ public class PostSeedLists
     {
         using var reader = new StreamReader($"{SeedDataDir}{typeof(T).Name}.json");
         var json = await reader.ReadToEndAsync();
-        return JsonSerializer.Deserialize<List<T>>(json,
-            new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase })!;
+        return JsonSerializer.Deserialize<List<T>>(json, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase })!;
     }
 }
 
