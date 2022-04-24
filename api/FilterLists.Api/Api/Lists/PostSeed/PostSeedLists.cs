@@ -153,7 +153,7 @@ public class PostSeedLists
 
             static string ToIndexerSuffix(int i)
             {
-                return (i + 1).ToString().PadLeft(2, '0');
+                return $"_{(i + 1).ToString().PadLeft(2, '0')}";
             }
 
             return new TableEntity(values);
