@@ -37,7 +37,22 @@ public class PostSeedLists
         CancellationToken token)
     {
         var dependents = await GetSeedEntities<Dependent>();
-        var filterLists = (await GetSeedEntities<FilterList>()).ToList();
+        var filterLists = (await GetSeedEntities<FilterList>()).Select(l => new FilterList
+        {
+            Id = l.Id,
+            Name = SanitizeKey(l.Name, log),
+            Description = l.Description,
+            LicenseId = l.LicenseId,
+            HomeUrl = l.HomeUrl,
+            OnionUrl = l.OnionUrl,
+            PolicyUrl = l.PolicyUrl,
+            SubmissionUrl = l.SubmissionUrl,
+            IssuesUrl = l.IssuesUrl,
+            ForumUrl = l.ForumUrl,
+            ChatUrl = l.ChatUrl,
+            EmailAddress = l.EmailAddress,
+            DonateUrl = l.DonateUrl
+        }).ToList();
         var filterListLanguages = await GetSeedEntities<FilterListLanguage>();
         var filterListMaintainers = await GetSeedEntities<FilterListMaintainer>();
         var filterListSyntaxes = await GetSeedEntities<FilterListSyntax>();
@@ -55,18 +70,6 @@ public class PostSeedLists
 
         var entities = filterLists.Select(list =>
         {
-            var rowKey = list.Name;
-            if (DisallowedCharsInTableKeys.IsMatch(list.Name)) // https://stackoverflow.com/a/37749583/2343739
-            {
-                var oldRowKey = rowKey;
-                rowKey = rowKey.Replace("+", "&");
-                rowKey = rowKey.Replace("/", " & ");
-                rowKey = DisallowedCharsInTableKeys.Replace(rowKey, "");
-                log.LogWarning(
-                    "Replaced disallowed characters in Azure Table Storage row key: '{oldRowKey}'. New row key: '{newRowKey}'.",
-                    oldRowKey, rowKey);
-            }
-
             var listLicense = licenses.Single(li => li.Id == list.LicenseId);
             var listViewUrls = filterListViewUrls.Where(u => u.FilterListId == list.Id).ToList();
             var listSyntaxes = syntaxes.Where(s =>
@@ -135,7 +138,7 @@ public class PostSeedLists
             var values = new Dictionary<string, object?>
             {
                 { nameof(IFilterListTableEntity.PartitionKey), "filterlist" },
-                { nameof(IFilterListTableEntity.RowKey), rowKey },
+                { nameof(IFilterListTableEntity.RowKey), list.Name },
                 { nameof(IFilterListTableEntity.Id), list.Id },
                 { nameof(IFilterListTableEntity.Description), list.Description },
                 { nameof(IFilterListTableEntity.HomeUrl), list.HomeUrl },
@@ -268,6 +271,21 @@ public class PostSeedLists
         using var reader = new StreamReader($"{SeedDataDir}{typeof(T).Name}.json");
         var json = await reader.ReadToEndAsync();
         return JsonSerializer.Deserialize<List<T>>(json, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase })!;
+    }
+
+    // https://stackoverflow.com/a/37749583/2343739
+    private static string SanitizeKey(string key, ILogger log)
+    {
+        if (!DisallowedCharsInTableKeys.IsMatch(key))
+            return key;
+        var oldKey = key;
+        key = key.Replace("+", "&");
+        key = key.Replace("/", " & ");
+        key = DisallowedCharsInTableKeys.Replace(key, "");
+        log.LogWarning(
+            "Replaced disallowed characters in Table Storage key. Old: '{oldKey}'. New: '{key}'.",
+            oldKey, key);
+        return key;
     }
 }
 
