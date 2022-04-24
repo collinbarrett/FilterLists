@@ -26,11 +26,20 @@ public class GetListSummaries
         ILogger log,
         CancellationToken token)
     {
-        // TODO: page response?
+        // TODO: query param flagging normal v. light
+        if (true)
+        {
+            // TODO: stream results https://github.com/Azure/Azure-Functions/issues/1414
+            var models = await _repo.GetFilterListSummariesAsync(token).ToListAsync(token);
+            return new OkObjectResult(models);
+        }
+        else
+        {
+            // TODO: page response?
 
-        // TODO: stream results https://github.com/Azure/Azure-Functions/issues/1414
-        var models = await _repo.GetFilterListSummaryMobilesAsync(token).ToListAsync(token);
-
-        return new OkObjectResult(models);
+            // TODO: stream results https://github.com/Azure/Azure-Functions/issues/1414
+            var models = await _repo.GetFilterListLightSummariesAsync(token).ToListAsync(token);
+            return new OkObjectResult(models);
+        }
     }
 }

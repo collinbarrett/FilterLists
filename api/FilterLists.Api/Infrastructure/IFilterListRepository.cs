@@ -6,5 +6,6 @@ namespace FilterLists.Api.Infrastructure;
 
 public interface IFilterListRepository
 {
-    IAsyncEnumerable<FilterListSummaryMobile> GetFilterListSummaryMobilesAsync(CancellationToken token);
+    IAsyncEnumerable<FilterListSummary> GetFilterListSummariesAsync(CancellationToken token);
+    IAsyncEnumerable<FilterListSummaryLight> GetFilterListLightSummariesAsync(CancellationToken token);
 }

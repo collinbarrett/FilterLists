@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Azure.Data.Tables;
 using FilterLists.Api.Api.Lists.PostSeed.Models;
+using FilterLists.Api.Extensions;
 using FilterLists.Api.Infrastructure;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -163,7 +164,7 @@ public class PostSeedLists
 
             for (var i = 0; i < listViewUrls.Count; i++)
             {
-                var indexerSuffix = ToIndexSuffix(i);
+                var indexerSuffix = i.ToIndexSuffix();
                 values.Add($"{nameof(IFilterListTableEntity.ViewUrlSegmentNumber)}{indexerSuffix}", listViewUrls[i].SegmentNumber);
                 values.Add($"{nameof(IFilterListTableEntity.ViewUrlPrimariness)}{indexerSuffix}", listViewUrls[i].Primariness);
                 values.Add($"{nameof(IFilterListTableEntity.ViewUrl)}{indexerSuffix}", listViewUrls[i].Url);
@@ -171,7 +172,7 @@ public class PostSeedLists
 
             for (var i = 0; i < listSyntaxes.Count; i++)
             {
-                var indexSuffix = ToIndexSuffix(i);
+                var indexSuffix = i.ToIndexSuffix();
                 values.Add($"{nameof(IFilterListTableEntity.SyntaxId)}{indexSuffix}", listSyntaxes[i].Id);
                 values.Add($"{nameof(IFilterListTableEntity.SyntaxName)}{indexSuffix}", listSyntaxes[i].Name);
                 values.Add($"{nameof(IFilterListTableEntity.SyntaxDescription)}{indexSuffix}", listSyntaxes[i].Description);
@@ -180,7 +181,7 @@ public class PostSeedLists
 
             for (var i = 0; i < listSoftware.Count; i++)
             {
-                var indexSuffix = ToIndexSuffix(i);
+                var indexSuffix = i.ToIndexSuffix();
                 values.Add($"{nameof(IFilterListTableEntity.SoftwareId)}{indexSuffix}", listSoftware[i].Id);
                 values.Add($"{nameof(IFilterListTableEntity.SoftwareName)}{indexSuffix}", listSoftware[i].Name);
                 values.Add($"{nameof(IFilterListTableEntity.SoftwareDescription)}{indexSuffix}", listSoftware[i].Description);
@@ -191,13 +192,13 @@ public class PostSeedLists
 
             for (var i = 0; i < listLanguageIso6391s.Count; i++)
             {
-                var indexSuffix = ToIndexSuffix(i);
+                var indexSuffix = i.ToIndexSuffix();
                 values.Add($"{nameof(IFilterListTableEntity.LanguageIso6391)}{indexSuffix}", listLanguageIso6391s[i]);
             }
 
             for (var i = 0; i < listMaintainers.Count; i++)
             {
-                var indexSuffix = ToIndexSuffix(i);
+                var indexSuffix = i.ToIndexSuffix();
                 values.Add($"{nameof(IFilterListTableEntity.MaintainerId)}{indexSuffix}", listMaintainers[i].Id);
                 values.Add($"{nameof(IFilterListTableEntity.MaintainerName)}{indexSuffix}", listMaintainers[i].Name);
                 values.Add($"{nameof(IFilterListTableEntity.MaintainerUrl)}{indexSuffix}", listMaintainers[i].Url);
@@ -207,7 +208,7 @@ public class PostSeedLists
 
             for (var i = 0; i < listTags.Count; i++)
             {
-                var indexSuffix = ToIndexSuffix(i);
+                var indexSuffix = i.ToIndexSuffix();
                 values.Add($"{nameof(IFilterListTableEntity.TagId)}{indexSuffix}", listTags[i].Id);
                 values.Add($"{nameof(IFilterListTableEntity.TagName)}{indexSuffix}", listTags[i].Name);
                 values.Add($"{nameof(IFilterListTableEntity.TagDescription)}{indexSuffix}", listTags[i].Description);
@@ -215,44 +216,41 @@ public class PostSeedLists
 
             for (var i = 0; i < listUpstreamListNames.Count; i++)
             {
-                var indexSuffix = ToIndexSuffix(i);
+                var indexSuffix = i.ToIndexSuffix();
                 values.Add($"{nameof(IFilterListTableEntity.UpstreamFilterListName)}{indexSuffix}", listUpstreamListNames[i]);
             }
 
             for (var i = 0; i < listForkListNames.Count; i++)
             {
-                var indexSuffix = ToIndexSuffix(i);
+                var indexSuffix = i.ToIndexSuffix();
                 values.Add($"{nameof(IFilterListTableEntity.ForkFilterListName)}{indexSuffix}", listForkListNames[i]);
             }
 
             for (var i = 0; i < listIncludedInListNames.Count; i++)
             {
-                var indexSuffix = ToIndexSuffix(i);
+                var indexSuffix = i.ToIndexSuffix();
                 values.Add($"{nameof(IFilterListTableEntity.IncludedInFilterListName)}{indexSuffix}", listIncludedInListNames[i]);
             }
 
             for (var i = 0; i < listIncludesListNames.Count; i++)
             {
-                var indexSuffix = ToIndexSuffix(i);
+                var indexSuffix = i.ToIndexSuffix();
                 values.Add($"{nameof(IFilterListTableEntity.IncludesFilterListName)}{indexSuffix}", listIncludesListNames[i]);
             }
 
             for (var i = 0; i < listDependencyListNames.Count; i++)
             {
-                var indexSuffix = ToIndexSuffix(i);
+                var indexSuffix = i.ToIndexSuffix();
                 values.Add($"{nameof(IFilterListTableEntity.DependencyFilterListName)}{indexSuffix}", listDependencyListNames[i]);
             }
 
             for (var i = 0; i < listDependentListNames.Count; i++)
             {
-                var indexSuffix = ToIndexSuffix(i);
+                var indexSuffix = i.ToIndexSuffix();
                 values.Add($"{nameof(IFilterListTableEntity.DependentFilterListName)}{indexSuffix}", listDependentListNames[i]);
             }
 
-            static string ToIndexSuffix(int i)
-            {
-                return $"_{(i + 1).ToString().PadLeft(2, '0')}";
-            }
+
 
             return new TableEntity(values);
         });
