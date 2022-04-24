@@ -169,8 +169,9 @@ public class PostSeedLists
         await _tableServiceClient.CreateTableAsync("filterlists", token);
         var tableClient = _tableServiceClient.GetTableClient("filterlists");
 
-        foreach (var entity in entities)
-            await tableClient.AddEntityAsync(entity, token);
+        var transactions = entities.Select(e => new TableTransactionAction(TableTransactionActionType.Add, e));
+        foreach (var transactionBatch in transactions.Chunk(100))
+            await tableClient.SubmitTransactionAsync(transactionBatch, token);
 
         return new NoContentResult();
     }
