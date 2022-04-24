@@ -85,6 +85,11 @@ public class PostSeedLists
                         .Select(flm => flm.MaintainerId)
                         .Contains(m.Id))
                 .ToList();
+            var listTags = tags.Where(t =>
+                    filterListTags.Where(flt => flt.FilterListId == list.Id)
+                        .Select(flt => flt.TagId)
+                        .Contains(t.Id))
+                .ToList();
 
             var values = new Dictionary<string, object?>
             {
@@ -137,6 +142,13 @@ public class PostSeedLists
                 values.Add($"{nameof(IFilterListTableEntity.MaintainerUrl)}{ToIndexerSuffix(i)}", listMaintainers[i].Url);
                 values.Add($"{nameof(IFilterListTableEntity.MaintainerEmailAddress)}{ToIndexerSuffix(i)}", listMaintainers[i].EmailAddress);
                 values.Add($"{nameof(IFilterListTableEntity.MaintainerTwitterHandle)}{ToIndexerSuffix(i)}", listMaintainers[i].TwitterHandle);
+            }
+
+            for (var i = 0; i < listTags.Count; i++)
+            {
+                values.Add($"{nameof(IFilterListTableEntity.TagId)}{ToIndexerSuffix(i)}", listTags[i].Id);
+                values.Add($"{nameof(IFilterListTableEntity.TagName)}{ToIndexerSuffix(i)}", listTags[i].Name);
+                values.Add($"{nameof(IFilterListTableEntity.TagDescription)}{ToIndexerSuffix(i)}", listTags[i].Description);
             }
 
             static string ToIndexerSuffix(int i)
