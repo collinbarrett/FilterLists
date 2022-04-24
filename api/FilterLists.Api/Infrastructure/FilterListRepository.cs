@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using Azure.Data.Tables;
-using FilterLists.Api.Api.Lists.GetSummaries.Response;
+using FilterLists.Api.Application.Lists.GetSummaries.Response;
 using FilterLists.Api.Extensions;
 
 namespace FilterLists.Api.Infrastructure;

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Threading;
-using FilterLists.Api.Api.Lists.GetSummaries.Response;
+using FilterLists.Api.Application.Lists.GetSummaries.Response;
 
 namespace FilterLists.Api.Infrastructure;
 
