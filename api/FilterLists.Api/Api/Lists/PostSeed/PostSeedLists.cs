@@ -252,6 +252,7 @@ public class PostSeedLists
         });
 
         await _tableServiceClient.DeleteTableAsync("filterlists", token);
+        Thread.Sleep(5000);
         await _tableServiceClient.CreateTableAsync("filterlists", token);
         var tableClient = _tableServiceClient.GetTableClient("filterlists");
 
