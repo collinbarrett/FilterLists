@@ -77,8 +77,13 @@ public class PostSeedLists
             //        .Contains(softwareSyntaxes.Where(ss => ss.SoftwareId == s.Id).Select(ss => ss.SyntaxId)));
             var listLanguageIso6391s = languages.Where(la =>
                     filterListLanguages.Where(fll => fll.FilterListId == list.Id)
-                        .Select(fl => fl.LanguageId)
+                        .Select(fll => fll.LanguageId)
                         .Contains(la.Id))
+                .ToList();
+            var listMaintainers = maintainers.Where(m =>
+                    filterListMaintainers.Where(flm => flm.FilterListId == list.Id)
+                        .Select(flm => flm.MaintainerId)
+                        .Contains(m.Id))
                 .ToList();
 
             var values = new Dictionary<string, object?>
@@ -123,6 +128,15 @@ public class PostSeedLists
             for (var i = 0; i < listLanguageIso6391s.Count; i++)
             {
                 values.Add($"{nameof(IFilterListTableEntity.LanguageIso6391)}{ToIndexerSuffix(i)}", listLanguageIso6391s[i].Iso6391);
+            }
+
+            for (var i = 0; i < listMaintainers.Count; i++)
+            {
+                values.Add($"{nameof(IFilterListTableEntity.MaintainerId)}{ToIndexerSuffix(i)}", listMaintainers[i].Id);
+                values.Add($"{nameof(IFilterListTableEntity.MaintainerName)}{ToIndexerSuffix(i)}", listMaintainers[i].Name);
+                values.Add($"{nameof(IFilterListTableEntity.MaintainerUrl)}{ToIndexerSuffix(i)}", listMaintainers[i].Url);
+                values.Add($"{nameof(IFilterListTableEntity.MaintainerEmailAddress)}{ToIndexerSuffix(i)}", listMaintainers[i].EmailAddress);
+                values.Add($"{nameof(IFilterListTableEntity.MaintainerTwitterHandle)}{ToIndexerSuffix(i)}", listMaintainers[i].TwitterHandle);
             }
 
             static string ToIndexerSuffix(int i)
