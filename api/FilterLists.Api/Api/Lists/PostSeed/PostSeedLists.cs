@@ -29,6 +29,9 @@ public class PostSeedLists
         _tableServiceClient = tableServiceClient;
     }
 
+    /// <summary>
+    /// Seeds data from the legacy relational database to the new denormalized nosql format.
+    /// </summary>
     [FunctionName(nameof(PostSeedLists))]
     public async Task<IActionResult> Run(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "lists/seed")]
@@ -86,7 +89,7 @@ public class PostSeedLists
                     filterListLanguages.Where(fll => fll.FilterListId == list.Id)
                         .Select(fll => fll.LanguageId)
                         .Contains(la.Id))
-                .Select(la => la.Name)
+                .Select(la => la.Iso6391)
                 .ToList();
             var listMaintainers = maintainers.Where(m =>
                     filterListMaintainers.Where(flm => flm.FilterListId == list.Id)
@@ -255,7 +258,7 @@ public class PostSeedLists
         });
 
         await _tableServiceClient.DeleteTableAsync("filterlists", token);
-        Thread.Sleep(5000);
+        Thread.Sleep(40 * 1000); // https://docs.microsoft.com/en-us/rest/api/storageservices/Delete-Table?redirectedfrom=MSDN#remarks
         await _tableServiceClient.CreateTableAsync("filterlists", token);
         var tableClient = _tableServiceClient.GetTableClient("filterlists");
 
