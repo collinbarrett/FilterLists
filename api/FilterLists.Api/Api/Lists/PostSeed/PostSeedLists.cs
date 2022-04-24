@@ -37,7 +37,7 @@ public class PostSeedLists
         CancellationToken token)
     {
         var dependents = await GetSeedEntities<Dependent>();
-        var filterLists = await GetSeedEntities<FilterList>();
+        var filterLists = (await GetSeedEntities<FilterList>()).ToList();
         var filterListLanguages = await GetSeedEntities<FilterListLanguage>();
         var filterListMaintainers = await GetSeedEntities<FilterListMaintainer>();
         var filterListSyntaxes = await GetSeedEntities<FilterListSyntax>();
@@ -59,8 +59,9 @@ public class PostSeedLists
             if (DisallowedCharsInTableKeys.IsMatch(list.Name)) // https://stackoverflow.com/a/37749583/2343739
             {
                 var oldRowKey = rowKey;
-                rowKey = DisallowedCharsInTableKeys.Replace(oldRowKey, "");
-                // TODO: customize replaces (e.g., replace '+' w/'&')
+                rowKey = rowKey.Replace("+", "&");
+                rowKey = rowKey.Replace("/", " & ");
+                rowKey = DisallowedCharsInTableKeys.Replace(rowKey, "");
                 log.LogWarning(
                     "Replaced disallowed characters in Azure Table Storage row key: '{oldRowKey}'. New row key: '{newRowKey}'.",
                     oldRowKey, rowKey);
