@@ -60,6 +60,7 @@ public class PostSeedLists
             {
                 var oldRowKey = rowKey;
                 rowKey = DisallowedCharsInTableKeys.Replace(oldRowKey, "");
+                // TODO: customize replaces (e.g., replace '+' w/'&')
                 log.LogWarning(
                     "Replaced disallowed characters in Azure Table Storage row key: '{oldRowKey}'. New row key: '{newRowKey}'.",
                     oldRowKey, rowKey);
@@ -116,42 +117,47 @@ public class PostSeedLists
 
             for (var i = 0; i < listViewUrls.Count; i++)
             {
-                values.Add($"{nameof(IFilterListTableEntity.ViewUrlSegmentNumber)}{ToIndexerSuffix(i)}", listViewUrls[i].SegmentNumber);
-                values.Add($"{nameof(IFilterListTableEntity.ViewUrlPrimariness)}{ToIndexerSuffix(i)}", listViewUrls[i].Primariness);
-                values.Add($"{nameof(IFilterListTableEntity.ViewUrl)}{ToIndexerSuffix(i)}", listViewUrls[i].Url);
+                var indexerSuffix = ToIndexSuffix(i);
+                values.Add($"{nameof(IFilterListTableEntity.ViewUrlSegmentNumber)}{indexerSuffix}", listViewUrls[i].SegmentNumber);
+                values.Add($"{nameof(IFilterListTableEntity.ViewUrlPrimariness)}{indexerSuffix}", listViewUrls[i].Primariness);
+                values.Add($"{nameof(IFilterListTableEntity.ViewUrl)}{indexerSuffix}", listViewUrls[i].Url);
             }
 
 
             for (var i = 0; i < listSyntaxes.Count; i++)
             {
-                values.Add($"{nameof(IFilterListTableEntity.SyntaxId)}{ToIndexerSuffix(i)}", listSyntaxes[i].Id);
-                values.Add($"{nameof(IFilterListTableEntity.SyntaxName)}{ToIndexerSuffix(i)}", listSyntaxes[i].Name);
-                values.Add($"{nameof(IFilterListTableEntity.SyntaxDescription)}{ToIndexerSuffix(i)}", listSyntaxes[i].Description);
-                values.Add($"{nameof(IFilterListTableEntity.SyntaxUrl)}{ToIndexerSuffix(i)}", listSyntaxes[i].Url);
+                var indexSuffix = ToIndexSuffix(i);
+                values.Add($"{nameof(IFilterListTableEntity.SyntaxId)}{indexSuffix}", listSyntaxes[i].Id);
+                values.Add($"{nameof(IFilterListTableEntity.SyntaxName)}{indexSuffix}", listSyntaxes[i].Name);
+                values.Add($"{nameof(IFilterListTableEntity.SyntaxDescription)}{indexSuffix}", listSyntaxes[i].Description);
+                values.Add($"{nameof(IFilterListTableEntity.SyntaxUrl)}{indexSuffix}", listSyntaxes[i].Url);
             }
 
             for (var i = 0; i < listLanguageIso6391s.Count; i++)
             {
-                values.Add($"{nameof(IFilterListTableEntity.LanguageIso6391)}{ToIndexerSuffix(i)}", listLanguageIso6391s[i].Iso6391);
+                var indexSuffix = ToIndexSuffix(i);
+                values.Add($"{nameof(IFilterListTableEntity.LanguageIso6391)}{indexSuffix}", listLanguageIso6391s[i].Iso6391);
             }
 
             for (var i = 0; i < listMaintainers.Count; i++)
             {
-                values.Add($"{nameof(IFilterListTableEntity.MaintainerId)}{ToIndexerSuffix(i)}", listMaintainers[i].Id);
-                values.Add($"{nameof(IFilterListTableEntity.MaintainerName)}{ToIndexerSuffix(i)}", listMaintainers[i].Name);
-                values.Add($"{nameof(IFilterListTableEntity.MaintainerUrl)}{ToIndexerSuffix(i)}", listMaintainers[i].Url);
-                values.Add($"{nameof(IFilterListTableEntity.MaintainerEmailAddress)}{ToIndexerSuffix(i)}", listMaintainers[i].EmailAddress);
-                values.Add($"{nameof(IFilterListTableEntity.MaintainerTwitterHandle)}{ToIndexerSuffix(i)}", listMaintainers[i].TwitterHandle);
+                var indexSuffix = ToIndexSuffix(i);
+                values.Add($"{nameof(IFilterListTableEntity.MaintainerId)}{indexSuffix}", listMaintainers[i].Id);
+                values.Add($"{nameof(IFilterListTableEntity.MaintainerName)}{indexSuffix}", listMaintainers[i].Name);
+                values.Add($"{nameof(IFilterListTableEntity.MaintainerUrl)}{indexSuffix}", listMaintainers[i].Url);
+                values.Add($"{nameof(IFilterListTableEntity.MaintainerEmailAddress)}{indexSuffix}", listMaintainers[i].EmailAddress);
+                values.Add($"{nameof(IFilterListTableEntity.MaintainerTwitterHandle)}{indexSuffix}", listMaintainers[i].TwitterHandle);
             }
 
             for (var i = 0; i < listTags.Count; i++)
             {
-                values.Add($"{nameof(IFilterListTableEntity.TagId)}{ToIndexerSuffix(i)}", listTags[i].Id);
-                values.Add($"{nameof(IFilterListTableEntity.TagName)}{ToIndexerSuffix(i)}", listTags[i].Name);
-                values.Add($"{nameof(IFilterListTableEntity.TagDescription)}{ToIndexerSuffix(i)}", listTags[i].Description);
+                var indexSuffix = ToIndexSuffix(i);
+                values.Add($"{nameof(IFilterListTableEntity.TagId)}{indexSuffix}", listTags[i].Id);
+                values.Add($"{nameof(IFilterListTableEntity.TagName)}{indexSuffix}", listTags[i].Name);
+                values.Add($"{nameof(IFilterListTableEntity.TagDescription)}{indexSuffix}", listTags[i].Description);
             }
 
-            static string ToIndexerSuffix(int i)
+            static string ToIndexSuffix(int i)
             {
                 return $"_{(i + 1).ToString().PadLeft(2, '0')}";
             }
