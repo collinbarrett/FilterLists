@@ -13,6 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import { DirectoryTableComponent } from './directory-table/directory-table.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { MatChipsModule } from '@angular/material/chips';
 
 @NgModule({
   declarations: [AppComponent, DirectoryTableComponent],
@@ -24,6 +25,7 @@ import { MatSortModule } from '@angular/material/sort';
     MatToolbarModule,
     LayoutModule,
     MatButtonModule,
+    MatChipsModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule,

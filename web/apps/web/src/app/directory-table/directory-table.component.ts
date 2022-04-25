@@ -17,7 +17,16 @@ export class DirectoryTableComponent implements AfterViewInit {
   @ViewChild(MatTable) table!: MatTable<FilterListSummary>;
   dataSource: DirectoryTableDataSource;
 
-  displayedColumns = ['name', 'description', 'license'];
+  displayedColumns = [
+    'name',
+    'description',
+    'software',
+    'syntaxes',
+    'languages',
+    'tags',
+    'maintainers',
+    'license',
+  ];
 
   constructor(api: ApiService) {
     this.dataSource = new DirectoryTableDataSource(api);

@@ -10,6 +10,61 @@
       <td mat-cell *matCellDef="let row">{{ row.description }}</td>
     </ng-container>
 
+    <ng-container matColumnDef="software">
+      <th mat-header-cell *matHeaderCellDef>Software</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-chip-list>
+          <span *ngFor="let software of element.software">
+            <mat-chip>{{ software }} </mat-chip>
+          </span>
+        </mat-chip-list>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="syntaxes">
+      <th mat-header-cell *matHeaderCellDef>Syntaxes</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-chip-list>
+          <span *ngFor="let syntax of element.syntaxes">
+            <mat-chip>{{ syntax }} </mat-chip>
+          </span>
+        </mat-chip-list>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="languages">
+      <th mat-header-cell *matHeaderCellDef>Languages</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-chip-list>
+          <span *ngFor="let language of element.languages">
+            <mat-chip>{{ language }} </mat-chip>
+          </span>
+        </mat-chip-list>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="tags">
+      <th mat-header-cell *matHeaderCellDef>Tags</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-chip-list>
+          <span *ngFor="let tag of element.tags">
+            <mat-chip>{{ tag }} </mat-chip>
+          </span>
+        </mat-chip-list>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="maintainers">
+      <th mat-header-cell *matHeaderCellDef>Maintainers</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-chip-list>
+          <span *ngFor="let maintainer of element.maintainers">
+            <mat-chip>{{ maintainer }} </mat-chip>
+          </span>
+        </mat-chip-list>
+      </td>
+    </ng-container>
+
     <ng-container matColumnDef="license">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>License</th>
       <td mat-cell *matCellDef="let row">{{ row.license }}</td>
