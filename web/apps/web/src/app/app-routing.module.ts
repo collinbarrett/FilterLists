@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { DirectoryTableComponent } from './directory-table/directory-table.component';
+import { DirectoryComponent } from './directory/directory.component';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [{ path: '', component: DirectoryTableComponent }];
+const routes: Routes = [{ path: '', component: DirectoryComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

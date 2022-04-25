@@ -4,18 +4,17 @@ import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
 import { ApiService } from '../services/api.service';
 import { FilterListSummary } from '../services/filter-list-summary';
-import { DirectoryTableDataSource } from './directory-table-datasource';
+import { DirectoryDataSource } from './directory-datasource';
 
 @Component({
-  selector: 'filterlists-directory-table',
-  templateUrl: './directory-table.component.html',
-  styleUrls: ['./directory-table.component.css'],
+  templateUrl: './directory.component.html',
+  styleUrls: ['./directory.component.css'],
 })
-export class DirectoryTableComponent implements AfterViewInit {
+export class DirectoryComponent implements AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   @ViewChild(MatTable) table!: MatTable<FilterListSummary>;
-  dataSource: DirectoryTableDataSource;
+  dataSource: DirectoryDataSource;
 
   displayedColumns = [
     'name',
@@ -29,7 +28,7 @@ export class DirectoryTableComponent implements AfterViewInit {
   ];
 
   constructor(api: ApiService) {
-    this.dataSource = new DirectoryTableDataSource(api);
+    this.dataSource = new DirectoryDataSource(api);
   }
 
   ngAfterViewInit(): void {

@@ -6,7 +6,7 @@ import { Observable, merge, BehaviorSubject } from 'rxjs';
 import { ApiService } from '../services/api.service';
 import { FilterListSummary } from '../services/filter-list-summary';
 
-export class DirectoryTableDataSource extends DataSource<FilterListSummary> {
+export class DirectoryDataSource extends DataSource<FilterListSummary> {
   paginator: MatPaginator | undefined;
   sort: MatSort | undefined;
   datastream = new BehaviorSubject<FilterListSummary[]>([]);
