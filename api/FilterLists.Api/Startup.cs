@@ -1,10 +1,8 @@
 using System;
 using FilterLists.Api;
-using FilterLists.Api.Infrastructure;
-using FluentValidation;
+using MediatR;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.Azure;
-using Microsoft.Extensions.DependencyInjection;
 
 [assembly: FunctionsStartup(typeof(Startup))]
 
@@ -16,10 +14,9 @@ public class Startup : FunctionsStartup
     {
         builder.Services.AddAzureClients(azClientBuilder =>
         {
-            var connectionString = Environment.GetEnvironmentVariable("FilterListsStappApiStorage");
+            var connectionString = Environment.GetEnvironmentVariable(TableStorageConstants.ConnectionStringConfigKey);
             azClientBuilder.AddTableServiceClient(connectionString);
         });
-        builder.Services.AddScoped<IFilterListRepository, FilterListRepository>();
-        builder.Services.AddValidatorsFromAssemblyContaining<Startup>();
+        builder.Services.AddMediatR(typeof(Startup));
     }
 }
