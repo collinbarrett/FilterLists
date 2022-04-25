@@ -2,7 +2,12 @@
   <span>FilterLists</span>
 </mat-toolbar>
 
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<table
+  mat-table
+  [dataSource]="dataSource"
+  class="mat-elevation-z8"
+  aria-describedby="FilterLists"
+>
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef>Name</th>
     <td mat-cell *matCellDef="let element">{{ element.name }}</td>

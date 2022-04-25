@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService, FilterListSummary } from './api.service';
+import { ApiService } from './api.service';
+import { FilterListSummary } from './FilterListSummary';
 
 @Component({
   selector: 'filterlists-root',
@@ -7,12 +8,12 @@ import { ApiService, FilterListSummary } from './api.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  displayedColumns: string[] = ['name', 'description', 'license'];
+  readonly displayedColumns: string[] = ['name', 'description', 'license'];
   dataSource: FilterListSummary[] = [];
 
   constructor(private readonly api: ApiService) {}
 
   ngOnInit() {
-    this.api.getLists().subscribe((s) => (this.dataSource = s));
+    this.api.getLists().subscribe((lists) => (this.dataSource = lists));
   }
 }

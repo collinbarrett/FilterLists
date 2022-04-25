@@ -1,26 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../environments/environment';
+import { FilterListSummary } from './FilterListSummary';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ApiService {
-  constructor(private http: HttpClient) {}
+  constructor(private readonly http: HttpClient) {}
 
   getLists() {
-    return this.http.get<FilterListSummary[]>(
-      'http://localhost:7071/api/lists'
-    );
+    return this.http.get<FilterListSummary[]>(environment.apiUrl + 'lists');
   }
-}
-
-export interface FilterListSummary {
-  name: string;
-  description: string;
-  software: string[];
-  syntaxes: string[];
-  languages: string[];
-  tags: string[];
-  maintainers: string[];
-  license: string;
 }
