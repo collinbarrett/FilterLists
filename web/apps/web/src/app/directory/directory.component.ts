@@ -11,12 +11,12 @@ import { DirectoryDataSource } from './directory-datasource';
   styleUrls: ['./directory.component.css'],
 })
 export class DirectoryComponent implements AfterViewInit {
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
-  @ViewChild(MatSort) sort!: MatSort;
-  @ViewChild(MatTable) table!: MatTable<FilterListSummary>;
-  dataSource: DirectoryDataSource;
+  @ViewChild(MatPaginator) readonly paginator!: MatPaginator;
+  @ViewChild(MatSort) readonly sort!: MatSort;
+  @ViewChild(MatTable) readonly table!: MatTable<FilterListSummary>;
+  readonly dataSource: DirectoryDataSource;
 
-  displayedColumns = [
+  readonly displayedColumns = [
     'name',
     'description',
     'software',
@@ -31,7 +31,7 @@ export class DirectoryComponent implements AfterViewInit {
     this.dataSource = new DirectoryDataSource(api);
   }
 
-  ngAfterViewInit(): void {
+  ngAfterViewInit() {
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
     this.table.dataSource = this.dataSource;
