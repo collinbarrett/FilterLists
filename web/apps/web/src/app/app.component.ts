@@ -1,7 +1,7 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component } from '@angular/core';
 import { map, Observable, shareReplay } from 'rxjs';
-import { FilterListSummary } from './filter-list-summary';
+import { FilterListSummary } from './services/filter-list-summary';
 
 @Component({
   selector: 'filterlists-root',

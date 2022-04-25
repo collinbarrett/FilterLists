@@ -2,8 +2,8 @@ import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
-import { ApiService } from '../api.service';
-import { FilterListSummary } from '../filter-list-summary';
+import { ApiService } from '../services/api.service';
+import { FilterListSummary } from '../services/filter-list-summary';
 import { DirectoryTableDataSource } from './directory-table-datasource';
 
 @Component({

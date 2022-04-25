@@ -3,8 +3,8 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { map } from 'rxjs/operators';
 import { Observable, merge, BehaviorSubject } from 'rxjs';
-import { FilterListSummary } from '../filter-list-summary';
-import { ApiService } from '../api.service';
+import { ApiService } from '../services/api.service';
+import { FilterListSummary } from '../services/filter-list-summary';
 
 export class DirectoryTableDataSource extends DataSource<FilterListSummary> {
   paginator: MatPaginator | undefined;
