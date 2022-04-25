@@ -20,7 +20,7 @@ public class FilterListRepository : IFilterListRepository
     public IAsyncEnumerable<FilterListSummary> GetFilterListSummariesAsync(
         CancellationToken token)
     {
-        var indices = Enumerable.Range(1, MaxDenormalizedIndexCount).Select(IntExtensions.ToIndexSuffix).ToList();
+        var indices = Enumerable.Range(0, MaxDenormalizedIndexCount - 1).Select(IntExtensions.ToIndexSuffix).ToList();
 
         var select = new List<string>
         {
