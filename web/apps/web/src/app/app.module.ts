@@ -7,12 +7,19 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { AppRoutingModule } from './app-routing.module';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: '',
+    loadChildren: () =>
+      import('./directory/directory.module').then((d) => d.DirectoryModule),
+  },
+];
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
     LayoutModule,
@@ -20,6 +27,7 @@ import { AppRoutingModule } from './app-routing.module';
     MatListModule,
     MatSidenavModule,
     MatToolbarModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent],
