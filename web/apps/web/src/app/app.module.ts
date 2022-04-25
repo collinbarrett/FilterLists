@@ -14,10 +14,12 @@ import { DirectoryTableComponent } from './directory-table/directory-table.compo
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatChipsModule } from '@angular/material/chips';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent, DirectoryTableComponent],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
