@@ -3,9 +3,9 @@
     #drawer
     class="sidenav"
     fixedInViewport
+    [position]="'end'"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
-    [opened]="(isHandset$ | async) === false"
   >
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
@@ -16,20 +16,20 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async"
-      >
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
       <img
         src="assets/logo_filterlists.png"
         alt="FilterLists logo"
         height="44px"
       />
+      <span class="flexExpand"></span>
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
     </mat-toolbar>
     <filterlists-directory-table></filterlists-directory-table>
   </mat-sidenav-content>
