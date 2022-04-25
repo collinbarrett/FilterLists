@@ -6,28 +6,32 @@
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
   >
-    <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Directory</a>
-      <a mat-list-item href="#">Submissions</a>
-      <a mat-list-item href="#">About</a>
+      <a mat-list-item [routerLink]="['/']" routerLinkActive="active"
+        >Directory</a
+      >
+      <a mat-list-item [routerLink]="['/submissions']" routerLinkActive="active"
+        >Submissions</a
+      >
+      <a mat-list-item [routerLink]="['/about']" routerLinkActive="active"
+        >About</a
+      >
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
       <button
         type="button"
+        mat-button
         aria-label="Toggle sidenav"
-        mat-icon-button
         (click)="drawer.toggle()"
       >
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        <img
+          src="assets/logo_filterlists.png"
+          alt="FilterLists logo"
+          height="44px"
+        />
       </button>
-      <img
-        src="assets/logo_filterlists.png"
-        alt="FilterLists logo"
-        height="44px"
-      />
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>

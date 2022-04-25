@@ -15,3 +15,8 @@
   top: 0;
   z-index: 1;
 }
+
+.mat-nav-list a.active {
+  background: rgba(255,255,255,.04);
+  color: #fff;
+}
