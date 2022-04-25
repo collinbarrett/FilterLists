@@ -1,7 +1,6 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { map, Observable, shareReplay } from 'rxjs';
-import { ApiService } from './api.service';
 import { FilterListSummary } from './filter-list-summary';
 
 @Component({
@@ -9,7 +8,7 @@ import { FilterListSummary } from './filter-list-summary';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   readonly displayedColumns: string[] = ['name', 'description', 'license'];
   readonly isHandset$: Observable<boolean> = this.breakpointObserver
     .observe(Breakpoints.Handset)
@@ -19,12 +18,5 @@ export class AppComponent implements OnInit {
     );
   dataSource: FilterListSummary[] = [];
 
-  constructor(
-    private readonly api: ApiService,
-    private readonly breakpointObserver: BreakpointObserver
-  ) {}
-
-  ngOnInit() {
-    this.api.getLists().subscribe((lists) => (this.dataSource = lists));
-  }
+  constructor(private readonly breakpointObserver: BreakpointObserver) {}
 }
