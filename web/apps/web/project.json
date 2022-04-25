@@ -14,7 +14,7 @@
         "polyfills": "apps/web/src/polyfills.ts",
         "tsConfig": "apps/web/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/web/src/favicon.ico", "apps/web/src/assets"],
+        "assets": ["apps/web/src/assets"],
         "styles": [
           "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
           "apps/web/src/styles.scss"
