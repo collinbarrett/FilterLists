@@ -38,8 +38,8 @@ public static class UpsertFilterList
 
     public record FilterListViewUrl
     {
-        public short SegmentNumber { get; init; }
-        public short Primariness { get; init; }
+        public int SegmentNumber { get; init; }
+        public int Primariness { get; init; }
         public Uri Url { get; init; } = default!;
     }
 

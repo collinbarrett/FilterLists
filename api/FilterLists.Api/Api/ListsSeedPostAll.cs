@@ -26,6 +26,7 @@ public class ListsSeedPostAll
     /// </summary>
     [FunctionName(nameof(ListsSeedPostAll))]
     public async Task<IActionResult> Run(
+        //[HttpTrigger(AuthorizationLevel.Function, "post", Route = "lists/seed")]
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "lists/seed")]
         HttpRequest req,
         ILogger log,
