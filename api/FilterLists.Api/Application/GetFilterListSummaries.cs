@@ -18,11 +18,11 @@ public static class GetFilterListSummaries
     public class Handler : IRequestHandler<Query, IEnumerable<FilterListSummary>>
     {
         // TODO: auto-increment or notify when these need to be manually incremented
-        private const int MaxDenormalizedSoftwareIndexCount = 22;
-        private const int MaxDenormalizedSyntaxIndexCount = 4;
-        private const int MaxDenormalizedLanguageIndexCount = 8;
-        private const int MaxDenormalizedTagIndexCount = 10;
-        private const int MaxDenormalizedMaintainerIndexCount = 4;
+        private const int MaxDenormalizedSoftwareIndexCount = 28; // 22 * 1.25
+        private const int MaxDenormalizedSyntaxIndexCount = 7; // 5 * 1.25
+        private const int MaxDenormalizedLanguageIndexCount = 10; // 8 * 1.25
+        private const int MaxDenormalizedTagIndexCount = 13; // 10 * 1.25
+        private const int MaxDenormalizedMaintainerIndexCount = 5; // 4 * 1.25
 
         private readonly IList<string> _languageIndices = Enumerable.Range(0, MaxDenormalizedLanguageIndexCount - 1)
             .Select(IntExtensions.ToIndexSuffix).ToList();
@@ -57,7 +57,10 @@ public static class GetFilterListSummaries
             select.AddRange(_tagIndices.Select(i => $"{nameof(IFilterListTableEntity.TagName)}{i}"));
             select.AddRange(_maintainerIndices.Select(i => $"{nameof(IFilterListTableEntity.MaintainerName)}{i}"));
 
-            return await _tableClient.QueryAsync<TableEntity>(select: select, cancellationToken: cancellationToken)
+            return await _tableClient.QueryAsync<TableEntity>(
+                    te => te.PartitionKey == TableStorageConstants.FilterListsPartitionKey,
+                    select: select,
+                    cancellationToken: cancellationToken)
                 .Select(te => new FilterListSummary
                 {
                     Name = te.RowKey,

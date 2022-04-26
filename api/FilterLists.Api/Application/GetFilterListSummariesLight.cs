@@ -27,6 +27,7 @@ public static class GetFilterListSummariesLight
         {
             return await _tableClient
                 .QueryAsync<TableEntity>(
+                    te => te.PartitionKey == TableStorageConstants.FilterListsPartitionKey,
                     select: new[] { nameof(TableEntity.RowKey) },
                     cancellationToken: cancellationToken)
                 .Select(te => new FilterListSummaryLight { Name = te.RowKey })
