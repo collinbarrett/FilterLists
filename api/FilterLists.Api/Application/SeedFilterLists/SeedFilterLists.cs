@@ -248,10 +248,10 @@ public static class SeedFilterLists
                 return new TableEntity(values);
             });
 
-            await _tableServiceClient.DeleteTableAsync("filterlists", cancellationToken);
+            await _tableServiceClient.DeleteTableAsync(TableStorageConstants.FilterListsTableName, cancellationToken);
             Thread.Sleep(40 * 1000); // https://docs.microsoft.com/en-us/rest/api/storageservices/Delete-Table?redirectedfrom=MSDN#remarks
-            await _tableServiceClient.CreateTableAsync("filterlists", cancellationToken);
-            var tableClient = _tableServiceClient.GetTableClient("filterlists");
+            await _tableServiceClient.CreateTableAsync(TableStorageConstants.FilterListsTableName, cancellationToken);
+            var tableClient = _tableServiceClient.GetTableClient(TableStorageConstants.FilterListsTableName);
 
             var transactions = entities.Select(e => new TableTransactionAction(TableTransactionActionType.Add, e));
             foreach (var transactionBatch in transactions.Chunk(100))
