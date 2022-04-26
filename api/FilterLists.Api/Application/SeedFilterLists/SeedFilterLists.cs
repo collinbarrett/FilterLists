@@ -26,8 +26,8 @@ public static class SeedFilterLists
         private static readonly Regex DisallowedCharsInTableKeys = new(@"[\\\\#%+/?\u0000-\u001F\u007F-\u009F]");
         private readonly ILogger _log;
         private readonly TableServiceClient _tableServiceClient;
-
-        public Handler(ILogger log, TableServiceClient tableServiceClient)
+        
+        public Handler(ILogger<Handler> log, TableServiceClient tableServiceClient)
         {
             _log = log;
             _tableServiceClient = tableServiceClient;
