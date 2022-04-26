@@ -78,6 +78,7 @@ public static class GetFilterListDetails
                     te => te.PartitionKey == TableStorageConstants.FilterListsPartitionKey && te.RowKey == request.Name,
                     select: select,
                     cancellationToken: cancellationToken)
+                .Select(te => new TableEntity(te.Where(kv => kv.Value is not null).ToDictionary(kv => kv.Key, kv => kv.Value)))
                 .Select(te => new FilterListDetails
                 {
                     Name = request.Name,
