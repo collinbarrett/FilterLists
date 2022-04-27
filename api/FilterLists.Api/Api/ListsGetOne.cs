@@ -21,12 +21,12 @@ public class ListsGetOne
 
     [FunctionName(nameof(ListsGetOne))]
     public async Task<IActionResult> Run(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "lists/{name:required:length(1,255)}")]
+        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "lists/{id:long:required}")]
         HttpRequest req,
-        string name,
+        long id,
         ILogger log,
         CancellationToken token)
     {
-        return new OkObjectResult(await _mediator.Send(new GetFilterListDetails.Query { Name = name }, token));
+        return new OkObjectResult(await _mediator.Send(new GetFilterListDetails.Query { Id = id }, token));
     }
 }

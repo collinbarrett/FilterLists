@@ -24,8 +24,9 @@ public class ListsPutOne
 
     [FunctionName(nameof(ListsPutOne))]
     public async Task<IActionResult> Run(
-        [HttpTrigger(AuthorizationLevel.Function, "put", Route = "lists/{name:required:length(1,255)}")]
+        [HttpTrigger(AuthorizationLevel.Function, "put", Route = "lists/{id:long:required}")]
         HttpRequest req,
+        long id,
         ILogger log,
         CancellationToken token)
     {

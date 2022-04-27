@@ -1,5 +1,6 @@
 using System;
 using FilterLists.Api;
+using FilterLists.Api.Persistence;
 using MediatR;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.Azure;

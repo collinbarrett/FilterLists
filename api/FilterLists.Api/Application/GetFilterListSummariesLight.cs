@@ -3,6 +3,8 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Azure.Data.Tables;
+using FilterLists.Api.Extensions;
+using FilterLists.Api.Persistence;
 using MediatR;
 
 namespace FilterLists.Api.Application;
@@ -28,15 +30,25 @@ public static class GetFilterListSummariesLight
             return await _tableClient
                 .QueryAsync<TableEntity>(
                     te => te.PartitionKey == TableStorageConstants.FilterListsPartitionKey,
-                    select: new[] { nameof(TableEntity.RowKey) },
+                    select: new[]
+                    {
+                        nameof(TableEntity.RowKey),
+                        nameof(IFilterListTableEntity.Name)
+                    },
                     cancellationToken: cancellationToken)
-                .Select(te => new FilterListSummaryLight { Name = te.RowKey })
+                .Select(te => new FilterListSummaryLight
+                {
+                    Id = te.RowKey.FromTableStorageKeyString(),
+                    Name = te.GetString(nameof(IFilterListTableEntity.Name))
+                })
+                .OrderBy(l => l.Name)
                 .ToListAsync(cancellationToken);
         }
     }
 
     public record FilterListSummaryLight
     {
+        public long Id { get; init; }
         public string Name { get; init; } = default!;
     }
 }

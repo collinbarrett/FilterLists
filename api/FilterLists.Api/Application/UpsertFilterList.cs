@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Azure.Data.Tables;
+using FilterLists.Api.Persistence;
 using MediatR;
 
 namespace FilterLists.Api.Application;
@@ -23,10 +24,10 @@ public static class UpsertFilterList
         public string? EmailAddress { get; init; }
         public Uri? DonateUrl { get; init; }
         public IEnumerable<FilterListViewUrl> ViewUrls { get; init; } = new HashSet<FilterListViewUrl>();
-        public License License { get; init; } = default!;
-        public IEnumerable<Syntax> Syntaxes { get; init; } = new HashSet<Syntax>();
         public IEnumerable<string> LanguageIso6391s { get; init; } = new HashSet<string>();
+        public License License { get; init; } = default!;
         public IEnumerable<Maintainer> Maintainers { get; init; } = new HashSet<Maintainer>();
+        public IEnumerable<Syntax> Syntaxes { get; init; } = new HashSet<Syntax>();
         public IEnumerable<Tag> Tags { get; init; } = new HashSet<Tag>();
         public IEnumerable<string> UpstreamFilterListNames { get; init; } = new HashSet<string>();
         public IEnumerable<string> ForkFilterListNames { get; init; } = new HashSet<string>();
@@ -62,6 +63,15 @@ public static class UpsertFilterList
         public string? TwitterHandle { get; init; }
     }
 
+    public record Syntax
+    {
+        public long Id { get; init; }
+        public string Name { get; init; } = default!;
+        public string? Description { get; init; }
+        public Uri? Url { get; init; }
+        public IEnumerable<Software> Software { get; init; } = new HashSet<Software>();
+    }
+
     public record Software
     {
         public long Id { get; init; }
@@ -70,15 +80,6 @@ public static class UpsertFilterList
         public Uri? HomeUrl { get; init; }
         public Uri? DownloadUrl { get; init; }
         public bool SupportsAbpUrlScheme { get; init; }
-    }
-
-    public record Syntax
-    {
-        public long Id { get; init; }
-        public string Name { get; init; } = default!;
-        public string? Description { get; init; }
-        public Uri? Url { get; init; }
-        public IEnumerable<Software> Software { get; init; } = new HashSet<Software>();
     }
 
     public record Tag
