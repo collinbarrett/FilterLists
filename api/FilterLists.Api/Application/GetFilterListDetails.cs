@@ -65,8 +65,12 @@ public static class GetFilterListDetails
                 nameof(IFilterListTableEntity.ChatUrl),
                 nameof(IFilterListTableEntity.EmailAddress),
                 nameof(IFilterListTableEntity.DonateUrl),
+                nameof(IFilterListTableEntity.LicenseId),
                 nameof(IFilterListTableEntity.LicenseName),
-                nameof(IFilterListTableEntity.LicenseUrl)
+                nameof(IFilterListTableEntity.LicenseUrl),
+                nameof(IFilterListTableEntity.LicensePermitsModification),
+                nameof(IFilterListTableEntity.LicensePermitsDistribution),
+                nameof(IFilterListTableEntity.LicensePermitsCommercialUse)
             };
 
             select.AddRange(_viewUrlIndices.Select(i => $"{nameof(IFilterListTableEntity.ViewUrlSegmentNumber)}{i}"));
@@ -80,7 +84,8 @@ public static class GetFilterListDetails
             //select.AddRange(_tagIndices.Select(i => $"{nameof(IFilterListTableEntity.TagName)}{i}"));
 
             return await _tableClient.QueryAsync<TableEntity>(
-                    te => te.PartitionKey == TableStorageConstants.FilterListsPartitionKey && te.RowKey == request.Id.ToTableStorageKeyString(),
+                    te => te.PartitionKey == TableStorageConstants.FilterListsPartitionKey &&
+                          te.RowKey == request.Id.ToTableStorageKeyString(),
                     select: select,
                     cancellationToken: cancellationToken)
                 .Select(te => new TableEntity(te.Where(kv => kv.Value is not null).ToDictionary(kv => kv.Key, kv => kv.Value)))
@@ -111,9 +116,13 @@ public static class GetFilterListDetails
                     //    .Where(s => s is not null),
                     License = new License
                     {
+                        Id = (long)te.GetInt64(nameof(IFilterListTableEntity.LicenseId))!,
                         Name = te.GetString(nameof(IFilterListTableEntity.LicenseName)),
-                        Url = te.GetString(nameof(IFilterListTableEntity.LicenseUrl))
-                    },
+                        Url = te.GetString(nameof(IFilterListTableEntity.LicenseUrl)),
+                        PermitsModification = (bool)te.GetBoolean(nameof(IFilterListTableEntity.LicensePermitsModification))!,
+                        PermitsDistribution = (bool)te.GetBoolean(nameof(IFilterListTableEntity.LicensePermitsDistribution))!,
+                        PermitsCommercialUse = (bool)te.GetBoolean(nameof(IFilterListTableEntity.LicensePermitsCommercialUse))!
+                    }
                     //Maintainers = _maintainerIndices
                     //    .Select(i => te.GetString($"{nameof(IFilterListTableEntity.MaintainerName)}{i}"))
                     //    .Where(s => s is not null)
