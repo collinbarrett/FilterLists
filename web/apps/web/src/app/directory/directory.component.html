@@ -37,7 +37,9 @@
       <td mat-cell *matCellDef="let element">
         <mat-chip-list>
           <span *ngFor="let language of element.languages">
-            <mat-chip>{{ language }} </mat-chip>
+            <mat-chip matTooltip="{{ language.name }}"
+              >{{ language.iso6391 }}
+            </mat-chip>
           </span>
         </mat-chip-list>
       </td>

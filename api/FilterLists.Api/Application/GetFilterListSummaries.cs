@@ -55,7 +55,12 @@ public static class GetFilterListSummaries
                 nameof(IFilterListTableEntity.LicenseName)
             };
 
-            select.AddRange(_languageIndices.Select(i => $"{nameof(IFilterListTableEntity.LanguageIso6391)}{i}"));
+            foreach (var i in _languageIndices)
+            {
+                select.Add($"{nameof(IFilterListTableEntity.LanguageIso6391)}{i}");
+                select.Add($"{nameof(IFilterListTableEntity.LanguageName)}{i}");
+            }
+
             select.AddRange(_maintainerIndices.Select(i => $"{nameof(IFilterListTableEntity.MaintainerName)}{i}"));
             select.AddRange(_softwareIndices.Select(i => $"{nameof(IFilterListTableEntity.SoftwareName)}{i}"));
             select.AddRange(_syntaxIndices.Select(i => $"{nameof(IFilterListTableEntity.SyntaxName)}{i}"));
@@ -65,14 +70,19 @@ public static class GetFilterListSummaries
                     te => te.PartitionKey == TableStorageConstants.FilterListsPartitionKey,
                     select: select,
                     cancellationToken: cancellationToken)
+                .Select(te => new TableEntity(te.Where(kv => kv.Value is not null).ToDictionary(kv => kv.Key, kv => kv.Value)))
                 .Select(te => new FilterListSummary
                 {
                     Id = te.RowKey.FromTableStorageKeyString(),
                     Name = te.GetString(nameof(IFilterListTableEntity.Name)),
                     Description = te.GetString(nameof(IFilterListTableEntity.Description)),
                     Languages = _languageIndices
-                        .Select(i => te.GetString($"{nameof(IFilterListTableEntity.LanguageIso6391)}{i}"))
-                        .Where(s => s is not null),
+                        .Where(l => te.ContainsKey($"{nameof(IFilterListTableEntity.LanguageIso6391)}{l}"))
+                        .Select(l => new Language
+                        {
+                            Iso6391 = te.GetString($"{nameof(IFilterListTableEntity.LanguageIso6391)}{l}"),
+                            Name = te.GetString($"{nameof(IFilterListTableEntity.LanguageName)}{l}")
+                        }),
                     License = te.GetString(nameof(IFilterListTableEntity.LicenseName)),
                     Maintainers = _maintainerIndices
                         .Select(i => te.GetString($"{nameof(IFilterListTableEntity.MaintainerName)}{i}"))
@@ -96,11 +106,17 @@ public static class GetFilterListSummaries
         public long Id { get; init; }
         public string Name { get; init; } = default!;
         public string? Description { get; init; }
-        public IEnumerable<string> Languages { get; init; } = new HashSet<string>();
+        public IEnumerable<Language> Languages { get; init; } = new HashSet<Language>();
         public string License { get; init; } = default!;
         public IEnumerable<string> Maintainers { get; init; } = new HashSet<string>();
         public IEnumerable<string> Software { get; init; } = new HashSet<string>();
         public IEnumerable<string> Syntaxes { get; init; } = new HashSet<string>();
         public IEnumerable<string> Tags { get; init; } = new HashSet<string>();
+    }
+
+    public record Language
+    {
+        public string Iso6391 { get; init; } = default!;
+        public string Name { get; init; } = default!;
     }
 }
