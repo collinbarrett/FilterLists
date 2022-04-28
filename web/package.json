@@ -20,7 +20,7 @@
     "@angular/material": "^13.3.4",
     "@angular/platform-browser": "~13.3.4",
     "@angular/platform-browser-dynamic": "~13.3.4",
-    "@angular/router": "~13.3.0",
+    "@angular/router": "~13.3.5",
     "@nrwl/angular": "14.0.2",
     "rxjs": "~7.5.5",
     "tslib": "^2.4.0",
