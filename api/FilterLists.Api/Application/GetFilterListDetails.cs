@@ -73,10 +73,13 @@ public static class GetFilterListDetails
                 nameof(IFilterListTableEntity.LicensePermitsCommercialUse)
             };
 
-            select.AddRange(_viewUrlIndices.Select(i => $"{nameof(IFilterListTableEntity.ViewUrlSegmentNumber)}{i}"));
-            select.AddRange(_viewUrlIndices.Select(i => $"{nameof(IFilterListTableEntity.ViewUrlPrimariness)}{i}"));
-            select.AddRange(_viewUrlIndices.Select(i => $"{nameof(IFilterListTableEntity.ViewUrl)}{i}"));
-
+            foreach (var i in _viewUrlIndices)
+            {
+                select.Add($"{nameof(IFilterListTableEntity.ViewUrlSegmentNumber)}{i}");
+                select.Add($"{nameof(IFilterListTableEntity.ViewUrlPrimariness)}{i}");
+                select.Add($"{nameof(IFilterListTableEntity.ViewUrl)}{i}");
+            }
+            
             //select.AddRange(_languageIndices.Select(i => $"{nameof(IFilterListTableEntity.LanguageIso6391)}{i}"));
             //select.AddRange(_maintainerIndices.Select(i => $"{nameof(IFilterListTableEntity.MaintainerName)}{i}"));
             //select.AddRange(_softwareIndices.Select(i => $"{nameof(IFilterListTableEntity.SoftwareName)}{i}"));
@@ -91,7 +94,6 @@ public static class GetFilterListDetails
                 .Select(te => new TableEntity(te.Where(kv => kv.Value is not null).ToDictionary(kv => kv.Key, kv => kv.Value)))
                 .Select(te => new FilterListDetails
                 {
-                    Id = request.Id,
                     Name = te.GetString(nameof(IFilterListTableEntity.Name)),
                     Description = te.GetString(nameof(IFilterListTableEntity.Description)),
                     HomeUrl = te.GetString(nameof(IFilterListTableEntity.HomeUrl)),
@@ -107,9 +109,9 @@ public static class GetFilterListDetails
                         .Where(u => te.ContainsKey($"{nameof(IFilterListTableEntity.ViewUrl)}{u}"))
                         .Select(u => new FilterListViewUrl
                         {
-                            Url = te.GetString($"{nameof(IFilterListTableEntity.ViewUrl)}{u}"),
+                            SegmentNumber = (int)te.GetInt32($"{nameof(IFilterListTableEntity.ViewUrlSegmentNumber)}{u}")!,
                             Primariness = (int)te.GetInt32($"{nameof(IFilterListTableEntity.ViewUrlPrimariness)}{u}")!,
-                            SegmentNumber = (int)te.GetInt32($"{nameof(IFilterListTableEntity.ViewUrlSegmentNumber)}{u}")!
+                            Url = te.GetString($"{nameof(IFilterListTableEntity.ViewUrl)}{u}"),
                         }),
                     //Languages = _languageIndices
                     //    .Select(i => te.GetString($"{nameof(IFilterListTableEntity.LanguageIso6391)}{i}"))
@@ -140,7 +142,6 @@ public static class GetFilterListDetails
 
     public record FilterListDetails
     {
-        public long Id { get; init; }
         public string Name { get; init; } = default!;
         public string? Description { get; init; }
         public string? HomeUrl { get; init; }
