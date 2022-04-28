@@ -80,6 +80,42 @@ public static class GetFilterListDetails
                 select.Add(nameof(IFilterListTableEntity.ViewUrl) + ui);
             }
 
+            foreach (var li in _languageIndices)
+            {
+                select.Add(nameof(IFilterListTableEntity.LanguageIso6391) + li);
+                select.Add(nameof(IFilterListTableEntity.LanguageName) + li);
+            }
+
+            foreach (var mi in _maintainerIndices)
+            {
+                select.Add(nameof(IFilterListTableEntity.MaintainerId) + mi);
+                select.Add(nameof(IFilterListTableEntity.MaintainerName) + mi);
+                select.Add(nameof(IFilterListTableEntity.MaintainerUrl) + mi);
+                select.Add(nameof(IFilterListTableEntity.MaintainerEmailAddress) + mi);
+                select.Add(nameof(IFilterListTableEntity.MaintainerTwitterHandle) + mi);
+            }
+
+            foreach (var si in _softwareIndices)
+            {
+                select.Add(nameof(IFilterListTableEntity.SoftwareId) + si);
+                select.Add(nameof(IFilterListTableEntity.SoftwareName) + si);
+            }
+
+            foreach (var si in _syntaxIndices)
+            {
+                select.Add(nameof(IFilterListTableEntity.SyntaxId) + si);
+                select.Add(nameof(IFilterListTableEntity.SyntaxName) + si);
+                select.Add(nameof(IFilterListTableEntity.SyntaxDescription) + si);
+                select.Add(nameof(IFilterListTableEntity.SyntaxUrl) + si);
+            }
+
+            foreach (var ti in _tagIndices)
+            {
+                select.Add(nameof(IFilterListTableEntity.TagId) + ti);
+                select.Add(nameof(IFilterListTableEntity.TagName) + ti);
+                select.Add(nameof(IFilterListTableEntity.TagDescription) + ti);
+            }
+
             return await _tableClient.QueryAsync<TableEntity>(
                     te => te.PartitionKey == TableStorageConstants.FilterListsPartitionKey &&
                           te.RowKey == request.Id.ToTableStorageKeyString(),
@@ -109,6 +145,14 @@ public static class GetFilterListDetails
                         })
                         .OrderBy(u => u.SegmentNumber)
                         .ThenBy(u => u.Primariness),
+                    Languages = _languageIndices
+                        .Where(li => te.ContainsKey(nameof(IFilterListTableEntity.LanguageIso6391) + li))
+                        .Select(li => new Language
+                        {
+                            Iso6391 = te.GetString(nameof(IFilterListTableEntity.LanguageIso6391) + li),
+                            Name = te.GetString(nameof(IFilterListTableEntity.LanguageName) + li)
+                        })
+                        .OrderBy(l => l.Iso6391),
                     License = new License
                     {
                         Id = (long)te.GetInt64(nameof(IFilterListTableEntity.LicenseId))!,
@@ -117,7 +161,45 @@ public static class GetFilterListDetails
                         PermitsModification = (bool)te.GetBoolean(nameof(IFilterListTableEntity.LicensePermitsModification))!,
                         PermitsDistribution = (bool)te.GetBoolean(nameof(IFilterListTableEntity.LicensePermitsDistribution))!,
                         PermitsCommercialUse = (bool)te.GetBoolean(nameof(IFilterListTableEntity.LicensePermitsCommercialUse))!
-                    }
+                    },
+                    Maintainers = _maintainerIndices
+                        .Where(mi => te.ContainsKey(nameof(IFilterListTableEntity.MaintainerId) + mi))
+                        .Select(mi => new Maintainer
+                        {
+                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.MaintainerId) + mi)!,
+                            Name = te.GetString(nameof(IFilterListTableEntity.MaintainerName) + mi),
+                            Url = te.GetString(nameof(IFilterListTableEntity.MaintainerUrl) + mi),
+                            EmailAddress = te.GetString(nameof(IFilterListTableEntity.MaintainerEmailAddress) + mi),
+                            TwitterHandle = te.GetString(nameof(IFilterListTableEntity.MaintainerTwitterHandle) + mi)
+                        })
+                        .OrderBy(m => m.Name),
+                    Software = _softwareIndices
+                        .Where(si => te.ContainsKey(nameof(IFilterListTableEntity.SoftwareId) + si))
+                        .Select(si => new Software
+                        {
+                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.SoftwareId) + si)!,
+                            Name = te.GetString(nameof(IFilterListTableEntity.SoftwareName) + si)
+                        })
+                        .OrderBy(s => s.Name),
+                    Syntaxes = _syntaxIndices
+                        .Where(si => te.ContainsKey(nameof(IFilterListTableEntity.SyntaxId) + si))
+                        .Select(si => new Syntax
+                        {
+                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.SyntaxId) + si)!,
+                            Name = te.GetString(nameof(IFilterListTableEntity.SyntaxName) + si),
+                            Description = te.GetString(nameof(IFilterListTableEntity.SyntaxDescription) + si),
+                            Url = te.GetString(nameof(IFilterListTableEntity.SyntaxUrl) + si)
+                        })
+                        .OrderBy(s => s.Name),
+                    Tags = _tagIndices
+                        .Where(ti => te.ContainsKey(nameof(IFilterListTableEntity.TagId) + ti))
+                        .Select(ti => new Tag
+                        {
+                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.TagId) + ti)!,
+                            Name = te.GetString(nameof(IFilterListTableEntity.TagName) + ti),
+                            Description = te.GetString(nameof(IFilterListTableEntity.TagDescription) + ti)
+                        })
+                        .OrderBy(t => t.Name)
                 }).ToListAsync(cancellationToken);
         }
     }
@@ -136,9 +218,10 @@ public static class GetFilterListDetails
         public string? EmailAddress { get; init; }
         public string? DonateUrl { get; init; }
         public IEnumerable<FilterListViewUrl> ViewUrls { get; init; } = new HashSet<FilterListViewUrl>();
-        public IEnumerable<string> LanguageIso6391s { get; init; } = new HashSet<string>();
+        public IEnumerable<Language> Languages { get; init; } = new HashSet<Language>();
         public License License { get; init; } = default!;
         public IEnumerable<Maintainer> Maintainers { get; init; } = new HashSet<Maintainer>();
+        public IEnumerable<Software> Software { get; init; } = new HashSet<Software>();
         public IEnumerable<Syntax> Syntaxes { get; init; } = new HashSet<Syntax>();
         public IEnumerable<Tag> Tags { get; init; } = new HashSet<Tag>();
         public IEnumerable<string> UpstreamFilterListNames { get; init; } = new HashSet<string>();
@@ -154,6 +237,12 @@ public static class GetFilterListDetails
         public int SegmentNumber { get; init; }
         public int Primariness { get; init; }
         public string Url { get; init; } = default!;
+    }
+
+    public record Language
+    {
+        public string Iso6391 { get; init; } = default!;
+        public string Name { get; init; } = default!;
     }
 
     public record License
@@ -175,23 +264,18 @@ public static class GetFilterListDetails
         public string? TwitterHandle { get; init; }
     }
 
+    public record Software
+    {
+        public long Id { get; init; }
+        public string Name { get; init; } = default!;
+    }
+
     public record Syntax
     {
         public long Id { get; init; }
         public string Name { get; init; } = default!;
         public string? Description { get; init; }
         public string? Url { get; init; }
-        public IEnumerable<Software> Software { get; init; } = new HashSet<Software>();
-    }
-
-    public record Software
-    {
-        public long Id { get; init; }
-        public string Name { get; init; } = default!;
-        public string? Description { get; init; }
-        public string? HomeUrl { get; init; }
-        public string? DownloadUrl { get; init; }
-        public bool SupportsAbpUrlScheme { get; init; }
     }
 
     public record Tag

@@ -44,14 +44,14 @@ public interface IFilterListTableEntity : ITableEntity
     public string? MaintainerTwitterHandle { get; init; }
 
     // 1-of-n suffixed w/'_XX'
+    public long? SoftwareId { get; init; }
+    public string? SoftwareName { get; init; }
+
+    // 1-of-n suffixed w/'_XX'
     public long? SyntaxId { get; init; }
     public string? SyntaxName { get; init; }
     public string? SyntaxDescription { get; init; }
     public Uri? SyntaxUrl { get; init; }
-
-    // 1-of-n suffixed w/'_XX'
-    public long? SoftwareId { get; init; }
-    public string? SoftwareName { get; init; }
 
     // 1-of-n suffixed w/'_XX'
     public long? TagId { get; init; }

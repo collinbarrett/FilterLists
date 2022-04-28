@@ -304,7 +304,7 @@ public static class SeedFilterLists
             var syntaxTransactions = syntaxEntities.Select(e => new TableTransactionAction(TableTransactionActionType.Add, e));
             foreach (var transactionBatch in syntaxTransactions.Chunk(100))
                 await syntaxesTableClient.SubmitTransactionAsync(transactionBatch, cancellationToken);
-            
+
             var softwareEntities = software.Select(s => new TableEntity(new Dictionary<string, object?>
             {
                 { nameof(ISoftwareTableEntity.PartitionKey), TableStorageConstants.SoftwarePartitionKey },
@@ -341,7 +341,7 @@ public static class SeedFilterLists
             var softwareSyntaxTransactions = softwareSyntaxEntities.Select(e => new TableTransactionAction(TableTransactionActionType.Add, e));
             foreach (var transactionBatch in softwareSyntaxTransactions.Chunk(100))
                 await softwareTableClient.SubmitTransactionAsync(transactionBatch, cancellationToken);
-            
+
             var tagEntities = tags.Select(t => new TableEntity(new Dictionary<string, object?>
             {
                 { nameof(ITagTableEntity.PartitionKey), TableStorageConstants.TagsPartitionKey },
@@ -358,7 +358,7 @@ public static class SeedFilterLists
             var tagTransactions = tagEntities.Select(e => new TableTransactionAction(TableTransactionActionType.Add, e));
             foreach (var transactionBatch in tagTransactions.Chunk(100))
                 await tagsTableClient.SubmitTransactionAsync(transactionBatch, cancellationToken);
-            
+
             return new ResponseVm();
         }
 
