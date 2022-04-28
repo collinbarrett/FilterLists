@@ -18,12 +18,15 @@ public static class GetFilterListDetails
     public class Handler : IRequestHandler<Query, IEnumerable<FilterListDetails>>
     {
         // TODO: auto-increment or notify when these need to be manually incremented
-        private const int MaxDenormalizedLanguageIndexCount = 10; // 8 * 1.25
-        private const int MaxDenormalizedMaintainerIndexCount = 5; // 4 * 1.25
-        private const int MaxDenormalizedSoftwareIndexCount = 28; // 22 * 1.25
-        private const int MaxDenormalizedSyntaxIndexCount = 7; // 5 * 1.25
-        private const int MaxDenormalizedTagIndexCount = 13; // 10 * 1.25
-        private const int MaxDenormalizedViewUrlIndexCount = 10; // ? (TODO) * 1.25
+        private const int MaxDenormalizedLanguageIndexCount = 12; // 8 * 1.5
+        private const int MaxDenormalizedMaintainerIndexCount = 6; // 4 * 1.5
+        private const int MaxDenormalizedSoftwareIndexCount = 33; // 22 * 1.5
+        private const int MaxDenormalizedSyntaxIndexCount = 8; // 5 * 1.5
+        private const int MaxDenormalizedTagIndexCount = 15; // 10 * 1.5
+        private const int MaxDenormalizedViewUrlIndexCount = 30; // 20 * 1.5
+        private const int MaxDenormalizedForkFilterListIndexCount = 5; // 3 * 1.5
+        private const int MaxDenormalizedMergeFilterListIndexCount = 30; // 20 * 1.5
+        private const int MaxDenormalizedDependentFilterListIndexCount = 5; // 3 * 1.5
 
         private readonly IList<string> _languageIndices = Enumerable.Range(0, MaxDenormalizedLanguageIndexCount - 1)
             .Select(Extensions.ToIndexSuffix).ToList();
@@ -41,6 +44,15 @@ public static class GetFilterListDetails
             .Select(Extensions.ToIndexSuffix).ToList();
 
         private readonly IList<string> _viewUrlIndices = Enumerable.Range(0, MaxDenormalizedViewUrlIndexCount - 1)
+            .Select(Extensions.ToIndexSuffix).ToList();
+
+        private readonly IList<string> _forkFilterListIndices = Enumerable.Range(0, MaxDenormalizedForkFilterListIndexCount - 1)
+            .Select(Extensions.ToIndexSuffix).ToList();
+
+        private readonly IList<string> _mergeFilterListIndices = Enumerable.Range(0, MaxDenormalizedMergeFilterListIndexCount - 1)
+            .Select(Extensions.ToIndexSuffix).ToList();
+
+        private readonly IList<string> _dependentFilterListIndices = Enumerable.Range(0, MaxDenormalizedDependentFilterListIndexCount - 1)
             .Select(Extensions.ToIndexSuffix).ToList();
 
         private readonly TableClient _tableClient;
@@ -114,6 +126,30 @@ public static class GetFilterListDetails
                 select.Add(nameof(IFilterListTableEntity.TagId) + ti);
                 select.Add(nameof(IFilterListTableEntity.TagName) + ti);
                 select.Add(nameof(IFilterListTableEntity.TagDescription) + ti);
+            }
+
+            foreach (var fi in _forkFilterListIndices)
+            {
+                select.Add(nameof(IFilterListTableEntity.UpstreamFilterListId) + fi);
+                select.Add(nameof(IFilterListTableEntity.UpstreamFilterListName) + fi);
+                select.Add(nameof(IFilterListTableEntity.ForkFilterListId) + fi);
+                select.Add(nameof(IFilterListTableEntity.ForkFilterListName) + fi);
+            }
+
+            foreach (var mi in _mergeFilterListIndices)
+            {
+                select.Add(nameof(IFilterListTableEntity.IncludedInFilterListId) + mi);
+                select.Add(nameof(IFilterListTableEntity.IncludedInFilterListName) + mi);
+                select.Add(nameof(IFilterListTableEntity.IncludesFilterListId) + mi);
+                select.Add(nameof(IFilterListTableEntity.IncludesFilterListName) + mi);
+            }
+
+            foreach (var di in _dependentFilterListIndices)
+            {
+                select.Add(nameof(IFilterListTableEntity.DependencyFilterListId) + di);
+                select.Add(nameof(IFilterListTableEntity.DependencyFilterListName) + di);
+                select.Add(nameof(IFilterListTableEntity.DependentFilterListId) + di);
+                select.Add(nameof(IFilterListTableEntity.DependentFilterListName) + di);
             }
 
             return await _tableClient.QueryAsync<TableEntity>(
@@ -199,7 +235,55 @@ public static class GetFilterListDetails
                             Name = te.GetString(nameof(IFilterListTableEntity.TagName) + ti),
                             Description = te.GetString(nameof(IFilterListTableEntity.TagDescription) + ti)
                         })
-                        .OrderBy(t => t.Name)
+                        .OrderBy(t => t.Name),
+                    UpstreamFilterListNames = _forkFilterListIndices
+                        .Where(fi => te.ContainsKey(nameof(IFilterListTableEntity.UpstreamFilterListId) + fi))
+                        .Select(fi => new RelatedFilterList
+                        {
+                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.UpstreamFilterListId) + fi)!,
+                            Name = te.GetString(nameof(IFilterListTableEntity.UpstreamFilterListName) + fi)
+                        })
+                        .OrderBy(ufl => ufl.Name),
+                    ForkFilterListNames = _forkFilterListIndices
+                        .Where(fi => te.ContainsKey(nameof(IFilterListTableEntity.ForkFilterListId) + fi))
+                        .Select(fi => new RelatedFilterList
+                        {
+                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.ForkFilterListId) + fi)!,
+                            Name = te.GetString(nameof(IFilterListTableEntity.ForkFilterListName) + fi)
+                        })
+                        .OrderBy(ffl => ffl.Name),
+                    IncludedInFilterListNames = _mergeFilterListIndices
+                        .Where(mi => te.ContainsKey(nameof(IFilterListTableEntity.IncludedInFilterListId) + mi))
+                        .Select(mi => new RelatedFilterList
+                        {
+                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.IncludedInFilterListId) + mi)!,
+                            Name = te.GetString(nameof(IFilterListTableEntity.IncludedInFilterListName) + mi)
+                        })
+                        .OrderBy(iifl => iifl.Name),
+                    IncludesFilterListNames = _mergeFilterListIndices
+                        .Where(mi => te.ContainsKey(nameof(IFilterListTableEntity.IncludesFilterListId) + mi))
+                        .Select(mi => new RelatedFilterList
+                        {
+                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.IncludesFilterListId) + mi)!,
+                            Name = te.GetString(nameof(IFilterListTableEntity.IncludesFilterListName) + mi)
+                        })
+                        .OrderBy(ifl => ifl.Name),
+                    DependencyFilterListNames = _dependentFilterListIndices
+                        .Where(di => te.ContainsKey(nameof(IFilterListTableEntity.DependencyFilterListId) + di))
+                        .Select(di => new RelatedFilterList
+                        {
+                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.DependencyFilterListId) + di)!,
+                            Name = te.GetString(nameof(IFilterListTableEntity.DependencyFilterListName) + di)
+                        })
+                        .OrderBy(dfl => dfl.Name),
+                    DependentFilterListNames = _dependentFilterListIndices
+                        .Where(di => te.ContainsKey(nameof(IFilterListTableEntity.DependentFilterListId) + di))
+                        .Select(di => new RelatedFilterList
+                        {
+                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.DependentFilterListId) + di)!,
+                            Name = te.GetString(nameof(IFilterListTableEntity.DependentFilterListName) + di)
+                        })
+                        .OrderBy(dfl => dfl.Name)
                 }).ToListAsync(cancellationToken);
         }
     }
@@ -224,12 +308,12 @@ public static class GetFilterListDetails
         public IEnumerable<Software> Software { get; init; } = new HashSet<Software>();
         public IEnumerable<Syntax> Syntaxes { get; init; } = new HashSet<Syntax>();
         public IEnumerable<Tag> Tags { get; init; } = new HashSet<Tag>();
-        public IEnumerable<string> UpstreamFilterListNames { get; init; } = new HashSet<string>();
-        public IEnumerable<string> ForkFilterListNames { get; init; } = new HashSet<string>();
-        public IEnumerable<string> IncludedInFilterListNames { get; init; } = new HashSet<string>();
-        public IEnumerable<string> IncludesFilterListNames { get; init; } = new HashSet<string>();
-        public IEnumerable<string> DependencyFilterListNames { get; init; } = new HashSet<string>();
-        public IEnumerable<string> DependentFilterListNames { get; init; } = new HashSet<string>();
+        public IEnumerable<RelatedFilterList> UpstreamFilterListNames { get; init; } = new HashSet<RelatedFilterList>();
+        public IEnumerable<RelatedFilterList> ForkFilterListNames { get; init; } = new HashSet<RelatedFilterList>();
+        public IEnumerable<RelatedFilterList> IncludedInFilterListNames { get; init; } = new HashSet<RelatedFilterList>();
+        public IEnumerable<RelatedFilterList> IncludesFilterListNames { get; init; } = new HashSet<RelatedFilterList>();
+        public IEnumerable<RelatedFilterList> DependencyFilterListNames { get; init; } = new HashSet<RelatedFilterList>();
+        public IEnumerable<RelatedFilterList> DependentFilterListNames { get; init; } = new HashSet<RelatedFilterList>();
     }
 
     public record FilterListViewUrl
@@ -283,5 +367,11 @@ public static class GetFilterListDetails
         public long Id { get; init; }
         public string Name { get; init; } = default!;
         public string? Description { get; init; }
+    }
+
+    public record RelatedFilterList
+    {
+        public long Id { get; init; }
+        public string Name { get; init; } = default!;
     }
 }
