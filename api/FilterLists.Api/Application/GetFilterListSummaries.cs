@@ -3,7 +3,6 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Azure.Data.Tables;
-using FilterLists.Api.Extensions;
 using FilterLists.Api.Persistence;
 using MediatR;
 
@@ -25,19 +24,19 @@ public static class GetFilterListSummaries
         private const int MaxDenormalizedTagIndexCount = 13; // 10 * 1.25
 
         private readonly IList<string> _languageIndices = Enumerable.Range(0, MaxDenormalizedLanguageIndexCount - 1)
-            .Select(Extensions.Extensions.ToIndexSuffix).ToList();
+            .Select(Extensions.ToIndexSuffix).ToList();
 
         private readonly IList<string> _maintainerIndices = Enumerable.Range(0, MaxDenormalizedMaintainerIndexCount - 1)
-            .Select(Extensions.Extensions.ToIndexSuffix).ToList();
+            .Select(Extensions.ToIndexSuffix).ToList();
 
         private readonly IList<string> _softwareIndices = Enumerable.Range(0, MaxDenormalizedSoftwareIndexCount - 1)
-            .Select(Extensions.Extensions.ToIndexSuffix).ToList();
+            .Select(Extensions.ToIndexSuffix).ToList();
 
         private readonly IList<string> _syntaxIndices = Enumerable.Range(0, MaxDenormalizedSyntaxIndexCount - 1)
-            .Select(Extensions.Extensions.ToIndexSuffix).ToList();
+            .Select(Extensions.ToIndexSuffix).ToList();
 
         private readonly IList<string> _tagIndices = Enumerable.Range(0, MaxDenormalizedTagIndexCount - 1)
-            .Select(Extensions.Extensions.ToIndexSuffix).ToList();
+            .Select(Extensions.ToIndexSuffix).ToList();
 
         private readonly TableClient _tableClient;
         

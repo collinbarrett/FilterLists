@@ -6,7 +6,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using Azure.Data.Tables;
 using FilterLists.Api.Application.SeedFilterLists.Models;
-using FilterLists.Api.Extensions;
 using FilterLists.Api.Persistence;
 using MediatR;
 

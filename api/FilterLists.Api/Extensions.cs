@@ -1,6 +1,6 @@
 using System;
 
-namespace FilterLists.Api.Extensions;
+namespace FilterLists.Api;
 
 public static class Extensions
 {
