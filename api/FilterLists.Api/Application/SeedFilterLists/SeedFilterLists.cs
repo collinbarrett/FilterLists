@@ -132,92 +132,92 @@ public static class SeedFilterLists
                 for (var i = 0; i < listViewUrls.Count; i++)
                 {
                     var indexerSuffix = i.ToIndexSuffix();
-                    values.Add($"{nameof(IFilterListTableEntity.ViewUrlSegmentNumber)}{indexerSuffix}", listViewUrls[i].SegmentNumber);
-                    values.Add($"{nameof(IFilterListTableEntity.ViewUrlPrimariness)}{indexerSuffix}", listViewUrls[i].Primariness);
-                    values.Add($"{nameof(IFilterListTableEntity.ViewUrl)}{indexerSuffix}", listViewUrls[i].Url.ToUrlString());
+                    values.Add(nameof(IFilterListTableEntity.ViewUrlSegmentNumber) + indexerSuffix, listViewUrls[i].SegmentNumber);
+                    values.Add(nameof(IFilterListTableEntity.ViewUrlPrimariness) + indexerSuffix, listViewUrls[i].Primariness);
+                    values.Add(nameof(IFilterListTableEntity.ViewUrl) + indexerSuffix, listViewUrls[i].Url.ToUrlString());
                 }
 
                 for (var i = 0; i < listLanguageIso6391s.Count; i++)
                 {
                     var indexSuffix = i.ToIndexSuffix();
-                    values.Add($"{nameof(IFilterListTableEntity.LanguageIso6391)}{indexSuffix}", listLanguageIso6391s[i].Iso6391);
-                    values.Add($"{nameof(IFilterListTableEntity.LanguageName)}{indexSuffix}", listLanguageIso6391s[i].Name);
+                    values.Add(nameof(IFilterListTableEntity.LanguageIso6391) + indexSuffix, listLanguageIso6391s[i].Iso6391);
+                    values.Add(nameof(IFilterListTableEntity.LanguageName) + indexSuffix, listLanguageIso6391s[i].Name);
                 }
 
                 for (var i = 0; i < listMaintainers.Count; i++)
                 {
                     var indexSuffix = i.ToIndexSuffix();
-                    values.Add($"{nameof(IFilterListTableEntity.MaintainerId)}{indexSuffix}", listMaintainers[i].Id);
-                    values.Add($"{nameof(IFilterListTableEntity.MaintainerName)}{indexSuffix}", listMaintainers[i].Name);
-                    values.Add($"{nameof(IFilterListTableEntity.MaintainerUrl)}{indexSuffix}", listMaintainers[i].Url?.ToUrlString());
-                    values.Add($"{nameof(IFilterListTableEntity.MaintainerEmailAddress)}{indexSuffix}", listMaintainers[i].EmailAddress);
-                    values.Add($"{nameof(IFilterListTableEntity.MaintainerTwitterHandle)}{indexSuffix}", listMaintainers[i].TwitterHandle);
+                    values.Add(nameof(IFilterListTableEntity.MaintainerId) + indexSuffix, listMaintainers[i].Id);
+                    values.Add(nameof(IFilterListTableEntity.MaintainerName) + indexSuffix, listMaintainers[i].Name);
+                    values.Add(nameof(IFilterListTableEntity.MaintainerUrl) + indexSuffix, listMaintainers[i].Url?.ToUrlString());
+                    values.Add(nameof(IFilterListTableEntity.MaintainerEmailAddress) + indexSuffix, listMaintainers[i].EmailAddress);
+                    values.Add(nameof(IFilterListTableEntity.MaintainerTwitterHandle) + indexSuffix, listMaintainers[i].TwitterHandle);
                 }
 
                 for (var i = 0; i < listSyntaxes.Count; i++)
                 {
                     var indexSuffix = i.ToIndexSuffix();
-                    values.Add($"{nameof(IFilterListTableEntity.SyntaxId)}{indexSuffix}", listSyntaxes[i].Id);
-                    values.Add($"{nameof(IFilterListTableEntity.SyntaxName)}{indexSuffix}", listSyntaxes[i].Name);
-                    values.Add($"{nameof(IFilterListTableEntity.SyntaxDescription)}{indexSuffix}", listSyntaxes[i].Description);
-                    values.Add($"{nameof(IFilterListTableEntity.SyntaxUrl)}{indexSuffix}", listSyntaxes[i].Url?.ToUrlString());
+                    values.Add(nameof(IFilterListTableEntity.SyntaxId) + indexSuffix, listSyntaxes[i].Id);
+                    values.Add(nameof(IFilterListTableEntity.SyntaxName) + indexSuffix, listSyntaxes[i].Name);
+                    values.Add(nameof(IFilterListTableEntity.SyntaxDescription) + indexSuffix, listSyntaxes[i].Description);
+                    values.Add(nameof(IFilterListTableEntity.SyntaxUrl) + indexSuffix, listSyntaxes[i].Url?.ToUrlString());
                 }
 
                 for (var i = 0; i < listSoftware.Count; i++)
                 {
                     var indexSuffix = i.ToIndexSuffix();
-                    values.Add($"{nameof(IFilterListTableEntity.SoftwareId)}{indexSuffix}", listSoftware[i].Id);
-                    values.Add($"{nameof(IFilterListTableEntity.SoftwareName)}{indexSuffix}", listSoftware[i].Name);
+                    values.Add(nameof(IFilterListTableEntity.SoftwareId) + indexSuffix, listSoftware[i].Id);
+                    values.Add(nameof(IFilterListTableEntity.SoftwareName) + indexSuffix, listSoftware[i].Name);
                 }
 
                 for (var i = 0; i < listTags.Count; i++)
                 {
                     var indexSuffix = i.ToIndexSuffix();
-                    values.Add($"{nameof(IFilterListTableEntity.TagId)}{indexSuffix}", listTags[i].Id);
-                    values.Add($"{nameof(IFilterListTableEntity.TagName)}{indexSuffix}", listTags[i].Name);
-                    values.Add($"{nameof(IFilterListTableEntity.TagDescription)}{indexSuffix}", listTags[i].Description);
+                    values.Add(nameof(IFilterListTableEntity.TagId) + indexSuffix, listTags[i].Id);
+                    values.Add(nameof(IFilterListTableEntity.TagName) + indexSuffix, listTags[i].Name);
+                    values.Add(nameof(IFilterListTableEntity.TagDescription) + indexSuffix, listTags[i].Description);
                 }
 
                 for (var i = 0; i < listUpstreamListNames.Count; i++)
                 {
                     var indexSuffix = i.ToIndexSuffix();
-                    values.Add($"{nameof(IFilterListTableEntity.UpstreamFilterListId)}{indexSuffix}", listUpstreamListNames[i].Id);
-                    values.Add($"{nameof(IFilterListTableEntity.UpstreamFilterListName)}{indexSuffix}", listUpstreamListNames[i].Name);
+                    values.Add(nameof(IFilterListTableEntity.UpstreamFilterListId) + indexSuffix, listUpstreamListNames[i].Id);
+                    values.Add(nameof(IFilterListTableEntity.UpstreamFilterListName) + indexSuffix, listUpstreamListNames[i].Name);
                 }
 
                 for (var i = 0; i < listForkListNames.Count; i++)
                 {
                     var indexSuffix = i.ToIndexSuffix();
-                    values.Add($"{nameof(IFilterListTableEntity.ForkFilterListId)}{indexSuffix}", listForkListNames[i].Id);
-                    values.Add($"{nameof(IFilterListTableEntity.ForkFilterListName)}{indexSuffix}", listForkListNames[i].Name);
+                    values.Add(nameof(IFilterListTableEntity.ForkFilterListId) + indexSuffix, listForkListNames[i].Id);
+                    values.Add(nameof(IFilterListTableEntity.ForkFilterListName) + indexSuffix, listForkListNames[i].Name);
                 }
 
                 for (var i = 0; i < listIncludedInListNames.Count; i++)
                 {
                     var indexSuffix = i.ToIndexSuffix();
-                    values.Add($"{nameof(IFilterListTableEntity.IncludedInFilterListId)}{indexSuffix}", listIncludedInListNames[i].Id);
-                    values.Add($"{nameof(IFilterListTableEntity.IncludedInFilterListName)}{indexSuffix}", listIncludedInListNames[i].Name);
+                    values.Add(nameof(IFilterListTableEntity.IncludedInFilterListId) + indexSuffix, listIncludedInListNames[i].Id);
+                    values.Add(nameof(IFilterListTableEntity.IncludedInFilterListName) + indexSuffix, listIncludedInListNames[i].Name);
                 }
 
                 for (var i = 0; i < listIncludesListNames.Count; i++)
                 {
                     var indexSuffix = i.ToIndexSuffix();
-                    values.Add($"{nameof(IFilterListTableEntity.IncludesFilterListId)}{indexSuffix}", listIncludesListNames[i].Id);
-                    values.Add($"{nameof(IFilterListTableEntity.IncludesFilterListName)}{indexSuffix}", listIncludesListNames[i].Name);
+                    values.Add(nameof(IFilterListTableEntity.IncludesFilterListId) + indexSuffix, listIncludesListNames[i].Id);
+                    values.Add(nameof(IFilterListTableEntity.IncludesFilterListName) + indexSuffix, listIncludesListNames[i].Name);
                 }
 
                 for (var i = 0; i < listDependencyListNames.Count; i++)
                 {
                     var indexSuffix = i.ToIndexSuffix();
-                    values.Add($"{nameof(IFilterListTableEntity.DependencyFilterListId)}{indexSuffix}", listDependencyListNames[i].Id);
-                    values.Add($"{nameof(IFilterListTableEntity.DependencyFilterListName)}{indexSuffix}", listDependencyListNames[i].Name);
+                    values.Add(nameof(IFilterListTableEntity.DependencyFilterListId) + indexSuffix, listDependencyListNames[i].Id);
+                    values.Add(nameof(IFilterListTableEntity.DependencyFilterListName) + indexSuffix, listDependencyListNames[i].Name);
                 }
 
                 for (var i = 0; i < listDependentListNames.Count; i++)
                 {
                     var indexSuffix = i.ToIndexSuffix();
-                    values.Add($"{nameof(IFilterListTableEntity.DependentFilterListId)}{indexSuffix}", listDependentListNames[i].Id);
-                    values.Add($"{nameof(IFilterListTableEntity.DependentFilterListName)}{indexSuffix}", listDependentListNames[i].Name);
+                    values.Add(nameof(IFilterListTableEntity.DependentFilterListId) + indexSuffix, listDependentListNames[i].Id);
+                    values.Add(nameof(IFilterListTableEntity.DependentFilterListName) + indexSuffix, listDependentListNames[i].Name);
                 }
 
                 return new TableEntity(values);

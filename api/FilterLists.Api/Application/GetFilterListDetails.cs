@@ -73,18 +73,12 @@ public static class GetFilterListDetails
                 nameof(IFilterListTableEntity.LicensePermitsCommercialUse)
             };
 
-            foreach (var i in _viewUrlIndices)
+            foreach (var ui in _viewUrlIndices)
             {
-                select.Add($"{nameof(IFilterListTableEntity.ViewUrlSegmentNumber)}{i}");
-                select.Add($"{nameof(IFilterListTableEntity.ViewUrlPrimariness)}{i}");
-                select.Add($"{nameof(IFilterListTableEntity.ViewUrl)}{i}");
+                select.Add(nameof(IFilterListTableEntity.ViewUrlSegmentNumber) + ui);
+                select.Add(nameof(IFilterListTableEntity.ViewUrlPrimariness) + ui);
+                select.Add(nameof(IFilterListTableEntity.ViewUrl) + ui);
             }
-            
-            //select.AddRange(_languageIndices.Select(i => $"{nameof(IFilterListTableEntity.LanguageIso6391)}{i}"));
-            //select.AddRange(_maintainerIndices.Select(i => $"{nameof(IFilterListTableEntity.MaintainerName)}{i}"));
-            //select.AddRange(_softwareIndices.Select(i => $"{nameof(IFilterListTableEntity.SoftwareName)}{i}"));
-            //select.AddRange(_syntaxIndices.Select(i => $"{nameof(IFilterListTableEntity.SyntaxName)}{i}"));
-            //select.AddRange(_tagIndices.Select(i => $"{nameof(IFilterListTableEntity.TagName)}{i}"));
 
             return await _tableClient.QueryAsync<TableEntity>(
                     te => te.PartitionKey == TableStorageConstants.FilterListsPartitionKey &&
@@ -106,16 +100,15 @@ public static class GetFilterListDetails
                     EmailAddress = te.GetString(nameof(IFilterListTableEntity.EmailAddress)),
                     DonateUrl = te.GetString(nameof(IFilterListTableEntity.DonateUrl)),
                     ViewUrls = _viewUrlIndices
-                        .Where(u => te.ContainsKey($"{nameof(IFilterListTableEntity.ViewUrl)}{u}"))
-                        .Select(u => new FilterListViewUrl
+                        .Where(ui => te.ContainsKey(nameof(IFilterListTableEntity.ViewUrl) + ui))
+                        .Select(ui => new FilterListViewUrl
                         {
-                            SegmentNumber = (int)te.GetInt32($"{nameof(IFilterListTableEntity.ViewUrlSegmentNumber)}{u}")!,
-                            Primariness = (int)te.GetInt32($"{nameof(IFilterListTableEntity.ViewUrlPrimariness)}{u}")!,
-                            Url = te.GetString($"{nameof(IFilterListTableEntity.ViewUrl)}{u}"),
-                        }),
-                    //Languages = _languageIndices
-                    //    .Select(i => te.GetString($"{nameof(IFilterListTableEntity.LanguageIso6391)}{i}"))
-                    //    .Where(s => s is not null),
+                            SegmentNumber = (int)te.GetInt32(nameof(IFilterListTableEntity.ViewUrlSegmentNumber) + ui)!,
+                            Primariness = (int)te.GetInt32(nameof(IFilterListTableEntity.ViewUrlPrimariness) + ui)!,
+                            Url = te.GetString(nameof(IFilterListTableEntity.ViewUrl) + ui)
+                        })
+                        .OrderBy(u => u.SegmentNumber)
+                        .ThenBy(u => u.Primariness),
                     License = new License
                     {
                         Id = (long)te.GetInt64(nameof(IFilterListTableEntity.LicenseId))!,
@@ -125,17 +118,6 @@ public static class GetFilterListDetails
                         PermitsDistribution = (bool)te.GetBoolean(nameof(IFilterListTableEntity.LicensePermitsDistribution))!,
                         PermitsCommercialUse = (bool)te.GetBoolean(nameof(IFilterListTableEntity.LicensePermitsCommercialUse))!
                     }
-                    //Maintainers = _maintainerIndices
-                    //    .Select(i => te.GetString($"{nameof(IFilterListTableEntity.MaintainerName)}{i}"))
-                    //    .Where(s => s is not null)
-                    //Software = _softwareIndices
-                    //    .Select(i => te.GetString($"{nameof(IFilterListTableEntity.SoftwareName)}{i}"))
-                    //    .Where(s => s is not null),
-                    //Syntaxes = _syntaxIndices
-                    //    .Select(i => te.GetString($"{nameof(IFilterListTableEntity.SyntaxName)}{i}"))
-                    //    .Where(s => s is not null),
-                    //Tags = _tagIndices.Select(i => te.GetString($"{nameof(IFilterListTableEntity.TagName)}{i}"))
-                    //    .Where(s => s is not null)
                 }).ToListAsync(cancellationToken);
         }
     }
