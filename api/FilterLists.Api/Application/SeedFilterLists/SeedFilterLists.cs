@@ -31,7 +31,7 @@ public static class SeedFilterLists
         public async Task<ResponseVm> Handle(Command request, CancellationToken cancellationToken)
         {
             var dependents = await GetSeedEntities<Dependent>();
-            var filterLists = await GetSeedEntities<FilterList>();
+            var filterLists = (await GetSeedEntities<FilterList>()).ToList();
             var filterListLanguages = await GetSeedEntities<FilterListLanguage>();
             var filterListMaintainers = await GetSeedEntities<FilterListMaintainer>();
             var filterListSyntaxes = await GetSeedEntities<FilterListSyntax>();
@@ -44,7 +44,7 @@ public static class SeedFilterLists
             var merges = await GetSeedEntities<Merge>();
             var software = await GetSeedEntities<Software>();
             var softwareSyntaxes = await GetSeedEntities<SoftwareSyntax>();
-            var syntaxes = await GetSeedEntities<Syntax>();
+            var syntaxes = (await GetSeedEntities<Syntax>()).ToList();
             var tags = await GetSeedEntities<Tag>();
 
             var filterListEntities = filterLists.Select(list =>
@@ -227,19 +227,139 @@ public static class SeedFilterLists
             await _tableServiceClient.DeleteTableAsync(TableStorageConstants.FilterListsTableName, cancellationToken);
             Thread.Sleep(40 * 1000); // https://docs.microsoft.com/en-us/rest/api/storageservices/Delete-Table?redirectedfrom=MSDN#remarks
             await _tableServiceClient.CreateTableAsync(TableStorageConstants.FilterListsTableName, cancellationToken);
-            var tableClient = _tableServiceClient.GetTableClient(TableStorageConstants.FilterListsTableName);
+            var filterListsTableClient = _tableServiceClient.GetTableClient(TableStorageConstants.FilterListsTableName);
 
-            var transactions = filterListEntities.Select(e => new TableTransactionAction(TableTransactionActionType.Add, e));
-            foreach (var transactionBatch in transactions.Chunk(100))
-                await tableClient.SubmitTransactionAsync(transactionBatch, cancellationToken);
+            var filterListTransactions = filterListEntities.Select(e => new TableTransactionAction(TableTransactionActionType.Add, e));
+            foreach (var transactionBatch in filterListTransactions.Chunk(100))
+                await filterListsTableClient.SubmitTransactionAsync(transactionBatch, cancellationToken);
 
-            // TODO: seed languages table
-            // TODO: seed licenses table
-            // TODO: seed maintainers table
-            // TODO: seed syntaxes table
-            // TODO: seed software table
-            // TODO: seed tags table
+            var languageEntities = languages.Select(l => new TableEntity(new Dictionary<string, object?>
+            {
+                { nameof(ILanguageTableEntity.PartitionKey), TableStorageConstants.LanguagesPartitionKey },
+                { nameof(ILanguageTableEntity.RowKey), l.Iso6391 },
+                { nameof(ILanguageTableEntity.Name), l.Name }
+            }));
 
+            await _tableServiceClient.DeleteTableAsync(TableStorageConstants.LanguagesTableName, cancellationToken);
+            Thread.Sleep(40 * 1000); // https://docs.microsoft.com/en-us/rest/api/storageservices/Delete-Table?redirectedfrom=MSDN#remarks
+            await _tableServiceClient.CreateTableAsync(TableStorageConstants.LanguagesTableName, cancellationToken);
+            var languagesTableClient = _tableServiceClient.GetTableClient(TableStorageConstants.LanguagesTableName);
+
+            var languageTransactions = languageEntities.Select(e => new TableTransactionAction(TableTransactionActionType.Add, e));
+            foreach (var transactionBatch in languageTransactions.Chunk(100))
+                await languagesTableClient.SubmitTransactionAsync(transactionBatch, cancellationToken);
+
+            var licenseEntities = licenses.Select(l => new TableEntity(new Dictionary<string, object?>
+            {
+                { nameof(ILicenseTableEntity.PartitionKey), TableStorageConstants.LicensesPartitionKey },
+                { nameof(ILicenseTableEntity.RowKey), l.Id.ToTableStorageKeyString() },
+                { nameof(ILicenseTableEntity.Name), l.Name },
+                { nameof(ILicenseTableEntity.Url), l.Url?.ToUrlString() },
+                { nameof(ILicenseTableEntity.PermitsModification), l.PermitsModification },
+                { nameof(ILicenseTableEntity.PermitsDistribution), l.PermitsDistribution },
+                { nameof(ILicenseTableEntity.PermitsCommercialUse), l.PermitsCommercialUse }
+            }));
+
+            await _tableServiceClient.DeleteTableAsync(TableStorageConstants.LicensesTableName, cancellationToken);
+            Thread.Sleep(40 * 1000); // https://docs.microsoft.com/en-us/rest/api/storageservices/Delete-Table?redirectedfrom=MSDN#remarks
+            await _tableServiceClient.CreateTableAsync(TableStorageConstants.LicensesTableName, cancellationToken);
+            var licensesTableClient = _tableServiceClient.GetTableClient(TableStorageConstants.LicensesTableName);
+
+            var licenseTransactions = licenseEntities.Select(e => new TableTransactionAction(TableTransactionActionType.Add, e));
+            foreach (var transactionBatch in licenseTransactions.Chunk(100))
+                await licensesTableClient.SubmitTransactionAsync(transactionBatch, cancellationToken);
+
+            var maintainerEntities = maintainers.Select(m => new TableEntity(new Dictionary<string, object?>
+            {
+                { nameof(IMaintainerTableEntity.PartitionKey), TableStorageConstants.MaintainersPartitionKey },
+                { nameof(IMaintainerTableEntity.RowKey), m.Id.ToTableStorageKeyString() },
+                { nameof(IMaintainerTableEntity.Name), m.Name },
+                { nameof(IMaintainerTableEntity.Url), m.Url?.ToUrlString() },
+                { nameof(IMaintainerTableEntity.EmailAddress), m.EmailAddress },
+                { nameof(IMaintainerTableEntity.TwitterHandle), m.TwitterHandle }
+            }));
+
+            await _tableServiceClient.DeleteTableAsync(TableStorageConstants.MaintainersTableName, cancellationToken);
+            Thread.Sleep(40 * 1000); // https://docs.microsoft.com/en-us/rest/api/storageservices/Delete-Table?redirectedfrom=MSDN#remarks
+            await _tableServiceClient.CreateTableAsync(TableStorageConstants.MaintainersTableName, cancellationToken);
+            var maintainersTableClient = _tableServiceClient.GetTableClient(TableStorageConstants.MaintainersTableName);
+
+            var maintainerTransactions = maintainerEntities.Select(e => new TableTransactionAction(TableTransactionActionType.Add, e));
+            foreach (var transactionBatch in maintainerTransactions.Chunk(100))
+                await maintainersTableClient.SubmitTransactionAsync(transactionBatch, cancellationToken);
+
+            var syntaxEntities = syntaxes.Select(s => new TableEntity(new Dictionary<string, object?>
+            {
+                { nameof(ISyntaxTableEntity.PartitionKey), TableStorageConstants.SyntaxesPartitionKey },
+                { nameof(ISyntaxTableEntity.RowKey), s.Id.ToTableStorageKeyString() },
+                { nameof(ISyntaxTableEntity.Name), s.Name },
+                { nameof(ISyntaxTableEntity.Description), s.Description },
+                { nameof(ISyntaxTableEntity.Url), s.Url?.ToUrlString() }
+            }));
+
+            await _tableServiceClient.DeleteTableAsync(TableStorageConstants.SyntaxesTableName, cancellationToken);
+            Thread.Sleep(40 * 1000); // https://docs.microsoft.com/en-us/rest/api/storageservices/Delete-Table?redirectedfrom=MSDN#remarks
+            await _tableServiceClient.CreateTableAsync(TableStorageConstants.SyntaxesTableName, cancellationToken);
+            var syntaxesTableClient = _tableServiceClient.GetTableClient(TableStorageConstants.SyntaxesTableName);
+
+            var syntaxTransactions = syntaxEntities.Select(e => new TableTransactionAction(TableTransactionActionType.Add, e));
+            foreach (var transactionBatch in syntaxTransactions.Chunk(100))
+                await syntaxesTableClient.SubmitTransactionAsync(transactionBatch, cancellationToken);
+            
+            var softwareEntities = software.Select(s => new TableEntity(new Dictionary<string, object?>
+            {
+                { nameof(ISoftwareTableEntity.PartitionKey), TableStorageConstants.SoftwarePartitionKey },
+                { nameof(ISoftwareTableEntity.RowKey), s.Id.ToTableStorageKeyString() },
+                { nameof(ISoftwareTableEntity.Name), s.Name },
+                { nameof(ISoftwareTableEntity.Description), s.Description },
+                { nameof(ISoftwareTableEntity.HomeUrl), s.HomeUrl?.ToUrlString() },
+                { nameof(ISoftwareTableEntity.DownloadUrl), s.DownloadUrl?.ToUrlString() },
+                { nameof(ISoftwareTableEntity.SupportsAbpUrlScheme), s.SupportsAbpUrlScheme }
+            }));
+
+            await _tableServiceClient.DeleteTableAsync(TableStorageConstants.SoftwareTableName, cancellationToken);
+            Thread.Sleep(40 * 1000); // https://docs.microsoft.com/en-us/rest/api/storageservices/Delete-Table?redirectedfrom=MSDN#remarks
+            await _tableServiceClient.CreateTableAsync(TableStorageConstants.SoftwareTableName, cancellationToken);
+            var softwareTableClient = _tableServiceClient.GetTableClient(TableStorageConstants.SoftwareTableName);
+
+            var softwareTransactions = softwareEntities.Select(e => new TableTransactionAction(TableTransactionActionType.Add, e));
+            foreach (var transactionBatch in softwareTransactions.Chunk(100))
+                await softwareTableClient.SubmitTransactionAsync(transactionBatch, cancellationToken);
+
+            var softwareSyntaxEntities = softwareSyntaxes.Select(ss =>
+            {
+                var syntax = syntaxes.Single(s => s.Id == ss.SyntaxId);
+                return new TableEntity(new Dictionary<string, object?>
+                {
+                    { nameof(ISoftwareSyntaxTableEntity.PartitionKey), TableStorageConstants.SoftwarePartitionKey },
+                    { nameof(ISoftwareSyntaxTableEntity.RowKey), $"{ss.SoftwareId.ToTableStorageKeyString()}_{ss.SyntaxId.ToTableStorageKeyString()}" },
+                    { nameof(ISoftwareSyntaxTableEntity.SyntaxName), syntax.Name },
+                    { nameof(ISoftwareSyntaxTableEntity.SyntaxDescription), syntax.Description },
+                    { nameof(ISoftwareSyntaxTableEntity.SyntaxUrl), syntax.Url?.ToUrlString() }
+                });
+            });
+
+            var softwareSyntaxTransactions = softwareSyntaxEntities.Select(e => new TableTransactionAction(TableTransactionActionType.Add, e));
+            foreach (var transactionBatch in softwareSyntaxTransactions.Chunk(100))
+                await softwareTableClient.SubmitTransactionAsync(transactionBatch, cancellationToken);
+            
+            var tagEntities = tags.Select(t => new TableEntity(new Dictionary<string, object?>
+            {
+                { nameof(ITagTableEntity.PartitionKey), TableStorageConstants.TagsPartitionKey },
+                { nameof(ITagTableEntity.RowKey), t.Id.ToTableStorageKeyString() },
+                { nameof(ITagTableEntity.Name), t.Name },
+                { nameof(ITagTableEntity.Description), t.Description }
+            }));
+
+            await _tableServiceClient.DeleteTableAsync(TableStorageConstants.TagsTableName, cancellationToken);
+            Thread.Sleep(40 * 1000); // https://docs.microsoft.com/en-us/rest/api/storageservices/Delete-Table?redirectedfrom=MSDN#remarks
+            await _tableServiceClient.CreateTableAsync(TableStorageConstants.TagsTableName, cancellationToken);
+            var tagsTableClient = _tableServiceClient.GetTableClient(TableStorageConstants.TagsTableName);
+
+            var tagTransactions = tagEntities.Select(e => new TableTransactionAction(TableTransactionActionType.Add, e));
+            foreach (var transactionBatch in tagTransactions.Chunk(100))
+                await tagsTableClient.SubmitTransactionAsync(transactionBatch, cancellationToken);
+            
             return new ResponseVm();
         }
 
