@@ -15,7 +15,7 @@
       <td mat-cell *matCellDef="let element">
         <mat-chip-list>
           <span *ngFor="let software of element.software">
-            <mat-chip>{{ software }} </mat-chip>
+            <mat-chip>{{ software.name }} </mat-chip>
           </span>
         </mat-chip-list>
       </td>
@@ -26,7 +26,9 @@
       <td mat-cell *matCellDef="let element">
         <mat-chip-list>
           <span *ngFor="let syntax of element.syntaxes">
-            <mat-chip>{{ syntax }} </mat-chip>
+            <mat-chip matTooltip="{{ syntax.description }}"
+              >{{ syntax.name }}
+            </mat-chip>
           </span>
         </mat-chip-list>
       </td>
@@ -50,7 +52,9 @@
       <td mat-cell *matCellDef="let element">
         <mat-chip-list>
           <span *ngFor="let tag of element.tags">
-            <mat-chip>{{ tag }} </mat-chip>
+            <mat-chip matTooltip="{{ tag.description }}"
+              >{{ tag.name }}
+            </mat-chip>
           </span>
         </mat-chip-list>
       </td>

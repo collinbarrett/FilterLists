@@ -39,7 +39,7 @@ public static class GetFilterListSummaries
             .Select(Extensions.ToIndexSuffix).ToList();
 
         private readonly TableClient _tableClient;
-        
+
         public Handler(TableServiceClient tableServiceClient)
         {
             _tableClient = tableServiceClient.GetTableClient(TableStorageConstants.FilterListsTableName);
@@ -55,16 +55,31 @@ public static class GetFilterListSummaries
                 nameof(IFilterListTableEntity.LicenseName)
             };
 
-            foreach (var i in _languageIndices)
+            foreach (var li in _languageIndices)
             {
-                select.Add($"{nameof(IFilterListTableEntity.LanguageIso6391)}{i}");
-                select.Add($"{nameof(IFilterListTableEntity.LanguageName)}{i}");
+                select.Add(nameof(IFilterListTableEntity.LanguageIso6391) + li);
+                select.Add(nameof(IFilterListTableEntity.LanguageName) + li);
             }
 
-            select.AddRange(_maintainerIndices.Select(i => $"{nameof(IFilterListTableEntity.MaintainerName)}{i}"));
-            select.AddRange(_softwareIndices.Select(i => $"{nameof(IFilterListTableEntity.SoftwareName)}{i}"));
-            select.AddRange(_syntaxIndices.Select(i => $"{nameof(IFilterListTableEntity.SyntaxName)}{i}"));
-            select.AddRange(_tagIndices.Select(i => $"{nameof(IFilterListTableEntity.TagName)}{i}"));
+            select.AddRange(_maintainerIndices.Select(mi => nameof(IFilterListTableEntity.MaintainerName) + mi));
+
+            foreach (var si in _softwareIndices)
+            {
+                select.Add(nameof(IFilterListTableEntity.SoftwareId) + si);
+                select.Add(nameof(IFilterListTableEntity.SoftwareName) + si);
+            }
+
+            foreach (var si in _syntaxIndices)
+            {
+                select.Add(nameof(IFilterListTableEntity.SyntaxName) + si);
+                select.Add(nameof(IFilterListTableEntity.SyntaxDescription) + si);
+            }
+
+            foreach (var ti in _tagIndices)
+            {
+                select.Add(nameof(IFilterListTableEntity.TagName) + ti);
+                select.Add(nameof(IFilterListTableEntity.TagDescription) + ti);
+            }
 
             return await _tableClient.QueryAsync<TableEntity>(
                     te => te.PartitionKey == TableStorageConstants.FilterListsPartitionKey,
@@ -77,24 +92,42 @@ public static class GetFilterListSummaries
                     Name = te.GetString(nameof(IFilterListTableEntity.Name)),
                     Description = te.GetString(nameof(IFilterListTableEntity.Description)),
                     Languages = _languageIndices
-                        .Where(l => te.ContainsKey($"{nameof(IFilterListTableEntity.LanguageIso6391)}{l}"))
-                        .Select(l => new Language
+                        .Where(li => te.ContainsKey(nameof(IFilterListTableEntity.LanguageIso6391) + li))
+                        .Select(li => new Language
                         {
-                            Iso6391 = te.GetString($"{nameof(IFilterListTableEntity.LanguageIso6391)}{l}"),
-                            Name = te.GetString($"{nameof(IFilterListTableEntity.LanguageName)}{l}")
-                        }),
+                            Iso6391 = te.GetString(nameof(IFilterListTableEntity.LanguageIso6391) + li),
+                            Name = te.GetString(nameof(IFilterListTableEntity.LanguageName) + li)
+                        })
+                        .OrderBy(l => l.Iso6391),
                     License = te.GetString(nameof(IFilterListTableEntity.LicenseName)),
                     Maintainers = _maintainerIndices
-                        .Select(i => te.GetString($"{nameof(IFilterListTableEntity.MaintainerName)}{i}"))
-                        .Where(s => s is not null),                    
+                        .Where(mi => te.ContainsKey(nameof(IFilterListTableEntity.MaintainerName) + mi))
+                        .Select(mi => te.GetString(nameof(IFilterListTableEntity.MaintainerName) + mi))
+                        .OrderBy(m => m),
                     Software = _softwareIndices
-                        .Select(i => te.GetString($"{nameof(IFilterListTableEntity.SoftwareName)}{i}"))
-                        .Where(s => s is not null),
+                        .Where(si => te.ContainsKey(nameof(IFilterListTableEntity.SoftwareId) + si))
+                        .Select(si => new Software
+                        {
+                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.SoftwareId) + si)!,
+                            Name = te.GetString(nameof(IFilterListTableEntity.SoftwareName) + si)
+                        })
+                        .OrderBy(s => s.Name),
                     Syntaxes = _syntaxIndices
-                        .Select(i => te.GetString($"{nameof(IFilterListTableEntity.SyntaxName)}{i}"))
-                        .Where(s => s is not null),
-                    Tags = _tagIndices.Select(i => te.GetString($"{nameof(IFilterListTableEntity.TagName)}{i}"))
-                        .Where(s => s is not null)
+                        .Where(si => te.ContainsKey(nameof(IFilterListTableEntity.SyntaxName) + si))
+                        .Select(si => new Syntax
+                        {
+                            Name = te.GetString(nameof(IFilterListTableEntity.SyntaxName) + si),
+                            Description = te.GetString(nameof(IFilterListTableEntity.SyntaxDescription) + si)
+                        })
+                        .OrderBy(s => s.Name),
+                    Tags = _tagIndices
+                        .Where(ti => te.ContainsKey(nameof(IFilterListTableEntity.TagName) + ti))
+                        .Select(ti => new Tag
+                        {
+                            Name = te.GetString(nameof(IFilterListTableEntity.TagName) + ti),
+                            Description = te.GetString(nameof(IFilterListTableEntity.TagDescription) + ti)
+                        })
+                        .OrderBy(t => t.Name)
                 })
                 .OrderBy(l => l.Name)
                 .ToListAsync(cancellationToken);
@@ -109,14 +142,32 @@ public static class GetFilterListSummaries
         public IEnumerable<Language> Languages { get; init; } = new HashSet<Language>();
         public string License { get; init; } = default!;
         public IEnumerable<string> Maintainers { get; init; } = new HashSet<string>();
-        public IEnumerable<string> Software { get; init; } = new HashSet<string>();
-        public IEnumerable<string> Syntaxes { get; init; } = new HashSet<string>();
-        public IEnumerable<string> Tags { get; init; } = new HashSet<string>();
+        public IEnumerable<Software> Software { get; init; } = new HashSet<Software>();
+        public IEnumerable<Syntax> Syntaxes { get; init; } = new HashSet<Syntax>();
+        public IEnumerable<Tag> Tags { get; init; } = new HashSet<Tag>();
     }
 
     public record Language
     {
         public string Iso6391 { get; init; } = default!;
         public string Name { get; init; } = default!;
+    }
+
+    public record Software
+    {
+        public long Id { get; init; }
+        public string Name { get; init; } = default!;
+    }
+
+    public record Syntax
+    {
+        public string Name { get; init; } = default!;
+        public string? Description { get; init; }
+    }
+
+    public record Tag
+    {
+        public string Name { get; init; } = default!;
+        public string? Description { get; init; }
     }
 }

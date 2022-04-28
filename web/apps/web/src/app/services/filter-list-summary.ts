@@ -5,12 +5,27 @@ export interface FilterListSummary {
   languages: Language[];
   license: string;
   maintainers: string[];
-  software: string[];
-  syntaxes: string[];
-  tags: string[];
+  software: Software[];
+  syntaxes: Syntax[];
+  tags: Tag[];
 }
 
 export interface Language {
   iso6391: string;
   name: string;
+}
+
+export interface Software {
+  id: number;
+  name: string;
+}
+
+export interface Syntax {
+  name: string;
+  description: string;
+}
+
+export interface Tag {
+  name: string;
+  description: string;
 }
