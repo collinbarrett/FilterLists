@@ -17,11 +17,11 @@ public static class GetFilterListSummaries
     public class Handler : IRequestHandler<Query, IEnumerable<FilterListSummary>>
     {
         // TODO: auto-increment or notify when these need to be manually incremented
-        private const int MaxDenormalizedLanguageIndexCount = 10; // 8 * 1.25
-        private const int MaxDenormalizedMaintainerIndexCount = 5; // 4 * 1.25
-        private const int MaxDenormalizedSoftwareIndexCount = 28; // 22 * 1.25
-        private const int MaxDenormalizedSyntaxIndexCount = 7; // 5 * 1.25
-        private const int MaxDenormalizedTagIndexCount = 13; // 10 * 1.25
+        private const int MaxDenormalizedLanguageIndexCount = 12; // 8 * 1.5
+        private const int MaxDenormalizedMaintainerIndexCount = 6; // 4 * 1.5
+        private const int MaxDenormalizedSoftwareIndexCount = 33; // 22 * 1.5
+        private const int MaxDenormalizedSyntaxIndexCount = 8; // 5 * 1.5
+        private const int MaxDenormalizedTagIndexCount = 15; // 10 * 1.5
 
         private readonly IList<string> _languageIndices = Enumerable.Range(0, MaxDenormalizedLanguageIndexCount - 1)
             .Select(Extensions.ToIndexSuffix).ToList();
@@ -91,43 +91,54 @@ public static class GetFilterListSummaries
                     Id = te.RowKey.FromTableStorageKeyString(),
                     Name = te.GetString(nameof(IFilterListTableEntity.Name)),
                     Description = te.GetString(nameof(IFilterListTableEntity.Description)),
-                    Languages = _languageIndices
-                        .Where(li => te.ContainsKey(nameof(IFilterListTableEntity.LanguageIso6391) + li))
-                        .Select(li => new Language
+                    Languages = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.LanguageIso6391) + '_'))
+                        .Select((_, li) =>
                         {
-                            Iso6391 = te.GetString(nameof(IFilterListTableEntity.LanguageIso6391) + li),
-                            Name = te.GetString(nameof(IFilterListTableEntity.LanguageName) + li)
+                            var indexSuffix = li.ToIndexSuffix();
+                            return new Language
+                            {
+                                Iso6391 = te.GetString(nameof(IFilterListTableEntity.LanguageIso6391) + indexSuffix),
+                                Name = te.GetString(nameof(IFilterListTableEntity.LanguageName) + indexSuffix)
+                            };
                         })
                         .OrderBy(l => l.Iso6391),
                     License = te.GetString(nameof(IFilterListTableEntity.LicenseName)),
-                    Maintainers = _maintainerIndices
-                        .Where(mi => te.ContainsKey(nameof(IFilterListTableEntity.MaintainerName) + mi))
-                        .Select(mi => te.GetString(nameof(IFilterListTableEntity.MaintainerName) + mi))
+                    Maintainers = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.MaintainerName) + '_'))
+                        .Select((_, mi) => te.GetString(nameof(IFilterListTableEntity.MaintainerName) + mi.ToIndexSuffix()))
                         .OrderBy(m => m),
-                    Software = _softwareIndices
-                        .Where(si => te.ContainsKey(nameof(IFilterListTableEntity.SoftwareId) + si))
-                        .Select(si => new Software
+                    Software = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.SoftwareId) + '_'))
+                        .Select((_, si) =>
                         {
-                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.SoftwareId) + si)!,
-                            Name = te.GetString(nameof(IFilterListTableEntity.SoftwareName) + si)
+                            var indexSuffix = si.ToIndexSuffix();
+                            return new Software
+                            {
+                                Id = (long)te.GetInt64(nameof(IFilterListTableEntity.SoftwareId) + indexSuffix)!,
+                                Name = te.GetString(nameof(IFilterListTableEntity.SoftwareName) + indexSuffix)
+                            };
                         })
                         .OrderBy(s => s.Name),
-                    Syntaxes = _syntaxIndices
-                        .Where(si => te.ContainsKey(nameof(IFilterListTableEntity.SyntaxName) + si))
-                        .Select(si => new Syntax
+                    Syntaxes = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.SyntaxName) + '_'))
+                        .Select((_, si) =>
                         {
-                            Name = te.GetString(nameof(IFilterListTableEntity.SyntaxName) + si),
-                            Description = te.GetString(nameof(IFilterListTableEntity.SyntaxDescription) + si)
+                            var indexSuffix = si.ToIndexSuffix();
+                            return new Syntax
+                            {
+                                Name = te.GetString(nameof(IFilterListTableEntity.SyntaxName) + indexSuffix),
+                                Description = te.GetString(nameof(IFilterListTableEntity.SyntaxDescription) + indexSuffix)
+                            };
                         })
                         .OrderBy(s => s.Name),
-                    Tags = _tagIndices
-                        .Where(ti => te.ContainsKey(nameof(IFilterListTableEntity.TagName) + ti))
-                        .Select(ti => new Tag
+                    Tags = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.TagName) + '_'))
+                        .Select((_, ti) =>
                         {
-                            Name = te.GetString(nameof(IFilterListTableEntity.TagName) + ti),
-                            Description = te.GetString(nameof(IFilterListTableEntity.TagDescription) + ti)
+                            var indexSuffix = ti.ToIndexSuffix();
+                            return new Tag
+                            {
+                                Name = te.GetString(nameof(IFilterListTableEntity.TagName) + indexSuffix),
+                                Description = te.GetString(nameof(IFilterListTableEntity.TagDescription) + indexSuffix)
+                            };
                         })
-                        .OrderBy(t => t.Name)
+                        .OrderBy(t => t.Name),
                 })
                 .OrderBy(l => l.Name)
                 .ToListAsync(cancellationToken);

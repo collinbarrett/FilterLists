@@ -17,44 +17,6 @@ public static class GetFilterListDetails
 
     public class Handler : IRequestHandler<Query, IEnumerable<FilterListDetails>>
     {
-        // TODO: auto-increment or notify when these need to be manually incremented
-        private const int MaxDenormalizedLanguageIndexCount = 12; // 8 * 1.5
-        private const int MaxDenormalizedMaintainerIndexCount = 6; // 4 * 1.5
-        private const int MaxDenormalizedSoftwareIndexCount = 33; // 22 * 1.5
-        private const int MaxDenormalizedSyntaxIndexCount = 8; // 5 * 1.5
-        private const int MaxDenormalizedTagIndexCount = 15; // 10 * 1.5
-        private const int MaxDenormalizedViewUrlIndexCount = 30; // 20 * 1.5
-        private const int MaxDenormalizedForkFilterListIndexCount = 5; // 3 * 1.5
-        private const int MaxDenormalizedMergeFilterListIndexCount = 30; // 20 * 1.5
-        private const int MaxDenormalizedDependentFilterListIndexCount = 5; // 3 * 1.5
-
-        private readonly IList<string> _languageIndices = Enumerable.Range(0, MaxDenormalizedLanguageIndexCount - 1)
-            .Select(Extensions.ToIndexSuffix).ToList();
-
-        private readonly IList<string> _maintainerIndices = Enumerable.Range(0, MaxDenormalizedMaintainerIndexCount - 1)
-            .Select(Extensions.ToIndexSuffix).ToList();
-
-        private readonly IList<string> _softwareIndices = Enumerable.Range(0, MaxDenormalizedSoftwareIndexCount - 1)
-            .Select(Extensions.ToIndexSuffix).ToList();
-
-        private readonly IList<string> _syntaxIndices = Enumerable.Range(0, MaxDenormalizedSyntaxIndexCount - 1)
-            .Select(Extensions.ToIndexSuffix).ToList();
-
-        private readonly IList<string> _tagIndices = Enumerable.Range(0, MaxDenormalizedTagIndexCount - 1)
-            .Select(Extensions.ToIndexSuffix).ToList();
-
-        private readonly IList<string> _viewUrlIndices = Enumerable.Range(0, MaxDenormalizedViewUrlIndexCount - 1)
-            .Select(Extensions.ToIndexSuffix).ToList();
-
-        private readonly IList<string> _forkFilterListIndices = Enumerable.Range(0, MaxDenormalizedForkFilterListIndexCount - 1)
-            .Select(Extensions.ToIndexSuffix).ToList();
-
-        private readonly IList<string> _mergeFilterListIndices = Enumerable.Range(0, MaxDenormalizedMergeFilterListIndexCount - 1)
-            .Select(Extensions.ToIndexSuffix).ToList();
-
-        private readonly IList<string> _dependentFilterListIndices = Enumerable.Range(0, MaxDenormalizedDependentFilterListIndexCount - 1)
-            .Select(Extensions.ToIndexSuffix).ToList();
-
         private readonly TableClient _tableClient;
 
         public Handler(TableServiceClient tableServiceClient)
@@ -64,98 +26,9 @@ public static class GetFilterListDetails
 
         public async Task<IEnumerable<FilterListDetails>> Handle(Query request, CancellationToken cancellationToken)
         {
-            var select = new List<string>
-            {
-                nameof(IFilterListTableEntity.Name),
-                nameof(IFilterListTableEntity.Description),
-                nameof(IFilterListTableEntity.HomeUrl),
-                nameof(IFilterListTableEntity.OnionUrl),
-                nameof(IFilterListTableEntity.PolicyUrl),
-                nameof(IFilterListTableEntity.SubmissionUrl),
-                nameof(IFilterListTableEntity.IssuesUrl),
-                nameof(IFilterListTableEntity.ForumUrl),
-                nameof(IFilterListTableEntity.ChatUrl),
-                nameof(IFilterListTableEntity.EmailAddress),
-                nameof(IFilterListTableEntity.DonateUrl),
-                nameof(IFilterListTableEntity.LicenseId),
-                nameof(IFilterListTableEntity.LicenseName),
-                nameof(IFilterListTableEntity.LicenseUrl),
-                nameof(IFilterListTableEntity.LicensePermitsModification),
-                nameof(IFilterListTableEntity.LicensePermitsDistribution),
-                nameof(IFilterListTableEntity.LicensePermitsCommercialUse)
-            };
-
-            foreach (var ui in _viewUrlIndices)
-            {
-                select.Add(nameof(IFilterListTableEntity.ViewUrlSegmentNumber) + ui);
-                select.Add(nameof(IFilterListTableEntity.ViewUrlPrimariness) + ui);
-                select.Add(nameof(IFilterListTableEntity.ViewUrl) + ui);
-            }
-
-            foreach (var li in _languageIndices)
-            {
-                select.Add(nameof(IFilterListTableEntity.LanguageIso6391) + li);
-                select.Add(nameof(IFilterListTableEntity.LanguageName) + li);
-            }
-
-            foreach (var mi in _maintainerIndices)
-            {
-                select.Add(nameof(IFilterListTableEntity.MaintainerId) + mi);
-                select.Add(nameof(IFilterListTableEntity.MaintainerName) + mi);
-                select.Add(nameof(IFilterListTableEntity.MaintainerUrl) + mi);
-                select.Add(nameof(IFilterListTableEntity.MaintainerEmailAddress) + mi);
-                select.Add(nameof(IFilterListTableEntity.MaintainerTwitterHandle) + mi);
-            }
-
-            foreach (var si in _softwareIndices)
-            {
-                select.Add(nameof(IFilterListTableEntity.SoftwareId) + si);
-                select.Add(nameof(IFilterListTableEntity.SoftwareName) + si);
-            }
-
-            foreach (var si in _syntaxIndices)
-            {
-                select.Add(nameof(IFilterListTableEntity.SyntaxId) + si);
-                select.Add(nameof(IFilterListTableEntity.SyntaxName) + si);
-                select.Add(nameof(IFilterListTableEntity.SyntaxDescription) + si);
-                select.Add(nameof(IFilterListTableEntity.SyntaxUrl) + si);
-            }
-
-            foreach (var ti in _tagIndices)
-            {
-                select.Add(nameof(IFilterListTableEntity.TagId) + ti);
-                select.Add(nameof(IFilterListTableEntity.TagName) + ti);
-                select.Add(nameof(IFilterListTableEntity.TagDescription) + ti);
-            }
-
-            foreach (var fi in _forkFilterListIndices)
-            {
-                select.Add(nameof(IFilterListTableEntity.UpstreamFilterListId) + fi);
-                select.Add(nameof(IFilterListTableEntity.UpstreamFilterListName) + fi);
-                select.Add(nameof(IFilterListTableEntity.ForkFilterListId) + fi);
-                select.Add(nameof(IFilterListTableEntity.ForkFilterListName) + fi);
-            }
-
-            foreach (var mi in _mergeFilterListIndices)
-            {
-                select.Add(nameof(IFilterListTableEntity.IncludedInFilterListId) + mi);
-                select.Add(nameof(IFilterListTableEntity.IncludedInFilterListName) + mi);
-                select.Add(nameof(IFilterListTableEntity.IncludesFilterListId) + mi);
-                select.Add(nameof(IFilterListTableEntity.IncludesFilterListName) + mi);
-            }
-
-            foreach (var di in _dependentFilterListIndices)
-            {
-                select.Add(nameof(IFilterListTableEntity.DependencyFilterListId) + di);
-                select.Add(nameof(IFilterListTableEntity.DependencyFilterListName) + di);
-                select.Add(nameof(IFilterListTableEntity.DependentFilterListId) + di);
-                select.Add(nameof(IFilterListTableEntity.DependentFilterListName) + di);
-            }
-
             return await _tableClient.QueryAsync<TableEntity>(
                     te => te.PartitionKey == TableStorageConstants.FilterListsPartitionKey &&
                           te.RowKey == request.Id.ToTableStorageKeyString(),
-                    select: select,
                     cancellationToken: cancellationToken)
                 .Select(te => new TableEntity(te.Where(kv => kv.Value is not null).ToDictionary(kv => kv.Key, kv => kv.Value)))
                 .Select(te => new FilterListDetails
@@ -171,22 +44,28 @@ public static class GetFilterListDetails
                     ChatUrl = te.GetString(nameof(IFilterListTableEntity.ChatUrl)),
                     EmailAddress = te.GetString(nameof(IFilterListTableEntity.EmailAddress)),
                     DonateUrl = te.GetString(nameof(IFilterListTableEntity.DonateUrl)),
-                    ViewUrls = _viewUrlIndices
-                        .Where(ui => te.ContainsKey(nameof(IFilterListTableEntity.ViewUrl) + ui))
-                        .Select(ui => new FilterListViewUrl
+                    ViewUrls = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.ViewUrl) + '_'))
+                        .Select((_, ui) =>
                         {
-                            SegmentNumber = (int)te.GetInt32(nameof(IFilterListTableEntity.ViewUrlSegmentNumber) + ui)!,
-                            Primariness = (int)te.GetInt32(nameof(IFilterListTableEntity.ViewUrlPrimariness) + ui)!,
-                            Url = te.GetString(nameof(IFilterListTableEntity.ViewUrl) + ui)
+                            var indexSuffix = ui.ToIndexSuffix();
+                            return new FilterListViewUrl
+                            {
+                                SegmentNumber = (int)te.GetInt32(nameof(IFilterListTableEntity.ViewUrlSegmentNumber) + indexSuffix)!,
+                                Primariness = (int)te.GetInt32(nameof(IFilterListTableEntity.ViewUrlPrimariness) + indexSuffix)!,
+                                Url = te.GetString(nameof(IFilterListTableEntity.ViewUrl) + indexSuffix)
+                            };
                         })
                         .OrderBy(u => u.SegmentNumber)
                         .ThenBy(u => u.Primariness),
-                    Languages = _languageIndices
-                        .Where(li => te.ContainsKey(nameof(IFilterListTableEntity.LanguageIso6391) + li))
-                        .Select(li => new Language
+                    Languages = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.LanguageIso6391) + '_'))
+                        .Select((_, li) =>
                         {
-                            Iso6391 = te.GetString(nameof(IFilterListTableEntity.LanguageIso6391) + li),
-                            Name = te.GetString(nameof(IFilterListTableEntity.LanguageName) + li)
+                            var indexSuffix = li.ToIndexSuffix();
+                            return new Language
+                            {
+                                Iso6391 = te.GetString(nameof(IFilterListTableEntity.LanguageIso6391) + indexSuffix),
+                                Name = te.GetString(nameof(IFilterListTableEntity.LanguageName) + indexSuffix)
+                            };
                         })
                         .OrderBy(l => l.Iso6391),
                     License = new License
@@ -198,90 +77,120 @@ public static class GetFilterListDetails
                         PermitsDistribution = (bool)te.GetBoolean(nameof(IFilterListTableEntity.LicensePermitsDistribution))!,
                         PermitsCommercialUse = (bool)te.GetBoolean(nameof(IFilterListTableEntity.LicensePermitsCommercialUse))!
                     },
-                    Maintainers = _maintainerIndices
-                        .Where(mi => te.ContainsKey(nameof(IFilterListTableEntity.MaintainerId) + mi))
-                        .Select(mi => new Maintainer
+                    Maintainers = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.MaintainerId) + '_'))
+                        .Select((_, mi) =>
                         {
-                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.MaintainerId) + mi)!,
-                            Name = te.GetString(nameof(IFilterListTableEntity.MaintainerName) + mi),
-                            Url = te.GetString(nameof(IFilterListTableEntity.MaintainerUrl) + mi),
-                            EmailAddress = te.GetString(nameof(IFilterListTableEntity.MaintainerEmailAddress) + mi),
-                            TwitterHandle = te.GetString(nameof(IFilterListTableEntity.MaintainerTwitterHandle) + mi)
+                            var indexSuffix = mi.ToIndexSuffix();
+                            return new Maintainer
+                            {
+                                Id = (long)te.GetInt64(nameof(IFilterListTableEntity.MaintainerId) + indexSuffix)!,
+                                Name = te.GetString(nameof(IFilterListTableEntity.MaintainerName) + indexSuffix),
+                                Url = te.GetString(nameof(IFilterListTableEntity.MaintainerUrl) + indexSuffix),
+                                EmailAddress = te.GetString(nameof(IFilterListTableEntity.MaintainerEmailAddress) + indexSuffix),
+                                TwitterHandle = te.GetString(nameof(IFilterListTableEntity.MaintainerTwitterHandle) + indexSuffix)
+                            };
                         })
                         .OrderBy(m => m.Name),
-                    Software = _softwareIndices
-                        .Where(si => te.ContainsKey(nameof(IFilterListTableEntity.SoftwareId) + si))
-                        .Select(si => new Software
+                    Software = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.SoftwareId) + '_'))
+                        .Select((_, si) =>
                         {
-                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.SoftwareId) + si)!,
-                            Name = te.GetString(nameof(IFilterListTableEntity.SoftwareName) + si)
+                            var indexSuffix = si.ToIndexSuffix();
+                            return new Software
+                            {
+                                Id = (long)te.GetInt64(nameof(IFilterListTableEntity.SoftwareId) + indexSuffix)!,
+                                Name = te.GetString(nameof(IFilterListTableEntity.SoftwareName) + indexSuffix)
+                            };
                         })
                         .OrderBy(s => s.Name),
-                    Syntaxes = _syntaxIndices
-                        .Where(si => te.ContainsKey(nameof(IFilterListTableEntity.SyntaxId) + si))
-                        .Select(si => new Syntax
+                    Syntaxes = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.SyntaxId) + '_'))
+                        .Select((_, si) =>
                         {
-                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.SyntaxId) + si)!,
-                            Name = te.GetString(nameof(IFilterListTableEntity.SyntaxName) + si),
-                            Description = te.GetString(nameof(IFilterListTableEntity.SyntaxDescription) + si),
-                            Url = te.GetString(nameof(IFilterListTableEntity.SyntaxUrl) + si)
+                            var indexSuffix = si.ToIndexSuffix();
+                            return new Syntax
+                            {
+                                Id = (long)te.GetInt64(nameof(IFilterListTableEntity.SyntaxId) + indexSuffix)!,
+                                Name = te.GetString(nameof(IFilterListTableEntity.SyntaxName) + indexSuffix),
+                                Description = te.GetString(nameof(IFilterListTableEntity.SyntaxDescription) + indexSuffix),
+                                Url = te.GetString(nameof(IFilterListTableEntity.SyntaxUrl) + indexSuffix)
+                            };
                         })
                         .OrderBy(s => s.Name),
-                    Tags = _tagIndices
-                        .Where(ti => te.ContainsKey(nameof(IFilterListTableEntity.TagId) + ti))
-                        .Select(ti => new Tag
+                    Tags = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.TagId) + '_'))
+                        .Select((_, ti) =>
                         {
-                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.TagId) + ti)!,
-                            Name = te.GetString(nameof(IFilterListTableEntity.TagName) + ti),
-                            Description = te.GetString(nameof(IFilterListTableEntity.TagDescription) + ti)
+                            var indexSuffix = ti.ToIndexSuffix();
+                            return new Tag
+                            {
+                                Id = (long)te.GetInt64(nameof(IFilterListTableEntity.TagId) + indexSuffix)!,
+                                Name = te.GetString(nameof(IFilterListTableEntity.TagName) + indexSuffix),
+                                Description = te.GetString(nameof(IFilterListTableEntity.TagDescription) + indexSuffix)
+                            };
                         })
                         .OrderBy(t => t.Name),
-                    UpstreamFilterListNames = _forkFilterListIndices
-                        .Where(fi => te.ContainsKey(nameof(IFilterListTableEntity.UpstreamFilterListId) + fi))
-                        .Select(fi => new RelatedFilterList
+                    UpstreamFilterListNames = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.UpstreamFilterListId) + '_'))
+                        .Select((_, fi) =>
                         {
-                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.UpstreamFilterListId) + fi)!,
-                            Name = te.GetString(nameof(IFilterListTableEntity.UpstreamFilterListName) + fi)
+                            var indexSuffix = fi.ToIndexSuffix();
+                            return new RelatedFilterList
+                            {
+                                Id = (long)te.GetInt64(nameof(IFilterListTableEntity.UpstreamFilterListId) + indexSuffix)!,
+                                Name = te.GetString(nameof(IFilterListTableEntity.UpstreamFilterListName) + indexSuffix)
+                            };
                         })
                         .OrderBy(ufl => ufl.Name),
-                    ForkFilterListNames = _forkFilterListIndices
-                        .Where(fi => te.ContainsKey(nameof(IFilterListTableEntity.ForkFilterListId) + fi))
-                        .Select(fi => new RelatedFilterList
+                    ForkFilterListNames = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.ForkFilterListId) + '_'))
+                        .Select((_, fi) =>
                         {
-                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.ForkFilterListId) + fi)!,
-                            Name = te.GetString(nameof(IFilterListTableEntity.ForkFilterListName) + fi)
+                            var indexSuffix = fi.ToIndexSuffix();
+                            return new RelatedFilterList
+                            {
+                                Id = (long)te.GetInt64(nameof(IFilterListTableEntity.ForkFilterListId) + indexSuffix)!,
+                                Name = te.GetString(nameof(IFilterListTableEntity.ForkFilterListName) + indexSuffix)
+                            };
                         })
                         .OrderBy(ffl => ffl.Name),
-                    IncludedInFilterListNames = _mergeFilterListIndices
-                        .Where(mi => te.ContainsKey(nameof(IFilterListTableEntity.IncludedInFilterListId) + mi))
-                        .Select(mi => new RelatedFilterList
+                    IncludedInFilterListNames = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.IncludedInFilterListId) + '_'))
+                        .Select((_, mi) =>
                         {
-                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.IncludedInFilterListId) + mi)!,
-                            Name = te.GetString(nameof(IFilterListTableEntity.IncludedInFilterListName) + mi)
+                            var indexSuffix = mi.ToIndexSuffix();
+                            return new RelatedFilterList
+                            {
+                                Id = (long)te.GetInt64(nameof(IFilterListTableEntity.IncludedInFilterListId) + indexSuffix)!,
+                                Name = te.GetString(nameof(IFilterListTableEntity.IncludedInFilterListName) + indexSuffix)
+                            };
                         })
                         .OrderBy(iifl => iifl.Name),
-                    IncludesFilterListNames = _mergeFilterListIndices
-                        .Where(mi => te.ContainsKey(nameof(IFilterListTableEntity.IncludesFilterListId) + mi))
-                        .Select(mi => new RelatedFilterList
+                    IncludesFilterListNames = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.IncludesFilterListId) + '_'))
+                        .Select((_, mi) =>
                         {
-                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.IncludesFilterListId) + mi)!,
-                            Name = te.GetString(nameof(IFilterListTableEntity.IncludesFilterListName) + mi)
+                            var indexSuffix = mi.ToIndexSuffix();
+                            return new RelatedFilterList
+                            {
+                                Id = (long)te.GetInt64(nameof(IFilterListTableEntity.IncludesFilterListId) + indexSuffix)!,
+                                Name = te.GetString(nameof(IFilterListTableEntity.IncludesFilterListName) + indexSuffix)
+                            };
                         })
                         .OrderBy(ifl => ifl.Name),
-                    DependencyFilterListNames = _dependentFilterListIndices
-                        .Where(di => te.ContainsKey(nameof(IFilterListTableEntity.DependencyFilterListId) + di))
-                        .Select(di => new RelatedFilterList
+                    DependencyFilterListNames = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.DependencyFilterListId) + '_'))
+                        .Select((_, di) =>
                         {
-                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.DependencyFilterListId) + di)!,
-                            Name = te.GetString(nameof(IFilterListTableEntity.DependencyFilterListName) + di)
+                            var indexSuffix = di.ToString();
+                            return new RelatedFilterList
+                            {
+                                Id = (long)te.GetInt64(nameof(IFilterListTableEntity.DependencyFilterListId) + indexSuffix)!,
+                                Name = te.GetString(nameof(IFilterListTableEntity.DependencyFilterListName) + indexSuffix)
+                            };
                         })
                         .OrderBy(dfl => dfl.Name),
-                    DependentFilterListNames = _dependentFilterListIndices
-                        .Where(di => te.ContainsKey(nameof(IFilterListTableEntity.DependentFilterListId) + di))
-                        .Select(di => new RelatedFilterList
+                    DependentFilterListNames = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.DependentFilterListId) + '_'))
+                        .Select((_, di) =>
                         {
-                            Id = (long)te.GetInt64(nameof(IFilterListTableEntity.DependentFilterListId) + di)!,
-                            Name = te.GetString(nameof(IFilterListTableEntity.DependentFilterListName) + di)
+                            var indexSuffix = di.ToIndexSuffix();
+                            return new RelatedFilterList
+                            {
+                                Id = (long)te.GetInt64(nameof(IFilterListTableEntity.DependentFilterListId) + indexSuffix)!,
+                                Name = te.GetString(nameof(IFilterListTableEntity.DependentFilterListName) + indexSuffix)
+                            };
                         })
                         .OrderBy(dfl => dfl.Name)
                 }).ToListAsync(cancellationToken);
