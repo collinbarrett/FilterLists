@@ -1,38 +1,4 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav
-    #drawer
-    class="sidenav"
-    fixedInViewport
-    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'"
-  >
-    <mat-nav-list>
-      <a mat-list-item [routerLink]="['/']" routerLinkActive="active"
-        >Directory</a
-      >
-      <a mat-list-item [routerLink]="['/submissions']" routerLinkActive="active"
-        >Submissions</a
-      >
-      <a mat-list-item [routerLink]="['/about']" routerLinkActive="active"
-        >About</a
-      >
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button
-        type="button"
-        mat-button
-        aria-label="Toggle sidenav"
-        (click)="drawer.toggle()"
-      >
-        <img
-          src="assets/logo_filterlists.png"
-          alt="FilterLists logo"
-          height="44px"
-        />
-      </button>
-    </mat-toolbar>
-    <router-outlet></router-outlet>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<mat-toolbar color="primary">
+  <img src="assets/logo_filterlists.png" alt="FilterLists logo" height="44px" />
+</mat-toolbar>
+<router-outlet></router-outlet>

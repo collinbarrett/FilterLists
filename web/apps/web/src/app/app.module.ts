@@ -1,13 +1,9 @@
 import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
 import { Routes, RouterModule } from '@angular/router';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
@@ -15,6 +11,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./directory/directory.module').then((d) => d.DirectoryModule),
   },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({
@@ -22,14 +19,9 @@ const routes: Routes = [
   imports: [
     BrowserAnimationsModule,
     HttpClientModule,
-    LayoutModule,
-    MatButtonModule,
-    MatListModule,
-    MatSidenavModule,
     MatToolbarModule,
     RouterModule.forRoot(routes),
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
