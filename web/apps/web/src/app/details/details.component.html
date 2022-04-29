@@ -8,6 +8,7 @@
   >
     <ng-container *ngIf="listDetails$ | async as listDetails">
       <h2>{{ listDetails.name }}</h2>
+      <p>{{ listDetails.description }}</p>
       <ng-container *ngFor="let maintainer of listDetails.maintainers">
         <filterlists-maintainer-details
           [maintainer]="maintainer"
