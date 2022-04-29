@@ -13,7 +13,7 @@
       [attr.aria-label]="'Visit {{maintainer.name}}\'s homepage'"
       matTooltip="Visit {{ maintainer.name }}'s homepage"
       href="{{ maintainer.url }}"
-      ><mat-icon>home</mat-icon></a
+      ><mat-icon color="primary">home</mat-icon></a
     >
     <a
       *ngIf="maintainer.twitterHandle"
@@ -21,15 +21,19 @@
       [attr.aria-label]="'Visit {{maintainer.name}}\'s Twitter profile'"
       matTooltip="Visit {{ maintainer.name }}'s Twitter profile"
       href="https://twitter.com/{{ maintainer.twitterHandle }}"
-      ><mat-icon>twitter</mat-icon></a
-    >
+      ><img
+        src="assets/twitter-brands.svg"
+        height="20"
+        width="20"
+        alt="Twitter icon"
+    /></a>
     <a
       *ngIf="maintainer.emailAddress"
       mat-icon-button
       [attr.aria-label]="'Email {{maintainer.name}}'"
       matTooltip="Email {{ maintainer.name }}"
       href="mailto:{{ maintainer.emailAddress }}"
-      ><mat-icon>email</mat-icon></a
+      ><mat-icon color="primary">email</mat-icon></a
     >
   </mat-card-actions>
 </mat-card>
