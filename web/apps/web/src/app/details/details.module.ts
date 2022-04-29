@@ -7,6 +7,7 @@ import { MaintainerDetailsComponent } from './maintainer-details/maintainer-deta
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { LicenseDetailsComponent } from './license-details/license-details.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [DetailsComponent, MaintainerDetailsComponent],
+  declarations: [
+    DetailsComponent,
+    LicenseDetailsComponent,
+    MaintainerDetailsComponent,
+  ],
   imports: [
     CommonModule,
     MatCardModule,
