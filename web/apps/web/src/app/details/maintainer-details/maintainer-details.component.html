@@ -1,0 +1,35 @@
+<mat-card *ngIf="maintainer">
+  <mat-card-header>
+    <mat-card-title>{{ maintainer.name }}</mat-card-title>
+    <!-- <mat-card-subtitle> </mat-card-subtitle> -->
+  </mat-card-header>
+  <mat-card-content>
+    <!-- TODO: Expander that fetches and displays maintainer's other lists -->
+  </mat-card-content>
+  <mat-card-actions>
+    <a
+      *ngIf="maintainer.url"
+      mat-icon-button
+      [attr.aria-label]="'Visit {{maintainer.name}}\'s homepage'"
+      matTooltip="Visit {{ maintainer.name }}'s homepage"
+      href="{{ maintainer.url }}"
+      ><mat-icon>home</mat-icon></a
+    >
+    <a
+      *ngIf="maintainer.twitterHandle"
+      mat-icon-button
+      [attr.aria-label]="'Visit {{maintainer.name}}\'s Twitter profile'"
+      matTooltip="Visit {{ maintainer.name }}'s Twitter profile"
+      href="https://twitter.com/{{ maintainer.twitterHandle }}"
+      ><mat-icon>twitter</mat-icon></a
+    >
+    <a
+      *ngIf="maintainer.emailAddress"
+      mat-icon-button
+      [attr.aria-label]="'Email {{maintainer.name}}'"
+      matTooltip="Email {{ maintainer.name }}"
+      href="mailto:{{ maintainer.emailAddress }}"
+      ><mat-icon>email</mat-icon></a
+    >
+  </mat-card-actions>
+</mat-card>

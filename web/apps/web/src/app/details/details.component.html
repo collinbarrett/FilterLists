@@ -1,13 +1,19 @@
-<mat-sidenav-container class="sidenav-container">
+<mat-sidenav-container>
   <mat-sidenav
-    #drawer
     fixedInViewport
     [attr.role]="'dialog'"
     [mode]="'over'"
     opened="true"
     position="end"
   >
-    {{ (listDetails$ | async)?.name }}
+    <ng-container *ngIf="listDetails$ | async as listDetails">
+      <h2>{{ listDetails.name }}</h2>
+      <ng-container *ngFor="let maintainer of listDetails.maintainers">
+        <filterlists-maintainer-details
+          [maintainer]="maintainer"
+        ></filterlists-maintainer-details>
+      </ng-container>
+    </ng-container>
   </mat-sidenav>
   <mat-sidenav-content> </mat-sidenav-content>
 </mat-sidenav-container>

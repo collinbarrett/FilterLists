@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { DetailsComponent } from './details.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MaintainerDetailsComponent } from './maintainer-details/maintainer-details.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 const routes: Routes = [
   {
@@ -12,7 +16,14 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [DetailsComponent],
-  imports: [CommonModule, MatSidenavModule, RouterModule.forChild(routes)],
+  declarations: [DetailsComponent, MaintainerDetailsComponent],
+  imports: [
+    CommonModule,
+    MatCardModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatTooltipModule,
+    RouterModule.forChild(routes),
+  ],
 })
 export class DetailsModule {}
