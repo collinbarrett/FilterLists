@@ -8,7 +8,7 @@ import { DirectoryDataSource } from './directory-datasource';
 
 @Component({
   templateUrl: './directory.component.html',
-  styleUrls: ['./directory.component.css'],
+  styleUrls: ['./directory.component.scss'],
 })
 export class DirectoryComponent implements AfterViewInit {
   @ViewChild(MatPaginator) readonly paginator!: MatPaginator;
@@ -17,6 +17,7 @@ export class DirectoryComponent implements AfterViewInit {
   readonly dataSource: DirectoryDataSource;
 
   readonly displayedColumns = [
+    'details',
     'name',
     'description',
     'software',

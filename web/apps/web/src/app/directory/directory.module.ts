@@ -7,6 +7,8 @@ import { DirectoryComponent } from './directory.component';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 const routes: Routes = [
   {
@@ -21,7 +23,9 @@ const routes: Routes = [
   declarations: [DirectoryComponent],
   imports: [
     CommonModule,
+    MatButtonModule,
     MatChipsModule,
+    MatIconModule,
     MatPaginatorModule,
     MatSortModule,
     MatTableModule,
