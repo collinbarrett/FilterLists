@@ -16,7 +16,7 @@ export class DirectoryDataSource extends DataSource<FilterListSummary> {
   }
 
   connect(): Observable<FilterListSummary[]> {
-    this.api.getLists().subscribe((data) => {
+    this.api.getListSummaries().subscribe((data) => {
       this.datastream.next(data);
     });
     if (this.paginator && this.sort) {

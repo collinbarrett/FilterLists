@@ -10,12 +10,12 @@ namespace FilterLists.Api.Application;
 
 public static class GetFilterListDetails
 {
-    public record Query : IRequest<IEnumerable<FilterListDetails>>
+    public record Query : IRequest<FilterListDetails?>
     {
         public long Id { get; init; }
     }
 
-    public class Handler : IRequestHandler<Query, IEnumerable<FilterListDetails>>
+    public class Handler : IRequestHandler<Query, FilterListDetails?>
     {
         private readonly TableClient _tableClient;
 
@@ -24,7 +24,7 @@ public static class GetFilterListDetails
             _tableClient = tableServiceClient.GetTableClient(TableStorageConstants.FilterListsTableName);
         }
 
-        public async Task<IEnumerable<FilterListDetails>> Handle(Query request, CancellationToken cancellationToken)
+        public async Task<FilterListDetails?> Handle(Query request, CancellationToken cancellationToken)
         {
             return await _tableClient.QueryAsync<TableEntity>(
                     te => te.PartitionKey == TableStorageConstants.FilterListsPartitionKey &&
@@ -193,7 +193,7 @@ public static class GetFilterListDetails
                             };
                         })
                         .OrderBy(dfl => dfl.Name)
-                }).ToListAsync(cancellationToken);
+                }).FirstOrDefaultAsync(cancellationToken);
         }
     }
 

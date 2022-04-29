@@ -7,7 +7,7 @@
     opened="true"
     position="end"
   >
-    List {{ listId$ | async }}
+    {{ (listDetails$ | async)?.name }}
   </mat-sidenav>
   <mat-sidenav-content> </mat-sidenav-content>
 </mat-sidenav-container>
