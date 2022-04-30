@@ -9,15 +9,17 @@
   <mat-card-actions>
     <a
       *ngIf="maintainer.url"
-      mat-icon-button
+      mat-stroked-button
+      color="primary"
       [attr.aria-label]="'Visit {{maintainer.name}}\'s homepage'"
       matTooltip="Visit {{ maintainer.name }}'s homepage"
       href="{{ maintainer.url }}"
-      ><mat-icon color="primary">home</mat-icon></a
+      ><mat-icon>home</mat-icon> Home</a
     >
     <a
       *ngIf="maintainer.twitterHandle"
-      mat-icon-button
+      mat-stroked-button
+      color="primary"
       [attr.aria-label]="'Visit {{maintainer.name}}\'s Twitter profile'"
       matTooltip="Visit {{ maintainer.name }}'s Twitter profile"
       href="https://twitter.com/{{ maintainer.twitterHandle }}"
@@ -26,14 +28,17 @@
         height="20"
         width="20"
         alt="Twitter icon"
-    /></a>
+      />
+      Twitter</a
+    >
     <a
       *ngIf="maintainer.emailAddress"
-      mat-icon-button
+      mat-stroked-button
+      color="primary"
       [attr.aria-label]="'Email {{maintainer.name}}'"
       matTooltip="Email {{ maintainer.name }}"
       href="mailto:{{ maintainer.emailAddress }}"
-      ><mat-icon color="primary">email</mat-icon></a
+      ><mat-icon>email</mat-icon> Email</a
     >
   </mat-card-actions>
 </mat-card>

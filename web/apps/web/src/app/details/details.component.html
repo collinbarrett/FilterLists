@@ -9,7 +9,10 @@
     <ng-container *ngIf="listDetails$ | async as listDetails">
       <h2>{{ listDetails.name }}</h2>
       <p>{{ listDetails.description }}</p>
-      <div fxLayout fxLayoutAlign="space-evenly">
+      <div fxLayoutAlign="space-evenly">
+        <filterlists-links
+          [filterListDetails]="listDetails"
+        ></filterlists-links>
         <ng-container *ngFor="let maintainer of listDetails.maintainers">
           <filterlists-maintainer-details
             [maintainer]="maintainer"

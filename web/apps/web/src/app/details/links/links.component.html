@@ -1,0 +1,92 @@
+<mat-card *ngIf="filterListDetails" class="mat-elevation-z4">
+  <mat-card-header>
+    <mat-card-title>Links</mat-card-title>
+    <!-- <mat-card-subtitle></mat-card-subtitle> -->
+  </mat-card-header>
+  <mat-card-content fxLayout="column" fxLayoutGap="8">
+    <a
+      *ngIf="filterListDetails.homeUrl"
+      mat-stroked-button
+      color="primary"
+      [attr.aria-label]="'Visit {{filterListDetails.name}}\'s homepage'"
+      matTooltip="Visit {{ filterListDetails.name }}'s homepage"
+      href="{{ filterListDetails.homeUrl }}"
+      ><mat-icon>home</mat-icon> Home</a
+    >
+    <a
+      *ngIf="filterListDetails.onionUrl"
+      mat-stroked-button
+      color="primary"
+      [attr.aria-label]="'Visit {{filterListDetails.name}}\'s Onion (Tor) page'"
+      matTooltip="Visit {{ filterListDetails.name }}'s Onion (Tor) page"
+      href="{{ filterListDetails.onionUrl }}"
+      ><!-- TODO --><mat-icon>home</mat-icon> Onion</a
+    >
+    <a
+      *ngIf="filterListDetails.policyUrl"
+      mat-stroked-button
+      color="primary"
+      [attr.aria-label]="'Visit {{filterListDetails.name}}\'s policy page'"
+      matTooltip="Visit {{ filterListDetails.name }}'s policy page"
+      href="{{ filterListDetails.policyUrl }}"
+      ><mat-icon>gavel</mat-icon> Policy</a
+    >
+    <a
+      *ngIf="filterListDetails.submissionUrl"
+      mat-stroked-button
+      color="primary"
+      [attr.aria-label]="'Visit {{filterListDetails.name}}\'s submissions page'"
+      matTooltip="Visit {{ filterListDetails.name }}'s submissions page"
+      href="{{ filterListDetails.submissionUrl }}"
+      ><mat-icon>edit_note</mat-icon> Submissions</a
+    >
+    <a
+      *ngIf="filterListDetails.issuesUrl"
+      mat-stroked-button
+      color="primary"
+      [attr.aria-label]="
+        'Visit {{filterListDetails.name}}\'s GitHub Issues page'
+      "
+      matTooltip="Visit {{ filterListDetails.name }}'s GitHub Issues page"
+      href="{{ filterListDetails.issuesUrl }}"
+      ><!-- TODO --><mat-icon>home</mat-icon> GitHub Issues</a
+    >
+    <a
+      *ngIf="filterListDetails.forumUrl"
+      mat-stroked-button
+      color="primary"
+      [attr.aria-label]="'Visit {{filterListDetails.name}}\'s forum'"
+      matTooltip="Visit {{ filterListDetails.name }}'s forum"
+      href="{{ filterListDetails.forumUrl }}"
+      ><mat-icon>forum</mat-icon> Forum</a
+    >
+    <a
+      *ngIf="filterListDetails.chatUrl"
+      mat-stroked-button
+      color="primary"
+      [attr.aria-label]="'Visit {{filterListDetails.name}}\'s chat room'"
+      matTooltip="Visit {{ filterListDetails.name }}'s chat room"
+      href="{{ filterListDetails.chatUrl }}"
+      ><mat-icon>chat</mat-icon> Chat Room</a
+    >
+    <a
+      *ngIf="filterListDetails.emailAddress"
+      mat-stroked-button
+      color="primary"
+      [attr.aria-label]="'Email {{filterListDetails.name}}'"
+      matTooltip="Email {{ filterListDetails.name }}"
+      href="mailto:{{ filterListDetails.emailAddress }}"
+      ><mat-icon>mail</mat-icon> Email</a
+    >
+    <a
+      *ngIf="filterListDetails.donateUrl"
+      mat-stroked-button
+      color="primary"
+      [attr.aria-label]="'Donate to {{filterListDetails.name}}'"
+      matTooltip="Donate to {{ filterListDetails.name }}"
+      href="{{ filterListDetails.donateUrl }}"
+      ><mat-icon>payments</mat-icon> Donate</a
+    >
+  </mat-card-content>
+  <!-- <mat-card-actions> </mat-card-actions> -->
+</mat-card>
