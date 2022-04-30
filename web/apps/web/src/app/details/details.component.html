@@ -9,14 +9,16 @@
     <ng-container *ngIf="listDetails$ | async as listDetails">
       <h2>{{ listDetails.name }}</h2>
       <p>{{ listDetails.description }}</p>
-      <ng-container *ngFor="let maintainer of listDetails.maintainers">
-        <filterlists-maintainer-details
-          [maintainer]="maintainer"
-        ></filterlists-maintainer-details>
-      </ng-container>
-      <filterlists-license-details
-        [license]="listDetails.license"
-      ></filterlists-license-details>
+      <div fxLayout fxLayoutAlign="space-evenly">
+        <ng-container *ngFor="let maintainer of listDetails.maintainers">
+          <filterlists-maintainer-details
+            [maintainer]="maintainer"
+          ></filterlists-maintainer-details>
+        </ng-container>
+        <filterlists-license-details
+          [license]="listDetails.license"
+        ></filterlists-license-details>
+      </div>
     </ng-container>
   </mat-sidenav>
   <mat-sidenav-content> </mat-sidenav-content>
