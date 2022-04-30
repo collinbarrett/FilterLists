@@ -221,7 +221,136 @@ public static class SeedFilterLists
                 }
 
                 return new TableEntity(values);
-            });
+            }).ToList();
+
+            #region Sample Full FilterList
+
+            var sampleValues = new Dictionary<string, object>
+            {
+                { nameof(IFilterListTableEntity.PartitionKey), TableStorageConstants.FilterListsPartitionKey },
+                { nameof(IFilterListTableEntity.RowKey), 1000000L.ToTableStorageKeyString() },
+                { nameof(IFilterListTableEntity.Name), "1 Collin's Sample list" },
+                { nameof(IFilterListTableEntity.Description), "A sample list to test the proper display of a list containing all values. This is not an actual list. This is a fake list. How does the UI look?" },
+                { nameof(IFilterListTableEntity.HomeUrl), "https://github.com/collinbarrett/filterlists" },
+                { nameof(IFilterListTableEntity.OnionUrl), "https://github.com/collinbarrett/filterlists" },
+                { nameof(IFilterListTableEntity.PolicyUrl), "https://github.com/collinbarrett/filterlists" },
+                { nameof(IFilterListTableEntity.SubmissionUrl), "https://github.com/collinbarrett/filterlists" },
+                { nameof(IFilterListTableEntity.IssuesUrl), "https://github.com/collinbarrett/filterlists" },
+                { nameof(IFilterListTableEntity.ForumUrl), "https://github.com/collinbarrett/filterlists" },
+                { nameof(IFilterListTableEntity.ChatUrl), "https://github.com/collinbarrett/filterlists" },
+                { nameof(IFilterListTableEntity.EmailAddress), "hi@filterlists.com" },
+                { nameof(IFilterListTableEntity.DonateUrl), "https://github.com/collinbarrett/filterlists" },
+                { nameof(IFilterListTableEntity.LicenseId), 35L },
+                { nameof(IFilterListTableEntity.LicenseName), "Dandelicence" },
+                { nameof(IFilterListTableEntity.LicenseUrl), "https://github.com/DandelionSprout/Dandelicence/blob/master/DandelicenceNewestVersion.md" },
+                { nameof(IFilterListTableEntity.LicensePermitsModification), true },
+                { nameof(IFilterListTableEntity.LicensePermitsDistribution), false },
+                { nameof(IFilterListTableEntity.LicensePermitsCommercialUse), true }
+            };
+
+            for (var i = 0; i < 3; i++)
+            {
+                var indexerSuffix = i.ToIndexSuffix();
+                sampleValues.Add(nameof(IFilterListTableEntity.ViewUrlSegmentNumber) + indexerSuffix, i);
+                sampleValues.Add(nameof(IFilterListTableEntity.ViewUrlPrimariness) + indexerSuffix, 1);
+                sampleValues.Add(nameof(IFilterListTableEntity.ViewUrl) + indexerSuffix, "https://github.com/collinbarrett/filterlists");
+            }
+
+            for (var i = 3; i < 6; i++)
+            {
+                var indexerSuffix = i.ToIndexSuffix();
+                sampleValues.Add(nameof(IFilterListTableEntity.ViewUrlSegmentNumber) + indexerSuffix, i - 3);
+                sampleValues.Add(nameof(IFilterListTableEntity.ViewUrlPrimariness) + indexerSuffix, 2);
+                sampleValues.Add(nameof(IFilterListTableEntity.ViewUrl) + indexerSuffix, "https://github.com/collinbarrett/filterlists");
+            }
+
+            for (var i = 0; i < 12; i++)
+            {
+                var indexSuffix = i.ToIndexSuffix();
+                sampleValues.Add(nameof(IFilterListTableEntity.LanguageIso6391) + indexSuffix, "en");
+                sampleValues.Add(nameof(IFilterListTableEntity.LanguageName) + indexSuffix, "English");
+            }
+
+            for (var i = 0; i < 6; i++)
+            {
+                var indexSuffix = i.ToIndexSuffix();
+                sampleValues.Add(nameof(IFilterListTableEntity.MaintainerId) + indexSuffix, 1L);
+                sampleValues.Add(nameof(IFilterListTableEntity.MaintainerName) + indexSuffix, "Collin Barrett");
+                sampleValues.Add(nameof(IFilterListTableEntity.MaintainerUrl) + indexSuffix, "https://github.com/collinbarrett/filterlists");
+                sampleValues.Add(nameof(IFilterListTableEntity.MaintainerEmailAddress) + indexSuffix, "hi@filterlists.com");
+                sampleValues.Add(nameof(IFilterListTableEntity.MaintainerTwitterHandle) + indexSuffix, "collinbarrett");
+            }
+
+            for (var i = 0; i < 8; i++)
+            {
+                var indexSuffix = i.ToIndexSuffix();
+                sampleValues.Add(nameof(IFilterListTableEntity.SyntaxId) + indexSuffix, 1L);
+                sampleValues.Add(nameof(IFilterListTableEntity.SyntaxName) + indexSuffix, "Hosts");
+                sampleValues.Add(nameof(IFilterListTableEntity.SyntaxDescription) + indexSuffix, "A syntax of IPs in IPv4 and IPv6 formats. Used in a variety of sotware. A common syntax");
+                sampleValues.Add(nameof(IFilterListTableEntity.SyntaxUrl) + indexSuffix, "https://github.com/collinbarrett/filterlists");
+            }
+
+            for (var i = 0; i < 33; i++)
+            {
+                var indexSuffix = i.ToIndexSuffix();
+                sampleValues.Add(nameof(IFilterListTableEntity.SoftwareId) + indexSuffix, 1L);
+                sampleValues.Add(nameof(IFilterListTableEntity.SoftwareName) + indexSuffix, "uBlock Origin");
+            }
+
+            for (var i = 0; i < 15; i++)
+            {
+                var indexSuffix = i.ToIndexSuffix();
+                sampleValues.Add(nameof(IFilterListTableEntity.TagId) + indexSuffix, 1L);
+                sampleValues.Add(nameof(IFilterListTableEntity.TagName) + indexSuffix, "ads");
+                sampleValues.Add(nameof(IFilterListTableEntity.TagDescription) + indexSuffix, "Blocks advertisements");
+            }
+
+            for (var i = 0; i < 10; i++)
+            {
+                var indexSuffix = i.ToIndexSuffix();
+                sampleValues.Add(nameof(IFilterListTableEntity.UpstreamFilterListId) + indexSuffix, 1L);
+                sampleValues.Add(nameof(IFilterListTableEntity.UpstreamFilterListName) + indexSuffix, "1 Collin's Sample list");
+            }
+
+            for (var i = 0; i < 10; i++)
+            {
+                var indexSuffix = i.ToIndexSuffix();
+                sampleValues.Add(nameof(IFilterListTableEntity.ForkFilterListId) + indexSuffix, 1L);
+                sampleValues.Add(nameof(IFilterListTableEntity.ForkFilterListName) + indexSuffix, "1 Collin's Sample list");
+            }
+
+            for (var i = 0; i < 10; i++)
+            {
+                var indexSuffix = i.ToIndexSuffix();
+                sampleValues.Add(nameof(IFilterListTableEntity.IncludedInFilterListId) + indexSuffix, 1L);
+                sampleValues.Add(nameof(IFilterListTableEntity.IncludedInFilterListName) + indexSuffix, "1 Collin's Sample list");
+            }
+
+            for (var i = 0; i < 10; i++)
+            {
+                var indexSuffix = i.ToIndexSuffix();
+                sampleValues.Add(nameof(IFilterListTableEntity.IncludesFilterListId) + indexSuffix, 1L);
+                sampleValues.Add(nameof(IFilterListTableEntity.IncludesFilterListName) + indexSuffix, "1 Collin's Sample list");
+            }
+
+            for (var i = 0; i < 10; i++)
+            {
+                var indexSuffix = i.ToIndexSuffix();
+                sampleValues.Add(nameof(IFilterListTableEntity.DependencyFilterListId) + indexSuffix, 1L);
+                sampleValues.Add(nameof(IFilterListTableEntity.DependencyFilterListName) + indexSuffix, "1 Collin's Sample list");
+            }
+
+            for (var i = 0; i < 10; i++)
+            {
+                var indexSuffix = i.ToIndexSuffix();
+                sampleValues.Add(nameof(IFilterListTableEntity.DependentFilterListId) + indexSuffix, 1L);
+                sampleValues.Add(nameof(IFilterListTableEntity.DependentFilterListName) + indexSuffix, "1 Collin's Sample list");
+            }
+
+            var sampleFilterListEntity = new TableEntity(sampleValues);
+            filterListEntities.Add(sampleFilterListEntity);
+
+            #endregion Sample Full FilterList
 
             await _tableServiceClient.DeleteTableAsync(TableStorageConstants.FilterListsTableName, cancellationToken);
             Thread.Sleep(40 * 1000); // https://docs.microsoft.com/en-us/rest/api/storageservices/Delete-Table?redirectedfrom=MSDN#remarks
