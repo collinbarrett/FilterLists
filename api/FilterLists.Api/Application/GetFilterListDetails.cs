@@ -174,7 +174,7 @@ public static class GetFilterListDetails
                     DependencyFilterListNames = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.DependencyFilterListId) + '_'))
                         .Select((_, di) =>
                         {
-                            var indexSuffix = di.ToString();
+                            var indexSuffix = di.ToIndexSuffix();
                             return new RelatedFilterList
                             {
                                 Id = (long)te.GetInt64(nameof(IFilterListTableEntity.DependencyFilterListId) + indexSuffix)!,
