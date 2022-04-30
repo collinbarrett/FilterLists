@@ -11,7 +11,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { DetailsComponent } from './details.component';
 import { LicenseDetailsComponent } from './license-details/license-details.component';
 import { LinksComponent } from './links/links.component';
+import { LinksInfoComponent } from './links-info/links-info.component';
 import { MaintainerDetailsComponent } from './maintainer-details/maintainer-details.component';
+import { EncodeURIComponentPipe } from './pipes/encodeURIComponent.pipe';
 
 const routes: Routes = [
   {
@@ -23,8 +25,10 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     DetailsComponent,
+    EncodeURIComponentPipe,
     LicenseDetailsComponent,
     LinksComponent,
+    LinksInfoComponent,
     MaintainerDetailsComponent,
   ],
   imports: [

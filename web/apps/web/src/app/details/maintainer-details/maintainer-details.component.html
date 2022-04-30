@@ -10,15 +10,15 @@
     <a
       *ngIf="maintainer.url"
       mat-raised-button
-      [attr.aria-label]="'Visit {{maintainer.name}}\'s homepage'"
+      [attr.aria-label]="'Visit ' + maintainer.name + '\'s homepage'"
       matTooltip="Visit {{ maintainer.name }}'s homepage"
       href="{{ maintainer.url }}"
-      ><mat-icon>home</mat-icon> Home</a
+      ><mat-icon>home</mat-icon>Home</a
     >
     <a
       *ngIf="maintainer.twitterHandle"
       mat-raised-button
-      [attr.aria-label]="'Visit {{maintainer.name}}\'s Twitter profile'"
+      [attr.aria-label]="'Visit ' + maintainer.name + '\'s Twitter profile'"
       matTooltip="Visit {{ maintainer.name }}'s Twitter profile"
       href="https://twitter.com/{{ maintainer.twitterHandle }}"
       ><img
@@ -32,10 +32,10 @@
     <a
       *ngIf="maintainer.emailAddress"
       mat-raised-button
-      [attr.aria-label]="'Email {{maintainer.name}}'"
+      [attr.aria-label]="'Email ' + maintainer.name"
       matTooltip="Email {{ maintainer.name }}"
       href="mailto:{{ maintainer.emailAddress }}"
-      ><mat-icon>email</mat-icon> Email</a
+      ><mat-icon>email</mat-icon>Email</a
     >
   </mat-card-actions>
 </mat-card>

@@ -36,10 +36,10 @@
     <a
       *ngIf="license.url"
       mat-raised-button
-      [attr.aria-label]="'Visit {{license.name}}\'s homepage'"
+      [attr.aria-label]="'Visit ' + license.name + '\'s homepage'"
       matTooltip="Visit {{ license.name }}'s homepage"
       href="{{ license.url }}"
-      ><mat-icon>home</mat-icon> Home</a
+      ><mat-icon>home</mat-icon>Home</a
     >
   </mat-card-actions>
 </mat-card>

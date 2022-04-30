@@ -1,85 +1,50 @@
-<mat-card *ngIf="filterListDetails" class="mat-elevation-z2">
+<mat-card *ngIf="listDetails" class="mat-elevation-z2">
   <mat-card-header>
-    <mat-card-title>Links</mat-card-title>
+    <!-- <mat-card-title></mat-card-title> -->
     <!-- <mat-card-subtitle></mat-card-subtitle> -->
   </mat-card-header>
-  <mat-card-content gdLayout gdColumns="repeat(2, 1fr)" gdGap="8px">
-    <a
-      *ngIf="filterListDetails.homeUrl"
-      mat-raised-button
-      [attr.aria-label]="'Visit {{filterListDetails.name}}\'s homepage'"
-      matTooltip="Visit {{ filterListDetails.name }}'s homepage"
-      href="{{ filterListDetails.homeUrl }}"
-      ><mat-icon>home</mat-icon> Home</a
-    >
-    <a
-      *ngIf="filterListDetails.onionUrl"
-      mat-raised-button
-      [attr.aria-label]="'Visit {{filterListDetails.name}}\'s Onion (Tor) page'"
-      matTooltip="Visit {{ filterListDetails.name }}'s Onion (Tor) page"
-      href="{{ filterListDetails.onionUrl }}"
-      ><img src="assets/onion.svg" height="20" width="20" alt="Onion icon" />
-      Onion</a
-    >
-    <a
-      *ngIf="filterListDetails.policyUrl"
-      mat-raised-button
-      [attr.aria-label]="'Visit {{filterListDetails.name}}\'s policy page'"
-      matTooltip="Visit {{ filterListDetails.name }}'s policy page"
-      href="{{ filterListDetails.policyUrl }}"
-      ><mat-icon>gavel</mat-icon> Policy</a
-    >
-    <a
-      *ngIf="filterListDetails.submissionUrl"
-      mat-raised-button
-      [attr.aria-label]="'Visit {{filterListDetails.name}}\'s submissions page'"
-      matTooltip="Visit {{ filterListDetails.name }}'s submissions page"
-      href="{{ filterListDetails.submissionUrl }}"
-      ><mat-icon>edit_note</mat-icon> Submissions</a
-    >
-    <a
-      *ngIf="filterListDetails.issuesUrl"
-      mat-raised-button
-      [attr.aria-label]="
-        'Visit {{filterListDetails.name}}\'s GitHub Issues page'
-      "
-      matTooltip="Visit {{ filterListDetails.name }}'s GitHub Issues page"
-      href="{{ filterListDetails.issuesUrl }}"
-      ><img src="assets/github.svg" height="20" width="20" alt="GitHub icon" />
-      GitHub Issues</a
-    >
-    <a
-      *ngIf="filterListDetails.forumUrl"
-      mat-raised-button
-      [attr.aria-label]="'Visit {{filterListDetails.name}}\'s forum'"
-      matTooltip="Visit {{ filterListDetails.name }}'s forum"
-      href="{{ filterListDetails.forumUrl }}"
-      ><mat-icon>forum</mat-icon> Forum</a
-    >
-    <a
-      *ngIf="filterListDetails.chatUrl"
-      mat-raised-button
-      [attr.aria-label]="'Visit {{filterListDetails.name}}\'s chat room'"
-      matTooltip="Visit {{ filterListDetails.name }}'s chat room"
-      href="{{ filterListDetails.chatUrl }}"
-      ><mat-icon>chat</mat-icon> Chat Room</a
-    >
-    <a
-      *ngIf="filterListDetails.emailAddress"
-      mat-raised-button
-      [attr.aria-label]="'Email {{filterListDetails.name}}'"
-      matTooltip="Email {{ filterListDetails.name }}"
-      href="mailto:{{ filterListDetails.emailAddress }}"
-      ><mat-icon>mail</mat-icon> Email</a
-    >
-    <a
-      *ngIf="filterListDetails.donateUrl"
-      mat-raised-button
-      [attr.aria-label]="'Donate to {{filterListDetails.name}}'"
-      matTooltip="Donate to {{ filterListDetails.name }}"
-      href="{{ filterListDetails.donateUrl }}"
-      ><mat-icon>payments</mat-icon> Donate</a
-    >
+  <mat-card-content>
+    <div gdLayout gdColumns="repeat(2, 1fr)" gdGap="8px">
+      <ng-container *ngFor="let viewUrl of listDetails.viewUrls">
+        <ng-container
+          *ngIf="
+            (viewUrl.segmentNumber > 0
+              ? ' Part #' + (viewUrl.segmentNumber + 1)
+              : ' ') +
+            (viewUrl.primariness > 1
+              ? ' Mirror #' + (viewUrl.primariness - 1)
+              : ' ') as suffix
+          "
+        >
+          <a
+            mat-raised-button
+            [attr.aria-label]="'View ' + listDetails.name + suffix.trimEnd()"
+            matTooltip="View {{ listDetails.name }}{{ suffix.trimEnd() }}"
+            href="{{ viewUrl.url }}"
+            ><mat-icon>visibility</mat-icon>View{{ suffix.trimEnd() }}</a
+          >
+          <a
+            mat-raised-button
+            [attr.aria-label]="
+              'Subscribe to ' +
+              listDetails.name +
+              suffix.trimEnd() +
+              ' with a browser extension supporting the &quot;abp:&quot; protocol (e.g. uBlock Origin, Adblock Plus).'
+            "
+            matTooltip="Subscribe to {{ listDetails.name }}{{
+              suffix.trimEnd()
+            }} with a browser extension supporting the &quot;abp:&quot; protocol (e.g. uBlock Origin, Adblock Plus)."
+            href="{{
+              'abp:subscribe?location=' +
+                (viewUrl.url | encodeURIComponent) +
+                '&title=' +
+                (listDetails.name | encodeURIComponent)
+            }}"
+            ><mat-icon>playlist_add</mat-icon>Subscribe{{ suffix.trimEnd() }}</a
+          >
+        </ng-container>
+      </ng-container>
+    </div>
   </mat-card-content>
   <!-- <mat-card-actions> </mat-card-actions> -->
 </mat-card>

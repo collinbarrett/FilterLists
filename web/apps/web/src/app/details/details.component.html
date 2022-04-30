@@ -16,9 +16,10 @@
         gdColumns.sm="1fr"
         gdGap="8px"
       >
-        <filterlists-links
-          [filterListDetails]="listDetails"
-        ></filterlists-links>
+        <filterlists-links [listDetails]="listDetails"></filterlists-links>
+        <filterlists-links-info
+          [listDetails]="listDetails"
+        ></filterlists-links-info>
         <ng-container *ngFor="let maintainer of listDetails.maintainers">
           <filterlists-maintainer-details
             [maintainer]="maintainer"
