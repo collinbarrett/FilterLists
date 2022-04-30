@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { GridModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -29,7 +29,7 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    FlexLayoutModule,
+    GridModule,
     MatButtonModule,
     MatCardModule,
     MatIconModule,

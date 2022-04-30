@@ -9,7 +9,13 @@
     <ng-container *ngIf="listDetails$ | async as listDetails">
       <h2>{{ listDetails.name }}</h2>
       <p>{{ listDetails.description }}</p>
-      <div fxLayoutAlign="space-evenly">
+      <div
+        gdLayout
+        gdColumns.gt-md="repeat(3, 1fr)"
+        gdColumns.gt-sm="repeat(2, 1fr)"
+        gdColumns.sm="1fr"
+        gdGap="8px"
+      >
         <filterlists-links
           [filterListDetails]="listDetails"
         ></filterlists-links>

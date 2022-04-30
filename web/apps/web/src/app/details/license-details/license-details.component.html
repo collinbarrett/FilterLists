@@ -1,4 +1,4 @@
-<mat-card *ngIf="license" class="mat-elevation-z4">
+<mat-card *ngIf="license" class="mat-elevation-z2">
   <mat-card-header>
     <mat-card-title>{{ license.name }}</mat-card-title>
     <mat-card-subtitle>License</mat-card-subtitle>
@@ -38,7 +38,7 @@
       Permits Commercial Use
     </div>
   </mat-card-content>
-  <mat-card-actions>
+  <mat-card-actions gdLayout gdColumns="repeat(3, 1fr)">
     <a
       *ngIf="license.url"
       mat-stroked-button

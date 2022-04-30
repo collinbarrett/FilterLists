@@ -1,9 +1,9 @@
-<mat-card *ngIf="filterListDetails" class="mat-elevation-z4">
+<mat-card *ngIf="filterListDetails" class="mat-elevation-z2">
   <mat-card-header>
     <mat-card-title>Links</mat-card-title>
     <!-- <mat-card-subtitle></mat-card-subtitle> -->
   </mat-card-header>
-  <mat-card-content fxLayout="column" fxLayoutGap="8">
+  <mat-card-content gdLayout gdColumns="repeat(2, 1fr)" gdGap="8px">
     <a
       *ngIf="filterListDetails.homeUrl"
       mat-stroked-button
