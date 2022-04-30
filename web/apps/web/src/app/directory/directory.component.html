@@ -4,7 +4,7 @@
       <th mat-header-cell *matHeaderCellDef>Details</th>
       <td mat-cell *matCellDef="let row">
         <button
-          mat-stroked-button
+          mat-raised-button
           attr.aria-label="Open {{ row.name }} details"
           [routerLink]="['/lists', row.id]"
         >

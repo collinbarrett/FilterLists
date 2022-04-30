@@ -35,7 +35,7 @@
   <mat-card-actions gdLayout gdColumns="repeat(3, 1fr)">
     <a
       *ngIf="license.url"
-      mat-stroked-button
+      mat-raised-button
       [attr.aria-label]="'Visit {{license.name}}\'s homepage'"
       matTooltip="Visit {{ license.name }}'s homepage"
       href="{{ license.url }}"

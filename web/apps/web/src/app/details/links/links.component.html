@@ -6,7 +6,7 @@
   <mat-card-content gdLayout gdColumns="repeat(2, 1fr)" gdGap="8px">
     <a
       *ngIf="filterListDetails.homeUrl"
-      mat-stroked-button
+      mat-raised-button
       [attr.aria-label]="'Visit {{filterListDetails.name}}\'s homepage'"
       matTooltip="Visit {{ filterListDetails.name }}'s homepage"
       href="{{ filterListDetails.homeUrl }}"
@@ -14,7 +14,7 @@
     >
     <a
       *ngIf="filterListDetails.onionUrl"
-      mat-stroked-button
+      mat-raised-button
       [attr.aria-label]="'Visit {{filterListDetails.name}}\'s Onion (Tor) page'"
       matTooltip="Visit {{ filterListDetails.name }}'s Onion (Tor) page"
       href="{{ filterListDetails.onionUrl }}"
@@ -23,7 +23,7 @@
     >
     <a
       *ngIf="filterListDetails.policyUrl"
-      mat-stroked-button
+      mat-raised-button
       [attr.aria-label]="'Visit {{filterListDetails.name}}\'s policy page'"
       matTooltip="Visit {{ filterListDetails.name }}'s policy page"
       href="{{ filterListDetails.policyUrl }}"
@@ -31,7 +31,7 @@
     >
     <a
       *ngIf="filterListDetails.submissionUrl"
-      mat-stroked-button
+      mat-raised-button
       [attr.aria-label]="'Visit {{filterListDetails.name}}\'s submissions page'"
       matTooltip="Visit {{ filterListDetails.name }}'s submissions page"
       href="{{ filterListDetails.submissionUrl }}"
@@ -39,7 +39,7 @@
     >
     <a
       *ngIf="filterListDetails.issuesUrl"
-      mat-stroked-button
+      mat-raised-button
       [attr.aria-label]="
         'Visit {{filterListDetails.name}}\'s GitHub Issues page'
       "
@@ -50,7 +50,7 @@
     >
     <a
       *ngIf="filterListDetails.forumUrl"
-      mat-stroked-button
+      mat-raised-button
       [attr.aria-label]="'Visit {{filterListDetails.name}}\'s forum'"
       matTooltip="Visit {{ filterListDetails.name }}'s forum"
       href="{{ filterListDetails.forumUrl }}"
@@ -58,7 +58,7 @@
     >
     <a
       *ngIf="filterListDetails.chatUrl"
-      mat-stroked-button
+      mat-raised-button
       [attr.aria-label]="'Visit {{filterListDetails.name}}\'s chat room'"
       matTooltip="Visit {{ filterListDetails.name }}'s chat room"
       href="{{ filterListDetails.chatUrl }}"
@@ -66,7 +66,7 @@
     >
     <a
       *ngIf="filterListDetails.emailAddress"
-      mat-stroked-button
+      mat-raised-button
       [attr.aria-label]="'Email {{filterListDetails.name}}'"
       matTooltip="Email {{ filterListDetails.name }}"
       href="mailto:{{ filterListDetails.emailAddress }}"
@@ -74,7 +74,7 @@
     >
     <a
       *ngIf="filterListDetails.donateUrl"
-      mat-stroked-button
+      mat-raised-button
       [attr.aria-label]="'Donate to {{filterListDetails.name}}'"
       matTooltip="Donate to {{ filterListDetails.name }}"
       href="{{ filterListDetails.donateUrl }}"

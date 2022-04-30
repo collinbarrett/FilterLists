@@ -9,7 +9,7 @@
   <mat-card-actions gdLayout gdColumns="repeat(3, 1fr)">
     <a
       *ngIf="maintainer.url"
-      mat-stroked-button
+      mat-raised-button
       [attr.aria-label]="'Visit {{maintainer.name}}\'s homepage'"
       matTooltip="Visit {{ maintainer.name }}'s homepage"
       href="{{ maintainer.url }}"
@@ -17,7 +17,7 @@
     >
     <a
       *ngIf="maintainer.twitterHandle"
-      mat-stroked-button
+      mat-raised-button
       [attr.aria-label]="'Visit {{maintainer.name}}\'s Twitter profile'"
       matTooltip="Visit {{ maintainer.name }}'s Twitter profile"
       href="https://twitter.com/{{ maintainer.twitterHandle }}"
@@ -31,7 +31,7 @@
     >
     <a
       *ngIf="maintainer.emailAddress"
-      mat-stroked-button
+      mat-raised-button
       [attr.aria-label]="'Email {{maintainer.name}}'"
       matTooltip="Email {{ maintainer.name }}"
       href="mailto:{{ maintainer.emailAddress }}"
