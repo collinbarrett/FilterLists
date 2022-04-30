@@ -1,8 +1,9 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FilterListSummary } from './filter-list-summary';
+import { Injectable } from '@angular/core';
+
 import { environment } from '../../environments/environment';
 import { FilterListDetails } from './filter-list-details';
+import { FilterListSummary } from './filter-list-summary';
 
 @Injectable({
   providedIn: 'root',

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+
 import { License } from '../../services/filter-list-details';
 
 @Component({

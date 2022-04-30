@@ -49,6 +49,7 @@
     "eslint": "~8.14.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "jest": "27.2.3",
     "jest-preset-angular": "11.1.2",
     "nx": "14.0.5",
