@@ -6,34 +6,28 @@
   <mat-card-content>
     <div>
       <ng-container *ngIf="license.permitsModification; else elseBlock"
-        ><mat-icon color="primary">check_box</mat-icon></ng-container
+        ><mat-icon>check_box</mat-icon></ng-container
       >
       <ng-template #elseBlock
-        ><mat-icon color="primary"
-          >check_box_outline_blank</mat-icon
-        ></ng-template
+        ><mat-icon>check_box_outline_blank</mat-icon></ng-template
       >
       Permits Modification
     </div>
     <div>
       <ng-container *ngIf="license.permitsDistribution; else elseBlock"
-        ><mat-icon color="primary">check_box</mat-icon></ng-container
+        ><mat-icon>check_box</mat-icon></ng-container
       >
       <ng-template #elseBlock
-        ><mat-icon color="primary"
-          >check_box_outline_blank</mat-icon
-        ></ng-template
+        ><mat-icon>check_box_outline_blank</mat-icon></ng-template
       >
       Permits Distribution
     </div>
     <div>
       <ng-container *ngIf="license.permitsCommercialUse; else elseBlock"
-        ><mat-icon color="primary">check_box</mat-icon></ng-container
+        ><mat-icon>check_box</mat-icon></ng-container
       >
       <ng-template #elseBlock
-        ><mat-icon color="primary"
-          >check_box_outline_blank</mat-icon
-        ></ng-template
+        ><mat-icon>check_box_outline_blank</mat-icon></ng-template
       >
       Permits Commercial Use
     </div>
@@ -42,7 +36,6 @@
     <a
       *ngIf="license.url"
       mat-stroked-button
-      color="primary"
       [attr.aria-label]="'Visit {{license.name}}\'s homepage'"
       matTooltip="Visit {{ license.name }}'s homepage"
       href="{{ license.url }}"
