@@ -15,7 +15,7 @@ import { LanguagesComponent } from './languages/languages.component';
 import { LicenseDetailsComponent } from './license-details/license-details.component';
 import { LinksComponent } from './links/links.component';
 import { LinksInfoComponent } from './links-info/links-info.component';
-import { MaintainerDetailsComponent } from './maintainer-details/maintainer-details.component';
+import { MaintainerComponent } from './maintainer/maintainer.component';
 import { TagsComponent } from './tags/tags.component';
 
 const routes: Routes = [
@@ -33,7 +33,7 @@ const routes: Routes = [
     LicenseDetailsComponent,
     LinksComponent,
     LinksInfoComponent,
-    MaintainerDetailsComponent,
+    MaintainerComponent,
     TagsComponent,
   ],
   imports: [
