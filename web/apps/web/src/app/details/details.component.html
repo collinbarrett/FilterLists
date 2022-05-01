@@ -24,13 +24,13 @@
           [listDetails]="listDetails"
         ></filterlists-links-info>
         <ng-container *ngFor="let maintainer of listDetails.maintainers">
-          <filterlists-maintainer-details
+          <filterlists-maintainer
             [maintainer]="maintainer"
-          ></filterlists-maintainer-details>
+          ></filterlists-maintainer>
         </ng-container>
-        <filterlists-license-details
+        <filterlists-license
           [license]="listDetails.license"
-        ></filterlists-license-details>
+        ></filterlists-license>
       </div>
     </ng-container>
   </mat-sidenav>

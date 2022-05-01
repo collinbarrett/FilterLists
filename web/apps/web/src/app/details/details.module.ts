@@ -12,7 +12,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DetailsComponent } from './details.component';
 import { HeaderComponent } from './header/header.component';
 import { LanguagesComponent } from './languages/languages.component';
-import { LicenseDetailsComponent } from './license-details/license-details.component';
+import { LicenseComponent } from './license/license.component';
 import { LinksComponent } from './links/links.component';
 import { LinksInfoComponent } from './links-info/links-info.component';
 import { MaintainerComponent } from './maintainer/maintainer.component';
@@ -30,7 +30,7 @@ const routes: Routes = [
     DetailsComponent,
     HeaderComponent,
     LanguagesComponent,
-    LicenseDetailsComponent,
+    LicenseComponent,
     LinksComponent,
     LinksInfoComponent,
     MaintainerComponent,
