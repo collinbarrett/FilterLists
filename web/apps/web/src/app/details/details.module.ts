@@ -16,6 +16,7 @@ import { LicenseComponent } from './license/license.component';
 import { LinksComponent } from './links/links.component';
 import { LinksInfoComponent } from './links-info/links-info.component';
 import { MaintainerComponent } from './maintainer/maintainer.component';
+import { SyntaxesComponent } from './syntaxes/syntaxes.component';
 import { TagsComponent } from './tags/tags.component';
 
 const routes: Routes = [
@@ -34,6 +35,7 @@ const routes: Routes = [
     LinksComponent,
     LinksInfoComponent,
     MaintainerComponent,
+    SyntaxesComponent,
     TagsComponent,
   ],
   imports: [
