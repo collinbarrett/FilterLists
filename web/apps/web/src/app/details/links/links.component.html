@@ -5,7 +5,7 @@
   </mat-card-header>
   <mat-card-content>
     <div gdLayout gdColumns="repeat(2, 1fr)" gdGap="8px">
-      <ng-container *ngFor="let viewUrl of listDetails.viewUrls">
+      <ng-container *ngFor="let viewUrl of listDetails.viewUrls; let i = index">
         <ng-container
           *ngIf="
             (viewUrl.segmentNumber > 0
@@ -34,12 +34,7 @@
             matTooltip="Subscribe to {{ listDetails.name }}{{
               suffix.trimEnd()
             }} with a browser extension supporting the &quot;abp:&quot; protocol (e.g. uBlock Origin, Adblock Plus)."
-            href="{{
-              'abp:subscribe?location=' +
-                (viewUrl.url | encodeURIComponent) +
-                '&title=' +
-                (listDetails.name | encodeURIComponent)
-            }}"
+            [href]="getSubscribeUrl(i)"
             ><mat-icon>playlist_add</mat-icon>Subscribe{{ suffix.trimEnd() }}</a
           >
         </ng-container>

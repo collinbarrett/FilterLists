@@ -16,7 +16,6 @@ import { LicenseDetailsComponent } from './license-details/license-details.compo
 import { LinksComponent } from './links/links.component';
 import { LinksInfoComponent } from './links-info/links-info.component';
 import { MaintainerDetailsComponent } from './maintainer-details/maintainer-details.component';
-import { EncodeURIComponentPipe } from './pipes/encodeURIComponent.pipe';
 import { TagsComponent } from './tags/tags.component';
 
 const routes: Routes = [
@@ -29,7 +28,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     DetailsComponent,
-    EncodeURIComponentPipe,
     HeaderComponent,
     LanguagesComponent,
     LicenseDetailsComponent,
