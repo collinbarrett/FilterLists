@@ -7,8 +7,6 @@
     position="end"
   >
     <ng-container *ngIf="listDetails$ | async as listDetails">
-      <h2>{{ listDetails.name }}</h2>
-      <p>{{ listDetails.description }}</p>
       <div
         gdLayout
         gdColumns.gt-md="repeat(3, 1fr)"
@@ -16,6 +14,7 @@
         gdColumns.sm="1fr"
         gdGap="8px"
       >
+        <filterlists-header [listDetails]="listDetails"></filterlists-header>
         <filterlists-links [listDetails]="listDetails"></filterlists-links>
         <filterlists-links-info
           [listDetails]="listDetails"

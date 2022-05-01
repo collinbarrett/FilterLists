@@ -9,6 +9,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DetailsComponent } from './details.component';
+import { HeaderComponent } from './header/header.component';
 import { LicenseDetailsComponent } from './license-details/license-details.component';
 import { LinksComponent } from './links/links.component';
 import { LinksInfoComponent } from './links-info/links-info.component';
@@ -26,6 +27,7 @@ const routes: Routes = [
   declarations: [
     DetailsComponent,
     EncodeURIComponentPipe,
+    HeaderComponent,
     LicenseDetailsComponent,
     LinksComponent,
     LinksInfoComponent,
