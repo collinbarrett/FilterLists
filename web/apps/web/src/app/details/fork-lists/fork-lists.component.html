@@ -4,14 +4,15 @@
     <!-- <mat-card-subtitle></mat-card-subtitle> -->
   </mat-card-header>
   <mat-card-content>
-    <mat-list>
+    <mat-nav-list>
       <mat-list-item *ngFor="let fork of forkLists">
-        <mat-icon mat-list-icon style="transform: rotate(180deg)"
-          >fork_left</mat-icon
+        <a matLine [routerLink]="['/lists', fork.id]">
+          <mat-icon mat-list-icon style="transform: rotate(180deg)"
+            >fork_left</mat-icon
+          >{{ fork.name }}</a
         >
-        <div mat-line>{{ fork.name }}</div>
       </mat-list-item>
-    </mat-list>
+    </mat-nav-list>
   </mat-card-content>
   <!-- <mat-card-actions> </mat-card-actions> -->
 </mat-card>
