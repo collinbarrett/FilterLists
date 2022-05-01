@@ -17,6 +17,7 @@ import { LinksComponent } from './links/links.component';
 import { LinksInfoComponent } from './links-info/links-info.component';
 import { MaintainerDetailsComponent } from './maintainer-details/maintainer-details.component';
 import { EncodeURIComponentPipe } from './pipes/encodeURIComponent.pipe';
+import { TagsComponent } from './tags/tags.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,7 @@ const routes: Routes = [
     LinksComponent,
     LinksInfoComponent,
     MaintainerDetailsComponent,
+    TagsComponent,
   ],
   imports: [
     CommonModule,
