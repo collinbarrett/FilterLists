@@ -17,12 +17,12 @@ export interface FilterListDetails {
   software: Software[];
   syntaxes: Syntax[];
   tags: Tag[];
-  upstreamFilterListNames: RelatedFilterList[];
-  dorkFilterListNames: RelatedFilterList[];
-  includedInFilterListNames: RelatedFilterList[];
-  includesFilterListNames: RelatedFilterList[];
-  dependencyFilterListNames: RelatedFilterList[];
-  dependentFilterListNames: RelatedFilterList[];
+  upstreamFilterLists: RelatedFilterList[];
+  forkFilterLists: RelatedFilterList[];
+  includedInFilterLists: RelatedFilterList[];
+  includesFilterLists: RelatedFilterList[];
+  dependencyFilterLists: RelatedFilterList[];
+  dependentFilterLists: RelatedFilterList[];
 }
 
 export interface FilterListViewUrl {

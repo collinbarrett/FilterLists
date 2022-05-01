@@ -1,0 +1,17 @@
+<mat-card *ngIf="forkLists?.length" class="mat-elevation-z2">
+  <mat-card-header>
+    <mat-card-title>Fork FilterLists</mat-card-title>
+    <!-- <mat-card-subtitle></mat-card-subtitle> -->
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let fork of forkLists">
+        <mat-icon mat-list-icon style="transform: rotate(180deg)"
+          >fork_left</mat-icon
+        >
+        <div mat-line>{{ fork.name }}</div>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+  <!-- <mat-card-actions> </mat-card-actions> -->
+</mat-card>

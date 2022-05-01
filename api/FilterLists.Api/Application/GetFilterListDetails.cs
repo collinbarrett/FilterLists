@@ -127,7 +127,7 @@ public static class GetFilterListDetails
                             };
                         })
                         .OrderBy(t => t.Name),
-                    UpstreamFilterListNames = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.UpstreamFilterListId) + '_'))
+                    UpstreamFilterLists = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.UpstreamFilterListId) + '_'))
                         .Select((_, fi) =>
                         {
                             var indexSuffix = fi.ToIndexSuffix();
@@ -138,7 +138,7 @@ public static class GetFilterListDetails
                             };
                         })
                         .OrderBy(ufl => ufl.Name),
-                    ForkFilterListNames = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.ForkFilterListId) + '_'))
+                    ForkFilterLists = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.ForkFilterListId) + '_'))
                         .Select((_, fi) =>
                         {
                             var indexSuffix = fi.ToIndexSuffix();
@@ -149,7 +149,7 @@ public static class GetFilterListDetails
                             };
                         })
                         .OrderBy(ffl => ffl.Name),
-                    IncludedInFilterListNames = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.IncludedInFilterListId) + '_'))
+                    IncludedInFilterLists = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.IncludedInFilterListId) + '_'))
                         .Select((_, mi) =>
                         {
                             var indexSuffix = mi.ToIndexSuffix();
@@ -160,7 +160,7 @@ public static class GetFilterListDetails
                             };
                         })
                         .OrderBy(iifl => iifl.Name),
-                    IncludesFilterListNames = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.IncludesFilterListId) + '_'))
+                    IncludesFilterLists = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.IncludesFilterListId) + '_'))
                         .Select((_, mi) =>
                         {
                             var indexSuffix = mi.ToIndexSuffix();
@@ -171,7 +171,7 @@ public static class GetFilterListDetails
                             };
                         })
                         .OrderBy(ifl => ifl.Name),
-                    DependencyFilterListNames = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.DependencyFilterListId) + '_'))
+                    DependencyFilterLists = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.DependencyFilterListId) + '_'))
                         .Select((_, di) =>
                         {
                             var indexSuffix = di.ToIndexSuffix();
@@ -182,7 +182,7 @@ public static class GetFilterListDetails
                             };
                         })
                         .OrderBy(dfl => dfl.Name),
-                    DependentFilterListNames = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.DependentFilterListId) + '_'))
+                    DependentFilterLists = te.Where(kv => kv.Key.StartsWith(nameof(IFilterListTableEntity.DependentFilterListId) + '_'))
                         .Select((_, di) =>
                         {
                             var indexSuffix = di.ToIndexSuffix();
@@ -217,12 +217,12 @@ public static class GetFilterListDetails
         public IEnumerable<Software> Software { get; init; } = new HashSet<Software>();
         public IEnumerable<Syntax> Syntaxes { get; init; } = new HashSet<Syntax>();
         public IEnumerable<Tag> Tags { get; init; } = new HashSet<Tag>();
-        public IEnumerable<RelatedFilterList> UpstreamFilterListNames { get; init; } = new HashSet<RelatedFilterList>();
-        public IEnumerable<RelatedFilterList> ForkFilterListNames { get; init; } = new HashSet<RelatedFilterList>();
-        public IEnumerable<RelatedFilterList> IncludedInFilterListNames { get; init; } = new HashSet<RelatedFilterList>();
-        public IEnumerable<RelatedFilterList> IncludesFilterListNames { get; init; } = new HashSet<RelatedFilterList>();
-        public IEnumerable<RelatedFilterList> DependencyFilterListNames { get; init; } = new HashSet<RelatedFilterList>();
-        public IEnumerable<RelatedFilterList> DependentFilterListNames { get; init; } = new HashSet<RelatedFilterList>();
+        public IEnumerable<RelatedFilterList> UpstreamFilterLists { get; init; } = new HashSet<RelatedFilterList>();
+        public IEnumerable<RelatedFilterList> ForkFilterLists { get; init; } = new HashSet<RelatedFilterList>();
+        public IEnumerable<RelatedFilterList> IncludedInFilterLists { get; init; } = new HashSet<RelatedFilterList>();
+        public IEnumerable<RelatedFilterList> IncludesFilterLists { get; init; } = new HashSet<RelatedFilterList>();
+        public IEnumerable<RelatedFilterList> DependencyFilterLists { get; init; } = new HashSet<RelatedFilterList>();
+        public IEnumerable<RelatedFilterList> DependentFilterLists { get; init; } = new HashSet<RelatedFilterList>();
     }
 
     public record FilterListViewUrl

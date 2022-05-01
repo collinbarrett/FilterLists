@@ -5,11 +5,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DetailsComponent } from './details.component';
+import { ForkListsComponent } from './fork-lists/fork-lists.component';
 import { HeaderComponent } from './header/header.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { LicenseComponent } from './license/license.component';
@@ -18,6 +20,7 @@ import { LinksInfoComponent } from './links-info/links-info.component';
 import { MaintainerComponent } from './maintainer/maintainer.component';
 import { SyntaxesComponent } from './syntaxes/syntaxes.component';
 import { TagsComponent } from './tags/tags.component';
+import { UpstreamListsComponent } from './upstream-lists/upstream-lists.component';
 
 const routes: Routes = [
   {
@@ -29,6 +32,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     DetailsComponent,
+    ForkListsComponent,
     HeaderComponent,
     LanguagesComponent,
     LicenseComponent,
@@ -37,6 +41,7 @@ const routes: Routes = [
     MaintainerComponent,
     SyntaxesComponent,
     TagsComponent,
+    UpstreamListsComponent,
   ],
   imports: [
     CommonModule,
@@ -45,6 +50,7 @@ const routes: Routes = [
     MatCardModule,
     MatChipsModule,
     MatIconModule,
+    MatListModule,
     MatSidenavModule,
     MatTooltipModule,
     RouterModule.forChild(routes),
