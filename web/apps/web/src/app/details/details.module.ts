@@ -10,6 +10,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterModule, Routes } from '@angular/router';
 
+import { DependencyListsComponent } from './dependency-lists/dependency-lists.component';
+import { DependentListsComponent } from './dependent-lists/dependent-lists.component';
 import { DetailsComponent } from './details.component';
 import { ForkListsComponent } from './fork-lists/fork-lists.component';
 import { HeaderComponent } from './header/header.component';
@@ -34,6 +36,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     DetailsComponent,
+    DependencyListsComponent,
+    DependentListsComponent,
     ForkListsComponent,
     HeaderComponent,
     IncludedInListsComponent,
