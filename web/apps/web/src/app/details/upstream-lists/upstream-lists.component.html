@@ -1,13 +1,18 @@
-<mat-card *ngIf="upstreamLists?.length" class="mat-elevation-z2">
+<mat-card *ngIf="upstreamLists?.length as length" class="mat-elevation-z2">
   <mat-card-header>
-    <mat-card-title>Upstream FilterLists</mat-card-title>
-    <!-- <mat-card-subtitle></mat-card-subtitle> -->
+    <mat-card-title>Upstream{{ length > 1 ? 's' : '' }}</mat-card-title>
+    <mat-card-subtitle
+      >FilterList{{ length > 1 ? 's' : '' }} from which this list was
+      forked</mat-card-subtitle
+    >
   </mat-card-header>
   <mat-card-content>
     <mat-nav-list>
       <mat-list-item *ngFor="let upstream of upstreamLists">
         <a matLine [routerLink]="['/lists', upstream.id]">
-          <mat-icon mat-list-icon>fork_right</mat-icon>{{ upstream.name }}</a
+          <mat-icon mat-list-icon style="transform: rotate(180deg)"
+            >fork_right</mat-icon
+          >{{ upstream.name }}</a
         >
       </mat-list-item>
     </mat-nav-list>
