@@ -13,6 +13,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { DetailsComponent } from './details.component';
 import { ForkListsComponent } from './fork-lists/fork-lists.component';
 import { HeaderComponent } from './header/header.component';
+import { IncludedInListsComponent } from './included-in-lists/included-in-lists.component';
+import { IncludesListsComponent } from './includes-lists/includes-lists.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { LicenseComponent } from './license/license.component';
 import { LinksComponent } from './links/links.component';
@@ -34,6 +36,8 @@ const routes: Routes = [
     DetailsComponent,
     ForkListsComponent,
     HeaderComponent,
+    IncludedInListsComponent,
+    IncludesListsComponent,
     LanguagesComponent,
     LicenseComponent,
     LinksComponent,
