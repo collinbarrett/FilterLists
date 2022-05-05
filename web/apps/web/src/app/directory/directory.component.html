@@ -26,11 +26,16 @@
     <ng-container matColumnDef="software">
       <th mat-header-cell *matHeaderCellDef>Software</th>
       <td mat-cell *matCellDef="let element">
-        <mat-chip-list>
-          <span *ngFor="let software of element.software">
-            <mat-chip>{{ software.name }} </mat-chip>
-          </span>
-        </mat-chip-list>
+        <span *ngFor="let software of element.software">
+          <img
+            src="assets/software-icons/{{
+              software.id.toString().padStart(2, '0')
+            }}.png"
+            alt="{{ software.name }} icon"
+            matTooltip="{{ software.name }}"
+            height="20"
+          />
+        </span>
       </td>
     </ng-container>
 
