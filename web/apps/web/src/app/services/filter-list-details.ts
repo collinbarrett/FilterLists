@@ -56,13 +56,14 @@ export interface Maintainer {
 export interface Software {
   id: number;
   name: string;
+  // TODO: where to display add'l software details in UI?
 }
 
 export interface Syntax {
   id: number;
   name: string;
   description: string;
-  url: string;
+  url: string; // TODO: where to display in UI?
 }
 
 export interface Tag {
