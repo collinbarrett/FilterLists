@@ -13605,12 +13605,12 @@
     "name": "Yuki's uBlock Japanese filters - Annoyances"
   },
   {
-    "description": "Enhance anti-scam capability of 280blocker adblock filter by utilizing advanced capability of AdGuard/uBlock Origin.",
+    "description": "This list fixes known problems in AdGuard DNS filter mostly for Japanese user.",
     "homeUrl": "https://github.com/Yuki2718/adblock",
     "id": 2095,
     "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 28,
-    "name": "Anti-scam enhancer for 280blocker adblock filter"
+    "licenseId": 8,
+    "name": "AdGuard DNS filter Unbreaker for Japanese"
   },
   {
     "description": "Removes blogroll (feed-style mutual links) on Japanese sites. Included in Yuki's uBlock Japanese filters - Annoyances",
