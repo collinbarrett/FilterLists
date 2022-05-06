@@ -35,7 +35,7 @@
     "@angular-eslint/eslint-plugin-template": "~13.2.1",
     "@angular-eslint/template-parser": "~13.2.1",
     "@angular/cli": "~13.3.4",
-    "@angular/compiler-cli": "~13.3.5",
+    "@angular/compiler-cli": "~13.3.6",
     "@angular/language-service": "~13.3.5",
     "@nrwl/cli": "14.0.5",
     "@nrwl/cypress": "14.1.1",
