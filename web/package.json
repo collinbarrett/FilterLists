@@ -21,7 +21,7 @@
     "@angular/material": "^13.3.6",
     "@angular/platform-browser": "~13.3.6",
     "@angular/platform-browser-dynamic": "~13.3.6",
-    "@angular/router": "~13.3.6",
+    "@angular/router": "~13.3.8",
     "@fontsource/material-icons": "^4.5.4",
     "@fontsource/roboto": "^4.5.5",
     "@nrwl/angular": "14.1.4",
