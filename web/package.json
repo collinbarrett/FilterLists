@@ -39,7 +39,7 @@
     "@angular/language-service": "~13.3.6",
     "@nrwl/cli": "14.1.5",
     "@nrwl/cypress": "14.1.5",
-    "@nrwl/eslint-plugin-nx": "14.1.4",
+    "@nrwl/eslint-plugin-nx": "14.1.5",
     "@nrwl/jest": "14.1.5",
     "@nrwl/linter": "14.1.5",
     "@nrwl/nx-cloud": "latest",
