@@ -17449,5 +17449,47 @@
     "id": 2590,
     "licenseId": 5,
     "name": "Bank of Lithuania Illegal websites"
-  }
+  },
+    {
+        "description": "Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap.",
+        "homeUrl": "https://github.com/hagezi/dns-blocklists",
+        "id": 2591,
+        "licenseId": 11,
+        "name": "HaGeZi's Multi DNS Blocklist (Hosts)"
+    },
+    {
+        "description": "Increases security significantly! Blocks Malware, Crypto, Coin, Spam, Scam and Phishing.",
+        "homeUrl": "https://github.com/hagezi/dns-blocklists",
+        "id": 2592,
+        "licenseId": 11,
+        "name": "HaGeZi's Threat Intelligence Feeds DNS Blocklist (Hosts)"
+    },
+    {
+        "description": "Protects against internet scams, traps & fakes! Blocks fake stores, -news, -science, -streaming, rip-offs, cost traps and co.",
+        "homeUrl": "https://github.com/hagezi/dns-blocklists",
+        "id": 2593,
+        "licenseId": 11,
+        "name": "HaGeZi's Fake DNS Blocklist (Hosts)"
+    },
+    {
+        "description": "Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap.",
+        "homeUrl": "https://github.com/hagezi/dns-blocklists",
+        "id": 2594,
+        "licenseId": 11,
+        "name": "HaGeZi's Multi DNS Blocklist (AdBlock/AdGuard)"
+    },
+    {
+        "description": "Increases security significantly! Blocks Malware, Crypto, Coin, Spam, Scam and Phishing.",
+        "homeUrl": "https://github.com/hagezi/dns-blocklists",
+        "id": 2595,
+        "licenseId": 11,
+        "name": "HaGeZi's Threat Intelligence Feeds DNS Blocklist (AdBlock/AdGuard)"
+    },
+    {
+        "description": "Protects against internet scams, traps & fakes! Blocks fake stores, -news, -science, -streaming, rip-offs, cost traps and co.",
+        "homeUrl": "https://github.com/hagezi/dns-blocklists",
+        "id": 2596,
+        "licenseId": 11,
+        "name": "HaGeZi's Fake DNS Blocklist (AdBlock/AdGuard)"
+    }
 ]
