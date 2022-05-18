@@ -17117,11 +17117,10 @@
     "name": "Hosts for DNS Level Blockers - Adult"
   },
   {
-    "emailAddress": "zelo72@dismail.de",
-    "homeUrl": "https://github.com/Zelo72/adguard",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
     "id": 2550,
     "licenseId": 11,
-    "name": "Zelo72's Referral Whitelist"
+    "name": "HaGeZi's Referral Whitelist"
   },
   {
     "homeUrl": "https://github.com/stamparm/maltrail",
