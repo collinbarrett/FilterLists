@@ -16193,40 +16193,40 @@
     "primariness": 1,
     "url": "https://www.lb.lt/en/illegalwww?export=csv"
   },
-	{
-		"filterListId": 2591,
-		"id": 2856,
-		"primariness": 1,
-		"url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/multi.txt"
-	},
-	{
-		"filterListId": 2592,
-		"id": 2857,
-		"primariness": 1,
-		"url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/tif.txt"
-	},
-	{
-		"filterListId": 2593,
-		"id": 2858,
-		"primariness": 1,
-		"url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/fake.txt"
-	},
-	{
-		"filterListId": 2594,
-		"id": 2859,
-		"primariness": 1,
-		"url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt"
-	},
-	{
-		"filterListId": 2595,
-		"id": 2860,
-		"primariness": 1,
-		"url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt"
-	},
-	{
-		"filterListId": 2596,
-		"id": 2861,
-		"primariness": 1,
-		"url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt"
-	}
+  {
+    "filterListId": 2591,
+    "id": 2856,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/multi.txt"
+  },
+  {
+    "filterListId": 2592,
+    "id": 2857,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/tif.txt"
+  },
+  {
+    "filterListId": 2593,
+    "id": 2858,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/fake.txt"
+  },
+  {
+    "filterListId": 2594,
+    "id": 2859,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt"
+  },
+  {
+    "filterListId": 2595,
+    "id": 2860,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt"
+  },
+  {
+    "filterListId": 2596,
+    "id": 2861,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt"
+  }
 ]
