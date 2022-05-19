@@ -17117,6 +17117,7 @@
     "name": "Hosts for DNS Level Blockers - Adult"
   },
   {
+    "description": "Allow affiliate and tracking domains that appear frequently on offer web pages, in emails, or in search results. These are usually accessed only after manually clicking a link.",
     "homeUrl": "https://github.com/hagezi/dns-blocklists",
     "id": 2550,
     "licenseId": 11,
