@@ -16228,5 +16228,23 @@
     "id": 2861,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt"
+  },
+  {
+    "filterListId": 2597,
+    "id": 2862,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/multi.txt"
+  },
+  {
+    "filterListId": 2598,
+    "id": 2863,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/tif.txt"
+  },
+  {
+    "filterListId": 2599,
+    "id": 2864,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/fake.txt"
   }
 ]

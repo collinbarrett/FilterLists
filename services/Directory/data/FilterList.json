@@ -17117,6 +17117,7 @@
     "name": "Hosts for DNS Level Blockers - Adult"
   },
   {
+    "description": "Allow affiliate and tracking domains that appear frequently on offer web pages, in emails, or in search results. These are usually accessed only after manually clicking a link.",
     "homeUrl": "https://github.com/hagezi/dns-blocklists",
     "id": 2550,
     "licenseId": 11,
@@ -17491,5 +17492,26 @@
     "id": 2596,
     "licenseId": 11,
     "name": "HaGeZi's Fake DNS Blocklist (AdBlock/AdGuard)"
+  },
+  {
+    "description": "Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap.",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2597,
+    "licenseId": 11,
+    "name": "HaGeZi's Multi DNS Blocklist (Domains)"
+  },
+  {
+    "description": "Increases security significantly! Blocks Malware, Crypto, Coin, Spam, Scam and Phishing.",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2598,
+    "licenseId": 11,
+    "name": "HaGeZi's Threat Intelligence Feeds DNS Blocklist (Domains)"
+  },
+  {
+    "description": "Protects against internet scams, traps & fakes! Blocks fake stores, -news, -science, -streaming, rip-offs, cost traps and co.",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2599,
+    "licenseId": 11,
+    "name": "HaGeZi's Fake DNS Blocklist (Domains)"
   }
 ]
