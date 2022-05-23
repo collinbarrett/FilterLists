@@ -2549,14 +2549,14 @@
     "name": "Polish Anti-Annoying Special Supplement"
   },
   {
-    "description": "Removes popular games and most bad games from the front pages of various webstores and app stores.",
+    "description": "Are you tired of bad \"games\" clogging up your electronic devices' app stores? Then this list is for you.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
     "id": 391,
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
-    "name": "I Hate Overpromoted Games"
+    "name": "Anti-'Asset Flip Shovelware' List"
   },
   {
     "description": "Intends to make it easier to browse various websites without being forced by various nag-windows to log in.",
@@ -14976,7 +14976,7 @@
     "id": 2286,
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
-    "name": "Dandelion Sprout's West Nordic filters for tidier websites (for Adblock Plus with ABP inclusion compliance)"
+    "name": "Dandelion Sprout's Nordic filters for tidier websites (for Adblock Plus with ABP inclusion compliance)"
   },
   {
     "description": "I have been of the ideas that humans should respect each other, help each other and base their activities on actual facts. Sadly, several hundred million internetizens out there did not catch that memo. This list aims to remove such disruptive, hateful and bewilderingly aggressive factors from certain crucial parts of the internet.",
@@ -15725,14 +15725,14 @@
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "id": 2377,
     "licenseId": 35,
-    "name": "Dandelion Sprout's West Nordic filters for tidier websites (for Adblock Plus with ABP inclusion compliance) + EasyList"
+    "name": "Dandelion Sprout's Nordic filters for tidier websites (for Adblock Plus with ABP inclusion compliance) + EasyList"
   },
   {
     "description": "A list combining Dandelion Sprout's West Nordic filters for tidier websites (for Adblock Plus with ABP inclusion compliance) and EasyList. Note that the Nordic section is significantly different from the standalone Nordic TPL list.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "id": 2378,
     "licenseId": 35,
-    "name": "Dandelion Sprout's West Nordic filters for tidier websites (for Adblock Plus with ABP inclusion compliance) + EasyList (TPL)"
+    "name": "Dandelion Sprout's Nordic filters for tidier websites (for Adblock Plus with ABP inclusion compliance) + EasyList (TPL)"
   },
   {
     "description": "A small hobby ads block dns project with doh, dot, dnscrypt support. Links that didn't fit in the Subscribe button URL texts, include 45.32.55.94 — 159.69.198.101 — 2a01:4f9:c010:43ce::1 — 2001:19f0:7001:3259:5400:02ff:fe71:0bc9 — 2a01:4f8:1c1c:6b4b::1, all of which also support TLS.",
@@ -17513,5 +17513,61 @@
     "id": 2599,
     "licenseId": 11,
     "name": "HaGeZi's Fake DNS Blocklist (Domains)"
+  },
+  {
+    "description": "List of malicious links.",
+    "homeUrl": "https://github.com/DevSpen/scam-links",
+    "id": 2600,
+    "licenseId": 11,
+    "name": "Scam Links - Links"
+  },
+  {
+    "description": "Some custom cosmetic filters to be used for ublock origin & adguard. This filter is mainly for mobile browsing specifically for heavily modified AMP pages. Beware that this filter is very aggressive filters which disables the following from an webpage and is very effective if used with uBlock Origin and AdGuard.",
+    "homeUrl": "https://github.com/blogmangit/Cosmetic-Filters",
+    "id": 2601,
+    "name": "blogmangit Cosmetic-Filters"
+  },
+  {
+    "description": "(JohnyP36:) My own updated version of EasyList Dutch. I made this filter because the EasyList Dutch filter isn't maintained often. And more important: EasyList doesn't allow anti-adblock rules.",
+    "donateUrl": "https://www.paypal.com/donate?hosted_button_id=8BBT5V55TGVXW",
+    "homeUrl": "https://github.com/JohnyP36/Personal-List",
+    "id": 2602,
+    "licenseId": 4,
+    "name": "EasyList Dutch (JohnyP36)"
+  },
+  {
+    "description": "Adblocker list (experimental) which allows you to read articles from (supported) sites that implement a paywall. For some sites it will log you out (or block you to log in); caused by removing cookies or blocking general paywall-scripts. Disclaimer: the list doesn't support as many sites as the extension/add-on though.",
+    "homeUrl": "https://gitlab.com/magnolia1234/bypass-paywalls-clean-filters",
+    "id": 2603,
+    "name": "Bypass Paywalls Clean filter"
+  },
+  {
+    "description": "A filter list for Adblock Plus for remove "Go to up" buttons",
+    "homeUrl": "https://github.com/thedoggybrad/anti-gotoup-buttons",
+    "id": 2604,
+    "licenseId": 17,
+    "name": "anti-gotoup-buttons"
+  },
+  {
+    "emailAddress": "info@lpt.lt",
+    "homeUrl": "https://lpt.lrv.lt/lt/nelegalios-losimu-veiklos-vykdytojai/istaigoms-ir-institucijoms",
+    "id": 2605,
+    "name": "List of illegal online gambling operators by the Government of the Republic of Lithuania (For institutions)"
+  },
+  {
+    "emailAddress": "info@lpt.lt",
+    "homeUrl": "https://lpt.lrv.lt/lt/nelegalios-losimu-veiklos-vykdytojai/nelegalios-losimu-veiklos-vykdytoju-sarasas",
+    "id": 2606,
+    "name": "List of illegal online gambling operators by the Government of the Republic of Lithuania"
+  },
+  {
+    "description": "This compilation include lists that are maintained as properly and proudly as those in the main Annoyances List, but which have unresolved matters about overblocking, unusual topics, or potential regional legal issues (primarily in the Middle East), that would've caused the AdGuard Filters Registry team to raise eyebrows until resolvements have been agreed on.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2607,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's Annoyances List 2nd Division Bachelors"
   }
 ]
