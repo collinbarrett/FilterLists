@@ -16246,5 +16246,59 @@
     "id": 2864,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/fake.txt"
+  },
+  {
+    "filterListId": 2600,
+    "id": 2865,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DevSpen/links/master/src/links.txt"
+  },
+  {
+    "filterListId": 2601,
+    "id": 2866,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/blogmangit/Cosmetic-Filters/main/cosmetic%20filters.txt"
+  },
+  {
+    "filterListId": 2602,
+    "id": 2867,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
+  },
+  {
+    "filterListId": 2603,
+    "id": 2868,
+    "primariness": 1,
+    "url": "https://gitlab.com/magnolia1234/bypass-paywalls-clean-filters/-/raw/main/bpc-paywall-filter.txt"
+  },
+  {
+    "filterListId": 2604,
+    "id": 2869,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/thedoggybrad/anti-gotoup-buttons/master/filter.txt"
+  },
+  {
+    "filterListId": 2605,
+    "id": 2870,
+    "primariness": 1,
+    "url": "https://lpt.lrv.lt/uploads/lpt/documents/files/institucijoms.txt"
+  },
+  {
+    "filterListId": 2606,
+    "id": 2871,
+    "primariness": 1,
+    "url": "https://lpt.lrv.lt/uploads/lpt/documents/files/neleg.txt"
+  },
+  {
+    "filterListId": 2607,
+    "id": 2872,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList-2ndDivision.txt"
+  },
+  {
+    "filterListId": 2607,
+    "id": 2873,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AnnoyancesList-2ndDivision.txt"
   }
 ]
