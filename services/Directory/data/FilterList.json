@@ -17542,7 +17542,7 @@
     "name": "Bypass Paywalls Clean filter"
   },
   {
-    "description": "A filter list for Adblock Plus for remove "Go to up" buttons",
+    "description": "A filter list for Adblock Plus for remove \"Go to up\" buttons",
     "homeUrl": "https://github.com/thedoggybrad/anti-gotoup-buttons",
     "id": 2604,
     "licenseId": 17,
