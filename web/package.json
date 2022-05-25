@@ -24,7 +24,7 @@
     "@angular/router": "~13.3.9",
     "@fontsource/material-icons": "^4.5.4",
     "@fontsource/roboto": "^4.5.7",
-    "@nrwl/angular": "14.1.7",
+    "@nrwl/angular": "14.1.9",
     "rxjs": "~7.5.5",
     "tslib": "^2.4.0",
     "zone.js": "~0.11.4"
