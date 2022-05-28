@@ -9955,9 +9955,9 @@
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 1603,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter"
   },
@@ -12222,9 +12222,9 @@
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 1880,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (Domains)"
   },
@@ -14140,33 +14140,33 @@
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 2165,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (dnsmasq)"
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 2167,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (hosts)"
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 2169,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (BIND)"
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 2171,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (Unbound)"
   },
@@ -15245,49 +15245,49 @@
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2323,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2324,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (Domains)"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2325,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (dnsmasq)"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2326,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (Hosts)"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2327,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (BIND)"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2328,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (Unbound)"
   },
@@ -16060,49 +16060,49 @@
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 2419,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (AdGuard Home)"
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 2420,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (AdGuard)"
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 2421,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (Vivaldi)"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2422,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (AdGuard Home)"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2423,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (AdGuard)"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2424,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (Vivaldi)"
   },
@@ -16217,17 +16217,17 @@
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 2437,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (IE)"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2438,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (IE)"
   },
@@ -16500,17 +16500,17 @@
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 2472,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (RPZ)"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2473,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (RPZ)"
   },
@@ -16532,161 +16532,161 @@
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2476,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2477,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter (Domains)"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2478,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter (dnsmasq)"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2479,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter (Hosts)"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2480,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter (BIND)"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2481,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter (Unbound)"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2482,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter (AdGuard Home)"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2483,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter (AdGuard)"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2484,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter (Vivaldi)"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2485,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter (IE)"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2486,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter (RPZ)"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2487,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter (Snort 2)"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2488,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter (Snort 3)"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2489,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter (Suricata)"
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 2490,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (Snort 2)"
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 2491,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (Snort 3)"
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 2492,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (Suricata)"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2493,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (Snort 2)"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2494,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (Snort 3)"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2495,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (Suricata)"
   },
@@ -16829,41 +16829,41 @@
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 2514,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (dnscrypt-proxy names)"
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
-    "homeUrl": "https://gitlab.com/curben/urlhaus-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/urlhaus-filter",
     "id": 2515,
-    "issuesUrl": "https://gitlab.com/curben/urlhaus-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/urlhaus-filter/issues",
     "licenseId": 28,
     "name": "urlhaus-filter (dnscrypt-proxy IPs)"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2516,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (dnscrypt-proxy names)"
   },
   {
     "description": "A blocklist of phishing websites. Based on PhishTank and OpenPhish.",
-    "homeUrl": "https://gitlab.com/curben/phishing-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/phishing-filter",
     "id": 2517,
-    "issuesUrl": "https://gitlab.com/curben/phishing-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/phishing-filter/issues",
     "licenseId": 8,
     "name": "phishing-filter (dnscrypt-proxy IPs)"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
-    "homeUrl": "https://gitlab.com/curben/pup-filter",
+    "homeUrl": "https://gitlab.com/malware-filter/pup-filter",
     "id": 2518,
-    "issuesUrl": "https://gitlab.com/curben/pup-filter/issues",
+    "issuesUrl": "https://gitlab.com/malware-filter/pup-filter/issues",
     "licenseId": 3,
     "name": "pup-filter (dnscrypt-proxy names)"
   },
