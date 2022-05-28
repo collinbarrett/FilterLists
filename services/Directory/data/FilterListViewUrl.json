@@ -9411,7 +9411,7 @@
     "filterListId": 1603,
     "id": 1627,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-online.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.txt"
   },
   {
     "filterListId": 1604,
@@ -11229,7 +11229,7 @@
     "filterListId": 1880,
     "id": 1951,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-domains-online.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-domains-online.txt"
   },
   {
     "filterListId": 1881,
@@ -13065,25 +13065,25 @@
     "filterListId": 2165,
     "id": 2289,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-dnsmasq-online.conf"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-dnsmasq-online.conf"
   },
   {
     "filterListId": 2167,
     "id": 2295,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-hosts-online.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-hosts-online.txt"
   },
   {
     "filterListId": 2169,
     "id": 2301,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-bind-online.conf"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-bind-online.conf"
   },
   {
     "filterListId": 2171,
     "id": 2307,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-unbound-online.conf"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-unbound-online.conf"
   },
   {
     "filterListId": 2172,
@@ -13965,37 +13965,37 @@
     "filterListId": 2323,
     "id": 2472,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter.txt"
   },
   {
     "filterListId": 2324,
     "id": 2475,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-domains.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-domains.txt"
   },
   {
     "filterListId": 2325,
     "id": 2478,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-dnsmasq.conf"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-dnsmasq.conf"
   },
   {
     "filterListId": 2326,
     "id": 2481,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-hosts.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-hosts.txt"
   },
   {
     "filterListId": 2327,
     "id": 2484,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-bind.conf"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-bind.conf"
   },
   {
     "filterListId": 2328,
     "id": 2487,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-unbound.conf"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-unbound.conf"
   },
   {
     "filterListId": 2329,
@@ -14697,37 +14697,37 @@
     "filterListId": 2419,
     "id": 2609,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt"
   },
   {
     "filterListId": 2420,
     "id": 2610,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-ag-online.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-ag-online.txt"
   },
   {
     "filterListId": 2421,
     "id": 2611,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-vivaldi-online.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-vivaldi-online.txt"
   },
   {
     "filterListId": 2422,
     "id": 2612,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-agh.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-agh.txt"
   },
   {
     "filterListId": 2423,
     "id": 2613,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-ag.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-ag.txt"
   },
   {
     "filterListId": 2424,
     "id": 2614,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-vivaldi.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-vivaldi.txt"
   },
   {
     "filterListId": 1985,
@@ -14877,13 +14877,13 @@
     "filterListId": 2437,
     "id": 2639,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-online.tpl"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-online.tpl"
   },
   {
     "filterListId": 2438,
     "id": 2640,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter.tpl"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter.tpl"
   },
   {
     "filterListId": 2439,
@@ -15117,13 +15117,13 @@
     "filterListId": 2472,
     "id": 2680,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-rpz-online.conf"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-rpz-online.conf"
   },
   {
     "filterListId": 2473,
     "id": 2681,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-rpz.conf"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-rpz.conf"
   },
   {
     "filterListId": 2096,
@@ -15141,121 +15141,121 @@
     "filterListId": 2476,
     "id": 2685,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter.txt"
   },
   {
     "filterListId": 2477,
     "id": 2686,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter-domains.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter-domains.txt"
   },
   {
     "filterListId": 2478,
     "id": 2687,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter-dnsmasq.conf"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter-dnsmasq.conf"
   },
   {
     "filterListId": 2479,
     "id": 2688,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter-hosts.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter-hosts.txt"
   },
   {
     "filterListId": 2480,
     "id": 2689,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter-bind.conf"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter-bind.conf"
   },
   {
     "filterListId": 2481,
     "id": 2690,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter-unbound.conf"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter-unbound.conf"
   },
   {
     "filterListId": 2482,
     "id": 2691,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter-agh.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter-agh.txt"
   },
   {
     "filterListId": 2483,
     "id": 2692,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter-ag.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter-ag.txt"
   },
   {
     "filterListId": 2484,
     "id": 2693,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter-vivaldi.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter-vivaldi.txt"
   },
   {
     "filterListId": 2485,
     "id": 2694,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter.tpl"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter.tpl"
   },
   {
     "filterListId": 2486,
     "id": 2695,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter-rpz.conf"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter-rpz.conf"
   },
   {
     "filterListId": 2487,
     "id": 2696,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter-snort2.rules"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter-snort2.rules"
   },
   {
     "filterListId": 2488,
     "id": 2697,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter-snort3.rules"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter-snort3.rules"
   },
   {
     "filterListId": 2489,
     "id": 2698,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter-suricata.conf"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter-suricata.conf"
   },
   {
     "filterListId": 2490,
     "id": 2699,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-snort2-online.rules"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-snort2-online.rules"
   },
   {
     "filterListId": 2491,
     "id": 2700,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-snort3-online.rules"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-snort3-online.rules"
   },
   {
     "filterListId": 2492,
     "id": 2701,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-suricata-online.rules"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-suricata-online.rules"
   },
   {
     "filterListId": 2493,
     "id": 2702,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-snort2.rules"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-snort2.rules"
   },
   {
     "filterListId": 2494,
     "id": 2703,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-snort3.rules"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-snort3.rules"
   },
   {
     "filterListId": 2495,
     "id": 2704,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-suricata.rules"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-suricata.rules"
   },
   {
     "filterListId": 2496,
@@ -15387,31 +15387,31 @@
     "filterListId": 2514,
     "id": 2726,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-dnscrypt-blocked-names-online.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-dnscrypt-blocked-names-online.txt"
   },
   {
     "filterListId": 2515,
     "id": 2727,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/urlhaus-filter-dnscrypt-blocked-ips-online.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-dnscrypt-blocked-ips-online.txt"
   },
   {
     "filterListId": 2516,
     "id": 2728,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-dnscrypt-blocked-names.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-dnscrypt-blocked-names.txt"
   },
   {
     "filterListId": 2517,
     "id": 2729,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/phishing-filter-dnscrypt-blocked-ips.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-dnscrypt-blocked-ips.txt"
   },
   {
     "filterListId": 2518,
     "id": 2730,
     "primariness": 1,
-    "url": "https://curben.gitlab.io/malware-filter/pup-filter-dnscrypt-blocked-names.txt"
+    "url": "https://malware-filter.gitlab.io/malware-filter/pup-filter-dnscrypt-blocked-names.txt"
   },
   {
     "filterListId": 2519,
