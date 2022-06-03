@@ -3401,85 +3401,76 @@
     "policyUrl": "https://help.getadblock.com/support/solutions/articles/6000142821-what-is-easylist-lite-"
   },
   {
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
     "emailAddress": "filters+cv@adblockplus.org",
     "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
     "id": 566,
     "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List"
+    "name": "ABP Filters"
   },
   {
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
     "emailAddress": "filters+cv@adblockplus.org",
     "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
     "id": 569,
     "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - Chinese Only"
+    "name": "ABP Filters - Chinese Only"
   },
   {
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
     "emailAddress": "filters+cv@adblockplus.org",
     "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
     "id": 570,
     "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - Czech Only"
+    "name": "ABP Filters - Czech Only"
   },
   {
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
     "emailAddress": "filters+cv@adblockplus.org",
     "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
     "id": 573,
     "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - English Only"
+    "name": "ABP Filters - English Only"
   },
   {
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
     "emailAddress": "filters+cv@adblockplus.org",
     "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
     "id": 574,
     "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - French Only"
+    "name": "ABP Filters - French Only"
   },
   {
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
     "emailAddress": "filters+cv@adblockplus.org",
     "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
     "id": 575,
     "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - German Only"
+    "name": "ABP Filters - German Only"
   },
   {
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
     "emailAddress": "filters+cv@adblockplus.org",
     "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
     "id": 583,
     "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - Portuguese Only"
+    "name": "ABP Filters - Portuguese Only"
   },
   {
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
     "emailAddress": "filters+cv@adblockplus.org",
     "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
     "id": 585,
     "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - Russian Only"
+    "name": "ABP Filters - Russian Only"
   },
   {
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
     "emailAddress": "filters+cv@adblockplus.org",
     "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
     "id": 586,
     "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - Spanish Only"
+    "name": "ABP Filters - Spanish Only"
   },
   {
     "description": "A occasionally updated collection gambling domains in hosts file format.",
@@ -11780,13 +11771,12 @@
     "submissionUrl": "https://app.energized.pro"
   },
   {
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
     "emailAddress": "filters+cv@adblockplus.org",
     "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
     "id": 1799,
     "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List - Arabic Only"
+    "name": "ABP Filters - Arabic Only"
   },
   {
     "id": 1800,
@@ -13824,13 +13814,12 @@
     "name": "ABPindo + EasyList (TPL)"
   },
   {
-    "description": "Filter list designed to fight circumvention ads in Adblock Plus",
     "emailAddress": "filters+cv@adblockplus.org",
     "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
     "id": 2125,
     "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "licenseId": 4,
-    "name": "ABP Anti-Circumvention Filter List (TPL)"
+    "name": "ABP Filters (TPL)"
   },
   {
     "description": "Russian-only fork of Fanboy's Annoyance List.",
@@ -16981,7 +16970,7 @@
     "name": "Anti-'The Owl House' List"
   },
   {
-    "description": "This IP set combines IP and CIDR addresses from plentiful of major adblocker lists. It contains heavily altered content from Dandelion Sprout's Anti-Malware List, Dandelion Sprout's Nordic Filters, EasyList, uBlock Filters, uBlock Filters - Badware Risks, AdGuard Base Filter, AdGuard French Filter, EasyList Germany, ABP Anti-Circumvention Filters, RU AdList, Liste AR, and EasyList Spanish.",
+    "description": "This IP set combines IP and CIDR addresses from plentiful of major adblocker lists. It contains heavily altered content from Dandelion Sprout's Anti-Malware List, Dandelion Sprout's Nordic Filters, EasyList, uBlock Filters, uBlock Filters - Badware Risks, AdGuard Base Filter, AdGuard French Filter, EasyList Germany, RU AdList, Liste AR, and EasyList Spanish.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
     "homeUrl": "https://github.com/DandelionSprout/adfilt",
