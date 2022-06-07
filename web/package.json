@@ -20,7 +20,7 @@
     "@angular/forms": "~13.3.10",
     "@angular/material": "^13.3.8",
     "@angular/platform-browser": "~13.3.9",
-    "@angular/platform-browser-dynamic": "~13.3.9",
+    "@angular/platform-browser-dynamic": "~14.0.0",
     "@angular/router": "~13.3.10",
     "@fontsource/material-icons": "^4.5.4",
     "@fontsource/roboto": "^4.5.7",
