@@ -1,0 +1,50 @@
+<mat-sidenav-container>
+  <mat-sidenav
+    fixedInViewport
+    [attr.role]="'dialog'"
+    [mode]="'over'"
+    opened="true"
+    position="end"
+  >
+    <ng-container *ngIf="listDetails$ | async as listDetails">
+      <div
+        gdLayout
+        gdColumns.gt-md="repeat(3, 1fr)"
+        gdColumns.gt-sm="repeat(2, 1fr)"
+        gdColumns="1fr"
+        gdGap="8px"
+      >
+        <app-header [listDetails]="listDetails"></app-header>
+        <app-syntaxes [syntaxes]="listDetails.syntaxes"></app-syntaxes>
+        <app-software [software]="listDetails.software"></app-software>
+        <app-languages [languages]="listDetails.languages"></app-languages>
+        <app-tags [tags]="listDetails.tags"></app-tags>
+        <app-links [listDetails]="listDetails"></app-links>
+        <app-links-info [listDetails]="listDetails"></app-links-info>
+        <ng-container *ngFor="let maintainer of listDetails.maintainers">
+          <app-maintainer [maintainer]="maintainer"></app-maintainer>
+        </ng-container>
+        <app-license [license]="listDetails.license"></app-license>
+        <app-upstream-lists
+          [upstreamLists]="listDetails.upstreamFilterLists"
+        ></app-upstream-lists>
+        <app-fork-lists
+          [forkLists]="listDetails.forkFilterLists"
+        ></app-fork-lists>
+        <app-included-in-lists
+          [includedInLists]="listDetails.includedInFilterLists"
+        ></app-included-in-lists>
+        <app-includes-lists
+          [includesLists]="listDetails.includesFilterLists"
+        ></app-includes-lists>
+        <app-dependency-lists
+          [dependencyLists]="listDetails.dependencyFilterLists"
+        ></app-dependency-lists>
+        <app-dependent-lists
+          [dependentLists]="listDetails.dependentFilterLists"
+        ></app-dependent-lists>
+      </div>
+    </ng-container>
+  </mat-sidenav>
+  <mat-sidenav-content> </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,92 @@
+<mat-card *ngIf="listDetails" class="mat-elevation-z2">
+  <mat-card-header>
+    <!-- <mat-card-title></mat-card-title> -->
+    <!-- <mat-card-subtitle></mat-card-subtitle> -->
+  </mat-card-header>
+  <mat-card-content>
+    <div gdLayout gdColumns="repeat(2, 1fr)" gdGap="8px">
+      <a
+        *ngIf="listDetails.homeUrl"
+        mat-raised-button
+        [attr.aria-label]="'Visit ' + listDetails.name + '\'s homepage'"
+        matTooltip="Visit {{ listDetails.name }}'s homepage"
+        href="{{ listDetails.homeUrl }}"
+        ><mat-icon>home</mat-icon>Home</a
+      >
+      <a
+        *ngIf="listDetails.onionUrl"
+        mat-raised-button
+        [attr.aria-label]="'Visit ' + listDetails.name + '\'s Onion (Tor) page'"
+        matTooltip="Visit {{ listDetails.name }}'s Onion (Tor) page"
+        href="{{ listDetails.onionUrl }}"
+        ><img src="assets/onion.svg" height="20" width="20" alt="Onion icon" />
+        Onion</a
+      >
+      <a
+        *ngIf="listDetails.policyUrl"
+        mat-raised-button
+        [attr.aria-label]="'Visit ' + listDetails.name + '\'s policy page'"
+        matTooltip="Visit {{ listDetails.name }}'s policy page"
+        href="{{ listDetails.policyUrl }}"
+        ><mat-icon>gavel</mat-icon>Policy</a
+      >
+      <a
+        *ngIf="listDetails.submissionUrl"
+        mat-raised-button
+        [attr.aria-label]="'Visit ' + listDetails.name + '\'s submissions page'"
+        matTooltip="Visit {{ listDetails.name }}'s submissions page"
+        href="{{ listDetails.submissionUrl }}"
+        ><mat-icon>edit_note</mat-icon>Submissions</a
+      >
+      <a
+        *ngIf="listDetails.issuesUrl"
+        mat-raised-button
+        [attr.aria-label]="
+          'Visit ' + listDetails.name + '\'s GitHub Issues page'
+        "
+        matTooltip="Visit {{ listDetails.name }}'s GitHub Issues page"
+        href="{{ listDetails.issuesUrl }}"
+        ><img
+          src="assets/github.svg"
+          height="20"
+          width="20"
+          alt="GitHub icon"
+        />
+        GitHub Issues</a
+      >
+      <a
+        *ngIf="listDetails.forumUrl"
+        mat-raised-button
+        [attr.aria-label]="'Visit ' + listDetails.name + '\'s forum'"
+        matTooltip="Visit {{ listDetails.name }}'s forum"
+        href="{{ listDetails.forumUrl }}"
+        ><mat-icon>forum</mat-icon>Forum</a
+      >
+      <a
+        *ngIf="listDetails.chatUrl"
+        mat-raised-button
+        [attr.aria-label]="'Visit ' + listDetails.name + '\'s chat room'"
+        matTooltip="Visit {{ listDetails.name }}'s chat room"
+        href="{{ listDetails.chatUrl }}"
+        ><mat-icon>chat</mat-icon>Chat Room</a
+      >
+      <a
+        *ngIf="listDetails.emailAddress"
+        mat-raised-button
+        [attr.aria-label]="'Email ' + listDetails.name"
+        matTooltip="Email {{ listDetails.name }}"
+        href="mailto:{{ listDetails.emailAddress }}"
+        ><mat-icon>mail</mat-icon>Email</a
+      >
+      <a
+        *ngIf="listDetails.donateUrl"
+        mat-raised-button
+        [attr.aria-label]="'Donate to ' + listDetails.name"
+        matTooltip="Donate to {{ listDetails.name }}"
+        href="{{ listDetails.donateUrl }}"
+        ><mat-icon>payments</mat-icon>Donate</a
+      >
+    </div>
+  </mat-card-content>
+  <!-- <mat-card-actions> </mat-card-actions> -->
+</mat-card>
