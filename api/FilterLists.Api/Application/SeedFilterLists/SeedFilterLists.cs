@@ -46,7 +46,7 @@ public static class SeedFilterLists
             var syntaxes = (await GetSeedEntities<Syntax>()).ToList();
             var tags = await GetSeedEntities<Tag>();
 
-            var filterListEntities = filterLists.Select(list =>
+            var filterListEntities = filterLists.ConvertAll(list =>
             {
                 var listLicense = licenses.Single(li => li.Id == list.LicenseId);
                 var listViewUrls = filterListViewUrls.Where(u => u.FilterListId == list.Id).ToList();
@@ -221,7 +221,7 @@ public static class SeedFilterLists
                 }
 
                 return new TableEntity(values);
-            }).ToList();
+            });
 
             #region Sample Full FilterList
 
