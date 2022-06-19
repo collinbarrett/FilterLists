@@ -16300,5 +16300,17 @@
     "id": 2873,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AnnoyancesList-2ndDivision.txt"
-  }
+  },
+  {
+    "filterListId": 2608,
+    "id": 2874,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlocker.txt"
+  },
+  {
+    "filterListId": 2609,
+    "id": 2875,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianPiHole.txt"
+  },
 ]
