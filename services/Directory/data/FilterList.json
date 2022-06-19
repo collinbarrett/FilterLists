@@ -17565,6 +17565,14 @@
     "id": 2608,
     "issuesUrl": "https://github.com/MasterKia/PersianBlocker/issues",
     "licenseId": 4,
-    "name": "PersianBlocker: Official Regional Persian/Iranian Domains Blocklist"
+    "name": "PersianBlocker: Official Regional Persian/Iranian Domains and Cosmetic Blocklist"
+  },
+  {
+    "description": "Finally, an optimal and extensive list for blocking ads and trackers on Persian language sites! (PiHole domains edition)",
+    "homeUrl": "https://github.com/MasterKia/PersianBlocker",
+    "id": 2609,
+    "issuesUrl": "https://github.com/MasterKia/PersianBlocker/issues",
+    "licenseId": 4,
+    "name": "PersianPiHole: List of Regional Persian/Iranian Domains-Only Blocklist"
   }
 ]
