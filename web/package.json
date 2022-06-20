@@ -43,7 +43,7 @@
     "@typescript-eslint/parser": "5.27.1",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
-    "jasmine-core": "~4.1.0",
+    "jasmine-core": "~4.2.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
