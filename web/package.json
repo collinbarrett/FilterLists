@@ -14,7 +14,7 @@
   "dependencies": {
     "@angular/animations": "^14.0.3",
     "@angular/cdk": "^14.0.3",
-    "@angular/common": "^14.0.3",
+    "@angular/common": "^14.1.2",
     "@angular/compiler": "^14.0.3",
     "@angular/core": "^14.0.3",
     "@angular/flex-layout": "^13.0.0-beta.38",
