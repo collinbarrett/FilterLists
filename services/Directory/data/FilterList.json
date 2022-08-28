@@ -12727,33 +12727,33 @@
     "name": "Ad Removal List for Unusual Ads"
   },
   {
-    "description": "Blocks empty leftover boxes.",
+    "description": "Blocks cookie notices on web pages.",
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "id": 1968,
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
     "licenseId": 12,
-    "name": "AdGuard Annoyances Filter - Remains Only",
+    "name": "AdGuard Cookie Notices filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   },
   {
-    "description": "Rules for blocking push notifications.",
+    "description": "Blocks all kinds of pop-ups that are not necessary for websites' operation.",
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "id": 1969,
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
     "licenseId": 12,
-    "name": "AdGuard Annoyances Filter - Push Notifications Only",
+    "name": "AdGuard Popups filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   },
   {
-    "description": "Banners of mobile apps for the sites.",
+    "description": "Blocks irritating banners that promote mobile apps of websites.",
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "id": 1970,
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
     "licenseId": 12,
-    "name": "AdGuard Annoyances Filter - Mobile App Only",
+    "name": "AdGuard Mobile App Banners filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   },
   {
@@ -12763,7 +12763,7 @@
     "id": 1971,
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
     "licenseId": 12,
-    "name": "AdGuard Annoyances Filter - Anti-Adblock Only",
+    "name": "AdGuard Popups filter - Anti-Adblock Only",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   },
   {
@@ -17031,12 +17031,13 @@
     "name": "Malicious website blocklist (Domains)"
   },
   {
+    "description": "Blocks irritating elements on web pages that do not fall under the popular categories of annoyances.",
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "id": 2542,
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
     "licenseId": 12,
-    "name": "AdGuard Annoyances Filter - Subscriptions and Newsletters Only",
+    "name": "AdGuard Other Annoyances filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   },
   {
@@ -17562,5 +17563,25 @@
     "issuesUrl": "https://github.com/MasterKia/PersianBlocker/issues",
     "licenseId": 43,
     "name": "PersianBlockerHosts: List of Regional Persian/Iranian Domains-Only Blocklist"
+  },
+  {
+    "description": "Blocks annoying third-party widgets: online assistants, live support chats, etc.",
+    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "id": 2610,
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Widgets filter",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
+  },
+  {
+    "description": "This list makes deviantART focus more on quality custom art, by removing as much as feasible of the horrid leftovers that the site is stuffed with. No more copypaste MS Paint, no more bad takes from the authors' or \"characters'\" standpoints, no more mega crossovers, no more inflation, no more top 23 rankings, and no more Thomas the Tank Engine. This list could possibly end up saving lives.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2611,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "deviantART Quality Art Magnifier"
   }
 ]
