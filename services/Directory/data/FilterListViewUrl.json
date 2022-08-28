@@ -11691,25 +11691,25 @@
     "filterListId": 1968,
     "id": 2045,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/AnnoyancesFilter/sections/remains.txt"
+    "url": "https://filters.adtidy.org/windows/filters/18.txt"
   },
   {
     "filterListId": 1969,
     "id": 2046,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/AnnoyancesFilter/sections/push-notifications.txt"
+    "url": "https://filters.adtidy.org/windows/filters/19.txt"
   },
   {
     "filterListId": 1970,
     "id": 2047,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/AnnoyancesFilter/sections/mobile-app.txt"
+    "url": "https://filters.adtidy.org/windows/filters/20.txt"
   },
   {
     "filterListId": 1971,
     "id": 2048,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/AnnoyancesFilter/sections/antiadblock.txt"
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/AnnoyancesFilter/Popups/sections/antiadblock.txt"
   },
   {
     "filterListId": 1972,
@@ -15602,7 +15602,7 @@
     "filterListId": 2542,
     "id": 2762,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/AnnoyancesFilter/sections/subscriptions.txt"
+    "url": "https://filters.adtidy.org/windows/filters/21.txt"
   },
   {
     "filterListId": 2543,
@@ -16312,5 +16312,17 @@
     "id": 2875,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt"
+  },
+  {
+    "filterListId": 2610,
+    "id": 2876,
+    "primariness": 1,
+    "url": "https://filters.adtidy.org/windows/filters/22.txt"
+  },
+  {
+    "filterListId": 2611,
+    "id": 2877,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/DeviantARTQualityArtMagnifier.txt"
   }
 ]
