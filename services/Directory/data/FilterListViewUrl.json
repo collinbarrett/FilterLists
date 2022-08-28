@@ -16324,5 +16324,11 @@
     "id": 2877,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/DeviantARTQualityArtMagnifier.txt"
+  },
+  {
+    "filterListId": 2611,
+    "id": 2878,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/DeviantARTQualityArtMagnifier.txt"
   }
 ]
