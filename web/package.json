@@ -22,7 +22,7 @@
     "@angular/material": "^14.0.4",
     "@angular/platform-browser": "^14.0.3",
     "@angular/platform-browser-dynamic": "^14.0.3",
-    "@angular/router": "^14.0.3",
+    "@angular/router": "^14.2.2",
     "@fontsource/material-icons": "^4.5.4",
     "@fontsource/roboto": "^4.5.7",
     "rxjs": "~7.5.0",
