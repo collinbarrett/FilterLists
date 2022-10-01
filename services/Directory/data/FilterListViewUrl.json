@@ -15722,19 +15722,19 @@
     "filterListId": 2559,
     "id": 2782,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/huzunluartemis/TurkishAdblockList/main/src/HostsList.txt"
+    "url": "https://gitlab.com/huzunluartemis/TurkishAdblockList/-/raw/main/src/HostsList.txt"
   },
   {
     "filterListId": 2560,
     "id": 2783,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/huzunluartemis/TurkishAdblockList/main/src/ElementalList.txt"
+    "url": "https://gitlab.com/huzunluartemis/TurkishAdblockList/-/raw/main/src/ElementalList.txt"
   },
   {
     "filterListId": 2561,
     "id": 2784,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/huzunluartemis/TurkishAdblockList/main/src/BadIpList.txt"
+    "url": "https://gitlab.com/huzunluartemis/TurkishAdblockList/-/raw/main/src/BadIpList.txt"
   },
   {
     "filterListId": 2562,
