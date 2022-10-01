@@ -16336,5 +16336,11 @@
     "id": 2879,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Leaf16591/AdAway-Default-Blocklist-AdGuard-Version/main/Host"
+  },
+  {
+    "filterListId": 2613,
+    "id": 2880,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/elliotwutingfeng/Inversion-CloudIPs/main/ips.txt"
   }
 ]
