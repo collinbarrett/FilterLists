@@ -17599,5 +17599,13 @@
     "issuesUrl": "https://github.com/elliotwutingfeng/Inversion-CloudIPs/issues",
     "licenseId": 10,
     "name": "Inversion CloudIPs"
+  },
+  {
+    "description": "A filter list for Adblock Plus for remove all newsletters banners",
+    "homeUrl": "https://github.com/thedoggybrad/no-newsletter",
+    "id": 2614,
+    "issuesUrl": "https://github.com/thedoggybrad/no-newsletter/issues",
+    "licenseId": 17,
+    "name": "no-newsletter"
   }
 ]
