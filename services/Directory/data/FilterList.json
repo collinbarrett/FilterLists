@@ -17583,5 +17583,13 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "deviantART Quality Art Magnifier"
+  },
+  {
+    "description": "Conversion Syntax of AdAway Default Blocklist for AdGuard.",
+    "homeUrl": "https://github.com/Leaf16591/AdAway-Default-Blocklist-AdGuard-Version",
+    "id": 2612,
+    "issuesUrl": "https://github.com/Leaf16591/AdAway-Default-Blocklist-AdGuard-Version/issues",
+    "licenseId": 5,
+    "name": "AdAway Default Blocklist (AdGuard Version)"
   }
 ]

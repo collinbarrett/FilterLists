@@ -16330,5 +16330,11 @@
     "id": 2878,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/DeviantARTQualityArtMagnifier.txt"
+  },
+  {
+    "filterListId": 2612,
+    "id": 2879,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/Leaf16591/AdAway-Default-Blocklist-AdGuard-Version/main/Host"
   }
 ]
