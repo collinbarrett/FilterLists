@@ -16342,5 +16342,11 @@
     "id": 2880,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/elliotwutingfeng/Inversion-CloudIPs/main/ips.txt"
+  },
+  {
+    "filterListId": 2614,
+    "id": 2881,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/thedoggybrad/no-newsletter/master/filter.txt"
   }
 ]
