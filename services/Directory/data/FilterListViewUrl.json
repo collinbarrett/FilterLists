@@ -16348,5 +16348,35 @@
     "id": 2881,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/thedoggybrad/no-newsletter/master/filter.txt"
+  },
+  {
+    "filterListId": 2615,
+    "id": 2882,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/thedoggybrad/Frame-Blocker-Filter/main/3rdParty.txt"
+  },
+  {
+    "filterListId": 2616,
+    "id": 2883,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/thedoggybrad/Frame-Blocker-Filter/main/All.txt"
+  },
+  {
+    "filterListId": 2617,
+    "id": 2884,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/thedoggybrad/Frame-Blocker-Filter/main/googleyt-exception.txt"
+  },
+  {
+    "filterListId": 2618,
+    "id": 2885,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/thedoggybrad/Frame-Blocker-Filter/main/socialmedia-exception.txt"
+  },
+  {
+    "filterListId": 2619,
+    "id": 2886,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/thedoggybrad/Non-Essential-Frames-Blocker/main/filter.txt"
   }
 ]

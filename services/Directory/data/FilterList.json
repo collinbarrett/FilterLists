@@ -17607,5 +17607,45 @@
     "issuesUrl": "https://github.com/thedoggybrad/no-newsletter/issues",
     "licenseId": 17,
     "name": "no-newsletter"
+  },
+  {
+    "description": "No mercy for 3rd Party Frames.",
+    "homeUrl": "https://github.com/thedoggybrad/Frame-Blocker-Filter",
+    "id": 2615,
+    "issuesUrl": "https://github.com/thedoggybrad/Frame-Blocker-Filter/issues",
+    "licenseId": 17,
+    "name": "Frame-Blocker-Filter (3rd Party only)"
+  },
+  {
+    "description": "No mercy for all frames.",
+    "homeUrl": "https://github.com/thedoggybrad/Frame-Blocker-Filter",
+    "id": 2616,
+    "issuesUrl": "https://github.com/thedoggybrad/Frame-Blocker-Filter/issues",
+    "licenseId": 17,
+    "name": "Frame-Blocker-Filter (All Frames)"
+  },
+  {
+    "description": "No mercy for 3rd party frames with Google and YouTube exceptions.",
+    "homeUrl": "https://github.com/thedoggybrad/Frame-Blocker-Filter",
+    "id": 2617,
+    "issuesUrl": "https://github.com/thedoggybrad/Frame-Blocker-Filter/issues",
+    "licenseId": 17,
+    "name": "3rd Party only Frame Blocking with Google and YouTube exceptions"
+  },
+  {
+    "description": "No mercy for 3rd Party Frames except for common Social Media sites.",
+    "homeUrl": "https://github.com/thedoggybrad/Frame-Blocker-Filter",
+    "id": 2618,
+    "issuesUrl": "https://github.com/thedoggybrad/Frame-Blocker-Filter/issues",
+    "licenseId": 17,
+    "name": "3rd Party only Frame Blocking with Social Media exceptions"
+  },
+  {
+    "description": "A bigger variant of Frame-Blocker-Filter. This variant-filter is designed to block non-essential Frames.",
+    "homeUrl": "https://github.com/thedoggybrad/Non-Essential-Frames-Blocker",
+    "id": 2619,
+    "issuesUrl": "https://github.com/thedoggybrad/Non-Essential-Frames-Blocker/issues",
+    "licenseId": 17,
+    "name": "Non-Essential-Frames-Blocker"
   }
 ]
