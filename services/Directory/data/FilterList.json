@@ -17591,5 +17591,13 @@
     "issuesUrl": "https://github.com/Leaf16591/AdAway-Default-Blocklist-AdGuard-Version/issues",
     "licenseId": 5,
     "name": "AdAway Default Blocklist (AdGuard Version)"
+  },
+  {
+    "description": "Malicious IP blocklists derived via lexical analysis of cloud virtual machine hostnames listed in the Inversion DNSBL Blocklists, updated every hour.",
+    "homeUrl": "https://github.com/elliotwutingfeng/Inversion-CloudIPs",
+    "id": 2613,
+    "issuesUrl": "https://github.com/elliotwutingfeng/Inversion-CloudIPs/issues",
+    "licenseId": 10,
+    "name": "Inversion CloudIPs"
   }
 ]
