@@ -3,7 +3,7 @@
     "filterListId": 1,
     "id": 1,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-mob.txt"
+    "url": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/jpf-plus.txt"
   },
   {
     "filterListId": 2,
@@ -12486,34 +12486,10 @@
     "url": "https://ads-for-open-source.readthedocs.io/en/latest/_static/lists/readthedocs-ads.txt"
   },
   {
-    "filterListId": 2079,
-    "id": 2186,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt"
-  },
-  {
-    "filterListId": 2081,
-    "id": 2188,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt"
-  },
-  {
-    "filterListId": 2082,
-    "id": 2189,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt"
-  },
-  {
-    "filterListId": 2084,
-    "id": 2191,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/anti-allowlist.txt"
-  },
-  {
     "filterListId": 2085,
     "id": 2192,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules.txt"
+    "url": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/medium_mode/dynamic-rules.txt"
   },
   {
     "filterListId": 2087,
@@ -12525,43 +12501,13 @@
     "filterListId": 2088,
     "id": 2195,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules-mob.txt"
-  },
-  {
-    "filterListId": 2089,
-    "id": 2196,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider.txt"
-  },
-  {
-    "filterListId": 2091,
-    "id": 2198,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt"
-  },
-  {
-    "filterListId": 2092,
-    "id": 2199,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt"
-  },
-  {
-    "filterListId": 2093,
-    "id": 2200,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt"
-  },
-  {
-    "filterListId": 2094,
-    "id": 2201,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt"
+    "url": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/medium_mode/dynamic-rules-mob.txt"
   },
   {
     "filterListId": 2095,
     "id": 2202,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/dns-unbreak.txt"
+    "url": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt"
   },
   {
     "filterListId": 2099,
@@ -15126,18 +15072,6 @@
     "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-rpz.conf"
   },
   {
-    "filterListId": 2096,
-    "id": 2683,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blogroll.txt"
-  },
-  {
-    "filterListId": 2475,
-    "id": 2684,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hirorpt/filters/main/fix.txt"
-  },
-  {
     "filterListId": 2476,
     "id": 2685,
     "primariness": 1,
@@ -15262,18 +15196,6 @@
     "id": 2705,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/troysjanda/MyBlockLists/master/UBOXPI"
-  },
-  {
-    "filterListId": 2097,
-    "id": 2706,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt"
-  },
-  {
-    "filterListId": 2098,
-    "id": 2707,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt"
   },
   {
     "filterListId": 2497,

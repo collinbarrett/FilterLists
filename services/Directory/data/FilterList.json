@@ -1,11 +1,11 @@
 [
   {
-    "description": "Add this if you use Yuki's uBlock Japanese filters with uBlock Origin on Firefox for Mobile.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "description": "This complements AdGuard Japanese filter and mainly consists of 1) additional generic rules to counter circumvention ads and anti-adblock, and 2) specific rules to address sites not addresed in the Japanese filters.",
+    "homeUrl": "https://github.com/Yuki2718/adblock2",
     "id": 1,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "Yuki's uBlock Japanese filters - Mobile"
+    "issuesUrl": "https://github.com/Yuki2718/adblock2/issues",
+    "licenseId": 4,
+    "name": "AdGuard Japanese filter Plus"
   },
   {
     "description": "Mute is an AdBlock Plus filter for user comments. In the same way that AdBlock hides ads, AdBlock can use this filter to hide user-generated comments, allowing you to browse the Internet with less stupidity clawing at your eyeballs.",
@@ -13487,43 +13487,11 @@
     "name": "Read the Docs Advertising Exception List"
   },
   {
-    "description": "AdGuard Social media filter tends to rely too much on cosmetic filters IMHO. This filter consists of network filters only and complements Social media filter.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2079,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "AdGuard Social Media Plus"
-  },
-  {
-    "description": "Inspired by Sable Filter at MeetingLabs, this removes cookie consents. Main focuses are Japanese sites and other high-traffic sites many Japanese people will visit. False-positive prone rules won't be added (e.g. cookielaw.org, uk-cookie-consent plugin).",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2081,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "Yuki's Cookie Dialogue filters"
-  },
-  {
-    "description": "This removes blog parts and ranking buttons on Japanese websites.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2082,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "Yuki's Blog Parts"
-  },
-  {
-    "description": "This is to counter unnecessary or too generic allowlists which were not addressed or won't be addressed by the maintainer. Only for advanced user as it can cause problems.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2084,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "Yuki's uBlock Anti-allowlist"
-  },
-  {
     "description": "A whitelist for medium mode of uBlock Origin for English user. The purpose is to help those non-techie, yet security-conscious, people to use the mode. Payment services and mobile sites are out-of-scope. This is not a list I myself use so won't be updated frequently.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "homeUrl": "https://github.com/Yuki2718/adblock2",
     "id": 2085,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
+    "issuesUrl": "https://github.com/Yuki2718/adblock2/issues",
+    "licenseId": 4,
     "name": "Yuki's uBlock Dynamic Rules"
   },
   {
@@ -13536,83 +13504,19 @@
   },
   {
     "description": "It's a mobile version of Yuki2718's uBlock Dynamic Rules.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "homeUrl": "https://github.com/Yuki2718/adblock2",
     "id": 2088,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
+    "issuesUrl": "https://github.com/Yuki2718/adblock2/issues",
+    "licenseId": 4,
     "name": "Yuki's uBlock Dynamic Rules for mobile"
   },
   {
-    "description": "Ignore generic cosmetic filters is recommended if you want better performance without sacrificing security or privacy. However, you'll notice ugly layout of many websites once you enabled this option. This filter mitigates this on English sites by removing placeholders left as a result of disabling generic cosmetic filters.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2089,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "Placeholder Hider with no generic hiding"
-  },
-  {
-    "description": "The most comprehensive, block-first, and efficient Japanese list for uBlock Origin that removes ads and analytics on desktop, designed for advanced user.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2091,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "Yuki's uBlock Japanese filters"
-  },
-  {
-    "description": "This can be added to uBlock Japanese filters for enhanced blocking. Use at your own risk.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2092,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "Yuki's uBlock Japanese filters - Paranoid"
-  },
-  {
-    "description": "Removes share buttons mainly on Japanese sites.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2093,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "Yuki's uBlock Japanese filters - Social"
-  },
-  {
-    "description": "Removes annoyances mainly on Japanese sites.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2094,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "Yuki's uBlock Japanese filters - Annoyances"
-  },
-  {
     "description": "This list fixes known problems in AdGuard DNS filter mostly for Japanese user.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
+    "homeUrl": "https://github.com/Yuki2718/adblock2",
     "id": 2095,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "AdGuard DNS filter Unbreaker for Japanese"
-  },
-  {
-    "description": "Removes blogroll (feed-style mutual links) on Japanese sites. Included in Yuki's uBlock Japanese filters - Annoyances",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2096,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "Yuki's Blogroll filters"
-  },
-  {
-    "description": "Removes annoyances which only some user, not everyone, want to remove mainly on Japanese sites.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2097,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
-    "licenseId": 8,
-    "name": "Yuki's uBlock Japanese filters - Annoyances Plus"
-  },
-  {
-    "description": "Enhances anti anti-adblock capability of AdGuard by generic filters. Works on AdGuard for Windows, AdGuard for Android, AdGuard for Mac, and AdGuard Browser Extensions but not for AdGuard for Safari, AdGuard for iOS, and AdGuard Contents Blocker. This list also mitigates malicious popups often seen on porn sites, pirate sites, and/or short links.",
-    "homeUrl": "https://github.com/Yuki2718/adblock",
-    "id": 2098,
-    "issuesUrl": "https://github.com/Yuki2718/adblock/issues",
+    "issuesUrl": "https://github.com/Yuki2718/adblock2/issues",
     "licenseId": 4,
-    "name": "Anti Anti-adblock Enhancer for AdGuard"
+    "name": "AdGuard DNS filter Unbreaker for Japanese"
   },
   {
     "description": "Blocks access to phishing, spam, malware and malicious domains. Our database of malicious domains is updated hourly and considered to be one of the best in the industry. Links that didn't fit in the Subscribe button URL texts, include 2a0d:2a00:2::2",
@@ -16498,14 +16402,6 @@
     "issuesUrl": "https://github.com/beerisgood/beer_blocklist/issues",
     "licenseId": 5,
     "name": "beer_blocklist"
-  },
-  {
-    "description": "This allowlist fixes incorrect blocking by standard filters such as EasyList, mainly on Japanese websites. It is based largely on Yuki's uBlock Japanese filters.",
-    "homeUrl": "https://github.com/hirorpt/filters",
-    "id": 2475,
-    "issuesUrl": "https://github.com/hirorpt/filters/issues",
-    "licenseId": 28,
-    "name": "Konayuki filters"
   },
   {
     "description": "A block of websites that host potentially unwanted programs",
