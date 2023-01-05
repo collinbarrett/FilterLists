@@ -17545,67 +17545,131 @@
     "name": "Non-Essential-Frames-Blocker"
   },
   {
-    "description": "DNS Blocklists - For a better internet!",
+    "description": "Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Metrics, some Malware and Fake.",
     "homeUrl": "https://github.com/hagezi/dns-blocklists",
     "id": 2620,
     "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
     "licenseId": 2,
-    "name": "Hagezi Multi Light"
+    "name": "HaGezi's Multi Light DNS Blocklist (Domains)"
   },
   {
-    "description": "DNS Blocklists - For a better internet!",
+    "description": "Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Metrics, some Malware and Fake.",
     "homeUrl": "https://github.com/hagezi/dns-blocklists",
     "id": 2621,
     "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
     "licenseId": 2,
-    "name": "Hagezi Multi Normal"
+    "name": "HaGezi's Multi Light DNS Blocklist (Hosts)"
   },
   {
-    "description": "DNS Blocklists - For a better internet!",
+    "description": "Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Metrics, some Malware and Fake.",
     "homeUrl": "https://github.com/hagezi/dns-blocklists",
     "id": 2622,
     "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
     "licenseId": 2,
-    "name": "Hagezi Multi Pro"
+    "name": "HaGezi's Multi Light DNS Blocklist (Wildcard)"
   },
   {
-    "description": "DNS Blocklists - For a better internet!",
+    "description": "Cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other "Crap".",
     "homeUrl": "https://github.com/hagezi/dns-blocklists",
     "id": 2623,
     "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
     "licenseId": 2,
-    "name": "Hagezi Multi Pro++"
+    "name": "HaGezi's Multi Pro DNS Blocklist (Domains)"
   },
   {
-    "description": "DNS Blocklists - For a better internet!",
+    "description": "Cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other "Crap".",
     "homeUrl": "https://github.com/hagezi/dns-blocklists",
     "id": 2624,
     "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
     "licenseId": 2,
-    "name": "Hagezi Multi Ultimate"
+    "name": "HaGezi's Multi Pro DNS Blocklist (Hosts)"
   },
   {
-    "description": "DNS Blocklists - For a better internet!",
+    "description": "Cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other "Crap".",
     "homeUrl": "https://github.com/hagezi/dns-blocklists",
     "id": 2625,
     "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
     "licenseId": 2,
-    "name": "Hagezi Fake"
+    "name": "HaGezi's Multi Pro DNS Blocklist (Wildcard)"
   },
   {
-    "description": "DNS Blocklists - For a better internet!",
+    "description": "Aggressive cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other "Crap".",
     "homeUrl": "https://github.com/hagezi/dns-blocklists",
     "id": 2626,
     "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
     "licenseId": 2,
-    "name": "Hagezi Threat Intelligence Feeds"
+    "name": "HaGezi's Multi Pro++ DNS Blocklist (Domains)"
   },
   {
-    "description": "DNS Blocklists - For a better internet!",
+    "description": "Aggressive cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other "Crap".",
     "homeUrl": "https://github.com/hagezi/dns-blocklists",
     "id": 2627,
     "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
     "licenseId": 2,
-    "name": "Hagezi Personal"
+    "name": "HaGezi's Multi Pro++ DNS Blocklist (Hosts)"
+  },
+  {
+    "description": "Aggressive cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other "Crap".",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2628,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "HaGezi's Multi Pro++ DNS Blocklist (Wildcard)"
+  },
+  {
+    "description": "Strictly cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking (+Referral), Metrics, Telemetry, Phishing, Malware, Scam, Free Hoster, Fake, Coins and other "Crap".",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2629,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "HaGezi's Multi Ultimate DNS Blocklist (Domains)"
+  },
+  {
+    "description": "Strictly cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking (+Referral), Metrics, Telemetry, Phishing, Malware, Scam, Free Hoster, Fake, Coins and other "Crap".",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2630,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "HaGezi's Multi Ultimate DNS Blocklist (Hosts)"
+  },
+  {
+    "description": "Strictly cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking (+Referral), Metrics, Telemetry, Phishing, Malware, Scam, Free Hoster, Fake, Coins and other "Crap".",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2631,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "HaGezi's Multi Ultimate DNS Blocklist (Wildcard)"
+  },
+  {
+    "description": "Increases security significantly! Blocks Malware, Crypto, Coin, Spam, Scam and Phishing.",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2632,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "HaGeZi's Threat Intelligence Feeds DNS Blocklist (Wildcard)"
+  },
+  {
+    "description": "My personal blocklist, an extension for known blocklists. Blocks ads, trackers, native device trackers, badware and more. Not intended to be used as a standalone blocklist, it serves as a addition for other blocklists!",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2633,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "HaGezi's Personal (Domains)"
+  },
+  {
+    "description": "My personal blocklist, an extension for known blocklists. Blocks ads, trackers, native device trackers, badware and more. Not intended to be used as a standalone blocklist, it serves as a addition for other blocklists!",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2634,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "HaGezi's Personal (Hosts)"
+  },
+  {
+    "description": "My personal blocklist, an extension for known blocklists. Blocks ads, trackers, native device trackers, badware and more. Not intended to be used as a standalone blocklist, it serves as a addition for other blocklists!",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2635,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "HaGezi's Personal (Wildcard)"
   }
 ]
