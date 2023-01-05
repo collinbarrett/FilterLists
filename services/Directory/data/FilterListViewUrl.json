@@ -16300,5 +16300,101 @@
     "id": 2886,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/thedoggybrad/Non-Essential-Frames-Blocker/main/filter.txt"
+  },
+  {
+    "filterListId": 2620,
+    "id": 2886,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/light.txt"
+  },
+  {
+    "filterListId": 2621,
+    "id": 2887,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/light.txt"
+  },
+  {
+    "filterListId": 2622,
+    "id": 2888,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/light.txt"
+  },
+  {
+    "filterListId": 2623,
+    "id": 2889,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/pro.txt"
+  },
+  {
+    "filterListId": 2624,
+    "id": 2890,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/pro.txt"
+  },
+  {
+    "filterListId": 2625,
+    "id": 2891,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.txt"
+  },
+  {
+    "filterListId": 2626,
+    "id": 2892,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/pro.plus.txt"
+  },
+  {
+    "filterListId": 2627,
+    "id": 2893,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/pro.plus.txt"
+  },
+  {
+    "filterListId": 2628,
+    "id": 2894,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.plus.txt"
+  },
+  {
+    "filterListId": 2629,
+    "id": 2895,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/ultimate.txt"
+  },
+  {
+    "filterListId": 2630,
+    "id": 2896,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/ultimate.txt"
+  },
+  {
+    "filterListId": 2631,
+    "id": 2897,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/ultimate.txt"
+  },
+  {
+    "filterListId": 2632,
+    "id": 2898,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif.txt"
+  },
+  {
+    "filterListId": 2633,
+    "id": 2899,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/personal.txt"
+  },
+  {
+    "filterListId": 2634,
+    "id": 2900
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/personal.txt"
+  },
+  {
+    "filterListId": 2635
+    "id": 2901
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/personal.txt"
   }
 ]
