@@ -17543,5 +17543,69 @@
     "issuesUrl": "https://github.com/thedoggybrad/Non-Essential-Frames-Blocker/issues",
     "licenseId": 17,
     "name": "Non-Essential-Frames-Blocker"
+  },
+  {
+    "description": "DNS Blocklists - For a better internet!",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2620,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "Hagezi Multi Light"
+  },
+  {
+    "description": "DNS Blocklists - For a better internet!",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2621,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "Hagezi Multi Normal"
+  },
+  {
+    "description": "DNS Blocklists - For a better internet!",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2622,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "Hagezi Multi Pro"
+  },
+  {
+    "description": "DNS Blocklists - For a better internet!",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2623,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "Hagezi Multi Pro++"
+  },
+  {
+    "description": "DNS Blocklists - For a better internet!",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2624,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "Hagezi Multi Ultimate"
+  },
+  {
+    "description": "DNS Blocklists - For a better internet!",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2625,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "Hagezi Fake"
+  },
+  {
+    "description": "DNS Blocklists - For a better internet!",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2626,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "Hagezi Threat Intelligence Feeds"
+  },
+  {
+    "description": "DNS Blocklists - For a better internet!",
+    "homeUrl": "https://github.com/hagezi/dns-blocklists",
+    "id": 2627,
+    "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
+    "licenseId": 2,
+    "name": "Hagezi Personal"
   }
 ]
