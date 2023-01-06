@@ -17654,7 +17654,7 @@
     "id": 2633,
     "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
     "licenseId": 2,
-    "name": "HaGeZi's Personal (Domains)"
+    "name": "HaGeZi's Personal DNS Blocklist (Domains)"
   },
   {
     "description": "My personal blocklist, an extension for known blocklists. Blocks ads, trackers, native device trackers, badware and more. Not intended to be used as a standalone blocklist, it serves as a addition for other blocklists!",
@@ -17662,7 +17662,7 @@
     "id": 2634,
     "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
     "licenseId": 2,
-    "name": "HaGeZi's Personal (Hosts)"
+    "name": "HaGeZi's Personal DNS Blocklist (Hosts)"
   },
   {
     "description": "My personal blocklist, an extension for known blocklists. Blocks ads, trackers, native device trackers, badware and more. Not intended to be used as a standalone blocklist, it serves as a addition for other blocklists!",
@@ -17670,6 +17670,6 @@
     "id": 2635,
     "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
     "licenseId": 2,
-    "name": "HaGeZi's Personal (Wildcard)"
+    "name": "HaGeZi's Personal DNS Blocklist (Wildcard)"
   }
 ]
