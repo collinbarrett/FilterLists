@@ -16392,7 +16392,7 @@
     "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/personal.txt"
   },
   {
-    "filterListId": 2635
+    "filterListId": 2635,
     "id": 2901,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/personal.txt"
