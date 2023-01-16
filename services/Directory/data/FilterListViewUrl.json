@@ -15054,12 +15054,6 @@
     "url": "https://raw.githubusercontent.com/twcau/AdblockRules/master/MurdochList"
   },
   {
-    "filterListId": 2471,
-    "id": 2679,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/EasyDutch-uBO/EasyDutch/gh-pages/EasyDutch.txt"
-  },
-  {
     "filterListId": 2472,
     "id": 2680,
     "primariness": 1,
@@ -15340,24 +15334,6 @@
     "id": 2731,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
-  },
-  {
-    "filterListId": 2471,
-    "id": 2732,
-    "primariness": 2,
-    "url": "https://easydutch-ubo.github.io/EasyDutchCDN/EasyDutch.txt"
-  },
-  {
-    "filterListId": 2520,
-    "id": 2733,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/BPower0036/AdBlockFilters/main/dynamic%20rules"
-  },
-  {
-    "filterListId": 2521,
-    "id": 2734,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/BPower0036/AdBlockFilters/main/my%20filters"
   },
   {
     "filterListId": 2522,
@@ -15738,6 +15714,18 @@
   },
   {
     "filterListId": 2471,
+    "id": 2679,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/EasyDutch-uBO/EasyDutch/gh-pages/EasyDutch.txt"
+  },
+  {
+    "filterListId": 2471,
+    "id": 2732,
+    "primariness": 2,
+    "url": "https://easydutch-ubo.github.io/EasyDutchCDN/EasyDutch.txt"
+  },
+  {
+    "filterListId": 2471,
     "id": 2798,
     "primariness": 3,
     "url": "https://cdn.statically.io/gh/EasyDutch-uBO/EasyDutch/gh-pages/EasyDutch.txt"
@@ -15785,44 +15773,50 @@
     "url": "https://cdn.statically.io/gh/BPower0036/AdBlockFilters/main/EasyDutch.txt"
   },
   {
-    "filterListId": 2471,
-    "id": 2806,
-    "primariness": 11,
-    "url": "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockFilters@main/EasyDutch.txt"
+    "filterListId": 2520,
+    "id": 2733,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/BPower0036/AdBlockFilters/main/dynamic%20rules"
   },
   {
     "filterListId": 2520,
-    "id": 2807,
+    "id": 2806,
     "primariness": 2,
     "url": "https://cdn.statically.io/gh/BPower0036/AdBlockfilters/main/dynamic%20rules"
   },
   {
     "filterListId": 2520,
-    "id": 2808,
+    "id": 2807,
     "primariness": 3,
     "url": "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockfilters@main/dynamic%20rules"
   },
   {
     "filterListId": 2520,
-    "id": 2809,
+    "id": 2808,
     "primariness": 4,
     "url": "https://combinatronics.io/BPower0036/AdBlockfilters/main/dynamic%20rules"
   },
   {
     "filterListId": 2521,
-    "id": 2810,
+    "id": 2734,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/BPower0036/AdBlockFilters/main/my%20filters"
+  },
+  {
+    "filterListId": 2521,
+    "id": 2809,
     "primariness": 2,
     "url": "https://cdn.statically.io/gh/BPower0036/AdBlockfilters/main/my%20filters"
   },
   {
     "filterListId": 2521,
-    "id": 2811,
+    "id": 2810,
     "primariness": 3,
     "url": "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockfilters@main/my%20filters"
   },
   {
     "filterListId": 2521,
-    "id": 28129,
+    "id": 2811,
     "primariness": 4,
     "url": "https://combinatronics.io/BPower0036/AdBlockfilters/main/my%20filters"
   },
