@@ -16396,5 +16396,41 @@
     "id": 2901,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/personal.txt"
+  },
+  {
+    "filterListId": 2636,
+    "id": 2902,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiFakeTransparentImagesList.txt"
+  },
+  {
+    "filterListId": 2636,
+    "id": 2903,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AntiFakeTransparentImagesList.txt"
+  },
+  {
+    "filterListId": 2637,
+    "id": 2904,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiFunctionalityRemovalList.txt"
+  },
+  {
+    "filterListId": 2637,
+    "id": 2905,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AntiFunctionalityRemovalList.txt"
+  },
+  {
+    "filterListId": 2638,
+    "id": 2906,
+    "primariness": 1,
+    "url": "https://easylist-downloads.adblockplus.org/adblock_premium.txt"
+  },
+  {
+    "filterListId": 2639,
+    "id": 2907,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/FanboyNotifications-LoadableInUBO.txt"
   }
 ]
