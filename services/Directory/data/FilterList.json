@@ -17696,7 +17696,6 @@
     "description": "Say goodbye to additional annoyances like floating videos, newsletter pop-ups, and other distractions. Using entries that include '#$#' requires Adblock Plus and an Adblock Plus Premium subscription.",
     "homeUrl": "https://accounts.adblockplus.org/premium",
     "id": 2638,
-    "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
     "name": "Premium - Distraction Control"
   },
   {
