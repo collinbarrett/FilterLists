@@ -17640,6 +17640,7 @@
     "licenseId": 2,
     "name": "HaGeZi's Multi Ultimate DNS Blocklist (Wildcard)"
   },
+  
   {
     "description": "Increases security significantly! Blocks Malware, Crypto, Coin, Spam, Scam and Phishing.",
     "homeUrl": "https://github.com/hagezi/dns-blocklists",
@@ -17671,5 +17672,40 @@
     "issuesUrl": "https://github.com/hagezi/dns-blocklists/issues",
     "licenseId": 2,
     "name": "HaGeZi's Personal DNS Blocklist (Wildcard)"
+  },
+  {
+    "description": "Have you browsed through image search engines looking for transparent images, but all you can find are ones with fake transparency and grey chessboards in the background? Then this list is for you.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2636,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'Fake transparent images' List"
+  },
+  {
+    "description": "This list aims to combat some sites' attempts to make it impossible to copy text, right-click on pages, open the F12 menu, create fake loading times, or who otherwise obstruct people from features that they should be perfectly in their rights to have access to.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2637,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'Functionality removal' List"
+  },
+  {
+    "description": "Say goodbye to additional annoyances like floating videos, newsletter pop-ups, and other distractions. Using entries that include '#$#' requires Adblock Plus and an Adblock Plus Premium subscription.",
+    "homeUrl": "https://accounts.adblockplus.org/premium",
+    "id": 2638,
+    "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
+    "name": "Premium - Distraction Control"
+  },
+  {
+    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
+    "emailAddress": "easylist@protonmail.com",
+    "homeUrl": "https://easylist.to/",
+    "id": 2639,
+    "licenseId": 4,
+    "name": "Fanboy Notifications Blocking List (uBlock Origin)"
   }
 ]
