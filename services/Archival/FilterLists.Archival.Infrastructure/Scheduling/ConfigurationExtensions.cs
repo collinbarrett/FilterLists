@@ -11,8 +11,11 @@ internal static class ConfigurationExtensions
 
     public static void AddScheduling(this IServiceCollection services, IConfiguration configuration)
     {
-        _redis = ConnectionMultiplexer.Connect(configuration.GetConnectionString("SchedulingConnection"));
-        services.AddHangfire((_, globalConfiguration) => globalConfiguration.UseRedisStorage(_redis).UseMediatR());
+        _redis = ConnectionMultiplexer.Connect(
+            configuration.GetConnectionString("SchedulingConnection") ?? string.Empty);
+        services.AddHangfire(
+            (_, globalConfiguration) => globalConfiguration.UseRedisStorage(_redis)
+                .UseMediatR());
         services.AddHangfireServer(o => o.WorkerCount = Environment.ProcessorCount);
     }
 }

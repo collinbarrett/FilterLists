@@ -16,7 +16,9 @@ internal class CommandDbContext : DbContext, ICommandContext
 {
     static CommandDbContext()
     {
+#pragma warning disable CS0618
         NpgsqlConnection.GlobalTypeMapper.MapEnum<AggregateType>();
+#pragma warning restore CS0618
     }
 
     public CommandDbContext(DbContextOptions<CommandDbContext> options) : base(options) { }

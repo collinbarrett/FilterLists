@@ -23,7 +23,7 @@ public static class ConfigurationExtensions
         {
             StorageFolder = configuration.GetSection(ApplicationInsightsOptions.Key)
                 .Get<ApplicationInsightsOptions>()
-                .ServerTelemetryChannelStoragePath
+                ?.ServerTelemetryChannelStoragePath
         };
         services.AddSingleton(typeof(ITelemetryChannel), serverTelemetryChannel);
         TelemetryDebugWriter.IsTracingDisabled = true;

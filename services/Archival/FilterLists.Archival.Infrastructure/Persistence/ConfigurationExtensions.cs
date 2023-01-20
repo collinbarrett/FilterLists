@@ -11,16 +11,18 @@ internal static class ConfigurationExtensions
     public static void AddPersistence(this IServiceCollection services, IConfiguration configuration)
     {
         services.Configure<GitOptions>(configuration.GetSection(GitOptions.Key));
-        services.AddTransient<IRepository, Repository>(_ =>
-        {
-            var gitOptions = configuration.GetSection(GitOptions.Key).Get<GitOptions>();
-            if (!Repository.IsValid(gitOptions.RepositoryPath))
+        services.AddTransient<IRepository, Repository>(
+            _ =>
             {
-                Repository.Init(gitOptions.RepositoryPath);
-            }
+                var gitOptions = configuration.GetSection(GitOptions.Key)
+                    .Get<GitOptions>();
+                if (!Repository.IsValid(gitOptions?.RepositoryPath))
+                {
+                    Repository.Init(gitOptions?.RepositoryPath);
+                }
 
-            return new Repository(gitOptions.RepositoryPath);
-        });
+                return new Repository(gitOptions?.RepositoryPath);
+            });
         services.AddTransient<IListArchiveRepository, GitListArchiveRepository>();
     }
 }
