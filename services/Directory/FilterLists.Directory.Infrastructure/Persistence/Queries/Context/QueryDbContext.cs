@@ -9,7 +9,9 @@ public class QueryDbContext : DbContext
 {
     static QueryDbContext()
     {
+#pragma warning disable CS0618
         NpgsqlConnection.GlobalTypeMapper.MapEnum<AggregateType>();
+#pragma warning restore CS0618
     }
 
     public QueryDbContext(DbContextOptions<QueryDbContext> options) : base(options) { }

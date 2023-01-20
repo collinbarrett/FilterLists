@@ -12,15 +12,17 @@ public static class ConfigurationExtensions
     {
         // TODO: use SystemTextJsonContentSerializer() once less feature-limited
         services.AddRefitClient<IDirectoryApi>()
-            .ConfigureHttpClient(c =>
-            {
-                var host = configuration.GetSection(ApiOptions.Key).Get<ApiOptions>().DirectoryHost;
-                c.BaseAddress = new UriBuilder("http", host).Uri;
-            })
-            .AddTransientHttpErrorPolicy(b =>
-                b.WaitAndRetryAsync(new[]
+            .ConfigureHttpClient(
+                c =>
                 {
-                    TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(5), TimeSpan.FromSeconds(10)
-                }));
+                    var host = configuration.GetSection(ApiOptions.Key)
+                        .Get<ApiOptions>()
+                        ?.DirectoryHost;
+                    c.BaseAddress = new UriBuilder("http", host).Uri;
+                })
+            .AddTransientHttpErrorPolicy(
+                b =>
+                    b.WaitAndRetryAsync(
+                        new[] { TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(5), TimeSpan.FromSeconds(10) }));
     }
 }
