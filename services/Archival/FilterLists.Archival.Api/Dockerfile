@@ -1,11 +1,11 @@
 # init base
-FROM mcr.microsoft.com/dotnet/runtime-deps:6.0-alpine AS base
+FROM mcr.microsoft.com/dotnet/runtime-deps:7.0-alpine AS base
 LABEL org.opencontainers.image.description="filterlists.com | github.com/collinbarrett/filterlists | An ASP.NET Core API archiving and serving copies of FilterLists for mirrors and analysis."
 WORKDIR /app
 EXPOSE 80
 
 # init build
-FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine AS build
+FROM mcr.microsoft.com/dotnet/sdk:7.0-alpine AS build
 ENV DOTNET_CLI_TELEMETRY_OPTOUT=true
 
 # restore API
