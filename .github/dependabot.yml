@@ -1,6 +1,5 @@
 version: 2
 updates:
-  # main
   - package-ecosystem: docker
     directory: '/services/Archival/FilterLists.Archival.Api'
     schedule:
@@ -25,19 +24,7 @@ updates:
     directory: '/web'
     schedule:
       interval: daily
-  # - package-ecosystem: npm
-  #   directory: '/web'
-  #   schedule:
-  #     interval: daily
-
-  # vNext
   - package-ecosystem: npm
     directory: '/web'
     schedule:
       interval: daily
-    target-branch: 'vNext'
-  - package-ecosystem: nuget
-    directory: '/api'
-    schedule:
-      interval: daily
-    target-branch: 'vNext'
