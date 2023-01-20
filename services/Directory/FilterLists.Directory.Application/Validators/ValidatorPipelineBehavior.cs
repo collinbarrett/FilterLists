@@ -14,9 +14,7 @@ internal class ValidatorPipelineBehavior<TRequest, TResponse> : IPipelineBehavio
     }
 
     public async Task<TResponse> Handle(
-        TRequest request,
-        CancellationToken cancellationToken,
-        RequestHandlerDelegate<TResponse> next)
+        TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
     {
         await Task.WhenAll(_validators.Select(v => v.ValidateAndThrowAsync(request, cancellationToken)));
         return await next();
