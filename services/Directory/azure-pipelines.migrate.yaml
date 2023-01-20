@@ -79,7 +79,7 @@ steps:
     displayName: use latest dotnet sdk
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     inputs:
-      version: 6.x
+      version: 7.x
 
   - task: CmdLine@2
     displayName: install ef dotnet tool
