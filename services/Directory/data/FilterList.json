@@ -14887,16 +14887,16 @@
   },
   {
     "description": "Filters to defuse paywalls, subscription/newsletter nags, annoying modals, anti-adblock, and empty ad spaces on news websites",
-    "homeUrl": "https://github.com/llacb47/miscfilters",
+    "homeUrl": "https://github.com/liamengland1/miscfilters",
     "id": 2290,
-    "issuesUrl": "https://github.com/llacb47/miscfilters/issues",
+    "issuesUrl": "https://github.com/liamengland1/miscfilters/issues",
     "licenseId": 4,
     "name": "Anti-paywall filters"
   },
   {
-    "homeUrl": "https://github.com/llacb47/mischosts",
+    "homeUrl": "https://github.com/liamengland1/mischosts",
     "id": 2291,
-    "issuesUrl": "https://github.com/llacb47/mischosts/issues",
+    "issuesUrl": "https://github.com/liamengland1/mischosts/issues",
     "licenseId": 4,
     "name": "llacb47's Blacklist"
   },
