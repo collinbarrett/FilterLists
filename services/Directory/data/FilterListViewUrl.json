@@ -13701,13 +13701,13 @@
     "filterListId": 2290,
     "id": 2435,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/llacb47/miscfilters/master/antipaywall.txt"
+    "url": "https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt"
   },
   {
     "filterListId": 2291,
     "id": 2436,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/llacb47/mischosts/master/blacklist"
+    "url": "https://raw.githubusercontent.com/liamengland1/mischosts/master/blacklist"
   },
   {
     "filterListId": 2292,
