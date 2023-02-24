@@ -17705,5 +17705,15 @@
     "id": 2639,
     "licenseId": 4,
     "name": "Fanboy Notifications Blocking List (uBlock Origin)"
+  },
+  {
+    "description": "Steven Universe is a cartoon about a Mary Sue boy tagging along with racist xenophobic aliens to fight other racist xenophobic aliens for no good reason, all of whom are also bad parental figures. Here's a list to get a breather break from it.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2640,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'Steven Universe' List"
   }
 ]
