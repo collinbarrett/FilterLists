@@ -16432,5 +16432,17 @@
     "id": 2907,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Other%20domains%20versions/FanboyNotifications-LoadableInUBO.txt"
+  },
+  {
+    "filterListId": 2640,
+    "id": 2908,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiStevenUniverseList.txt"
+  },
+  {
+    "filterListId": 2640,
+    "id": 2909,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AntiStevenUniverseList.txt"
   }
 ]
