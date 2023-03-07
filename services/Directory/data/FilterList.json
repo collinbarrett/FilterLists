@@ -9319,25 +9319,25 @@
     "name": "Ultimate Hosts Blacklist Deny - Superhosts"
   },
   {
-    "description": "This is a comprehensive hosts file (IPv4) which blocks known ad, exploit, malware, and tracking servers. It is pulled from MVPS, PGL Yoyo, Malware Domain List, URL Haus and EasyList, along with a variety of supplementary sources for increased protection against telemetry, additions for mobile platforms, and emerging threat prevention. It is then merged, sorted and deduped. A notably enhanced experience with the world wide web awaits you.",
+    "description": "This is a comprehensive hosts file (IPv4) which blocks known ad, exploit, malware, and tracking servers. It is pulled from MVPS, PGL Yoyo, an updated fork of Malware Domain List, URL Haus and EasyList, along with a variety of supplementary sources for increased protection against telemetry, additions for mobile platforms, and emerging threat prevention. It is then merged, sorted and deduped. A notably enhanced experience with the world wide web awaits you.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "id": 1523,
     "licenseId": 44,
-    "name": "Combined Privacy Block Lists HOSTS (IPv4)"
+    "name": "CPBL Hosts (IPv4)"
   },
   {
     "description": "This is an IP block list (DAT-format) suitable for use in torrent clients like Halite for Windows, or qBitTorrent and Transmission under any OS. The list is merged from BlueTack Web Attacks, Hijacks, and Bad Peers, then deduped and sorted. The list adheres to ipfilter.dat conventions, and will come in especially handy on public trackers.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "id": 1524,
     "licenseId": 44,
-    "name": "Combined Privacy Block Lists IP Filter (DAT-format, IPv4)"
+    "name": "CPBL IP Filter (DAT-format, IPv4)"
   },
   {
     "description": "This is an IP block list (P2P-format) suitable for use in torrent clients like qBitTorrent and Transmission under any OS. The list is merged from BlueTack Web Attacks, Hijacks, and Bad Peers, then deduped and sorted. The list adheres to ipfilter.dat conventions, and will come in especially handy on public trackers.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "id": 1525,
     "licenseId": 44,
-    "name": "Combined Privacy Block Lists IP Filter (P2P-format, IPv4)"
+    "name": "CPBL IP Filter (P2P-format, IPv4)"
   },
   {
     "description": "Block advertisements.",
@@ -13911,18 +13911,18 @@
     "name": "EasyList Polish + EasyList (TPL)"
   },
   {
-    "description": "This is a comprehensive hosts file (IPv6) which blocks known ad, exploit, malware, and tracking servers. It is pulled from MVPS, PGL Yoyo, Malware Domain List, URL Haus and EasyList, along with a variety of supplementary sources for increased protection against telemetry, additions for mobile platforms, and emerging threat prevention. It is then merged, sorted and deduped. A notably enhanced experience with the world wide web awaits you.",
+    "description": "This is a comprehensive hosts file (IPv6) which blocks known ad, exploit, malware, and tracking servers. It is pulled from MVPS, PGL Yoyo, an updated fork of Malware Domain List, URL Haus and EasyList, along with a variety of supplementary sources for increased protection against telemetry, additions for mobile platforms, and emerging threat prevention. It is then merged, sorted and deduped. A notably enhanced experience with the world wide web awaits you.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "id": 2151,
     "licenseId": 44,
-    "name": "Combined Privacy Block Lists HOSTS (IPv6)"
+    "name": "CPBL Hosts (IPv6)"
   },
   {
-    "description": "This is a comprehensive hosts file (IPv4 + IPv6) which blocks known ad, exploit, malware, and tracking servers. It is pulled from MVPS, PGL Yoyo, Malware Domain List, URL Haus and EasyList, along with a variety of supplementary sources for increased protection against telemetry, additions for mobile platforms, and emerging threat prevention. It is then merged, sorted and deduped. A notably enhanced experience with the world wide web awaits you.",
+    "description": "This is a comprehensive hosts file (IPv4 + IPv6) which blocks known ad, exploit, malware, and tracking servers. It is pulled from MVPS, PGL Yoyo, an updated fork of Malware Domain List, URL Haus and EasyList, along with a variety of supplementary sources for increased protection against telemetry, additions for mobile platforms, and emerging threat prevention. It is then merged, sorted and deduped. A notably enhanced experience with the world wide web awaits you.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "id": 2152,
     "licenseId": 44,
-    "name": "Combined Privacy Block Lists HOSTS (IPv4 + IPv6)"
+    "name": "CPBL Hosts (IPv4 + IPv6)"
   },
   {
     "homeUrl": "https://github.com/tomzuu/blacklist-named",
@@ -15063,25 +15063,25 @@
     "name": "Krisk Intel - Malicious IP List"
   },
   {
-    "description": "This is a comprehensive hosts file (IPv4, optimized for Windows users) which blocks known ad, exploit, malware, and tracking servers. It is pulled from MVPS, PGL Yoyo, Malware Domain List, URL Haus and EasyList, along with a variety of supplementary sources for increased protection against telemetry, additions for mobile platforms, and emerging threat prevention. It is then merged, sorted and deduped. A notably enhanced experience with the world wide web awaits you.",
+    "description": "This is a comprehensive hosts file (IPv4, optimized for Windows users) which blocks known ad, exploit, malware, and tracking servers. It is pulled from MVPS, PGL Yoyo, an updated fork of Malware Domain List, URL Haus and EasyList, along with a variety of supplementary sources for increased protection against telemetry, additions for mobile platforms, and emerging threat prevention. It is then merged, sorted and deduped. A notably enhanced experience with the world wide web awaits you.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "id": 2315,
     "licenseId": 44,
-    "name": "Combined Privacy Block Lists Optimized Windows HOSTS (IPv4)"
+    "name": "CPBL Optimized Windows Hosts (IPv4)"
   },
   {
-    "description": "This is a comprehensive hosts file (IPv4 + IPv6, optimized for Windows users) which blocks known ad, exploit, malware, and tracking servers. It is pulled from MVPS, PGL Yoyo, Malware Domain List, URL Haus and EasyList, along with a variety of supplementary sources for increased protection against telemetry, additions for mobile platforms, and emerging threat prevention. It is then merged, sorted and deduped. A notably enhanced experience with the world wide web awaits you.",
+    "description": "This is a comprehensive hosts file (IPv4 + IPv6, optimized for Windows users) which blocks known ad, exploit, malware, and tracking servers. It is pulled from MVPS, PGL Yoyo, an updated fork of Malware Domain List, URL Haus and EasyList, along with a variety of supplementary sources for increased protection against telemetry, additions for mobile platforms, and emerging threat prevention. It is then merged, sorted and deduped. A notably enhanced experience with the world wide web awaits you.",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "id": 2316,
     "licenseId": 44,
-    "name": "Combined Privacy Block Lists Optimized Windows HOSTS (IPv4 + IPv6)"
+    "name": "CPBL Optimized Windows Hosts (IPv4 + IPv6)"
   },
   {
     "description": "This is a CIDR-format IP block list suitable for use with the IPSet utility, Linux-based routers, a variety of firewalls, older P2P clients and so on. Basically, it works with anything which accepts CIDR lists. It is compiled from the ad-blocking IP list provided by PGL Yoyo, a collection of smaller lists from BlockList.de, the FeodoTracker abuse list, high confidence Emerging Threats lists, along with DShield's Top Twenty, SpamHaus Drop + eDrop, and a conservative list of IPv4 bogons. It also incorporates a small list of IPs I've observed malicious activity from, via running public Shoutcast and Icecast servers for extended periods of time. It is likewise deduped + sorted (with overlapping ranges resolved).",
     "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
     "id": 2317,
     "licenseId": 44,
-    "name": "Combined Privacy Block Lists CIDR (CIDR, IPv4)"
+    "name": "CPBL CIDR (IPv4)"
   },
   {
     "description": "While the world is struggling to contain the devastating effects of the COVID-19 virus, there are an increasing number of malicious actors attempting to take advantage of it and attack organizations using the desire for information about this virus. At Managed Sentinel, we decided to create and maintain a list of IoCs (IP addresses, domains, URL and hashes) related to COVID-19 malware and update it on regular basis.",
