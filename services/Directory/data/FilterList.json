@@ -17715,5 +17715,40 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Anti-'Steven Universe' List"
+  },
+  {
+    "description": "This is a filter subscription for AdBlock Plus, uBlock Origin, AdGuard and other similar products, derived from my main hosts file, with some mostly cosmetic filters to remove overlooked web annoyances. It is much smaller than my hosts file while blocking the same amount of content and more (thanks to wildcard matching and flexibile ABP syntax). It is quite effective, and an especially good choice for those who do not have access to the hosts file or configurable DNS-based blocking options. I recommend using this list with AdGuard's Base + Tracking + Annoyances filters, or EasyList + EasyPrivacy + FanBoy's Annoyance filters, due to their additional element hiding and exception rule-sets.",
+    "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
+    "id": 2641,
+    "licenseId": 44,
+    "name": "CPBL AdBlock"
+  },
+  {
+    "description": "This is a dnsmasq blacklist that is derived from my main hosts file. Like any decent dnsmasq blacklist, it takes advantage of tld-compression / fqdn-optimization, resulting in a significantly reduced size.",
+    "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
+    "id": 2642,
+    "licenseId": 44,
+    "name": "CPBL DNSMasq"
+  },
+  {
+    "description": "This is a wildcard domain blacklist (*.some.domain) derived from my main hosts file. It benefits from tld-compression / fqdn-optimization, resulting in a significantly reduced size.",
+    "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
+    "id": 2643,
+    "licenseId": 44,
+    "name": "CPBL Wildcards"
+  },
+  {
+    "description": "This is a plain domain blacklist derived from my main hosts file. That's it.",
+    "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
+    "id": 2644,
+    "licenseId": 44,
+    "name": "CPBL Domains"
+  },
+  {
+    "description": "This is an fqdn-optimized / tld-compressed version of the plain domain blacklist derived from my main hosts file. It is similar to my wildcard domains blacklist, but without comments ('#') or syntax ('*.') additions.",
+    "homeUrl": "https://github.com/bongochong/CombinedPrivacyBlockLists",
+    "id": 2645,
+    "licenseId": 44,
+    "name": "CPBL Compressed Domains"
   }
 ]
