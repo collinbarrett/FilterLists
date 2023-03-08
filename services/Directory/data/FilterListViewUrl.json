@@ -16444,5 +16444,35 @@
     "id": 2909,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AntiStevenUniverseList.txt"
+  },
+  {
+    "filterListId": 2641,
+    "id": 2910,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/cpbl-abp-list.txt"
+  },
+  {
+    "filterListId": 2642,
+    "id": 2911,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/cpbl-dnsmasq.txt"
+  },
+  {
+    "filterListId": 2643,
+    "id": 2912,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/cpbl-wildcard-blacklist.txt"
+  },
+  {
+    "filterListId": 2644,
+    "id": 2913,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/BlacklistedDomains.txt"
+  },
+  {
+    "filterListId": 2645,
+    "id": 2914,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/cpbl-ctld.txt"
   }
 ]
