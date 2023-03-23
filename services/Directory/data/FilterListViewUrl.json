@@ -16182,122 +16182,116 @@
     "url": "https://raw.githubusercontent.com/blogmangit/Cosmetic-Filters/main/cosmetic%20filters.txt"
   },
   {
-    "filterListId": 2602,
-    "id": 2867,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
-  },
-  {
     "filterListId": 2603,
-    "id": 2868,
+    "id": 2867,
     "primariness": 1,
     "url": "https://gitlab.com/magnolia1234/bypass-paywalls-clean-filters/-/raw/main/bpc-paywall-filter.txt"
   },
   {
     "filterListId": 2604,
-    "id": 2869,
+    "id": 2868,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/thedoggybrad/anti-gotoup-buttons/master/filter.txt"
   },
   {
     "filterListId": 2605,
-    "id": 2870,
+    "id": 2869,
     "primariness": 1,
     "url": "https://lpt.lrv.lt/uploads/lpt/documents/files/institucijoms.txt"
   },
   {
     "filterListId": 2606,
-    "id": 2871,
+    "id": 2870,
     "primariness": 1,
     "url": "https://lpt.lrv.lt/uploads/lpt/documents/files/neleg.txt"
   },
   {
     "filterListId": 2607,
-    "id": 2872,
+    "id": 2871,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AnnoyancesList-2ndDivision.txt"
   },
   {
     "filterListId": 2607,
-    "id": 2873,
+    "id": 2872,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AnnoyancesList-2ndDivision.txt"
   },
   {
     "filterListId": 2608,
-    "id": 2874,
+    "id": 2873,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlocker.txt"
   },
   {
     "filterListId": 2609,
-    "id": 2875,
+    "id": 2874,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt"
   },
   {
     "filterListId": 2610,
-    "id": 2876,
+    "id": 2875,
     "primariness": 1,
     "url": "https://filters.adtidy.org/windows/filters/22.txt"
   },
   {
     "filterListId": 2611,
-    "id": 2877,
+    "id": 2876,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/DeviantARTQualityArtMagnifier.txt"
   },
   {
     "filterListId": 2611,
-    "id": 2878,
+    "id": 2877,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/DeviantARTQualityArtMagnifier.txt"
   },
   {
     "filterListId": 2612,
-    "id": 2879,
+    "id": 2878,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Leaf16591/AdAway-Default-Blocklist-AdGuard-Version/main/Host"
   },
   {
     "filterListId": 2613,
-    "id": 2880,
+    "id": 2879,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/elliotwutingfeng/Inversion-CloudIPs/main/ips.txt"
   },
   {
     "filterListId": 2614,
-    "id": 2881,
+    "id": 2880,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/thedoggybrad/no-newsletter/master/filter.txt"
   },
   {
     "filterListId": 2615,
-    "id": 2882,
+    "id": 2881,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/thedoggybrad/Frame-Blocker-Filter/main/3rdParty.txt"
   },
   {
     "filterListId": 2616,
-    "id": 2883,
+    "id": 2882,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/thedoggybrad/Frame-Blocker-Filter/main/All.txt"
   },
   {
     "filterListId": 2617,
-    "id": 2884,
+    "id": 2883,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/thedoggybrad/Frame-Blocker-Filter/main/googleyt-exception.txt"
   },
   {
     "filterListId": 2618,
-    "id": 2885,
+    "id": 2884,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/thedoggybrad/Frame-Blocker-Filter/main/socialmedia-exception.txt"
   },
   {
     "filterListId": 2619,
-    "id": 2886,
+    "id": 2885,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/thedoggybrad/Non-Essential-Frames-Blocker/main/filter.txt"
   },
