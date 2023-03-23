@@ -16746,7 +16746,7 @@
     "homeUrl": "https://github.com/JohnyP36/Personal-List",
     "id": 2519,
     "issuesUrl": "https://github.com/JohnyP36/Personal-List/issues",
-    "licenseId": 4,
+    "licenseId": 13,
     "name": "Dutch Filter List"
   },
   {
@@ -17400,14 +17400,6 @@
     "homeUrl": "https://github.com/blogmangit/Cosmetic-Filters",
     "id": 2601,
     "name": "blogmangit Cosmetic-Filters"
-  },
-  {
-    "description": "(JohnyP36:) My own updated version of EasyList Dutch. I made this filter because the EasyList Dutch filter isn't maintained often. And more important: EasyList doesn't allow anti-adblock rules.",
-    "donateUrl": "https://www.paypal.com/donate?hosted_button_id=8BBT5V55TGVXW",
-    "homeUrl": "https://github.com/JohnyP36/Personal-List",
-    "id": 2602,
-    "licenseId": 4,
-    "name": "EasyList Dutch (JohnyP36)"
   },
   {
     "description": "Adblocker list (experimental) which allows you to read articles from (supported) sites that implement a paywall. For some sites it will log you out (or block you to log in); caused by removing cookies or blocking general paywall-scripts. Disclaimer: the list doesn't support as many sites as the extension/add-on though.",
