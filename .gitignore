@@ -399,3 +399,5 @@ FodyWeavers.xsd
 .idea/
 
 .DS_Store
+
+appsettings.Development.json
