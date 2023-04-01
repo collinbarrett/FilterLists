@@ -6,6 +6,7 @@ namespace FilterLists.Api;
 
 public class FilterListsDbContext : DbContext
 {
+    // TODO: does EF Core SQL Server ship with enum and/or method that provides this?
     private readonly Type[] _nvarcharTypes = { typeof(string), typeof(Uri) };
 
     public FilterListsDbContext(DbContextOptions<FilterListsDbContext> options) : base(options)
@@ -22,8 +23,6 @@ public class FilterListsDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(modelBuilder);
-
         modelBuilder.ApplyConfigurationsFromAssembly(
             GetType().Assembly,
             type => type.Namespace == typeof(FilterListTypeConfiguration).Namespace);
@@ -36,12 +35,18 @@ public class FilterListsDbContext : DbContext
         }
     }
 
+    /// <summary>
+    ///     Override EF Core pluralization of some table names by convention
+    /// </summary>
     private static void SetTableNameToTypeName(IMutableEntityType entity)
     {
         if (entity.GetTableName() is not null)
             entity.SetTableName(entity.ClrType.Name);
     }
 
+    /// <summary>
+    ///     Default to nvarchar(4000) to allow indexes as needed
+    /// </summary>
     private void SetNvarchar4000IfUnspecified(IMutableProperty property)
     {
         if (_nvarcharTypes.Contains(property.ClrType) &&
