@@ -5,12 +5,10 @@ namespace FilterLists.Api.Entities;
 
 public record Language
 {
-    public int Id { get; private init; }
-    public string Iso6391 { get; private init; } = default!;
-    public string Name { get; private init; } = default!;
-
-    public IEnumerable<FilterListLanguage> FilterListLanguages { get; private init; } =
-        new HashSet<FilterListLanguage>();
+    public int Id { get; init; }
+    public string Iso6391 { get; init; } = default!;
+    public string Name { get; init; } = default!;
+    public IEnumerable<FilterListLanguage> FilterListLanguages { get; init; } = new HashSet<FilterListLanguage>();
 }
 
 internal class LanguageTypeConfiguration : IEntityTypeConfiguration<Language>

@@ -5,37 +5,31 @@ namespace FilterLists.Api.Entities;
 
 public record FilterList
 {
-    public int Id { get; private init; }
-    public string Name { get; private init; } = default!;
-    public string? Description { get; private init; }
-    public int LicenseId { get; private init; }
-    public License License { get; private init; } = default!;
-    public IEnumerable<FilterListSyntax> FilterListSyntaxes { get; private init; } = new HashSet<FilterListSyntax>();
-
-    public IEnumerable<FilterListLanguage> FilterListLanguages { get; private init; } =
-        new HashSet<FilterListLanguage>();
-
-    public IEnumerable<FilterListTag> FilterListTags { get; private init; } = new HashSet<FilterListTag>();
-    public IEnumerable<FilterListViewUrl> ViewUrls { get; private init; } = new HashSet<FilterListViewUrl>();
-    public Uri? HomeUrl { get; private init; }
-    public Uri? OnionUrl { get; private init; }
-    public Uri? PolicyUrl { get; private init; }
-    public Uri? SubmissionUrl { get; private init; }
-    public Uri? IssuesUrl { get; private init; }
-    public Uri? ForumUrl { get; private init; }
-    public Uri? ChatUrl { get; private init; }
-    public string? EmailAddress { get; private init; }
-    public Uri? DonateUrl { get; private init; }
-
-    public IEnumerable<FilterListMaintainer> FilterListMaintainers { get; private init; } =
-        new HashSet<FilterListMaintainer>();
-
-    public IEnumerable<Fork> UpstreamFilterLists { get; private init; } = new HashSet<Fork>();
-    public IEnumerable<Fork> ForkFilterLists { get; private init; } = new HashSet<Fork>();
-    public IEnumerable<Merge> IncludedInFilterLists { get; private init; } = new HashSet<Merge>();
-    public IEnumerable<Merge> IncludesFilterLists { get; private init; } = new HashSet<Merge>();
-    public IEnumerable<Dependent> DependencyFilterLists { get; private init; } = new HashSet<Dependent>();
-    public IEnumerable<Dependent> DependentFilterLists { get; private init; } = new HashSet<Dependent>();
+    public int Id { get; init; }
+    public string Name { get; init; } = default!;
+    public string? Description { get; init; }
+    public int LicenseId { get; init; }
+    public License License { get; init; } = default!;
+    public IEnumerable<FilterListSyntax> FilterListSyntaxes { get; init; } = new HashSet<FilterListSyntax>();
+    public IEnumerable<FilterListLanguage> FilterListLanguages { get; init; } = new HashSet<FilterListLanguage>();
+    public IEnumerable<FilterListTag> FilterListTags { get; init; } = new HashSet<FilterListTag>();
+    public IEnumerable<FilterListViewUrl> ViewUrls { get; init; } = new HashSet<FilterListViewUrl>();
+    public Uri? HomeUrl { get; init; }
+    public Uri? OnionUrl { get; init; }
+    public Uri? PolicyUrl { get; init; }
+    public Uri? SubmissionUrl { get; init; }
+    public Uri? IssuesUrl { get; init; }
+    public Uri? ForumUrl { get; init; }
+    public Uri? ChatUrl { get; init; }
+    public string? EmailAddress { get; init; }
+    public Uri? DonateUrl { get; init; }
+    public IEnumerable<FilterListMaintainer> FilterListMaintainers { get; init; } = new HashSet<FilterListMaintainer>();
+    public IEnumerable<Fork> UpstreamFilterLists { get; init; } = new HashSet<Fork>();
+    public IEnumerable<Fork> ForkFilterLists { get; init; } = new HashSet<Fork>();
+    public IEnumerable<Merge> IncludedInFilterLists { get; init; } = new HashSet<Merge>();
+    public IEnumerable<Merge> IncludesFilterLists { get; init; } = new HashSet<Merge>();
+    public IEnumerable<Dependent> DependencyFilterLists { get; init; } = new HashSet<Dependent>();
+    public IEnumerable<Dependent> DependentFilterLists { get; init; } = new HashSet<Dependent>();
 }
 
 internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList>

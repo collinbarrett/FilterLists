@@ -5,10 +5,10 @@ namespace FilterLists.Api.Entities;
 
 public record FilterListSyntax
 {
-    public int FilterListId { get; private init; }
-    public FilterList FilterList { get; private init; } = default!;
-    public int SyntaxId { get; private init; }
-    public Syntax Syntax { get; private init; } = default!;
+    public int FilterListId { get; init; }
+    public FilterList FilterList { get; init; } = default!;
+    public int SyntaxId { get; init; }
+    public Syntax Syntax { get; init; } = default!;
 }
 
 internal class FilterListSyntaxTypeConfiguration : IEntityTypeConfiguration<FilterListSyntax>

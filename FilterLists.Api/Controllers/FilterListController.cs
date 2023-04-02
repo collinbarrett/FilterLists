@@ -7,11 +7,11 @@ namespace FilterLists.Api.Controllers;
 [Route("[controller]")]
 public class FilterListController : ControllerBase
 {
-    private readonly FilterListsDbContext _dbContext;
+    private readonly ReadOnlyDbContext _dbContext;
 
     private readonly ILogger<FilterListController> _logger;
 
-    public FilterListController(ILogger<FilterListController> logger, FilterListsDbContext dbContext)
+    public FilterListController(ILogger<FilterListController> logger, ReadOnlyDbContext dbContext)
     {
         _logger = logger;
         _dbContext = dbContext;

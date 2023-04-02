@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace FilterLists.Api;
 
-public class FilterListsDbContext : DbContext
+public class ReadOnlyDbContext : DbContext
 {
     // TODO: does EF Core SQL Server ship with enum and/or method that provides this?
     private readonly Type[] _nvarcharTypes = { typeof(string), typeof(Uri) };
 
-    public FilterListsDbContext(DbContextOptions<FilterListsDbContext> options) : base(options)
+    public ReadOnlyDbContext(DbContextOptions<ReadOnlyDbContext> options) : base(options)
     {
     }
 

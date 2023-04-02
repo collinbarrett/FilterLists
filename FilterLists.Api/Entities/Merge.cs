@@ -5,10 +5,10 @@ namespace FilterLists.Api.Entities;
 
 public record Merge
 {
-    public int IncludedInFilterListId { get; private init; }
-    public FilterList IncludedInFilterList { get; private init; } = default!;
-    public int IncludesFilterListId { get; private init; }
-    public FilterList IncludesFilterList { get; private init; } = default!;
+    public int IncludedInFilterListId { get; init; }
+    public FilterList IncludedInFilterList { get; init; } = default!;
+    public int IncludesFilterListId { get; init; }
+    public FilterList IncludesFilterList { get; init; } = default!;
 }
 
 internal class MergeTypeConfiguration : IEntityTypeConfiguration<Merge>

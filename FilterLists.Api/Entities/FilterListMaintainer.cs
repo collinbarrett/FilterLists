@@ -5,10 +5,10 @@ namespace FilterLists.Api.Entities;
 
 public record FilterListMaintainer
 {
-    public int FilterListId { get; private init; }
-    public FilterList FilterList { get; private init; } = default!;
-    public int MaintainerId { get; private init; }
-    public Maintainer Maintainer { get; private init; } = default!;
+    public int FilterListId { get; init; }
+    public FilterList FilterList { get; init; } = default!;
+    public int MaintainerId { get; init; }
+    public Maintainer Maintainer { get; init; } = default!;
 }
 
 internal class FilterListMaintainerTypeConfiguration : IEntityTypeConfiguration<FilterListMaintainer>

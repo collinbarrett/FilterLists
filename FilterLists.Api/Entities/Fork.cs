@@ -5,10 +5,10 @@ namespace FilterLists.Api.Entities;
 
 public record Fork
 {
-    public int UpstreamFilterListId { get; private init; }
-    public FilterList UpstreamFilterList { get; private init; } = default!;
-    public int ForkFilterListId { get; private init; }
-    public FilterList ForkFilterList { get; private init; } = default!;
+    public int UpstreamFilterListId { get; init; }
+    public FilterList UpstreamFilterList { get; init; } = default!;
+    public int ForkFilterListId { get; init; }
+    public FilterList ForkFilterList { get; init; } = default!;
 }
 
 internal class ForkTypeConfiguration : IEntityTypeConfiguration<Fork>
