@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "FilterLists.Api": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7041",
+      "launchBrowser": false
+    }
+  }
+}
