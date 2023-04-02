@@ -1916,10 +1916,6 @@
     "tagId": 30
   },
   {
-    "filterListId": 383,
-    "tagId": 2
-  },
-  {
     "filterListId": 385,
     "tagId": 15
   },
@@ -10172,22 +10168,6 @@
     "tagId": 10
   },
   {
-    "filterListId": 2079,
-    "tagId": 4
-  },
-  {
-    "filterListId": 2081,
-    "tagId": 8
-  },
-  {
-    "filterListId": 2082,
-    "tagId": 15
-  },
-  {
-    "filterListId": 2084,
-    "tagId": 15
-  },
-  {
     "filterListId": 2085,
     "tagId": 10
   },
@@ -12762,14 +12742,6 @@
   {
     "filterListId": 2601,
     "tagId": 9
-  },
-  {
-    "filterListId": 2602,
-    "tagId": 2
-  },
-  {
-    "filterListId": 2602,
-    "tagId": 5
   },
   {
     "filterListId": 2603,
