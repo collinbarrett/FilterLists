@@ -31,7 +31,7 @@ public class FilterListsDbContext : DbContext
         {
             SetTableNameToTypeName(entity);
             foreach (var property in entity.GetProperties())
-                SetNvarchar4000IfUnspecified(property);
+                SetNvarcharTo4000IfUnspecified(property);
         }
     }
 
@@ -47,7 +47,7 @@ public class FilterListsDbContext : DbContext
     /// <summary>
     ///     Default to nvarchar(4000) to allow indexes as needed
     /// </summary>
-    private void SetNvarchar4000IfUnspecified(IMutableProperty property)
+    private void SetNvarcharTo4000IfUnspecified(IMutableProperty property)
     {
         if (_nvarcharTypes.Contains(property.ClrType) &&
             property.GetMaxLength() is null)
