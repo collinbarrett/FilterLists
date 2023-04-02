@@ -21,7 +21,9 @@ internal class MergeTypeConfiguration : IEntityTypeConfiguration<Merge>
             .HasForeignKey(m => m.IncludedInFilterListId);
         builder.HasOne(m => m.IncludesFilterList)
             .WithMany(fl => fl.IncludedInFilterLists)
-            .HasForeignKey(m => m.IncludesFilterListId);
+            .HasForeignKey(m => m.IncludesFilterListId)
+            .OnDelete(DeleteBehavior
+                .ClientSetNull); // https://github.com/dotnet/efcore/issues/12581#issuecomment-403080615;
         builder.HasDataJsonFile<Merge>();
     }
 }

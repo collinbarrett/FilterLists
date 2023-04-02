@@ -21,7 +21,9 @@ internal class ForkTypeConfiguration : IEntityTypeConfiguration<Fork>
             .HasForeignKey(f => f.UpstreamFilterListId);
         builder.HasOne(f => f.ForkFilterList)
             .WithMany(fl => fl.UpstreamFilterLists)
-            .HasForeignKey(f => f.ForkFilterListId);
+            .HasForeignKey(f => f.ForkFilterListId)
+            .OnDelete(DeleteBehavior
+                .ClientSetNull); // https://github.com/dotnet/efcore/issues/12581#issuecomment-403080615;
         builder.HasDataJsonFile<Fork>();
     }
 }

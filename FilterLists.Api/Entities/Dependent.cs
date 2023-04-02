@@ -21,7 +21,9 @@ internal class DependentTypeConfiguration : IEntityTypeConfiguration<Dependent>
             .HasForeignKey(d => d.DependencyFilterListId);
         builder.HasOne(d => d.DependentFilterList)
             .WithMany(fl => fl.DependencyFilterLists)
-            .HasForeignKey(d => d.DependentFilterListId);
+            .HasForeignKey(d => d.DependentFilterListId)
+            .OnDelete(DeleteBehavior
+                .ClientSetNull); // https://github.com/dotnet/efcore/issues/12581#issuecomment-403080615;
         builder.HasDataJsonFile<Dependent>();
     }
 }
