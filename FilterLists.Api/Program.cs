@@ -11,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<FilterListsDbContext>(
-    options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
+    options => options.UseSqlServer("name=ConnectionStrings:FilterListsReadOnly"));
 
 var app = builder.Build();
 
