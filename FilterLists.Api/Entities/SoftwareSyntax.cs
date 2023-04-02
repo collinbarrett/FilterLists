@@ -5,10 +5,10 @@ namespace FilterLists.Api.Entities;
 
 public record SoftwareSyntax
 {
-    public int SoftwareId { get; init; }
-    public Software Software { get; init; } = default!;
-    public int SyntaxId { get; init; }
-    public Syntax Syntax { get; init; } = default!;
+    public int SoftwareId { get; private init; }
+    public Software Software { get; private init; } = default!;
+    public int SyntaxId { get; private init; }
+    public Syntax Syntax { get; private init; } = default!;
 }
 
 internal class SoftwareSyntaxTypeConfiguration : IEntityTypeConfiguration<SoftwareSyntax>

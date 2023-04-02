@@ -5,12 +5,14 @@ namespace FilterLists.Api.Entities;
 
 public record Maintainer
 {
-    public int Id { get; init; }
-    public string Name { get; init; } = default!;
-    public Uri? Url { get; init; }
-    public string? EmailAddress { get; init; }
-    public string? TwitterHandle { get; init; }
-    public IEnumerable<FilterListMaintainer> FilterListMaintainers { get; init; } = new HashSet<FilterListMaintainer>();
+    public int Id { get; private init; }
+    public string Name { get; private init; } = default!;
+    public Uri? Url { get; private init; }
+    public string? EmailAddress { get; private init; }
+    public string? TwitterHandle { get; private init; }
+
+    public IEnumerable<FilterListMaintainer> FilterListMaintainers { get; private init; } =
+        new HashSet<FilterListMaintainer>();
 }
 
 internal class MaintainerTypeConfiguration : IEntityTypeConfiguration<Maintainer>

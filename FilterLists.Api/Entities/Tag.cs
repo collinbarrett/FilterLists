@@ -5,10 +5,10 @@ namespace FilterLists.Api.Entities;
 
 public record Tag
 {
-    public int Id { get; init; }
-    public string Name { get; init; } = default!;
-    public string? Description { get; init; }
-    public IEnumerable<FilterListTag> FilterListTags { get; init; } = new HashSet<FilterListTag>();
+    public int Id { get; private init; }
+    public string Name { get; private init; } = default!;
+    public string? Description { get; private init; }
+    public IEnumerable<FilterListTag> FilterListTags { get; private init; } = new HashSet<FilterListTag>();
 }
 
 internal class TagTypeConfiguration : IEntityTypeConfiguration<Tag>

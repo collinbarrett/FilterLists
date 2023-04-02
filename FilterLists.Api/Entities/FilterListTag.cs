@@ -5,10 +5,10 @@ namespace FilterLists.Api.Entities;
 
 public record FilterListTag
 {
-    public int FilterListId { get; init; }
-    public FilterList FilterList { get; init; } = default!;
-    public int TagId { get; init; }
-    public Tag Tag { get; init; } = default!;
+    public int FilterListId { get; private init; }
+    public FilterList FilterList { get; private init; } = default!;
+    public int TagId { get; private init; }
+    public Tag Tag { get; private init; } = default!;
 }
 
 internal class FilterListTagTypeConfiguration : IEntityTypeConfiguration<FilterListTag>

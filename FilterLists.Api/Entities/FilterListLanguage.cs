@@ -5,10 +5,10 @@ namespace FilterLists.Api.Entities;
 
 public record FilterListLanguage
 {
-    public int FilterListId { get; init; }
-    public FilterList FilterList { get; init; } = default!;
-    public int LanguageId { get; init; }
-    public Language Language { get; init; } = default!;
+    public int FilterListId { get; private init; }
+    public FilterList FilterList { get; private init; } = default!;
+    public int LanguageId { get; private init; }
+    public Language Language { get; private init; } = default!;
 }
 
 internal class FilterListLanguageTypeConfiguration : IEntityTypeConfiguration<FilterListLanguage>

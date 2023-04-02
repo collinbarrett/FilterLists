@@ -5,10 +5,10 @@ namespace FilterLists.Api.Entities;
 
 public record Dependent
 {
-    public int DependencyFilterListId { get; init; }
-    public FilterList DependencyFilterList { get; init; } = default!;
-    public int DependentFilterListId { get; init; }
-    public FilterList DependentFilterList { get; init; } = default!;
+    public int DependencyFilterListId { get; private init; }
+    public FilterList DependencyFilterList { get; private init; } = default!;
+    public int DependentFilterListId { get; private init; }
+    public FilterList DependentFilterList { get; private init; } = default!;
 }
 
 internal class DependentTypeConfiguration : IEntityTypeConfiguration<Dependent>

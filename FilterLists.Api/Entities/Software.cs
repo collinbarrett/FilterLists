@@ -5,13 +5,13 @@ namespace FilterLists.Api.Entities;
 
 public record Software
 {
-    public int Id { get; init; }
-    public string Name { get; init; } = default!;
-    public string? Description { get; init; }
-    public Uri? HomeUrl { get; init; }
-    public Uri? DownloadUrl { get; init; }
-    public bool SupportsAbpUrlScheme { get; init; }
-    public IEnumerable<SoftwareSyntax> SoftwareSyntaxes { get; init; } = new HashSet<SoftwareSyntax>();
+    public int Id { get; private init; }
+    public string Name { get; private init; } = default!;
+    public string? Description { get; private init; }
+    public Uri? HomeUrl { get; private init; }
+    public Uri? DownloadUrl { get; private init; }
+    public bool SupportsAbpUrlScheme { get; private init; }
+    public IEnumerable<SoftwareSyntax> SoftwareSyntaxes { get; private init; } = new HashSet<SoftwareSyntax>();
 }
 
 internal class SoftwareTypeConfiguration : IEntityTypeConfiguration<Software>
