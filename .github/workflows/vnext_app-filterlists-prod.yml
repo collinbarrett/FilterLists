@@ -3,10 +3,11 @@
 
 name: Build and deploy ASP.Net Core app to Azure Web App - app-filterlists-prod
 
+if: false
 on:
   push:
     branches:
-      # - vNext
+      - vNext
   workflow_dispatch:
 
 jobs:
