@@ -1,0 +1,216 @@
+[
+  {
+    "id": 1,
+    "name": "Hosts (localhost IPv4)",
+    "url": "https://en.wikipedia.org/wiki/Hosts_(file)"
+  },
+  {
+    "id": 2,
+    "name": "Domains"
+  },
+  {
+    "id": 3,
+    "name": "Adblock Plus",
+    "url": "https://adblockplus.org/filters"
+  },
+  {
+    "id": 4,
+    "name": "uBlock Origin Static",
+    "url": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax"
+  },
+  {
+    "id": 6,
+    "name": "AdGuard",
+    "url": "https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters"
+  },
+  {
+    "id": 7,
+    "name": "uMatrix/uBO lined dynamic rules",
+    "url": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide"
+  },
+  {
+    "id": 8,
+    "name": "URLs"
+  },
+  {
+    "id": 9,
+    "name": "IPs (IPv4)"
+  },
+  {
+    "id": 10,
+    "name": "Tracking Protection List (IE)",
+    "url": "https://blogs.msdn.microsoft.com/ie/2010/12/07/ie9-and-privacy-introducing-tracking-protection/"
+  },
+  {
+    "id": 11,
+    "name": "Redirector"
+  },
+  {
+    "id": 13,
+    "name": "MinerBlock",
+    "url": "https://github.com/xd4rker/MinerBlock"
+  },
+  {
+    "id": 14,
+    "name": "Non-localhost hosts (IPv4)",
+    "url": "https://en.wikipedia.org/wiki/Hosts_(file)"
+  },
+  {
+    "id": 15,
+    "name": "IPs (Start-end-range)"
+  },
+  {
+    "id": 16,
+    "name": "Domains with wildcards"
+  },
+  {
+    "id": 17,
+    "name": "uBlock Origin scriptlet injection",
+    "url": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#scriptlet-injection"
+  },
+  {
+    "id": 18,
+    "name": "Little Snitch subscription rules",
+    "url": "https://help.obdev.at/littlesnitch/lsc-rule-group-subscriptions"
+  },
+  {
+    "id": 19,
+    "name": "Privoxy action file",
+    "url": "https://www.privoxy.org/user-manual/actions-file.html"
+  },
+  {
+    "id": 20,
+    "name": "dnsmasq domains list"
+  },
+  {
+    "id": 21,
+    "name": "!#include compilation",
+    "url": "https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#include-file-name"
+  },
+  {
+    "id": 22,
+    "name": "DNS servers"
+  },
+  {
+    "id": 23,
+    "name": "Unix-format hosts.deny file"
+  },
+  {
+    "id": 24,
+    "name": "Unbound"
+  },
+  {
+    "id": 25,
+    "name": "Response Policy Zones (RPZ)"
+  },
+  {
+    "id": 26,
+    "name": "BIND"
+  },
+  {
+    "id": 27,
+    "name": "Windows command line script"
+  },
+  {
+    "id": 28,
+    "name": "Adblocker-syntax domains",
+    "url": "https://help.eyeo.com/en/adblockplus/how-to-write-filters#basic"
+  },
+  {
+    "id": 29,
+    "name": "Socks5"
+  },
+  {
+    "id": 30,
+    "name": "Pi-hole RegEx",
+    "url": "https://docs.pi-hole.net/ftldns/regex/tutorial/"
+  },
+  {
+    "id": 31,
+    "name": "URLRedirector"
+  },
+  {
+    "id": 34,
+    "name": "CIDRs (IPv4)"
+  },
+  {
+    "id": 36,
+    "name": "Hosts (localhost IPv6)",
+    "url": "https://en.wikipedia.org/wiki/Hosts_(file)"
+  },
+  {
+    "id": 37,
+    "name": "Non-localhost hosts (IPv6)",
+    "url": "https://en.wikipedia.org/wiki/Hosts_(file)"
+  },
+  {
+    "id": 38,
+    "name": "Adblock Plus Advanced"
+  },
+  {
+    "id": 39,
+    "name": "IPs (IPv6)"
+  },
+  {
+    "id": 41,
+    "name": "CIDRs (IPv6)"
+  },
+  {
+    "id": 44,
+    "name": "PowerShell PKG file"
+  },
+  {
+    "id": 46,
+    "name": "''$important''/''$empty'' only"
+  },
+  {
+    "id": 47,
+    "name": "Adblocker-syntax domains w/o ABP tag"
+  },
+  {
+    "id": 48,
+    "name": "Domains with ABP tag"
+  },
+  {
+    "id": 49,
+    "name": "SmartDNS"
+  },
+  {
+    "id": 50,
+    "name": "Domains for whitelisting"
+  },
+  {
+    "id": 51,
+    "name": "uMatrix ruleset recipe",
+    "url": "https://github.com/gorhill/uMatrix/wiki/Ruleset-recipes"
+  },
+  {
+    "id": 52,
+    "name": "personalDNSfilter whitelisting"
+  },
+  {
+    "id": 53,
+    "name": "uBO lined dynamic rules w/ noop",
+    "url": "https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide"
+  },
+  {
+    "id": 54,
+    "name": "Hosts (0)",
+    "url": "https://en.wikipedia.org/wiki/Hosts_(file)"
+  },
+  {
+    "id": 55,
+    "name": "AdGuard Superadvanced only",
+    "url": "https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters"
+  },
+  {
+    "id": 56,
+    "name": "Polish Cookie Consent",
+    "url": "https://polishannoyancefilters.netlify.app/en/PolishCookieConsent/syntax/"
+  },
+  {
+    "id": 57,
+    "name": "CSV",
+    "url": "https://en.wikipedia.org/wiki/Comma-separated_values"
+  }
+]

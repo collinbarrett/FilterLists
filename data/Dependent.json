@@ -1,0 +1,38 @@
+[
+  {
+    "dependencyFilterListId": 60,
+    "dependentFilterListId": 1816
+  },
+  {
+    "dependencyFilterListId": 97,
+    "dependentFilterListId": 819
+  },
+  {
+    "dependencyFilterListId": 97,
+    "dependentFilterListId": 852
+  },
+  {
+    "dependencyFilterListId": 97,
+    "dependentFilterListId": 853
+  },
+  {
+    "dependencyFilterListId": 224,
+    "dependentFilterListId": 2564
+  },
+  {
+    "dependencyFilterListId": 347,
+    "dependentFilterListId": 1817
+  },
+  {
+    "dependencyFilterListId": 2439,
+    "dependentFilterListId": 2440
+  },
+  {
+    "dependencyFilterListId": 2439,
+    "dependentFilterListId": 2441
+  },
+  {
+    "dependencyFilterListId": 2439,
+    "dependentFilterListId": 2442
+  }
+]

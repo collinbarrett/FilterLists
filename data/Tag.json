@@ -1,0 +1,207 @@
+[
+  {
+    "description": "Blocks cryptomining and/or cryptojacking",
+    "id": 1,
+    "name": "crypto"
+  },
+  {
+    "description": "Blocks advertisements",
+    "id": 2,
+    "name": "ads"
+  },
+  {
+    "description": "Blocks trackers and other privacy-invasive resources",
+    "id": 3,
+    "name": "privacy"
+  },
+  {
+    "description": "Blocks social media scripts, trackers, widgets, comment sections, etc.",
+    "id": 4,
+    "name": "social"
+  },
+  {
+    "description": "Blocks adblock detection scripts",
+    "id": 5,
+    "name": "anti-adblock"
+  },
+  {
+    "description": "Blocks malicious resources",
+    "id": 6,
+    "name": "malware"
+  },
+  {
+    "description": "Blocks phishing and/or scam resources",
+    "id": 7,
+    "name": "phishing"
+  },
+  {
+    "description": "Blocks cookie notices primarily in response to the EU Cookie Law and GDPR",
+    "id": 8,
+    "name": "cookies"
+  },
+  {
+    "description": "Blocks subjectively annoying resources",
+    "id": 9,
+    "name": "annoyances"
+  },
+  {
+    "description": "Unblocks categorical resources",
+    "id": 10,
+    "name": "allowlist"
+  },
+  {
+    "description": "Blocks adult, NSFW, pornographic, etc. resources",
+    "id": 11,
+    "name": "nsfw"
+  },
+  {
+    "description": "Redirects traffic through proxies to get around firewalls or service shutdowns",
+    "id": 12,
+    "name": "proxy"
+  },
+  {
+    "description": "Extends or blocks functionality from search engines",
+    "id": 13,
+    "name": "search"
+  },
+  {
+    "description": "Intended for research only",
+    "id": 14,
+    "name": "research"
+  },
+  {
+    "description": "Blocks specific topics/things",
+    "id": 15,
+    "name": "topical"
+  },
+  {
+    "description": "Removes obstructing or annoying overlays",
+    "id": 16,
+    "name": "overlay"
+  },
+  {
+    "description": "Blocks gambling resources",
+    "id": 17,
+    "name": "gambling"
+  },
+  {
+    "description": "Removes website-embedded fonts",
+    "id": 18,
+    "name": "fonts"
+  },
+  {
+    "description": "Blocks resources from certain companies",
+    "id": 19,
+    "name": "anti-corp"
+  },
+  {
+    "description": "Lists that are of special interest to IT admins",
+    "id": 20,
+    "name": "admin"
+  },
+  {
+    "description": "Lists that remove news stories of subjectively low quality",
+    "id": 21,
+    "name": "clickbait"
+  },
+  {
+    "description": "Blocks religious or superstitious content",
+    "id": 22,
+    "name": "religious"
+  },
+  {
+    "description": "Blocks pages from link-shortening services",
+    "id": 23,
+    "name": "shorteners"
+  },
+  {
+    "description": "Blocks piracy-focusing sites",
+    "id": 24,
+    "name": "piracy"
+  },
+  {
+    "description": "Blocks political content",
+    "id": 25,
+    "name": "politics"
+  },
+  {
+    "description": "Blocks software updates",
+    "id": 26,
+    "name": "updates"
+  },
+  {
+    "description": "Userstyles in adblocker syntax that change the appearance of sites",
+    "id": 27,
+    "name": "userstyle"
+  },
+  {
+    "description": "Blocks requests that ask you to subscribe to newsletters",
+    "id": 28,
+    "name": "newsletters"
+  },
+  {
+    "description": "Prevents \"How can I help you?\" prompts from popping up",
+    "id": 29,
+    "name": "helpprompt"
+  },
+  {
+    "description": "Blocks certain cultural content",
+    "id": 30,
+    "name": "cultural"
+  },
+  {
+    "description": "Removes empty boxes that remain after other things were blocked",
+    "id": 31,
+    "name": "empty-box"
+  },
+  {
+    "description": "Blocks prompts to subscribe to push notifications",
+    "id": 32,
+    "name": "push-notes"
+  },
+  {
+    "description": "Blocks promotions of websites' own mobile apps",
+    "id": 33,
+    "name": "app-download"
+  },
+  {
+    "description": "Lists designed for units that are neither PCs or phones, e.g. TVs, game consoles, smart-sticks, etc.",
+    "id": 34,
+    "name": "media-unit"
+  },
+  {
+    "description": "Lists that deal with specific sites or site groups only, without blocking them entirely",
+    "id": 35,
+    "name": "site-specific"
+  },
+  {
+    "description": "Lists known to be so big as to begin to cause loading/processing issues on weaker units, e.g. old phones",
+    "id": 36,
+    "name": "≥250K entries"
+  },
+  {
+    "description": "Blocks Dynamic DNS (DDNS) address providers and hosts",
+    "id": 37,
+    "name": "dynamic-domains"
+  },
+  {
+    "description": "Pre-stable lists where maintainers are extra interested in feedback",
+    "id": 38,
+    "name": "beta"
+  },
+  {
+    "description": "Replaces file and page sources to make them load faster",
+    "id": 39,
+    "name": "cdn-replacer"
+  },
+  {
+    "description": "Bypasses paywalls on websites",
+    "id": 40,
+    "name": "paywall"
+  },
+  {
+    "description": "Cleans up anime viewing websites to make them easier to use",
+    "id": 41,
+    "name": "anime"
+  }
+]

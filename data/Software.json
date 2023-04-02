@@ -1,0 +1,298 @@
+[
+  {
+    "downloadUrl": "https://github.com/gorhill/uBlock#installation",
+    "homeUrl": "https://github.com/gorhill/uBlock",
+    "id": 1,
+    "name": "uBlock Origin",
+    "supportsAbpUrlScheme": true
+  },
+  {
+    "downloadUrl": "https://adblockplus.org/",
+    "homeUrl": "https://adblockplus.org/",
+    "id": 2,
+    "name": "Adblock Plus",
+    "supportsAbpUrlScheme": true
+  },
+  {
+    "downloadUrl": "https://adguard.com/en/download.html",
+    "homeUrl": "https://adguard.com/",
+    "id": 3,
+    "name": "AdGuard (free versions)",
+    "supportsAbpUrlScheme": true
+  },
+  {
+    "downloadUrl": "https://f-droid.org/packages/org.jak_linux.dns66/",
+    "homeUrl": "https://github.com/julian-klode/dns66",
+    "id": 4,
+    "name": "DNS66",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://getadblock.com/",
+    "homeUrl": "https://getadblock.com/",
+    "id": 6,
+    "name": "AdBlock",
+    "supportsAbpUrlScheme": true
+  },
+  {
+    "downloadUrl": "https://f-droid.org/packages/org.adaway/",
+    "homeUrl": "https://adaway.org/",
+    "id": 7,
+    "name": "AdAway",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://addons.mozilla.org/firefox/addon/personal-blocklist/",
+    "homeUrl": "https://addons.mozilla.org/firefox/addon/personal-blocklist/",
+    "id": 8,
+    "name": "Personal Blocklist for Firefox",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://einaregilsson.com/redirector/",
+    "homeUrl": "https://einaregilsson.com/redirector/",
+    "id": 10,
+    "name": "Redirector",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://github.com/scottlerch/HostsFileEditor/releases",
+    "homeUrl": "https://hostsfileeditor.com/",
+    "id": 11,
+    "name": "Hosts File Editor",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://github.com/2ndalpha/gasmask/releases",
+    "homeUrl": "https://github.com/2ndalpha/gasmask",
+    "id": 12,
+    "name": "Gas Mask",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://github.com/xd4rker/MinerBlock/releases",
+    "homeUrl": "https://github.com/xd4rker/MinerBlock",
+    "id": 13,
+    "name": "MinerBlock",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://pi-hole.net/",
+    "homeUrl": "https://pi-hole.net/",
+    "id": 14,
+    "name": "Pi-hole",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://support.microsoft.com/en-gb/help/18520/download-internet-explorer-11-offline-installer",
+    "homeUrl": "https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/hh273399(v=vs.85)",
+    "id": 16,
+    "name": "Internet Explorer (TPL)",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://greasyfork.org/scripts/1682-google-hit-hider-by-domain-search-filter-block-sites",
+    "homeUrl": "https://www.jeffersonscher.com/gm/google-hit-hider/",
+    "id": 17,
+    "name": "Google Hit Hider by Domain",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://firehol.org/installing/",
+    "homeUrl": "https://firehol.org/",
+    "id": 18,
+    "name": "FireHOL",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "homeUrl": "https://www.samsungknox.com",
+    "id": 19,
+    "name": "Samsung Knox",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://www.obdev.at/products/littlesnitch/download.html",
+    "homeUrl": "https://www.obdev.at/products/littlesnitch/index.html",
+    "id": 20,
+    "name": "Little Snitch",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://www.privoxy.org/sf-download-mirror/",
+    "homeUrl": "https://www.privoxy.org/",
+    "id": 21,
+    "name": "Privoxy",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://diversion.ch/diversion/installation.html",
+    "homeUrl": "https://diversion.ch/",
+    "id": 22,
+    "name": "Diversion",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "http://www.thekelleys.org.uk/dnsmasq/",
+    "homeUrl": "http://www.thekelleys.org.uk/dnsmasq/doc.html",
+    "id": 23,
+    "name": "dnsmasq",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://github.com/gorhill/uMatrix#umatrix",
+    "homeUrl": "https://github.com/gorhill/uMatrix",
+    "id": 25,
+    "name": "uMatrix",
+    "supportsAbpUrlScheme": true
+  },
+  {
+    "downloadUrl": "https://f-droid.org/packages/org.blokada.alarm/",
+    "homeUrl": "https://blokada.org",
+    "id": 26,
+    "name": "Blokada",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://github.com/henrypp/hostsmgr/releases",
+    "homeUrl": "https://www.henrypp.org/product/hostsmgr",
+    "id": 27,
+    "name": "hostsmgr",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://zenz-solutions.de/personaldnsfilter/",
+    "homeUrl": "https://zenz-solutions.de/personaldnsfilter/",
+    "id": 28,
+    "name": "personalDNSfilter",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://nlnetlabs.nl/projects/unbound/download/",
+    "homeUrl": "https://nlnetlabs.nl/projects/unbound/about/",
+    "id": 29,
+    "name": "Unbound",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://www.isc.org/bind/",
+    "homeUrl": "https://www.isc.org/bind/",
+    "id": 30,
+    "name": "BIND",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://github.com/AdguardTeam/AdGuardHome/releases",
+    "homeUrl": "https://github.com/AdguardTeam/AdGuardHome",
+    "id": 31,
+    "name": "AdGuard Home",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://adnauseam.io/",
+    "homeUrl": "https://adnauseam.io/",
+    "id": 32,
+    "name": "AdNauseam",
+    "supportsAbpUrlScheme": true
+  },
+  {
+    "id": 33,
+    "name": "Legacy Unix derivatives",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "id": 34,
+    "name": "Windows command line",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://shadowsocks.org/en/download/clients.html",
+    "homeUrl": "https://shadowsocks.org/en/index.html",
+    "id": 35,
+    "name": "Shadowsocks",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://github.com/shadowsocksrr/shadowsocksr-csharp/releases",
+    "homeUrl": "https://github.com/shadowsocksrr/shadowsocksr-csharp",
+    "id": 36,
+    "name": "ShadowsocksR",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://apps.apple.com/app/shadowrocket/id932747118",
+    "homeUrl": "https://liguangming.com/Shadowrocket",
+    "id": 37,
+    "name": "Shadowrocket",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://github.com/fengyc/URLRedirector/#urlredirector",
+    "homeUrl": "https://github.com/fengyc/URLRedirector/",
+    "id": 38,
+    "name": "URLRedirector",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "homeUrl": "https://www.reddit.com/r/pfBlockerNG/",
+    "id": 39,
+    "name": "pfBlockerNG",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://www.opera.com/",
+    "homeUrl": "https://www.opera.com/",
+    "id": 40,
+    "name": "Opera's built-in adblocker",
+    "supportsAbpUrlScheme": true
+  },
+  {
+    "downloadUrl": "https://nssurge.com/mac/v3/Surge-latest.zip",
+    "homeUrl": "https://nssurge.com/",
+    "id": 41,
+    "name": "Surge",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/latest",
+    "homeUrl": "https://github.com/DNSCrypt/dnscrypt-proxy",
+    "id": 42,
+    "name": "dnscrypt-proxy",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://github.com/pymumu/smartdns/releases",
+    "homeUrl": "https://github.com/pymumu/smartdns",
+    "id": 43,
+    "name": "SmartDNS",
+    "supportsAbpUrlScheme": false
+  },
+  {
+    "downloadUrl": "https://adguard.com/en/download.html",
+    "homeUrl": "https://adguard.com/",
+    "id": 44,
+    "name": "AdGuard for Windows/macOS",
+    "supportsAbpUrlScheme": true
+  },
+  {
+    "downloadUrl": "https://adguard.com/adguard-android/overview.html",
+    "homeUrl": "https://adguard.com/adguard-android/overview.html",
+    "id": 45,
+    "name": "AdGuard for Android",
+    "supportsAbpUrlScheme": true
+  },
+  {
+    "downloadUrl": "https://vivaldi.com/",
+    "homeUrl": "https://vivaldi.com/",
+    "id": 46,
+    "name": "Vivaldi's Privacy settings",
+    "supportsAbpUrlScheme": true
+  },
+  {
+    "description": "Automatically accepts cookie policy/GDPR on websites.",
+    "downloadUrl": "https://github.com/FiltersHeroes/PolishCookieConsent/#how-to-install-it",
+    "homeUrl": "https://github.com/FiltersHeroes/PolishCookieConsent",
+    "id": 47,
+    "name": "Polish Cookie Consent",
+    "supportsAbpUrlScheme": false
+  }
+]
