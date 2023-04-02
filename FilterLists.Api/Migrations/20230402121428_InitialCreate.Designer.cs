@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FilterLists.Api.Migrations
 {
     [DbContext(typeof(FilterListsDbContext))]
-    [Migration("20230402090750_InitialCreate")]
+    [Migration("20230402121428_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
