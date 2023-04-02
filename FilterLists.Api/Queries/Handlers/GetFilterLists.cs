@@ -34,8 +34,7 @@ internal static class GetFilterLists
                 MaintainerIds = fl.FilterListMaintainers
                     .OrderBy(flm => flm.MaintainerId)
                     .Select(flm => flm.MaintainerId)
-            })
-            .AsSplitQuery();
+            });
         await foreach (var filterList in query.AsAsyncEnumerable().WithCancellation(cancellationToken))
             yield return filterList;
     }
