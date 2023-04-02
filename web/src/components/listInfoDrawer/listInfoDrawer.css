@@ -1,0 +1,10 @@
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0.2em;
+}
+
+.ant-btn-group
+  .ant-btn-primary
+  + .ant-btn:not(.ant-btn-primary):not([disabled]) {
+  border-left-color: rgb(67, 67, 67);
+}
