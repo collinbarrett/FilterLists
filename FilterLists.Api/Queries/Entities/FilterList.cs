@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace FilterLists.Api.Entities;
+namespace FilterLists.Api.Queries.Entities;
 
-public record FilterList
+internal record FilterList
 {
     public int Id { get; init; }
     public string Name { get; init; } = default!;

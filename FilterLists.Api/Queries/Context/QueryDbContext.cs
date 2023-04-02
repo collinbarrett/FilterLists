@@ -1,15 +1,15 @@
-﻿using FilterLists.Api.Entities;
+﻿using FilterLists.Api.Queries.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace FilterLists.Api;
+namespace FilterLists.Api.Queries.Context;
 
-public class ReadOnlyDbContext : DbContext
+internal class QueryDbContext : DbContext
 {
     // TODO: does EF Core SQL Server ship with enum and/or method that provides this?
     private readonly Type[] _nvarcharTypes = { typeof(string), typeof(Uri) };
 
-    public ReadOnlyDbContext(DbContextOptions<ReadOnlyDbContext> options) : base(options)
+    public QueryDbContext(DbContextOptions<QueryDbContext> options) : base(options)
     {
     }
 

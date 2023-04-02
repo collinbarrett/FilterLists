@@ -1,6 +1,6 @@
-﻿namespace FilterLists.Api.Entities;
+﻿namespace FilterLists.Api.Queries.Entities;
 
-public record FilterListViewUrl
+internal record FilterListViewUrl
 {
     public int Id { get; init; }
     public int FilterListId { get; init; }

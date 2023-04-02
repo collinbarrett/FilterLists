@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace FilterLists.Api.Entities;
+namespace FilterLists.Api.Queries.Entities;
 
-public record Fork
+internal record Fork
 {
     public int UpstreamFilterListId { get; init; }
     public FilterList UpstreamFilterList { get; init; } = default!;

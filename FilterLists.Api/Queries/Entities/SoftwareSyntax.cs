@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace FilterLists.Api.Entities;
+namespace FilterLists.Api.Queries.Entities;
 
-public record SoftwareSyntax
+internal record SoftwareSyntax
 {
     public int SoftwareId { get; init; }
     public Software Software { get; init; } = default!;

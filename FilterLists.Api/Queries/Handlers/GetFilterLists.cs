@@ -1,10 +1,11 @@
+using FilterLists.Api.Queries.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace FilterLists.Api;
+namespace FilterLists.Api.Queries.Handlers;
 
-public static class GetFilterLists
+internal static class GetFilterLists
 {
-    public static async Task<string?> ExecuteAsync(ReadOnlyDbContext dbContext, CancellationToken cancellationToken)
+    public static async Task<string?> ExecuteAsync(IQueryContext dbContext, CancellationToken cancellationToken)
     {
         var list = await dbContext.FilterLists.Where(f => f.Id == 1).Include(f => f.ViewUrls)
             .SingleOrDefaultAsync(f => f.Id == 1, cancellationToken);

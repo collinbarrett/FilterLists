@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace FilterLists.Api.Entities;
+namespace FilterLists.Api.Queries.Entities;
 
-public record Dependent
+internal record Dependent
 {
     public int DependencyFilterListId { get; init; }
     public FilterList DependencyFilterList { get; init; } = default!;

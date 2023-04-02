@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace FilterLists.Api.Entities;
+namespace FilterLists.Api.Queries.Entities;
 
-public record Merge
+internal record Merge
 {
     public int IncludedInFilterListId { get; init; }
     public FilterList IncludedInFilterList { get; init; } = default!;

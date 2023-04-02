@@ -1,4 +1,5 @@
 using FilterLists.Api;
+using FilterLists.Api.Queries.Context;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,8 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<ReadOnlyDbContext>(options =>
+builder.Services.AddDbContext<QueryDbContext>(options =>
     options.UseSqlServer("name=ConnectionStrings:FilterListsReadOnly"));
+builder.Services.AddScoped<IQueryContext, QueryContext>();
 
 var app = builder.Build();
 
@@ -16,8 +18,6 @@ app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
-app.MapGet("/lists",
-    async (ReadOnlyDbContext dbContext, CancellationToken cancellationToken) =>
-        await GetFilterLists.ExecuteAsync(dbContext, cancellationToken));
+app.MapRoutes();
 
 app.Run();
