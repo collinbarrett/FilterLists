@@ -23,6 +23,9 @@ internal class QueryDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        // MS-recommended https://learn.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-ver16#SQL-collations
+        modelBuilder.UseCollation("Latin1_General_100_CI_AS_SC");
+
         modelBuilder.ApplyConfigurationsFromAssembly(
             GetType().Assembly,
             type => type.Namespace == typeof(FilterListTypeConfiguration).Namespace);
