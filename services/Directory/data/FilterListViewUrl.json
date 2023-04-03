@@ -16465,8 +16465,56 @@
   },
   {
     "filterListId": 2519,
-    "id": 2914,
+    "id": 2923,
     "primariness": 4,
     "url": "https://cdn.statically.io/gh/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
+  },
+  {
+    "filterListId": 2646,
+    "id": 2915,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/quick-fixes.txt"
+  },
+  {
+    "filterListId": 2647,
+    "id": 2916,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badlists.txt"
+  },
+  {
+    "filterListId": 2648,
+    "id": 2917,
+    "primariness": 1,
+    "url": "https://filters.adtidy.org/extension/ublock/filters/23.txt"
+  },
+  {
+    "filterListId": 2649,
+    "id": 2918,
+    "primariness": 1,
+    "url": "https://filters.adtidy.org/extension/chromium/filters/23.txt"
+  },
+  {
+    "filterListId": 2650,
+    "id": 2919,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AfricanLanguagesList.txt"
+  },
+  {
+    "filterListId": 2650,
+    "id": 2920,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AfricanLanguagesList.txt"
+  },
+  {
+    "filterListId": 2651,
+    "id": 2921,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiMV3List.txt"
+  },
+  {
+    "filterListId": 2651,
+    "id": 2922,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AntiMV3List.txt"
   }
 ]
