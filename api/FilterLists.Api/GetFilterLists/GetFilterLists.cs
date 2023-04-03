@@ -10,16 +10,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Api.GetFilterLists;
 
-internal class GetFilterListsFunction
+internal class GetFilterLists
 {
     private readonly IQueryContext _queryContext;
 
-    public GetFilterListsFunction(IQueryContext queryContext)
+    public GetFilterLists(IQueryContext queryContext)
     {
         _queryContext = queryContext;
     }
 
-    [FunctionName("GetFilterListsFunction")]
+    [FunctionName("GetFilterLists")]
     public Task<List<FilterList>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "lists")]
         HttpRequest req,
