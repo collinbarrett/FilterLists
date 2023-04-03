@@ -17742,5 +17742,59 @@
     "id": 2645,
     "licenseId": 44,
     "name": "CPBL Compressed Domains"
+  },
+  {
+    "description": "Immediate, temporary filters to fix websites",
+    "homeUrl": "https://github.com/uBlockOrigin/uAssets",
+    "id": 2646,
+    "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
+    "licenseId": 4,
+    "name": "uAssets Quick Fixes"
+  },
+  {
+    "description": "A list of filterlist URLs that uBlock Origin will refuse to load as custom lists at all.",
+    "homeUrl": "https://github.com/uBlockOrigin/uAssets",
+    "id": 2647,
+    "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
+    "licenseId": 4,
+    "name": "uAssets Badlists"
+  },
+  {
+    "description": "Filter that enables ad blocking on websites in Ukrainian language.",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "id": 2648,
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Ukrainian Filter (uBlock Origin)",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
+  },
+  {
+    "description": "Filter that enables ad blocking on websites in Ukrainian language.",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "id": 2649,
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Ukrainian Filter (AdGuard for Chromium)",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
+  },
+  {
+    "description": "Spun off from «Ad Removal List for Unusual Ads», as a result of not all African languages having newssites with high enough Alexa ranks to make it to AdGuard Base Filter's «Foreign» section.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2650,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's African Languages List"
+  },
+  {
+    "description": "When I (Dandelion Sprout) declared war on Chrome Manifest V3 in 2021, I really meant it. With this list that blocks MV3 extensions' download files and homepages, you too can be an active participant in the survival war.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2651,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'Manifest V3' List"
   }
 ]
