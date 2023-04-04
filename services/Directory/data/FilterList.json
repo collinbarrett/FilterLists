@@ -16884,20 +16884,22 @@
     "syntaxId": 1
   },
   {
-    "description": "Block malware, phishing, and scams for a more secure computer",
+    "description": "This list aims to protect against scams, phishing, malware, and potentially unwanted programs (PUPs). It includes a version of vxvault.net's list, modified by me (iam-py-test) to work in adblockers.",
     "homeUrl": "https://github.com/iam-py-test/my_filters_001",
     "id": 2537,
     "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues",
+    "emailAddress": "iam-py-test@protonmail.com",
     "licenseId": 28,
-    "name": "Malicious website blocklist"
+    "name": "The malicious website blocklist"
   },
   {
-    "description": "Block malware, phishing, and scams for a more secure computer (HOSTS version - not for uBlock Origin)",
+    "description": "This list aims to protect against scams, phishing, malware, and potentially unwanted programs (PUPs). It includes a version of vxvault.net's list, modified by me (iam-py-test) to work in adblockers. (HOSTs version - not for uBlock Origin)",
     "homeUrl": "https://github.com/iam-py-test/my_filters_001",
     "id": 2538,
     "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues/",
+    "emailAddress": "iam-py-test@protonmail.com",
     "licenseId": 28,
-    "name": "Malicious website blocklist (HOSTS)"
+    "name": "The malicious website blocklist (HOSTs file)"
   },
   {
     "description": "The family filter for AdGuard Home",
@@ -16919,12 +16921,13 @@
     "name": "TrilobiteFilter"
   },
   {
-    "description": "Block malware, phishing, and scams for a more secure computer (Domains version)",
+    "description": "This list aims to protect against scams, phishing, malware, and potentially unwanted programs (PUPs). It includes a version of vxvault.net's list, modified by me (iam-py-test) to work in adblockers. (Domains version)",
     "homeUrl": "https://github.com/iam-py-test/my_filters_001",
     "id": 2541,
     "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues/",
+    "emailAddress": "iam-py-test@protonmail.com",
     "licenseId": 28,
-    "name": "Malicious website blocklist (Domains)"
+    "name": "The malicious website blocklist (Domains)"
   },
   {
     "description": "Blocks irritating elements on web pages that do not fall under the popular categories of annoyances.",
@@ -17796,5 +17799,14 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Anti-'Manifest V3' List"
+  },
+  {
+    "description": "VXVault's list of URLs serving malware, converted into a filterlist",
+    "emailAddress": "iam-py-test@protonmail.com",
+    "homeUrl": "https://github.com/iam-py-test/vxvault_filter",
+    "id": 2652,
+    "issuesUrl": "https://github.com/iam-py-test/vxvault_filter/issues",
+    "licenseId": 28,
+    "name": "VXVault filterlist (unofficial)"
   }
 ]

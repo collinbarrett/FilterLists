@@ -16516,5 +16516,17 @@
     "id": 2923,
     "primariness": 4,
     "url": "https://cdn.statically.io/gh/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
+  },
+  {
+    "filterListId": 2652,
+    "id": 2924,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/iam-py-test/vxvault_filter/main/ubolist.txt"
+  },
+  {
+    "filterListId": 2652,
+    "id": 2925,
+    "primariness": 2,
+    "url": "https://iam-py-test.github.io/vxvault_filter/ubolist.txt"
   }
 ]
