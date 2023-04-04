@@ -9,37 +9,32 @@ on:
     branches:
       - vNext
 
-env:
-  DOTNET_VERSION: '6' # The .NET SDK version to use
-
 jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup .NET Core
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: ${{ env.DOTNET_VERSION }}
+          dotnet-version: 6
       - name: Build API
         run: |
-          dotnet publish api/FilterLists.Api/FilterLists.Api.csproj -c Release -o api/build --no-self-contained -r win-x86 -p:PublishReadyToRun=true
+          dotnet publish api/FilterLists.Api -c Release -o api/build --no-self-contained -r win-x86 -p:PublishReadyToRun=true
       - name: Build And Deploy
-        id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_JOLLY_FLOWER_0B6EA7010 }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/web" # App source code path
+          # https://aka.ms/swaworkflowconfig
+          app_location: "/web"
+          output_location: "build"
           skip_api_build: true
-          api_location: "/api/build" # Api source code path - optional
-          output_location: "build" # Built app content directory - optional
-          ###### End of Repository/Build Configurations ######
+          api_location: "/api/build"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
