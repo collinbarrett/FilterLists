@@ -16464,12 +16464,6 @@
     "url": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/cpbl-ctld.txt"
   },
   {
-    "filterListId": 2519,
-    "id": 2923,
-    "primariness": 4,
-    "url": "https://cdn.statically.io/gh/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
-  },
-  {
     "filterListId": 2646,
     "id": 2915,
     "primariness": 1,
@@ -16516,5 +16510,11 @@
     "id": 2922,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AntiMV3List.txt"
+  },
+  {
+    "filterListId": 2519,
+    "id": 2923,
+    "primariness": 4,
+    "url": "https://cdn.statically.io/gh/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
   }
 ]
