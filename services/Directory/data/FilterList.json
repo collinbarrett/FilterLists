@@ -16885,19 +16885,19 @@
   },
   {
     "description": "This list aims to protect against scams, phishing, malware, and potentially unwanted programs (PUPs). It includes a version of vxvault.net's list, modified by me (iam-py-test) to work in adblockers.",
+    "emailAddress": "iam-py-test@protonmail.com",
     "homeUrl": "https://github.com/iam-py-test/my_filters_001",
     "id": 2537,
     "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues",
-    "emailAddress": "iam-py-test@protonmail.com",
     "licenseId": 28,
     "name": "The malicious website blocklist"
   },
   {
     "description": "This list aims to protect against scams, phishing, malware, and potentially unwanted programs (PUPs). It includes a version of vxvault.net's list, modified by me (iam-py-test) to work in adblockers. (HOSTs version - not for uBlock Origin)",
+    "emailAddress": "iam-py-test@protonmail.com",
     "homeUrl": "https://github.com/iam-py-test/my_filters_001",
     "id": 2538,
     "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues/",
-    "emailAddress": "iam-py-test@protonmail.com",
     "licenseId": 28,
     "name": "The malicious website blocklist (HOSTs file)"
   },
@@ -16922,10 +16922,10 @@
   },
   {
     "description": "This list aims to protect against scams, phishing, malware, and potentially unwanted programs (PUPs). It includes a version of vxvault.net's list, modified by me (iam-py-test) to work in adblockers. (Domains version)",
+    "emailAddress": "iam-py-test@protonmail.com",
     "homeUrl": "https://github.com/iam-py-test/my_filters_001",
     "id": 2541,
     "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues/",
-    "emailAddress": "iam-py-test@protonmail.com",
     "licenseId": 28,
     "name": "The malicious website blocklist (Domains)"
   },
