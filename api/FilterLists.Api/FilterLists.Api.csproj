@@ -2,9 +2,6 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <AzureFunctionsVersion>V4</AzureFunctionsVersion>
-        <SelfContained>true</SelfContained>
-        <PublishReadyToRun>true</PublishReadyToRun>
-        <RuntimeIdentifiers>win-x86;osx-x64</RuntimeIdentifiers>
         <Nullable>enable</Nullable>
     </PropertyGroup>
     <ItemGroup>
