@@ -1,5 +1,4 @@
 ﻿using FilterLists.Api.Infrastructure.Entities;
-using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Api.Infrastructure.Context;
 
@@ -22,11 +21,11 @@ internal sealed class QueryContext : IQueryContext, IAsyncDisposable, IDisposabl
         _dbContext.Dispose();
     }
 
-    public IQueryable<FilterList> FilterLists => _dbContext.FilterLists.AsNoTracking();
-    public IQueryable<Language> Languages => _dbContext.Languages.AsNoTracking();
-    public IQueryable<License> Licenses => _dbContext.Licenses.AsNoTracking();
-    public IQueryable<Maintainer> Maintainers => _dbContext.Maintainers.AsNoTracking();
-    public IQueryable<Software> Software => _dbContext.Software.AsNoTracking();
-    public IQueryable<Syntax> Syntaxes => _dbContext.Syntaxes.AsNoTracking();
-    public IQueryable<Tag> Tags => _dbContext.Tags.AsNoTracking();
+    public IQueryable<FilterList> FilterLists => _dbContext.FilterLists;
+    public IQueryable<Language> Languages => _dbContext.Languages;
+    public IQueryable<License> Licenses => _dbContext.Licenses;
+    public IQueryable<Maintainer> Maintainers => _dbContext.Maintainers;
+    public IQueryable<Software> Software => _dbContext.Software;
+    public IQueryable<Syntax> Syntaxes => _dbContext.Syntaxes;
+    public IQueryable<Tag> Tags => _dbContext.Tags;
 }

@@ -8,8 +8,10 @@ public static class ConfigurationExtensions
 {
     public static void AddInfrastructure(this IServiceCollection services, string readOnlyConnectionString)
     {
-        services.AddDbContext<QueryDbContext>(options => options.UseSqlServer(readOnlyConnectionString,
-            b => b.MigrationsAssembly("FilterLists.Api.Infrastructure.Migrations")));
+        services.AddDbContext<QueryDbContext>(options =>
+            options.UseSqlServer(readOnlyConnectionString,
+                    b => b.MigrationsAssembly("FilterLists.Api.Infrastructure.Migrations"))
+                .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
         services.AddScoped<IQueryContext, QueryContext>();
     }
 }
