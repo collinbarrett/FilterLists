@@ -15831,140 +15831,35 @@
     "id": 2814,
     "primariness": 1,
     "segmentNumber": 1,
-    "url": "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/wildcard.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2815,
-    "primariness": 2,
-    "segmentNumber": 1,
-    "url": "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/wildcard.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2816,
-    "primariness": 3,
-    "segmentNumber": 1,
-    "url": "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/wildcard.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2817,
-    "primariness": 4,
-    "segmentNumber": 1,
-    "url": "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/wildcard.list"
+    "url": "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/wildcard.list"
   },
   {
     "filterListId": 2566,
     "id": 2818,
     "primariness": 1,
     "segmentNumber": 2,
-    "url": "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/tld.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2819,
-    "primariness": 2,
-    "segmentNumber": 2,
-    "url": "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/tld.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2820,
-    "primariness": 3,
-    "segmentNumber": 2,
-    "url": "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/tld.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2821,
-    "primariness": 4,
-    "segmentNumber": 2,
-    "url": "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/tld.list"
+    "url": "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/tld.list"
   },
   {
     "filterListId": 2566,
     "id": 2822,
     "primariness": 1,
     "segmentNumber": 3,
-    "url": "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/domains.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2823,
-    "primariness": 2,
-    "segmentNumber": 3,
-    "url": "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/domains.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2824,
-    "primariness": 3,
-    "segmentNumber": 3,
-    "url": "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/domains.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2825,
-    "primariness": 4,
-    "segmentNumber": 3,
-    "url": "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/domains.list"
+    "url": "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/domains.list"
   },
   {
     "filterListId": 2566,
     "id": 2826,
     "primariness": 1,
     "segmentNumber": 4,
-    "url": "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/hosts.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2827,
-    "primariness": 2,
-    "segmentNumber": 4,
-    "url": "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/hosts.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2828,
-    "primariness": 3,
-    "segmentNumber": 4,
-    "url": "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/hosts.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2829,
-    "primariness": 4,
-    "segmentNumber": 4,
-    "url": "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/hosts.list"
+    "url": "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/hosts.list"
   },
   {
     "filterListId": 2566,
     "id": 2830,
     "primariness": 1,
     "segmentNumber": 5,
-    "url": "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/snuff.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2831,
-    "primariness": 2,
-    "segmentNumber": 5,
-    "url": "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/snuff.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2832,
-    "primariness": 3,
-    "segmentNumber": 5,
-    "url": "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/snuff.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2833,
-    "primariness": 4,
-    "segmentNumber": 5,
-    "url": "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/snuff.list"
+    "url": "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/snuff.list"
   },
   {
     "filterListId": 2567,

@@ -12521,14 +12521,14 @@
   },
   {
     "description": "This repository is www.mypdns.org self maintained list of domains that needs to be blocked for various reasons.",
-    "homeUrl": "https://gitlab.com/my-privacy-dns/matrix/matrix/",
+    "homeUrl": "https://0xacab.org/my-privacy-dns/matrix",
     "id": 1933,
     "licenseId": 43,
     "name": "My Privacy DNS Matrix - Adware"
   },
   {
     "description": "This repository is www.mypdns.org self maintained list of domains that needs to be blocked for various reasons.",
-    "homeUrl": "https://gitlab.com/my-privacy-dns/matrix/matrix/",
+    "homeUrl": "https://0xacab.org/my-privacy-dns/matrix",
     "id": 1934,
     "licenseId": 43,
     "name": "My Privacy DNS Matrix - Tracking"
@@ -17126,15 +17126,13 @@
     "description": "Porn Records Blacklisting. Porn Records from My Privacy DNS is among the best maintained projects and one of them with the lowest FP's as all records are veryfied by a human before committed to the lists. We do also have a Browser add-on for simple committing new domains",
     "donateUrl": "https://ko-fi.com/X8X37FUGU",
     "emailAddress": "incoming+my-privacy-dns-porn-records-2-dmptefj25u6tlslz82c3oolb9-issue@noreply.mypdns.org",
-    "homeUrl": "https://mypdns.org/my-privacy-dns/porn-records",
+    "homeUrl": "https://0xacab.org/my-privacy-dns/matrix",
     "id": 2566,
-    "issuesUrl": "https://mypdns.org/my-privacy-dns/porn-records/-/issues",
+    "issuesUrl": "https://0xacab.org/my-privacy-dns/matrix/-/issues",
     "licenseId": 13,
     "name": "My Privacy DNS - Porn Records Blacklist",
-    "policyUrl": "https://mypdns.org/my-privacy-dns/porn-records/-/blob/master/README.md",
-    "submissionUrl": "https://mypdns.org/my-privacy-dns/porn-records/-/issues",
-    "viewUrlMirror1": "https://github.com/porn-records/Porn-Records",
-    "viewUrlMirror2": "https://gitlab.com/MypDNS/porn-records"
+    "policyUrl": "https://0xacab.org/my-privacy-dns/matrix/-/blob/master/README.md",
+    "submissionUrl": "https://0xacab.org/my-privacy-dns/matrix/-/issues"
   },
   {
     "description": "Filter that enables removing of ads and anti-adblock scripts from websites with Korean content.",
