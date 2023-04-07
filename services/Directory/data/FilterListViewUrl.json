@@ -16423,5 +16423,40 @@
     "id": 2925,
     "primariness": 2,
     "url": "https://iam-py-test.github.io/vxvault_filter/ubolist.txt"
+  },
+  {
+    "filterListId": 2566,
+    "id": 2926,
+    "primariness": 2,
+    "segmentNumber": 1,
+    "url": "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/wildcard.list"
+  },
+  {
+    "filterListId": 2566,
+    "id": 2927,
+    "primariness": 2,
+    "segmentNumber": 2,
+    "url": "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/tld.list"
+  },
+  {
+    "filterListId": 2566,
+    "id": 2928,
+    "primariness": 2,
+    "segmentNumber": 3,
+    "url": "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/domains.list"
+  },
+  {
+    "filterListId": 2566,
+    "id": 2929,
+    "primariness": 2,
+    "segmentNumber": 4,
+    "url": "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/hosts.list"
+  },
+  {
+    "filterListId": 2566,
+    "id": 2930,
+    "primariness": 2,
+    "segmentNumber": 5,
+    "url": "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/snuff.list"
   }
 ]
