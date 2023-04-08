@@ -17125,14 +17125,16 @@
     "chatUrl": "https://matrix.to/#/#porn-records:anontier.nl",
     "description": "Porn Records Blacklisting. Porn Records from My Privacy DNS is among the best maintained projects and one of them with the lowest FP's as all records are veryfied by a human before committed to the lists. We do also have a Browser add-on for simple committing new domains",
     "donateUrl": "https://ko-fi.com/X8X37FUGU",
-    "emailAddress": "incoming+my-privacy-dns-porn-records-2-dmptefj25u6tlslz82c3oolb9-issue@noreply.mypdns.org",
+    "emailAddress": "0xacab+my-privacy-dns-support-4711-issue-@riseup.net",
     "homeUrl": "https://0xacab.org/my-privacy-dns/matrix",
     "id": 2566,
     "issuesUrl": "https://0xacab.org/my-privacy-dns/matrix/-/issues",
     "licenseId": 13,
     "name": "My Privacy DNS - Porn Records Blacklist",
     "policyUrl": "https://0xacab.org/my-privacy-dns/matrix/-/blob/master/source/porn_filters/README.md",
-    "submissionUrl": "https://0xacab.org/my-privacy-dns/matrix/-/issues"
+    "submissionUrl": "https://0xacab.org/my-privacy-dns/matrix/-/issues",
+    "onionUrl":"http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix",
+    "forumUrl": "https://0xacab.org/my-privacy-dns/support/-/issues"
   },
   {
     "description": "Filter that enables removing of ads and anti-adblock scripts from websites with Korean content.",
