@@ -15,7 +15,7 @@ env:
 
 jobs:
   build-and-deploy:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -26,16 +26,13 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Build
-        shell: pwsh
         run: |
-          pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
-          dotnet build -c Release -o ./output --no-self-contained -r win-x86 -p:PublishReadyToRun=true
-          popd
+          dotnet build ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }} -c Release -o ./output --no-self-contained -r win-x86 -p:PublishReadyToRun=true
 
       - name: Deploy
         uses: Azure/functions-action@v1
         with:
-          app-name: "func-filterlistsapi-prod-eastus2"
-          slot-name: "Production"
-          package: "${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output"
+          app-name: func-filterlistsapi-prod-eastus2
+          slot-name: Production
+          package: ./output
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_07FA9737E3E4421590FEEE5334235CED }}
