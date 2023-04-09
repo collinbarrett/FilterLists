@@ -1,10 +1,13 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/azure/functions-action
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and Deploy API Azure Function
+name: Build and Deploy API
 
 on:
   push:
+    paths:
+      - .github/workflows/vnext_func-filterlistsapi-prod-eastus2.yml
+      - api/**
     branches:
       - vNext
   workflow_dispatch:

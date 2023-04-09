@@ -1,7 +1,10 @@
-name: Azure Static Web Apps CI/CD
+name: Build & Deploy Web
 
 on:
   push:
+    paths:
+      - .github/workflows/azure-static-web-apps-white-sky-05098940f.yml
+      - web/**
     branches:
       - vNext
   pull_request:
