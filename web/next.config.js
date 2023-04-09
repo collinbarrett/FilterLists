@@ -5,7 +5,7 @@ const nextConfig = {
   },
 
   // https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-nextjs-hybrid#enable-standalone-feature
-  output:"standalone",
-}
+  output: "standalone",
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
