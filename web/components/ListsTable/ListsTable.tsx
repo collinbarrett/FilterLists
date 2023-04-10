@@ -1,4 +1,4 @@
-import { FilterList } from "@/interfaces/FilterList";
+import { FilterList } from "@/interfaces";
 import { Table } from "antd";
 
 interface Props {
