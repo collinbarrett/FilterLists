@@ -1,7 +1,7 @@
 import { ApiOutlined } from "@ant-design/icons";
 import { Tag } from "antd";
 
-const Api = () => (
+export const Api = () => (
   <Tag>
     <a
       href="/api"
@@ -13,5 +13,3 @@ const Api = () => (
     </a>
   </Tag>
 );
-
-export default Api;

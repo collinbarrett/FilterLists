@@ -1,6 +1,6 @@
 import { Tag } from "antd";
 
-const Copyright = () => (
+export const Copyright = () => (
   <Tag>
     <a
       href="https://collinmbarrett.com"
@@ -12,4 +12,3 @@ const Copyright = () => (
     </a>
   </Tag>
 );
-export default Copyright;

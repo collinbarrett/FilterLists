@@ -1,7 +1,7 @@
 import { TwitterOutlined } from "@ant-design/icons";
 import { Tag } from "antd";
 
-const Twitter = () => (
+export const Twitter = () => (
   <Tag>
     <a
       href="https://twitter.com/FilterLists"
@@ -13,4 +13,3 @@ const Twitter = () => (
     </a>
   </Tag>
 );
-export default Twitter;

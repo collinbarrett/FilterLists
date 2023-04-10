@@ -3,13 +3,15 @@ import type { AppProps } from "next/app";
 import "antd/dist/reset.css";
 import React from "react";
 import { Layout } from "antd";
-import Logo from "@/components/logo/logo";
-import Menu from "@/components/menu";
-import Copyright from "@/components/copyright";
-import Twitter from "@/components/twitter";
-import GitHub from "@/components/github";
-import Api from "@/components/api";
-import Donate from "@/components/donate";
+import {
+  Logo,
+  Copyright,
+  Api,
+  GitHub,
+  Twitter,
+  Donate,
+  Menu,
+} from "@/components";
 
 const { Header, Content, Footer } = Layout;
 

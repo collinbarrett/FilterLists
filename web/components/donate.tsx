@@ -1,7 +1,7 @@
 import { DollarOutlined } from "@ant-design/icons";
 import { Tag } from "antd";
 
-const Donate = () => (
+export const Donate = () => (
   <Tag>
     <a
       href="https://github.com/sponsors/collinbarrett"
@@ -13,4 +13,3 @@ const Donate = () => (
     </a>
   </Tag>
 );
-export default Donate;

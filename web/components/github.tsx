@@ -1,7 +1,7 @@
 import { GithubOutlined } from "@ant-design/icons";
 import { Tag } from "antd";
 
-const GitHub = () => (
+export const GitHub = () => (
   <Tag>
     <a
       href="https://github.com/collinbarrett/FilterLists"
@@ -13,4 +13,3 @@ const GitHub = () => (
     </a>
   </Tag>
 );
-export default GitHub;

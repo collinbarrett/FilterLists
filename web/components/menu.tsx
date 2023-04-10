@@ -14,7 +14,7 @@ const routes = [
   },
 ];
 
-const Menu = () => {
+export const Menu = () => {
   const [current, setCurrent] = useState("/");
   const router = useRouter();
   useEffect(() => {
@@ -33,4 +33,3 @@ const Menu = () => {
     />
   );
 };
-export default Menu;
