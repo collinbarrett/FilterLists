@@ -21,7 +21,7 @@ internal class GetSyntaxes
 
     [FunctionName("GetSyntaxes")]
     public Task<List<Syntax>> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "syntaxes")]
+        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "syntaxes")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {

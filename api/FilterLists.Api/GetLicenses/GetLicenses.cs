@@ -21,7 +21,7 @@ internal class GetLicenses
 
     [FunctionName("GetLicenses")]
     public Task<List<License>> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "licenses")]
+        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "licenses")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {

@@ -21,7 +21,7 @@ internal class GetMaintainers
 
     [FunctionName("GetMaintainers")]
     public Task<List<Maintainer>> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "maintainers")]
+        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "maintainers")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {

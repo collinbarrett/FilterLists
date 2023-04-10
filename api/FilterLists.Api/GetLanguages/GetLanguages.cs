@@ -21,7 +21,7 @@ internal class GetLanguages
 
     [FunctionName("GetLanguages")]
     public Task<List<Language>> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "languages")]
+        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "languages")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {

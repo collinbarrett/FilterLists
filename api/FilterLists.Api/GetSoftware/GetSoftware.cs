@@ -21,7 +21,7 @@ internal class GetSoftware
 
     [FunctionName("GetSoftware")]
     public Task<List<Software>> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "software")]
+        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "software")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {

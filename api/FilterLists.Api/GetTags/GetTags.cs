@@ -21,7 +21,7 @@ internal class GetTags
 
     [FunctionName("GetTags")]
     public Task<List<Tag>> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "tags")]
+        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "tags")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {

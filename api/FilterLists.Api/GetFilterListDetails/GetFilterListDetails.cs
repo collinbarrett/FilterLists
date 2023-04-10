@@ -20,7 +20,7 @@ internal class GetFilterListDetails
 
     [FunctionName("GetFilterListDetails")]
     public Task<FilterListDetails?> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "lists/{id}")]
+        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "lists/{id}")]
         HttpRequest req,
         int id,
         CancellationToken cancellationToken)
