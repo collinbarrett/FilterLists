@@ -1,30 +1,45 @@
 version: 2
 updates:
   - package-ecosystem: docker
-    directory: '/services/Archival/FilterLists.Archival.Api'
+    directory: /services/Archival/FilterLists.Archival.Api
     schedule:
       interval: daily
   - package-ecosystem: nuget
-    directory: '/services/Archival/FilterLists.Archival.Api'
+    directory: /services/Archival/FilterLists.Archival.Api
     schedule:
       interval: daily
   - package-ecosystem: docker
-    directory: '/services/Directory/FilterLists.Directory.Api'
+    directory: /services/Directory/FilterLists.Directory.Api
     schedule:
       interval: daily
   - package-ecosystem: nuget
-    directory: '/services/Directory/FilterLists.Directory.Api'
+    directory: /services/Directory/FilterLists.Directory.Api
     schedule:
       interval: daily
   - package-ecosystem: nuget
-    directory: '/services/Directory/FilterLists.Directory.Infrastructure.Migrations.Tests'
+    directory: /services/Directory/FilterLists.Directory.Infrastructure.Migrations.Tests
     schedule:
       interval: daily
   - package-ecosystem: docker
-    directory: '/web'
+    directory: /web
     schedule:
       interval: daily
   - package-ecosystem: npm
-    directory: '/web'
+    directory: /web
+    schedule:
+      interval: daily
+  - package-ecosystem: nuget
+    directory: /api/FilterLists.Api
+    target-branch: vNext
+    schedule:
+      interval: daily
+  - package-ecosystem: nuget
+    directory: /api/FilterLists.Api.Infrastructure.Migrations
+    target-branch: vNext
+    schedule:
+      interval: daily
+  - package-ecosystem: npm
+    directory: /web
+    target-branch: vNext
     schedule:
       interval: daily
