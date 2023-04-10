@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import "antd/dist/reset.css";
 import React from "react";
 import { Layout } from "antd";
-import Logo from "@/components/logo";
+import Logo from "@/components/logo/logo";
 import Menu from "@/components/menu";
 
 const { Header, Content, Footer } = Layout;
