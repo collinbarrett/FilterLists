@@ -5,3 +5,4 @@ export * from "./footer/github";
 export * from "./footer/menu";
 export * from "./footer/twitter";
 export * from "./header/logo";
+export * from "./listsTable/listsTable";
