@@ -12,22 +12,21 @@ import {
   Donate,
   Menu,
 } from "@/components";
+import styles from "./_app.module.css";
 
 const { Header, Content, Footer } = Layout;
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Layout>
-      <Header>
-        <div style={{ display: "flex" }}>
-          <Logo />
-          <Menu />
-        </div>
+      <Header className={styles.header}>
+        <Logo />
+        <Menu />
       </Header>
-      <Content style={{ padding: "0 50px" }}>
+      <Content className={styles.content}>
         <Component {...pageProps} />
       </Content>
-      <Footer style={{ textAlign: "center" }}>
+      <Footer className={styles.footer}>
         <Copyright />
         <Api />
         <GitHub />

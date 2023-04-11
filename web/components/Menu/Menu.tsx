@@ -2,34 +2,25 @@ import Link from "next/link";
 import { Menu as MenuAntd } from "antd";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-
-const routes = [
-  {
-    route: "/",
-    description: "Lists",
-  },
-  {
-    route: "/about",
-    description: "About",
-  },
-];
+import { routes } from "./Routes";
+import styles from "./Menu.module.css";
 
 export const Menu = () => {
-  const [current, setCurrent] = useState("/");
+  const [currentMenuItem, setCurrentMenuItem] = useState("/");
   const router = useRouter();
   useEffect(() => {
-    setCurrent(router.asPath);
+    setCurrentMenuItem(router.asPath);
   }, [router]);
   return (
     <MenuAntd
-      style={{ flex: "auto", minWidth: 0 }}
+      className={styles.menu}
       theme="dark"
       mode="horizontal"
       items={routes.map((item) => ({
         label: <Link href={item.route}>{item.description}</Link>,
         key: item.route,
       }))}
-      selectedKeys={[current]}
+      selectedKeys={[currentMenuItem]}
     />
   );
 };
