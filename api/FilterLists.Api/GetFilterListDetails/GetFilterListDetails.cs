@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading;
@@ -8,9 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
-using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
 
 namespace FilterLists.Api.GetFilterListDetails;
 
@@ -24,11 +21,11 @@ internal class GetFilterListDetails
     }
 
     [OpenApiOperation]
-    [OpenApiParameter(name: "id", Required = true, Type = typeof(int))]
-    [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(FilterListDetails))]
+    [OpenApiParameter("id", Required = true, Type = typeof(int))]
+    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(FilterListDetails))]
     [FunctionName("GetFilterListDetails")]
     public Task<FilterListDetails?> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "lists/{id:int}")]
+        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "lists/{id:int}")]
         HttpRequest req,
         int id,
         CancellationToken cancellationToken)

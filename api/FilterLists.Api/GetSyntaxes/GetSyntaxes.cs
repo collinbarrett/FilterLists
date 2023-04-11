@@ -22,10 +22,10 @@ internal class GetSyntaxes
     }
 
     [OpenApiOperation]
-    [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(List<Syntax>))]
+    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Syntax>))]
     [FunctionName("GetSyntaxes")]
     public Task<List<Syntax>> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "syntaxes")]
+        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "syntaxes")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {

@@ -22,10 +22,10 @@ internal class GetMaintainers
     }
 
     [OpenApiOperation]
-    [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(List<Maintainer>))]
+    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Maintainer>))]
     [FunctionName("GetMaintainers")]
     public Task<List<Maintainer>> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "maintainers")]
+        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "maintainers")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {

@@ -22,10 +22,10 @@ internal class GetSoftware
     }
 
     [OpenApiOperation]
-    [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(List<Software>))]
+    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Software>))]
     [FunctionName("GetSoftware")]
     public Task<List<Software>> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "software")]
+        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "software")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {

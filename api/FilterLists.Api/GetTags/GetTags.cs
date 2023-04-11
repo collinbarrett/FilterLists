@@ -22,10 +22,10 @@ internal class GetTags
     }
 
     [OpenApiOperation]
-    [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(List<Tag>))]
+    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Tag>))]
     [FunctionName("GetTags")]
     public Task<List<Tag>> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "tags")]
+        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "tags")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {

@@ -22,10 +22,10 @@ internal class GetLicenses
     }
 
     [OpenApiOperation]
-    [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(List<License>))]
+    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<License>))]
     [FunctionName("GetLicenses")]
     public Task<List<License>> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "licenses")]
+        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "licenses")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {
