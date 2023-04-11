@@ -10,7 +10,14 @@ public static class ConfigurationExtensions
     {
         services.AddDbContext<QueryDbContext>(options =>
             options.UseSqlServer(readOnlyConnectionString,
-                    b => b.MigrationsAssembly("FilterLists.Api.Infrastructure.Migrations"))
+                    b =>
+                    {
+                        b.MigrationsAssembly("FilterLists.Api.Infrastructure.Migrations");
+                        b.EnableRetryOnFailure(
+                            10,
+                            TimeSpan.FromSeconds(30),
+                            null);
+                    })
                 .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
         services.AddScoped<IQueryContext, QueryContext>();
     }
