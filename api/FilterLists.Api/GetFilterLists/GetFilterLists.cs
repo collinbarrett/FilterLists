@@ -1,12 +1,16 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Api.Infrastructure.Context;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
+using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 namespace FilterLists.Api.GetFilterLists;
 
@@ -19,6 +23,8 @@ internal class GetFilterLists
         _queryContext = queryContext;
     }
 
+    [OpenApiOperation]
+    [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(List<FilterList>))]
     [FunctionName("GetFilterLists")]
     public Task<List<FilterList>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "lists")]
