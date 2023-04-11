@@ -28,9 +28,7 @@ export default function Home({
 }
 
 export async function getStaticProps() {
-  const res = await fetch(
-    "https://func-filterlistsapi-prod-eastus2.azurewebsites.net/api/lists"
-  );
+  const res = await fetch(process.env.FILTERLISTS_API_URL + "/lists");
   const filterlists = await res.json();
   return {
     props: { filterlists },
