@@ -20,7 +20,7 @@ internal class GetFilterListDetails
         _queryContext = queryContext;
     }
 
-    [OpenApiOperation]
+    [OpenApiOperation(tags: "FilterLists")]
     [OpenApiParameter("id", Required = true, Type = typeof(int))]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(FilterListDetails))]
     [FunctionName("GetFilterListDetails")]

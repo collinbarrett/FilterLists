@@ -21,7 +21,7 @@ internal class GetSyntaxes
         _queryContext = queryContext;
     }
 
-    [OpenApiOperation]
+    [OpenApiOperation(tags: "Syntaxes")]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Syntax>))]
     [FunctionName("GetSyntaxes")]
     public Task<List<Syntax>> RunAsync(

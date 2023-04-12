@@ -21,7 +21,7 @@ internal class GetLicenses
         _queryContext = queryContext;
     }
 
-    [OpenApiOperation]
+    [OpenApiOperation(tags: "Licenses")]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<License>))]
     [FunctionName("GetLicenses")]
     public Task<List<License>> RunAsync(

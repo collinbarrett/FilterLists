@@ -21,7 +21,7 @@ internal class GetLanguages
         _queryContext = queryContext;
     }
 
-    [OpenApiOperation]
+    [OpenApiOperation(tags: "Languages")]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Language>))]
     [FunctionName("GetLanguages")]
     public Task<List<Language>> RunAsync(

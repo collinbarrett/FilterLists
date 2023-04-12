@@ -21,7 +21,7 @@ internal class GetFilterLists
         _queryContext = queryContext;
     }
 
-    [OpenApiOperation]
+    [OpenApiOperation(tags: "FilterLists")]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<FilterList>))]
     [FunctionName("GetFilterLists")]
     public Task<List<FilterList>> RunAsync(

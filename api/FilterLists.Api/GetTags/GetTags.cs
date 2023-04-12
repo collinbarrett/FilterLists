@@ -21,7 +21,7 @@ internal class GetTags
         _queryContext = queryContext;
     }
 
-    [OpenApiOperation]
+    [OpenApiOperation(tags: "Tags")]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Tag>))]
     [FunctionName("GetTags")]
     public Task<List<Tag>> RunAsync(

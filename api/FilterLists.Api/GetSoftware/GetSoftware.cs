@@ -21,7 +21,7 @@ internal class GetSoftware
         _queryContext = queryContext;
     }
 
-    [OpenApiOperation]
+    [OpenApiOperation(tags: "Software")]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Software>))]
     [FunctionName("GetSoftware")]
     public Task<List<Software>> RunAsync(

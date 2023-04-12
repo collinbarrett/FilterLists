@@ -21,7 +21,7 @@ internal class GetMaintainers
         _queryContext = queryContext;
     }
 
-    [OpenApiOperation]
+    [OpenApiOperation(tags: "Maintainers")]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Maintainer>))]
     [FunctionName("GetMaintainers")]
     public Task<List<Maintainer>> RunAsync(
