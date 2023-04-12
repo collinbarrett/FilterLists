@@ -29,7 +29,7 @@ jobs:
           action: "upload"
           app_location: "/web"
         env:
-          FILTERLISTS_API_URL: https://api.filterlists.com
+          FILTERLISTS_API_URL: https://api.filterlists.com/v1
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
