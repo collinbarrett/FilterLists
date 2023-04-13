@@ -1,6 +1,6 @@
-import { FilterList } from "@/interfaces";
+import { FilterList } from "@/src/interfaces";
 import { Table } from "antd";
-import { localeCompare } from "@/utils";
+import { localeCompare } from "@/src/utils";
 
 interface Props {
   lists: FilterList[];

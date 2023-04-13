@@ -11,7 +11,7 @@ import {
   Twitter,
   Donate,
   Menu,
-} from "@/components";
+} from "@/src/components";
 import styles from "./_app.module.css";
 
 const { Header, Content, Footer } = Layout;

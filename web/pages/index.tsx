@@ -1,4 +1,4 @@
-import { ListsTable } from "@/components";
+import { ListsTable } from "@/src/components";
 import { InferGetStaticPropsType } from "next";
 
 import Head from "next/head";
