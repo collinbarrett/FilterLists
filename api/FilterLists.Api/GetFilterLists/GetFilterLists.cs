@@ -23,9 +23,12 @@ internal class GetFilterLists
     }
 
     [OpenApiOperation(tags: "FilterLists")]
-    [OpenApiParameter(ODataExtensions.OrderByParamKey, Type = typeof(string), In = ParameterLocation.Query, Description = "https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html#_Toc31358952")]
-    [OpenApiParameter(ODataExtensions.SkipParamKey, Type = typeof(int), In = ParameterLocation.Query, Description = "https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html#sec_SystemQueryOptionskip")]
-    [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query, Description = "https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html#sec_SystemQueryOptiontop")]
+    [OpenApiParameter(ODataExtensions.OrderByParamKey, Type = typeof(string), In = ParameterLocation.Query,
+        Description = ODataExtensions.OrderByParamDescription)]
+    [OpenApiParameter(ODataExtensions.SkipParamKey, Type = typeof(int), In = ParameterLocation.Query,
+        Description = ODataExtensions.SkipParamDescription)]
+    [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
+        Description = ODataExtensions.TopParamDescription)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<FilterList>))]
     [FunctionName("GetFilterLists")]
     public Task<List<FilterList>> RunAsync(

@@ -9,6 +9,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 namespace FilterLists.Api.GetMaintainers;
 
@@ -22,6 +23,12 @@ internal class GetMaintainers
     }
 
     [OpenApiOperation(tags: "Maintainers")]
+    [OpenApiParameter(ODataExtensions.OrderByParamKey, Type = typeof(string), In = ParameterLocation.Query,
+        Description = ODataExtensions.OrderByParamDescription)]
+    [OpenApiParameter(ODataExtensions.SkipParamKey, Type = typeof(int), In = ParameterLocation.Query,
+        Description = ODataExtensions.SkipParamDescription)]
+    [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
+        Description = ODataExtensions.TopParamDescription)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Maintainer>))]
     [FunctionName("GetMaintainers")]
     public Task<List<Maintainer>> RunAsync(
@@ -30,7 +37,6 @@ internal class GetMaintainers
         CancellationToken cancellationToken)
     {
         return _queryContext.Maintainers
-            .OrderBy(m => m.Id)
             .Select(m => new Maintainer
             {
                 Id = m.Id,
@@ -41,6 +47,10 @@ internal class GetMaintainers
                 FilterListIds = m.FilterListMaintainers
                     .OrderBy(flm => flm.FilterListId)
                     .Select(flm => flm.FilterListId)
-            }).ToListAsync(cancellationToken);
+            }).OrderBy(m => m.Id)
+            .ApplyODataOrderBy(req.Query)
+            .ApplyODataSkip(req.Query)
+            .ApplyODataTop(req.Query)
+            .ToListAsync(cancellationToken);
     }
 }

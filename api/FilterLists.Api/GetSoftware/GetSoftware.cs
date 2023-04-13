@@ -9,6 +9,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 namespace FilterLists.Api.GetSoftware;
 
@@ -22,6 +23,12 @@ internal class GetSoftware
     }
 
     [OpenApiOperation(tags: "Software")]
+    [OpenApiParameter(ODataExtensions.OrderByParamKey, Type = typeof(string), In = ParameterLocation.Query,
+        Description = ODataExtensions.OrderByParamDescription)]
+    [OpenApiParameter(ODataExtensions.SkipParamKey, Type = typeof(int), In = ParameterLocation.Query,
+        Description = ODataExtensions.SkipParamDescription)]
+    [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
+        Description = ODataExtensions.TopParamDescription)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Software>))]
     [FunctionName("GetSoftware")]
     public Task<List<Software>> RunAsync(
@@ -30,19 +37,21 @@ internal class GetSoftware
         CancellationToken cancellationToken)
     {
         return _queryContext.Software
-            .OrderBy(s => s.Id)
             .Select(s => new Software
-                {
-                    Id = s.Id,
-                    Name = s.Name,
-                    Description = s.Description,
-                    HomeUrl = s.HomeUrl,
-                    DownloadUrl = s.DownloadUrl,
-                    SupportsAbpUrlScheme = s.SupportsAbpUrlScheme,
-                    SyntaxIds = s.SoftwareSyntaxes
-                        .OrderBy(ss => ss.SyntaxId)
-                        .Select(ss => ss.SyntaxId)
-                }
-            ).ToListAsync(cancellationToken);
+            {
+                Id = s.Id,
+                Name = s.Name,
+                Description = s.Description,
+                HomeUrl = s.HomeUrl,
+                DownloadUrl = s.DownloadUrl,
+                SupportsAbpUrlScheme = s.SupportsAbpUrlScheme,
+                SyntaxIds = s.SoftwareSyntaxes
+                    .OrderBy(ss => ss.SyntaxId)
+                    .Select(ss => ss.SyntaxId)
+            }).OrderBy(s => s.Id)
+            .ApplyODataOrderBy(req.Query)
+            .ApplyODataSkip(req.Query)
+            .ApplyODataTop(req.Query)
+            .ToListAsync(cancellationToken);
     }
 }

@@ -9,6 +9,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 namespace FilterLists.Api.GetLanguages;
 
@@ -22,6 +23,12 @@ internal class GetLanguages
     }
 
     [OpenApiOperation(tags: "Languages")]
+    [OpenApiParameter(ODataExtensions.OrderByParamKey, Type = typeof(string), In = ParameterLocation.Query,
+        Description = ODataExtensions.OrderByParamDescription)]
+    [OpenApiParameter(ODataExtensions.SkipParamKey, Type = typeof(int), In = ParameterLocation.Query,
+        Description = ODataExtensions.SkipParamDescription)]
+    [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
+        Description = ODataExtensions.TopParamDescription)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Language>))]
     [FunctionName("GetLanguages")]
     public Task<List<Language>> RunAsync(
@@ -30,16 +37,18 @@ internal class GetLanguages
         CancellationToken cancellationToken)
     {
         return _queryContext.Languages
-            .OrderBy(l => l.Id)
             .Select(l => new Language
-                {
-                    Id = l.Id,
-                    Iso6391 = l.Iso6391,
-                    Name = l.Name,
-                    FilterListIds = l.FilterListLanguages
-                        .OrderBy(fll => fll.FilterListId)
-                        .Select(fll => fll.FilterListId)
-                }
-            ).ToListAsync(cancellationToken);
+            {
+                Id = l.Id,
+                Iso6391 = l.Iso6391,
+                Name = l.Name,
+                FilterListIds = l.FilterListLanguages
+                    .OrderBy(fll => fll.FilterListId)
+                    .Select(fll => fll.FilterListId)
+            }).OrderBy(l => l.Id)
+            .ApplyODataOrderBy(req.Query)
+            .ApplyODataSkip(req.Query)
+            .ApplyODataTop(req.Query)
+            .ToListAsync(cancellationToken);
     }
 }
