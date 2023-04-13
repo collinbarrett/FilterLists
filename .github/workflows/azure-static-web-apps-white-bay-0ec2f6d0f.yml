@@ -21,9 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Disable Next.js telemetry
-        run: npx next telemetry disable
-
       - name: Build and Deploy
         uses: Azure/static-web-apps-deploy@v1
         with:
@@ -33,6 +30,7 @@ jobs:
           app_location: "/web"
         env:
           FILTERLISTS_API_URL: https://api.filterlists.com/v1
+          NEXT_TELEMETRY_DISABLED: 1
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
