@@ -9,6 +9,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 namespace FilterLists.Api.GetFilterLists;
 
@@ -22,6 +23,9 @@ internal class GetFilterLists
     }
 
     [OpenApiOperation(tags: "FilterLists")]
+    [OpenApiParameter(ODataExtensions.OrderByParamKey, Type = typeof(string), In = ParameterLocation.Query)]
+    [OpenApiParameter(ODataExtensions.SkipParamKey, Type = typeof(int), In = ParameterLocation.Query)]
+    [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<FilterList>))]
     [FunctionName("GetFilterLists")]
     public Task<List<FilterList>> RunAsync(
@@ -30,7 +34,6 @@ internal class GetFilterLists
         CancellationToken cancellationToken)
     {
         return _queryContext.FilterLists
-            .OrderBy(fl => fl.Id)
             .Select(fl => new FilterList
             {
                 Id = fl.Id,
@@ -46,14 +49,13 @@ internal class GetFilterLists
                 TagIds = fl.FilterListTags
                     .OrderBy(flt => flt.TagId)
                     .Select(flt => flt.TagId),
-                PrimaryViewUrl = fl.ViewUrls
-                    .OrderBy(u => u.SegmentNumber)
-                    .ThenBy(u => u.Primariness)
-                    .Select(u => u.Url)
-                    .FirstOrDefault(),
                 MaintainerIds = fl.FilterListMaintainers
                     .OrderBy(flm => flm.MaintainerId)
                     .Select(flm => flm.MaintainerId)
-            }).ToListAsync(cancellationToken);
+            }).OrderBy(fl => fl.Id)
+            .ApplyODataOrderBy(req.Query)
+            .ApplyODataSkip(req.Query)
+            .ApplyODataTop(req.Query)
+            .ToListAsync(cancellationToken);
     }
 }
