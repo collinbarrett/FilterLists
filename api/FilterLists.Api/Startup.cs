@@ -18,6 +18,6 @@ public class Startup : FunctionsStartup
                                        throw new InvalidOperationException($"Missing {connectionStringKey}");
         builder.Services.AddInfrastructure(readOnlyConnectionString);
         builder.Services.AddSingleton<IOpenApiConfigurationOptions>(
-            _ => new FilterListsApiOpenApiConfigurationOptions());
+            _ => new OpenApiConfigurationOptions());
     }
 }

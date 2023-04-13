@@ -6,7 +6,7 @@ using Microsoft.OpenApi.Models;
 
 namespace FilterLists.Api;
 
-internal class FilterListsApiOpenApiConfigurationOptions : DefaultOpenApiConfigurationOptions
+internal class OpenApiConfigurationOptions : DefaultOpenApiConfigurationOptions
 {
     public override OpenApiInfo Info { get; set; } = new()
     {
