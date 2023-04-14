@@ -27,14 +27,15 @@ const Home = ({
 
 export default Home;
 
-export async function getStaticProps() {
+export const getStaticProps = async () => {
   const [lists, licenses] = await Promise.all([fetchLists(), fetchLicenses()]);
   return {
     props: { lists, licenses },
+    revalidate: 86400,
   };
-}
+};
 
-async function fetchLists() {
+const fetchLists = async () => {
   const url =
     `${process.env.NEXT_PUBLIC_FILTERLISTS_API_URL}/lists?` +
     new URLSearchParams({
@@ -43,10 +44,10 @@ async function fetchLists() {
     });
   const response = await fetch(url);
   return await response.json();
-}
+};
 
-async function fetchLicenses() {
+const fetchLicenses = async () => {
   const url = `${process.env.NEXT_PUBLIC_FILTERLISTS_API_URL}/licenses`;
   const response = await fetch(url);
   return await response.json();
-}
+};
