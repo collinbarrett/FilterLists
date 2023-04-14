@@ -3,7 +3,10 @@ import { InferGetStaticPropsType } from "next";
 
 import Head from "next/head";
 
-const Home = ({ jsonData }: InferGetStaticPropsType<typeof getStaticProps>) => (
+const Home = ({
+  lists,
+  licenses,
+}: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
     <Head>
       <title>
@@ -17,7 +20,7 @@ const Home = ({ jsonData }: InferGetStaticPropsType<typeof getStaticProps>) => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <main>
-      <ListsTable {...jsonData} />
+      <ListsTable lists={lists} licenses={licenses} />
     </main>
   </>
 );
@@ -25,6 +28,13 @@ const Home = ({ jsonData }: InferGetStaticPropsType<typeof getStaticProps>) => (
 export default Home;
 
 export async function getStaticProps() {
+  const [lists, licenses] = await Promise.all([fetchLists(), fetchLicenses()]);
+  return {
+    props: { lists, licenses },
+  };
+}
+
+async function fetchLists() {
   const url =
     `${process.env.NEXT_PUBLIC_FILTERLISTS_API_URL}/lists?` +
     new URLSearchParams({
@@ -32,8 +42,11 @@ export async function getStaticProps() {
       $top: "10",
     });
   const response = await fetch(url);
-  const jsonData = await response.json();
-  return {
-    props: { jsonData },
-  };
+  return await response.json();
+}
+
+async function fetchLicenses() {
+  const url = `${process.env.NEXT_PUBLIC_FILTERLISTS_API_URL}/licenses`;
+  const response = await fetch(url);
+  return await response.json();
 }

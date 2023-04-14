@@ -1,16 +1,19 @@
 import { Space, Table } from "antd";
 import { useListsTable } from "./useListsTable";
-import { OData, FilterList } from "@/src/interfaces";
-import { localeCompare } from "@/src/utils";
-import { ShowListButton } from "./components";
+import { OData, FilterList, License } from "@/src/interfaces";
+import { LicenseTag, ShowListButton } from "./components";
 
-export const ListsTable = (props: OData<FilterList>) => (
-  <Table<FilterList> {...useListsTable(props)}>
+interface Props {
+  lists: OData<FilterList>;
+  licenses: OData<License>;
+}
+
+export const ListsTable = (props: Props) => (
+  <Table<FilterList> {...useListsTable({ ...props.lists })}>
     <Table.Column<FilterList>
       dataIndex="name"
       title="Name"
       sorter={{
-        compare: (a, b) => localeCompare({ a: a.name, b: b.name }),
         multiple: 1,
       }}
     />
@@ -18,9 +21,18 @@ export const ListsTable = (props: OData<FilterList>) => (
       dataIndex="description"
       title="Description"
       sorter={{
-        compare: (a, b) =>
-          localeCompare({ a: a.description, b: b.description }),
+        multiple: 3,
+      }}
+    />
+    <Table.Column<FilterList>
+      dataIndex="licenseId"
+      title="License"
+      sorter={{
         multiple: 2,
+      }}
+      render={(id) => {
+        const license = props.licenses.value.find((l) => l.id === id);
+        return license && <LicenseTag {...license} />;
       }}
     />
     <Table.Column<FilterList>

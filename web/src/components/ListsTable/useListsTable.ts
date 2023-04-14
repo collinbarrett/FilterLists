@@ -74,6 +74,8 @@ const toODataOrderBy = (
     .filter((sorter) => sorter.order)
     .map(
       (sorter) =>
-        `${sorter.field} ${sorter.order === "descend" ? "desc" : "asc"}`
+        `${sorter.field === "licenseId" ? "license/name" : sorter.field} ${
+          sorter.order === "descend" ? "desc" : "asc"
+        }`
     )
     .join(",");

@@ -2,7 +2,7 @@ export interface FilterList {
   id: number;
   name: string;
   description?: string;
-  licenseId?: number;
+  licenseId: number;
   syntaxIds: number[];
   softwareIds: number[];
   languageIds: number[];

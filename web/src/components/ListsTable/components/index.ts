@@ -1,3 +1,4 @@
+import { LicenseTag } from "./LicenseTag";
 import { ShowListButton } from "./ShowListButton";
 
-export { ShowListButton };
+export { LicenseTag, ShowListButton };
