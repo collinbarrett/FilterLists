@@ -18,27 +18,18 @@ export const LicenseTag = (license: License) => (
   </Tag>
 );
 
-function getColor(license: License) {
-  switch (
+const getColor = (license: License): string | undefined =>
+  permissionsColorMap.get(
     `${license.permitsDistribution}-${license.permitsModification}-${license.permitsCommercialUse}`
-  ) {
-    case "true-true-true":
-      return "cyan";
-    case "true-true-false":
-      return "green";
-    case "true-false-true":
-      return "lime";
-    case "true-false-false":
-      return "gold";
-    case "false-true-true":
-      return "orange";
-    case "false-true-false":
-      return "volcano";
-    case "false-false-true":
-      return "red";
-    case "false-false-false":
-      return "magenta";
-    default:
-      return undefined;
-  }
-}
+  );
+
+const permissionsColorMap = new Map<string, string>([
+  ["true-true-true", "cyan"],
+  ["true-true-false", "green"],
+  ["true-false-true", "lime"],
+  ["true-false-false", "gold"],
+  ["false-true-true", "orange"],
+  ["false-true-false", "volcano"],
+  ["false-false-true", "red"],
+  ["false-false-false", "magenta"],
+]);
