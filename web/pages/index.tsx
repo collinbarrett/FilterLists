@@ -28,26 +28,43 @@ const Home = ({
 export default Home;
 
 export const getStaticProps = async () => {
-  const [lists, licenses] = await Promise.all([fetchLists(), fetchLicenses()]);
+  const [lists, licenses, syntaxes, software, languages, tags, maintainers] =
+    // TODO: consider creating a single protected (for UI-use only) endpoint that returns all data
+    await Promise.all([
+      fetchLists(),
+      fetchLicenses(),
+      fetchSyntaxes(),
+      fetchSoftware(),
+      fetchLanguages(),
+      fetchTags(),
+      fetchMaintainers(),
+    ]);
   return {
-    props: { lists, licenses },
+    props: {
+      lists,
+      licenses,
+      syntaxes,
+      software,
+      languages,
+      tags,
+      maintainers,
+    },
     revalidate: 86400,
   };
 };
 
-const fetchLists = async () => {
-  const url =
-    `${process.env.NEXT_PUBLIC_FILTERLISTS_API_URL}/lists?` +
-    new URLSearchParams({
-      $count: "true",
-      $top: "10",
-    });
-  const response = await fetch(url);
-  return await response.json();
-};
+const fetchLists = () =>
+  fetchData("lists", new URLSearchParams({ $count: "true", $top: "10" }));
+const fetchLicenses = () => fetchData("licenses");
+const fetchSyntaxes = () => fetchData("syntaxes");
+const fetchSoftware = () => fetchData("software");
+const fetchLanguages = () => fetchData("languages");
+const fetchTags = () => fetchData("tags");
+const fetchMaintainers = () => fetchData("maintainers");
 
-const fetchLicenses = async () => {
-  const url = `${process.env.NEXT_PUBLIC_FILTERLISTS_API_URL}/licenses`;
+const fetchData = async (endpoint: string, params?: URLSearchParams) => {
+  const base_url = `${process.env.NEXT_PUBLIC_FILTERLISTS_API_URL}/${endpoint}`;
+  const url = params ? `${base_url}?${params}` : base_url;
   const response = await fetch(url);
   return await response.json();
 };
