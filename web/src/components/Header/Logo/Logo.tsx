@@ -4,6 +4,6 @@ import Image from "next/image";
 
 export const Logo = () => (
   <Link href="/">
-    <Image src={logo} alt="FilterLists logo" />
+    <Image src={logo} alt="FilterLists logo" priority />
   </Link>
 );
