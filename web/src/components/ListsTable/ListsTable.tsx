@@ -63,27 +63,42 @@ export const ListsTable = (props: OData<FilterList>) => {
   );
 };
 
-// TODO: multiple sorter https://ant.design/components/table#components-table-demo-multiple-sorter
 const toODataOrderBy = (
   sorter: SorterResult<FilterList> | SorterResult<FilterList>[]
 ) => {
   const sorterArray = coalesceToArray(sorter);
-  let orderBy = "";
-  sorterArray.forEach((element) => {
-    if (element.order) {
-      orderBy += `${element.field} ${
-        element.order === "descend" ? "desc" : "asc"
-      }`;
-    }
-  });
-  return orderBy;
+  return sorterArray
+    .sort((a, b) => {
+      const aMultiple = (
+        a.column?.sorter as {
+          multiple?: number;
+        }
+      ).multiple;
+      const bMultiple = (
+        b.column?.sorter as {
+          multiple?: number;
+        }
+      ).multiple;
+      return (aMultiple ?? 100) - (bMultiple ?? 100);
+    })
+    .map((element) => {
+      if (element.order) {
+        return `${element.field} ${
+          element.order === "descend" ? "desc" : "asc"
+        }`;
+      }
+    })
+    .join(",");
 };
 
 const nameColumn = (
   <Table.Column<FilterList>
     dataIndex="name"
     title="Name"
-    sorter={(a, b) => localeCompare({ a: a.name, b: b.name })}
+    sorter={{
+      compare: (a, b) => localeCompare({ a: a.name, b: b.name }),
+      multiple: 1,
+    }}
   />
 );
 
@@ -91,6 +106,9 @@ const descriptionColumn = (
   <Table.Column<FilterList>
     dataIndex="description"
     title="Description"
-    sorter={(a, b) => localeCompare({ a: a.description, b: b.description })}
+    sorter={{
+      compare: (a, b) => localeCompare({ a: a.description, b: b.description }),
+      multiple: 2,
+    }}
   />
 );
