@@ -4,7 +4,7 @@ import { InferGetStaticPropsType } from "next";
 import Head from "next/head";
 
 export default function Home({
-  filterlists,
+  jsonData,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
@@ -21,18 +21,22 @@ export default function Home({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <ListsTable {...filterlists} />
+        <ListsTable {...jsonData} />
       </main>
     </>
   );
 }
 
 export async function getStaticProps() {
-  const res = await fetch(
-    process.env.NEXT_PUBLIC_FILTERLISTS_API_URL + "/lists?$count=true&$top=10"
-  );
-  const filterlists = await res.json();
+  const url =
+    `${process.env.NEXT_PUBLIC_FILTERLISTS_API_URL}/lists?` +
+    new URLSearchParams({
+      $count: "true",
+      $top: "10",
+    });
+  const response = await fetch(url);
+  const jsonData = await response.json();
   return {
-    props: { filterlists },
+    props: { jsonData },
   };
 }

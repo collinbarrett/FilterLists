@@ -24,29 +24,29 @@ export const ListsTable = (props: OData<FilterList>) => {
     _extra: TableCurrentDataSource<FilterList>
   ) => {
     setLoading(true);
-    const sort = toODataOrderBy(sorter);
-    try {
-      const result = await // TODO: use native fetch query string params
-      (
-        await fetch(
-          `${
-            process.env.NEXT_PUBLIC_FILTERLISTS_API_URL
-          }/lists?$count=true${sort}&$skip=${
-            ((pagination.current ?? 0) - 1) * (pagination.pageSize ?? 0)
-          }&$top=${pagination.pageSize}`
-        )
-      ).json();
-      setData(result.value);
-      setPagination({
-        current: pagination.current ?? 0,
-        pageSize: pagination.pageSize ?? 0,
-        total: result["@odata.count"] ?? 0,
-      });
-      setLoading(false);
-    } catch (error) {
-      setLoading(false);
-      console.error("Failed to fetch data:", error);
+    const params = new URLSearchParams({
+      $count: "true",
+      $skip: (
+        ((pagination.current ?? 0) - 1) *
+        (pagination.pageSize ?? 0)
+      ).toString(),
+      $top: (pagination.pageSize ?? 0).toString(),
+    });
+    const orderBy = toODataOrderBy(sorter);
+    if (orderBy.length) {
+      params.append("$orderby", orderBy);
     }
+    const url =
+      `${process.env.NEXT_PUBLIC_FILTERLISTS_API_URL}/lists?` + params;
+    const response = await fetch(url);
+    const jsonData = await response.json();
+    setData(jsonData.value);
+    setPagination({
+      current: pagination.current ?? 0,
+      pageSize: pagination.pageSize ?? 0,
+      total: jsonData["@odata.count"] ?? 0,
+    });
+    setLoading(false);
   };
 
   return (
@@ -68,18 +68,15 @@ const toODataOrderBy = (
   sorter: SorterResult<FilterList> | SorterResult<FilterList>[]
 ) => {
   const sorterArray = coalesceToArray(sorter);
-  let sort = "";
+  let orderBy = "";
   sorterArray.forEach((element) => {
     if (element.order) {
-      sort += `${element.field} ${
+      orderBy += `${element.field} ${
         element.order === "descend" ? "desc" : "asc"
       }`;
     }
   });
-  if (sort.length) {
-    sort = `&$orderby=${sort}`;
-  }
-  return sort;
+  return orderBy;
 };
 
 const nameColumn = (
