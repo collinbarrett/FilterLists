@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 
 namespace FilterLists.Api.GetLicenses;
 
@@ -40,10 +39,4 @@ public record License
     /// </summary>
     /// <example>false</example>
     public bool PermitsCommercialUse { get; init; }
-
-    /// <summary>
-    ///     The identifiers of the FilterLists released under this License.
-    /// </summary>
-    /// <example>[ 6, 31 ]</example>
-    public IEnumerable<int> FilterListIds { get; init; } = new HashSet<int>();
 }

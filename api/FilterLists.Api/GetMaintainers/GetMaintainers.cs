@@ -29,28 +29,30 @@ internal class GetMaintainers
         Description = ODataExtensions.SkipParamDescription)]
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
-    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Maintainer>))]
+    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
+        Description = ODataExtensions.CountParamDescription)]
+    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<Maintainer>>))]
     [FunctionName("GetMaintainers")]
-    public Task<List<Maintainer>> RunAsync(
+    public async Task<OData<List<Maintainer>>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "maintainers")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return _queryContext.Maintainers
-            .Select(m => new Maintainer
-            {
-                Id = m.Id,
-                Name = m.Name,
-                Url = m.Url,
-                EmailAddress = m.EmailAddress,
-                TwitterHandle = m.TwitterHandle,
-                FilterListIds = m.FilterListMaintainers
-                    .OrderBy(flm => flm.FilterListId)
-                    .Select(flm => flm.FilterListId)
-            }).OrderBy(m => m.Id)
-            .ApplyODataOrderBy(req.Query)
-            .ApplyODataSkip(req.Query)
-            .ApplyODataTop(req.Query)
-            .ToListAsync(cancellationToken);
+        return await new OData<List<Maintainer>>
+        {
+            Value = await _queryContext.Maintainers
+                .Select(m => new Maintainer
+                {
+                    Id = m.Id,
+                    Name = m.Name,
+                    Url = m.Url,
+                    EmailAddress = m.EmailAddress,
+                    TwitterHandle = m.TwitterHandle
+                }).OrderBy(m => m.Id)
+                .ApplyODataOrderBy(req.Query)
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
+                .ToListAsync(cancellationToken)
+        }.ApplyODataCount(req.Query, _queryContext.Maintainers, cancellationToken);
     }
 }

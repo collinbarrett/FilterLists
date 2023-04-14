@@ -29,36 +29,40 @@ internal class GetFilterLists
         Description = ODataExtensions.SkipParamDescription)]
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
-    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<FilterList>))]
+    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
+        Description = ODataExtensions.CountParamDescription)]
+    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<FilterList>>))]
     [FunctionName("GetFilterLists")]
-    public Task<List<FilterList>> RunAsync(
+    public async Task<OData<List<FilterList>>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "lists")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return _queryContext.FilterLists
-            .Select(fl => new FilterList
-            {
-                Id = fl.Id,
-                Name = fl.Name,
-                Description = fl.Description,
-                LicenseId = fl.LicenseId,
-                SyntaxIds = fl.FilterListSyntaxes
-                    .OrderBy(fls => fls.SyntaxId)
-                    .Select(fls => fls.SyntaxId),
-                LanguageIds = fl.FilterListLanguages
-                    .OrderBy(fll => fll.LanguageId)
-                    .Select(fll => fll.LanguageId),
-                TagIds = fl.FilterListTags
-                    .OrderBy(flt => flt.TagId)
-                    .Select(flt => flt.TagId),
-                MaintainerIds = fl.FilterListMaintainers
-                    .OrderBy(flm => flm.MaintainerId)
-                    .Select(flm => flm.MaintainerId)
-            }).OrderBy(fl => fl.Id)
-            .ApplyODataOrderBy(req.Query)
-            .ApplyODataSkip(req.Query)
-            .ApplyODataTop(req.Query)
-            .ToListAsync(cancellationToken);
+        return await new OData<List<FilterList>>
+        {
+            Value = await _queryContext.FilterLists.Select(fl => new FilterList
+                {
+                    Id = fl.Id,
+                    Name = fl.Name,
+                    Description = fl.Description,
+                    LicenseId = fl.LicenseId,
+                    SyntaxIds = fl.FilterListSyntaxes
+                        .OrderBy(fls => fls.SyntaxId)
+                        .Select(fls => fls.SyntaxId),
+                    LanguageIds = fl.FilterListLanguages
+                        .OrderBy(fll => fll.LanguageId)
+                        .Select(fll => fll.LanguageId),
+                    TagIds = fl.FilterListTags
+                        .OrderBy(flt => flt.TagId)
+                        .Select(flt => flt.TagId),
+                    MaintainerIds = fl.FilterListMaintainers
+                        .OrderBy(flm => flm.MaintainerId)
+                        .Select(flm => flm.MaintainerId)
+                }).OrderBy(fl => fl.Id)
+                .ApplyODataOrderBy(req.Query)
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
+                .ToListAsync(cancellationToken)
+        }.ApplyODataCount(req.Query, _queryContext.FilterLists, cancellationToken);
     }
 }

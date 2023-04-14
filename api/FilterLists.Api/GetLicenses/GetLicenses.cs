@@ -29,29 +29,31 @@ internal class GetLicenses
         Description = ODataExtensions.SkipParamDescription)]
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
-    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<License>))]
+    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
+        Description = ODataExtensions.CountParamDescription)]
+    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<License>>))]
     [FunctionName("GetLicenses")]
-    public Task<List<License>> RunAsync(
+    public async Task<OData<List<License>>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "licenses")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return _queryContext.Licenses
-            .Select(l => new License
-            {
-                Id = l.Id,
-                Name = l.Name,
-                Url = l.Url,
-                PermitsModification = l.PermitsModification,
-                PermitsDistribution = l.PermitsDistribution,
-                PermitsCommercialUse = l.PermitsCommercialUse,
-                FilterListIds = l.FilterLists
-                    .OrderBy(fl => fl.Id)
-                    .Select(fl => fl.Id)
-            }).OrderBy(l => l.Id)
-            .ApplyODataOrderBy(req.Query)
-            .ApplyODataSkip(req.Query)
-            .ApplyODataTop(req.Query)
-            .ToListAsync(cancellationToken);
+        return await new OData<List<License>>
+        {
+            Value = await _queryContext.Licenses
+                .Select(l => new License
+                {
+                    Id = l.Id,
+                    Name = l.Name,
+                    Url = l.Url,
+                    PermitsModification = l.PermitsModification,
+                    PermitsDistribution = l.PermitsDistribution,
+                    PermitsCommercialUse = l.PermitsCommercialUse
+                }).OrderBy(l => l.Id)
+                .ApplyODataOrderBy(req.Query)
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
+                .ToListAsync(cancellationToken)
+        }.ApplyODataCount(req.Query, _queryContext.Licenses, cancellationToken);
     }
 }

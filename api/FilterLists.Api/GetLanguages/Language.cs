@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace FilterLists.Api.GetLanguages;
 
 public record Language
@@ -21,10 +19,4 @@ public record Language
     /// </summary>
     /// <example>English</example>
     public string Name { get; init; } = default!;
-
-    /// <summary>
-    ///     The identifiers of the FilterLists targeted by this Language.
-    /// </summary>
-    /// <example>[ 114, 141 ]</example>
-    public IEnumerable<int> FilterListIds { get; init; } = new HashSet<int>();
 }

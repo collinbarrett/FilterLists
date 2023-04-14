@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 
 namespace FilterLists.Api.GetMaintainers;
 
@@ -34,10 +33,4 @@ public record Maintainer
     /// </summary>
     /// <example>null</example>
     public string? TwitterHandle { get; init; }
-
-    /// <summary>
-    ///     The identifiers of the FilterLists maintained by this Maintainer.
-    /// </summary>
-    /// <example>[ 11, 13, 301 ]</example>
-    public IEnumerable<int> FilterListIds { get; init; } = new HashSet<int>();
 }

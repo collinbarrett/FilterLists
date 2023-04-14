@@ -29,29 +29,31 @@ internal class GetSoftware
         Description = ODataExtensions.SkipParamDescription)]
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
-    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Software>))]
+    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
+        Description = ODataExtensions.CountParamDescription)]
+    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<Software>>))]
     [FunctionName("GetSoftware")]
-    public Task<List<Software>> RunAsync(
+    public async Task<OData<List<Software>>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "software")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return _queryContext.Software
-            .Select(s => new Software
-            {
-                Id = s.Id,
-                Name = s.Name,
-                Description = s.Description,
-                HomeUrl = s.HomeUrl,
-                DownloadUrl = s.DownloadUrl,
-                SupportsAbpUrlScheme = s.SupportsAbpUrlScheme,
-                SyntaxIds = s.SoftwareSyntaxes
-                    .OrderBy(ss => ss.SyntaxId)
-                    .Select(ss => ss.SyntaxId)
-            }).OrderBy(s => s.Id)
-            .ApplyODataOrderBy(req.Query)
-            .ApplyODataSkip(req.Query)
-            .ApplyODataTop(req.Query)
-            .ToListAsync(cancellationToken);
+        return await new OData<List<Software>>
+        {
+            Value = await _queryContext.Software
+                .Select(s => new Software
+                {
+                    Id = s.Id,
+                    Name = s.Name,
+                    Description = s.Description,
+                    HomeUrl = s.HomeUrl,
+                    DownloadUrl = s.DownloadUrl,
+                    SupportsAbpUrlScheme = s.SupportsAbpUrlScheme
+                }).OrderBy(s => s.Id)
+                .ApplyODataOrderBy(req.Query)
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
+                .ToListAsync(cancellationToken)
+        }.ApplyODataCount(req.Query, _queryContext.Software, cancellationToken);
     }
 }

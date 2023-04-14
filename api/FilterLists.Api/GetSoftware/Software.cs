@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 
 namespace FilterLists.Api.GetSoftware;
 
@@ -43,10 +42,4 @@ public record Software
     /// </summary>
     /// <example>true</example>
     public bool SupportsAbpUrlScheme { get; init; }
-
-    /// <summary>
-    ///     The identifiers of the Syntaxes that this Software supports.
-    /// </summary>
-    /// <example>[ 3, 28, 38, 48 ]</example>
-    public IEnumerable<int> SyntaxIds { get; init; } = new HashSet<int>();
 }

@@ -29,26 +29,28 @@ internal class GetLanguages
         Description = ODataExtensions.SkipParamDescription)]
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
-    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Language>))]
+    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
+        Description = ODataExtensions.CountParamDescription)]
+    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<Language>>))]
     [FunctionName("GetLanguages")]
-    public Task<List<Language>> RunAsync(
+    public async Task<OData<List<Language>>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "languages")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return _queryContext.Languages
-            .Select(l => new Language
-            {
-                Id = l.Id,
-                Iso6391 = l.Iso6391,
-                Name = l.Name,
-                FilterListIds = l.FilterListLanguages
-                    .OrderBy(fll => fll.FilterListId)
-                    .Select(fll => fll.FilterListId)
-            }).OrderBy(l => l.Id)
-            .ApplyODataOrderBy(req.Query)
-            .ApplyODataSkip(req.Query)
-            .ApplyODataTop(req.Query)
-            .ToListAsync(cancellationToken);
+        return await new OData<List<Language>>
+        {
+            Value = await _queryContext.Languages
+                .Select(l => new Language
+                {
+                    Id = l.Id,
+                    Iso6391 = l.Iso6391,
+                    Name = l.Name
+                }).OrderBy(l => l.Id)
+                .ApplyODataOrderBy(req.Query)
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
+                .ToListAsync(cancellationToken)
+        }.ApplyODataCount(req.Query, _queryContext.Languages, cancellationToken);
     }
 }

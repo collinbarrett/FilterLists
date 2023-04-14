@@ -29,26 +29,28 @@ internal class GetTags
         Description = ODataExtensions.SkipParamDescription)]
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
-    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Tag>))]
+    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
+        Description = ODataExtensions.CountParamDescription)]
+    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<Tag>>))]
     [FunctionName("GetTags")]
-    public Task<List<Tag>> RunAsync(
+    public async Task<OData<List<Tag>>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "tags")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return _queryContext.Tags
-            .Select(t => new Tag
-            {
-                Id = t.Id,
-                Name = t.Name,
-                Description = t.Description,
-                FilterListIds = t.FilterListTags
-                    .OrderBy(flt => flt.FilterListId)
-                    .Select(flt => flt.FilterListId)
-            }).OrderBy(t => t.Id)
-            .ApplyODataOrderBy(req.Query)
-            .ApplyODataSkip(req.Query)
-            .ApplyODataTop(req.Query)
-            .ToListAsync(cancellationToken);
+        return await new OData<List<Tag>>
+        {
+            Value = await _queryContext.Tags
+                .Select(t => new Tag
+                {
+                    Id = t.Id,
+                    Name = t.Name,
+                    Description = t.Description
+                }).OrderBy(t => t.Id)
+                .ApplyODataOrderBy(req.Query)
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
+                .ToListAsync(cancellationToken)
+        }.ApplyODataCount(req.Query, _queryContext.Tags, cancellationToken);
     }
 }

@@ -29,30 +29,29 @@ internal class GetSyntaxes
         Description = ODataExtensions.SkipParamDescription)]
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
-    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(List<Syntax>))]
+    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
+        Description = ODataExtensions.CountParamDescription)]
+    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<Syntax>>))]
     [FunctionName("GetSyntaxes")]
-    public Task<List<Syntax>> RunAsync(
+    public async Task<OData<List<Syntax>>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "syntaxes")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return _queryContext.Syntaxes
-            .Select(s => new Syntax
-            {
-                Id = s.Id,
-                Name = s.Name,
-                Description = s.Description,
-                Url = s.Url,
-                FilterListIds = s.FilterListSyntaxes
-                    .OrderBy(fls => fls.FilterListId)
-                    .Select(sls => sls.FilterListId),
-                SoftwareIds = s.SoftwareSyntaxes
-                    .OrderBy(ss => ss.SoftwareId)
-                    .Select(ss => ss.SoftwareId)
-            }).OrderBy(s => s.Id)
-            .ApplyODataOrderBy(req.Query)
-            .ApplyODataSkip(req.Query)
-            .ApplyODataTop(req.Query)
-            .ToListAsync(cancellationToken);
+        return await new OData<List<Syntax>>
+        {
+            Value = await _queryContext.Syntaxes
+                .Select(s => new Syntax
+                {
+                    Id = s.Id,
+                    Name = s.Name,
+                    Description = s.Description,
+                    Url = s.Url
+                }).OrderBy(s => s.Id)
+                .ApplyODataOrderBy(req.Query)
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
+                .ToListAsync(cancellationToken)
+        }.ApplyODataCount(req.Query, _queryContext.Syntaxes, cancellationToken);
     }
 }
