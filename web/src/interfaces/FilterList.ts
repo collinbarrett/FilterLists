@@ -4,6 +4,7 @@ export interface FilterList {
   description?: string;
   licenseId?: number;
   syntaxIds: number[];
+  softwareIds: number[];
   languageIds: number[];
   tagIds: number[];
   maintainerIds: number[];

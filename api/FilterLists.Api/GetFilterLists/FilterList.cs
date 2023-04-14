@@ -38,6 +38,12 @@ public record FilterList
     /// </summary>
     /// <example>[ 3 ]</example>
     public IEnumerable<int> SyntaxIds { get; init; } = new HashSet<int>();
+    
+    /// <summary>
+    ///     The identifiers of the Software that supports subscribing to this FilterList.
+    /// </summary>
+    /// <example>[ 3 ]</example>
+    public IEnumerable<int> SoftwareIds { get; init; } = new HashSet<int>();
 
     /// <summary>
     ///     The identifiers of the Languages targeted by this FilterList.
@@ -50,12 +56,6 @@ public record FilterList
     /// </summary>
     /// <example>[ 2 ]</example>
     public IEnumerable<int> TagIds { get; init; } = new HashSet<int>();
-
-    /// <summary>
-    ///     The primary view URL.
-    /// </summary>
-    /// <example>https://easylist.to/easylist/easylist.txt</example>
-    public Uri? PrimaryViewUrl { get; init; }
 
     /// <summary>
     ///     The identifiers of the Maintainers of this FilterList.

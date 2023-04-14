@@ -50,6 +50,10 @@ internal class GetFilterLists
                     SyntaxIds = fl.FilterListSyntaxes
                         .OrderBy(fls => fls.SyntaxId)
                         .Select(fls => fls.SyntaxId),
+                    SoftwareIds = fl.FilterListSyntaxes
+                        .SelectMany(fls => fls.Syntax.SoftwareSyntaxes.Select(flss => flss.SoftwareId))
+                        .OrderBy(id => id)
+                        .Distinct(),
                     LanguageIds = fl.FilterListLanguages
                         .OrderBy(fll => fll.LanguageId)
                         .Select(fll => fll.LanguageId),
