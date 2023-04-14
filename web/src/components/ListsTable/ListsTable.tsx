@@ -18,7 +18,7 @@ export const ListsTable = (props: OData<FilterList>) => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleTableChange = async (
+  const handleChange = async (
     pagination: TablePaginationConfig,
     _filters: Record<string, FilterValue | null>,
     sorter: SorterResult<FilterList> | SorterResult<FilterList>[],
@@ -53,10 +53,10 @@ export const ListsTable = (props: OData<FilterList>) => {
   return (
     <Table<FilterList>
       dataSource={data}
-      rowKey={(record) => record.id}
+      rowKey={(filterlist) => filterlist.id}
       pagination={pagination}
       loading={loading}
-      onChange={handleTableChange}
+      onChange={handleChange}
     >
       {nameColumn}
       {descriptionColumn}
@@ -81,7 +81,7 @@ const toODataOrderBy = (
           multiple?: number;
         }
       ).multiple;
-      return (aMultiple ?? 100) - (bMultiple ?? 100);
+      return (aMultiple ?? Number.MAX_VALUE) - (bMultiple ?? Number.MAX_VALUE);
     })
     .map((element) => {
       if (element.order) {
