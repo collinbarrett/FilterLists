@@ -1,4 +1,4 @@
 export interface OData<T> {
-  "@count": number | null;
+  "@odata.count": number | null;
   value: T[];
 }

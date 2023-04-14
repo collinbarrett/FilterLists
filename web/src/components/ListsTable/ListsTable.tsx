@@ -8,27 +8,25 @@ export const ListsTable = (props: OData<FilterList>) => {
   const [pagination, setPagination] = useState({
     current: 1,
     pageSize: 10,
-    total: props["@count"] ?? 0,
+    total: props["@odata.count"] ?? 0,
   });
   const [loading, setLoading] = useState(false);
 
   const handleTableChange = async (pagination: TablePaginationConfig) => {
     setLoading(true);
     try {
-      const res = await fetch(
-        process.env.NEXT_PUBLIC_FILTERLISTS_API_URL +
-          "/lists?$skip=" +
-          ((pagination.current ?? 0) - 1) * (pagination.pageSize ?? 0) +
-          "$top=" +
-          pagination.pageSize +
-          "&$count=true"
-      );
-      const filterlists = (await res.json()) as OData<FilterList>;
-      setData(filterlists.value);
+      const result = await (
+        await fetch(
+          `${process.env.NEXT_PUBLIC_FILTERLISTS_API_URL}/lists?$skip=${
+            ((pagination.current ?? 0) - 1) * (pagination.pageSize ?? 0)
+          }&$top=${pagination.pageSize}&$count=true`
+        )
+      ).json();
+      setData(result.value);
       setPagination({
         current: pagination.current ?? 0,
         pageSize: pagination.pageSize ?? 0,
-        total: filterlists["@count"] ?? 0,
+        total: result["@odata.count"] ?? 0,
       });
       setLoading(false);
     } catch (error) {
