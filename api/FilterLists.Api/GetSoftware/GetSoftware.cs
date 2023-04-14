@@ -38,8 +38,9 @@ internal class GetSoftware
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return await new OData<List<Software>>
+        return new OData<List<Software>>
         {
+            Count = await _queryContext.Software.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Software
                 .Select(s => new Software
                 {
@@ -54,6 +55,6 @@ internal class GetSoftware
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
                 .ToListAsync(cancellationToken)
-        }.ApplyODataCount(req.Query, _queryContext.Software, cancellationToken);
+        };
     }
 }

@@ -38,8 +38,9 @@ internal class GetSyntaxes
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return await new OData<List<Syntax>>
+        return new OData<List<Syntax>>
         {
+            Count = await _queryContext.Syntaxes.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Syntaxes
                 .Select(s => new Syntax
                 {
@@ -52,6 +53,6 @@ internal class GetSyntaxes
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
                 .ToListAsync(cancellationToken)
-        }.ApplyODataCount(req.Query, _queryContext.Syntaxes, cancellationToken);
+        };
     }
 }

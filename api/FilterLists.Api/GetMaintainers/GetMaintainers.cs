@@ -38,8 +38,9 @@ internal class GetMaintainers
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return await new OData<List<Maintainer>>
+        return new OData<List<Maintainer>>
         {
+            Count = await _queryContext.Maintainers.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Maintainers
                 .Select(m => new Maintainer
                 {
@@ -53,6 +54,6 @@ internal class GetMaintainers
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
                 .ToListAsync(cancellationToken)
-        }.ApplyODataCount(req.Query, _queryContext.Maintainers, cancellationToken);
+        };
     }
 }

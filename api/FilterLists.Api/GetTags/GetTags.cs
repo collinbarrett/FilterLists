@@ -38,8 +38,9 @@ internal class GetTags
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return await new OData<List<Tag>>
+        return new OData<List<Tag>>
         {
+            Count = await _queryContext.Tags.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Tags
                 .Select(t => new Tag
                 {
@@ -51,6 +52,6 @@ internal class GetTags
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
                 .ToListAsync(cancellationToken)
-        }.ApplyODataCount(req.Query, _queryContext.Tags, cancellationToken);
+        };
     }
 }

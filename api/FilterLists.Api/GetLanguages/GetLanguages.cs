@@ -38,8 +38,9 @@ internal class GetLanguages
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return await new OData<List<Language>>
+        return new OData<List<Language>>
         {
+            Count = await _queryContext.Languages.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Languages
                 .Select(l => new Language
                 {
@@ -51,6 +52,6 @@ internal class GetLanguages
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
                 .ToListAsync(cancellationToken)
-        }.ApplyODataCount(req.Query, _queryContext.Languages, cancellationToken);
+        };
     }
 }

@@ -38,8 +38,9 @@ internal class GetLicenses
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return await new OData<List<License>>
+        return new OData<List<License>>
         {
+            Count = await _queryContext.Licenses.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Licenses
                 .Select(l => new License
                 {
@@ -54,6 +55,6 @@ internal class GetLicenses
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
                 .ToListAsync(cancellationToken)
-        }.ApplyODataCount(req.Query, _queryContext.Licenses, cancellationToken);
+        };
     }
 }

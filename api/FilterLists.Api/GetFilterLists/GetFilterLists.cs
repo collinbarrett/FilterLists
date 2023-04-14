@@ -38,8 +38,9 @@ internal class GetFilterLists
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return await new OData<List<FilterList>>
+        return new OData<List<FilterList>>
         {
+            Count = await _queryContext.FilterLists.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.FilterLists.Select(fl => new FilterList
                 {
                     Id = fl.Id,
@@ -63,6 +64,6 @@ internal class GetFilterLists
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
                 .ToListAsync(cancellationToken)
-        }.ApplyODataCount(req.Query, _queryContext.FilterLists, cancellationToken);
+        };
     }
 }

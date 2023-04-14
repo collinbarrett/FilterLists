@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Threading;
@@ -10,6 +9,11 @@ namespace FilterLists.Api;
 
 internal static class ODataExtensions
 {
+    internal const string CountParamKey = "$count";
+
+    internal const string CountParamDescription =
+        "https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html#sec_SystemQueryOptioncount";
+
     internal const string OrderByParamKey = "$orderby";
 
     internal const string OrderByParamDescription =
@@ -25,10 +29,15 @@ internal static class ODataExtensions
     internal const string TopParamDescription =
         "https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html#sec_SystemQueryOptiontop";
 
-    internal const string CountParamKey = "$count";
-
-    internal const string CountParamDescription =
-        "https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html#sec_SystemQueryOptioncount";
+    internal static async Task<int?> ApplyODataCount<T>(
+        this IQueryable<T> source,
+        IQueryCollection queryCollection,
+        CancellationToken cancellationToken)
+    {
+        var applyCount = queryCollection[CountParamKey] == "true";
+        if (applyCount) return await source.CountAsync(cancellationToken);
+        return null;
+    }
 
     internal static IQueryable<T> ApplyODataOrderBy<T>(
         this IOrderedQueryable<T> source,
@@ -54,16 +63,5 @@ internal static class ODataExtensions
         if (int.TryParse(queryCollection[TopParamKey], out var top))
             source = source.Take(top);
         return source;
-    }
-
-    internal static async ValueTask<OData<List<TViewModel>>> ApplyODataCount<TEntity, TViewModel>(
-        this OData<List<TViewModel>> response,
-        IQueryCollection queryCollection,
-        IQueryable<TEntity> source,
-        CancellationToken cancellationToken)
-    {
-        var applyCount = queryCollection[CountParamKey].Any(c => c != "false");
-        if (applyCount) response.Count = await source.CountAsync(cancellationToken);
-        return response;
     }
 }
