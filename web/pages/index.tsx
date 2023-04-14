@@ -29,7 +29,7 @@ export default function Home({
 
 export async function getStaticProps() {
   const res = await fetch(
-    process.env.NEXT_PUBLIC_FILTERLISTS_API_URL + "/lists?$top=10&$count=true"
+    process.env.NEXT_PUBLIC_FILTERLISTS_API_URL + "/lists?$count=true&$top=10"
   );
   const filterlists = await res.json();
   return {
