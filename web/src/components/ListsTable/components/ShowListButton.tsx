@@ -6,13 +6,11 @@ interface Props {
   listName: string;
 }
 
-export const ShowListButton = (props: Props) => {
-  return (
-    <Button
-      type="primary"
-      title={`View more information about ${props.listName}.`}
-    >
-      <EyeOutlined />
-    </Button>
-  );
-};
+export const ShowListButton = (props: Props) => (
+  <Button
+    type="primary"
+    title={`View more information about ${props.listName}.`}
+  >
+    <EyeOutlined />
+  </Button>
+);
