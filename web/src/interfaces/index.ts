@@ -1,3 +1,4 @@
 import { FilterList } from "./FilterList";
+import { OData } from "./OData";
 
-export type { FilterList };
+export type { FilterList, OData };

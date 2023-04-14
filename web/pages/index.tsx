@@ -21,14 +21,16 @@ export default function Home({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <ListsTable lists={filterlists} />
+        <ListsTable {...filterlists} />
       </main>
     </>
   );
 }
 
 export async function getStaticProps() {
-  const res = await fetch(process.env.FILTERLISTS_API_URL + "/lists");
+  const res = await fetch(
+    process.env.FILTERLISTS_API_URL + "/lists?$top=10&$count=true"
+  );
   const filterlists = await res.json();
   return {
     props: { filterlists },

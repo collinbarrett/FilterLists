@@ -1,17 +1,15 @@
-import { FilterList } from "@/src/interfaces";
+import { OData, FilterList } from "@/src/interfaces";
 import { Table } from "antd";
 import { localeCompare } from "@/src/utils";
 
-interface Props {
-  lists: FilterList[];
-}
-
-export const ListsTable = (props: Props) => (
-  <Table<FilterList> dataSource={props.lists} rowKey={(record) => record.id}>
-    {nameColumn}
-    {descriptionColumn}
-  </Table>
-);
+export const ListsTable = (props: OData<FilterList>) => {
+  return (
+    <Table<FilterList> dataSource={props.value} rowKey={(record) => record.id}>
+      {nameColumn}
+      {descriptionColumn}
+    </Table>
+  );
+};
 
 const nameColumn = (
   <Table.Column<FilterList>
