@@ -42,15 +42,16 @@ internal class GetLanguages
         {
             Count = await _queryContext.Languages.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Languages
+                .OrderBy(l => l.Id)
+                .ApplyODataOrderBy(req.Query)
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
                 .Select(l => new Language
                 {
                     Id = l.Id,
                     Iso6391 = l.Iso6391,
                     Name = l.Name
-                }).OrderBy(l => l.Id)
-                .ApplyODataOrderBy(req.Query)
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
+                })
                 .ToListAsync(cancellationToken)
         };
     }

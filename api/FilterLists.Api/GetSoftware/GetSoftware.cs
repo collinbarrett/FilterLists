@@ -42,6 +42,10 @@ internal class GetSoftware
         {
             Count = await _queryContext.Software.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Software
+                .OrderBy(s => s.Id)
+                .ApplyODataOrderBy(req.Query)
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
                 .Select(s => new Software
                 {
                     Id = s.Id,
@@ -50,10 +54,7 @@ internal class GetSoftware
                     HomeUrl = s.HomeUrl,
                     DownloadUrl = s.DownloadUrl,
                     SupportsAbpUrlScheme = s.SupportsAbpUrlScheme
-                }).OrderBy(s => s.Id)
-                .ApplyODataOrderBy(req.Query)
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
+                })
                 .ToListAsync(cancellationToken)
         };
     }

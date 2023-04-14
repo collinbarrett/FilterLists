@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 namespace FilterLists.Api.GetFilterLists;
@@ -38,7 +37,7 @@ public record FilterList
     /// </summary>
     /// <example>[ 3 ]</example>
     public IEnumerable<int> SyntaxIds { get; init; } = new HashSet<int>();
-    
+
     /// <summary>
     ///     The identifiers of the Software that supports subscribing to this FilterList.
     /// </summary>

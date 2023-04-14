@@ -2,6 +2,7 @@ using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Threading;
 using System.Threading.Tasks;
+using FilterLists.Api.Infrastructure.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
@@ -43,8 +44,42 @@ internal static class ODataExtensions
         this IOrderedQueryable<T> source,
         IQueryCollection queryCollection)
     {
-        var orderBy = queryCollection[OrderByParamKey].FirstOrDefault();
-        return string.IsNullOrWhiteSpace(orderBy) ? source : source.OrderBy(orderBy);
+        for (var index = 0; index < queryCollection[OrderByParamKey].Count; index++)
+        {
+            var query = queryCollection[OrderByParamKey][index];
+            if (string.IsNullOrWhiteSpace(query)) continue;
+            source = index == 0 ? source.OrderBy(query) : source.ThenBy(query);
+        }
+
+        return source;
+    }
+
+    internal static IQueryable<FilterList> ApplyODataOrderBy(
+        this IOrderedQueryable<FilterList> source,
+        IQueryCollection queryCollection)
+    {
+        for (var index = 0; index < queryCollection[OrderByParamKey].Count; index++)
+        {
+            var query = queryCollection[OrderByParamKey][index];
+            if (query.Contains("license/name"))
+            {
+                if (index == 0)
+                    source = query.Contains("desc")
+                        ? source.OrderByDescending(fl => fl.License.Name)
+                        : source.OrderBy(fl => fl.License.Name);
+                else if (query.Contains("desc"))
+                    source = source.ThenByDescending(fl => fl.License.Name);
+                else
+                    source = source.ThenBy(fl => fl.License.Name);
+            }
+            else
+            {
+                if (string.IsNullOrWhiteSpace(query)) continue;
+                source = index == 0 ? source.OrderBy(query) : source.ThenBy(query);
+            }
+        }
+
+        return source;
     }
 
     internal static IQueryable<T> ApplyODataSkip<T>(

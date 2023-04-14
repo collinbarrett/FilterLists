@@ -42,16 +42,17 @@ internal class GetSyntaxes
         {
             Count = await _queryContext.Syntaxes.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Syntaxes
+                .OrderBy(s => s.Id)
+                .ApplyODataOrderBy(req.Query)
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
                 .Select(s => new Syntax
                 {
                     Id = s.Id,
                     Name = s.Name,
                     Description = s.Description,
                     Url = s.Url
-                }).OrderBy(s => s.Id)
-                .ApplyODataOrderBy(req.Query)
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
+                })
                 .ToListAsync(cancellationToken)
         };
     }

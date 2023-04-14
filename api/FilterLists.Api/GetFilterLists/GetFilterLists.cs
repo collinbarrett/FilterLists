@@ -41,7 +41,12 @@ internal class GetFilterLists
         return new OData<List<FilterList>>
         {
             Count = await _queryContext.FilterLists.ApplyODataCount(req.Query, cancellationToken),
-            Value = await _queryContext.FilterLists.Select(fl => new FilterList
+            Value = await _queryContext.FilterLists
+                .OrderBy(fl => fl.Id)
+                .ApplyODataOrderBy(req.Query)
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
+                .Select(fl => new FilterList
                 {
                     Id = fl.Id,
                     Name = fl.Name,
@@ -63,10 +68,7 @@ internal class GetFilterLists
                     MaintainerIds = fl.FilterListMaintainers
                         .OrderBy(flm => flm.MaintainerId)
                         .Select(flm => flm.MaintainerId)
-                }).OrderBy(fl => fl.Id)
-                .ApplyODataOrderBy(req.Query)
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
+                })
                 .ToListAsync(cancellationToken)
         };
     }

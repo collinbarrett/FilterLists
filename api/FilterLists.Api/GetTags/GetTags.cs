@@ -42,15 +42,16 @@ internal class GetTags
         {
             Count = await _queryContext.Tags.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Tags
+                .OrderBy(t => t.Id)
+                .ApplyODataOrderBy(req.Query)
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
                 .Select(t => new Tag
                 {
                     Id = t.Id,
                     Name = t.Name,
                     Description = t.Description
-                }).OrderBy(t => t.Id)
-                .ApplyODataOrderBy(req.Query)
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
+                })
                 .ToListAsync(cancellationToken)
         };
     }

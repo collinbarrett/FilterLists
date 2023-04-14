@@ -42,6 +42,10 @@ internal class GetLicenses
         {
             Count = await _queryContext.Licenses.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Licenses
+                .OrderBy(l => l.Id)
+                .ApplyODataOrderBy(req.Query)
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
                 .Select(l => new License
                 {
                     Id = l.Id,
@@ -50,10 +54,7 @@ internal class GetLicenses
                     PermitsModification = l.PermitsModification,
                     PermitsDistribution = l.PermitsDistribution,
                     PermitsCommercialUse = l.PermitsCommercialUse
-                }).OrderBy(l => l.Id)
-                .ApplyODataOrderBy(req.Query)
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
+                })
                 .ToListAsync(cancellationToken)
         };
     }

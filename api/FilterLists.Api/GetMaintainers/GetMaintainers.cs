@@ -42,6 +42,10 @@ internal class GetMaintainers
         {
             Count = await _queryContext.Maintainers.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Maintainers
+                .OrderBy(m => m.Id)
+                .ApplyODataOrderBy(req.Query)
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
                 .Select(m => new Maintainer
                 {
                     Id = m.Id,
@@ -49,10 +53,7 @@ internal class GetMaintainers
                     Url = m.Url,
                     EmailAddress = m.EmailAddress,
                     TwitterHandle = m.TwitterHandle
-                }).OrderBy(m => m.Id)
-                .ApplyODataOrderBy(req.Query)
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
+                })
                 .ToListAsync(cancellationToken)
         };
     }
