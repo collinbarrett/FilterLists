@@ -2,7 +2,7 @@ import { Space, Table } from "antd";
 import { useListsTable } from "./useListsTable";
 import { OData, FilterList } from "@/src/interfaces";
 import { localeCompare } from "@/src/utils";
-import { ShowListButton } from "./ShowListButton";
+import { ShowListButton } from "./components/ShowListButton";
 
 export const ListsTable = (props: OData<FilterList>) => {
   const listsTableProps = useListsTable(props);
