@@ -30,7 +30,7 @@ jobs:
 
       - name: Build
         run: |
-          dotnet build ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }} -c Release -o ./output --no-self-contained -r win-x64 -p:PublishReadyToRun=true
+          dotnet build ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }} -c Release -o ./output --no-self-contained -r win-x86 -p:PublishReadyToRun=true
 
       - name: Deploy
         uses: Azure/functions-action@v1
