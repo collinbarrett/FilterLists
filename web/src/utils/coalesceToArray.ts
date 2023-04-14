@@ -1,7 +1,2 @@
-export function coalesceToArray<T>(input: T | T[]): T[] {
-  if (Array.isArray(input)) {
-    return input;
-  } else {
-    return [input];
-  }
-}
+export const coalesceToArray = <T>(input: T | T[]): T[] =>
+  Array.isArray(input) ? input : [input];

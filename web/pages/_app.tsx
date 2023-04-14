@@ -16,23 +16,22 @@ import styles from "./_app.module.css";
 
 const { Header, Content, Footer } = Layout;
 
-export default function App({ Component, pageProps }: AppProps) {
-  return (
-    <Layout>
-      <Header className={styles.header}>
-        <Logo />
-        <Menu />
-      </Header>
-      <Content className={styles.content}>
-        <Component {...pageProps} />
-      </Content>
-      <Footer className={styles.footer}>
-        <Copyright />
-        <Api />
-        <GitHub />
-        <Twitter />
-        <Donate />
-      </Footer>
-    </Layout>
-  );
-}
+const App = ({ Component, pageProps }: AppProps) => (
+  <Layout>
+    <Header className={styles.header}>
+      <Logo />
+      <Menu />
+    </Header>
+    <Content className={styles.content}>
+      <Component {...pageProps} />
+    </Content>
+    <Footer className={styles.footer}>
+      <Copyright />
+      <Api />
+      <GitHub />
+      <Twitter />
+      <Donate />
+    </Footer>
+  </Layout>
+);
+export default App;

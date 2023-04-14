@@ -55,29 +55,25 @@ export const useListsTable = (props: OData<FilterList>) => {
 };
 
 const toODataOrderBy = (
-  sorter: SorterResult<FilterList> | SorterResult<FilterList>[]
-) => {
-  const sorterArray = coalesceToArray(sorter);
-  return sorterArray
-    .sort((a, b) => {
-      const aMultiple = (
-        a.column?.sorter as {
-          multiple?: number;
-        }
-      ).multiple;
-      const bMultiple = (
-        b.column?.sorter as {
-          multiple?: number;
-        }
-      ).multiple;
-      return (aMultiple ?? Number.MAX_VALUE) - (bMultiple ?? Number.MAX_VALUE);
-    })
-    .map((element) => {
-      if (element.order) {
-        return `${element.field} ${
-          element.order === "descend" ? "desc" : "asc"
-        }`;
-      }
-    })
+  sorters: SorterResult<FilterList> | SorterResult<FilterList>[]
+) =>
+  coalesceToArray(sorters)
+    .sort(
+      (a, b) =>
+        ((
+          a.column?.sorter as {
+            multiple?: number;
+          }
+        ).multiple ?? Number.MAX_VALUE) -
+        ((
+          b.column?.sorter as {
+            multiple?: number;
+          }
+        ).multiple ?? Number.MAX_VALUE)
+    )
+    .filter((sorter) => sorter.order)
+    .map(
+      (sorter) =>
+        `${sorter.field} ${sorter.order === "descend" ? "desc" : "asc"}`
+    )
     .join(",");
-};

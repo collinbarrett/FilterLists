@@ -1,6 +1,5 @@
-export function localeCompare({
+export const localeCompare = ({
   a,
   b,
-}: { a?: string; b?: string } = {}): number {
-  return a ? (b ? a.localeCompare(b) : -1) : 1;
-}
+}: { a?: string; b?: string } = {}): number =>
+  a ? (b ? a.localeCompare(b) : -1) : 1;
