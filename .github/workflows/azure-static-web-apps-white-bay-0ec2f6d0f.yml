@@ -29,7 +29,7 @@ jobs:
           action: "upload"
           app_location: "/web"
         env:
-          FILTERLISTS_API_URL: https://api.filterlists.com/v1
+          NEXT_PUBLIC_FILTERLISTS_API_URL: https://api.filterlists.com/v1
           NEXT_TELEMETRY_DISABLED: 1
 
   close_pull_request_job:
