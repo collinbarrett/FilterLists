@@ -10,8 +10,8 @@ export const useListsTable = (props: OData<FilterList>) => {
   const [pagination, setPagination] = useState({
     current: 1,
     pageSize: 10,
-    total: props["@odata.count"] ?? 0,
-  });
+    total: props["@odata.count"],
+  } as TablePaginationConfig);
   const [loading, setLoading] = useState(false);
 
   const onChange = async (
@@ -42,9 +42,8 @@ export const useListsTable = (props: OData<FilterList>) => {
 
     setData(jsonData.value);
     setPagination({
-      current: pagination.current ?? 0,
-      pageSize: pagination.pageSize ?? 0,
-      total: jsonData["@odata.count"] ?? 0,
+      ...pagination,
+      total: jsonData["@odata.count"],
     });
 
     setLoading(false);
