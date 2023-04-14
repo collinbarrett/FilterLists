@@ -1,5 +1,5 @@
 import { OData, FilterList } from "@/src/interfaces";
-import { Table, TablePaginationConfig } from "antd";
+import { Space, Table, TablePaginationConfig } from "antd";
 import { coalesceToArray, localeCompare } from "@/src/utils";
 import { useState } from "react";
 import {
@@ -7,6 +7,7 @@ import {
   SorterResult,
   TableCurrentDataSource,
 } from "antd/es/table/interface";
+import { ShowListButton } from "./ShowListButton";
 
 export const ListsTable = (props: OData<FilterList>) => {
   const [data, setData] = useState(props.value);
@@ -59,6 +60,7 @@ export const ListsTable = (props: OData<FilterList>) => {
     >
       {nameColumn}
       {descriptionColumn}
+      {actionsColumn}
     </Table>
   );
 };
@@ -110,5 +112,17 @@ const descriptionColumn = (
       compare: (a, b) => localeCompare({ a: a.description, b: b.description }),
       multiple: 2,
     }}
+  />
+);
+
+const actionsColumn = (
+  <Table.Column<FilterList>
+    title="Actions"
+    dataIndex="id"
+    render={(id, filterlist) => (
+      <Space>
+        <ShowListButton listId={id} listName={filterlist.name} />
+      </Space>
+    )}
   />
 );
