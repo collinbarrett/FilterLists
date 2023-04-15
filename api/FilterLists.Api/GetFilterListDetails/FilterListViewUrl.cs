@@ -20,5 +20,5 @@ public record FilterListViewUrl
     ///     The view URL.
     /// </summary>
     /// <example>https://easylist.to/easylist/easylist.txt</example>
-    public Uri Url { get; init; } = default!;
+    public Uri Url { get; init; } = new(string.Empty);
 }

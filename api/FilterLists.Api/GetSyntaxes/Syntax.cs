@@ -14,7 +14,7 @@ public record Syntax
     ///     The unique name.
     /// </summary>
     /// <example>Adblock Plus</example>
-    public string Name { get; init; } = default!;
+    public string Name { get; init; } = string.Empty;
 
     /// <summary>
     ///     The description.

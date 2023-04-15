@@ -14,7 +14,7 @@ public record License
     ///     The unique name.
     /// </summary>
     /// <example>All Rights Reserved</example>
-    public string Name { get; init; } = default!;
+    public string Name { get; init; } = string.Empty;
 
     /// <summary>
     ///     The URL of the home page.

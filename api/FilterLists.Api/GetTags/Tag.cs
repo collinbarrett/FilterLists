@@ -12,7 +12,7 @@ public record Tag
     ///     The unique name.
     /// </summary>
     /// <example>ads</example>
-    public string Name { get; init; } = default!;
+    public string Name { get; init; } = string.Empty;
 
     /// <summary>
     ///     The description.

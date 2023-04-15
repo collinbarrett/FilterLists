@@ -14,7 +14,7 @@ public record FilterListSummary
     ///     The unique name in title case.
     /// </summary>
     /// <example>EasyList</example>
-    public string Name { get; init; } = default!;
+    public string Name { get; init; } = string.Empty;
 
     /// <summary>
     ///     The brief description in English (preferably quoted from the project).

@@ -12,11 +12,11 @@ public record Language
     ///     The unique ISO 639-1 code.
     /// </summary>
     /// <example>en</example>
-    public string Iso6391 { get; init; } = default!;
+    public string Iso6391 { get; init; } = string.Empty;
 
     /// <summary>
     ///     The unique ISO name.
     /// </summary>
     /// <example>English</example>
-    public string Name { get; init; } = default!;
+    public string Name { get; init; } = string.Empty;
 }
