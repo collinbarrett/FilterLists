@@ -8,8 +8,8 @@ interface Props {
   licenses: OData<License>;
 }
 
-export const ListsTable = (props: Props) => (
-  <Table<FilterList> {...useListsTable({ ...props.lists })}>
+export const ListsTable = ({ lists, licenses }: Props) => (
+  <Table<FilterList> {...useListsTable({ ...lists })}>
     <Table.Column<FilterList>
       dataIndex="name"
       title="Name"
@@ -31,7 +31,7 @@ export const ListsTable = (props: Props) => (
         multiple: 2,
       }}
       render={(id) => {
-        const license = props.licenses.value.find((l) => l.id === id);
+        const license = licenses.value.find((l) => l.id === id);
         return license && <LicenseTag {...license} />;
       }}
     />
