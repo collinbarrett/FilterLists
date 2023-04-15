@@ -34,4 +34,5 @@ const App = ({ Component, pageProps }: AppProps) => (
     </Footer>
   </Layout>
 );
+
 export default App;

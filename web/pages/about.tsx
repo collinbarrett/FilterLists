@@ -16,4 +16,5 @@ const About = () => (
     <main></main>
   </>
 );
+
 export default About;
