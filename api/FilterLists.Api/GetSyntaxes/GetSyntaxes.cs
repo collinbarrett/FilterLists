@@ -4,6 +4,7 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Api.Infrastructure.Context;
+using FilterLists.Api.OData;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
@@ -13,7 +14,7 @@ using Microsoft.OpenApi.Models;
 
 namespace FilterLists.Api.GetSyntaxes;
 
-internal class GetSyntaxes
+public class GetSyntaxes
 {
     private readonly IQueryContext _queryContext;
 
@@ -46,13 +47,7 @@ internal class GetSyntaxes
                 .ApplyODataOrderBy(req.Query)
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
-                .Select(s => new Syntax
-                {
-                    Id = s.Id,
-                    Name = s.Name,
-                    Description = s.Description,
-                    Url = s.Url
-                })
+                .ProjectToSyntaxes()
                 .ToListAsync(cancellationToken)
         };
     }

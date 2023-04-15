@@ -6,8 +6,12 @@ using FilterLists.Api.Infrastructure.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
-namespace FilterLists.Api;
+namespace FilterLists.Api.OData;
 
+/// <summary>
+///     A **partial** custom OData implementation supporting Azure Functions
+///     https://github.com/Azure/Azure-Functions/issues/1044
+/// </summary>
 internal static class ODataExtensions
 {
     internal const string CountParamKey = "$count";

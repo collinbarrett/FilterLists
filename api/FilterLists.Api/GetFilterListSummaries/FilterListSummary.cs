@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-namespace FilterLists.Api.GetFilterLists;
+namespace FilterLists.Api.GetFilterListSummaries;
 
-public record FilterList
+public record FilterListSummary
 {
     /// <summary>
     ///     The identifier.

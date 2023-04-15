@@ -4,6 +4,7 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Api.Infrastructure.Context;
+using FilterLists.Api.OData;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
@@ -13,7 +14,7 @@ using Microsoft.OpenApi.Models;
 
 namespace FilterLists.Api.GetTags;
 
-internal class GetTags
+public class GetTags
 {
     private readonly IQueryContext _queryContext;
 
@@ -46,12 +47,7 @@ internal class GetTags
                 .ApplyODataOrderBy(req.Query)
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
-                .Select(t => new Tag
-                {
-                    Id = t.Id,
-                    Name = t.Name,
-                    Description = t.Description
-                })
+                .ProjectToTags()
                 .ToListAsync(cancellationToken)
         };
     }

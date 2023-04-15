@@ -4,6 +4,7 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Api.Infrastructure.Context;
+using FilterLists.Api.OData;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
@@ -13,7 +14,7 @@ using Microsoft.OpenApi.Models;
 
 namespace FilterLists.Api.GetLanguages;
 
-internal class GetLanguages
+public class GetLanguages
 {
     private readonly IQueryContext _queryContext;
 
@@ -46,12 +47,7 @@ internal class GetLanguages
                 .ApplyODataOrderBy(req.Query)
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
-                .Select(l => new Language
-                {
-                    Id = l.Id,
-                    Iso6391 = l.Iso6391,
-                    Name = l.Name
-                })
+                .ProjectToLanguages()
                 .ToListAsync(cancellationToken)
         };
     }

@@ -4,6 +4,7 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Api.Infrastructure.Context;
+using FilterLists.Api.OData;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
@@ -11,13 +12,13 @@ using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
-namespace FilterLists.Api.GetFilterLists;
+namespace FilterLists.Api.GetFilterListSummaries;
 
-internal class GetFilterLists
+public class GetFilterListSummaries
 {
     private readonly IQueryContext _queryContext;
 
-    public GetFilterLists(IQueryContext queryContext)
+    public GetFilterListSummaries(IQueryContext queryContext)
     {
         _queryContext = queryContext;
     }
@@ -31,14 +32,14 @@ internal class GetFilterLists
         Description = ODataExtensions.SkipParamDescription)]
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
-    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<FilterList>>))]
+    [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<FilterListSummary>>))]
     [FunctionName("GetFilterLists")]
-    public async Task<OData<List<FilterList>>> RunAsync(
+    public async Task<OData<List<FilterListSummary>>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "lists")]
         HttpRequest req,
         CancellationToken cancellationToken)
     {
-        return new OData<List<FilterList>>
+        return new OData<List<FilterListSummary>>
         {
             Count = await _queryContext.FilterLists.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.FilterLists
@@ -46,29 +47,7 @@ internal class GetFilterLists
                 .ApplyODataOrderBy(req.Query)
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
-                .Select(fl => new FilterList
-                {
-                    Id = fl.Id,
-                    Name = fl.Name,
-                    Description = fl.Description,
-                    LicenseId = fl.LicenseId,
-                    SyntaxIds = fl.FilterListSyntaxes
-                        .OrderBy(fls => fls.SyntaxId)
-                        .Select(fls => fls.SyntaxId),
-                    SoftwareIds = fl.FilterListSyntaxes
-                        .SelectMany(fls => fls.Syntax.SoftwareSyntaxes.Select(flss => flss.SoftwareId))
-                        .OrderBy(id => id)
-                        .Distinct(),
-                    LanguageIds = fl.FilterListLanguages
-                        .OrderBy(fll => fll.LanguageId)
-                        .Select(fll => fll.LanguageId),
-                    TagIds = fl.FilterListTags
-                        .OrderBy(flt => flt.TagId)
-                        .Select(flt => flt.TagId),
-                    MaintainerIds = fl.FilterListMaintainers
-                        .OrderBy(flm => flm.MaintainerId)
-                        .Select(flm => flm.MaintainerId)
-                })
+                .ProjectToFilterListSummaries()
                 .ToListAsync(cancellationToken)
         };
     }

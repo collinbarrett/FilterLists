@@ -4,6 +4,7 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Api.Infrastructure.Context;
+using FilterLists.Api.OData;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
@@ -13,7 +14,7 @@ using Microsoft.OpenApi.Models;
 
 namespace FilterLists.Api.GetLicenses;
 
-internal class GetLicenses
+public class GetLicenses
 {
     private readonly IQueryContext _queryContext;
 
@@ -46,15 +47,7 @@ internal class GetLicenses
                 .ApplyODataOrderBy(req.Query)
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
-                .Select(l => new License
-                {
-                    Id = l.Id,
-                    Name = l.Name,
-                    Url = l.Url,
-                    PermitsModification = l.PermitsModification,
-                    PermitsDistribution = l.PermitsDistribution,
-                    PermitsCommercialUse = l.PermitsCommercialUse
-                })
+                .ProjectToLicenses()
                 .ToListAsync(cancellationToken)
         };
     }

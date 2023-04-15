@@ -1,8 +1,8 @@
 using Newtonsoft.Json;
 
-namespace FilterLists.Api;
+namespace FilterLists.Api.OData;
 
-internal class OData<T>
+public class OData<T>
 {
     [JsonProperty("@odata.count")] public int? Count { get; set; }
 

@@ -4,6 +4,7 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Api.Infrastructure.Context;
+using FilterLists.Api.OData;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
@@ -13,7 +14,7 @@ using Microsoft.OpenApi.Models;
 
 namespace FilterLists.Api.GetMaintainers;
 
-internal class GetMaintainers
+public class GetMaintainers
 {
     private readonly IQueryContext _queryContext;
 
@@ -46,14 +47,7 @@ internal class GetMaintainers
                 .ApplyODataOrderBy(req.Query)
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
-                .Select(m => new Maintainer
-                {
-                    Id = m.Id,
-                    Name = m.Name,
-                    Url = m.Url,
-                    EmailAddress = m.EmailAddress,
-                    TwitterHandle = m.TwitterHandle
-                })
+                .ProjectToMaintainers()
                 .ToListAsync(cancellationToken)
         };
     }
