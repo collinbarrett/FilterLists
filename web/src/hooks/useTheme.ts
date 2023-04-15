@@ -1,27 +1,57 @@
 import { ThemeConfig, theme } from "antd";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const { defaultAlgorithm, darkAlgorithm, compactAlgorithm } = theme;
 
-const darkAndCompactAlgorithm = [darkAlgorithm, compactAlgorithm];
-const defaultAndCompactAlgorithm = [defaultAlgorithm, compactAlgorithm];
-
+const darkCompactAlgorithm = [darkAlgorithm, compactAlgorithm];
+const defaultCompactAlgorithm = [defaultAlgorithm, compactAlgorithm];
 const defaultTheme = {
-  algorithm: defaultAndCompactAlgorithm,
-} as ThemeConfig;
+  algorithm: defaultCompactAlgorithm,
+};
+const appPreferDarkKey = "darkTheme";
 
-// TODO: persist preference in local storage
-// TODO: check browser's theme preference
 export const useTheme = (): {
   theme: ThemeConfig;
   setDarkTheme: (darkTheme: boolean) => void;
 } => {
-  const [theme, setTheme] = useState(defaultTheme);
+  const [currentTheme, setTheme] = useState<ThemeConfig | null>(null);
 
-  const setDarkTheme = (darkTheme: boolean) =>
-    darkTheme
-      ? setTheme({ ...theme, algorithm: darkAndCompactAlgorithm })
-      : setTheme({ ...theme, algorithm: defaultAndCompactAlgorithm });
+  useEffect(() => {
+    setTheme({
+      ...defaultTheme,
+      algorithm: getInitialAlgorithm(),
+    });
+  }, []);
 
-  return { theme, setDarkTheme };
+  useEffect(() => {
+    if (currentTheme) {
+      localStorage.setItem(
+        appPreferDarkKey,
+        currentTheme.algorithm === darkCompactAlgorithm ? "true" : "false"
+      );
+    }
+  }, [currentTheme]);
+
+  const setDarkTheme = (darkTheme: boolean) => {
+    if (currentTheme) {
+      darkTheme
+        ? setTheme({ ...currentTheme, algorithm: darkCompactAlgorithm })
+        : setTheme({ ...currentTheme, algorithm: defaultCompactAlgorithm });
+    }
+  };
+
+  return { theme: currentTheme || defaultTheme, setDarkTheme };
+};
+
+const getInitialAlgorithm = () => {
+  const appPreferDark = localStorage.getItem(appPreferDarkKey);
+  if (appPreferDark !== null) {
+    return appPreferDark === "true"
+      ? darkCompactAlgorithm
+      : defaultCompactAlgorithm;
+  }
+
+  const browserPreferDark =
+    window.matchMedia?.("(prefers-color-scheme: dark)")?.matches ?? false;
+  return browserPreferDark ? darkCompactAlgorithm : defaultCompactAlgorithm;
 };
