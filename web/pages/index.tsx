@@ -4,7 +4,7 @@ import { InferGetStaticPropsType } from "next";
 import Head from "next/head";
 
 const Home = ({
-  lists,
+  filterLists,
   licenses,
 }: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
@@ -20,7 +20,7 @@ const Home = ({
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <main>
-      <ListsTable lists={lists} licenses={licenses} />
+      <ListsTable lists={filterLists} licenses={licenses} />
     </main>
   </>
 );
@@ -28,43 +28,42 @@ const Home = ({
 export default Home;
 
 export const getStaticProps = async () => {
-  const [lists, licenses, syntaxes, software, languages, tags, maintainers] =
-    // TODO: consider creating a single protected (for UI-use only) endpoint that returns all data
-    await Promise.all([
-      fetchLists(),
-      fetchLicenses(),
-      fetchSyntaxes(),
-      fetchSoftware(),
-      fetchLanguages(),
-      fetchTags(),
-      fetchMaintainers(),
-    ]);
+  const {
+    filterLists,
+    languages,
+    licenses,
+    maintainers,
+    software,
+    syntaxes,
+    tags,
+  } = await fetchListTable();
   return {
     props: {
-      lists,
-      licenses,
-      syntaxes,
-      software,
+      filterLists,
       languages,
-      tags,
+      licenses,
       maintainers,
+      software,
+      syntaxes,
+      tags,
     },
     revalidate: 86400,
   };
 };
 
-const fetchLists = () =>
-  fetchData("lists", new URLSearchParams({ $count: "true", $top: "10" }));
-const fetchLicenses = () => fetchData("licenses");
-const fetchSyntaxes = () => fetchData("syntaxes");
-const fetchSoftware = () => fetchData("software");
-const fetchLanguages = () => fetchData("languages");
-const fetchTags = () => fetchData("tags");
-const fetchMaintainers = () => fetchData("maintainers");
+const fetchListTable = async () => {
+  const baseUrl = process.env.FILTERLISTS_PRIVATE_API_URL;
+  if (baseUrl === undefined)
+    throw new Error("FILTERLISTS_PRIVATE_API_URL is undefined");
+  const key = process.env.FILTERLISTS_PRIVATE_API_KEY;
+  if (key === undefined)
+    throw new Error("FILTERLISTS_PRIVATE_API_KEY is undefined");
 
-const fetchData = async (endpoint: string, params?: URLSearchParams) => {
-  const base_url = `${process.env.NEXT_PUBLIC_FILTERLISTS_API_URL}/${endpoint}`;
-  const url = params ? `${base_url}?${params}` : base_url;
+  const listTableUrl = `${baseUrl}/list-table`;
+  // TODO: optimize $count for max rows on max viewport? SEO impact?
+  const params = new URLSearchParams({ $count: "true", $top: "10", code: key });
+  const url = `${listTableUrl}?${params}`;
+
   const response = await fetch(url);
   return await response.json();
 };

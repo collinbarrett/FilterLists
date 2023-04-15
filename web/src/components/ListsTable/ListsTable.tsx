@@ -5,7 +5,7 @@ import { LicenseTag, ShowListButton } from "./components";
 
 interface Props {
   lists: OData<FilterList>;
-  licenses: OData<License>;
+  licenses: License[];
 }
 
 export const ListsTable = ({ lists, licenses }: Props) => (
@@ -31,7 +31,7 @@ export const ListsTable = ({ lists, licenses }: Props) => (
         multiple: 2,
       }}
       render={(id) => {
-        const license = licenses.value.find((l) => l.id === id);
+        const license = licenses.find((l) => l.id === id);
         return license && <LicenseTag {...license} />;
       }}
     />

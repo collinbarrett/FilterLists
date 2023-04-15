@@ -29,8 +29,10 @@ jobs:
           action: "upload"
           app_location: "/web"
         env:
-          NEXT_PUBLIC_FILTERLISTS_API_URL: https://api.filterlists.com/v1
           NEXT_TELEMETRY_DISABLED: 1
+          NEXT_PUBLIC_FILTERLISTS_API_URL: https://api.filterlists.com/v1
+          FILTERLISTS_PRIVATE_API_URL: ${{ secrets.FILTERLISTS_PRIVATE_API_URL }}
+          FILTERLISTS_PRIVATE_API_KEY: ${{ secrets.FILTERLISTS_PRIVATE_API_KEY }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
