@@ -4,7 +4,7 @@ import { OData, FilterList, Language, License } from "@/src/interfaces";
 import { LanguageCloud, LicenseTag, ShowListButton } from "./components";
 
 interface Props {
-  lists: OData<FilterList>;
+  lists: OData<FilterList[]>;
   languages: Language[];
   licenses: License[];
 }

@@ -5,7 +5,7 @@ import { TableCurrentDataSource } from "antd/lib/table/interface";
 import { FilterList, OData } from "@/src/interfaces";
 import { coalesceToArray } from "@/src/utils";
 
-export const useListsTable = (props: OData<FilterList>) => {
+export const useListsTable = (props: OData<FilterList[]>) => {
   const [dataSource, setData] = useState(props.value);
   const [pagination, setPagination] = useState({
     current: 1,
