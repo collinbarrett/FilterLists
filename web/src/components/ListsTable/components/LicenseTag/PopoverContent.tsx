@@ -9,7 +9,6 @@ export const PopoverContent = ({
 }: License) => (
   <List
     size="small"
-    bordered
     dataSource={[
       { value: permitsDistribution, label: "Permits Distribution" },
       { value: permitsModification, label: "Permits Modification" },

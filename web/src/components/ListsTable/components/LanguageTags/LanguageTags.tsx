@@ -5,7 +5,7 @@ interface Props {
   languages: Language[];
 }
 
-export const LanguageCloud = ({ languages }: Props) =>
+export const LanguageTags = ({ languages }: Props) =>
   languages.length ? (
     <>
       {languages.map((l: Language, i: number) => (

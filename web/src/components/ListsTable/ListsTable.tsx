@@ -2,16 +2,18 @@ import { Space, Table } from "antd";
 import { useListsTable } from "./useListsTable";
 import { FilterList, ListTable } from "@/src/interfaces";
 import {
-  LanguageCloud,
+  LanguageTags,
   LicenseTag,
+  MaintainerTags,
   ShowListButton,
-  TagCloud,
+  TagTags,
 } from "./components";
 
 export const ListsTable = ({
   filterLists,
   languages,
   licenses,
+  maintainers,
   tags,
 }: ListTable) => (
   <Table<FilterList> {...useListsTable({ ...filterLists })}>
@@ -44,7 +46,7 @@ export const ListsTable = ({
       dataIndex="languageIds"
       title="Languages"
       render={(languageIds: number[]) => (
-        <LanguageCloud
+        <LanguageTags
           languages={languages.filter((l) => languageIds.includes(l.id))}
         />
       )}
@@ -53,7 +55,16 @@ export const ListsTable = ({
       dataIndex="tagIds"
       title="Tags"
       render={(tagIds: number[]) => (
-        <TagCloud tags={tags.filter((t) => tagIds.includes(t.id))} />
+        <TagTags tags={tags.filter((t) => tagIds.includes(t.id))} />
+      )}
+    />
+    <Table.Column<FilterList>
+      dataIndex="maintainerIds"
+      title="Maintainers"
+      render={(maintainerIds: number[]) => (
+        <MaintainerTags
+          maintainers={maintainers.filter((m) => maintainerIds.includes(m.id))}
+        />
       )}
     />
     <Table.Column<FilterList>

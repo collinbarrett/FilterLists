@@ -5,7 +5,7 @@ interface Props {
   tags: Tag[];
 }
 
-export const TagCloud = ({ tags }: Props) =>
+export const TagTags = ({ tags }: Props) =>
   tags.length ? (
     <>
       {tags.map((t: Tag, i: number) => (
