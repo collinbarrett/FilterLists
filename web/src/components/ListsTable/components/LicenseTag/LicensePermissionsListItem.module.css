@@ -6,3 +6,7 @@
 .icon {
   margin-right: 8px;
 }
+
+.not-permitted {
+  text-decoration: line-through;
+}

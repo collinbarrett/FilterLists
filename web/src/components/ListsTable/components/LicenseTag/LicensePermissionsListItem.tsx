@@ -18,9 +18,7 @@ export const LicensePermissionsListItem = ({ value, label }: Props) => (
       ) : (
         <>
           <CloseCircleTwoTone twoToneColor="#f5222d" className={styles.icon} />
-          <span>
-            <del>{label}</del>
-          </span>
+          <span className={styles["not-permitted"]}>{label}</span>
         </>
       )}
     </div>
