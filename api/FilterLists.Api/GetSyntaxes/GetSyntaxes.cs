@@ -23,7 +23,7 @@ public class GetSyntaxes
         _queryContext = queryContext;
     }
 
-    [OpenApiOperation(tags: "Syntaxes")]
+    [OpenApiOperation(tags: nameof(Infrastructure.Entities.Syntax))]
     [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
         Description = ODataExtensions.CountParamDescription)]
     [OpenApiParameter(ODataExtensions.OrderByParamKey, Type = typeof(string), In = ParameterLocation.Query,
@@ -33,7 +33,7 @@ public class GetSyntaxes
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<Syntax>>))]
-    [FunctionName("GetSyntaxes")]
+    [FunctionName(nameof(GetSyntaxes))]
     public async Task<OData<List<Syntax>>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "syntaxes")]
         HttpRequest req,

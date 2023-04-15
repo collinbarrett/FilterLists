@@ -27,7 +27,7 @@ public class GetFilterListTable
         _queryContext = queryContext;
     }
 
-    [FunctionName("GetFilterListTable")]
+    [FunctionName(nameof(GetFilterListTable))]
     public async Task<FilterListTable> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "list-table")]
         HttpRequest req,

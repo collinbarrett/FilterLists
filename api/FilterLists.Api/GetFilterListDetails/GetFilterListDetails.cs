@@ -3,6 +3,7 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Api.Infrastructure.Context;
+using FilterLists.Api.Infrastructure.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
@@ -20,10 +21,10 @@ public class GetFilterListDetails
         _queryContext = queryContext;
     }
 
-    [OpenApiOperation(tags: "FilterLists")]
-    [OpenApiParameter("id", Required = true, Type = typeof(int))]
+    [OpenApiOperation(tags: nameof(FilterList))]
+    [OpenApiParameter(nameof(FilterList.Id), Required = true, Type = typeof(int))]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(FilterListDetails))]
-    [FunctionName("GetFilterListDetails")]
+    [FunctionName(nameof(GetFilterListDetails))]
     public Task<FilterListDetails?> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "lists/{id:int}")]
         HttpRequest req,

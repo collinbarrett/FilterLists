@@ -23,7 +23,7 @@ public class GetLicenses
         _queryContext = queryContext;
     }
 
-    [OpenApiOperation(tags: "Licenses")]
+    [OpenApiOperation(tags: nameof(Infrastructure.Entities.License))]
     [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
         Description = ODataExtensions.CountParamDescription)]
     [OpenApiParameter(ODataExtensions.OrderByParamKey, Type = typeof(string), In = ParameterLocation.Query,
@@ -33,7 +33,7 @@ public class GetLicenses
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<License>>))]
-    [FunctionName("GetLicenses")]
+    [FunctionName(nameof(GetLicenses))]
     public async Task<OData<List<License>>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "licenses")]
         HttpRequest req,

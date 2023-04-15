@@ -23,7 +23,7 @@ public class GetMaintainers
         _queryContext = queryContext;
     }
 
-    [OpenApiOperation(tags: "Maintainers")]
+    [OpenApiOperation(tags: nameof(Infrastructure.Entities.Maintainer))]
     [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
         Description = ODataExtensions.CountParamDescription)]
     [OpenApiParameter(ODataExtensions.OrderByParamKey, Type = typeof(string), In = ParameterLocation.Query,
@@ -33,7 +33,7 @@ public class GetMaintainers
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<Maintainer>>))]
-    [FunctionName("GetMaintainers")]
+    [FunctionName(nameof(GetMaintainers))]
     public async Task<OData<List<Maintainer>>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "maintainers")]
         HttpRequest req,

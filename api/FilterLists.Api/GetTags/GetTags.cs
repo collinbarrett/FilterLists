@@ -23,7 +23,7 @@ public class GetTags
         _queryContext = queryContext;
     }
 
-    [OpenApiOperation(tags: "Tags")]
+    [OpenApiOperation(tags: nameof(Infrastructure.Entities.Tag))]
     [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
         Description = ODataExtensions.CountParamDescription)]
     [OpenApiParameter(ODataExtensions.OrderByParamKey, Type = typeof(string), In = ParameterLocation.Query,
@@ -33,7 +33,7 @@ public class GetTags
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<Tag>>))]
-    [FunctionName("GetTags")]
+    [FunctionName(nameof(GetTags))]
     public async Task<OData<List<Tag>>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "tags")]
         HttpRequest req,
