@@ -35,6 +35,7 @@ export const useListsTable = (props: OData<FilterList>) => {
       params.append("$orderby", orderBy);
     }
 
+    // TODO: use SWR? https://swr.vercel.app/
     const url =
       `${process.env.NEXT_PUBLIC_FILTERLISTS_API_URL}/lists?` + params;
     const response = await fetch(url);
