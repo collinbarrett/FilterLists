@@ -5,6 +5,7 @@ import Head from "next/head";
 
 const Home = ({
   filterLists,
+  languages,
   licenses,
 }: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
@@ -20,7 +21,11 @@ const Home = ({
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <main>
-      <ListsTable lists={filterLists} licenses={licenses} />
+      <ListsTable
+        lists={filterLists}
+        languages={languages}
+        licenses={licenses}
+      />
     </main>
   </>
 );

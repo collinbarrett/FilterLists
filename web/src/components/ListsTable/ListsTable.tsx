@@ -1,14 +1,15 @@
 import { Space, Table } from "antd";
 import { useListsTable } from "./useListsTable";
-import { OData, FilterList, License } from "@/src/interfaces";
-import { LicenseTag, ShowListButton } from "./components";
+import { OData, FilterList, Language, License } from "@/src/interfaces";
+import { LanguageCloud, LicenseTag, ShowListButton } from "./components";
 
 interface Props {
   lists: OData<FilterList>;
+  languages: Language[];
   licenses: License[];
 }
 
-export const ListsTable = ({ lists, licenses }: Props) => (
+export const ListsTable = ({ lists, languages, licenses }: Props) => (
   <Table<FilterList> {...useListsTable({ ...lists })}>
     <Table.Column<FilterList>
       dataIndex="name"
@@ -30,10 +31,19 @@ export const ListsTable = ({ lists, licenses }: Props) => (
       sorter={{
         multiple: 2,
       }}
-      render={(id) => {
-        const license = licenses.find((l) => l.id === id);
+      render={(licenseId) => {
+        const license = licenses.find((l) => l.id === licenseId);
         return license && <LicenseTag {...license} />;
       }}
+    />
+    <Table.Column<FilterList>
+      dataIndex="languageIds"
+      title="Languages"
+      render={(languageIds: number[]) => (
+        <LanguageCloud
+          languages={languages.filter((l) => languageIds.includes(l.id))}
+        />
+      )}
     />
     <Table.Column<FilterList>
       dataIndex="id"
