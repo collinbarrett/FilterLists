@@ -1,13 +1,10 @@
 import { ListsTable } from "@/src/components";
+import { ListTable } from "@/src/interfaces";
 import { InferGetStaticPropsType } from "next";
 
 import Head from "next/head";
 
-const Home = ({
-  filterLists,
-  languages,
-  licenses,
-}: InferGetStaticPropsType<typeof getStaticProps>) => (
+const Home = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
   <>
     <Head>
       <title>
@@ -21,40 +18,19 @@ const Home = ({
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <main>
-      <ListsTable
-        lists={filterLists}
-        languages={languages}
-        licenses={licenses}
-      />
+      <ListsTable {...props} />
     </main>
   </>
 );
 
 export default Home;
 
-export const getStaticProps = async () => {
-  const {
-    filterLists,
-    languages,
-    licenses,
-    maintainers,
-    software,
-    syntaxes,
-    tags,
-  } = await fetchListTable();
-  return {
-    props: {
-      filterLists,
-      languages,
-      licenses,
-      maintainers,
-      software,
-      syntaxes,
-      tags,
-    },
-    revalidate: 86400,
-  };
-};
+export const getStaticProps = async () => ({
+  props: {
+    ...(await fetchListTable()),
+  },
+  revalidate: 86400,
+});
 
 const fetchListTable = async () => {
   const baseUrl = process.env.FILTERLISTS_PRIVATE_API_URL;
@@ -70,5 +46,5 @@ const fetchListTable = async () => {
   const url = `${listTableUrl}?${params}`;
 
   const response = await fetch(url);
-  return await response.json();
+  return (await response.json()) as ListTable;
 };

@@ -1,16 +1,10 @@
 import { Space, Table } from "antd";
 import { useListsTable } from "./useListsTable";
-import { OData, FilterList, Language, License } from "@/src/interfaces";
+import { FilterList, ListTable } from "@/src/interfaces";
 import { LanguageCloud, LicenseTag, ShowListButton } from "./components";
 
-interface Props {
-  lists: OData<FilterList[]>;
-  languages: Language[];
-  licenses: License[];
-}
-
-export const ListsTable = ({ lists, languages, licenses }: Props) => (
-  <Table<FilterList> {...useListsTable({ ...lists })}>
+export const ListsTable = ({ filterLists, languages, licenses }: ListTable) => (
+  <Table<FilterList> {...useListsTable({ ...filterLists })}>
     <Table.Column<FilterList>
       dataIndex="name"
       title="Name"
