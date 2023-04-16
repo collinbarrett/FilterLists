@@ -54,6 +54,7 @@ interface Props {
 
 export const SoftwareIcon = ({ id }: Props) => {
   const icon = icons.get(id);
+  // TODO: get latest full size logos and let next Image optimize
   return icon ? <Image src={icon.image} height="20" alt={icon.title} /> : null;
 };
 
