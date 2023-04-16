@@ -52,6 +52,7 @@ internal static class ODataExtensions
         this IOrderedQueryable<FilterList> source,
         IQueryCollection queryCollection)
     {
+        // TODO: fix license/name getting prioritized over name even when name is first in query string
         for (var index = 0; index < queryCollection[OrderByParamKey].Count; index++)
         {
             var query = queryCollection[OrderByParamKey][index];
