@@ -1,4 +1,4 @@
-import { AnchorToExternal } from "@/src/components/Common";
+import { AnchorToExternal } from "@/src/components";
 import { Syntax } from "@/src/interfaces";
 import { Popover, Tag } from "antd";
 import { PopoverContent } from "./PopoverContent";
