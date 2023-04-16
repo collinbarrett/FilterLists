@@ -24,14 +24,14 @@ public class GetTags
     }
 
     [OpenApiOperation(tags: nameof(Infrastructure.Entities.Tag))]
-    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
-        Description = ODataExtensions.CountParamDescription)]
     [OpenApiParameter(ODataExtensions.OrderByParamKey, Type = typeof(string), In = ParameterLocation.Query,
         Description = ODataExtensions.OrderByParamDescription)]
     [OpenApiParameter(ODataExtensions.SkipParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.SkipParamDescription)]
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
+    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
+        Description = ODataExtensions.CountParamDescription)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<Tag>>))]
     [FunctionName(nameof(GetTags))]
     public async Task<OData<List<Tag>>> RunAsync(
@@ -41,14 +41,17 @@ public class GetTags
     {
         return new OData<List<Tag>>
         {
-            Count = await _queryContext.Tags.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Tags
                 .OrderBy(t => t.Id)
                 .ApplyODataOrderBy(req.Query)
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
                 .ProjectToTags()
-                .ToListAsync(cancellationToken)
+                .ToListAsync(cancellationToken),
+            Count = await _queryContext.Tags
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
+                .ApplyODataCount(req.Query, cancellationToken)
         };
     }
 }

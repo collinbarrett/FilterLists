@@ -14,11 +14,6 @@ namespace FilterLists.Api.OData;
 /// </summary>
 internal static class ODataExtensions
 {
-    internal const string CountParamKey = "$count";
-
-    internal const string CountParamDescription =
-        "https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html#sec_SystemQueryOptioncount";
-
     internal const string OrderByParamKey = "$orderby";
 
     internal const string OrderByParamDescription =
@@ -34,15 +29,10 @@ internal static class ODataExtensions
     internal const string TopParamDescription =
         "https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html#sec_SystemQueryOptiontop";
 
-    internal static async Task<int?> ApplyODataCount<T>(
-        this IQueryable<T> source,
-        IQueryCollection queryCollection,
-        CancellationToken cancellationToken)
-    {
-        var applyCount = queryCollection[CountParamKey] == "true";
-        if (applyCount) return await source.CountAsync(cancellationToken);
-        return null;
-    }
+    internal const string CountParamKey = "$count";
+
+    internal const string CountParamDescription =
+        "https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html#sec_SystemQueryOptioncount";
 
     internal static IQueryable<T> ApplyODataOrderBy<T>(
         this IOrderedQueryable<T> source,
@@ -102,5 +92,15 @@ internal static class ODataExtensions
         if (int.TryParse(queryCollection[TopParamKey], out var top))
             source = source.Take(top);
         return source;
+    }
+
+    internal static async Task<int?> ApplyODataCount<T>(
+        this IQueryable<T> source,
+        IQueryCollection queryCollection,
+        CancellationToken cancellationToken)
+    {
+        var applyCount = queryCollection[CountParamKey] == "true";
+        if (applyCount) return await source.CountAsync(cancellationToken);
+        return null;
     }
 }

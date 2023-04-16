@@ -25,14 +25,14 @@ public class GetFilterListSummaries
     }
 
     [OpenApiOperation(tags: nameof(FilterList))]
-    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
-        Description = ODataExtensions.CountParamDescription)]
     [OpenApiParameter(ODataExtensions.OrderByParamKey, Type = typeof(string), In = ParameterLocation.Query,
         Description = ODataExtensions.OrderByParamDescription)]
     [OpenApiParameter(ODataExtensions.SkipParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.SkipParamDescription)]
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
+    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
+        Description = ODataExtensions.CountParamDescription)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<FilterListSummary>>))]
     [FunctionName(nameof(GetFilterListSummaries))]
     public async Task<OData<List<FilterListSummary>>> RunAsync(
@@ -42,14 +42,17 @@ public class GetFilterListSummaries
     {
         return new OData<List<FilterListSummary>>
         {
-            Count = await _queryContext.FilterLists.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.FilterLists
                 .OrderBy(fl => fl.Id)
                 .ApplyODataOrderBy(req.Query)
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
                 .ProjectToFilterListSummaries()
-                .ToListAsync(cancellationToken)
+                .ToListAsync(cancellationToken),
+            Count = await _queryContext.FilterLists
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
+                .ApplyODataCount(req.Query, cancellationToken)
         };
     }
 }

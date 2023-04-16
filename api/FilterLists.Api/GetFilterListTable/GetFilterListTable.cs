@@ -38,12 +38,17 @@ public class GetFilterListTable
         {
             FilterLists = new OData<List<FilterListSummary>>
             {
-                Count = await _queryContext.FilterLists.ApplyODataCount(req.Query, cancellationToken),
                 Value = await _queryContext.FilterLists
                     .OrderBy(fl => fl.Id)
+                    .ApplyODataOrderBy(req.Query)
+                    .ApplyODataSkip(req.Query)
                     .ApplyODataTop(req.Query)
                     .ProjectToFilterListSummaries()
-                    .ToListAsync(cancellationToken)
+                    .ToListAsync(cancellationToken),
+                Count = await _queryContext.FilterLists
+                    .ApplyODataSkip(req.Query)
+                    .ApplyODataTop(req.Query)
+                    .ApplyODataCount(req.Query, cancellationToken)
             },
             Languages = await _queryContext.Languages.ProjectToLanguages().ToListAsync(cancellationToken),
             Licenses = await _queryContext.Licenses.ProjectToLicenses().ToListAsync(cancellationToken),

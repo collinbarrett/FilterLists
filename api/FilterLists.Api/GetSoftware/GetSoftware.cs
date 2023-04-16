@@ -24,14 +24,14 @@ public class GetSoftware
     }
 
     [OpenApiOperation(tags: nameof(Infrastructure.Entities.Software))]
-    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
-        Description = ODataExtensions.CountParamDescription)]
     [OpenApiParameter(ODataExtensions.OrderByParamKey, Type = typeof(string), In = ParameterLocation.Query,
         Description = ODataExtensions.OrderByParamDescription)]
     [OpenApiParameter(ODataExtensions.SkipParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.SkipParamDescription)]
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
+    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
+        Description = ODataExtensions.CountParamDescription)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<Software>>))]
     [FunctionName(nameof(GetSoftware))]
     public async Task<OData<List<Software>>> RunAsync(
@@ -41,14 +41,17 @@ public class GetSoftware
     {
         return new OData<List<Software>>
         {
-            Count = await _queryContext.Software.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Software
                 .OrderBy(s => s.Id)
                 .ApplyODataOrderBy(req.Query)
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
                 .ProjectToSoftware()
-                .ToListAsync(cancellationToken)
+                .ToListAsync(cancellationToken),
+            Count = await _queryContext.Software
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
+                .ApplyODataCount(req.Query, cancellationToken)
         };
     }
 }

@@ -34,6 +34,6 @@ public class GetFilterListDetails
         return _queryContext.FilterLists
             .Where(f => f.Id == id)
             .ProjectToFilterListDetails()
-            .SingleOrDefaultAsync(cancellationToken);
+            .FirstOrDefaultAsync(cancellationToken);
     }
 }

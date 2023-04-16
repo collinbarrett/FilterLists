@@ -24,14 +24,14 @@ public class GetMaintainers
     }
 
     [OpenApiOperation(tags: nameof(Infrastructure.Entities.Maintainer))]
-    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
-        Description = ODataExtensions.CountParamDescription)]
     [OpenApiParameter(ODataExtensions.OrderByParamKey, Type = typeof(string), In = ParameterLocation.Query,
         Description = ODataExtensions.OrderByParamDescription)]
     [OpenApiParameter(ODataExtensions.SkipParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.SkipParamDescription)]
     [OpenApiParameter(ODataExtensions.TopParamKey, Type = typeof(int), In = ParameterLocation.Query,
         Description = ODataExtensions.TopParamDescription)]
+    [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
+        Description = ODataExtensions.CountParamDescription)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<Maintainer>>))]
     [FunctionName(nameof(GetMaintainers))]
     public async Task<OData<List<Maintainer>>> RunAsync(
@@ -41,14 +41,17 @@ public class GetMaintainers
     {
         return new OData<List<Maintainer>>
         {
-            Count = await _queryContext.Maintainers.ApplyODataCount(req.Query, cancellationToken),
             Value = await _queryContext.Maintainers
                 .OrderBy(m => m.Id)
                 .ApplyODataOrderBy(req.Query)
                 .ApplyODataSkip(req.Query)
                 .ApplyODataTop(req.Query)
                 .ProjectToMaintainers()
-                .ToListAsync(cancellationToken)
+                .ToListAsync(cancellationToken),
+            Count = await _queryContext.Maintainers
+                .ApplyODataSkip(req.Query)
+                .ApplyODataTop(req.Query)
+                .ApplyODataCount(req.Query, cancellationToken)
         };
     }
 }
