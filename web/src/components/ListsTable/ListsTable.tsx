@@ -5,6 +5,7 @@ import {
   LanguageTags,
   LicenseTag,
   MaintainerTags,
+  SoftwareIcons,
   ShowListButton,
   SyntaxTags,
   TagTags,
@@ -37,7 +38,11 @@ export const ListsTable = ({
     <Table.Column<FilterListSummary>
       dataIndex="softwareIds"
       title="Software"
-      render={() => "TODO"}
+      render={(softwareIds: number[]) => (
+        <SoftwareIcons
+          software={software.filter((s) => softwareIds.includes(s.id))}
+        />
+      )}
     />
     <Table.Column<FilterListSummary>
       dataIndex="languageIds"
