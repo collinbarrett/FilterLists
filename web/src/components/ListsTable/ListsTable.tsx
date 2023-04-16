@@ -6,6 +6,7 @@ import {
   LicenseTag,
   MaintainerTags,
   ShowListButton,
+  SyntaxTags,
   TagTags,
 } from "./components";
 
@@ -14,6 +15,7 @@ export const ListsTable = ({
   languages,
   licenses,
   maintainers,
+  syntaxes,
   tags,
 }: ListTable) => (
   <Table<FilterList> {...useListsTable({ ...filterLists })}>
@@ -32,15 +34,9 @@ export const ListsTable = ({
       }}
     />
     <Table.Column<FilterList>
-      dataIndex="licenseId"
-      title="License"
-      sorter={{
-        multiple: 2,
-      }}
-      render={(licenseId) => {
-        const license = licenses.find((l) => l.id === licenseId);
-        return license && <LicenseTag {...license} />;
-      }}
+      dataIndex="softwareIds"
+      title="Software"
+      render={() => "TODO"}
     />
     <Table.Column<FilterList>
       dataIndex="languageIds"
@@ -66,6 +62,26 @@ export const ListsTable = ({
           maintainers={maintainers.filter((m) => maintainerIds.includes(m.id))}
         />
       )}
+    />
+    <Table.Column<FilterList>
+      dataIndex="syntaxIds"
+      title="Syntaxes"
+      render={(syntaxIds: number[]) => (
+        <SyntaxTags
+          syntaxes={syntaxes.filter((s) => syntaxIds.includes(s.id))}
+        />
+      )}
+    />
+    <Table.Column<FilterList>
+      dataIndex="licenseId"
+      title="License"
+      sorter={{
+        multiple: 2,
+      }}
+      render={(licenseId) => {
+        const license = licenses.find((l) => l.id === licenseId);
+        return license && <LicenseTag {...license} />;
+      }}
     />
     <Table.Column<FilterList>
       dataIndex="id"
