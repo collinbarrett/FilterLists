@@ -2,44 +2,38 @@ import { List } from "antd";
 import { Maintainer } from "@/src/interfaces";
 import { HomeOutlined, MailOutlined, TwitterOutlined } from "@ant-design/icons";
 import { ButtonAnchorToExternal } from "@/src/components";
+import {
+  getAnchorPropsEmailAddress,
+  getAnchorPropsTwitter,
+  getAnchorPropsUrl,
+} from "./getAnchorProps";
 
-export const PopoverContent = ({
-  name,
-  url,
-  emailAddress,
-  twitterHandle,
-}: Maintainer) => (
+export const PopoverContent = (maintainer: Maintainer) => (
   <List size="small">
-    {url && (
+    {maintainer.url && (
       <List.Item>
         <ButtonAnchorToExternal
           block
           type="primary"
-          href={url}
-          title={`View ${name}'s homepage.`}
+          {...getAnchorPropsUrl(maintainer)}
         >
           <HomeOutlined /> Website
         </ButtonAnchorToExternal>
       </List.Item>
     )}
-    {emailAddress && (
+    {maintainer.emailAddress && (
       <List.Item>
         <ButtonAnchorToExternal
           block
-          href={`mailto:${emailAddress}`}
-          title={`Email ${name}.`}
+          {...getAnchorPropsEmailAddress(maintainer)}
         >
           <MailOutlined /> Email
         </ButtonAnchorToExternal>
       </List.Item>
     )}
-    {twitterHandle && (
+    {maintainer.twitterHandle && (
       <List.Item>
-        <ButtonAnchorToExternal
-          block
-          href={`https://twitter.com/${twitterHandle}`}
-          title={`${name} on Twitter`}
-        >
+        <ButtonAnchorToExternal block {...getAnchorPropsTwitter(maintainer)}>
           <TwitterOutlined /> Twitter
         </ButtonAnchorToExternal>
       </List.Item>
