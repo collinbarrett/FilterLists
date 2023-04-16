@@ -1,5 +1,5 @@
+export * from "./Common";
 export * from "./Footer";
 export * from "./Header";
 export * from "./ListsTable";
 export * from "./Menu";
-export * from "./Head";

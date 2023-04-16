@@ -1,15 +1,14 @@
 import { GithubOutlined } from "@ant-design/icons";
 import { Tag } from "antd";
+import { AnchorToExternal } from "@/src/components";
 
 export const GitHub = () => (
   <Tag>
-    <a
+    <AnchorToExternal
       href="https://github.com/collinbarrett/FilterLists"
       title="FilterLists git repository on GitHub"
-      target="_blank"
-      rel="noopener noreferrer"
     >
       <GithubOutlined /> GitHub
-    </a>
+    </AnchorToExternal>
   </Tag>
 );

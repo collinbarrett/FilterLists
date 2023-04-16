@@ -1,15 +1,14 @@
 import { DollarOutlined } from "@ant-design/icons";
 import { Tag } from "antd";
+import { AnchorToExternal } from "@/src/components";
 
 export const Donate = () => (
   <Tag>
-    <a
+    <AnchorToExternal
       href="https://github.com/sponsors/collinbarrett"
       title="Sponsor Collin Barrett on GitHub"
-      target="_blank"
-      rel="noopener noreferrer"
     >
       <DollarOutlined /> Donate
-    </a>
+    </AnchorToExternal>
   </Tag>
 );
