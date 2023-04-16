@@ -48,10 +48,7 @@ public class GetLanguages
                 .ApplyODataTop(req.Query)
                 .ProjectToLanguages()
                 .ToListAsync(cancellationToken),
-            Count = await _queryContext.Languages
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
-                .ApplyODataCount(req.Query, cancellationToken)
+            Count = await _queryContext.Languages.ApplyODataCount(req.Query, cancellationToken)
         };
     }
 }

@@ -49,10 +49,7 @@ public class GetFilterListSummaries
                 .ApplyODataTop(req.Query)
                 .ProjectToFilterListSummaries()
                 .ToListAsync(cancellationToken),
-            Count = await _queryContext.FilterLists
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
-                .ApplyODataCount(req.Query, cancellationToken)
+            Count = await _queryContext.FilterLists.ApplyODataCount(req.Query, cancellationToken)
         };
     }
 }

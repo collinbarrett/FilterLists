@@ -48,10 +48,7 @@ public class GetMaintainers
                 .ApplyODataTop(req.Query)
                 .ProjectToMaintainers()
                 .ToListAsync(cancellationToken),
-            Count = await _queryContext.Maintainers
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
-                .ApplyODataCount(req.Query, cancellationToken)
+            Count = await _queryContext.Maintainers.ApplyODataCount(req.Query, cancellationToken)
         };
     }
 }

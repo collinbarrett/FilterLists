@@ -48,10 +48,7 @@ public class GetTags
                 .ApplyODataTop(req.Query)
                 .ProjectToTags()
                 .ToListAsync(cancellationToken),
-            Count = await _queryContext.Tags
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
-                .ApplyODataCount(req.Query, cancellationToken)
+            Count = await _queryContext.Tags.ApplyODataCount(req.Query, cancellationToken)
         };
     }
 }

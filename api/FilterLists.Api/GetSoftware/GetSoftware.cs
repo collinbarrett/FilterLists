@@ -48,10 +48,7 @@ public class GetSoftware
                 .ApplyODataTop(req.Query)
                 .ProjectToSoftware()
                 .ToListAsync(cancellationToken),
-            Count = await _queryContext.Software
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
-                .ApplyODataCount(req.Query, cancellationToken)
+            Count = await _queryContext.Software.ApplyODataCount(req.Query, cancellationToken)
         };
     }
 }

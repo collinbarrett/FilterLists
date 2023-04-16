@@ -48,10 +48,7 @@ public class GetLicenses
                 .ApplyODataTop(req.Query)
                 .ProjectToLicenses()
                 .ToListAsync(cancellationToken),
-            Count = await _queryContext.Licenses
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
-                .ApplyODataCount(req.Query, cancellationToken)
+            Count = await _queryContext.Licenses.ApplyODataCount(req.Query, cancellationToken)
         };
     }
 }

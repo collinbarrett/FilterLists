@@ -48,10 +48,7 @@ public class GetSyntaxes
                 .ApplyODataTop(req.Query)
                 .ProjectToSyntaxes()
                 .ToListAsync(cancellationToken),
-            Count = await _queryContext.Syntaxes
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
-                .ApplyODataCount(req.Query, cancellationToken)
+            Count = await _queryContext.Syntaxes.ApplyODataCount(req.Query, cancellationToken)
         };
     }
 }

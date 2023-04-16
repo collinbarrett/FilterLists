@@ -45,10 +45,7 @@ public class GetFilterListTable
                     .ApplyODataTop(req.Query)
                     .ProjectToFilterListSummaries()
                     .ToListAsync(cancellationToken),
-                Count = await _queryContext.FilterLists
-                    .ApplyODataSkip(req.Query)
-                    .ApplyODataTop(req.Query)
-                    .ApplyODataCount(req.Query, cancellationToken)
+                Count = await _queryContext.FilterLists.ApplyODataCount(req.Query, cancellationToken)
             },
             Languages = await _queryContext.Languages.ProjectToLanguages().ToListAsync(cancellationToken),
             Licenses = await _queryContext.Licenses.ProjectToLicenses().ToListAsync(cancellationToken),
