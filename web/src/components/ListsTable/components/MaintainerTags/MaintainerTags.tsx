@@ -1,6 +1,6 @@
 import { Maintainer } from "@/src/interfaces";
-import { Popover, Tag } from "antd";
-import { PopoverContent } from "./PopoverContent";
+import { Tag } from "antd";
+import { TagAnchoredWithPopover } from "./TagAnchoredWithPopover";
 
 interface Props {
   maintainers: Maintainer[];
@@ -9,13 +9,13 @@ interface Props {
 export const MaintainerTags = ({ maintainers }: Props) =>
   maintainers.length ? (
     <>
-      {maintainers.map((m: Maintainer, i: number) =>
-        m.url || m.emailAddress || m.twitterHandle ? (
-          <Popover title={m.name} content={PopoverContent(m)} key={i}>
-            <Tag>{m.name}</Tag>
-          </Popover>
+      {maintainers.map((maintainer: Maintainer, index: number) =>
+        maintainer.url ||
+        maintainer.emailAddress ||
+        maintainer.twitterHandle ? (
+          <TagAnchoredWithPopover maintainer={maintainer} key={index} />
         ) : (
-          <Tag key={i}>{m.name}</Tag>
+          <Tag key={index}>{maintainer.name}</Tag>
         )
       )}
     </>

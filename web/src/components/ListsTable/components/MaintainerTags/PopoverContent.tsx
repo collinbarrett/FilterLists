@@ -1,7 +1,8 @@
-import { Button, List } from "antd";
+import { List } from "antd";
 
 import { Maintainer } from "@/src/interfaces";
 import { HomeOutlined, MailOutlined, TwitterOutlined } from "@ant-design/icons";
+import { ButtonAnchorToExternal } from "@/src/components/Common";
 
 export const PopoverContent = ({
   name,
@@ -12,45 +13,39 @@ export const PopoverContent = ({
   <List size="small">
     {url && (
       <List.Item>
-        <Button
+        <ButtonAnchorToExternal
           block
           type="primary"
           href={url}
           title={`View ${name}'s homepage.`}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <HomeOutlined />
           &nbsp;Website
-        </Button>
+        </ButtonAnchorToExternal>
       </List.Item>
     )}
     {emailAddress && (
       <List.Item>
-        <Button
+        <ButtonAnchorToExternal
           block
           href={`mailto:${emailAddress}`}
           title={`Email ${name}.`}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <MailOutlined />
           &nbsp;Email
-        </Button>
+        </ButtonAnchorToExternal>
       </List.Item>
     )}
     {twitterHandle && (
       <List.Item>
-        <Button
+        <ButtonAnchorToExternal
           block
           href={`https://twitter.com/${twitterHandle}`}
-          title={`${twitterHandle} on Twitter`}
-          target="_blank"
-          rel="noopener noreferrer"
+          title={`${name} on Twitter`}
         >
           <TwitterOutlined />
           &nbsp;Twitter
-        </Button>
+        </ButtonAnchorToExternal>
       </List.Item>
     )}
   </List>
