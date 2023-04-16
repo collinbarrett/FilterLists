@@ -1,11 +1,14 @@
 import { useState } from "react";
-import { TablePaginationConfig, SorterResult } from "antd/lib/table/interface";
-import { FilterValue } from "antd/lib/table/interface";
-import { TableCurrentDataSource } from "antd/lib/table/interface";
-import { FilterList, OData } from "@/src/interfaces";
+import {
+  FilterValue,
+  TableCurrentDataSource,
+  TablePaginationConfig,
+  SorterResult,
+} from "antd/lib/table/interface";
+import { FilterListSummary, OData } from "@/src/interfaces";
 import { coalesceToArray } from "@/src/utils";
 
-export const useListsTable = (props: OData<FilterList[]>) => {
+export const useListsTable = (props: OData<FilterListSummary[]>) => {
   const [dataSource, setData] = useState(props.value);
   const [pagination, setPagination] = useState({
     current: 1,
@@ -17,8 +20,8 @@ export const useListsTable = (props: OData<FilterList[]>) => {
   const onChange = async (
     pagination: TablePaginationConfig,
     _filters: Record<string, FilterValue | null>,
-    sorter: SorterResult<FilterList> | SorterResult<FilterList>[],
-    _extra: TableCurrentDataSource<FilterList>
+    sorter: SorterResult<FilterListSummary> | SorterResult<FilterListSummary>[],
+    _extra: TableCurrentDataSource<FilterListSummary>
   ) => {
     setLoading(true);
 
@@ -50,13 +53,13 @@ export const useListsTable = (props: OData<FilterList[]>) => {
     setLoading(false);
   };
 
-  const rowKey = (filterlist: FilterList) => filterlist.id;
+  const rowKey = (filterlist: FilterListSummary) => filterlist.id;
 
   return { dataSource, pagination, loading, onChange, rowKey };
 };
 
 const toODataOrderBy = (
-  sorters: SorterResult<FilterList> | SorterResult<FilterList>[]
+  sorters: SorterResult<FilterListSummary> | SorterResult<FilterListSummary>[]
 ) =>
   coalesceToArray(sorters)
     .sort(

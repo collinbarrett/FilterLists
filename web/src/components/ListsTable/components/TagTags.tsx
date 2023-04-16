@@ -8,9 +8,9 @@ interface Props {
 export const TagTags = ({ tags }: Props) =>
   tags.length ? (
     <>
-      {tags.map((t: Tag, i: number) => (
-        <Popover title={t.name} content={t.description} key={i}>
-          <AntTag>{t.name}</AntTag>
+      {tags.map((tag: Tag, index: number) => (
+        <Popover title={tag.name} content={tag.description} key={index}>
+          <AntTag>{tag.name}</AntTag>
         </Popover>
       ))}
     </>

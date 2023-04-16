@@ -1,5 +1,5 @@
 import { Head, ListsTable } from "@/src/components";
-import { ListTable } from "@/src/interfaces";
+import { FilterListTable } from "@/src/interfaces";
 import { InferGetStaticPropsType } from "next";
 
 const Home = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
@@ -20,7 +20,7 @@ export const getStaticProps = async () => ({
   revalidate: 86400,
 });
 
-const fetchListTable = async (): Promise<ListTable> => {
+const fetchListTable = async (): Promise<FilterListTable> => {
   const baseUrl = process.env.FILTERLISTS_PRIVATE_API_URL;
   if (baseUrl === undefined)
     throw new Error("FILTERLISTS_PRIVATE_API_URL is undefined");
@@ -32,9 +32,7 @@ const fetchListTable = async (): Promise<ListTable> => {
   const params = new URLSearchParams({ $count: "true", $top: "10", code: key });
   const url = `${listTableUrl}?${params}`;
 
-  return fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-      return data;
-    });
+  // TODO: use SWR? https://swr.vercel.app/
+  const response = await fetch(url);
+  return await response.json();
 };

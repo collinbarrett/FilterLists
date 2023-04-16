@@ -1,6 +1,6 @@
 import { Space, Table } from "antd";
 import { useListsTable } from "./useListsTable";
-import { FilterList, ListTable } from "@/src/interfaces";
+import { FilterListSummary, FilterListTable } from "@/src/interfaces";
 import {
   LanguageTags,
   LicenseTag,
@@ -15,30 +15,31 @@ export const ListsTable = ({
   languages,
   licenses,
   maintainers,
+  software,
   syntaxes,
   tags,
-}: ListTable) => (
-  <Table<FilterList> {...useListsTable({ ...filterLists })}>
-    <Table.Column<FilterList>
+}: FilterListTable) => (
+  <Table<FilterListSummary> {...useListsTable({ ...filterLists })}>
+    <Table.Column<FilterListSummary>
       dataIndex="name"
       title="Name"
       sorter={{
         multiple: 1,
       }}
     />
-    <Table.Column<FilterList>
+    <Table.Column<FilterListSummary>
       dataIndex="description"
       title="Description"
       sorter={{
         multiple: 3,
       }}
     />
-    <Table.Column<FilterList>
+    <Table.Column<FilterListSummary>
       dataIndex="softwareIds"
       title="Software"
       render={() => "TODO"}
     />
-    <Table.Column<FilterList>
+    <Table.Column<FilterListSummary>
       dataIndex="languageIds"
       title="Languages"
       render={(languageIds: number[]) => (
@@ -47,14 +48,14 @@ export const ListsTable = ({
         />
       )}
     />
-    <Table.Column<FilterList>
+    <Table.Column<FilterListSummary>
       dataIndex="tagIds"
       title="Tags"
       render={(tagIds: number[]) => (
         <TagTags tags={tags.filter((t) => tagIds.includes(t.id))} />
       )}
     />
-    <Table.Column<FilterList>
+    <Table.Column<FilterListSummary>
       dataIndex="maintainerIds"
       title="Maintainers"
       render={(maintainerIds: number[]) => (
@@ -63,7 +64,7 @@ export const ListsTable = ({
         />
       )}
     />
-    <Table.Column<FilterList>
+    <Table.Column<FilterListSummary>
       dataIndex="syntaxIds"
       title="Syntaxes"
       render={(syntaxIds: number[]) => (
@@ -72,7 +73,7 @@ export const ListsTable = ({
         />
       )}
     />
-    <Table.Column<FilterList>
+    <Table.Column<FilterListSummary>
       dataIndex="licenseId"
       title="License"
       sorter={{
@@ -83,7 +84,7 @@ export const ListsTable = ({
         return license && <LicenseTag {...license} />;
       }}
     />
-    <Table.Column<FilterList>
+    <Table.Column<FilterListSummary>
       dataIndex="id"
       title="Actions"
       render={(id, filterlist) => (

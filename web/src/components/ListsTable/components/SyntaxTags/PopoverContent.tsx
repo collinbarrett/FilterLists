@@ -1,5 +1,4 @@
-import { Button, List } from "antd";
-
+import { List } from "antd";
 import { Syntax } from "@/src/interfaces";
 import { HomeOutlined } from "@ant-design/icons";
 import { ButtonAnchorToExternal } from "@/src/components";
@@ -19,8 +18,7 @@ export const PopoverContent = ({ name, description, url }: Syntax) => (
           href={url}
           title={`View ${name}'s homepage.`}
         >
-          <HomeOutlined />
-          &nbsp;Website
+          <HomeOutlined /> Website
         </ButtonAnchorToExternal>
       </List.Item>
     )}

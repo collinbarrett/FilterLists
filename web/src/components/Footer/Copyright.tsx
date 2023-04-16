@@ -8,7 +8,7 @@ export const Copyright = () => (
       href="https://collinmbarrett.com"
       title="Collin M. Barrett's Homepage"
     >
-      <CopyrightOutlined /> {new Date().getFullYear()}&nbsp; Collin M. Barrett
+      <CopyrightOutlined /> {new Date().getFullYear()} Collin M. Barrett
     </AnchorToExternal>
   </Tag>
 );

@@ -1,5 +1,5 @@
 import {
-  FilterList,
+  FilterListSummary,
   Language,
   License,
   Maintainer,
@@ -9,8 +9,8 @@ import {
   Tag,
 } from ".";
 
-export interface ListTable {
-  filterLists: OData<FilterList[]>;
+export interface FilterListTable {
+  filterLists: OData<FilterListSummary[]>;
   languages: Language[];
   licenses: License[];
   maintainers: Maintainer[];

@@ -1,6 +1,6 @@
 export const routes = [
   {
-    route: "/",
+    path: "/",
     description: "Lists",
   },
 ];

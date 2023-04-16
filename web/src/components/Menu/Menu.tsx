@@ -8,11 +8,12 @@ export const Menu = () => (
   <MenuAntd
     {...useMenu()}
     className={styles.menu}
+    // TODO: toggle with theme switcher
     theme="dark"
     mode="horizontal"
-    items={routes.map((item) => ({
-      label: <Link href={item.route}>{item.description}</Link>,
-      key: item.route,
+    items={routes.map((route) => ({
+      label: <Link href={route.path}>{route.description}</Link>,
+      key: route.path,
     }))}
   />
 );

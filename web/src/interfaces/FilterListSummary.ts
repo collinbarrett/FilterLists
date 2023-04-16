@@ -1,4 +1,4 @@
-export interface FilterList {
+export interface FilterListSummary {
   id: number;
   name: string;
   description?: string;

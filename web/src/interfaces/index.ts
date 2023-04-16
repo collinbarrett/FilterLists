@@ -1,4 +1,5 @@
-import { FilterList } from "./FilterList";
+import { FilterListSummary } from "./FilterListSummary";
+import { FilterListTable } from "./FilterListTable";
 import { Language } from "./Language";
 import { License } from "./License";
 import { Maintainer } from "./Maintainer";
@@ -6,10 +7,10 @@ import { Software } from "./Software";
 import { Syntax } from "./Syntax";
 import { Tag } from "./Tag";
 import { OData } from "./OData";
-import { ListTable } from "./ListTable";
 
 export type {
-  FilterList,
+  FilterListSummary,
+  FilterListTable,
   Language,
   License,
   Maintainer,
@@ -17,5 +18,4 @@ export type {
   Syntax,
   Tag,
   OData,
-  ListTable,
 };

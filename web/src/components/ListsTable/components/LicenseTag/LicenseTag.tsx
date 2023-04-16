@@ -15,7 +15,7 @@ export const LicenseTag = (license: License) => (
           {license.name}
         </AnchorToExternal>
       ) : (
-        <>{license.name}</>
+        license.name
       )}
     </Tag>
   </Popover>
