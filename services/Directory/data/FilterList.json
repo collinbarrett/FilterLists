@@ -17783,6 +17783,13 @@
     "name": "VXVault filterlist (unofficial)"
   },
   {
+    "description": "List of active DGA domains for various malware families.",
+    "homeUrl": "https://1275.ru/spisok-aktivnyh-dga-domain-generation-algorithm-domenov/",
+    "id": 2653,
+    "licenseId": 5,
+    "name": "List of active DGA (domain generation algorithm) domains - General list (all types of threats)"
+  },
+  {
     "description": "Compilation of filters for AdGuard Home",
     "homeUrl": "https://github.com/ammnt/DeadEnd",
     "id": 2654,

@@ -16442,6 +16442,13 @@
     "url": "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/snuff.list"
   },
   {
+    "filterListId": 2653,
+    "id": 2931,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://1275.ru/DGA/dga.txt"
+  },
+  {
     "filterListId": 2654,
     "id": 2932,
     "primariness": 1,
