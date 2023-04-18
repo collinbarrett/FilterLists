@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\FilterLists.Api.Infrastructure\FilterLists.Api.Infrastructure.csproj"/>
+        <ProjectReference Include="..\FilterLists.Api.Infrastructure\FilterLists.Api.Infrastructure.csproj" />
     </ItemGroup>
 
     <ItemGroup>
@@ -15,7 +15,6 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4"/>
     </ItemGroup>
 
 </Project>

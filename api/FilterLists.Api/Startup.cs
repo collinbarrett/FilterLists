@@ -1,23 +1,28 @@
 using System;
-using FilterLists.Api;
+using System.Threading.Tasks;
 using FilterLists.Api.Infrastructure.Extensions;
-using Microsoft.Azure.Functions.Extensions.DependencyInjection;
+using Microsoft.Azure.Functions.Worker.Extensions.OpenApi.Extensions;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Abstractions;
 using Microsoft.Extensions.DependencyInjection;
-
-[assembly: FunctionsStartup(typeof(Startup))]
+using Microsoft.Extensions.Hosting;
 
 namespace FilterLists.Api;
 
-public class Startup : FunctionsStartup
+public class Program
 {
-    public override void Configure(IFunctionsHostBuilder builder)
+    private static async Task Main(string[] args)
     {
-        const string connectionStringKey = "FilterListsReadOnlyConnectionString";
-        var readOnlyConnectionString = Environment.GetEnvironmentVariable(connectionStringKey) ??
-                                       throw new InvalidOperationException($"Missing {connectionStringKey}");
-        builder.Services.AddInfrastructure(readOnlyConnectionString);
-        builder.Services.AddSingleton<IOpenApiConfigurationOptions>(
-            _ => new OpenApiConfigurationOptions());
+        var host = new HostBuilder()
+            .ConfigureFunctionsWorkerDefaults(worker => worker.UseNewtonsoftJson())
+            .ConfigureServices(services =>
+            {
+                const string connectionStringKey = "FilterListsReadOnlyConnectionString";
+                var readOnlyConnectionString = Environment.GetEnvironmentVariable(connectionStringKey) ??
+                                               throw new InvalidOperationException($"Missing {connectionStringKey}");
+                services.AddInfrastructure(readOnlyConnectionString);
+                services.AddSingleton<IOpenApiConfigurationOptions>(_ => new OpenApiConfigurationOptions());
+            })
+            .Build();
+        await host.RunAsync();
     }
 }
