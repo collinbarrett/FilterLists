@@ -15491,12 +15491,6 @@
     "url": "https://iam-py-test.github.io/my_filters_001/Alternative%20list%20formats/antimalware_hosts.txt"
   },
   {
-    "filterListId": 2540,
-    "id": 2759,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/AmmoniteFilter/TrilobiteFilter/main/filter.txt"
-  },
-  {
     "filterListId": 2541,
     "id": 2760,
     "primariness": 1,

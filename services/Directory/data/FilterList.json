@@ -16902,15 +16902,6 @@
     "name": "The malicious website blocklist (HOSTs file)"
   },
   {
-    "description": "The security filter for AdGuard Home",
-    "emailAddress": "contact@ammnt.app",
-    "homeUrl": "https://ammnt.app",
-    "id": 2540,
-    "issuesUrl": "https://github.com/AmmoniteFilter/TrilobiteFilter/issues",
-    "licenseId": 4,
-    "name": "TrilobiteFilter"
-  },
-  {
     "description": "This list aims to protect against scams, phishing, malware, and potentially unwanted programs (PUPs). It includes a version of vxvault.net's list, modified by me (iam-py-test) to work in adblockers. (Domains version)",
     "emailAddress": "iam-py-test@protonmail.com",
     "homeUrl": "https://github.com/iam-py-test/my_filters_001",
