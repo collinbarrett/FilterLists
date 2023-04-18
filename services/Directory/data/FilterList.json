@@ -17532,14 +17532,6 @@
     "name": "3rd Party only Frame Blocking with Social Media exceptions"
   },
   {
-    "description": "A bigger variant of Frame-Blocker-Filter. This variant-filter is designed to block non-essential Frames.",
-    "homeUrl": "https://github.com/thedoggybrad/Non-Essential-Frames-Blocker",
-    "id": 2619,
-    "issuesUrl": "https://github.com/thedoggybrad/Non-Essential-Frames-Blocker/issues",
-    "licenseId": 17,
-    "name": "Non-Essential-Frames-Blocker"
-  },
-  {
     "description": "Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Metrics, some Malware and Fake.",
     "homeUrl": "https://github.com/hagezi/dns-blocklists",
     "id": 2620,
