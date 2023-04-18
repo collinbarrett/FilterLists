@@ -17529,7 +17529,7 @@
     "id": 2618,
     "issuesUrl": "https://github.com/thedoggybrad/Frame-Blocker-Filter/issues",
     "licenseId": 17,
-    "name": "3rd Party only Frame Blocking with Social Media exceptions"
+    "name": "3rd Party Only Frame Blocking with Social Media and Google exceptions"
   },
   {
     "description": "Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Metrics, some Malware and Fake.",
