@@ -15491,12 +15491,6 @@
     "url": "https://iam-py-test.github.io/my_filters_001/Alternative%20list%20formats/antimalware_hosts.txt"
   },
   {
-    "filterListId": 2539,
-    "id": 2758,
-    "primariness": 1,
-    "url": "https://ammnt.app/filter.txt"
-  },
-  {
     "filterListId": 2540,
     "id": 2759,
     "primariness": 1,
