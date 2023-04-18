@@ -16902,25 +16902,6 @@
     "name": "The malicious website blocklist (HOSTs file)"
   },
   {
-    "description": "The family filter for AdGuard Home",
-    "descriptionSourceUrl": "https://ammnt.app/filter.txt",
-    "emailAddress": "contact@ammnt.app",
-    "homeUrl": "https://ammnt.app",
-    "id": 2539,
-    "issuesUrl": "https://github.com/AmmoniteFilter/AmmoniteFilter/issues",
-    "licenseId": 4,
-    "name": "AmmoniteFilter"
-  },
-  {
-    "description": "The security filter for AdGuard Home",
-    "emailAddress": "contact@ammnt.app",
-    "homeUrl": "https://ammnt.app",
-    "id": 2540,
-    "issuesUrl": "https://github.com/AmmoniteFilter/TrilobiteFilter/issues",
-    "licenseId": 4,
-    "name": "TrilobiteFilter"
-  },
-  {
     "description": "This list aims to protect against scams, phishing, malware, and potentially unwanted programs (PUPs). It includes a version of vxvault.net's list, modified by me (iam-py-test) to work in adblockers. (Domains version)",
     "emailAddress": "iam-py-test@protonmail.com",
     "homeUrl": "https://github.com/iam-py-test/my_filters_001",
@@ -17807,5 +17788,13 @@
     "id": 2653,
     "licenseId": 5,
     "name": "List of active DGA (domain generation algorithm) domains - General list (all types of threats)"
+  },
+  {
+    "description": "Compilation of filters for AdGuard Home",
+    "homeUrl": "https://github.com/ammnt/DeadEnd",
+    "id": 2654,
+    "issuesUrl": "https://github.com/ammnt/DeadEnd/issues",
+    "licenseId": 4,
+    "name": "Dead End"
   }
 ]
