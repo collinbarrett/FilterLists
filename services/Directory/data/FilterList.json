@@ -17781,5 +17781,13 @@
     "issuesUrl": "https://github.com/iam-py-test/vxvault_filter/issues",
     "licenseId": 28,
     "name": "VXVault filterlist (unofficial)"
+  },
+  {
+    "description": "Compilation of filters for AdGuard Home",
+    "homeUrl": "https://github.com/ammnt/DeadEnd",
+    "id": 2654,
+    "issuesUrl": "https://github.com/ammnt/DeadEnd/issues",
+    "licenseId": 4,
+    "name": "Dead End"
   }
 ]
