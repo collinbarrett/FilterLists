@@ -11,9 +11,8 @@ using FilterLists.Api.GetSyntaxes;
 using FilterLists.Api.GetTags;
 using FilterLists.Api.Infrastructure.Context;
 using FilterLists.Api.OData;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.Azure.Functions.Worker;
+using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Api.GetFilterListTable;
@@ -27,10 +26,10 @@ public class GetFilterListTable
         _queryContext = queryContext;
     }
 
-    [FunctionName(nameof(GetFilterListTable))]
+    [Function(nameof(GetFilterListTable))]
     public async Task<FilterListTable> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "list-table")]
-        HttpRequest req,
+        HttpRequestData req,
         CancellationToken cancellationToken)
     {
         // TODO: ⚡️ run all queries in parallel (requires separate DbContexts)?
@@ -40,12 +39,12 @@ public class GetFilterListTable
             {
                 Value = await _queryContext.FilterLists
                     .OrderBy(fl => fl.Id)
-                    .ApplyODataOrderBy(req.Query)
-                    .ApplyODataSkip(req.Query)
-                    .ApplyODataTop(req.Query)
+                    // .ApplyODataOrderBy(req.Query)
+                    // .ApplyODataSkip(req.Query)
+                    // .ApplyODataTop(req.Query)
                     .ProjectToFilterListSummaries()
-                    .ToListAsync(cancellationToken),
-                Count = await _queryContext.FilterLists.ApplyODataCount(req.Query, cancellationToken)
+                    .ToListAsync(cancellationToken)
+                // Count = await _queryContext.FilterLists.ApplyODataCount(req.Query, cancellationToken)
             },
             Languages = await _queryContext.Languages.ProjectToLanguages().ToListAsync(cancellationToken),
             Licenses = await _queryContext.Licenses.ProjectToLicenses().ToListAsync(cancellationToken),

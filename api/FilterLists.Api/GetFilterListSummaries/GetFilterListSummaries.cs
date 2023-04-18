@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 using FilterLists.Api.Infrastructure.Context;
 using FilterLists.Api.Infrastructure.Entities;
 using FilterLists.Api.OData;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.Azure.Functions.Worker;
+using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -34,22 +33,21 @@ public class GetFilterListSummaries
     [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
         Description = ODataExtensions.CountParamDescription)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<FilterListSummary>>))]
-    [FunctionName(nameof(GetFilterListSummaries))]
-    public async Task<OData<List<FilterListSummary>>> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "lists")]
-        HttpRequest req,
+    [Function(nameof(GetFilterListSummaries))]
+    public async Task<OData<List<FilterListSummary>>> Run(
+        [HttpTrigger(AuthorizationLevel.Function, "get", Route = "lists")] HttpRequestData req,
         CancellationToken cancellationToken)
     {
         return new OData<List<FilterListSummary>>
         {
             Value = await _queryContext.FilterLists
                 .OrderBy(fl => fl.Id)
-                .ApplyODataOrderBy(req.Query)
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
+                // .ApplyODataOrderBy(req.Query)
+                // .ApplyODataSkip(req.Query)
+                // .ApplyODataTop(req.Query)
                 .ProjectToFilterListSummaries()
                 .ToListAsync(cancellationToken),
-            Count = await _queryContext.FilterLists.ApplyODataCount(req.Query, cancellationToken)
+            // Count = await _queryContext.FilterLists.ApplyODataCount(req.Query, cancellationToken)
         };
     }
 }

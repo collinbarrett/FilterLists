@@ -5,9 +5,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using FilterLists.Api.Infrastructure.Context;
 using FilterLists.Api.OData;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.Azure.Functions.Worker;
+using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -33,22 +32,22 @@ public class GetSoftware
     [OpenApiParameter(ODataExtensions.CountParamKey, Type = typeof(bool), In = ParameterLocation.Query,
         Description = ODataExtensions.CountParamDescription)]
     [OpenApiResponseWithBody(HttpStatusCode.OK, "application/json", typeof(OData<List<Software>>))]
-    [FunctionName(nameof(GetSoftware))]
+    [Function(nameof(GetSoftware))]
     public async Task<OData<List<Software>>> RunAsync(
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = "software")]
-        HttpRequest req,
+        HttpRequestData req,
         CancellationToken cancellationToken)
     {
         return new OData<List<Software>>
         {
             Value = await _queryContext.Software
                 .OrderBy(s => s.Id)
-                .ApplyODataOrderBy(req.Query)
-                .ApplyODataSkip(req.Query)
-                .ApplyODataTop(req.Query)
+                // .ApplyODataOrderBy(req.Query)
+                // .ApplyODataSkip(req.Query)
+                // .ApplyODataTop(req.Query)
                 .ProjectToSoftware()
-                .ToListAsync(cancellationToken),
-            Count = await _queryContext.Software.ApplyODataCount(req.Query, cancellationToken)
+                .ToListAsync(cancellationToken)
+            // Count = await _queryContext.Software.ApplyODataCount(req.Query, cancellationToken)
         };
     }
 }
