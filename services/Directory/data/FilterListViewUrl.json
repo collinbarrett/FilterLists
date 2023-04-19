@@ -16454,5 +16454,12 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://raw.githubusercontent.com/ammnt/DeadEnd/main/filter.txt"
+  },
+  {
+    "filterListId": 2655,
+    "id": 2933,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://codeberg.org/badandugly/badandugly/raw/branch/main/blocklist"
   }
 ]
