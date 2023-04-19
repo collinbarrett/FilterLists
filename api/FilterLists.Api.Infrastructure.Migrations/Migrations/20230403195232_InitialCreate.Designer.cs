@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FilterLists.Api.Infrastructure.Migrations.Migrations
 {
-    [DbContext(typeof(QueryDbContext))]
+    [DbContext(typeof(FilterListsDbContext))]
     [Migration("20230403195232_InitialCreate")]
     partial class InitialCreate
     {

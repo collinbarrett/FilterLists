@@ -8,7 +8,7 @@ public static class ConfigurationExtensions
 {
     public static void AddInfrastructure(this IServiceCollection services, string readOnlyConnectionString)
     {
-        services.AddDbContext<QueryDbContext>(options =>
+        services.AddDbContext<FilterListsDbContext>(options =>
             options.UseSqlServer(readOnlyConnectionString,
                     b =>
                     {
@@ -19,6 +19,5 @@ public static class ConfigurationExtensions
                             null);
                     })
                 .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
-        services.AddScoped<IQueryContext, QueryContext>();
     }
 }

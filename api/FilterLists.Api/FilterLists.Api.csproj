@@ -3,14 +3,16 @@
         <TargetFramework>net7.0</TargetFramework>
         <AzureFunctionsVersion>V4</AzureFunctionsVersion>
         <OutputType>Exe</OutputType>
+        <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
     <ItemGroup>
+        <PackageReference Include="HotChocolate.AzureFunctions.IsolatedProcess" Version="13.0.5" />
+        <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.0.5" />
+        <PackageReference Include="HotChocolate.Types.Analyzers" Version="13.0.5" />
         <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.13.0" />
         <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.0.13" />
-        <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.OpenApi" Version="1.5.1" />
         <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.9.0" />
-        <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.2" />
     </ItemGroup>
     <ItemGroup>
         <None Update="host.json">
@@ -20,6 +22,9 @@
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
             <CopyToPublishDirectory>Never</CopyToPublishDirectory>
         </None>
+    </ItemGroup>
+    <ItemGroup>
+        <Using Include="System.Threading.ExecutionContext" Alias="ExecutionContext" />
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\FilterLists.Api.Infrastructure\FilterLists.Api.Infrastructure.csproj" />

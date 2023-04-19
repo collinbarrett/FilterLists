@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FilterLists.Api.Infrastructure.Migrations.Migrations
 {
-    [DbContext(typeof(QueryDbContext))]
+    [DbContext(typeof(FilterListsDbContext))]
     partial class QueryDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
