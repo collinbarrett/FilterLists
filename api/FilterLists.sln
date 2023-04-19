@@ -2,10 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Api", "FilterLists.Api\FilterLists.Api.csproj", "{4133C146-604D-47C3-AFFE-9BEC4AC7D14D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Api.Infrastructure", "FilterLists.Api.Infrastructure\FilterLists.Api.Infrastructure.csproj", "{0EB731D9-56A5-44E3-B882-2F34AB8D174B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Api.Infrastructure.Migrations", "FilterLists.Api.Infrastructure.Migrations\FilterLists.Api.Infrastructure.Migrations.csproj", "{47250849-D7E7-400B-AA40-ABAEE2CC3319}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,13 +12,5 @@ Global
 		{4133C146-604D-47C3-AFFE-9BEC4AC7D14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4133C146-604D-47C3-AFFE-9BEC4AC7D14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4133C146-604D-47C3-AFFE-9BEC4AC7D14D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0EB731D9-56A5-44E3-B882-2F34AB8D174B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EB731D9-56A5-44E3-B882-2F34AB8D174B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0EB731D9-56A5-44E3-B882-2F34AB8D174B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0EB731D9-56A5-44E3-B882-2F34AB8D174B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{47250849-D7E7-400B-AA40-ABAEE2CC3319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{47250849-D7E7-400B-AA40-ABAEE2CC3319}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{47250849-D7E7-400B-AA40-ABAEE2CC3319}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{47250849-D7E7-400B-AA40-ABAEE2CC3319}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
