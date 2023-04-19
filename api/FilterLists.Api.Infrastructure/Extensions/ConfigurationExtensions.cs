@@ -12,6 +12,7 @@ public static class ConfigurationExtensions
             options.UseSqlServer(readOnlyConnectionString,
                     b =>
                     {
+                        // TODO: rm separate console app since isolated az func _should_ support EF Core migrations
                         b.MigrationsAssembly("FilterLists.Api.Infrastructure.Migrations");
                         b.EnableRetryOnFailure(
                             10,
