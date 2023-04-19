@@ -17797,4 +17797,12 @@
     "licenseId": 4,
     "name": "Dead End"
   }
+    {
+    "description": "List of German-speaking web-sites with fake-news, propaganda, hate-speech, etc.",
+    "homeUrl": "https://codeberg.org/badandugly/badandugly",
+    "id": 2655,
+    "issuesUrl": "https://codeberg.org/badandugly/badandugly/issues",
+    "licenseId": 4,
+    "name": "The Bad & The Ugly Blocklist (German)"
+  }
 ]
