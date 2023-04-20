@@ -15,11 +15,10 @@ public class GraphQLFunction
     }
 
     [Function(nameof(GraphQLFunction))]
-    public async Task<HttpResponseData> Run(
-        [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "graphql" /*"graphql/{**slug}"*/)]
-        HttpRequestData request,
-        CancellationToken cancellationToken)
+    public Task<HttpResponseData> Run(
+        [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "graphql/{**slug}")]
+        HttpRequestData request)
     {
-        return await _executor.ExecuteAsync(request);
+        return _executor.ExecuteAsync(request);
     }
 }
