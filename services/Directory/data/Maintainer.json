@@ -956,5 +956,10 @@
     "id": 185,
     "name": "The Doggy Brad",
     "url": "https://github.com/thedoggybrad"
+  },
+  {
+    "id": 186,
+    "name": "BadAndUgly",
+    "url": "https://codeberg.org/badandugly"
   }
 ]
