@@ -7,9 +7,9 @@ namespace FilterLists.Api.Persistence.Entities;
 public record FilterListLanguage
 {
     public int FilterListId { get; init; }
-    public FilterList FilterList { get; init; } = default!;
+    public FilterList FilterList { get; init; } = new();
     public int LanguageId { get; init; }
-    public Language Language { get; init; } = default!;
+    public Language Language { get; init; } = new();
 }
 
 internal class FilterListLanguageTypeConfiguration : IEntityTypeConfiguration<FilterListLanguage>

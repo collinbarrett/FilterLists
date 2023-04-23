@@ -7,9 +7,9 @@ namespace FilterLists.Api.Persistence.Entities;
 public record FilterListMaintainer
 {
     public int FilterListId { get; init; }
-    public FilterList FilterList { get; init; } = default!;
+    public FilterList FilterList { get; init; } = new();
     public int MaintainerId { get; init; }
-    public Maintainer Maintainer { get; init; } = default!;
+    public Maintainer Maintainer { get; init; } = new();
 }
 
 internal class FilterListMaintainerTypeConfiguration : IEntityTypeConfiguration<FilterListMaintainer>

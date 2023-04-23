@@ -7,7 +7,7 @@ namespace FilterLists.Api.Persistence.Entities;
 public record Software
 {
     public int Id { get; init; }
-    public string Name { get; init; } = default!;
+    public string Name { get; init; } = string.Empty;
     public string? Description { get; init; }
     public Uri? HomeUrl { get; init; }
     public Uri? DownloadUrl { get; init; }

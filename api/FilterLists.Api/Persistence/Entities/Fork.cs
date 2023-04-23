@@ -7,9 +7,9 @@ namespace FilterLists.Api.Persistence.Entities;
 public record Fork
 {
     public int UpstreamFilterListId { get; init; }
-    public FilterList UpstreamFilterList { get; init; } = default!;
+    public FilterList UpstreamFilterList { get; init; } = new();
     public int ForkFilterListId { get; init; }
-    public FilterList ForkFilterList { get; init; } = default!;
+    public FilterList ForkFilterList { get; init; } = new();
 }
 
 internal class ForkTypeConfiguration : IEntityTypeConfiguration<Fork>

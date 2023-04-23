@@ -7,9 +7,9 @@ namespace FilterLists.Api.Persistence.Entities;
 public record Dependent
 {
     public int DependencyFilterListId { get; init; }
-    public FilterList DependencyFilterList { get; init; } = default!;
+    public FilterList DependencyFilterList { get; init; } = new();
     public int DependentFilterListId { get; init; }
-    public FilterList DependentFilterList { get; init; } = default!;
+    public FilterList DependentFilterList { get; init; } = new();
 }
 
 internal class DependentTypeConfiguration : IEntityTypeConfiguration<Dependent>

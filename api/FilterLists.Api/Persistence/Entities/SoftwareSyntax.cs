@@ -7,9 +7,9 @@ namespace FilterLists.Api.Persistence.Entities;
 public record SoftwareSyntax
 {
     public int SoftwareId { get; init; }
-    public Software Software { get; init; } = default!;
+    public Software Software { get; init; } = new();
     public int SyntaxId { get; init; }
-    public Syntax Syntax { get; init; } = default!;
+    public Syntax Syntax { get; init; } = new();
 }
 
 internal class SoftwareSyntaxTypeConfiguration : IEntityTypeConfiguration<SoftwareSyntax>

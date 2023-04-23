@@ -7,7 +7,7 @@ namespace FilterLists.Api.Persistence.Entities;
 public record Tag
 {
     public int Id { get; init; }
-    public string Name { get; init; } = default!;
+    public string Name { get; init; } = string.Empty;
     public string? Description { get; init; }
     public IEnumerable<FilterListTag> FilterListTags { get; init; } = new HashSet<FilterListTag>();
 }

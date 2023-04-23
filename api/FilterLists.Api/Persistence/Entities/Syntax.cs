@@ -7,7 +7,7 @@ namespace FilterLists.Api.Persistence.Entities;
 public record Syntax
 {
     public int Id { get; init; }
-    public string Name { get; init; } = default!;
+    public string Name { get; init; } = string.Empty;
     public string? Description { get; init; }
     public Uri? Url { get; init; }
     public IEnumerable<FilterListSyntax> FilterListSyntaxes { get; init; } = new HashSet<FilterListSyntax>();

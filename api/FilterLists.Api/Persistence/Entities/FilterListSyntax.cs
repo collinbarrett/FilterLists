@@ -7,9 +7,9 @@ namespace FilterLists.Api.Persistence.Entities;
 public record FilterListSyntax
 {
     public int FilterListId { get; init; }
-    public FilterList FilterList { get; init; } = default!;
+    public FilterList FilterList { get; init; } = new();
     public int SyntaxId { get; init; }
-    public Syntax Syntax { get; init; } = default!;
+    public Syntax Syntax { get; init; } = new();
 }
 
 internal class FilterListSyntaxTypeConfiguration : IEntityTypeConfiguration<FilterListSyntax>

@@ -7,9 +7,9 @@ namespace FilterLists.Api.Persistence.Entities;
 public record FilterListTag
 {
     public int FilterListId { get; init; }
-    public FilterList FilterList { get; init; } = default!;
+    public FilterList FilterList { get; init; } = new();
     public int TagId { get; init; }
-    public Tag Tag { get; init; } = default!;
+    public Tag Tag { get; init; } = new();
 }
 
 internal class FilterListTagTypeConfiguration : IEntityTypeConfiguration<FilterListTag>

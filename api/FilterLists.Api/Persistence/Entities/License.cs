@@ -7,7 +7,7 @@ namespace FilterLists.Api.Persistence.Entities;
 public record License
 {
     public int Id { get; init; }
-    public string Name { get; init; } = default!;
+    public string Name { get; init; } = string.Empty;
     public Uri? Url { get; init; }
     public bool PermitsModification { get; init; }
     public bool PermitsDistribution { get; init; }

@@ -7,10 +7,10 @@ namespace FilterLists.Api.Persistence.Entities;
 public record FilterList
 {
     public int Id { get; init; }
-    public string Name { get; init; } = default!;
+    public string Name { get; init; } = string.Empty;
     public string? Description { get; init; }
     public int LicenseId { get; init; }
-    public License License { get; init; } = default!;
+    public License License { get; init; } = new();
     public IEnumerable<FilterListSyntax> FilterListSyntaxes { get; init; } = new HashSet<FilterListSyntax>();
     public IEnumerable<FilterListLanguage> FilterListLanguages { get; init; } = new HashSet<FilterListLanguage>();
     public IEnumerable<FilterListTag> FilterListTags { get; init; } = new HashSet<FilterListTag>();

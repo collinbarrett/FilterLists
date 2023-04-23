@@ -7,9 +7,9 @@ namespace FilterLists.Api.Persistence.Entities;
 public record Merge
 {
     public int IncludedInFilterListId { get; init; }
-    public FilterList IncludedInFilterList { get; init; } = default!;
+    public FilterList IncludedInFilterList { get; init; } = new();
     public int IncludesFilterListId { get; init; }
-    public FilterList IncludesFilterList { get; init; } = default!;
+    public FilterList IncludesFilterList { get; init; } = new();
 }
 
 internal class MergeTypeConfiguration : IEntityTypeConfiguration<Merge>
