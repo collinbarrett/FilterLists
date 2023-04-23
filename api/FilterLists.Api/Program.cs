@@ -8,7 +8,7 @@ var host = new HostBuilder()
     .ConfigureFunctionsWorkerDefaults()
     .AddEntityFrameworkCore()
     .AddGraphQLFunction(b => b
-        .AddTypes()
+        .AddGraphQLTypes()
         .AddProjections()
         .RegisterDbContext<FilterListsDbContext>()
     )

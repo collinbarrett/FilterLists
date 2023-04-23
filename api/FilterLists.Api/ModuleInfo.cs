@@ -1,3 +1,3 @@
 using HotChocolate;
 
-[assembly: Module("Types")]
+[assembly: Module("GraphQLTypes")]
