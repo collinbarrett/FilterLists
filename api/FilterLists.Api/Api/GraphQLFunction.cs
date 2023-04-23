@@ -2,19 +2,18 @@ using HotChocolate.AzureFunctions;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 
-namespace FilterLists.Api;
+namespace FilterLists.Api.Api;
 
-// ReSharper disable once InconsistentNaming
-public class GraphQLFunction
+public class GraphQlFunction
 {
     private readonly IGraphQLRequestExecutor _executor;
 
-    public GraphQLFunction(IGraphQLRequestExecutor executor)
+    public GraphQlFunction(IGraphQLRequestExecutor executor)
     {
         _executor = executor;
     }
 
-    [Function(nameof(GraphQLFunction))]
+    [Function(nameof(GraphQlFunction))]
     public Task<HttpResponseData> Run(
         [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "graphql/{**slug}")]
         HttpRequestData request)

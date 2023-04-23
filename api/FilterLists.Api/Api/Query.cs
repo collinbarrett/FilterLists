@@ -2,7 +2,7 @@
 using FilterLists.Api.Persistence.Entities;
 using HotChocolate.Types;
 
-namespace FilterLists.Api;
+namespace FilterLists.Api.Api;
 
 [QueryType]
 public static class Query
