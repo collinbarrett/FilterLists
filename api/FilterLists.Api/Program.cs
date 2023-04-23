@@ -1,5 +1,5 @@
-using FilterLists.Api.EntityFrameworkCore;
-using FilterLists.Api.EntityFrameworkCore.Extensions;
+using FilterLists.Api.Persistence;
+using FilterLists.Api.Persistence.Extensions;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;

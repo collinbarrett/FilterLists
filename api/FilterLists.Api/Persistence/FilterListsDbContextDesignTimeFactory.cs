@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 
-namespace FilterLists.Api.EntityFrameworkCore;
+namespace FilterLists.Api.Persistence;
 
 // ReSharper disable once UnusedType.Global
 public class FilterListsDbContextDesignTimeFactory : IDesignTimeDbContextFactory<FilterListsDbContext>

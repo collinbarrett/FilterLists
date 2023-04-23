@@ -1,5 +1,5 @@
-﻿using FilterLists.Api.EntityFrameworkCore;
-using FilterLists.Api.EntityFrameworkCore.Entities;
+﻿using FilterLists.Api.Persistence;
+using FilterLists.Api.Persistence.Entities;
 using HotChocolate.Types;
 
 namespace FilterLists.Api;

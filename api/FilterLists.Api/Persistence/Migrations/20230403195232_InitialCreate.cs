@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace FilterLists.Api.EntityFrameworkCore.Migrations
+namespace FilterLists.Api.Persistence.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

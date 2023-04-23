@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace FilterLists.Api.EntityFrameworkCore.Extensions;
+namespace FilterLists.Api.Persistence.Extensions;
 
 public static class ConfigurationExtensions
 {

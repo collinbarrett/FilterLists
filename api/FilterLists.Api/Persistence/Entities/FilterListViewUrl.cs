@@ -1,4 +1,4 @@
-﻿namespace FilterLists.Api.EntityFrameworkCore.Entities;
+﻿namespace FilterLists.Api.Persistence.Entities;
 
 public record FilterListViewUrl
 {

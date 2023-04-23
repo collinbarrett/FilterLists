@@ -4,7 +4,7 @@
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace FilterLists.Api.EntityFrameworkCore.Migrations
+namespace FilterLists.Api.Persistence.Migrations
 {
     /// <inheritdoc />
     public partial class InitialSeed : Migration

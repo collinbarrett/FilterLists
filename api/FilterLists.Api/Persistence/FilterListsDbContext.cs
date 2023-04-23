@@ -1,8 +1,8 @@
-﻿using FilterLists.Api.EntityFrameworkCore.Entities;
+﻿using FilterLists.Api.Persistence.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace FilterLists.Api.EntityFrameworkCore;
+namespace FilterLists.Api.Persistence;
 
 public class FilterListsDbContext : DbContext
 {

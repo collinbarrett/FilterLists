@@ -7,20 +7,20 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="HotChocolate.AzureFunctions.IsolatedProcess" Version="13.0.5" />
-        <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.0.5" />
+        <PackageReference Include="HotChocolate.AzureFunctions.IsolatedProcess" Version="13.0.5"/>
+        <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.0.5"/>
         <PackageReference Include="HotChocolate.Types.Analyzers" Version="13.0.5">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.13.0" />
-        <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.0.13" />
-        <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.9.0" />
+        <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.13.0"/>
+        <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.0.13"/>
+        <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.9.0"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5"/>
     </ItemGroup>
     <ItemGroup>
         <None Update="host.json">
@@ -32,6 +32,6 @@
         </None>
     </ItemGroup>
     <ItemGroup>
-        <Using Include="System.Threading.ExecutionContext" Alias="ExecutionContext" />
+        <Using Include="System.Threading.ExecutionContext" Alias="ExecutionContext"/>
     </ItemGroup>
 </Project>

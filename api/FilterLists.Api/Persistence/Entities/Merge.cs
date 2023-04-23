@@ -1,8 +1,8 @@
-﻿using FilterLists.Api.EntityFrameworkCore.Extensions;
+﻿using FilterLists.Api.Persistence.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace FilterLists.Api.EntityFrameworkCore.Entities;
+namespace FilterLists.Api.Persistence.Entities;
 
 public record Merge
 {
