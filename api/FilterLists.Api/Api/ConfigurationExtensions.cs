@@ -5,13 +5,13 @@ using Microsoft.Extensions.Hosting;
 
 namespace FilterLists.Api.Api;
 
-public static class ConfigurationExtensions
+internal static class ConfigurationExtensions
 {
-    public static IHostBuilder AddGraphQl(this IHostBuilder hostBuilder)
+    internal static IHostBuilder AddGraphQl(this IHostBuilder hostBuilder)
     {
         return hostBuilder.AddGraphQLFunction(b => b
             .AddGraphQlTypes()
-            .AddGlobalObjectIdentification()
+            // .AddGlobalObjectIdentification()
             .AddProjections()
             .RegisterDbContext<FilterListsDbContext>()
         );

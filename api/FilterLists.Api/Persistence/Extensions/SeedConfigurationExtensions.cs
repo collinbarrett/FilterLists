@@ -5,7 +5,7 @@ namespace FilterLists.Api.Persistence.Extensions;
 
 internal static class SeedConfigurationExtensions
 {
-    public static void HasDataJsonFile<TEntity>(this EntityTypeBuilder entityTypeBuilder) where TEntity : class
+    internal static void HasDataJsonFile<TEntity>(this EntityTypeBuilder entityTypeBuilder) where TEntity : class
     {
         var entities = Deserialize<TEntity>();
         if (entities.Count == 0) return;
@@ -13,7 +13,7 @@ internal static class SeedConfigurationExtensions
         entityTypeBuilder.HasData(entities);
     }
 
-    public static void HasDataJsonFile<TEntity>(this OwnedNavigationBuilder ownedNavigationBuilder)
+    internal static void HasDataJsonFile<TEntity>(this OwnedNavigationBuilder ownedNavigationBuilder)
         where TEntity : class
     {
         var entities = Deserialize<TEntity>();

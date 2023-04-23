@@ -4,9 +4,9 @@ using Microsoft.Extensions.Hosting;
 
 namespace FilterLists.Api.Persistence.Extensions;
 
-public static class ConfigurationExtensions
+internal static class ConfigurationExtensions
 {
-    public static IHostBuilder AddEntityFrameworkCore(this IHostBuilder hostBuilder)
+    internal static IHostBuilder AddEntityFrameworkCore(this IHostBuilder hostBuilder)
     {
         const string connectionStringKey = "FilterListsReadOnlyConnectionString";
         var connectionString = Environment.GetEnvironmentVariable(connectionStringKey) ??

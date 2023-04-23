@@ -5,7 +5,7 @@ using HotChocolate.Types;
 namespace FilterLists.Api.Api;
 
 [QueryType]
-public static class Query
+internal static class Query
 {
     [UsePaging(IncludeTotalCount = true, DefaultPageSize = 10)]
     [UseProjection]

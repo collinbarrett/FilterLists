@@ -9,11 +9,11 @@ internal abstract class FilterListType : ObjectType<FilterList>
 {
     protected override void Configure(IObjectTypeDescriptor<FilterList> descriptor)
     {
-        descriptor
-            .ImplementsNode()
-            .IdField(f => f.Id)
-            .ResolveNode(async (context, id) =>
-                await context.Service<FilterListsDbContext>().FilterLists.FirstOrDefaultAsync(fl => fl.Id == id)
-            );
+        // descriptor
+        //     .ImplementsNode()
+        //     .IdField(f => f.Id)
+        //     .ResolveNode(async (context, id) =>
+        //         await context.Service<FilterListsDbContext>().FilterLists.FirstOrDefaultAsync(fl => fl.Id == id)
+        //     );
     }
 }
