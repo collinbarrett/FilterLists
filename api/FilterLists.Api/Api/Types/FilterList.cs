@@ -3,7 +3,7 @@ using FilterLists.Api.Persistence.Entities;
 using HotChocolate.Types;
 using Microsoft.EntityFrameworkCore;
 
-namespace FilterLists.Api.Api.Objects;
+namespace FilterLists.Api.Api.Types;
 
 [ObjectType]
 // ReSharper disable once ClassNeverInstantiated.Global
