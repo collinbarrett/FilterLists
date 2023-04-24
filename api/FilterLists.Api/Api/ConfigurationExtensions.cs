@@ -11,7 +11,7 @@ internal static class ConfigurationExtensions
     {
         return hostBuilder.AddGraphQLFunction(b => b
             .AddGraphQlTypes()
-            // .AddGlobalObjectIdentification()
+            .AddGlobalObjectIdentification()
             .AddProjections()
             .RegisterDbContext<FilterListsDbContext>()
         );
