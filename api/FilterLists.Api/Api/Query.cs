@@ -7,8 +7,10 @@ namespace FilterLists.Api.Api;
 [QueryType]
 internal static class Query
 {
-    [UsePaging(IncludeTotalCount = true, DefaultPageSize = 10)]
+    [UsePaging(IncludeTotalCount = true)]
     [UseProjection]
+    [UseFiltering]
+    [UseSorting]
     public static IQueryable<FilterList> GetFilterLists(FilterListsDbContext dbContext)
     {
         return dbContext.FilterLists;

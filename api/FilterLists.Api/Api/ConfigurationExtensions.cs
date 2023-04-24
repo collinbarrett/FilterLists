@@ -13,6 +13,8 @@ internal static class ConfigurationExtensions
             .AddGraphQlTypes()
             .AddGlobalObjectIdentification()
             .AddProjections()
+            .AddFiltering()
+            .AddSorting()
             .RegisterDbContext<FilterListsDbContext>()
         );
     }
