@@ -19,7 +19,7 @@ import { coalesceToArray } from "@/src/utils";
 const { Header, Content, Footer } = Layout;
 const { darkAlgorithm } = theme;
 
-const App = ({ Component, pageProps }: AppProps) => {
+function App({ Component, pageProps }: AppProps) {
   const { theme, setDarkTheme } = useTheme();
   return (
     <ConfigProvider theme={theme}>
@@ -51,6 +51,6 @@ const App = ({ Component, pageProps }: AppProps) => {
       </Layout>
     </ConfigProvider>
   );
-};
+}
 
 export default App;
