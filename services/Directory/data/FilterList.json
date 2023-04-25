@@ -17804,5 +17804,14 @@
     "issuesUrl": "https://codeberg.org/badandugly/badandugly/issues",
     "licenseId": 4,
     "name": "The Bad & The Ugly Blocklist (German)"
+  },
+  {
+    "description": "This List Blocks Sites that steal Video Game Mods from their Authors and upload them illegally on their sites.",
+    "emailAddress": "blockmodreposting@rotgruengelb.net",
+    "homeUrl": "https://github.com/rotgruengelb/BlockModReposting",
+    "id": 2656,
+    "issuesUrl": "https://github.com/rotgruengelb/BlockModReposting/issues",
+    "licenseId": 8,
+    "name": "BlockModReposting"
   }
 ]
