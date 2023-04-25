@@ -16461,5 +16461,12 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://codeberg.org/badandugly/badandugly/raw/branch/main/blocklist"
+  },
+  {
+    "filterListId": 2656,
+    "id": 2934,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/rotgruengelb/BlockModReposting/main/list.txt"
   }
 ]
