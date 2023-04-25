@@ -1,0 +1,4 @@
+# Replace this with your own GraphQL schema file!
+type Query {
+  field: String
+}
