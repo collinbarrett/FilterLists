@@ -17,5 +17,6 @@ public class FilterListType : ObjectType<FilterList>
             .ResolveNode(async (context, id) =>
                 await context.Service<FilterListsDbContext>().FilterLists.FirstOrDefaultAsync(fl => fl.Id == id)
             );
+        descriptor.Field(f => f.LicenseId).ID(nameof(License));
     }
 }

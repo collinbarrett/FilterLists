@@ -52,9 +52,9 @@ type Language implements Node {
 
 type FilterList implements Node {
   id: ID!
+  licenseId: ID!
   name: String!
   description: String
-  licenseId: Int!
   license: License!
   filterListSyntaxes: [FilterListSyntax!]!
   filterListLanguages: [FilterListLanguage!]!
