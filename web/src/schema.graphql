@@ -1,4 +1,1029 @@
-# Replace this with your own GraphQL schema file!
+type Tag implements Node {
+  id: ID!
+  name: String!
+  description: String
+  filterListTags: [FilterListTag!]!
+}
+
+type Syntax implements Node {
+  id: ID!
+  name: String!
+  description: String
+  url: URL
+  filterListSyntaxes: [FilterListSyntax!]!
+  softwareSyntaxes: [SoftwareSyntax!]!
+}
+
+type Software implements Node {
+  id: ID!
+  name: String!
+  description: String
+  homeUrl: URL
+  downloadUrl: URL
+  supportsAbpUrlScheme: Boolean!
+  softwareSyntaxes: [SoftwareSyntax!]!
+}
+
+type Maintainer implements Node {
+  id: ID!
+  name: String!
+  url: URL
+  emailAddress: String
+  twitterHandle: String
+  filterListMaintainers: [FilterListMaintainer!]!
+}
+
+type License implements Node {
+  id: ID!
+  name: String!
+  url: URL
+  permitsModification: Boolean!
+  permitsDistribution: Boolean!
+  permitsCommercialUse: Boolean!
+  filterLists: [FilterList!]!
+}
+
+type Language implements Node {
+  id: ID!
+  iso6391: String!
+  name: String!
+  filterListLanguages: [FilterListLanguage!]!
+}
+
+type FilterList implements Node {
+  id: ID!
+  name: String!
+  description: String
+  licenseId: Int!
+  license: License!
+  filterListSyntaxes: [FilterListSyntax!]!
+  filterListLanguages: [FilterListLanguage!]!
+  filterListTags: [FilterListTag!]!
+  viewUrls: [FilterListViewUrl!]!
+  homeUrl: URL
+  onionUrl: URL
+  policyUrl: URL
+  submissionUrl: URL
+  issuesUrl: URL
+  forumUrl: URL
+  chatUrl: URL
+  emailAddress: String
+  donateUrl: URL
+  filterListMaintainers: [FilterListMaintainer!]!
+  upstreamFilterLists: [Fork!]!
+  forkFilterLists: [Fork!]!
+  includedInFilterLists: [Merge!]!
+  includesFilterLists: [Merge!]!
+  dependencyFilterLists: [Dependent!]!
+  dependentFilterLists: [Dependent!]!
+}
+
 type Query {
-  field: String
+  """
+  Fetches an object given its ID.
+  """
+  node(
+    """
+    ID of the object.
+    """
+    id: ID!
+  ): Node
+
+  """
+  Lookup nodes by a list of IDs.
+  """
+  nodes(
+    """
+    The list of node IDs.
+    """
+    ids: [ID!]!
+  ): [Node]!
+  filterLists(
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+    where: FilterListFilterInput
+    order: [FilterListSortInput!]
+  ): FilterListsConnection
+  languages(
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+    where: LanguageFilterInput
+    order: [LanguageSortInput!]
+  ): LanguagesConnection
+  licenses(
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+    where: LicenseFilterInput
+    order: [LicenseSortInput!]
+  ): LicensesConnection
+  maintainers(
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+    where: MaintainerFilterInput
+    order: [MaintainerSortInput!]
+  ): MaintainersConnection
+  software(
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+    where: SoftwareFilterInput
+    order: [SoftwareSortInput!]
+  ): SoftwareConnection
+  syntaxes(
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+    where: SyntaxFilterInput
+    order: [SyntaxSortInput!]
+  ): SyntaxesConnection
+  tags(
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+    where: TagFilterInput
+    order: [TagSortInput!]
+  ): TagsConnection
+}
+
+"""
+The node interface is implemented by entities that have a global unique identifier.
+"""
+interface Node {
+  id: ID!
+}
+
+type FilterListTag {
+  filterListId: Int!
+  filterList: FilterList!
+  tagId: Int!
+  tag: Tag!
+}
+
+scalar URL
+
+type FilterListSyntax {
+  filterListId: Int!
+  filterList: FilterList!
+  syntaxId: Int!
+  syntax: Syntax!
+}
+
+type SoftwareSyntax {
+  softwareId: Int!
+  software: Software!
+  syntaxId: Int!
+  syntax: Syntax!
+}
+
+type FilterListMaintainer {
+  filterListId: Int!
+  filterList: FilterList!
+  maintainerId: Int!
+  maintainer: Maintainer!
+}
+
+type FilterListLanguage {
+  filterListId: Int!
+  filterList: FilterList!
+  languageId: Int!
+  language: Language!
+}
+
+type FilterListViewUrl {
+  id: Int!
+  filterListId: Int!
+  filterList: FilterList!
+  segmentNumber: Int!
+  primariness: Int!
+  url: URL!
+}
+
+type Fork {
+  upstreamFilterListId: Int!
+  upstreamFilterList: FilterList!
+  forkFilterListId: Int!
+  forkFilterList: FilterList!
+}
+
+type Merge {
+  includedInFilterListId: Int!
+  includedInFilterList: FilterList!
+  includesFilterListId: Int!
+  includesFilterList: FilterList!
+}
+
+type Dependent {
+  dependencyFilterListId: Int!
+  dependencyFilterList: FilterList!
+  dependentFilterListId: Int!
+  dependentFilterList: FilterList!
+}
+
+input FilterListFilterInput {
+  and: [FilterListFilterInput!]
+  or: [FilterListFilterInput!]
+  id: IntOperationFilterInput
+  name: StringOperationFilterInput
+  description: StringOperationFilterInput
+  licenseId: IntOperationFilterInput
+  license: LicenseFilterInput
+  filterListSyntaxes: ListFilterInputTypeOfFilterListSyntaxFilterInput
+  filterListLanguages: ListFilterInputTypeOfFilterListLanguageFilterInput
+  filterListTags: ListFilterInputTypeOfFilterListTagFilterInput
+  viewUrls: ListFilterInputTypeOfFilterListViewUrlFilterInput
+  homeUrl: UrlOperationFilterInput
+  onionUrl: UrlOperationFilterInput
+  policyUrl: UrlOperationFilterInput
+  submissionUrl: UrlOperationFilterInput
+  issuesUrl: UrlOperationFilterInput
+  forumUrl: UrlOperationFilterInput
+  chatUrl: UrlOperationFilterInput
+  emailAddress: StringOperationFilterInput
+  donateUrl: UrlOperationFilterInput
+  filterListMaintainers: ListFilterInputTypeOfFilterListMaintainerFilterInput
+  upstreamFilterLists: ListFilterInputTypeOfForkFilterInput
+  forkFilterLists: ListFilterInputTypeOfForkFilterInput
+  includedInFilterLists: ListFilterInputTypeOfMergeFilterInput
+  includesFilterLists: ListFilterInputTypeOfMergeFilterInput
+  dependencyFilterLists: ListFilterInputTypeOfDependentFilterInput
+  dependentFilterLists: ListFilterInputTypeOfDependentFilterInput
+}
+
+input FilterListSortInput {
+  id: SortEnumType
+  name: SortEnumType
+  description: SortEnumType
+  licenseId: SortEnumType
+  license: LicenseSortInput
+  homeUrl: UriSortInput
+  onionUrl: UriSortInput
+  policyUrl: UriSortInput
+  submissionUrl: UriSortInput
+  issuesUrl: UriSortInput
+  forumUrl: UriSortInput
+  chatUrl: UriSortInput
+  emailAddress: SortEnumType
+  donateUrl: UriSortInput
+}
+
+input LanguageFilterInput {
+  and: [LanguageFilterInput!]
+  or: [LanguageFilterInput!]
+  id: IntOperationFilterInput
+  iso6391: StringOperationFilterInput
+  name: StringOperationFilterInput
+  filterListLanguages: ListFilterInputTypeOfFilterListLanguageFilterInput
+}
+
+input LanguageSortInput {
+  id: SortEnumType
+  iso6391: SortEnumType
+  name: SortEnumType
+}
+
+input LicenseFilterInput {
+  and: [LicenseFilterInput!]
+  or: [LicenseFilterInput!]
+  id: IntOperationFilterInput
+  name: StringOperationFilterInput
+  url: UrlOperationFilterInput
+  permitsModification: BooleanOperationFilterInput
+  permitsDistribution: BooleanOperationFilterInput
+  permitsCommercialUse: BooleanOperationFilterInput
+  filterLists: ListFilterInputTypeOfFilterListFilterInput
+}
+
+input LicenseSortInput {
+  id: SortEnumType
+  name: SortEnumType
+  url: UriSortInput
+  permitsModification: SortEnumType
+  permitsDistribution: SortEnumType
+  permitsCommercialUse: SortEnumType
+}
+
+input MaintainerFilterInput {
+  and: [MaintainerFilterInput!]
+  or: [MaintainerFilterInput!]
+  id: IntOperationFilterInput
+  name: StringOperationFilterInput
+  url: UrlOperationFilterInput
+  emailAddress: StringOperationFilterInput
+  twitterHandle: StringOperationFilterInput
+  filterListMaintainers: ListFilterInputTypeOfFilterListMaintainerFilterInput
+}
+
+input MaintainerSortInput {
+  id: SortEnumType
+  name: SortEnumType
+  url: UriSortInput
+  emailAddress: SortEnumType
+  twitterHandle: SortEnumType
+}
+
+input SoftwareFilterInput {
+  and: [SoftwareFilterInput!]
+  or: [SoftwareFilterInput!]
+  id: IntOperationFilterInput
+  name: StringOperationFilterInput
+  description: StringOperationFilterInput
+  homeUrl: UrlOperationFilterInput
+  downloadUrl: UrlOperationFilterInput
+  supportsAbpUrlScheme: BooleanOperationFilterInput
+  softwareSyntaxes: ListFilterInputTypeOfSoftwareSyntaxFilterInput
+}
+
+input SoftwareSortInput {
+  id: SortEnumType
+  name: SortEnumType
+  description: SortEnumType
+  homeUrl: UriSortInput
+  downloadUrl: UriSortInput
+  supportsAbpUrlScheme: SortEnumType
+}
+
+input SyntaxFilterInput {
+  and: [SyntaxFilterInput!]
+  or: [SyntaxFilterInput!]
+  id: IntOperationFilterInput
+  name: StringOperationFilterInput
+  description: StringOperationFilterInput
+  url: UrlOperationFilterInput
+  filterListSyntaxes: ListFilterInputTypeOfFilterListSyntaxFilterInput
+  softwareSyntaxes: ListFilterInputTypeOfSoftwareSyntaxFilterInput
+}
+
+input SyntaxSortInput {
+  id: SortEnumType
+  name: SortEnumType
+  description: SortEnumType
+  url: UriSortInput
+}
+
+input TagFilterInput {
+  and: [TagFilterInput!]
+  or: [TagFilterInput!]
+  id: IntOperationFilterInput
+  name: StringOperationFilterInput
+  description: StringOperationFilterInput
+  filterListTags: ListFilterInputTypeOfFilterListTagFilterInput
+}
+
+input TagSortInput {
+  id: SortEnumType
+  name: SortEnumType
+  description: SortEnumType
+}
+
+"""
+A connection to a list of items.
+"""
+type FilterListsConnection {
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  A list of edges.
+  """
+  edges: [FilterListsEdge!]
+
+  """
+  A flattened list of the nodes.
+  """
+  nodes: [FilterList!]
+
+  """
+  Identifies the total count of items in the connection.
+  """
+  totalCount: Int!
+}
+
+"""
+A connection to a list of items.
+"""
+type LanguagesConnection {
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  A list of edges.
+  """
+  edges: [LanguagesEdge!]
+
+  """
+  A flattened list of the nodes.
+  """
+  nodes: [Language!]
+
+  """
+  Identifies the total count of items in the connection.
+  """
+  totalCount: Int!
+}
+
+"""
+A connection to a list of items.
+"""
+type LicensesConnection {
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  A list of edges.
+  """
+  edges: [LicensesEdge!]
+
+  """
+  A flattened list of the nodes.
+  """
+  nodes: [License!]
+
+  """
+  Identifies the total count of items in the connection.
+  """
+  totalCount: Int!
+}
+
+"""
+A connection to a list of items.
+"""
+type MaintainersConnection {
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  A list of edges.
+  """
+  edges: [MaintainersEdge!]
+
+  """
+  A flattened list of the nodes.
+  """
+  nodes: [Maintainer!]
+
+  """
+  Identifies the total count of items in the connection.
+  """
+  totalCount: Int!
+}
+
+"""
+A connection to a list of items.
+"""
+type SoftwareConnection {
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  A list of edges.
+  """
+  edges: [SoftwareEdge!]
+
+  """
+  A flattened list of the nodes.
+  """
+  nodes: [Software!]
+
+  """
+  Identifies the total count of items in the connection.
+  """
+  totalCount: Int!
+}
+
+"""
+A connection to a list of items.
+"""
+type SyntaxesConnection {
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  A list of edges.
+  """
+  edges: [SyntaxesEdge!]
+
+  """
+  A flattened list of the nodes.
+  """
+  nodes: [Syntax!]
+
+  """
+  Identifies the total count of items in the connection.
+  """
+  totalCount: Int!
+}
+
+"""
+A connection to a list of items.
+"""
+type TagsConnection {
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  A list of edges.
+  """
+  edges: [TagsEdge!]
+
+  """
+  A flattened list of the nodes.
+  """
+  nodes: [Tag!]
+
+  """
+  Identifies the total count of items in the connection.
+  """
+  totalCount: Int!
+}
+
+input IntOperationFilterInput {
+  eq: Int
+  neq: Int
+  in: [Int]
+  nin: [Int]
+  gt: Int
+  ngt: Int
+  gte: Int
+  ngte: Int
+  lt: Int
+  nlt: Int
+  lte: Int
+  nlte: Int
+}
+
+input StringOperationFilterInput {
+  and: [StringOperationFilterInput!]
+  or: [StringOperationFilterInput!]
+  eq: String
+  neq: String
+  contains: String
+  ncontains: String
+  in: [String]
+  nin: [String]
+  startsWith: String
+  nstartsWith: String
+  endsWith: String
+  nendsWith: String
+}
+
+input ListFilterInputTypeOfFilterListSyntaxFilterInput {
+  all: FilterListSyntaxFilterInput
+  none: FilterListSyntaxFilterInput
+  some: FilterListSyntaxFilterInput
+  any: Boolean
+}
+
+input ListFilterInputTypeOfFilterListLanguageFilterInput {
+  all: FilterListLanguageFilterInput
+  none: FilterListLanguageFilterInput
+  some: FilterListLanguageFilterInput
+  any: Boolean
+}
+
+input ListFilterInputTypeOfFilterListTagFilterInput {
+  all: FilterListTagFilterInput
+  none: FilterListTagFilterInput
+  some: FilterListTagFilterInput
+  any: Boolean
+}
+
+input ListFilterInputTypeOfFilterListViewUrlFilterInput {
+  all: FilterListViewUrlFilterInput
+  none: FilterListViewUrlFilterInput
+  some: FilterListViewUrlFilterInput
+  any: Boolean
+}
+
+input UrlOperationFilterInput {
+  eq: URL
+  neq: URL
+  in: [URL]
+  nin: [URL]
+  gt: URL
+  ngt: URL
+  gte: URL
+  ngte: URL
+  lt: URL
+  nlt: URL
+  lte: URL
+  nlte: URL
+}
+
+input ListFilterInputTypeOfFilterListMaintainerFilterInput {
+  all: FilterListMaintainerFilterInput
+  none: FilterListMaintainerFilterInput
+  some: FilterListMaintainerFilterInput
+  any: Boolean
+}
+
+input ListFilterInputTypeOfForkFilterInput {
+  all: ForkFilterInput
+  none: ForkFilterInput
+  some: ForkFilterInput
+  any: Boolean
+}
+
+input ListFilterInputTypeOfMergeFilterInput {
+  all: MergeFilterInput
+  none: MergeFilterInput
+  some: MergeFilterInput
+  any: Boolean
+}
+
+input ListFilterInputTypeOfDependentFilterInput {
+  all: DependentFilterInput
+  none: DependentFilterInput
+  some: DependentFilterInput
+  any: Boolean
+}
+
+enum SortEnumType {
+  ASC
+  DESC
+}
+
+input UriSortInput {
+  absolutePath: SortEnumType
+  absoluteUri: SortEnumType
+  localPath: SortEnumType
+  authority: SortEnumType
+  hostNameType: SortEnumType
+  isDefaultPort: SortEnumType
+  isFile: SortEnumType
+  isLoopback: SortEnumType
+  pathAndQuery: SortEnumType
+  isUnc: SortEnumType
+  host: SortEnumType
+  port: SortEnumType
+  query: SortEnumType
+  fragment: SortEnumType
+  scheme: SortEnumType
+  originalString: SortEnumType
+  dnsSafeHost: SortEnumType
+  idnHost: SortEnumType
+  isAbsoluteUri: SortEnumType
+  userEscaped: SortEnumType
+  userInfo: SortEnumType
+}
+
+input BooleanOperationFilterInput {
+  eq: Boolean
+  neq: Boolean
+}
+
+input ListFilterInputTypeOfFilterListFilterInput {
+  all: FilterListFilterInput
+  none: FilterListFilterInput
+  some: FilterListFilterInput
+  any: Boolean
+}
+
+input ListFilterInputTypeOfSoftwareSyntaxFilterInput {
+  all: SoftwareSyntaxFilterInput
+  none: SoftwareSyntaxFilterInput
+  some: SoftwareSyntaxFilterInput
+  any: Boolean
+}
+
+"""
+Information about pagination in a connection.
+"""
+type PageInfo {
+  """
+  Indicates whether more edges exist following the set defined by the clients arguments.
+  """
+  hasNextPage: Boolean!
+
+  """
+  Indicates whether more edges exist prior the set defined by the clients arguments.
+  """
+  hasPreviousPage: Boolean!
+
+  """
+  When paginating backwards, the cursor to continue.
+  """
+  startCursor: String
+
+  """
+  When paginating forwards, the cursor to continue.
+  """
+  endCursor: String
+}
+
+"""
+An edge in a connection.
+"""
+type FilterListsEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: FilterList!
+}
+
+"""
+An edge in a connection.
+"""
+type LanguagesEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: Language!
+}
+
+"""
+An edge in a connection.
+"""
+type LicensesEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: License!
+}
+
+"""
+An edge in a connection.
+"""
+type MaintainersEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: Maintainer!
+}
+
+"""
+An edge in a connection.
+"""
+type SoftwareEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: Software!
+}
+
+"""
+An edge in a connection.
+"""
+type SyntaxesEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: Syntax!
+}
+
+"""
+An edge in a connection.
+"""
+type TagsEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: Tag!
+}
+
+input FilterListSyntaxFilterInput {
+  and: [FilterListSyntaxFilterInput!]
+  or: [FilterListSyntaxFilterInput!]
+  filterListId: IntOperationFilterInput
+  filterList: FilterListFilterInput
+  syntaxId: IntOperationFilterInput
+  syntax: SyntaxFilterInput
+}
+
+input FilterListLanguageFilterInput {
+  and: [FilterListLanguageFilterInput!]
+  or: [FilterListLanguageFilterInput!]
+  filterListId: IntOperationFilterInput
+  filterList: FilterListFilterInput
+  languageId: IntOperationFilterInput
+  language: LanguageFilterInput
+}
+
+input FilterListTagFilterInput {
+  and: [FilterListTagFilterInput!]
+  or: [FilterListTagFilterInput!]
+  filterListId: IntOperationFilterInput
+  filterList: FilterListFilterInput
+  tagId: IntOperationFilterInput
+  tag: TagFilterInput
+}
+
+input FilterListViewUrlFilterInput {
+  and: [FilterListViewUrlFilterInput!]
+  or: [FilterListViewUrlFilterInput!]
+  id: IntOperationFilterInput
+  filterListId: IntOperationFilterInput
+  filterList: FilterListFilterInput
+  segmentNumber: IntOperationFilterInput
+  primariness: IntOperationFilterInput
+  url: UrlOperationFilterInput
+}
+
+input FilterListMaintainerFilterInput {
+  and: [FilterListMaintainerFilterInput!]
+  or: [FilterListMaintainerFilterInput!]
+  filterListId: IntOperationFilterInput
+  filterList: FilterListFilterInput
+  maintainerId: IntOperationFilterInput
+  maintainer: MaintainerFilterInput
+}
+
+input ForkFilterInput {
+  and: [ForkFilterInput!]
+  or: [ForkFilterInput!]
+  upstreamFilterListId: IntOperationFilterInput
+  upstreamFilterList: FilterListFilterInput
+  forkFilterListId: IntOperationFilterInput
+  forkFilterList: FilterListFilterInput
+}
+
+input MergeFilterInput {
+  and: [MergeFilterInput!]
+  or: [MergeFilterInput!]
+  includedInFilterListId: IntOperationFilterInput
+  includedInFilterList: FilterListFilterInput
+  includesFilterListId: IntOperationFilterInput
+  includesFilterList: FilterListFilterInput
+}
+
+input DependentFilterInput {
+  and: [DependentFilterInput!]
+  or: [DependentFilterInput!]
+  dependencyFilterListId: IntOperationFilterInput
+  dependencyFilterList: FilterListFilterInput
+  dependentFilterListId: IntOperationFilterInput
+  dependentFilterList: FilterListFilterInput
+}
+
+input SoftwareSyntaxFilterInput {
+  and: [SoftwareSyntaxFilterInput!]
+  or: [SoftwareSyntaxFilterInput!]
+  softwareId: IntOperationFilterInput
+  software: SoftwareFilterInput
+  syntaxId: IntOperationFilterInput
+  syntax: SyntaxFilterInput
 }
