@@ -30,3 +30,6 @@ bench/nested-deps/pages/**/*
 bench/nested-deps/components/**/*
 pnpm-lock.yaml
 **/convex/_generated/**
+
+# create-relay-app
+*.graphql.ts
