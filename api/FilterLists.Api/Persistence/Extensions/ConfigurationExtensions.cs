@@ -12,7 +12,9 @@ internal static class ConfigurationExtensions
         var connectionString = Environment.GetEnvironmentVariable(connectionStringKey) ??
                                throw new InvalidOperationException($"Missing {connectionStringKey}");
         hostBuilder.ConfigureServices(services =>
-            services.AddDbContext<FilterListsDbContext>(options => options.UseSqlServer(connectionString)));
+            services.AddDbContext<FilterListsDbContext>(options =>
+                options.UseSqlServer(connectionString)
+                    .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)));
         return hostBuilder;
     }
 }
