@@ -17813,5 +17813,21 @@
     "issuesUrl": "https://github.com/rotgruengelb/BlockModReposting/issues",
     "licenseId": 8,
     "name": "BlockModReposting"
+  },
+  {
+    "description": "Blocklist for scam sites extracted from Google",
+    "homeUrl": "https://github.com/jarelllama/Scam-Blocklist",
+    "id": 2657,
+    "issuesUrl": "https://github.com/jarelllama/Scam-Blocklist/issues",
+    "licenseId": 5,
+    "name": "Scam Blocklist"
+  },
+  {
+    "description": "Blocklist for scam sites extracted from Google",
+    "homeUrl": "https://github.com/jarelllama/Scam-Blocklist",
+    "id": 2658,
+    "issuesUrl": "https://github.com/jarelllama/Scam-Blocklist/issues",
+    "licenseId": 5,
+    "name": "Scam Blocklist (adblocker syntax)"
   }
 ]
