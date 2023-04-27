@@ -307,18 +307,18 @@ namespace FilterLists.Api.Persistence.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Fork", x => new { x.UpstreamFilterListId, x.ForkFilterListId });
+                    table.PrimaryKey("PK_Fork", x => new { x.ForkFilterListId, x.UpstreamFilterListId });
                     table.ForeignKey(
                         name: "FK_Fork_FilterList_ForkFilterListId",
                         column: x => x.ForkFilterListId,
                         principalTable: "FilterList",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Fork_FilterList_UpstreamFilterListId",
                         column: x => x.UpstreamFilterListId,
                         principalTable: "FilterList",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -387,9 +387,9 @@ namespace FilterLists.Api.Persistence.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Fork_ForkFilterListId",
+                name: "IX_Fork_UpstreamFilterListId",
                 table: "Fork",
-                column: "ForkFilterListId");
+                column: "UpstreamFilterListId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Language_Iso6391",

@@ -1,22 +1,7 @@
-﻿using FilterLists.Api.Persistence.Extensions;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿namespace FilterLists.Api.Persistence.Entities;
 
-namespace FilterLists.Api.Persistence.Entities;
-
-public record FilterListMaintainer
+internal record FilterListMaintainer
 {
     public int FilterListId { get; init; }
-    public FilterList FilterList { get; init; } = new();
     public int MaintainerId { get; init; }
-    public Maintainer Maintainer { get; init; } = new();
-}
-
-internal class FilterListMaintainerTypeConfiguration : IEntityTypeConfiguration<FilterListMaintainer>
-{
-    public virtual void Configure(EntityTypeBuilder<FilterListMaintainer> builder)
-    {
-        builder.HasKey(flm => new { flm.FilterListId, flm.MaintainerId });
-        builder.HasDataJsonFile<FilterListMaintainer>();
-    }
 }

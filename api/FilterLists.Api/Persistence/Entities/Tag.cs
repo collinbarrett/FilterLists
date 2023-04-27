@@ -9,7 +9,7 @@ public record Tag
     public int Id { get; init; }
     public string Name { get; init; } = string.Empty;
     public string? Description { get; init; }
-    public IEnumerable<FilterListTag> FilterListTags { get; init; } = new HashSet<FilterListTag>();
+    public IEnumerable<FilterList> FilterLists { get; init; } = new HashSet<FilterList>();
 }
 
 internal class TagTypeConfiguration : IEntityTypeConfiguration<Tag>

@@ -9,7 +9,7 @@ public record Language
     public int Id { get; init; }
     public string Iso6391 { get; init; } = string.Empty;
     public string Name { get; init; } = string.Empty;
-    public IEnumerable<FilterListLanguage> FilterListLanguages { get; init; } = new HashSet<FilterListLanguage>();
+    public IEnumerable<FilterList> FilterLists { get; init; } = new HashSet<FilterList>();
 }
 
 internal class LanguageTypeConfiguration : IEntityTypeConfiguration<Language>
