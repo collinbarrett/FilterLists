@@ -17820,7 +17820,7 @@
     "id": 2657,
     "issuesUrl": "https://github.com/jarelllama/Scam-Blocklist/issues",
     "licenseId": 5,
-    "name": "Scam Blocklist"
+    "name": "Jarelllama's Scam Blocklist"
   },
   {
     "description": "Blocklist for scam sites extracted from Google",
@@ -17828,6 +17828,6 @@
     "id": 2658,
     "issuesUrl": "https://github.com/jarelllama/Scam-Blocklist/issues",
     "licenseId": 5,
-    "name": "Scam Blocklist (ABP syntax)"
+    "name": "Jarelllama's Scam Blocklist (ABP syntax)"
   }
 ]
