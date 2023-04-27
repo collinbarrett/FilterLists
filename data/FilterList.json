@@ -12521,14 +12521,14 @@
   },
   {
     "description": "This repository is www.mypdns.org self maintained list of domains that needs to be blocked for various reasons.",
-    "homeUrl": "https://gitlab.com/my-privacy-dns/matrix/matrix/",
+    "homeUrl": "https://0xacab.org/my-privacy-dns/matrix",
     "id": 1933,
     "licenseId": 43,
     "name": "My Privacy DNS Matrix - Adware"
   },
   {
     "description": "This repository is www.mypdns.org self maintained list of domains that needs to be blocked for various reasons.",
-    "homeUrl": "https://gitlab.com/my-privacy-dns/matrix/matrix/",
+    "homeUrl": "https://0xacab.org/my-privacy-dns/matrix",
     "id": 1934,
     "licenseId": 43,
     "name": "My Privacy DNS Matrix - Tracking"
@@ -16884,47 +16884,31 @@
     "syntaxId": 1
   },
   {
-    "description": "Block malware, phishing, and scams for a more secure computer",
+    "description": "This list aims to protect against scams, phishing, malware, and potentially unwanted programs (PUPs). It includes a version of vxvault.net's list, modified by me (iam-py-test) to work in adblockers.",
+    "emailAddress": "iam-py-test@protonmail.com",
     "homeUrl": "https://github.com/iam-py-test/my_filters_001",
     "id": 2537,
     "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues",
     "licenseId": 28,
-    "name": "Malicious website blocklist"
+    "name": "The malicious website blocklist"
   },
   {
-    "description": "Block malware, phishing, and scams for a more secure computer (HOSTS version - not for uBlock Origin)",
+    "description": "This list aims to protect against scams, phishing, malware, and potentially unwanted programs (PUPs). It includes a version of vxvault.net's list, modified by me (iam-py-test) to work in adblockers. (HOSTs version - not for uBlock Origin)",
+    "emailAddress": "iam-py-test@protonmail.com",
     "homeUrl": "https://github.com/iam-py-test/my_filters_001",
     "id": 2538,
     "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues/",
     "licenseId": 28,
-    "name": "Malicious website blocklist (HOSTS)"
+    "name": "The malicious website blocklist (HOSTs file)"
   },
   {
-    "description": "The family filter for AdGuard Home",
-    "descriptionSourceUrl": "https://ammnt.app/filter.txt",
-    "emailAddress": "contact@ammnt.app",
-    "homeUrl": "https://ammnt.app",
-    "id": 2539,
-    "issuesUrl": "https://github.com/AmmoniteFilter/AmmoniteFilter/issues",
-    "licenseId": 4,
-    "name": "AmmoniteFilter"
-  },
-  {
-    "description": "The security filter for AdGuard Home",
-    "emailAddress": "contact@ammnt.app",
-    "homeUrl": "https://ammnt.app",
-    "id": 2540,
-    "issuesUrl": "https://github.com/AmmoniteFilter/TrilobiteFilter/issues",
-    "licenseId": 4,
-    "name": "TrilobiteFilter"
-  },
-  {
-    "description": "Block malware, phishing, and scams for a more secure computer (Domains version)",
+    "description": "This list aims to protect against scams, phishing, malware, and potentially unwanted programs (PUPs). It includes a version of vxvault.net's list, modified by me (iam-py-test) to work in adblockers. (Domains version)",
+    "emailAddress": "iam-py-test@protonmail.com",
     "homeUrl": "https://github.com/iam-py-test/my_filters_001",
     "id": 2541,
     "issuesUrl": "https://github.com/iam-py-test/my_filters_001/issues/",
     "licenseId": 28,
-    "name": "Malicious website blocklist (Domains)"
+    "name": "The malicious website blocklist (Domains)"
   },
   {
     "description": "Blocks irritating elements on web pages that do not fall under the popular categories of annoyances.",
@@ -17122,16 +17106,16 @@
     "chatUrl": "https://matrix.to/#/#porn-records:anontier.nl",
     "description": "Porn Records Blacklisting. Porn Records from My Privacy DNS is among the best maintained projects and one of them with the lowest FP's as all records are veryfied by a human before committed to the lists. We do also have a Browser add-on for simple committing new domains",
     "donateUrl": "https://ko-fi.com/X8X37FUGU",
-    "emailAddress": "incoming+my-privacy-dns-porn-records-2-dmptefj25u6tlslz82c3oolb9-issue@noreply.mypdns.org",
-    "homeUrl": "https://mypdns.org/my-privacy-dns/porn-records",
+    "emailAddress": "0xacab+my-privacy-dns-support-4711-issue-@riseup.net",
+    "forumUrl": "https://0xacab.org/my-privacy-dns/support/-/issues",
+    "homeUrl": "https://0xacab.org/my-privacy-dns/matrix",
     "id": 2566,
-    "issuesUrl": "https://mypdns.org/my-privacy-dns/porn-records/-/issues",
+    "issuesUrl": "https://0xacab.org/my-privacy-dns/matrix/-/issues",
     "licenseId": 13,
     "name": "My Privacy DNS - Porn Records Blacklist",
-    "policyUrl": "https://mypdns.org/my-privacy-dns/porn-records/-/blob/master/README.md",
-    "submissionUrl": "https://mypdns.org/my-privacy-dns/porn-records/-/issues",
-    "viewUrlMirror1": "https://github.com/porn-records/Porn-Records",
-    "viewUrlMirror2": "https://gitlab.com/MypDNS/porn-records"
+    "onionUrl": "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix",
+    "policyUrl": "https://0xacab.org/my-privacy-dns/matrix/-/blob/master/source/porn_filters/README.md",
+    "submissionUrl": "https://0xacab.org/my-privacy-dns/matrix/-/issues"
   },
   {
     "description": "Filter that enables removing of ads and anti-adblock scripts from websites with Korean content.",
@@ -17526,15 +17510,7 @@
     "id": 2618,
     "issuesUrl": "https://github.com/thedoggybrad/Frame-Blocker-Filter/issues",
     "licenseId": 17,
-    "name": "3rd Party only Frame Blocking with Social Media exceptions"
-  },
-  {
-    "description": "A bigger variant of Frame-Blocker-Filter. This variant-filter is designed to block non-essential Frames.",
-    "homeUrl": "https://github.com/thedoggybrad/Non-Essential-Frames-Blocker",
-    "id": 2619,
-    "issuesUrl": "https://github.com/thedoggybrad/Non-Essential-Frames-Blocker/issues",
-    "licenseId": 17,
-    "name": "Non-Essential-Frames-Blocker"
+    "name": "3rd Party Only Frame Blocking with Social Media and Google exceptions"
   },
   {
     "description": "Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Metrics, some Malware and Fake.",
@@ -17742,5 +17718,116 @@
     "id": 2645,
     "licenseId": 44,
     "name": "CPBL Compressed Domains"
+  },
+  {
+    "description": "Immediate, temporary filters to fix websites",
+    "homeUrl": "https://github.com/uBlockOrigin/uAssets",
+    "id": 2646,
+    "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
+    "licenseId": 4,
+    "name": "uAssets Quick Fixes"
+  },
+  {
+    "description": "A list of filterlist URLs that uBlock Origin will refuse to load as custom lists at all.",
+    "homeUrl": "https://github.com/uBlockOrigin/uAssets",
+    "id": 2647,
+    "issuesUrl": "https://github.com/uBlockOrigin/uAssets/issues",
+    "licenseId": 4,
+    "name": "uAssets Badlists"
+  },
+  {
+    "description": "Filter that enables ad blocking on websites in Ukrainian language.",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "id": 2648,
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Ukrainian Filter (uBlock Origin)",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
+  },
+  {
+    "description": "Filter that enables ad blocking on websites in Ukrainian language.",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "id": 2649,
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Ukrainian Filter (AdGuard for Chromium)",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
+  },
+  {
+    "description": "Spun off from «Ad Removal List for Unusual Ads», as a result of not all African languages having newssites with high enough Alexa ranks to make it to AdGuard Base Filter's «Foreign» section.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2650,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Dandelion Sprout's African Languages List"
+  },
+  {
+    "description": "When I (Dandelion Sprout) declared war on Chrome Manifest V3 in 2021, I really meant it. With this list that blocks MV3 extensions' download files and homepages, you too can be an active participant in the survival war.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2651,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'Manifest V3' List"
+  },
+  {
+    "description": "VXVault's list of URLs serving malware, converted into a filterlist",
+    "emailAddress": "iam-py-test@protonmail.com",
+    "homeUrl": "https://github.com/iam-py-test/vxvault_filter",
+    "id": 2652,
+    "issuesUrl": "https://github.com/iam-py-test/vxvault_filter/issues",
+    "licenseId": 28,
+    "name": "VXVault filterlist (unofficial)"
+  },
+  {
+    "description": "List of active DGA domains for various malware families.",
+    "homeUrl": "https://1275.ru/spisok-aktivnyh-dga-domain-generation-algorithm-domenov/",
+    "id": 2653,
+    "licenseId": 5,
+    "name": "List of active DGA (domain generation algorithm) domains - General list (all types of threats)"
+  },
+  {
+    "description": "Compilation of filters for AdGuard Home",
+    "homeUrl": "https://github.com/ammnt/DeadEnd",
+    "id": 2654,
+    "issuesUrl": "https://github.com/ammnt/DeadEnd/issues",
+    "licenseId": 4,
+    "name": "Dead End"
+  },
+  {
+    "description": "List of German-speaking web-sites with fake-news, propaganda, hate-speech, etc.",
+    "homeUrl": "https://codeberg.org/badandugly/badandugly",
+    "id": 2655,
+    "issuesUrl": "https://codeberg.org/badandugly/badandugly/issues",
+    "licenseId": 4,
+    "name": "The Bad & The Ugly Blocklist (German)"
+  },
+  {
+    "description": "This List Blocks Sites that steal Video Game Mods from their Authors and upload them illegally on their sites.",
+    "emailAddress": "blockmodreposting@rotgruengelb.net",
+    "homeUrl": "https://github.com/rotgruengelb/BlockModReposting",
+    "id": 2656,
+    "issuesUrl": "https://github.com/rotgruengelb/BlockModReposting/issues",
+    "licenseId": 8,
+    "name": "BlockModReposting"
+  },
+  {
+    "description": "Blocklist for scam sites extracted from Google",
+    "homeUrl": "https://github.com/jarelllama/Scam-Blocklist",
+    "id": 2657,
+    "issuesUrl": "https://github.com/jarelllama/Scam-Blocklist/issues",
+    "licenseId": 5,
+    "name": "Jarelllama's Scam Blocklist"
+  },
+  {
+    "description": "Blocklist for scam sites extracted from Google",
+    "homeUrl": "https://github.com/jarelllama/Scam-Blocklist",
+    "id": 2658,
+    "issuesUrl": "https://github.com/jarelllama/Scam-Blocklist/issues",
+    "licenseId": 5,
+    "name": "Jarelllama's Scam Blocklist (ABP syntax)"
   }
 ]

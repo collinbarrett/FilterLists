@@ -5355,7 +5355,7 @@
     "filterListId": 884,
     "id": 932,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/master/Finland_adb.txt"
+    "url": "https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/gh-pages/Finland_adb.txt"
   },
   {
     "filterListId": 885,
@@ -15491,18 +15491,6 @@
     "url": "https://iam-py-test.github.io/my_filters_001/Alternative%20list%20formats/antimalware_hosts.txt"
   },
   {
-    "filterListId": 2539,
-    "id": 2758,
-    "primariness": 1,
-    "url": "https://ammnt.app/filter.txt"
-  },
-  {
-    "filterListId": 2540,
-    "id": 2759,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/AmmoniteFilter/TrilobiteFilter/main/filter.txt"
-  },
-  {
     "filterListId": 2541,
     "id": 2760,
     "primariness": 1,
@@ -15831,140 +15819,35 @@
     "id": 2814,
     "primariness": 1,
     "segmentNumber": 1,
-    "url": "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/wildcard.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2815,
-    "primariness": 2,
-    "segmentNumber": 1,
-    "url": "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/wildcard.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2816,
-    "primariness": 3,
-    "segmentNumber": 1,
-    "url": "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/wildcard.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2817,
-    "primariness": 4,
-    "segmentNumber": 1,
-    "url": "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/wildcard.list"
+    "url": "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/wildcard.list"
   },
   {
     "filterListId": 2566,
     "id": 2818,
     "primariness": 1,
     "segmentNumber": 2,
-    "url": "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/tld.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2819,
-    "primariness": 2,
-    "segmentNumber": 2,
-    "url": "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/tld.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2820,
-    "primariness": 3,
-    "segmentNumber": 2,
-    "url": "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/tld.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2821,
-    "primariness": 4,
-    "segmentNumber": 2,
-    "url": "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/tld.list"
+    "url": "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/tld.list"
   },
   {
     "filterListId": 2566,
     "id": 2822,
     "primariness": 1,
     "segmentNumber": 3,
-    "url": "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/domains.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2823,
-    "primariness": 2,
-    "segmentNumber": 3,
-    "url": "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/domains.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2824,
-    "primariness": 3,
-    "segmentNumber": 3,
-    "url": "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/domains.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2825,
-    "primariness": 4,
-    "segmentNumber": 3,
-    "url": "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/domains.list"
+    "url": "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/domains.list"
   },
   {
     "filterListId": 2566,
     "id": 2826,
     "primariness": 1,
     "segmentNumber": 4,
-    "url": "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/hosts.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2827,
-    "primariness": 2,
-    "segmentNumber": 4,
-    "url": "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/hosts.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2828,
-    "primariness": 3,
-    "segmentNumber": 4,
-    "url": "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/hosts.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2829,
-    "primariness": 4,
-    "segmentNumber": 4,
-    "url": "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/hosts.list"
+    "url": "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/hosts.list"
   },
   {
     "filterListId": 2566,
     "id": 2830,
     "primariness": 1,
     "segmentNumber": 5,
-    "url": "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/snuff.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2831,
-    "primariness": 2,
-    "segmentNumber": 5,
-    "url": "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/snuff.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2832,
-    "primariness": 3,
-    "segmentNumber": 5,
-    "url": "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/snuff.list"
-  },
-  {
-    "filterListId": 2566,
-    "id": 2833,
-    "primariness": 4,
-    "segmentNumber": 5,
-    "url": "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/snuff.list"
+    "url": "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/snuff.list"
   },
   {
     "filterListId": 2567,
@@ -16284,12 +16167,6 @@
     "url": "https://raw.githubusercontent.com/thedoggybrad/Frame-Blocker-Filter/main/socialmedia-exception.txt"
   },
   {
-    "filterListId": 2619,
-    "id": 2885,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/thedoggybrad/Non-Essential-Frames-Blocker/main/filter.txt"
-  },
-  {
     "filterListId": 2620,
     "id": 2886,
     "primariness": 1,
@@ -16464,9 +16341,144 @@
     "url": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/cpbl-ctld.txt"
   },
   {
+    "filterListId": 2646,
+    "id": 2915,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/quick-fixes.txt"
+  },
+  {
+    "filterListId": 2647,
+    "id": 2916,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badlists.txt"
+  },
+  {
+    "filterListId": 2648,
+    "id": 2917,
+    "primariness": 1,
+    "url": "https://filters.adtidy.org/extension/ublock/filters/23.txt"
+  },
+  {
+    "filterListId": 2649,
+    "id": 2918,
+    "primariness": 1,
+    "url": "https://filters.adtidy.org/extension/chromium/filters/23.txt"
+  },
+  {
+    "filterListId": 2650,
+    "id": 2919,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AfricanLanguagesList.txt"
+  },
+  {
+    "filterListId": 2650,
+    "id": 2920,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AfricanLanguagesList.txt"
+  },
+  {
+    "filterListId": 2651,
+    "id": 2921,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiMV3List.txt"
+  },
+  {
+    "filterListId": 2651,
+    "id": 2922,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AntiMV3List.txt"
+  },
+  {
     "filterListId": 2519,
-    "id": 2914,
+    "id": 2923,
     "primariness": 4,
     "url": "https://cdn.statically.io/gh/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
+  },
+  {
+    "filterListId": 2652,
+    "id": 2924,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/iam-py-test/vxvault_filter/main/ubolist.txt"
+  },
+  {
+    "filterListId": 2652,
+    "id": 2925,
+    "primariness": 2,
+    "url": "https://iam-py-test.github.io/vxvault_filter/ubolist.txt"
+  },
+  {
+    "filterListId": 2566,
+    "id": 2926,
+    "primariness": 2,
+    "segmentNumber": 1,
+    "url": "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/wildcard.list"
+  },
+  {
+    "filterListId": 2566,
+    "id": 2927,
+    "primariness": 2,
+    "segmentNumber": 2,
+    "url": "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/tld.list"
+  },
+  {
+    "filterListId": 2566,
+    "id": 2928,
+    "primariness": 2,
+    "segmentNumber": 3,
+    "url": "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/domains.list"
+  },
+  {
+    "filterListId": 2566,
+    "id": 2929,
+    "primariness": 2,
+    "segmentNumber": 4,
+    "url": "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/hosts.list"
+  },
+  {
+    "filterListId": 2566,
+    "id": 2930,
+    "primariness": 2,
+    "segmentNumber": 5,
+    "url": "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/snuff.list"
+  },
+  {
+    "filterListId": 2653,
+    "id": 2931,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://1275.ru/DGA/dga.txt"
+  },
+  {
+    "filterListId": 2654,
+    "id": 2932,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/ammnt/DeadEnd/main/filter.txt"
+  },
+  {
+    "filterListId": 2655,
+    "id": 2933,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://codeberg.org/badandugly/badandugly/raw/branch/main/blocklist"
+  },
+  {
+    "filterListId": 2656,
+    "id": 2934,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/rotgruengelb/BlockModReposting/main/list.txt"
+  },
+  {
+    "filterListId": 2657,
+    "id": 2935,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/domains.txt"
+  },
+  {
+    "filterListId": 2658,
+    "id": 2936,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/adblock.txt"
   }
 ]
