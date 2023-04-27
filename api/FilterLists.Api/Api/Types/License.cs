@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 namespace FilterLists.Api.Api.Types;
 
 [ObjectType]
-// ReSharper disable once ClassNeverInstantiated.Global
 public class LicenseType : ObjectType<License>
 {
     protected override void Configure(IObjectTypeDescriptor<License> descriptor)

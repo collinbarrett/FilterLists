@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 namespace FilterLists.Api.Api.Types;
 
 [ObjectType]
-// ReSharper disable once ClassNeverInstantiated.Global
 public class LanguageType : ObjectType<Language>
 {
     protected override void Configure(IObjectTypeDescriptor<Language> descriptor)
