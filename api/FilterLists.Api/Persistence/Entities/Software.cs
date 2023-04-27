@@ -12,7 +12,7 @@ public record Software
     public Uri? HomeUrl { get; init; }
     public Uri? DownloadUrl { get; init; }
     public bool SupportsAbpUrlScheme { get; init; }
-    public IEnumerable<SoftwareSyntax> SoftwareSyntaxes { get; init; } = new HashSet<SoftwareSyntax>();
+    public IEnumerable<Syntax> Syntaxes { get; init; } = new HashSet<Syntax>();
 }
 
 internal class SoftwareTypeConfiguration : IEntityTypeConfiguration<Software>
@@ -23,6 +23,10 @@ internal class SoftwareTypeConfiguration : IEntityTypeConfiguration<Software>
             .IsUnique();
         builder.Property(s => s.SupportsAbpUrlScheme)
             .HasDefaultValue(false);
+        builder
+            .HasMany(s => s.Syntaxes)
+            .WithMany(s => s.Software)
+            .UsingEntity<SoftwareSyntax>(j => j.HasDataJsonFile<SoftwareSyntax>());
         builder.HasDataJsonFile<Software>();
     }
 }

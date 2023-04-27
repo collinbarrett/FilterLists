@@ -10,8 +10,8 @@ public record Syntax
     public string Name { get; init; } = string.Empty;
     public string? Description { get; init; }
     public Uri? Url { get; init; }
-    public IEnumerable<FilterListSyntax> FilterListSyntaxes { get; init; } = new HashSet<FilterListSyntax>();
-    public IEnumerable<SoftwareSyntax> SoftwareSyntaxes { get; init; } = new HashSet<SoftwareSyntax>();
+    public IEnumerable<FilterList> FilterLists { get; init; } = new HashSet<FilterList>();
+    public IEnumerable<Software> Software { get; init; } = new HashSet<Software>();
 }
 
 internal class SyntaxTypeConfiguration : IEntityTypeConfiguration<Syntax>

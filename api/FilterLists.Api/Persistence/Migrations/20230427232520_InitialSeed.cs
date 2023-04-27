@@ -543,7 +543,10 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 182, null, "HaGeZi", null, "https://github.com/hagezi" },
                     { 183, null, "MasterKia", null, "https://github.com/MasterKia" },
                     { 184, null, "Matteo", null, "https://github.com/Leaf16591" },
-                    { 185, null, "The Doggy Brad", null, "https://github.com/thedoggybrad" }
+                    { 185, null, "The Doggy Brad", null, "https://github.com/thedoggybrad" },
+                    { 186, null, "BadAndUgly", null, "https://codeberg.org/badandugly" },
+                    { 187, null, "rotgruengelb", null, "https://github.com/rotgruengelb" },
+                    { 188, null, "jarelllama", null, "https://github.com/jarelllama" }
                 });
 
             migrationBuilder.InsertData(
@@ -2317,8 +2320,8 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 1930, null, "Much like there's now lists for AdGuard Home and Pi-hole to block ads on smart-TVs, here's an attempt from me at doing the same for videogame consoles with AdGuard Home. Enjoy.", "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations", "imreeil42@gmail.com", null, "https://github.com/DandelionSprout/adfilt", "https://github.com/DandelionSprout/adfilt/issues", 35, "Game Console Adblock List", null, null, null },
                     { 1931, null, "We all hate advertising banners on pages when surfing the web, A proxy such as Squid can used to block these without the need to install any additional software on end users systems. This saves bandwidth as well as protects your privacy from tracking site etc.", null, null, null, "https://www.thedumbterminal.co.uk/services/squidblockedsites.html", null, 5, "The Dumb Terminal's Squid blocked sites", null, null, null },
                     { 1932, null, null, null, null, null, null, null, 5, "Windscribe Clickbait", null, null, null },
-                    { 1933, null, "This repository is www.mypdns.org self maintained list of domains that needs to be blocked for various reasons.", null, null, null, "https://gitlab.com/my-privacy-dns/matrix/matrix/", null, 43, "My Privacy DNS Matrix - Adware", null, null, null },
-                    { 1934, null, "This repository is www.mypdns.org self maintained list of domains that needs to be blocked for various reasons.", null, null, null, "https://gitlab.com/my-privacy-dns/matrix/matrix/", null, 43, "My Privacy DNS Matrix - Tracking", null, null, null },
+                    { 1933, null, "This repository is www.mypdns.org self maintained list of domains that needs to be blocked for various reasons.", null, null, null, "https://0xacab.org/my-privacy-dns/matrix", null, 43, "My Privacy DNS Matrix - Adware", null, null, null },
+                    { 1934, null, "This repository is www.mypdns.org self maintained list of domains that needs to be blocked for various reasons.", null, null, null, "https://0xacab.org/my-privacy-dns/matrix", null, 43, "My Privacy DNS Matrix - Tracking", null, null, null },
                     { 1937, null, "Fake online shops and a lot of other things are collected here.", null, null, null, null, null, 5, "fakeinet.com Scam, Fakes and frauds of Internet URL list", null, null, null },
                     { 1938, null, null, null, null, null, "https://github.com/YanFung/Ads/", null, 5, "Mobile Ads", null, null, null },
                     { 1939, null, null, null, null, null, null, null, 14, "Anti-PopAds (Hosts)", null, null, null },
@@ -2859,11 +2862,9 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2534, null, "This IP set combines IP and CIDR addresses from plentiful of major adblocker lists. It contains heavily altered content from Dandelion Sprout's Anti-Malware List, Dandelion Sprout's Nordic Filters, EasyList, uBlock Filters, uBlock Filters - Badware Risks, AdGuard Base Filter, AdGuard French Filter, EasyList Germany, RU AdList, Liste AR, and EasyList Spanish.", "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations", "imreeil42@gmail.com", null, "https://github.com/DandelionSprout/adfilt", "https://github.com/DandelionSprout/adfilt/issues", 35, "Dandelion Sprout's and other adblocker lists' IPs", null, null, null },
                     { 2535, null, "Never enter the rabbit hole again - Blocks all video suggestions and distractions on YouTube, leaves Likes and Comments on", "https://ko-fi.com/hadig", null, null, "https://github.com/hadig/Focus-for-Youtube", "https://github.com/hadig/Focus-for-Youtube/issues", 5, "Focus for Youtube", null, null, null },
                     { 2536, null, "Hosts file for blocking sites by known malware authors, including those browser-hijacking extensions, as well as those sketchy data-sucking no-name search engines that those companies work with. Also if you donate please ignore the fact that our deadname is on the page.", "https://paypal.me/ArcticCircleSystem", "ArcticCircleSystem@gmail.com", null, "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/", "https://github.com/Arctic-Circle-System/Sketchy-Extension-and-Search-List/issues/", 5, "Extension-based Malware and Data-Sucking Search Engine hosts file", null, null, null },
-                    { 2537, null, "Block malware, phishing, and scams for a more secure computer", null, null, null, "https://github.com/iam-py-test/my_filters_001", "https://github.com/iam-py-test/my_filters_001/issues", 28, "Malicious website blocklist", null, null, null },
-                    { 2538, null, "Block malware, phishing, and scams for a more secure computer (HOSTS version - not for uBlock Origin)", null, null, null, "https://github.com/iam-py-test/my_filters_001", "https://github.com/iam-py-test/my_filters_001/issues/", 28, "Malicious website blocklist (HOSTS)", null, null, null },
-                    { 2539, null, "The family filter for AdGuard Home", null, "contact@ammnt.app", null, "https://ammnt.app/", "https://github.com/AmmoniteFilter/AmmoniteFilter/issues", 4, "AmmoniteFilter", null, null, null },
-                    { 2540, null, "The security filter for AdGuard Home", null, "contact@ammnt.app", null, "https://ammnt.app/", "https://github.com/AmmoniteFilter/TrilobiteFilter/issues", 4, "TrilobiteFilter", null, null, null },
-                    { 2541, null, "Block malware, phishing, and scams for a more secure computer (Domains version)", null, null, null, "https://github.com/iam-py-test/my_filters_001", "https://github.com/iam-py-test/my_filters_001/issues/", 28, "Malicious website blocklist (Domains)", null, null, null },
+                    { 2537, null, "This list aims to protect against scams, phishing, malware, and potentially unwanted programs (PUPs). It includes a version of vxvault.net's list, modified by me (iam-py-test) to work in adblockers.", null, "iam-py-test@protonmail.com", null, "https://github.com/iam-py-test/my_filters_001", "https://github.com/iam-py-test/my_filters_001/issues", 28, "The malicious website blocklist", null, null, null },
+                    { 2538, null, "This list aims to protect against scams, phishing, malware, and potentially unwanted programs (PUPs). It includes a version of vxvault.net's list, modified by me (iam-py-test) to work in adblockers. (HOSTs version - not for uBlock Origin)", null, "iam-py-test@protonmail.com", null, "https://github.com/iam-py-test/my_filters_001", "https://github.com/iam-py-test/my_filters_001/issues/", 28, "The malicious website blocklist (HOSTs file)", null, null, null },
+                    { 2541, null, "This list aims to protect against scams, phishing, malware, and potentially unwanted programs (PUPs). It includes a version of vxvault.net's list, modified by me (iam-py-test) to work in adblockers. (Domains version)", null, "iam-py-test@protonmail.com", null, "https://github.com/iam-py-test/my_filters_001", "https://github.com/iam-py-test/my_filters_001/issues/", 28, "The malicious website blocklist (Domains)", null, null, null },
                     { 2542, null, "Blocks irritating elements on web pages that do not fall under the popular categories of annoyances.", null, null, "https://forum.adguard.com/index.php?categories/filter-rules.66/", "https://github.com/AdguardTeam/AdguardFilters", "https://github.com/AdguardTeam/AdguardFilters/issues", 12, "AdGuard Other Annoyances filter", null, "https://kb.adguard.com/en/general/adguard-filter-policy", null },
                     { 2543, null, "HackerList is a RBL list of IP addresses that have attempted to hack my servers.", null, "soren@smallbusinesstech.net", null, "https://www.smallbusinesstech.net/pfblocker-lists/", null, 4, "HackerList", null, null, null },
                     { 2544, null, "SpamList is a RBL list of IP addresses that have sent my email server spam that made it through my other spam filtering. It works well when combined with SpamAssassin on the mail server.", null, "soren@smallbusinesstech.net", null, "https://www.smallbusinesstech.net/pfblocker-lists/", null, 4, "SpamList", null, null, null },
@@ -2888,7 +2889,7 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2563, null, "Unofficial stores (Aptoide, Apkpure, GetJar...); Cracked & modded APK sources; Fake & unofficial websites; Malvertising & harmful websites; Closed source apps outside trusted stores (Lucky Patcher, YouTube Vanced...)", null, null, null, "https://github.com/furkun/AndroidSecurityHosts", null, 2, "Android Security Hosts (Domains)", null, null, null },
                     { 2564, null, "Filters that accept cookies/GDPR/privacy policy on Polish websites.", null, "contact-project+filtersheroes-pccassets-30920945-issue-@incoming.gitlab.com", "https://www.reddit.com/r/PolishCookieConsent", "https://github.com/FiltersHeroes/PCCassets", "https://github.com/FiltersHeroes/PCCassets/issues", 33, "Polish Cookie Database", null, null, null },
                     { 2565, null, "Filters that accept cookies/GDPR/privacy policy on European websites (based on I don't care about cookies).", null, "contact-project+filtersheroes-pccassets-30920945-issue-@incoming.gitlab.com", "https://www.reddit.com/r/PolishCookieConsent", "https://github.com/FiltersHeroes/PCCassets", "https://github.com/FiltersHeroes/PCCassets/issues", 4, "European Cookie Database", null, null, null },
-                    { 2566, "https://matrix.to/#/#porn-records:anontier.nl", "Porn Records Blacklisting. Porn Records from My Privacy DNS is among the best maintained projects and one of them with the lowest FP's as all records are veryfied by a human before committed to the lists. We do also have a Browser add-on for simple committing new domains", "https://ko-fi.com/X8X37FUGU", "incoming+my-privacy-dns-porn-records-2-dmptefj25u6tlslz82c3oolb9-issue@noreply.mypdns.org", null, "https://mypdns.org/my-privacy-dns/porn-records", "https://mypdns.org/my-privacy-dns/porn-records/-/issues", 13, "My Privacy DNS - Porn Records Blacklist", null, "https://mypdns.org/my-privacy-dns/porn-records/-/blob/master/README.md", "https://mypdns.org/my-privacy-dns/porn-records/-/issues" },
+                    { 2566, "https://matrix.to/#/#porn-records:anontier.nl", "Porn Records Blacklisting. Porn Records from My Privacy DNS is among the best maintained projects and one of them with the lowest FP's as all records are veryfied by a human before committed to the lists. We do also have a Browser add-on for simple committing new domains", "https://ko-fi.com/X8X37FUGU", "0xacab+my-privacy-dns-support-4711-issue-@riseup.net", "https://0xacab.org/my-privacy-dns/support/-/issues", "https://0xacab.org/my-privacy-dns/matrix", "https://0xacab.org/my-privacy-dns/matrix/-/issues", 13, "My Privacy DNS - Porn Records Blacklist", "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix", "https://0xacab.org/my-privacy-dns/matrix/-/blob/master/source/porn_filters/README.md", "https://0xacab.org/my-privacy-dns/matrix/-/issues" },
                     { 2567, null, "Filter that enables removing of ads and anti-adblock scripts from websites with Korean content.", null, null, null, "https://github.com/List-KR/List-KR", "https://github.com/List-KR/List-KR/issues", 4, "List-KR uBO", null, null, null },
                     { 2568, null, "A blocklist of malicious domains targeting Vietnamese users.", null, null, null, "https://gitlab.com/curben/vn-badsite-filter", "https://gitlab.com/curben/vn-badsite-filter/issues", 28, "vn-badsite-filter", null, null, null },
                     { 2569, null, "A blocklist of malicious domains targeting Vietnamese users.", null, null, null, "https://gitlab.com/curben/vn-badsite-filter", "https://gitlab.com/curben/vn-badsite-filter/issues", 28, "vn-badsite-filter (Domains)", null, null, null },
@@ -2964,8 +2965,7 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2615, null, "No mercy for 3rd Party Frames.", null, null, null, "https://github.com/thedoggybrad/Frame-Blocker-Filter", "https://github.com/thedoggybrad/Frame-Blocker-Filter/issues", 17, "Frame-Blocker-Filter (3rd Party only)", null, null, null },
                     { 2616, null, "No mercy for all frames.", null, null, null, "https://github.com/thedoggybrad/Frame-Blocker-Filter", "https://github.com/thedoggybrad/Frame-Blocker-Filter/issues", 17, "Frame-Blocker-Filter (All Frames)", null, null, null },
                     { 2617, null, "No mercy for 3rd party frames with Google and YouTube exceptions.", null, null, null, "https://github.com/thedoggybrad/Frame-Blocker-Filter", "https://github.com/thedoggybrad/Frame-Blocker-Filter/issues", 17, "3rd Party only Frame Blocking with Google and YouTube exceptions", null, null, null },
-                    { 2618, null, "No mercy for 3rd Party Frames except for common Social Media sites.", null, null, null, "https://github.com/thedoggybrad/Frame-Blocker-Filter", "https://github.com/thedoggybrad/Frame-Blocker-Filter/issues", 17, "3rd Party only Frame Blocking with Social Media exceptions", null, null, null },
-                    { 2619, null, "A bigger variant of Frame-Blocker-Filter. This variant-filter is designed to block non-essential Frames.", null, null, null, "https://github.com/thedoggybrad/Non-Essential-Frames-Blocker", "https://github.com/thedoggybrad/Non-Essential-Frames-Blocker/issues", 17, "Non-Essential-Frames-Blocker", null, null, null },
+                    { 2618, null, "No mercy for 3rd Party Frames except for common Social Media sites.", null, null, null, "https://github.com/thedoggybrad/Frame-Blocker-Filter", "https://github.com/thedoggybrad/Frame-Blocker-Filter/issues", 17, "3rd Party Only Frame Blocking with Social Media and Google exceptions", null, null, null },
                     { 2620, null, "Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Metrics, some Malware and Fake.", null, null, null, "https://github.com/hagezi/dns-blocklists", "https://github.com/hagezi/dns-blocklists/issues", 2, "HaGeZi's Multi Light DNS Blocklist (Domains)", null, null, null },
                     { 2621, null, "Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Metrics, some Malware and Fake.", null, null, null, "https://github.com/hagezi/dns-blocklists", "https://github.com/hagezi/dns-blocklists/issues", 2, "HaGeZi's Multi Light DNS Blocklist (Hosts)", null, null, null },
                     { 2622, null, "Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Metrics, some Malware and Fake.", null, null, null, "https://github.com/hagezi/dns-blocklists", "https://github.com/hagezi/dns-blocklists/issues", 2, "HaGeZi's Multi Light DNS Blocklist (Wildcard)", null, null, null },
@@ -3002,7 +3002,20 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2642, null, "This is a dnsmasq blacklist that is derived from my main hosts file. Like any decent dnsmasq blacklist, it takes advantage of tld-compression / fqdn-optimization, resulting in a significantly reduced size.", null, null, null, "https://github.com/bongochong/CombinedPrivacyBlockLists", null, 44, "CPBL DNSMasq", null, null, null },
                     { 2643, null, "This is a wildcard domain blacklist (*.some.domain) derived from my main hosts file. It benefits from tld-compression / fqdn-optimization, resulting in a significantly reduced size.", null, null, null, "https://github.com/bongochong/CombinedPrivacyBlockLists", null, 44, "CPBL Wildcards", null, null, null },
                     { 2644, null, "This is a plain domain blacklist derived from my main hosts file. That's it.", null, null, null, "https://github.com/bongochong/CombinedPrivacyBlockLists", null, 44, "CPBL Domains", null, null, null },
-                    { 2645, null, "This is an fqdn-optimized / tld-compressed version of the plain domain blacklist derived from my main hosts file. It is similar to my wildcard domains blacklist, but without comments ('#') or syntax ('*.') additions.", null, null, null, "https://github.com/bongochong/CombinedPrivacyBlockLists", null, 44, "CPBL Compressed Domains", null, null, null }
+                    { 2645, null, "This is an fqdn-optimized / tld-compressed version of the plain domain blacklist derived from my main hosts file. It is similar to my wildcard domains blacklist, but without comments ('#') or syntax ('*.') additions.", null, null, null, "https://github.com/bongochong/CombinedPrivacyBlockLists", null, 44, "CPBL Compressed Domains", null, null, null },
+                    { 2646, null, "Immediate, temporary filters to fix websites", null, null, null, "https://github.com/uBlockOrigin/uAssets", "https://github.com/uBlockOrigin/uAssets/issues", 4, "uAssets Quick Fixes", null, null, null },
+                    { 2647, null, "A list of filterlist URLs that uBlock Origin will refuse to load as custom lists at all.", null, null, null, "https://github.com/uBlockOrigin/uAssets", "https://github.com/uBlockOrigin/uAssets/issues", 4, "uAssets Badlists", null, null, null },
+                    { 2648, null, "Filter that enables ad blocking on websites in Ukrainian language.", null, null, null, "https://github.com/AdguardTeam/AdguardFilters", "https://github.com/AdguardTeam/AdguardFilters/issues", 12, "AdGuard Ukrainian Filter (uBlock Origin)", null, "https://kb.adguard.com/en/general/adguard-filter-policy", null },
+                    { 2649, null, "Filter that enables ad blocking on websites in Ukrainian language.", null, null, null, "https://github.com/AdguardTeam/AdguardFilters", "https://github.com/AdguardTeam/AdguardFilters/issues", 12, "AdGuard Ukrainian Filter (AdGuard for Chromium)", null, "https://kb.adguard.com/en/general/adguard-filter-policy", null },
+                    { 2650, null, "Spun off from «Ad Removal List for Unusual Ads», as a result of not all African languages having newssites with high enough Alexa ranks to make it to AdGuard Base Filter's «Foreign» section.", "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations", "imreeil42@gmail.com", null, "https://github.com/DandelionSprout/adfilt", "https://github.com/DandelionSprout/adfilt/issues", 35, "Dandelion Sprout's African Languages List", null, null, null },
+                    { 2651, null, "When I (Dandelion Sprout) declared war on Chrome Manifest V3 in 2021, I really meant it. With this list that blocks MV3 extensions' download files and homepages, you too can be an active participant in the survival war.", "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations", "imreeil42@gmail.com", null, "https://github.com/DandelionSprout/adfilt", "https://github.com/DandelionSprout/adfilt/issues", 35, "Anti-'Manifest V3' List", null, null, null },
+                    { 2652, null, "VXVault's list of URLs serving malware, converted into a filterlist", null, "iam-py-test@protonmail.com", null, "https://github.com/iam-py-test/vxvault_filter", "https://github.com/iam-py-test/vxvault_filter/issues", 28, "VXVault filterlist (unofficial)", null, null, null },
+                    { 2653, null, "List of active DGA domains for various malware families.", null, null, null, "https://1275.ru/spisok-aktivnyh-dga-domain-generation-algorithm-domenov/", null, 5, "List of active DGA (domain generation algorithm) domains - General list (all types of threats)", null, null, null },
+                    { 2654, null, "Compilation of filters for AdGuard Home", null, null, null, "https://github.com/ammnt/DeadEnd", "https://github.com/ammnt/DeadEnd/issues", 4, "Dead End", null, null, null },
+                    { 2655, null, "List of German-speaking web-sites with fake-news, propaganda, hate-speech, etc.", null, null, null, "https://codeberg.org/badandugly/badandugly", "https://codeberg.org/badandugly/badandugly/issues", 4, "The Bad & The Ugly Blocklist (German)", null, null, null },
+                    { 2656, null, "This List Blocks Sites that steal Video Game Mods from their Authors and upload them illegally on their sites.", null, "blockmodreposting@rotgruengelb.net", null, "https://github.com/rotgruengelb/BlockModReposting", "https://github.com/rotgruengelb/BlockModReposting/issues", 8, "BlockModReposting", null, null, null },
+                    { 2657, null, "Blocklist for scam sites extracted from Google", null, null, null, "https://github.com/jarelllama/Scam-Blocklist", "https://github.com/jarelllama/Scam-Blocklist/issues", 5, "Jarelllama's Scam Blocklist", null, null, null },
+                    { 2658, null, "Blocklist for scam sites extracted from Google", null, null, null, "https://github.com/jarelllama/Scam-Blocklist", "https://github.com/jarelllama/Scam-Blocklist/issues", 5, "Jarelllama's Scam Blocklist (ABP syntax)", null, null, null }
                 });
 
             migrationBuilder.InsertData(
@@ -3310,11 +3323,15 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 161, 14 },
                     { 161, 79 },
                     { 161, 132 },
-                    { 161, 167 },
                     { 163, 73 },
                     { 164, 32 },
                     { 166, 12 },
                     { 166, 37 },
+                    { 166, 61 },
+                    { 166, 75 },
+                    { 166, 89 },
+                    { 166, 104 },
+                    { 166, 163 },
                     { 167, 113 },
                     { 171, 37 },
                     { 171, 44 },
@@ -3384,6 +3401,8 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 298, 179 },
                     { 299, 179 },
                     { 300, 179 },
+                    { 301, 30 },
+                    { 301, 37 },
                     { 305, 27 },
                     { 305, 141 },
                     { 315, 125 },
@@ -3432,6 +3451,7 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 437, 127 },
                     { 479, 125 },
                     { 480, 39 },
+                    { 507, 37 },
                     { 562, 179 },
                     { 563, 83 },
                     { 569, 179 },
@@ -3946,6 +3966,10 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 1941, 179 },
                     { 1948, 179 },
                     { 1949, 179 },
+                    { 1967, 79 },
+                    { 1967, 95 },
+                    { 1967, 107 },
+                    { 1967, 179 },
                     { 2041, 31 },
                     { 2041, 46 },
                     { 2041, 70 },
@@ -4006,7 +4030,6 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2185, 14 },
                     { 2185, 79 },
                     { 2185, 132 },
-                    { 2185, 167 },
                     { 2187, 8 },
                     { 2187, 47 },
                     { 2188, 179 },
@@ -4022,21 +4045,31 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2204, 14 },
                     { 2204, 79 },
                     { 2204, 132 },
-                    { 2204, 167 },
                     { 2207, 73 },
                     { 2208, 32 },
                     { 2210, 12 },
                     { 2210, 37 },
+                    { 2210, 61 },
+                    { 2210, 75 },
+                    { 2210, 89 },
+                    { 2210, 104 },
+                    { 2210, 163 },
                     { 2211, 113 },
                     { 2213, 47 },
                     { 2214, 12 },
                     { 2214, 37 },
+                    { 2214, 61 },
+                    { 2214, 75 },
+                    { 2214, 89 },
+                    { 2214, 104 },
+                    { 2214, 163 },
                     { 2230, 64 },
                     { 2230, 106 },
                     { 2231, 171 },
                     { 2232, 132 },
                     { 2232, 167 },
                     { 2233, 15 },
+                    { 2234, 37 },
                     { 2235, 179 },
                     { 2236, 141 },
                     { 2237, 113 },
@@ -4067,6 +4100,7 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2255, 132 },
                     { 2255, 167 },
                     { 2256, 15 },
+                    { 2257, 37 },
                     { 2258, 179 },
                     { 2260, 113 },
                     { 2261, 32 },
@@ -4157,6 +4191,7 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2467, 179 },
                     { 2468, 179 },
                     { 2470, 37 },
+                    { 2471, 48 },
                     { 2471, 113 },
                     { 2519, 113 },
                     { 2559, 161 },
@@ -4164,6 +4199,7 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2561, 161 },
                     { 2564, 125 },
                     { 2566, 37 },
+                    { 2567, 37 },
                     { 2567, 83 },
                     { 2568, 171 },
                     { 2569, 171 },
@@ -4178,7 +4214,15 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2583, 179 },
                     { 2585, 167 },
                     { 2608, 42 },
-                    { 2609, 42 }
+                    { 2608, 154 },
+                    { 2609, 42 },
+                    { 2648, 167 },
+                    { 2649, 167 },
+                    { 2650, 6 },
+                    { 2650, 99 },
+                    { 2650, 145 },
+                    { 2650, 151 },
+                    { 2650, 180 }
                 });
 
             migrationBuilder.InsertData(
@@ -4635,7 +4679,6 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 879, 108 },
                     { 881, 108 },
                     { 882, 108 },
-                    { 884, 134 },
                     { 885, 109 },
                     { 886, 109 },
                     { 887, 109 },
@@ -5630,8 +5673,6 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2535, 164 },
                     { 2537, 165 },
                     { 2538, 165 },
-                    { 2539, 166 },
-                    { 2540, 166 },
                     { 2541, 165 },
                     { 2542, 46 },
                     { 2550, 182 },
@@ -5690,7 +5731,6 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2616, 185 },
                     { 2617, 185 },
                     { 2618, 185 },
-                    { 2619, 185 },
                     { 2620, 182 },
                     { 2621, 182 },
                     { 2622, 182 },
@@ -5717,7 +5757,17 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2642, 126 },
                     { 2643, 126 },
                     { 2644, 126 },
-                    { 2645, 126 }
+                    { 2645, 126 },
+                    { 2648, 46 },
+                    { 2649, 46 },
+                    { 2650, 22 },
+                    { 2651, 22 },
+                    { 2652, 165 },
+                    { 2654, 166 },
+                    { 2655, 168 },
+                    { 2656, 187 },
+                    { 2657, 188 },
+                    { 2658, 188 }
                 });
 
             migrationBuilder.InsertData(
@@ -7844,8 +7894,6 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2534, 39 },
                     { 2537, 4 },
                     { 2538, 1 },
-                    { 2539, 6 },
-                    { 2540, 6 },
                     { 2541, 2 },
                     { 2542, 6 },
                     { 2543, 9 },
@@ -7926,7 +7974,6 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2616, 3 },
                     { 2617, 3 },
                     { 2618, 3 },
-                    { 2619, 3 },
                     { 2620, 2 },
                     { 2621, 1 },
                     { 2622, 16 },
@@ -7955,7 +8002,19 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2642, 20 },
                     { 2643, 16 },
                     { 2644, 2 },
-                    { 2645, 2 }
+                    { 2645, 2 },
+                    { 2646, 4 },
+                    { 2647, 8 },
+                    { 2648, 4 },
+                    { 2649, 6 },
+                    { 2650, 3 },
+                    { 2651, 3 },
+                    { 2652, 4 },
+                    { 2654, 6 },
+                    { 2655, 6 },
+                    { 2656, 6 },
+                    { 2657, 2 },
+                    { 2658, 3 }
                 });
 
             migrationBuilder.InsertData(
@@ -11072,13 +11131,6 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2537, 7 },
                     { 2538, 6 },
                     { 2538, 7 },
-                    { 2539, 2 },
-                    { 2539, 3 },
-                    { 2539, 6 },
-                    { 2539, 7 },
-                    { 2539, 11 },
-                    { 2540, 6 },
-                    { 2540, 7 },
                     { 2541, 6 },
                     { 2541, 7 },
                     { 2542, 9 },
@@ -11204,7 +11256,21 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2645, 2 },
                     { 2645, 3 },
                     { 2645, 6 },
-                    { 2645, 7 }
+                    { 2645, 7 },
+                    { 2646, 2 },
+                    { 2647, 15 },
+                    { 2648, 2 },
+                    { 2649, 2 },
+                    { 2650, 2 },
+                    { 2651, 15 },
+                    { 2652, 6 },
+                    { 2653, 6 },
+                    { 2654, 2 },
+                    { 2654, 3 },
+                    { 2655, 25 },
+                    { 2656, 24 },
+                    { 2657, 7 },
+                    { 2658, 7 }
                 });
 
             migrationBuilder.InsertData(
@@ -12108,7 +12174,7 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 879, 929, 1, "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/tamago_filter.txt" },
                     { 881, 930, 1, "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/youtube_wo_tonikaku_filter.txt" },
                     { 882, 931, 1, "https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/all.txt" },
-                    { 884, 932, 1, "https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/master/Finland_adb.txt" },
+                    { 884, 932, 1, "https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/gh-pages/Finland_adb.txt" },
                     { 885, 933, 1, "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Afghanistan.txt" },
                     { 886, 934, 1, "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Aland.txt" },
                     { 887, 935, 1, "https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/CountryCodesLists/Albania.txt" },
@@ -13781,7 +13847,7 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2519, 2731, 1, "https://raw.githubusercontent.com/JohnyP36/Personal-List/cdn-page/Dutch Filter List (uBo).txt" },
                     { 2519, 2812, 2, "https://cdn.statically.io/gh/JohnyP36/Personal-List/cdn-page/Dutch Filter List (uBo).txt" },
                     { 2519, 2813, 3, "https://raw.githubusercontent.com/JohnyP36/Personal-List/main/Personal List (uBo).txt" },
-                    { 2519, 2914, 4, "https://cdn.statically.io/gh/JohnyP36/Personal-List/main/Personal List (uBo).txt" },
+                    { 2519, 2923, 4, "https://cdn.statically.io/gh/JohnyP36/Personal-List/main/Personal List (uBo).txt" },
                     { 2520, 2733, 1, "https://raw.githubusercontent.com/BPower0036/AdBlockFilters/main/dynamic rules" },
                     { 2520, 2806, 2, "https://cdn.statically.io/gh/BPower0036/AdBlockfilters/main/dynamic rules" },
                     { 2520, 2807, 3, "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockfilters@main/dynamic rules" },
@@ -13822,8 +13888,6 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2537, 2756, 2, "https://iam-py-test.github.io/my_filters_001/antimalware.txt" },
                     { 2538, 2753, 1, "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/Alternative list formats/antimalware_hosts.txt" },
                     { 2538, 2757, 2, "https://iam-py-test.github.io/my_filters_001/Alternative list formats/antimalware_hosts.txt" },
-                    { 2539, 2758, 1, "https://ammnt.app/filter.txt" },
-                    { 2540, 2759, 1, "https://raw.githubusercontent.com/AmmoniteFilter/TrilobiteFilter/main/filter.txt" },
                     { 2541, 2760, 1, "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/Alternative list formats/antimalware_domains.txt" },
                     { 2541, 2761, 2, "https://iam-py-test.github.io/my_filters_001/Alternative list formats/antimalware_domains.txt" },
                     { 2542, 2762, 1, "https://filters.adtidy.org/windows/filters/21.txt" },
@@ -13869,26 +13933,16 @@ namespace FilterLists.Api.Persistence.Migrations
                 columns: new[] { "FilterListId", "Id", "Primariness", "SegmentNumber", "Url" },
                 values: new object[,]
                 {
-                    { 2566, 2814, 1, 1, "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/wildcard.list" },
-                    { 2566, 2815, 2, 1, "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/wildcard.list" },
-                    { 2566, 2816, 3, 1, "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/wildcard.list" },
-                    { 2566, 2817, 4, 1, "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/wildcard.list" },
-                    { 2566, 2818, 1, 2, "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/tld.list" },
-                    { 2566, 2819, 2, 2, "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/tld.list" },
-                    { 2566, 2820, 3, 2, "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/tld.list" },
-                    { 2566, 2821, 4, 2, "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/tld.list" },
-                    { 2566, 2822, 1, 3, "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/domains.list" },
-                    { 2566, 2823, 2, 3, "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/domains.list" },
-                    { 2566, 2824, 3, 3, "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/domains.list" },
-                    { 2566, 2825, 4, 3, "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/domains.list" },
-                    { 2566, 2826, 1, 4, "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/hosts.list" },
-                    { 2566, 2827, 2, 4, "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/hosts.list" },
-                    { 2566, 2828, 3, 4, "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/hosts.list" },
-                    { 2566, 2829, 4, 4, "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/hosts.list" },
-                    { 2566, 2830, 1, 5, "https://mypdns.org/my-privacy-dns/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/snuff.list" },
-                    { 2566, 2831, 2, 5, "https://raw.githubusercontent.com/mypdns/porn-records/master/submit_here/adult.mypdns.cloud/snuff.list" },
-                    { 2566, 2832, 3, 5, "https://raw.githubusercontent.com/porn-records/porn-records/master/submit_here/adult.mypdns.cloud/snuff.list" },
-                    { 2566, 2833, 4, 5, "https://gitlab.com/MypDNS/porn-records/-/raw/master/submit_here/adult.mypdns.cloud/snuff.list" }
+                    { 2566, 2814, 1, 1, "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/wildcard.list" },
+                    { 2566, 2818, 1, 2, "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/tld.list" },
+                    { 2566, 2822, 1, 3, "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/domains.list" },
+                    { 2566, 2826, 1, 4, "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/hosts.list" },
+                    { 2566, 2830, 1, 5, "https://0xacab.org/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/snuff.list" },
+                    { 2566, 2926, 2, 1, "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/wildcard.list" },
+                    { 2566, 2927, 2, 2, "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/tld.list" },
+                    { 2566, 2928, 2, 3, "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/domains.list" },
+                    { 2566, 2929, 2, 4, "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/hosts.list" },
+                    { 2566, 2930, 2, 5, "http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/my-privacy-dns/matrix/-/raw/master/source/porn_filters/explicit_content/snuff.list" }
                 });
 
             migrationBuilder.InsertData(
@@ -13953,7 +14007,6 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2616, 2882, 1, "https://raw.githubusercontent.com/thedoggybrad/Frame-Blocker-Filter/main/All.txt" },
                     { 2617, 2883, 1, "https://raw.githubusercontent.com/thedoggybrad/Frame-Blocker-Filter/main/googleyt-exception.txt" },
                     { 2618, 2884, 1, "https://raw.githubusercontent.com/thedoggybrad/Frame-Blocker-Filter/main/socialmedia-exception.txt" },
-                    { 2619, 2885, 1, "https://raw.githubusercontent.com/thedoggybrad/Non-Essential-Frames-Blocker/main/filter.txt" },
                     { 2620, 2886, 1, "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/light.txt" },
                     { 2621, 2887, 1, "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/light.txt" },
                     { 2622, 2888, 1, "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/light.txt" },
@@ -13982,7 +14035,37 @@ namespace FilterLists.Api.Persistence.Migrations
                     { 2642, 2911, 1, "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/cpbl-dnsmasq.txt" },
                     { 2643, 2912, 1, "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/cpbl-wildcard-blacklist.txt" },
                     { 2644, 2913, 1, "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/BlacklistedDomains.txt" },
-                    { 2645, 2914, 1, "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/cpbl-ctld.txt" }
+                    { 2645, 2914, 1, "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/NoFormatting/cpbl-ctld.txt" },
+                    { 2646, 2915, 1, "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/quick-fixes.txt" },
+                    { 2647, 2916, 1, "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badlists.txt" },
+                    { 2648, 2917, 1, "https://filters.adtidy.org/extension/ublock/filters/23.txt" },
+                    { 2649, 2918, 1, "https://filters.adtidy.org/extension/chromium/filters/23.txt" },
+                    { 2650, 2919, 1, "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AfricanLanguagesList.txt" },
+                    { 2650, 2920, 2, "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AfricanLanguagesList.txt" },
+                    { 2651, 2921, 1, "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiMV3List.txt" },
+                    { 2651, 2922, 2, "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AntiMV3List.txt" },
+                    { 2652, 2924, 1, "https://raw.githubusercontent.com/iam-py-test/vxvault_filter/main/ubolist.txt" },
+                    { 2652, 2925, 2, "https://iam-py-test.github.io/vxvault_filter/ubolist.txt" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "FilterListViewUrl",
+                columns: new[] { "FilterListId", "Id", "Primariness", "SegmentNumber", "Url" },
+                values: new object[,]
+                {
+                    { 2653, 2931, 1, 1, "https://1275.ru/DGA/dga.txt" },
+                    { 2654, 2932, 1, 1, "https://raw.githubusercontent.com/ammnt/DeadEnd/main/filter.txt" },
+                    { 2655, 2933, 1, 1, "https://codeberg.org/badandugly/badandugly/raw/branch/main/blocklist" },
+                    { 2656, 2934, 1, 1, "https://raw.githubusercontent.com/rotgruengelb/BlockModReposting/main/list.txt" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "FilterListViewUrl",
+                columns: new[] { "FilterListId", "Id", "Primariness", "Url" },
+                values: new object[,]
+                {
+                    { 2657, 2935, 1, "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/domains.txt" },
+                    { 2658, 2936, 1, "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/adblock.txt" }
                 });
 
             migrationBuilder.InsertData(
@@ -13990,19 +14073,19 @@ namespace FilterLists.Api.Persistence.Migrations
                 columns: new[] { "ForkFilterListId", "UpstreamFilterListId" },
                 values: new object[,]
                 {
-                    { 350, 12 },
-                    { 563, 16 },
                     { 16, 59 },
                     { 16, 99 },
+                    { 16, 278 },
                     { 158, 258 },
                     { 163, 262 },
-                    { 16, 278 },
                     { 164, 293 },
-                    { 167, 295 },
                     { 166, 301 },
-                    { 565, 301 },
+                    { 167, 295 },
                     { 312, 311 },
-                    { 313, 311 }
+                    { 313, 311 },
+                    { 350, 12 },
+                    { 563, 16 },
+                    { 565, 301 }
                 });
 
             migrationBuilder.InsertData(
@@ -14469,11 +14552,6 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListLanguage",
                 keyColumns: new[] { "FilterListId", "LanguageId" },
-                keyValues: new object[] { 161, 167 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListLanguage",
-                keyColumns: new[] { "FilterListId", "LanguageId" },
                 keyValues: new object[] { 163, 73 });
 
             migrationBuilder.DeleteData(
@@ -14490,6 +14568,31 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "FilterListLanguage",
                 keyColumns: new[] { "FilterListId", "LanguageId" },
                 keyValues: new object[] { 166, 37 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 166, 61 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 166, 75 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 166, 89 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 166, 104 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 166, 163 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListLanguage",
@@ -14839,6 +14942,16 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListLanguage",
                 keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 301, 30 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 301, 37 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
                 keyValues: new object[] { 305, 27 });
 
             migrationBuilder.DeleteData(
@@ -15075,6 +15188,11 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "FilterListLanguage",
                 keyColumns: new[] { "FilterListId", "LanguageId" },
                 keyValues: new object[] { 480, 39 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 507, 37 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListLanguage",
@@ -17649,6 +17767,26 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListLanguage",
                 keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 1967, 79 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 1967, 95 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 1967, 107 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 1967, 179 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
                 keyValues: new object[] { 2041, 31 });
 
             migrationBuilder.DeleteData(
@@ -17949,11 +18087,6 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListLanguage",
                 keyColumns: new[] { "FilterListId", "LanguageId" },
-                keyValues: new object[] { 2185, 167 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListLanguage",
-                keyColumns: new[] { "FilterListId", "LanguageId" },
                 keyValues: new object[] { 2187, 8 });
 
             migrationBuilder.DeleteData(
@@ -18029,11 +18162,6 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListLanguage",
                 keyColumns: new[] { "FilterListId", "LanguageId" },
-                keyValues: new object[] { 2204, 167 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListLanguage",
-                keyColumns: new[] { "FilterListId", "LanguageId" },
                 keyValues: new object[] { 2207, 73 });
 
             migrationBuilder.DeleteData(
@@ -18054,6 +18182,31 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListLanguage",
                 keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2210, 61 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2210, 75 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2210, 89 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2210, 104 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2210, 163 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
                 keyValues: new object[] { 2211, 113 });
 
             migrationBuilder.DeleteData(
@@ -18070,6 +18223,31 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "FilterListLanguage",
                 keyColumns: new[] { "FilterListId", "LanguageId" },
                 keyValues: new object[] { 2214, 37 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2214, 61 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2214, 75 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2214, 89 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2214, 104 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2214, 163 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListLanguage",
@@ -18100,6 +18278,11 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "FilterListLanguage",
                 keyColumns: new[] { "FilterListId", "LanguageId" },
                 keyValues: new object[] { 2233, 15 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2234, 37 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListLanguage",
@@ -18250,6 +18433,11 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "FilterListLanguage",
                 keyColumns: new[] { "FilterListId", "LanguageId" },
                 keyValues: new object[] { 2256, 15 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2257, 37 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListLanguage",
@@ -18704,6 +18892,11 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListLanguage",
                 keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2471, 48 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
                 keyValues: new object[] { 2471, 113 });
 
             migrationBuilder.DeleteData(
@@ -18735,6 +18928,11 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "FilterListLanguage",
                 keyColumns: new[] { "FilterListId", "LanguageId" },
                 keyValues: new object[] { 2566, 37 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2567, 37 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListLanguage",
@@ -18809,7 +19007,47 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListLanguage",
                 keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2608, 154 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
                 keyValues: new object[] { 2609, 42 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2648, 167 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2649, 167 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2650, 6 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2650, 99 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2650, 145 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2650, 151 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListLanguage",
+                keyColumns: new[] { "FilterListId", "LanguageId" },
+                keyValues: new object[] { 2650, 180 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListMaintainer",
@@ -21055,11 +21293,6 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "FilterListMaintainer",
                 keyColumns: new[] { "FilterListId", "MaintainerId" },
                 keyValues: new object[] { 882, 108 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListMaintainer",
-                keyColumns: new[] { "FilterListId", "MaintainerId" },
-                keyValues: new object[] { 884, 134 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListMaintainer",
@@ -26034,16 +26267,6 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListMaintainer",
                 keyColumns: new[] { "FilterListId", "MaintainerId" },
-                keyValues: new object[] { 2539, 166 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListMaintainer",
-                keyColumns: new[] { "FilterListId", "MaintainerId" },
-                keyValues: new object[] { 2540, 166 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListMaintainer",
-                keyColumns: new[] { "FilterListId", "MaintainerId" },
                 keyValues: new object[] { 2541, 165 });
 
             migrationBuilder.DeleteData(
@@ -26334,11 +26557,6 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListMaintainer",
                 keyColumns: new[] { "FilterListId", "MaintainerId" },
-                keyValues: new object[] { 2619, 185 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListMaintainer",
-                keyColumns: new[] { "FilterListId", "MaintainerId" },
                 keyValues: new object[] { 2620, 182 });
 
             migrationBuilder.DeleteData(
@@ -26470,6 +26688,56 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "FilterListMaintainer",
                 keyColumns: new[] { "FilterListId", "MaintainerId" },
                 keyValues: new object[] { 2645, 126 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListMaintainer",
+                keyColumns: new[] { "FilterListId", "MaintainerId" },
+                keyValues: new object[] { 2648, 46 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListMaintainer",
+                keyColumns: new[] { "FilterListId", "MaintainerId" },
+                keyValues: new object[] { 2649, 46 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListMaintainer",
+                keyColumns: new[] { "FilterListId", "MaintainerId" },
+                keyValues: new object[] { 2650, 22 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListMaintainer",
+                keyColumns: new[] { "FilterListId", "MaintainerId" },
+                keyValues: new object[] { 2651, 22 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListMaintainer",
+                keyColumns: new[] { "FilterListId", "MaintainerId" },
+                keyValues: new object[] { 2652, 165 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListMaintainer",
+                keyColumns: new[] { "FilterListId", "MaintainerId" },
+                keyValues: new object[] { 2654, 166 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListMaintainer",
+                keyColumns: new[] { "FilterListId", "MaintainerId" },
+                keyValues: new object[] { 2655, 168 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListMaintainer",
+                keyColumns: new[] { "FilterListId", "MaintainerId" },
+                keyValues: new object[] { 2656, 187 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListMaintainer",
+                keyColumns: new[] { "FilterListId", "MaintainerId" },
+                keyValues: new object[] { 2657, 188 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListMaintainer",
+                keyColumns: new[] { "FilterListId", "MaintainerId" },
+                keyValues: new object[] { 2658, 188 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListSyntax",
@@ -37069,16 +37337,6 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListSyntax",
                 keyColumns: new[] { "FilterListId", "SyntaxId" },
-                keyValues: new object[] { 2539, 6 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListSyntax",
-                keyColumns: new[] { "FilterListId", "SyntaxId" },
-                keyValues: new object[] { 2540, 6 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListSyntax",
-                keyColumns: new[] { "FilterListId", "SyntaxId" },
                 keyValues: new object[] { 2541, 2 });
 
             migrationBuilder.DeleteData(
@@ -37479,11 +37737,6 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListSyntax",
                 keyColumns: new[] { "FilterListId", "SyntaxId" },
-                keyValues: new object[] { 2619, 3 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListSyntax",
-                keyColumns: new[] { "FilterListId", "SyntaxId" },
                 keyValues: new object[] { 2620, 2 });
 
             migrationBuilder.DeleteData(
@@ -37625,6 +37878,66 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "FilterListSyntax",
                 keyColumns: new[] { "FilterListId", "SyntaxId" },
                 keyValues: new object[] { 2645, 2 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListSyntax",
+                keyColumns: new[] { "FilterListId", "SyntaxId" },
+                keyValues: new object[] { 2646, 4 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListSyntax",
+                keyColumns: new[] { "FilterListId", "SyntaxId" },
+                keyValues: new object[] { 2647, 8 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListSyntax",
+                keyColumns: new[] { "FilterListId", "SyntaxId" },
+                keyValues: new object[] { 2648, 4 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListSyntax",
+                keyColumns: new[] { "FilterListId", "SyntaxId" },
+                keyValues: new object[] { 2649, 6 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListSyntax",
+                keyColumns: new[] { "FilterListId", "SyntaxId" },
+                keyValues: new object[] { 2650, 3 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListSyntax",
+                keyColumns: new[] { "FilterListId", "SyntaxId" },
+                keyValues: new object[] { 2651, 3 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListSyntax",
+                keyColumns: new[] { "FilterListId", "SyntaxId" },
+                keyValues: new object[] { 2652, 4 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListSyntax",
+                keyColumns: new[] { "FilterListId", "SyntaxId" },
+                keyValues: new object[] { 2654, 6 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListSyntax",
+                keyColumns: new[] { "FilterListId", "SyntaxId" },
+                keyValues: new object[] { 2655, 6 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListSyntax",
+                keyColumns: new[] { "FilterListId", "SyntaxId" },
+                keyValues: new object[] { 2656, 6 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListSyntax",
+                keyColumns: new[] { "FilterListId", "SyntaxId" },
+                keyValues: new object[] { 2657, 2 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListSyntax",
+                keyColumns: new[] { "FilterListId", "SyntaxId" },
+                keyValues: new object[] { 2658, 3 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListTag",
@@ -53174,41 +53487,6 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListTag",
                 keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2539, 2 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListTag",
-                keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2539, 3 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListTag",
-                keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2539, 6 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListTag",
-                keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2539, 7 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListTag",
-                keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2539, 11 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListTag",
-                keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2540, 6 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListTag",
-                keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2540, 7 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListTag",
-                keyColumns: new[] { "FilterListId", "TagId" },
                 keyValues: new object[] { 2541, 6 });
 
             migrationBuilder.DeleteData(
@@ -53835,6 +54113,76 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "FilterListTag",
                 keyColumns: new[] { "FilterListId", "TagId" },
                 keyValues: new object[] { 2645, 7 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListTag",
+                keyColumns: new[] { "FilterListId", "TagId" },
+                keyValues: new object[] { 2646, 2 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListTag",
+                keyColumns: new[] { "FilterListId", "TagId" },
+                keyValues: new object[] { 2647, 15 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListTag",
+                keyColumns: new[] { "FilterListId", "TagId" },
+                keyValues: new object[] { 2648, 2 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListTag",
+                keyColumns: new[] { "FilterListId", "TagId" },
+                keyValues: new object[] { 2649, 2 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListTag",
+                keyColumns: new[] { "FilterListId", "TagId" },
+                keyValues: new object[] { 2650, 2 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListTag",
+                keyColumns: new[] { "FilterListId", "TagId" },
+                keyValues: new object[] { 2651, 15 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListTag",
+                keyColumns: new[] { "FilterListId", "TagId" },
+                keyValues: new object[] { 2652, 6 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListTag",
+                keyColumns: new[] { "FilterListId", "TagId" },
+                keyValues: new object[] { 2653, 6 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListTag",
+                keyColumns: new[] { "FilterListId", "TagId" },
+                keyValues: new object[] { 2654, 2 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListTag",
+                keyColumns: new[] { "FilterListId", "TagId" },
+                keyValues: new object[] { 2654, 3 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListTag",
+                keyColumns: new[] { "FilterListId", "TagId" },
+                keyValues: new object[] { 2655, 25 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListTag",
+                keyColumns: new[] { "FilterListId", "TagId" },
+                keyValues: new object[] { 2656, 24 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListTag",
+                keyColumns: new[] { "FilterListId", "TagId" },
+                keyValues: new object[] { 2657, 7 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListTag",
+                keyColumns: new[] { "FilterListId", "TagId" },
+                keyValues: new object[] { 2658, 7 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListViewUrl",
@@ -66684,7 +67032,7 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListViewUrl",
                 keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2519, 2914 });
+                keyValues: new object[] { 2519, 2923 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListViewUrl",
@@ -66830,16 +67178,6 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "FilterListViewUrl",
                 keyColumns: new[] { "FilterListId", "Id" },
                 keyValues: new object[] { 2538, 2757 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2539, 2758 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2540, 2759 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListViewUrl",
@@ -67039,37 +67377,7 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListViewUrl",
                 keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2815 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2816 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2817 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
                 keyValues: new object[] { 2566, 2818 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2819 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2820 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2821 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListViewUrl",
@@ -67079,37 +67387,7 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListViewUrl",
                 keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2823 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2824 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2825 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
                 keyValues: new object[] { 2566, 2826 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2827 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2828 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2829 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListViewUrl",
@@ -67119,17 +67397,27 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListViewUrl",
                 keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2831 });
+                keyValues: new object[] { 2566, 2926 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListViewUrl",
                 keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2832 });
+                keyValues: new object[] { 2566, 2927 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListViewUrl",
                 keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2566, 2833 });
+                keyValues: new object[] { 2566, 2928 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2566, 2929 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2566, 2930 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListViewUrl",
@@ -67399,11 +67687,6 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListViewUrl",
                 keyColumns: new[] { "FilterListId", "Id" },
-                keyValues: new object[] { 2619, 2885 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListViewUrl",
-                keyColumns: new[] { "FilterListId", "Id" },
                 keyValues: new object[] { 2620, 2886 });
 
             migrationBuilder.DeleteData(
@@ -67547,14 +67830,84 @@ namespace FilterLists.Api.Persistence.Migrations
                 keyValues: new object[] { 2645, 2914 });
 
             migrationBuilder.DeleteData(
-                table: "Fork",
-                keyColumns: new[] { "ForkFilterListId", "UpstreamFilterListId" },
-                keyValues: new object[] { 350, 12 });
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2646, 2915 });
 
             migrationBuilder.DeleteData(
-                table: "Fork",
-                keyColumns: new[] { "ForkFilterListId", "UpstreamFilterListId" },
-                keyValues: new object[] { 563, 16 });
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2647, 2916 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2648, 2917 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2649, 2918 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2650, 2919 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2650, 2920 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2651, 2921 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2651, 2922 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2652, 2924 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2652, 2925 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2653, 2931 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2654, 2932 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2655, 2933 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2656, 2934 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2657, 2935 });
+
+            migrationBuilder.DeleteData(
+                table: "FilterListViewUrl",
+                keyColumns: new[] { "FilterListId", "Id" },
+                keyValues: new object[] { 2658, 2936 });
 
             migrationBuilder.DeleteData(
                 table: "Fork",
@@ -67569,6 +67922,11 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "Fork",
                 keyColumns: new[] { "ForkFilterListId", "UpstreamFilterListId" },
+                keyValues: new object[] { 16, 278 });
+
+            migrationBuilder.DeleteData(
+                table: "Fork",
+                keyColumns: new[] { "ForkFilterListId", "UpstreamFilterListId" },
                 keyValues: new object[] { 158, 258 });
 
             migrationBuilder.DeleteData(
@@ -67579,17 +67937,7 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "Fork",
                 keyColumns: new[] { "ForkFilterListId", "UpstreamFilterListId" },
-                keyValues: new object[] { 16, 278 });
-
-            migrationBuilder.DeleteData(
-                table: "Fork",
-                keyColumns: new[] { "ForkFilterListId", "UpstreamFilterListId" },
                 keyValues: new object[] { 164, 293 });
-
-            migrationBuilder.DeleteData(
-                table: "Fork",
-                keyColumns: new[] { "ForkFilterListId", "UpstreamFilterListId" },
-                keyValues: new object[] { 167, 295 });
 
             migrationBuilder.DeleteData(
                 table: "Fork",
@@ -67599,7 +67947,7 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "Fork",
                 keyColumns: new[] { "ForkFilterListId", "UpstreamFilterListId" },
-                keyValues: new object[] { 565, 301 });
+                keyValues: new object[] { 167, 295 });
 
             migrationBuilder.DeleteData(
                 table: "Fork",
@@ -67610,6 +67958,21 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "Fork",
                 keyColumns: new[] { "ForkFilterListId", "UpstreamFilterListId" },
                 keyValues: new object[] { 313, 311 });
+
+            migrationBuilder.DeleteData(
+                table: "Fork",
+                keyColumns: new[] { "ForkFilterListId", "UpstreamFilterListId" },
+                keyValues: new object[] { 350, 12 });
+
+            migrationBuilder.DeleteData(
+                table: "Fork",
+                keyColumns: new[] { "ForkFilterListId", "UpstreamFilterListId" },
+                keyValues: new object[] { 563, 16 });
+
+            migrationBuilder.DeleteData(
+                table: "Fork",
+                keyColumns: new[] { "ForkFilterListId", "UpstreamFilterListId" },
+                keyValues: new object[] { 565, 301 });
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -67635,11 +67998,6 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "Language",
                 keyColumn: "Id",
                 keyValue: 5);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
-                keyValue: 6);
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -67724,11 +68082,6 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
-                keyValue: 30);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
                 keyValue: 34);
 
             migrationBuilder.DeleteData(
@@ -67755,11 +68108,6 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "Language",
                 keyColumn: "Id",
                 keyValue: 45);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
-                keyValue: 48);
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -67800,11 +68148,6 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "Language",
                 keyColumn: "Id",
                 keyValue: 59);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
-                keyValue: 61);
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -67850,11 +68193,6 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "Language",
                 keyColumn: "Id",
                 keyValue: 74);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
-                keyValue: 75);
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -67909,11 +68247,6 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
-                keyValue: 89);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
                 keyValue: 90);
 
             migrationBuilder.DeleteData(
@@ -67939,17 +68272,7 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
-                keyValue: 95);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
                 keyValue: 97);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
-                keyValue: 99);
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -67964,17 +68287,7 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
-                keyValue: 104);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
                 keyValue: 105);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
-                keyValue: 107);
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -68099,11 +68412,6 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
-                keyValue: 145);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
                 keyValue: 147);
 
             migrationBuilder.DeleteData(
@@ -68115,16 +68423,6 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "Language",
                 keyColumn: "Id",
                 keyValue: 149);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
-                keyValue: 151);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
-                keyValue: 154);
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -68155,11 +68453,6 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "Language",
                 keyColumn: "Id",
                 keyValue: 162);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
-                keyValue: 163);
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -68215,11 +68508,6 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "Language",
                 keyColumn: "Id",
                 keyValue: 178);
-
-            migrationBuilder.DeleteData(
-                table: "Language",
-                keyColumn: "Id",
-                keyValue: 180);
 
             migrationBuilder.DeleteData(
                 table: "License",
@@ -68330,6 +68618,11 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "Maintainer",
                 keyColumn: "Id",
                 keyValue: 149);
+
+            migrationBuilder.DeleteData(
+                table: "Maintainer",
+                keyColumn: "Id",
+                keyValue: 186);
 
             migrationBuilder.DeleteData(
                 table: "Merge",
@@ -80194,16 +80487,6 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterList",
                 keyColumn: "Id",
-                keyValue: 2539);
-
-            migrationBuilder.DeleteData(
-                table: "FilterList",
-                keyColumn: "Id",
-                keyValue: 2540);
-
-            migrationBuilder.DeleteData(
-                table: "FilterList",
-                keyColumn: "Id",
                 keyValue: 2541);
 
             migrationBuilder.DeleteData(
@@ -80589,11 +80872,6 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterList",
                 keyColumn: "Id",
-                keyValue: 2619);
-
-            migrationBuilder.DeleteData(
-                table: "FilterList",
-                keyColumn: "Id",
                 keyValue: 2620);
 
             migrationBuilder.DeleteData(
@@ -80722,6 +81000,76 @@ namespace FilterLists.Api.Persistence.Migrations
                 keyValue: 2645);
 
             migrationBuilder.DeleteData(
+                table: "FilterList",
+                keyColumn: "Id",
+                keyValue: 2646);
+
+            migrationBuilder.DeleteData(
+                table: "FilterList",
+                keyColumn: "Id",
+                keyValue: 2647);
+
+            migrationBuilder.DeleteData(
+                table: "FilterList",
+                keyColumn: "Id",
+                keyValue: 2648);
+
+            migrationBuilder.DeleteData(
+                table: "FilterList",
+                keyColumn: "Id",
+                keyValue: 2649);
+
+            migrationBuilder.DeleteData(
+                table: "FilterList",
+                keyColumn: "Id",
+                keyValue: 2650);
+
+            migrationBuilder.DeleteData(
+                table: "FilterList",
+                keyColumn: "Id",
+                keyValue: 2651);
+
+            migrationBuilder.DeleteData(
+                table: "FilterList",
+                keyColumn: "Id",
+                keyValue: 2652);
+
+            migrationBuilder.DeleteData(
+                table: "FilterList",
+                keyColumn: "Id",
+                keyValue: 2653);
+
+            migrationBuilder.DeleteData(
+                table: "FilterList",
+                keyColumn: "Id",
+                keyValue: 2654);
+
+            migrationBuilder.DeleteData(
+                table: "FilterList",
+                keyColumn: "Id",
+                keyValue: 2655);
+
+            migrationBuilder.DeleteData(
+                table: "FilterList",
+                keyColumn: "Id",
+                keyValue: 2656);
+
+            migrationBuilder.DeleteData(
+                table: "FilterList",
+                keyColumn: "Id",
+                keyValue: 2657);
+
+            migrationBuilder.DeleteData(
+                table: "FilterList",
+                keyColumn: "Id",
+                keyValue: 2658);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
+                keyValue: 6);
+
+            migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
                 keyValue: 8);
@@ -80755,6 +81103,11 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "Language",
                 keyColumn: "Id",
                 keyValue: 27);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
+                keyValue: 30);
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -80814,6 +81167,11 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
+                keyValue: 48);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
                 keyValue: 53);
 
             migrationBuilder.DeleteData(
@@ -80830,6 +81188,11 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "Language",
                 keyColumn: "Id",
                 keyValue: 60);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
+                keyValue: 61);
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -80854,6 +81217,11 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
+                keyValue: 75);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
                 keyValue: 79);
 
             migrationBuilder.DeleteData(
@@ -80869,12 +81237,27 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
+                keyValue: 89);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
+                keyValue: 95);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
                 keyValue: 96);
 
             migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
                 keyValue: 98);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
+                keyValue: 99);
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -80889,7 +81272,17 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
+                keyValue: 104);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
                 keyValue: 106);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
+                keyValue: 107);
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -80959,12 +81352,22 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
+                keyValue: 145);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
                 keyValue: 146);
 
             migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
                 keyValue: 150);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
+                keyValue: 151);
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -80979,12 +81382,22 @@ namespace FilterLists.Api.Persistence.Migrations
             migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
+                keyValue: 154);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
                 keyValue: 155);
 
             migrationBuilder.DeleteData(
                 table: "Language",
                 keyColumn: "Id",
                 keyValue: 161);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
+                keyValue: 163);
 
             migrationBuilder.DeleteData(
                 table: "Language",
@@ -81010,6 +81423,11 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "Language",
                 keyColumn: "Id",
                 keyValue: 179);
+
+            migrationBuilder.DeleteData(
+                table: "Language",
+                keyColumn: "Id",
+                keyValue: 180);
 
             migrationBuilder.DeleteData(
                 table: "Maintainer",
@@ -81790,6 +82208,16 @@ namespace FilterLists.Api.Persistence.Migrations
                 table: "Maintainer",
                 keyColumn: "Id",
                 keyValue: 185);
+
+            migrationBuilder.DeleteData(
+                table: "Maintainer",
+                keyColumn: "Id",
+                keyValue: 187);
+
+            migrationBuilder.DeleteData(
+                table: "Maintainer",
+                keyColumn: "Id",
+                keyValue: 188);
 
             migrationBuilder.DeleteData(
                 table: "Software",

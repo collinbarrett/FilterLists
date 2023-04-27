@@ -11,7 +11,7 @@ public record Maintainer
     public Uri? Url { get; init; }
     public string? EmailAddress { get; init; }
     public string? TwitterHandle { get; init; }
-    public IEnumerable<FilterListMaintainer> FilterListMaintainers { get; init; } = new HashSet<FilterListMaintainer>();
+    public IEnumerable<FilterList> FilterLists { get; init; } = new HashSet<FilterList>();
 }
 
 internal class MaintainerTypeConfiguration : IEntityTypeConfiguration<Maintainer>
