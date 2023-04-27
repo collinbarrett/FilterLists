@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 namespace FilterLists.Api.Api.Types;
 
 [ObjectType]
-// ReSharper disable once ClassNeverInstantiated.Global
 public class TagType : ObjectType<Tag>
 {
     protected override void Configure(IObjectTypeDescriptor<Tag> descriptor)

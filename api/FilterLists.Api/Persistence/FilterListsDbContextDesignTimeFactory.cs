@@ -4,7 +4,6 @@ using Microsoft.Extensions.Configuration;
 
 namespace FilterLists.Api.Persistence;
 
-// ReSharper disable once UnusedType.Global
 internal class FilterListsDbContextDesignTimeFactory : IDesignTimeDbContextFactory<FilterListsDbContext>
 {
     public FilterListsDbContext CreateDbContext(string[] args)
