@@ -2,7 +2,7 @@ type Tag implements Node {
   id: ID!
   name: String!
   description: String
-  filterListTags: [FilterListTag!]!
+  filterLists: [FilterList!]!
 }
 
 type Syntax implements Node {
@@ -10,8 +10,8 @@ type Syntax implements Node {
   name: String!
   description: String
   url: URL
-  filterListSyntaxes: [FilterListSyntax!]!
-  softwareSyntaxes: [SoftwareSyntax!]!
+  filterLists: [FilterList!]!
+  software: [Software!]!
 }
 
 type Software implements Node {
@@ -21,7 +21,7 @@ type Software implements Node {
   homeUrl: URL
   downloadUrl: URL
   supportsAbpUrlScheme: Boolean!
-  softwareSyntaxes: [SoftwareSyntax!]!
+  syntaxes: [Syntax!]!
 }
 
 type Maintainer implements Node {
@@ -30,7 +30,7 @@ type Maintainer implements Node {
   url: URL
   emailAddress: String
   twitterHandle: String
-  filterListMaintainers: [FilterListMaintainer!]!
+  filterLists: [FilterList!]!
 }
 
 type License implements Node {
@@ -47,7 +47,7 @@ type Language implements Node {
   id: ID!
   iso6391: String!
   name: String!
-  filterListLanguages: [FilterListLanguage!]!
+  filterLists: [FilterList!]!
 }
 
 type FilterList implements Node {
@@ -56,9 +56,9 @@ type FilterList implements Node {
   name: String!
   description: String
   license: License!
-  filterListSyntaxes: [FilterListSyntax!]!
-  filterListLanguages: [FilterListLanguage!]!
-  filterListTags: [FilterListTag!]!
+  syntaxes: [Syntax!]!
+  languages: [Language!]!
+  tags: [Tag!]!
   viewUrls: [FilterListViewUrl!]!
   homeUrl: URL
   onionUrl: URL
@@ -69,13 +69,13 @@ type FilterList implements Node {
   chatUrl: URL
   emailAddress: String
   donateUrl: URL
-  filterListMaintainers: [FilterListMaintainer!]!
-  upstreamFilterLists: [Fork!]!
-  forkFilterLists: [Fork!]!
-  includedInFilterLists: [Merge!]!
-  includesFilterLists: [Merge!]!
-  dependencyFilterLists: [Dependent!]!
-  dependentFilterLists: [Dependent!]!
+  maintainers: [Maintainer!]!
+  upstreamFilterLists: [FilterList!]!
+  forkFilterLists: [FilterList!]!
+  includedInFilterLists: [FilterList!]!
+  includesFilterLists: [FilterList!]!
+  dependencyFilterLists: [FilterList!]!
+  dependentFilterLists: [FilterList!]!
 }
 
 type Query {
@@ -268,42 +268,7 @@ interface Node {
   id: ID!
 }
 
-type FilterListTag {
-  filterListId: Int!
-  filterList: FilterList!
-  tagId: Int!
-  tag: Tag!
-}
-
 scalar URL
-
-type FilterListSyntax {
-  filterListId: Int!
-  filterList: FilterList!
-  syntaxId: Int!
-  syntax: Syntax!
-}
-
-type SoftwareSyntax {
-  softwareId: Int!
-  software: Software!
-  syntaxId: Int!
-  syntax: Syntax!
-}
-
-type FilterListMaintainer {
-  filterListId: Int!
-  filterList: FilterList!
-  maintainerId: Int!
-  maintainer: Maintainer!
-}
-
-type FilterListLanguage {
-  filterListId: Int!
-  filterList: FilterList!
-  languageId: Int!
-  language: Language!
-}
 
 type FilterListViewUrl {
   id: Int!
@@ -314,27 +279,6 @@ type FilterListViewUrl {
   url: URL!
 }
 
-type Fork {
-  upstreamFilterListId: Int!
-  upstreamFilterList: FilterList!
-  forkFilterListId: Int!
-  forkFilterList: FilterList!
-}
-
-type Merge {
-  includedInFilterListId: Int!
-  includedInFilterList: FilterList!
-  includesFilterListId: Int!
-  includesFilterList: FilterList!
-}
-
-type Dependent {
-  dependencyFilterListId: Int!
-  dependencyFilterList: FilterList!
-  dependentFilterListId: Int!
-  dependentFilterList: FilterList!
-}
-
 input FilterListFilterInput {
   and: [FilterListFilterInput!]
   or: [FilterListFilterInput!]
@@ -343,9 +287,9 @@ input FilterListFilterInput {
   description: StringOperationFilterInput
   licenseId: IntOperationFilterInput
   license: LicenseFilterInput
-  filterListSyntaxes: ListFilterInputTypeOfFilterListSyntaxFilterInput
-  filterListLanguages: ListFilterInputTypeOfFilterListLanguageFilterInput
-  filterListTags: ListFilterInputTypeOfFilterListTagFilterInput
+  syntaxes: ListFilterInputTypeOfSyntaxFilterInput
+  languages: ListFilterInputTypeOfLanguageFilterInput
+  tags: ListFilterInputTypeOfTagFilterInput
   viewUrls: ListFilterInputTypeOfFilterListViewUrlFilterInput
   homeUrl: UrlOperationFilterInput
   onionUrl: UrlOperationFilterInput
@@ -356,13 +300,13 @@ input FilterListFilterInput {
   chatUrl: UrlOperationFilterInput
   emailAddress: StringOperationFilterInput
   donateUrl: UrlOperationFilterInput
-  filterListMaintainers: ListFilterInputTypeOfFilterListMaintainerFilterInput
-  upstreamFilterLists: ListFilterInputTypeOfForkFilterInput
-  forkFilterLists: ListFilterInputTypeOfForkFilterInput
-  includedInFilterLists: ListFilterInputTypeOfMergeFilterInput
-  includesFilterLists: ListFilterInputTypeOfMergeFilterInput
-  dependencyFilterLists: ListFilterInputTypeOfDependentFilterInput
-  dependentFilterLists: ListFilterInputTypeOfDependentFilterInput
+  maintainers: ListFilterInputTypeOfMaintainerFilterInput
+  upstreamFilterLists: ListFilterInputTypeOfFilterListFilterInput
+  forkFilterLists: ListFilterInputTypeOfFilterListFilterInput
+  includedInFilterLists: ListFilterInputTypeOfFilterListFilterInput
+  includesFilterLists: ListFilterInputTypeOfFilterListFilterInput
+  dependencyFilterLists: ListFilterInputTypeOfFilterListFilterInput
+  dependentFilterLists: ListFilterInputTypeOfFilterListFilterInput
 }
 
 input FilterListSortInput {
@@ -388,7 +332,7 @@ input LanguageFilterInput {
   id: IntOperationFilterInput
   iso6391: StringOperationFilterInput
   name: StringOperationFilterInput
-  filterListLanguages: ListFilterInputTypeOfFilterListLanguageFilterInput
+  filterLists: ListFilterInputTypeOfFilterListFilterInput
 }
 
 input LanguageSortInput {
@@ -426,7 +370,7 @@ input MaintainerFilterInput {
   url: UrlOperationFilterInput
   emailAddress: StringOperationFilterInput
   twitterHandle: StringOperationFilterInput
-  filterListMaintainers: ListFilterInputTypeOfFilterListMaintainerFilterInput
+  filterLists: ListFilterInputTypeOfFilterListFilterInput
 }
 
 input MaintainerSortInput {
@@ -446,7 +390,7 @@ input SoftwareFilterInput {
   homeUrl: UrlOperationFilterInput
   downloadUrl: UrlOperationFilterInput
   supportsAbpUrlScheme: BooleanOperationFilterInput
-  softwareSyntaxes: ListFilterInputTypeOfSoftwareSyntaxFilterInput
+  syntaxes: ListFilterInputTypeOfSyntaxFilterInput
 }
 
 input SoftwareSortInput {
@@ -465,8 +409,8 @@ input SyntaxFilterInput {
   name: StringOperationFilterInput
   description: StringOperationFilterInput
   url: UrlOperationFilterInput
-  filterListSyntaxes: ListFilterInputTypeOfFilterListSyntaxFilterInput
-  softwareSyntaxes: ListFilterInputTypeOfSoftwareSyntaxFilterInput
+  filterLists: ListFilterInputTypeOfFilterListFilterInput
+  software: ListFilterInputTypeOfSoftwareFilterInput
 }
 
 input SyntaxSortInput {
@@ -482,7 +426,7 @@ input TagFilterInput {
   id: IntOperationFilterInput
   name: StringOperationFilterInput
   description: StringOperationFilterInput
-  filterListTags: ListFilterInputTypeOfFilterListTagFilterInput
+  filterLists: ListFilterInputTypeOfFilterListFilterInput
 }
 
 input TagSortInput {
@@ -696,24 +640,24 @@ input StringOperationFilterInput {
   nendsWith: String
 }
 
-input ListFilterInputTypeOfFilterListSyntaxFilterInput {
-  all: FilterListSyntaxFilterInput
-  none: FilterListSyntaxFilterInput
-  some: FilterListSyntaxFilterInput
+input ListFilterInputTypeOfSyntaxFilterInput {
+  all: SyntaxFilterInput
+  none: SyntaxFilterInput
+  some: SyntaxFilterInput
   any: Boolean
 }
 
-input ListFilterInputTypeOfFilterListLanguageFilterInput {
-  all: FilterListLanguageFilterInput
-  none: FilterListLanguageFilterInput
-  some: FilterListLanguageFilterInput
+input ListFilterInputTypeOfLanguageFilterInput {
+  all: LanguageFilterInput
+  none: LanguageFilterInput
+  some: LanguageFilterInput
   any: Boolean
 }
 
-input ListFilterInputTypeOfFilterListTagFilterInput {
-  all: FilterListTagFilterInput
-  none: FilterListTagFilterInput
-  some: FilterListTagFilterInput
+input ListFilterInputTypeOfTagFilterInput {
+  all: TagFilterInput
+  none: TagFilterInput
+  some: TagFilterInput
   any: Boolean
 }
 
@@ -739,31 +683,17 @@ input UrlOperationFilterInput {
   nlte: URL
 }
 
-input ListFilterInputTypeOfFilterListMaintainerFilterInput {
-  all: FilterListMaintainerFilterInput
-  none: FilterListMaintainerFilterInput
-  some: FilterListMaintainerFilterInput
+input ListFilterInputTypeOfMaintainerFilterInput {
+  all: MaintainerFilterInput
+  none: MaintainerFilterInput
+  some: MaintainerFilterInput
   any: Boolean
 }
 
-input ListFilterInputTypeOfForkFilterInput {
-  all: ForkFilterInput
-  none: ForkFilterInput
-  some: ForkFilterInput
-  any: Boolean
-}
-
-input ListFilterInputTypeOfMergeFilterInput {
-  all: MergeFilterInput
-  none: MergeFilterInput
-  some: MergeFilterInput
-  any: Boolean
-}
-
-input ListFilterInputTypeOfDependentFilterInput {
-  all: DependentFilterInput
-  none: DependentFilterInput
-  some: DependentFilterInput
+input ListFilterInputTypeOfFilterListFilterInput {
+  all: FilterListFilterInput
+  none: FilterListFilterInput
+  some: FilterListFilterInput
   any: Boolean
 }
 
@@ -801,17 +731,10 @@ input BooleanOperationFilterInput {
   neq: Boolean
 }
 
-input ListFilterInputTypeOfFilterListFilterInput {
-  all: FilterListFilterInput
-  none: FilterListFilterInput
-  some: FilterListFilterInput
-  any: Boolean
-}
-
-input ListFilterInputTypeOfSoftwareSyntaxFilterInput {
-  all: SoftwareSyntaxFilterInput
-  none: SoftwareSyntaxFilterInput
-  some: SoftwareSyntaxFilterInput
+input ListFilterInputTypeOfSoftwareFilterInput {
+  all: SoftwareFilterInput
+  none: SoftwareFilterInput
+  some: SoftwareFilterInput
   any: Boolean
 }
 
@@ -945,33 +868,6 @@ type TagsEdge {
   node: Tag!
 }
 
-input FilterListSyntaxFilterInput {
-  and: [FilterListSyntaxFilterInput!]
-  or: [FilterListSyntaxFilterInput!]
-  filterListId: IntOperationFilterInput
-  filterList: FilterListFilterInput
-  syntaxId: IntOperationFilterInput
-  syntax: SyntaxFilterInput
-}
-
-input FilterListLanguageFilterInput {
-  and: [FilterListLanguageFilterInput!]
-  or: [FilterListLanguageFilterInput!]
-  filterListId: IntOperationFilterInput
-  filterList: FilterListFilterInput
-  languageId: IntOperationFilterInput
-  language: LanguageFilterInput
-}
-
-input FilterListTagFilterInput {
-  and: [FilterListTagFilterInput!]
-  or: [FilterListTagFilterInput!]
-  filterListId: IntOperationFilterInput
-  filterList: FilterListFilterInput
-  tagId: IntOperationFilterInput
-  tag: TagFilterInput
-}
-
 input FilterListViewUrlFilterInput {
   and: [FilterListViewUrlFilterInput!]
   or: [FilterListViewUrlFilterInput!]
@@ -981,49 +877,4 @@ input FilterListViewUrlFilterInput {
   segmentNumber: IntOperationFilterInput
   primariness: IntOperationFilterInput
   url: UrlOperationFilterInput
-}
-
-input FilterListMaintainerFilterInput {
-  and: [FilterListMaintainerFilterInput!]
-  or: [FilterListMaintainerFilterInput!]
-  filterListId: IntOperationFilterInput
-  filterList: FilterListFilterInput
-  maintainerId: IntOperationFilterInput
-  maintainer: MaintainerFilterInput
-}
-
-input ForkFilterInput {
-  and: [ForkFilterInput!]
-  or: [ForkFilterInput!]
-  upstreamFilterListId: IntOperationFilterInput
-  upstreamFilterList: FilterListFilterInput
-  forkFilterListId: IntOperationFilterInput
-  forkFilterList: FilterListFilterInput
-}
-
-input MergeFilterInput {
-  and: [MergeFilterInput!]
-  or: [MergeFilterInput!]
-  includedInFilterListId: IntOperationFilterInput
-  includedInFilterList: FilterListFilterInput
-  includesFilterListId: IntOperationFilterInput
-  includesFilterList: FilterListFilterInput
-}
-
-input DependentFilterInput {
-  and: [DependentFilterInput!]
-  or: [DependentFilterInput!]
-  dependencyFilterListId: IntOperationFilterInput
-  dependencyFilterList: FilterListFilterInput
-  dependentFilterListId: IntOperationFilterInput
-  dependentFilterList: FilterListFilterInput
-}
-
-input SoftwareSyntaxFilterInput {
-  and: [SoftwareSyntaxFilterInput!]
-  or: [SoftwareSyntaxFilterInput!]
-  softwareId: IntOperationFilterInput
-  software: SoftwareFilterInput
-  syntaxId: IntOperationFilterInput
-  syntax: SyntaxFilterInput
 }
