@@ -9,6 +9,7 @@ internal static class ConfigurationExtensions
 {
     internal static IHostBuilder AddGraphQl(this IHostBuilder hostBuilder)
     {
+        // TODO: disable BCP telemetry https://chillicream.com/docs/hotchocolate/v13/server/endpoints#disabletelemetry
         return hostBuilder.AddGraphQLFunction(b => b
             .AddGraphQlTypes()
             .AddGlobalObjectIdentification()
