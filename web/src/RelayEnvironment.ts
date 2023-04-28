@@ -6,7 +6,7 @@ import {
   FetchFunction,
 } from "relay-runtime";
 
-const HTTP_ENDPOINT = "https://api.filterlists.com/api/graphql";
+const HTTP_ENDPOINT = process.env.NEXT_PUBLIC_FILTERLISTS_API_URL ?? "";
 
 const fetchFn: FetchFunction = async (request, variables) => {
   const resp = await fetch(HTTP_ENDPOINT, {
