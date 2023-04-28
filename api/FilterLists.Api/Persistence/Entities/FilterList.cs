@@ -4,32 +4,134 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Api.Persistence.Entities;
 
+/// <summary>
+///     The list of filter rules to block advertisements, trackers, and other unwanted content
+/// </summary>
 public record FilterList
 {
+    /// <summary>
+    ///     The unique identifier of the FilterList
+    /// </summary>
     public int Id { get; init; }
+
+    /// <summary>
+    ///     The unique name in title case of the FilterList
+    /// </summary>
     public string Name { get; init; } = string.Empty;
+
+    /// <summary>
+    ///     The brief English description of the FilterList
+    /// </summary>
     public string? Description { get; init; }
+
+    /// <summary>
+    ///     The unique identifier of the <see cref="License" /> under which the FilterList is licensed
+    /// </summary>
     public int LicenseId { get; init; }
+
+    /// <summary>
+    ///     The <see cref="License" /> under which the FilterList is licensed
+    /// </summary>
     public License License { get; init; } = null!;
+
+    /// <summary>
+    ///     The <see cref="Syntax" />es which the FilterList implements
+    /// </summary>
     public IEnumerable<Syntax> Syntaxes { get; init; } = new HashSet<Syntax>();
+
+    /// <summary>
+    ///     The <see cref="Language" />s of the websites targeted by the FilterList
+    /// </summary>
     public IEnumerable<Language> Languages { get; init; } = new HashSet<Language>();
+
+    /// <summary>
+    ///     The <see cref="Tag" />s applied to the FilterList
+    /// </summary>
     public IEnumerable<Tag> Tags { get; init; } = new HashSet<Tag>();
+
+    /// <summary>
+    ///     The URLs at which the FilterList can be viewed or downloaded
+    /// </summary>
     public IEnumerable<FilterListViewUrl> ViewUrls { get; init; } = new HashSet<FilterListViewUrl>();
+
+    /// <summary>
+    ///     The homepage URL of the FilterList
+    /// </summary>
     public Uri? HomeUrl { get; init; }
+
+    /// <summary>
+    ///     The Onion (TOR) URL of the FilterList
+    /// </summary>
     public Uri? OnionUrl { get; init; }
+
+    /// <summary>
+    ///     The policy URL of guidelines and rule types of the FilterList
+    /// </summary>
     public Uri? PolicyUrl { get; init; }
+
+    /// <summary>
+    ///     The rule submission or contact form URL of the FilterList
+    /// </summary>
     public Uri? SubmissionUrl { get; init; }
+
+    /// <summary>
+    ///     The GitHub Issues URL of the FilterList
+    /// </summary>
     public Uri? IssuesUrl { get; init; }
+
+    /// <summary>
+    ///     The forum URL of the FilterList
+    /// </summary>
     public Uri? ForumUrl { get; init; }
+
+    /// <summary>
+    ///     The chat room URL of the FilterList
+    /// </summary>
     public Uri? ChatUrl { get; init; }
+
+    /// <summary>
+    ///     The email address of the FilterList
+    /// </summary>
     public string? EmailAddress { get; init; }
+
+    /// <summary>
+    ///     The donate URL of the FilterList
+    /// </summary>
     public Uri? DonateUrl { get; init; }
+
+    /// <summary>
+    ///     The <see cref="Maintainer" />s of the FilterList
+    /// </summary>
     public IEnumerable<Maintainer> Maintainers { get; init; } = new HashSet<Maintainer>();
+
+    /// <summary>
+    ///     The <see cref="FilterList" />s from which the FilterList was forked
+    /// </summary>
     public IEnumerable<FilterList> UpstreamFilterLists { get; init; } = new HashSet<FilterList>();
+
+    /// <summary>
+    ///     The <see cref="FilterList" />s forked from the FilterList
+    /// </summary>
     public IEnumerable<FilterList> ForkFilterLists { get; init; } = new HashSet<FilterList>();
+
+    /// <summary>
+    ///     The <see cref="FilterList" />s in which the FilterList is included
+    /// </summary>
     public IEnumerable<FilterList> IncludedInFilterLists { get; init; } = new HashSet<FilterList>();
+
+    /// <summary>
+    ///     The <see cref="FilterList" />s the FilterList includes
+    /// </summary>
     public IEnumerable<FilterList> IncludesFilterLists { get; init; } = new HashSet<FilterList>();
+
+    /// <summary>
+    ///     The <see cref="FilterList" />s the FilterList depends upon
+    /// </summary>
     public IEnumerable<FilterList> DependencyFilterLists { get; init; } = new HashSet<FilterList>();
+
+    /// <summary>
+    ///     The <see cref="FilterList" />s dependent upon the FilterList
+    /// </summary>
     public IEnumerable<FilterList> DependentFilterLists { get; init; } = new HashSet<FilterList>();
 }
 
