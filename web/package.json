@@ -22,7 +22,7 @@
     "react-dom": "18.2.0",
     "react-relay": "15.0.0",
     "relay-runtime": "15.0.0",
-    "sharp": "^0.32.0",
+    "sharp": "^0.32.1",
     "typescript": "5.0.4"
   },
   "devDependencies": {
