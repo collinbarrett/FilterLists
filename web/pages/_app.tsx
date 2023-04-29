@@ -15,9 +15,14 @@ import {
 import styles from "./_app.module.css";
 import { useTheme } from "@/src/hooks";
 import { coalesceToArray } from "@/src/utils";
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 const { Header, Content, Footer } = Layout;
 const { darkAlgorithm } = theme;
+const client = new ApolloClient({
+  uri: process.env.NEXT_PUBLIC_FILTERLISTS_API_URL,
+  cache: new InMemoryCache(),
+});
 
 const App = ({ Component, pageProps }: AppProps) => {
   const { theme, setDarkTheme } = useTheme();
@@ -38,9 +43,11 @@ const App = ({ Component, pageProps }: AppProps) => {
             />
           </Space>
         </Header>
-        <Content className={styles.content}>
-          <Component {...pageProps} />
-        </Content>
+        <ApolloProvider client={client}>
+          <Content className={styles.content}>
+            <Component {...pageProps} />
+          </Content>
+        </ApolloProvider>
         <Footer className={styles.footer}>
           <Copyright />
           <Api />
