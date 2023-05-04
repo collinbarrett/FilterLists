@@ -15806,13 +15806,13 @@
     "filterListId": 2519,
     "id": 2812,
     "primariness": 2,
-    "url": "https://cdn.statically.io/gh/JohnyP36/Personal-List/cdn-page/Dutch%20Filter%20List%20(uBo).txt"
+    "url": "https://cdn.jsdelivr.net/gh/JohnyP36/Personal-List@cdn-page/Dutch%20Filter%20List%20(uBo).txt"
   },
   {
     "filterListId": 2519,
     "id": 2813,
     "primariness": 3,
-    "url": "https://raw.githubusercontent.com/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
+    "url": "https://cdn.statically.io/gh/JohnyP36/Personal-List/cdn-page/Dutch%20Filter%20List%20(uBo).txt"
   },
   {
     "filterListId": 2566,
@@ -16392,7 +16392,7 @@
     "filterListId": 2519,
     "id": 2923,
     "primariness": 4,
-    "url": "https://cdn.statically.io/gh/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
+    "url": "https://raw.githubusercontent.com/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
   },
   {
     "filterListId": 2652,
@@ -16480,5 +16480,11 @@
     "id": 2936,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/adblock.txt"
+  },
+  {
+    "filterListId": 2519,
+    "id": 2923,
+    "primariness": 5,
+    "url": "https://cdn.statically.io/gh/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
   }
 ]
