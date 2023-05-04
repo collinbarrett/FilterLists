@@ -13,7 +13,7 @@
     "@apollo/client": "^3.7.13",
     "@types/node": "18.16.3",
     "@types/react": "^18.2.0",
-    "@types/react-dom": "18.2.1",
+    "@types/react-dom": "18.2.3",
     "antd": "^5.4.6",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
