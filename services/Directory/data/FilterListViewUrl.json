@@ -16486,5 +16486,10 @@
     "id": 2937,
     "primariness": 5,
     "url": "https://cdn.statically.io/gh/JohnyP36/Personal-List/main/Personal%20List%20(uBo).txt"
+  },
+  {
+    "filterListId": 2659,
+    "id": 2938,
+    "url": "https://raw.githubusercontent.com/www-k9/hosts/master/hosts"
   }
 ]
