@@ -15,7 +15,7 @@ public class SeedQueryDbContextTest
             var connString = Environment.GetEnvironmentVariable("ConnectionStrings__DirectoryConnection") ??
                              throw new Exception();
             var options = new DbContextOptionsBuilder<QueryDbContext>()
-                .UseNpgsql(connString, m => m.MigrationsAssembly(typeof(Initial).Assembly.GetName().Name))
+                .UseNpgsql(connString, m => m.MigrationsAssembly(typeof(InitialCreate).Assembly.GetName().Name))
                 .EnableSensitiveDataLogging()
                 .Options;
             await using var context = new QueryDbContext(options);
