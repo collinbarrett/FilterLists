@@ -16596,7 +16596,7 @@
     "name": "Anti-IP-Grabber-Hosts"
   },
   {
-    "description": "This list is a fork of DandelionSprout's AntiKpopSpammersTwitter updated with more K-pop artists, bands and related stuff.",
+    "description": "This list is a fork of DandelionSprout's AntiKpopSpammersTwitter updated with more K-pop artists, bands and related stuff.",
     "homeUrl": "https://github.com/Cinnamon-Unltd/Anti-Kpop-Spammers-Filterlist-for-Twitter",
     "id": 2500,
     "licenseId": 35,
@@ -17829,5 +17829,13 @@
     "issuesUrl": "https://github.com/jarelllama/Scam-Blocklist/issues",
     "licenseId": 5,
     "name": "Jarelllama's Scam Blocklist (ABP syntax)"
+  },
+  {
+    "description":"A blocklist for Arabic content and websites not listed in StevenBlack/hosts. Blocks pornography, gambling, social media, dating websites, and phishing.",
+    "homeUrl": "https://github.com/www-k9/hosts",
+    "id":2659,
+    "issuesUrl": "https://github.com/www-k9/hosts/issues",
+    "licenseId":2,
+    "name":"WWW-K9"
   }
 ]
