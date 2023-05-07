@@ -17831,11 +17831,11 @@
     "name": "Jarelllama's Scam Blocklist (ABP syntax)"
   },
   {
-    "description":"A blocklist for Arabic content and websites not listed in StevenBlack/hosts. Blocks pornography, gambling, social media, dating websites, and phishing.",
+    "description": "A blocklist for Arabic content and websites not listed in StevenBlack/hosts. Blocks pornography, gambling, social media, dating websites, and phishing.",
     "homeUrl": "https://github.com/www-k9/hosts",
-    "id":2659,
+    "id": 2659,
     "issuesUrl": "https://github.com/www-k9/hosts/issues",
-    "licenseId":2,
-    "name":"WWW-K9"
+    "licenseId": 2,
+    "name": "WWW-K9"
   }
 ]
