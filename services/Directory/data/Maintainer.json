@@ -973,9 +973,9 @@
     "url": "https://github.com/jarelllama"
   },
   {
-    "id":189,
-    "name":"www-k9",
-    "url":"https://github.com/www-k9",
-    "emailAddress": "www-k9@proton.me"
+    "emailAddress": "www-k9@proton.me",
+    "id": 189,
+    "name": "www-k9",
+    "url": "https://github.com/www-k9"
   }
 ]
