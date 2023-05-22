@@ -10,7 +10,7 @@
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="HotChocolate.AzureFunctions.IsolatedProcess" Version="13.1.0" />
-        <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.0.5" />
+        <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.1.0" />
         <PackageReference Include="HotChocolate.Types.Analyzers" Version="13.1.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
