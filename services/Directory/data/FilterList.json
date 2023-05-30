@@ -17837,5 +17837,12 @@
     "issuesUrl": "https://github.com/www-k9/hosts/issues",
     "licenseId": 2,
     "name": "WWW-K9"
+  },
+  {
+    "id":2660,
+    "homeUrl": "https://github.com/L8X/AntiAuthenticationUrlFilter",
+    "issuesUrl": "https://github.com/L8X/AntiAuthenticationUrlFilter/issues",
+    "name": "Anti-Authentication-Url-Filter",
+    "description": "Blocks use of @ (i.e. https://google.com@example.com) before domain names, which is being used to trick people"
   }
 ]
