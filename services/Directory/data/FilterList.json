@@ -17839,10 +17839,10 @@
     "name": "WWW-K9"
   },
   {
-    "id":2660,
+    "description": "Blocks use of @ (i.e. https://google.com@example.com) before domain names, which is being used to trick people",
     "homeUrl": "https://github.com/L8X/AntiAuthenticationUrlFilter",
+    "id": 2660,
     "issuesUrl": "https://github.com/L8X/AntiAuthenticationUrlFilter/issues",
-    "name": "Anti-Authentication-Url-Filter",
-    "description": "Blocks use of @ (i.e. https://google.com@example.com) before domain names, which is being used to trick people"
+    "name": "Anti-Authentication-Url-Filter"
   }
 ]
