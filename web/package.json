@@ -14,7 +14,7 @@
     "@types/node": "20.2.5",
     "@types/react": "^18.2.7",
     "@types/react-dom": "18.2.4",
-    "antd": "^5.5.1",
+    "antd": "^5.5.2",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
     "graphql": "^16.6.0",
