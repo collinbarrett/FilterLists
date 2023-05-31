@@ -17839,10 +17839,11 @@
     "name": "WWW-K9"
   },
   {
-    "description": "Blocks use of @ (i.e. https://google.com@example.com) before domain names, which is being used to trick people",
+    "description": "This list aims to prevent the pathetic excuses of domain endings (.zip and .mov) that Google recently added from causing phishing from being conducted using the old authentication URL scheme which is embedded into browsers",
     "homeUrl": "https://github.com/L8X/AntiAuthenticationUrlFilter",
     "id": 2660,
     "issuesUrl": "https://github.com/L8X/AntiAuthenticationUrlFilter/issues",
-    "name": "Anti-Authentication-Url-Filter"
+    "name": "Anti-Authentication-Url-Filter",
+    "licenseId": 4
   }
 ]
