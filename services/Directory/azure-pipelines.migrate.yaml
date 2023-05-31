@@ -94,7 +94,7 @@ steps:
       targetType: inline
       workingDirectory: services/Directory
       script: |
-        MIGLIST=$(dotnet ef migrations list -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api)
+        MIGLIST=$(dotnet ef migrations list -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api --context QueryDbContext)
         echo "$MIGLIST"
         if [[ $MIGLIST == *$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER ]] ; then
           echo "A migration already exists for PR #$SYSTEM_PULLREQUEST_PULLREQUESTNUMBER. Reverting..."
