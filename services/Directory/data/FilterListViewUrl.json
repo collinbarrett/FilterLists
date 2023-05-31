@@ -16491,5 +16491,10 @@
     "filterListId": 2659,
     "id": 2938,
     "url": "https://raw.githubusercontent.com/www-k9/hosts/master/hosts"
+  },
+  {
+    "filterListId": 2660,
+    "id": 2939,
+    "url": "https://raw.githubusercontent.com/L8X/AntiAuthenticationUrlFilter/main/AntiAuthenticationUrlFilter.txt"
   }
 ]
