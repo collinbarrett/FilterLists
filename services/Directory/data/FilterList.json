@@ -17843,7 +17843,7 @@
     "homeUrl": "https://github.com/L8X/AntiAuthenticationUrlFilter",
     "id": 2660,
     "issuesUrl": "https://github.com/L8X/AntiAuthenticationUrlFilter/issues",
-    "name": "Anti-Authentication-Url-Filter",
-    "licenseId": 4
+    "licenseId": 4,
+    "name": "Anti-Authentication-Url-Filter"
   }
 ]
