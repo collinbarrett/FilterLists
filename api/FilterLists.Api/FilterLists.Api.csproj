@@ -9,7 +9,7 @@
         <NoWarn>$(NoWarn);1591</NoWarn>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="HotChocolate.AzureFunctions.IsolatedProcess" Version="13.1.0" />
+        <PackageReference Include="HotChocolate.AzureFunctions.IsolatedProcess" Version="13.2.0" />
         <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.2.0" />
         <PackageReference Include="HotChocolate.Types.Analyzers" Version="13.1.0">
             <PrivateAssets>all</PrivateAssets>
