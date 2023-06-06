@@ -2414,16 +2414,6 @@
     "name": "EasyList Czech and Slovak - uBlock"
   },
   {
-    "description": "Official filter list file used for blocking ads on Czech and Slovak websites.",
-    "emailAddress": "tomastaro@adblock.sk",
-    "forumUrl": "https://easylist-czech-and-slovak.tenderapp.com/",
-    "homeUrl": "https://adblock.sk/",
-    "id": 370,
-    "issuesUrl": "https://github.com/tomasko126/easylistczechandslovak/issues",
-    "licenseId": 8,
-    "name": "EasyList Czech and Slovak + EasyList (TPL)"
-  },
-  {
     "description": "AFNIL’s intention is to merge third-party lists of known fakenews sites and make them usable for programs that can block.",
     "homeUrl": "https://afnil-antifakenewsinternationallist.github.io/",
     "id": 371,
@@ -3228,16 +3218,6 @@
     "id": 506,
     "licenseId": 5,
     "name": "Acceptable Ads without third-party tracking"
-  },
-  {
-    "description": "EasyList is the primary filter list that removes most adverts from international web pages, including unwanted frames, images, and objects. It is the most popular list used by many ad blockers and forms the basis of over a dozen combination and supplementary filter lists.",
-    "emailAddress": "easylist@protonmail.com",
-    "forumUrl": "https://forums.lanik.us/viewforum.php?f=23",
-    "homeUrl": "https://easylist.to/",
-    "id": 507,
-    "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 4,
-    "name": "EasyList (TPL)"
   },
   {
     "description": "Filters for blocking all the clickbait that surrounds articles and tries to drag you into a never-ending binge.",
@@ -4288,14 +4268,6 @@
     "name": "Stop Google Tracking"
   },
   {
-    "description": "This is a list of malware domains generated from malwaredomains.com data.",
-    "emailAddress": "malwaredomains@gmail.com",
-    "homeUrl": "https://www.malwaredomains.com/",
-    "id": 749,
-    "licenseId": 5,
-    "name": "DNS-BH Malware Domains (TPL)"
-  },
-  {
     "description": "TRUSTe's Easy Tracking Protection list enables relevant and targeted content from companies that demonstrate respectful consumer privacy practices and comply with TRUSTe's high standards and direct oversight.",
     "homeUrl": "https://www.trustarc.com/blog/2011/02/17/truste-tpl-next-steps/",
     "id": 750,
@@ -4432,196 +4404,6 @@
     "issuesUrl": "https://github.com/kbinani/adblock-wikipedia/issues",
     "licenseId": 2,
     "name": "adblock-wikipedia"
-  },
-  {
-    "emailAddress": "easylist@protonmail.com",
-    "forumUrl": "https://forums.lanik.us/viewforum.php?f=90",
-    "homeUrl": "https://easylist.to/",
-    "id": 773,
-    "licenseId": 4,
-    "name": "EasyList Germany + EasyList (TPL)"
-  },
-  {
-    "emailAddress": "easylist@protonmail.com",
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 774,
-    "licenseId": 16,
-    "name": "Fanboy's Annoyance List (TPL)"
-  },
-  {
-    "homeUrl": "https://margevicius.lt/",
-    "id": 775,
-    "licenseId": 4,
-    "name": "EasyList Lithuania + EasyList (TPL)"
-  },
-  {
-    "homeUrl": "https://stanev.org/abp/",
-    "id": 776,
-    "licenseId": 4,
-    "name": "Bulgarian List + EasyList (TPL)"
-  },
-  {
-    "homeUrl": "https://easylist.to/",
-    "id": 777,
-    "licenseId": 8,
-    "name": "Latvian List + EasyList (TPL)"
-  },
-  {
-    "emailAddress": "easylist@protonmail.com",
-    "homeUrl": "https://easylist.to/",
-    "id": 778,
-    "licenseId": 4,
-    "name": "EasyPrivacy + EasyList (TPL)"
-  },
-  {
-    "homeUrl": "https://easylist.to/",
-    "id": 779,
-    "licenseId": 4,
-    "name": "EasyList Italy + EasyList (TPL)"
-  },
-  {
-    "homeUrl": "https://github.com/easylist/EasyListHebrew",
-    "id": 780,
-    "licenseId": 4,
-    "name": "EasyList Hebrew + EasyList (TPL)"
-  },
-  {
-    "homeUrl": "https://easylist.to/",
-    "id": 781,
-    "licenseId": 4,
-    "name": "EasyList China + EasyList (TPL)"
-  },
-  {
-    "homeUrl": "https://easylist.to/",
-    "id": 782,
-    "licenseId": 4,
-    "name": "EasyList Dutch + EasyList (TPL)"
-  },
-  {
-    "donateUrl": "https://www.patreon.com/zosoro/overview",
-    "emailAddress": "mail@zoso.ro",
-    "homeUrl": "https://www.zoso.ro/rolist/",
-    "id": 783,
-    "licenseId": 5,
-    "name": "ROList + EasyList (TPL)"
-  },
-  {
-    "homeUrl": "https://easylist.to/",
-    "id": 784,
-    "licenseId": 11,
-    "name": "Wiltteri + EasyList (TPL)"
-  },
-  {
-    "emailAddress": "easylist@protonmail.com",
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 785,
-    "licenseId": 16,
-    "name": "Fanboy's Social Blocking List (TPL)"
-  },
-  {
-    "homeUrl": "https://code.google.com/archive/p/liste-ar-adblock/",
-    "id": 786,
-    "licenseId": 6,
-    "name": "Liste AR + Liste FR + EasyList (TPL)"
-  },
-  {
-    "homeUrl": "https://easylist.to/",
-    "id": 787,
-    "licenseId": 16,
-    "name": "RU AdList + EasyList (TPL)"
-  },
-  {
-    "homeUrl": "https://code.google.com/archive/p/liste-ar-adblock/",
-    "id": 788,
-    "licenseId": 12,
-    "name": "Liste AR (TPL)"
-  },
-  {
-    "homeUrl": "https://easylist.to/",
-    "id": 789,
-    "licenseId": 4,
-    "name": "EasyList Dutch (TPL)"
-  },
-  {
-    "emailAddress": "easylist@protonmail.com",
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 790,
-    "licenseId": 4,
-    "name": "EasyPrivacy Without International Rules (TPL)"
-  },
-  {
-    "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
-    "homeUrl": "https://easylist.to/",
-    "id": 791,
-    "licenseId": 16,
-    "name": "RU AdList (TPL)"
-  },
-  {
-    "emailAddress": "easylist@protonmail.com",
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 792,
-    "licenseId": 4,
-    "name": "EasyList Without Rules for Adult Sites (TPL)"
-  },
-  {
-    "forumUrl": "https://forums.lanik.us/viewforum.php?f=103",
-    "homeUrl": "https://easylist.to/",
-    "id": 793,
-    "licenseId": 4,
-    "name": "EasyList Spanish (TPL)"
-  },
-  {
-    "homeUrl": "https://easylist.to/",
-    "id": 794,
-    "licenseId": 4,
-    "name": "EasyList China (TPL)"
-  },
-  {
-    "forumUrl": "https://forums.lanik.us/viewforum.php?f=91",
-    "homeUrl": "https://easylist.to/",
-    "id": 795,
-    "licenseId": 6,
-    "name": "Liste FR (TPL)"
-  },
-  {
-    "emailAddress": "easylist@protonmail.com",
-    "forumUrl": "https://forums.lanik.us/viewforum.php?f=90",
-    "homeUrl": "https://easylist.to/",
-    "id": 796,
-    "licenseId": 4,
-    "name": "EasyList Germany (TPL)"
-  },
-  {
-    "emailAddress": "easylist@protonmail.com",
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 797,
-    "licenseId": 4,
-    "name": "Adblock Warning Removal List (TPL)"
-  },
-  {
-    "forumUrl": "https://forums.lanik.us/viewforum.php?f=91",
-    "homeUrl": "https://easylist.to/",
-    "id": 798,
-    "licenseId": 6,
-    "name": "Liste FR + EasyList (TPL)"
-  },
-  {
-    "homeUrl": "https://easylist.to/",
-    "id": 799,
-    "licenseId": 4,
-    "name": "EasyList Italy (TPL)"
-  },
-  {
-    "forumUrl": "https://forums.lanik.us/viewforum.php?f=103",
-    "homeUrl": "https://easylist.to/",
-    "id": 800,
-    "licenseId": 4,
-    "name": "EasyList Spanish + EasyList (TPL)"
   },
   {
     "description": "This is a Macedonian list",
@@ -9424,66 +9206,6 @@
     "name": "SNAFU List"
   },
   {
-    "description": "EasyPrivacy is an optional supplementary filter list that completely removes all forms of tracking from the internet, including web bugs, tracking scripts and information collectors, thereby protecting your personal data.",
-    "emailAddress": "easylist@protonmail.com",
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 1537,
-    "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 4,
-    "name": "EasyPrivacy (TPL)"
-  },
-  {
-    "emailAddress": "easylist@protonmail.com",
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 1538,
-    "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 4,
-    "name": "EasyList Without Element Hiding Rules (TPL)"
-  },
-  {
-    "emailAddress": "easylist@protonmail.com",
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 1539,
-    "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 4,
-    "name": "EasyTest (TPL)"
-  },
-  {
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 1540,
-    "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 4,
-    "name": "EasyList Polish (TPL)"
-  },
-  {
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 1541,
-    "issuesUrl": "https://github.com/easylist/easylist/issues",
-    "licenseId": 4,
-    "name": "Acceptable Ads (TPL)"
-  },
-  {
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 1543,
-    "issuesUrl": "https://github.com/easylist/KoreanList/issues",
-    "licenseId": 4,
-    "name": "KoreanList (TPL)"
-  },
-  {
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 1544,
-    "issuesUrl": "https://github.com/easylist/easylistportuguese/issues",
-    "licenseId": 4,
-    "name": "EasyList Portuguese (TPL)"
-  },
-  {
     "description": "Finnish supplement list for EasyList.",
     "homeUrl": "https://github.com/wiltteri/subscriptions",
     "id": 1545,
@@ -9496,13 +9218,6 @@
     "id": 1546,
     "licenseId": 11,
     "name": "Wiltteri Reborn (TPL)"
-  },
-  {
-    "forumUrl": "https://forums.lanik.us/",
-    "homeUrl": "https://easylist.to/",
-    "id": 1547,
-    "licenseId": 4,
-    "name": "IndianList (TPL)"
   },
   {
     "forumUrl": "https://forums.lanik.us/",
@@ -13175,14 +12890,6 @@
     "name": "Fanboy Notifications Blocking List"
   },
   {
-    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
-    "emailAddress": "easylist@protonmail.com",
-    "homeUrl": "https://easylist.to/",
-    "id": 2035,
-    "licenseId": 4,
-    "name": "Fanboy Notifications Blocking List (TPL)"
-  },
-  {
     "description": "Blocks ads, fake sites, shock sites, malware hosts and trackers. This hostfile's aim is not to break any useful websites.",
     "homeUrl": "https://github.com/notracking/hosts-blocklists",
     "id": 2036,
@@ -13649,23 +13356,10 @@
     "name": "IndianList + EasyList"
   },
   {
-    "homeUrl": "https://github.com/mediumkreation/IndianList",
-    "id": 2117,
-    "issuesUrl": "https://github.com/mediumkreation/IndianList/issues",
-    "licenseId": 3,
-    "name": "IndianList + EasyList (TPL)"
-  },
-  {
     "homeUrl": "https://easylist.to/",
     "id": 2118,
     "licenseId": 3,
     "name": "KoreanList + EasyList"
-  },
-  {
-    "homeUrl": "https://easylist.to/",
-    "id": 2119,
-    "licenseId": 3,
-    "name": "KoreanList + EasyList (TPL)"
   },
   {
     "emailAddress": "easylist.portuguese@gmail.com",
@@ -13673,13 +13367,6 @@
     "id": 2120,
     "licenseId": 4,
     "name": "EasyList Portuguese + EasyList"
-  },
-  {
-    "emailAddress": "easylist.portuguese@gmail.com",
-    "homeUrl": "https://easylist.to/",
-    "id": 2121,
-    "licenseId": 4,
-    "name": "EasyList Portuguese + EasyList (TPL)"
   },
   {
     "description": "The ABP advertising filter is built with the mission of improving the browsing experience for the vietnamese users. ABPVN may not help block all ads, but ABPVN will minimize the appearance of ads on most websites in Vietnam.",
@@ -13691,37 +13378,6 @@
     "name": "ABPVN List + EasyList"
   },
   {
-    "description": "The ABP advertising filter is built with the mission of improving the browsing experience for the vietnamese users. ABPVN may not help block all ads, but ABPVN will minimize the appearance of ads on most websites in Vietnam.",
-    "donateUrl": "https://abpvn.com/donate/",
-    "emailAddress": "support@abpvn.com",
-    "homeUrl": "https://abpvn.com",
-    "id": 2123,
-    "licenseId": 4,
-    "name": "ABPVN List + EasyList (TPL)"
-  },
-  {
-    "description": "A list combining ABPindo and EasyList.",
-    "id": 2124,
-    "licenseId": 4,
-    "name": "ABPindo + EasyList (TPL)"
-  },
-  {
-    "emailAddress": "filters+cv@adblockplus.org",
-    "homeUrl": "https://github.com/abp-filters/abp-filters-anti-cv",
-    "id": 2125,
-    "issuesUrl": "https://github.com/abp-filters/abp-filters-anti-cv/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc",
-    "licenseId": 4,
-    "name": "ABP Filters (TPL)"
-  },
-  {
-    "description": "Russian-only fork of Fanboy's Annoyance List.",
-    "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
-    "homeUrl": "https://code.google.com/archive/p/ruadlist/",
-    "id": 2126,
-    "licenseId": 16,
-    "name": "RU AdList: BitBlock (TPL)"
-  },
-  {
     "description": "Russian-only fork of Fanboy's Annoyance List.",
     "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
     "homeUrl": "https://code.google.com/archive/p/ruadlist/",
@@ -13730,32 +13386,10 @@
     "name": "RU AdList: BitBlock + Fanboy's Annoyance List"
   },
   {
-    "description": "Russian-only fork of Fanboy's Annoyance List.",
-    "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
-    "homeUrl": "https://code.google.com/archive/p/ruadlist/",
-    "id": 2128,
-    "licenseId": 16,
-    "name": "RU AdList: BitBlock + Fanboy's Annoyance List (TPL)"
-  },
-  {
     "homeUrl": "https://code.google.com/archive/p/ruadlist/",
     "id": 2129,
     "licenseId": 12,
     "name": "RU AntiPron List"
-  },
-  {
-    "homeUrl": "https://code.google.com/archive/p/ruadlist/",
-    "id": 2130,
-    "licenseId": 12,
-    "name": "RU AntiPron List (TPL)"
-  },
-  {
-    "description": "Blocks most popular internet statistics counters on sites serving Russia.",
-    "forumUrl": "https://forums.lanik.us/viewforum.php?f=102",
-    "homeUrl": "https://code.google.com/archive/p/ruadlist/",
-    "id": 2131,
-    "licenseId": 12,
-    "name": "RU AdList: Counters (TPL)"
   },
   {
     "description": "Adblocker list for Korean websites. It will only be occassionally updated, only as a complement to other filters.",
@@ -13901,14 +13535,6 @@
     "issuesUrl": "https://forums.lanik.us/viewforum.php?f=107",
     "licenseId": 4,
     "name": "EasyList Polish + EasyList"
-  },
-  {
-    "emailAddress": "easylist.polish@gmail.com",
-    "homeUrl": "https://easylist.to",
-    "id": 2150,
-    "issuesUrl": "https://forums.lanik.us/viewforum.php?f=107",
-    "licenseId": 4,
-    "name": "EasyList Polish + EasyList (TPL)"
   },
   {
     "description": "This is a comprehensive hosts file (IPv6) which blocks known ad, exploit, malware, and tracking servers. It is pulled from MVPS, PGL Yoyo, an updated fork of Malware Domain List, URL Haus and EasyList, along with a variety of supplementary sources for increased protection against telemetry, additions for mobile platforms, and emerging threat prevention. It is then merged, sorted and deduped. A notably enhanced experience with the world wide web awaits you.",
@@ -14619,159 +14245,6 @@
     "id": 2252,
     "licenseId": 4,
     "name": "EasyList China + EasyList (compliance)"
-  },
-  {
-    "description": "ABPindo is an affiliated filter list written by hermawan that specifically removes adverts on Indonesian language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2253,
-    "licenseId": 4,
-    "name": "ABPindo (TPL Minified)"
-  },
-  {
-    "description": "The ABP advertising filter is built with the mission of improving the browsing experience for the vietnamese users. ABPVN may not help block all ads, but ABPVN will minimize the appearance of ads on most websites in Vietnam. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "donateUrl": "https://abpvn.com/donate/",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2254,
-    "licenseId": 4,
-    "name": "ABPVN List (TPL Minified)"
-  },
-  {
-    "description": "Russian supplement for EasyList. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2255,
-    "licenseId": 12,
-    "name": "RU AdList (TPL Minified)"
-  },
-  {
-    "description": "On this page you can find updated lists to block unwanted content in your favorite browser. With their help, the pesky ads that some sites terrorizing customers will be hidden. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2256,
-    "licenseId": 4,
-    "name": "Bulgarian List (TPL Minified)"
-  },
-  {
-    "description": "EasyList is the primary filter list that removes most adverts from international web pages, including unwanted frames, images, and objects. It is the most popular list used by many ad blockers and forms the basis of over a dozen combination and supplementary filter lists. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2257,
-    "licenseId": 4,
-    "name": "EasyList (TPL Minified)"
-  },
-  {
-    "description": "Chinese supplement for the EasyList filters. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2258,
-    "licenseId": 4,
-    "name": "EasyList China (TPL Minified)"
-  },
-  {
-    "description": "EasyList Dutch is an EasyList-affiliated filter list written by the EasyList author Famlam that specifically removes adverts on Dutch language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2260,
-    "licenseId": 4,
-    "name": "EasyList Dutch (TPL Minified)"
-  },
-  {
-    "description": "EasyList Germany is a filter list written by the EasyList authors MonztA, Famlam, and Khrin that specifically removes adverts on German language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2261,
-    "licenseId": 4,
-    "name": "EasyList Germany (TPL Minified)"
-  },
-  {
-    "description": "EasyList Italy is a filter list written by the EasyList author Khrin that specifically removes adverts on Italian language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2262,
-    "licenseId": 4,
-    "name": "EasyList Italy (TPL Minified)"
-  },
-  {
-    "description": "EasyList Lithuania is an affiliated filter list written by gymka that specifically removes adverts on Lithuanian language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2263,
-    "licenseId": 4,
-    "name": "EasyList Lithuania (TPL Minified)"
-  },
-  {
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2264,
-    "licenseId": 4,
-    "name": "EasyList Polish (TPL Minified)"
-  },
-  {
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2265,
-    "licenseId": 4,
-    "name": "EasyList Portuguese (TPL Minified)"
-  },
-  {
-    "description": "Spanish supplement for EasyList. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2266,
-    "licenseId": 4,
-    "name": "EasyList Spanish (TPL Minified)"
-  },
-  {
-    "description": "EasyPrivacy is an optional supplementary filter list that completely removes all forms of tracking from the internet, including web bugs, tracking scripts and information collectors, thereby protecting your personal data. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2267,
-    "licenseId": 4,
-    "name": "EasyPrivacy (TPL Minified)"
-  },
-  {
-    "description": "Hide and block social content, social widgets, social scripts and social icons. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2268,
-    "licenseId": 4,
-    "name": "Fanboy's Social Blocking List (TPL Minified)"
-  },
-  {
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2269,
-    "licenseId": 3,
-    "name": "IndianList (TPL Minified)"
-  },
-  {
-    "description": "EasyList Hebrew is an EasyList affiliated filter list written by BsT that specifically removes adverts on Hebrew language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2270,
-    "licenseId": 7,
-    "name": "EasyList Hebrew (TPL Minified)"
-  },
-  {
-    "description": "Latvian List is an affiliated filter list written by anonymous74100 that specifically removes adverts on Latvian language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2271,
-    "licenseId": 8,
-    "name": "Latvian List (TPL Minified)"
-  },
-  {
-    "description": "Liste AR is an EasyList affiliated filter list that specifically removes adverts on Arabic language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2272,
-    "isDeleted": true,
-    "licenseId": 6,
-    "name": "Liste AR (TPL Minified)"
-  },
-  {
-    "description": "Liste FR is an EasyList affiliated filter list that specifically removes adverts on French-language websites. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2273,
-    "licenseId": 6,
-    "name": "Liste FR (TPL Minified)"
-  },
-  {
-    "description": "Romanian supplement for EasyList. The Minified lists are part of an Adblock Plus-hosted unofficial project that was hardforked from their source lists in August 2019, and which have only seen sporadic updates since then.",
-    "homeUrl": "https://hg.adblockplus.org/customfilterlists/file/default",
-    "id": 2274,
-    "licenseId": 5,
-    "name": "ROList (TPL Minified)"
-  },
-  {
-    "description": "A list combining EasyList China and EasyList. This list features additional entries from the Adblock Plus team, seemingly to meet Adblock Plus list inclusion requirements.",
-    "id": 2275,
-    "licenseId": 4,
-    "name": "EasyList China + EasyList (TPL; compliance)"
   },
   {
     "homeUrl": "https://www.adtchrome.com/",
@@ -15607,13 +15080,6 @@
     "id": 2377,
     "licenseId": 35,
     "name": "Dandelion Sprout's Nordic filters for tidier websites (for Adblock Plus with ABP inclusion compliance) + EasyList"
-  },
-  {
-    "description": "A list combining Dandelion Sprout's West Nordic filters for tidier websites (for Adblock Plus with ABP inclusion compliance) and EasyList. Note that the Nordic section is significantly different from the standalone Nordic TPL list.",
-    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
-    "id": 2378,
-    "licenseId": 35,
-    "name": "Dandelion Sprout's Nordic filters for tidier websites (for Adblock Plus with ABP inclusion compliance) + EasyList (TPL)"
   },
   {
     "description": "A small hobby ads block dns project with doh, dot, dnscrypt support. Links that didn't fit in the Subscribe button URL texts, include 45.32.55.94 — 159.69.198.101 — 2a01:4f9:c010:43ce::1 — 2001:19f0:7001:3259:5400:02ff:fe71:0bc9 — 2a01:4f8:1c1c:6b4b::1, all of which also support TLS.",
