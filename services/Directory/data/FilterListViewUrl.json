@@ -3558,12 +3558,6 @@
     "url": "https://easylist-downloads.adblockplus.org/exceptionrules-privacy-friendly.txt"
   },
   {
-    "filterListId": 507,
-    "id": 621,
-    "primariness": 1,
-    "url": "https://easylist-msie.adblockplus.org/easylist.tpl"
-  },
-  {
     "filterListId": 509,
     "id": 623,
     "primariness": 1,
@@ -4476,12 +4470,6 @@
     "url": "https://www.microsoft.com/cms/api/am/binary/RWilsQ"
   },
   {
-    "filterListId": 749,
-    "id": 780,
-    "primariness": 1,
-    "url": "https://easylist-msie.adblockplus.org/malwaredomains_full.tpl"
-  },
-  {
     "filterListId": 750,
     "id": 781,
     "primariness": 1,
@@ -4606,48 +4594,6 @@
     "id": 801,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/kbinani/adblock-wikipedia/master/signed.txt"
-  },
-  {
-    "filterListId": 773,
-    "id": 802,
-    "primariness": 1,
-    "url": "https://easylist-msie.adblockplus.org/easylistgermany+easylist.tpl"
-  },
-  {
-    "filterListId": 774,
-    "id": 803,
-    "primariness": 1,
-    "url": "https://easylist-msie.adblockplus.org/fanboy-annoyance.tpl"
-  },
-  {
-    "filterListId": 775,
-    "id": 804,
-    "primariness": 1,
-    "url": "https://easylist-msie.adblockplus.org/easylistlithuania+easylist.tpl"
-  },
-  {
-    "filterListId": 776,
-    "id": 805,
-    "primariness": 1,
-    "url": "https://easylist-msie.adblockplus.org/bulgarian_list+easylist.tpl"
-  },
-  {
-    "filterListId": 777,
-    "id": 806,
-    "primariness": 1,
-    "url": "https://easylist-msie.adblockplus.org/latvianlist+easylist.tpl"
-  },
-  {
-    "filterListId": 778,
-    "id": 807,
-    "primariness": 1,
-    "url": "https://easylist-msie.adblockplus.org/easyprivacy+easylist.tpl"
-  },
-  {
-    "filterListId": 779,
-    "id": 808,
-    "primariness": 1,
-    "url": "https://easylist-msie.adblockplus.org/easylistitaly+easylist.tpl"
   },
   {
     "filterListId": 780,
