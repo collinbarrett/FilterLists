@@ -2874,12 +2874,6 @@
     "url": "https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters_ublock.txt"
   },
   {
-    "filterListId": 370,
-    "id": 505,
-    "primariness": 1,
-    "url": "https://easylist-msie.adblockplus.org/easylistczechslovak+easylist.tpl"
-  },
-  {
     "filterListId": 371,
     "id": 506,
     "primariness": 1,
@@ -8880,48 +8874,6 @@
     "url": "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt"
   },
   {
-    "filterListId": 1537,
-    "id": 1536,
-    "primariness": 1,
-    "url": "https://easylist-msie.adblockplus.org/easyprivacy.tpl"
-  },
-  {
-    "filterListId": 1538,
-    "id": 1537,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylist_noelemhide.tpl"
-  },
-  {
-    "filterListId": 1539,
-    "id": 1538,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easytest.tpl"
-  },
-  {
-    "filterListId": 1540,
-    "id": 1539,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylistpolish.tpl"
-  },
-  {
-    "filterListId": 1541,
-    "id": 1540,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/exceptionrules.tpl"
-  },
-  {
-    "filterListId": 1543,
-    "id": 1542,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/koreanlist.tpl"
-  },
-  {
-    "filterListId": 1544,
-    "id": 1543,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylistportuguese.tpl"
-  },
-  {
     "filterListId": 1545,
     "id": 1544,
     "primariness": 1,
@@ -8932,12 +8884,6 @@
     "id": 1545,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/wiltteri/subscriptions/master/wiltteri-reborn.tpl"
-  },
-  {
-    "filterListId": 1547,
-    "id": 1546,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/indianlist.tpl"
   },
   {
     "filterListId": 1548,
@@ -12150,12 +12096,6 @@
     "url": "https://easylist-downloads.adblockplus.org/fanboy-notifications.txt"
   },
   {
-    "filterListId": 2035,
-    "id": 2128,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/fanboy-notifications.tpl"
-  },
-  {
     "filterListId": 2036,
     "id": 2129,
     "primariness": 1,
@@ -12684,22 +12624,10 @@
     "url": "https://easylist-downloads.adblockplus.org/indianlist+easylist.txt"
   },
   {
-    "filterListId": 2117,
-    "id": 2233,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/indianlist+easylist.tpl"
-  },
-  {
     "filterListId": 2118,
     "id": 2234,
     "primariness": 1,
     "url": "https://easylist-downloads.adblockplus.org/koreanlist+easylist.txt"
-  },
-  {
-    "filterListId": 2119,
-    "id": 2235,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/koreanlist+easylist.tpl"
   },
   {
     "filterListId": 2120,
@@ -12708,40 +12636,10 @@
     "url": "https://easylist-downloads.adblockplus.org/easylistportuguese+easylist.txt"
   },
   {
-    "filterListId": 2121,
-    "id": 2237,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylistportuguese+easylist.tpl"
-  },
-  {
     "filterListId": 2122,
     "id": 2238,
     "primariness": 1,
     "url": "https://easylist-downloads.adblockplus.org/abpvn+easylist.txt"
-  },
-  {
-    "filterListId": 2123,
-    "id": 2239,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/abpvn+easylist.tpl"
-  },
-  {
-    "filterListId": 2124,
-    "id": 2240,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/abpindo+easylist.tpl"
-  },
-  {
-    "filterListId": 2125,
-    "id": 2241,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.tpl"
-  },
-  {
-    "filterListId": 2126,
-    "id": 2242,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/bitblock.tpl"
   },
   {
     "filterListId": 2127,
@@ -12750,28 +12648,10 @@
     "url": "https://easylist-downloads.adblockplus.org/bitblockext.txt"
   },
   {
-    "filterListId": 2128,
-    "id": 2244,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/bitblockext.tpl"
-  },
-  {
     "filterListId": 2129,
     "id": 2245,
     "primariness": 1,
     "url": "https://easylist-downloads.adblockplus.org/antinuha.txt"
-  },
-  {
-    "filterListId": 2130,
-    "id": 2246,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/antinuha.tpl"
-  },
-  {
-    "filterListId": 2131,
-    "id": 2247,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/cntblock.tpl"
   },
   {
     "filterListId": 2132,
@@ -12880,12 +12760,6 @@
     "id": 2265,
     "primariness": 1,
     "url": "https://easylist-downloads.adblockplus.org/easylistpolish+easylist.txt"
-  },
-  {
-    "filterListId": 2150,
-    "id": 2266,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylistpolish+easylist.tpl"
   },
   {
     "filterListId": 2151,
@@ -13450,132 +13324,6 @@
     "id": 2392,
     "primariness": 1,
     "url": "https://easylist-downloads.adblockplus.org/easylistchina+easylistchina_compliance+easylist.txt"
-  },
-  {
-    "filterListId": 2253,
-    "id": 2393,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/abpindo-minified.tpl"
-  },
-  {
-    "filterListId": 2254,
-    "id": 2394,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/abpvn-minified.tpl"
-  },
-  {
-    "filterListId": 2255,
-    "id": 2395,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/ruadlist-minified.tpl"
-  },
-  {
-    "filterListId": 2256,
-    "id": 2396,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/bulgarian_list-minified.tpl"
-  },
-  {
-    "filterListId": 2257,
-    "id": 2397,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylist-minified.tpl"
-  },
-  {
-    "filterListId": 2258,
-    "id": 2398,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylistchina-minified.tpl"
-  },
-  {
-    "filterListId": 2260,
-    "id": 2400,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylistdutch-minified.tpl"
-  },
-  {
-    "filterListId": 2261,
-    "id": 2401,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylistgermany-minified.tpl"
-  },
-  {
-    "filterListId": 2262,
-    "id": 2402,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylistitaly-minified.tpl"
-  },
-  {
-    "filterListId": 2263,
-    "id": 2403,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylistlithuania-minified.tpl"
-  },
-  {
-    "filterListId": 2264,
-    "id": 2404,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylistpolish-minified.tpl"
-  },
-  {
-    "filterListId": 2265,
-    "id": 2405,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylistportuguese-minified.tpl"
-  },
-  {
-    "filterListId": 2266,
-    "id": 2406,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylistspanish-minified.tpl"
-  },
-  {
-    "filterListId": 2267,
-    "id": 2407,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easyprivacy-minified.tpl"
-  },
-  {
-    "filterListId": 2268,
-    "id": 2408,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/fanboy-social-minified.tpl"
-  },
-  {
-    "filterListId": 2269,
-    "id": 2409,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/indianlist-minified.tpl"
-  },
-  {
-    "filterListId": 2270,
-    "id": 2410,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/israellist-minified.tpl"
-  },
-  {
-    "filterListId": 2271,
-    "id": 2411,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/latvianlist-minified.tpl"
-  },
-  {
-    "filterListId": 2272,
-    "id": 2412,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/liste_ar-minified.tpl"
-  },
-  {
-    "filterListId": 2273,
-    "id": 2413,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/liste_fr-minified.tpl"
-  },
-  {
-    "filterListId": 2274,
-    "id": 2414,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/rolist-minified.tpl"
   },
   {
     "filterListId": 2275,
