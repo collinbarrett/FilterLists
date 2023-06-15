@@ -28,18 +28,3 @@ updates:
     directory: /web
     schedule:
       interval: daily
-  - package-ecosystem: nuget
-    directory: /api/FilterLists.Api
-    target-branch: vNext
-    schedule:
-      interval: daily
-  - package-ecosystem: nuget
-    directory: /api/FilterLists.Api.Infrastructure.Migrations
-    target-branch: vNext
-    schedule:
-      interval: daily
-  - package-ecosystem: npm
-    directory: /web
-    target-branch: vNext
-    schedule:
-      interval: daily
