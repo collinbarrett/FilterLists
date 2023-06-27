@@ -17311,5 +17311,13 @@
     "issuesUrl": "https://github.com/L8X/AntiAuthenticationUrlFilter/issues",
     "licenseId": 4,
     "name": "Anti-Authentication-Url-Filter"
+  },
+  {
+	"description": "Finnish Annoyances List blocks unnecessary connections and hides unnecessary elements.",
+	"homeUrl": "https://github.com/Axonym/finnish-annoyances",
+	"id": 2661,
+	"issuesUrl": "https://github.com/Axonym/finnish-annoyances/issues",
+	"licenseId": 11,
+	"name": "Finnish Annoyances"
   }
 ]
