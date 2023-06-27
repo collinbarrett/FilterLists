@@ -16064,5 +16064,10 @@
     "filterListId": 2660,
     "id": 2939,
     "url": "https://raw.githubusercontent.com/L8X/AntiAuthenticationUrlFilter/main/AntiAuthenticationUrlFilter.txt"
+  },
+  {
+    "filterListId": 2661,
+    "id": 2940,
+    "url": "https://raw.githubusercontent.com/Axonym/finnish-annoyances/main/annoyances.txt"
   }
 ]
