@@ -4376,14 +4376,6 @@
     "name": "lilydjwg's rules"
   },
   {
-    "description": "Rules contributed by diligent owls.",
-    "homeUrl": "https://github.com/OwlStudioCN/owl-abp-rules",
-    "id": 767,
-    "issuesUrl": "https://github.com/OwlStudioCN/owl-abp-rules/issues",
-    "licenseId": 8,
-    "name": "OwlStudio ABP Rules"
-  },
-  {
     "description": "A filter list for Adblock Plus for remove all newsletters banners",
     "homeUrl": "https://github.com/Manu1400/i-don-t-care-about-newsletters",
     "id": 769,
