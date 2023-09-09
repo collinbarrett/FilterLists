@@ -14523,19 +14523,19 @@
     "filterListId": 2459,
     "id": 2664,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt"
+    "url": "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/data/combined_disguised_trackers.txt"
   },
   {
     "filterListId": 2460,
     "id": 2665,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers_justdomains.txt"
+    "url": "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/data/combined_disguised_trackers_justdomains.txt"
   },
   {
     "filterListId": 2461,
     "id": 2666,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_original_trackers.txt"
+    "url": "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/data/combined_original_trackers.txt"
   },
   {
     "filterListId": 2462,
