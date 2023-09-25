@@ -3693,49 +3693,49 @@
     "filterListId": 569,
     "id": 646,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/chinese.txt"
+    "url": "https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv/-/raw/master/chinese.txt"
   },
   {
     "filterListId": 570,
     "id": 647,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/czech.txt"
+    "url": "https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv/-/raw/master/czech.txt"
   },
   {
     "filterListId": 573,
     "id": 648,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/english.txt"
+    "url": "https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv/-/raw/master/english.txt"
   },
   {
     "filterListId": 574,
     "id": 649,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/french.txt"
+    "url": "https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv/-/raw/master/french.txt"
   },
   {
     "filterListId": 575,
     "id": 650,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/german.txt"
+    "url": "https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv/-/raw/master/german.txt"
   },
   {
     "filterListId": 583,
     "id": 651,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/portuguese.txt"
+    "url": "https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv/-/raw/master/portuguese.txt"
   },
   {
     "filterListId": 585,
     "id": 652,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/russian.txt"
+    "url": "https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv/-/raw/master/russian.txt"
   },
   {
     "filterListId": 586,
     "id": 653,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/spanish.txt"
+    "url": "https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv/-/raw/master/spanish.txt"
   },
   {
     "filterListId": 589,
@@ -10569,7 +10569,7 @@
     "filterListId": 1799,
     "id": 1866,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/abp-filters/abp-filters-anti-cv/master/arabic.txt"
+    "url": "https://gitlab.com/eyeo/anti-cv/abp-filters-anti-cv/-/raw/master/arabic.txt"
   },
   {
     "filterListId": 1800,
