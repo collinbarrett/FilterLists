@@ -16210,18 +16210,18 @@
   {
     "description": "Medium mode for uBlock Origin when blocking 3p-frames and 3p-scripts",
     "donateUrl": "https://www.paypal.com/donate/?hosted_button_id=NRARDMBBMV3LC",
-    "homeUrl": "https://github.com/BPower0036/AdBlockFilters/",
+    "homeUrl": "https://github.com/Nomes77/AdBlockFilters/",
     "id": 2520,
-    "issuesUrl": "https://github.com/BPower0036/AdBlockFilters/issues",
+    "issuesUrl": "https://github.com/Nomes77/AdBlockFilters/issues",
     "licenseId": 4,
     "name": "Dynamic rules for uBo's medium mode"
   },
   {
     "description": "Personal filter list (My filters)",
     "donateUrl": "https://www.paypal.com/donate/?hosted_button_id=NRARDMBBMV3LC",
-    "homeUrl": "https://github.com/BPower0036/AdBlockFilters/",
+    "homeUrl": "https://github.com/Nomes77/AdBlockFilters/",
     "id": 2521,
-    "issuesUrl": "https://github.com/BPower0036/AdBlockFilters/issues",
+    "issuesUrl": "https://github.com/Nomes77/AdBlockFilters/issues",
     "licenseId": 4,
     "name": "Personal filter list (My filters) (uBo)"
   },
