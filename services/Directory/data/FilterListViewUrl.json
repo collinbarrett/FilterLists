@@ -14907,13 +14907,13 @@
     "filterListId": 2520,
     "id": 2733,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/BPower0036/AdBlockFilters/main/dynamic%20rules"
+    "url": "https://raw.githubusercontent.com/Nomes77/AdBlockFilters/main/dynamic%20rules"
   },
   {
     "filterListId": 2521,
     "id": 2734,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/BPower0036/AdBlockFilters/main/my%20filters"
+    "url": "https://raw.githubusercontent.com/Nomes77/AdBlockFilters/main/my%20filters"
   },
   {
     "filterListId": 2522,
@@ -15320,49 +15320,49 @@
     "filterListId": 2471,
     "id": 2804,
     "primariness": 9,
-    "url": "https://raw.githubusercontent.com/BPower0036/AdBlockFilters/main/EasyDutch.txt"
+    "url": "https://raw.githubusercontent.com/Nomes77/AdBlockFilters/main/EasyDutch.txt"
   },
   {
     "filterListId": 2471,
     "id": 2805,
     "primariness": 10,
-    "url": "https://raw.githubusercontent.com/BPower0036/AdBlockFilters/main/EasyDutch.all.txt"
+    "url": "https://raw.githubusercontent.com/Nomes77/AdBlockFilters/main/EasyDutch.all.txt"
   },
   {
     "filterListId": 2471,
     "id": 2806,
     "primariness": 11,
-    "url": "https://cdn.statically.io/gh/BPower0036/AdBlockFilters/main/EasyDutch.all.txt"
+    "url": "https://cdn.statically.io/gh/Nomes77/AdBlockFilters/main/EasyDutch.all.txt"
   },
   {
     "filterListId": 2471,
     "id": 2807,
     "primariness": 12,
-    "url": "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockFilters@main/EasyDutch.all.txt"
+    "url": "https://cdn.jsdelivr.net/gh/Nomes77/AdBlockFilters@main/EasyDutch.all.txt"
   },
   {
     "filterListId": 2520,
     "id": 2808,
     "primariness": 2,
-    "url": "https://cdn.statically.io/gh/BPower0036/AdBlockfilters/main/dynamic%20rules"
+    "url": "https://cdn.statically.io/gh/Nomes77/AdBlockfilters/main/dynamic%20rules"
   },
   {
     "filterListId": 2520,
     "id": 2809,
     "primariness": 3,
-    "url": "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockfilters@main/dynamic%20rules"
+    "url": "https://cdn.jsdelivr.net/gh/Nomes77/AdBlockfilters@main/dynamic%20rules"
   },
   {
     "filterListId": 2521,
     "id": 2810,
     "primariness": 2,
-    "url": "https://cdn.statically.io/gh/BPower0036/AdBlockfilters/main/my%20filters"
+    "url": "https://cdn.statically.io/gh/Nomes77/AdBlockfilters/main/my%20filters"
   },
   {
     "filterListId": 2521,
     "id": 2811,
     "primariness": 3,
-    "url": "https://cdn.jsdelivr.net/gh/BPower0036/AdBlockfilters@main/my%20filters"
+    "url": "https://cdn.jsdelivr.net/gh/Nomes77/AdBlockfilters@main/my%20filters"
   },
   {
     "filterListId": 2519,
