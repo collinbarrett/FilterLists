@@ -28,8 +28,8 @@ updates:
     directory: /web
     schedule:
       interval: daily
-- package-ecosystem: npm
+  - package-ecosystem: npm
     directory: /web
     schedule:
       interval: daily
-    target-branch: "vNext"
+    target-branch: vNext
