@@ -1,6 +1,0 @@
-**/.gitignore
-**/azure-pipelines*.yaml
-**/node_modules
-**/*Dockerfile
-**/.dockerignore
-**/.env
