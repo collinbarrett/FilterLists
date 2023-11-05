@@ -16,6 +16,16 @@ jobs:
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/cache@v3 # https://nextjs.org/docs/pages/building-your-application/deploying/ci-build-caching#github-actions
+        with:
+          path: |
+            ~/.npm
+            ${{ github.workspace }}/web/.next/cache
+          # Generate a new cache whenever packages or source files change.
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+          # If source files changed but packages didn't, rebuild from a prior cache.
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
