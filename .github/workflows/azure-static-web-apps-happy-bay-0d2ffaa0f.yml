@@ -15,10 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: true
-          lfs: false
+      - uses: actions/checkout@v4
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
