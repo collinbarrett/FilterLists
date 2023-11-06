@@ -16057,5 +16057,12 @@
     "filterListId": 2661,
     "id": 2940,
     "url": "https://raw.githubusercontent.com/Axonym/finnish-annoyances/main/annoyances.txt"
+  },
+  {
+    "filterListId": 2662,
+    "id": 2941,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://codeberg.org/pcm/rublock/raw/branch/master/all.txt"
   }
 ]

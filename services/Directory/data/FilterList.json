@@ -17305,5 +17305,13 @@
     "issuesUrl": "https://github.com/Axonym/finnish-annoyances/issues",
     "licenseId": 11,
     "name": "Finnish Annoyances"
+  },
+  {
+    "description": "My personal blocklist, an extension for known blocklists. Blocks ads, trackers, native device trackers, badware and more. Not intended to be used as a standalone blocklist, it serves as a addition for other blocklists!",
+    "homeUrl": "https://codeberg.org/pcm/rublock",
+    "id": 2662,
+    "issuesUrl": "https://codeberg.org/pcm/rublock/issues",
+    "licenseId": 8,
+    "name": "RU BlockList for uBO"
   }
 ]
