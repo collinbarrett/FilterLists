@@ -40,6 +40,7 @@ jobs:
           output_location: "" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
         env:
+          SKIP_DEPLOY_ON_MISSING_SECRETS: true # allow Dependabot PRs
           NEXT_TELEMETRY_DISABLED: 1 # https://nextjs.org/telemetry
 
   close_pull_request_job:
