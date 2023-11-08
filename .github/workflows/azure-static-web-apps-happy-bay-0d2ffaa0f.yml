@@ -1,4 +1,8 @@
-name: web Build and Deploy to Azure Static Web Apps
+name: Web Build and Deploy
+
+# as defined in package.json "engines" per https://github.com/Azure/static-web-apps-cli/issues/756
+env:
+  NODE_VERSION: lts/hydrogen
 
 on:
   push:
@@ -33,7 +37,7 @@ jobs:
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
-      - name: Build and Deploy
+      - name: Build and Deploy to Azure SWA
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
@@ -47,14 +51,48 @@ jobs:
         env:
           NEXT_TELEMETRY_DISABLED: 1 # https://nextjs.org/telemetry
 
-  close_pull_request:
+  teardown_staging:
     if: github.event.pull_request.user.login != 'dependabot[bot]' && github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
-    name: Close Pull Request
+    name: Teardown Staging
     steps:
-      - name: Close Pull Request
+      - name: Teardown Azure SWA Preview
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_BAY_0D2FFAA0F }}
           action: close
+          app_location: /web
+
+  # skip deploy to Azure SWA Preview since dependabot cannot access secrets
+  build:
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    name: Build
+    steps:
+      - name: Fetch
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      # https://nextjs.org/docs/pages/building-your-application/deploying/ci-build-caching#github-actions
+      - name: Next.js Build Caching
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.npm
+            ${{ github.workspace }}/web/.next/cache
+          # Generate a new cache whenever packages or source files change.
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+          # If source files changed but packages didn't, rebuild from a prior cache.
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+      - name: Install Dependencies
+        run: npm ci
+        working-directory: ./web
+      - name: Build Next.js App
+        run: npm run build
+        working-directory: ./web
+        env:
+          NEXT_TELEMETRY_DISABLED: 1 # https://nextjs.org/telemetry
