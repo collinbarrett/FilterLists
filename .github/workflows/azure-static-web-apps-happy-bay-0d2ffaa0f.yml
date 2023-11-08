@@ -1,22 +1,29 @@
-name: Azure Static Web Apps CI/CD
+name: web Build and Deploy to Azure Static Web Apps
 
 on:
   push:
     branches:
       - vNext
+    paths:
+      - web/**
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - vNext
+    paths:
+      - web/**
 
 jobs:
-  build_and_deploy_job:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+  build_and_deploy:
+    if: github.event.pull_request.user.login != 'dependabot[bot]' && (github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed'))
     runs-on: ubuntu-latest
-    name: Build and Deploy Job
+    name: Build and Deploy
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/cache@v3 # https://nextjs.org/docs/pages/building-your-application/deploying/ci-build-caching#github-actions
+      - name: Fetch
+        uses: actions/checkout@v4
+      # https://nextjs.org/docs/pages/building-your-application/deploying/ci-build-caching#github-actions
+      - name: Next.js Build Caching
+        uses: actions/cache@v3
         with:
           path: |
             ~/.npm
@@ -26,31 +33,28 @@ jobs:
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
-      - name: Build And Deploy
+      - name: Build and Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_BAY_0D2FFAA0F }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
-          action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/web" # App source code path
-          api_location: "" # Api source code path - optional
-          output_location: "" # Built app content directory - optional
-          ###### End of Repository/Build Configurations ######
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: upload
+          # https://aka.ms/swaworkflowconfig
+          app_location: /web
+          api_location: ""
+          output_location: ""
         env:
-          SKIP_DEPLOY_ON_MISSING_SECRETS: true # allow Dependabot PRs
           NEXT_TELEMETRY_DISABLED: 1 # https://nextjs.org/telemetry
 
-  close_pull_request_job:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+  close_pull_request:
+    if: github.event.pull_request.user.login != 'dependabot[bot]' && github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
-    name: Close Pull Request Job
+    name: Close Pull Request
     steps:
       - name: Close Pull Request
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_BAY_0D2FFAA0F }}
-          action: "close"
+          action: close

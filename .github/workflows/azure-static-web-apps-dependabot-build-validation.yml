@@ -1,0 +1,46 @@
+name: web Build for Dependabot PR
+
+# as defined in package.json "engines" per https://github.com/Azure/static-web-apps-cli/issues/756
+env:
+  NODE_VERSION: lts/hydrogen
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - vNext
+    paths:
+      - web/**
+
+jobs:
+  build:
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    name: web Build for Dependabot PR
+    steps:
+      - name: Fetch
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      # https://nextjs.org/docs/pages/building-your-application/deploying/ci-build-caching#github-actions
+      - name: Next.js Build Caching
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.npm
+            ${{ github.workspace }}/web/.next/cache
+          # Generate a new cache whenever packages or source files change.
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+          # If source files changed but packages didn't, rebuild from a prior cache.
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+      - name: Install Dependencies
+        run: npm ci
+        working-directory: ./web
+      - name: Build Next.js App
+        run: npm run build
+        working-directory: ./web
+        env:
+          NEXT_TELEMETRY_DISABLED: 1 # https://nextjs.org/telemetry
