@@ -1,0 +1,3 @@
+# allow `npx shadcn-ui diff`
+# https://ui.shadcn.com/docs/cli#diff-experimental
+components/ui/**
