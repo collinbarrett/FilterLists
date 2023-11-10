@@ -2,7 +2,7 @@ name: Web Build and Deploy
 
 # as defined in package.json "engines" per https://github.com/Azure/static-web-apps-cli/issues/756
 env:
-  NODE_VERSION: lts/hydrogen
+  NODE_VERSION: 18.17.1
 
 on:
   push:
