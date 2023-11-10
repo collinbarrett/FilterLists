@@ -6,7 +6,8 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "shadcn-ui-update": "npx shadcn-ui diff"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.0",
