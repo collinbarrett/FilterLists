@@ -7,13 +7,16 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { ModeToggle } from "./mode-toggle";
+import Logo from "./logo";
 
 export function Menu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuLink href="/">Home</NavigationMenuLink>
+          <NavigationMenuLink href="/">
+            <Logo />
+          </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <ModeToggle />
