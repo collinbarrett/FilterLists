@@ -1,5 +1,5 @@
 # init base
-FROM mcr.microsoft.com/dotnet/runtime-deps:7.0-alpine AS base
+FROM mcr.microsoft.com/dotnet/runtime-deps:8.0-alpine AS base
 LABEL org.opencontainers.image.description="filterlists.com | github.com/collinbarrett/filterlists | An ASP.NET Core API serving the core FilterList information."
 WORKDIR /app
 EXPOSE 80
