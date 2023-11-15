@@ -1,5 +1,5 @@
 # init test-migrations
-FROM mcr.microsoft.com/dotnet/sdk:7.0-alpine AS test-migrations
+FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS test-migrations
 ENV DOTNET_CLI_TELEMETRY_OPTOUT=true
 ENTRYPOINT ["dotnet", "test", "--logger:trx"]
 
